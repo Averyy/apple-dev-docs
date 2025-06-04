@@ -1,0 +1,30 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Apple Developer Documentation",
+  "description": "Complete Apple developer documentation for all frameworks, enabling natural language queries across SwiftUI, UIKit, Metal, and 150+ frameworks",
+  "folders": ["documentation"],
+  "excludeFolders": [
+    "scraper",
+    "tests",
+    "scripts",
+    "_metadata",
+    "venv",
+    ".claude"
+  ],
+  "excludeFiles": [
+    "*.pyc",
+    "*.log",
+    ".DS_Store",
+    "*.tmp"
+  ],
+  "rules": [
+    "Always specify the framework when referencing Apple APIs",
+    "Include platform availability in code examples",
+    "Use Swift syntax unless Objective-C is specifically requested",
+    "Preserve Apple's naming conventions and API signatures exactly",
+    "Link to related APIs within the same framework",
+    "Consider iOS as the default platform unless specified otherwise",
+    "Include import statements in code examples"
+  ],
+  "previousVersions": []
+}

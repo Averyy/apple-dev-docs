@@ -1,0 +1,29 @@
+# pickerDidResignFocus(_:)
+
+**Framework**: Watchkit  
+**Kind**: method
+
+Called to let you know that the specified picker is no longer receiving input from the Digital Crown.
+
+**Availability**:
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+@MainActor func pickerDidResignFocus(_ picker: WKInterfacePicker)
+```
+
+## Overview
+
+The default implementation of this method does nothing. Subclasses can override it and use it to perform actions related to the picker losing focus. You do not need to call `super` in your implementation.
+
+## See Also
+
+- [func pickerDidFocus(WKInterfacePicker)](pickerdidfocus(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pickerdidfocus(_:)))
+- [func pickerDidSettle(WKInterfacePicker)](pickerdidsettle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pickerdidsettle(_:)))
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pickerdidresignfocus(_:))*

@@ -1,0 +1,87 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+*.cover
+.hypothesis/
+
+# Logs
+*.log
+logs/
+
+# Scraped data - DO NOT IGNORE (this is the main output!)
+# /documentation/*
+# !documentation/.gitkeep
+
+# Cache
+.hashes/
+_metadata/
+
+# Pyppeteer
+.pyppeteer/
+
+# Distribution
+build/
+dist/
+*.egg-info/
+
+# Project specific
+scraper.log
+*.tmp
+.cache/
+
+# Development artifacts
+*.swp.*
+.prof
+*.prof
+profile_*
+.coverage.*
+
+# Jupyter Notebook checkpoints (if we add any)
+.ipynb_checkpoints
+
+# Temporary files from editors
+*.bak
+*.orig
