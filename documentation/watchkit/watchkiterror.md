@@ -17,35 +17,35 @@ struct WatchKitError
 ## Topics
 
 ### Accessing Error Codes
-- [static var downloadFailed: WatchKitError.Code](downloadfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/downloadfailed))
+- [static var downloadFailed: WatchKitError.Code](watchkiterror/downloadfailed.md)
   A download error.
-- [static var invalidArgument: WatchKitError.Code](invalidargument.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/invalidargument))
+- [static var invalidArgument: WatchKitError.Code](watchkiterror/invalidargument.md)
   An invalid argument error.
-- [static var mediaPlayerFailed: WatchKitError.Code](mediaplayerfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/mediaplayerfailed))
+- [static var mediaPlayerFailed: WatchKitError.Code](watchkiterror/mediaplayerfailed.md)
   A media player error.
-- [static var recordingFailed: WatchKitError.Code](recordingfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/recordingfailed))
+- [static var recordingFailed: WatchKitError.Code](watchkiterror/recordingfailed.md)
   An audio recording error.
-- [static var unknown: WatchKitError.Code](unknown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/unknown))
+- [static var unknown: WatchKitError.Code](watchkiterror/unknown.md)
   An unknown error.
-- [static var applicationDelegateWatchKitRequestReplyNotCalled: WatchKitError.Code](applicationdelegatewatchkitrequestreplynotcalled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/applicationdelegatewatchkitrequestreplynotcalled))
+- [static var applicationDelegateWatchKitRequestReplyNotCalled: WatchKitError.Code](watchkiterror/applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
 ### Accessing the Error Domain
-- [let WatchKitErrorDomain: String](watchkiterrordomain.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterrordomain))
+- [let WatchKitErrorDomain: String](watchkiterrordomain.md)
   The domain for WatchKit errors.
 ### Accessing Error Properties
-- [WatchKitError.Code](code.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code))
+- [WatchKitError.Code](watchkiterror/code.md)
   Error codes reported by WatchKit.
 ### Type Properties
-- [static var errorDomain: String](errordomain.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/errordomain))
+- [static var errorDomain: String](watchkiterror/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- CustomNSError ([Apple Docs](https://developer.apple.com/documentation/Foundation/CustomNSError))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Error ([Apple Docs](https://developer.apple.com/documentation/Swift/Error))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [CustomNSError](https://developer.apple.com/documentation/Foundation/CustomNSError)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Error](https://developer.apple.com/documentation/Swift/Error)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 
 ---

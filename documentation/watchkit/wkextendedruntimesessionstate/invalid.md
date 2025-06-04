@@ -16,15 +16,15 @@ case invalid
 
 #### Discussion
 
-The system passes a [`WKExtendedRuntimeSessionInvalidationReason`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessioninvalidationreason) value to the session delegate’s [`extendedRuntimeSession(_:didInvalidateWith:error:)`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesession(_:didinvalidatewith:error:)) method. Use this value to determine why the session became invalid.
+The system passes a [`WKExtendedRuntimeSessionInvalidationReason`](wkextendedruntimesessioninvalidationreason.md) value to the session delegate’s [`extendedRuntimeSession(_:didInvalidateWith:error:)`](wkextendedruntimesessiondelegate/extendedruntimesession(_:didinvalidatewith:error:).md) method. Use this value to determine why the session became invalid.
 
 ## See Also
 
-- [WKExtendedRuntimeSessionState.notStarted](notstarted.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionstate/notstarted))
+- [WKExtendedRuntimeSessionState.notStarted](wkextendedruntimesessionstate/notstarted.md)
   The app has not yet started or scheduled the session.
-- [WKExtendedRuntimeSessionState.scheduled](scheduled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionstate/scheduled))
+- [WKExtendedRuntimeSessionState.scheduled](wkextendedruntimesessionstate/scheduled.md)
   The app has scheduled the session to run at a future date.
-- [WKExtendedRuntimeSessionState.running](running.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionstate/running))
+- [WKExtendedRuntimeSessionState.running](wkextendedruntimesessionstate/running.md)
   The session is actively running.
 
 

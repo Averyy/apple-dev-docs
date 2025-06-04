@@ -16,22 +16,22 @@ var state: WKExtendedRuntimeSessionState { get }
 
 #### Discussion
 
-For a list of session states, see [`WKExtendedRuntimeSessionState`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionstate).
+For a list of session states, see [`WKExtendedRuntimeSessionState`](wkextendedruntimesessionstate.md).
 
 ## See Also
 
-- [func start()](start().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start()))
+- [func start()](wkextendedruntimesession/start.md)
   Starts running the session.
-- [func start(at: Date)](start(at:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start(at:)))
+- [func start(at: Date)](wkextendedruntimesession/start(at:).md)
   Schedules a session to start running at a future date.
-- [func invalidate()](invalidate().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/invalidate()))
+- [func invalidate()](wkextendedruntimesession/invalidate.md)
   Stops the session.
-- [enum WKExtendedRuntimeSessionState](wkextendedruntimesessionstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionstate))
+- [enum WKExtendedRuntimeSessionState](wkextendedruntimesessionstate.md)
   The activation states for an extended runtime session.
-- [var expirationDate: Date?](expirationdate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/expirationdate))
+- [var expirationDate: Date?](wkextendedruntimesession/expirationdate.md)
   The time and date when the session expires.
-- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](requestautolaunchauthorizationstatus(completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/requestautolaunchauthorizationstatus(completion:)))
-- [enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus](wkextendedruntimesessionautolaunchauthorizationstatus.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionautolaunchauthorizationstatus))
+- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](wkextendedruntimesession/requestautolaunchauthorizationstatus(completion:).md)
+- [enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus](wkextendedruntimesessionautolaunchauthorizationstatus.md)
 
 
 ---

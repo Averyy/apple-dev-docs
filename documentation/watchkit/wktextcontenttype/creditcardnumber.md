@@ -16,7 +16,7 @@ static let creditCardNumber: WKTextContentType
 
 ## See Also
 
-- [static let URL: WKTextContentType](url.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/url))
+- [static let URL: WKTextContentType](wktextcontenttype/url.md)
   A URL.
 
 

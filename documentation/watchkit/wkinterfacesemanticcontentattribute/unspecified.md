@@ -16,13 +16,13 @@ case unspecified
 
 ## See Also
 
-- [WKInterfaceSemanticContentAttribute.playback](playback.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacesemanticcontentattribute/playback))
+- [WKInterfaceSemanticContentAttribute.playback](wkinterfacesemanticcontentattribute/playback.md)
   A view representing the playback controls, such as Play, Rewind, or Fast Forward buttons or playhead scrubbers. These views are not flipped when switching between left-to-right and right-to-left layouts.
-- [WKInterfaceSemanticContentAttribute.spatial](spatial.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacesemanticcontentattribute/spatial))
+- [WKInterfaceSemanticContentAttribute.spatial](wkinterfacesemanticcontentattribute/spatial.md)
   A view representing a directional control, for example a segment control for text alignment, or a D-pad control for a game. These views are not flipped when switching between left-to-right and right-to-left layouts.
-- [WKInterfaceSemanticContentAttribute.forceLeftToRight](forcelefttoright.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacesemanticcontentattribute/forcelefttoright))
+- [WKInterfaceSemanticContentAttribute.forceLeftToRight](wkinterfacesemanticcontentattribute/forcelefttoright.md)
   A view that is always displayed using a left-to-right layout.
-- [WKInterfaceSemanticContentAttribute.forceRightToLeft](forcerighttoleft.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacesemanticcontentattribute/forcerighttoleft))
+- [WKInterfaceSemanticContentAttribute.forceRightToLeft](wkinterfacesemanticcontentattribute/forcerighttoleft.md)
   A view that is always displayed using a left-to-right layout.
 
 

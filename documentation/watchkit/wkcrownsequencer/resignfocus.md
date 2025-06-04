@@ -20,7 +20,7 @@ Call this method when you no longer want to receive crown events in the current 
 
 ## See Also
 
-- [func focus()](focus().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/focus()))
+- [func focus()](wkcrownsequencer/focus.md)
   Begins the delivery of crown events to the current crown sequencer.
 
 

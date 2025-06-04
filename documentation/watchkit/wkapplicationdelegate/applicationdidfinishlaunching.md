@@ -17,7 +17,7 @@ optional func applicationDidFinishLaunching()
 
 #### Discussion
 
-WatchKit calls this method after the launch cycle has finished and before your app’s interface is active. Use this method to complete your watchOS apps initialization and prepare it to run. For example, a page-based app could use this method to call the [`reloadRootControllers(withNames:contexts:)`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/reloadrootcontrollers(withnames:contexts:)) method to specify the initial set of interface controllers to display.
+WatchKit calls this method after the launch cycle has finished and before your app’s interface is active. Use this method to complete your watchOS apps initialization and prepare it to run. For example, a page-based app could use this method to call the [`reloadRootControllers(withNames:contexts:)`](wkinterfacecontroller/reloadrootcontrollers(withnames:contexts:).md) method to specify the initial set of interface controllers to display.
 
 > **Note**:  When creating an app that uses the SwiftUI [`App`](https://developer.apple.com/documentation/SwiftUI/App) protocol to manage your life cycle, use the [`onChange(of:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:perform:)) modifier and the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) environment value to monitor life cycle changes when possible. For more information, see [`Building a watchOS app`](https://developer.apple.com/documentation/watchOS-Apps/building_a_watchos_app).
 
@@ -25,19 +25,19 @@ WatchKit calls this method after the launch cycle has finished and before your a
 
 ## See Also
 
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
   Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
-- [static func main()](main().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/main()))
+- [static func main()](wkapplicationdelegate/main.md)
   Provides the top-level entry point for an app.
-- [func applicationDidBecomeActive()](applicationdidbecomeactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidbecomeactive()))
+- [func applicationDidBecomeActive()](wkapplicationdelegate/applicationdidbecomeactive.md)
   Tells the delegate that the watchOS app is visible and processing events.
-- [func applicationWillResignActive()](applicationwillresignactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillresignactive()))
+- [func applicationWillResignActive()](wkapplicationdelegate/applicationwillresignactive.md)
   Tells the delegate that the system is about to deactivate the watchOS app.
-- [func applicationWillEnterForeground()](applicationwillenterforeground().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillenterforeground()))
+- [func applicationWillEnterForeground()](wkapplicationdelegate/applicationwillenterforeground.md)
   Tells the delegate that the app is about to transition from the background to the foreground.
-- [func applicationDidEnterBackground()](applicationdidenterbackground().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidenterbackground()))
+- [func applicationDidEnterBackground()](wkapplicationdelegate/applicationdidenterbackground.md)
   Tells the delegate that the app has transitioned from the foreground to the background.
-- [func deviceOrientationDidChange()](deviceorientationdidchange().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/deviceorientationdidchange()))
+- [func deviceOrientationDidChange()](wkapplicationdelegate/deviceorientationdidchange.md)
   Tells the delegate that the device’s orientation has changed.
 
 

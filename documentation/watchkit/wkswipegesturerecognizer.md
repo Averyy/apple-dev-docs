@@ -18,7 +18,7 @@ class WKSwipeGestureRecognizer
 
 A swipe is a discrete gesture; the associated action message is sent only once per gesture.
 
-You do not create instances of this class programmatically. Instead, add a swipe gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer).
+You do not create instances of this class programmatically. Instead, add a swipe gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
 ##### State Changes for a Swipe Gesture
 
@@ -26,7 +26,7 @@ A swipe gesture recognizer tracks discrete events, and therefore has a limited n
 
 ![Possible state is Recognized or Failed](https://docs-assets.developer.apple.com/published/cb3692b76f000fb3b3a265280f7fdb70/media-3591360%402x.png)
 
-The gesture recognizer calls its action method when it enters the [`WKGestureRecognizerState.recognized`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizerstate/recognized) state. You may determine the location where a swipe began by calling its [`locationInObject()`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer/locationinobject()) method. For more information on implementing discrete gesture recognizers, see [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer).
+The gesture recognizer calls its action method when it enters the [`WKGestureRecognizerState.recognized`](wkgesturerecognizerstate/recognized.md) state. You may determine the location where a swipe began by calling its [`locationInObject()`](wkgesturerecognizer/locationinobject().md) method. For more information on implementing discrete gesture recognizers, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
 ##### Interface Builder Attributes
 
@@ -34,44 +34,44 @@ Xcode lets you configure information about your gesture recognizer in your story
 
 | Attribute | Description |
 | --- | --- |
-| Swipe | The direction of the swipe. The swipe must occur in this direction for the gesture to be recognized. You can set this value programmatically using the [`direction`](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizer/direction) property. |
+| Swipe | The direction of the swipe. The swipe must occur in this direction for the gesture to be recognized. You can set this value programmatically using the [`direction`](wkswipegesturerecognizer/direction.md) property. |
 
-The [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer) parent class also defines attributes that you can configure for your gesture recognizer. For information about those attributes, see [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer).
+The [`WKGestureRecognizer`](wkgesturerecognizer.md) parent class also defines attributes that you can configure for your gesture recognizer. For information about those attributes, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
 ## Topics
 
 ### Configuring the Gesture Recognizer
-- [var direction: WKSwipeGestureRecognizerDirection](direction.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizer/direction))
+- [var direction: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizer/direction.md)
   The permitted directions of the swipe.
 ### Constants
-- [struct WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizerdirection))
+- [struct WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection.md)
   Constants indicating the direction of a swipe.
 
 ## Relationships
 
 ### Inherits From
-- [WKGestureRecognizer](wkgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer))
+- [WKGestureRecognizer](wkgesturerecognizer.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [class WKCrownSequencer](wkcrownsequencer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer))
+- [class WKCrownSequencer](wkcrownsequencer.md)
   An object that reports the current state of the digital crown, including its rotational speed when it is in motion.
-- [protocol WKCrownDelegate](wkcrowndelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate))
+- [protocol WKCrownDelegate](wkcrowndelegate.md)
   A collection of methods you can implement to track the user’s interaction with the digital crown, receiving notifications when the user rotates the crown or when rotation stops.
-- [class WKGestureRecognizer](wkgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer))
+- [class WKGestureRecognizer](wkgesturerecognizer.md)
   The base class for all other gesture recognizer classes.
-- [class WKLongPressGestureRecognizer](wklongpressgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer))
+- [class WKLongPressGestureRecognizer](wklongpressgesturerecognizer.md)
   A gesture recognizer that interprets a touch event that occurs in the same relative area for an extended period of time.
-- [class WKPanGestureRecognizer](wkpangesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpangesturerecognizer))
+- [class WKPanGestureRecognizer](wkpangesturerecognizer.md)
   A gesture recognizer that interprets a touch event that moves around the screen.
-- [class WKTapGestureRecognizer](wktapgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktapgesturerecognizer))
+- [class WKTapGestureRecognizer](wktapgesturerecognizer.md)
   A gesture recognizer that interprets a touch event occurring and ending in approximately the same area on the screen.
 
 

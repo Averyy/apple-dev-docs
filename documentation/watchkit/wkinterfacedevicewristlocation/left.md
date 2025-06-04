@@ -16,7 +16,7 @@ case left
 
 ## See Also
 
-- [WKInterfaceDeviceWristLocation.right](right.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicewristlocation/right))
+- [WKInterfaceDeviceWristLocation.right](wkinterfacedevicewristlocation/right.md)
   The user’s right wrist.
 
 

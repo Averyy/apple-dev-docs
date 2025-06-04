@@ -21,13 +21,13 @@ When creating an app that uses the SwiftUI [`App`](https://developer.apple.com/d
 
 ## See Also
 
-- [static let didFinishLaunchingNotification: NSNotification.Name](didfinishlaunchingnotification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/didfinishlaunchingnotification))
+- [static let didFinishLaunchingNotification: NSNotification.Name](wkapplication/didfinishlaunchingnotification.md)
   A message indicating that the launch process finished and the extension is ready to run.
-- [static let didBecomeActiveNotification: NSNotification.Name](didbecomeactivenotification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/didbecomeactivenotification))
+- [static let didBecomeActiveNotification: NSNotification.Name](wkapplication/didbecomeactivenotification.md)
   A message indicating that the watchOS app is visible and processing events.
-- [static let willResignActiveNotification: NSNotification.Name](willresignactivenotification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/willresignactivenotification))
+- [static let willResignActiveNotification: NSNotification.Name](wkapplication/willresignactivenotification.md)
   A message indicating that the system is about to deactivate the watchOS app.
-- [static let willEnterForegroundNotification: NSNotification.Name](willenterforegroundnotification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/willenterforegroundnotification))
+- [static let willEnterForegroundNotification: NSNotification.Name](wkapplication/willenterforegroundnotification.md)
   A message indicating that the watchOS app is about to transition from the background to the foreground.
 
 

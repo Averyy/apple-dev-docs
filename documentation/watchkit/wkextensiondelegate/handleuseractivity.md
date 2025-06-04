@@ -37,9 +37,9 @@ When your app launches because the user tapped on a complication, the `userInfo`
 
 ## See Also
 
-- [func updateUserActivity(String, userInfo: [AnyHashable : Any]?, webpageURL: URL?)](updateuseractivity(_:userinfo:webpageurl:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/updateuseractivity(_:userinfo:webpageurl:)))
+- [func updateUserActivity(String, userInfo: [AnyHashable : Any]?, webpageURL: URL?)](wkinterfacecontroller/updateuseractivity(_:userinfo:webpageurl:).md)
   Registers the current user activity with the system.
-- [func handle(NSUserActivity)](handle(_:)-5pyj1.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-5pyj1))
+- [func handle(NSUserActivity)](wkextensiondelegate/handle(_:)-5pyj1.md)
   Responds to Handoff–related activity from Siri.
 
 

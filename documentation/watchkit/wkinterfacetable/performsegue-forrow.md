@@ -18,7 +18,7 @@ func performSegue(forRow row: Int)
 
 This method lets you programmatically transition to a new interface controller. It triggers the segue defined in your storyboard file for the specified row controller.
 
-While similar to the [`WKInterfaceController`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller) class’s [`pushController(withName:context:)`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pushcontroller(withname:context:)) method, this method supports Item Pagination . If Item Pagination is enabled, you must use this method when programmatically navigating through a table’s hierarchy. For more information on Item Pagination, see [`Support Item Pagination`](https://developer.apple.com/documentation/watchkit/wkinterfacetable#Support-Item-Pagination).
+While similar to the [`WKInterfaceController`](wkinterfacecontroller.md) class’s [`pushController(withName:context:)`](wkinterfacecontroller/pushcontroller(withname:context:).md) method, this method supports Item Pagination . If Item Pagination is enabled, you must use this method when programmatically navigating through a table’s hierarchy. For more information on Item Pagination, see [`Support Item Pagination`](wkinterfacetable#Support-Item-Pagination.md).
 
 ## Parameters
 

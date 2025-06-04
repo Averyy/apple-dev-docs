@@ -17,27 +17,27 @@ enum WKAlertActionStyle
 ## Topics
 
 ### Constants
-- [WKAlertActionStyle.default](default.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionstyle/default))
+- [WKAlertActionStyle.default](wkalertactionstyle/default.md)
   The default style. Use this for most of your buttons.
-- [WKAlertActionStyle.cancel](cancel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionstyle/cancel))
+- [WKAlertActionStyle.cancel](wkalertactionstyle/cancel.md)
   A cancel action. Use this style for an action that cancels the operation without making changes.
-- [WKAlertActionStyle.destructive](destructive.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionstyle/destructive))
+- [WKAlertActionStyle.destructive](wkalertactionstyle/destructive.md)
   An action that causes destructive behavior to the user’s data or the app. Destructive actions are styled in a way that warns the user of the destructive nature of the action.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionstyle/init(rawvalue:)))
+- [init?(rawValue: Int)](wkalertactionstyle/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [typealias WKAlertActionHandler](wkalertactionhandler.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionhandler))
+- [typealias WKAlertActionHandler](wkalertactionhandler.md)
   A block to perform in response to an action.
 
 

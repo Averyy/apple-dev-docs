@@ -21,9 +21,9 @@ To recover from a crash, call your HealthKit store’s [`recoverActiveWorkoutSes
 
 ## See Also
 
-- func recoverActiveWorkoutSession(completion: (HKWorkoutSession?, (any Error)?) -> Void) ([Apple Docs](https://developer.apple.com/documentation/healthkit/hkhealthstore/2962889-recoveractiveworkoutsession))
+- [func recoverActiveWorkoutSession(completion: (HKWorkoutSession?, (any Error)?) -> Void)](https://developer.apple.com/documentation/healthkit/hkhealthstore/2962889-recoveractiveworkoutsession)
   Recovers an active workout session.
-- [func handle(HKWorkoutConfiguration)](handle(_:)-1pfoc.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-1pfoc))
+- [func handle(HKWorkoutConfiguration)](wkapplicationdelegate/handle(_:)-1pfoc.md)
   Tells the delegate that the user started a workout session on the paired iPhone.
 
 

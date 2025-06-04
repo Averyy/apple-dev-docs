@@ -35,56 +35,56 @@ Xcode lets you configure information about your timer interface object in your s
 | Format | The format of the timer string. Select different options to update the appearance of the timer label in your storyboard scene. |
 | Enabled | A checkbox indicating whether the timer starts running as soon as your interface is initialized. |
 | Units | The units to be displayed in the label. Enabling checkboxes in this section causes the timer to display the corresponding units that are in range of the time. In other words, a timer with 2 minutes remaining displays minutes and seconds only; it does not display hours, days, or any larger units. |
-| Preview Secs | The initial number of seconds for the timer. You can change this value programmatically using the [`setDate(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/setdate(_:)) method. |
+| Preview Secs | The initial number of seconds for the timer. You can change this value programmatically using the [`setDate(_:)`](wkinterfacetimer/setdate(_:).md) method. |
 
-A date object is a custom label whose text you cannot set directly. However, you can customize the appearance of the date object as you would for a label using the Attributes inspector in Xcode. For information about the label attributes you can configure, see [`WKInterfaceLabel`](https://developer.apple.com/documentation/watchkit/wkinterfacelabel).
+A date object is a custom label whose text you cannot set directly. However, you can customize the appearance of the date object as you would for a label using the Attributes inspector in Xcode. For information about the label attributes you can configure, see [`WKInterfaceLabel`](wkinterfacelabel.md).
 
 ## Topics
 
 ### Configuring the Timer Attributes
-- [func setDate(Date)](setdate(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/setdate(_:)))
+- [func setDate(Date)](wkinterfacetimer/setdate(_:).md)
   Changes the start time for the timer.
-- [func setTextColor(UIColor?)](settextcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/settextcolor(_:)))
+- [func setTextColor(UIColor?)](wkinterfacetimer/settextcolor(_:).md)
   Sets the color of the timer’s text.
 ### Starting and Stopping the Timer
-- [func start()](start().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/start()))
+- [func start()](wkinterfacetimer/start.md)
   Begins updates to the timer’s display.
-- [func stop()](stop().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/stop()))
+- [func stop()](wkinterfacetimer/stop.md)
   Stops updates to the timer’s display.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject))
+- [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [class WKInterfaceLabel](wkinterfacelabel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelabel))
+- [class WKInterfaceLabel](wkinterfacelabel.md)
   An interface element that displays static text.
-- [class WKInterfaceDate](wkinterfacedate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedate))
+- [class WKInterfaceDate](wkinterfacedate.md)
   A label that displays the current date or time.
-- [class WKInterfaceButton](wkinterfacebutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton))
+- [class WKInterfaceButton](wkinterfacebutton.md)
   A button in the user interface of your watchOS app.
-- [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton))
+- [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md)
   A button that you can use to trigger a Sign in with Apple request.
-- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepaymentbutton))
+- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md)
   A button that you can use to trigger payments through Apple Pay.
-- [class WKInterfaceTextField](wkinterfacetextfield.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield))
+- [class WKInterfaceTextField](wkinterfacetextfield.md)
   An interface element that displays an editable text area.
-- [class WKInterfaceSwitch](wkinterfaceswitch.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch))
+- [class WKInterfaceSwitch](wkinterfaceswitch.md)
   An interface element that toggles between an On and Off state.
-- [class WKInterfaceSlider](wkinterfaceslider.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider))
+- [class WKInterfaceSlider](wkinterfaceslider.md)
   An interface element that lets users select a single floating-point value from a range of values.
-- [class WKInterfaceActivityRing](wkinterfaceactivityring.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring))
+- [class WKInterfaceActivityRing](wkinterfaceactivityring.md)
   A view that displays data from a HealthKit activity summary object.
-- [class WKInterfaceMap](wkinterfacemap.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap))
+- [class WKInterfaceMap](wkinterfacemap.md)
   An interface element that displays a noninteractive map for the location you specify.
 
 

@@ -31,9 +31,9 @@ The default implementation of this method does nothing. When overriding this met
 
 ## See Also
 
-- [func updateUserActivity(String, userInfo: [AnyHashable : Any]?, webpageURL: URL?)](updateuseractivity(_:userinfo:webpageurl:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/updateuseractivity(_:userinfo:webpageurl:)))
+- [func updateUserActivity(String, userInfo: [AnyHashable : Any]?, webpageURL: URL?)](wkinterfacecontroller/updateuseractivity(_:userinfo:webpageurl:).md)
   Registers the current user activity with the system.
-- [func handle(NSUserActivity)](handle(_:)-3kqsk.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-3kqsk))
+- [func handle(NSUserActivity)](wkapplicationdelegate/handle(_:)-3kqsk.md)
   Responds to Handoff–related activity from Siri.
 
 

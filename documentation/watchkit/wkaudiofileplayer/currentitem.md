@@ -20,9 +20,9 @@ The value of this property is set at initialization time.
 
 ## See Also
 
-- [var status: WKAudioFilePlayerStatus](status.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/status))
+- [var status: WKAudioFilePlayerStatus](wkaudiofileplayer/status.md)
   The status of the player.
-- [var error: (any Error)?](error.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/error))
+- [var error: (any Error)?](wkaudiofileplayer/error.md)
   An error that describes the cause of a failure.
 
 

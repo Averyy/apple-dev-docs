@@ -27,7 +27,7 @@ An initialized asset object.
 
 ## See Also
 
-- [convenience init(url: URL)](init(url:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/init(url:)))
+- [convenience init(url: URL)](wkaudiofileasset/init(url:).md)
   Returns an asset for the audio file at the specified URL.
 
 

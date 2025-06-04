@@ -23,9 +23,9 @@ For more information, see [`Setting the app’s accent color`](https://developer
 
 ## See Also
 
-- [var isAutorotating: Bool](isautorotating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isautorotating))
+- [var isAutorotating: Bool](wkapplication/isautorotating.md)
   A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.
-- [var isAutorotated: Bool](isautorotated.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isautorotated))
+- [var isAutorotated: Bool](wkapplication/isautorotated.md)
   A Boolean value that indicates whether the system has automatically rotated the user interface, orienting it properly for another viewer.
 
 

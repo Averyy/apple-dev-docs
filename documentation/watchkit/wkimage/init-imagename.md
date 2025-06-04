@@ -28,9 +28,9 @@ Use this method to specify an image by name. Only the image name is sent from yo
 
 ## See Also
 
-- [convenience init(image: UIImage)](init(image:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage/init(image:)))
+- [convenience init(image: UIImage)](wkimage/init(image:).md)
   Creates and returns an image object using the specified UIKit image.
-- [convenience init(imageData: Data)](init(imagedata:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage/init(imagedata:)))
+- [convenience init(imageData: Data)](wkimage/init(imagedata:).md)
   Creates an image with the specified raw image data.
 
 

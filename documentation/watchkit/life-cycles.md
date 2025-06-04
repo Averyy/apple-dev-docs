@@ -16,7 +16,7 @@ The system reports changes in your app’s execution state to your SwiftUI envir
 | Background | The system has given the watchOS app a small amount of background execution time. |
 | Suspended | The app is in memory but isn’t executing code. The system may purge suspended apps at any time to make room for other apps. |
 
-For more information, see [`Handling Common State Transitions`](https://developer.apple.com/documentation/watchkit/handling-common-state-transitions).
+For more information, see [`Handling Common State Transitions`](handling-common-state-transitions.md).
 
 ##### Receive Background Information
 
@@ -27,24 +27,24 @@ If the app is currently running—either active and onscreen, or inactive and th
 ## Topics
 
 ### Responding to life cycle events
-- [Handling Common State Transitions](handling-common-state-transitions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/handling-common-state-transitions))
+- [Handling Common State Transitions](handling-common-state-transitions.md)
   Detect and respond to common state transitions.
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
   Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
-- [Handling User Activity](handling-user-activity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/handling-user-activity))
+- [Handling User Activity](handling-user-activity.md)
   Detect and respond to user activity information from Handoff or a complication.
-- [Taking Advantage of Frontmost App State](taking-advantage-of-frontmost-app-state.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/taking-advantage-of-frontmost-app-state))
+- [Taking Advantage of Frontmost App State](taking-advantage-of-frontmost-app-state.md)
   Understand the frontmost app state, and the features it provides to your app.
 
 ## See Also
 
-- [Background execution](background-execution.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/background-execution))
+- [Background execution](background-execution.md)
   Manage background sessions and tasks.
-- [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
+- [Using extended runtime sessions](using-extended-runtime-sessions.md)
   Create an extended runtime session that continues running your app after the user stops interacting with it.
-- [class WKExtendedRuntimeSession](wkextendedruntimesession.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession))
+- [class WKExtendedRuntimeSession](wkextendedruntimesession.md)
   A session that continues to run your app after the user has stopped interacting.
-- [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh))
+- [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md)
   Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 
 

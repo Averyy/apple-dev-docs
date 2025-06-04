@@ -20,9 +20,9 @@ The default value of this property is `1`, but you can change this value when co
 
 ## See Also
 
-- [var minimumPressDuration: CFTimeInterval](minimumpressduration.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/minimumpressduration))
+- [var minimumPressDuration: CFTimeInterval](wklongpressgesturerecognizer/minimumpressduration.md)
   The minimum amount of time (in seconds) that the user’s fingers must be touching the interface object.
-- [var allowableMovement: CGFloat](allowablemovement.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/allowablemovement))
+- [var allowableMovement: CGFloat](wklongpressgesturerecognizer/allowablemovement.md)
   The maximum movement of the finger on the interface object that allows the gesture to be recognized.
 
 

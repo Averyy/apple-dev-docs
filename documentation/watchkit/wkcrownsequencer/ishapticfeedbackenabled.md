@@ -20,7 +20,7 @@ By default, this property is set to [`true`](https://developer.apple.com/documen
 
 ## See Also
 
-- [var isTableScrollingHapticFeedbackEnabled: Bool](istablescrollinghapticfeedbackenabled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/istablescrollinghapticfeedbackenabled))
+- [var isTableScrollingHapticFeedbackEnabled: Bool](wkinterfacecontroller/istablescrollinghapticfeedbackenabled.md)
   A Boolean value that determines whether haptic feedback coordinates with the appearance of new rows as the user scrolls through a table.
 
 

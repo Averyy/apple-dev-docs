@@ -17,31 +17,31 @@ enum WKTextInputMode
 ## Topics
 
 ### Constants
-- [WKTextInputMode.plain](plain.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextinputmode/plain))
+- [WKTextInputMode.plain](wktextinputmode/plain.md)
   Text from dictation and suggestions only. Do not allow emoji of any kind.
-- [WKTextInputMode.allowEmoji](allowemoji.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextinputmode/allowemoji))
+- [WKTextInputMode.allowEmoji](wktextinputmode/allowemoji.md)
   Text from dictation and suggestions plus non animated emoji.
-- [WKTextInputMode.allowAnimatedEmoji](allowanimatedemoji.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextinputmode/allowanimatedemoji))
+- [WKTextInputMode.allowAnimatedEmoji](wktextinputmode/allowanimatedemoji.md)
   Text from dictation and suggestions plus both animated and non animated emoji.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextinputmode/init(rawvalue:)))
+- [init?(rawValue: Int)](wktextinputmode/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [func presentTextInputController(withSuggestions: [String]?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](presenttextinputcontroller(withsuggestions:allowedinputmode:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presenttextinputcontroller(withsuggestions:allowedinputmode:completion:)))
+- [func presentTextInputController(withSuggestions: [String]?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](wkinterfacecontroller/presenttextinputcontroller(withsuggestions:allowedinputmode:completion:).md)
   Displays a modal interface for gathering text input from the user.
-- [func presentTextInputControllerWithSuggestions(forLanguage: ((String) -> [Any]?)?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](presenttextinputcontrollerwithsuggestions(forlanguage:allowedinputmode:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presenttextinputcontrollerwithsuggestions(forlanguage:allowedinputmode:completion:)))
+- [func presentTextInputControllerWithSuggestions(forLanguage: ((String) -> [Any]?)?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](wkinterfacecontroller/presenttextinputcontrollerwithsuggestions(forlanguage:allowedinputmode:completion:).md)
   Displays a modal interface for gathering language-specific text input from the user.
-- [func dismissTextInputController()](dismisstextinputcontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismisstextinputcontroller()))
+- [func dismissTextInputController()](wkinterfacecontroller/dismisstextinputcontroller.md)
   Dismisses the text input controller without returning any text.
 
 

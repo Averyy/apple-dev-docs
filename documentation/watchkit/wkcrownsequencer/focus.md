@@ -20,7 +20,7 @@ You must call this method to begin the delivery of crown events to your crown se
 
 ## See Also
 
-- [func resignFocus()](resignfocus().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/resignfocus()))
+- [func resignFocus()](wkcrownsequencer/resignfocus.md)
   Ends the delivery of crown events to the current crown sequencer.
 
 

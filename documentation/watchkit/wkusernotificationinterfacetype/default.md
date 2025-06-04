@@ -16,7 +16,7 @@ case `default`
 
 ## See Also
 
-- [WKUserNotificationInterfaceType.custom](custom.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacetype/custom))
+- [WKUserNotificationInterfaceType.custom](wkusernotificationinterfacetype/custom.md)
   A constant indicating that the system should display your dynamic notification interface.
 
 

@@ -17,17 +17,17 @@ var applicationState: WKApplicationState { get }
 
 #### Discussion
 
-The Watch app may be active, inactive, or running in the background. Use this property to get the current state. To be notified of state changes, implement the appropriate methods of the [`delegate`](https://developer.apple.com/documentation/watchkit/wkextension/delegate) object.
+The Watch app may be active, inactive, or running in the background. Use this property to get the current state. To be notified of state changes, implement the appropriate methods of the [`delegate`](wkextension/delegate.md) object.
 
 ## See Also
 
-- [enum WKApplicationState](wkapplicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate))
+- [enum WKApplicationState](wkapplicationstate.md)
   The running states of the Watch app.
-- [var isApplicationRunningInDock: Bool](isapplicationrunningindock.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isapplicationrunningindock))
+- [var isApplicationRunningInDock: Bool](wkextension/isapplicationrunningindock.md)
   A Boolean value that indicates whether the app is running in the dock.
-- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:)))
+- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](wkextension/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md)
   Schedules a background task to refresh the app’s data.
-- [var isFrontmostTimeoutExtended: Bool](isfrontmosttimeoutextended.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isfrontmosttimeoutextended))
+- [var isFrontmostTimeoutExtended: Bool](wkextension/isfrontmosttimeoutextended.md)
   A Boolean value that determines whether the app extends its time as the frontmost app.
 
 

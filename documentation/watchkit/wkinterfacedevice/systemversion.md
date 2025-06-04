@@ -20,7 +20,7 @@ This property contains the numerical version number of the system. For example, 
 
 ## See Also
 
-- [var systemName: String](systemname.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/systemname))
+- [var systemName: String](wkinterfacedevice/systemname.md)
   The name of the operating system.
 
 

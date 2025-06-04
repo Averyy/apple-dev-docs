@@ -20,19 +20,19 @@ Users specify the wrist placement during the initial setup of Apple Watch, and t
 
 ## See Also
 
-- [var name: String](name.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/name))
+- [var name: String](wkinterfacedevice/name.md)
   The name of the device.
-- [var model: String](model.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/model))
+- [var model: String](wkinterfacedevice/model.md)
   The model information for the device.
-- [var localizedModel: String](localizedmodel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/localizedmodel))
+- [var localizedModel: String](wkinterfacedevice/localizedmodel.md)
   The localized version of the model information.
-- [enum WKInterfaceDeviceWristLocation](wkinterfacedevicewristlocation.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicewristlocation))
+- [enum WKInterfaceDeviceWristLocation](wkinterfacedevicewristlocation.md)
   Constants indicating the wrist on which the user wears the Apple Watch.
-- [var crownOrientation: WKInterfaceDeviceCrownOrientation](crownorientation.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/crownorientation))
+- [var crownOrientation: WKInterfaceDeviceCrownOrientation](wkinterfacedevice/crownorientation.md)
   The side on which the crown is positioned.
-- [enum WKInterfaceDeviceCrownOrientation](wkinterfacedevicecrownorientation.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicecrownorientation))
+- [enum WKInterfaceDeviceCrownOrientation](wkinterfacedevicecrownorientation.md)
   Constants indicating the crown orientation from the user’s perspective.
-- [var preferredContentSizeCategory: String](preferredcontentsizecategory.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/preferredcontentsizecategory))
+- [var preferredContentSizeCategory: String](wkinterfacedevice/preferredcontentsizecategory.md)
   The preferred font-sizing option.
 
 

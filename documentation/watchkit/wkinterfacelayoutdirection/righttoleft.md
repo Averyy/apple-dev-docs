@@ -16,7 +16,7 @@ case rightToLeft
 
 ## See Also
 
-- [WKInterfaceLayoutDirection.leftToRight](lefttoright.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelayoutdirection/lefttoright))
+- [WKInterfaceLayoutDirection.leftToRight](wkinterfacelayoutdirection/lefttoright.md)
   The layout direction is left-to-right.
 
 

@@ -28,7 +28,7 @@ WatchKit may call this method multiple times while your interface controller is 
 
 ## See Also
 
-- [func didReceive(UNNotification)](didreceive(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/didreceive(_:)))
+- [func didReceive(UNNotification)](wkusernotificationinterfacecontroller/didreceive(_:).md)
   Delivers a notification object to your interface controller for processing.
 
 

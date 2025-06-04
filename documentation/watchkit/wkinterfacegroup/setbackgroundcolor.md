@@ -29,11 +29,11 @@ Changes to the background color of a group are animatable.
 ## See Also
 
 - [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
-- [func setBackgroundImage(UIImage?)](setbackgroundimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundimage(_:)))
+- [func setBackgroundImage(UIImage?)](wkinterfacegroup/setbackgroundimage(_:).md)
   Changes the background image of the group container to the specified image.
-- [func setBackgroundImageData(Data?)](setbackgroundimagedata(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundimagedata(_:)))
+- [func setBackgroundImageData(Data?)](wkinterfacegroup/setbackgroundimagedata(_:).md)
   Changes the background image of the group container to the image in the specified data object.
-- [func setBackgroundImageNamed(String?)](setbackgroundimagenamed(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundimagenamed(_:)))
+- [func setBackgroundImageNamed(String?)](wkinterfacegroup/setbackgroundimagenamed(_:).md)
   Changes the background image of the group container to the image in the specified resource file.
 
 

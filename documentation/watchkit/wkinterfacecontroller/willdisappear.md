@@ -17,7 +17,7 @@ func willDisappear()
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
+- [Navigating Between Scenes](navigating-between-scenes.md)
 
 #### Discussion
 
@@ -27,11 +27,11 @@ The system calls this method on your WatchKit extension’s main thread. The `su
 
 ## See Also
 
-- [func willActivate()](willactivate().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willactivate()))
+- [func willActivate()](wkinterfacecontroller/willactivate.md)
   Tells the interface controller that the system is about to activate its view.
-- [func didDeactivate()](diddeactivate().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/diddeactivate()))
+- [func didDeactivate()](wkinterfacecontroller/diddeactivate.md)
   Tells the interface controller that its view is no longer active.
-- [func didAppear()](didappear().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/didappear()))
+- [func didAppear()](wkinterfacecontroller/didappear.md)
   Tells the interface controller that its view is now onscreen.
 
 

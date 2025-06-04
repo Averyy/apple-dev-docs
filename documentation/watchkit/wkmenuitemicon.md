@@ -16,78 +16,78 @@ enum WKMenuItemIcon
 
 #### Overview
 
-Use these constants with the [`addMenuItem(with:title:action:)`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/addmenuitem(with:title:action:)-6pb4t) method to configure actions for your interface controller’s menu.
+Use these constants with the [`addMenuItem(with:title:action:)`](wkinterfacecontroller/addmenuitem(with:title:action:)-6pb4t.md) method to configure actions for your interface controller’s menu.
 
 ## Topics
 
 ### Constants
-- [WKMenuItemIcon.accept](accept.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/accept))
+- [WKMenuItemIcon.accept](wkmenuitemicon/accept.md)
   The icon indicating an action to accept an event or item.
-- [WKMenuItemIcon.add](add.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/add))
+- [WKMenuItemIcon.add](wkmenuitemicon/add.md)
   The icon indicating an action for adding an item.
-- [WKMenuItemIcon.block](block.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/block))
+- [WKMenuItemIcon.block](wkmenuitemicon/block.md)
   The icon indicating an action to block or prevent something from happening.
-- [WKMenuItemIcon.decline](decline.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/decline))
+- [WKMenuItemIcon.decline](wkmenuitemicon/decline.md)
   The icon indicating an action to decline or cancel an event.
-- [WKMenuItemIcon.info](info.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/info))
+- [WKMenuItemIcon.info](wkmenuitemicon/info.md)
   The icon indicating an action to retrieve more information.
-- [WKMenuItemIcon.maybe](maybe.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/maybe))
+- [WKMenuItemIcon.maybe](wkmenuitemicon/maybe.md)
   The icon indicating an answer of maybe for an action.
-- [WKMenuItemIcon.more](more.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/more))
+- [WKMenuItemIcon.more](wkmenuitemicon/more.md)
   The icon indicating that more actions or options are available.
-- [WKMenuItemIcon.mute](mute.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/mute))
+- [WKMenuItemIcon.mute](wkmenuitemicon/mute.md)
   The icon indicating an action to mute the sound.
-- [WKMenuItemIcon.pause](pause.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/pause))
+- [WKMenuItemIcon.pause](wkmenuitemicon/pause.md)
   The icon indicating an action to pause playback.
-- [WKMenuItemIcon.play](play.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/play))
+- [WKMenuItemIcon.play](wkmenuitemicon/play.md)
   The icon indicating an action to play some content.
-- [WKMenuItemIcon.repeat](repeat.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/repeat))
+- [WKMenuItemIcon.repeat](wkmenuitemicon/repeat.md)
   The icon indicating that played content should repeat in a loop.
-- [WKMenuItemIcon.resume](resume.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/resume))
+- [WKMenuItemIcon.resume](wkmenuitemicon/resume.md)
   The icon indicating an action to resume playing some content.
-- [WKMenuItemIcon.share](share.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/share))
+- [WKMenuItemIcon.share](wkmenuitemicon/share.md)
   The icon indicating an action to share content.
-- [WKMenuItemIcon.shuffle](shuffle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/shuffle))
+- [WKMenuItemIcon.shuffle](wkmenuitemicon/shuffle.md)
   The icon indicating an action to shuffle content.
-- [WKMenuItemIcon.speaker](speaker.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/speaker))
+- [WKMenuItemIcon.speaker](wkmenuitemicon/speaker.md)
   The icon indicating audio output.
-- [WKMenuItemIcon.trash](trash.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/trash))
+- [WKMenuItemIcon.trash](wkmenuitemicon/trash.md)
   The icon indicating an action to delete some content.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/init(rawvalue:)))
+- [init?(rawValue: Int)](wkmenuitemicon/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [Text Response Key](text-response-key.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/text-response-key))
+- [Text Response Key](text-response-key.md)
   Keys for retrieving text response information.
-- [func addMenuItem(withImageNamed: String, title: String, action: Selector)](addmenuitem(withimagenamed:title:action:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/addmenuitem(withimagenamed:title:action:)))
+- [func addMenuItem(withImageNamed: String, title: String, action: Selector)](wkinterfacecontroller/addmenuitem(withimagenamed:title:action:).md)
   Adds an action to the context menu using an existing image resource in your Watch app bundle.
-- [func addMenuItem(with: WKMenuItemIcon, title: String, action: Selector)](addmenuitem(with:title:action:)-6pb4t.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/addmenuitem(with:title:action:)-6pb4t))
+- [func addMenuItem(with: WKMenuItemIcon, title: String, action: Selector)](wkinterfacecontroller/addmenuitem(with:title:action:)-6pb4t.md)
   Adds an action to the context menu using a system-provided icon.
-- [func addMenuItem(with: UIImage, title: String, action: Selector)](addmenuitem(with:title:action:)-1q2zj.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/addmenuitem(with:title:action:)-1q2zj))
+- [func addMenuItem(with: UIImage, title: String, action: Selector)](wkinterfacecontroller/addmenuitem(with:title:action:)-1q2zj.md)
   Adds an action to the context menu by using an image provided by your WatchKit extension.
-- [func beginGlanceUpdates()](beginglanceupdates().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/beginglanceupdates()))
+- [func beginGlanceUpdates()](wkinterfacecontroller/beginglanceupdates.md)
   Tells the system that you are about to start a potentially lengthy update task for your glance.
-- [func clearAllMenuItems()](clearallmenuitems().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/clearallmenuitems()))
+- [func clearAllMenuItems()](wkinterfacecontroller/clearallmenuitems.md)
   Removes all programmatically added actions from the context menu.
-- [func endGlanceUpdates()](endglanceupdates().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/endglanceupdates()))
+- [func endGlanceUpdates()](wkinterfacecontroller/endglanceupdates.md)
   Tells the system that you finished updating your glance content.
-- [func handleUserActivity([AnyHashable : Any]?)](handleuseractivity(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/handleuseractivity(_:)))
+- [func handleUserActivity([AnyHashable : Any]?)](wkinterfacecontroller/handleuseractivity(_:).md)
   Responds to Handoff–related activity.
-- [func presentController([(name: String, context: AnyObject)])](presentcontroller(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentcontroller(_:)))
+- [func presentController([(name: String, context: AnyObject)])](wkinterfacecontroller/presentcontroller(_:).md)
   Presents a page-based interface modally.
-- [class func reloadRootControllers(withNames: [String], contexts: [Any]?)](reloadrootcontrollers(withnames:contexts:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/reloadrootcontrollers(withnames:contexts:)))
+- [class func reloadRootControllers(withNames: [String], contexts: [Any]?)](wkinterfacecontroller/reloadrootcontrollers(withnames:contexts:).md)
   Loads the specified interface controllers and rebuilds the app’s page-based interface.
-- [func updateUserActivity(String, userInfo: [AnyHashable : Any]?, webpageURL: URL?)](updateuseractivity(_:userinfo:webpageurl:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/updateuseractivity(_:userinfo:webpageurl:)))
+- [func updateUserActivity(String, userInfo: [AnyHashable : Any]?, webpageURL: URL?)](wkinterfacecontroller/updateuseractivity(_:userinfo:webpageurl:).md)
   Registers the current user activity with the system.
 
 

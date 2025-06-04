@@ -24,11 +24,11 @@ This method looks for an image with the specified name in the Watch app’s bund
 
 ## See Also
 
-- [func setBackgroundColor(UIColor?)](setbackgroundcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundcolor(_:)))
+- [func setBackgroundColor(UIColor?)](wkinterfacegroup/setbackgroundcolor(_:).md)
   Changes the background color for the group container.
-- [func setBackgroundImage(UIImage?)](setbackgroundimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundimage(_:)))
+- [func setBackgroundImage(UIImage?)](wkinterfacegroup/setbackgroundimage(_:).md)
   Changes the background image of the group container to the specified image.
-- [func setBackgroundImageData(Data?)](setbackgroundimagedata(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundimagedata(_:)))
+- [func setBackgroundImageData(Data?)](wkinterfacegroup/setbackgroundimagedata(_:).md)
   Changes the background image of the group container to the image in the specified data object.
 
 

@@ -20,7 +20,7 @@ Use this method to stop updates to the timer object’s label. This method does 
 
 ## See Also
 
-- [func start()](start().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/start()))
+- [func start()](wkinterfacetimer/start.md)
   Begins updates to the timer’s display.
 
 

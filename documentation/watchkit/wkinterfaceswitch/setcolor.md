@@ -20,7 +20,7 @@ func setColor(_ color: UIColor?)
 
 ## See Also
 
-- [func setOn(Bool)](seton(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/seton(_:)))
+- [func setOn(Bool)](wkinterfaceswitch/seton(_:).md)
   Sets the state of the switch to the specified value.
 
 

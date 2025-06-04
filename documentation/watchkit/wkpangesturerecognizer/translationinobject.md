@@ -24,7 +24,7 @@ The x and y values report the total translation over time. They are not delta va
 
 ## See Also
 
-- [func velocityInObject() -> CGPoint](velocityinobject().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpangesturerecognizer/velocityinobject()))
+- [func velocityInObject() -> CGPoint](wkpangesturerecognizer/velocityinobject.md)
   The velocity of the pan gesture in the current object.
 
 

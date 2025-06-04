@@ -18,7 +18,7 @@ var currentTime: TimeInterval { get }
 
 This property refers to how much of the audio file has already been played. The value in this property is updated during playback to reflect the current position of the playhead.
 
-The value of this property is valid only when the player item’s status is [`WKAudioFilePlayerStatus.readyToPlay`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayerstatus/readytoplay).
+The value of this property is valid only when the player item’s status is [`WKAudioFilePlayerStatus.readyToPlay`](wkaudiofileplayerstatus/readytoplay.md).
 
 
 ---

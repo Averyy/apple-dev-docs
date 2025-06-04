@@ -28,7 +28,7 @@ This method creates an asset for the specified media file. The audio file’s ti
 
 ## See Also
 
-- [convenience init(url: URL, title: String?, albumTitle: String?, artist: String?)](init(url:title:albumtitle:artist:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/init(url:title:albumtitle:artist:)))
+- [convenience init(url: URL, title: String?, albumTitle: String?, artist: String?)](wkaudiofileasset/init(url:title:albumtitle:artist:).md)
   Returns an audio file asset and sets the metadata for that item.
 
 

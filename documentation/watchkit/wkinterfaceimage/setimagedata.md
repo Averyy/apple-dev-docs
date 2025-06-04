@@ -26,11 +26,11 @@ When setting images, always try to use images that are sized to fit the availabl
 
 ## See Also
 
-- [func setImage(UIImage?)](setimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimage(_:)))
+- [func setImage(UIImage?)](wkinterfaceimage/setimage(_:).md)
   Sets the displayed image using the specified image object.
-- [func setImageNamed(String?)](setimagenamed(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimagenamed(_:)))
+- [func setImageNamed(String?)](wkinterfaceimage/setimagenamed(_:).md)
   Sets the displayed image using a named image resource file.
-- [func setTintColor(UIColor?)](settintcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/settintcolor(_:)))
+- [func setTintColor(UIColor?)](wkinterfaceimage/settintcolor(_:).md)
   Changes the color applied to a template image.
 
 

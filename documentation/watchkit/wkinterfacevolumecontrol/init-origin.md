@@ -24,7 +24,7 @@ Use this initializer to create an instance that you can wrap in a [`WKInterfaceO
 
 ## See Also
 
-- [WKInterfaceVolumeControl.Origin](origin.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/origin))
+- [WKInterfaceVolumeControl.Origin](wkinterfacevolumecontrol/origin.md)
   The source of the audio managed by the volume control.
 
 

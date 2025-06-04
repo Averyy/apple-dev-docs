@@ -17,35 +17,35 @@ enum WKInterfaceScrollPosition
 ## Topics
 
 ### Enumeration Cases
-- [WKInterfaceScrollPosition.bottom](bottom.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescrollposition/bottom))
+- [WKInterfaceScrollPosition.bottom](wkinterfacescrollposition/bottom.md)
   The bottom of the screen.
-- [WKInterfaceScrollPosition.centeredVertically](centeredvertically.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescrollposition/centeredvertically))
+- [WKInterfaceScrollPosition.centeredVertically](wkinterfacescrollposition/centeredvertically.md)
   The vertical center of the screen.
-- [WKInterfaceScrollPosition.top](top.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescrollposition/top))
+- [WKInterfaceScrollPosition.top](wkinterfacescrollposition/top.md)
   The top of the screen.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescrollposition/init(rawvalue:)))
+- [init?(rawValue: Int)](wkinterfacescrollposition/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [func scroll(to: WKInterfaceObject, at: WKInterfaceScrollPosition, animated: Bool)](scroll(to:at:animated:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/scroll(to:at:animated:)))
+- [func scroll(to: WKInterfaceObject, at: WKInterfaceScrollPosition, animated: Bool)](wkinterfacecontroller/scroll(to:at:animated:).md)
   Scrolls the specified object to the given position onscreen.
-- [func interfaceDidScrollToTop()](interfacedidscrolltotop().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/interfacedidscrolltotop()))
+- [func interfaceDidScrollToTop()](wkinterfacecontroller/interfacedidscrolltotop.md)
   Tells the interface controller that the user has performed a scroll-to-top gesture (for example, tapping the status bar) and that the scrolling animation has finished.
-- [func interfaceOffsetDidScrollToTop()](interfaceoffsetdidscrolltotop().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/interfaceoffsetdidscrolltotop()))
+- [func interfaceOffsetDidScrollToTop()](wkinterfacecontroller/interfaceoffsetdidscrolltotop.md)
   Tells the interface controller that the user has scrolled to the top of the interface and that the scrolling animation has finished.
-- [func interfaceOffsetDidScrollToBottom()](interfaceoffsetdidscrolltobottom().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/interfaceoffsetdidscrolltobottom()))
+- [func interfaceOffsetDidScrollToBottom()](wkinterfacecontroller/interfaceoffsetdidscrolltobottom.md)
   Tells the interface controller that the user has scrolled to the bottom of the interface and that the scrolling animation has finished.
-- [var isTableScrollingHapticFeedbackEnabled: Bool](istablescrollinghapticfeedbackenabled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/istablescrollinghapticfeedbackenabled))
+- [var isTableScrollingHapticFeedbackEnabled: Bool](wkinterfacecontroller/istablescrollinghapticfeedbackenabled.md)
   A Boolean value that determines whether haptic feedback coordinates with the appearance of new rows as the user scrolls through a table.
 
 

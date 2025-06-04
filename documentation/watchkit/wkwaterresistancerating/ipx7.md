@@ -20,9 +20,9 @@ This rating indicates a water resistance of IPX7 under IEC standard 60529. Apple
 
 ## See Also
 
-- [WKWaterResistanceRating.wr50](wr50.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwaterresistancerating/wr50))
+- [WKWaterResistanceRating.wr50](wkwaterresistancerating/wr50.md)
   A water-resistance rating of 50 meters.
-- [WKWaterResistanceRating.wr100](wr100.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwaterresistancerating/wr100))
+- [WKWaterResistanceRating.wr100](wkwaterresistancerating/wr100.md)
 
 
 ---

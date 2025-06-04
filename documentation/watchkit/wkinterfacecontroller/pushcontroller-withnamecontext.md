@@ -17,7 +17,7 @@ func pushController(withName name: String, context: Any?)
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
+- [Navigating Between Scenes](navigating-between-scenes.md)
 
 #### Discussion
 
@@ -25,9 +25,9 @@ Use this method to perform a navigation-style transition to the specified interf
 
 Always call this method from your WatchKit extension’s main thread.
 
-> **Note**:  If Item Pagination  is enabled, do not use this method to respond to the selection of a table row. Use [`performSegue(forRow:)`](https://developer.apple.com/documentation/watchkit/wkinterfacetable/performsegue(forrow:))  instead.
+> **Note**:  If Item Pagination  is enabled, do not use this method to respond to the selection of a table row. Use [`performSegue(forRow:)`](wkinterfacetable/performsegue(forrow:).md)  instead.
 
- If Item Pagination  is enabled, do not use this method to respond to the selection of a table row. Use [`performSegue(forRow:)`](https://developer.apple.com/documentation/watchkit/wkinterfacetable/performsegue(forrow:))  instead.
+ If Item Pagination  is enabled, do not use this method to respond to the selection of a table row. Use [`performSegue(forRow:)`](wkinterfacetable/performsegue(forrow:).md)  instead.
 
 ## Parameters
 
@@ -36,9 +36,9 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## See Also
 
-- [func pop()](pop().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pop()))
+- [func pop()](wkinterfacecontroller/pop.md)
   Pops the current interface controller from the screen.
-- [func popToRootController()](poptorootcontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/poptorootcontroller()))
+- [func popToRootController()](wkinterfacecontroller/poptorootcontroller.md)
   Pops all interface controllers except the app’s initial interface controller.
 
 

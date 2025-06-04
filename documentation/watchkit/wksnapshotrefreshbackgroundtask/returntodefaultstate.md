@@ -16,9 +16,9 @@ var returnToDefaultState: Bool { get }
 
 ## See Also
 
-- [var reasonForSnapshot: WKSnapshotReason](reasonforsnapshot.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask/reasonforsnapshot))
+- [var reasonForSnapshot: WKSnapshotReason](wksnapshotrefreshbackgroundtask/reasonforsnapshot.md)
   The reason for taking the upcoming snapshot.
-- [enum WKSnapshotReason](wksnapshotreason.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason))
+- [enum WKSnapshotReason](wksnapshotreason.md)
   The reason for a background snapshot task.
 
 

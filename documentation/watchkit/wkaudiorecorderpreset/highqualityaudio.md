@@ -16,9 +16,9 @@ case highQualityAudio
 
 ## See Also
 
-- [WKAudioRecorderPreset.narrowBandSpeech](narrowbandspeech.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiorecorderpreset/narrowbandspeech))
+- [WKAudioRecorderPreset.narrowBandSpeech](wkaudiorecorderpreset/narrowbandspeech.md)
   Audio quality suitable for basic speech recording. This preset records audio with an 8 kHz sampling rate using either the LPCM 128 kbps or AAC 24 kbps format.
-- [WKAudioRecorderPreset.wideBandSpeech](widebandspeech.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiorecorderpreset/widebandspeech))
+- [WKAudioRecorderPreset.wideBandSpeech](wkaudiorecorderpreset/widebandspeech.md)
   Audio quality suitable for higher fidelity speech recording. This preset records audio with a 16 kHz sampling rate using either the LPCM 256 kbps or AAC 32 kbps format.
 
 

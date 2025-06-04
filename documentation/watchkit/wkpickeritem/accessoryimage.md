@@ -21,11 +21,11 @@ The dimensions of an accessory image are 13 points wide by 13 points high. Large
 
 ## See Also
 
-- [var contentImage: WKImage?](contentimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/contentimage))
+- [var contentImage: WKImage?](wkpickeritem/contentimage.md)
   The image to display for the item.
-- [var title: String?](title.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/title))
+- [var title: String?](wkpickeritem/title.md)
   The text to display for the item.
-- [var caption: String?](caption.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/caption))
+- [var caption: String?](wkpickeritem/caption.md)
   A caption for the item’s content.
 
 

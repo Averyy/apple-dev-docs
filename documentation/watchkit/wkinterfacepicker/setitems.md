@@ -26,11 +26,11 @@ This method displays the new items in the picker right away. If the previously s
 
 ## See Also
 
-- [class WKPickerItem](wkpickeritem.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem))
+- [class WKPickerItem](wkpickeritem.md)
   A single item in a picker interface.
-- [func setSelectedItemIndex(Int)](setselecteditemindex(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setselecteditemindex(_:)))
+- [func setSelectedItemIndex(Int)](wkinterfacepicker/setselecteditemindex(_:).md)
   Selects the specified item in the list.
-- [func setCoordinatedAnimations([any WKInterfaceObject & WKImageAnimatable]?)](setcoordinatedanimations(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setcoordinatedanimations(_:)))
+- [func setCoordinatedAnimations([any WKInterfaceObject & WKImageAnimatable]?)](wkinterfacepicker/setcoordinatedanimations(_:).md)
   Sets the interface objects that should coordinate their own animations with the picker.
 
 

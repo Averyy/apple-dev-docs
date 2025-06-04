@@ -26,7 +26,7 @@ The system calls this method when it receives a Siri intent. Implement a method 
 
 ## See Also
 
-- [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkintentdidrunrefreshbackgroundtask))
+- [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md)
   A background task used to update your app after a SiriKit intent runs.
 
 

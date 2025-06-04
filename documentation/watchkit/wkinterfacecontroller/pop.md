@@ -17,7 +17,7 @@ func pop()
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
+- [Navigating Between Scenes](navigating-between-scenes.md)
 
 #### Discussion
 
@@ -27,9 +27,9 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## See Also
 
-- [func pushController(withName: String, context: Any?)](pushcontroller(withname:context:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pushcontroller(withname:context:)))
+- [func pushController(withName: String, context: Any?)](wkinterfacecontroller/pushcontroller(withname:context:).md)
   Pushes a new interface controller onto the screen.
-- [func popToRootController()](poptorootcontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/poptorootcontroller()))
+- [func popToRootController()](wkinterfacecontroller/poptorootcontroller.md)
   Pops all interface controllers except the app’s initial interface controller.
 
 

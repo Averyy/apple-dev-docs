@@ -17,29 +17,29 @@ protocol WKCrownDelegate : NSObjectProtocol
 ## Topics
 
 ### Receiving Crown Events
-- [func crownDidRotate(WKCrownSequencer?, rotationalDelta: Double)](crowndidrotate(_:rotationaldelta:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate/crowndidrotate(_:rotationaldelta:)))
+- [func crownDidRotate(WKCrownSequencer?, rotationalDelta: Double)](wkcrowndelegate/crowndidrotate(_:rotationaldelta:).md)
   Called when the user rotates the crown.
-- [func crownDidBecomeIdle(WKCrownSequencer?)](crowndidbecomeidle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate/crowndidbecomeidle(_:)))
+- [func crownDidBecomeIdle(WKCrownSequencer?)](wkcrowndelegate/crowndidbecomeidle(_:).md)
   Called when the user stops rotating the crown.
 
 ## Relationships
 
 ### Inherits From
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [class WKCrownSequencer](wkcrownsequencer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer))
+- [class WKCrownSequencer](wkcrownsequencer.md)
   An object that reports the current state of the digital crown, including its rotational speed when it is in motion.
-- [class WKGestureRecognizer](wkgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer))
+- [class WKGestureRecognizer](wkgesturerecognizer.md)
   The base class for all other gesture recognizer classes.
-- [class WKLongPressGestureRecognizer](wklongpressgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer))
+- [class WKLongPressGestureRecognizer](wklongpressgesturerecognizer.md)
   A gesture recognizer that interprets a touch event that occurs in the same relative area for an extended period of time.
-- [class WKPanGestureRecognizer](wkpangesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpangesturerecognizer))
+- [class WKPanGestureRecognizer](wkpangesturerecognizer.md)
   A gesture recognizer that interprets a touch event that moves around the screen.
-- [class WKSwipeGestureRecognizer](wkswipegesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizer))
+- [class WKSwipeGestureRecognizer](wkswipegesturerecognizer.md)
   A gesture recognizer that interprets swiping gestures in one or more directions.
-- [class WKTapGestureRecognizer](wktapgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktapgesturerecognizer))
+- [class WKTapGestureRecognizer](wktapgesturerecognizer.md)
   A gesture recognizer that interprets a touch event occurring and ending in approximately the same area on the screen.
 
 

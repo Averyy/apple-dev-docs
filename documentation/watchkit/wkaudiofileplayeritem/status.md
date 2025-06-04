@@ -16,13 +16,13 @@ var status: WKAudioFilePlayerItemStatus { get }
 
 #### Discussion
 
-When the value of this property is [`WKAudioFilePlayerItemStatus.failed`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemstatus/failed), the [`error`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem/error) property contains the reason for the failure.
+When the value of this property is [`WKAudioFilePlayerItemStatus.failed`](wkaudiofileplayeritemstatus/failed.md), the [`error`](wkaudiofileplayeritem/error.md) property contains the reason for the failure.
 
 ## See Also
 
-- [var asset: WKAudioFileAsset](asset.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem/asset))
+- [var asset: WKAudioFileAsset](wkaudiofileplayeritem/asset.md)
   The audio file asset being managed.
-- [var error: (any Error)?](error.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem/error))
+- [var error: (any Error)?](wkaudiofileplayeritem/error.md)
   An error that describes the cause of a failure.
 
 

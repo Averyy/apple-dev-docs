@@ -16,7 +16,7 @@ class WKInterfaceVolumeControl
 
 #### Overview
 
-Configure your app’s audio source and the appearance of the volume control in your storyboard file. Use the [`WKInterfaceVolumeControl`](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol) instance to change the volume’s tint color at runtime.
+Configure your app’s audio source and the appearance of the volume control in your storyboard file. Use the [`WKInterfaceVolumeControl`](wkinterfacevolumecontrol.md) instance to change the volume’s tint color at runtime.
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a volume control in your interface, define a property with the following syntax in your interface controller class:
 
@@ -31,51 +31,51 @@ Xcode lets you configure your volume control in your storyboard file. The follow
 | Attribute | Description |
 | --- | --- |
 | Controls Local Volume | The volume control’s audio source. If checked, the control affects the volume of long-form audio playing on the watch.  If unchecked, it affects the volume of audio playing on the paired iPhone. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) You must set this value at design time. You cannot change its value programmatically. |
-| Tint Color | The tint color for the volume control.  By default, the system uses the application’s tint color. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The system only applies the tint color to the control’s default state (when the crown is not being used to adjust the volume). ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) You can change this value programmatically using the [`setTintColor(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/settintcolor(_:)) method. |
+| Tint Color | The tint color for the volume control.  By default, the system uses the application’s tint color. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The system only applies the tint color to the control’s default state (when the crown is not being used to adjust the volume). ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) You can change this value programmatically using the [`setTintColor(_:)`](wkinterfacevolumecontrol/settintcolor(_:).md) method. |
 
 ## Topics
 
 ### Setting the Tint Color
-- [func setTintColor(UIColor?)](settintcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/settintcolor(_:)))
+- [func setTintColor(UIColor?)](wkinterfacevolumecontrol/settintcolor(_:).md)
   Sets the volume control’s tint color.
 ### Managing Input from the Digital Crown
-- [func focus()](focus().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/focus()))
+- [func focus()](wkinterfacevolumecontrol/focus.md)
   Sets the volume control as the focus for input from the Digital Crown.
-- [func resignFocus()](resignfocus().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/resignfocus()))
+- [func resignFocus()](wkinterfacevolumecontrol/resignfocus.md)
   Removes focus from the volume control, causing it to stop receiving input from the Digital Crown.
 ### SwiftUI
-- [init(origin: WKInterfaceVolumeControl.Origin)](init(origin:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/init(origin:)))
+- [init(origin: WKInterfaceVolumeControl.Origin)](wkinterfacevolumecontrol/init(origin:).md)
   Creates a volume control for use in SwiftUI.
-- [WKInterfaceVolumeControl.Origin](origin.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/origin))
+- [WKInterfaceVolumeControl.Origin](wkinterfacevolumecontrol/origin.md)
   The source of the audio managed by the volume control.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject))
+- [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [Playing Background Audio](playing-background-audio.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/playing-background-audio))
+- [Playing Background Audio](playing-background-audio.md)
   Enable background audio in your app to provide a seamless playback experience.
-- [Adding a Now Playing View](adding-a-now-playing-view.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/adding-a-now-playing-view))
+- [Adding a Now Playing View](adding-a-now-playing-view.md)
   Provide a view that controls the currently playing audio from your app.
-- PUICAutoLaunchAudioOptOut ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut))
+- [PUICAutoLaunchAudioOptOut](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut)
   A Boolean value that indicates whether a watchOS app should opt out of automatically launching when its companion iOS app starts playing audio content.
-- [class WKAudioFilePlayer](wkaudiofileplayer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer))
+- [class WKAudioFilePlayer](wkaudiofileplayer.md)
   An object that controls playback of a single audio item.
-- [class WKAudioFileQueuePlayer](wkaudiofilequeueplayer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer))
+- [class WKAudioFileQueuePlayer](wkaudiofilequeueplayer.md)
   An object that controls playback of one or more audio items.
-- [class WKAudioFilePlayerItem](wkaudiofileplayeritem.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem))
+- [class WKAudioFilePlayerItem](wkaudiofileplayeritem.md)
   An object that manages the presentation state of an audio file while it is playing.
-- [class WKAudioFileAsset](wkaudiofileasset.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset))
+- [class WKAudioFileAsset](wkaudiofileasset.md)
   An object that stores a reference to an audio file and provides metadata information about that file.
 
 

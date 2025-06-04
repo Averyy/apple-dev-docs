@@ -24,7 +24,7 @@ Changes to the horizontal alignment of an object are animatable.
 
 ## See Also
 
-- [func setVerticalAlignment(WKInterfaceObjectVerticalAlignment)](setverticalalignment(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setverticalalignment(_:)))
+- [func setVerticalAlignment(WKInterfaceObjectVerticalAlignment)](wkinterfaceobject/setverticalalignment(_:).md)
   Sets the vertical alignment of an object relative to its container’s bounds.
 
 

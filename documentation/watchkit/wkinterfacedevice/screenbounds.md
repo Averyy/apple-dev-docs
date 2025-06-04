@@ -20,7 +20,7 @@ The rectangle represents the dimensions of the screen and may be different from 
 
 ## See Also
 
-- [var screenScale: CGFloat](screenscale.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/screenscale))
+- [var screenScale: CGFloat](wkinterfacedevice/screenscale.md)
   The number of pixels per point for the current screen.
 
 

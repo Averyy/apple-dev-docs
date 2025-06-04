@@ -24,9 +24,9 @@ Use this method to configure the time zone to one that is different from the use
 
 ## See Also
 
-- [func setTextColor(UIColor?)](settextcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedate/settextcolor(_:)))
+- [func setTextColor(UIColor?)](wkinterfacedate/settextcolor(_:).md)
   Sets the color of the date and time text.
-- [func setCalendar(Calendar?)](setcalendar(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedate/setcalendar(_:)))
+- [func setCalendar(Calendar?)](wkinterfacedate/setcalendar(_:).md)
   Sets the calendar to use when formatting date information.
 
 

@@ -20,7 +20,7 @@ Use placeholders to describe the text field’s expected content to the user. An
 
 ## See Also
 
-- [func setPlaceholder(String?)](setplaceholder(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/setplaceholder(_:)))
+- [func setPlaceholder(String?)](wkinterfacetextfield/setplaceholder(_:).md)
   Sets the text field’s placeholder.
 
 

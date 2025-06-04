@@ -16,13 +16,13 @@ var imageName: String? { get }
 
 #### Discussion
 
-The value in this property is set using the [`init(imageName:)`](https://developer.apple.com/documentation/watchkit/wkimage/init(imagename:)) method. For image objects created using other methods, this property is `nil`.
+The value in this property is set using the [`init(imageName:)`](wkimage/init(imagename:).md) method. For image objects created using other methods, this property is `nil`.
 
 ## See Also
 
-- [var image: UIImage?](image.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage/image))
+- [var image: UIImage?](wkimage/image.md)
   The UIKit image object
-- [var imageData: Data?](imagedata.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage/imagedata))
+- [var imageData: Data?](wkimage/imagedata.md)
   The data object containing the raw image data.
 
 

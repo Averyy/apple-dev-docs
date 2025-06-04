@@ -20,25 +20,25 @@ WatchKit reports this error when it’s unable to play a media file.
 
 ## See Also
 
-- [WatchKitError.Code.downloadFailed](downloadfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/downloadfailed))
+- [WatchKitError.Code.downloadFailed](watchkiterror/code/downloadfailed.md)
   A download error.
-- [WatchKitError.Code.invalidArgument](invalidargument.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/invalidargument))
+- [WatchKitError.Code.invalidArgument](watchkiterror/code/invalidargument.md)
   An invalid argument error.
-- [WatchKitError.Code.recordingFailed](recordingfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/recordingfailed))
+- [WatchKitError.Code.recordingFailed](watchkiterror/code/recordingfailed.md)
   An audio recording error.
-- [WatchKitError.Code.unknown](unknown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/unknown))
+- [WatchKitError.Code.unknown](watchkiterror/code/unknown.md)
   An unknown error.
-- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](applicationdelegatewatchkitrequestreplynotcalled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled))
+- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
-- [WatchKitError.Code.downloadFailed](downloadfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/downloadfailed))
+- [WatchKitError.Code.downloadFailed](watchkiterror/code/downloadfailed.md)
   A download error.
-- [WatchKitError.Code.invalidArgument](invalidargument.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/invalidargument))
+- [WatchKitError.Code.invalidArgument](watchkiterror/code/invalidargument.md)
   An invalid argument error.
-- [WatchKitError.Code.recordingFailed](recordingfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/recordingfailed))
+- [WatchKitError.Code.recordingFailed](watchkiterror/code/recordingfailed.md)
   An audio recording error.
-- [WatchKitError.Code.unknown](unknown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/unknown))
+- [WatchKitError.Code.unknown](watchkiterror/code/unknown.md)
   An unknown error.
-- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](applicationdelegatewatchkitrequestreplynotcalled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled))
+- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
 
 

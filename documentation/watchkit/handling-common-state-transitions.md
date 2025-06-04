@@ -29,7 +29,7 @@ The app then enters the  state. It runs in the foreground and receiving actions 
 
 If the user lowers their arm or stops interacting with the app, it enters the  state. The system can also launch apps into the background when running background sessions or performing background tasks. While in the background state, the system gives the app a small amount of background execution time before suspending the app.
 
-Because the system can purge suspended apps without warning, use SwiftUI’s [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) environment `value`, or your extension delegate’s [`applicationDidEnterBackground()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidenterbackground()) method to determine when your app transitions from the active state to the background. Save any data you need to recreate your app’s current state. If needed, you can request additional background execution time by calling the [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) class’s [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/1617030-performexpiringactivity) method.
+Because the system can purge suspended apps without warning, use SwiftUI’s [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) environment `value`, or your extension delegate’s [`applicationDidEnterBackground()`](wkextensiondelegate/applicationdidenterbackground().md) method to determine when your app transitions from the active state to the background. Save any data you need to recreate your app’s current state. If needed, you can request additional background execution time by calling the [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) class’s [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/1617030-performexpiringactivity) method.
 
 ##### Transition to the Suspended State
 
@@ -68,7 +68,7 @@ MyView()
     }
 ```
 
-For watchOS 7 and later, the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) environment value replaces many of the life cycle events previously handled by the WatchKit extension delegate, such as [`applicationDidBecomeActive()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidbecomeactive()) and [`applicationDidEnterBackground()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidenterbackground()).
+For watchOS 7 and later, the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) environment value replaces many of the life cycle events previously handled by the WatchKit extension delegate, such as [`applicationDidBecomeActive()`](wkextensiondelegate/applicationdidbecomeactive().md) and [`applicationDidEnterBackground()`](wkextensiondelegate/applicationdidenterbackground().md).
 
 ##### Understand Common Transitions
 
@@ -77,7 +77,7 @@ There is no direct relationship between the app’s state and the interface’s 
 | Situation | App state | Interface state |
 | --- | --- | --- |
 | Running on screen | Active | Active |
-| Running in the dock | Inactive, and the extension’s [`isApplicationRunningInDock`](https://developer.apple.com/documentation/watchkit/wkextension/isapplicationrunningindock) property is [`true`](https://developer.apple.com/documentation/swift/true) | Active, shown in the dock |
+| Running in the dock | Inactive, and the extension’s [`isApplicationRunningInDock`](wkextension/isapplicationrunningindock.md) property is [`true`](https://developer.apple.com/documentation/swift/true) | Active, shown in the dock |
 | Running as the frontmost app | Inactive | Inactive |
 | Displaying a dynamic notification interface | Inactive or background | Notification interface is active |
 | Processing a snapshot background task | Background | Active, but not shown on screen |
@@ -88,34 +88,34 @@ When transitioning between both app and interface states, the exact flow depends
 
 The app launches when it isn’t running, and the user explicitly starts the app—for example, by tapping the app icon on the home screen.
 
-1.  transitions to the [`WKApplicationState.inactive`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/inactive) state.  calls the extension delegate’s [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidfinishlaunching()) method and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) environment variable to [`ScenePhase.inactive`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/inactive).
-2.  instantiates the app’s initial scene, and its root view and calls the extension delegate’s [`applicationWillEnterForeground()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationwillenterforeground()) method.
-3.  transitions to the [`WKApplicationState.active`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/active) state.  calls the extension delegate’s [`applicationDidBecomeActive()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidbecomeactive()) method and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) value to [`ScenePhase.active`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/active).
+1.  transitions to the [`WKApplicationState.inactive`](wkapplicationstate/inactive.md) state.  calls the extension delegate’s [`applicationDidFinishLaunching()`](wkextensiondelegate/applicationdidfinishlaunching().md) method and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) environment variable to [`ScenePhase.inactive`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/inactive).
+2.  instantiates the app’s initial scene, and its root view and calls the extension delegate’s [`applicationWillEnterForeground()`](wkextensiondelegate/applicationwillenterforeground().md) method.
+3.  transitions to the [`WKApplicationState.active`](wkapplicationstate/active.md) state.  calls the extension delegate’s [`applicationDidBecomeActive()`](wkextensiondelegate/applicationdidbecomeactive().md) method and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) value to [`ScenePhase.active`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/active).
 4.  appears on screen. The system calls the root view’s [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:)) method.
 
-The app goes to the background when it is running on screen in the [`WKApplicationState.active`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/active) state.
+The app goes to the background when it is running on screen in the [`WKApplicationState.active`](wkapplicationstate/active.md) state.
 
-1.  calls the extension delegate’s [`applicationWillResignActive()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationwillresignactive()) method.
-2.  transitions to the [`WKApplicationState.inactive`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/inactive) state, calls the view’s [`onDisappear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onDisappear(perform:)) method, and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) value to [`ScenePhase.inactive`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/inactive). The app may continue to run in an inactive state as long as the app is the frontmost app. For more information, see [`Taking Advantage of Frontmost App State`](https://developer.apple.com/documentation/watchkit/taking-advantage-of-frontmost-app-state).
-3.  transitions to the [`WKApplicationState.background`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/background) state.  calls the extension delegate’s [`applicationDidEnterBackground()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidenterbackground()) method and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) value to [`ScenePhase.background`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/background).
+1.  calls the extension delegate’s [`applicationWillResignActive()`](wkextensiondelegate/applicationwillresignactive().md) method.
+2.  transitions to the [`WKApplicationState.inactive`](wkapplicationstate/inactive.md) state, calls the view’s [`onDisappear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onDisappear(perform:)) method, and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) value to [`ScenePhase.inactive`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/inactive). The app may continue to run in an inactive state as long as the app is the frontmost app. For more information, see [`Taking Advantage of Frontmost App State`](taking-advantage-of-frontmost-app-state.md).
+3.  transitions to the [`WKApplicationState.background`](wkapplicationstate/background.md) state.  calls the extension delegate’s [`applicationDidEnterBackground()`](wkextensiondelegate/applicationdidenterbackground().md) method and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) value to [`ScenePhase.background`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/background).
 4.  suspends the app.****
 
 The app resumes when the app is running in the background, or is suspended, and the user activates the app, for example, by tapping its complication on the active watch face.
 
-1. If suspended but in memory,  restarts in the [`WKApplicationState.background`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/background) state.
-2.  calls the extension delegate’s [`applicationWillEnterForeground()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationwillenterforeground()) method.
-3.  transitions to the [`WKApplicationState.active`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/active) state.  calls the extension delegate’s [`applicationDidBecomeActive()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidbecomeactive()) method and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) value to [`ScenePhase.active`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/active).
+1. If suspended but in memory,  restarts in the [`WKApplicationState.background`](wkapplicationstate/background.md) state.
+2.  calls the extension delegate’s [`applicationWillEnterForeground()`](wkextensiondelegate/applicationwillenterforeground().md) method.
+3.  transitions to the [`WKApplicationState.active`](wkapplicationstate/active.md) state.  calls the extension delegate’s [`applicationDidBecomeActive()`](wkextensiondelegate/applicationdidbecomeactive().md) method and sets the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) value to [`ScenePhase.active`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/active).
 4. The system calls the current view’s [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:)) method.
 
-Except for [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidfinishlaunching()), the system only calls the extension delegate’s life cycle methods for the watchOS app’s main interface. It doesn’t call them when the system displays any other supplementary interfaces. For example, they don’t occur when the system launches the app to update complications or to display custom notification interfaces. For notifications, use the root view’s [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:)) and [`onDisappear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onDisappear(perform:)) methods to track the state of the interface.
+Except for [`applicationDidFinishLaunching()`](wkextensiondelegate/applicationdidfinishlaunching().md), the system only calls the extension delegate’s life cycle methods for the watchOS app’s main interface. It doesn’t call them when the system displays any other supplementary interfaces. For example, they don’t occur when the system launches the app to update complications or to display custom notification interfaces. For notifications, use the root view’s [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:)) and [`onDisappear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onDisappear(perform:)) methods to track the state of the interface.
 
 ## See Also
 
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
   Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
-- [Handling User Activity](handling-user-activity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/handling-user-activity))
+- [Handling User Activity](handling-user-activity.md)
   Detect and respond to user activity information from Handoff or a complication.
-- [Taking Advantage of Frontmost App State](taking-advantage-of-frontmost-app-state.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/taking-advantage-of-frontmost-app-state))
+- [Taking Advantage of Frontmost App State](taking-advantage-of-frontmost-app-state.md)
   Understand the frontmost app state, and the features it provides to your app.
 
 

@@ -16,9 +16,9 @@ case follow
 
 ## See Also
 
-- [WKInterfaceMap.UserTrackingMode.none](none.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/none))
+- [WKInterfaceMap.UserTrackingMode.none](wkinterfacemap/usertrackingmode/none.md)
   The map remains stationary, even if the user moves off the map.
-- [WKInterfaceMap.UserTrackingMode.none](none.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/none))
+- [WKInterfaceMap.UserTrackingMode.none](wkinterfacemap/usertrackingmode/none.md)
   The map remains stationary, even if the user moves off the map.
 
 

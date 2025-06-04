@@ -16,9 +16,9 @@ case resizeAspect
 
 ## See Also
 
-- [WKVideoGravity.resizeAspectFill](resizeaspectfill.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity/resizeaspectfill))
+- [WKVideoGravity.resizeAspectFill](wkvideogravity/resizeaspectfill.md)
   Content is resized to fill the bounds rectangle completely while preserving the original aspect ratio of the content. This option results in cropping of the edges of the video in the axis it exceeds.
-- [WKVideoGravity.resize](resize.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity/resize))
+- [WKVideoGravity.resize](wkvideogravity/resize.md)
   Content is resized to fit the entire bounds rectangle. This option does not preserve the original aspect ratio of the content.
 
 

@@ -17,37 +17,37 @@ enum WKInterfaceDeviceWristLocation
 ## Topics
 
 ### Constants
-- [WKInterfaceDeviceWristLocation.left](left.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicewristlocation/left))
+- [WKInterfaceDeviceWristLocation.left](wkinterfacedevicewristlocation/left.md)
   The user’s left wrist.
-- [WKInterfaceDeviceWristLocation.right](right.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicewristlocation/right))
+- [WKInterfaceDeviceWristLocation.right](wkinterfacedevicewristlocation/right.md)
   The user’s right wrist.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicewristlocation/init(rawvalue:)))
+- [init?(rawValue: Int)](wkinterfacedevicewristlocation/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [var name: String](name.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/name))
+- [var name: String](wkinterfacedevice/name.md)
   The name of the device.
-- [var model: String](model.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/model))
+- [var model: String](wkinterfacedevice/model.md)
   The model information for the device.
-- [var localizedModel: String](localizedmodel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/localizedmodel))
+- [var localizedModel: String](wkinterfacedevice/localizedmodel.md)
   The localized version of the model information.
-- [var wristLocation: WKInterfaceDeviceWristLocation](wristlocation.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/wristlocation))
+- [var wristLocation: WKInterfaceDeviceWristLocation](wkinterfacedevice/wristlocation.md)
   The wrist on which the user wears the Apple Watch.
-- [var crownOrientation: WKInterfaceDeviceCrownOrientation](crownorientation.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/crownorientation))
+- [var crownOrientation: WKInterfaceDeviceCrownOrientation](wkinterfacedevice/crownorientation.md)
   The side on which the crown is positioned.
-- [enum WKInterfaceDeviceCrownOrientation](wkinterfacedevicecrownorientation.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicecrownorientation))
+- [enum WKInterfaceDeviceCrownOrientation](wkinterfacedevicecrownorientation.md)
   Constants indicating the crown orientation from the user’s perspective.
-- [var preferredContentSizeCategory: String](preferredcontentsizecategory.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/preferredcontentsizecategory))
+- [var preferredContentSizeCategory: String](wkinterfacedevice/preferredcontentsizecategory.md)
   The preferred font-sizing option.
 
 

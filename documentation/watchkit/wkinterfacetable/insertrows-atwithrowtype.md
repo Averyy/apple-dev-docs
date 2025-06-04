@@ -25,7 +25,7 @@ This method inserts the new row controllers into the existing array of row contr
 
 ## See Also
 
-- [func removeRows(at: IndexSet)](removerows(at:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable/removerows(at:)))
+- [func removeRows(at: IndexSet)](wkinterfacetable/removerows(at:).md)
   Removes the specified rows from the table.
 
 

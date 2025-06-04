@@ -16,7 +16,7 @@ optional func crownDidBecomeIdle(_ crownSequencer: WKCrownSequencer?)
 
 #### Discussion
 
-The crown sequencer calls this method when the crown finally comes to rest. The sequencer calls this method only after one or more calls to the [`crownDidRotate(_:rotationalDelta:)`](https://developer.apple.com/documentation/watchkit/wkcrowndelegate/crowndidrotate(_:rotationaldelta:)) method.
+The crown sequencer calls this method when the crown finally comes to rest. The sequencer calls this method only after one or more calls to the [`crownDidRotate(_:rotationalDelta:)`](wkcrowndelegate/crowndidrotate(_:rotationaldelta:).md) method.
 
 ## Parameters
 
@@ -24,9 +24,9 @@ The crown sequencer calls this method when the crown finally comes to rest. The 
 
 ## See Also
 
-- [var isIdle: Bool](isidle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/isidle))
+- [var isIdle: Bool](wkcrownsequencer/isidle.md)
   A Boolean value indicating whether the crown is at rest.
-- [func crownDidRotate(WKCrownSequencer?, rotationalDelta: Double)](crowndidrotate(_:rotationaldelta:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate/crowndidrotate(_:rotationaldelta:)))
+- [func crownDidRotate(WKCrownSequencer?, rotationalDelta: Double)](wkcrowndelegate/crowndidrotate(_:rotationaldelta:).md)
   Called when the user rotates the crown.
 
 

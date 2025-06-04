@@ -27,11 +27,11 @@ In your implementation, you can check the error type, and try to register again 
 
 ## See Also
 
-- [func didRegisterForRemoteNotifications(withDeviceToken: Data)](didregisterforremotenotifications(withdevicetoken:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/didregisterforremotenotifications(withdevicetoken:)))
+- [func didRegisterForRemoteNotifications(withDeviceToken: Data)](wkextensiondelegate/didregisterforremotenotifications(withdevicetoken:).md)
   Tells the delegate that the app successfully registered with Apple Push Notification service (APNs).
-- [func didReceiveRemoteNotification([AnyHashable : Any], fetchCompletionHandler: (WKBackgroundFetchResult) -> Void)](didreceiveremotenotification(_:fetchcompletionhandler:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/didreceiveremotenotification(_:fetchcompletionhandler:)))
+- [func didReceiveRemoteNotification([AnyHashable : Any], fetchCompletionHandler: (WKBackgroundFetchResult) -> Void)](wkextensiondelegate/didreceiveremotenotification(_:fetchcompletionhandler:).md)
   Tells the delegate that a background notification has arrived.
-- [enum WKBackgroundFetchResult](wkbackgroundfetchresult.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkbackgroundfetchresult))
+- [enum WKBackgroundFetchResult](wkbackgroundfetchresult.md)
   The result of an attempt to download the content associated with a remote notification.
 
 

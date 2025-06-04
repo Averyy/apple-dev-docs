@@ -17,29 +17,29 @@ enum WKPageOrientation
 ## Topics
 
 ### Enumeration Cases
-- [WKPageOrientation.horizontal](horizontal.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpageorientation/horizontal))
+- [WKPageOrientation.horizontal](wkpageorientation/horizontal.md)
   A horizontal page-based scrolling orientation.
-- [WKPageOrientation.vertical](vertical.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpageorientation/vertical))
+- [WKPageOrientation.vertical](wkpageorientation/vertical.md)
   A vertical page-based scrolling orientation.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpageorientation/init(rawvalue:)))
+- [init?(rawValue: Int)](wkpageorientation/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [class func reloadRootPageControllers(withNames: [String], contexts: [Any]?, orientation: WKPageOrientation, pageIndex: Int)](reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:)))
+- [class func reloadRootPageControllers(withNames: [String], contexts: [Any]?, orientation: WKPageOrientation, pageIndex: Int)](wkinterfacecontroller/reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:).md)
   Loads the specified interface controllers and rebuilds the app’s page-based interface for the given scrolling orientation.
-- [class func reloadRootControllers(withNamesAndContexts: [(name: String, context: AnyObject)])](reloadrootcontrollers(withnamesandcontexts:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/reloadrootcontrollers(withnamesandcontexts:)))
+- [class func reloadRootControllers(withNamesAndContexts: [(name: String, context: AnyObject)])](wkinterfacecontroller/reloadrootcontrollers(withnamesandcontexts:).md)
   Loads the specified interface controllers and rebuilds the app’s page-based interface.
-- [func becomeCurrentPage()](becomecurrentpage().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/becomecurrentpage()))
+- [func becomeCurrentPage()](wkinterfacecontroller/becomecurrentpage.md)
   Displays the interface controller in the page-based interface.
 
 

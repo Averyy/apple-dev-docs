@@ -18,7 +18,7 @@ class WKLongPressGestureRecognizer
 
 A long-press gesture is essentially a tap where the user’s finger remains on the screen for a minimum amount of time, which is configurable. You can configure the amount of time required for the long-press to be recognized and the maximum distance those touches are allowed to move before being disallowed.
 
-You do not create instances of this class programmatically. Instead, add a long-press gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer).
+You do not create instances of this class programmatically. Instead, add a long-press gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
 ##### State Changes for a Long Press Gesture
 
@@ -29,7 +29,7 @@ A long-press gesture recognizer tracks touch events continuously, and therefore 
 - Possible → Began → [Changed…] → Ended
 - Possible → Began → [Changed…] → Failed
 
-The Changed state is optional and may occur multiple times before the Ended, Failed, or Cancelled state is reached. The gesture recognizer calls its action method at each state transition. For more information on implementing continuous gesture recognizers, see [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer).
+The Changed state is optional and may occur multiple times before the Ended, Failed, or Cancelled state is reached. The gesture recognizer calls its action method at each state transition. For more information on implementing continuous gesture recognizers, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
 ##### Interface Builder Attributes
 
@@ -37,47 +37,47 @@ Xcode lets you configure information about your gesture recognizer in your story
 
 | Attribute | Description |
 | --- | --- |
-| Min Duration | The minimum time (in seconds) that the user’s finger must touch the screen before the gesture can be recognized. You can set this value programmatically using the [`minimumPressDuration`](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/minimumpressduration) property. |
-| Taps | The number of long-press taps that must occur for the gesture to be recognized. Each tap must touch the screen for the minimum duration. You can set this value programmatically using the [`numberOfTapsRequired`](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/numberoftapsrequired) property. |
-| Movement | The amount of movement (in points) allowed for each touch event. Recognition of the gesture fails if any of the touch events moves by the specified amount or more. You can set this value programmatically using the [`allowableMovement`](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/allowablemovement) property. |
+| Min Duration | The minimum time (in seconds) that the user’s finger must touch the screen before the gesture can be recognized. You can set this value programmatically using the [`minimumPressDuration`](wklongpressgesturerecognizer/minimumpressduration.md) property. |
+| Taps | The number of long-press taps that must occur for the gesture to be recognized. Each tap must touch the screen for the minimum duration. You can set this value programmatically using the [`numberOfTapsRequired`](wklongpressgesturerecognizer/numberoftapsrequired.md) property. |
+| Movement | The amount of movement (in points) allowed for each touch event. Recognition of the gesture fails if any of the touch events moves by the specified amount or more. You can set this value programmatically using the [`allowableMovement`](wklongpressgesturerecognizer/allowablemovement.md) property. |
 
-The [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer) parent class also defines attributes that you can configure for your gesture recognizer. For information about those attributes, see [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer).
+The [`WKGestureRecognizer`](wkgesturerecognizer.md) parent class also defines attributes that you can configure for your gesture recognizer. For information about those attributes, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
 ## Topics
 
 ### Configuring the Gesture Recognizer
-- [var minimumPressDuration: CFTimeInterval](minimumpressduration.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/minimumpressduration))
+- [var minimumPressDuration: CFTimeInterval](wklongpressgesturerecognizer/minimumpressduration.md)
   The minimum amount of time (in seconds) that the user’s fingers must be touching the interface object.
-- [var numberOfTapsRequired: Int](numberoftapsrequired.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/numberoftapsrequired))
+- [var numberOfTapsRequired: Int](wklongpressgesturerecognizer/numberoftapsrequired.md)
   The number of taps on the interface object that are required for the gesture to be recognized.
-- [var allowableMovement: CGFloat](allowablemovement.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/allowablemovement))
+- [var allowableMovement: CGFloat](wklongpressgesturerecognizer/allowablemovement.md)
   The maximum movement of the finger on the interface object that allows the gesture to be recognized.
 
 ## Relationships
 
 ### Inherits From
-- [WKGestureRecognizer](wkgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer))
+- [WKGestureRecognizer](wkgesturerecognizer.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [class WKCrownSequencer](wkcrownsequencer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer))
+- [class WKCrownSequencer](wkcrownsequencer.md)
   An object that reports the current state of the digital crown, including its rotational speed when it is in motion.
-- [protocol WKCrownDelegate](wkcrowndelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate))
+- [protocol WKCrownDelegate](wkcrowndelegate.md)
   A collection of methods you can implement to track the user’s interaction with the digital crown, receiving notifications when the user rotates the crown or when rotation stops.
-- [class WKGestureRecognizer](wkgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer))
+- [class WKGestureRecognizer](wkgesturerecognizer.md)
   The base class for all other gesture recognizer classes.
-- [class WKPanGestureRecognizer](wkpangesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpangesturerecognizer))
+- [class WKPanGestureRecognizer](wkpangesturerecognizer.md)
   A gesture recognizer that interprets a touch event that moves around the screen.
-- [class WKSwipeGestureRecognizer](wkswipegesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizer))
+- [class WKSwipeGestureRecognizer](wkswipegesturerecognizer.md)
   A gesture recognizer that interprets swiping gestures in one or more directions.
-- [class WKTapGestureRecognizer](wktapgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktapgesturerecognizer))
+- [class WKTapGestureRecognizer](wktapgesturerecognizer.md)
   A gesture recognizer that interprets a touch event occurring and ending in approximately the same area on the screen.
 
 

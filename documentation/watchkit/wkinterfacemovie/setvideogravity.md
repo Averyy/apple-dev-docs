@@ -20,11 +20,11 @@ func setVideoGravity(_ videoGravity: WKVideoGravity)
 
 ## See Also
 
-- [func setMovieURL(URL)](setmovieurl(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setmovieurl(_:)))
+- [func setMovieURL(URL)](wkinterfacemovie/setmovieurl(_:).md)
   Sets the URL of the movie to play.
-- [func setPosterImage(WKImage?)](setposterimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setposterimage(_:)))
+- [func setPosterImage(WKImage?)](wkinterfacemovie/setposterimage(_:).md)
   Sets the poster image to display for the movie.
-- [func setLoops(Bool)](setloops(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setloops(_:)))
+- [func setLoops(Bool)](wkinterfacemovie/setloops(_:).md)
   Sets a Boolean value indicating whether the movie plays in a continuous loop.
 
 

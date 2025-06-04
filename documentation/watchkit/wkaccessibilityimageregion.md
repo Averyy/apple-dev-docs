@@ -16,41 +16,41 @@ class WKAccessibilityImageRegion
 
 #### Overview
 
-The accessibility image region object defines the portion of the image that you want to call out separately and the label you want to apply to that region. Use an accessibility image region object in conjunction with any interface object that displays an image, either as part of its foreground or background content. Register your custom regions using the [`setAccessibilityImageRegions(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setaccessibilityimageregions(_:)) method of the corresponding interface object.
+The accessibility image region object defines the portion of the image that you want to call out separately and the label you want to apply to that region. Use an accessibility image region object in conjunction with any interface object that displays an image, either as part of its foreground or background content. Register your custom regions using the [`setAccessibilityImageRegions(_:)`](wkinterfaceobject/setaccessibilityimageregions(_:).md) method of the corresponding interface object.
 
 ## Topics
 
 ### Getting the Region Attributes
-- [var frame: CGRect](frame.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityimageregion/frame))
+- [var frame: CGRect](wkaccessibilityimageregion/frame.md)
   A portion of the parent image, in the image’s coordinate system.
-- [var label: String](label.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityimageregion/label))
+- [var label: String](wkaccessibilityimageregion/label.md)
   A succinct label that succinctly identifies the purpose of the image region.
 
 ## Relationships
 
 ### Inherits From
-- NSObject ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class))
+- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [Building watchOS app Interfaces Using the Storyboard](building-watchos-app-interfaces-using-the-storyboard.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/building-watchos-app-interfaces-using-the-storyboard))
+- [Building watchOS app Interfaces Using the Storyboard](building-watchos-app-interfaces-using-the-storyboard.md)
   Create the user interface for your watchOS app by nesting stacks.
-- [class WKInterfaceObject](wkinterfaceobject.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject))
+- [class WKInterfaceObject](wkinterfaceobject.md)
   An object that provides information that is common to all interface objects in your watchOS app.
-- [class WKInterfaceController](wkinterfacecontroller.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller))
+- [class WKInterfaceController](wkinterfacecontroller.md)
   A class that provides the infrastructure for managing the interface in a watchOS app.
-- [class WKAlertAction](wkalertaction.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertaction))
+- [class WKAlertAction](wkalertaction.md)
   An object that encapsulates information about a button displayed in an alert or action sheet.
-- [func WKAccessibilityIsVoiceOverRunning() -> Bool](wkaccessibilityisvoiceoverrunning().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityisvoiceoverrunning()))
+- [func WKAccessibilityIsVoiceOverRunning() -> Bool](wkaccessibilityisvoiceoverrunning().md)
   Returns a Boolean value indicating whether VoiceOver is running.
-- [func WKAccessibilityIsReduceMotionEnabled() -> Bool](wkaccessibilityisreducemotionenabled().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityisreducemotionenabled()))
+- [func WKAccessibilityIsReduceMotionEnabled() -> Bool](wkaccessibilityisreducemotionenabled().md)
   Returns a Boolean value indicating whether reduced motion is enabled.
 
 

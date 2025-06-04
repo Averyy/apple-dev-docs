@@ -23,9 +23,9 @@ If the current image contains only a single image, this method does nothing.
 
 ## See Also
 
-- [func startAnimatingWithImages(in: NSRange, duration: TimeInterval, repeatCount: Int)](startanimatingwithimages(in:duration:repeatcount:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/startanimatingwithimages(in:duration:repeatcount:)))
+- [func startAnimatingWithImages(in: NSRange, duration: TimeInterval, repeatCount: Int)](wkimageanimatable/startanimatingwithimages(in:duration:repeatcount:).md)
   Animates the specified images with the given duration and repeat information.
-- [func stopAnimating()](stopanimating().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/stopanimating()))
+- [func stopAnimating()](wkimageanimatable/stopanimating.md)
   Stops any in-progress animations.
 
 

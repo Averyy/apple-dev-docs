@@ -17,15 +17,15 @@ func scheduleBackgroundRefresh(withPreferredDate preferredFireDate: Date, userIn
 
 ## Mentions
 
-- [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
+- [Using background tasks](using-background-tasks.md)
 
 #### Discussion
 
 Call this method to update the contents of your app in the background. Background refresh tasks only trigger when the app is in the background. If the app is still running in the foreground at the scheduled time, the system ignores the task.
 
-When the system triggers the task, it wakes your app in the background and execute your background task handler. The system also calls your active interface controller’s [`willActivate()`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willactivate()) and [`didActivate()`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationPluginView/didActivate()) methods. You can check your app’s [`applicationState`](https://developer.apple.com/documentation/watchkit/wkapplication/applicationstate) during these methods to determine whether your app is running in the foreground or in the background.
+When the system triggers the task, it wakes your app in the background and execute your background task handler. The system also calls your active interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) and [`didActivate()`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationPluginView/didActivate()) methods. You can check your app’s [`applicationState`](wkapplication/applicationstate.md) during these methods to determine whether your app is running in the foreground or in the background.
 
-Use this task to update your application’s state. You can only schedule one background app refresh task at a time; scheduling a second task cancels the first. Additionally, the system budgets background app refresh tasks. For more information, see [`WKApplicationRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wkapplicationrefreshbackgroundtask).
+Use this task to update your application’s state. You can only schedule one background app refresh task at a time; scheduling a second task cancels the first. Additionally, the system budgets background app refresh tasks. For more information, see [`WKApplicationRefreshBackgroundTask`](wkapplicationrefreshbackgroundtask.md).
 
 ## Parameters
 
@@ -35,11 +35,11 @@ Use this task to update your application’s state. You can only schedule one ba
 
 ## See Also
 
-- [var applicationState: WKApplicationState](applicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/applicationstate))
+- [var applicationState: WKApplicationState](wkapplication/applicationstate.md)
   The runtime state of the watchOS app.
-- [enum WKApplicationState](wkapplicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate))
+- [enum WKApplicationState](wkapplicationstate.md)
   The running states of the Watch app.
-- [var isApplicationRunningInDock: Bool](isapplicationrunningindock.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isapplicationrunningindock))
+- [var isApplicationRunningInDock: Bool](wkapplication/isapplicationrunningindock.md)
   A Boolean value that indicates whether the app is running in the dock.
 
 

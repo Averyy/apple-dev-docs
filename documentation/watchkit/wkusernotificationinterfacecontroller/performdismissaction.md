@@ -17,11 +17,11 @@ func performDismissAction()
 
 ## See Also
 
-- [var notificationActions: [UNNotificationAction]](notificationactions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/notificationactions))
+- [var notificationActions: [UNNotificationAction]](wkusernotificationinterfacecontroller/notificationactions.md)
   The actions associated with the current notification.
-- [func performNotificationDefaultAction()](performnotificationdefaultaction().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/performnotificationdefaultaction()))
+- [func performNotificationDefaultAction()](wkusernotificationinterfacecontroller/performnotificationdefaultaction.md)
   Launches the watchOS app and performs the current notification’s default action.
-- [func dismiss()](dismiss().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/dismiss()))
+- [func dismiss()](wkusernotificationinterfacecontroller/dismiss.md)
   Dismisses the notification interface controller.
 
 

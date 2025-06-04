@@ -16,7 +16,7 @@ var isPaused: Bool { get set }
 
 ## Mentions
 
-- [Configuring a WatchKit Scene in a Storyboard](configuring-a-watchkit-scene-in-a-storyboard.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/configuring-a-watchkit-scene-in-a-storyboard))
+- [Configuring a WatchKit Scene in a Storyboard](configuring-a-watchkit-scene-in-a-storyboard.md)
 
 #### Discussion
 
@@ -24,7 +24,7 @@ If the value is [`true`](https://developer.apple.com/documentation/swift/true), 
 
 ## See Also
 
-- [var preferredFramesPerSecond: Int](preferredframespersecond.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/preferredframespersecond))
+- [var preferredFramesPerSecond: Int](wkinterfaceskscene/preferredframespersecond.md)
   The animation frame rate that the interface uses to render its scene.
 
 

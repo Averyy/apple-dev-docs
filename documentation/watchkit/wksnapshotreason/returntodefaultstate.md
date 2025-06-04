@@ -16,13 +16,13 @@ case returnToDefaultState
 
 ## See Also
 
-- [WKSnapshotReason.appBackgrounded](appbackgrounded.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/appbackgrounded))
+- [WKSnapshotReason.appBackgrounded](wksnapshotreason/appbackgrounded.md)
   The app transitioned from the foreground to the background.
-- [WKSnapshotReason.appScheduled](appscheduled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/appscheduled))
+- [WKSnapshotReason.appScheduled](wksnapshotreason/appscheduled.md)
   The app scheduled this snapshot.
-- [WKSnapshotReason.complicationUpdate](complicationupdate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/complicationupdate))
+- [WKSnapshotReason.complicationUpdate](wksnapshotreason/complicationupdate.md)
   The app updated the complication timeline.
-- [WKSnapshotReason.prelaunch](prelaunch.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/prelaunch))
+- [WKSnapshotReason.prelaunch](wksnapshotreason/prelaunch.md)
   The system needs a snapshot for the dock, but the app has not been launched yet.
 
 

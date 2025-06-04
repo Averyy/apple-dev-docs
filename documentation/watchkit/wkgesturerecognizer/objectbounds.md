@@ -24,7 +24,7 @@ You attach a gesture recognizer to a specific element in your storyboard file. A
 
 ## See Also
 
-- [func locationInObject() -> CGPoint](locationinobject().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer/locationinobject()))
+- [func locationInObject() -> CGPoint](wkgesturerecognizer/locationinobject.md)
   Returns the point computed as the current position of the touch event.
 
 

@@ -16,7 +16,7 @@ func setAttributedText(_ attributedText: NSAttributedString?)
 
 ## Mentions
 
-- [Connecting Your User Interface to Your Code](connecting-your-user-interface-to-your-code.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/connecting-your-user-interface-to-your-code))
+- [Connecting Your User Interface to Your Code](connecting-your-user-interface-to-your-code.md)
 
 #### Discussion
 
@@ -30,9 +30,9 @@ Attributed strings may not contain any [`NSTextAttachment`](https://developer.ap
 
 ## See Also
 
-- [func setText(String?)](settext(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelabel/settext(_:)))
+- [func setText(String?)](wkinterfacelabel/settext(_:).md)
   Sets the label text to the specified string.
-- [func setTextColor(UIColor?)](settextcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelabel/settextcolor(_:)))
+- [func setTextColor(UIColor?)](wkinterfacelabel/settextcolor(_:).md)
   Sets the color to apply to plain text strings.
 
 

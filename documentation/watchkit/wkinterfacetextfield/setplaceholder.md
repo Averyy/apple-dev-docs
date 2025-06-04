@@ -20,7 +20,7 @@ Use placeholders to describe the text field’s expected content to the user. An
 
 ## See Also
 
-- [func setAttributedPlaceholder(NSAttributedString?)](setattributedplaceholder(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/setattributedplaceholder(_:)))
+- [func setAttributedPlaceholder(NSAttributedString?)](wkinterfacetextfield/setattributedplaceholder(_:).md)
   Sets the text field’s placeholder using styled text.
 
 

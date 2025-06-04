@@ -16,7 +16,7 @@ func setNumberOfRows(_ numberOfRows: Int, withRowType rowType: String)
 
 #### Discussion
 
-Use this method when you want to populate a table with rows that are all of the same type. This method removes any existing rows from the table and configures a new set of rows based on the information in the `numberOfRows` and `rowType` parameters. For each row, the method also creates an instance of that row’s class and puts the resulting object in an internal array, which you access using the [`rowController(at:)`](https://developer.apple.com/documentation/watchkit/wkinterfacetable/rowcontroller(at:)) method. It is your responsibility to configure each new row controller with the data you want to display.
+Use this method when you want to populate a table with rows that are all of the same type. This method removes any existing rows from the table and configures a new set of rows based on the information in the `numberOfRows` and `rowType` parameters. For each row, the method also creates an instance of that row’s class and puts the resulting object in an internal array, which you access using the [`rowController(at:)`](wkinterfacetable/rowcontroller(at:).md) method. It is your responsibility to configure each new row controller with the data you want to display.
 
 ## Parameters
 
@@ -25,7 +25,7 @@ Use this method when you want to populate a table with rows that are all of the 
 
 ## See Also
 
-- [func setRowTypes([String])](setrowtypes(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable/setrowtypes(_:)))
+- [func setRowTypes([String])](wkinterfacetable/setrowtypes(_:).md)
   Creates the row controllers to use when populating the table with data.
 
 

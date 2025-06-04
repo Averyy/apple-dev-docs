@@ -16,9 +16,9 @@ case noData
 
 ## See Also
 
-- [WKBackgroundFetchResult.failed](failed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkbackgroundfetchresult/failed))
+- [WKBackgroundFetchResult.failed](wkbackgroundfetchresult/failed.md)
   The download attempt failed.
-- [WKBackgroundFetchResult.newData](newdata.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkbackgroundfetchresult/newdata))
+- [WKBackgroundFetchResult.newData](wkbackgroundfetchresult/newdata.md)
   The download attempt succeeded.
 
 

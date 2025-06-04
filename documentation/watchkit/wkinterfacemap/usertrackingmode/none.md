@@ -16,9 +16,9 @@ case none
 
 ## See Also
 
-- [WKInterfaceMap.UserTrackingMode.follow](follow.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/follow))
+- [WKInterfaceMap.UserTrackingMode.follow](wkinterfacemap/usertrackingmode/follow.md)
   The map scrolls to follow the user as they move.
-- [WKInterfaceMap.UserTrackingMode.follow](follow.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/follow))
+- [WKInterfaceMap.UserTrackingMode.follow](wkinterfacemap/usertrackingmode/follow.md)
   The map scrolls to follow the user as they move.
 
 

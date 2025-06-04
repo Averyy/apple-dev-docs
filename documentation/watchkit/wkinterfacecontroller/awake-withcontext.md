@@ -17,8 +17,8 @@ func awake(withContext context: Any?)
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
+- [Navigating Between Scenes](navigating-between-scenes.md)
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
 
 #### Discussion
 
@@ -32,9 +32,9 @@ The default implementation of this method does nothing.
 
 ## See Also
 
-- [init()](init().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/init()))
+- [init()](wkinterfacecontroller/init.md)
   Returns an initialized interface controller object.
-- [func setTitle(String?)](settitle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/settitle(_:)))
+- [func setTitle(String?)](wkinterfacecontroller/settitle(_:).md)
   Sets the title of the interface.
 
 

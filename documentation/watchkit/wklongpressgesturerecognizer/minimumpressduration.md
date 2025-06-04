@@ -20,9 +20,9 @@ The default value of this property is `0.5` seconds, but you can change this val
 
 ## See Also
 
-- [var numberOfTapsRequired: Int](numberoftapsrequired.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/numberoftapsrequired))
+- [var numberOfTapsRequired: Int](wklongpressgesturerecognizer/numberoftapsrequired.md)
   The number of taps on the interface object that are required for the gesture to be recognized.
-- [var allowableMovement: CGFloat](allowablemovement.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/allowablemovement))
+- [var allowableMovement: CGFloat](wklongpressgesturerecognizer/allowablemovement.md)
   The maximum movement of the finger on the interface object that allows the gesture to be recognized.
 
 

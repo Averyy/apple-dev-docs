@@ -24,11 +24,11 @@ If you specify both a background color and a full-color background image, only t
 
 ## See Also
 
-- [func setBackgroundImage(UIImage?)](setbackgroundimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/setbackgroundimage(_:)))
+- [func setBackgroundImage(UIImage?)](wkinterfacebutton/setbackgroundimage(_:).md)
   Sets the button’s background image to the specified image.
-- [func setBackgroundImageData(Data?)](setbackgroundimagedata(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/setbackgroundimagedata(_:)))
+- [func setBackgroundImageData(Data?)](wkinterfacebutton/setbackgroundimagedata(_:).md)
   Sets the button’s background image to the image in the specified data object.
-- [func setBackgroundImageNamed(String?)](setbackgroundimagenamed(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/setbackgroundimagenamed(_:)))
+- [func setBackgroundImageNamed(String?)](wkinterfacebutton/setbackgroundimagenamed(_:).md)
   Sets the button’s background image to the image in the named resource file.
 
 

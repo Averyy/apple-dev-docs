@@ -19,7 +19,7 @@ func registerForRemoteNotifications()
 
 Before calling this method, you must enable your WatchKit extension’s Push Notification capability, as described in [`Enable push notifications`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devdfd3d04a1).
 
-Call this method to register a device with APNs. If registration succeeds, the system calls your app delegate’s [`didRegisterForRemoteNotifications(withDeviceToken:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/didregisterforremotenotifications(withdevicetoken:)) method and passes it a device token. Pass this token to the provider server you use to generate remote notifications for this device. If registration fails, the system calls your app delegate’s [`didFailToRegisterForRemoteNotificationsWithError(_:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/didfailtoregisterforremotenotificationswitherror(_:)) method instead.
+Call this method to register a device with APNs. If registration succeeds, the system calls your app delegate’s [`didRegisterForRemoteNotifications(withDeviceToken:)`](wkapplicationdelegate/didregisterforremotenotifications(withdevicetoken:).md) method and passes it a device token. Pass this token to the provider server you use to generate remote notifications for this device. If registration fails, the system calls your app delegate’s [`didFailToRegisterForRemoteNotificationsWithError(_:)`](wkapplicationdelegate/didfailtoregisterforremotenotificationswitherror(_:).md) method instead.
 
 > ❗ **Important**:  Device tokens may change, so don’t cache the device token on the device. Instead, register for remote notifications every time your app launches. If the device token hasn’t changed, registration happens quickly.
 
@@ -33,9 +33,9 @@ For more information on setting up remote notifications, see [`Setting up a remo
 
 ## See Also
 
-- [func unregisterForRemoteNotifications()](unregisterforremotenotifications().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/unregisterforremotenotifications()))
+- [func unregisterForRemoteNotifications()](wkapplication/unregisterforremotenotifications.md)
   Unregister for all remote notifications received from Apple Push Notification service (APNs).
-- [var isRegisteredForRemoteNotifications: Bool](isregisteredforremotenotifications.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isregisteredforremotenotifications))
+- [var isRegisteredForRemoteNotifications: Bool](wkapplication/isregisteredforremotenotifications.md)
   A Boolean value that indicates if the app has successfully registered for remote notifications.
 
 

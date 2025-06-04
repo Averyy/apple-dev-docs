@@ -17,7 +17,7 @@ optional func handle(_ userActivity: NSUserActivity)
 
 ## Mentions
 
-- [Handling User Activity](handling-user-activity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/handling-user-activity))
+- [Handling User Activity](handling-user-activity.md)
 
 #### Discussion
 
@@ -46,7 +46,7 @@ Intents may launch your app under the following circumstances:
 
 ## See Also
 
-- [func handleUserActivity([AnyHashable : Any]?)](handleuseractivity(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleuseractivity(_:)))
+- [func handleUserActivity([AnyHashable : Any]?)](wkextensiondelegate/handleuseractivity(_:).md)
   Responds to Handoff–related activity from complications and notifications.
 
 

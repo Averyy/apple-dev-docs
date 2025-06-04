@@ -17,9 +17,9 @@ func scheduleSnapshotRefresh(withPreferredDate preferredFireDate: Date, userInfo
 
 #### Discussion
 
-Call this method to update your app’s snapshot in the background. When the task is triggered, the system wakes your app in the background and calls your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-92ulv) method. Use this task to transition to the interface controller you want to display in the snapshot, and to update that controller’s user interface.
+Call this method to update your app’s snapshot in the background. When the task is triggered, the system wakes your app in the background and calls your extension delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-92ulv.md) method. Use this task to transition to the interface controller you want to display in the snapshot, and to update that controller’s user interface.
 
-You can only schedule one background snapshot refresh task at a time. If a background snapshot refresh task has already been scheduled, scheduling a second task cancels the first. Additionally, background snapshot refresh tasks are budgeted. For more information, see [`WKSnapshotRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask).
+You can only schedule one background snapshot refresh task at a time. If a background snapshot refresh task has already been scheduled, scheduling a second task cancels the first. Additionally, background snapshot refresh tasks are budgeted. For more information, see [`WKSnapshotRefreshBackgroundTask`](wksnapshotrefreshbackgroundtask.md).
 
 The system automatically schedules background snapshot request tasks in the following situations:
 

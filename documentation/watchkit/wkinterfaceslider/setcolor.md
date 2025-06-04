@@ -20,9 +20,9 @@ func setColor(_ color: UIColor?)
 
 ## See Also
 
-- [func setValue(Float)](setvalue(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider/setvalue(_:)))
+- [func setValue(Float)](wkinterfaceslider/setvalue(_:).md)
   Changes the value of the slider.
-- [func setNumberOfSteps(Int)](setnumberofsteps(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider/setnumberofsteps(_:)))
+- [func setNumberOfSteps(Int)](wkinterfaceslider/setnumberofsteps(_:).md)
   Sets the number of steps for the slider.
 
 

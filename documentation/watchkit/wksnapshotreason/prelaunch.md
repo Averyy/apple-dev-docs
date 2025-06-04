@@ -16,13 +16,13 @@ case prelaunch
 
 ## See Also
 
-- [WKSnapshotReason.appBackgrounded](appbackgrounded.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/appbackgrounded))
+- [WKSnapshotReason.appBackgrounded](wksnapshotreason/appbackgrounded.md)
   The app transitioned from the foreground to the background.
-- [WKSnapshotReason.appScheduled](appscheduled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/appscheduled))
+- [WKSnapshotReason.appScheduled](wksnapshotreason/appscheduled.md)
   The app scheduled this snapshot.
-- [WKSnapshotReason.complicationUpdate](complicationupdate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/complicationupdate))
+- [WKSnapshotReason.complicationUpdate](wksnapshotreason/complicationupdate.md)
   The app updated the complication timeline.
-- [WKSnapshotReason.returnToDefaultState](returntodefaultstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/returntodefaultstate))
+- [WKSnapshotReason.returnToDefaultState](wksnapshotreason/returntodefaultstate.md)
   It has been more than an hour since the user’s last interaction with the app; the app’s snapshot should return to its default state.
 
 

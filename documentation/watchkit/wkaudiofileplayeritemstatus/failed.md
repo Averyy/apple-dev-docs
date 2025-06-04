@@ -16,9 +16,9 @@ case failed
 
 ## See Also
 
-- [WKAudioFilePlayerItemStatus.unknown](unknown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemstatus/unknown))
+- [WKAudioFilePlayerItemStatus.unknown](wkaudiofileplayeritemstatus/unknown.md)
   The item’s status is unknown.
-- [WKAudioFilePlayerItemStatus.readyToPlay](readytoplay.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemstatus/readytoplay))
+- [WKAudioFilePlayerItemStatus.readyToPlay](wkaudiofileplayeritemstatus/readytoplay.md)
   The item is ready to play.
 
 

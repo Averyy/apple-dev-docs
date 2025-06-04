@@ -17,7 +17,7 @@ func didReceive(_ notification: UNNotification)
 
 ## See Also
 
-- [func didReceive(UNNotification, withCompletion: (WKUserNotificationInterfaceType) -> Void)](didreceive(_:withcompletion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/didreceive(_:withcompletion:)))
+- [func didReceive(UNNotification, withCompletion: (WKUserNotificationInterfaceType) -> Void)](wkusernotificationinterfacecontroller/didreceive(_:withcompletion:).md)
   Delivers a notification object to your interface controller for processing.
 
 

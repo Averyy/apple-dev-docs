@@ -22,11 +22,11 @@ To provide a consistent frame rate, SceneKit usually selects a frame rate that i
 
 ## See Also
 
-- [var antialiasingMode: SCNAntialiasingMode](antialiasingmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/antialiasingmode))
+- [var antialiasingMode: SCNAntialiasingMode](wkinterfacescnscene/antialiasingmode.md)
   The antialiasing mode used for rendering the scene.
-- [var scene: SCNScene?](scene.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/scene))
+- [var scene: SCNScene?](wkinterfacescnscene/scene.md)
   The scene to be displayed.
-- [func snapshot() -> UIImage](snapshot().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/snapshot()))
+- [func snapshot() -> UIImage](wkinterfacescnscene/snapshot.md)
   Renders the scene to a new image object.
 
 

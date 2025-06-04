@@ -26,13 +26,13 @@ This method adds an image to the map at the specified geographic location. The i
 
 ## See Also
 
-- [func addAnnotation(CLLocationCoordinate2D, with: UIImage?, centerOffset: CGPoint)](addannotation(_:with:centeroffset:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/addannotation(_:with:centeroffset:)))
+- [func addAnnotation(CLLocationCoordinate2D, with: UIImage?, centerOffset: CGPoint)](wkinterfacemap/addannotation(_:with:centeroffset:).md)
   Displays the specified image on top of the map.
-- [func addAnnotation(CLLocationCoordinate2D, with: WKInterfaceMapPinColor)](addannotation(_:with:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/addannotation(_:with:)))
+- [func addAnnotation(CLLocationCoordinate2D, with: WKInterfaceMapPinColor)](wkinterfacemap/addannotation(_:with:).md)
   Adds a pin to the map at the specified location.
-- [enum WKInterfaceMapPinColor](wkinterfacemappincolor.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemappincolor))
+- [enum WKInterfaceMapPinColor](wkinterfacemappincolor.md)
   Constants for map pin colors.
-- [func removeAllAnnotations()](removeallannotations().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/removeallannotations()))
+- [func removeAllAnnotations()](wkinterfacemap/removeallannotations.md)
   Removes all annotations from the map.
 
 

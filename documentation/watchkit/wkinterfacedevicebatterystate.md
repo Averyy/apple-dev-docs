@@ -17,33 +17,33 @@ enum WKInterfaceDeviceBatteryState
 ## Topics
 
 ### Battery States
-- [WKInterfaceDeviceBatteryState.charging](charging.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate/charging))
+- [WKInterfaceDeviceBatteryState.charging](wkinterfacedevicebatterystate/charging.md)
   The device is connected to a charger, but its battery charge is under 100%.
-- [WKInterfaceDeviceBatteryState.full](full.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate/full))
+- [WKInterfaceDeviceBatteryState.full](wkinterfacedevicebatterystate/full.md)
   The device is connected to a charger, and its battery is charged to 100%.
-- [WKInterfaceDeviceBatteryState.unknown](unknown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate/unknown))
+- [WKInterfaceDeviceBatteryState.unknown](wkinterfacedevicebatterystate/unknown.md)
   An unknown battery-charging state.
-- [WKInterfaceDeviceBatteryState.unplugged](unplugged.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate/unplugged))
+- [WKInterfaceDeviceBatteryState.unplugged](wkinterfacedevicebatterystate/unplugged.md)
   The device is not connected to a charger and is running on battery power.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate/init(rawvalue:)))
+- [init?(rawValue: Int)](wkinterfacedevicebatterystate/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [var isBatteryMonitoringEnabled: Bool](isbatterymonitoringenabled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/isbatterymonitoringenabled))
+- [var isBatteryMonitoringEnabled: Bool](wkinterfacedevice/isbatterymonitoringenabled.md)
   A Boolean value that determines whether the app can monitor the device’s battery.
-- [var batteryLevel: Float](batterylevel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/batterylevel))
+- [var batteryLevel: Float](wkinterfacedevice/batterylevel.md)
   The battery’s current percent charge.
-- [var batteryState: WKInterfaceDeviceBatteryState](batterystate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/batterystate))
+- [var batteryState: WKInterfaceDeviceBatteryState](wkinterfacedevice/batterystate.md)
   The device’s battery state.
 
 

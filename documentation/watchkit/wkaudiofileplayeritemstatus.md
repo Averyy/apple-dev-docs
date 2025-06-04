@@ -17,23 +17,23 @@ enum WKAudioFilePlayerItemStatus
 ## Topics
 
 ### Statuses
-- [WKAudioFilePlayerItemStatus.unknown](unknown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemstatus/unknown))
+- [WKAudioFilePlayerItemStatus.unknown](wkaudiofileplayeritemstatus/unknown.md)
   The item’s status is unknown.
-- [WKAudioFilePlayerItemStatus.readyToPlay](readytoplay.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemstatus/readytoplay))
+- [WKAudioFilePlayerItemStatus.readyToPlay](wkaudiofileplayeritemstatus/readytoplay.md)
   The item is ready to play.
-- [WKAudioFilePlayerItemStatus.failed](failed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemstatus/failed))
+- [WKAudioFilePlayerItemStatus.failed](wkaudiofileplayeritemstatus/failed.md)
   The item can’t be played.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemstatus/init(rawvalue:)))
+- [init?(rawValue: Int)](wkaudiofileplayeritemstatus/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 
 ---

@@ -27,19 +27,19 @@ If your app has unsaved user data, you can save it here to ensure that it isn’
 
 ## See Also
 
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
   Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
-- [static func main()](main().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/main()))
+- [static func main()](wkapplicationdelegate/main.md)
   Provides the top-level entry point for an app.
-- [func applicationDidFinishLaunching()](applicationdidfinishlaunching().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidfinishlaunching()))
+- [func applicationDidFinishLaunching()](wkapplicationdelegate/applicationdidfinishlaunching.md)
   Tells the delegate that the launch process is almost done and the app is almost ready to run.
-- [func applicationDidBecomeActive()](applicationdidbecomeactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidbecomeactive()))
+- [func applicationDidBecomeActive()](wkapplicationdelegate/applicationdidbecomeactive.md)
   Tells the delegate that the watchOS app is visible and processing events.
-- [func applicationWillEnterForeground()](applicationwillenterforeground().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillenterforeground()))
+- [func applicationWillEnterForeground()](wkapplicationdelegate/applicationwillenterforeground.md)
   Tells the delegate that the app is about to transition from the background to the foreground.
-- [func applicationDidEnterBackground()](applicationdidenterbackground().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidenterbackground()))
+- [func applicationDidEnterBackground()](wkapplicationdelegate/applicationdidenterbackground.md)
   Tells the delegate that the app has transitioned from the foreground to the background.
-- [func deviceOrientationDidChange()](deviceorientationdidchange().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/deviceorientationdidchange()))
+- [func deviceOrientationDidChange()](wkapplicationdelegate/deviceorientationdidchange.md)
   Tells the delegate that the device’s orientation has changed.
 
 

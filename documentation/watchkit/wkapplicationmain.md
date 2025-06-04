@@ -30,19 +30,19 @@ This function instantiates the application object and the specified delegate (if
 
 ## See Also
 
-- [Setting up a watchOS project](setting-up-a-watchos-project.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/setting-up-a-watchos-project))
+- [Setting up a watchOS project](setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
-- [class WKApplication](wkapplication.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication))
+- [class WKApplication](wkapplication.md)
   The centralized point of control and coordination for apps with a single watchOS app target.
-- [protocol WKApplicationDelegate](wkapplicationdelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate))
+- [protocol WKApplicationDelegate](wkapplicationdelegate.md)
   A collection of methods that manages the app-level behavior for a single-target watchOS app.
-- [class WKExtension](wkextension.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension))
+- [class WKExtension](wkextension.md)
   The centralized point of control and coordination for extension-based apps running in watchOS.
-- [protocol WKExtensionDelegate](wkextensiondelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate))
+- [protocol WKExtensionDelegate](wkextensiondelegate.md)
   A collection of methods that manages the app-level behavior of a WatchKit extension.
-- [class WKInterfaceDevice](wkinterfacedevice.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice))
+- [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- WKPrefersNetworkUponForeground ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground))
+- [WKPrefersNetworkUponForeground](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

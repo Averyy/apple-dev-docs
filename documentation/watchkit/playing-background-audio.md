@@ -16,7 +16,7 @@ To play background audio:
 
 ##### Enable the Audio Background Mode
 
-First, you must enable the Audio Background Mode capability for your WatchKit extension, as shown in [`Figure 1`](https://developer.apple.com/documentation/watchkit/storyboard_support/playing_background_audio#3008217).
+First, you must enable the Audio Background Mode capability for your WatchKit extension, as shown in [`Figure 1`](storyboard_support/playing_background_audio#3008217.md).
 
 ![A screenshot showing the Audio Background mode in your WatchKit extension’s Capabilities pane.](https://docs-assets.developer.apple.com/published/7d74be7b7c19230d6b5ac07888532928/media-3008217%402x.png)
 
@@ -43,7 +43,7 @@ session.activate(options: []) { (success, error) in
 }
 ```
 
-This method sets up the audio route asynchronously before activating your session. watchOS requires a Bluetooth audio route for long-form audio. If necessary, the system presents an audio route picker to the user, letting them choose the Bluetooth route (see [`Figure 2`](https://developer.apple.com/documentation/watchkit/storyboard_support/playing_background_audio#3016837)).
+This method sets up the audio route asynchronously before activating your session. watchOS requires a Bluetooth audio route for long-form audio. If necessary, the system presents an audio route picker to the user, letting them choose the Bluetooth route (see [`Figure 2`](storyboard_support/playing_background_audio#3016837.md)).
 
 ![A screenshot of the audio rout picker, showing two different Bluetooth headphones.](https://docs-assets.developer.apple.com/published/4624fc8a1f4add47a3a8bb5a395d48a8/media-3016837%402x.png)
 
@@ -93,11 +93,11 @@ session.activate(options: []) { (success, error) in
 
 ## See Also
 
-- [Enabling Background Sessions](enabling-background-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/enabling-background-sessions))
+- [Enabling Background Sessions](enabling-background-sessions.md)
   Enable the background mode for audio, location updates, remote notifications, or workouts.
-- WKBackgroundModes ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKBackgroundModes))
+- [WKBackgroundModes](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKBackgroundModes)
   The services a watchOS app provides that require it to continue running in the background.
-- UIBackgroundModes ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIBackgroundModes))
+- [UIBackgroundModes](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIBackgroundModes)
   Services provided by an app that require it to run in the background.
 
 

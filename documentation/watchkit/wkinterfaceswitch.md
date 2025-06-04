@@ -32,62 +32,62 @@ Xcode lets you configure information about switches in your storyboard file. The
 
 | Attribute | Description |
 | --- | --- |
-| State | The initial state of the switch. The switch can be off or on. You can modify the state of the switch programmatically at runtime using the [`setOn(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/seton(_:)) method. |
+| State | The initial state of the switch. The switch can be off or on. You can modify the state of the switch programmatically at runtime using the [`setOn(_:)`](wkinterfaceswitch/seton(_:).md) method. |
 | Tint | The color of the switch when it is in the on state. |
-| Enabled | A checkbox indicating whether the switch is enabled. An enabled switch calls its action method when the user changes the state of the switch. You can enable or disable a switch programmatically using the [`setEnabled(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/setenabled(_:)) method. |
+| Enabled | A checkbox indicating whether the switch is enabled. An enabled switch calls its action method when the user changes the state of the switch. You can enable or disable a switch programmatically using the [`setEnabled(_:)`](wkinterfaceswitch/setenabled(_:).md) method. |
 | Title | The string to be displayed next to the switch. If specified, the title string is displayed next to the switch. |
-| Color | The text color for the switch’s title string. You can also set the switch color using the [`setColor(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/setcolor(_:)) method. |
+| Color | The text color for the switch’s title string. You can also set the switch color using the [`setColor(_:)`](wkinterfaceswitch/setcolor(_:).md) method. |
 | Font | The font information to be applied to the title string. You can specify one of the predefined styles or provide custom style information. |
 
 ## Topics
 
 ### Setting the Switch’s Title
-- [func setTitle(String?)](settitle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/settitle(_:)))
+- [func setTitle(String?)](wkinterfaceswitch/settitle(_:).md)
   Sets the switch title to the specified string.
-- [func setAttributedTitle(NSAttributedString?)](setattributedtitle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/setattributedtitle(_:)))
+- [func setAttributedTitle(NSAttributedString?)](wkinterfaceswitch/setattributedtitle(_:).md)
   Sets the switch title to the specified attributed string.
 ### Configuring the Switch
-- [func setOn(Bool)](seton(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/seton(_:)))
+- [func setOn(Bool)](wkinterfaceswitch/seton(_:).md)
   Sets the state of the switch to the specified value.
-- [func setColor(UIColor?)](setcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/setcolor(_:)))
+- [func setColor(UIColor?)](wkinterfaceswitch/setcolor(_:).md)
   Changes the tint color of the switch when it is on.
 ### Enabling the Switch
-- [func setEnabled(Bool)](setenabled(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/setenabled(_:)))
+- [func setEnabled(Bool)](wkinterfaceswitch/setenabled(_:).md)
   Enables or disables the switch.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject))
+- [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [class WKInterfaceLabel](wkinterfacelabel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelabel))
+- [class WKInterfaceLabel](wkinterfacelabel.md)
   An interface element that displays static text.
-- [class WKInterfaceDate](wkinterfacedate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedate))
+- [class WKInterfaceDate](wkinterfacedate.md)
   A label that displays the current date or time.
-- [class WKInterfaceTimer](wkinterfacetimer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer))
+- [class WKInterfaceTimer](wkinterfacetimer.md)
   A label that displays a countdown or count-up timer.
-- [class WKInterfaceButton](wkinterfacebutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton))
+- [class WKInterfaceButton](wkinterfacebutton.md)
   A button in the user interface of your watchOS app.
-- [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton))
+- [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md)
   A button that you can use to trigger a Sign in with Apple request.
-- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepaymentbutton))
+- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md)
   A button that you can use to trigger payments through Apple Pay.
-- [class WKInterfaceTextField](wkinterfacetextfield.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield))
+- [class WKInterfaceTextField](wkinterfacetextfield.md)
   An interface element that displays an editable text area.
-- [class WKInterfaceSlider](wkinterfaceslider.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider))
+- [class WKInterfaceSlider](wkinterfaceslider.md)
   An interface element that lets users select a single floating-point value from a range of values.
-- [class WKInterfaceActivityRing](wkinterfaceactivityring.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring))
+- [class WKInterfaceActivityRing](wkinterfaceactivityring.md)
   A view that displays data from a HealthKit activity summary object.
-- [class WKInterfaceMap](wkinterfacemap.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap))
+- [class WKInterfaceMap](wkinterfacemap.md)
   An interface element that displays a noninteractive map for the location you specify.
 
 

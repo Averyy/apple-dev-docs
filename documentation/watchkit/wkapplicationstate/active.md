@@ -16,15 +16,15 @@ case active
 
 ## Mentions
 
-- [Handling Common State Transitions](handling-common-state-transitions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/handling-common-state-transitions))
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
-- [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
+- [Handling Common State Transitions](handling-common-state-transitions.md)
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
+- [Using extended runtime sessions](using-extended-runtime-sessions.md)
 
 ## See Also
 
-- [WKApplicationState.inactive](inactive.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate/inactive))
+- [WKApplicationState.inactive](wkapplicationstate/inactive.md)
   The Watch app is running in the foreground, but is not yet responding to actions from controls or gestures.
-- [WKApplicationState.background](background.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate/background))
+- [WKApplicationState.background](wkapplicationstate/background.md)
   The Watch app is running in the background.
 
 

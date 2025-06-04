@@ -26,11 +26,11 @@ The animated images associated with the interface objects may have any number of
 
 ## See Also
 
-- [func setItems([WKPickerItem]?)](setitems(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setitems(_:)))
+- [func setItems([WKPickerItem]?)](wkinterfacepicker/setitems(_:).md)
   Sets the list of items displayed by the picker.
-- [class WKPickerItem](wkpickeritem.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem))
+- [class WKPickerItem](wkpickeritem.md)
   A single item in a picker interface.
-- [func setSelectedItemIndex(Int)](setselecteditemindex(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setselecteditemindex(_:)))
+- [func setSelectedItemIndex(Int)](wkinterfacepicker/setselecteditemindex(_:).md)
   Selects the specified item in the list.
 
 

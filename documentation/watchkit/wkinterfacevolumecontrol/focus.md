@@ -20,7 +20,7 @@ When the volume control has the focus, the system highlights it. The user can th
 
 ## See Also
 
-- [func resignFocus()](resignfocus().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/resignfocus()))
+- [func resignFocus()](wkinterfacevolumecontrol/resignfocus.md)
   Removes focus from the volume control, causing it to stop receiving input from the Digital Crown.
 
 

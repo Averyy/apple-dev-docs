@@ -20,9 +20,9 @@ This property is initialized with the asset you specified at creation time. You 
 
 ## See Also
 
-- [var status: WKAudioFilePlayerItemStatus](status.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem/status))
+- [var status: WKAudioFilePlayerItemStatus](wkaudiofileplayeritem/status.md)
   The status of the player item.
-- [var error: (any Error)?](error.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem/error))
+- [var error: (any Error)?](wkaudiofileplayeritem/error.md)
   An error that describes the cause of a failure.
 
 

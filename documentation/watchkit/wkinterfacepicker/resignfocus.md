@@ -20,7 +20,7 @@ When no picker has focus, input from the Digital Crown is once again used to scr
 
 ## See Also
 
-- [func focus()](focus().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/focus()))
+- [func focus()](wkinterfacepicker/focus.md)
   Configures the picker to receive input from the Digital Crown.
 
 

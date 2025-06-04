@@ -16,13 +16,13 @@ func play()
 
 #### Discussion
 
-This method sets the value of the [`rate`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/rate) property to `1.0`.
+This method sets the value of the [`rate`](wkaudiofileplayer/rate.md) property to `1.0`.
 
 ## See Also
 
-- [func pause()](pause().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/pause()))
+- [func pause()](wkaudiofileplayer/pause.md)
   Pauses playback of the associated item.
-- [var rate: Float](rate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/rate))
+- [var rate: Float](wkaudiofileplayer/rate.md)
   The current rate of playback.
 
 

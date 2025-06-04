@@ -16,19 +16,19 @@ case appScheduled
 
 #### Discussion
 
-You can schedule snapshots either by calling the [`scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](https://developer.apple.com/documentation/watchkit/wkextension/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:)) method, or—when completing a background task—by calling the [`setTaskCompletedWithSnapshot(_:)`](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:)) method and passing [`true`](https://developer.apple.com/documentation/swift/true).
+You can schedule snapshots either by calling the [`scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](wkextension/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) method, or—when completing a background task—by calling the [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) method and passing [`true`](https://developer.apple.com/documentation/swift/true).
 
 These snapshot refresh tasks are only triggered when the watchOS app is in the dock.
 
 ## See Also
 
-- [WKSnapshotReason.appBackgrounded](appbackgrounded.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/appbackgrounded))
+- [WKSnapshotReason.appBackgrounded](wksnapshotreason/appbackgrounded.md)
   The app transitioned from the foreground to the background.
-- [WKSnapshotReason.complicationUpdate](complicationupdate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/complicationupdate))
+- [WKSnapshotReason.complicationUpdate](wksnapshotreason/complicationupdate.md)
   The app updated the complication timeline.
-- [WKSnapshotReason.prelaunch](prelaunch.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/prelaunch))
+- [WKSnapshotReason.prelaunch](wksnapshotreason/prelaunch.md)
   The system needs a snapshot for the dock, but the app has not been launched yet.
-- [WKSnapshotReason.returnToDefaultState](returntodefaultstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotreason/returntodefaultstate))
+- [WKSnapshotReason.returnToDefaultState](wksnapshotreason/returntodefaultstate.md)
   It has been more than an hour since the user’s last interaction with the app; the app’s snapshot should return to its default state.
 
 

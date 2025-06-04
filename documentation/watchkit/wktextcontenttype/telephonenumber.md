@@ -16,7 +16,7 @@ static let telephoneNumber: WKTextContentType
 
 ## See Also
 
-- [static let emailAddress: WKTextContentType](emailaddress.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/emailaddress))
+- [static let emailAddress: WKTextContentType](wktextcontenttype/emailaddress.md)
   An email address.
 
 

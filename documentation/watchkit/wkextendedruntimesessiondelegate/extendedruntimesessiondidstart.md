@@ -17,7 +17,7 @@ func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeS
 
 #### Discussion
 
-The system calls this method when your session starts running, in response to the [`start()`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start()) method, or because a scheduled session’s start date has arrived.
+The system calls this method when your session starts running, in response to the [`start()`](wkextendedruntimesession/start().md) method, or because a scheduled session’s start date has arrived.
 
 ## Parameters
 
@@ -25,11 +25,11 @@ The system calls this method when your session starts running, in response to th
 
 ## See Also
 
-- [func extendedRuntimeSessionWillExpire(WKExtendedRuntimeSession)](extendedruntimesessionwillexpire(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesessionwillexpire(_:)))
+- [func extendedRuntimeSessionWillExpire(WKExtendedRuntimeSession)](wkextendedruntimesessiondelegate/extendedruntimesessionwillexpire(_:).md)
   Indicates that the session is about to expire.
-- [func extendedRuntimeSession(WKExtendedRuntimeSession, didInvalidateWith: WKExtendedRuntimeSessionInvalidationReason, error: (any Error)?)](extendedruntimesession(_:didinvalidatewith:error:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesession(_:didinvalidatewith:error:)))
+- [func extendedRuntimeSession(WKExtendedRuntimeSession, didInvalidateWith: WKExtendedRuntimeSessionInvalidationReason, error: (any Error)?)](wkextendedruntimesessiondelegate/extendedruntimesession(_:didinvalidatewith:error:).md)
   Indicates that the session has encountered an error or stopped running.
-- [enum WKExtendedRuntimeSessionInvalidationReason](wkextendedruntimesessioninvalidationreason.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessioninvalidationreason))
+- [enum WKExtendedRuntimeSessionInvalidationReason](wkextendedruntimesessioninvalidationreason.md)
   The reasons why a session can become invalid.
 
 

@@ -17,31 +17,31 @@ enum WKApplicationState
 ## Topics
 
 ### Constants
-- [WKApplicationState.active](active.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate/active))
+- [WKApplicationState.active](wkapplicationstate/active.md)
   The Watch app is running in the foreground and currently receiving events.
-- [WKApplicationState.inactive](inactive.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate/inactive))
+- [WKApplicationState.inactive](wkapplicationstate/inactive.md)
   The Watch app is running in the foreground, but is not yet responding to actions from controls or gestures.
-- [WKApplicationState.background](background.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate/background))
+- [WKApplicationState.background](wkapplicationstate/background.md)
   The Watch app is running in the background.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate/init(rawvalue:)))
+- [init?(rawValue: Int)](wkapplicationstate/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [var applicationState: WKApplicationState](applicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/applicationstate))
+- [var applicationState: WKApplicationState](wkapplication/applicationstate.md)
   The runtime state of the watchOS app.
-- [var isApplicationRunningInDock: Bool](isapplicationrunningindock.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isapplicationrunningindock))
+- [var isApplicationRunningInDock: Bool](wkapplication/isapplicationrunningindock.md)
   A Boolean value that indicates whether the app is running in the dock.
-- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:)))
+- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](wkapplication/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md)
   Schedules a background task to refresh the app’s data.
 
 

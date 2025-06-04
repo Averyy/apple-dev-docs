@@ -20,9 +20,9 @@ The allowable movement is measured in points. The default value of this property
 
 ## See Also
 
-- [var minimumPressDuration: CFTimeInterval](minimumpressduration.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/minimumpressduration))
+- [var minimumPressDuration: CFTimeInterval](wklongpressgesturerecognizer/minimumpressduration.md)
   The minimum amount of time (in seconds) that the user’s fingers must be touching the interface object.
-- [var numberOfTapsRequired: Int](numberoftapsrequired.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/numberoftapsrequired))
+- [var numberOfTapsRequired: Int](wklongpressgesturerecognizer/numberoftapsrequired.md)
   The number of taps on the interface object that are required for the gesture to be recognized.
 
 

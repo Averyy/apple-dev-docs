@@ -20,7 +20,7 @@ func setTextColor(_ color: UIColor?)
 
 ## See Also
 
-- [func setDate(Date)](setdate(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/setdate(_:)))
+- [func setDate(Date)](wkinterfacetimer/setdate(_:).md)
   Changes the start time for the timer.
 
 

@@ -24,9 +24,9 @@ This method defines the default color of the entire string. The text field uses 
 
 ## See Also
 
-- [func setText(String?)](settext(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/settext(_:)))
+- [func setText(String?)](wkinterfacetextfield/settext(_:).md)
   Sets the text displayed by the text field.
-- [func setAttributedText(NSAttributedString?)](setattributedtext(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/setattributedtext(_:)))
+- [func setAttributedText(NSAttributedString?)](wkinterfacetextfield/setattributedtext(_:).md)
   Sets the styled text displayed by the text field.
 
 

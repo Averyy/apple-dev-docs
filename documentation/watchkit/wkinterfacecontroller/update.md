@@ -17,7 +17,7 @@ func update(_ userActivity: NSUserActivity)
 
 ## See Also
 
-- [func invalidateUserActivity()](invalidateuseractivity().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/invalidateuseractivity()))
+- [func invalidateUserActivity()](wkinterfacecontroller/invalidateuseractivity.md)
   Invalidates the most recent user activity.
 
 

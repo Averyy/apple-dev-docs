@@ -17,9 +17,9 @@ When you launch an app, watchOS initially displays the latest snapshot for your 
 
 ##### Schedule Snapshots
 
-The system automatically schedules snapshots for your app after significant state changes, for example when the app transitions from the foreground to the background, whenever the user interacts with the app’s complications or notifications, and one hour after the last user interaction. Your app can also invalidate its current snapshot and schedule a background snapshot refresh tasks by calling your extension’s [`scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](https://developer.apple.com/documentation/watchkit/wkapplication/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:)) method.
+The system automatically schedules snapshots for your app after significant state changes, for example when the app transitions from the foreground to the background, whenever the user interacts with the app’s complications or notifications, and one hour after the last user interaction. Your app can also invalidate its current snapshot and schedule a background snapshot refresh tasks by calling your extension’s [`scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](wkapplication/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) method.
 
-When using [`WKRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask) tasks, you can request a new snapshot whenever another background task ends, by calling [`setTaskCompletedWithSnapshot(_:)`](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:)) and passing [`true`](https://developer.apple.com/documentation/swift/true). If your app uses the SwiftUI [`BackgroundTask`](https://developer.apple.com/documentation/SwiftUI/BackgroundTask) tasks, the system automatically detects any changes to the user interface and schedules the snapshot task.
+When using [`WKRefreshBackgroundTask`](wkrefreshbackgroundtask.md) tasks, you can request a new snapshot whenever another background task ends, by calling [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) and passing [`true`](https://developer.apple.com/documentation/swift/true). If your app uses the SwiftUI [`BackgroundTask`](https://developer.apple.com/documentation/SwiftUI/BackgroundTask) tasks, the system automatically detects any changes to the user interface and schedules the snapshot task.
 
 The system budgets the number of snapshots you can take per hour. For apps in the dock, you can safely request one snapshot per hour. For apps with an active complication, you can request up to four per hour. If you exceed the available budget, the system may delay your request until additional background execution time is available.
 
@@ -35,29 +35,29 @@ To take a snapshot, the system resumes running your app in the background. It th
 }
 ```
 
-For [`WKSnapshotRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask) tasks, the system calls your app delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-4vdjo) method and passes an [`WKSnapshotRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask) instance.
+For [`WKSnapshotRefreshBackgroundTask`](wksnapshotrefreshbackgroundtask.md) tasks, the system calls your app delegate’s [`handle(_:)`](wkapplicationdelegate/handle(_:)-4vdjo.md) method and passes an [`WKSnapshotRefreshBackgroundTask`](wksnapshotrefreshbackgroundtask.md) instance.
 
 Use this task to update your user interface before the system takes a snapshot. You can push, pop, or present other interface controllers, and then update the content of the desired interface controller. The system automatically takes a snapshot of your user interface as soon as this task completes.
 
 ## See Also
 
-- [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
+- [Using background tasks](using-background-tasks.md)
   Handle scheduled update tasks in the background, and respond to background system interactions including Siri intents and incoming Bluetooth messages.
-- [class WKApplicationRefreshBackgroundTask](wkapplicationrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationrefreshbackgroundtask))
+- [class WKApplicationRefreshBackgroundTask](wkapplicationrefreshbackgroundtask.md)
   A task that updates your app’s state in the background.
-- [class WKURLSessionRefreshBackgroundTask](wkurlsessionrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask))
+- [class WKURLSessionRefreshBackgroundTask](wkurlsessionrefreshbackgroundtask.md)
   A task that responds to background URL sessions.
-- [class WKWatchConnectivityRefreshBackgroundTask](wkwatchconnectivityrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwatchconnectivityrefreshbackgroundtask))
+- [class WKWatchConnectivityRefreshBackgroundTask](wkwatchconnectivityrefreshbackgroundtask.md)
   A background task used to receive background updates from the Watch Connectivity framework.
-- [class WKBluetoothAlertRefreshBackgroundTask](wkbluetoothalertrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkbluetoothalertrefreshbackgroundtask))
+- [class WKBluetoothAlertRefreshBackgroundTask](wkbluetoothalertrefreshbackgroundtask.md)
   A task for handling timely Bluetooth alerts in the background.
-- [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkintentdidrunrefreshbackgroundtask))
+- [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md)
   A background task used to update your app after a SiriKit intent runs.
-- [class WKRelevantShortcutRefreshBackgroundTask](wkrelevantshortcutrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrelevantshortcutrefreshbackgroundtask))
+- [class WKRelevantShortcutRefreshBackgroundTask](wkrelevantshortcutrefreshbackgroundtask.md)
   A background task used to periodically donate relevant Siri shortcuts.
-- [class WKSnapshotRefreshBackgroundTask](wksnapshotrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask))
+- [class WKSnapshotRefreshBackgroundTask](wksnapshotrefreshbackgroundtask.md)
   A background task used to update your app’s user interface in preparation for a snapshot.
-- [class WKRefreshBackgroundTask](wkrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask))
+- [class WKRefreshBackgroundTask](wkrefreshbackgroundtask.md)
   The abstract superclass for WatchKit’s background task classes.
 
 

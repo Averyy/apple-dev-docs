@@ -16,11 +16,11 @@ case charging
 
 ## See Also
 
-- [WKInterfaceDeviceBatteryState.full](full.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate/full))
+- [WKInterfaceDeviceBatteryState.full](wkinterfacedevicebatterystate/full.md)
   The device is connected to a charger, and its battery is charged to 100%.
-- [WKInterfaceDeviceBatteryState.unknown](unknown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate/unknown))
+- [WKInterfaceDeviceBatteryState.unknown](wkinterfacedevicebatterystate/unknown.md)
   An unknown battery-charging state.
-- [WKInterfaceDeviceBatteryState.unplugged](unplugged.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate/unplugged))
+- [WKInterfaceDeviceBatteryState.unplugged](wkinterfacedevicebatterystate/unplugged.md)
   The device is not connected to a charger and is running on battery power.
 
 

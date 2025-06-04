@@ -17,13 +17,13 @@ weak var delegate: (any WKApplicationDelegate)? { get }
 
 #### Discussion
 
-The delegate object is an object that conforms to the [`WKApplicationDelegate`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate) protocol. You provide the delegate object and use it to manage lifecycle events in your extension. Providing a delegate object is required if your extension supports actionable notifications or Handoff behaviors.
+The delegate object is an object that conforms to the [`WKApplicationDelegate`](wkapplicationdelegate.md) protocol. You provide the delegate object and use it to manage lifecycle events in your extension. Providing a delegate object is required if your extension supports actionable notifications or Handoff behaviors.
 
-For more information about the methods of the delegate object, see [`WKApplicationDelegate`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate).
+For more information about the methods of the delegate object, see [`WKApplicationDelegate`](wkapplicationdelegate.md).
 
 ## See Also
 
-- [protocol WKApplicationDelegate](wkapplicationdelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate))
+- [protocol WKApplicationDelegate](wkapplicationdelegate.md)
   A collection of methods that manages the app-level behavior for a single-target watchOS app.
 
 

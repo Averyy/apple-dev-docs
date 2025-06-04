@@ -30,11 +30,11 @@ Call this method to reload the pages in your app’s page-based interface:
 
 ## See Also
 
-- [class func reloadRootPageControllers(withNames: [String], contexts: [Any]?, orientation: WKPageOrientation, pageIndex: Int)](reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:)))
+- [class func reloadRootPageControllers(withNames: [String], contexts: [Any]?, orientation: WKPageOrientation, pageIndex: Int)](wkinterfacecontroller/reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:).md)
   Loads the specified interface controllers and rebuilds the app’s page-based interface for the given scrolling orientation.
-- [enum WKPageOrientation](wkpageorientation.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpageorientation))
+- [enum WKPageOrientation](wkpageorientation.md)
   Scrolling orientations for page-based interfaces.
-- [func becomeCurrentPage()](becomecurrentpage().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/becomecurrentpage()))
+- [func becomeCurrentPage()](wkinterfacecontroller/becomecurrentpage.md)
   Displays the interface controller in the page-based interface.
 
 

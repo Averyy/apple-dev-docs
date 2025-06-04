@@ -24,9 +24,9 @@ Each tap on the slider’s increment or decrement areas changes the slider value
 
 ## See Also
 
-- [func setValue(Float)](setvalue(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider/setvalue(_:)))
+- [func setValue(Float)](wkinterfaceslider/setvalue(_:).md)
   Changes the value of the slider.
-- [func setColor(UIColor?)](setcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider/setcolor(_:)))
+- [func setColor(UIColor?)](wkinterfaceslider/setcolor(_:).md)
   Sets the color of the slider bar.
 
 

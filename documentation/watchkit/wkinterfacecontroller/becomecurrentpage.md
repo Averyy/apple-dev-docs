@@ -17,7 +17,7 @@ func becomeCurrentPage()
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
+- [Navigating Between Scenes](navigating-between-scenes.md)
 
 #### Discussion
 
@@ -27,11 +27,11 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## See Also
 
-- [class func reloadRootPageControllers(withNames: [String], contexts: [Any]?, orientation: WKPageOrientation, pageIndex: Int)](reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:)))
+- [class func reloadRootPageControllers(withNames: [String], contexts: [Any]?, orientation: WKPageOrientation, pageIndex: Int)](wkinterfacecontroller/reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:).md)
   Loads the specified interface controllers and rebuilds the app’s page-based interface for the given scrolling orientation.
-- [enum WKPageOrientation](wkpageorientation.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpageorientation))
+- [enum WKPageOrientation](wkpageorientation.md)
   Scrolling orientations for page-based interfaces.
-- [class func reloadRootControllers(withNamesAndContexts: [(name: String, context: AnyObject)])](reloadrootcontrollers(withnamesandcontexts:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/reloadrootcontrollers(withnamesandcontexts:)))
+- [class func reloadRootControllers(withNamesAndContexts: [(name: String, context: AnyObject)])](wkinterfacecontroller/reloadrootcontrollers(withnamesandcontexts:).md)
   Loads the specified interface controllers and rebuilds the app’s page-based interface.
 
 

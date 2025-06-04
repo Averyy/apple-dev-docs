@@ -8,9 +8,9 @@ Xcode lets you configure information about your SpriteKit Scene in your storyboa
 
 | Attribute | Description |
 | --- | --- |
-| Scene | The SpriteKit scene to be displayed. You can also set this value programmatically using the [`scene`](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/scene) property. |
-| Frame Rate | The desired frame rate for the scene’s animation. You can also set this value programmatically using the [`preferredFramesPerSecond`](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/preferredframespersecond) property. |
-| Paused | A checkbox indicating whether the scene is paused. If checked, the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed. You can also configure this value programmatically using the [`isPaused`](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/ispaused) property. |
+| Scene | The SpriteKit scene to be displayed. You can also set this value programmatically using the [`scene`](wkinterfaceskscene/scene.md) property. |
+| Frame Rate | The desired frame rate for the scene’s animation. You can also set this value programmatically using the [`preferredFramesPerSecond`](wkinterfaceskscene/preferredframespersecond.md) property. |
+| Paused | A checkbox indicating whether the scene is paused. If checked, the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed. You can also configure this value programmatically using the [`isPaused`](wkinterfaceskscene/ispaused.md) property. |
 
 ##### Enabling Full Screen Mode
 

@@ -24,11 +24,11 @@ This method is thread-safe and may be called at any time.
 
 ## See Also
 
-- [var antialiasingMode: SCNAntialiasingMode](antialiasingmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/antialiasingmode))
+- [var antialiasingMode: SCNAntialiasingMode](wkinterfacescnscene/antialiasingmode.md)
   The antialiasing mode used for rendering the scene.
-- [var preferredFramesPerSecond: Int](preferredframespersecond.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/preferredframespersecond))
+- [var preferredFramesPerSecond: Int](wkinterfacescnscene/preferredframespersecond.md)
   The animation frame rate that the interface uses to render its scene.
-- [var scene: SCNScene?](scene.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/scene))
+- [var scene: SCNScene?](wkinterfacescnscene/scene.md)
   The scene to be displayed.
 
 

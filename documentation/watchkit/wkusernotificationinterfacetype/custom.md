@@ -16,7 +16,7 @@ case custom
 
 ## See Also
 
-- [WKUserNotificationInterfaceType.default](default.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacetype/default))
+- [WKUserNotificationInterfaceType.default](wkusernotificationinterfacetype/default.md)
   A constant indicating that the system should display the corresponding static interface instead. When you return this value, the system takes responsibility for displaying the notification’s content.
 
 

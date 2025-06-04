@@ -20,13 +20,13 @@ The duration of the audio file is obtained from the audio file itself.
 
 ## See Also
 
-- [var url: URL](url.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/url))
+- [var url: URL](wkaudiofileasset/url.md)
   The URL of the audio file.
-- [var title: String?](title.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/title))
+- [var title: String?](wkaudiofileasset/title.md)
   The title information for the audio file.
-- [var albumTitle: String?](albumtitle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/albumtitle))
+- [var albumTitle: String?](wkaudiofileasset/albumtitle.md)
   The album title information for the audio file.
-- [var artist: String?](artist.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/artist))
+- [var artist: String?](wkaudiofileasset/artist.md)
   The artist information for the audio file.
 
 

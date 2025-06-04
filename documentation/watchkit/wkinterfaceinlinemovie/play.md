@@ -20,9 +20,9 @@ If the movie is currently paused, this resumes playback from the current positio
 
 ## See Also
 
-- [func pause()](pause().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/pause()))
+- [func pause()](wkinterfaceinlinemovie/pause.md)
   Pauses the movie.
-- [func playFromBeginning()](playfrombeginning().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/playfrombeginning()))
+- [func playFromBeginning()](wkinterfaceinlinemovie/playfrombeginning.md)
   Plays the movie from the beginning.
 
 

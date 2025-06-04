@@ -25,40 +25,40 @@ For more information on building watchOS apps, see [`watchOS apps`](https://deve
 ## Topics
 
 ### App structure
-- [Setting up a watchOS project](setting-up-a-watchos-project.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/setting-up-a-watchos-project))
+- [Setting up a watchOS project](setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
-- [class WKApplication](wkapplication.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication))
+- [class WKApplication](wkapplication.md)
   The centralized point of control and coordination for apps with a single watchOS app target.
-- [protocol WKApplicationDelegate](wkapplicationdelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate))
+- [protocol WKApplicationDelegate](wkapplicationdelegate.md)
   A collection of methods that manages the app-level behavior for a single-target watchOS app.
-- [class WKExtension](wkextension.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension))
+- [class WKExtension](wkextension.md)
   The centralized point of control and coordination for extension-based apps running in watchOS.
-- [protocol WKExtensionDelegate](wkextensiondelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate))
+- [protocol WKExtensionDelegate](wkextensiondelegate.md)
   A collection of methods that manages the app-level behavior of a WatchKit extension.
-- [func WKApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?) -> Int32](wkapplicationmain(_:_:_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationmain(_:_:_:)))
+- [func WKApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?) -> Int32](wkapplicationmain(_:_:_:).md)
   Creates the application object and the application delegate, and sets up the app’s event cycle.
-- [class WKInterfaceDevice](wkinterfacedevice.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice))
+- [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- WKPrefersNetworkUponForeground ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground))
+- [WKPrefersNetworkUponForeground](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground)
   A Boolean value that indicates whether an app requires network access on launch.
 ### Runtime management
-- [Background execution](background-execution.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/background-execution))
+- [Background execution](background-execution.md)
   Manage background sessions and tasks.
-- [Life cycles](life-cycles.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/life-cycles))
+- [Life cycles](life-cycles.md)
   Receive and respond to life-cycle notifications.
-- [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
+- [Using extended runtime sessions](using-extended-runtime-sessions.md)
   Create an extended runtime session that continues running your app after the user stops interacting with it.
-- [class WKExtendedRuntimeSession](wkextendedruntimesession.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession))
+- [class WKExtendedRuntimeSession](wkextendedruntimesession.md)
   A session that continues to run your app after the user has stopped interacting.
-- [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh))
+- [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md)
   Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 ### User interface
-- [Storyboard support](storyboard-support.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/storyboard-support))
+- [Storyboard support](storyboard-support.md)
   Connect your code to storyboard elements using interface controllers, interface objects, and event handlers.
-- [struct NowPlayingView](nowplayingview.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/nowplayingview))
+- [struct NowPlayingView](nowplayingview.md)
   A view that displays the system’s Now Playing interface so that the user can control audio.
 ### Errors
-- [struct WatchKitError](watchkiterror.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror))
+- [struct WatchKitError](watchkiterror.md)
   An error reported by WatchKit.
 
 

@@ -20,9 +20,9 @@ func scrollToRow(at index: Int)
 
 ## See Also
 
-- [var curvesAtBottom: Bool](curvesatbottom.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable/curvesatbottom))
+- [var curvesAtBottom: Bool](wkinterfacetable/curvesatbottom.md)
   A Boolean value that determines whether the rows shrink to match the curved corners at the bottom of the screen.
-- [var curvesAtTop: Bool](curvesattop.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable/curvesattop))
+- [var curvesAtTop: Bool](wkinterfacetable/curvesattop.md)
   A Boolean value that determines whether the rows shrink to match the curved corners at the top of the screen.
 
 

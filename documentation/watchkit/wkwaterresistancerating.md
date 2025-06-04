@@ -17,30 +17,30 @@ enum WKWaterResistanceRating
 ## Topics
 
 ### Enumeration Cases
-- [WKWaterResistanceRating.ipx7](ipx7.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwaterresistancerating/ipx7))
+- [WKWaterResistanceRating.ipx7](wkwaterresistancerating/ipx7.md)
   A water-resistance rating of IPX7.
-- [WKWaterResistanceRating.wr50](wr50.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwaterresistancerating/wr50))
+- [WKWaterResistanceRating.wr50](wkwaterresistancerating/wr50.md)
   A water-resistance rating of 50 meters.
-- [WKWaterResistanceRating.wr100](wr100.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwaterresistancerating/wr100))
+- [WKWaterResistanceRating.wr100](wkwaterresistancerating/wr100.md)
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwaterresistancerating/init(rawvalue:)))
+- [init?(rawValue: Int)](wkwaterresistancerating/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [var waterResistanceRating: WKWaterResistanceRating](waterresistancerating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/waterresistancerating))
+- [var waterResistanceRating: WKWaterResistanceRating](wkinterfacedevice/waterresistancerating.md)
   The Apple Watch water-resistance rating.
-- [var isWaterLockEnabled: Bool](iswaterlockenabled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/iswaterlockenabled))
+- [var isWaterLockEnabled: Bool](wkinterfacedevice/iswaterlockenabled.md)
   A Boolean value that indicates whether the water lock is enabled.
-- [func enableWaterLock()](enablewaterlock().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/enablewaterlock()))
+- [func enableWaterLock()](wkinterfacedevice/enablewaterlock.md)
   Disables the Apple Watch touch screen to prevent accidental taps while submerged.
 
 

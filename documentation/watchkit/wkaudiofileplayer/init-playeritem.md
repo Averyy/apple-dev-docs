@@ -24,7 +24,7 @@ An initialized player object.
 
 ## See Also
 
-- [func replaceCurrentItem(with: WKAudioFilePlayerItem?)](replacecurrentitem(with:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/replacecurrentitem(with:)))
+- [func replaceCurrentItem(with: WKAudioFilePlayerItem?)](wkaudiofileplayer/replacecurrentitem(with:).md)
   Replaces the current player item with a different one.
 
 

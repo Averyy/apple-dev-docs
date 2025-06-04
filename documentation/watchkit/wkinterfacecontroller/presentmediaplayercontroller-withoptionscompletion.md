@@ -17,7 +17,7 @@ func presentMediaPlayerController(with URL: URL, options: [AnyHashable : Any]? =
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
+- [Navigating Between Scenes](navigating-between-scenes.md)
 
 #### Discussion
 
@@ -46,17 +46,17 @@ Any audio you play using this method is routed to a paired Bluetooth audio devic
 
 ## See Also
 
-- [Media Player Options](media-player-options.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/media-player-options))
+- [Media Player Options](media-player-options.md)
   Keys indicating media playback options.
-- [func dismissMediaPlayerController()](dismissmediaplayercontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismissmediaplayercontroller()))
+- [func dismissMediaPlayerController()](wkinterfacecontroller/dismissmediaplayercontroller.md)
   Dismisses the media interface controller.
-- [func presentAudioRecorderController(withOutputURL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]?, completion: (Bool, (any Error)?) -> Void)](presentaudiorecordercontroller(withoutputurl:preset:options:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentaudiorecordercontroller(withoutputurl:preset:options:completion:)))
+- [func presentAudioRecorderController(withOutputURL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]?, completion: (Bool, (any Error)?) -> Void)](wkinterfacecontroller/presentaudiorecordercontroller(withoutputurl:preset:options:completion:).md)
   Display a standard interface for recording audio from the user’s Apple Watch.
-- [enum WKAudioRecorderPreset](wkaudiorecorderpreset.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiorecorderpreset))
+- [enum WKAudioRecorderPreset](wkaudiorecorderpreset.md)
   Constants indicating the quality of audio recordings.
-- [Audio Recording Options](audio-recording-options.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/audio-recording-options))
+- [Audio Recording Options](audio-recording-options.md)
   Options to specify when recording audio.
-- [func dismissAudioRecorderController()](dismissaudiorecordercontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismissaudiorecordercontroller()))
+- [func dismissAudioRecorderController()](wkinterfacecontroller/dismissaudiorecordercontroller.md)
   Dismisses the audio recording interface controller.
 
 

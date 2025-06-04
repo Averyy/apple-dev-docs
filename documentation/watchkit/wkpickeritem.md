@@ -16,49 +16,49 @@ class WKPickerItem
 
 #### Overview
 
-You create picker items yourself and assign them to a [`WKInterfacePicker`](https://developer.apple.com/documentation/watchkit/wkinterfacepicker) object in your interface. For each item, you can specify a title string, an image, or both based on the style of the picker.
+You create picker items yourself and assign them to a [`WKInterfacePicker`](wkinterfacepicker.md) object in your interface. For each item, you can specify a title string, an image, or both based on the style of the picker.
 
 The style of the picker determines how you configure the items of that picker:
 
 - List. Items may be configured in one of two ways:
-- Specify an image in the [`contentImage`](https://developer.apple.com/documentation/watchkit/wkpickeritem/contentimage) property.
-- Specify text in the [`title`](https://developer.apple.com/documentation/watchkit/wkpickeritem/title) property and an optional image in the [`accessoryImage`](https://developer.apple.com/documentation/watchkit/wkpickeritem/accessoryimage) property.
-- Stacked. Configure each item with an image in the [`contentImage`](https://developer.apple.com/documentation/watchkit/wkpickeritem/contentimage) property.
-- Image Sequence. Configure each item with an image in the [`contentImage`](https://developer.apple.com/documentation/watchkit/wkpickeritem/contentimage) property.
+- Specify an image in the [`contentImage`](wkpickeritem/contentimage.md) property.
+- Specify text in the [`title`](wkpickeritem/title.md) property and an optional image in the [`accessoryImage`](wkpickeritem/accessoryimage.md) property.
+- Stacked. Configure each item with an image in the [`contentImage`](wkpickeritem/contentimage.md) property.
+- Image Sequence. Configure each item with an image in the [`contentImage`](wkpickeritem/contentimage.md) property.
 
 ## Topics
 
 ### Setting the Picker Item’s Content
-- [var contentImage: WKImage?](contentimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/contentimage))
+- [var contentImage: WKImage?](wkpickeritem/contentimage.md)
   The image to display for the item.
-- [var title: String?](title.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/title))
+- [var title: String?](wkpickeritem/title.md)
   The text to display for the item.
-- [var accessoryImage: WKImage?](accessoryimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/accessoryimage))
+- [var accessoryImage: WKImage?](wkpickeritem/accessoryimage.md)
   A small image to display next to the title string.
-- [var caption: String?](caption.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/caption))
+- [var caption: String?](wkpickeritem/caption.md)
   A caption for the item’s content.
 
 ## Relationships
 
 ### Inherits From
-- NSObject ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class))
+- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSCoding ([Apple Docs](https://developer.apple.com/documentation/Foundation/NSCoding))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
-- NSSecureCoding ([Apple Docs](https://developer.apple.com/documentation/Foundation/NSSecureCoding))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSCoding](https://developer.apple.com/documentation/Foundation/NSCoding)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [NSSecureCoding](https://developer.apple.com/documentation/Foundation/NSSecureCoding)
 
 ## See Also
 
-- [func setItems([WKPickerItem]?)](setitems(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setitems(_:)))
+- [func setItems([WKPickerItem]?)](wkinterfacepicker/setitems(_:).md)
   Sets the list of items displayed by the picker.
-- [func setSelectedItemIndex(Int)](setselecteditemindex(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setselecteditemindex(_:)))
+- [func setSelectedItemIndex(Int)](wkinterfacepicker/setselecteditemindex(_:).md)
   Selects the specified item in the list.
-- [func setCoordinatedAnimations([any WKInterfaceObject & WKImageAnimatable]?)](setcoordinatedanimations(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setcoordinatedanimations(_:)))
+- [func setCoordinatedAnimations([any WKInterfaceObject & WKImageAnimatable]?)](wkinterfacepicker/setcoordinatedanimations(_:).md)
   Sets the interface objects that should coordinate their own animations with the picker.
 
 

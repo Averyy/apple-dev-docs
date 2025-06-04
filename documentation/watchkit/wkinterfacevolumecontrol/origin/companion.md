@@ -16,9 +16,9 @@ case companion
 
 ## See Also
 
-- [WKInterfaceVolumeControl.Origin.local](local.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/origin/local))
+- [WKInterfaceVolumeControl.Origin.local](wkinterfacevolumecontrol/origin/local.md)
   Audio playing on Apple Watch.
-- [WKInterfaceVolumeControl.Origin.local](local.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/origin/local))
+- [WKInterfaceVolumeControl.Origin.local](wkinterfacevolumecontrol/origin/local.md)
   Audio playing on Apple Watch.
 
 

@@ -1,10 +1,10 @@
 # Apple Documentation Scraper for Context7
 
-A Python tool that scrapes and converts Apple's developer documentation into markdown format optimized for Context7 integration, enabling natural language queries across Apple's entire documentation ecosystem.
+A Python tool that scrapes and converts Apple's developer documentation into markdown format optimized for AI LLM and specifically for Context7 integration, enabling natural language queries across Apple's entire documentation ecosystem. The current Apple Documentation site requires Javascript and is not friendly to LLM's.
 
-## 🚀 Major Discovery: Apple JSON API
+## 🚀 Apple JSON API
 
-This project leverages a game-changing discovery - Apple provides JSON API endpoints for ALL documentation pages! This eliminates the need for HTML parsing or browser automation.
+This project utilizes the JSON API endpoints that uses internally for all documentation pages. This eliminates the need for HTML parsing or browser automation.
 
 ## Purpose
 
@@ -18,8 +18,8 @@ This scraper addresses the need for offline, searchable access to Apple's develo
 
 The scraper leverages Apple's JSON API endpoints that power their documentation viewer:
 ```
-Documentation URL: https://developer.apple.com/documentation/swiftui/text
-JSON API URL:     https://developer.apple.com/tutorials/data/documentation/swiftui/text.json
+Documentation URL: https://developer.apple.com/documentation/swiftui/text.json
+Pair JSON API URL: https://developer.apple.com/tutorials/data/documentation/swiftui/text.json
 ```
 
 This approach provides:
@@ -59,18 +59,9 @@ python -m scraper.main scrape-framework watchkit
 python -m scraper.main discover watchkit
 ```
 
-### Proven Results
-
-✅ **Successfully scraped WatchKit framework** - 500+ pages including:
-- Complete API documentation with proper hierarchy
-- All code examples preserved with syntax highlighting
-- Cross-references between related APIs
-- Platform availability metadata
-- Proper handling of deprecated APIs
-
 ### Configuration
 
-All settings use optimized defaults. Optionally customize with environment variables:
+Don't spam Apple. All settings use optimized defaults. Optionally customize with environment variables:
 
 ```bash
 # Optional performance tuning
@@ -107,32 +98,6 @@ Each markdown file contains:
 - Cross-references with dual linking (local .md files + Apple URLs)
 - Link to original documentation
 
-### Example Output
-
-```markdown
-# Text
-
-**Framework**: SwiftUI
-
-A view that displays one or more lines of read-only text.
-
-**Availability**:
-- iOS 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- watchOS 6.0+
-
-## Declaration
-
-```swift
-@frozen struct Text
-```
-
-## Overview
-
-A text view draws a string in your app's user interface...
-```
-
 ## Architecture
 
 ### Key Components
@@ -146,29 +111,9 @@ A text view draws a string in your app's user interface...
 ### Supported Frameworks
 
 The scraper handles all Apple frameworks including:
-- **UI**: SwiftUI, UIKit, AppKit
-- **Graphics**: Metal, Core Graphics, Core Animation
-- **Media**: AVFoundation, Core Audio, Core Image
-- **System**: Foundation, Security, Network
-- **ML/AI**: Core ML, Create ML, Natural Language
-- And 150+ more frameworks
+- All 150+ frameworks listed on developer.apple.com/documentation/
 
-## Development
-
-### Project Structure
-
-```
-apple-doc-scraper/
-├── scraper/                 # Main package
-│   ├── json_scraper.py     # Core scraping logic
-│   ├── base.py            # Base classes
-│   └── utils/             # Utilities
-├── tests/                 # Test suite
-├── documentation/         # Output directory
-└── requirements.txt       # Dependencies
-```
-
-### Running Tests
+## Running Tests
 
 ```bash
 # Run all tests
@@ -187,34 +132,11 @@ mypy scraper
 
 **Memory Usage**: For large-scale scraping, process frameworks in batches.
 
-**Missing Content**: Some pages may not have JSON endpoints (rare). These are logged for manual review.
+**Missing Content**: Some pages may not have JSON endpoints.
 
 ## License
 
-MIT License - see LICENSE file for details.
-
-## Contributing
-
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Submit a pull request
-
-## Project Status
-
-### ✅ Completed
-- JSON API discovery and implementation
-- Generic scraper that works for all frameworks
-- Successfully scraped entire WatchKit framework (500+ pages)
-- Comprehensive test coverage
-- Production-ready architecture
-
-### 🚧 Next Steps
-- Scale to remaining 150+ frameworks
-- Implement incremental updates
-- Add CI/CD pipeline
-- Create Docker deployment
+MIT License - They're Apple's docs so do whatever you want with them.
 
 ## Acknowledgments
 

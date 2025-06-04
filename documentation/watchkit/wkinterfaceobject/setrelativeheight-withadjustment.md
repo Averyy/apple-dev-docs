@@ -25,15 +25,15 @@ You can’t use this method to alter the height of tables or separator items. Ch
 
 ## See Also
 
-- [func setWidth(CGFloat)](setwidth(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setwidth(_:)))
+- [func setWidth(CGFloat)](wkinterfaceobject/setwidth(_:).md)
   Sets the absolute width (in points) of the object.
-- [func setHeight(CGFloat)](setheight(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setheight(_:)))
+- [func setHeight(CGFloat)](wkinterfaceobject/setheight(_:).md)
   Sets the absolute height (in points) of the object.
-- [func setRelativeWidth(CGFloat, withAdjustment: CGFloat)](setrelativewidth(_:withadjustment:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setrelativewidth(_:withadjustment:)))
+- [func setRelativeWidth(CGFloat, withAdjustment: CGFloat)](wkinterfaceobject/setrelativewidth(_:withadjustment:).md)
   Sets the width of the object relative to its container.
-- [func sizeToFitWidth()](sizetofitwidth().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/sizetofitwidth()))
+- [func sizeToFitWidth()](wkinterfaceobject/sizetofitwidth.md)
   Sets the width of the object to fit its current content.
-- [func sizeToFitHeight()](sizetofitheight().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/sizetofitheight()))
+- [func sizeToFitHeight()](wkinterfaceobject/sizetofitheight.md)
   Sets the height of the object so that it fills the available vertical space.
 
 

@@ -16,7 +16,7 @@ class func interfaceLayoutDirection(for semanticContentAttribute: WKInterfaceSem
 
 #### Return Value
 
-The user interface layout direction (left-to-right or right-to-left). For a list of possible values, see [`WKInterfaceLayoutDirection`](https://developer.apple.com/documentation/watchkit/wkinterfacelayoutdirection).
+The user interface layout direction (left-to-right or right-to-left). For a list of possible values, see [`WKInterfaceLayoutDirection`](wkinterfacelayoutdirection.md).
 
 ## Parameters
 
@@ -24,11 +24,11 @@ The user interface layout direction (left-to-right or right-to-left). For a list
 
 ## See Also
 
-- [var layoutDirection: WKInterfaceLayoutDirection](layoutdirection.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/layoutdirection))
+- [var layoutDirection: WKInterfaceLayoutDirection](wkinterfacedevice/layoutdirection.md)
   The layout direction of the user interface.
-- [enum WKInterfaceSemanticContentAttribute](wkinterfacesemanticcontentattribute.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacesemanticcontentattribute))
+- [enum WKInterfaceSemanticContentAttribute](wkinterfacesemanticcontentattribute.md)
   A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
-- [enum WKInterfaceLayoutDirection](wkinterfacelayoutdirection.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelayoutdirection))
+- [enum WKInterfaceLayoutDirection](wkinterfacelayoutdirection.md)
   Specifies the directional flow of the user interface.
 
 

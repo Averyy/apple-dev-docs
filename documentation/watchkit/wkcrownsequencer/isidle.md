@@ -20,9 +20,9 @@ The value of this property is [`true`](https://developer.apple.com/documentation
 
 ## See Also
 
-- [func crownDidBecomeIdle(WKCrownSequencer?)](crowndidbecomeidle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate/crowndidbecomeidle(_:)))
+- [func crownDidBecomeIdle(WKCrownSequencer?)](wkcrowndelegate/crowndidbecomeidle(_:).md)
   Called when the user stops rotating the crown.
-- [var rotationsPerSecond: Double](rotationspersecond.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/rotationspersecond))
+- [var rotationsPerSecond: Double](wkcrownsequencer/rotationspersecond.md)
   The rotational speed of the crown, measured in rotations per second.
 
 

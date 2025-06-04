@@ -16,11 +16,11 @@ static let username: WKTextContentType
 
 ## See Also
 
-- [static let password: WKTextContentType](password.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/password))
+- [static let password: WKTextContentType](wktextcontenttype/password.md)
   An existing password.
-- [static let newPassword: WKTextContentType](newpassword.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/newpassword))
+- [static let newPassword: WKTextContentType](wktextcontenttype/newpassword.md)
   A new password.
-- [static let oneTimeCode: WKTextContentType](onetimecode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/onetimecode))
+- [static let oneTimeCode: WKTextContentType](wktextcontenttype/onetimecode.md)
   A one-time code.
 
 

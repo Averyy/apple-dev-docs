@@ -16,9 +16,9 @@ case plain
 
 ## See Also
 
-- [WKTextInputMode.allowEmoji](allowemoji.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextinputmode/allowemoji))
+- [WKTextInputMode.allowEmoji](wktextinputmode/allowemoji.md)
   Text from dictation and suggestions plus non animated emoji.
-- [WKTextInputMode.allowAnimatedEmoji](allowanimatedemoji.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextinputmode/allowanimatedemoji))
+- [WKTextInputMode.allowAnimatedEmoji](wktextinputmode/allowanimatedemoji.md)
   Text from dictation and suggestions plus both animated and non animated emoji.
 
 

@@ -16,7 +16,7 @@ func setTaskCompleted(restoredDefaultState: Bool, estimatedSnapshotExpiration: D
 
 #### Discussion
 
-Call this method as soon as your app finishes updating its user interface. The system provides your extension with a limited amount of time (on the order of seconds) to finish the background snapshot refresh task. If you do not call [`setTaskCompleted(restoredDefaultState:estimatedSnapshotExpiration:userInfo:)`](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask/settaskcompleted(restoreddefaultstate:estimatedsnapshotexpiration:userinfo:)) on the task, the system uses all available time, wasting battery power. The system then suspends the extension as soon as the allotted time has expired.
+Call this method as soon as your app finishes updating its user interface. The system provides your extension with a limited amount of time (on the order of seconds) to finish the background snapshot refresh task. If you do not call [`setTaskCompleted(restoredDefaultState:estimatedSnapshotExpiration:userInfo:)`](wksnapshotrefreshbackgroundtask/settaskcompleted(restoreddefaultstate:estimatedsnapshotexpiration:userinfo:).md) on the task, the system uses all available time, wasting battery power. The system then suspends the extension as soon as the allotted time has expired.
 
 The system automatically takes a snapshot of your app’s user interface as soon as this task is complete. The system also suspends the extension as soon as all background tasks are complete.
 

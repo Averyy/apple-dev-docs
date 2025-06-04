@@ -20,7 +20,7 @@ As the gesture recognizer processes touch events, it updates the value of this p
 
 ## See Also
 
-- [var isEnabled: Bool](isenabled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer/isenabled))
+- [var isEnabled: Bool](wkgesturerecognizer/isenabled.md)
   A Boolean value indicating whether the gesture recognizer is enabled.
 
 

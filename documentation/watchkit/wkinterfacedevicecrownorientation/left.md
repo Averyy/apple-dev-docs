@@ -16,7 +16,7 @@ case left
 
 ## See Also
 
-- [WKInterfaceDeviceCrownOrientation.right](right.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicecrownorientation/right))
+- [WKInterfaceDeviceCrownOrientation.right](wkinterfacedevicecrownorientation/right.md)
   The right side of the device.
 
 

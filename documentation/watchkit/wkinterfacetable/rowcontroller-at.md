@@ -20,7 +20,7 @@ The row controller object, or `nil` if there are no row controllers yet or `inde
 
 #### Discussion
 
-Call the [`setRowTypes(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacetable/setrowtypes(_:)) or [`setNumberOfRows(_:withRowType:)`](https://developer.apple.com/documentation/watchkit/wkinterfacetable/setnumberofrows(_:withrowtype:)) method before using this method to retrieve any row controllers. After you call one of those methods, the table creates row controllers for each row type and stores them internally in an array. Use this method to retrieve those row controllers.
+Call the [`setRowTypes(_:)`](wkinterfacetable/setrowtypes(_:).md) or [`setNumberOfRows(_:withRowType:)`](wkinterfacetable/setnumberofrows(_:withrowtype:).md) method before using this method to retrieve any row controllers. After you call one of those methods, the table creates row controllers for each row type and stores them internally in an array. Use this method to retrieve those row controllers.
 
 ## Parameters
 
@@ -28,7 +28,7 @@ Call the [`setRowTypes(_:)`](https://developer.apple.com/documentation/watchkit/
 
 ## See Also
 
-- [var numberOfRows: Int](numberofrows.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable/numberofrows))
+- [var numberOfRows: Int](wkinterfacetable/numberofrows.md)
   The number of row controllers available for you to retrieve.
 
 

@@ -20,7 +20,7 @@ The velocity of the gesture, which is expressed in points per second. The `x` fi
 
 ## See Also
 
-- [func translationInObject() -> CGPoint](translationinobject().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpangesturerecognizer/translationinobject()))
+- [func translationInObject() -> CGPoint](wkpangesturerecognizer/translationinobject.md)
   The amount of translation for the pan gesture in the current object.
 
 

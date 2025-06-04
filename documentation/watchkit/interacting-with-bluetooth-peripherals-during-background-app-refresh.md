@@ -39,13 +39,13 @@ The watch app reads a characteristic value from the phone and updates the compli
 
 ## See Also
 
-- [Background execution](background-execution.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/background-execution))
+- [Background execution](background-execution.md)
   Manage background sessions and tasks.
-- [Life cycles](life-cycles.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/life-cycles))
+- [Life cycles](life-cycles.md)
   Receive and respond to life-cycle notifications.
-- [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
+- [Using extended runtime sessions](using-extended-runtime-sessions.md)
   Create an extended runtime session that continues running your app after the user stops interacting with it.
-- [class WKExtendedRuntimeSession](wkextendedruntimesession.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession))
+- [class WKExtendedRuntimeSession](wkextendedruntimesession.md)
   A session that continues to run your app after the user has stopped interacting.
 
 

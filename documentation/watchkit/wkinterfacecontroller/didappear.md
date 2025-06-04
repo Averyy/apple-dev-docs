@@ -17,8 +17,8 @@ func didAppear()
 
 ## Mentions
 
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
-- [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
+- [Navigating Between Scenes](navigating-between-scenes.md)
 
 #### Discussion
 
@@ -28,11 +28,11 @@ The system calls this method on your WatchKit extension’s main thread. The `su
 
 ## See Also
 
-- [func willActivate()](willactivate().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willactivate()))
+- [func willActivate()](wkinterfacecontroller/willactivate.md)
   Tells the interface controller that the system is about to activate its view.
-- [func didDeactivate()](diddeactivate().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/diddeactivate()))
+- [func didDeactivate()](wkinterfacecontroller/diddeactivate.md)
   Tells the interface controller that its view is no longer active.
-- [func willDisappear()](willdisappear().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willdisappear()))
+- [func willDisappear()](wkinterfacecontroller/willdisappear.md)
   Tells the interface controller that its view is now offscreen.
 
 

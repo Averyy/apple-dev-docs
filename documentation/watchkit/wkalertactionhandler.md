@@ -20,7 +20,7 @@ This block takes no parameters and returns no value. You use this type of block 
 
 ## See Also
 
-- [enum WKAlertActionStyle](wkalertactionstyle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionstyle))
+- [enum WKAlertActionStyle](wkalertactionstyle.md)
   Constants indicating the style of the action button.
 
 

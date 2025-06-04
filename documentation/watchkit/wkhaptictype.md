@@ -17,48 +17,48 @@ enum WKHapticType
 ## Topics
 
 ### Constants
-- [WKHapticType.notification](notification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/notification))
+- [WKHapticType.notification](wkhaptictype/notification.md)
   Alerts the user to an arrived notification when the Watch app is not running in the foreground.
-- [WKHapticType.directionUp](directionup.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/directionup))
+- [WKHapticType.directionUp](wkhaptictype/directionup.md)
   Indicates an increase in a specific value or when a value has gone above a certain threshold.
-- [WKHapticType.directionDown](directiondown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/directiondown))
+- [WKHapticType.directionDown](wkhaptictype/directiondown.md)
   Indicates a decrease in a specific value or when a value has gone below a certain threshold.
-- [WKHapticType.success](success.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/success))
+- [WKHapticType.success](wkhaptictype/success.md)
   Indicates the successful completion of a task or the answering of a question.
-- [WKHapticType.failure](failure.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/failure))
+- [WKHapticType.failure](wkhaptictype/failure.md)
   Indicates the failed completion of a task or answering of a question.
-- [WKHapticType.retry](retry.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/retry))
+- [WKHapticType.retry](wkhaptictype/retry.md)
   Indicates that the user should retry a task that temporarily failed.
-- [WKHapticType.start](start.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/start))
+- [WKHapticType.start](wkhaptictype/start.md)
   Indicates the beginning of an action.
-- [WKHapticType.stop](stop.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/stop))
+- [WKHapticType.stop](wkhaptictype/stop.md)
   Indicates the end of an action.
-- [WKHapticType.click](click.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/click))
+- [WKHapticType.click](wkhaptictype/click.md)
   Indicates a simple click type of feedback.
-- [WKHapticType.navigationGenericManeuver](navigationgenericmaneuver.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/navigationgenericmaneuver))
+- [WKHapticType.navigationGenericManeuver](wkhaptictype/navigationgenericmaneuver.md)
   Indicates a new navigation step.
-- [WKHapticType.navigationLeftTurn](navigationleftturn.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/navigationleftturn))
+- [WKHapticType.navigationLeftTurn](wkhaptictype/navigationleftturn.md)
   Indicates that the user should turn left.
-- [WKHapticType.navigationRightTurn](navigationrightturn.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/navigationrightturn))
+- [WKHapticType.navigationRightTurn](wkhaptictype/navigationrightturn.md)
   Indicates that the user should turn right.
 ### Enumeration Cases
-- [WKHapticType.underwaterDepthCriticalPrompt](underwaterdepthcriticalprompt.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/underwaterdepthcriticalprompt))
-- [WKHapticType.underwaterDepthPrompt](underwaterdepthprompt.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/underwaterdepthprompt))
+- [WKHapticType.underwaterDepthCriticalPrompt](wkhaptictype/underwaterdepthcriticalprompt.md)
+- [WKHapticType.underwaterDepthPrompt](wkhaptictype/underwaterdepthprompt.md)
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/init(rawvalue:)))
+- [init?(rawValue: Int)](wkhaptictype/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [func play(WKHapticType)](play(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/play(_:)))
+- [func play(WKHapticType)](wkinterfacedevice/play(_:).md)
   Gives haptic feedback to the user.
 
 

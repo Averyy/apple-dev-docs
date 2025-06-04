@@ -16,9 +16,9 @@ case `default`
 
 ## See Also
 
-- [WKAlertActionStyle.cancel](cancel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionstyle/cancel))
+- [WKAlertActionStyle.cancel](wkalertactionstyle/cancel.md)
   A cancel action. Use this style for an action that cancels the operation without making changes.
-- [WKAlertActionStyle.destructive](destructive.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionstyle/destructive))
+- [WKAlertActionStyle.destructive](wkalertactionstyle/destructive.md)
   An action that causes destructive behavior to the user’s data or the app. Destructive actions are styled in a way that warns the user of the destructive nature of the action.
 
 

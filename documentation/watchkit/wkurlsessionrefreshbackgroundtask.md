@@ -16,7 +16,7 @@ class WKURLSessionRefreshBackgroundTask
 
 ## Mentions
 
-- [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
+- [Using background tasks](using-background-tasks.md)
 
 #### Overview
 
@@ -43,9 +43,9 @@ backgroundTask.earliestBeginDate = Date().addingTimeInterval(15 * 60)
 backgroundTask.resume()
 ```
 
-If your app has a complication on the active watch face, it can receive up to four [`WKURLSessionRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask) tasks per hour. To avoid throttling, use the [`earliestBeginDate`](https://developer.apple.com/documentation/foundation/urlsessiontask/2873413-earliestbegindate) property to schedule background URL session tasks no closer than 15 minutes apart.
+If your app has a complication on the active watch face, it can receive up to four [`WKURLSessionRefreshBackgroundTask`](wkurlsessionrefreshbackgroundtask.md) tasks per hour. To avoid throttling, use the [`earliestBeginDate`](https://developer.apple.com/documentation/foundation/urlsessiontask/2873413-earliestbegindate) property to schedule background URL session tasks no closer than 15 minutes apart.
 
-Don’t subclass or create instances of this class. Instead, the system instantiates a [`WKURLSessionRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask) object and passes the task object to your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-4vdjo) method in response to [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) events. Defer calling the background [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) task’s `setTaskCompleted()` method until all the delegate method calls finish processing.
+Don’t subclass or create instances of this class. Instead, the system instantiates a [`WKURLSessionRefreshBackgroundTask`](wkurlsessionrefreshbackgroundtask.md) object and passes the task object to your extension delegate’s [`handle(_:)`](wkapplicationdelegate/handle(_:)-4vdjo.md) method in response to [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) events. Defer calling the background [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) task’s `setTaskCompleted()` method until all the delegate method calls finish processing.
 
 > **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
 
@@ -61,41 +61,41 @@ To get more information about the transfer, create a background configuration ob
 ## Topics
 
 ### Accessing background task data
-- [var sessionIdentifier: String](sessionidentifier.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask/sessionidentifier))
+- [var sessionIdentifier: String](wkurlsessionrefreshbackgroundtask/sessionidentifier.md)
   The identifier for the triggering background transfer.
 
 ## Relationships
 
 ### Inherits From
-- [WKRefreshBackgroundTask](wkrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask))
+- [WKRefreshBackgroundTask](wkrefreshbackgroundtask.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
+- [Using background tasks](using-background-tasks.md)
   Handle scheduled update tasks in the background, and respond to background system interactions including Siri intents and incoming Bluetooth messages.
-- [Preparing to take your watchOS app’s snapshot](preparing-to-take-your-watchos-app-s-snapshot.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/preparing-to-take-your-watchos-app-s-snapshot))
+- [Preparing to take your watchOS app’s snapshot](preparing-to-take-your-watchos-app-s-snapshot.md)
   Provide a timely, accurate snapshot of your app by using snapshot background tasks.
-- [class WKApplicationRefreshBackgroundTask](wkapplicationrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationrefreshbackgroundtask))
+- [class WKApplicationRefreshBackgroundTask](wkapplicationrefreshbackgroundtask.md)
   A task that updates your app’s state in the background.
-- [class WKWatchConnectivityRefreshBackgroundTask](wkwatchconnectivityrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwatchconnectivityrefreshbackgroundtask))
+- [class WKWatchConnectivityRefreshBackgroundTask](wkwatchconnectivityrefreshbackgroundtask.md)
   A background task used to receive background updates from the Watch Connectivity framework.
-- [class WKBluetoothAlertRefreshBackgroundTask](wkbluetoothalertrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkbluetoothalertrefreshbackgroundtask))
+- [class WKBluetoothAlertRefreshBackgroundTask](wkbluetoothalertrefreshbackgroundtask.md)
   A task for handling timely Bluetooth alerts in the background.
-- [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkintentdidrunrefreshbackgroundtask))
+- [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md)
   A background task used to update your app after a SiriKit intent runs.
-- [class WKRelevantShortcutRefreshBackgroundTask](wkrelevantshortcutrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrelevantshortcutrefreshbackgroundtask))
+- [class WKRelevantShortcutRefreshBackgroundTask](wkrelevantshortcutrefreshbackgroundtask.md)
   A background task used to periodically donate relevant Siri shortcuts.
-- [class WKSnapshotRefreshBackgroundTask](wksnapshotrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask))
+- [class WKSnapshotRefreshBackgroundTask](wksnapshotrefreshbackgroundtask.md)
   A background task used to update your app’s user interface in preparation for a snapshot.
-- [class WKRefreshBackgroundTask](wkrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask))
+- [class WKRefreshBackgroundTask](wkrefreshbackgroundtask.md)
   The abstract superclass for WatchKit’s background task classes.
 
 

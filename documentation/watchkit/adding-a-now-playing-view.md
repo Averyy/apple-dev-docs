@@ -18,27 +18,27 @@ To add the Now Playing view, drag it from the Library to an empty interface cont
 
 Always present the Now Playing view so that it fills the screen in a nonscrolling container. Don’t add any other elements to this scene.
 
-> **Note**:  If you are using SwiftUI, use the [`NowPlayingView`](https://developer.apple.com/documentation/watchkit/nowplayingview) structure instead.
+> **Note**:  If you are using SwiftUI, use the [`NowPlayingView`](nowplayingview.md) structure instead.
 
- If you are using SwiftUI, use the [`NowPlayingView`](https://developer.apple.com/documentation/watchkit/nowplayingview) structure instead.
+ If you are using SwiftUI, use the [`NowPlayingView`](nowplayingview.md) structure instead.
 
 The Now Playing view uses your app’s tint color, but otherwise has no attributes or properties that you can set. In addition, no public interface class exists for the Now Playing view. This means you can’t access or control the view programmatically. Your app just presents the view; the system handles the rest.
 
 ## See Also
 
-- [Playing Background Audio](playing-background-audio.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/playing-background-audio))
+- [Playing Background Audio](playing-background-audio.md)
   Enable background audio in your app to provide a seamless playback experience.
-- [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol))
+- [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md)
   An interface element that provides control of the audio volume from the watch or a paired iPhone.
-- PUICAutoLaunchAudioOptOut ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut))
+- [PUICAutoLaunchAudioOptOut](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut)
   A Boolean value that indicates whether a watchOS app should opt out of automatically launching when its companion iOS app starts playing audio content.
-- [class WKAudioFilePlayer](wkaudiofileplayer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer))
+- [class WKAudioFilePlayer](wkaudiofileplayer.md)
   An object that controls playback of a single audio item.
-- [class WKAudioFileQueuePlayer](wkaudiofilequeueplayer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer))
+- [class WKAudioFileQueuePlayer](wkaudiofilequeueplayer.md)
   An object that controls playback of one or more audio items.
-- [class WKAudioFilePlayerItem](wkaudiofileplayeritem.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem))
+- [class WKAudioFilePlayerItem](wkaudiofileplayeritem.md)
   An object that manages the presentation state of an audio file while it is playing.
-- [class WKAudioFileAsset](wkaudiofileasset.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset))
+- [class WKAudioFileAsset](wkaudiofileasset.md)
   An object that stores a reference to an audio file and provides metadata information about that file.
 
 

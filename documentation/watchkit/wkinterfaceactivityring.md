@@ -16,19 +16,19 @@ class WKInterfaceActivityRing
 
 #### Overview
 
-The [`WKInterfaceActivityRing`](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring) view displays data from an [`HKActivitySummary`](https://developer.apple.com/documentation/HealthKit/HKActivitySummary) object, using the Move, Exercise, and Stand activity rings (see [`Figure 1`](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring#1965772)).
+The [`WKInterfaceActivityRing`](wkinterfaceactivityring.md) view displays data from an [`HKActivitySummary`](https://developer.apple.com/documentation/HealthKit/HKActivitySummary) object, using the Move, Exercise, and Stand activity rings (see [`Figure 1`](wkinterfaceactivityring#1965772.md)).
 
 ![None](https://docs-assets.developer.apple.com/published/b37fb00fdf923f18d3ed7106e28251c3/media-1965772%402x.png)
 
-The activity ring view always appears as a black rectangle with red, green, and blue concentric rings. The rings are centered in the view, and sized to fit the available space (see [`Figure 2`](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring#1965773)).
+The activity ring view always appears as a black rectangle with red, green, and blue concentric rings. The rings are centered in the view, and sized to fit the available space (see [`Figure 2`](wkinterfaceactivityring#1965773.md)).
 
 ![None](https://docs-assets.developer.apple.com/published/9dd245f95d37440302b7ea79dd716c84/media-1965773%402x.png)
 
-The rings have two different ways to display a lack of data. One indicates that the activity summary is missing, and the other indicates that the activity summary’s values are set to zero. If the ring has a `nil`-valued `activitySummary` property, the rings appear empty (see See [`Figure 3`](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring#1965774)). Use this to indicate that there is no summary data available for the specified day (for example, dates in the future).
+The rings have two different ways to display a lack of data. One indicates that the activity summary is missing, and the other indicates that the activity summary’s values are set to zero. If the ring has a `nil`-valued `activitySummary` property, the rings appear empty (see See [`Figure 3`](wkinterfaceactivityring#1965774.md)). Use this to indicate that there is no summary data available for the specified day (for example, dates in the future).
 
 ![None](https://docs-assets.developer.apple.com/published/b57c2f57d583797c12f84b0d570b150c/media-1965774%402x.png)
 
-If the summary has zero-valued quantities set for its value properties,  the ring displays a dot at the top of the ring (see [`Figure 4`](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring#1965776)). Use this to indicate that the user has not yet burned any active calories, exercised, or earned any stand hours for the specified day.
+If the summary has zero-valued quantities set for its value properties,  the ring displays a dot at the top of the ring (see [`Figure 4`](wkinterfaceactivityring#1965776.md)). Use this to indicate that the user has not yet burned any active calories, exercised, or earned any stand hours for the specified day.
 
 ![None](https://docs-assets.developer.apple.com/published/f24bf0aa1e7fa4576bc83703115b96dc/media-1965776%402x.png)
 
@@ -51,45 +51,45 @@ ring percent = value property quantity / goal property quantity
 ## Topics
 
 ### Setting the Activity Summary
-- [func setActivitySummary(HKActivitySummary?, animated: Bool)](setactivitysummary(_:animated:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring/setactivitysummary(_:animated:)))
+- [func setActivitySummary(HKActivitySummary?, animated: Bool)](wkinterfaceactivityring/setactivitysummary(_:animated:).md)
   Sets the activity summary displayed by the activity ring view.
 ### Initializing for SwiftUI
-- [init()](init().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring/init()))
+- [init()](wkinterfaceactivityring/init.md)
   Creates an activity ring view for use in SwiftUI.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject))
+- [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [class WKInterfaceLabel](wkinterfacelabel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelabel))
+- [class WKInterfaceLabel](wkinterfacelabel.md)
   An interface element that displays static text.
-- [class WKInterfaceDate](wkinterfacedate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedate))
+- [class WKInterfaceDate](wkinterfacedate.md)
   A label that displays the current date or time.
-- [class WKInterfaceTimer](wkinterfacetimer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer))
+- [class WKInterfaceTimer](wkinterfacetimer.md)
   A label that displays a countdown or count-up timer.
-- [class WKInterfaceButton](wkinterfacebutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton))
+- [class WKInterfaceButton](wkinterfacebutton.md)
   A button in the user interface of your watchOS app.
-- [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton))
+- [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md)
   A button that you can use to trigger a Sign in with Apple request.
-- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepaymentbutton))
+- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md)
   A button that you can use to trigger payments through Apple Pay.
-- [class WKInterfaceTextField](wkinterfacetextfield.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield))
+- [class WKInterfaceTextField](wkinterfacetextfield.md)
   An interface element that displays an editable text area.
-- [class WKInterfaceSwitch](wkinterfaceswitch.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch))
+- [class WKInterfaceSwitch](wkinterfaceswitch.md)
   An interface element that toggles between an On and Off state.
-- [class WKInterfaceSlider](wkinterfaceslider.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider))
+- [class WKInterfaceSlider](wkinterfaceslider.md)
   An interface element that lets users select a single floating-point value from a range of values.
-- [class WKInterfaceMap](wkinterfacemap.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap))
+- [class WKInterfaceMap](wkinterfacemap.md)
   An interface element that displays a noninteractive map for the location you specify.
 
 

@@ -21,11 +21,11 @@ Use this method to unregister from all remote notifications; for example, unregi
 
 ## See Also
 
-- @MainActor func registerForRemoteNotifications() ([Apple Docs](https://developer.apple.com/documentation/UIKit/UIApplication/registerForRemoteNotifications()))
+- [@MainActor func registerForRemoteNotifications()](https://developer.apple.com/documentation/UIKit/UIApplication/registerForRemoteNotifications())
   Registers to receive remote notifications through Apple Push Notification service.
-- [func registerForRemoteNotifications()](registerforremotenotifications().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/registerforremotenotifications()))
+- [func registerForRemoteNotifications()](wkextension/registerforremotenotifications.md)
   Register to receive remote notifications from the Apple Push Notification service (APNs).
-- [var isRegisteredForRemoteNotifications: Bool](isregisteredforremotenotifications.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isregisteredforremotenotifications))
+- [var isRegisteredForRemoteNotifications: Bool](wkextension/isregisteredforremotenotifications.md)
   A Boolean value that indicates if the app has successfully registered for remote notifications.
 
 

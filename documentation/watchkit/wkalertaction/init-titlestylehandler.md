@@ -20,7 +20,7 @@ An initialized action object that you can display in an alert.
 
 #### Discussion
 
-Use this method to create a button to display in an action sheet. In an action sheet, specifying an action with the [`WKAlertActionStyle.cancel`](https://developer.apple.com/documentation/watchkit/wkalertactionstyle/cancel) style replaces the standard Cancel button provided by the system.
+Use this method to create a button to display in an action sheet. In an action sheet, specifying an action with the [`WKAlertActionStyle.cancel`](wkalertactionstyle/cancel.md) style replaces the standard Cancel button provided by the system.
 
 ## Parameters
 

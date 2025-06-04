@@ -20,7 +20,7 @@ The label should be a very short, localized string that identifies the purpose o
 
 ## See Also
 
-- [var frame: CGRect](frame.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityimageregion/frame))
+- [var frame: CGRect](wkaccessibilityimageregion/frame.md)
   A portion of the parent image, in the image’s coordinate system.
 
 

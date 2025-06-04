@@ -25,7 +25,7 @@ WatchKit calls this method when it receives data associated with a user activity
 
 ## See Also
 
-- [func handleUserActivity([AnyHashable : Any]?)](handleuseractivity(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handleuseractivity(_:)))
+- [func handleUserActivity([AnyHashable : Any]?)](wkapplicationdelegate/handleuseractivity(_:).md)
   Responds to Handoff–related activity from complications and notifications.
 
 

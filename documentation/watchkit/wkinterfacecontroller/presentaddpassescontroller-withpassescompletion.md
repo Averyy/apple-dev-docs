@@ -17,7 +17,7 @@ func presentAddPassesController(withPasses passes: [PKPass]) async
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
+- [Navigating Between Scenes](navigating-between-scenes.md)
 
 #### Discussion
 
@@ -32,7 +32,7 @@ The user dismisses the interface using the built-in controls. At dismissal time,
 
 ## See Also
 
-- [func dismissAddPassesController()](dismissaddpassescontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismissaddpassescontroller()))
+- [func dismissAddPassesController()](wkinterfacecontroller/dismissaddpassescontroller.md)
   Dismisses the pass interface controller
 
 

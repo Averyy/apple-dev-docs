@@ -500,14 +500,14 @@ class AppleDocMarkdownConverter:
         return "\n".join(lines)
     
     def _create_dual_link(self, apple_url: str, link_text: str) -> str:
-        """Create a link that includes both local file (if exists) and Apple URL.
+        """Create a local markdown link from an Apple documentation URL.
         
         Args:
             apple_url: Apple documentation URL
             link_text: Text to display for the link
             
         Returns:
-            Markdown link with local file preference and Apple URL fallback
+            Markdown link to local file (or Apple URL for cross-framework references)
         """
         if not self.output_dir or not apple_url.startswith('https://developer.apple.com/documentation/'):
             return f"[{link_text}]({apple_url})"
@@ -523,21 +523,26 @@ class AppleDocMarkdownConverter:
                 current_framework = str(self.output_dir.name).lower()
                 
                 if framework_in_url != current_framework:
-                    # Cross-framework reference - don't create local .md link
-                    return f"{link_text} ([Apple Docs]({apple_url}))"
+                    # Cross-framework reference - keep Apple URL
+                    return f"[{link_text}]({apple_url})"
                 
                 # Same framework - create local link
-                api_name = path_parts[-1]  # Get the last part (actual API name)
-                
-                # Check if local markdown file exists
-                local_file = self.output_dir / f"{api_name}.md"
-                
-                if local_file.exists():
-                    # Create dual link: local file with Apple URL as reference
-                    return f"[{link_text}]({api_name}.md) ([Apple Docs]({apple_url}))"
+                # Handle nested paths properly
+                if len(path_parts) == 2:
+                    # Direct child of framework
+                    local_path = f"{path_parts[-1]}.md"
                 else:
-                    # Include .md extension even if file doesn't exist yet, for clarity
-                    return f"[{link_text}]({api_name}.md) ([Apple Docs]({apple_url}))"
+                    # Nested path - preserve subdirectory structure
+                    # For watchkit/wkapplicationdelegate/main() -> wkapplicationdelegate/main.md
+                    # Remove parentheses from method names
+                    last_part = path_parts[-1].replace('()', '')
+                    nested_path = '/'.join(path_parts[1:-1])
+                    if nested_path:
+                        local_path = f"{nested_path}/{last_part}.md"
+                    else:
+                        local_path = f"{last_part}.md"
+                
+                return f"[{link_text}]({local_path})"
         
         except Exception:
             # If anything goes wrong, fall back to Apple URL only

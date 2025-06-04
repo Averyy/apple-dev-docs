@@ -16,9 +16,9 @@ case top
 
 ## See Also
 
-- [WKInterfaceObjectVerticalAlignment.center](center.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobjectverticalalignment/center))
+- [WKInterfaceObjectVerticalAlignment.center](wkinterfaceobjectverticalalignment/center.md)
   Center alignment. The object’s content is centered vertically in the container and extends equally up and down.
-- [WKInterfaceObjectVerticalAlignment.bottom](bottom.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobjectverticalalignment/bottom))
+- [WKInterfaceObjectVerticalAlignment.bottom](wkinterfaceobjectverticalalignment/bottom.md)
   Bottom alignment. The object’s content aligns with the bottom edge of the container and extends upward.
 
 

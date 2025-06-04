@@ -24,11 +24,11 @@ Use this method when you already have image data in the raw PNG or JPG format. T
 
 ## See Also
 
-- [func setBackgroundColor(UIColor?)](setbackgroundcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/setbackgroundcolor(_:)))
+- [func setBackgroundColor(UIColor?)](wkinterfacebutton/setbackgroundcolor(_:).md)
   Sets the background color of the button.
-- [func setBackgroundImage(UIImage?)](setbackgroundimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/setbackgroundimage(_:)))
+- [func setBackgroundImage(UIImage?)](wkinterfacebutton/setbackgroundimage(_:).md)
   Sets the button’s background image to the specified image.
-- [func setBackgroundImageNamed(String?)](setbackgroundimagenamed(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/setbackgroundimagenamed(_:)))
+- [func setBackgroundImageNamed(String?)](wkinterfacebutton/setbackgroundimagenamed(_:).md)
   Sets the button’s background image to the image in the named resource file.
 
 

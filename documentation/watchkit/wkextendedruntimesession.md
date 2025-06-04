@@ -16,8 +16,8 @@ class WKExtendedRuntimeSession
 
 ## Mentions
 
-- [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
-- [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
+- [Using extended runtime sessions](using-extended-runtime-sessions.md)
+- [Using background tasks](using-background-tasks.md)
 
 #### Overview
 
@@ -25,60 +25,60 @@ With extended runtime sessions, your app continues to run after the user stops i
 
 Each app can support a single type of extended runtime session: self care, mindfulness, physical therapy, or smart alarm. Select the session by enabling the appropriate Background Modes capability.
 
-For more information, see [`Using extended runtime sessions`](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions).
+For more information, see [`Using extended runtime sessions`](using-extended-runtime-sessions.md).
 
 ## Topics
 
 ### Creating a Session
-- [var delegate: (any WKExtendedRuntimeSessionDelegate)?](delegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/delegate))
+- [var delegate: (any WKExtendedRuntimeSessionDelegate)?](wkextendedruntimesession/delegate.md)
   A delegate object for monitoring the session and responding to state changes and errors.
-- [protocol WKExtendedRuntimeSessionDelegate](wkextendedruntimesessiondelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate))
+- [protocol WKExtendedRuntimeSessionDelegate](wkextendedruntimesessiondelegate.md)
   A set of optional methods for monitoring an extended runtime session.
 ### Managing the Session State
-- [func start()](start().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start()))
+- [func start()](wkextendedruntimesession/start.md)
   Starts running the session.
-- [func start(at: Date)](start(at:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start(at:)))
+- [func start(at: Date)](wkextendedruntimesession/start(at:).md)
   Schedules a session to start running at a future date.
-- [func invalidate()](invalidate().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/invalidate()))
+- [func invalidate()](wkextendedruntimesession/invalidate.md)
   Stops the session.
-- [var state: WKExtendedRuntimeSessionState](state.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/state))
+- [var state: WKExtendedRuntimeSessionState](wkextendedruntimesession/state.md)
   The session’s current state.
-- [enum WKExtendedRuntimeSessionState](wkextendedruntimesessionstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionstate))
+- [enum WKExtendedRuntimeSessionState](wkextendedruntimesessionstate.md)
   The activation states for an extended runtime session.
-- [var expirationDate: Date?](expirationdate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/expirationdate))
+- [var expirationDate: Date?](wkextendedruntimesession/expirationdate.md)
   The time and date when the session expires.
-- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](requestautolaunchauthorizationstatus(completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/requestautolaunchauthorizationstatus(completion:)))
-- [enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus](wkextendedruntimesessionautolaunchauthorizationstatus.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionautolaunchauthorizationstatus))
+- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](wkextendedruntimesession/requestautolaunchauthorizationstatus(completion:).md)
+- [enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus](wkextendedruntimesessionautolaunchauthorizationstatus.md)
 ### Alerting the User
-- [func notifyUser(hapticType: WKHapticType, repeatHandler: ((UnsafeMutablePointer<WKHapticType>) -> TimeInterval)?)](notifyuser(haptictype:repeathandler:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/notifyuser(haptictype:repeathandler:)))
+- [func notifyUser(hapticType: WKHapticType, repeatHandler: ((UnsafeMutablePointer<WKHapticType>) -> TimeInterval)?)](wkextendedruntimesession/notifyuser(haptictype:repeathandler:).md)
   Play a repeating haptic alert.
 ### Handling Errors
-- [enum WKExtendedRuntimeSessionErrorCode](wkextendedruntimesessionerrorcode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionerrorcode))
+- [enum WKExtendedRuntimeSessionErrorCode](wkextendedruntimesessionerrorcode.md)
   The error codes reported by extended runtime sessions.
-- [let WKExtendedRuntimeSessionErrorDomain: String](wkextendedruntimesessionerrordomain.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionerrordomain))
+- [let WKExtendedRuntimeSessionErrorDomain: String](wkextendedruntimesessionerrordomain.md)
   The domain for errors reported by extended runtime sessions.
 
 ## Relationships
 
 ### Inherits From
-- NSObject ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class))
+- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [Background execution](background-execution.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/background-execution))
+- [Background execution](background-execution.md)
   Manage background sessions and tasks.
-- [Life cycles](life-cycles.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/life-cycles))
+- [Life cycles](life-cycles.md)
   Receive and respond to life-cycle notifications.
-- [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
+- [Using extended runtime sessions](using-extended-runtime-sessions.md)
   Create an extended runtime session that continues running your app after the user stops interacting with it.
-- [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh))
+- [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md)
   Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 
 

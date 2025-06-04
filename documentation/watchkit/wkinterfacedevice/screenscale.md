@@ -20,7 +20,7 @@ The screen scale value applies to both the vertical and horizontal dimensions. F
 
 ## See Also
 
-- [var screenBounds: CGRect](screenbounds.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/screenbounds))
+- [var screenBounds: CGRect](wkinterfacedevice/screenbounds.md)
   The bounding rectangle of the screen.
 
 

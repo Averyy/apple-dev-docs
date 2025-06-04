@@ -24,7 +24,7 @@ The `enabled` value determines whether the text field responds to user interacti
 
 ## See Also
 
-- [func setSecureTextEntry(Bool)](setsecuretextentry(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/setsecuretextentry(_:)))
+- [func setSecureTextEntry(Bool)](wkinterfacetextfield/setsecuretextentry(_:).md)
   Determines whether the text field hides the text entered by the user.
 
 

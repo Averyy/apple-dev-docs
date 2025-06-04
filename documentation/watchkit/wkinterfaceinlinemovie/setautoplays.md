@@ -20,13 +20,13 @@ func setAutoplays(_ autoplays: Bool)
 
 ## See Also
 
-- [func setLoops(Bool)](setloops(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setloops(_:)))
+- [func setLoops(Bool)](wkinterfaceinlinemovie/setloops(_:).md)
   Sets a Boolean value indicating whether the movie plays in a continuous loop.
-- [func setMovieURL(URL)](setmovieurl(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setmovieurl(_:)))
+- [func setMovieURL(URL)](wkinterfaceinlinemovie/setmovieurl(_:).md)
   Sets the URL of the movie to play.
-- [func setPosterImage(WKImage?)](setposterimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setposterimage(_:)))
+- [func setPosterImage(WKImage?)](wkinterfaceinlinemovie/setposterimage(_:).md)
   Sets the poster image to display for the movie.
-- [func setVideoGravity(WKVideoGravity)](setvideogravity(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setvideogravity(_:)))
+- [func setVideoGravity(WKVideoGravity)](wkinterfaceinlinemovie/setvideogravity(_:).md)
   Sets the resizing behavior for the movie content.
 
 

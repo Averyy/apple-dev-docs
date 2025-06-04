@@ -24,7 +24,7 @@ The default implementation of this method does nothing. Subclasses can override 
 
 ## See Also
 
-- [convenience init(playerItem: WKAudioFilePlayerItem)](init(playeritem:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/init(playeritem:)))
+- [convenience init(playerItem: WKAudioFilePlayerItem)](wkaudiofileplayer/init(playeritem:).md)
   Creates and returns a player initialized with the specified player item.
 
 

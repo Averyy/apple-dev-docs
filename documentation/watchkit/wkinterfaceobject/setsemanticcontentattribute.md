@@ -18,7 +18,7 @@ func setSemanticContentAttribute(_ semanticContentAttribute: WKInterfaceSemantic
 
 Some objects should not flip when switching between left-to-right and right-to-left layouts. Typically, this occurs because the object is part of the playback controls or represents physical directions (up, down, left, right) that don’t change. Instead of thinking about whether or not an object should change its orientation, select the semantic content attribute that best describes the object.
 
-For example, set the semantic content attribute on a [`WKInterfaceGroup`](https://developer.apple.com/documentation/watchkit/wkinterfacegroup) object to control whether the group should flip the horizontal ordering of its contents when moving between left-to-right and right-to-left languages.
+For example, set the semantic content attribute on a [`WKInterfaceGroup`](wkinterfacegroup.md) object to control whether the group should flip the horizontal ordering of its contents when moving between left-to-right and right-to-left languages.
 
 ## Parameters
 

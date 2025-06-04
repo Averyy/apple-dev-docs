@@ -17,13 +17,13 @@ class WKUserNotificationInterfaceController
 
 #### Overview
 
-Apps that support notifications can define one or more subclasses of [`WKUserNotificationInterfaceController`](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller) and use them to implement their dynamic notification interfaces. For example, you might use a dynamic interface to display custom data from the notification payload or add related graphics.
+Apps that support notifications can define one or more subclasses of [`WKUserNotificationInterfaceController`](wkusernotificationinterfacecontroller.md) and use them to implement their dynamic notification interfaces. For example, you might use a dynamic interface to display custom data from the notification payload or add related graphics.
 
-To create the custom notification interface, add a notification interface controller to your storyboard. Interface Builder provides a static interface and you can add a dynamic interface as needed. Set the class of the dynamic interface controller to the name of your [`WKUserNotificationInterfaceController`](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller) subclass.
+To create the custom notification interface, add a notification interface controller to your storyboard. Interface Builder provides a static interface and you can add a dynamic interface as needed. Set the class of the dynamic interface controller to the name of your [`WKUserNotificationInterfaceController`](wkusernotificationinterfacecontroller.md) subclass.
 
 Apps can include multiple notification interfaces in their storyboard file, and associate each interface with a different category. Categories define the purpose of an incoming notification and are custom to your app. In Interface Builder, specify the category information for each of your notification interfaces using the notification category object attached to the static notification interface controller. When sending notifications to a user, add the appropriate category string to the remote notification payload or set the string in the [`categoryIdentifier`](https://developer.apple.com/documentation/UserNotifications/UNNotificationContent/categoryIdentifier) property of a local notification.
 
-After initializing your interface controller, WatchKit calls the [`didReceive(_:)`](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/didreceive(_:)) method to provide you with the payload data from the notification. Your implementations of those methods should update any interface objects and call the provided completion handler as quickly as possible. If you don’t call the completion handler in a timely manner, WatchKit displays your static notification interface instead.
+After initializing your interface controller, WatchKit calls the [`didReceive(_:)`](wkusernotificationinterfacecontroller/didreceive(_:).md) method to provide you with the payload data from the notification. Your implementations of those methods should update any interface objects and call the provided completion handler as quickly as possible. If you don’t call the completion handler in a timely manner, WatchKit displays your static notification interface instead.
 
 ##### Actionable Notifications
 
@@ -58,41 +58,41 @@ The notification category object associated with your notification interface con
 ## Topics
 
 ### Initializing the Interface Controller
-- [init()](init().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/init()))
+- [init()](wkusernotificationinterfacecontroller/init.md)
   Initializes and returns the interface controller using the specified remote notification data.
 ### Processing the Notification
-- [func didReceive(UNNotification)](didreceive(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/didreceive(_:)))
+- [func didReceive(UNNotification)](wkusernotificationinterfacecontroller/didreceive(_:).md)
   Delivers a notification object to your interface controller for processing.
-- [func didReceive(UNNotification, withCompletion: (WKUserNotificationInterfaceType) -> Void)](didreceive(_:withcompletion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/didreceive(_:withcompletion:)))
+- [func didReceive(UNNotification, withCompletion: (WKUserNotificationInterfaceType) -> Void)](wkusernotificationinterfacecontroller/didreceive(_:withcompletion:).md)
   Delivers a notification object to your interface controller for processing.
 ### Working with Actions
-- [var notificationActions: [UNNotificationAction]](notificationactions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/notificationactions))
+- [var notificationActions: [UNNotificationAction]](wkusernotificationinterfacecontroller/notificationactions.md)
   The actions associated with the current notification.
-- [func performNotificationDefaultAction()](performnotificationdefaultaction().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/performnotificationdefaultaction()))
+- [func performNotificationDefaultAction()](wkusernotificationinterfacecontroller/performnotificationdefaultaction.md)
   Launches the watchOS app and performs the current notification’s default action.
-- [func performDismissAction()](performdismissaction().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/performdismissaction()))
+- [func performDismissAction()](wkusernotificationinterfacecontroller/performdismissaction.md)
   Dismisses the notification interface controller.
-- [func dismiss()](dismiss().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/dismiss()))
+- [func dismiss()](wkusernotificationinterfacecontroller/dismiss.md)
   Dismisses the notification interface controller.
 ### Offering Suggestions for Text Input
-- [func suggestionsForResponseToAction(withIdentifier: String, for: UNNotification, inputLanguage: String) -> [String]](suggestionsforresponsetoaction(withidentifier:for:inputlanguage:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/suggestionsforresponsetoaction(withidentifier:for:inputlanguage:)))
+- [func suggestionsForResponseToAction(withIdentifier: String, for: UNNotification, inputLanguage: String) -> [String]](wkusernotificationinterfacecontroller/suggestionsforresponsetoaction(withidentifier:for:inputlanguage:).md)
   Returns an array of attributed strings representing the text suggestions to display during text input.
 ### Constants
-- [enum WKUserNotificationInterfaceType](wkusernotificationinterfacetype.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacetype))
+- [enum WKUserNotificationInterfaceType](wkusernotificationinterfacetype.md)
   The type of notification interface to display.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceController](wkinterfacecontroller.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller))
+- [WKInterfaceController](wkinterfacecontroller.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 
 ---

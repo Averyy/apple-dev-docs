@@ -16,7 +16,7 @@ func notifyUser(hapticType type: WKHapticType, repeatHandler: ((UnsafeMutablePoi
 
 ## Mentions
 
-- [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
+- [Using extended runtime sessions](using-extended-runtime-sessions.md)
 
 #### Discussion
 
@@ -25,9 +25,9 @@ For schedulable sessions such as smart alarms, call this method during the sessi
 The haptic feedback repeats at the interval specified by the `repeatHandler`, and continues to repeat until the application or system alert invalidates the session.
 
 - If the app isn’t active, the user can tap the Stop button to invalidate the session or tap the Open button to activate the app.
-- If the app is active, the app must invalidate the session by calling its [`invalidate()`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/invalidate()) method.
+- If the app is active, the app must invalidate the session by calling its [`invalidate()`](wkextendedruntimesession/invalidate().md) method.
 
-Only call this method on a schedulable session that’s running: you must schedule the session using the [`start(at:)`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start(at:)) method, and the session’s state must equal [`WKExtendedRuntimeSessionState.running`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionstate/running). During a smart alarm session, your app must call this method before the session expires.
+Only call this method on a schedulable session that’s running: you must schedule the session using the [`start(at:)`](wkextendedruntimesession/start(at:).md) method, and the session’s state must equal [`WKExtendedRuntimeSessionState.running`](wkextendedruntimesessionstate/running.md). During a smart alarm session, your app must call this method before the session expires.
 
 ## Parameters
 

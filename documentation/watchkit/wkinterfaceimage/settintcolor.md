@@ -26,11 +26,11 @@ An image object applies the tint color only when it contains a single template i
 
 ## See Also
 
-- [func setImage(UIImage?)](setimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimage(_:)))
+- [func setImage(UIImage?)](wkinterfaceimage/setimage(_:).md)
   Sets the displayed image using the specified image object.
-- [func setImageData(Data?)](setimagedata(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimagedata(_:)))
+- [func setImageData(Data?)](wkinterfaceimage/setimagedata(_:).md)
   Sets the displayed image using a formatted data object.
-- [func setImageNamed(String?)](setimagenamed(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimagenamed(_:)))
+- [func setImageNamed(String?)](wkinterfaceimage/setimagenamed(_:).md)
   Sets the displayed image using a named image resource file.
 
 

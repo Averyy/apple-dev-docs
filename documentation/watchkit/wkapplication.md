@@ -23,92 +23,92 @@ In Xcode 14 and later, you can produce watchOS apps with a single watchOS app ta
 
 Single-target watchOS apps have a single app object. While the system creates and manages this object, you can access it to perform app-level tasks such as opening URLs and getting the root interface controller of your app.
 
-As relevant events occur within your WatchKit app, the app object notifies its delegate of those events. Your delegate object can implement the methods it needs to provide an appropriate response to life-cycle events, handle notifications, or handle Handoff–related behaviors. For more information about the methods of the delegate, see [`WKApplicationDelegate`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate).
+As relevant events occur within your WatchKit app, the app object notifies its delegate of those events. Your delegate object can implement the methods it needs to provide an appropriate response to life-cycle events, handle notifications, or handle Handoff–related behaviors. For more information about the methods of the delegate, see [`WKApplicationDelegate`](wkapplicationdelegate.md).
 
 ## Topics
 
 ### Getting the app object
-- [class func shared() -> WKApplication](shared().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/shared()))
+- [class func shared() -> WKApplication](wkapplication/shared.md)
   Returns the shared WatchKit app object.
 ### Accessing the app delegate
-- [var delegate: (any WKApplicationDelegate)?](delegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/delegate))
+- [var delegate: (any WKApplicationDelegate)?](wkapplication/delegate.md)
   The delegate of the WatchKit app object.
-- [protocol WKApplicationDelegate](wkapplicationdelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate))
+- [protocol WKApplicationDelegate](wkapplicationdelegate.md)
   A collection of methods that manages the app-level behavior for a single-target watchOS app.
 ### Opening a URL resource
-- [func openSystemURL(URL)](opensystemurl(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/opensystemurl(_:)))
+- [func openSystemURL(URL)](wkapplication/opensystemurl(_:).md)
   Opens the specified system URL.
 ### Getting the interface controller
-- [var rootInterfaceController: WKInterfaceController?](rootinterfacecontroller.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/rootinterfacecontroller))
+- [var rootInterfaceController: WKInterfaceController?](wkapplication/rootinterfacecontroller.md)
   The app’s root interface controller.
-- [var visibleInterfaceController: WKInterfaceController?](visibleinterfacecontroller.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/visibleinterfacecontroller))
+- [var visibleInterfaceController: WKInterfaceController?](wkapplication/visibleinterfacecontroller.md)
   Returns the last visible interface controller.
 ### Managing the app state
-- [var applicationState: WKApplicationState](applicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/applicationstate))
+- [var applicationState: WKApplicationState](wkapplication/applicationstate.md)
   The runtime state of the watchOS app.
-- [enum WKApplicationState](wkapplicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate))
+- [enum WKApplicationState](wkapplicationstate.md)
   The running states of the Watch app.
-- [var isApplicationRunningInDock: Bool](isapplicationrunningindock.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isapplicationrunningindock))
+- [var isApplicationRunningInDock: Bool](wkapplication/isapplicationrunningindock.md)
   A Boolean value that indicates whether the app is running in the dock.
-- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:)))
+- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](wkapplication/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md)
   Schedules a background task to refresh the app’s data.
 ### Managing the user interface
-- [var isAutorotating: Bool](isautorotating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isautorotating))
+- [var isAutorotating: Bool](wkapplication/isautorotating.md)
   A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.
-- [var isAutorotated: Bool](isautorotated.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isautorotated))
+- [var isAutorotated: Bool](wkapplication/isautorotated.md)
   A Boolean value that indicates whether the system has automatically rotated the user interface, orienting it properly for another viewer.
-- [var globalTintColor: UIColor](globaltintcolor.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/globaltintcolor))
+- [var globalTintColor: UIColor](wkapplication/globaltintcolor.md)
   The watchOS app’s global tint color.
 ### Managing the snapshot
-- [func scheduleSnapshotRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:)))
+- [func scheduleSnapshotRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](wkapplication/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:).md)
   Schedules a background task to refresh your app’s snapshot.
 ### Observing messages from the notification center
-- [static let didFinishLaunchingNotification: NSNotification.Name](didfinishlaunchingnotification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/didfinishlaunchingnotification))
+- [static let didFinishLaunchingNotification: NSNotification.Name](wkapplication/didfinishlaunchingnotification.md)
   A message indicating that the launch process finished and the extension is ready to run.
-- [static let didBecomeActiveNotification: NSNotification.Name](didbecomeactivenotification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/didbecomeactivenotification))
+- [static let didBecomeActiveNotification: NSNotification.Name](wkapplication/didbecomeactivenotification.md)
   A message indicating that the watchOS app is visible and processing events.
-- [static let willResignActiveNotification: NSNotification.Name](willresignactivenotification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/willresignactivenotification))
+- [static let willResignActiveNotification: NSNotification.Name](wkapplication/willresignactivenotification.md)
   A message indicating that the system is about to deactivate the watchOS app.
-- [static let willEnterForegroundNotification: NSNotification.Name](willenterforegroundnotification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/willenterforegroundnotification))
+- [static let willEnterForegroundNotification: NSNotification.Name](wkapplication/willenterforegroundnotification.md)
   A message indicating that the watchOS app is about to transition from the background to the foreground.
-- [static let didEnterBackgroundNotification: NSNotification.Name](didenterbackgroundnotification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/didenterbackgroundnotification))
+- [static let didEnterBackgroundNotification: NSNotification.Name](wkapplication/didenterbackgroundnotification.md)
   A message indicating that the watchOS app transitioned from the foreground to the background.
 ### Registering for remote notifications
-- [func registerForRemoteNotifications()](registerforremotenotifications().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/registerforremotenotifications()))
+- [func registerForRemoteNotifications()](wkapplication/registerforremotenotifications.md)
   Register to receive remote notifications from the Apple Push Notification service (APNs).
-- [func unregisterForRemoteNotifications()](unregisterforremotenotifications().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/unregisterforremotenotifications()))
+- [func unregisterForRemoteNotifications()](wkapplication/unregisterforremotenotifications.md)
   Unregister for all remote notifications received from Apple Push Notification service (APNs).
-- [var isRegisteredForRemoteNotifications: Bool](isregisteredforremotenotifications.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isregisteredforremotenotifications))
+- [var isRegisteredForRemoteNotifications: Bool](wkapplication/isregisteredforremotenotifications.md)
   A Boolean value that indicates if the app has successfully registered for remote notifications.
 
 ## Relationships
 
 ### Inherits From
-- NSObject ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class))
+- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [Setting up a watchOS project](setting-up-a-watchos-project.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/setting-up-a-watchos-project))
+- [Setting up a watchOS project](setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
-- [protocol WKApplicationDelegate](wkapplicationdelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate))
+- [protocol WKApplicationDelegate](wkapplicationdelegate.md)
   A collection of methods that manages the app-level behavior for a single-target watchOS app.
-- [class WKExtension](wkextension.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension))
+- [class WKExtension](wkextension.md)
   The centralized point of control and coordination for extension-based apps running in watchOS.
-- [protocol WKExtensionDelegate](wkextensiondelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate))
+- [protocol WKExtensionDelegate](wkextensiondelegate.md)
   A collection of methods that manages the app-level behavior of a WatchKit extension.
-- [func WKApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?) -> Int32](wkapplicationmain(_:_:_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationmain(_:_:_:)))
+- [func WKApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?) -> Int32](wkapplicationmain(_:_:_:).md)
   Creates the application object and the application delegate, and sets up the app’s event cycle.
-- [class WKInterfaceDevice](wkinterfacedevice.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice))
+- [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- WKPrefersNetworkUponForeground ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground))
+- [WKPrefersNetworkUponForeground](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

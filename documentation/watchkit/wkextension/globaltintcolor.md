@@ -23,11 +23,11 @@ For more information, see [`Setting the app’s accent color`](https://developer
 
 ## See Also
 
-- [var isAutorotating: Bool](isautorotating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isautorotating))
+- [var isAutorotating: Bool](wkextension/isautorotating.md)
   A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.
-- [var isAutorotated: Bool](isautorotated.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isautorotated))
+- [var isAutorotated: Bool](wkextension/isautorotated.md)
   A Boolean value that indicates whether the system has automatically rotated the user interface so that it is properly oriented for another viewer.
-- [func enableWaterLock()](enablewaterlock().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/enablewaterlock()))
+- [func enableWaterLock()](wkextension/enablewaterlock.md)
   Disables the Apple Watch touch screen to prevent accidental taps while the watch is underwater.
 
 

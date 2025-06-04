@@ -16,35 +16,35 @@ case shuffle
 
 ## See Also
 
-- [WKMenuItemIcon.accept](accept.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/accept))
+- [WKMenuItemIcon.accept](wkmenuitemicon/accept.md)
   The icon indicating an action to accept an event or item.
-- [WKMenuItemIcon.add](add.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/add))
+- [WKMenuItemIcon.add](wkmenuitemicon/add.md)
   The icon indicating an action for adding an item.
-- [WKMenuItemIcon.block](block.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/block))
+- [WKMenuItemIcon.block](wkmenuitemicon/block.md)
   The icon indicating an action to block or prevent something from happening.
-- [WKMenuItemIcon.decline](decline.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/decline))
+- [WKMenuItemIcon.decline](wkmenuitemicon/decline.md)
   The icon indicating an action to decline or cancel an event.
-- [WKMenuItemIcon.info](info.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/info))
+- [WKMenuItemIcon.info](wkmenuitemicon/info.md)
   The icon indicating an action to retrieve more information.
-- [WKMenuItemIcon.maybe](maybe.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/maybe))
+- [WKMenuItemIcon.maybe](wkmenuitemicon/maybe.md)
   The icon indicating an answer of maybe for an action.
-- [WKMenuItemIcon.more](more.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/more))
+- [WKMenuItemIcon.more](wkmenuitemicon/more.md)
   The icon indicating that more actions or options are available.
-- [WKMenuItemIcon.mute](mute.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/mute))
+- [WKMenuItemIcon.mute](wkmenuitemicon/mute.md)
   The icon indicating an action to mute the sound.
-- [WKMenuItemIcon.pause](pause.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/pause))
+- [WKMenuItemIcon.pause](wkmenuitemicon/pause.md)
   The icon indicating an action to pause playback.
-- [WKMenuItemIcon.play](play.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/play))
+- [WKMenuItemIcon.play](wkmenuitemicon/play.md)
   The icon indicating an action to play some content.
-- [WKMenuItemIcon.repeat](repeat.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/repeat))
+- [WKMenuItemIcon.repeat](wkmenuitemicon/repeat.md)
   The icon indicating that played content should repeat in a loop.
-- [WKMenuItemIcon.resume](resume.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/resume))
+- [WKMenuItemIcon.resume](wkmenuitemicon/resume.md)
   The icon indicating an action to resume playing some content.
-- [WKMenuItemIcon.share](share.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/share))
+- [WKMenuItemIcon.share](wkmenuitemicon/share.md)
   The icon indicating an action to share content.
-- [WKMenuItemIcon.speaker](speaker.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/speaker))
+- [WKMenuItemIcon.speaker](wkmenuitemicon/speaker.md)
   The icon indicating audio output.
-- [WKMenuItemIcon.trash](trash.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmenuitemicon/trash))
+- [WKMenuItemIcon.trash](wkmenuitemicon/trash.md)
   The icon indicating an action to delete some content.
 
 

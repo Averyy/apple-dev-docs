@@ -6,7 +6,7 @@ Detect and respond to user activity information from Handoff or a complication.
 
 #### Overview
 
-SwiftUI provides the [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) modifier to handle incoming [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects. This replaces the WatchKit extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-5pyj1) method.
+SwiftUI provides the [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) modifier to handle incoming [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects. This replaces the WatchKit extension delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-5pyj1.md) method.
 
 For example, if you create a complication descriptor using the [`init(identifier:displayName:supportedFamilies:userActivity:)`](https://developer.apple.com/documentation/ClockKit/CLKComplicationDescriptor/init(identifier:displayName:supportedFamilies:userActivity:)) initializer to pass in an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object, when the user taps the corresponding complication, the system activates your app and passes the activity object to your [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) modifiers. You can use the activity object to navigate to the corresponding content in your app.
 
@@ -67,11 +67,11 @@ func checkActive(city: City) -> Binding<Bool> {
 
 ## See Also
 
-- [Handling Common State Transitions](handling-common-state-transitions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/handling-common-state-transitions))
+- [Handling Common State Transitions](handling-common-state-transitions.md)
   Detect and respond to common state transitions.
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
   Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
-- [Taking Advantage of Frontmost App State](taking-advantage-of-frontmost-app-state.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/taking-advantage-of-frontmost-app-state))
+- [Taking Advantage of Frontmost App State](taking-advantage-of-frontmost-app-state.md)
   Understand the frontmost app state, and the features it provides to your app.
 
 

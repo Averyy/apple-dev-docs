@@ -16,9 +16,9 @@ case purple
 
 ## See Also
 
-- [WKInterfaceMapPinColor.red](red.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemappincolor/red))
+- [WKInterfaceMapPinColor.red](wkinterfacemappincolor/red.md)
   A red pin.
-- [WKInterfaceMapPinColor.green](green.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemappincolor/green))
+- [WKInterfaceMapPinColor.green](wkinterfacemappincolor/green.md)
   A green pin.
 
 

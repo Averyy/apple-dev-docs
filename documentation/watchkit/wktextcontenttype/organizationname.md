@@ -16,7 +16,7 @@ static let organizationName: WKTextContentType
 
 ## See Also
 
-- [static let jobTitle: WKTextContentType](jobtitle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/jobtitle))
+- [static let jobTitle: WKTextContentType](wktextcontenttype/jobtitle.md)
   A job title.
 
 

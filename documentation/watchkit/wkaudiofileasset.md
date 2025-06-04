@@ -22,54 +22,54 @@ Audio assets must refer to files on the local file system. If you have audio fil
 
 It is recommended that you encode audio files using 32 kbps stereo AAC. You may use other bit rates, or the LPCM encoding, as preferred for your content.
 
-To play an audio file asset, wrap it in a [`WKAudioFilePlayerItem`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem) object. The player item object stores information about the playback status of the asset and works with a [`WKAudioFilePlayer`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer) object to coordinate playback. If you want to queue several audio files for playback, you manage those items using a [`WKAudioFileQueuePlayer`](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer) object.
+To play an audio file asset, wrap it in a [`WKAudioFilePlayerItem`](wkaudiofileplayeritem.md) object. The player item object stores information about the playback status of the asset and works with a [`WKAudioFilePlayer`](wkaudiofileplayer.md) object to coordinate playback. If you want to queue several audio files for playback, you manage those items using a [`WKAudioFileQueuePlayer`](wkaudiofilequeueplayer.md) object.
 
 ## Topics
 
 ### Creating an Asset
-- [convenience init(url: URL)](init(url:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/init(url:)))
+- [convenience init(url: URL)](wkaudiofileasset/init(url:).md)
   Returns an asset for the audio file at the specified URL.
-- [convenience init(url: URL, title: String?, albumTitle: String?, artist: String?)](init(url:title:albumtitle:artist:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/init(url:title:albumtitle:artist:)))
+- [convenience init(url: URL, title: String?, albumTitle: String?, artist: String?)](wkaudiofileasset/init(url:title:albumtitle:artist:).md)
   Returns an audio file asset and sets the metadata for that item.
 ### Getting the Asset’s Properties
-- [var url: URL](url.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/url))
+- [var url: URL](wkaudiofileasset/url.md)
   The URL of the audio file.
-- [var duration: TimeInterval](duration.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/duration))
+- [var duration: TimeInterval](wkaudiofileasset/duration.md)
   The duration (in seconds) of the audio file.
-- [var title: String?](title.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/title))
+- [var title: String?](wkaudiofileasset/title.md)
   The title information for the audio file.
-- [var albumTitle: String?](albumtitle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/albumtitle))
+- [var albumTitle: String?](wkaudiofileasset/albumtitle.md)
   The album title information for the audio file.
-- [var artist: String?](artist.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/artist))
+- [var artist: String?](wkaudiofileasset/artist.md)
   The artist information for the audio file.
 
 ## Relationships
 
 ### Inherits From
-- NSObject ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class))
+- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [Playing Background Audio](playing-background-audio.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/playing-background-audio))
+- [Playing Background Audio](playing-background-audio.md)
   Enable background audio in your app to provide a seamless playback experience.
-- [Adding a Now Playing View](adding-a-now-playing-view.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/adding-a-now-playing-view))
+- [Adding a Now Playing View](adding-a-now-playing-view.md)
   Provide a view that controls the currently playing audio from your app.
-- [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol))
+- [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md)
   An interface element that provides control of the audio volume from the watch or a paired iPhone.
-- PUICAutoLaunchAudioOptOut ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut))
+- [PUICAutoLaunchAudioOptOut](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut)
   A Boolean value that indicates whether a watchOS app should opt out of automatically launching when its companion iOS app starts playing audio content.
-- [class WKAudioFilePlayer](wkaudiofileplayer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer))
+- [class WKAudioFilePlayer](wkaudiofileplayer.md)
   An object that controls playback of a single audio item.
-- [class WKAudioFileQueuePlayer](wkaudiofilequeueplayer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer))
+- [class WKAudioFileQueuePlayer](wkaudiofilequeueplayer.md)
   An object that controls playback of one or more audio items.
-- [class WKAudioFilePlayerItem](wkaudiofileplayeritem.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem))
+- [class WKAudioFilePlayerItem](wkaudiofileplayeritem.md)
   An object that manages the presentation state of an audio file while it is playing.
 
 

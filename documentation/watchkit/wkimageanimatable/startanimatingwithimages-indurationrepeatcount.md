@@ -27,9 +27,9 @@ This method animates a subset of the images associated with the current image in
 
 ## See Also
 
-- [func startAnimating()](startanimating().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/startanimating()))
+- [func startAnimating()](wkimageanimatable/startanimating.md)
   Begins animating the current sequence of images.
-- [func stopAnimating()](stopanimating().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/stopanimating()))
+- [func stopAnimating()](wkimageanimatable/stopanimating.md)
   Stops any in-progress animations.
 
 

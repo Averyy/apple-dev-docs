@@ -21,9 +21,9 @@ func setValue(_ value: Float)
 ## See Also
 
 - [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
-- [func setColor(UIColor?)](setcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider/setcolor(_:)))
+- [func setColor(UIColor?)](wkinterfaceslider/setcolor(_:).md)
   Sets the color of the slider bar.
-- [func setNumberOfSteps(Int)](setnumberofsteps(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider/setnumberofsteps(_:)))
+- [func setNumberOfSteps(Int)](wkinterfaceslider/setnumberofsteps(_:).md)
   Sets the number of steps for the slider.
 
 

@@ -20,7 +20,7 @@ Pass [`true`](https://developer.apple.com/documentation/swift/true) to help keep
 
 ## See Also
 
-- [func setEnabled(Bool)](setenabled(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/setenabled(_:)))
+- [func setEnabled(Bool)](wkinterfacetextfield/setenabled(_:).md)
   Enables or disables the text field.
 
 

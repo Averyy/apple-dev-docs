@@ -21,34 +21,34 @@ Existing classes adopt this protocol and you use the methods to control the anim
 ## Topics
 
 ### Animating an Image Sequence
-- [func startAnimating()](startanimating().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/startanimating()))
+- [func startAnimating()](wkimageanimatable/startanimating.md)
   Begins animating the current sequence of images.
-- [func startAnimatingWithImages(in: NSRange, duration: TimeInterval, repeatCount: Int)](startanimatingwithimages(in:duration:repeatcount:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/startanimatingwithimages(in:duration:repeatcount:)))
+- [func startAnimatingWithImages(in: NSRange, duration: TimeInterval, repeatCount: Int)](wkimageanimatable/startanimatingwithimages(in:duration:repeatcount:).md)
   Animates the specified images with the given duration and repeat information.
-- [func stopAnimating()](stopanimating().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/stopanimating()))
+- [func stopAnimating()](wkimageanimatable/stopanimating.md)
   Stops any in-progress animations.
 
 ## Relationships
 
 ### Inherits From
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 ### Conforming Types
-- [WKInterfaceGroup](wkinterfacegroup.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup))
-- [WKInterfaceImage](wkinterfaceimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage))
+- [WKInterfaceGroup](wkinterfacegroup.md)
+- [WKInterfaceImage](wkinterfaceimage.md)
 
 ## See Also
 
-- [class WKInterfaceImage](wkinterfaceimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage))
+- [class WKInterfaceImage](wkinterfaceimage.md)
   An image that can be displayed in the interface of your watchOS app.
-- [class WKImage](wkimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage))
+- [class WKImage](wkimage.md)
   A wrapper for images you use with a picker interface.
-- [class WKInterfaceMovie](wkinterfacemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie))
+- [class WKInterfaceMovie](wkinterfacemovie.md)
   An interface element that lets you play video and audio content in your watchOS app.
-- [class WKInterfaceInlineMovie](wkinterfaceinlinemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie))
+- [class WKInterfaceInlineMovie](wkinterfaceinlinemovie.md)
   An interface element that displays a video’s poster image and supports inline playing of the video.
-- [class WKInterfaceHMCamera](wkinterfacehmcamera.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacehmcamera))
+- [class WKInterfaceHMCamera](wkinterfacehmcamera.md)
   An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.
-- [enum WKVideoGravity](wkvideogravity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity))
+- [enum WKVideoGravity](wkvideogravity.md)
   Constants indicating the appearance of video content.
 
 

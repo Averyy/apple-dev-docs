@@ -16,7 +16,7 @@ func setHidden(_ hidden: Bool)
 
 ## Mentions
 
-- [Connecting Your User Interface to Your Code](connecting-your-user-interface-to-your-code.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/connecting-your-user-interface-to-your-code))
+- [Connecting Your User Interface to Your Code](connecting-your-user-interface-to-your-code.md)
 
 #### Discussion
 
@@ -29,7 +29,7 @@ When you hide or show an object in your interface, WatchKit makes a note to upda
 ## See Also
 
 - [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
-- [func setAlpha(CGFloat)](setalpha(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setalpha(_:)))
+- [func setAlpha(CGFloat)](wkinterfaceobject/setalpha(_:).md)
   Sets the opacity of the interface object.
 
 

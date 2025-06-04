@@ -21,9 +21,9 @@ The rectangle in this property is specified in points. This rectangle may be dif
 
 ## See Also
 
-- [var contentSafeAreaInsets: UIEdgeInsets](contentsafeareainsets.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/contentsafeareainsets))
+- [var contentSafeAreaInsets: UIEdgeInsets](wkinterfacecontroller/contentsafeareainsets.md)
   Insets that define the area where it’s safe to display content on the screen.
-- [var systemMinimumLayoutMargins: NSDirectionalEdgeInsets](systemminimumlayoutmargins.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/systemminimumlayoutmargins))
+- [var systemMinimumLayoutMargins: NSDirectionalEdgeInsets](wkinterfacecontroller/systemminimumlayoutmargins.md)
   Leading and trailing insets that represent the minimum layout margins for text elements.
 
 

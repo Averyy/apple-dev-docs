@@ -16,9 +16,9 @@ case actionSheet
 
 ## See Also
 
-- [WKAlertControllerStyle.alert](alert.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertcontrollerstyle/alert))
+- [WKAlertControllerStyle.alert](wkalertcontrollerstyle/alert.md)
   An alert sheet with stacked buttons. The alert sheet includes a default Cancel button at the bottom of the sheet. You can add other buttons, which are placed above the Cancel button.
-- [WKAlertControllerStyle.sideBySideButtonsAlert](sidebysidebuttonsalert.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertcontrollerstyle/sidebysidebuttonsalert))
+- [WKAlertControllerStyle.sideBySideButtonsAlert](wkalertcontrollerstyle/sidebysidebuttonsalert.md)
   An alert sheet with side-by-side buttons.
 
 

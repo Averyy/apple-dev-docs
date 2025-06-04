@@ -17,80 +17,80 @@ struct WKTextContentType
 ## Topics
 
 ### Name
-- [static let name: WKTextContentType](name.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/name))
+- [static let name: WKTextContentType](wktextcontenttype/name.md)
   A full name.
-- [static let namePrefix: WKTextContentType](nameprefix.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/nameprefix))
+- [static let namePrefix: WKTextContentType](wktextcontenttype/nameprefix.md)
   A title or prefix for a name.
-- [static let givenName: WKTextContentType](givenname.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/givenname))
+- [static let givenName: WKTextContentType](wktextcontenttype/givenname.md)
   A given name.
-- [static let middleName: WKTextContentType](middlename.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/middlename))
+- [static let middleName: WKTextContentType](wktextcontenttype/middlename.md)
   A middle name.
-- [static let familyName: WKTextContentType](familyname.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/familyname))
+- [static let familyName: WKTextContentType](wktextcontenttype/familyname.md)
   A last name.
-- [static let nameSuffix: WKTextContentType](namesuffix.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/namesuffix))
+- [static let nameSuffix: WKTextContentType](wktextcontenttype/namesuffix.md)
   A suffix for a name.
-- [static let nickname: WKTextContentType](nickname.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/nickname))
+- [static let nickname: WKTextContentType](wktextcontenttype/nickname.md)
   A nickname.
 ### Employment
-- [static let jobTitle: WKTextContentType](jobtitle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/jobtitle))
+- [static let jobTitle: WKTextContentType](wktextcontenttype/jobtitle.md)
   A job title.
-- [static let organizationName: WKTextContentType](organizationname.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/organizationname))
+- [static let organizationName: WKTextContentType](wktextcontenttype/organizationname.md)
   An organization’s name.
 ### Address
-- [static let location: WKTextContentType](location.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/location))
+- [static let location: WKTextContentType](wktextcontenttype/location.md)
   A point of interest, address, or other identifiable location.
-- [static let fullStreetAddress: WKTextContentType](fullstreetaddress.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/fullstreetaddress))
+- [static let fullStreetAddress: WKTextContentType](wktextcontenttype/fullstreetaddress.md)
   The full street address for a location, including the unit or suite number.
-- [static let streetAddressLine1: WKTextContentType](streetaddressline1.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/streetaddressline1))
+- [static let streetAddressLine1: WKTextContentType](wktextcontenttype/streetaddressline1.md)
   The first line of a street address.
-- [static let streetAddressLine2: WKTextContentType](streetaddressline2.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/streetaddressline2))
+- [static let streetAddressLine2: WKTextContentType](wktextcontenttype/streetaddressline2.md)
   The second line of a street address.
-- [static let addressCity: WKTextContentType](addresscity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/addresscity))
+- [static let addressCity: WKTextContentType](wktextcontenttype/addresscity.md)
   The name of a city.
-- [static let addressState: WKTextContentType](addressstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/addressstate))
+- [static let addressState: WKTextContentType](wktextcontenttype/addressstate.md)
   The name of a state.
-- [static let addressCityAndState: WKTextContentType](addresscityandstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/addresscityandstate))
+- [static let addressCityAndState: WKTextContentType](wktextcontenttype/addresscityandstate.md)
   The name of a city and state.
-- [static let sublocality: WKTextContentType](sublocality.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/sublocality))
+- [static let sublocality: WKTextContentType](wktextcontenttype/sublocality.md)
   The sublocality.
-- [static let countryName: WKTextContentType](countryname.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/countryname))
+- [static let countryName: WKTextContentType](wktextcontenttype/countryname.md)
   The name of a country or region.
-- [static let postalCode: WKTextContentType](postalcode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/postalcode))
+- [static let postalCode: WKTextContentType](wktextcontenttype/postalcode.md)
   A postal code.
 ### Contact Information
-- [static let telephoneNumber: WKTextContentType](telephonenumber.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/telephonenumber))
+- [static let telephoneNumber: WKTextContentType](wktextcontenttype/telephonenumber.md)
   A telephone number.
-- [static let emailAddress: WKTextContentType](emailaddress.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/emailaddress))
+- [static let emailAddress: WKTextContentType](wktextcontenttype/emailaddress.md)
   An email address.
 ### Other
-- [static let URL: WKTextContentType](url.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/url))
+- [static let URL: WKTextContentType](wktextcontenttype/url.md)
   A URL.
-- [static let creditCardNumber: WKTextContentType](creditcardnumber.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/creditcardnumber))
+- [static let creditCardNumber: WKTextContentType](wktextcontenttype/creditcardnumber.md)
   A credit card number.
 ### Login Credentials
-- [static let username: WKTextContentType](username.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/username))
+- [static let username: WKTextContentType](wktextcontenttype/username.md)
   An account or login name.
-- [static let password: WKTextContentType](password.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/password))
+- [static let password: WKTextContentType](wktextcontenttype/password.md)
   An existing password.
-- [static let newPassword: WKTextContentType](newpassword.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/newpassword))
+- [static let newPassword: WKTextContentType](wktextcontenttype/newpassword.md)
   A new password.
-- [static let oneTimeCode: WKTextContentType](onetimecode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/onetimecode))
+- [static let oneTimeCode: WKTextContentType](wktextcontenttype/onetimecode.md)
   A one-time code.
 ### Initializers
-- [init(rawValue: String)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/init(rawvalue:)))
+- [init(rawValue: String)](wktextcontenttype/init(rawvalue:).md)
   Returns a newly instantiated content type.
 
 ## Relationships
 
 ### Conforms To
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [func setTextContentType(WKTextContentType?)](settextcontenttype(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/settextcontenttype(_:)))
+- [func setTextContentType(WKTextContentType?)](wkinterfacetextfield/settextcontenttype(_:).md)
   Sets the text field’s semantic meaning.
 
 

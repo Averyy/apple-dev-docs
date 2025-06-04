@@ -28,9 +28,9 @@ Use this method when you already have raw PNG or JPG data and want to use it for
 
 ## See Also
 
-- [convenience init(image: UIImage)](init(image:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage/init(image:)))
+- [convenience init(image: UIImage)](wkimage/init(image:).md)
   Creates and returns an image object using the specified UIKit image.
-- [convenience init(imageName: String)](init(imagename:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage/init(imagename:)))
+- [convenience init(imageName: String)](wkimage/init(imagename:).md)
   Creates an image by loading an image file from the Watch app bundle.
 
 

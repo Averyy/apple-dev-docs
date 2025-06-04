@@ -16,9 +16,9 @@ case unknown
 
 ## See Also
 
-- [WKAudioFilePlayerItemStatus.readyToPlay](readytoplay.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemstatus/readytoplay))
+- [WKAudioFilePlayerItemStatus.readyToPlay](wkaudiofileplayeritemstatus/readytoplay.md)
   The item is ready to play.
-- [WKAudioFilePlayerItemStatus.failed](failed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritemstatus/failed))
+- [WKAudioFilePlayerItemStatus.failed](wkaudiofileplayeritemstatus/failed.md)
   The item can’t be played.
 
 

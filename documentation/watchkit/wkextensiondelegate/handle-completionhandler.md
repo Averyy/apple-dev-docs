@@ -17,7 +17,7 @@ optional func handle(_ intent: INIntent) async -> INIntentResponse
 
 ## Mentions
 
-- [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
+- [Using background tasks](using-background-tasks.md)
 
 #### Discussion
 
@@ -35,7 +35,7 @@ For information about concurrency and asynchronous code in Swift, see [`Calling 
 
 ## See Also
 
-- [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkintentdidrunrefreshbackgroundtask))
+- [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md)
   A background task used to update your app after a SiriKit intent runs.
 
 

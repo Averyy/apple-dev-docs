@@ -20,27 +20,27 @@ For example, a stopwatch app uses this haptic when the user stops the stopwatch.
 
 ## See Also
 
-- [WKHapticType.notification](notification.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/notification))
+- [WKHapticType.notification](wkhaptictype/notification.md)
   Alerts the user to an arrived notification when the Watch app is not running in the foreground.
-- [WKHapticType.directionUp](directionup.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/directionup))
+- [WKHapticType.directionUp](wkhaptictype/directionup.md)
   Indicates an increase in a specific value or when a value has gone above a certain threshold.
-- [WKHapticType.directionDown](directiondown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/directiondown))
+- [WKHapticType.directionDown](wkhaptictype/directiondown.md)
   Indicates a decrease in a specific value or when a value has gone below a certain threshold.
-- [WKHapticType.success](success.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/success))
+- [WKHapticType.success](wkhaptictype/success.md)
   Indicates the successful completion of a task or the answering of a question.
-- [WKHapticType.failure](failure.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/failure))
+- [WKHapticType.failure](wkhaptictype/failure.md)
   Indicates the failed completion of a task or answering of a question.
-- [WKHapticType.retry](retry.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/retry))
+- [WKHapticType.retry](wkhaptictype/retry.md)
   Indicates that the user should retry a task that temporarily failed.
-- [WKHapticType.start](start.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/start))
+- [WKHapticType.start](wkhaptictype/start.md)
   Indicates the beginning of an action.
-- [WKHapticType.click](click.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/click))
+- [WKHapticType.click](wkhaptictype/click.md)
   Indicates a simple click type of feedback.
-- [WKHapticType.navigationGenericManeuver](navigationgenericmaneuver.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/navigationgenericmaneuver))
+- [WKHapticType.navigationGenericManeuver](wkhaptictype/navigationgenericmaneuver.md)
   Indicates a new navigation step.
-- [WKHapticType.navigationLeftTurn](navigationleftturn.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/navigationleftturn))
+- [WKHapticType.navigationLeftTurn](wkhaptictype/navigationleftturn.md)
   Indicates that the user should turn left.
-- [WKHapticType.navigationRightTurn](navigationrightturn.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype/navigationrightturn))
+- [WKHapticType.navigationRightTurn](wkhaptictype/navigationrightturn.md)
   Indicates that the user should turn right.
 
 

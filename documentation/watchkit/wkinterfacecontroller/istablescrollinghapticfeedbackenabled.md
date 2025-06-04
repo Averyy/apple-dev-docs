@@ -23,17 +23,17 @@ When this property is [`false`](https://developer.apple.com/documentation/swift/
 
 ## See Also
 
-- [var isHapticFeedbackEnabled: Bool](ishapticfeedbackenabled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/ishapticfeedbackenabled))
+- [var isHapticFeedbackEnabled: Bool](wkcrownsequencer/ishapticfeedbackenabled.md)
   A Boolean value that determines whether the crown sequencer’s haptic feedback is enabled.
-- [func scroll(to: WKInterfaceObject, at: WKInterfaceScrollPosition, animated: Bool)](scroll(to:at:animated:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/scroll(to:at:animated:)))
+- [func scroll(to: WKInterfaceObject, at: WKInterfaceScrollPosition, animated: Bool)](wkinterfacecontroller/scroll(to:at:animated:).md)
   Scrolls the specified object to the given position onscreen.
-- [enum WKInterfaceScrollPosition](wkinterfacescrollposition.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescrollposition))
+- [enum WKInterfaceScrollPosition](wkinterfacescrollposition.md)
   Onscreen scroll positions.
-- [func interfaceDidScrollToTop()](interfacedidscrolltotop().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/interfacedidscrolltotop()))
+- [func interfaceDidScrollToTop()](wkinterfacecontroller/interfacedidscrolltotop.md)
   Tells the interface controller that the user has performed a scroll-to-top gesture (for example, tapping the status bar) and that the scrolling animation has finished.
-- [func interfaceOffsetDidScrollToTop()](interfaceoffsetdidscrolltotop().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/interfaceoffsetdidscrolltotop()))
+- [func interfaceOffsetDidScrollToTop()](wkinterfacecontroller/interfaceoffsetdidscrolltotop.md)
   Tells the interface controller that the user has scrolled to the top of the interface and that the scrolling animation has finished.
-- [func interfaceOffsetDidScrollToBottom()](interfaceoffsetdidscrolltobottom().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/interfaceoffsetdidscrolltobottom()))
+- [func interfaceOffsetDidScrollToBottom()](wkinterfacecontroller/interfaceoffsetdidscrolltobottom.md)
   Tells the interface controller that the user has scrolled to the bottom of the interface and that the scrolling animation has finished.
 
 

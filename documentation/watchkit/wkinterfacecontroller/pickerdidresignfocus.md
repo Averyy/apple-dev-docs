@@ -21,9 +21,9 @@ The default implementation of this method does nothing. Subclasses can override 
 
 ## See Also
 
-- [func pickerDidFocus(WKInterfacePicker)](pickerdidfocus(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pickerdidfocus(_:)))
+- [func pickerDidFocus(WKInterfacePicker)](wkinterfacecontroller/pickerdidfocus(_:).md)
   Called to let you know that the specified picker is now receiving input from the Digital Crown.
-- [func pickerDidSettle(WKInterfacePicker)](pickerdidsettle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pickerdidsettle(_:)))
+- [func pickerDidSettle(WKInterfacePicker)](wkinterfacecontroller/pickerdidsettle(_:).md)
   Called to let you know when the user settles on a value in a picker.
 
 

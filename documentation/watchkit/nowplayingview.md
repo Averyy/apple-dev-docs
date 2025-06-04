@@ -17,7 +17,7 @@ A view that displays the system’s Now Playing interface so that the user can c
 
 ## Mentions
 
-- [Adding a Now Playing View](adding-a-now-playing-view.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/adding-a-now-playing-view))
+- [Adding a Now Playing View](adding-a-now-playing-view.md)
 
 #### Overview
 
@@ -30,18 +30,18 @@ Always present the Now Playing view so that it fills the screen in a nonscrollin
 ## Topics
 
 ### Creating a Now Playing View
-- [init()](init().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/nowplayingview/init()))
+- [init()](nowplayingview/init.md)
   Creates a view that displays the system’s Now Playing interface.
 
 ## Relationships
 
 ### Conforms To
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
-- View ([Apple Docs](https://developer.apple.com/documentation/SwiftUI/View))
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
+- [View](https://developer.apple.com/documentation/SwiftUI/View)
 
 ## See Also
 
-- [Storyboard support](storyboard-support.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/storyboard-support))
+- [Storyboard support](storyboard-support.md)
   Connect your code to storyboard elements using interface controllers, interface objects, and event handlers.
 
 

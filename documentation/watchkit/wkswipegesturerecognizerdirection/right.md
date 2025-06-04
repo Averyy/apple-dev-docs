@@ -16,11 +16,11 @@ static var right: WKSwipeGestureRecognizerDirection { get }
 
 ## See Also
 
-- [static var left: WKSwipeGestureRecognizerDirection](left.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizerdirection/left))
+- [static var left: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection/left.md)
   The touch moves from right to left.
-- [static var up: WKSwipeGestureRecognizerDirection](up.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizerdirection/up))
+- [static var up: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection/up.md)
   The touch moves upward.
-- [static var down: WKSwipeGestureRecognizerDirection](down.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizerdirection/down))
+- [static var down: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection/down.md)
   The touch moves downward.
 
 

@@ -29,7 +29,7 @@ The `node` being rendered does not need to appear in the interface’s presented
 
 ## See Also
 
-- [func texture(from: SKNode) -> SKTexture?](texture(from:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/texture(from:)))
+- [func texture(from: SKNode) -> SKTexture?](wkinterfaceskscene/texture(from:).md)
   Renders the contents of a node tree and returns the rendered image as a SpriteKit texture.
 
 

@@ -26,7 +26,7 @@ If you use styled text in your buttons, you must provide localized versions of t
 
 ## See Also
 
-- [func setTitle(String?)](settitle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/settitle(_:)))
+- [func setTitle(String?)](wkinterfacebutton/settitle(_:).md)
   Sets the button title to the specified string.
 
 

@@ -21,7 +21,7 @@ The root interface controller is located in the app’s main storyboard and has 
 
 ## See Also
 
-- [var visibleInterfaceController: WKInterfaceController?](visibleinterfacecontroller.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/visibleinterfacecontroller))
+- [var visibleInterfaceController: WKInterfaceController?](wkapplication/visibleinterfacecontroller.md)
   Returns the last visible interface controller.
 
 

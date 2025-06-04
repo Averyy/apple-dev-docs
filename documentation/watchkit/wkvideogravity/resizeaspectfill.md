@@ -16,9 +16,9 @@ case resizeAspectFill
 
 ## See Also
 
-- [WKVideoGravity.resizeAspect](resizeaspect.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity/resizeaspect))
+- [WKVideoGravity.resizeAspect](wkvideogravity/resizeaspect.md)
   Content is resized to fit the bounds rectangle, preserving the original aspect ratio of the content. Content that does not completely fill the bounds rectangle is centered in the partial axis.
-- [WKVideoGravity.resize](resize.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity/resize))
+- [WKVideoGravity.resize](wkvideogravity/resize.md)
   Content is resized to fit the entire bounds rectangle. This option does not preserve the original aspect ratio of the content.
 
 

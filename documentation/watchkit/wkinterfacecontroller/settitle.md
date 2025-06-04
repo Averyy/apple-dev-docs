@@ -27,9 +27,9 @@ To localize the title, use the value in the `title` parameter as the lookup key 
 
 ## See Also
 
-- [init()](init().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/init()))
+- [init()](wkinterfacecontroller/init.md)
   Returns an initialized interface controller object.
-- [func awake(withContext: Any?)](awake(withcontext:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/awake(withcontext:)))
+- [func awake(withContext: Any?)](wkinterfacecontroller/awake(withcontext:).md)
   Initializes the interface controller with the specified context data.
 
 

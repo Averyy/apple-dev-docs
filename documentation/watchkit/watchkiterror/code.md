@@ -17,41 +17,41 @@ enum Code
 ## Topics
 
 ### Error Codes
-- [WatchKitError.Code.downloadFailed](downloadfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/downloadfailed))
+- [WatchKitError.Code.downloadFailed](watchkiterror/code/downloadfailed.md)
   A download error.
-- [WatchKitError.Code.invalidArgument](invalidargument.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/invalidargument))
+- [WatchKitError.Code.invalidArgument](watchkiterror/code/invalidargument.md)
   An invalid argument error.
-- [WatchKitError.Code.mediaPlayerFailed](mediaplayerfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/mediaplayerfailed))
+- [WatchKitError.Code.mediaPlayerFailed](watchkiterror/code/mediaplayerfailed.md)
   A media player error.
-- [WatchKitError.Code.recordingFailed](recordingfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/recordingfailed))
+- [WatchKitError.Code.recordingFailed](watchkiterror/code/recordingfailed.md)
   An audio recording error.
-- [WatchKitError.Code.unknown](unknown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/unknown))
+- [WatchKitError.Code.unknown](watchkiterror/code/unknown.md)
   An unknown error.
-- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](applicationdelegatewatchkitrequestreplynotcalled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled))
+- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
-- [WatchKitError.Code.downloadFailed](downloadfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/downloadfailed))
+- [WatchKitError.Code.downloadFailed](watchkiterror/code/downloadfailed.md)
   A download error.
-- [WatchKitError.Code.invalidArgument](invalidargument.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/invalidargument))
+- [WatchKitError.Code.invalidArgument](watchkiterror/code/invalidargument.md)
   An invalid argument error.
-- [WatchKitError.Code.mediaPlayerFailed](mediaplayerfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/mediaplayerfailed))
+- [WatchKitError.Code.mediaPlayerFailed](watchkiterror/code/mediaplayerfailed.md)
   A media player error.
-- [WatchKitError.Code.recordingFailed](recordingfailed.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/recordingfailed))
+- [WatchKitError.Code.recordingFailed](watchkiterror/code/recordingfailed.md)
   An audio recording error.
-- [WatchKitError.Code.unknown](unknown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/unknown))
+- [WatchKitError.Code.unknown](watchkiterror/code/unknown.md)
   An unknown error.
-- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](applicationdelegatewatchkitrequestreplynotcalled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled))
+- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/watchkiterror/code/init(rawvalue:)))
+- [init?(rawValue: Int)](watchkiterror/code/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 
 ---

@@ -26,7 +26,7 @@ If you use styled text in your switches, you must provide localized versions of 
 
 ## See Also
 
-- [func setTitle(String?)](settitle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/settitle(_:)))
+- [func setTitle(String?)](wkinterfaceswitch/settitle(_:).md)
   Sets the switch title to the specified string.
 
 

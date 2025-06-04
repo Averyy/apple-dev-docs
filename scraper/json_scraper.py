@@ -462,6 +462,9 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         Returns:
             Extracted data in our format
         """
+        # Store current URL for relative path calculation
+        self._current_scraping_url = doc_url
+        
         data = {
             'source_url': doc_url,
             'framework': self.framework_name,
@@ -976,6 +979,73 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             processed_count=len(self.processed_urls)
         )
     
+    def _convert_apple_url_to_local_path(self, apple_url: str, current_page_url: str = None) -> str:
+        """Convert an Apple documentation URL to a local markdown file path.
+        
+        Args:
+            apple_url: Apple documentation URL
+            current_page_url: URL of the current page (to calculate relative paths)
+            
+        Returns:
+            Relative path to local markdown file
+        """
+        # Check if it's an Apple documentation URL
+        if not apple_url.startswith('https://developer.apple.com/documentation/'):
+            return apple_url
+        
+        # Extract the path after /documentation/
+        url_path = apple_url.replace('https://developer.apple.com/documentation/', '')
+        
+        # Split into components
+        parts = url_path.split('/')
+        
+        # Check if it's in the same framework
+        if parts[0].lower() == self.framework_id.lower():
+            # Same framework - create relative path
+            if len(parts) == 1:
+                # Main framework page
+                return f"{self.framework_id}.md"
+            
+            # For current page context, we need to know where we are
+            if current_page_url and hasattr(self, '_current_scraping_url'):
+                current_path = self._current_scraping_url.replace('https://developer.apple.com/documentation/', '')
+                current_parts = current_path.split('/')
+                current_depth = len(current_parts) - 1
+                
+                if len(parts) == 2 and current_depth == 1:
+                    # Same level - just the filename
+                    return f"{parts[1]}.md"
+                elif len(parts) == 2 and current_depth > 1:
+                    # Need to go up directories
+                    up_dirs = '../' * (current_depth - 1)
+                    return f"{up_dirs}{parts[1]}.md"
+                else:
+                    # More complex nested structure
+                    # Calculate relative path between current location and target
+                    target_depth = len(parts) - 1
+                    if current_depth == target_depth and '/'.join(current_parts[:-1]) == '/'.join(parts[:-1]):
+                        # Same directory
+                        return f"{parts[-1]}.md"
+                    else:
+                        # Different directory - go up to common ancestor
+                        up_dirs = '../' * (current_depth - 1)
+                        # Then navigate to target
+                        if target_depth > 1:
+                            down_path = '/'.join(parts[1:-1])
+                            return f"{up_dirs}{down_path}/{parts[-1]}.md"
+                        else:
+                            return f"{up_dirs}{parts[-1]}.md"
+            else:
+                # Fallback - simple logic
+                if len(parts) == 2:
+                    return f"{parts[1]}.md"
+                else:
+                    # For nested paths, include the subdirectory
+                    return f"{'/'.join(parts[1:])}.md"
+        else:
+            # Different framework - keep Apple URL
+            return apple_url
+    
     def _format_declaration_from_tokens(self, tokens: List[Dict[str, Any]]) -> str:
         """Format declaration tokens with proper Swift formatting.
         
@@ -1076,9 +1146,11 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     # Get the URL for the reference
                     url_path = ref_data.get('url', '')
                     if url_path:
-                        url = f"https://developer.apple.com{url_path}"
-                        # Create a markdown link instead of just code formatting
-                        resolved_parts.append(f"[`{title}`]({url})")
+                        # Convert Apple URL to local markdown path
+                        apple_url = f"https://developer.apple.com{url_path}"
+                        local_path = self._convert_apple_url_to_local_path(apple_url)
+                        # Create a markdown link to local file
+                        resolved_parts.append(f"[`{title}`]({local_path})")
                     else:
                         # Fallback to just code formatting if no URL
                         resolved_parts.append(f"`{title}`")

@@ -17,13 +17,13 @@ func scheduleSnapshotRefresh(withPreferredDate preferredFireDate: Date, userInfo
 
 ## Mentions
 
-- [Preparing to take your watchOS app’s snapshot](preparing-to-take-your-watchos-app-s-snapshot.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/preparing-to-take-your-watchos-app-s-snapshot))
+- [Preparing to take your watchOS app’s snapshot](preparing-to-take-your-watchos-app-s-snapshot.md)
 
 #### Discussion
 
-Call this method to update your app’s snapshot in the background. When the system triggers the task, it wakes your app in the background and calls your app delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-7kiwx) method. Use this task to transition to the interface controller you want to display in the snapshot, and to update that controller’s user interface.
+Call this method to update your app’s snapshot in the background. When the system triggers the task, it wakes your app in the background and calls your app delegate’s [`handle(_:)`](wkapplicationdelegate/handle(_:)-7kiwx.md) method. Use this task to transition to the interface controller you want to display in the snapshot, and to update that controller’s user interface.
 
-You can only schedule one background snapshot refresh task at a time. If you’ve already scheduled a background snapshot refresh task, scheduling a second task cancels the first. Additionally, the system budgets background snapshot refresh tasks. For more information, see [`WKSnapshotRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask).
+You can only schedule one background snapshot refresh task at a time. If you’ve already scheduled a background snapshot refresh task, scheduling a second task cancels the first. Additionally, the system budgets background snapshot refresh tasks. For more information, see [`WKSnapshotRefreshBackgroundTask`](wksnapshotrefreshbackgroundtask.md).
 
 The system automatically schedules background snapshot request tasks in the following situations:
 

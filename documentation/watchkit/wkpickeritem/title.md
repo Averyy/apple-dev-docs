@@ -20,11 +20,11 @@ This string contains the item’s content and is displayed when the item is sele
 
 ## See Also
 
-- [var contentImage: WKImage?](contentimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/contentimage))
+- [var contentImage: WKImage?](wkpickeritem/contentimage.md)
   The image to display for the item.
-- [var accessoryImage: WKImage?](accessoryimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/accessoryimage))
+- [var accessoryImage: WKImage?](wkpickeritem/accessoryimage.md)
   A small image to display next to the title string.
-- [var caption: String?](caption.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/caption))
+- [var caption: String?](wkpickeritem/caption.md)
   A caption for the item’s content.
 
 

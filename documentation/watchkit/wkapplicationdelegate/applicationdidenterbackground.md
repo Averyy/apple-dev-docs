@@ -19,9 +19,9 @@ optional func applicationDidEnterBackground()
 
 Override this method to release shared resources, invalidate timers, and store enough app state information to restore your app to its current state if it’s purged from memory. You have only a few seconds to complete these actions and return.
 
-The system typically suspends your app shortly after this method returns; therefore, don’t call any asynchronous methods from your [`applicationDidEnterBackground()`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidenterbackground()) implementation. Asynchronous methods may not be able to complete before the system suspends the app.
+The system typically suspends your app shortly after this method returns; therefore, don’t call any asynchronous methods from your [`applicationDidEnterBackground()`](wkapplicationdelegate/applicationdidenterbackground().md) implementation. Asynchronous methods may not be able to complete before the system suspends the app.
 
-Additionally, the system may purge suspended apps at any time to make room for other apps. You aren’t notified when the system purges an app from memory. The [`applicationDidEnterBackground()`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidenterbackground()) method is your last chance to perform any cleanup before the app terminates.
+Additionally, the system may purge suspended apps at any time to make room for other apps. You aren’t notified when the system purges an app from memory. The [`applicationDidEnterBackground()`](wkapplicationdelegate/applicationdidenterbackground().md) method is your last chance to perform any cleanup before the app terminates.
 
 > **Note**:  When creating an app that uses the SwiftUI [`App`](https://developer.apple.com/documentation/SwiftUI/App) protocol to manage your life cycle, use the [`onChange(of:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:perform:)) modifier and the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) environment value to monitor life cycle changes when possible. For more information, see [`Building a watchOS app`](https://developer.apple.com/documentation/watchOS-Apps/building_a_watchos_app).
 
@@ -29,19 +29,19 @@ Additionally, the system may purge suspended apps at any time to make room for o
 
 ## See Also
 
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
   Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
-- [static func main()](main().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/main()))
+- [static func main()](wkapplicationdelegate/main.md)
   Provides the top-level entry point for an app.
-- [func applicationDidFinishLaunching()](applicationdidfinishlaunching().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidfinishlaunching()))
+- [func applicationDidFinishLaunching()](wkapplicationdelegate/applicationdidfinishlaunching.md)
   Tells the delegate that the launch process is almost done and the app is almost ready to run.
-- [func applicationDidBecomeActive()](applicationdidbecomeactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidbecomeactive()))
+- [func applicationDidBecomeActive()](wkapplicationdelegate/applicationdidbecomeactive.md)
   Tells the delegate that the watchOS app is visible and processing events.
-- [func applicationWillResignActive()](applicationwillresignactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillresignactive()))
+- [func applicationWillResignActive()](wkapplicationdelegate/applicationwillresignactive.md)
   Tells the delegate that the system is about to deactivate the watchOS app.
-- [func applicationWillEnterForeground()](applicationwillenterforeground().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillenterforeground()))
+- [func applicationWillEnterForeground()](wkapplicationdelegate/applicationwillenterforeground.md)
   Tells the delegate that the app is about to transition from the background to the foreground.
-- [func deviceOrientationDidChange()](deviceorientationdidchange().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/deviceorientationdidchange()))
+- [func deviceOrientationDidChange()](wkapplicationdelegate/deviceorientationdidchange.md)
   Tells the delegate that the device’s orientation has changed.
 
 

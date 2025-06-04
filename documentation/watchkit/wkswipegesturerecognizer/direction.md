@@ -16,7 +16,7 @@ var direction: WKSwipeGestureRecognizerDirection { get set }
 
 #### Discussion
 
-The default value of this property is [`right`](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizerdirection/right). You may specify more than one direction to track swipes in multiple directions with the same gesture recognizer.
+The default value of this property is [`right`](wkswipegesturerecognizerdirection/right.md). You may specify more than one direction to track swipes in multiple directions with the same gesture recognizer.
 
 
 ---

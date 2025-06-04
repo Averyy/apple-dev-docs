@@ -20,7 +20,7 @@ The picker adds custom highlighting when it is configured as the target of crown
 
 ## See Also
 
-- [func resignFocus()](resignfocus().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/resignfocus()))
+- [func resignFocus()](wkinterfacepicker/resignfocus.md)
   Removes focus from the picker, causing it to stop receiving input from the Digital Crown.
 
 

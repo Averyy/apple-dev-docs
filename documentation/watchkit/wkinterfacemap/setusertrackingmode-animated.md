@@ -16,9 +16,9 @@ func setUserTrackingMode(_ mode: WKInterfaceMap.UserTrackingMode, animated: Bool
 
 #### Discussion
 
-By default, the tracking mode is [`WKInterfaceMap.UserTrackingMode.none`](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/none).
+By default, the tracking mode is [`WKInterfaceMap.UserTrackingMode.none`](wkinterfacemap/usertrackingmode/none.md).
 
-Setting the tracking mode to [`WKInterfaceMap.UserTrackingMode.follow`](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/follow) causes the map to center on the user’s location and begin tracking the user. If the map is zoomed out, the map view automatically zooms in on the user’s location, effectively changing the current visible region.
+Setting the tracking mode to [`WKInterfaceMap.UserTrackingMode.follow`](wkinterfacemap/usertrackingmode/follow.md) causes the map to center on the user’s location and begin tracking the user. If the map is zoomed out, the map view automatically zooms in on the user’s location, effectively changing the current visible region.
 
 ## Parameters
 
@@ -27,11 +27,11 @@ Setting the tracking mode to [`WKInterfaceMap.UserTrackingMode.follow`](https://
 
 ## See Also
 
-- [func setShowsUserLocation(Bool)](setshowsuserlocation(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setshowsuserlocation(_:)))
+- [func setShowsUserLocation(Bool)](wkinterfacemap/setshowsuserlocation(_:).md)
   Sets whether the map shows the user’s current location.
-- [func setShowsUserHeading(Bool)](setshowsuserheading(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setshowsuserheading(_:)))
+- [func setShowsUserHeading(Bool)](wkinterfacemap/setshowsuserheading(_:).md)
   Sets whether the map shows the user heading.
-- [WKInterfaceMap.UserTrackingMode](usertrackingmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode))
+- [WKInterfaceMap.UserTrackingMode](wkinterfacemap/usertrackingmode.md)
   Modes for tracking the user’s location on the map.
 
 

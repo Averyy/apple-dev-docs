@@ -19,15 +19,15 @@ var isApplicationRunningInDock: Bool { get }
 
 This property contains [`true`](https://developer.apple.com/documentation/swift/true) if the app is running in the dock; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
-Check this property (for example, in your app delegate’s [`applicationWillEnterForeground()`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillenterforeground()) method) to determine whether your app is running in the dock. You can use this information to customize your user interface in the dock.
+Check this property (for example, in your app delegate’s [`applicationWillEnterForeground()`](wkapplicationdelegate/applicationwillenterforeground().md) method) to determine whether your app is running in the dock. You can use this information to customize your user interface in the dock.
 
 ## See Also
 
-- [var applicationState: WKApplicationState](applicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/applicationstate))
+- [var applicationState: WKApplicationState](wkapplication/applicationstate.md)
   The runtime state of the watchOS app.
-- [enum WKApplicationState](wkapplicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate))
+- [enum WKApplicationState](wkapplicationstate.md)
   The running states of the Watch app.
-- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:)))
+- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](wkapplication/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md)
   Schedules a background task to refresh the app’s data.
 
 

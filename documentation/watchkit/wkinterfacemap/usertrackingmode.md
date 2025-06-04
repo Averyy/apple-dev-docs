@@ -17,33 +17,33 @@ enum UserTrackingMode
 ## Topics
 
 ### Tracking Modes
-- [WKInterfaceMap.UserTrackingMode.follow](follow.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/follow))
+- [WKInterfaceMap.UserTrackingMode.follow](wkinterfacemap/usertrackingmode/follow.md)
   The map scrolls to follow the user as they move.
-- [WKInterfaceMap.UserTrackingMode.none](none.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/none))
+- [WKInterfaceMap.UserTrackingMode.none](wkinterfacemap/usertrackingmode/none.md)
   The map remains stationary, even if the user moves off the map.
-- [WKInterfaceMap.UserTrackingMode.follow](follow.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/follow))
+- [WKInterfaceMap.UserTrackingMode.follow](wkinterfacemap/usertrackingmode/follow.md)
   The map scrolls to follow the user as they move.
-- [WKInterfaceMap.UserTrackingMode.none](none.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/none))
+- [WKInterfaceMap.UserTrackingMode.none](wkinterfacemap/usertrackingmode/none.md)
   The map remains stationary, even if the user moves off the map.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/init(rawvalue:)))
+- [init?(rawValue: Int)](wkinterfacemap/usertrackingmode/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [func setShowsUserLocation(Bool)](setshowsuserlocation(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setshowsuserlocation(_:)))
+- [func setShowsUserLocation(Bool)](wkinterfacemap/setshowsuserlocation(_:).md)
   Sets whether the map shows the user’s current location.
-- [func setShowsUserHeading(Bool)](setshowsuserheading(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setshowsuserheading(_:)))
+- [func setShowsUserHeading(Bool)](wkinterfacemap/setshowsuserheading(_:).md)
   Sets whether the map shows the user heading.
-- [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](setusertrackingmode(_:animated:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setusertrackingmode(_:animated:)))
+- [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](wkinterfacemap/setusertrackingmode(_:animated:).md)
   Sets the map’s tracking mode.
 
 

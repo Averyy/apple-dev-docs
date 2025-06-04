@@ -20,11 +20,11 @@ func setLoops(_ loops: Bool)
 
 ## See Also
 
-- [func setMovieURL(URL)](setmovieurl(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setmovieurl(_:)))
+- [func setMovieURL(URL)](wkinterfacemovie/setmovieurl(_:).md)
   Sets the URL of the movie to play.
-- [func setVideoGravity(WKVideoGravity)](setvideogravity(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setvideogravity(_:)))
+- [func setVideoGravity(WKVideoGravity)](wkinterfacemovie/setvideogravity(_:).md)
   Sets the resizing behavior for the movie content.
-- [func setPosterImage(WKImage?)](setposterimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setposterimage(_:)))
+- [func setPosterImage(WKImage?)](wkinterfacemovie/setposterimage(_:).md)
   Sets the poster image to display for the movie.
 
 

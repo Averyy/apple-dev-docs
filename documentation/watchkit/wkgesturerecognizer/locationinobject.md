@@ -24,7 +24,7 @@ If multiple touches were detected, this method returns the location of only the 
 
 ## See Also
 
-- [func objectBounds() -> CGRect](objectbounds().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer/objectbounds()))
+- [func objectBounds() -> CGRect](wkgesturerecognizer/objectbounds.md)
   Returns the dimensions of the interface object (measured in points) associated with the gesture recognizer.
 
 

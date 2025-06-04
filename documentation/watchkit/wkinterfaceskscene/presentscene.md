@@ -24,9 +24,9 @@ The new scene immediately replaces the current scene, if one exists.
 
 ## See Also
 
-- [var scene: SKScene?](scene.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/scene))
+- [var scene: SKScene?](wkinterfaceskscene/scene.md)
   The currently presented SpriteKit scene.
-- [func presentScene(SKScene, transition: SKTransition)](presentscene(_:transition:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/presentscene(_:transition:)))
+- [func presentScene(SKScene, transition: SKTransition)](wkinterfaceskscene/presentscene(_:transition:).md)
   Transitions from the current scene to a new scene.
 
 

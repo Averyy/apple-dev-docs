@@ -16,7 +16,7 @@ var preferredFramesPerSecond: Int { get set }
 
 ## Mentions
 
-- [Configuring a WatchKit Scene in a Storyboard](configuring-a-watchkit-scene-in-a-storyboard.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/configuring-a-watchkit-scene-in-a-storyboard))
+- [Configuring a WatchKit Scene in a Storyboard](configuring-a-watchkit-scene-in-a-storyboard.md)
 
 #### Discussion
 
@@ -26,7 +26,7 @@ To provide a consistent frame rate, SpriteKit usually selects a frame rate that 
 
 ## See Also
 
-- [var isPaused: Bool](ispaused.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/ispaused))
+- [var isPaused: Bool](wkinterfaceskscene/ispaused.md)
   A Boolean value that determines whether the view’s scene animations are paused.
 
 

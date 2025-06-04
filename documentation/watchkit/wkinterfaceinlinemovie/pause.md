@@ -16,9 +16,9 @@ func pause()
 
 ## See Also
 
-- [func play()](play().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/play()))
+- [func play()](wkinterfaceinlinemovie/play.md)
   Plays the movie.
-- [func playFromBeginning()](playfrombeginning().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/playfrombeginning()))
+- [func playFromBeginning()](wkinterfaceinlinemovie/playfrombeginning.md)
   Plays the movie from the beginning.
 
 

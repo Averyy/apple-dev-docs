@@ -16,11 +16,11 @@ case running
 
 ## See Also
 
-- [WKExtendedRuntimeSessionState.notStarted](notstarted.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionstate/notstarted))
+- [WKExtendedRuntimeSessionState.notStarted](wkextendedruntimesessionstate/notstarted.md)
   The app has not yet started or scheduled the session.
-- [WKExtendedRuntimeSessionState.scheduled](scheduled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionstate/scheduled))
+- [WKExtendedRuntimeSessionState.scheduled](wkextendedruntimesessionstate/scheduled.md)
   The app has scheduled the session to run at a future date.
-- [WKExtendedRuntimeSessionState.invalid](invalid.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionstate/invalid))
+- [WKExtendedRuntimeSessionState.invalid](wkextendedruntimesessionstate/invalid.md)
   Either the session has encountered an error, or it has stopped running.
 
 

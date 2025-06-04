@@ -16,11 +16,11 @@ var scene: SCNScene? { get set }
 
 ## See Also
 
-- [var antialiasingMode: SCNAntialiasingMode](antialiasingmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/antialiasingmode))
+- [var antialiasingMode: SCNAntialiasingMode](wkinterfacescnscene/antialiasingmode.md)
   The antialiasing mode used for rendering the scene.
-- [var preferredFramesPerSecond: Int](preferredframespersecond.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/preferredframespersecond))
+- [var preferredFramesPerSecond: Int](wkinterfacescnscene/preferredframespersecond.md)
   The animation frame rate that the interface uses to render its scene.
-- [func snapshot() -> UIImage](snapshot().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/snapshot()))
+- [func snapshot() -> UIImage](wkinterfacescnscene/snapshot.md)
   Renders the scene to a new image object.
 
 

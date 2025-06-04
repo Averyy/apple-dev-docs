@@ -16,9 +16,9 @@ case center
 
 ## See Also
 
-- [WKInterfaceObjectHorizontalAlignment.left](left.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobjecthorizontalalignment/left))
+- [WKInterfaceObjectHorizontalAlignment.left](wkinterfaceobjecthorizontalalignment/left.md)
   Left alignment. The object’s content aligns with the left edge of the container and extends to the right.
-- [WKInterfaceObjectHorizontalAlignment.right](right.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobjecthorizontalalignment/right))
+- [WKInterfaceObjectHorizontalAlignment.right](wkinterfaceobjecthorizontalalignment/right.md)
   Right alignment. The object’s content aligns with the right edge of the container and extends to the left.
 
 

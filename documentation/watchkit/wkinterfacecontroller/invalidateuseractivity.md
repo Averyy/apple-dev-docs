@@ -21,7 +21,7 @@ Use this method to invalidate an activity that should no longer be performed.
 
 ## See Also
 
-- [func update(NSUserActivity)](update(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/update(_:)))
+- [func update(NSUserActivity)](wkinterfacecontroller/update(_:).md)
   Registers the current user activity with the system.
 
 

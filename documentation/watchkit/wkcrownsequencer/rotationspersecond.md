@@ -20,9 +20,9 @@ This property contains the last reported rotational speed of the crown in rotati
 
 ## See Also
 
-- [func crownDidRotate(WKCrownSequencer?, rotationalDelta: Double)](crowndidrotate(_:rotationaldelta:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate/crowndidrotate(_:rotationaldelta:)))
+- [func crownDidRotate(WKCrownSequencer?, rotationalDelta: Double)](wkcrowndelegate/crowndidrotate(_:rotationaldelta:).md)
   Called when the user rotates the crown.
-- [var isIdle: Bool](isidle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/isidle))
+- [var isIdle: Bool](wkcrownsequencer/isidle.md)
   A Boolean value indicating whether the crown is at rest.
 
 

@@ -24,7 +24,7 @@ This method removes row controllers from the table using the same semantics defi
 
 ## See Also
 
-- [func insertRows(at: IndexSet, withRowType: String)](insertrows(at:withrowtype:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable/insertrows(at:withrowtype:)))
+- [func insertRows(at: IndexSet, withRowType: String)](wkinterfacetable/insertrows(at:withrowtype:).md)
   Inserts rows into the table at the specified indexes.
 
 

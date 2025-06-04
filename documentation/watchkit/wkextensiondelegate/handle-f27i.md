@@ -25,7 +25,7 @@ When your iPhone app starts a workout session using the HealthKit store’s `sta
 
 ## See Also
 
-- [func handleActiveWorkoutRecovery()](handleactiveworkoutrecovery().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleactiveworkoutrecovery()))
+- [func handleActiveWorkoutRecovery()](wkextensiondelegate/handleactiveworkoutrecovery.md)
   Tells the delegate when the app relaunches after crashing during an active workout session.
 
 

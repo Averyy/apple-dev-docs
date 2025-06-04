@@ -20,9 +20,9 @@ The playback rate refers to the playback speed. A value of `0.0` indicates that 
 
 ## See Also
 
-- [func play()](play().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/play()))
+- [func play()](wkaudiofileplayer/play.md)
   Begins playback of the current item.
-- [func pause()](pause().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/pause()))
+- [func pause()](wkaudiofileplayer/pause.md)
   Pauses playback of the associated item.
 
 

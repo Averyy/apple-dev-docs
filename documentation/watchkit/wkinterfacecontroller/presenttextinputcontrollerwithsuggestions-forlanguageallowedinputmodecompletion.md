@@ -31,11 +31,11 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## See Also
 
-- [func presentTextInputController(withSuggestions: [String]?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](presenttextinputcontroller(withsuggestions:allowedinputmode:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presenttextinputcontroller(withsuggestions:allowedinputmode:completion:)))
+- [func presentTextInputController(withSuggestions: [String]?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](wkinterfacecontroller/presenttextinputcontroller(withsuggestions:allowedinputmode:completion:).md)
   Displays a modal interface for gathering text input from the user.
-- [func dismissTextInputController()](dismisstextinputcontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismisstextinputcontroller()))
+- [func dismissTextInputController()](wkinterfacecontroller/dismisstextinputcontroller.md)
   Dismisses the text input controller without returning any text.
-- [enum WKTextInputMode](wktextinputmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextinputmode))
+- [enum WKTextInputMode](wktextinputmode.md)
   The input modes supported by the text input controller.
 
 

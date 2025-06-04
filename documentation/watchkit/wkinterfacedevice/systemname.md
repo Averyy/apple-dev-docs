@@ -20,7 +20,7 @@ The value of this property is “watchOS”.
 
 ## See Also
 
-- [var systemVersion: String](systemversion.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/systemversion))
+- [var systemVersion: String](wkinterfacedevice/systemversion.md)
   The version of the operating system.
 
 

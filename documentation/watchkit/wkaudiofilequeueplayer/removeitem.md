@@ -24,13 +24,13 @@ If `item` is currently playing, the queue stops playback of item before removing
 
 ## See Also
 
-- [var items: [WKAudioFilePlayerItem]](items.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer/items))
+- [var items: [WKAudioFilePlayerItem]](wkaudiofilequeueplayer/items.md)
   The array of queued items.
-- [func advanceToNextItem()](advancetonextitem().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer/advancetonextitem()))
+- [func advanceToNextItem()](wkaudiofilequeueplayer/advancetonextitem.md)
   Ends playback of the current item and begins playing the next item in the queue.
-- [func appendItem(WKAudioFilePlayerItem)](appenditem(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer/appenditem(_:)))
+- [func appendItem(WKAudioFilePlayerItem)](wkaudiofilequeueplayer/appenditem(_:).md)
   Adds the specified item to the end of the queue.
-- [func removeAllItems()](removeallitems().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer/removeallitems()))
+- [func removeAllItems()](wkaudiofilequeueplayer/removeallitems.md)
   Removes all items from the queue.
 
 

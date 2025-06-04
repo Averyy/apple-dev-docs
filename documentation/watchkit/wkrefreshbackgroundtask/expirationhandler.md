@@ -16,7 +16,7 @@ var expirationHandler: (() -> Void)? { get set }
 
 ## Mentions
 
-- [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
+- [Using background tasks](using-background-tasks.md)
 
 #### Discussion
 
@@ -24,9 +24,9 @@ To respond when your background task is about to expire, assign a block to this 
 
 ## See Also
 
-- [func setTaskCompletedWithSnapshot(Bool)](settaskcompletedwithsnapshot(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:)))
+- [func setTaskCompletedWithSnapshot(Bool)](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md)
   Marks the task as complete and indicates whether the system should take a new snapshot of the app.
-- [func setTaskCompleted()](settaskcompleted().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask/settaskcompleted()))
+- [func setTaskCompleted()](wkrefreshbackgroundtask/settaskcompleted.md)
   Marks the task as complete.
 
 

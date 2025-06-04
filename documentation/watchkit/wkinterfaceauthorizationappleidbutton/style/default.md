@@ -16,9 +16,9 @@ case `default`
 
 ## See Also
 
-- [WKInterfaceAuthorizationAppleIDButton.Style.white](white.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/style/white))
+- [WKInterfaceAuthorizationAppleIDButton.Style.white](wkinterfaceauthorizationappleidbutton/style/white.md)
   A white button with black lettering.
-- [WKInterfaceAuthorizationAppleIDButton.Style.white](white.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/style/white))
+- [WKInterfaceAuthorizationAppleIDButton.Style.white](wkinterfaceauthorizationappleidbutton/style/white.md)
   A white button with black lettering.
 
 

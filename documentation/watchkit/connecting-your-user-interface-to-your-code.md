@@ -6,17 +6,17 @@ Connect the interface objects in your storyboard to outlets and action methods i
 
 #### Overview
 
-The code in your WatchKit extension interacts with your watchOS app’s user interface through , which are instances of a [`WKInterfaceObject`](https://developer.apple.com/documentation/watchkit/wkinterfaceobject) subclass. Interface objects are not views, but proxy objects for the actual views presented by your watchOS app. The WatchKit framework provides interface objects for most of the items you can add to your storyboard.
+The code in your WatchKit extension interacts with your watchOS app’s user interface through , which are instances of a [`WKInterfaceObject`](wkinterfaceobject.md) subclass. Interface objects are not views, but proxy objects for the actual views presented by your watchOS app. The WatchKit framework provides interface objects for most of the items you can add to your storyboard.
 
 Communication between an interface object and the corresponding view on Apple Watch is one-way: information flows from your code to the view. In other words, you set values on an interface object but you cannot get the view’s current values. If you need to access the current value, you must cache that value in your code.
 
 ##### Create Interface Objects
 
-To create an interface object, add an item to a scene in your storyboard. Then open the assistant editor and control-drag the item from the storyboard into the scene’s interface controller ([`Figure 1`](https://developer.apple.com/documentation/watchkit/storyboard_support/building_watchos_app_interfaces_using_the_storyboard/connecting_your_user_interface_to_your_code#3172422)).
+To create an interface object, add an item to a scene in your storyboard. Then open the assistant editor and control-drag the item from the storyboard into the scene’s interface controller ([`Figure 1`](storyboard_support/building_watchos_app_interfaces_using_the_storyboard/connecting_your_user_interface_to_your_code#3172422.md)).
 
 ![A screenshot showing a control-drag operation from a button in the storyboard to the WKInterfaceController subclass.](https://docs-assets.developer.apple.com/published/fc01cca1dfd2550794fcf40cfc4aa4af/media-3172422%402x.png)
 
-Xcode then prompts you for the outlet’s name. Enter a name and click Connect ([`Figure 2`](https://developer.apple.com/documentation/watchkit/storyboard_support/building_watchos_app_interfaces_using_the_storyboard/connecting_your_user_interface_to_your_code#3144653)).
+Xcode then prompts you for the outlet’s name. Enter a name and click Connect ([`Figure 2`](storyboard_support/building_watchos_app_interfaces_using_the_storyboard/connecting_your_user_interface_to_your_code#3144653.md)).
 
 ![A screenshot showing the popup to create a new outlet; the outlet is named firstButton.](https://docs-assets.developer.apple.com/published/01771edc08ccbe732767c9dc01123452/media-3144653%402x.png)
 
@@ -36,23 +36,23 @@ When the system loads your interface controller, it automatically instantiates a
 
 You can configure interface elements in Xcode at design time, or you can use a connected interface object at runtime. However, interface objects often only expose a subset of the attributes available in Xcode’s Attributes inspector.
 
-For example, the [`WKInterfaceLabel`](https://developer.apple.com/documentation/watchkit/wkinterfacelabel) class exposes methods to set the text (or attributed text) and text color at runtime:
+For example, the [`WKInterfaceLabel`](wkinterfacelabel.md) class exposes methods to set the text (or attributed text) and text color at runtime:
 
-- [`setText(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacelabel/settext(_:))
-- [`setTextColor(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacelabel/settextcolor(_:))
-- [`setAttributedText(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacelabel/setattributedtext(_:))
+- [`setText(_:)`](wkinterfacelabel/settext(_:).md)
+- [`setTextColor(_:)`](wkinterfacelabel/settextcolor(_:).md)
+- [`setAttributedText(_:)`](wkinterfacelabel/setattributedtext(_:).md)
 
-Additional properties, such as minimum scale, number of lines, and alignment, are only available in the Attributes inspector at design time ([`Figure 3`](https://developer.apple.com/documentation/watchkit/storyboard_support/building_watchos_app_interfaces_using_the_storyboard/connecting_your_user_interface_to_your_code#3148615)).
+Additional properties, such as minimum scale, number of lines, and alignment, are only available in the Attributes inspector at design time ([`Figure 3`](storyboard_support/building_watchos_app_interfaces_using_the_storyboard/connecting_your_user_interface_to_your_code#3148615.md)).
 
 ![A screenshot of the Attribute inspector for Labels.](https://docs-assets.developer.apple.com/published/862003e6153a6b15d33d9399d3c67dbd/media-3148615%402x.png)
 
 Additionally, each scene in your storyboard file must contain all of the interface elements you intend to use. While you cannot add or remove items from the interface at runtime, you can hide items that you don’t currently need. This effectively removes these items from the interface, as the system treats hidden objects as if you had removed them from the storyboard.
 
-To hide or show an item at runtime, call its [`setHidden(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/sethidden(_:)) method.
+To hide or show an item at runtime, call its [`setHidden(_:)`](wkinterfaceobject/sethidden(_:).md) method.
 
 ##### Respond to User Interactions
 
-Controls—such as buttons, sliders, and pickers—let the user interact with your app. To respond to user interactions, you must connect the control to an action method in your scene’s interface controller. Control-drag from the control to your interface controller in the assistant editor to create a Connection to Action ([`Figure 4`](https://developer.apple.com/documentation/watchkit/storyboard_support/building_watchos_app_interfaces_using_the_storyboard/connecting_your_user_interface_to_your_code#3148596)).
+Controls—such as buttons, sliders, and pickers—let the user interact with your app. To respond to user interactions, you must connect the control to an action method in your scene’s interface controller. Control-drag from the control to your interface controller in the assistant editor to create a Connection to Action ([`Figure 4`](storyboard_support/building_watchos_app_interfaces_using_the_storyboard/connecting_your_user_interface_to_your_code#3148596.md)).
 
 ![A screenshot showing the Xcode prompt when adding an action method.](https://docs-assets.developer.apple.com/published/749806a6af6ceebccd8c8fabeeed2945/media-3148596%402x.png)
 

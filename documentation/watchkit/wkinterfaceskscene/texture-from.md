@@ -28,7 +28,7 @@ The `node` being rendered does not need to appear in the interface’s presented
 
 ## See Also
 
-- [func texture(from: SKNode, crop: CGRect) -> SKTexture?](texture(from:crop:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/texture(from:crop:)))
+- [func texture(from: SKNode, crop: CGRect) -> SKTexture?](wkinterfaceskscene/texture(from:crop:).md)
   Renders a portion of a node’s contents and returns the rendered image as a SpriteKit texture.
 
 

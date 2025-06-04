@@ -26,7 +26,7 @@ Changes to the alpha value of an object are animatable.
 
 ## See Also
 
-- [func setHidden(Bool)](sethidden(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/sethidden(_:)))
+- [func setHidden(Bool)](wkinterfaceobject/sethidden(_:).md)
   Hides or shows the interface object in your user interface.
 
 

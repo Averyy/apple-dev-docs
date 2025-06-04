@@ -19,9 +19,9 @@ func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, 
 
 The system calls this method both when a session fails to start and when a session stops running. Use the invalidation reason to determine why the session became invalid.
 
-> ❗ **Important**:  If your app terminates immediately after the system invalidates the session, you may not receive this delegate call until the user launches your app again. In that case, the system calls your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-4qxgv) method to resume the session. Then, after you assign the session delegate, the system finally makes this delegate call.
+> ❗ **Important**:  If your app terminates immediately after the system invalidates the session, you may not receive this delegate call until the user launches your app again. In that case, the system calls your extension delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-4qxgv.md) method to resume the session. Then, after you assign the session delegate, the system finally makes this delegate call.
 
- If your app terminates immediately after the system invalidates the session, you may not receive this delegate call until the user launches your app again. In that case, the system calls your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-4qxgv) method to resume the session. Then, after you assign the session delegate, the system finally makes this delegate call.
+ If your app terminates immediately after the system invalidates the session, you may not receive this delegate call until the user launches your app again. In that case, the system calls your extension delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-4qxgv.md) method to resume the session. Then, after you assign the session delegate, the system finally makes this delegate call.
 
 ## Parameters
 
@@ -31,11 +31,11 @@ The system calls this method both when a session fails to start and when a sessi
 
 ## See Also
 
-- [func extendedRuntimeSessionDidStart(WKExtendedRuntimeSession)](extendedruntimesessiondidstart(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesessiondidstart(_:)))
+- [func extendedRuntimeSessionDidStart(WKExtendedRuntimeSession)](wkextendedruntimesessiondelegate/extendedruntimesessiondidstart(_:).md)
   Indicates that the session has started running.
-- [func extendedRuntimeSessionWillExpire(WKExtendedRuntimeSession)](extendedruntimesessionwillexpire(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesessionwillexpire(_:)))
+- [func extendedRuntimeSessionWillExpire(WKExtendedRuntimeSession)](wkextendedruntimesessiondelegate/extendedruntimesessionwillexpire(_:).md)
   Indicates that the session is about to expire.
-- [enum WKExtendedRuntimeSessionInvalidationReason](wkextendedruntimesessioninvalidationreason.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessioninvalidationreason))
+- [enum WKExtendedRuntimeSessionInvalidationReason](wkextendedruntimesessioninvalidationreason.md)
   The reasons why a session can become invalid.
 
 

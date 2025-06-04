@@ -24,7 +24,7 @@ Use this method to set the value of a switch. If you want to know the value of a
 
 ## See Also
 
-- [func setColor(UIColor?)](setcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/setcolor(_:)))
+- [func setColor(UIColor?)](wkinterfaceswitch/setcolor(_:).md)
   Changes the tint color of the switch when it is on.
 
 

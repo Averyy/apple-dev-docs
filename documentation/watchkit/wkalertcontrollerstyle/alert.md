@@ -16,9 +16,9 @@ case alert
 
 ## See Also
 
-- [WKAlertControllerStyle.sideBySideButtonsAlert](sidebysidebuttonsalert.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertcontrollerstyle/sidebysidebuttonsalert))
+- [WKAlertControllerStyle.sideBySideButtonsAlert](wkalertcontrollerstyle/sidebysidebuttonsalert.md)
   An alert sheet with side-by-side buttons.
-- [WKAlertControllerStyle.actionSheet](actionsheet.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertcontrollerstyle/actionsheet))
+- [WKAlertControllerStyle.actionSheet](wkalertcontrollerstyle/actionsheet.md)
   An action sheet style. Action sheets are modal sheets that can be dismissed using the Cancel button in the top-left corner of the sheet. You can also add one or two custom buttons to perform related tasks.
 
 

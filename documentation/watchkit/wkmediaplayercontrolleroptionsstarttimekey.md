@@ -16,11 +16,11 @@ let WKMediaPlayerControllerOptionsStartTimeKey: String
 
 ## See Also
 
-- [let WKMediaPlayerControllerOptionsAutoplayKey: String](wkmediaplayercontrolleroptionsautoplaykey.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmediaplayercontrolleroptionsautoplaykey))
+- [let WKMediaPlayerControllerOptionsAutoplayKey: String](wkmediaplayercontrolleroptionsautoplaykey.md)
   The option to play a media file automatically when it is displayed. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value indicating whether the media file should begin playing automatically when the interface is displayed. Playback is also contingent upon the file being available and ready to play on Apple Watch. If you do not specify this option, the user must initiate playback.
-- [let WKMediaPlayerControllerOptionsVideoGravityKey: String](wkmediaplayercontrolleroptionsvideogravitykey.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmediaplayercontrolleroptionsvideogravitykey))
-  The behavior for resizing the video to fit the available space. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing an appropriate constant of the [`WKVideoGravity`](https://developer.apple.com/documentation/watchkit/wkvideogravity) type.
-- [let WKMediaPlayerControllerOptionsLoopsKey: String](wkmediaplayercontrolleroptionsloopskey.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkmediaplayercontrolleroptionsloopskey))
+- [let WKMediaPlayerControllerOptionsVideoGravityKey: String](wkmediaplayercontrolleroptionsvideogravitykey.md)
+  The behavior for resizing the video to fit the available space. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing an appropriate constant of the [`WKVideoGravity`](wkvideogravity.md) type.
+- [let WKMediaPlayerControllerOptionsLoopsKey: String](wkmediaplayercontrolleroptionsloopskey.md)
   The behavior for playing the media in a loop. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to play the media file in a loop. If this key is not present, the media file plays one time and then ends.
 
 

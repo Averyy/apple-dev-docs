@@ -26,7 +26,7 @@ The default corner radius for groups is 6 points.
 
 ## See Also
 
-- [func setContentInset(UIEdgeInsets)](setcontentinset(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setcontentinset(_:)))
+- [func setContentInset(UIEdgeInsets)](wkinterfacegroup/setcontentinset(_:).md)
   Sets the distance between the edges of the group and any contained objects.
 
 

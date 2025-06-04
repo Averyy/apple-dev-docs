@@ -16,7 +16,7 @@ weak var delegate: (any WKCrownDelegate)? { get set }
 
 #### Discussion
 
-Assign a delegate object to receive notifications about crown rotation events. For more information about receiving crown-related data, see [`WKCrownDelegate`](https://developer.apple.com/documentation/watchkit/wkcrowndelegate).
+Assign a delegate object to receive notifications about crown rotation events. For more information about receiving crown-related data, see [`WKCrownDelegate`](wkcrowndelegate.md).
 
 
 ---

@@ -18,7 +18,7 @@ class WKPanGestureRecognizer
 
 In watchOS, a pan gesture must track exactly one touch event, but that touch event may move freely. Pan gestures are often used to drag content around a given area.
 
-You do not create instances of this class programmatically. Instead, add a pan gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer).
+You do not create instances of this class programmatically. Instead, add a pan gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
 ##### State Changes for a Pan Gesture
 
@@ -29,45 +29,45 @@ A pan gesture recognizer tracks touch events continuously, and therefore has man
 - Possible —> Began —> [Changed…] —> Ended
 - Possible —> Began —> [Changed…] —> Failed
 
-The Changed state is optional and may occur multiple times before the Ended, Failed, or Cancelled state is reached. The gesture recognizer calls its action method at each state transition. For more information on implementing continuous gesture recognizers, see [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer).
+The Changed state is optional and may occur multiple times before the Ended, Failed, or Cancelled state is reached. The gesture recognizer calls its action method at each state transition. For more information on implementing continuous gesture recognizers, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
 ##### Interface Builder Attributes
 
-Xcode lets you configure information about your gesture recognizer in your storyboard file. A pan gesture recognizer defines no attributes of its own, but you can configure attributes of the [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer) parent class. For information about those attributes, see [`WKGestureRecognizer`](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer).
+Xcode lets you configure information about your gesture recognizer in your storyboard file. A pan gesture recognizer defines no attributes of its own, but you can configure attributes of the [`WKGestureRecognizer`](wkgesturerecognizer.md) parent class. For information about those attributes, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
 ## Topics
 
 ### Tracking the Location and Velocity of the Gesture
-- [func translationInObject() -> CGPoint](translationinobject().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpangesturerecognizer/translationinobject()))
+- [func translationInObject() -> CGPoint](wkpangesturerecognizer/translationinobject.md)
   The amount of translation for the pan gesture in the current object.
-- [func velocityInObject() -> CGPoint](velocityinobject().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpangesturerecognizer/velocityinobject()))
+- [func velocityInObject() -> CGPoint](wkpangesturerecognizer/velocityinobject.md)
   The velocity of the pan gesture in the current object.
 
 ## Relationships
 
 ### Inherits From
-- [WKGestureRecognizer](wkgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer))
+- [WKGestureRecognizer](wkgesturerecognizer.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [class WKCrownSequencer](wkcrownsequencer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer))
+- [class WKCrownSequencer](wkcrownsequencer.md)
   An object that reports the current state of the digital crown, including its rotational speed when it is in motion.
-- [protocol WKCrownDelegate](wkcrowndelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate))
+- [protocol WKCrownDelegate](wkcrowndelegate.md)
   A collection of methods you can implement to track the user’s interaction with the digital crown, receiving notifications when the user rotates the crown or when rotation stops.
-- [class WKGestureRecognizer](wkgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer))
+- [class WKGestureRecognizer](wkgesturerecognizer.md)
   The base class for all other gesture recognizer classes.
-- [class WKLongPressGestureRecognizer](wklongpressgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer))
+- [class WKLongPressGestureRecognizer](wklongpressgesturerecognizer.md)
   A gesture recognizer that interprets a touch event that occurs in the same relative area for an extended period of time.
-- [class WKSwipeGestureRecognizer](wkswipegesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizer))
+- [class WKSwipeGestureRecognizer](wkswipegesturerecognizer.md)
   A gesture recognizer that interprets swiping gestures in one or more directions.
-- [class WKTapGestureRecognizer](wktapgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktapgesturerecognizer))
+- [class WKTapGestureRecognizer](wktapgesturerecognizer.md)
   A gesture recognizer that interprets a touch event occurring and ending in approximately the same area on the screen.
 
 

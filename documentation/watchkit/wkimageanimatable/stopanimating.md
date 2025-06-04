@@ -21,9 +21,9 @@ If no animation is in progress, this method does nothing.
 
 ## See Also
 
-- [func startAnimating()](startanimating().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/startanimating()))
+- [func startAnimating()](wkimageanimatable/startanimating.md)
   Begins animating the current sequence of images.
-- [func startAnimatingWithImages(in: NSRange, duration: TimeInterval, repeatCount: Int)](startanimatingwithimages(in:duration:repeatcount:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/startanimatingwithimages(in:duration:repeatcount:)))
+- [func startAnimatingWithImages(in: NSRange, duration: TimeInterval, repeatCount: Int)](wkimageanimatable/startanimatingwithimages(in:duration:repeatcount:).md)
   Animates the specified images with the given duration and repeat information.
 
 

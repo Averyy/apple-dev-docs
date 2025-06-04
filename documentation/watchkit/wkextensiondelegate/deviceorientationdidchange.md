@@ -17,25 +17,25 @@ optional func deviceOrientationDidChange()
 
 #### Discussion
 
-This method is called when the [`WKInterfaceDevice`](https://developer.apple.com/documentation/watchkit/wkinterfacedevice) object’s  [`wristLocation`](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/wristlocation), [`crownOrientation`](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/crownorientation), or [`isAutorotated`](https://developer.apple.com/documentation/watchkit/wkextension/isautorotated) properties change.
+This method is called when the [`WKInterfaceDevice`](wkinterfacedevice.md) object’s  [`wristLocation`](wkinterfacedevice/wristlocation.md), [`crownOrientation`](wkinterfacedevice/crownorientation.md), or [`isAutorotated`](wkextension/isautorotated.md) properties change.
 
 ## See Also
 
-- [var isAutorotating: Bool](isautorotating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isautorotating))
+- [var isAutorotating: Bool](wkextension/isautorotating.md)
   A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.
-- [var isAutorotated: Bool](isautorotated.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isautorotated))
+- [var isAutorotated: Bool](wkextension/isautorotated.md)
   A Boolean value that indicates whether the system has automatically rotated the user interface so that it is properly oriented for another viewer.
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
   Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
-- [func applicationDidFinishLaunching()](applicationdidfinishlaunching().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidfinishlaunching()))
+- [func applicationDidFinishLaunching()](wkextensiondelegate/applicationdidfinishlaunching.md)
   Tells the delegate that the launch process is almost done and the extension is almost ready to run.
-- [func applicationDidBecomeActive()](applicationdidbecomeactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidbecomeactive()))
+- [func applicationDidBecomeActive()](wkextensiondelegate/applicationdidbecomeactive.md)
   Tells the delegate that the watchOS app is visible and processing events.
-- [func applicationWillResignActive()](applicationwillresignactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationwillresignactive()))
+- [func applicationWillResignActive()](wkextensiondelegate/applicationwillresignactive.md)
   Tells the delegate that the system is about to deactivate the watchOS app.
-- [func applicationWillEnterForeground()](applicationwillenterforeground().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationwillenterforeground()))
+- [func applicationWillEnterForeground()](wkextensiondelegate/applicationwillenterforeground.md)
   Tells the delegate that the app is about to transition from the background to the foreground.
-- [func applicationDidEnterBackground()](applicationdidenterbackground().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidenterbackground()))
+- [func applicationDidEnterBackground()](wkextensiondelegate/applicationdidenterbackground.md)
   Tells the delegate that the app has transitioned from the foreground to the background.
 
 

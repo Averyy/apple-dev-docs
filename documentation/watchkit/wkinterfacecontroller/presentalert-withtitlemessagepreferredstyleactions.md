@@ -17,13 +17,13 @@ func presentAlert(withTitle title: String?, message: String?, preferredStyle: WK
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
+- [Navigating Between Scenes](navigating-between-scenes.md)
 
 #### Discussion
 
-Use action and alert sheets to interrupt the current workflow temporarily and display a message to the user. The sheet itself places a blurred layer over your interface controller and displays the title and message text on top of that. If you provided action buttons, those buttons are displayed at the bottom of the sheet. When the user taps one of your buttons, WatchKit dismisses the sheet automatically and executes your button’s handler block. You can also dismiss the sheet programmatically by calling the [`dismiss()`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismiss()) method.
+Use action and alert sheets to interrupt the current workflow temporarily and display a message to the user. The sheet itself places a blurred layer over your interface controller and displays the title and message text on top of that. If you provided action buttons, those buttons are displayed at the bottom of the sheet. When the user taps one of your buttons, WatchKit dismisses the sheet automatically and executes your button’s handler block. You can also dismiss the sheet programmatically by calling the [`dismiss()`](wkinterfacecontroller/dismiss().md) method.
 
-For the [`WKAlertControllerStyle.actionSheet`](https://developer.apple.com/documentation/watchkit/wkalertcontrollerstyle/actionsheet) style, this method automatically includes a localized Cancel button at the top of the sheet if you do not specify one in the `actions` array. If one of your buttons is configured to be a Cancel button—that is, you initialize it with the [`WKAlertActionStyle.cancel`](https://developer.apple.com/documentation/watchkit/wkalertactionstyle/cancel) style—the sheet displays your button’s text in place of the default Cancel button text.
+For the [`WKAlertControllerStyle.actionSheet`](wkalertcontrollerstyle/actionsheet.md) style, this method automatically includes a localized Cancel button at the top of the sheet if you do not specify one in the `actions` array. If one of your buttons is configured to be a Cancel button—that is, you initialize it with the [`WKAlertActionStyle.cancel`](wkalertactionstyle/cancel.md) style—the sheet displays your button’s text in place of the default Cancel button text.
 
 Only one action or alert sheet may be visible at a time. If you call this method and a sheet is already visible, this method dismisses the previous sheet before displaying the new one.
 
@@ -36,15 +36,15 @@ Only one action or alert sheet may be visible at a time. If you call this method
 
 ## See Also
 
-- [func presentController(withName: String, context: Any?)](presentcontroller(withname:context:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentcontroller(withname:context:)))
+- [func presentController(withName: String, context: Any?)](wkinterfacecontroller/presentcontroller(withname:context:).md)
   Presents a single interface controller modally.
-- [func presentController(withNames: [String], contexts: [Any]?)](presentcontroller(withnames:contexts:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentcontroller(withnames:contexts:)))
+- [func presentController(withNames: [String], contexts: [Any]?)](wkinterfacecontroller/presentcontroller(withnames:contexts:).md)
   Presents a page-based interface modally.
-- [func presentController(withNamesAndContexts: [(name: String, context: AnyObject)])](presentcontroller(withnamesandcontexts:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentcontroller(withnamesandcontexts:)))
+- [func presentController(withNamesAndContexts: [(name: String, context: AnyObject)])](wkinterfacecontroller/presentcontroller(withnamesandcontexts:).md)
   Presents a page-based interface modally.
-- [enum WKAlertControllerStyle](wkalertcontrollerstyle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertcontrollerstyle))
+- [enum WKAlertControllerStyle](wkalertcontrollerstyle.md)
   Constants indicating the styles for standard system alerts.
-- [func dismiss()](dismiss().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismiss()))
+- [func dismiss()](wkinterfacecontroller/dismiss.md)
   Dismisses the current interface controller from the screen.
 
 

@@ -16,17 +16,17 @@ var batteryState: WKInterfaceDeviceBatteryState { get }
 
 #### Discussion
 
-If battery monitoring is enabled, this property is set to the device’s current battery state. For a list of possible states, see [`WKInterfaceDeviceBatteryState`](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate).
+If battery monitoring is enabled, this property is set to the device’s current battery state. For a list of possible states, see [`WKInterfaceDeviceBatteryState`](wkinterfacedevicebatterystate.md).
 
-If battery monitoring is disabled, this property is set to [`WKInterfaceDeviceBatteryState.unknown`](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate/unknown).
+If battery monitoring is disabled, this property is set to [`WKInterfaceDeviceBatteryState.unknown`](wkinterfacedevicebatterystate/unknown.md).
 
 ## See Also
 
-- [var isBatteryMonitoringEnabled: Bool](isbatterymonitoringenabled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/isbatterymonitoringenabled))
+- [var isBatteryMonitoringEnabled: Bool](wkinterfacedevice/isbatterymonitoringenabled.md)
   A Boolean value that determines whether the app can monitor the device’s battery.
-- [var batteryLevel: Float](batterylevel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/batterylevel))
+- [var batteryLevel: Float](wkinterfacedevice/batterylevel.md)
   The battery’s current percent charge.
-- [enum WKInterfaceDeviceBatteryState](wkinterfacedevicebatterystate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevicebatterystate))
+- [enum WKInterfaceDeviceBatteryState](wkinterfacedevicebatterystate.md)
   The battery’s charging state.
 
 

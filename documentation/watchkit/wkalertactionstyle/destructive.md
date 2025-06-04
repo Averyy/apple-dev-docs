@@ -16,9 +16,9 @@ case destructive
 
 ## See Also
 
-- [WKAlertActionStyle.default](default.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionstyle/default))
+- [WKAlertActionStyle.default](wkalertactionstyle/default.md)
   The default style. Use this for most of your buttons.
-- [WKAlertActionStyle.cancel](cancel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionstyle/cancel))
+- [WKAlertActionStyle.cancel](wkalertactionstyle/cancel.md)
   A cancel action. Use this style for an action that cancels the operation without making changes.
 
 

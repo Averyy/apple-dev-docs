@@ -23,9 +23,9 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## See Also
 
-- [func pushController(withName: String, context: Any?)](pushcontroller(withname:context:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pushcontroller(withname:context:)))
+- [func pushController(withName: String, context: Any?)](wkinterfacecontroller/pushcontroller(withname:context:).md)
   Pushes a new interface controller onto the screen.
-- [func pop()](pop().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pop()))
+- [func pop()](wkinterfacecontroller/pop.md)
   Pops the current interface controller from the screen.
 
 

@@ -24,13 +24,13 @@ This method changes the poster image that is displayed for the movie.
 
 ## See Also
 
-- [func setAutoplays(Bool)](setautoplays(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setautoplays(_:)))
+- [func setAutoplays(Bool)](wkinterfaceinlinemovie/setautoplays(_:).md)
   Sets a Boolean value indicating whether the movie automatically begins playing as soon as the scene is presented.
-- [func setLoops(Bool)](setloops(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setloops(_:)))
+- [func setLoops(Bool)](wkinterfaceinlinemovie/setloops(_:).md)
   Sets a Boolean value indicating whether the movie plays in a continuous loop.
-- [func setMovieURL(URL)](setmovieurl(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setmovieurl(_:)))
+- [func setMovieURL(URL)](wkinterfaceinlinemovie/setmovieurl(_:).md)
   Sets the URL of the movie to play.
-- [func setVideoGravity(WKVideoGravity)](setvideogravity(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setvideogravity(_:)))
+- [func setVideoGravity(WKVideoGravity)](wkinterfaceinlinemovie/setvideogravity(_:).md)
   Sets the resizing behavior for the movie content.
 
 

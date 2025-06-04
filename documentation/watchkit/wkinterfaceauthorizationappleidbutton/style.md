@@ -17,31 +17,31 @@ enum Style
 ## Topics
 
 ### Styles
-- [WKInterfaceAuthorizationAppleIDButton.Style.default](default.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/style/default))
+- [WKInterfaceAuthorizationAppleIDButton.Style.default](wkinterfaceauthorizationappleidbutton/style/default.md)
   The system’s default button style.
-- [WKInterfaceAuthorizationAppleIDButton.Style.white](white.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/style/white))
+- [WKInterfaceAuthorizationAppleIDButton.Style.white](wkinterfaceauthorizationappleidbutton/style/white.md)
   A white button with black lettering.
-- [WKInterfaceAuthorizationAppleIDButton.Style.default](default.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/style/default))
+- [WKInterfaceAuthorizationAppleIDButton.Style.default](wkinterfaceauthorizationappleidbutton/style/default.md)
   The system’s default button style.
-- [WKInterfaceAuthorizationAppleIDButton.Style.white](white.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/style/white))
+- [WKInterfaceAuthorizationAppleIDButton.Style.white](wkinterfaceauthorizationappleidbutton/style/white.md)
   A white button with black lettering.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/style/init(rawvalue:)))
+- [init?(rawValue: Int)](wkinterfaceauthorizationappleidbutton/style/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [init(style: WKInterfaceAuthorizationAppleIDButton.Style, target: Any?, action: Selector)](init(style:target:action:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/init(style:target:action:)))
+- [init(style: WKInterfaceAuthorizationAppleIDButton.Style, target: Any?, action: Selector)](wkinterfaceauthorizationappleidbutton/init(style:target:action:).md)
   Creates an authorization button for use in SwiftUI.
-- [init(target: Any?, action: Selector)](init(target:action:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/init(target:action:)))
+- [init(target: Any?, action: Selector)](wkinterfaceauthorizationappleidbutton/init(target:action:).md)
   Creates an authorization button for use in SwiftUI.
 
 

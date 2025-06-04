@@ -17,7 +17,7 @@ optional func handle(_ extendedRuntimeSession: WKExtendedRuntimeSession)
 
 ## Mentions
 
-- [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
+- [Using extended runtime sessions](using-extended-runtime-sessions.md)
 
 #### Discussion
 

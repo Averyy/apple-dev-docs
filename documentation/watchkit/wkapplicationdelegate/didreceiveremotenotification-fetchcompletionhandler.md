@@ -32,11 +32,11 @@ For more information, see [`Pushing background updates to your App`](https://dev
 
 ## See Also
 
-- [func didRegisterForRemoteNotifications(withDeviceToken: Data)](didregisterforremotenotifications(withdevicetoken:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/didregisterforremotenotifications(withdevicetoken:)))
+- [func didRegisterForRemoteNotifications(withDeviceToken: Data)](wkapplicationdelegate/didregisterforremotenotifications(withdevicetoken:).md)
   Tells the delegate that the app successfully registered with Apple Push Notification service (APNs).
-- [func didFailToRegisterForRemoteNotificationsWithError(any Error)](didfailtoregisterforremotenotificationswitherror(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/didfailtoregisterforremotenotificationswitherror(_:)))
+- [func didFailToRegisterForRemoteNotificationsWithError(any Error)](wkapplicationdelegate/didfailtoregisterforremotenotificationswitherror(_:).md)
   Tells the delegate that Apple Push Notification service (APNs) can’t successfully complete the registration process.
-- [enum WKBackgroundFetchResult](wkbackgroundfetchresult.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkbackgroundfetchresult))
+- [enum WKBackgroundFetchResult](wkbackgroundfetchresult.md)
   The result of an attempt to download the content associated with a remote notification.
 
 

@@ -20,9 +20,9 @@ Defaults to [`false`](https://developer.apple.com/documentation/swift/false). If
 
 ## See Also
 
-- [func scrollToRow(at: Int)](scrolltorow(at:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable/scrolltorow(at:)))
+- [func scrollToRow(at: Int)](wkinterfacetable/scrolltorow(at:).md)
   Scrolls the row at the specified index into view.
-- [var curvesAtTop: Bool](curvesattop.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable/curvesattop))
+- [var curvesAtTop: Bool](wkinterfacetable/curvesattop.md)
   A Boolean value that determines whether the rows shrink to match the curved corners at the top of the screen.
 
 

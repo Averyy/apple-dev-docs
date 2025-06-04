@@ -24,7 +24,7 @@ Use this method to change the default insets you set in Interface Builder. Chang
 
 ## See Also
 
-- [func setCornerRadius(CGFloat)](setcornerradius(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setcornerradius(_:)))
+- [func setCornerRadius(CGFloat)](wkinterfacegroup/setcornerradius(_:).md)
   Changes the radius to use when drawing rounded corners for the group.
 
 

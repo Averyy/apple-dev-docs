@@ -20,7 +20,7 @@ If the volume control is inside a scrollable view, resigning the focus enables s
 
 ## See Also
 
-- [func focus()](focus().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/focus()))
+- [func focus()](wkinterfacevolumecontrol/focus.md)
   Sets the volume control as the focus for input from the Digital Crown.
 
 

@@ -39,49 +39,49 @@ Xcode lets you configure information about your movie interface object in your s
 
 | Attribute | Description |
 | --- | --- |
-| Video Gravity | The sizing behavior for the movie. Use this attribute to determine whether the movie maintains its aspect ratio and how it fills the available space. You can also configure this value programmatically using the [`setVideoGravity(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setvideogravity(_:)) method. |
-| Poster Image | The placeholder image to display for your movie. When the user taps the poser image, the movie interface object presents a modal sheet with the actual movie contents. You can also configure this value programmatically using the [`setPosterImage(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setposterimage(_:)) method. |
+| Video Gravity | The sizing behavior for the movie. Use this attribute to determine whether the movie maintains its aspect ratio and how it fills the available space. You can also configure this value programmatically using the [`setVideoGravity(_:)`](wkinterfacemovie/setvideogravity(_:).md) method. |
+| Poster Image | The placeholder image to display for your movie. When the user taps the poser image, the movie interface object presents a modal sheet with the actual movie contents. You can also configure this value programmatically using the [`setPosterImage(_:)`](wkinterfacemovie/setposterimage(_:).md) method. |
 
 ## Topics
 
 ### Setting the Movie Attributes
-- [func setMovieURL(URL)](setmovieurl(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setmovieurl(_:)))
+- [func setMovieURL(URL)](wkinterfacemovie/setmovieurl(_:).md)
   Sets the URL of the movie to play.
-- [func setVideoGravity(WKVideoGravity)](setvideogravity(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setvideogravity(_:)))
+- [func setVideoGravity(WKVideoGravity)](wkinterfacemovie/setvideogravity(_:).md)
   Sets the resizing behavior for the movie content.
-- [func setPosterImage(WKImage?)](setposterimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setposterimage(_:)))
+- [func setPosterImage(WKImage?)](wkinterfacemovie/setposterimage(_:).md)
   Sets the poster image to display for the movie.
-- [func setLoops(Bool)](setloops(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setloops(_:)))
+- [func setLoops(Bool)](wkinterfacemovie/setloops(_:).md)
   Sets a Boolean value indicating whether the movie plays in a continuous loop.
 ### Initializing for SwiftUI
-- [init()](init().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/init()))
+- [init()](wkinterfacemovie/init.md)
   Creates a movie object for use in SwiftUI.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject))
+- [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [class WKInterfaceImage](wkinterfaceimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage))
+- [class WKInterfaceImage](wkinterfaceimage.md)
   An image that can be displayed in the interface of your watchOS app.
-- [class WKImage](wkimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage))
+- [class WKImage](wkimage.md)
   A wrapper for images you use with a picker interface.
-- [protocol WKImageAnimatable](wkimageanimatable.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable))
+- [protocol WKImageAnimatable](wkimageanimatable.md)
   A collection of methods you can use to control the playback of animated images.
-- [class WKInterfaceInlineMovie](wkinterfaceinlinemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie))
+- [class WKInterfaceInlineMovie](wkinterfaceinlinemovie.md)
   An interface element that displays a video’s poster image and supports inline playing of the video.
-- [class WKInterfaceHMCamera](wkinterfacehmcamera.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacehmcamera))
+- [class WKInterfaceHMCamera](wkinterfacehmcamera.md)
   An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.
-- [enum WKVideoGravity](wkvideogravity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity))
+- [enum WKVideoGravity](wkvideogravity.md)
   Constants indicating the appearance of video content.
 
 

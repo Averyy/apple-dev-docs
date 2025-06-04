@@ -16,13 +16,13 @@ var error: (any Error)? { get }
 
 #### Discussion
 
-This property is `nil` unless the [`status`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/status) property of the player item is [`WKAudioFilePlayerStatus.failed`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayerstatus/failed). When playback fails, the error indicates the reason for the failure.
+This property is `nil` unless the [`status`](wkaudiofileplayer/status.md) property of the player item is [`WKAudioFilePlayerStatus.failed`](wkaudiofileplayerstatus/failed.md). When playback fails, the error indicates the reason for the failure.
 
 ## See Also
 
-- [var currentItem: WKAudioFilePlayerItem?](currentitem.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/currentitem))
+- [var currentItem: WKAudioFilePlayerItem?](wkaudiofileplayer/currentitem.md)
   The player’s current item.
-- [var status: WKAudioFilePlayerStatus](status.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/status))
+- [var status: WKAudioFilePlayerStatus](wkaudiofileplayer/status.md)
   The status of the player.
 
 

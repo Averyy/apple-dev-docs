@@ -20,9 +20,9 @@ func setAttributedText(_ attributedText: NSAttributedString?)
 
 ## See Also
 
-- [func setText(String?)](settext(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/settext(_:)))
+- [func setText(String?)](wkinterfacetextfield/settext(_:).md)
   Sets the text displayed by the text field.
-- [func setTextColor(UIColor?)](settextcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/settextcolor(_:)))
+- [func setTextColor(UIColor?)](wkinterfacetextfield/settextcolor(_:).md)
   Sets the text’s color.
 
 

@@ -18,52 +18,52 @@ class WKAudioFileQueuePlayer
 
 Items are stored in a queue and played sequentially. When playback of the current item ends, playback of the next item begins automatically.
 
-Because this class is a subclass of [`WKAudioFilePlayer`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer), it inherits the same playback controls and state information as its superclass. You can use the inherited methods to start and stop playback or change the playback rate. You can also get information about the current status of the player, including the elapsed playback time for the currently playing item. This method also implements the inherited [`replaceCurrentItem(with:)`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/replacecurrentitem(with:)) method and uses it to end playback of one item and start playback of another.
+Because this class is a subclass of [`WKAudioFilePlayer`](wkaudiofileplayer.md), it inherits the same playback controls and state information as its superclass. You can use the inherited methods to start and stop playback or change the playback rate. You can also get information about the current status of the player, including the elapsed playback time for the currently playing item. This method also implements the inherited [`replaceCurrentItem(with:)`](wkaudiofileplayer/replacecurrentitem(with:).md) method and uses it to end playback of one item and start playback of another.
 
 ## Topics
 
 ### Creating a Queue Player
-- [convenience init(items: [WKAudioFilePlayerItem])](init(items:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer/init(items:)))
+- [convenience init(items: [WKAudioFilePlayerItem])](wkaudiofilequeueplayer/init(items:).md)
   Creates and returns a player initialized with an array of items.
 ### Managing Items
-- [var items: [WKAudioFilePlayerItem]](items.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer/items))
+- [var items: [WKAudioFilePlayerItem]](wkaudiofilequeueplayer/items.md)
   The array of queued items.
-- [func advanceToNextItem()](advancetonextitem().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer/advancetonextitem()))
+- [func advanceToNextItem()](wkaudiofilequeueplayer/advancetonextitem.md)
   Ends playback of the current item and begins playing the next item in the queue.
-- [func appendItem(WKAudioFilePlayerItem)](appenditem(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer/appenditem(_:)))
+- [func appendItem(WKAudioFilePlayerItem)](wkaudiofilequeueplayer/appenditem(_:).md)
   Adds the specified item to the end of the queue.
-- [func removeItem(WKAudioFilePlayerItem)](removeitem(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer/removeitem(_:)))
+- [func removeItem(WKAudioFilePlayerItem)](wkaudiofilequeueplayer/removeitem(_:).md)
   Removes the specified item from the queue.
-- [func removeAllItems()](removeallitems().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer/removeallitems()))
+- [func removeAllItems()](wkaudiofilequeueplayer/removeallitems.md)
   Removes all items from the queue.
 
 ## Relationships
 
 ### Inherits From
-- [WKAudioFilePlayer](wkaudiofileplayer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer))
+- [WKAudioFilePlayer](wkaudiofileplayer.md)
 ### Conforms To
-- CVarArg ([Apple Docs](https://developer.apple.com/documentation/Swift/CVarArg))
-- CustomDebugStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible))
-- CustomStringConvertible ([Apple Docs](https://developer.apple.com/documentation/Swift/CustomStringConvertible))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- NSObjectProtocol ([Apple Docs](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol))
+- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
+- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
+- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
 
 ## See Also
 
-- [Playing Background Audio](playing-background-audio.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/playing-background-audio))
+- [Playing Background Audio](playing-background-audio.md)
   Enable background audio in your app to provide a seamless playback experience.
-- [Adding a Now Playing View](adding-a-now-playing-view.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/adding-a-now-playing-view))
+- [Adding a Now Playing View](adding-a-now-playing-view.md)
   Provide a view that controls the currently playing audio from your app.
-- [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol))
+- [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md)
   An interface element that provides control of the audio volume from the watch or a paired iPhone.
-- PUICAutoLaunchAudioOptOut ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut))
+- [PUICAutoLaunchAudioOptOut](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut)
   A Boolean value that indicates whether a watchOS app should opt out of automatically launching when its companion iOS app starts playing audio content.
-- [class WKAudioFilePlayer](wkaudiofileplayer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer))
+- [class WKAudioFilePlayer](wkaudiofileplayer.md)
   An object that controls playback of a single audio item.
-- [class WKAudioFilePlayerItem](wkaudiofileplayeritem.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem))
+- [class WKAudioFilePlayerItem](wkaudiofileplayeritem.md)
   An object that manages the presentation state of an audio file while it is playing.
-- [class WKAudioFileAsset](wkaudiofileasset.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset))
+- [class WKAudioFileAsset](wkaudiofileasset.md)
   An object that stores a reference to an audio file and provides metadata information about that file.
 
 

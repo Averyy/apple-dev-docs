@@ -16,11 +16,11 @@ let WKAudioRecorderControllerOptionsAutorecordKey: String
 
 ## See Also
 
-- [let WKAudioRecorderControllerOptionsActionTitleKey: String](wkaudiorecordercontrolleroptionsactiontitlekey.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiorecordercontrolleroptionsactiontitlekey))
+- [let WKAudioRecorderControllerOptionsActionTitleKey: String](wkaudiorecordercontrolleroptionsactiontitlekey.md)
   The title to display on the button that the user taps to accept a recording. The value of this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object. If you do not specify this option, the button title is set to “Save”.
-- [let WKAudioRecorderControllerOptionsAlwaysShowActionTitleKey: String](wkaudiorecordercontrolleroptionsalwaysshowactiontitlekey.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiorecordercontrolleroptionsalwaysshowactiontitlekey))
+- [let WKAudioRecorderControllerOptionsAlwaysShowActionTitleKey: String](wkaudiorecordercontrolleroptionsalwaysshowactiontitlekey.md)
   The behavior for showing the action button. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object with a Boolean value. When the value is [`true`](https://developer.apple.com/documentation/swift/true), the recording interface always shows the action button. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the sheet shows the button only after the user has recorded some audio. The default value for this option is YES.
-- [let WKAudioRecorderControllerOptionsMaximumDurationKey: String](wkaudiorecordercontrolleroptionsmaximumdurationkey.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiorecordercontrolleroptionsmaximumdurationkey))
+- [let WKAudioRecorderControllerOptionsMaximumDurationKey: String](wkaudiorecordercontrolleroptionsmaximumdurationkey.md)
   The maximum length of recorded audio clips. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object with an [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) value containing the maximum duration in seconds. If you do not specify this option, there is no maximum recording time.
 
 

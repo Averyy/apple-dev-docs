@@ -17,29 +17,29 @@ enum WKInterfaceLayoutDirection
 ## Topics
 
 ### Constants
-- [WKInterfaceLayoutDirection.leftToRight](lefttoright.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelayoutdirection/lefttoright))
+- [WKInterfaceLayoutDirection.leftToRight](wkinterfacelayoutdirection/lefttoright.md)
   The layout direction is left-to-right.
-- [WKInterfaceLayoutDirection.rightToLeft](righttoleft.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelayoutdirection/righttoleft))
+- [WKInterfaceLayoutDirection.rightToLeft](wkinterfacelayoutdirection/righttoleft.md)
   The layout direction right-to-left. This value is appropriate when your app is running with localizations such as Arabic or Hebrew that should have the user interface layout origin on the right edge of the coordinate system.
 ### Initializers
-- [init?(rawValue: Int)](init(rawvalue:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelayoutdirection/init(rawvalue:)))
+- [init?(rawValue: Int)](wkinterfacelayoutdirection/init(rawvalue:).md)
 
 ## Relationships
 
 ### Conforms To
-- BitwiseCopyable ([Apple Docs](https://developer.apple.com/documentation/Swift/BitwiseCopyable))
-- Equatable ([Apple Docs](https://developer.apple.com/documentation/Swift/Equatable))
-- Hashable ([Apple Docs](https://developer.apple.com/documentation/Swift/Hashable))
-- RawRepresentable ([Apple Docs](https://developer.apple.com/documentation/Swift/RawRepresentable))
-- Sendable ([Apple Docs](https://developer.apple.com/documentation/Swift/Sendable))
+- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
+- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
+- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
+- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
+- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
 
 ## See Also
 
-- [var layoutDirection: WKInterfaceLayoutDirection](layoutdirection.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/layoutdirection))
+- [var layoutDirection: WKInterfaceLayoutDirection](wkinterfacedevice/layoutdirection.md)
   The layout direction of the user interface.
-- [class func interfaceLayoutDirection(for: WKInterfaceSemanticContentAttribute) -> WKInterfaceLayoutDirection](interfacelayoutdirection(for:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/interfacelayoutdirection(for:)))
+- [class func interfaceLayoutDirection(for: WKInterfaceSemanticContentAttribute) -> WKInterfaceLayoutDirection](wkinterfacedevice/interfacelayoutdirection(for:).md)
   Returns the user interface direction for the given semantic content attribute.
-- [enum WKInterfaceSemanticContentAttribute](wkinterfacesemanticcontentattribute.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacesemanticcontentattribute))
+- [enum WKInterfaceSemanticContentAttribute](wkinterfacesemanticcontentattribute.md)
   A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
 
 

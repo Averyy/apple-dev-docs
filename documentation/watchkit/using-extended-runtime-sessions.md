@@ -12,19 +12,19 @@ With background sessions, your app continues to run in the background, but the s
 
 Select a session type based on the app’s intended use—not based on the features that the session provides. Extended runtime sessions let the app continue to communicate with a Bluetooth device, process data, or play sounds or haptics, even after the watch’s screen turns off.
 
-> ❗ **Important**:  To maintain high performance on Apple Watch, limit the amount of work performed during an extended runtime session. If your app sustains high CPU usage over a period of time, the system may cancel the session (see [`WKExtendedRuntimeSessionErrorCode.exceededResourceLimits`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionerrorcode/exceededresourcelimits)). Use Xcode’s CPU report tool or the time profiler in Instruments to test and minimize your app’s CPU usage.
+> ❗ **Important**:  To maintain high performance on Apple Watch, limit the amount of work performed during an extended runtime session. If your app sustains high CPU usage over a period of time, the system may cancel the session (see [`WKExtendedRuntimeSessionErrorCode.exceededResourceLimits`](wkextendedruntimesessionerrorcode/exceededresourcelimits.md)). Use Xcode’s CPU report tool or the time profiler in Instruments to test and minimize your app’s CPU usage.
 
- To maintain high performance on Apple Watch, limit the amount of work performed during an extended runtime session. If your app sustains high CPU usage over a period of time, the system may cancel the session (see [`WKExtendedRuntimeSessionErrorCode.exceededResourceLimits`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionerrorcode/exceededresourcelimits)). Use Xcode’s CPU report tool or the time profiler in Instruments to test and minimize your app’s CPU usage.
+ To maintain high performance on Apple Watch, limit the amount of work performed during an extended runtime session. If your app sustains high CPU usage over a period of time, the system may cancel the session (see [`WKExtendedRuntimeSessionErrorCode.exceededResourceLimits`](wkextendedruntimesessionerrorcode/exceededresourcelimits.md)). Use Xcode’s CPU report tool or the time profiler in Instruments to test and minimize your app’s CPU usage.
 
 ##### Set Up the Session
 
-Before starting an extended runtime session, enable your WatchKit extension’s Background Modes capability and select your app’s session type (see [`Figure 1`](https://developer.apple.com/documentation/watchkit/using_extended_runtime_sessions#3189143)). Each app can only support one type of extended runtime session, although it’s possible to support other background modes in combination with extended runtime.
+Before starting an extended runtime session, enable your WatchKit extension’s Background Modes capability and select your app’s session type (see [`Figure 1`](using_extended_runtime_sessions#3189143.md)). Each app can only support one type of extended runtime session, although it’s possible to support other background modes in combination with extended runtime.
 
 ![A screenshot showing the Session Type setting for the Background Modes capability.](https://docs-assets.developer.apple.com/published/451eab875e5b686824dd5c24b4cfe380/media-3189143%402x.png)
 
-A physical therapy app, for example, might use a [`WKExtendedRuntimeSession`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession) for range-of-motion exercises and an [`HKWorkoutSession`](https://developer.apple.com/documentation/HealthKit/HKWorkoutSession) for vigorous cross-training. Using separate sessions keeps the range-of-motion exercise from impacting the user’s Move and Exercise rings, but the user still gets full credit for the cross-training.
+A physical therapy app, for example, might use a [`WKExtendedRuntimeSession`](wkextendedruntimesession.md) for range-of-motion exercises and an [`HKWorkoutSession`](https://developer.apple.com/documentation/HealthKit/HKWorkoutSession) for vigorous cross-training. Using separate sessions keeps the range-of-motion exercise from impacting the user’s Move and Exercise rings, but the user still gets full credit for the cross-training.
 
-To set up the session, instantiate a [`WKExtendedRuntimeSession`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession) object, and assign your delegate. The system automatically creates a session based on the session type specified in your Background Modes capabilities.
+To set up the session, instantiate a [`WKExtendedRuntimeSession`](wkextendedruntimesession.md) object, and assign your delegate. The system automatically creates a session based on the session type specified in your Background Modes capabilities.
 
 ```swift
 // Create the session object.
@@ -34,7 +34,7 @@ session = WKExtendedRuntimeSession()
 session.delegate = self
 ```
 
-Implement the [`WKExtendedRuntimeSessionDelegate`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate) methods to track your session.
+Implement the [`WKExtendedRuntimeSessionDelegate`](wkextendedruntimesessiondelegate.md) methods to track your session.
 
 ```swift
 // MARK:- Extended Runtime Session Delegate Methods
@@ -52,17 +52,17 @@ func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, 
 }
 ```
 
-Finally, start your session. For most session types, you start the session immediately by calling [`start()`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start()). For alarm sessions, you can schedule the session to start any time within the next 36 hours by calling [`start(at:)`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start(at:)).
+Finally, start your session. For most session types, you start the session immediately by calling [`start()`](wkextendedruntimesession/start().md). For alarm sessions, you can schedule the session to start any time within the next 36 hours by calling [`start(at:)`](wkextendedruntimesession/start(at:).md).
 
 ```swift
 session.start()
 ```
 
-You must always start or schedule the extended runtime session when your app state is in the [`WKApplicationState.active`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/active) state.
+You must always start or schedule the extended runtime session when your app state is in the [`WKApplicationState.active`](wkapplicationstate/active.md) state.
 
-The session automatically stops when its allotted time expires. You can track the time remaining using its [`expirationDate`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/expirationdate) property. You can also stop a session by calling [`invalidate()`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/invalidate()).
+The session automatically stops when its allotted time expires. You can track the time remaining using its [`expirationDate`](wkextendedruntimesession/expirationdate.md) property. You can also stop a session by calling [`invalidate()`](wkextendedruntimesession/invalidate().md).
 
-For sessions started with [`start(at:)`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start(at:)), you can only call [`invalidate()`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/invalidate()) when the app is active. For all other sessions, you can call [`invalidate()`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/invalidate()) to end a session at any time.
+For sessions started with [`start(at:)`](wkextendedruntimesession/start(at:).md), you can only call [`invalidate()`](wkextendedruntimesession/invalidate().md) when the app is active. For all other sessions, you can call [`invalidate()`](wkextendedruntimesession/invalidate().md) to end a session at any time.
 
 ```swift
 @IBAction func stopButton() {
@@ -85,21 +85,21 @@ Extended runtime sessions gain the following features, based on the session type
 
  sessions continue to run in the background, even if the user dismisses the app or launches another app. Background sessions continue to run until the time limit expires, or your app invalidates the session.
 
-Finally, s_chedulable_ sessions can start any time within the next 36 hours. You must schedule the session by calling [`start(at:)`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start(at:)) while your app is in the [`WKApplicationState.active`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/active) state. The system can then suspend or terminate your app without affecting the session. The system relaunches your app as needed to handle a scheduled session, calling your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-4qxgv) method. If you don’t set the session’s delegate in the [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-4qxgv) method, the system ends the session. Additionally, you can only schedule one session at a time; if you need to reschedule a session, invalidate the current session, and schedule a new one.
+Finally, s_chedulable_ sessions can start any time within the next 36 hours. You must schedule the session by calling [`start(at:)`](wkextendedruntimesession/start(at:).md) while your app is in the [`WKApplicationState.active`](wkapplicationstate/active.md) state. The system can then suspend or terminate your app without affecting the session. The system relaunches your app as needed to handle a scheduled session, calling your extension delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-4qxgv.md) method. If you don’t set the session’s delegate in the [`handle(_:)`](wkextensiondelegate/handle(_:)-4qxgv.md) method, the system ends the session. Additionally, you can only schedule one session at a time; if you need to reschedule a session, invalidate the current session, and schedule a new one.
 
-After the session starts, the app continues to run in the background until the time limit expires, or your app invalidates the session. During the session, your app must trigger the alarm by calling the session’s [`notifyUser(hapticType:repeatHandler:)`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/notifyuser(haptictype:repeathandler:)) method. If your app isn’t active, playing the haptic displays a system alarm alert to the user.
+After the session starts, the app continues to run in the background until the time limit expires, or your app invalidates the session. During the session, your app must trigger the alarm by calling the session’s [`notifyUser(hapticType:repeatHandler:)`](wkextendedruntimesession/notifyuser(haptictype:repeathandler:).md) method. If your app isn’t active, playing the haptic displays a system alarm alert to the user.
 
 If you fail to play a haptic during the session, the system displays a warning and offers to disable future sessions.
 
 ## See Also
 
-- [Background execution](background-execution.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/background-execution))
+- [Background execution](background-execution.md)
   Manage background sessions and tasks.
-- [Life cycles](life-cycles.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/life-cycles))
+- [Life cycles](life-cycles.md)
   Receive and respond to life-cycle notifications.
-- [class WKExtendedRuntimeSession](wkextendedruntimesession.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession))
+- [class WKExtendedRuntimeSession](wkextendedruntimesession.md)
   A session that continues to run your app after the user has stopped interacting.
-- [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh))
+- [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md)
   Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 
 

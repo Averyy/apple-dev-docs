@@ -26,7 +26,7 @@ Changing the visible region may require the loading of additional map tiles to r
 
 ## See Also
 
-- [func setVisibleMapRect(MKMapRect)](setvisiblemaprect(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setvisiblemaprect(_:)))
+- [func setVisibleMapRect(MKMapRect)](wkinterfacemap/setvisiblemaprect(_:).md)
   Changes the map’s visible region to the specified map rectangle.
 
 

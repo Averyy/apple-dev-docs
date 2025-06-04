@@ -20,11 +20,11 @@ When the picker’s focus style includes a caption, the picker gets the text for
 
 ## See Also
 
-- [var contentImage: WKImage?](contentimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/contentimage))
+- [var contentImage: WKImage?](wkpickeritem/contentimage.md)
   The image to display for the item.
-- [var title: String?](title.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/title))
+- [var title: String?](wkpickeritem/title.md)
   The text to display for the item.
-- [var accessoryImage: WKImage?](accessoryimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/accessoryimage))
+- [var accessoryImage: WKImage?](wkpickeritem/accessoryimage.md)
   A small image to display next to the title string.
 
 
