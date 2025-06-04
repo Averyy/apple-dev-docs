@@ -1,6 +1,6 @@
 # presentController(withName:context:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Presents a single interface controller modally.
@@ -11,14 +11,15 @@ Presents a single interface controller modally.
 ## Declaration
 
 ```swift
-@MainActor func presentController(withName name: String, context: Any?)
+@MainActor
+func presentController(withName name: String, context: Any?)
 ```
 
 ## Mentions
 
 - [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
 
-## Overview
+#### Discussion
 
 After calling this method, the WatchKit extension loads and initializes the new interface controller and animates it into position on top of the current interface controller. A modal interface slides up from the bottom of the screen and completely covers the previous interface.
 
@@ -34,10 +35,15 @@ Always call this method from your WatchKit extension’s main thread.
 ## See Also
 
 - [func presentController(withNames: [String], contexts: [Any]?)](presentcontroller(withnames:contexts:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentcontroller(withnames:contexts:)))
+  Presents a page-based interface modally.
 - [func presentController(withNamesAndContexts: [(name: String, context: AnyObject)])](presentcontroller(withnamesandcontexts:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentcontroller(withnamesandcontexts:)))
+  Presents a page-based interface modally.
 - [func presentAlert(withTitle: String?, message: String?, preferredStyle: WKAlertControllerStyle, actions: [WKAlertAction])](presentalert(withtitle:message:preferredstyle:actions:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentalert(withtitle:message:preferredstyle:actions:)))
+  Presents an alert or action sheet over the current interface controller.
 - [enum WKAlertControllerStyle](wkalertcontrollerstyle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertcontrollerstyle))
+  Constants indicating the styles for standard system alerts.
 - [func dismiss()](dismiss().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismiss()))
+  Dismisses the current interface controller from the screen.
 
 
 ---

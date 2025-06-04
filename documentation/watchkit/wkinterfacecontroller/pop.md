@@ -1,6 +1,6 @@
 # pop()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Pops the current interface controller from the screen.
@@ -11,14 +11,15 @@ Pops the current interface controller from the screen.
 ## Declaration
 
 ```swift
-@MainActor func pop()
+@MainActor
+func pop()
 ```
 
 ## Mentions
 
 - [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
 
-## Overview
+#### Discussion
 
 After pushing an interface controller onto the screen, use this method to remove it and display the previous interface controller again. The system animates the transition back to the previous interface controller asynchronously.
 
@@ -27,7 +28,9 @@ Always call this method from your WatchKit extension’s main thread.
 ## See Also
 
 - [func pushController(withName: String, context: Any?)](pushcontroller(withname:context:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pushcontroller(withname:context:)))
+  Pushes a new interface controller onto the screen.
 - [func popToRootController()](poptorootcontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/poptorootcontroller()))
+  Pops all interface controllers except the app’s initial interface controller.
 
 
 ---

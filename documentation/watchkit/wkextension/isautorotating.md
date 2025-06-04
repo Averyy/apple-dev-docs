@@ -1,6 +1,6 @@
 # isAutorotating
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.
@@ -11,10 +11,11 @@ A Boolean value that determines whether the interface automatically rotates when
 ## Declaration
 
 ```swift
-@MainActor var isAutorotating: Bool { get set }
+@MainActor
+var isAutorotating: Bool { get set }
 ```
 
-## Overview
+#### Discussion
 
 Defaults to [`false`](https://developer.apple.com/documentation/swift/false).
 
@@ -25,9 +26,13 @@ Do not enable autorotation indefinitely. Instead, enable it selectively on a spe
 ## See Also
 
 - [func deviceOrientationDidChange()](deviceorientationdidchange().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/deviceorientationdidchange()))
+  Tells the delegate that the device’s orientation has changed.
 - [var isAutorotated: Bool](isautorotated.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isautorotated))
+  A Boolean value that indicates whether the system has automatically rotated the user interface so that it is properly oriented for another viewer.
 - [var globalTintColor: UIColor](globaltintcolor.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/globaltintcolor))
+  The watchOS app’s global tint color.
 - [func enableWaterLock()](enablewaterlock().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/enablewaterlock()))
+  Disables the Apple Watch touch screen to prevent accidental taps while the watch is underwater.
 
 
 ---

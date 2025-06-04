@@ -1,6 +1,6 @@
 # WKSwipeGestureRecognizerDirection
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: struct
 
 Constants indicating the direction of a swipe.

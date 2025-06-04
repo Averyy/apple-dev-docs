@@ -1,6 +1,6 @@
 # WKHapticType.underwaterDepthCriticalPrompt
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 **Availability**:

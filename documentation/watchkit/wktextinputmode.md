@@ -1,6 +1,6 @@
 # WKTextInputMode
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The input modes supported by the text input controller.
@@ -38,8 +38,11 @@ enum WKTextInputMode
 ## See Also
 
 - [func presentTextInputController(withSuggestions: [String]?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](presenttextinputcontroller(withsuggestions:allowedinputmode:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presenttextinputcontroller(withsuggestions:allowedinputmode:completion:)))
+  Displays a modal interface for gathering text input from the user.
 - [func presentTextInputControllerWithSuggestions(forLanguage: ((String) -> [Any]?)?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](presenttextinputcontrollerwithsuggestions(forlanguage:allowedinputmode:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presenttextinputcontrollerwithsuggestions(forlanguage:allowedinputmode:completion:)))
+  Displays a modal interface for gathering language-specific text input from the user.
 - [func dismissTextInputController()](dismisstextinputcontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismisstextinputcontroller()))
+  Dismisses the text input controller without returning any text.
 
 
 ---

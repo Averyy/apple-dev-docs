@@ -1,6 +1,6 @@
 # setTintColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the volume control’s tint color.
@@ -14,7 +14,7 @@ Sets the volume control’s tint color.
 func setTintColor(_ tintColor: UIColor?)
 ```
 
-## Overview
+#### Discussion
 
 The system only applies the tint color to the control’s default state (when the crown is not being used to adjust the volume).
 

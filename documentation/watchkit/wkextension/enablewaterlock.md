@@ -1,6 +1,6 @@
 # enableWaterLock()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Disables the Apple Watch touch screen to prevent accidental taps while the watch is underwater.
@@ -11,10 +11,11 @@ Disables the Apple Watch touch screen to prevent accidental taps while the watch
 ## Declaration
 
 ```swift
-@MainActor func enableWaterLock()
+@MainActor
+func enableWaterLock()
 ```
 
-## Overview
+#### Discussion
 
 The following rules apply when using Water Lock:
 
@@ -26,8 +27,11 @@ The following rules apply when using Water Lock:
 ## See Also
 
 - [var isAutorotating: Bool](isautorotating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isautorotating))
+  A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.
 - [var isAutorotated: Bool](isautorotated.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isautorotated))
+  A Boolean value that indicates whether the system has automatically rotated the user interface so that it is properly oriented for another viewer.
 - [var globalTintColor: UIColor](globaltintcolor.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/globaltintcolor))
+  The watchOS app’s global tint color.
 
 
 ---

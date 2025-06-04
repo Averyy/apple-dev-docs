@@ -1,6 +1,6 @@
 # setAlpha(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the opacity of the interface object.
@@ -14,7 +14,7 @@ Sets the opacity of the interface object.
 func setAlpha(_ alpha: CGFloat)
 ```
 
-## Overview
+#### Discussion
 
 Use this property to make an object fully or partially transparent. A partially transparent object allows the color or background image associated with the containing group or interface controller show through. A fully transparent object cannot be seen but continues to occupy space in your interface.
 
@@ -27,6 +27,7 @@ Changes to the alpha value of an object are animatable.
 ## See Also
 
 - [func setHidden(Bool)](sethidden(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/sethidden(_:)))
+  Hides or shows the interface object in your user interface.
 
 
 ---

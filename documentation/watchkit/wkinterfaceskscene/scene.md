@@ -1,6 +1,6 @@
 # scene
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The currently presented SpriteKit scene.
@@ -18,14 +18,16 @@ var scene: SKScene? { get }
 
 - [Configuring a WatchKit Scene in a Storyboard](configuring-a-watchkit-scene-in-a-storyboard.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/configuring-a-watchkit-scene-in-a-storyboard))
 
-## Overview
+#### Discussion
 
 The default value is `nil`.
 
 ## See Also
 
 - [func presentScene(SKScene?)](presentscene(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/presentscene(_:)))
+  Presents a scene.
 - [func presentScene(SKScene, transition: SKTransition)](presentscene(_:transition:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/presentscene(_:transition:)))
+  Transitions from the current scene to a new scene.
 
 
 ---

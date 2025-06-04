@@ -1,6 +1,6 @@
 # dismissAddPassesController()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Dismisses the pass interface controller
@@ -11,16 +11,18 @@ Dismisses the pass interface controller
 ## Declaration
 
 ```swift
-@MainActor func dismissAddPassesController()
+@MainActor
+func dismissAddPassesController()
 ```
 
-## Overview
+#### Discussion
 
 Use this method to dismiss a pass controller you previously displayed using the [`presentAddPassesController(withPasses:completion:)`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentaddpassescontroller(withpasses:completion:)) method. When dismissing the pass controller programmatically, WatchKit still calls the completion block you provided.
 
 ## See Also
 
 - [func presentAddPassesController(withPasses: [PKPass], completion: () -> Void)](presentaddpassescontroller(withpasses:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentaddpassescontroller(withpasses:completion:)))
+  Displays a modal interface for presenting passes to the user.
 
 
 ---

@@ -1,6 +1,6 @@
 # init(url:title:albumTitle:artist:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Returns an audio file asset and sets the metadata for that item.
@@ -14,7 +14,7 @@ Returns an audio file asset and sets the metadata for that item.
 convenience init(url URL: URL, title: String?, albumTitle: String?, artist: String?)
 ```
 
-## Overview
+#### Return Value
 
 An initialized asset object.
 
@@ -28,6 +28,7 @@ An initialized asset object.
 ## See Also
 
 - [convenience init(url: URL)](init(url:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset/init(url:)))
+  Returns an asset for the audio file at the specified URL.
 
 
 ---

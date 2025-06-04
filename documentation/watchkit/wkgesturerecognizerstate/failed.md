@@ -1,6 +1,6 @@
 # WKGestureRecognizerState.failed
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 **Availability**:

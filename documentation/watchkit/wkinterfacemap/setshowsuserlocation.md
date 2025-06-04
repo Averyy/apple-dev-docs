@@ -1,6 +1,6 @@
 # setShowsUserLocation(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets whether the map shows the user’s current location.
@@ -14,7 +14,7 @@ Sets whether the map shows the user’s current location.
 func setShowsUserLocation(_ showsUserLocation: Bool)
 ```
 
-## Overview
+#### Discussion
 
 Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) displays the users current location on the map. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
@@ -27,8 +27,11 @@ This property doesn’t indicate whether the user’s position is visible on the
 ## See Also
 
 - [func setShowsUserHeading(Bool)](setshowsuserheading(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setshowsuserheading(_:)))
+  Sets whether the map shows the user heading.
 - [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](setusertrackingmode(_:animated:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setusertrackingmode(_:animated:)))
+  Sets the map’s tracking mode.
 - [WKInterfaceMap.UserTrackingMode](usertrackingmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode))
+  Modes for tracking the user’s location on the map.
 
 
 ---

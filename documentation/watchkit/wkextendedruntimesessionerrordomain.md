@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionErrorDomain
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: var
 
 The domain for errors reported by extended runtime sessions.
@@ -14,13 +14,14 @@ The domain for errors reported by extended runtime sessions.
 let WKExtendedRuntimeSessionErrorDomain: String
 ```
 
-## Overview
+#### Discussion
 
 The session passes these errors to the session delegate’s [`extendedRuntimeSession(_:didInvalidateWith:error:)`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesession(_:didinvalidatewith:error:)) method.
 
 ## See Also
 
 - [enum WKExtendedRuntimeSessionErrorCode](wkextendedruntimesessionerrorcode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionerrorcode))
+  The error codes reported by extended runtime sessions.
 
 
 ---

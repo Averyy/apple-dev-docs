@@ -1,6 +1,6 @@
 # WKInterfaceScrollPosition.top
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The top of the screen.
@@ -17,7 +17,9 @@ case top
 ## See Also
 
 - [WKInterfaceScrollPosition.bottom](bottom.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescrollposition/bottom))
+  The bottom of the screen.
 - [WKInterfaceScrollPosition.centeredVertically](centeredvertically.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescrollposition/centeredvertically))
+  The vertical center of the screen.
 
 
 ---

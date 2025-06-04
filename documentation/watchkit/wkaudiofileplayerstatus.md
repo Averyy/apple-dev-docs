@@ -1,6 +1,6 @@
 # WKAudioFilePlayerStatus
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constants that represent the status of the player.

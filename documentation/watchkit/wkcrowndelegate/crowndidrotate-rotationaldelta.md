@@ -1,6 +1,6 @@
 # crownDidRotate(_:rotationalDelta:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Called when the user rotates the crown.
@@ -22,7 +22,9 @@ optional func crownDidRotate(_ crownSequencer: WKCrownSequencer?, rotationalDelt
 ## See Also
 
 - [var rotationsPerSecond: Double](rotationspersecond.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/rotationspersecond))
+  The rotational speed of the crown, measured in rotations per second.
 - [func crownDidBecomeIdle(WKCrownSequencer?)](crowndidbecomeidle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate/crowndidbecomeidle(_:)))
+  Called when the user stops rotating the crown.
 
 
 ---

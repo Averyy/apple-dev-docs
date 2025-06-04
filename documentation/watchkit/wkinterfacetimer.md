@@ -1,6 +1,6 @@
 # WKInterfaceTimer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A label that displays a countdown or count-up timer.
@@ -14,7 +14,7 @@ A label that displays a countdown or count-up timer.
 class WKInterfaceTimer
 ```
 
-## Overview
+#### Overview
 
 Use a timer object to configure the amount of time and the appearance of the timer text. When you start the timer, WatchKit updates the displayed text automatically on the user’s Apple Watch without further interactions from your extension. To know when the timer reaches 0, configure a [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) object with the same target date you used to set up the timer.
 
@@ -26,15 +26,16 @@ During the initialization of your interface controller, WatchKit creates any nee
 
  This class provides methods for configuring interface objects at initialization time or while an interface controller is active on the user’s Apple Watch. WatchKit coalesces the data from all setter method calls made during the same run loop iteration and transmits it to the device at the end of the run loop. If you set an attribute to different values in the same run loop iteration,  only the last value is transmitted. If you set an attribute to the same value in the same run loop iteration, WatchKit generates a log message so that you can track down the duplicate change.
 
+##### Interface Builder Configuration Options
+
 Xcode lets you configure information about your timer interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Attribute'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Description', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Format', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The format of the timer string. Select different options to update the appearance of the timer label in your storyboard scene.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Enabled', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'A checkbox indicating whether the timer starts running as soon as your interface is initialized.', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Units', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'The units to be displayed in the label. Enabling checkboxes in this section causes the timer to display the corresponding units that are in range of the time. In other words, a timer with 2 minutes remaining displays minutes and seconds only; it does not display hours, days, or any larger units.', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Preview Secs', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The initial number of seconds for the timer. You can change this value programmatically using the '}, {'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceTimer/setDate(_:)', 'type': 'reference', 'isActive': True}, {'type': 'text', 'text': ' method.'}]}] |
+| Attribute | Description |
+| --- | --- |
+| Format | The format of the timer string. Select different options to update the appearance of the timer label in your storyboard scene. |
+| Enabled | A checkbox indicating whether the timer starts running as soon as your interface is initialized. |
+| Units | The units to be displayed in the label. Enabling checkboxes in this section causes the timer to display the corresponding units that are in range of the time. In other words, a timer with 2 minutes remaining displays minutes and seconds only; it does not display hours, days, or any larger units. |
+| Preview Secs | The initial number of seconds for the timer. You can change this value programmatically using the [`setDate(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/setdate(_:)) method. |
 
 A date object is a custom label whose text you cannot set directly. However, you can customize the appearance of the date object as you would for a label using the Attributes inspector in Xcode. For information about the label attributes you can configure, see [`WKInterfaceLabel`](https://developer.apple.com/documentation/watchkit/wkinterfacelabel).
 
@@ -66,15 +67,25 @@ A date object is a custom label whose text you cannot set directly. However, you
 ## See Also
 
 - [class WKInterfaceLabel](wkinterfacelabel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelabel))
+  An interface element that displays static text.
 - [class WKInterfaceDate](wkinterfacedate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedate))
+  A label that displays the current date or time.
 - [class WKInterfaceButton](wkinterfacebutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton))
+  A button in the user interface of your watchOS app.
 - [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton))
+  A button that you can use to trigger a Sign in with Apple request.
 - [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepaymentbutton))
+  A button that you can use to trigger payments through Apple Pay.
 - [class WKInterfaceTextField](wkinterfacetextfield.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield))
+  An interface element that displays an editable text area.
 - [class WKInterfaceSwitch](wkinterfaceswitch.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch))
+  An interface element that toggles between an On and Off state.
 - [class WKInterfaceSlider](wkinterfaceslider.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider))
+  An interface element that lets users select a single floating-point value from a range of values.
 - [class WKInterfaceActivityRing](wkinterfaceactivityring.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring))
+  A view that displays data from a HealthKit activity summary object.
 - [class WKInterfaceMap](wkinterfacemap.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap))
+  An interface element that displays a noninteractive map for the location you specify.
 
 
 ---

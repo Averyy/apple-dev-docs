@@ -1,6 +1,6 @@
 # pickerDidFocus(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Called to let you know that the specified picker is now receiving input from the Digital Crown.
@@ -11,10 +11,11 @@ Called to let you know that the specified picker is now receiving input from the
 ## Declaration
 
 ```swift
-@MainActor func pickerDidFocus(_ picker: WKInterfacePicker)
+@MainActor
+func pickerDidFocus(_ picker: WKInterfacePicker)
 ```
 
-## Overview
+#### Discussion
 
 A picker becomes focused when the user taps it or when you call the [`focus()`](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/focus()) method of the picker itself. When a picker is focused, input from the Digital Crown updates the selected item.
 
@@ -23,7 +24,9 @@ The default implementation of this method does nothing. Subclasses can override 
 ## See Also
 
 - [func pickerDidResignFocus(WKInterfacePicker)](pickerdidresignfocus(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pickerdidresignfocus(_:)))
+  Called to let you know that the specified picker is no longer receiving input from the Digital Crown.
 - [func pickerDidSettle(WKInterfacePicker)](pickerdidsettle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pickerdidsettle(_:)))
+  Called to let you know when the user settles on a value in a picker.
 
 
 ---

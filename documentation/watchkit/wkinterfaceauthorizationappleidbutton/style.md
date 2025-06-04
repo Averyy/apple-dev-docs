@@ -1,6 +1,6 @@
 # WKInterfaceAuthorizationAppleIDButton.Style
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Values that define an authorization button’s style.
@@ -40,7 +40,9 @@ enum Style
 ## See Also
 
 - [init(style: WKInterfaceAuthorizationAppleIDButton.Style, target: Any?, action: Selector)](init(style:target:action:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/init(style:target:action:)))
+  Creates an authorization button for use in SwiftUI.
 - [init(target: Any?, action: Selector)](init(target:action:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/init(target:action:)))
+  Creates an authorization button for use in SwiftUI.
 
 
 ---

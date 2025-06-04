@@ -1,6 +1,6 @@
 # setAccessibilityHint(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the description of what happens when performing an action on the accessibility element.
@@ -14,7 +14,7 @@ Sets the description of what happens when performing an action on the accessibil
 func setAccessibilityHint(_ accessibilityHint: String?)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to change the accessibility hint of an object dynamically. You can also set the accessibility hint for an object in Xcode from the Identity inspector.
 
@@ -31,11 +31,17 @@ Follow these guidelines to create a hint for interface objects:
 ## See Also
 
 - [func setAccessibilityIdentifier(String?)](setaccessibilityidentifier(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setaccessibilityidentifier(_:)))
+  Sets the unique identifier string for the interface object.
 - [func setAccessibilityLabel(String?)](setaccessibilitylabel(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setaccessibilitylabel(_:)))
+  Sets a succinct label on the object that identifies the accessibility element.
 - [func setAccessibilityValue(String?)](setaccessibilityvalue(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setaccessibilityvalue(_:)))
+  Sets the value of the accessibility element.
 - [func setIsAccessibilityElement(Bool)](setisaccessibilityelement(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setisaccessibilityelement(_:)))
+  Sets whether the object is an accessibility element that an assistive app can access.
 - [func setAccessibilityTraits(UIAccessibilityTraits)](setaccessibilitytraits(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setaccessibilitytraits(_:)))
+  Sets the combination of accessibility traits that best characterize the accessibility element.
 - [func setAccessibilityImageRegions([WKAccessibilityImageRegion])](setaccessibilityimageregions(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setaccessibilityimageregions(_:)))
+  Marks portions of an image as separate accessible elements.
 
 
 ---

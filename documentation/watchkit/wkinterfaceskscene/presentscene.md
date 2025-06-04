@@ -1,6 +1,6 @@
 # presentScene(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Presents a scene.
@@ -14,7 +14,7 @@ Presents a scene.
 func presentScene(_ scene: SKScene?)
 ```
 
-## Overview
+#### Discussion
 
 The new scene immediately replaces the current scene, if one exists.
 
@@ -25,7 +25,9 @@ The new scene immediately replaces the current scene, if one exists.
 ## See Also
 
 - [var scene: SKScene?](scene.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/scene))
+  The currently presented SpriteKit scene.
 - [func presentScene(SKScene, transition: SKTransition)](presentscene(_:transition:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/presentscene(_:transition:)))
+  Transitions from the current scene to a new scene.
 
 
 ---

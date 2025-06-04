@@ -1,6 +1,6 @@
 # setTitle(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the button title to the specified string.
@@ -14,7 +14,7 @@ Sets the button title to the specified string.
 func setTitle(_ title: String?)
 ```
 
-## Overview
+#### Discussion
 
 This method looks for a localized version of `title` in your WatchKit extension’s `Localizable.strings` file. If it finds one, it uses the localized string for the button title. If it does not find a localized version of the string, it uses the value in the `title` parameter directly. The text replaces the previous text set for the button.
 
@@ -28,6 +28,7 @@ The button text is drawn using the font and styling information from your storyb
 
 - [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
 - [func setAttributedTitle(NSAttributedString?)](setattributedtitle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/setattributedtitle(_:)))
+  Sets the button title to the specified attributed string.
 
 
 ---

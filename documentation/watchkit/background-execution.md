@@ -1,17 +1,21 @@
 # Background execution
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Manage background sessions and tasks.
 
-## Overview
+#### Overview
 
 Apps on watchOS primarily run in the foreground to limit the impact on system resources. However, sometimes an app needs to perform an action when it’s not the foreground app. For a limited number of cases, watchOS provides options for running in the background.
+
+##### Handle Background Notifications
 
 When the system launches your app in the background, you can:
 
 - Handle background notifications from local or remote notifications with a [`UNUserNotificationCenterDelegate`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenterDelegate) delegate. For more information, see [`Handling notifications and notification-related actions`](https://developer.apple.com/documentation/UserNotifications/handling-notifications-and-notification-related-actions).
 - Receive push notifications to update your app’s complications with a [`PKPushRegistryDelegate`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate) delegate. For more information, see [`PushKit`](https://developer.apple.com/documentation/PushKit).
+
+##### Schedule and Handle Background Refresh Tasks
 
 A watchOS app uses a  to perform work in the background. If your app requires background operations, use one of the following techniques to respond to the task:
 
@@ -20,11 +24,15 @@ A watchOS app uses a  to perform work in the background. If your app requires ba
 
 In both cases, the system launches your app and gives it a few seconds of background execution time to perform the task. Complete the background task as quickly as possible. For more information, see [`Using background tasks`](https://developer.apple.com/documentation/watchkit/using-background-tasks).
 
+##### Start Background Sessions
+
 Apps that support workouts, audio playback, or location updates can continue to run in the background until the current session ends. Your app must enable the appropriate background mode in your project’s capabilities, and then start the session while your app is running in the foreground.
 
 - Use an [`HKWorkoutSession`](https://developer.apple.com/documentation/HealthKit/HKWorkoutSession) object to start and stop workouts. For more information, see [`Running workout sessions`](https://developer.apple.com/documentation/HealthKit/running-workout-sessions).
 - Use the [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) class to play extended audio files in the background. For more information, see [`Playing Background Audio`](https://developer.apple.com/documentation/watchkit/playing-background-audio).
 - Use a [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) object to start a continuous background location session. For more information, see [`allowsBackgroundLocationUpdates`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/allowsBackgroundLocationUpdates).
+
+##### Set Up Extended Runtime Sessions
 
 Extended runtime sessions give your app additional time to run while the session is active. Extended runtime sessions provide support for the following session types:
 
@@ -73,9 +81,13 @@ For more information, see [`Using extended runtime sessions`](https://developer.
 ## See Also
 
 - [Life cycles](life-cycles.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/life-cycles))
+  Receive and respond to life-cycle notifications.
 - [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
+  Create an extended runtime session that continues running your app after the user stops interacting with it.
 - [class WKExtendedRuntimeSession](wkextendedruntimesession.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession))
+  A session that continues to run your app after the user has stopped interacting.
 - [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh))
+  Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 
 
 ---

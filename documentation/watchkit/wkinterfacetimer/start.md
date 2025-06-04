@@ -1,6 +1,6 @@
 # start()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Begins updates to the timer’s display.
@@ -14,7 +14,7 @@ Begins updates to the timer’s display.
 func start()
 ```
 
-## Overview
+#### Discussion
 
 After setting the target date for the timer, call this method to begin updating the timer object’s displayed text. Further updates to the timer occur automatically on the user’s Apple Watch, without the need for you to do anything else.
 
@@ -23,6 +23,7 @@ This method does not actually affect the actual timer value. The timer begins co
 ## See Also
 
 - [func stop()](stop().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/stop()))
+  Stops updates to the timer’s display.
 
 
 ---

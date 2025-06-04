@@ -1,6 +1,6 @@
 # setItems(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the list of items displayed by the picker.
@@ -14,7 +14,7 @@ Sets the list of items displayed by the picker.
 func setItems(_ items: [WKPickerItem]?)
 ```
 
-## Overview
+#### Discussion
 
 The items you specify must be configured appropriate for the picker style. For example, items displayed using the list style must contain a title. The picker displays items in the order they appear in the `items` array. When a selection occurs, the picker reports the index of the selected item to its associated action method.
 
@@ -27,8 +27,11 @@ This method displays the new items in the picker right away. If the previously s
 ## See Also
 
 - [class WKPickerItem](wkpickeritem.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem))
+  A single item in a picker interface.
 - [func setSelectedItemIndex(Int)](setselecteditemindex(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setselecteditemindex(_:)))
+  Selects the specified item in the list.
 - [func setCoordinatedAnimations([any WKInterfaceObject & WKImageAnimatable]?)](setcoordinatedanimations(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setcoordinatedanimations(_:)))
+  Sets the interface objects that should coordinate their own animations with the picker.
 
 
 ---

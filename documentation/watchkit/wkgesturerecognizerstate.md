@@ -1,6 +1,6 @@
 # WKGestureRecognizerState
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constants describing the possible states of a gesture recognizer.

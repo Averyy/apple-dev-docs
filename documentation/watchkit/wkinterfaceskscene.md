@@ -1,6 +1,6 @@
 # WKInterfaceSKScene
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A visual WatchKit element that displays a SpriteKit scene.
@@ -14,7 +14,7 @@ A visual WatchKit element that displays a SpriteKit scene.
 class WKInterfaceSKScene
 ```
 
-## Overview
+#### Overview
 
 Present a scene by calling the interface’s [`presentScene(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/presentscene(_:)) or [`presentScene(_:transition:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/presentscene(_:transition:)) method and passing in a [`SKScene`](https://developer.apple.com/documentation/SpriteKit/SKScene) object. When a scene is presented, it alternates between running its simulation (which animates the content) and rendering the content for display. You can pause the scene by setting the interface’s [`isPaused`](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/ispaused) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
@@ -65,6 +65,7 @@ The SpriteKit scene in your Watch app must be connected to a [`WKInterfaceSKScen
 ## See Also
 
 - [class WKInterfaceSCNScene](wkinterfacescnscene.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene))
+  An object that lets you manage SceneKit content for display in your app.
 
 
 ---

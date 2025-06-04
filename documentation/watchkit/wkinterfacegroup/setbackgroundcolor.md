@@ -1,6 +1,6 @@
 # setBackgroundColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the background color for the group container.
@@ -14,7 +14,7 @@ Changes the background color for the group container.
 func setBackgroundColor(_ color: UIColor?)
 ```
 
-## Overview
+#### Discussion
 
 If you do not specify a custom background color or if you set the custom color to `nil`, the group uses the color assigned to the group object in your storyboard file. The default background color is clear.
 
@@ -30,8 +30,11 @@ Changes to the background color of a group are animatable.
 
 - [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
 - [func setBackgroundImage(UIImage?)](setbackgroundimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundimage(_:)))
+  Changes the background image of the group container to the specified image.
 - [func setBackgroundImageData(Data?)](setbackgroundimagedata(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundimagedata(_:)))
+  Changes the background image of the group container to the image in the specified data object.
 - [func setBackgroundImageNamed(String?)](setbackgroundimagenamed(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundimagenamed(_:)))
+  Changes the background image of the group container to the image in the specified resource file.
 
 
 ---

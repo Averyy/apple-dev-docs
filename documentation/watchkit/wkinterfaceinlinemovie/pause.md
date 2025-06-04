@@ -1,6 +1,6 @@
 # pause()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Pauses the movie.
@@ -17,7 +17,9 @@ func pause()
 ## See Also
 
 - [func play()](play().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/play()))
+  Plays the movie.
 - [func playFromBeginning()](playfrombeginning().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/playfrombeginning()))
+  Plays the movie from the beginning.
 
 
 ---

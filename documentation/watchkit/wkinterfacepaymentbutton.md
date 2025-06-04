@@ -1,6 +1,6 @@
 # WKInterfacePaymentButton
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A button that you can use to trigger payments through Apple Pay.
@@ -14,9 +14,11 @@ A button that you can use to trigger payments through Apple Pay.
 class WKInterfacePaymentButton
 ```
 
-## Overview
+#### Overview
 
 Use a payment button to initiate an Apple Pay transaction on Apple Watch.
+
+![A screenshot of the Apple Pay Button.](https://docs-assets.developer.apple.com/published/7edb9f4e5d0ba2fc72a5b546d35494a5/media-2930172%402x.png)
 
 > **Note**:  The payment button (see [`Figure 1`](https://developer.apple.com/documentation/watchkit/wkinterfacepaymentbutton#2930172)) does not create or process payments. It simply provides a button with the Apple Pay mark. You must connect this button to an action method that creates an Apple Pay payment request. For more information on using the Apple Pay mark, see [`Apple Pay Identity Guidelines`](https://developer.apple.comhttps://developer.apple.com/apple-pay/Apple-Pay-Identity-Guidelines.pdf).
 
@@ -53,15 +55,25 @@ Payment buttons can be used only to initiate Apple Pay transactions.
 ## See Also
 
 - [class WKInterfaceLabel](wkinterfacelabel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelabel))
+  An interface element that displays static text.
 - [class WKInterfaceDate](wkinterfacedate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedate))
+  A label that displays the current date or time.
 - [class WKInterfaceTimer](wkinterfacetimer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer))
+  A label that displays a countdown or count-up timer.
 - [class WKInterfaceButton](wkinterfacebutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton))
+  A button in the user interface of your watchOS app.
 - [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton))
+  A button that you can use to trigger a Sign in with Apple request.
 - [class WKInterfaceTextField](wkinterfacetextfield.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield))
+  An interface element that displays an editable text area.
 - [class WKInterfaceSwitch](wkinterfaceswitch.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch))
+  An interface element that toggles between an On and Off state.
 - [class WKInterfaceSlider](wkinterfaceslider.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider))
+  An interface element that lets users select a single floating-point value from a range of values.
 - [class WKInterfaceActivityRing](wkinterfaceactivityring.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring))
+  A view that displays data from a HealthKit activity summary object.
 - [class WKInterfaceMap](wkinterfacemap.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap))
+  An interface element that displays a noninteractive map for the location you specify.
 
 
 ---

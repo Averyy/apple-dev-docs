@@ -1,23 +1,24 @@
 # Life cycles
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Receive and respond to life-cycle notifications.
 
-## Overview
+#### Overview
 
 The system reports changes in your app’s execution state to your SwiftUI environment and your extension delegate object. State changes correspond to major events in the lifetime of your app, such as the app launching or moving into the background. Use the state changes to trigger relevant tasks, such as loading shared resources and configuring your initial user interface. The table below shows the possible states and their implications for your app.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'State', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Description'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Not running'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The watchOS app isn’t running.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Inactive'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The watchOS app is running in the foreground, but isn’t receiving actions from controls or gestures.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Active', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The watchOS app is running in the foreground and receiving actions from controls and gestures. This is the normal mode for apps running on screen.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Background', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'The system has given the watchOS app a small amount of background execution time.', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Suspended', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'The app is in memory but isn’t executing code. The system may purge suspended apps at any time to make room for other apps.', 'type': 'text'}]}] |
+| State | Description |
+| --- | --- |
+| Not running | The watchOS app isn’t running. |
+| Inactive | The watchOS app is running in the foreground, but isn’t receiving actions from controls or gestures. |
+| Active | The watchOS app is running in the foreground and receiving actions from controls and gestures. This is the normal mode for apps running on screen. |
+| Background | The system has given the watchOS app a small amount of background execution time. |
+| Suspended | The app is in memory but isn’t executing code. The system may purge suspended apps at any time to make room for other apps. |
 
 For more information, see [`Handling Common State Transitions`](https://developer.apple.com/documentation/watchkit/handling-common-state-transitions).
+
+##### Receive Background Information
 
 When the system receives background data, it may not immediately wake the watchOS app to process that data. Instead, it may delay delivery of the data to preserve battery life.
 
@@ -38,9 +39,13 @@ If the app is currently running—either active and onscreen, or inactive and th
 ## See Also
 
 - [Background execution](background-execution.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/background-execution))
+  Manage background sessions and tasks.
 - [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
+  Create an extended runtime session that continues running your app after the user stops interacting with it.
 - [class WKExtendedRuntimeSession](wkextendedruntimesession.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession))
+  A session that continues to run your app after the user has stopped interacting.
 - [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh))
+  Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 
 
 ---

@@ -1,6 +1,6 @@
 # preferredFramesPerSecond
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The animation frame rate that the interface uses to render its scene.
@@ -14,7 +14,7 @@ The animation frame rate that the interface uses to render its scene.
 var preferredFramesPerSecond: Int { get set }
 ```
 
-## Overview
+#### Discussion
 
 SceneKit chooses an actual frame rate that is as close as possible to your preferred frame rate based on the capabilities of the hardware and the systems other requirements. Choose a frame rate that your app can consistently maintain. The default value is 60 frames per second.
 
@@ -23,8 +23,11 @@ To provide a consistent frame rate, SceneKit usually selects a frame rate that i
 ## See Also
 
 - [var antialiasingMode: SCNAntialiasingMode](antialiasingmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/antialiasingmode))
+  The antialiasing mode used for rendering the scene.
 - [var scene: SCNScene?](scene.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/scene))
+  The scene to be displayed.
 - [func snapshot() -> UIImage](snapshot().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacescnscene/snapshot()))
+  Renders the scene to a new image object.
 
 
 ---

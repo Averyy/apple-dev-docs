@@ -1,6 +1,6 @@
 # contentImage
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The image to display for the item.
@@ -11,18 +11,22 @@ The image to display for the item.
 ## Declaration
 
 ```swift
-@NSCopying var contentImage: WKImage? { get set }
+@NSCopying
+var contentImage: WKImage? { get set }
 ```
 
-## Overview
+#### Discussion
 
 This image contains the item’s content and is displayed when the item is selected. The content image supported for all picker styles.
 
 ## See Also
 
 - [var title: String?](title.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/title))
+  The text to display for the item.
 - [var accessoryImage: WKImage?](accessoryimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/accessoryimage))
+  A small image to display next to the title string.
 - [var caption: String?](caption.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem/caption))
+  A caption for the item’s content.
 
 
 ---

@@ -8,6 +8,7 @@ from typing import List, Optional
 import click
 
 from scraper.apple_scraper import AppleDocumentationScraper
+from scraper.json_scraper import AppleJSONDocumentationScraper
 from scraper.config import Config
 from scraper.framework_discovery import discover_frameworks
 from scraper.utils.logger import setup_logging, get_logger
@@ -40,9 +41,92 @@ def cli(log_level: str, log_file: Optional[str], debug: bool) -> None:
     Config.ensure_directories()
 
 
+@cli.command('scrape-page')
+@click.argument('framework_id')
+@click.argument('url')
+async def scrape_page(framework_id: str, url: str) -> None:
+    """Scrape a single documentation page."""
+    logger.info("scraping_single_page", framework=framework_id, url=url)
+    
+    async with AppleJSONDocumentationScraper(framework_id) as scraper:
+        data = await scraper.extract_page_data(None, url)
+        if data:
+            await scraper.save_page_data(url, data)
+            click.echo(f"Successfully scraped: {url}")
+        else:
+            click.echo(f"Failed to scrape: {url}")
+
+
+@cli.command('scrape-framework')
+@click.argument('framework_id')
+@click.option('--limit', type=int, help='Limit number of pages to scrape')
+async def scrape_framework(framework_id: str, limit: Optional[int]) -> None:
+    """Scrape an entire framework."""
+    logger.info("scraping_framework", framework=framework_id, limit=limit)
+    
+    async with AppleJSONDocumentationScraper(framework_id) as scraper:
+        # First discover all URLs
+        click.echo(f"Discovering pages for {framework_id}...")
+        await scraper.discover_framework_pages(f"https://developer.apple.com/documentation/{framework_id}")
+        
+        urls = list(scraper.discovered_urls)
+        if limit:
+            urls = urls[:limit]
+        
+        click.echo(f"Found {len(scraper.discovered_urls)} pages, scraping {len(urls)}...")
+        
+        # Scrape all pages
+        stats = {'pages_scraped': 0, 'pages_failed': 0}
+        for i, url in enumerate(urls, 1):
+            try:
+                data = await scraper.extract_page_data(None, url)
+                if data:
+                    await scraper.save_page_data(url, data)
+                    stats['pages_scraped'] += 1
+                    if i % 10 == 0:
+                        click.echo(f"Progress: {i}/{len(urls)} pages")
+                else:
+                    stats['pages_failed'] += 1
+            except Exception as e:
+                logger.error(f"Failed to scrape {url}: {e}")
+                stats['pages_failed'] += 1
+        
+        click.echo(f"\nScraping complete:")
+        click.echo(f"  Pages scraped: {stats['pages_scraped']}")
+        click.echo(f"  Pages failed: {stats['pages_failed']}")
+
+
 @cli.command()
+@click.argument('framework_id')
+async def discover(framework_id: str) -> None:
+    """Discover all pages in a framework."""
+    logger.info("discovering_framework_pages", framework=framework_id)
+    
+    async with AppleJSONDocumentationScraper(framework_id) as scraper:
+        await scraper.discover_framework_pages(f"https://developer.apple.com/documentation/{framework_id}")
+        
+        urls = sorted(scraper.discovered_urls)
+        click.echo(f"\nDiscovered {len(urls)} pages in {framework_id}:")
+        
+        # Group by type (classes, protocols, etc)
+        by_type = {}
+        for url in urls:
+            parts = url.split('/')
+            if len(parts) > 5:
+                type_hint = parts[5]  # Usually the type indicator
+                by_type.setdefault(type_hint, []).append(url)
+        
+        for type_name, type_urls in sorted(by_type.items())[:5]:
+            click.echo(f"\n{type_name} ({len(type_urls)} items):")
+            for url in type_urls[:3]:
+                click.echo(f"  - {url}")
+            if len(type_urls) > 3:
+                click.echo(f"  ... and {len(type_urls) - 3} more")
+
+
+@cli.command('discover-frameworks')
 @click.option('--save-to', type=click.Path(), help='Save framework list to file')
-async def discover(save_to: Optional[str]) -> None:
+async def discover_frameworks_cmd(save_to: Optional[str]) -> None:
     """Discover all available Apple frameworks."""
     logger.info("starting_framework_discovery")
     
@@ -72,12 +156,12 @@ async def discover(save_to: Optional[str]) -> None:
         click.echo(f"\nSaved framework list to {save_to}")
 
 
-@cli.command()
+@cli.command('scrape-legacy')
 @click.argument('framework_id')
 @click.option('--dry-run', is_flag=True, help='Discover URLs without scraping')
 @click.option('--limit', type=int, help='Limit number of pages to scrape')
-async def scrape(framework_id: str, dry_run: bool, limit: Optional[int]) -> None:
-    """Scrape documentation for a specific framework."""
+async def scrape_legacy(framework_id: str, dry_run: bool, limit: Optional[int]) -> None:
+    """[Legacy] Scrape documentation for a specific framework using the old scraper."""
     if dry_run:
         Config.DRY_RUN = True
     
@@ -214,30 +298,8 @@ async def validate(framework_id: str) -> None:
 
 def main() -> None:
     """Main entry point."""
-    # Handle async commands
-    if len(sys.argv) > 1 and sys.argv[1] in ['discover', 'scrape', 'scrape-batch', 'validate']:
-        # These are async commands
-        if sys.argv[1] == 'discover':
-            asyncio.run(discover(sys.argv[2:] if len(sys.argv) > 2 else None))
-        elif sys.argv[1] == 'scrape':
-            framework_id = sys.argv[2] if len(sys.argv) > 2 else None
-            if not framework_id:
-                click.echo("Error: Missing argument 'FRAMEWORK_ID'")
-                sys.exit(1)
-            dry_run = '--dry-run' in sys.argv
-            limit = None
-            # Check if --limit is provided
-            for i, arg in enumerate(sys.argv):
-                if arg == '--limit' and i + 1 < len(sys.argv):
-                    try:
-                        limit = int(sys.argv[i + 1])
-                    except ValueError:
-                        pass
-            asyncio.run(scrape(framework_id, dry_run, limit))
-        # ... handle other async commands
-    else:
-        # Let click handle it normally
-        cli()
+    # Let click handle everything
+    cli()
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Returns an initialized interface controller object.
@@ -11,18 +11,19 @@ Returns an initialized interface controller object.
 ## Declaration
 
 ```swift
-@MainActor init()
+@MainActor
+init()
 ```
 
 ## Mentions
 
 - [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
 
-## Overview
+#### Return Value
 
 The initialized interface controller object.
 
-## Discussion
+#### Discussion
 
 This method is the designated initializer for interface controller objects. Override this method as needed and use it to prepare your interface controller for use. In your implementation, call `super` first and then perform your own initialization.
 
@@ -36,9 +37,13 @@ In a page-based interface, all interface controllers are initialized up front bu
 
 - [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
 - [func didAppear()](didappear().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/didappear()))
+  Tells the interface controller that its view is now onscreen.
 - [func willActivate()](willactivate().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willactivate()))
+  Tells the interface controller that the system is about to activate its view.
 - [func awake(withContext: Any?)](awake(withcontext:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/awake(withcontext:)))
+  Initializes the interface controller with the specified context data.
 - [func setTitle(String?)](settitle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/settitle(_:)))
+  Sets the title of the interface.
 
 
 ---

@@ -1,6 +1,6 @@
 # WKInterfaceImage
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An image that can be displayed in the interface of your watchOS app.
@@ -14,7 +14,7 @@ An image that can be displayed in the interface of your watchOS app.
 class WKInterfaceImage
 ```
 
-## Overview
+#### Overview
 
 The images you display in your watchOS app can be static or animated. You use [`WKInterfaceImage`](https://developer.apple.com/documentation/watchkit/wkinterfaceimage) objects to specify the image data you want to display and to start and stop animations.
 
@@ -23,6 +23,8 @@ Do not subclass or create instances of this class yourself. Instead, define outl
 During the initialization of your interface controller, WatchKit creates any needed image objects and assigns them to their associated outlets. At that point, you can use those objects to make changes to the onscreen images.
 
 The images you use in your interface can be embedded in your Watch app bundle, created dynamically, or downloaded from the Internet. Images in your Watch app bundle represent the images that are part of your app’s user interface. Images that you download or create dynamically exist either in memory or as files in your WatchKit extension’s container directory. The `WKInterfaceImage` class provides setter methods for getting your images onscreen regardless of their location.
+
+##### Image Management
 
 The images you use in your interface can come from many different locations, and you load and manage those images in different ways:
 
@@ -35,9 +37,13 @@ You can store animated image sequences in your Watch app bundle, but your image 
 
 When creating your images, always create them at a size that is appropriate for the underlying device. Whenever possible, try to use the same size image regardless of the underlying device. In cases where you need different images for different device sizes, use asset catalogs to store the different versions of the image using the same image name. If the image you specify is too large or too small, WatchKit uses the mode attribute you set in Interface Builder to determine how to render the image.
 
+##### Supported Image Formats
+
 You can specify images using any image formats supported by iOS, but it is recommended that you use JPEG and PNG images whenever possible. Specifying images in formats other than JPEG and PNG can introduce a performance penalty when rendering those images. All images should be designed for Retina displays, and image filenames you provide yourself should include the `@2x` modifier in the filename.
 
 For more information about the supported image formats, see [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
+
+##### Animating a Series of Images
 
 Animated images are an easy and fast way to make your interface more dynamic and engaging for users. You create animated images from existing images in your asset catalog or by creating a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object using the images you want.
 
@@ -51,15 +57,16 @@ Whenever possible, place image resources in an asset catalog in your Watch app b
 
 For more information on how to create animated images, see the discussions of the [`animatedImageNamed(_:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImageNamed(_:duration:)) and [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImage(with:duration:)) methods in [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
 
+##### Interface Builder Configuration Options
+
 Xcode lets you configure information about your image interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Attribute'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Description', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Image'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The name of the image to be displayed. This image must be in the Watch app’s bundle. If you do not set the image in your storyboard, set it programmatically using the methods of this class.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Mode'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The content mode for the image. The mode defines how the image fills the available space. Some modes let you scale the image with or without maintaining the current aspect ratio. Other modes position the image relative to a fixed point in the image interface object’s bounds.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Tint'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The color applied to a template image. You can change the tint color programmatically by calling the '}, {'type': 'reference', 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceImage/setTintColor(_:)', 'isActive': True}, {'type': 'text', 'text': ' method. The color you specify has no affect on animated images or non template images.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Animate', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'A Boolean value indicating whether the image is animatable. Set the value to Yes to configure the animation parameters, including its duration (in seconds) and whether it starts immediately when the parent interface controller appears onscreen. Animations started at load time run continuously in a loop.', 'type': 'text'}]}] |
+| Attribute | Description |
+| --- | --- |
+| Image | The name of the image to be displayed. This image must be in the Watch app’s bundle. If you do not set the image in your storyboard, set it programmatically using the methods of this class. |
+| Mode | The content mode for the image. The mode defines how the image fills the available space. Some modes let you scale the image with or without maintaining the current aspect ratio. Other modes position the image relative to a fixed point in the image interface object’s bounds. |
+| Tint | The color applied to a template image. You can change the tint color programmatically by calling the [`setTintColor(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/settintcolor(_:)) method. The color you specify has no affect on animated images or non template images. |
+| Animate | A Boolean value indicating whether the image is animatable. Set the value to Yes to configure the animation parameters, including its duration (in seconds) and whether it starts immediately when the parent interface controller appears onscreen. Animations started at load time run continuously in a loop. |
 
 ## Topics
 
@@ -89,11 +96,17 @@ Xcode lets you configure information about your image interface object in your s
 ## See Also
 
 - [class WKImage](wkimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage))
+  A wrapper for images you use with a picker interface.
 - [protocol WKImageAnimatable](wkimageanimatable.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable))
+  A collection of methods you can use to control the playback of animated images.
 - [class WKInterfaceMovie](wkinterfacemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie))
+  An interface element that lets you play video and audio content in your watchOS app.
 - [class WKInterfaceInlineMovie](wkinterfaceinlinemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie))
+  An interface element that displays a video’s poster image and supports inline playing of the video.
 - [class WKInterfaceHMCamera](wkinterfacehmcamera.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacehmcamera))
+  An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.
 - [enum WKVideoGravity](wkvideogravity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity))
+  Constants indicating the appearance of video content.
 
 
 ---

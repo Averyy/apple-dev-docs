@@ -1,6 +1,6 @@
 # currentTime
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The elapsed time for the current playing item.
@@ -14,7 +14,7 @@ The elapsed time for the current playing item.
 var currentTime: TimeInterval { get }
 ```
 
-## Overview
+#### Discussion
 
 This property refers to how much of the audio file has already been played. The value in this property is updated during playback to reflect the current position of the playhead.
 

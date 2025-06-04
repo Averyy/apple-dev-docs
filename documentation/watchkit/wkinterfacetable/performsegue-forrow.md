@@ -1,6 +1,6 @@
 # performSegue(forRow:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Performs the segue for the specified row.
@@ -14,7 +14,7 @@ Performs the segue for the specified row.
 func performSegue(forRow row: Int)
 ```
 
-## Overview
+#### Discussion
 
 This method lets you programmatically transition to a new interface controller. It triggers the segue defined in your storyboard file for the specified row controller.
 

@@ -1,6 +1,6 @@
 # animate(withDuration:animations:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Animates changes to one or more interface objects over the specified duration.
@@ -11,10 +11,11 @@ Animates changes to one or more interface objects over the specified duration.
 ## Declaration
 
 ```swift
-@MainActor func animate(withDuration duration: TimeInterval, animations: @escaping () -> Void)
+@MainActor
+func animate(withDuration duration: TimeInterval, animations: @escaping () -> Void)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to animate changes to the following attributes of your interface objects:
 

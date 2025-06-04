@@ -1,6 +1,6 @@
 # setTextColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the text’s color.
@@ -14,7 +14,7 @@ Sets the text’s color.
 func setTextColor(_ color: UIColor?)
 ```
 
-## Overview
+#### Discussion
 
 This method defines the default color of the entire string. The text field uses this color unless you explicitly override it in an attributed string using the [`NSForegroundColorAttributeName`](https://developer.apple.com/documentation/UIKit/NSForegroundColorAttributeName) attribute.
 
@@ -25,7 +25,9 @@ This method defines the default color of the entire string. The text field uses 
 ## See Also
 
 - [func setText(String?)](settext(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/settext(_:)))
+  Sets the text displayed by the text field.
 - [func setAttributedText(NSAttributedString?)](setattributedtext(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/setattributedtext(_:)))
+  Sets the styled text displayed by the text field.
 
 
 ---

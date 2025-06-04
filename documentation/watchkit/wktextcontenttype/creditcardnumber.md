@@ -1,6 +1,6 @@
 # creditCardNumber
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A credit card number.
@@ -17,6 +17,7 @@ static let creditCardNumber: WKTextContentType
 ## See Also
 
 - [static let URL: WKTextContentType](url.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/url))
+  A URL.
 
 
 ---

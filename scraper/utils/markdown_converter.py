@@ -104,10 +104,16 @@ class AppleDocMarkdownConverter:
             sections.append("## Mentions")
             sections.append(self._format_mentions(data['mentions']))
         
-        # Overview
-        if data.get('overview'):
+        # Main content - preserves the original structure with inline code examples
+        if data.get('content'):
+            # The content field now contains everything in the original order
+            # including headings, paragraphs, and code examples
+            sections.append(data['content'])
+        
+        # Legacy fields for backward compatibility (if still present)
+        if data.get('overview') and not data.get('content'):
             sections.append("## Overview")
-            sections.append(data['overview'])  # Already processed in JSON scraper
+            sections.append(data['overview'])
         
         # Parameters
         if data.get('parameters'):
@@ -119,13 +125,13 @@ class AppleDocMarkdownConverter:
             sections.append("## Return Value")
             sections.append(data['return_value'])
         
-        # Discussion
-        if data.get('discussion'):
+        # Discussion (legacy - only if content not present)
+        if data.get('discussion') and not data.get('content'):
             sections.append("## Discussion")
-            sections.append(data['discussion'])  # Already processed in JSON scraper
+            sections.append(data['discussion'])
         
-        # Code examples
-        if data.get('code_examples'):
+        # Code examples (legacy - only if not already in content)
+        if data.get('code_examples') and not data.get('content'):
             sections.append("## Code Examples")
             for example in data['code_examples']:
                 if example.get('title'):
@@ -434,12 +440,21 @@ class AppleDocMarkdownConverter:
         for item in see_also:
             title = item.get('title', '')
             url = item.get('url', '')
+            description = item.get('description', '')
             
             if url:
                 dual_link = self._create_dual_link(url, title)
-                lines.append(f"- {dual_link}")
+                if description:
+                    lines.append(f"- {dual_link}")
+                    lines.append(f"  {description}")
+                else:
+                    lines.append(f"- {dual_link}")
             else:
-                lines.append(f"- {title}")
+                if description:
+                    lines.append(f"- {title}")
+                    lines.append(f"  {description}")
+                else:
+                    lines.append(f"- {title}")
         
         return "\n".join(lines)
     

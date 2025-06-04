@@ -1,6 +1,6 @@
 # WKWaterResistanceRating
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Values indicating the water-resistance rating.
@@ -37,8 +37,11 @@ enum WKWaterResistanceRating
 ## See Also
 
 - [var waterResistanceRating: WKWaterResistanceRating](waterresistancerating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/waterresistancerating))
+  The Apple Watch water-resistance rating.
 - [var isWaterLockEnabled: Bool](iswaterlockenabled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/iswaterlockenabled))
+  A Boolean value that indicates whether the water lock is enabled.
 - [func enableWaterLock()](enablewaterlock().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/enablewaterlock()))
+  Disables the Apple Watch touch screen to prevent accidental taps while submerged.
 
 
 ---

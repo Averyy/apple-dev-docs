@@ -1,6 +1,6 @@
 # addAnnotation(_:with:centerOffset:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Displays the specified image on top of the map.
@@ -14,7 +14,7 @@ Displays the specified image on top of the map.
 func addAnnotation(_ location: CLLocationCoordinate2D, with image: UIImage?, centerOffset offset: CGPoint)
 ```
 
-## Overview
+#### Discussion
 
 This method adds an image to the map at the specified geographic location. The image is positioned just above the actual coordinate and centered on the coordinate horizontally.
 
@@ -27,9 +27,13 @@ This method adds an image to the map at the specified geographic location. The i
 ## See Also
 
 - [func addAnnotation(CLLocationCoordinate2D, withImageNamed: String?, centerOffset: CGPoint)](addannotation(_:withimagenamed:centeroffset:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/addannotation(_:withimagenamed:centeroffset:)))
+  Displays an image from the WatchKit app’s bundle on top of the map.
 - [func addAnnotation(CLLocationCoordinate2D, with: WKInterfaceMapPinColor)](addannotation(_:with:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/addannotation(_:with:)))
+  Adds a pin to the map at the specified location.
 - [enum WKInterfaceMapPinColor](wkinterfacemappincolor.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemappincolor))
+  Constants for map pin colors.
 - [func removeAllAnnotations()](removeallannotations().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/removeallannotations()))
+  Removes all annotations from the map.
 
 
 ---

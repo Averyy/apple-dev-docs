@@ -1,6 +1,6 @@
 # presentTextInputControllerWithSuggestions(forLanguage:allowedInputMode:completion:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Displays a modal interface for gathering language-specific text input from the user.
@@ -11,10 +11,11 @@ Displays a modal interface for gathering language-specific text input from the u
 ## Declaration
 
 ```swift
-@MainActor func presentTextInputControllerWithSuggestions(forLanguage suggestionsHandler: ((String) -> [Any]?)?, allowedInputMode inputMode: WKTextInputMode) async -> [Any]?
+@MainActor
+func presentTextInputControllerWithSuggestions(forLanguage suggestionsHandler: ((String) -> [Any]?)?, allowedInputMode inputMode: WKTextInputMode) async -> [Any]?
 ```
 
-## Overview
+#### Discussion
 
 This method executes asynchronously, returning shortly after you call it. During a subsequent run loop cycle, the system calls your `suggestionsHandler` block to retrieve the text suggestions for the user’s current language. Shortly after, it displays a text input controller to the user. The input controller displays the list of input phrases you specify and provides options to enter new text phrases through dictation or to select from a list of emoji. If the user changes the input language, the system calls your `suggestionsHandler` block again to retrieve suggestions for the new language.
 
@@ -31,8 +32,11 @@ Always call this method from your WatchKit extension’s main thread.
 ## See Also
 
 - [func presentTextInputController(withSuggestions: [String]?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](presenttextinputcontroller(withsuggestions:allowedinputmode:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presenttextinputcontroller(withsuggestions:allowedinputmode:completion:)))
+  Displays a modal interface for gathering text input from the user.
 - [func dismissTextInputController()](dismisstextinputcontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismisstextinputcontroller()))
+  Dismisses the text input controller without returning any text.
 - [enum WKTextInputMode](wktextinputmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextinputmode))
+  The input modes supported by the text input controller.
 
 
 ---

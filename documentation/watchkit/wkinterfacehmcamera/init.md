@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Creates a camera for use in SwiftUI.
@@ -14,7 +14,7 @@ Creates a camera for use in SwiftUI.
 init()
 ```
 
-## Overview
+#### Discussion
 
 Use this initializer to create an instance that you can wrap in a [`WKInterfaceObjectRepresentable`](https://developer.apple.com/documentation/SwiftUI/WKInterfaceObjectRepresentable) view. If you aren’t using SwiftUI, create the control by dragging it from the Object library to your storyboard instead.
 

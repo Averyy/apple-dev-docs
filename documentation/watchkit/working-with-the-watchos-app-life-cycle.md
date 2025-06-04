@@ -1,23 +1,24 @@
 # Working with the watchOS app life cycle
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
 
-## Overview
+#### Overview
 
 WatchKit reports changes in your app’s execution state to your extension delegate object. State changes correspond to major events in the lifetime of your app, and the state changes in a watchOS app are analogous to the state changes of an iOS app. For each state change, perform relevant tasks, such as loading shared resources and configuring your initial user interface. The following table lists the possible state of the app and the implications for your app.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'inlineContent': [{'type': 'text', 'text': 'State'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Description'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Not running', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'The watchOS app isn’t running. The user hasn’t launched the watchOS app, or the system suspended and then purged the app.'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Inactive'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'The watchOS app is running in the foreground, but isn’t receiving actions from controls or gestures; however, it may be executing other code. A newly launched app usually stays in this state only briefly as it transitions to the active state. An active app that transitions to this state should quiet itself and prepare to transition to the background.', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Active', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'The watchOS app is running in the foreground and receiving actions from controls and gestures. This is the normal mode for apps running onscreen.', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Background'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'The system has given the watchOS app a small amount of background execution time. The system gives apps background execution time when running a background session, when performing background tasks, and before suspending the app. '}, {'identifier': 'spacer', 'type': 'image'}, {'type': 'text', 'text': '  Because the system can purge suspended apps without warning, use the extension delegate’s '}, {'isActive': True, 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKExtensionDelegate/applicationDidEnterBackground()', 'type': 'reference'}, {'type': 'text', 'text': ' method to save any data you need to re-create your app’s current state. If needed, you can request additional background execution time by calling the '}, {'isActive': True, 'identifier': 'doc://com.apple.documentation/documentation/Foundation/ProcessInfo', 'type': 'reference'}, {'type': 'text', 'text': ' class’s '}, {'isActive': True, 'identifier': 'doc://com.apple.documentation/documentation/foundation/processinfo/1617030-performexpiringactivity', 'type': 'reference'}, {'type': 'text', 'text': ' method.'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Suspended'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'The app is in memory but isn’t executing code. The system suspends apps that are in the background and don’t have any pending tasks to complete. The system may purge suspended apps at any time to make room for other apps. The system silently purges suspended apps. The suspended apps don’t wake, and don’t receive any notifications before the system purges them. ', 'type': 'text'}, {'type': 'image', 'identifier': 'spacer'}, {'text': ' The system tries to keep frequently used apps in memory, allowing them to resume as quickly as possible. Specifically, the system preserves the most recently executed app, any apps that are in the Dock, and any apps that have a complication on the currently active watch face. If memory constraints force the system to purge one of these apps, the system relaunches the app as soon as more memory becomes available.', 'type': 'text'}], 'type': 'paragraph'}] |
+| State | Description |
+| --- | --- |
+| Not running | The watchOS app isn’t running. The user hasn’t launched the watchOS app, or the system suspended and then purged the app. |
+| Inactive | The watchOS app is running in the foreground, but isn’t receiving actions from controls or gestures; however, it may be executing other code. A newly launched app usually stays in this state only briefly as it transitions to the active state. An active app that transitions to this state should quiet itself and prepare to transition to the background. |
+| Active | The watchOS app is running in the foreground and receiving actions from controls and gestures. This is the normal mode for apps running onscreen. |
+| Background | The system has given the watchOS app a small amount of background execution time. The system gives apps background execution time when running a background session, when performing background tasks, and before suspending the app. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png)  Because the system can purge suspended apps without warning, use the extension delegate’s [`applicationDidEnterBackground()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidenterbackground()) method to save any data you need to re-create your app’s current state. If needed, you can request additional background execution time by calling the [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) class’s [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/1617030-performexpiringactivity) method. |
+| Suspended | The app is in memory but isn’t executing code. The system suspends apps that are in the background and don’t have any pending tasks to complete. The system may purge suspended apps at any time to make room for other apps. The system silently purges suspended apps. The suspended apps don’t wake, and don’t receive any notifications before the system purges them. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The system tries to keep frequently used apps in memory, allowing them to resume as quickly as possible. Specifically, the system preserves the most recently executed app, any apps that are in the Dock, and any apps that have a complication on the currently active watch face. If memory constraints force the system to purge one of these apps, the system relaunches the app as soon as more memory becomes available. |
 
 The following diagram shows the state changes that occur for a watchOS app and the delegate methods that watchOS calls when those changes occur.
+
+![A figure showing the state changes for a watchOS app.](https://docs-assets.developer.apple.com/published/b5cbf5c506b92778d108fb8de983564a/media-3149302%402x.png)
 
 In the preceding diagram:
 
@@ -27,18 +28,19 @@ In the preceding diagram:
 
 Except for [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidfinishlaunching()), the system only calls the extension delegate’s life cycle methods for the watchOS app’s main interface. The system doesn’t call the delegate methods when it displays any other supplementary interfaces. For example, it doesn’t call the methods when it launches the app to update complications or to display custom notification interfaces. For notifications, use the notification controller’s [`willActivate()`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willactivate()) and [`didDeactivate()`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/diddeactivate()) methods to track the state of the interface.
 
+##### Step Through Common State Transitions
+
 The watch app runs in different states depending on the app’s current context. Also, there’s no direct relationship between the app’s state and the interface’s state. For example, the app may be inactive while the interface is active. The following table shows the app and interface states in most common situations.
 
-| r | o | w |
+| Situation | App state | Interface state |
 | --- | --- | --- |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Situation'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'App state', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Interface state'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Running onscreen', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Active', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Active', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Running in the dock'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Inactive, and the extension’s '}, {'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKExtension/isApplicationRunningInDock', 'type': 'reference', 'isActive': True}, {'type': 'text', 'text': ' property is '}, {'identifier': 'doc://com.apple.documentation/documentation/swift/true', 'type': 'reference', 'isActive': True}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Active, shown in the dock.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Running as the frontmost app', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Inactive', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Inactive', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Displaying a dynamic notification interface', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Inactive or background', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Notification interface is active'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Processing a snapshot background task'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Background'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Active, but not shown onscreen', 'type': 'text'}]}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Processing another background task'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Background'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Inactive'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Running a background session'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'Background', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Inactive'}], 'type': 'paragraph'}] |
+| Running onscreen | Active | Active |
+| Running in the dock | Inactive, and the extension’s [`isApplicationRunningInDock`](https://developer.apple.com/documentation/watchkit/wkextension/isapplicationrunningindock) property is [`true`](https://developer.apple.com/documentation/swift/true) | Active, shown in the dock. |
+| Running as the frontmost app | Inactive | Inactive |
+| Displaying a dynamic notification interface | Inactive or background | Notification interface is active |
+| Processing a snapshot background task | Background | Active, but not shown onscreen |
+| Processing another background task | Background | Inactive |
+| Running a background session | Background | Inactive |
 
 When transitioning between states, the exact flow depends on the app’s starting and ending conditions, as well as other considerations — for example, if the app has a complication in the current watch face, or if the app is currently the frontmost app, and so on. Some of the most common transitions include when an app launches, goes to the background, or resumes.
 
@@ -65,6 +67,8 @@ The app resumes when the app is running in the background, or is suspended, and 
 3.  transitions to the [`WKApplicationState.active`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/active) state.  calls the extension delegate’s [`applicationDidBecomeActive()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidbecomeactive()) method.
 4.  calls the initial interface controller’s [`willActivate()`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willactivate()) method.
 
+##### Receive Background Data
+
 When the system receives background data, it may not immediately wake the watchOS app to process that data. Instead, it may delay delivery of the data to preserve battery life.
 
 If the app is currently running—either active and onscreen, or inactive and the frontmost app—the system immediately delivers the data to the app. If the app is in the background, the system wakes the app within 10 minutes to deliver the data.
@@ -72,12 +76,19 @@ If the app is currently running—either active and onscreen, or inactive and th
 ## See Also
 
 - [static func main()](main().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/main()))
+  Provides the top-level entry point for an app.
 - [func applicationDidFinishLaunching()](applicationdidfinishlaunching().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidfinishlaunching()))
+  Tells the delegate that the launch process is almost done and the app is almost ready to run.
 - [func applicationDidBecomeActive()](applicationdidbecomeactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidbecomeactive()))
+  Tells the delegate that the watchOS app is visible and processing events.
 - [func applicationWillResignActive()](applicationwillresignactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillresignactive()))
+  Tells the delegate that the system is about to deactivate the watchOS app.
 - [func applicationWillEnterForeground()](applicationwillenterforeground().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillenterforeground()))
+  Tells the delegate that the app is about to transition from the background to the foreground.
 - [func applicationDidEnterBackground()](applicationdidenterbackground().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidenterbackground()))
+  Tells the delegate that the app has transitioned from the foreground to the background.
 - [func deviceOrientationDidChange()](deviceorientationdidchange().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/deviceorientationdidchange()))
+  Tells the delegate that the device’s orientation has changed.
 
 
 ---

@@ -1,6 +1,6 @@
 # init(origin:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Creates a volume control for use in SwiftUI.
@@ -14,7 +14,7 @@ Creates a volume control for use in SwiftUI.
 init(origin: WKInterfaceVolumeControl.Origin)
 ```
 
-## Overview
+#### Discussion
 
 Use this initializer to create an instance that you can wrap in a [`WKInterfaceObjectRepresentable`](https://developer.apple.com/documentation/SwiftUI/WKInterfaceObjectRepresentable) view. If you aren’t using SwiftUI, create the control by dragging it from the Object library to your storyboard instead.
 
@@ -25,6 +25,7 @@ Use this initializer to create an instance that you can wrap in a [`WKInterfaceO
 ## See Also
 
 - [WKInterfaceVolumeControl.Origin](origin.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/origin))
+  The source of the audio managed by the volume control.
 
 
 ---

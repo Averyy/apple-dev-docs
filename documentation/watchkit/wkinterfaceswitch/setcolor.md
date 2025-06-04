@@ -1,6 +1,6 @@
 # setColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the tint color of the switch when it is on.
@@ -21,6 +21,7 @@ func setColor(_ color: UIColor?)
 ## See Also
 
 - [func setOn(Bool)](seton(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/seton(_:)))
+  Sets the state of the switch to the specified value.
 
 
 ---

@@ -1,6 +1,6 @@
 # WKExtensionDelegate
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: protocol
 
 A collection of methods that manages the app-level behavior of a WatchKit extension.
@@ -11,10 +11,11 @@ A collection of methods that manages the app-level behavior of a WatchKit extens
 ## Declaration
 
 ```swift
-@MainActor protocol WKExtensionDelegate : NSObjectProtocol
+@MainActor
+protocol WKExtensionDelegate : NSObjectProtocol
 ```
 
-## Overview
+#### Overview
 
 Implement the delegate’s methods to respond to your app’s life-cycle events, such as the activation and deactivation of your app. You can also implement delegate methods to respond to background tasks, Siri intents, workout sessions, or Handoff activity from another devices.
 
@@ -93,12 +94,19 @@ WatchKit creates your delegate object automatically by instantiating the class a
 ## See Also
 
 - [Setting up a watchOS project](setting-up-a-watchos-project.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/setting-up-a-watchos-project))
+  Create a new watchOS project or add a watch target to an existing iOS project.
 - [class WKApplication](wkapplication.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication))
+  The centralized point of control and coordination for apps with a single watchOS app target.
 - [protocol WKApplicationDelegate](wkapplicationdelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate))
+  A collection of methods that manages the app-level behavior for a single-target watchOS app.
 - [class WKExtension](wkextension.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension))
+  The centralized point of control and coordination for extension-based apps running in watchOS.
 - [func WKApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?) -> Int32](wkapplicationmain(_:_:_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationmain(_:_:_:)))
+  Creates the application object and the application delegate, and sets up the app’s event cycle.
 - [class WKInterfaceDevice](wkinterfacedevice.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice))
+  An object that provides information about the user’s Apple Watch.
 - WKPrefersNetworkUponForeground ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground))
+  A Boolean value that indicates whether an app requires network access on launch.
 
 
 ---

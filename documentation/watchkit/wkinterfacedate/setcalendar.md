@@ -1,6 +1,6 @@
 # setCalendar(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the calendar to use when formatting date information.
@@ -14,7 +14,7 @@ Sets the calendar to use when formatting date information.
 func setCalendar(_ calendar: Calendar?)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to configure the calendar to one that is different from the user’s current calendar. You might change the calendar to format dates differently based on your app’s needs. For example, a financial reporting app might use a calendar that breaks the year into fiscal quarters rather than months.
 
@@ -25,7 +25,9 @@ Use this method to configure the calendar to one that is different from the user
 ## See Also
 
 - [func setTextColor(UIColor?)](settextcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedate/settextcolor(_:)))
+  Sets the color of the date and time text.
 - [func setTimeZone(TimeZone?)](settimezone(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedate/settimezone(_:)))
+  Sets the time zone to use when displaying time information.
 
 
 ---

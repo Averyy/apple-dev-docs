@@ -1,6 +1,6 @@
 # errorDomain
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 **Availability**:

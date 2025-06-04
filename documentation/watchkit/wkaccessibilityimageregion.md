@@ -1,6 +1,6 @@
 # WKAccessibilityImageRegion
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that defines a portion of an image that you want to call out separately to an assistive app.
@@ -14,7 +14,7 @@ An object that defines a portion of an image that you want to call out separatel
 class WKAccessibilityImageRegion
 ```
 
-## Overview
+#### Overview
 
 The accessibility image region object defines the portion of the image that you want to call out separately and the label you want to apply to that region. Use an accessibility image region object in conjunction with any interface object that displays an image, either as part of its foreground or background content. Register your custom regions using the [`setAccessibilityImageRegions(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/setaccessibilityimageregions(_:)) method of the corresponding interface object.
 
@@ -41,11 +41,17 @@ The accessibility image region object defines the portion of the image that you 
 ## See Also
 
 - [Building watchOS app Interfaces Using the Storyboard](building-watchos-app-interfaces-using-the-storyboard.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/building-watchos-app-interfaces-using-the-storyboard))
+  Create the user interface for your watchOS app by nesting stacks.
 - [class WKInterfaceObject](wkinterfaceobject.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject))
+  An object that provides information that is common to all interface objects in your watchOS app.
 - [class WKInterfaceController](wkinterfacecontroller.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller))
+  A class that provides the infrastructure for managing the interface in a watchOS app.
 - [class WKAlertAction](wkalertaction.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertaction))
+  An object that encapsulates information about a button displayed in an alert or action sheet.
 - [func WKAccessibilityIsVoiceOverRunning() -> Bool](wkaccessibilityisvoiceoverrunning().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityisvoiceoverrunning()))
+  Returns a Boolean value indicating whether VoiceOver is running.
 - [func WKAccessibilityIsReduceMotionEnabled() -> Bool](wkaccessibilityisreducemotionenabled().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityisreducemotionenabled()))
+  Returns a Boolean value indicating whether reduced motion is enabled.
 
 
 ---

@@ -1,6 +1,6 @@
 # current()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Returns the shared device object.
@@ -14,7 +14,7 @@ Returns the shared device object.
 class func current() -> WKInterfaceDevice
 ```
 
-## Overview
+#### Return Value
 
 The shared device object.
 

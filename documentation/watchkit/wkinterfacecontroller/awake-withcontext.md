@@ -1,6 +1,6 @@
 # awake(withContext:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Initializes the interface controller with the specified context data.
@@ -11,7 +11,8 @@ Initializes the interface controller with the specified context data.
 ## Declaration
 
 ```swift
-@MainActor func awake(withContext context: Any?)
+@MainActor
+func awake(withContext context: Any?)
 ```
 
 ## Mentions
@@ -19,7 +20,7 @@ Initializes the interface controller with the specified context data.
 - [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
 - [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
 
-## Overview
+#### Discussion
 
 The system calls this method at initialization time to provide the interface controller with any relevant contextual data from a previous interface controller. Use this method to finish the initialization of your interface. For example, you might use this method to load data and to set the values for labels, images, tables, and other interface objects in your storyboard scene. If context data is available, use it to assist in the configuration of the new interface controller.
 
@@ -32,7 +33,9 @@ The default implementation of this method does nothing.
 ## See Also
 
 - [init()](init().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/init()))
+  Returns an initialized interface controller object.
 - [func setTitle(String?)](settitle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/settitle(_:)))
+  Sets the title of the interface.
 
 
 ---

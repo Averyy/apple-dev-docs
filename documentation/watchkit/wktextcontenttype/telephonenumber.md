@@ -1,6 +1,6 @@
 # telephoneNumber
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A telephone number.
@@ -17,6 +17,7 @@ static let telephoneNumber: WKTextContentType
 ## See Also
 
 - [static let emailAddress: WKTextContentType](emailaddress.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/emailaddress))
+  An email address.
 
 
 ---

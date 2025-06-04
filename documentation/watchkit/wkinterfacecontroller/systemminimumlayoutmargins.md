@@ -1,6 +1,6 @@
 # systemMinimumLayoutMargins
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 Leading and trailing insets that represent the minimum layout margins for text elements.
@@ -11,10 +11,11 @@ Leading and trailing insets that represent the minimum layout margins for text e
 ## Declaration
 
 ```swift
-@MainActor var systemMinimumLayoutMargins: NSDirectionalEdgeInsets { get }
+@MainActor
+var systemMinimumLayoutMargins: NSDirectionalEdgeInsets { get }
 ```
 
-## Overview
+#### Discussion
 
 The 40 mm and 44 mm watches have rounded corners. As a result, the items in the status bar do not extend all the way to the edge of the screen.
 
@@ -25,7 +26,9 @@ The system sets the [`systemMinimumLayoutMargins`](https://developer.apple.com/d
 ## See Also
 
 - [var contentSafeAreaInsets: UIEdgeInsets](contentsafeareainsets.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/contentsafeareainsets))
+  Insets that define the area where it’s safe to display content on the screen.
 - [var contentFrame: CGRect](contentframe.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/contentframe))
+  The frame rectangle used to display your app’s content.
 
 
 ---

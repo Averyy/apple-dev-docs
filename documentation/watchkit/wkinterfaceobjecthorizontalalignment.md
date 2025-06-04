@@ -1,6 +1,6 @@
 # WKInterfaceObjectHorizontalAlignment
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constants for horizontally aligning objects in their container.
@@ -38,6 +38,7 @@ enum WKInterfaceObjectHorizontalAlignment
 ## See Also
 
 - [enum WKInterfaceObjectVerticalAlignment](wkinterfaceobjectverticalalignment.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobjectverticalalignment))
+  Constants for vertically aligning objects in their container.
 
 
 ---

@@ -1,6 +1,6 @@
 # init(style:target:action:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Creates an authorization button for use in SwiftUI.
@@ -14,7 +14,7 @@ Creates an authorization button for use in SwiftUI.
 init(style: WKInterfaceAuthorizationAppleIDButton.Style, target: Any?, action: Selector)
 ```
 
-## Overview
+#### Discussion
 
 When the user taps the button, the system calls the `action` method on the target.
 
@@ -29,7 +29,9 @@ Use this initializer to create an instance that you can wrap in a [`WKInterfaceO
 ## See Also
 
 - [WKInterfaceAuthorizationAppleIDButton.Style](style.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/style))
+  Values that define an authorization button’s style.
 - [init(target: Any?, action: Selector)](init(target:action:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton/init(target:action:)))
+  Creates an authorization button for use in SwiftUI.
 
 
 ---

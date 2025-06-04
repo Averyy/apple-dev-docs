@@ -1,6 +1,6 @@
 # imageName
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The name of the image to load from the Watch app’s bundle.
@@ -14,14 +14,16 @@ The name of the image to load from the Watch app’s bundle.
 var imageName: String? { get }
 ```
 
-## Overview
+#### Discussion
 
 The value in this property is set using the [`init(imageName:)`](https://developer.apple.com/documentation/watchkit/wkimage/init(imagename:)) method. For image objects created using other methods, this property is `nil`.
 
 ## See Also
 
 - [var image: UIImage?](image.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage/image))
+  The UIKit image object
 - [var imageData: Data?](imagedata.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage/imagedata))
+  The data object containing the raw image data.
 
 
 ---

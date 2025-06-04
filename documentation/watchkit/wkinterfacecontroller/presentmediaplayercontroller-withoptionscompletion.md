@@ -1,6 +1,6 @@
 # presentMediaPlayerController(with:options:completion:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Displays a modal interface for playing the specified media file.
@@ -11,14 +11,15 @@ Displays a modal interface for playing the specified media file.
 ## Declaration
 
 ```swift
-@MainActor func presentMediaPlayerController(with URL: URL, options: [AnyHashable : Any]? = nil) async throws -> (Bool, TimeInterval)
+@MainActor
+func presentMediaPlayerController(with URL: URL, options: [AnyHashable : Any]? = nil) async throws -> (Bool, TimeInterval)
 ```
 
 ## Mentions
 
 - [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
 
-## Overview
+#### Discussion
 
 Use this method to present short media clips to the user. This method executes asynchronously, returning shortly after you call it. During a subsequent run loop cycle, the system presents a media interface controller over the current interface controller. For video, the interface controller displays the video content along with controls to start and stop playback. For audio, the interface controller displays information about the content being played. Always call this method from your WatchKit extension’s main thread.
 
@@ -26,11 +27,10 @@ When the user dismisses the interface, or when you dismiss the media player prog
 
 The following table lists the encoding information to use when creating media files. For audio and video assets played directly from your app, keep your clips relatively short. Short clips consume less space on disk, use less power, and take less time to download.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'inlineContent': [{'text': 'Media type', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Recommended encoding'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Video assets', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'Video codec: H.264 High Profile ', 'type': 'text'}, {'type': 'image', 'identifier': 'spacer'}, {'text': ' Bit rate: 160 kpbs at up to 30 fps ', 'type': 'text'}, {'type': 'image', 'identifier': 'spacer'}, {'text': ' Full screen resolution: 208 x 260 in portrait orientation ', 'type': 'text'}, {'type': 'image', 'identifier': 'spacer'}, {'text': ' 16:9 resolution: 320 x 180 in landscape orientation ', 'type': 'text'}, {'type': 'image', 'identifier': 'spacer'}, {'text': ' Audio bit rate: 32 kpbs stereo', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Audio-only assets'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'Bit rate: 32 kbps stereo', 'type': 'text'}], 'type': 'paragraph'}] |
+| Media type | Recommended encoding |
+| --- | --- |
+| Video assets | Video codec: H.264 High Profile ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Audio bit rate: 32 kpbs stereo |
+| Audio-only assets | Bit rate: 32 kbps stereo |
 
 > **Note**:  Do not attempt to play audio or video content while gathering heart rate data using Health Kit. If you present a media interface, WatchKit automatically disables the gathering of heart rate data.
 
@@ -47,11 +47,17 @@ Any audio you play using this method is routed to a paired Bluetooth audio devic
 ## See Also
 
 - [Media Player Options](media-player-options.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/media-player-options))
+  Keys indicating media playback options.
 - [func dismissMediaPlayerController()](dismissmediaplayercontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismissmediaplayercontroller()))
+  Dismisses the media interface controller.
 - [func presentAudioRecorderController(withOutputURL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]?, completion: (Bool, (any Error)?) -> Void)](presentaudiorecordercontroller(withoutputurl:preset:options:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentaudiorecordercontroller(withoutputurl:preset:options:completion:)))
+  Display a standard interface for recording audio from the user’s Apple Watch.
 - [enum WKAudioRecorderPreset](wkaudiorecorderpreset.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiorecorderpreset))
+  Constants indicating the quality of audio recordings.
 - [Audio Recording Options](audio-recording-options.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/audio-recording-options))
+  Options to specify when recording audio.
 - [func dismissAudioRecorderController()](dismissaudiorecordercontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismissaudiorecordercontroller()))
+  Dismisses the audio recording interface controller.
 
 
 ---

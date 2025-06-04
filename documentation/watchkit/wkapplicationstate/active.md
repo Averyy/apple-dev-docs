@@ -1,6 +1,6 @@
 # WKApplicationState.active
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The Watch app is running in the foreground and currently receiving events.
@@ -23,7 +23,9 @@ case active
 ## See Also
 
 - [WKApplicationState.inactive](inactive.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate/inactive))
+  The Watch app is running in the foreground, but is not yet responding to actions from controls or gestures.
 - [WKApplicationState.background](background.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate/background))
+  The Watch app is running in the background.
 
 
 ---

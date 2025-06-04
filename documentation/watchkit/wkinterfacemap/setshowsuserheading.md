@@ -1,6 +1,6 @@
 # setShowsUserHeading(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets whether the map shows the user heading.
@@ -14,7 +14,7 @@ Sets whether the map shows the user heading.
 func setShowsUserHeading(_ showsUserHeading: Bool)
 ```
 
-## Overview
+#### Discussion
 
 By default, the map doesn’t show the user’s heading.
 
@@ -25,8 +25,11 @@ By default, the map doesn’t show the user’s heading.
 ## See Also
 
 - [func setShowsUserLocation(Bool)](setshowsuserlocation(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setshowsuserlocation(_:)))
+  Sets whether the map shows the user’s current location.
 - [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](setusertrackingmode(_:animated:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setusertrackingmode(_:animated:)))
+  Sets the map’s tracking mode.
 - [WKInterfaceMap.UserTrackingMode](usertrackingmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode))
+  Modes for tracking the user’s location on the map.
 
 
 ---

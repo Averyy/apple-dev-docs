@@ -1,6 +1,6 @@
 # WKInterfacePicker
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that presents a scrolling list of items for the user to choose from.
@@ -14,7 +14,7 @@ An interface element that presents a scrolling list of items for the user to cho
 class WKInterfacePicker
 ```
 
-## Overview
+#### Overview
 
 The picker presents one or more [`WKPickerItem`](https://developer.apple.com/documentation/watchkit/wkpickeritem) objects to the user. These Items may consist of text, images, or a combination of the two. The user interacts with a picker by tapping it, using the crown to scroll through items, and tapping again to select an item. A single interface controller may contain multiple pickers, each with its own set of items.
 
@@ -32,15 +32,16 @@ Do not subclass or create instances of this class yourself. Instead, define outl
 
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the onscreen picker.
 
+##### Interface Builder Configuration Options
+
 Xcode lets you configure information about your picker interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Attribute', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Description', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Style'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'The visual style of the picker. The style determines the type of information displayed by the picker. For example, a picker configured with the List style displays a string and an optional accessory image for each item. Other styles display only the content image of each picker item.', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Focus', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The highlight style when the picker has the focus. The focus style lets the user know when a picker is selected and receiving input from the Digital Crown. If you specify a focus style that includes a caption, the picker displays the caption string for the current item in addition to that item’s text.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Indicator', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'A value indicating whether the picker uses an indicator to convey context about the number of picker items and which item is selected.', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Enabled'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'A checkbox indicating whether the picker is enabled and sends events when tapped. You can also configure this value programmatically using the ', 'type': 'text'}, {'isActive': True, 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfacePicker/setEnabled(_:)', 'type': 'reference'}, {'text': ' method.', 'type': 'text'}]}] |
+| Attribute | Description |
+| --- | --- |
+| Style | The visual style of the picker. The style determines the type of information displayed by the picker. For example, a picker configured with the List style displays a string and an optional accessory image for each item. Other styles display only the content image of each picker item. |
+| Focus | The highlight style when the picker has the focus. The focus style lets the user know when a picker is selected and receiving input from the Digital Crown. If you specify a focus style that includes a caption, the picker displays the caption string for the current item in addition to that item’s text. |
+| Indicator | A value indicating whether the picker uses an indicator to convey context about the number of picker items and which item is selected. |
+| Enabled | A checkbox indicating whether the picker is enabled and sends events when tapped. You can also configure this value programmatically using the [`setEnabled(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setenabled(_:)) method. |
 
 ## Topics
 
@@ -77,8 +78,11 @@ Xcode lets you configure information about your picker interface object in your 
 ## See Also
 
 - [class WKInterfaceGroup](wkinterfacegroup.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup))
+  A container for one or more interface objects.
 - [class WKInterfaceSeparator](wkinterfaceseparator.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceseparator))
+  An interface object that displays a visual separator within a group.
 - [class WKInterfaceTable](wkinterfacetable.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable))
+  An object that creates and manages the contents of a single-column table interface.
 
 
 ---

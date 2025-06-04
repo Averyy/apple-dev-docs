@@ -1,6 +1,6 @@
 # update(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Registers the current user activity with the system.
@@ -11,12 +11,14 @@ Registers the current user activity with the system.
 ## Declaration
 
 ```swift
-@MainActor func update(_ userActivity: NSUserActivity)
+@MainActor
+func update(_ userActivity: NSUserActivity)
 ```
 
 ## See Also
 
 - [func invalidateUserActivity()](invalidateuseractivity().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/invalidateuseractivity()))
+  Invalidates the most recent user activity.
 
 
 ---

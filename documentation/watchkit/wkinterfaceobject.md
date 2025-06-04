@@ -1,6 +1,6 @@
 # WKInterfaceObject
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that provides information that is common to all interface objects in your watchOS app.
@@ -18,7 +18,7 @@ class WKInterfaceObject
 
 - [Connecting Your User Interface to Your Code](connecting-your-user-interface-to-your-code.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/connecting-your-user-interface-to-your-code))
 
-## Overview
+#### Overview
 
 Your WatchKit extension uses interface objects to manipulate the visual elements displayed on Apple Watch. Specifically, you use the methods of this class to change the size, alignment, and visibility of those elements. You can also configure the accessibility information displayed through assistive technologies like VoiceOver.
 
@@ -28,18 +28,19 @@ At runtime, WatchKit creates the appropriate interface objects and assigns them 
 
 WatchKit provides one-way communication between the interface objects in your extension and the corresponding interface elements in your watchOS app. You can set the values of an interface object, but you cannot get the current values. If you want to know the current value of an attribute, you must save the value yourself.
 
+##### Interface Builder Configuration Options
+
 Xcode lets you configure information about your group interface object in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'inlineContent': [{'type': 'text', 'text': 'Attribute'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Description'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Alpha', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'The opacity of the object. A value of ', 'type': 'text'}, {'code': '1.0', 'type': 'codeVoice'}, {'text': ' represents fully opaque and a value of ', 'type': 'text'}, {'code': '0.0', 'type': 'codeVoice'}, {'text': ' represents fully transparent.', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Hidden', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'A checkbox indicating whether the item is hidden initially. You can change the visibility of the item programmatically by calling the '}, {'isActive': True, 'type': 'reference', 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceObject/setHidden(_:)'}, {'type': 'text', 'text': ' method.'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Installed'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'A checkbox indicating whether the item is installed for the current device.', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Horizontal'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'The horizontal alignment of the item. Use this attribute to configure the horizontal position of the item relative to its immediate parent.', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Vertical', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'The vertical alignment of the item. Use this attribute to configure the vertical position of the item relative to its immediate parent.'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Width', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'The width of the object. Specify a fixed width or set the value of the object to be a percentage of its container’s width.', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Height'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'The height of the object. Specify a fixed height or set the value of the object to be a percentage of its container’s height.', 'type': 'text'}], 'type': 'paragraph'}] |
+| Attribute | Description |
+| --- | --- |
+| Alpha | The opacity of the object. A value of `1.0` represents fully opaque and a value of `0.0` represents fully transparent. |
+| Hidden | A checkbox indicating whether the item is hidden initially. You can change the visibility of the item programmatically by calling the [`setHidden(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceobject/sethidden(_:)) method. |
+| Installed | A checkbox indicating whether the item is installed for the current device. |
+| Horizontal | The horizontal alignment of the item. Use this attribute to configure the horizontal position of the item relative to its immediate parent. |
+| Vertical | The vertical alignment of the item. Use this attribute to configure the vertical position of the item relative to its immediate parent. |
+| Width | The width of the object. Specify a fixed width or set the value of the object to be a percentage of its container’s width. |
+| Height | The height of the object. Specify a fixed height or set the value of the object to be a percentage of its container’s height. |
 
 ## Topics
 
@@ -131,11 +132,17 @@ Xcode lets you configure information about your group interface object in your s
 ## See Also
 
 - [Building watchOS app Interfaces Using the Storyboard](building-watchos-app-interfaces-using-the-storyboard.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/building-watchos-app-interfaces-using-the-storyboard))
+  Create the user interface for your watchOS app by nesting stacks.
 - [class WKInterfaceController](wkinterfacecontroller.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller))
+  A class that provides the infrastructure for managing the interface in a watchOS app.
 - [class WKAlertAction](wkalertaction.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertaction))
+  An object that encapsulates information about a button displayed in an alert or action sheet.
 - [class WKAccessibilityImageRegion](wkaccessibilityimageregion.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityimageregion))
+  An object that defines a portion of an image that you want to call out separately to an assistive app.
 - [func WKAccessibilityIsVoiceOverRunning() -> Bool](wkaccessibilityisvoiceoverrunning().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityisvoiceoverrunning()))
+  Returns a Boolean value indicating whether VoiceOver is running.
 - [func WKAccessibilityIsReduceMotionEnabled() -> Bool](wkaccessibilityisreducemotionenabled().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityisreducemotionenabled()))
+  Returns a Boolean value indicating whether reduced motion is enabled.
 
 
 ---

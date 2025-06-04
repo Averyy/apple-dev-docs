@@ -1,6 +1,6 @@
 # setTextColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the color of the timer’s text.
@@ -21,6 +21,7 @@ func setTextColor(_ color: UIColor?)
 ## See Also
 
 - [func setDate(Date)](setdate(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/setdate(_:)))
+  Changes the start time for the timer.
 
 
 ---

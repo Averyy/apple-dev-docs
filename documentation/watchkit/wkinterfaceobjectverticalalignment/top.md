@@ -1,6 +1,6 @@
 # WKInterfaceObjectVerticalAlignment.top
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Top alignment. The object’s content aligns with the top edge of the container and extends downward.
@@ -17,7 +17,9 @@ case top
 ## See Also
 
 - [WKInterfaceObjectVerticalAlignment.center](center.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobjectverticalalignment/center))
+  Center alignment. The object’s content is centered vertically in the container and extends equally up and down.
 - [WKInterfaceObjectVerticalAlignment.bottom](bottom.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobjectverticalalignment/bottom))
+  Bottom alignment. The object’s content aligns with the bottom edge of the container and extends upward.
 
 
 ---

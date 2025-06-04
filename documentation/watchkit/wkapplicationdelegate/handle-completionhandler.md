@@ -1,6 +1,6 @@
 # handle(_:completionHandler:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Responds to a Siri intent.
@@ -11,10 +11,11 @@ Responds to a Siri intent.
 ## Declaration
 
 ```swift
-@MainActor optional func handle(_ intent: INIntent) async -> INIntentResponse
+@MainActor
+optional func handle(_ intent: INIntent) async -> INIntentResponse
 ```
 
-## Overview
+#### Discussion
 
 The system calls this method when it receives a Siri intent. Implement a method that handles the incoming intent, and then call the completion handler as quickly as possible.
 
@@ -26,6 +27,7 @@ The system calls this method when it receives a Siri intent. Implement a method 
 ## See Also
 
 - [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkintentdidrunrefreshbackgroundtask))
+  A background task used to update your app after a SiriKit intent runs.
 
 
 ---

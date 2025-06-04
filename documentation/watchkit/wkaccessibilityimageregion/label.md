@@ -1,6 +1,6 @@
 # label
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A succinct label that succinctly identifies the purpose of the image region.
@@ -14,13 +14,14 @@ A succinct label that succinctly identifies the purpose of the image region.
 var label: String { get set }
 ```
 
-## Overview
+#### Discussion
 
 The label should be a very short, localized string that identifies the purpose of the region, but does not necessarily convey the imagery displayed in that region.
 
 ## See Also
 
 - [var frame: CGRect](frame.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityimageregion/frame))
+  A portion of the parent image, in the image’s coordinate system.
 
 
 ---

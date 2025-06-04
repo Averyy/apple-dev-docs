@@ -1,6 +1,6 @@
 # handleActiveWorkoutRecovery()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the delegate when the app relaunches after crashing during an active workout session.
@@ -11,17 +11,20 @@ Tells the delegate when the app relaunches after crashing during an active worko
 ## Declaration
 
 ```swift
-@MainActor optional func handleActiveWorkoutRecovery()
+@MainActor
+optional func handleActiveWorkoutRecovery()
 ```
 
-## Overview
+#### Discussion
 
 To recover from a crash, call your HealthKit store’s [`recoverActiveWorkoutSession(completion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/2962889-recoveractiveworkoutsession) method to receive a new workout session. You can then set up your data source and delegate as described in [`Running workout sessions`](https://developer.apple.com/documentation/HealthKit/running-workout-sessions).
 
 ## See Also
 
 - func recoverActiveWorkoutSession(completion: (HKWorkoutSession?, (any Error)?) -> Void) ([Apple Docs](https://developer.apple.com/documentation/healthkit/hkhealthstore/2962889-recoveractiveworkoutsession))
+  Recovers an active workout session.
 - [func handle(HKWorkoutConfiguration)](handle(_:)-1pfoc.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-1pfoc))
+  Tells the delegate that the user started a workout session on the paired iPhone.
 
 
 ---

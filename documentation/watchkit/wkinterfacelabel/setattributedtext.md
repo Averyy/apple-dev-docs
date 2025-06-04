@@ -1,6 +1,6 @@
 # setAttributedText(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the label text to the specified attributed string.
@@ -18,7 +18,7 @@ func setAttributedText(_ attributedText: NSAttributedString?)
 
 - [Connecting Your User Interface to Your Code](connecting-your-user-interface-to-your-code.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/connecting-your-user-interface-to-your-code))
 
-## Overview
+#### Discussion
 
 This method changes the label text to the new value, replacing the old text if any. Any font and style attributes applied to the string take precedence over default values. If you do not explicitly specify font or styling information, the default values are used instead. For example, if you do not specify a text color explicitly, the default text color is used.
 
@@ -31,7 +31,9 @@ Attributed strings may not contain any [`NSTextAttachment`](https://developer.ap
 ## See Also
 
 - [func setText(String?)](settext(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelabel/settext(_:)))
+  Sets the label text to the specified string.
 - [func setTextColor(UIColor?)](settextcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelabel/settextcolor(_:)))
+  Sets the color to apply to plain text strings.
 
 
 ---

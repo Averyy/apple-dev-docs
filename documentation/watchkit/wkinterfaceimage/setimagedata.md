@@ -1,6 +1,6 @@
 # setImageData(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the displayed image using a formatted data object.
@@ -14,7 +14,7 @@ Sets the displayed image using a formatted data object.
 func setImageData(_ imageData: Data?)
 ```
 
-## Overview
+#### Discussion
 
 This method changes the image being displayed.
 
@@ -27,8 +27,11 @@ When setting images, always try to use images that are sized to fit the availabl
 ## See Also
 
 - [func setImage(UIImage?)](setimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimage(_:)))
+  Sets the displayed image using the specified image object.
 - [func setImageNamed(String?)](setimagenamed(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimagenamed(_:)))
+  Sets the displayed image using a named image resource file.
 - [func setTintColor(UIColor?)](settintcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/settintcolor(_:)))
+  Changes the color applied to a template image.
 
 
 ---

@@ -1,6 +1,6 @@
 # registerForRemoteNotifications()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Register to receive remote notifications from the Apple Push Notification service (APNs).
@@ -11,10 +11,11 @@ Register to receive remote notifications from the Apple Push Notification servic
 ## Declaration
 
 ```swift
-@MainActor func registerForRemoteNotifications()
+@MainActor
+func registerForRemoteNotifications()
 ```
 
-## Overview
+#### Discussion
 
 Before calling this method, you must enable your WatchKit extension’s Push Notification capability, as described in [`Enable push notifications`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devdfd3d04a1).
 
@@ -33,7 +34,9 @@ For more information on setting up remote notifications, see [`Setting up a remo
 ## See Also
 
 - [func unregisterForRemoteNotifications()](unregisterforremotenotifications().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/unregisterforremotenotifications()))
+  Unregister for all remote notifications received from Apple Push Notification service (APNs).
 - [var isRegisteredForRemoteNotifications: Bool](isregisteredforremotenotifications.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isregisteredforremotenotifications))
+  A Boolean value that indicates if the app has successfully registered for remote notifications.
 
 
 ---

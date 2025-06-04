@@ -1,6 +1,6 @@
 # WKHapticType
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constant indicating the style of feedback to deliver using haptics.
@@ -59,6 +59,7 @@ enum WKHapticType
 ## See Also
 
 - [func play(WKHapticType)](play(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/play(_:)))
+  Gives haptic feedback to the user.
 
 
 ---

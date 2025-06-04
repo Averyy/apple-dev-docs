@@ -1,6 +1,6 @@
 # setVisibleMapRect(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the map’s visible region to the specified map rectangle.
@@ -14,7 +14,7 @@ Changes the map’s visible region to the specified map rectangle.
 func setVisibleMapRect(_ mapRect: MKMapRect)
 ```
 
-## Overview
+#### Discussion
 
 The method may adjust the specified map rectangle slightly to fit the available display space for the map. The adjusted region always includes the entire region you specified.
 
@@ -28,6 +28,7 @@ Changing the visible region may require the loading of additional map tiles to r
 
 - [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
 - [func setRegion(MKCoordinateRegion)](setregion(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setregion(_:)))
+  Changes the map’s visible region to the specified coordinate region.
 
 
 ---

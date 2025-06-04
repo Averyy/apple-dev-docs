@@ -1,6 +1,6 @@
 # applicationWillEnterForeground()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the delegate that the app is about to transition from the background to the foreground.
@@ -11,10 +11,11 @@ Tells the delegate that the app is about to transition from the background to th
 ## Declaration
 
 ```swift
-@MainActor optional func applicationWillEnterForeground()
+@MainActor
+optional func applicationWillEnterForeground()
 ```
 
-## Overview
+#### Discussion
 
 The system calls this method when the app transitions from the background to the foreground. Override this method to undo many of the changes you made to your app upon entering the background. The call to this method is invariably followed by a call to the [`applicationDidBecomeActive()`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidbecomeactive()) method, as the app moves from the inactive to the active state.
 
@@ -25,12 +26,19 @@ The system calls this method when the app transitions from the background to the
 ## See Also
 
 - [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
+  Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
 - [static func main()](main().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/main()))
+  Provides the top-level entry point for an app.
 - [func applicationDidFinishLaunching()](applicationdidfinishlaunching().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidfinishlaunching()))
+  Tells the delegate that the launch process is almost done and the app is almost ready to run.
 - [func applicationDidBecomeActive()](applicationdidbecomeactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidbecomeactive()))
+  Tells the delegate that the watchOS app is visible and processing events.
 - [func applicationWillResignActive()](applicationwillresignactive().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationwillresignactive()))
+  Tells the delegate that the system is about to deactivate the watchOS app.
 - [func applicationDidEnterBackground()](applicationdidenterbackground().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidenterbackground()))
+  Tells the delegate that the app has transitioned from the foreground to the background.
 - [func deviceOrientationDidChange()](deviceorientationdidchange().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/deviceorientationdidchange()))
+  Tells the delegate that the device’s orientation has changed.
 
 
 ---

@@ -1,6 +1,6 @@
 # init(asset:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Creates and returns a player item for the specified audio file asset.
@@ -14,7 +14,7 @@ Creates and returns a player item for the specified audio file asset.
 init(asset: WKAudioFileAsset)
 ```
 
-## Overview
+#### Return Value
 
 An initialized player item.
 

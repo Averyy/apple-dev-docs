@@ -1,6 +1,6 @@
 # shared()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Returns the shared WatchKit extension object.
@@ -11,10 +11,11 @@ Returns the shared WatchKit extension object.
 ## Declaration
 
 ```swift
-@MainActor class func shared() -> WKExtension
+@MainActor
+class func shared() -> WKExtension
 ```
 
-## Overview
+#### Return Value
 
 The WatchKit extension object. This object is never `nil`.
 

@@ -1,6 +1,6 @@
 # init(imageData:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Creates an image with the specified raw image data.
@@ -14,22 +14,24 @@ Creates an image with the specified raw image data.
 convenience init(imageData: Data)
 ```
 
-## Overview
+#### Return Value
 
 An initialized `WKImage` object.
+
+#### Discussion
+
+Use this method when you already have raw PNG or JPG data and want to use it for an image. Using this method for raw image data is more efficient than creating an image object to encapsulate that data.
 
 ## Parameters
 
 - `imageData`: A data object containing the image data in its native format. This parameter must not be  .
 
-## Discussion
-
-Use this method when you already have raw PNG or JPG data and want to use it for an image. Using this method for raw image data is more efficient than creating an image object to encapsulate that data.
-
 ## See Also
 
 - [convenience init(image: UIImage)](init(image:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage/init(image:)))
+  Creates and returns an image object using the specified UIKit image.
 - [convenience init(imageName: String)](init(imagename:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage/init(imagename:)))
+  Creates an image by loading an image file from the Watch app bundle.
 
 
 ---

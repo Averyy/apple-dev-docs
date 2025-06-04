@@ -1,10 +1,10 @@
 # Using extended runtime sessions
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Create an extended runtime session that continues running your app after the user stops interacting with it.
 
-## Overview
+#### Overview
 
 An app running on Apple Watch normally transitions to the background and becomes suspended when the user lowers their wrist. However, your app can use both background sessions and extended runtime sessions to continue running after the user stops interacting with it.
 
@@ -16,7 +16,11 @@ Select a session type based on the app’s intended use—not based on the featu
 
  To maintain high performance on Apple Watch, limit the amount of work performed during an extended runtime session. If your app sustains high CPU usage over a period of time, the system may cancel the session (see [`WKExtendedRuntimeSessionErrorCode.exceededResourceLimits`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessionerrorcode/exceededresourcelimits)). Use Xcode’s CPU report tool or the time profiler in Instruments to test and minimize your app’s CPU usage.
 
+##### Set Up the Session
+
 Before starting an extended runtime session, enable your WatchKit extension’s Background Modes capability and select your app’s session type (see [`Figure 1`](https://developer.apple.com/documentation/watchkit/using_extended_runtime_sessions#3189143)). Each app can only support one type of extended runtime session, although it’s possible to support other background modes in combination with extended runtime.
+
+![A screenshot showing the Session Type setting for the Background Modes capability.](https://docs-assets.developer.apple.com/published/451eab875e5b686824dd5c24b4cfe380/media-3189143%402x.png)
 
 A physical therapy app, for example, might use a [`WKExtendedRuntimeSession`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession) for range-of-motion exercises and an [`HKWorkoutSession`](https://developer.apple.com/documentation/HealthKit/HKWorkoutSession) for vigorous cross-training. Using separate sessions keeps the range-of-motion exercise from impacting the user’s Move and Exercise rings, but the user still gets full credit for the cross-training.
 
@@ -66,15 +70,16 @@ For sessions started with [`start(at:)`](https://developer.apple.com/documentati
 }
 ```
 
+##### Understand Session Behaviors
+
 Extended runtime sessions gain the following features, based on the session type.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'inlineContent': [{'type': 'text', 'text': 'Session type'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Runtime'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'Schedulable', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'Time limit', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Self care', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Frontmost'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'No'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': '10 minutes', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Mindfulness'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'Frontmost', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'No', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': '1 hour'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Physical therapy', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'Background', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'No', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': '1 hour'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Smart alarm', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'Background', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Yes'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': '30 minutes'}], 'type': 'paragraph'}] |
+| Session type | Runtime | Schedulable | Time limit |
+| --- | --- | --- | --- |
+| Self care | Frontmost | No | 10 minutes |
+| Mindfulness | Frontmost | No | 1 hour |
+| Physical therapy | Background | No | 1 hour |
+| Smart alarm | Background | Yes | 30 minutes |
 
  sessions continue to run in the foreground. The watch screen doesn’t need to remain on to keep your app alive. The session continues until the time limit expires, your app invalidates the session, or the user explicitly leaves your app (for example, by pressing the digital crown or switching to a different app).
 
@@ -86,56 +91,16 @@ After the session starts, the app continues to run in the background until the t
 
 If you fail to play a haptic during the session, the system displays a warning and offers to disable future sessions.
 
-## Code Examples
-
-### Example
-
-```swift
-// Create the session object.
-session = WKExtendedRuntimeSession()
-
-// Assign the delegate.
-session.delegate = self
-```
-
-### Example
-
-```swift
-// MARK:- Extended Runtime Session Delegate Methods
-func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
-    // Track when your session starts.
-}
-
-func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
-    // Finish and clean up any tasks before the session ends. 
-}
-    
-func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) {
-    // Track when your session ends.
-    // Also handle errors here.
-}
-```
-
-### Example
-
-```swift
-session.start()
-```
-
-### Example
-
-```swift
-@IBAction func stopButton() {
-    session.invalidate()
-}
-```
-
 ## See Also
 
 - [Background execution](background-execution.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/background-execution))
+  Manage background sessions and tasks.
 - [Life cycles](life-cycles.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/life-cycles))
+  Receive and respond to life-cycle notifications.
 - [class WKExtendedRuntimeSession](wkextendedruntimesession.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession))
+  A session that continues to run your app after the user has stopped interacting.
 - [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh))
+  Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 
 
 ---

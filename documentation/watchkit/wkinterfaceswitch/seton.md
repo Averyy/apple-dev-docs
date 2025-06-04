@@ -1,6 +1,6 @@
 # setOn(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the state of the switch to the specified value.
@@ -14,7 +14,7 @@ Sets the state of the switch to the specified value.
 func setOn(_ on: Bool)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to set the value of a switch. If you want to know the value of a switch, use a local variable to track that information.
 
@@ -25,6 +25,7 @@ Use this method to set the value of a switch. If you want to know the value of a
 ## See Also
 
 - [func setColor(UIColor?)](setcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch/setcolor(_:)))
+  Changes the tint color of the switch when it is on.
 
 
 ---

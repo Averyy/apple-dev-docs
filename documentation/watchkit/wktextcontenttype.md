@@ -1,6 +1,6 @@
 # WKTextContentType
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: struct
 
 Constants that specify a text field’s semantic meaning.
@@ -91,6 +91,7 @@ struct WKTextContentType
 ## See Also
 
 - [func setTextContentType(WKTextContentType?)](settextcontenttype(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/settextcontenttype(_:)))
+  Sets the text field’s semantic meaning.
 
 
 ---

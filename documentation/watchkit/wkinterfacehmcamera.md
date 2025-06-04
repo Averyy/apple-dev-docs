@@ -1,6 +1,6 @@
 # WKInterfaceHMCamera
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.
@@ -14,7 +14,7 @@ An interface element that displays either a video stream or a single snapshot fr
 class WKInterfaceHMCamera
 ```
 
-## Overview
+#### Overview
 
 Do not subclass or create instances of this class yourself. Instead, define an outlet in your interface controller class and connect it to the corresponding object in your storyboard file. For example, to refer to a camera interface object in your interface, define a property with the following syntax in your interface controller class:
 
@@ -46,11 +46,17 @@ The camera interface object in your Watch app must be connected to a [`WKInterfa
 ## See Also
 
 - [class WKInterfaceImage](wkinterfaceimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage))
+  An image that can be displayed in the interface of your watchOS app.
 - [class WKImage](wkimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage))
+  A wrapper for images you use with a picker interface.
 - [protocol WKImageAnimatable](wkimageanimatable.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable))
+  A collection of methods you can use to control the playback of animated images.
 - [class WKInterfaceMovie](wkinterfacemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie))
+  An interface element that lets you play video and audio content in your watchOS app.
 - [class WKInterfaceInlineMovie](wkinterfaceinlinemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie))
+  An interface element that displays a video’s poster image and supports inline playing of the video.
 - [enum WKVideoGravity](wkvideogravity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity))
+  Constants indicating the appearance of video content.
 
 
 ---

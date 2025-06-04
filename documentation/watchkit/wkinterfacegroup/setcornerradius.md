@@ -1,6 +1,6 @@
 # setCornerRadius(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the radius to use when drawing rounded corners for the group.
@@ -14,7 +14,7 @@ Changes the radius to use when drawing rounded corners for the group.
 func setCornerRadius(_ cornerRadius: CGFloat)
 ```
 
-## Overview
+#### Discussion
 
 Setting the radius to a value greater than `0.0` causes the group to draw rounded corners on its background. When a corner radius is applied, the group’s background color or image are clipped accordingly.
 
@@ -27,6 +27,7 @@ The default corner radius for groups is 6 points.
 ## See Also
 
 - [func setContentInset(UIEdgeInsets)](setcontentinset(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setcontentinset(_:)))
+  Sets the distance between the edges of the group and any contained objects.
 
 
 ---

@@ -1,6 +1,6 @@
 # WKBluetoothAlertRefreshBackgroundTask
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A task for handling timely Bluetooth alerts in the background.
@@ -18,7 +18,7 @@ class WKBluetoothAlertRefreshBackgroundTask
 
 - [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
 
-## Overview
+#### Overview
 
 Your app can receive [`WKBluetoothAlertRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wkbluetoothalertrefreshbackgroundtask) tasks to handle timely alerts in the background. Use these tasks to reconnect a peripheral and handle a critical alert. Apps that use timely alerts can also scan for a specific system identifier (UUID) while in the background. You can then perform the initial connection and pair the devices if necessary.
 
@@ -50,14 +50,23 @@ If you exceed your budget, your app doesn’t receive any timely alerts until ad
 ## See Also
 
 - [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
+  Handle scheduled update tasks in the background, and respond to background system interactions including Siri intents and incoming Bluetooth messages.
 - [Preparing to take your watchOS app’s snapshot](preparing-to-take-your-watchos-app-s-snapshot.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/preparing-to-take-your-watchos-app-s-snapshot))
+  Provide a timely, accurate snapshot of your app by using snapshot background tasks.
 - [class WKApplicationRefreshBackgroundTask](wkapplicationrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationrefreshbackgroundtask))
+  A task that updates your app’s state in the background.
 - [class WKURLSessionRefreshBackgroundTask](wkurlsessionrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask))
+  A task that responds to background URL sessions.
 - [class WKWatchConnectivityRefreshBackgroundTask](wkwatchconnectivityrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwatchconnectivityrefreshbackgroundtask))
+  A background task used to receive background updates from the Watch Connectivity framework.
 - [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkintentdidrunrefreshbackgroundtask))
+  A background task used to update your app after a SiriKit intent runs.
 - [class WKRelevantShortcutRefreshBackgroundTask](wkrelevantshortcutrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrelevantshortcutrefreshbackgroundtask))
+  A background task used to periodically donate relevant Siri shortcuts.
 - [class WKSnapshotRefreshBackgroundTask](wksnapshotrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask))
+  A background task used to update your app’s user interface in preparation for a snapshot.
 - [class WKRefreshBackgroundTask](wkrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask))
+  The abstract superclass for WatchKit’s background task classes.
 
 
 ---

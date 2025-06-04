@@ -1,6 +1,6 @@
 # init(playerItem:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Creates and returns a player initialized with the specified player item.
@@ -14,7 +14,7 @@ Creates and returns a player initialized with the specified player item.
 convenience init(playerItem item: WKAudioFilePlayerItem)
 ```
 
-## Overview
+#### Return Value
 
 An initialized player object.
 
@@ -25,6 +25,7 @@ An initialized player object.
 ## See Also
 
 - [func replaceCurrentItem(with: WKAudioFilePlayerItem?)](replacecurrentitem(with:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/replacecurrentitem(with:)))
+  Replaces the current player item with a different one.
 
 
 ---

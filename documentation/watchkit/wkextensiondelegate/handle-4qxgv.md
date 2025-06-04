@@ -1,6 +1,6 @@
 # handle(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the delegate that the system launched your app to resume an extended runtime session.
@@ -11,14 +11,15 @@ Tells the delegate that the system launched your app to resume an extended runti
 ## Declaration
 
 ```swift
-@MainActor optional func handle(_ extendedRuntimeSession: WKExtendedRuntimeSession)
+@MainActor
+optional func handle(_ extendedRuntimeSession: WKExtendedRuntimeSession)
 ```
 
 ## Mentions
 
 - [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
 
-## Overview
+#### Discussion
 
 The system calls this method after launching your app in response to a scheduled extended runtime session. This occurs if your app terminates after scheduling a session but before that session’s start date. The system may also call this method if your app crashes during an extended runtime session, letting you resume that session.
 

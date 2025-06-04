@@ -1,6 +1,6 @@
 # globalTintColor
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The watchOS app’s global tint color.
@@ -11,10 +11,11 @@ The watchOS app’s global tint color.
 ## Declaration
 
 ```swift
-@MainActor var globalTintColor: UIColor { get }
+@MainActor
+var globalTintColor: UIColor { get }
 ```
 
-## Overview
+#### Discussion
 
 This property provides access to the global tint color so that you can match the color elsewhere in your user interface. You specify the global tint color in the app’s storyboard, or in the asset catalog. If you don’t set a global tint color, this property returns the system default tint color.
 
@@ -23,8 +24,11 @@ For more information, see [`Setting the app’s accent color`](https://developer
 ## See Also
 
 - [var isAutorotating: Bool](isautorotating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isautorotating))
+  A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.
 - [var isAutorotated: Bool](isautorotated.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isautorotated))
+  A Boolean value that indicates whether the system has automatically rotated the user interface so that it is properly oriented for another viewer.
 - [func enableWaterLock()](enablewaterlock().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/enablewaterlock()))
+  Disables the Apple Watch touch screen to prevent accidental taps while the watch is underwater.
 
 
 ---

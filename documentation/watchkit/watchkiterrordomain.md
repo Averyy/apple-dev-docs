@@ -1,6 +1,6 @@
 # WatchKitErrorDomain
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: var
 
 The domain for WatchKit errors.
@@ -14,7 +14,7 @@ The domain for WatchKit errors.
 let WatchKitErrorDomain: String
 ```
 
-## Overview
+#### Discussion
 
 The system uses this value in the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) class.
 

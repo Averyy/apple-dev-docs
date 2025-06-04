@@ -1,6 +1,6 @@
 # isFrontmostTimeoutExtended
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value that determines whether the app extends its time as the frontmost app.
@@ -11,14 +11,15 @@ A Boolean value that determines whether the app extends its time as the frontmos
 ## Declaration
 
 ```swift
-@MainActor var isFrontmostTimeoutExtended: Bool { get set }
+@MainActor
+var isFrontmostTimeoutExtended: Bool { get set }
 ```
 
 ## Mentions
 
 - [Taking Advantage of Frontmost App State](taking-advantage-of-frontmost-app-state.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/taking-advantage-of-frontmost-app-state))
 
-## Overview
+#### Discussion
 
 This value defaults to [`false`](https://developer.apple.com/documentation/swift/false). An app remains the frontmost app for two minutes after the user drops their wrist. Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) extends the app’s time as the frontmost app to eight minutes.
 
@@ -27,9 +28,13 @@ Don’t just extend the app’s frontmost time globally. Instead, enable it only
 ## See Also
 
 - [var applicationState: WKApplicationState](applicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/applicationstate))
+  The runtime state of the Watch app.
 - [enum WKApplicationState](wkapplicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate))
+  The running states of the Watch app.
 - [var isApplicationRunningInDock: Bool](isapplicationrunningindock.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isapplicationrunningindock))
+  A Boolean value that indicates whether the app is running in the dock.
 - [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:)))
+  Schedules a background task to refresh the app’s data.
 
 
 ---

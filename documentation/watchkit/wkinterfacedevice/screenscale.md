@@ -1,6 +1,6 @@
 # screenScale
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The number of pixels per point for the current screen.
@@ -14,13 +14,14 @@ The number of pixels per point for the current screen.
 var screenScale: CGFloat { get }
 ```
 
-## Overview
+#### Discussion
 
 The screen scale value applies to both the vertical and horizontal dimensions. For Apple Watch, this value is `2.0`.
 
 ## See Also
 
 - [var screenBounds: CGRect](screenbounds.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/screenbounds))
+  The bounding rectangle of the screen.
 
 
 ---

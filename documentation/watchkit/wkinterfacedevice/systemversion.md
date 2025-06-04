@@ -1,6 +1,6 @@
 # systemVersion
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The version of the operating system.
@@ -14,13 +14,14 @@ The version of the operating system.
 var systemVersion: String { get }
 ```
 
-## Overview
+#### Discussion
 
 This property contains the numerical version number of the system. For example, the value is `2.0` for the initial release of watchOS 2.
 
 ## See Also
 
 - [var systemName: String](systemname.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/systemname))
+  The name of the operating system.
 
 
 ---

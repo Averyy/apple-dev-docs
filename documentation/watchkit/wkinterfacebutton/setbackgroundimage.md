@@ -1,6 +1,6 @@
 # setBackgroundImage(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the button’s background image to the specified image.
@@ -14,7 +14,7 @@ Sets the button’s background image to the specified image.
 func setBackgroundImage(_ image: UIImage?)
 ```
 
-## Overview
+#### Discussion
 
 If `image` is a template image, the button tints that image using the current background color. The button does not use the background color for full-color images.
 
@@ -25,8 +25,11 @@ If `image` is a template image, the button tints that image using the current ba
 ## See Also
 
 - [func setBackgroundColor(UIColor?)](setbackgroundcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/setbackgroundcolor(_:)))
+  Sets the background color of the button.
 - [func setBackgroundImageData(Data?)](setbackgroundimagedata(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/setbackgroundimagedata(_:)))
+  Sets the button’s background image to the image in the specified data object.
 - [func setBackgroundImageNamed(String?)](setbackgroundimagenamed(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/setbackgroundimagenamed(_:)))
+  Sets the button’s background image to the image in the named resource file.
 
 
 ---

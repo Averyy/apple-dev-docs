@@ -1,6 +1,6 @@
 # WKInterfaceMovie
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that lets you play video and audio content in your watchOS app.
@@ -14,7 +14,7 @@ An interface element that lets you play video and audio content in your watchOS 
 class WKInterfaceMovie
 ```
 
-## Overview
+#### Overview
 
 A movie object displays a poster image with a play button on top of it. When the user taps the play button, WatchKit plays the movie in a modal interface.
 
@@ -24,21 +24,23 @@ During the initialization of your interface controller, WatchKit creates any nee
 
 Do not attempt to play audio or video content while gathering heart rate data using Health Kit. If you use this class to play media, WatchKit automatically disables the gathering of heart rate data.
 
+##### Supported Media Formats
+
 The following table lists the encoding information to use when creating media files to play on a user’s Apple Watch. For audio and video assets played directly from your app, keep your clips relatively short. Short clips consume less space on disk, use less power, and take less time to download.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Media type'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Recommended encoding'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Video assets', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Video codec: H.264 High Profile '}, {'identifier': 'spacer', 'type': 'image'}, {'type': 'text', 'text': ' Bit rate: 160 kpbs at up to 30 fps '}, {'identifier': 'spacer', 'type': 'image'}, {'type': 'text', 'text': ' Full screen resolution: 208 x 260 in portrait orientation '}, {'identifier': 'spacer', 'type': 'image'}, {'type': 'text', 'text': ' 16:9 resolution: 320 x 180 in landscape orientation '}, {'identifier': 'spacer', 'type': 'image'}, {'type': 'text', 'text': ' Audio bit rate: 32 kpbs stereo'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Audio-only assets', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Bit rate: 32 kbps stereo', 'type': 'text'}]}] |
+| Media type | Recommended encoding |
+| --- | --- |
+| Video assets | Video codec: H.264 High Profile ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Audio bit rate: 32 kpbs stereo |
+| Audio-only assets | Bit rate: 32 kbps stereo |
+
+##### Interface Builder Configuration Options
 
 Xcode lets you configure information about your movie interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'inlineContent': [{'type': 'text', 'text': 'Attribute'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Description'}], 'type': 'paragraph'}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Video Gravity'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The sizing behavior for the movie. Use this attribute to determine whether the movie maintains its aspect ratio and how it fills the available space. You can also configure this value programmatically using the '}, {'type': 'reference', 'isActive': True, 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceMovie/setVideoGravity(_:)'}, {'type': 'text', 'text': ' method.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Poster Image', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The placeholder image to display for your movie. When the user taps the poser image, the movie interface object presents a modal sheet with the actual movie contents. You can also configure this value programmatically using the '}, {'isActive': True, 'type': 'reference', 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceMovie/setPosterImage(_:)'}, {'type': 'text', 'text': ' method.'}]}] |
+| Attribute | Description |
+| --- | --- |
+| Video Gravity | The sizing behavior for the movie. Use this attribute to determine whether the movie maintains its aspect ratio and how it fills the available space. You can also configure this value programmatically using the [`setVideoGravity(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setvideogravity(_:)) method. |
+| Poster Image | The placeholder image to display for your movie. When the user taps the poser image, the movie interface object presents a modal sheet with the actual movie contents. You can also configure this value programmatically using the [`setPosterImage(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacemovie/setposterimage(_:)) method. |
 
 ## Topics
 
@@ -70,11 +72,17 @@ Xcode lets you configure information about your movie interface object in your s
 ## See Also
 
 - [class WKInterfaceImage](wkinterfaceimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage))
+  An image that can be displayed in the interface of your watchOS app.
 - [class WKImage](wkimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage))
+  A wrapper for images you use with a picker interface.
 - [protocol WKImageAnimatable](wkimageanimatable.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable))
+  A collection of methods you can use to control the playback of animated images.
 - [class WKInterfaceInlineMovie](wkinterfaceinlinemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie))
+  An interface element that displays a video’s poster image and supports inline playing of the video.
 - [class WKInterfaceHMCamera](wkinterfacehmcamera.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacehmcamera))
+  An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.
 - [enum WKVideoGravity](wkvideogravity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity))
+  Constants indicating the appearance of video content.
 
 
 ---

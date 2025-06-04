@@ -1,6 +1,6 @@
 # contentSafeAreaInsets
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 Insets that define the area where it’s safe to display content on the screen.
@@ -11,10 +11,11 @@ Insets that define the area where it’s safe to display content on the screen.
 ## Declaration
 
 ```swift
-@MainActor var contentSafeAreaInsets: UIEdgeInsets { get }
+@MainActor
+var contentSafeAreaInsets: UIEdgeInsets { get }
 ```
 
-## Overview
+#### Discussion
 
 The 40 mm and 44 mm watches have rounded corners that may clip content that extends to the edge of the screen. The content-safe area defines the region below the status bar that avoids the rounded corners.
 
@@ -25,7 +26,9 @@ The system sets [`contentSafeAreaInsets`](https://developer.apple.com/documentat
 ## See Also
 
 - [var systemMinimumLayoutMargins: NSDirectionalEdgeInsets](systemminimumlayoutmargins.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/systemminimumlayoutmargins))
+  Leading and trailing insets that represent the minimum layout margins for text elements.
 - [var contentFrame: CGRect](contentframe.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/contentframe))
+  The frame rectangle used to display your app’s content.
 
 
 ---

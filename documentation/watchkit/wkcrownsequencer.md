@@ -1,6 +1,6 @@
 # WKCrownSequencer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that reports the current state of the digital crown, including its rotational speed when it is in motion.
@@ -14,7 +14,7 @@ An object that reports the current state of the digital crown, including its rot
 class WKCrownSequencer
 ```
 
-## Overview
+#### Overview
 
 Do not create instances of this class yourself. Instead, retrieve a crown sequencer object from the current interface controller’s [`crownSequencer`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/crownsequencer) property. Before the sequencer can receive data, you must call its [`focus()`](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/focus()) method. Only one object in your interface can have focus at any given time, so if your interface also contains picker objects or has scrollable scenes, you must coordinate changes in focus accordingly. For example, calling the sequencer’s [`focus()`](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/focus()) method causes any picker objects or interface controllers to resign focus. When the user taps on a picker object, the currently active sequencer resigns focus, and the selected picker object gains the focus. Because the crown sequencer is not tied to a specific interface object, you can use it as general input for your app.
 
@@ -54,11 +54,17 @@ Although the crown sequencer object has properties that contain the current stat
 ## See Also
 
 - [protocol WKCrownDelegate](wkcrowndelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate))
+  A collection of methods you can implement to track the user’s interaction with the digital crown, receiving notifications when the user rotates the crown or when rotation stops.
 - [class WKGestureRecognizer](wkgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer))
+  The base class for all other gesture recognizer classes.
 - [class WKLongPressGestureRecognizer](wklongpressgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer))
+  A gesture recognizer that interprets a touch event that occurs in the same relative area for an extended period of time.
 - [class WKPanGestureRecognizer](wkpangesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpangesturerecognizer))
+  A gesture recognizer that interprets a touch event that moves around the screen.
 - [class WKSwipeGestureRecognizer](wkswipegesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkswipegesturerecognizer))
+  A gesture recognizer that interprets swiping gestures in one or more directions.
 - [class WKTapGestureRecognizer](wktapgesturerecognizer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktapgesturerecognizer))
+  A gesture recognizer that interprets a touch event occurring and ending in approximately the same area on the screen.
 
 
 ---

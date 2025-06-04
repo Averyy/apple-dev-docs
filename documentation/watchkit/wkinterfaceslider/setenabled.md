@@ -1,6 +1,6 @@
 # setEnabled(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Enables or disables the slider.
@@ -14,7 +14,7 @@ Enables or disables the slider.
 func setEnabled(_ enabled: Bool)
 ```
 
-## Overview
+#### Discussion
 
 A disabled slider does not respond to taps in its up and down buttons. When the user taps an enabled slider, WatchKit updates the slider value and executes the associated action method (if any) in your WatchKit extension.
 

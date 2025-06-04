@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionInvalidationReason
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The reasons why a session can become invalid.
@@ -14,7 +14,7 @@ The reasons why a session can become invalid.
 enum WKExtendedRuntimeSessionInvalidationReason
 ```
 
-## Overview
+#### Overview
 
 Sessions become invalid when they encounter an error, or when they stop running.
 
@@ -48,8 +48,11 @@ Sessions become invalid when they encounter an error, or when they stop running.
 ## See Also
 
 - [func extendedRuntimeSessionDidStart(WKExtendedRuntimeSession)](extendedruntimesessiondidstart(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesessiondidstart(_:)))
+  Indicates that the session has started running.
 - [func extendedRuntimeSessionWillExpire(WKExtendedRuntimeSession)](extendedruntimesessionwillexpire(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesessionwillexpire(_:)))
+  Indicates that the session is about to expire.
 - [func extendedRuntimeSession(WKExtendedRuntimeSession, didInvalidateWith: WKExtendedRuntimeSessionInvalidationReason, error: (any Error)?)](extendedruntimesession(_:didinvalidatewith:error:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesession(_:didinvalidatewith:error:)))
+  Indicates that the session has encountered an error or stopped running.
 
 
 ---

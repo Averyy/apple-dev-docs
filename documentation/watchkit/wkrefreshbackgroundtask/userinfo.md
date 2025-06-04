@@ -1,6 +1,6 @@
 # userInfo
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 Custom information associated with the background task.
@@ -14,7 +14,7 @@ Custom information associated with the background task.
 var userInfo: (any NSSecureCoding & NSObjectProtocol)? { get }
 ```
 
-## Overview
+#### Discussion
 
 If there is no data associated with the task, this property is set to `nil`.
 

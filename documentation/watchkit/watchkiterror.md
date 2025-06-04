@@ -1,6 +1,6 @@
 # WatchKitError
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: struct
 
 An error reported by WatchKit.

@@ -6,8 +6,6 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 from urllib.parse import urljoin, urlparse
 
-import jsonschema
-
 from scraper.base import BaseAppleScraper
 from scraper.utils.logger import get_logger
 from scraper.utils.markdown_converter import AppleDocMarkdownConverter
@@ -154,7 +152,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     def _update_progress_file(self, progress_file: Path, last_url: str, final: bool = False) -> None:
         """Update progress file with current statistics."""
         if final:
-            content = f"""✅ Completed scraping {self.framework_name}!
+            content = f"""Completed scraping {self.framework_name}!
 Total pages scraped: {self.stats['pages_scraped']}
 Pages skipped (unchanged): {self.stats['pages_skipped']}
 Pages failed: {self.stats['pages_failed']}
@@ -548,9 +546,9 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                         if platform == 'swift':
                             lang = 'swift'
                     
-                    # Reconstruct code from tokens
+                    # Reconstruct code from tokens with proper formatting
                     tokens = declaration.get('tokens', [])
-                    code = ''.join(token.get('text', '') for token in tokens)
+                    code = self._format_declaration_from_tokens(tokens)
                     if code:
                         data['declaration'][lang] = code
         
@@ -580,34 +578,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     parameters.append(param_data)
         
         data['parameters'] = parameters
-        
-        # Extract code examples from both sections and primaryContentSections
-        code_examples = []
-        
-        # Check sections first
-        for section in json_data.get('sections', []):
-            if section.get('kind') == 'codeListing':
-                example = {
-                    'title': section.get('title', 'Example'),
-                    'code': '\n'.join(section.get('code', [])) if section.get('code') else '',
-                    'language': section.get('syntax', 'swift')
-                }
-                code_examples.append(example)
-        
-        # Also check within primaryContentSections content
-        for section in primary_content:
-            if section.get('kind') == 'content':
-                content_items = section.get('content', [])
-                for item in content_items:
-                    if item.get('type') == 'codeListing':
-                        example = {
-                            'title': item.get('title', 'Example'),
-                            'code': '\n'.join(item.get('code', [])) if item.get('code') else '',
-                            'language': item.get('syntax', 'swift')
-                        }
-                        code_examples.append(example)
-        
-        data['code_examples'] = code_examples
         
         # Extract topics with complete signatures and descriptions from references
         topics = []
@@ -725,9 +695,16 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                         else:
                             url = identifier
                     
+                    # Extract description from abstract
+                    description = ""
+                    if 'abstract' in ref_data:
+                        abstract_content = ref_data['abstract']
+                        description = self._resolve_inline_content(abstract_content, references)
+                    
                     see_also.append({
                         'title': full_title,
-                        'url': url
+                        'url': url,
+                        'description': description
                     })
                 else:
                     # Fallback for identifiers not in references
@@ -743,7 +720,8 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                         url = identifier
                     see_also.append({
                         'title': name,
-                        'url': url
+                        'url': url,
+                        'description': ''
                     })
         
         data['see_also'] = see_also
@@ -998,6 +976,58 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             processed_count=len(self.processed_urls)
         )
     
+    def _format_declaration_from_tokens(self, tokens: List[Dict[str, Any]]) -> str:
+        """Format declaration tokens with proper Swift formatting.
+        
+        Args:
+            tokens: List of token dictionaries from Apple's JSON
+            
+        Returns:
+            Formatted declaration string
+        """
+        if not tokens:
+            return ""
+        
+        parts = []
+        
+        # Check if declaration starts with attributes
+        has_leading_attributes = False
+        attribute_text = []
+        i = 0
+        
+        # Collect all leading attributes
+        while i < len(tokens) and tokens[i].get('kind') == 'attribute':
+            attribute_text.append(tokens[i].get('text', ''))
+            i += 1
+            has_leading_attributes = True
+        
+        # If we have attributes, add them on their own line
+        if has_leading_attributes:
+            parts.append(''.join(attribute_text))
+            # Skip whitespace after attributes
+            while i < len(tokens) and tokens[i].get('text', '').strip() == '':
+                i += 1
+        
+        # Add the rest of the declaration
+        remaining = []
+        for j in range(i, len(tokens)):
+            remaining.append(tokens[j].get('text', ''))
+        
+        if remaining:
+            parts.append(''.join(remaining))
+        
+        # Join lines
+        result = '\n'.join(parts)
+        
+        # Additional formatting for long function signatures
+        # If it's a function with multiple parameters and > 100 chars, format it
+        if 'func ' in result and result.count(',') >= 2 and len(result) > 100:
+            # This is a heuristic - in practice Apple's formatting is more complex
+            # For now, keep single line to match most common cases
+            pass
+        
+        return result
+    
     def _validate_json_structure(self, json_data: Dict[str, Any]) -> bool:
         """Validate basic JSON structure from Apple API.
         
@@ -1058,6 +1088,10 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     resolved_parts.append(f"`{fallback}`")
             elif item_type == 'codeVoice':
                 resolved_parts.append(f"`{item.get('code', '')}`")
+            elif item_type == 'image':
+                # Handle inline images
+                image_content = self._process_image(item, references)
+                resolved_parts.append(image_content)
             else:
                 # Handle other types as plain text
                 resolved_parts.append(item.get('text', ''))
@@ -1080,18 +1114,16 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             kind = section.get('kind', '')
             
             if kind == 'content':
-                # General content - overview, discussion, etc.
+                # General content - preserve the full structure
                 content_items = section.get('content', [])
                 content_parts = self._process_content_items(content_items, references)
                 if content_parts:
-                    if 'overview' not in extracted:
-                        extracted['overview'] = '\n\n'.join(content_parts)
+                    # Instead of separating into overview/discussion, keep as one structured content
+                    full_content = '\n\n'.join(content_parts)
+                    if 'content' not in extracted:
+                        extracted['content'] = full_content
                     else:
-                        # Additional content goes to discussion
-                        if 'discussion' not in extracted:
-                            extracted['discussion'] = '\n\n'.join(content_parts)
-                        else:
-                            extracted['discussion'] += '\n\n' + '\n\n'.join(content_parts)
+                        extracted['content'] += '\n\n' + full_content
             
             elif kind == 'discussion':
                 # Explicit discussion section
@@ -1174,6 +1206,23 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                 # Headings
                 level = item.get('level', 1)
                 heading_text = self._resolve_inline_content(item.get('inlineContent', []), references)
+                
+                # If heading is empty but has an anchor, convert anchor to heading text
+                if not heading_text.strip() and 'anchor' in item:
+                    anchor = item['anchor']
+                    # Convert anchor format to readable heading
+                    # e.g., "Enable-the-Audio-Background-Mode" -> "Enable the Audio Background Mode"
+                    heading_text = anchor.replace('-', ' ')
+                    # Capitalize appropriately (title case)
+                    heading_text = ' '.join(word.capitalize() for word in heading_text.split())
+                    # Special case for common words that shouldn't be capitalized
+                    lowercase_words = {'the', 'and', 'or', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'a', 'an'}
+                    words = heading_text.split()
+                    heading_text = ' '.join(
+                        word if i == 0 or word.lower() not in lowercase_words else word.lower()
+                        for i, word in enumerate(words)
+                    )
+                
                 if heading_text.strip():
                     heading_prefix = '#' * min(level + 2, 6)  # Adjust level for markdown
                     processed_parts.append(f"{heading_prefix} {heading_text}")
@@ -1235,37 +1284,50 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
     
     def _process_table(self, table_item: Dict[str, Any], references: Dict[str, Any]) -> str:
         """Process table content into markdown format."""
-        header_row = table_item.get('header', [])
-        data_rows = table_item.get('rows', [])
+        rows = table_item.get('rows', [])
         
-        if not header_row and not data_rows:
+        if not rows:
             return ""
         
         markdown_lines = []
         
-        # Process header
-        if header_row:
-            header_cells = []
-            for cell in header_row:
-                if isinstance(cell, dict):
-                    cell_content = self._process_content_items(cell.get('content', []), references)
-                    header_cells.append(' '.join(cell_content))
-                else:
-                    header_cells.append(str(cell))
-            markdown_lines.append('| ' + ' | '.join(header_cells) + ' |')
-            markdown_lines.append('| ' + ' | '.join(['---'] * len(header_cells)) + ' |')
-        
-        # Process data rows
-        for row in data_rows:
+        # In Apple's format, the header is often just "row" and actual headers are in first row
+        # Process all rows, treating first row as potential header
+        for row_idx, row in enumerate(rows):
             row_cells = []
+            
             for cell in row:
-                if isinstance(cell, dict):
-                    cell_content = self._process_content_items(cell.get('content', []), references)
-                    row_cells.append(' '.join(cell_content))
+                # Cell can be a list of content items
+                if isinstance(cell, list):
+                    # Extract text from all content items in the cell
+                    cell_parts = []
+                    for content_item in cell:
+                        if isinstance(content_item, dict):
+                            # Process the content item
+                            processed = self._process_content_items([content_item], references)
+                            if processed:
+                                cell_parts.extend(processed)
+                    
+                    # Join all parts with space and clean up
+                    cell_text = ' '.join(cell_parts).strip()
+                    # Replace newlines with spaces in table cells
+                    cell_text = cell_text.replace('\n', ' ')
+                    row_cells.append(cell_text)
+                elif isinstance(cell, dict):
+                    # Single content item
+                    processed = self._process_content_items([cell], references)
+                    cell_text = ' '.join(processed).strip().replace('\n', ' ')
+                    row_cells.append(cell_text)
                 else:
-                    # Handle case where cell is a string
+                    # Plain text or other format
                     row_cells.append(str(cell))
+            
+            # Add row to table
             markdown_lines.append('| ' + ' | '.join(row_cells) + ' |')
+            
+            # Add separator after first row (header)
+            if row_idx == 0:
+                markdown_lines.append('| ' + ' | '.join(['---'] * len(row_cells)) + ' |')
         
         return '\n'.join(markdown_lines)
     
@@ -1291,18 +1353,61 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
     
     def _process_image(self, image_item: Dict[str, Any], references: Dict[str, Any]) -> str:
         """Process image content."""
+        # For inline images in paragraphs
+        if image_item.get('type') == 'image':
+            image_identifier = image_item.get('identifier', '')
+            
+            # Look up image in references
+            if image_identifier in references:
+                ref_data = references[image_identifier]
+                alt_text = ref_data.get('alt', '')
+                
+                # Get the best variant URL
+                variants = ref_data.get('variants', [])
+                if variants:
+                    # Prefer 2x light variant
+                    image_url = None
+                    for variant in variants:
+                        if '2x' in variant.get('traits', []) and 'light' in variant.get('traits', []):
+                            image_url = variant.get('url', '')
+                            break
+                    # Fallback to first variant
+                    if not image_url and variants:
+                        image_url = variants[0].get('url', '')
+                    
+                    if image_url:
+                        return f"![{alt_text}]({image_url})"
+                
+                return f"![{alt_text}](image:{image_identifier})"
+            
+            return f"![](image:{image_identifier})"
+        
+        # For imageBlock items (different structure)
         image_identifier = image_item.get('identifier', '')
         alt_text = image_item.get('alt', '')
         
         # Look up image in references
         if image_identifier in references:
             ref_data = references[image_identifier]
-            image_url = ref_data.get('url', '')
-            if image_url:
-                # Convert to full URL if needed
-                if not image_url.startswith('http'):
-                    image_url = f"https://developer.apple.com{image_url}"
-                return f"![{alt_text}]({image_url})"
+            # Use alt from references if not provided
+            if not alt_text:
+                alt_text = ref_data.get('alt', '')
+            
+            # Get the best variant URL
+            variants = ref_data.get('variants', [])
+            if variants:
+                # Prefer 2x light variant
+                image_url = None
+                for variant in variants:
+                    if '2x' in variant.get('traits', []) and 'light' in variant.get('traits', []):
+                        image_url = variant.get('url', '')
+                        break
+                # Fallback to first variant
+                if not image_url and variants:
+                    image_url = variants[0].get('url', '')
+                
+                if image_url:
+                    return f"![{alt_text}]({image_url})"
         
         return f"![{alt_text}](image:{image_identifier})" if alt_text else ""
     

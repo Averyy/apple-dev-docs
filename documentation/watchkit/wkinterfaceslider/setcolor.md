@@ -1,6 +1,6 @@
 # setColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the color of the slider bar.
@@ -21,7 +21,9 @@ func setColor(_ color: UIColor?)
 ## See Also
 
 - [func setValue(Float)](setvalue(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider/setvalue(_:)))
+  Changes the value of the slider.
 - [func setNumberOfSteps(Int)](setnumberofsteps(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider/setnumberofsteps(_:)))
+  Sets the number of steps for the slider.
 
 
 ---

@@ -1,6 +1,6 @@
 # handleAction(withIdentifier:for:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Delivers a local notification payload and a user-selected action to the app.
@@ -11,10 +11,11 @@ Delivers a local notification payload and a user-selected action to the app.
 ## Declaration
 
 ```swift
-@MainActor optional func handleAction(withIdentifier identifier: String?, for localNotification: UILocalNotification)
+@MainActor
+optional func handleAction(withIdentifier identifier: String?, for localNotification: UILocalNotification)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to handle actions selected by users from your notification interfaces. If your containing iOS app supports interactive notifications, the `identifier` parameter may contain the action identifier for the button that was tapped. Use that value to perform the requested action. If the `identifier` parameter contains an empty string, that means the user launched your Watch app from the notification interface without choosing a specific action.
 
@@ -30,10 +31,15 @@ For information about how to support interactive notifications in your iOS app, 
 ## See Also
 
 - [func didReceiveRemoteNotification([AnyHashable : Any])](didreceiveremotenotification(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/didreceiveremotenotification(_:)))
+  Tells the delegate that a remote notification arrived.
 - [func didReceive(UILocalNotification)](didreceive(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/didreceive(_:)))
+  Tells the delegate that a local notification was triggered.
 - [func handleAction(withIdentifier: String?, forRemoteNotification: [AnyHashable : Any])](handleaction(withidentifier:forremotenotification:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleaction(withidentifier:forremotenotification:)))
+  Delivers a remote notification payload and a user-selected action to the app.
 - [func handleAction(withIdentifier: String?, forRemoteNotification: [AnyHashable : Any], withResponseInfo: [AnyHashable : Any])](handleaction(withidentifier:forremotenotification:withresponseinfo:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleaction(withidentifier:forremotenotification:withresponseinfo:)))
+  Delivers a remote notification payload and user response information to the app.
 - [func handleAction(withIdentifier: String?, for: UILocalNotification, withResponseInfo: [AnyHashable : Any])](handleaction(withidentifier:for:withresponseinfo:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleaction(withidentifier:for:withresponseinfo:)))
+  Delivers a local notification payload and user response information to the app.
 
 
 ---

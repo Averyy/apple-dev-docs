@@ -1,6 +1,6 @@
 # WKImageAnimatable
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: protocol
 
 A collection of methods you can use to control the playback of animated images.
@@ -14,7 +14,7 @@ A collection of methods you can use to control the playback of animated images.
 protocol WKImageAnimatable : NSObjectProtocol
 ```
 
-## Overview
+#### Overview
 
 Existing classes adopt this protocol and you use the methods to control the animation of those images. Do not adopt this protocol in your own classes.
 
@@ -39,11 +39,17 @@ Existing classes adopt this protocol and you use the methods to control the anim
 ## See Also
 
 - [class WKInterfaceImage](wkinterfaceimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage))
+  An image that can be displayed in the interface of your watchOS app.
 - [class WKImage](wkimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage))
+  A wrapper for images you use with a picker interface.
 - [class WKInterfaceMovie](wkinterfacemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie))
+  An interface element that lets you play video and audio content in your watchOS app.
 - [class WKInterfaceInlineMovie](wkinterfaceinlinemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie))
+  An interface element that displays a video’s poster image and supports inline playing of the video.
 - [class WKInterfaceHMCamera](wkinterfacehmcamera.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacehmcamera))
+  An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.
 - [enum WKVideoGravity](wkvideogravity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity))
+  Constants indicating the appearance of video content.
 
 
 ---

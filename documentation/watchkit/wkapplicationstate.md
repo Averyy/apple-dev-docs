@@ -1,6 +1,6 @@
 # WKApplicationState
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The running states of the Watch app.
@@ -38,8 +38,11 @@ enum WKApplicationState
 ## See Also
 
 - [var applicationState: WKApplicationState](applicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/applicationstate))
+  The runtime state of the watchOS app.
 - [var isApplicationRunningInDock: Bool](isapplicationrunningindock.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isapplicationrunningindock))
+  A Boolean value that indicates whether the app is running in the dock.
 - [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:)))
+  Schedules a background task to refresh the app’s data.
 
 
 ---

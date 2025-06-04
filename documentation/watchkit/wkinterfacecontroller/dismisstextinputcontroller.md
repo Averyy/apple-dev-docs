@@ -1,6 +1,6 @@
 # dismissTextInputController()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Dismisses the text input controller without returning any text.
@@ -11,18 +11,22 @@ Dismisses the text input controller without returning any text.
 ## Declaration
 
 ```swift
-@MainActor func dismissTextInputController()
+@MainActor
+func dismissTextInputController()
 ```
 
-## Overview
+#### Discussion
 
 Use this method to cancel a text input operation without accepting any input from the user. Dismissing the interface controller animates it off the screen and does not call the associated completion block.
 
 ## See Also
 
 - [func presentTextInputController(withSuggestions: [String]?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](presenttextinputcontroller(withsuggestions:allowedinputmode:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presenttextinputcontroller(withsuggestions:allowedinputmode:completion:)))
+  Displays a modal interface for gathering text input from the user.
 - [func presentTextInputControllerWithSuggestions(forLanguage: ((String) -> [Any]?)?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](presenttextinputcontrollerwithsuggestions(forlanguage:allowedinputmode:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presenttextinputcontrollerwithsuggestions(forlanguage:allowedinputmode:completion:)))
+  Displays a modal interface for gathering language-specific text input from the user.
 - [enum WKTextInputMode](wktextinputmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextinputmode))
+  The input modes supported by the text input controller.
 
 
 ---

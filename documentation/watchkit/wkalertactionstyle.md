@@ -1,6 +1,6 @@
 # WKAlertActionStyle
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constants indicating the style of the action button.
@@ -38,6 +38,7 @@ enum WKAlertActionStyle
 ## See Also
 
 - [typealias WKAlertActionHandler](wkalertactionhandler.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionhandler))
+  A block to perform in response to an action.
 
 
 ---

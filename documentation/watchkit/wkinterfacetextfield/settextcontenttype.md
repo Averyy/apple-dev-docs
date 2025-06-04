@@ -1,6 +1,6 @@
 # setTextContentType(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the text field’s semantic meaning.
@@ -14,7 +14,7 @@ Sets the text field’s semantic meaning.
 func setTextContentType(_ textContentType: WKTextContentType?)
 ```
 
-## Overview
+#### Discussion
 
 The text field’s content type modifies how the text input controller and Apple Continuity Keyboard behave.
 
@@ -30,6 +30,7 @@ The text field’s content type modifies how the text input controller and Apple
 ## See Also
 
 - [struct WKTextContentType](wktextcontenttype.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype))
+  Constants that specify a text field’s semantic meaning.
 
 
 ---

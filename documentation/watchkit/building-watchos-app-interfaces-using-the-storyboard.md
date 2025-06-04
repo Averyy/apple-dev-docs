@@ -1,16 +1,22 @@
 # Building watchOS app Interfaces Using the Storyboard
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Create the user interface for your watchOS app by nesting stacks.
 
-## Overview
+#### Overview
 
 watchOS apps use a simplified, stack-based layout model for their user interfaces. Xcode automatically groups elements into horizontal and vertical stacks, and you can fine-tune the layout by modifying the element’s attributes. Additionally, you can ensure that your interface works as expected on all Apple Watch sizes by using resizable elements and size-specific customizations.
 
 As you add items to the storyboard, Xcode stacks them vertically, with each item on its own line ([`Figure 1`](https://developer.apple.com/documentation/watchkit/storyboard_support/building_watchos_app_interfaces_using_the_storyboard#3295988)).
 
+![A screenshot of a storyboard scene with three buttons stacked horizontally.](https://docs-assets.developer.apple.com/published/9100c5dcbc2e2dd9efdbda264280e41f/media-3295988%402x.png)
+
 Use Groups to create horizontal or vertical stacks ([`Figure 2`](https://developer.apple.com/documentation/watchkit/storyboard_support/building_watchos_app_interfaces_using_the_storyboard#3172421)). Groups don’t have a default visual representation, but you can configure a background color or image as needed. Nest Groups, as necessary, to create more complex layouts.
+
+![A screenshot with a Group containing a horizontal stack of buttons.](https://docs-assets.developer.apple.com/published/9799d1483038c93393bfd7c9cb936929/media-3172421%402x.png)
+
+##### Customize the Layout Using Attributes
 
 You can fine-tune an interface element’s size and layout using the Attributes inspector. All interface elements have the following attributes:
 
@@ -28,11 +34,17 @@ Groups provide additional options to manage their content:
 ## See Also
 
 - [class WKInterfaceObject](wkinterfaceobject.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject))
+  An object that provides information that is common to all interface objects in your watchOS app.
 - [class WKInterfaceController](wkinterfacecontroller.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller))
+  A class that provides the infrastructure for managing the interface in a watchOS app.
 - [class WKAlertAction](wkalertaction.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertaction))
+  An object that encapsulates information about a button displayed in an alert or action sheet.
 - [class WKAccessibilityImageRegion](wkaccessibilityimageregion.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityimageregion))
+  An object that defines a portion of an image that you want to call out separately to an assistive app.
 - [func WKAccessibilityIsVoiceOverRunning() -> Bool](wkaccessibilityisvoiceoverrunning().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityisvoiceoverrunning()))
+  Returns a Boolean value indicating whether VoiceOver is running.
 - [func WKAccessibilityIsReduceMotionEnabled() -> Bool](wkaccessibilityisreducemotionenabled().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityisreducemotionenabled()))
+  Returns a Boolean value indicating whether reduced motion is enabled.
 
 
 ---

@@ -1,6 +1,6 @@
 # handle(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the delegate that the app has received one or more background tasks.
@@ -11,14 +11,15 @@ Tells the delegate that the app has received one or more background tasks.
 ## Declaration
 
 ```swift
-@MainActor optional func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>)
+@MainActor
+optional func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>)
 ```
 
 ## Mentions
 
 - [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
 
-## Overview
+#### Discussion
 
 The system calls this method after launching your app to handle a background task. Use this method to handle the specified tasks. Call each tasks’s [`setTaskCompletedWithSnapshot(_:)`](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:)) method as soon as the task is complete. For more information on background tasks, see [`Using background tasks`](https://developer.apple.com/documentation/watchkit/using-background-tasks).
 
@@ -29,6 +30,7 @@ The system calls this method after launching your app to handle a background tas
 ## See Also
 
 - func recoverActiveWorkoutSession(completion: (HKWorkoutSession?, (any Error)?) -> Void) ([Apple Docs](https://developer.apple.com/documentation/healthkit/hkhealthstore/2962889-recoveractiveworkoutsession))
+  Recovers an active workout session.
 
 
 ---

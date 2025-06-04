@@ -1,6 +1,6 @@
 # WKURLSessionRefreshBackgroundTask
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A task that responds to background URL sessions.
@@ -18,7 +18,7 @@ class WKURLSessionRefreshBackgroundTask
 
 - [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
 
-## Overview
+#### Overview
 
 Always upload and download data using a [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) background transfer. Background transfers occur in a separate process and continue to transfer data even after your app terminates. Asynchronous uploads and downloads, on the other hand, suspend with your app. Because watchOS apps have a short runtime, you can’t guarantee that an asynchronous transfer finishes before the app suspends. For more information on background transfers, see [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background).
 
@@ -58,29 +58,6 @@ The system creates a background [`URLSession`](https://developer.apple.com/docum
 
 To get more information about the transfer, create a background configuration object with the same session identifier. Next, create a session object using the configuration object and a session delegate. The system automatically associates the new session with the transfer and calls the appropriate delegate methods.
 
-## Code Examples
-
-### Example
-
-```swift
-// Create a background session configuration.
-let config = URLSessionConfiguration.background(withIdentifier: myRequestID)
-config.isDiscretionary = true
-config.sessionSendsLaunchEvents = true
-
-// Create the background download task and schedule it to run in 15 minutes.
-let urlSession = URLSession(configuration: config,
-                            delegate: self,
-                            delegateQueue: nil)
-
-
-let backgroundTask = urlSession.downloadTask(with: url)
-backgroundTask.earliestBeginDate = Date().addingTimeInterval(15 * 60)
-
-// Run the task.
-backgroundTask.resume()
-```
-
 ## Topics
 
 ### Accessing background task data
@@ -103,14 +80,23 @@ backgroundTask.resume()
 ## See Also
 
 - [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
+  Handle scheduled update tasks in the background, and respond to background system interactions including Siri intents and incoming Bluetooth messages.
 - [Preparing to take your watchOS app’s snapshot](preparing-to-take-your-watchos-app-s-snapshot.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/preparing-to-take-your-watchos-app-s-snapshot))
+  Provide a timely, accurate snapshot of your app by using snapshot background tasks.
 - [class WKApplicationRefreshBackgroundTask](wkapplicationrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationrefreshbackgroundtask))
+  A task that updates your app’s state in the background.
 - [class WKWatchConnectivityRefreshBackgroundTask](wkwatchconnectivityrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwatchconnectivityrefreshbackgroundtask))
+  A background task used to receive background updates from the Watch Connectivity framework.
 - [class WKBluetoothAlertRefreshBackgroundTask](wkbluetoothalertrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkbluetoothalertrefreshbackgroundtask))
+  A task for handling timely Bluetooth alerts in the background.
 - [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkintentdidrunrefreshbackgroundtask))
+  A background task used to update your app after a SiriKit intent runs.
 - [class WKRelevantShortcutRefreshBackgroundTask](wkrelevantshortcutrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrelevantshortcutrefreshbackgroundtask))
+  A background task used to periodically donate relevant Siri shortcuts.
 - [class WKSnapshotRefreshBackgroundTask](wksnapshotrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask))
+  A background task used to update your app’s user interface in preparation for a snapshot.
 - [class WKRefreshBackgroundTask](wkrefreshbackgroundtask.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask))
+  The abstract superclass for WatchKit’s background task classes.
 
 
 ---

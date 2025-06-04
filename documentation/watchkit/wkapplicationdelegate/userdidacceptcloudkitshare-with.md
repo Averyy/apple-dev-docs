@@ -1,6 +1,6 @@
 # userDidAcceptCloudKitShare(with:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the delegate that the app has access to shared information in CloudKit.
@@ -11,10 +11,11 @@ Tells the delegate that the app has access to shared information in CloudKit.
 ## Declaration
 
 ```swift
-@MainActor optional func userDidAcceptCloudKitShare(with cloudKitShareMetadata: CKShareMetadata)
+@MainActor
+optional func userDidAcceptCloudKitShare(with cloudKitShareMetadata: CKShareMetadata)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to respond to a CloudKit Sharing invitation. In your implementation, accept the share by scheduling a [`CKAcceptSharesOperation`](https://developer.apple.com/documentation/CloudKit/CKAcceptSharesOperation) object that contains the provided metadata object. After the user accepts the share, you can begin fetching records and incorporating the resulting data into your app.
 

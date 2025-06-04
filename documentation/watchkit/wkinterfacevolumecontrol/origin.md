@@ -1,6 +1,6 @@
 # WKInterfaceVolumeControl.Origin
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The source of the audio managed by the volume control.
@@ -40,6 +40,7 @@ enum Origin
 ## See Also
 
 - [init(origin: WKInterfaceVolumeControl.Origin)](init(origin:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol/init(origin:)))
+  Creates a volume control for use in SwiftUI.
 
 
 ---

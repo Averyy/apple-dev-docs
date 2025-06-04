@@ -1,6 +1,6 @@
 # setContentInset(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the distance between the edges of the group and any contained objects.
@@ -14,7 +14,7 @@ Sets the distance between the edges of the group and any contained objects.
 func setContentInset(_ contentInset: UIEdgeInsets)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to change the default insets you set in Interface Builder. Changes to the content insets of a group are animatable.
 
@@ -25,6 +25,7 @@ Use this method to change the default insets you set in Interface Builder. Chang
 ## See Also
 
 - [func setCornerRadius(CGFloat)](setcornerradius(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setcornerradius(_:)))
+  Changes the radius to use when drawing rounded corners for the group.
 
 
 ---

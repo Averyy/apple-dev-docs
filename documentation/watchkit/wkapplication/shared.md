@@ -1,6 +1,6 @@
 # shared()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Returns the shared WatchKit app object.
@@ -11,10 +11,11 @@ Returns the shared WatchKit app object.
 ## Declaration
 
 ```swift
-@MainActor class func shared() -> WKApplication
+@MainActor
+class func shared() -> WKApplication
 ```
 
-## Overview
+#### Return Value
 
 The WatchKit app object. This object is never `nil`.
 

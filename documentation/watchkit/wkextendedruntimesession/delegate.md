@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A delegate object for monitoring the session and responding to state changes and errors.
@@ -14,13 +14,14 @@ A delegate object for monitoring the session and responding to state changes and
 weak var delegate: (any WKExtendedRuntimeSessionDelegate)? { get set }
 ```
 
-## Overview
+#### Discussion
 
 To receive all the delegate calls, always assign a value to this property before calling the session’s [`start()`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start()) or [`start(at:)`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/start(at:)) methods.
 
 ## See Also
 
 - [protocol WKExtendedRuntimeSessionDelegate](wkextendedruntimesessiondelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate))
+  A set of optional methods for monitoring an extended runtime session.
 
 
 ---

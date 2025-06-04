@@ -1,6 +1,6 @@
 # WKInterfaceMap.UserTrackingMode
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Modes for tracking the user’s location on the map.
@@ -40,8 +40,11 @@ enum UserTrackingMode
 ## See Also
 
 - [func setShowsUserLocation(Bool)](setshowsuserlocation(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setshowsuserlocation(_:)))
+  Sets whether the map shows the user’s current location.
 - [func setShowsUserHeading(Bool)](setshowsuserheading(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setshowsuserheading(_:)))
+  Sets whether the map shows the user heading.
 - [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](setusertrackingmode(_:animated:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setusertrackingmode(_:animated:)))
+  Sets the map’s tracking mode.
 
 
 ---

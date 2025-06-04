@@ -1,6 +1,6 @@
 # setTintColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the color applied to a template image.
@@ -14,7 +14,7 @@ Changes the color applied to a template image.
 func setTintColor(_ tintColor: UIColor?)
 ```
 
-## Overview
+#### Discussion
 
 When you display a template image, use this method to set the tint color to apply to that image. With a template image, WatchKit uses only the alpha channel of the image to define a shape. To create a template image from an existing image, call the [`withRenderingMode(_:)`](https://developer.apple.com/documentation/UIKit/UIImage/withRenderingMode(_:)) method on an existing [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) and specify the [`UIImage.RenderingMode.alwaysTemplate`](https://developer.apple.com/documentation/UIKit/UIImage/RenderingMode-swift.enum/alwaysTemplate) rendering mode.
 
@@ -27,8 +27,11 @@ An image object applies the tint color only when it contains a single template i
 ## See Also
 
 - [func setImage(UIImage?)](setimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimage(_:)))
+  Sets the displayed image using the specified image object.
 - [func setImageData(Data?)](setimagedata(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimagedata(_:)))
+  Sets the displayed image using a formatted data object.
 - [func setImageNamed(String?)](setimagenamed(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimagenamed(_:)))
+  Sets the displayed image using a named image resource file.
 
 
 ---

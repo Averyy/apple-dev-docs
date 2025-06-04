@@ -1,6 +1,6 @@
 # WKApplicationState.inactive
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The Watch app is running in the foreground, but is not yet responding to actions from controls or gestures.
@@ -19,7 +19,7 @@ case inactive
 - [Handling Common State Transitions](handling-common-state-transitions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/handling-common-state-transitions))
 - [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
 
-## Overview
+#### Discussion
 
 Typically, apps transition quickly through the [`WKApplicationState.inactive`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/inactive) state when becoming active or going to the background. A newly launched watchOS app starts in the [`WKApplicationState.inactive`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/inactive) state and then quickly transitions to the [`WKApplicationState.active`](https://developer.apple.com/documentation/watchkit/wkapplicationstate/active) state.
 
@@ -32,7 +32,9 @@ When the user scrolls to the app in the dock, the system initially displays the 
 ## See Also
 
 - [WKApplicationState.active](active.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate/active))
+  The Watch app is running in the foreground and currently receiving events.
 - [WKApplicationState.background](background.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate/background))
+  The Watch app is running in the background.
 
 
 ---

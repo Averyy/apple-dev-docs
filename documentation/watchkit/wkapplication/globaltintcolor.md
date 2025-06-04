@@ -1,6 +1,6 @@
 # globalTintColor
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The watchOS app’s global tint color.
@@ -11,10 +11,11 @@ The watchOS app’s global tint color.
 ## Declaration
 
 ```swift
-@MainActor var globalTintColor: UIColor { get }
+@MainActor
+var globalTintColor: UIColor { get }
 ```
 
-## Overview
+#### Discussion
 
 This property provides access to the global tint color so that you can match the color elsewhere in your user interface. You specify the global tint color in the app’s storyboard, or in the asset catalog. If you don’t set a global tint color, this property returns the system default tint color.
 
@@ -23,7 +24,9 @@ For more information, see [`Setting the app’s accent color`](https://developer
 ## See Also
 
 - [var isAutorotating: Bool](isautorotating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isautorotating))
+  A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.
 - [var isAutorotated: Bool](isautorotated.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/isautorotated))
+  A Boolean value that indicates whether the system has automatically rotated the user interface, orienting it properly for another viewer.
 
 
 ---

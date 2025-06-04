@@ -1,6 +1,6 @@
 # resignFocus()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Ends the delivery of crown events to the current crown sequencer.
@@ -14,13 +14,14 @@ Ends the delivery of crown events to the current crown sequencer.
 func resignFocus()
 ```
 
-## Overview
+#### Discussion
 
 Call this method when you no longer want to receive crown events in the current crown sequencer. If the user taps a picker object or a scrollable scene in your interface, the system automatically removes the focus from any active crown sequencer.
 
 ## See Also
 
 - [func focus()](focus().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/focus()))
+  Begins the delivery of crown events to the current crown sequencer.
 
 
 ---

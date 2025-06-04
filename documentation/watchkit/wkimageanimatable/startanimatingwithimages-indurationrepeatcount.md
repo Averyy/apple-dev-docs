@@ -1,6 +1,6 @@
 # startAnimatingWithImages(in:duration:repeatCount:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -15,7 +15,7 @@ Animates the specified images with the given duration and repeat information.
 func startAnimatingWithImages(in imageRange: NSRange, duration: TimeInterval, repeatCount: Int)
 ```
 
-## Overview
+#### Discussion
 
 This method animates a subset of the images associated with the current image interface object. This method starts the animation from the first image in the specified range.
 
@@ -28,7 +28,9 @@ This method animates a subset of the images associated with the current image in
 ## See Also
 
 - [func startAnimating()](startanimating().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/startanimating()))
+  Begins animating the current sequence of images.
 - [func stopAnimating()](stopanimating().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable/stopanimating()))
+  Stops any in-progress animations.
 
 
 ---

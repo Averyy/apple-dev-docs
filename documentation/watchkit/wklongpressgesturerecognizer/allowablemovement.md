@@ -1,6 +1,6 @@
 # allowableMovement
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The maximum movement of the finger on the interface object that allows the gesture to be recognized.
@@ -14,14 +14,16 @@ The maximum movement of the finger on the interface object that allows the gestu
 var allowableMovement: CGFloat { get set }
 ```
 
-## Overview
+#### Discussion
 
 The allowable movement is measured in points. The default value of this property is `10`, but you can change this value when configuring the gesture recognizer in Interface Builder.
 
 ## See Also
 
 - [var minimumPressDuration: CFTimeInterval](minimumpressduration.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/minimumpressduration))
+  The minimum amount of time (in seconds) that the user’s fingers must be touching the interface object.
 - [var numberOfTapsRequired: Int](numberoftapsrequired.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wklongpressgesturerecognizer/numberoftapsrequired))
+  The number of taps on the interface object that are required for the gesture to be recognized.
 
 
 ---

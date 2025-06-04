@@ -1,6 +1,6 @@
 # openSystemURL(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Opens the specified system URL.
@@ -11,10 +11,11 @@ Opens the specified system URL.
 ## Declaration
 
 ```swift
-@MainActor func openSystemURL(_ url: URL)
+@MainActor
+func openSystemURL(_ url: URL)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to initiate phone calls or send messages. The URL you open is sent to the appropriate system app for handling, at which point the user can choose whether to continue the operation.
 

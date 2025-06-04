@@ -1,6 +1,6 @@
 # WKInterfaceLayoutDirection.leftToRight
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The layout direction is left-to-right.
@@ -17,6 +17,7 @@ case leftToRight
 ## See Also
 
 - [WKInterfaceLayoutDirection.rightToLeft](righttoleft.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelayoutdirection/righttoleft))
+  The layout direction right-to-left. This value is appropriate when your app is running with localizations such as Arabic or Hebrew that should have the user interface layout origin on the right edge of the coordinate system.
 
 
 ---

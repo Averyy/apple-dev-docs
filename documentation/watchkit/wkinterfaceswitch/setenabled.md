@@ -1,6 +1,6 @@
 # setEnabled(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Enables or disables the switch.
@@ -14,7 +14,7 @@ Enables or disables the switch.
 func setEnabled(_ enabled: Bool)
 ```
 
-## Overview
+#### Discussion
 
 A disabled switch does not respond to taps in its content area. When the user taps an enabled switch, WatchKit executes the associated action method (if any) in your WatchKit extension.
 

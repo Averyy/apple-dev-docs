@@ -1,6 +1,6 @@
 # enableWaterLock()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Disables the Apple Watch touch screen to prevent accidental taps while submerged.
@@ -14,7 +14,7 @@ Disables the Apple Watch touch screen to prevent accidental taps while submerged
 func enableWaterLock()
 ```
 
-## Overview
+#### Discussion
 
 The following rules apply when using Water Lock:
 
@@ -26,8 +26,11 @@ The following rules apply when using Water Lock:
 ## See Also
 
 - [var waterResistanceRating: WKWaterResistanceRating](waterresistancerating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/waterresistancerating))
+  The Apple Watch water-resistance rating.
 - [enum WKWaterResistanceRating](wkwaterresistancerating.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwaterresistancerating))
+  Values indicating the water-resistance rating.
 - [var isWaterLockEnabled: Bool](iswaterlockenabled.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/iswaterlockenabled))
+  A Boolean value that indicates whether the water lock is enabled.
 
 
 ---

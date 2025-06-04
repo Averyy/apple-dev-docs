@@ -1,6 +1,6 @@
 # scrollToRow(at:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Scrolls the row at the specified index into view.
@@ -21,7 +21,9 @@ func scrollToRow(at index: Int)
 ## See Also
 
 - [var curvesAtBottom: Bool](curvesatbottom.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable/curvesatbottom))
+  A Boolean value that determines whether the rows shrink to match the curved corners at the bottom of the screen.
 - [var curvesAtTop: Bool](curvesattop.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetable/curvesattop))
+  A Boolean value that determines whether the rows shrink to match the curved corners at the top of the screen.
 
 
 ---

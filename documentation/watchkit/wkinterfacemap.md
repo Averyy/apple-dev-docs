@@ -1,6 +1,6 @@
 # WKInterfaceMap
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that displays a noninteractive map for the location you specify.
@@ -14,7 +14,7 @@ An interface element that displays a noninteractive map for the location you spe
 class WKInterfaceMap
 ```
 
-## Overview
+#### Overview
 
 You can configure Maps dynamically from your interface controller. Use the methods of [`WKInterfaceMap`](https://developer.apple.com/documentation/watchkit/wkinterfacemap) to specify the visible region of the map and to add any annotations or points of interest. Tapping the map launches the Maps app on the user’s Apple Watch and displays the corresponding location.
 
@@ -25,6 +25,8 @@ Don’t subclass or create instances of this class yourself. Instead, define out
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the onscreen map.
 
 The Apple Watch must have an active network connection to download map tiles.
+
+##### Configure the Map in Interface Builder
 
 In Xcode, you can configure information about your map from your storyboard file. The map interface object has an Enabled attribute that appears as a checkbox in the Attributes inspector. When you enable the map interface object in this checkbox, tapping the map launches the Maps app and displays the current selected location.
 
@@ -74,15 +76,25 @@ In Xcode, you can configure information about your map from your storyboard file
 ## See Also
 
 - [class WKInterfaceLabel](wkinterfacelabel.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacelabel))
+  An interface element that displays static text.
 - [class WKInterfaceDate](wkinterfacedate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedate))
+  A label that displays the current date or time.
 - [class WKInterfaceTimer](wkinterfacetimer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer))
+  A label that displays a countdown or count-up timer.
 - [class WKInterfaceButton](wkinterfacebutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton))
+  A button in the user interface of your watchOS app.
 - [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton))
+  A button that you can use to trigger a Sign in with Apple request.
 - [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepaymentbutton))
+  A button that you can use to trigger payments through Apple Pay.
 - [class WKInterfaceTextField](wkinterfacetextfield.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield))
+  An interface element that displays an editable text area.
 - [class WKInterfaceSwitch](wkinterfaceswitch.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceswitch))
+  An interface element that toggles between an On and Off state.
 - [class WKInterfaceSlider](wkinterfaceslider.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceslider))
+  An interface element that lets users select a single floating-point value from a range of values.
 - [class WKInterfaceActivityRing](wkinterfaceactivityring.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring))
+  A view that displays data from a HealthKit activity summary object.
 
 
 ---

@@ -1,6 +1,6 @@
 # translationInObject()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 The amount of translation for the pan gesture in the current object.
@@ -14,17 +14,18 @@ The amount of translation for the pan gesture in the current object.
 func translationInObject() -> CGPoint
 ```
 
-## Overview
+#### Return Value
 
 A point representing the translation value relative to the current object’s coordinate system.
 
-## Discussion
+#### Discussion
 
 The x and y values report the total translation over time. They are not delta values from the last time that the translation was reported.
 
 ## See Also
 
 - [func velocityInObject() -> CGPoint](velocityinobject().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpangesturerecognizer/velocityinobject()))
+  The velocity of the pan gesture in the current object.
 
 
 ---

@@ -1,6 +1,6 @@
 # init(target:action:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Creates a payment button for use in SwiftUI.
@@ -14,7 +14,7 @@ Creates a payment button for use in SwiftUI.
 init(target: Any?, action: Selector)
 ```
 
-## Overview
+#### Discussion
 
 When the user taps the button, the system calls the `action` method on the `target`.
 

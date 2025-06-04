@@ -1,6 +1,6 @@
 # setBackgroundImageData(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the background image of the group container to the image in the specified data object.
@@ -14,7 +14,7 @@ Changes the background image of the group container to the image in the specifie
 func setBackgroundImageData(_ imageData: Data?)
 ```
 
-## Overview
+#### Discussion
 
 Use this method when you already have image data in the raw PNG or JPG format. This method sends the data as-is, which lets you send the data in a compressed format. Sending compressed data is often more efficient than sending a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object.
 
@@ -25,8 +25,11 @@ Use this method when you already have image data in the raw PNG or JPG format. T
 ## See Also
 
 - [func setBackgroundColor(UIColor?)](setbackgroundcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundcolor(_:)))
+  Changes the background color for the group container.
 - [func setBackgroundImage(UIImage?)](setbackgroundimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundimage(_:)))
+  Changes the background image of the group container to the specified image.
 - [func setBackgroundImageNamed(String?)](setbackgroundimagenamed(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacegroup/setbackgroundimagenamed(_:)))
+  Changes the background image of the group container to the image in the specified resource file.
 
 
 ---

@@ -1,6 +1,6 @@
 # WKInterfaceController
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A class that provides the infrastructure for managing the interface in a watchOS app.
@@ -11,14 +11,17 @@ A class that provides the infrastructure for managing the interface in a watchOS
 ## Declaration
 
 ```swift
-@MainActor class WKInterfaceController
+@MainActor
+class WKInterfaceController
 ```
 
-## Overview
+#### Overview
 
 An interface controller serves the same purpose as a [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) object in a UIKit app, except that it doesn’t manage any actual views. It runs in your WatchKit extension and remotely manages the behavior associated with an interface controller in your Watch app’s storyboard file. You subclass [`WKInterfaceController`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller) and use its methods to configure the elements of your storyboard scene and to respond to interactions with those elements.
 
 Your interface controller code runs locally on the user’s Apple Watch but is separate from the interface that it manages. When you change the value of an interface object in your code, the system forwards the needed information to your Watch app, which makes the corresponding changes onscreen.
+
+##### Initialize Your Interface Controllers
 
 When the user interacts with your app content, the system launches your extension and creates the appropriate interface controller objects automatically. Apps use different interface controllers to manage their notification and app interfaces; WatchKit uses the information in your app’s main storyboard file to determine which interface controller to load. Notification scenes are configured specially so that the system can identify them. For your app, WatchKit loads your app’s main interface controller initially, but you may change the initial interface controller at launch time.
 
@@ -36,24 +39,27 @@ The [`willActivate()`](https://developer.apple.com/documentation/watchkit/wkinte
 
 In iOS Simulator, WatchKit calls the [`didDeactivate()`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/diddeactivate()) method for the current interface controller when you lock the simulator by selecting Hardware > Lock. When you subsequently unlock the simulator, WatchKit calls that interface controller’s [`willActivate()`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willactivate()) method again. You can use this capability to debug your activation and deactivation code.
 
+##### Interface Builder Configuration Options
+
 Xcode lets you configure information about your interface controller in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Attribute'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Description'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Identifier'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The name of the interface controller. Use this name to specify which interface controller to push or present.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Title', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The title string assigned to the interface controller. You can set this value programmatically using the '}, {'type': 'reference', 'isActive': True, 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceController/setTitle(_:)'}, {'type': 'text', 'text': ' method.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Is Initial Controller'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'A Boolean indicating whether the object is the app’s root interface controller. Only one interface controller at a time may have this option enabled. This option doesn’t apply to glance or notification interface controllers.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Activity Indicator On Load', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'A Boolean value that indicates whether the interface controller’s contents are hidden until the '}, {'type': 'reference', 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceController/willActivate()', 'isActive': True}, {'type': 'text', 'text': ' method returns. When you enable this option, the system displays a progress indicator until the '}, {'type': 'reference', 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceController/willActivate()', 'isActive': True}, {'type': 'text', 'text': ' method returns. You might disable this option if your interface contains mostly static information that can be displayed right away.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Always Bounce'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'A Boolean value that turns off scrolling and allows built-in controls and containers to fill content to the screen edges, regardless of the content-safe area.'}]}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Full Screen'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'A Boolean value that determines whether SpriteKit or SceneKit content can use the full screen. The system hides the status bar but displays the time in the upper-right corner with a gradient behind it, making the time clearly visible against the scene.'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Fixed to screen edges'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'A Boolean value that indicates whether the contents ignore the safe area and minimum layout margins. When you enable this option, the system turns off scrolling, and allows built-in controls and containers to fill content to the screen edges.'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Background', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'The background image displayed behind the scene’s content. The image specified in your storyboard scrolls with your interface controller’s content.'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Mode'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'The content mode for the background image. This mode defines how the background image scales or fills the screen and behaves in the same way as the constants for the '}, {'type': 'reference', 'identifier': 'doc://com.apple.documentation/documentation/UIKit/UIView/ContentMode-swift.enum', 'isActive': True}, {'text': ' type.', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Animate'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'A Boolean value indicating whether an animated background image starts running its animation automatically after being loaded. Set this option to ', 'type': 'text'}, {'code': 'Yes', 'type': 'codeVoice'}, {'text': ' if you want the animation to start automatically; set it to ', 'type': 'text'}, {'code': 'No', 'type': 'codeVoice'}, {'text': ' if you prefer to start the animation programmatically.', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Color'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'The background color to be displayed behind the scene’s content.', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Insets', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'The amount of space (in points) to insert between the edges of the interface controller and its content. Select Custom to specify different values for the top, bottom, left, and right edges.'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Spacing', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'Additional spacing (in points) to include between items in the interface controller.', 'type': 'text'}], 'type': 'paragraph'}] |
+| Attribute | Description |
+| --- | --- |
+| Identifier | The name of the interface controller. Use this name to specify which interface controller to push or present. |
+| Title | The title string assigned to the interface controller. You can set this value programmatically using the [`setTitle(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/settitle(_:)) method. |
+| Is Initial Controller | A Boolean indicating whether the object is the app’s root interface controller. Only one interface controller at a time may have this option enabled. This option doesn’t apply to glance or notification interface controllers. |
+| Activity Indicator On Load | A Boolean value that indicates whether the interface controller’s contents are hidden until the [`willActivate()`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willactivate()) method returns. When you enable this option, the system displays a progress indicator until the [`willActivate()`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willactivate()) method returns. You might disable this option if your interface contains mostly static information that can be displayed right away. |
+| Always Bounce | A Boolean value that turns off scrolling and allows built-in controls and containers to fill content to the screen edges, regardless of the content-safe area. |
+| Full Screen | A Boolean value that determines whether SpriteKit or SceneKit content can use the full screen. The system hides the status bar but displays the time in the upper-right corner with a gradient behind it, making the time clearly visible against the scene. |
+| Fixed to screen edges | A Boolean value that indicates whether the contents ignore the safe area and minimum layout margins. When you enable this option, the system turns off scrolling, and allows built-in controls and containers to fill content to the screen edges. |
+| Background | The background image displayed behind the scene’s content. The image specified in your storyboard scrolls with your interface controller’s content. |
+| Mode | The content mode for the background image. This mode defines how the background image scales or fills the screen and behaves in the same way as the constants for the [`UIView.ContentMode`](https://developer.apple.com/documentation/UIKit/UIView/ContentMode-swift.enum) type. |
+| Animate | A Boolean value indicating whether an animated background image starts running its animation automatically after being loaded. Set this option to `Yes` if you want the animation to start automatically; set it to `No` if you prefer to start the animation programmatically. |
+| Color | The background color to be displayed behind the scene’s content. |
+| Insets | The amount of space (in points) to insert between the edges of the interface controller and its content. Select Custom to specify different values for the top, bottom, left, and right edges. |
+| Spacing | Additional spacing (in points) to include between items in the interface controller. |
+
+##### Subclassing Notes
 
 Subclass `WKInterfaceController` when you have a storyboard scene that requires configuration at runtime or that handles user interactions. Typically, you define a custom subclass for each unique storyboard scene that your app manages. In your subclass, define outlets for any interface objects you need to configure and define action methods for responding to interactions with the elements of your storyboard scene.
 
@@ -234,11 +240,17 @@ Override any methods of the class needed to configure your interface and get it 
 ## See Also
 
 - [Building watchOS app Interfaces Using the Storyboard](building-watchos-app-interfaces-using-the-storyboard.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/building-watchos-app-interfaces-using-the-storyboard))
+  Create the user interface for your watchOS app by nesting stacks.
 - [class WKInterfaceObject](wkinterfaceobject.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceobject))
+  An object that provides information that is common to all interface objects in your watchOS app.
 - [class WKAlertAction](wkalertaction.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertaction))
+  An object that encapsulates information about a button displayed in an alert or action sheet.
 - [class WKAccessibilityImageRegion](wkaccessibilityimageregion.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityimageregion))
+  An object that defines a portion of an image that you want to call out separately to an assistive app.
 - [func WKAccessibilityIsVoiceOverRunning() -> Bool](wkaccessibilityisvoiceoverrunning().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityisvoiceoverrunning()))
+  Returns a Boolean value indicating whether VoiceOver is running.
 - [func WKAccessibilityIsReduceMotionEnabled() -> Bool](wkaccessibilityisreducemotionenabled().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaccessibilityisreducemotionenabled()))
+  Returns a Boolean value indicating whether reduced motion is enabled.
 
 
 ---

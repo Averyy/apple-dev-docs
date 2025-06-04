@@ -1,6 +1,6 @@
 # WKGestureRecognizerState.cancelled
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 **Availability**:

@@ -1,6 +1,6 @@
 # WatchKitError.Code
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Error codes reported by WatchKit.

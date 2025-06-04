@@ -1,6 +1,6 @@
 # setImageNamed(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the displayed image using a named image resource file.
@@ -14,7 +14,7 @@ Sets the displayed image using a named image resource file.
 func setImageNamed(_ imageName: String?)
 ```
 
-## Overview
+#### Discussion
 
 This method looks for an image with the specified name on Apple Watch and displays it in the image view. If the specified image cannot be found, the image view displays no image.
 
@@ -27,8 +27,11 @@ When setting images, always try to use images that are sized to fit the availabl
 ## See Also
 
 - [func setImage(UIImage?)](setimage(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimage(_:)))
+  Sets the displayed image using the specified image object.
 - [func setImageData(Data?)](setimagedata(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/setimagedata(_:)))
+  Sets the displayed image using a formatted data object.
 - [func setTintColor(UIColor?)](settintcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage/settintcolor(_:)))
+  Changes the color applied to a template image.
 
 
 ---

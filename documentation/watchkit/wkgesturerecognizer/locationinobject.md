@@ -1,6 +1,6 @@
 # locationInObject()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Returns the point computed as the current position of the touch event.
@@ -14,17 +14,18 @@ Returns the point computed as the current position of the touch event.
 func locationInObject() -> CGPoint
 ```
 
-## Overview
+#### Return Value
 
 A point in the local coordinate system of the associated interface object.
 
-## Discussion
+#### Discussion
 
 If multiple touches were detected, this method returns the location of only the first one.
 
 ## See Also
 
 - [func objectBounds() -> CGRect](objectbounds().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkgesturerecognizer/objectbounds()))
+  Returns the dimensions of the interface object (measured in points) associated with the gesture recognizer.
 
 
 ---

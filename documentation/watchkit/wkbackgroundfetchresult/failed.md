@@ -1,6 +1,6 @@
 # WKBackgroundFetchResult.failed
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The download attempt failed.
@@ -17,7 +17,9 @@ case failed
 ## See Also
 
 - [WKBackgroundFetchResult.newData](newdata.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkbackgroundfetchresult/newdata))
+  The download attempt succeeded.
 - [WKBackgroundFetchResult.noData](nodata.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkbackgroundfetchresult/nodata))
+  The notification has no associated content.
 
 
 ---

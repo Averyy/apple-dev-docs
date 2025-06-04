@@ -1,6 +1,6 @@
 # WKAudioFilePlayerStatus.failed
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The player can no longer play the audio because of an error. Use the [`error`](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/error) property to get information about the error that occurred.
@@ -17,7 +17,9 @@ case failed
 ## See Also
 
 - [WKAudioFilePlayerStatus.unknown](unknown.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayerstatus/unknown))
+  The status of the item is unknown because the player has not yet loaded the audio file for playback.
 - [WKAudioFilePlayerStatus.readyToPlay](readytoplay.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayerstatus/readytoplay))
+  The player is ready to play its item.
 
 
 ---

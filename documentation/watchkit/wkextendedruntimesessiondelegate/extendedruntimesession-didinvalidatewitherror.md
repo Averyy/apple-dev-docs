@@ -1,6 +1,6 @@
 # extendedRuntimeSession(_:didInvalidateWith:error:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -15,7 +15,7 @@ Indicates that the session has encountered an error or stopped running.
 func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: (any Error)?)
 ```
 
-## Overview
+#### Discussion
 
 The system calls this method both when a session fails to start and when a session stops running. Use the invalidation reason to determine why the session became invalid.
 
@@ -32,8 +32,11 @@ The system calls this method both when a session fails to start and when a sessi
 ## See Also
 
 - [func extendedRuntimeSessionDidStart(WKExtendedRuntimeSession)](extendedruntimesessiondidstart(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesessiondidstart(_:)))
+  Indicates that the session has started running.
 - [func extendedRuntimeSessionWillExpire(WKExtendedRuntimeSession)](extendedruntimesessionwillexpire(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessiondelegate/extendedruntimesessionwillexpire(_:)))
+  Indicates that the session is about to expire.
 - [enum WKExtendedRuntimeSessionInvalidationReason](wkextendedruntimesessioninvalidationreason.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextendedruntimesessioninvalidationreason))
+  The reasons why a session can become invalid.
 
 
 ---

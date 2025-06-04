@@ -1,6 +1,6 @@
 # play(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Gives haptic feedback to the user.
@@ -14,7 +14,7 @@ Gives haptic feedback to the user.
 func play(_ type: WKHapticType)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to engage the haptic engine in Apple Watch. The type of feedback you specify defines the specific feedback that is delivered.
 
@@ -33,6 +33,7 @@ Do not call this method multiple times in quick succession. If the haptic engine
 ## See Also
 
 - [enum WKHapticType](wkhaptictype.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkhaptictype))
+  Constant indicating the style of feedback to deliver using haptics.
 
 
 ---

@@ -1,6 +1,6 @@
 # setEnabled(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Enables or disables the text field.
@@ -14,7 +14,7 @@ Enables or disables the text field.
 func setEnabled(_ enabled: Bool)
 ```
 
-## Overview
+#### Discussion
 
 The `enabled` value determines whether the text field responds to user interaction. For enabled text fields, tapping the text field starts the text entry process. On watchOS, the system displays the text input controller. On nearby iOS devices associated with the same iCloud account, the system displays the Apple Remote Keyboard. A disabled text field does not respond to taps.
 
@@ -25,6 +25,7 @@ The `enabled` value determines whether the text field responds to user interacti
 ## See Also
 
 - [func setSecureTextEntry(Bool)](setsecuretextentry(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/setsecuretextentry(_:)))
+  Determines whether the text field hides the text entered by the user.
 
 
 ---

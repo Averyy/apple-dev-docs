@@ -1,6 +1,6 @@
 # numberOfTapsRequired
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The number of taps necessary for gesture recognition.
@@ -14,7 +14,7 @@ The number of taps necessary for gesture recognition.
 var numberOfTapsRequired: Int { get set }
 ```
 
-## Overview
+#### Discussion
 
 The default value of this property is `1`.
 

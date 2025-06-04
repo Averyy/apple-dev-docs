@@ -1,6 +1,6 @@
 # setTaskCompletedWithSnapshot(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Marks the task as complete and indicates whether the system should take a new snapshot of the app.
@@ -19,7 +19,7 @@ func setTaskCompletedWithSnapshot(_ refreshSnapshot: Bool)
 - [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
 - [Preparing to take your watchOS app’s snapshot](preparing-to-take-your-watchos-app-s-snapshot.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/preparing-to-take-your-watchos-app-s-snapshot))
 
-## Overview
+#### Discussion
 
 Call this method as soon as a nonsnapshot background task (any [`WKRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask) subclass except the [`WKSnapshotRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask) class) is complete.
 
@@ -38,7 +38,9 @@ When completing a snapshot background task, you generally call the [`setTaskComp
 ## See Also
 
 - [var expirationHandler: (() -> Void)?](expirationhandler.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask/expirationhandler))
+  A block that the system calls when the available runtime for a background task is about to expire.
 - [func setTaskCompleted()](settaskcompleted().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask/settaskcompleted()))
+  Marks the task as complete.
 
 
 ---

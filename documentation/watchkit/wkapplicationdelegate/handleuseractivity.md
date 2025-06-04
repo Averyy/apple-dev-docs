@@ -1,6 +1,6 @@
 # handleUserActivity(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Responds to Handoff–related activity from complications and notifications.
@@ -11,10 +11,11 @@ Responds to Handoff–related activity from complications and notifications.
 ## Declaration
 
 ```swift
-@MainActor optional func handleUserActivity(_ userInfo: [AnyHashable : Any]?)
+@MainActor
+optional func handleUserActivity(_ userInfo: [AnyHashable : Any]?)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to respond to Handoff–related activity. WatchKit calls this method when your app launches as a result of a Handoff action. Use the information in the provided `userInfo` dictionary to determine how you want to respond to the action. For example, you might decide to display a specific view.
 
@@ -31,7 +32,9 @@ The default implementation of this method does nothing. When overriding this met
 ## See Also
 
 - [func updateUserActivity(String, userInfo: [AnyHashable : Any]?, webpageURL: URL?)](updateuseractivity(_:userinfo:webpageurl:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/updateuseractivity(_:userinfo:webpageurl:)))
+  Registers the current user activity with the system.
 - [func handle(NSUserActivity)](handle(_:)-3kqsk.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-3kqsk))
+  Responds to Handoff–related activity from Siri.
 
 
 ---

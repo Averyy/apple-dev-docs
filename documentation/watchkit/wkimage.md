@@ -1,6 +1,6 @@
 # WKImage
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A wrapper for images you use with a picker interface.
@@ -14,7 +14,7 @@ A wrapper for images you use with a picker interface.
 class WKImage
 ```
 
-## Overview
+#### Overview
 
 To create instances of this class, use one of the defined creation methods. Choose the method that best suits the image data you have. After creating the object, you can use associate it with a [`WKPickerItem`](https://developer.apple.com/documentation/watchkit/wkpickeritem) object and use it in your picker interface.
 
@@ -53,11 +53,17 @@ To create instances of this class, use one of the defined creation methods. Choo
 ## See Also
 
 - [class WKInterfaceImage](wkinterfaceimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage))
+  An image that can be displayed in the interface of your watchOS app.
 - [protocol WKImageAnimatable](wkimageanimatable.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable))
+  A collection of methods you can use to control the playback of animated images.
 - [class WKInterfaceMovie](wkinterfacemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie))
+  An interface element that lets you play video and audio content in your watchOS app.
 - [class WKInterfaceInlineMovie](wkinterfaceinlinemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie))
+  An interface element that displays a video’s poster image and supports inline playing of the video.
 - [class WKInterfaceHMCamera](wkinterfacehmcamera.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacehmcamera))
+  An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.
 - [enum WKVideoGravity](wkvideogravity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity))
+  Constants indicating the appearance of video content.
 
 
 ---

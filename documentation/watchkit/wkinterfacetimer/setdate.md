@@ -1,6 +1,6 @@
 # setDate(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the start time for the timer.
@@ -14,7 +14,7 @@ Changes the start time for the timer.
 func setDate(_ date: Date)
 ```
 
-## Overview
+#### Discussion
 
 This method updates the target value but does not automatically update the timer display. You must call the timer’s [`start()`](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/start()) method to begin updating the text it displays. When you do, the timer text is updated based on the time you set using this method.
 
@@ -26,7 +26,9 @@ This method updates the target value but does not automatically update the timer
 
 - [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
 - [func start()](start().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/start()))
+  Begins updates to the timer’s display.
 - [func setTextColor(UIColor?)](settextcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetimer/settextcolor(_:)))
+  Sets the color of the timer’s text.
 
 
 ---

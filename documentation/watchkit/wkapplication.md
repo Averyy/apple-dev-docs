@@ -1,6 +1,6 @@
 # WKApplication
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 The centralized point of control and coordination for apps with a single watchOS app target.
@@ -11,10 +11,11 @@ The centralized point of control and coordination for apps with a single watchOS
 ## Declaration
 
 ```swift
-@MainActor class WKApplication
+@MainActor
+class WKApplication
 ```
 
-## Overview
+#### Overview
 
 In Xcode 13 and earlier, the system divides a watchOS app into two sections:
 
@@ -96,12 +97,19 @@ As relevant events occur within your WatchKit app, the app object notifies its d
 ## See Also
 
 - [Setting up a watchOS project](setting-up-a-watchos-project.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/setting-up-a-watchos-project))
+  Create a new watchOS project or add a watch target to an existing iOS project.
 - [protocol WKApplicationDelegate](wkapplicationdelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate))
+  A collection of methods that manages the app-level behavior for a single-target watchOS app.
 - [class WKExtension](wkextension.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension))
+  The centralized point of control and coordination for extension-based apps running in watchOS.
 - [protocol WKExtensionDelegate](wkextensiondelegate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextensiondelegate))
+  A collection of methods that manages the app-level behavior of a WatchKit extension.
 - [func WKApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?) -> Int32](wkapplicationmain(_:_:_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationmain(_:_:_:)))
+  Creates the application object and the application delegate, and sets up the app’s event cycle.
 - [class WKInterfaceDevice](wkinterfacedevice.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice))
+  An object that provides information about the user’s Apple Watch.
 - WKPrefersNetworkUponForeground ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground))
+  A Boolean value that indicates whether an app requires network access on launch.
 
 
 ---

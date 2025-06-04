@@ -1,6 +1,6 @@
 # setCoordinatedAnimations(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the interface objects that should coordinate their own animations with the picker.
@@ -14,7 +14,7 @@ Sets the interface objects that should coordinate their own animations with the 
 func setCoordinatedAnimations(_ coordinatedAnimations: [any WKInterfaceObject & WKImageAnimatable]?)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to link other animatable images to the picker. When the user turns the crown, the picker updates the currently displayed image in each of the linked interface objects.
 
@@ -27,8 +27,11 @@ The animated images associated with the interface objects may have any number of
 ## See Also
 
 - [func setItems([WKPickerItem]?)](setitems(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setitems(_:)))
+  Sets the list of items displayed by the picker.
 - [class WKPickerItem](wkpickeritem.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkpickeritem))
+  A single item in a picker interface.
 - [func setSelectedItemIndex(Int)](setselecteditemindex(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setselecteditemindex(_:)))
+  Selects the specified item in the list.
 
 
 ---

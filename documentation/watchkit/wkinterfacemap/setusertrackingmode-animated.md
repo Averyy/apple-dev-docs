@@ -1,6 +1,6 @@
 # setUserTrackingMode(_:animated:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the map’s tracking mode.
@@ -14,7 +14,7 @@ Sets the map’s tracking mode.
 func setUserTrackingMode(_ mode: WKInterfaceMap.UserTrackingMode, animated: Bool)
 ```
 
-## Overview
+#### Discussion
 
 By default, the tracking mode is [`WKInterfaceMap.UserTrackingMode.none`](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode/none).
 
@@ -28,8 +28,11 @@ Setting the tracking mode to [`WKInterfaceMap.UserTrackingMode.follow`](https://
 ## See Also
 
 - [func setShowsUserLocation(Bool)](setshowsuserlocation(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setshowsuserlocation(_:)))
+  Sets whether the map shows the user’s current location.
 - [func setShowsUserHeading(Bool)](setshowsuserheading(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/setshowsuserheading(_:)))
+  Sets whether the map shows the user heading.
 - [WKInterfaceMap.UserTrackingMode](usertrackingmode.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemap/usertrackingmode))
+  Modes for tracking the user’s location on the map.
 
 
 ---

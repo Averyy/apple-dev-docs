@@ -1,6 +1,6 @@
 # setCameraSource(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Set the HomeKit camera source displayed by this interface object.
@@ -14,7 +14,7 @@ Set the HomeKit camera source displayed by this interface object.
 func setCameraSource(_ cameraSource: HMCameraSource?)
 ```
 
-## Overview
+#### Discussion
 
 Pass `nil` to clear the camera source.
 

@@ -1,6 +1,6 @@
 # isIdle
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value indicating whether the crown is at rest.
@@ -14,14 +14,16 @@ A Boolean value indicating whether the crown is at rest.
 var isIdle: Bool { get }
 ```
 
-## Overview
+#### Discussion
 
 The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the user is not rotating the crown and [`false`](https://developer.apple.com/documentation/swift/false) when the user is rotating the crown.
 
 ## See Also
 
 - [func crownDidBecomeIdle(WKCrownSequencer?)](crowndidbecomeidle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrowndelegate/crowndidbecomeidle(_:)))
+  Called when the user stops rotating the crown.
 - [var rotationsPerSecond: Double](rotationspersecond.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkcrownsequencer/rotationspersecond))
+  The rotational speed of the crown, measured in rotations per second.
 
 
 ---

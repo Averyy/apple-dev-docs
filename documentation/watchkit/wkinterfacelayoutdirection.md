@@ -1,6 +1,6 @@
 # WKInterfaceLayoutDirection
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Specifies the directional flow of the user interface.
@@ -36,8 +36,11 @@ enum WKInterfaceLayoutDirection
 ## See Also
 
 - [var layoutDirection: WKInterfaceLayoutDirection](layoutdirection.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/layoutdirection))
+  The layout direction of the user interface.
 - [class func interfaceLayoutDirection(for: WKInterfaceSemanticContentAttribute) -> WKInterfaceLayoutDirection](interfacelayoutdirection(for:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/interfacelayoutdirection(for:)))
+  Returns the user interface direction for the given semantic content attribute.
 - [enum WKInterfaceSemanticContentAttribute](wkinterfacesemanticcontentattribute.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacesemanticcontentattribute))
+  A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
 
 
 ---

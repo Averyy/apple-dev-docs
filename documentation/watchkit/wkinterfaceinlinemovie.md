@@ -1,6 +1,6 @@
 # WKInterfaceInlineMovie
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that displays a video’s poster image and supports inline playing of the video.
@@ -14,7 +14,7 @@ An interface element that displays a video’s poster image and supports inline 
 class WKInterfaceInlineMovie
 ```
 
-## Overview
+#### Overview
 
 In watchOS 2.0, you had to display video content using a [`WKInterfaceMovie`](https://developer.apple.com/documentation/watchkit/wkinterfacemovie) object. This object displayed a poster image for the video, and when the user tapped the poster image, the video was shown in a separate, full-screen, modal view.
 
@@ -26,23 +26,25 @@ During the initialization of your interface controller, WatchKit creates any nee
 
 Do not attempt to play audio or video content while gathering heart rate data using Health Kit. If you use this class to play media, WatchKit automatically disables the gathering of heart rate data.
 
+##### Supported Media Formats
+
 The following table lists the encoding information to use when creating media files to play on a user’s Apple Watch. For audio and video assets played directly from your app, keep your clips relatively short. Short clips consume less space on disk, use less power, and take less time to download.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'inlineContent': [{'type': 'text', 'text': 'Media type'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Recommended encoding'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'type': 'text', 'text': 'Video assets'}], 'type': 'paragraph'}] | [{'inlineContent': [{'text': 'Video codec: H.264 High Profile ', 'type': 'text'}, {'type': 'image', 'identifier': 'spacer'}, {'text': ' Bit rate: 160 kpbs at up to 30 fps ', 'type': 'text'}, {'type': 'image', 'identifier': 'spacer'}, {'text': ' Full screen resolution: 208 x 260 in portrait orientation ', 'type': 'text'}, {'type': 'image', 'identifier': 'spacer'}, {'text': ' 16:9 resolution: 320 x 180 in landscape orientation ', 'type': 'text'}, {'type': 'image', 'identifier': 'spacer'}, {'text': ' Audio bit rate: 32 kpbs stereo', 'type': 'text'}], 'type': 'paragraph'}] |
-| [{'inlineContent': [{'text': 'Audio-only assets', 'type': 'text'}], 'type': 'paragraph'}] | [{'inlineContent': [{'type': 'text', 'text': 'Bit rate: 32 kbps stereo'}], 'type': 'paragraph'}] |
+| Media type | Recommended encoding |
+| --- | --- |
+| Video assets | Video codec: H.264 High Profile ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Audio bit rate: 32 kpbs stereo |
+| Audio-only assets | Bit rate: 32 kbps stereo |
+
+##### Interface Builder Configuration Options
 
 Xcode lets you configure information about your inline movie interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 
-| r | o | w |
-| --- | --- | --- |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Attribute', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'text': 'Description', 'type': 'text'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Video Gravity', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The sizing behavior for the movie. Use this attribute to determine whether the movie maintains its aspect ratio and how it fills the available space. You can also configure this value programmatically using the '}, {'type': 'reference', 'isActive': True, 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceInlineMovie/setVideoGravity(_:)'}, {'type': 'text', 'text': ' method.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Poster Image', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'The placeholder image to display for your movie. When the user taps the poster image, the movie begins to play inline. You can also configure this value programmatically using the '}, {'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceInlineMovie/setPosterImage(_:)', 'isActive': True, 'type': 'reference'}, {'type': 'text', 'text': ' method.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'Loop'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'A boolean value indicating whether the movie plays in a continuous loop. If checked, the movie plays in a continuous loop. If unchecked, the movie plays once and then stops. You can also configure this value programmatically using the '}, {'type': 'reference', 'isActive': True, 'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceInlineMovie/setLoops(_:)'}, {'type': 'text', 'text': ' method.'}]}] |
-| [{'type': 'paragraph', 'inlineContent': [{'text': 'Autoplay', 'type': 'text'}]}] | [{'type': 'paragraph', 'inlineContent': [{'type': 'text', 'text': 'A boolean value indicating whether the movie automatically plays as soon as the interface is presented. If checked, the movie automatically begins playing. If unchecked, the inline movie object displays the poster image instead. The movie does not begin playing until the user taps the poster, or until you programmatically call either the '}, {'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceInlineMovie/play()', 'type': 'reference', 'isActive': True}, {'type': 'text', 'text': ' or '}, {'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceInlineMovie/playFromBeginning()', 'type': 'reference', 'isActive': True}, {'type': 'text', 'text': ' method. You can also configure this value programmatically using the '}, {'identifier': 'doc://com.apple.watchkit/documentation/WatchKit/WKInterfaceInlineMovie/setAutoplays(_:)', 'type': 'reference', 'isActive': True}, {'type': 'text', 'text': ' method.'}]}] |
+| Attribute | Description |
+| --- | --- |
+| Video Gravity | The sizing behavior for the movie. Use this attribute to determine whether the movie maintains its aspect ratio and how it fills the available space. You can also configure this value programmatically using the [`setVideoGravity(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setvideogravity(_:)) method. |
+| Poster Image | The placeholder image to display for your movie. When the user taps the poster image, the movie begins to play inline. You can also configure this value programmatically using the [`setPosterImage(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setposterimage(_:)) method. |
+| Loop | A boolean value indicating whether the movie plays in a continuous loop. If checked, the movie plays in a continuous loop. If unchecked, the movie plays once and then stops. You can also configure this value programmatically using the [`setLoops(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setloops(_:)) method. |
+| Autoplay | A boolean value indicating whether the movie automatically plays as soon as the interface is presented. If checked, the movie automatically begins playing. If unchecked, the inline movie object displays the poster image instead. The movie does not begin playing until the user taps the poster, or until you programmatically call either the [`play()`](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/play()) or [`playFromBeginning()`](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/playfrombeginning()) method. You can also configure this value programmatically using the [`setAutoplays(_:)`](https://developer.apple.com/documentation/watchkit/wkinterfaceinlinemovie/setautoplays(_:)) method. |
 
 ## Topics
 
@@ -83,11 +85,17 @@ Xcode lets you configure information about your inline movie interface object in
 ## See Also
 
 - [class WKInterfaceImage](wkinterfaceimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceimage))
+  An image that can be displayed in the interface of your watchOS app.
 - [class WKImage](wkimage.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimage))
+  A wrapper for images you use with a picker interface.
 - [protocol WKImageAnimatable](wkimageanimatable.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkimageanimatable))
+  A collection of methods you can use to control the playback of animated images.
 - [class WKInterfaceMovie](wkinterfacemovie.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacemovie))
+  An interface element that lets you play video and audio content in your watchOS app.
 - [class WKInterfaceHMCamera](wkinterfacehmcamera.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacehmcamera))
+  An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.
 - [enum WKVideoGravity](wkvideogravity.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkvideogravity))
+  Constants indicating the appearance of video content.
 
 
 ---

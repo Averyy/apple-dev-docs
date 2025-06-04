@@ -1,6 +1,6 @@
 # WKPickerItem
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A single item in a picker interface.
@@ -14,7 +14,7 @@ A single item in a picker interface.
 class WKPickerItem
 ```
 
-## Overview
+#### Overview
 
 You create picker items yourself and assign them to a [`WKInterfacePicker`](https://developer.apple.com/documentation/watchkit/wkinterfacepicker) object in your interface. For each item, you can specify a title string, an image, or both based on the style of the picker.
 
@@ -55,8 +55,11 @@ The style of the picker determines how you configure the items of that picker:
 ## See Also
 
 - [func setItems([WKPickerItem]?)](setitems(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setitems(_:)))
+  Sets the list of items displayed by the picker.
 - [func setSelectedItemIndex(Int)](setselecteditemindex(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setselecteditemindex(_:)))
+  Selects the specified item in the list.
 - [func setCoordinatedAnimations([any WKInterfaceObject & WKImageAnimatable]?)](setcoordinatedanimations(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/setcoordinatedanimations(_:)))
+  Sets the interface objects that should coordinate their own animations with the picker.
 
 
 ---

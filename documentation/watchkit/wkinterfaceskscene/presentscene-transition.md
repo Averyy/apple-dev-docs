@@ -1,6 +1,6 @@
 # presentScene(_:transition:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Transitions from the current scene to a new scene.
@@ -14,7 +14,7 @@ Transitions from the current scene to a new scene.
 func presentScene(_ scene: SKScene, transition: SKTransition)
 ```
 
-## Overview
+#### Discussion
 
 If the interface is not currently presenting a scene, the new scene is presented immediately, and the `transition` property is ignored. Otherwise, the interface’s [`scene`](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/scene) property is updated immediately, and the transition is executed to animate the swap between scenes.
 
@@ -26,7 +26,9 @@ If the interface is not currently presenting a scene, the new scene is presented
 ## See Also
 
 - [var scene: SKScene?](scene.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/scene))
+  The currently presented SpriteKit scene.
 - [func presentScene(SKScene?)](presentscene(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene/presentscene(_:)))
+  Presents a scene.
 
 
 ---

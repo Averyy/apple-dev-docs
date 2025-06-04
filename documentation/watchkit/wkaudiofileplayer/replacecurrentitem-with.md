@@ -1,6 +1,6 @@
 # replaceCurrentItem(with:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Replaces the current player item with a different one.
@@ -14,7 +14,7 @@ Replaces the current player item with a different one.
 func replaceCurrentItem(with item: WKAudioFilePlayerItem?)
 ```
 
-## Overview
+#### Discussion
 
 The default implementation of this method does nothing. Subclasses can override it to implement support for swapping out the current player item for a new one.
 
@@ -25,6 +25,7 @@ The default implementation of this method does nothing. Subclasses can override 
 ## See Also
 
 - [convenience init(playerItem: WKAudioFilePlayerItem)](init(playeritem:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayer/init(playeritem:)))
+  Creates and returns a player initialized with the specified player item.
 
 
 ---

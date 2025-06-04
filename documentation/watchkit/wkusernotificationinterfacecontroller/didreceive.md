@@ -1,6 +1,6 @@
 # didReceive(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Delivers a notification object to your interface controller for processing.
@@ -11,12 +11,14 @@ Delivers a notification object to your interface controller for processing.
 ## Declaration
 
 ```swift
-@MainActor func didReceive(_ notification: UNNotification)
+@MainActor
+func didReceive(_ notification: UNNotification)
 ```
 
 ## See Also
 
 - [func didReceive(UNNotification, withCompletion: (WKUserNotificationInterfaceType) -> Void)](didreceive(_:withcompletion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/didreceive(_:withcompletion:)))
+  Delivers a notification object to your interface controller for processing.
 
 
 ---

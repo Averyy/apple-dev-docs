@@ -1,6 +1,6 @@
 # setCurrentTime(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the playback point, measured in seconds, from the beginning of the audio file.
@@ -14,7 +14,7 @@ Sets the playback point, measured in seconds, from the beginning of the audio fi
 func setCurrentTime(_ currentTime: TimeInterval)
 ```
 
-## Overview
+#### Discussion
 
 Use this method to seek a specific point in a sound file or to implement fast-forward and rewind functions.
 
@@ -25,6 +25,7 @@ Use this method to seek a specific point in a sound file or to implement fast-fo
 ## See Also
 
 - [var currentTime: TimeInterval](currenttime.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem/currenttime))
+  The current playback point, measured in seconds, from the beginning of the audio file.
 
 
 ---

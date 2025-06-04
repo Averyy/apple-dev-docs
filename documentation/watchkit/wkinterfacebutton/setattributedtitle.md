@@ -1,6 +1,6 @@
 # setAttributedTitle(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the button title to the specified attributed string.
@@ -14,7 +14,7 @@ Sets the button title to the specified attributed string.
 func setAttributedTitle(_ attributedTitle: NSAttributedString?)
 ```
 
-## Overview
+#### Discussion
 
 This method sets the content of the button to the specified text, replacing the previous text. The text is drawn using the style information in `attributedTitle`. If the button has a background image, the text is drawn on top of that image.
 
@@ -27,6 +27,7 @@ If you use styled text in your buttons, you must provide localized versions of t
 ## See Also
 
 - [func setTitle(String?)](settitle(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacebutton/settitle(_:)))
+  Sets the button title to the specified string.
 
 
 ---

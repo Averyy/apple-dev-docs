@@ -1,6 +1,6 @@
 # setAttributedText(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the styled text displayed by the text field.
@@ -21,7 +21,9 @@ func setAttributedText(_ attributedText: NSAttributedString?)
 ## See Also
 
 - [func setText(String?)](settext(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/settext(_:)))
+  Sets the text displayed by the text field.
 - [func setTextColor(UIColor?)](settextcolor(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/settextcolor(_:)))
+  Sets the text’s color.
 
 
 ---

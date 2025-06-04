@@ -1,6 +1,6 @@
 # setPlaceholder(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the text field’s placeholder.
@@ -14,13 +14,14 @@ Sets the text field’s placeholder.
 func setPlaceholder(_ placeholder: String?)
 ```
 
-## Overview
+#### Discussion
 
 Use placeholders to describe the text field’s expected content to the user. An empty text field displays the placeholder, and any entered text hides the placeholder. The system automatically formats the placeholder, making it obvious that it’s not a valid text entry.
 
 ## See Also
 
 - [func setAttributedPlaceholder(NSAttributedString?)](setattributedplaceholder(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield/setattributedplaceholder(_:)))
+  Sets the text field’s placeholder using styled text.
 
 
 ---

@@ -1,6 +1,6 @@
 # didDeactivate()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the interface controller that its view is no longer active.
@@ -11,14 +11,15 @@ Tells the interface controller that its view is no longer active.
 ## Declaration
 
 ```swift
-@MainActor func didDeactivate()
+@MainActor
+func didDeactivate()
 ```
 
 ## Mentions
 
 - [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/working-with-the-watchos-app-life-cycle))
 
-## Overview
+#### Discussion
 
 The system calls this method as part of the cleanup process for the interface controller. Use this method to invalidate timers or save any app-related state information that has not already been saved. Any tasks you perform using this method should finish quickly. An inactive interface controller may be reactivated later or it may be deallocated.
 
@@ -31,8 +32,11 @@ In iOS Simulator, WatchKit calls this method for the current interface controlle
 ## See Also
 
 - [func willActivate()](willactivate().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willactivate()))
+  Tells the interface controller that the system is about to activate its view.
 - [func didAppear()](didappear().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/didappear()))
+  Tells the interface controller that its view is now onscreen.
 - [func willDisappear()](willdisappear().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/willdisappear()))
+  Tells the interface controller that its view is now offscreen.
 
 
 ---

@@ -1,6 +1,6 @@
 # WKWaterResistanceRating.ipx7
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 A water-resistance rating of IPX7.
@@ -14,13 +14,14 @@ A water-resistance rating of IPX7.
 case ipx7
 ```
 
-## Overview
+#### Discussion
 
 This rating indicates a water resistance of IPX7 under IEC standard 60529. Apple Watch is splash and water resistant, but submerging the watch is not recommended.
 
 ## See Also
 
 - [WKWaterResistanceRating.wr50](wr50.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwaterresistancerating/wr50))
+  A water-resistance rating of 50 meters.
 - [WKWaterResistanceRating.wr100](wr100.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkwaterresistancerating/wr100))
 
 

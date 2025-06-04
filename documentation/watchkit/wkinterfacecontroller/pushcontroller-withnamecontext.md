@@ -1,6 +1,6 @@
 # pushController(withName:context:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Pushes a new interface controller onto the screen.
@@ -11,14 +11,15 @@ Pushes a new interface controller onto the screen.
 ## Declaration
 
 ```swift
-@MainActor func pushController(withName name: String, context: Any?)
+@MainActor
+func pushController(withName name: String, context: Any?)
 ```
 
 ## Mentions
 
 - [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
 
-## Overview
+#### Discussion
 
 Use this method to perform a navigation-style transition to the specified interface controller. The system initializes the new interface controller with the specified context object and animates the transition asynchronously. During the transition, the currently visible interface controller’s content disappears from the screen and is replaced by the content of the new controller.
 
@@ -36,7 +37,9 @@ Always call this method from your WatchKit extension’s main thread.
 ## See Also
 
 - [func pop()](pop().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/pop()))
+  Pops the current interface controller from the screen.
 - [func popToRootController()](poptorootcontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/poptorootcontroller()))
+  Pops all interface controllers except the app’s initial interface controller.
 
 
 ---

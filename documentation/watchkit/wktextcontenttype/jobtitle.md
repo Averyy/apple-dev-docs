@@ -1,6 +1,6 @@
 # jobTitle
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A job title.
@@ -17,6 +17,7 @@ static let jobTitle: WKTextContentType
 ## See Also
 
 - [static let organizationName: WKTextContentType](organizationname.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wktextcontenttype/organizationname))
+  An organization’s name.
 
 
 ---

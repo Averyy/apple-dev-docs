@@ -1,6 +1,6 @@
 # WKAudioFilePlayer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that controls playback of a single audio item.
@@ -14,7 +14,7 @@ An object that controls playback of a single audio item.
 class WKAudioFilePlayer
 ```
 
-## Overview
+#### Overview
 
 Use a player object to start and stop playback and to control the rate of playback. (The [`WKAudioFileQueuePlayer`](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer) subclass extends the basic behavior to support playback of more than one item.)
 
@@ -67,12 +67,19 @@ The [`WKAudioFilePlayer`](https://developer.apple.com/documentation/watchkit/wka
 ## See Also
 
 - [Playing Background Audio](playing-background-audio.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/playing-background-audio))
+  Enable background audio in your app to provide a seamless playback experience.
 - [Adding a Now Playing View](adding-a-now-playing-view.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/adding-a-now-playing-view))
+  Provide a view that controls the currently playing audio from your app.
 - [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacevolumecontrol))
+  An interface element that provides control of the audio volume from the watch or a paired iPhone.
 - PUICAutoLaunchAudioOptOut ([Apple Docs](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut))
+  A Boolean value that indicates whether a watchOS app should opt out of automatically launching when its companion iOS app starts playing audio content.
 - [class WKAudioFileQueuePlayer](wkaudiofilequeueplayer.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofilequeueplayer))
+  An object that controls playback of one or more audio items.
 - [class WKAudioFilePlayerItem](wkaudiofileplayeritem.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileplayeritem))
+  An object that manages the presentation state of an audio file while it is playing.
 - [class WKAudioFileAsset](wkaudiofileasset.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiofileasset))
+  An object that stores a reference to an audio file and provides metadata information about that file.
 
 
 ---

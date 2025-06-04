@@ -1,6 +1,6 @@
 # presentAudioRecorderController(withOutputURL:preset:options:completion:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Display a standard interface for recording audio from the user’s Apple Watch.
@@ -11,14 +11,15 @@ Display a standard interface for recording audio from the user’s Apple Watch.
 ## Declaration
 
 ```swift
-@MainActor func presentAudioRecorderController(withOutputURL URL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]? = nil) async throws -> Bool
+@MainActor
+func presentAudioRecorderController(withOutputURL URL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]? = nil) async throws -> Bool
 ```
 
 ## Mentions
 
 - [Navigating Between Scenes](navigating-between-scenes.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/navigating-between-scenes))
 
-## Overview
+#### Discussion
 
 Use this method to obtain recorded audio from the user. This method executes asynchronously, returning shortly after you call it. During a subsequent run loop cycle, the system displays the audio recording controller to the user. The interface includes a Cancel button to dismiss the interface, and controls to manage recording. After some audio has been recorded, the interface displays the title string specified in the [`WKAudioRecorderControllerOptionsActionTitleKey`](https://developer.apple.com/documentation/watchkit/wkaudiorecordercontrolleroptionsactiontitlekey) option so that the user can accept the content and save it to the specified URL. When the user taps the Cancel button or your title string, WatchKit automatically dismisses the audio recording interface controller.
 
@@ -42,11 +43,17 @@ When specifying a filename with the `.wav` extension, the resulting audio format
 ## See Also
 
 - [func presentMediaPlayerController(with: URL, options: [AnyHashable : Any]?, completion: (Bool, TimeInterval, (any Error)?) -> Void)](presentmediaplayercontroller(with:options:completion:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/presentmediaplayercontroller(with:options:completion:)))
+  Displays a modal interface for playing the specified media file.
 - [Media Player Options](media-player-options.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/media-player-options))
+  Keys indicating media playback options.
 - [func dismissMediaPlayerController()](dismissmediaplayercontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismissmediaplayercontroller()))
+  Dismisses the media interface controller.
 - [enum WKAudioRecorderPreset](wkaudiorecorderpreset.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkaudiorecorderpreset))
+  Constants indicating the quality of audio recordings.
 - [Audio Recording Options](audio-recording-options.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/audio-recording-options))
+  Options to specify when recording audio.
 - [func dismissAudioRecorderController()](dismissaudiorecordercontroller().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller/dismissaudiorecordercontroller()))
+  Dismisses the audio recording interface controller.
 
 
 ---

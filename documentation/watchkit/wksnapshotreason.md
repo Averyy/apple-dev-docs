@@ -1,6 +1,6 @@
 # WKSnapshotReason
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The reason for a background snapshot task.
@@ -42,7 +42,9 @@ enum WKSnapshotReason
 ## See Also
 
 - [var reasonForSnapshot: WKSnapshotReason](reasonforsnapshot.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask/reasonforsnapshot))
+  The reason for taking the upcoming snapshot.
 - [var returnToDefaultState: Bool](returntodefaultstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask/returntodefaultstate))
+  A Boolean value indicating that the app should return to its default state.
 
 
 ---

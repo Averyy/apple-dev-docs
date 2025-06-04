@@ -1,6 +1,6 @@
 # resignFocus()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Removes focus from the picker, causing it to stop receiving input from the Digital Crown.
@@ -14,13 +14,14 @@ Removes focus from the picker, causing it to stop receiving input from the Digit
 func resignFocus()
 ```
 
-## Overview
+#### Discussion
 
 When no picker has focus, input from the Digital Crown is once again used to scroll the contents of the screen.
 
 ## See Also
 
 - [func focus()](focus().md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkinterfacepicker/focus()))
+  Configures the picker to receive input from the Digital Crown.
 
 
 ---

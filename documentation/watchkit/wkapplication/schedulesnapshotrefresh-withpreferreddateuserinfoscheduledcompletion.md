@@ -1,6 +1,6 @@
 # scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Schedules a background task to refresh your app’s snapshot.
@@ -11,14 +11,15 @@ Schedules a background task to refresh your app’s snapshot.
 ## Declaration
 
 ```swift
-@MainActor func scheduleSnapshotRefresh(withPreferredDate preferredFireDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: @escaping ((any Error)?) -> Void)
+@MainActor
+func scheduleSnapshotRefresh(withPreferredDate preferredFireDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: @escaping ((any Error)?) -> Void)
 ```
 
 ## Mentions
 
 - [Preparing to take your watchOS app’s snapshot](preparing-to-take-your-watchos-app-s-snapshot.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/preparing-to-take-your-watchos-app-s-snapshot))
 
-## Overview
+#### Discussion
 
 Call this method to update your app’s snapshot in the background. When the system triggers the task, it wakes your app in the background and calls your app delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-7kiwx) method. Use this task to transition to the interface controller you want to display in the snapshot, and to update that controller’s user interface.
 

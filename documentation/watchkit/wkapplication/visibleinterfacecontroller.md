@@ -1,6 +1,6 @@
 # visibleInterfaceController
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 Returns the last visible interface controller.
@@ -11,10 +11,11 @@ Returns the last visible interface controller.
 ## Declaration
 
 ```swift
-@MainActor var visibleInterfaceController: WKInterfaceController? { get }
+@MainActor
+var visibleInterfaceController: WKInterfaceController? { get }
 ```
 
-## Overview
+#### Discussion
 
 Use this property to determine which interface controller the app is currently displaying. For example, in the app delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-4vdjo) method for a snapshot request, use this property to determine the user interface’s current contents, and make any changes before the system takes the snapshot.
 
@@ -25,6 +26,7 @@ This property contains the following values based on the app’s current state:
 ## See Also
 
 - [var rootInterfaceController: WKInterfaceController?](rootinterfacecontroller.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplication/rootinterfacecontroller))
+  The app’s root interface controller.
 
 
 ---

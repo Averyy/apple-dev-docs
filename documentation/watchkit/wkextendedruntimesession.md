@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSession
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A session that continues to run your app after the user has stopped interacting.
@@ -19,7 +19,7 @@ class WKExtendedRuntimeSession
 - [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
 - [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
 
-## Overview
+#### Overview
 
 With extended runtime sessions, your app continues to run after the user stops interacting with it. The app can continue to communicate with Bluetooth devices, process data, or play sounds or haptics, even after the watch’s screen turns off.
 
@@ -73,9 +73,13 @@ For more information, see [`Using extended runtime sessions`](https://developer.
 ## See Also
 
 - [Background execution](background-execution.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/background-execution))
+  Manage background sessions and tasks.
 - [Life cycles](life-cycles.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/life-cycles))
+  Receive and respond to life-cycle notifications.
 - [Using extended runtime sessions](using-extended-runtime-sessions.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions))
+  Create an extended runtime session that continues running your app after the user stops interacting with it.
 - [Interacting with Bluetooth peripherals during background app refresh](interacting-with-bluetooth-peripherals-during-background-app-refresh.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh))
+  Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 
 
 ---

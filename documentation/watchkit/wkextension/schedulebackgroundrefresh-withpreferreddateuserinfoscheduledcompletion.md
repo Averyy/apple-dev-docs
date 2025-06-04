@@ -1,6 +1,6 @@
 # scheduleBackgroundRefresh(withPreferredDate:userInfo:scheduledCompletion:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Schedules a background task to refresh the app’s data.
@@ -11,14 +11,15 @@ Schedules a background task to refresh the app’s data.
 ## Declaration
 
 ```swift
-@MainActor func scheduleBackgroundRefresh(withPreferredDate preferredFireDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: @escaping ((any Error)?) -> Void)
+@MainActor
+func scheduleBackgroundRefresh(withPreferredDate preferredFireDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: @escaping ((any Error)?) -> Void)
 ```
 
 ## Mentions
 
 - [Using background tasks](using-background-tasks.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/using-background-tasks))
 
-## Overview
+#### Discussion
 
 Call this method to update the contents of your app in the background. Background refresh tasks only trigger when the app is in the background. If the app is still running in the foreground at the scheduled time, the system ignores the task.
 
@@ -35,9 +36,13 @@ Use this task to update your application’s state. You can only schedule one ba
 ## See Also
 
 - [var applicationState: WKApplicationState](applicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/applicationstate))
+  The runtime state of the Watch app.
 - [enum WKApplicationState](wkapplicationstate.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationstate))
+  The running states of the Watch app.
 - [var isApplicationRunningInDock: Bool](isapplicationrunningindock.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isapplicationrunningindock))
+  A Boolean value that indicates whether the app is running in the dock.
 - [var isFrontmostTimeoutExtended: Bool](isfrontmosttimeoutextended.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkextension/isfrontmosttimeoutextended))
+  A Boolean value that determines whether the app extends its time as the frontmost app.
 
 
 ---

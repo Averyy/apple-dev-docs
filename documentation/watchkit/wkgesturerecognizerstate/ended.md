@@ -1,6 +1,6 @@
 # WKGestureRecognizerState.ended
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 **Availability**:

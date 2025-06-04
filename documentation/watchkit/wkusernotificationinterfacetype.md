@@ -1,6 +1,6 @@
 # WKUserNotificationInterfaceType
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The type of notification interface to display.

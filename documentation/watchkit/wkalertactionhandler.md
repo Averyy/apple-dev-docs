@@ -1,6 +1,6 @@
 # WKAlertActionHandler
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: typealias
 
 A block to perform in response to an action.
@@ -14,13 +14,14 @@ A block to perform in response to an action.
 typealias WKAlertActionHandler = () -> Void
 ```
 
-## Overview
+#### Discussion
 
 This block takes no parameters and returns no value. You use this type of block to perform a task when one of your actions is selected by the user. Your block does not need to dismiss the alert or action sheet itself. WatchKit automatically dismisses the sheet when the user taps in any of your action buttons.
 
 ## See Also
 
 - [enum WKAlertActionStyle](wkalertactionstyle.md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkalertactionstyle))
+  Constants indicating the style of the action button.
 
 
 ---

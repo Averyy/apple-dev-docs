@@ -1,6 +1,6 @@
 # WKBackgroundFetchResult
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The result of an attempt to download the content associated with a remote notification.
@@ -38,8 +38,11 @@ enum WKBackgroundFetchResult
 ## See Also
 
 - [func didRegisterForRemoteNotifications(withDeviceToken: Data)](didregisterforremotenotifications(withdevicetoken:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/didregisterforremotenotifications(withdevicetoken:)))
+  Tells the delegate that the app successfully registered with Apple Push Notification service (APNs).
 - [func didFailToRegisterForRemoteNotificationsWithError(any Error)](didfailtoregisterforremotenotificationswitherror(_:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/didfailtoregisterforremotenotificationswitherror(_:)))
+  Tells the delegate that Apple Push Notification service (APNs) can’t successfully complete the registration process.
 - [func didReceiveRemoteNotification([AnyHashable : Any], fetchCompletionHandler: (WKBackgroundFetchResult) -> Void)](didreceiveremotenotification(_:fetchcompletionhandler:).md) ([Apple Docs](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/didreceiveremotenotification(_:fetchcompletionhandler:)))
+  Tells the delegate that a background notification has arrived.
 
 
 ---
