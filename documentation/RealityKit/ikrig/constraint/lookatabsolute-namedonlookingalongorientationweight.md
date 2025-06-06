@@ -1,6 +1,6 @@
 # lookAtAbsolute(named:on:lookingAlong:orientationWeight:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Creates a constraint with only an orientational demand in absolute look-at mode.
@@ -21,8 +21,6 @@ static func lookAtAbsolute(named name: String, on jointName: String, lookingAlon
 #### Discussion
 
 > **Note**: `IKOrientationDemand.Mode.absoluteLookAt`
-
-`IKOrientationDemand.Mode.absoluteLookAt`
 
 ## Parameters
 

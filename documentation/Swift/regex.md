@@ -56,8 +56,6 @@ When you import the `RegexBuilder` module, you can also create `Regex` instances
 
 > **Note**:  Prior to Swift 6, you might need to write `#/myregex/#` instead of `/myregex/` when you make a regular expression using a literal. For more information, see [`Regular Expression Literals`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/lexicalstructure/#Regular-Expression-Literals) in  .
 
- Prior to Swift 6, you might need to write `#/myregex/#` instead of `/myregex/` when you make a regular expression using a literal. For more information, see [`Regular Expression Literals`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/lexicalstructure/#Regular-Expression-Literals) in  .
-
 ## Topics
 
 ### Structures
@@ -140,4 +138,4 @@ When you import the `RegexBuilder` module, you can also create `Regex` instances
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/regex)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/regex)*

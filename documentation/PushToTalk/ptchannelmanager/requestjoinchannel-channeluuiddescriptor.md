@@ -1,6 +1,6 @@
 # requestJoinChannel(channelUUID:descriptor:)
 
-**Framework**: Push to Talk  
+**Framework**: Pushtotalk  
 **Kind**: method
 
 Joins a channel with the identifier and descriptor you specify.
@@ -25,8 +25,6 @@ func requestJoinChannel(channelUUID: UUID, descriptor: PTChannelDescriptor)
 If successful, you receive a callback from [`channelManager(_:didJoinChannel:reason:)`](ptchannelmanagerdelegate/channelmanager(_:didjoinchannel:reason:).md) with `PTChannelJoinReasonProgrammaticRequest`; otherwise, you receive a failure reason through [`channelManager(_:failedToJoinChannel:error:)`](ptchannelmanagerdelegate/channelmanager(_:failedtojoinchannel:error:).md).
 
 > **Note**:  You can only join a channel in the foreground.
-
- You can only join a channel in the foreground.
 
 The framework uses shared system resources, so only one PTT channel can be active on the system at a time.
 

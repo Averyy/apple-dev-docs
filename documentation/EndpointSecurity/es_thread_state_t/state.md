@@ -1,6 +1,6 @@
 # state
 
-**Framework**: Endpoint Security  
+**Framework**: Endpointsecurity  
 **Kind**: property
 
 The machine-specific thread state.
@@ -20,8 +20,6 @@ var state: es_token_t
 This equivalent to [`thread_state_t`](https://developer.apple.com/documentation/kernel/thread_state_t) in Mach APIs.
 
 > **Note**:  The [`size`](es_token_t/size.md) subfield of the [`state`](es_thread_state_t/state.md) field is in bytes, not [`natural_t`](https://developer.apple.com/documentation/kernel/natural_t) units.
-
- The [`size`](es_token_t/size.md) subfield of the [`state`](es_thread_state_t/state.md) field is in bytes, not [`natural_t`](https://developer.apple.com/documentation/kernel/natural_t) units.
 
 ## See Also
 

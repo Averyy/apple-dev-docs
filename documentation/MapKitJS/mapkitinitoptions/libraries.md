@@ -1,6 +1,6 @@
 # libraries
 
-**Framework**: MapKit JS  
+**Framework**: Mapkitjs  
 **Kind**: property
 
 An array of libraries to load at initialization.
@@ -18,8 +18,6 @@ attribute string[] libraries;
 
 > **Note**:  The full bundle of MapKit JS ignores this option.
 
- The full bundle of MapKit JS ignores this option.
-
 MapKit JS divides its interfaces into libraries that you can specify when loading the framework. To optimize your app load time, pick only the interfaces you need:
 
 - `services` — All services interfaces (such as Search and Geocoder) and relevant data types.
@@ -35,4 +33,4 @@ You can set the libraries to load statically by defining them within script tag 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkitinitoptions/libraries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkitinitoptions/libraries)*

@@ -1,6 +1,6 @@
 # Creating and configuring win-back offers
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Configure win-back offers for your auto-renewable subscriptions with the App Store Connect API.
 
@@ -27,15 +27,11 @@ Your app and subscriptions need to be approved before you can create a win-back 
 
 > **Note**:  The `familySharable` field is editable only for auto-renewable subscriptions and non-consumable in-app purchases before the subscription or in-app purchase is approved by App Review.
 
- The `familySharable` field is editable only for auto-renewable subscriptions and non-consumable in-app purchases before the subscription or in-app purchase is approved by App Review.
-
 ##### Plan Your Win Back Offer
 
 Begin by determining the subscription that needs the win-back offer. Get the subscriptionID by calling List All Subscriptions for a Subscription Group. Next, look up the price points you want in your win-back offer for your subscription by using List All Price Points for a Subscription. When you create your win-back offer, you choose the territories where it is available and prices for those territories, after creation you cannot change the territory availability or prices.
 
 > 💡 **Tip**:  It is helpful to filter by territory when looking up price points. Use includes and filters like this: `v1/subscriptions/id/pricePoints?include=territory&filter[territory]=CAN`
-
- It is helpful to filter by territory when looking up price points. Use includes and filters like this: `v1/subscriptions/id/pricePoints?include=territory&filter[territory]=CAN`
 
 When setting up your win-back offer, a large part of configuration is determining eligibility. This list details the eligibility parameters available:
 
@@ -50,8 +46,6 @@ When setting up your win-back offer, a large part of configuration is determinin
 After you plan your win-back offer, you can create it by using Create a win-back offer with a payload. For more information about each attribute in this payload, see [`WinBackOfferCreateRequest.Data.Attributes`](winbackoffercreaterequest/data-data.dictionary/attributes-data.dictionary.md).
 
 > ❗ **Important**:  Use a unique referenceName and offerId that you have not used for a promotional offer, offer code, or introductory offer, when you create your win-back offer.
-
- Use a unique referenceName and offerId that you have not used for a promotional offer, offer code, or introductory offer, when you create your win-back offer.
 
 Here’s an example request:
 
@@ -190,4 +184,4 @@ You can review your win-back offers by using List win-back offers. Once you crea
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/creating-and-configuring-win-back-offers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-and-configuring-win-back-offers)*

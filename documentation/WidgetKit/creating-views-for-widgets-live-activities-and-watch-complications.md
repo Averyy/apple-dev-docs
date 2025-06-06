@@ -10,8 +10,6 @@ SwiftUI and WidgetKit power widgets, Live Activities, and watch complications. B
 
 > **Note**: [`Session 10027: Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10027)
 
-[`Session 10027: Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10027)
-
 If you’re new to using WidgetKit, see [`Developing a WidgetKit strategy`](developing-a-widgetkit-strategy.md).
 
 ##### Use System Font Styles
@@ -29,8 +27,6 @@ Widgets and watch complications offer limited space for content — especially o
 
 > **Note**: Test your widgets with every language you support, especially if you support languages that commonly have words with a lot of characters, such as German.
 
-Test your widgets with every language you support, especially if you support languages that commonly have words with a lot of characters, such as German.
-
 ##### Use Content Margins Instead of Safe Areas
 
 watchOS 9, iOS 16, iPadOS 16, macOS 13, and earlier use system-defined safe areas to keep content from getting too close to the edge of the widget, complication, or Live Activity. You likely don’t change the safe areas that the system defines. However, you might use the [`ignoresSafeArea(_:edges:)`](https://developer.apple.com/documentation/SwiftUI/View/ignoresSafeArea(_:edges:)) view modifier to extend content farther than the safe area.
@@ -43,8 +39,6 @@ If you use `ignoresSafeArea(_:edges:)`, follow these steps:
 2. For any content that you intend to remain inside system-defined content margins, make use of [`padding(_:)`](https://developer.apple.com/documentation/SwiftUI/View/padding(_:)) as needed.
 
 > 💡 **Tip**: To access the system’s default content margins for an environment, use the [`widgetContentMargins`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/widgetContentMargins) environment variable.
-
-To access the system’s default content margins for an environment, use the [`widgetContentMargins`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/widgetContentMargins) environment variable.
 
 ## See Also
 
@@ -62,4 +56,4 @@ To access the system’s default content margins for an environment, use the [`w
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/creating-views-for-widgets-live-activities-and-watch-complications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/creating-views-for-widgets-live-activities-and-watch-complications)*

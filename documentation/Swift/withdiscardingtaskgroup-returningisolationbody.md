@@ -47,8 +47,6 @@ Because the tasks you add to a group with this method are nonthrowing, those tas
 
 > **Note**: `withThrowingDiscardingTaskGroup(returning:body:)`
 
-`withThrowingDiscardingTaskGroup(returning:body:)`
-
 ## See Also
 
 - [struct Task](task.md)

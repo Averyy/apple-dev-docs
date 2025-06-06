@@ -30,8 +30,6 @@ This method returns `nil` if the container does not have a value associated with
 
 > **Note**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
 
-`DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
-
 ## Parameters
 
 - `type`: The type of value to decode.

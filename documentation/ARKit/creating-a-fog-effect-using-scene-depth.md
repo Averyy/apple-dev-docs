@@ -1,6 +1,6 @@
 # Creating a fog effect using scene depth
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Apply virtual fog to the physical environment.
 
@@ -90,8 +90,6 @@ blurFilter = MPSImageGaussianBlur(device: device, sigma: 5)
 
 > **Note**: To gain performance at the cost of precision, the app can add [`MPSKernelOptionsAllowReducedPrecision`](https://developer.apple.com/documentation/metalperformanceshaders/mpskerneloptions/mpskerneloptionsallowreducedprecision) to the blur filter’s [`options`](https://developer.apple.com/documentation/metalperformanceshaders/mpskernel/1618889-options), which reduces computation time by using `half` instead of `float`.
 
-To gain performance at the cost of precision, the app can add [`MPSKernelOptionsAllowReducedPrecision`](https://developer.apple.com/documentation/metalperformanceshaders/mpskerneloptions/mpskerneloptionsallowreducedprecision) to the blur filter’s [`options`](https://developer.apple.com/documentation/metalperformanceshaders/mpskernel/1618889-options), which reduces computation time by using `half` instead of `float`.
-
 MPS requires input and output images that define the source and destination pixel data for the filter operation.
 
 ```swift
@@ -106,8 +104,6 @@ blur.encode(commandBuffer: commandBuffer, sourceImage: inputImage, destinationIm
 ```
 
 > **Note**: In-place MPS operations can save time, memory, and power. Since in-place MPS requires fallback code for devices that don’t support it, this sample project doesn’t use it. For more information on in-place operations, see [`Image Filters`](https://developer.apple.com/documentation/metalperformanceshaders/image_filters).
-
-In-place MPS operations can save time, memory, and power. Since in-place MPS requires fallback code for devices that don’t support it, this sample project doesn’t use it. For more information on in-place operations, see [`Image Filters`](https://developer.apple.com/documentation/metalperformanceshaders/image_filters).
 
 #### Visualize the Blurred Depth to Create Fog
 
@@ -235,4 +231,4 @@ This sample uses the color red to identify parts of the scene in which depth con
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/creating-a-fog-effect-using-scene-depth)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/creating-a-fog-effect-using-scene-depth)*

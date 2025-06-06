@@ -1,6 +1,6 @@
 # PersistentIdentifier
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: struct
 
 A type that describes the aggregate identity of a SwiftData model.
@@ -23,8 +23,6 @@ struct PersistentIdentifier
 #### Overview
 
 > **Note**: Decoded [`PersistentIdentifier`](persistentidentifier.md) and identifiers created by the [`DefaultStore`](defaultstore.md) are not considered equivalent.
-
-Decoded [`PersistentIdentifier`](persistentidentifier.md) and identifiers created by the [`DefaultStore`](defaultstore.md) are not considered equivalent.
 
 ## Topics
 
@@ -78,4 +76,4 @@ Decoded [`PersistentIdentifier`](persistentidentifier.md) and identifiers create
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/persistentidentifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/persistentidentifier)*

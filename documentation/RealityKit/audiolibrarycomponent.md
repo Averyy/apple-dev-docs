@@ -1,6 +1,6 @@
 # AudioLibraryComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A container for audio resources that you can look up by user-defined names.
@@ -23,8 +23,6 @@ struct AudioLibraryComponent
 `AudioLibraryComponent` serves as a container for audio resources, so that you can store loaded audio resources and associate them with an entity for playback using user-defined names. You may use any [`AudioResource`](audioresource.md) type, such as [`AudioFileResource`](audiofileresource.md) or [`AudioFileGroupResource`](audiofilegroupresource.md).
 
 > **Note**: In memory, you can also use [`AudioBufferResource`](audiobufferresource.md), but this type doesn’t support serializing to disk or sharing via network.
-
-In memory, you can also use [`AudioBufferResource`](audiobufferresource.md), but this type doesn’t support serializing to disk or sharing via network.
 
 Below is an example of how you can set this component in code:
 
@@ -74,8 +72,6 @@ robotEntity.playAudio(audioLibraryComponent.resources["Walk"]!)
 ```
 
 > **Note**: You can create a component using code, or add it to your entity using tools such as Reality Composer Pro.
-
-You can create a component using code, or add it to your entity using tools such as Reality Composer Pro.
 
 In Reality Composer Pro, you can add an `AudioLibraryComponent` to an entity and then add audio resources to it for easy access to those resources by name. The system automatically loads the audio resources for you when you search for this component.
 
@@ -131,4 +127,4 @@ entity.playAudio(audioResource)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/audiolibrarycomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/audiolibrarycomponent)*

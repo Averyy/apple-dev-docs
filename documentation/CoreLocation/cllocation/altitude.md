@@ -1,6 +1,6 @@
 # altitude
 
-**Framework**: Core Location  
+**Framework**: Corelocation  
 **Kind**: property
 
 The altitude above mean sea level associated with a location, measured in meters.
@@ -32,8 +32,6 @@ See [`ellipsoidalAltitude`](cllocation/ellipsoidalaltitude.md) if your applicati
 
 > **Note**:  In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 
- In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
-
 ## See Also
 
 - [var coordinate: CLLocationCoordinate2D](cllocation/coordinate.md)
@@ -52,4 +50,4 @@ See [`ellipsoidalAltitude`](cllocation/ellipsoidalaltitude.md) if your applicati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/cllocation/altitude)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/cllocation/altitude)*

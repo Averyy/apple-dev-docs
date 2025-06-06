@@ -1,6 +1,6 @@
 # Presenting the suggestions picker and processing a selection
 
-**Framework**: Journaling Suggestions
+**Framework**: Journalingsuggestions
 
 Display the journaling suggestions picker and process a suggestion that someone chooses.
 
@@ -23,8 +23,6 @@ Adopting Journaling Suggestions delivers an enhanced privacy experience in your 
 When your app attempts to display the picker for the first time, a sheet appears that introduces Journaling Suggestions. If the person taps Turn On Journaling Suggestions, the picker displays, and includes an information privacy banner. The banner explains that your app only has access to the suggestions the person chooses to write about or saves to the app. The person can tap the X to close the banner, or they can tap Learn More, which presents a sheet that goes into more detail about Private Access.
 
 > **Note**: The Journaling Suggestions consent sheet displays once per device, so it doesn’t appear if the person already viewed it, either by launching Journal, or by launching another app that uses Journaling Suggestions.
-
-The Journaling Suggestions consent sheet displays once per device, so it doesn’t appear if the person already viewed it, either by launching Journal, or by launching another app that uses Journaling Suggestions.
 
 Suggestion data requires careful handling. To further preserve user privacy, follow the advice outlined in the [`Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/programs/apple-developer-program-license-agreement/#sensitive-content-analysis-framework).
 
@@ -109,8 +107,6 @@ The code displays the suggestion title, followed by a list of images that the pe
 
 > **Note**: A person can control the types of suggestions available in the picker by tapping Customize in the consent sheet, or by adjusting Privacy & Security settings for Journaling Suggestions in the Settings app.
 
-A person can control the types of suggestions available in the picker by tapping Customize in the consent sheet, or by adjusting Privacy & Security settings for Journaling Suggestions in the Settings app.
-
 When your app parses a selected suggestion’s details, it organizes that information to serve as a base for creative expression. A journaling app, for example, might list the selected images in a journal entry.
 
 ## See Also
@@ -121,4 +117,4 @@ When your app parses a selected suggestion’s details, it organizes that inform
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/journalingsuggestions/presenting-the-suggestions-picker-and-processing-a-selection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/JournalingSuggestions/presenting-the-suggestions-picker-and-processing-a-selection)*

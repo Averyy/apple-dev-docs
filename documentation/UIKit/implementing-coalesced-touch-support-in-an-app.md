@@ -1,6 +1,6 @@
 # Implementing coalesced touch support in an app
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Learn how to create a simple app that handles coalesced touches.
 
@@ -129,11 +129,9 @@ func addSamples(for touches: [UITouch]) {
 
 > **Note**:  When capturing drawing input from Apple Pencil, you can use the [`preciseLocation(in:)`](uitouch/preciselocation(in:).md) method instead of the [`location(in:)`](uitouch/location(in:)-8rd36.md) method to get more precise touch information. Use the [`preciseLocation(in:)`](uitouch/preciselocation(in:).md) method only for capturing drawing-related input. For general interactions with your interface, continue to get the touch location using the [`location(in:)`](uitouch/location(in:)-8rd36.md) method.
 
- When capturing drawing input from Apple Pencil, you can use the [`preciseLocation(in:)`](uitouch/preciselocation(in:).md) method instead of the [`location(in:)`](uitouch/location(in:)-8rd36.md) method to get more precise touch information. Use the [`preciseLocation(in:)`](uitouch/preciselocation(in:).md) method only for capturing drawing-related input. For general interactions with your interface, continue to get the touch location using the [`location(in:)`](uitouch/location(in:)-8rd36.md) method.
-
 The remaining methods of the `DrawingView` class take the touch samples and turn them into the rendered output. The app’s Clear button releases the view’s current `StrokeCollection` object and creates a new one.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/implementing-coalesced-touch-support-in-an-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/implementing-coalesced-touch-support-in-an-app)*

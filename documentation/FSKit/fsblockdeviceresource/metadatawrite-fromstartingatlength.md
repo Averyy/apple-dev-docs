@@ -1,6 +1,6 @@
 # metadataWrite(from:startingAt:length:)
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: method
 
 Synchronously writes file system metadata from a buffer to the resource.
@@ -23,8 +23,6 @@ For the write to succeed, requests must conform to any transfer requirements of 
 This method doesn’t support partial writing of metadata.
 
 > **Note**: Any error encountered while reading data.
-
-Any error encountered while reading data.
 
 ## Parameters
 

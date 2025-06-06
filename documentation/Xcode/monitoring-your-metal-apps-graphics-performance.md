@@ -49,8 +49,6 @@ You can also optionally enable the output of per-frame statistics to the console
 
 > **Note**: You need to select both the Show Graphics Overview and the Log Graphics Overview options to output per-frame statistics.
 
-You need to select both the Show Graphics Overview and the Log Graphics Overview options to output per-frame statistics.
-
 Then, as your app is running, once per second (or more frequently at high present rates due to vsync-off or high-refresh and VRR displays), the HUD writes data in the following format to the console:
 
 ```None
@@ -88,8 +86,6 @@ The Metal Performance HUD appears for apps you build and install yourself to you
 
 > **Note**: Your device needs to have a development provisioning profile for the Developer options to appear in the Settings app.
 
-Your device needs to have a development provisioning profile for the Developer options to appear in the Settings app.
-
 The following screenshot shows the options in iOS:
 
 ![A screenshot of the Developer settings in iOS, highlighting the toggles to enable the Metal Performance HUD overlay and logging.](https://docs-assets.developer.apple.com/published/c1888ecc421bf8b22b981a82632e7eca/gputools-runtime-hud-settings-iOS%402x.png)
@@ -110,4 +106,4 @@ The following screenshot shows the options in tvOS:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/monitoring-your-metal-apps-graphics-performance)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/monitoring-your-metal-apps-graphics-performance)*

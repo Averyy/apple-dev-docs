@@ -1,6 +1,6 @@
 # static
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 Omits reporting collisions with static collision objects.
@@ -23,8 +23,6 @@ static let `static`: CollisionComponent.CollisionOptions
 When a collision object is static, it doesn’t report collisions with static collision objects, only with dynamic collision objects. In contrast, when a collision object is dynamic (not static), it reports collisions with all other collision objects.
 
 > **Note**: Static collision objects are more light-weight and improve performance. They should be used where collisions are tested against these objects, not between these objects.
-
-Static collision objects are more light-weight and improve performance. They should be used where collisions are tested against these objects, not between these objects.
 
 
 ---

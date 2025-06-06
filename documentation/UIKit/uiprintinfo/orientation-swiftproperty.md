@@ -1,6 +1,6 @@
 # orientation
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The orientation of the printed content, portrait or landscape.
@@ -23,8 +23,6 @@ var orientation: UIPrintInfo.Orientation { get set }
 An application can set this property to a value thats appropriate to the printable content or it can put up a user interface that enables users to pick the printing orientation. The default value is [`UIPrintInfo.Orientation.portrait`](uiprintinfo/orientation-swift.enum/portrait.md). See the descriptions of the [`UIPrintInfo.Orientation`](uiprintinfo/orientation-swift.enum.md) constants for more information.
 
 > **Note**:  UIKit ignores this property when printable content is assigned to the `printingItem` or `printingItems` properties of the shared [`UIPrintInteractionController`](uiprintinteractioncontroller.md) object. It determines the orientation based on the type of content.
-
- UIKit ignores this property when printable content is assigned to the `printingItem` or `printingItems` properties of the shared [`UIPrintInteractionController`](uiprintinteractioncontroller.md) object. It determines the orientation based on the type of content.
 
 ## See Also
 

@@ -30,8 +30,6 @@ For details on how localized resources are found, read [`The Bundle Search Patte
 
 > **Note**:  This method is best suited only for the occasional retrieval of resource files. In most cases where you need to retrieve bundle resources, it is preferable to use the `NSBundle` instance methods instead.
 
- This method is best suited only for the occasional retrieval of resource files. In most cases where you need to retrieve bundle resources, it is preferable to use the `NSBundle` instance methods instead.
-
 ## Parameters
 
 - `name`: If you specify  , the method returns the first resource file it finds with the specified extension.

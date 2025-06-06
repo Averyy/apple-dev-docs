@@ -1,6 +1,6 @@
 # NSView.Invalidating
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: struct
 
 A property wrapper that notifies the system that a property value change has invalidated an aspect of the containing view.
@@ -36,8 +36,6 @@ Functions such as `setNeedsDisplay` and `setNeedsLayout` perform changes on the 
 
 > **Note**:  You only use `NSView.Invalidating` on subclasses of `NSView`.
 
- You only use `NSView.Invalidating` on subclasses of `NSView`.
-
 ## Topics
 
 ### Creating an Invalidating Property Wrapper
@@ -70,4 +68,4 @@ Functions such as `setNeedsDisplay` and `setNeedsLayout` perform changes on the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview/invalidating)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview/invalidating)*

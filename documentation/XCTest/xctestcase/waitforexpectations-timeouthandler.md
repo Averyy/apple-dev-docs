@@ -18,13 +18,7 @@ This method creates a point of synchronization in the flow of a test. Only one [
 
 > ❗ **Important**:  This method waits on expectations created with [`XCTestCase`](xctestcase.md)‘s convenience methods only. This method  wait on expectations created manually through initializers on [`XCTestExpectation`](xctestexpectation.md) or its subclasses. To wait for manually created expectations, use the [`wait(for:timeout:)`](xctestcase/wait(for:timeout:).md) or [`wait(for:timeout:enforceOrder:)`](xctestcase/wait(for:timeout:enforceorder:).md) methods, or the corresponding methods on [`XCTWaiter`](xctwaiter.md), passing an explicit list of expectations.
 
- This method waits on expectations created with [`XCTestCase`](xctestcase.md)‘s convenience methods only. This method  wait on expectations created manually through initializers on [`XCTestExpectation`](xctestexpectation.md) or its subclasses.
-
-To wait for manually created expectations, use the [`wait(for:timeout:)`](xctestcase/wait(for:timeout:).md) or [`wait(for:timeout:enforceOrder:)`](xctestcase/wait(for:timeout:enforceorder:).md) methods, or the corresponding methods on [`XCTWaiter`](xctwaiter.md), passing an explicit list of expectations.
-
 > **Note**:  Clients shouldn’t manipulate the run loop while using this API.
-
- Clients shouldn’t manipulate the run loop while using this API.
 
 ## Parameters
 

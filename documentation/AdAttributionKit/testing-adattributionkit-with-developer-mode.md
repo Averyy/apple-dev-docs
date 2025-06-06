@@ -1,14 +1,12 @@
 # Testing ad attributions with Developer Mode
 
-**Framework**: AdAttributionKit
+**Framework**: Adattributionkit
 
 Reduce the time-window for ad attributions and inspect postbacks using a proxy during testing.
 
 #### Overview
 
 > ❗ **Important**: For devices running OS versions earlier than iOS 18, use the AdAttributionKit testing profile on your test device. For more information, see [`Testing ad attributions with a downloaded profile`](testing-ad-attributions-with-a-downloaded-profile.md).
-
-For devices running OS versions earlier than iOS 18, use the AdAttributionKit testing profile on your test device. For more information, see [`Testing ad attributions with a downloaded profile`](testing-ad-attributions-with-a-downloaded-profile.md).
 
 In iOS 18 and later, you can reduce the time-window for receiving AdAttributionKit postbacks by enabling Developer Mode on your test device. Developer Mode is compatible with both AdAttributionKit and SKAdNetwork. For more information, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device).
 
@@ -17,8 +15,6 @@ After enabling Developer Mode, access the developer settings in Settings on your
 ![An image of the iOS Developer Mode settings that shows several test settings, including the switch that enables development testing for AdAttributionKit.](https://docs-assets.developer.apple.com/published/eb124a690f0cb16a89a1e285acb57f65/ad-attribution-testing%402x.png)
 
 > ❗ **Important**: Enabling Developer Mode reduces the privacy protections the system provides. Use this mode only during development or testing. This setting automatically turns off after two weeks.
-
-Enabling Developer Mode reduces the privacy protections the system provides. Use this mode only during development or testing. This setting automatically turns off after two weeks.
 
 To test ad attributions, you need to log in to the device with a production Apple ID. AdAttributionKit doesn’t support sandbox Apple IDs.
 
@@ -37,8 +33,6 @@ AdAttributionKit and SKAdNetwork 4 create a winning set of three development pos
 You can test development postbacks using the production time-windows, or reduce their time-windows by enabling Developer Mode.
 
 > **Note**: The system prioritizes production impressions over development impressions for any conversion event. If production and development impressions are present during a conversion, the system ignores development impressions.
-
-The system prioritizes production impressions over development impressions for any conversion event. If production and development impressions are present during a conversion, the system ignores development impressions.
 
 ##### Verify Development Postbacks
 
@@ -73,4 +67,4 @@ When you enable Developer Mode, the AdAttributionKit postbacks that the device s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/testing-adattributionkit-with-developer-mode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/testing-adattributionkit-with-developer-mode)*

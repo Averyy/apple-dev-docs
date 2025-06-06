@@ -1,6 +1,6 @@
 # isCameraEnabled
 
-**Framework**: ReplayKit  
+**Framework**: Replaykit  
 **Kind**: property
 
 A Boolean value that indicates whether the camera is currently enabled.
@@ -25,8 +25,6 @@ The default value of this property is [`false`](https://developer.apple.com/docu
 You can use this property for key-value observing.
 
 > **Note**:  In your app’s `Info.plist` file, you must set the `Privacy - Camera Usage Description` key with a string that describes how your app uses the camera footage.
-
- In your app’s `Info.plist` file, you must set the `Privacy - Camera Usage Description` key with a string that describes how your app uses the camera footage.
 
 ## See Also
 

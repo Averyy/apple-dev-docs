@@ -10,8 +10,6 @@ Your app can use multiple GPUs on an Intel-based Mac, including any built-in and
 
 > **Note**:  Mac computers with Apple silicon have a single, high-performance, and energy-efficient GPU.
 
- Mac computers with Apple silicon have a single, high-performance, and energy-efficient GPU.
-
 ##### Get a List of Gpu Devices
 
 Your app can get an array of [`MTLDevice`](mtldevice.md) instances, each of which represents an available GPU, by calling the [`MTLCopyAllDevices()`](mtlcopyalldevices().md) function.
@@ -21,8 +19,6 @@ However, that function provides a list of GPUs that are available at that moment
 Metal calls your handler to tell your app when the system adds or removes an [`MTLDevice`](mtldevice.md) from the system.
 
 > **Note**:  Metal calls your app’s handler when a device may change its state in the future, such as when a person makes a safe disconnect request. For more information, see [`Handling External GPU Additions and Removals`](handling-external-gpu-additions-and-removals.md).
-
- Metal calls your app’s handler when a device may change its state in the future, such as when a person makes a safe disconnect request. For more information, see [`Handling External GPU Additions and Removals`](handling-external-gpu-additions-and-removals.md).
 
 Your app can deregister its observer when it no longer needs GPU device updates from the system by calling the [`MTLRemoveDeviceObserver(_:)`](mtlremovedeviceobserver(_:).md) function.
 
@@ -54,8 +50,6 @@ In general, start with an integrated GPU (if the system has one) to conserve pow
 
 > 💡 **Tip**:  Your app could let a person choose which GPU your app uses for its workloads, especially if they attach an external GPU to their system.
 
- Your app could let a person choose which GPU your app uses for its workloads, especially if they attach an external GPU to their system.
-
 External GPUs typically have significant processing power but lower bandwidth compared to internal GPUs, which makes them a good choice for tasks that don’t require much memory bandwidth for each frame, including the following:
 
 - Rendering high-complexity graphics scenes
@@ -66,8 +60,6 @@ External GPUs typically have significant processing power but lower bandwidth co
 For more information about GPU memory bandwidth, see [`Adjusting for GPU Memory Bandwidth Tradeoffs`](adjusting-for-gpu-memory-bandwidth-tradeoffs.md).
 
 > **Note**:  A headless GPU is more suitable for compute processing than rendering graphics for a display because the GPU isn’t connected to a display.
-
- A headless GPU is more suitable for compute processing than rendering graphics for a display because the GPU isn’t connected to a display.
 
 ## See Also
 
@@ -89,4 +81,4 @@ For more information about GPU memory bandwidth, see [`Adjusting for GPU Memory 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/finding-multiple-gpus-on-an-intel-based-mac)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/finding-multiple-gpus-on-an-intel-based-mac)*

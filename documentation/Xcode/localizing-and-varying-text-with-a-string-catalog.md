@@ -16,8 +16,6 @@ Use string catalogs to host translations, configure pluralization messages for d
 
 > **Note**: Session 10155: [`Discover String Catalogs`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10155)
 
-Session 10155: [`Discover String Catalogs`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10155)
-
 ##### Localize Your Apps Text
 
 Before you can translate text, you need to make it localizable. This involves wrapping the user-facing strings in your app in constructs that make them translatable.
@@ -116,8 +114,6 @@ When you add a plural variant, the system does the following:
 
 > **Note**: If you add pluralization to the source language (English in this case), the system propagates the variation to the other languages, if possible. If you add pluralization to a nonsource language, that change affects only that language.
 
-If you add pluralization to the source language (English in this case), the system propagates the variation to the other languages, if possible. If you add pluralization to a nonsource language, that change affects only that language.
-
 Click the text field in the Language column for each variation of that string key, and enter the text for the system to use when that plural displays.
 
 When you run the app, the pluralized variants update based on the value of the interpolated string.
@@ -161,4 +157,4 @@ You can also navigate to Settings on the simulated device and change the device 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/localizing-and-varying-text-with-a-string-catalog)*

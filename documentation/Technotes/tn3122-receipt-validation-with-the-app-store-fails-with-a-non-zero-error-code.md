@@ -44,8 +44,6 @@ If `exclude-old-transactions` is absent in the JSON object, then the default val
 
 > ❗ **Important**: On your server, be sure to send your JSON object as the payload of an HTTP POST request for receipt validation with the App Store.
 
-On your server, be sure to send your JSON object as the payload of an HTTP POST request for receipt validation with the App Store.
-
 #### Validation Request Was Posted to the Incorrect Url
 
 Use the sandbox URL to verify receipts when testing in the sandbox and while your app is in review:
@@ -63,8 +61,6 @@ https://buy.itunes.apple.com/verifyReceipt
 First, verify your receipt with the production URL. If you receive a `21007` status code, as outlined in [`verifyReceipt`](https://developer.apple.comhttps://developer.apple.com/documentation/appstorereceipts/verifyreceipt), verify with the sandbox URL instead.
 
 > **Note**: TestFlight uses the sandbox environment for in-app purchases. See [`Testing at All Stages of Development with Xcode and Sandbox`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/in-app_purchase/testing_at_all_stages_of_development_with_xcode_and_sandbox) for details.
-
-TestFlight uses the sandbox environment for in-app purchases. See [`Testing at All Stages of Development with Xcode and Sandbox`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/in-app_purchase/testing_at_all_stages_of_development_with_xcode_and_sandbox) for details.
 
 #### Validate the Receipt Locally
 
@@ -145,4 +141,4 @@ To validate your receipt in the production environment and limit the content of 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3122-receipt-validation-with-the-app-store-fails-with-a-non-zero-error-code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3122-receipt-validation-with-the-app-store-fails-with-a-non-zero-error-code)*

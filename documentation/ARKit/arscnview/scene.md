@@ -1,6 +1,6 @@
 # scene
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: property
 
 The SceneKit scene to be displayed in the view.
@@ -21,8 +21,6 @@ var scene: SCNScene { get set }
 
 > **Note**:  Unlike the parent [`SCNView`](https://developer.apple.com/documentation/SceneKit/SCNView) class, an [`ARSCNView`](arscnview.md) object requires a non-`nil` scene to display.
 
- Unlike the parent [`SCNView`](https://developer.apple.com/documentation/SceneKit/SCNView) class, an [`ARSCNView`](arscnview.md) object requires a non-`nil` scene to display.
-
 ## See Also
 
 - [Providing 3D Virtual Content with SceneKit](providing-3d-virtual-content-with-scenekit.md)
@@ -33,4 +31,4 @@ var scene: SCNScene { get set }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arscnview/scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arscnview/scene)*

@@ -1,6 +1,6 @@
 # showsBuildings
 
-**Framework**: MapKit  
+**Framework**: Mapkit  
 **Kind**: property
 
 A Boolean value that indicates whether the map displays extruded building information on supported map types.
@@ -23,8 +23,6 @@ var showsBuildings: Bool { get set }
 #### Discussion
 
 > **Note**:  In iOS 16 and macOS 13, and later, when overlay content is present, this property has no effect and the map renders buildings and trees as transparent. This enables content to be clearly visible while preserving the context of the surroundings.
-
- In iOS 16 and macOS 13, and later, when overlay content is present, this property has no effect and the map renders buildings and trees as transparent. This enables content to be clearly visible while preserving the context of the surroundings.
 
 When this property is [`true`](https://developer.apple.com/documentation/swift/true) and the camera has a pitch angle greater than zero, the map extrudes buildings so that they extend above the map plane, creating a 3D effect. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
 

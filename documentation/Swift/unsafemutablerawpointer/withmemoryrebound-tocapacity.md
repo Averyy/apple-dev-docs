@@ -43,11 +43,7 @@ After executing `body`, this method rebinds memory back to its original binding 
 
 > **Note**: The region of memory starting at this pointer must match the alignment of `T` (as reported by `MemoryLayout<T>.alignment`). That is, `Int(bitPattern: self) % MemoryLayout<T>.alignment` must equal zero.
 
-The region of memory starting at this pointer must match the alignment of `T` (as reported by `MemoryLayout<T>.alignment`). That is, `Int(bitPattern: self) % MemoryLayout<T>.alignment` must equal zero.
-
 > **Note**: The region of memory starting at this pointer may have been bound to a type. If that is the case, then `T` must be layout compatible with the type to which the memory has been bound. This requirement does not apply if the region of memory has not been bound to any type.
-
-The region of memory starting at this pointer may have been bound to a type. If that is the case, then `T` must be layout compatible with the type to which the memory has been bound. This requirement does not apply if the region of memory has not been bound to any type.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # min(by:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
@@ -42,8 +42,6 @@ print(leastHue)
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

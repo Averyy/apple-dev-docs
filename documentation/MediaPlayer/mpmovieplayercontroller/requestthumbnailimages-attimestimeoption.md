@@ -1,6 +1,6 @@
 # requestThumbnailImages(atTimes:timeOption:)
 
-**Framework**: Media Player  
+**Framework**: Mediaplayer  
 **Kind**: method
 
 Captures one or more thumbnail images asynchronously from the current movie.
@@ -21,8 +21,6 @@ func requestThumbnailImages(atTimes playbackTimes: [Any]!, timeOption option: MP
 This method processes each thumbnail request separately and asynchronously. When the results for a single image arrive, the movie player posts a [`MPMoviePlayerThumbnailImageRequestDidFinishNotification`](mpmovieplayerthumbnailimagerequestdidfinishnotification.md) notification with the results for that image. Notifications are posted regardless of whether the image capture was successful or failed. You should register for this notification prior to calling this method.
 
 > **Note**:  This method is not not called when the source URL is an HTTP Live Streaming (HLS) content source. See [`HTTP Live Streaming Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008332).
-
- This method is not not called when the source URL is an HTTP Live Streaming (HLS) content source. See [`HTTP Live Streaming Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008332).
 
 ## Parameters
 

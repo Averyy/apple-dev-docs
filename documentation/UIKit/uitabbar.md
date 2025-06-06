@@ -1,6 +1,6 @@
 # UITabBar
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
@@ -26,8 +26,6 @@ Typically, you use tab bars in conjunction with a [`UITabBarController`](uitabba
 You can configure tab bars programmatically or in Interface Builder. A [`UITabBarController`](uitabbarcontroller.md) object provides its own tab bar object and you must configure the object provided to you. When creating a tab bar programmatically, use the [`init(frame:)`](uiview/init(frame:).md) method or another view initializer method to set its initial configuration. Use the methods of this class to configure the appearance of the tab bar. For tab bars you create yourself, you also use the methods of this class to specify the items displayed by the tab bar.
 
 > **Note**:  The [`UITabBar`](uitabbar.md) class and [`UIToolbar`](uitoolbar.md) classes have similar appearances but different purposes. Use tab bars to convey and change your app’s mode. Use toolbars to present the user with a set of actions that are relevant to the currently presented content.
-
- The [`UITabBar`](uitabbar.md) class and [`UIToolbar`](uitoolbar.md) classes have similar appearances but different purposes. Use tab bars to convey and change your app’s mode. Use toolbars to present the user with a set of actions that are relevant to the currently presented content.
 
 A tab bar reports selections and user customizations to its delegate object. For tab bars you create yourself, use the delegate to respond to selections or to the addition, removal, or reordering of items in the tab bar. (A [`UITabBarController`](uitabbarcontroller.md) object acts as the delegate for the tab bar it manages.) For more information on implementing a tab bar delegate, see [`UITabBarDelegate`](uitabbardelegate.md).
 
@@ -177,4 +175,4 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitabbar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitabbar)*

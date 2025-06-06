@@ -1,6 +1,6 @@
 # finishRoute(with:metadata:completion:)
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: method
 
 Creates, saves, and associates the route with the provided workout.
@@ -28,8 +28,6 @@ func finishRoute(with workout: HKWorkout, metadata: [String : Any]?) async throw
 Call this method after adding all the route data to the builder. The builder creates the route and saves it to the HealthKit store. It also associates the route with the provided workout. You cannot associate the route with another workout.
 
 > **Note**:  You must call [`finishRoute(with:metadata:completion:)`](hkworkoutroutebuilder/finishroute(with:metadata:completion:).md) before the system deallocates the builder. Failure to do so results in a loss of all route data added to the builder.
-
- You must call [`finishRoute(with:metadata:completion:)`](hkworkoutroutebuilder/finishroute(with:metadata:completion:).md) before the system deallocates the builder. Failure to do so results in a loss of all route data added to the builder.
 
 This method fails if you haven’t added any location data to the builder. The completion handler returns an error and `nil` for the route.
 

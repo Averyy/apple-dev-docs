@@ -1,6 +1,6 @@
 # CFURLSetResourcePropertyForKey(_:_:_:_:)
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: func
 
 Sets the URL’s resource property for a given key to a given value.
@@ -31,8 +31,6 @@ This function synchronously writes the new resource value out to disk. Attempts 
 If an error occurs, this method returns `false` and populates the object pointer referenced by `error` with additional information.
 
 > **Note**:  This method applies only to URLs for file system resources.
-
- This method applies only to URLs for file system resources.
 
 ## Parameters
 

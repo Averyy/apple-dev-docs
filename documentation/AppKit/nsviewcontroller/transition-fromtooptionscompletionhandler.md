@@ -1,6 +1,6 @@
 # transition(from:to:options:completionHandler:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Performs a transition between two sibling child view controllers of the view controller.
@@ -22,8 +22,6 @@ Use this method to transition between sibling child view controllers owned by a 
 This method adds the view in the `toViewController` view controller to the superview of the view in the `fromViewController` view controller. Likewise, this method removes the `fromViewController` view from the parent view controller’s view hierarchy at the appropriate time. It is important to allow this method to add and remove these views.
 
 > **Note**:  The receiver of this method must be the parent view controller of the `fromViewController` and `toViewController` view controllers, or else this method raises an exception.
-
- The receiver of this method must be the parent view controller of the `fromViewController` and `toViewController` view controllers, or else this method raises an exception.
 
 To create a parent/child relationship between view controllers, use the [`addChild(_:)`](nsviewcontroller/addchild(_:).md) method or the [`insertChild(_:at:)`](nsviewcontroller/insertchild(_:at:).md) method.
 

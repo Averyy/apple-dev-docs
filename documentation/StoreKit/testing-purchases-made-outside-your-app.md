@@ -1,6 +1,6 @@
 # Testing purchases made outside your app
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Verify that your app receives and handles transactions that occur outside your app, such as subscription purchases, renewals, and offer and promo code redemptions.
 
@@ -26,8 +26,6 @@ To create a transaction outside your app for the testing environment, first open
 Next, you need the product ID for a product you set up in App Store Connect and your app’s bundle ID. If you’re testing win-back offers, see [`Testing win-back offers in the sandbox environment`](testing-win-back-offers-in-the-sandbox-environment.md) for further steps.
 
 > **Note**:  Changes that you make to product metadata in App Store Connect can take up to one hour to appear in the sandbox environment.
-
- Changes that you make to product metadata in App Store Connect can take up to one hour to appear in the sandbox environment.
 
 ##### Simulate a Purchase Outside Your App
 
@@ -68,4 +66,4 @@ Restart your app. The purchase history for the Sandbox Apple Account is empty an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-purchases-made-outside-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-purchases-made-outside-your-app)*

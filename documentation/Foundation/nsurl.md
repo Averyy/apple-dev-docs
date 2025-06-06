@@ -40,8 +40,6 @@ The [`NSURL`](nsurl.md) class is “toll-free bridged” with its Core Foundatio
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URL`](url.md) structure, which bridges to the [`NSURL`](nsurl.md) class. For more information about value types, see [`Classes and Structures`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html#//apple_ref/doc/uid/TP40014097-CH13) in [`The Swift Programming Language (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097) and [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
- The Swift overlay to the Foundation framework provides the [`URL`](url.md) structure, which bridges to the [`NSURL`](nsurl.md) class. For more information about value types, see [`Classes and Structures`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html#//apple_ref/doc/uid/TP40014097-CH13) in [`The Swift Programming Language (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097) and [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
 ##### Structure of a Url
 
 An [`NSURL`](nsurl.md) object is composed of two parts—a potentially `nil` base URL and a string that is resolved relative to the base URL. An [`NSURL`](nsurl.md) object is considered absolute if its string part is fully resolved without a base; all other URLs are considered relative.
@@ -76,10 +74,6 @@ The [`NSURL`](nsurl.md) class provides properties that let you examine each of t
 
 > ❗ **Important**:  For apps linked on or after iOS 17 and aligned OS versions, [`NSURL`](nsurl.md) parsing has updated from the obsolete RFC 1738/1808 parsing to the same [`RFC 3986`](https://developer.apple.comhttps://www.ietf.org/rfc/rfc3986.txt) parsing as [`NSURLComponents`](nsurlcomponents.md). This unifies the parsing behaviors of the `NSURL` and `NSURLComponents` APIs. Now, `NSURL` automatically percent- and IDNA-encodes invalid characters to help create a valid URL. To check if a `URLString` is strictly valid according to the RFC, use the new `[NSURL URLWithString:URLString encodingInvalidCharacters:NO]` method. This method leaves all characters as they are and returns `nil` if `URLString` is explicitly invalid.
 
- For apps linked on or after iOS 17 and aligned OS versions, [`NSURL`](nsurl.md) parsing has updated from the obsolete RFC 1738/1808 parsing to the same [`RFC 3986`](https://developer.apple.comhttps://www.ietf.org/rfc/rfc3986.txt) parsing as [`NSURLComponents`](nsurlcomponents.md). This unifies the parsing behaviors of the `NSURL` and `NSURLComponents` APIs. Now, `NSURL` automatically percent- and IDNA-encodes invalid characters to help create a valid URL.
-
-To check if a `URLString` is strictly valid according to the RFC, use the new `[NSURL URLWithString:URLString encodingInvalidCharacters:NO]` method. This method leaves all characters as they are and returns `nil` if `URLString` is explicitly invalid.
-
 For apps linked before iOS 17, the [`NSURL`](nsurl.md) class parses URLs according to [`RFC 1808`](https://developer.apple.comhttps://tools.ietf.org/html/rfc1808), [`RFC 1738`](https://developer.apple.comhttps://tools.ietf.org/html/rfc1738), and [`RFC 2732`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2732).
 
 ##### Bookmarks and Security Scope
@@ -102,8 +96,6 @@ If `startAccessingSecurityScopedResource` (or `CFUrLStartAccessingSecurityScoped
 
 > ⚠️ **Warning**:  If you fail to relinquish your access when you no longer need a file-system resource, your app leaks kernel resources. If sufficient kernel resources are leaked, your app loses its ability to add file-system locations to its sandbox, using Powerbox, security-scoped bookmarks, or similar APIs, until relaunched.
 
- If you fail to relinquish your access when you no longer need a file-system resource, your app leaks kernel resources. If sufficient kernel resources are leaked, your app loses its ability to add file-system locations to its sandbox, using Powerbox, security-scoped bookmarks, or similar APIs, until relaunched.
-
 ###### Security Scoped Urls and String Paths
 
 In a macOS app, when you copy a security-scoped URL, the copy has the security scope of the original. You gain access to the file-system resource (that the URL points to) just as you would with the original URL: by calling the [`startAccessingSecurityScopedResource()`](nsurl/startaccessingsecurityscopedresource().md) method (or its Core Foundation equivalent).
@@ -118,15 +110,7 @@ In macOS, you can set a dictionary of thumbnails using the [`setResourceValue(_:
 
 > **Note**:  Do not set the [`thumbnailDictionaryKey`](urlresourcekey/thumbnaildictionarykey.md) key directly. Modifying this key interferes with document tracking and can create duplicates of your document, as well as other possible problems. In iOS, use a [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) subclass to manage your file. Set the thumbnail by overriding the document’s [`fileAttributesToWrite(to:for:)`](https://developer.apple.com/documentation/UIKit/UIDocument/fileAttributesToWrite(to:for:)) method and returning a dictionary that contains the proper thumbnail keys (along with any other file attributes). In macOS, follow the instructions for creating thumbnails given in [`Quick Look Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Quicklook_Programming_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005020).
 
- Do not set the [`thumbnailDictionaryKey`](urlresourcekey/thumbnaildictionarykey.md) key directly. Modifying this key interferes with document tracking and can create duplicates of your document, as well as other possible problems.
-
-In iOS, use a [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) subclass to manage your file. Set the thumbnail by overriding the document’s [`fileAttributesToWrite(to:for:)`](https://developer.apple.com/documentation/UIKit/UIDocument/fileAttributesToWrite(to:for:)) method and returning a dictionary that contains the proper thumbnail keys (along with any other file attributes).
-
-In macOS, follow the instructions for creating thumbnails given in [`Quick Look Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Quicklook_Programming_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005020).
-
 > **Note**:  Although the thumbnail API is designed to support multiple image resolutions, currently it only supports 1024 x 1024 pixel thumbnails.
-
- Although the thumbnail API is designed to support multiple image resolutions, currently it only supports 1024 x 1024 pixel thumbnails.
 
 ## Topics
 
@@ -296,6 +280,8 @@ In macOS, follow the instructions for creating thumbnails given in [`Quick Look 
 ### Deprecated
 - [convenience init?(scheme: String, host: String?, path: String)](nsurl/init(scheme:host:path:).md)
   Initializes a newly created NSURL with a specified scheme, host, and path.
+### Initializers
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsurl/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 
@@ -322,4 +308,4 @@ In macOS, follow the instructions for creating thumbnails given in [`Quick Look 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsurl)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsurl)*

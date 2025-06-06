@@ -1,6 +1,6 @@
 # isLuminanceReduced
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 A Boolean value that indicates whether the display or environment currently requires reduced luminance.
@@ -42,8 +42,6 @@ In addition to the changes that you make, the system could also dim the display 
 
 > **Note**: On watchOS, the system typically sets this value to `true` when the user lowers their wrist, but the display remains on. Starting in watchOS 8, the system keeps your view visible on wrist down by default. If you want the system to blur the screen instead, as it did in earlier versions of watchOS, set the value for the [`WKSupportsAlwaysOnDisplay`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKSupportsAlwaysOnDisplay) key in your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file to `false`.
 
-On watchOS, the system typically sets this value to `true` when the user lowers their wrist, but the display remains on. Starting in watchOS 8, the system keeps your view visible on wrist down by default. If you want the system to blur the screen instead, as it did in earlier versions of watchOS, set the value for the [`WKSupportsAlwaysOnDisplay`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKSupportsAlwaysOnDisplay) key in your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file to `false`.
-
 ## See Also
 
 - [var displayScale: CGFloat](environmentvalues/displayscale.md)
@@ -60,4 +58,4 @@ On watchOS, the system typically sets this value to `true` when the user lowers 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentvalues/isluminancereduced)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentvalues/isluminancereduced)*

@@ -1,6 +1,6 @@
 # Adding Shortcuts for Wind Down
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Reveal your app’s shortcuts inside the Health app.
 
@@ -12,8 +12,6 @@ Reveal your app’s shortcuts inside the Health app.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [`10083: Integrate Your App with Wind Down`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10083/).
-
-This sample code project is associated with WWDC20 session [`10083: Integrate Your App with Wind Down`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10083/).
 
 ##### Configure the Sample Code Project
 
@@ -43,4 +41,4 @@ Once you run the sample project for the first time, shortcuts from the sample ar
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/adding-shortcuts-for-wind-down)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/adding-shortcuts-for-wind-down)*

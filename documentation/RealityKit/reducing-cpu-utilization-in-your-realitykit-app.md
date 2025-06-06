@@ -1,6 +1,6 @@
 # Reducing CPU Utilization in Your RealityKit App
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Target specific CPU metrics with adjustments to your app and its content.
 
@@ -21,8 +21,6 @@ RealityKit does this for you automatically to the extent that it can when you lo
 On the other hand, merging meshes may reduce opportunities for visibility culling and other optimizations, which can lead to increased GPU utilization. This is because while RealityKit avoids rendering off-screen meshes, it does render the entirety of any mesh that’s even partially visible. So consider carefully how you merge meshes. For example, it usually doesn’t make sense to merge two meshes that are physically separated by a large distance.
 
 > **Note**: While disabling certain effects primarily benefits GPU utilization, as described in [`Choose render effects carefully`](reducing-gpu-utilization-in-your-realitykit-app#Choose-render-effects-carefully.md), disabling these effects may also help reduce CPU render time. For modest gains, experiment by turning off shadows, HDR, motion blur, depth of field, and environment texturing.
-
-While disabling certain effects primarily benefits GPU utilization, as described in [`Choose render effects carefully`](reducing-gpu-utilization-in-your-realitykit-app#Choose-render-effects-carefully.md), disabling these effects may also help reduce CPU render time. For modest gains, experiment by turning off shadows, HDR, motion blur, depth of field, and environment texturing.
 
 ##### Improve Ecs Time By Flattening Your Assets
 
@@ -54,8 +52,6 @@ entity.synchronization = nil
 Within an entity, the system automatically synchronizes properties of all built-in components, as well the properties of custom components that adopt the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol. If you want to avoid synchronizing data for a particular custom component, skip the codable conformance.
 
 > **Note**: RealityKit only synchronizes component properties. It doesn’t synchronize any custom entity properties.
-
-RealityKit only synchronizes component properties. It doesn’t synchronize any custom entity properties.
 
 ##### Improve Audio Time By Reducing Audio Complexity
 
@@ -93,4 +89,4 @@ For more information about loading entities, see [`Loading entities from a file`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/reducing-cpu-utilization-in-your-realitykit-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/reducing-cpu-utilization-in-your-realitykit-app)*

@@ -14,8 +14,6 @@ Support advancements in SwiftUI accessibility to make your app accessible to eve
 
 > **Note**: This sample code project is associated with WWDC24 session 10073: [`Catch up on accessibility in SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10073/).
 
-This sample code project is associated with WWDC24 session 10073: [`Catch up on accessibility in SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10073/).
-
 ##### Configure the Sample Code Project
 
 Open the sample code project in Xcode. Before building it, do the following:
@@ -37,4 +35,4 @@ Open the sample code project in Xcode. Before building it, do the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/enhancing-the-accessibility-of-your-swiftui-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/enhancing-the-accessibility-of-your-swiftui-app)*

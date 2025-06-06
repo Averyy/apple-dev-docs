@@ -50,8 +50,6 @@ Items will be donated to media players (like [`AVPlayerViewController`](https://
 
 > **Note**: View the sample code in [`Building an immersive media viewing experience`](https://developer.apple.com/documentation/visionOS/building-an-immersive-media-viewing-experience) to see an immersive space in action.
 
-View the sample code in [`Building an immersive media viewing experience`](https://developer.apple.com/documentation/visionOS/building-an-immersive-media-viewing-experience) to see an immersive space in action.
-
 
 ---
 

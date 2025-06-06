@@ -1,6 +1,6 @@
 # Creating an alternative app marketplace
 
-**Framework**: MarketplaceKit
+**Framework**: Marketplacekit
 
 Enable the distribution of other third-party apps from within your marketplace app.
 
@@ -16,8 +16,6 @@ The architecture of an alternative marketplace includes an app, a webpage, from 
 
 > ❗ **Important**: If you’re interested in publishing an alternative app marketplace, review the criteria and submit a request using the web form here: [`Getting started as an alternative app marketplace in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-app-marketplace-in-the-eu/).
 
-If you’re interested in publishing an alternative app marketplace, review the criteria and submit a request using the web form here: [`Getting started as an alternative app marketplace in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-app-marketplace-in-the-eu/).
-
 #### Design a Marketplace App
 
 For an alternative app marketplace:
@@ -30,8 +28,6 @@ For an alternative app marketplace:
 ![Three screenshots of iPhone that show the stages of purchasing an app in a fictional alternative app marketplace called Megabyte Mart. The left screenshot has the caption App Purchase and shows two apps available for purchase, Backyard Birds and Camping App. The center screenshot has the caption External payments provider and shows a checkout sheet for the Camping App, which costs $5.99, from Megabyte Mart with Apple Pay as the first payment method in a list of payment methods. The right screenshot has the caption Install sheet and shows a sheet with the title Megabyte Mart Would Like to Install an App, below the title is the Camping App app information, including placeholder screenshots and the developer name Tapland, Inc., below the app information is an Install App button, and below that is a Cancel button.](https://docs-assets.developer.apple.com/published/98fe516fe9bdde87205b2076d10a289c/creating-an-alternative-app-marketplace-4%402x.png)
 
 > **Note**: Don’t use [`StoreKit`](https://developer.apple.com/documentation/StoreKit) or the App Store’s [`In-App Purchase`](https://developer.apple.com/documentation/StoreKit/in-app-purchase) system, or [`On Demand Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/) in your marketplace app.
-
-Don’t use [`StoreKit`](https://developer.apple.com/documentation/StoreKit) or the App Store’s [`In-App Purchase`](https://developer.apple.com/documentation/StoreKit/in-app-purchase) system, or [`On Demand Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/) in your marketplace app.
 
 #### Set Up Your Marketplace App for Alternative Distribution
 
@@ -61,8 +57,6 @@ Although you store apps on — and serve apps from — your web server, people i
 
 > 💡 **Tip**: People can find an app on your alternative app marketplace using Spotlight search if you maintain a list of available apps and upload it to a location known to Apple. For more information, see [`Marketplace Search Configurations`](https://developer.apple.com/documentation/AppStoreConnectAPI/marketplace-search-configurations).
 
-People can find an app on your alternative app marketplace using Spotlight search if you maintain a list of available apps and upload it to a location known to Apple. For more information, see [`Marketplace Search Configurations`](https://developer.apple.com/documentation/AppStoreConnectAPI/marketplace-search-configurations).
-
 #### Test the App During Development
 
 App marketplace development can occur anywhere in the world, as Xcode allows running a development-signed or Ad-Hoc signed app marketplace on Simulator and all supported physical devices running iOS or iPadOS 18.2 and later. Through the development build, apps that the marketplace distributes can also install and run.
@@ -82,8 +76,6 @@ To test distribution over the web, ensure:
 
 > **Note**: To test system-wide search, upload your app catalog. Apple ingests the upload and enables its contents to show up in Lookup, Safari, and Spotlight search on a device within 24 hours. For more information, see [`Building a searchable catalog for your marketplace app for inclusion in Spotlight`](https://developer.apple.com/documentation/AppStoreConnectAPI/building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight).
 
-To test system-wide search, upload your app catalog. Apple ingests the upload and enables its contents to show up in Lookup, Safari, and Spotlight search on a device within 24 hours. For more information, see [`Building a searchable catalog for your marketplace app for inclusion in Spotlight`](https://developer.apple.com/documentation/AppStoreConnectAPI/building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight).
-
 ## See Also
 
 - [Distributing your app from your website](distributing-your-app-from-your-website.md)
@@ -94,4 +86,4 @@ To test system-wide search, upload your app catalog. Apple ingests the upload an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/creating-an-alternative-app-marketplace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/creating-an-alternative-app-marketplace)*

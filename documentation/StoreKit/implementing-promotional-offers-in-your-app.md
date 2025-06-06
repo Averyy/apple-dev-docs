@@ -1,6 +1,6 @@
 # Implementing promotional offers in your app
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Offer discounted pricing for auto-renewable subscription products to eligible subscribers.
 
@@ -13,8 +13,6 @@ You decide the criteria for which subscribers qualify for an offer. In your app,
 For business guidance on using promotional offers, see [`Auto-renewable Subscriptions > Providing Subscription Offers`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#providing-subscription-offers).
 
 > **Note**:  If your goal is to attract new users, you can use introductory offers and promote the in-app purchase on the App Store. Users are eligible to receive only one introductory offer, but redeeming an introductory offer doesn’t affect their eligibility for a promotional offer. For more information on introductory offers, see [`Implementing introductory offers in your app`](implementing-introductory-offers-in-your-app.md).
-
- If your goal is to attract new users, you can use introductory offers and promote the in-app purchase on the App Store. Users are eligible to receive only one introductory offer, but redeeming an introductory offer doesn’t affect their eligibility for a promotional offer. For more information on introductory offers, see [`Implementing introductory offers in your app`](implementing-introductory-offers-in-your-app.md).
 
 ##### Prepare Your Offer
 
@@ -32,8 +30,6 @@ There are two aspects to determining a user’s eligibility for promotional offe
 Consider using the App Store server notification `DID_CHANGE_RENEWAL_STATUS` to determine eligibility. This notification is triggered by changes in a subscription’s auto-renew status. For example, you receive a notification when a subscriber disables auto-renew in Manage Subscriptions or contacts AppleCare to cancel their subscription. For more information on server notifications, see [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications). Your server can notify your app if the user is eligible for an offer so the app can present it to the customer.
 
 > **Note**:  Customers can redeem promotional offers only on devices running iOS 12.2 and later, macOS 10.14.4 and later, and tvOS 12.2 and later. Consider providing messaging prompting your customer to update their OS if they try to redeem a promotional offer in your app on a device running an older OS version.
-
- Customers can redeem promotional offers only on devices running iOS 12.2 and later, macOS 10.14.4 and later, and tvOS 12.2 and later. Consider providing messaging prompting your customer to update their OS if they try to redeem a promotional offer in your app on a device running an older OS version.
 
 Consider also implementing [`DeviceCheck`](https://developer.apple.com/documentation/DeviceCheck) to keep track of devices that have previously redeemed offers. `TwoBitKit` allows you to maintain user privacy while defining parameters you use to determine eligibility.
 
@@ -54,8 +50,6 @@ To generate the signature, send a secure request to your server. The server will
 Your server should respond with the signature string and the additional values it used to generate the signature: a `nonce`, `timestamp`, and the `keyIdentifier`. Use these values to complete the parameters in the [`SKPaymentDiscount`](skpaymentdiscount.md) object nested in the [`SKMutablePayment`](skmutablepayment.md) object representing the offer. If the App Store determines that the signature isn’t a match for the parameters in the payment, the transaction fails.
 
 > 💡 **Tip**:  To minimize latency, consider generating the signature when you display the offer.
-
- To minimize latency, consider generating the signature when you display the offer.
 
 The following code example shows how to request a signature from your server and prepare the discount offer.
 
@@ -120,8 +114,6 @@ Handle the transaction state of the payment request and notify the customer as n
 
 > **Note**:  If the transaction fails with a state of [`SKPaymentTransactionState.failed`](skpaymenttransactionstate/failed.md), you must generate a new signature and a new payment request for any further attempts to purchase the offer.
 
- If the transaction fails with a state of [`SKPaymentTransactionState.failed`](skpaymenttransactionstate/failed.md), you must generate a new signature and a new payment request for any further attempts to purchase the offer.
-
 ###### Verify the Receipt
 
 As you do for all purchases, verify the receipt with the App Store by calling the [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verifyreceipt) endpoint from your server. The App Store sends a JSON response containing information about the user’s purchase. See [`Validating Receipts With the App Store`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html) for more information.
@@ -156,4 +148,4 @@ A user can redeem and have active only one promotional offer at a time. If the u
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/implementing-promotional-offers-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/implementing-promotional-offers-in-your-app)*

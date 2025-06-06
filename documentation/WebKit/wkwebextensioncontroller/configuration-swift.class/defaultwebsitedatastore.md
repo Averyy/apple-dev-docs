@@ -25,8 +25,6 @@ This property sets the primary data store for managing website data, including c
 
 > **Note**: In addition to this data store, extensions can also access other data stores, such as non-persistent ones, for any open tabs.
 
-In addition to this data store, extensions can also access other data stores, such as non-persistent ones, for any open tabs.
-
 
 ---
 

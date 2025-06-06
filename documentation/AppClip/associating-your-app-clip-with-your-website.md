@@ -1,6 +1,6 @@
 # Associating your App Clip with your website
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Enable the system to verify your App Clip to support invocations in iOS 16.3 or earlier and from your website.
 
@@ -18,8 +18,6 @@ To associate your app and App Clip with your website:
 The system verifies that both the entitlement and the configuration in the AASA file match before it permits the invocation of the App Clip. App Store Connect also verifies the match when you create an App Clip experience; for more information, see [`Set up an App Clip experience`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev43c15c696).
 
 > 💡 **Tip**:  You may already be familiar with the `Associated Domains Entitlement` if your app supports [`Handoff`](https://developer.apple.comhttps://developer.apple.com/handoff/) or [`universal links`](https://developer.apple.comhttps://developer.apple.com/ios/universal-links/). If you’re new to using this entitlement and universal links, read [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content) and [`Supporting universal links in your app`](https://developer.apple.com/documentation/Xcode/supporting-universal-links-in-your-app). For additional information about the `Associated Domains Entitlement` — including cache policies — read [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
-
- You may already be familiar with the `Associated Domains Entitlement` if your app supports [`Handoff`](https://developer.apple.comhttps://developer.apple.com/handoff/) or [`universal links`](https://developer.apple.comhttps://developer.apple.com/ios/universal-links/). If you’re new to using this entitlement and universal links, read [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content) and [`Supporting universal links in your app`](https://developer.apple.com/documentation/Xcode/supporting-universal-links-in-your-app). For additional information about the `Associated Domains Entitlement` — including cache policies — read [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
 
 ##### Add the Associated Domains Entitlement
 
@@ -48,13 +46,9 @@ The following code shows the content to add. Note how the value for the `apps` k
 
 > ❗ **Important**:  For apps that detect App Clip Codes in AR, add an entry for the parent app identifier. For more information, see [`Interacting with App Clip Codes in AR`](interacting-with-app-clip-codes-in-ar.md).
 
- For apps that detect App Clip Codes in AR, add an entry for the parent app identifier. For more information, see [`Interacting with App Clip Codes in AR`](interacting-with-app-clip-codes-in-ar.md).
-
 Then, add the AASA file to your website’s `.well-known` directory. If you previously added an AASA file to your server, add the entry for the `appclips` key to the existing file.
 
 > **Note**:  If you plan to use multiple invocation URLs with different domains, remember to add an AASA file to each domain’s `.well-known` directory. In addition, remember to add each domain to the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains).
-
- If you plan to use multiple invocation URLs with different domains, remember to add an AASA file to each domain’s `.well-known` directory. In addition, remember to add each domain to the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains).
 
 Finally, to make sure the system can validate the association between your App Clip and the AASA file on your server, check your server’s configuration and make sure it allows `AASA-Bot` and `CFNetwork` as user agents.
 
@@ -91,4 +85,4 @@ For more information, see [`WWDC20: What’s New in App Store Connect`](https://
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/associating-your-app-clip-with-your-website)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/associating-your-app-clip-with-your-website)*

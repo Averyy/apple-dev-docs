@@ -1,6 +1,6 @@
 # SKOverlay
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: class
 
 A class that displays an overlay you can use to recommend another app or an App Clip’s corresponding full app.
@@ -28,8 +28,6 @@ By displaying an overlay, you can recommend another app to users and enable them
 
 > ❗ **Important**:  If you display an overlay in your App Clip, you may only recommend the App Clip’s corresponding full app and need to initialize the overlay with an [`SKOverlay.AppClipConfiguration`](skoverlay/appclipconfiguration.md) object. For more information, see [`Recommending your app to App Clip users`](https://developer.apple.com/documentation/AppClip/recommending-your-app-to-app-clip-users).
 
- If you display an overlay in your App Clip, you may only recommend the App Clip’s corresponding full app and need to initialize the overlay with an [`SKOverlay.AppClipConfiguration`](skoverlay/appclipconfiguration.md) object. For more information, see [`Recommending your app to App Clip users`](https://developer.apple.com/documentation/AppClip/recommending-your-app-to-app-clip-users).
-
 If you’re using SwiftUI, make use of the `appStoreOverlay(isPresented:configuration:)` modifier. For example usage, see [`Fruta: Building a Feature-Rich App with SwiftUI`](https://developer.apple.com/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui).
 
 To display an App Store overlay in an app that uses [`UIKit`](https://developer.apple.com/documentation/UIKit):
@@ -53,8 +51,6 @@ func displayOverlay() {
 To respond to the overlay’s appearance, dismissal, or failure to load, set the [`delegate`](skoverlay/delegate.md) and implement the methods defined in [`SKOverlayDelegate`](skoverlaydelegate.md).
 
 > **Note**:  App extensions can’t display an overlay.
-
- App extensions can’t display an overlay.
 
 ## Topics
 
@@ -103,4 +99,4 @@ To respond to the overlay’s appearance, dismissal, or failure to load, set the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skoverlay)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skoverlay)*

@@ -1,6 +1,6 @@
 # PHASEChannelMixerDefinition
 
-**Framework**: PHASE  
+**Framework**: Phase  
 **Kind**: class
 
 An audio-layering object that routes sound directly to the device’s output.
@@ -24,8 +24,6 @@ class PHASEChannelMixerDefinition
 Use this class to play one-time sounds such as menu clicks.
 
 > **Note**:  If your audio playback requires 3D orienting or positioning, use [`PHASEAmbientMixerDefinition`](phaseambientmixerdefinition.md) or [`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md), respectively. For more information, see [`Spatial Mixing`](spatial-mixing.md).
-
- If your audio playback requires 3D orienting or positioning, use [`PHASEAmbientMixerDefinition`](phaseambientmixerdefinition.md) or [`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md), respectively. For more information, see [`Spatial Mixing`](spatial-mixing.md).
 
 This class defines the , which is the strategy the framework uses to send source mono or multichannel assets to the output for playback. The asset’s audio channels route to the output for playback according to the channel layout and runtime output conditions the app designates on an instance of this class.
 
@@ -70,4 +68,4 @@ This class minimizes  and  — that is, source audio channel conversion to a hig
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/phase/phasechannelmixerdefinition)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PHASE/phasechannelmixerdefinition)*

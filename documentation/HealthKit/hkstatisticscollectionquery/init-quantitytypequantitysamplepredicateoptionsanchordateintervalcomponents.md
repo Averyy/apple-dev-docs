@@ -1,6 +1,6 @@
 # init(quantityType:quantitySamplePredicate:options:anchorDate:intervalComponents:)
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: init
 
 Initializes a statistics collection query to perform the specified calculations over a set of time intervals.
@@ -30,8 +30,6 @@ After you instantiate the query, set up one or both of the callback handlers, an
 Statistics collection queries can also act as long-running queries. If you assign a statistics update handler, they continue to monitor the HealthKit store after gathering the initial results. The statistics update handler is called on the background queue every time a matching sample is saved to the HealthKit Store. You can cancel this query by calling the store’s [`stop(_:)`](hkhealthstore/stop(_:).md) method.
 
 > **Note**:  Statistical calculations can take a considerable amount of time, especially if there are a large number of samples involved.
-
- Statistical calculations can take a considerable amount of time, especially if there are a large number of samples involved.
 
 ## Parameters
 

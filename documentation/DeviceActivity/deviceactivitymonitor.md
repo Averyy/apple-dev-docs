@@ -1,6 +1,6 @@
 # DeviceActivityMonitor
 
-**Framework**: DeviceActivity  
+**Framework**: Deviceactivity  
 **Kind**: class
 
 The object that monitors scheduled device activity.
@@ -40,8 +40,6 @@ class MyMonitorExtension: DeviceActivityMonitor {
 
 > **Note**: Shielding an app dims the app’s icon on the homescreen and applies an hourglass symbol. When the app launches, the system covers it with a view that your app can configure.
 
-Shielding an app dims the app’s icon on the homescreen and applies an hourglass symbol. When the app launches, the system covers it with a view that your app can configure.
-
 ## Topics
 
 ### Configuring a Monitor
@@ -77,4 +75,4 @@ Shielding an app dims the app’s icon on the homescreen and applies an hourglas
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/deviceactivity/deviceactivitymonitor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceActivity/deviceactivitymonitor)*

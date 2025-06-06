@@ -1,6 +1,6 @@
 # UIGraphicsImageRendererContext
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 The drawing environment for an image renderer.
@@ -23,8 +23,6 @@ class UIGraphicsImageRendererContext
 When using the [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) drawing methods, you must pass a block of type [`UIGraphicsImageRenderer.DrawingActions`](uigraphicsimagerenderer/drawingactions.md) as an argument, which provides a [`UIGraphicsImageRendererContext`](uigraphicsimagerenderercontext.md) instance as an argument. Use the context object to access high-level drawing functions and the underlying Core Graphics context.
 
 > **Note**:  `UIGraphicsImageRendererContext` inherits much of its functionality from its abstract superclass [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md).
-
- `UIGraphicsImageRendererContext` inherits much of its functionality from its abstract superclass [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md).
 
 To learn how to use a `UIGraphicsImageRendererContext` object in combination with an image renderer, see [`Creating a graphics image renderer`](uigraphicsimagerenderer#Creating-a-graphics-image-renderer.md).
 
@@ -71,4 +69,4 @@ To learn how to use a `UIGraphicsImageRendererContext` object in combination wit
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uigraphicsimagerenderercontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uigraphicsimagerenderercontext)*

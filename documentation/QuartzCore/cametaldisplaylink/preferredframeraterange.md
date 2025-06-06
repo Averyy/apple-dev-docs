@@ -1,6 +1,6 @@
 # preferredFrameRateRange
 
-**Framework**: Core Animation  
+**Framework**: Quartzcore  
 **Kind**: property
 
 A range of frequencies your app allows for frame updates, affecting how often the system invokes your delegate’s callback.
@@ -25,15 +25,11 @@ The display link makes a best attempt to invoke your app’s callback within the
 
 > ❗ **Important**:  Choose a frame rate range that your app can consistently maintain.
 
- Choose a frame rate range that your app can consistently maintain.
-
 The system can change the available range of frame rates because it factors in system policies and a person’s preferences. For example, Low Power Mode, critical thermal state, and accessibility settings can affect the system’s frame rate.
 
 The system typically provides a consistent frame rate by choosing one that’s a factor of the display’s maximum refresh rate. For example, a display link could invoke your callback 60 times per second for a display with a refresh rate of 60 hertz. However, the display link could invoke your callback less frequently, such as 30, 20, or 15 hertz, by setting a range with smaller values.
 
 > **Note**:  By default, this property’s values are equal to [`default`](caframeraterange/default.md), which is equivalent to the display’s maximum refresh rate, such as a [`UIScreen`](https://developer.apple.com/documentation/UIKit/UIScreen) instance’s [`maximumFramesPerSecond`](https://developer.apple.com/documentation/UIKit/UIScreen/maximumFramesPerSecond) property.
-
- By default, this property’s values are equal to [`default`](caframeraterange/default.md), which is equivalent to the display’s maximum refresh rate, such as a [`UIScreen`](https://developer.apple.com/documentation/UIKit/UIScreen) instance’s [`maximumFramesPerSecond`](https://developer.apple.com/documentation/UIKit/UIScreen/maximumFramesPerSecond) property.
 
 See [`Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro`](optimizing-promotion-refresh-rates-for-iphone-13-pro-and-ipad-pro.md) for more information.
 
@@ -47,4 +43,4 @@ See [`Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro`](optimi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/cametaldisplaylink/preferredframeraterange)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/cametaldisplaylink/preferredframeraterange)*

@@ -24,8 +24,6 @@ init(_ content: Substring.UnicodeScalarView)
 
 > **Note**: O(N), where N is the length of the resulting `String`’s UTF-16.
 
-O(N), where N is the length of the resulting `String`’s UTF-16.
-
 ## See Also
 
 - [var unicodeScalars: String.UnicodeScalarView](string/unicodescalars.md)

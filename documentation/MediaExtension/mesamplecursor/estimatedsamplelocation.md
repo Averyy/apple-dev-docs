@@ -1,6 +1,6 @@
 # estimatedSampleLocation()
 
-**Framework**: MediaExtension  
+**Framework**: Mediaextension  
 **Kind**: method
 
 Returns an estimate of the sample location indicated by the cursor.
@@ -23,8 +23,6 @@ An object that provides information about the estimated sample location.
 Some formats may need to read some data on a per-sample basis to produce the exact sample location. For these formats, it’s more efficient to read a larger chunk of data that contains both the data to produce the exact sample location and the actual sample data.
 
 > **Note**:  If you implement this method, also implement [`refineSampleLocation(_:refinementData:refinementDataLength:refinedLocation:)`](mesamplecursor/refinesamplelocation(_:refinementdata:refinementdatalength:refinedlocation:).md).
-
- If you implement this method, also implement [`refineSampleLocation(_:refinementData:refinementDataLength:refinedLocation:)`](mesamplecursor/refinesamplelocation(_:refinementdata:refinementdatalength:refinedlocation:).md).
 
 Pass the value this method returns to [`refineSampleLocation(_:refinementData:refinementDataLength:refinedLocation:)`](mesamplecursor/refinesamplelocation(_:refinementdata:refinementdatalength:refinedlocation:).md) to obtain the exact sample location.
 

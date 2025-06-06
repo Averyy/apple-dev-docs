@@ -1,6 +1,6 @@
 # The MPSKernel Class
 
-**Framework**: Metal Performance Shaders
+**Framework**: Metalperformanceshaders
 
 #### Overview
 
@@ -26,8 +26,6 @@ As the [`MPSKernel`](mpskernel.md), [`MPSUnaryImageKernel`](mpsunaryimagekernel.
 Each kernel is allocated against a particular device; a single kernel may not be used with multiple devices. This is necessary because the [`init(device:)`](mpskernel/1618763-init.md) methods sometimes allocate buffers and textures to hold data passed in as parameters to the initialization method, and a device is required to allocate them. Kernels provide a [`copy(with:device:)`](mpskernel/1618912-copy.md) method that allows them to be copied for a new device.
 
 > **Note**: Kernel objects are not entirely thread safe. While they may be used in a multithreaded context, you should not attempt to have multiple kernel objects writing to the same command buffer at the same time. They share restrictions with the command encoder in this regard. In limited circumstances, the same kernel can be used to write to multiple command buffers concurrently. However, that only works if the kernel is treated as an immutable object. That is, if subclass properties of a shared kernel are changed, then the change can be reflected on the other thread while the other thread is encoding its work, leading to undefined behavior. It is generally safest to just make copies of kernel objects, one for each thread.
-
-Kernel objects are not entirely thread safe. While they may be used in a multithreaded context, you should not attempt to have multiple kernel objects writing to the same command buffer at the same time. They share restrictions with the command encoder in this regard. In limited circumstances, the same kernel can be used to write to multiple command buffers concurrently. However, that only works if the kernel is treated as an immutable object. That is, if subclass properties of a shared kernel are changed, then the change can be reflected on the other thread while the other thread is encoding its work, leading to undefined behavior. It is generally safest to just make copies of kernel objects, one for each thread.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # supportedInterfaceOrientations
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The interface orientations that the view controller supports.
@@ -29,8 +29,6 @@ Override this method to declare which orientations the view controller supports.
 To determine whether to rotate, the system compares the view controller’s supported orientations with the app’s supported orientations — as determined by the `Info.plist` file or the app delegate’s [`application(_:supportedInterfaceOrientationsFor:)`](uiapplicationdelegate/application(_:supportedinterfaceorientationsfor:).md) method — and the device’s supported orientations.
 
 > **Note**:  All iPadOS devices support the [`portraitUpsideDown`](uiinterfaceorientationmask/portraitupsidedown.md) orientation. It’s best practice to enable it for the iPad idiom. iOS devices without a Home button, such as iPhone 12, don’t support this orientation. You should disable it entirely for the iPhone idiom.
-
- All iPadOS devices support the [`portraitUpsideDown`](uiinterfaceorientationmask/portraitupsidedown.md) orientation. It’s best practice to enable it for the iPad idiom. iOS devices without a Home button, such as iPhone 12, don’t support this orientation. You should disable it entirely for the iPhone idiom.
 
 If your app supports multitasking, the system doesn’t call this method on your view controller because multitasking apps must support all orientations. You can opt out of multitasking by enabling  on your iOS target or by not declaring support for all possible orientations within the `Info.plist` file.
 

@@ -1,6 +1,6 @@
 # CIFeature
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: cl
 
 The abstract superclass for objects representing notable features detected in an image.
@@ -22,8 +22,6 @@ class CIFeature : NSObject
 #### Overview
 
 > **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNObservation`](https://developer.apple.com/documentation/vision/vnobservation).
-
-In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNObservation`](https://developer.apple.com/documentation/vision/vnobservation).
 
 A [`CIFeature`](cifeature.md) object represents a portion of an image that a detector believes matches its criteria. Subclasses of `CIFeature` typically hold additional information specific to the detector that discovered the feature.
 

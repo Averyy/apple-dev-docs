@@ -1,6 +1,6 @@
 # Entity.CoordinateSpaceReference.immersiveSpace
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: case
 
 A reference to an opened immersive space.
@@ -23,8 +23,6 @@ let transformInImmersiveSpace = entity.transformMatrix(relativeTo: .immersiveSpa
 ```
 
 > **Note**: If no immersive space is open, calling [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) with the case `immersiveSpace` returns `nil`.
-
-If no immersive space is open, calling [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) with the case `immersiveSpace` returns `nil`.
 
 
 ---

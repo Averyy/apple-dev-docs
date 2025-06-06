@@ -1,6 +1,6 @@
 # IOSurfaceRemoveValue(_:_:)
 
-**Framework**: IOSurface  
+**Framework**: Iosurface  
 **Kind**: func
 
 Deletes a value in the dictionary associated with the buffer.
@@ -24,8 +24,6 @@ func IOSurfaceRemoveValue(_ buffer: IOSurfaceRef, _ key: CFString)
 This call lets you attach CF property list types to an IOSurface buffer. This call is expensive (it must essentially serialize the data into the kernel) and thus should be avoided whenever possible.
 
 > **Note**:  This function cannot be used to change the underlying surface properties.
-
- This function cannot be used to change the underlying surface properties.
 
 ## See Also
 

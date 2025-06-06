@@ -12,8 +12,6 @@ When you create a widget or Live Activity, think about how people interact with 
 
 > ❗ **Important**: An interaction with a button or toggle should do more than open the app. If you want to offer an interaction that opens the app, use [`Link`](https://developer.apple.com/documentation/SwiftUI/Link) and [`widgetURL(_:)`](https://developer.apple.com/documentation/SwiftUI/View/widgetURL(_:)) as described in [`Linking to specific app scenes from your widget or Live Activity`](linking-to-specific-app-scenes-from-your-widget-or-live-activity.md).
 
-An interaction with a button or toggle should do more than open the app. If you want to offer an interaction that opens the app, use [`Link`](https://developer.apple.com/documentation/SwiftUI/Link) and [`widgetURL(_:)`](https://developer.apple.com/documentation/SwiftUI/View/widgetURL(_:)) as described in [`Linking to specific app scenes from your widget or Live Activity`](linking-to-specific-app-scenes-from-your-widget-or-live-activity.md).
-
 Widgets of the following sizes can include buttons and toggles:
 
 - [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md)
@@ -29,8 +27,6 @@ For design guidance, see [`Human Interface Guidelines > Widgets`](https://develo
 
 > **Note**: [`Session 10027: Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10027)
 
-[`Session 10027: Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10027)
-
 ##### Understand the Role of App Intents
 
 Widgets offer direct interaction with your app using the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework and SwiftUI. For example, the large widget of the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project includes a button to boost the hero’s healing power.
@@ -40,8 +36,6 @@ To create widgets and watch complications, you add a widget extension to your pr
 As a result of the timeline mechanism and of rendering in a separate process, the system can’t run your code or update data bindings at the time it renders your widget. This is where the App Intents framework comes into play. App intents allow you to expose actions of your app to the system and enable it to perform the actions when needed — for example, when a person interacts with a button or a toggle in a widget.
 
 > **Note**: Live Activities don’t use a timeline mechanism to update their content. However, they use WidgetKit and a widget extension with a similar cycle of view archiving and decoding. As a result, you add buttons and toggles to a Live Activity in the same way as do for your widgets, as described below.
-
-Live Activities don’t use a timeline mechanism to update their content. However, they use WidgetKit and a widget extension with a similar cycle of view archiving and decoding. As a result, you add buttons and toggles to a Live Activity in the same way as do for your widgets, as described below.
 
 ##### Add an App Intent That Performs the Action
 
@@ -80,21 +74,15 @@ When you return from the `perform()` function, the system reloads the widget’s
 
 > **Note**: Interactions with a toggle or button always guarantee a timeline reload.
 
-Interactions with a toggle or button always guarantee a timeline reload.
-
 Additionally, note that the `perform()` function is marked as `throws`. Be sure to handle errors instead of rethrowing them, and update your app, widget, and Live Activity as needed. For example, update a widget’s interface to tell a person that it displays outdated information if it can’t load new data.
 
 > 💡 **Tip**: With the App Intents framework, you can extend your app’s custom functionality to support system-level services like Siri and the Shortcuts app. Additionally, you use app intents to make your widget configurable. By making your widget interactive, you automatically support system services for that interaction. To learn more about the App Intents framework, see [`App Intents`](https://developer.apple.com/documentation/AppIntents) and [`Making actions and content discoverable and widely available`](https://developer.apple.com/documentation/AppIntents/Making-actions-and-content-discoverable-and-widely-available). To learn more about configurable widgets, see [`Making a configurable widget`](making-a-configurable-widget.md).
-
-With the App Intents framework, you can extend your app’s custom functionality to support system-level services like Siri and the Shortcuts app. Additionally, you use app intents to make your widget configurable. By making your widget interactive, you automatically support system services for that interaction. To learn more about the App Intents framework, see [`App Intents`](https://developer.apple.com/documentation/AppIntents) and [`Making actions and content discoverable and widely available`](https://developer.apple.com/documentation/AppIntents/Making-actions-and-content-discoverable-and-widely-available). To learn more about configurable widgets, see [`Making a configurable widget`](making-a-configurable-widget.md).
 
 ##### Add a Button
 
 After you’ve implemented the app intent, add a [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) to your widget using one of the initializers that take an app intent, for example, [`init(_:intent:)`](https://developer.apple.com/documentation/SwiftUI/Button/init(_:intent:)-7urde).
 
 > 💡 **Tip**: You don’t have to create a `Button` implementation solely for use in a widget or Live Activity. Reuse the code that adds a button to a widget — including the app intent implementation — in your app.
-
-You don’t have to create a `Button` implementation solely for use in a widget or Live Activity. Reuse the code that adds a button to a widget — including the app intent implementation — in your app.
 
 The following example shows how the large [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) widget includes a button to give the heroes a healing boost. Note how the sample checks for the presence of iOS 17 before adding the button.
 
@@ -142,8 +130,6 @@ After you’ve added a button, review views in your widget or Live Activity that
 
 > **Note**: A button indicates that a person interacted with it but it doesn’t remain in a pressed state. As a result, use `Toggle` to indicate on/off functionality.
 
-A button indicates that a person interacted with it but it doesn’t remain in a pressed state. As a result, use `Toggle` to indicate on/off functionality.
-
 ##### Add a Toggle
 
 Add a [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle) to your view using one of the initializers that take an app intent, for example, [`init(isOn:intent:label:)`](https://developer.apple.com/documentation/SwiftUI/Toggle/init(isOn:intent:label:)).
@@ -164,8 +150,6 @@ struct TodoItemView: View {
 ```
 
 > **Note**: If you define your own [`ToggleStyle`](https://developer.apple.com/documentation/SwiftUI/ToggleStyle), check the [`isOn`](https://developer.apple.com/documentation/SwiftUI/ToggleStyleConfiguration/isOn) property and add the correct appearance for on and off states.
-
-If you define your own [`ToggleStyle`](https://developer.apple.com/documentation/SwiftUI/ToggleStyle), check the [`isOn`](https://developer.apple.com/documentation/SwiftUI/ToggleStyleConfiguration/isOn) property and add the correct appearance for on and off states.
 
 The [`perform()`](https://developer.apple.com/documentation/AppIntents/AppIntent/perform()) function runs code asynchronously and may take time to complete, for example, when a person performs an interaction on an iPhone widget on Mac. `Toggle` updates its appearance optimistically and indicates its new state immediately — without waiting for the result of the performed action.
 
@@ -190,4 +174,4 @@ In the context of iPhone widgets on Mac, it’s important to use the [`invalidat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/adding-interactivity-to-widgets-and-live-activities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/adding-interactivity-to-widgets-and-live-activities)*

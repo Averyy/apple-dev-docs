@@ -1,6 +1,6 @@
 # Create a Subscription Group
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Create a subscription group for an app.
@@ -15,8 +15,6 @@ Create a subscription group for an app.
 #### Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
 ## See Also
 
@@ -36,4 +34,4 @@ Create a subscription group for an app.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-subscriptiongroups)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-subscriptiongroups)*

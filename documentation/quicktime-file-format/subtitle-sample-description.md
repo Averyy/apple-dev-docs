@@ -1,6 +1,6 @@
 # Subtitle sample description
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that defines how to interpret subtitle media data.
@@ -10,8 +10,6 @@ An atom that defines how to interpret subtitle media data.
 The subtitle sample description contains information that defines how to interpret subtitle media data. This sample description is based on the standard sample description header, as described in [`Sample description atom ('stsd')`](sample_description_atom.md).
 
 > **Note**: Only one sample description is permitted in a `'sbtl'` track.
-
-Only one sample description is permitted in a `'sbtl'` track.
 
 The data format field in the sample description is currently always set to `'tx3g'`. Unrecognized data formats should be ignored. The text media described here is based on the text box defined in the 3GPP Timed Text specification but provides a different track type and media handler designed specifically for subtitles.
 

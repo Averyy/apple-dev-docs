@@ -26,8 +26,6 @@ The preview will allow you to step through the specified content states and test
 
 > **Note**: The attributes must be of the type expected by the widget. (This will be enforced at run-time.)
 
-The attributes must be of the type expected by the widget. (This will be enforced at run-time.)
-
 ## Parameters
 
 - `name`: An optional display name for the preview, which will appear in the canvas.

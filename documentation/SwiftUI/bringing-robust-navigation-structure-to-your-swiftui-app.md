@@ -1,6 +1,6 @@
 # Bringing robust navigation structure to your SwiftUI app
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Use navigation links, stacks, destinations, and paths to provide a streamlined experience for all platforms, as well as behaviors such as deep linking and state restoration.
 
@@ -13,8 +13,6 @@ Use navigation links, stacks, destinations, and paths to provide a streamlined e
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [`10054: The SwiftUI cookbook for navigation`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10054/).
-
-This sample code project is associated with WWDC22 session [`10054: The SwiftUI cookbook for navigation`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10054/).
 
 ## See Also
 
@@ -36,4 +34,4 @@ This sample code project is associated with WWDC22 session [`10054: The SwiftUI 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/bringing-robust-navigation-structure-to-your-swiftui-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/bringing-robust-navigation-structure-to-your-swiftui-app)*

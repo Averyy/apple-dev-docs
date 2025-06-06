@@ -30,8 +30,6 @@ For more information on file system utilities, see [`File System Programming Gui
 
 > **Note**:  The directory returned by this method may not exist. This method simply gives you the appropriate location for the requested directory. Depending on the application’s needs, it may be up to the developer to create the appropriate directory and any in between.
 
- The directory returned by this method may not exist. This method simply gives you the appropriate location for the requested directory. Depending on the application’s needs, it may be up to the developer to create the appropriate directory and any in between.
-
 ## See Also
 
 - [func url(for: FileManager.SearchPathDirectory, in: FileManager.SearchPathDomainMask, appropriateFor: URL?, create: Bool) throws -> URL](filemanager/url(for:in:appropriatefor:create:).md)

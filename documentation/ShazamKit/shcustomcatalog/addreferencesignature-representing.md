@@ -1,6 +1,6 @@
 # addReferenceSignature(_:representing:)
 
-**Framework**: ShazamKit  
+**Framework**: Shazamkit  
 **Kind**: method
 
 Adds a reference signature and its associated metadata to a catalog.
@@ -23,8 +23,6 @@ func addReferenceSignature(_ signature: SHSignature, representing mediaItems: [S
 #### Discussion
 
 > **Note**:  This system ignores calls to `addReferenceSignature(_:representing:)` after adding the catalog to an `SHSession`.
-
- This system ignores calls to `addReferenceSignature(_:representing:)` after adding the catalog to an `SHSession`.
 
 ## Parameters
 

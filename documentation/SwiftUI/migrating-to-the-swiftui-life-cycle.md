@@ -1,6 +1,6 @@
 # Migrating to the SwiftUI life cycle
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Use a scene-based life cycle in SwiftUI while keeping your existing codebase.
 
@@ -21,8 +21,6 @@ The [`UIKit`](https://developer.apple.com/documentation/UIKit) framework defines
 5. Annotate the app structure with the `@main` attribute to indicate the entry point of the SwiftUI app, as shown in the code snippet below.
 
 > ❗ **Important**: Remove the `@main` or `@UIApplicationMain` attribute in your app delegate.
-
-Remove the `@main` or `@UIApplicationMain` attribute in your app delegate.
 
 Use following code to create the SwiftUI app structure. To learn more about this structure, follow the tutorial in [`Exploring the structure of a SwiftUI app`](https://developer.apple.comhttps://developer.apple.com/tutorials/swiftui-concepts/exploring-the-structure-of-a-swiftui-app).
 
@@ -54,8 +52,6 @@ struct MyExampleApp: App {
 This example marks a custom app delegate named `MyAppDelegate` as the delegate adaptor. Be sure to implement any necessary delegate methods in that type.
 
 > **Note**: For AppKit support, use [`NSApplicationDelegateAdaptor`](nsapplicationdelegateadaptor.md). For WatchKit support, use [`WKApplicationDelegateAdaptor`](wkapplicationdelegateadaptor.md).
-
-For AppKit support, use [`NSApplicationDelegateAdaptor`](nsapplicationdelegateadaptor.md). For WatchKit support, use [`WKApplicationDelegateAdaptor`](wkapplicationdelegateadaptor.md).
 
 ##### Configure the Launch of Your App
 
@@ -108,4 +104,4 @@ For more information on handling scene-based life cycle events, see [`Managing y
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/migrating-to-the-swiftui-life-cycle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/migrating-to-the-swiftui-life-cycle)*

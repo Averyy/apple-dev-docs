@@ -1,6 +1,6 @@
 # Creating a spatial drawing app with RealityKit
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
 
@@ -11,8 +11,6 @@ Use low-level mesh and texture APIs to achieve fast updates to a person’s brus
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10104: [`Build a spatial drawing app with RealityKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10104/).
-
-This sample code project is associated with WWDC24 session 10104: [`Build a spatial drawing app with RealityKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10104/).
 
 ##### Configure the Sample Code Project
 
@@ -53,4 +51,4 @@ Because this sample app uses ARKit hand tracking on visionOS, drawing features a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-a-spatial-drawing-app-with-realitykit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-a-spatial-drawing-app-with-realitykit)*

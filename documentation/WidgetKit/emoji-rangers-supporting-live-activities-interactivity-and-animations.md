@@ -14,8 +14,6 @@ Offer Live Activities, controls, animate data updates, and add interactivity to 
 
 > **Note**: This sample code project is associated with WWDC23 sessions 10184: [`Meet ActivityKit`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10184/), 10185: [`Update live activities with push notifications`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10185/), 10027: [`Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10027/), and  10028: [`Bring widgets to  life`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10028/).
 
-This sample code project is associated with WWDC23 sessions 10184: [`Meet ActivityKit`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10184/), 10185: [`Update live activities with push notifications`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10185/), 10027: [`Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10027/), and  10028: [`Bring widgets to  life`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10028/).
-
 ## See Also
 
 - [Creating a widget extension](creating-a-widget-extension.md)
@@ -48,4 +46,4 @@ This sample code project is associated with WWDC23 sessions 10184: [`Meet Activi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations)*

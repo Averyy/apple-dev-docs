@@ -1,6 +1,6 @@
 # shortcutItems
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The Home screen dynamic quick actions for your app; available on devices that support 3D Touch.
@@ -26,15 +26,11 @@ The items in the `shortcutItems` array are instances of the [`UIApplicationShort
 
 > **Note**: Dynamic vs. Static Quick Actions: The items in an application object’s `shortcutItems` array, although immutable, are considered  to distinguish them from the  quick actions you can specify at build time in the [`UIApplicationShortcutItems`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW36) array in your Xcode project’s `Info.plist` file. You create dynamic quick actions, and register them with your application object, at runtime.
 
-Dynamic vs. Static Quick Actions: The items in an application object’s `shortcutItems` array, although immutable, are considered  to distinguish them from the  quick actions you can specify at build time in the [`UIApplicationShortcutItems`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW36) array in your Xcode project’s `Info.plist` file. You create dynamic quick actions, and register them with your application object, at runtime.
-
 The system populates the displayed set of Home screen quick actions, starting at the top, first with your static quick actions. Only if there are additional positions available does it also show your dynamic quick actions, up to the system-defined limit.
 
 The onscreen ordering of your Home screen quick actions reflects the ordering in your [`UIApplicationShortcutItems`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW36) array (if that array contains items) and the ordering of the items in the `shortcutItems` array (if any are displayed).
 
 > **Note**:  When you read the value of this property, you obtain an array that contains, exclusively, your  Home screen quick actions. Any static quick actions you’ve defined are not represented in this property’s value.
-
- When you read the value of this property, you obtain an array that contains, exclusively, your  Home screen quick actions. Any static quick actions you’ve defined are not represented in this property’s value.
 
 
 ---

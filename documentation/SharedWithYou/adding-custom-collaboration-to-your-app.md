@@ -1,6 +1,6 @@
 # Adding custom collaboration to your app
 
-**Framework**: Shared With You
+**Framework**: Sharedwithyou
 
 Integrate your custom collaboration app with Messages.
 
@@ -13,8 +13,6 @@ Before you can use this collaboration infrastructure, your app needs to support 
 ![An illustration of a horizontal iPhone labeled Sending Device. At the top center of the device screen is an app icon with an arrow labeled Share pointing right to a rectangle labeled Collaboration Metadata. An arrow points down from that rectangle to a rectangle labeled Share Sheet/Drag & Drop. From there, an arrow points left to a Messages app icon. The app icon at the top also has a line pointing left and down to two stacked rectangles. The top rectangle is labeled Universal Link and the bottom one is labeled Identifier. The bottom rectangle has an arrow pointing down and right to the Messages app icon. An arrow points up from the Messages app icon to a square with a ? in it. That square has an arrow pointing up to the app icon. The app icon has an arrow pointing up to a square with a ? in it that sits above the device. The square above the device has an arrow pointing right to a Server icon.](https://docs-assets.developer.apple.com/published/3901cbcbc6321c17cec79fa745082f0f/media-4110288%402x.png)
 
 > **Note**:  Session 10093: [`Integrate your custom collaboration app with Messages`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10093)
-
- Session 10093: [`Integrate your custom collaboration app with Messages`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10093)
 
 ##### Create the Metadata Object
 
@@ -423,4 +421,4 @@ func postContentRenamedEvent(identifier: SWCollaborationIdentifier) throws {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sharedwithyou/adding-custom-collaboration-to-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SharedWithYou/adding-custom-collaboration-to-your-app)*

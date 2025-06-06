@@ -1,6 +1,6 @@
 # Developing a Document-Based App
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 Write an app that creates, manages, edits, and saves text documents.
 
@@ -58,8 +58,6 @@ class Content: NSObject {
 ```
 
 > **Note**: The Cocoa document architecture uses the Objective-C runtime, and document-based apps often use Objective-C technologies such as key-value coding (KVC), key-value observing (KVO), Cocoa bindings, and Cocoa archiving (`NSCoding`). Therefore, the model classes in your app should be Objective-C classes (subclasses of `NSObject`), and the properties and methods in those classes should be Objective-C compatible (declared `@objc`). In addition, their properties should be declared `dynamic` in Swift, which tells the compiler to use dynamic dispatch to access that attribute.
-
-The Cocoa document architecture uses the Objective-C runtime, and document-based apps often use Objective-C technologies such as key-value coding (KVC), key-value observing (KVO), Cocoa bindings, and Cocoa archiving (`NSCoding`). Therefore, the model classes in your app should be Objective-C classes (subclasses of `NSObject`), and the properties and methods in those classes should be Objective-C compatible (declared `@objc`). In addition, their properties should be declared `dynamic` in Swift, which tells the compiler to use dynamic dispatch to access that attribute.
 
 Using a centralized `Content` object encapsulates the document’s data model into a single package. If you need to add new data elements to your data model later, you’ll also place them within the `Content` model. The model object is therefore responsible for encoding and decoding its content for reading and writing to disk.
 
@@ -138,4 +136,4 @@ override func data(ofType typeName: String) throws -> Data {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/developing-a-document-based-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/developing-a-document-based-app)*

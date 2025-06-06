@@ -1,6 +1,6 @@
 # lineBreakStrategy
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The strategy that the system uses to break lines when laying out multiple lines of text.
@@ -21,8 +21,6 @@ The default value for editable text fields is [`NSLineBreakStrategyNone`](nsline
 
 > **Note**:  When the text field has an attributed string value, the system ignores the [`textColor`](nstextfield/textcolor.md), [`font`](nscontrol/font.md), [`alignment`](nscontrol/alignment.md), [`lineBreakMode`](nscontrol/linebreakmode.md), and `lineBreakStrategy` properties. Set the [`foregroundColor`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1533563-foregroundcolor), [`font`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1528839-font), [`alignment`](nsmutableparagraphstyle/alignment.md), [`lineBreakMode`](nsparagraphstyle/linebreakmode.md), and [`lineBreakStrategy`](nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
 
- When the text field has an attributed string value, the system ignores the [`textColor`](nstextfield/textcolor.md), [`font`](nscontrol/font.md), [`alignment`](nscontrol/alignment.md), [`lineBreakMode`](nscontrol/linebreakmode.md), and `lineBreakStrategy` properties. Set the [`foregroundColor`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1533563-foregroundcolor), [`font`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1528839-font), [`alignment`](nsmutableparagraphstyle/alignment.md), [`lineBreakMode`](nsparagraphstyle/linebreakmode.md), and [`lineBreakStrategy`](nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
-
 ## See Also
 
 - [var allowsDefaultTighteningForTruncation: Bool](nstextfield/allowsdefaulttighteningfortruncation.md)
@@ -33,4 +31,4 @@ The default value for editable text fields is [`NSLineBreakStrategyNone`](nsline
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstextfield/linebreakstrategy)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstextfield/linebreakstrategy)*

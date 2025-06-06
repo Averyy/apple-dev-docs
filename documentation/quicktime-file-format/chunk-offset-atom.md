@@ -1,6 +1,6 @@
 # Chunk offset atom ('stco')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that identifies the location of each chunk of data in the media’s data stream.
@@ -14,8 +14,6 @@ The chunk-offset table gives the index of each chunk into the containing file. T
 Note that offsets are file offsets, not the offset into any atom within the file (for example, a `'mdat'` atom). This permits referring to media data in files without any atom structure. However, be careful when constructing a self-contained QuickTime file with its metadata (movie atom) at the front because the size of the movie atom affects the chunk offsets to the media data.
 
 > **Note**: The sample table atom can contain a 64-bit chunk offset atom (`STChunkOffset64AID = 'co64'`). When this atom appears, it is used in place of the original chunk offset atom, which can contain only 32-bit offsets. When QuickTime writes movie files, it uses the 64-bit chunk offset atom only if there are chunks that use the high 32-bits of the chunk offset. Otherwise, the original 32-bit chunk offset atom is used to ensure compatibility with previous versions of QuickTime.
-
-The sample table atom can contain a 64-bit chunk offset atom (`STChunkOffset64AID = 'co64'`). When this atom appears, it is used in place of the original chunk offset atom, which can contain only 32-bit offsets. When QuickTime writes movie files, it uses the 64-bit chunk offset atom only if there are chunks that use the high 32-bits of the chunk offset. Otherwise, the original 32-bit chunk offset atom is used to ensure compatibility with previous versions of QuickTime.
 
 The layout of a chunk offset atom is as follows.
 

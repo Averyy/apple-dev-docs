@@ -89,8 +89,6 @@ For example:
 
 > **Note**: Supporting multiple scenes is optional. Adopting multiple scenes may require restructuring your app to make your data model more scene-specific. Consider whether your app’s user experience would benefit from it before supporting multiple scenes.
 
-Supporting multiple scenes is optional. Adopting multiple scenes may require restructuring your app to make your data model more scene-specific. Consider whether your app’s user experience would benefit from it before supporting multiple scenes.
-
 To support multiple scenes, include the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key with its `Boolean` value set to `true`, which indicates that the app supports two or more scenes simultaneously. Each `UISceneConfiguration` should have a unique configuration name when supporting multiple scenes.
 
 ##### Provide Scene Configurations From Your App Delegate for Dynamic Configuration
@@ -215,4 +213,4 @@ To learn how to respond to state transitions within your app, see [`Managing you
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle)*

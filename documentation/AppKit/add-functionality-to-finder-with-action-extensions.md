@@ -1,6 +1,6 @@
 # Add Functionality to Finder with Action Extensions
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 Implement Action Extensions to provide quick access to commonly used features of your app.
 
@@ -89,8 +89,6 @@ Finally, signal that the action is complete by calling [`completeRequest(returni
 
 > **Note**: If you wish to preserve the input files instead of replacing them, it is important that `NSItemProvider` objects for the original input files are also included in the returned array of item providers. The `ThumbnailAction` target in this sample code project demonstrates passing back both the original input files as well as new thumbnail files.
 
-If you wish to preserve the input files instead of replacing them, it is important that `NSItemProvider` objects for the original input files are also included in the returned array of item providers. The `ThumbnailAction` target in this sample code project demonstrates passing back both the original input files as well as new thumbnail files.
-
 ##### Process Text Data
 
 The `UppercaseAction` extension accepts any text, either supplied as attachments in the same way as `ThumbnailAction` and `RemoveOpacityAction`, or from other sources such as a standard `NSTextField` control. Check the [`attributedContentText`](https://developer.apple.com/documentation/foundation/nsextensionitem/1408297-attributedcontenttext) property for input from text fields.
@@ -108,8 +106,6 @@ context.completeRequest(returningItems: [outputItem], completionHandler: nil)
 If the action requires user interaction then the extension may present a user interface. Set the [`NSExtensionPointIdentifier`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15) key in the `Info.plist` to `com.apple.ui-services` and ensure that the principal class is a subclass of  [`NSViewController`](nsviewcontroller.md). If the extension does not require user interaction, specify `com.apple.services` and have the principal class conform to `NSExtensionRequestHandling`.
 
 > **Note**: When creating a new Action Extension target, Xcode prompts you to decide if your extension will present a user interface. Based on that choice, Xcode sets appropriate initial values for `NSExtensionPointIdentifier` and [`NSExtensionPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW3).
-
-When creating a new Action Extension target, Xcode prompts you to decide if your extension will present a user interface. Based on that choice, Xcode sets appropriate initial values for `NSExtensionPointIdentifier` and [`NSExtensionPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW3).
 
 Extensions that present a user interface show their view controller’s view immediately after the extension calls [`beginRequest(with:)`](https://developer.apple.com/documentation/foundation/nsextensionrequesthandling/1413395-beginrequest) and should input files with the [`extensionContext`](nsviewcontroller/extensioncontext.md) property of [`NSViewController`](nsviewcontroller.md).
 
@@ -150,4 +146,4 @@ For information on how to add Quick Actions to the Touch Bar see the [`Automator
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/add-functionality-to-finder-with-action-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/add-functionality-to-finder-with-action-extensions)*

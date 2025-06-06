@@ -20,8 +20,6 @@ A [`SocketPort`](socketport.md) object can be used as an endpoint for distribute
 
 > **Note**:  The [`SocketPort`](socketport.md) class conforms to the [`NSCoding`](nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](nsportcoder.md). [`Port`](port.md) and its other subclasses do not support archiving.
 
- The [`SocketPort`](socketport.md) class conforms to the [`NSCoding`](nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](nsportcoder.md). [`Port`](port.md) and its other subclasses do not support archiving.
-
 ## Topics
 
 ### Creating Instances
@@ -73,4 +71,4 @@ A [`SocketPort`](socketport.md) object can be used as an endpoint for distribute
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/socketport)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/socketport)*

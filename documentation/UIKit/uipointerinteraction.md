@@ -1,6 +1,6 @@
 # UIPointerInteraction
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An interaction that enables support for effects on a view or customizes the pointer’s appearance within a region of an app.
@@ -23,8 +23,6 @@ class UIPointerInteraction
 If you use a [`UIButton`](uibutton.md) as an interface object, use the button’s [`isPointerInteractionEnabled`](uibutton/ispointerinteractionenabled.md) and [`pointerStyleProvider`](uibutton/pointerstyleprovider-1d4d2.md) to customize the proposed effect before constructing your own custom pointer effect using a [`UIPointerInteraction`](uipointerinteraction.md).
 
 > **Note**:  In iPadOS, the visual interactions when using mouse or trackpad input versus Apple Pencil input are slightly different: For example, pointer styles such as the system pointer aren’t visible while using Apple Pencil. However, both input devices support effect-based pointers, but have a slightly different visual appearance depending on which device is in use.
-
- In iPadOS, the visual interactions when using mouse or trackpad input versus Apple Pencil input are slightly different: For example, pointer styles such as the system pointer aren’t visible while using Apple Pencil. However, both input devices support effect-based pointers, but have a slightly different visual appearance depending on which device is in use.
 
 ## Topics
 
@@ -69,4 +67,4 @@ If you use a [`UIButton`](uibutton.md) as an interface object, use the button’
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipointerinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipointerinteraction)*

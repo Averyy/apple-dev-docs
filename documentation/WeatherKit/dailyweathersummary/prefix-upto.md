@@ -54,8 +54,6 @@ if let i = numbers.firstIndex(of: 40) {
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `end`: The “past the end” index of the resulting subsequence.    must be a valid index of the collection.

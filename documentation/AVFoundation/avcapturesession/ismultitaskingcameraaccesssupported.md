@@ -1,6 +1,6 @@
 # isMultitaskingCameraAccessSupported
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the capture session supports using the camera while multitasking.
@@ -25,8 +25,6 @@ Prior to iOS 18, this property is [`true`](https://developer.apple.com/documenta
 In tvOS, this property is always [`true`](https://developer.apple.com/documentation/swift/true).
 
 > **Note**:  This property is key-value observable. If the value changes from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false), the value of [`isMultitaskingCameraAccessEnabled`](avcapturesession/ismultitaskingcameraaccessenabled.md) also changes to [`false`](https://developer.apple.com/documentation/swift/false).
-
- This property is key-value observable. If the value changes from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false), the value of [`isMultitaskingCameraAccessEnabled`](avcapturesession/ismultitaskingcameraaccessenabled.md) also changes to [`false`](https://developer.apple.com/documentation/swift/false).
 
 To learn about best practices for using the camera while multitasking, see [`Accessing the camera while multitasking on iPad`](https://developer.apple.com/documentation/AVKit/accessing-the-camera-while-multitasking-on-ipad).
 

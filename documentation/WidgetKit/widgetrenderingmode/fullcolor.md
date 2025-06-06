@@ -31,8 +31,6 @@ The system displays full-color widget-based complications on some watch faces, s
 
 > **Note**: The Infograph face only uses full-color rendering when the user sets the face to multicolor. If the user selects an accent color, the system uses [`accented`](widgetrenderingmode/accented.md) instead.
 
-The Infograph face only uses full-color rendering when the user sets the face to multicolor. If the user selects an accent color, the system uses [`accented`](widgetrenderingmode/accented.md) instead.
-
 ## See Also
 
 - [static let accented: WidgetRenderingMode](widgetrenderingmode/accented.md)

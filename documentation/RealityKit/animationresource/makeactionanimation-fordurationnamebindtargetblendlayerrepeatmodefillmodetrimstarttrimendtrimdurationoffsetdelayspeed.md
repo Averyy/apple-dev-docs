@@ -1,6 +1,6 @@
 # makeActionAnimation(for:duration:name:bindTarget:blendLayer:repeatMode:fillMode:trimStart:trimEnd:trimDuration:offset:delay:speed:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Creates an action animation containing a single event definition from an action.
@@ -26,8 +26,6 @@ An animation resource to play the given action.
 #### Discussion
 
 > **Note**: Duration is clamped to a positive, small non zero value, if duration is zero or less.
-
-Duration is clamped to a positive, small non zero value, if duration is zero or less.
 
 ## Parameters
 

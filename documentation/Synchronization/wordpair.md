@@ -47,8 +47,6 @@ extension GridPoint: AtomicRepresentable {
 
 > **Note**: This type only conforms to `AtomicRepresentable` on platforms that support double wide atomics.
 
-This type only conforms to `AtomicRepresentable` on platforms that support double wide atomics.
-
 ## Topics
 
 ### Initializers
@@ -94,4 +92,4 @@ This type only conforms to `AtomicRepresentable` on platforms that support doubl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/synchronization/wordpair)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Synchronization/wordpair)*

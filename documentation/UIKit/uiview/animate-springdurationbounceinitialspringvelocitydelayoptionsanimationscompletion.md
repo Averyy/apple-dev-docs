@@ -1,6 +1,6 @@
 # animate(springDuration:bounce:initialSpringVelocity:delay:options:animations:completion:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Animates changes to one or more views using a spring animation with the specified duration, bounce, initial velocity, delay, options, and completion handler.
@@ -24,8 +24,6 @@ Animates changes to one or more views using a spring animation with the specifie
 #### Discussion
 
 > **Note**:  Session 10055: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10055/)
-
- Session 10055: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10055/)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # AnchorEntity
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: class
 
 An anchor that tethers entities to a scene.
@@ -52,8 +52,6 @@ Some anchor entities might not show up in your scene at all if RealityKit fails 
 You can have multiple anchors in a RealityKit scene. For example, one anchor can place a toy car on a horizontal surface, like a table, and another can tie an informative text bubble to an image in the same scene.
 
 > **Note**: By default, physics bodies and colliders affect only entities that share the same anchor.
-
-By default, physics bodies and colliders affect only entities that share the same anchor.
 
 An entity and its descendants can participate in the physics simulation at the root of your scene by setting its [`physicsSimulation`](anchoringcomponent/physicssimulation-swift.property.md) to [`AnchoringComponent.PhysicsSimulation.none`](anchoringcomponent/physicssimulation-swift.enum/none.md).
 
@@ -118,4 +116,4 @@ An entity and its descendants can participate in the physics simulation at the r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/anchorentity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/anchorentity)*

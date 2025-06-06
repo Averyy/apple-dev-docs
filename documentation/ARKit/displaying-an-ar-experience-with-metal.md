@@ -1,6 +1,6 @@
 # Displaying an AR Experience with Metal
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Control rendering of your app’s virtual content on top of a camera feed.
 
@@ -17,8 +17,6 @@ In any AR experience, the first step is to configure an [`ARSession`](arsession.
 3. Use the tracking information to position and draw AR content atop the camera image.
 
 > **Note**:  This article covers code found in Xcode project templates. For complete example code, create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.
-
- This article covers code found in Xcode project templates. For complete example code, create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.
 
 ##### Get Video Frames and Tracking Data From the Session
 
@@ -110,8 +108,6 @@ fragment float4 capturedImageFragmentShader(ImageColorInOut in [[stage_in]],
 
 > **Note**:  Use the [`displayTransform(for:viewportSize:)`](arframe/displaytransform(for:viewportsize:).md) method to make sure the camera image covers the entire view. For example use of this method, as well as complete Metal pipeline setup code, see the full Xcode template. (Create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.)
 
- Use the [`displayTransform(for:viewportSize:)`](arframe/displaytransform(for:viewportsize:).md) method to make sure the camera image covers the entire view. For example use of this method, as well as complete Metal pipeline setup code, see the full Xcode template. (Create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.)
-
 ##### Track and Render Overlay Content
 
 AR experiences typically focus on rendering 3D overlay content so that the content appears to be part of the real world seen in the camera image. To achieve this illusion, use the [`ARAnchor`](aranchor.md) class to model the position and orientation of your own 3D content relative to real-world space. Anchors provide transforms that you can reference during rendering.
@@ -164,8 +160,6 @@ func updateAnchors(frame: ARFrame) {
 
 > **Note**:  In a more complex AR experience, you can use hit testing or plane detection to find the positions of real-world surfaces. For details, see the [`planeDetection`](arworldtrackingconfiguration/planedetection-swift.property.md) property and the [`hitTest(_:types:)`](arframe/hittest(_:types:).md) method. In both cases, ARKit provides results as [`ARAnchor`](aranchor.md) objects, so you still use anchor transforms to place visual content.
 
- In a more complex AR experience, you can use hit testing or plane detection to find the positions of real-world surfaces. For details, see the [`planeDetection`](arworldtrackingconfiguration/planedetection-swift.property.md) property and the [`hitTest(_:types:)`](arframe/hittest(_:types:).md) method. In both cases, ARKit provides results as [`ARAnchor`](aranchor.md) objects, so you still use anchor transforms to place visual content.
-
 ##### Render with Realistic Lighting
 
 When you configure shaders for drawing 3D content in your scene, use the estimated lighting information in each [`ARFrame`](arframe.md) object to produce more realistic shading. See the following code that an app’s custom renderer performs while updating its shared uniforms:
@@ -182,8 +176,6 @@ uniforms.pointee.ambientLightColor = ambientLightColor * ambientIntensity
 
 > **Note**:  For the complete set of Metal setup and rendering commands that go with this example, see the full Xcode template. (Create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.)
 
- For the complete set of Metal setup and rendering commands that go with this example, see the full Xcode template. (Create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.)
-
 ## See Also
 
 - [Choosing Which Camera Feed to Augment](choosing-which-camera-feed-to-augment.md)
@@ -198,4 +190,4 @@ uniforms.pointee.ambientLightColor = ambientLightColor * ambientIntensity
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/displaying-an-ar-experience-with-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/displaying-an-ar-experience-with-metal)*

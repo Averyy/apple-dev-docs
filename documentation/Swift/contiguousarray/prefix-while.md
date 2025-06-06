@@ -24,8 +24,6 @@ func prefix(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.Sub
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `predicate`: A closure that takes an element of the   sequence as its argument and returns   if the element should   be included or   if it should be excluded. Once the predicate   returns   it will not be called again.

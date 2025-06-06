@@ -1,6 +1,6 @@
 # gestureRecognizerShouldBegin(_:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Asks the view if the gesture recognizer should continue tracking touch events.
@@ -32,8 +32,6 @@ At the time this method is called, the gesture recognizer is in the [`UIGestureR
 The default implementation of this method returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 > **Note**:  In iOS 17, Messages allows you to interactively resize iMessage apps with a vertical pan gesture. Messages handles any conflicts between resize gestures and your custom gestures. If your app uses manual touch handling, override those methods in your app’s [`UIView`](uiview.md). You can either change your manual touch handling code to use a gesture recognizer instead, or your [`UIView`](uiview.md) can override [`gestureRecognizerShouldBegin(_:)`](uigesturerecognizerdelegate/gesturerecognizershouldbegin(_:).md) and return NO when your iMessage app doesn’t own the gesture.
-
- In iOS 17, Messages allows you to interactively resize iMessage apps with a vertical pan gesture. Messages handles any conflicts between resize gestures and your custom gestures. If your app uses manual touch handling, override those methods in your app’s [`UIView`](uiview.md). You can either change your manual touch handling code to use a gesture recognizer instead, or your [`UIView`](uiview.md) can override [`gestureRecognizerShouldBegin(_:)`](uigesturerecognizerdelegate/gesturerecognizershouldbegin(_:).md) and return NO when your iMessage app doesn’t own the gesture.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Handling Flow Copying
 
-**Framework**: Network Extension
+**Framework**: Networkextension
 
 Exchange data streams by using proxy-provider classes.
 
@@ -15,8 +15,6 @@ Some proxy providers may only want to flow copy for a specific set of traffic, s
 When implementing a [`NEAppProxyProvider`](neappproxyprovider.md) or [`NEDNSProxyProvider`](nednsproxyprovider.md), you must deal with flows. The system calls the [`handleNewFlow(_:)`](neappproxyprovider/handlenewflow(_:).md) method for a flow that the proxy provider claims, based on network settings configured in the provider. A flow enters this method in a closed state, so returning `false` in this method indicates the flow remains closed and the system discards it.
 
 > **Note**:  Starting with macOS 11, you can use [`NETransparentProxyProvider`](netransparentproxyprovider.md) to flow copy specific data streams.
-
- Starting with macOS 11, you can use [`NETransparentProxyProvider`](netransparentproxyprovider.md) to flow copy specific data streams.
 
 ##### Decide How to Handle a Flow
 
@@ -132,4 +130,4 @@ When the system marks the connection as complete, the flow copying process is fi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/handling-flow-copying)*
+*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/handling-flow-copying)*

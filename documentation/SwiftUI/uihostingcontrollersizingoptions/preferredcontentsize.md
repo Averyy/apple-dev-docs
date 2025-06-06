@@ -1,6 +1,6 @@
 # preferredContentSize
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 The hosting controller tracks its content’s ideal size in its preferred content size.
@@ -24,8 +24,6 @@ Use this option when using a hosting controller with a container view controller
 
 > **Note**: This option comes with a performance cost because it asks for the ideal size of the content using the [`unspecified`](proposedviewsize/unspecified.md) size proposal.
 
-This option comes with a performance cost because it asks for the ideal size of the content using the [`unspecified`](proposedviewsize/unspecified.md) size proposal.
-
 ## See Also
 
 - [static let intrinsicContentSize: UIHostingControllerSizingOptions](uihostingcontrollersizingoptions/intrinsiccontentsize.md)
@@ -34,4 +32,4 @@ This option comes with a performance cost because it asks for the ideal size of 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/uihostingcontrollersizingoptions/preferredcontentsize)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/uihostingcontrollersizingoptions/preferredcontentsize)*

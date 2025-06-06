@@ -1,6 +1,6 @@
 # Building a search interface for your app
 
-**Framework**: Core Spotlight
+**Framework**: Corespotlight
 
 Add a search interface to your app to execute Spotlight queries and offer suggested text completions.
 
@@ -91,8 +91,6 @@ List {
 
 > **Note**: If you receive suggestions using the [`foundSuggestionsHandler`](csuserquery/foundsuggestionshandler.md) closure, the system provides the [`CSSuggestion`](cssuggestion.md) objects directly. Extract the data from those objects and use it to build your views.
 
-If you receive suggestions using the [`foundSuggestionsHandler`](csuserquery/foundsuggestionshandler.md) closure, the system provides the [`CSSuggestion`](cssuggestion.md) objects directly. Extract the data from those objects and use it to build your views.
-
 To display suggestions from a [`UISearchController`](https://developer.apple.com/documentation/UIKit/UISearchController) in your UIKit app, create [`UISearchSuggestionItem`](https://developer.apple.com/documentation/UIKit/UISearchSuggestionItem) objects for each suggestion you receive from your query. When you add those suggestion items to the [`searchSuggestions`](https://developer.apple.com/documentation/UIKit/UISearchController/searchSuggestions) property of the search controller, it automatically displays them from its interface. Each time you execute a new query, clear the old search suggestions from this property and add the new ones.
 
 For more information on adding search suggestions to your SwiftUI views, see [`Suggesting search terms`](https://developer.apple.com/documentation/SwiftUI/Suggesting-search-terms).
@@ -115,4 +113,4 @@ For more information on adding search suggestions to your SwiftUI views, see [`S
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corespotlight/building-a-search-interface-for-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreSpotlight/building-a-search-interface-for-your-app)*

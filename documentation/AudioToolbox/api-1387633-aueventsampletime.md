@@ -1,6 +1,6 @@
 # AUEventSampleTime
 
-**Framework**: Audio Toolbox
+**Framework**: Audiotoolbox
 
 Expresses time as a sample count.
 
@@ -9,8 +9,6 @@ Expresses time as a sample count.
 Callers of the [`AUScheduleParameterBlock`](auscheduleparameterblock.md) and [`AUScheduleMIDIEventBlock`](auschedulemidieventblock.md) blocks can pass the `AUEventSampleTimeImmediate` value to indicate that the event should be rendered as soon as possible (in the next cycle). A caller may also add a small (less than 4096) sample frame offset to this constant.
 
 > **Note**:  The base [`AUAudioUnit`](auaudiounit.md) implementation translates the `AUEventSampleTimeImmediate` constant to a true [`AUEventSampleTime`](aueventsampletime.md) value. Subclasses will not see this value.
-
- The base [`AUAudioUnit`](auaudiounit.md) implementation translates the `AUEventSampleTimeImmediate` constant to a true [`AUEventSampleTime`](aueventsampletime.md) value. Subclasses will not see this value.
 
 ## Topics
 

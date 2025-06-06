@@ -62,8 +62,6 @@ Alternatively, you can explicitly respond to taps in a table row by implementing
 
 > **Note**:  Row controllers that include controls such as switches, sliders, and buttons must use action methods to respond to interactions with those controls. The system doesn’t deliver taps in controls to your interface controller’s [`table(_:didSelectRowAt:)`](wkinterfacecontroller/table(_:didselectrowat:).md) method.
 
- Row controllers that include controls such as switches, sliders, and buttons must use action methods to respond to interactions with those controls. The system doesn’t deliver taps in controls to your interface controller’s [`table(_:didSelectRowAt:)`](wkinterfacecontroller/table(_:didselectrowat:).md) method.
-
 ##### Support Item Pagination
 
 Item Pagination lets users easily navigate through lists of items. When the user selects an item from the table, the app displays a detailed view for the item. The user can then scroll up and down to navigate between other sibling items from that table. For example if the user selects a stock symbol in the Stocks app, it loads the details for that stock. They can then scroll vertically to navigate to other stocks.
@@ -145,4 +143,4 @@ For each row controller in your table, The following table lists the attributes 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkinterfacetable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkinterfacetable)*

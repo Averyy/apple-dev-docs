@@ -1,6 +1,6 @@
 # Choosing tax codes for your SKUs
 
-**Framework**: Advanced Commerce API
+**Framework**: Advancedcommerceapi
 
 Select a tax code for each SKU that represents a product your app offers as an in-app purchase.
 
@@ -11,8 +11,6 @@ Each SKU, which represents a unique product that your app offers as an in-app pu
 Use the following table to look up tax codes for your products.
 
 > **Note**: Other tax codes are available, similar to those listed in [`Set a tax category`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-app-information/set-a-tax-category). If you don’t see an appropriate tax code for your product in the table below, send a request using the Advanced Commerce API Access form on the [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/) page.
-
-Other tax codes are available, similar to those listed in [`Set a tax category`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-app-information/set-a-tax-category). If you don’t see an appropriate tax code for your product in the table below, send a request using the Advanced Commerce API Access form on the [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/) page.
 
 ##### Look Up Tax Codes for in App Purchases
 
@@ -45,4 +43,4 @@ For more information about tax categories, see [`Set a tax category`](https://de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/taxcodes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/taxcodes)*

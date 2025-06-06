@@ -1,6 +1,6 @@
 # Creating a Safari web extension
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Build a Safari web extension in Xcode.
 
@@ -33,8 +33,6 @@ Provide information in the dialog for Xcode to configure your project:
 
 > **Note**:  XCTest doesn’t support unit tests for the JavaScript APIs that Safari web extensions use, or UI tests in Safari. Use XCTest if you build features in the iOS or macOS app container using Swift or Objective-C.
 
- XCTest doesn’t support unit tests for the JavaScript APIs that Safari web extensions use, or UI tests in Safari. Use XCTest if you build features in the iOS or macOS app container using Swift or Objective-C.
-
 ##### Review the Generated Web Extension Files and Folders
 
 Xcode generates the project, provides default versions of the files you need to create your Safari web extension, and organizes them into the groups and folders illustrated in the following figure:
@@ -44,8 +42,6 @@ Xcode generates the project, provides default versions of the files you need to 
 The project contains default versions of web extension files in the Resources group:
 
 > 💡 **Tip**:  To use your web extension in other browsers, repackage the files in the Resources group. The other files in the Xcode project are for the iOS or macOS app the system needs to use your web extension in Safari.
-
- To use your web extension in other browsers, repackage the files in the Resources group. The other files in the Xcode project are for the iOS or macOS app the system needs to use your web extension in Safari.
 
 See [`Running your Safari web extension`](running-your-safari-web-extension.md) to try out your web extension in Safari.
 
@@ -69,4 +65,4 @@ Before you distribute your Safari web extension, create icons for the iOS and ma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/creating-a-safari-web-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/creating-a-safari-web-extension)*

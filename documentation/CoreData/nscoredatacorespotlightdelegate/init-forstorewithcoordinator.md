@@ -1,6 +1,6 @@
 # init(forStoreWith:coordinator:)
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: init
 
 Creates a Core Spotlight delegate with the specified store description and coordinator.
@@ -23,8 +23,6 @@ init(forStoreWith description: NSPersistentStoreDescription, coordinator psc: NS
 After you initialize a Core Spotlight delegate, call the [`startSpotlightIndexing()`](nscoredatacorespotlightdelegate/startspotlightindexing().md) to begin indexing your store’s contents.
 
 > **Note**:  If you initialize your Core Spotlight delegate using this method, you don’t need to set the [`NSCoreDataCoreSpotlightExporter`](nscoredatacorespotlightexporter.md) option on the specified store description.
-
- If you initialize your Core Spotlight delegate using this method, you don’t need to set the [`NSCoreDataCoreSpotlightExporter`](nscoredatacorespotlightexporter.md) option on the specified store description.
 
 ## Parameters
 

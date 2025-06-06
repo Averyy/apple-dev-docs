@@ -1,6 +1,6 @@
 # automaticReloadBilling
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 A line item that contains the reload amount and balance threshold for the automatic reload payment.
@@ -23,8 +23,6 @@ Set the [`automaticReloadPaymentThresholdAmount`](applepaylineitem/automaticrelo
 
 > **Note**:  Set the [`paymentTiming`](applepaylineitem/paymenttiming.md) property of the line item to `"automaticReload"` to avoid an error.
 
- Set the [`paymentTiming`](applepaylineitem/paymenttiming.md) property of the line item to `"automaticReload"` to avoid an error.
-
 ## See Also
 
 - [ApplePayLineItem](applepaylineitem.md)
@@ -33,4 +31,4 @@ Set the [`automaticReloadPaymentThresholdAmount`](applepaylineitem/automaticrelo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepayautomaticreloadpaymentrequest/automaticreloadbilling)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepayautomaticreloadpaymentrequest/automaticreloadbilling)*

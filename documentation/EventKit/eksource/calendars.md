@@ -1,6 +1,6 @@
 # calendars
 
-**Framework**: EventKit  
+**Framework**: Eventkit  
 **Kind**: property
 
 The calendars that belong to this source object.
@@ -17,8 +17,6 @@ var calendars: Set<EKCalendar> { get }
 #### Discussion
 
 > **Note**:  This property is not available in macOS.
-
- This property is not available in macOS.
 
 ## See Also
 

@@ -25,8 +25,6 @@ The meaning of the location number depends on a device’s [`location`](mtldevic
 
 > **Note**:  It’s possible for multiple devices to share the same location and number. For example, a card in a slot may have multiple GPUs, or a person may connect multiple eGPUs to the same Thunderbolt port.
 
- It’s possible for multiple devices to share the same location and number. For example, a card in a slot may have multiple GPUs, or a person may connect multiple eGPUs to the same Thunderbolt port.
-
 ## See Also
 
 - [var name: String](mtldevice/name.md)

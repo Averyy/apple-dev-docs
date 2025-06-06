@@ -1,6 +1,6 @@
 # Supporting drag and drop in table views
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Initiate drags and handle drops from a table view.
 
@@ -17,8 +17,6 @@ Table views support drag and drop through a specialized API that works with the 
 The table view manages most drag-related interactions, but you need to specify which rows to drag. When the drag gesture occurs, the table view creates a drag session and calls the [`tableView(_:itemsForBeginning:at:)`](uitableviewdragdelegate/tableview(_:itemsforbeginning:at:).md) method of your drag delegate object. (When the user drags a selected row, this method is called once for each row in the selection. If no rows are selected, the method is called only once for the underlying row.) If you return a non empty array, the table view begins dragging the rows that you specify. Return an empty array when you don’t allow the user to drag content from the specified index path.
 
 > **Note**:  Use the other methods of the [`UITableViewDragDelegate`](uitableviewdragdelegate.md) protocol to manage additional drag-related interactions. For example, you can customize the appearance of the rows being dragged and let the user add items to the current drag session.
-
- Use the other methods of the [`UITableViewDragDelegate`](uitableviewdragdelegate.md) protocol to manage additional drag-related interactions. For example, you can customize the appearance of the rows being dragged and let the user add items to the current drag session.
 
 In your implementation of the [`tableView(_:itemsForBeginning:at:)`](uitableviewdragdelegate/tableview(_:itemsforbeginning:at:).md) method, do the following:
 
@@ -79,4 +77,4 @@ When the [`NSItemProvider`](https://developer.apple.com/documentation/Foundation
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-drag-and-drop-in-table-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-drag-and-drop-in-table-views)*

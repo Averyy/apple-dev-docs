@@ -1,6 +1,6 @@
 # Setting up HealthKit
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Set up and configure your HealthKit store.
 
@@ -28,8 +28,6 @@ When you enable the HealthKit capabilities on an iOS app, Xcode adds HealthKit t
 If HealthKit isn’t required for the correct operation of your app, delete the `healthkit` entry from the “Required device capabilities” array. Delete this entry from either the Target Properties list on the app’s Info tab or from the app’s `Info.plist` file.
 
 > **Note**:  The `healthkit` entry isn’t used by watchOS apps.
-
- The `healthkit` entry isn’t used by watchOS apps.
 
 For more information on required device capabilities, see the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities).
 
@@ -88,4 +86,4 @@ You need only a single HealthKit store per app. These are long-lived objects; yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/setting-up-healthkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/setting-up-healthkit)*

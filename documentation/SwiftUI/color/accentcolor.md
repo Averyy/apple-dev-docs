@@ -1,6 +1,6 @@
 # accentColor
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 A color that reflects the accent color of the system or app.
@@ -26,8 +26,6 @@ The accent color is a broad theme color applied to views and controls. You can s
 
 > **Note**: In macOS, SwiftUI applies customization of the accent color only if the user chooses Multicolor under General > Accent color in System Preferences.
 
-In macOS, SwiftUI applies customization of the accent color only if the user chooses Multicolor under General > Accent color in System Preferences.
-
 The following code renders a [`Text`](text.md) view using the app’s accent color:
 
 ```swift
@@ -45,4 +43,4 @@ Text("Accent Color")
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/color/accentcolor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/color/accentcolor)*

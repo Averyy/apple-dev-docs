@@ -1,6 +1,6 @@
 # duration
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The duration of the item.
@@ -31,8 +31,6 @@ The system reports the value of this property as [`indefinite`](https://develope
 - Register for key-value observation of the property and request the initial value. If the system reports the initial value as [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite), wait for the player item to notify you when [`duration`](avplayeritem/duration.md) becomes available.
 
 > **Note**:  The value of [`duration`](avplayeritem/duration.md) may remain [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite) for live streams.
-
- The value of [`duration`](avplayeritem/duration.md) may remain [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite) for live streams.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # srcset
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Specifies multiple URLs for an image.
 
@@ -20,8 +20,6 @@ Use the `srcset` attribute to specify different URLs for an image depending on t
 
 > **Note**: When this attribute loads an image using an HTTP URL, you must add `height` and `width` attributes to the element.
 
-When this attribute loads an image using an HTTP URL, you must add `height` and `width` attributes to the element.
-
 ##### Values for Srcset
 
 ##### Elements That Use Srcset
@@ -40,4 +38,4 @@ When this attribute loads an image using an HTTP URL, you must add `height` and 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/srcset)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/srcset)*

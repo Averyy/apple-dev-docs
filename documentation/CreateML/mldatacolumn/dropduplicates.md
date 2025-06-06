@@ -1,6 +1,6 @@
 # dropDuplicates()
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Creates a subset of the column by removing all duplicate elements.
@@ -26,8 +26,6 @@ A new column.
 #### Discussion
 
 > **Note**: The new column may not preserve the order of the original column.
-
-The new column may not preserve the order of the original column.
 
 ## See Also
 

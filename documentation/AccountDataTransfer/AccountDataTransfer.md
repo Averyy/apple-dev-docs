@@ -1,6 +1,6 @@
 # Account Data Transfer
 
-**Framework**: Account Data Transfer  
+**Framework**: Accountdatatransfer  
 **Kind**: module
 
 Download App Store information and app-install activity on behalf of your app’s users.
@@ -22,14 +22,6 @@ You also need to supply the query parameter `consent_mode`, with the value `auth
 To get permission for your App ID or Services ID to request these scopes, follow the instructions at [`Account & Organizational Data Sharing`](https://developer.apple.comhttps://developer.apple.com/help/account/service-configurations/share-account-and-organizational-data).
 
 > **Note**:  This API returns account data about users in the EU and UK. If you are an app developer and need to transfer data related to App Store activity and app-install activity for your app instead, use [`App Data Transfer`](https://developer.apple.com/documentation/AppDataTransfer). If you request access to the Account Data Transfer API, and Apple grants your request, you don’t need to supply the `consent_mode` query parameter when you request an authorization token for the App Data Transfer API. If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option: Developer Tools & Resources > Account Data Transfer API > Data Request [`Learn more`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
-
- This API returns account data about users in the EU and UK. If you are an app developer and need to transfer data related to App Store activity and app-install activity for your app instead, use [`App Data Transfer`](https://developer.apple.com/documentation/AppDataTransfer). If you request access to the Account Data Transfer API, and Apple grants your request, you don’t need to supply the `consent_mode` query parameter when you request an authorization token for the App Data Transfer API.
-
-If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option:
-
-Developer Tools & Resources > Account Data Transfer API > Data Request
-
-[`Learn more`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
 ##### Set Required Http Headers
 

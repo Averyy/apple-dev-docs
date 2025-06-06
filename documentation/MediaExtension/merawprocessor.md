@@ -1,6 +1,6 @@
 # MERAWProcessor
 
-**Framework**: MediaExtension  
+**Framework**: Mediaextension  
 **Kind**: protocol
 
 A protocol that defines the requirements for a RAW processor.
@@ -20,15 +20,9 @@ This protocol provides an interface for [`Video Toolbox`](https://developer.appl
 
 > **Note**:  Developers who wish to build MediaExtension RAW processors using this API need to include a [`RAW processor entitlement`](raw-processor-entitlement.md), provisioning profile, and specialized dictionary in their Info.plist file when building their extensions. For more information, see [`Entitlements`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements), [`Create a development provisioning profile`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/create-a-development-provisioning-profile), and [`RAW processor property list dictionary`](raw-processor-property-list-dictionary.md).
 
- Developers who wish to build MediaExtension RAW processors using this API need to include a [`RAW processor entitlement`](raw-processor-entitlement.md), provisioning profile, and specialized dictionary in their Info.plist file when building their extensions.
-
-For more information, see [`Entitlements`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements), [`Create a development provisioning profile`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/create-a-development-provisioning-profile), and [`RAW processor property list dictionary`](raw-processor-property-list-dictionary.md).
-
 Once a user installs and runs the host app, embedded RAW processor extensions become available to any app on the user’s system that opts in to using them by calling [`VTRegisterProfessionalVideoWorkflowVideoDecoders()`](https://developer.apple.com/documentation/VideoToolbox/VTRegisterProfessionalVideoWorkflowVideoDecoders()).
 
 > ❗ **Important**:  `MERAWProcessor` objects run in a sandboxed process without access to the filesystem, network, and other kernel resources.
-
- `MERAWProcessor` objects run in a sandboxed process without access to the filesystem, network, and other kernel resources.
 
 MediaExtension RAW processor’s operation and life cycle closely tie to [`VTRAWProcessingSession`](https://developer.apple.com/documentation/VideoToolbox/VTRAWProcessingSession).
 

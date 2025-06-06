@@ -1,6 +1,6 @@
 # showsNodeCount
 
-**Framework**: SpriteKit  
+**Framework**: Spritekit  
 **Kind**: property
 
 A Boolean value that indicates whether the view displays an overlay that shows physics bodies that are visible in the scene.
@@ -29,8 +29,6 @@ var showsNodeCount: Bool { get set }
 When you enable this option, it shows the number of nodes currently in the scene’s node tree.
 
 > **Note**:  The[`shouldCullNonVisibleNodes`](skview/shouldcullnonvisiblenodes.md) property affects how many nodes in the node tree are included in SpriteKit’s render pass but it doesn’t affect the [`showsNodeCount`](skview/showsnodecount.md) statistic.
-
- The[`shouldCullNonVisibleNodes`](skview/shouldcullnonvisiblenodes.md) property affects how many nodes in the node tree are included in SpriteKit’s render pass but it doesn’t affect the [`showsNodeCount`](skview/showsnodecount.md) statistic.
 
 You may achieve additional performance gain by actually removing nodes from the node tree manually which are off screen. For example, in the case of [`shouldCullNonVisibleNodes`](skview/shouldcullnonvisiblenodes.md), there would be less nodes for SpriteKit to test every frame whether they’re on screen.
 

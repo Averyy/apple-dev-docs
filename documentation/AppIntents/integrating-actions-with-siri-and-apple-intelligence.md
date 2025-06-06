@@ -1,6 +1,6 @@
 # Integrating actions with Siri and Apple Intelligence
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Create app intents, entities, and enumerations that conform to assistant schemas to tap into the enhanced action capabilities of Siri and Apple Intelligence.
 
@@ -19,13 +19,9 @@ Apple Intelligence is a new personal intelligence system that deeply integrates 
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
 A big part of people’s personal context are the apps they use every day. The App Intents framework gives you a means to express your app’s capabilities and content to the system and integrate them with Siri and Apple Intelligence. This will unlock new ways for your users to interact with your app from anywhere on their device.
 
 > **Note**: If you’re new to the App Intents framework, make sure to read [`Making actions and content discoverable and widely available`](making-actions-and-content-discoverable-and-widely-available.md) and [`Creating your first app intent`](creating-your-first-app-intent.md).
-
-If you’re new to the App Intents framework, make sure to read [`Making actions and content discoverable and widely available`](making-actions-and-content-discoverable-and-widely-available.md) and [`Creating your first app intent`](creating-your-first-app-intent.md).
 
 ##### Understand Assistant Schemas
 
@@ -45,8 +41,6 @@ Each macro requires you to provide a `schema` value to generate app intent, app 
 For example, an app intent that opens a photo from a photo library uses `@AssistantIntent(schema: .photos.openAsset)` to make sure the intent provides necessary metadata that allows Apple Intelligence to understand it well.
 
 > ❗ **Important**: Only use the provided app intents domains and schemas for app actions and content that match the specific domain and schema.
-
-Only use the provided app intents domains and schemas for app actions and content that match the specific domain and schema.
 
 For a list of available assistant schemas, see [`App intent domains`](app-intent-domains.md).
 
@@ -70,8 +64,6 @@ To create an app intent that integrates your app functionality with Apple Intell
 5. Make changes to meet the schema requirements and rebuild your app.
 
 > 💡 **Tip**: Xcode code completion can create [`AppIntent`](appintent.md), [`AppEntity`](appentity.md), and [`AppEnum`](appenum.md) code that conforms to assistant schemas.
-
-Xcode code completion can create [`AppIntent`](appintent.md), [`AppEntity`](appentity.md), and [`AppEnum`](appenum.md) code that conforms to assistant schemas.
 
 The following code snippet shows how the [`Making your app’s functionality available to Siri`](making-your-app-s-functionality-available-to-siri.md) sample declares an app intent that opens a video from a device’s media library:
 
@@ -100,8 +92,6 @@ struct OpenAssetIntent: OpenIntent {
 ```
 
 > **Note**: When an app intent conforms to an assistant schema that is known at compile time, the system no longer needs metadata you previously provided, like a `title` or `description`. Remove them to simplify your code. However, you can always supply additional metadata as needed.
-
-When an app intent conforms to an assistant schema that is known at compile time, the system no longer needs metadata you previously provided, like a `title` or `description`. Remove them to simplify your code. However, you can always supply additional metadata as needed.
 
 ##### Ensure App Entities and App Enums Conform to the Schema
 
@@ -180,4 +170,4 @@ After some time, you can remove the  `isAssistantOnly` code and remove your old 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/integrating-actions-with-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/integrating-actions-with-siri-and-apple-intelligence)*

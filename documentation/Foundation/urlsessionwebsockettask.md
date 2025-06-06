@@ -32,8 +32,6 @@ You send data with [`send(_:completionHandler:)`](urlsessionwebsockettask/send(_
 
 > **Note**:  watchOS supports [`URLSessionWebSocketTask`](urlsessionwebsockettask.md) for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/Technotes/tn3135-low-level-networking-on-watchOS).
 
- watchOS supports [`URLSessionWebSocketTask`](urlsessionwebsockettask.md) for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/Technotes/tn3135-low-level-networking-on-watchOS).
-
 ## Topics
 
 ### Sending and receiving data
@@ -90,4 +88,4 @@ You send data with [`send(_:completionHandler:)`](urlsessionwebsockettask/send(_
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessionwebsockettask)*

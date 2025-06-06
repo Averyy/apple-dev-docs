@@ -41,8 +41,6 @@ do {
 
 > **Note**: The failure value, if the instance represents a failure.
 
-The failure value, if the instance represents a failure.
-
 
 ---
 

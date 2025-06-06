@@ -57,8 +57,6 @@ print(
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## Parameters
 
 - `maxSplits`: The maximum number of times to split the sequence, or one   less than the number of subsequences to return. If    subsequences are returned, the last one is a suffix of the original   sequence containing the remaining elements.   must be   greater than or equal to zero. The default value is  .

@@ -1,6 +1,6 @@
 # Making whiteboard actions available to Siri and Apple Intelligence
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Create app intents and entities that make your app’s whiteboard functionality available to Siri and Apple Intelligence.
 
@@ -9,8 +9,6 @@ Create app intents and entities that make your app’s whiteboard functionality 
 To integrate your app’s whiteboard capabilities with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance for your app intent and app entity implementation that Apple Intelligence needs.
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 For example, if your app allows someone to open a whiteboard, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.whiteboard` domain and the [`createBoard`](assistantschemas/whiteboardintent/createboard.md) schema:
 
@@ -88,4 +86,4 @@ For a list of available app enums in the `.whiteboard` domain, refer to [`Assist
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-whiteboard-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-whiteboard-actions-available-to-siri-and-apple-intelligence)*

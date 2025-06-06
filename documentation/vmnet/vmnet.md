@@ -17,8 +17,6 @@ The API allows a Guest OS interface to be in host mode or shared mode. Interface
 
 > **Note**: For more information about virtualization technologies, see the [`Hypervisor`](https://developer.apple.com/documentation/Hypervisor) framework.
 
-For more information about virtualization technologies, see the [`Hypervisor`](https://developer.apple.com/documentation/Hypervisor) framework.
-
 ##### Requirements
 
 The vmnet framework has the following requirements:

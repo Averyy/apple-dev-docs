@@ -1,6 +1,6 @@
 # Delivering Rich App Experiences with Haptics
 
-**Framework**: Core Haptics
+**Framework**: Corehaptics
 
 Enhance your app’s experience by incorporating haptic and sound feedback into key interactive moments.
 
@@ -12,8 +12,6 @@ Enhance your app’s experience by incorporating haptic and sound feedback into 
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`10278: Practice Audio Haptic Design`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc21/10278/).
-
-This sample code project is associated with WWDC21 session [`10278: Practice Audio Haptic Design`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc21/10278/).
 
 ##### Configure the Sample Code Project
 
@@ -37,4 +35,4 @@ This sample code project is associated with WWDC21 session [`10278: Practice Aud
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/delivering-rich-app-experiences-with-haptics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/delivering-rich-app-experiences-with-haptics)*

@@ -42,8 +42,6 @@ let compactMapped: [Int] = possibleNumbers.compactMap { str in Int(str) }
 
 > **Note**: O(), where  is the length of this sequence.
 
-O(), where  is the length of this sequence.
-
 ## Parameters
 
 - `transform`: A closure that accepts an element of this   sequence as its argument and returns an optional value.

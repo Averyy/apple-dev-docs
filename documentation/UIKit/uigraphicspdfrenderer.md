@@ -1,6 +1,6 @@
 # UIGraphicsPDFRenderer
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A graphics renderer for creating PDFs.
@@ -49,8 +49,6 @@ The drawing actions closure takes a single argument of type [`UIGraphicsPDFRende
 
 > **Note**:  This code uses a drawing method on [`NSString`](https://developer.apple.com/documentation/Foundation/NSString). If you want to create a PDF with more text, consider using [`TextKit`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW11) or [`Core Text`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/LowerLevelText-HandlingTechnologies/LowerLevelText-HandlingTechnologies.html#//apple_ref/doc/uid/TP40009542-CH15-SW3), both of which provide extensive text layout functionality.
 
- This code uses a drawing method on [`NSString`](https://developer.apple.com/documentation/Foundation/NSString). If you want to create a PDF with more text, consider using [`TextKit`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW11) or [`Core Text`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/LowerLevelText-HandlingTechnologies/LowerLevelText-HandlingTechnologies.html#//apple_ref/doc/uid/TP40009542-CH15-SW3), both of which provide extensive text layout functionality.
-
 The above code creates the following result:
 
 ![Image of a PDF open in Preview, with the word “Hello!” rendered in large, black lettering in the top-left.](https://docs-assets.developer.apple.com/published/a1502445dbaa2ddde3045eaa89064476/media-2864001%402x.png)
@@ -77,8 +75,6 @@ The following code demonstrates how to use destinations with a PDF renderer by s
 This code adds large red labels that jump from the current page to the next page when clicked. Each page has a destination with names of the form `page-1`, positioned at the origin. The bounding box for the next-page label is the link to the destination on the following page.
 
 > **Note**:  The [`addDestination(withName:at:)`](uigraphicspdfrenderercontext/adddestination(withname:at:).md) and [`setDestinationWithName(_:for:)`](uigraphicspdfrenderercontext/setdestinationwithname(_:for:).md) methods on [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md) use the underlying PDF coordinate space, which has its y-axis flipped with respect to the coordinate system used by Core Graphics. You can translate between the two using the [`userSpaceToDeviceSpaceTransform`](https://developer.apple.com/documentation/CoreGraphics/CGContext/userSpaceToDeviceSpaceTransform) property on [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext), as shown in the code.
-
- The [`addDestination(withName:at:)`](uigraphicspdfrenderercontext/adddestination(withname:at:).md) and [`setDestinationWithName(_:for:)`](uigraphicspdfrenderercontext/setdestinationwithname(_:for:).md) methods on [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md) use the underlying PDF coordinate space, which has its y-axis flipped with respect to the coordinate system used by Core Graphics. You can translate between the two using the [`userSpaceToDeviceSpaceTransform`](https://developer.apple.com/documentation/CoreGraphics/CGContext/userSpaceToDeviceSpaceTransform) property on [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext), as shown in the code.
 
 The above code results in the following PDF:
 
@@ -131,4 +127,4 @@ The above code results in the following PDF:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uigraphicspdfrenderer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uigraphicspdfrenderer)*

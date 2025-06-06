@@ -1,6 +1,6 @@
 # reloadData()
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Marks the table view as needing redisplay, so it will reload the data for visible cells and draw the new values.
@@ -20,8 +20,6 @@ func reloadData()
 This method forces a redraw of all the visible cells in the table view. If you want to update the value in a single cell, column, or row, it is more efficient to use [`frameOfCell(atColumn:row:)`](nstableview/frameofcell(atcolumn:row:).md), [`rect(ofColumn:)`](nstableview/rect(ofcolumn:).md), or [`rect(ofRow:)`](nstableview/rect(ofrow:).md) in conjunction with the [`setNeedsDisplay(_:)`](nsview/setneedsdisplay(_:).md) method of [`NSView`](nsview.md). If you just want to update the scroller, use [`noteNumberOfRowsChanged()`](nstableview/notenumberofrowschanged().md); if the height of a set of rows changes, use [`noteHeightOfRows(withIndexesChanged:)`](nstableview/noteheightofrows(withindexeschanged:).md).
 
 > **Note**:  For [`NSView`](nsview.md)-based table views, this method drops all the visible row views and cell views, and re-acquires them all.
-
- For [`NSView`](nsview.md)-based table views, this method drops all the visible row views and cell views, and re-acquires them all.
 
 ## See Also
 

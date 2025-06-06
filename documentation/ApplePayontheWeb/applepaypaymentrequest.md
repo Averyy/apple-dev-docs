@@ -1,6 +1,6 @@
 # ApplePayPaymentRequest
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: struct
 
 A request for payment, which includes information about payment-processing capabilities, the payment amount, and shipping information.
@@ -39,11 +39,11 @@ dictionary ApplePayPaymentRequest {
 
 ## Mentions
 
+- [Apple Pay on the Web Version 14 Release Notes](apple-pay-on-the-web-version-14-release-notes.md)
 - [Creating an Apple Pay Session](creating-an-apple-pay-session.md)
+- [Apple Pay on the Web Version 4 Release Notes](apple-pay-on-the-web-version-4-release-notes.md)
 - [Apple Pay on the Web Version 12 Release Notes](apple-pay-on-the-web-version-12-release-notes.md)
 - [Apple Pay on the Web Version 3 Release Notes](apple-pay-on-the-web-version-3-release-notes.md)
-- [Apple Pay on the Web Version 4 Release Notes](apple-pay-on-the-web-version-4-release-notes.md)
-- [Apple Pay on the Web Version 14 Release Notes](apple-pay-on-the-web-version-14-release-notes.md)
 
 #### Overview
 
@@ -60,8 +60,6 @@ A typical payment request is for a one-time payment. To support different types 
 - A [`multiTokenContexts`](applepaypaymentrequest/multitokencontexts.md) sequence to request multiple payment tokens to support multimerchant payments. Set up multitoken transactions to process and display payment requests with multiple merchants on one payment sheet, for example, a booking site where a user pays for a hotel, flight, and car rental from different merchants.
 
 > **Note**:  You can set only one of these optional payment request type properties on a payment request object.
-
- You can set only one of these optional payment request type properties on a payment request object.
 
 For recurring payments and automatic reload payments, you can optionally set up merchant token life-cycle notifications for the request. For more information, see [`Apple Pay Merchant Token Management API`](https://developer.apple.com/documentation/MerchantTokenNotificationServices).
 
@@ -150,4 +148,4 @@ For recurring payments and automatic reload payments, you can optionally set up 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypaymentrequest)*

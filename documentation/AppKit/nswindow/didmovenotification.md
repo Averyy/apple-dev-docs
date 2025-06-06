@@ -1,6 +1,6 @@
 # didMoveNotification
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 A notification that the window object moved.
@@ -19,8 +19,6 @@ class let didMoveNotification: NSNotification.Name
 The notification object is the `NSWindow` object that has moved. This notification doesn’t contain a `userInfo` dictionary.
 
 > **Note**:  The system sends this notification when the window that moved didn’t also change size. See [`didResizeNotification`](nswindow/didresizenotification.md) for more information.
-
- The system sends this notification when the window that moved didn’t also change size. See [`didResizeNotification`](nswindow/didresizenotification.md) for more information.
 
 ## See Also
 
@@ -58,4 +56,4 @@ The notification object is the `NSWindow` object that has moved. This notificati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow/didmovenotification)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow/didmovenotification)*

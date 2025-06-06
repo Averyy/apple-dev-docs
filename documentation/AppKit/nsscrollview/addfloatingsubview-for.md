@@ -1,6 +1,6 @@
 # addFloatingSubview(_:for:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Adds a floating subview to the document view.
@@ -22,8 +22,6 @@ Floating subviews of the document view do not scroll like the rest of the docume
 `NSScrollView` ensures that any scrolling on the non-floating axis is performed visually synchronously with the document content.
 
 > **Note**:  You are responsible for keeping track of the floating views and removing them via [`removeFromSuperview()`](nsview/removefromsuperview().md) when they should no longer float.
-
- You are responsible for keeping track of the floating views and removing them via [`removeFromSuperview()`](nsview/removefromsuperview().md) when they should no longer float.
 
 ## Parameters
 

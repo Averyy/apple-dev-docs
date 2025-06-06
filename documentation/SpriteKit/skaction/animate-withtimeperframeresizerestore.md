@@ -1,6 +1,6 @@
 # animate(with:timePerFrame:resize:restore:)
 
-**Framework**: SpriteKit  
+**Framework**: Spritekit  
 **Kind**: method
 
 Creates an action that animates changes to a sprite’s texture, possibly resizing the sprite.
@@ -29,8 +29,6 @@ A new action object.
 This action can only be executed by an [`SKSpriteNode`](skspritenode.md) object. When the action executes, the sprite’s [`texture`](skspritenode/texture.md) property animates through the array of textures. The sprite’s [`texture`](skspritenode/texture.md) property is changed to the next texture in the array. The action then pauses for the specified time before continuing. The action continues until it has finished animating through all of the textures in the array. The total duration of the action is the number of textures multiplied by the frame interval.
 
 > **Note**:  If the `restore` parameter is [`true`](https://developer.apple.com/documentation/swift/true) and this action is removed from a node before it completes, then node’s texture is still restored. This differs from the default behavior of removing an action.
-
- If the `restore` parameter is [`true`](https://developer.apple.com/documentation/swift/true) and this action is removed from a node before it completes, then node’s texture is still restored. This differs from the default behavior of removing an action.
 
 This action is reversible; the resulting action animates through the same textures from last to first.
 

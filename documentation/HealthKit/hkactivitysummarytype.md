@@ -1,6 +1,6 @@
 # HKActivitySummaryType
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: class
 
 A type that identifies activity summary objects.
@@ -24,8 +24,6 @@ class HKActivitySummaryType
 Use the activity summary type to request permission to read [`HKActivitySummary`](hkactivitysummary.md) objects from the HealthKit store. To create an activity summary type, use the [`HKObjectType`](hkobjecttype.md) class’s [`activitySummaryType()`](hkobjecttype/activitysummarytype().md) convenience method.
 
 > **Note**:  Although you can request permission to read [`HKActivitySummary`](hkactivitysummary.md) objects, you can’t request permission to share them. For more information, see [`requestAuthorization(toShare:read:completion:)`](hkhealthstore/requestauthorization(toshare:read:completion:).md).
-
- Although you can request permission to read [`HKActivitySummary`](hkactivitysummary.md) objects, you can’t request permission to share them. For more information, see [`requestAuthorization(toShare:read:completion:)`](hkhealthstore/requestauthorization(toshare:read:completion:).md).
 
 The [`HKActivitySummaryType`](hkactivitysummarytype.md) class is a concrete subclass of the [`HKObjectType`](hkobjecttype.md) class. Like many HealthKit classes, activity summary types aren’t extensible and you shouldn’t subclass them.
 
@@ -85,4 +83,4 @@ To query for activity summary objects, use an [`HKActivitySummaryQuery`](hkactiv
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkactivitysummarytype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkactivitysummarytype)*

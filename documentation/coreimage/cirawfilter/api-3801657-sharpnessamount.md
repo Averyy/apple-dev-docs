@@ -1,6 +1,6 @@
 # sharpnessAmount
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: instp
 
 A value that indicates the amount of sharpness to apply to the edges of the image.
@@ -24,8 +24,6 @@ var sharpnessAmount: Float { get set }
 The value should be in the range of `0...1`. The default value varies by image. A value of `0` indicates no sharpness, and a value of `1` indicates maximum sharpness.
 
 > **Note**: The [`isSharpnessSupported`](cirawfilter/3801658-issharpnesssupported.md) property is [`false`](https://developer.apple.com/documentation/swift/false) if the current image doesn’t support this adjustment.
-
-The [`isSharpnessSupported`](cirawfilter/3801658-issharpnesssupported.md) property is [`false`](https://developer.apple.com/documentation/swift/false) if the current image doesn’t support this adjustment.
 
 ## See Also
 

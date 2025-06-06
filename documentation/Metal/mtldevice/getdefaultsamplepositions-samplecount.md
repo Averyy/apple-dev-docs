@@ -29,8 +29,6 @@ The default sample positions are the same on all GPUs that support programmable 
 
 > **Note**:  GPUs that don’t support programmable sample positions may have different default sample positions that you can’t retrieve.
 
- GPUs that don’t support programmable sample positions may have different default sample positions that you can’t retrieve.
-
 The default sample position for GPUs that can sample one time is at the pixel’s center.
 
 ![Normalized coordinate system diagram that shows a subpixel grid with one point at the center, with coordinates zero-.5, zero-0.5.](https://docs-assets.developer.apple.com/published/b82e8ada6eb98fc644df94e8d27c8eb1/media-4062028%402x.png)

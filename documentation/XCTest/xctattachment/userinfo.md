@@ -17,8 +17,6 @@ Assign a custom dictionary to this property to store attachment-specific metadat
 
 > **Note**:  The contents of the [`userInfo`](xctattachment/userinfo.md) dictionary are not represented in Xcode test reports.
 
- The contents of the [`userInfo`](xctattachment/userinfo.md) dictionary are not represented in Xcode test reports.
-
 ## See Also
 
 - [var name: String?](xctattachment/name.md)

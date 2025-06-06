@@ -1,6 +1,6 @@
 # isUserInteractionEnabled
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A Boolean value that determines whether user events are ignored and removed from the event queue.
@@ -35,8 +35,6 @@ When set to [`false`](https://developer.apple.com/documentation/swift/false), to
 During an animation, user interactions are temporarily disabled for all views involved in the animation, regardless of the value in this property. You can disable this behavior by specifying the [`allowUserInteraction`](uiview/animationoptions/allowuserinteraction.md) option when configuring the animation.
 
 > **Note**:  Some UIKit subclasses override this property and return a different default value. See the documentation for that class to determine if it returns a different value.
-
- Some UIKit subclasses override this property and return a different default value. See the documentation for that class to determine if it returns a different value.
 
 ## See Also
 

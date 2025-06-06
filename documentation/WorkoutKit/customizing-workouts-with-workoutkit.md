@@ -13,8 +13,6 @@ Create, preview, and sync workouts for use in the Workout app on Apple Watch.
 
 > **Note**: This sample code project is associated with WWDC23 session 10016: [`Build custom workouts with WorkoutKit`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10016) and WWDC24 session 10084: [`Build custom swimming workouts with WorkoutKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10084).
 
-This sample code project is associated with WWDC23 session 10016: [`Build custom workouts with WorkoutKit`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10016) and WWDC24 session 10084: [`Build custom swimming workouts with WorkoutKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10084).
-
 ##### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode:
@@ -40,4 +38,4 @@ To run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/workoutkit/customizing-workouts-with-workoutkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WorkoutKit/customizing-workouts-with-workoutkit)*

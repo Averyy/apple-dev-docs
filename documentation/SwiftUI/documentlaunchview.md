@@ -1,6 +1,6 @@
 # DocumentLaunchView
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A view to present when launching document-related user experience.
@@ -18,8 +18,6 @@ struct DocumentLaunchView<Actions, DocumentView> where Actions : View, DocumentV
 #### Overview
 
 > **Note**:  An alternative to `DocumentLaunchView` is a scene variant of this API: [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md). If the app definition contains `DocumentGroup` scenes, consider using a `DocumentGroupLaunchScene` instead of this view.
-
- An alternative to `DocumentLaunchView` is a scene variant of this API: [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md). If the app definition contains `DocumentGroup` scenes, consider using a `DocumentGroupLaunchScene` instead of this view.
 
 Configure `DocumentLaunchView` to open and display files and trigger custom actions.
 
@@ -100,4 +98,4 @@ extension UTType {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/documentlaunchview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/documentlaunchview)*

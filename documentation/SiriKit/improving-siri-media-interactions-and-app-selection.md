@@ -1,6 +1,6 @@
 # Improving Siri Media Interactions and App Selection
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system.
 
@@ -14,19 +14,11 @@ For information about how Apple protects user privacy when your app shares infor
 
 > **Note**:  Session 10073: [`Empower Your Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10073/) Session 10087: [`Design for Intelligence: Make Friends with “The System”`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10087/) Session 10060: [`Design High Quality Siri Media Interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10060/)
 
- Session 10073: [`Empower Your Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10073/)
-
-Session 10087: [`Design for Intelligence: Make Friends with “The System”`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10087/)
-
-Session 10060: [`Design High Quality Siri Media Interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10060/)
-
 ##### Support Media Intents
 
 Use [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent) to receive media intents from Siri and Shortcuts. Support other system-defined media intents, such as [`INUpdateMediaAffinityIntent`](https://developer.apple.com/documentation/intents/inupdatemediaaffinityintent) or [`INAddMediaIntent`](https://developer.apple.com/documentation/intents/inaddmediaintent), that reflect interactions the user can perform directly in your app.
 
 > 💡 **Tip**:  In iOS 14 and later, you can set up handling for [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent) directly in your app. To continue supporting earlier versions of iOS, resolve and confirm the intent in an extension, then respond with [`INPlayMediaIntentResponseCode.continueInApp`](https://developer.apple.com/documentation/intents/inplaymediaintentresponsecode/continueinapp) or [`INPlayMediaIntentResponseCode.handleInApp`](https://developer.apple.com/documentation/intents/inplaymediaintentresponsecode/handleinapp) so the system sends the intent to the app to play the media.
-
- In iOS 14 and later, you can set up handling for [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent) directly in your app. To continue supporting earlier versions of iOS, resolve and confirm the intent in an extension, then respond with [`INPlayMediaIntentResponseCode.continueInApp`](https://developer.apple.com/documentation/intents/inplaymediaintentresponsecode/continueinapp) or [`INPlayMediaIntentResponseCode.handleInApp`](https://developer.apple.com/documentation/intents/inplaymediaintentresponsecode/handleinapp) so the system sends the intent to the app to play the media.
 
 Tell the system what types of media your app supports in Xcode’s Project editor. In the Supported Intents section of the Project editor, select each Media Category that describes your app’s content. Select `General` if your app plays media that doesn’t fit any of the other categories, like spooky sound effects or white noise. To opt in to Siri media control, you must choose at least one category for your app. With the settings shown here, users can say “Play some music in ControlAudio” to play music in the ControlAudio app. When App Selection is available, they can simply say “Play some music” and Siri intelligently picks the user’s preferred music app with App Selection.
 
@@ -46,15 +38,11 @@ Once you have the PlayMedia system intent in a SiriKit Intent Definition file, m
 
 > **Note**:  The system offers the user audio suggestions based on donations the system can play in an audio-only situation. The system excludes the following media types when generating audio suggestions: [`INMediaItemType.news`](https://developer.apple.com/documentation/intents/inmediaitemtype/news), [`INMediaItemType.musicVideo`](https://developer.apple.com/documentation/intents/inmediaitemtype/musicvideo), [`INMediaItemType.movie`](https://developer.apple.com/documentation/intents/inmediaitemtype/movie), [`INMediaItemType.tvShow`](https://developer.apple.com/documentation/intents/inmediaitemtype/tvshow), [`INMediaItemType.tvShowEpisode`](https://developer.apple.com/documentation/intents/inmediaitemtype/tvshowepisode), and [`INMediaItemType.unknown`](https://developer.apple.com/documentation/intents/inmediaitemtype/unknown).
 
- The system offers the user audio suggestions based on donations the system can play in an audio-only situation. The system excludes the following media types when generating audio suggestions: [`INMediaItemType.news`](https://developer.apple.com/documentation/intents/inmediaitemtype/news), [`INMediaItemType.musicVideo`](https://developer.apple.com/documentation/intents/inmediaitemtype/musicvideo), [`INMediaItemType.movie`](https://developer.apple.com/documentation/intents/inmediaitemtype/movie), [`INMediaItemType.tvShow`](https://developer.apple.com/documentation/intents/inmediaitemtype/tvshow), [`INMediaItemType.tvShowEpisode`](https://developer.apple.com/documentation/intents/inmediaitemtype/tvshowepisode), and [`INMediaItemType.unknown`](https://developer.apple.com/documentation/intents/inmediaitemtype/unknown).
-
 ##### Donate Interactions
 
 Improve App Selection, Shortcuts, and Shortcut Suggestions by donating interactions from your app. Each time the user starts playing media directly in your app, create and donate an [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) containing an [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent) to tell the system what the user is listening to. Provide as much detail as possible in each donation to help the system interact more accurately with the user in the future. If the user starts a playlist or radio station, donate that information instead of each individual song.
 
 > ❗ **Important**:  Suggestions improve as the system accumulates donated interactions. If some media becomes irrelevant or unavailable, use [`delete(with:completion:)`](https://developer.apple.com/documentation/intents/ininteraction/delete(with:completion:)-2d1gs) to remove interactions associated with those specific media items. Don’t call [`deleteAll(completion:)`](https://developer.apple.com/documentation/intents/ininteraction/deleteall(completion:)) unless you really mean to reset what the system has learned about the way the user interacts with your app.
-
- Suggestions improve as the system accumulates donated interactions. If some media becomes irrelevant or unavailable, use [`delete(with:completion:)`](https://developer.apple.com/documentation/intents/ininteraction/delete(with:completion:)-2d1gs) to remove interactions associated with those specific media items. Don’t call [`deleteAll(completion:)`](https://developer.apple.com/documentation/intents/ininteraction/deleteall(completion:)) unless you really mean to reset what the system has learned about the way the user interacts with your app.
 
 ##### Set the Current User Context
 
@@ -89,8 +77,6 @@ CSSearchableIndex.default().indexSearchableItems([item]) { ... }
 ```
 
 > ⚠️ **Warning**:  If you need to delete items from the index, use [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteSearchableItems(withDomainIdentifiers:completionHandler:)). Calling [`deleteAllSearchableItems(completionHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteAllSearchableItems(completionHandler:)) deletes not only the searchable items you’ve added directly to the searchable index, but also every [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) your app has donated or Siri has donated on behalf of your app.
-
- If you need to delete items from the index, use [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteSearchableItems(withDomainIdentifiers:completionHandler:)). Calling [`deleteAllSearchableItems(completionHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteAllSearchableItems(completionHandler:)) deletes not only the searchable items you’ve added directly to the searchable index, but also every [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) your app has donated or Siri has donated on behalf of your app.
 
 ##### Define Relevant Vocabulary
 
@@ -139,4 +125,4 @@ Provide additional vocabulary programmatically with [`INVocabulary`](https://dev
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/improving-siri-media-interactions-and-app-selection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/improving-siri-media-interactions-and-app-selection)*

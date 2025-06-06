@@ -1,6 +1,6 @@
 # receivePromisedFiles(atDestination:options:operationQueue:reader:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Fulfills the promises at the specified destination.
@@ -21,8 +21,6 @@ Call this method only when you’re accepting the file promise. All file promise
 Avoid blocking the main thread while waiting for the file promise to be written (which can be a long process) by specifying an operation queue other than the main queue. When the source is an [`NSFilePromiseProvider`](nsfilepromiseprovider.md), the reader block call is wrapped in a file coordination read.
 
 > **Note**:  If writing the promised file fails, the `reader` block is still called with a non-nil `error`. There may be nothing in `fileURL`, or there may be a partial or corrupt file.
-
- If writing the promised file fails, the `reader` block is still called with a non-nil `error`. There may be nothing in `fileURL`, or there may be a partial or corrupt file.
 
 ## Parameters
 

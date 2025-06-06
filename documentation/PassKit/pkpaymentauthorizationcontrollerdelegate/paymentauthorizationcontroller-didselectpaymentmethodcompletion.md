@@ -1,6 +1,6 @@
 # paymentAuthorizationController(_:didSelectPaymentMethod:completion:)
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: method
 
 Tells the delegate that the user changed the payment method, and asks for an updated payment request.
@@ -24,8 +24,6 @@ optional func paymentAuthorizationController(_ controller: PKPaymentAuthorizatio
 This method is called when the user has selected a new payment card.  Use this delegate callback to update the summary items in response to the card type changing (for example, applying credit card surcharges), and then call the callback with the updated summary items.
 
 > **Note**:  The delegate receives no further callbacks except [`paymentAuthorizationControllerDidFinish(_:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish(_:).md) until it has invoked the completion block.
-
- The delegate receives no further callbacks except [`paymentAuthorizationControllerDidFinish(_:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish(_:).md) until it has invoked the completion block.
 
 ## Parameters
 

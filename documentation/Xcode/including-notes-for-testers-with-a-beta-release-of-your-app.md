@@ -12,8 +12,6 @@ For more information about distributing a beta version of your app, see [`Creati
 
 > **Note**: Session 10224: [`Simplify distribution in Xcode and Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10224)
 
-Session 10224: [`Simplify distribution in Xcode and Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10224)
-
 ##### Create a Testflight Folder
 
 Xcode Cloud uses text files that you add to your Xcode project to create the notes for testers. The text files reside in a folder named TestFlight located in the same folder as your Xcode project or workspace.
@@ -45,8 +43,6 @@ Include information that is useful to testers and relevant to the current releas
 - The commit message for the commit that triggers the build, or the past few commit messages.
 
 > **Note**: When Xcode Cloud deploys your app, the information you provide is available to all testers in all groups who have access to the build.
-
-When Xcode Cloud deploys your app, the information you provide is available to all testers in all groups who have access to the build.
 
 ##### Write a Script to Generate Content Dynamically
 
@@ -85,4 +81,4 @@ For more information, see [`Writing custom build scripts`](writing-custom-build-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/including-notes-for-testers-with-a-beta-release-of-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/including-notes-for-testers-with-a-beta-release-of-your-app)*

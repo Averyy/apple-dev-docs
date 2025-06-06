@@ -49,8 +49,6 @@ struct Saturation: View {
 
 > **Note**: `contrast(_:)`
 
-`contrast(_:)`
-
 ## Parameters
 
 - `amount`: The amount of saturation to apply to this view.

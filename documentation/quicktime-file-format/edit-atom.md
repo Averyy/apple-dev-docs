@@ -1,6 +1,6 @@
 # Edit atom ('edts')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that defines the portions of the media that are to be used to build up a track for a movie.
@@ -12,8 +12,6 @@ You use edit atoms to define the portions of the media that are to be used to bu
 In the absence of an edit list, the presentation of a track starts immediately. An empty edit is used to offset the start time of a track.
 
 > **Note**: If the edit atom or the edit list atom is missing, you can assume that the entire media is used by the track.
-
-If the edit atom or the edit list atom is missing, you can assume that the entire media is used by the track.
 
 ## Topics
 

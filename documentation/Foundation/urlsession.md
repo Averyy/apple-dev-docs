@@ -25,22 +25,20 @@ class URLSession
 - [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
 - [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
 - [Analyzing HTTP traffic with Instruments](analyzing-http-traffic-with-instruments.md)
-- [Downloading files from websites](downloading-files-from-websites.md)
 - [Downloading files in the background](downloading-files-in-the-background.md)
+- [Downloading files from websites](downloading-files-from-websites.md)
 - [Uploading data to a website](uploading-data-to-a-website.md)
 - [Fetching website data into memory](fetching-website-data-into-memory.md)
-- [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
-- [Improving network reliability using Multipath TCP](improving-network-reliability-using-multipath-tcp.md)
 - [Uploading streams of data](uploading-streams-of-data.md)
+- [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
 - [Pausing and resuming downloads](pausing-and-resuming-downloads.md)
+- [Improving network reliability using Multipath TCP](improving-network-reliability-using-multipath-tcp.md)
 
 #### Overview
 
 The [`URLSession`](urlsession.md) class and related classes provide an API for downloading data from and uploading data to endpoints indicated by URLs. Your app can also use this API to perform background downloads when your app isn’t running or, in iOS, while your app is suspended. You can use the related [`URLSessionDelegate`](urlsessiondelegate.md) and [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md) to support authentication and receive events like redirection and task completion.
 
 > **Note**:  The [`URLSession`](urlsession.md) API involves many different classes that work together in a fairly complex way which may not be obvious if you read the reference documentation by itself. Before using the API, read the overview in the [`URL Loading System`](url-loading-system.md) topic. The articles in the Essentials, Uploading, and Downloading sections offer examples of performing common tasks with [`URLSession`](urlsession.md).
-
- The [`URLSession`](urlsession.md) API involves many different classes that work together in a fairly complex way which may not be obvious if you read the reference documentation by itself. Before using the API, read the overview in the [`URL Loading System`](url-loading-system.md) topic. The articles in the Essentials, Uploading, and Downloading sections offer examples of performing common tasks with [`URLSession`](urlsession.md).
 
 Your app creates one or more [`URLSession`](urlsession.md) instances, each of which coordinates a group of related data-transfer tasks. For example, if you’re creating a web browser, your app might create one session per tab or window, or one session for interactive use and another for background downloads. Within each session, your app adds a series of tasks, each of which represents a request for a specific URL (following HTTP redirects, if necessary).
 
@@ -76,8 +74,6 @@ Tasks in a session also share a common delegate object. You implement this deleg
 If you don’t need the features provided by a delegate, you can use this API without providing one by passing `nil` when you create a session.
 
 > ❗ **Important**:  The session object keeps a strong reference to the delegate until your app exits or explicitly invalidates the session. If you don’t invalidate the session, your app leaks memory until the app terminates.
-
- The session object keeps a strong reference to the delegate until your app exits or explicitly invalidates the session. If you don’t invalidate the session, your app leaks memory until the app terminates.
 
 Each task you create with the session calls back to the session’s delegate, using the methods defined in [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md). You can also intercept these callbacks before they reach the session delegate by populating a separate [`delegate`](urlsessiontask/delegate.md) that’s specific to the task.
 
@@ -293,4 +289,4 @@ The URL session API is thread-safe. You can freely create sessions and tasks in 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsession)*

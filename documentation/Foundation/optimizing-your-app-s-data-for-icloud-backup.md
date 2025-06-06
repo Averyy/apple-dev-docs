@@ -58,8 +58,6 @@ func excludeItem(at url: URL) throws {
 
 > **Note**:  Because certain file operations can reset resource values, make sure you set an excluded file’s resource values each time you save it.
 
- Because certain file operations can reset resource values, make sure you set an excluded file’s resource values each time you save it.
-
 The [`isExcludedFromBackup`](urlresourcevalues/isexcludedfrombackup.md) resource value exists only to provide guidance to the system about which files and directories it can exclude; it’s not a mechanism to guarantee those items never appear in a backup or on a restored device.
 
 To indicate the system can exclude a group of related files from iCloud Backup, move those files into a directory and update the directory’s [`isExcludedFromBackup`](urlresourcevalues/isexcludedfrombackup.md) resource value. If you create an excludable directory inside the app container’s `Library` directory, consider naming the directory with the app’s bundle identifier to avoid potential conflicts with directories the system may create there in the future.
@@ -102,4 +100,4 @@ if let bundleIdentifier = Bundle.main.bundleIdentifier {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/optimizing-your-app-s-data-for-icloud-backup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/optimizing-your-app-s-data-for-icloud-backup)*

@@ -1,6 +1,6 @@
 # Supporting Continuity Camera in your tvOS app
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Capture high-quality photos, video, and audio in your Apple TV app by connecting an iPhone or iPad as a continuity device.
 
@@ -15,8 +15,6 @@ Continuity Camera brings the power of the cameras and microphones from an iOS or
 This sample project provides an example implementation that accesses a camera and microphone from a nearby iPhone or iPad in an Apple TV app. It builds on a similar sample, [`Supporting Continuity Camera in your macOS app`](https://developer.apple.com/documentation/AVFoundation/supporting-continuity-camera-in-your-macos-app), and shares some of its functionality, including automatic camera selection and observing the state of video effects. The following sections focus on the aspects specific to tvOS.
 
 > **Note**: This sample code project is associated with WWDC23 session 10256: [`Discover Continuity Camera on tvOS`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10256).
-
-This sample code project is associated with WWDC23 session 10256: [`Discover Continuity Camera on tvOS`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10256).
 
 ##### Configure the Sample Code Project
 
@@ -69,8 +67,6 @@ The handling closure’s [`AVContinuityDevice`](https://developer.apple.com/docu
 The app’s `handleNewConnectionForDevice(_:)` method is a minimal implementation that selects the first video device in the array. Apps typically compare all the video device elements and select one that’s appropriate for their needs.
 
 > **Note**: [`UIKit`](https://developer.apple.com/documentation/UIKit) based apps can create a continuity device picker by creating an [`AVContinuityDevicePickerViewController`](AVContinuityDevicePickerViewController.md) instance.
-
-[`UIKit`](https://developer.apple.com/documentation/UIKit) based apps can create a continuity device picker by creating an [`AVContinuityDevicePickerViewController`](AVContinuityDevicePickerViewController.md) instance.
 
 ##### Connect a Video Device to a Capture Session
 
@@ -127,8 +123,6 @@ The app specifically registers for the following events:
 - The active capture device disconnects from the system.
 
 > **Note**: People can enable video effects in Control Center on Apple TV.
-
-People can enable video effects in Control Center on Apple TV.
 
 The sample’s implementation that monitors the video effects and system changes is similar to the macOS equivalent of this sample, [`Supporting Continuity Camera in your macOS app`](https://developer.apple.com/documentation/AVFoundation/supporting-continuity-camera-in-your-macos-app). The sample also monitors Notification Center events related to the camera. The app’s capture manager responds when a capture device disconnects by registering with Notification Center for the [`wasConnectedNotification`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/wasConnectedNotification) event.
 
@@ -213,8 +207,6 @@ The app can temporarily disable voice processing by setting the [`isVoiceProcess
 
 > **Note**: The behavior of the audio engine’s `isVoiceProcessingBypassed` property is similar to [`kAUVoiceIOProperty_BypassVoiceProcessing`](https://developer.apple.com/documentation/AudioToolbox/kAUVoiceIOProperty_BypassVoiceProcessing). For more information, see [`Audio Unit Voice I/O`](https://developer.apple.com/documentation/AudioToolbox/audio-unit-voice-i-o).
 
-The behavior of the audio engine’s `isVoiceProcessingBypassed` property is similar to [`kAUVoiceIOProperty_BypassVoiceProcessing`](https://developer.apple.com/documentation/AudioToolbox/kAUVoiceIOProperty_BypassVoiceProcessing). For more information, see [`Audio Unit Voice I/O`](https://developer.apple.com/documentation/AudioToolbox/audio-unit-voice-i-o).
-
 ## See Also
 
 - [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
@@ -247,4 +239,4 @@ The behavior of the audio engine’s `isVoiceProcessingBypassed` property is sim
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/supporting-continuity-camera-in-your-tvos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/supporting-continuity-camera-in-your-tvos-app)*

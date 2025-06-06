@@ -1,6 +1,6 @@
 # Creating custom navigation interactions
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Build nonstandard navigation interactions that move focus to the desired location.
 
@@ -37,8 +37,6 @@ myFocusGuide.preferredFocusEnvironments = [button_4]
 
 > **Note**:  The focus guide won’t work if the constraints are set to Active.
 
- The focus guide won’t work if the constraints are set to Active.
-
 ![Screenshot that shows a newly created focus guide.](https://docs-assets.developer.apple.com/published/c7c2a2af4b13e1f40248624d43042691/media-2943334%402x.png)
 
 When users swipe down from Button 2 or Button 3, focus correctly redirects to Button 4.
@@ -53,4 +51,4 @@ When users swipe down from Button 2 or Button 3, focus correctly redirects to Bu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/creating-custom-navigation-interactions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/creating-custom-navigation-interactions)*

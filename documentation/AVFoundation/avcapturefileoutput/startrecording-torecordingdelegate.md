@@ -1,6 +1,6 @@
 # startRecording(to:recordingDelegate:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Starts recording media to the specified output URL.
@@ -29,8 +29,6 @@ When you stop recording by calling [`stopRecording()`](avcapturefileoutput/stopr
 In macOS, you don’t need to call [`stopRecording()`](avcapturefileoutput/stoprecording().md) before calling this method while another recording is in progress. If you call this method while the output object is recording, the framework preserves media samples between the old file and the new file. In iOS, to avoid any errors, you must call [`stopRecording()`](avcapturefileoutput/stoprecording().md) before calling this method again.
 
 > **Note**:  Don’t call this method when capturing audio using [`AVCaptureAudioFileOutput`](avcaptureaudiofileoutput.md). Use the [`startRecording(to:outputFileType:recordingDelegate:)`](avcaptureaudiofileoutput/startrecording(to:outputfiletype:recordingdelegate:).md) method instead.
-
- Don’t call this method when capturing audio using [`AVCaptureAudioFileOutput`](avcaptureaudiofileoutput.md). Use the [`startRecording(to:outputFileType:recordingDelegate:)`](avcaptureaudiofileoutput/startrecording(to:outputfiletype:recordingdelegate:).md) method instead.
 
 ## Parameters
 

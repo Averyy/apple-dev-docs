@@ -1,6 +1,6 @@
 # Signaling Changes for User-Driven Actions
 
-**Framework**: File Provider
+**Framework**: Fileprovider
 
 Signal the system about any changes created by an action.
 
@@ -24,11 +24,9 @@ After the system is alerted to the change, it calls [`enumerateChanges(for:from:
 
 > **Note**:  You can signal changes for an item even if it doesn’t have an active enumerator. In that case, the system logs a warning but otherwise ignores the signal.
 
- You can signal changes for an item even if it doesn’t have an active enumerator. In that case, the system logs a warning but otherwise ignores the signal.
-
 For more information, see [`Tracking Your File Provider’s Changes`](tracking-your-file-provider-s-changes.md).
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/signaling-changes-for-user-driven-actions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/signaling-changes-for-user-driven-actions)*

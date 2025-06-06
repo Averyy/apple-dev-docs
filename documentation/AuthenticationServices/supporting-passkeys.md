@@ -1,6 +1,6 @@
 # Supporting passkeys
 
-**Framework**: Authentication Services
+**Framework**: Authenticationservices
 
 Eliminate passwords for your users when they sign in to apps and websites.
 
@@ -11,8 +11,6 @@ Passkeys use iCloud Keychain public key credentials, eliminating the need for pa
 As the , your Apple device generates a unique public-private key pair for every account it creates on a service. The authenticator retains the private key and shares its public key with the server, known as the 
 
 > ❗ **Important**:  You need to have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains) for more information.__
-
- You need to have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains) for more information.__
 
 ##### Register a New Account on a Service
 
@@ -102,8 +100,6 @@ To authenticate using passkeys in a [`WKWebView`](https://developer.apple.com/do
 
 > **Note**:  Your app can’t use passkeys to authenticate for services that you haven’t configured as the app’s associated domains.
 
- Your app can’t use passkeys to authenticate for services that you haven’t configured as the app’s associated domains.
-
 In iOS 16.4 and later, and macOS 13.3 and later, use Javascript APIs in [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) to test whether passkey authentication is available. If the person has a passkey available for the relying party, `isUserVerifyingPlatformAuthenticatorAvailable()` returns `true`. If passkey AutoFill is available, `isConditionalMediationAvailable()` returns `true`.
 
 ## See Also
@@ -116,4 +112,4 @@ In iOS 16.4 and later, and macOS 13.3 and later, use Javascript APIs in [`WKWebV
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/supporting-passkeys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/supporting-passkeys)*

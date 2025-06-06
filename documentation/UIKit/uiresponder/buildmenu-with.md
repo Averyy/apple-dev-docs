@@ -1,6 +1,6 @@
 # buildMenu(with:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Asks the receiving responder to add and remove items from a menu system.
@@ -24,8 +24,6 @@ func buildMenu(with builder: any UIMenuBuilder)
 Override this method in your app delegate or view controller to receive a [`UIMenuBuilder`](uimenubuilder.md) object. Use the builder to add and remove [`UIMenuElement`](uimenuelement.md) objects such as [`UIMenu`](uimenu.md), [`UIAction`](uiaction.md), and [`UICommand`](uicommand.md) from your app’s menu bar or context menus.
 
 > **Note**:  The menu bar is available in Mac apps built with Mac Catalyst.
-
- The menu bar is available in Mac apps built with Mac Catalyst.
 
 Where you override this method determines the menu system that the builder updates. To add and remove items from the menu bar using the [`main`](uimenusystem/main.md) menu system, override [`buildMenu(with:)`](uiresponder/buildmenu(with:).md) in your app delegate. To build a [`context`](uimenusystem/context.md) menu using the context system, override this method in your view controller.
 

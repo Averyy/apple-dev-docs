@@ -30,8 +30,6 @@ This function requires that the file has been opened for writing.
 
 > **Note**: This function does not modify the current offset for any open file descriptors associated with the file.
 
-This function does not modify the current offset for any open file descriptors associated with the file.
-
 The corresponding C function is `ftruncate`.
 
 ## Parameters

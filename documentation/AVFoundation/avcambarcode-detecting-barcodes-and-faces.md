@@ -1,6 +1,6 @@
 # AVCamBarcode: Detecting Barcodes and Faces
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Identify machine readable codes or faces by using the camera.
 
@@ -12,8 +12,6 @@ Identify machine readable codes or faces by using the camera.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`10047: What’s New in Camera Capture`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc21/10047/).
-
-This sample code project is associated with WWDC21 session [`10047: What’s New in Camera Capture`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc21/10047/).
 
 ## See Also
 
@@ -39,4 +37,4 @@ This sample code project is associated with WWDC21 session [`10047: What’s New
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avcambarcode-detecting-barcodes-and-faces)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avcambarcode-detecting-barcodes-and-faces)*

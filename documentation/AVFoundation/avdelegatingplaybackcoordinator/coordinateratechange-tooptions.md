@@ -1,6 +1,6 @@
 # coordinateRateChange(to:options:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Coordinates a rate change across all participants, waiting for others to become ready, if necessary.
@@ -28,8 +28,6 @@ Don’t call this method if the rate change doesn’t affect the group, or if th
 The suspension stops the coordinator from issuing further commands to its delegate. After beginning a suspension, you can reconfigure your app’s playback object as necessary.
 
 > **Note**:  Calling this method while the coordinator is in a suspended state affects only the local playback object. It doesn’t affect group state, even after the suspension ends.
-
- Calling this method while the coordinator is in a suspended state affects only the local playback object. It doesn’t affect group state, even after the suspension ends.
 
 ## Parameters
 

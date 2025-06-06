@@ -1,6 +1,6 @@
 # Handling external player events notifications
 
-**Framework**: Media Player
+**Framework**: Mediaplayer
 
 Handle events for external media players.
 
@@ -9,8 +9,6 @@ Handle events for external media players.
 Apps that play audio or video content receive player events to start and stop playback, change tracks, and even rate an item. All iOS apps that create their own media player, macOS apps, and external media apps should support these events.
 
 > **Note**:  When you use either the system or application player, you don’t get event notifications because those players automatically handle events.
-
- When you use either the system or application player, you don’t get event notifications because those players automatically handle events.
 
 To receive player event notifications, do the following:
 
@@ -33,4 +31,4 @@ You can ensure that your app interacts well with other apps handling remote cont
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mediaplayer/handling-external-player-events-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MediaPlayer/handling-external-player-events-notifications)*

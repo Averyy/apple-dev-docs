@@ -1,6 +1,6 @@
 # es_event_get_task_name_t
 
-**Framework**: Endpoint Security  
+**Framework**: Endpointsecurity  
 **Kind**: struct
 
 A type for an event that indicates the retrieval of a task’s name port.
@@ -20,8 +20,6 @@ struct es_event_get_task_name_t
 This event represents a process that obtains a send right to a task inspect port, through functions like `task_name_for_pid(_:_:_:)` and `task_identity_token_get_task_port(_:_:_:)`.
 
 > **Note**:  For more information on ports and port rights, see the “Ports, Port Rights, Port Sets, and Port Namespaces” section of [`Mach Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Mach/Mach.html) in the [`Kernel Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/About/About.html).
-
- For more information on ports and port rights, see the “Ports, Port Rights, Port Sets, and Port Namespaces” section of [`Mach Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Mach/Mach.html) in the [`Kernel Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/About/About.html).
 
 ## Topics
 

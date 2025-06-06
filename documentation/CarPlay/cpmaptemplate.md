@@ -1,6 +1,6 @@
 # CPMapTemplate
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: class
 
 A template that displays a navigation overlay that your app draws on the map.
@@ -23,8 +23,6 @@ After CarPlay calls your scene delegate’s [`templateApplicationScene(_:didConn
 The map template appears as an overlay on top of the base view. The template is the control layer, providing a navigation bar and map buttons that users interact with through the CarPlay screen.
 
 > **Note**:  The base view is where your app draws its map. CarPlay doesn’t support direct user interactions in this view. Instead, your app uses templates, which overlay the base view, to allow users to interact with your app through the CarPlay screen.
-
- The base view is where your app draws its map. CarPlay doesn’t support direct user interactions in this view. Instead, your app uses templates, which overlay the base view, to allow users to interact with your app through the CarPlay screen.
 
 When the user begins to interact with your app through the CarPlay screen, the system displays the navigation bar, hiding it after a brief period of inactivity. You can change this behavior by setting the [`automaticallyHidesNavigationBar`](cpmaptemplate/automaticallyhidesnavigationbar.md) and [`hidesButtonsWithNavigationBar`](cpmaptemplate/hidesbuttonswithnavigationbar.md) properties.
 
@@ -126,4 +124,4 @@ You can display additional map buttons by providing an array of [`CPMapButton`](
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpmaptemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpmaptemplate)*

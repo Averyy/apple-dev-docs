@@ -1,6 +1,6 @@
 # operatingSystemVersion
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: property
 
 A string that identifies the operating system used to save a sample.
@@ -24,8 +24,6 @@ var operatingSystemVersion: OperatingSystemVersion { get }
 For samples saved on watchOS 4.0, HealthKit sets the operating system property to `{4, 0, 0}`.
 
 > **Note**:  For samples saved using older versions of HealthKit, the system approximates the operating system. For instance, HealthKit marks samples saved after iOS 8.0 but before 8.2 as `{8, 0, 0}`. HealthKit marks samples saved after 8.2 but before 9.0  as `{8, 2, 0}`.
-
- For samples saved using older versions of HealthKit, the system approximates the operating system. For instance, HealthKit marks samples saved after iOS 8.0 but before 8.2 as `{8, 0, 0}`. HealthKit marks samples saved after 8.2 but before 9.0  as `{8, 2, 0}`.
 
 ## Topics
 

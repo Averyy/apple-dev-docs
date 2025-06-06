@@ -1,6 +1,6 @@
 # Encrypting User Data
 
-**Framework**: CloudKit
+**Framework**: Cloudkit
 
 Deploy industry-standard security technologies using CloudKit encryption.
 
@@ -61,8 +61,6 @@ Promote this schema change to your production environment before deploying any a
 
 > **Note**:  The encrypted fields can’t have indexes because the server can’t read the fields. The encrypted fields also have to be newly introduced to an existing record or a new record. You can’t convert existing unencrypted fields in the CloudKit schema.
 
- The encrypted fields can’t have indexes because the server can’t read the fields. The encrypted fields also have to be newly introduced to an existing record or a new record. You can’t convert existing unencrypted fields in the CloudKit schema.
-
 ##### Use Assets
 
 When creating or updating a [`CKRecord`](ckrecord.md) that contains a [`CKAsset`](ckasset.md), CloudKit breaks up the asset’s contents into chunks, and encrypts each chunk before storing it in the third-party services. CloudKit then encrypts the key for each chunk, which Apple maintains, with an asset key and stores the asset key on the relevant record.
@@ -90,8 +88,6 @@ When this error occurs, the data becomes permanently lost. Your app needs to han
 - Upload the locally cached data from the device to those zones. CloudKit encrypts the new data using new key material from the user’s iCloud Keychain.
 
 > **Note**:  Users can also choose to manually delete their zones, resulting in data loss that isn’t related to resetting the keychain. In this case, any [`CKOperation`](ckoperation.md) that involves reading zones or records might encounter a [`CKError.Code.userDeletedZone`](ckerror/code/userdeletedzone.md) error. For this error, prompt for the user’s confirmation to purge the associated local records or zones.
-
- Users can also choose to manually delete their zones, resulting in data loss that isn’t related to resetting the keychain. In this case, any [`CKOperation`](ckoperation.md) that involves reading zones or records might encounter a [`CKError.Code.userDeletedZone`](ckerror/code/userdeletedzone.md) error. For this error, prompt for the user’s confirmation to purge the associated local records or zones.
 
 ##### Use Cloudkit Web Services
 
@@ -146,4 +142,4 @@ The following shows an example request for creating records with the encrypted f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/encrypting-user-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/encrypting-user-data)*

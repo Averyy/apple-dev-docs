@@ -1,6 +1,6 @@
 # Making actions and content discoverable and widely available
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Adopt App Intents to make your app discoverable with Spotlight, controls, widgets, and the Action button.
 
@@ -11,8 +11,6 @@ The App Intents framework offers functionality to express your app’s actions a
 The App Intents API is a fundamental framework that facilitates deep integration with system experiences across platforms and devices. You use the framework to express data and actions once to build a reusable foundation for many experiences and features. For example, use App Intents to integrate your app with Siri and Apple Intelligence, then reuse the code to create controls and interactive widgets in combination with [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit).
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 ##### Review Experiences That App Intents Enables Directly
 
@@ -71,4 +69,4 @@ For more information about migrating your SiriKit code to App Intents, see doc:/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-actions-and-content-discoverable-and-widely-available)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-actions-and-content-discoverable-and-widely-available)*

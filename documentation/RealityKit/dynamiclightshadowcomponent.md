@@ -1,6 +1,6 @@
 # DynamicLightShadowComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that controls an entity’s shadow from dynamic (virtual) lights.
@@ -33,8 +33,6 @@ You need to add the dynamic lights shadow component to each entity you want to a
 
 > **Note**: By default, without a dynamic light shadow component, entities cast shadows from dynamic lights.
 
-By default, without a dynamic light shadow component, entities cast shadows from dynamic lights.
-
 ## Topics
 
 ### Initializers
@@ -59,4 +57,4 @@ By default, without a dynamic light shadow component, entities cast shadows from
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/dynamiclightshadowcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/dynamiclightshadowcomponent)*

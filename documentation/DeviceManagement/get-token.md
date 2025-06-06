@@ -1,6 +1,6 @@
 # Get Token
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: httpRequest
 
 Check-in protocol get-token data.
@@ -20,8 +20,6 @@ A server that supports this request needs to include a `com.apple.mdm.token` val
 This request allows devices to fetch security-related tokens from the server and to retrieve different types of tokens for the different services that need them. Each service has a unique identifier, and can pass a specific set of parameters for the server to use when generating the token. If the server doesn’t recognize the service type, it needs to return a `400` HTTP response status.
 
 > **Note**:  The `GetBootstrapToken` request is a separate request specifically for the bootstrap token.
-
- The `GetBootstrapToken` request is a separate request specifically for the bootstrap token.
 
 ##### Support Access Management for Managed Apple Ids
 
@@ -68,4 +66,4 @@ Check-in protocol get-token request.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/get-token)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/get-token)*

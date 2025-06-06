@@ -10,8 +10,6 @@ Use this check to detect when a function that has an argument with the `nonnull`
 
 > **Note**: The nonnull violation check for arguments with the `_Nonnull` annotation is off by default. You can turn it on by enabling the `-fsanitize=nullability-arg` compiler flag.
 
-The nonnull violation check for arguments with the `_Nonnull` annotation is off by default. You can turn it on by enabling the `-fsanitize=nullability-arg` compiler flag.
-
 ##### Violation of the Nonnull Parameter Attribute in C
 
 In the following example, the call to the `has_nonnull_argument` function breaks the `nonnull` attribute of the parameter `p`:
@@ -78,4 +76,4 @@ Correct logic errors, or remove the `_Nonnull` attribute and rework the called f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/nonnull-argument-violation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/nonnull-argument-violation)*

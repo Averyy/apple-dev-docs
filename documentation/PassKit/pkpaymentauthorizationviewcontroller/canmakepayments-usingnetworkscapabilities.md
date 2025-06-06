@@ -1,6 +1,6 @@
 # canMakePayments(usingNetworks:capabilities:)
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: method
 
 Returns whether the user can make payments using a card from the specified network with the specified capabilities.
@@ -28,8 +28,6 @@ class func canMakePayments(usingNetworks supportedNetworks: [PKPaymentNetwork], 
 Use this method to see whether the user can make payments using a card from one of the selected networks (for example, American Express, Discover, Mastercard, Visa, etc.) with the selected capabilities (for example, credit, debit, etc.).
 
 > **Note**:  The earliest cards added to Apple Pay may not have credit or debit information. The API for distinguishing credit cards from debit cards is intended for European markets, where merchants often charge different rates for credit and debit purchases.
-
- The earliest cards added to Apple Pay may not have credit or debit information. The API for distinguishing credit cards from debit cards is intended for European markets, where merchants often charge different rates for credit and debit purchases.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Creating custom symbol images for your app
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Create, organize, and annotate symbol images using SF Symbols.
 
@@ -22,8 +22,6 @@ One way to begin creating your own symbol is by basing it on an existing symbol 
 
 > 💡 **Tip**:  You can drop an existing symbol — from a previous template version — onto the app, and it automatically converts the symbol to template version 4 and adds it to the current collection.
 
- You can drop an existing symbol — from a previous template version — onto the app, and it automatically converts the symbol to template version 4 and adds it to the current collection.
-
 For design guidance, see [`Human Interface Guidelines > SF Symbols`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/).
 
 ##### Export a Custom Symbol Template File
@@ -35,8 +33,6 @@ After you locate a symbol image to use as a base for your design, choose File > 
 When exporting a template, you choose between static or variable. Use a static setup if you’re targeting a particular weight and scale, or only plan to design one or two variants of your symbol. The setup contains 27 sets of paths and one set of explicit margins. A variable template setup contains three sets of paths and three sets of margins. If you plan on supporting all design variants, this gives you the minimum number of variants necessary for the system to generate the other 24.
 
 > **Note**:  Beginning with template version 3, SF Symbols introduces vector interpolation for symbol variants. By using three sources — `Ultralight-S`, `Regular-S`, and `Black-S` — SF Symbol can dynamically generate the full range of weights and scales you don’t specify.
-
- Beginning with template version 3, SF Symbols introduces vector interpolation for symbol variants. By using three sources — `Ultralight-S`, `Regular-S`, and `Black-S` — SF Symbol can dynamically generate the full range of weights and scales you don’t specify.
 
 After you export a template file, you use a vector-drawing app, such as Adobe Illustrator or Sketch, to begin modifying it.
 
@@ -93,8 +89,6 @@ The system automatically centers symbols vertically to San Francisco’s cap-hei
 
 > ❗ **Important**:  SF Symbols picks up all paths in a variant’s layer — including invisible paths — as part of the symbol outlines. This may lead to unexpected results when working with layers in the SF Symbols app, so don’t use hidden paths.
 
- SF Symbols picks up all paths in a variant’s layer — including invisible paths — as part of the symbol outlines. This may lead to unexpected results when working with layers in the SF Symbols app, so don’t use hidden paths.
-
 When you create a symbol, you work on the monochrome representation. To ensure that your symbol supports rendering modes other than monochrome:
 
 - Convert any strokes to paths so the resulting shapes can take on colors or hierarchy groups. Paths make it easier to make minor optical adjustments when a stroke isn’t precise enough.
@@ -102,8 +96,6 @@ When you create a symbol, you work on the monochrome representation. To ensure t
 - Check that all shapes in your design have a defined fill area with start and end points that connect.
 
 > ❗ **Important**:  Annotation data requires the same number of paths across designs. To retain your annotation data when modifying the paths of an annotated symbol, you can add, remove, and adjust points, but removing or reordering whole paths makes your designs go out of sync. In these cases, you need to reannotate the symbol to account for its new path structure.
-
- Annotation data requires the same number of paths across designs. To retain your annotation data when modifying the paths of an annotated symbol, you can add, remove, and adjust points, but removing or reordering whole paths makes your designs go out of sync. In these cases, you need to reannotate the symbol to account for its new path structure.
 
 Image variants adapt automatically according to the user’s device language, including right-to-left writing systems. If you’re designing for left-to-right and right-to-left writing systems, consider the directionality and overall look of both localized variants. In some cases, some symbols don’t have the intended look when you mirror them. For design guidance, see [`Human Interface Guidelines > Right to left`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/right-to-left/overview/introduction/).
 
@@ -114,8 +106,6 @@ The Notes layer contains optional annotations and meta information about the tem
 The Notes layer includes annotations on the custom symbol template file that can help you understand its contents. These annotations are optional, but it’s a good idea to keep them as-is for your reference.
 
 > **Note**:  You don’t need to modify the contents of the Notes layer. Lock the artboard layer in your vector-drawing app before making any modifications to the file to avoid interacting and moving it.
-
- You don’t need to modify the contents of the Notes layer. Lock the artboard layer in your vector-drawing app before making any modifications to the file to avoid interacting and moving it.
 
 ##### Export Your Custom Symbol and Preserve All Names
 
@@ -160,8 +150,6 @@ In SF Symbols, select your symbol and enter the gallery view by choosing View > 
 
 > 💡 **Tip**:  Use system-provided colors wherever possible because they adapt to changes in the system’s appearance — light, dark, and high-contrast modes — and in different vibrancy contexts.
 
- Use system-provided colors wherever possible because they adapt to changes in the system’s appearance — light, dark, and high-contrast modes — and in different vibrancy contexts.
-
 A common problem with overlapping shapes is that you can see through where paths overlap. In the color inspector, each layer has a toggle to the right of it. If it’s in a disabled state, the transparent layers blend with the layers below. If it’s active, transparent layers clear what’s behind them and render as if the other layers don’t exist.
 
 When you’re done annotating your symbol, you export the symbol for distribution.
@@ -192,8 +180,6 @@ Template version 3 and later embeds all of your multicolor and hierarchical data
 Template version 4 embeds your variable color annotations, so use this version when you’re supporting iOS 16 or later.
 
 > ❗ **Important**:  None of the versions is a source artifact for editing. Current design tools may not be compatible with the embedded annotation data. If you need to make edits or share it with a colleague, import it back into the SF Symbols app.
-
- None of the versions is a source artifact for editing. Current design tools may not be compatible with the embedded annotation data. If you need to make edits or share it with a colleague, import it back into the SF Symbols app.
 
 If your minimum deployment target is iOS 15 or later, you only need the version 3 template. If your minimum deployment target is iOS 14, you need to export a version 2, 3, and 4 template, and use the appropriate asset depending on a version check. Use the latest template when sharing with a colleague because they can import it into their SF Symbols app to continue editing and annotating.
 
@@ -314,4 +300,4 @@ Open your app’s Xcode project and select its asset catalog. In Xcode’s menu 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/creating-custom-symbol-images-for-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/creating-custom-symbol-images-for-your-app)*

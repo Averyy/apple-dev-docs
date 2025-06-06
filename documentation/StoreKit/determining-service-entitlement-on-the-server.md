@@ -1,16 +1,12 @@
 # Determining service entitlement on the server
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Identify a customer’s entitlement to your service, offers, and messaging by analyzing a validated receipt and the state of their subscription.
 
 #### Overview
 
 > **Note**:  This sample code project is associated with WWDC22 session [`110404: Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110404/). It’s also associated with WWDC 2020 session [`10671: Architecting for Subscriptions`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10671/).
-
- This sample code project is associated with WWDC22 session [`110404: Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110404/).
-
-It’s also associated with WWDC 2020 session [`10671: Architecting for Subscriptions`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10671/).
 
 When your app provides a subscription service, you receive data in the form of in-app receipts and App Store server notifications that provide a subscription’s state. After reading this data, your app determines whether to allow or restrict the user’s access to service, products, offers, and messages.
 

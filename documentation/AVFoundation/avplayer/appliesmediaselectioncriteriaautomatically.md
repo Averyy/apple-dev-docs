@@ -1,6 +1,6 @@
 # appliesMediaSelectionCriteriaAutomatically
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the receiver should apply the current selection criteria automatically to player items.
@@ -30,8 +30,6 @@ var appliesMediaSelectionCriteriaAutomatically: Bool { get set }
 By default, the `AVPlayer` instance applies selection criteria based on system accessibility preferences. To override the default criteria for any media selection group, use [`setMediaSelectionCriteria(_:forMediaCharacteristic:)`](avplayer/setmediaselectioncriteria(_:formediacharacteristic:).md).
 
 > **Note**:  For clients linked against the iOS 7.0 and later or against the macOS 10.9 and later, the default is [`true`](https://developer.apple.com/documentation/swift/true). For all others, the default is [`false`](https://developer.apple.com/documentation/swift/false).
-
- For clients linked against the iOS 7.0 and later or against the macOS 10.9 and later, the default is [`true`](https://developer.apple.com/documentation/swift/true). For all others, the default is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

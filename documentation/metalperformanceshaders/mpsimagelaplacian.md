@@ -1,6 +1,6 @@
 # MPSImageLaplacian
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 An optimized Laplacian filter, provided for ease of use.
@@ -26,8 +26,6 @@ This filter uses an optimized convolution filter with a 3x3 kernel with the foll
 ![](https://docs-assets.developer.apple.com/published/14b057e164/7ed47c4c-c5fa-4b07-b639-47dbf5e55da5.png)
 
 > **Note**: The optimized convolution filter used by the [`MPSImageLaplacian`](mpsimagelaplacian.md) class could also be created by initializing an [`MPSImageConvolution`](mpsimageconvolution.md) object with `kernelWidth=3`, `kernelHeight=3`, and the weights specified above.
-
-The optimized convolution filter used by the [`MPSImageLaplacian`](mpsimagelaplacian.md) class could also be created by initializing an [`MPSImageConvolution`](mpsimageconvolution.md) object with `kernelWidth=3`, `kernelHeight=3`, and the weights specified above.
 
 ## Topics
 

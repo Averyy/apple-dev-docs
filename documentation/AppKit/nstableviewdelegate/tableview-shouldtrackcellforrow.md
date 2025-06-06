@@ -1,6 +1,6 @@
 # tableView(_:shouldTrackCell:for:row:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Asks the delegate whether the specified cell should be tracked.
@@ -26,8 +26,6 @@ In general, only selectable or selected cells can be tracked. If you implement t
 For example, this allows you to have an [`NSButtonCell`](nsbuttoncell.md) object in a table that doesn’t change the selection, but can still be clicked on and tracked.
 
 > **Note**:  This method is only valid for [`NSCell`](nscell.md)-based table views.
-
- This method is only valid for [`NSCell`](nscell.md)-based table views.
 
 ## Parameters
 

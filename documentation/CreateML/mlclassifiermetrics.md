@@ -1,6 +1,6 @@
 # MLClassifierMetrics
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: struct
 
 Metrics you use to evaluate a classifier’s performance.
@@ -23,8 +23,8 @@ struct MLClassifierMetrics
 
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
 - [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
 - [Creating an Image Classifier Model](creating-an-image-classifier-model.md)
+- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
 
 #### Overview
 
@@ -35,8 +35,6 @@ You can determine the model’s accuracy using the [`classificationError`](mlcla
 Accuracy can be a misleading metric if you use unbalanced data, which means the number of examples for some categories are much larger than others. Instead, use [`precisionRecall`](mlclassifiermetrics/precisionrecall.md) or [`confusion`](mlclassifiermetrics/confusion.md).
 
 > **Note**: Each trained model contains different metrics for its various data sets (training, validation, and testing). [`Improving Your Model’s Accuracy`](improving-your-model-s-accuracy.md) compares these metrics between different data sets.
-
-Each trained model contains different metrics for its various data sets (training, validation, and testing). [`Improving Your Model’s Accuracy`](improving-your-model-s-accuracy.md) compares these metrics between different data sets.
 
 ## Topics
 
@@ -95,4 +93,4 @@ Each trained model contains different metrics for its various data sets (trainin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createml/mlclassifiermetrics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateML/mlclassifiermetrics)*

@@ -1,6 +1,6 @@
 # signature(for:using:)
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: method  
 **Required**: Yes
 
@@ -22,8 +22,6 @@ func signature(for data: Data, using request: JPKIPassContents.AuthenticationReq
 - authentication: User authentication request to perform identity signature with
 
 > **Note**: See Error type defined below
-
-See Error type defined below
 
 
 ---

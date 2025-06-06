@@ -1,6 +1,6 @@
 # removeLast(_:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Removes the given number of elements from the end of the collection.
@@ -23,8 +23,6 @@ mutating func removeLast(_ k: Int)
 #### Discussion
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the number of elements to remove.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the number of elements to remove.
 
 ## Parameters
 

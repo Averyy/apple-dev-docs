@@ -13,8 +13,6 @@ Request and display weather data for destination airports in a flight-planning a
 
 > **Note**: This sample code project is associated with WWDC22 session [`10003: Meet WeatherKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10003/).
 
-This sample code project is associated with WWDC22 session [`10003: Meet WeatherKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10003/).
-
 ##### 4039215
 
 Before you run the sample code project in Xcode:

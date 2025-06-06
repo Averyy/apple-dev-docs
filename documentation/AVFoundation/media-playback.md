@@ -1,6 +1,6 @@
 # Media playback
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Manage the playback of media assets and interstitial content, independent of how you present that content in your interface.
 
@@ -10,13 +10,9 @@ You use a player to manage the playback and timing of a media asset, for example
 
 > **Note**:  When you use AVFoundation, Apple may collect metrics to help improve the framework.
 
- When you use AVFoundation, Apple may collect metrics to help improve the framework.
-
 You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asset. A player item manages the timing and presentation state of an asset played by the player. A player item also contains player item tracks that correspond to the tracks in the asset. You direct the output of a player to a specialized Core Animation layer, a player layer, or a synchronized layer.
 
 > ❗ **Important**:  You must call the [`VTRegisterProfessionalVideoWorkflowVideoDecoders()`](https://developer.apple.com/documentation/VideoToolbox/VTRegisterProfessionalVideoWorkflowVideoDecoders()) function if your app requires Afterburner accelerated playback and decoding of ProRes and ProRes RAW video files.
-
- You must call the [`VTRegisterProfessionalVideoWorkflowVideoDecoders()`](https://developer.apple.com/documentation/VideoToolbox/VTRegisterProfessionalVideoWorkflowVideoDecoders()) function if your app requires Afterburner accelerated playback and decoding of ProRes and ProRes RAW video files.
 
 ## Topics
 
@@ -151,4 +147,4 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/media-playback)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/media-playback)*

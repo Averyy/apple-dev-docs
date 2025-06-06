@@ -1,6 +1,6 @@
 # Customizing axes in Swift Charts
 
-**Framework**: Swift Charts
+**Framework**: Charts
 
 Improve the clarity of your chart by configuring the appearance of its axes.
 
@@ -73,8 +73,6 @@ For the battery chart, this creates labels at `0`, `50`, and `100`:
 ![A bar chart that has 48 vertical bars, with each bar shorter than the previous one by a small amount. The y-axis represents integers, ranging from 0 to 100, with labels at 0, 50, and 100. The x-axis represents time, starting at 12 AM, spanning one 24 hour period, with labels every six hours, and AM or PM markers on all the labels. The first bar has a height of 40, while the last has a height of about 10.](https://docs-assets.developer.apple.com/published/81712f6f010460e5aec20ba364c418bd/CustomizingAxes-4-macOS%402x.png)
 
 > **Note**: The actual number of values that the framework uses might differ from the value that you request. For example, if you request four values in the above example, the framework uses five instead to avoid displaying fractional labels.
-
-The actual number of values that the framework uses might differ from the value that you request. For example, if you request four values in the above example, the framework uses five instead to avoid displaying fractional labels.
 
 Alternatively, you can indicate exact values to mark on the axis using an array of values:
 
@@ -188,8 +186,6 @@ You can provide people reading this chart with additional context by displaying 
 
 > **Note**: For the condition `(hour==0)` to work, ensure that your data starts at an hour that’s divisible by the stride. For the above example with a stride of three, the data can start at `3`, `6`, or `9`, or `12`, either AM or PM.
 
-For the condition `(hour==0)` to work, ensure that your data starts at an hour that’s divisible by the stride. For the above example with a stride of three, the data can start at `3`, `6`, or `9`, or `12`, either AM or PM.
-
 The above code also helps to clarify the date boundaries by using a solid grid line and tick at midnight, including at both the beginning and end of the chart:
 
 ![A bar chart that has 48 vertical bars, with each bar shorter than the previous one by a small amount. The y-axis represents percentages, ranging from 0 to 100, with labels at 0, 50, and 100. There are also two additional horizontal grid lines without labels at 25 and 75. The x-axis represents time, starting at 12 AM, spanning one 24 hour period, with labels every three hours, and AM and PM markers at midnight and noon, respectively. The month and day appear below the first time label, aligned with the leading edge of the chart. The first bar has a height of 40, while the last has a height of about 10.](https://docs-assets.developer.apple.com/published/3cb882ff325e0baa36ede540fe0d54a7/CustomizingAxes-8-macOS%402x.png)
@@ -212,4 +208,4 @@ Compare this chart with the one at the beginning of this article that uses the d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/charts/customizing-axes-in-swift-charts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Charts/customizing-axes-in-swift-charts)*

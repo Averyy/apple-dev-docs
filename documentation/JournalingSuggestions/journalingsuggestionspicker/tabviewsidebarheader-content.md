@@ -1,6 +1,6 @@
 # tabViewSidebarHeader(content:)
 
-**Framework**: Journaling Suggestions  
+**Framework**: Journalingsuggestions  
 **Kind**: method
 
 Adds a custom header to the sidebar of a tab view.
@@ -44,8 +44,6 @@ TabView {
 ```
 
 > **Note**: To have a sidebar, a`TabView` needs the `TabViewStyle/sidebarAdaptable` style.
-
-To have a sidebar, a`TabView` needs the `TabViewStyle/sidebarAdaptable` style.
 
 
 ---

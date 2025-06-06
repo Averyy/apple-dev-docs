@@ -10,8 +10,6 @@ Use argument buffers to gather multiple resources into a single shader argument.
 
 > **Note**:  You need to use argument buffers to bind resources to pipelines composed of shaders that you compile with the [`Metal shader converter`](https://developer.apple.comhttps://developer.apple.com/metal/shader-converter/).
 
- You need to use argument buffers to bind resources to pipelines composed of shaders that you compile with the [`Metal shader converter`](https://developer.apple.comhttps://developer.apple.com/metal/shader-converter/).
-
 For more information on argument buffers, watch [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/) and [`Explore bindless rendering in Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10286).
 
 ##### Define Argument Buffer Formats in Metal Shading Language
@@ -48,8 +46,6 @@ Add the following types to the structures:
 - Other arrays and structures
 
 > **Note**:  Argument buffers can’t contain union types, although objects that adopt the [`MTLBuffer`](mtlbuffer.md) protocol support unions.
-
- Argument buffers can’t contain union types, although objects that adopt the [`MTLBuffer`](mtlbuffer.md) protocol support unions.
 
 ##### Encode Resources Into Argument Buffers
 
@@ -173,4 +169,4 @@ kernel void exampleKernel(device ArgumentBufferSampler *source,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/improving-cpu-performance-by-using-argument-buffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/improving-cpu-performance-by-using-argument-buffers)*

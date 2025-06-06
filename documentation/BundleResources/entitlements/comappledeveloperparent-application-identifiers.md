@@ -1,6 +1,6 @@
 # Parent Application Identifiers Entitlement
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 A list of parent application identifiers for an App Clip with exactly one entry.
@@ -14,8 +14,6 @@ A list of parent application identifiers for an App Clip with exactly one entry.
 The Parent Application Identifiers entitlement establishes a secure association between an App Clip and its corresponding app. Add it only to an App Clip target.
 
 > **Note**:  When you add an App Clip target to your project as described in [`Creating an App Clip with Xcode`](https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode), Xcode creates this entitlement and adds the correct value.
-
- When you add an App Clip target to your project as described in [`Creating an App Clip with Xcode`](https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode), Xcode creates this entitlement and adds the correct value.
 
 Because an App Clip is always associated with exactly one app, ensure the parent application entitlement has exactly one entry, the corresponding app’s application identifier.
 

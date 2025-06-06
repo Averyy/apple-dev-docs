@@ -1,6 +1,6 @@
 # NSTitlebarAccessoryViewController
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An object that manages a custom view—known as an accessory view—in the title bar–toolbar area of a window.
@@ -24,8 +24,6 @@ Typically, you create an `NSTitlebarAccessoryViewController` object, give it you
 Don’t override the `view` property in your `NSTitlebarAccessoryViewController` subclass. Instead, you can override [`loadView()`](nsviewcontroller/loadview().md), and set the `view` property in that method.
 
 > **Note**:  `NSTitlebarAccessoryViewController` observes the view’s frame for changes. Depending on the value of [`layoutAttribute`](nstitlebaraccessoryviewcontroller/layoutattribute.md), you can change either the height or the width of the view. Specifically, you can change the view’s height when [`layoutAttribute`](nstitlebaraccessoryviewcontroller/layoutattribute.md) is [`NSLayoutConstraint.Attribute.bottom`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/bottom), and you can change the view’s width when the [`layoutAttribute`](nstitlebaraccessoryviewcontroller/layoutattribute.md) is [`NSLayoutConstraint.Attribute.right`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/right) or [`NSLayoutConstraint.Attribute.left`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/left). The remaining size direction is automatically set to the maximum size as required for the window.
-
- `NSTitlebarAccessoryViewController` observes the view’s frame for changes. Depending on the value of [`layoutAttribute`](nstitlebaraccessoryviewcontroller/layoutattribute.md), you can change either the height or the width of the view. Specifically, you can change the view’s height when [`layoutAttribute`](nstitlebaraccessoryviewcontroller/layoutattribute.md) is [`NSLayoutConstraint.Attribute.bottom`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/bottom), and you can change the view’s width when the [`layoutAttribute`](nstitlebaraccessoryviewcontroller/layoutattribute.md) is [`NSLayoutConstraint.Attribute.right`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/right) or [`NSLayoutConstraint.Attribute.left`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/left). The remaining size direction is automatically set to the maximum size as required for the window.
 
 ## Topics
 
@@ -78,4 +76,4 @@ Don’t override the `view` property in your `NSTitlebarAccessoryViewController`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstitlebaraccessoryviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstitlebaraccessoryviewcontroller)*

@@ -64,8 +64,6 @@ When the sample runs on multiple devices, the view controller assigns the simula
 
 > **Note**: A [`MTLBuffer`](mtlbuffer.md) can’t be directly transferred between different devices; its data must be transferred via system memory.
 
-A [`MTLBuffer`](mtlbuffer.md) can’t be directly transferred between different devices; its data must be transferred via system memory.
-
 ![A flowchart that shows the simulation with two Metal buffers, one on the simulation GPU and the other on the renderer GPU, both backed by the same CPU system memory. On the simulation thread, the simulation produces data and blits it to a new MTLBuffer backed by system memory, then repeats the process. On the render thread, the renderer creates a new MTLBuffer from the same system memory backing and draws the data, then repeats the process.](https://docs-assets.developer.apple.com/published/18c1da1a7bf62179fe106b3b1eaf7585/4-multi-device-buffer.png)
 
 ##### Allocate System Memory for a Buffer
@@ -119,4 +117,4 @@ _updateData[i] = [[NSData alloc] initWithBytesNoCopy:updateAddress
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/selecting-device-objects-for-compute-processing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/selecting-device-objects-for-compute-processing)*

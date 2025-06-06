@@ -1,6 +1,6 @@
 # Entity.CoordinateSpaceReference.scene
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: case
 
 A reference to an entity’s parent window scene.
@@ -23,8 +23,6 @@ let transformInWindowSpace = windowEntity.transformMatrix(relativeTo: .scene)
 ```
 
 > **Note**: If an entity is parented under an , calling [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) with the case `scene` returns `nil`.
-
-If an entity is parented under an , calling [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) with the case `scene` returns `nil`.
 
 
 ---

@@ -1,6 +1,6 @@
 # NSBitmapImageRep
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An object that renders an image from bitmap data.
@@ -25,8 +25,6 @@ When creating a bitmap using a premultiplied format, if a coverage (alpha) plane
 For this reason, you should not use an [`NSBitmapImageRep`](nsbitmapimagerep.md) object if you want to manipulate image data. To work with data that is not premultiplied, use the Core Graphics framework instead. (Specifically, create images using the [`init(width:height:bitsPerComponent:bitsPerPixel:bytesPerRow:space:bitmapInfo:provider:decode:shouldInterpolate:intent:)`](https://developer.apple.com/documentation/CoreGraphics/CGImage/init(width:height:bitsPerComponent:bitsPerPixel:bytesPerRow:space:bitmapInfo:provider:decode:shouldInterpolate:intent:)) function and [`CGImageAlphaInfo.last`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/last) parameter.) Alternatively, include the [`NSAlphaNonpremultipliedBitmapFormat`](nsalphanonpremultipliedbitmapformat.md) flag when creating the bitmap.
 
 > **Note**:  Use the `bitmapFormat` parameter to the [`init(bitmapDataPlanes:pixelsWide:pixelsHigh:bitsPerSample:samplesPerPixel:hasAlpha:isPlanar:colorSpaceName:bitmapFormat:bytesPerRow:bitsPerPixel:)`](nsbitmapimagerep/init(bitmapdataplanes:pixelswide:pixelshigh:bitspersample:samplesperpixel:hasalpha:isplanar:colorspacename:bitmapformat:bytesperrow:bitsperpixel:).md) method to specify the format for creating a bitmap. When creating or retrieving a bitmap with other methods, the bitmap format depends on the original source of the image data. Check the [`bitmapFormat`](nsbitmapimagerep/bitmapformat.md) property before working with image data.
-
- Use the `bitmapFormat` parameter to the [`init(bitmapDataPlanes:pixelsWide:pixelsHigh:bitsPerSample:samplesPerPixel:hasAlpha:isPlanar:colorSpaceName:bitmapFormat:bytesPerRow:bitsPerPixel:)`](nsbitmapimagerep/init(bitmapdataplanes:pixelswide:pixelshigh:bitspersample:samplesperpixel:hasalpha:isplanar:colorspacename:bitmapformat:bytesperrow:bitsperpixel:).md) method to specify the format for creating a bitmap. When creating or retrieving a bitmap with other methods, the bitmap format depends on the original source of the image data. Check the [`bitmapFormat`](nsbitmapimagerep/bitmapformat.md) property before working with image data.
 
 ## Topics
 
@@ -158,4 +156,4 @@ For this reason, you should not use an [`NSBitmapImageRep`](nsbitmapimagerep.md)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsbitmapimagerep)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsbitmapimagerep)*

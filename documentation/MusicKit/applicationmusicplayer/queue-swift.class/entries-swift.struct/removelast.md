@@ -1,6 +1,6 @@
 # removeLast(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Removes the specified number of elements from the end of the collection.
@@ -26,8 +26,6 @@ Attempting to remove more elements than exist in the collection triggers a runti
 Calling this method may invalidate all saved indices of this collection. Do not rely on a previously stored index value after altering a collection with any operation that can change its length.
 
 > **Note**: O(), where  is the specified number of elements.
-
-O(), where  is the specified number of elements.
 
 ## Parameters
 

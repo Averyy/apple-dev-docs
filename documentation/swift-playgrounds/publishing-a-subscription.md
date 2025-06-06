@@ -14,8 +14,6 @@ Uploading files usually involves a , which is a service provider that specialize
 
 > **Note**: Popular sites such as GitHub via [`GitHub Pages`](https://developer.apple.comhttps://pages.github.com/), Squarespace, and others offer the required features for hosting subscriptions. Hosts have their own terms and conditions, however, and may charge fees for high download volumes. Make sure you’re aware of and in agreement with these rules before making your feed available publicly.
 
-Popular sites such as GitHub via [`GitHub Pages`](https://developer.apple.comhttps://pages.github.com/), Squarespace, and others offer the required features for hosting subscriptions. Hosts have their own terms and conditions, however, and may charge fees for high download volumes. Make sure you’re aware of and in agreement with these rules before making your feed available publicly.
-
 ##### Upload Your Subscriptions Files
 
 You store a subscription’s playgrounds (zipped `.playgroundbook` files) as well as its feed (a JSON file) and supporting resources by uploading them to a web host. Be sure to note the URLs that your web host uses to store each file; you’ll use these to fill in the parts of the feed format described in Subscription Feed Format with URLs customized to your specific web host and your playground subscription. These URLs must match the URLs in the feed JSON.

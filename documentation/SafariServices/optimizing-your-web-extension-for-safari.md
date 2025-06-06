@@ -1,6 +1,6 @@
 # Optimizing your web extension for Safari
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Support Dark Mode, reduce memory and power usage, and ensure feature compatibility to improve your web extension experience in Safari and web apps.
 
@@ -60,8 +60,6 @@ When you make your background page nonpersistent:
 
 > **Note**:  Make your background page persistent in macOS if you use the `webRequest` API in it, due to the frequency of callbacks that might fail if Safari unloads the background page.
 
- Make your background page persistent in macOS if you use the `webRequest` API in it, due to the frequency of callbacks that might fail if Safari unloads the background page.
-
 ##### Ensure Feature Compatibility By Specifying Versions
 
 When you build features in your web extension that need a specific version of Safari, specify the required versions in your `manifest.json` file.
@@ -79,8 +77,6 @@ Provide a specific version number in `strict_min_version` if you have a minimum 
 
 > **Note**:  In iOS, the iOS version and Safari version numbers are the same.
 
- In iOS, the iOS version and Safari version numbers are the same.
-
 Review your manifest and web extension API usage periodically to see if there are new features Safari supports that you want to implement in your web extension. See [`Assessing your Safari web extension’s browser compatibility`](assessing-your-safari-web-extension-s-browser-compatibility.md) for more information.
 
 ## See Also
@@ -97,4 +93,4 @@ Review your manifest and web extension API usage periodically to see if there ar
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/optimizing-your-web-extension-for-safari)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/optimizing-your-web-extension-for-safari)*

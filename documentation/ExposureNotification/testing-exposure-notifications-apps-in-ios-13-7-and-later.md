@@ -1,6 +1,6 @@
 # Testing Exposure Notifications Apps in iOS 13.7 and Later
 
-**Framework**: Exposure Notification
+**Framework**: Exposurenotification
 
 Perform end-to-end validation of Exposure Notifications apps on a device by manually loading configuration files.
 
@@ -111,8 +111,6 @@ Once the configuration file is available in the Files app on your iPhone, open t
 
 > **Note**:  if you don’t see an Exposure Notifications option under the Develop menu in the Settings app, you may need to install the Exposure Notifications profile provided by Apple, which enables that option. If you have installed the profile and still don’t see the option, [`contact Apple Developer Technical Support`](https://developer.apple.comhttps://developer.apple.com/membercenter/index.action#requestTechSupport).
 
- if you don’t see an Exposure Notifications option under the Develop menu in the Settings app, you may need to install the Exposure Notifications profile provided by Apple, which enables that option. If you have installed the profile and still don’t see the option, [`contact Apple Developer Technical Support`](https://developer.apple.comhttps://developer.apple.com/membercenter/index.action#requestTechSupport).
-
 Navigate back to the top level of the Settings app and tap Exposure Notifications. Select Turn on Exposure Notifications and then select your app’s region. Once you do this, your phone will use the information from the custom configuration file. When you want to stop using your custom configuration file, disable Developer Server Configuration under Exposure Notifications in the Developer section of the Settings app.
 
 ## See Also
@@ -137,4 +135,4 @@ Navigate back to the top level of the Settings app and tap Exposure Notification
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/testing-exposure-notifications-apps-in-ios-13-7-and-later)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/testing-exposure-notifications-apps-in-ios-13-7-and-later)*

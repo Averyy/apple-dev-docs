@@ -1,6 +1,6 @@
 # enumerated()
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns a sequence of pairs (, ), where  represents a consecutive integer starting at zero and  represents an element of the sequence.
@@ -63,8 +63,6 @@ for i in shorterIndices {
 ```
 
 > **Note**: O(1)
-
-O(1)
 
 
 ---

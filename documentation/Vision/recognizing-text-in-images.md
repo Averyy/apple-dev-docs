@@ -20,8 +20,6 @@ Using either path, you may optionally apply a language-correction phase based on
 
 > **Note**:  Using Vision’s text-recognition features is similar to performing other Vision operations, where you perform computer vision requests on an image and retrieve the resulting observations. If you’re new to the Vision framework, see [`Detecting Objects in Still Images`](detecting-objects-in-still-images.md).
 
- Using Vision’s text-recognition features is similar to performing other Vision operations, where you perform computer vision requests on an image and retrieve the resulting observations. If you’re new to the Vision framework, see [`Detecting Objects in Still Images`](detecting-objects-in-still-images.md).
-
 ##### Perform a Text Recognition Request
 
 Vision provides its text-recognition capabilities through [`VNRecognizeTextRequest`](vnrecognizetextrequest.md), an image-based request type that finds and extracts text in images. The following example shows how to use [`VNImageRequestHandler`](vnimagerequesthandler.md) to perform a [`VNRecognizeTextRequest`](vnrecognizetextrequest.md) for recognizing text in the specified [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage).
@@ -45,8 +43,6 @@ do {
 ```
 
 > **Note**:  [`VNRecognizeTextRequest`](vnrecognizetextrequest.md) uses the accurate path by default. To select the fast path, set the request’s [`recognitionLevel`](vnrecognizetextrequest/recognitionlevel.md) property to [`VNRequestTextRecognitionLevel.fast`](vnrequesttextrecognitionlevel/fast.md).
-
- [`VNRecognizeTextRequest`](vnrecognizetextrequest.md) uses the accurate path by default. To select the fast path, set the request’s [`recognitionLevel`](vnrecognizetextrequest/recognitionlevel.md) property to [`VNRequestTextRecognitionLevel.fast`](vnrequesttextrecognitionlevel/fast.md).
 
 ##### Process the Results
 
@@ -102,8 +98,6 @@ Enabling language correction on the request helps minimize common recognition er
 
 > **Note**:  Vision doesn’t support language correction, or its related [`customWords`](vnrecognizetextrequest/customwords.md) array, for Chinese.
 
- Vision doesn’t support language correction, or its related [`customWords`](vnrecognizetextrequest/customwords.md) array, for Chinese.
-
 ## See Also
 
 - [Structuring Recognized Text on a Document](../visionkit/structuring_recognized_text_on_a_document.md)
@@ -120,4 +114,4 @@ Enabling language correction on the request helps minimize common recognition er
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/recognizing-text-in-images)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/recognizing-text-in-images)*

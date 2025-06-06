@@ -20,8 +20,6 @@ This function loads the video decoders within the client’s `/Library/Video/Pro
 
 > **Note**: This functionality is only intended for apps that support professional video workflows. It isn’t recommended for network-facing applications such as web browsers, messaging clients, mail clients, and so on.
 
-This functionality is only intended for apps that support professional video workflows. It isn’t recommended for network-facing applications such as web browsers, messaging clients, mail clients, and so on.
-
 ##### Apple Afterburner Acceleration
 
 Apple Afterburner is an accelerator card for the Mac Pro (2019), created to enhance Apple ProRes and ProRes RAW workflows for film and video professionals. Afterburner accelerates decoding and playback of multiple streams of ProRes and Pro Res RAW video files.

@@ -1,6 +1,6 @@
 # filter(_:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Returns an array containing, in order, the elements of the sequence that satisfy the given predicate.
@@ -35,8 +35,6 @@ print(shortNames)
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

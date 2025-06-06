@@ -38,8 +38,6 @@ If you need a high degree of configurability or are using web content in ways un
 
 > **Note**:  The [`webView(_:decidePolicyFor:decisionHandler:)`](wknavigationdelegate/webview(_:decidepolicyfor:decisionhandler:)-2ni62.md) function doesn’t return a Boolean as its [`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView) counterpart did; it uses the `decisionHandler` to return an [`WKNavigationActionPolicy.allow`](wknavigationactionpolicy/allow.md) or [`WKNavigationActionPolicy.cancel`](wknavigationactionpolicy/cancel.md) value.
 
- The [`webView(_:decidePolicyFor:decisionHandler:)`](wknavigationdelegate/webview(_:decidepolicyfor:decisionhandler:)-2ni62.md) function doesn’t return a Boolean as its [`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView) counterpart did; it uses the `decisionHandler` to return an [`WKNavigationActionPolicy.allow`](wknavigationactionpolicy/allow.md) or [`WKNavigationActionPolicy.cancel`](wknavigationactionpolicy/cancel.md) value.
-
 ##### Plan for Architectural Changes
 
 One major architectural difference between [`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView) and [`WKWebView`](wkwebview.md) is that the methods of [`WKWebView`](wkwebview.md) tend to be asynchronous, while the methods of [`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView) were synchronous.
@@ -58,4 +56,4 @@ This difference requires code and architecture changes in your app. Another majo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/webkit/replacing-uiwebview-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/replacing-uiwebview-in-your-app)*

@@ -1,6 +1,6 @@
 # Visualizing and interacting with a reconstructed scene
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Estimate the shape of the physical environment using a polygonal mesh.
 
@@ -41,8 +41,6 @@ arView.debugOptions.insert(.showSceneUnderstanding)
 ```
 
 > **Note**: The sample enables mesh visualization only to demonstrate the mesh feature; similarly, you normally enable mesh visualization only for debugging purposes.
-
-The sample enables mesh visualization only to demonstrate the mesh feature; similarly, you normally enable mesh visualization only for debugging purposes.
 
 To begin the AR experience, the sample configures and runs the session when the app first starts, in the main view controller’s `viewDidLoad` callback.
 
@@ -207,7 +205,7 @@ With scene meshes, virtual content can interact with the physical environment re
 arView.environment.sceneUnderstanding.options.insert(.physics)
 ```
 
-To detect when virtual content comes in contact with a meshed, real-world object, the sample defines the text’s proportions using a collision shape in the `addAnchor(_:,removeAfter:)` [`scene`](https://developer.apple.com/documentation/RealityKit/scene) extension.
+To detect when virtual content comes in contact with a meshed, real-world object, the sample defines the text’s proportions using a collision shape in the `addAnchor(_:,removeAfter:)` [`Scene`](https://developer.apple.com/documentation/RealityKit/Scene) extension.
 
 ```swift
 if model.collision == nil {
@@ -240,4 +238,4 @@ As the text falls, it reacts when colliding with a meshed, real-world object, su
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/visualizing-and-interacting-with-a-reconstructed-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/visualizing-and-interacting-with-a-reconstructed-scene)*

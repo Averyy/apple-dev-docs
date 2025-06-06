@@ -24,8 +24,6 @@ This notification tells your app to stop using an [`MTLDevice`](mtldevice.md) in
 
 > **Note**:  Metal removes the device instance from the array it returns with its methods — such as [`MTLCopyAllDevices()`](mtlcopyalldevices().md) — before sending this notification.
 
- Metal removes the device instance from the array it returns with its methods — such as [`MTLCopyAllDevices()`](mtlcopyalldevices().md) — before sending this notification.
-
 ## See Also
 
 - [static let wasAdded: MTLDeviceNotificationName](mtldevicenotificationname/wasadded.md)

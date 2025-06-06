@@ -1,6 +1,6 @@
 # WindowGroup
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A scene that presents a group of identically structured windows.
@@ -38,8 +38,6 @@ struct Mail: App {
 SwiftUI takes care of certain platform-specific behaviors. For example, on platforms that support it, like macOS and iPadOS, people can open more than one window from the group simultaneously. In macOS, people can gather open windows together in a tabbed interface. Also in macOS, window groups automatically provide commands for standard window management.
 
 > ❗ **Important**: To enable an iPadOS app to simultaneously display multiple windows, be sure to include the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key with a value of `true` in the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) dictionary of your app’s Information Property List.
-
-To enable an iPadOS app to simultaneously display multiple windows, be sure to include the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key with a value of `true` in the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) dictionary of your app’s Information Property List.
 
 Every window in the group maintains independent state. For example, the system allocates new storage for any [`State`](state.md) or [`StateObject`](stateobject.md) variables instantiated by the scene’s view hierarchy for each window that it creates.
 
@@ -139,8 +137,6 @@ SwiftUI uses this title when referring to the window in:
 If you don’t provide a title for a window, the system refers to the window using the app’s name instead.
 
 > **Note**: You can override the title that SwiftUI uses for a window in the window’s title bar and the menu’s list of open windows by adding one of the [`navigationTitle(_:)`](view/navigationtitle(_:).md) modifiers to the window’s content. This enables you to customize and dynamically update the title for each individual window instance.
-
-You can override the title that SwiftUI uses for a window in the window’s title bar and the menu’s list of open windows by adding one of the [`navigationTitle(_:)`](view/navigationtitle(_:).md) modifiers to the window’s content. This enables you to customize and dynamically update the title for each individual window instance.
 
 ##### Distinguish Windows That Present Like Data
 
@@ -264,4 +260,4 @@ The dismiss action doesn’t close the window if you call it from a modal — li
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/windowgroup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/windowgroup)*

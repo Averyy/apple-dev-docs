@@ -1,6 +1,6 @@
 # labelsHidden()
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Hides the labels of any controls contained within this view.
@@ -45,8 +45,6 @@ The [`VStack`](vstack.md) in the example above centers the first toggle’s cont
 Always provide a label for controls, even when you hide the label, because SwiftUI uses labels for other purposes, including accessibility.
 
 > **Note**: This modifier doesn’t work for all labels. It applies to labels that are separate from the rest of the control’s interface, like they are for [`Toggle`](toggle.md), but not to controls like a bordered button where the label is inside the button’s border.
-
-This modifier doesn’t work for all labels. It applies to labels that are separate from the rest of the control’s interface, like they are for [`Toggle`](toggle.md), but not to controls like a bordered button where the label is inside the button’s border.
 
 ## See Also
 

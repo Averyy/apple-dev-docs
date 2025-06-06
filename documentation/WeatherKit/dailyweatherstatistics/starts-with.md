@@ -45,8 +45,6 @@ print(b.starts(with: []))
 
 > **Note**: O(), where  is the lesser of the length of the sequence and the length of `possiblePrefix`.
 
-O(), where  is the lesser of the length of the sequence and the length of `possiblePrefix`.
-
 ## Parameters
 
 - `possiblePrefix`: A sequence to compare to this sequence.

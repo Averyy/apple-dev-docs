@@ -1,6 +1,6 @@
 # willTerminateNotification
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 Sends a notification to termintate the app.
@@ -19,8 +19,6 @@ class let willTerminateNotification: NSNotification.Name
 Posted by the [`terminate(_:)`](nsapplication/terminate(_:).md) method, the notification is only posted if the delegate method [`applicationShouldTerminate(_:)`](nsapplicationdelegate/applicationshouldterminate(_:).md) returns [`true`](https://developer.apple.com/documentation/swift/true). The notification object is [`shared`](nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary.
 
 > **Note**:  This notification isn’t sent during sudden termination of an app. For more information about sudden termination, see the section  [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo).
-
- This notification isn’t sent during sudden termination of an app. For more information about sudden termination, see the section  [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo).
 
 ## See Also
 
@@ -58,4 +56,4 @@ Posted by the [`terminate(_:)`](nsapplication/terminate(_:).md) method, the noti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsapplication/willterminatenotification)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsapplication/willterminatenotification)*

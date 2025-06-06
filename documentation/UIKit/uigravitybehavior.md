@@ -1,6 +1,6 @@
 # UIGravityBehavior
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that applies a gravity-like force to all of its associated dynamic items.
@@ -26,8 +26,6 @@ The magnitude and direction of the gravity force are configurable and are applie
 You specify the magnitude and direction of the gravity force as a two-dimensional vector in the reference view’s coordinate system. A value of `1.0` imparts the standard UIKit gravity, which corresponds to an acceleration of 1000 points / second² in the direction of the given axis. The default vector in the [`gravityDirection`](uigravitybehavior/gravitydirection.md) property is (`0.0`, `1.0`), which causes items to accelerate downward along the positive y axis. If you prefer to set the vector [`angle`](uigravitybehavior/angle.md) and [`magnitude`](uigravitybehavior/magnitude.md) separately, you can do so using the corresponding properties.
 
 > **Note**:  If you want a gravitational force that takes the mass of each object into account, use a [`UIFieldBehavior`](uifieldbehavior.md) object instead. Field behaviors support both linear and radial gravitation fields and take the mass of an object into account, resulting in different amounts of force applied to each object.
-
- If you want a gravitational force that takes the mass of each object into account, use a [`UIFieldBehavior`](uifieldbehavior.md) object instead. Field behaviors support both linear and radial gravitation fields and take the mass of an object into account, resulting in different amounts of force applied to each object.
 
 If you want to influence a gravity behavior at each step of a dynamic animation, assign an appropriate block to the inherited [`action`](uidynamicbehavior/action.md) property. Use your block to make any needed changes to the dynamic items associated with the gravity behavior.
 
@@ -93,4 +91,4 @@ The gravity behavior derives its coordinate system from the reference view of it
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uigravitybehavior)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uigravitybehavior)*

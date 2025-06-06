@@ -10,8 +10,6 @@ Xcode lets you manage optional components yourself so that you can install only 
 
 > **Note**: Developing for visionOS requires a Mac with Apple silicon.
 
-Developing for visionOS requires a Mac with Apple silicon.
-
 ##### Manage Xcode Components in Settings
 
 To manage your components, choose Xcode > Settings and click Components in the toolbar. Xcode shows the installed and enabled components along with the amount of storage you can recover if you remove them.
@@ -27,8 +25,6 @@ To remove or disable components you no longer use and recover their storage spac
 You can also install platform support when you create a project by selecting a template and clicking the Get button that appears for platforms that aren’t installed. For more information, see [`Creating an Xcode project for an app`](creating-an-xcode-project-for-an-app.md).
 
 > **Note**: You can create a new Xcode project or work with an existing Xcode project on a platform that Xcode is installing, but you can’t run or build the project until Xcode finishes downloading and installing the files.
-
-You can create a new Xcode project or work with an existing Xcode project on a platform that Xcode is installing, but you can’t run or build the project until Xcode finishes downloading and installing the files.
 
 ##### Install Previously Released Simulator Runtimes in Settings
 
@@ -99,4 +95,4 @@ If new components exist, the `-checkForNewerComponents` option stores the files 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/downloading-and-installing-additional-xcode-components)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/downloading-and-installing-additional-xcode-components)*

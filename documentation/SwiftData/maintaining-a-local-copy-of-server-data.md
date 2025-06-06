@@ -1,6 +1,6 @@
 # Maintaining a local copy of server data
 
-**Framework**: SwiftData
+**Framework**: Swiftdata
 
 Create and update a persistent store to cache read-only network data.
 
@@ -25,8 +25,6 @@ The app downloads earthquake data from the network under the following assumptio
 The app uses SwiftData to persistently store the data that it downloads. By caching the data locally, the app reduces its need to access the server. SwiftData also makes it easy for the app to manage updates when downloading new data.
 
 > **Note**: To learn how the app manages data presentation with queries and predicates, see [`Filtering and sorting persistent data`](filtering-and-sorting-persistent-data.md).
-
-To learn how the app manages data presentation with queries and predicates, see [`Filtering and sorting persistent data`](filtering-and-sorting-persistent-data.md).
 
 ##### Define the Apps Data Model
 
@@ -174,4 +172,4 @@ The insert method works for both creating and updating earthquake model instance
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/maintaining-a-local-copy-of-server-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/maintaining-a-local-copy-of-server-data)*

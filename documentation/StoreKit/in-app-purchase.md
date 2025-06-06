@@ -1,6 +1,6 @@
 # In-App Purchase
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Offer content and services in your app across Apple platforms using a Swift-based interface.
 
@@ -31,8 +31,6 @@ The In-App Purchase API takes advantage of Swift features like concurrency to si
 
 > **Note**:  Session 10114: [`Meet StoreKit 2`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10114/)
 
- Session 10114: [`Meet StoreKit 2`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10114/)
-
 The In-App Purchase API offers:
 
 - Transaction information that’s App Store-signed in JSON Web Signature (JWS) format.
@@ -40,8 +38,6 @@ The In-App Purchase API offers:
 - An entitlements API, [`currentEntitlements`](transaction/currententitlements.md), that simplifies determining entitlements to unlock content and services for your customers.
 
 > **Note**:  Session 110404: [`Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110404/)
-
- Session 110404: [`Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110404/)
 
 To support a store in your app, implement the following functionality:
 
@@ -160,4 +156,4 @@ To support a store in your app, implement the following functionality:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/in-app-purchase)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/in-app-purchase)*

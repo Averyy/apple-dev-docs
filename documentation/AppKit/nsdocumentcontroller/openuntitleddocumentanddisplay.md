@@ -1,6 +1,6 @@
 # openUntitledDocumentAndDisplay(_:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Creates a new untitled document, presents its user interface if `displayDocument` is [`true`](https://developer.apple.com/documentation/swift/true), and returns the document if successful.
@@ -26,10 +26,6 @@ The default implementation of this method calls [`defaultType`](nsdocumentcontro
 When `displayDocument` is [`true`](https://developer.apple.com/documentation/swift/true), this method sends the new document [`makeWindowControllers()`](nsdocument/makewindowcontrollers().md) and [`showWindows()`](nsdocument/showwindows().md) messages. In this scenario, [`showWindows()`](nsdocument/showwindows().md) shows only the window controllers that have been assigned to the document.
 
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

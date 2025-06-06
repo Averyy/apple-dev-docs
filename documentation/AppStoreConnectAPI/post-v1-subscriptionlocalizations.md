@@ -1,6 +1,6 @@
 # Create a Subscription Localization
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Create a localized display name and description for an auto-renewable subscription.
@@ -16,8 +16,6 @@ Create a localized display name and description for an auto-renewable subscripti
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
 ## See Also
 
 - [Read Subscription Localization Information](get-v1-subscriptionlocalizations-_id_.md)
@@ -30,4 +28,4 @@ Create a localized display name and description for an auto-renewable subscripti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-subscriptionlocalizations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-subscriptionlocalizations)*

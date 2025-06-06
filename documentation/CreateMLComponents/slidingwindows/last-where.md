@@ -1,6 +1,6 @@
 # last(where:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Returns the last element of the sequence that satisfies the given predicate.
@@ -37,8 +37,6 @@ if let lastNegative = numbers.last(where: { $0 < 0 }) {
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

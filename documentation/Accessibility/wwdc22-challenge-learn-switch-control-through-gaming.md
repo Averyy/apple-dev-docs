@@ -13,8 +13,6 @@ Play a card-matching game using Switch Control.
 
 > **Note**: This is a companion project for WWDC22 Challenge [`Learn Switch Control through gaming`](https://developer.apple.comhttps://developer.apple.com/news/?id=2nfiv7v0).
 
-This is a companion project for WWDC22 Challenge [`Learn Switch Control through gaming`](https://developer.apple.comhttps://developer.apple.com/news/?id=2nfiv7v0).
-
 ##### Configure the Sample Code Project
 
 This project requires an iPhone or iPad, that’s running iOS 16 or iPadOS 16. It doesn’t support running in Simulator.

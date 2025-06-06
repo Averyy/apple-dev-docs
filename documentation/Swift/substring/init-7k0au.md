@@ -24,8 +24,6 @@ init(_ content: Substring.UnicodeScalarView)
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

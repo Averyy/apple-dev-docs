@@ -19,8 +19,6 @@ Similarly, Xcode Cloud can’t build standalone apps you create with [`Swift Pla
 
 > **Note**: To learn more about building projects with Xcode Cloud that require Swift package dependencies, see [`Use Swift package dependencies and Git submodules`](making-dependencies-available-to-xcode-cloud#Use-Swift-package-dependencies-and-Git-submodules.md).
 
-To learn more about building projects with Xcode Cloud that require Swift package dependencies, see [`Use Swift package dependencies and Git submodules`](making-dependencies-available-to-xcode-cloud#Use-Swift-package-dependencies-and-Git-submodules.md).
-
 ## See Also
 
 - [Making dependencies available to Xcode Cloud](making-dependencies-available-to-xcode-cloud.md)
@@ -41,4 +39,4 @@ To learn more about building projects with Xcode Cloud that require Swift packag
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/building-swift-packages-or-swift-playground-app-projects-with-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/building-swift-packages-or-swift-playground-app-projects-with-xcode-cloud)*

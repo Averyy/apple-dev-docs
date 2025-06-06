@@ -1,6 +1,6 @@
 # mediaServicesWereResetNotification
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: property
 
 A notification the system posts when the media server restarts.
@@ -25,15 +25,11 @@ Under rare circumstances, the system terminates and restarts its media services 
 
 > **Note**:  You can trigger a media server reset by choosing the “Reset Media Services” selection under the Developer menu in the iOS Settings app. Using this utility helps to ensure that your app responds appropriately if media services were reset.
 
- You can trigger a media server reset by choosing the “Reset Media Services” selection under the Developer menu in the iOS Settings app. Using this utility helps to ensure that your app responds appropriately if media services were reset.
-
 This notification has no [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/1409222-userinfo) dictionary.
 
 The system posts this notification on the main thread.
 
 > ❗ **Important**:  Apps don’t need to reregister for any audio session notifications and don’t need to reset key-value observers on audio session properties after a media services reset.
-
- Apps don’t need to reregister for any audio session notifications and don’t need to reset key-value observers on audio session properties after a media services reset.
 
 ## See Also
 

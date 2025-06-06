@@ -1,6 +1,6 @@
 # productTemplate
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Displays detailed information about a single product.
 
@@ -43,8 +43,6 @@ The following listing shows the main elements of the productTemplate element in 
 ```
 
 > **Note**: You can change the look of a `productTemplate` page by removing `heroImage` from the `stack` element and replacing it with an `img` element that covers the entire screen.
-
-You can change the look of a `productTemplate` page by removing `heroImage` from the `stack` element and replacing it with an `img` element that covers the entire screen.
 
 ###### Element Descriptions
 
@@ -296,4 +294,4 @@ The following figures show the ouput for the above example. The first figure sho
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/producttemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/producttemplate)*

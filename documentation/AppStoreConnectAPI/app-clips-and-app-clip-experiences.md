@@ -1,6 +1,6 @@
 # App Clips and App Clip Experiences
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read App Clip information and manage App Clip experiences.
 
@@ -28,8 +28,6 @@ To read App Clip information and manage App Clip experiences, be sure you have o
 For the full list of App Store Connect user roles, see [`UserRole`](userrole.md).
 
 > **Note**:  You need to create an App Clip and upload it to App Store Connect before you can create an App Clip experience using the App Store Connect API.
-
- You need to create an App Clip and upload it to App Store Connect before you can create an App Clip experience using the App Store Connect API.
 
 ##### Plan App Clip Experience Creation and Management
 
@@ -71,16 +69,12 @@ To create a default App Clip experience:
 
 > 💡 **Tip**:  To create a new App Clip experience that uses metadata of an existing default App Clip experience, create the new experience and include the `appClipDefaultExperienceTemplate` relationship in the [`AppClipDefaultExperienceCreateRequest`](appclipdefaultexperiencecreaterequest.md).
 
- To create a new App Clip experience that uses metadata of an existing default App Clip experience, create the new experience and include the `appClipDefaultExperienceTemplate` relationship in the [`AppClipDefaultExperienceCreateRequest`](appclipdefaultexperiencecreaterequest.md).
-
 To create an advanced App Clip experience:
 
 - Call the [`Create an Advanced App Clip Experience`](post-v1-appclipadvancedexperiences.md) endpoint.
 - Include the related [`App Clips`](app-clips.md), [`AppClipAdvancedExperienceLocalization`](appclipadvancedexperiencelocalization.md), and [`Advanced App Clip Experience Images`](advanced-app-clip-experience-images.md) resources.
 
 > ❗ **Important**:  For both default or advanced App Clip experiences, provide at least one localization and make sure that it matches your app’s primary locale. If your app supports additional localizations, provide the same localizations for each App Clip experience.
-
- For both default or advanced App Clip experiences, provide at least one localization and make sure that it matches your app’s primary locale. If your app supports additional localizations, provide the same localizations for each App Clip experience.
 
 To create an advanced App Clip experience that appears in Apple Maps, you create an [`AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place`](appclipadvancedexperiencecreaterequest/data-data.dictionary/attributes-data.dictionary/place-data.dictionary.md) association that connects the App Clip experience to a physical location. Apple Maps uses any location data that you provide solely for matching an App Clip experience to an existing location. If it can’t find a match, Apple Maps doesn’t use the provided location data.
 
@@ -113,4 +107,4 @@ Verifying that the launch experience of the App Clip is free of errors is a key 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/app-clips-and-app-clip-experiences)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/app-clips-and-app-clip-experiences)*

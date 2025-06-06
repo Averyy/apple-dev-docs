@@ -1,6 +1,6 @@
 # FSVolume.Operations
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: protocol
 
 Methods that all volumes implement to provide required capabilities.
@@ -19,8 +19,6 @@ protocol Operations : FSVolume.PathConfOperations
 Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provide additional capabilities, conform to the other `FSVolume` operations protocols, like [`FSVolume.OpenCloseOperations`](fsvolume/opencloseoperations.md) and [`FSVolume.ReadWriteOperations`](fsvolume/readwriteoperations.md).
 
 > **Note**: This protocol extends [`FSVolume.PathConfOperations`](fsvolume/pathconfoperations.md), so your volume implementation must also conform to that protocol.
-
-This protocol extends [`FSVolume.PathConfOperations`](fsvolume/pathconfoperations.md), so your volume implementation must also conform to that protocol.
 
 ## Topics
 
@@ -113,4 +111,4 @@ This protocol extends [`FSVolume.PathConfOperations`](fsvolume/pathconfoperation
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fsvolume/operations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FSKit/fsvolume/operations)*

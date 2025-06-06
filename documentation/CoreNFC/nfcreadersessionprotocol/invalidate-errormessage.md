@@ -1,6 +1,6 @@
 # invalidate(errorMessage:)
 
-**Framework**: Core NFC  
+**Framework**: Corenfc  
 **Kind**: method  
 **Required**: Yes
 
@@ -22,8 +22,6 @@ func invalidate(errorMessage: String)
 Use this method to end the reader session and display a message to the user when an error condition occurs after the app successfully reads a tag. This type of error can occur if, for example, the app reads data from an NFC tag, but determines that the data has expired and discards it. The app then calls [`invalidate(errorMessage:)`](nfcreadersessionprotocol/invalidate(errormessage:).md) to end the reader session, and to let the user know why it discarded the data.
 
 > **Note**:  After invalidating a reader session, you cannot use it to scan and detect other tags.
-
- After invalidating a reader session, you cannot use it to scan and detect other tags.
 
 ## Parameters
 

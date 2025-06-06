@@ -1,6 +1,6 @@
 # Using object capture assets in RealityKit
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Create a chess game using RealityKit and assets created using Object Capture.
 
@@ -12,8 +12,6 @@ Create a chess game using RealityKit and assets created using Object Capture.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [`10128: Bring your world into augmented reality`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10128/).
-
-This sample code project is associated with WWDC22 session [`10128: Bring your world into augmented reality`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10128/).
 
 ##### 4093082
 

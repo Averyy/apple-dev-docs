@@ -1,6 +1,6 @@
 # groupDisplayName
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: property
 
 The localized name of the subscription group, suitable for display.
@@ -27,8 +27,6 @@ You provide a group display name in App Store Connect when you set up a subscrip
 The [`SubscriptionStoreView`](subscriptionstoreview.md) uses this value as part of the automatic marketing content if you don’t provide a marketing content view.
 
 > **Note**:  When you create a new product in App Store Connect or in a StoreKit configuration file, you can test it before you add a product localization. The [`groupDisplayName`](product/subscriptioninfo/groupdisplayname.md) value is an empty string until you add a localization. For more information on localizations, see [`Add localizations`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions#add-localizations).
-
- When you create a new product in App Store Connect or in a StoreKit configuration file, you can test it before you add a product localization. The [`groupDisplayName`](product/subscriptioninfo/groupdisplayname.md) value is an empty string until you add a localization. For more information on localizations, see [`Add localizations`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions#add-localizations).
 
 ## See Also
 

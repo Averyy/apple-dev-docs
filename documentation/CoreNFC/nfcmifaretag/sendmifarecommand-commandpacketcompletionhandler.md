@@ -1,6 +1,6 @@
 # sendMiFareCommand(commandPacket:completionHandler:)
 
-**Framework**: Core NFC  
+**Framework**: Corenfc  
 **Kind**: method  
 **Required**: Yes
 
@@ -24,8 +24,6 @@ Use this method to send commands to tags that are from the [`NFCMiFareFamily.ult
 This method supports command chaining, passing the full response composed of the individual fragments to the `completionHandler`.
 
 > **Note**:  This method doesn’t support the Crypto1 protocol.
-
- This method doesn’t support the Crypto1 protocol.
 
 ## Parameters
 

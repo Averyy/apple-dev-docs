@@ -1,6 +1,6 @@
 # Incorporating MIDI 2 into your apps
 
-**Framework**: Core MIDI
+**Framework**: Coremidi
 
 Add precision and improve musical control for your MIDI apps.
 
@@ -137,8 +137,6 @@ The receiver target creates a Core MIDI client, and when the user presses the Cr
 
 > **Note**: The system calls [`MIDIReceiveBlock`](midireceiveblock.md) on a high-priority thread, so perform real-time safe and nonblocking operations within the block.
 
-The system calls [`MIDIReceiveBlock`](midireceiveblock.md) on a high-priority thread, so perform real-time safe and nonblocking operations within the block.
-
 ## See Also
 
 - [func MIDIClientCreate(CFString, MIDINotifyProc?, UnsafeMutableRawPointer?, UnsafeMutablePointer<MIDIClientRef>) -> OSStatus](midiclientcreate(_:_:_:_:).md)
@@ -153,4 +151,4 @@ The system calls [`MIDIReceiveBlock`](midireceiveblock.md) on a high-priority th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coremidi/incorporating-midi-2-into-your-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreMIDI/incorporating-midi-2-into-your-apps)*

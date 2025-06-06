@@ -1,6 +1,6 @@
 # Scanning and Detecting 3D Objects
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
 
@@ -22,8 +22,6 @@ This sample code project provides multiple ways to make use of object detection:
 - Use [`detectionObjects`](arworldtrackingconfiguration/detectionobjects.md) in a world-tracking AR session to recognize a reference object and create AR interactions.
 
 > **Note**: ARKit requires an iOS device with A9 processor or later. ARKit is not supported in iOS Simulator.
-
-ARKit requires an iOS device with A9 processor or later. ARKit is not supported in iOS Simulator.
 
 #### Configure Your Physical Environment to Enhance Object Scanning
 
@@ -48,8 +46,6 @@ The programming steps to scan and define a reference object that ARKit can use f
 
 > **Note**: An [`ARReferenceObject`](arreferenceobject.md) contains only the spatial feature information needed for ARKit to recognize the real-world object, and is not a displayable 3D reconstruction of that object.
 
-An [`ARReferenceObject`](arreferenceobject.md) contains only the spatial feature information needed for ARKit to recognize the real-world object, and is not a displayable 3D reconstruction of that object.
-
 #### Detect Reference Objects in an Ar Experience
 
 You can use an Xcode asset catalog to bundle reference objects in an app for use in detection:
@@ -59,8 +55,6 @@ You can use an Xcode asset catalog to bundle reference objects in an app for use
 3. Optionally, for each reference object, use the inspector to provide a descriptive name for your own use.
 
 > **Note**: Put all objects you want to look for in the same session into a resource group, and use separate resource groups to hold sets of objects for use in separate sessions. For example, a museum app might use separate sessions (and thus separate resource groups) for recognizing displays in different wings of the museum.
-
-Put all objects you want to look for in the same session into a resource group, and use separate resource groups to hold sets of objects for use in separate sessions. For example, a museum app might use separate sessions (and thus separate resource groups) for recognizing displays in different wings of the museum.
 
 To enable object detection in an AR session, load the reference objects you want to detect as [`ARReferenceObject`](arreferenceobject.md) instances, provide those objects for the [`detectionObjects`](arworldtrackingconfiguration/detectionobjects.md) property of an [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md), and run an [`ARSession`](arsession.md) with that configuration:
 
@@ -176,4 +170,4 @@ After you obtain an [`ARReferenceObject`](arreferenceobject.md), you can either 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/scanning-and-detecting-3d-objects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/scanning-and-detecting-3d-objects)*

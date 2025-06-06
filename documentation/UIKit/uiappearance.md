@@ -1,6 +1,6 @@
 # UIAppearance
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: protocol
 
 A collection of methods that gives you access to the appearance proxy for a class.
@@ -24,8 +24,6 @@ protocol UIAppearance : NSObjectProtocol
 You can customize the appearance of instances of a class by sending appearance-modification messages to the class’s appearance proxy.
 
 > **Note**:  iOS applies appearance changes when a view enters a window, but it doesn’t change the appearance of a view that’s already in a window. To change the appearance of a view that’s currently in a window, remove the view from the view hierarchy and then put it back.
-
- iOS applies appearance changes when a view enters a window, but it doesn’t change the appearance of a view that’s already in a window. To change the appearance of a view that’s currently in a window, remove the view from the view hierarchy and then put it back.
 
 There are two ways to customize appearance for objects: for all instances, and for instances contained within an instance of a container class.
 
@@ -131,4 +129,4 @@ To support appearance customization, a class must conform to the [`UIAppearanceC
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiappearance)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiappearance)*

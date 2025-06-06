@@ -1,6 +1,6 @@
 # init(ssmlRepresentation:)
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: init
 
 Creates a speech utterance with an Speech Synthesis Markup Language (SSML) string.
@@ -27,8 +27,6 @@ If using SSML to request voices that fall under certain attributes, the system m
 If no voice matches the properties, the utterance uses the voice set in its [`voice`](avspeechutterance/voice.md) property. If you don’t specify a voice, the system uses its default voice.
 
 > **Note**:  Speech utterance properties that affect the prosody of a voice, such as its [`rate`](avspeechutterance/rate.md) and [`pitchMultiplier`](avspeechutterance/pitchmultiplier.md), don’t apply to an utterance that uses an SSML representation.
-
- Speech utterance properties that affect the prosody of a voice, such as its [`rate`](avspeechutterance/rate.md) and [`pitchMultiplier`](avspeechutterance/pitchmultiplier.md), don’t apply to an utterance that uses an SSML representation.
 
 ## Parameters
 

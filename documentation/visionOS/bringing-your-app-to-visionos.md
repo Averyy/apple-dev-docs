@@ -12,8 +12,6 @@ In most cases, all you need to do to support visionOS is update your Xcode proje
 
 > **Note**: If you use ARKit in your iOS app to create an augmented reality experience, you need to make additional changes to support ARKit in visionOS. For information on how to update this type of app, see [`Bringing your ARKit app to visionOS`](bringing-your-arkit-app-to-visionos.md).
 
-If you use ARKit in your iOS app to create an augmented reality experience, you need to make additional changes to support ARKit in visionOS. For information on how to update this type of app, see [`Bringing your ARKit app to visionOS`](bringing-your-arkit-app-to-visionos.md).
-
 ##### Create a Visionos Specific Version of Your App
 
 To update your app to build specifically for the visionOS SDK:
@@ -80,8 +78,6 @@ Additional information on how to design your layout for visionOS is available on
 
 > **Note**: If you use ARKit in your iOS app to create an augmented reality experience, you need to make additional changes to support ARKit in visionOS. For information on how to update this type of app, see [`Bringing your ARKit app to visionOS`](bringing-your-arkit-app-to-visionos.md).
 
-If you use ARKit in your iOS app to create an augmented reality experience, you need to make additional changes to support ARKit in visionOS. For information on how to update this type of app, see [`Bringing your ARKit app to visionOS`](bringing-your-arkit-app-to-visionos.md).
-
 ##### Consider Your Implementation
 
 If your existing app is built with UIKit, consider your implementation plan for visionOS. Although you can still use UIKit and load iOS storyboards into your app, you can’t include visionOS-specific or 3D content without using SwiftUI.
@@ -97,8 +93,6 @@ For a tutorial on mixing SwiftUI and UIKit content, see [`Interfacing with UIKit
 Although visionOS is built for SwiftUI adoption, you can continue to use and build out your UIKit codebase as well. If your UIKit app uses hardcoded values or relies on [`UIScreen`](https://developer.apple.com/documentation/UIKit/UIScreen) for layout, the first step to migrating your app to visionOS is to start using an adaptable layout. When you make decisions using device details, your app might produce inconsistent or erroneous results on an unknown device type, or it might fail altogether. Find solutions that rely on environmental information, rather than the device type. For example, SwiftUI and UIKit start layout using the app’s window size, which isn’t necessarily the same size as the device’s display.
 
 > **Note**: Device-specific information is available when you absolutely need it, but validate the information you receive and provide reasonable default behavior for unexpected values.
-
-Device-specific information is available when you absolutely need it, but validate the information you receive and provide reasonable default behavior for unexpected values.
 
 Think about ways to create adaptive layouts using the following techniques:
 
@@ -125,4 +119,4 @@ For more information about designing images for your app, see [`Images`](https:/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/bringing-your-app-to-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/bringing-your-app-to-visionos)*

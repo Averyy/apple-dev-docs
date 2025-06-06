@@ -1,6 +1,6 @@
 # NSFetchedResultsController
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: class
 
 A controller that you use to manage the results of a Core Data fetch request and to display data to the user.
@@ -38,8 +38,6 @@ A controller thus effectively has three modes of operation, determined by whethe
 - Full persistent tracking: the delegate and the file cache name are non-`nil`. The controller monitors objects in its result set and updates section and ordering information in response to relevant changes. The controller maintains a persistent cache of the results of its computation.
 
 > ❗ **Important**:  A delegate must implement at least one of the change tracking delegate methods to enable change tracking. Providing an empty implementation of [`controllerDidChangeContent(_:)`](nsfetchedresultscontrollerdelegate/controllerdidchangecontent(_:).md) is sufficient.
-
- A delegate must implement at least one of the change tracking delegate methods to enable change tracking. Providing an empty implementation of [`controllerDidChangeContent(_:)`](nsfetchedresultscontrollerdelegate/controllerdidchangecontent(_:).md) is sufficient.
 
 ##### Using Nsfetchedresultscontroller
 
@@ -86,8 +84,6 @@ do {
 ```
 
 > ❗ **Important**:  If you use a cache, call [`deleteCache(withName:)`](nsfetchedresultscontroller/deletecache(withname:).md) before changing any of the fetch request, its predicate, or its sort descriptors. Don’t reuse the same fetched results controller for multiple queries unless you set the [`cacheName`](nsfetchedresultscontroller/cachename.md) to `nil`.
-
- If you use a cache, call [`deleteCache(withName:)`](nsfetchedresultscontroller/deletecache(withname:).md) before changing any of the fetch request, its predicate, or its sort descriptors. Don’t reuse the same fetched results controller for multiple queries unless you set the [`cacheName`](nsfetchedresultscontroller/cachename.md) to `nil`.
 
 ###### The Controllers Delegate
 
@@ -208,8 +204,6 @@ You can’t change the fetch request to modify the results. Do the following if 
 
 > **Note**:  Don’t use a cache if you’re changing the fetch request.
 
- Don’t use a cache if you’re changing the fetch request.
-
 ###### Handling Object Invalidation
 
 When a managed object context notifies the fetched results controller of invalidated  objects, the controller treats these as deleted objects and sends the proper delegate calls.
@@ -291,4 +285,4 @@ You create a subclass of this class if you want to customize the creation of sec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsfetchedresultscontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsfetchedresultscontroller)*

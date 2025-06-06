@@ -1,6 +1,6 @@
 # additionalHeaders(for:)
 
-**Framework**: MailKit  
+**Framework**: Mailkit  
 **Kind**: method
 
 Provides custom headers to include in the outgoing message.
@@ -25,8 +25,6 @@ To add custom headers to an outgoing message, return a dictionary that contains 
 
 > **Note**:  MailKit ignores entries in the dictionary for standard headers such as Subject.
 
- MailKit ignores entries in the dictionary for standard headers such as Subject.
-
 The following code shows an example of adding two custom headers: one with a single value, and another with multiple values.
 
 ```swift
@@ -50,8 +48,6 @@ X-Customheader: This is a custom header.
 ```
 
 > **Note**:  Header keys in mail messages are case-insensitive, so don’t make assumptions about the capitalization of header.
-
- Header keys in mail messages are case-insensitive, so don’t make assumptions about the capitalization of header.
 
 ## Parameters
 

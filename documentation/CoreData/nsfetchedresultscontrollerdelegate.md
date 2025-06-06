@@ -1,6 +1,6 @@
 # NSFetchedResultsControllerDelegate
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: protocol
 
 A delegate protocol that describes the methods that the associated fetched results controller calls when the fetch results change.
@@ -25,8 +25,6 @@ protocol NSFetchedResultsControllerDelegate : NSObjectProtocol
 Consider whether to update the table view for each change. For a large number of simultaneous modifications simultaneously, such as if your app reads data on a background thread, it may be computationally expensive to animate all the changes. Rather than respond to changes individually (as illustrated in [`Typical use`](nsfetchedresultscontrollerdelegate#Typical-use.md)), implement [`controllerDidChangeContent(_:)`](nsfetchedresultscontrollerdelegate/controllerdidchangecontent(_:).md) to reload the table view after the system processes all pending changes.
 
 > **Note**:  The fetched results controller reports changes to its section before changes to the fetched objects themselves.
-
- The fetched results controller reports changes to its section before changes to the fetched objects themselves.
 
 ##### Typical Use
 
@@ -123,8 +121,6 @@ func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>,
 
 > **Note**:  Prior to iOS 4.0, [`NSFetchedResultsController`](nsfetchedresultscontroller.md) doesn’t support deleting sections as a result of a UI-driven change.
 
- Prior to iOS 4.0, [`NSFetchedResultsController`](nsfetchedresultscontroller.md) doesn’t support deleting sections as a result of a UI-driven change.
-
 ## Topics
 
 ### Responding to Changes
@@ -164,4 +160,4 @@ func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsfetchedresultscontrollerdelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsfetchedresultscontrollerdelegate)*

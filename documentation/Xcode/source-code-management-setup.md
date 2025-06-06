@@ -14,8 +14,6 @@ Make sure you have the required permission or role to grant Xcode Cloud access t
 
 > **Note**: Xcode Cloud comes with support for [`Git LFS`](https://developer.apple.comhttps://git-lfs.github.com/).
 
-Xcode Cloud comes with support for [`Git LFS`](https://developer.apple.comhttps://git-lfs.github.com/).
-
 ## Topics
 
 ### Bitbucket Cloud and Bitbucket Server
@@ -42,4 +40,4 @@ Xcode Cloud comes with support for [`Git LFS`](https://developer.apple.comhttps:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/source-code-management-setup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/source-code-management-setup)*

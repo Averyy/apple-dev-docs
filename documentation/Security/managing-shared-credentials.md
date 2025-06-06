@@ -25,8 +25,6 @@ When using shared web credentials, you add two steps to this procedure. As befor
 
 > **Note**:  Even if the system finds a match in the shared web credentials, the user can still decline to use those credentials. This will cause the check for shared web credentials to fail. Therefore, you must always have a fallback that prompts the user for their name and password.
 
- Even if the system finds a match in the shared web credentials, the user can still decline to use those credentials. This will cause the check for shared web credentials to fail. Therefore, you must always have a fallback that prompts the user for their name and password.
-
 Do not use the shared web credentials as your primary storage for secure user credentials. Instead, save the user’s credentials in the keychain, and only use the shared web credentials when you can’t find the login credentials in the keychain.
 
 To read the user’s credentials from the shared web credentials, use the [`SecRequestSharedWebCredential(_:_:_:)`](secrequestsharedwebcredential(_:_:_:).md) function:
@@ -71,8 +69,6 @@ SecRequestSharedWebCredential(NULL, NULL, ^(CFArrayRef credentials, CFErrorRef e
 ```
 
 > **Note**:  The keychain supports saving and loading a wide range of possible credential types. These types can be user name and password pairs, authentication tokens or cookies. Shared web credentials, however, are much more restrictive. You can save only user name and password pairs to the shared web credentials.
-
- The keychain supports saving and loading a wide range of possible credential types. These types can be user name and password pairs, authentication tokens or cookies. Shared web credentials, however, are much more restrictive. You can save only user name and password pairs to the shared web credentials.
 
 ##### Creating a User Account in the App
 
@@ -122,9 +118,7 @@ The system prompts the user for permission before deleting their user name and p
 
 > **Note**:  Use [`SecAddSharedWebCredential(_:_:_:_:)`](secaddsharedwebcredential(_:_:_:_:).md) to remove a user’s credentials only when the user deletes her account. Do not use this method when the user simply logs out. Passing a `NULL` password to [`SecAddSharedWebCredential(_:_:_:_:)`](secaddsharedwebcredential(_:_:_:_:).md) removes the user’s credentials and prevents Safari from autocompleting her login information.
 
- Use [`SecAddSharedWebCredential(_:_:_:_:)`](secaddsharedwebcredential(_:_:_:_:).md) to remove a user’s credentials only when the user deletes her account. Do not use this method when the user simply logs out. Passing a `NULL` password to [`SecAddSharedWebCredential(_:_:_:_:)`](secaddsharedwebcredential(_:_:_:_:).md) removes the user’s credentials and prevents Safari from autocompleting her login information.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/managing-shared-credentials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/managing-shared-credentials)*

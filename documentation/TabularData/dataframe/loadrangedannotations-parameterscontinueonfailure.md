@@ -1,6 +1,6 @@
 # loadRangedAnnotations(parameters:continueOnFailure:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Loads training examples from a data frame containing annotations.
@@ -41,8 +41,6 @@ If only an `endTime` is specified, it is interpreted as an annotation for the ra
 If both `startTime` and `endTime` columns are missing or their values are missing, the annotation is assumed to be for the entire file length.
 
 > **Note**: Ensure that the same file has no overlapping range in the dataframe. Since overlapping ranges would mean conflicting annotation for that range.
-
-Ensure that the same file has no overlapping range in the dataframe. Since overlapping ranges would mean conflicting annotation for that range.
 
 Consider an example of a dataframe containing the following values:
 

@@ -1,6 +1,6 @@
 # Setting an alarm
 
-**Framework**: EventKit
+**Framework**: Eventkit
 
 Alert users of events and reminders with an alarm.
 
@@ -11,8 +11,6 @@ An easy way to alert users of their upcoming events is to give them the option o
 Alarms can be time-based, firing at a specified time, or location-based, firing when crossing a geofence (for more information about geofences, see “`Configure Geofences`”). Alarms can be applied to both calendar events and reminders.
 
 > **Note**:  An alarm is not intended to serve as a [`UILocalNotification`](https://developer.apple.com/documentation/UIKit/UILocalNotification). An alarm requires you to create an event or reminder that is visible in the user’s Calendar or Reminders app. A [`UILocalNotification`](https://developer.apple.com/documentation/UIKit/UILocalNotification) is better suited for general purposes that don’t involve the Calendar database.
-
- An alarm is not intended to serve as a [`UILocalNotification`](https://developer.apple.com/documentation/UIKit/UILocalNotification). An alarm requires you to create an event or reminder that is visible in the user’s Calendar or Reminders app. A [`UILocalNotification`](https://developer.apple.com/documentation/UIKit/UILocalNotification) is better suited for general purposes that don’t involve the Calendar database.
 
 ##### Add and Remove Alarms
 
@@ -36,8 +34,6 @@ While geofence-enabled alarms can be applied to events, they are more practical 
 
 > **Note**:  Geofences are supported on both macOS and iOS, but they are more effective on mobile devices.
 
- Geofences are supported on both macOS and iOS, but they are more effective on mobile devices.
-
 Configure a geofence for an event by creating an alarm and setting its structured location and proximity. Call the [`init(title:)`](ekstructuredlocation/init(title:).md) method to create a structured location. To set longitude and latitude coordinates, pass a [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) to the [`geoLocation`](ekstructuredlocation/geolocation.md) property of the structured location returned. A value of `0` for the radius property will use the system’s default radius; to choose a radius of your own, specify a value in meters.
 
 ## See Also
@@ -50,4 +46,4 @@ Configure a geofence for an event by creating an alarm and setting its structure
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/setting-an-alarm)*
+*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/setting-an-alarm)*

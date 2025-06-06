@@ -24,8 +24,6 @@ var handler: XCTKVOExpectation.Handler? { get set }
 
 > **Note**:  The system ignores the expectation’s [`expectedValue`](xctkvoexpectation/expectedvalue.md) property when the [`handler`](xctkvoexpectation/handler-swift.property.md) is non-nil.
 
- The system ignores the expectation’s [`expectedValue`](xctkvoexpectation/expectedvalue.md) property when the [`handler`](xctkvoexpectation/handler-swift.property.md) is non-nil.
-
 ## See Also
 
 - [XCTKVOExpectation.Handler](xctkvoexpectation/handler-swift.typealias.md)

@@ -1,6 +1,6 @@
 # UIDocument
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An abstract base class for managing discrete portions of your app’s data.
@@ -38,8 +38,6 @@ In the Model-View-Controller design pattern, a [`UIDocument`](uidocument.md) obj
 Document-based apps include those that can generate multiple documents, each with its own file-system location. A document-based app must create a subclass of [`UIDocument`](uidocument.md) for its documents.
 
 > **Note**:  If you’re using a database to store document data, create a subclass of the [`UIManagedDocument`](uimanageddocument.md) class instead of [`UIDocument`](uidocument.md); [`UIManagedDocument`](uimanageddocument.md) is a subclass of [`UIDocument`](uidocument.md).
-
- If you’re using a database to store document data, create a subclass of the [`UIManagedDocument`](uimanageddocument.md) class instead of [`UIDocument`](uidocument.md); [`UIManagedDocument`](uimanageddocument.md) is a subclass of [`UIDocument`](uidocument.md).
 
 The primary attribute of a document in the [`UIDocument`](uidocument.md) architecture is its file URL. When you initialize an instance of your document subclass by calling [`init(fileURL:)`](uidocument/init(fileurl:).md), you must pass a file URL locating the document file in the app sandbox. [`UIDocument`](uidocument.md) determines the file type (the Uniform Type Identifier associated with the file extension) and the document name (the filename component) from the file URL. You can override the accessor methods of the [`fileType`](uidocument/filetype.md) and [`localizedName`](uidocument/localizedname.md) properties to supply different values.
 
@@ -277,4 +275,4 @@ class EditorViewController: UIViewController,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uidocument)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uidocument)*

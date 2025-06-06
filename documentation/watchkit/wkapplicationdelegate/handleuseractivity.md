@@ -23,8 +23,6 @@ The default implementation of this method does nothing. When overriding this met
 
 > **Note**:  If you’re creating a SwiftUI app for watchOS 7 or later, use the [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) modifier instead.
 
- If you’re creating a SwiftUI app for watchOS 7 or later, use the [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) modifier instead.
-
 ## Parameters
 
 - `userInfo`: The dictionary containing data about the activity.

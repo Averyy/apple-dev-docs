@@ -1,6 +1,6 @@
 # ARFaceGeometry
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: class
 
 A 3D mesh describing face topology for use in face-tracking AR sessions.
@@ -25,10 +25,6 @@ When you obtain a face geometry from an [`ARFaceAnchor`](arfaceanchor.md) object
 In an AR session, you can use this model as the basis for overlaying content that follows the shape of the user’s face—for example, to apply virtual makeup or tattoos. You can also use this model to create occlusion geometry, which hides other virtual content behind the 3D shape of the detected face in the camera image.
 
 > **Note**:  Face mesh topology is constant across [`ARFaceGeometry`](arfacegeometry.md) instances. That is, the values of the [`vertexCount`](arfacegeometry/vertexcount.md), [`textureCoordinateCount`](arfacegeometry/texturecoordinatecount.md), and [`triangleCount`](arfacegeometry/trianglecount.md) properties never change, the [`triangleIndices`](arfacegeometry/triangleindices-3tb1o.md) buffer always describes the same arrangement of vertices, and the [`textureCoordinates`](arfacegeometry/texturecoordinates-8ahq1.md) buffer always maps the same vertex indices to the same texture coordinates. Only the [`vertices`](arfacegeometry/vertices-fhdb.md) buffer changes between face meshes provided by an AR session, indicating the change in vertex positions as ARKit adapts the mesh to the shape and expression of the user’s face.
-
- Face mesh topology is constant across [`ARFaceGeometry`](arfacegeometry.md) instances. That is, the values of the [`vertexCount`](arfacegeometry/vertexcount.md), [`textureCoordinateCount`](arfacegeometry/texturecoordinatecount.md), and [`triangleCount`](arfacegeometry/trianglecount.md) properties never change, the [`triangleIndices`](arfacegeometry/triangleindices-3tb1o.md) buffer always describes the same arrangement of vertices, and the [`textureCoordinates`](arfacegeometry/texturecoordinates-8ahq1.md) buffer always maps the same vertex indices to the same texture coordinates.
-
-Only the [`vertices`](arfacegeometry/vertices-fhdb.md) buffer changes between face meshes provided by an AR session, indicating the change in vertex positions as ARKit adapts the mesh to the shape and expression of the user’s face.
 
 ## Topics
 

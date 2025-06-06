@@ -1,6 +1,6 @@
 # buttonShapesEnabled
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A Boolean value that indicates whether the Button Shapes setting is in an enabled state.
@@ -22,8 +22,6 @@ static var buttonShapesEnabled: Bool { get }
 #### Discussion
 
 > **Note**:  Session 10020: [`Make Your App Visually Accessible`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10020)
-
- Session 10020: [`Make Your App Visually Accessible`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10020)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # preferredSurroundingsEffect(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Applies an effect to passthrough video.
@@ -33,8 +33,6 @@ ImmersiveSpace(id: "orbit") {
 When the system presents the `Orbit` view in the above code, it also dims passthrough video. This helps to draw attention to the scene’s virtual content while still enabling people to remain aware of their surroundings.
 
 > **Note**: This modifier expresses a preference, but the system might not be able to honor it.
-
-This modifier expresses a preference, but the system might not be able to honor it.
 
 Use a value of `nil` to indicate that you have no preference. You typically do this to counteract a preference expressed by a view lower in the view hierarchy.
 

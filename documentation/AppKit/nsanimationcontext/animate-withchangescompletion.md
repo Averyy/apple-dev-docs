@@ -1,6 +1,6 @@
 # animate(with:changes:completion:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Animates changes to one or more views using the specified SwiftUI animation.
@@ -21,8 +21,6 @@ Use this method to leverage SwiftUI animations from AppKit code, creating a more
 For more information, read [`Unifying your app’s animations`](https://developer.apple.com/documentation/SwiftUI/Unifying-your-app-s-animations).
 
 > **Note**: When a SwiftUI animation is used for animating AppKit’s [`NSAnimatablePropertyContainer`](nsanimatablepropertycontainer.md), the animations are run in-process, and are not backed by CAAnimations in the render server.
-
-When a SwiftUI animation is used for animating AppKit’s [`NSAnimatablePropertyContainer`](nsanimatablepropertycontainer.md), the animations are run in-process, and are not backed by CAAnimations in the render server.
 
 ## Parameters
 

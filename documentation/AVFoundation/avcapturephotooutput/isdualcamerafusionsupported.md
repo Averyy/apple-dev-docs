@@ -1,6 +1,6 @@
 # isDualCameraFusionSupported
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value indicating whether the capture output currently supports automatically combining image data on a dual camera device.
@@ -23,8 +23,6 @@ On devices equipped with a dual camera, image fusion combines samples from both 
 To capture a photo with image fusion, set the [`isAutoDualCameraFusionEnabled`](avcapturephotosettings/isautodualcamerafusionenabled.md) property of your photo settings object. If a device does not support image fusion, setting the [`isAutoDualCameraFusionEnabled`](avcapturephotosettings/isautodualcamerafusionenabled.md) property has no effect (that is, the resolved [`isDualCameraFusionEnabled`](avcaptureresolvedphotosettings/isdualcamerafusionenabled.md) setting will always be false).
 
 > **Note**:  This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes.
-
- This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes.
 
 This property supports key-value observing.
 

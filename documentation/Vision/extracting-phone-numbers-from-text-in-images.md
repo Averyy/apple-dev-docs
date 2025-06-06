@@ -55,8 +55,6 @@ Connect the iPhone to the Mac over USB. The first time you run this sample app, 
 
 > **Note**: This sample code project is associated with WWDC19 session 234: [`Text Recognition in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/234).
 
-This sample code project is associated with WWDC19 session 234: [`Text Recognition in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/234).
-
 ## See Also
 
 - [Recognizing Text in Images](recognizing-text-in-images.md)
@@ -73,4 +71,4 @@ This sample code project is associated with WWDC19 session 234: [`Text Recogniti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/extracting-phone-numbers-from-text-in-images)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/extracting-phone-numbers-from-text-in-images)*

@@ -26,8 +26,6 @@ For example, if searching for Feb 29 in the Gregorian calendar, the algorithm ma
 
 > **Note**:  There are ultimately implementation-defined limits in how far distant the search will go.
 
- There are ultimately implementation-defined limits in how far distant the search will go.
-
 ## See Also
 
 - [Calendar.MatchingPolicy.nextTime](calendar/matchingpolicy/nexttime.md)

@@ -1,6 +1,6 @@
 # CMTimeCodeFormatDescriptionCopyAsBigEndianTimeCodeDescriptionBlockBuffer(allocator:timeCodeFormatDescription:flavor:blockBufferOut:)
 
-**Framework**: Core Media  
+**Framework**: Coremedia  
 **Kind**: func
 
 Copies the contents of a time code format description to a buffer in big-endian byte order.
@@ -25,8 +25,6 @@ func CMTimeCodeFormatDescriptionCopyAsBigEndianTimeCodeDescriptionBlockBuffer(al
 On return, the caller owns the returned CMBlockBuffer, and must release it when done with it.
 
 > **Note**:  The dataRefIndex field of the SampleDescription is intentionally filled with garbage values (0xFFFF).  The caller must overwrite these values with a valid dataRefIndex if writing the SampleDescription to a QuickTime/ISO file.
-
- The dataRefIndex field of the SampleDescription is intentionally filled with garbage values (0xFFFF).  The caller must overwrite these values with a valid dataRefIndex if writing the SampleDescription to a QuickTime/ISO file.
 
 ## Parameters
 

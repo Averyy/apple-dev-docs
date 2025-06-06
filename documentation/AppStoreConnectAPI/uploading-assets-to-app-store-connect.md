@@ -1,6 +1,6 @@
 # Uploading Assets to App Store Connect
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Upload screenshots, app previews, attachments for App Review, and routing app coverage files to App Store Connect.
 
@@ -131,8 +131,6 @@ The next step in delivering an asset to App Store Connect is uploading the binar
 
 > ❗ **Important**:  You have limited time to complete the upload. In general, plan to finish an upload within a week of creating the asset reservation. See `Resolve failures due to an expired reservation` for more information.
 
- You have limited time to complete the upload. In general, plan to finish an upload within a week of creating the asset reservation. See `Resolve failures due to an expired reservation` for more information.
-
 If your asset is large enough, you will receive multiple upload operations, each specifying the length in bytes and the byte offset into the file. Divide the large asset into binary data parts as specified by those instructions, and then:
 
 - Make an HTTP request using the method, URL, and request headers specified in the operation.
@@ -172,8 +170,6 @@ App Store Connect compares the bytes received with the total bytes you described
 A successful commit request changes the asset state to `UPLOAD_COMPLETE`.
 
 > **Note**:  Once you commit the asset, you can no longer upload component parts. If you need to update your asset after committing it, you must delete it and create another upload, beginning with an asset reservation.
-
- Once you commit the asset, you can no longer upload component parts. If you need to update your asset after committing it, you must delete it and create another upload, beginning with an asset reservation.
 
 ##### Verify the Upload Succeeded
 
@@ -215,4 +211,4 @@ If your asset fails processing at App Store Connect, the asset state will change
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/uploading-assets-to-app-store-connect)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/uploading-assets-to-app-store-connect)*

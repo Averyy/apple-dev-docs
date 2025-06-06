@@ -1,6 +1,6 @@
 # camera
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 The coordinate space that represents the scene’s active camera.
@@ -20,8 +20,6 @@ static var camera: CameraRealityCoordinateSpace { get }
 #### Discussion
 
 > **Note**: This static type is equivalent to a [`CameraRealityCoordinateSpace`](camerarealitycoordinatespace.md) instance.
-
-This static type is equivalent to a [`CameraRealityCoordinateSpace`](camerarealitycoordinatespace.md) instance.
 
 
 ---

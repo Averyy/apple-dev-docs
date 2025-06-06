@@ -1,6 +1,6 @@
 # Track references for object tracks
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Specify track references for object tracks.
 
@@ -8,13 +8,9 @@ Specify track references for object tracks.
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
-
 The track references to an object’s image and hot spot tracks are not handled the same way as track references to panoramas. The track reference types are the same (`kQTVRImageTrackRefType` and `kQTVRHotSpotTrackRefAtomType`), but the location of the reference indexes is different. There is no entry in the object sample atom for the track reference indexes. Instead, separate atoms using the `VRTrackRefEntry` structure are stored as siblings to the object sample atom. The types of these atoms are `kQTVRImageTrackRefAtomType` and `kQTVRHotSpotTrackRefAtomType`. If either of these atoms is not present, then the reference index to the corresponding track is assumed to be `1`.
 
 > **Note**: The `trackResolution` field in the `VRTrackRefEntry` structure is ignored for object tracks.
-
-The `trackResolution` field in the `VRTrackRefEntry` structure is ignored for object tracks.
 
 The actual views of an object for an object node are contained in an object image track, which is usually a standard QuickTime video track. (An object image track can also be any type of track that is capable of displaying an image, such as a QuickTime 3D track.)
 

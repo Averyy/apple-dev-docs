@@ -1,6 +1,6 @@
 # fileMover(isPresented:file:onCompletion:)
 
-**Framework**: FamilyControls  
+**Framework**: Familycontrols  
 **Kind**: method
 
 Presents a system interface for allowing the user to move an existing file to a new location.
@@ -21,8 +21,6 @@ func fileMover(isPresented: Binding<Bool>, file: URL?, onCompletion: @escaping (
 #### Discussion
 
 > **Note**: This interface provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
-
-This interface provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
 
 In order for the interface to appear, both `isPresented` must be `true` and `file` must not be `nil`. When the operation is finished, `isPresented` will be set to `false` before `onCompletion` is called. If the user cancels the operation, `isPresented` will be set to `false` and `onCompletion` will not be called.
 

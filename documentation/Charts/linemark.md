@@ -1,6 +1,6 @@
 # LineMark
 
-**Framework**: Swift Charts  
+**Framework**: Charts  
 **Kind**: struct
 
 Chart content that represents data using a sequence of connected line segments.
@@ -101,8 +101,6 @@ var body: some View {
 
 > **Note**: Colors are repeated if the number of series is greater than the total number of colors.
 
-Colors are repeated if the number of series is greater than the total number of colors.
-
 ## Topics
 
 ### Creating a line mark
@@ -136,4 +134,4 @@ Colors are repeated if the number of series is greater than the total number of 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/charts/linemark)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Charts/linemark)*

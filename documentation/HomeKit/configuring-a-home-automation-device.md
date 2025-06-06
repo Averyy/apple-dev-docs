@@ -1,6 +1,6 @@
 # Configuring a home automation device
 
-**Framework**: HomeKit
+**Framework**: Homekit
 
 Give users a familiar experience when they manage HomeKit accessories.
 
@@ -115,8 +115,6 @@ As a result, the display shows only the accessories relevant to this particular 
 
 > **Note**: Use care when crafting your filters. For example, the name “Kilgo Devices, Inc.” might not be unique among all past and future manufacturers, and therefore might not serve as a sufficient predicate in a real app.
 
-Use care when crafting your filters. For example, the name “Kilgo Devices, Inc.” might not be unique among all past and future manufacturers, and therefore might not serve as a sufficient predicate in a real app.
-
 ##### Tailor Common Interactions to Specific Accessories
 
 Accessories (like light bulbs) have characteristics (like power state, color temperature, brightness, and so on) that users control or observe. Users typically care about one of these characteristics above the others, because they change or read that characteristic most often. This is the primary characteristic, and you should give users quick access to it. For a light bulb, users most often want to switch it on or off, so the power state is the primary characteristic.
@@ -204,4 +202,4 @@ Characteristic types are stored as UUID strings. The value specified in the code
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/homekit/configuring-a-home-automation-device)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HomeKit/configuring-a-home-automation-device)*

@@ -38,8 +38,6 @@ In Swift files, predictive code completion offers code suggestions at your inser
 
 > **Note**: Predictive code completion requires Xcode 16 and macOS 15 or later running Apple silicon, where it is automatically enabled. You can disable this feature in Xcode > Settings > Text Editing > Editing.
 
-Predictive code completion requires Xcode 16 and macOS 15 or later running Apple silicon, where it is automatically enabled. You can disable this feature in Xcode > Settings > Text Editing > Editing.
-
 For common code structures, Xcode provides snippets you can add to your code. Click the Library button (+)  in the upper-right corner of the project window, select the “Show the Snippets library” option, then select a snippet and drag it to the desired location in the editor. Navigate between the placeholders to customize the snippet for your needs.
 
 To add your own code snippet:
@@ -110,4 +108,4 @@ Xcode also formats Quick Help from multiline comments that begin with `/**` and 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-organizing-and-editing-source-files)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-organizing-and-editing-source-files)*

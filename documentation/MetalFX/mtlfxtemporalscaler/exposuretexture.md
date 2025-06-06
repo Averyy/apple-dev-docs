@@ -1,6 +1,6 @@
 # exposureTexture
 
-**Framework**: MetalFX  
+**Framework**: Metalfx  
 **Kind**: property  
 **Required**: Yes
 
@@ -25,13 +25,9 @@ The property is a texture (unlike [`preExposure`](mtlfxtemporalscaler/preexposur
 
 > 💡 **Tip**: For best results, set this property to a texture with a single [`MTLPixelFormat.r16Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r16Float) element.
 
-For best results, set this property to a texture with a single [`MTLPixelFormat.r16Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r16Float) element.
-
 The temporal scaler uses only the red component of the texture’s first value, at location (0, 0), as the exposure factor. If the property is `nil`, the default exposure factor is `1.0`.
 
 > **Note**: The temporal scaler ignores this property if you create it with a descriptor that has its [`isAutoExposureEnabled`](mtlfxtemporalscalerdescriptor/isautoexposureenabled.md) property set to [`true`](https://developer.apple.com/documentation/swift/true).
-
-The temporal scaler ignores this property if you create it with a descriptor that has its [`isAutoExposureEnabled`](mtlfxtemporalscalerdescriptor/isautoexposureenabled.md) property set to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 
@@ -53,4 +49,4 @@ The temporal scaler ignores this property if you create it with a descriptor tha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalfx/mtlfxtemporalscaler/exposuretexture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MetalFX/mtlfxtemporalscaler/exposuretexture)*

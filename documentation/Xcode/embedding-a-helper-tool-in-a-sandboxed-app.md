@@ -15,8 +15,6 @@ Embedding a command-line tool in a sandbox app does present some unique challeng
 
 > **Note**: These steps assume that you’re building an app for the App Store because that’s the most common destination for sandboxed apps. However, the same basic process works for apps distributed independently using Developer ID signing; you just need to choose a different distribution path in the Xcode organizer.
 
-These steps assume that you’re building an app for the App Store because that’s the most common destination for sandboxed apps. However, the same basic process works for apps distributed independently using Developer ID signing; you just need to choose a different distribution path in the Xcode organizer.
-
 ##### Create the App Project
 
 To get started, create a new project from the macOS > App template. Name it `AppWithTool`, resulting in a bundle ID like `com.example.apple-samplecode.AppWithTool`.
@@ -51,8 +49,6 @@ Also, disable the Code Signing Inject Base Entitlements (`CODE_SIGN_INJECT_BASE_
 
 > ❗ **Important**: The absence of the `com.apple.security.get-task-allow` entitlement means that you won’t be able to debug your tool. If you need to debug, create a new command-line tool target, one that’s not sandboxed, specifically for debugging. Be warned, however, that this target may behave differently from the normal tool target because it’s not running in a sandbox.
 
-The absence of the `com.apple.security.get-task-allow` entitlement means that you won’t be able to debug your tool. If you need to debug, create a new command-line tool target, one that’s not sandboxed, specifically for debugging. Be warned, however, that this target may behave differently from the normal tool target because it’s not running in a sandbox.
-
 Set the Other Code Signing Flags (`OTHER_CODE_SIGN_FLAGS`) build setting to `$(inherited) -i $(PRODUCT_BUNDLE_IDENTIFIER)`, which ensures that the tool’s code signing identifier matches its bundle ID.
 
 Select `ToolX.entitlements` in the Project navigator and add `com.apple.security.inherit` to it, with a Boolean value of `true`. For more information about this entitlement, see [`Enabling App Sandbox Inheritance`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW15).
@@ -79,15 +75,11 @@ In the Xcode organizer, select the newly created archive and click Distribute Ap
 
 > **Note**: If the button says Distribute Content rather than Distribute App, go back and check that you enabled the Skip Install build setting on the tool target.
 
-If the button says Distribute Content rather than Distribute App, go back and check that you enabled the Skip Install build setting on the tool target.
-
 Select App Store Connect and click Next, then select Export and click Next.
 
 Go through the rest of the export workflow. The end result is a directory with a name like `AppWithTool 2021-05-17 14-07-21`. Within that directory is an installer package (with the `.pkg` extension). Unpack that package.
 
 > **Note**: The easiest way to unpack an installer package is to install it. If you’d rather not install it, unpack it manually using `xar` and `cpio`. For more information, read the manual pages for these tools (see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages)).
-
-The easiest way to unpack an installer package is to install it. If you’d rather not install it, unpack it manually using `xar` and `cpio`. For more information, read the manual pages for these tools (see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages)).
 
 Run the following commands to confirm that Xcode constructed everything correctly:
 
@@ -139,8 +131,6 @@ Check the following:
 - The tool’s entitlements include just `com.apple.security.app-sandbox` and `com.apple.security.inherit`.
 
 > ❗ **Important**: Adding other entitlements to the tool can cause problems. If the tool immediately crashes with a code signing error when your app runs the tool, check that the tool is signed with just these two entitlements: `com.apple.security.app-sandbox` and `com.apple.security.inherit`.
-
-Adding other entitlements to the tool can cause problems. If the tool immediately crashes with a code signing error when your app runs the tool, check that the tool is signed with just these two entitlements: `com.apple.security.app-sandbox` and `com.apple.security.inherit`.
 
 ##### Embed an Externally Built Tool
 
@@ -236,4 +226,4 @@ To validate your work, follow the process described in [`Build and validate`](em
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/embedding-a-helper-tool-in-a-sandboxed-app)*

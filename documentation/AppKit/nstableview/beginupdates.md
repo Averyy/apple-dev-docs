@@ -1,6 +1,6 @@
 # beginUpdates()
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Begins a group of updates for the table view.
@@ -28,8 +28,6 @@ The main reason for doing a batch update of changes to a table view is to avoid 
 Note that these methods should be called to reflect changes in your model; they do not make any underlying model changes.
 
 > **Note**:  For [`NSCell`](nscell.md)-based table views, it is required to call [`beginUpdates()`](nstableview/beginupdates().md) if you want to animate the [`insertRows(at:withAnimation:)`](nstableview/insertrows(at:withanimation:).md), [`removeRows(at:withAnimation:)`](nstableview/removerows(at:withanimation:).md), and [`moveRow(at:to:)`](nstableview/moverow(at:to:).md).
-
- For [`NSCell`](nscell.md)-based table views, it is required to call [`beginUpdates()`](nstableview/beginupdates().md) if you want to animate the [`insertRows(at:withAnimation:)`](nstableview/insertrows(at:withanimation:).md), [`removeRows(at:withAnimation:)`](nstableview/removerows(at:withanimation:).md), and [`moveRow(at:to:)`](nstableview/moverow(at:to:).md).
 
 ## See Also
 

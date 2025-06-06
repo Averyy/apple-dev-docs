@@ -1,6 +1,6 @@
 # Creating an Action Classifier Model
 
-**Framework**: Create ML
+**Framework**: Createml
 
 Train a machine learning model to recognize a person’s body movements.
 
@@ -29,15 +29,11 @@ Training an action classifier with the Create ML developer tool follows the same
 
 > **Note**: Session 10043: [`Build an Action Classifier with Create ML`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10043/)
 
-Session 10043: [`Build an Action Classifier with Create ML`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10043/)
-
 ##### Choose a Frame Rate
 
 Before you create an action classifier, decide what  the number of video frames, per second — the destination app uses from a camera or file.
 
 > ❗ **Important**: Your app’s frame rate is a significant factor that affects your action classifier and the training data you’ll need to collect.
-
-Your app’s frame rate is a significant factor that affects your action classifier and the training data you’ll need to collect.
 
 Plan to match your action classifier’s frame rate to the destination app’s frame rate. For example, if your app acquires video from a camera at 30 frames per second (fps), plan to configure your action classifier to 30 fps.
 
@@ -123,8 +119,6 @@ When you drag in a video file, Create ML uses the action classifier to analyze t
 
 > 💡 **Tip**: Quickly test an action classifier’s ability to recognize all of its action classes by previewing an action montage video.
 
-Quickly test an action classifier’s ability to recognize all of its action classes by previewing an action montage video.
-
 ##### Export the Action Classifier
 
 To save an action classifier as a Core ML file, select the Output tab and click the Get, Xcode, or Share button. You can export a model from any model source that’s finished training or from any snapshot you created while training the model.
@@ -158,4 +152,4 @@ For an example app that integrates and applies an action classifier, see the rel
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createml/creating-an-action-classifier-model)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateML/creating-an-action-classifier-model)*

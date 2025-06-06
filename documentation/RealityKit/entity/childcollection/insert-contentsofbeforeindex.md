@@ -1,6 +1,6 @@
 # insert(contentsOf:beforeIndex:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Adds the specified sequence of entities to this collection in order, directly before the entity at the given index.
@@ -22,8 +22,6 @@ Adds the specified sequence of entities to this collection in order, directly be
 #### Discussion
 
 > **Note**: This operation can invalidate the index order of any extant entities.
-
-This operation can invalidate the index order of any extant entities.
 
 ## Parameters
 

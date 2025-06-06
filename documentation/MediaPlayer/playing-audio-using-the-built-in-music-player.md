@@ -1,6 +1,6 @@
 # Playing audio using the built-in music player
 
-**Framework**: Media Player
+**Framework**: Mediaplayer
 
 Create a media player inside your app to play audio from the user’s media library.
 
@@ -10,8 +10,6 @@ There are many reasons you might want to let users play music from their music l
 
 > **Note**:  To follow these steps, you must have a provisioned iOS device. Simulator has no access to a device’s music library.
 
- To follow these steps, you must have a provisioned iOS device. Simulator has no access to a device’s music library.
-
 ##### Specify a Usage Description String
 
 To give the user control over their personal data, apps must obtain permission to access the person’s music library. The first time your app tries to access someone’s media library, the system displays an alert that prompts them to grant or deny access to their music. The alert message includes your app’s usage-description string, which is a text description of how you plan to use the music.
@@ -19,8 +17,6 @@ To give the user control over their personal data, apps must obtain permission t
 To specify the usage-description string for your app, add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key to your app’s `Info.plist` file. Set the value of the key to your description of how you intend to use the music. Make your description as concise as possible, and no more than one or two sentences. For example, the usage-description string for a game might explain that its soundtrack incorporates the person’s music at different points in the gameplay.
 
 > ❗ **Important**:  If your app’s `Info.plist` file doesn’t include the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key, the system forces your app to exit when it attempts to access the current music library. To fix the problem, add the key to your `Info.plist` file, and set the key’s value to an appropriate description.
-
- If your app’s `Info.plist` file doesn’t include the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key, the system forces your app to exit when it attempts to access the current music library. To fix the problem, add the key to your `Info.plist` file, and set the key’s value to an appropriate description.
 
 Users can deny access to their media library, so design your app to run even without that access. If your app requires music, devise a backup plan that doesn’t involve asking the person to reconsider their decision. For example, include some default music in your app’s bundle.
 
@@ -59,4 +55,4 @@ For more information about controlling the playback of your items, see [`MPMedia
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mediaplayer/playing-audio-using-the-built-in-music-player)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MediaPlayer/playing-audio-using-the-built-in-music-player)*

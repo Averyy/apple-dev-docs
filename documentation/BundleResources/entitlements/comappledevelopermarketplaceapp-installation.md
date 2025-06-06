@@ -1,6 +1,6 @@
 # com.apple.developer.marketplace.app-installation
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 The entitlement that enables an app to vend other apps as an alternative app marketplace.
@@ -16,8 +16,6 @@ The system requires that your app have this entitlement to implement an app mark
 If your account receives this entitlement, provision your app with the entitlement according to: [`Provisioning with managed capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities/).
 
 > **Note**:  This entitlement isn’t available for Enterprise or Developer ID distributed apps.
-
- This entitlement isn’t available for Enterprise or Developer ID distributed apps.
 
 
 ---

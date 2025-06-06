@@ -28,11 +28,7 @@ The [`NSUserNotificationCenterDelegate`](nsusernotificationcenterdelegate.md) pr
 
 > **Note**:  It the user wakes more than 15 minutes after a scheduled notification is scheduled to fire, it’s discarded. If the notification repeats with an interval less than 15 minutes, then it expires in 1 minute. Expired notifications are just discarded, unless they repeat, in which case, they stay in the scheduled list and just fire again later.
 
- It the user wakes more than 15 minutes after a scheduled notification is scheduled to fire, it’s discarded. If the notification repeats with an interval less than 15 minutes, then it expires in 1 minute. Expired notifications are just discarded, unless they repeat, in which case, they stay in the scheduled list and just fire again later.
-
 > ❗ **Important**:  Many of the NSUserNotificationCenter class’s methods involve talking to a server process, so calling them repeatedly can have a negative effect on performance.
-
- Many of the NSUserNotificationCenter class’s methods involve talking to a server process, so calling them repeatedly can have a negative effect on performance.
 
 ##### Threading Information
 
@@ -87,4 +83,4 @@ The `NSUserNotificationCenter` class and the [`NSUserNotification`](nsusernotifi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsusernotificationcenter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsusernotificationcenter)*

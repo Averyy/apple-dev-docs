@@ -1,6 +1,6 @@
 # Modify an In-App Purchase Localization
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Update the display name and description for a specific locale of an in-app purchase.
@@ -11,8 +11,6 @@ Update the display name and description for a specific locale of an in-app purch
 #### Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
 ## See Also
 

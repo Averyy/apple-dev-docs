@@ -1,6 +1,6 @@
 # NSOutlineViewDataSource
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: protocol
 
 A set of methods that an outline view calls to retrieve data and information about it from the data source delegate, and—optionally—to update data values.
@@ -27,8 +27,6 @@ If you are using conventional data sources for content you must implement the ba
 Similarly, when using conventional data sources , if you want to allow the user to edit values, you must implement [`outlineView(_:setObjectValue:for:byItem:)`](nsoutlineviewdatasource/outlineview(_:setobjectvalue:for:byitem:).md). When these methods are invoked by the outline view, `nil` as the `item` refers to the “root” item. `NSOutlineView` requires that each item in the outline view be unique. In order for the collapsed state of an outline view to remain consistent between reloads you must always return the same object for an item. When using Cocoa bindings to provide outline view content, there is no requirement to implement this method.
 
 > **Note**:  Some of the methods in this `protocol`, such as [`outlineView(_:child:ofItem:)`](nsoutlineviewdatasource/outlineview(_:child:ofitem:).md) and [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md) along with other methods that return data, are called very frequently, so they must be efficient.
-
- Some of the methods in this `protocol`, such as [`outlineView(_:child:ofItem:)`](nsoutlineviewdatasource/outlineview(_:child:ofitem:).md) and [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md) along with other methods that return data, are called very frequently, so they must be efficient.
 
 ## Topics
 
@@ -79,4 +77,4 @@ Similarly, when using conventional data sources , if you want to allow the user 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsoutlineviewdatasource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsoutlineviewdatasource)*

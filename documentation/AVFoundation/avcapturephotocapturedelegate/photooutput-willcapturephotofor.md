@@ -1,6 +1,6 @@
 # photoOutput(_:willCapturePhotoFor:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Notifies the delegate that photo capture is about to occur.
@@ -27,8 +27,6 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, willCapturePhotoFor re
 The photo output calls this method as close as possible to the initial moment of capture. If the shutter sound is enabled, this call occurs immediately after the photo output begins playing the shutter sound.
 
 > **Note**:  Live Photo capture disables the shutter sound. In some regions, the device’s mute switch can disable the shutter sound.
-
- Live Photo capture disables the shutter sound. In some regions, the device’s mute switch can disable the shutter sound.
 
 ## Parameters
 

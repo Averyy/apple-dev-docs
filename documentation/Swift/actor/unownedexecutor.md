@@ -30,11 +30,7 @@ This property will be implicitly accessed when work needs to be scheduled onto t
 
 > **Note**: [`SerialExecutor`](serialexecutor.md)
 
-[`SerialExecutor`](serialexecutor.md)
-
 > **Note**: [`TaskExecutor`](taskexecutor.md)
-
-[`TaskExecutor`](taskexecutor.md)
 
 
 ---

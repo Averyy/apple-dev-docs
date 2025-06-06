@@ -1,6 +1,6 @@
 # allowsParallelizedExport
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the session can parallelize its export operation.
@@ -19,8 +19,6 @@ var allowsParallelizedExport: Bool { get set }
 This value is [`true`](https://developer.apple.com/documentation/swift/true) by default, which indicates that the export session is allowed to expedite its processing by using additional resources in parallel on select Mac systems. If parallelization isn’t achievable, export proceeds as normal.
 
 > **Note**:  Parallelized exports reduce the amount of time it takes to export media, but require additional power consumption. If your app requires opting out of the default behavior, set this value to [`false`](https://developer.apple.com/documentation/swift/false).
-
- Parallelized exports reduce the amount of time it takes to export media, but require additional power consumption. If your app requires opting out of the default behavior, set this value to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

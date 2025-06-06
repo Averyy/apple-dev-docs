@@ -1,6 +1,6 @@
 # CMClosedCaptionFormatDescriptionCopyAsBigEndianClosedCaptionDescriptionBlockBuffer(allocator:closedCaptionFormatDescription:flavor:blockBufferOut:)
 
-**Framework**: Core Media  
+**Framework**: Coremedia  
 **Kind**: func
 
 Copies the contents of a closed caption format description to a buffer in big-endian byte order.
@@ -25,8 +25,6 @@ func CMClosedCaptionFormatDescriptionCopyAsBigEndianClosedCaptionDescriptionBloc
 On return, the caller owns the returned CMBlockBuffer, and must release it when done with it.
 
 > **Note**:  The `dataRefIndex` field of the SampleDescription is intentionally filled with placeholder values (`0xFFFF`). The caller must overwrite these values with a valid `dataRefIndex` if writing the SampleDescription to a QuickTime/ISO file.
-
- The `dataRefIndex` field of the SampleDescription is intentionally filled with placeholder values (`0xFFFF`). The caller must overwrite these values with a valid `dataRefIndex` if writing the SampleDescription to a QuickTime/ISO file.
 
 ## Parameters
 

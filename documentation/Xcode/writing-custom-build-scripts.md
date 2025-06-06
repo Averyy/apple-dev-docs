@@ -18,8 +18,6 @@ For Xcode Cloud to recognize your custom build scripts, you’ll need to place t
 
 > ❗ **Important**: Xcode Cloud uses `zsh` as its default Unix shell. As a best practice, always include a shebang in the first line of your custom build script; for example `#!/bin/sh`.
 
-Xcode Cloud uses `zsh` as its default Unix shell. As a best practice, always include a shebang in the first line of your custom build script; for example `#!/bin/sh`.
-
 For additional information about custom build scripts, see [`Customize your advanced Xcode Cloud workflows`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10269). For more information on installing a third-party tool, see [`Use a custom build script to install a third-party dependency or tool`](making-dependencies-available-to-xcode-cloud#Use-a-custom-build-script-to-install-a-third-party-dependency-or-tool.md).
 
 ##### Create the Ci Scripts Directory
@@ -54,8 +52,6 @@ Xcode Cloud respects the shebang if the file is executable. If you don’t inclu
 
 > **Note**: You can’t obtain administrator privileges by using `sudo` in your custom build scripts.
 
-You can’t obtain administrator privileges by using `sudo` in your custom build scripts.
-
 Files you create with a custom build script aren’t available to other custom build scripts, and Xcode Cloud deletes any files a custom build script creates. As a result, downloadable Xcode Cloud build artifacts don’t include files you create with custom build scripts.
 
 ##### Add Resources to the Ci Scripts Directory
@@ -63,8 +59,6 @@ Files you create with a custom build script aren’t available to other custom b
 Custom build scripts run in a temporary build environment where your source code may not be available. As a result, you need to place all resources your custom scripts access in the `ci_scripts` directory. For example, place artwork or `.plist` files in the directory.
 
 > **Note**: Use sub-directories inside the `ci_scripts` directory to organize its content. However, make sure to place the three custom build scripts `ci_post_clone.sh`, `ci_pre_xcodebuild.sh`, and `ci_post_xcodebuild.sh` at the top level of the `ci_scripts` directory.
-
-Use sub-directories inside the `ci_scripts` directory to organize its content. However, make sure to place the three custom build scripts `ci_post_clone.sh`, `ci_pre_xcodebuild.sh`, and `ci_post_xcodebuild.sh` at the top level of the `ci_scripts` directory.
 
 In some cases, a custom build script needs to access a file that’s located in the repository, but placing it in the `ci_scripts` directory isn’t practical. In this case, create a symbolic link to the file in the `ci_scripts` directory. Xcode Cloud detects the symbolic link and makes it available within the `ci_scripts` directory in a subsequent phase of the running action.
 
@@ -125,8 +119,6 @@ You can use the helper scripts to create a more flexible build environment, wher
 
 > **Note**: Xcode Cloud uses `zsh` as its default Unix shell. Make your scripts executable and add a shebang line at the beginning of your scripts to avoid a failing build. For example, add `#!/usr/bin/env python3` to a helper script you write in Python that uploads build artifacts to your server. If you use Swift for your helper scripts, use `#!/usr/bin/env swift`.
 
-Xcode Cloud uses `zsh` as its default Unix shell. Make your scripts executable and add a shebang line at the beginning of your scripts to avoid a failing build. For example, add `#!/usr/bin/env python3` to a helper script you write in Python that uploads build artifacts to your server. If you use Swift for your helper scripts, use `#!/usr/bin/env swift`.
-
 When it comes to naming your helper scripts, use a filename that makes it easy to recognize the script’s purpose. For example, you might prefix helper scripts with the name of their intended platform and name the following script `platform-detect.sh` because it uses the `CI_PRODUCT_PLATFORM` variable to detect the platform for the current build:
 
 ```bash
@@ -150,4 +142,4 @@ To help make your helper scripts more recognizable, you should avoid prefixing t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/writing-custom-build-scripts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/writing-custom-build-scripts)*

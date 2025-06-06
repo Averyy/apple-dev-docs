@@ -1,6 +1,6 @@
 # init(for:withContentsOf:ofType:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: init
 
 Initializes a document with the specified contents, and places the resulting document’s file at the designated location.
@@ -26,8 +26,6 @@ The system calls this method to open a document that has an associated autosave 
 After reading the contents from the specified autosave file, this method updates the document’s change count using the `NSChangeReadOtherContents` change type.
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

@@ -27,8 +27,6 @@ Always call this method from your WatchKit extension’s main thread.
 
 > **Note**:  If Item Pagination  is enabled, do not use this method to respond to the selection of a table row. Use [`performSegue(forRow:)`](wkinterfacetable/performsegue(forrow:).md)  instead.
 
- If Item Pagination  is enabled, do not use this method to respond to the selection of a table row. Use [`performSegue(forRow:)`](wkinterfacetable/performsegue(forrow:).md)  instead.
-
 ## Parameters
 
 - `name`: The name of the interface controller you want to display. In your storyboard, the name of an interface controller is stored in the object’s Identifier property, which is located in the attributes inspector.

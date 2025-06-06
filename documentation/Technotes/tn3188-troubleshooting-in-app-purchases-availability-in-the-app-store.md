@@ -15,8 +15,6 @@ If `Product.products(for:)` fails to return a `Product` instance for your In-App
 
 > **Note**: If your app fails to display its products when testing In-App Purchases in Xcode or the Apple sandbox environment, see [`TN3185: Troubleshooting In-App Purchases availability in Xcode`](tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md) and [`TN3186: Troubleshooting In-App Purchases availability in the sandbox`](tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md), respectively.
 
-If your app fails to display its products when testing In-App Purchases in Xcode or the Apple sandbox environment, see [`TN3185: Troubleshooting In-App Purchases availability in Xcode`](tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md) and [`TN3186: Troubleshooting In-App Purchases availability in the sandbox`](tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md), respectively.
-
 #### Validate Your Product Identifier List
 
 To verify your product identifier list, perform these steps:
@@ -86,4 +84,4 @@ After Apple approves your In-App Purchases, it may take some time for the In-App
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store)*

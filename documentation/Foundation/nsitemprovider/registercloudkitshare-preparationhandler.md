@@ -22,8 +22,6 @@ Use the [`NSCloudSharingServiceDelegate`](https://developer.apple.com/documentat
 
 > **Note**:  To modify an existing share, use the [`registerCloudKitShare(_:container:)`](nsitemprovider/registercloudkitshare(_:container:).md) method instead.
 
- To modify an existing share, use the [`registerCloudKitShare(_:container:)`](nsitemprovider/registercloudkitshare(_:container:).md) method instead.
-
 The following example shows how to create an item provider with a handler that saves a share. It then invokes the cloud-sharing service with that provider.
 
 ```swift

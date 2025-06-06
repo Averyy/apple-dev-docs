@@ -1,6 +1,6 @@
 # paymentAuthorizationController(_:didSelectShippingContact:completion:)
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: method
 
 Tells the delegate that the user selected a shipping address.
@@ -26,8 +26,6 @@ Use this method to update the available shipping methods and, if a shipping meth
 When this method is called, you create a new array of valid [`PKShippingMethod`](pkshippingmethod.md) objects for the specified address. You also create an array of [`PKPaymentSummaryItem`](pkpaymentsummaryitem.md) objects that represent the updated cost. The summary items should include the shipping cost if a valid shipping method has been selected. For more information on updating these values, see the [`PKPaymentRequest`](pkpaymentrequest.md) class’s [`shippingMethods`](pkpaymentrequest/shippingmethods.md) and [`paymentSummaryItems`](pkpaymentrequest/paymentsummaryitems.md) properties.
 
 > **Note**:  The delegate receives no further callbacks except [`paymentAuthorizationControllerDidFinish(_:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish(_:).md) until it has invoked the completion block.
-
- The delegate receives no further callbacks except [`paymentAuthorizationControllerDidFinish(_:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish(_:).md) until it has invoked the completion block.
 
 ## Parameters
 

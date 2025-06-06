@@ -13,8 +13,6 @@ Use distributed actors to take your Swift concurrency and actor-based apps beyon
 
 > **Note**: This sample code project is associated with WWDC22 session [`110356: Meet distributed actors in Swift`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110356/).
 
-This sample code project is associated with WWDC22 session [`110356: Meet distributed actors in Swift`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110356/).
-
 ##### 4037447
 
 Because the sample app uses new Swift language features introduced in Swift 5.7, you need at least the following versions of iOS, macOS, and Xcode to edit and run the samples:

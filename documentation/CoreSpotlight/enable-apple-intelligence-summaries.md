@@ -1,6 +1,6 @@
 # Enabling Apple Intelligence summarization and prioritization
 
-**Framework**: Core Spotlight
+**Framework**: Corespotlight
 
 Summarize and prioritize app content using Spotlight extensions.
 
@@ -104,8 +104,6 @@ Apple Intelligence only considers an item for summarization or prioritization wh
 
 > **Note**: Only mail or messages support priority classification, not audio transcripts. The `contentType` must conform to  one of the following types: `message` or `emailMessage`.
 
-Only mail or messages support priority classification, not audio transcripts. The `contentType` must conform to  one of the following types: `message` or `emailMessage`.
-
 ## See Also
 
 - [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
@@ -114,4 +112,4 @@ Only mail or messages support priority classification, not audio transcripts. Th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corespotlight/enable-apple-intelligence-summaries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreSpotlight/enable-apple-intelligence-summaries)*

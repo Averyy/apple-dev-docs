@@ -1,6 +1,6 @@
 # Supporting PushKit Notifications in Your App
 
-**Framework**: PushKit
+**Framework**: Pushkit
 
 Declare the types of PushKit notifications your app supports and configure objects to respond to them.
 
@@ -15,8 +15,6 @@ For information about how to set up a server to generate push notifications, see
 Apps must have the proper entitlements to receive push notifications. To create these entitlements, [`add the push notifications capability`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devdfd3d04a1) to your Xcode project. When you add this capability, Xcode adds the [`APS Environment Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/aps-environment) to your app and configures your App ID with the push notification service for development purposes.
 
 > **Note**: If you create an explicit App ID for your app, you can also add the push notification service manually by configuring the App ID from your [`Developer Account`](https://developer.apple.comhttps://developer.apple.com/account/) page.
-
-If you create an explicit App ID for your app, you can also add the push notification service manually by configuring the App ID from your [`Developer Account`](https://developer.apple.comhttps://developer.apple.com/account/) page.
 
 ##### Register Your App with Pushkit at Launch Time
 
@@ -52,4 +50,4 @@ For information about how to construct and send POST requests to APNs, see [`Sen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/pushkit/supporting-pushkit-notifications-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PushKit/supporting-pushkit-notifications-in-your-app)*

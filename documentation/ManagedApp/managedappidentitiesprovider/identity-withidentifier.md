@@ -1,6 +1,6 @@
 # identity(withIdentifier:)
 
-**Framework**: ManagedApp  
+**Framework**: Managedapp  
 **Kind**: method
 
 Provides an identity by its identifier.
@@ -33,8 +33,6 @@ When using identities in your app, observe the following caveats:
 - For security reasons, avoid logging or displaying the identity’s certificate or private key. Even though the cerificate is a “public” certificate, it can contain sensitive information.
 
 > **Note**: [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if no identity exists with the specified identifier.
-
-[`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if no identity exists with the specified identifier.
 
 ## Parameters
 

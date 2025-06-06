@@ -1,6 +1,6 @@
 # kCTFontDownloadedAttribute
 
-**Framework**: Core Text  
+**Framework**: Coretext  
 **Kind**: var
 
 The download state.
@@ -26,8 +26,6 @@ The value associated with this key is a doc://com.apple.documentation/documentat
 
 > **Note**:  It may still be necessary to call appropriate API in order to use the font in the Font Asset.
 
- It may still be necessary to call appropriate API in order to use the font in the Font Asset.
-
 ## See Also
 
 - [var ATSFONTREF_DEFINED: Int32](atsfontref_defined.md)
@@ -49,4 +47,4 @@ The value associated with this key is a doc://com.apple.documentation/documentat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coretext/kctfontdownloadedattribute)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreText/kctfontdownloadedattribute)*

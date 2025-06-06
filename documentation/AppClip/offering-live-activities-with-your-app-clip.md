@@ -1,6 +1,6 @@
 # Offering Live Activities with your App Clip
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Add a widget extension to your App Clip target and use ActivityKit to display Live Activities on the Lock Screen and in the Dynamic Island.
 
@@ -9,8 +9,6 @@ Add a widget extension to your App Clip target and use ActivityKit to display Li
 With Live Activities, you can display live event data on the iPhone Lock Screen and in the Dynamic Island on supported devices. Your App Clip can’t typically include app extensions, but starting with iOS 16 you can include a widget extension that offers Live Activities and displays live event data without requiring people to install your full app. For example, a sports app could display App Clip Codes at a game location to offer an App Clip to attendees of the current game. When a person launches the App Clip from the App Clip Code, the App Clip could offer a Live Activity to track a game that happens at the same time but in another city. The Live Activity enables people who watch the game in person to stay informed about another team’s game that happens in parallel.
 
 > ❗ **Important**:  The widget extension for your App Clip can only include Live Activities. Reserve widgets that appear on the Home Screen, Lock Screen, or in Today View for your full app.
-
- The widget extension for your App Clip can only include Live Activities. Reserve widgets that appear on the Home Screen, Lock Screen, or in Today View for your full app.
 
 To offer a Live Activity from your App Clip:
 
@@ -24,9 +22,7 @@ When you’ve added the widget extension to your App Clip to offer Live Activiti
 
 > **Note**:  If you already bundle a widget extension with your full app, don’t add it to the App Clip target. Instead, add a second widget extension to your project and make sure to only include it in the App Clip target. As a result, you’ll have one widget extension for your full app and one widget extension for your App Clip. Then, follow the steps above to add the App Clip Extension capability and so on.
 
- If you already bundle a widget extension with your full app, don’t add it to the App Clip target. Instead, add a second widget extension to your project and make sure to only include it in the App Clip target. As a result, you’ll have one widget extension for your full app and one widget extension for your App Clip. Then, follow the steps above to add the App Clip Extension capability and so on.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/offering-live-activities-with-your-app-clip)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/offering-live-activities-with-your-app-clip)*

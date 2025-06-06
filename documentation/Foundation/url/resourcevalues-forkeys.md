@@ -36,8 +36,6 @@ When you call this method from the main thread, the URL removes cached resource 
 
 > **Note**:  This method is currently applicable only to URLs for file system resources.
 
- This method is currently applicable only to URLs for file system resources.
-
 ## Parameters
 
 - `keys`: A set of URL resource keys indicating the values to retrieve.

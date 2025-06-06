@@ -1,6 +1,6 @@
 # Get Transaction History
 
-**Framework**: App Store Server API  
+**Framework**: Appstoreserverapi  
 **Kind**: httpRequest
 
 Get a customer’s in-app purchase transaction history for your app.
@@ -31,8 +31,6 @@ When you specify multiple values for a single query parameter, the response cont
 
 > **Note**:  If you use optional query parameters, be sure to use the same query parameters on subsequent requests that include the `revision` parameter.
 
- If you use optional query parameters, be sure to use the same query parameters on subsequent requests that include the `revision` parameter.
-
 To request a full transaction history in ascending order for your app, start by calling the endpoint without any query parameters, as follows:
 
 ```javascript
@@ -55,4 +53,4 @@ GET https://api.storekit.itunes.apple.com/inApps/v2/history/{transactionId}?revi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/get-transaction-history)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/get-transaction-history)*

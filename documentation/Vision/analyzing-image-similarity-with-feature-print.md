@@ -14,8 +14,6 @@ Generate a feature print to compute distance between images.
 
 > **Note**: For more information about this sample code project, see [`WWDC 2019 Session 222: Understanding Images in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/222/).
 
-For more information about this sample code project, see [`WWDC 2019 Session 222: Understanding Images in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/222/).
-
 ## See Also
 
 - [Detecting Objects in Still Images](detecting-objects-in-still-images.md)
@@ -40,4 +38,4 @@ For more information about this sample code project, see [`WWDC 2019 Session 222
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/analyzing-image-similarity-with-feature-print)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/analyzing-image-similarity-with-feature-print)*

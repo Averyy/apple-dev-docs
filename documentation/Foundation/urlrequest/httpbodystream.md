@@ -26,8 +26,6 @@ The stream is returned for examination only; it’s unsafe for the caller to man
 
 > **Note**:  The [`httpBodyStream`](urlrequest/httpbodystream.md) and [`httpBody`](urlrequest/httpbody.md) are mutually exclusive - only one can be set on a given request. The body stream is preserved across copies, but is lost when the request is coded via the [`NSCoding`](nscoding.md) protocol
 
- The [`httpBodyStream`](urlrequest/httpbodystream.md) and [`httpBody`](urlrequest/httpbody.md) are mutually exclusive - only one can be set on a given request. The body stream is preserved across copies, but is lost when the request is coded via the [`NSCoding`](nscoding.md) protocol
-
 ## See Also
 
 - [var httpMethod: String?](urlrequest/httpmethod.md)

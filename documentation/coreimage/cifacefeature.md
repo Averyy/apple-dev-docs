@@ -1,6 +1,6 @@
 # CIFaceFeature
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: cl
 
 Information about a face detected in a still or video image.
@@ -22,8 +22,6 @@ class CIFaceFeature : CIFeature
 #### Overview
 
 > **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectFaceRectanglesRequest`](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest).
-
-In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectFaceRectanglesRequest`](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest).
 
 The properties of a [`CIFaceFeature`](cifacefeature.md) object provide information about the face’s eyes and mouth. A face object in a video can also have properties that track its location over time, tracking ID and frame count.
 

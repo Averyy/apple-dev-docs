@@ -28,8 +28,6 @@ As shown in the image below, you can also use lower level cryptographic resource
 
 > **Note**:  Always use the highest level API that meets your needs. The Security framework is not always your best option. For example, to conduct secure network communications, start by considering the [`Foundation`](https://developer.apple.com/documentation/Foundation) framework’s [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system), which builds on the Security framework. Only if your app requires lower level access to security protocol functions would you use the secure transport API directly.
 
- Always use the highest level API that meets your needs. The Security framework is not always your best option. For example, to conduct secure network communications, start by considering the [`Foundation`](https://developer.apple.com/documentation/Foundation) framework’s [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system), which builds on the Security framework. Only if your app requires lower level access to security protocol functions would you use the secure transport API directly.
-
 ## Topics
 
 ### Essentials

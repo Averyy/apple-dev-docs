@@ -1,6 +1,6 @@
 # total
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 A line item that represents the total for the payment.
@@ -37,8 +37,6 @@ Provide a business name in the [`label`](applepaylineitem/label.md) field. Use t
 
 > **Note**:  In versions of Apple Pay JS prior to version 4, the `amount` of the `total` must be greater than zero. Check for version availability using [`supportsVersion`](applepaysession/supportsversion.md) before setting a zero `amount`.
 
- In versions of Apple Pay JS prior to version 4, the `amount` of the `total` must be greater than zero. Check for version availability using [`supportsVersion`](applepaysession/supportsversion.md) before setting a zero `amount`.
-
 ## See Also
 
 - [lineItems](applepaypaymentrequest/lineitems.md)
@@ -51,4 +49,4 @@ Provide a business name in the [`label`](applepaylineitem/label.md) field. Use t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest/total)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypaymentrequest/total)*

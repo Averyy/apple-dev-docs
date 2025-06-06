@@ -30,8 +30,6 @@ You can use `popLast()` to remove the last element of a collection that might be
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

@@ -57,8 +57,6 @@ If you connected your team’s Slack workspace to Xcode Cloud, the connection be
 
 > **Note**: Depending on the configuration of your team’s Slack workspace, you may need to ask your team’s Slack administrator to remove the Slack app.
 
-Depending on the configuration of your team’s Slack workspace, you may need to ask your team’s Slack administrator to remove the Slack app.
-
 ## See Also
 
 - [Making dependencies available to Xcode Cloud](making-dependencies-available-to-xcode-cloud.md)
@@ -79,4 +77,4 @@ Depending on the configuration of your team’s Slack workspace, you may need to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/removing-your-project-from-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/removing-your-project-from-xcode-cloud)*

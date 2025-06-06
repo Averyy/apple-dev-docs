@@ -35,8 +35,6 @@ When a blit pass runs this command, the GPU only applies lossless changes to the
 
 > **Note**:  Optimizing a texture for the CPU may affect the performance of the GPU’s accesses, but the data the GPU retrieves from the texture remains consistent.
 
- Optimizing a texture for the CPU may affect the performance of the GPU’s accesses, but the data the GPU retrieves from the texture remains consistent.
-
 ## Parameters
 
 - `texture`: A texture the command optimizes.

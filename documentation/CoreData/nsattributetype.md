@@ -1,6 +1,6 @@
 # NSAttributeType
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: enum
 
 The types of attribute that Core Data supports.
@@ -47,8 +47,6 @@ Core Data supports the following attribute types, which differentiate between bi
 | Undefined | — | — | — |
 
 > **Note**:  If your application uses Binary Large Objects (BLOBs) like image and sound data, prefer to store its binary data outside of the Core Data store.
-
- If your application uses Binary Large Objects (BLOBs) like image and sound data, prefer to store its binary data outside of the Core Data store.
 
 ## Topics
 
@@ -109,4 +107,4 @@ Core Data supports the following attribute types, which differentiate between bi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsattributetype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsattributetype)*

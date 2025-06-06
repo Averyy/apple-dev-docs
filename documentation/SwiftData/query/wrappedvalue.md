@@ -1,6 +1,6 @@
 # wrappedValue
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: property
 
 The most recent fetched result from the Query.
@@ -24,8 +24,6 @@ The most recent fetched result from the Query.
 #### Discussion
 
 > **Note**: When an fetch error occurs, `wrappedValue` retains results from the last successful fetch. Its value will update once a new fetch succeeds.
-
-When an fetch error occurs, `wrappedValue` retains results from the last successful fetch. Its value will update once a new fetch succeeds.
 
 
 ---

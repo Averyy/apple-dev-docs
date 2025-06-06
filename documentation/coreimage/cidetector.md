@@ -1,6 +1,6 @@
 # CIDetector
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: cl
 
 An image processor that identifies notable features, such as faces and barcodes, in a still image or video.
@@ -22,8 +22,6 @@ class CIDetector : NSObject
 #### Overview
 
 > **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNRequest`](https://developer.apple.com/documentation/vision/vnrequest).
-
-In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNRequest`](https://developer.apple.com/documentation/vision/vnrequest).
 
 A [`CIDetector`](cidetector.md) object uses image processing to search for and identify notable features (faces, rectangles, and barcodes) in a still image or video. Detected features are represented by [`CIFeature`](cifeature.md) objects that provide more information about each feature.
 

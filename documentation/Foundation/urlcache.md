@@ -30,8 +30,6 @@ The [`URLCache`](urlcache.md) class implements the caching of responses to URL l
 
 > **Note**:  In iOS, the on-disk cache may be purged when the system runs low on disk space, but only when your app is not running.
 
- In iOS, the on-disk cache may be purged when the system runs low on disk space, but only when your app is not running.
-
 ##### Thread Safety
 
 In iOS 8 and later, and macOS 10.10 and later, [`URLCache`](urlcache.md) is thread safe.
@@ -115,4 +113,4 @@ When overriding methods of this class, be aware that methods that take a `task` 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlcache)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlcache)*

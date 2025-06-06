@@ -1,6 +1,6 @@
 # CustomAnimation
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: protocol
 
 A type that defines how an animatable value changes over time.
@@ -44,8 +44,6 @@ struct ElasticEaseInEaseOutAnimation: CustomAnimation {
 ```
 
 > **Note**: To maintain state during the life span of a custom animation, use the [`state`](animationcontext/state.md) property available on the `context` parameter value. You can also use context’s [`environment`](animationcontext/environment.md) property to retrieve environment values from the view that created the custom animation. For more information, see [`AnimationContext`](animationcontext.md).
-
-To maintain state during the life span of a custom animation, use the [`state`](animationcontext/state.md) property available on the `context` parameter value. You can also use context’s [`environment`](animationcontext/environment.md) property to retrieve environment values from the view that created the custom animation. For more information, see [`AnimationContext`](animationcontext.md).
 
 To create an [`Animation`](animation.md) instance of a custom animation, use the [`init(_:)`](animation/init(_:).md) initializer, passing in an instance of a custom animation; for example:
 
@@ -123,4 +121,4 @@ struct ElasticEaseInEaseOutView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/customanimation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/customanimation)*

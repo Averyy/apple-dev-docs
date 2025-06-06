@@ -24,8 +24,6 @@ init<Separator>(base: Base.Iterator, separator: Separator) where Separator : Seq
 
 > **Note**: O(`separator.count`).
 
-O(`separator.count`).
-
 
 ---
 

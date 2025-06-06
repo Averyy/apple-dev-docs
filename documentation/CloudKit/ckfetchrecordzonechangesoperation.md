@@ -1,6 +1,6 @@
 # CKFetchRecordZoneChangesOperation
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 An operation that fetches record zone changes.
@@ -29,8 +29,6 @@ class CKFetchRecordZoneChangesOperation
 Use this operation to fetch record changes in one or more record zones, such as those that occur during record creation, modification, and deletion. You provide a configuration object for each record zone to query for changes. The configuration contains a server change token, which is an opaque pointer to a specific change in the zone’s history. CloudKit returns only the changes that occur after that point. For the first time you fetch a record zone’s changes, or to refetch all changes in a zone’s history, use `nil` instead.
 
 > **Note**:  Only private and shared databases support this operation. If you attempt to execute this operation in the public database, CloudKit returns an error.
-
- Only private and shared databases support this operation. If you attempt to execute this operation in the public database, CloudKit returns an error.
 
 CloudKit processes the record zones in succession, and returns the changes for each zone in batches. Each batch yields a new change token. If all batches return without error, the operation issues a final change token for that zone. The change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) and are safe to cache on-disk. This operation’s tokens aren’t compatible with [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) so you should segregate them in your app’s cache. Don’t infer behavior or order from the tokens’ contents.
 
@@ -150,4 +148,4 @@ operation.qualityOfService = NSQualityOfServiceUtility;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckfetchrecordzonechangesoperation)*

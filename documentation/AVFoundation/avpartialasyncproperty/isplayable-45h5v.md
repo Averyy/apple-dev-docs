@@ -1,6 +1,6 @@
 # isPlayable
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether an asset contains playable content.
@@ -25,8 +25,6 @@ static var isPlayable: AVAsyncProperty<Root, Bool> { get }
 Use the [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md) method to retrieve the property value.
 
 > **Note**:  You can attempt playback when value is [`false`](https://developer.apple.com/documentation/swift/false), but this may result in a substandard playback experience.
-
- You can attempt playback when value is [`false`](https://developer.apple.com/documentation/swift/false), but this may result in a substandard playback experience.
 
 ## See Also
 

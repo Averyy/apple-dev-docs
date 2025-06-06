@@ -10,13 +10,9 @@ As a component of Instruments, a performance-analysis and testing tool for iOS, 
 
 > ❗ **Important**:  This instrument records both encrypted and unencrypted HTTP traffic in the trace document and in system logs, in an unencrypted state. These trace documents and log files may contain sensitive information.
 
- This instrument records both encrypted and unencrypted HTTP traffic in the trace document and in system logs, in an unencrypted state. These trace documents and log files may contain sensitive information.
-
 The instrument internally gathers detailed information—including header and body content, connection setup duration, and request and response times—from the URL Loading System. It then records this data and recombines it into precise intervals with additional metadata.
 
 > **Note**:  Session 10212: [`Analyze HTTP traffic in Instruments`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10212/)
-
- Session 10212: [`Analyze HTTP traffic in Instruments`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10212/)
 
 ##### Launch Instruments and Start Recording
 
@@ -89,4 +85,4 @@ In addition to the two lists in the detail pane, there’s a summary view. From 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/analyzing-http-traffic-with-instruments)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments)*

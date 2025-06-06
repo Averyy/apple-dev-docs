@@ -10,8 +10,6 @@ Prior to the introduction of Apple silicon, Macs used the Intel 64-bit architect
 
 > **Note**: Apple no longer supports any platforms on 32-bit Intel as of macOS Catalina.
 
-Apple no longer supports any platforms on 32-bit Intel as of macOS Catalina.
-
 Apple platforms typically follow the data representation and procedure call rules in the standard [`System V psABI for AMD64`](https://developer.apple.comhttps://gitlab.com/x86-psABIs/x86-64-ABI), using the LP64 programming model. However, when those rules are in conflict with the longstanding behavior of the Apple LLVM compiler (Clang) on Apple platforms, then the ABI typically diverges from the standard Processor Specific Application Binary Interface (psABI) and instead follows longstanding behavior. Several such divergences are below. If you discover a divergence not described here, please [`report it to Apple`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/).
 
 ##### Adhere to Cpu Feature Availability
@@ -72,4 +70,4 @@ The psABI rules only apply to C, C++, and Objective-C calls.  The Swift calling 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/writing-64-bit-intel-code-for-apple-platforms)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/writing-64-bit-intel-code-for-apple-platforms)*

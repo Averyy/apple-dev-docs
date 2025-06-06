@@ -24,8 +24,6 @@ enum KeyDecodingStrategy
 
 > **Note**:  Key decoding strategies other than [`JSONDecoder.KeyDecodingStrategy.useDefaultKeys`](jsondecoder/keydecodingstrategy-swift.enum/usedefaultkeys.md) may have a noticeable performance cost because those strategies may inspect and transform each key.
 
- Key decoding strategies other than [`JSONDecoder.KeyDecodingStrategy.useDefaultKeys`](jsondecoder/keydecodingstrategy-swift.enum/usedefaultkeys.md) may have a noticeable performance cost because those strategies may inspect and transform each key.
-
 ## Topics
 
 ### Built-in Decoding

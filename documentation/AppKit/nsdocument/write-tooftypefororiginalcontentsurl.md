@@ -1,6 +1,6 @@
 # write(to:ofType:for:originalContentsURL:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Writes the contents of the document to a file or file package located by a URL.
@@ -31,10 +31,6 @@ For backward binary compatibility with OS X v10.3 and earlier, if [`writeToFile:
 The save operation used in this case is never `NSAutosaveOperation`; `NSSaveToOperation` is used instead.
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

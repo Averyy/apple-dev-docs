@@ -1,6 +1,6 @@
 # QLPreviewController
 
-**Framework**: Quick Look  
+**Framework**: Quicklook  
 **Kind**: class
 
 A specialized view controller for previewing an item.
@@ -32,8 +32,6 @@ A `QLPreviewController` can display previews for many common file types, includi
 - 3D models in the USDZ format with both standalone and AR views for viewing the model
 
 > **Note**:  The list of supported common file types may change between operating system releases. In addition, you can enable previews for your own file types by implementing your own preview extension.
-
- The list of supported common file types may change between operating system releases. In addition, you can enable previews for your own file types by implementing your own preview extension.
 
 ##### Providing Data to a Preview Controller
 
@@ -111,4 +109,4 @@ In addition, the system doesn’t display a live preview if you embed the `QLPre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quicklook/qlpreviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuickLook/qlpreviewcontroller)*

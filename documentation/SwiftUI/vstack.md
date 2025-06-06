@@ -1,6 +1,6 @@
 # VStack
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A view that arranges its subviews in a vertical line.
@@ -59,8 +59,6 @@ var body: some View {
 
 > **Note**: If you need a vertical stack that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`VStackLayout`](vstacklayout.md) instead.
 
-If you need a vertical stack that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`VStackLayout`](vstacklayout.md) instead.
-
 ## Topics
 
 ### Creating a stack
@@ -82,4 +80,4 @@ If you need a vertical stack that conforms to the [`Layout`](layout.md) protocol
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/vstack)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/vstack)*

@@ -25,8 +25,6 @@ If supported by an H.264 encoder, this property controls whether the encoder sho
 
 > **Note**:  Changing the default entropy mode may result in a configuration that is not compatible with a requested Profile and Level.  Results in this case are undefined, and could include encode errors or a noncompliant output stream.
 
- Changing the default entropy mode may result in a configuration that is not compatible with a requested Profile and Level.  Results in this case are undefined, and could include encode errors or a noncompliant output stream.
-
 ## Topics
 
 ### Entropy Modes

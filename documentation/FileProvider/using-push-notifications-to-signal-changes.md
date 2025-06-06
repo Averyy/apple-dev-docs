@@ -1,6 +1,6 @@
 # Using push notifications to signal changes
 
-**Framework**: File Provider
+**Framework**: Fileprovider
 
 Send push notifications to a device to signal changes from your server.
 
@@ -11,12 +11,6 @@ You can signal changes by sending push notifications from a remote server, using
 To use push notifications, you start by generating the signing key for your app. Next, you configure your app to receive push notifications. Finally, you send the notifications from your server. The following sections describe each step.
 
 > ❗ **Important**:  Avoid sending unnecessary push notifications. If you send too many, Apple Push Notification service (APNs) throttles your requests. For open files and directories, try to send push notifications only when your File Provider extension has an active enumerator for that item. This means your extension must update your server whenever an enumerator is created or invalidated. Additionally, this coordination must gracefully degrade when an internet connection is unavailable or fails. For items in the working set, the server should always send push notifications.
-
- Avoid sending unnecessary push notifications. If you send too many, Apple Push Notification service (APNs) throttles your requests.
-
-For open files and directories, try to send push notifications only when your File Provider extension has an active enumerator for that item. This means your extension must update your server whenever an enumerator is created or invalidated. Additionally, this coordination must gracefully degrade when an internet connection is unavailable or fails.
-
-For items in the working set, the server should always send push notifications.
 
 ##### Generate the Signing Key
 
@@ -34,8 +28,6 @@ First, enable push notifications in your iOS app (not your File Provider extensi
 Then, register for push notifications. You can register in your app delegate, your File Provider extension, or both.
 
 > **Note**:  If you only register for push notifications in your app delegate and the device token changes, your app won’t receive notifications until someone launches the app. Registering in the File Provider extension means your app can update the device token the next time anyone interacts with the File Provider extension’s content.
-
- If you only register for push notifications in your app delegate and the device token changes, your app won’t receive notifications until someone launches the app. Registering in the File Provider extension means your app can update the device token the next time anyone interacts with the File Provider extension’s content.
 
 In your `AppDelegate` or `FileProviderExtension` classes, adopt the [`PKPushRegistryDelegate`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate) protocol.
 
@@ -91,8 +83,6 @@ Finally, implement the [`pushRegistry(_:didUpdate:for:)`](https://developer.appl
 
 > **Note**:  The [`pushRegistry(_:didReceiveIncomingPushWith:for:completion:)`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate/pushRegistry(_:didReceiveIncomingPushWith:for:completion:)) method is never called for [`fileProvider`](https://developer.apple.com/documentation/PushKit/PKPushType/fileProvider) type pushes. These notifications are automatically handled by the system instead.
 
- The [`pushRegistry(_:didReceiveIncomingPushWith:for:completion:)`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate/pushRegistry(_:didReceiveIncomingPushWith:for:completion:)) method is never called for [`fileProvider`](https://developer.apple.com/documentation/PushKit/PKPushType/fileProvider) type pushes. These notifications are automatically handled by the system instead.
-
 In both your `AppDelegate` and `FileProvider` classes’ [`pushRegistry(_:didUpdate:for:)`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate/pushRegistry(_:didUpdate:for:)) methods, when you receive a [`PKPushCredentials`](https://developer.apple.com/documentation/PushKit/PKPushCredentials) instance, extract the value of its [`token`](https://developer.apple.com/documentation/PushKit/PKPushCredentials/token) property, and send it to your server. This value is an app-specific device token. Your server uses the device token to request push notifications for this device.
 
 ```swift
@@ -120,8 +110,6 @@ The POST request’s content is a JSON dictionary that specifies the container a
 
 > **Note**:  When using an [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md), always set the container identifier to `NSFileProviderWorkingSetContainerItemIdentifier`. The system automatically propagates any working set changes to the user interface, without requiring you to signal individual containers. It ignores any other identifiers.
 
- When using an [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md), always set the container identifier to `NSFileProviderWorkingSetContainerItemIdentifier`. The system automatically propagates any working set changes to the user interface, without requiring you to signal individual containers. It ignores any other identifiers.
-
 Set the domain identifier to the unique string used in the domain’s [`identifier`](nsfileproviderdomain/identifier.md) property.
 
 ```swift
@@ -137,4 +125,4 @@ For more information, see [`APNs Notification API`](https://developer.apple.comh
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/using-push-notifications-to-signal-changes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/using-push-notifications-to-signal-changes)*

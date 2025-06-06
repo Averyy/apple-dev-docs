@@ -1,6 +1,6 @@
 # Keeping your complications up to date
 
-**Framework**: ClockKit
+**Framework**: Clockkit
 
 Replace or extend the data in your complication’s timeline.
 
@@ -13,8 +13,6 @@ In either case, ClockKit instantiates your complication’s data source and requ
 A watchOS app provides several opportunities to update your complication’s timeline. No matter what method you use, keep your watchOS app, appʼs snapshot, notifications, and complications in a consistent state. Also, make sure to update your complication when you update your app’s data. If you receive a push notification with new data, update the app and your complication, and schedule a new screenshot.
 
 > ❗ **Important**:  If the system launches your app in the background (for example, in response to a background download, task, or HealthKit observer query), your complication server’s [`activeComplications`](clkcomplicationserver/activecomplications.md) property may not contain a valid value. If this property is `nil`, the server is still connecting to the active complications on the watch face. For more information on safely accessing the list of active complications, see [`activeComplications`](clkcomplicationserver/activecomplications.md).
-
- If the system launches your app in the background (for example, in response to a background download, task, or HealthKit observer query), your complication server’s [`activeComplications`](clkcomplicationserver/activecomplications.md) property may not contain a valid value. If this property is `nil`, the server is still connecting to the active complications on the watch face. For more information on safely accessing the list of active complications, see [`activeComplications`](clkcomplicationserver/activecomplications.md).
 
 ##### Update When Your App Runs
 
@@ -70,8 +68,6 @@ The system calls the following delegate methods in this order:
 3. Regardless, the system calls your URL session delegate’s [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate/1411610-urlsession) method. If you are running in the background, be sure to call your background task’s completion handler here.
 
 > **Note**:  The system calls the URL session delegate method whether your app is running in the background or the foreground; however, the [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method is only called when your app is running in the background.
-
- The system calls the URL session delegate method whether your app is running in the background or the foreground; however, the [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method is only called when your app is running in the background.
 
 For more information, see [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background) and [`WKURLSessionRefreshBackgroundTask`](https://developer.apple.com/documentation/WatchKit/WKURLSessionRefreshBackgroundTask).
 
@@ -163,4 +159,4 @@ For more information on sending updates from the phone, see the [`Watch Connecti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/keeping-your-complications-up-to-date)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/keeping-your-complications-up-to-date)*

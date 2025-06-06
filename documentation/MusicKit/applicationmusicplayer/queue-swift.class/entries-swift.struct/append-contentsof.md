@@ -1,6 +1,6 @@
 # append(contentsOf:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Adds the elements of a sequence or collection to the end of this collection.
@@ -33,8 +33,6 @@ print(numbers)
 ```
 
 > **Note**: O(), where  is the length of `newElements`.
-
-O(), where  is the length of `newElements`.
 
 ## Parameters
 

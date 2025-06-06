@@ -26,8 +26,6 @@ When a command queue schedules a command buffer for execution, it tracks whether
 
 > **Note**:  To avoid presenting a drawable before any work is scheduled, or to avoid holding on to a drawable longer than necessary, call a command buffer’s [`present(_:)`](mtlcommandbuffer/present(_:).md) method instead of this method. The [`present(_:)`](mtlcommandbuffer/present(_:).md) method is a convenience method that calls the drawable’s [`present()`](mtldrawable/present().md) method after the command queue schedules that command buffer for execution.
 
- To avoid presenting a drawable before any work is scheduled, or to avoid holding on to a drawable longer than necessary, call a command buffer’s [`present(_:)`](mtlcommandbuffer/present(_:).md) method instead of this method. The [`present(_:)`](mtlcommandbuffer/present(_:).md) method is a convenience method that calls the drawable’s [`present()`](mtldrawable/present().md) method after the command queue schedules that command buffer for execution.
-
 ## See Also
 
 - [func present(afterMinimumDuration: CFTimeInterval)](mtldrawable/present(afterminimumduration:).md)

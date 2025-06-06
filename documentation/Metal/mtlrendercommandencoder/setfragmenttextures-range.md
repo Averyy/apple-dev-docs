@@ -25,8 +25,6 @@ By default, the texture at each index is `nil`.
 
 > **Note**:  The Objective-C version of this method is [`setFragmentTextures:withRange:`](mtlrendercommandencoder/setfragmenttextures:withrange:.md).
 
- The Objective-C version of this method is [`setFragmentTextures:withRange:`](mtlrendercommandencoder/setfragmenttextures:withrange:.md).
-
 ## Parameters
 
 - `textures`: An array of   instances the command assigns to entries in the fragment shader argument table for textures.

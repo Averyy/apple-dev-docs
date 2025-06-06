@@ -28,8 +28,6 @@ The aggregate weather.
 
 > **Note**: Weather data error `WeatherError`
 
-Weather data error `WeatherError`
-
 ## Parameters
 
 - `location`: The requested location.

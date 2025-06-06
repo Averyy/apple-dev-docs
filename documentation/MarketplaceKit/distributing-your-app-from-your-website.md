@@ -1,6 +1,6 @@
 # Distributing your app from your website
 
-**Framework**: MarketplaceKit
+**Framework**: Marketplacekit
 
 Configure your app and website to enable people to install your app on their devices from your website.
 
@@ -17,8 +17,6 @@ Deploy a web server and modify your website to link to your app, which you host 
 ![A diagram that illustrates building and deploying your app one time allows you to distribute from three different places, an alterative marketplace app, an app webpage, and an app web server.](https://docs-assets.developer.apple.com/published/9b02dd7733efcf9b21af6d7dc0681e35/distributing-your-app-from-your-website-2%402x.png)
 
 > **Note**: Alternative app marketplaces are available in Xcode 15.3, iOS 17.4 and later, and iPadOS 18.0 and later. To enable web distribution of other apps, use Xcode 15.4 or later, iOS 17.5 or later, and iPadOS 18.0 or later. For more information, see [`Xcode support`](https://developer.apple.comhttps://developer.apple.com/support/xcode).
-
-Alternative app marketplaces are available in Xcode 15.3, iOS 17.4 and later, and iPadOS 18.0 and later. To enable web distribution of other apps, use Xcode 15.4 or later, iOS 17.5 or later, and iPadOS 18.0 or later. For more information, see [`Xcode support`](https://developer.apple.comhttps://developer.apple.com/support/xcode).
 
 #### Request Approval to Distribute Your App
 
@@ -92,8 +90,6 @@ The system enforces the following criteria for a webpage that invokes an app dow
 
 > 💡 **Tip**: Some apps that Apple approves for web distribution can also install from the App Store or an alternative app marketplace. You can customize the user experience depending on the source from which a person downloads your app. For more information, see [`Customize your app depending on the installation source`](distributing-your-app-on-an-alternative-marketplace#Customize-your-app-depending-on-the-installation-source.md).
 
-Some apps that Apple approves for web distribution can also install from the App Store or an alternative app marketplace. You can customize the user experience depending on the source from which a person downloads your app. For more information, see [`Customize your app depending on the installation source`](distributing-your-app-on-an-alternative-marketplace#Customize-your-app-depending-on-the-installation-source.md).
-
 #### Coordinate with the Device From Your Web Server
 
 When a page visitor taps the install button, the system communicates with your web server to validate the request and retrieve the data necessary to perform the installation. If you supply an authentication token in the installation request URL, the system checks if your authentication server authorizes the download. Then system then requests an app license from your server followed by the app itself. For more information, see [`Installing your app from your website`](installing-your-app-from-your-website.md).
@@ -107,8 +103,6 @@ Set your target’s Alternative Distribution - Web build setting to `Yes`:
 ![A screenshot of Xcode with the project AltDistTesting selected in the project navigation sidebar, and the build settings tab open. Under targets, AltDistTesting Tests is selected, under Deployment the setting Alternative Distribution - Web is set to Yes.](https://docs-assets.developer.apple.com/published/b8dd32218b5eb0e36fb1d30bd4873430/distributing-your-app-from-your-website-4%402x.png)
 
 > **Note**: The build setting is `ALTERNATIVE_DISTRIBUTION_WEB`. Open your Xcode project in Xcode 15.4 or later and add the setting manually if it isn’t present.
-
-The build setting is `ALTERNATIVE_DISTRIBUTION_WEB`. Open your Xcode project in Xcode 15.4 or later and add the setting manually if it isn’t present.
 
 This build setting overrides the [`current`](appdistributor/current.md) property for development builds to return [`AppDistributor.web`](appdistributor/web.md), which enables you to test any custom code branching your app might do, such as displaying a different image or offering different menu items depending on whether your app installs from the web or a marketplace.
 
@@ -130,4 +124,4 @@ Similarly, to return `web` for the `current` distributor in a test plan, choose 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/distributing-your-app-from-your-website)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/distributing-your-app-from-your-website)*

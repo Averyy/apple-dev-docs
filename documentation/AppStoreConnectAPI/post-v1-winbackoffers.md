@@ -1,6 +1,6 @@
 # Create a win-back offer
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Create a win-back offer for a specific subscription.
@@ -11,8 +11,6 @@ Create a win-back offer for a specific subscription.
 #### Discussion
 
 > **Note**: Important Use a unique referenceName and offerId that you have not used for a promotional offer, offer code, or introductory offer, when you create your win-back offer.
-
-Important Use a unique referenceName and offerId that you have not used for a promotional offer, offer code, or introductory offer, when you create your win-back offer.
 
 ##### Example Request and Response
 
@@ -34,4 +32,4 @@ Important Use a unique referenceName and offerId that you have not used for a pr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-winbackoffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-winbackoffers)*

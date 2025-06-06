@@ -1,6 +1,6 @@
 # Writing Fragmented MPEG-4 Files for HTTP Live Streaming
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 
@@ -11,8 +11,6 @@ Create an HTTP Live Streaming presentation by turning a movie file into a sequen
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [`10011: Authoring Fragmented MPEG-4 with AVAssetWriter`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10011).
-
-This sample code project is associated with WWDC20 session [`10011: Authoring Fragmented MPEG-4 with AVAssetWriter`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10011).
 
 ##### Configure the Sample Code Project
 
@@ -51,4 +49,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/writing-fragmented-mpeg-4-files-for-http-live-streaming)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/writing-fragmented-mpeg-4-files-for-http-live-streaming)*

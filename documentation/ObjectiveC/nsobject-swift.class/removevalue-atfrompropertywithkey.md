@@ -1,6 +1,6 @@
 # removeValue(at:fromPropertyWithKey:)
 
-**Framework**: Objective-C Runtime  
+**Framework**: Objectivec  
 **Kind**: method
 
 Removes the object at the specified index from the collection specified by the passed key.
@@ -20,8 +20,6 @@ func removeValue(at index: Int, fromPropertyWithKey key: String)
 The method `removeFrom<Key>AtIndex:` is invoked if it exists. If no corresponding scripting-KVC-compliant method (`-removeFrom<Key>AtIndex:`) is found, this method invokes `-mutableArrayValueForKey:` and mutates the result.
 
 > **Note**:  Prior to OS X version 10.4, this method did not invoke `-mutableArrayValueForKey:`.
-
- Prior to OS X version 10.4, this method did not invoke `-mutableArrayValueForKey:`.
 
 ## See Also
 

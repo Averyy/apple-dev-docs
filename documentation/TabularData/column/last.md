@@ -1,6 +1,6 @@
 # last
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: property
 
 The last element of the collection.
@@ -33,8 +33,6 @@ if let lastNumber = numbers.last {
 ```
 
 > **Note**: O(1)
-
-O(1)
 
 ## See Also
 

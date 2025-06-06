@@ -1,6 +1,6 @@
 # shadowOffset
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The shadow’s relative position, which you specify with horizontal and vertical offset values.
@@ -24,8 +24,6 @@ var shadowOffset: CGSize { get set }
 This property contains the horizontal and vertical offset values that you specify using the `width` and `height` fields of the `CGSize` or `NSSize` data type. These offsets use the default user coordinate space and are not affected by custom transformations. Positive offset values extend down and to the right from the user’s perspective.
 
 > **Note**:  In macOS 10.15 and earlier, if you add a shadow to a layer that has a different graphics context, then positive offset values might extend up and to the right from the user’s perspective, instead of down and to the right as usual.
-
- In macOS 10.15 and earlier, if you add a shadow to a layer that has a different graphics context, then positive offset values might extend up and to the right from the user’s perspective, instead of down and to the right as usual.
 
 ## See Also
 

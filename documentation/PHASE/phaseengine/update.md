@@ -1,6 +1,6 @@
 # update()
 
-**Framework**: PHASE  
+**Framework**: Phase  
 **Kind**: method
 
 Processes app commands and increments framework processing.
@@ -26,8 +26,6 @@ This function consumes the app’s API calls since the last [`update()`](phaseen
 The framework ignores calls to this function for engines with `updateMode` set to [`PHASEEngine.UpdateMode.automatic`](phaseengine/updatemode/automatic.md); for more more information, see [`init(updateMode:)`](phaseengine/init(updatemode:).md).
 
 > **Note**:  The frequency that the app calls this function doesn’t change the speed by which PHASE plays audio in real time.
-
- The frequency that the app calls this function doesn’t change the speed by which PHASE plays audio in real time.
 
 ##### Update an Engine Manually
 

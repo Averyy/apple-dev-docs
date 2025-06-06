@@ -1,6 +1,6 @@
 # replacingDepthDataMap(with:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Returns a derivative depth data object by replacing the depth data map.
@@ -28,8 +28,6 @@ A new depth data object containing the pixel buffer.
 If you apply simple transforms to media containing depth data, you can use the [`applyingExifOrientation(_:)`](avdepthdata/applyingexiforientation(_:).md) method to apply parallel transforms to the corresponding depth data. More complex transforms and edits require creating a derivative depth map reflecting whatever edits you make to the corresponding image. In such cases, use this [`replacingDepthDataMap(with:)`](avdepthdata/replacingdepthdatamap(with:).md) method to create a derivative depth data object.
 
 > **Note**:  This method cannot ensure correspondence between an arbitrarily edited depth map and the camera parameters that generated the initial depth map, so the new depth data object’s [`cameraCalibrationData`](avdepthdata/cameracalibrationdata.md) property is always `nil`.
-
- This method cannot ensure correspondence between an arbitrarily edited depth map and the camera parameters that generated the initial depth map, so the new depth data object’s [`cameraCalibrationData`](avdepthdata/cameracalibrationdata.md) property is always `nil`.
 
 ## Parameters
 

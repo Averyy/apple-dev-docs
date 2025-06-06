@@ -1,6 +1,6 @@
 # Creating performant scrollable stacks
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Display large numbers of repeated views efficiently with scroll views, stack views, and lazy stacks.
 
@@ -48,8 +48,6 @@ ScrollView(.horizontal) {
 
 > **Note**: When you use [`ForEach`](foreach.md), each element you iterate over must be uniquely identifiable. Either conform elements to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol, or pass a key path to a unique identifier as the `id` parameter of [`init(_:id:content:)`](foreach/init(_:id:content:).md).
 
-When you use [`ForEach`](foreach.md), each element you iterate over must be uniquely identifiable. Either conform elements to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol, or pass a key path to a unique identifier as the `id` parameter of [`init(_:id:content:)`](foreach/init(_:id:content:).md).
-
 ##### Consider Lazy Stacks for Large Numbers of Views
 
 The three standard stack views, [`HStack`](hstack.md), [`VStack`](vstack.md), and [`ZStack`](zstack.md), all load their contained view hierarchy when they display, and loading large numbers of views all at once can result in slow runtime performance.
@@ -71,8 +69,6 @@ When considering which type of stack to use, use the Instruments tool to profile
 To profile SwiftUI view loading, open the Instruments tool by selecting Profile from the Xcode Product menu and choosing the SwiftUI profiling template. This template loads four instruments: View Body, View Properties, Core Animation Commits, and Time Profiler. The combination of these instruments provides a good starting point to find opportunities to speed up your app.
 
 > **Note**: Never profile your code using the iOS simulator. Always use real devices for performance testing.
-
-Never profile your code using the iOS simulator. Always use real devices for performance testing.
 
 ![Screenshot from the Instruments tool showing a large amount of views loading all at the same time.](https://docs-assets.developer.apple.com/published/73211ab0b4deea3a7b973023327247a1/Creating-Performant-Scrollable-Stacks-3%402x.png)
 
@@ -111,4 +107,4 @@ For more information about using the Instruments tool, see doc://com.apple.docum
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/creating-performant-scrollable-stacks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/creating-performant-scrollable-stacks)*

@@ -1,6 +1,6 @@
 # Reverting data changes using the undo manager
 
-**Framework**: SwiftData
+**Framework**: Swiftdata
 
 Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
 
@@ -34,13 +34,9 @@ By default, the `isUndoEnabled` parameter value is `false`, which disables undo 
 
 > **Note**: To retrieve the [`mainContext`](modelcontainer/maincontext.md) in a SwiftUI view, use the [`modelContext`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext) environment value; for example, `@Environment(\.modelContext) private var modelContext`.
 
-To retrieve the [`mainContext`](modelcontainer/maincontext.md) in a SwiftUI view, use the [`modelContext`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext) environment value; for example, `@Environment(\.modelContext) private var modelContext`.
-
 Other than enabling undo in SwiftData, you don’t need to write any additional code to manage undo operations for data changes. Instead, SwiftData automatically registers data change operations with the undo manager each time SwiftData saves those changes to the main context. And if your app uses [`DocumentGroup`](https://developer.apple.com/documentation/SwiftUI/DocumentGroup) to manage data storage, undo and redo in SwiftData is automatically enabled.
 
 > ❗ **Important**: Setting `isUndoEnabled` to `true` provides automatic undo and redo support in your app for data changes it saves to the main context only. This setting doesn’t provide undo and redo support for changes saved to other model contexts that your app may use, such as a background model context that stores data retrieved from an external source.
-
-Setting `isUndoEnabled` to `true` provides automatic undo and redo support in your app for data changes it saves to the main context only. This setting doesn’t provide undo and redo support for changes saved to other model contexts that your app may use, such as a background model context that stores data retrieved from an external source.
 
 ## See Also
 
@@ -54,4 +50,4 @@ Setting `isUndoEnabled` to `true` provides automatic undo and redo support in yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/reverting-data-changes-using-the-undo-manager)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/reverting-data-changes-using-the-undo-manager)*

@@ -1,6 +1,6 @@
 # tableView(_:didAdd:forRow:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Tells the delegate that a row view was added at the specified row.
@@ -20,8 +20,6 @@ optional func tableView(_ tableView: NSTableView, didAdd rowView: NSTableRowView
 At this point, the delegate can add extra views, or modify the properties of `rowView`.
 
 > **Note**:  This method is only valid for [`NSView`](nsview.md)-based table views.
-
- This method is only valid for [`NSView`](nsview.md)-based table views.
 
 ## Parameters
 

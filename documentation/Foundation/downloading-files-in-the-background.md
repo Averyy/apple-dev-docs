@@ -10,8 +10,6 @@ For long-running and nonurgent transfers, you can create tasks that run in the b
 
 > **Note**:  You don’t have to do all background network activity with background sessions as described in this article. Apps that declare appropriate background modes can use default URL sessions and data tasks, just as if they were in the foreground.
 
- You don’t have to do all background network activity with background sessions as described in this article. Apps that declare appropriate background modes can use default URL sessions and data tasks, just as if they were in the foreground.
-
 ##### Configure the Background Session
 
 To perform a background download, configure a [`URLSession`](urlsession.md) for background operation. The following example demonstrates this process.
@@ -33,8 +31,6 @@ private lazy var urlSession: URLSession = {
 ```
 
 > **Note**:  For more visibility into how the system is scheduling and performing your background tasks, download and install the Background Networking Profile onto your iOS device from the Bug Reporting [`Profiles and Logs`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/profiles-and-logs/) page.
-
- For more visibility into how the system is scheduling and performing your background tasks, download and install the Background Networking Profile onto your iOS device from the Bug Reporting [`Profiles and Logs`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/profiles-and-logs/) page.
 
 ##### Create and Schedule the Download Task
 
@@ -104,8 +100,6 @@ If the system terminated the app while it was suspended, the system relaunches t
 
 > **Note**:  In cases where the transfer is initiated while the app is in the background, the session configuration’s [`isDiscretionary`](urlsessionconfiguration/isdiscretionary.md) property is treated as being [`true`](https://developer.apple.com/documentation/swift/true).
 
- In cases where the transfer is initiated while the app is in the background, the session configuration’s [`isDiscretionary`](urlsessionconfiguration/isdiscretionary.md) property is treated as being [`true`](https://developer.apple.com/documentation/swift/true).
-
 ##### Comply with Background Transfer Limitations
 
 With background sessions, the actual transfer is performed by a process that is separate from your app’s process. Because restarting your app’s process is fairly expensive, a few features are unavailable, resulting in the following limitations:
@@ -125,8 +119,6 @@ Keep in mind, though, that each task has its own overhead. If you find you need 
 
 > **Note**:  The delay is reset to 0 whenever the user brings your app to the foreground. It also resets if the delay period elapses without the system resuming or relaunching your app.
 
- The delay is reset to 0 whenever the user brings your app to the foreground. It also resets if the delay period elapses without the system resuming or relaunching your app.
-
 ## See Also
 
 - [Downloading files from websites](downloading-files-from-websites.md)
@@ -137,4 +129,4 @@ Keep in mind, though, that each task has its own overhead. If you find you need 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/downloading-files-in-the-background)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background)*

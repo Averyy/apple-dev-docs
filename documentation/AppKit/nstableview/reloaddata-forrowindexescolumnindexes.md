@@ -1,6 +1,6 @@
 # reloadData(forRowIndexes:columnIndexes:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Reloads the data for only the specified rows and columns.
@@ -22,8 +22,6 @@ For cells that are visible, the appropriate [`dataSource`](nstableview/datasourc
 For tables that support variable row heights, the row height is not re-queried from the delegate; it is your responsibility to invoke [`noteHeightOfRows(withIndexesChanged:)`](nstableview/noteheightofrows(withindexeschanged:).md) if a row height change is required.
 
 > **Note**:  For [`NSView`](nsview.md)-based table views, this method drops the view-cells in the table row, but not the [`NSTableRowView`](nstablerowview.md) instances.
-
- For [`NSView`](nsview.md)-based table views, this method drops the view-cells in the table row, but not the [`NSTableRowView`](nstablerowview.md) instances.
 
 ## Parameters
 

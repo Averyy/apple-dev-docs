@@ -14,8 +14,6 @@ Apple supports common schemes associated with system apps, such as `mailto`, `te
 
 > ⚠️ **Warning**: URL schemes offer a potential attack vector into your app, so make sure to validate all URL parameters and discard any malformed URLs. In addition, limit the available actions to those that don’t risk the user’s data. For example, don’t allow other apps to directly delete content or access sensitive information about the user. When testing your URL-handling code, make sure your test cases include improperly formatted URLs.
 
-URL schemes offer a potential attack vector into your app, so make sure to validate all URL parameters and discard any malformed URLs. In addition, limit the available actions to those that don’t risk the user’s data. For example, don’t allow other apps to directly delete content or access sensitive information about the user. When testing your URL-handling code, make sure your test cases include improperly formatted URLs.
-
 To support a custom URL scheme:
 
 1. Define the format for your app’s URLs.
@@ -54,8 +52,6 @@ URL scheme registration specifies which URLs to redirect to your app. Register y
 The identifier you supply with your scheme distinguishes your app from others that declare support for the same scheme. To ensure uniqueness, specify a reverse DNS string that incorporates your company’s domain and app name. Although using a reverse DNS string is a best practice, it doesn’t prevent other apps from registering the same scheme and handling the associated links. Use universal links instead of custom URL schemes to define links that are uniquely associated with your website.
 
 > **Note**: If multiple apps register the same scheme, the app the system targets is undefined. There’s no mechanism to change the app or to change the order apps appear in a Share sheet.
-
-If multiple apps register the same scheme, the app the system targets is undefined. There’s no mechanism to change the app or to change the order apps appear in a Share sheet.
 
 Some URL schemes are reserved for system use. The system directs well-known types of URLs to the corresponding system apps, and well-known `http–`based URLs to specific apps such as Maps, YouTube, and Music. For information about the schemes supported by Apple, see [`Apple URL Scheme Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
@@ -120,4 +116,4 @@ func scene(_ scene: UIScene,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/defining-a-custom-url-scheme-for-your-app)*

@@ -20,8 +20,6 @@ object Pass.NFC
 
 > **Note**:  Adding NFC to a Pass requires a special entitlement issued by Apple. For more information, see Near Field Communication in [`Getting Started with Apple Wallet`](https://developer.apple.comhttps://developer.apple.com/wallet/get-started/).
 
- Adding NFC to a Pass requires a special entitlement issued by Apple. For more information, see Near Field Communication in [`Getting Started with Apple Wallet`](https://developer.apple.comhttps://developer.apple.com/wallet/get-started/).
-
 
 ---
 

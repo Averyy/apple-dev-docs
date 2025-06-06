@@ -1,6 +1,6 @@
 # loadingTemplate
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Displays a spinner and description on the screen.
 
@@ -9,8 +9,6 @@ Displays a spinner and description on the screen.
 Use the `loadingTemplate` element to display a spinner and description of why the spinner is being displayed; for example, an interim page showing that the requested page is being loaded. A spinner is automatically presented when the page is displayed, and you can add text to tell your users what is happening. The following figure shows the basic layout for a `layoutTemplate` page. The theme for the loading template defaults to the system preference.
 
 > **Note**: When a user performs an action to bring up a new page and the new page is not immediately ready, a `loadingTemplate` page should be presented. After the new page is ready, replace the `loadingTemplate` with the new page onto the navigation stack.
-
-When a user performs an action to bring up a new page and the new page is not immediately ready, a `loadingTemplate` page should be presented. After the new page is ready, replace the `loadingTemplate` with the new page onto the navigation stack.
 
 ![Layout diagram showing a title area and a spinner.](https://docs-assets.developer.apple.com/published/b97d2cd006e891cee13c5d8721a7bc46/loadingtemplate-1%402x.png)
 
@@ -96,4 +94,4 @@ The following figure shows the output of the above example:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/loadingtemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/loadingtemplate)*

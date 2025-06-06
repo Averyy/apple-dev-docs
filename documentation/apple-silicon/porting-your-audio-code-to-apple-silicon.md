@@ -1,6 +1,6 @@
 # Porting your audio code to Apple silicon
 
-**Framework**: Apple silicon
+**Framework**: Apple Silicon
 
 Eliminate issues in your audio-specific code when running on Apple silicon Mac computers.
 
@@ -23,8 +23,6 @@ For the `arm64` architecture, always use the Audio Component API to load Audio U
 If you develop Audio Units or codecs, update your code to support the Audio Component or Audio Unit Extension APIs if you haven’t already done so. When you link an Audio Unit or codec against the macOS 11 (or later) SDK, use one of these modern APIs instead of the Carbon Component API.
 
 > **Note**: To preserve compatibility, apps that link against the macOS 10.15 (or earlier) SDK may continue to use the Carbon Component Manager to load Audio Units and codecs. Similarly, Audio Units and codecs built using the macOS 10.15 (or earlier) SDK may continue to include separate resources and entry points to support older APIs.
-
-To preserve compatibility, apps that link against the macOS 10.15 (or earlier) SDK may continue to use the Carbon Component Manager to load Audio Units and codecs. Similarly, Audio Units and codecs built using the macOS 10.15 (or earlier) SDK may continue to include separate resources and entry points to support older APIs.
 
 For information about the Audio Component API, see the [`Audio Toolbox`](https://developer.apple.com/documentation/AudioToolbox) framework.
 

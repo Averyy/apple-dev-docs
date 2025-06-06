@@ -1,6 +1,6 @@
 # noteNumberOfRowsChanged()
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Informs the table view that the number of records in its data source has changed.
@@ -22,12 +22,6 @@ This method allows the table view to update the scrollers in its scroll view wit
 See the [`NSTableViewDataSource`](nstableviewdatasource.md) protocol specification for information on the messages an `NSTableView` object sends to its data source.
 
 > **Note**:  When using [`NSView`](nsview.md)-based table views this method should be avoided. The table will query the data source for the new number of rows, and properly insert (or remove) rows at the end of the table as necessary with an animation. When using [`NSCell`](nscell.md)-based table views this method tells the table that there may be more (or less) rows available and to reload state based on that information. This method does not work for [`NSOutlineView`](nsoutlineview.md), and should not be called.
-
- When using [`NSView`](nsview.md)-based table views this method should be avoided. The table will query the data source for the new number of rows, and properly insert (or remove) rows at the end of the table as necessary with an animation.
-
-When using [`NSCell`](nscell.md)-based table views this method tells the table that there may be more (or less) rows available and to reload state based on that information.
-
-This method does not work for [`NSOutlineView`](nsoutlineview.md), and should not be called.
 
 ## See Also
 

@@ -10,9 +10,20 @@ Create a one-time indexing script to convert all Apple documentation into search
 
 ## Implementation Steps
 
-### 1. Embedding Model
-- **OpenAI text-embedding-3-small**: 1536 dimensions, $0.02/1M tokens
-- Best balance of quality, cost, and integration
+### 1. Embedding Model Options (Updated 2024)
+
+**Recommended: Voyage-3-lite**
+- **Cost**: $0.02/1M tokens (same as OpenAI but 85% less due to efficiency)
+- **Performance**: Outperforms OpenAI-3-large by 3.82% on MTEB
+- **Context**: 32K tokens (vs OpenAI's 8K) - perfect for Apple docs
+- **Dimensions**: 512 (faster search, smaller storage)
+- **Your cost**: $0.89 for 278K docs
+
+**Alternative: BGE-small-en-v1.5 (Local)**
+- **Cost**: $0 (local inference)
+- **Performance**: Top MTEB performer in small model class
+- **Dimensions**: 384 (excellent efficiency)
+- **Time**: 45-90 minutes on i5-9600K with IPEX optimization
 
 ### 2. Simple Document Loading
 ```python
@@ -82,22 +93,28 @@ def extract_metadata(file_path):
     }
 ```
 
-### 5. Direct ChromaDB Usage
+### 5. Direct ChromaDB Usage with TEI
 ```python
 import chromadb
-from openai import OpenAI
+import requests
+import numpy as np
 
-client = OpenAI()
+# TEI BGE-M3 server endpoint
+TEI_URL = "http://192.168.2.5/embed"
+
 chroma = chromadb.PersistentClient(path="./vectorstore")
 collection = chroma.create_collection("apple_docs")
 
-# Batch process embeddings
-def embed_batch(texts):
-    response = client.embeddings.create(
-        input=texts,
-        model="text-embedding-3-small"
-    )
-    return [e.embedding for e in response.data]
+# Batch process embeddings using TEI
+def embed_batch(texts, batch_size=4):
+    """TEI 1.2 has max batch size of 4"""
+    embeddings = []
+    for i in range(0, len(texts), batch_size):
+        batch = texts[i:i + batch_size]
+        response = requests.post(TEI_URL, json={"inputs": batch})
+        batch_embeddings = response.json()
+        embeddings.extend(batch_embeddings)
+    return embeddings
 ```
 
 ### 6. Main Indexing Loop
@@ -137,12 +154,20 @@ def build_index(docs_path):
         )
 ```
 
-## Cost Estimation (Updated for Actual Data)
-- ~45K documents × ~1000 tokens/doc = ~45M tokens
-- Using text-embedding-3-small: ~$0.90 one-time cost
-- With one-file-per-embedding: ~50K embeddings total
-- Final cost: **~$1-2** (not $5!)
-- Storage: ~1.6GB for vector database (not 8GB!)
+## Cost Estimation (Final Production Data)
+- **278,778 documents** (1.17 GB total)
+- Average: ~4,200 chars/doc = ~1,050 tokens/doc
+- Total tokens: ~293 million tokens
+
+**Current Setup: BGE-M3 via TEI (In Use)**
+- Cost: **$0** (local TEI server at 192.168.2.5)
+- Time: **3-4 hours** (32 docs/sec with batching)
+- Storage: **1024 dimensions = ~1.1GB vector database**
+- Quality: Top MTEB performer, 8K context window
+
+**Alternative Options:**
+- Voyage-3-lite: $0.89 (API-based, 512 dims)
+- OpenAI text-embedding-3-small: $5.86 (1536 dims)
 
 ## Progress Tracking
 - Simple console output with file count
@@ -167,7 +192,7 @@ def embed_with_retry(texts, max_retries=3):
 
 ## Important Links
 - [ChromaDB Python Docs](https://docs.trychroma.com/reference/Client)
-- [OpenAI Embeddings API](https://platform.openai.com/docs/api-reference/embeddings)
+- [TEI API Documentation](http://192.168.2.5/docs) - Local Swagger UI for BGE-M3 server
 - [Python Path handling](https://docs.python.org/3/library/pathlib.html)
 
 ## Success Criteria
@@ -175,7 +200,9 @@ def embed_with_retry(texts, max_retries=3):
 - [ ] Metadata correctly extracted for filtering
 - [ ] Vector database persisted to disk
 - [ ] Can query the index and get relevant results
-- [ ] Total indexing time < 5 hours
+- [ ] Total indexing time < 6 hours (278K documents)
 
 ## Time Estimate
-1-2 hours to implement, 1 hour to run initial indexing (50K embeddings, not 200K!)
+- **Implementation**: 2-3 hours
+- **BGE-M3 via TEI**: 3-4 hours (actual setup in use)
+- Processing rate: ~32 docs/second with batch size 4

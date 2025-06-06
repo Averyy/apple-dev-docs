@@ -1,6 +1,6 @@
 # expect(throws:_:sourceLocation:performing:)
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: macro
 
 Check that an expression always throws an error of a given type.
@@ -41,8 +41,6 @@ Use this overload of `#expect()` when the expression `expression`  throw an erro
 If `expression` does not throw an error, or if it throws an error that is not an instance of `errorType`, an [`Issue`](issue.md) is recorded for the test that is running in the current task. Any value returned by `expression` is discarded.
 
 > **Note**: If you use this macro with a Swift compiler version lower than 6.1, it doesn’t return a value.
-
-If you use this macro with a Swift compiler version lower than 6.1, it doesn’t return a value.
 
 If the thrown error need only equal another instance of [`Error`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/error), use [`expect(throws:_:sourceLocation:performing:)`](expect(throws:_:sourcelocation:performing:)-7du1h.md) instead.
 

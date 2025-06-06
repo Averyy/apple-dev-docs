@@ -24,17 +24,11 @@ Before you run the sample program, you need to download an ISO installation imag
 
 > ❗ **Important**: The Virtualization framework can run Linux VMs on a Mac with Apple silicon, and on an Intel-based Mac. The Linux ISO image you download must support the CPU architecture of your Mac. For a Mac with Apple silicon, download a Linux ISO image for ARM, which is usually indicated by `aarch64` or `arm64` in the image filename. For an Intel-based Mac, download a Linux ISO image for Intel-compatible CPUs, which is usually indicated by `x86_64` or `amd64` in the image filename.
 
-The Virtualization framework can run Linux VMs on a Mac with Apple silicon, and on an Intel-based Mac. The Linux ISO image you download must support the CPU architecture of your Mac. For a Mac with Apple silicon, download a Linux ISO image for ARM, which is usually indicated by `aarch64` or `arm64` in the image filename. For an Intel-based Mac, download a Linux ISO image for Intel-compatible CPUs, which is usually indicated by `x86_64` or `amd64` in the image filename.
-
 > **Note**: If you need to run Intel Linux binaries in ARM Linux on a Mac with Apple silicon, the Virtualization framework supports this capability using the Rosetta translation environment. For more information, see [`Running Intel Binaries in Linux VMs with Rosetta`](running-intel-binaries-in-linux-vms-with-rosetta.md).
-
-If you need to run Intel Linux binaries in ARM Linux on a Mac with Apple silicon, the Virtualization framework supports this capability using the Rosetta translation environment. For more information, see [`Running Intel Binaries in Linux VMs with Rosetta`](running-intel-binaries-in-linux-vms-with-rosetta.md).
 
 ##### Configure the Sample Code Project
 
 > **Note**: The default deployment target is macOS14, if you need to build for a different version of macOS you’ll need to change the deployment target as appropriate.
-
-The default deployment target is macOS14, if you need to build for a different version of macOS you’ll need to change the deployment target as appropriate.
 
 1. Launch Xcode and open `GUILinuxVirtualMachineSampleApp.xcodeproj`.
 2. Navigate to the Signing & Capabilities panel and select your team ID.
@@ -124,8 +118,6 @@ private func createSpiceAgentConsoleDeviceConfiguration() -> VZVirtioConsoleDevi
 
 > ❗ **Important**: To use the copy-and-paste capability in Linux, the user needs to install the `spice-vdagent` package, which is available through most Linux package managers. Developers need to communicate this requirement to users of their apps.
 
-To use the copy-and-paste capability in Linux, the user needs to install the `spice-vdagent` package, which is available through most Linux package managers. Developers need to communicate this requirement to users of their apps.
-
 ##### Start the Vm
 
 After building the configuration data for the VM, the sample app uses the [`VZVirtualMachine`](vzvirtualmachine.md) object to start the execution of the Linux guest operating system.
@@ -176,4 +168,4 @@ The app sets the display to automatically resize when the window size changes.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/running-gui-linux-in-a-virtual-machine-on-a-mac)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/running-gui-linux-in-a-virtual-machine-on-a-mac)*

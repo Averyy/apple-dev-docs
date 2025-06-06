@@ -1,6 +1,6 @@
 # device
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: property  
 **Required**: Yes
 
@@ -25,8 +25,6 @@ var device: (any MTLDevice)? { get }
 Use this property to create or look up other Metal resources that use the same device as your SceneKit renderer.
 
 > **Note**:  This property is valid only for scene renderers whose [`renderingAPI`](scnscenerenderer/renderingapi.md) value is [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md). You create a SceneKit view that renders using Metal with the [`preferredRenderingAPI`](scnview/option/preferredrenderingapi.md) initialization option or in Interface Builder, or an [`SCNRenderer`](scnrenderer.md) that uses Metal with the [`init(device:options:)`](scnrenderer/init(device:options:).md) method. For OpenGL-based scene renderers, this property’s value is always `nil`.
-
- This property is valid only for scene renderers whose [`renderingAPI`](scnscenerenderer/renderingapi.md) value is [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md). You create a SceneKit view that renders using Metal with the [`preferredRenderingAPI`](scnview/option/preferredrenderingapi.md) initialization option or in Interface Builder, or an [`SCNRenderer`](scnrenderer.md) that uses Metal with the [`init(device:options:)`](scnrenderer/init(device:options:).md) method. For OpenGL-based scene renderers, this property’s value is always `nil`.
 
 ## See Also
 

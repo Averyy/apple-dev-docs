@@ -24,8 +24,6 @@ class LengthFormatter
 
 > **Note**:  As of iOS 10, macOS 10.12, tvOS 10, and watchOS 3, Foundation provides the [`MeasurementFormatter`](measurementformatter.md) class, which can be used to represent quantities of [`UnitLength`](unitlength.md) to provide equivalent functionality to [`LengthFormatter`](lengthformatter.md). You are encouraged to transition to these new Foundation Units and Measurements APIs whenever possible.
 
- As of iOS 10, macOS 10.12, tvOS 10, and watchOS 3, Foundation provides the [`MeasurementFormatter`](measurementformatter.md) class, which can be used to represent quantities of [`UnitLength`](unitlength.md) to provide equivalent functionality to [`LengthFormatter`](lengthformatter.md). You are encouraged to transition to these new Foundation Units and Measurements APIs whenever possible.
-
 ## Topics
 
 ### Formatting Length Strings
@@ -73,4 +71,4 @@ class LengthFormatter
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/lengthformatter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/lengthformatter)*

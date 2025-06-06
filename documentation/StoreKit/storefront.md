@@ -1,6 +1,6 @@
 # Storefront
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: struct
 
 The region and unique identifier of the App Store storefront for the device.
@@ -31,15 +31,11 @@ You need to maintain your own list of product identifiers and the storefronts wh
 
 > **Note**:  Don’t save the storefront information with your customer information because storefront information can change at any time. Get the storefront identifier immediately before you display product information or availability in your app. Don’t use storefront information to develop or enhance a customer profile, or to track customers for advertising or marketing purposes.
 
- Don’t save the storefront information with your customer information because storefront information can change at any time. Get the storefront identifier immediately before you display product information or availability in your app. Don’t use storefront information to develop or enhance a customer profile, or to track customers for advertising or marketing purposes.
-
 ##### Change the App Store Country or Region in the Sandbox Environment
 
 When you change the App Store Country or Region in App Store Connect for a Sandbox Apple Account, it changes the storefront in your app. Change the region to test In-App Purchases for different regions in your app. For more information about changing the App Store Country or Region in App Store Connect, see [`Test in-app purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/).
 
 > ❗ **Important**:  To successfully activate a storefront after you change the region in App Store Connect, sign out of the Sandbox Apple Account on the device and sign back in.
-
- To successfully activate a storefront after you change the region in App Store Connect, sign out of the Sandbox Apple Account on the device and sign back in.
 
 ## Topics
 
@@ -75,4 +71,4 @@ When you change the App Store Country or Region in App Store Connect for a Sandb
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/storefront)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/storefront)*

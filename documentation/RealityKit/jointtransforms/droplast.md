@@ -1,6 +1,6 @@
 # dropLast(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a subsequence containing all but the specified number of final elements.
@@ -35,8 +35,6 @@ print(numbers.dropLast(10))
 ```
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the number of elements to drop.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the number of elements to drop.
 
 ## Parameters
 

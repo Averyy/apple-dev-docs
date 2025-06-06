@@ -1,6 +1,6 @@
 # macOS Versions
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read macOS version information you configure for an Xcode Cloud workflow.
 
@@ -11,8 +11,6 @@ The `ciMacOsVersions` resource represents the version of macOS you configure for
 To change a workflow’s build environment, use the [`Workflows`](workflows.md) resource.
 
 > **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
-
- This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
 
@@ -43,4 +41,4 @@ To change a workflow’s build environment, use the [`Workflows`](workflows.md) 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/macos-versions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/macos-versions)*

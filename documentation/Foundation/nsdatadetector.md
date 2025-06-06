@@ -28,8 +28,6 @@ Find dates, addresses, links, phone numbers, and transit information in natural 
 
 > ❗ **Important**:  Don’t use `NSDataDetector` to validate data. `NSDataDetector` discards potential matches in case of uncertainty. Use a class specific to the type of data for validation instead. For example, attempt to instantiate a [`URL`](url.md) object using [`init(string:)`](url/init(string:).md) to validate a URL string. A valid URL string returns an instance of [`URL`](url.md), while an invalid URL string returns [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
 
- Don’t use `NSDataDetector` to validate data. `NSDataDetector` discards potential matches in case of uncertainty. Use a class specific to the type of data for validation instead. For example, attempt to instantiate a [`URL`](url.md) object using [`init(string:)`](url/init(string:).md) to validate a URL string. A valid URL string returns an instance of [`URL`](url.md), while an invalid URL string returns [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
-
 ##### Examples
 
 The following shows several graduated examples of using the `NSDataDetector` class.
@@ -89,12 +87,6 @@ The `NSRegularExpression` block object enumerator is the most general and flexib
 ```
 
 > **Note**:  Only use `NSDataDetector` on natural language text. If you expect text to be in a particular format, use an [`Formatter`](formatter.md) or [`ValueTransformer`](valuetransformer.md) subclass instead. For instance, if you’re expecting a date field to be an ISO 8601 timestamp, use [`DateFormatter`](dateformatter.md) to parse that into an [`NSDate`](nsdate.md) object. If the text is in a machine-readable format, such as XML or JSON, extract the natural language text, such as by using [`XMLParser`](xmlparser.md) or [`JSONSerialization`](jsonserialization.md), and match on that rather than attempt to match on the entire document.
-
- Only use `NSDataDetector` on natural language text.
-
-If you expect text to be in a particular format, use an [`Formatter`](formatter.md) or [`ValueTransformer`](valuetransformer.md) subclass instead. For instance, if you’re expecting a date field to be an ISO 8601 timestamp, use [`DateFormatter`](dateformatter.md) to parse that into an [`NSDate`](nsdate.md) object.
-
-If the text is in a machine-readable format, such as XML or JSON, extract the natural language text, such as by using [`XMLParser`](xmlparser.md) or [`JSONSerialization`](jsonserialization.md), and match on that rather than attempt to match on the entire document.
 
 ## Topics
 

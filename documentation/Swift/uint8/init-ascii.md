@@ -24,8 +24,6 @@ init(ascii v: Unicode.Scalar)
 
 > **Note**: `v.value` can be represented as ASCII (0..<128).
 
-`v.value` can be represented as ASCII (0..<128).
-
 
 ---
 

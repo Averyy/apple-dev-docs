@@ -1,6 +1,6 @@
 # Capturing Uncompressed Image Data
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Get processed image data without compression to use for filtering or lossless output.
 
@@ -9,8 +9,6 @@ Get processed image data without compression to use for filtering or lossless ou
 Typical photography workflows save images in a compressed format such as HEIF/HEVC or JPEG. These formats use lossy compression to strike a balance between preserving noticeable details in the image and reducing its data storage requirements. However, sometimes it’s more helpful to work with uncompressed image data—for example, some image processing and analysis algorithms can be confused by the visual artifacts introduced by lossy compression.
 
 > **Note**:  Uncompressed image data is not to be confused with unprocessed, or RAW, image data. RAW data is minimally altered data direct from a camera’s image sensor. Uncompressed image data has been processed to create a displayable image, but hasn’t been compressed to create a small file.
-
- Uncompressed image data is not to be confused with unprocessed, or RAW, image data. RAW data is minimally altered data direct from a camera’s image sensor. Uncompressed image data has been processed to create a displayable image, but hasn’t been compressed to create a small file.
 
 In iOS, capturing uncompressed image data requires minor changes to the basic photography workflow covered in [`Capturing Still and Live Photos`](capturing-still-and-live-photos.md).
 
@@ -76,4 +74,4 @@ Alternatively, to get an uncompressed photo ready for writing to a file, use the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/capturing-uncompressed-image-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/capturing-uncompressed-image-data)*

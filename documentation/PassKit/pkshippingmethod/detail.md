@@ -1,6 +1,6 @@
 # detail
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 A user-readable description of the shipping method.
@@ -26,8 +26,6 @@ Use this property to differentiate the shipping methods you offer. For example â
 Donâ€™t repeat the content of the [`label`](pkpaymentsummaryitem/label.md) property inherited from [`PKPaymentSummaryItem`](pkpaymentsummaryitem.md).
 
 > **Note**:  When [`dateComponentsRange`](pkshippingmethod/datecomponentsrange.md) contains a value, the system displays the range in the shipping method panel of the payment sheet. The system displays the contents of detail on the shipping method selection pane.
-
- When [`dateComponentsRange`](pkshippingmethod/datecomponentsrange.md) contains a value, the system displays the range in the shipping method panel of the payment sheet. The system displays the contents of detail on the shipping method selection pane.
 
 ## See Also
 

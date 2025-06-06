@@ -1,6 +1,6 @@
 # Loading Reality Composer files manually without generated code
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Load Reality Composer files that aren’t part of your Xcode project.
 
@@ -75,8 +75,6 @@ func loadRealityComposerSceneAsync (filename: String,
 ```
 
 > **Note**: If you use the [`store(in:)`](https://developer.apple.com/documentation/Combine/AnyCancellable/store(in:)-6cr9i) method instead of [`append(_:)`](https://developer.apple.com/documentation/Swift/Array/append(_:)), you don’t have to remove the [`AnyCancellable`](https://developer.apple.com/documentation/Combine/AnyCancellable) object from the array after loading has finished. When using that method, the [`AnyCancellable`](https://developer.apple.com/documentation/Combine/AnyCancellable) object removes itself automatically from the array once it has finished loading.
-
-If you use the [`store(in:)`](https://developer.apple.com/documentation/Combine/AnyCancellable/store(in:)-6cr9i) method instead of [`append(_:)`](https://developer.apple.com/documentation/Swift/Array/append(_:)), you don’t have to remove the [`AnyCancellable`](https://developer.apple.com/documentation/Combine/AnyCancellable) object from the array after loading has finished. When using that method, the [`AnyCancellable`](https://developer.apple.com/documentation/Combine/AnyCancellable) object removes itself automatically from the array once it has finished loading.
 
 ##### Load the Scene Synchronously From the Url
 
@@ -187,4 +185,4 @@ if let theURL = Bundle.main.url(forResource: "myModel", withExtension: "usdz") {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/loading-reality-composer-files-manually-without-generated-code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/loading-reality-composer-files-manually-without-generated-code)*

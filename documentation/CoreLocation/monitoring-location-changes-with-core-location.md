@@ -1,6 +1,6 @@
 # Monitoring location changes with Core Location
 
-**Framework**: Core Location
+**Framework**: Corelocation
 
 Define boundaries and act on user location updates.
 
@@ -12,8 +12,6 @@ Define boundaries and act on user location updates.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10212: [`What’s new in location authorization`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10212/) and WWDC23 session 10147: [`Meet Core Location Monitor`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10147/).
-
-This sample code project is associated with WWDC24 session 10212: [`What’s new in location authorization`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10212/) and WWDC23 session 10147: [`Meet Core Location Monitor`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10147/).
 
 ##### Configure the Sample Code Project
 
@@ -37,4 +35,4 @@ Before you run the sample code project in Xcode, ensure that you’re using Xcod
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/monitoring-location-changes-with-core-location)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/monitoring-location-changes-with-core-location)*

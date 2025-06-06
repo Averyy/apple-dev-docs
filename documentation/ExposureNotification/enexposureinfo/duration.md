@@ -1,6 +1,6 @@
 # duration
 
-**Framework**: Exposure Notification  
+**Framework**: Exposurenotification  
 **Kind**: property
 
 The length of time that the contact was in proximity to the user.
@@ -21,8 +21,6 @@ var duration: TimeInterval { get }
 When reporting the duration of an exposure, the values are stored as seconds rounded up to the next minute. A duration value caps at 30 minutes (1800 seconds).
 
 > **Note**:  In iOS 13.5, duration values are rounded up to the next 5-minute interval.
-
- In iOS 13.5, duration values are rounded up to the next 5-minute interval.
 
 ## See Also
 
@@ -52,4 +50,4 @@ When reporting the duration of an exposure, the values are stored as seconds rou
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposureinfo/duration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposureinfo/duration)*

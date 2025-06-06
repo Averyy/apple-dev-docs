@@ -174,8 +174,6 @@ ControlWidgetToggle(...) { isOn in
 
 > **Note**: `controlsWidgetActionHint` takes precedence over custom value text `Label` provides.
 
-`controlsWidgetActionHint` takes precedence over custom value text `Label` provides.
-
 ##### Add Control Center Status Text
 
 Use the [`controlWidgetStatus(_:)`](https://developer.apple.com/documentation/SwiftUI/View/controlWidgetStatus(_:)) modifier to display momentary status text in Control Center when a control’s action is performed. Status text conveys additional information about the control’s state or the duration of effectiveness of the state. For example, status text might display the time a car idles before turning off after being remotely started.
@@ -264,4 +262,4 @@ struct TimerToggle: ControlWidget {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/adding-refinements-and-configuration-to-controls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/adding-refinements-and-configuration-to-controls)*

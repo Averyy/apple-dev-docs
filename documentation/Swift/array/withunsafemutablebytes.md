@@ -44,13 +44,9 @@ numbers.withUnsafeMutableBytes { destBytes in
 
 > **Note**: This example shows the behavior on a little-endian platform.
 
-This example shows the behavior on a little-endian platform.
-
 The pointer passed as an argument to `body` is valid only for the lifetime of the closure. Do not escape it from the closure for later use.
 
 > ⚠️ **Warning**: Do not rely on anything about the array that is the target of this method during execution of the `body` closure; it might not appear to have its correct value. Instead, use only the `UnsafeMutableRawBufferPointer` argument to `body`.
-
-Do not rely on anything about the array that is the target of this method during execution of the `body` closure; it might not appear to have its correct value. Instead, use only the `UnsafeMutableRawBufferPointer` argument to `body`.
 
 ## Parameters
 

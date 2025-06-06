@@ -1,6 +1,6 @@
 # MKMapSnapshotter
 
-**Framework**: MapKit  
+**Framework**: Mapkit  
 **Kind**: class
 
 A utility class for capturing a map and its content into an image.
@@ -26,8 +26,6 @@ Use an [`MKMapSnapshotter`](mkmapsnapshotter.md) object when you want to capture
 Configure a snapshotter object using an [`MKMapSnapshotter.Options`](mkmapsnapshotter/options.md) object. The snapshot options specify the appearance of the map, including which portion of the map the snapshotter captures.
 
 > **Note**:  Snapshotter objects don’t capture the visual representations of any overlays or annotations that your app creates. If you want those items to appear in the final snapshot, you must draw them on the resulting snapshot image. For more information about drawing custom content on map snapshots, see [`MKMapSnapshotter.Snapshot`](mkmapsnapshotter/snapshot.md).
-
- Snapshotter objects don’t capture the visual representations of any overlays or annotations that your app creates. If you want those items to appear in the final snapshot, you must draw them on the resulting snapshot image. For more information about drawing custom content on map snapshots, see [`MKMapSnapshotter.Snapshot`](mkmapsnapshotter/snapshot.md).
 
 ## Topics
 
@@ -71,4 +69,4 @@ Configure a snapshotter object using an [`MKMapSnapshotter.Options`](mkmapsnapsh
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/mkmapsnapshotter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKit/mkmapsnapshotter)*

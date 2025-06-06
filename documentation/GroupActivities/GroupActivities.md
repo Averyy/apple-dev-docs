@@ -1,6 +1,6 @@
 # Group Activities
 
-**Framework**: Group Activities  
+**Framework**: Groupactivities  
 **Kind**: module
 
 Create app-specific activities your users can share and experience together.
@@ -20,8 +20,6 @@ With the Group Activities framework, you can provide your app’s content in Sha
 This framework leverages the FaceTime infrastructure to synchronize your app’s activities and to invite other participants to join those activities. When your app’s UI contains shareable activities, adopt the [`GroupActivity`](groupactivity.md) protocol in the objects you use to represent those activities. When a group activity begins, use the [`GroupSession`](groupsession.md) object to synchronize your app’s behavior with other participating devices.
 
 > **Note**: The Group Activities framework uses end-to-end encryption on all session data that the [`GroupSession`](groupsession.md) object synchronizes between devices. Apple doesn’t have the keys to decrypt this data. Your use of the Group Activities framework doesn’t provide Apple with visibility into the content your app shares, or information related to playback of media content in your app, such as where in the content a user starts, pauses, or skips a session. Apple servers facilitating Group Activities sessions don’t know the identity of your app. Occasionally, Apple may ask a small number of users to help troubleshoot issues, such as by [`capturing a sysdiagnose or installing a debugging profile`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/profiles-and-logs/), which may incidentally result in Apple collecting some information related to content shared in your app.
-
-The Group Activities framework uses end-to-end encryption on all session data that the [`GroupSession`](groupsession.md) object synchronizes between devices. Apple doesn’t have the keys to decrypt this data. Your use of the Group Activities framework doesn’t provide Apple with visibility into the content your app shares, or information related to playback of media content in your app, such as where in the content a user starts, pauses, or skips a session. Apple servers facilitating Group Activities sessions don’t know the identity of your app. Occasionally, Apple may ask a small number of users to help troubleshoot issues, such as by [`capturing a sysdiagnose or installing a debugging profile`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/profiles-and-logs/), which may incidentally result in Apple collecting some information related to content shared in your app.
 
 ## Topics
 

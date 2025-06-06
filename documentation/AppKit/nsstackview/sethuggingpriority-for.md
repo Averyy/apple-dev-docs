@@ -1,6 +1,6 @@
 # setHuggingPriority(_:for:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Sets the Auto Layout priority for the stack view to minimize its size, for a specified user interface axis.
@@ -26,8 +26,6 @@ To configure a stack view to prevent its enclosing view from growing, use priori
 The value of the hugging priority also affects spacing between views and between gravity areas, as described in the discussion for the [`spacing`](nsstackview/spacing.md) property.
 
 > **Note**:  The hugging priority for a stack view behaves differently than the content hugging priority for a generic view as configured with the [`NSView`](nsview.md) method [`setContentHuggingPriority(_:for:)`](nsview/setcontenthuggingpriority(_:for:).md). A stack view has no intrinsic content size and does not have a configurable content compression resistance. Calling the [`setContentCompressionResistancePriority(_:for:)`](nsview/setcontentcompressionresistancepriority(_:for:).md) method on a stack view has no effect.
-
- The hugging priority for a stack view behaves differently than the content hugging priority for a generic view as configured with the [`NSView`](nsview.md) method [`setContentHuggingPriority(_:for:)`](nsview/setcontenthuggingpriority(_:for:).md). A stack view has no intrinsic content size and does not have a configurable content compression resistance. Calling the [`setContentCompressionResistancePriority(_:for:)`](nsview/setcontentcompressionresistancepriority(_:for:).md) method on a stack view has no effect.
 
 ## Parameters
 

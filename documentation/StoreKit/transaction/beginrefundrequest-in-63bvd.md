@@ -1,6 +1,6 @@
 # beginRefundRequest(in:)
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: method
 
 Presents the refund request sheet for the transaction in a view controller.
@@ -35,8 +35,6 @@ The App Store takes up to 48 hours to either approve or deny a refund.
 For information about setting up your server to receive notifications, see [`Enabling App Store Server Notifications`](enabling-app-store-server-notifications.md).
 
 > **Note**:  If your app uses SwiftUI, use [`refundRequestSheet(for:isPresented:onDismiss:)`](https://developer.apple.com/documentation/SwiftUI/View/refundRequestSheet(for:isPresented:onDismiss:)) instead. For example usage, see [`Food Truck: Building a SwiftUI multiplatform app`](https://developer.apple.com/documentation/swiftui/food_truck_building_a_swiftui_multiplatform_app).
-
- If your app uses SwiftUI, use [`refundRequestSheet(for:isPresented:onDismiss:)`](https://developer.apple.com/documentation/SwiftUI/View/refundRequestSheet(for:isPresented:onDismiss:)) instead. For example usage, see [`Food Truck: Building a SwiftUI multiplatform app`](https://developer.apple.com/documentation/swiftui/food_truck_building_a_swiftui_multiplatform_app).
 
 ##### Test Refund Requests
 

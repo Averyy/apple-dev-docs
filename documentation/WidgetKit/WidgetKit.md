@@ -22,8 +22,6 @@ The ecosystem that WidgetKit enables consists of:
 
 > **Note**: visionOS doesn’t load WidgetKit extensions found in compatible iPad and iPhone apps.
 
-visionOS doesn’t load WidgetKit extensions found in compatible iPad and iPhone apps.
-
 ##### Develop Glanceable Features Iteratively
 
 WidgetKit enables features across iPad, iPhone, the Mac, and Apple Watch, but only in a way that best fits a person’s device and personal needs. For example, WidgetKit powers widgets on all platforms in various sizes. It also powers Live Activities and controls, features that are only available on iPhone and iPad.

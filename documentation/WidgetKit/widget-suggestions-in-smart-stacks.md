@@ -29,8 +29,6 @@ To make relevant suggestions, Smart Stacks compare app intents the app donates w
 
 > **Note**: To enable Smart Stacks to suggest your app intent-based widgets, have your custom app intents conform to [`PredictableIntent`](https://developer.apple.com/documentation/AppIntents/PredictableIntent) and contain a [`predictionConfiguration`](https://developer.apple.com/documentation/AppIntents/PredictableIntent/predictionConfiguration) that describes the parameters to match.
 
-To enable Smart Stacks to suggest your app intent-based widgets, have your custom app intents conform to [`PredictableIntent`](https://developer.apple.com/documentation/AppIntents/PredictableIntent) and contain a [`predictionConfiguration`](https://developer.apple.com/documentation/AppIntents/PredictableIntent/predictionConfiguration) that describes the parameters to match.
-
 ##### Suggest Shortcuts a Person May Find Useful
 
 While app intent donations using `IntentDonationManager` or `donate()` give Smart Stacks insight into past user behavior, [`RelevantIntent`](https://developer.apple.com/documentation/AppIntents/RelevantIntent) informs future suggestions. These app intents may not even be based on a person’s behavior. When your app has timely information you believe is relevant to a person, and the app has a widget to display that information, suggest relevant app intents to influence Widget Suggestions. This helps people perform common or important tasks.
@@ -50,8 +48,6 @@ With this information, Smart Stacks can suggest the preconfigured lantern festiv
 If your widget uses a [`StaticConfiguration`](staticconfiguration.md), you still use `RelevantIntent` for future suggestions. To provide a relevant intent for a static widget, create a custom intent type that conforms to `WidgetConfigurationIntent` and has no parameters, then follow the steps above.
 
 > **Note**: Smart Stacks don’t suggest widgets that rely on a person’s location information unless that person has already authorized the use of location for widgets in a widget extension. For more information about using a person’s location in widgets, see [`Accessing location information in widgets`](accessing-location-information-in-widgets.md).
-
-Smart Stacks don’t suggest widgets that rely on a person’s location information unless that person has already authorized the use of location for widgets in a widget extension. For more information about using a person’s location in widgets, see [`Accessing location information in widgets`](accessing-location-information-in-widgets.md).
 
 ##### Indicate When a Widget Is Relevant From Your Widget Extension
 
@@ -81,4 +77,4 @@ Donating SiriKit Intents is very similar to donating app intents. Instead of usi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/widget-suggestions-in-smart-stacks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/widget-suggestions-in-smart-stacks)*

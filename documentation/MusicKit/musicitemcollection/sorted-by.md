@@ -1,6 +1,6 @@
 # sorted(by:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
@@ -82,8 +82,6 @@ The predicate must be a  over the elements. That is, for any elements `a`, `b`, 
 The sorting algorithm is guaranteed to be stable. A stable sort preserves the relative order of elements for which `areInIncreasingOrder` does not establish an order.
 
 > **Note**: O( log ), where  is the length of the sequence.
-
-O( log ), where  is the length of the sequence.
 
 ## Parameters
 

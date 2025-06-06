@@ -1,6 +1,6 @@
 # MLMultiArray
 
-**Framework**: Core ML  
+**Framework**: Coreml  
 **Kind**: class
 
 A machine learning collection type that stores numeric values in an array with multiple dimensions.
@@ -31,8 +31,6 @@ A multidimensional array, or , is one of the underlying types of an `MLFeatureVa
 Each dimension in a multiarray is typically significant or meaningful. For example, a model could have an input that accepts images as a multiarray of pixels with three dimensions, C x H x W. The first dimension, ,_ _represents the number of color channels, and the second and third dimensions,  and , represent the image’s height and width, respectively. The number of dimensions and size of each dimension define the multiarray’s .
 
 > **Note**:  Some models use a one-dimensional multiarray for an input or output. This type of multiarray is conceptually identical to a conventional array.
-
- Some models use a one-dimensional multiarray for an input or output. This type of multiarray is conceptually identical to a conventional array.
 
 The [`shape`](mlmultiarray/shape.md) property is an integer array that has an element for each dimension in the multiarray. Each element in [`shape`](mlmultiarray/shape.md) defines the size of the corresponding dimension. To inspect the shape and constraints of a model’s multiarray input or output feature:
 
@@ -124,4 +122,4 @@ The [`shape`](mlmultiarray/shape.md) property is an integer array that has an el
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coreml/mlmultiarray)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/mlmultiarray)*

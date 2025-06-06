@@ -1,6 +1,6 @@
 # binding
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Associates information in a data item with an element.
 
@@ -9,8 +9,6 @@ Associates information in a data item with an element.
 Use the `binding` attribute to associate the property path in a data item with an element.
 
 > **Note**: For more information on binding, see [`Manipulating the Document Object Model (DOM)`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/TVMLKitJS/Conceptual/TVMLProgrammingGuide/GeneratingContentForYourApp.html#//apple_ref/doc/uid/TP40016718-CH4-SW1) in the TVML Programming Guide.
-
-For more information on binding, see [`Manipulating the Document Object Model (DOM)`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/TVMLKitJS/Conceptual/TVMLProgrammingGuide/GeneratingContentForYourApp.html#//apple_ref/doc/uid/TP40016718-CH4-SW1) in the TVML Programming Guide.
 
 ##### Values for Binding
 
@@ -32,4 +30,4 @@ The `binding` attribute can be used with any element.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/binding)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/binding)*

@@ -16,8 +16,6 @@ You calculate the number of threads per threadgroup based on two [`MTLComputePip
 
 > **Note**:  After you create a compute pipeline state, its [`maxTotalThreadsPerThreadgroup`](mtlcomputepipelinestate/maxtotalthreadsperthreadgroup.md) value doesn’t change, but two pipeline states on the same device may return different values.
 
- After you create a compute pipeline state, its [`maxTotalThreadsPerThreadgroup`](mtlcomputepipelinestate/maxtotalthreadsperthreadgroup.md) value doesn’t change, but two pipeline states on the same device may return different values.
-
 For example, consider a compute pipeline state with `512` maximum threads per threadgroup and a thread execution width of `16`. For that compute pipeline state, you can launch the largest possible threadgroup by setting the following:
 
 - The second dimension to the maximum threads per thread group divided by the thread execution width
@@ -58,8 +56,6 @@ simpleKernelFunction(texture2d<float, access::write> outputTexture [[texture(0)]
 
 > **Note**:  You don’t need to check a thread’s position in a grid if you use the [`dispatchThreads(_:threadsPerThreadgroup:)`](mtlcomputecommandencoder/dispatchthreads(_:threadsperthreadgroup:).md) technique.
 
- You don’t need to check a thread’s position in a grid if you use the [`dispatchThreads(_:threadsPerThreadgroup:)`](mtlcomputecommandencoder/dispatchthreads(_:threadsperthreadgroup:).md) technique.
-
 Encode the command that executes your custom threadgroup size by calling the encoder’s [`dispatchThreadgroups(_:threadsPerThreadgroup:)`](mtlcomputecommandencoder/dispatchthreadgroups(_:threadsperthreadgroup:).md) method.
 
 ## See Also
@@ -72,4 +68,4 @@ Encode the command that executes your custom threadgroup size by calling the enc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/calculating-threadgroup-and-grid-sizes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/calculating-threadgroup-and-grid-sizes)*

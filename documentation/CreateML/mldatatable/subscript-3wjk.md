@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: subscript
 
 Retrieves or adds an untyped column with the specified name.
@@ -29,8 +29,6 @@ Use this subscript to retrieve an [`MLUntypedColumn`](mluntypedcolumn.md) or add
 
 > ❗ **Important**: The number of elements in the column must equal the number of rows in the data table. Otherwise, the data table will be invalidated.
 
-The number of elements in the column must equal the number of rows in the data table. Otherwise, the data table will be invalidated.
-
 ![A table on the left with two columns plus a third semi-opaque column.](https://docs-assets.developer.apple.com/published/d47258a4254c249703f7c2ab6c960289/MLDataTable-subscript%28_%3A%29-3wjk-1%402x.png)
 
 For example, to extract, convert, and add a column as shown above, begin by creating a data table.
@@ -52,8 +50,6 @@ let distanceInAU = table["Distance (AU)"]
 
 > **Note**: Without a type annotation, the compiler uses this version of `subscript(_:)` instead of the equivalent [`subscript(_:)`](mldatatable/subscript(_:)-5tl9r.md) from [`MLDataColumn`](mldatacolumn.md).
 
-Without a type annotation, the compiler uses this version of `subscript(_:)` instead of the equivalent [`subscript(_:)`](mldatatable/subscript(_:)-5tl9r.md) from [`MLDataColumn`](mldatacolumn.md).
-
 Use the untyped column’s multiplication operator to create a new column of data.
 
 ```swift
@@ -69,8 +65,6 @@ table["Distance (km)"] = distanceInKm
 ```
 
 > ❗ **Important**: To replace a column, use [`removeColumn(named:)`](mldatatable/removecolumn(named:).md) before adding its replacement. Adding a column with the same name as one already in the data table may invalidate the data table.
-
-To replace a column, use [`removeColumn(named:)`](mldatatable/removecolumn(named:).md) before adding its replacement. Adding a column with the same name as one already in the data table may invalidate the data table.
 
 ## Parameters
 

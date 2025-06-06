@@ -1,6 +1,6 @@
 # Working with Overlays and Parental Controls in tvOS
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Add interactive overlays, parental controls, and livestream channel flipping using a player view controller.
 
@@ -11,8 +11,6 @@ Add interactive overlays, parental controls, and livestream channel flipping usi
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`503: Delivering Intuitive Media Playback with AVKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/503/).
-
-This sample code project is associated with WWDC 2019 session [`503: Delivering Intuitive Media Playback with AVKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/503/).
 
 ##### Configure the Sample Code Project
 
@@ -63,4 +61,4 @@ This sample also demonstrates explicit support for parental restrictions by dire
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/working-with-overlays-and-parental-controls-in-tvos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/working-with-overlays-and-parental-controls-in-tvos)*

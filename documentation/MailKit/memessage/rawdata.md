@@ -1,6 +1,6 @@
 # rawData
 
-**Framework**: MailKit  
+**Framework**: Mailkit  
 **Kind**: property
 
 The raw RFC 2822 header and body content of the message.
@@ -19,8 +19,6 @@ var rawData: Data? { get }
 The content is available after MailKit downloads the message. MailKit provides the content as unprocessed data. For details about the format of the data, see [`RFC 2822`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2822).
 
 > **Note**:  This property includes the full content of the message, and contains both the headers and the message body. If you only need the headers in the message, use [`headers`](memessage/headers.md) instead.
-
- This property includes the full content of the message, and contains both the headers and the message body. If you only need the headers in the message, use [`headers`](memessage/headers.md) instead.
 
 ## See Also
 

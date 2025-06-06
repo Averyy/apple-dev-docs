@@ -1,6 +1,6 @@
 # Testing the launch experience of your App Clip
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Debug App Clip invocations, test the launch experience, and verify the configuration of your released App Clip.
 
@@ -48,8 +48,6 @@ Note that you don’t need to configure the [`Associated Domains Entitlement`](h
 
 > 💡 **Tip**:  Add the Code Scanner and the NFC Tag Reader to Control Center by opening the Settings app and selecting Control Center.
 
- Add the Code Scanner and the NFC Tag Reader to Control Center by opening the Settings app and selecting Control Center.
-
 To test your launch experience with a local experience:
 
 1. Build and run your App Clip on your test device to make sure it’s cached on the test device. For example, with the Fruta sample code project, follow the instructions to configure it, then run the `Fruta iOS Clip` scheme. To download the sample code project, visit [`Fruta: Building a Feature-Rich App with SwiftUI`](fruta_building_a_feature-rich_app_with_swiftui.md).
@@ -62,8 +60,6 @@ To test your launch experience with a local experience:
 
 > **Note**:  In addition to building and running your App Clip on your test device to cache it on the device, you can also manually add the `.ipa` file of your App Clip to the device. First, archive the full app that corresponds with your App Clip. Then, in Xcode, export the App Clip for Ad Hoc or Development distribution. Finally, drag the exported `.ipa` file to a connected device that appears in the Devices and Simulators window.
 
- In addition to building and running your App Clip on your test device to cache it on the device, you can also manually add the `.ipa` file of your App Clip to the device. First, archive the full app that corresponds with your App Clip. Then, in Xcode, export the App Clip for Ad Hoc or Development distribution. Finally, drag the exported `.ipa` file to a connected device that appears in the Devices and Simulators window.
-
 The following screenshot shows the interface you use to configure a local experience on iPhone:
 
 ![A screenshot of an iPhone that shows the interface for configuring a local experience. It uses https://example.com as the URL prefix and com.example.app.clip as the bundle identifier. The title for the local experience’s App Clip card is Example App, its subtitle is A local App Clip experience, and its call-to-action verb is Open.](https://docs-assets.developer.apple.com/published/85a371cd6be59ba5d0d87e1ff607aa61/media-3686646%402x.png)
@@ -75,8 +71,6 @@ When you configure a local experience on a device, the local experience takes pr
 A reliable user experience is crucial to App Clips and requires spending time to test all user flows and supported invocations. To help make sure your App Clip works as expected, you can make your App Clip available to testers in [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/). First, upload an app with an App Clip to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). Then, in App Store Connect, navigate to the uploaded build. In the App Clip section, you can configure up to three different App Clip experiences for testing.
 
 > ❗ **Important**:  Unlike local experiences, creating an App Clip experience for testers in TestFlight requires you to associate your App Clip with your website. For more information on configuring associated domains, see [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
-
- Unlike local experiences, creating an App Clip experience for testers in TestFlight requires you to associate your App Clip with your website. For more information on configuring associated domains, see [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
 
 Users don’t install App Clips, and App Clips don’t appear on the Home Screen. Similarly, testers don’t install the beta version of your App Clip, and it also doesn’t appear on the Home Screen either. Instead, testers launch the App Clip experiences you configure for testing through the [`TestFlight app`](https://developer.apple.comhttps://apps.apple.com/us/app/testflight/id899247664) on their device.
 
@@ -110,4 +104,4 @@ If the system found issues with your configuration, the App Clip diagnostics fun
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/testing-the-launch-experience-of-your-app-clip)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/testing-the-launch-experience-of-your-app-clip)*

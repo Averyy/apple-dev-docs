@@ -1,6 +1,6 @@
 # 🍏 Apple Developer Documentation Scraper
 
-A comprehensive Python tool that scrapes and converts Apple's entire developer documentation ecosystem (340+ frameworks, 100,000+ pages) into clean markdown format optimized for Context7 integration and AI LLM consumption.
+A comprehensive Python tool that scrapes and converts Apple's entire developer documentation ecosystem (340+ frameworks, 278,778 pages) into clean markdown format with local MCP server integration for semantic search.
 
 > **Note**: This repository contains scraped documentation from Apple's developer website. All documentation content is property of Apple Inc. This tool is intended for personal use, offline access, and AI-assisted development workflows.
 
@@ -33,8 +33,8 @@ After initial ETag collection, checking 237K+ documents for changes takes only ~
 Apple's Developer website is terrible for AI LLM's to browse and is extremely difficult to bulk add context. Unlike the Swift Language guidelines that they host open source on Github, they hide their developer guidelines behind virtualization, lazy loading, and Javascript requirements. This scraper addresses the need for offline, searchable access to Apple's developer documentation by:
 
 - Converting Apple's documentation into clean, structured markdown files
-- Organizing content for efficient retrieval via Context7
-- Enabling queries like "apple swiftui list" or "apple metal shader"
+- Organizing content for efficient semantic search via local MCP server
+- Enabling natural language queries for Apple documentation
 - Preserving code examples, cross-references, and platform availability information
 
 ## Technical Approach
@@ -137,7 +137,7 @@ apple-developer-docs/
 
 - **JSON Scraper** - Fetches and parses Apple's JSON API with rate limiting
 - **URL Discovery** - Traverses documentation graph to find all pages  
-- **Markdown Converter** - Transforms JSON to Context7-optimized markdown with cross-framework links
+- **Markdown Converter** - Transforms JSON to clean markdown with cross-framework links
 - **Hash Manager** - Tracks content changes for efficient incremental updates
 - **Concurrent Processing** - 10 parallel requests with 0.2s rate limiting
 
@@ -520,6 +520,6 @@ mypy scraper/
 
 ## Acknowledgments
 
-- Built for Context7 integration to enable natural language access to Apple's developer documentation
 - All documentation content is sourced from [Apple Developer Documentation](https://developer.apple.com/documentation/)
 - Each markdown file includes a link back to the original Apple documentation page
+- Built for local semantic search with complete data privacy

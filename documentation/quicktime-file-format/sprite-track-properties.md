@@ -1,14 +1,12 @@
 # Sprite track properties
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Define properties that apply to an entire sprite track.
 
 #### Overview
 
 > ❗ **Important**: Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
-
-Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
 
 In addition to defining properties for individual sprites, you can also define properties that apply to an entire sprite track. These properties may override default behavior or provide hints to the sprite media handler. The following sprite track properties are supported:
 
@@ -27,8 +25,6 @@ The sprite track properties and their corresponding data types are listed in the
 | `kSpriteTrackPropertyScaleSpritesToScaleWorld` | `1` | `Boolean` |
 
 > **Note**: When pasting portions of two different tracks together, the Movie Toolbox checks to see that all sprite track properties match. If, in fact, they do match, the paste results in a single sprite track instead of two.
-
-When pasting portions of two different tracks together, the Movie Toolbox checks to see that all sprite track properties match. If, in fact, they do match, the paste results in a single sprite track instead of two.
 
 ## See Also
 

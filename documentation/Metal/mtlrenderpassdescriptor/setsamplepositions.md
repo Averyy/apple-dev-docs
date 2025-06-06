@@ -27,8 +27,6 @@ If the length of the array is `0`, the GPU uses the default sample positions for
 
 > **Note**:  Call the [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method to determine whether the device object supports a specific sample count.
 
- Call the [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method to determine whether the device object supports a specific sample count.
-
 ## Parameters
 
 - `positions`: An array of programmable sample positions for the render pass. The number of programmable sample positions must match the render pass sample count you must specify an empty array.

@@ -1,6 +1,6 @@
 # Configuring and displaying symbol images in your UI
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
 
@@ -163,8 +163,6 @@ SF Symbols defines design variants — such as outline, fill, slash, and enclose
 
 > **Note**:  If a variant doesn’t exist for a symbol, the system uses the base symbol. For example, tab bars in iOS default to using a fill variant, so choosing a symbol without a fill variant uses the original symbol.
 
- If a variant doesn’t exist for a symbol, the system uses the base symbol. For example, tab bars in iOS default to using a fill variant, so choosing a symbol without a fill variant uses the original symbol.
-
 In SwiftUI, you use the modifier `symbolVariant(_:)` to apply a variant. Search the SF Symbols app to find the variants the multiply symbol supports, such as `circle`, `circle.fill`, `square`, and `square.fill`.
 
 ```swift
@@ -222,4 +220,4 @@ if #available(iOS 13.0, *) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/configuring-and-displaying-symbol-images-in-your-ui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/configuring-and-displaying-symbol-images-in-your-ui)*

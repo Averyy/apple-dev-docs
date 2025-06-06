@@ -1,6 +1,6 @@
 # defaultToSpeaker
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: property
 
 An option that determines whether audio from the session defaults to the built-in speaker instead of the receiver.
@@ -26,8 +26,6 @@ When using this option, the system doesn’t honor user gestures. For example, p
 In the case of using a USB input-only accessory, audio input comes from the accessory, and the system routes audio to the headphones, if attached, or to the speaker if the headphones aren’t plugged in. The use case is to route audio to the speaker instead of the receiver in cases where the audio normally goes to the receiver.
 
 > **Note**:  Route changes and interruptions don’t reset this override. Only changing the audio session category resets this option.
-
- Route changes and interruptions don’t reset this override. Only changing the audio session category resets this option.
 
 ## See Also
 

@@ -12,8 +12,6 @@ Use the transaction manager to change settings and initiate test conditions, ins
 
 > **Note**: You need to set up StoreKit in Xcode before you can use the transaction manager for testing. For more information, see [`Setting up StoreKit Testing in Xcode`](setting-up-storekit-testing-in-xcode.md).
 
-You need to set up StoreKit in Xcode before you can use the transaction manager for testing. For more information, see [`Setting up StoreKit Testing in Xcode`](setting-up-storekit-testing-in-xcode.md).
-
 ##### Change Settings and Initiate Test Conditions
 
 Select your StoreKit configuration file in the Project navigator and choose Editor to change the following settings:
@@ -70,8 +68,6 @@ Making in-app purchases isn’t the only way people can buy content for you app 
 
 > **Note**: To send a purchase intent, your app needs to implement the [`PurchaseIntent`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/purchaseintent) API.
 
-To send a purchase intent, your app needs to implement the [`PurchaseIntent`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/purchaseintent) API.
-
 This action of sending the purchase from the App Store to your app is called a purchase intent. And you can test this interaction in the transaction manager as follows:
 
 1. Click the plus sign to create a new purchase.
@@ -91,4 +87,4 @@ Once the customer confirms the purchase on their device, the purchase completes.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code)*

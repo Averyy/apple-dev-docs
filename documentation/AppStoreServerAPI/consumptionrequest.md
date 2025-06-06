@@ -1,6 +1,6 @@
 # ConsumptionRequest
 
-**Framework**: App Store Server API  
+**Framework**: Appstoreserverapi  
 **Kind**: dictionary
 
 The request body containing consumption information.
@@ -25,8 +25,6 @@ Use `ConsumptionRequest` to provide information about the customer’s consumabl
 To create a valid request and avoid an `HTTP 400 Bad Request` error, [`ConsumptionRequest`](consumptionrequest.md) must contain all the required fields with proper data types and valid values. However, you can choose whether or not to provide information for most fields. Most fields have a valid option if you choose not to provide the information.
 
 > **Note**:  Use the field value for , where available, if you choose not to provide information.
-
- Use the field value for , where available, if you choose not to provide information.
 
 For example, if you choose not to provide information for the [`accountTenure`](consumptionrequest/accounttenure.md) field, set [`accountTenure`](consumptionrequest/accounttenure.md) to `0`. If you choose not to provide information for the [`appAccountToken`](consumptionrequest/appaccounttoken.md) field, set its value to an empty string. Refer to each field’s documentation for the list of valid values, including the undeclared value where available.
 
@@ -68,4 +66,4 @@ The App Store server rejects requests that have a [`customerConsented`](consumpt
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/consumptionrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/consumptionrequest)*

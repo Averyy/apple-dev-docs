@@ -1,6 +1,6 @@
 # update(using:)
 
-**Framework**: ActivityKit  
+**Framework**: Activitykit  
 **Kind**: method
 
 Updates the dynamic content of the Live Activity.
@@ -20,8 +20,6 @@ func update(using contentState: Activity<Attributes>.ContentState) async
 Use this function to update the Live Activity while your app is in the foreground or while it’s in the background — for example, by using [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks).
 
 > **Note**: The system ignores attempts to update a Live Activity that ended.
-
-The system ignores attempts to update a Live Activity that ended.
 
 ## Parameters
 

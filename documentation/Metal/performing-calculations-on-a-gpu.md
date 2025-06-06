@@ -127,8 +127,6 @@ When you create a pipeline state object, the device object finishes compiling th
 
 > **Note**: All of the objects returned by Metal in the code you’ve seen so far are returned as objects that conform to protocols. Metal defines most GPU-specific objects using protocols to abstract away the underlying implementation classes, which may vary for different GPUs. Metal defines GPU-independent objects using classes. The reference documentation for any given Metal protocol make it clear whether you can implement that protocol in your app.
 
-All of the objects returned by Metal in the code you’ve seen so far are returned as objects that conform to protocols. Metal defines most GPU-specific objects using protocols to abstract away the underlying implementation classes, which may vary for different GPUs. Metal defines GPU-independent objects using classes. The reference documentation for any given Metal protocol make it clear whether you can implement that protocol in your app.
-
 ##### Create a Command Queue
 
 To send work to the GPU, you need a command queue. Metal uses command queues to schedule commands. Create a command queue by asking the [`MTLDevice`](mtldevice.md) for one.
@@ -305,4 +303,4 @@ After the command buffer completes, the GPU’s calculations are stored in the o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/performing-calculations-on-a-gpu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/performing-calculations-on-a-gpu)*

@@ -35,8 +35,6 @@ print(numbers)
 
 > **Note**: O(), where  is the length of `newElements`.
 
-O(), where  is the length of `newElements`.
-
 
 ---
 

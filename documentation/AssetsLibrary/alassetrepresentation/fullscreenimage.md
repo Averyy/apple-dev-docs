@@ -1,6 +1,6 @@
 # fullScreenImage()
 
-**Framework**: Assets Library  
+**Framework**: Assetslibrary  
 **Kind**: method
 
 Returns a CGImage of the representation that is appropriate for displaying full screen.
@@ -27,8 +27,6 @@ The dimensions of the image are dependent on the device your application is runn
 In iOS 5 and later, this method returns a fully cropped, rotated, and adjusted image—exactly as a user would see in Photos or in the image picker.
 
 > **Note**:  In iOS 8 and later, use the Photos framework to access different versions and sizes of a photo asset. See [`PHImageManager`](https://developer.apple.com/documentation/Photos/PHImageManager).
-
- In iOS 8 and later, use the Photos framework to access different versions and sizes of a photo asset. See [`PHImageManager`](https://developer.apple.com/documentation/Photos/PHImageManager).
 
 ## See Also
 

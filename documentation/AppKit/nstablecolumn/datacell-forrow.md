@@ -1,6 +1,6 @@
 # dataCell(forRow:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Returns the cell object used to display values in the specified row of the table column.
@@ -28,8 +28,6 @@ To enable per-row customization of the cell used by the table column, you can ov
 Subclasses should be prepared for this method to be called with `row` equal to –1 in cases where no actual row is involved but the table view needs to get some generic cell information.
 
 > **Note**:  This method is only valid for cell-based table views.
-
- This method is only valid for cell-based table views.
 
 ## Parameters
 

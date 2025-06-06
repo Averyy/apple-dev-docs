@@ -1,6 +1,6 @@
 # fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)
 
-**Framework**: File Provider  
+**Framework**: Fileprovider  
 **Kind**: method  
 **Required**: Yes
 
@@ -44,8 +44,6 @@ By default, the system calls the [`fetchPartialContents(for:version:request:mini
 You can control concurrent requests by setting the [`NSExtensionFileProviderDownloadPipelineDepth`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionFileProviderDownloadPipelineDepth) key in your extension’s `Info.plist` file. Set the value to the number of concurrent downloads the system can create per domain. This value must be between 1 and 128.
 
 > **Note**:  You must set the [`NSExtensionFileProviderDownloadPipelineDepth`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionFileProviderDownloadPipelineDepth) key for each domain. The setting affects all requests for files in the specified domain.
-
- You must set the [`NSExtensionFileProviderDownloadPipelineDepth`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionFileProviderDownloadPipelineDepth) key for each domain. The setting affects all requests for files in the specified domain.
 
 ##### Managing File Ownership
 

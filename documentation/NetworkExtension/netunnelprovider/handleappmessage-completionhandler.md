@@ -1,6 +1,6 @@
 # handleAppMessage(_:completionHandler:)
 
-**Framework**: Network Extension  
+**Framework**: Networkextension  
 **Kind**: method
 
 Handle messages sent by the tunnel provider extension’s containing app.
@@ -24,8 +24,6 @@ func handleAppMessage(_ messageData: Data) async -> Data?
 Use this method to communicate information between the Tunnel Provider and the Tunnel Provider’s containing app.
 
 > **Note**:  The Tunnel Provider’s containing app may not always be running at the same time as the Tunnel Provider extension. For example, the Tunnel Provider extension may have been started manually from the system’s network settings app or via Connect On Demand. Therefore, you should not rely on this communication channel with the containing app for basic Tunnel Provider operation (start, stop, etc.).
-
- The Tunnel Provider’s containing app may not always be running at the same time as the Tunnel Provider extension. For example, the Tunnel Provider extension may have been started manually from the system’s network settings app or via Connect On Demand. Therefore, you should not rely on this communication channel with the containing app for basic Tunnel Provider operation (start, stop, etc.).
 
 ## Parameters
 

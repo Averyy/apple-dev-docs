@@ -42,8 +42,6 @@ let c: [String: Int] = data.compactMapValues { str in Int(str) }
 
 > **Note**: O( + ), where  is the length of the original dictionary and  is the length of the resulting dictionary.
 
-O( + ), where  is the length of the original dictionary and  is the length of the resulting dictionary.
-
 ## Parameters
 
 - `transform`: A closure that transforms a value.    accepts each value of the dictionary as its parameter and returns an   optional transformed value of the same or of a different type.

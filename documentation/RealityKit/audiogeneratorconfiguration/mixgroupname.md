@@ -1,6 +1,6 @@
 # mixGroupName
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 An arbitrary name that assigns an audio resource to an audio mix group.
@@ -23,8 +23,6 @@ var mixGroupName: String?
 See [`AudioMixGroup`](audiomixgroup.md) and [`AudioMixGroupsComponent`](audiomixgroupscomponent.md) for more information.
 
 > **Note**: The mix group name needs to match a mix group component in the same scene.
-
-The mix group name needs to match a mix group component in the same scene.
 
 
 ---

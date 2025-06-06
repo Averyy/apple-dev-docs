@@ -1,6 +1,6 @@
 # HKCategoryValueSleepAnalysis
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: enum
 
 Categories that represent the result of a sleep analysis.
@@ -43,8 +43,6 @@ Each sleep analysis sample can have only one value. To track both the amount of 
 One set of samples tracks the amount of time the user spent in bed. Then, you can partition the in-bed time into a more-detailed set of samples. These detailed samples show when the user was awake, in core sleep, in deep sleep, or in rapid eye movement (REM) sleep. The detailed samples overlap the in-bed sample, but they don’t overlap each other.
 
 > **Note**:  Samples recorded by Apple Watch only include awake samples that occur between two sleep samples. When reading sleep samples from HealthKit, there might not be any detailed samples that correspond to the beginning or ending of an in-bed sample.
-
- Samples recorded by Apple Watch only include awake samples that occur between two sleep samples. When reading sleep samples from HealthKit, there might not be any detailed samples that correspond to the beginning or ending of an in-bed sample.
 
 By comparing the start and end times of these samples, apps can calculate secondary statistics. For example: the amount of time it took for the user to fall asleep, the percentage of sleep time spent in deep sleep, the number of times the user woke while in bed, and the total amount of time spent both in bed and asleep.
 
@@ -120,4 +118,4 @@ By comparing the start and end times of these samples, apps can calculate second
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkcategoryvaluesleepanalysis)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkcategoryvaluesleepanalysis)*

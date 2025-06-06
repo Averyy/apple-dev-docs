@@ -1,6 +1,6 @@
 # Testing and validating ad impression signatures and postbacks for SKAdNetwork
 
-**Framework**: StoreKit Test
+**Framework**: Storekittest
 
 Validate your ad impressions and test your postbacks by creating unit tests using the StoreKit Test framework.
 
@@ -58,8 +58,6 @@ In the `testImpressionParametersValidity` method, the unit test creates a dictio
 
 > **Note**: For signature verification to succeed, provide the validate impression methods with the public key of the key pair used to generate the cryptographic signature for the ad impression.
 
-For signature verification to succeed, provide the validate impression methods with the public key of the key pair used to generate the cryptographic signature for the ad impression.
-
 ##### Create the Test Postbacks
 
 The unit test creates three winning postbacks in the `testAddingPostbacks` method using the [`SKAdTestPostback`](skadtestpostback.md) class. The fields of a postback are specific to each version of the [`SKAdNetwork`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/skadnetwork) API. This class provides an initializer that specifies the postback fields and the `SKAdNetwork` API version.
@@ -109,8 +107,6 @@ The unit test sends the postbacks with updated conversion values to the network 
 
 > ❗ **Important**: Before attempting to send postbacks using the `flushPostbacks` method, check that the specified test server is running and accepting connections.
 
-Before attempting to send postbacks using the `flushPostbacks` method, check that the specified test server is running and accepting connections.
-
 After sending the test postbacks, the unit test waits for a response from the server. The server responds with one [`SKAdTestPostbackResponse`](skadtestpostbackresponse.md) instance for each test postback. The response contains information about the success or failure of the postback, the error details, and the HTTP response the server received, if any.
 
 In the `testSendingPostback()` method, the unit test checks the response for the success or failure flag and the error object. The unit test passes only if it receives a success signal in combination with a `nil` error. Calling the `flushPostbacks` method removes the test postbacks from the test session.
@@ -144,4 +140,4 @@ testSession.flushPostbacks { responses, error in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekittest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKitTest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork)*

@@ -1,6 +1,6 @@
 # BlockStorageDeviceDriverKit
 
-**Framework**: BlockStorageDeviceDriverKit  
+**Framework**: Blockstoragedevicedriverkit  
 **Kind**: module
 
 Develop drivers for custom storage devices that communicate with the driver using custom protocols.
@@ -15,8 +15,6 @@ Use `BlockStorageDeviceDriverKit` in conjunction with frameworks like [`PCIDrive
 Develop your driver by subclassing [`IOUserBlockStorageDevice`](iouserblockstoragedevice.md) and overriding all methods the framework declares as C++ pure virtual. Then package your driver in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade the driver on the user’s Mac.
 
 > **Note**:  BlockStorageDeviceDriverKit is available on macOS.
-
- BlockStorageDeviceDriverKit is available on macOS.
 
 ## Topics
 

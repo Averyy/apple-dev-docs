@@ -42,8 +42,6 @@ Detecting liveness of such remote actors shall be offered / by transport librari
 
 > **Note**: When unable to confirm if the `id` is correct, the resolved actor does not match the expected `actorType`, or any other internal validation error within the actor system’s resolve process occurs.
 
-When unable to confirm if the `id` is correct, the resolved actor does not match the expected `actorType`, or any other internal validation error within the actor system’s resolve process occurs.
-
 ## Parameters
 
 - `id`: The   to resolve an actor reference for

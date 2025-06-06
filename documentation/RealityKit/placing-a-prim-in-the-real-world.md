@@ -1,6 +1,6 @@
 # Placing a prim in the real world
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Anchor a prim to a real-world object that the runtime recognizes in the physical environment.
 
@@ -11,8 +11,6 @@ When the runtime detects real-world landmarks such as surfaces, images, and face
 Use this schema to attach prims to anchors that the runtime can recognize and track in the physical environment. When you assign the prim an anchor type, the runtime places the prim on the first anchor of that type that it sees in the AR experience.
 
 > **Note**:  When a RealityKit app loads an anchored prim with `loadAnchor(named:in:)`, RealityKit instantiates an [`AnchorEntity`](AnchorEntity.md) with the [`AnchoringComponent.Target`](AnchoringComponent/Target-swift.enum.md) set to the anchor type specified by the prim, such as a plane, image, or face.
-
- When a RealityKit app loads an anchored prim with `loadAnchor(named:in:)`, RealityKit instantiates an [`AnchorEntity`](AnchorEntity.md) with the [`AnchoringComponent.Target`](AnchoringComponent/Target-swift.enum.md) set to the anchor type specified by the prim, such as a plane, image, or face.
 
 ##### Place a Prim on a Surface Image or Face
 
@@ -72,4 +70,4 @@ def Cube "FaceAnchoredCube" (
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/placing-a-prim-in-the-real-world)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/placing-a-prim-in-the-real-world)*

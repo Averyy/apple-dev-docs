@@ -1,6 +1,6 @@
 # setAction(_:forSegmentAt:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Sets the action for the segment at the index you specify.
@@ -24,8 +24,6 @@ func setAction(_ action: UIAction, forSegmentAt segment: Int)
 Segments prefer images over titles when the action contains both. Selecting a segment invokes the action’s [`UIActionHandler`](uiactionhandler.md), as well as handlers for the [`valueChanged`](uicontrol/event/valuechanged.md) and [`primaryActionTriggered`](uicontrol/event/primaryactiontriggered.md) control events.
 
 > **Note**:  This method asserts an error if the action’s [`UIAction.Identifier`](uiaction/identifier-swift.struct.md) doesn’t match the action of the existing segment at this index, or isn’t unique within all actions associated with the segmented control.
-
- This method asserts an error if the action’s [`UIAction.Identifier`](uiaction/identifier-swift.struct.md) doesn’t match the action of the existing segment at this index, or isn’t unique within all actions associated with the segmented control.
 
 ## Parameters
 

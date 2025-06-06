@@ -28,8 +28,6 @@ In addition to the methods described in this protocol, an `NSURLConnection` dele
 
 > **Note**:  If you are using `NSURLConnection` directly, your delegate class should instead implement the methods defined in the [`NSURLConnectionDataDelegate`](nsurlconnectiondatadelegate.md) protocol.
 
- If you are using `NSURLConnection` directly, your delegate class should instead implement the methods defined in the [`NSURLConnectionDataDelegate`](nsurlconnectiondatadelegate.md) protocol.
-
 ## Topics
 
 ### Managing Downloads of URL Assets
@@ -58,4 +56,4 @@ In addition to the methods described in this protocol, an `NSURLConnection` dele
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsurlconnectiondownloaddelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsurlconnectiondownloaddelegate)*

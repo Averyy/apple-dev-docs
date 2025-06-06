@@ -1,6 +1,6 @@
 # UILaunchScreen
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: dictionary
 
 The user interface to show while an app launches.
@@ -14,8 +14,6 @@ The user interface to show while an app launches.
 You use this key to define the launch screen that the system displays while your app launches. If you need to provide different launch screens in response to being launched by different URL schemes, use [`UILaunchScreens`](information-property-list/uilaunchscreens.md) instead.
 
 > **Note**:  Use this key to configure the user interface during app launch in a way that doesn’t rely on storyboards. If you prefer to use storyboards, use [`UILaunchStoryboardName`](information-property-list/uilaunchstoryboardname.md) instead.
-
- Use this key to configure the user interface during app launch in a way that doesn’t rely on storyboards. If you prefer to use storyboards, use [`UILaunchStoryboardName`](information-property-list/uilaunchstoryboardname.md) instead.
 
 ## Topics
 

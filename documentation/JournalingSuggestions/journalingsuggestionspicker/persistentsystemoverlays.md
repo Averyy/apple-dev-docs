@@ -1,6 +1,6 @@
 # persistentSystemOverlays(_:)
 
-**Framework**: Journaling Suggestions  
+**Framework**: Journalingsuggestions  
 **Kind**: method
 
 Sets the preferred visibility of the non-transient system views overlaying the app.
@@ -34,8 +34,6 @@ struct ImmersiveView: View {
 ```
 
 > **Note**: You can indicate a preference with this modifier, but the system might or might not be able to honor that preference.
-
-You can indicate a preference with this modifier, but the system might or might not be able to honor that preference.
 
 Affected non-transient system views can include, but are not limited to:
 

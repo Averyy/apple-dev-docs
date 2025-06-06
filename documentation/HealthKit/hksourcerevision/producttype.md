@@ -1,6 +1,6 @@
 # productType
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: property
 
 A string that identifies the device used to save a sample.
@@ -24,8 +24,6 @@ var productType: String? { get }
 For samples saved on Apple Watch Series 2, HealthKit sets the product type property to `watch2,4`.
 
 > **Note**:  Samples saved using older versions of HealthKit may have a `nil`-valued product type, indicating that the product type is unknown.
-
- Samples saved using older versions of HealthKit may have a `nil`-valued product type, indicating that the product type is unknown.
 
 ## Topics
 

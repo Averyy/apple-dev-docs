@@ -49,8 +49,6 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `i`: A valid index of the array.

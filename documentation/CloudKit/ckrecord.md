@@ -1,6 +1,6 @@
 # CKRecord
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 A collection of key-value pairs that store your app’s data.
@@ -33,8 +33,6 @@ An important step in using CloudKit is defining the record types your app suppor
 
 > **Note**:  The ability to add new keys is only possible during development. When you deploy to a production environment, the server returns an error if you try to specify an unknown record type or try to save a record that contains unknown keys.
 
- The ability to add new keys is only possible during development. When you deploy to a production environment, the server returns an error if you try to specify an unknown record type or try to save a record that contains unknown keys.
-
 Although records behave like dictionaries, there are limitations to the types of values you can assign to keys. The following are the object types that the `CKRecord` class supports. Attempting to specify objects of any other type results in failure. Fields of all types are searchable unless otherwise noted.
 
 ##### Supported Data Types
@@ -42,8 +40,6 @@ Although records behave like dictionaries, there are limitations to the types of
 `CKRecord` fields support the following data types:
 
 > ❗ **Important**:  To ensure the speed of fetching and saving records, the data that a record stores must not exceed 1 MB. Assets don’t count toward this limit, but all other data types do.
-
- To ensure the speed of fetching and saving records, the data that a record stores must not exceed 1 MB. Assets don’t count toward this limit, but all other data types do.
 
 ##### Defining Records
 
@@ -178,4 +174,4 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckrecord)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckrecord)*

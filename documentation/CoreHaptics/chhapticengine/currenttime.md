@@ -1,6 +1,6 @@
 # currentTime
 
-**Framework**: Core Haptics  
+**Framework**: Corehaptics  
 **Kind**: property
 
 The absolute time, in seconds, to use for scheduling haptic and audio events.
@@ -25,8 +25,6 @@ This time applies to all haptic and audio events sent to and managed by the Core
 
 > **Note**:  The Core Haptics engine time doesn’t correlate to time used in media playback classes from other frameworks, such as [`AVAudioPlayer`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer).
 
- The Core Haptics engine time doesn’t correlate to time used in media playback classes from other frameworks, such as [`AVAudioPlayer`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer).
-
 ## See Also
 
 - [var CHHapticTimeImmediate: TimeInterval](chhaptictimeimmediate.md)
@@ -35,4 +33,4 @@ This time applies to all haptic and audio events sent to and managed by the Core
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/chhapticengine/currenttime)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/chhapticengine/currenttime)*

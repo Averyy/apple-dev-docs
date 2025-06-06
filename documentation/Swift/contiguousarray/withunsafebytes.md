@@ -41,8 +41,6 @@ numbers.withUnsafeBytes {
 
 > **Note**: This example shows the behavior on a little-endian platform.
 
-This example shows the behavior on a little-endian platform.
-
 ## Parameters
 
 - `body`: A closure with an   parameter   that points to the contiguous storage for the array.   If no such storage exists, it is created. If   has a return value, that value is also   used as the return value for the   method. The   argument is valid only for the duration of the closure’s execution.

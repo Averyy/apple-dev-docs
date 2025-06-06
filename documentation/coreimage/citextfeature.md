@@ -1,6 +1,6 @@
 # CITextFeature
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: cl
 
 Information about a region likely to contain text detected in a still or video image.
@@ -22,8 +22,6 @@ class CITextFeature : CIFeature
 #### Overview
 
 > **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNRecognizeTextRequest`](https://developer.apple.com/documentation/vision/vnrecognizetextrequest).
-
-In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNRecognizeTextRequest`](https://developer.apple.com/documentation/vision/vnrecognizetextrequest).
 
 The properties of a [`CITextFeature`](citextfeature.md) object identify its corners in image coordinates. Use this class to locate areas of text within an image — for example, to extract and perspective-correct those portions of the image before performing your own optical character recognition or other processing tasks.
 

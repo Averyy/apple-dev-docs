@@ -1,6 +1,6 @@
 # showsExpansionTextWhenTruncated
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A Boolean value that determines whether the full text of the label displays when the pointer hovers over the truncated text.
@@ -26,8 +26,6 @@ A label may truncate text too long to fit in its container based on the value of
 ![An illustration showing three views extending horizontally. Each view displays an icon on the left, followed by title and subtitle labels on the right side of the view. The title appears above the subtitle. A line with an arrow at the end extends from the first view to the second view, and from the second view to the third view. The first view shows an arrow pointer positioned outside of the view. The second view shows the pointer positioned over truncated text in the subtitle label. The third view shows the expanded text as the pointer continues to hover over the subtitle label.](https://docs-assets.developer.apple.com/published/be842db59029dc8187d04688ca5acc58/media-3875433%402x.png)
 
 > **Note**:  Text expansion is available in iPhone and iPad apps running on a Mac with Apple silicon and in Mac apps built with [`Mac Catalyst`](mac-catalyst.md).
-
- Text expansion is available in iPhone and iPad apps running on a Mac with Apple silicon and in Mac apps built with [`Mac Catalyst`](mac-catalyst.md).
 
 ## See Also
 

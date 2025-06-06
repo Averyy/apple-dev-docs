@@ -1,6 +1,6 @@
 # path
 
-**Framework**: Model I/O  
+**Framework**: Modelio  
 **Kind**: property
 
 A path that identifies the object in an asset’s object hierarchy using object names.
@@ -25,8 +25,6 @@ Model I/O forms a path for each object in an asset’s object hierarchy by conca
 
 > **Note**:  When using an object’s name in a path, Model I/O converts all characters not in the set `[A-Z][a-z][0-9][:-_.]` to underscores.
 
- When using an object’s name in a path, Model I/O converts all characters not in the set `[A-Z][a-z][0-9][:-_.]` to underscores.
-
 For example, a mesh in an asset modeling a dining room scene might have the path `/meshes/table_anchor/chair1`, where “meshes” is one of the top-level children of the asset, “table anchor” is a [`MDLObject`](mdlobject.md) instance providing a transform inherited by several meshes, and “chair1” is the name of a [`MDLMesh`](mdlmesh.md) object.
 
 ## See Also
@@ -45,4 +43,4 @@ For example, a mesh in an asset modeling a dining room scene might have the path
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/modelio/mdlobject/path)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ModelIO/mdlobject/path)*

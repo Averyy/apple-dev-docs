@@ -29,8 +29,6 @@ The compression session creates this pixel buffer pool based on the compressor�
 
 > **Note**:  Clients can call this function once and retain the resulting pool, but the call is cheap enough that it’s ok to call it once per frame.  If a change of session properties causes the compressor’s pixel buffer attributes to change, it’s possible that this function might return a different pool.
 
- Clients can call this function once and retain the resulting pool, but the call is cheap enough that it’s ok to call it once per frame.  If a change of session properties causes the compressor’s pixel buffer attributes to change, it’s possible that this function might return a different pool.
-
 ## Parameters
 
 - `session`: The compression session.

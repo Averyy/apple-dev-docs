@@ -1,6 +1,6 @@
 # textFieldShouldEndEditing(_:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Asks the delegate whether to stop editing in the specified text field.
@@ -30,8 +30,6 @@ The text field calls this method when it is asked to resign the first responder 
 Normally, you would return [`true`](https://developer.apple.com/documentation/swift/true) from this method to allow the text field to resign the first responder status. You might return [`false`](https://developer.apple.com/documentation/swift/false), however, in cases where your delegate detects invalid contents in the text field. Returning [`false`](https://developer.apple.com/documentation/swift/false) prevents the user from switching to another control until the text field contains a valid value.
 
 > **Note**:  If you use this method to validate the contents of the text field, you might also want to use an overlay view to provide feedback to that effect. For example, you might display a small icon indicating the text is invalid. For more information about adding overlays to text fields, see the methods of [`UITextField`](uitextfield.md).
-
- If you use this method to validate the contents of the text field, you might also want to use an overlay view to provide feedback to that effect. For example, you might display a small icon indicating the text is invalid. For more information about adding overlays to text fields, see the methods of [`UITextField`](uitextfield.md).
 
 Be aware that this method provides only a recommendation about whether editing should end. Even if you return [`false`](https://developer.apple.com/documentation/swift/false), UIKit might still force an end to editing. For example, text fields always resign the first responder status when they are removed from their parent view or window.
 

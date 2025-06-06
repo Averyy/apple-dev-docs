@@ -26,8 +26,6 @@ If the component does not exist, nil is returned.
 
 > **Note**:  Zero length components are legal. For example, the URL string “scheme://:@/?#” has a zero length user, password, host, query and fragment; the URL strings “scheme:” and “” both have a zero length path.
 
- Zero length components are legal. For example, the URL string “scheme://:@/?#” has a zero length user, password, host, query and fragment; the URL strings “scheme:” and “” both have a zero length path.
-
 ## See Also
 
 - [var rangeOfFragment: Range<String.Index>?](urlcomponents/rangeoffragment.md)

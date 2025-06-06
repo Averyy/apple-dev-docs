@@ -1,6 +1,6 @@
 # Using Metal performance shaders to create custom postprocess effects
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Leverage the Metal Performance Shaders framework to create special rendering effects for your RealityKit scenes.
 
@@ -32,8 +32,6 @@ To create postprocess effects using image filters from the Metal Performance Sha
 
 > **Note**: The `compatibleTargetTexture` property referenced above is a derived property based on [`targetColorTexture`](arview/postprocesscontext/targetcolortexture.md). It ensures that the output texture uses the appropriate pixel format for the current device. For more information, see [`Checking the pixel format of a postprocess effect’s output texture`](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
 
-The `compatibleTargetTexture` property referenced above is a derived property based on [`targetColorTexture`](arview/postprocesscontext/targetcolortexture.md). It ensures that the output texture uses the appropriate pixel format for the current device. For more information, see [`Checking the pixel format of a postprocess effect’s output texture`](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
-
 ##### Register the Callback Function
 
 To apply the effect, register the function as the [`postProcess`](arview/rendercallbacks-swift.struct/postprocess.md) render callback for the [`ARView`](arview.md).
@@ -43,8 +41,6 @@ arView.renderCallbacks.postProcess = postEffectMPSGaussianBlur
 ```
 
 > **Note**: For more information on using Metal Performance Shader framework image filters to create postprocess effects, see the [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md) sample code project.
-
-For more information on using Metal Performance Shader framework image filters to create postprocess effects, see the [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md) sample code project.
 
 ## See Also
 
@@ -60,4 +56,4 @@ For more information on using Metal Performance Shader framework image filters t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/using-metal-performance-shaders-to-create-custom-postprocess-effects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/using-metal-performance-shaders-to-create-custom-postprocess-effects)*

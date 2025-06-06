@@ -1,6 +1,6 @@
 # visionOS(_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Configure the minimum deployment target version for the visionOS platform.
@@ -21,8 +21,6 @@ A `SupportedPlatform` instance.
 #### Discussion
 
 > **Note**: First available in PackageDescription 5.9
-
-First available in PackageDescription 5.9
 
 ## Parameters
 

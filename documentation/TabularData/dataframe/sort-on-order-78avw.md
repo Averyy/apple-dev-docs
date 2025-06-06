@@ -1,6 +1,6 @@
 # sort(on:_:order:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Arranges the rows of a data frame according to a column that you select by its name and type.
@@ -23,8 +23,6 @@ mutating func sort<T>(on columnName: String, _ type: T.Type, order: Order = .asc
 #### Discussion
 
 > **Note**: Elements with a value of `nil` are less than all non-`nil` values.
-
-Elements with a value of `nil` are less than all non-`nil` values.
 
 ## Parameters
 

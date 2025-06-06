@@ -27,8 +27,6 @@ To call your message handler from JavaScript, call the function `window.webkit.m
 
 > **Note**:  If you want to provide a response back to JavaScript, implement your message handler using the [`WKScriptMessageHandlerWithReply`](wkscriptmessagehandlerwithreply.md) protocol instead.
 
- If you want to provide a response back to JavaScript, implement your message handler using the [`WKScriptMessageHandlerWithReply`](wkscriptmessagehandlerwithreply.md) protocol instead.
-
 ## Topics
 
 ### Receiving Messages
@@ -64,4 +62,4 @@ To call your message handler from JavaScript, call the function `window.webkit.m
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/webkit/wkscriptmessagehandler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/wkscriptmessagehandler)*

@@ -19,8 +19,6 @@ There are four build targets in this project that represent the `InstallationToo
 
 > **Note**: The default deployment target is macOS 14. If you need to build for an earlier version of macOS, you need to change the deployment target as appropriate.
 
-The default deployment target is macOS 14. If you need to build for an earlier version of macOS, you need to change the deployment target as appropriate.
-
 ##### Configure the Sample Code Project
 
 You need to install the virtual machine, and `VM.bundle` needs exist before launching the sample app.
@@ -89,4 +87,4 @@ The system defers app termination until the [`saveMachineStateTo(url:completionH
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/running-macos-in-a-virtual-machine-on-apple-silicon)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/running-macos-in-a-virtual-machine-on-apple-silicon)*

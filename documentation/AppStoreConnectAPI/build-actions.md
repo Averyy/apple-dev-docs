@@ -1,6 +1,6 @@
 # Build Actions
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read information about actions you configured for an Xcode Cloud workflow and their related data such as artifacts, issues, or test results.
 
@@ -17,8 +17,6 @@ The `ciBuildActions` resource represents the actions Xcode Cloud performed when 
 To update a workflow’s actions, use the [`Workflows`](workflows.md) resource.
 
 > **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
-
- This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
 
@@ -59,4 +57,4 @@ To update a workflow’s actions, use the [`Workflows`](workflows.md) resource.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/build-actions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/build-actions)*

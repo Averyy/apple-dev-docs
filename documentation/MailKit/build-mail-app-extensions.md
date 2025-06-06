@@ -1,6 +1,6 @@
 # Build Mail App Extensions
 
-**Framework**: MailKit
+**Framework**: Mailkit
 
 Create app extensions that block content, perform message and composing actions, and help message security.
 
@@ -12,8 +12,6 @@ Create app extensions that block content, perform message and composing actions,
 
 > **Note**: This sample code project is associated with WWDC21 session [`10168: Build Mail App Extensions`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10168/).
 
-This sample code project is associated with WWDC21 session [`10168: Build Mail App Extensions`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10168/).
-
 ## See Also
 
 - [protocol MEExtension](meextension.md)
@@ -22,4 +20,4 @@ This sample code project is associated with WWDC21 session [`10168: Build Mail A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mailkit/build-mail-app-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MailKit/build-mail-app-extensions)*

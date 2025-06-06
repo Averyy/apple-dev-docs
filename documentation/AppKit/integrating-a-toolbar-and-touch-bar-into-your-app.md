@@ -1,6 +1,6 @@
 # Integrating a Toolbar and Touch Bar into Your App
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 Provide users quick access to your app’s features from a toolbar and corresponding Touch Bar.
 
@@ -202,8 +202,6 @@ Then, similar to adding toolbar items, the sample implements the [`NSTouchBarDel
 
 > **Note**: It’s possible to simulate a Touch Bar from Xcode by choosing Window > Show Touch Bar.
 
-It’s possible to simulate a Touch Bar from Xcode by choosing Window > Show Touch Bar.
-
 ```swift
 override func makeTouchBar() -> NSTouchBar? {
     let touchBar = NSTouchBar()
@@ -243,4 +241,4 @@ func applicationDidFinishLaunching(_ aNotification: Notification) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/integrating-a-toolbar-and-touch-bar-into-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/integrating-a-toolbar-and-touch-bar-into-your-app)*

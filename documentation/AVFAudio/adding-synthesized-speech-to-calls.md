@@ -1,6 +1,6 @@
 # Adding synthesized speech to calls
 
-**Framework**: AVFAudio
+**Framework**: Avfaudio
 
 Provide a more accessible experience by adding your app’s audio to a call.
 
@@ -90,8 +90,6 @@ When turned on during an active call, the system plays the app’s audio locally
 
 > **Note**: The `AVAudioSession/setPreferredMicrophoneInjectionMode(_:)` method uses the word  to indicate that an app can set its preference, but a person ultimately determines whether they allow the feature’s use.
 
-The `AVAudioSession/setPreferredMicrophoneInjectionMode(_:)` method uses the word  to indicate that an app can set its preference, but a person ultimately determines whether they allow the feature’s use.
-
 #### Monitor the Availability of Calls
 
 To determine whether a call can use this feature, the sample awaits notification of changes to the state of the audio session’s microphone injection capabilities:
@@ -127,4 +125,4 @@ When a call begins or ends, the system posts a notification of the change. The a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/adding-synthesized-speech-to-calls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/adding-synthesized-speech-to-calls)*

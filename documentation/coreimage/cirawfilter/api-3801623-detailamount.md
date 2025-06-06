@@ -1,6 +1,6 @@
 # detailAmount
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: instp
 
 A value that indicates the amount of detail enhancement to apply to the edges of the image.
@@ -24,8 +24,6 @@ var detailAmount: Float { get set }
 The value should be in the range of `0...3`. The default value varies by image. A value of `0` indicates no detail enhancement, and a value of `3` indicates maximum detail enhancement.
 
 > **Note**: A value of [`false`](https://developer.apple.com/documentation/swift/false) for [`isDetailSupported`](cirawfilter/3801624-isdetailsupported.md) indicates that the current image doesn’t support this adjustment.
-
-A value of [`false`](https://developer.apple.com/documentation/swift/false) for [`isDetailSupported`](cirawfilter/3801624-isdetailsupported.md) indicates that the current image doesn’t support this adjustment.
 
 ## See Also
 

@@ -35,8 +35,6 @@ MyEditorView()
 
 > **Note**: A fixed width does not prevent the user collapsing the inspector on macOS. See `View/interactiveDismissDisabled(_:)`.
 
-A fixed width does not prevent the user collapsing the inspector on macOS. See `View/interactiveDismissDisabled(_:)`.
-
 ## Parameters
 
 - `width`: The preferred fixed width for the inspector if   presented as a trailing column.

@@ -1,6 +1,6 @@
 # Refreshing and Maintaining Your App Using Background Tasks
 
-**Framework**: Background Tasks
+**Framework**: Backgroundtasks
 
 Use scheduled background tasks for refreshing your app content and for performing maintenance.
 
@@ -13,8 +13,6 @@ Use scheduled background tasks for refreshing your app content and for performin
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`707: Advances in App Background Execution`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/707/).
-
-This sample code project is associated with WWDC 2019 session [`707: Advances in App Background Execution`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/707/).
 
 This sample code project must be run on a physical device.
 
@@ -30,4 +28,4 @@ This sample code project must be run on a physical device.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/backgroundtasks/refreshing-and-maintaining-your-app-using-background-tasks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BackgroundTasks/refreshing-and-maintaining-your-app-using-background-tasks)*

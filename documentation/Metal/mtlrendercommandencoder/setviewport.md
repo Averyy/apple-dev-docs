@@ -28,8 +28,6 @@ The viewport’s [`originX`](mtlviewport/originx.md) and [`originY`](mtlviewport
 
 > **Note**:  You can change the render pass’s viewport configuration by calling this method again, or by calling the [`setViewports(_:)`](mtlrendercommandencoder/setviewports(_:).md) method.
 
- You can change the render pass’s viewport configuration by calling this method again, or by calling the [`setViewports(_:)`](mtlrendercommandencoder/setviewports(_:).md) method.
-
 ## Parameters
 
 - `viewport`: An   instance the command applies to the render pipeline for transformations and clipping.

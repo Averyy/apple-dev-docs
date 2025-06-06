@@ -1,6 +1,6 @@
 # compare(_:)
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: method
 
 Compares two values after converting them to the same units.
@@ -28,8 +28,6 @@ func compare(_ quantity: HKQuantity) -> ComparisonResult
 Returns whether the quantity argument is less than, equal to, or greater than the current quantity. This method automatically converts the quantities into the same units before comparing the values. You just need to ensure that the quantities have compatible units.
 
 > **Note**:  Converting a value to a different unit can introduce floating point errors. Values that should be equal may appear unequal due to these floating point errors.
-
- Converting a value to a different unit can introduce floating point errors. Values that should be equal may appear unequal due to these floating point errors.
 
 In most cases, the compatible units are clear from context. To see the unit types associated with different quantity sample types, see the type identifiers in [`HKQuantityTypeIdentifier`](hkquantitytypeidentifier.md).
 

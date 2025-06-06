@@ -1,6 +1,6 @@
 # endImpression(_:completionHandler:)
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: method
 
 Indicates that your app is no longer presenting a view-through ad to the user.
@@ -27,8 +27,6 @@ class func endImpression(_ impression: SKAdImpression) async throws
 Call this method when you end the presentation of a view-through ad and it’s no longer visible to the user. To help ensure it’s a valid impression, StoreKit only records the impression if the ad displays for a minimum amount of time. That minimum is 2 seconds on devices running iOS 15.4 and iPadOS 15.4 and later, and 3 seconds on devices running earlier versions of iOS and iPadOS. If the app displays the ad for fewer than the minimum number of seconds, StoreKit doesn’t record the ad impression for attribution.
 
 > **Note**:  To ensure that SKAdNetwork records the impression, call [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:completionhandler:).md) after the impression ends, regardless of whether [`startImpression(_:completionHandler:)`](skadnetwork/startimpression(_:completionhandler:).md) returns an error in the completion handler.
-
- To ensure that SKAdNetwork records the impression, call [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:completionhandler:).md) after the impression ends, regardless of whether [`startImpression(_:completionHandler:)`](skadnetwork/startimpression(_:completionhandler:).md) returns an error in the completion handler.
 
 StoreKit records a maximum of 15 view-through ad impressions per source app for various products before discarding the oldest-recorded impression.
 

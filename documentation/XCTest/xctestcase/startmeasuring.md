@@ -17,8 +17,6 @@ Call this method to start the measurement of metrics by the [`measureMetrics(_:a
 
 > **Note**:  You must call [`measureMetrics(_:automaticallyStartMeasuring:for:)`](xctestcase/measuremetrics(_:automaticallystartmeasuring:for:).md) with an `automaticallyStartMeasuring` value of [`false`](https://developer.apple.com/documentation/swift/false) in order to set a custom start point with [`startMeasuring()`](xctestcase/startmeasuring().md).
 
- You must call [`measureMetrics(_:automaticallyStartMeasuring:for:)`](xctestcase/measuremetrics(_:automaticallystartmeasuring:for:).md) with an `automaticallyStartMeasuring` value of [`false`](https://developer.apple.com/documentation/swift/false) in order to set a custom start point with [`startMeasuring()`](xctestcase/startmeasuring().md).
-
 ## See Also
 
 - [func measure(() -> Void)](xctestcase/measure(_:).md)

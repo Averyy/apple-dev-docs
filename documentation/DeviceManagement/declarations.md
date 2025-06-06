@@ -1,6 +1,6 @@
 # Declarations
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: dictionary
 
 The payload to apply a set of declaration to the device through the Settings app.
@@ -26,8 +26,6 @@ object Declarations
 Specify `com.apple.declarations` as the payload type.
 
 > **Note**:  Install this profile manually, not through an MDM server, which enables manual installations of declarations when an MDM enrollment isn’t present.
-
- Install this profile manually, not through an MDM server, which enables manual installations of declarations when an MDM enrollment isn’t present.
 
 ##### Profile Availability
 
@@ -126,4 +124,4 @@ Specify `com.apple.declarations` as the payload type.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/declarations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/declarations)*

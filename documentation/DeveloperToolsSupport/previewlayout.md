@@ -1,6 +1,6 @@
 # PreviewLayout
 
-**Framework**: DeveloperToolsSupport  
+**Framework**: Developertoolssupport  
 **Kind**: enum
 
 A size constraint for a preview.
@@ -35,8 +35,6 @@ struct CircleImage_Previews: PreviewProvider {
 
 > **Note**: When you migrate away from preview providers and to preview macros, you specify layout using one of the [`PreviewTrait`](previewtrait.md) layout values with a macro that takes traits, like [`Preview(_:traits:_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:traits:_:body:)).
 
-When you migrate away from preview providers and to preview macros, you specify layout using one of the [`PreviewTrait`](previewtrait.md) layout values with a macro that takes traits, like [`Preview(_:traits:_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:traits:_:body:)).
-
 ## Topics
 
 ### Enumeration Cases
@@ -66,4 +64,4 @@ When you migrate away from preview providers and to preview macros, you specify 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/developertoolssupport/previewlayout)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeveloperToolsSupport/previewlayout)*

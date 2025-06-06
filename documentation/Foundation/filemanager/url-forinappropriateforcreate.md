@@ -30,21 +30,13 @@ You typically use this method to locate one of the standard system directories, 
 
 > ❗ **Important**:  Passing a directory and domain pair that makes no sense (for example [`FileManager.SearchPathDirectory.desktopDirectory`](filemanager/searchpathdirectory/desktopdirectory.md) and [`networkDomainMask`](filemanager/searchpathdomainmask/networkdomainmask.md)) raises an exception.
 
- Passing a directory and domain pair that makes no sense (for example [`FileManager.SearchPathDirectory.desktopDirectory`](filemanager/searchpathdirectory/desktopdirectory.md) and [`networkDomainMask`](filemanager/searchpathdomainmask/networkdomainmask.md)) raises an exception.
-
 You can use this method to create a new temporary directory. To do so, specify [`FileManager.SearchPathDirectory.itemReplacementDirectory`](filemanager/searchpathdirectory/itemreplacementdirectory.md) for the `directory` parameter, [`userDomainMask`](filemanager/searchpathdomainmask/userdomainmask.md) for the `domain` parameter, and a URL for the `url` parameter which determines the volume of the returned URL.
 
 For example, the following code results in a new temporary directory with a path in the form of `/private/var/folders/d0/h37cw8ns3h1bfr_2gnwq2yyc0000gn/T/TemporaryItems/Untitled/`:
 
 > ❗ **Important**:  If you use this method to create a temporary directory, you should not rely on the existence of that temporary directory after the app is exited. It is recommended that you remove any temporary directories that are created after they’re no longer needed.
 
- If you use this method to create a temporary directory, you should not rely on the existence of that temporary directory after the app is exited. It is recommended that you remove any temporary directories that are created after they’re no longer needed.
-
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

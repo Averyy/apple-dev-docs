@@ -33,8 +33,6 @@ Consider the following to reduce the size of your app’s update package:
 
 > **Note**: Don’t rely on the creation and modification dates of files in your application bundle. The operating system updates your app using the update package, and updates files only if their content changes. It doesn’t update files because of changes to metadata; for example, the creation and modification dates.
 
-Don’t rely on the creation and modification dates of files in your application bundle. The operating system updates your app using the update package, and updates files only if their content changes. It doesn’t update files because of changes to metadata; for example, the creation and modification dates.
-
 ##### Adopt on Demand Resources
 
 Analyze all of your app’s assets and determine which resources it uses infrequently. Group the infrequently used resources into . When you upload your app to App Store Connect, asset packs don’t become part of your app’s initial download or app updates. Instead, the app can download them separately as needed. See the [`On-Demand Resources Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/index.html#//apple_ref/doc/uid/TP40015083) for more information.
@@ -59,4 +57,4 @@ To learn more about app thinning, see [`Distribution Options`](https://developer
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/doing-advanced-optimization-to-further-reduce-your-app-s-size)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/doing-advanced-optimization-to-further-reduce-your-app-s-size)*

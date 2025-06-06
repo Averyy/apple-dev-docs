@@ -48,8 +48,6 @@ To reset the viewpoint and viewing angle for a visionOS simulator, choose the Re
 
 > **Note**: To direct pointer and keyboard input to the simulated device, select the Capture Pointer or Capture Keyboard buttons in the toolbar at the top-right of a visionOS simulator window. These buttons bypass the use of pointer and keyboard input for the host Mac and prevent them from controlling the viewpoint in a visionOS simulator window. To re-direct the input to the host Mac, press the Esc (Escape) key.
 
-To direct pointer and keyboard input to the simulated device, select the Capture Pointer or Capture Keyboard buttons in the toolbar at the top-right of a visionOS simulator window. These buttons bypass the use of pointer and keyboard input for the host Mac and prevent them from controlling the viewpoint in a visionOS simulator window. To re-direct the input to the host Mac, press the Esc (Escape) key.
-
 When moving with a trackpad or Magic Mouse, Simulator respects the natural scrolling setting on macOS.
 
 You can also use a game controller to control your movement. Use the left stick to move left, right, forward or back. Use R2 and L2 to move up and down. Use the right stick on a game controller to pan around the space.
@@ -73,8 +71,6 @@ Launch and test your app’s SharePlay experiences in the simulator using FaceTi
 
 > **Note**: Simulator supports SharePlay experiences in Xcode 16 and later.
 
-Simulator supports SharePlay experiences in Xcode 16 and later.
-
 ## See Also
 
 - [Interacting with your app in the iOS and iPadOS simulator](interacting-with-your-app-in-the-ios-or-ipados-simulator.md)
@@ -93,4 +89,4 @@ Simulator supports SharePlay experiences in Xcode 16 and later.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/interacting-with-your-app-in-the-visionos-simulator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/interacting-with-your-app-in-the-visionos-simulator)*

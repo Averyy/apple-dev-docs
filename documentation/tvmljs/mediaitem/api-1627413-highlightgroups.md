@@ -1,6 +1,6 @@
 # highlightGroups
 
-**Framework**: TVMLKit JS  
+**Framework**: Tvmljs  
 **Kind**: instp
 
 An array of highlight groups, with each group containing a list of highlights.
@@ -61,8 +61,6 @@ App.onExit = function() {
 ```
 
 > **Note**: You can only have one set of highlights associated with a media item.
-
-You can only have one set of highlights associated with a media item.
 
 ## See Also
 

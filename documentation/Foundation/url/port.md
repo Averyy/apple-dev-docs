@@ -24,8 +24,6 @@ var port: Int? { get }
 
 > **Note**:  This function resolves against the base `URL`.
 
- This function resolves against the base `URL`.
-
 ## See Also
 
 - [func fragment(percentEncoded: Bool) -> String?](url/fragment(percentencoded:).md)

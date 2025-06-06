@@ -19,8 +19,6 @@ interface HTMLCanvasElement
 
 > **Note**: For usage examples and conceptual guidance, see [`Safari HTML5 Canvas Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/HTML-canvas-guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010542).
 
-For usage examples and conceptual guidance, see [`Safari HTML5 Canvas Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/HTML-canvas-guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010542).
-
 ## Topics
 
 ### Setting Canvas Dimensions

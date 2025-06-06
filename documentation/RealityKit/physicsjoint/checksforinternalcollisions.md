@@ -1,6 +1,6 @@
 # checksForInternalCollisions
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property  
 **Required**: Yes
 
@@ -22,8 +22,6 @@ var checksForInternalCollisions: Bool { get }
 #### Discussion
 
 > **Note**: This does not affect how collisions of the two entities referenced in [`pin0`](physicsjoint/pin0.md) and [`pin1`](physicsjoint/pin1.md) interact with other entities.
-
-This does not affect how collisions of the two entities referenced in [`pin0`](physicsjoint/pin0.md) and [`pin1`](physicsjoint/pin1.md) interact with other entities.
 
 
 ---

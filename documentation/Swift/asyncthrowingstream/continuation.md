@@ -26,8 +26,6 @@ The closure you provide to the `AsyncThrowingStream` in `init(_:bufferingPolicy:
 
 > **Note**: Unlike other continuations in Swift, `AsyncThrowingStream.Continuation` supports escaping.
 
-Unlike other continuations in Swift, `AsyncThrowingStream.Continuation` supports escaping.
-
 ## Topics
 
 ### Producing Elements
@@ -66,4 +64,4 @@ Unlike other continuations in Swift, `AsyncThrowingStream.Continuation` supports
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/asyncthrowingstream/continuation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/asyncthrowingstream/continuation)*

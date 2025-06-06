@@ -1,6 +1,6 @@
 # Requesting Authorization for Media Capture on macOS
 
-**Framework**: Bundle Resources
+**Framework**: Bundleresources
 
 Prompt the user to authorize access to the camera and microphone.
 
@@ -25,8 +25,6 @@ For each key, provide a message that explains to the user why your app needs to 
 
 > ❗ **Important**:  If the appropriate key is not present in your app’s `Info.plist` file when your app requests authorization or attempts to use a capture device, the system terminates your app. The Xcode debug console displays a message that explains the reason for the crash.
 
- If the appropriate key is not present in your app’s `Info.plist` file when your app requests authorization or attempts to use a capture device, the system terminates your app. The Xcode debug console displays a message that explains the reason for the crash.
-
 ##### Verify and Request Authorization for Capture
 
 Always test the [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) [`authorizationStatus(for:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/authorizationStatus(for:)) method before setting up a capture session. If the user has not yet granted or denied capture permission, the authorization status is [`AVAuthorizationStatus.notDetermined`](https://developer.apple.com/documentation/AVFoundation/AVAuthorizationStatus/notDetermined). In this case, use the [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) method to have macOS prompt the user:
@@ -34,8 +32,6 @@ Always test the [`AVCaptureDevice`](https://developer.apple.com/documentation/AV
 The [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) method is asynchronous: Your app continues running while macOS shows the permission alert. When the user responds, the system calls your completion handler. If the completion handler’s success parameter is [`true`](https://developer.apple.com/documentation/swift/true), you can proceed to set up and start a capture session.
 
 > **Note**:  Call [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) before starting capture, but only at a time that’s appropriate for your app. For example, if photo or video recording isn’t the main focus of your app, check for camera permission only when the user invokes your app’s camera-related features.
-
- Call [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) before starting capture, but only at a time that’s appropriate for your app. For example, if photo or video recording isn’t the main focus of your app, check for camera permission only when the user invokes your app’s camera-related features.
 
 ##### Request Authorization Before Saving Captured Media
 
@@ -59,8 +55,6 @@ This command resets the access authorization settings for all apps, so other app
 
 > 💡 **Tip**:  You can use `tccutil` to reset authorization access settings for other system services as well, such as AddressBook, Calendar, and Finder.
 
- You can use `tccutil` to reset authorization access settings for other system services as well, such as AddressBook, Calendar, and Finder.
-
 ## See Also
 
 - [Requesting authorization to capture and save media](../AVFoundation/requesting-authorization-to-capture-and-save-media.md)
@@ -73,4 +67,4 @@ This command resets the access authorization settings for all apps, so other app
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/requesting-authorization-for-media-capture-on-macos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BundleResources/requesting-authorization-for-media-capture-on-macos)*

@@ -23,8 +23,8 @@ class URLSessionUploadTask
 ## Mentions
 
 - [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
-- [Uploading data to a website](uploading-data-to-a-website.md)
 - [Uploading streams of data](uploading-streams-of-data.md)
+- [Uploading data to a website](uploading-data-to-a-website.md)
 
 #### Overview
 
@@ -33,8 +33,6 @@ The [`URLSessionUploadTask`](urlsessionuploadtask.md) class is a subclass of [`U
 Upload tasks are used for making HTTP requests that require a request body (such as `POST` or `PUT`). They behave similarly to data tasks, but you create them by calling different methods on the session that are designed to make it easier to provide the content to upload. As with data tasks, if the server provides a response, upload tasks return that response as one or more `NSData` objects in memory.
 
 > **Note**:  Unlike data tasks, you can use upload tasks to upload content in the background.
-
- Unlike data tasks, you can use upload tasks to upload content in the background.
 
 When you create an upload task, you provide a [`URLRequest`](urlrequest.md) instance that contains any additional headers that you might need to send alongside the upload, such as the content type, content disposition, and so on. In iOS, when you create an upload task for a file in a background session, the system copies that file to a temporary location and streams data from there.
 
@@ -88,4 +86,4 @@ When the upload phase of the request finishes, the task behaves like a data task
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessionuploadtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessionuploadtask)*

@@ -1,6 +1,6 @@
 # AVAudioPlayerNode
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: class
 
 An object for scheduling the playback of buffers or segments of audio files.
@@ -34,8 +34,6 @@ The [`stop()`](avaudioplayernode/stop().md) method unschedules all previously sc
 
 > **Note**:  The `AVAudioPlayerNode` class isn’t key-value observing compliant, and may indicate that Combine publishers are available. Don’t use them for monitoring changes.
 
- The `AVAudioPlayerNode` class isn’t key-value observing compliant, and may indicate that Combine publishers are available. Don’t use them for monitoring changes.
-
 ##### Player Timeline
 
 The usual [`AVAudioNode`](avaudionode.md) sample times, which [`lastRenderTime`](avaudionode/lastrendertime.md) observes, have an arbitrary zero point. The `AVAudioPlayerNode` class superimposes a second player timeline on top of this to reflect when the player starts and intervals when it pauses. The methods [`nodeTime(forPlayerTime:)`](avaudioplayernode/nodetime(forplayertime:).md) and [`playerTime(forNodeTime:)`](avaudioplayernode/playertime(fornodetime:).md) convert between the two.
@@ -63,8 +61,6 @@ The scheduling methods fail if:
 The buffer of file completion handlers are a means to schedule more data if available on the player node. For more information on the different completion callback types, see [`AVAudioPlayerNodeCompletionCallbackType`](avaudioplayernodecompletioncallbacktype.md).
 
 > ❗ **Important**:  Don’t stop a player within a completion handler callback because it can deadlock while trying to unschedule already scheduled buffers.
-
- Don’t stop a player within a completion handler callback because it can deadlock while trying to unschedule already scheduled buffers.
 
 ##### Rendering Offline
 
@@ -142,4 +138,4 @@ When you use a player node with the engine operating in manual rendering mode, y
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/avaudioplayernode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/avaudioplayernode)*

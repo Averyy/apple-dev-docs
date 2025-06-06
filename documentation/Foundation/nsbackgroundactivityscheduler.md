@@ -32,15 +32,11 @@ For information about performing non-deferrable tasks efficiently, see [`Specify
 
 > **Note**:  The [`NSBackgroundActivityScheduler`](nsbackgroundactivityscheduler.md) class interfaces with the XPC Activity API. However, your app doesn’t need to be an XPC service in order to use [`NSBackgroundActivityScheduler`](nsbackgroundactivityscheduler.md).
 
- The [`NSBackgroundActivityScheduler`](nsbackgroundactivityscheduler.md) class interfaces with the XPC Activity API. However, your app doesn’t need to be an XPC service in order to use [`NSBackgroundActivityScheduler`](nsbackgroundactivityscheduler.md).
-
 ##### Create a Scheduler
 
 To initialize a scheduler, call [`init(identifier:)`](nsbackgroundactivityscheduler/init(identifier:).md) for `NSBackgroundActivityScheduler`, and pass it a unique identifier string in reverse DNS notation (`nil` and zero-length strings are not allowed) that remains constant across launches of your application.
 
 > **Note**:  The system uses this unique identifier to track the number of times the activity has run and to improve the heuristics for deciding when to run it again in the future.
-
- The system uses this unique identifier to track the number of times the activity has run and to improve the heuristics for deciding when to run it again in the future.
 
 ##### Configure Scheduler Properties
 
@@ -80,8 +76,6 @@ Call [`invalidate()`](nsbackgroundactivityscheduler/invalidate().md) to stop sch
 Stopping background activity
 
 > **Note**:  When an activity is stopped, a block that’s currently executing will still finish executing.
-
- When an activity is stopped, a block that’s currently executing will still finish executing.
 
 ## Topics
 
@@ -134,4 +128,4 @@ Stopping background activity
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsbackgroundactivityscheduler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsbackgroundactivityscheduler)*

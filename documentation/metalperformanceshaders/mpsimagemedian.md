@@ -1,6 +1,6 @@
 # MPSImageMedian
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A filter that applies a median filter in a square region centered around each pixel in the source image.
@@ -24,8 +24,6 @@ class MPSImageMedian : MPSUnaryImageKernel
 An [`MPSImageMedian`](mpsimagemedian.md) filter finds the median color value for each channel within a `kernelDiameter * kernelDiameter` window surrounding the pixel of interest.  It is a common means of noise reduction and also as a smoothing filter with edge preserving qualities.
 
 > **Note**: The [`MPSImageMedian`](mpsimagemedian.md) filter supports only images with 8 or less bits per channel.
-
-The [`MPSImageMedian`](mpsimagemedian.md) filter supports only images with 8 or less bits per channel.
 
 ## Topics
 

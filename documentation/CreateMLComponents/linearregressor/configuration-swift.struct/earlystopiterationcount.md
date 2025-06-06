@@ -1,6 +1,6 @@
 # earlyStopIterationCount
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: property
 
 The number of iterations to use when evaluating whether to stop early.
@@ -26,8 +26,6 @@ The `fitted` method will stop if no significant progress is made for this many i
 
 > **Note**: Early stopping only happens when using the `fitted` method with validation data.
 
-Early stopping only happens when using the `fitted` method with validation data.
-
 ## See Also
 
 - [var convergenceThreshold: Double](linearregressor/configuration-swift.struct/convergencethreshold.md)
@@ -48,4 +46,4 @@ Early stopping only happens when using the `fitted` method with validation data.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/linearregressor/configuration-swift.struct/earlystopiterationcount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/linearregressor/configuration-swift.struct/earlystopiterationcount)*

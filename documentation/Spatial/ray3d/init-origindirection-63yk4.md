@@ -24,8 +24,6 @@ init(origin: Point3D = .zero, direction: Vector3D)
 
 > **Note**: This function normalizes the direction vector.
 
-This function normalizes the direction vector.
-
 ## Parameters
 
 - `origin`: The origin of the ray.

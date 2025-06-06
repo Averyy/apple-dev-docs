@@ -1,6 +1,6 @@
 # Supporting Family Sharing in your app
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Provide service to share subscriptions and non-consumable products to family members.
 
@@ -17,8 +17,6 @@ When users share a purchase through Family Sharing, each family member gets thei
 - Listen for the `REVOKE` [`notification_type`](https://developer.apple.com/documentation/AppStoreServerNotifications/notification_type) from [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications) on your server.
 
 > **Note**:  Session 10661: [`What’s new with in-app purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10661/)
-
- Session 10661: [`What’s new with in-app purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10661/)
 
 ##### Enable Family Sharing for in App Purchases
 
@@ -72,4 +70,4 @@ When your app displays in-app purchases, indicate in your UI whether users can s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/supporting-family-sharing-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/supporting-family-sharing-in-your-app)*

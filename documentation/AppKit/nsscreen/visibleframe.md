@@ -1,6 +1,6 @@
 # visibleFrame
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The current location and dimensions of the visible screen.
@@ -22,8 +22,6 @@ The returned rectangle is always based on the current user-interface settings an
 
 > **Note**:  Even when dock hiding is enabled, the rectangle returned by this method may be smaller than the full screen. The system uses a small boundary area to determine when it displays the dock.
 
- Even when dock hiding is enabled, the rectangle returned by this method may be smaller than the full screen. The system uses a small boundary area to determine when it displays the dock.
-
 ## See Also
 
 - [var frame: NSRect](nsscreen/frame.md)
@@ -38,4 +36,4 @@ The returned rectangle is always based on the current user-interface settings an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsscreen/visibleframe)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsscreen/visibleframe)*

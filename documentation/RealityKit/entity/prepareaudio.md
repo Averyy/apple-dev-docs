@@ -1,6 +1,6 @@
 # prepareAudio(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Prepares an audio resource for playback.
@@ -28,8 +28,6 @@ An [`AudioPlaybackController`](audioplaybackcontroller.md) object that you can u
 To start playback right away with default `AudioPlaybackController` properties, use the [`playAudio(_:)`](entity/playaudio(_:).md) method instead.
 
 > **Note**: As soon as the system prepares an audio resource, the audio engine begins tracking the position of the entity and allocates rendering resources, which incurs a power cost.
-
-As soon as the system prepares an audio resource, the audio engine begins tracking the position of the entity and allocates rendering resources, which incurs a power cost.
 
 For optimal system resource usage, avoid preparing sounds before they are needed. For example:
 

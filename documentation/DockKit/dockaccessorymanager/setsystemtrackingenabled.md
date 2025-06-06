@@ -1,6 +1,6 @@
 # setSystemTrackingEnabled(_:)
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: method
 
 Enable and disable system tracking for camera-enabled apps.
@@ -29,8 +29,6 @@ DockKit enables system tracking by default, and any camera stream automatically 
 Always set this value to `false` before performing your own custom tracking.
 
 > **Note**: [`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
-
-[`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
 
 ## See Also
 

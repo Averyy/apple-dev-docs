@@ -1,6 +1,6 @@
 # Displaying Components Side By Side
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Configure a side-by-side, horizontal arrangement of components for your article.
 
@@ -9,8 +9,6 @@ Configure a side-by-side, horizontal arrangement of components for your article.
 In Apple News Format, you can display child components of [`Container`](https://developer.apple.com/documentation/applenewsformat/container), [`Chapter`](https://developer.apple.com/documentation/applenewsformat/chapter), [`Section`](https://developer.apple.com/documentation/applenewsformat/section), and [`Aside`](https://developer.apple.com/documentation/applenewsformat/aside), side by side and horizontally by using the `contentDisplay` type [`HorizontalStackDisplay`](https://developer.apple.com/documentation/applenewsformat/horizontalstackdisplay). The child components are sized to match the `minimumWidth` and `maximumWidth` values defined in the [`ComponentLayout`](https://developer.apple.com/documentation/applenewsformat/componentlayout) object of these components. To redistribute the empty space inside a horizontal stack collection, use the [`FlexibleSpacer`](https://developer.apple.com/documentation/applenewsformat/flexiblespacer) object. This object provides flexible space between components in a container only when its `contentDisplay` value is set to `horizontal_stack`.
 
 > **Note**: In versions of iOS before iOS 12, child components are vertically stacked if the container’s `contentDisplay` property is defined as the new `horizontal_stack` type.
-
-In versions of iOS before iOS 12, child components are vertically stacked if the container’s `contentDisplay` property is defined as the new `horizontal_stack` type.
 
 ## See Also
 
@@ -48,4 +46,4 @@ In versions of iOS before iOS 12, child components are vertically stacked if the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/displaying-components-side-by-side)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/displaying-components-side-by-side)*

@@ -1,6 +1,6 @@
 # Timed metadata sample description
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 An atom that defines how to interpret timed metadata media samples.
 
@@ -15,8 +15,6 @@ Zero, one, or more values may be carried in a metadata sample description for a 
 The data format field contains the format of the timed metadata media, which is set to `'mebx'`.
 
 > **Note**: Other forms of timed metadata media are not described here. They would be indicated by an alternative type code in the place of `‘mebx’`.
-
-Other forms of timed metadata media are not described here. They would be indicated by an alternative type code in the place of `‘mebx’`.
 
 The metadata sample description must contain a metadata key table atom and optionally contains a bit rate atom following the standard sample description atom header, defined below. Other atoms may be introduced in the future.
 

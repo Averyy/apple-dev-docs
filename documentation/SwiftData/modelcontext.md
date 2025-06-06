@@ -1,6 +1,6 @@
 # ModelContext
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: class
 
 An object that enables you to fetch, insert, and delete models, and save any changes to disk.
@@ -42,8 +42,6 @@ struct LastModifiedView: View {
 
 > ❗ **Important**: If you don’t explicitly attach a model container, the environment provides a context bound to an in-memory, schema-less container. Any attempt to insert a model into this context causes the framework to throw an error, and any fetches you run will return empty results.
 
-If you don’t explicitly attach a model container, the environment provides a context bound to an in-memory, schema-less container. Any attempt to insert a model into this context causes the framework to throw an error, and any fetches you run will return empty results.
-
 After you establish access to a model context, use that context’s [`insert(_:)`](modelcontext/insert(_:).md) and [`delete(_:)`](modelcontext/delete(_:).md) methods to add and remove models. You can also delete several models at once using [`delete(model:where:includeSubclasses:)`](modelcontext/delete(model:where:includesubclasses:).md). There isn’t a corresponding method to update a model because the context automatically tracks all changes to its known models. Use the [`hasChanges`](modelcontext/haschanges.md) property to determine if the context has unsaved changes, and call [`rollback()`](modelcontext/rollback().md) to discard any pending inserts and deletes and any restore changed models to their most recent saved state.
 
 Although you fetch models primarily with the `Query()` macro (and its variants), you can use a model context to perform almost identical fetches. For example, use the [`fetch(_:)`](modelcontext/fetch(_:).md) and [`fetch(_:batchSize:)`](modelcontext/fetch(_:batchsize:).md) methods to retrieve all models of a certain type that match a set of criteria. And use [`fetchCount(_:)`](modelcontext/fetchcount(_:).md) to determine the number of models that match some criteria without the overhead of fetching the models themselves. If you need to be able to identify models that match some criteria but don’t require all of the associated data, use [`fetchIdentifiers(_:)`](modelcontext/fetchidentifiers(_:).md) and [`fetchIdentifiers(_:batchSize:)`](modelcontext/fetchidentifiers(_:batchsize:).md) to retrieve only those models’ persistent identifiers.
@@ -70,8 +68,6 @@ struct LastModifiedView: View {
 ```
 
 > **Note**: To avoid receiving unwanted or unexpected notifications, always specify the model context as the `object` parameter when creating a publisher.
-
-To avoid receiving unwanted or unexpected notifications, always specify the model context as the `object` parameter when creating a publisher.
 
 ## Topics
 
@@ -175,4 +171,4 @@ To avoid receiving unwanted or unexpected notifications, always specify the mode
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/modelcontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/modelcontext)*

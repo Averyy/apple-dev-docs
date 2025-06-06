@@ -1,6 +1,6 @@
 # init(propertiesOfMetadataItem:valueLoadingHandler:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: init
 
 Creates a metadata item whose value loads on an on-demand basis only.
@@ -43,8 +43,6 @@ let artworkItem = AVMetadataItem(propertiesOf: templateItem) { request in
 ```
 
 > **Note**:  Don’t use this method to create metadata items whose values you need immediately, such as those you create for immediate display or serialization.
-
- Don’t use this method to create metadata items whose values you need immediately, such as those you create for immediate display or serialization.
 
 ## Parameters
 

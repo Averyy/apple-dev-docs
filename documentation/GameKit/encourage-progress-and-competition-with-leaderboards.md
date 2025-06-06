@@ -1,6 +1,6 @@
 # Encourage progress and competition with leaderboards
 
-**Framework**: GameKit
+**Framework**: Gamekit
 
 Let players measure their own progress and compare their skills with friends and others.
 
@@ -26,19 +26,13 @@ To create a new leaderboard, click Add (+) at the bottom of the left column, and
 
 > 💡 **Tip**: Reorganize the list of leaderboards and leaderboard sets that Xcode displays in the order you want Game Center to present them.
 
-Reorganize the list of leaderboards and leaderboard sets that Xcode displays in the order you want Game Center to present them.
-
 A leaderboard set organizes many leaderboards into a single unit. For example, for a game with many levels, use a leaderboard set to organize the leaderboards for each level. You can have up to 100 leaderboards without using leaderboard sets. When you use leaderboard sets, you can have up to 500 leaderboards across 100 leaderboard sets.
 
 > ❗ **Important**: You must have at least one leaderboard for your app before you can create a leaderboard set. If you choose to use leaderboard sets, you must include all future leaderboards in a leaderboard set.
 
-You must have at least one leaderboard for your app before you can create a leaderboard set. If you choose to use leaderboard sets, you must include all future leaderboards in a leaderboard set.
-
 If you add a leaderboard to an unreleased version of your game or sign the game with a development certificate, Game Center annotates the leaderboard with a prerelease indicator. To change a leaderboard’s app version, see [`Add leaderboards to an app version`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/add-leaderboards-to-your-app-version).
 
 > **Note**: If you’ve already pushed your configuration changes to App Store Connect, removing a leaderboard or leaderboard set from the local configuration file doesn’t remove the leaderboard or leaderboard set from App Store Connect.
-
-If you’ve already pushed your configuration changes to App Store Connect, removing a leaderboard or leaderboard set from the local configuration file doesn’t remove the leaderboard or leaderboard set from App Store Connect.
 
 To learn more about the information you enter in App Store Connect, see [`Leaderboard properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/leaderboards#leaderboard-properties).
 
@@ -158,4 +152,4 @@ Otherwise, you set the default leaderboard for all players in App Store Connect 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/encourage-progress-and-competition-with-leaderboards)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/encourage-progress-and-competition-with-leaderboards)*

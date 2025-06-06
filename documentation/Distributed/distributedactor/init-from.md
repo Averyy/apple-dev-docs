@@ -27,8 +27,6 @@ the [`ActorSystem`](distributedactor/actorsystem-swift.associatedtype.md) that t
 
 > **Note**: If the actor system value in `decoder.userInfo` is missing or mistyped; the `ID` fails to decode from the passed `decoder`;
 
-If the actor system value in `decoder.userInfo` is missing or mistyped; the `ID` fails to decode from the passed `decoder`;
-
 ## Parameters
 
 - `decoder`: Used to decode the   of this distributed actor.

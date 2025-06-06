@@ -1,6 +1,6 @@
 # Presenting Navigation Markers
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Present navigation markers in the Chapters panel to help users quickly navigate your content.
 
@@ -15,8 +15,6 @@ To help users navigate your content, the Chapters panel presents navigation mark
 In tvOS, a [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) contains a [`navigationMarkerGroups`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/navigationMarkerGroups) property you use to supply chapter information. Set this property to an array of [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) objects to define the navigation markers for the current media.
 
 > **Note**:  Although the player item defines the [`navigationMarkerGroups`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/navigationMarkerGroups) property as an array, the system only supports the first group in the array.
-
- Although the player item defines the [`navigationMarkerGroups`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/navigationMarkerGroups) property as an array, the system only supports the first group in the array.
 
 An [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) contains one or more [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/AVFoundation/AVTimedMetadataGroup) objects, each representing an individual marker presented in the player’s Info panel. Each [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/AVFoundation/AVTimedMetadataGroup) stores a time range in the asset’s timeline to which this marker applies, an array of [`AVMetadataItem`](https://developer.apple.com/documentation/AVFoundation/AVMetadataItem) objects to define the marker’s title, and, optionally, its thumbnail artwork.
 
@@ -124,4 +122,4 @@ private func makeMetadataItem(_ identifier: AVMetadataIdentifier, value: Any) ->
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/presenting-navigation-markers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/presenting-navigation-markers)*

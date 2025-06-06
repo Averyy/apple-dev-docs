@@ -17,8 +17,6 @@ To get useful information specific to rendering bottlenecks, high system power u
 
 > **Note**: You can profile using a real device or a simulator, but to get the most accurate and actionable information, use a real device. Software and hardware differences between a simulator on your Mac and a real device prevent you from relying on timing information. Simulated devices are useful for quick iteration and improving performance aspects that aren’t based on time.
 
-You can profile using a real device or a simulator, but to get the most accurate and actionable information, use a real device. Software and hardware differences between a simulator on your Mac and a real device prevent you from relying on timing information. Simulated devices are useful for quick iteration and improving performance aspects that aren’t based on time.
-
 ##### Open a New Trace Document
 
 To create a new trace document:
@@ -64,8 +62,6 @@ If the timeline displays green, the tool considers your app’s impact on system
 
 > **Note**: If the render server can’t maintain the target frame rate of 90 FPS due to thermal pressure, it might reduce its frame rate in half. When this occurs, all frames in the frames track show up as missing their rendering deadlines. Other factors can cause reduced frame rate, including the complexity and frequency of the content the system is processing. Use the Thermal State instrument to determine if thermal conditions are causing the rate limiting or if it’s due to other factors.
 
-If the render server can’t maintain the target frame rate of 90 FPS due to thermal pressure, it might reduce its frame rate in half. When this occurs, all frames in the frames track show up as missing their rendering deadlines. Other factors can cause reduced frame rate, including the complexity and frequency of the content the system is processing. Use the Thermal State instrument to determine if thermal conditions are causing the rate limiting or if it’s due to other factors.
-
 ##### Identify Bottlenecks
 
 The Bottlenecks section of the timeline for the RealityKit Metrics instrument contains markers that indicate high overhead in your app or the render server that contribute to dropped frames and high system power use. When you encounter either of these issues, check if the timeline identifies bottlenecks you can address. Double-click on any of the markers to display more information in the detail area at the bottom of the instruments window. If the detail area is hidden, choose View > Detail Area > Show Detail Area to reveal it. The render server encounters bottlenecks in either the CPU or GPU. The instrument categorizes bottlenecks by their severity and type.
@@ -83,8 +79,6 @@ The trace provides additional information you can use to identify changes to mak
 ![A screenshot of RealityKit Metrics instrument timeline expanded to display additional graphs for 3D Render, Core Animation Render, Entity Commits, RealityKit Animations, RealityKit Physics, and Spacial Systems.](https://docs-assets.developer.apple.com/published/b875fecf6b6cf5a61f643b5703564866/realitykit-metrics-instrument-expanded%402x.png)
 
 > 💡 **Tip**: The graphs for some sections combine several individual metrics. The heading indicates this by displaying a graph count. Click on the bottom of the timeline’s heading and drag down to display individual graphs for each metric. For example, the 3D Render Timeline might display 13 Graphs in the heading; expanding that timeline exposes individual graphs for 3D Mesh Draw Calls, 3D Mesh Triangles, 3D Mesh Vertices, and the 10 additional metrics.
-
-The graphs for some sections combine several individual metrics. The heading indicates this by displaying a graph count. Click on the bottom of the timeline’s heading and drag down to display individual graphs for each metric. For example, the 3D Render Timeline might display 13 Graphs in the heading; expanding that timeline exposes individual graphs for 3D Mesh Draw Calls, 3D Mesh Triangles, 3D Mesh Vertices, and the 10 additional metrics.
 
 The timeline for your app’s process helps summarize information from the instruments about your process and the work the render server completes for your process.
 
@@ -133,8 +127,6 @@ A person’s eye position, the distance from the person to the content, and the 
 
 > **Note**: Using an unlit or inexpensive custom material becomes even more important when your app uses [`Metal`](https://developer.apple.com/documentation/Metal) and the [`Compositor Services`](https://developer.apple.com/documentation/CompositorServices) framework to present a fully immersive experience due to the number of pixels your app must render.
 
-Using an unlit or inexpensive custom material becomes even more important when your app uses [`Metal`](https://developer.apple.com/documentation/Metal) and the [`Compositor Services`](https://developer.apple.com/documentation/CompositorServices) framework to present a fully immersive experience due to the number of pixels your app must render.
-
 ## See Also
 
 - [Creating a performance plan for your visionOS app](creating-a-performance-plan-for-visionos-app.md)
@@ -149,4 +141,4 @@ Using an unlit or inexpensive custom material becomes even more important when y
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/analyzing-the-performance-of-your-visionos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/analyzing-the-performance-of-your-visionos-app)*

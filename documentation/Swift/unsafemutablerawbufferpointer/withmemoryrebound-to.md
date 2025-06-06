@@ -36,11 +36,7 @@ After executing `body`, this method rebinds memory back to its original binding 
 
 > **Note**: The buffer’s base address must match the alignment of `T` (as reported by `MemoryLayout<T>.alignment`). That is, `Int(bitPattern: self.baseAddress) % MemoryLayout<T>.alignment` must equal zero.
 
-The buffer’s base address must match the alignment of `T` (as reported by `MemoryLayout<T>.alignment`). That is, `Int(bitPattern: self.baseAddress) % MemoryLayout<T>.alignment` must equal zero.
-
 > **Note**: A raw buffer may represent memory that has been bound to a type. If that is the case, then `T` must be layout compatible with the type to which the memory has been bound. This requirement does not apply if the raw buffer represents memory that has not been bound to any type.
-
-A raw buffer may represent memory that has been bound to a type. If that is the case, then `T` must be layout compatible with the type to which the memory has been bound. This requirement does not apply if the raw buffer represents memory that has not been bound to any type.
 
 ## Parameters
 

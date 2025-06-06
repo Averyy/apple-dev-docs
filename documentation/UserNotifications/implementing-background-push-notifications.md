@@ -13,8 +13,6 @@ Add background notifications to your app by using the UserNotifications framewor
 
 > **Note**: This sample code project is associated with WWDC20 session [`10095: Push Notifications Primer`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10095/).
 
-This sample code project is associated with WWDC20 session [`10095: Push Notifications Primer`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10095/).
-
 ##### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode, set up a remote notification server to send pushes. See [`Setting up a remote notification server`](setting-up-a-remote-notification-server.md).
@@ -29,4 +27,4 @@ Before you run the sample code project in Xcode, set up a remote notification se
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/implementing-background-push-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/implementing-background-push-notifications)*

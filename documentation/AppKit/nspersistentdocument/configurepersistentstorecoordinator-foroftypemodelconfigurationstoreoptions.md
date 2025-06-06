@@ -1,6 +1,6 @@
 # configurePersistentStoreCoordinator(for:ofType:modelConfiguration:storeOptions:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Configures the receiver’s persistent store coordinator with the appropriate stores for a given URL.
@@ -26,10 +26,6 @@ This method is invoked automatically when an existing document is opened. You ov
 You can override this method to create the store to save to or load from (invoked from within the other `NSDocument` methods to read/write files), which gives developers the ability to load/save from/to different persistent store types (default type is XML).
 
 > **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # CarKeyRemoteControlSession
 
-**Framework**: CarKey  
+**Framework**: Carkey  
 **Kind**: class
 
 The object that manages communication with the vehicles you manufacture.
@@ -27,8 +27,6 @@ Don’t create this object directly. Instead, call the [`start(delegate:subscrip
 When you configure a new session, provide a delegate object to receive data from vehicle-initiated transfers. The system also uses your delegate notify you when the configuration of a vehicle changes. For example, it lets you know when connectivity to the vehicle changes. The delegate must adopt the [`CarKeyRemoteControlSessionDelegate`](carkeyremotecontrolsessiondelegate.md) protocol.
 
 > **Note**: If your app has an active session, the system automatically ends that session when your app enters the background. Upon reentering the foreground, you must create a new session to communicate with your vehicle again.
-
-If your app has an active session, the system automatically ends that session when your app enters the background. Upon reentering the foreground, you must create a new session to communicate with your vehicle again.
 
 ## Topics
 
@@ -72,4 +70,4 @@ If your app has an active session, the system automatically ends that session wh
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/carkey/carkeyremotecontrolsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CarKey/carkeyremotecontrolsession)*

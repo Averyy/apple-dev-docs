@@ -26,8 +26,6 @@ Inside the closure, set the `initializedCount` parameter to the number of elemen
 
 > **Note**: While the resulting array may have a capacity larger than the requested amount, the buffer passed to the closure will cover exactly the requested number of elements.
 
-While the resulting array may have a capacity larger than the requested amount, the buffer passed to the closure will cover exactly the requested number of elements.
-
 ## Parameters
 
 - `unsafeUninitializedCapacity`: The number of elements to allocate   space for in the new array.

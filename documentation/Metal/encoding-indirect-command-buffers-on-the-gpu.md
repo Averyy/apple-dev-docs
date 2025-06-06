@@ -231,8 +231,6 @@ This sample optimizes ICB commands because redundant state results from the kern
 
 > **Note**: If you optimize an indirect command buffer, you won’t be able to call `executeCommandsInBuffer:withRange:` with a range that starts in the optimized region. Instead, specify a range staring at the beginning and finishing within or at the end of the optimized region.
 
-If you optimize an indirect command buffer, you won’t be able to call `executeCommandsInBuffer:withRange:` with a range that starts in the optimized region. Instead, specify a range staring at the beginning and finishing within or at the end of the optimized region.
-
 ##### Execute the Icb
 
 Draw the onscreen meshes by calling `executeCommandsInBuffer` on your render command encoder:
@@ -265,4 +263,4 @@ While you can encode an ICB’s commands in a compute kernel, you call `executeC
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/encoding-indirect-command-buffers-on-the-gpu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/encoding-indirect-command-buffers-on-the-gpu)*

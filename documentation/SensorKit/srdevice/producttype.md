@@ -1,6 +1,6 @@
 # productType
 
-**Framework**: SensorKit  
+**Framework**: Sensorkit  
 **Kind**: property
 
 A string that identifies the device used to save a sample.
@@ -19,8 +19,6 @@ var productType: String { get }
 #### Discussion
 
 > **Note**:  Samples saved using older versions of SensorKit may have a `nil`-valued product type that indicates the product type is unknown.
-
- Samples saved using older versions of SensorKit may have a `nil`-valued product type that indicates the product type is unknown.
 
 ## See Also
 

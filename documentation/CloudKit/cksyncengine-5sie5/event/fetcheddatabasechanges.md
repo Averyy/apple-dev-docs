@@ -1,6 +1,6 @@
 # CKSyncEngine.Event.FetchedDatabaseChanges
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: struct
 
 A type that provides information about fetched database changes.
@@ -23,8 +23,6 @@ struct FetchedDatabaseChanges
 #### Overview
 
 > **Note**:  Although CloudKit doesn’t guarantee the order of fetched database changes, the typical order for both deletions and modifications is oldest to newest.
-
- Although CloudKit doesn’t guarantee the order of fetched database changes, the typical order for both deletions and modifications is oldest to newest.
 
 ## Topics
 

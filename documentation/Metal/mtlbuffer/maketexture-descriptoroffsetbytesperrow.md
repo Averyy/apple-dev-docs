@@ -35,8 +35,6 @@ This method creates a new [`MTLTexture`](mtltexture.md) instance that uses the s
 
 > **Note**:  Metal may not be able to optimize a texture that shares memory with a buffer.
 
- Metal may not be able to optimize a texture that shares memory with a buffer.
-
 The texture’s resource data is coherent between multiple render passes. However, data accesses within a single render pass may not be coherent due to caching at runtime. For example, a texture from this method may not be able to immediately access new values from a render or kernel function that modifies this buffer.
 
 If this buffer’s [`storageMode`](mtltexturedescriptor/storagemode.md) is [`MTLStorageMode.managed`](mtlstoragemode/managed.md), and a render or kernel function modifies it, the CPU can access the new values through a texture after calling the [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) method. CPU accesses are only coherent between command buffer boundaries. GPU barriers guard a GPU’s accesses to buffers and textures so that each access finishes running before the next one begins.
@@ -44,8 +42,6 @@ If this buffer’s [`storageMode`](mtltexturedescriptor/storagemode.md) is [`MTL
 You can create multiple, nonoverlapping textures that use the same buffer; however, the GPU serializes accesses to those textures.
 
 > 💡 **Tip**:  You can avoid the GPU’s texture access serialization by creating multiple buffers and then creating a texture from each buffer with this method.
-
- You can avoid the GPU’s texture access serialization by creating multiple buffers and then creating a texture from each buffer with this method.
 
 To create a linear texture, you need to:
 
@@ -68,8 +64,6 @@ Additionally, creating a linear texture from this method adds the following rest
 Samplers can use any [`MTLSamplerAddressMode`](mtlsampleraddressmode.md) to sample linear textures from this method on any device that supports the [`MTLGPUFamily.apple2`](mtlgpufamily/apple2.md) feature family or later.
 
 > **Note**:  For devices that support only the [`MTLGPUFamily.apple1`](mtlgpufamily/apple1.md) feature family, samplers can only use [`MTLSamplerAddressMode.clampToEdge`](mtlsampleraddressmode/clamptoedge.md) to sample a linear texture.
-
- For devices that support only the [`MTLGPUFamily.apple1`](mtlgpufamily/apple1.md) feature family, samplers can only use [`MTLSamplerAddressMode.clampToEdge`](mtlsampleraddressmode/clamptoedge.md) to sample a linear texture.
 
 ## Parameters
 

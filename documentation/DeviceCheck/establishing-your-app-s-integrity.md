@@ -1,6 +1,6 @@
 # Establishing your app’s integrity
 
-**Framework**: DeviceCheck
+**Framework**: Devicecheck
 
 Ensure that requests your server receives come from legitimate instances of your app.
 
@@ -13,8 +13,6 @@ You can’t rely on your app’s logic to perform security checks on itself beca
 This article describes how to modify your app to use the App Attest service. For a description of the complementary logic that you add to your server, see [`Validating apps that connect to your server`](validating-apps-that-connect-to-your-server.md).
 
 > **Note**: To use the App Attest service, your app must have an App ID that you register on the [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account/) website.
-
-To use the App Attest service, your app must have an App ID that you register on the [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account/) website.
 
 ##### Check for Availability
 
@@ -32,8 +30,6 @@ You change the behavior of both your app, as the example above shows, and your s
 
 > ❗ **Important**: Most app extensions don’t support App Attest. Generally, when executing code in these extensions, bypass key generation and attestation, even if the [`isSupported`](dcappattestservice/issupported.md) method property is [`true`](https://developer.apple.com/documentation/swift/true). The only app extensions that support App Attest are watchOS extensions in watchOS 9 or later. For these extensions, you can use the results from [`isSupported`](dcappattestservice/issupported.md) to indicate whether your WatchKit extension bypasses attestation.
 
-Most app extensions don’t support App Attest. Generally, when executing code in these extensions, bypass key generation and attestation, even if the [`isSupported`](dcappattestservice/issupported.md) method property is [`true`](https://developer.apple.com/documentation/swift/true). The only app extensions that support App Attest are watchOS extensions in watchOS 9 or later. For these extensions, you can use the results from [`isSupported`](dcappattestservice/issupported.md) to indicate whether your WatchKit extension bypasses attestation.
-
 ##### Create a Key Pair
 
 For each user account on each device running your app, generate a unique, hardware-based, cryptographic key pair by calling the [`generateKey(completionHandler:)`](dcappattestservice/generatekey(completionhandler:).md) method.
@@ -49,8 +45,6 @@ service.generateKey { keyId, error in
 On success, the method’s completion handler returns a key identifier that you use later to access the key. Record the identifier in persistent storage — for example, by writing it to a file — because there’s no way to use the key without the identifier, and no way to get the identifier later. The device automatically stores the associated private key in the Secure Enclave, from where the App Attest service can use it to create signatures, but from where no process can ever directly read or modify it, ensuring its security.
 
 > ❗ **Important**: If you create a key pair in an App Clip, use the same key pair in the corresponding app. To support this, be sure to store the identifier in a shared container accessible from your full app. For more information about sharing data between your App Clip and your full app, see [`Sharing data between your App Clip and your full app`](https://developer.apple.com/documentation/AppClip/sharing-data-between-your-app-clip-and-your-full-app).
-
-If you create a key pair in an App Clip, use the same key pair in the corresponding app. To support this, be sure to store the identifier in a shared container accessible from your full app. For more information about sharing data between your App Clip and your full app, see [`Sharing data between your App Clip and your full app`](https://developer.apple.com/documentation/AppClip/sharing-data-between-your-app-clip-and-your-full-app).
 
 Don’t reuse a key among multiple users on a device because this weakens security protections. In particular, it becomes hard to detect an attack that uses a single compromised device to serve multiple remote users running a compromised version of your app. For more information, see [`Assessing fraud risk`](assessing-fraud-risk.md).
 
@@ -78,8 +72,6 @@ service.attestKey(keyId, clientDataHash: hash) { attestation, error in
 If the method, which accesses a remote Apple server, returns the [`serverUnavailable`](dcerror-swift.struct/serverunavailable.md) error, try attestation again later with the same key. For any other error, discard the key identifier and create a new key when you want to try again. Otherwise, send the completion handler’s attestation object and the `keyId` to your server for processing.
 
 > ❗ **Important**: If your app already has millions of daily active users and you want to start calling the [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) method to initiate attestation from your app, please review [`Preparing to use the app attest service`](preparing-to-use-the-app-attest-service.md) for guidance on safely ramping your users.
-
-If your app already has millions of daily active users and you want to start calling the [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) method to initiate attestation from your app, please review [`Preparing to use the app attest service`](preparing-to-use-the-app-attest-service.md) for guidance on safely ramping your users.
 
 If you use the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system) to communicate with your server, you can send an unmodified attestation object. If you communicate with your server by generating text-based HTTPS queries, convert the attestation object to a Base64-encoded string first.
 
@@ -136,4 +128,4 @@ The keys that you generate remain valid through regular app updates, but don’t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicecheck/establishing-your-app-s-integrity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceCheck/establishing-your-app-s-integrity)*

@@ -26,8 +26,6 @@ A protection space defines a series of matching constraints that determine which
 
 > **Note**:  This class has no designated initializer; its `init` method always returns `nil`. You must initialize this class by calling one of the initialization methods described in Creating a protection space.
 
- This class has no designated initializer; its `init` method always returns `nil`. You must initialize this class by calling one of the initialization methods described in Creating a protection space.
-
 ## Topics
 
 ### Creating a protection space
@@ -94,4 +92,4 @@ A protection space defines a series of matching constraints that determine which
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlprotectionspace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlprotectionspace)*

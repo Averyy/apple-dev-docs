@@ -1,6 +1,6 @@
 # Customizing your app’s navigation bar
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Create custom titles, prompts, and buttons in your app’s navigation bar.
 
@@ -34,8 +34,6 @@ self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor
 ```
 
 > **Note**: A navigation controller determines its [`preferredStatusBarStyle`](uiviewcontroller/preferredstatusbarstyle.md) based on the navigation bar style. As a result, the status bar matches the bar style, without any extra code required.
-
-A navigation controller determines its [`preferredStatusBarStyle`](uiviewcontroller/preferredstatusbarstyle.md) based on the navigation bar style. As a result, the status bar matches the bar style, without any extra code required.
 
 ##### Customize the Right View
 
@@ -186,4 +184,4 @@ optionsBarItem.menu = barButtonMenu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/customizing-your-app-s-navigation-bar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/customizing-your-app-s-navigation-bar)*

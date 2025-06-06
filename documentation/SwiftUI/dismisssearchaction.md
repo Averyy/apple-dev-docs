@@ -1,6 +1,6 @@
 # DismissSearchAction
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 An action that can end a search interaction.
@@ -32,8 +32,6 @@ When you dismiss search, SwiftUI:
 - Removes focus from the search field.
 
 > **Note**: Calling this instance has no effect if the user isn’t interacting with a search field.
-
-Calling this instance has no effect if the user isn’t interacting with a search field.
 
 Use this action to dismiss a search operation based on another user interaction. For example, consider a searchable view with a [`Button`](button.md) that presents more information about the first matching item from a collection:
 
@@ -100,8 +98,6 @@ People can dismiss the sheet by dragging it down, effectively canceling the oper
 
 > ❗ **Important**: Access the action from inside the searched view, as the example above demonstrates, rather than from the searched view’s parent, or another hierarchy, like that of a sheet. SwiftUI sets the value in the environment of the view that you apply the searchable modifier to, and doesn’t propagate the value up the view hierarchy.
 
-Access the action from inside the searched view, as the example above demonstrates, rather than from the searched view’s parent, or another hierarchy, like that of a sheet. SwiftUI sets the value in the environment of the view that you apply the searchable modifier to, and doesn’t propagate the value up the view hierarchy.
-
 ## Topics
 
 ### Calling the action
@@ -133,4 +129,4 @@ Access the action from inside the searched view, as the example above demonstrat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/dismisssearchaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/dismisssearchaction)*

@@ -1,6 +1,6 @@
 # LinearTimeSeriesForecaster
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: struct
 
 A time-series forecasting estimator.
@@ -23,8 +23,6 @@ struct LinearTimeSeriesForecaster<Scalar> where Scalar : MLShapedArrayScalar, Sc
 #### Overview
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type. You may get faster training when using `Float`.
-
-Only `Float` and `Double` are currently supported as the Scalar type. You may get faster training when using `Float`.
 
 ## Topics
 
@@ -108,4 +106,4 @@ Only `Float` and `Double` are currently supported as the Scalar type. You may ge
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/lineartimeseriesforecaster)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/lineartimeseriesforecaster)*

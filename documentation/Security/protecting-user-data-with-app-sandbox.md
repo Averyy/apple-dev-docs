@@ -12,8 +12,6 @@ When you create a new macOS app in Xcode, it receives the App Sandbox entitlemen
 
 > **Note**:  For information on enabling the App Sandbox capability in Xcode, see [`Configuring the macOS App Sandbox`](https://developer.apple.com/documentation/Xcode/configuring-the-macos-app-sandbox).
 
- For information on enabling the App Sandbox capability in Xcode, see [`Configuring the macOS App Sandbox`](https://developer.apple.com/documentation/Xcode/configuring-the-macos-app-sandbox).
-
 ##### Review Functionality That Is Incompatible with App Sandbox
 
 Certain activities are forbidden by the operating system when an app runs in a sandbox. Identify whether your app performs these, and remove them or find alternative ways to provide the same functionality. The restricted activities are:
@@ -68,4 +66,4 @@ If your app has the App Sandbox entitlement, you will see the following in the o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/protecting-user-data-with-app-sandbox)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/protecting-user-data-with-app-sandbox)*

@@ -20,8 +20,6 @@ This TicTacToe sample code project creates a networked game that you can play be
 
 > **Note**: This sample code project is associated with WWDC22 session [`110339: Build device-to-device interactions with the Network framework`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110339/). It’s also associated with WWDC 2020 session [`10110: Support local network privacy in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10110/) and with WWDC 2019 session [`713: Advances in Networking, Part 2`](https://developer.apple.comhttps://developer.apple.com/wwdc19/713/).
 
-This sample code project is associated with WWDC22 session [`110339: Build device-to-device interactions with the Network framework`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110339/). It’s also associated with WWDC 2020 session [`10110: Support local network privacy in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10110/) and with WWDC 2019 session [`713: Advances in Networking, Part 2`](https://developer.apple.comhttps://developer.apple.com/wwdc19/713/).
-
 ## See Also
 
 - [class NWProtocolTCP](nwprotocoltcp.md)
@@ -42,4 +40,4 @@ This sample code project is associated with WWDC22 session [`110339: Build devic
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/network/building-a-custom-peer-to-peer-protocol)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Network/building-a-custom-peer-to-peer-protocol)*

@@ -1,6 +1,6 @@
 # convolution5X5()
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: clm
 
 Applies a convolution 5 x 5 filter to the `RGBA` components image.
@@ -29,8 +29,6 @@ This method applies a 5 x 5 convolution to the `RGBA` components of an image. Th
 The convolution 5 x 5 filter uses the following properties:
 
 > **Note**: When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
-
-When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
 
 The following code creates a filter that blurs the input image:
 

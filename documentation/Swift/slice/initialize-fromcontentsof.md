@@ -32,11 +32,7 @@ The returned index is the index of the next uninitialized element in the buffer 
 
 > **Note**: `self.count` >= `source.count`
 
-`self.count` >= `source.count`
-
 > **Note**: The memory regions referenced by `source` and this buffer slice must not overlap.
-
-The memory regions referenced by `source` and this buffer slice must not overlap.
 
 ## Parameters
 

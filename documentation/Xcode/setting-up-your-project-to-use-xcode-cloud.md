@@ -21,8 +21,6 @@ To create an app record, you need to have the App Manager, Admin, or Account Hol
 
 > **Note**: Depending on how much you use Xcode Cloud, you may need an optional Xcode Cloud subscription plan. To manage Xcode Cloud subscription plans, you need the Account Holder role. For more information on subscription plans, see [`Get started with Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/xcode-cloud/get-started/).
 
-Depending on how much you use Xcode Cloud, you may need an optional Xcode Cloud subscription plan. To manage Xcode Cloud subscription plans, you need the Account Holder role. For more information on subscription plans, see [`Get started with Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/xcode-cloud/get-started/).
-
 For more information about roles in App Store Connect, see [`Role permissions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/role-permissions).
 
 ##### Configure Your Project and Workspace
@@ -38,8 +36,6 @@ If you create a project from a template, the default settings automatically meet
 
 > ❗ **Important**: Xcode Cloud requires a consistent Xcode project or workspace that’s continuously present. If you use a third-party tool that dynamically generates or edits your project or workspace, the initial configuration of Xcode Cloud and subsequent builds may fail.
 
-Xcode Cloud requires a consistent Xcode project or workspace that’s continuously present. If you use a third-party tool that dynamically generates or edits your project or workspace, the initial configuration of Xcode Cloud and subsequent builds may fail.
-
 ##### Use a Remote Source Control Repository
 
 You need a remote repository using Git to use Xcode Cloud. To learn more about using source control with Git in Xcode, see [`Source control management`](source-control-management.md).
@@ -51,8 +47,6 @@ Xcode Cloud supports the following source code management (SCM) providers:
 - [`GitLab`](https://developer.apple.comhttps://gitlab.com) and [`self-managed GitLab instances`](https://developer.apple.comhttps://about.gitlab.com/install)
 
 > **Note**: If you use an IP allow list either on a self-hosted or cloud SCM provider — such as Bitbucket Server or GitHub Enterprise — make sure Xcode Cloud has access to your Git server. Check your firewall’s inbound HTTPS allow list and grant Xcode Cloud access to your Git server by adding the IP address ranges `17.58.0.0/18`, `17.58.192.0/18`, and `57.103.0.0/22`.
-
-If you use an IP allow list either on a self-hosted or cloud SCM provider — such as Bitbucket Server or GitHub Enterprise — make sure Xcode Cloud has access to your Git server. Check your firewall’s inbound HTTPS allow list and grant Xcode Cloud access to your Git server by adding the IP address ranges `17.58.0.0/18`, `17.58.192.0/18`, and `57.103.0.0/22`.
 
 Additionally, you need a certain permission or role to connect Xcode Cloud to your Git repository. The exact permission depends on the SCM provider you use:
 
@@ -72,4 +66,4 @@ If you don’t have the required role or permission, work with a team member who
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/setting-up-your-project-to-use-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/setting-up-your-project-to-use-xcode-cloud)*

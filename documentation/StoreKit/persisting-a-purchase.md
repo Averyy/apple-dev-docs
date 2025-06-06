@@ -1,6 +1,6 @@
 # Persisting a purchase
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Keep a persistent record of a purchase to continue making the product available as needed.
 
@@ -15,8 +15,6 @@ After making a product available, your app needs to make a persistent record of 
 When using the user defaults system or iCloud, your app can store a value, such as a number or Boolean value, or a copy of the transaction receipt. In macOS, users can edit the user defaults system using the `defaults` command. Storing a receipt requires more application logic, but protects the persistent record from tampering.
 
 > **Note**:  When persisting with iCloud, your app’s persistent record syncs across devices, but your app is responsible for downloading any associated content on other devices.
-
- When persisting with iCloud, your app’s persistent record syncs across devices, but your app is responsible for downloading any associated content on other devices.
 
 ##### Persist Purchases Using the App Receipt
 
@@ -46,4 +44,4 @@ Send a copy of the receipt to your server, along with credentials or an identifi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/persisting-a-purchase)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/persisting-a-purchase)*

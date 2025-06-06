@@ -1,6 +1,6 @@
 # Adding hardware keyboard support to your app
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Enhance interactions with your app by handling raw keyboard events, writing custom keyboard shortcuts, and working with gesture recognizers.
 
@@ -13,8 +13,6 @@ Enhance interactions with your app by handling raw keyboard events, writing cust
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [`10109: Hardware Keyboard Best Practices`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10109/).
-
-This sample code project is associated with WWDC20 session [`10109: Hardware Keyboard Best Practices`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10109/).
 
 ## See Also
 
@@ -30,4 +28,4 @@ This sample code project is associated with WWDC20 session [`10109: Hardware Key
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/adding-hardware-keyboard-support-to-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/adding-hardware-keyboard-support-to-your-app)*

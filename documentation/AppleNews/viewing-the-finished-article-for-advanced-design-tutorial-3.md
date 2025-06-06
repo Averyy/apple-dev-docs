@@ -1,6 +1,6 @@
 # Viewing the Finished Article for Advanced Design Tutorial 3
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 See the full JSON code from this tutorial.
 
@@ -11,8 +11,6 @@ This page brings together everything from this tutorial as a template that you c
 You can copy this template (which is also the `article.json` file in `Desktop/News_Design_Tutorial_Advanced/News_Design_Tutorial_Advanced_Article_3`) and modify it to create your own News articles with the effects from this tutorial. See [`Download the Article Bundle Examples`](setting-up-the-advanced-tutorials#Download-the-Article-Bundle-Examples.md). To preview this article, see [`Preview the Article Bundle Examples`](setting-up-the-introductory-tutorial#Preview-the-Article-Bundle-Examples.md).
 
 > **Note**:  If your `article.json` file refers to an image using a URL that begins with `bundle://`, that image must be located within the same folder as your `article.json` file.
-
- If your `article.json` file refers to an image using a URL that begins with `bundle://`, that image must be located within the same folder as your `article.json` file.
 
 ```json
 {
@@ -841,4 +839,4 @@ You can copy this template (which is also the `article.json` file in `Desktop/Ne
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/viewing-the-finished-article-for-advanced-design-tutorial-3)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/viewing-the-finished-article-for-advanced-design-tutorial-3)*

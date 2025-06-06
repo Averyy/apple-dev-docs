@@ -1,6 +1,6 @@
 # Presenting Content Proposals in tvOS
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Display a preview of an upcoming media item at the conclusion of the currently playing media item.
 
@@ -61,8 +61,6 @@ override var preferredPlayerViewFrame: CGRect {
 When the system presents the proposal, the player’s view automatically animates to the specified frame.
 
 > **Note**:  To lay out your content relative to the newly sized and positioned video frame, you use the [`UILayoutGuide`](https://developer.apple.com/documentation/UIKit/UILayoutGuide) provided by the view controller’s [`playerLayoutGuide`](avcontentproposalviewcontroller/playerlayoutguide.md) property.
-
- To lay out your content relative to the newly sized and positioned video frame, you use the [`UILayoutGuide`](https://developer.apple.com/documentation/UIKit/UILayoutGuide) provided by the view controller’s [`playerLayoutGuide`](avcontentproposalviewcontroller/playerlayoutguide.md) property.
 
 ##### Add Controls to the Content Proposal
 
@@ -183,4 +181,4 @@ func playerViewController(_ playerViewController: AVPlayerViewController, didAcc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/presenting-content-proposals-in-tvos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/presenting-content-proposals-in-tvos)*

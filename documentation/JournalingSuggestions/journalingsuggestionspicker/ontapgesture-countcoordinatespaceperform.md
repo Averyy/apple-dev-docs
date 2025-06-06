@@ -1,6 +1,6 @@
 # onTapGesture(count:coordinateSpace:perform:)
 
-**Framework**: Journaling Suggestions  
+**Framework**: Journalingsuggestions  
 **Kind**: method
 
 Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
@@ -23,8 +23,6 @@ func onTapGesture(count: Int = 1, coordinateSpace: CoordinateSpace = .local, per
 Use this method to perform the specified `action` when the user clicks or taps on the modified view `count` times. The action closure receives the location of the interaction.
 
 > **Note**: If you create a control that’s functionally equivalent to a `Button`, use `ButtonStyle` to create a customized button instead.
-
-If you create a control that’s functionally equivalent to a `Button`, use `ButtonStyle` to create a customized button instead.
 
 The following code adds a tap gesture to a `Circle` that toggles the color of the circle based on the tap location.
 

@@ -1,6 +1,6 @@
 # isMultiThreaded
 
-**Framework**: OpenGL ES  
+**Framework**: Opengles  
 **Kind**: property
 
 A Boolean value that determines whether OpenGL ES defers work to another thread.
@@ -27,9 +27,7 @@ If the current device does not support multithreaded OpenGL ES, the value of th
 
 > **Note**:  Enabling multithreading has both costs and benefits to performance—you should choose a concurrency strategy that provides the most benefit to your app. For details, see [`Concurrency and OpenGL ES`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/ConcurrencyandOpenGLES/ConcurrencyandOpenGLES.html#//apple_ref/doc/uid/TP40008793-CH409) in [`OpenGL ES Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793).
 
- Enabling multithreading has both costs and benefits to performance—you should choose a concurrency strategy that provides the most benefit to your app. For details, see [`Concurrency and OpenGL ES`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/ConcurrencyandOpenGLES/ConcurrencyandOpenGLES.html#//apple_ref/doc/uid/TP40008793-CH409) in [`OpenGL ES Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793).
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/opengles/eaglcontext/ismultithreaded)*
+*[View on Apple Developer](https://developer.apple.com/documentation/OpenGLES/eaglcontext/ismultithreaded)*

@@ -1,6 +1,6 @@
 # restoreWindow(withIdentifier:state:completionHandler:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Invoked to request that a window be restored.
@@ -26,8 +26,6 @@ If the receiver knows how to restore the identified window, it should invoke the
 The receiver is app is passed the identifier of the window, which allows it to quickly check for known windows.  For example, you might give your preferences window an identifier of “preferences” in the nib, and then check for that identifier in your implementation.  The receiver is also passed the `NSCoder` instance containing the combined restorable state of the window, its delegate, the window controller, and any document.  The receiver may decode information previously stored in the coder to determine what window to restore.
 
 > **Note**:  The app may invoke the completion handler before or after the method returns, and on any queue.  If you plan to invoke the completion handler after the method returns, you must copy the completion handler via the `copy` method. It is not necessary or recommended for implementations of this method to order restored windows onscreen (for example, the window may have been minimized, in which case it will not be ordered onscreen)
-
- The app may invoke the completion handler before or after the method returns, and on any queue.  If you plan to invoke the completion handler after the method returns, you must copy the completion handler via the `copy` method. It is not necessary or recommended for implementations of this method to order restored windows onscreen (for example, the window may have been minimized, in which case it will not be ordered onscreen)
 
 ## Parameters
 

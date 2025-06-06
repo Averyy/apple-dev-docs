@@ -1,6 +1,6 @@
 # Composing custom layouts with SwiftUI
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Arrange views in your app’s interface using layout tools that SwiftUI provides.
 
@@ -17,8 +17,6 @@ This sample app demonstrates many of the layout tools that SwiftUI provides by b
 ![An iPhone showing the layout of the app, with the three main sections called out. The group of avatars are in a circular arrangement at the top. The leaderboard grid is in the middle. The equal-width voting buttons are at the bottom.](https://docs-assets.developer.apple.com/published/40ad148526/rendered2x-1658538467.png)
 
 > **Note**: This sample code project is associated with WWDC22 session [`10056: Compose custom layouts with SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10056/).
-
-This sample code project is associated with WWDC22 session [`10056: Compose custom layouts with SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10056/).
 
 ##### 4064000
 
@@ -160,8 +158,6 @@ let spacing = cache.spacing
 Contrast this with the equal-width horizontal stack, which doesn’t use a cache, and instead calculates the size and spacing information every time it needs that information.
 
 > **Note**: Most simple layouts, including the equal-width vertical stack, don’t gain much efficiency from using a cache. Developers can profile their app with Instruments to find out whether a particular layout type actually benefits from a cache.
-
-Most simple layouts, including the equal-width vertical stack, don’t gain much efficiency from using a cache. Developers can profile their app with Instruments to find out whether a particular layout type actually benefits from a cache.
 
 ##### 4064004
 

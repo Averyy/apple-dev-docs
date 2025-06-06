@@ -1,6 +1,6 @@
 # Unlocking purchased content
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Deliver content to the customer after validating the purchase.
 
@@ -36,8 +36,6 @@ Download larger files only when needed. Separating content from your app bundle 
 
 > **Note**:  You can’t patch your app binary or download executable code. Your app needs to contain all executable code necessary to support all of its functionality when you submit it. If a new product requires code changes, submit an updated version of your app.
 
- You can’t patch your app binary or download executable code. Your app needs to contain all executable code necessary to support all of its functionality when you submit it. If a new product requires code changes, submit an updated version of your app.
-
 ##### Load Local Content
 
 Load local content using the `NSBundle` class as you load other resources from your app bundle.
@@ -62,8 +60,6 @@ You can use [`On-Demand Resources`](https://developer.apple.comhttps://developer
 
 > ❗ **Important**:  [`SKDownload`](skdownload.md) and its related functionality are deprecated. The following information is for apps that already host content on Apple’s servers and use [`SKDownload`](skdownload.md).
 
- [`SKDownload`](skdownload.md) and its related functionality are deprecated. The following information is for apps that already host content on Apple’s servers and use [`SKDownload`](skdownload.md).
-
 Apps can use Apple-hosted content for downloaded files. You create an Apple-hosted content bundle using the In-App Purchase Content target in Xcode and submit it to App Store Connect. Apple’s servers store your app’s content using the same infrastructure that supports other large-scale operations, such as the App Store. Apple-hosted content automatically downloads in the background even if your app isn’t running.
 
 If you need to support older versions of iOS or share your server infrastructure across multiple platforms, you may choose to host your own content using your own server infrastructure.
@@ -79,8 +75,6 @@ Ensure that your app handles errors gracefully. For example, if the device runs 
 While the content is downloading, update your user interface using the values of the [`progress`](skdownload/progress.md) and [`timeRemaining`](skdownload/timeremaining.md) properties. You can use the [`pause(_:)`](skpaymentqueue/pause(_:).md), [`resume(_:)`](skpaymentqueue/resume(_:).md), and [`cancel(_:)`](skpaymentqueue/cancel(_:).md) methods of `SKPaymentQueue` from your UI to let the user control in-progress downloads. Use the [`downloadState`](skdownload/downloadstate.md) property to determine whether the download completes. Don’t use the [`progress`](skdownload/progress.md) or [`timeRemaining`](skdownload/timeremaining.md) property of the download object to check its status; these properties are for updating your UI.
 
 > **Note**:  Download all Apple-hosted content before finishing the transaction. After a transaction is complete, its download objects become unusable.
-
- Download all Apple-hosted content before finishing the transaction. After a transaction is complete, its download objects become unusable.
 
 In iOS, your app can manage the downloaded files. The StoreKit framework saves these files for you in the `Caches` directory with the backup flag unset. After the download completes, your app is responsible for moving these files to the appropriate location. For content that can be deleted if the device runs out of disk space (and downloaded again later by your app), keep the files in the `Caches` directory. Otherwise, move the files to the `Documents` folder and set the flag to exclude them from user backups.
 
@@ -98,4 +92,4 @@ In macOS, the system manages the downloaded files; your app can’t move or dele
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/unlocking-purchased-content)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/unlocking-purchased-content)*

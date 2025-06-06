@@ -1,6 +1,6 @@
 # com.apple.developer.driverkit.transport.pci
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: dictionary
 
 An array of PCI device descriptors that your custom driver supports.
@@ -23,8 +23,6 @@ Examples:
 | `IOPCIClassMatch` | `0x02000000&0xffff0000` | Matches a device whose class code is `0x0200zz` (where ‘`z`’ is any hexadecimal digit), an ethernet device. |
 
 > **Note**:  You also use the keys defined by this entitlement in your app’s `Info.plist`, to identify which devices your driver loads on.
-
- You also use the keys defined by this entitlement in your app’s `Info.plist`, to identify which devices your driver loads on.
 
 ## Topics
 

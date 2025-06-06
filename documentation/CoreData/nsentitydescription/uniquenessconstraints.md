@@ -1,6 +1,6 @@
 # uniquenessConstraints
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: property
 
 An array of arrays that contains one or more attributes with a value that must be unique over the instances of that entity.
@@ -27,8 +27,6 @@ Each inner array contains one or more [`NSAttributeDescription`](nsattributedesc
 This value forms part of the entity’s version hash. Stores that don’t support uniqueness constraints must refuse to initialize when receiving a model that contains such constraints.
 
 > **Note**:  Uniqueness constraint violations can be computationally expensive to handle. The recommendation is to use only one uniqueness constraint per entity hierarchy, although subentites may extend a superentity’s constraint.
-
- Uniqueness constraint violations can be computationally expensive to handle. The recommendation is to use only one uniqueness constraint per entity hierarchy, although subentites may extend a superentity’s constraint.
 
 ## See Also
 

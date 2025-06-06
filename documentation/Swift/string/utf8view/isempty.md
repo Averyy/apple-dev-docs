@@ -36,8 +36,6 @@ if horseName.isEmpty {
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

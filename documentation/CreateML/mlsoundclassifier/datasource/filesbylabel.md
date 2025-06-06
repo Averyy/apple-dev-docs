@@ -1,6 +1,6 @@
 # MLSoundClassifier.DataSource.filesByLabel(_:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: case
 
 Creates a data source from a dictionary.
@@ -50,8 +50,6 @@ let soundClassifier = try MLSoundClassifier(trainingData: trainingData)
 The value for each label key is an array of URLs to audio files of laughter and applause, respectively.
 
 > **Note**: Use a minimum of 10 sound files per label to train a sound classifier.
-
-Use a minimum of 10 sound files per label to train a sound classifier.
 
 ## Parameters
 

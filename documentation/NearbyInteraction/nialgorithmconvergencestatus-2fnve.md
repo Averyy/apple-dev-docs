@@ -1,6 +1,6 @@
 # NIAlgorithmConvergenceStatus
 
-**Framework**: Nearby Interaction  
+**Framework**: Nearbyinteraction  
 **Kind**: enum
 
 The possible states of Camera Assistance.
@@ -25,8 +25,6 @@ When the app enables Camera Assistance by setting [`isCameraAssistanceEnabled`](
 The framework may require user action before Camera Assistance is fully operational at runtime. This enumeration indicates whether Camera Assistance currently functions as expected on device (convergence state [`NIAlgorithmConvergenceStatus.converged`](nialgorithmconvergencestatus-2fnve/converged.md)), and otherwise, the [`NIAlgorithmConvergenceStatus.Reason`](nialgorithmconvergencestatus-2fnve/reason.md) defines the recommended user actions when status is [`NIAlgorithmConvergenceStatus.notConverged(_:)`](nialgorithmconvergencestatus-2fnve/notconverged(_:).md).
 
 > **Note**: The Objective-C version of this enumeration is [`Algorithm Convergence Status`](algorithm-convergence-status.md).
-
-The Objective-C version of this enumeration is [`Algorithm Convergence Status`](algorithm-convergence-status.md).
 
 ## Topics
 
@@ -67,4 +65,4 @@ The Objective-C version of this enumeration is [`Algorithm Convergence Status`](
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve)*
+*[View on Apple Developer](https://developer.apple.com/documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve)*

@@ -38,8 +38,6 @@ The Widget Extension template provides all you need to start building your contr
 
 > **Note**: Live Activities use WidgetKit and share many aspects of their design and implementation with the widgets in your app. If your app would benefit from Live Activities, consider implementing them at the same time you add controls or widgets. For more information about Live Activities, read [`Displaying live data with Live Activities`](https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities).
 
-Live Activities use WidgetKit and share many aspects of their design and implementation with the widgets in your app. If your app would benefit from Live Activities, consider implementing them at the same time you add controls or widgets. For more information about Live Activities, read [`Displaying live data with Live Activities`](https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities).
-
 The widget extension template provides an initial implementation of a `ControlWidgetToggle`, a [`ControlWidgetTemplate`](https://developer.apple.com/documentation/SwiftUI/ControlWidgetTemplate) type that starts and stops a timer. The body property determines if a control is static or configurable. Controls use a [`StaticControlConfiguration`](staticcontrolconfiguration.md) for the body property by default. Provide people with the ability to configure a control by using [`AppIntentControlConfiguration`](appintentcontrolconfiguration.md).
 
 The following code creates a nonconfigurable control toggle that starts and stops a timer. The `kind` is the control’s unique identifier and the action of the `ControlWidgetToggle` executes the app intent specified:
@@ -155,8 +153,6 @@ enum LaunchAppEnum: String, AppEnum {
 
 > **Note**: Use a control button to launch a locked camera capture extension. For more information about creating a locked camera capture extension, refer to [`Creating a camera experience for the Lock Screen`](https://developer.apple.com/documentation/LockedCameraCapture/Creating-a-camera-experience-for-the-Lock-Screen).
 
-Use a control button to launch a locked camera capture extension. For more information about creating a locked camera capture extension, refer to [`Creating a camera experience for the Lock Screen`](https://developer.apple.com/documentation/LockedCameraCapture/Creating-a-camera-experience-for-the-Lock-Screen).
-
 ##### Add Controls to Your Widget Bundle
 
 The [`WidgetBundle`](https://developer.apple.com/documentation/SwiftUI/WidgetBundle) in the Widget extension provides controls and widgets to the system from your app. List all controls and widgets inside the `WidgetBundle`. The order of controls and widgets in the `WidgetBundle` defines the order that the controls gallery and widgets gallery will display them in.
@@ -186,4 +182,4 @@ struct MyControlsAndWidgetsBundle: WidgetBundle {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/creating-controls-to-perform-actions-across-the-system)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/creating-controls-to-perform-actions-across-the-system)*

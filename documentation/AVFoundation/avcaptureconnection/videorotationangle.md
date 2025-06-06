@@ -1,6 +1,6 @@
 # videoRotationAngle
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A rotation angle the connection applies to a video flowing through it.
@@ -28,13 +28,9 @@ Capture connections to [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md)
 
 > 💡 **Tip**:  Avoid potential performance issues by only rotating video with a capture connection when necessary.
 
- Avoid potential performance issues by only rotating video with a capture connection when necessary.
-
 You can rotate the video of a movie file you record with an [`AVAssetWriter`](avassetwriter.md) instance by applying the rotation to an [`AVAssetWriterInput`](avassetwriterinput.md) instance’s [`transform`](avassetwriterinput/transform.md) property. This approach avoids the performance costs that come with rotating each video frame.
 
 > **Note**:  Your app needs to convert the [`videoRotationAngleForHorizonLevelCapture`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md) or [`videoRotationAngleForHorizonLevelPreview`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md) value from degrees to radians for transform properties.
-
- Your app needs to convert the [`videoRotationAngleForHorizonLevelCapture`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md) or [`videoRotationAngleForHorizonLevelPreview`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md) value from degrees to radians for transform properties.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Understanding the navigation stack
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Learn about the navigation stack, links, and how to manage navigation types in your app’s structure.
 
@@ -14,15 +14,11 @@ A `NavigationPath` is a type-erased collection on which you can store a heteroge
 
 > 💡 **Tip**: Avoid using model types as elements of a navigation path. Make sure the elements of navigation paths are lightweight, and don’t use them as a mode of transport for data models.
 
-Avoid using model types as elements of a navigation path. Make sure the elements of navigation paths are lightweight, and don’t use them as a mode of transport for data models.
-
 Another element of the navigation stack is the , which encapsulates the views people can navigate to within your app.
 
 You can present destinations on a `NavigationStack` using:
 
 > **Note**: Value-destination and view-destination links don’t describe the visible stack directly; instead, they refer to the data added to the path.
-
-Value-destination and view-destination links don’t describe the visible stack directly; instead, they refer to the data added to the path.
 
 ##### Present View Destination Links
 
@@ -307,8 +303,6 @@ struct ValueView: View {
 
 > **Note**: Both value- and view-destination links ultimately push a user-visible view onto the stack. However, pushed value-destinations are reflected in the stack’s `path` `Binding` (if provided), while pushed view-destinations aren’t.
 
-Both value- and view-destination links ultimately push a user-visible view onto the stack. However, pushed value-destinations are reflected in the stack’s `path` `Binding` (if provided), while pushed view-destinations aren’t.
-
 When composed together, the navigation APIs allow you to use both styles of links, depending on what works best.
 
 Here, when someone taps on the link “View Mint Color”, SwiftUI pushes the value-based destination link onto the stack, followed by a view-destination link:
@@ -527,4 +521,4 @@ To learn more about navigation stacks, links and paths, see [`Bringing robust na
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/understanding-the-composition-of-navigation-stack)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/understanding-the-composition-of-navigation-stack)*

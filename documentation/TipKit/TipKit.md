@@ -1,6 +1,6 @@
 # TipKit
 
-**Framework**: TipKit  
+**Framework**: Tipkit  
 **Kind**: module
 
 Display tips that help people discover features in your app.
@@ -27,8 +27,6 @@ As you design tips for your app, ensure you don’t overwhelm your users. Use ti
 For design guidance on tips, see [`Human Interface Guidelines > Offering help`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/offering-help).
 
 > **Note**: Session 10229: [`Make features discoverable with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10229/)
-
-Session 10229: [`Make features discoverable with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10229/)
 
 ```swift
 import SwiftUI

@@ -30,8 +30,6 @@ The time zone overrides the time zone of the `Calendar` for the purposes of this
 
 > **Note**:  If you want “date information in a given time zone” in order to display it, you should use `DateFormatter` to format the date.
 
- If you want “date information in a given time zone” in order to display it, you should use `DateFormatter` to format the date.
-
 ## Parameters
 
 - `timeZone`: The   to use.

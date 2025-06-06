@@ -1,6 +1,6 @@
 # Responding to VoIP Notifications from PushKit
 
-**Framework**: PushKit
+**Framework**: Pushkit
 
 Receive incoming Voice-over-IP (VoIP) push notifications and use them to display the system call interface to the user.
 
@@ -11,8 +11,6 @@ If your app provides Voice-over-IP (VoIP) phone services, you may use PushKit to
 For apps built using the iOS 13 SDK or later, PushKit requires you to use CallKit when handling VoIP calls. CallKit ensures that apps providing call-related services on a user’s device work seamlessly together on the user’s device, and respect features like Do Not Disturb. CallKit also operates the system’s call-related UIs, including the incoming or outgoing call screens. Use CallKit to present these interfaces and manage interactions with them.
 
 > ❗ **Important**: If you are unable to support CallKit in your app, you cannot use PushKit to handle push notifications. Instead, configure your app’s push notification support with the User Notifications framework. If you need to do work in response to an incoming notification—for example, to decrypt content—use a notification service extension to perform that work. For more information about handling notifications and implementing a notification service extension, see [`User Notifications`](https://developer.apple.com/documentation/UserNotifications).
-
-If you are unable to support CallKit in your app, you cannot use PushKit to handle push notifications. Instead, configure your app’s push notification support with the User Notifications framework. If you need to do work in response to an incoming notification—for example, to decrypt content—use a notification service extension to perform that work. For more information about handling notifications and implementing a notification service extension, see [`User Notifications`](https://developer.apple.com/documentation/UserNotifications).
 
 For information about how to configure your app to app to support PushKit, see [`Supporting PushKit Notifications in Your App`](supporting-pushkit-notifications-in-your-app.md).
 
@@ -98,8 +96,6 @@ If the system allows your call to proceed, the [`reportNewIncomingCall(with:upda
 
 > **Note**: If you didn’t put caller information in your notification’s payload, call the [`reportCall(with:updated:)`](https://developer.apple.com/documentation/CallKit/CXProvider/reportCall(with:updated:)) method of your app’s provider object to update the calling interface. You can call that method at any time to update calls. For example, call it after your app fetches updated caller information from your VoIP server.
 
-If you didn’t put caller information in your notification’s payload, call the [`reportCall(with:updated:)`](https://developer.apple.com/documentation/CallKit/CXProvider/reportCall(with:updated:)) method of your app’s provider object to update the calling interface. You can call that method at any time to update calls. For example, call it after your app fetches updated caller information from your VoIP server.
-
 For more information about how to handle user interactions with the call interface, see the methods of [`CXProviderDelegate`](https://developer.apple.com/documentation/CallKit/CXProviderDelegate).
 
 ##### Respond to Call Hang Ups and Failures
@@ -120,4 +116,4 @@ After sending the initial push notification, don’t send additional push notifi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/pushkit/responding-to-voip-notifications-from-pushkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PushKit/responding-to-voip-notifications-from-pushkit)*

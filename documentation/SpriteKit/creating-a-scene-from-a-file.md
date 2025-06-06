@@ -1,6 +1,6 @@
 # Creating a Scene from a File
 
-**Framework**: SpriteKit
+**Framework**: Spritekit
 
 Load a scene that you configure in Xcode’s scene editor.
 
@@ -38,9 +38,7 @@ skView.presentScene(scene)
 
 > **Note**:  The `.sks` file extension is left out of the `String` name argument to [`init(fileNamed:)`](sknode/init(filenamed:).md).
 
- The `.sks` file extension is left out of the `String` name argument to [`init(fileNamed:)`](sknode/init(filenamed:).md).
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/creating-a-scene-from-a-file)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/creating-a-scene-from-a-file)*

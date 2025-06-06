@@ -1,6 +1,6 @@
 # textureIndex
 
-**Framework**: Compositor Services  
+**Framework**: Compositorservices  
 **Kind**: property
 
 The index of the view’s textures in the drawable.
@@ -22,8 +22,6 @@ Compositor Services places the color and depth textures for this view at same in
 
 > **Note**:  If you draw with array-based textures, retrieve and apply the index from [`sliceIndex`](layerrenderer/drawable/view/texturemap-swift.struct/sliceindex.md) instead.
 
- If you draw with array-based textures, retrieve and apply the index from [`sliceIndex`](layerrenderer/drawable/view/texturemap-swift.struct/sliceindex.md) instead.
-
 ## See Also
 
 - [var textureMap: LayerRenderer.Drawable.View.TextureMap](layerrenderer/drawable/view/texturemap-swift.property.md)
@@ -36,4 +34,4 @@ Compositor Services places the color and depth textures for this view at same in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/layerrenderer/drawable/view/texturemap-swift.struct/textureindex)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CompositorServices/layerrenderer/drawable/view/texturemap-swift.struct/textureindex)*

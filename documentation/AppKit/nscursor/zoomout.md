@@ -1,6 +1,6 @@
 # zoomOut
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 Returns the zoom-out cursor.
@@ -21,9 +21,7 @@ class var zoomOut: NSCursor { get }
 
 > **Note**: This cursor is used to indicate zooming out of a canvas or object.
 
-This cursor is used to indicate zooming out of a canvas or object.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscursor/zoomout)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscursor/zoomout)*

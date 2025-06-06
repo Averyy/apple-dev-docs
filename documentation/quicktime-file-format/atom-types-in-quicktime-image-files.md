@@ -1,6 +1,6 @@
 # Atom types in QuickTime image files
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Build QuickTime image files with atoms.
 
@@ -40,11 +40,7 @@ The following table shows an example QuickTime image file containing a JPEG-comp
 
 > ❗ **Important**: The exact order and size of atoms is not guaranteed to match the example in the preceeding figure. Applications reading QuickTime image files should always use the atom size to traverse the file and ignore atoms of unrecognized types.
 
-The exact order and size of atoms is not guaranteed to match the example in the preceeding figure. Applications reading QuickTime image files should always use the atom size to traverse the file and ignore atoms of unrecognized types.
-
 > **Note**: Like QuickTime movie files, QuickTime image files are big-endian. However, image data is typically stored in the same byte order as specified by the particular compression format.
-
-Like QuickTime movie files, QuickTime image files are big-endian. However, image data is typically stored in the same byte order as specified by the particular compression format.
 
 ## See Also
 

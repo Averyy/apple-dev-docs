@@ -1,6 +1,6 @@
 # Accessing the camera while multitasking on iPad
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 
@@ -9,8 +9,6 @@ Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Mana
 Camera access on iPad is normally limited to apps running in full-screen mode. If your app enters a multitasking mode, such as Split View or Stage Manager, the system disables the camera by default. In iPadOS 16 and later, your app can enable using the camera while multitasking.
 
 > **Note**:  Session 110429: [`Discover advancements in iOS camera capture: Depth, focus, and multitasking`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110429/)
-
- Session 110429: [`Discover advancements in iOS camera capture: Depth, focus, and multitasking`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110429/)
 
 Multitasking modes enable people to work with multiple apps at the same time. There are four kinds:
 
@@ -24,8 +22,6 @@ When you enable multitasking camera access, your app can run alongside other for
 When operating the camera capture system, using the multitasking feature introduces the possibility of performance degradation because of other apps consuming resources like memory, CPU, and GPU. Increased device temperature and power usage can lead to frame drops or poor capture quality.
 
 > ❗ **Important**:  Enabling multitasking camera access isn’t recommended if your app uses resource-intensive capabilities such as 4K video capture, or Apple ProRAW or Deep Fusion image capture. Even if your app doesn’t use resource-intensive capabilities, you should test it alongside other resource-intensive apps and with Stage Manager to determine if there are performance issues.
-
- Enabling multitasking camera access isn’t recommended if your app uses resource-intensive capabilities such as 4K video capture, or Apple ProRAW or Deep Fusion image capture. Even if your app doesn’t use resource-intensive capabilities, you should test it alongside other resource-intensive apps and with Stage Manager to determine if there are performance issues.
 
 For information about Split View and Slide Over modes, see [`Use multitasking on your iPad`](https://developer.apple.comhttps://support.apple.com/en-us/HT207582). For information about Stage Manager on iPad, see [`Move, resize, and organize windows with Stage Manager on iPad`](https://developer.apple.comhttps://support.apple.com/guide/ipad/move-resize-and-organize-windows-ipad1240f36f/ipados).
 
@@ -54,8 +50,6 @@ Enabling your app to use the camera while multitasking extends to Picture in Pic
 While multitasking, after an app finishes recording a video with [`AVCaptureMovieFileOutput`](https://developer.apple.com/documentation/AVFoundation/AVCaptureMovieFileOutput) or [`AVAssetWriter`](https://developer.apple.com/documentation/AVFoundation/AVAssetWriter), the system displays an alert one time only to inform the user about the potential for lower-quality videos.
 
 > ❗ **Important**:  Apps that have a deployment target earlier than iOS 16 require the [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access) entitlement to enable accessing the camera while multitasking.
-
- Apps that have a deployment target earlier than iOS 16 require the [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access) entitlement to enable accessing the camera while multitasking.
 
 ##### Configure Your App for Split View or Slide Over Mode
 
@@ -161,4 +155,4 @@ The notification object’s user information dictionary contains the reason for 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/accessing-the-camera-while-multitasking-on-ipad)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/accessing-the-camera-while-multitasking-on-ipad)*

@@ -29,8 +29,6 @@ After this method is called, no delegate callbacks are called by the receiver.
 
 > **Note**:  If automatic reference counting is not used, the input and output streams returned through the parameters are , which means that you are responsible for releasing them to avoid memory leaks.
 
- If automatic reference counting is not used, the input and output streams returned through the parameters are , which means that you are responsible for releasing them to avoid memory leaks.
-
 ## Parameters
 
 - `inputStream`: Upon return, the input stream for the receiver. Pass   if you do not need this stream.

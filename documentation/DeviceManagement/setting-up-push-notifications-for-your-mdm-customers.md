@@ -1,6 +1,6 @@
 # Setting Up Push Notifications for Your MDM Customers
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Create and sign a certificate signing request (CSR) to enable push notifications.
 
@@ -16,8 +16,6 @@ During the setup process for your service, create an operation that generates a 
 
 > **Note**:  The private key for this CSR must remain within the instance of your MDM service that the customer has access to. You use this private key to sign the MDM push certificate. Be certain that the MDM service instance doesn’t make this private key available to you (the vendor).
 
- The private key for this CSR must remain within the instance of your MDM service that the customer has access to. You use this private key to sign the MDM push certificate. Be certain that the MDM service instance doesn’t make this private key available to you (the vendor).
-
 Upload the CSR to your internal infrastructure and then perform the signing process.
 
 ##### Sign the Csr
@@ -31,8 +29,6 @@ Download an MDM signing certificate and its trust certificates from the iOS prov
 5. Create a Push Certificate Request `plist` and encode it as `Base64`.
 
 > **Note**:  Don’t share the private key from your MDM signing certificate with anyone, including your customers or resellers of your solution. Ensure that the process of signing the CSR takes place within your internal infrastructure and isn’t accessible to customers.
-
- Don’t share the private key from your MDM signing certificate with anyone, including your customers or resellers of your solution. Ensure that the process of signing the CSR takes place within your internal infrastructure and isn’t accessible to customers.
 
 Make sure that the `PushCertCertificateChain` value contains a complete certificate chain all the way back to a recognized root certificate, including the root certificate. This means it contains the following:
 
@@ -150,4 +146,4 @@ MIIDiTCCAnGgAwIBAgIIdv/cjbnBgEgwDQYJKoZIhvcNAQEFBQAwUjEaMBgGA1UEAwwRU0FDSSBUZXN0
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/setting-up-push-notifications-for-your-mdm-customers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/setting-up-push-notifications-for-your-mdm-customers)*

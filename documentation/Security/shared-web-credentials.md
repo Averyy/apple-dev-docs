@@ -12,8 +12,6 @@ The `Security.SecSharedCredentials` API provides functions for storing and reque
 
 > **Note**:  Accessing shared web credentials requires permission from the app, the website, and the user.
 
- Accessing shared web credentials requires permission from the app, the website, and the user.
-
 ## Topics
 
 ### First Steps
@@ -34,4 +32,4 @@ The `Security.SecSharedCredentials` API provides functions for storing and reque
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/shared-web-credentials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/shared-web-credentials)*

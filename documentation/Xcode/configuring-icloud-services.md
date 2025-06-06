@@ -24,8 +24,6 @@ After you add the iCloud capability, Xcode updates your target’s entitlements 
 
 > **Note**: If you later remove the iCloud capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable iCloud.
 
-If you later remove the iCloud capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable iCloud.
-
 ##### Enable One or More Icloud Services
 
 Prior to using an iCloud service to sync your users’ data across their devices, you must enable that service in Xcode to add the necessary entitlements to your app’s entitlements file. Use the checkbox next to the service’s name in the Services section of the iCloud capability to enable that service.
@@ -45,8 +43,6 @@ For more information, see [`iCloud Key-Value Store Entitlement`](https://develop
 
 > **Note**: Xcode automatically adds the Push Notifications capability to your target if you enable the CloudKit service because CloudKit uses push notifications to inform your app of server-side changes to your data. For more information, see [`Remote Records`](https://developer.apple.com/documentation/CloudKit/remote-records).
 
-Xcode automatically adds the Push Notifications capability to your target if you enable the CloudKit service because CloudKit uses push notifications to inform your app of server-side changes to your data. For more information, see [`Remote Records`](https://developer.apple.com/documentation/CloudKit/remote-records).
-
 ##### Manage Your Apps Icloud Containers
 
 After adding the iCloud capability, Xcode retrieves any existing iCloud containers from your developer account and displays them in the capability’s configuration section. Use the Refresh button below the list to re-fetch your account’s iCloud containers at any time.
@@ -60,8 +56,6 @@ Enable one or more iCloud containers in the list using their checkboxes. Convers
 - Xcode updates just the `com.apple.developer.icloud-container-identifiers` entitlement for apps that enable only CloudKit.
 
 > **Note**: To avoid breaking existing versions of your app that depend on the container association, Xcode doesn’t automatically dissociate a deselected container from your App ID in your developer account.
-
-To avoid breaking existing versions of your app that depend on the container association, Xcode doesn’t automatically dissociate a deselected container from your App ID in your developer account.
 
 To create a new iCloud container, perform the following steps:
 
@@ -102,4 +96,4 @@ Alternatively, you can access the console directly at [`icloud.developer.apple.c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-icloud-services)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-icloud-services)*

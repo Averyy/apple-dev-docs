@@ -43,8 +43,6 @@ The Browser Choice Screen Engagement Report provides details about users’ sele
 
 > **Note**: The user size of “Page view” events is different from that of “First-time download”, “Redownload”, “Open” and “Update” events. For the latter, the data is from users for whom Apple has data about their full journey through the choice screen. Those are a subset of the users for whom Apple has data about “Page view” events.
 
-The user size of “Page view” events is different from that of “First-time download”, “Redownload”, “Open” and “Update” events. For the latter, the data is from users for whom Apple has data about their full journey through the choice screen. Those are a subset of the users for whom Apple has data about “Page view” events.
-
 ## See Also
 
 - [AccessorySetupKit Accessory Picker Sessions](accessorysetupkit-accessory-picker-sessions.md)

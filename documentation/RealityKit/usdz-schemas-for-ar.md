@@ -1,6 +1,6 @@
 # USDZ schemas for AR
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Add augmented reality functionality to your 3D content using USDZ schemas.
 
@@ -17,8 +17,6 @@ Leveraging Pixar’s Universal Scene Description standard, USDZ delivers AR and 
 A USDZ file uses these schemas to add features to an augmented reality experience in AR Quick Look or [`RealityKit`](RealityKit.md) in place of `.reality` files`,` `.rcproject` files, or custom code to implement AR functionality. Reality Composer describes AR features in its USDZ export using these schemas, too (see `Exporting a Reality Composer Scene to USDZ`). To enable AR features in assets from a third-party digital content-creation (DCC) tool such as Maya or Houdini, edit the file in `.usda` textual format using the [`USD Toolset`](https://developer.apple.comhttps://graphics.pixar.com/usd/docs/USD-Toolset.html).
 
 > **Note**:  These new schemas (see [`Schema definitions for third-party DCCs`](schema-definitions-for-third-party-dccs.md)) are included in the Universal Scene Description specification as an addendum and are marked as preliminary. The addendum also adds metadata (name-value pairs; see [`Metadata`](https://developer.apple.comhttp://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Metadata)), and new data properties ([`Property`](https://developer.apple.comhttp://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Property)). To provide feedback on the addendum, use the [`Feedback Assistant`](https://developer.apple.comhttps://feedbackassistant.apple.com/welcome).
-
- These new schemas (see [`Schema definitions for third-party DCCs`](schema-definitions-for-third-party-dccs.md)) are included in the Universal Scene Description specification as an addendum and are marked as preliminary. The addendum also adds metadata (name-value pairs; see [`Metadata`](https://developer.apple.comhttp://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Metadata)), and new data properties ([`Property`](https://developer.apple.comhttp://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-Property)). To provide feedback on the addendum, use the [`Feedback Assistant`](https://developer.apple.comhttps://feedbackassistant.apple.com/welcome).
 
 ##### Implement Ar Functionality
 
@@ -67,4 +65,4 @@ The following illustration depicts a virtual castle rendered by a , the app or s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/usdz-schemas-for-ar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/usdz-schemas-for-ar)*

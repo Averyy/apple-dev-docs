@@ -1,6 +1,6 @@
 # gaugeColors
 
-**Framework**: ClockKit  
+**Framework**: Clockkit  
 **Kind**: property
 
 The colors of the gauge.
@@ -19,8 +19,6 @@ var gaugeColors: [UIColor]? { get }
 A gauge with more than one color appears as a gradient. The provider specifies the location of the colors using the [`gaugeColorLocations`](clkgaugeprovider/gaugecolorlocations.md) property. The [`gaugeColors`](clkgaugeprovider/gaugecolors.md) and [`gaugeColorLocations`](clkgaugeprovider/gaugecolorlocations.md) properties must have the same number of elements.
 
 > **Note**:  Tinted graphic complications display gauges using a solid color chosen by the user. The gauge colors have no affect on the appearance of these complications.
-
- Tinted graphic complications display gauges using a solid color chosen by the user. The gauge colors have no affect on the appearance of these complications.
 
 ## See Also
 

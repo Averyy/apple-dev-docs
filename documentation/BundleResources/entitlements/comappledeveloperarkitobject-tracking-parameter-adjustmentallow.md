@@ -1,6 +1,6 @@
 # Object-tracking parameter adjustment
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 A Boolean value that allows an app to use ARKit to track more objects with a higher frequency.
@@ -13,8 +13,6 @@ A Boolean value that allows an app to use ARKit to track more objects with a hig
 With this entitlement, you can use the [`ObjectTrackingProvider.TrackingConfiguration`](https://developer.apple.com/documentation/ARKit/ObjectTrackingProvider/TrackingConfiguration-swift.struct) to change object tracking parameters.
 
 > **Note**: Object-tracking parameter adjustment is only available in an immersive space. See [`Setting up access to ARKit data`](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy).
-
-Object-tracking parameter adjustment is only available in an immersive space. See [`Setting up access to ARKit data`](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy).
 
 ## See Also
 

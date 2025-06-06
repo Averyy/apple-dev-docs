@@ -28,8 +28,6 @@ The default scissor rectangle is the same size as the current render attachment,
 
 > **Note**:  You can change the render pass’s scissor rectangle configuration by calling this method again or by calling the [`setScissorRects(_:)`](mtlrendercommandencoder/setscissorrects(_:).md) method.
 
- You can change the render pass’s scissor rectangle configuration by calling this method again or by calling the [`setScissorRects(_:)`](mtlrendercommandencoder/setscissorrects(_:).md) method.
-
 ## Parameters
 
 - `rect`: An   instance that represents a rectangle that needs to lie completely within the current render attachment.

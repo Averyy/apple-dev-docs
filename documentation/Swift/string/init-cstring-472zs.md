@@ -27,8 +27,6 @@ This is identical to `init(cString: [CChar])` but operates on an unsigned sequen
 
 > **Note**: This initializer is deprecated. Use the initializer `String.init(decoding: array, as: UTF8.self)` instead, remembering that “\0” is a valid character in Swift.
 
-This initializer is deprecated. Use the initializer `String.init(decoding: array, as: UTF8.self)` instead, remembering that “\0” is a valid character in Swift.
-
 ## Parameters
 
 - `nullTerminatedUTF8`:    An array containing a null-terminated UTF-8 code unit sequence.

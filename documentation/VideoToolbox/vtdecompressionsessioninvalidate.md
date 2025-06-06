@@ -25,8 +25,6 @@ When you finish with a decompression session you created, call this function to 
 
 > **Note**:  A decompression session is automatically invalidated when its retain count reaches zero, but because sessions may be retained by multiple parties, it can be hard to predict when this will happen. Calling `VTDecompressionSessionInvalidate` ensures a deterministic, orderly teardown.
 
- A decompression session is automatically invalidated when its retain count reaches zero, but because sessions may be retained by multiple parties, it can be hard to predict when this will happen. Calling `VTDecompressionSessionInvalidate` ensures a deterministic, orderly teardown.
-
 ## Parameters
 
 - `session`: The decompression session to invalidate.

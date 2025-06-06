@@ -28,8 +28,6 @@ Several options are available, depending on which of the following scenarios des
 
 > **Note**:  You canʼt choose [`MTLLoadAction.load`](mtlloadaction/load.md) for a memoryless render target because it isnʼt backed by system memory. For more information about memoryless render targets, see [`Choosing a Resource Storage Mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md).
 
- You canʼt choose [`MTLLoadAction.load`](mtlloadaction/load.md) for a memoryless render target because it isnʼt backed by system memory. For more information about memoryless render targets, see [`Choosing a Resource Storage Mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md).
-
 ##### Choose a Store Action
 
 Several options are available, depending on which of the following scenarios describes your render targetʼs storage needs.
@@ -57,8 +55,6 @@ To store and resolve a multisample texture in a single render pass, always choos
 
 > **Note**:  You canʼt choose [`MTLStoreAction.store`](mtlstoreaction/store.md) or [`MTLStoreAction.storeAndMultisampleResolve`](mtlstoreaction/storeandmultisampleresolve.md) for a memoryless render target because it isnʼt backed by system memory. For more information about memoryless render targets, see [`Choosing a Resource Storage Mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md).
 
- You canʼt choose [`MTLStoreAction.store`](mtlstoreaction/store.md) or [`MTLStoreAction.storeAndMultisampleResolve`](mtlstoreaction/storeandmultisampleresolve.md) for a memoryless render target because it isnʼt backed by system memory. For more information about memoryless render targets, see [`Choosing a Resource Storage Mode for Apple GPUs`](choosing-a-resource-storage-mode-for-apple-gpus.md).
-
 ##### Evaluate Actions Between Render Passes
 
 You can use the same render targets across multiple render passes. Several load and store combinations are possible for the same render target between any two render passes, depending on which of the following scenarios describes your render targetʼs needs from one render pass to another.
@@ -85,4 +81,4 @@ You can use the same render targets across multiple render passes. Several load 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/setting-load-and-store-actions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/setting-load-and-store-actions)*

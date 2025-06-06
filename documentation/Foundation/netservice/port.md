@@ -27,8 +27,6 @@ If the object was initialized by calling [`init(domain:type:name:)`](netservice/
 
 > **Note**:  This became a property in OS X v10.9 and iOS 7, but the underlying getter method (`port`) has been available since this class was first introduced.
 
- This became a property in OS X v10.9 and iOS 7, but the underlying getter method (`port`) has been available since this class was first introduced.
-
 ## See Also
 
 - [func publish()](netservice/publish.md)

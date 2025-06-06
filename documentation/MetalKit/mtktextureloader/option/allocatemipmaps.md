@@ -1,6 +1,6 @@
 # allocateMipmaps
 
-**Framework**: MetalKit  
+**Framework**: Metalkit  
 **Kind**: property
 
 A key used to specify whether the texture loader should allocate memory for mipmaps in the texture.
@@ -27,8 +27,6 @@ This option applies only if the texture being loaded does not contain mipmap dat
 
 > **Note**:  This option only allocates mipmap memory for the texture. To generate the actual mipmaps for the texture, use the [`generateMipmaps`](mtktextureloader/option/generatemipmaps.md) option and set it to [`true`](https://developer.apple.com/documentation/swift/true).
 
- This option only allocates mipmap memory for the texture. To generate the actual mipmaps for the texture, use the [`generateMipmaps`](mtktextureloader/option/generatemipmaps.md) option and set it to [`true`](https://developer.apple.com/documentation/swift/true).
-
 ## See Also
 
 - [static let generateMipmaps: MTKTextureLoader.Option](mtktextureloader/option/generatemipmaps.md)
@@ -37,4 +35,4 @@ This option applies only if the texture being loaded does not contain mipmap dat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalkit/mtktextureloader/option/allocatemipmaps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MetalKit/mtktextureloader/option/allocatemipmaps)*

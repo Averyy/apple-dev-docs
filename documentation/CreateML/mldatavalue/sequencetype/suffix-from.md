@@ -1,6 +1,6 @@
 # suffix(from:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Returns a subsequence from the specified position to the end of the collection.
@@ -52,8 +52,6 @@ if let i = numbers.firstIndex(of: 40) {
 ```
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

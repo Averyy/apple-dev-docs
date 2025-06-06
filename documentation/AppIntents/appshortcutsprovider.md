@@ -1,6 +1,6 @@
 # AppShortcutsProvider
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: protocol
 
 A type alias for the type that provides an app’s preconfigured shortcuts.
@@ -28,11 +28,7 @@ protocol AppShortcutsProvider
 
 > **Note**:  Session 10170: [`Implement App Shortcuts with App Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10170), and session 10169: [`Design App Shortcuts`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10169).
 
- Session 10170: [`Implement App Shortcuts with App Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10170), and session 10169: [`Design App Shortcuts`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10169).
-
 > **Note**: Apple may extract anonymized App Shortcuts data such as localized phrases, display representation values, and the title and description of related intents. Machine learning models use this data when training to help improve the App Shortcuts experience.
-
-Apple may extract anonymized App Shortcuts data such as localized phrases, display representation values, and the title and description of related intents. Machine learning models use this data when training to help improve the App Shortcuts experience.
 
 ## Topics
 
@@ -58,4 +54,4 @@ Apple may extract anonymized App Shortcuts data such as localized phrases, displ
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/appshortcutsprovider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/appshortcutsprovider)*

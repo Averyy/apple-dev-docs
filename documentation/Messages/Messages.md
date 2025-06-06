@@ -22,8 +22,6 @@ iMessage apps leverage the full framework to interact with the Messages app.
 
 > **Note**:  To avoid a crash, an iMessage app linked on or after iOS 10 must include usage description keys for the device features it needs to access in its `Info.plist` file. Specifically, it must include [`NSCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCameraUsageDescription) to access the device’s camera, and it must include [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) to access the device’s microphones.
 
- To avoid a crash, an iMessage app linked on or after iOS 10 must include usage description keys for the device features it needs to access in its `Info.plist` file. Specifically, it must include [`NSCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCameraUsageDescription) to access the device’s camera, and it must include [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) to access the device’s microphones.
-
 Use iMessage apps to:
 
 - Present a custom user interface inside the Messages app; see [`MSMessagesAppViewController`](msmessagesappviewcontroller.md).

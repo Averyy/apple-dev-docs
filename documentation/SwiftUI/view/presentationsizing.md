@@ -1,6 +1,6 @@
 # presentationSizing(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Sets the sizing of the containing presentation.
@@ -29,11 +29,7 @@ Sizings can be modified to fix their dimensions based on the content, and option
 
 > **Note**: [`fitted(horizontal:vertical:)`](presentationsizing/fitted(horizontal:vertical:).md) and [`sticky(horizontal:vertical:)`](presentationsizing/sticky(horizontal:vertical:).md).
 
-[`fitted(horizontal:vertical:)`](presentationsizing/fitted(horizontal:vertical:).md) and [`sticky(horizontal:vertical:)`](presentationsizing/sticky(horizontal:vertical:).md).
-
 > **Note**: If the presentation’s root container is a `NavigationSplitView`, the proposed width only applies to the `detail` column. The `sidebar` and `content` column widths use system-provided values, or those from [`navigationSplitViewColumnWidth(_:)`](view/navigationsplitviewcolumnwidth(_:).md) or [`navigationSplitViewColumnWidth(min:ideal:max:)`](view/navigationsplitviewcolumnwidth(min:ideal:max:).md) modifiers.
-
-If the presentation’s root container is a `NavigationSplitView`, the proposed width only applies to the `detail` column. The `sidebar` and `content` column widths use system-provided values, or those from [`navigationSplitViewColumnWidth(_:)`](view/navigationsplitviewcolumnwidth(_:).md) or [`navigationSplitViewColumnWidth(min:ideal:max:)`](view/navigationsplitviewcolumnwidth(min:ideal:max:).md) modifiers.
 
 For example, a presentation with facts about flowers could prefer `.page` sizing because its content is primarily informational. Since the user can choose different flowers from the picker, each with different lengths of information, the size is fitted vertically to size the sheet to the textual content, and vertically sticky is specified to prevent the presentation from changing size too frequently as the user changes selection.
 

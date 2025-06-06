@@ -1,6 +1,6 @@
 # kCVPixelBufferBytesPerRowAlignmentKey
 
-**Framework**: Core Video  
+**Framework**: Corevideo  
 **Kind**: var
 
 A key to a number that specifies the alignment of number of bytes per row in the pixel buffer.
@@ -25,8 +25,6 @@ let kCVPixelBufferBytesPerRowAlignmentKey: CFString
 The value for this key is of type doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd.
 
 > **Note**:  The number of bytes per row in the pixel buffer must be a multiple of this number.
-
- The number of bytes per row in the pixel buffer must be a multiple of this number.
 
 ## See Also
 
@@ -64,4 +62,4 @@ The value for this key is of type doc://com.apple.documentation/documentation/co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corevideo/kcvpixelbufferbytesperrowalignmentkey)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreVideo/kcvpixelbufferbytesperrowalignmentkey)*

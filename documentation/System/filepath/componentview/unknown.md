@@ -33,8 +33,6 @@ print(numbers)
 
 > **Note**: O(), where  is the length of the right-hand-side argument.
 
-O(), where  is the length of the right-hand-side argument.
-
 ## Parameters
 
 - `lhs`: The array to append to.

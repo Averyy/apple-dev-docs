@@ -1,6 +1,6 @@
 # AppIntent
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: protocol
 
 An interface for providing an app-specific capability that people invoke from system experiences like Siri and the Shortcuts app.
@@ -35,8 +35,6 @@ To expose your app’s functionality to system experiences like Siri or the Shor
 The system instantiates an app intent you create parameter-less using the [`init()`](appintent/init().md) initializer whenever a person invokes it through a system service like Siri, Shortcuts, and so on. If available, the system sets parameters based on user input or other available sources. With set parameters, the system attempts to resolve them in the order of their declaration in the `AppIntent` body. After it resolves all parameters, the system calls [`perform()`](appintent/perform().md) to perform the app intent with its configured parameters. Note that the system retains the app intent and its output only for the duration of the invocation.
 
 > **Note**:  Session 10032: [`Dive into App Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10032).
-
- Session 10032: [`Dive into App Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10032).
 
 ##### Implement the Appintent Protocol
 
@@ -221,4 +219,4 @@ struct OrderSoupIntent: AppIntent {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/appintent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/appintent)*

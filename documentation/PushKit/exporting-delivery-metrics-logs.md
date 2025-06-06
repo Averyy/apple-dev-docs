@@ -1,6 +1,6 @@
 # Exporting delivery metrics logs
 
-**Framework**: PushKit
+**Framework**: Pushkit
 
 Download and analyze push-notification metrics.
 
@@ -11,12 +11,6 @@ Use the CloudKit Console to export Apple Push Notification service (APNs) delive
 The push-notification metrics report includes aggregated, rounded metrics on notification states as your notifications pass through APNs. It shows multiple notification statuses, such as `delivered`, `stored`, and `discarded`. It also provides insights into various statistics for notifications, including a detailed breakdown based on push type.
 
 > **Note**:  If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option: Developer Tools & Resources > CloudKit Console > Data Export [`Learn more`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
-
- If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option:
-
-Developer Tools & Resources > CloudKit Console > Data Export
-
-[`Learn more`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
 #### Create a Data Export Token
 
@@ -33,8 +27,6 @@ To access log data for your apps, create a data export token by following these 
 9. Securely store the token that you created in step 8.
 
 > **Note**:  If you navigate back to the CloudKit console later, you won’t be able to see the data export token’s value again.
-
- If you navigate back to the CloudKit console later, you won’t be able to see the data export token’s value again.
 
 The token you create is restricted to your developer account, and only gives you access to the APNs data set for the specified app.
 
@@ -55,8 +47,6 @@ The data export request endpoint might return the following HTTP status codes th
 You can request a download that covers the same date range as a previous download. If you make a repeat request within 24 hours, the server returns the same status URL as the original request. If you make a repeat request after 24 hours, the server creates a new request with a new status URL, and any events within the requested time range that are logged after the original request was made are included in the new report.
 
 > **Note**:  The status URLs for all requests are available for 6 months after you make the request. Make sure you use the latest URLs for checking status and downloading reports.
-
- The status URLs for all requests are available for 6 months after you make the request. Make sure you use the latest URLs for checking status and downloading reports.
 
 #### Check the Status of Your Data Export
 
@@ -84,4 +74,4 @@ Apple’s servers retain the exported data for six months. To re-download the da
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/pushkit/exporting-delivery-metrics-logs)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PushKit/exporting-delivery-metrics-logs)*

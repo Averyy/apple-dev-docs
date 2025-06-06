@@ -30,8 +30,6 @@ The values retrieved from here must be in the same order as they were recorded b
 
 > **Note**: If decoding substitutions fails.
 
-If decoding substitutions fails.
-
 
 ---
 

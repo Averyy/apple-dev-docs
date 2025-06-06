@@ -1,6 +1,6 @@
 # selectAlternateSetting(_:)
 
-**Framework**: IOUSBHost  
+**Framework**: Iousbhost  
 **Kind**: method
 
 Selects an alternative setting for the interface.
@@ -20,8 +20,6 @@ func selectAlternateSetting(_ alternateSetting: Int) throws
 Use this method to select an alternative setting for the interface. The operation aborts all pending input/output requests on the interface’s pipes, and closes all open pipes. It also selects the new alternative setting through the `SET_INTERFACE` control request (See USB 3.2, 9.4.10.).
 
 > **Note**:  Any [`IOUSBHostPipe`](iousbhostpipe.md) objects that already exist are no longer valid.
-
- Any [`IOUSBHostPipe`](iousbhostpipe.md) objects that already exist are no longer valid.
 
 ## Parameters
 

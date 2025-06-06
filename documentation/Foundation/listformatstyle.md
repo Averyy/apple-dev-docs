@@ -57,8 +57,6 @@ You can provide a member format style to transform each list element to a string
 
 > **Note**:  The generated string is locale-dependent and incorporates linguistic and cultural conventions of the user.
 
- The generated string is locale-dependent and incorporates linguistic and cultural conventions of the user.
-
 You can create and reuse a list format style instance to format similar sequences. For example:
 
 ```swift
@@ -123,4 +121,4 @@ stride(from: 89.0, through: 95.0, by: 2.0).formatted(percentStyle)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/listformatstyle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/listformatstyle)*

@@ -14,8 +14,6 @@ These privacy measures maximize utility as the volume of data increases, while a
 
 > **Note**: For privacy information for reports not listed in this article, see the Privacy section in each report.
 
-For privacy information for reports not listed in this article, see the Privacy section in each report.
-
 #### Understand Standard and Detailed Report Types
 
 In some reports, data might be more sensitive than it is in others. To help protect user privacy, the framework provides two types of reports:

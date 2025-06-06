@@ -1,6 +1,6 @@
 # wrappedValue
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 The underlying value referenced by the state variable.
@@ -26,8 +26,6 @@ This works identically to `State.wrappedValue`.
 
 > **Note**: State.wrappedValue
 
-State.wrappedValue
-
 ## See Also
 
 - [var projectedValue: Binding<Value>](scenestorage/projectedvalue.md)
@@ -36,4 +34,4 @@ State.wrappedValue
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/scenestorage/wrappedvalue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/scenestorage/wrappedvalue)*

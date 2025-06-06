@@ -1,6 +1,6 @@
 # configuration
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A change that invalidates a view’s configuration.
@@ -24,8 +24,6 @@ static var configuration: UIView.Invalidations.Configuration { get }
 Use this invalidation type to call [`setNeedsUpdateConfiguration()`](uibutton/setneedsupdateconfiguration().md) when a change in property value should cause the containing view to update the configuration.
 
 > **Note**:  You only use this invalidation type on [`UIView`](uiview.md) subclasses that support a configuration pattern, using [`setNeedsUpdateConfiguration()`](uibutton/setneedsupdateconfiguration().md) and [`updateConfiguration()`](uibutton/updateconfiguration().md) pattern. For example, use this type on [`UIButton`](uibutton.md), [`UICollectionViewCell`](uicollectionviewcell.md), [`UITableViewCell`](uitableviewcell.md), or [`UITableViewHeaderFooterView`](uitableviewheaderfooterview.md). This type has no effect on [`UIView`](uiview.md) subclasses that don’t use a configuration pattern.
-
- You only use this invalidation type on [`UIView`](uiview.md) subclasses that support a configuration pattern, using [`setNeedsUpdateConfiguration()`](uibutton/setneedsupdateconfiguration().md) and [`updateConfiguration()`](uibutton/updateconfiguration().md) pattern. For example, use this type on [`UIButton`](uibutton.md), [`UICollectionViewCell`](uicollectionviewcell.md), [`UITableViewCell`](uitableviewcell.md), or [`UITableViewHeaderFooterView`](uitableviewheaderfooterview.md). This type has no effect on [`UIView`](uiview.md) subclasses that don’t use a configuration pattern.
 
 ## See Also
 

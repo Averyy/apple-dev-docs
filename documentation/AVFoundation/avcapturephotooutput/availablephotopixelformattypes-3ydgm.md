@@ -1,6 +1,6 @@
 # availablePhotoPixelFormatTypes
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The pixel formats the capture output supports for photo capture.
@@ -24,8 +24,6 @@ var availablePhotoPixelFormatTypes: [OSType] { get }
 To capture a photo in an uncompressed format, such as 420f, 420v, or BGRA, use the [`init(format:)`](avcapturephotosettings/init(format:).md) initializer to create your photo settings object. In that initializer’s `format` dictionary, pass the key [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferPixelFormatTypeKey), whose value must be one of the pixel format identifiers listed in this array.
 
 > **Note**:  Read this property only after adding the photo capture output to an [`AVCaptureSession`](avcapturesession.md) object containing a video source. If the photo capture output isn’t connected to a session with a video source, this array is empty.
-
- Read this property only after adding the photo capture output to an [`AVCaptureSession`](avcapturesession.md) object containing a video source. If the photo capture output isn’t connected to a session with a video source, this array is empty.
 
 This property supports key-value observing.
 

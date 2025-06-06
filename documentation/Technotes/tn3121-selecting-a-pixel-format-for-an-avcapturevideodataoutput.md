@@ -26,8 +26,6 @@ Not all devices support the full range of output pixel formats. To see the avail
 
 > **Note**: The availableVideoPixelFormatTypes array is dynamic, and depends on the activeFormat of the capture device that the AVCaptureVideoDataOutput is connected to.
 
-The availableVideoPixelFormatTypes array is dynamic, and depends on the activeFormat of the capture device that the AVCaptureVideoDataOutput is connected to.
-
 As an example, iPhone 13 Pro supports the following output pixel formats:
 
 | Pixel Format Constant | FourCharCode | Bits Per Channel |
@@ -106,4 +104,4 @@ In a scenario where your app can utilize a compressed pixel format, always reque
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3121-selecting-a-pixel-format-for-an-avcapturevideodataoutput)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3121-selecting-a-pixel-format-for-an-avcapturevideodataoutput)*

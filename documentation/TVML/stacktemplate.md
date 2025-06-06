@@ -1,6 +1,6 @@
 # stackTemplate
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Displays groups of products.
 
@@ -30,8 +30,6 @@ The following listing shows the main elements of the `stackTemplate` element in 
 ```
 
 > **Note**: The `shelf` element can be replaced with a `grid` or `carousel` element to change the way products are displayed.
-
-The `shelf` element can be replaced with a `grid` or `carousel` element to change the way products are displayed.
 
 ###### Element Descriptions
 
@@ -151,4 +149,4 @@ When you add a video in the background, playback starts 5 seconds after the page
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/stacktemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/stacktemplate)*

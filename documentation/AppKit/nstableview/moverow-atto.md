@@ -1,6 +1,6 @@
 # moveRow(at:to:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Moves the specified row to the new row location using animation.
@@ -24,8 +24,6 @@ Changes happen incrementally as they are sent to the table, so as soon as this m
 This method can be called multiple times within the same [`beginUpdates()`](nstableview/beginupdates().md) and [`endUpdates()`](nstableview/endupdates().md) block.
 
 > **Note**:  [`NSCell`](nscell.md)-based table views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
-
- [`NSCell`](nscell.md)-based table views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
 
 ## Parameters
 

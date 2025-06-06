@@ -1,6 +1,6 @@
 # height
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Specifies the height of an element.
 
@@ -15,8 +15,6 @@ Here’s an example that shows how to set the height of an image to 376 points.
 ##### Values for Height
 
 > **Note**: You must explicitly set this style for custom cell elements provided by your app binary.
-
-You must explicitly set this style for custom cell elements provided by your app binary.
 
 ##### Elements That Use Height
 
@@ -49,4 +47,4 @@ You must explicitly set this style for custom cell elements provided by your app
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/element-shaping-height)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/element-shaping-height)*

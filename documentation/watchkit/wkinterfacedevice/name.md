@@ -27,8 +27,6 @@ In watchOS, the  is available in the Settings app under General > About > Name. 
 
 > **Note**:  Session 10096: [`What’s new in privacy`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10096)
 
- Session 10096: [`What’s new in privacy`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10096)
-
 ## See Also
 
 - [var model: String](wkinterfacedevice/model.md)
@@ -49,4 +47,4 @@ In watchOS, the  is available in the Settings app under General > About > Name. 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/name)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkinterfacedevice/name)*

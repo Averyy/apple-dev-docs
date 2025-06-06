@@ -1,6 +1,6 @@
 # NSTableViewDataSource
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: protocol
 
 A set of methods that a table view uses to provide data to a table view and to allow the editing of the table view’s data source object.
@@ -19,8 +19,6 @@ protocol NSTableViewDataSource : NSObjectProtocol
 Some of the methods in this protocol, such as [`tableView(_:objectValueFor:row:)`](nstableviewdatasource/tableview(_:objectvaluefor:row:).md) and [`numberOfRows(in:)`](nstableviewdatasource/numberofrows(in:).md) along with other methods that return data, are called frequently, so they must be efficient.
 
 > **Note**:  View-based table views must not use the [`tableView(_:setObjectValue:for:row:)`](nstableviewdatasource/tableview(_:setobjectvalue:for:row:).md) method for setting values. Instead the views must explicitly set the values for the fields, or use Cocoa bindings. Likewise, use target/action for editing. See [`Table View Programming Guide for Mac`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TableView/Introduction/Introduction.html#//apple_ref/doc/uid/10000026i) for more information on populating view-based and cell-based table views.
-
- View-based table views must not use the [`tableView(_:setObjectValue:for:row:)`](nstableviewdatasource/tableview(_:setobjectvalue:for:row:).md) method for setting values. Instead the views must explicitly set the values for the fields, or use Cocoa bindings. Likewise, use target/action for editing. See [`Table View Programming Guide for Mac`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TableView/Introduction/Introduction.html#//apple_ref/doc/uid/10000026i) for more information on populating view-based and cell-based table views.
 
 If you’re not using Cocoa bindings to provide data to the table view, the following methods are required:
 
@@ -82,4 +80,4 @@ To learn more about Cocoa bindings, see [`Cocoa Bindings Programming Topics`](ht
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstableviewdatasource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstableviewdatasource)*

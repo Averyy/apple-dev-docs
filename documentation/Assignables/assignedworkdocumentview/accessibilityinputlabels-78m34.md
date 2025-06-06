@@ -27,8 +27,6 @@ Provide labels in descending order of importance. Voice Control and Full Keyboar
 
 > **Note**: If you don’t specify any input labels, the user can still refer to the view using the accessibility label that you add with the `accessibilityLabel()` modifier.
 
-If you don’t specify any input labels, the user can still refer to the view using the accessibility label that you add with the `accessibilityLabel()` modifier.
-
 
 ---
 

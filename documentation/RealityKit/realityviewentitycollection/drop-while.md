@@ -1,6 +1,6 @@
 # drop(while:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
@@ -21,8 +21,6 @@ func drop(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.SubSe
 #### Discussion
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

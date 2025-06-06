@@ -1,6 +1,6 @@
 # Messaging a Web Extension’s Native App
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Communicate between your Safari web extension and its containing app.
 
@@ -11,8 +11,6 @@ Communicate between your Safari web extension and its containing app.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [`10665: Meet Safari Web Extensions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10665/).
-
-This sample code project is associated with WWDC20 session [`10665: Meet Safari Web Extensions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10665/).
 
 ##### Configure the Sample Code Project
 
@@ -38,4 +36,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/messaging-a-web-extension-s-native-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/messaging-a-web-extension-s-native-app)*

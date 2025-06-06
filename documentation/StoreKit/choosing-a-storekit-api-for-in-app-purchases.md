@@ -1,6 +1,6 @@
 # Choosing a StoreKit API for In-App Purchases
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Use the latest API to support In-App Purchases in new or existing apps, or the original API to support In-App Purchases in earlier operating systems.
 
@@ -12,8 +12,6 @@ The StoreKit framework provides two APIs to implement a store in your app and of
 - [`Original API for In-App Purchase`](original-api-for-in-app-purchase.md) provides transaction information using App Store receipts, available starting in iOS 3, macOS 10.7, tvOS 9, watchOS 6.2, and visionOS 1.
 
 > **Note**:  The [`Original API for In-App Purchase`](original-api-for-in-app-purchase.md) is deprecated.
-
- The [`Original API for In-App Purchase`](original-api-for-in-app-purchase.md) is deprecated.
 
 If your app has a minimum required operating system that the [`In-App Purchase`](in-app-purchase.md) API supports, use this API to take advantage of Swift concurrency and simplified in-app purchase workflows. Use this API for visionOS apps that use multiple scenes.
 
@@ -50,4 +48,4 @@ You might need to use the [`Original API for In-App Purchase`](original-api-for-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/choosing-a-storekit-api-for-in-app-purchases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/choosing-a-storekit-api-for-in-app-purchases)*

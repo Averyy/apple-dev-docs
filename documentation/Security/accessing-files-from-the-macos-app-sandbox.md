@@ -27,8 +27,6 @@ The operating system also tracks the association between an app’s code signing
 
 > **Note**:  In certain situations, two different versions of your app can have different designated requirements, leading the operating system to request permission when the second version tries to access the sandbox container. One case is using both the version of your app from the Mac App Store and a local build created in Xcode on the same computer. Another is if you transfer an app to another App Store team and the code signing identity used to sign the app changes between released versions.
 
- In certain situations, two different versions of your app can have different designated requirements, leading the operating system to request permission when the second version tries to access the sandbox container. One case is using both the version of your app from the Mac App Store and a local build created in Xcode on the same computer. Another is if you transfer an app to another App Store team and the code signing identity used to sign the app changes between released versions.
-
 ##### Access Files with Standard User Interactions
 
 Give your app access to files that a person chooses in open and save panels, or by following these steps:
@@ -152,9 +150,7 @@ Your app may not have access to a file even if App Sandbox doesn’t block acces
 
 > **Note**:  To determine whether the App Sandbox denied your app access to a file, see [`Discovering and diagnosing App Sandbox violations`](discovering-and-diagnosing-app-sandbox-violations.md).
 
- To determine whether the App Sandbox denied your app access to a file, see [`Discovering and diagnosing App Sandbox violations`](discovering-and-diagnosing-app-sandbox-violations.md).
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/accessing-files-from-the-macos-app-sandbox)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/accessing-files-from-the-macos-app-sandbox)*

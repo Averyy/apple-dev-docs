@@ -45,8 +45,6 @@ let sub = Timer.publish(every: 1, on: .main, in: .default)
 
 > **Note**: When this publisher receives a request for `.max(n)` elements, it requests `.max(count * n)` from the upstream publisher.
 
-When this publisher receives a request for `.max(n)` elements, it requests `.max(count * n)` from the upstream publisher.
-
 ## Parameters
 
 - `strategy`: The timing group strategy used by the operator to collect and publish elements.

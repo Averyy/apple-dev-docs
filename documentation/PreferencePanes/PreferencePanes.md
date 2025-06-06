@@ -1,6 +1,6 @@
 # Preference Panes
 
-**Framework**: Preference Panes  
+**Framework**: Preferencepanes  
 **Kind**: module
 
 Integrate your app’s custom preferences into the System Preferences app.
@@ -16,8 +16,6 @@ Use the Preference Panes framework to integrate your custom system-level prefere
 System Preferences works with your bundle’s custom [`NSPreferencePane`](nspreferencepane.md) object to manage the presentation of your custom interface to the user. System Preferences loads the view provided by your bundle and delivers lifecycle events to your preference pane object. Use that object to respond to interactions with the controls and views of your interface and to save any settings changes to the user’s defaults database.
 
 > **Note**:  Use preference pane bundles only for settings that must be managed separately from your app. For example, use it to manage settings that are shared between multiple apps in the same suite. Manage app-specific preferences using a custom preferences interface.
-
- Use preference pane bundles only for settings that must be managed separately from your app. For example, use it to manage settings that are shared between multiple apps in the same suite. Manage app-specific preferences using a custom preferences interface.
 
 ## Topics
 

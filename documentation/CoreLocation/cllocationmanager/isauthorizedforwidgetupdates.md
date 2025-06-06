@@ -1,6 +1,6 @@
 # isAuthorizedForWidgetUpdates
 
-**Framework**: Core Location  
+**Framework**: Corelocation  
 **Kind**: property
 
 A Boolean value that indicates whether a widget is eligible to receive location updates.
@@ -27,8 +27,6 @@ This property is `true` when either of the following is true:
 
 > **Note**:  For apps that use [`CLAuthorizationStatus.authorizedWhenInUse`](clauthorizationstatus/authorizedwheninuse.md), after the user agrees to extend an app’s authorization status to widgets, the app’s Location Services settings indicate While Using the App or Widgets as the active access level.
 
- For apps that use [`CLAuthorizationStatus.authorizedWhenInUse`](clauthorizationstatus/authorizedwheninuse.md), after the user agrees to extend an app’s authorization status to widgets, the app’s Location Services settings indicate While Using the App or Widgets as the active access level.
-
 For details about using location information in widgets with [`CLAuthorizationStatus.authorizedWhenInUse`](clauthorizationstatus/authorizedwheninuse.md), see [`Accessing location information in widgets`](https://developer.apple.com/documentation/WidgetKit/Accessing-Location-Information-in-Widgets).
 
 ## See Also
@@ -49,4 +47,4 @@ For details about using location information in widgets with [`CLAuthorizationSt
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/cllocationmanager/isauthorizedforwidgetupdates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/cllocationmanager/isauthorizedforwidgetupdates)*

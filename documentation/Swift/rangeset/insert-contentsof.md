@@ -24,8 +24,6 @@ mutating func insert(contentsOf range: Range<Bound>)
 
 > **Note**: O(), where  is the number of ranges in the range set.
 
-O(), where  is the number of ranges in the range set.
-
 ## Parameters
 
 - `range`: The range to insert into the set.

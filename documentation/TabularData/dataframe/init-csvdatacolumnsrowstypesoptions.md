@@ -1,6 +1,6 @@
 # init(csvData:columns:rows:types:options:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: init
 
 Creates a data frame from CSV data.
@@ -23,8 +23,6 @@ init(csvData data: Data, columns: [String]? = nil, rows: Range<Int>? = nil, type
 #### Discussion
 
 > **Note**: A `CSVReadingError` instance.
-
-A `CSVReadingError` instance.
 
 ## Parameters
 

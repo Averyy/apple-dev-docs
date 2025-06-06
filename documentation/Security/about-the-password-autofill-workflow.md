@@ -54,8 +54,6 @@ Don’t remove your user interface when these methods are called. If you do, the
 
 > **Note**:  You may want to hide sensitive information when an app becomes inactive. However, if the user hasn’t logged in, no sensitive information is exposed, and this precaution should not be necessary.
 
- You may want to hide sensitive information when an app becomes inactive. However, if the user hasn’t logged in, no sensitive information is exposed, and this precaution should not be necessary.
-
 As soon as the user authenticates successfully, the system changes the first responder to the views to be autocompleted — even if the app prevents changes to the first responder normally. The system then fills in all the relevant views.
 
 Notifications are sent after the text changes. You can use these notifications to validate the information and update the form’s user interface — for example, by enabling the login button once the user name and password views are filled.
@@ -69,4 +67,4 @@ For iOS apps, the system always sends a [`textDidChangeNotification`](https://de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/about-the-password-autofill-workflow)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/about-the-password-autofill-workflow)*

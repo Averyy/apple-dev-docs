@@ -1,6 +1,6 @@
 # dispatchGetReportRequest(type:id:timeout:)
 
-**Framework**: Core HID  
+**Framework**: Corehid  
 **Kind**: method
 
 Send a get report request to the device over the transport.
@@ -30,8 +30,6 @@ Many HID devices respond to get report requests to retrieve information from the
 For more details, see [`Human Interface Devices (HID) Specifications and Tools`](https://developer.apple.comhttps://www.usb.org/hid).
 
 > **Note**: [`HIDDeviceError`](hiddeviceerror.md) if there is an issue with the request.
-
-[`HIDDeviceError`](hiddeviceerror.md) if there is an issue with the request.
 
 ## Parameters
 

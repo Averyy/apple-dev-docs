@@ -1,6 +1,6 @@
 # HTTP Live Streaming (HLS) Authoring Specification for Apple devices appendixes
 
-**Framework**: HTTP Live Streaming
+**Framework**: Http Live Streaming
 
 Learn additional information related to the HLS Authoring Specification for Apple Devices.
 
@@ -21,8 +21,6 @@ Check the video quality of your streams by visual inspection. The `mediastreamva
 Use the binary `hlsreport` to generate an HTML summary report from a JSON file that `mediastreamvalidator` creates. The report includes several tables with details about variants, renditions, and I-frame variants. Each table entry has a unique stream ID number. A list of issues is included, divided into Must Fix and Should Fix categories according to this specification. The issues cross-reference individual variants and renditions using the unique stream IDs.
 
 > **Note**: Earlier versions of the HLS tools used a script called `hlsreport.py` rather than a binary.
-
-Earlier versions of the HLS tools used a script called `hlsreport.py` rather than a binary.
 
 The simplest way to call it is:
 
@@ -50,8 +48,6 @@ Additional information about device and audio format compatibility.
 
 > **Note**: Multichannel output depends on the capability of the actual output device.
 
-Multichannel output depends on the capability of the actual output device.
-
 | Devices | AAC (Stereo) | AC-3/E-AC-3 | Dolby Digital Plus with Dolby Atmos |
 | --- | --- | --- | --- |
 | iOS devices - A12 Bionic based and later | Yes | Yes | Yes |
@@ -63,8 +59,6 @@ Multichannel output depends on the capability of the actual output device.
 | All older iOS and tvOS devices | Yes | No | No |
 
 > **Note**: All of the devices in the above table support AAC (Stereo).
-
-All of the devices in the above table support AAC (Stereo).
 
 See [`https://support.apple.com/specs/`](https://developer.apple.comhttps://support.apple.com/specs/) for actual technical specifications.
 
@@ -146,8 +140,6 @@ Valid format identifiers are those in the ISO Base Media File Format Name Space 
 | `wvtt` | WebVTT data |  |
 
 > **Note**: HLS recognizes `'avc3'`, `'dvhe'`, and `'hev1'`, but Apple doesn’t recommend using them.
-
-HLS recognizes `'avc3'`, `'dvhe'`, and `'hev1'`, but Apple doesn’t recommend using them.
 
 The MP4 registration authority ([`mp4ra.org`](https://developer.apple.comhttp://mp4ra.org)) lists a value of `ec+3` for Enhanced AC-3 audio with JOC (Dolby Atmos). That value is not used by HLS. Instead, it uses `ec-3` and marks the presence of the additional JOC content with `JOC` in the `CHANNELS` attribute of the audio rendition. The `JOC` must be capitalized. For example, `CHANNELS="16/JOC"`. The numeric value should match the value of the `complexity_index_type_a` field in the `EC3SpecificBox` of the Dolby Digital Plus audio track.
 
@@ -295,4 +287,4 @@ Information about Dolby Video codec values can be obtained from Dolby. A short d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/hls-authoring-specification-for-apple-devices-appendixes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices-appendixes)*

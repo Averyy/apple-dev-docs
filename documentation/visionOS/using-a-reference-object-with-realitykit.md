@@ -142,8 +142,6 @@ Incorporate virtual actions into your app by adding collisions and physics simul
 
 > **Note**: `SpatialTrackingSession` is required when using an `AnchorEntity` physics simulation. Follow the guidelines above to configure a `SpatialTrackingSession`.
 
-`SpatialTrackingSession` is required when using an `AnchorEntity` physics simulation. Follow the guidelines above to configure a `SpatialTrackingSession`.
-
 To enable collision and physics on your object-tracking entity, configure the [`PhysicsSimulation`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/anchoringcomponent/physicssimulation-swift.enum) property of your `AnchorEntity`. This property allows you to select entities with an `AnchoringComponent`  to interact with each other physically.
 
 ```swift
@@ -187,4 +185,4 @@ modelEntity.components.set(HoverEffectComponent())
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/using-a-reference-object-with-realitykit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/using-a-reference-object-with-realitykit)*

@@ -1,6 +1,6 @@
 # Sample group description atom ('sgpd')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that gives information about the characteristics of sample groups.
@@ -18,8 +18,6 @@ In a general case, each instance of a sample group description atom has a type c
 For use in AAC encoder delay representation, there is one instance of a sample group description atom in a given QuickTime sound track with grouping type `‘roll’`. The specifics for audio data (`AudioRollRecovery()`) are used and articulate the rolling decode dependency. Because the sample group description atom for this purpose is describing the entirety of the AAC audio stream, the payload data field resolves to a single signed 16-bit integer representing the roll distance, which is set to `-1`. In other words, one AAC packet (1024 encoded PCM audio samples) preceding the media sample is indicated as being of the same type as the encoded source data, allowing the decode transform to operate over the required two AAC packets for the first media sample specified in the edit list.
 
 > **Note**: The payload data value (roll distance in this use) of `-1` is a typical value for existing AAC codecs, but the payload data can have other values. Codecs could use alternative values depending upon their implementation details.
-
-The payload data value (roll distance in this use) of `-1` is a typical value for existing AAC codecs, but the payload data can have other values. Codecs could use alternative values depending upon their implementation details.
 
 The layout of the sample group atom is as follows:
 

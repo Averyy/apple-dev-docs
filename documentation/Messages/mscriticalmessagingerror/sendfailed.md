@@ -29,8 +29,6 @@ The framework isn’t able to send the message for one of the following reasons:
 
 > **Note**: The phone number needs to conform to the [`ITU E.164 telephone numbering plan`](https://developer.apple.comhttps://www.itu.int/rec/T-REC-E.164-201011-I/en) standard, without any additional non-numeric characters such as dashes, periods, parentheses, or a plus character (+) that introduces a country code.
 
-The phone number needs to conform to the [`ITU E.164 telephone numbering plan`](https://developer.apple.comhttps://www.itu.int/rec/T-REC-E.164-201011-I/en) standard, without any additional non-numeric characters such as dashes, periods, parentheses, or a plus character (+) that introduces a country code.
-
 ## See Also
 
 - [MSCriticalMessagingError.unknown](mscriticalmessagingerror/unknown.md)

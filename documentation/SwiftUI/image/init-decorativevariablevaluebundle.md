@@ -1,6 +1,6 @@
 # init(decorative:variableValue:bundle:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: init
 
 Creates an unlabeled, decorative image, with a variable value.
@@ -25,8 +25,6 @@ init(decorative name: String, variableValue: Double?, bundle: Bundle? = nil)
 This initializer creates an image using a using a symbol in the specified bundle. The rendered symbol may alter its appearance to represent the value provided in `variableValue`.
 
 > **Note**: See WWDC22 session [`10158: Adopt variable color in SF Symbols`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10158/) for details on how to create symbols that support variable values.
-
-See WWDC22 session [`10158: Adopt variable color in SF Symbols`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10158/) for details on how to create symbols that support variable values.
 
 SwiftUI ignores this image for accessibility purposes.
 

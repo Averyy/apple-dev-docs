@@ -1,6 +1,6 @@
 # Filling a table with data
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard.
 
@@ -89,8 +89,6 @@ Table views don’t ask you to create cells for each of the table’s rows. Inst
 
 > **Note**:  In addition to using the standard cell styles, you can define custom cells that contain any views you want. For detailed information about configuring your cells, see [`Configuring the cells for your table`](configuring-the-cells-for-your-table.md).
 
- In addition to using the standard cell styles, you can define custom cells that contain any views you want. For detailed information about configuring your cells, see [`Configuring the cells for your table`](configuring-the-cells-for-your-table.md).
-
 ##### Prefetch Data to Improve Performance
 
 Scrolling performance for table views is critical. If fetching the data for your table involves an expensive operation, such as fetching it from a database, use a prefetching data source object—an object that adopts the [`UITableViewDataSourcePrefetching`](uitableviewdatasourceprefetching.md) protocol—to begin loading that data asynchronously before it scrolls into view.
@@ -111,8 +109,6 @@ Configure static tables in your storyboard file:
 6. Configure each cell with the views and content you want.
 
 > ❗ **Important**:  Table views with static data require a [`UITableViewController`](uitableviewcontroller.md) object to manage that data.
-
- Table views with static data require a [`UITableViewController`](uitableviewcontroller.md) object to manage that data.
 
 Don’t use static data if there’s a chance you might want to update your table view’s content in the future. It’s a programmer error to assign a data source object to a [`UITableViewController`](uitableviewcontroller.md) whose table view contains static data.
 
@@ -138,4 +134,4 @@ Don’t use static data if there’s a chance you might want to update your tabl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/filling-a-table-with-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/filling-a-table-with-data)*

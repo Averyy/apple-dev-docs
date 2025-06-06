@@ -14,8 +14,6 @@ A routing app provides specific directions in addition to what Maps supports, su
 
 > **Note**: This capability is only applicable to custom routing apps on iOS. You don’t need to add the Maps capability to a macOS app to be able to use the MapKit framework.
 
-This capability is only applicable to custom routing apps on iOS. You don’t need to add the Maps capability to a macOS app to be able to use the MapKit framework.
-
 ##### Select the Supported Routing Modes
 
 Before the system can distribute requests for directions to your routing app, you must inform it of the routing modes your app supports by following these
@@ -47,4 +45,4 @@ After you select the necessary routing modes, there are additional configuration
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-maps-support)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-maps-support)*

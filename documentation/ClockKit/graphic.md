@@ -1,6 +1,6 @@
 # Graphic
 
-**Framework**: ClockKit
+**Framework**: Clockkit
 
 Display visually rich content on watch faces.
 
@@ -9,8 +9,6 @@ Display visually rich content on watch faces.
 Use graphic templates to display multicolor text, full-color images, and gauges with color gradients on a variety of watch faces, including the Infograph, Infograph Modular, and Solar Dial.
 
 > **Note**:  Watch faces that support graphic templates are available only on Apple Watch Series 4 or later.
-
- Watch faces that support graphic templates are available only on Apple Watch Series 4 or later.
 
 ClockKit further divides graphic templates into five different families:
 
@@ -81,4 +79,4 @@ For more information, see [`Exploring Tinted Graphic Complications`](https://dev
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/graphic)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/graphic)*

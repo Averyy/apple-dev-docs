@@ -1,6 +1,6 @@
 # CKRecord.Reference
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 A relationship between two records in a record zone.
@@ -33,8 +33,6 @@ References create a stronger relationship between records than just saving the I
 
 > **Note**:  It is permissible to create circular owning references for a set of records.
 
- It is permissible to create circular owning references for a set of records.
-
 To save multiple records that contain references between them, save the target records first or save all the records in one batch operation using [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md).
 
 ##### Interacting with Reference Objects
@@ -47,8 +45,6 @@ To link records together and create a strong relationship between them, create a
 
 > ❗ **Important**:  There is a hard limit to the number of references with a [`CKRecord.ReferenceAction.deleteSelf`](ckrecord/referenceaction/deleteself.md) action that any one record can have. This limit is 750 references, and any attempt to exceed it results in an error from the server.
 
- There is a hard limit to the number of references with a [`CKRecord.ReferenceAction.deleteSelf`](ckrecord/referenceaction/deleteself.md) action that any one record can have. This limit is 750 references, and any attempt to exceed it results in an error from the server.
-
 The figure below shows an example of a relationship between a to-do list record and a set of item records that represent individual items to complete. The to-do list is the primary record, or owner, in the relationship because it represents the entire to-do list, including all items on the list. As a result, each item record has a field that contains a `CKReference` object that points to the owning to-do list record.
 
 ![A figure that shows the relationship between a parent record and its children.](https://docs-assets.developer.apple.com/published/251fe779254091b04fe03fb4c610471d/media-1965777%402x.png)
@@ -58,8 +54,6 @@ The following code sample shows how to create the reference object for each item
 An ownership type of organization is useful even if one object doesn’t explicitly own another. Ownership helps establish the relationships between records and how you search for them in the database. Ownership doesn’t require the deletion of the owned records when you delete their owner record. You can prevent such deletions by specifying the [`CKRecord.ReferenceAction.none`](ckrecord/referenceaction/none.md) action when you create a `CKReference` object.
 
 > **Note**:  When you’re creating a `CKReference` between two objects and you have both objects in memory, be sure to fetch the object on the receiving end of the relationship. This is due to the creation of the `CKReference` between the two objects altering the [`recordChangeTag`](ckrecord/recordchangetag.md) of the receiving object on the server.
-
- When you’re creating a `CKReference` between two objects and you have both objects in memory, be sure to fetch the object on the receiving end of the relationship. This is due to the creation of the `CKReference` between the two objects altering the [`recordChangeTag`](ckrecord/recordchangetag.md) of the receiving object on the server.
 
 ###### Searching for Related Records
 

@@ -1,6 +1,6 @@
 # split(separator:maxSplits:omittingEmptySubsequences:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns the longest possible subsequences of the sequence, in order, around elements equal to the given element.
@@ -52,8 +52,6 @@ print(line.split(separator: " ", omittingEmptySubsequences: false)
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # forEach(descendantOf:inclusive:update:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Calls the provided closure on each element in the hierarchy rooted at the named joint.
@@ -21,8 +21,6 @@ mutating func forEach(descendantOf rootJointName: String, inclusive: Bool = fals
 #### Discussion
 
 > **Note**: If the root joint is not found, the closure is not executed.
-
-If the root joint is not found, the closure is not executed.
 
 ## Parameters
 

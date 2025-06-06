@@ -26,8 +26,6 @@ An [`XMLParser`](xmlparser.md) notifies its delegate about the items (elements, 
 
 > **Note**:  Namespace support was implemented in [`XMLParser`](xmlparser.md) starting in macOS 10.4. Namespace-related methods of [`XMLParser`](xmlparser.md) prior to this version have no effect.
 
- Namespace support was implemented in [`XMLParser`](xmlparser.md) starting in macOS 10.4. Namespace-related methods of [`XMLParser`](xmlparser.md) prior to this version have no effect.
-
 ## Topics
 
 ### Initializing a Parser Object
@@ -93,4 +91,4 @@ An [`XMLParser`](xmlparser.md) notifies its delegate about the items (elements, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/xmlparser)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/xmlparser)*

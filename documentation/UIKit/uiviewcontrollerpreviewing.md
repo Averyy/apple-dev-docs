@@ -1,6 +1,6 @@
 # UIViewControllerPreviewing
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: protocol
 
 A set of methods that define the interface for configuring a previewing view controller on devices that support 3D Touch.
@@ -25,13 +25,9 @@ The system returns a context object conforming to this protocol when you call a 
 
 > **Note**:  The end-user terminology for the views presented during the phases of force-based touches includes  and . For clarity here, and to align with the API names, this document uses the corresponding terms  and .
 
- The end-user terminology for the views presented during the phases of force-based touches includes  and . For clarity here, and to align with the API names, this document uses the corresponding terms  and .
-
 To learn about 3D Touch, read [`Adopting 3D Touch on iPhone`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Adopting3DTouchOniPhone/index.html#//apple_ref/doc/uid/TP40016543).
 
 > ❗ **Important**:  Don’t adopt this protocol in custom classes.
-
- Don’t adopt this protocol in custom classes.
 
 ## Topics
 
@@ -69,4 +65,4 @@ To learn about 3D Touch, read [`Adopting 3D Touch on iPhone`](https://developer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiviewcontrollerpreviewing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiviewcontrollerpreviewing)*

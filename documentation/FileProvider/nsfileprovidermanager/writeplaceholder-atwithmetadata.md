@@ -1,6 +1,6 @@
 # writePlaceholder(at:withMetadata:)
 
-**Framework**: File Provider  
+**Framework**: Fileprovider  
 **Kind**: method
 
 Writes a document placeholder with the provided metadata.
@@ -21,8 +21,6 @@ class func writePlaceholder(at placeholderURL: URL, withMetadata metadata: NSFil
 Call this method whenever you need to create a placeholder for a document. The metadata that you provide sets the data provided to the user in the browser interface.
 
 > **Note**:  While this method is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
-
- While this method is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
 
 ## Parameters
 

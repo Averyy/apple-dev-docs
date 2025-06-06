@@ -1,6 +1,6 @@
 # SubscriptionBuyLineItem
 
-**Framework**: External Purchase Server API  
+**Framework**: Externalpurchaseserverapi  
 **Kind**: dictionary
 
 The line item that indicates a subscription-related event or transaction.
@@ -32,8 +32,6 @@ Include the line-item objects in the `lineItems` array of an [`ExternalPurchaseR
 
 > **Note**: Identify a subscription using the [`lineItemId`](lineitemid.md) of the original subscription-start transaction. A line item for a subscription start has an [`eventType`](eventtype.md) of `BUY` and a [`subscriptionEvent`](subscriptionevent.md) of `SUBSCRIPTION_START`.
 
-Identify a subscription using the [`lineItemId`](lineitemid.md) of the original subscription-start transaction. A line item for a subscription start has an [`eventType`](eventtype.md) of `BUY` and a [`subscriptionEvent`](subscriptionevent.md) of `SUBSCRIPTION_START`.
-
 For example, to report a renewal for a subscription, set the renewal transaction’s [`referenceLineItemId`](referencelineitemid.md) to the `lineItemId` of the subscription-start line item, and set the  `subscriptionEvent` to `RENEWAL`.
 
 For more information, see [`Reporting tokens with transactions`](reportwithtransactions.md) and [`Reporting corrections`](reportcorrections.md).
@@ -54,4 +52,4 @@ For more information, see [`Reporting tokens with transactions`](reportwithtrans
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/externalpurchaseserverapi/subscriptionbuylineitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/subscriptionbuylineitem)*

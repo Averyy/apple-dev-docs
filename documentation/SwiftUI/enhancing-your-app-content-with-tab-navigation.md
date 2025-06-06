@@ -1,6 +1,6 @@
 # Enhancing your app’s content with tab navigation
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Keep your app content front and center while providing quick access to navigation using the tab bar.
 
@@ -47,8 +47,6 @@ enum Tabs: Equatable, Hashable, Identifiable {
 ```
 
 > **Note**: When using symbol images for your tabs, use the outline variant. The system automatically selects the filled variant when it appears in a tab bar.
-
-When using symbol images for your tabs, use the outline variant. The system automatically selects the filled variant when it appears in a tab bar.
 
 ![A screenshot of the iPadOS tab bar in Simulator. The tab bar is highlighted, the tab bar has an icon on the left that turns it into a sidebar, followed by the tabs: Watch Now, Library, New, Favorites, and Search, which appears as a magnifying glass.](https://docs-assets.developer.apple.com/published/9a5ad10f868c9474778c59000b7602ec/Enhancing-your-app-content-with-tab-navigation-create-tab%402x.png)
 
@@ -142,8 +140,6 @@ A `TabView` with the `sidebarAdaptable` style appears differently depending on t
 
 > **Note**: By default, contents in a `ScrollView(.horizontal)` scroll under the sidebar when you use the `sidebarAdaptable` tab view style in iPadOS. You can prevent the content from scrolling under the sidebar by adding the [`clipped(antialiased:)`](view/clipped(antialiased:).md) or [`clipShape(_:style:)`](view/clipshape(_:style:).md) modifier to `ScrollView`.
 
-By default, contents in a `ScrollView(.horizontal)` scroll under the sidebar when you use the `sidebarAdaptable` tab view style in iPadOS. You can prevent the content from scrolling under the sidebar by adding the [`clipped(antialiased:)`](view/clipped(antialiased:).md) or [`clipShape(_:style:)`](view/clipshape(_:style:).md) modifier to `ScrollView`.
-
 ##### Enable Customization
 
 Tab view customization allows people to enter edit mode and personalize the tab bar. The customization in Destination Video allows people to:
@@ -212,4 +208,4 @@ For design guidance, see Human Interface Guidelines >  [`Tab bars`](https://deve
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/enhancing-your-app-content-with-tab-navigation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/enhancing-your-app-content-with-tab-navigation)*

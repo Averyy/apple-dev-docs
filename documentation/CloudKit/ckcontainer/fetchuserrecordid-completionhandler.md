@@ -1,6 +1,6 @@
 # fetchUserRecordID(completionHandler:)
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: method
 
 Fetches the user record ID of the current user.
@@ -34,8 +34,6 @@ CloudKit returns a [`CKError.Code.notAuthenticated`](ckerror/code/notauthenticat
 - The device doesn’t have an iCloud account.
 
 > **Note**:  At startup, fetching the user record ID may take longer while CloudKit makes the initial iCloud account request. After the initial fetch, accessing the ID generally takes less time.
-
- At startup, fetching the user record ID may take longer while CloudKit makes the initial iCloud account request. After the initial fetch, accessing the ID generally takes less time.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # CFXMLCreateStringByUnescapingEntities(_:_:_:)
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: func
 
 Given a CFString object containing XML source with escaped entities, returns a string with specified XML entities unescaped.
@@ -25,8 +25,6 @@ The standard five predefined entities are automatically supported.
 As an example of using this function, say you apply this function to string “Refer to ¶ 5 of the contract” with a key of “para” mapped to “¶” in `entitiesDictionary`. The resulting string is “Refer to ¶ 5 of the contract”.
 
 > **Note**:  Currently, only the standard predefined entities are supported; passing `NULL` for `entitiesDictionary` is sufficient.
-
- Currently, only the standard predefined entities are supported; passing `NULL` for `entitiesDictionary` is sufficient.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # writeSafely(to:ofType:for:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Writes the contents of the document to a file or file package located by a URL.
@@ -26,10 +26,6 @@ For `NSSaveOperation`, the default implementation of this method uses the value 
 For backward binary compatibility with OS X v10.3 and earlier, the default implementation of this method instead invokes [`writeWithBackupToFile:ofType:saveOperation:`](nsdocument/writewithbackuptofile:oftype:saveoperation:.md) if that method is is overridden and the URL uses the `file:` scheme. The save operation in this case is never `NSAutosaveOperation`; `NSSaveToOperation` is used instead.
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

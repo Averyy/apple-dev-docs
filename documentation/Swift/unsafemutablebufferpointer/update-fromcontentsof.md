@@ -32,11 +32,7 @@ The returned index is one past the index of the last element updated. If `source
 
 > **Note**: The memory regions referenced by `source` and this buffer may overlap.
 
-The memory regions referenced by `source` and this buffer may overlap.
-
 > **Note**: `self.count` >= `source.count`
-
-`self.count` >= `source.count`
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # IntentWidgetFamily.systemExtraLarge
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: case
 
 An extra large widget.
@@ -24,8 +24,6 @@ case systemExtraLarge
 The extra-large system widget can appear on the Home Screen in iPadOS and on macOS.
 
 > **Note**: This value is only available in iPadOS and macOS.
-
-This value is only available in iPadOS and macOS.
 
 
 ---

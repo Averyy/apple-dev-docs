@@ -1,6 +1,6 @@
 # Using contextual menu and toolbar item keys
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Learn about adding contextual menu items and toolbar items to a Safari app extension with information property list keys.
 
@@ -75,8 +75,6 @@ Use the `Image` key to provide an image for the toolbar button. Safari may resiz
 
 > **Note**:  Buttons on the Safari toolbar are largely transparent, allowing them to fill with the appropriate gradient for the current macOS user interface. You don’t need to draw the button itself.
 
- Buttons on the Safari toolbar are largely transparent, allowing them to fill with the appropriate gradient for the current macOS user interface. You don’t need to draw the button itself.
-
 ## See Also
 
 - [Adjusting settings for a toolbar item](adjusting-settings-for-a-toolbar-item.md)
@@ -91,4 +89,4 @@ Use the `Image` key to provide an image for the toolbar button. Safari may resiz
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/using-contextual-menu-and-toolbar-item-keys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/using-contextual-menu-and-toolbar-item-keys)*

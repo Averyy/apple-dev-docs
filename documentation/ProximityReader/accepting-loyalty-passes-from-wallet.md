@@ -1,6 +1,6 @@
 # Accepting loyalty passes from Wallet
 
-**Framework**: ProximityReader
+**Framework**: Proximityreader
 
 Set up the necessary components so your app can begin using Tap to Pay on iPhone to read and issue loyalty passes.
 
@@ -12,8 +12,6 @@ Use ProximityReader to support Tap to Pay on iPhone so your app can read NFC pas
 - Prompt a customer to join a merchant’s loyalty program after a successful transaction, with a push notification.
 
 > ❗ **Important**: To read loyalty passes from Wallet, the passes must be NFC-enabled. For more information, see [`Getting Started with Apple Wallet`](https://developer.apple.comhttps://developer.apple.com/wallet/get-started/).
-
-To read loyalty passes from Wallet, the passes must be NFC-enabled. For more information, see [`Getting Started with Apple Wallet`](https://developer.apple.comhttps://developer.apple.com/wallet/get-started/).
 
 For information about how to configure the card reader, see [`Adding support for Tap to Pay on iPhone to your app`](adding-support-for-tap-to-pay-on-iphone-to-your-app.md).
 
@@ -45,8 +43,6 @@ Use [`readVAS(_:)`](paymentcardreadersession/readvas(_:).md) to bring up a sheet
 After you get a [`VASReadResult`](vasreadresult.md) you must send the pass content, [`customerVASData`](vasreadresult/readentry/customervasdata.md), to your loyalty-program provider. It’s up to your app to process the returned data and to show the final result to the merchant.
 
 > **Note**: To receive specific details about the encryption and decryption of the NFC payload, you need an NFC Certificate for your pass. For more information, see [`NFC Certificate Request`](https://developer.apple.comhttps://developer.apple.com/contact/passkit/).
-
-To receive specific details about the encryption and decryption of the NFC payload, you need an NFC Certificate for your pass. For more information, see [`NFC Certificate Request`](https://developer.apple.comhttps://developer.apple.com/contact/passkit/).
 
 ```swift
 public class WrapperClass {
@@ -90,8 +86,6 @@ You can read both a payment card and multiple loyalty passes in one tap, the flo
 After you get a [`VASReadResult`](vasreadresult.md) you must send the pass content, [`customerVASData`](vasreadresult/readentry/customervasdata.md), to your loyalty-program provider. It’s up to your app to process the returned data and to show the final result to the merchant.
 
 > **Note**: For a list of all possible combinations, see [`readPaymentCard(_:vasRequest:stopOnVASResult:)`](paymentcardreadersession/readpaymentcard(_:vasrequest:stoponvasresult:).md).
-
-For a list of all possible combinations, see [`readPaymentCard(_:vasRequest:stopOnVASResult:)`](paymentcardreadersession/readpaymentcard(_:vasrequest:stoponvasresult:).md).
 
 ```swift
 public class WrapperClass {
@@ -150,4 +144,4 @@ Use [`readPaymentCard(_:vasRequest:stopOnVASResult:)`](paymentcardreadersession/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/accepting-loyalty-passes-from-wallet)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/accepting-loyalty-passes-from-wallet)*

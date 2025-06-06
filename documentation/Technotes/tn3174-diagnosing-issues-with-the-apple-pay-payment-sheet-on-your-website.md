@@ -28,8 +28,6 @@ An “Apple Pay not available for this website” error can occur while presenti
 
 > **Note**: The `/startSession` endpoint is being phased out and replaced by `/paymentSession`. See [`Requesting an Apple Pay Payment Session`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/requesting_an_apple_pay_payment_session) for more information.
 
-The `/startSession` endpoint is being phased out and replaced by `/paymentSession`. See [`Requesting an Apple Pay Payment Session`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/requesting_an_apple_pay_payment_session) for more information.
-
 #### Possible Reasons for Payment Failed Errors
 
 A “Payment Failed” error can occur while presenting the payment sheet, the most common reasons include:
@@ -111,8 +109,6 @@ If you plan to process payments on a root domain and subdomain—for example, `e
 
 > **Note**: Apple considers `www.` a subdomain, so if you plan to process payments for `example.com`, but customers can access your site at `www.example.com`, you may need to ensure you register and verify both domains.
 
-Apple considers `www.` a subdomain, so if you plan to process payments for `example.com`, but customers can access your site at `www.example.com`, you may need to ensure you register and verify both domains.
-
  This error indicates the request couldn’t be processed, or the request body is malformed or invalid. Please ensure your request body is a valid JSON.
 
 ##### Troubleshooting Merchant Validation Issues
@@ -170,8 +166,6 @@ For example, for any of the customer-selected payment methods on the W3C `Paymen
 
 > ❗ **Important**:  For the `onpaymentauthorized` event, if your system takes longer than 30 seconds to process the payment, the customer may see the payment sheet dismiss with an error, even though you may eventually process the payment successfully.
 
- For the `onpaymentauthorized` event, if your system takes longer than 30 seconds to process the payment, the customer may see the payment sheet dismiss with an error, even though you may eventually process the payment successfully.
-
 If the payment sheet dismisses without user interaction, please confirm the following:
 
 - Your event handler implementations invoke the equivalent completion method. Do not stub out any of these event handler or completion methods.
@@ -225,4 +219,4 @@ You may experience situations where the payment sheet does not display a success
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website)*

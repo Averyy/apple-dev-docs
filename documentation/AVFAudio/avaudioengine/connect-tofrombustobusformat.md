@@ -1,6 +1,6 @@
 # connect(_:to:fromBus:toBus:format:)
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: method
 
 Establishes a connection between two nodes, specifying the input and output busses.
@@ -25,8 +25,6 @@ func connect(_ node1: AVAudioNode, to node2: AVAudioNode, fromBus bus1: AVAudioN
 Audio nodes have input and output busses ([`AVAudioNodeBus`](avaudionodebus.md)). Use this method to establish connections between audio nodes. Connections are always one-to-one, never one-to-many or many-to-one.
 
 > **Note**:  This breaks any preexisting connections that involve the source’s output bus or the destination’s input bus.
-
- This breaks any preexisting connections that involve the source’s output bus or the destination’s input bus.
 
 ## Parameters
 

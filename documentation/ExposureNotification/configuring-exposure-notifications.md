@@ -1,6 +1,6 @@
 # Configuring Exposure Notifications
 
-**Framework**: Exposure Notification
+**Framework**: Exposurenotification
 
 Define how Exposure Notifications work for a region by assigning server-based key-value pairs.
 
@@ -9,8 +9,6 @@ Define how Exposure Notifications work for a region by assigning server-based ke
 The configuration fields listed below define the behavior for Exposure Notifications features such as exposure matching, Exposure Risk Value (ERV) calculation, and messaging for regions managed by a Public Health Authority (PHA). These values can be changed by using the server-to-server API or by contacting Apple to request a change. PHAs that only support Exposure Notifications Express can also change these values by logging into Apple Business Register (ABR).
 
 > **Note**:  To learn more about using these keys with the Exposure Notifications server-to-server API, see [`Changing Configuration Values Using the Server‑to‑Server API`](changing-configuration-values-using-the-server-to-server-api.md).
-
- To learn more about using these keys with the Exposure Notifications server-to-server API, see [`Changing Configuration Values Using the Server‑to‑Server API`](changing-configuration-values-using-the-server-to-server-api.md).
 
 Some keys are relevant to all Exposure Notifications behavior, while some keys are only used by Exposure Notifications Express. Keys used to display information to users, to customize the user interface, to adjust exposure calculations, and to configure test verification servers are only used by Exposure Notifications Express. The other values are used by both Exposure Notifications Express and Exposure Notifications apps.
 
@@ -25,8 +23,6 @@ Using keys marked Localizable, you can provide different values for different la
 Exposure Notifications’ APIs are available in two versions. Version 1 requires a client app to function, while Version 2 — available on iOS 13.7 and later —  works both with a client app or without an app by using Exposure Notifications Express.
 
 > **Note**:  Keys you use to display information to users, customize the UI, adjust exposure calculations, and configure test verification servers are only used by Exposure Notifications Express, including any field that takes a color, image, or URL, or that includes `header`, `message`, or `text` as part of its name.
-
- Keys you use to display information to users, customize the UI, adjust exposure calculations, and configure test verification servers are only used by Exposure Notifications Express, including any field that takes a color, image, or URL, or that includes `header`, `message`, or `text` as part of its name.
 
 ##### Set Region Information
 
@@ -192,4 +188,4 @@ An API key, required to talk to the Test Verification server. .
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/configuring-exposure-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/configuring-exposure-notifications)*

@@ -1,6 +1,6 @@
 # Customizing the tvOS Playback Experience
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Adopt the latest features of the redesigned tvOS player user interface to provide a more streamlined way to watch your content.
 
@@ -13,8 +13,6 @@ tvOS 15 introduces an all-new playback experience that helps viewers stay in the
 It’s simple to provide this playback experience in your app by using [`AVPlayerViewController`](avplayerviewcontroller.md). Using this class for your player UI provides your app the same features and familiar interactions found in the Apple TV app, including support for voice commands using the Siri Remote and presenting video in Picture in Picture. In tvOS 15, [`AVPlayerViewController`](avplayerviewcontroller.md) is more configurable and customizable than ever, giving you new ways to tailor your app’s video playback experience.
 
 > **Note**:  Existing apps that use [`AVPlayerViewController`](avplayerviewcontroller.md) adopt the new styling and features of the redesigned player UI when they link against the tvOS 15 SDK.
-
- Existing apps that use [`AVPlayerViewController`](avplayerviewcontroller.md) adopt the new styling and features of the redesigned player UI when they link against the tvOS 15 SDK.
 
 ##### Display Supporting Metadata
 
@@ -69,8 +67,6 @@ playerItem.externalMetadata = createMetadataItems(for: metadata)
 Only the title and subtitle values display in the title view. The player presents the other supported metadata values in its Info tab, which the Display Content Tabs section below describes.
 
 > **Note**:  If your app would prefer to always hide the title view, set the value of the player view controller’s [`transportBarIncludesTitleView`](avplayerviewcontroller/transportbarincludestitleview.md) to [`false`](https://developer.apple.com/documentation/swift/false).
-
- If your app would prefer to always hide the title view, set the value of the player view controller’s [`transportBarIncludesTitleView`](avplayerviewcontroller/transportbarincludestitleview.md) to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ##### Add Custom Transport Bar Items
 
@@ -240,4 +236,4 @@ func addTimeObserver() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/customizing-the-tvos-playback-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/customizing-the-tvos-playback-experience)*

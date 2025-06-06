@@ -1,6 +1,6 @@
 # Displaying Indoor Maps with MapKit JS
 
-**Framework**: MapKit JS
+**Framework**: Mapkitjs
 
 Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom overlays and points of interest in your browser.
 
@@ -11,8 +11,6 @@ This sample uses the [`importGeoJSON`](mapkit/importgeojson.md) method from MapK
 Use these examples to create your own indoor map with a style that is consistent with your app’s design. You can handle feature categories specific to your venue, and configure the map style using your own colors, icons, and level picker.
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`241: Adding Indoor Maps to your App and Website`](https://developer.apple.comhttps://developer.apple.com/wwdc19/241).
-
-This sample code project is associated with WWDC 2019 session [`241: Adding Indoor Maps to your App and Website`](https://developer.apple.comhttps://developer.apple.com/wwdc19/241).
 
 ##### Configure Your Sample Code Project
 
@@ -34,4 +32,4 @@ To run this sample code:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/displaying-indoor-maps-with-mapkit-js)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/displaying-indoor-maps-with-mapkit-js)*

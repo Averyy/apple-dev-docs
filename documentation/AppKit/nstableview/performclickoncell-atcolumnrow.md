@@ -1,6 +1,6 @@
 # performClickOnCell(atColumn:row:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Performs a click action on the cell at the specified row and column.
@@ -20,8 +20,6 @@ func performClickOnCell(atColumn column: Int, row: Int)
 Acquires the [`NSTableView`](nstableview.md), copies it, invokes [`performClick(_:)`](nscell/performclick(_:).md) or [`performClick(withFrame:in:)`](nspopupbuttoncell/performclick(withframe:in:).md) (if the cell is an [`NSPopUpButtonCell`](nspopupbuttoncell.md)), and then updates the data source, if required. This method does not do any checks to see if the cell is enabled.
 
 > **Note**:  This method is only available to [`NSCell`](nscell.md)-based table views.
-
- This method is only available to [`NSCell`](nscell.md)-based table views.
 
 ## Parameters
 

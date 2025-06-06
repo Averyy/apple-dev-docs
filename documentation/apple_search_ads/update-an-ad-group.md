@@ -1,6 +1,6 @@
 # Update an Ad Group
 
-**Framework**: Apple Search Ads  
+**Framework**: Apple_Search_Ads  
 **Kind**: httpRequest
 
 Updates an ad group with an ad group identifier.
@@ -15,8 +15,6 @@ To update ad groups, use the associated `campaignId` and `adgroupId` in the reso
 In the request, specify [`TargetingDimensions`](targetingdimensions.md) and apply it to ad groups. If you’re not updating [`TargetingDimensions`](targetingdimensions.md), don’t include them in the payload. Use partial updates as necessary. For more information, see the Use Partial Updates section of [`Using Apple Search Ads API Functionality`](using-apple-search-ads-api-functionality.md).
 
 > **Note**:  You can’t create or update ad groups with geotargeting for campaigns with multiple countries or regions. Use [`UpdateCampaignRequest`](updatecampaignrequest.md) to clear your geotargeting parameters. Then apply [`TargetingDimensions`](targetingdimensions.md) in the request payload.
-
- You can’t create or update ad groups with geotargeting for campaigns with multiple countries or regions. Use [`UpdateCampaignRequest`](updatecampaignrequest.md) to clear your geotargeting parameters. Then apply [`TargetingDimensions`](targetingdimensions.md) in the request payload.
 
 ##### Payload Example Update an Ad Group with Targeting
 

@@ -1,6 +1,6 @@
 # AVAssetWriterInputGroup
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: class
 
 A group of inputs with tracks that are mutually exclusive to each other for playback or processing.
@@ -24,8 +24,6 @@ class AVAssetWriterInputGroup
 Assets may contain multiple tracks of media that are mutually exclusive to each other when you play or process them. For example, an asset may contain multiple audio tracks for different spoken languages, but only one of them should play at a time. You use an input group to mark a collection of tracks as mutually exclusive to each other in the file the asset writer outputs.
 
 > **Note**:  After associating several tracks by calling [`addTrackAssociation(withTrackOf:type:)`](avassetwriterinput/addtrackassociation(withtrackof:type:).md), you can examine the media selection options an asset writer outputs before it writes the file.
-
- After associating several tracks by calling [`addTrackAssociation(withTrackOf:type:)`](avassetwriterinput/addtrackassociation(withtrackof:type:).md), you can examine the media selection options an asset writer outputs before it writes the file.
 
 ## Topics
 
@@ -79,4 +77,4 @@ Assets may contain multiple tracks of media that are mutually exclusive to each 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avassetwriterinputgroup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avassetwriterinputgroup)*

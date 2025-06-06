@@ -1,6 +1,6 @@
 # QueueActivityReportEvent
 
-**Framework**: SiriKit Cloud Media  
+**Framework**: Sirikitcloudmedia  
 **Kind**: typealias
 
 An event that occurs during content playback.
@@ -22,8 +22,6 @@ To customize which controls are available during playback of a piece of [`Conten
 
 > **Note**:  The like and dislike events above indicate when the user presses a corresponding control. These are separate from the user telling Siri they like or dislike some content, which the client reports to the [`Process an Update Media Affinity Intent`](updatemediaaffinity.md) endpoint.
 
- The like and dislike events above indicate when the user presses a corresponding control. These are separate from the user telling Siri they like or dislike some content, which the client reports to the [`Process an Update Media Affinity Intent`](updatemediaaffinity.md) endpoint.
-
 ## See Also
 
 - [Report Playback Progress and Activity](updateactivity.md)
@@ -38,4 +36,4 @@ To customize which controls are available during playback of a piece of [`Conten
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikitcloudmedia/queueactivityreportevent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKitCloudMedia/queueactivityreportevent)*

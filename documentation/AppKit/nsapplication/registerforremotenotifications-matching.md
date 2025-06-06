@@ -1,6 +1,6 @@
 # registerForRemoteNotifications(matching:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Register to receive notifications of the specified types from a provider through the Apple Push Notification service.
@@ -20,8 +20,6 @@ func registerForRemoteNotifications(matching types: NSApplication.RemoteNotifica
 When you send this message, the device initiates the registration process with Apple Push Notification Service. If it succeeds, the app delegate receives a device token in the [`application(_:didRegisterForRemoteNotificationsWithDeviceToken:)`](nsapplicationdelegate/application(_:didregisterforremotenotificationswithdevicetoken:).md) method; if registration doesn’t succeed, the delegate is informed via the [`application(_:didFailToRegisterForRemoteNotificationsWithError:)`](nsapplicationdelegate/application(_:didfailtoregisterforremotenotificationswitherror:).md) method. If the app delegate receives a device token, it should connect with its provider and pass it the token.
 
 > **Note**:  Currently the only notification type supported in macOS for non-running apps is icon badging. However, the JSON payload, which may contain information related to sounds and alerts, is passed to a running app in [`application(_:didReceiveRemoteNotification:)`](nsapplicationdelegate/application(_:didreceiveremotenotification:).md). The app can do whatever it wants to with that information (for example, display an alert or play a sound).
-
- Currently the only notification type supported in macOS for non-running apps is icon badging. However, the JSON payload, which may contain information related to sounds and alerts, is passed to a running app in [`application(_:didReceiveRemoteNotification:)`](nsapplicationdelegate/application(_:didreceiveremotenotification:).md). The app can do whatever it wants to with that information (for example, display an alert or play a sound).
 
 ## Parameters
 

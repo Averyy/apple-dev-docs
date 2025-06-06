@@ -24,8 +24,6 @@ func drop(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.SubSe
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `predicate`: A closure that takes an element of the   sequence as its argument and returns   if the element should   be skipped or   if it should be included. Once the predicate   returns   it will not be called again.

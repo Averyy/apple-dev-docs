@@ -24,8 +24,6 @@ mutating func encode<T>(_ value: T, forKey key: KeyedEncodingContainer<K>.Key) t
 
 > **Note**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 
-`EncodingError.invalidValue` if the given value is invalid in the current context for this format.
-
 ## Parameters
 
 - `value`: The value to encode.

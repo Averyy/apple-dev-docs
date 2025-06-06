@@ -1,6 +1,6 @@
 # drawRow(_:clipRect:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Draws the cells for the row at `rowIndex` in the columns that intersect `clipRect`.
@@ -20,8 +20,6 @@ func drawRow(_ row: Int, clipRect: NSRect)
 [`NSCell`](nscell.md)-based table views can override this method to customize the drawing of the rows.
 
 > **Note**:  For [`NSView`](nsview.md)-based table views, do not subclass or override this method. Instead, row drawing customization should be done by subclassing [`NSTableRowView`](nstablerowview.md).
-
- For [`NSView`](nsview.md)-based table views, do not subclass or override this method. Instead, row drawing customization should be done by subclassing [`NSTableRowView`](nstablerowview.md).
 
 ## Parameters
 

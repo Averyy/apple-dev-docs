@@ -26,8 +26,6 @@ Each process has a single, shared [`ProcessInfo`](processinfo.md) object known a
 
 > **Note**:  [`ProcessInfo`](processinfo.md) is thread-safe in macOS 10.7 and later.
 
- [`ProcessInfo`](processinfo.md) is thread-safe in macOS 10.7 and later.
-
 The [`ProcessInfo`](processinfo.md) class also includes the [`operatingSystemVersion`](processinfo/operatingsystemversion.md) property, which returns an [`OperatingSystemVersion`](operatingsystemversion.md) structure identifying the operating system version on which the process is executing.
 
 [`ProcessInfo`](processinfo.md) objects attempt to interpret environment variables and command-line arguments in the user’s default C string encoding if they can’t convert to Unicode as UTF-8 strings. If neither the Unicode nor C string conversion works, the [`ProcessInfo`](processinfo.md) object ignores these values.
@@ -83,14 +81,6 @@ Some AppKit functionality automatically disables sudden termination on a tempora
 > 💡 **Tip**:  You can determine the value of the sudden termination using the following LLDB command. ```objc
 print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminationDisablingCount]
 ``` Don’t attempt to invoke or override `suddenTerminationDisablingCount` (a private method) in your application. It’s there for this debugging purpose and may disappear at any time.
-
- You can determine the value of the sudden termination using the following LLDB command.
-
-```objc
-print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminationDisablingCount]
-```
-
-Don’t attempt to invoke or override `suddenTerminationDisablingCount` (a private method) in your application. It’s there for this debugging purpose and may disappear at any time.
 
 ##### Monitor Thermal State to Adjust App Performance
 
@@ -205,4 +195,4 @@ Don’t attempt to invoke or override `suddenTerminationDisablingCount` (a priva
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/processinfo)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/processinfo)*

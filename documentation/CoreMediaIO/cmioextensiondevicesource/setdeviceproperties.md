@@ -1,6 +1,6 @@
 # setDeviceProperties(_:)
 
-**Framework**: Core Media I/O  
+**Framework**: Coremediaio  
 **Kind**: method  
 **Required**: Yes
 
@@ -21,8 +21,6 @@ func setDeviceProperties(_ deviceProperties: CMIOExtensionDeviceProperties) thro
 If you implement this method in Swift and an error occurs, throw an error and pass more detailed information regarding the property or properties that failed in the error that you throw. If you implement this method in Objective-C and an error occurs, pass more detailed information regarding the property or properties that failed in the [`localizedDescription`](https://developer.apple.com/documentation/foundation/nserror/1414418-localizeddescription) property of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError).
 
 > **Note**: The property attributes associated with a property state are always `nil` when setting a value.
-
-The property attributes associated with a property state are always `nil` when setting a value.
 
 ## Parameters
 

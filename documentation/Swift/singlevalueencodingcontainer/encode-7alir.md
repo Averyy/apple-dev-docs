@@ -25,11 +25,7 @@ mutating func encode(_ value: Int128) throws
 
 > **Note**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 
-`EncodingError.invalidValue` if the given value is invalid in the current context for this format.
-
 > **Note**: May not be called after a previous `self.encode(_:)` call.
-
-May not be called after a previous `self.encode(_:)` call.
 
 ## Parameters
 

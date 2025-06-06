@@ -1,6 +1,6 @@
 # shouldDeleteInaccessibleFaults
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: property
 
 A Boolean value that determines whether the context turns inaccessible faults into deleted objects.
@@ -37,8 +37,6 @@ When this property is set to [`false`](https://developer.apple.com/documentation
 The default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 > **Note**:  You can use query generations to pin a context to a stable view of the store’s data and isolate that context from changes that other contexts or processes make. For more information, see [`Accessing data when the store changes`](accessing-data-when-the-store-changes.md).
-
- You can use query generations to pin a context to a stable view of the store’s data and isolate that context from changes that other contexts or processes make. For more information, see [`Accessing data when the store changes`](accessing-data-when-the-store-changes.md).
 
 ## See Also
 

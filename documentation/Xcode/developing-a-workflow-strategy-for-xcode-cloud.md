@@ -74,8 +74,6 @@ To copy an existing workflow:
 
 > **Note**: A new workflow is active by default. As a result, Xcode Cloud runs both the original workflow and the duplicate unless you deactivate one of them or change either workflow’s start conditions.
 
-A new workflow is active by default. As a result, Xcode Cloud runs both the original workflow and the duplicate unless you deactivate one of them or change either workflow’s start conditions.
-
 ##### Restrict Who Can Edit a Workflow
 
 Depending on the complexity of your project, creating a workflow and making sure Xcode Cloud can successfully build your project can take a significant amount of time. To prevent team members from making unintentional changes to a workflow, restrict who can edit it using these steps:
@@ -107,4 +105,4 @@ To manage workflows in App Store Connect:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/developing-a-workflow-strategy-for-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/developing-a-workflow-strategy-for-xcode-cloud)*

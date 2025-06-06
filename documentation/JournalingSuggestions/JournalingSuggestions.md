@@ -1,6 +1,6 @@
 # Journaling Suggestions
 
-**Framework**: Journaling Suggestions  
+**Framework**: Journalingsuggestions  
 **Kind**: module
 
 Display a set of recent, personal events that inspire someone to contribute to your app’s creative workflow.
@@ -21,8 +21,6 @@ To incorporate a suggestions picker ([`JournalingSuggestionsPicker`](journalings
 For the picker to appear, your app needs a special entitlement in your app’s code signature. You don’t need to ask for additional authorization because your app can’t access the details for a suggestion until after a person chooses to share them by making a selection in the picker.
 
 > **Note**: Mac apps built with Mac Catalyst ignore input if someone taps a suggestions picker button.
-
-Mac apps built with Mac Catalyst ignore input if someone taps a suggestions picker button.
 
 ## Topics
 

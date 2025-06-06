@@ -1,6 +1,6 @@
 # containerFrame
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 The size in points of the frame where the text is laid out.
@@ -25,8 +25,6 @@ The points are scaled at a ratio of 72 points per meter.
 The container frame has the same origin as the local coordinate system.
 
 > **Note**: Use a value of `nil` to denote an arbitrarily large frame.
-
-Use a value of `nil` to denote an arbitrarily large frame.
 
 
 ---

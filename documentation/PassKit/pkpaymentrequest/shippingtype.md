@@ -1,6 +1,6 @@
 # shippingType
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 The type of shipping the request uses.
@@ -28,8 +28,6 @@ var shippingType: PKShippingType { get set }
 This property sets the labels for the shipping information displayed by the [`PKPaymentAuthorizationViewController`](pkpaymentauthorizationviewcontroller.md) class. The default value is [`PKShippingType.shipping`](pkshippingtype/shipping.md). For a complete list of valid shipping types, see [`PKShippingType`](pkshippingtype.md).
 
 > **Note**:  In iOS 14 and earlier, watchOS 4 and earlier, and Catalyst 14 and earlier, if you’re using a [`PKShippingType.storePickup`](pkshippingtype/storepickup.md) shipping type, you need to manage the shipping information displayed by the payment authorization view controller. By default, the system displays the user’s preferred shipping address. You can set the request’s [`shippingAddress`](pkpaymentrequest/shippingaddress.md) property to the address for your store, or hide the shipping information entirely by setting the [`requiredShippingAddressFields`](pkpaymentrequest/requiredshippingaddressfields.md) property to [`PKAddressFieldNone`](pkaddressfield/pkaddressfieldnone.md).
-
- In iOS 14 and earlier, watchOS 4 and earlier, and Catalyst 14 and earlier, if you’re using a [`PKShippingType.storePickup`](pkshippingtype/storepickup.md) shipping type, you need to manage the shipping information displayed by the payment authorization view controller. By default, the system displays the user’s preferred shipping address. You can set the request’s [`shippingAddress`](pkpaymentrequest/shippingaddress.md) property to the address for your store, or hide the shipping information entirely by setting the [`requiredShippingAddressFields`](pkpaymentrequest/requiredshippingaddressfields.md) property to [`PKAddressFieldNone`](pkaddressfield/pkaddressfieldnone.md).
 
 ## See Also
 

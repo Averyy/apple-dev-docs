@@ -14,8 +14,6 @@ The certificate, key, and trust services API is a collection of functions and da
 
 > **Note**:  Rely on the classes of the [`Security Interface`](https://developer.apple.com/documentation/SecurityInterface) framework to ensure a consistent experience when displaying certificates and trust settings to the user and when the user chooses among identities or modifies keychain settings.
 
- Rely on the classes of the [`Security Interface`](https://developer.apple.com/documentation/SecurityInterface) framework to ensure a consistent experience when displaying certificates and trust settings to the user and when the user chooses among identities or modifies keychain settings.
-
 ## Topics
 
 ### API Components
@@ -42,4 +40,4 @@ The certificate, key, and trust services API is a collection of functions and da
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/certificate-key-and-trust-services)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/certificate-key-and-trust-services)*

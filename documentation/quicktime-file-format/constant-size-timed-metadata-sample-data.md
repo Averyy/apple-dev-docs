@@ -1,6 +1,6 @@
 # Constant-size timed metadata sample data
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Create metadata tracks with samples that have the same size.
 
@@ -17,8 +17,6 @@ In the second approach, the size of individual metadata values may vary. It is p
 3. If necessary, add one or more unreferenced atoms to reach the constant metadata media atom size.
 
 > **Note**: Because an atom has a minimum size of 8 bytes, the sum of the sizes of contained timed metadata media samples either must equal the target constant metadata media atom size, or must be 8 or more bytes smaller than the target constant atom size to allow for one or more padding atoms.
-
-Because an atom has a minimum size of 8 bytes, the sum of the sizes of contained timed metadata media samples either must equal the target constant metadata media atom size, or must be 8 or more bytes smaller than the target constant atom size to allow for one or more padding atoms.
 
 #### Unreferenced or Null Timed Metadata Sample Data
 

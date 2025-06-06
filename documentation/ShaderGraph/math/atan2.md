@@ -1,6 +1,6 @@
 # Atan2
 
-**Framework**: ShaderGraph  
+**Framework**: Shadergraph  
 **Kind**: subscript
 
 The arctangent of the expression (iny/inx) in radians.
@@ -10,8 +10,6 @@ The arctangent of the expression (iny/inx) in radians.
 #### Overview
 
 > **Note**: Atan2 follows the MaterialX specification parameter names which may differ from the implementation used by content creation applications.
-
-Atan2 follows the MaterialX specification parameter names which may differ from the implementation used by content creation applications.
 
 ## See Also
 

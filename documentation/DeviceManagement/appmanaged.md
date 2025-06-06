@@ -1,6 +1,6 @@
 # AppManaged
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: dictionary
 
 The declaration to configure a managed app.
@@ -23,8 +23,6 @@ object AppManaged
 Provide a value for one and only one of the `AppStoreID`, `BundleID`, or `ManifestURL` keys.
 
 > **Note**:  This documentation contains preliminary information about an API or technology in development. This information is subject to change. Learn more about using [`Apple’s beta software`](https://developer.apple.comhttps://developer.apple.com/support/beta-software/).
-
- This documentation contains preliminary information about an API or technology in development. This information is subject to change. Learn more about using [`Apple’s beta software`](https://developer.apple.comhttps://developer.apple.com/support/beta-software/).
 
 ## Topics
 
@@ -76,4 +74,4 @@ Provide a value for one and only one of the `AppStoreID`, `BundleID`, or `Manife
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/appmanaged)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/appmanaged)*

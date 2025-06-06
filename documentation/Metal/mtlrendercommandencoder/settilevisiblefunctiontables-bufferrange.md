@@ -25,8 +25,6 @@ By default, the visible function table at each index is `nil`.
 
 > **Note**:  The Objective-C version of this method is [`setTileVisibleFunctionTables:withBufferRange:`](mtlrendercommandencoder/settilevisiblefunctiontables:withbufferrange:.md).
 
- The Objective-C version of this method is [`setTileVisibleFunctionTables:withBufferRange:`](mtlrendercommandencoder/settilevisiblefunctiontables:withbufferrange:.md).
-
 ## Parameters
 
 - `functionTables`: An array of   instances the command assigns to entries in the tile shader argument table for visible function tables.

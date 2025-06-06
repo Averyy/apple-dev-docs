@@ -53,8 +53,6 @@ print(streetsSlice[0])
 
 > **Note**: O(1)
 
-O(1)
-
 ## See Also
 
 - [subscript(Range<String.Index>) -> Substring](string/subscript(_:)-2so14.md)

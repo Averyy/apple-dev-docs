@@ -1,6 +1,6 @@
 # Confirming a person’s physical location
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Add code to quickly confirm a person’s physical location while respecting their privacy.
 
@@ -22,8 +22,6 @@ To enable your App Clip to verify the person’s location, modify your App Clip�
 Alternatively, open the `Info.plist` file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the [`NSAppClip`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip) key and the following entries of type `Boolean` to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation.” Per default, the value for both entries is `NO`. Change the value for “Requests location confirmation” to `YES`.
 
 > **Note**:  Don’t add an entry for the [`NSAppClipRequestLocationConfirmation`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip/NSAppClipRequestLocationConfirmation) key to your full app’s `Info.plist` — functionality to confirm a person’s location is only available to App Clips. Instead, modify your full app’s code to request permission to access the location of a device and make use of the [`Core Location`](https://developer.apple.com/documentation/CoreLocation) framework. For more information, see [`Getting the current location of a device`](https://developer.apple.com/documentation/CoreLocation/getting-the-current-location-of-a-device).
-
- Don’t add an entry for the [`NSAppClipRequestLocationConfirmation`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip/NSAppClipRequestLocationConfirmation) key to your full app’s `Info.plist` — functionality to confirm a person’s location is only available to App Clips. Instead, modify your full app’s code to request permission to access the location of a device and make use of the [`Core Location`](https://developer.apple.com/documentation/CoreLocation) framework. For more information, see [`Getting the current location of a device`](https://developer.apple.com/documentation/CoreLocation/getting-the-current-location-of-a-device).
 
 ##### Add Code That Verifies the Physical Location
 
@@ -111,4 +109,4 @@ For more information on how you can access the App Clip’s invocation URL, see 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/confirming-a-person-s-physical-location)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/confirming-a-person-s-physical-location)*

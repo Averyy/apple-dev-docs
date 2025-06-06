@@ -1,6 +1,6 @@
 # Managing auto-renewable subscriptions
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Create and manage subscriptions with the App Store Connect API.
 
@@ -78,8 +78,6 @@ GET /v1/subscriptions/6446671421/pricePoints?include=territory&filter[territory]
 ```
 
 > 💡 **Tip**:  This API endpoint returns many values, so filtering by territory can save you time.
-
- This API endpoint returns many values, so filtering by territory can save you time.
 
 Here’s an example response, truncated for clarity and sampled from the middle of the full response. This portion shows two price points:
 
@@ -231,13 +229,9 @@ Use `POST /v1/subscriptionPrices` ([`Create a Subscription Price Change`](post-v
 
 > **Note**:  The territory isn’t necessary to include because the price point is unique to the territory.
 
- The territory isn’t necessary to include because the price point is unique to the territory.
-
 To set a price point for another territory, use `POST /v1/subscriptionPrices` ([`Create a Subscription Price Change`](post-v1-subscriptionprices.md)) again, replacing the `subscriptionPricePoint` ID with the other values you obtain from `GET /v1/subscriptionPricePoints/{id}/equalizations` ([`List All Subscription Price Point Equalizations`](get-v1-subscriptionpricepoints-_id_-equalizations.md)). If the subscription is available in all territories, an individual `POST /v1/subscriptionPrices` call is necessary for each territory. You might consider automating this step.
 
 > ❗ **Important**:  Review carefully because after a price goes into effect, you can’t revert it. Be sure to review information about price increases and changes at [`Add a new app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app).
-
- Review carefully because after a price goes into effect, you can’t revert it. Be sure to review information about price increases and changes at [`Add a new app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app).
 
 ##### Configure Billing Grace Period for Your App
 
@@ -246,8 +240,6 @@ After adding support for Billing Grace Period to your app, you can set the state
 To change the status of Billing Grace Period for your app, use `PATCH /v1/subscriptionGracePeriods/{id}` ([`Modify the Billing Grace Period Opt-in Status and Duration`](patch-v1-subscriptiongraceperiods-_id_.md)), where the `id` in the URL and in the payload is the app’s Apple ID.
 
 > **Note**:  This change applies to all subscriptions within an app.
-
- This change applies to all subscriptions within an app.
 
 Here’s an example payload:
 
@@ -316,4 +308,4 @@ Here’s an example payload:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/managing-auto-renewable-subscriptions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/managing-auto-renewable-subscriptions)*

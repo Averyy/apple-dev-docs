@@ -1,6 +1,6 @@
 # type
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 A value that represents the card’s type.
@@ -24,8 +24,6 @@ var type: PKPaymentMethodType { get }
 For a list of possible card types, see [`PKPaymentMethodType`](pkpaymentmethodtype.md).
 
 > **Note**:  Some older cards might not have card type information. Those cards have the value [`PKPaymentMethodType.unknown`](pkpaymentmethodtype/unknown.md).
-
- Some older cards might not have card type information. Those cards have the value [`PKPaymentMethodType.unknown`](pkpaymentmethodtype/unknown.md).
 
 ## See Also
 

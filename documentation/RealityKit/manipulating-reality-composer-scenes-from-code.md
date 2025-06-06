@@ -1,6 +1,6 @@
 # Manipulating Reality Composer scenes from code
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Make programmatic changes to your scenes at runtime.
 
@@ -36,8 +36,6 @@ if let boxScene = try? Experience.loadBox() {
 In addition to hiding and showing objects in your scene using behaviors, as described in [`Bringing a Reality Composer scene to life`](bringing-a-reality-composer-scene-to-life.md), you can also use code to hide and show them, by using the [`isEnabled`](entity/isenabled.md) property. If you set an object’s [`isEnabled`](entity/isenabled.md) property to [`false`](https://developer.apple.com/documentation/swift/false), ARKit doesn’t render it and it doesn’t participate in the scene’s physics simulation. If you set it back to [`true`](https://developer.apple.com/documentation/swift/true), ARKit starts rendering the object again and it resumes participating in the physics simulation.
 
 > **Note**: Child objects of the [`isEnabled`](entity/isenabled.md) property inherit its settings, so disabling [`isEnabled`](entity/isenabled.md) also disables all of its children.
-
-Child objects of the [`isEnabled`](entity/isenabled.md) property inherit its settings, so disabling [`isEnabled`](entity/isenabled.md) also disables all of its children.
 
 ##### Transform a Scene Object
 
@@ -112,4 +110,4 @@ ball.addForce(simd_float3(x: cameraForwardVector.x,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/manipulating-reality-composer-scenes-from-code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/manipulating-reality-composer-scenes-from-code)*

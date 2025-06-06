@@ -24,8 +24,6 @@ func index(after i: String.UTF8View.Index) -> String.UTF8View.Index
 
 > **Note**: The next position is representable.
 
-The next position is representable.
-
 
 ---
 

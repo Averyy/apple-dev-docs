@@ -65,8 +65,6 @@ for i in shorterIndices {
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

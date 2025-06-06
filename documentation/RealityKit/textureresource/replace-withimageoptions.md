@@ -1,6 +1,6 @@
 # replace(withImage:options:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Dynamically replaces the texture with a Core Graphics image.
@@ -26,8 +26,6 @@ This method blocks until the resource updates. Don’t use this method for updat
 To  ensure consistent usage of this texture resource, pass the same semantic in `options` that you use to create the resource.
 
 > **Note**: The contents of a modified texture resource don’t sync between network clients.
-
-The contents of a modified texture resource don’t sync between network clients.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # totalEnergyBurned
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: property
 
 The total active energy burned during the workout.
@@ -28,8 +28,6 @@ var totalEnergyBurned: HKQuantity? { get }
 This property contains a quantity using energy units, or `nil`.
 
 > **Note**:  Provide a total energy burned value whenever the active calories burned is relevant to the workout type. In addition, add active energy burned samples to a workout using the [`add(_:to:completion:)`](hkhealthstore/add(_:to:completion:).md) method. These samples should sum up to the total energy, while providing detailed information about how the intensity changes over the duration of the workout.
-
- Provide a total energy burned value whenever the active calories burned is relevant to the workout type. In addition, add active energy burned samples to a workout using the [`add(_:to:completion:)`](hkhealthstore/add(_:to:completion:).md) method. These samples should sum up to the total energy, while providing detailed information about how the intensity changes over the duration of the workout.
 
 ## See Also
 

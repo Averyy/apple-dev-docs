@@ -28,8 +28,6 @@ The above dictionary indicates that the key should be of type [`kSecAttrKeyTypeR
 
 > **Note**:  This is a simple query that doesn’t refine the search as much as you may need. For additional ways to do that, see [`Refine the Search`](storing-keys-in-the-keychain#Refine-the-Search.md) below.
 
- This is a simple query that doesn’t refine the search as much as you may need. For additional ways to do that, see [`Refine the Search`](storing-keys-in-the-keychain#Refine-the-Search.md) below.
-
 You use this query with the [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) function to execute a search and populate an empty reference that you supply:
 
 If the call is successful, as indicated by the status result, you can then use the returned key reference to carry out cryptographic operations. In Objective-C, after you’re done with any keys that you retrieve this way, you’re responsible for freeing their memory. In Swift, the system manages the object’s memory.
@@ -47,4 +45,4 @@ There are several ways to deal with this. For example, you can:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/storing-keys-in-the-keychain)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/storing-keys-in-the-keychain)*

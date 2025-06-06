@@ -1,6 +1,6 @@
 # Scanning objects using Object Capture
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Implement a full scanning workflow for capturing objects on iOS devices.
 
@@ -12,8 +12,6 @@ Implement a full scanning workflow for capturing objects on iOS devices.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10107: [`Discover area mode for Object Capture`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10107/) and WWDC23 session 10191: [`Meet Object Capture for iOS`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10191/).
-
-This sample code project is associated with WWDC24 session 10107: [`Discover area mode for Object Capture`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10107/) and WWDC23 session 10191: [`Meet Object Capture for iOS`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10191/).
 
 You need to run this sample code project on a physical device. It does not compile for Simulator.
 
@@ -51,4 +49,4 @@ To run this sample app, you need an iPhone or iPad with the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/scanning-objects-using-object-capture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/scanning-objects-using-object-capture)*

@@ -30,8 +30,6 @@ To create a workspace and add projects to it:
 
 > **Note**: You can also add projects to a workspace by dragging them from the Finder to the Project navigator of your workspace window. Make sure you add each project at the root level of the workspace, not as a subproject of another project.
 
-You can also add projects to a workspace by dragging them from the Finder to the Project navigator of your workspace window. Make sure you add each project at the root level of the workspace, not as a subproject of another project.
-
 When you add projects to a workspace, Xcode automatically detects dependencies between the targets in those projects and builds them in the correct order. For example, when you build an app that implicitly depends on a framework in a different project, Xcode automatically builds the framework before it builds the app. When you change your project, Xcode automatically updates any dependencies, so you don’t have to change them manually.
 
 ##### Refer Explicitly to Targets Files and Products in Another Project
@@ -48,8 +46,6 @@ After you add a cross-project reference, you can refer to the other project’s 
 
 > **Note**: It’s good practice to use a workspace to manage multiple projects. However, you can’t create explicit dependencies between two projects in the same workspace.
 
-It’s good practice to use a workspace to manage multiple projects. However, you can’t create explicit dependencies between two projects in the same workspace.
-
 ## See Also
 
 - [Managing files and folders in your Xcode project](managing-files-and-folders-in-your-xcode-project.md)
@@ -58,4 +54,4 @@ It’s good practice to use a workspace to manage multiple projects. However, yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/managing-multiple-projects-and-their-dependencies)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/managing-multiple-projects-and-their-dependencies)*

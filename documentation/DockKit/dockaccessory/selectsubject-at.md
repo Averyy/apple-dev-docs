@@ -1,6 +1,6 @@
 # selectSubject(at:)
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: method
 
 Selects a subject to track at the supplied coordinates.
@@ -26,8 +26,6 @@ If you disable system tracking, this configuration change applies to any custom 
 Call this method when implementing your own custom tracking behavior.
 
 > **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t docked, or other errors if no subject is found at the position.
-
-[`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t docked, or other errors if no subject is found at the position.
 
 ## See Also
 

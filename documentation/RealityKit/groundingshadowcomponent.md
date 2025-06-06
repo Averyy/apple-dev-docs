@@ -1,6 +1,6 @@
 # GroundingShadowComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that controls an entity’s grounding shadow.
@@ -36,8 +36,6 @@ if let model = try? await ModelEntity(named: "tv_retro") {
 You need to add the grounding shadow component to each entity you want to apply the effect to, because the grounding shadow component doesn’t apply to hierarchies.
 
 > **Note**: Neither virtual nor physical light sources affect grounding shadows.
-
-Neither virtual nor physical light sources affect grounding shadows.
 
 ##### Receiving Shadows
 
@@ -98,4 +96,4 @@ RealityKit generates grounding shadows from the perspective of another entity th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/groundingshadowcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/groundingshadowcomponent)*

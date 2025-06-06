@@ -1,6 +1,6 @@
 # value
 
-**Framework**: Core Haptics  
+**Framework**: Corehaptics  
 **Kind**: property
 
 The parameter value of the point.
@@ -25,8 +25,6 @@ Think of the value as the control point’s y-coordinate.
 
 > **Note**:  The range of possible values varies between different parameters.
 
- The range of possible values varies between different parameters.
-
 ## See Also
 
 - [var relativeTime: TimeInterval](chhapticparametercurve/controlpoint/relativetime.md)
@@ -35,4 +33,4 @@ Think of the value as the control point’s y-coordinate.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/chhapticparametercurve/controlpoint/value)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/chhapticparametercurve/controlpoint/value)*

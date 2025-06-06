@@ -69,8 +69,6 @@ Use slices only for transient computation. A slice may hold a reference to the e
 
 > **Note**: Using a `Slice` instance with a mutable collection requires that the base collection’s `subscript(_: Index)` setter does not invalidate indices. If mutations need to invalidate indices in your custom collection type, don’t use `Slice` as its subsequence type. Instead, define your own subsequence type that takes your index invalidation requirements into account.
 
-Using a `Slice` instance with a mutable collection requires that the base collection’s `subscript(_: Index)` setter does not invalidate indices. If mutations need to invalidate indices in your custom collection type, don’t use `Slice` as its subsequence type. Instead, define your own subsequence type that takes your index invalidation requirements into account.
-
 ## Topics
 
 ### Initializers
@@ -182,4 +180,4 @@ Using a `Slice` instance with a mutable collection requires that the base collec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/slice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/slice)*

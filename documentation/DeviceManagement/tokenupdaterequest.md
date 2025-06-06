@@ -1,6 +1,6 @@
 # TokenUpdateRequest
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: dictionary
 
 The request object for sending the new token details.
@@ -41,9 +41,7 @@ While the `Token Update` message can be sent multiple times by the device, it is
 
 > **Note**:  The topic string for the MDM check-in protocol must start with `com.apple.mgmt.*` where `*` is a unique suffix.
 
- The topic string for the MDM check-in protocol must start with `com.apple.mgmt.*` where `*` is a unique suffix.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/tokenupdaterequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/tokenupdaterequest)*

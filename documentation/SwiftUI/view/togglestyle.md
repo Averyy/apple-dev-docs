@@ -1,6 +1,6 @@
 # toggleStyle(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Sets the style for toggles in a view hierarchy.
@@ -94,8 +94,6 @@ The style that SwiftUI uses as the default depends on both the platform and the 
 | macOS | ![A screenshot of several horizontally arranged items: two buttons, a vertical divider line, a checkbox, and the text Enhance sound. The first button has two right facing arrows that cross over in the middle and is active with a blue tint. The second button has one right and one left facing arrow and is inactive with a neutral tint. The check box is checked and has a blue tint.](https://docs-assets.developer.apple.com/published/7348c954c3ccc51b7cf2057fa69f660a/View-toggleStyle-3-macOS%402x.png) |
 
 > **Note**: Like toggle style does for toggles, the [`labelStyle(_:)`](view/labelstyle(_:).md) modifier sets the style for [`Label`](label.md) instances in the hierarchy. The example above demostrates the compact [`iconOnly`](labelstyle/icononly.md) style, which is useful for button toggles in space-constrained contexts. Always include a descriptive title for better accessibility.
-
-Like toggle style does for toggles, the [`labelStyle(_:)`](view/labelstyle(_:).md) modifier sets the style for [`Label`](label.md) instances in the hierarchy. The example above demostrates the compact [`iconOnly`](labelstyle/icononly.md) style, which is useful for button toggles in space-constrained contexts. Always include a descriptive title for better accessibility.
 
 For more information about how SwiftUI chooses a default toggle style, see the [`automatic`](togglestyle/automatic.md) style.
 

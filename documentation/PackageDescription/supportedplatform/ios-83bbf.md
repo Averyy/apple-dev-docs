@@ -1,6 +1,6 @@
 # iOS(_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Configures the minimum deployment target version for the iOS platform using a custom version string.
@@ -20,8 +20,6 @@ A `SupportedPlatform` instance.
 The version string must be a series of two or three dot-separated integers, such as `8.0` or `8.0.1`.
 
 > **Note**: First available in PackageDescription 5.0
-
-First available in PackageDescription 5.0
 
 ## Parameters
 

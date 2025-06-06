@@ -26,8 +26,6 @@ Diorama uses custom assets instead of the available library assets. To use custo
 
 > **Note**: Although you can still load USDZ files and other assets directly in visionOS, RealityKit compiles assets in your Reality Composer Pro project into a binary format that loads considerably faster than loading from individual files.
 
-Although you can still load USDZ files and other assets directly in visionOS, RealityKit compiles assets in your Reality Composer Pro project into a binary format that loads considerably faster than loading from individual files.
-
 ##### Create Scenes Containing the Apps Entities
 
 A single Reality Composer Pro project can have multiple scenes. A  is an entity hierarchy stored in the project as a `.usda` file that you can load and display in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView). You can use Reality Composer’s scenes to build an entire RealityKit scene, or to store reusable entity hierarchies that you can use as building block for composing scenes at runtime — the approach Diorama uses. You can add as many different scenes to your project as you need by selecting File > New > Scene, or pressing ⌘N.
@@ -152,8 +150,6 @@ To change the map, `DynamicTerrainMaterialEnhanced` has a promoted input called 
 
 > ❗ **Important**: Shader Graph material parameters are case-sensitive. If the capitalization is wrong, your code won’t actually update the material.
 
-Shader Graph material parameters are case-sensitive. If the capitalization is wrong, your code won’t actually update the material.
-
 The app sets the value of the input parameter in a function called `handleMaterial()` that the slider’s `.onChanged` closure calls. That function retrieves the [`ShaderGraphMaterial`](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial) from the terrain entity and calls [`setParameter(name:value:)`](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial/setParameter(name:value:)) on it.
 
 ```swift
@@ -187,4 +183,4 @@ private func handleMaterial() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/diorama)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/diorama)*

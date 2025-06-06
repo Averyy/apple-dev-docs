@@ -16,8 +16,6 @@ The other technotes in the  series are:
 
 > ❗ **Important**: The  technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
-The  technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
-
 #### Provisioning Profile Fundamentals
 
 Apple platforms, except macOS, won’t run arbitrary third-party code.  All execution of third-party code must be authorized by Apple.  This authorization comes in the form of a provisioning profile, which ties together five criteria:
@@ -30,15 +28,11 @@ Apple platforms, except macOS, won’t run arbitrary third-party code.  All exec
 
 > **Note**: In this document the term  refers to a main executable packaged in a bundle structure.  This encompasses apps, app extensions, App Clips, system extensions, and XPC Services.
 
-In this document the term  refers to a main executable packaged in a bundle structure.  This encompasses apps, app extensions, App Clips, system extensions, and XPC Services.
-
 You create provisioning profiles using the Apple Developer website, either directly using the website or indirectly using Xcode or the [`App Store Connect API`](https://developer.apple.com/documentation/AppStoreConnectAPI).
 
 When the Apple Developer website creates a profile for you, it cryptographically signs it.  When you run an app on a device, the device checks this signature to determine if the profile is valid and, if so, checks that the app meets the criteria in the profile.
 
 > **Note**: Unlike Apple’s other platforms, macOS doesn’t require a provisioning profile to run third-party code.  However, provisioning profiles are still relevant on macOS, as explained in [`Entitlements on macOS`](tn3125-inside-code-signing-provisioning-profiles#Entitlements-on-macOS.md).
-
-Unlike Apple’s other platforms, macOS doesn’t require a provisioning profile to run third-party code.  However, provisioning profiles are still relevant on macOS, as explained in [`Entitlements on macOS`](tn3125-inside-code-signing-provisioning-profiles#Entitlements-on-macOS.md).
 
 There is one interesting edge case with provisioning profiles: When you submit your app to the App Store, the App Store re-signs the app as part of the distribution process.  Before doing that, it checks that the app is signed and provisioned correctly.  That check means that each individual device doesn’t need to perform further security checks, so the final app doesn’t have a provisioning profile.  However, this third-party code was still authorized by a profile, albeit during the App Store distribution process.
 
@@ -59,8 +53,6 @@ A provisioning profile is a property list wrapped within a Cryptographic Message
 For more details on CMS, see [`RFC 5652`](https://developer.apple.comhttps://tools.ietf.org/html/rfc5652).
 
 > ❗ **Important**: The exact format of provisioning profiles isn’t documented and could change at any time.  Use the techniques shown here for understanding and debugging purposes.  Avoid building a product based on these details; if you do build such a product, be prepared to update it as the Apple development story evolves.
-
-The exact format of provisioning profiles isn’t documented and could change at any time.  Use the techniques shown here for understanding and debugging purposes.  Avoid building a product based on these details; if you do build such a product, be prepared to update it as the Apple development story evolves.
 
 To illustrate this point, the traditional property list view of a profile is no longer the source of truth on modern systems.  Rather, each profile contains a `DER-Encoded-Profile` property which holds a binary form of the profile that’s the new source of truth.  For more on this switch, see [`The future is DER`](tn3125-inside-code-signing-provisioning-profiles#The-future-is-DER.md).
 
@@ -117,8 +109,6 @@ SKMME9E2Y8.com.example.apple-samplecode.ProfileExplainer
 ```
 
 > **Note**: On macOS the standard App ID entitlement is `com.apple.application-identifier`.  A Mac Catalyst app uses both `com.apple.application-identifier` and `application-identifier`.
-
-On macOS the standard App ID entitlement is `com.apple.application-identifier`.  A Mac Catalyst app uses both `com.apple.application-identifier` and `application-identifier`.
 
 This property holds an App ID, composed of an App ID prefix and a bundle ID.  In this example `SKMME9E2Y8` is the App ID prefix and `com.example.apple-samplecode.ProfileExplainer` is the bundle ID.
 
@@ -190,8 +180,6 @@ Every entitlement claimed by the app must be in the profile’s allowlist but th
 
 > **Note**: A macOS app can claim certain entitlements without them being authorized by a provisioning profile.  For more on this, see [`Entitlements on macOS`](tn3125-inside-code-signing-provisioning-profiles#Entitlements-on-macOS.md).
 
-A macOS app can claim certain entitlements without them being authorized by a provisioning profile.  For more on this, see [`Entitlements on macOS`](tn3125-inside-code-signing-provisioning-profiles#Entitlements-on-macOS.md).
-
 Some entitlements in the allowlist use wildcard syntax.  In the above example, `SKMME9E2Y8.*` means that the app can claim any keychain access group with the `SKMME9E2Y8.` prefix.  Wildcards don’t make sense in the app’s code signature.
 
 To dump the entitlements claimed by the app, use `codesign` with the `--entitlements` argument:
@@ -217,8 +205,6 @@ To dump the entitlements claimed by the app, use `codesign` with the `--entitlem
 
 > **Note**: By default `--entitlements` dumps a human-readable representation of the DER-encoded entitlements.  The above example uses `--xml` to force it to output XML.  It runs the output through `plutil` to pretty print that XML.  To learn more about DER in provisioning profiles, see [`The future is DER`](tn3125-inside-code-signing-provisioning-profiles#The-future-is-DER.md).
 
-By default `--entitlements` dumps a human-readable representation of the DER-encoded entitlements.  The above example uses `--xml` to force it to output XML.  It runs the output through `plutil` to pretty print that XML.  To learn more about DER in provisioning profiles, see [`The future is DER`](tn3125-inside-code-signing-provisioning-profiles#The-future-is-DER.md).
-
 Every entitlement claimed by this app is authorized by its profile, and thus iOS allows the app to run.  Note that the `keychain-access-groups` value, `SKMME9E2Y8.com.example.apple-samplecode.ProfileExplainer`, starts with `SKMME9E2Y8.` and thus is allowed by the wildcard.
 
 #### Entitlements on Macos
@@ -231,8 +217,6 @@ A macOS app can claim certain entitlements without them being authorized by a pr
 - Those used to configure the [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime)
 
 > **Note**: On other Apple platforms the equivalent to `com.apple.security.get-task-allow` is `get-task-allow` and, as with all entitlements on those platforms, must be authorized by a profile.  Also, App Groups work differently on macOS and other platforms.  For details, see [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups).
-
-On other Apple platforms the equivalent to `com.apple.security.get-task-allow` is `get-task-allow` and, as with all entitlements on those platforms, must be authorized by a profile.  Also, App Groups work differently on macOS and other platforms.  For details, see [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups).
 
 In contrast,  must be authorized by a provisioning profile.  This is an important security feature on macOS.  For example, the fact that the `keychain-access-groups` entitlement must be authorized by a profile means that other developers can’t impersonate your app in order to steal its keychain items.
 
@@ -367,4 +351,4 @@ This DER-encoded profile is required starting with iOS 15, iPadOS 15, tvOS 15, a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3125-inside-code-signing-provisioning-profiles)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3125-inside-code-signing-provisioning-profiles)*

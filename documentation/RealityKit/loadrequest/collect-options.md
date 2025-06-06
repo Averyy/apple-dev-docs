@@ -1,6 +1,6 @@
 # collect(_:options:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Collects elements by a given time-grouping strategy, and emits a single array of the collection.
@@ -44,8 +44,6 @@ let sub = Timer.publish(every: 1, on: .main, in: .default)
 ```
 
 > **Note**: When this publisher receives a request for `.max(n)` elements, it requests `.max(count * n)` from the upstream publisher.
-
-When this publisher receives a request for `.max(n)` elements, it requests `.max(count * n)` from the upstream publisher.
 
 ## Parameters
 

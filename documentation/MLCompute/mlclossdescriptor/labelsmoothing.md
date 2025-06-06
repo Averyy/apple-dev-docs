@@ -1,6 +1,6 @@
 # labelSmoothing
 
-**Framework**: ML Compute  
+**Framework**: Mlcompute  
 **Kind**: property
 
 The value for label smoothing.
@@ -23,12 +23,6 @@ var labelSmoothing: Float { get }
 The default value is `1.0`.
 
 > **Note**:  This is only valid for the following loss function types: [`MLCLossType.softmaxCrossEntropy`](mlclosstype/softmaxcrossentropy.md) [`MLCLossType.sigmoidCrossEntropy`](mlclosstype/sigmoidcrossentropy.md)
-
- This is only valid for the following loss function types:
-
-[`MLCLossType.softmaxCrossEntropy`](mlclosstype/softmaxcrossentropy.md)
-
-[`MLCLossType.sigmoidCrossEntropy`](mlclosstype/sigmoidcrossentropy.md)
 
 ## See Also
 

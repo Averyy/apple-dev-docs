@@ -1,6 +1,6 @@
 # Message
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: struct
 
 An instance for receiving and displaying App Store messages in your app.
@@ -29,8 +29,6 @@ struct Message
 A StoreKit message represents a sheet that appears over your app to display important information from the App Store. Messages have a reason, which the  [`reason`](message/reason-swift.property.md) value indicates. StoreKit retrieves any messages from the App Store each time your app launches, and presents them by default.
 
 > **Note**:  StoreKit displays messages from the App Store regardless of the SDK version you use to build your app. Apps built for iOS 16 and later can implement a message listener and delay or suppress messages.
-
- StoreKit displays messages from the App Store regardless of the SDK version you use to build your app. Apps built for iOS 16 and later can implement a message listener and delay or suppress messages.
 
 You can optionally use the `Message` API to control message presentation by delaying or suppressing messages. Your app can listen for messages with the [`messages`](message/messages-swift.type.property.md) asynchronous sequence, and can display them at a particular time by calling [`display(in:)`](message/display(in:).md), or [`DisplayMessageAction`](displaymessageaction.md) for SwiftUI views. For example, you may choose to delay messages in views where an interrupting sheet might confuse someone, such as in the middle of an onboarding flow, or if your app is providing real-time instructions.
 
@@ -90,4 +88,4 @@ For a code example that uses SwiftUI, see [`DisplayMessageAction`](displaymessag
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/message)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/message)*

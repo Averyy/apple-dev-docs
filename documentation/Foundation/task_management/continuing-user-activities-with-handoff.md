@@ -50,8 +50,6 @@ You implement Handoff by determining specific activities that a user can perform
 
 > **Note**: Be aware that your app usually has other persistence and synchronization strategies in addition to Handoff. For example, the sample app uses an iCloud key-value store to keep track of which stores have been marked as favorites. This way, the favorites data is available to the app if you launch it outside of Handoff, such as from the macOS Dock or the iOS Home screen.
 
-Be aware that your app usually has other persistence and synchronization strategies in addition to Handoff. For example, the sample app uses an iCloud key-value store to keep track of which stores have been marked as favorites. This way, the favorites data is available to the app if you launch it outside of Handoff, such as from the macOS Dock or the iOS Home screen.
-
 You use the app’s `Info.plist` to tell Handoff which activities your app can continue, by providing an entry with the key name `NSUserActivityTypes`. The type of this entry is `Array`, and each member is a `String` representing a supported Handoff activity. In the sample app, the macOS and iOS targets include the `map-viewing` and `store-editing` activities in their `Info.plist` files.
 
 ```None
@@ -161,8 +159,6 @@ func userActivityWasContinued(_ userActivity: NSUserActivity) {
 ```
 
 > **Note**: Not all apps need to update the state of the originating app. In the sample app, dismissing the popover is meant as a gentle reminder to not make simultaneous edits from two devices. This is neither explicitly prohibited nor supported in the sample.
-
-Not all apps need to update the state of the originating app. In the sample app, dismissing the popover is meant as a gentle reminder to not make simultaneous edits from two devices. This is neither explicitly prohibited nor supported in the sample.
 
 ## See Also
 

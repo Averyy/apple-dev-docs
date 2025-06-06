@@ -1,6 +1,6 @@
 # Playing a Custom Haptic Pattern from a File
 
-**Framework**: Core Haptics
+**Framework**: Corehaptics
 
 Sample predesigned Apple Haptic Audio Pattern files, and learn how to play your own.
 
@@ -20,8 +20,6 @@ The user interface, defined in `Main.storyboard`, consists of eight buttons, eac
 You can examine and modify the AHAP file parameters in Xcode or a text editor.
 
 > **Note**: HapticSampler requires Xcode 11 or later. Simulator doesn’t support a haptic interface, so build and run this sample on an iPhone 8, 8 Plus, X, XR, XS, or XS Max running iOS 13 or later.
-
-HapticSampler requires Xcode 11 or later. Simulator doesn’t support a haptic interface, so build and run this sample on an iPhone 8, 8 Plus, X, XR, XS, or XS Max running iOS 13 or later.
 
 ##### Configure the App to Play Haptics
 
@@ -76,8 +74,6 @@ Core Haptics layers simultaneously playing haptics automatically. If you don’t
 
 > **Note**: Haptic patterns don’t blend like audio waveforms, and not all combinations produce a discernible effect. Playing two haptic events of the same type at the same time makes them hard to tell apart. Experiment with various combinations to ensure that the result feels right.
 
-Haptic patterns don’t blend like audio waveforms, and not all combinations produce a discernible effect. Playing two haptic events of the same type at the same time makes them hard to tell apart. Experiment with various combinations to ensure that the result feels right.
-
 ##### Create Advanced Pattern Players for More Granular Control
 
 To have more granular control over individual haptics, such as configuring their pausing, resuming, and seeking behavior, create and maintain advanced pattern players using [`CHHapticAdvancedPatternPlayer`](chhapticadvancedpatternplayer.md) instead of using [`playPattern(from:)`](chhapticengine/playpattern(from:)-6m9m5.md).
@@ -101,4 +97,4 @@ Alternatively, you can write an AHAP file from scratch in a text editor, using t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/playing-a-custom-haptic-pattern-from-a-file)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/playing-a-custom-haptic-pattern-from-a-file)*

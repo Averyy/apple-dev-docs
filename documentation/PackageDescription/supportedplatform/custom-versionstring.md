@@ -1,6 +1,6 @@
 # custom(_:versionString:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Configures the minimum deployment target version for custom platforms.
@@ -21,8 +21,6 @@ A `SupportedPlatform` instance.
 #### Discussion
 
 > **Note**: First available in PackageDescription 5.6
-
-First available in PackageDescription 5.6
 
 ## Parameters
 

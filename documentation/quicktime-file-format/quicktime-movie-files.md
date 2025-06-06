@@ -1,6 +1,6 @@
 # QuickTime movie files
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 The QuickTime file format describes the characteristics of QuickTime movie files.
 
@@ -14,15 +14,11 @@ In file systems that support filename extensions, QuickTime movie files should h
 
 > **Note**: The use of resource forks for the storage of QuickTime media is deprecated in the QuickTime file format. The information below documents existing content and should not be used for new development. In file systems that support both a resource fork and a data fork, the movie resource may be contained in the resource fork. The default, however, is for the movie resource to be contained in the data fork for all file systems. If media sample data is included in the movie file, it is always in the data fork.
 
-The use of resource forks for the storage of QuickTime media is deprecated in the QuickTime file format. The information below documents existing content and should not be used for new development. In file systems that support both a resource fork and a data fork, the movie resource may be contained in the resource fork. The default, however, is for the movie resource to be contained in the data fork for all file systems. If media sample data is included in the movie file, it is always in the data fork.
-
 A QuickTime movie file is structured as a collection of atoms that together identify the file as a QuickTime movie, describe the structure of the movie, and may contain the sample data needed to play the movie. Not all atoms are required.
 
 The file format is extensible, and from time to time new atom types are introduced. If your application encounters an unknown atom type in a QuickTime file, it should simply ignore it. This allows the file format to be extended without breaking existing applications, and provides a measure of forward compatibility. Because the first field in any atom contains its size, including any contained atoms, it is easy to skip to the end of an unknown atom type and continue parsing the file.
 
 > ❗ **Important**: Generally speaking, atoms can be present in any order. Do not conclude that a particular atom is not present until you have parsed all the atoms in the file.
-
-Generally speaking, atoms can be present in any order. Do not conclude that a particular atom is not present until you have parsed all the atoms in the file.
 
 An exception is the file type atom, which typically identifies the file as a QuickTime movie. If present, this atom precedes any movie atom, movie data, preview, or free space atoms. If you encounter one of these other atom types prior to finding a file type atom, you may assume the file type atom is not present. (This atom is introduced in the  for 2004, and is not present in QuickTime movie files created prior to 2004).
 

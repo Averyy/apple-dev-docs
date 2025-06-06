@@ -1,6 +1,6 @@
 # read(into:startingAt:length:)
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: method
 
 Asychronously reads data from the resource into a buffer.
@@ -23,8 +23,6 @@ The actual number of bytes read.
 For the read to succeed, requests must conform to any transfer requirements of the underlying resource. Disk drives typically require sector (`physicalBlockSize`) addressed operations of one or more sector-aligned offsets.
 
 > **Note**: An error describing any read error. This value is `EFAULT` if `buffer` is `NULL`, or `errno` if reading from the resource failed.
-
-An error describing any read error. This value is `EFAULT` if `buffer` is `NULL`, or `errno` if reading from the resource failed.
 
 ## Parameters
 

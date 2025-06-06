@@ -1,6 +1,6 @@
 # Modify a Subscription Group Localization
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Update a specific localized display name and optional custom app name for a subscription group.
@@ -11,8 +11,6 @@ Update a specific localized display name and optional custom app name for a subs
 #### Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
 ## See Also
 

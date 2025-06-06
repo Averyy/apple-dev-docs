@@ -1,6 +1,6 @@
 # Loading entities from a file
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
 
@@ -49,15 +49,11 @@ As with the load methods, the load anchor methods preserve the entity hierarchy.
 
 > **Note**: The load anchor methods work only for Reality files.
 
-The load anchor methods work only for Reality files.
-
 ##### Load a Flattened Model or Body Tracked Entity
 
 To load a model or body-tracked entity with internal structure that you don’t need to access, use the [`loadModel(named:in:)`](entity/loadmodel(named:in:).md) or the [`loadBodyTracked(named:in:)`](entity/loadbodytracked(named:in:).md) method, respectively. These methods and their siblings flatten the entity hierarchy into a single entity cast either as a [`ModelEntity`](modelentity.md) or [`BodyTrackedEntity`](bodytrackedentity.md). A flattened entity can be easier to work with when you don’t need access to the entity’s details.
 
 > **Note**: The load model and body-tracked methods work only for USD files.
-
-The load model and body-tracked methods work only for USD files.
 
 ## See Also
 
@@ -75,4 +71,4 @@ The load model and body-tracked methods work only for USD files.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/loading-entities-from-a-file)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/loading-entities-from-a-file)*

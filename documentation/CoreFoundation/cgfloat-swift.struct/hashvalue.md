@@ -1,6 +1,6 @@
 # hashValue
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: property
 
 The hash value.
@@ -26,9 +26,7 @@ var hashValue: Int { get }
 
 > **Note**:  The hash value is not guaranteed to be stable across different invocations of the same program.  Do not persist the hash value across program runs.
 
- The hash value is not guaranteed to be stable across different invocations of the same program.  Do not persist the hash value across program runs.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct/hashvalue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreFoundation/cgfloat-swift.struct/hashvalue)*

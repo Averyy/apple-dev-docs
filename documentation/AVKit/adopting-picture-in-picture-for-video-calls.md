@@ -1,6 +1,6 @@
 # Adopting Picture in Picture for video calls
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Add multitasking capability to your video-call apps by using Picture in Picture (PiP).
 
@@ -9,8 +9,6 @@ Add multitasking capability to your video-call apps by using Picture in Picture 
 Use PiP in your video-call apps so users can multitask with other apps while on video calls. When a user enables PiP, your app scales down to a corner of the screen, so they can see the Home Screen and interact with other apps. In iOS 15 and later, [`AVKit`](AVKit.md) provides PiP support for video-calling apps, which enables you to deliver a familiar video-calling experience that behaves like FaceTime.
 
 > ❗ **Important**:  In iOS 16 and later, you can use the camera in Picture in Picture mode by enabling a capture session’s [`isMultitaskingCameraAccessEnabled`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/isMultitaskingCameraAccessEnabled) property. Apps that have a deployment target earlier than iOS 16 require the [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access) entitlement to use the camera in PiP mode.
-
- In iOS 16 and later, you can use the camera in Picture in Picture mode by enabling a capture session’s [`isMultitaskingCameraAccessEnabled`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/isMultitaskingCameraAccessEnabled) property. Apps that have a deployment target earlier than iOS 16 require the [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access) entitlement to use the camera in PiP mode.
 
 ##### Create a Source View
 
@@ -52,8 +50,6 @@ let pipContentSource = AVPictureInPictureController.ContentSource(
 
 > ❗ **Important**:  Avoid unintentionally starting PiP by setting the content source on your PiP controller to `nil` or by releasing your PiP controller, when the active call ends.
 
- Avoid unintentionally starting PiP by setting the content source on your PiP controller to `nil` or by releasing your PiP controller, when the active call ends.
-
 After creating a content source, use it to initialize [`AVPictureInPictureController`](avpictureinpicturecontroller.md). By default, PiP starts when a user moves to the background if your source view is full-screen, or you set [`canStartPictureInPictureAutomaticallyFromInline`](avpictureinpicturecontroller/canstartpictureinpictureautomaticallyfrominline.md) to `true`. If your app is in the foreground, you can start PiP by calling [`startPictureInPicture()`](avpictureinpicturecontroller/startpictureinpicture().md).
 
 ```swift
@@ -65,8 +61,6 @@ pipController.delegate = self
 The system uses the source view to determine the source frame for the PiP animation, and the restore target for either when the user returns to the app or PiP stops.
 
 > **Note**:  The PiP window doesn’t receive touch events when you use [`AVPictureInPictureVideoCallViewController`](avpictureinpicturevideocallviewcontroller.md), so you can’t customize the window’s user interface by adding buttons.
-
- The PiP window doesn’t receive touch events when you use [`AVPictureInPictureVideoCallViewController`](avpictureinpicturevideocallviewcontroller.md), so you can’t customize the window’s user interface by adding buttons.
 
 ##### Observe Pip Life Cycle Events
 
@@ -92,4 +86,4 @@ When your app is in PiP mode, it can’t assume control of the camera. For examp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/adopting-picture-in-picture-for-video-calls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/adopting-picture-in-picture-for-video-calls)*

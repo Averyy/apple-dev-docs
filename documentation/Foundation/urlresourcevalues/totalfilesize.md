@@ -26,8 +26,6 @@ The allocated size in bytes may include space used by metadata. The property ret
 
 > **Note**:  Only applicable to regular files.
 
- Only applicable to regular files.
-
 ## See Also
 
 - [var documentIdentifier: Int?](urlresourcevalues/documentidentifier.md)

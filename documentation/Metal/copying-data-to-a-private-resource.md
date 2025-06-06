@@ -22,8 +22,6 @@ Finally, encode and commit a [`copy(from:sourceOffset:to:destinationOffset:size:
 
 > **Note**:  In macOS, Metal doesn’t reformat buffer contents or layout to improve GPU access. There’s no difference in GPU performance between managed or private buffers, so there’s no performance benefit in copying data from a managed buffer to a private buffer.
 
- In macOS, Metal doesn’t reformat buffer contents or layout to improve GPU access. There’s no difference in GPU performance between managed or private buffers, so there’s no performance benefit in copying data from a managed buffer to a private buffer.
-
 ##### Copying Data From a Shared Buffer to a Private Texture
 
 Use this implementation to copy texture data from the CPU to a private texture in one operation, without having to synchronize a managed texture.
@@ -76,4 +74,4 @@ Finally, encode and commit a [`copy(from:sourceSlice:sourceLevel:sourceOrigin:so
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/copying-data-to-a-private-resource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/copying-data-to-a-private-resource)*

@@ -18,8 +18,6 @@ The App Store receipt signing intermediate certificate is in the certificate cha
 
 > ❗ **Important**: If your app verifies App Store receipts on the device, follow the instructions outlined in this document to ensure that your receipt validation code is compatible with this change.
 
-If your app verifies App Store receipts on the device, follow the instructions outlined in this document to ensure that your receipt validation code is compatible with this change.
-
 If your app performs on-device receipt validation, it needs to support SHA-256 algorithm to correctly verify Apple’s certificate chain. For more information, see [`Validating receipts on the device`](https://developer.apple.comhttps://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device).
 
 Starting January 24, 2025, apps that perform on-device receipt validation and don’t support a SHA-256 algorithm will fail their on-device receipt validation when the App Store updates the receipt. If your app prevents customers from accessing the app or premium content when receipt validation fails, your customers may lose access to their content.
@@ -39,8 +37,6 @@ The certificate update does not affect any of the following transaction or recei
 - Server-to-server receipt verification using the [`verifyReceipt`](https://developer.apple.comhttps://developer.apple.com/documentation/appstorereceipts/verifyreceipt/) endpoint. For more information, see [`Validating receipts with the App Store`](https://developer.apple.comhttps://developer.apple.com/documentation/appstorereceipts/validating_receipts_with_the_app_store).
 
 > **Note**: The [`verifyReceipt`](https://developer.apple.comhttps://developer.apple.com/documentation/appstorereceipts/verifyreceipt/) endpoint is deprecated. To validate receipts on your server, follow the steps in [`Validating receipts on the device`](https://developer.apple.comhttps://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device) on your server.
-
-The [`verifyReceipt`](https://developer.apple.comhttps://developer.apple.com/documentation/appstorereceipts/verifyreceipt/) endpoint is deprecated. To validate receipts on your server, follow the steps in [`Validating receipts on the device`](https://developer.apple.comhttps://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device) on your server.
 
 #### Update Your App to Support Sha 256 Certificates
 
@@ -66,8 +62,6 @@ Starting June 20, 2023, the sandbox environment produces app receipts that are s
 If your app successfully verifies the receipt and you’ve confirmed that the new receipt uses the updated certificate in its certificate chain, your app is ready for Apple’s SHA-256 intermediate certificate update.
 
 > **Note**: The receipt field [`SHA-1 Hash ASN.1 Field Type 5`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW7) is not affected by the certificate update. Use that field as described in step 5 of [`Validate the receipt`](https://developer.apple.comhttps://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device#3744732).
-
-The receipt field [`SHA-1 Hash ASN.1 Field Type 5`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW7) is not affected by the certificate update. Use that field as described in step 5 of [`Validate the receipt`](https://developer.apple.comhttps://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device#3744732).
 
 #### Revision History
 
@@ -111,4 +105,4 @@ The receipt field [`SHA-1 Hash ASN.1 Field Type 5`](https://developer.apple.comh
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3138-handling-app-store-receipt-signing-certificate-changes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3138-handling-app-store-receipt-signing-certificate-changes)*

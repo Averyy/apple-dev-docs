@@ -1,6 +1,6 @@
 # handleBinding(ofSymbol:using:)
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: method
 
 Specifies a block to be called before rendering using programs with the specified GLSL uniform variable or attribute name.
@@ -25,8 +25,6 @@ func handleBinding(ofSymbol symbol: String, using block: SCNBindingBlock? = nil)
 This method associates a block for handling setup of an attribute or uniform variable in the shader programs associated with the technique. SceneKit calls your block before any performing any rendering passes that use that symbol. In the block, you can execute any OpenGL commands or other code necessary for preparing your custom shader.
 
 > **Note**:  You must associate a handler block with a technique before assigning that technique to a SceneKit object. The result of calling this method on a technique currently in use is undefined.
-
- You must associate a handler block with a technique before assigning that technique to a SceneKit object. The result of calling this method on a technique currently in use is undefined.
 
 Use this method when you need to update a value in a shader program every time SceneKit renders a frame. To set a value infrequently, or only once, use the [`setObject(_:forKeyedSubscript:)`](scntechnique/setobject(_:forkeyedsubscript:).md) or [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)) method instead.
 

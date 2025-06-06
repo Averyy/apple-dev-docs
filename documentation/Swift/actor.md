@@ -32,11 +32,7 @@ It is possible to configure an actor to use a specific [`SerialExecutor`](serial
 
 > **Note**: [`SerialExecutor`](serialexecutor.md)
 
-[`SerialExecutor`](serialexecutor.md)
-
 > **Note**: [`TaskExecutor`](taskexecutor.md)
-
-[`TaskExecutor`](taskexecutor.md)
 
 ## Topics
 
@@ -79,4 +75,4 @@ It is possible to configure an actor to use a specific [`SerialExecutor`](serial
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/actor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/actor)*

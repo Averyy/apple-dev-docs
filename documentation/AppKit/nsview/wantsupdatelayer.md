@@ -1,6 +1,6 @@
 # wantsUpdateLayer
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 A Boolean value indicating which drawing path the view takes when updating its contents.
@@ -24,8 +24,6 @@ If your view is layer-backed and updates itself by modifying its layer, override
 If the [`canDrawSubviewsIntoLayer`](nsview/candrawsubviewsintolayer.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true), the view ignores the value returned by this method. Instead, the view always uses its [`draw(_:)`](nsview/draw(_:).md) method to draw its content.
 
 > **Note**:  When using the [`updateLayer()`](nsview/updatelayer().md) method to update your view, it is recommended that you set the view’s redraw policy to [`NSView.LayerContentsRedrawPolicy.onSetNeedsDisplay`](nsview/layercontentsredrawpolicy-swift.enum/onsetneedsdisplay.md). This policy lets you control when you want to update the layer’s contents.
-
- When using the [`updateLayer()`](nsview/updatelayer().md) method to update your view, it is recommended that you set the view’s redraw policy to [`NSView.LayerContentsRedrawPolicy.onSetNeedsDisplay`](nsview/layercontentsredrawpolicy-swift.enum/onsetneedsdisplay.md). This policy lets you control when you want to update the layer’s contents.
 
 ## See Also
 
@@ -55,4 +53,4 @@ If the [`canDrawSubviewsIntoLayer`](nsview/candrawsubviewsintolayer.md) property
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview/wantsupdatelayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview/wantsupdatelayer)*

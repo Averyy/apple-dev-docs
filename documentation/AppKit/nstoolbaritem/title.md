@@ -1,6 +1,6 @@
 # title
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The title of the toolbar item.
@@ -24,8 +24,6 @@ If you assign a custom view to the toolbar item, modifying this property updates
 
 > **Note**:  In macOS 12 and earlier, [`NSToolbarItem`](nstoolbaritem.md) doesn’t support custom views in Mac apps built with Mac Catalyst.
 
- In macOS 12 and earlier, [`NSToolbarItem`](nstoolbaritem.md) doesn’t support custom views in Mac apps built with Mac Catalyst.
-
 ## See Also
 
 - [var possibleLabels: Set<String>](nstoolbaritem/possiblelabels.md)
@@ -40,4 +38,4 @@ If you assign a custom view to the toolbar item, modifying this property updates
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstoolbaritem/title)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstoolbaritem/title)*

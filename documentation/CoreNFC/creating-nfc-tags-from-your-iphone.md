@@ -1,6 +1,6 @@
 # Creating NFC Tags from Your iPhone
 
-**Framework**: Core NFC
+**Framework**: Corenfc
 
 Save data to tags, and interact with them using native tag protocols.
 
@@ -12,8 +12,6 @@ Save data to tags, and interact with them using native tag protocols.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2020 session [`10209:What’s New in Core NFC`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10209) and WWDC 2019 session [`715: Core NFC Enhancements`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/715).
-
-This sample code project is associated with WWDC 2020 session [`10209:What’s New in Core NFC`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10209) and WWDC 2019 session [`715: Core NFC Enhancements`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/715).
 
 ## See Also
 
@@ -35,4 +33,4 @@ This sample code project is associated with WWDC 2020 session [`10209:What’s N
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corenfc/creating-nfc-tags-from-your-iphone)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreNFC/creating-nfc-tags-from-your-iphone)*

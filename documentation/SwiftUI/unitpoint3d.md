@@ -1,6 +1,6 @@
 # UnitPoint3D
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A normalized 3D point in a view’s coordinate space.
@@ -25,8 +25,6 @@ let unitPoint = UnitPoint3D(x: 0.5, y: 0.5, z: 0.5)
 
 > **Note**: If you need a two-dimensional unit point, use [`UnitPoint`](unitpoint.md) instead.
 
-If you need a two-dimensional unit point, use [`UnitPoint`](unitpoint.md) instead.
-
 To project the unit point into the rendered view’s coordinate space, multiply each component of the unit point with the corresponding component of the view’s size:
 
 ```swift
@@ -42,8 +40,6 @@ You can perform this calculation yourself if you happen to know a view’s size,
 You can create custom unit points with explicit values, like the example above, or you can use one of the built-in unit points that SwiftUI provides, like [`zero`](unitpoint3d/zero.md), [`center`](unitpoint3d/center.md), or [`topTrailing`](unitpoint3d/toptrailing.md). The built-in values correspond to common anchor points that you might want to refer to, like the center of one of a view’s edges.
 
 > **Note**: A unit point with one or more components outside the range `[0, 1]` projects to a point outside of the view.
-
-A unit point with one or more components outside the range `[0, 1]` projects to a point outside of the view.
 
 ##### Layout Direction
 
@@ -154,4 +150,4 @@ It’s important to test your app for the different locales that you distribute 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/unitpoint3d)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/unitpoint3d)*

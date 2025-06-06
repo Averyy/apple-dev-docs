@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: subscript
 
 Accesses a view of this collection with the elements at the given indices.
@@ -27,8 +27,6 @@ A collection of the elements at the positions in `subranges`.
 #### Overview
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

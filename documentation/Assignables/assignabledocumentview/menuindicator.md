@@ -44,8 +44,6 @@ Menu {
 
 > **Note**: On tvOS, the standard button styles do not include a menu indicator, so this modifier will have no effect when using a built-in button style. You can implement an indicator in your own `ButtonStyle` implementation by checking the value of the `menuIndicatorVisibility` environment value.
 
-On tvOS, the standard button styles do not include a menu indicator, so this modifier will have no effect when using a built-in button style. You can implement an indicator in your own `ButtonStyle` implementation by checking the value of the `menuIndicatorVisibility` environment value.
-
 ## Parameters
 
 - `visibility`: The menu indicator visibility to apply.

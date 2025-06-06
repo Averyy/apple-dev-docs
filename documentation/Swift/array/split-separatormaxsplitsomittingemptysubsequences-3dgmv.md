@@ -52,8 +52,6 @@ print(line.split(separator: " ", omittingEmptySubsequences: false))
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `separator`: The element that should be split upon.

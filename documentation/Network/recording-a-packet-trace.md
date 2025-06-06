@@ -14,8 +14,6 @@ Both macOS and iOS have built-in support for packet traces. This article explain
 
 > **Note**:  Packet traces are a low-level feature and, if you’re just getting started, you may be better off using one of the higher-level tools referenced in [`Choosing a Network Debugging Tool`](choosing-a-network-debugging-tool.md). Additionally, while the focus of this article is the built-in packet trace tools, there are a variety of third-party packet trace tools that you might want to investigate; see [`Taking Advantage of Third-Party Network Debugging Tools`](taking-advantage-of-third-party-network-debugging-tools.md) for details.
 
- Packet traces are a low-level feature and, if you’re just getting started, you may be better off using one of the higher-level tools referenced in [`Choosing a Network Debugging Tool`](choosing-a-network-debugging-tool.md). Additionally, while the focus of this article is the built-in packet trace tools, there are a variety of third-party packet trace tools that you might want to investigate; see [`Taking Advantage of Third-Party Network Debugging Tools`](taking-advantage-of-third-party-network-debugging-tools.md) for details.
-
 ##### Choose the Correct Interface
 
 The first step in recording a packet trace on the Mac is to choose the correct interface. If you choose the wrong interface, you may end up recording an empty packet trace. For example, if you use the `en0` interface on a Mac that has built-in Ethernet but is connected to the Internet over Wi-Fi, your packet trace will include all the traffic over the built-in Ethernet, that is, nothing.
@@ -75,8 +73,6 @@ sudo tcpdump -i en0 -w trace.pcap
 This example records a packet trace and writes the results to a file call `trace.pcap`. You can save that file to analyze later on using `tcpdump` itself, or one of the tools listed in [`Taking Advantage of Third-Party Network Debugging Tools`](taking-advantage-of-third-party-network-debugging-tools.md). You can also submit it to Apple for analysis (see [`Submitting a Packet Trace to Apple`](submitting-a-packet-trace-to-apple.md)).
 
 > ❗ **Important**:  Even if your ultimate goal is to save a packet trace file, it’s often a good idea to start out by looking at real-time results from `tcpdump`, just to make sure that you’re capturing the right thing.
-
- Even if your ultimate goal is to save a packet trace file, it’s often a good idea to start out by looking at real-time results from `tcpdump`, just to make sure that you’re capturing the right thing.
 
 If you’re having problems recording a packet trace, see [`Troubleshooting Packet Traces`](troubleshooting-packet-traces.md).
 
@@ -142,4 +138,4 @@ An RVI represents the entire networking stack of the iOS device; you cannot targ
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/network/recording-a-packet-trace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Network/recording-a-packet-trace)*

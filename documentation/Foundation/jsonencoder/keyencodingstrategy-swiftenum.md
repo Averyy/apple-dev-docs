@@ -24,8 +24,6 @@ enum KeyEncodingStrategy
 
 > **Note**:  Key encoding strategies other than [`JSONEncoder.KeyEncodingStrategy.useDefaultKeys`](jsonencoder/keyencodingstrategy-swift.enum/usedefaultkeys.md) may have a noticeable performance cost because those strategies may inspect and transform each key.
 
- Key encoding strategies other than [`JSONEncoder.KeyEncodingStrategy.useDefaultKeys`](jsonencoder/keyencodingstrategy-swift.enum/usedefaultkeys.md) may have a noticeable performance cost because those strategies may inspect and transform each key.
-
 ## Topics
 
 ### Built-in Encoding

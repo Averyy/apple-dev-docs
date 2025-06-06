@@ -30,8 +30,6 @@ WeatherKit only supports developer tokens signed with the ES256 algorithm, and r
 
 > **Note**:  Ensure that the token contains only the claims listed below.
 
- Ensure that the token contains only the claims listed below.
-
 In the claims payload of the token, include the following:
 
 A decoded developer token has the following format:
@@ -69,4 +67,4 @@ curl -v -H 'Authorization: Bearer [developer token]' "https://weatherkit.apple.c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/weatherkitrestapi/request-authentication-for-weatherkit-rest-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WeatherKitRESTAPI/request-authentication-for-weatherkit-rest-api)*

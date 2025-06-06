@@ -27,8 +27,6 @@ If `nullTerminatedCodeUnits` contains ill-formed code unit sequences, this initi
 
 > **Note**: This initializer is deprecated. Use the initializer `String.init(decoding: array, as: Encoding.self)` instead, remembering that “\0” is a valid character in Swift.
 
-This initializer is deprecated. Use the initializer `String.init(decoding: array, as: Encoding.self)` instead, remembering that “\0” is a valid character in Swift.
-
 ## Parameters
 
 - `nullTerminatedCodeUnits`: An array containing a null-terminated   sequence of code units encoded in  .

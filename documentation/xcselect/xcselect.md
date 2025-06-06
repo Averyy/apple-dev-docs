@@ -15,8 +15,6 @@ The system provides [`xcselect_host_sdk_path`](xcselect_host_sdk_path.md), a fun
 
 > **Note**: The `xcselect` framework is not available in Swift.
 
-The `xcselect` framework is not available in Swift.
-
 
 ---
 

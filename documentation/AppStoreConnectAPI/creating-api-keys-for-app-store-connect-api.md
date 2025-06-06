@@ -1,6 +1,6 @@
 # Creating API Keys for App Store Connect API
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Create API keys to sign JSON Web Tokens (JWTs) and authorize API requests.
 
@@ -14,8 +14,6 @@ There are two types of API keys:
 
 > ❗ **Important**:  Secure your private keys as you do for other credentials, such as usernames and passwords. If you suspect a private key is compromised, immediately revoke the key in App Store Connect. See [`Revoking API Keys`](revoking-api-keys.md) for details.
 
- Secure your private keys as you do for other credentials, such as usernames and passwords. If you suspect a private key is compromised, immediately revoke the key in App Store Connect. See [`Revoking API Keys`](revoking-api-keys.md) for details.
-
 App Store Connect API keys are unique to the App Store Connect API and you can’t use them for other Apple services.
 
 ##### Generate a Team Key and Assign It a Role
@@ -23,8 +21,6 @@ App Store Connect API keys are unique to the App Store Connect API and you can�
 When you create an API key, assign it a role that determines the key’s access to areas of the App Store Connect API and permissions for performing tasks. For example, keys with the Admin role have broad permissions and can do things like create new users and delete users. Team API keys can access all apps, regardless of their role. The roles that apply to keys are the same roles that apply to users on your team; for more information, see [`Program Roles`](https://developer.apple.comhttps://developer.apple.com/support/roles/).
 
 > **Note**:  Team keys give access that’s not isolated to a single app, but individual key access is tied to the apps and permissions of the user.
-
- Team keys give access that’s not isolated to a single app, but individual key access is tied to the apps and permissions of the user.
 
 To generate team keys, you must have an Admin account in App Store Connect. You can generate multiple API keys with any roles you choose.
 
@@ -53,8 +49,6 @@ The download link only appears if you haven’t downloaded the private key. Appl
 
 > ❗ **Important**:  Keep your API keys secure and private. Don’t share your keys, store keys in a code repository, or include keys in client-side code. If the key becomes lost or compromised, remember to revoke it immediately. See [`Revoking API Keys`](revoking-api-keys.md) for more information.
 
- Keep your API keys secure and private. Don’t share your keys, store keys in a code repository, or include keys in client-side code. If the key becomes lost or compromised, remember to revoke it immediately. See [`Revoking API Keys`](revoking-api-keys.md) for more information.
-
 ##### Generate an Individual Key
 
 To generate an individual API key, which has access and permissions of the associated user, for the App Store Connect API, log in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) and:
@@ -66,8 +60,6 @@ To generate an individual API key, which has access and permissions of the assoc
 The key ID, a download link, and other information appears on the page.
 
 > **Note**:  If you don’t have the Generate Individual API Keys permission, the Generate API Key button won’t show on your profile. A team Admin can grant you this permission.
-
- If you don’t have the Generate Individual API Keys permission, the Generate API Key button won’t show on your profile. A team Admin can grant you this permission.
 
 ##### Download and Store an Individual Private Key
 
@@ -95,4 +87,4 @@ The download link only appears if you haven’t downloaded the private key. Appl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/creating-api-keys-for-app-store-connect-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-api-keys-for-app-store-connect-api)*

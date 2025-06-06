@@ -10,8 +10,6 @@ Xcode comes with built-in support for source control accounts and makes it easy 
 
 > **Note**: A package author can publish their Swift package to either public or private repositories. Xcode supports both private and publicly available packages.
 
-A package author can publish their Swift package to either public or private repositories. Xcode supports both private and publicly available packages.
-
 ##### Add a Package Dependency
 
 To add a package dependency to your Xcode project, select File > Add Package Dependency and enter its source control repository URL. You can also navigate to your target’s General pane, and in the “Frameworks, Libraries, and Embedded Content” section, click the + button, select Add Other, and choose Add Package Dependency.
@@ -30,8 +28,6 @@ If you’ve added a source control account in Xcode’s preferences and you have
 
 > ❗ **Important**: Only add package dependencies by trustworthy authors. In addition, adding a binary dependency comes with drawbacks over adding a source-based dependency. See [`Identifying binary dependencies`](identifying-binary-dependencies.md) to learn more.
 
-Only add package dependencies by trustworthy authors. In addition, adding a binary dependency comes with drawbacks over adding a source-based dependency. See [`Identifying binary dependencies`](identifying-binary-dependencies.md) to learn more.
-
 ##### Decide on Package Requirements
 
 When you enter the package dependency’s URL or pick a Swift package from the list of packages, choose one of three . Package requirements determine the allowed versions of the package dependency in your project, and Xcode updates your package dependency based on the requirement that you choose.
@@ -41,8 +37,6 @@ After you choose a package requirement, Xcode resolves and fetches the package d
 In Xcode’s Project navigator, the Swift Package Dependencies section shows the newly added package dependency. Click the disclosure triangle to view the contents of the package as it exists locally on your Mac.
 
 > 💡 **Tip**: Although Xcode updates your package dependencies and resolves package versions automatically, you can trigger both actions from the File > Packages menu.
-
-Although Xcode updates your package dependencies and resolves package versions automatically, you can trigger both actions from the File > Packages menu.
 
 ##### Use Features and Assets Provided By a Swift Package
 
@@ -93,8 +87,6 @@ When collaborating on a project, make sure everyone uses the same version of a p
 
 > 💡 **Tip**: You can find the `Package.resolved` file inside your .`xcodeproj` directory at `.xcodeproj/project.workspace/xcshareddata/swiftpm/Package.resolved`.
 
-You can find the `Package.resolved` file inside your .`xcodeproj` directory at `.xcodeproj/project.workspace/xcshareddata/swiftpm/Package.resolved`.
-
 ##### Delete a Package Dependency
 
 To remove a package dependency from your Xcode project:
@@ -119,4 +111,4 @@ To remove a package dependency from your Xcode project:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-package-dependencies-to-your-app)*

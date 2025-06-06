@@ -1,6 +1,6 @@
 # Requesting access to protected resources
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Provide a purpose string that explains to a person why you need access to protected resources on their device.
 
@@ -11,8 +11,6 @@ Modern devices collect and store a wealth of sensitive information about people 
 Ensure your app accesses only what it needs to do its job. To support this principle, Apple’s operating systems restrict access to protected data and resources by default. Apps can request access on a case-by-case basis, providing an explanation for why they need access. The person who uses the app decides whether to grant or deny the request.
 
 > 💡 **Tip**:  In addition to asking people for permission to access a resource, in some cases, you also need to separately declare your intent to do so by adding an entitlement to your app, as described in [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements).
-
- In addition to asking people for permission to access a resource, in some cases, you also need to separately declare your intent to do so by adding an entitlement to your app, as described in [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements).
 
 ##### Provide a Purpose String
 
@@ -62,8 +60,6 @@ To resolve this issue, provide a purpose string that explains why the app needs 
 
 > **Note**:  If you’re using external libraries or SDKs, they may reference APIs that require a purpose string. Although your app might not use these APIs, a purpose string is still necessary for App Review. You can contact the developer of the library or SDK to request information about which protected resources the developer uses and their purpose, or request that the developer release a version of their code that doesn’t contain the APIs. You’re responsible for all access of protected resources, including external SDK and library access.
 
- If you’re using external libraries or SDKs, they may reference APIs that require a purpose string. Although your app might not use these APIs, a purpose string is still necessary for App Review. You can contact the developer of the library or SDK to request information about which protected resources the developer uses and their purpose, or request that the developer release a version of their code that doesn’t contain the APIs. You’re responsible for all access of protected resources, including external SDK and library access.
-
 ##### Check for Authorization
 
 Many system frameworks that provide access to protected resources have dedicated APIs for checking and requesting authorization to use those resources. This model allows you to adjust your app’s behavior depending on the current access it has. For example, if a person denies your app permission to do something, you can remove related elements from your user interface.
@@ -77,8 +73,6 @@ When your app attempts to access a protected resource after its first attempt, t
 To reset permission access to a protected resource in iOS apps, tap Settings > General > Transfer or Reset iPhone > Reset > Reset Location & Privacy on your device.
 
 > ❗ **Important**:  Using Reset Location & Privacy resets location and privacy settings for all services on your device.
-
- Using Reset Location & Privacy resets location and privacy settings for all services on your device.
 
 To reset permissions for a particular service in macOS apps, run the `tccutil reset <service name>` command in Terminal. For example, to reset all permissions for AppleEvents, type:
 
@@ -96,4 +90,4 @@ This command resets authorization access for all apps using the protected resour
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources)*

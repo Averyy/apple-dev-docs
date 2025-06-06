@@ -1,6 +1,6 @@
 # Understanding Audio Workgroups
 
-**Framework**: Audio Toolbox
+**Framework**: Audiotoolbox
 
 Learn how to optimize real-time rendering performance with the Audio Workgroups API.
 
@@ -12,8 +12,6 @@ An audio workgroup is a collection of real-time threads that work together to pr
 
 > **Note**:  Only real-time threads can join an audio workgroup; nonreal-time threads cannot.
 
- Only real-time threads can join an audio workgroup; nonreal-time threads cannot.
-
 ##### Learn About Audio Workgroups
 
 The diagram below shows how Core Audio runs an I/O thread in the audio server as part of the audio device’s workgroup. The thread wakes up at regular intervals and calls its associated client app to retrieve its audio output. When the client finishes rendering its audio, the system writes it to the output hardware, and the I/O thread sleeps. If a client takes too long to produce audio, the thread misses its deadline, which results in an audio overload and an interruption in audio playback. The I/O thread is the  thread of an audio device workgroup, and it informs the kernel of the beginning and end of each work cycle.
@@ -23,8 +21,6 @@ The diagram below shows how Core Audio runs an I/O thread in the audio server as
 For every audio server I/O thread, its associated app also has its own real-time render thread. The audio server wakes and waits for the app to produce its output on each I/O cycle. The system automatically joins the client app’s real-time thread to the audio device’s workgroup. By doing so, the system tells the kernel that both threads are working together with a common deadline and can better optimize performance.
 
 > ❗ **Important**:  Your app or plug-in requires no additional work if the only real-time thread it uses is the one that the audio frameworks provide. The audio system automatically joins its real-time threads to an audio device workgroup.
-
- Your app or plug-in requires no additional work if the only real-time thread it uses is the one that the audio frameworks provide. The audio system automatically joins its real-time threads to an audio device workgroup.
 
 If your app or Audio Unit plug-in creates and manages its own audio real-time threads, learn more about how to use the Audio Workgroup API in following articles:
 
@@ -44,4 +40,4 @@ If your app or Audio Unit plug-in creates and manages its own audio real-time th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/understanding-audio-workgroups)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox/understanding-audio-workgroups)*

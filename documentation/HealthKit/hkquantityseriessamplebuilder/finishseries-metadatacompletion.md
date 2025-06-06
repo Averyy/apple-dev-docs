@@ -1,6 +1,6 @@
 # finishSeries(metadata:completion:)
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: method
 
 Finalizes the series and returns the resulting quantity samples.
@@ -24,8 +24,6 @@ func finishSeries(metadata: [String : Any]?) async throws -> [HKQuantitySample]
 Call [`finishSeries(metadata:completion:)`](hkquantityseriessamplebuilder/finishseries(metadata:completion:).md) after inserting all the quantities for the series. The series builder creates one or more samples to represent the series, saves the samples to the HealthKit store, and passes them to the completion handler.
 
 > **Note**:  The series builder typically creates a single sample that contains all the inserted quantities; however, it may split the quantities up into multiple sample objects.
-
- The series builder typically creates a single sample that contains all the inserted quantities; however, it may split the quantities up into multiple sample objects.
 
 Calling this method before inserting any samples results in an error. Also, calling this method invalidates the series builder; you cannot call any other series builder methods after calling this method.
 

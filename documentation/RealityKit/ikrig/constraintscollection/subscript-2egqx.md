@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: subscript
 
 Accesses the element with the specified name.
@@ -21,8 +21,6 @@ subscript(name: String) -> IKRig.ConstraintsCollection.Element? { get set }
 #### Overview
 
 > **Note**: Set `nil` to remove the element with matching name.
-
-Set `nil` to remove the element with matching name.
 
 ## Parameters
 

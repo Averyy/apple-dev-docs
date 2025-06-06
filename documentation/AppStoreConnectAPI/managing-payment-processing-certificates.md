@@ -1,6 +1,6 @@
 # Managing merchant IDs and Payment Processing certificates
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Create and update certificates so your app uses Apple Pay and Wallet.
 
@@ -33,8 +33,6 @@ Here’s an example payload:
 
 > **Note**: The value for `identifier` is a unique identifier for your merchant. The value for `name` is a descriptive name for the merchant.
 
-The value for `identifier` is a unique identifier for your merchant. The value for `name` is a descriptive name for the merchant.
-
 ##### Create Payment Processing Certificate
 
 To create a certificate to use with Apple Pay, use [`Create a Certificate`](post-v1-certificates.md).
@@ -63,15 +61,11 @@ Here’s an example payload:
 
 > **Note**: The `id` field in the example payload is a 10-character string that the prior request returns. The `csrContent` is your certificate-signing request.
 
-The `id` field in the example payload is a 10-character string that the prior request returns. The `csrContent` is your certificate-signing request.
-
 ##### Rotate a Payment Processing Certificate
 
 Use one of three options to replace a payment-processing certificate nearing its 25-month expiration date. Each option takes into account that you can have more than one payment processing certificate, but only one can be `activated` for use at any time:
 
 > **Note**: The “Create and activate” option also deactivates the expiring certificate by automatically setting the `activated` key to `FALSE`.
-
-The “Create and activate” option also deactivates the expiring certificate by automatically setting the `activated` key to `FALSE`.
 
 ## See Also
 
@@ -91,4 +85,4 @@ The “Create and activate” option also deactivates the expiring certificate b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/managing-payment-processing-certificates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/managing-payment-processing-certificates)*

@@ -1,6 +1,6 @@
 # elementsEqual(_:by:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Returns a Boolean value indicating whether this sequence and another sequence contain equivalent elements in the same order, using the given predicate as the equivalence test.
@@ -34,8 +34,6 @@ The predicate must be an  over the elements. That is, for any elements `a`, `b`,
 - If `areEquivalent(a, b)` and `areEquivalent(b, c)` are both `true`, then `areEquivalent(a, c)` is also `true`. (Transitivity)
 
 > **Note**: O(), where  is the lesser of the length of the sequence and the length of `other`.
-
-O(), where  is the lesser of the length of the sequence and the length of `other`.
 
 ## Parameters
 

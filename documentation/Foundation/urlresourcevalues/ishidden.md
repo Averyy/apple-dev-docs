@@ -24,8 +24,6 @@ var isHidden: Bool? { get set }
 
 > **Note**:  If the resource is a hidden because its name starts with a period, setting this property to false will not change the property.
 
- If the resource is a hidden because its name starts with a period, setting this property to false will not change the property.
-
 ## See Also
 
 - [var addedToDirectoryDate: Date?](urlresourcevalues/addedtodirectorydate.md)

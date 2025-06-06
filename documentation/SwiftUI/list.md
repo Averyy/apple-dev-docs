@@ -1,6 +1,6 @@
 # List
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A container that presents rows of data arranged in a single column, optionally providing the ability to select one or more members.
@@ -205,8 +205,6 @@ Because this example uses single selection, people can make selections outside o
 
 > **Note**: In iOS 15, iPadOS 15, and tvOS 15 and earlier, lists support selection only in edit mode, even for single selections.
 
-In iOS 15, iPadOS 15, and tvOS 15 and earlier, lists support selection only in edit mode, even for single selections.
-
 ##### Creating Hierarchical Lists
 
 You can also create a hierarchical list of arbitrary depth by providing tree-structured data and a `children` parameter that provides a key path to get the child nodes at any level. The following example uses a deeply-nested collection of a custom `FileItem` type to simulate the contents of a file system. The list created from this data uses collapsing cells to allow the user to navigate the tree structure.
@@ -311,4 +309,4 @@ SwiftUI chooses a display style for a list based on the platform and the view ty
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/list)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/list)*

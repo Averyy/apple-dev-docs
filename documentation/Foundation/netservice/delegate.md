@@ -25,8 +25,6 @@ The delegate must conform to the [`NetServiceDelegate`](netservicedelegate.md) p
 
 > **Note**:  This became a property in OS X v10.9 and iOS 7, but the underlying getter and setter methods (`delegate` and `setDelegate`) have been available since this class was first introduced.
 
- This became a property in OS X v10.9 and iOS 7, but the underlying getter and setter methods (`delegate` and `setDelegate`) have been available since this class was first introduced.
-
 ## See Also
 
 - [class func data(fromTXTRecord: [String : Data]) -> Data](netservice/data(fromtxtrecord:).md)

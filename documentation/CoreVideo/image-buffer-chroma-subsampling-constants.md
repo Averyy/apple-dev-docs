@@ -1,6 +1,6 @@
 # Image Buffer Chroma Subsampling Constants
 
-**Framework**: Core Video
+**Framework**: Corevideo
 
 Constants that indicate the original format of subsampled data in the image buffer before conversion to 422/2vuy format.
 
@@ -9,8 +9,6 @@ Constants that indicate the original format of subsampled data in the image buff
 Use the [`kCVImageBufferChromaSubsamplingKey`](kcvimagebufferchromasubsamplingkey.md) key to attach one of these values to the image buffer.
 
 > **Note**:  To use thse constants, ensure that the image buffer data was converted to 4:2:2 format using simple pixel replication.
-
- To use thse constants, ensure that the image buffer data was converted to 4:2:2 format using simple pixel replication.
 
 ## Topics
 
@@ -46,4 +44,4 @@ Use the [`kCVImageBufferChromaSubsamplingKey`](kcvimagebufferchromasubsamplingke
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corevideo/image-buffer-chroma-subsampling-constants)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreVideo/image-buffer-chroma-subsampling-constants)*

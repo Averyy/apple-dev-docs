@@ -30,8 +30,6 @@ The command generates with scaled images for all levels up to the highest mipmap
 
 > **Note**:  The image filtering that GPU drivers use to generate the mipmaps may vary by the feature families ([`MTLGPUFamily`](mtlgpufamily.md)) it supports.
 
- The image filtering that GPU drivers use to generate the mipmaps may vary by the feature families ([`MTLGPUFamily`](mtlgpufamily.md)) it supports.
-
 ## Parameters
 
 - `texture`: A texture instance the command generates mipmaps for that has:

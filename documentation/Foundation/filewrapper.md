@@ -26,8 +26,6 @@ The [`FileWrapper`](filewrapper.md) class provides access to the attributes and 
 
 > **Note**:  Starting in macOS 10.7, [`FileWrapper`](filewrapper.md) moved from Application Kit to Foundation. As a result of this the `icon`, and `setIcon:` methods have moved to a new category of [`FileWrapper`](filewrapper.md) that remains in Application Kit.
 
- Starting in macOS 10.7, [`FileWrapper`](filewrapper.md) moved from Application Kit to Foundation. As a result of this the `icon`, and `setIcon:` methods have moved to a new category of [`FileWrapper`](filewrapper.md) that remains in Application Kit.
-
 File wrappers represent a file system node as an object that can be displayed as an image (and possibly edited in place), saved to the file system, or transmitted to another application.
 
 There are three types of file wrappers:
@@ -150,4 +148,4 @@ A file wrapper has these attributes:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/filewrapper)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/filewrapper)*

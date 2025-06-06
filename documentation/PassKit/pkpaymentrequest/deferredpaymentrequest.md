@@ -1,6 +1,6 @@
 # deferredPaymentRequest
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 A request to set up a deferred payment, such as a hotel booking or a pre-order.
@@ -22,13 +22,9 @@ var deferredPaymentRequest: PKDeferredPaymentRequest? { get set }
 
 > **Note**:  watchOS doesn’t support merchant-specific payment tokens.
 
- watchOS doesn’t support merchant-specific payment tokens.
-
 This payment request receives a merchant-specific payment token if the payment network supports merchant-specific payment tokens.
 
 > ❗ **Important**:  You can’t use this property simultaneously with multitoken contexts, recurring payment requests, or automatic reload payment requests. Simultaneous use of these properties results in a runtime error and cancels the payment request.
-
- You can’t use this property simultaneously with multitoken contexts, recurring payment requests, or automatic reload payment requests. Simultaneous use of these properties results in a runtime error and cancels the payment request.
 
 ## See Also
 

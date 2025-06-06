@@ -26,8 +26,6 @@ See [`Rendering a Scene with Deferred Lighting in Objective-C`](rendering-a-scen
 
 > **Note**:  You can create only textures, not buffers, using [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md) mode. You can’t use buffers as memoryless render targets.
 
- You can create only textures, not buffers, using [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md) mode. You can’t use buffers as memoryless render targets.
-
 ## See Also
 
 - [Setting Resource Storage Modes](setting-resource-storage-modes.md)
@@ -46,4 +44,4 @@ See [`Rendering a Scene with Deferred Lighting in Objective-C`](rendering-a-scen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/choosing-a-resource-storage-mode-for-apple-gpus)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/choosing-a-resource-storage-mode-for-apple-gpus)*

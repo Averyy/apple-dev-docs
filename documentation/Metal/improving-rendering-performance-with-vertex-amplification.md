@@ -20,8 +20,6 @@ Confirm whether the GPU supports a specific multiplier for vertex amplification 
 
 > ❗ **Important**:  Passing a multiplier value of `1` or less to the [`supportsVertexAmplificationCount(_:)`](mtldevice/supportsvertexamplificationcount(_:).md) method triggers an API validation error.
 
- Passing a multiplier value of `1` or less to the [`supportsVertexAmplificationCount(_:)`](mtldevice/supportsvertexamplificationcount(_:).md) method triggers an API validation error.
-
 After your app confirms that the GPU supports a vertex amplification multiplier at runtime, it can safely configure a pipeline state to use that multiplier.
 
 ##### Set a Render Pipeline Descriptors Largest Vertex Amplification Multiplier
@@ -211,8 +209,6 @@ vertex VertexOut vs_main(VertexIn in[[stage_in]],
 
 > **Note**:  The Metal compiler infers all assignments to parameters with built-in attributes as  values, except for assignments to the `[[position]]` attribute.
 
- The Metal compiler infers all assignments to parameters with built-in attributes as  values, except for assignments to the `[[position]]` attribute.
-
 The compiler infers other calculations as shared values if it can prove the result is the same for all amplification IDs. However, you can explicitly designate a parameter as a shared value by adding the `[[shared]]` attribute as a hint to the shader compiler.
 
 ```metal
@@ -259,4 +255,4 @@ The total number of render pipelines instances is equal to the product of the ve
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/improving-rendering-performance-with-vertex-amplification)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/improving-rendering-performance-with-vertex-amplification)*

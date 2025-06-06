@@ -1,6 +1,6 @@
 # UIToolTipInteraction
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An interaction object that makes it possible to show a tooltip when hovering a pointer over a view or control.
@@ -42,8 +42,6 @@ button.toolTip = "Click to buy this item. You'll have a chance to change your mi
 Setting the [`toolTip`](uicontrol/tooltip.md) property creates a tooltip interaction for the control, which you can retrieve from the [`toolTipInteraction`](uicontrol/tooltipinteraction.md) property.
 
 > **Note**:  Tooltips appear when your app runs in macOS or visionOS. To show a tooltip in macOS, your app must be an iPhone or iPad app running on a Mac with Apple silicon, or built with Mac Catalyst.
-
- Tooltips appear when your app runs in macOS or visionOS. To show a tooltip in macOS, your app must be an iPhone or iPad app running on a Mac with Apple silicon, or built with Mac Catalyst.
 
 ## Topics
 
@@ -87,4 +85,4 @@ Setting the [`toolTip`](uicontrol/tooltip.md) property creates a tooltip interac
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitooltipinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitooltipinteraction)*

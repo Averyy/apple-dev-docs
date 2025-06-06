@@ -1,6 +1,6 @@
 # Prominence.increased
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: case
 
 An increased prominence.
@@ -24,8 +24,6 @@ case increased
 
 > **Note**: Not all views will react to increased prominence.
 
-Not all views will react to increased prominence.
-
 ## See Also
 
 - [Prominence.standard](prominence/standard.md)
@@ -34,4 +32,4 @@ Not all views will react to increased prominence.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/prominence/increased)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/prominence/increased)*

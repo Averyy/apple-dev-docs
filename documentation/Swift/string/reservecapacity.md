@@ -26,8 +26,6 @@ Because each character in a string can require more than a single ASCII characte
 
 > **Note**: O()
 
-O()
-
 ## Parameters
 
 - `n`: The minimum number of ASCII character’s worth of storage   to allocate.

@@ -1,6 +1,6 @@
 # flatMap(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.
@@ -41,8 +41,6 @@ let flatMapped = numbers.flatMap { Array(repeating: $0, count: $0) }
 In fact, `s.flatMap(transform)`  is equivalent to `Array(s.map(transform).joined())`.
 
 > **Note**: O( + ), where  is the length of this sequence and  is the length of the result.
-
-O( + ), where  is the length of this sequence and  is the length of the result.
 
 ## Parameters
 

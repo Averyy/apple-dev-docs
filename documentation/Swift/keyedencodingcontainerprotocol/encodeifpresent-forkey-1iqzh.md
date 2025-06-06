@@ -25,8 +25,6 @@ mutating func encodeIfPresent(_ value: Int8?, forKey key: Self.Key) throws
 
 > **Note**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 
-`EncodingError.invalidValue` if the given value is invalid in the current context for this format.
-
 ## Parameters
 
 - `value`: The value to encode.

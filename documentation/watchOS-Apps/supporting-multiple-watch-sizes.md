@@ -81,8 +81,6 @@ Different watch sizes use different default dynamic type sizes.
 
 > **Note**: The wearer can change the dynamic type size, including using accessibility sizes. Always check your app’s appearance with all available type sizes.
 
-The wearer can change the dynamic type size, including using accessibility sizes. Always check your app’s appearance with all available type sizes.
-
 For additional design information, see [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography).
 
 ##### Manage Assets
@@ -139,4 +137,4 @@ For more information, see [`Previewing your app’s interface in Xcode`](https:/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/supporting-multiple-watch-sizes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/supporting-multiple-watch-sizes)*

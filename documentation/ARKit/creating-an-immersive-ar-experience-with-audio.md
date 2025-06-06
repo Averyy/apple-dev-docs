@@ -1,6 +1,6 @@
 # Creating an immersive ar experience with audio
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Use sound effects and environmental sound layers to create an engaging AR experience.
 
@@ -52,9 +52,7 @@ objectNode.addAudioPlayer(SCNAudioPlayer(source: audioSource))
 
 > **Note**: For best results, use mono audio files. SceneKit’s audio engine uses panning to create 3D positional effects, so stereo audio sources produce less recognizable 3D audio effects.
 
-For best results, use mono audio files. SceneKit’s audio engine uses panning to create 3D positional effects, so stereo audio sources produce less recognizable 3D audio effects.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/creating-an-immersive-ar-experience-with-audio)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/creating-an-immersive-ar-experience-with-audio)*

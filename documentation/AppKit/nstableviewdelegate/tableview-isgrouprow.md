@@ -1,6 +1,6 @@
 # tableView(_:isGroupRow:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Returns whether the specified row is a group row.
@@ -26,8 +26,6 @@ If the cell in `row` is an [`NSTextFieldCell`](nstextfieldcell.md) object and co
 Group rows in [`NSView`](nsview.md)-based table views can be made to visually “float” by setting the table view method [`floatsGroupRows`](nstableview/floatsgrouprows.md) to [`true`](https://developer.apple.com/documentation/swift/true).
 
 > **Note**:  When configured as a source list style table view, rows identified as group rows draw with a specific style unique to source lists.
-
- When configured as a source list style table view, rows identified as group rows draw with a specific style unique to source lists.
 
 ## Parameters
 

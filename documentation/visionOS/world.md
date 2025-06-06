@@ -32,8 +32,6 @@ Like other platforms — for example, macOS and iOS — visionOS displays a wind
 
 > 💡 **Tip**: This particular window group uses the [`plain`](https://developer.apple.com/documentation/SwiftUI/WindowStyle/plain) window style to maintain control over the glass background effect that visionOS would otherwise automatically add.
 
-This particular window group uses the [`plain`](https://developer.apple.com/documentation/SwiftUI/WindowStyle/plain) window style to maintain control over the glass background effect that visionOS would otherwise automatically add.
-
 ##### Present Different Modules Using a Navigation Stack
 
 After you watch a brief introductory animation that shows the text Hello World typing in, the `Modules` view that defines the primary scene’s content presents options to explore different aspects of the world. This view contains a table of contents at the root of a [`NavigationStack`](https://developer.apple.com/documentation/SwiftUI/NavigationStack):
@@ -176,8 +174,6 @@ When you add 3D effects to a 2D window, keep this guidance in mind:
 
 > **Note**: To learn about designing with gestures in visionOS, read [`Gestures`](https://developer.apple.com/design/Human-Interface-Guidelines/gestures) in [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
 
-To learn about designing with gestures in visionOS, read [`Gestures`](https://developer.apple.com/design/Human-Interface-Guidelines/gestures) in [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
-
 To create this visualization, the app displays the `Orbit` view — which contains a single [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) that models the entire system — in an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) scene with the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) immersion style:
 
 ```swift
@@ -223,8 +219,6 @@ There are a few key differences from the version that appears in the section [`O
 ##### View the Solar System From Space Using Full Immersion
 
 > 💡 **Tip**: People can always close the currently open immersive space by pressing the device’s Digital Crown, but it’s typically useful when you provide a built-in mechanism to maintain control of the experience within your app.
-
-People can always close the currently open immersive space by pressing the device’s Digital Crown, but it’s typically useful when you provide a built-in mechanism to maintain control of the experience within your app.
 
 The app uses another immersive space scene for this module, but here with the [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) immersion style that turns off the passthrough video:
 
@@ -292,4 +286,4 @@ ZStack {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/world)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/world)*

@@ -1,6 +1,6 @@
 # Displaying data in lists
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Visualize collections of data with platform-appropriate appearance.
 
@@ -13,8 +13,6 @@ List views display collections of items vertically, load rows as needed, and add
 By default, list views also apply platform-appropriate styling to their elements. For example, on iOS, the default configuration of a list displays a separator line between each row, and adds disclosure indicators next to items that initiate navigation actions.
 
 > **Note**: If you want to remove the platform-appropriate styling — such as row separators or automatic disclosure indicators — from your list, consider using [`LazyVStack`](lazyvstack.md) instead. For more information on working with lazy stacks, see [`Creating performant scrollable stacks`](creating-performant-scrollable-stacks.md)
-
-If you want to remove the platform-appropriate styling — such as row separators or automatic disclosure indicators — from your list, consider using [`LazyVStack`](lazyvstack.md) instead. For more information on working with lazy stacks, see [`Creating performant scrollable stacks`](creating-performant-scrollable-stacks.md)
 
 The code in this article shows the use of list views to display a company’s staff directory. Each section enhances the usefulness of the list, by adding custom cells, splitting the list into sections, and using the list selection to navigate to a detail view.
 
@@ -54,8 +52,6 @@ struct StaffList: View {
 Members of a list must be uniquely identifiable from one another. Unique identifiers allow SwiftUI to automatically generate animations for changes in the underlying data, like inserts, deletions, and moves. Identify list members either by using a type that conforms to [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable), as `Person` does, or by providing an `id` parameter with the key path to a unique property of the type. The `ForEach` that populates the list above depends on this behavior, as do the `List` initializers that take a [`RandomAccessCollection`](https://developer.apple.com/documentation/Swift/RandomAccessCollection) of members to iterate over.
 
 > ❗ **Important**: The values you use for [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) data must be unique. Using a [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) or a database row identifier are both good choices, whereas using data like a person’s name or phone number could potentially contain duplicates.
-
-The values you use for [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) data must be unique. Using a [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) or a database row identifier are both good choices, whereas using data like a person’s name or phone number could potentially contain duplicates.
 
 ##### Display Data Inside a Row
 
@@ -146,8 +142,6 @@ List {
 
 > **Note**: If your data hierarchy is too deep to represent with a single level of sections and rows, [`OutlineGroup`](outlinegroup.md) and [`DisclosureGroup`](disclosuregroup.md) might be a better fit. These views use a disclosure metaphor to allow the user to drill down to an arbitrary depth in the hierarchy.
 
-If your data hierarchy is too deep to represent with a single level of sections and rows, [`OutlineGroup`](outlinegroup.md) and [`DisclosureGroup`](disclosuregroup.md) might be a better fit. These views use a disclosure metaphor to allow the user to drill down to an arbitrary depth in the hierarchy.
-
 #### Use Lists for Navigation
 
 Using a [`NavigationLink`](navigationlink.md) within a [`List`](list.md) contained inside a [`NavigationView`](navigationview.md) adds platform-appropriate visual styling, and in some cases, additional container views that provide the structure for navigation. SwiftUI uses one of two visual presentations, based on the runtime environment:
@@ -219,4 +213,4 @@ You can use the [`navigationViewStyle(_:)`](view/navigationviewstyle(_:).md) vie
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/displaying-data-in-lists)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/displaying-data-in-lists)*

@@ -1,6 +1,6 @@
 # writeContents(_:to:for:originalContentsURL:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Writes the document data to disk at the sandbox location indicated by a file URL.
@@ -25,10 +25,6 @@ This method is called by the [`writeContents(_:andAttributes:safelyTo:for:)`](ui
 If you override this method, you may choose to return a different type of data from [`contents(forType:)`](uidocument/contents(fortype:).md) or you may choose to not override [`contents(forType:)`](uidocument/contents(fortype:).md) and generate the writable data directly within this method. If you override this method, you should not invoke the superclass implementation.
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

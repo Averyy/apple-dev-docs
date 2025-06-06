@@ -1,6 +1,6 @@
 # Create an In-App Purchase
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Create an in-app purchase, including a consumable, non-consumable, or non-renewing subscription.
@@ -15,8 +15,6 @@ Create an in-app purchase, including a consumable, non-consumable, or non-renewi
 #### Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
 ## See Also
 
@@ -52,4 +50,4 @@ Create an in-app purchase, including a consumable, non-consumable, or non-renewi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v2-inapppurchases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v2-inapppurchases)*

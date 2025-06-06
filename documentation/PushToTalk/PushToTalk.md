@@ -1,6 +1,6 @@
 # Push to Talk
 
-**Framework**: Push to Talk  
+**Framework**: Pushtotalk  
 **Kind**: module
 
 Display the system user interface for your app’s Push to Talk services.
@@ -15,8 +15,6 @@ Display the system user interface for your app’s Push to Talk services.
 The Push to Talk framework is a power-efficient, user-friendly, and privacy-focused API. It gives your apps the ability to provide user interface controls that allow your users to transmit audio from anywhere. It supplies an ephemeral Apple Push Notification service token so the system can wake your app in the background to handle incoming audio while a session is ongoing.
 
 > **Note**:  Push to Talk services aren’t available to compatible iPad and iPhone apps running in visionOS.
-
- Push to Talk services aren’t available to compatible iPad and iPhone apps running in visionOS.
 
 ## Topics
 

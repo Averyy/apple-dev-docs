@@ -1,6 +1,6 @@
 # encodeTestArgument(to:)
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: method  
 **Required**: Yes
 
@@ -26,8 +26,6 @@ func encodeTestArgument(to encoder: some Encoder) throws
 #### Discussion
 
 > **Note**: Any error encountered during encoding.
-
-Any error encountered during encoding.
 
 The encoded form of a test argument should be stable and unique to allow re-running specific test cases of a parameterized test function. For optimal performance, large values which are not necessary to uniquely identify the test argument later should be omitted. Encoded values do not need to be human-readable.
 

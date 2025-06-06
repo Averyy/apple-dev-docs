@@ -1,6 +1,6 @@
 # Create an In-App Purchase Localization
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Create a localized display name and description for an in-app purchase.
@@ -11,8 +11,6 @@ Create a localized display name and description for an in-app purchase.
 #### Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
 ## See Also
 
@@ -28,4 +26,4 @@ Create a localized display name and description for an in-app purchase.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-inapppurchaselocalizations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-inapppurchaselocalizations)*

@@ -1,6 +1,6 @@
 # startImpression(_:completionHandler:)
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: method
 
 Indicates that your app is presenting a view-through ad to the user.
@@ -29,8 +29,6 @@ Call this method when you start presenting the view-through ad to the user. If y
 Call [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:completionhandler:).md) when the impression ends and is no longer visible to the user.
 
 > **Note**:  To ensure that SKAdNetwork records the impression, call [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:completionhandler:).md) after the impression ends, regardless of whether [`startImpression(_:completionHandler:)`](skadnetwork/startimpression(_:completionhandler:).md) returns an error in the completion handler.
-
- To ensure that SKAdNetwork records the impression, call [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:completionhandler:).md) after the impression ends, regardless of whether [`startImpression(_:completionHandler:)`](skadnetwork/startimpression(_:completionhandler:).md) returns an error in the completion handler.
 
 ## Parameters
 

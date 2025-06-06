@@ -26,8 +26,6 @@ If mutated, this calendar will no longer track the user’s preferred calendar.
 
 > **Note**:  The autoupdating Calendar will only compare equal to another autoupdating Calendar.
 
- The autoupdating Calendar will only compare equal to another autoupdating Calendar.
-
 ## See Also
 
 - [static var current: Calendar](calendar/current.md)

@@ -14,8 +14,6 @@ Explicitly enumerate a ray’s intersections with acceleration structures by cre
 
 > **Note**: This sample code project is associated with WWDC21 session [`10149: Enhance Your App with Metal Ray Tracing`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10149/).
 
-This sample code project is associated with WWDC21 session [`10149: Enhance Your App with Metal Ray Tracing`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10149/).
-
 ## See Also
 
 - [Rendering reflections in real time using ray tracing](rendering-reflections-in-real-time-using-ray-tracing.md)
@@ -30,4 +28,4 @@ This sample code project is associated with WWDC21 session [`10149: Enhance Your
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/control-the-ray-tracing-process-using-intersection-queries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/control-the-ray-tracing-process-using-intersection-queries)*

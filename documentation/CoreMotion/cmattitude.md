@@ -1,6 +1,6 @@
 # CMAttitude
 
-**Framework**: Core Motion  
+**Framework**: Coremotion  
 **Kind**: class
 
 The device’s orientation relative to a known frame of reference at a point in time.
@@ -24,8 +24,6 @@ class CMAttitude
 The `CMAttitude` class offers three different mathematical representations of attitude: a rotation matrix, a quaternion, and Euler angles (roll, pitch, and yaw values). You access `CMAttitude` objects through the attitude property of each [`CMDeviceMotion`](cmdevicemotion.md) objects passed to an application. An application starts receiving these device-motion objects as a result of calling the [`startDeviceMotionUpdates(using:to:withHandler:)`](cmmotionmanager/startdevicemotionupdates(using:to:withhandler:).md) method, the [`startDeviceMotionUpdates(to:withHandler:)`](cmmotionmanager/startdevicemotionupdates(to:withhandler:).md) method, the [`startDeviceMotionUpdates(using:)`](cmmotionmanager/startdevicemotionupdates(using:).md) method, or the [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md) method of the [`CMMotionManager`](cmmotionmanager.md) class.
 
 > **Note**:  Core Motion outputs a direction cosine matrix (DCM)—basically a rotation from the last “old” orientation to the new orientation of the device.
-
- Core Motion outputs a direction cosine matrix (DCM)—basically a rotation from the last “old” orientation to the new orientation of the device.
 
 ## Topics
 
@@ -79,4 +77,4 @@ The `CMAttitude` class offers three different mathematical representations of at
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmattitude)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreMotion/cmattitude)*

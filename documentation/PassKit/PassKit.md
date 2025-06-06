@@ -1,6 +1,6 @@
 # PassKit (Apple Pay and Wallet)
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: module
 
 Process Apple Pay payments in your app, and create and distribute passes for the Wallet app.
@@ -25,10 +25,6 @@ The PassKit framework lets you:
 Apple Pay is a secure and easy way for users to make purchases in stores, in apps, and on the web. When you use PassKit APIs to support Apple Pay in your iOS and watchOS apps, your users can purchase real-world goods and services, or donate to nonprofit organizations, without ever leaving your app.
 
 > **Note**:  To add Apple Pay to your web applications, see [`Apple Pay on the Web`](https://developer.apple.com/documentation/apple_pay_on_the_web). For digital goods and services delivered within the app, see [`In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/) instead.
-
- To add Apple Pay to your web applications, see [`Apple Pay on the Web`](https://developer.apple.com/documentation/apple_pay_on_the_web).
-
-For digital goods and services delivered within the app, see [`In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/) instead.
 
 ![The icon that respresents Wallet.](https://docs-assets.developer.apple.com/published/1f03432c3578ddd87cc12f1efefebc4e/media-3975195%402x.png)
 

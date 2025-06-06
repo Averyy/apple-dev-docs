@@ -1,6 +1,6 @@
 # backButtonTitle
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The custom title of the Back button.
@@ -39,8 +39,6 @@ override func viewDidLoad() {
 When [`backButtonTitle`](uinavigationitem/backbuttontitle.md) is `nil`, which is the default value, the navigation item uses its [`title`](uinavigationitem/title.md) property as the Back button title.
 
 > **Note**:  [`backBarButtonItem`](uinavigationitem/backbarbuttonitem.md) takes precedence if you specify both [`backButtonTitle`](uinavigationitem/backbuttontitle.md) and [`backBarButtonItem`](uinavigationitem/backbarbuttonitem.md).
-
- [`backBarButtonItem`](uinavigationitem/backbarbuttonitem.md) takes precedence if you specify both [`backButtonTitle`](uinavigationitem/backbuttontitle.md) and [`backBarButtonItem`](uinavigationitem/backbarbuttonitem.md).
 
 ## See Also
 

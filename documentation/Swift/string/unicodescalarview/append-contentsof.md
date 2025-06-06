@@ -24,8 +24,6 @@ mutating func append<S>(contentsOf newElements: S) where S : Sequence, S.Element
 
 > **Note**: O(), where  is the length of the resulting view.
 
-O(), where  is the length of the resulting view.
-
 ## Parameters
 
 - `newElements`: A sequence of Unicode scalar values.

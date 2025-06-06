@@ -1,6 +1,6 @@
 # Implementing postprocess effects using Metal compute functions
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Create custom shaders to implement postprocess effects.
 
@@ -42,8 +42,6 @@ void postProcessInvert(uint2 gid [[thread_position_in_grid]],
 ```
 
 > **Note**: For more information on writing postprocess compute functions, see [`Processing a Texture in a Compute Function`](https://developer.apple.com/documentation/Metal/processing-a-texture-in-a-compute-function).
-
-For more information on writing postprocess compute functions, see [`Processing a Texture in a Compute Function`](https://developer.apple.com/documentation/Metal/processing-a-texture-in-a-compute-function).
 
 ##### Load the Compute Function
 
@@ -106,8 +104,6 @@ func postProcess(context: ARView.PostProcessContext) {
 
 > **Note**: The `compatibleTargetTexture` property referenced above is a derived property based on [`targetColorTexture`](arview/postprocesscontext/targetcolortexture.md). It ensures that the output texture uses the appropriate pixel format for the current device. For more information, see [`Checking the pixel format of a postprocess effect’s output texture`](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
 
-The `compatibleTargetTexture` property referenced above is a derived property based on [`targetColorTexture`](arview/postprocesscontext/targetcolortexture.md). It ensures that the output texture uses the appropriate pixel format for the current device. For more information, see [`Checking the pixel format of a postprocess effect’s output texture`](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
-
 ##### Register the Callback Function
 
 To apply the effect, register the function as the [`postProcess`](arview/rendercallbacks-swift.struct/postprocess.md) render callback for the [`ARView`](arview.md).
@@ -117,8 +113,6 @@ arView.renderCallbacks.postProcess = postProcess
 ```
 
 > **Note**: For more information on writing Metal compute functions to implement postprocess effects, see the [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md) sample code, which demonstrates multiple postprocess techniques, including compute functions.
-
-For more information on writing Metal compute functions to implement postprocess effects, see the [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md) sample code, which demonstrates multiple postprocess techniques, including compute functions.
 
 ## See Also
 
@@ -134,4 +128,4 @@ For more information on writing Metal compute functions to implement postprocess
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/implementing-postprocess-effects-using-metal-compute-functions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/implementing-postprocess-effects-using-metal-compute-functions)*

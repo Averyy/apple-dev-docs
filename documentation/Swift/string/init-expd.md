@@ -26,8 +26,6 @@ If `codeUnits` is an ill-formed code unit sequence, the result is `nil`.
 
 > **Note**: O(N), where N is the length of the resulting `String`’s UTF-16.
 
-O(N), where N is the length of the resulting `String`’s UTF-16.
-
 ## See Also
 
 - [var unicodeScalars: String.UnicodeScalarView](string/unicodescalars.md)

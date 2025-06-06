@@ -1,6 +1,6 @@
 # init(buffer:configuration:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates an `AudioBufferResource` with the given `AVAudioBuffer` and configuration.
@@ -22,8 +22,6 @@ Creates an `AudioBufferResource` with the given `AVAudioBuffer` and configuratio
 #### Discussion
 
 > **Note**: An error if the given `buffer` is not or cannot be converted to a non-interleaved PCM buffer.
-
-An error if the given `buffer` is not or cannot be converted to a non-interleaved PCM buffer.
 
 
 ---

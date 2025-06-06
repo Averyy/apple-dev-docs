@@ -1,6 +1,6 @@
 # MLRegressorMetrics
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: struct
 
 Metrics you use to evaluate a regressor’s performance.
@@ -28,8 +28,6 @@ struct MLRegressorMetrics
 To understand what performance you can expect from the regressor, you start by looking at its [`maximumError`](mlregressormetrics/maximumerror.md). This high-level metric indicates your model’s worst-case performance. To get a sense for how your model performs on average, look at the [`rootMeanSquaredError`](mlregressormetrics/rootmeansquarederror.md). In both cases, you want to minimize the value and therefore the error.
 
 > **Note**: Each trained model contains different metrics for its various data sets (training, validation, and testing). [`Improving Your Model’s Accuracy`](improving-your-model-s-accuracy.md) compares these metrics among different data sets.
-
-Each trained model contains different metrics for its various data sets (training, validation, and testing). [`Improving Your Model’s Accuracy`](improving-your-model-s-accuracy.md) compares these metrics among different data sets.
 
 ## Topics
 
@@ -83,4 +81,4 @@ Each trained model contains different metrics for its various data sets (trainin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createml/mlregressormetrics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateML/mlregressormetrics)*

@@ -1,6 +1,6 @@
 # billingContact
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 The billing contact selected by the user for this transaction.
@@ -23,8 +23,6 @@ After the user authorizes the transaction with Touch ID, Face ID, or passcode, `
 
 > **Note**:  Address information can come from a wide range of sources. Always validate the information before you use it.
 
- Address information can come from a wide range of sources. Always validate the information before you use it.
-
 ## See Also
 
 - [shippingContact](applepaypayment/shippingcontact.md)
@@ -35,4 +33,4 @@ After the user authorizes the transaction with Touch ID, Face ID, or passcode, `
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypayment/billingcontact)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypayment/billingcontact)*

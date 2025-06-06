@@ -26,8 +26,6 @@ Weekday ordinal units represent the position of the weekday within the next larg
 
 > **Note**:  This value is interpreted in the context of the calendar in which it is used.
 
- This value is interpreted in the context of the calendar in which it is used.
-
 ## See Also
 
 - [var weekOfMonth: Int?](datecomponents/weekofmonth.md)

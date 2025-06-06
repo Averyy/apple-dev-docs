@@ -1,6 +1,6 @@
 # earlyStoppingTolerance
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: property
 
 The early-stopping tolerance.
@@ -28,9 +28,7 @@ Defaults to 0.01.
 
 > **Note**: Early stopping only happens when using the `fitted` method with validation data.
 
-Early stopping only happens when using the `fitted` method with validation data.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/lineartimeseriesforecasterconfiguration/earlystoppingtolerance)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/lineartimeseriesforecasterconfiguration/earlystoppingtolerance)*

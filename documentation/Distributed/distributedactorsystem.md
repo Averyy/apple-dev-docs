@@ -49,8 +49,6 @@ For more details about how the specific actor system implementation deals with r
 
 > **Note**: For example, you may refer to the [`Swift Distributed Actors cluster library`](https://developer.apple.comhttps://github.com/apple/swift-distributed-actors/) documentation, which is one example of such feature complete distributed actor system implementation.
 
-For example, you may refer to the [`Swift Distributed Actors cluster library`](https://developer.apple.comhttps://github.com/apple/swift-distributed-actors/) documentation, which is one example of such feature complete distributed actor system implementation.
-
 #### Implementing a Distributedactorsystem
 
 This section is dedicated to distributed actor system library authors, and generally can be skipped over by library users, as it explains the interactions of synthesized code and specific distributed actor system methods and how they must be implemented.
@@ -89,10 +87,6 @@ Users have no control over this assignment, nor are they allowed to set the `id`
 
 > 💡 **Tip**: Take note that throwing or failable initializers complicate this somewhat. Thankfully, the compiler will always emit the right code such that every [`assignID(_:)`](distributedactorsystem/assignid(_:).md) is balanced with a [`resignID(_:)`](distributedactorsystem/resignid(_:).md) call, when the actor either failed to initialize or deinitialize properly. It is also possible that a throwing initializer throws before assigning the `actorSystem` and `id` properties. In such case, no `assignID` nor `resignID` calls are made. There is no risk of the compiler ever attempting to call a `resignID(_:)` without first having assigned given ID.
 
-Take note that throwing or failable initializers complicate this somewhat. Thankfully, the compiler will always emit the right code such that every [`assignID(_:)`](distributedactorsystem/assignid(_:).md) is balanced with a [`resignID(_:)`](distributedactorsystem/resignid(_:).md) call, when the actor either failed to initialize or deinitialize properly.
-
-It is also possible that a throwing initializer throws before assigning the `actorSystem` and `id` properties. In such case, no `assignID` nor `resignID` calls are made. There is no risk of the compiler ever attempting to call a `resignID(_:)` without first having assigned given ID.
-
 Manually invoking `assignID` and `resignID` is generally not recommended but isn’t strictly a programmer error, and it is up to the actor system to decide how to deal with such calls.
 
 Once the `distributed actor` deinitializes, a call to [`resignID(_:)`](distributedactorsystem/resignid(_:).md) will be made. Generally this is made from the distributed actor’s `deinit`, however in the case of throwing initializers it may also happen during such failed init, in order to release the ID that is no longer used.
@@ -112,15 +106,9 @@ Once a `distributed actor` has been  during its initializer, a call to [`actorRe
 
 > **Note**: Generally due to actor initializer isolation rules, users will need to make their initializers `async` in order to write code that safely performs extra actions after it has fully initialized.
 
-Generally due to actor initializer isolation rules, users will need to make their initializers `async` in order to write code that safely performs extra actions after it has fully initialized.
-
 The `actorReady(_)` call on the actor system is a signal to the actor system that this actor  is now ready and may be resolved and interacted with via the actor system. Generally, a distributed actor system implementation will  the actors it has readied, because retaining them strongly would mean that they will never be deallocated (and thus never resign their ID’s).
 
 > **Note**: Generally actor systems should retain actors  in order to allow them be deinitialized when no longer in use. Sometimes though, it can be quite useful to have the system retain certain “well known” actors, for example when it is expected that other nodes in the distributed system will need to interact with them, even if end-user code no longer holds strong references to them. An example of such “retain while actor system is active” distributed actors would be any kind of actor which implements discovery or health check mechanisms between clustered nodes, sometimes called “system actors”, i.e. actors that serve the actor system directly.
-
-Generally actor systems should retain actors  in order to allow them be deinitialized when no longer in use.
-
-Sometimes though, it can be quite useful to have the system retain certain “well known” actors, for example when it is expected that other nodes in the distributed system will need to interact with them, even if end-user code no longer holds strong references to them. An example of such “retain while actor system is active” distributed actors would be any kind of actor which implements discovery or health check mechanisms between clustered nodes, sometimes called “system actors”, i.e. actors that serve the actor system directly.
 
 Next, we will discuss the just mentioned `resolve` method, which is closely tied to readying actors.
 
@@ -129,8 +117,6 @@ Next, we will discuss the just mentioned `resolve` method, which is closely tied
 An important aspect of any distributed actor system is being able to turn a [`DistributedActor`](distributedactor.md) type and [`ActorID`](distributedactorsystem/actorid.md) into a reference to an actor (instance), regardless where the actor is located. The ID should have enough information stored to be able to make the decision of  the actor is located, without having to contact remote nodes. Specifically, the implementation of [`resolve(id:as:)`](distributedactorsystem/resolve(id:as:).md) is  `async` and should  perform long running or blocking operations in order to return.
 
 > **Note**: Currently only concrete distributed actors types can be resolved.
-
-Currently only concrete distributed actors types can be resolved.
 
 The actor system’s [`resolve(id:as:)`](distributedactorsystem/resolve(id:as:).md) method is called by the compiler whenever end-users call the [`DistributedActor`](distributedactor.md)‘s [`resolve(id:using:)`](distributedactor/resolve(id:using:).md) method. The return types of those methods differ, as the actor system’s return type is `Act?` (and it may throw if unable to resolve the `ActorID`).
 
@@ -207,4 +193,4 @@ For an even more in-depth explanation about the inner workings of a distributed 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/distributed/distributedactorsystem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Distributed/distributedactorsystem)*

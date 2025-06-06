@@ -54,8 +54,6 @@ print(streetsSlice[0])
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `bounds`: A range of the collection’s indices. The bounds of   the range must be valid indices of the collection.

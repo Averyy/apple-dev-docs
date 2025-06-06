@@ -1,6 +1,6 @@
 # Configuring alternative marketplaces and alternative marketplace apps
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Establish a connection between a marketplace and a marketplace app and configure marketplace settings.
 
@@ -23,8 +23,6 @@ Next, you create a signed JSON web token (JWT) for the app devleoper to upload t
 While uploading the JWT, the app developer selects the apps they want to associate with your marketplace. At this point, the app developer can also enable notifications which are delivered by webhooks. For more information about notifications and webhooks, see [`Notifications`](notifications.md).
 
 > **Note**:  Apps can be distributed on App Store, an alternative marketplace or both. To learn more, see [`AppStoreVersionUpdateRequest.Data.Attributes`](appstoreversionupdaterequest/data-data.dictionary/attributes-data.dictionary.md), specifically `reviewType` and [`Modify an App Store Version`](patch-v1-appstoreversions-_id_.md).
-
- Apps can be distributed on App Store, an alternative marketplace or both. To learn more, see [`AppStoreVersionUpdateRequest.Data.Attributes`](appstoreversionupdaterequest/data-data.dictionary/attributes-data.dictionary.md), specifically `reviewType` and [`Modify an App Store Version`](patch-v1-appstoreversions-_id_.md).
 
 ##### Set Up the Marketplace
 
@@ -50,4 +48,4 @@ Next, you need to obtain the alternative distribution package ID; follow these s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/configuring-alternative-marketplaces-and-alternative-marketplace-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/configuring-alternative-marketplaces-and-alternative-marketplace-apps)*

@@ -1,6 +1,6 @@
 # Synchronizing a local store to the cloud
 
-**Framework**: Core Data
+**Framework**: Coredata
 
 Share data between a user’s devices and other iCloud users.
 
@@ -13,8 +13,6 @@ Share data between a user’s devices and other iCloud users.
 #### Overview
 
 > **Note**: This sample code project is associated with the WWDC22 session [`10119: Optimize your use of Core Data and CloudKit `](https://developer.apple.comhttps://developer.apple.com/wwdc22/10119/).
-
-This sample code project is associated with the WWDC22 session [`10119: Optimize your use of Core Data and CloudKit `](https://developer.apple.comhttps://developer.apple.com/wwdc22/10119/).
 
 ##### Configure the Sample Code Project
 
@@ -57,4 +55,4 @@ To facilitate testing, the app supports the following configuration options the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/synchronizing-a-local-store-to-the-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/synchronizing-a-local-store-to-the-cloud)*

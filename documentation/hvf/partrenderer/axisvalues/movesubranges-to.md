@@ -1,6 +1,6 @@
 # moveSubranges(_:to:)
 
-**Framework**: hvf  
+**Framework**: Hvf  
 **Kind**: method
 
 Moves the elements in the given subranges to just before the element at the specified index.
@@ -38,8 +38,6 @@ let rangeOfUppercase = letters.moveSubranges(uppercaseRanges, to: 10)
 ```
 
 > **Note**: O( log ) where  is the length of the collection.
-
-O( log ) where  is the length of the collection.
 
 ## Parameters
 

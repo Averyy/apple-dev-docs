@@ -1,6 +1,6 @@
 # options
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: property
 
 An array of subscription options for the subscription store view to merchandise.
@@ -34,8 +34,6 @@ SubscriptionStoreView(groupID: "SAMPLE", visibleRelationships: .upgrade)
 If you configure a subscription store view to show the current auto-renewal preference, the [`options`](subscriptionstorecontrolstyleconfiguration/options.md) array contains the [`autoRenewPreference`](subscriptionstorecontrolstyleconfiguration/autorenewpreference.md) subscription product. There’s no need to specifically display the [`autoRenewPreference`](subscriptionstorecontrolstyleconfiguration/autorenewpreference.md) product in that case.
 
 > **Note**:  A subscription store control style needs only one of the properties, [`options`](subscriptionstorecontrolstyleconfiguration/options.md) or [`sections`](subscriptionstorecontrolstyleconfiguration/sections.md). Use [`options`](subscriptionstorecontrolstyleconfiguration/options.md) if your style doesn’t support sections.
-
- A subscription store control style needs only one of the properties, [`options`](subscriptionstorecontrolstyleconfiguration/options.md) or [`sections`](subscriptionstorecontrolstyleconfiguration/sections.md). Use [`options`](subscriptionstorecontrolstyleconfiguration/options.md) if your style doesn’t support sections.
 
 If you declare a subscription store view using [`SubscriptionOptionSection`](subscriptionoptionsection.md) instances, this property flattens the section structure and ignores any header or footer views.
 

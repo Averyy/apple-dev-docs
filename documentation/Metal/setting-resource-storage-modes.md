@@ -13,8 +13,6 @@ Storage modes are only set when creating an instance, and the system default all
 
 > ❗ **Important**:  Use the system default if your data is available to both the CPU and GPU. When you manually select shared or managed mode, your app may not run on some hardware.
 
- Use the system default if your data is available to both the CPU and GPU. When you manually select shared or managed mode, your app may not run on some hardware.
-
 You perform the same synchronization tasks to ensure GPU and CPU memory coherency in both default modes. To check for GPU architecture and capabilities, use the [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md) method instead of the [`storageMode`](mtlresource/storagemode.md) property. See [`Detecting GPU Features and Metal Software Versions`](detecting-gpu-features-and-metal-software-versions.md) for more information.
 
 Use [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md), only available on Apple silicon, when you manage your own storage, or want to run a GPU task that requires temporary resources. For tasks that share memory on the GPU, use [`MTLStorageMode.private`](mtlstoragemode/private.md) storage. This article includes examples of how to set the storage mode for a buffer or texture.
@@ -26,8 +24,6 @@ For more guidance on which mode to choose, see [`Choosing a Resource Storage Mod
 Create a new [`MTLBuffer`](mtlbuffer.md) with the [`makeBuffer(length:options:)`](mtldevice/makebuffer(length:options:).md) method and set its storage mode in the method’s `options` parameter.
 
 > **Note**:  The storage mode options in [`MTLResourceOptions`](mtlresourceoptions.md) are equivalent to the storage mode values in [`MTLStorageMode`](mtlstoragemode.md). When you create a new buffer, you can combine multiple resource options but you can set only one storage mode.
-
- The storage mode options in [`MTLResourceOptions`](mtlresourceoptions.md) are equivalent to the storage mode values in [`MTLStorageMode`](mtlstoragemode.md). When you create a new buffer, you can combine multiple resource options but you can set only one storage mode.
 
 ##### Set a Storage Mode for a Texture
 
@@ -51,4 +47,4 @@ Create a new [`MTLTextureDescriptor`](mtltexturedescriptor.md) and set its stora
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/setting-resource-storage-modes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/setting-resource-storage-modes)*

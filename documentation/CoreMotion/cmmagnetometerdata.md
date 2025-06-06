@@ -1,6 +1,6 @@
 # CMMagnetometerData
 
-**Framework**: Core Motion  
+**Framework**: Coremotion  
 **Kind**: class
 
 Measurements of the Earth’s magnetic field relative to the device.
@@ -23,8 +23,6 @@ class CMMagnetometerData
 Your application can obtain samples of magnetometer measurements, as represented by instances of this class, from the block handler of the [`startMagnetometerUpdates(to:withHandler:)`](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md) method or from the [`magnetometerData`](cmmotionmanager/magnetometerdata.md) property of the `CMMotionManager` class.
 
 > **Note**:  The [`magnetometerData`](cmmotionmanager/magnetometerdata.md) property of `CMMotionManager` provides a non-`nil` value only if you have called the `startMagnetometerUpdates()` method or the [`startMagnetometerUpdates(to:withHandler:)`](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md) method to start magnetometer updates.
-
- The [`magnetometerData`](cmmotionmanager/magnetometerdata.md) property of `CMMotionManager` provides a non-`nil` value only if you have called the `startMagnetometerUpdates()` method or the [`startMagnetometerUpdates(to:withHandler:)`](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md) method to start magnetometer updates.
 
 ## Topics
 
@@ -52,4 +50,4 @@ Your application can obtain samples of magnetometer measurements, as represented
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmmagnetometerdata)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreMotion/cmmagnetometerdata)*

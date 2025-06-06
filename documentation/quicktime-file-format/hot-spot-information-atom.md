@@ -1,6 +1,6 @@
 # Hot spot information atom ('hsin')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that contains general information about a hot spot.
@@ -38,8 +38,6 @@ typedef struct VRHotSpotInfoAtom {
 ```
 
 > **Note**: In QuickTime VR movie files, all angular values are stored as 32-bit floating-point values that specify degrees. In addition, all floating-point values conform to the IEEE Standard 754 for binary floating-point arithmetic, in big-endian format.
-
-In QuickTime VR movie files, all angular values are stored as 32-bit floating-point values that specify degrees. In addition, all floating-point values conform to the IEEE Standard 754 for binary floating-point arithmetic, in big-endian format.
 
 ## Topics
 

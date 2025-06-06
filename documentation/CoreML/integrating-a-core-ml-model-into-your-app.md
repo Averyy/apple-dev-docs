@@ -1,6 +1,6 @@
 # Integrating a Core ML Model into Your App
 
-**Framework**: Core ML
+**Framework**: Coreml
 
 Add a simple model to an app, pass input data to the model, and process the model’s predictions.
 
@@ -64,8 +64,6 @@ priceLabel.text = priceFormatter.string(for: price)
 
 > **Note**: The generated `prediction(solarPanels:greenhouses:size:)` method can throw an error. The most common type of error you’ll encounter when working with Core ML occurs when the details of the input data don’t match the details the model is expecting—for example, an image in the wrong format.
 
-The generated `prediction(solarPanels:greenhouses:size:)` method can throw an error. The most common type of error you’ll encounter when working with Core ML occurs when the details of the input data don’t match the details the model is expecting—for example, an image in the wrong format.
-
 ##### Build and Run a Core Ml App
 
 Xcode compiles the Core ML model into a resource that’s been optimized to run on a device. This optimized representation of the model is included in your app bundle and is what’s used to make predictions while the app is running on a device.
@@ -86,4 +84,4 @@ Xcode compiles the Core ML model into a resource that’s been optimized to run 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coreml/integrating-a-core-ml-model-into-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app)*

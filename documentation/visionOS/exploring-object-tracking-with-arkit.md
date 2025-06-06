@@ -16,13 +16,9 @@ This sample includes a reference object that ARKit uses to recognize a Magic Key
 
 > **Note**: This sample code project is associated with WWDC24 [`Session 10101 — Explore object tracking for visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10101/).
 
-This sample code project is associated with WWDC24 [`Session 10101 — Explore object tracking for visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10101/).
-
 #### Configure the Sample Code Project
 
 > **Note**: This app requires Xcode 16 and visionOS 2 or later, and an Apple Vision Pro. Object tracking isn’t supported in the visionOS simulator.
-
-This app requires Xcode 16 and visionOS 2 or later, and an Apple Vision Pro. Object tracking isn’t supported in the visionOS simulator.
 
 1. In the project’s settings, select Signing and Capabilities.
 2. Select your team name from the drop-down menu.

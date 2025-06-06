@@ -1,6 +1,6 @@
 # PresentationSizingContext
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 Contextual information about a presentation.
@@ -26,8 +26,6 @@ The properties of a `PresentationSizingContext` can influence what size is propo
 
 > **Note**: Currently has no public members.
 
-Currently has no public members.
-
 ## See Also
 
 - [func presentationCompactAdaptation(horizontal: PresentationAdaptation, vertical: PresentationAdaptation) -> some View](view/presentationcompactadaptation(horizontal:vertical:).md)
@@ -46,4 +44,4 @@ Currently has no public members.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/presentationsizingcontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/presentationsizingcontext)*

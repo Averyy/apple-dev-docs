@@ -166,8 +166,6 @@ In this example, the program counter register is `0x0000000000000040`, which mat
 
 > **Note**: The `x86_64` CPU architecture stores return addresses on the stack, instead of in a link register, so you can’t trace the origin of the bad function pointer on `x86_64` CPUs.
 
-The `x86_64` CPU architecture stores return addresses on the stack, instead of in a link register, so you can’t trace the origin of the bad function pointer on `x86_64` CPUs.
-
 The link register contains `0x00000001021063c4`, which is an instruction address in one of the binaries loaded in the app’s process. The Binary Images section of the crash report shows that this address is inside the `MyCoolApp` binary, because that address is in the range `0x102100000-0x102107fff` listed for that binary. With this information, you can use the `atos` command line tool with the `dSYM` file for the binary, and identify the corresponding code located at `0x00000001021063c4`:
 
 ```other
@@ -187,4 +185,4 @@ The link register contains `0x00000001021063c4`, which is an instruction address
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/investigating-memory-access-crashes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/investigating-memory-access-crashes)*

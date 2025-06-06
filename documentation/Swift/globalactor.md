@@ -36,8 +36,6 @@ You can find out more about custom executors, by referring to the [`SerialExecut
 
 > **Note**: [`SerialExecutor`](serialexecutor.md)
 
-[`SerialExecutor`](serialexecutor.md)
-
 ## Topics
 
 ### Associated Types
@@ -80,4 +78,4 @@ You can find out more about custom executors, by referring to the [`SerialExecut
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/globalactor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/globalactor)*

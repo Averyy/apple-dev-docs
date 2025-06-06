@@ -1,6 +1,6 @@
 # Delivering an Enhanced Privacy Experience in Your Photos App
 
-**Framework**: PhotoKit
+**Framework**: Photokit
 
 Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
 
@@ -10,8 +10,6 @@ A user’s photos and videos are some of the most personal and private data they
 
 > ❗ **Important**:  The limited Photos library affects all apps that use PhotoKit in iOS 14, including those already published to the App Store. Evaluate your app’s behavior to ensure it performs as expected when running in limited library mode.
 
- The limited Photos library affects all apps that use PhotoKit in iOS 14, including those already published to the App Store. Evaluate your app’s behavior to ensure it performs as expected when running in limited library mode.
-
 ##### Determine Your Apps Access Needs
 
 With the many privacy enhancements added in iOS 14, it’s a good time to evaluate how and why your app uses PhotoKit to access the user’s library. Many apps may only need read-only access to retrieve images to share on the internet or embed in a document or email. For these purposes, the simplest way to provide an enhanced user experience is to use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) to access the Photos library.
@@ -19,8 +17,6 @@ With the many privacy enhancements added in iOS 14, it’s a good time to evalua
 [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) is a new picker that replaces [`UIImagePickerController`](https://developer.apple.com/documentation/UIKit/UIImagePickerController). Its user interface matches that of the Photos app, supports search and multiple selection of photos and videos, and provides fluid zooming of content. Because the system manages its life cycle in a separate process, it’s private by default. The user doesn’t need to explicitly authorize your app to select photos, which results in a simpler and more streamlined user experience.
 
 > **Note**:  Session 10652: [`Meet the New Photos Picker`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10652/)
-
- Session 10652: [`Meet the New Photos Picker`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10652/)
 
 ##### Describe Your App%ca%bcs Photo Library Use
 
@@ -68,8 +64,6 @@ PHPhotoLibrary.requestAuthorization(for: .readWrite) { status in
 After the user sets the app’s authorization status, the system remembers their choice and won’t prompt them again. However, the user can change this choice at any time using the Settings app. Prepare your app to respond appropriately when a user changes your appʼs access.
 
 > ❗ **Important**:  The [`authorizationStatus()`](https://developer.apple.com/documentation/photos/phphotolibrary/authorizationstatus()) and [`requestAuthorization(_:)`](https://developer.apple.com/documentation/photos/phphotolibrary/requestauthorization(_:)) methods aren’t compatible with the limited library and return [`PHAuthorizationStatus.authorized`](https://developer.apple.com/documentation/photos/phauthorizationstatus/authorized) when the user authorizes your app for limited access only. To determine whether the user has authorized your app for limited access, instead use [`authorizationStatus(for:)`](https://developer.apple.com/documentation/photos/phphotolibrary/authorizationstatus(for:)) and [`requestAuthorization(for:handler:)`](https://developer.apple.com/documentation/photos/phphotolibrary/requestauthorization(for:handler:)).
-
- The [`authorizationStatus()`](https://developer.apple.com/documentation/photos/phphotolibrary/authorizationstatus()) and [`requestAuthorization(_:)`](https://developer.apple.com/documentation/photos/phphotolibrary/requestauthorization(_:)) methods aren’t compatible with the limited library and return [`PHAuthorizationStatus.authorized`](https://developer.apple.com/documentation/photos/phauthorizationstatus/authorized) when the user authorizes your app for limited access only. To determine whether the user has authorized your app for limited access, instead use [`authorizationStatus(for:)`](https://developer.apple.com/documentation/photos/phphotolibrary/authorizationstatus(for:)) and [`requestAuthorization(for:handler:)`](https://developer.apple.com/documentation/photos/phphotolibrary/requestauthorization(for:handler:)).
 
 ##### Work with the Limited Library
 
@@ -128,4 +122,4 @@ To monitor changes to the user’s limited-library selection, use the standard c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/photokit/delivering-an-enhanced-privacy-experience-in-your-photos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app)*

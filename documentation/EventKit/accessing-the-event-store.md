@@ -1,6 +1,6 @@
 # Accessing the event store
 
-**Framework**: EventKit
+**Framework**: Eventkit
 
 Request access to a person’s calendar data through the event store.
 
@@ -11,8 +11,6 @@ Your app must obtain permission from the person using the app before it can acce
 Your app should only request the access it needs to complete its tasks. You can request write-only access to events, which lets your app create new events but doesn’t let it read any events or other calendar information, including events your app created. You can also request full access to either events or reminders, which lets your app create, view, edit, and delete data.
 
 > **Note**:  Your app can’t request read-only access to either events or reminders. To read events or reminders from the event store, your app needs full access.
-
- Your app can’t request read-only access to either events or reminders. To read events or reminders from the event store, your app needs full access.
 
 ##### Connect to the Event Store
 
@@ -37,8 +35,6 @@ An iOS app must include in its `Info.plist` file the usage description keys for 
 
 > ❗ **Important**:  On iOS 17 or later, if your app doesn’t include usage description keys, or only includes the older [`NSCalendarsUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCalendarsUsageDescription) key for describing events access, iOS automatically denies any access request.
 
- On iOS 17 or later, if your app doesn’t include usage description keys, or only includes the older [`NSCalendarsUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCalendarsUsageDescription) key for describing events access, iOS automatically denies any access request.
-
 To access a person’s calendar events or reminders through EventKit or EventKit UI, your app needs to include descriptions for the following if your app links to iOS 10 or later, and runs on iOS 10 through iOS 16:
 
 - [`NSCalendarsUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCalendarsUsageDescription), which is a fallback if your app runs on iOS 17 or later and doesn’t include descriptions for [`NSCalendarsWriteOnlyAccessUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCalendarsWriteOnlyAccessUsageDescription) or [`NSCalendarsFullAccessUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCalendarsFullAccessUsageDescription).
@@ -46,8 +42,6 @@ To access a person’s calendar events or reminders through EventKit or EventKit
 - [`NSContactsUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSContactsUsageDescription), as EventKit UI may need to access Contacts data to choose the correct display name or avatar for a contact in a calendar.
 
 > ⚠️ **Warning**:  If your app that’s linked on iOS 10 through iOS 16 doesn’t include these keys, your app crashes.
-
- If your app that’s linked on iOS 10 through iOS 16 doesn’t include these keys, your app crashes.
 
 Because these keys provide access to the event store, they protect the person’s privacy by only allowing access to this information if they explicitly grant permission in the app.
 
@@ -63,4 +57,4 @@ To access Calendar data, all sandboxed macOS apps must include the `com.apple.se
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/accessing-the-event-store)*
+*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/accessing-the-event-store)*

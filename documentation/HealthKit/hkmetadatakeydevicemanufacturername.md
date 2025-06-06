@@ -1,6 +1,6 @@
 # HKMetadataKeyDeviceManufacturerName
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: var
 
 The name of the manufacturer of the device that took this reading.
@@ -25,8 +25,6 @@ This key takes a string value.
 
 > **Note**:  In iOS 9.0 and later, the use of this key is discouraged. Use the [`HKDevice`](hkdevice.md) class instead.
 
- In iOS 9.0 and later, the use of this key is discouraged. Use the [`HKDevice`](hkdevice.md) class instead.
-
 ## See Also
 
 - [let HKMetadataKeyDeviceSerialNumber: String](hkmetadatakeydeviceserialnumber.md)
@@ -49,4 +47,4 @@ This key takes a string value.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkmetadatakeydevicemanufacturername)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkmetadatakeydevicemanufacturername)*

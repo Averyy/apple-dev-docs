@@ -1,6 +1,6 @@
 # helpRequested(_:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Displays context-sensitive help for the receiver if help has been registered.
@@ -20,8 +20,6 @@ func helpRequested(_ eventPtr: NSEvent)
 [`NSWindow`](nswindow.md) invokes this method automatically when the user clicks for help and help has been registered using [`setContextHelp(_:for:)`](nshelpmanager/setcontexthelp(_:for:).md). Otherwise, `NSWindow` passes the message to the next responder. Subclasses are not required to override this method.
 
 > **Note**:  Current hardware does not invoke this method and application code should not call it directly. To provide context-sensitive help, use help tags (tooltips). For more information, see [`macOS Human Interface Guidelines - Help Tags (Tooltips)`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/user-interaction/help/#help-tags).
-
- Current hardware does not invoke this method and application code should not call it directly. To provide context-sensitive help, use help tags (tooltips). For more information, see [`macOS Human Interface Guidelines - Help Tags (Tooltips)`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/user-interaction/help/#help-tags).
 
 ## Parameters
 

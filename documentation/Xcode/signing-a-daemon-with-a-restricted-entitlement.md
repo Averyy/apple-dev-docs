@@ -10,15 +10,11 @@ Some APIs are usable from a daemon but require that the daemon claim a restricte
 
 > ❗ **Important**: If the API youʼre using supports system extensions, avoid this issue by switching from a daemon to a system extension. System extensions readily support provisioning profiles, and Xcode automatically creates and embeds the profile in that case.
 
-If the API youʼre using supports system extensions, avoid this issue by switching from a daemon to a system extension. System extensions readily support provisioning profiles, and Xcode automatically creates and embeds the profile in that case.
-
 ##### Create a Minimal Daemon Project
 
 The basic idea is to create an app target, rather than a command-line tool target, and then remove all of the app-specific content and replace it with your daemon code. To start, create a new project with an app target by choosing File > New > Project and selecting the macOS > App template. Set the Interface popup to Storyboard, the Life Cycle popup (if present) to AppKit App Delegate, and the Language popup to Swift.
 
 > **Note**: This example uses Swift but this approach works just fine if you choose Objective-C.
-
-This example uses Swift but this approach works just fine if you choose Objective-C.
 
 In the General tab of the target editor, ensure that the Bundle Identifier field has the right value.  This is important because your provisioning profile is tied to your App ID, and the bundle identifier is a key part of that App ID.
 
@@ -33,8 +29,6 @@ Switch to the Signing & Capabilities tab and configure it as follows:
 - Add the Custom Network Protocol capability, which enables the `com.apple.developer.networking.custom-protocol` entitlement that must be authorized by a provisioning profile. Adding it to your target triggers Xcodeʼs automatic code-signing machinery to register your App ID, create a provisioning profile for that App ID, and embed that provisioning profile in the built product.
 
 > ❗ **Important**: If your ultimate goal is to use the [`com.apple.developer.endpoint-security.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.endpoint-security.client) entitlement, first add the Custom Network Protocol capability to force Xcode to register your App ID and generate an initial provisioning profile. Then follow the instructions on [`Provisioning with managed capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities) to add the Endpoint Security additional capability to your App ID.  Finally, remove the Custom Network Protocol capability, assuming your daemon doesn’t need it for other reasons.
-
-If your ultimate goal is to use the [`com.apple.developer.endpoint-security.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.endpoint-security.client) entitlement, first add the Custom Network Protocol capability to force Xcode to register your App ID and generate an initial provisioning profile. Then follow the instructions on [`Provisioning with managed capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities) to add the Endpoint Security additional capability to your App ID.  Finally, remove the Custom Network Protocol capability, assuming your daemon doesn’t need it for other reasons.
 
 Switch to the Build Settings tab and remove the Enable App Sandbox (`ENABLE_APP_SANDBOX`) build setting, if present.
 
@@ -168,4 +162,4 @@ Or, if youʼre using an alternative build system, like a makefile, update it to 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/signing-a-daemon-with-a-restricted-entitlement)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/signing-a-daemon-with-a-restricted-entitlement)*

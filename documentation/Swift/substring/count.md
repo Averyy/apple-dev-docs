@@ -26,8 +26,6 @@ To check whether a collection is empty, use its `isEmpty` property instead of co
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
 
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
-
 
 ---
 

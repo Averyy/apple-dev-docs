@@ -25,8 +25,6 @@ Use this descriptor type to configure the settings of each input/output command 
 
 > **Note**:  Changing a descriptor’s properties doesn’t affect command queues you’ve already created with the descriptor.
 
- Changing a descriptor’s properties doesn’t affect command queues you’ve already created with the descriptor.
-
 Create each input/output queue to meet your apps needs by setting the descriptor’s properties.
 
 - Select a queue’s relative level of importance with the [`priority`](mtliocommandqueuedescriptor/priority.md) property.
@@ -79,4 +77,4 @@ Create each input/output queue to meet your apps needs by setting the descriptor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtliocommandqueuedescriptor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/mtliocommandqueuedescriptor)*

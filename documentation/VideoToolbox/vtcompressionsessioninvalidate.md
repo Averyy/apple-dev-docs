@@ -25,8 +25,6 @@ When you finish using a compression session you created, call `VTCompressionSess
 
 > **Note**:  A compression session is automatically invalidated when its retain count reaches zero, but because sessions may be retained by multiple parties, it’s hard to predict when this will happen.  Calling `VTCompressionSessionInvalidate` ensures a deterministic, orderly teardown.
 
- A compression session is automatically invalidated when its retain count reaches zero, but because sessions may be retained by multiple parties, it’s hard to predict when this will happen.  Calling `VTCompressionSessionInvalidate` ensures a deterministic, orderly teardown.
-
 ## Parameters
 
 - `session`: The compression session to invalidate.

@@ -1,6 +1,6 @@
 # Comment
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: struct
 
 A type that represents a comment related to a test.
@@ -29,8 +29,6 @@ Use this type to provide context or background information about a test’s purp
 To add a comment to a test or suite, add a code comment before its `@Test` or `@Suite` attribute. See [`Adding comments to tests`](addingcomments.md) for more details.
 
 > **Note**: To reference bugs related to a test, use [`bug(_:_:)`](trait/bug(_:_:).md), [`bug(_:id:_:)`](trait/bug(_:id:_:)-10yf5.md), or [`bug(_:id:_:)`](trait/bug(_:id:_:)-3vtpl.md).
-
-To reference bugs related to a test, use [`bug(_:_:)`](trait/bug(_:_:).md), [`bug(_:id:_:)`](trait/bug(_:id:_:)-10yf5.md), or [`bug(_:id:_:)`](trait/bug(_:id:_:)-3vtpl.md).
 
 ## Topics
 
@@ -91,4 +89,4 @@ To reference bugs related to a test, use [`bug(_:_:)`](trait/bug(_:_:).md), [`bu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/testing/comment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Testing/comment)*

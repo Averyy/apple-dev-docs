@@ -22,8 +22,6 @@ For more information about continuous integration and delivery, see [`About cont
 
 > **Note**: For additional information about Xcode Cloud that includes videos from WWDC21 and WWDC22, see [`The Xcode Cloud toolkit`](https://developer.apple.comhttps://developer.apple.com/news/?id=076p6dmy).
 
-For additional information about Xcode Cloud that includes videos from WWDC21 and WWDC22, see [`The Xcode Cloud toolkit`](https://developer.apple.comhttps://developer.apple.com/news/?id=076p6dmy).
-
 ## Topics
 
 ### Essentials
@@ -96,4 +94,4 @@ For additional information about Xcode Cloud that includes videos from WWDC21 an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/xcode-cloud)*

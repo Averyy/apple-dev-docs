@@ -21,8 +21,6 @@ If a handler isn’t provided, the first successful evaluation of the predicate 
 
 > **Note**:  For more control over predicate-based expectations, use [`XCTNSPredicateExpectation`](xctnspredicateexpectation.md) instead of this convenience method.
 
- For more control over predicate-based expectations, use [`XCTNSPredicateExpectation`](xctnspredicateexpectation.md) instead of this convenience method.
-
 ## Parameters
 
 - `predicate`: The predicate to evaluate.

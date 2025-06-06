@@ -32,8 +32,6 @@ x -= 50
 
 > **Note**: Overflow checking is not performed in `-Ounchecked` builds.
 
-Overflow checking is not performed in `-Ounchecked` builds.
-
 ## Parameters
 
 - `lhs`: A numeric value.

@@ -1,6 +1,6 @@
 # Uniform Type Identifiers
 
-**Framework**: Uniform Type Identifiers  
+**Framework**: Uniformtypeidentifiers  
 **Kind**: module
 
 Provide uniform type identifiers that describe file types for storage or transfer.
@@ -24,8 +24,6 @@ Explicitly specify relationships between types by marking them as subtypes of ot
 - [`UTTypeData`](uttypedata.md) (`public.data`), which implies the type is representable as a byte stream
 
 > **Note**:  [`UTTypeData`](uttypedata.md) also conforms to [`UTTypeItem`](uttypeitem.md) (`public.item`), which is a generic base type for most items in a file system, such as files or directories.
-
- [`UTTypeData`](uttypedata.md) also conforms to [`UTTypeItem`](uttypeitem.md) (`public.item`), which is a generic base type for most items in a file system, such as files or directories.
 
 ## Topics
 

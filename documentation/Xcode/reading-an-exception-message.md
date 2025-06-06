@@ -54,15 +54,11 @@ If you need to modify a collection that you share with other code, the source of
 
 > **Note**: A common cause of this exception is incorrectly interchanging `Foundation` and `CoreFoundation` collection classes, for example, casting a `CFArrayRef` to Objective-C using `(__bridge NSMutableArray *)`. When you use toll-free bridging to interchange `Foundation` and `CoreFoundation` collection classes, ensure that the bridged types of Objective-C variables match the types of their `CoreFoundation` counterparts, including their mutability.
 
-A common cause of this exception is incorrectly interchanging `Foundation` and `CoreFoundation` collection classes, for example, casting a `CFArrayRef` to Objective-C using `(__bridge NSMutableArray *)`. When you use toll-free bridging to interchange `Foundation` and `CoreFoundation` collection classes, ensure that the bridged types of Objective-C variables match the types of their `CoreFoundation` counterparts, including their mutability.
-
 ##### Address a Crash Caused By Using an Index Range or Position Thats Out of Bounds
 
 APIs that take a parameter indicating the position of an object or other data in an ordered collection or a sequence raise an exception if that position is outside the containing collection. APIs that take a parameter indicating a range of values in a sequence raise an exception if either the start or end of the range is outside the containing collection.
 
 > **Note**:  The special value [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound) isn’t meant to be used as a position in a collection or sequence and will cause an out-of-range exception if you use it this way in your code.
-
- The special value [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound) isn’t meant to be used as a position in a collection or sequence and will cause an out-of-range exception if you use it this way in your code.
 
 If your app tries to access the content of a collection or sequence outside of its range, it crashes and an exception message like this example is included in the crash report:
 
@@ -110,8 +106,6 @@ Replace the object with one that conforms to `NSCoding`, or add `NSCoding` confo
 
 > **Note**:  While collection classes such as `NSArray` and `NSDictionary` are codable, each object in the collection must also conform to `NSCoding` for a collection to encode itself correctly.
 
- While collection classes such as `NSArray` and `NSDictionary` are codable, each object in the collection must also conform to `NSCoding` for a collection to encode itself correctly.
-
 ## See Also
 
 - [Addressing crashes from Swift runtime errors](addressing-crashes-from-swift-runtime-errors.md)
@@ -122,4 +116,4 @@ Replace the object with one that conforms to `NSCoding`, or add `NSCoding` confo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/reading-an-exception-message)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/reading-an-exception-message)*

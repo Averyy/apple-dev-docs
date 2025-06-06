@@ -1,6 +1,6 @@
 # makeDocument(withContentsOf:ofType:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Instantiates a document located by a URL, of a specified type, and returns it if successful.
@@ -24,10 +24,6 @@ The newly created [`NSDocument`](nsdocument.md) object, or `nil` if the document
 The URL is specified by `absoluteURL` and the document type by `typeName`. If not successful, the method returns `nil` after setting `outError` to point to an NSError that encapsulates the reason why the document could not be instantiated. The default implementation of this method calls [`documentClass(forType:)`](nsdocumentcontroller/documentclass(fortype:).md) to find out the class of document to instantiate, allocates a document object, and initializes it by sending it an [`init(contentsOf:ofType:)`](nsdocument/init(contentsof:oftype:).md) message.
 
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

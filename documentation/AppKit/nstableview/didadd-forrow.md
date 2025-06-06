@@ -1,6 +1,6 @@
 # didAdd(_:forRow:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Invoked when a row view is added to the table.
@@ -20,8 +20,6 @@ func didAdd(_ rowView: NSTableRowView, forRow row: Int)
 The subclass can implement this method to be alerted when `rowView` has been added to the table. At this point, the subclass can choose to add in extra views, or modify any properties of `rowView`. Subclasses must be sure to call super.
 
 > **Note**:  This method is only applicable to [`NSView`](nsview.md)-based table views.
-
- This method is only applicable to [`NSView`](nsview.md)-based table views.
 
 ## Parameters
 

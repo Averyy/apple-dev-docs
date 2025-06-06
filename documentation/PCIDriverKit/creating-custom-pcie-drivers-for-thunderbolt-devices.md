@@ -1,6 +1,6 @@
 # Creating Custom PCIe Drivers for Thunderbolt Devices
 
-**Framework**: PCIDriverKit
+**Framework**: Pcidriverkit
 
 Create a DriverKit extension to support your Thunderbolt device’s custom features.
 
@@ -11,8 +11,6 @@ All hardware devices require special software — called drivers — to communi
 If your Thunderbolt device uses popular PCIe Ethernet controllers from Intel, Broadcom, or Aquantia, or if your device communicates using industry-standard protocols such as XHCI, AHCI, NVMe, or FireWire, you don’t need to create a custom driver. Apple supplies built-in drivers that already support these chip sets and interfaces. The only time you need to create a custom driver is when your hardware supports proprietary features. In macOS 11 and later, build any custom drivers as DriverKit extensions using the [`PCIDriverKit`](PCIDriverKit.md) framework.
 
 > **Note**:  If your Thunderbolt device requires capabilities that DriverKit doesn’t support, such as manipulating audio or communicating wirelessly over Bluetooth or Wi-Fi, create your driver as an IOKit kernel extension instead. For more information, see [`Implementing a PCIe Kext for a Thunderbolt Device`](https://developer.apple.com/documentation/kernel/hardware_families/pci/implementing_a_pcie_kext_for_a_thunderbolt_device).
-
- If your Thunderbolt device requires capabilities that DriverKit doesn’t support, such as manipulating audio or communicating wirelessly over Bluetooth or Wi-Fi, create your driver as an IOKit kernel extension instead. For more information, see [`Implementing a PCIe Kext for a Thunderbolt Device`](https://developer.apple.com/documentation/kernel/hardware_families/pci/implementing_a_pcie_kext_for_a_thunderbolt_device).
 
 For basic information on how to create a DriverKit extension, see [`Creating a Driver Using the DriverKit SDK`](https://developer.apple.com/documentation/DriverKit/creating-a-driver-using-the-driverkit-sdk).
 
@@ -75,8 +73,6 @@ OSSafeReleaseNULL(dict);
 
 > ❗ **Important**:  Always set the `Physical Interconnect Location` property early in your driver’s [`Start`](https://developer.apple.com/documentation/kernel/ioservice/3180710-start) method. Don’t set it after you access the device.
 
- Always set the `Physical Interconnect Location` property early in your driver’s [`Start`](https://developer.apple.com/documentation/kernel/ioservice/3180710-start) method. Don’t set it after you access the device.
-
 ##### Support Message Signaled Interrupts in Your Device
 
 Always use Message Signaled Interrupts (MSI) to generate hardware interrupts from your Thunderbolt devices. You can implement a DriverKit extension with legacy interrupts, but doing so adds latency to any device that shares the interrupt. If you need to support legacy interrupts, the better alternative is to implement your driver as a kernel extension.
@@ -92,8 +88,6 @@ Drivers communicate with a PCI device primarily through one of the following mem
 
 > ❗ **Important**:  Older PCI devices may also support the I/O memory space, which is similar to the MMIO space. Macs with Apple silicon don’t support the I/O space, and Apple discourages the use of the I/O space in your devices or drivers. Instead, use the MMIO space for custom communication between your driver and device.
 
- Older PCI devices may also support the I/O memory space, which is similar to the MMIO space. Macs with Apple silicon don’t support the I/O space, and Apple discourages the use of the I/O space in your devices or drivers. Instead, use the MMIO space for custom communication between your driver and device.
-
 For more information about the memory spaces to use in your drivers, see the PCI specification at [`https://pcisig.com`](https://developer.apple.comhttps://pcisig.com).
 
 ## See Also
@@ -104,4 +98,4 @@ For more information about the memory spaces to use in your drivers, see the PCI
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/pcidriverkit/creating-custom-pcie-drivers-for-thunderbolt-devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PCIDriverKit/creating-custom-pcie-drivers-for-thunderbolt-devices)*

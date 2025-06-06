@@ -29,8 +29,6 @@ The results array of a Core ML-based image analysis request contains a different
 
 > **Note**:  Vision forwards all [`confidence`](vnobservation/confidence.md) values from Core ML models as-is and doesn’t normalize them to `[0, 1]`.
 
- Vision forwards all [`confidence`](vnobservation/confidence.md) values from Core ML models as-is and doesn’t normalize them to `[0, 1]`.
-
 ## Topics
 
 ### Initializing with a Core ML Model
@@ -80,4 +78,4 @@ The results array of a Core ML-based image analysis request contains a different
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/vncoremlrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/vncoremlrequest)*

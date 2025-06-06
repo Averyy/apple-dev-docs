@@ -1,6 +1,6 @@
 # Timed metadata sample data format
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 A concatenation of one or more atoms that structure a timed metadata media sample.
 
@@ -11,8 +11,6 @@ A timed metadata media sample is structured as a concatenation of one or more at
 If no value for a particular key is present in the timed metadata media sample at a given time, the interpretation should be that there is no metadata of that type at the specified time. Timed metadata values for that key for other times (such as from a previous timed metadata media sample) should not be interpreted as applying to the given time.
 
 > **Note**: All metadata samples are marked as sync samples.
-
-All metadata samples are marked as sync samples.
 
 If no values for any key are present for a time range, one approach is to include a `“NULL”` or unreferenced metadata media sample (see Unreferenced or `NULL` timed metadata sample data in [`Constant-size timed metadata sample data`](constant-size_timed_metadata_sample_data.md)) for the time range. A zero-byte timed metadata media sample cannot be used because all sample sizes must be one or more bytes. Alternatively, “empty edit” track edit list entries could be used to indicate there is no metadata for a range of movie time.
 

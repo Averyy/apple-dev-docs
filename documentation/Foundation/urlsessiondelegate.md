@@ -33,8 +33,6 @@ In addition to the methods defined in this protocol, most delegates should also 
 
 > **Note**:  Your [`URLSession`](urlsession.md) object doesn’t need to have a delegate. If no delegate is assigned, a system-provided delegate is used, and you must provide a completion callback to obtain the data.
 
- Your [`URLSession`](urlsession.md) object doesn’t need to have a delegate. If no delegate is assigned, a system-provided delegate is used, and you must provide a completion callback to obtain the data.
-
 ## Topics
 
 ### Handling session life cycle changes
@@ -72,4 +70,4 @@ In addition to the methods defined in this protocol, most delegates should also 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessiondelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessiondelegate)*

@@ -1,6 +1,6 @@
 # encode(_:using:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Encodes each element of the column.
@@ -23,8 +23,6 @@ mutating func encode<T, Encoder>(_ type: T.Type, using encoder: Encoder) throws 
 #### Discussion
 
 > **Note**: `ColumnEncodingError` if an element fails to encode.
-
-`ColumnEncodingError` if an element fails to encode.
 
 ## Parameters
 

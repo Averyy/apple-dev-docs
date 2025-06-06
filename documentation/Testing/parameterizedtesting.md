@@ -1,6 +1,6 @@
 # Implementing parameterized tests
 
-**Framework**: Swift Testing
+**Framework**: Testing
 
 Specify different input parameters to generate multiple test cases from a test function.
 
@@ -76,8 +76,6 @@ func makeLargeOrder(count: Int) async throws {
 
 > **Note**: Very large ranges such as `0 ..< .max` may take an excessive amount of time to test, or may never complete due to resource constraints.
 
-Very large ranges such as `0 ..< .max` may take an excessive amount of time to test, or may never complete due to resource constraints.
-
 ##### Test with More Than One Collection
 
 It’s possible to test more than one collection. Consider the following test function:
@@ -137,4 +135,4 @@ If any argument of a test case doesn’t meet one of the above requirements, the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/testing/parameterizedtesting)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Testing/parameterizedtesting)*

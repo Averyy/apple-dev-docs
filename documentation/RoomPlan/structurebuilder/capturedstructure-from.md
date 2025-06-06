@@ -1,6 +1,6 @@
 # capturedStructure(from:)
 
-**Framework**: RoomPlan  
+**Framework**: Roomplan  
 **Kind**: method
 
 Combines the argument captured rooms into a single unit.
@@ -35,8 +35,6 @@ There are two ways to ensure the captured rooms share compatible world space. Yo
 - Loading a previously saved [`ARWorldMap`](https://developer.apple.com/documentation/ARKit/ARWorldMap) to create an `ARSession` in compatible world space with previous scans.
 
 > **Note**: After loading a previously saved `ARWorldMap`, wait for [`ARCamera.TrackingState`](https://developer.apple.com/documentation/ARKit/ARCamera/TrackingState-swift.enum) to change from `relocalizing` to `normal`. For this change to take effect, the system needs to observe through the camera some portion of the recently scanned area. To guide the user accordingly, you can present a UI that instructs the user to return to the previous room before beginning the next room-capture session.
-
-After loading a previously saved `ARWorldMap`, wait for [`ARCamera.TrackingState`](https://developer.apple.com/documentation/ARKit/ARCamera/TrackingState-swift.enum) to change from `relocalizing` to `normal`. For this change to take effect, the system needs to observe through the camera some portion of the recently scanned area. To guide the user accordingly, you can present a UI that instructs the user to return to the previous room before beginning the next room-capture session.
 
 For information about saving and loading world maps to restore an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession), see [`Saving and loading world data`](https://developer.apple.com/documentation/ARKit/saving-and-loading-world-data).
 

@@ -1,6 +1,6 @@
 # GLKViewController
 
-**Framework**: GLKit  
+**Framework**: Glkit  
 **Kind**: class
 
 A view controller that manages an OpenGL ES rendering loop.
@@ -24,8 +24,6 @@ A [`GLKViewController`](glkviewcontroller.md) object works in conjunction with a
 To use this class, allocate and initialize a new [`GLKViewController`](glkviewcontroller.md) subclass and set its [`view`](https://developer.apple.com/documentation/UIKit/UIViewController/view) property to point to a [`GLKView`](glkview.md) object. Then, configure the view controller’s [`preferredFramesPerSecond`](glkviewcontroller/preferredframespersecond.md) property to the desired frame rate your application requires. You can set a delegate or configure other properties on the view controller, such as whether the animation loop is automatically paused or resumed when the application moves into the background.
 
 > **Note**:  When you set the [`view`](https://developer.apple.com/documentation/UIKit/UIViewController/view) property to point to a [`GLKView`](glkview.md) object, if the view does not already have a delegate, then the view controller is automatically set as the view’s delegate.
-
- When you set the [`view`](https://developer.apple.com/documentation/UIKit/UIViewController/view) property to point to a [`GLKView`](glkview.md) object, if the view does not already have a delegate, then the view controller is automatically set as the view’s delegate.
 
 When active, rendering loop automatically updates the view’s contents each time a new frame must be displayed. Each frame is rendered by the view controller using these steps:
 
@@ -109,4 +107,4 @@ As an alternative to implementing a [`glkViewControllerUpdate(_:)`](glkviewcontr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/glkit/glkviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GLKit/glkviewcontroller)*

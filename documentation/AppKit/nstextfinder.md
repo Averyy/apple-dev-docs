@@ -1,6 +1,6 @@
 # NSTextFinder
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An optional search-and-replace find interface inside a view, usually a scroll view.
@@ -21,8 +21,6 @@ The class serves as a controller for the standard Cocoa find bar. The `NSTextFin
 All menu items related to finding (Find…, Find Next, Find Previous, Use Selection for Find, etc.) should have the same action, [`performTextFinderAction(_:)`](nsresponder/performtextfinderaction(_:).md), which gets sent down the responder chain in the standard method.
 
 > **Note**:  Before OS X v10.7, the default action for these menu items was [`performFindPanelAction(_:)`](nstextview/performfindpanelaction(_:).md). Applications that wish to use OS X v10.7 should adopt the new behavior, if appropriate.
-
- Before OS X v10.7, the default action for these menu items was [`performFindPanelAction(_:)`](nstextview/performfindpanelaction(_:).md). Applications that wish to use OS X v10.7 should adopt the new behavior, if appropriate.
 
 ##### Implementing a Find Bar
 
@@ -96,8 +94,6 @@ When a new NSTextFinder instance is created and instructed to display the find b
 
 > **Note**:  The container is free to modify the width of the find bar view, but it should never modify its height directly.
 
- The container is free to modify the width of the find bar view, but it should never modify its height directly.
-
 ##### Implementation By Appkit Classes
 
 Two AppKit classes already provide support for the `NSTextFinder` class, including: the [`NSScrollView`](nsscrollview.md) and [`NSTextView`](nstextview.md) classes.
@@ -107,8 +103,6 @@ Two AppKit classes already provide support for the `NSTextFinder` class, includi
 The [`NSScrollView`](nsscrollview.md) class conforms to [`NSTextFinderBarContainer`](nstextfinderbarcontainer.md) protocol in order to support the find bar for any document view searched by the find bar. The find bar can be positioned either above or below the document view by assigning one of the values of the [`NSScrollView.FindBarPosition`](nsscrollview/findbarposition-swift.enum.md) constants to the [`findBarPosition`](nsscrollview/findbarposition-swift.property.md) property.
 
 > **Note**:  The actual values for the constants `NSScrollViewFindBarPosition` constants will change from the current values.
-
- The actual values for the constants `NSScrollViewFindBarPosition` constants will change from the current values.
 
 ###### Text View Support for the Find Bar
 
@@ -197,4 +191,4 @@ In OS X v10.7, the [`NSTextView`](nstextview.md) class also provides incremental
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstextfinder)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstextfinder)*

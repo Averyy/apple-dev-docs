@@ -1,14 +1,12 @@
 # Apple Search Ads Campaign Management API 1
 
-**Framework**: Apple Search Ads
+**Framework**: Apple_Search_Ads
 
 Apple no longer supports this API.
 
 #### Overview
 
 > **Note**:  As of October 2019, Apple no longer supports the Apple Search Ads Campaign Management API 1. A 301 RESOURCE_MOVED_PERMANENTLY error occurs if you use an API 1 endpoint.
-
- As of October 2019, Apple no longer supports the Apple Search Ads Campaign Management API 1. A 301 RESOURCE_MOVED_PERMANENTLY error occurs if you use an API 1 endpoint.
 
 ## See Also
 

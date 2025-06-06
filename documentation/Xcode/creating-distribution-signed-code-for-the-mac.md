@@ -16,8 +16,6 @@ When you have distribution-signed code, package it for distribution. For more in
 
 > **Note**: If you use a third-party developer tool to build your app, consult its documentation for advice specific to that tool.
 
-If you use a third-party developer tool to build your app, consult its documentation for advice specific to that tool.
-
 #### Export an App From Xcode
 
 If your product is a standalone app that you build with Xcode, follow these steps to export a distribution-signed app:
@@ -37,8 +35,6 @@ To create a distribution-signed app using the Xcode app:
 6. Click Distribute.
 
 > **Note**: If the button says Distribute Content rather than Distribute App, your archive has multiple items in its `Products` directory.  To avoid copying a target’s product into the `Products` directory, set the Skip Install (`SKIP_INSTALL`) build setting for that target. Do this for every target that has output embedded in your app. For more information, see [`TN3110: Resolving generic Xcode archive issue`](https://developer.apple.com/documentation/Technotes/tn3110-resolving-generic-xcode-archive-issue).
-
-If the button says Distribute Content rather than Distribute App, your archive has multiple items in its `Products` directory.  To avoid copying a target’s product into the `Products` directory, set the Skip Install (`SKIP_INSTALL`) build setting for that target. Do this for every target that has output embedded in your app. For more information, see [`TN3110: Resolving generic Xcode archive issue`](https://developer.apple.com/documentation/Technotes/tn3110-resolving-generic-xcode-archive-issue).
 
 For more information about Xcode archives and the Archives organizer, see [`Distributing your app for beta testing and releases`](distributing-your-app-for-beta-testing-and-releases.md).
 
@@ -94,8 +90,6 @@ The `Products` directory contains two items: the daemon itself (`Daemon`) and th
 
 > ❗ **Important**: When you copy code, use `ditto` rather than `cp` because `ditto` preserves symlinks, which are critical to the structure of Mac frameworks. For more information on this structure, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle). Symlinks are also useful when dealing with nonstandard code structures.  For more details, see [`Embedding nonstandard code structures in a bundle`](embedding-nonstandard-code-structures-in-a-bundle.md).
 
-When you copy code, use `ditto` rather than `cp` because `ditto` preserves symlinks, which are critical to the structure of Mac frameworks. For more information on this structure, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle). Symlinks are also useful when dealing with nonstandard code structures.  For more details, see [`Embedding nonstandard code structures in a bundle`](embedding-nonstandard-code-structures-in-a-bundle.md).
-
 #### Identify the Code to Sign
 
 To sign your product, first identify each code item that you need to sign. For example, in the `DaemonWithApp` product, there are four code items: `ConfigApp.app`, `Core.framework`, `Share.appex`, and `Daemon`.
@@ -147,15 +141,11 @@ A code signature can include  — key-value pairs that grant an executable permi
 
 > ❗ **Important**: Don’t apply entitlements to library code.  It doesn’t do anything useful and can prevent your code from running.
 
-Don’t apply entitlements to library code.  It doesn’t do anything useful and can prevent your code from running.
-
 You apply entitlements to a main executable. If your main executable needs entitlements, create an `.entitlements` property list file, and add the key-value pairs for the entitlements that the executable claims.
 
 If you build your product with Xcode, you might be able to use the `.entitlements` file that Xcode manages in your source code.  If not, create the `.entitlements` file yourself.
 
 > ❗ **Important**: The entitlements file needs to be a property list in the standard XML format with LF line endings, no comments, and no byte-order mark (BOM).  If you’re not sure if your file conforms to these requirements, use `plutil` to convert it to the standard format.  For specific instructions, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues).
-
-The entitlements file needs to be a property list in the standard XML format with LF line endings, no comments, and no byte-order mark (BOM).  If you’re not sure if your file conforms to these requirements, use `plutil` to convert it to the standard format.  For specific instructions, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues).
 
 If you have a development-signed version of your program, you can print its entitlements using the `codesign` command-line tool, and use that information as the basis for your entitlements property list file as the following example shows:
 
@@ -223,8 +213,6 @@ Modifying the app in this way breaks the seal on its code signature.  You re-sig
 
 > ❗ **Important**: If you build your product with Xcode, you might find that Xcode embeds a provisioning profile within your bundle.  This is a development provisioning profile.  Replace it with a distribution provisioning profile.
 
-If you build your product with Xcode, you might find that Xcode embeds a provisioning profile within your bundle.  This is a development provisioning profile.  Replace it with a distribution provisioning profile.
-
 #### Confirm Your Code Signing Identity
 
 The code you copy from the Xcode archive is typically signed using a development code-signing identity.
@@ -270,8 +258,6 @@ The specific identity you use for `<CodeSigningIdentity>` depends on your distri
 
 > **Note**: If you have multiple identities with the same name, supply the identity’s SHA-1 hash to specify it unambiguously.  For information on how to get this hash, see “Confirm your code-signing identity” above.
 
-If you have multiple identities with the same name, supply the identity’s SHA-1 hash to specify it unambiguously.  For information on how to get this hash, see “Confirm your code-signing identity” above.
-
 If you’re re-signing code — that is, the code you’re signing is already signed — add the `-f` option.
 
 If you’re signing a main executable that needs entitlements, add the `--entitlements <entitlementsPath>` option, where `<entitlementsPath>` is the path to the entitlements file that you created for that executable.
@@ -283,8 +269,6 @@ If you’re signing a main executable for Developer ID distribution, add the `-o
 If you’re signing nonbundled code, add the `-i <BundleID>` option to set the code-signing identifier, where `<BundleID>` is the bundle ID the code would have if it had a bundle ID.  For example, for an app with a  bundle ID of `com.example.flying-animals` that has a nested command-line tool called `pig-jato`, you can use `com.example.flying-animals.pig-jato` as the bundle ID for the command-line tool.
 
 > **Note**: For bundled code, you don’t need to supply a code-signing identifier because `codesign` defaults to using the bundle ID.
-
-For bundled code, you don’t need to supply a code-signing identifier because `codesign` defaults to using the bundle ID.
 
 If you’re using a custom DR, add the `-r <ReqPath>` option, where `<ReqPath>` is the path to the requirements file containing the DR for this code item.
 
@@ -304,8 +288,6 @@ to-be-signed/Daemon: replacing existing signature
 ```
 
 > ❗ **Important**:  Don’t run `codesign` using `sudo` because `codesign` relies on information in your user account when it signs code. Using tools like `sudo` to change user accounts causes problems when `codesign` tries to access this information.
-
- Don’t run `codesign` using `sudo` because `codesign` relies on information in your user account when it signs code. Using tools like `sudo` to change user accounts causes problems when `codesign` tries to access this information.
 
 #### Avoid Deep Code Signing
 
@@ -330,4 +312,4 @@ Don’t pass the `--deep` option to `codesign` when you sign code.  This option 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-distribution-signed-code-for-the-mac)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-distribution-signed-code-for-the-mac)*

@@ -10,13 +10,9 @@ Animations bring your widgets and Live Activities to life and alert a person whe
 
 > **Note**: Animations in widgets and Live Activities have a maximum duration of two seconds.
 
-Animations in widgets and Live Activities have a maximum duration of two seconds.
-
 For example, text views animate content changes with blurred content transitions by default, and changes to images and SF Symbols animate with default content transitions. If you add or remove views from the interface based on timeline updates or other state changes, views fade in and out.
 
 > **Note**: [`Session 10028: Bring widgets to life`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10028)
-
-[`Session 10028: Bring widgets to life`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10028)
 
 To replace default animations and transitions:
 
@@ -25,8 +21,6 @@ To replace default animations and transitions:
 - Request animations for timer text with [`numericText(countsDown:)`](https://developer.apple.com/documentation/SwiftUI/ContentTransition/numericText(countsDown:)).
 
 > ❗ **Important**: On devices that include an Always-On display, the system doesn’t perform animations to preserve battery life in Always On. Check the [`isLuminanceReduced`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/isLuminanceReduced) environment value to detect reduced luminance before animating content changes.
-
-On devices that include an Always-On display, the system doesn’t perform animations to preserve battery life in Always On. Check the [`isLuminanceReduced`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/isLuminanceReduced) environment value to detect reduced luminance before animating content changes.
 
 For Live Activities that appear on devices that run iOS 16 or earlier, the system ignores any animation modifiers — for example, [`withAnimation(_:_:)`](https://developer.apple.com/documentation/SwiftUI/withAnimation(_:_:)) and [`animation(_:value:)`](https://developer.apple.com/documentation/SwiftUI/View/animation(_:value:)) — and uses the system’s animation timing instead. However, you can use built-in transitions like [`opacity`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/opacity), [`move(edge:)`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/move(edge:)), [`slide`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/slide), [`push(from:)`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/push(from:)), or combinations of them.
 
@@ -92,8 +86,6 @@ If a content update changes many views in your widget or Live Activity, consider
 
 > **Note**: [`Transaction`](https://developer.apple.com/documentation/SwiftUI/Transaction) isn’t available to widgets and Live Activities, so you can’t cancel or deactivate an animation by setting the transaction’s [`animation`](https://developer.apple.com/documentation/SwiftUI/Transaction/animation) property to `nil`.
 
-[`Transaction`](https://developer.apple.com/documentation/SwiftUI/Transaction) isn’t available to widgets and Live Activities, so you can’t cancel or deactivate an animation by setting the transaction’s [`animation`](https://developer.apple.com/documentation/SwiftUI/Transaction/animation) property to `nil`.
-
 ## See Also
 
 - [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
@@ -104,4 +96,4 @@ If a content update changes many views in your widget or Live Activity, consider
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/animating-data-updates-in-widgets-and-live-activities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/animating-data-updates-in-widgets-and-live-activities)*

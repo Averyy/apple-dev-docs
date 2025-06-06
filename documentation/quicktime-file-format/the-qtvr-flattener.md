@@ -1,6 +1,6 @@
 # The QTVR flattener
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Optimize a movie for delivery over the web.
 
@@ -26,8 +26,6 @@ if (qtvrExport)
 The code fragment shown in the preceeding listing creates a flattened movie file specified by the `myFileSpec` parameter. If your QuickTime VR movie is a panorama, the flattened movie file includes a quarter size, blurred JPEG, compressed preview of the panorama image.
 
 > **Note**: The constants `MovieExportType` and `MovieFileType` used in the preceeding listing are defined in header files QuickTimeComponents.h and Movies.h respectively and are defined as `'spit'` and `'MooV'`.
-
-The constants `MovieExportType` and `MovieFileType` used in the preceeding listing are defined in header files QuickTimeComponents.h and Movies.h respectively and are defined as `'spit'` and `'MooV'`.
 
 You can present users with the QTVR Flattener’s own dialog box to allow them to choose options such as how to compress the preview image or to select a separate preview image file. Use the following code to show the dialog box:
 

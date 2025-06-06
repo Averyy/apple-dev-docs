@@ -1,6 +1,6 @@
 # UIPopoverBackgroundView
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 The background appearance for a popover.
@@ -30,8 +30,6 @@ Your subclass is responsible for providing the background visual styling of the 
 The background contents of your view should be based on stretchable images. Because the popover is animated into place (and may require animated transitions), using images is the only way to ensure that the animations are smooth and not jittery. By creating images that can be stretched at appropriate places, your popover can still be resized and adjusted as needed. You can then incorporate those images using [`UIImageView`](uiimageview.md) subviews or Core Animation layers. When the size of the popover changes (perhaps to accommodate the keyboard), all you have to do is adjust the frame rectangles of your embedded image views.
 
 > **Note**:  The images you use for your popover background view shouldn’t contain any shadow effects. The popover controller adds a shadow to the popover for you.
-
- The images you use for your popover background view shouldn’t contain any shadow effects. The popover controller adds a shadow to the popover for you.
 
 In addition to providing the background content, your subclass must implement the [`arrowOffset`](uipopoverbackgroundview/arrowoffset.md) and [`arrowDirection`](uipopoverbackgroundview/arrowdirection.md) properties and the methods in the [`UIPopoverBackgroundViewMethods`](uipopoverbackgroundviewmethods.md) protocol. The popover controller uses these methods and properties to get and set information related to your background view. The protocol methods are called once and the values you return should never change. However, the values in the [`arrowOffset`](uipopoverbackgroundview/arrowoffset.md) and [`arrowDirection`](uipopoverbackgroundview/arrowdirection.md) properties can change while your popover is on the screen, so your setter methods should call [`setNeedsLayout()`](uiview/setneedslayout().md) when that happens to update the background image views or layers.
 
@@ -93,4 +91,4 @@ To create a stretchable image, use the [`resizableImage(withCapInsets:)`](uiimag
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipopoverbackgroundview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipopoverbackgroundview)*

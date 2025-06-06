@@ -15,8 +15,6 @@ The status codes returned by the server aren’t always easy to interpret (see S
 
 > **Note**:  Xcode 13 includes the HTTP Tracing instrument to aid in debugging HTTP issues. See [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments).
 
- Xcode 13 includes the HTTP Tracing instrument to aid in debugging HTTP issues. See [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments).
-
 The following sections explain how to debug these server-side problems.
 
 ##### Print the Http Response Body
@@ -87,4 +85,4 @@ If you don’t have access to a working client, or you can’t get things to wor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/network/debugging-http-server-side-errors)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Network/debugging-http-server-side-errors)*

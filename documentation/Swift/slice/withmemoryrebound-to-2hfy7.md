@@ -38,8 +38,6 @@ After executing `body`, this method rebinds memory back to the original `Element
 
 > **Note**: Only use this method to rebind the buffer slice’s memory to a type that is layout compatible with the currently bound `Element` type. The stride of the temporary type (`T`) may be an integer multiple or a whole fraction of `Element`‘s stride. To bind a region of memory to a type that does not match these requirements, convert the buffer slice to a raw buffer and use the raw buffer’s `withMemoryRebound(to:)` method. If `T` and `Element` have different alignments, this buffer slice must be aligned with the larger of the two alignments.
 
-Only use this method to rebind the buffer slice’s memory to a type that is layout compatible with the currently bound `Element` type. The stride of the temporary type (`T`) may be an integer multiple or a whole fraction of `Element`‘s stride. To bind a region of memory to a type that does not match these requirements, convert the buffer slice to a raw buffer and use the raw buffer’s `withMemoryRebound(to:)` method. If `T` and `Element` have different alignments, this buffer slice must be aligned with the larger of the two alignments.
-
 ## Parameters
 
 - `type`: The type to temporarily bind the memory referenced by this   buffer slice. The type   must be layout compatible   with the pointer’s   type.

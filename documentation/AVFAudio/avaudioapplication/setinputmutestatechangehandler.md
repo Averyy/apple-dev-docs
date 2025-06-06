@@ -1,6 +1,6 @@
 # setInputMuteStateChangeHandler(_:)
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: method
 
 Sets a callback to handle changes to application-level audio muting states.
@@ -21,8 +21,6 @@ Use this method to set a closure to handle your macOS app’s input muting logic
 Since the input mute handling logic should happen a single place, subsequent calls to this method overwrite any previously registered block with the one you provide. You can specify a `nil` to cancel the callback.
 
 > **Note**:  This method is available in macOS only. On other platforms, the system handles muting logic internally. Perform your input muting logic within this closure, and perform your user interface updates within the handler for [`inputMuteStateChangeNotification`](avaudioapplication/inputmutestatechangenotification.md).
-
- This method is available in macOS only. On other platforms, the system handles muting logic internally. Perform your input muting logic within this closure, and perform your user interface updates within the handler for [`inputMuteStateChangeNotification`](avaudioapplication/inputmutestatechangenotification.md).
 
 ## Parameters
 

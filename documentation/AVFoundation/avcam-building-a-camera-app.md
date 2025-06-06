@@ -1,6 +1,6 @@
 # AVCam: Building a camera app
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Capture photos and record video using the front and rear iPhone and iPad cameras.
 
@@ -20,8 +20,6 @@ The sample uses SwiftUI and the features of Swift concurrency to build a respons
 The key type the app defines is `CaptureService`, an actor that manages the interactions with the AVFoundation capture APIs. This object configures the capture pipeline and manages its life cycle, and defines an asynchronous interface to capture photos and videos. It delegates the handling of those operations to the app’s `PhotoCapture` and `MovieCapture` objects, respectively.
 
 > **Note**: Configuring and starting a capture session are blocking operations that can take time to complete. To keep the user interface responsive, the app defines `CaptureService` as an actor type to ensure that AVFoundation capture API calls don’t occur on the main thread.
-
-Configuring and starting a capture session are blocking operations that can take time to complete. To keep the user interface responsive, the app defines `CaptureService` as an actor type to ensure that AVFoundation capture API calls don’t occur on the main thread.
 
 ##### Configure the Sample Code Project
 
@@ -220,8 +218,6 @@ private func changeCaptureDevice(to device: AVCaptureDevice) {
 
 > **Note**: If your app requires capturing from multiple cameras simultaneously, use [`AVCaptureMultiCamSession`](avcapturemulticamsession.md) instead.
 
-If your app requires capturing from multiple cameras simultaneously, use [`AVCaptureMultiCamSession`](avcapturemulticamsession.md) instead.
-
 ##### Capture a Photo
 
 The capture service delegates handling of the app’s photo capture features to the `PhotoCapture` object, which manages the life cycle of and interaction with an [`AVCapturePhotoOutput`](avcapturephotooutput.md). The app captures photos with this object by calling its [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method, passing it an object that describes photo capture settings to enable and a delegate for the system to call as capture proceeds. To use this delegate-based API in an `async` context , the app wraps this call with a checked throwing continuation as follows:
@@ -338,4 +334,4 @@ func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileUR
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avcam-building-a-camera-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avcam-building-a-camera-app)*

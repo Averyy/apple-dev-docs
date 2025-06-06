@@ -1,6 +1,6 @@
 # formIndex(_:offsetBy:limitedBy:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Offsets the given index by the specified distance, or so that it equals the given limiting index.
@@ -28,8 +28,6 @@ func formIndex(_ i: inout Self.Index, offsetBy distance: Int, limitedBy limit: S
 The value passed as `distance` must not offset `i` beyond the bounds of the collection, unless the index passed as `limit` prevents offsetting beyond those bounds.
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the absolute value of `distance`.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the absolute value of `distance`.
 
 ## Parameters
 

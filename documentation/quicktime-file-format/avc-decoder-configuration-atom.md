@@ -1,6 +1,6 @@
 # AVC decoder configuration atom ('avcC')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 A required extension to the video sample description for H.264 video.
@@ -10,8 +10,6 @@ A required extension to the video sample description for H.264 video.
 This atom contains an MPEG-4 decoder configuration atom. This is a required extension to the video sample description for H.264 video. This extension appears in video sample descriptions only when the codec type is `‘avc1’`.
 
 > **Note**: The decoder configuration record that this atom contains is defined in the MPEG-4 specification ISO/IEC FDIS 14496-15.
-
-The decoder configuration record that this atom contains is defined in the MPEG-4 specification ISO/IEC FDIS 14496-15.
 
 ## Topics
 

@@ -29,8 +29,6 @@ The newly encoded `AtomicRepresentation` storage.
 
 > **Note**: This is not an atomic operation. This simply encodes the logical type `Self` into its storage representation suitable for atomic operations, `AtomicRepresentation`.
 
-This is not an atomic operation. This simply encodes the logical type `Self` into its storage representation suitable for atomic operations, `AtomicRepresentation`.
-
 ## Parameters
 
 - `value`: A valid instance of   that’s about to be destroyed   to encode an instance of its  .

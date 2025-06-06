@@ -25,8 +25,6 @@ All data formats are least significant bit first (little-endian). For compute fu
 
 > **Note**:  When manipulating pixel data in a compute function for a future pipeline stage, use an exact match for the underlying pixel data to avoid visual corruption.
 
- When manipulating pixel data in a compute function for a future pipeline stage, use an exact match for the underlying pixel data to avoid visual corruption.
-
 ## Topics
 
 ### Invalid format
@@ -168,4 +166,4 @@ All data formats are least significant bit first (little-endian). For compute fu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlattributeformat)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/mtlattributeformat)*

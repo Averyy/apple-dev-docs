@@ -1,6 +1,6 @@
 # controlTextDidEndEditing(_:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Tells the delegate that the control finished editing its text content and committed the changes.
@@ -20,8 +20,6 @@ optional func controlTextDidEndEditing(_ obj: Notification)
 Use the key `“NSFieldEditor”` to obtain the field editor from the notification object’s `userInfo` dictionary.
 
 > **Note**:  If you call [`abortEditing()`](nscontrol/abortediting().md) to discard pending edits, the control doesn’t call [`controlTextDidEndEditing(_:)`](nscontroltexteditingdelegate/controltextdidendediting(_:).md).
-
- If you call [`abortEditing()`](nscontrol/abortediting().md) to discard pending edits, the control doesn’t call [`controlTextDidEndEditing(_:)`](nscontroltexteditingdelegate/controltextdidendediting(_:).md).
 
 ## Parameters
 

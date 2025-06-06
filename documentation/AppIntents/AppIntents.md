@@ -1,6 +1,6 @@
 # App Intents
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: module
 
 Make your app’s content and actions discoverable with system experiences like Spotlight, widgets, and the Shortcuts app.
@@ -16,8 +16,8 @@ Make your app’s content and actions discoverable with system experiences like 
 
 ## Mentions
 
-- [Creating your first app intent](creating-your-first-app-intent.md)
 - [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
+- [Creating your first app intent](creating-your-first-app-intent.md)
 
 #### Overview
 
@@ -34,8 +34,6 @@ By adopting the App Intents framework, you allow people to personalize their dev
 - Focus to allow people to reduce distractions.
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 For example, App Intents enables you to express your app’s actions, by offering an App Shortcut. People can then ask Siri to take those actions on their behalf, whether they’re in your app or elsewhere in the system. Use App Entities to expose content in your app to Spotlight and semantic indexing with Apple Intelligence. People can then ask Siri to retrieve information from your app, like asking Siri to pull up flight information from a travel app to share with a loved one.
 

@@ -15,15 +15,11 @@ When you submit a packet trace in such situations, follow the instructions below
 
 > **Note**:  These instructions are also useful if you’re investigating a problem reported by an advanced user and need them to send  a packet trace to further that investigation.
 
- These instructions are also useful if you’re investigating a problem reported by an advanced user and need them to send  a packet trace to further that investigation.
-
 ##### Record the Trace
 
 Follow these steps to record a packet trace to submit to Apple.
 
 > **Note**:  These steps assume you’re recording the trace using the facilities built in to macOS. If necessary you can use a third-party tool, and even a tool on another platform, to record your trace, but make sure to read the information on packet trace formats in [`Work Through the Submission Checklist`](submitting-a-packet-trace-to-apple#Work-Through-the-Submission-Checklist.md).
-
- These steps assume you’re recording the trace using the facilities built in to macOS. If necessary you can use a third-party tool, and even a tool on another platform, to record your trace, but make sure to read the information on packet trace formats in [`Work Through the Submission Checklist`](submitting-a-packet-trace-to-apple#Work-Through-the-Submission-Checklist.md).
 
 1. If you’re developing for the Mac, determine the correct interface as described in [`Choose the Correct Interface`](recording-a-packet-trace#Choose-the-Correct-Interface.md). If you’re developing for iOS, set up a remote virtual interface (RVI) per the instructions in [`Set Up iOS Packet Tracing`](recording-a-packet-trace#Set-Up-iOS-Packet-Tracing.md).
 2. Open a Terminal window and run the command `sudo tcpdump -i en0 -w trace.pcap`, replacing `en0` with the name of the network interface from step 1.
@@ -63,4 +59,4 @@ If you’re using a packet trace tool whose native file format is PCAP or PcapNg
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/network/submitting-a-packet-trace-to-apple)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Network/submitting-a-packet-trace-to-apple)*

@@ -18,8 +18,6 @@ init(fileHandle: FileHandle, readOnly: Bool, synchronizationMode: VZDiskSynchron
 
 > **Note**:  The disk attachment retains the file handle, and the handle must be open when the virtual machine starts.
 
- The disk attachment retains the file handle, and the handle must be open when the virtual machine starts.
-
 The `readOnly` parameter affects how the Virtualization framework exposes the disk to the guest operating system by the storage controller. If you intend to use the disk in read-only mode, it’s also a best practice to open the file handle as read-only.
 
 ## Parameters

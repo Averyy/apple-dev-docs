@@ -1,6 +1,6 @@
 # maximumIterations
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: property
 
 The maximum number of iterations.
@@ -26,8 +26,6 @@ More iterations will produce better models as long as there is no over-fitting. 
 
 > **Note**: This parameter is only used by the `fitted` method. When using the `update` method it’s up to you to decide when to stop.
 
-This parameter is only used by the `fitted` method. When using the `update` method it’s up to you to decide when to stop.
-
 ## See Also
 
 - [var batchSize: Int](fullyconnectednetworkconfiguration/batchsize.md)
@@ -48,4 +46,4 @@ This parameter is only used by the `fitted` method. When using the `update` meth
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/fullyconnectednetworkconfiguration/maximumiterations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/fullyconnectednetworkconfiguration/maximumiterations)*

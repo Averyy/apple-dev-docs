@@ -1,6 +1,6 @@
 # roundedRectangle(radius:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 A rounded rectangle shape.
@@ -25,8 +25,6 @@ static func roundedRectangle(radius: CGFloat) -> ButtonBorderShape
 Use the [`buttonBorderShape(_:)`](view/buttonbordershape(_:).md) view modifier to apply the shape to bordered buttons within a view hierarchy.
 
 > **Note**: This has no effect on non-widget system buttons in macOS.
-
-This has no effect on non-widget system buttons in macOS.
 
 ## Parameters
 

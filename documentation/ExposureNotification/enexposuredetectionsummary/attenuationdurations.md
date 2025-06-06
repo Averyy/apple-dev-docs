@@ -1,6 +1,6 @@
 # attenuationDurations
 
-**Framework**: Exposure Notification  
+**Framework**: Exposurenotification  
 **Kind**: property
 
 An array of durations at specific radio signal attenuations.
@@ -20,8 +20,6 @@ var attenuationDurations: [NSNumber] { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 An array that contains the duration, in seconds, at certain attenuations, using an aggregated maximum exposures of 30 minutes.
 
 `array[0]` =  Sum of durations for all exposures when attenuation value was `A <= X`.
@@ -33,8 +31,6 @@ An array that contains the duration, in seconds, at certain attenuations, using 
 Use the [`attenuationDurationThresholds`](enexposureconfiguration/attenuationdurationthresholds.md) to configure the `X` and `Y` values.
 
 > **Note**:  This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
-
- This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
 
 ## See Also
 
@@ -56,4 +52,4 @@ Use the [`attenuationDurationThresholds`](enexposureconfiguration/attenuationdur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposuredetectionsummary/attenuationdurations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposuredetectionsummary/attenuationdurations)*

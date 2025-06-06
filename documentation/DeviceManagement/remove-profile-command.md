@@ -1,6 +1,6 @@
 # Remove a Profile
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: httpRequest
 
 Remove a previously installed profile from the device.
@@ -20,8 +20,6 @@ Remove a previously installed profile from the device.
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
 > **Note**:  Don’t remove a provisioning profile to revoke access to an enterprise app. An app continues to be usable until the device restarts, even with no provisioning profile. Provisioning profiles also synchronize with iTunes and the system reinstalls them when users sync devices. For more information on removing apps, see [`Remove an App`](remove-application-command.md).
-
- Don’t remove a provisioning profile to revoke access to an enterprise app. An app continues to be usable until the device restarts, even with no provisioning profile. Provisioning profiles also synchronize with iTunes and the system reinstalls them when users sync devices. For more information on removing apps, see [`Remove an App`](remove-application-command.md).
 
 ##### Command Availability
 
@@ -63,4 +61,4 @@ The command to remove a profile from a device.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/remove-profile-command)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/remove-profile-command)*

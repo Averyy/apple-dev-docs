@@ -1,6 +1,6 @@
 # preventsDisplaySleepDuringVideoPlayback
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether video playback prevents display and device sleep.
@@ -26,8 +26,6 @@ The default value is [`true`](https://developer.apple.com/documentation/swift/tr
 Setting this property to [`false`](https://developer.apple.com/documentation/swift/false) doesn’t force the display to sleep, it only stops preventing display sleep. Other apps, or frameworks within your app may still prevent display sleep for various reasons.
 
 > **Note**:  Before macOS 13, iOS 16, tvOS 16, and watchOS 9, you can only access this property from the main thread or queue.
-
- Before macOS 13, iOS 16, tvOS 16, and watchOS 9, you can only access this property from the main thread or queue.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # requestWriteOnlyAccessToEvents(completion:)
 
-**Framework**: EventKit  
+**Framework**: Eventkit  
 **Kind**: method
 
 Prompts the person using your app to grant or deny write access to event data.
@@ -29,27 +29,15 @@ func requestWriteOnlyAccessToEvents() async throws -> Bool
 func requestWriteOnlyAccessToEvents() async throws -> Bool
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func requestWriteOnlyAccessToEvents() async throws -> Bool
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
-Requesting access to an event store asynchronously prompts people for permission to use their data. The operating system only prompts them the first time your app requests write-only event access; any subsequent instantiations of [`EKEventStore`](ekeventstore.md) uses existing permissions. When they grant or deny access, [`EventKit`](EventKit.md) calls the completion handler on an arbitrary queue.
+Requesting access to an event store asynchronously prompts people for permission to use their data. The operating system only prompts them the first time your app requests write-only event access; any subsequent instantiations of [`EKEventStore`](ekeventstore.md) uses existing permissions. When they grant or deny access, [`EventKit`](eventkit.md) calls the completion handler on an arbitrary queue.
 
 > ❗ **Important**:  If your app has never requested access, you must request write-only or full access to events before attempting to create them. If you request events before prompting the user for access with this method, you’ll need to reset the event store with the [`reset()`](ekeventstore/reset().md) method to receive data after the user grants access.
-
- If your app has never requested access, you must request write-only or full access to events before attempting to create them. If you request events before prompting the user for access with this method, you’ll need to reset the event store with the [`reset()`](ekeventstore/reset().md) method to receive data after the user grants access.
 
 Your app isn’t blocked while the person decides to grant or deny permission. Because they may deny permission, your app needs to handle the case where it doesn’t receive access to the event store.
 
 If the person grants permission, your app receives write-only access to the event store. Your app can create events, but it can’t access any of the existing calendars and events on the device, including events your app created. API calls to read event data from the event store don’t return any events.
 
 > **Note**:  Your iOS or Mac Catalyst app can present an [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController) to let your user create events without requesting access to the event store. If your app creates events without using [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController), you must request at least write-only access to event data.
-
- Your iOS or Mac Catalyst app can present an [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController) to let your user create events without requesting access to the event store. If your app creates events without using [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController), you must request at least write-only access to event data.
 
 ## Parameters
 

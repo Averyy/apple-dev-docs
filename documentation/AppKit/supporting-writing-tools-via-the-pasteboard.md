@@ -1,6 +1,6 @@
 # Supporting Writing Tools via the pasteboard
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 Adopt a simplified version of the Writing Tools experience in a custom view using the pasteboard and macOS services.
 
@@ -11,8 +11,6 @@ Writing Tools works automatically with [`NSTextView`](nstextview.md) in AppKit, 
 You can add Writing Tools support to both read-only and editable views. When your view is read-only, Writing Tools leaves the updated text on the pasteboard instead of incorporating it back into your view. For editable views, your code replaces the view’s current text selection with the rewritten content that Writing Tools provides.
 
 > **Note**: If you display text using [`NSTextView`](nstextview.md), you don’t need to do additional work to support Writing Tools, but you can customize your app’s behavior when the feature is active. For information about how to customize your app’s behavior, see [`Customizing Writing Tools behavior for AppKit views`](customizing-writing-tools-behavior-for-system-views.md).
-
-If you display text using [`NSTextView`](nstextview.md), you don’t need to do additional work to support Writing Tools, but you can customize your app’s behavior when the feature is active. For information about how to customize your app’s behavior, see [`Customizing Writing Tools behavior for AppKit views`](customizing-writing-tools-behavior-for-system-views.md).
 
 ##### Add a Contextual Menu to Your Custom View
 
@@ -77,8 +75,6 @@ If your view contains editable text, implement the [`readSelection(from:)`](nsse
 
 > **Note**: If you indicate that your view is read-only in your [`validRequestor(forSendType:returnType:)`](nsresponder/validrequestor(forsendtype:returntype:).md) method, AppKit doesn’t call your requestor object’s [`readSelection(from:)`](nsservicesmenurequestor/readselection(from:).md) method. Instead, AppKit places the rewritten text on the general pasteboard so that the person can paste it elsewhere.
 
-If you indicate that your view is read-only in your [`validRequestor(forSendType:returnType:)`](nsresponder/validrequestor(forsendtype:returntype:).md) method, AppKit doesn’t call your requestor object’s [`readSelection(from:)`](nsservicesmenurequestor/readselection(from:).md) method. Instead, AppKit places the rewritten text on the general pasteboard so that the person can paste it elsewhere.
-
 If your view conforms to the [`NSTextInputClient`](nstextinputclient.md) protocol, Writing Tools calls your view’s [`insertText(_:replacementRange:)`](nstextinputclient/inserttext(_:replacementrange:).md) method first to handle text insertions and replacments. If you implement that method, insert the provided text, replacing any previous text as needed. If you don’t implement that method in your view, Writing Tools calls the [`readSelection(from:)`](nsservicesmenurequestor/readselection(from:).md) method instead.
 
 ##### Customize the Anchor Placement for the Writing Tools Popover
@@ -103,4 +99,4 @@ To anchor the Writing Tools UI to a custom part of your view’s content, adopt 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/supporting-writing-tools-via-the-pasteboard)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/supporting-writing-tools-via-the-pasteboard)*

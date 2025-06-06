@@ -1,6 +1,6 @@
 # saveSubscriptions
 
-**Framework**: CloudKit JS  
+**Framework**: Cloudkitjs  
 **Kind**: method
 
 Saves one or more subscriptions to record changes.
@@ -65,8 +65,6 @@ var artistReference = {
 ```
 
 > **Note**:  Because the record name is a unique identifier, you can create the `Reference` object containing just the `recordName` and `action` key. A query subscription with a `Reference` field requires an `action` key.
-
- Because the record name is a unique identifier, you can create the `Reference` object containing just the `recordName` and `action` key. A query subscription with a `Reference` field requires an `action` key.
 
 Create a query subscription object specifying `Artwork` records whose `artist` field matches the `Reference` object. Use the `firesOn` key to specify the types of operations that fire this subscription.
 

@@ -1,6 +1,6 @@
 # BADownload
 
-**Framework**: Background Assets  
+**Framework**: Backgroundassets  
 **Kind**: class
 
 An object that represents an in-progress or concluded asset download.
@@ -22,8 +22,6 @@ class BADownload
 #### Overview
 
 > **Note**:  You don’t create instances of this object directly. Instead, use an object that inherits from [`BADownload`](badownload.md), such as [`BAURLDownload`](baurldownload.md).
-
- You don’t create instances of this object directly. Instead, use an object that inherits from [`BADownload`](badownload.md), such as [`BAURLDownload`](baurldownload.md).
 
 ## Topics
 
@@ -74,4 +72,4 @@ class BADownload
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/backgroundassets/badownload)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BackgroundAssets/badownload)*

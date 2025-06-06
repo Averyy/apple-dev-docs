@@ -24,8 +24,6 @@ var count: Int { get }
 
 > **Note**: O(1).
 
-O(1).
-
 
 ---
 

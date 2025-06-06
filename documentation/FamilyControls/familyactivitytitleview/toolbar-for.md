@@ -1,6 +1,6 @@
 # toolbar(_:for:)
 
-**Framework**: FamilyControls  
+**Framework**: Familycontrols  
 **Kind**: method
 
 Specifies the visibility of a bar managed by SwiftUI.
@@ -55,8 +55,6 @@ TabView {
 ```
 
 > **Note**: In macOS, if you provide `ToolbarCommands` to the scene of your app, this modifier disables the toolbar visibility command while the value of the modifier is not `ToolbarPlacement/automatic`.
-
-In macOS, if you provide `ToolbarCommands` to the scene of your app, this modifier disables the toolbar visibility command while the value of the modifier is not `ToolbarPlacement/automatic`.
 
 Depending on the specified bars, the requested visibility may not be able to be fulfilled.
 

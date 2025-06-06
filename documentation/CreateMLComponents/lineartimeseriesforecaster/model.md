@@ -1,6 +1,6 @@
 # LinearTimeSeriesForecaster.Model
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: struct
 
 A linear time-series forecasting model.
@@ -23,8 +23,6 @@ struct Model
 #### Overview
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type.
-
-Only `Float` and `Double` are currently supported as the Scalar type.
 
 ## Topics
 
@@ -74,4 +72,4 @@ Only `Float` and `Double` are currently supported as the Scalar type.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/lineartimeseriesforecaster/model)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/lineartimeseriesforecaster/model)*

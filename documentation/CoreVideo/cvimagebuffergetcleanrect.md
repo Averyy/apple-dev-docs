@@ -1,6 +1,6 @@
 # CVImageBufferGetCleanRect(_:)
 
-**Framework**: Core Video  
+**Framework**: Corevideo  
 **Kind**: func
 
 Returns the source rectangle of a Core Video image buffer that represents the clean aperture of the buffer in encoded pixels.
@@ -29,8 +29,6 @@ A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) st
 The clean aperture size is smaller than the full size of the image. For example, for an NTSC DV frame, this function returns a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) structure with an origin of `(8,0)` and a size of 704 x 480.
 
 > **Note**:  The origin of this rectangle is always in the lower-left corner. This is the same coordinate system as that used by Quartz and Core Image.
-
- The origin of this rectangle is always in the lower-left corner. This is the same coordinate system as that used by Quartz and Core Image.
 
 ## Parameters
 

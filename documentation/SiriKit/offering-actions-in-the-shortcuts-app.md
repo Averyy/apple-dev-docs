@@ -1,6 +1,6 @@
 # Offering Actions in the Shortcuts App
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Suggest shortcuts users may want to add to Siri or combine with other actions in their own shortcuts.
 
@@ -11,8 +11,6 @@ When the user performs an action in your app, donate a shortcut that accelerates
 However, sometimes there are actions in your app the user hasn’t performed that might be of interest to them. For example, perhaps your soup-ordering app features a special soup every day. The user has never ordered the daily soup special, but they might be interested in the option to add a  shortcut to Siri. Your app can provide this option by making a shortcut suggestion.
 
 > **Note**:  A donated interaction or suggested shortcut containing a system intent defines a specific action. The user can’t customize the parameters of such an action in the Shortcuts app. Instead, define a custom intent. For more information on defining custom intents, see [`Adding User Interactivity with Siri Shortcuts and the Shortcuts App`](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md).
-
- A donated interaction or suggested shortcut containing a system intent defines a specific action. The user can’t customize the parameters of such an action in the Shortcuts app. Instead, define a custom intent. For more information on defining custom intents, see [`Adding User Interactivity with Siri Shortcuts and the Shortcuts App`](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md).
 
 ##### Suggest a Shortcut
 
@@ -81,4 +79,4 @@ Changes to the list of shortcut suggestions don’t affect shortcuts the user ad
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/offering-actions-in-the-shortcuts-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/offering-actions-in-the-shortcuts-app)*

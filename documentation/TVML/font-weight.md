@@ -1,6 +1,6 @@
 # font-weight
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Specifies the font weight for the text in an element.
 
@@ -11,8 +11,6 @@ Use the `font-weight` style to specify how thick or thin a font looks.
 ##### Values for Font Weight
 
 > **Note**: The `font-weight` values from thinnest to thickest are `ultralight`, `thin`, `light`, `regular`, `medium`, `semibold`, `bold`, `heavy`, and `black`.
-
-The `font-weight` values from thinnest to thickest are `ultralight`, `thin`, `light`, `regular`, `medium`, `semibold`, `bold`, `heavy`, and `black`.
 
 ##### Elements That Use Font Weight
 
@@ -35,4 +33,4 @@ The `font-weight` values from thinnest to thickest are `ultralight`, `thin`, `li
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/font-weight)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/font-weight)*

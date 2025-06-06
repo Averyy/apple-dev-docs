@@ -1,6 +1,6 @@
 # init(cubeFromEquirectangular:named:quality:faceSize:options:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Asynchronously creates a cube texture resource from an equirectangular image.
@@ -58,8 +58,6 @@ if let source = CGImageSourceCreateWithURL(url as CFURL, nil),
 ```
 
 > **Note**: [`EnvironmentResource.CreateOptions.SamplingQuality.high`](environmentresource/createoptions/samplingquality-swift.enum/high.md) and [`EnvironmentResource.CreateOptions.SamplingQuality.veryHigh`](environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md), along with [`astc(blockSize:quality:)`](textureresource/compression/astc(blocksize:quality:).md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](entity/write(to:).md). Compression options also significantly reduce a cube’s memory and disk usage.
-
-[`EnvironmentResource.CreateOptions.SamplingQuality.high`](environmentresource/createoptions/samplingquality-swift.enum/high.md) and [`EnvironmentResource.CreateOptions.SamplingQuality.veryHigh`](environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md), along with [`astc(blockSize:quality:)`](textureresource/compression/astc(blocksize:quality:).md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](entity/write(to:).md). Compression options also significantly reduce a cube’s memory and disk usage.
 
 ## Parameters
 

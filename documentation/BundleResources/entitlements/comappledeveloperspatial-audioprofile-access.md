@@ -1,6 +1,6 @@
 # com.apple.developer.spatial-audio.profile-access
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 An entitlement that enables your app to use the personalized spatial audio profile.
@@ -23,8 +23,6 @@ This entitlement applies the personalized spatial audio profile someone makes in
 Add this entitlement to your app by enabling the Spatial Audio Profile capability in Xcode.
 
 > **Note**:  In iOS 18 and tvOS 18 and later, the system automatically adds spatial audio to the output for games. To opt out of automatic spatial  audio and support just your preferred spatial audio setup, add the [`AVGameBypassSystemSpatialAudio`](information-property-list/avgamebypasssystemspatialaudio.md) key to your app’s `Info.plist`.
-
- In iOS 18 and tvOS 18 and later, the system automatically adds spatial audio to the output for games. To opt out of automatic spatial  audio and support just your preferred spatial audio setup, add the [`AVGameBypassSystemSpatialAudio`](information-property-list/avgamebypasssystemspatialaudio.md) key to your app’s `Info.plist`.
 
 ## See Also
 

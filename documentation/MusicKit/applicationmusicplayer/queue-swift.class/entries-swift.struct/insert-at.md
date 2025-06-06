@@ -1,6 +1,6 @@
 # insert(_:at:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Inserts a new element into the collection at the specified position.
@@ -35,8 +35,6 @@ print(numbers)
 Calling this method may invalidate any existing indices for use with this collection.
 
 > **Note**: O(), where  is the length of the collection. If `i == endIndex`, this method is equivalent to `append(_:)`.
-
-O(), where  is the length of the collection. If `i == endIndex`, this method is equivalent to `append(_:)`.
 
 ## Parameters
 

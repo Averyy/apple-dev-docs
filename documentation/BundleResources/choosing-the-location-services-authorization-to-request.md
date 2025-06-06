@@ -1,6 +1,6 @@
 # Choosing the  Location Services Authorization to Request
 
-**Framework**: Bundle Resources
+**Framework**: Bundleresources
 
 Determine the authorization your app needs to access location data.
 
@@ -34,8 +34,6 @@ Your app might require Always authorization in some situations where users canâ€
 Keep in mind that asking for authorization doesnâ€™t guarantee your app will receive it. If you request Always authorization, the user has the option of granting your app When In Use authorization instead. You must always be prepared to run with When In Use authorization.
 
 > **Note**:  If your app requests and receives When In Use authorization, you can make a separate request for Always authorization later. However, apps may make only one request for Always authorization.
-
- If your app requests and receives When In Use authorization, you can make a separate request for Always authorization later. However, apps may make only one request for Always authorization.
 
 While all platforms support When In Use authorization, the availability and functionality of Always authorization varies, as follows:
 
@@ -73,4 +71,4 @@ Apps compiled with iOS 13 or later SDKs but running in iOS 12 or earlier will ex
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/choosing-the-location-services-authorization-to-request)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BundleResources/choosing-the-location-services-authorization-to-request)*

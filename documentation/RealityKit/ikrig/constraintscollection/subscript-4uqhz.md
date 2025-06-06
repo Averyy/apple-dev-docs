@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: subscript
 
 Accesses the element with the specified identifier.
@@ -21,8 +21,6 @@ subscript(id: IKRig.ConstraintsCollection.Element.ID) -> IKRig.ConstraintsCollec
 #### Overview
 
 > **Note**: Set `nil` to remove the element with matching identifier.
-
-Set `nil` to remove the element with matching identifier.
 
 ## Parameters
 

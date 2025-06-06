@@ -39,8 +39,6 @@ Local network privacy regulates your program’s ability to perform local networ
 
 > **Note**: See [`Local network operations`](tn3179-understanding-local-network-privacy#Local-network-operations.md) for more precise definitions of  and .
 
-See [`Local network operations`](tn3179-understanding-local-network-privacy#Local-network-operations.md) for more precise definitions of  and .
-
 In most cases, the user controls local network access by way of the Local Network privilege.  This has three states:
 
 - Undetermined
@@ -51,8 +49,6 @@ Your program starts in the undetermined state.  The first time it performs a loc
 
 > **Note**: Some programs have local network access based on factors other than the Local Network privilege.  For the details, see [`App extension considerations`](tn3179-understanding-local-network-privacy#App-extension-considerations.md) and [`macOS considerations`](tn3179-understanding-local-network-privacy#macOS-considerations.md).
 
-Some programs have local network access based on factors other than the Local Network privilege.  For the details, see [`App extension considerations`](tn3179-understanding-local-network-privacy#App-extension-considerations.md) and [`macOS considerations`](tn3179-understanding-local-network-privacy#macOS-considerations.md).
-
 If your app accesses the local network, add the [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocalNetworkUsageDescription) property to its `Info.plist` to explain its behavior to the user.
 
 If your app allows people to enter an arbitrary network address, consider what happens if they enter a local network address.  For example, if you’re building an email client, check that it behaves correctly when the email server is on a local network.
@@ -62,8 +58,6 @@ If your app’s local network usage involves registering or browsing for specifi
 Additionally, if your iOS app performs multicast operations, sign it with the [`com.apple.developer.networking.multicast`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.multicast) entitlement.  For information about what constitutes a multicast operation, see [`Multicast operations`](tn3179-understanding-local-network-privacy#Multicast-operations.md) below.  If you use Xcode’s automatic code signing, use the [`Capabilities`](https://developer.apple.com/documentation/Xcode/capabilities) editor to enable this capability.  If not, see [`Developer Account > Reference > Provisioning with capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities).
 
 > ❗ **Important**: The multicast entitlement isn’t required on macOS.
-
-The multicast entitlement isn’t required on macOS.
 
 If you’re building an app extension, see [`App extension considerations`](tn3179-understanding-local-network-privacy#App-extension-considerations.md).
 
@@ -129,8 +123,6 @@ All Bonjour operations require local network access.
 These checks apply to all APIs that use Bonjour, including [`dnssd`](https://developer.apple.com/documentation/dnssd), [`Network`](https://developer.apple.com/documentation/Network) framework, and Multipeer Connectivity.
 
 > **Note**: If you’re using Multipeer Connectivity, see [`Multipeer Connectivity considerations`](tn3179-understanding-local-network-privacy#Multipeer-Connectivity-considerations.md).
-
-If you’re using Multipeer Connectivity, see [`Multipeer Connectivity considerations`](tn3179-understanding-local-network-privacy#Multipeer-Connectivity-considerations.md).
 
 High-level services that use Bonjour internally don’t require local network access.  That’s because these services isolate your app from any details about the local network.  Such services include:
 
@@ -210,8 +202,6 @@ macOS automatically allows local network access by:
 - Command-line tools run from Terminal or over SSH, including any child processes they spawn
 
 > ❗ **Important**: The exception for `launchd` daemons doesn’t apply to `launchd` agents.  If you’re building a `launchd` agent, see the discussion below.
-
-The exception for `launchd` daemons doesn’t apply to `launchd` agents.  If you’re building a `launchd` agent, see the discussion below.
 
 If you’re creating some other type of program, expect the system to block its local network operations until the user grants it the Local Network privilege.
 
@@ -424,8 +414,6 @@ The reports from these users might suggest that local network privacy is misbeha
 
 > ❗ **Important**: To avoid problems like this, don’t hard code BSD interface names like `en0`.
 
-To avoid problems like this, don’t hard code BSD interface names like `en0`.
-
 In many cases you can avoid this problem by reworking your code.  For example, if you’re building a custom service discovery protocol on top of UDP broadcasts, life will be easier if you use Bonjour instead.  For more information about Bonjour, see [`TN3151: Choosing the right networking API`](tn3151-choosing-the-right-networking-api.md).
 
 If you can’t use Bonjour—perhaps you’re working with an accessory with legacy firmware—run your service discovery code on  broadcast-capable interfaces.  Not only does that avoid this problem, but folks who have their devices plugged into Ethernet will love you forever!
@@ -473,4 +461,4 @@ If you must work with a specific type of interface, call `getifaddrs` to get the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3179-understanding-local-network-privacy)*

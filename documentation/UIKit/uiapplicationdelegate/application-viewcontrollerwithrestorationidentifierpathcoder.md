@@ -1,6 +1,6 @@
 # application(_:viewControllerWithRestorationIdentifierPath:coder:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Asks the delegate to provide the specified view controller.
@@ -38,8 +38,6 @@ It is not always necessary to create a new view controller object in your implem
 Your implementation of this method may use any data in the provided `coder` to assist in the restoration process. However, you usually do not need to restore the entire state of the view controller at this point. During a later pass, view controllers that define a [`decodeRestorableState(with:)`](uiviewcontroller/decoderestorablestate(with:).md) method are normally given a chance to restore their state form the same coder object. Similarly, the app delegate itself has a [`application(_:didDecodeRestorableStateWith:)`](uiapplicationdelegate/application(_:diddecoderestorablestatewith:).md) method that you can use to restore app-level state information.
 
 > **Note**:  If you return an object whose class does not match the class of the originally preserved object, or whose class is not a direct subclass of the original, the restoration system does not call the [`decodeRestorableState(with:)`](uiviewcontroller/decoderestorablestate(with:).md) method of the view controller.
-
- If you return an object whose class does not match the class of the originally preserved object, or whose class is not a direct subclass of the original, the restoration system does not call the [`decodeRestorableState(with:)`](uiviewcontroller/decoderestorablestate(with:).md) method of the view controller.
 
 ## Parameters
 

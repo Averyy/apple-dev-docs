@@ -1,6 +1,6 @@
 # replaceContents(in:with:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method  
 **Required**: Yes
 
@@ -24,8 +24,6 @@ func replaceContents(in range: NSTextRange, with textElements: [NSTextElement]?)
 If the edges of `range` aren’t at existing element range boundaries, the method either splits the element if it allows the operation (for example, [`NSTextParagraph`](nstextparagraph.md)), or the adjusts the replacement range.
 
 > **Note**:  This method is for use by [`NSTextLayoutManager`](nstextlayoutmanager.md).
-
- This method is for use by [`NSTextLayoutManager`](nstextlayoutmanager.md).
 
 ## Parameters
 

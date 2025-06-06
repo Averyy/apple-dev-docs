@@ -1,6 +1,6 @@
 # provideScope(for:testCase:performing:)
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: method  
 **Required**: Yes
 
@@ -19,8 +19,6 @@ func provideScope(for test: Test, testCase: Test.Case?, performing function: () 
 #### Discussion
 
 > **Note**: Any error that `function` throws, or an error that prevents this type from providing a custom scope correctly. The testing library records an error thrown from this method as an issue associated with `test`. If an error is thrown before this method calls `function`, the corresponding test doesn’t run.
-
-Any error that `function` throws, or an error that prevents this type from providing a custom scope correctly. The testing library records an error thrown from this method as an issue associated with `test`. If an error is thrown before this method calls `function`, the corresponding test doesn’t run.
 
 When the testing library prepares to run a test, it starts by finding all traits applied to that test, including those inherited from containing suites. It begins with inherited suite traits, sorting them outermost-to-innermost, and if the test is a function, it then adds all traits applied directly to that functions in the order they were applied (left-to-right). It then asks each trait for its scope provider (if any) by calling [`scopeProvider(for:testCase:)`](trait/scopeprovider(for:testcase:).md). Finally, it calls this method on all non-`nil` scope providers, giving each an opportunity to perform arbitrary work before or after invoking `function`.
 

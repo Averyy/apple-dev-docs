@@ -1,6 +1,6 @@
 # touchBarItemPrincipal(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Sets principal views that have special significance to this Touch Bar.
@@ -41,8 +41,6 @@ TextField("TouchBar Demo", text: $placeholder)
 ```
 
 > **Note**: Multiple visible bars may each specify a principal view, but the system only honors one of them.
-
-Multiple visible bars may each specify a principal view, but the system only honors one of them.
 
 ## Parameters
 

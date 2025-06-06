@@ -1,6 +1,6 @@
 # shouldHandleStateChange
 
-**Framework**: TVMLKit JS  
+**Framework**: Tvmljs  
 **Kind**: instp
 
 An event that indicates a state change request has occurred.
@@ -32,8 +32,6 @@ The listener must return one of the following values:
 - `false`. The state change is not allowed.
 
 > **Note**: This event occurs after a user has performed an action and needs to be handled as quickly as possible.
-
-This event occurs after a user has performed an action and needs to be handled as quickly as possible.
 
 ## See Also
 

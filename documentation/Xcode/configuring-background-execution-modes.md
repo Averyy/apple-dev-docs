@@ -18,8 +18,6 @@ The background execution modes that appear after you add the capability depend o
 
 > **Note**: The Background Modes capability isn’t available for macOS apps.
 
-The Background Modes capability isn’t available for macOS apps.
-
 ##### Specify the Background Modes Your App Requires
 
 Before your app can leverage one or more background execution modes, you need to declare the modes it requires by performing the following:
@@ -67,4 +65,4 @@ Apple’s platforms support these background execution modes:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-background-execution-modes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-background-execution-modes)*

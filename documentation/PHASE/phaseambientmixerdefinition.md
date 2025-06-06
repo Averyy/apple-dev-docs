@@ -1,6 +1,6 @@
 # PHASEAmbientMixerDefinition
 
-**Framework**: PHASE  
+**Framework**: Phase  
 **Kind**: class
 
 An audio-layering object that outputs sound in a particular direction in 3D space.
@@ -26,8 +26,6 @@ As an audio-layering object, this class combines multiple audio signals to a sin
 You also supply the intitializer with a channel layout in either mono, stereo, or surround formats. Surround audio files create the best listening experience due to their extra channel data. The framework renders each channel from the direction of its corresponding speaker in the channel layout. This class ignores low-frequency effect channels that may be present in the layout.
 
 > **Note**:  For one-time sounds that require no position or orientation, use [`PHASEChannelMixerDefinition`](phasechannelmixerdefinition.md) instead of this class. If your audio playback needs to react to distance or contain environmental effects, use a spatial mixer; for more information, see [`Spatial Mixing`](spatial-mixing.md).
-
- For one-time sounds that require no position or orientation, use [`PHASEChannelMixerDefinition`](phasechannelmixerdefinition.md) instead of this class. If your audio playback needs to react to distance or contain environmental effects, use a spatial mixer; for more information, see [`Spatial Mixing`](spatial-mixing.md).
 
 ##### Play Sound with a Specific Orientation Channel Layout and Listener
 
@@ -78,4 +76,4 @@ PHASE changes the channel output of ambient-mixer sound dynamically, depending o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/phase/phaseambientmixerdefinition)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PHASE/phaseambientmixerdefinition)*

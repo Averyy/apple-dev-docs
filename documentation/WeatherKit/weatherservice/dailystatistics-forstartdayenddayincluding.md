@@ -28,8 +28,6 @@ The requested daily weather statistics
 
 > **Note**: Weather data error `WeatherError`
 
-Weather data error `WeatherError`
-
 The statistics returned for each day are derived from weather data recorded over the past decades, to the present date. Each item returned represents statistics for a particular day of the year, in UTC.
 
 This is a variadic API in which any combination of data sets can be requested and returned as a tuple. The following example will return statistics for the first 10 days of the year.
@@ -45,8 +43,6 @@ let (dailyPrecipitationStatistics, dailyTemperatureStatistics) = try await servi
 ```
 
 > **Note**: `startDay in 1...366 && endDay in 1...366`
-
-`startDay in 1...366 && endDay in 1...366`
 
 ## Parameters
 

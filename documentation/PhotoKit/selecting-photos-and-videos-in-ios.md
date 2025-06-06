@@ -1,6 +1,6 @@
 # Selecting Photos and Videos in iOS
 
-**Framework**: PhotoKit
+**Framework**: Photokit
 
 Improve the user experience of finding and selecting assets by using the Photos picker.
 
@@ -14,8 +14,6 @@ Improve the user experience of finding and selecting assets by using the Photos 
 This sample shows how to use the [`PhotoKit`](PhotoKit.md) Photos picker, and illustrates how to filter assets according to the user’s selection. After you have a selection, you use an item provider to load the asset to display in the app. The sample also explores the new configuration options in iOS 15.
 
 > **Note**: This sample code project is associated with WWDC21 session [`10046: Improve access to Photos in your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10046/).
-
-This sample code project is associated with WWDC21 session [`10046: Improve access to Photos in your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10046/).
 
 ##### Understand the Photos Picker Benefits
 
@@ -155,4 +153,4 @@ if itemProvider.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/photokit/selecting-photos-and-videos-in-ios)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PhotoKit/selecting-photos-and-videos-in-ios)*

@@ -1,6 +1,6 @@
 # Extending advanced direction finding and ranging
 
-**Framework**: Nearby Interaction
+**Framework**: Nearbyinteraction
 
 Extend your app’s direction finding capabilities with data from Ultra Wideband devices.
 
@@ -25,8 +25,6 @@ Supports one Nearby Interaction peer EDM session and multiple Nearby Interaction
 Supports multiple Nearby Interaction accessory sessions when communicating with third-party MFI chipsets
 
 > **Note**:  For more information on the MFI program, see the [`Nearby Interaction Accessory Protocol Specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification/).
-
- For more information on the MFI program, see the [`Nearby Interaction Accessory Protocol Specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification/).
 
 Design your app with appropriate fallback options for interacting with devices that aren’t capable of EDM. For example, you could choose to show a limited experience that’s backwards compatible with first generation devices or, depending on your app’s intention, restrict interactions with peer devices that aren’t capable of using EDM. To identify a peer device’s measurement capabilities, query the [`deviceCapabilities`](nidiscoverytoken/devicecapabilities.md) property of an [`NIDiscoveryToken`](nidiscoverytoken.md). For an example that demonstrates limiting interactions to compatible devices, see [`Finding devices with precision`](finding-devices-with-precision.md).
 
@@ -167,4 +165,4 @@ If both sides support EDM, they can run [`NISession`](nisession.md) with the con
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/extending-advanced-direction-finding-and-ranging)*
+*[View on Apple Developer](https://developer.apple.com/documentation/NearbyInteraction/extending-advanced-direction-finding-and-ranging)*

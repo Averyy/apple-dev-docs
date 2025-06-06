@@ -14,8 +14,6 @@ For more information about distributing a beta version of your app, see [`Distri
 
 > **Note**: Feedback from testers for iOS 12 and earlier, tvOS, and watchOS doesn’t appear in the Feedback organizer. That feedback goes to the email address you provide in the Feedback Email field of your app’s Test Information page in App Store Connect.
 
-Feedback from testers for iOS 12 and earlier, tvOS, and watchOS doesn’t appear in the Feedback organizer. That feedback goes to the email address you provide in the Feedback Email field of your app’s Test Information page in App Store Connect.
-
 ##### View Feedback From Testers
 
 To view feedback from your app’s testers:
@@ -38,8 +36,6 @@ To follow up with a tester who provides feedback, click the email button at the 
 
 > **Note**: If you send a tester an invitation email, their email address displays in the inspector. If you invite a tester with a public link, they display as anonymous unless they enter their email address when submitting feedback. The email address only displays for that particular piece of feedback.
 
-If you send a tester an invitation email, their email address displays in the inspector. If you invite a tester with a public link, they display as anonymous unless they enter their email address when submitting feedback. The email address only displays for that particular piece of feedback.
-
 To share a link to a report with another member of your development team, select the item you want to share from the grid and click the Share button at the trailing edge of the window‘s toobar. If the team member has the necessary authorization, they can click the shared link to open the Feedback organizer in Xcode with the preview of the report.
 
 To rename reports to help keep them organized and to add notes, use the controls at the bottom of the inspector. Use the Mark as Resolved button in the inspector, or the checkbox next to each preview, to keep track of issues as you resolve them.
@@ -49,4 +45,4 @@ To rename reports to help keep them organized and to add notes, use the controls
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/viewing-and-responding-to-feedback)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/viewing-and-responding-to-feedback)*

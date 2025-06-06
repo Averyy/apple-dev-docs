@@ -95,8 +95,6 @@ In the main window of your Xcode project, choose a target and a run destination 
 
 > **Note**: For an app built with Mac Catalyst, create separate archives for the iPad and Mac Catalyst version. When creating the archive for the Mac Catalyst version, choose the run destination that includes Mac Catalyst in its name. For an app built with Designed for iPad, create a single archive using iPad as the run destination or any run destination that includes Designed for iPad in its name. These run destinations produce the same archive.
 
-For an app built with Mac Catalyst, create separate archives for the iPad and Mac Catalyst version. When creating the archive for the Mac Catalyst version, choose the run destination that includes Mac Catalyst in its name. For an app built with Designed for iPad, create a single archive using iPad as the run destination or any run destination that includes Designed for iPad in its name. These run destinations produce the same archive.
-
 ##### Export the App
 
 From the archive, export a version of the app to distribute to users:
@@ -130,8 +128,6 @@ To install iOS, iPadOS, tvOS, visionOS, or watchOS apps with Apple Configurator 
 
 > ❗ **Important**: Every time you run your `.ipa`-based app on an iOS or watchOS device, you need to enable Developer Mode on that device. See [`Enabling Developer Mode on a device`](enabling-developer-mode-on-a-device.md) for more information.
 
-Every time you run your `.ipa`-based app on an iOS or watchOS device, you need to enable Developer Mode on that device. See [`Enabling Developer Mode on a device`](enabling-developer-mode-on-a-device.md) for more information.
-
 ## See Also
 
 - [Distributing your app for beta testing and releases](distributing-your-app-for-beta-testing-and-releases.md)
@@ -142,4 +138,4 @@ Every time you run your `.ipa`-based app on an iOS or watchOS device, you need t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/distributing-your-app-to-registered-devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/distributing-your-app-to-registered-devices)*

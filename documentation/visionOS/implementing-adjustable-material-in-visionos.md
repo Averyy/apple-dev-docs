@@ -29,8 +29,6 @@ These parameters connect through various nodes, ultimately feeding into a `Reali
 
 > **Note**: The parameter `eta` represents `η`, which symbolizes the index of refraction. For more information, see [`Refract (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/Geometric/Refract-(RealityKit)).
 
-The parameter `eta` represents `η`, which symbolizes the index of refraction. For more information, see [`Refract (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/Geometric/Refract-(RealityKit)).
-
 ##### Update the Component Material
 
 To handle updates to the dragon model, the app creates the `updateMaterials(_:)` method, which employs a recursive approach to update all child entities that the parent entity manages. Then the app applies the `update` closure to each material within the component, to update those materials:
@@ -185,4 +183,4 @@ var body: some View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/implementing-adjustable-material-in-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/implementing-adjustable-material-in-visionos)*

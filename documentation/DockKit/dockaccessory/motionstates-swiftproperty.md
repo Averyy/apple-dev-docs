@@ -1,6 +1,6 @@
 # motionStates
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: property
 
 Motion information from the dock accessory that includes current orientation and velocity of all axes.
@@ -26,8 +26,6 @@ Motion states with the current orientation and velocity. The dock accessory cont
 This value holds a [`DockAccessory.MotionStates`](dockaccessory/motionstates-swift.struct.md) object, an asynchronous iterator used to find the desired dock accessory.
 
 > **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device is disconnected, or [`DockKitError.notSupportedByDevice`](dockkiterror/notsupportedbydevice.md) if device doesn’t support updates.
-
-[`DockKitError.notConnected`](dockkiterror/notconnected.md) if device is disconnected, or [`DockKitError.notSupportedByDevice`](dockkiterror/notsupportedbydevice.md) if device doesn’t support updates.
 
 ## See Also
 

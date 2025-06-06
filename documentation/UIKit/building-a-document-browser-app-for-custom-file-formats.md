@@ -1,6 +1,6 @@
 # Building a document browser app for custom file formats
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Implement a custom document file format to manage user interactions with files on different cloud storage providers.
 
@@ -26,8 +26,6 @@ Xcode provides a Document Based App template for creating document-based apps. T
 Once you have selected the template, the project provides a storyboard, which uses a [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) as its entry point. Additionally, the template creates a [`UIDocument`](uidocument.md) subclass, Document, which acts as the representation of a document of your application at runtime. The logic to create new documents is already in place. When the user creates a new document, or opens an existing one by tapping a file in the document browser view controller, the system presents a `DocumentViewController`, which has a reference to a `Document` instance. This `DocumentViewController` acts as the main user interface to view and modify the contents of a document.
 
 > **Note**: If you want to migrate an existing document-based application to use the [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md), make sure to present the document browser view controller full-screen as the first user interface the user sees when launching your application. Make sure to implement the [`UIDocumentBrowserViewControllerDelegate`](uidocumentbrowserviewcontrollerdelegate.md) protocol and assign an instance of it to the document browser view controller.
-
-If you want to migrate an existing document-based application to use the [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md), make sure to present the document browser view controller full-screen as the first user interface the user sees when launching your application. Make sure to implement the [`UIDocumentBrowserViewControllerDelegate`](uidocumentbrowserviewcontrollerdelegate.md) protocol and assign an instance of it to the document browser view controller.
 
 Next, you can extend the project to fit your needs. Set up a custom file format in the exported Uniform Type Identifiers (UTIs) of your application, or configure one or more existing UTIs in the imported UTIs section. The application’s document types need to be configured as well, so that the document browser view controller can display the correct files to the user.
 
@@ -93,4 +91,4 @@ Finally, it’s important to know when to use the picker view controller. The [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/building-a-document-browser-app-for-custom-file-formats)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/building-a-document-browser-app-for-custom-file-formats)*

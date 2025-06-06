@@ -1,6 +1,6 @@
 # importGeoJSON
 
-**Framework**: MapKit JS  
+**Framework**: Mapkitjs  
 **Kind**: method
 
 Converts imported GeoJSON data to MapKit JS items.
@@ -38,8 +38,6 @@ MapKit JS invokes this callback with two arguments, `error` on failure and `resu
 
 > **Note**:  GeoJSON is a format that encodes geographic data. See the GeoJSON standard specification [`RFC 7946`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7946) for more information.
 
- GeoJSON is a format that encodes geographic data. See the GeoJSON standard specification [`RFC 7946`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7946) for more information.
-
 ## Parameters
 
 - `data`: The original GeoJSON data, either a URL to a GeoJSON file, or a GeoJSON object.
@@ -57,4 +55,4 @@ MapKit JS invokes this callback with two arguments, `error` on failure and `resu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit/importgeojson)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit/importgeojson)*

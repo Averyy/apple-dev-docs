@@ -17,8 +17,6 @@ The attachment’s [`name`](xctattachment/name.md) property is the file name of 
 
 > **Note**:  Use this initializer with files only. To create an attachment from a directory, use [`init(compressedContentsOfDirectoryAtURL:)`](xctattachment/init(compressedcontentsofdirectoryaturl:).md).
 
- Use this initializer with files only. To create an attachment from a directory, use [`init(compressedContentsOfDirectoryAtURL:)`](xctattachment/init(compressedcontentsofdirectoryaturl:).md).
-
 ## Parameters
 
 - `url`: The file URL from which data should be read to create the new attachment.

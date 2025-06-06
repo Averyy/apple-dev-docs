@@ -24,8 +24,6 @@ mutating func appendPathComponent(_ pathComponent: String)
 
 > **Note**:  This function performs a file system operation to determine if the path component is a directory. If so, it will append a trailing `/`. If you know in advance that the path component is a directory or not, then use `func appendingPathComponent(_:isDirectory:)`.
 
- This function performs a file system operation to determine if the path component is a directory. If so, it will append a trailing `/`. If you know in advance that the path component is a directory or not, then use `func appendingPathComponent(_:isDirectory:)`.
-
 New code should use [`append(path:directoryHint:)`](url/append(path:directoryhint:).md) instead of this method.
 
 ## Parameters

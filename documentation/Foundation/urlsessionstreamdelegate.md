@@ -26,8 +26,6 @@ In addition to these methods, be sure to implement the methods in the [`URLSessi
 
 > **Note**: A [`URLSession`](urlsession.md) object need not have a delegate. If no delegate is assigned, a system-provided delegate is used, and you must provide a completion callback to obtain the data.
 
-A [`URLSession`](urlsession.md) object need not have a delegate. If no delegate is assigned, a system-provided delegate is used, and you must provide a completion callback to obtain the data.
-
 ## Topics
 
 ### Handling rerouting
@@ -62,4 +60,4 @@ A [`URLSession`](urlsession.md) object need not have a delegate. If no delegate 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessionstreamdelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessionstreamdelegate)*

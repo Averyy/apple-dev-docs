@@ -1,6 +1,6 @@
 # MPMoviePlayerController
 
-**Framework**: Media Player  
+**Framework**: Mediaplayer  
 **Kind**: class
 
 A type of movie player that manages the playback of a movie from a file or a network stream.
@@ -19,8 +19,6 @@ class MPMoviePlayerController
 #### Overview
 
 > ❗ **Important**:  The [`MPMoviePlayerController`](mpmovieplayercontroller.md) class is formally deprecated in iOS 9. (The [`MPMoviePlayerViewController`](mpmovieplayerviewcontroller.md) class is also formally deprecated.) To play video content in iOS 9 and later, instead use the [`AVPictureInPictureController`](https://developer.apple.com/documentation/AVKit/AVPictureInPictureController) or [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) class from the AVKit framework, or the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class from WebKit.
-
- The [`MPMoviePlayerController`](mpmovieplayercontroller.md) class is formally deprecated in iOS 9. (The [`MPMoviePlayerViewController`](mpmovieplayerviewcontroller.md) class is also formally deprecated.) To play video content in iOS 9 and later, instead use the [`AVPictureInPictureController`](https://developer.apple.com/documentation/AVKit/AVPictureInPictureController) or [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) class from the AVKit framework, or the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class from WebKit.
 
 Playback occurs in a view owned by the movie player and takes place either fullscreen or inline. You can incorporate a movie player’s view into a view hierarchy owned by your app, or use an MPMoviePlayerViewController object to manage the presentation for you.
 
@@ -47,8 +45,6 @@ This class supports programmatic control of movie playback, and user-based contr
 You typically specify the movie you want to play when you create a new `MPMoviePlayerController` object. However, you can also change the currently playing movie by changing the value in the [`contentURL`](mpmovieplayercontroller/contenturl.md) property. Changing this property lets you reuse the same movie player controller object in multiple places. For performance reasons you may want to play movies as local files. Do this by first downloading them to a local directory.
 
 > **Note**:  Although you can create multiple `MPMoviePlayerController` objects and present their views in your interface, only one movie player at a time can play its movie.
-
- Although you can create multiple `MPMoviePlayerController` objects and present their views in your interface, only one movie player at a time can play its movie.
 
 To facilitate the creation of video bookmarks or chapter links for a long movie, the `MPMoviePlayerController` class defines methods for generating thumbnail images at specific times within a movie. You can request a single thumbnail image using the [`thumbnailImage(atTime:timeOption:)`](mpmovieplayercontroller/thumbnailimage(attime:timeoption:).md) method or request multiple thumbnail images using the [`requestThumbnailImages(atTimes:timeOption:)`](mpmovieplayercontroller/requestthumbnailimages(attimes:timeoption:).md) method.
 
@@ -243,4 +239,4 @@ For more information, see the Notifications section in this document.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MediaPlayer/mpmovieplayercontroller)*

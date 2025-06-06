@@ -1,6 +1,6 @@
 # Reading and Writing HealthKit Series Data
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Share and read heartbeat and quantity series data using series builders and queries.
 
@@ -13,8 +13,6 @@ Share and read heartbeat and quantity series data using series builders and quer
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`218: Exploring New Data Representations in HealthKit`](https://developer.apple.comhttps://developer.apple.com/wwdc19/218).
 
-This sample code project is associated with WWDC 2019 session [`218: Exploring New Data Representations in HealthKit`](https://developer.apple.comhttps://developer.apple.com/wwdc19/218).
-
 ## See Also
 
 - [Saving data to HealthKit](saving-data-to-healthkit.md)
@@ -23,4 +21,4 @@ This sample code project is associated with WWDC 2019 session [`218: Exploring N
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/reading-and-writing-healthkit-series-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/reading-and-writing-healthkit-series-data)*

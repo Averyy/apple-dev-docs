@@ -1,6 +1,6 @@
 # mode
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 Determines the entities transform [`from`](fromtobyaction/from.md) and [`to`](fromtobyaction/to.md) are relative to.
@@ -21,8 +21,6 @@ var mode: FromToByAction<Transform>.TransformMode? { get }
 #### Discussion
 
 > **Note**: The expection to this mode is `by`. This property is relative to the starting value, Set this to `nil` if only `by` is specified.
-
-The expection to this mode is `by`. This property is relative to the starting value, Set this to `nil` if only `by` is specified.
 
 
 ---

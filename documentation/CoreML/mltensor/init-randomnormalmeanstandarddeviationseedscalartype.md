@@ -1,6 +1,6 @@
 # init(randomNormal:mean:standardDeviation:seed:scalarType:)
 
-**Framework**: Core ML  
+**Framework**: Coreml  
 **Kind**: init
 
 Creates a tensor with the specified shape, randomly sampling scalar values from a normal distribution.
@@ -23,8 +23,6 @@ init<Scalar>(randomNormal shape: [Int], mean: Scalar = Scalar.init(0.0), standar
 #### Discussion
 
 > **Note**: Using the same seed produces the same result only when dispatched to the same compute device.
-
-Using the same seed produces the same result only when dispatched to the same compute device.
 
 ## Parameters
 

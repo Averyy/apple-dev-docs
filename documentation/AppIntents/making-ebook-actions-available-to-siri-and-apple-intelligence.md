@@ -1,6 +1,6 @@
 # Making ebook actions available to Siri and Apple Intelligence
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Create app intents and entities to integrate your app’s ebook and audiobook functionality with Siri and Apple Intelligence.
 
@@ -9,8 +9,6 @@ Create app intents and entities to integrate your app’s ebook and audiobook fu
 To integrate your app’s ebook and audiobook capabilities with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance for your app intent, app entity, and app enumeration implementation that Apple Intelligence needs.
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 For example, if your app allows a person to open an ebook, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.books` domain and the [`openBook`](assistantschemas/booksintent/openbook.md) schema:
 
@@ -87,4 +85,4 @@ For a list of available app enumeration schemas in the `.books` domain, see [`As
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-ebook-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-ebook-actions-available-to-siri-and-apple-intelligence)*

@@ -38,8 +38,6 @@ print(greatestHeight)
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## See Also
 
 - [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](data/first(where:).md)

@@ -1,6 +1,6 @@
 # Generating Tokens for API Requests
 
-**Framework**: Enterprise Program API
+**Framework**: Enterpriseprogramapi
 
 Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
 
@@ -37,8 +37,6 @@ The key IDs appear in a column under the Active heading.
 2. Click Copy Key ID.
 
 > 💡 **Tip**:  If you have more than one Enterprise Program key, use the key ID of the same private key that you use to sign the JWT.
-
- If you have more than one Enterprise Program key, use the key ID of the same private key that you use to sign the JWT.
 
 Here’s an example of a JWT header:
 
@@ -98,8 +96,6 @@ the Enterprise Program API rejects a token with a scope claim if none of the sco
 
 > **Note**:  The order of query parameters isn’t important. Additionally, the Enterprise Program API ignores the following query parameters when it checks the scope: `limit`, `cursor`, and `sort`.
 
- The order of query parameters isn’t important. Additionally, the Enterprise Program API ignores the following query parameters when it checks the scope: `limit`, `cursor`, and `sort`.
-
 The following code listing shows an example of a JWT payload with a scope.
 
 ```javascript
@@ -132,8 +128,6 @@ Regardless of the programming language you’re using with the the Enterprise Pr
 
 > 💡 **Tip**:  You don’t need to generate a new token for every API request. To get better performance from the the Enterprise Program API, reuse the same signed token for multiple requests until it expires.
 
- You don’t need to generate a new token for every API request. To get better performance from the the Enterprise Program API, reuse the same signed token for multiple requests until it expires.
-
 ##### Include the Jwt in the Requests Authorization Header
 
 Once you have a complete and signed token, provide the token in the request’s authorization header as a bearer token.
@@ -159,4 +153,4 @@ curl -v -H 'Authorization: Bearer [signed token]'
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/enterpriseprogramapi/generating-tokens-for-api-requests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/EnterpriseProgramAPI/generating-tokens-for-api-requests)*

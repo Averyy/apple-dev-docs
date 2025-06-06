@@ -1,6 +1,6 @@
 # index(_:offsetBy:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns an index that is the specified distance from the given index.
@@ -38,8 +38,6 @@ print(s[i])
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # rightMouseDown(with:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Informs the receiver that the user has pressed the right mouse button.
@@ -20,8 +20,6 @@ func rightMouseDown(with event: NSEvent)
 The default implementation simply passes this message to the next responder.
 
 > **Note**:  Prior to OS X v10.7, [`NSView`](nsview.md) did not pass unhandled [`rightMouseDown(with:)`](nsresponder/rightmousedown(with:).md) events up the responder chain. In macOS 10.7 and later, [`NSView`](nsview.md) passes [`rightMouseDown(with:)`](nsresponder/rightmousedown(with:).md) events up the responder chain if AppKit doesn’t find an associated context menu to display for the view. To avoid binary compatibility issues, this new behavior is enabled only for applications linked on macOS 10.7 or later.
-
- Prior to OS X v10.7, [`NSView`](nsview.md) did not pass unhandled [`rightMouseDown(with:)`](nsresponder/rightmousedown(with:).md) events up the responder chain. In macOS 10.7 and later, [`NSView`](nsview.md) passes [`rightMouseDown(with:)`](nsresponder/rightmousedown(with:).md) events up the responder chain if AppKit doesn’t find an associated context menu to display for the view. To avoid binary compatibility issues, this new behavior is enabled only for applications linked on macOS 10.7 or later.
 
 ## Parameters
 

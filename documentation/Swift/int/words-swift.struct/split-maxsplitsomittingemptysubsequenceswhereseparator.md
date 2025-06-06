@@ -52,8 +52,6 @@ print(line.split(omittingEmptySubsequences: false, whereSeparator: { $0 == " " }
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `maxSplits`: The maximum number of times to split the collection, or   one less than the number of subsequences to return. If    subsequences are returned, the last one is a suffix   of the original collection containing the remaining elements.    must be greater than or equal to zero. The default value   is  .

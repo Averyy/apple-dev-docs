@@ -1,6 +1,6 @@
 # Personalizing a Model with On-Device Updates
 
-**Framework**: Core ML
+**Framework**: Coreml
 
 Modify an updatable Core ML model by running an update task with labeled data.
 
@@ -16,8 +16,6 @@ With the [`Core ML`](CoreML.md) framework, you can customize an updatable model 
 This sample demonstrates how to update the drawing classifier with an [`MLUpdateTask`](MLUpdateTask.md). The app initiates an update task with the user’s drawings paired with a string label. Once the update is complete, the app uses the updated drawing classifier to recognize similar drawings from the user and convert each into its associated string label.
 
 > **Note**: Run this sample on a device or Simulator with iOS 13 or later, or iPadOS 13 or later.
-
-Run this sample on a device or Simulator with iOS 13 or later, or iPadOS 13 or later.
 
 ##### Prepare Your Model Update Data
 
@@ -105,8 +103,6 @@ guard let updateTask = try? MLUpdateTask(forModelAt: url,
 
 > ❗ **Important**: An update task can only update a  model file—one whose name ends with `.mlmodelc`.
 
-An update task can only update a  model file—one whose name ends with `.mlmodelc`.
-
 ##### Run the Update Task
 
 You begin an update task by calling its [`resume()`](MLTask/resume().md) method.
@@ -173,4 +169,4 @@ updatedDrawingClassifier = model
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coreml/personalizing-a-model-with-on-device-updates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/personalizing-a-model-with-on-device-updates)*

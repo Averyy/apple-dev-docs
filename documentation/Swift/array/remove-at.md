@@ -38,8 +38,6 @@ print(measurements)
 
 > **Note**: O(), where  is the length of the array.
 
-O(), where  is the length of the array.
-
 ## Parameters
 
 - `index`: The position of the element to remove.   must   be a valid index of the array.

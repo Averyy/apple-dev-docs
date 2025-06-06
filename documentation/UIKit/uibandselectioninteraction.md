@@ -1,6 +1,6 @@
 # UIBandSelectionInteraction
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that tracks the selection of multiple items using pointer-based input.
@@ -56,8 +56,6 @@ view.addInteraction(bandSelectionInteraction)
 
 > **Note**:  You don’t need to add this interaction object to a collection view to handle the selection of items. [`UICollectionView`](uicollectionview.md) already supports its own multiple selection interface. For a list of methods you use to manage selections in a collection view, see [`UICollectionViewDelegate`](uicollectionviewdelegate.md).
 
- You don’t need to add this interaction object to a collection view to handle the selection of items. [`UICollectionView`](uicollectionview.md) already supports its own multiple selection interface. For a list of methods you use to manage selections in a collection view, see [`UICollectionViewDelegate`](uicollectionviewdelegate.md).
-
 ## Topics
 
 ### Creating a band selection interaction
@@ -101,4 +99,4 @@ view.addInteraction(bandSelectionInteraction)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibandselectioninteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uibandselectioninteraction)*

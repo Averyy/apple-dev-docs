@@ -1,6 +1,6 @@
 # Git References
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read information about the canonical reference for a Git branch or tag.
 
@@ -15,8 +15,6 @@ The `scmGitReferences` resource represents the canonical Git reference for the G
 For example, if Xcode Cloud uses the `bug-fix` branch for a build, the canonical Git reference is `refs/heads/bug-fix` and the name is `bug-fix`. If Xcode Cloud starts a build for the `release-1.0` tag, the canonical name is `refs/tags/release-1.0` and the name is `release-1.0`.
 
 > **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
-
- This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
 
@@ -43,4 +41,4 @@ For example, if Xcode Cloud uses the `bug-fix` branch for a build, the canonical
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/git-references)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/git-references)*

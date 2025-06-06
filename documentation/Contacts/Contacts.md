@@ -155,8 +155,6 @@ Users can grant or deny access to contact data on a per-app basis. Any call to [
 
 > ❗ **Important**: An iOS app linked on or after iOS 10 needs to include in its `Info.plist` file the usage description keys for the types of data it needs to access or it crashes. To access Contacts data specifically, it needs to include [`NSContactsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW14).
 
-An iOS app linked on or after iOS 10 needs to include in its `Info.plist` file the usage description keys for the types of data it needs to access or it crashes. To access Contacts data specifically, it needs to include [`NSContactsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW14).
-
 ###### Partial Contacts
 
 A partial contact results when the system fetches only some of a contact object’s properties from a contact store. All fetched contact objects are partial contacts. If you try to access a property value that the system didn’t fetch, you get an exception. If you are unsure which keys the system fetched in the contact, check the availability of the property values before you access them. You can either use [`isKeyAvailable(_:)`](cncontact/iskeyavailable(_:).md) to check the availability of a single contact key, or [`areKeysAvailable(_:)`](cncontact/arekeysavailable(_:).md) to check multiple keys. If the desired keys aren’t available, refetch the contact with them.
@@ -192,8 +190,6 @@ By default the Contacts framework returns unified contacts. Each fetched unified
 The contact store ([`CNContactStore`](cncontactstore.md)) also saves changes to the Contacts framework objects. The [`CNSaveRequest`](cnsaverequest.md) class enables save operations and allows batching of changes to multiple contacts and groups into a single operation. After adding all objects to the save request, it can execute with a contact store as the code example below shows. Don’t access the objects in the save request while the save is executing, because the objects may have modifications.
 
 > **Note**: [`CNSaveRequest`](cnsaverequest.md) isn’t available in watchOS.
-
-[`CNSaveRequest`](cnsaverequest.md) isn’t available in watchOS.
 
 Create and save a new contact.
 

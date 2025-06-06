@@ -19,8 +19,6 @@ The sample app uses the front-facing camera to capture video of the user. It run
 
 > **Note**: You must run the sample app on a physical device with iOS 15 or later.
 
-You must run the sample app on a physical device with iOS 15 or later.
-
 ##### Prepare the Requests
 
 The app uses two Vision requests to perform its logic: [`VNDetectFaceRectanglesRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest) and [`VNGeneratePersonSegmentationRequest`](https://developer.apple.comhttp://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest). It uses `VNDetectFaceRectanglesRequest` to detect a bounding rectangle around a person’s face. The observation the request produces also includes the [`roll`](https://developer.apple.comhttp://developer.apple.com/documentation/vision/vnfaceobservation/2980939-roll), [`yaw`](https://developer.apple.comhttp://developer.apple.com/documentation/vision/vnfaceobservation/2980940-yaw), and new in iOS and tvOS 15 and macOS 12, the [`pitch`](https://developer.apple.comhttp://developer.apple.com/documentation/vision/vnfaceobservation/3750998-pitch) angles of the rectangle. The app uses the angles to dynamically calculate background colors as the user moves their head.
@@ -129,4 +127,4 @@ currentCIImage = blendFilter.outputImage?.oriented(.left)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/applying-matte-effects-to-people-in-images-and-video)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/applying-matte-effects-to-people-in-images-and-video)*

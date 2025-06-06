@@ -1,6 +1,6 @@
 # Adding spatial Persona support to an activity
 
-**Framework**: Group Activities
+**Framework**: Groupactivities
 
 Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
 
@@ -72,8 +72,6 @@ When defining an activity, define additional data messages to synchronize any in
 
 > **Note**: Make sure you separate the messages that all participants require from the ones that only make sense when spatial Personas are visible. Maintaining the shared context is necessary when spatial Personas are visible, but isn’t always necessary at other times. For example, Freeform doesn’t synchronize the scroll position for someone without a spatial Persona.
 
-Make sure you separate the messages that all participants require from the ones that only make sense when spatial Personas are visible. Maintaining the shared context is necessary when spatial Personas are visible, but isn’t always necessary at other times. For example, Freeform doesn’t synchronize the scroll position for someone without a spatial Persona.
-
 To determine when someone’s spatial Persona is visible, monitor the [`localParticipantStates`](systemcoordinator/localparticipantstates.md) of your session’s [`SystemCoordinator`](systemcoordinator.md) object. The [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) in this property reports participant-related state changes, including changes to the visibility of their spatial Persona. Get the [`isSpatial`](systemcoordinator/participantstate/isspatial.md) property of the returned [`SystemCoordinator.ParticipantState`](systemcoordinator/participantstate.md) structure and use it to configure your app’s behavior. The following example uses a task to update the game state to accommodate spatial Personas. When the current participant is spatial, the game sends additional messages to maintain the shared context.
 
 ```swift
@@ -113,8 +111,6 @@ The system reports `nil` for the immersion style when a participant dismisses th
 
 > **Note**: If a participant presses the Digital Crown while an immersive space is open, the system dismisses the space without notifying the rest of the group. Someone might use this feature to temporarily leave the activity and perform another task. After they perform that task, they can use the system-provided UI to rejoin the activity and return to the group immersive space.
 
-If a participant presses the Digital Crown while an immersive space is open, the system dismisses the space without notifying the rest of the group. Someone might use this feature to temporarily leave the activity and perform another task. After they perform that task, they can use the system-provided UI to rejoin the activity and return to the group immersive space.
-
 ##### Place Content Relative to a Participant in an Immersive Space
 
 When an activity takes place in an immersive space, the system creates a shared coordinate system for the participants and content. In this new coordinate space, the origin of the coordinate space is not the same as the origin of any of the participants. If an activity-related window or volume is visible, the system places the window or volume at the new origin. If the activity doesn’t use a window or volume, the system arranges the participants in a circle and sets the origin of the coordinate space to the circle’s center. The following figure shows the origin of the shared coordinate system for a window, volume, and immersive space relative to several spatial Personas.
@@ -148,4 +144,4 @@ The displacement between a person and the origin of the scene doesn’t change d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/adding-spatial-persona-support-to-an-activity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GroupActivities/adding-spatial-persona-support-to-an-activity)*

@@ -1,6 +1,6 @@
 # generateCapsule(height:radius:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Creates a capsule shape with the specified height and radius.
@@ -26,8 +26,6 @@ The new capsule.
 #### Discussion
 
 > **Note**: Collision shape extents that fall below 2mm are forced to be 2mm in size - this includes, entities with negative scale values.
-
-Collision shape extents that fall below 2mm are forced to be 2mm in size - this includes, entities with negative scale values.
 
 ## Parameters
 

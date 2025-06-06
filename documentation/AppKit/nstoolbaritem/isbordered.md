@@ -1,6 +1,6 @@
 # isBordered
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 A Boolean value that indicates whether the toolbar item has a bordered style.
@@ -24,8 +24,6 @@ If your toolbar item displays a custom view, modifying this property applies the
 
 > **Note**:  In macOS 12 and earlier, [`NSToolbarItem`](nstoolbaritem.md) doesn’t support custom views in Mac apps built with Mac Catalyst.
 
- In macOS 12 and earlier, [`NSToolbarItem`](nstoolbaritem.md) doesn’t support custom views in Mac apps built with Mac Catalyst.
-
 ## See Also
 
 - [var isVisible: Bool](nstoolbaritem/isvisible.md)
@@ -46,4 +44,4 @@ If your toolbar item displays a custom view, modifying this property applies the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstoolbaritem/isbordered)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstoolbaritem/isbordered)*

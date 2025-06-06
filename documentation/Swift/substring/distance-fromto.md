@@ -30,8 +30,6 @@ Unless the collection conforms to the `BidirectionalCollection` protocol, `start
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the resulting distance.
 
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the resulting distance.
-
 ## Parameters
 
 - `start`: A valid index of the collection.

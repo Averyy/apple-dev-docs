@@ -1,6 +1,6 @@
 # Build a workout app for Apple Watch
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
 
@@ -13,8 +13,6 @@ Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`10009: Build a workout app for Apple Watch`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10009/).
-
-This sample code project is associated with WWDC21 session [`10009: Build a workout app for Apple Watch`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10009/).
 
 ##### Configure the Sample Code Project
 
@@ -47,4 +45,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/build-a-workout-app-for-apple-watch)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/build-a-workout-app-for-apple-watch)*

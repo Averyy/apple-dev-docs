@@ -34,8 +34,6 @@ if let lastNumber = numbers.last {
 
 > **Note**: O(1)
 
-O(1)
-
 ## See Also
 
 - [subscript(String.Index) -> Character](string/subscript(_:)-lc0v.md)

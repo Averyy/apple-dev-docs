@@ -1,6 +1,6 @@
 # Handling Workout Requests with SiriKit
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Add an Intent Extension to your app that handles requests to control workouts with Siri.
 
@@ -32,8 +32,6 @@ This sample app can be run in the iOS Simulator without any special setup, but i
 5. Reference the new App Group identifier in the source code. Open `WorkoutHistory.swift` and modify the implementation of the `sharedUserDefaults` property to reference the new identifier.
 
 > **Note**: Each target in the project must preface its bundle identifier with the bundle identifier of the app’s main target. For example, if you set the bundle identifier for the `Ascent` target to `com.example.Ascent`, set the bundle identifier for the `AscentIntentsExtension` target to `com.example.Ascent.AscentIntentsExtension`.
-
-Each target in the project must preface its bundle identifier with the bundle identifier of the app’s main target. For example, if you set the bundle identifier for the `Ascent` target to `com.example.Ascent`, set the bundle identifier for the `AscentIntentsExtension` target to `com.example.Ascent.AscentIntentsExtension`.
 
 ##### Recognize and Respond to Workout Requests
 
@@ -92,8 +90,6 @@ func resolveWorkoutName(for intent: INStartWorkoutIntent, with completion: @esca
 ```
 
 > **Note**: It is not necessary to implement  of the available parameter resolution methods, only those that need additional logic. For example, the extension in this sample doesn’t need to do any special processing of the goal value when starting a workout, so there is no implementation of `resolveGoalValue(for:with:)`, although the app still recognizes and processes the goal value.
-
-It is not necessary to implement  of the available parameter resolution methods, only those that need additional logic. For example, the extension in this sample doesn’t need to do any special processing of the goal value when starting a workout, so there is no implementation of `resolveGoalValue(for:with:)`, although the app still recognizes and processes the goal value.
 
 To aid Siri with recognition of parameter names like “wall climb” and “boulder climb,” add an `AppIntentVocabulary.plist` to a project. More information on this file and how it can add vocabulary to Siri can be found in [`Registering Custom Vocabulary with SiriKit`](registering-custom-vocabulary-with-sirikit.md).
 
@@ -155,4 +151,4 @@ func application(_ application: UIApplication, handle intent: INIntent, completi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/handling-workout-requests-with-sirikit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/handling-workout-requests-with-sirikit)*

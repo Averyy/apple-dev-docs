@@ -60,8 +60,6 @@ To sign the pass, follow these steps:
 
 > **Note**:  Don’t include metadata files that aren’t part of the pass format, such as the `.DS_Store` file in the manifest or distributable pass.
 
- Don’t include metadata files that aren’t part of the pass format, such as the `.DS_Store` file in the manifest or distributable pass.
-
 The manifest is a JSON object that contains a dictionary of the SHA1 hashes for each of the source files for the pass. The dictionary key is the pathname of the file relative to the top level of the pass, and the value is the SHA1 hash. For example, the code below shows the manifest.json file for a pass that’s localized for English and Simplified Chinese:
 
 ```other
@@ -119,4 +117,4 @@ If your pass doesn’t build correctly, check whether the following are all true
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/building-a-pass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/building-a-pass)*

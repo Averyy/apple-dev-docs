@@ -1,6 +1,6 @@
 # Integrating Your App with Siri Event Suggestions
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Donate reservations and provide quick access to event details throughout the system.
 
@@ -13,8 +13,6 @@ Donate reservations and provide quick access to event details throughout the sys
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2020 session [`Broaden Your Reach with Siri Event Suggestions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10197/).
-
-This sample code project is associated with WWDC 2020 session [`Broaden Your Reach with Siri Event Suggestions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10197/).
 
 ##### Configure the Sample Code Project
 
@@ -42,4 +40,4 @@ To build this project, use Xcode 12.0 with the iOS 14.0 SDK. The runtime require
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/integrating-your-app-with-siri-event-suggestions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/integrating-your-app-with-siri-event-suggestions)*

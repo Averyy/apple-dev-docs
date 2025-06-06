@@ -25,8 +25,6 @@ The 11-bit components for red and green each store five exponent bits and six ma
 
 > **Note**:  None of the color components have a sign bit.
 
- None of the color components have a sign bit.
-
 ## See Also
 
 - [MTLDataType.rgba8Snorm](mtldatatype/rgba8snorm.md)

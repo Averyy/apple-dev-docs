@@ -1,6 +1,6 @@
 # CFURLCreateWithBytes(_:_:_:_:_:)
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: func
 
 Creates a `CFURL` object using a given character bytes.
@@ -29,8 +29,6 @@ A new `CFURL` object. Ownership follows the create rule. See [`The Create Rule`]
 The specified string encoding will be used both to interpret `URLBytes`, and to interpret any percent-escapes within the string.
 
 > **Note**:  This function does not support string encoding which isn’t a superset of ASCII encoding. Both [`CFURLGetBytes(_:_:_:)`](cfurlgetbytes(_:_:_:).md) and [`CFURLGetByteRangeForComponent(_:_:_:)`](cfurlgetbyterangeforcomponent(_:_:_:).md) require 7-bit ASCII characters to be stored in a single 8-bit byte. The following [`CFStringEncodings`](cfstringencodings.md) can be used: [`CFStringBuiltInEncodings.macRoman`](cfstringbuiltinencodings/macroman.md), [`CFStringBuiltInEncodings.windowsLatin1`](cfstringbuiltinencodings/windowslatin1.md), [`CFStringBuiltInEncodings.isoLatin1`](cfstringbuiltinencodings/isolatin1.md), [`CFStringBuiltInEncodings.nextStepLatin`](cfstringbuiltinencodings/nextsteplatin.md), [`CFStringBuiltInEncodings.ASCII`](cfstringbuiltinencodings/ascii.md) and [`CFStringBuiltInEncodings.UTF8`](cfstringbuiltinencodings/utf8.md).
-
- This function does not support string encoding which isn’t a superset of ASCII encoding. Both [`CFURLGetBytes(_:_:_:)`](cfurlgetbytes(_:_:_:).md) and [`CFURLGetByteRangeForComponent(_:_:_:)`](cfurlgetbyterangeforcomponent(_:_:_:).md) require 7-bit ASCII characters to be stored in a single 8-bit byte. The following [`CFStringEncodings`](cfstringencodings.md) can be used: [`CFStringBuiltInEncodings.macRoman`](cfstringbuiltinencodings/macroman.md), [`CFStringBuiltInEncodings.windowsLatin1`](cfstringbuiltinencodings/windowslatin1.md), [`CFStringBuiltInEncodings.isoLatin1`](cfstringbuiltinencodings/isolatin1.md), [`CFStringBuiltInEncodings.nextStepLatin`](cfstringbuiltinencodings/nextsteplatin.md), [`CFStringBuiltInEncodings.ASCII`](cfstringbuiltinencodings/ascii.md) and [`CFStringBuiltInEncodings.UTF8`](cfstringbuiltinencodings/utf8.md).
 
 ## Parameters
 

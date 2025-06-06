@@ -1,6 +1,6 @@
 # CKQuery
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 A query that describes the criteria to apply when searching for records in a database.
@@ -153,8 +153,6 @@ To retrieve all records of a specific type, use the `TRUEPREDICATE` expression a
 
 > **Note**:  The `distanceToLocation:fromLocation:` operator function performs a radius-based location comparison, and that comparison must determine whether the location value is inside the circular area you provide. You can’t use it to search for locations outside the specified circular area. Location indexes have a resolution of no less than 10 km.
 
- The `distanceToLocation:fromLocation:` operator function performs a radius-based location comparison, and that comparison must determine whether the location value is inside the circular area you provide. You can’t use it to search for locations outside the specified circular area. Location indexes have a resolution of no less than 10 km.
-
 Listing 8. Retrieving all records of a specific type
 
 ```objc
@@ -231,4 +229,4 @@ Queries always run asynchronously and deliver results to a completion handler th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckquery)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckquery)*

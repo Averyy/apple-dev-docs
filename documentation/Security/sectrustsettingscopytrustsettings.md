@@ -39,8 +39,6 @@ The `trustSettings` parameter can return a valid but empty [`CFArray`](https://d
 
 > **Note**:  The trust settings result value [`SecTrustSettingsResult.trustRoot`](sectrustsettingsresult/trustroot.md) can only apply to root (self-signed) certificates. It’s an error to apply it to non-root certificates, including implicitly by using an empty trust settings array. Instead, use [`SecTrustSettingsResult.trustAsRoot`](sectrustsettingsresult/trustasroot.md).
 
- The trust settings result value [`SecTrustSettingsResult.trustRoot`](sectrustsettingsresult/trustroot.md) can only apply to root (self-signed) certificates. It’s an error to apply it to non-root certificates, including implicitly by using an empty trust settings array. Instead, use [`SecTrustSettingsResult.trustAsRoot`](sectrustsettingsresult/trustasroot.md).
-
 ##### Special Considerations
 
 The system authenticates the person before making changes to per-user trust settings. On macOS 11 and later, the system authenticates the person as an administrator before making changes to system-wide trust settings. Therefore, you can only modify trust settings when running in a GUI environment; for example, a launch daemon can’t modify the settings.

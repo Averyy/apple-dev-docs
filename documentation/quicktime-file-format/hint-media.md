@@ -1,6 +1,6 @@
 # Hint media
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Provide information about data units to stream in hint tracks.
 
@@ -51,8 +51,6 @@ Note that if a QuickTime media track is edited, any previously stored packetizat
 
 > ⚠️ **Warning**: Hint tracks are marked as inactive, so calling the `FlattenMovie` function with the `flattenActiveTracksOnly` bit set deletes all hint tracks from a movie.
 
-Hint tracks are marked as inactive, so calling the `FlattenMovie` function with the `flattenActiveTracksOnly` bit set deletes all hint tracks from a movie.
-
 #### Packetization Hint Media Header Atom
 
 In QuickTime movies, the media information atom (`'minf'`) contains header data specific to the media. For hint tracks, the media header is a base media information atom (`'gmhd'`). The hint track must contain the base media information atom.
@@ -88,8 +86,6 @@ The following table describes the type and values of the `'hnti'` atom.
 | `'payt'` | Variable | The payload type, which includes payload number (32-bits) followed by `rtpmap` payload string (Pascal string). |
 
 > **Note**: Any of the atoms shown in the previous table may or may not be present. These atoms are not guaranteed.
-
-Any of the atoms shown in the previous table may or may not be present. These atoms are not guaranteed.
 
 ## See Also
 

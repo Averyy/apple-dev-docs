@@ -1,6 +1,6 @@
 # Informing ClassKit that a task is about to begin
 
-**Framework**: ClassKit
+**Framework**: Classkit
 
 Activate and deactivate contexts according to user interaction.
 
@@ -44,8 +44,6 @@ Only one context can be active at a time. If you activate a new context when one
 
 > **Note**:  As demonstrated above, it’s always best to ask the framework for the context when you need it, rather than storing it in a class property. That’s because the underlying instance may change from time to time as a result of ongoing network synchronization. If you always ask for the context this way, you can be sure that you’re working with the right instance.
 
- As demonstrated above, it’s always best to ask the framework for the context when you need it, rather than storing it in a class property. That’s because the underlying instance may change from time to time as a result of ongoing network synchronization. If you always ask for the context this way, you can be sure that you’re working with the right instance.
-
 ## See Also
 
 - [func becomeActive()](clscontext/becomeactive.md)
@@ -58,4 +56,4 @@ Only one context can be active at a time. If you activate a new context when one
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/informing-classkit-that-a-task-is-about-to-begin)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/informing-classkit-that-a-task-is-about-to-begin)*

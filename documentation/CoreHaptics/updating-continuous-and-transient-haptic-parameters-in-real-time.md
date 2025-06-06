@@ -1,6 +1,6 @@
 # Updating Continuous and Transient Haptic Parameters in Real Time
 
-**Framework**: Core Haptics
+**Framework**: Corehaptics
 
 Generate continuous and transient haptic patterns in response to user touch.
 
@@ -16,8 +16,6 @@ This sample, HapticPalette, defines a two-dimensional touch area, where the x-ax
 ![A screenshot of the HapticPalette interface, showing a labeled circle and the meaning of coordinate axes controlling intensity and sharpness.](https://docs-assets.developer.apple.com/published/f2b28fefb582143ef6ad6407305de8f1/HapticPaletteAxes%402x.png)
 
 > **Note**: HapticPalette requires Xcode 11 or later. Simulator doesn’t support a haptic interface, so build and run this sample on an iPhone 8, 8 Plus, X, XR, XS, or XS Max running iOS 13 or later.
-
-HapticPalette requires Xcode 11 or later. Simulator doesn’t support a haptic interface, so build and run this sample on an iPhone 8, 8 Plus, X, XR, XS, or XS Max running iOS 13 or later.
 
 ##### Configure the App to Play Haptics
 
@@ -114,8 +112,6 @@ do {
 
 > **Note**: Sending a dynamic parameter for intensity  the original pattern’s event intensity by the dynamic parameter value. Sending a dynamic parameter for sharpness  the dynamic parameter value to the original pattern’s event sharpness.
 
-Sending a dynamic parameter for intensity  the original pattern’s event intensity by the dynamic parameter value. Sending a dynamic parameter for sharpness  the dynamic parameter value to the original pattern’s event sharpness.
-
 Only when the gesture ends does the app stop the pattern player.
 
 ```swift
@@ -179,8 +175,6 @@ Creating haptic pattern players is inexpensive, so you don’t need to keep them
 
 > **Note**: While haptic pattern players are lightweight and inexpensive to create and start, starting the haptic engine is expensive, as is stopping it, so start and stop the engine sparingly. This sample starts the engine only once, on app launch.
 
-While haptic pattern players are lightweight and inexpensive to create and start, starting the haptic engine is expensive, as is stopping it, so start and stop the engine sparingly. This sample starts the engine only once, on app launch.
-
 ## See Also
 
 - [Delivering Rich App Experiences with Haptics](delivering-rich-app-experiences-with-haptics.md)
@@ -199,4 +193,4 @@ While haptic pattern players are lightweight and inexpensive to create and start
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/updating-continuous-and-transient-haptic-parameters-in-real-time)*

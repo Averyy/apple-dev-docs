@@ -1,6 +1,6 @@
 # readPaymentCard(_:eventHandler:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Presents a sheet to read a contactless payment card for a purchase or a refund, and returns the encrypted card data.
@@ -25,8 +25,6 @@ A [`PaymentCardReadResult`](paymentcardreadresult.md) if the read operation was 
 Call this method as the first step in a financial transaction involving Tap to Pay with iPhone. This method displays a system-provided sheet with instructions on what the person needs to do. This UI remains onscreen until the system reads the person’s card, you cancel the operation, or an error occurs. After the read operation concludes successfully, deliver the returned card information to your payment service provider.
 
 > **Note**: This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
-
-This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
 
 ## Parameters
 

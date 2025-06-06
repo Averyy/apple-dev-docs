@@ -10,8 +10,6 @@ Widgets can use many, but not all, SwiftUI views to present content. Use the vie
 
 > **Note**: Widgets can’t use UIKit or AppKit views wrapped with [`UIViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIViewRepresentable) or [`NSViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/NSViewRepresentable).
 
-Widgets can’t use UIKit or AppKit views wrapped with [`UIViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIViewRepresentable) or [`NSViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/NSViewRepresentable).
-
 ## Topics
 
 ### Displaying text
@@ -155,4 +153,4 @@ Widgets can’t use UIKit or AppKit views wrapped with [`UIViewRepresentable`](h
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/swiftui-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/swiftui-views)*

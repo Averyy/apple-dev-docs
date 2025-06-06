@@ -29,8 +29,6 @@ Previously added sample buffers with decode timestamps within the time ranges ar
 
 > **Note**:  It’s not necessary to call this function before adding sample buffers for the first pass.
 
- It’s not necessary to call this function before adding sample buffers for the first pass.
-
 ## Parameters
 
 - `silo`: The frame silo object.

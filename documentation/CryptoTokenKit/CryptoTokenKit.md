@@ -1,6 +1,6 @@
 # CryptoTokenKit
 
-**Framework**: CryptoTokenKit  
+**Framework**: Cryptotokenkit  
 **Kind**: module
 
 Access security tokens and the cryptographic assets they store.
@@ -23,8 +23,6 @@ You can also use the framework to enable a token for two-factor authentication i
 Starting in macOS 10.15.4, the CryptoTokenKit framework includes support for always-available tokens, referred to as persistent tokens. Persistent token support provides access to tokens from Hardware Security Modules (HSMs). The app hosting the token extension allows the system to address and use available tokens, address and use identities available by accessing tokens, and to access additional configuration information about tokens. Persistent tokens aren’t suitable for validating a user login because they’re available on a per-user basis, and therefore aren’t accessible until after the user logs in.
 
 > **Note**:  When you want to manage the associations between users and tokens on a given computer, use the `sc_auth` command line utility. See the `sc_auth(8)` man page for details.
-
- When you want to manage the associations between users and tokens on a given computer, use the `sc_auth` command line utility. See the `sc_auth(8)` man page for details.
 
 ## Topics
 

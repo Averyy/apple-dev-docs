@@ -24,8 +24,6 @@ typealias LazyDropWhileCollection<T> = LazyDropWhileSequence<T> where T : Collec
 
 > **Note**: The performance of accessing `startIndex`, `first`, or any methods that depend on `startIndex` depends on how many elements satisfy the predicate at the start of the collection, and may not offer the usual performance given by the `Collection` protocol. Be aware, therefore, that general operations on lazy collections may not have the documented complexity.
 
-The performance of accessing `startIndex`, `first`, or any methods that depend on `startIndex` depends on how many elements satisfy the predicate at the start of the collection, and may not offer the usual performance given by the `Collection` protocol. Be aware, therefore, that general operations on lazy collections may not have the documented complexity.
-
 ## See Also
 
 - [struct LazySequence](lazysequence.md)
@@ -50,4 +48,4 @@ The performance of accessing `startIndex`, `first`, or any methods that depend o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/lazydropwhilecollection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/lazydropwhilecollection)*

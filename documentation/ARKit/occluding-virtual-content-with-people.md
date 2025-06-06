@@ -1,6 +1,6 @@
 # Occluding virtual content with people
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Cover your app’s virtual content with people that ARKit perceives in the camera feed.
 
@@ -32,8 +32,6 @@ guard ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWit
 ```
 
 > **Note**: If your device doesn’t support people occlusion, the sample stops. However, if the user’s device doesn’t support people occlusion, you should continue your AR experience without it.
-
-If your device doesn’t support people occlusion, the sample stops. However, if the user’s device doesn’t support people occlusion, you should continue your AR experience without it.
 
 #### Enable People Occlusion
 
@@ -85,4 +83,4 @@ arView.session.run(config)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/occluding-virtual-content-with-people)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/occluding-virtual-content-with-people)*

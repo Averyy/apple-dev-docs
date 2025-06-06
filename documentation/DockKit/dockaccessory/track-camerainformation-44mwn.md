@@ -1,6 +1,6 @@
 # track(_:cameraInformation:)
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: method
 
 Automatically generate and send tracking vectors to the device.
@@ -25,8 +25,6 @@ The device receives tracking vectors based on manually constructed observations.
 Disable system tracking, then supply the observations at a fixed rate between 10 and 30 times per second. Any other rate is unsupported. Calling this method without first disabling system tracking is a fatal error.
 
 > **Note**: [`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
-
-[`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
 
 ## Parameters
 

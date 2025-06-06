@@ -39,8 +39,6 @@ Likewise, if you pass a zero-length collection as the `newElements` parameter, t
 
 > **Note**: O( + ), where  is length of the array and  is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the array, this method is equivalent to `append(contentsOf:)`.
 
-O( + ), where  is length of the array and  is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the array, this method is equivalent to `append(contentsOf:)`.
-
 ## Parameters
 
 - `subrange`: The subrange of the array to replace. The start and end of   a subrange must be valid indices of the array.

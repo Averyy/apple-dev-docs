@@ -1,6 +1,6 @@
 # Sending MDM Commands to a Device
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Execute commands on a device and receive responses that contain the results of each operation.
 
@@ -21,8 +21,6 @@ In place of `PushMagicValue`, substitute the actual `PushMagic` string that the 
 In response to receiving a push notification from an MDM server, a device initiates communication by establishing a TLS connection to the MDM server URL. The device validates the server’s certificate, then uses its identity as the client certificate to authentication for the connection.
 
 > **Note**:  MDM follows HTTP `3xx` redirections without user interaction. However, it doesn’t save the URL given by HTTP `301` (Moved Permanently) redirections. Each transaction begins at the URL the MDM payload specifies.
-
- MDM follows HTTP `3xx` redirections without user interaction. However, it doesn’t save the URL given by HTTP `301` (Moved Permanently) redirections. Each transaction begins at the URL the MDM payload specifies.
 
 The device then sends a request-payload message in a plist-encoded dictionary to the MDM server using an HTTP PUT request. This message contains either an `Idle` status or the result of a previous operation.
 
@@ -112,8 +110,6 @@ If the connection breaks or the server returns a non `200` status while performi
 
 > **Note**:  An empty response body is zero bytes in length and doesn’t contain an empty property list.
 
- An empty response body is zero bytes in length and doesn’t contain an empty property list.
-
 ##### Manage the Command Queue
 
 Don’t consider a command accepted and executed by a device until the server receives the `Acknowledged` or `Error` status with the command `UUID` in the message. Until then, leave the last command on the queue.
@@ -128,4 +124,4 @@ It’s also possible for the device to send the same status twice. Examine the `
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/sending-mdm-commands-to-a-device)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/sending-mdm-commands-to-a-device)*

@@ -1,6 +1,6 @@
 # daysSinceLastExposure
 
-**Framework**: Exposure Notification  
+**Framework**: Exposurenotification  
 **Kind**: property
 
 Number of days since the most recent exposure.
@@ -20,8 +20,6 @@ var daysSinceLastExposure: Int { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 The values for this property represent the number of days since the most recent exposure, going backwards. For example, a value of `0` means that the person was exposed today, `1` was yesterday, `2` was two days ago, and so on.
 
 This property is only valid if [`matchedKeyCount`](enexposuredetectionsummary/matchedkeycount.md) > 0.
@@ -29,8 +27,6 @@ This property is only valid if [`matchedKeyCount`](enexposuredetectionsummary/ma
 The framework computes this property’s value across all matching exposures, not just exposures that meet or exceed [`minimumRiskScore`](enexposureconfiguration/minimumriskscore.md) or [`minimumRiskScoreFullRange`](enexposureconfiguration/minimumriskscorefullrange.md).
 
 > **Note**:  This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
-
- This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
 
 ## See Also
 
@@ -52,4 +48,4 @@ The framework computes this property’s value across all matching exposures, no
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposuredetectionsummary/dayssincelastexposure)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposuredetectionsummary/dayssincelastexposure)*

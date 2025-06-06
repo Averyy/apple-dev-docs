@@ -1,6 +1,6 @@
 # CPMessageComposeBarButton
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: class
 
 A button that activates Siri and initiates the compose message flow.
@@ -19,8 +19,6 @@ class CPMessageComposeBarButton
 #### Overview
 
 > **Note**:  This button type does not use a handler. Instead, tapping this button activates Siri and initiates the compose message flow.
-
- This button type does not use a handler. Instead, tapping this button activates Siri and initiates the compose message flow.
 
 ## Topics
 
@@ -58,4 +56,4 @@ class CPMessageComposeBarButton
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpmessagecomposebarbutton)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpmessagecomposebarbutton)*

@@ -17,8 +17,6 @@ The value of [`expectedFulfillmentCount`](xctestexpectation/expectedfulfillmentc
 
 > **Note**:  The value of [`expectedFulfillmentCount`](xctestexpectation/expectedfulfillmentcount.md) is ignored when [`isInverted`](xctestexpectation/isinverted.md) is [`true`](https://developer.apple.com/documentation/swift/true).
 
- The value of [`expectedFulfillmentCount`](xctestexpectation/expectedfulfillmentcount.md) is ignored when [`isInverted`](xctestexpectation/isinverted.md) is [`true`](https://developer.apple.com/documentation/swift/true).
-
 ## See Also
 
 - [var assertForOverFulfill: Bool](xctestexpectation/assertforoverfulfill.md)

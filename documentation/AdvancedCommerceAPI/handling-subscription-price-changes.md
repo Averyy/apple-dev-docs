@@ -1,6 +1,6 @@
 # Handling subscription price changes
 
-**Framework**: Advanced Commerce API
+**Framework**: Advancedcommerceapi
 
 Provide necessary customer communications to notify and gather applicable consent before you initiate a price change.
 
@@ -19,8 +19,6 @@ Once you notify customers using all required communications and gather applicabl
 ![A screenshot of the top half of the iOS Home Screen. A notification at the top of the screen displays information about a subscription price increase, including its new cost and frequency and the date when the subscription increases.](https://docs-assets.developer.apple.com/published/7fe872eaf43b2eaefbce11e6c9b9f2af/subscription-price-increase-notification%402x.png)
 
 > **Note**: When you decrease the price of a SKU, you don’t need to provide any additional communications.
-
-When you decrease the price of a SKU, you don’t need to provide any additional communications.
 
 #### Request Consent for Price Increases
 
@@ -52,8 +50,6 @@ For subscribers in South Korea who are converting from a free trial to a paid su
 
 > **Note**: For free trial or discounted offer conversions in South Korea, the 30-day window for notifications doesn’t include the conversion or payment date. For example, if a two-month free trial starts on March 1 and the payment or conversion date is May 1, you’re required to obtain the consent from the person between April 1 and April 30, the 30-day window before the payment or conversion date.
 
-For free trial or discounted offer conversions in South Korea, the 30-day window for notifications doesn’t include the conversion or payment date. For example, if a two-month free trial starts on March 1 and the payment or conversion date is May 1, you’re required to obtain the consent from the person between April 1 and April 30, the 30-day window before the payment or conversion date.
-
 #### Notify About Price Increases When Consent Isnt Needed
 
 When consent isn’t needed, you only need to notify subscribers about the new price. When increasing the price of multiple items within a bundle and none of the increases require consent, use a single API request so the customer receives a summary of the price increases, and combine notifications into a single communication per method (a single email, one price increase sheet, and a single push notification).
@@ -65,8 +61,6 @@ Use the following communications and timelines to notify subscribers:
 | All subscription durations: Send 27 days before renewal date. Note that for weekly subscriptions, you call the [`Change Subscription Price`](change-subscription-price.md) endpoint on the fourth consecutive renewal to increase the price. | Display upon first app launch after entering notice period. | Display 7 days before renewal date, if someone hasn’t viewed the price increase sheet in-app. |
 
 > **Note**: Unlike when requesting consent, you can omit sending a push notification if the customer acknowledges the increase on the price increase sheet first. Notifying via email is still required in either case.
-
-Unlike when requesting consent, you can omit sending a push notification if the customer acknowledges the increase on the price increase sheet first. Notifying via email is still required in either case.
 
 #### Design Your Price Increase Communications
 
@@ -99,4 +93,4 @@ If consent is required, include a clear “Agree to New Price” button so custo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/handling-subscription-price-changes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/handling-subscription-price-changes)*

@@ -1,6 +1,6 @@
 # displayName
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: property
 
 The localized display name of the product, if it exists.
@@ -24,8 +24,6 @@ let displayName: String
 The storefront of the device determines the language of the display name, not the preferred language set on the device. For more information, see [`Storefront`](storefront.md).
 
 > **Note**:  When you create a new product in App Store Connect or in a StoreKit configuration file, you can test it before you add a product localization. The [`displayName`](product/displayname.md) value is an empty string until you add a localization. For more information on localizations, see [`Add and remove localizations`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/view-and-edit-in-app-purchase-information#add-and-remove-localizations).
-
- When you create a new product in App Store Connect or in a StoreKit configuration file, you can test it before you add a product localization. The [`displayName`](product/displayname.md) value is an empty string until you add a localization. For more information on localizations, see [`Add and remove localizations`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/view-and-edit-in-app-purchase-information#add-and-remove-localizations).
 
 ## See Also
 

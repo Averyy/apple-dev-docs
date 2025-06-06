@@ -1,6 +1,6 @@
 # isLightingEnabled
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: property
 
 A Boolean value that determines whether SceneKit applies lighting to particle images when rendering.
@@ -27,8 +27,6 @@ If [`true`](https://developer.apple.com/documentation/swift/true), SceneKit uses
 The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 > **Note**:  SceneKit uses only one [`SCNLight`](scnlight.md) object to illuminate rendered particles. Use the [`categoryBitMask`](scnnode/categorybitmask.md) of the node containing the particle system to control which light applies to the particles.
-
- SceneKit uses only one [`SCNLight`](scnlight.md) object to illuminate rendered particles. Use the [`categoryBitMask`](scnnode/categorybitmask.md) of the node containing the particle system to control which light applies to the particles.
 
 ## See Also
 

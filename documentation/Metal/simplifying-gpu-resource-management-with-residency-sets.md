@@ -32,8 +32,6 @@ A residency set handles redundant allocations by ignoring instances that already
 
 > ❗ **Important**:  Adding a resource allocation that originates from an [`MTLHeap`](mtlheap.md) to a residency set makes that entire heap resident.
 
- Adding a resource allocation that originates from an [`MTLHeap`](mtlheap.md) to a residency set makes that entire heap resident.
-
 Finalize and apply the pending changes to the residency set by calling its [`commit()`](mtlresidencyset/commit().md) method.
 
 See [`MTLResidencySet`](mtlresidencyset.md) for information about working with residency sets, including:
@@ -67,8 +65,6 @@ When your app calls a command buffer’s [`commit()`](mtlcommandbuffer/commit().
 
 > 💡 **Tip**:  Attach a residency set to a command queue for resources the GPU needs access to frequently, or for the lifetime of your app.
 
- Attach a residency set to a command queue for resources the GPU needs access to frequently, or for the lifetime of your app.
-
 Attaching a residency set to a command queue is more efficient than attaching that residency set to multiple command buffers from that queue.
 
 ##### Detach a Residency Set From a Command Queue
@@ -87,8 +83,6 @@ Call this method at any time before you commit the first command buffer that rel
 
 > **Note**:  The [`requestResidency()`](mtlresidencyset/requestresidency().md) method may postpone some of the necessary steps to make allocations resident in scenarios where other apps have competing memory needs.
 
- The [`requestResidency()`](mtlresidencyset/requestresidency().md) method may postpone some of the necessary steps to make allocations resident in scenarios where other apps have competing memory needs.
-
 ##### Conclude Residency for the Resources
 
 When your app no longer needs a residency set’s allocations to be accessible to the GPU, call the [`endResidency()`](mtlresidencyset/endresidency().md) method, which effectively releases them.
@@ -105,4 +99,4 @@ The method tells Metal that it can reuse the memory backing that residency set�
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/simplifying-gpu-resource-management-with-residency-sets)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/simplifying-gpu-resource-management-with-residency-sets)*

@@ -1,6 +1,6 @@
 # Filtering Network Traffic
 
-**Framework**: Network Extension
+**Framework**: Networkextension
 
 Use the Network Extension framework to allow or deny network connections.
 
@@ -11,8 +11,6 @@ Use the Network Extension framework to allow or deny network connections.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`714: Network Extensions for Modern macOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/714/)
-
-This sample code project is associated with WWDC 2019 session [`714: Network Extensions for Modern macOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/714/)
 
 ##### Configure the Sample Code Project
 
@@ -26,4 +24,4 @@ This sample code project only runs on macOS.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/filtering-network-traffic)*
+*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/filtering-network-traffic)*

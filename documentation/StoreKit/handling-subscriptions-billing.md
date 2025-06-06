@@ -1,6 +1,6 @@
 # Handling Subscriptions Billing
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Build logic around the date and time constraints of subscription products, while planning for all scenarios where you control access to content.
 
@@ -11,8 +11,6 @@ Apps that offer subscriptions have some unique behaviors and considerations. Bec
 To validate changes in and identify the status of a subscription, you can use the different values in the receipt, which provides details on app and in-app purchases. For information about server-side receipt validation, see [`Validating receipts with the App Store`](validating-receipts-with-the-app-store.md).
 
 > **Note**:  Each subscription has a unique product identifier associated with a single app. Apps with an iOS and a macOS version have separate products, with a unique product identifier on each platform. You could let users who have a subscription in an iOS app access the content from a macOS app, or vice versa, but implementing that functionality is your responsibility. In order to support cross-platform subscription products, you would need a system to identify users and keep track of the content to which they subscribe. For more information, see [`Offering a Subscription Across Multiple Apps`](offering-a-subscription-across-multiple-apps.md).
-
- Each subscription has a unique product identifier associated with a single app. Apps with an iOS and a macOS version have separate products, with a unique product identifier on each platform. You could let users who have a subscription in an iOS app access the content from a macOS app, or vice versa, but implementing that functionality is your responsibility. In order to support cross-platform subscription products, you would need a system to identify users and keep track of the content to which they subscribe. For more information, see [`Offering a Subscription Across Multiple Apps`](offering-a-subscription-across-multiple-apps.md).
 
 There are two types of subscriptions you can offer in your app:  and . Non-renewing subscriptions differ from auto-renewable subscriptions in a few key ways. These differences give your app the flexibility to implement the correct behavior for a non-renewing subscription, as follows:
 
@@ -35,8 +33,6 @@ Your app needs to determine which content the user has access to based on the pe
 For example, because purchasing a subscription always unlocks content, a user who purchases a monthly subscription mid-month to a magazine that publishes a new issue on the first day of every month gets access to two issues in their first month of subscribing: the most recently published issue, which is unlocked at the time that the subscription is purchased, and the issue you publish on the subsequent first day of the month, which is unlocked at the time you publish it.
 
 > ❗ **Important**:  Don’t calculate the subscription period by adding a subscription duration to the purchase date. That approach fails to take into account the free trial period, the marketing opt-in period, and the content made available immediately after the user purchased the subscription.
-
- Don’t calculate the subscription period by adding a subscription duration to the purchase date. That approach fails to take into account the free trial period, the marketing opt-in period, and the content made available immediately after the user purchased the subscription.
 
 If the subscription lapsed, there will be multiple periods of time during which the subscription was active, and there will be pieces of content unlocked at the beginning of a subscription period. To identify lapses in a subscription, compare the `expires_date` field from each receipt entry to the `purchase_date` field of the previous receipt entry for all entries in the receipt.
 
@@ -92,8 +88,6 @@ If users don’t agree to the subscription price increase or take no action, the
 
 > **Note**:  The price consent sheet appears only on devices running iOS. All affected subscribers receive an email and push notification.
 
- The price consent sheet appears only on devices running iOS. All affected subscribers receive an email and push notification.
-
 ##### Enable Users to Manage Subscriptions
 
 Consider building auto-renewable subscription management UI in the app for subscribers to easily move between different subscription levels in their subscription group. Use the [`subscriptionGroupIdentifier`](skproduct/subscriptiongroupidentifier.md) property of `SKProduct` to determine which products to display in the UI. For users who wish to cancel their subscription, your app can open the following URL:
@@ -116,4 +110,4 @@ Opening this URL launches iTunes or iTunes Store and displays the Manage Subscri
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/handling-subscriptions-billing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/handling-subscriptions-billing)*

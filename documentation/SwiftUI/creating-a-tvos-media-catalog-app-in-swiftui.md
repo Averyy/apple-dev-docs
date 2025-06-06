@@ -1,6 +1,6 @@
 # Creating a tvOS media catalog app in SwiftUI
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Build standard content lockups and rows of content shelves for your tvOS app.
 
@@ -13,8 +13,6 @@ Build standard content lockups and rows of content shelves for your tvOS app.
 This sample code project shows how to create the standard content lockups for tvOS, and provides best practices for building out rows of content shelves. It also includes examples for product pages, search views, and tab views, including the new sidebar adaptive tab view style that provides a sidebar in tvOS.
 
 > **Note**: This sample code project is associated with WWDC24 session 10207: [`Migrate your TVML app to SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10207/).
-
-This sample code project is associated with WWDC24 session 10207: [`Migrate your TVML app to SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10207/).
 
 The sample project contains the following examples:
 
@@ -359,4 +357,4 @@ ScrollView(.vertical) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/creating-a-tvos-media-catalog-app-in-swiftui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/creating-a-tvos-media-catalog-app-in-swiftui)*

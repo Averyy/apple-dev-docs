@@ -14,8 +14,6 @@ Create Custom Modelers with the CLIPS language and learn how the embedded rules 
 
 > **Note**: This sample code is associated with WWDC 2019 session [`421: Modeling in Custom Instruments`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/421)
 
-This sample code is associated with WWDC 2019 session [`421: Modeling in Custom Instruments`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/421)
-
 Use this sample code project to step through the process of building a custom modeler for GoatList, an app that displays and modifies a list of goats. The GoatList app makes use of a `MobileAgent` pattern to break down a goal, such as sorting a list, into smaller subgoals. The subgoals execute at `stops`, locations where preconditions are met before execution continues.
 
 Each Instruments Distribution Package target within the Xcode project uses incrementally more sophisticated modeling logic, written in the CLIPS language, to build an Instrument that visualizes the different moving pieces of the `MobileAgent` pattern as it is used within GoatList.
@@ -242,4 +240,4 @@ Copies the `integer-array` in the first argument and returns the EXTERNAL-ADDRES
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-custom-modelers-for-intelligent-instruments)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-custom-modelers-for-intelligent-instruments)*

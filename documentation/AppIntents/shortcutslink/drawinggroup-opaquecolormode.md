@@ -1,6 +1,6 @@
 # drawingGroup(opaque:colorMode:)
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: method
 
 Composites this view’s contents into an offscreen image before final display.
@@ -50,8 +50,6 @@ VStack {
 ```
 
 > **Note**: Views backed by native platform views may not render into the image. Instead, they log a warning and display a placeholder image to highlight the error.
-
-Views backed by native platform views may not render into the image. Instead, they log a warning and display a placeholder image to highlight the error.
 
 ## Parameters
 

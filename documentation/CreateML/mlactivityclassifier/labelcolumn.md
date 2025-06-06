@@ -1,6 +1,6 @@
 # labelColumn
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: property
 
 The name of the label column the activity classifier used during its training session.
@@ -19,8 +19,6 @@ var labelColumn: String
 This property reflects the name of the data table column or annotation file column the training session used to label each activity.
 
 > **Note**: The [`MLActivityClassifier`](mlactivityclassifier.md) instance provides a default name if you trained it with a data source that’s set to [`MLActivityClassifier.DataSource.labeledDirectories(at:)`](mlactivityclassifier/datasource/labeleddirectories(at:).md).
-
-The [`MLActivityClassifier`](mlactivityclassifier.md) instance provides a default name if you trained it with a data source that’s set to [`MLActivityClassifier.DataSource.labeledDirectories(at:)`](mlactivityclassifier/datasource/labeleddirectories(at:).md).
 
 Changing the value of this property doesn’t retrain the model or affect its behavior.
 

@@ -1,6 +1,6 @@
 # Pass Type IDs Entitlement
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 A list of identifiers that specify pass types that your app can access in Wallet.
@@ -20,8 +20,6 @@ To add this entitlement to your app, enable the Wallet capability in Xcode. If y
 For more information, see [`Configure Wallet (iOS, watchOS)`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devfc3f493bb).
 
 > **Note**:  In iOS 17 and later, App Clips can use the Wallet capability. For more information on functionality that’s available to App Clips, see [`Choosing the right functionality for your App Clip`](https://developer.apple.com/documentation/AppClip/choosing-the-right-functionality-for-your-app-clip).
-
- In iOS 17 and later, App Clips can use the Wallet capability. For more information on functionality that’s available to App Clips, see [`Choosing the right functionality for your App Clip`](https://developer.apple.com/documentation/AppClip/choosing-the-right-functionality-for-your-app-clip).
 
 ## See Also
 

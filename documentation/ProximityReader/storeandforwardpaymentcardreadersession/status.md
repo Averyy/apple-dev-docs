@@ -1,6 +1,6 @@
 # status()
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Allows the merchant to check the status of the Store and Forward session.
@@ -24,8 +24,6 @@ func status() async throws -> StoreAndForwardStatus
 #### Discussion
 
 > **Note**: This method throws a `ReadError` if status cannot be retrieved.
-
-This method throws a `ReadError` if status cannot be retrieved.
 
 
 ---

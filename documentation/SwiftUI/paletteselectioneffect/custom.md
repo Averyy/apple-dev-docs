@@ -1,6 +1,6 @@
 # custom
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 Does not apply any system effect when selected.
@@ -22,8 +22,6 @@ static let custom: PaletteSelectionEffect
 
 > **Note**: Make sure to manually implement a way to indicate selection when using this case. For example, you could dynamically resolve the item’s image based on the selection state.
 
-Make sure to manually implement a way to indicate selection when using this case. For example, you could dynamically resolve the item’s image based on the selection state.
-
 ## See Also
 
 - [static let automatic: PaletteSelectionEffect](paletteselectioneffect/automatic.md)
@@ -34,4 +32,4 @@ Make sure to manually implement a way to indicate selection when using this case
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/paletteselectioneffect/custom)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/paletteselectioneffect/custom)*

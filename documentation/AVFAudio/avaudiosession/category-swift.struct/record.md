@@ -1,6 +1,6 @@
 # record
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: property
 
 The category for recording audio while also silencing playback audio.
@@ -28,8 +28,6 @@ To continue recording audio when your app transitions to the background (for exa
 The user must grant permission for audio recording.
 
 > **Note**:  Using this category doesn’t prevent phone calls, alarms, or other nonmixable audio sessions from interrupting the audio session.
-
- Using this category doesn’t prevent phone calls, alarms, or other nonmixable audio sessions from interrupting the audio session.
 
 ## See Also
 

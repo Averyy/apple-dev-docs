@@ -1,6 +1,6 @@
 # BEContextMenuConfiguration
 
-**Framework**: BrowserEngineKit  
+**Framework**: Browserenginekit  
 **Kind**: class
 
 A specialized `UIContextMenuConfiguration` object to defer a context menu presentation when the when the context menu gestures are first recognized and a possible menu presentation is not immediately known.
@@ -26,8 +26,6 @@ Return an instance of this object if you don’t know whether presentation of a 
 
 > **Note**:  In most situations, use [`UIDeferredMenuElement`](https://developer.apple.com/documentation/UIKit/UIDeferredMenuElement) if you don’t have the content of a contextual menu element when the system asks your delegate and you need to calculate it asynchronously. When calculating the contextual menu configuration involves a short deferral, for example, making an XPC call to a browser extension, use `BEContextMenuConfiguration` instead.
 
- In most situations, use [`UIDeferredMenuElement`](https://developer.apple.com/documentation/UIKit/UIDeferredMenuElement) if you don’t have the content of a contextual menu element when the system asks your delegate and you need to calculate it asynchronously. When calculating the contextual menu configuration involves a short deferral, for example, making an XPC call to a browser extension, use `BEContextMenuConfiguration` instead.
-
 ## Topics
 
 ### Creating a context menu configuration
@@ -52,4 +50,4 @@ Return an instance of this object if you don’t know whether presentation of a 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/becontextmenuconfiguration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/becontextmenuconfiguration)*

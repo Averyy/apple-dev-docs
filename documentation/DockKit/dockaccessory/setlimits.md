@@ -1,6 +1,6 @@
 # setLimits(_:)
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: method
 
 Sets limits for the axes of rotation.
@@ -24,8 +24,6 @@ Limits only apply to the current tracking session. Afterwards, the orientation s
 This method only works when you disable system tracking.
 
 > **Note**: An error if all parameters are `nil`, or if the dock accessory doesn’t support the given axis.
-
-An error if all parameters are `nil`, or if the dock accessory doesn’t support the given axis.
 
 ## Parameters
 

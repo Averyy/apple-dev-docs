@@ -1,6 +1,6 @@
 # Movie Rating Icons (United States)
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Icons that pertain to United States movie ratings.
 
@@ -31,8 +31,6 @@ The resource name for the parents strongly cautioned icon for the United States 
 The resource name for the restricted icon for the United States is `mpaa-r`. Place a restricted rating icon next to content to indicate that the content is suitable to be watched by adults. Children under the age of 17 must be accompanied by an adult. Place a restricted rating icon using `<img src="resource://mpaa-r" />`.
 
 > **Note**: In Tennessee, children under the age of 18 must be accompanied by an adult to watch a restricted movie.
-
-In Tennessee, children under the age of 18 must be accompanied by an adult to watch a restricted movie.
 
 ![The letter R, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/8dc23d7e4b5301a3b82724b923eb0081/movie-rating-icons-united-states-4%402x.png)
 
@@ -76,4 +74,4 @@ The resource name for the not rated icon for the United States is `nr`. Place a 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/movie-rating-icons-united-states)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/movie-rating-icons-united-states)*

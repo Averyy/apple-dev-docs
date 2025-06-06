@@ -1,6 +1,6 @@
 # depthData
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 Depth or disparity map data captured with the photo.
@@ -26,8 +26,6 @@ var depthData: AVDepthData? { get }
 To request capture of depth data alongside a photo (on supported devices), set the [`isDepthDataDeliveryEnabled`](avcapturephotosettings/isdepthdatadeliveryenabled.md) property of your photo settings object to [`true`](https://developer.apple.com/documentation/swift/true) when requesting photo capture. If you did not request depth data delivery, this property’s value is `nil`.
 
 > **Note**:  If you set the [`embedsDepthDataInPhoto`](avcapturephotosettings/embedsdepthdatainphoto.md) property of your photo object to [`false`](https://developer.apple.com/documentation/swift/false) when requesting photo capture, this property still provides depth data, but that data is not included when generating photo file data for output.
-
- If you set the [`embedsDepthDataInPhoto`](avcapturephotosettings/embedsdepthdatainphoto.md) property of your photo object to [`false`](https://developer.apple.com/documentation/swift/false) when requesting photo capture, this property still provides depth data, but that data is not included when generating photo file data for output.
 
 ## See Also
 

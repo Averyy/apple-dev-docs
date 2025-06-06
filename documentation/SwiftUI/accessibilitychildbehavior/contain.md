@@ -1,6 +1,6 @@
 # contain
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 Any child accessibility elements become children of the new accessibility element.
@@ -55,8 +55,6 @@ A new accessibility element is created when:
 
 > **Note**: If an accessibility element is not created, the [`AccessibilityChildBehavior`](accessibilitychildbehavior.md) of the existing accessibility element is modified.
 
-If an accessibility element is not created, the [`AccessibilityChildBehavior`](accessibilitychildbehavior.md) of the existing accessibility element is modified.
-
 ## See Also
 
 - [static let combine: AccessibilityChildBehavior](accessibilitychildbehavior/combine.md)
@@ -67,4 +65,4 @@ If an accessibility element is not created, the [`AccessibilityChildBehavior`](a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/accessibilitychildbehavior/contain)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/accessibilitychildbehavior/contain)*

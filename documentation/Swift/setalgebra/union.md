@@ -48,8 +48,6 @@ print(expandedIndices)
 
 > **Note**: If this set and `other` contain elements that are equal but distinguishable (e.g. via `===`), which of these elements is present in the result is unspecified.
 
-If this set and `other` contain elements that are equal but distinguishable (e.g. via `===`), which of these elements is present in the result is unspecified.
-
 ## Parameters
 
 - `other`: A set of the same type as the current set.

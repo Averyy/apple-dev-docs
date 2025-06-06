@@ -1,6 +1,6 @@
 # enabledRemoteNotificationTypes
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The types of push notifications that the app accepts.
@@ -25,8 +25,6 @@ This property contains a bitmask whose values indicate the types of push notific
 
 > **Note**:  Currently the only notification type supported for non-running apps is the badging of app icons.
 
- Currently the only notification type supported for non-running apps is the badging of app icons.
-
 ## See Also
 
 - [func registerForRemoteNotifications()](nsapplication/registerforremotenotifications.md)
@@ -43,4 +41,4 @@ This property contains a bitmask whose values indicate the types of push notific
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsapplication/enabledremotenotificationtypes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsapplication/enabledremotenotificationtypes)*

@@ -15,8 +15,6 @@ Communication notifications have a distinct user experience that features promin
 
 > **Note**: This sample code project is associated with WWDC21 session [`10091: Send communication and Time Sensitive notifications`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10091/).
 
-This sample code project is associated with WWDC21 session [`10091: Send communication and Time Sensitive notifications`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10091/).
-
 ##### Configure the Sample Code Project
 
 This sample runs on physical devices in order to meet requirements for push notifications and the Notification Service Extension. The Notification Service Extension modifies a notification’s content before it’s displayed on the user’s device. To learn more about Notification Service Extensions, see [`Modifying content in newly delivered notifications`](modifying-content-in-newly-delivered-notifications.md).
@@ -175,4 +173,4 @@ The Intents app extension in the sample handles incoming [`INShareFocusStatusInt
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/handling-communication-notifications-and-focus-status-updates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/handling-communication-notifications-and-focus-status-updates)*

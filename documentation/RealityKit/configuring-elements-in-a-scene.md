@@ -1,6 +1,6 @@
 # Configuring elements in a scene
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Define the appearance and behavior of objects in a scene.
 
@@ -17,8 +17,6 @@ Reality Composer creates a unique, default name for any newly created scene. Cha
 You can also assign names to a scene’s objects to help differentiate them. To assign or change an object’s name, tap the object to select it, then type the name into the name field at the top of the Properties inspector. Xcode automatically generates accessor properties for all named assets. Unique object names aren’t required, but objects with the same name in the same scene are automatically grouped into a single array property during code generation.
 
 > ❗ **Important**: Code generation fails if you use a scene name more than once in the same target. If you’re using multiple reality files in the same Xcode target, make sure your scene names are unique across all reality files.
-
-Code generation fails if you use a scene name more than once in the same target. If you’re using multiple reality files in the same Xcode target, make sure your scene names are unique across all reality files.
 
 ##### Style an Asset to Match Your Scenes Look
 
@@ -56,8 +54,6 @@ When you enable the Participates checkbox, three new options appear in the Physi
 
 > **Note**: An object’s Material parameter in the Physics section of the inspector is completely distinct from the Material parameter in the Look section. The physics material defines the properties of the object that are important to the physics simulation, such as the mass and elasticity (or “bounciness”) of the object, while the look material defines how the object is rendered. It is entirely possible to create an asset that looks like one material and behaves like a completely different material.
 
-An object’s Material parameter in the Physics section of the inspector is completely distinct from the Material parameter in the Look section. The physics material defines the properties of the object that are important to the physics simulation, such as the mass and elasticity (or “bounciness”) of the object, while the look material defines how the object is rendered. It is entirely possible to create an asset that looks like one material and behaves like a completely different material.
-
  Used when [`RealityKit`](RealityKit.md) performs physics simulations on the object. Because physics calculations for complex shapes are computationally expensive, RealityKit uses a simplified shape like a box or sphere instead of the object’s actual shape when doing physics calculations. You can select Automatic to let RealityKit choose a collision shape, or you can manually select the shape that will give the behavior you want.
 
 ## See Also
@@ -82,4 +78,4 @@ An object’s Material parameter in the Physics section of the inspector is comp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/configuring-elements-in-a-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/configuring-elements-in-a-scene)*

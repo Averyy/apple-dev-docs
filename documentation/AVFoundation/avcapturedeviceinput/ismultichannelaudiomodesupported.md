@@ -1,6 +1,6 @@
 # isMultichannelAudioModeSupported(_:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 A Boolean value that indicates whether the input supports the specified multichannel audio mode.
@@ -27,8 +27,6 @@ func isMultichannelAudioModeSupported(_ multichannelAudioMode: AVCaptureMulticha
 You can only set the [`multichannelAudioMode`](avcapturedeviceinput/multichannelaudiomode.md) property if the input supports the value.
 
 > **Note**:  Multichannel audio modes aren’t supported when used in with [`AVCaptureMultiCamSession`](avcapturemulticamsession.md).
-
- Multichannel audio modes aren’t supported when used in with [`AVCaptureMultiCamSession`](avcapturemulticamsession.md).
 
 ## Parameters
 

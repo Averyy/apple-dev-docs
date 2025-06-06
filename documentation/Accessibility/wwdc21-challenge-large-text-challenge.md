@@ -13,8 +13,6 @@ Design for large text sizes by modifying the user interface.
 
 > **Note**: This is a companion project for WWDC21 Challenge [`Large Text Challenge`](https://developer.apple.comhttps://developer.apple.com/news/?id=w6r26g7r).
 
-This is a companion project for WWDC21 Challenge [`Large Text Challenge`](https://developer.apple.comhttps://developer.apple.com/news/?id=w6r26g7r).
-
 ## See Also
 
 - [WWDC22 Challenge: Learn Switch Control through gaming](wwdc22_challenge_learn_switch_control_through_gaming.md)

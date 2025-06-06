@@ -1,6 +1,6 @@
 # Configuring the View Controller for Your Custom Interface
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Configure your view controller to replace or augment the default interface in Siri or Maps.
 
@@ -32,13 +32,9 @@ The figure below shows the high-level life cycle of your view controller when yo
 
 > **Note**:  While a view controller is onscreen, Maps may call the [`configure(with:context:completion:)`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configure(with:context:completion:)) method again to deliver updated information for you to display. For example, Maps calls this method when your Intents extension provides a status update for a booked ride. Use any follow-up calls to update your view controller’s interface.
 
- While a view controller is onscreen, Maps may call the [`configure(with:context:completion:)`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configure(with:context:completion:)) method again to deliver updated information for you to display. For example, Maps calls this method when your Intents extension provides a status update for a booked ride. Use any follow-up calls to update your view controller’s interface.
-
 When the user dismisses the Siri or Maps interface, the system releases its reference to your view controller and your Intents UI extension. Your view controllers should only display information. Do not try to save data or communicate with your app when your view controller moves offscreen.
 
 > ❗ **Important**:  In iOS 11 and later, if your view controller implements both the [`configureView(for:of:interactiveBehavior:context:completion:)`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configureview(for:of:interactivebehavior:context:completion:)) and [`configure(with:context:completion:)`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configure(with:context:completion:)) methods, SiriKit calls only the [`configureView(for:of:interactiveBehavior:context:completion:)`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configureview(for:of:interactivebehavior:context:completion:)) method.
-
- In iOS 11 and later, if your view controller implements both the [`configureView(for:of:interactiveBehavior:context:completion:)`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configureview(for:of:interactivebehavior:context:completion:)) and [`configure(with:context:completion:)`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configure(with:context:completion:)) methods, SiriKit calls only the [`configureView(for:of:interactiveBehavior:context:completion:)`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configureview(for:of:interactivebehavior:context:completion:)) method.
 
 ##### Tips for Implementing Your View Controller
 
@@ -95,4 +91,4 @@ For more information about hiding portions of the default interface, see [`INUIH
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/configuring-the-view-controller-for-your-custom-interface)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/configuring-the-view-controller-for-your-custom-interface)*

@@ -18,15 +18,11 @@ The app has an , in which the room geometry the framework renders is a transpare
 
 > **Note**: This app requires Xcode 16 and visionOS 2 or later, and an Apple Vision Pro. ARKit room tracking isn’t supported in Simulator.
 
-This app requires Xcode 16 and visionOS 2 or later, and an Apple Vision Pro. ARKit room tracking isn’t supported in Simulator.
-
 #### Ensure All Data Providers Are in an Authorized State
 
 Your app must request permission to use certain visionOS capabilities before being able to access data associated with them. For example, attempting to access the [`RoomTrackingProvider`](https://developer.apple.com/documentation/ARKit/RoomTrackingProvider) displays a permission sheet asking the user to authorize your app’s access. If the user has previously denied this request, the app displays an error message in the scene. For information about using a `RoomTrackingProvider`, see [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md). For information about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
 
 > **Note**: To use the room tracking capabilities in visionOS in your app, you need to provide the  [`NSWorldSensingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSWorldSensingUsageDescription) key in your app’s `Info.plist` along with a description of why your app uses this feature. This sample already provides this key and description.
-
-To use the room tracking capabilities in visionOS in your app, you need to provide the  [`NSWorldSensingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSWorldSensingUsageDescription) key in your app’s `Info.plist` along with a description of why your app uses this feature. This sample already provides this key and description.
 
 ```swift
 func areAllDataProvidersAuthorized() async -> Bool {
@@ -251,8 +247,6 @@ Room tracking operates only in the current room a person is in. If someone leave
 Clutter in a room, large furniture elements, and very large spaces may interfere with ARKit’s ability to accurately detect walls and fully detect the dimensions of a room. In the case of very large indoor spaces, or in rooms with low-light conditions, the framework may only provide a floor mesh. Additionally, visionOS doesn’t support using room tracking outdoors or when Apple Vision Pro is in Travel Mode. In these cases, there’s no current room. For more information on implementing immersive experiences, see Human Interface Guidelines > [`Immersive experiences`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/immersive-experiences).
 
 > ⚠️ **Warning**: Be mindful of how much content you include in immersive scenes that use the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the  [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) style. For more information, see [`Creating fully immersive experiences in your app`](https://developer.apple.comhttps://developer.apple.com/documentation/visionos/creating-fully-immersive-experiences).
-
-Be mindful of how much content you include in immersive scenes that use the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the  [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) style. For more information, see [`Creating fully immersive experiences in your app`](https://developer.apple.comhttps://developer.apple.com/documentation/visionos/creating-fully-immersive-experiences).
 
 ## See Also
 

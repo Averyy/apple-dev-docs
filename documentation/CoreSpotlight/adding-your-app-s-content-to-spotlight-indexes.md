@@ -1,6 +1,6 @@
 # Adding your app’s content to Spotlight indexes
 
-**Framework**: Core Spotlight
+**Framework**: Corespotlight
 
 Create a description for your app’s content and add it to a Spotlight index to make it searchable.
 
@@ -95,15 +95,11 @@ secureIndex.indexSearchableItems([item]) { error in
 
 > ❗ **Important**: Provide a reindexing app extension to keep the index up to date even when your app isn’t running. For more information, see [`Regenerating your app’s indexes on demand`](regenerating-your-app-s-indexes-on-demand.md).
 
-Provide a reindexing app extension to keep the index up to date even when your app isn’t running. For more information, see [`Regenerating your app’s indexes on demand`](regenerating-your-app-s-indexes-on-demand.md).
-
 ##### Add Multiple Items to the Index in Batches
 
 When adding or updating large numbers of items, consider breaking those updates into multiple batches. Batch updates make it easier for your code to recover from errors or crashes that happen during the indexing process. The system waits for you to specify your searchable items and end the batch update before it begins indexing the items. If an error occurs, the metadata you add to the batch lets you determine the extent of the indexing progress, and where the error occurred.
 
 > **Note**: The [`default()`](cssearchableindex/default().md) index doesn’t support batch operations.
-
-The [`default()`](cssearchableindex/default().md) index doesn’t support batch operations.
 
 The following example shows a function that indexes several items using a batch update. You can specify any information you want for the client data, but must limit the total size of it to 250 bytes. If any errors occur during the batch update, you can call [`fetchLastClientState(completionHandler:)`](cssearchableindex/fetchlastclientstate(completionhandler:).md) to determine where to start indexing your content again.
 
@@ -134,4 +130,4 @@ func indexBatch(_ tems: [CSSearchableItem]) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corespotlight/adding-your-app-s-content-to-spotlight-indexes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreSpotlight/adding-your-app-s-content-to-spotlight-indexes)*

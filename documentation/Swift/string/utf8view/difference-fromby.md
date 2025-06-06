@@ -30,8 +30,6 @@ This function does not infer element moves. If you need to infer moves, call the
 
 > **Note**: Worst case performance is O( * ), where  is the count of this collection and  is `other.count`. You can expect faster execution when the collections share many common elements.
 
-Worst case performance is O( * ), where  is the count of this collection and  is `other.count`. You can expect faster execution when the collections share many common elements.
-
 ## Parameters
 
 - `other`: The base state.

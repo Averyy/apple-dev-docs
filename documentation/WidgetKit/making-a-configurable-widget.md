@@ -18,8 +18,6 @@ If your app already supports Siri Suggestions or Siri Shortcuts and you have a c
 
 > **Note**: Prior to iOS 17, iPadOS 17, and macOS 14, configurable widgets used SiriKit Intents. For information on migrating your configurable widgets from the SiriKit Intents to the App Intents framework, see [`Migrating widgets from SiriKit Intents to App Intents`](migrating-from-sirikit-intents-to-app-intents.md).
 
-Prior to iOS 17, iPadOS 17, and macOS 14, configurable widgets used SiriKit Intents. For information on migrating your configurable widgets from the SiriKit Intents to the App Intents framework, see [`Migrating widgets from SiriKit Intents to App Intents`](migrating-from-sirikit-intents-to-app-intents.md).
-
 ##### Add a Custom App Intent to Your Project
 
 To show the character’s information, the person needs a way to select the character. The following code shows how to define a custom app intent to represent the choice the person makes:
@@ -47,8 +45,6 @@ The static `title` property describes the action the intent enables the person t
 To add parameters to the intent, add one or more `@Parameter` property wrappers. WidgetKit uses the parameter type information to automatically create the user interface for editing the widget. For example, if the type is [`String`](https://developer.apple.com/documentation/Swift/String), the person enters a string value. If the type is an [`Int`](https://developer.apple.com/documentation/Swift/Int), they use a number pad. For a parameter that is a predefined, static, list of values, define a custom type that conforms to [`AppEnum`](https://developer.apple.com/documentation/AppIntents/AppEnum).
 
 > **Note**: The order of the parameters in the intent determines the order in which they appear when a person edits your widget.
-
-The order of the parameters in the intent determines the order in which they appear when a person edits your widget.
 
 In the example above, the parameter uses a custom `CharacterDetail` type the app defines to represent a character in the game. To use a custom type as an app intent parameter, it must conform to [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity). To implement the `CharacterDetail` parameter type, the game-status widget uses a structure that exists in the game’s project. This structure defines a list of available characters and their details, as follows:
 
@@ -191,4 +187,4 @@ When your app receives new data that’s relevant to your recommended widget con
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/making-a-configurable-widget)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/making-a-configurable-widget)*

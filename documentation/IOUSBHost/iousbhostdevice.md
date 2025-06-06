@@ -1,6 +1,6 @@
 # IOUSBHostDevice
 
-**Framework**: IOUSBHost  
+**Framework**: Iousbhost  
 **Kind**: class
 
 The class that claims and configures devices, retrieves descriptors, and sends device requests.
@@ -20,8 +20,6 @@ class IOUSBHostDevice
 This class enables management of the device state, including sending control requests to the default endpoint 0, configuring the device, and resetting the device. The interest handler also allows monitoring of the device state. The client creates the class and initializes it with [`initWithIOService:options:queue:error:interestHandler:`](iousbhostobject/initwithioservice:options:queue:error:interesthandler:.md).
 
 > **Note**:  To prevent other drivers from changing the state of your device, maintain an [`IOUSBHostDevice`](https://developer.apple.com/documentation/kernel/iousbhostdevice) object until you no longer need control over the device.
-
- To prevent other drivers from changing the state of your device, maintain an [`IOUSBHostDevice`](https://developer.apple.com/documentation/kernel/iousbhostdevice) object until you no longer need control over the device.
 
 ## Topics
 
@@ -47,4 +45,4 @@ This class enables management of the device state, including sending control req
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/iousbhost/iousbhostdevice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/IOUSBHost/iousbhostdevice)*

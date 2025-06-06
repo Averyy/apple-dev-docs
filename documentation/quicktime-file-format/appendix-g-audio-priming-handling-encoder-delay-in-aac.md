@@ -1,6 +1,6 @@
 # Audio priming-handling encoder delay in AAC
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Position a source audio signal in a sound track to handle encoder delay.
 
@@ -9,8 +9,6 @@ Position a source audio signal in a sound track to handle encoder delay.
 This section describes temporal positioning of a source audio signal after AAC encoding into a sound track for QuickTime media files. The mechanisms described here are specified in ISO MPEG-4 standards (ISO/IEC 14496-12, 2008) and are used here with additional constraints.
 
 > **Note**: AAC implementations typically represent 1024 PCM audio samples in one AAC packet (synonymous in this context with a QuickTime media sample, and also referred to in ISO documents as an “access unit”). The terms “sample” and “audio sample” in this appendix are used to refer to PCM samples. For the encoded audio data, the terms “AAC packet” and QuickTime “media sample” are used.
-
-AAC implementations typically represent 1024 PCM audio samples in one AAC packet (synonymous in this context with a QuickTime media sample, and also referred to in ISO documents as an “access unit”). The terms “sample” and “audio sample” in this appendix are used to refer to PCM samples. For the encoded audio data, the terms “AAC packet” and QuickTime “media sample” are used.
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # Capturing screen content in macOS
 
-**Framework**: ScreenCaptureKit
+**Framework**: Screencapturekit
 
 Stream desktop content like displays, apps, and windows by adopting screen capture in your app.
 
@@ -13,8 +13,6 @@ Stream desktop content like displays, apps, and windows by adopting screen captu
 This sample shows how to add high-performance screen capture to your Mac app by using [`ScreenCaptureKit`](ScreenCaptureKit.md). The sample explores how to create content filters to capture the displays, apps, and windows you choose. It then shows how to configure your stream output, retrieve video frames and audio samples, and update a running stream.
 
 > **Note**: This sample code project is associated with WWDC24 session 10088: [`Capture HDR content with ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10088/).
-
-This sample code project is associated with WWDC24 session 10088: [`Capture HDR content with ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10088/).
 
 ##### Configure the Sample Code Project
 
@@ -209,4 +207,4 @@ The app retrieves the audio stream basic description that it uses to create an [
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/screencapturekit/capturing-screen-content-in-macos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ScreenCaptureKit/capturing-screen-content-in-macos)*

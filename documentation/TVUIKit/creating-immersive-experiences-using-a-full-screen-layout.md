@@ -1,6 +1,6 @@
 # Creating immersive experiences using a full-screen layout
 
-**Framework**: TVUIKit
+**Framework**: Tvuikit
 
 Display content with a collection view that maximizes the tvOS experience.
 
@@ -11,8 +11,6 @@ Display content with a collection view that maximizes the tvOS experience.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`211: Mastering the Living Room with tvOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/211/).
-
-This sample code project is associated with WWDC 2019 session [`211: Mastering the Living Room with tvOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/211/).
 
 ## See Also
 
@@ -28,4 +26,4 @@ This sample code project is associated with WWDC 2019 session [`211: Mastering t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvuikit/creating-immersive-experiences-using-a-full-screen-layout)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVUIKit/creating-immersive-experiences-using-a-full-screen-layout)*

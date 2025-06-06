@@ -25,8 +25,6 @@ In order for the dialog to appear, `isPresented` must be `true`. When the operat
 
 > **Note**: This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
 
-This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
-
 For example, a button that allows the user to choose multiple PDF files for the application to combine them later, might look like this:
 
 ```None
@@ -67,8 +65,6 @@ For example, a button that allows the user to choose multiple PDF files for the 
 ```
 
 > **Note**: Changing `allowedContentTypes` or `allowsMultipleSelection` while the file importer is presented will have no immediate effect, however will apply the next time it is presented.
-
-Changing `allowedContentTypes` or `allowsMultipleSelection` while the file importer is presented will have no immediate effect, however will apply the next time it is presented.
 
 ## Parameters
 

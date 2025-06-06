@@ -1,6 +1,6 @@
 # Implementing a store in your app using the StoreKit API
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Offer In-App Purchases and manage entitlements using signed transactions and status information.
 
@@ -12,10 +12,6 @@ Offer In-App Purchases and manage entitlements using signed transactions and sta
 #### Overview
 
 > **Note**:  This sample code project is associated with WWDC22 session [`110404: Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110404/). It’s also associated with WWDC21 session [`10114: Meet StoreKit 2`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10114/).
-
- This sample code project is associated with WWDC22 session [`110404: Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110404/).
-
-It’s also associated with WWDC21 session [`10114: Meet StoreKit 2`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10114/).
 
 ##### Configure the Sample Code Project
 

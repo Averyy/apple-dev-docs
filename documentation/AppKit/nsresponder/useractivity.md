@@ -1,6 +1,6 @@
 # userActivity
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 An object encapsulating a user activity supported by this responder.
@@ -21,8 +21,6 @@ By setting the [`userActivity`](nsresponder/useractivity.md) property on a respo
 
 > **Note**:  Before the update callbacks are sent, the activity object’s `userInfo` dictionary is cleared.
 
- Before the update callbacks are sent, the activity object’s `userInfo` dictionary is cleared.
-
 In macOS, [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects managed by [`NSResponder`](nsresponder.md) automatically [`becomeCurrent()`](https://developer.apple.com/documentation/foundation/nsuseractivity/1413665-becomecurrent) based on the main window and the responder chain.
 
 A responder object can set its [`userActivity`](nsresponder/useractivity.md) property to `nil` if it no longer wants to participate. Any [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects that AppKit manages but have no associated responders (or documents) are automatically invalidated.
@@ -37,4 +35,4 @@ You can use this property from any thread, and it’s key-value observable (KVO)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsresponder/useractivity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsresponder/useractivity)*

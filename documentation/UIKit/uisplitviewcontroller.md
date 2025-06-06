@@ -1,6 +1,6 @@
 # UISplitViewController
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A container view controller that implements a hierarchical interface.
@@ -36,8 +36,6 @@ Split view interfaces are most suitable for filterable content or navigating con
 When you build your app’s user interface, the split view controller is typically the root view controller of your app’s window. The split view controller has no significant appearance of its own. Most of its appearance is defined by the child view controllers you install.
 
 > **Note**:  You can’t push a split view controller onto a navigation stack. Although it’s possible to install a split view controller as a child in some other container view controllers, doing so isn’t recommended in most cases. For design guidance, see [`Split views`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/split-views/).
-
- You can’t push a split view controller onto a navigation stack. Although it’s possible to install a split view controller as a child in some other container view controllers, doing so isn’t recommended in most cases. For design guidance, see [`Split views`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/split-views/).
 
 ##### Split View Styles
 
@@ -255,4 +253,4 @@ If you assign a value to the split view controller’s [`restorationIdentifier`]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uisplitviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uisplitviewcontroller)*

@@ -1,6 +1,6 @@
 # thumbnailImage(atTime:timeOption:)
 
-**Framework**: Media Player  
+**Framework**: Mediaplayer  
 **Kind**: method
 
 Captures and returns a thumbnail image from the current movie.
@@ -25,8 +25,6 @@ An image object containing the image from the movie or `nil` if the thumbnail co
 This method captures the thumbnail image synchronously from the current movie (which is accessible from the [`MPMovieSourceType.unknown`](mpmoviesourcetype/unknown.md) property).
 
 > **Note**:  This method is not successful when the source URL is an HTTP Live Streaming (HLS) content source. The returned value for an HLS source is an empty `UIImage` object. See [`HTTP Live Streaming Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008332).
-
- This method is not successful when the source URL is an HTTP Live Streaming (HLS) content source. The returned value for an HLS source is an empty `UIImage` object. See [`HTTP Live Streaming Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008332).
 
 ## Parameters
 

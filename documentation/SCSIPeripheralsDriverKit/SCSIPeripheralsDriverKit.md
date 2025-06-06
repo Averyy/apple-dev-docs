@@ -1,6 +1,6 @@
 # SCSIPeripheralsDriverKit
 
-**Framework**: SCSIPeripheralsDriverKit  
+**Framework**: Scsiperipheralsdriverkit  
 **Kind**: module
 
 Develop drivers for peripherals that use SCSI Block Command and Multimedia Command protocols.
@@ -15,8 +15,6 @@ The SCSIPeripheralsDriverKit framework supports the development of drivers for e
 Develop your driver by subclassing [`IOUserSCSIPeripheralDeviceType00`](iouserscsiperipheraldevicetype00.md) or [`IOUserSCSIPeripheralDeviceType05`](iouserscsiperipheraldevicetype05.md), depending on whether your device works with SCSI Block Commands (SBC) or SCSI Multimedia Commands (SMC), respectively. In your subclass, override all methods the framework declares as pure virtual. Then package your driver in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade the driver on the user’s Mac.
 
 > **Note**:  SCSIPeripheralsDriverKit is available on macOS.
-
- SCSIPeripheralsDriverKit is available on macOS.
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # PHASE
 
-**Framework**: PHASE  
+**Framework**: Phase  
 **Kind**: module
 
 Create dynamic audio experiences in your game or app that react to events and cues in the environment.
@@ -20,8 +20,6 @@ Use PHASE (Physical Audio Spatialization Engine) to provide complex, dynamic aud
 ![Illustration of in-game scenes that demonstrate PHASE features. At left, a polygon contains a dragon with a callout that reads Volumetric sound source. A sound wave emits from the dragon to a hero. A tree structure extends outward from the dragon with a callout that reads Sound event hierarchy. The tree structure highlights a specific path from its root node to one of its leaf nodes. The leaf node contains a sound wave, which indicates a particular sound wave that emits from the dragon. At right, a dragon fireball collides with a rock. Sound waves emit outward from the fireball, except in the area behind the rock. A callout extends from the area that reads Geometric sound occlusion.](https://docs-assets.developer.apple.com/published/41e1fab50a65e7a67ff5ebdbbf5af38e/media-3855995%402x.png)
 
 > **Note**:  If the audio in your game or app doesn’t incorporate environmental events or cues, you can use [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) or [`Core Audio`](https://developer.apple.com/documentation/CoreAudio).
-
- If the audio in your game or app doesn’t incorporate environmental events or cues, you can use [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) or [`Core Audio`](https://developer.apple.com/documentation/CoreAudio).
 
 ##### Integrate Audio with Visual Simulation
 

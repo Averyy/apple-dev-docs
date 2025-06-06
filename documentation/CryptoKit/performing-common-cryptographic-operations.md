@@ -1,6 +1,6 @@
 # Performing Common Cryptographic Operations
 
-**Framework**: Apple CryptoKit
+**Framework**: Cryptokit
 
 Use CryptoKit to carry out operations like hashing, key generation, and encryption.
 
@@ -10,8 +10,6 @@ Use CryptoKit to carry out operations like hashing, key generation, and encrypti
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`709: Cryptography and Your Apps`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/709/).
-
-This sample code project is associated with WWDC 2019 session [`709: Cryptography and Your Apps`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/709/).
 
 
 ---

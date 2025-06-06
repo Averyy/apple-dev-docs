@@ -1,6 +1,6 @@
 # makeConnectable()
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Creates a connectable wrapper around the publisher.
@@ -49,8 +49,6 @@ In the following example, [`makeConnectable()`](scene/publisher/makeconnectable(
 ```
 
 > **Note**: The `ConnectablePublisher/connect()` operator returns a `Cancellable` instance that you must retain. You can also use this instance to cancel publishing.
-
-The `ConnectablePublisher/connect()` operator returns a `Cancellable` instance that you must retain. You can also use this instance to cancel publishing.
 
 
 ---

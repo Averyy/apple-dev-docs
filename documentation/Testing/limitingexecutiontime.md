@@ -1,6 +1,6 @@
 # Limiting the running time of tests
 
-**Framework**: Swift Testing
+**Framework**: Testing
 
 Set limits on how long a test can run for until it fails.
 
@@ -24,8 +24,6 @@ func serve100CustomersInOneHour() async {
 If the above test function takes longer than an hour (60 x 60 seconds) to execute, the task in which it’s running is [`cancelled`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/task/cancel()) and the test fails with an issue of kind [`Issue.Kind.timeLimitExceeded(timeLimitComponents:)`](issue/kind-swift.enum/timelimitexceeded(timelimitcomponents:).md).
 
 > **Note**: If multiple time limit traits apply to a test, the shortest time limit is used.
-
-If multiple time limit traits apply to a test, the shortest time limit is used.
 
 The testing library may adjust the specified time limit for performance reasons or to ensure tests have enough time to run. In particular, a granularity of (by default) one minute is applied to tests. The testing library can also be configured with a maximum time limit per test that overrides any applied time limit traits.
 
@@ -57,4 +55,4 @@ When a time limit is applied to a parameterized test function, it’s applied to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/testing/limitingexecutiontime)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Testing/limitingexecutiontime)*

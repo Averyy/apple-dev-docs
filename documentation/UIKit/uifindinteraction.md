@@ -1,6 +1,6 @@
 # UIFindInteraction
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An interaction that provides text finding and replacing operations using a system find panel.
@@ -66,8 +66,6 @@ func findInteraction(_ interaction: UIFindInteraction, sessionFor view: UIView) 
 Implement the [`UITextSearching`](uitextsearching-53wjq.md) protocol on the class that encapsulates the searchable content for your view to use an instance of [`UITextSearchingFindSession`](uitextsearchingfindsession.md) as the session object. Alternatively, you can subclass [`UIFindSession`](uifindsession.md) when you want to manage the details of the session using a custom class.
 
 > **Note**:  Session 10071: [`Adopt desktop-class editing interactions`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10071)
-
- Session 10071: [`Adopt desktop-class editing interactions`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10071)
 
 ## Topics
 
@@ -138,4 +136,4 @@ Implement the [`UITextSearching`](uitextsearching-53wjq.md) protocol on the clas
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uifindinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uifindinteraction)*

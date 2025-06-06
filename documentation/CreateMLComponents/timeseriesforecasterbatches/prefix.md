@@ -1,6 +1,6 @@
 # prefix(_:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Returns a sequence, up to the specified maximum length, containing the initial elements of the sequence.
@@ -37,8 +37,6 @@ print(numbers.prefix(10))
 ```
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

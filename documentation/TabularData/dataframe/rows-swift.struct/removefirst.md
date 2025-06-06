@@ -1,6 +1,6 @@
 # removeFirst(_:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Removes the specified number of elements from the beginning of the collection.
@@ -23,8 +23,6 @@ mutating func removeFirst(_ k: Int)
 #### Discussion
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the specified number of elements.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the specified number of elements.
 
 ## Parameters
 

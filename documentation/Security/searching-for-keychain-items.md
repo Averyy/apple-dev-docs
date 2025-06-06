@@ -28,8 +28,6 @@ Finally, the query requests from the password item both its attributes and its d
 
 > **Note**:  By default, your app can freely retrieve its own keychain items but not those of other apps. However, keychain services does provide mechanisms for broadening or narrowing that accessibility, for example, using the [`kSecAttrAccessGroup`](ksecattraccessgroup.md) attribute.
 
- By default, your app can freely retrieve its own keychain items but not those of other apps. However, keychain services does provide mechanisms for broadening or narrowing that accessibility, for example, using the [`kSecAttrAccessGroup`](ksecattraccessgroup.md) attribute.
-
 ##### Initiate the Search
 
 After you’ve created the query dictionary, you initiate the search with a call to the [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) function:
@@ -64,8 +62,6 @@ If when conducting the search you instead set the value associated with the [`kS
 
 > **Note**:  You can’t combine the [`kSecReturnData`](ksecreturndata.md) and [`kSecMatchLimitAll`](ksecmatchlimitall.md) options when copying password items, because copying each password item could require additional authentication. Instead, request a reference or persistent reference to the items, then request the data for only the specific passwords that you actually require.
 
- You can’t combine the [`kSecReturnData`](ksecreturndata.md) and [`kSecMatchLimitAll`](ksecmatchlimitall.md) options when copying password items, because copying each password item could require additional authentication. Instead, request a reference or persistent reference to the items, then request the data for only the specific passwords that you actually require.
-
 When you do get an array of results, you may need to iterate through the array for a single item of interest. You might do this by examining some other item attribute, such as the account, the creation date, or a label. On the other hand, if you know about a distinguishing characteristic ahead of time, it’s typically more efficient to narrow your initial keychain search query with the corresponding attributes.
 
 Whether or not you need to handle multiple matches at all depends on how your app uses the keychain. If you allow the user to select among different identities at runtime, you might want to store multiple passwords for a single server and then let the user select among the search results using the stored account as a selection key. Other times, you might decide to filter your search down to a single result without involving the user. If you take this approach, make sure that you don’t create similar items in the keychain—test for and then delete or modify existing items instead. See [`Updating and deleting keychain items`](updating-and-deleting-keychain-items.md) for more details.
@@ -73,4 +69,4 @@ Whether or not you need to handle multiple matches at all depends on how your ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/searching-for-keychain-items)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/searching-for-keychain-items)*

@@ -16,8 +16,6 @@ You can review these reports if you have any of these API key roles:
 
 > **Note**: If you share an API key for your developer account with a third party for analyzing or processing your reports, select the SALES_AND_REPORTS role when generating a new key. This role can access to [`Download Sales and Trends Reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-salesReports) but can’t access [`Download Finance Reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-financeReports) endpoint.
 
-If you share an API key for your developer account with a third party for analyzing or processing your reports, select the SALES_AND_REPORTS role when generating a new key. This role can access to [`Download Sales and Trends Reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-salesReports) but can’t access [`Download Finance Reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-financeReports) endpoint.
-
 ##### Download and Process Reports
 
 To start receiving reports, use the [`Request reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-analyticsReportRequests) endpoint in the App Store Connect API. To learn more, see [`Downloading Analytics Reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/downloading-analytics-reports). After you create your request, use [`Read report request information`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-analyticsReportRequests-_id_) to poll the list of report instances to check whether new instances are downloadable. Apple does not generate reports until you create a valid Analytics Report Request.
@@ -27,8 +25,6 @@ Each report  represents a new set of data. Each instance can consist of multiple
 Each report instance has a specific granularity: daily, weekly, or monthly.  instances may contain data for one day or more days. The Date column in the report content shows the day to which the events relate.  instances contain data from Monday to Sunday.  instances contain data for a full month. To learn more, see [`Data Completeness and Corrections`](data-completeness-corrections.md).
 
 > **Note**: For weekly and monthly report instances, the `Date` column represents the first day of the week and month, respectively.
-
-For weekly and monthly report instances, the `Date` column represents the first day of the week and month, respectively.
 
 ##### Retrieve Missed Reports
 

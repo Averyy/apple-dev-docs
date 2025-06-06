@@ -25,8 +25,6 @@ mutating func encode<T>(contentsOf sequence: T) throws where T : Sequence, T.Ele
 
 > **Note**: An error if any of the contained values throws an error.
 
-An error if any of the contained values throws an error.
-
 ## Parameters
 
 - `sequence`: The sequences whose contents to encode.

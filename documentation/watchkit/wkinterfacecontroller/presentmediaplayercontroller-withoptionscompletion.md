@@ -34,8 +34,6 @@ The following table lists the encoding information to use when creating media fi
 
 > **Note**:  Do not attempt to play audio or video content while gathering heart rate data using Health Kit. If you present a media interface, WatchKit automatically disables the gathering of heart rate data.
 
- Do not attempt to play audio or video content while gathering heart rate data using Health Kit. If you present a media interface, WatchKit automatically disables the gathering of heart rate data.
-
 Any audio you play using this method is routed to a paired Bluetooth audio device if one is available. If no Bluetooth audio device is available, audio is routed to to the Apple Watch speaker.
 
 ## Parameters

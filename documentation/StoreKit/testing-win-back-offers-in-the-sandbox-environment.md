@@ -1,6 +1,6 @@
 # Testing win-back offers in the sandbox environment
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Verify that your app receives and handles win-back offer transactions, including those made outside your app.
 
@@ -14,8 +14,6 @@ Handle the resulting transactions in your app. StoreKit delivers them through th
 
 > **Note**: In TestFlight testing, you can only test win-back offers if you implement them using StoreKit views or other StoreKit APIs. The win-back offer sheet and redemption through the App Store aren’t available for testing in TestFlight.
 
-In TestFlight testing, you can only test win-back offers if you implement them using StoreKit views or other StoreKit APIs. The win-back offer sheet and redemption through the App Store aren’t available for testing in TestFlight.
-
 Other types of offers and transactions can also occur outside your app. For testing information, see [`Testing purchases made outside your app`](testing-purchases-made-outside-your-app.md). You can also test win-back offers in Xcode, which doesn’t rely on App Store Connect configurations. For more information, see [`Testing win-back offers in Xcode`](testing-win-back-offers-in-xcode.md).
 
 ##### Set Up Win Back Offer Testing in App Store Connect and Account Settings
@@ -23,8 +21,6 @@ Other types of offers and transactions can also occur outside your app. For test
 Before you begin testing in the sandbox environment, use App Store Connect to configure at least one auto-renewable subscription, and at least one win-back offer. Make a note of the product ID of the auto-renewable subscription and the corresponding win-back offer IDs to use in your tests.
 
 > **Note**:  Changes that you make to product metadata in App Store Connect can take up to one hour to appear in the sandbox environment.
-
- Changes that you make to product metadata in App Store Connect can take up to one hour to appear in the sandbox environment.
 
 On the iOS device, set up the testing environment by opening Account Settings, as follows:
 
@@ -65,8 +61,6 @@ To simulate a win-back offer redemption outside your app, follow these steps:
 
 > **Note**:  The sandbox environment doesn’t process actual payments. Instead, it returns transactions as if the system successfully processes them.
 
- The sandbox environment doesn’t process actual payments. Instead, it returns transactions as if the system successfully processes them.
-
 ##### Test Redeeming an Offer in Your App Using the Win Back Offer Sheet
 
 To simulate a win-back offer redemption in your app, follow these steps:
@@ -106,4 +100,4 @@ To repeat a test and redeem the same win-back offer, cancel the subscription and
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-win-back-offers-in-the-sandbox-environment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-win-back-offers-in-the-sandbox-environment)*

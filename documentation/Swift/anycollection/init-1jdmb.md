@@ -24,8 +24,6 @@ init(_ other: AnyCollection<Element>)
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

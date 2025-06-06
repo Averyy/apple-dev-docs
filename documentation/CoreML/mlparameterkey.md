@@ -1,6 +1,6 @@
 # MLParameterKey
 
-**Framework**: Core ML  
+**Framework**: Coreml  
 **Kind**: class
 
 The keys for the parameter dictionary in a model configuration or a model update context.
@@ -29,8 +29,6 @@ Use an [`MLParameterKey`](mlparameterkey.md) to retrieve a model’s parameter v
 - The [`parameters`](mlupdatecontext/parameters.md) dictionary of an [`MLUpdateContext`](mlupdatecontext.md)
 
 > **Note**:  To access the parameter of a specific model within a pipeline model, use the parameter key’s [`scoped(to:)`](mlparameterkey/scoped(to:).md) method with the model’s name.
-
- To access the parameter of a specific model within a pipeline model, use the parameter key’s [`scoped(to:)`](mlparameterkey/scoped(to:).md) method with the model’s name.
 
 ##### Overriding Model and Layer Parameters
 
@@ -118,4 +116,4 @@ See [`Personalizing a Model with On-Device Updates`](personalizing-a-model-with-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coreml/mlparameterkey)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/mlparameterkey)*

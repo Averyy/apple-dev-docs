@@ -1,6 +1,6 @@
 # lastIndex(where:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns the index of the last element in the collection that matches the given predicate.
@@ -35,8 +35,6 @@ if let i = students.lastIndex(where: { $0.hasPrefix("A") }) {
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

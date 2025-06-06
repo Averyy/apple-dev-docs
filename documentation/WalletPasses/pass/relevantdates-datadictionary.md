@@ -20,8 +20,6 @@ object Pass.RelevantDates
 
 > **Note**:  The values need to be a complete dates that include hours and minutes, and may optionally include seconds. For information about the ISO 8601 timestamp format, see [`Time and Date Formats`](https://developer.apple.comhttp://www.w3.org/TR/NOTE-datetime) on the W3C website.
 
- The values need to be a complete dates that include hours and minutes, and may optionally include seconds. For information about the ISO 8601 timestamp format, see [`Time and Date Formats`](https://developer.apple.comhttp://www.w3.org/TR/NOTE-datetime) on the W3C website.
-
 ## See Also
 
 - [Showing a Pass on the Lock Screen](showing-a-pass-on-the-lock-screen.md)

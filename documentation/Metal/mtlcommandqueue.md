@@ -36,8 +36,6 @@ With each [`MTLCommandQueue`](mtlcommandqueue.md) instance you create, you can c
 
 > **Note**:  Each command queue is thread-safe and allows you to encode commands in multiple command buffers simultaneously.
 
- Each command queue is thread-safe and allows you to encode commands in multiple command buffers simultaneously.
-
 For more information about command buffers and encoding GPU commands to them — such as rendering images and computing data in parallel — see [`Setting Up a Command Structure`](setting-up-a-command-structure.md).
 
 ## Topics
@@ -91,4 +89,4 @@ For more information about command buffers and encoding GPU commands to them —
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlcommandqueue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/mtlcommandqueue)*

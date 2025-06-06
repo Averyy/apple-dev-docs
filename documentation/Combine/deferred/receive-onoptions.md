@@ -60,8 +60,6 @@ pub.receive(on: DispatchQueue.main).sink {
 
 > **Note**: [`receive(on:options:)`](publisher/receive(on:options:).md) doesn’t affect the scheduler used to call the subscriber’s [`receive(subscription:)`](subscriber/receive(subscription:).md) method.
 
-[`receive(on:options:)`](publisher/receive(on:options:).md) doesn’t affect the scheduler used to call the subscriber’s [`receive(subscription:)`](subscriber/receive(subscription:).md) method.
-
 ## Parameters
 
 - `scheduler`: The scheduler the publisher uses for element delivery.

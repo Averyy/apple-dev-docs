@@ -1,6 +1,6 @@
 # Nutrition Type Identifiers
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Type identifiers used for tracking diet and nutrition.
 
@@ -38,8 +38,6 @@ Macronutrient identifiers can be thought of as a hierarchy. The [`dietaryEnergyC
 Unless your app is very focused (for example, tracking only sugar or saturated fat), always provide the total data ([`dietaryFatTotal`](hkquantitytypeidentifier/dietaryfattotal.md) or [`dietaryCarbohydrates`](hkquantitytypeidentifier/dietarycarbohydrates.md)), and then optionally provide the more detailed information using the subcategories. You do not need to provide data for all of the subcategories; however, the sum of the subcategory sample values should be equal or less than the total sample’s value.
 
 > **Note**:  The [`dietaryEnergyConsumed`](hkquantitytypeidentifier/dietaryenergyconsumed.md) samples are handled differently than the other macronutrients. While it can be seen as a total value,  [`dietaryEnergyConsumed`](hkquantitytypeidentifier/dietaryenergyconsumed.md) is measured in calories or kilojoules, while the individual macronutrient samples are measured by mass.
-
- The [`dietaryEnergyConsumed`](hkquantitytypeidentifier/dietaryenergyconsumed.md) samples are handled differently than the other macronutrients. While it can be seen as a total value,  [`dietaryEnergyConsumed`](hkquantitytypeidentifier/dietaryenergyconsumed.md) is measured in calories or kilojoules, while the individual macronutrient samples are measured by mass.
 
 ## Topics
 
@@ -136,4 +134,4 @@ Unless your app is very focused (for example, tracking only sugar or saturated f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/nutrition-type-identifiers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/nutrition-type-identifiers)*

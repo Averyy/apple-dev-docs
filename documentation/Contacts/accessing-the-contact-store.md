@@ -20,8 +20,6 @@ In Xcode, configure the required [`NSContactsUsageDescription`](https://develope
 
 > ❗ **Important**:  Your app crashes if you attempt to access contact data without a contacts usage description.
 
- Your app crashes if you attempt to access contact data without a contacts usage description.
-
 ##### Check Your App Authorization Status
 
 Verify the authorization status of your app before presenting features that require Contacts access in your UI. If your app hasn’t requested access yet, any attempts to use these features automatically prompt the person for Contacts access. If the person previously denied access to your app, attempts to use these features fail with a [`CNError.Code.authorizationDenied`](cnerror/code/authorizationdenied.md) error.
@@ -66,8 +64,6 @@ do {
 If the person grants limited access, your app receives a [`CNAuthorizationStatus.limited`](cnauthorizationstatus/limited.md) authorization status. If the person grants full access, your app receives a [`CNAuthorizationStatus.authorized`](cnauthorizationstatus/authorized.md) status. The system remembers your app’s authorization status so that subsequent calls to [`requestAccess(for:completionHandler:)`](cncontactstore/requestaccess(for:completionhandler:).md) or `requestAccess(for:)` don’t prompt the person again.
 
 > **Note**:  If the person previously granted your app contacts access ([`CNAuthorizationStatus.authorized`](cnauthorizationstatus/authorized.md)) in an earlier OS, your app still has full access in iOS 18 and later.
-
- If the person previously granted your app contacts access ([`CNAuthorizationStatus.authorized`](cnauthorizationstatus/authorized.md)) in an earlier OS, your app still has full access in iOS 18 and later.
 
 ##### Use Contacts with Limited Access
 
@@ -135,4 +131,4 @@ To read or write the [`note`](cncontact/note.md) field from a contact in iOS 13,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/contacts/accessing-the-contact-store)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Contacts/accessing-the-contact-store)*

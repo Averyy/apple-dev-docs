@@ -1,6 +1,6 @@
 # serviceSubscriberCellularProviders
 
-**Framework**: Core Telephony  
+**Framework**: Coretelephony  
 **Kind**: property
 
 A dictionary that contains carrier information about each service.
@@ -21,8 +21,6 @@ var serviceSubscriberCellularProviders: [String : CTCarrier]? { get }
 The keys for the [`serviceSubscriberCellularProviders`](cttelephonynetworkinfo/servicesubscribercellularproviders.md) dictionary are [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which represents a service. Each entry in the dictionary is a [`CTCarrier`](ctcarrier.md) object, which contains information about the subscriber’s home cellular service provider.
 
 > **Note**:  In this context, the “home” provider is the one with which the user has a cellular plan, as opposed to a roaming provider.
-
- In this context, the “home” provider is the one with which the user has a cellular plan, as opposed to a roaming provider.
 
 Although the actual value of a key isn’t important, you can also use it to get the current radio access technology associated with the service. To do so, pass the key to the [`serviceCurrentRadioAccessTechnology`](cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) dictionary.
 

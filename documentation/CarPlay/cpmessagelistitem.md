@@ -1,6 +1,6 @@
 # CPMessageListItem
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: class
 
 A list template row that represents a conversation or contact.
@@ -27,8 +27,6 @@ The behavior of the list item when the user selects it depends on how you initia
 CarPlay doesn’t support custom list item types. Instead, use the [`userInfo`](cpmessagelistitem/userinfo.md) property to attach a value to the list item that provides additional context, such as specifying  a model object that corresponds to the item.
 
 > **Note**:  `CPMessageListItem` is available only in apps that have the communication entitlement.
-
- `CPMessageListItem` is available only in apps that have the communication entitlement.
 
 ## Topics
 
@@ -94,4 +92,4 @@ CarPlay doesn’t support custom list item types. Instead, use the [`userInfo`](
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpmessagelistitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpmessagelistitem)*

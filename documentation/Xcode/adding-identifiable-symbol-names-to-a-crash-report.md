@@ -83,8 +83,6 @@ To symbolicate in Xcode, click the Device Logs button in the [`Devices and Simul
 
 > ❗ **Important**: Crash reports must have the `.crash` file extension. If a crash report doesn’t have a file extension, or has a different file extension like `.txt` , rename it with the `.crash` extension before symbolicating it.
 
-Crash reports must have the `.crash` file extension. If a crash report doesn’t have a file extension, or has a different file extension like `.txt` , rename it with the `.crash` extension before symbolicating it.
-
 If the crash report does not symbolicate, or only partly symbolicates, Xcode can’t locate matching symbol information, and you’ll need to acquire symbol information in these ways:
 
 - If the operating system’s frameworks aren’t symbolicated, you need device symbol information matching the operating system version recorded in the crash report. To address this, see [`Acquire device symbol information`](adding-identifiable-symbol-names-to-a-crash-report#Acquire-device-symbol-information.md).
@@ -159,8 +157,6 @@ For specialized debugging situations, such as symbolicating parts of a backtrace
 
 > **Note**: `dSYM` files are macOS bundles that contain a file with the debug symbols. When invoking `atos`, you must provide the path to this file inside the bundle, not just to the outer `dSYM` bundle.
 
-`dSYM` files are macOS bundles that contain a file with the debug symbols. When invoking `atos`, you must provide the path to this file inside the bundle, not just to the outer `dSYM` bundle.
-
 As an example, look at the highlighted sections of this crash report:
 
 ![A crash report with information required to symbolicate a frame with atos highlighted.](https://docs-assets.developer.apple.com/published/8bfc0ce425495f4fad7e0e498094b48c/adding-identifiable-symbol-names-to-a-crash-report-2%402x.png)
@@ -190,4 +186,4 @@ Once you have at least a partially symbolicated crash report by using `atos`, co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-identifiable-symbol-names-to-a-crash-report)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-identifiable-symbol-names-to-a-crash-report)*

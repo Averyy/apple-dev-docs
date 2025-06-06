@@ -1,6 +1,6 @@
 # Implementing User Authentication with Sign in with Apple
 
-**Framework**: Authentication Services
+**Framework**: Authenticationservices
 
 Provide a way for users of your app to set up an account and start using your services.
 
@@ -39,8 +39,6 @@ func setupProviderLoginView() {
 
 > ❗ **Important**: When adding the Sign in with Apple button to your storyboard, you must also set the control’s class value to `ASAuthorizationAppleIDButton` in Xcode’s Identity Inspector.
 
-When adding the Sign in with Apple button to your storyboard, you must also set the control’s class value to `ASAuthorizationAppleIDButton` in Xcode’s Identity Inspector.
-
 ##### Request Authorization with Apple Id
 
 When the user taps the Sign in with Apple button, the view controller invokes the `handleAuthorizationAppleIDButtonPress()` function, which starts the authentication flow by performing an authorization request for the users’s full name and email address. The system then checks whether the user is signed in with their Apple ID on the device. If the user is not signed in at the system-level, the app presents an alert directing the user to sign in with their Apple ID in Settings.
@@ -60,8 +58,6 @@ func handleAuthorizationAppleIDButtonPress() {
 ```
 
 > ❗ **Important**: The user must enable Two-Factor Authentication to use Sign in with Apple so that access to the account is secure.
-
-The user must enable Two-Factor Authentication to use Sign in with Apple so that access to the account is secure.
 
 The authorization controller calls the [`presentationAnchor(for:)`](ASAuthorizationControllerPresentationContextProviding/presentationAnchor(for:).md) function to get the window from the app where it presents the Sign in with Apple content to the user in a modal sheet.
 
@@ -111,8 +107,6 @@ func authorizationController(controller: ASAuthorizationController, didCompleteW
 ```
 
 > **Note**: In your implementation, the `ASAuthorizationControllerDelegate.authorizationController(controller:didCompleteWithAuthorization:)` delegate function should create an account in your system using the data contained in the user identifier.
-
-In your implementation, the `ASAuthorizationControllerDelegate.authorizationController(controller:didCompleteWithAuthorization:)` delegate function should create an account in your system using the data contained in the user identifier.
 
 If the authentication fails, the authorization controller invokes the [`authorizationController(controller:didCompleteWithError:)`](ASAuthorizationControllerDelegate/authorizationController(controller:didCompleteWithError:).md) delegate function to handle the error.
 
@@ -186,4 +180,4 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/implementing-user-authentication-with-sign-in-with-apple)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple)*

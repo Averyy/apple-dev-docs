@@ -27,8 +27,6 @@ The containing list’s style applies the tint as appropriate. For example, watc
 
 > **Note**: This modifier is equivalent to using the version of the modifier that takes a `ListItemTint` value and specifying the `tint` color in the corresponding `ListItemTint/fixed(_:)` input.
 
-This modifier is equivalent to using the version of the modifier that takes a `ListItemTint` value and specifying the `tint` color in the corresponding `ListItemTint/fixed(_:)` input.
-
 ## Parameters
 
 - `tint`: The color to use to tint the content. Use   to   avoid overriding the inherited tint.

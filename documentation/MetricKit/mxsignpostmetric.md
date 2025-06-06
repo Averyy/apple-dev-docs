@@ -1,6 +1,6 @@
 # MXSignpostMetric
 
-**Framework**: MetricKit  
+**Framework**: Metrickit  
 **Kind**: class
 
 An object representing a custom metric.
@@ -24,8 +24,6 @@ A custom metric is an event type with a developer-defined name and category. You
 Custom metrics are a type of signpost saved to custom OS logs created using [`makeLogHandle(category:)`](mxmetricmanager/makeloghandle(category:).md). The daily report contains information about the number and duration of custom events, as well as the power and performance impact of those events. Only custom metric events logged using MetricKit utility functions capture additional power and performance data.
 
 > **Note**:  The system limits the number of custom signpost metrics saved to the log in order to reduce on-device memory overhead. Limit use of custom metrics to critical sections of code.
-
- The system limits the number of custom signpost metrics saved to the log in order to reduce on-device memory overhead. Limit use of custom metrics to critical sections of code.
 
 ## Topics
 
@@ -69,4 +67,4 @@ Custom metrics are a type of signpost saved to custom OS logs created using [`ma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metrickit/mxsignpostmetric)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MetricKit/mxsignpostmetric)*

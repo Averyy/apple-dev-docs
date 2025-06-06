@@ -1,6 +1,6 @@
 # shippingContactEditingMode
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 A value that indicates whether the shipping mode prevents the user from editing the shipping address.
@@ -58,8 +58,6 @@ let applePayPaymentRequest = {
 
 > **Note**:  Determine whether to disable editing of the shipping contact field before displaying the payment sheet. Switching from a noneditable to an editable shipping contact field requires the user to start the payment process over again.
 
- Determine whether to disable editing of the shipping contact field before displaying the payment sheet. Switching from a noneditable to an editable shipping contact field requires the user to start the payment process over again.
-
 ## See Also
 
 - [requiredBillingContactFields](applepaypaymentrequest/requiredbillingcontactfields.md)
@@ -74,4 +72,4 @@ let applePayPaymentRequest = {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest/shippingcontacteditingmode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypaymentrequest/shippingcontacteditingmode)*

@@ -1,6 +1,6 @@
 # remove(at:preservingWorldTransform:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Removes the specified child from this entity.
@@ -22,8 +22,6 @@ Removes the specified child from this entity.
 #### Discussion
 
 > **Note**: This may modify the order of the `ChildCollection`.
-
-This may modify the order of the `ChildCollection`.
 
 ## Parameters
 

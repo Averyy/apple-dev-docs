@@ -1,6 +1,6 @@
 # Arranging elements in a scene
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Manipulate objects to complete your Reality Composer scene.
 
@@ -17,8 +17,6 @@ To reposition an asset using the manipulator, tap or click the object to select 
 To change the position of an asset using the Properties inspector, type the new X, Y, and Z value corresponding to the desired location using the Position text fields. You can specify a unit such as cm or m, or you can type just a number, which is interpreted in the currently displayed unit. For example, if the X position is currently displayed as 10 cm, and you type 100, Reality Composer interprets your input as 100 cm.
 
 > **Note**: Reality Composer uses metric measurements by default. If you prefer to use imperial measurements such as feet and inches, you can make this change in Reality Composer’s preferences.
-
-Reality Composer uses metric measurements by default. If you prefer to use imperial measurements such as feet and inches, you can make this change in Reality Composer’s preferences.
 
 ##### Rotate an Asset
 
@@ -60,8 +58,6 @@ You can combine multiple assets in a scene into a group. Grouped objects behave 
 
 > **Note**: If you’ve enabled physics in your scene, grouped objects still behave as separate, individual objects.
 
-If you’ve enabled physics in your scene, grouped objects still behave as separate, individual objects.
-
 To group items on the Mac, click the first object you want to include in the group to select it, then shift-click additional objects to add them to the selection. Once you select all the objects, choose Group from the Arrange menu. To ungroup items, select the group by clicking it in the scene view and choosing Ungroup from the Arrange menu.
 
 To group items on an iOS device, touch and hold the first object you want to include in the group. While continuing to hold with the first finger, use another finger to tap additional objects to add them to the selection. You can deselect objects by tapping them a second time while continuing to hold your first finger down. When you’ve selected all the objects to groups, tap any of the selected objects to bring up an edit menu. From that menu, choose Group. To ungroup items, select the group by tapping it in the scene view, then tap again to bring up the edit menu, and choose Ungroup.
@@ -88,4 +84,4 @@ To group items on an iOS device, touch and hold the first object you want to inc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/arranging-elements-in-a-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/arranging-elements-in-a-scene)*

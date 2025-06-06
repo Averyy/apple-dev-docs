@@ -1,6 +1,6 @@
 # Porting just-in-time compilers to Apple silicon
 
-**Framework**: Apple silicon
+**Framework**: Apple Silicon
 
 Update your just-in-time (JIT) compiler to work with the Hardened Runtime capability, and with Apple silicon.
 
@@ -23,8 +23,6 @@ When your app has the Hardened Runtime capability and the `com.apple.security.cs
 Additionally, add the `com.apple.security.cs.jit-write-allowlist` entitlement with the value `true`, to enable JIT callback allow lists. Adding this entitlement allows your to call `pthread_jit_write_with_callback_np()`, which you use to write to your app’s JIT region.
 
 > **Note**:  On macOS, when you add the `com.apple.security.cs.jit-write-allowlist` entitlement, your app can no longer call `pthread_jit_write_protect_np()`. The `pthread_jit_write_protect_np()` function isn’t available on iOS.
-
- On macOS, when you add the `com.apple.security.cs.jit-write-allowlist` entitlement, your app can no longer call `pthread_jit_write_protect_np()`. The `pthread_jit_write_protect_np()` function isn’t available on iOS.
 
 When memory protection is enabled, a thread cannot write to a memory region and execute instructions in that region at the same time. Apple silicon enables memory protection for all apps, regardless of whether they adopt the Hardened Runtime. Intel-based Mac computers enable memory protection only for apps that adopt the Hardened Runtime.
 
@@ -67,8 +65,6 @@ Each executable, for example, your app binary, can define at most one allowlist 
 
 > ❗ **Important**:  Your app crashes if you call `pthread_jit_write_with_callback_np()` with a callback function that isn’t in the allowlist.
 
- Your app crashes if you call `pthread_jit_write_with_callback_np()` with a callback function that isn’t in the allowlist.
-
 Define your app’s allowlist using the `PTHREAD_JIT_WRITE_ALLOW_CALLBACKS_NP` macro:
 
 ```c
@@ -85,8 +81,6 @@ On macOS, if you need to update the allowlist with callbacks you load at runtime
 If you add the `com.apple.security.cs.jit-write-allowlist-freeze-late` entitlement, you need to call `pthread_jit_write_freeze_callbacks_np()` before your first call to `pthread_jit_write_with_callback_np()`. If you call `pthread_jit_write_with_callback_np()` before freezing the callbacks allowlist, the system terminates your process with an error.
 
 > ❗ **Important**:  Freeze the callback allowlist by calling `pthread_jit_write_freeze_callbacks_np()` early in your app’s startup process, before the app starts processing untrusted inputs.
-
- Freeze the callback allowlist by calling `pthread_jit_write_freeze_callbacks_np()` early in your app’s startup process, before the app starts processing untrusted inputs.
 
 ##### Write Instructions to Your Jit Memory Region
 

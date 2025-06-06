@@ -18,8 +18,6 @@ var item: Int { get set }
 
 > **Note**: The index path must have exactly two elements.
 
-The index path must have exactly two elements.
-
 
 ---
 

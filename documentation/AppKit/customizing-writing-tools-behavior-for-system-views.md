@@ -1,6 +1,6 @@
 # Customizing Writing Tools behavior for AppKit views
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 Modify the behavior of Writing Tools in standard macOS text views, and adjust your app’s behavior while the feature is active.
 
@@ -9,8 +9,6 @@ Modify the behavior of Writing Tools in standard macOS text views, and adjust yo
 The [`NSTextView`](nstextview.md) and [`NSTextField`](nstextfield.md) classes have built-in support for Writing Tools, but you can customize how the feature works for your interface. You might choose to change how someone experiences Writing Tools in your app, or disable the feature for specific types of content. For example, you might disable Writing Tools in a view that you use to display code listings. You can also customize the type of content Writing Tools generates for your text view.
 
 > **Note**: If you create a custom text view, instead of using the standard system views, use the available APIs to add Writing Tools support to your view. For more information, see [`Adding Writing Tools support to a custom AppKit view`](adding-writing-tools-support-to-a-custom-nsview.md).
-
-If you create a custom text view, instead of using the standard system views, use the available APIs to add Writing Tools support to your view. For more information, see [`Adding Writing Tools support to a custom AppKit view`](adding-writing-tools-support-to-a-custom-nsview.md).
 
 ##### Specifying the Writing Tools Ui Experience You Want
 
@@ -38,4 +36,4 @@ If you don’t want Writing Tools to modify portions of your [`NSTextView`](nste
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/customizing-writing-tools-behavior-for-system-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/customizing-writing-tools-behavior-for-system-views)*

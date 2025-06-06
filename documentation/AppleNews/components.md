@@ -1,6 +1,6 @@
 # Components
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Understand the types of components that can make up an article.
 
@@ -26,8 +26,6 @@ The following table gives you an overview of the components you can use to creat
 | Augmented Reality | [`ARKit`](https://developer.apple.com/documentation/applenewsformat/arkit) |
 
 > **Note**: Choosing the component `role` that best describes your content is important for better voice-over and for facilitating Siri suggestions. For example, instead of styling text in a `body` component to make it look like a heading, use a `heading` component for that text instead.
-
-Choosing the component `role` that best describes your content is important for better voice-over and for facilitating Siri suggestions. For example, instead of styling text in a `body` component to make it look like a heading, use a `heading` component for that text instead.
 
 ## Topics
 
@@ -211,4 +209,4 @@ Choosing the component `role` that best describes your content is important for 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/components)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/components)*

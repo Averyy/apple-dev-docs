@@ -34,8 +34,6 @@ For a GPU device that can sample counters at stage boundaries ( [`MTLCounterSamp
 
 > **Note**:  By default, a pass doesn’t sample any GPU counters.
 
- By default, a pass doesn’t sample any GPU counters.
-
 You tell the GPU which counters to sample by configuring a pass descriptor’s [`sampleBufferAttachments`](mtlcomputepassdescriptor/samplebufferattachments.md) property. For example, you can sample the timestamp counters before and after the vertex and fragment stages by configuring an [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) instance’s [`sampleBufferAttachments`](mtlrenderpassdescriptor/samplebufferattachments.md) property.
 
 Each index value tells the GPU where to put a specific counter value within a counter sample buffer. You can skip specific counters by setting an index to [`MTLCounterDontSample`](mtlcounterdontsample.md). For example, you can alter the code example above so that the GPU only samples before and after a fragment stage.
@@ -100,4 +98,4 @@ The `barrier` parameter for these methods controls whether the pass waits for th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/sampling-gpu-data-into-counter-sample-buffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/sampling-gpu-data-into-counter-sample-buffers)*

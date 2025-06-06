@@ -1,6 +1,6 @@
 # Navigating Hierarchical Data Using Outline and Split Views
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 Build a structured user interface that simplifies navigation in your app.
 
@@ -125,8 +125,6 @@ Use the window restoration system’s [`encodeRestorableState(with:)`](nsrespond
 
 > **Note**: When the user selects “Close windows when quitting an app” in the System Preferences General pane, selection restoration works if they choose Option-Command-Quit (Quit and Keep Windows).
 
-When the user selects “Close windows when quitting an app” in the System Preferences General pane, selection restoration works if they choose Option-Command-Quit (Quit and Keep Windows).
-
 When the outline view saves the disclosure states, it encodes each container as an archived object by using the [`outlineView(_:persistentObjectForItem:)`](nsoutlineviewdatasource/outlineview(_:persistentobjectforitem:).md) function.
 
 ```swift
@@ -155,4 +153,4 @@ func outlineView(_ outlineView: NSOutlineView, itemForPersistentObject object: A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/navigating-hierarchical-data-using-outline-and-split-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/navigating-hierarchical-data-using-outline-and-split-views)*

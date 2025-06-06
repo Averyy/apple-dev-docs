@@ -12,8 +12,6 @@ Invoke Metal’s frame capture from your app, then save the resulting GPU trace 
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`606: Delivering Optimized Metal Apps and Games`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/606/).
 
-This sample code project is associated with WWDC 2019 session [`606: Delivering Optimized Metal Apps and Games`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/606/).
-
 ##### Configure the Sample Code Project
 
 To run the app:
@@ -44,4 +42,4 @@ To run the app:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/capturing-metal-commands-programmatically)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/capturing-metal-commands-programmatically)*

@@ -1,6 +1,6 @@
 # startBrowsingForNearbyPlayers(handler:)
 
-**Framework**: GameKit  
+**Framework**: Gamekit  
 **Kind**: method
 
 Finds nearby players through Bluetooth or WiFi on the same subnet.
@@ -24,8 +24,6 @@ func startBrowsingForNearbyPlayers(handler reachableHandler: ((GKPlayer, Bool) -
 Use the `reachableHandler` implementation to update your interface with information about nearby players. If the local player wants to invite a nearby player, call the [`findMatch(for:withCompletionHandler:)`](gkmatchmaker/findmatch(for:withcompletionhandler:).md) method to create a match or the [`addPlayers(to:matchRequest:completionHandler:)`](gkmatchmaker/addplayers(to:matchrequest:completionhandler:).md) method to update an existing match. When you are done finding nearby players, call the [`stopBrowsingForNearbyPlayers()`](gkmatchmaker/stopbrowsingfornearbyplayers().md) method.
 
 > **Note**:  Before your game is released and during development, GameKit invokes the handler for all nearby players of all Game Center games.
-
- Before your game is released and during development, GameKit invokes the handler for all nearby players of all Game Center games.
 
 ## Parameters
 

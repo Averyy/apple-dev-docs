@@ -25,8 +25,6 @@ In order for the interface to appear, `isPresented` must be `true`. When the ope
 
 > **Note**: This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
 
-This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
-
 For example, an application can have a button that allows the user to choose the default directory with document templates loaded on every launch. Such a button might look like this:
 
 ```None
@@ -64,8 +62,6 @@ For example, an application can have a button that allows the user to choose the
 ```
 
 > **Note**: Changing `allowedContentTypes` while the file importer is presented will have no immediate effect, however will apply the next time it is presented.
-
-Changing `allowedContentTypes` while the file importer is presented will have no immediate effect, however will apply the next time it is presented.
 
 ## Parameters
 

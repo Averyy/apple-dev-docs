@@ -23,8 +23,6 @@ const unsigned short WEBKIT_KEYFRAMES_RULE = 7;
 
 > **Note**: In Safari 4.0 and later, the value is `8`.
 
-In Safari 4.0 and later, the value is `8`.
-
 ## See Also
 
 - [CHARSET_RULE](cssrule/1628936-charset_rule.md)

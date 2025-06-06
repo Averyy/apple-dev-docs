@@ -26,8 +26,6 @@ The region of memory starting at this pointer and covering `count` instances of 
 
 > **Note**: The source and destination memory regions must not overlap.
 
-The source and destination memory regions must not overlap.
-
 ## Parameters
 
 - `source`: A pointer to the values to copy. The memory region    must be initialized. The memory regions   referenced by   and this pointer must not overlap.

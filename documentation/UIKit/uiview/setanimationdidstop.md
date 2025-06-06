@@ -1,6 +1,6 @@
 # setAnimationDidStop(_:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Sets the message to send to the animation delegate when animation stops.
@@ -23,8 +23,6 @@ class func setAnimationDidStop(_ selector: Selector?)
 If you specify an animation delegate for a begin/commit set of animations, you use this method to specify the selector to call after the animations end. This method does nothing if called from outside of an animation block. It must be called between calls to the [`beginAnimations(_:context:)`](uiview/beginanimations(_:context:).md) and [`commitAnimations()`](uiview/commitanimations().md) methods. This selector is set to `NULL` by default.
 
 > **Note**:  Your stop selector is still called even if animations are disabled.
-
- Your stop selector is still called even if animations are disabled.
 
 Use of this method is discouraged in iOS 4.0 and later. If you are using the block-based animation methods, you can include your delegate’s end code directly inside your block.
 

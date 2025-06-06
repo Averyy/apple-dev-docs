@@ -1,6 +1,6 @@
 # SKAdNetwork
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: class
 
 A class that validates advertisement-driven app installations.
@@ -19,8 +19,6 @@ class SKAdNetwork
 #### Overview
 
 > ❗ **Important**:  Use [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) for app ad campaigns on the App Store and alternative marketplaces. See the [`ad attribution developer support page`](https://developer.apple.comhttps://developer.apple.com/app-store/ad-attribution/) for information on how AdAttributionKit helps advertisers measure the success of ad campaigns while helping maintain user privacy. For information on interoperability between SKAdNetwork and AdAttributionKit, see [`Understanding AdAttributionKit and SKAdNetwork interoperability`](https://developer.apple.com/documentation/AdAttributionKit/adattributionkit-skadnetwork-interoperability).
-
- Use [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) for app ad campaigns on the App Store and alternative marketplaces. See the [`ad attribution developer support page`](https://developer.apple.comhttps://developer.apple.com/app-store/ad-attribution/) for information on how AdAttributionKit helps advertisers measure the success of ad campaigns while helping maintain user privacy. For information on interoperability between SKAdNetwork and AdAttributionKit, see [`Understanding AdAttributionKit and SKAdNetwork interoperability`](https://developer.apple.com/documentation/AdAttributionKit/adattributionkit-skadnetwork-interoperability).
 
 The ad network API helps advertisers measure the success of ad campaigns while maintaining user privacy. The API involves three participants:
 
@@ -77,8 +75,6 @@ The advertised app’s responsibilities are to:
 Apple designs SKAdNetwork APIs to maintain user privacy. Apps don’t need to use [`App Tracking Transparency`](https://developer.apple.com/documentation/AppTrackingTransparency) before calling SKAdNetwork APIs, and can call these APIs regardless of their tracking authorization status. For more information about privacy, see [`User Privacy and Data Use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/).
 
 > **Note**:  The SKAdNetwork APIs have no effect, return empty strings, or return values that indicate unavailability when you call the APIs from a compatible iPad or iPhone app running in macOS or visionOS, from a Mac app built with Mac Catalyst, or from an App Clip’s code. For more information about App Clips, see [`App Clips`](https://developer.apple.com/documentation/AppClip).
-
- The SKAdNetwork APIs have no effect, return empty strings, or return values that indicate unavailability when you call the APIs from a compatible iPad or iPhone app running in macOS or visionOS, from a Mac app built with Mac Catalyst, or from an App Clip’s code. For more information about App Clips, see [`App Clips`](https://developer.apple.com/documentation/AppClip).
 
 ## Topics
 
@@ -163,4 +159,4 @@ Apple designs SKAdNetwork APIs to maintain user privacy. Apps don’t need to us
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skadnetwork)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skadnetwork)*

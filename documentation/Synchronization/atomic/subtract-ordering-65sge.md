@@ -29,8 +29,6 @@ A tuple containing the original value before the operation and the new value aft
 
 > **Note**: This operation checks for overflow at runtime and will trap if an overflow does occur. In `-Ounchecked` builds, overflow checking is not performed.
 
-This operation checks for overflow at runtime and will trap if an overflow does occur. In `-Ounchecked` builds, overflow checking is not performed.
-
 ## Parameters
 
 - `operand`: An integer value.

@@ -27,8 +27,6 @@ Use this method to add information you want accessibility users to be able to ac
 
 > **Note**: Repeated calls of `accessibilityCustomContent` with different labels will create new entries of additional information. Calling `accessibilityAdditionalContent` repeatedly with the same label will instead replace the previous value and importance.
 
-Repeated calls of `accessibilityCustomContent` with different labels will create new entries of additional information. Calling `accessibilityAdditionalContent` repeatedly with the same label will instead replace the previous value and importance.
-
 ## Parameters
 
 - `label`: Localized text describing to the user what   is contained in this additional information entry. For example:   “orientation”.

@@ -24,8 +24,6 @@ For storyboard and XIB interfaces, select the user interface files (files with a
 
 > **Note**: Xcode adds the `Base` and the development language to the localization table by default. Use the Base localization for resources that support string substitution at runtime, such as storyboard, XIB, and Siri intent definition files.
 
-Xcode adds the `Base` and the development language to the localization table by default. Use the Base localization for resources that support string substitution at runtime, such as storyboard, XIB, and Siri intent definition files.
-
 ##### View Localizable Resources
 
 You can verify the resources for each localization in the Project navigator and Finder.
@@ -44,4 +42,4 @@ In the file system, Xcode creates a separate localization folder to store the lo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-support-for-languages-and-regions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-support-for-languages-and-regions)*

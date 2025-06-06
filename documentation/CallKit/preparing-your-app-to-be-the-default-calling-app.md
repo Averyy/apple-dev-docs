@@ -1,6 +1,6 @@
 # Preparing your app to be the default calling app
 
-**Framework**: CallKit
+**Framework**: Callkit
 
 Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
 
@@ -31,8 +31,6 @@ In cases where your app can’t handle the provided phone number, you may wish t
 
 > **Note**: Only use the `telephony:` URL scheme as a fallback behavior in response to a person’s explicit action in your app, such as clicking a call button after your app presents the proposed number to call.
 
-Only use the `telephony:` URL scheme as a fallback behavior in response to a person’s explicit action in your app, such as clicking a call button after your app presents the proposed number to call.
-
 For more information on VoIP calling related intents, see [`INStartCallIntent`](https://developer.apple.com/documentation/Intents/INStartCallIntent).
 
 ##### Prepare Your App for Submission to App Store Connect
@@ -44,8 +42,6 @@ To submit your app to App Store Connect, your app needs to meet the following cr
 - Your app links to either the [`CallKit`](CallKit.md) or [`LiveCommunicationKit`](https://developer.apple.com/documentation/LiveCommunicationKit) frameworks.
 
 > 💡 **Tip**: To add a `voip` entry in the `Info.plist` file’s `UIBackgroundModes` property array, select the “App provides Voice over IP services” option from the dropdown menu.
-
-To add a `voip` entry in the `Info.plist` file’s `UIBackgroundModes` property array, select the “App provides Voice over IP services” option from the dropdown menu.
 
 ## See Also
 
@@ -63,4 +59,4 @@ To add a `voip` entry in the `Info.plist` file’s `UIBackgroundModes` property 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/callkit/preparing-your-app-to-be-the-default-calling-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CallKit/preparing-your-app-to-be-the-default-calling-app)*

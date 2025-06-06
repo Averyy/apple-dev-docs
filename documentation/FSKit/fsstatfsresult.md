@@ -1,6 +1,6 @@
 # FSStatFSResult
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: class
 
 A type used to report a volume’s statistics.
@@ -19,8 +19,6 @@ class FSStatFSResult
 The names of this type’s properties match those in the `statfs` structure in `statfs(2)`, which reports these values for an FSKit file system. All numeric properties default to `0`. Override these values, unless a given property has no meaningful value to provide.
 
 > **Note**: Available space, free space, total space, and used space have properties to express their values either as a number of blocks or a number of bytes. Your module may supply both of these values by setting both the relevant block or byte property. Alternatively, a module may set only one of the two properties. When you do this, FSKit calculates the matching value based on [`blockSize`](fsstatfsresult/blocksize.md).
-
-Available space, free space, total space, and used space have properties to express their values either as a number of blocks or a number of bytes. Your module may supply both of these values by setting both the relevant block or byte property. Alternatively, a module may set only one of the two properties. When you do this, FSKit calculates the matching value based on [`blockSize`](fsstatfsresult/blocksize.md).
 
 For the read-only [`fileSystemTypeName`](fsstatfsresult/filesystemtypename.md), set this value with the designated initializer.
 
@@ -85,4 +83,4 @@ For the read-only [`fileSystemTypeName`](fsstatfsresult/filesystemtypename.md), 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fsstatfsresult)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FSKit/fsstatfsresult)*

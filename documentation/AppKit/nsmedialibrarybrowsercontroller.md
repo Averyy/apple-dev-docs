@@ -1,6 +1,6 @@
 # NSMediaLibraryBrowserController
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An object that configures and displays a Media Library Browser panel.
@@ -19,8 +19,6 @@ class NSMediaLibraryBrowserController
 From this panel a user can drag media  into views in their app. The class provides a standard interface to the MediaLibrary framework content.
 
 > **Note**:  The Media Library Browser panel is not an `NSPanel` instance.  It has panel like methods to remotely control the Media Library Browser.  Clients have no direct programmatic access to the panel displaying the Media Library Browser.
-
- The Media Library Browser panel is not an `NSPanel` instance.  It has panel like methods to remotely control the Media Library Browser.  Clients have no direct programmatic access to the panel displaying the Media Library Browser.
 
 For more information see [`MLMediaLibrary`](https://developer.apple.com/documentation/MediaLibrary/MLMediaLibrary), [`MLMediaSource`](https://developer.apple.com/documentation/MediaLibrary/MLMediaSource), [`MLMediaGroup`](https://developer.apple.com/documentation/MediaLibrary/MLMediaGroup), and [`MLMediaObject`](https://developer.apple.com/documentation/MediaLibrary/MLMediaObject) in [`Media Library`](https://developer.apple.com/documentation/MediaLibrary).
 
@@ -137,4 +135,4 @@ Listing 2. Retrieving MLMediaObject instances from the pasteboard
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsmedialibrarybrowsercontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsmedialibrarybrowsercontroller)*

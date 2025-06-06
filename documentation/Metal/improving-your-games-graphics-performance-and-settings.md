@@ -108,8 +108,6 @@ When the game starts, query for the GPU family support with the [`supportsFamily
 
 > **Note**:  Hardware-accelerated mesh shaders and ray tracing are supported on `MTLGPUFamilyApple9` GPU families.
 
- Hardware-accelerated mesh shaders and ray tracing are supported on `MTLGPUFamilyApple9` GPU families.
-
 ##### Adapt the Game for Battery Life or Low Power Mode
 
 When designing games that run on a portable device, consider detecting when the app goes into low-power mode. See the [`isLowPowerModeEnabled`](https://developer.apple.com/documentation/foundation/processinfo/1617047-islowpowermodeenabled) API for more information on getting a notification when the system goes into low-power mode. This technique allows a game to adapt its graphics settings so that it uses less energy. For example, the game can:
@@ -142,4 +140,4 @@ When designing games that run on a portable device, consider detecting when the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/improving-your-games-graphics-performance-and-settings)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/improving-your-games-graphics-performance-and-settings)*

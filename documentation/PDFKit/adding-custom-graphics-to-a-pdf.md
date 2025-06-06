@@ -1,6 +1,6 @@
 # Adding Custom Graphics to a PDF
 
-**Framework**: PDFKit
+**Framework**: Pdfkit
 
 Create and add custom annotation and page graphics to your PDF document.
 
@@ -91,8 +91,6 @@ In the appropriate `draw` method, add your custom drawing, in this case the line
 
 > ❗ **Important**:  Ensure that you draw your content with respect to the PDF page coordinate system. The origin is at the bottom left corner, with the Y axis increasing from bottom to top and the X axis increasing from left to right.
 
- Ensure that you draw your content with respect to the PDF page coordinate system. The origin is at the bottom left corner, with the Y axis increasing from bottom to top and the X axis increasing from left to right.
-
 ```swift
 class LineAnnotation: PDFAnnotation {
     override func draw(with box: PDFDisplayBox, in context: CGContext) {
@@ -118,8 +116,6 @@ class LineAnnotation: PDFAnnotation {
 
 > **Note**:  PDFAnnotation also allows custom drawing for annotations with a type unknown to PDFKit,  but only if the annotation has an appearance stream ([`hasAppearanceStream`](pdfannotation/hasappearancestream.md)).
 
- PDFAnnotation also allows custom drawing for annotations with a type unknown to PDFKit,  but only if the annotation has an appearance stream ([`hasAppearanceStream`](pdfannotation/hasappearancestream.md)).
-
 ## See Also
 
 - [Adding Widgets to a PDF Document](adding-widgets-to-a-pdf-document.md)
@@ -134,4 +130,4 @@ class LineAnnotation: PDFAnnotation {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/pdfkit/adding-custom-graphics-to-a-pdf)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PDFKit/adding-custom-graphics-to-a-pdf)*

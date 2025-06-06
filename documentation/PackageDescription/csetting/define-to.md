@@ -1,6 +1,6 @@
 # define(_:to:_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Defines a value for a macro.
@@ -19,8 +19,6 @@ static func define(_ name: String, to value: String? = nil, _ condition: BuildSe
 If you don’t specify a value, the macro’s default value is 1.
 
 > **Note**: First available in PackageDescription 5.0.
-
-First available in PackageDescription 5.0.
 
 ## Parameters
 

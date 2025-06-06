@@ -1,6 +1,6 @@
 # init(semantic:mipmapsMode:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates a texture creation options structure.
@@ -25,8 +25,6 @@ The `semantic` value you pass tells RealityKit how you plan to use the texture d
 If semantic is `nil`, RealityKit tries to infer a semantic from the texture’s source data. If it’s unable to determine a semantic from the texture source data, it will infer a semantic from the texture’s usage. Providing a value for `semantic` ensures that RealityKit passes the texture resource exactly as you intend.
 
 > **Note**: RealityKit only takes embedded color space data into account when rendering a texture if you pass [`TextureResource.Semantic.color`](textureresource/semantic-swift.enum/color.md) for `semantic`.
-
-RealityKit only takes embedded color space data into account when rendering a texture if you pass [`TextureResource.Semantic.color`](textureresource/semantic-swift.enum/color.md) for `semantic`.
 
 ## Parameters
 

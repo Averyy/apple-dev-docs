@@ -62,8 +62,6 @@ if firstHalfSum > secondHalfSum {
 
 > ❗ **Important**: Long-term storage of `ArraySlice` instances is discouraged. A slice holds a reference to the entire storage of a larger array, not just to the portion it presents, even after the original array’s lifetime ends. Long-term storage of a slice may therefore prolong the lifetime of elements that are no longer otherwise accessible, which can appear to be memory and object leakage.
 
-Long-term storage of `ArraySlice` instances is discouraged. A slice holds a reference to the entire storage of a larger array, not just to the portion it presents, even after the original array’s lifetime ends. Long-term storage of a slice may therefore prolong the lifetime of elements that are no longer otherwise accessible, which can appear to be memory and object leakage.
-
 ### Slices Maintain Indices
 
 Unlike `Array` and `ContiguousArray`, the starting index for an `ArraySlice` instance isn’t always zero. Slices maintain the same indices of the larger array for the same elements, so the starting index of a slice depends on how it was created, letting you perform index-based operations on either a full array or a slice.
@@ -92,8 +90,6 @@ if let i = absences.firstIndex(where: { $0 > 0 }) {                 // 1
 In particular, note that `j`, the index of the second day with absences, was found in a slice of the original array and then used to access a value in the original `absences` array itself.
 
 > **Note**: To safely reference the starting and ending indices of a slice, always use the `startIndex` and `endIndex` properties instead of specific values.
-
-To safely reference the starting and ending indices of a slice, always use the `startIndex` and `endIndex` properties instead of specific values.
 
 ## Topics
 
@@ -165,4 +161,4 @@ To safely reference the starting and ending indices of a slice, always use the `
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/arrayslice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/arrayslice)*

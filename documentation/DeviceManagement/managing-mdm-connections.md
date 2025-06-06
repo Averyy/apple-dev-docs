@@ -1,6 +1,6 @@
 # Managing MDM Connections
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Establish or remove a connection between a device and an MDM server.
 
@@ -25,8 +25,6 @@ The device presents its identity certificate to the MDM server for authenticatio
 
 > **Note**:  Although MDM uses `UDID`s, they’re deprecated in iOS. A `UDID` may contain special characters, such as dashes, and its length isn’t guaranteed.
 
- Although MDM uses `UDID`s, they’re deprecated in iOS. A `UDID` may contain special characters, such as dashes, and its length isn’t guaranteed.
-
 ##### Handle Device Restores
 
 A user can restore their connected device from a backup. If the backup contains an MDM enrollment profile, the system restores management of the device, and the device schedules delivery of a [`TokenUpdateRequest`](tokenupdaterequest.md) check-in message to the server. However, if the user restores the backup to a different device, the system won’t restore MDM service.
@@ -34,8 +32,6 @@ A user can restore their connected device from a backup. If the backup contains 
 Your server can either accept the device by replying with a `200` HTTP status code, or reject the device with a `401` status code. If your server replies with a `401` status code, the device removes the enrollment profile that contains the MDM payload.
 
 > 💡 **Tip**:  Configure your server to respond with a `401` HTTP status code to any device that it isn’t actively managing.
-
- Configure your server to respond with a `401` HTTP status code to any device that it isn’t actively managing.
 
 ##### Terminate Management of a Device
 
@@ -58,4 +54,4 @@ Terminate a management relationship with a device by performing one of these act
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/managing-mdm-connections)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/managing-mdm-connections)*

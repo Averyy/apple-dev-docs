@@ -1,6 +1,6 @@
 # MPSImageGaussianPyramid
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A filter that convolves an image with a Gaussian pyramid.
@@ -35,8 +35,6 @@ The Gaussian image pyramid is constructed as follows:
 - This procedure is continued until every mip-map level present in the image is filled with all the pyramid levels.
 
 > **Note**: Make sure your chosen texture type is compatible with mip-mapping and also supports texture views (i.e. the texture’s usage includes the [`pixelFormatView`](https://developer.apple.com/documentation/metal/mtltextureusage/pixelformatview) option).
-
-Make sure your chosen texture type is compatible with mip-mapping and also supports texture views (i.e. the texture’s usage includes the [`pixelFormatView`](https://developer.apple.com/documentation/metal/mtltextureusage/pixelformatview) option).
 
 ## Relationships
 

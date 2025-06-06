@@ -27,8 +27,6 @@ Values rounded to a representable value, if necessary.
 
 > **Note**: This function is provided as a convenience. All Spatial storage and calculations are double-precision.
 
-This function is provided as a convenience. All Spatial storage and calculations are double-precision.
-
 
 ---
 

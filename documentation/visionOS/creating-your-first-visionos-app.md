@@ -10,8 +10,6 @@ If you’re new to visionOS, start with a new Xcode project to learn about the p
 
 > **Note**: Developing for visionOS requires a Mac with Apple silicon.
 
-Developing for visionOS requires a Mac with Apple silicon.
-
 In any SwiftUI app, you place content onscreen using scenes. A scene contains the views and controls to display onscreen. Scenes also define the appearance of those views and controls when they appear onscreen. In visionOS, you can include both 2D and 3D views in the same scene, and you can present those views in a window or as part of the person’s surroundings.
 
 Start with a new Xcode project and add features to familiarize yourself with visionOS content and techniques. Run your app in Simulator to verify your content looks like you expect, and run it on device to see your 3D content come to life.
@@ -64,8 +62,6 @@ Tap and drag the window bar below your app’s content to reposition the window 
 
 > **Note**: Apps don’t control the placement of windows in the space. The system places each window in its initial position, and updates that position based on further interactions with the app.
 
-Apps don’t control the placement of windows in the space. The system places each window in its initial position, and updates that position based on further interactions with the app.
-
 For additional information about how to interact with your app in Simulator, see [`Interacting with your app in the visionOS simulator`](https://developer.apple.com/documentation/Xcode/interacting-with-your-app-in-the-visionos-simulator).
 
 ## See Also
@@ -82,4 +78,4 @@ For additional information about how to interact with your app in Simulator, see
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/creating-your-first-visionos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/creating-your-first-visionos-app)*

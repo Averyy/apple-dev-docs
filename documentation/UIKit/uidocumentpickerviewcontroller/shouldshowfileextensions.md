@@ -1,6 +1,6 @@
 # shouldShowFileExtensions
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A Boolean value that determines whether the browser always shows file extensions.
@@ -23,8 +23,6 @@ var shouldShowFileExtensions: Bool { get set }
 The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 > **Note**:  This property has no effect in Mac apps built with Mac Catalyst.
-
- This property has no effect in Mac apps built with Mac Catalyst.
 
 ## See Also
 

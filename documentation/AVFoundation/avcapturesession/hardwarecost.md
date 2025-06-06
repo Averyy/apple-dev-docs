@@ -1,6 +1,6 @@
 # hardwareCost
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A value that indicates the percentage of the session’s available hardware budget in use.
@@ -31,8 +31,6 @@ Factors that contribute to the hardware cost include:
 To reduce the hardware cost, consider picking a sensor-cropped or binned [`activeFormat`](avcapturedevice/activeformat.md). You may also use a device input’s [`videoMinFrameDurationOverride`](avcapturedeviceinput/videominframedurationoverride.md) property to artificially limit the maximum frame rate of a source device to a lower value. By doing so, you only pay the hardware cost for the maximum frame rate you intend to use.
 
 > **Note**:  [`AVCaptureSession`](avcapturesession.md) only computes a nonzero hardware cost when you add multiple [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) objects to the session, or an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) instance and one or more instances of [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md).
-
- [`AVCaptureSession`](avcapturesession.md) only computes a nonzero hardware cost when you add multiple [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) objects to the session, or an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) instance and one or more instances of [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md).
 
 
 ---

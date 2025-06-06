@@ -1,6 +1,6 @@
 # requestWhenInUseAuthorization()
 
-**Framework**: Core Location  
+**Framework**: Corelocation  
 **Kind**: method
 
 Requests the user’s permission to use location services while the app is in use.
@@ -26,8 +26,6 @@ You must call this method or [`requestAlwaysAuthorization()`](cllocationmanager/
 
 > ❗ **Important**:  Your app must be in the foreground to show a location authorization prompt.
 
- Your app must be in the foreground to show a location authorization prompt.
-
 This method runs asynchronously and prompts the user to grant permission to the app to use location services. The user prompt contains the text from the [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription) key in your app `Info.plist` file, and the presence of that key is required when calling this method. The user prompt displays the following options, which determine the authorization your app can receive.
 
 | Option | Authorization |
@@ -43,8 +41,6 @@ If the user’s choice grants When In Use authorization to your app, your app ca
 When your app starts standard location services in the foreground, they continue to run in the background if your app has enabled background location updates in the Capabilities tab of your Xcode project. Attempts to start location updates while your app runs in the background will fail. The system displays a location services indicator in the status bar when your app moves to the background with active location services.
 
 > **Note**:  In iOS 16 and later, apps that actively track a user’s location or that have recently enabled Core Location display an indicator in Control Center. Be mindful of battery use and user privacy by monitoring the device’s location only when necessary and when the user expects it.
-
- In iOS 16 and later, apps that actively track a user’s location or that have recently enabled Core Location display an indicator in Control Center. Be mindful of battery use and user privacy by monitoring the device’s location only when necessary and when the user expects it.
 
 ## Topics
 

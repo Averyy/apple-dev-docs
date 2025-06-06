@@ -75,8 +75,6 @@ The `initialPosition` variable resets back to `nil` when the gesture ends.
 
 > **Note**: You must use [`targetedToAnyEntity()`](https://developer.apple.com/documentation/SwiftUI/Gesture/targetedToAnyEntity()) or related methods to enable a gesture to target an entity.
 
-You must use [`targetedToAnyEntity()`](https://developer.apple.com/documentation/SwiftUI/Gesture/targetedToAnyEntity()) or related methods to enable a gesture to target an entity.
-
 The `scaleGesture` applies the scale rate by the magnification on the gesture, to smoothly scale the entity during a gesture movement:
 
 ```swift
@@ -258,4 +256,4 @@ struct MainView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/creating-an-interactable-3d-model-in-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/creating-an-interactable-3d-model-in-visionos)*

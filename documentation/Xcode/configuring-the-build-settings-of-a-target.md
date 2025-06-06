@@ -14,8 +14,6 @@ Make changes to your project or target’s settings from the Build Settings tab 
 
 > **Note**: You can also store settings in specially formatted text files called build configuration files. These files make it easy to save your settings along with your source files in your source control management system. For information about build configuration files, see [`Adding a build configuration file to your project`](adding-a-build-configuration-file-to-your-project.md).
 
-You can also store settings in specially formatted text files called build configuration files. These files make it easy to save your settings along with your source files in your source control management system. For information about build configuration files, see [`Adding a build configuration file to your project`](adding-a-build-configuration-file-to-your-project.md).
-
 For a complete list of build settings, see [`Build settings reference`](build-settings-reference.md).
 
 ##### Search and Filter the List of Build Settings
@@ -63,8 +61,6 @@ With levels displayed, highlighted values indicate values that take precedence. 
 
 > **Note**: When using the `xcodebuild` command-line tool, the tool gives any settings you pass to it the highest prededence.
 
-When using the `xcodebuild` command-line tool, the tool gives any settings you pass to it the highest prededence.
-
 ##### Obtain Additional Details About a Build Setting
 
 To see detailed information about a particular setting, select the setting and choose View > Inspectors > Quick Help. Xcode displays a description of the setting, along with its name and value type.
@@ -84,4 +80,4 @@ To see detailed information about a particular setting, select the setting and c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-the-build-settings-of-a-target)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-the-build-settings-of-a-target)*

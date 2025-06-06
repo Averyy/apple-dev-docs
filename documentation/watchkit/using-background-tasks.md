@@ -102,8 +102,6 @@ For some background tasks, the system calls other delegate methods or completion
 
 > **Note**:  When handling Handoff-related activity from Siri, the [`handle(_:)`](wkapplicationdelegate/handle(_:)-4vdjo.md) method receives an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object containing data associated with the task the user performed. If responding to a SiriKit intent, the [`handle(_:completionHandler:)`](wkextensiondelegate/handle(_:completionhandler:).md) method receives an intent and a completion handler to execute. These are in addition to the [`handle(_:)`](wkapplicationdelegate/handle(_:)-4vdjo.md) method call for the background task itself.
 
- When handling Handoff-related activity from Siri, the [`handle(_:)`](wkapplicationdelegate/handle(_:)-4vdjo.md) method receives an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object containing data associated with the task the user performed. If responding to a SiriKit intent, the [`handle(_:completionHandler:)`](wkextensiondelegate/handle(_:completionhandler:).md) method receives an intent and a completion handler to execute. These are in addition to the [`handle(_:)`](wkapplicationdelegate/handle(_:)-4vdjo.md) method call for the background task itself.
-
 ##### Request a Background Task
 
 Your app can request to run in the background by calling [`scheduleBackgroundRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](wkextension/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md).
@@ -208,8 +206,6 @@ In watchOS 9 or later, your app can also scan for Bluetooth peripherals from the
 
 > ❗ **Important**:  The system limits your app to five background-scan or timely alert opportunities in a rolling 24-hour window. The opportunities become available 24 hours after their use, and the entire budget refreshes when the user launches your app. Use an opportunity to present time-sensitive information, such as a significant rise in blood glucose levels.
 
- The system limits your app to five background-scan or timely alert opportunities in a rolling 24-hour window. The opportunities become available 24 hours after their use, and the entire budget refreshes when the user launches your app. Use an opportunity to present time-sensitive information, such as a significant rise in blood glucose levels.
-
 When your app receives a timely alert and your budget has only one Bluetooth alert task remaining, the system raises a [`CBError.Code.leGattNearBackgroundNotificationLimit`](https://developer.apple.com/documentation/CoreBluetooth/CBError-swift.struct/Code/leGattNearBackgroundNotificationLimit) error. If you exceed the budget, the system raises a [`CBError.Code.leGattExceededBackgroundNotificationLimit`](https://developer.apple.com/documentation/CoreBluetooth/CBError-swift.struct/Code/leGattExceededBackgroundNotificationLimit) error, and your app doesn’t receive any timely alerts and can’t perform any background scans until additional background budget is available.
 
 ## See Also
@@ -236,4 +232,4 @@ When your app receives a timely alert and your budget has only one Bluetooth ale
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/using-background-tasks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/using-background-tasks)*

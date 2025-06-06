@@ -35,8 +35,6 @@ Because arrays increase their allocated capacity using an exponential strategy, 
 
 > **Note**: O(1) on average, over many calls to `append(_:)` on the same array.
 
-O(1) on average, over many calls to `append(_:)` on the same array.
-
 ## Parameters
 
 - `newElement`: The element to append to the array.

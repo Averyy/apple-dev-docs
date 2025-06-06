@@ -1,6 +1,6 @@
 # editColumn(_:row:with:select:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Edits the cell at the specified column and row using the specified event and selection behavior.
@@ -24,8 +24,6 @@ This method scrolls the table view so that the cell is visible and sets up the f
 This method can be overridden to customize drawing for `rowIndex` when using [`NSCell`](nscell.md)-based table views.
 
 > **Note**:  When using [`NSView`](nsview.md)-based table views, this method attempts to make the view at the specified `column` and `row` the first responder, which will begin editing if the view supports editing. This method should not be subclassed or overridden for [`NSView`](nsview.md)-based table views. Instead, row drawing customization can be done by subclassing [`NSTableRowView`](nstablerowview.md).
-
- When using [`NSView`](nsview.md)-based table views, this method attempts to make the view at the specified `column` and `row` the first responder, which will begin editing if the view supports editing. This method should not be subclassed or overridden for [`NSView`](nsview.md)-based table views. Instead, row drawing customization can be done by subclassing [`NSTableRowView`](nstablerowview.md).
 
 ## Parameters
 

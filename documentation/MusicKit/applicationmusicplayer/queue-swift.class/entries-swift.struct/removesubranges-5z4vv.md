@@ -1,6 +1,6 @@
 # removeSubranges(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Removes the elements at the given indices.
@@ -34,8 +34,6 @@ str.removeSubranges(vowelIndices)
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # TimelineViewDefaultContext
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: typealias
 
 Information passed to a timeline view’s content callback.
@@ -26,8 +26,6 @@ The context includes both the date from the schedule that triggered the callback
 
 > **Note**: This type alias uses a specific concrete instance of [`TimelineView.Context`](timelineview/context.md) that all timeline views can use. It does this to prevent introducing an unnecessary generic parameter dependency on the context type.
 
-This type alias uses a specific concrete instance of [`TimelineView.Context`](timelineview/context.md) that all timeline views can use. It does this to prevent introducing an unnecessary generic parameter dependency on the context type.
-
 ## See Also
 
 - [Updating watchOS apps with timelines](../watchOS-Apps/updating-watchos-apps-with-timelines.md)
@@ -40,4 +38,4 @@ This type alias uses a specific concrete instance of [`TimelineView.Context`](ti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/timelineviewdefaultcontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/timelineviewdefaultcontext)*

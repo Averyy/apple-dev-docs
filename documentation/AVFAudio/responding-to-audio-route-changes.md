@@ -1,6 +1,6 @@
 # Responding to audio route changes
 
-**Framework**: AVFAudio
+**Framework**: Avfaudio
 
 Observe audio session notifications to ensure that your app responds appropriately to route changes.
 
@@ -11,8 +11,6 @@ An important responsibility of [`AVAudioSession`](avaudiosession.md) is managing
 An important behavior related to route changes occurs when a user plugs in or removes a pair of headphones (see Playing audio in [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines)). When users connect a pair of wired or wireless headphones, they’re implicitly indicating that audio playback should continue, but privately. They expect an app that’s currently playing media to continue playing without pause. However, when users  their headphones, they don’t want to automatically share what they’re listening to with others. Applications should respect this implicit privacy request and automatically pause playback when users disconnect their headphones.
 
 > **Note**:  [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) monitors your app’s audio session and responds appropriately to route changes. When users connect headphones, playback continues as expected. When they disconnect their headphones, playback is automatically paused. To observe this player behavior, key-value observe the player’s [`rate`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/rate) property so that you can update your user interface as the player pauses playback.
-
- [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) monitors your app’s audio session and responds appropriately to route changes. When users connect headphones, playback continues as expected. When they disconnect their headphones, playback is automatically paused. To observe this player behavior, key-value observe the player’s [`rate`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/rate) property so that you can update your user interface as the player pauses playback.
 
 ##### Observe Route Changes
 
@@ -90,4 +88,4 @@ func hasHeadphones(in routeDescription: AVAudioSessionRouteDescription) -> Bool 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/responding-to-audio-route-changes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/responding-to-audio-route-changes)*

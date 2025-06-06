@@ -25,8 +25,6 @@ func reversed() -> Base
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

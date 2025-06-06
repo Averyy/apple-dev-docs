@@ -1,6 +1,6 @@
 # assumeIsolated(_:file:line:)
 
-**Framework**: SecureElementCredential  
+**Framework**: Secureelementcredential  
 **Kind**: method
 
 Assume that the current task is executing on this actor’s serial executor, or stop program execution otherwise.
@@ -37,11 +37,7 @@ This method can only be used from synchronous functions, as asynchronous functio
 
 > **Note**: This check is performed against the actor’s serial executor, meaning that / if another actor uses the same serial executor–by using another actor’s executor as its own `Actor/unownedExecutor` –this check will succeed , as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
 
-This check is performed against the actor’s serial executor, meaning that / if another actor uses the same serial executor–by using another actor’s executor as its own `Actor/unownedExecutor` –this check will succeed , as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
-
 > **Note**: Rethrows the `Error` thrown by the operation if it threw
-
-Rethrows the `Error` thrown by the operation if it threw
 
 ## Parameters
 

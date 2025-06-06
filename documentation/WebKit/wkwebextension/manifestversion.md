@@ -23,8 +23,6 @@ var manifestVersion: Double { get }
 
 > **Note**: A [`unsupportedManifestVersion`](wkwebextension/error/unsupportedmanifestversion.md) error will be reported if the manifest version isn’t specified.
 
-A [`unsupportedManifestVersion`](wkwebextension/error/unsupportedmanifestversion.md) error will be reported if the manifest version isn’t specified.
-
 
 ---
 

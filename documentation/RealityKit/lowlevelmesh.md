@@ -1,6 +1,6 @@
 # LowLevelMesh
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: class
 
 A container for vertex data that you can use to create and update meshes using your own format.
@@ -28,8 +28,6 @@ class LowLevelMesh
 Use `LowLevelMesh` when you want to bring your own vertex format to RealityKit or update your data frequently. To update your data in `LowLevelMesh`, you can either use Swift for CPU processing, or Metal Compute Shaders for GPU processing.
 
 > **Note**: Use [`MeshDescriptor`](meshdescriptor.md) for a simpler alternative to `LowLevelMesh`. For information on loading a model from a USD or Reality file, see [`Loading entities from a file`](loading-entities-from-a-file.md).
-
-Use [`MeshDescriptor`](meshdescriptor.md) for a simpler alternative to `LowLevelMesh`. For information on loading a model from a USD or Reality file, see [`Loading entities from a file`](loading-entities-from-a-file.md).
 
 Express your vertex by creating a [`LowLevelMesh.Descriptor`](lowlevelmesh/descriptor-swift.struct.md) that describes your layout, along with the required index and vertex capacities. This descriptor is similar to [`MTLVertexDescriptor`](https://developer.apple.com/documentation/Metal/MTLVertexDescriptor), with additional semantics that make the data available in your shaders.
 
@@ -203,4 +201,4 @@ The [`MeshResource`](meshresource.md) retains a reference to the `LowLevelMesh`,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/lowlevelmesh)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/lowlevelmesh)*

@@ -28,8 +28,6 @@ An instance representing the state of the receiver with the difference applied, 
 
 > **Note**: O( + ), where  is `self.count` and  is the number of changes contained by the parameter.
 
-O( + ), where  is `self.count` and  is the number of changes contained by the parameter.
-
 ## Parameters
 
 - `difference`: The difference to be applied.

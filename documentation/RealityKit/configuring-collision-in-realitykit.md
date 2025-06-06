@@ -1,6 +1,6 @@
 # Configuring Collision in RealityKit
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Use collision groups and collision filters to control which objects collide.
 
@@ -40,8 +40,6 @@ For example, here is how this sample creates the filter for the `cubeGroup`, use
 
 > **Note**: Group membership does not have to be exclusive. Although it’s common to pass an individual group to [`CollisionFilter`](collisionfilter.md)‘s `group` parameter as is done in this project, but you don’t have to.  You can pass a `group` parameter that includes more than one individual group, just like you can with the `mask` parameter, and any entity that gets assigned that filter will be a member of all of the specified groups.
 
-Group membership does not have to be exclusive. Although it’s common to pass an individual group to [`CollisionFilter`](collisionfilter.md)‘s `group` parameter as is done in this project, but you don’t have to.  You can pass a `group` parameter that includes more than one individual group, just like you can with the `mask` parameter, and any entity that gets assigned that filter will be a member of all of the specified groups.
-
 After creating a collision filter, assign it to all the entities that should use that filter, like this:
 
 ```swift
@@ -75,4 +73,4 @@ Requires Xcode 16.2, iOS 18, and an iOS device with an A9 or later processor. AR
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/configuring-collision-in-realitykit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/configuring-collision-in-realitykit)*

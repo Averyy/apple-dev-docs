@@ -1,6 +1,6 @@
 # App Encryption Declarations
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 View, and assign to builds, the declarations about types of encryption used in your app.
 
@@ -14,8 +14,6 @@ To comply with regulatory requirements, you sometimes need to provide informatio
 - Upload app encryption declaration documents.
 
 > **Note**:  Builds that have the `usesNonExemptEncryption` flag set to true in the app’s property list must link to an app encryption declaration before the app can be submitted for beta app review.
-
- Builds that have the `usesNonExemptEncryption` flag set to true in the app’s property list must link to an app encryption declaration before the app can be submitted for beta app review.
 
 For more information, see [`Overview of export compliance`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-app-information/overview-of-export-compliance).
 
@@ -73,4 +71,4 @@ For more information, see [`Overview of export compliance`](https://developer.ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/app-encryption-declarations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/app-encryption-declarations)*

@@ -12,8 +12,6 @@ Access and modify DOM elements within a webpage, including touch events and visu
 
 > **Note**: This document was previously titled .
 
-This document was previously titled .
-
 This covers miscellaneous DOM extensions used by Safari in macOS and iOS. These extensions include DOM touch events for processing gestures for devices that have a touch screen and visual effects that support 2D and 3D transforms, animation, and transitions. Most of the classes described in this reference are Apple extensions that may also be proposed W3C standards.
 
 ## Topics

@@ -47,8 +47,6 @@ When you are ready to transfer data to or from your device, create a new memory 
 
 > **Note**: Calls to the [`getPhysicalSegment`](iomemorydescriptor/1442068-getphysicalsegment.md) method of [`IOMemoryDescriptor`](iomemorydescriptor.md) fail on Apple silicon. When updating older kernel extensions to support Apple silicon, replace all calls to that method with [`IODMACommand`](iodmacommand.md) objects. 
 
-Calls to the [`getPhysicalSegment`](iomemorydescriptor/1442068-getphysicalsegment.md) method of [`IOMemoryDescriptor`](iomemorydescriptor.md) fail on Apple silicon. When updating older kernel extensions to support Apple silicon, replace all calls to that method with [`IODMACommand`](iodmacommand.md) objects. 
-
 ##### 3686966
 
 When it detects new hardware, the system must find an appropriate set of drivers to manage that hardware. It does so by comparing the hardware details to information found in the `kIOKitPersonalitiesKey` key of each driver’s `Info.plist` file, and identifying the drivers that best match the hardware. For example, a driver might match only against devices from a specific manufacturer, or devices that support only a specific communication protocol. 
@@ -114,8 +112,6 @@ OSSafeReleaseNULL(dict);
 
 > ❗ **Important**: Always set the `Physical Interconnect Location` property early in your driver’s [`start`](ioservice/1532606-start.md) method. Don’t set it after you access the device. 
 
-Always set the `Physical Interconnect Location` property early in your driver’s [`start`](ioservice/1532606-start.md) method. Don’t set it after you access the device. 
-
 ##### 3690960
 
 The processors in recent Macs have low-power states that reduce the processor speed and voltage when the computer is idle. These low-power states decrease overall power consumption and heat generation on the system, and improve battery life. However, when a power-state transition occurs, the system temporarily stops all PCI bus traffic while it changes the power state of the processor cores. Halting PCI bus traffic can cause audio glitches and other side effects on devices that are sensitive to the added latency.
@@ -123,8 +119,6 @@ The processors in recent Macs have low-power states that reduce the processor sp
 To mitigate the problems of any added latency, implement the PCIe latency tolerance reporting (LTR) extended capability in your devices according to the PCIe specifications. If your driver supports legacy devices, schedule your driver’s time-critical DMA operations so that occasional delays don’t affect your device. If you’re unable to adjust the schedule of your DMA operations, call the [`requireMaxBusStall`](ioservice/1532887-requiremaxbusstall.md) method of your [`IOService`](ioservice.md) subclass at the beginning and end of any time-critical transfers. Before a transfer, call this method with the constant that represents the maximum latency your driver can tolerate. For example, specify `kIOMaxBusStall20usec` to delay bus stalls for 20 microseconds. The system avoids entering low-power states for the specified amount of time. After a transfer, restore the default bus stall time by passing `kIOMaxBusStallNone` to the method. 
 
 > ❗ **Important**: Call the [`requireMaxBusStall`](ioservice/1532887-requiremaxbusstall.md) method only if there is no other way to make your device and driver more tolerant of increased memory latency. The method prevents the system from transitioning to lower-power states, which can significantly impact battery life on portable systems. It may also increase system heat, and require device fans to run longer. Overuse of this API may also lead to kernel panics. 
-
-Call the [`requireMaxBusStall`](ioservice/1532887-requiremaxbusstall.md) method only if there is no other way to make your device and driver more tolerant of increased memory latency. The method prevents the system from transitioning to lower-power states, which can significantly impact battery life on portable systems. It may also increase system heat, and require device fans to run longer. Overuse of this API may also lead to kernel panics. 
 
 Because audio transfers occur only when your audio engine is running, call the [`requireMaxBusStall`](ioservice/1532887-requiremaxbusstall.md) method in the [`performAudioEngineStart`](ioaudioengine/1561628-performaudioenginestart.md) and [`performAudioEngineStop`](ioaudioengine/1561589-performaudioenginestop.md) methods of [`IOAudioEngine`](ioaudioengine.md). The following example shows an implementation of these methods that prevents PCI bus stalls for 10 microseconds when a transfer begins, and restores the default bus stall time at the end of the transfer. 
 

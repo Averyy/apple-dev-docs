@@ -44,8 +44,6 @@ Any time the GPU encounters a runtime error while sampling a counter, it sets th
 
 > **Note**:  A GPU typically stores timestamp values from its internal clock. You can convert those timestamps into more meaningful time values, in nanoseconds, with [`sampleTimestamps()`](mtldevice/sampletimestamps().md) — see [`Converting GPU Timestamps into CPU Time`](converting-gpu-timestamps-into-cpu-time.md).
 
- A GPU typically stores timestamp values from its internal clock. You can convert those timestamps into more meaningful time values, in nanoseconds, with [`sampleTimestamps()`](mtldevice/sampletimestamps().md) — see [`Converting GPU Timestamps into CPU Time`](converting-gpu-timestamps-into-cpu-time.md).
-
 ## See Also
 
 - [struct MTLCounterResultTimestamp](mtlcounterresulttimestamp.md)
@@ -60,4 +58,4 @@ Any time the GPU encounters a runtime error while sampling a counter, it sets th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/converting-a-gpus-counter-data-into-a-readable-format)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/converting-a-gpus-counter-data-into-a-readable-format)*

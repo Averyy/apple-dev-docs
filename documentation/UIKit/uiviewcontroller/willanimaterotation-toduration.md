@@ -1,6 +1,6 @@
 # willAnimateRotation(to:duration:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Sent to the view controller before performing a one-step user interface rotation.
@@ -22,8 +22,6 @@ func willAnimateRotation(to toInterfaceOrientation: UIInterfaceOrientation, dura
 This method is called from within the animation block used to rotate the view. You can override this method and use it to configure additional animations that should occur during the view rotation. For example, you could use it to adjust the zoom level of your content, change the scroller position, or modify other animatable properties of your view.
 
 > **Note**:  The animations used to slide the header and footer views in and out of position are performed in separate animation blocks.
-
- The animations used to slide the header and footer views in and out of position are performed in separate animation blocks.
 
 By the time this method is called, the [`interfaceOrientation`](uiviewcontroller/interfaceorientation.md) property is already set to the new orientation, and the bounds of the view have been changed. Thus, you can perform any additional layout required by your views in this method.
 

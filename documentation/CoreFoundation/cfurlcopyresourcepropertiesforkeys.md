@@ -1,6 +1,6 @@
 # CFURLCopyResourcePropertiesForKeys(_:_:_:)
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: func
 
 Returns the resource values for the properties identified by specified array of keys.
@@ -35,8 +35,6 @@ If the result dictionary does not contain a resource value for one or more of th
 If an error occurs, this function returns `NULL` and populates the object pointer referenced by `error` with additional information.
 
 > **Note**:  This method applies only to URLs that represent file system resources.
-
- This method applies only to URLs that represent file system resources.
 
 ## Parameters
 

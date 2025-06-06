@@ -1,6 +1,6 @@
 # paymentSummaryItems
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 An array of payment summary item objects that summarize the amount of the payment.
@@ -37,8 +37,6 @@ In iOS 15 and later you can create three different types of payment summary item
 - Use a [`PKRecurringPaymentSummaryItem`](pkrecurringpaymentsummaryitem.md) for a payment that occurs more than once, such as a subscription.
 
 > **Note**:  In versions of iOS prior to version 12.0 and watchOS prior to version 5.0, the amount of the grand total must be greater than zero.
-
- In versions of iOS prior to version 12.0 and watchOS prior to version 5.0, the amount of the grand total must be greater than zero.
 
 Setting the payment summary items:
 

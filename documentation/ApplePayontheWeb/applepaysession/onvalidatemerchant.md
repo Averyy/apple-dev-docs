@@ -1,6 +1,6 @@
 # onvalidatemerchant
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 An event handler the system calls when it displays the payment sheet.
@@ -41,8 +41,6 @@ The system enables the payment sheet.
 
 > **Note**:  Previous merchant validation instructions stated that your [`onvalidatemerchant`](applepaysession/onvalidatemerchant.md) function must call your server and pass it the URL from the event’s [`validationURL`](applepayvalidatemerchantevent/validationurl.md) attribute. Apple Pay continues to support this flow for existing implementations.
 
- Previous merchant validation instructions stated that your [`onvalidatemerchant`](applepaysession/onvalidatemerchant.md) function must call your server and pass it the URL from the event’s [`validationURL`](applepayvalidatemerchantevent/validationurl.md) attribute. Apple Pay continues to support this flow for existing implementations.
-
 ## See Also
 
 - [Providing Merchant Validation](providing-merchant-validation.md)
@@ -57,4 +55,4 @@ The system enables the payment sheet.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaysession/onvalidatemerchant)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaysession/onvalidatemerchant)*

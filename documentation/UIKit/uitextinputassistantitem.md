@@ -1,6 +1,6 @@
 # UITextInputAssistantItem
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that manages custom bar button items that you add to the shortcuts bar above the keyboard on iPad.
@@ -23,8 +23,6 @@ class UITextInputAssistantItem
 Use a [`UITextInputAssistantItem`](uitextinputassistantitem.md) object to add app-specific actions to the shortcuts bar on iPad. The center of the shortcuts bar displays typing suggestions for the user. You can install custom bar button items that lead or trail the typing suggestions.
 
 > **Note**:  You can add custom items to the shortcuts bar on iPad only. On iPhone, the text input system ignores the contents of the [`UITextInputAssistantItem`](uitextinputassistantitem.md) object.
-
- You can add custom items to the shortcuts bar on iPad only. On iPhone, the text input system ignores the contents of the [`UITextInputAssistantItem`](uitextinputassistantitem.md) object.
 
 You don’t create instances of this class directly. Instead, you get an input assistant from the [`inputAssistantItem`](uiresponder/inputassistantitem.md) property of the responder object whose keyboard you want to modify. When the keyboard is onscreen, UIKit automatically searches the responder chain for a text-input assistant object. Typically, you assign the text-input assistant to the object that becomes the first responder. However, you can also assign it to a parent responder object to share a set of shortcuts among multiple children.
 
@@ -80,4 +78,4 @@ To hide shortcuts altogether, set the [`leadingBarButtonGroups`](uitextinputassi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitextinputassistantitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitextinputassistantitem)*

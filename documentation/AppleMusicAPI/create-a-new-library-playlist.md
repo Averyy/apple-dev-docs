@@ -1,6 +1,6 @@
 # Create a New Library Playlist
 
-**Framework**: Apple Music API  
+**Framework**: Applemusicapi  
 **Kind**: httpRequest
 
 Create a new playlist in a user’s library.
@@ -15,8 +15,6 @@ If successful, the HTTP status code is 201 (Created) and a new resource created 
 This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
 
 > **Note**:  There may be a delay before a new resource appears in a user’s library.
-
- There may be a delay before a new resource appears in a user’s library.
 
 You can include an optional `tracks` relationship in this request.
 
@@ -44,4 +42,4 @@ The `POST` request containing the `name` `tracks` and `parent` playlist folder f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/create-a-new-library-playlist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/create-a-new-library-playlist)*

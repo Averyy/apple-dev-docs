@@ -1,6 +1,6 @@
 # MPVolumeView
 
-**Framework**: Media Player  
+**Framework**: Mediaplayer  
 **Kind**: class
 
 A slider control for setting the system audio output volume, and a button for choosing the audio output route.
@@ -27,8 +27,6 @@ If there’s an Apple TV or other AirPlay-enabled device in range, the route but
 
 > ❗ **Important**:  You can’t change the volume or choose a route with this class while testing in the Simulator. These abilities only work on a device.
 
- You can’t change the volume or choose a route with this class while testing in the Simulator. These abilities only work on a device.
-
 Use this class by embedding an instance of it in your view hierarchy. The following code snippet assumes you’ve placed an instance of the [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) class on a view using Interface Builder, sizing and positioning it as desired to contain the volume view. Point to the [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) instance with an outlet variable—named, in the case of this example, `mpVolumeViewParentView`. You’d typically place code like that shown in the following code in your `viewDidLoad` method.
 
 Listing 1. Adding a volume view to your view hierarchy
@@ -45,8 +43,6 @@ To instead display a volume slider as an alert, use the functions described in [
 
 > **Note**:  You can’t subclass the MPVolumeView class.
 
- You can’t subclass the MPVolumeView class.
-
 ##### Customizing the Volume Sliders Appearance
 
 The volume slider is a [`UISlider`](https://developer.apple.com/documentation/UIKit/UISlider) object. Sliders are always displayed as horizontal bars and an indicator, or , notes the current value of the slider, which the user can move to change the setting.
@@ -56,8 +52,6 @@ Slider controls draw the volume slider track using two distinct images, which ar
 You can also customize the volume thumb image for the slider.
 
 > **Note**:  The volume slider control provides a set of default images for both the track and thumb. The system uses the default images if you don’t specify any custom images.
-
- The volume slider control provides a set of default images for both the track and thumb. The system uses the default images if you don’t specify any custom images.
 
 ## Topics
 
@@ -139,4 +133,4 @@ You can also customize the volume thumb image for the slider.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mediaplayer/mpvolumeview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MediaPlayer/mpvolumeview)*

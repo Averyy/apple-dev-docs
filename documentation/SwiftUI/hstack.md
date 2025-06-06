@@ -1,6 +1,6 @@
 # HStack
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A view that arranges its subviews in a horizontal line.
@@ -56,8 +56,6 @@ var body: some View {
 
 > **Note**: If you need a horizontal stack that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`HStackLayout`](hstacklayout.md) instead.
 
-If you need a horizontal stack that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`HStackLayout`](hstacklayout.md) instead.
-
 ## Topics
 
 ### Creating a stack
@@ -79,4 +77,4 @@ If you need a horizontal stack that conforms to the [`Layout`](layout.md) protoc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/hstack)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/hstack)*

@@ -1,6 +1,6 @@
 # suffix(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a subsequence, up to the given maximum length, containing the final elements of the sequence.
@@ -31,8 +31,6 @@ print(numbers.suffix(10))
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

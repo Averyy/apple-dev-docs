@@ -1,6 +1,6 @@
 # CAReplicatorLayer
 
-**Framework**: Core Animation  
+**Framework**: Quartzcore  
 **Kind**: class
 
 A layer that creates a specified number of sublayer copies with varying geometric, temporal, and color transformations.
@@ -66,8 +66,6 @@ The result of adding this code is to create a grid with the value of the red cha
 
 > **Note**:  The [`CAReplicatorLayer`](careplicatorlayer.md) implementation of [`hitTest(_:)`](calayer/hittest(_:).md) currently tests only the first instance of z replicator layer’s sublayers. This may change in the future.
 
- The [`CAReplicatorLayer`](careplicatorlayer.md) implementation of [`hitTest(_:)`](calayer/hittest(_:).md) currently tests only the first instance of z replicator layer’s sublayers. This may change in the future.
-
 ## Topics
 
 ### Setting Instance Display Properties
@@ -119,4 +117,4 @@ The result of adding this code is to create a grid with the value of the red cha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/careplicatorlayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/careplicatorlayer)*

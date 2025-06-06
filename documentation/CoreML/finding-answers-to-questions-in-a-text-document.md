@@ -1,6 +1,6 @@
 # Finding answers to questions in a text document
 
-**Framework**: Core ML
+**Framework**: Coreml
 
 Locate relevant passages in a document by asking the Bidirectional Encoder Representations from Transformers (BERT) model a question.
 
@@ -140,8 +140,6 @@ Next, the sample creates an [`MLMultiArray`](MLMultiArray.md) for each input and
 
 > **Note**: The BERT model in this sample requires a one-dimensional [`MLMultiArray`](MLMultiArray.md) input with 384 elements. Models from other sources may have different inputs or shapes.
 
-The BERT model in this sample requires a one-dimensional [`MLMultiArray`](MLMultiArray.md) input with 384 elements. Models from other sources may have different inputs or shapes.
-
 ```swift
 // Create the MLMultiArray instances.
 let tokenIDMultiArray = try? MLMultiArray(wordIDs)
@@ -216,4 +214,4 @@ The BERT model included in this sample can process up to 384 tokens, including t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coreml/finding-answers-to-questions-in-a-text-document)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/finding-answers-to-questions-in-a-text-document)*

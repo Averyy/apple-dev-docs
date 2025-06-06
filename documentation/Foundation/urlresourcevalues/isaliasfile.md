@@ -24,8 +24,6 @@ var isAliasFile: Bool? { get }
 
 > **Note**:  Only applicable to regular files.
 
- Only applicable to regular files.
-
 ## See Also
 
 - [var addedToDirectoryDate: Date?](urlresourcevalues/addedtodirectorydate.md)

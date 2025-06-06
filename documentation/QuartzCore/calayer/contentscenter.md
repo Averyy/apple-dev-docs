@@ -1,6 +1,6 @@
 # contentsCenter
 
-**Framework**: Core Animation  
+**Framework**: Quartzcore  
 **Kind**: property
 
 The rectangle that defines how the layer contents are scaled if the layer’s contents are resized. Animatable.
@@ -49,8 +49,6 @@ The following figure shows the layer at the same sizes but without explicitly se
 
 > **Note**:  If the width or height of the rectangle in this property is very small or `0`, the value is implicitly changed to the width or height of a single source pixel centered at the specified location.
 
- If the width or height of the rectangle in this property is very small or `0`, the value is implicitly changed to the width or height of a single source pixel centered at the specified location.
-
 ## See Also
 
 - [var contentsGravity: CALayerContentsGravity](calayer/contentsgravity.md)
@@ -67,4 +65,4 @@ The following figure shows the layer at the same sizes but without explicitly se
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/calayer/contentscenter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/calayer/contentscenter)*

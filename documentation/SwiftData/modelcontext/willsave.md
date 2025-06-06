@@ -1,6 +1,6 @@
 # willSave
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: property
 
 A notification that posts when the context is about to process pending inserts, changes, and deletes.
@@ -24,8 +24,6 @@ static let willSave: Notification.Name
 #### Discussion
 
 > **Note**: Notifications with this name don’t contain a `userInfo` dictionary.
-
-Notifications with this name don’t contain a `userInfo` dictionary.
 
 ## See Also
 

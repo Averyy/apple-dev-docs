@@ -1,6 +1,6 @@
 # Tips.Parameter
 
-**Framework**: TipKit  
+**Framework**: Tipkit  
 **Kind**: struct
 
 A type that monitors the state of its wrapped value to reevaluate any dependent tip rules when the value changes.
@@ -25,8 +25,6 @@ struct Parameter<Value> where Value : Decodable, Value : Encodable, Value : Send
 You create a parameter by wrapping a conforming type with the `@Parameter` macro. An `id` is generated based on the parameter’s enclosing instance and the name of the property it is wrapping.
 
 > **Note**: Parameters are persistent by default. Wrapping a property with `@Parameter` will persist its value between app launches within the tips datastore. Passing [`transient`](tips/parameteroption/transient.md) as an option will allow the parameter to reset to a default value the first time it is referenced.
-
-Parameters are persistent by default. Wrapping a property with `@Parameter` will persist its value between app launches within the tips datastore. Passing [`transient`](tips/parameteroption/transient.md) as an option will allow the parameter to reset to a default value the first time it is referenced.
 
 Tips must be configured using [`configure(_:)`](tips/configure(_:).md) before a parameter’s value will be updated.
 

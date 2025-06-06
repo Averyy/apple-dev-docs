@@ -1,6 +1,6 @@
 # palette
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 A control group style that presents its content as a palette.
@@ -22,8 +22,6 @@ A control group style that presents its content as a palette.
 #### Discussion
 
 > **Note**: When used outside of menus, this style is rendered as a segmented control.
-
-When used outside of menus, this style is rendered as a segmented control.
 
 Use this style to render a multi-select or a stateless palette. The following example creates a control group that contains both type of shelves:
 
@@ -71,4 +69,4 @@ To apply this style to a control group, or to a view that contains control group
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/controlgroupstyle/palette)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/controlgroupstyle/palette)*

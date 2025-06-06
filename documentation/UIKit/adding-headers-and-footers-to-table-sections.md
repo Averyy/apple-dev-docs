@@ -1,6 +1,6 @@
 # Adding headers and footers to table sections
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Differentiate groups of rows visually by adding header and footer views to your table view’s sections.
 
@@ -28,8 +28,6 @@ override func tableView(_ tableView: UITableView, titleForFooterInSection
 ```
 
 > **Note**:  Headers and footers normally apply to a single section, but you can also provide a single header or footer view for the entire table by using the [`tableHeaderView`](uitableview/tableheaderview.md) or [`tableFooterView`](uitableview/tablefooterview.md) properties of your table view. The global header appears at the top of your table’s content, and the global footer appears at the bottom.
-
- Headers and footers normally apply to a single section, but you can also provide a single header or footer view for the entire table by using the [`tableHeaderView`](uitableview/tableheaderview.md) or [`tableFooterView`](uitableview/tablefooterview.md) properties of your table view. The global header appears at the top of your table’s content, and the global footer appears at the bottom.
 
 ##### Customize the Header and Footer Views
 
@@ -135,4 +133,4 @@ If your header or footer heights aren’t all the same, or can change dynamicall
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/adding-headers-and-footers-to-table-sections)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/adding-headers-and-footers-to-table-sections)*

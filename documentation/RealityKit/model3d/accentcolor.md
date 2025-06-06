@@ -1,6 +1,6 @@
 # accentColor(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Sets the accent color for this view and the views it contains.
@@ -25,8 +25,6 @@ func accentColor(_ accentColor: Color?) -> some View
 Use `accentColor(_:)` when you want to apply a broad theme color to your app’s user interface. Some styles of controls use the accent color as a default tint color.
 
 > **Note**: In macOS, SwiftUI applies customization of the accent color only if the user chooses Multicolor under General > Accent color in System Preferences.
-
-In macOS, SwiftUI applies customization of the accent color only if the user chooses Multicolor under General > Accent color in System Preferences.
 
 In the example below, the outer `VStack` contains two child views. The first is a button with the default accent color. The second is a `VStack` that contains a button and a slider, both of which adopt the purple accent color of their containing view. Note that the `Text` element used as a label alongside the `Slider` retains its default color.
 

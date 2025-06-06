@@ -1,6 +1,6 @@
 # writeContents(_:andAttributes:safelyTo:for:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Ensures that document data is written safely to a specified location in the application sandbox.
@@ -25,10 +25,6 @@ This method is called by the [`save(to:for:completionHandler:)`](uidocument/save
 If you want to change how file data is saved, you generally override the [`writeContents(_:to:for:originalContentsURL:)`](uidocument/writecontents(_:to:for:originalcontentsurl:).md) method instead of this method. Additionally, you don’t need to call this method directly unless you are overriding the [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) method.
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

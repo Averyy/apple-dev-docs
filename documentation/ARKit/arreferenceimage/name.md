@@ -1,6 +1,6 @@
 # name
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: property
 
 A descriptive name for the image.
@@ -22,8 +22,6 @@ For reference images loaded from an Xcode asset catalog, this property is the na
 
 > **Note**:  This string is not localized text intended for user display. However, in debugging  you can use this property to indicate which image was detected.
 
- This string is not localized text intended for user display. However, in debugging  you can use this property to indicate which image was detected.
-
 ## See Also
 
 - [var physicalSize: CGSize](arreferenceimage/physicalsize.md)
@@ -34,4 +32,4 @@ For reference images loaded from an Xcode asset catalog, this property is the na
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arreferenceimage/name)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arreferenceimage/name)*

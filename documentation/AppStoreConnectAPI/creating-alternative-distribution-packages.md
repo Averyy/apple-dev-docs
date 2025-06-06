@@ -1,6 +1,6 @@
 # Creating alternative distribution packages
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Create distribution packages for your apps that you distribute on alternative marketplaces or on the web.
 
@@ -24,8 +24,6 @@ Additionally, one of these must be true:
 - Your app is a web distribution app. For more infomation, see [`Configuring apps for web distribution`](configuring-apps-for-web-distribution.md).
 
 > **Note**:  Alternative marketpaces, apps distributed by alternative marketplaces, and web distribution apps all use alternative distribution packages. Web distribution apps do not use [`Notifications`](notifications.md) or [`Marketplace Search Configurations`](marketplace-search-configurations.md).``
-
- Alternative marketpaces, apps distributed by alternative marketplaces, and web distribution apps all use alternative distribution packages. Web distribution apps do not use [`Notifications`](notifications.md) or [`Marketplace Search Configurations`](marketplace-search-configurations.md).``
 
 ##### Create and Manage Alternative Distribution Packages for an Alternative Marketplace
 
@@ -117,4 +115,4 @@ Only one alternative distribution package can exist for an `appStoreVersion.` It
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/creating-alternative-distribution-packages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-alternative-distribution-packages)*

@@ -1,6 +1,6 @@
 # init(components:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates an entity with one or multiple components.
@@ -39,8 +39,6 @@ let sphereEntity = Entity(
 ```
 
 > **Note**: You can change any of the entity’s components at any time by modifying the entity’s [`components`](entity/components.md) set.
-
-You can change any of the entity’s components at any time by modifying the entity’s [`components`](entity/components.md) set.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # verticalAccuracy
 
-**Framework**: Core Location  
+**Framework**: Corelocation  
 **Kind**: property
 
 The validity of the altitude values, and their estimated uncertainty, measured in meters.
@@ -30,8 +30,6 @@ A positive [`verticalAccuracy`](cllocation/verticalaccuracy.md) value represents
 
 > **Note**:  In iOS, this property is declared as `nonatomic`. In macOS, it’s declared as `atomic`.
 
- In iOS, this property is declared as `nonatomic`. In macOS, it’s declared as `atomic`.
-
 ## See Also
 
 - [var horizontalAccuracy: CLLocationAccuracy](cllocation/horizontalaccuracy.md)
@@ -42,4 +40,4 @@ A positive [`verticalAccuracy`](cllocation/verticalaccuracy.md) value represents
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/cllocation/verticalaccuracy)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/cllocation/verticalaccuracy)*

@@ -1,6 +1,6 @@
 # Merging multiple scans into a single structure
 
-**Framework**: RoomPlan
+**Framework**: Roomplan
 
 Export a 3D model that consists of multiple rooms captured in the same physical vicinity.
 
@@ -12,8 +12,6 @@ Export a 3D model that consists of multiple rooms captured in the same physical 
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10192: [`Explore enhancements to RoomPlan`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10192/).
-
-This sample code project is associated with WWDC23 session 10192: [`Explore enhancements to RoomPlan`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10192/).
 
 ##### Configure the Sample Code Project
 
@@ -35,4 +33,4 @@ Before you run the sample code project in Xcode, set the run destination to an i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/roomplan/merging-multiple-scans-into-a-single-structure)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RoomPlan/merging-multiple-scans-into-a-single-structure)*

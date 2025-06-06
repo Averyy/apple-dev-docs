@@ -1,6 +1,6 @@
 # Downloading essential assets in the background
 
-**Framework**: Background Assets
+**Framework**: Backgroundassets
 
 Fetch the assets your app requires before its first launch using an app extension and the Background Assets framework.
 
@@ -15,8 +15,6 @@ Fetch the assets your app requires before its first launch using an app extensio
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10108: [`What’s new in Background Assets`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10108/).
-
-This sample code project is associated with WWDC23 session 10108: [`What’s new in Background Assets`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10108/).
 
 ##### Configure the Sample Code Project
 
@@ -36,4 +34,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/backgroundassets/downloading-essential-assets-in-the-background)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BackgroundAssets/downloading-essential-assets-in-the-background)*

@@ -1,6 +1,6 @@
 # Showing and hiding view controllers
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Display view controllers using different techniques, and pass data between them during transitions.
 
@@ -50,8 +50,6 @@ The following code example creates a view controller and shows it using the [`sh
 After showing a view controller, use the current context to determine how to dismiss it. Calling the [`dismiss(animated:completion:)`](uiviewcontroller/dismiss(animated:completion:).md) method might not always be the most appropriate option. For example, don’t call that method if a navigation controller added the view controller to its navigation stack. Instead, use the [`presentingViewController`](uiviewcontroller/presentingviewcontroller.md), [`splitViewController`](uiviewcontroller/splitviewcontroller.md), [`navigationController`](uiviewcontroller/navigationcontroller.md), and [`tabBarController`](uiviewcontroller/tabbarcontroller.md) properties to determine the current context, and to take appropriate actions in response. That response might also include modifying your view controller’s UI to hide a Done button or other controls for dismissing the UI.
 
 > **Note**:  When implementing a custom container view controller, implement the [`show(_:sender:)`](uiviewcontroller/show(_:sender:).md) and [`showDetailViewController(_:sender:)`](uiviewcontroller/showdetailviewcontroller(_:sender:).md) methods to handle presentations. For more information, see [`Creating a custom container view controller`](creating-a-custom-container-view-controller.md).
-
- When implementing a custom container view controller, implement the [`show(_:sender:)`](uiviewcontroller/show(_:sender:).md) and [`showDetailViewController(_:sender:)`](uiviewcontroller/showdetailviewcontroller(_:sender:).md) methods to handle presentations. For more information, see [`Creating a custom container view controller`](creating-a-custom-container-view-controller.md).
 
 ##### Embed a View Controller Inside a Container View Controller
 
@@ -112,4 +110,4 @@ To dismiss a modally presented view controller, call the view controller’s [`d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/showing-and-hiding-view-controllers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/showing-and-hiding-view-controllers)*

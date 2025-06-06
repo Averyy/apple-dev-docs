@@ -1,6 +1,6 @@
 # NSGestureRecognizer
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An object that monitors events and calls its action method when a predefined sequence of events occur.
@@ -59,8 +59,6 @@ You may create a subclass of `NSGestureRecognizer` that recognizes a distinctive
 All gesture recognizers must update the value in the state property at appropriate times. Specifically, you must update it for all state transitions. For more information about the possible state transitions of a gesture recognizer, see [`State Transitions`](nsgesturerecognizer#State-Transitions.md).
 
 > **Note**:  [`NSGestureRecognizer`](nsgesturerecognizer.md) does not support handing off event tracking to other non-gesture recognizer mechanisms (for example drag and drop and pop-up menus).
-
- [`NSGestureRecognizer`](nsgesturerecognizer.md) does not support handing off event tracking to other non-gesture recognizer mechanisms (for example drag and drop and pop-up menus).
 
 ###### Methods to Override
 
@@ -204,4 +202,4 @@ For more information about using the delegate to control the behavior of your ge
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsgesturerecognizer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsgesturerecognizer)*

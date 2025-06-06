@@ -38,8 +38,6 @@ print(cast.contains("James"))
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## Parameters
 
 - `element`: The element to find in the sequence.

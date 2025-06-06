@@ -22,8 +22,6 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 > **Note**: Download the standard report unless you need to analyze the unique fields in the detailed report.
 
-Download the standard report unless you need to analyze the unique fields in the detailed report.
-
 #### Report Fields
 
 | Report Field | Description | Data Type | Standard Report | Detailed Report |

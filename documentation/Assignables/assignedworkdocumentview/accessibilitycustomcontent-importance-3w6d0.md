@@ -27,8 +27,6 @@ Use this method to add information you want accessibility users to be able to ac
 
 > **Note**: Repeated calls of `accessibilityCustomContent` with `key`s having different identifiers will create new entries of additional information. Calling `accessibilityAdditionalContent` repeatedly with `key`s having matching identifiers will replace the previous entry.
 
-Repeated calls of `accessibilityCustomContent` with `key`s having different identifiers will create new entries of additional information. Calling `accessibilityAdditionalContent` repeatedly with `key`s having matching identifiers will replace the previous entry.
-
 ## Parameters
 
 - `key`: Key used to specify the identifier and label of the   of the additional accessibility information entry.

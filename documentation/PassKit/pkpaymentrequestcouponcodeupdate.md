@@ -1,6 +1,6 @@
 # PKPaymentRequestCouponCodeUpdate
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: class
 
 An object that updates the payment request after the coupon code changes.
@@ -25,8 +25,6 @@ This is the handler for [`paymentAuthorizationController(_:didChangeCouponCode:h
 Use this object to update the summary items to reflect the change in the coupon code.
 
 > **Note**:  A coupon code error doesn’t block payment authorization.
-
- A coupon code error doesn’t block payment authorization.
 
 ## Topics
 
@@ -65,4 +63,4 @@ Use this object to update the summary items to reflect the change in the coupon 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/passkit/pkpaymentrequestcouponcodeupdate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/pkpaymentrequestcouponcodeupdate)*

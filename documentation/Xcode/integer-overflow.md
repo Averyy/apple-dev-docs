@@ -19,8 +19,6 @@ x += 1; // Error: the add result can't fit in x
 
 > **Note**: With the exception of the signed division check, enabling the `-fwrapv` compiler flag disables UBSan overflow checks.
 
-With the exception of the signed division check, enabling the `-fwrapv` compiler flag disables UBSan overflow checks.
-
 ###### Solution
 
 One way to address signed overflow is to use larger types.
@@ -63,4 +61,4 @@ If you don’t need to represent negative numbers, another option is to use unsi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/integer-overflow)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/integer-overflow)*

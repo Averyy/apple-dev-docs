@@ -1,6 +1,6 @@
 # MPEG-4 audio codec
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 #### Overview
 
@@ -17,8 +17,6 @@ Examples: AAC LC is indicated by the value `2`, CELP is indicated by the value `
 A writer of the MPEG-4 Audio Codec feature should record the 5 bits corresponding to the `AudioObjectType` found in the `ES_descriptor`’s audio `DecoderSpecificConfig`. The most significant 27 bits of the value should be set to `0`.
 
 > **Note**: A writer that records the MPEG-4 Audio Codec feature is encouraged also to write the QuickTime Audio Codec Type feature.
-
-A writer that records the MPEG-4 Audio Codec feature is encouraged also to write the QuickTime Audio Codec Type feature.
 
 #### Feature Value Algorithm
 

@@ -1,6 +1,6 @@
 # dropFirst(_:)
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: method
 
 Returns a sequence containing all but the given number of initial elements.
@@ -37,8 +37,6 @@ print(numbers.dropFirst(10))
 ```
 
 > **Note**: O(1), with O() deferred to each iteration of the result, where  is the number of elements to drop from the beginning of the sequence.
-
-O(1), with O() deferred to each iteration of the result, where  is the number of elements to drop from the beginning of the sequence.
 
 ## Parameters
 

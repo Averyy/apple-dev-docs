@@ -1,6 +1,6 @@
 # Associating an Apple ID with a Volume Purchase Program (VPP) User
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Manage Apple IDs within your organization effectively.
 
@@ -21,9 +21,7 @@ If the user’s Apple ID cannot be found in the iTunes database, or if the user 
 
 > **Note**:  Managed Apple IDs were introduced in iOS 9.3.
 
- Managed Apple IDs were introduced in iOS 9.3.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/associating-an-apple-id-with-a-volume-purchase-program-vpp-user)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/associating-an-apple-id-with-a-volume-purchase-program-vpp-user)*

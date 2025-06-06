@@ -1,6 +1,6 @@
 # Requesting authorization to use location services
 
-**Framework**: Core Location
+**Framework**: Corelocation
 
 Obtain authorization to use location services and manage changes to your app’s authorization status.
 
@@ -25,8 +25,6 @@ The definition of when an app is in use depends on the platform:
 - On visionOS, an app is in use when someone is looking at it, and for a short time after the person stops looking at it.
 
 > **Note**:  If your app already has When in Use authorization, you can make a separate request for Always authorization later. However, you can make the request only once.
-
- If your app already has When in Use authorization, you can make a separate request for Always authorization later. However, you can make the request only once.
 
 Regardless of which access level you choose, you can start any location services available on the current device and achieve the same results. Access levels primarily determine how your app receives updates when it isn’t running. The following table summarizes the differences between access levels.
 
@@ -102,4 +100,4 @@ The [`locationManagerDidChangeAuthorization(_:)`](cllocationmanagerdelegate/loca
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/requesting-authorization-to-use-location-services)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/requesting-authorization-to-use-location-services)*

@@ -30,8 +30,6 @@ The default value is [`true`](https://developer.apple.com/documentation/swift/tr
 
 > **Note**:  Setting this value to [`false`](https://developer.apple.com/documentation/swift/false) and [`includesCount`](bytecountformatter/includescount.md) to [`false`](https://developer.apple.com/documentation/swift/false) results in an empty string.
 
- Setting this value to [`false`](https://developer.apple.com/documentation/swift/false) and [`includesCount`](bytecountformatter/includescount.md) to [`false`](https://developer.apple.com/documentation/swift/false) results in an empty string.
-
 ## See Also
 
 - [var formattingContext: Formatter.Context](bytecountformatter/formattingcontext.md)

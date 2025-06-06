@@ -16,15 +16,11 @@ However, in some cases requirements are important, especially on macOS.  For exa
 
 > **Note**: macOS 14 added a new way to express limits on code.  For the details, see [`Applying launch environment and library constraints`](https://developer.apple.com/documentation/Security/applying-launch-environment-and-library-constraints).
 
-macOS 14 added a new way to express limits on code.  For the details, see [`Applying launch environment and library constraints`](https://developer.apple.com/documentation/Security/applying-launch-environment-and-library-constraints).
-
 ##### About This Technote Series
 
 Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The  technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [`TN3125: Inside Code Signing: Provisioning Profiles`](tn3125-inside-code-signing-provisioning-profiles.md).
 
 > ❗ **Important**: The  technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
-
-The  technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
 #### Basics
 
@@ -36,8 +32,6 @@ A code signing requirement is a function that, given a code signature, returns a
 In short, this requirement identifies the TextEdit app.
 
 > ❗ **Important**: A  is a string chosen by the signer to uniquely identify their code. For bundled code this is typically the bundle identifier.  Don’t confuse this with a , which is a digital identity used for code signing.  This digital identity includes a  and its associated private key.  Finally,  is an abstract user-level concept of the ‘same code’.  For example, a user might consider the TextEdit app in macOS 12 to be the same as the TextEdit app in macOS 11 but not the same as the Calculator app.  macOS uses code signing requirements to establish code identity.
-
-A  is a string chosen by the signer to uniquely identify their code. For bundled code this is typically the bundle identifier.  Don’t confuse this with a , which is a digital identity used for code signing.  This digital identity includes a  and its associated private key.  Finally,  is an abstract user-level concept of the ‘same code’.  For example, a user might consider the TextEdit app in macOS 12 to be the same as the TextEdit app in macOS 11 but not the same as the Calculator app.  macOS uses code signing requirements to establish code identity.
 
 Use `codesign` to evaluate a requirement:
 
@@ -73,8 +67,6 @@ func isTextEdit(_ url: URL) throws -> Bool {
 
 > **Note**: This code uses the `secCall(_:)` helper from [`Signing a daemon with a restricted entitlement`](https://developer.apple.com/documentation/Xcode/signing-a-daemon-with-a-restricted-entitlement).
 
-This code uses the `secCall(_:)` helper from [`Signing a daemon with a restricted entitlement`](https://developer.apple.com/documentation/Xcode/signing-a-daemon-with-a-restricted-entitlement).
-
 Compiling requirements is relatively expensive so, if you do this a lot, cache the requirement object you get back from `SecRequirementCreateWithString`.  Alternatively, use the `csreq` command-line tool to compile the requirement in advance, embed that data within your program, and then create a requirement by passing that data to `SecRequirementCreateWithData`.
 
 The code signing requirement language is very flexible.  It can express a very specific requirement or a very general one.  For example, the requirement `cdhash H"ff19a91b272a49d1a0f16ee54c672da60f0e116f"` is satisfied only by code with a specific cdhash value.  On the other hand, the requirement `anchor apple generic` is satisfied by any code signed with any code signing identity issued by Apple.  When you craft a custom requirement, think carefully about how specific you want it to be.
@@ -86,8 +78,6 @@ For a detailed explanation of the code signing requirement language, see [`Code 
 Most code has a  (DR) which is how the code identifies itself: It’s the code’s way of saying “If you see me again, here’s how you tell it’s really me.”  The DR is critical on macOS, an open platform where code impersonation is a cause for concern.
 
 > **Note**: Other Apple platforms allow for a DR, but it doesn’t represent the primary means of tracking code identity.
-
-Other Apple platforms allow for a DR, but it doesn’t represent the primary means of tracking code identity.
 
 Imagine you have an app that accesses the microphone.  At that point macOS prompts the user to authorize that.  A few days later your app’s software update mechanism runs and replaces version 1.2 with version 1.3.  Then the user runs the new version of your app and it again accesses the microphone.  How can macOS tell that version 1.3 of your app is the ‘same code’ as version 1.2?
 
@@ -123,8 +113,6 @@ designated => anchor apple generic and identifier "com.example.apple-samplecode.
 
 > **Note**: To build the AppWithTool app used in this example, follow the instructions in [`Embedding a command-line tool in a sandboxed app`](https://developer.apple.com/documentation/Xcode/embedding-a-helper-tool-in-a-sandboxed-app).
 
-To build the AppWithTool app used in this example, follow the instructions in [`Embedding a command-line tool in a sandboxed app`](https://developer.apple.com/documentation/Xcode/embedding-a-helper-tool-in-a-sandboxed-app).
-
 The DRs in this example are heavily abbreviated lest you get lost in the details.  The critical things to note here are:
 
 - The `anchor apple generic` term, which requires that the code be signed by a code signing identity issued by Apple. Contrast this to the `anchor apple` term used in TextEdit’s DR.  The latter requires that the code be signed by Apple as Apple code, whereas the former only requires that the code signing identity was issued by Apple.
@@ -150,8 +138,6 @@ To check if two apps have mutually compatible DRs, first dump the DR of app A:
 ```
 
 > **Note**: Note The `codesign` command writes the DR with its type prefix, `designated =>`.  The `sed` command removes that because its presence causes problems for the next step.
-
-Note The `codesign` command writes the DR with its type prefix, `designated =>`.  The `sed` command removes that because its presence causes problems for the next step.
 
 Next, check that app B satisfies app A’s DR:
 
@@ -219,15 +205,11 @@ While this is reformatted to make it easier to read, it’s still quite hard to 
 
 > ❗ **Important**: The OID checks shown here only make sense in the scope established by `anchor apple generic`, that is, for certificates issued by Apple.  There’s nothing to stop a malicious CA from issuing certificates with these OIDs.
 
-The OID checks shown here only make sense in the scope established by `anchor apple generic`, that is, for certificates issued by Apple.  There’s nothing to stop a malicious CA from issuing certificates with these OIDs.
-
 The `certificate 1[field.1.2.840.113635.100.6.2.6]` term requires that the certificate that issued the leaf certificate include an extension with the OID 1.2.840.113635.100.6.2.6.  This OID is present in the Developer ID Certification Authority certificate used by Apple to issue Developer ID signing certificates.  Let’s shorten this to `IssuerIsDeveloperID`.
 
 The `certificate leaf[field.1.2.840.113635.100.6.1.13]` term requires that the certificate that issued the signing certificate include an extension with the OID 1.2.840.113635.100.6.1.13.  This OID is present in the Developer ID Application signing certificates issued by Apple.  Let’s shorten this to `LeafIsDeveloperIDApp`.
 
 > **Note**: Developer ID Installer certificates have a different OID, 1.2.840.113635.100.6.1.14.  That’s why you can’t use those for signing apps, or vice versa.
-
-Developer ID Installer certificates have a different OID, 1.2.840.113635.100.6.1.14.  That’s why you can’t use those for signing apps, or vice versa.
 
 The `certificate leaf[subject.OU] = SKMME9E2Y8` term requires that the leaf certificate’s Organization Unit field be SKMME9E2Y8.  In a Developer ID certificate, this is where you’ll find the Team ID.
 
@@ -368,4 +350,4 @@ This Apple Development DR is very different from the DR used by Developer ID and
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3127-inside-code-signing-requirements)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3127-inside-code-signing-requirements)*

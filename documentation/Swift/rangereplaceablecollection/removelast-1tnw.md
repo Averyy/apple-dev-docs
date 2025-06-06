@@ -33,8 +33,6 @@ Calling this method may invalidate all saved indices of this collection. Do not 
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

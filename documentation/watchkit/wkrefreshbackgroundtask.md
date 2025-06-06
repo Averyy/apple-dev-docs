@@ -25,8 +25,6 @@ Don’t subclass or create instances of this class. The system automatically cre
 
 > **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, see [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
 
- In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, see [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
-
 ## Topics
 
 ### Accessing background task data
@@ -85,4 +83,4 @@ Don’t subclass or create instances of this class. The system automatically cre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkrefreshbackgroundtask)*

@@ -1,6 +1,6 @@
 # setInputMuted(_:)
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: method
 
 Sets a Boolean value that indicates whether the app’s audio input is in a muted state.
@@ -25,8 +25,6 @@ func setInputMuted(_ muted: Bool) throws
 In platforms that use [`AVAudioSession`](avaudiosession.md), setting the value to [`true`](https://developer.apple.com/documentation/swift/true) mutes all sources of audio input in the app. In macOS, the system instead invokes the callback that you register by calling [`setInputMuteStateChangeHandler(_:)`](avaudioapplication/setinputmutestatechangehandler(_:).md) to handle input muting.
 
 > **Note**:  This setting is specific to your app and doesn’t affect hardware mute state.
-
- This setting is specific to your app and doesn’t affect hardware mute state.
 
 ## Parameters
 

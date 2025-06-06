@@ -1,6 +1,6 @@
 # removeAll(where:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Removes all entities from this collection that satisfy the given predicate.
@@ -21,8 +21,6 @@ mutating func removeAll(where shouldBeRemoved: (Entity) throws -> Bool) rethrows
 #### Discussion
 
 > **Note**: This operation can invalidate the index order of any remaining entities.
-
-This operation can invalidate the index order of any remaining entities.
 
 
 ---

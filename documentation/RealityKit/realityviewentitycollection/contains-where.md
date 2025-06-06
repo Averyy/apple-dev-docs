@@ -1,6 +1,6 @@
 # contains(where:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
@@ -52,8 +52,6 @@ let hasBigPurchase = expenses.contains { $0 > 100 }
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

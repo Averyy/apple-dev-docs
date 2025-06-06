@@ -1,6 +1,6 @@
 # attributionToken()
 
-**Framework**: AdServices  
+**Framework**: Adservices  
 **Kind**: method
 
 Generates a token.
@@ -35,8 +35,6 @@ G9i5hC8lQJeGOfmS+MFycll/025oJEjtpZ+rs4AUkDEJh52fT8RrjwIR/ h+2JOpXz4MRdmtcemL8WTT
 ```
 
 > ❗ **Important**: A 404 response can occur if you make an API call too quickly after receiving a valid token. A best practice is to initiate retries at intervals of 5 seconds, with a maximum of three attempts.
-
-A 404 response can occur if you make an API call too quickly after receiving a valid token. A best practice is to initiate retries at intervals of 5 seconds, with a maximum of three attempts.
 
 For details about error codes, see [`AAAttributionError`](aaattributionerror.md).
 
@@ -133,8 +131,6 @@ A standard payload for view-through attribution resembles the following:
 ```
 
 > **Note**: If you receive test data in your payload responses, check to make sure your app isn’t in developer mode.
-
-If you receive test data in your payload responses, check to make sure your app isn’t in developer mode.
 
 Run reports to review detailed campaign metadata in [`Apple Search Ads`](https://developer.apple.com/documentation/apple_search_ads) or [`Apple Search Ads Advanced`](https://developer.apple.comhttps://searchads.apple.com/advanced/).
 

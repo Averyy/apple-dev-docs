@@ -1,6 +1,6 @@
 # setRegionOfInterest(_:)
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: method
 
 Sets the area in the video frame in which the dock accessory tracks a subject.
@@ -26,8 +26,6 @@ If you disable system tracking, this configuration change applies to any custom 
 The region of interest doesn’t persist; it resets to the entire video frame any time an app exits, backgrounds, or stops tracking.
 
 > **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t connected, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
-
-[`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t connected, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
 
 ## Parameters
 

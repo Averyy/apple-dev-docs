@@ -1,6 +1,6 @@
 # insertRows(at:withAnimation:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Inserts the rows using the specified animation.
@@ -22,8 +22,6 @@ The [`numberOfRows`](nstableview/numberofrows.md) in the table view is automatic
 Calling this method multiple times within the same [`beginUpdates()`](nstableview/beginupdates().md) and [`endUpdates()`](nstableview/endupdates().md) block is allowed, and changes are processed incrementally.
 
 > **Note**:  [`NSCell`](nscell.md)-based table views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
-
- [`NSCell`](nscell.md)-based table views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
 
 ## Parameters
 

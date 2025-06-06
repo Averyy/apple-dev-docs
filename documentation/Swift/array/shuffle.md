@@ -34,8 +34,6 @@ This method is equivalent to calling `shuffle(using:)`, passing in the system’
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## See Also
 
 - [func sort()](array/sort.md)

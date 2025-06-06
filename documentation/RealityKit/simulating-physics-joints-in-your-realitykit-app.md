@@ -1,6 +1,6 @@
 # Simulating physics joints in your RealityKit app
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Create realistic, connected motion using physics joints.
 
@@ -18,8 +18,6 @@ This sample app demostrates how to create a [`PhysicsRevoluteJoint`](physicsrevo
 You can create animations to depict objects in motion but simulations can be better for more complicated scenes because they can work with more variables, and support custom motion that react dynamically to external factors, such as a person’s gestures.
 
 > **Note**: All joint types in RealityKit conform to the [`PhysicsJoint`](physicsjoint.md) protocol, including [`PhysicsRevoluteJoint`](physicsrevolutejoint.md).
-
-All joint types in RealityKit conform to the [`PhysicsJoint`](physicsjoint.md) protocol, including [`PhysicsRevoluteJoint`](physicsrevolutejoint.md).
 
 ##### Set Up the Apps Static Scene
 
@@ -82,8 +80,6 @@ parentSimulationEntity.components.set(PhysicsJointsComponent())
 
 > **Note**: [`PhysicsRevoluteJoint`](physicsrevolutejoint.md) conforms to [`PhysicsJoint`](physicsjoint.md), a protocol for all physics joints.
 
-[`PhysicsRevoluteJoint`](physicsrevolutejoint.md) conforms to [`PhysicsJoint`](physicsjoint.md), a protocol for all physics joints.
-
 A joint needs two [`GeometricPin`](geometricpin.md) instances on separate entities to create a physics joint.
 
 The app creates each pin with the method [`set(named:position:orientation:)`](entitygeometricpins/set(named:position:orientation:).md) on its respective entity. Use [`pins`](entity/pins.md) to access all pins an entity owns:
@@ -114,8 +110,6 @@ let ballPin = ballEntity.pins.set(
 ```
 
 > 💡 **Tip**: [`PhysicsRevoluteJoint`](physicsrevolutejoint.md) always rotates around the pins’ local x-axis, but in this example the models rotate around the z-axis because the variable `hingeOrientation` realigns the pins’ x-axis (`[1, 0, 0]`) to the z-axis (`[0, 0, 1]`).
-
-[`PhysicsRevoluteJoint`](physicsrevolutejoint.md) always rotates around the pins’ local x-axis, but in this example the models rotate around the z-axis because the variable `hingeOrientation` realigns the pins’ x-axis (`[1, 0, 0]`) to the z-axis (`[0, 0, 1]`).
 
 Use each [`GeometricPin`](geometricpin.md) as the parameters to create a new [`PhysicsRevoluteJoint`](physicsrevolutejoint.md):
 
@@ -165,4 +159,4 @@ In the sample app, you can change the static value `PendulumSettings.pendulumCou
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/simulating-physics-joints-in-your-realitykit-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/simulating-physics-joints-in-your-realitykit-app)*

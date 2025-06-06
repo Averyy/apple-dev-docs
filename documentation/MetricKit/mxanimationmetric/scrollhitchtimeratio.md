@@ -1,6 +1,6 @@
 # scrollHitchTimeRatio
 
-**Framework**: MetricKit  
+**Framework**: Metrickit  
 **Kind**: property
 
 The ratio of the time spent hitching while scrolling.
@@ -22,8 +22,6 @@ var scrollHitchTimeRatio: Measurement<Unit> { get }
 Hitches are user-perceivable animation issues, such as pauses or jumps that occur during scrolling.
 
 > **Note**:  This metric applies only to scrolling in UIScrollView.
-
- This metric applies only to scrolling in UIScrollView.
 
 
 ---

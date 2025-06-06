@@ -1,6 +1,6 @@
 # About the HealthKit framework
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Learn about the architecture and design of the HealthKit framework.
 
@@ -30,8 +30,6 @@ The HealthKit store is thread-safe, and most HealthKit objects are immutable. In
 
 > **Note**:  All the HealthKit API’s completion handlers execute on private background queues. You typically dispatch this data back to the main queue before updating your user interface or changing any other resources that you can only safely modify from the main thread.
 
- All the HealthKit API’s completion handlers execute on private background queues. You typically dispatch this data back to the main queue before updating your user interface or changing any other resources that you can only safely modify from the main thread.
-
 For more information about multithreading and concurrent programming, see [`Concurrency Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091).
 
 ##### Syncing Data Between Devices
@@ -56,4 +54,4 @@ While the HealthKit framework is available on iPadOS 16 and earlier and on MacOS
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/about-the-healthkit-framework)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/about-the-healthkit-framework)*

@@ -1,6 +1,6 @@
 # preferredElementSize
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The size of the menu’s child elements.
@@ -34,8 +34,6 @@ If you specify the [`UIMenu.ElementSize.small`](uimenu/elementsize/small.md) or 
 This property doesn’t have an effect if you build your app with Mac Catalyst.
 
 > **Note**:  Session 10071: [`Adopt desktop-class editing interactions`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10071)
-
- Session 10071: [`Adopt desktop-class editing interactions`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10071)
 
 ## See Also
 

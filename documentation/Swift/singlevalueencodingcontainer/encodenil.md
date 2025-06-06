@@ -25,11 +25,7 @@ mutating func encodeNil() throws
 
 > **Note**: `EncodingError.invalidValue` if a null value is invalid in the current context for this format.
 
-`EncodingError.invalidValue` if a null value is invalid in the current context for this format.
-
 > **Note**: May not be called after a previous `self.encode(_:)` call.
-
-May not be called after a previous `self.encode(_:)` call.
 
 
 ---

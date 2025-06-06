@@ -1,6 +1,6 @@
 # AVExperienceController.Experience.expanded
 
-**Framework**: AVKit  
+**Framework**: Avkit  
 **Kind**: case
 
 An experience where the system places the video outside of its original container.
@@ -22,8 +22,6 @@ It’s valid to transition to this experience even when the original container i
 
 > **Note**: This experience to is analogous to a player view controller’s fullscreen state.
 
-This experience to is analogous to a player view controller’s fullscreen state.
-
 ## See Also
 
 - [AVExperienceController.Experience.embedded](avexperiencecontroller/experience-swift.enum/embedded.md)
@@ -34,4 +32,4 @@ This experience to is analogous to a player view controller’s fullscreen state
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avexperiencecontroller/experience-swift.enum/expanded)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avexperiencecontroller/experience-swift.enum/expanded)*

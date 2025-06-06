@@ -1,6 +1,6 @@
 # Accessing Calendar using EventKit and EventKitUI
 
-**Framework**: EventKit
+**Framework**: Eventkit
 
 Choose and implement the appropriate Calendar access level in your app.
 
@@ -18,8 +18,6 @@ Starting in iOS 17, your app should only request the specific level of access it
 This sample consists of three targets that illustrate how to implement Calendar access level using EventKit and EventKitUI. The `DropInLessons` target builds an app that saves events to Calendar without prompting the user for authorization. The `RepeatingLessons` target, which implements the write-only access feature, builds an app that saves events directly to Calendar with user permission. The `MonthlyEvents` target, which illustrates the full-access feature, builds an app that fetches and displays all events occuring within a month in all the user’s calendars.
 
 > **Note**: This sample code project is associated with WWDC23 session [`10052: Discover Calendar and EventKit`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10052/).
-
-This sample code project is associated with WWDC23 session [`10052: Discover Calendar and EventKit`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10052/).
 
 ##### Configure the Sample Code Project
 
@@ -81,8 +79,6 @@ In iOS 17, an app with write-only access can create and save events to Calendar,
 - To request write-only access to events, use `requestWriteOnlyAccessToEvents(completion:)` or `requestWriteOnlyAccessToEvents()`.
 
 > **Note**: `EKEventEditViewController` and `EKCalendarChooser` require write-only or full access. `EKEventEditViewController` doesn’t require any user permission.
-
-`EKEventEditViewController` and `EKCalendarChooser` require write-only or full access. `EKEventEditViewController` doesn’t require any user permission.
 
 `RepeatingLessons` displays a list of recurring lessons and a “Select calendar” button in the toolbar. The app offers the lessons on specific dates and times and doesn’t fetch any events from the user’s calendars. `RepeatingLessons` can’t let the user or the system make any changes to these events. Because of these reasons, the app requires write-only access so it can control the date and time of every event added to Calendar. When the user selects a lesson, then taps the booking button, the app first checks whether it has authorization to access the user’s calendar data. If the authorization status is [`EKAuthorizationStatus.notDetermined`](EKAuthorizationStatus/notDetermined.md), the app uses an instance of [`EKEventStore`](EKEventStore.md), `eventStore`, to prompt the user for write-only access.
 
@@ -219,8 +215,6 @@ If you build your app with Xcode 15, link it against the iOS 17 SDK, and need to
 
 > **Note**: The new request methods are unavailable on systems earlier than iOS 17, which may cause your app to crash when running on these versions. Check that these methods are available in the iOS version that you wish to run your app on before calling them in your app. See [`Declaration Attributes`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language) for details.
 
-The new request methods are unavailable on systems earlier than iOS 17, which may cause your app to crash when running on these versions. Check that these methods are available in the iOS version that you wish to run your app on before calling them in your app. See [`Declaration Attributes`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language) for details.
-
 The `DropInLessons`, `MonthlyEvents`, and `RepeatingLessons` targets in the sample project have a deployment target of iOS 16.4, meaning their apps can run on devices running iOS 16.4 and later. These apps include `NSCalendarsUsageDescription` in their `Info.plist` and use `requestAccess(to: .event`) when requesting permission from the user.
 
 ```swift
@@ -229,8 +223,6 @@ return try await eventStore.requestAccess(to: .event)
 ```
 
 > ❗ **Important**: In iOS 17, calling `requestAccess(to: .event)` or `requestAccess(to:completion:)` doesn’t prompt the user for access and throws an error.
-
-In iOS 17, calling `requestAccess(to: .event)` or `requestAccess(to:completion:)` doesn’t prompt the user for access and throws an error.
 
 `MonthlyEvents` and `RepeatingLessons` confirm that they have an [`EKAuthorizationStatus`](EKAuthorizationStatus.md) authorization status.
 
@@ -249,4 +241,4 @@ EKEventStore.authorizationStatus(for: .event) == .authorized
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/accessing-calendar-using-eventkit-and-eventkitui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/accessing-calendar-using-eventkit-and-eventkitui)*

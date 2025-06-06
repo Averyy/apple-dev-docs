@@ -24,8 +24,6 @@ Generate a Metal library’s symbol file in a single command by running the Meta
 
 > **Note**:  This example uses the `macosx` SDK, but you can use any SDK your app targets.
 
- This example uses the `macosx` SDK, but you can use any SDK your app targets.
-
 The `-frecord-sources=flat` option, which replaces the deprecated `-MO=<value>` option, tells the Metal compiler to create two files:
 
 - `default.metallib`, the compiled Metal library
@@ -68,8 +66,6 @@ The `-remove-source` option modifies the Metal library file by removing its embe
 
 > **Note**:  The Metal command-line tools for Windows use the same options and arguments as their macOS counterparts.
 
- The Metal command-line tools for Windows use the same options and arguments as their macOS counterparts.
-
 ##### Load a Symbol File in Xcode
 
 As you debug a shader, Xcode automatically presents a prompt when it doesn’t have access to a shader library’s source code.
@@ -88,8 +84,6 @@ Click Done when you finish adding your companion symbol files. Xcode imports the
 
 > 💡 **Tip**:  You can load your Metal library’s companion symbol file before you begin debugging by choosing Debug > Import Metallib Debug Info.
 
- You can load your Metal library’s companion symbol file before you begin debugging by choosing Debug > Import Metallib Debug Info.
-
 ## See Also
 
 - [Building a Shader Library by Precompiling Source Files](building-a-shader-library-by-precompiling-source-files.md)
@@ -100,4 +94,4 @@ Click Done when you finish adding your companion symbol files. Xcode imports the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/generating-and-loading-a-metal-library-symbol-file)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/generating-and-loading-a-metal-library-symbol-file)*

@@ -1,6 +1,6 @@
 # HistoryResponse
 
-**Framework**: App Store Server API  
+**Framework**: Appstoreserverapi  
 **Kind**: dictionary
 
 A response that contains the customer’s transaction history for an app.
@@ -23,8 +23,6 @@ The history response returns a maximum of 20 transactions per response. If your 
 If a customer upgrades a subscription or the App Store revokes an in-app purchase while you’re receiving transaction history, the App Store updates the relevant transaction. If the response is sorted in `ASCENDING` order, you receive the transaction again, with updated data.
 
 > **Note**:  The [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint also returns the [`HistoryResponse`](historyresponse.md), however, it doesn’t include consumable in-app purchases that the app has marked as finished. Use [`Get Transaction History`](get-transaction-history.md) instead.
-
- The [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint also returns the [`HistoryResponse`](historyresponse.md), however, it doesn’t include consumable in-app purchases that the app has marked as finished. Use [`Get Transaction History`](get-transaction-history.md) instead.
 
 ## Topics
 
@@ -52,4 +50,4 @@ If a customer upgrades a subscription or the App Store revokes an in-app purchas
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/historyresponse)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/historyresponse)*

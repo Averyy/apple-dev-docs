@@ -27,8 +27,6 @@ The following image shows an app’s expanded Swift package dependencies, includ
 
 > **Note**: To help verify a binary dependency’s origin, its author must create a [`checksum`](https://developer.apple.com/documentation/PackageDescription/Target/checksum) and include it in the package manifest. When Xcode resolves or updates package dependencies, it doesn’t allow binary dependencies to change the checksum without also changing the version.
 
-To help verify a binary dependency’s origin, its author must create a [`checksum`](https://developer.apple.com/documentation/PackageDescription/Target/checksum) and include it in the package manifest. When Xcode resolves or updates package dependencies, it doesn’t allow binary dependencies to change the checksum without also changing the version.
-
 ## See Also
 
 - [Adding package dependencies to your app](adding-package-dependencies-to-your-app.md)
@@ -39,4 +37,4 @@ To help verify a binary dependency’s origin, its author must create a [`checks
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/identifying-binary-dependencies)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/identifying-binary-dependencies)*

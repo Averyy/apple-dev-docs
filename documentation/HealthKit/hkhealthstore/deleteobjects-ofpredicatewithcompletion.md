@@ -1,6 +1,6 @@
 # deleteObjects(of:predicate:withCompletion:)
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: method
 
 Deletes objects saved by this application that match the provided type and predicate.
@@ -28,8 +28,6 @@ If your app has not requested permission to share an object’s data type, the m
 HealthKit stores temporary [`HKDeletedObject`](hkdeletedobject.md) entries, letting you query for recently deleted objects. However, the deleted objects are periodically removed to save storage space. If you want your app to receive notifications about all the deleted objects, set up an observer query, and enable it for background delivery. In the background query’s update handler, create an anchored object query to gather the list of recently deleted objects.
 
 > **Note**:  Although your app can manage only the objects it created and saved, the users can always delete any data they want using the Health app.
-
- Although your app can manage only the objects it created and saved, the users can always delete any data they want using the Health app.
 
 ## Parameters
 

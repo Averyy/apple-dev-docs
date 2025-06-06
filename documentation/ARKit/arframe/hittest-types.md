@@ -1,6 +1,6 @@
 # hitTest(_:types:)
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: method
 
 Searches for real-world objects or AR anchors in the captured camera image.
@@ -29,8 +29,6 @@ A list of results, sorted from nearest to farthest (in distance from the camera)
 Hit testing searches for real-world objects or surfaces detected through the AR session’s processing of the camera image. A 2D point in the image coordinates can refer to any point along a 3D line that starts at the device camera and extends in a direction determined by the device orientation and camera projection. This method searches along that line, returning all objects that intersect it in order of distance from the camera.
 
 > **Note**:  If you use ARKit with a SceneKit or SpriteKit view, the [`ARSCNView`](arscnview.md) [`hitTest(_:types:)`](arscnview/hittest(_:types:).md) or [`ARSKView`](arskview.md) [`hitTest(_:types:)`](arskview/hittest(_:types:).md) method lets you specify a search point in view coordinates.
-
- If you use ARKit with a SceneKit or SpriteKit view, the [`ARSCNView`](arscnview.md) [`hitTest(_:types:)`](arscnview/hittest(_:types:).md) or [`ARSKView`](arskview.md) [`hitTest(_:types:)`](arskview/hittest(_:types:).md) method lets you specify a search point in view coordinates.
 
 The behavior of a hit test depends on which `types` you specify and the order you specify them in. For details, see [`ARHitTestResult`](arhittestresult.md) and the various [`ARHitTestResult.ResultType`](arhittestresult/resulttype.md) options.
 

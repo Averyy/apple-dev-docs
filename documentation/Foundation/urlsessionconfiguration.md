@@ -24,9 +24,9 @@ class URLSessionConfiguration
 
 - [Accessing cached data](accessing-cached-data.md)
 - [Downloading files in the background](downloading-files-in-the-background.md)
-- [Uploading streams of data](uploading-streams-of-data.md)
-- [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Improving network reliability using Multipath TCP](improving-network-reliability-using-multipath-tcp.md)
+- [Fetching website data into memory](fetching-website-data-into-memory.md)
+- [Uploading streams of data](uploading-streams-of-data.md)
 
 #### Overview
 
@@ -35,8 +35,6 @@ An [`URLSessionConfiguration`](urlsessionconfiguration.md) object defines the be
 It is important to configure your [`URLSessionConfiguration`](urlsessionconfiguration.md) object appropriately before using it to initialize a session object. Session objects make a copy of the configuration settings you provide and use those settings to configure the session. Once configured, the session object ignores any changes you make to the [`URLSessionConfiguration`](urlsessionconfiguration.md) object. If you need to modify your transfer policies, you must update the session configuration object and use it to create a new [`URLSession`](urlsession.md) object.
 
 > **Note**:  In some cases, the policies defined in this configuration may be overridden by policies specified by an [`NSURLRequest`](nsurlrequest.md) object provided for a task. Any policy specified on the request object is respected unless the session’s policy is more restrictive. For example, if the session configuration specifies that cellular networking should not be allowed, the [`NSURLRequest`](nsurlrequest.md) object cannot request cellular networking.
-
- In some cases, the policies defined in this configuration may be overridden by policies specified by an [`NSURLRequest`](nsurlrequest.md) object provided for a task. Any policy specified on the request object is respected unless the session’s policy is more restrictive. For example, if the session configuration specifies that cellular networking should not be allowed, the [`NSURLRequest`](nsurlrequest.md) object cannot request cellular networking.
 
 For more information about using configuration objects to create sessions, see [`URLSession`](urlsession.md).
 
@@ -177,4 +175,4 @@ Background sessions let you perform uploads and downloads of content in the back
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessionconfiguration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessionconfiguration)*

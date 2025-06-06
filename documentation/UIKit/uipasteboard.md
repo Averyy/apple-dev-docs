@@ -1,6 +1,6 @@
 # UIPasteboard
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that helps a user share data from one place to another within your app, and from your app to other apps.
@@ -25,8 +25,6 @@ In typical usage, an object in your app writes data to a pasteboard when the use
 
 > ❗ **Important**:  Starting in iOS 14, the system notifies the user when an app gets general pasteboard content that originates in a different app without . The system determines user intent based on user interactions, such as tapping a system-provided control or pressing Command-V. Use the properties and methods below to determine whether pasteboard items match various patterns, such as web search terms, URLs, or numbers, without notifying the user.
 
- Starting in iOS 14, the system notifies the user when an app gets general pasteboard content that originates in a different app without . The system determines user intent based on user interactions, such as tapping a system-provided control or pressing Command-V. Use the properties and methods below to determine whether pasteboard items match various patterns, such as web search terms, URLs, or numbers, without notifying the user.
-
 ##### The General Pasteboard and Named Pasteboards
 
 The system identifies the systemwide general pasteboard with the [`general`](uipasteboard/name-swift.struct/general.md) pasteboard name, and you can use it for any type of data. Obtain the general pasteboard from the [`general`](uipasteboard/general.md) shared system pasteboard object.
@@ -44,8 +42,6 @@ The [`UIPasteboard`](uipasteboard.md) class provides methods for reading and wri
 The [`UIPasteboard`](uipasteboard.md) class provides convenience methods for writing and reading strings, images, URLs, and colors to and from single or multiple pasteboard items. See [`Getting and setting pasteboard items of standard data types`](uipasteboard#Getting-and-setting-pasteboard-items-of-standard-data-types.md) in the topic groups below.
 
 > **Note**:  Before you attempt to read a particular data type from a pasteboard by using the methods in [`Getting and setting pasteboard items of standard data types`](uipasteboard#Getting-and-setting-pasteboard-items-of-standard-data-types.md) in the topic groups below, check for the presence of data of the type you want. Do this by using the type-checking methods.
-
- Before you attempt to read a particular data type from a pasteboard by using the methods in [`Getting and setting pasteboard items of standard data types`](uipasteboard#Getting-and-setting-pasteboard-items-of-standard-data-types.md) in the topic groups below, check for the presence of data of the type you want. Do this by using the type-checking methods.
 
 [`UIPasteboard`](uipasteboard.md) provides properties for directly checking whether specific data types are present on a pasteboard, see [`Checking for data types on a pasteboard`](uipasteboard#Checking-for-data-types-on-a-pasteboard.md) in the topic groups below. Use these properties, rather than attempting to read pasteboard data, to avoid causing the system to needlessly attempt to fetch data before necessary, or when the data might not be present. For example, use the [`hasStrings`](uipasteboard/hasstrings.md) property to determine whether to present a string-data paste option in the user interface, using code like the following:
 
@@ -256,4 +252,4 @@ A typical app that implements copy, paste, and duplicate operations also manages
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipasteboard)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipasteboard)*

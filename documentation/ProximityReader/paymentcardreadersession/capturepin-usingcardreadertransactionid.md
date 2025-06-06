@@ -1,6 +1,6 @@
 # capturePIN(using:cardReaderTransactionID:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Presents a sheet to capture the PIN when required by the payment card issuer, and returns the previously encrypted card data including newly captured PIN data.
@@ -30,11 +30,7 @@ Call this method when the payment card issuer requests a PIN for the current tra
 
 > ❗ **Important**: The encrypted payment card data are only kept 55 seconds after previous read if the PIN was not requested by the card. After this delay, this method will return [`PaymentCardReaderSession.ReadError.pinEntryFailed`](paymentcardreadersession/readerror/pinentryfailed.md)
 
-The encrypted payment card data are only kept 55 seconds after previous read if the PIN was not requested by the card. After this delay, this method will return [`PaymentCardReaderSession.ReadError.pinEntryFailed`](paymentcardreadersession/readerror/pinentryfailed.md)
-
 > **Note**: This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
-
-This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
 
 ## Parameters
 

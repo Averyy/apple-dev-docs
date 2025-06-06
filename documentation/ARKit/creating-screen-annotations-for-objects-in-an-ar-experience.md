@@ -1,6 +1,6 @@
 # Creating screen annotations for objects in an AR experience
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Annotate an AR experience with virtual sticky notes that you display onscreen over real and virtual objects.
 
@@ -16,8 +16,6 @@ At times, the user may want to annotate real or virtual objects in your AR exper
 Text displayed in screen space remains readable at all viewing angles and distances. The sample app implements sticky notes using a [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) that’s flush with the screen, which allows the user to quickly define the note’s text using regular touch input. Using UIKit to annotate an AR experience also provides the benefits of localization and accessibility.
 
 > **Note**: This sample uses RealityKit to anchor virtual content in the real world. RealityKit requires iOS 13. ARKit is not available in iOS Simulator.
-
-This sample uses RealityKit to anchor virtual content in the real world. RealityKit requires iOS 13. ARKit is not available in iOS Simulator.
 
 To display text that’s anchored in world space instead, see [`Recognizing and Labeling Arbitrary Objects`](recognizing-and-labeling-arbitrary-objects.md).
 
@@ -274,4 +272,4 @@ func animateTo(_ point: CGPoint) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/creating-screen-annotations-for-objects-in-an-ar-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/creating-screen-annotations-for-objects-in-an-ar-experience)*

@@ -1,6 +1,6 @@
 # JSManagedValue
 
-**Framework**: JavaScriptCore  
+**Framework**: Javascriptcore  
 **Kind**: class
 
 A JavaScript value with conditional retain behavior to provide automatic memory management.
@@ -25,8 +25,6 @@ The primary use case for a managed value is to store a JavaScript value in an Ob
 
 > ❗ **Important**:  Don’t store a nonmanaged [`JSValue`](jsvalue.md) object in a native object that exports to JavaScript. Because a [`JSValue`](jsvalue.md) object references its enclosing [`JSContext`](jscontext.md) object, this action creates a retain cycle, preventing deallocation of the context.
 
- Don’t store a nonmanaged [`JSValue`](jsvalue.md) object in a native object that exports to JavaScript. Because a [`JSValue`](jsvalue.md) object references its enclosing [`JSContext`](jscontext.md) object, this action creates a retain cycle, preventing deallocation of the context.
-
 A managed value’s  behavior ensures retention of its underlying JavaScript value as long as either of the following conditions is true:
 
 - The JavaScript value is reachable through the JavaScript object graph (that is, not subject to JavaScript garbage collection).
@@ -35,8 +33,6 @@ A managed value’s  behavior ensures retention of its underlying JavaScript val
 However, if neither of these conditions is true, the managed value sets its [`value`](jsmanagedvalue/value.md) property to `nil`, releasing the underlying [`JSValue`](jsvalue.md) object.
 
 > **Note**:  On its own, a [`JSManagedValue`](jsmanagedvalue.md) object behaves similarly to an ARC weak reference to its underlying [`JSValue`](jsvalue.md) object—that is, if you don’t use the [`addManagedReference(_:withOwner:)`](jsvirtualmachine/addmanagedreference(_:withowner:).md) method to add conditional retain behavior, the managed value’s [`value`](jsmanagedvalue/value.md) property automatically becomes `nil` when the JavaScript garbage collector destroys the underlying JavaScript value.
-
- On its own, a [`JSManagedValue`](jsmanagedvalue.md) object behaves similarly to an ARC weak reference to its underlying [`JSValue`](jsvalue.md) object—that is, if you don’t use the [`addManagedReference(_:withOwner:)`](jsvirtualmachine/addmanagedreference(_:withowner:).md) method to add conditional retain behavior, the managed value’s [`value`](jsmanagedvalue/value.md) property automatically becomes `nil` when the JavaScript garbage collector destroys the underlying JavaScript value.
 
 ## Topics
 
@@ -69,4 +65,4 @@ However, if neither of these conditions is true, the managed value sets its [`va
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/javascriptcore/jsmanagedvalue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/JavaScriptCore/jsmanagedvalue)*

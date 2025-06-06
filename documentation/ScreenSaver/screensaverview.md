@@ -1,6 +1,6 @@
 # ScreenSaverView
 
-**Framework**: Screen Saver  
+**Framework**: Screensaver  
 **Kind**: class
 
 An abstract class that defines the interface for subclassers to interact with the screen saver infrastructure.
@@ -20,8 +20,6 @@ class ScreenSaverView
 [`ScreenSaverView`](screensaverview.md) provides the interface for your screen saver, including the content you animate onscreen and an optional configuration sheet. Create your own custom subclass and add it to your screen saver bundle. Use your subclass to create the animations that you want to appear onscreen, and to specify additional animation details.
 
 > **Note**:  When someone previews your screen saver in System Preferences, the system instantiates your [`ScreenSaverView`](screensaverview.md) subclass.
-
- When someone previews your screen saver in System Preferences, the system instantiates your [`ScreenSaverView`](screensaverview.md) subclass.
 
 You can draw from your view’s [`draw(_:)`](screensaverview/draw(_:).md) method, or you can draw directly from the [`animateOneFrame()`](screensaverview/animateoneframe().md) method. If you prefer to use the [`draw(_:)`](screensaverview/draw(_:).md) method, use the [`animateOneFrame()`](screensaverview/animateoneframe().md) method to call the [`setNeedsDisplay(_:)`](https://developer.apple.com/documentation/AppKit/NSView/setNeedsDisplay(_:)) method and specify the portions of your view that require updates.
 
@@ -88,4 +86,4 @@ You can draw from your view’s [`draw(_:)`](screensaverview/draw(_:).md) method
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/screensaver/screensaverview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ScreenSaver/screensaverview)*

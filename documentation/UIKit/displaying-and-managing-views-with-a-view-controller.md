@@ -1,6 +1,6 @@
 # Displaying and managing views with a view controller
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Build a view controller in storyboards, configure it with custom views, and fill those views with your app’s data.
 
@@ -13,8 +13,6 @@ Most custom view controllers you create are  — that is, the view controller ow
 ![An illustration of the relationship between a view controller, its views, and the data objects from your app.](https://docs-assets.developer.apple.com/published/734a881eaebde585c9cbad47bd162a53/media-3375402%402x.png)
 
 > **Note**:  As opposed to a content view controller, a container view controller incorporates content from other view controllers into its view hierarchy. [`UINavigationController`](uinavigationcontroller.md) is an example of a container view controller. For information about how to implement a container view controller, see [`Implementing a Custom Container View Controller`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/ImplementingaContainerViewController.html#//apple_ref/doc/uid/TP40007457-CH11-SW12).
-
- As opposed to a content view controller, a container view controller incorporates content from other view controllers into its view hierarchy. [`UINavigationController`](uinavigationcontroller.md) is an example of a container view controller. For information about how to implement a container view controller, see [`Implementing a Custom Container View Controller`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/ImplementingaContainerViewController.html#//apple_ref/doc/uid/TP40007457-CH11-SW12).
 
 To define a content view controller, start by subclassing [`UIViewController`](uiviewcontroller.md). If your interface includes a table view or collection view, subclass [`UITableViewController`](uitableviewcontroller.md) or [`UICollectionViewController`](uicollectionviewcontroller.md) instead. New Xcode projects include one or more content view controller classes for you to modify, and you can add more.
 
@@ -53,8 +51,6 @@ For information about the target-action design pattern and how to handle control
 UIKit gives you several opportunities to configure your view controller and views before displaying them onscreen. When you instantiate your view controller from a storyboard, UIKit creates that object using its [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)) method.
 
 > **Note**:  If your view controller requires custom initialization beyond what a coder object can provide, you can instantiate it programmatically using the [`instantiateInitialViewController(creator:)`](uistoryboard/instantiateinitialviewcontroller(creator:).md) method of [`UIStoryboard`](uistoryboard.md). That method lets you create the view controller yourself using a block and a UIKit-provided coder object. This option lets you initialize the view controller with any custom data your view controller requires, and still restore the configuration of views and other objects in the storyboard.
-
- If your view controller requires custom initialization beyond what a coder object can provide, you can instantiate it programmatically using the [`instantiateInitialViewController(creator:)`](uistoryboard/instantiateinitialviewcontroller(creator:).md) method of [`UIStoryboard`](uistoryboard.md). That method lets you create the view controller yourself using a block and a UIKit-provided coder object. This option lets you initialize the view controller with any custom data your view controller requires, and still restore the configuration of views and other objects in the storyboard.
 
 When you present a view controller onscreen, UIKit needs to first load and configure the corresponding views, which it does using the following sequence of steps:
 
@@ -101,4 +97,4 @@ When the system calls `viewIsAppearing(_:),` the trait collections of the view c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/displaying-and-managing-views-with-a-view-controller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/displaying-and-managing-views-with-a-view-controller)*

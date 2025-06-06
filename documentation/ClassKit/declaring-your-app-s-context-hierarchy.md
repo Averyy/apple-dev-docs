@@ -1,6 +1,6 @@
 # Declaring your app’s context hierarchy
 
-**Framework**: ClassKit
+**Framework**: Classkit
 
 Tell ClassKit about your context hierarchy so teachers can see your assignable content.
 
@@ -52,8 +52,6 @@ You use these declarations to advertise your app’s assignable content to Apple
 
 > **Note**:  In Schoolwork, teachers can browse assignable contexts, and assign them to students. Students only see the contexts in Schoolwork once they are assigned by a teacher.
 
- In Schoolwork, teachers can browse assignable contexts, and assign them to students. Students only see the contexts in Schoolwork once they are assigned by a teacher.
-
 ## See Also
 
 - [Building missing contexts](building-missing-contexts.md)
@@ -64,4 +62,4 @@ You use these declarations to advertise your app’s assignable content to Apple
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/declaring-your-app-s-context-hierarchy)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/declaring-your-app-s-context-hierarchy)*

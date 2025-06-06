@@ -1,6 +1,6 @@
 # Setting Up an Exposure Notifications Express Test Verification Server
 
-**Framework**: Exposure Notification
+**Framework**: Exposurenotification
 
 Validate positive diagnoses for app-less exposure notifications.
 
@@ -27,8 +27,6 @@ To see all of the configuration options available with Exposure Notifications Ex
 PHAs use the test verification server to generate verification codes for positive test results. The verification code may be an 8-digit number that can be read over the phone or a deep link that can be texted or emailed to the user. A test verification server can use any one-time password algorithm to generate a verification code as long as the resulting code uniquely identifies one test result.
 
 > **Note**:  For information on generating deep links that are compatible with Exposure Notifications Express, see [`Exposure Notifications Server Resource Identifier Scheme Documentation`](https://developer.apple.comhttps://github.com/google/exposure-notifications-verification-server/blob/main/docs/ens-spec.md).
-
- For information on generating deep links that are compatible with Exposure Notifications Express, see [`Exposure Notifications Server Resource Identifier Scheme Documentation`](https://developer.apple.comhttps://github.com/google/exposure-notifications-verification-server/blob/main/docs/ens-spec.md).
 
 ##### Exchange Verification Codes for Tokens
 
@@ -58,4 +56,4 @@ The test validation server responds to requests by returning JSON in the body of
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/setting-up-an-exposure-notifications-express-test-verification-server)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/setting-up-an-exposure-notifications-express-test-verification-server)*

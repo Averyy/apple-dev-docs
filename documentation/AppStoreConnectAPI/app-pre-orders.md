@@ -1,6 +1,6 @@
 # App Pre-Orders
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Manage the settings that make your app available for pre-order.
 
@@ -11,8 +11,6 @@ Use `appPreOrders` to offer your app as a pre-order before it’s initial releas
 Set up your app’s pre-order settings before submitting it for review. Once your app is approved, you can offer it on the App Store as a pre-order.
 
 > **Note**:  You can’t push a pre-order live to the App Store using the App Store Connect API. You can only do so in App Store Connect.
-
- You can’t push a pre-order live to the App Store using the App Store Connect API. You can only do so in App Store Connect.
 
 For more information, see [`Publish for pre-order`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order).
 
@@ -39,4 +37,4 @@ For more information, see [`Publish for pre-order`](https://developer.apple.comh
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/app-pre-orders)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/app-pre-orders)*

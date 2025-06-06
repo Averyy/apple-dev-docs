@@ -1,6 +1,6 @@
 # Adopting the Verifier API in your iPhone app
 
-**Framework**: ProximityReader
+**Framework**: Proximityreader
 
 Configure and test ID Verifier support in your app for reading mobile documents.
 
@@ -13,8 +13,6 @@ To enable the Verifier API, verify that the person’s iPhone supports it, then 
 For design guidance, see [`Human Interface Guidelines > ID Verifier`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/id-verifier).
 
 > ❗ **Important**: To perform mobile document requests, add the “Verifier API” capability to your app’s target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
-
-To perform mobile document requests, add the “Verifier API” capability to your app’s target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 
 #### Verify Device Support
 
@@ -94,8 +92,6 @@ The first time you use a reader token to prepare a session, the framework perfor
 
 > **Note**: If you reuse a reader token after the 48-hour period has elapsed, the framework throws a [`MobileDocumentReaderError.sessionExpired`](mobiledocumentreadererror/sessionexpired.md) error.
 
-If you reuse a reader token after the 48-hour period has elapsed, the framework throws a [`MobileDocumentReaderError.sessionExpired`](mobiledocumentreadererror/sessionexpired.md) error.
-
 #### Read Mobile Documents
 
 Use [`MobileDocumentReaderSession`](mobiledocumentreadersession.md) to present a system UI to prompt the person using your app to present their mobile document to the reader and approve the request. After successfully reading the mobile document, the system UI either shows the document information onscreen for review or dismisses it entirely, returning the response to your app. Whether the system UI displays the document information onscreen, or returns the data to your app depends on which [`MobileDocumentRequest`](mobiledocumentrequest.md) your app performs.
@@ -142,4 +138,4 @@ To enable the simulated test mode on your iPhone, download and install the “Mo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/adopting-the-verifier-api-in-your-iphone-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/adopting-the-verifier-api-in-your-iphone-app)*

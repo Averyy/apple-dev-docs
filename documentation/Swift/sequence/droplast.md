@@ -38,8 +38,6 @@ print(numbers.dropLast(10))
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## See Also
 
 - [func dropFirst(Int) -> DropFirstSequence<Self>](sequence/dropfirst(_:).md)

@@ -36,15 +36,9 @@ Unlike the “checked” continuation variant, the `UnsafeContinuation` does not
 
 > **Note**: `withUnsafeThrowingContinuation(function:_:)`
 
-`withUnsafeThrowingContinuation(function:_:)`
-
 > **Note**: `withCheckedContinuation(function:_:)`
 
-`withCheckedContinuation(function:_:)`
-
 > **Note**: `withCheckedThrowingContinuation(function:_:)`
-
-`withCheckedThrowingContinuation(function:_:)`
 
 ## Parameters
 

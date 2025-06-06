@@ -25,8 +25,6 @@ Reduce the memory reallocations the set needs to make by setting the property to
 
 > **Note**:  The residency set can hold more allocations than its initial capacity.
 
- The residency set can hold more allocations than its initial capacity.
-
 ## See Also
 
 - [var label: String?](mtlresidencysetdescriptor/label.md)

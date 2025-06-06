@@ -8,8 +8,6 @@ Properties that you use to configure a compression session.
 
 > **Note**:  Video encoders may not support all compression property keys.
 
- Video encoders may not support all compression property keys.
-
 ## Topics
 
 ### Buffers
@@ -190,4 +188,4 @@ Properties that you use to configure a compression session.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/videotoolbox/compression-properties)*
+*[View on Apple Developer](https://developer.apple.com/documentation/VideoToolbox/compression-properties)*

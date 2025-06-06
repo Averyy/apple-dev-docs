@@ -25,8 +25,6 @@ When iterated over, keys appear in this collection in the same order as they occ
 
 > **Note**:  The complexity of this property is O(*n*) over the dictionary’s [`count`](xpcdictionary/count.md).
 
- The complexity of this property is O(*n*) over the dictionary’s [`count`](xpcdictionary/count.md).
-
 ## See Also
 
 - [var values: [xpc_object_t]](xpcdictionary/values.md)
@@ -63,4 +61,4 @@ When iterated over, keys appear in this collection in the same order as they occ
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xpc/xpcdictionary/keys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/XPC/xpcdictionary/keys)*

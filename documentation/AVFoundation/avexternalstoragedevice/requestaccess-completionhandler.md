@@ -1,6 +1,6 @@
 # requestAccess(completionHandler:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Requests access to an external storage device on behalf of your app, which can present a dialog to a person on their device’s display.
@@ -25,8 +25,6 @@ Use this method to request access to save image assets to the external storage d
 The system only presents the dialog to a person the first time your app calls the method.
 
 > **Note**:  The method doesn’t block while the system presents a dialog to a person.
-
- The method doesn’t block while the system presents a dialog to a person.
 
 ## Parameters
 

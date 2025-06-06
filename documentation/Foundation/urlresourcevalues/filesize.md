@@ -24,8 +24,6 @@ var fileSize: Int? { get }
 
 > **Note**:  Only applicable to regular files.
 
- Only applicable to regular files.
-
 ## See Also
 
 - [var documentIdentifier: Int?](urlresourcevalues/documentidentifier.md)

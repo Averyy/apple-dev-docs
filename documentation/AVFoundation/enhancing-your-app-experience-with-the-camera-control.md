@@ -1,6 +1,6 @@
 # Enhancing your app experience with the Camera Control
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Provide direct access to your camera app’s features to help people quickly capture the perfect shot.
 
@@ -10,8 +10,6 @@ iPhone 16 devices provide a new hardware interface — the Camera Control — th
 
 > **Note**:  To handle capture events from the Capture Control, your app must adopt the [`AVCaptureEventInteraction`](https://developer.apple.com/documentation/AVKit/AVCaptureEventInteraction) class from the AVKit framework. To launch your app from the Camera Control, it needs to adopt the [`LockedCameraCapture`](https://developer.apple.com/documentation/LockedCameraCapture) framework. For an example of how to provide full support for the Camera Control in your app, see [`AVCam: Building a camera app`](avcam-building-a-camera-app.md).
 
- To handle capture events from the Capture Control, your app must adopt the [`AVCaptureEventInteraction`](https://developer.apple.com/documentation/AVKit/AVCaptureEventInteraction) class from the AVKit framework. To launch your app from the Camera Control, it needs to adopt the [`LockedCameraCapture`](https://developer.apple.com/documentation/LockedCameraCapture) framework. For an example of how to provide full support for the Camera Control in your app, see [`AVCam: Building a camera app`](avcam-building-a-camera-app.md).
-
 Interacting with the Camera Control reveals a new controls interface like shown below. A single light press of the Camera Control presents an overlay that enables a person to adjust the value of a particular control like the camera’s zoom or exposure. Then by lightly double tapping the button, the user can switch between the controls the app provides by sliding their finger on the Camera Control.
 
 ![An image with two screenshots arranged horizontally. The screenshot on the left shows the user interface of a control that adjusts camera zoom. The screenshot on the right shows the controls overlay the system reveals when a user lightly double presses the Camera Control.](https://docs-assets.developer.apple.com/published/63e54fc596bab8bbd804880b88490b17/media-4480139%402x.png)
@@ -19,8 +17,6 @@ Interacting with the Camera Control reveals a new controls interface like shown 
 The items this menu presents are instances of [`AVCaptureControl`](avcapturecontrol.md), used to define the abstract interface for control objects. This article describes the framework’s available control types and how to configure your app to use them.
 
 > **Note**:  For design considerations when adopting this feature, see [`Camera Control`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/camera-control) in Human Interface Guidelines.
-
- For design considerations when adopting this feature, see [`Camera Control`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/camera-control) in Human Interface Guidelines.
 
 ##### Adopt System Controls
 
@@ -148,8 +144,6 @@ An app can only configure controls when supported by the host platform, so the e
 
 > ❗ **Important**:  Always call the capture session [`canAddControl(_:)`](avcapturesession/canaddcontrol(_:).md) method before attempting to add a control. Even on supported platforms, the session may not be able to add a control due to other system state. For example, this method returns `false` if the capture session reaches its [`maxControlsCount`](avcapturesession/maxcontrolscount.md) value. Attempting to call the [`addControl(_:)`](avcapturesession/addcontrol(_:).md) method in this case results in an exception.
 
- Always call the capture session [`canAddControl(_:)`](avcapturesession/canaddcontrol(_:).md) method before attempting to add a control. Even on supported platforms, the session may not be able to add a control due to other system state. For example, this method returns `false` if the capture session reaches its [`maxControlsCount`](avcapturesession/maxcontrolscount.md) value. Attempting to call the [`addControl(_:)`](avcapturesession/addcontrol(_:).md) method in this case results in an exception.
-
 ##### Specify a Controls Delegate
 
 For the system to present the configured controls, a capture session needs to define a controls delegate. The framework provides the [`AVCaptureSessionControlsDelegate`](avcapturesessioncontrolsdelegate.md) protocol for this purpose that defines the following methods to respond to control activation and presentation events:
@@ -192,4 +186,4 @@ After adopting this protocol in your app, set the delegate by calling the captur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/enhancing-your-app-experience-with-the-camera-control)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/enhancing-your-app-experience-with-the-camera-control)*

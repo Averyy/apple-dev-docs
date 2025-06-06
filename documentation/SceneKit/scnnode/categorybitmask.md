@@ -1,6 +1,6 @@
 # categoryBitMask
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: property
 
 A mask that defines which categories the node belongs to.
@@ -31,8 +31,6 @@ Use a node’s category bit mask together with:
 - The category bit masks in an [`SCNTechnique`](scntechnique.md) object’s definition dictionary to include or exclude the node from phases of a multipass rendering technique
 
 > **Note**:  This property doesn’t affect SceneKit’s physics simulation. To include or exclude a node from physics interactions, use the [`categoryBitMask`](scnphysicsbody/categorybitmask.md) property of the node’s [`physicsBody`](scnnode/physicsbody.md) and [`physicsField`](scnnode/physicsfield.md) objects.
-
- This property doesn’t affect SceneKit’s physics simulation. To include or exclude a node from physics interactions, use the [`categoryBitMask`](scnphysicsbody/categorybitmask.md) property of the node’s [`physicsBody`](scnnode/physicsbody.md) and [`physicsField`](scnnode/physicsfield.md) objects.
 
 ## See Also
 

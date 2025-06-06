@@ -16,8 +16,6 @@ Use [`VZSingleDirectoryShare`](vzsingledirectoryshare.md) to share the immediate
 
 > **Note**:  Shared directories in macOS VMs are only available in macOS 13 and later.
 
- Shared directories in macOS VMs are only available in macOS 13 and later.
-
 ## Topics
 
 ### Configurations
@@ -73,4 +71,4 @@ Use [`VZSingleDirectoryShare`](vzsingledirectoryshare.md) to share the immediate
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/shared-directories)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/shared-directories)*

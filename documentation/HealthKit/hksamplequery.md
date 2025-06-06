@@ -1,6 +1,6 @@
 # HKSampleQuery
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: class
 
 A general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
@@ -32,8 +32,6 @@ The sample query returns sample objects that match the provided type and predica
 Sample queries are immutable: The query’s properties are set when the query is first created, and they can’t change.
 
 > **Note**:  Like many HealthKit classes, the [`HKSampleQuery`](hksamplequery.md) class should not be subclassed.
-
- Like many HealthKit classes, the [`HKSampleQuery`](hksamplequery.md) class should not be subclassed.
 
 ## Topics
 
@@ -86,4 +84,4 @@ Sample queries are immutable: The query’s properties are set when the query is
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hksamplequery)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hksamplequery)*

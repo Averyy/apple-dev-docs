@@ -1,6 +1,6 @@
 # Selecting an anchor for a Reality Composer scene
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Decide which anchor is right for your scenes.
 
@@ -11,8 +11,6 @@ Decide which anchor is right for your scenes.
 When you create a new project or add a scene to an existing project, Reality Composer presents you with a sheet asking you to select an anchor type. The anchor type you select defines how your scene’s content is added to the real world by identifying the types of detected real-world surfaces, images, faces, or objects that you can place it in relation to.
 
 > **Note**: You can manually load and anchor Reality Composer scenes using code, like you do with other [`ARKit`](https://developer.apple.com/documentation/ARKit) content. When you anchor a scene in code, RealityKit ignores the scene’s anchoring information.
-
-You can manually load and anchor Reality Composer scenes using code, like you do with other [`ARKit`](https://developer.apple.com/documentation/ARKit) content. When you anchor a scene in code, RealityKit ignores the scene’s anchoring information.
 
  supports five anchor types: Horizontal, Vertical, Image, Face, and Object. It displays a different set of guides for each anchor type to help you place your content. You can change the anchor type later if you choose the wrong option or change your mind about how to anchor your scene.
 
@@ -40,8 +38,6 @@ In the Properties inspector, select a reference image asset that you want [`ARKi
 
 > ❗ **Important**: [`RealityKit`](RealityKit.md)’s automatic anchoring and tracking will not work for your scene if you do not select a reference image. However, you may wish to leave the reference image empty for some scenes. If, for example, you wish to attach the same scene to multiple reference images, you will need to configure [`ARKit`](https://developer.apple.com/documentation/ARKit)’s image detection and then anchor your scene manually. For more information about configuring image detection, see [`Detecting Images in an AR Experience`](https://developer.apple.com/documentation/ARKit/detecting-images-in-an-ar-experience).
 
-[`RealityKit`](RealityKit.md)’s automatic anchoring and tracking will not work for your scene if you do not select a reference image. However, you may wish to leave the reference image empty for some scenes. If, for example, you wish to attach the same scene to multiple reference images, you will need to configure [`ARKit`](https://developer.apple.com/documentation/ARKit)’s image detection and then anchor your scene manually. For more information about configuring image detection, see [`Detecting Images in an AR Experience`](https://developer.apple.com/documentation/ARKit/detecting-images-in-an-ar-experience).
-
 ![Screenshot showing a Reality Composer project window with the default Image anchoring scene.](https://docs-assets.developer.apple.com/published/40e9500fc0ec7ef734a28362de976c8a/selecting-an-anchor-for-a-reality-composer-scene-4%402x.png)
 
 ##### Select Face Anchoring to Place a Scene Relative to a Detected Face
@@ -49,8 +45,6 @@ In the Properties inspector, select a reference image asset that you want [`ARKi
 Select face anchoring to place content on or near detected human faces in ARKit. When you select this anchor type,  displays a 3D face to stand in for the real-world face that ARKit has detected. You can’t move or edit the face guide, but the contents of your scene are placed into the real world based on their relative position to the guide face. If, for example, you put a box in front of the eyes of the guide face, a bar is placed in front of a detected person’s eyes in your app’s [`ARView`](arview.md). For more details about ARKit face detection, see [`Tracking and visualizing faces`](https://developer.apple.com/documentation/ARKit/tracking-and-visualizing-faces).
 
 > **Note**: Face anchoring is only available when using the front-facing camera.
-
-Face anchoring is only available when using the front-facing camera.
 
 ![Screenshot showing a Reality Composer project window with the default face anchoring scene.](https://docs-assets.developer.apple.com/published/88c3f182bbb1f2e1b74254f39947253d/selecting-an-anchor-for-a-reality-composer-scene-5%402x.png)
 
@@ -77,4 +71,4 @@ When you select a new anchor, none of your scene’s content changes, but the gu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/selecting-an-anchor-for-a-reality-composer-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/selecting-an-anchor-for-a-reality-composer-scene)*

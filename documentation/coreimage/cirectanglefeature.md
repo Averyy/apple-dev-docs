@@ -1,6 +1,6 @@
 # CIRectangleFeature
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: cl
 
 Information about a rectangular region detected in a still or video image.
@@ -22,8 +22,6 @@ class CIRectangleFeature : CIFeature
 #### Overview
 
 > **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectRectanglesRequest`](https://developer.apple.com/documentation/vision/vndetectrectanglesrequest).
-
-In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectRectanglesRequest`](https://developer.apple.com/documentation/vision/vndetectrectanglesrequest).
 
 A detected rectangle feature isn’t necessarily rectangular in the plane of the image; rather, the feature identifies a shape that may be rectangular in space but which appears in perspective in the image — for example, a paper or book on a desk. The properties of a [`CIRectangleFeature`](cirectanglefeature.md) object identify its corners in image coordinates.
 

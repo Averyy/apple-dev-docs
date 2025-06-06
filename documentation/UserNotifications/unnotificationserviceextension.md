@@ -34,8 +34,6 @@ You don’t create [`UNNotificationServiceExtension`](unnotificationserviceexten
 
 > **Note**:  You can’t modify silent notifications or those that only play a sound or badge the app’s icon.
 
- You can’t modify silent notifications or those that only play a sound or badge the app’s icon.
-
 The [`didReceive(_:withContentHandler:)`](unnotificationserviceextension/didreceive(_:withcontenthandler:).md) method performs the main work of your extension. You use that method to make any changes to the notification’s content. That method has a limited amount of time to perform its task and execute the provided completion block. If your method doesn’t finish in time, the system calls the [`serviceExtensionTimeWillExpire()`](unnotificationserviceextension/serviceextensiontimewillexpire().md) method to give you one last chance to submit your changes. If you don’t update the notification content before time expires, the system displays the original content.
 
 As for any app extension, you deliver a notification service app extension class as a bundle inside your app. The template that Xcode provides configures the `Info.plist` file automatically for this app extension type. Specifically, it sets the value of the [`NSExtensionPointIdentifier`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15) key to `com.apple.usernotifications.service` and sets the value of the [`NSExtensionPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW16) key to the name of your [`UNNotificationServiceExtension`](unnotificationserviceextension.md) subclass.
@@ -74,4 +72,4 @@ The Xcode templates provide a subclass of [`UNNotificationServiceExtension`](unn
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/unnotificationserviceextension)*

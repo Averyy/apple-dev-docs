@@ -1,6 +1,6 @@
 # Supporting Drag and Drop in Collection Views
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Initiate drags and handle drops from a collection view.
 
@@ -17,8 +17,6 @@ Collection views support drag and drop through a specialized API that works with
 The collection view manages most drag-related interactions, but you need to specify which items to drag. When the drag gesture occurs, the collection view creates a drag session and calls the [`collectionView(_:itemsForBeginning:at:)`](uicollectionviewdragdelegate/collectionview(_:itemsforbeginning:at:).md) method of your drag delegate object. If you return a non empty array from that method, the collection view begins dragging the items that you specify. Return an empty array when you do not allow the user to drag the items from the specified index path.
 
 > **Note**:  Use the other methods of the [`UICollectionViewDragDelegate`](uicollectionviewdragdelegate.md) protocol to manage additional drag-related interactions. For example, you can customize the appearance of the items being dragged and let the user add items to the current drag session.
-
- Use the other methods of the [`UICollectionViewDragDelegate`](uicollectionviewdragdelegate.md) protocol to manage additional drag-related interactions. For example, you can customize the appearance of the items being dragged and let the user add items to the current drag session.
 
 In your implementation of the [`collectionView(_:itemsForBeginning:at:)`](uicollectionviewdragdelegate/collectionview(_:itemsforbeginning:at:).md) method, do the following:
 
@@ -87,4 +85,4 @@ Insert placeholders at the location specified by the `destinationIndexPath` prop
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-drag-and-drop-in-collection-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-drag-and-drop-in-collection-views)*

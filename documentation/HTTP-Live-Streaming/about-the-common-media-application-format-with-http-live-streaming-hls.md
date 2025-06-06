@@ -1,6 +1,6 @@
 # About the Common Media Application Format with HTTP Live Streaming (HLS)
 
-**Framework**: HTTP Live Streaming
+**Framework**: Http Live Streaming
 
 Learn the Common Media Application Format as it applies to HLS.
 
@@ -19,8 +19,6 @@ The Common Media Application Format (CMAF) for segmented media is an extensible 
  One or more presentation time synchronized selection sets.
 
 > **Note**: A presentation is the first point where different media types can be combined.
-
-A presentation is the first point where different media types can be combined.
 
 The CMAF Hypothetical Reference Model defines how tracks can be delivered, combined, and synchronized in CMAF Presentations, but the model allows the use of any compatible implementation. It’s possible to create HLS Playlists and a DASH Media Presentation Description that share the same resources, CMAF Addressable Objects, thereby allowing efficient caching even when delivering to multiple platforms. CMAF Addressable Media objects consist of:
 
@@ -42,8 +40,6 @@ The HLS specification defined support for fragmented MPEG-4 Segments (ISO_BMFF) 
 
 > **Note**: HLS was originally specified in [`draft-pantos-http-live-streaming`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-http-live-streaming). That document was superseded by RFC 8216.
 
-HLS was originally specified in [`draft-pantos-http-live-streaming`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-http-live-streaming). That document was superseded by RFC 8216.
-
 ##### Manifests Resources and Cmaf Presentations
 
 In HLS, the role of the Manifest is divided between the HLS Multivariant Playlist and the Media Playlists it references. They describe a single CMAF Presentation or a sequence of CMAF Presentations.
@@ -63,8 +59,6 @@ Media Segments inside `EXT-X-I-FRAMES-ONLY` Playlists start on a CMAF Fragment b
 The` EXT-X-DISCONTINUITY` tag can be used to concatenate multiple CMAF Tracks of the same media type in a Media Playlist. Each discontinuity demarcates a boundary between successive CMAF Presentations. A discontinuity allows the resetting of presentation timestamps and other characteristics. Many changes can require a discontinuity, for example, switching from Sample Encryption to unencrypted. A new `EXT-X-MAP` tag is usually required after a discontinuity. For further information, see the [`draft-pantos-hls-rfc8216bis`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-hls-rfc8216bis).
 
 > **Note**: For fragmented MPEG-4 Segments, an `EXT-X-KEY` tag with a `METHOD=SAMPLE-AES` attribute indicates that the Segment is encrypted using the `‘cbcs’` scheme  in ISO/IEC 23001-7.
-
-For fragmented MPEG-4 Segments, an `EXT-X-KEY` tag with a `METHOD=SAMPLE-AES` attribute indicates that the Segment is encrypted using the `‘cbcs’` scheme  in ISO/IEC 23001-7.
 
 HLS supports all CMAF subtitle and caption formats, except for IMSC1 Image Tracks.
 
@@ -207,4 +201,4 @@ This example illustrates how CMAF Selection Sets can appear as separate Renditio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/about-the-common-media-application-format-with-http-live-streaming-hls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/about-the-common-media-application-format-with-http-live-streaming-hls)*

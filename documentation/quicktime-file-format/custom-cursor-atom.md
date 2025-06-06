@@ -1,6 +1,6 @@
 # Custom cursor atom
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 An atom you use to replace the default cursors used by QuickTime VR.
 
@@ -8,13 +8,9 @@ An atom you use to replace the default cursors used by QuickTime VR.
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
-
 The hot spot information atom, discussed in [`Hot spot information atom ('hsin')`](hot_spot_information_atom.md), allows you to indicate custom cursor IDs for particular hot spots that replace the default cursors used by QuickTime VR. QuickTime VR allows you to store your custom cursors in the VR world of the movie file.
 
 > **Note**: The use of resource forks for the storage of QuickTime media is deprecated in the QuickTime file format. The information that follows documents existing content and should not be used for new development. In Mac OS with a two-fork file system, custom cursors could be stored in the resource fork of the movie file. However, this implementation does not work on any other operating system platform (such as Windows).
-
-The use of resource forks for the storage of QuickTime media is deprecated in the QuickTime file format. The information that follows documents existing content and should not be used for new development. In Mac OS with a two-fork file system, custom cursors could be stored in the resource fork of the movie file. However, this implementation does not work on any other operating system platform (such as Windows).
 
 The cursor parent atom is the parent of all of the custom cursor atoms stored in the VR world. Its atom type is `kQTVRCursorParentAtomType` (`'vrcp'`). The child atoms of the cursor parent are either cursor atoms or color cursor atoms. Their atom types are `kQTVRCursorAtomType` (`'CURS'`) and `kQTVRColorCursorAtomType` (`'crsr'`). These atoms are stored exactly as cursors or color cursors would be stored as a resource.
 

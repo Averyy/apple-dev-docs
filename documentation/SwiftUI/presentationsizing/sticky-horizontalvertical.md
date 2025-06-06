@@ -1,6 +1,6 @@
 # sticky(horizontal:vertical:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Modifies self to be sticky in the specified dimensions — growing, but not shrinking.
@@ -38,8 +38,6 @@ ContentView()
 ```
 
 > **Note**: [`fitted(horizontal:vertical:)`](presentationsizing/fitted(horizontal:vertical:).md)
-
-[`fitted(horizontal:vertical:)`](presentationsizing/fitted(horizontal:vertical:).md)
 
 ## Parameters
 

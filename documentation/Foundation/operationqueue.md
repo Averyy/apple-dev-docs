@@ -26,8 +26,6 @@ An operation queue invokes its queued [`Operation`](operation.md) objects based 
 
 > **Note**:  Operation queues retain operations until the operations finish, and queues themselves are retained until all operations are finished. Suspending an operation queue with operations that aren’t finished can result in a memory leak.
 
- Operation queues retain operations until the operations finish, and queues themselves are retained until all operations are finished. Suspending an operation queue with operations that aren’t finished can result in a memory leak.
-
 For more information about using operation queues, see the [`Concurrency Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091).
 
 ##### Determine the Execution Order
@@ -43,8 +41,6 @@ For details on how to set priority levels and dependencies, see Managing Depende
 Finishing its task doesn’t necessarily mean that the operation performed that task to completion; an operation can also be canceled. Canceling an operation object leaves the object in the queue but notifies the object that it should stop its task as quickly as possible. For currently executing operations, this means that the operation object’s work code must check the cancellation state, stop what it is doing, and mark itself as finished. For operations that are queued but not yet executing, the queue must still call the operation object’s [`start()`](operation/start().md) method so that it can processes the cancellation event and mark itself as finished.
 
 > **Note**:  Canceling an operation causes the operation to ignore any dependencies it may have. This behavior makes it possible for the queue to invoke the operation’s [`start()`](operation/start().md) method as soon as possible. The [`start()`](operation/start().md) method, in turn, moves the operation to the finished state so that it can be removed from the queue.
-
- Canceling an operation causes the operation to ignore any dependencies it may have. This behavior makes it possible for the queue to invoke the operation’s [`start()`](operation/start().md) method as soon as possible. The [`start()`](operation/start().md) method, in turn, moves the operation to the finished state so that it can be removed from the queue.
 
 For more information about operation cancellation, see [`Responding to the Cancel Command`](operation#Responding-to-the-Cancel-Command.md) in [`Operation`](operation.md).
 
@@ -144,4 +140,4 @@ Operation queues use the [`Dispatch`](https://developer.apple.com/documentation/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/operationqueue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/operationqueue)*

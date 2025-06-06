@@ -1,6 +1,6 @@
 # moreNavigationController
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The view controller that manages the More navigation interface.
@@ -24,8 +24,6 @@ This property always contains a valid More navigation controller, even if a More
 Do not add the object stored in this property to your tab bar interface manually. The More controller is displayed automatically by the tab bar controller as it is needed. You must also not look for the More navigation controller in the array of view controllers stored in the [`viewControllers`](uitabbarcontroller/viewcontrollers.md) property. The tab bar controller does not include the More navigation controller in that array of objects.
 
 > **Note**:  The More interface is not available in tvOS.
-
- The More interface is not available in tvOS.
 
 ## See Also
 

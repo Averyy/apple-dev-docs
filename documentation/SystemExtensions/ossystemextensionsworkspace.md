@@ -1,6 +1,6 @@
 # OSSystemExtensionsWorkspace
 
-**Framework**: System Extensions  
+**Framework**: Systemextensions  
 **Kind**: class
 
 **Availability**:
@@ -18,8 +18,6 @@ class OSSystemExtensionsWorkspace
 #### Overview
 
 > **Note**: Using the workspace API requires the system extension entitlement
-
-Using the workspace API requires the system extension entitlement
 
 ## Topics
 
@@ -46,4 +44,4 @@ Using the workspace API requires the system extension entitlement
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SystemExtensions/ossystemextensionsworkspace)*

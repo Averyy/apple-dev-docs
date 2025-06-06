@@ -1,6 +1,6 @@
 # init(recipientKey:ciphersuite:info:authenticatedBy:presharedKey:presharedKeyIdentifier:)
 
-**Framework**: Apple CryptoKit  
+**Framework**: Cryptokit  
 **Kind**: init
 
 Creates a sender in authentication and preshared key mode.
@@ -25,8 +25,6 @@ init<SK>(recipientKey: SK.PublicKey, ciphersuite: HPKE.Ciphersuite, info: Data, 
 The `Sender` encrypts messages in authentication and preshared key (`auth_psk`) mode using a symmetric encryption key that the sender and recipient both know in advance, in combination with a key it derives using a key derivation function (KDF) and the key schedule data in `info`. Messages also include authentication data so that the recipient can verify the authenticity of the sender’s private key.
 
 > **Note**: The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
-
-The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Communicating between a DriverKit extension and a client app
 
-**Framework**: DriverKit
+**Framework**: Driverkit
 
 Send and receive different kinds of data securely by validating inputs and asynchronously by storing and using a callback.
 
@@ -18,8 +18,6 @@ This sample code project shows how a DriverKit extension (dext) receives data fr
 The sample also demonstrates registering and executing a callback function, so the driver can call the client asynchronously.
 
 > **Note**: This version updates the sample to run in iPadOS. DriverKit on iPadOS requires an iPad with an M-series chip.
-
-This version updates the sample to run in iPadOS. DriverKit on iPadOS requires an iPad with an M-series chip.
 
 The sample project contains two targets:
 
@@ -64,8 +62,6 @@ OSSystemExtensionManager.shared.submitRequest(request)
 ```
 
 > **Note**: This call may prompt a “System Extension Blocked” dialog, which explains that `DriverKitSampleApp` tried to install a new system extension. To complete the installation, open System Preferences and go to the Security & Privacy pane. Unlock the pane if necessary, and click “Allow” to complete the installation. To confirm installation of the `NullDriver` extension, run `systemextensionsctl list` in Terminal.
-
-This call may prompt a “System Extension Blocked” dialog, which explains that `DriverKitSampleApp` tried to install a new system extension. To complete the installation, open System Preferences and go to the Security & Privacy pane. Unlock the pane if necessary, and click “Allow” to complete the installation. To confirm installation of the `NullDriver` extension, run `systemextensionsctl list` in Terminal.
 
 ##### Run the Sample in Ipados
 
@@ -265,8 +261,6 @@ After the driver stores the callback, the client app can perform multiple simula
 
 > ❗ **Important**: The driver must register the callback function before the client makes an asynchronous request, or the kernel may panic.
 
-The driver must register the callback function before the client makes an asynchronous request, or the kernel may panic.
-
 ## See Also
 
 - [com.apple.developer.driverkit.userclient-access](../BundleResources/Entitlements/com.apple.developer.driverkit.userclient-access.md)
@@ -275,4 +269,4 @@ The driver must register the callback function before the client makes an asynch
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/driverkit/communicating-between-a-driverkit-extension-and-a-client-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DriverKit/communicating-between-a-driverkit-extension-and-a-client-app)*

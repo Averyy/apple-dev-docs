@@ -1,6 +1,6 @@
 # Ranging for Beacons
 
-**Framework**: Core Location
+**Framework**: Corelocation
 
 Configure a device to act as a beacon and to detect surrounding beacons.
 
@@ -16,8 +16,6 @@ Beacons make location-based products and services available to users by broadcas
 This sample code project configures a device to act as a beacon, and configures a device to use ranging to find surrounding beacons. Use two iOS devices to run the sample, with one acting as a beacon, and the other ranging for the beacon.
 
 > **Note**: This project is associated with WWDC 2019 session [`705: What’s New in Location`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/705/).
-
-This project is associated with WWDC 2019 session [`705: What’s New in Location`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/705/).
 
 ##### Configure a Device to Act As a Beacon
 
@@ -87,4 +85,4 @@ While one or more beacons are in range, the `locationManager(_ manager: CLLocati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/ranging-for-beacons)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/ranging-for-beacons)*

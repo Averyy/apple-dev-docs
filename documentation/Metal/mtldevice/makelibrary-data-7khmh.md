@@ -29,8 +29,6 @@ Use this method if your application manages its own archiving system for librari
 
 > **Note**:  This is a Swift default implementation for the [`makeLibrary(data:)`](mtldevice/makelibrary(data:).md) method.
 
- This is a Swift default implementation for the [`makeLibrary(data:)`](mtldevice/makelibrary(data:).md) method.
-
 ## Parameters
 
 - `data`: The data from a precompiled Metal library. For more information, see  .

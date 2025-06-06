@@ -1,6 +1,6 @@
 # StateObject
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A property wrapper type that instantiates an observable object.
@@ -45,8 +45,6 @@ struct MyView: View {
 SwiftUI creates a new instance of the model object only once during the lifetime of the container that declares the state object. For example, SwiftUI doesn’t create a new instance if a view’s inputs change, but does create a new instance if the identity of a view changes. When published properties of the observable object change, SwiftUI updates any view that depends on those properties, like the [`Text`](text.md) view in the above example.
 
 > **Note**: If you need to store a value type, like a structure, string, or integer, use the [`State`](state.md) property wrapper instead. Also use [`State`](state.md) if you need to store a reference type that conforms to the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) protocol. To learn more about Observation in SwiftUI, see [`Managing model data in your app`](managing-model-data-in-your-app.md).
-
-If you need to store a value type, like a structure, string, or integer, use the [`State`](state.md) property wrapper instead. Also use [`State`](state.md) if you need to store a reference type that conforms to the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) protocol. To learn more about Observation in SwiftUI, see [`Managing model data in your app`](managing-model-data-in-your-app.md).
 
 ##### Share State Objects with Subviews
 
@@ -104,8 +102,6 @@ var body: some View {
 
 > ❗ **Important**: Even for a configurable state object, you still declare it as private. This ensures that you can’t accidentally set the parameter through a memberwise initializer of the view, because doing so can conflict with the framework’s storage management and produce unexpected results.
 
-Even for a configurable state object, you still declare it as private. This ensures that you can’t accidentally set the parameter through a memberwise initializer of the view, because doing so can conflict with the framework’s storage management and produce unexpected results.
-
 ##### Force Reinitialization By Changing View Identity
 
 If you want SwiftUI to reinitialize a state object when a view input changes, make sure that the view’s identity changes at the same time. One way to do this is to bind the view’s identity to the value that changes using the [`id(_:)`](view/id(_:).md) modifier. For example, you can ensure that the identity of an instance of `MyInitializableView` changes when its `name` input changes:
@@ -116,8 +112,6 @@ MyInitializableView(name: name)
 ```
 
 > **Note**: If your view appears inside a [`ForEach`](foreach.md), it implicitly receives an [`id(_:)`](view/id(_:).md) modifier that uses the identifier of the corresponding data element.
-
-If your view appears inside a [`ForEach`](foreach.md), it implicitly receives an [`id(_:)`](view/id(_:).md) modifier that uses the identifier of the corresponding data element.
 
 If you need the view to reinitialize state based on changes in more than one value, you can combine the values into a single identifier using a [`Hasher`](https://developer.apple.com/documentation/Swift/Hasher). For example, if you want to update the data model in `MyInitializableView` when the values of either `name` or `isEnabled` change, you can combine both variables into a single hash:
 
@@ -174,4 +168,4 @@ Be mindful of the performance cost of reinitializing the state object every time
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/stateobject)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/stateobject)*

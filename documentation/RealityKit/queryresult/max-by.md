@@ -1,6 +1,6 @@
 # max(by:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
@@ -41,8 +41,6 @@ print(greatestHue)
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # PhysicsBodyComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that defines an entity’s behavior in physics body simulations.
@@ -31,8 +31,6 @@ Note the following when considering applying a non-uniform scale to an entity:
 - If the entity has a non-uniform scale assigned to its transform then that entity should not have any descendants assigned that contain rotations in their transforms. A good rule of thumb is to assign the non-uniform scale to the entity that has the collision shape, and avoid adding children below that entity.
 
 > **Note**: Model entities have a physics body component by default.
-
-Model entities have a physics body component by default.
 
 ## Topics
 
@@ -99,4 +97,4 @@ Model entities have a physics body component by default.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/physicsbodycomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/physicsbodycomponent)*

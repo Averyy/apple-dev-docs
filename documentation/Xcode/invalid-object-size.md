@@ -28,8 +28,6 @@ The optimizer may remove an expression, such as `getDerived()->pad2`, because `g
 
 > **Note**: This UBSan check may not trigger at low optimization levels.
 
-This UBSan check may not trigger at low optimization levels.
-
 ###### Solution
 
 One way to fix this issue is to avoid the downcast, such as by using instances of the `Derived` object wherever you need them.
@@ -70,4 +68,4 @@ One way to fix this issue is to avoid the downcast, such as by using instances o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/invalid-object-size)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/invalid-object-size)*

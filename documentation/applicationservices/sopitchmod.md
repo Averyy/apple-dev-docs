@@ -1,6 +1,6 @@
 # soPitchMod
 
-**Framework**: Application Services  
+**Framework**: Applicationservices  
 **Kind**: data
 
 **Availability**:
@@ -19,8 +19,6 @@ Get or set a speech channel’s pitch modulation.The `speechInfo` parameter isa 
 This selector works with both the `GetSpeechInfo` and `SetSpeechInfo` functions.
 
 > **Note**: The change in pitch modulation may not be noticeable until the next sentence or paragraph is spoken.
-
-The change in pitch modulation may not be noticeable until the next sentence or paragraph is spoken.
 
 
 ---

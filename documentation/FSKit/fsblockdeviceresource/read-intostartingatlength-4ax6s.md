@@ -1,6 +1,6 @@
 # read(into:startingAt:length:)
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: method
 
 Synchronously reads data from the resource into a buffer.
@@ -25,8 +25,6 @@ This is a synchronous version of [`read(into:startingAt:length:)`](fsblockdevice
 In some cases, this method performs a partial read. In this case, the return value is shorter than the requested length.
 
 > **Note**: An error describing any read error. This value is `EFAULT` if `buffer` is `NULL`, or `errno` if reading from the resource failed.
-
-An error describing any read error. This value is `EFAULT` if `buffer` is `NULL`, or `errno` if reading from the resource failed.
 
 ## Parameters
 

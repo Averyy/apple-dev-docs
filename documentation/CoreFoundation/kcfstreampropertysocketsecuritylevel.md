@@ -1,6 +1,6 @@
 # kCFStreamPropertySocketSecurityLevel
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: var
 
 Socket Security Level property key.
@@ -25,8 +25,6 @@ let kCFStreamPropertySocketSecurityLevel: CFString
 See [`CFStream Socket Security Level Constants`](cfstream-socket-security-level-constants.md) for specific security level constants to use.
 
 > **Note**:  If you set this key, you must do so before setting any other SSL options, such as `kCFStreamPropertySSLSettings`.
-
- If you set this key, you must do so before setting any other SSL options, such as `kCFStreamPropertySSLSettings`.
 
 ## See Also
 
@@ -63,4 +61,4 @@ See [`CFStream Socket Security Level Constants`](cfstream-socket-security-level-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/kcfstreampropertysocketsecuritylevel)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreFoundation/kcfstreampropertysocketsecuritylevel)*

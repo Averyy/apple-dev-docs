@@ -1,6 +1,6 @@
 # UISceneConfigurations
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: dictionary
 
 The default configuration details the system uses to create new scenes.
@@ -32,8 +32,6 @@ For applications with [`CarPlay`](https://developer.apple.com/documentation/CarP
 - [`CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
 
 > **Note**:  If you don’t include this key in your `Info.plist` file, you must implement the [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:configurationForConnecting:options:)) method in your app delegate.
-
- If you don’t include this key in your `Info.plist` file, you must implement the [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:configurationForConnecting:options:)) method in your app delegate.
 
 ## Topics
 

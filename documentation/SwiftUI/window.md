@@ -1,6 +1,6 @@
 # Window
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A scene that presents its content in a single, unique window.
@@ -35,8 +35,6 @@ Use a `Window` scene to augment the main interface of your app with a window tha
 Provide a title as the first argument to the window’s intializer. The system uses the title to identify the window to people using your app in the window’s title bar or in the list of available singleton windows that the Windows menu displays automatically.
 
 > **Note**: You can override the title in the window’s title bar by adding one of the [`navigationTitle(_:)`](view/navigationtitle(_:).md) view modifiers to the window’s content. This enables you to dynamically update the title bar.
-
-You can override the title in the window’s title bar by adding one of the [`navigationTitle(_:)`](view/navigationtitle(_:).md) view modifiers to the window’s content. This enables you to dynamically update the title bar.
 
 ##### Open a Window Programmatically
 
@@ -97,8 +95,6 @@ If your app uses a single window as its primary scene, the app quits when the wi
 
 > **Note**: In most cases it’s best to use a [`WindowGroup`](windowgroup.md) to represent the main scene of your app. A window group provides multi-window functionality on platforms that support it, like iPadOS and macOS, and makes it easier to share code across platforms.
 
-In most cases it’s best to use a [`WindowGroup`](windowgroup.md) to represent the main scene of your app. A window group provides multi-window functionality on platforms that support it, like iPadOS and macOS, and makes it easier to share code across platforms.
-
 ## Topics
 
 ### Creating a window
@@ -124,4 +120,4 @@ In most cases it’s best to use a [`WindowGroup`](windowgroup.md) to represent 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/window)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/window)*

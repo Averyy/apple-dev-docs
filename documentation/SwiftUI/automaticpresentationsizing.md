@@ -1,6 +1,6 @@
 # AutomaticPresentationSizing
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 The default presentation sizing, appropriate for the platform.
@@ -24,8 +24,6 @@ struct AutomaticPresentationSizing
 
 > **Note**: [`automatic`](presentationsizing/automatic.md)
 
-[`automatic`](presentationsizing/automatic.md)
-
 ## Relationships
 
 ### Conforms To
@@ -44,4 +42,4 @@ struct AutomaticPresentationSizing
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/automaticpresentationsizing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/automaticpresentationsizing)*

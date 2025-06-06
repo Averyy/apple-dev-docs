@@ -1,6 +1,6 @@
 # addLocalMonitorForEvents(matching:handler:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Installs an event monitor that receives copies of events the system posts to this app prior to their dispatch.
@@ -23,8 +23,6 @@ An event handler object.
 Your handler will not be called for events that are consumed by nested event-tracking loops such as control tracking, menu tracking, or window dragging; only events that are dispatched through the applications [`sendEvent(_:)`](nsapplication/sendevent(_:).md) method will be passed to your handler.
 
 > **Note**:  The monitor Block is called for all future events that match `mask`. You must call [`removeMonitor(_:)`](nsevent/removemonitor(_:).md) to stop the monitor.
-
- The monitor Block is called for all future events that match `mask`. You must call [`removeMonitor(_:)`](nsevent/removemonitor(_:).md) to stop the monitor.
 
 ##### Special Considerations
 

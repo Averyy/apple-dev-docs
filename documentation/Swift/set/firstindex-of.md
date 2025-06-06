@@ -28,8 +28,6 @@ The index of `member` if it exists in the set; otherwise, `nil`.
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `member`: An element to search for in the set.

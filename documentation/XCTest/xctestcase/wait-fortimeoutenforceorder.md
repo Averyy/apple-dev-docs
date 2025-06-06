@@ -15,8 +15,6 @@ func wait(for expectations: [XCTestExpectation], timeout seconds: TimeInterval, 
 
 > **Note**:  Use [`fulfillment(of:timeout:enforceOrder:)`](xctwaiter/fulfillment(of:timeout:enforceorder:)-swift.method.md) in Swift code requiring concurrency.
 
- Use [`fulfillment(of:timeout:enforceOrder:)`](xctwaiter/fulfillment(of:timeout:enforceorder:)-swift.method.md) in Swift code requiring concurrency.
-
 In Objective-C code, you might use an expectation to wait on a call to an interface that uses a completion handler to return a result. From Swift code, consider calling `withCheckedContinuation(function:_:)` to use [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency) instead of an expectation to wait on the result of a completion handler.
 
 ## Parameters

@@ -1,6 +1,6 @@
 # tableView(_:didRemove:forRow:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Tells the delegate that a row view was removed from the table at the specified row.
@@ -20,8 +20,6 @@ optional func tableView(_ tableView: NSTableView, didRemove rowView: NSTableRowV
 If `row` equals `-1`, the row is being deleted from the table and is no longer a valid row; otherwise `row` is a valid row that is being removed by being moved off screen.
 
 > **Note**:  This method is only valid for [`NSView`](nsview.md)-based table views.
-
- This method is only valid for [`NSView`](nsview.md)-based table views.
 
 ## Parameters
 

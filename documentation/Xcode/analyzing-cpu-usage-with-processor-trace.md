@@ -10,8 +10,6 @@ Recent Apple silicon devices can capture a  where the CPU stores information abo
 
 > **Note**:  When you profile your app using Instruments, the system performs other tracing activities, so you may see total runtime overhead that’s greater than 1%.
 
- When you profile your app using Instruments, the system performs other tracing activities, so you may see total runtime overhead that’s greater than 1%.
-
 You can use the Processor Trace instrument in Instruments 16.3 and later to analyze the processor trace for your app, and visualize every function call that your app executes. The Processor Trace instrument includes time that your app spends in all functions, including code that the compiler generates, such as automatic reference counting (ARC) memory management code in Swift, and synthesized constructors and destructors in C++.
 
 Use the Processor Trace instrument to gather information about the functions your code runs while you perform particular activities in your app. Analyze slow, or processor-intensive, operations to identify whether your app might be able to process its data in more efficient ways, such as by using different algorithms, or caching the results of calculations to use again.
@@ -49,8 +47,6 @@ To supply the debugging symbols for your app, follow these steps in Instruments:
 4. Click Add.
 
 > **Note**:  Some addresses, such as branch islands that the compiler creates to support function calls between different libraries, don’t have function names. Instruments shows those addresses as raw pointer values even if you supply all the debugging symbols for your app.
-
- Some addresses, such as branch islands that the compiler creates to support function calls between different libraries, don’t have function names. Instruments shows those addresses as raw pointer values even if you supply all the debugging symbols for your app.
 
 #### Analyze Processor Usage
 
@@ -105,4 +101,4 @@ Long-running operations on the main thread can cause freezes and hitches in your
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-cpu-usage-with-processor-trace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-cpu-usage-with-processor-trace)*

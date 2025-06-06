@@ -28,8 +28,6 @@ For example, one hour and ten minutes is displayed in the U.S. English locale as
 
 > **Note**:  This style may fall back to the behavior of [`DateComponentsFormatter.UnitsStyle.abbreviated`](datecomponentsformatter/unitsstyle-swift.enum/abbreviated.md) when attempting to display large time quantities.
 
- This style may fall back to the behavior of [`DateComponentsFormatter.UnitsStyle.abbreviated`](datecomponentsformatter/unitsstyle-swift.enum/abbreviated.md) when attempting to display large time quantities.
-
 ## See Also
 
 - [DateComponentsFormatter.UnitsStyle.spellOut](datecomponentsformatter/unitsstyle-swift.enum/spellout.md)

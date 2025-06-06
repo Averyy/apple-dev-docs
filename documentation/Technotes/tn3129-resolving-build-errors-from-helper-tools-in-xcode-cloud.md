@@ -12,8 +12,6 @@ You define the build environment by choosing the macOS version, the Xcode versio
 
 > **Note**: To learn more about using third-party tools in Xcode Cloud, see [`Making dependencies available to Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Making-Dependencies-Available-to-Xcode-Cloud) and [`Writing custom build scripts`](https://developer.apple.com/documentation/Xcode/Writing-Custom-Build-Scripts).
 
-To learn more about using third-party tools in Xcode Cloud, see [`Making dependencies available to Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Making-Dependencies-Available-to-Xcode-Cloud) and [`Writing custom build scripts`](https://developer.apple.com/documentation/Xcode/Writing-Custom-Build-Scripts).
-
 #### Review Common Causes for Errors Caused By Helper Tools
 
 Apps invoking helper tools as part of the app’s build may encounter an error in a misconfigured build environment. These errors occur because of the following conditions:
@@ -53,8 +51,6 @@ xcode-select --install
 
 > **Note**: If Xcode is available in the build environment, you don’t need to install the Command Line Tools package to resolve the error, because Xcode already includes the build tools provided by the Command Line Tools package.
 
-If Xcode is available in the build environment, you don’t need to install the Command Line Tools package to resolve the error, because Xcode already includes the build tools provided by the Command Line Tools package.
-
 #### Review Usage of the Helper Tool
 
 Before attempting to resolve the error, first consider removing the helper tool from your app’s build entirely. If you build your app with Xcode Cloud, reduce the amount of additional software installed on every build to lower the build time, and receive build and test results faster.
@@ -72,8 +68,6 @@ Some build environments require you to manually manage the Xcode version and mac
 For example, if you are using Xcode 13.2, which contains the macOS 12.1 SDK, the build machine must use macOS 12 so the major version numbers match (12). If you build on macOS 11, the helper tool will fail because the major SDK version (12) doesn’t match the major macOS version (11).
 
 > **Note**: The complete list of Xcode versions and the macOS SDK versions they contain is available on the [`Xcode support page`](https://developer.apple.comhttps://developer.apple.com/support/xcode/).
-
-The complete list of Xcode versions and the macOS SDK versions they contain is available on the [`Xcode support page`](https://developer.apple.comhttps://developer.apple.com/support/xcode/).
 
 #### Revision History
 
@@ -115,4 +109,4 @@ The complete list of Xcode versions and the macOS SDK versions they contain is a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3129-resolving-build-errors-from-helper-tools-in-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3129-resolving-build-errors-from-helper-tools-in-xcode-cloud)*

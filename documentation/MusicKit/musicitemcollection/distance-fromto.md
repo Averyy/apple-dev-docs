@@ -1,6 +1,6 @@
 # distance(from:to:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns the distance between two indices.
@@ -29,8 +29,6 @@ The distance between `start` and `end`. The result can be negative only if the c
 Unless the collection conforms to the `BidirectionalCollection` protocol, `start` must be less than or equal to `end`.
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

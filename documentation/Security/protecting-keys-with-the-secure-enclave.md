@@ -20,8 +20,6 @@ The steps required to create a key pair with the Secure Enclave are similar to t
 
 > **Note**:  This article describes how to use the Security framework to access the Secure Enclave. To access it with [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) instead, use that framework’s [`SecureEnclave`](https://developer.apple.com/documentation/CryptoKit/SecureEnclave) enumeration.
 
- This article describes how to use the Security framework to access the Secure Enclave. To access it with [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) instead, use that framework’s [`SecureEnclave`](https://developer.apple.com/documentation/CryptoKit/SecureEnclave) enumeration.
-
 ##### Specify Access Control
 
 You start by using an attribute dictionary to describe the key, but in this case, one of the attributes is an access control object. Use [`SecAccessControlCreateWithFlags(_:_:_:_:)`](secaccesscontrolcreatewithflags(_:_:_:_:).md) to create a suitable object:
@@ -62,4 +60,4 @@ When you want to retrieve the key, you do it in the usual way, as described in [
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/protecting-keys-with-the-secure-enclave)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/protecting-keys-with-the-secure-enclave)*

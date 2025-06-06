@@ -1,6 +1,6 @@
 # Drawing SpriteKit Content in a View
 
-**Framework**: SpriteKit
+**Framework**: Spritekit
 
 Display visual content using SpriteKit.
 
@@ -9,8 +9,6 @@ Display visual content using SpriteKit.
 Display SpriteKit content on the screen by configuring a SpriteKit renderer, its scene, and the visual objects you lay out on top of the scene. SpriteKit provides objects that are designed specifically for various types of content (see [`Nodes for Scene Building`](nodes-for-scene-building.md)), but for simplicity, this article displays an image in a view.
 
 > **Note**:  There are other ways to draw SpriteKit content besides using a view. See [`Choosing a SpriteKit Scene Renderer`](choosing-a-spritekit-scene-renderer.md) for options.
-
- There are other ways to draw SpriteKit content besides using a view. See [`Choosing a SpriteKit Scene Renderer`](choosing-a-spritekit-scene-renderer.md) for options.
 
 ![Screenshot of on the app window displaying an image (a sprite) using SpriteKit.](https://docs-assets.developer.apple.com/published/ced8e73de0c8478570ea46f6b7090c2e/media-3016873%402x.png)
 
@@ -68,4 +66,4 @@ Because the code in this article sets up a view, you add it to your view control
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/drawing-spritekit-content-in-a-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/drawing-spritekit-content-in-a-view)*

@@ -1,6 +1,6 @@
 # Initiating and maintaining a session
 
-**Framework**: Nearby Interaction
+**Framework**: Nearbyinteraction
 
 Measure the relative position of a nearby device and coach the user to sustain interaction.
 
@@ -74,8 +74,6 @@ Your app checks for nearby peers using a network technology that you choose.
 
 > **Note**:  Alternatively, apps can discover each other over the internet through a custom server deployment you may set up. Since Nearby Interaction works within a limited local range, the deployment can match peers by using GPS coordinates.
 
- Alternatively, apps can discover each other over the internet through a custom server deployment you may set up. Since Nearby Interaction works within a limited local range, the deployment can match peers by using GPS coordinates.
-
 Apps then exchange data in a particular format that depends on the device types in the interaction session. For interaction between Apple devices, peers share their discovery tokens ([`discoveryToken`](nisession/discoverytoken.md)). For interactions with a third-party accessory, the accessory sends your app a configuration data object as outlined in the [`UWB third-party device specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification/).
 
 ##### Create a Configuration Object
@@ -93,8 +91,6 @@ configuration = try NINearbyAccessoryConfiguration(data: configData)
 ```
 
 > 💡 **Tip**:  To enable interaction in the background for Bluetooth accessories on iOS 16, call the [`init(accessoryData:bluetoothPeerIdentifier:)`](ninearbyaccessoryconfiguration/init(accessorydata:bluetoothpeeridentifier:).md) initializer instead and pass in the accessory’s Bluetooth identifier.
-
- To enable interaction in the background for Bluetooth accessories on iOS 16, call the [`init(accessoryData:bluetoothPeerIdentifier:)`](ninearbyaccessoryconfiguration/init(accessorydata:bluetoothpeeridentifier:).md) initializer instead and pass in the accessory’s Bluetooth identifier.
 
 ##### Respond to Session Delegate Callbacks
 
@@ -134,15 +130,11 @@ In either situation, the app could request that the user approach the peer to re
 
 > **Note**:  Because it provides no [`direction`](ninearbyobject/direction-4qh5w.md) vector, Apple Watch doesn’t conform to line of sight guidelines.
 
- Because it provides no [`direction`](ninearbyobject/direction-4qh5w.md) vector, Apple Watch doesn’t conform to line of sight guidelines.
-
 ##### Increase Line of Sight with Camera Assistance
 
 In iOS 16, Camera Assistance ([`isCameraAssistanceEnabled`](ninearbypeerconfiguration/iscameraassistanceenabled.md)) increases the device’s line of sight to a larger area that surrounds the device. This provides a nearby object’s [`distance`](ninearbyobject/distance-676dm.md) and [`direction`](ninearbyobject/direction-4qh5w.md) in a wider range of environmental conditions, in addition to the object’s [`horizontalAngle`](ninearbyobject/horizontalangle-hsg.md) and [`verticalDirectionEstimate`](ninearbyobject/verticaldirectionestimate-swift.property.md).
 
 > **Note**:  Camera Assistance provides a [`direction`](ninearbyobject/direction-4qh5w.md) outside of the narrow line of sight only after first encountering the peer device once within the narrow line of sight.
-
- Camera Assistance provides a [`direction`](ninearbyobject/direction-4qh5w.md) outside of the narrow line of sight only after first encountering the peer device once within the narrow line of sight.
 
 To use Camera Assistance in an interaction session, ensure the device supports the feature first by checking the value of [`supportsCameraAssistance`](nidevicecapability/supportscameraassistance.md).
 
@@ -154,4 +146,4 @@ To use Camera Assistance in an interaction session, ensure the device supports t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/initiating-and-maintaining-a-session)*
+*[View on Apple Developer](https://developer.apple.com/documentation/NearbyInteraction/initiating-and-maintaining-a-session)*

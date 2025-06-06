@@ -1,6 +1,6 @@
 # userPreferredCamera
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A camera the user prefers to use for video and photo capture.
@@ -25,8 +25,6 @@ In addition to being a [`systemPreferredCamera`](avcapturedevice/systempreferred
 This property always returns a device that’s present. If no camera is available, this value is `nil`.
 
 > **Note**:  Setting the value to `nil` has no effect.
-
- Setting the value to `nil` has no effect.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # azimuthAngle(in:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Returns the azimuth angle (in radians) of the stylus.
@@ -28,8 +28,6 @@ The azimuth angle of the stylus, in radians.
 In the plane of the screen, the azimuth angle is the direction in which the stylus is pointing. With the tip of the stylus touching the screen, the value of this property is `0` radians when the cap end of the stylus (that is, the end opposite of the tip) points along the positive x axis of the device’s screen. The azimuth angle increases as the user swings the cap end of the stylus in a clockwise direction around the tip.
 
 > **Note**:  It is more expensive to get the azimuth angle (as opposed to the azimuth unit vector), but it can also be more convenient
-
- It is more expensive to get the azimuth angle (as opposed to the azimuth unit vector), but it can also be more convenient
 
 ## Parameters
 

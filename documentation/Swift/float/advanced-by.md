@@ -45,8 +45,6 @@ If this type’s `Stride` type conforms to `BinaryInteger`, then for a value `x`
 
 > **Note**: O(1)
 
-O(1)
-
 ## See Also
 
 - [init()](float/init.md)

@@ -1,6 +1,6 @@
 # fileWrapper(snapshot:configuration:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method  
 **Required**: Yes
 
@@ -37,8 +37,6 @@ func fileWrapper(snapshot: Snapshot, configuration: WriteConfiguration) throws -
 SwiftUI disables document edits during the snapshot to ensure that the document’s data remains coherent, but reenables edits during the serialization operation.
 
 > **Note**: SwiftUI calls this method on a background thread. Don’t make user interface changes from that thread.
-
-SwiftUI calls this method on a background thread. Don’t make user interface changes from that thread.
 
 ## Parameters
 

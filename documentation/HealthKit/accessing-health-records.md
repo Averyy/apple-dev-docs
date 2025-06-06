@@ -1,6 +1,6 @@
 # Accessing Health Records
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Read clinical record data from the HealthKit store.
 
@@ -49,8 +49,6 @@ store.requestAuthorization(toShare: nil, read: [allergiesType, medicationsType])
 You can request authorization of clinical record types and regular HealthKit types in the same method call; however, HealthKit presents the clinical record types in a separate permission sheet to ensure the user understands exactly what they’re approving.
 
 > **Note**:  Like all HealthKit apps, apps that read clinical record data must have a valid Privacy Policy URL in the app store submission. This URL appears as a link on the clinical record permission sheet. Make sure the URL works as expected, and is both accessible and legible on supported iOS devices.
-
- Like all HealthKit apps, apps that read clinical record data must have a valid Privacy Policy URL in the app store submission. This URL appears as a link on the clinical record permission sheet. Make sure the URL works as expected, and is both accessible and legible on supported iOS devices.
 
 App Review may reject apps that don’t use clinical record data appropriately. For more information, see the [`Health and Health Research`](https://developer.apple.comhttps://developer.apple.com/app-store/review/guidelines/#health-and-health-research) section of the [`App Store Review Guidelines`](https://developer.apple.comhttps://developer.apple.com/app-store/review/guidelines/).
 
@@ -182,4 +180,4 @@ For more information, see the following websites:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/accessing-health-records)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/accessing-health-records)*

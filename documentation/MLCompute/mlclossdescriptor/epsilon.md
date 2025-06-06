@@ -1,6 +1,6 @@
 # epsilon
 
-**Framework**: ML Compute  
+**Framework**: Mlcompute  
 **Kind**: property
 
 The epsilon value.
@@ -24,8 +24,6 @@ The default value is `1e-7`.
 
 > **Note**:  This is only valid for the loss function type [`MLCLossType.log`](mlclosstype/log.md).
 
- This is only valid for the loss function type [`MLCLossType.log`](mlclosstype/log.md).
-
 ## See Also
 
 - [var lossType: MLCLossType](mlclossdescriptor/losstype.md)
@@ -44,4 +42,4 @@ The default value is `1e-7`.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mlcompute/mlclossdescriptor/epsilon)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MLCompute/mlclossdescriptor/epsilon)*

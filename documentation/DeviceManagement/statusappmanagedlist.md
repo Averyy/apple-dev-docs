@@ -1,6 +1,6 @@
 # StatusAppManagedList
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: dictionary
 
 The device’s declarative managed apps.
@@ -21,8 +21,6 @@ object StatusAppManagedList
 #### Discussion
 
 > **Note**:  This documentation contains preliminary information about an API or technology in development. This information is subject to change. Learn more about using [`Apple’s beta software`](https://developer.apple.comhttps://developer.apple.com/support/beta-software/).
-
- This documentation contains preliminary information about an API or technology in development. This information is subject to change. Learn more about using [`Apple’s beta software`](https://developer.apple.comhttps://developer.apple.com/support/beta-software/).
 
 ## Topics
 
@@ -66,4 +64,4 @@ object StatusAppManagedList
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/statusappmanagedlist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/statusappmanagedlist)*

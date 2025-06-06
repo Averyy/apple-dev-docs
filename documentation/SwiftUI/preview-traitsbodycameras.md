@@ -1,6 +1,6 @@
 # Preview(_:traits:body:cameras:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: macro
 
 Creates a preview of a SwiftUI view using the specified traits and custom viewpoints.
@@ -31,8 +31,6 @@ This macro behaves like [`Preview(_:traits:_:body:)`](preview(_:traits:_:body:).
 If you use one of the preview macros that doesn’t include a `cameras` closure, the canvas displays the preview from the front by default. It also provides a camera picker to choose other standard, fixed viewpoints — like the top or the back. When you do specify one or more preview cameras, the canvas adds a submenu to the camera picker that lists the viewpoints that you define, like Corner 1 and Corner 2 in the above example. The canvas also displays the preview from the first of these custom viewpoints by default when it loads the preview.
 
 > **Note**: In addition to using fixed camera perspectives, you can also interactively alter the viewpoint of a preview in the canvas using controls like those that Simulator provides. For more information, see doc://com.apple.documentation/documentation/visionOS/interacting-with-your-app-in-the-visionos-simulator.
-
-In addition to using fixed camera perspectives, you can also interactively alter the viewpoint of a preview in the canvas using controls like those that Simulator provides. For more information, see doc://com.apple.documentation/documentation/visionOS/interacting-with-your-app-in-the-visionos-simulator.
 
 Other preview macros provide different customization options. For example, if you want to preview the view as it would appear in a particular kind of scene, you can use [`Preview(_:immersionStyle:traits:body:cameras:)`](preview(_:immersionstyle:traits:body:cameras:).md) or [`Preview(_:windowStyle:traits:body:cameras:)`](preview(_:windowstyle:traits:body:cameras:).md).
 

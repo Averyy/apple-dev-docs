@@ -1,6 +1,6 @@
 # watchOS(_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Configure the minimum deployment target version for the watchOS platform using a custom version string.
@@ -20,8 +20,6 @@ A `SupportedPlatform` instance.
 The version string must be a series of two or three dot-separated integers, such as `2.0` or `2.0.1`.
 
 > **Note**: First available in PackageDescription 5.0
-
-First available in PackageDescription 5.0
 
 ## Parameters
 

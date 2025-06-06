@@ -1,6 +1,6 @@
 # Adopting live updates in Core Location
 
-**Framework**: Core Location
+**Framework**: Corelocation
 
 Simplify location delivery using asynchronous events in Swift.
 
@@ -12,8 +12,6 @@ Simplify location delivery using asynchronous events in Swift.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10212: [`What’s new in location authorization`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10212/) and WWDC23 session 10180: [`Discover streamlined location updates`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10180/).
-
-This sample code project is associated with WWDC24 session 10212: [`What’s new in location authorization`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10212/) and WWDC23 session 10180: [`Discover streamlined location updates`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10180/).
 
 ##### Configure the Sample Code Project
 
@@ -37,4 +35,4 @@ The live updates sample requires Xcode 16 or later and iOS 18 or later.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/adopting-live-updates-in-core-location)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/adopting-live-updates-in-core-location)*

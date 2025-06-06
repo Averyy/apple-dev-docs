@@ -28,15 +28,11 @@ This sample code project provides the `TranslatingText` sample app to demonstrat
 
 > **Note**: This sample code project is associated with WWDC24 session [`10117: Meet the Translation API`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10117/).
 
-This sample code project is associated with WWDC24 session [`10117: Meet the Translation API`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10117/).
-
 ##### Configure the Sample Code Project
 
 Before you run the sample code project, download and install Xcode 16 or later.
 
 > **Note**: This sample code project runs only in macOS and on physical iOS devices. It doesn’t translate text in iOS or iPadOS simulators.
-
-This sample code project runs only in macOS and on physical iOS devices. It doesn’t translate text in iOS or iPadOS simulators.
 
 To run the sample code project in macOS, select My Mac from the Xcode toolbar scheme menu, and then choose Project > Run.
 
@@ -199,8 +195,6 @@ extension ViewModel {
 
 > **Note**: The framework doesn’t support translation between the same language, such as British English (en-GB) and U.S. English (en-US).
 
-The framework doesn’t support translation between the same language, such as British English (en-GB) and U.S. English (en-US).
-
 ##### Prepare for Translation
 
 If you know which languages a translation needs, you can download the language models before offering the translation.
@@ -262,4 +256,4 @@ For testing, you can delete locally downloaded models in macOS by choosing Syste
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/translation/translating-text-within-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Translation/translating-text-within-your-app)*

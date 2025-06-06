@@ -30,8 +30,6 @@ You can use various [`MTLDevice`](mtldevice.md) methods to help you estimate an 
 
 > **Note**:  Metal may round a heap’s size to a page boundary.
 
- Metal may round a heap’s size to a page boundary.
-
 This property’s default value is `0`.
 
 ## See Also

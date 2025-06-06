@@ -1,6 +1,6 @@
 # unproject(_:from:to:ontoPlane:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method  
 **Required**: Yes
 
@@ -27,8 +27,6 @@ func unproject(_ point: CGPoint, from space: some CoordinateSpaceProtocol, to re
 A 2D point in the view’s coordinate space can refer to any point along a line segment in the 3D coordinate space. Unprojecting gets the 3D position of the point along this line segment that intersects the provided plane.
 
 > **Note**: Unprojection is not possible if the plane is parallel to the line segment, or if the view does not have a currently active camera.
-
-Unprojection is not possible if the plane is parallel to the line segment, or if the view does not have a currently active camera.
 
 ## Parameters
 

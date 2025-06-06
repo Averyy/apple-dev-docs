@@ -32,8 +32,6 @@ Converting a `ExecutorJob` to an [`UnownedJob`](unownedjob.md) and invoking ``Un
 
 > **Note**: `runSynchronously(on:)`
 
-`runSynchronously(on:)`
-
 ## Parameters
 
 - `serialExecutor`: The executor this job will be semantically running on.

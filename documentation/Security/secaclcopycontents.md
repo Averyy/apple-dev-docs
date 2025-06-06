@@ -26,8 +26,6 @@ Use the [`SecACLCopyAuthorizations(_:)`](secaclcopyauthorizations(_:).md) method
 
 > **Note**:  Starting in macOS 10.13.1, for added security, the system ignores the `promptSelector` property of an ACL entry and always prompts for the keychain password when asking the user whether to add an app to the list of trusted apps.
 
- Starting in macOS 10.13.1, for added security, the system ignores the `promptSelector` property of an ACL entry and always prompts for the keychain password when asking the user whether to add an app to the list of trusted apps.
-
 ## Parameters
 
 - `acl`: The ACL entry from which you want information.

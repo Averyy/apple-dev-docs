@@ -1,6 +1,6 @@
 # customizableViewControllers
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The subset of view controllers managed by this tab bar controller that can be customized.
@@ -24,8 +24,6 @@ This property controls which items in the tab bar can be rearranged by the user.
 Changing the value of the [`viewControllers`](uitabbarcontroller/viewcontrollers.md) property (either directly or using the [`setViewControllers(_:animated:)`](uitabbarcontroller/setviewcontrollers(_:animated:).md) method) also changes the value of this property. When first assigned to the tab bar controller, all view controllers are customizable by default.
 
 > **Note**:  Customizable tab bar controllers and the More interface are not available in tvOS.
-
- Customizable tab bar controllers and the More interface are not available in tvOS.
 
 ## See Also
 

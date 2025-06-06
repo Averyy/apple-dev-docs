@@ -1,6 +1,6 @@
 # About ClassKit and user roles
 
-**Framework**: ClassKit
+**Framework**: Classkit
 
 Understand how ClassKit interacts with different kinds of users.
 
@@ -18,8 +18,6 @@ For example, your implementation should always report progress through every uni
 
 > **Note**:  For more information about handling privacy in your app, see [`Privacy Requirements for Apps Using ClassKit`](https://developer.apple.comhttps://developer.apple.com/classkit/).
 
- For more information about handling privacy in your app, see [`Privacy Requirements for Apps Using ClassKit`](https://developer.apple.comhttps://developer.apple.com/classkit/).
-
 ##### Classkit Alerts Students That Their Progress Is Measured
 
 When a student runs your app, ClassKit alerts the student on your behalf that progress is shared with teachers by briefly showing a message over your content. For a student in a class called  using an app called , the overlay looks like this:
@@ -35,4 +33,4 @@ Other users—teachers and those without managed accounts—don’t receive this
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/about-classkit-and-user-roles)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/about-classkit-and-user-roles)*

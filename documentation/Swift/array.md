@@ -234,8 +234,6 @@ When the destination array’s element type is a nonclass type that bridges to a
 
 > **Note**: The `ContiguousArray` and `ArraySlice` types are not bridged; instances of those types always have a contiguous block of memory as their storage.
 
-The `ContiguousArray` and `ArraySlice` types are not bridged; instances of those types always have a contiguous block of memory as their storage.
-
 ## Topics
 
 ### Creating an Array
@@ -629,4 +627,4 @@ The `ContiguousArray` and `ArraySlice` types are not bridged; instances of those
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/array)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/array)*

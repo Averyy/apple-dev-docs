@@ -24,21 +24,15 @@ class NSURLConnection
 
 > ❗ **Important**:  This API is considered legacy. Use [`URLSession`](urlsession.md) instead.
 
- This API is considered legacy. Use [`URLSession`](urlsession.md) instead.
-
 An `NSURLConnection` object lets you load the contents of a URL by providing a URL request object. The interface for `NSURLConnection` is sparse, providing only the controls to start and cancel asynchronous loads of a URL request. You perform most of your configuration on the URL request object itself.
 
 > **Note**:  Although instances of this class are commonly called “connections”, there is not a 1:1 correlation between these objects and the underlying network connections.
-
- Although instances of this class are commonly called “connections”, there is not a 1:1 correlation between these objects and the underlying network connections.
 
 The `NSURLConnection` class provides convenience class methods to load URL requests both asynchronously using a callback block and synchronously.
 
 For greater control, you can create a URL connection object with a delegate object that conforms to the [`NSURLConnectionDelegate`](nsurlconnectiondelegate.md) and [`NSURLConnectionDataDelegate`](nsurlconnectiondatadelegate.md) protocols. The connection calls methods on that delegate to provide you with progress and status as the URL request is loaded asynchronously. The connection also calls delegate methods to let you override the connection’s default behavior (for example, specifying how a particular redirect should be handled). These delegate methods are called on the thread that initiated the asynchronous load operation.
 
 > **Note**:  During a request, the connection maintains a strong reference to its delegate. It releases that strong reference when the connection finishes loading, fails, or is canceled.
-
- During a request, the connection maintains a strong reference to its delegate. It releases that strong reference when the connection finishes loading, fails, or is canceled.
 
 For more information about errors, see the `NSURLError.h` header, [`Foundation Constants`](foundation-constants.md), and URL Loading System Error Codes in [`Error Handling Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ErrorHandlingCocoa/ErrorHandling/ErrorHandling.html#//apple_ref/doc/uid/TP40001806).
 
@@ -53,8 +47,6 @@ In addition, unless you’re using Newsstand Kit, your delegate must also confor
 Finally, if you’re using Newsstand Kit, your delegate can conform to the [`NSURLConnectionDownloadDelegate`](nsurlconnectiondownloaddelegate.md) protocol. This protocol provides support for continuing interrupted file downloads and receiving a notification whenever a download finishes. This protocol is solely for use with `NSURLConnection` objects created using Newsstand Kit’s `download(with:)` method.
 
 > **Note**:  Some methods in these protocols were previously part of other formal protocols or were previously part of an informal protocol on `NSObject`.
-
- Some methods in these protocols were previously part of other formal protocols or were previously part of an informal protocol on `NSObject`.
 
 ## Topics
 
@@ -113,4 +105,4 @@ Finally, if you’re using Newsstand Kit, your delegate can conform to the [`NSU
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsurlconnection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsurlconnection)*

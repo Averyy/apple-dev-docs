@@ -1,6 +1,6 @@
 # filePromiseProvider(_:fileNameForType:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method  
 **Required**: Yes
 
@@ -21,8 +21,6 @@ func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider, fileNameF
 This method is called when the drag destination fulfills the file promise. Determine and return the final filename (a base filename, not a full path).
 
 > **Note**:  Don’t start writing the file to the destination directory until the drag process is complete.  The drag process stops to wait for the method to return, and if it has to wait too long, the drag could be canceled.
-
- Don’t start writing the file to the destination directory until the drag process is complete.  The drag process stops to wait for the method to return, and if it has to wait too long, the drag could be canceled.
 
 ## Parameters
 

@@ -33,8 +33,6 @@ When creating custom purpose identifiers, you can use a reverse DNS style string
 
 > **Note**:  You can set a purpose identifier only once, either implicitly by calling [`init(filePresenter:)`](nsfilecoordinator/init(filepresenter:).md) or explicitly using this property. Attempting to set the purpose identifier a second time throws an exception.
 
- You can set a purpose identifier only once, either implicitly by calling [`init(filePresenter:)`](nsfilecoordinator/init(filepresenter:).md) or explicitly using this property. Attempting to set the purpose identifier a second time throws an exception.
-
 ## See Also
 
 - [class func addFilePresenter(any NSFilePresenter)](nsfilecoordinator/addfilepresenter(_:).md)

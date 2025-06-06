@@ -21,8 +21,6 @@ for (int i = 0; i < 64; ++i) {
 
 > **Note**: The optimizer may remove parts of a loop if it determines that undefined behavior might trigger in any of its iterations.
 
-The optimizer may remove parts of a loop if it determines that undefined behavior might trigger in any of its iterations.
-
 ###### Solution
 
 Modify the logic to check for and avoid division when the divisor might equal zero.
@@ -63,4 +61,4 @@ Modify the logic to check for and avoid division when the divisor might equal ze
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/division-by-zero)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/division-by-zero)*

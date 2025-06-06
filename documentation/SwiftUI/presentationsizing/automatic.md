@@ -1,6 +1,6 @@
 # automatic
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 The default presentation sizing, appropriate for the platform.
@@ -26,8 +26,6 @@ On macOS, `.automatic` resolves to `.form.fitted(horizontal: false, vertical: tr
 
 > **Note**: [`AutomaticPresentationSizing`](automaticpresentationsizing.md)
 
-[`AutomaticPresentationSizing`](automaticpresentationsizing.md)
-
 ## See Also
 
 - [static var fitted: FittedPresentationSizing](presentationsizing/fitted.md)
@@ -40,4 +38,4 @@ On macOS, `.automatic` resolves to `.form.fitted(horizontal: false, vertical: tr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/presentationsizing/automatic)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/presentationsizing/automatic)*

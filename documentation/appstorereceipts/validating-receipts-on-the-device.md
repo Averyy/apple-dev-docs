@@ -1,6 +1,6 @@
 # Validating receipts on the device
 
-**Framework**: App Store Receipts
+**Framework**: Appstorereceipts
 
 Verify the contents of app receipts by decoding and parsing the receipt on the device.
 
@@ -9,8 +9,6 @@ Verify the contents of app receipts by decoding and parsing the receipt on the d
 When users install apps from the App Store, the app contains a cryptographically signed receipt that Apple creates and stores inside the app bundle, which you can then validate. 
 
 > **Note**: The receipt isn’t necessary if you use [`AppTransaction`](https://developer.apple.com/documentation/storekit/apptransaction) to validate the app download, or [`Transaction`](https://developer.apple.com/documentation/storekit/transaction) to validate in-app purchases. Only use the receipt if your app uses the [`Original API for In-App Purchase`](https://developer.apple.com/documentation/storekit/original-api-for-in-app-purchase), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](https://developer.apple.com/documentation/storekit/apptransaction). 
-
-The receipt isn’t necessary if you use [`AppTransaction`](https://developer.apple.com/documentation/storekit/apptransaction) to validate the app download, or [`Transaction`](https://developer.apple.com/documentation/storekit/transaction) to validate in-app purchases. Only use the receipt if your app uses the [`Original API for In-App Purchase`](https://developer.apple.com/documentation/storekit/original-api-for-in-app-purchase), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](https://developer.apple.com/documentation/storekit/apptransaction). 
 
 Validating the receipt locally requires you to develop or use code to read and decode the receipt as a PKCS #7 container, as defined by [`RFC 2315`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc2315). The App Store encodes the payload of the container using Abstract Syntax Notation One (ASN.1), as defined by [`ITU-T X.690`](https://developer.apple.comhttps://www.itu.int/rec/T-REC-X.690/). The payload contains a set of receipt attributes. Each receipt attribute contains a type, a version, and a value.
 
@@ -52,8 +50,6 @@ For information about the keys in a receipt, see [`Receipt Fields`](https://deve
 Decode the app receipt as a PKCS #7 container and verify that the chain of trust for the container’s signature traces back to the Apple Inc. Root certificate, available from [`Apple PKI`](https://developer.apple.comhttps://www.apple.com/certificateauthority/).
 
 > 💡 **Tip**: Don’t hardcode intermediate certificates in your app. Ensure that your code supports certificates that use SHA-256 and SHA-1 signing algorithms. 
-
-Don’t hardcode intermediate certificates in your app. Ensure that your code supports certificates that use SHA-256 and SHA-1 signing algorithms. 
 
 Make sure your app uses the date from the `receipt_creation_date` field, identified as [`ASN.1 Field Type 12`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1), to validate the receipt’s signature. Many cryptographic libraries default to using the device’s current time and date when validating a PKCS #7 package, but this may not produce the correct results when validating a receipt’s signature. For example, if the receipt was signed with a valid certificate, but the certificate has since expired, using the device’s current date incorrectly returns an invalid result.
 
@@ -230,8 +226,6 @@ If your app receipt validation fails, respond to that failure as follows:
 - In the sandbox environment, if the app receipt is missing, assume the tester is a new customer and doesn’t have access to premium content.
 
 > **Note**: For apps in iOS and iPadOS running in the sandbox environment and in StoreKit testing in Xcode, the app receipt is present only after the tester makes their first in-app purchase. The app receipt is always present in TestFlight on devices running macOS.
-
-For apps in iOS and iPadOS running in the sandbox environment and in StoreKit testing in Xcode, the app receipt is present only after the tester makes their first in-app purchase. The app receipt is always present in TestFlight on devices running macOS.
 
 
 ---

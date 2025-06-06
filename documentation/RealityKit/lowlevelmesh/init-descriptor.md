@@ -1,6 +1,6 @@
 # init(descriptor:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Constructs a low-level mesh from a descriptor.
@@ -22,8 +22,6 @@ init(descriptor: LowLevelMesh.Descriptor) throws
 #### Discussion
 
 > **Note**: If the descriptor is invalid or if you do not successfully allocate its memory.
-
-If the descriptor is invalid or if you do not successfully allocate its memory.
 
 ## Parameters
 

@@ -16,8 +16,6 @@ Apps express their capability to be a default web browser by using the [`com.app
 
 > ❗ **Important**:  Request the default browser entitlement by filling out the [`Default browser entitlement request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/default-browser-entitlement/). In that form you can also request the [`com.apple.developer.browser.app-installation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.browser.app-installation) entitlement. If you do that and your request for the default browser entitlement is accepted you get both the default browser entitlement and the app-installation entitlement for your browser app.
 
- Request the default browser entitlement by filling out the [`Default browser entitlement request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/default-browser-entitlement/). In that form you can also request the [`com.apple.developer.browser.app-installation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.browser.app-installation) entitlement. If you do that and your request for the default browser entitlement is accepted you get both the default browser entitlement and the app-installation entitlement for your browser app.
-
 ##### Fulfill Default Browser Requirements
 
 Apps that register as a default web browser option must satisfy the following criteria:
@@ -56,8 +54,6 @@ Because of their privileged position in a user’s web browsing, browser apps sh
 
 > **Note**: [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription) was deprecated in iOS 10. For more information, see [`Choosing the  Location Services Authorization to Request`](https://developer.apple.com/documentation/BundleResources/choosing-the-location-services-authorization-to-request).
 
-[`NSLocationAlwaysUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription) was deprecated in iOS 10. For more information, see [`Choosing the  Location Services Authorization to Request`](https://developer.apple.com/documentation/BundleResources/choosing-the-location-services-authorization-to-request).
-
 ##### Check If Your App Is the Default Browser
 
 To test whether someone configured your app as the default browser in iOS, call [`isDefault(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/isDefault(_:)) (Swift) or [`defaultStatusForCategory:error:`](https://developer.apple.com/documentation/UIKit/UIApplication/defaultStatusForCategory:error:) (Objective-C), with the category [`UIApplication.Category.webBrowser`](https://developer.apple.com/documentation/UIKit/UIApplication/Category/webBrowser).
@@ -71,4 +67,4 @@ If your iOS browser app includes an alternative browser engine, which includes u
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/preparing-your-app-to-be-the-default-browser)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser)*

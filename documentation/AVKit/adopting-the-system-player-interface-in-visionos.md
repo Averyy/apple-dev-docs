@@ -1,6 +1,6 @@
 # Adopting the system player interface in visionOS
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Provide an optimized viewing experience for watching 3D video content.
 
@@ -10,8 +10,6 @@ The recommended way to provide a video playback interface for your visionOS app 
 
 > **Note**:  In addition to providing the system playback interface, you can also use [`AVPlayerViewController`](avplayerviewcontroller.md) to present a media-trimming experience similar to QuickTime Player in macOS. See [`Trimming and exporting media in visionOS`](trimming-and-exporting-media-in-visionos.md) for more information.
 
- In addition to providing the system playback interface, you can also use [`AVPlayerViewController`](avplayerviewcontroller.md) to present a media-trimming experience similar to QuickTime Player in macOS. See [`Trimming and exporting media in visionOS`](trimming-and-exporting-media-in-visionos.md) for more information.
-
 ##### Explore Presentation Options
 
 Use [`AVPlayerViewController`](avplayerviewcontroller.md) to play video in windowed environments in visionOS. It automatically adapts its user interface to best fit its presentation. For example, when you present it nested inside another view, it displays an inline user interface:
@@ -19,8 +17,6 @@ Use [`AVPlayerViewController`](avplayerviewcontroller.md) to play video in windo
 ![A screenshot of a player view controller’s interface when you present it inline. In the center of the image is a button to toggle playback. On the button’s leading side, is a button to skip backwards 10 seconds, and on its trailing side, is a button to skip forward 10 seconds. Along the bottom of the image is a progress indicator that you can pinch and drag to scrub through the video presentation. At the top of the image, along the leading edge, is a button that you can tap to expand the player to fullscreen. On the top’s trailing edge is a horizontal slider to adjust the audio volume. Closer to the trailing edge is a button with an ellipsis icon that you can tap to display additional player controls.](https://docs-assets.developer.apple.com/published/2d9d5a2ff59fd104ea49079aaa9bad59/media-4266435%402x.png)
 
 > **Note**:  When you present the player inline, it only displays standard 2D video. To play 3D content, present it fullscreen.
-
- When you present the player inline, it only displays standard 2D video. To play 3D content, present it fullscreen.
 
 Present the player in full-screen mode by setting it as the exclusive root view of your app, or by presenting it using the [`fullScreenCover(item:onDismiss:content:)`](https://developer.apple.com/documentation/SwiftUI/View/fullScreenCover(item:onDismiss:content:)) modifier. In full-screen mode, the player presents a more content-forward design that dims the environment by default to provide more suitable viewing. This provides a streamlined viewing experience for both 2D and 3D content.
 
@@ -168,4 +164,4 @@ private func addTimeObserver() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/adopting-the-system-player-interface-in-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/adopting-the-system-player-interface-in-visionos)*

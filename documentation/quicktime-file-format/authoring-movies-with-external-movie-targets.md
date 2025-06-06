@@ -1,6 +1,6 @@
 # Authoring movies with external movie targets
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Specify elements of an external movie in your movie.
 
@@ -9,8 +9,6 @@ Specify elements of an external movie in your movie.
 QuickTime 4 enables you to author movies with external movie targets. To specify an action that targets an element of an external movie, you must identify the external movie by either its name or its ID. Two new target atom types have been introduced for this purpose; these atoms are used in addition to the existing target atoms, which you may use to specify that the element is a particular track or object within a track, such as a sprite.
 
 > **Note**: A movie ID may be specified by an expression.
-
-A movie ID may be specified by an expression.
 
 These additional target atoms provided in QuickTime 4:
 

@@ -1,6 +1,6 @@
 # metadataVideoSrc
 
-**Framework**: LivePhotosKit JS  
+**Framework**: Livephotoskitjs  
 **Kind**: property
 
 A string or array buffer that contains metadata about the properties of a Live Photo.
@@ -25,8 +25,6 @@ You can set this property to an `ArrayBuffer` (for example, videoSrc or photoSrc
 The performance implications of using this property on a small page viewed by audiences with reliable, low-latency connections are probably minimal. However, do not use this approach when performance is critical.
 
 > **Note**:  In typical circumstances, you can safely ignore this property.
-
- In typical circumstances, you can safely ignore this property.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # accuracyAuthorization
 
-**Framework**: Core Location  
+**Framework**: Corelocation  
 **Kind**: property
 
 A value that indicates the level of location accuracy the app has permission to use.
@@ -26,8 +26,6 @@ If the value of this property is [`CLAccuracyAuthorization.fullAccuracy`](claccu
 
 > **Note**:  Because reduced accuracy isn’t available prior to watchOS 7, when the user chooses reduced accuracy on the paired iPhone, watch apps running with this older software don’t receive any location data. This occurs because watchOS apps must adhere to the permissions granted on the paired iPhone.
 
- Because reduced accuracy isn’t available prior to watchOS 7, when the user chooses reduced accuracy on the paired iPhone, watch apps running with this older software don’t receive any location data. This occurs because watchOS apps must adhere to the permissions granted on the paired iPhone.
-
 ## See Also
 
 - [class func significantLocationChangeMonitoringAvailable() -> Bool](cllocationmanager/significantlocationchangemonitoringavailable.md)
@@ -46,4 +44,4 @@ If the value of this property is [`CLAccuracyAuthorization.fullAccuracy`](claccu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/cllocationmanager/accuracyauthorization)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/cllocationmanager/accuracyauthorization)*

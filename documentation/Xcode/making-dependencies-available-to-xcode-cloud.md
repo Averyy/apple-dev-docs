@@ -12,8 +12,6 @@ If Xcode Cloud can’t access a private dependency or a third-party tool, it won
 
 > **Note**: The temporary build environment that Xcode Cloud uses includes tools that are part of macOS and Xcode — for example, Python — and additionally [`Homebrew`](https://developer.apple.comhttps://brew.sh) to support installing third-party dependencies and tools. For more information, see the “Use a custom build script to install a third-party dependency or tool” section below.
 
-The temporary build environment that Xcode Cloud uses includes tools that are part of macOS and Xcode — for example, Python — and additionally [`Homebrew`](https://developer.apple.comhttps://brew.sh) to support installing third-party dependencies and tools. For more information, see the “Use a custom build script to install a third-party dependency or tool” section below.
-
 ##### Use Swift Package Dependencies and Git Submodules
 
 Xcode Cloud supports Swift packages and dependencies that you manage using Git submodules without any separate configuration if their repositories are publicly accessible. If you use private dependencies, Xcode Cloud helps you access them. For more information on using them, see [`Grant Xcode Cloud access to private dependencies`](making-dependencies-available-to-xcode-cloud#Grant-Xcode-Cloud-access-to-private-dependencies.md) below.
@@ -21,8 +19,6 @@ Xcode Cloud supports Swift packages and dependencies that you manage using Git s
 Following the best practice for using Swift package dependencies in a CI/CD environment, Xcode Cloud doesn’t use automatic package resolution and instead relies on the `Package.resolved` file to resolve your dependencies. If you use Swift package dependencies in your project, make sure to include the `Package.resolved` file in your Git repository and commit any changes to it. Don’t include the file in your `.gitignore` file. Additionally, make sure the `Package.resolved` file resides at `$filename.xcodeproj/project.workspace/xcshareddata/swiftpm/Package.resolved`.
 
 > **Note**: Forcing Xcode Cloud to use automatic package resolution — for example, by changing settings in a custom build script — may result in undefined behavior and failing builds.
-
-Forcing Xcode Cloud to use automatic package resolution — for example, by changing settings in a custom build script — may result in undefined behavior and failing builds.
 
 For general information on building Swift packages in a continuous integration and delivery environment, see [`Building Swift packages or apps that use them in continuous integration workflows`](building-swift-packages-or-apps-that-use-them-in-continuous-integration-workflows.md).
 
@@ -33,8 +29,6 @@ When you configure your project or workspace to use Xcode Cloud, Xcode detects t
 If you add a new private package dependency that Xcode Cloud can’t access, the next build fails. To resolve the issue, navigate to the failed build’s build report, and let Xcode or App Store Connect help you connect Xcode Cloud to the dependency’s SCM provider.
 
 > **Note**: You need to host your private dependencies with one of the supported SCM providers. For more information on supported SCM providers, see [`Source code management setup`](source-code-management-setup.md).
-
-You need to host your private dependencies with one of the supported SCM providers. For more information on supported SCM providers, see [`Source code management setup`](source-code-management-setup.md).
 
 Building your project may require access to more than one instance of your self-hosted SCM provider — a common case for large teams. For example, you may use two different GitHub Enterprise instances where one hosts your app’s code and the other hosts your dependencies. If this scenario applies to you, finish the initial onboarding workflow for the project in Xcode and connect the instance that hosts your app’s code, then let the first build fail. After the build failure, Xcode suggests a fix to connect the other instance.
 
@@ -58,8 +52,6 @@ To install a tool with Homebrew:
 
 > **Note**: You can use custom build scripts to perform a variety of tasks, but you can’t obtain administrator privileges by using `sudo`.
 
-You can use custom build scripts to perform a variety of tasks, but you can’t obtain administrator privileges by using `sudo`.
-
 For more information about custom build scripts, see [`Writing custom build scripts`](writing-custom-build-scripts.md).
 
 ##### Make Cocoapods Dependencies Available to Xcode Cloud
@@ -72,8 +64,6 @@ CocoaPods is an open source dependency manager for Apple platforms. However, the
 If you commit the `Pods` directory and its contents, you won’t need to install CocoaPods to enable Xcode Cloud to build your project or workspace. It’s worth noting, however, that your source code repository takes up more space when adding the `Pods` directory. Additionally, remember that committing binary dependencies can affect the performance of your Git repository. It’s a general issue when using Git and not specific to Xcode Cloud.
 
 > 💡 **Tip**: If you decide to commit the `Pods` directory, consider using [`Git LFS`](https://developer.apple.comhttps://git-lfs.github.com) . It’s pre-installed on the temporary build environment Xcode Cloud uses to build your project.
-
-If you decide to commit the `Pods` directory, consider using [`Git LFS`](https://developer.apple.comhttps://git-lfs.github.com) . It’s pre-installed on the temporary build environment Xcode Cloud uses to build your project.
 
 If you choose to exclude the `Pods` directory from source control, you’ll need to install CocoaPods using a custom build script. The benefit, however, is that the source code repository takes up less disk space and doesn’t slow down your Git repository. To install CocoaPods using a custom build script:
 
@@ -115,4 +105,4 @@ Carthage is an open source dependency manager for Apple platforms. However, the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/making-dependencies-available-to-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/making-dependencies-available-to-xcode-cloud)*

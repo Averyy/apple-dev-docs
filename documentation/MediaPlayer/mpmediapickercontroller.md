@@ -1,6 +1,6 @@
 # MPMediaPickerController
 
-**Framework**: Media Player  
+**Framework**: Mediaplayer  
 **Kind**: class
 
 A specialized view controller that provides a graphical interface for selecting media items.
@@ -24,8 +24,6 @@ An [`MPMediaPickerController`](mpmediapickercontroller.md) object, or media item
 To respond to user selections and to dismiss a media item picker, use the [`MPMediaPickerControllerDelegate`](mpmediapickercontrollerdelegate.md) protocol.
 
 > **Note**:  The [`MPMediaPickerController`](mpmediapickercontroller.md) class supports portrait mode only. This class doesn’t support subclassing, and don’t modify the view hierarchy, which is private. In a compatible iPad or iPhone app in visionOS, presenting this picker displays an alert notifying the person that picking media items isn’t supported.
-
- The [`MPMediaPickerController`](mpmediapickercontroller.md) class supports portrait mode only. This class doesn’t support subclassing, and don’t modify the view hierarchy, which is private. In a compatible iPad or iPhone app in visionOS, presenting this picker displays an alert notifying the person that picking media items isn’t supported.
 
 ## Topics
 
@@ -86,4 +84,4 @@ To respond to user selections and to dismiss a media item picker, use the [`MPMe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mediaplayer/mpmediapickercontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MediaPlayer/mpmediapickercontroller)*

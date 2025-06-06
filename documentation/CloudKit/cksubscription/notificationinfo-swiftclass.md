@@ -1,6 +1,6 @@
 # CKSubscription.NotificationInfo
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 An object that describes the configuration of a subscription’s push notifications.
@@ -29,8 +29,6 @@ When your app receives a push notification that a subscription generates, instan
 For more information about push notification alerts and how they display to the user, see [`Apple Push Notification Service`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html#//apple_ref/doc/uid/TP40008194-CH100) in [`Local and Remote Notification Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194).
 
 > **Note**:  If you don’t set any of the [`alertBody`](cksubscription/notificationinfo-swift.class/alertbody.md), [`soundName`](cksubscription/notificationinfo-swift.class/soundname.md), or [`shouldBadge`](cksubscription/notificationinfo-swift.class/shouldbadge.md) properties, CloudKit sends the push notification using a lower priority and doesn’t display any content to the user.
-
- If you don’t set any of the [`alertBody`](cksubscription/notificationinfo-swift.class/alertbody.md), [`soundName`](cksubscription/notificationinfo-swift.class/soundname.md), or [`shouldBadge`](cksubscription/notificationinfo-swift.class/shouldbadge.md) properties, CloudKit sends the push notification using a lower priority and doesn’t display any content to the user.
 
 ## Topics
 

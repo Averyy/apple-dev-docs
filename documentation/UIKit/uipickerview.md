@@ -1,6 +1,6 @@
 # UIPickerView
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A view that uses a spinning-wheel or slot-machine metaphor to show one or more sets of values.
@@ -24,13 +24,9 @@ A picker view displays one or more wheels that the user manipulates to select it
 
 > **Note**:  The [`UIDatePicker`](uidatepicker.md) class uses a custom subclass of [`UIPickerView`](uipickerview.md) to display dates and times. To see an example, tap the add (”+”) button in the Alarm pane of the Clock app.
 
- The [`UIDatePicker`](uidatepicker.md) class uses a custom subclass of [`UIPickerView`](uipickerview.md) to display dates and times. To see an example, tap the add (”+”) button in the Alarm pane of the Clock app.
-
 You provide the data to display in your picker view using a picker data source (an object that adopts the [`UIPickerViewDataSource`](uipickerviewdatasource.md) protocol). Use your picker view delegate (an object that adopts the [`UIPickerViewDelegate`](uipickerviewdelegate.md) protocol) to provide views for displaying your data and responding to user selections.
 
 > ❗ **Important**:  [`UIPickerView`](uipickerview.md) and its descendants aren’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md).
-
- [`UIPickerView`](uipickerview.md) and its descendants aren’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md).
 
 ## Topics
 
@@ -118,4 +114,4 @@ You provide the data to display in your picker view using a picker data source (
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipickerview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipickerview)*

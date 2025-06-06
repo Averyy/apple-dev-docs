@@ -1,6 +1,6 @@
 # HKVerifiableClinicalRecordQuery
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: class
 
 A query for one-time access to a SMART Health Card or EU Digital COVID Certificate.
@@ -21,8 +21,6 @@ class HKVerifiableClinicalRecordQuery
 #### Overview
 
 > **Note**:  To use Swift concurrency when reading verifiable clinical records, see [`HKVerifiableClinicalRecordQueryDescriptor`](hkverifiableclinicalrecordquerydescriptor.md).
-
- To use Swift concurrency when reading verifiable clinical records, see [`HKVerifiableClinicalRecordQueryDescriptor`](hkverifiableclinicalrecordquerydescriptor.md).
 
 Use an [`HKVerifiableClinicalRecordQuery`](hkverifiableclinicalrecordquery.md) object to request one-time access to a SMART Health Card or EU Digital COVID Certificate. For example, the following code requests cards that represent immunizations within the last six months.
 
@@ -72,8 +70,6 @@ Unlike other HealthKit queries, you don’t need to request permission to read v
 
 > **Note**:  Running an [`HKVerifiableClinicalRecordQuery`](hkverifiableclinicalrecordquery.md) requires a special entitlement from Apple, or the query fails with an [`HKError.Code.errorAuthorizationDenied`](hkerror/code/errorauthorizationdenied.md) error. To request the entitlement, see [`Request Access to the Verifiable Health Records Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/verifiable-health-records/).
 
- Running an [`HKVerifiableClinicalRecordQuery`](hkverifiableclinicalrecordquery.md) requires a special entitlement from Apple, or the query fails with an [`HKError.Code.errorAuthorizationDenied`](hkerror/code/errorauthorizationdenied.md) error. To request the entitlement, see [`Request Access to the Verifiable Health Records Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/verifiable-health-records/).
-
 ## Topics
 
 ### Creating Queries
@@ -114,4 +110,4 @@ Unlike other HealthKit queries, you don’t need to request permission to read v
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkverifiableclinicalrecordquery)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkverifiableclinicalrecordquery)*

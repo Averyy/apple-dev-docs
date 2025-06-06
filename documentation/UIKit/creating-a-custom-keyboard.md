@@ -1,6 +1,6 @@
 # Creating a custom keyboard
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Add an extension to your Xcode project to provide systemwide customized text input.
 
@@ -9,8 +9,6 @@ Add an extension to your Xcode project to provide systemwide customized text inp
 A custom keyboard replaces the system keyboard for users who want capabilities such as a novel text input method or the ability to enter text in a language not otherwise supported. Users enable your custom keyboard in Settings, which allows them to access your keyboard systemwide wherever third-party keyboards are supported.
 
 > **Note**:  If your keyboard is specific to your app, use a [`UIInputView`](uiinputview.md) instead of creating a custom keyboard. Set the [`inputView`](uitextfield/inputview.md) property of text fields or text views to a view that should replace the system keyboard.
-
- If your keyboard is specific to your app, use a [`UIInputView`](uiinputview.md) instead of creating a custom keyboard. Set the [`inputView`](uitextfield/inputview.md) property of text fields or text views to a view that should replace the system keyboard.
 
 Creating a custom keyboard requires several steps. In addition to adding a Custom Keyboard extension target to your project, you have to configure options, implement your custom interface, and decide what text interactions to support. Users expect a variety of common keyboard interactions such as autocorrection, autocapitalization, smart quotes, and more.
 
@@ -52,8 +50,6 @@ Set these keys in the [`NSExtension`](https://developer.apple.com/documentation/
 When the user activates your keyboard, it replaces the system keyboard. Your custom keyboard extension’s principal class provides the view that’s displayed. By default, Xcode’s custom keyboard template configures a class named `KeyboardViewController` as the principal class. This controller’s view is where you define your user interface.
 
 > 💡 **Tip**:  For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/selection-and-input/onscreen-keyboards).
-
- For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/selection-and-input/onscreen-keyboards).
 
 When designing your keyboard’s user interface, incorporate a button to switch keyboards. The system keyboard uses a button with a globe icon as shown in the following image.
 
@@ -105,8 +101,6 @@ iOS launches your keyboard extension in its own process, and Xcode attaches a de
 
 > ❗ **Important**:  If your keyboard isn’t available in the list of active keyboards, you have to enable it. In Settings, navigate to General > Keyboard > Keyboards and select Add New Keyboard. Choose your keyboard(s) from the list of third-party keyboards.
 
- If your keyboard isn’t available in the list of active keyboards, you have to enable it. In Settings, navigate to General > Keyboard > Keyboards and select Add New Keyboard. Choose your keyboard(s) from the list of third-party keyboards.
-
 ##### Limit Memory Usage
 
 Your custom keyboard code executes in a separate process, and that process has a limit on the amount of memory it may use. If your keyboard extension exceeds the memory limit the system terminates it. Here are some tips for managing memory efficiently:
@@ -144,4 +138,4 @@ For more information on crash logs related to memory usage limits, see [`Diagnos
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/creating-a-custom-keyboard)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/creating-a-custom-keyboard)*

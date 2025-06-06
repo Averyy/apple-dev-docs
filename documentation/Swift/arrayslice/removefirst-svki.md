@@ -40,8 +40,6 @@ Calling this method may invalidate any existing indices for use with this collec
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 
 ---
 

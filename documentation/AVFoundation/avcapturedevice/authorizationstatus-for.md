@@ -1,6 +1,6 @@
 # authorizationStatus(for:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Returns an authorization status that indicates whether the user grants the app permission to capture media of a particular type.
@@ -34,8 +34,6 @@ A user must explicitly grant your app access to record audio or video. Call this
 After the user grants permission, the system remembers their choice and doesn’t prompt them again. However, a user can change their choice at any time in the Settings app.
 
 > **Note**:  If a user has denied your app recording permission, or hasn’t yet responded to the permission prompt, audio recordings contain only silence and video recordings contain only black frames.
-
- If a user has denied your app recording permission, or hasn’t yet responded to the permission prompt, audio recordings contain only silence and video recordings contain only black frames.
 
 ## Parameters
 

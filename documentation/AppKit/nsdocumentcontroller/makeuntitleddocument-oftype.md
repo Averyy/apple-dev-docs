@@ -1,6 +1,6 @@
 # makeUntitledDocument(ofType:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Instantiates a new untitled document of the specified type and returns it if successful.
@@ -20,10 +20,6 @@ func makeUntitledDocument(ofType typeName: String) throws -> NSDocument
 The document type is specified by `typeName`. If not successful, the method returns `nil` after setting `outError` to point to an `NSError` object that encapsulates the reason why a new untitled document could not be instantiated. The default implementation of this method calls [`documentClass(forType:)`](nsdocumentcontroller/documentclass(fortype:).md) to find out the class of document to instantiate, then allocates and initializes a document by sending it [`init(type:)`](nsdocument/init(type:).md).
 
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

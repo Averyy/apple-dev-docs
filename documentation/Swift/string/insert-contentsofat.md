@@ -26,8 +26,6 @@ Calling this method invalidates any existing indices for use with this string.
 
 > **Note**: O(), where  is the combined length of the string and `newElements`.
 
-O(), where  is the combined length of the string and `newElements`.
-
 ## Parameters
 
 - `newElements`: A collection of   elements to insert into the   string.

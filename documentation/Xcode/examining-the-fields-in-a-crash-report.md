@@ -69,8 +69,6 @@ Exception Codes: 0x0000000000000001, 0x0000000102afb3d0
 
 > **Note**: This exception information doesn’t refer to language exceptions thrown by an API or language features in Objective-C or C++. Crash reports record language exception information separately.
 
-This exception information doesn’t refer to language exceptions thrown by an API or language features in Objective-C or C++. Crash reports record language exception information separately.
-
 The following fields provide information about the exception. No single crash report contains all of these fields.
 
 - `Exception Type`: The name of the Mach exception that terminated the process, along with the name of the corresponding BSD termination signal in parentheses. See [`Understanding the exception types in a crash report`](understanding-the-exception-types-in-a-crash-report.md).
@@ -93,8 +91,6 @@ BUG IN CLIENT OF LIBDISPATCH: dispatch_sync called on queue already owned by cur
 ```
 
 > **Note**: `Application Specific Information` is sometimes elided from a crash report to avoid logging privacy-sensitive information in the message.
-
-`Application Specific Information` is sometimes elided from a crash report to avoid logging privacy-sensitive information in the message.
 
 Terminations due to a watchdog violation contain a `Termination Description` field with information about why the watchdog triggered.
 
@@ -248,4 +244,4 @@ This list contains the components from the preceding example:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/examining-the-fields-in-a-crash-report)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/examining-the-fields-in-a-crash-report)*

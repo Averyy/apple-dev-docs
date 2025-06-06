@@ -1,6 +1,6 @@
 # frame
 
-**Framework**: Core Animation  
+**Framework**: Quartzcore  
 **Kind**: property
 
 The layer’s frame rectangle.
@@ -29,8 +29,6 @@ For more information about the relationship between the [`frame`](calayer/frame.
 
 > **Note**:  The `frame` property is not directly animatable. Instead you should animate the appropriate combination of the [`bounds`](calayer/bounds.md), [`anchorPoint`](calayer/anchorpoint.md) and [`position`](calayer/position.md) properties to achieve the desired result.
 
- The `frame` property is not directly animatable. Instead you should animate the appropriate combination of the [`bounds`](calayer/bounds.md), [`anchorPoint`](calayer/anchorpoint.md) and [`position`](calayer/position.md) properties to achieve the desired result.
-
 ## See Also
 
 - [var bounds: CGRect](calayer/bounds.md)
@@ -49,4 +47,4 @@ For more information about the relationship between the [`frame`](calayer/frame.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/calayer/frame)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/calayer/frame)*

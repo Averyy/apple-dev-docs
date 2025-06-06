@@ -26,8 +26,6 @@ Don’t subclass or create instances of this class. Instead, the system instanti
 
 > **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
 
- In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
-
 ## Relationships
 
 ### Inherits From
@@ -65,4 +63,4 @@ Don’t subclass or create instances of this class. Instead, the system instanti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkintentdidrunrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkintentdidrunrefreshbackgroundtask)*

@@ -26,8 +26,6 @@ After the value of this property becomes `true`, it remains `true` indefinitely.
 
 > **Note**: `checkCancellation()`
 
-`checkCancellation()`
-
 
 ---
 

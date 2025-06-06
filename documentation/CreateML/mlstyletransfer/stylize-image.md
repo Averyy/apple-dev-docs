@@ -1,6 +1,6 @@
 # stylize(image:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Applies the style the model learned to an image.
@@ -25,8 +25,6 @@ An image of type `CGImage` stylized using style of the model.
 #### Discussion
 
 > **Note**: `MLCreateError.generic` if stylization fails.
-
-`MLCreateError.generic` if stylization fails.
 
 ## Parameters
 

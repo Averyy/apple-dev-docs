@@ -1,6 +1,6 @@
 # sceneWillResignActive(_:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Tells the delegate that the scene is about to resign the active state and stop responding to user events.
@@ -34,8 +34,6 @@ In addition to calling this method, UIKit posts a [`willDeactivateNotification`]
 For more information about what to do when your app resigns the active state, see [`Preparing your UI to run in the background`](preparing-your-ui-to-run-in-the-background.md).
 
 > **Note**:  When you implement this method and enable scenes, UIKit calls this method but does not call the [`applicationWillResignActive(_:)`](uiapplicationdelegate/applicationwillresignactive(_:).md) method on [`UIApplicationDelegate`](uiapplicationdelegate.md).
-
- When you implement this method and enable scenes, UIKit calls this method but does not call the [`applicationWillResignActive(_:)`](uiapplicationdelegate/applicationwillresignactive(_:).md) method on [`UIApplicationDelegate`](uiapplicationdelegate.md).
 
 ## Parameters
 

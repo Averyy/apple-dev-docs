@@ -55,8 +55,6 @@ The following frameworks are deprecated in their entirety in both iOS and vision
 
 > ❗ **Important**: visionOS removed many deprecated symbols entirely, turning these deprecation warnings into missing-symbol errors on the platform.
 
-visionOS removed many deprecated symbols entirely, turning these deprecation warnings into missing-symbol errors on the platform.
-
 Here’s a list of frameworks and features that behave differently in visionOS:
 
 -  Available on iOS only. Check the [`areActivitiesEnabled`](https://developer.apple.com/documentation/ActivityKit/ActivityAuthorizationInfo/areActivitiesEnabled) property of [`ActivityAuthorizationInfo`](https://developer.apple.com/documentation/ActivityKit/ActivityAuthorizationInfo) to determine if Live Activities are authorized.
@@ -107,8 +105,6 @@ Here’s a list of frameworks and features that behave differently in visionOS:
 
 > **Note**: Review [`Building spatial experiences for business apps with enterprise APIs for visionOS`](building-spatial-experiences-for-business-apps-with-enterprise-apis.md) for information on enterprise APIs and how to request the entitlements.
 
-Review [`Building spatial experiences for business apps with enterprise APIs for visionOS`](building-spatial-experiences-for-business-apps-with-enterprise-apis.md) for information on enterprise APIs and how to request the entitlements.
-
 ## See Also
 
 - [Bringing your existing apps to visionOS](bringing-your-app-to-visionos.md)
@@ -121,4 +117,4 @@ Review [`Building spatial experiences for business apps with enterprise APIs for
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/determining-whether-to-bring-your-app-to-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/determining-whether-to-bring-your-app-to-visionos)*

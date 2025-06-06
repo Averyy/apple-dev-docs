@@ -1,6 +1,6 @@
 # toggleButton
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The accessibility element behaves like a toggle button.
@@ -25,8 +25,6 @@ static let toggleButton: UIAccessibilityTraits
 Use this trait to characterize an accessibility element that represents a button that toggles a value on, off, or mixed status. VoiceOver will describe the options offered by the toggle button.
 
 > **Note**:  If you want VoiceOver to describe the toggle as a switch button, combine the toggle trait with a button trait.
-
- If you want VoiceOver to describe the toggle as a switch button, combine the toggle trait with a button trait.
 
 ## See Also
 

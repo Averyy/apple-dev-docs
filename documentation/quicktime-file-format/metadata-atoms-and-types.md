@@ -1,6 +1,6 @@
 # Metadata atoms and types
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Store metadata in QuickTime Movie files.
 
@@ -11,8 +11,6 @@ Metadata can be defined as useful information related to media. This section des
 This metadata format uses a key–value pair for each type of metadata being stored. Standard keys, with specific formats for the values they indicate, have been defined. See [`QuickTime metadata keys`](quicktime_metadata_keys.md) for details.
 
 > **Note**: The QuickTime file format also defines user data which, in some limited cases, can be used to store metadata. The method of storing metadata defined in this section provides an extensible and flexible design for handling a wide variety of metadata types.
-
-The QuickTime file format also defines user data which, in some limited cases, can be used to store metadata. The method of storing metadata defined in this section provides an extensible and flexible design for handling a wide variety of metadata types.
 
 ##### Data Type
 

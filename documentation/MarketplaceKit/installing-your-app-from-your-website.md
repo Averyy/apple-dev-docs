@@ -1,6 +1,6 @@
 # Installing your app from your website
 
-**Framework**: MarketplaceKit
+**Framework**: Marketplacekit
 
 Manage the installation of an app that you develop and distribute through your website.
 
@@ -53,8 +53,6 @@ At this URL, host a JSON file with the following configuration:
 
 > ❗ **Important**: Host the file using `https://` with a valid certificate. Don’t use redirects. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
 
-Host the file using `https://` with a valid certificate. Don’t use redirects. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
-
 The system sends the token from your download URL in a POST to your `token_endpoint` in the format of described in [`RFC 8693 section 2.3`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc8693.html#name-example-token-exchange), for example:
 
 ```http
@@ -80,8 +78,6 @@ The fields in the POST body are:
 | `subject_token_type` | The subject token type, `ietf:params:oauth:token-type:access_token`. |
 
 > ❗ **Important**: `client_id` isn’t a stable way to identify a customer or track the number of simultaneous installs of an app for an account. To identify the customer, use the `token` parameter in the [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) instead. To track installation counts for an app, see [`Licensing alternative distribution apps`](https://developer.apple.com/documentation/applicensedeliverysdk/licensing-alternative-distribution-apps).
-
-`client_id` isn’t a stable way to identify a customer or track the number of simultaneous installs of an app for an account. To identify the customer, use the `token` parameter in the [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) instead. To track installation counts for an app, see [`Licensing alternative distribution apps`](https://developer.apple.com/documentation/applicensedeliverysdk/licensing-alternative-distribution-apps).
 
 Your token endpoint responds to the request with an access token and, optionally, a refresh token. Here’s an example response:
 
@@ -109,8 +105,6 @@ Pragma: no-cache
 When the system makes subsequent calls to your web server for app licenses, app installs (), or app updates, it includes the bearer token in the header for your server to validate the communication and associate with the person’s account.
 
 > **Note**: For more information on implementing an authentication service, such as generating the tokens, refer to OAuth 2.0 Authorization Framework Specification, [`IETF RFC 6749`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6749). All communication between your server and device needs to occur over TLS.
-
-For more information on implementing an authentication service, such as generating the tokens, refer to OAuth 2.0 Authorization Framework Specification, [`IETF RFC 6749`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6749). All communication between your server and device needs to occur over TLS.
 
 #### Retrieve a License for the App From Your Web Server
 
@@ -198,4 +192,4 @@ The `"restores"` array in the response contains an object with the following fie
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/installing-your-app-from-your-website)*

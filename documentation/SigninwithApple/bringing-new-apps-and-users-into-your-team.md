@@ -1,6 +1,6 @@
 # Bringing new apps and users into your team
 
-**Framework**: Sign in with Apple
+**Framework**: Signinwithapple
 
 Receive Sign in with Apple users and associated apps from another team.
 
@@ -86,8 +86,6 @@ If the sending team ungrouped their apps, coordinate with the team to regroup th
 
 > **Note**:  The service identifiers for web applications don’t require ungrouping. They transfer over automatically when their primary app transfers.
 
- The service identifiers for web applications don’t require ungrouping. They transfer over automatically when their primary app transfers.
-
 ##### Confirm the Transferred Credential State
 
 Your transferred application starts receiving [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/CredentialState/transferred) when you call [`getCredentialState(forUserID:completion:)`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/getCredentialState(forUserID:completion:)). This status indicates that the user identifier currently in use is the one associated with the delivering team.
@@ -117,4 +115,4 @@ Upon receiving [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](ht
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SigninwithApple/bringing-new-apps-and-users-into-your-team)*

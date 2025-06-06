@@ -1,6 +1,6 @@
 # UINavigationController
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A container view controller that defines a stack-based scheme for navigating hierarchical content.
@@ -52,8 +52,6 @@ A navigation controller is a container view controller — that is, it embeds th
 
 > **Note**:  Because the content view underlaps the navigation bar in iOS 7 and later, you must consider that space when designing your view controller content.
 
- Because the content view underlaps the navigation bar in iOS 7 and later, you must consider that space when designing your view controller content.
-
 The navigation controller manages the creation, configuration, and display of the navigation bar and optional navigation toolbar. It’s permissible to customize the navigation bar’s appearance-related properties but you must never change its [`frame`](uiview/frame.md), [`bounds`](uiview/bounds.md), or [`alpha`](uiview/alpha.md) values directly. If you subclass [`UINavigationBar`](uinavigationbar.md), you must initialize your navigation controller using the [`init(navigationBarClass:toolbarClass:)`](uinavigationcontroller/init(navigationbarclass:toolbarclass:).md) method. To hide or show the navigation bar, use the [`isNavigationBarHidden`](uinavigationcontroller/isnavigationbarhidden.md) property or [`setNavigationBarHidden(_:animated:)`](uinavigationcontroller/setnavigationbarhidden(_:animated:).md) method.
 
 A navigation controller builds the contents of the navigation bar dynamically using the navigation item objects (instances of the [`UINavigationItem`](uinavigationitem.md) class) associated with the view controllers on the navigation stack. To customize the overall appearance of a navigation bar, use [`UIAppearance`](uiappearance.md) APIs. To change the contents of the navigation bar, you must therefore configure the navigation items of your custom view controllers. For more information about navigation items, see [`UINavigationItem`](uinavigationitem.md).
@@ -75,8 +73,6 @@ For all but the root view controller on the navigation stack, the item on the le
 - If a custom bar button item isn’t specified by either of the view controllers, a default back button is used and its title is set to the value of the [`title`](uiviewcontroller/title.md) property of the previous view controller — that is, the view controller one level down on the stack. (If there’s only one view controller on the navigation stack, no back button is displayed.)
 
 > **Note**:  In cases where the title of a back button is too long to fit in the available space, the navigation bar may substitute the string “Back” for the actual button title. The navigation bar does this only if the back button is provided by the previous view controller. If the new top-level view controller has a custom left bar button item — an object in the [`leftBarButtonItem`](uinavigationitem/leftbarbuttonitem.md) or [`leftBarButtonItems`](uinavigationitem/leftbarbuttonitems.md) property of its navigation item—the navigation bar doesn’t change the button title.
-
- In cases where the title of a back button is too long to fit in the available space, the navigation bar may substitute the string “Back” for the actual button title. The navigation bar does this only if the back button is provided by the previous view controller. If the new top-level view controller has a custom left bar button item — an object in the [`leftBarButtonItem`](uinavigationitem/leftbarbuttonitem.md) or [`leftBarButtonItems`](uinavigationitem/leftbarbuttonitems.md) property of its navigation item—the navigation bar doesn’t change the button title.
 
 ###### The Middle Item
 
@@ -246,4 +242,4 @@ For more information about how state preservation and restoration works, see [`P
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uinavigationcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uinavigationcontroller)*

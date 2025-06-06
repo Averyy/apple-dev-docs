@@ -1,6 +1,6 @@
 # ForceEffectComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that defines the forces that affect an entity, including custom forces that you define.
@@ -23,8 +23,6 @@ struct ForceEffectComponent
 After you assign a `ForceEffectComponent` to an entity, the force effects in the component apply each physics update for as long as the component and force effects exist. Each [`ForceEffect`](forceeffect.md) updates sequentially while the physics system accumulates its forces. The center frame of each [`ForceEffect`](forceeffect.md) coincides with and moves alongside the entity’s position and orientation. To offset this center frame, set the position and orientation.
 
 > **Note**: You can set the [`simulationState`](forceeffectcomponent/simulationstate-swift.property.md) parameter to [`ForceEffectComponent.SimulationState.pause`](forceeffectcomponent/simulationstate-swift.enum/pause.md) if you want to apply forces later.
-
-You can set the [`simulationState`](forceeffectcomponent/simulationstate-swift.property.md) parameter to [`ForceEffectComponent.SimulationState.pause`](forceeffectcomponent/simulationstate-swift.enum/pause.md) if you want to apply forces later.
 
 ##### Create Forces
 
@@ -55,8 +53,6 @@ let thursterForceEffect = ForceEffect(effect: thrusterForce)
 ```
 
 > **Note**: To apply force to a physics body with a custom `ForceEffectProtocol`, you must implement and apply forces in [`update(parameters:)`](forceeffectprotocol/update(parameters:).md).
-
-To apply force to a physics body with a custom `ForceEffectProtocol`, you must implement and apply forces in [`update(parameters:)`](forceeffectprotocol/update(parameters:).md).
 
 ##### Apply Forces
 
@@ -98,4 +94,4 @@ entity.components.set(forceEffectComponent)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/forceeffectcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/forceeffectcomponent)*

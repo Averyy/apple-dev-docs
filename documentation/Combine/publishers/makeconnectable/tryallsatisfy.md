@@ -51,8 +51,6 @@ With operators similar to [`reduce(_:_:)`](publisher/reduce(_:_:).md), this publ
 
 > **Note**: Upon receiving any request greater than zero, this publisher requests unlimited elements from the upstream publisher.
 
-Upon receiving any request greater than zero, this publisher requests unlimited elements from the upstream publisher.
-
 ## Parameters
 
 - `predicate`: A closure that evaluates each received element. Return   to continue, or   to cancel the upstream and complete. The closure may throw an error, in which case the publisher cancels the upstream publisher and fails with the thrown error.

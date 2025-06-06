@@ -1,14 +1,12 @@
 # Creating and using tokens with Maps Server API
 
-**Framework**: Apple Maps Server API
+**Framework**: Applemapsserverapi
 
 Sign JSON Web Tokens to use Maps Server API and debug common signing errors.
 
 #### Overview
 
 > **Note**:  This article is about creating a Maps token for Maps Server API for public use. To create tokens for other services, or to experiment with Maps Server API, see [`Creating a Maps token`](https://developer.apple.com/documentation/MapKitJS/creating-a-maps-token).
-
- This article is about creating a Maps token for Maps Server API for public use. To create tokens for other services, or to experiment with Maps Server API, see [`Creating a Maps token`](https://developer.apple.com/documentation/MapKitJS/creating-a-maps-token).
 
 Maps Server API uses a Maps token to authenticate map initializations and other API requests, such as requests to retrieve directions or execute a search. To use a Maps token with Maps Server API you must have an Apple Developer account and obtain a Maps ID and a private key as described in [`Creating a Maps identifier and a private key`](creating-a-maps-identifier-and-a-private-key.md).
 
@@ -68,4 +66,4 @@ For next steps, go to [`Generate a Maps token`](-v1-token.md).
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applemapsserverapi/creating-and-using-tokens-with-maps-server-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleMapsServerAPI/creating-and-using-tokens-with-maps-server-api)*

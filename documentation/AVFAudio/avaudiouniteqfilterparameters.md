@@ -1,6 +1,6 @@
 # AVAudioUnitEQFilterParameters
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: class
 
 An object that encapsulates the parameters that the equalizer uses.
@@ -23,8 +23,6 @@ class AVAudioUnitEQFilterParameters
 #### Overview
 
 > **Note**:  Don’t create an instance of the `AVAudioUnitEQFilterParameters` class directly. Use the array that returns from the [`bands`](avaudiouniteq/bands.md) property of [`AVAudioUnitEQ`](avaudiouniteq.md).
-
- Don’t create an instance of the `AVAudioUnitEQFilterParameters` class directly. Use the array that returns from the [`bands`](avaudiouniteq/bands.md) property of [`AVAudioUnitEQ`](avaudiouniteq.md).
 
 ## Topics
 
@@ -65,4 +63,4 @@ class AVAudioUnitEQFilterParameters
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/avaudiouniteqfilterparameters)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/avaudiouniteqfilterparameters)*

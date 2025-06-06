@@ -1,6 +1,6 @@
 # Linking directly to assignments
 
-**Framework**: ClassKit
+**Framework**: Classkit
 
 Make it easy for teachers to guide students to specific content.
 
@@ -11,8 +11,6 @@ ClassKit lets you deep link to assignable content so that when a student taps an
 You can implement this kind of linking through URL requests or user activity. Your choice may depend on what your app already does.
 
 > **Note**:  If you change the structure of your context hierarchy in an app update, be sure to account for the old structure in your link handling so that legacy links continue to produce meaningful behavior.
-
- If you change the structure of your context hierarchy in an app update, be sure to account for the old structure in your link handling so that legacy links continue to produce meaningful behavior.
 
 ##### Reuse Existing Url Support
 
@@ -70,4 +68,4 @@ Supporting deep links this way is actually simpler than using custom URL request
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/linking-directly-to-assignments)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/linking-directly-to-assignments)*

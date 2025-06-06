@@ -1,6 +1,6 @@
 # EnvironmentLightingConfigurationComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that scales the amount of light that an entity receives from its environment.
@@ -31,8 +31,6 @@ spaceship.components.set(EnvironmentLightingConfigurationComponent(
 ```
 
 > **Note**: The weight value of the component also affects the lighting of the entity’s descendants.
-
-The weight value of the component also affects the lighting of the entity’s descendants.
 
 ## Topics
 
@@ -71,4 +69,4 @@ The weight value of the component also affects the lighting of the entity’s de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/environmentlightingconfigurationcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/environmentlightingconfigurationcomponent)*

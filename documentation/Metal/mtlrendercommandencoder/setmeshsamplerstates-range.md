@@ -25,8 +25,6 @@ By default, the sampler state at each index is `nil`.
 
 > **Note**:  The Objective-C version of this method is [`setMeshSamplerStates:withRange:`](mtlrendercommandencoder/setmeshsamplerstates:withrange:.md).
 
- The Objective-C version of this method is [`setMeshSamplerStates:withRange:`](mtlrendercommandencoder/setmeshsamplerstates:withrange:.md).
-
 ## Parameters
 
 - `samplers`: An array of   instances the command assigns to entries in the mesh shader argument table for sampler states.

@@ -1,6 +1,6 @@
 # animate(with:changes:completion:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Animates changes to one or more views using the specified SwiftUI animation.
@@ -63,8 +63,6 @@ case .ended:
 ```
 
 > **Note**:  Animating a [`UIView`](uiview.md) using a SwiftUI animation behaves differently from other [`UIView`](uiview.md) animations. Unlike other [`UIView`](uiview.md) animations, these animations run in-process and don’t have a backing [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation). However, presentation values from these animations still reflect in the presentation layer object ([`presentation()`](https://developer.apple.com/documentation/QuartzCore/CALayer/presentation())) of the view’s [`layer`](uiview/layer.md).
-
- Animating a [`UIView`](uiview.md) using a SwiftUI animation behaves differently from other [`UIView`](uiview.md) animations. Unlike other [`UIView`](uiview.md) animations, these animations run in-process and don’t have a backing [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation). However, presentation values from these animations still reflect in the presentation layer object ([`presentation()`](https://developer.apple.com/documentation/QuartzCore/CALayer/presentation())) of the view’s [`layer`](uiview/layer.md).
 
 For more information, read [`Unifying your app’s animations`](https://developer.apple.com/documentation/SwiftUI/Unifying-your-app-s-animations).
 

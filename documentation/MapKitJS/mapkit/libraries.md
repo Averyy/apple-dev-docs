@@ -1,6 +1,6 @@
 # Libraries
 
-**Framework**: MapKit JS  
+**Framework**: Mapkitjs  
 **Kind**: property
 
 The list of available libraries.
@@ -17,8 +17,6 @@ readonly attribute string[] Libraries;
 #### Discussion
 
 > **Note**:  The full bundle of MapKit JS doesn’t implement this property.
-
- The full bundle of MapKit JS doesn’t implement this property.
 
 ## See Also
 
@@ -40,4 +38,4 @@ readonly attribute string[] Libraries;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit/libraries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit/libraries)*

@@ -1,6 +1,6 @@
 # Handling Payment Requests with SiriKit
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Add an Intent Extension to your app to handle money transfer requests with Siri.
 
@@ -32,8 +32,6 @@ This sample app can be run in the iOS Simulator without any special setup, but i
 5. Reference the new App Group identifier in the source code. Open `PaymentProvider.swift` and modify the implementation of the `sharedUserDefaults` property to reference the new identifier.
 
 > **Note**: Each target in the project must preface its bundle identifier with the bundle identifier of the app’s main target. For example, if you set the bundle identifier for the `Payments` target to `com.example.Payments`, then you should set the bundle identifier for the `PaymentsIntentsExtension` target to `com.example.Payments.PaymentsIntentsExtension`.
-
-Each target in the project must preface its bundle identifier with the bundle identifier of the app’s main target. For example, if you set the bundle identifier for the `Payments` target to `com.example.Payments`, then you should set the bundle identifier for the `PaymentsIntentsExtension` target to `com.example.Payments.PaymentsIntentsExtension`.
 
 ##### Resolve Payment Parameters
 
@@ -222,4 +220,4 @@ func handle(intent: INSendPaymentIntent, completion: @escaping (INSendPaymentInt
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/handling-payment-requests-with-sirikit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/handling-payment-requests-with-sirikit)*

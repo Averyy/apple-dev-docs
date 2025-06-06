@@ -10,8 +10,6 @@ The WatchKit framework includes classes to control user interface elements that 
 
 > **Note**:  When you build the user interface for your watchOS app, you can design the interface in a storyboard and use WatchKit classes to connect to the interface elements, or you can use SwiftUI to declare the interface in code. Because apps built with SwiftUI have more freedom, power, and control over the user interface than apps designed in a storyboard, strongly consider using SwiftUI when creating your watchOS app. For more information, see `Building a watchOS App`.
 
- When you build the user interface for your watchOS app, you can design the interface in a storyboard and use WatchKit classes to connect to the interface elements, or you can use SwiftUI to declare the interface in code. Because apps built with SwiftUI have more freedom, power, and control over the user interface than apps designed in a storyboard, strongly consider using SwiftUI when creating your watchOS app. For more information, see `Building a watchOS App`.
-
 ## Topics
 
 ### User interface basics
@@ -125,4 +123,4 @@ The WatchKit framework includes classes to control user interface elements that 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/storyboard-support)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/storyboard-support)*

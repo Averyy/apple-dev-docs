@@ -1,6 +1,6 @@
 # IOSurfaceLock(_:_:_:)
 
-**Framework**: IOSurface  
+**Framework**: Iosurface  
 **Kind**: func
 
 “Lock” an IOSurface for reading or writing.
@@ -30,8 +30,6 @@ In the case of [`IOSurfaceUnlock(_:_:_:)`](iosurfaceunlock(_:_:_:).md), the seed
 See `IOSurface lock flags` for more information.
 
 > **Note**:  Locking and unlocking an IOSurface is not a particularly cheap operation, so care should be taken to avoid the calls whenever possible. The seed values are particularly useful for keeping a cache of the buffer contents.
-
- Locking and unlocking an IOSurface is not a particularly cheap operation, so care should be taken to avoid the calls whenever possible. The seed values are particularly useful for keeping a cache of the buffer contents.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # CFURLStartAccessingSecurityScopedResource(_:)
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: func
 
 In an app that has adopted App Sandbox, makes the resource pointed to by a security-scoped URL available to the app.
@@ -32,11 +32,7 @@ Calls to the [`CFURLStartAccessingSecurityScopedResource(_:)`](cfurlstartaccessi
 
 > ⚠️ **Warning**:  You must balance every call to the [`CFURLStartAccessingSecurityScopedResource(_:)`](cfurlstartaccessingsecurityscopedresource(_:).md) method with a corresponding call to the [`CFURLStopAccessingSecurityScopedResource(_:)`](cfurlstopaccessingsecurityscopedresource(_:).md) method. If you fail to relinquish your access when you no longer need a file-system resource, your app leaks kernel resources. If sufficient kernel resources are leaked, your app loses its ability to add file-system locations to its sandbox, such as via Powerbox or security-scoped bookmarks, until relaunched.
 
- You must balance every call to the [`CFURLStartAccessingSecurityScopedResource(_:)`](cfurlstartaccessingsecurityscopedresource(_:).md) method with a corresponding call to the [`CFURLStopAccessingSecurityScopedResource(_:)`](cfurlstopaccessingsecurityscopedresource(_:).md) method. If you fail to relinquish your access when you no longer need a file-system resource, your app leaks kernel resources. If sufficient kernel resources are leaked, your app loses its ability to add file-system locations to its sandbox, such as via Powerbox or security-scoped bookmarks, until relaunched.
-
 > **Note**:  Security-scoped bookmarks are not available in versions of macOS prior to OS X v10.7.3.
-
- Security-scoped bookmarks are not available in versions of macOS prior to OS X v10.7.3.
 
 ## Parameters
 

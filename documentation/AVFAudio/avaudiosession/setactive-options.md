@@ -1,6 +1,6 @@
 # setActive(_:options:)
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: method
 
 Activates or deactivates your app’s audio session using the specified options.
@@ -24,8 +24,6 @@ func setActive(_ active: Bool, options: AVAudioSession.SetActiveOptions = []) th
 Your app may activate a session with category [`playback`](avaudiosession/category-swift.struct/playback.md) when another app is hosting a call, for example to start a `SharePlay` activity. However, your app isn’t permitted to capture the microphone of the active call.
 
 > **Note**:  If you attempt to activate a session with category [`record`](avaudiosession/category-swift.struct/record.md) or [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) when another app is already hosting a call, then your session fails with the error [`AVAudioSessionErrorInsufficientPriority`](https://developer.apple.com/documentation/CoreAudioTypes/AVAudioSessionErrorInsufficientPriority).
-
- If you attempt to activate a session with category [`record`](avaudiosession/category-swift.struct/record.md) or [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) when another app is already hosting a call, then your session fails with the error [`AVAudioSessionErrorInsufficientPriority`](https://developer.apple.com/documentation/CoreAudioTypes/AVAudioSessionErrorInsufficientPriority).
 
 The session fails to activate if another audio session has higher priority than yours (such as a phone call) and neither audio session allows mixing. Deactivating an audio session with running audio objects stops the objects, makes the session inactive, and returns an [`AVAudioSessionErrorCodeIsBusy`](https://developer.apple.com/documentation/coreaudiotypes/avaudiosessionerrorcode/avaudiosessionerrorcodeisbusy) error.
 

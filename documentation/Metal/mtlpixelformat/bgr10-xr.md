@@ -29,13 +29,9 @@ Components are linearly encoded in a transform from `[0,2^10)` to [`-0.752941, 1
 
 > 💡 **Tip**:  Each UNorm8-based pixel value has an exact corresponding value in the XR10 pixel range, given by `xr10_value = unorm8_value * 2 + 384`.
 
- Each UNorm8-based pixel value has an exact corresponding value in the XR10 pixel range, given by `xr10_value = unorm8_value * 2 + 384`.
-
 To display wide color values on devices with wide color displays, set this pixel format on the [`colorPixelFormat`](https://developer.apple.com/documentation/MetalKit/MTKView/colorPixelFormat) property of an [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) or the [`pixelFormat`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/pixelFormat) property of a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer).
 
 > **Note**:  Only devices with a wide color display can display color values outside the `[0.0, 1.0]` range; all other devices clamp color values to the `[0.0, 1.0]` range.
-
- Only devices with a wide color display can display color values outside the `[0.0, 1.0]` range; all other devices clamp color values to the `[0.0, 1.0]` range.
 
 ## See Also
 

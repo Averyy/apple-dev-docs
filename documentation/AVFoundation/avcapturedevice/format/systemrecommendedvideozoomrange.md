@@ -1,6 +1,6 @@
 # systemRecommendedVideoZoomRange
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The system’s recommended zoom range for this device format.
@@ -26,8 +26,6 @@ Use this value to create a slider in your app’s user interface that controls a
 Apps can key-value observe a capture device’s [`minAvailableVideoZoomFactor`](avcapturedevice/minavailablevideozoomfactor.md) and [`maxAvailableVideoZoomFactor`](avcapturedevice/maxavailablevideozoomfactor.md) property values to know when a device limits its supported zoom to the recommended range.
 
 > **Note**:  The framework uses this value to define the range of an [`AVCaptureSystemZoomSlider`](avcapturesystemzoomslider.md) control.
-
- The framework uses this value to define the range of an [`AVCaptureSystemZoomSlider`](avcapturesystemzoomslider.md) control.
 
 ## See Also
 

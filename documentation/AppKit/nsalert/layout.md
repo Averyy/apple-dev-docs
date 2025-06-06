@@ -1,6 +1,6 @@
 # layout()
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Specifies that the alert must do immediate layout instead of lazily just before display.
@@ -20,8 +20,6 @@ func layout()
 You need to call this method only when you need to customize the alert’s layout. Call this method after all the alert’s attributes have been customized, including the suppression checkbox and the accessory layout. After the method returns, you can make the necessary layout changes; for example, adjusting the frame of the accessory view.
 
 > **Note**:  The standard alert layout is subject to change in future system software versions. Therefore, if you rely on custom alert layout, you should make sure your layouts work as expected in future releases of  macOS.
-
- The standard alert layout is subject to change in future system software versions. Therefore, if you rely on custom alert layout, you should make sure your layouts work as expected in future releases of  macOS.
 
 ## See Also
 

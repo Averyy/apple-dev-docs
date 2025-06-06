@@ -1,6 +1,6 @@
 # Rigging a Model for Motion Capture
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Configure custom 3D models so ARKit’s human body-tracking feature can control them.
 
@@ -18,8 +18,6 @@ The easiest way to configure your model for puppeteering is to rig it to the ske
 
 > **Note**:  If you already have a rigged humanoid model and prefer to modify your existing skeleton to match [`RealityKit`](https://developer.apple.com/documentation/RealityKit)‘s expected format instead of rebinding your model to the provided skeleton, you can find detailed information on the joint names and hierarchy required by ARKit’s motion capture functionality in [`Validating a Model for Motion Capture`](validating-a-model-for-motion-capture.md).
 
- If you already have a rigged humanoid model and prefer to modify your existing skeleton to match [`RealityKit`](https://developer.apple.com/documentation/RealityKit)‘s expected format instead of rebinding your model to the provided skeleton, you can find detailed information on the joint names and hierarchy required by ARKit’s motion capture functionality in [`Validating a Model for Motion Capture`](validating-a-model-for-motion-capture.md).
-
 ##### Import the Skeleton Into Your 3d Modeling Program
 
 In your 3D-modeling software package (such as Maya, Cinema4D, or Modo), import the provided skeleton and the custom mesh model that you want to use with ARKit’s Motion Capture functionality. You should model your mesh in a standard T-pose.
@@ -29,8 +27,6 @@ It’s very important that you configure your import settings so that they don�
 ![Illustration of two human-shaped robots, one facing forward in T-pose and the other in profile. For both images, the correct orientation is indicated with a right angle graph in which +Y represents up, +Z represents forward, and +X represents the character’s left.](https://docs-assets.developer.apple.com/published/a7a7f0c74c8b284ad33dbb3ccdbfb7a4/media-3588329%402x.png)
 
 > **Note**:  Some 3D software packages predefine which axis runs the length of the bone. You may not be able to export a compatible model from these programs without additional scripting or conversion work.
-
- Some 3D software packages predefine which axis runs the length of the bone. You may not be able to export a compatible model from these programs without additional scripting or conversion work.
 
 Once you’ve imported the robot character file, unbind and delete the robot mesh. You only need the skeleton from the imported file, since you’ll be binding your own mesh to it. Make sure you don’t change the joint names or relationships, and hang your custom geometry to the same node as the he skeleton and your custom geometry must be parented in separate hierarchies in order to export a valid USDZ for puppeteering. There should be no geometry descending from joints, and no joints descending from geometry.
 
@@ -43,8 +39,6 @@ Next, align your mesh to the imported skeleton, then scale, translate, and rotat
 Finish matching the mesh and armature by moving any joints of the armature that don’t line up correctly with the mesh, making sure that the X axis still points down the length of the bone after you’re done moving it. Many 3D software packages include tools to automatically re-orient joints based on the location of their children. If a re-orienting feature is available in your software package, use it when you’re done moving joints into new locations.
 
 > ❗ **Important**:  The Motion Capture feature doesn’t retarget motion before applying it to your model. If your custom character’s proportions differ substantially from the provided skeleton, the puppeteering functionality may not perform as expected unless you adjust for the differences in your own code.
-
- The Motion Capture feature doesn’t retarget motion before applying it to your model. If your custom character’s proportions differ substantially from the provided skeleton, the puppeteering functionality may not perform as expected unless you adjust for the differences in your own code.
 
 ##### Bind Your Mesh to the Imported Skeleton
 
@@ -70,4 +64,4 @@ For more information on loading and using the model once it’s in your Xcode pr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/rigging-a-model-for-motion-capture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/rigging-a-model-for-motion-capture)*

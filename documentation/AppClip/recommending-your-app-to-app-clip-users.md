@@ -1,6 +1,6 @@
 # Recommending your app to App Clip users
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Display an overlay in your App Clip to recommend your app to users.
 
@@ -9,8 +9,6 @@ Display an overlay in your App Clip to recommend your app to users.
 App Clips only remain on a device for a limited amount of time. If someone uses an App Clip regularly, they might want to get the corresponding app to use additional features and have the app on their home screen. With [`SKOverlay`](https://developer.apple.com/documentation/StoreKit/SKOverlay), you can recommend your full app to users and enable them to install it from within your App Clip.
 
 > **Note**:  Don’t require users to install your app to complete a task. For user experience and design guidance, see [`Human Interface Guidelines > App Clips`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/).
-
- Don’t require users to install your app to complete a task. For user experience and design guidance, see [`Human Interface Guidelines > App Clips`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/).
 
 If you’re using SwiftUI, make use of the [`appStoreOverlay(isPresented:configuration:)`](https://developer.apple.com/documentation/SwiftUI/View/appStoreOverlay(isPresented:configuration:)) modifier. For example usage, see [`Fruta: Building a Feature-Rich App with SwiftUI`](fruta_building_a_feature-rich_app_with_swiftui.md).
 
@@ -42,4 +40,4 @@ To respond to the overlay’s appearance, dismissal, or failure to load, set the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/recommending-your-app-to-app-clip-users)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/recommending-your-app-to-app-clip-users)*

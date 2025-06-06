@@ -30,8 +30,6 @@ The ordinality is in most cases not the same as the decomposed value of the comp
 
 > **Note**:  Some computations can take a relatively long time.
 
- Some computations can take a relatively long time.
-
 ## Parameters
 
 - `smaller`: The smaller calendar component.

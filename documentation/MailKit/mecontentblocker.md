@@ -1,6 +1,6 @@
 # MEContentBlocker
 
-**Framework**: MailKit  
+**Framework**: Mailkit  
 **Kind**: protocol
 
 An object that provides a set of rules to block content when displaying a message.
@@ -21,8 +21,6 @@ A mail content blocker is similar to content blockers for Safari. Mail uses cont
 For more information about content blockers, see [`Creating a content blocker`](https://developer.apple.com/documentation/SafariServices/creating-a-content-blocker).
 
 > **Note**:  MailKit always applies content-blocking rules for enabled extensions. This is true even if the user clicks the “Load remote content” button on the banner that Mail displays when remote content isn’t loaded.
-
- MailKit always applies content-blocking rules for enabled extensions. This is true even if the user clicks the “Load remote content” button on the banner that Mail displays when remote content isn’t loaded.
 
 To indicate that your extension contains a content blocker, add `MEContentBlocker` to the `MEExtensionCapabilities` array in the extension’s `Info.plist` file:
 
@@ -50,4 +48,4 @@ To indicate that your extension contains a content blocker, add `MEContentBlocke
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mailkit/mecontentblocker)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MailKit/mecontentblocker)*

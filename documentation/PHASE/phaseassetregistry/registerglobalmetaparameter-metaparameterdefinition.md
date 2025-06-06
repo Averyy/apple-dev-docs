@@ -1,6 +1,6 @@
 # registerGlobalMetaParameter(metaParameterDefinition:)
 
-**Framework**: PHASE  
+**Framework**: Phase  
 **Kind**: method
 
 Registers a global metaparameter with the asset registry.
@@ -28,8 +28,6 @@ A global metaparameter object. If an error occurs, the function returns `nil`.
 Global metaparameters attach to any number of sound event assets. When an app adjusts a global metaparameter at runtime, the change propagates immediately to all the attached sound events.
 
 > **Note**:  Although you register a global metaparameter definition ([`PHASEMetaParameterDefinition`](phasemetaparameterdefinition.md)) with this function, you receive a global metaparameter instance ([`PHASEMetaParameter`](phasemetaparameter.md)) when you access the parameter by its [`identifier`](phasemetaparameter/identifier.md) using the [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md) dictionary.
-
- Although you register a global metaparameter definition ([`PHASEMetaParameterDefinition`](phasemetaparameterdefinition.md)) with this function, you receive a global metaparameter instance ([`PHASEMetaParameter`](phasemetaparameter.md)) when you access the parameter by its [`identifier`](phasemetaparameter/identifier.md) using the [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md) dictionary.
 
 ## Parameters
 

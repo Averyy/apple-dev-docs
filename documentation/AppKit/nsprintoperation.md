@@ -1,6 +1,6 @@
 # NSPrintOperation
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An object that controls operations that generate Encapsulated PostScript (EPS) code, Portable Document Format (PDF) code, or print jobs.
@@ -22,8 +22,6 @@ An [`NSPrintOperation`](nsprintoperation.md) object works in conjunction with tw
 It is important to note that the majority of methods in [`NSPrintOperation`](nsprintoperation.md) copy the instance of [`NSPrintInfo`](nsprintinfo.md) passed into them. Future changes to that print info are not reflected in the print info retained by the current [`NSPrintOperation`](nsprintoperation.md) object. All changes should be made to the print info before passing to the methods of this class. The only method in [`NSPrintOperation`](nsprintoperation.md) which does not copy the [`NSPrintInfo`](nsprintinfo.md) instance is [`printInfo`](nsprintoperation/printinfo.md).
 
 > **Note**:  You should not subclass [`NSPrintOperation`](nsprintoperation.md). Methods that return a print operation object return an instance of a concrete subclass whose implementation is private.
-
- You should not subclass [`NSPrintOperation`](nsprintoperation.md). Methods that return a print operation object return an instance of a concrete subclass whose implementation is private.
 
 ## Topics
 
@@ -126,4 +124,4 @@ It is important to note that the majority of methods in [`NSPrintOperation`](nsp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsprintoperation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsprintoperation)*

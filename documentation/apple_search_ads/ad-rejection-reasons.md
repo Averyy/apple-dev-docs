@@ -1,6 +1,6 @@
 # Ad Rejection Reasons
 
-**Framework**: Apple Search Ads
+**Framework**: Apple_Search_Ads
 
 Review reasons for an ad rejection.
 
@@ -9,8 +9,6 @@ Review reasons for an ad rejection.
 Ads require approval by Apple. While in review, your [`Ad`](ad.md) is on hold. After approval, the [`AdServingStatus`](adservingstatus.md) changes to `RUNNING` unless you schedule it to start on a specific date or [`Update an Ad`](update-an-ad.md) status to `PAUSED` while in review.
 
 > **Note**:  In [`4.9`](apple-search-ads-campaign-management-api-4#49.md) release, all previously rejected Today tab ad creatives were `PAUSED` and resubmitted for re-review. You need to update the status to `ENABLED` after the re-review. See [`Update an Ad`](update-an-ad.md).
-
- In [`4.9`](apple-search-ads-campaign-management-api-4#49.md) release, all previously rejected Today tab ad creatives were `PAUSED` and resubmitted for re-review. You need to update the status to `ENABLED` after the re-review. See [`Update an Ad`](update-an-ad.md).
 
 Use [`Find Ad Creative Rejection Reasons`](find-ad-creative-rejection-reasons.md) or [`Get Ad Creative Rejection Reasons`](gets-a-product-page-reason.md) to look up rejection reasons. See [`ProductPageReason`](productpagereason.md) for rejection reason descriptions.
 

@@ -121,10 +121,10 @@ class TechnicalChunkingStrategy:
 ## Phase 3: Embedding Strategy (Week 3)
 
 ### Model Selection
-For technical documentation, recommend:
-- **Primary**: `voyage-code-2` (if available) or `voyage-3`
-- **Fallback**: `text-embedding-3-large`
-- **Why different**: Code syntax matters more than legal precedent
+For technical documentation, we're using:
+- **Current**: BGE-M3 via TEI server (local, free)
+- **Alternative**: `voyage-3-lite` ($0.89 for 278K docs)
+- **Why BGE-M3**: Top MTEB performer, 8K context, perfect for technical docs
 
 ### Context Enhancement
 ```python
@@ -256,15 +256,15 @@ def rerank_technical_results(results, query):
 ## Cost Estimates
 
 ### One-time Processing
-- Scraping: ~$0 (respectful rate limiting)
-- Context generation: ~$50-100 (100k pages with batch processing)
-- Embeddings: ~$10-20 (voyage-3 at $0.02 per 1M tokens)
-- **Total**: ~$60-120 initial setup
+- Scraping: $0 (respectful rate limiting)
+- Embeddings: $0 (local BGE-M3 via TEI)
+- Processing time: 3-4 hours for 278K docs
+- **Total**: $0 (just electricity)
 
 ### Ongoing Costs
-- Updates: ~$5-10/month
-- Query embeddings: ~$10-20/month
-- Hosting: Can run locally or ~$10/month VPS
+- Updates: $0 (local processing)
+- Query embeddings: $0 (local TEI server)
+- Hosting: $0 (runs on existing infrastructure)
 
 ## Critical Success Factors
 

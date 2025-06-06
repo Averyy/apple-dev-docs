@@ -47,8 +47,6 @@ If the user denies access, the completion handler receives a `false` parameter a
 
 > **Note**: If the user previously granted write-only access to the iOS companion app, calling [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507547-requestaccess) or [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507547-requestaccess) for events in the watchOS app doesn’t prompt the user for access. The access level of the watchOS app matches its companion app, which is write-only.
 
-If the user previously granted write-only access to the iOS companion app, calling [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507547-requestaccess) or [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507547-requestaccess) for events in the watchOS app doesn’t prompt the user for access. The access level of the watchOS app matches its companion app, which is write-only.
-
 #### Authorization Status
 
 An app with write-only or full access to calendar events will see its authorization status as [`authorized`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekauthorizationstatus/authorized). If the user previously granted calendar access (`authorized`) to your app, calling [`authorizationStatus(for:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507239-authorizationstatus) with an entity type [`event`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekentitytype/event) returns `authorized`.
@@ -62,8 +60,6 @@ The iOS, macOS, and watchOS SDKs bundled in Xcode 15 provide different levels of
 If the user previously granted calendar access to your app on an earlier OS, your app will have write-only access.
 
 > **Note**: Implement the new APIs if you want to distinguish between the `writeOnly` and `fullAccess` access levels in your app.
-
-Implement the new APIs if you want to distinguish between the `writeOnly` and `fullAccess` access levels in your app.
 
 #### Existing Apps with Write Only Calendar Access
 
@@ -79,8 +75,6 @@ An app with write-only access may later request full access. The first time your
 If the user denies access, these methods don’t return any results, and any further calls don’t prompt the user for access again. Your app still has write-only calendar access.
 
 > **Note**: If your app doesn’t call [`calendarItemWithIdentifier:`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507433-calendaritemwithidentifier), [`calendarItemsWithExternalIdentifier:`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507281-calendaritemswithexternalidentif), [`enumerateEvents(matching:using:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507518-enumerateevents), [`events(matching:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507183-events), or [`event(withIdentifier:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507490-event) to implicitly prompt the user for upgrade, the user would have to know to change the access level for the app in Settings > Privacy & Security > Calendars on their device.
-
-If your app doesn’t call [`calendarItemWithIdentifier:`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507433-calendaritemwithidentifier), [`calendarItemsWithExternalIdentifier:`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507281-calendaritemswithexternalidentif), [`enumerateEvents(matching:using:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507518-enumerateevents), [`events(matching:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507183-events), or [`event(withIdentifier:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/1507490-event) to implicitly prompt the user for upgrade, the user would have to know to change the access level for the app in Settings > Privacy & Security > Calendars on their device.
 
 #### Revision History
 
@@ -123,4 +117,4 @@ If your app doesn’t call [`calendarItemWithIdentifier:`](https://developer.app
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3153-adopting-api-changes-for-eventkit-in-ios-macos-and-watchos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3153-adopting-api-changes-for-eventkit-in-ios-macos-and-watchos)*

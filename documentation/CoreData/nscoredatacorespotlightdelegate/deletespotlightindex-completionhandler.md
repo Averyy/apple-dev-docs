@@ -1,6 +1,6 @@
 # deleteSpotlightIndex(completionHandler:)
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: method
 
 Deletes all searchable items from the configured index.
@@ -25,8 +25,6 @@ The closure returns no value and takes only a single parameter, which is an erro
 Depending on the cause of the issue, an error can originate from Core Data or from Core Spotlight. Make sure your app can handle both scenarios.
 
 > **Note**:  You must call [`stopSpotlightIndexing()`](nscoredatacorespotlightdelegate/stopspotlightindexing().md) before you call this method; otherwise, Core Data immediately recreates the index.
-
- You must call [`stopSpotlightIndexing()`](nscoredatacorespotlightdelegate/stopspotlightindexing().md) before you call this method; otherwise, Core Data immediately recreates the index.
 
 ## See Also
 

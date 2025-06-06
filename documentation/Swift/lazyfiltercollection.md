@@ -24,8 +24,6 @@ typealias LazyFilterCollection<T> = LazyFilterSequence<T> where T : Collection
 
 > **Note**: The performance of accessing `startIndex`, `first`, any methods that depend on `startIndex`, or of advancing an index depends on how sparsely the filtering predicate is satisfied, and may not offer the usual performance given by `Collection`. Be aware, therefore, that general operations on `LazyFilterCollection` instances may not have the documented complexity.
 
-The performance of accessing `startIndex`, `first`, any methods that depend on `startIndex`, or of advancing an index depends on how sparsely the filtering predicate is satisfied, and may not offer the usual performance given by `Collection`. Be aware, therefore, that general operations on `LazyFilterCollection` instances may not have the documented complexity.
-
 ## See Also
 
 - [struct LazySequence](lazysequence.md)
@@ -50,4 +48,4 @@ The performance of accessing `startIndex`, `first`, any methods that depend on `
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/lazyfiltercollection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/lazyfiltercollection)*

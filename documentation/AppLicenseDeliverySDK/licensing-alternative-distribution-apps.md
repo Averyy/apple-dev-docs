@@ -1,6 +1,6 @@
 # Licensing alternative distribution apps
 
-**Framework**: App License Delivery SDK
+**Framework**: Applicensedeliverysdk
 
 Build a license server that supports the installation of your apps and the apps available in your marketplace.
 
@@ -13,8 +13,6 @@ Before continuing, ensure you complete the steps in either [`Creating an alterna
 The [`MarketplaceKit`](https://developer.apple.com/documentation/MarketplaceKit) installation methods trigger the device’s operating system to request a license from your web server before installing a particular app. To support installation of your app or the apps on your marketplace, implement a license server to process the requests. Your license server consists of two endpoints that use this SDK: one that creates licenses for new installations and another that updates the licenses of existing installations.
 
 > ❗ **Important**: Prepare your App License Delivery (ALD) encryption assets and development environment for use with the licensing workflow. For more information, see [`Configuring your app licensing environment`](configuring-the-app-licensing-environment.md).
-
-Prepare your App License Delivery (ALD) encryption assets and development environment for use with the licensing workflow. For more information, see [`Configuring your app licensing environment`](configuring-the-app-licensing-environment.md).
 
 #### Publish Your Licensing Endpoint Details
 
@@ -53,8 +51,6 @@ The system requires that the “`license`” key specifies the following propert
 | `encryptionCertificateURL` | A certificate that the system uses to encrypt license requests. |
 
 > **Note**: The “`restore`” and “`updates`” keys configuration require you to set a value. For more information, see [`Installing your app from your website`](https://developer.apple.com/documentation/appdistribution/installing-your-app-from-your-website) for alternative marketplace apps, and [`Installing apps from an alternative marketplace`](https://developer.apple.com/documentation/appdistribution/installing-apps-from-an-alternative-marketplace) for other apps.
-
-The “`restore`” and “`updates`” keys configuration require you to set a value. For more information, see [`Installing your app from your website`](https://developer.apple.com/documentation/appdistribution/installing-your-app-from-your-website) for alternative marketplace apps, and [`Installing apps from an alternative marketplace`](https://developer.apple.com/documentation/appdistribution/installing-apps-from-an-alternative-marketplace) for other apps.
 
 Host the file using the `https://` URL scheme with a valid certificate, and don’t use redirects. This configuration publication follows the same pattern as the `apple-app-site-association` file. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
 
@@ -271,8 +267,6 @@ If the system requests a license for multiple apps in its POST, repeat this proc
 
 > ❗ **Important**: In iOS 17.4, set a value less than `Int64.max`; see [`iOS & iPadOS 17.4 Release Notes`](https://developer.apple.com/documentation/iOS-iPadOS-Release-Notes/ios-ipados-17_4-release-notes).
 
-In iOS 17.4, set a value less than `Int64.max`; see [`iOS & iPadOS 17.4 Release Notes`](https://developer.apple.com/documentation/iOS-iPadOS-Release-Notes/ios-ipados-17_4-release-notes).
-
 #### Respond with the Generated Licenses
 
 The framework assists you with preparing a response to the original POST. Call [`generateLicenseResponse()`](aldsession/generatelicenseresponse().md) begin the response:
@@ -318,8 +312,6 @@ The format of the license response payload is:
 
 > ❗ **Important**: To complete an installation, the system requires a response from your server within 60 seconds of making the request. If you use a web debugging proxy tool to test license generation, make sure it doesn’t interfere with your server’s ability to respond promptly.
 
-To complete an installation, the system requires a response from your server within 60 seconds of making the request. If you use a web debugging proxy tool to test license generation, make sure it doesn’t interfere with your server’s ability to respond promptly.
-
 When the system receives the `license` response, it validates the licenses contained within according to the signing and encryption certificates in your JSON configuration file (specifically, `signingCertificateURL` and `encryptionCertificateURL`).
 
 Then, the system downloads the licensed app(s) from your app web server. For more information about serving app downloads, see:
@@ -351,4 +343,4 @@ You can determine the number of active installs of a particular app for an accou
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applicensedeliverysdk/licensing-alternative-distribution-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppLicenseDeliverySDK/licensing-alternative-distribution-apps)*

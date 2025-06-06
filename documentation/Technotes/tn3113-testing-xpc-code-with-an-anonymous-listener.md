@@ -10,8 +10,6 @@ Testing and debugging XPC code is tricky because there are two processes involve
 
 > ❗ **Important**: This technique does not help with all XPC testing and debugging scenarios.  For example, if you’re developing a `launchd` daemon that performs privileged operations on behalf of your app, you can’t use this technique to debug your privileged code because it’s not running in a privileged process.  However, even in situations like that, this technique is useful when debugging your XPC-specific code.  For example, you might use it to create a unit test for your [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) implementation.
 
-This technique does not help with all XPC testing and debugging scenarios.  For example, if you’re developing a `launchd` daemon that performs privileged operations on behalf of your app, you can’t use this technique to debug your privileged code because it’s not running in a privileged process.  However, even in situations like that, this technique is useful when debugging your XPC-specific code.  For example, you might use it to create a unit test for your [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) implementation.
-
 This technique involves two key concepts:
 
 - Put your XPC listener and XPC client code in the same test program.  The specifics of this program are up to you: It might be a simple test app that you create specifically for this purpose, or it might be an Xcode unit test bundle, or it might be some other kind of program.
@@ -33,8 +31,6 @@ class MyListener {
 ```
 
 > **Note**: While this example uses the Foundation [`XPC`](https://developer.apple.com/documentation/Foundation/xpc) API, the same technique works for the low-level C [`XPC`](https://developer.apple.com/documentation/XPC) API.
-
-While this example uses the Foundation [`XPC`](https://developer.apple.com/documentation/Foundation/xpc) API, the same technique works for the low-level C [`XPC`](https://developer.apple.com/documentation/XPC) API.
 
 Change its initialiser to look like this:
 
@@ -126,4 +122,4 @@ You now have an XPC connection between your client code and your listener, with 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3113-testing-xpc-code-with-an-anonymous-listener)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3113-testing-xpc-code-with-an-anonymous-listener)*

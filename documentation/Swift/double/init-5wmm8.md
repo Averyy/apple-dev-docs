@@ -88,8 +88,6 @@ A decimal or hexadecimal string is converted to a `Double` instance using the IE
 
 > **Note**: Prior to Swift 5.4, a decimal or hexadecimal input string whose value was too large to represent as a finite `Double` instance returned `nil` instead of `Double.infinity`.
 
-Prior to Swift 5.4, a decimal or hexadecimal input string whose value was too large to represent as a finite `Double` instance returned `nil` instead of `Double.infinity`.
-
 ## Parameters
 
 - `text`: An input string to convert to a   instance.

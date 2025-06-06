@@ -28,8 +28,6 @@ You can monitor one or more drawing commands with a visibility test by calling t
 
 > **Note**:  You can set a specific `offset` value only once per render pass. This means you need to encode all drawing commands for an offset at one time.
 
- You can set a specific `offset` value only once per render pass. This means you need to encode all drawing commands for an offset at one time.
-
 The default mode for a render pass is [`MTLVisibilityResultMode.disabled`](mtlvisibilityresultmode/disabled.md).
 
 ## Parameters

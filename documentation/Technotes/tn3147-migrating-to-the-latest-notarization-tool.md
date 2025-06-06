@@ -10,8 +10,6 @@ At [`WWDC 2021`](https://developer.apple.comhttps://developer.apple.com/videos/p
 
 > ❗ **Important**: Apple has deprecated `altool` for the purposes of notarization and [`announced that it will stop working for notarization on 2023-11-01`](https://developer.apple.comhttps://developer.apple.com/news/?id=y5mjxqmn).  However, `altool` is still a good way to perform other tasks, like submitting an app to the App Store.
 
-Apple has deprecated `altool` for the purposes of notarization and [`announced that it will stop working for notarization on 2023-11-01`](https://developer.apple.comhttps://developer.apple.com/news/?id=y5mjxqmn).  However, `altool` is still a good way to perform other tasks, like submitting an app to the App Store.
-
 To migrate your workflows to `notarytool`:
 
 1. Get the new tool.
@@ -70,8 +68,6 @@ If you’re currently authenticating with an app-specific password, your `altool
 
 > **Note**: All the examples here use long-format options, so `--username` rather than `-u`.  If you’re currently using short-format options, run `altool` with the `--help` option to see the mapping.
 
-All the examples here use long-format options, so `--username` rather than `-u`.  If you’re currently using short-format options, run `altool` with the `--help` option to see the mapping.
-
 In this command:
 
 - `APPLE_ID` is your Apple ID.
@@ -92,8 +88,6 @@ You can use the same app-specific password for both `altool` and `notarytool`.  
 
 > **Note**: If you use the `@keychain` prefix to tell `altool` to get the password from a keychain item, see [`Save credentials in the keychain`](tn3147-migrating-to-the-latest-notarization-tool#Save-credentials-in-the-keychain.md).
 
-If you use the `@keychain` prefix to tell `altool` to get the password from a keychain item, see [`Save credentials in the keychain`](tn3147-migrating-to-the-latest-notarization-tool#Save-credentials-in-the-keychain.md).
-
 ##### App Store Connect Api Key
 
 If you’re currently authenticating with an App Store Connect API key, your `altool` commands might start like this:
@@ -111,8 +105,6 @@ In this command:
 `altool` uses the key ID to search for the key’s `.p8` file.  For example, it might find a key file at `~/.appstoreconnect/private_keys/AuthKey_T9GPZ92M7K.p8`.
 
 > **Note**: For details on the search path used by `altool`, see its man page.  If you’re unfamiliar with man pages, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
-
-For details on the search path used by `altool`, see its man page.  If you’re unfamiliar with man pages, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
 
 The equivalent for `notarytool` is:
 
@@ -143,8 +135,6 @@ To test out your `notarytool` credentials, pass them to the `history` subcommand
 Replace `NEW_CREDENTIALS` with the new credentials you worked out in the previous section.
 
 > **Note**: Each tool maintains its own separate history.  If this is the first time you’ve used `notarytool`, your history will be empty.
-
-Each tool maintains its own separate history.  If this is the first time you’ve used `notarytool`, your history will be empty.
 
 #### Convert Your Notarization Operations
 
@@ -177,8 +167,6 @@ Here `PATH_TO_FILE` is as above.  Replace `NEW_CREDENTIALS` with the credentials
 
 > **Note**: There’s no replacement for the `--primary-bundle-id` option.  The notary service never interpreted that value; it was effectively a comment.
 
-There’s no replacement for the `--primary-bundle-id` option.  The notary service never interpreted that value; it was effectively a comment.
-
 For a nice bonus, consider adding the `--wait` option.  With that, `notarytool` won’t return until the notarization is complete and, when it does return, it will output the submission’s status.  If you were previously polling the status to check for completion, add the `--wait` option and remove that logic.
 
 ##### Check Status
@@ -201,8 +189,6 @@ Here `SUBMISSION_ID` is as above.  Replace `NEW_CREDENTIALS` with the credential
 
 > ❗ **Important**: If you currently poll the status to check whether a submission is complete, adopt the `--wait` option, as discussed in the previous section.  Once you do that, you may not need to use the `info` command at all.
 
-If you currently poll the status to check whether a submission is complete, adopt the `--wait` option, as discussed in the previous section.  Once you do that, you may not need to use the `info` command at all.
-
 The submissions IDs returned by `notarytool` live in a different namespace than those returned by `altool`.  You can’t check on the status of an `altool` submission with `notarytool`, or vice versa.
 
 ##### Fetch the Notary Log
@@ -210,8 +196,6 @@ The submissions IDs returned by `notarytool` live in a different namespace than 
 After processing your submission the notary service generates a log.  This JSON file holds information about your submission, including errors and warnings.
 
 > ❗ **Important**: Always check the notary log, even if notarization succeeds, because it might contain warnings that you can fix prior to your next submission.
-
-Always check the notary log, even if notarization succeeds, because it might contain warnings that you can fix prior to your next submission.
 
 Fetching the notary log with `altool` is a little convoluted.  You first get the status of the request.  If the request is finished, that status includes a `LogFileURL` property.  To get the log, fetch that URL with your preferred HTTP tool, for example, Safari or `curl`.
 
@@ -305,8 +289,6 @@ To use these credentials in subsequent commands, supply the profile name using t
 
 > **Note**: Unless you specify a file-based keychain with the `--keychain` option, `notarytool` uses the data protection keychain.  To see stored credentials in that case, run Keychain Access, select iCloud Keychain on the left—or Local Items, if iCloud Keychain is not enabled—and look for items named `com.apple.gke.notary.tool`.  If you’re unfamiliar with the terms  and , see [`TN3137: On Mac keychain APIs and implementations`](tn3137-on-mac-keychains.md).
 
-Unless you specify a file-based keychain with the `--keychain` option, `notarytool` uses the data protection keychain.  To see stored credentials in that case, run Keychain Access, select iCloud Keychain on the left—or Local Items, if iCloud Keychain is not enabled—and look for items named `com.apple.gke.notary.tool`.  If you’re unfamiliar with the terms  and , see [`TN3137: On Mac keychain APIs and implementations`](tn3137-on-mac-keychains.md).
-
 While the example above assumes you’re authenticating with an app-specific password, this technique also works with an App Store Connect API key.  See the `notarytool` help for the details.
 
 ##### Notarizing on a Limited System
@@ -331,8 +313,6 @@ On some systems even the Command Line Tools package is too big.  In that case, i
 The first version of Xcode to include `notarytool` is Xcode 13.  It requires macOS 11.3.  It is, however, possible to notarize on earlier systems, all the way back to macOS 10.15.  To do this, copy `notarytool` from a system with Xcode or the Command Line Tools package installed, as described in the previous section.
 
 > ❗ **Important**: Apple engineered `notarytool` to work back to macOS 10.15 regardless of the minimum system version of the product in which it’s contained.  This is a special case and does not apply to any other component within Xcode.
-
-Apple engineered `notarytool` to work back to macOS 10.15 regardless of the minimum system version of the product in which it’s contained.  This is a special case and does not apply to any other component within Xcode.
 
 ##### Learn About Completed Submissions
 
@@ -384,4 +364,4 @@ If you notarize using `altool`, the notary service sends you an email when it’
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3147-migrating-to-the-latest-notarization-tool)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3147-migrating-to-the-latest-notarization-tool)*

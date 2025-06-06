@@ -1,6 +1,6 @@
 # Apple Pencil interactions
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Handle user interactions like double tap and squeeze on Apple Pencil.
 
@@ -15,8 +15,6 @@ Apple Pencil interactions let a person perform certain actions in your app by do
 - To learn more about incorporating hand-drawn content in your app, see [`Drawing with PencilKit`](https://developer.apple.com/documentation/PencilKit/drawing-with-pencilkit).
 
 > **Note**:  Only Apple Pencil Pro supports squeeze interactions. The first-generation Apple Pencil doesn’t support Apple Pencil interactions.
-
- Only Apple Pencil Pro supports squeeze interactions. The first-generation Apple Pencil doesn’t support Apple Pencil interactions.
 
 ## Topics
 
@@ -76,4 +74,4 @@ Apple Pencil interactions let a person perform certain actions in your app by do
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/apple-pencil-interactions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/apple-pencil-interactions)*

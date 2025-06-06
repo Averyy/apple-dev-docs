@@ -1,6 +1,6 @@
 # Supporting Coordinated Media Playback
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Create synchronized media experiences that enable users to watch and listen across devices.
 
@@ -59,8 +59,6 @@ struct MovieWatchingActivity: GroupActivity {
 ```
 
 > **Note**: `GroupActivity` extends [`Codable`](https://developer.apple.com/documentation/Swift/Codable), so any data that an activity stores must also conform to `Codable`.
-
-`GroupActivity` extends [`Codable`](https://developer.apple.com/documentation/Swift/Codable), so any data that an activity stores must also conform to `Codable`.
 
 ##### Share an Activity
 
@@ -203,4 +201,4 @@ After the local device catches up with group playback, the sample ends the suspe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/supporting-coordinated-media-playback)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback)*

@@ -50,8 +50,6 @@ In the following example, [`makeConnectable()`](published/publisher/makeconnecta
 
 > **Note**: The [`connect()`](connectablepublisher/connect().md) operator returns a [`Cancellable`](cancellable.md) instance that you must retain. You can also use this instance to cancel publishing.
 
-The [`connect()`](connectablepublisher/connect().md) operator returns a [`Cancellable`](cancellable.md) instance that you must retain. You can also use this instance to cancel publishing.
-
 
 ---
 

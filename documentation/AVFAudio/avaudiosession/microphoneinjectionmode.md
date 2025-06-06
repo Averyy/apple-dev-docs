@@ -1,6 +1,6 @@
 # AVAudioSession.MicrophoneInjectionMode
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: enum
 
 The modes of injecting audio into another app’s input stream.
@@ -24,8 +24,6 @@ enum MicrophoneInjectionMode
 Apps can state their intent to mix synthesized speech into another app’s input stream. Accessibility apps can use this feature to implement augmentative and alternative communication systems that enable people with disabilities to communicate using synthesized speech.
 
 > **Note**: When a person mutes audio input, the system also mutes microphone injection.
-
-When a person mutes audio input, the system also mutes microphone injection.
 
 ## Topics
 

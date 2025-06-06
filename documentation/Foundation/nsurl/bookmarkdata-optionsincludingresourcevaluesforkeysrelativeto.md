@@ -30,8 +30,6 @@ This method returns bookmark data that can later be resolved into a URL object f
 
 > **Note**:  If the specified URL is not a file URL, this method returns a bookmark containing only the URL, and the `options` and `keys` parameters are ignored.
 
- If the specified URL is not a file URL, this method returns a bookmark containing only the URL, and the `options` and `keys` parameters are ignored.
-
 You can also use this method to create a security-scoped bookmark to support App Sandbox. Before you do so, you must first enable the appropriate entitlements for your app, as described in [`Enabling Security-Scoped Bookmark and URL Access`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW18). In addition, be sure to understand the behavior of the `options` and `relativeURL` parameters.
 
 For an app-scoped bookmark, no sandboxed app other than the one that created the bookmark can obtain access to the file-system resource that the URL (obtained from the bookmark) points to. Specifically, a bookmark created with security scope fails to resolve if the caller does not have the same code signing identity as the caller that created the bookmark.
@@ -40,13 +38,7 @@ For a document-scoped bookmark, any sandboxed app that has access to the bookmar
 
 > **Note**:  Security-scoped bookmarks are not available in versions of macOS prior to OS X v10.7.3.
 
- Security-scoped bookmarks are not available in versions of macOS prior to OS X v10.7.3.
-
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

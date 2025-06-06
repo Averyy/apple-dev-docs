@@ -1,6 +1,6 @@
 # scopeBarActivation
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A mode that determines when the search controller shows and hides the scope bar.
@@ -21,8 +21,6 @@ var scopeBarActivation: UISearchController.ScopeBarActivation { get set }
 #### Discussion
 
 > **Note**:  [`UISearchBar`](uisearchbar.md) doesn’t show the scope bar if [`scopeButtonTitles`](uisearchbar/scopebuttontitles.md) contains fewer than two titles.
-
- [`UISearchBar`](uisearchbar.md) doesn’t show the scope bar if [`scopeButtonTitles`](uisearchbar/scopebuttontitles.md) contains fewer than two titles.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Simulating physics with collisions in your visionOS app
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Create entities that behave and react like physical objects in a RealityKit view.
 
@@ -109,8 +109,6 @@ The app configures each material so that is has a shiny, metallic look. It sets:
 Customizing the attributes of materials, including color, roughness, and reflectiveness, adds a realistic appearance to the items in your scene.
 
 > **Note**: Change the visual appearance of the spheres by altering the material, or by applying the plastic, wood, rubber, or glass materials with a [`ShaderGraphMaterial`](shadergraphmaterial.md) and a [`Environment Radiance (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/realitykit/Environment-Radiance-(RealityKit)) node.
-
-Change the visual appearance of the spheres by altering the material, or by applying the plastic, wood, rubber, or glass materials with a [`ShaderGraphMaterial`](shadergraphmaterial.md) and a [`Environment Radiance (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/realitykit/Environment-Radiance-(RealityKit)) node.
 
 To make the spheres interact with the physics system, the app adds a [`CollisionComponent`](collisioncomponent.md) and  a [`PhysicsBodyComponent`](physicsbodycomponent.md) to each sphere’s entity.
 
@@ -308,8 +306,6 @@ The method configures each face to physically interact with the spheres in the s
 
 > 💡 **Tip**: For easier debugging, you can view every entity’s collision shape. Select the Collision Shapes & Axes checkbox from the Debug Visualizations menu that appears in the debug bar at the bottom of the main pane in Xcode after you build the app.
 
-For easier debugging, you can view every entity’s collision shape. Select the Collision Shapes & Axes checkbox from the Debug Visualizations menu that appears in the debug bar at the bottom of the main pane in Xcode after you build the app.
-
 ![A screenshot of Xcode's debugging bar showing a toggle to enable Collision Shapes and Axes.](https://docs-assets.developer.apple.com/published/e5c197397c446f5316625af5f13be3e1/PhysicsBodies-sample-article-3.png)
 
 ##### Add Human Interaction By Including a Gesture
@@ -375,8 +371,6 @@ This gesture effectively applies the equivalent of an infinite force, which can 
 
 > **Note**: Replace the call to `ForceDragGesture()`in the app’s main view with `RelocateDragGesture()` and compare the behavioral differences.
 
-Replace the call to `ForceDragGesture()`in the app’s main view with `RelocateDragGesture()` and compare the behavioral differences.
-
 ## See Also
 
 - [Configuring Collision in RealityKit](configuring-collision-in-realitykit.md)
@@ -398,4 +392,4 @@ Replace the call to `ForceDragGesture()`in the app’s main view with `RelocateD
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/simulating-physics-with-collisions-in-your-visionos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/simulating-physics-with-collisions-in-your-visionos-app)*

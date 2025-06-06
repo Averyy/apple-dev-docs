@@ -1,6 +1,6 @@
 # replaceAsync(withImage:options:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Asynchronously replaces the texture with a Core Graphics image.
@@ -24,8 +24,6 @@ Asynchronously replaces the texture with a Core Graphics image.
 Don’t use this method for updates at frame-rate frequency. For frequent texture changes, see [`replace(withDrawables:)`](textureresource/replace(withdrawables:).md). To ensure consistent usage of this texture resource, pass the same semantic in `options` that you use to create the resource.
 
 > **Note**: The contents of a modified texture resource don’t sync between network clients.
-
-The contents of a modified texture resource don’t sync between network clients.
 
 ## Parameters
 

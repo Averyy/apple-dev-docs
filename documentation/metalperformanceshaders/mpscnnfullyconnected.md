@@ -1,6 +1,6 @@
 # MPSCNNFullyConnected
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A fully connected convolution layer, also known as an inner product layer.
@@ -37,18 +37,6 @@ You can think of a fully connected layer as a matrix multiplication where the im
 The value of the `strideInPixelsX`, [`strideInPixelsY`](mpscnnconvolutiondescriptor/1648847-strideinpixelsy.md), and [`groups`](mpscnnconvolution/1845269-groups.md) properties must be `1`. The [`offset`](mpscnnkernel/1648835-offset.md) property is not applicable and it is ignored. Because the clip rectangle is clamped to the destination image bounds, if the destination is `1 x 1`, you do not need to set the [`clipRect`](mpscnnkernel/1648911-cliprect.md) property.
 
 > **Note**: You can implement a fully connected convolution layer using an [`MPSCNNConvolution`](mpscnnconvolution.md) object by setting the following property values: `offset = (kernelWidth/2,kernelHeight/2)` `clipRect.origin = (ox,oy)` `clipRect.size = (1,1)` `strideInPixelsX = strideInPixelsY = groups = 1` However, using an [`MPSCNNFullyConnected`](mpscnnfullyconnected.md) object directly is better for performance as it lets the Metal Performance Shaders framework choose the most performant implementation method, which may not be possible when you use a general convolution. For example, the framework may internally use matrix multiplication or special reduction kernels for a specific Metal feature set.
-
-You can implement a fully connected convolution layer using an [`MPSCNNConvolution`](mpscnnconvolution.md) object by setting the following property values:
-
-`offset = (kernelWidth/2,kernelHeight/2)`
-
-`clipRect.origin = (ox,oy)`
-
-`clipRect.size = (1,1)`
-
-`strideInPixelsX = strideInPixelsY = groups = 1`
-
-However, using an [`MPSCNNFullyConnected`](mpscnnfullyconnected.md) object directly is better for performance as it lets the Metal Performance Shaders framework choose the most performant implementation method, which may not be possible when you use a general convolution. For example, the framework may internally use matrix multiplication or special reduction kernels for a specific Metal feature set.
 
 ## Topics
 

@@ -19,8 +19,6 @@ func fill(using operation: NSCompositingOperation = NSGraphicsContext.current?.c
 
 > **Note**: There must be a set current NSGraphicsContext.
 
-There must be a set current NSGraphicsContext.
-
 
 ---
 

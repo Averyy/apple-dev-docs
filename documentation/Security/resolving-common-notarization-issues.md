@@ -10,8 +10,6 @@ If the Apple notary service encounters any problems while notarizing your app, i
 
 > **Note**:  Xcode automatically resolves many issues when you use the standard app distribution UI. For information about how to use this UI, see [`Notarize your app automatically as part of the distribution process`](notarizing-macos-software-before-distribution#Notarize-your-app-automatically-as-part-of-the-distribution-process.md).
 
- Xcode automatically resolves many issues when you use the standard app distribution UI. For information about how to use this UI, see [`Notarize your app automatically as part of the distribution process`](notarizing-macos-software-before-distribution#Notarize-your-app-automatically-as-part-of-the-distribution-process.md).
-
 ##### Ensure a Valid Code Signature
 
 Before you can notarize an app, you must first code sign it. If you don’t, or if you make a modification to the bundle after signing, notarization fails with the following message:
@@ -37,8 +35,6 @@ To debug signing issues with installer packages, use the `pkgutil` utility inste
 The utility’s output includes the strings “Signed with a trusted timestamp” and “1. Developer ID Installer:” for a properly signed installer. If the signature test fails, make sure you’re using a Developer ID Installer certificate, and that you use either the `pkgutil` or `productbuild` utility during package creation, or the `productsign` command to sign an existing installer. All of these command line utilities take the `sign` option, which includes a secure timestamp by default. See the man pages of the various utilities for more information about using each.
 
 > ❗ **Important**:  Apple no longer maintains the PackageMaker tool, which doesn’t support code signing. Migrate to `pkgbuild` or `productbuild`, which incorporate most of the command line options that PackageMaker supported, or use a third-party utility that wraps `pkgbuild` or `productbuild` and supports signing.
-
- Apple no longer maintains the PackageMaker tool, which doesn’t support code signing. Migrate to `pkgbuild` or `productbuild`, which incorporate most of the command line options that PackageMaker supported, or use a third-party utility that wraps `pkgbuild` or `productbuild` and supports signing.
 
 ##### Use a Valid Developer Id Certificate
 
@@ -101,8 +97,6 @@ The executable requests the com.apple.security.get-task-allow entitlement.
 To avoid receiving this error message, archive (as of Xcode 10.2) or export your app directly from Xcode, or set the `CODE_SIGN_INJECT_BASE_ENTITLEMENTS` build setting to `NO` before building your app for distribution. But only change the build setting when you’re done debugging and ready to distribute, because doing so makes it impossible to debug the binary on a system that uses System Integrity Protection.
 
 > **Note**:  To enable debugging a plug-in in the context of a host executable, the host can include the `com.apple.security.get-task-allow` entitlement if it also includes the [`Disable Library Validation Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-library-validation). Don’t disable library validation for executables that don’t host plug-ins because library validation protects them from loading untrusted code.
-
- To enable debugging a plug-in in the context of a host executable, the host can include the `com.apple.security.get-task-allow` entitlement if it also includes the [`Disable Library Validation Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-library-validation). Don’t disable library validation for executables that don’t host plug-ins because library validation protects them from loading untrusted code.
 
 ##### Use the Macos 109 Sdk or Later
 
@@ -190,4 +184,4 @@ After you enable Skip Install on all dependencies, you can use the Xcode notariz
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/resolving-common-notarization-issues)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues)*

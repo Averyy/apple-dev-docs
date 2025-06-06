@@ -29,8 +29,6 @@ For an explanation of how `useProtocolCachePolicy` is implemented for HTTP and H
 
 > **Note**:  `useProtocolCachePolicy` caches HTTPS responses to disk, which may be undesirable for securing user data. You can change this behavior by manually handling caching behavior, as described in [`Manage caching programmatically`](accessing-cached-data#Manage-caching-programmatically.md).
 
- `useProtocolCachePolicy` caches HTTPS responses to disk, which may be undesirable for securing user data. You can change this behavior by manually handling caching behavior, as described in [`Manage caching programmatically`](accessing-cached-data#Manage-caching-programmatically.md).
-
 ##### Access the Cache Directly
 
 You can get or set the cache object used by a `URLSession` object by using the [`urlCache`](urlsessionconfiguration/urlcache.md) property of the session’s [`configuration`](urlsession/configuration.md) object.
@@ -83,4 +81,4 @@ func urlSession(_ session: URLSession, dataTask: URLSessionDataTask,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/accessing-cached-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/accessing-cached-data)*

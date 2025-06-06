@@ -24,8 +24,6 @@ init(unsafeBufferObject buffer: AnyObject)
 
 > **Note**: `buffer` is an instance of a non-`@objc` class whose `deinit` destroys its stored `Header` and any constructed `Element`s.
 
-`buffer` is an instance of a non-`@objc` class whose `deinit` destroys its stored `Header` and any constructed `Element`s.
-
 ## See Also
 
 - [init(bufferClass: AnyClass, minimumCapacity: Int, makingHeaderWith: (AnyObject, (AnyObject) -> Int) throws -> Header) rethrows](managedbufferpointer/init(bufferclass:minimumcapacity:makingheaderwith:).md)

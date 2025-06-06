@@ -1,6 +1,6 @@
 # Installing a custom kernel extension
 
-**Framework**: Apple silicon
+**Framework**: Apple Silicon
 
 Install kernel extensions using a custom installer package, and help users understand the installation process.
 
@@ -19,8 +19,6 @@ The most common way to install kexts is with a custom installer package. (Unlike
 When creating your installer package, load your kexts as the final step in the installation process using the `kmutil` or `kextload` tool. These tools initiate the kext-loading process, which on macOS 11 requires getting the user’s permission and rebooting the user’s system. Loading them as the final step prevents the reboot from disrupting the rest of the installation process. To avoid multiple user prompts when installing multiple kexts, make a single call to `kmutil` or `kextload` and include all of your kexts in the parameter list.
 
 > **Note**: In macOS 11 and later, `kmutil` replaces `kextload`, `kextunload`, and other earlier tools for loading and managing kexts. The older tools still work, but their implementations now call `kmutil`.
-
-In macOS 11 and later, `kmutil` replaces `kextload`, `kextunload`, and other earlier tools for loading and managing kexts. The older tools still work, but their implementations now call `kmutil`.
 
 For more information about how to load kexts, run `kmutil load -h` in Terminal.
 
@@ -44,8 +42,6 @@ Tell the user to perform the following steps on all Macs whenever you load or in
 The system prompts the user through most of this process, but make sure your installer package provides clear instructions about what to do. Rebooting is a disruptive process for the user, and lowering the security protections may cause concern. Providing a clear explanation of what your kext does, and why its installation is necessary may alleviate some of those concerns. Providing explicit instructions for the user to follow also helps them navigate the reboot process. If you don’t provide these instructions, the user may accidentally or purposefully abort the installation process for your kext.
 
 > **Note**: For codeless kexts, the system asks the user for permission to install the kext, but doesn’t reboot the user’s system.
-
-For codeless kexts, the system asks the user for permission to install the kext, but doesn’t reboot the user’s system.
 
 ##### Update an Existing Kernel Extension
 

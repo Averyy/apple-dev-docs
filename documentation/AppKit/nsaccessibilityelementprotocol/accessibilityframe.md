@@ -1,6 +1,6 @@
 # accessibilityFrame()
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method  
 **Required**: Yes
 
@@ -24,8 +24,6 @@ The element’s frame in screen coordinates.
 This method is the getter for the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol’s [`accessibilityFrame`](nsaccessibility-c.protocol/accessibilityframe.md) property. This method is called whenever accessibility clients request the [`size`](nsaccessibility-swift.struct/attribute/size.md) or [`position`](nsaccessibility-swift.struct/attribute/position.md) attributes.
 
 > **Note**:  If you are working with an [`NSAccessibilityElement`](nsaccessibilityelement-swift.class.md) subclass, use the [`accessibilityFrameInParentSpace`](nsaccessibilityelement-swift.class/accessibilityframeinparentspace.md) property instead. The [`accessibilityFrameInParentSpace`](nsaccessibilityelement-swift.class/accessibilityframeinparentspace.md) property ensures that accessibility element objects move when their parents move.
-
- If you are working with an [`NSAccessibilityElement`](nsaccessibilityelement-swift.class.md) subclass, use the [`accessibilityFrameInParentSpace`](nsaccessibilityelement-swift.class/accessibilityframeinparentspace.md) property instead. The [`accessibilityFrameInParentSpace`](nsaccessibilityelement-swift.class/accessibilityframeinparentspace.md) property ensures that accessibility element objects move when their parents move.
 
 ## See Also
 

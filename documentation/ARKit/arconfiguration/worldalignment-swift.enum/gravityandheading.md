@@ -1,6 +1,6 @@
 # ARConfiguration.WorldAlignment.gravityAndHeading
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: case
 
 The coordinate system’s y-axis is parallel to gravity, its x- and z-axes are oriented to compass heading, and its origin is the initial position of the device.
@@ -28,8 +28,6 @@ Although this option fixes the  of the three coordinate axes to real-world direc
 
 > **Note**:  Using gravity and heading alignment requires tracking the device’s geographic location. Your app’s Info.plist must include user-facing text for the [`NSLocationUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSLocationUsageDescription) or [`NSLocationWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSLocationWhenInUseUsageDescription) key so that the user can grant your app permission for location tracking.
 
- Using gravity and heading alignment requires tracking the device’s geographic location. Your app’s Info.plist must include user-facing text for the [`NSLocationUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSLocationUsageDescription) or [`NSLocationWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSLocationWhenInUseUsageDescription) key so that the user can grant your app permission for location tracking.
-
 ## See Also
 
 - [ARConfiguration.WorldAlignment.gravity](arconfiguration/worldalignment-swift.enum/gravity.md)
@@ -40,4 +38,4 @@ Although this option fixes the  of the three coordinate axes to real-world direc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arconfiguration/worldalignment-swift.enum/gravityandheading)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arconfiguration/worldalignment-swift.enum/gravityandheading)*

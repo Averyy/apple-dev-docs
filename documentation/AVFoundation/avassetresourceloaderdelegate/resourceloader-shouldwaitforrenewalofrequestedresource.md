@@ -1,6 +1,6 @@
 # resourceLoader(_:shouldWaitForRenewalOfRequestedResource:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Tells the delegate when assistance is required of the application to renew a resource.
@@ -32,8 +32,6 @@ If the result is [`true`](https://developer.apple.com/documentation/swift/true),
 If the result is [`false`](https://developer.apple.com/documentation/swift/false), the resource loader treats the loading of the resource as having failed.
 
 > **Note**:  If the delegate’s implementation of -[`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforloadingofrequestedresource:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) without finishing the loading request immediately, it may be invoked again with another loading request before the prior request is finished; therefore in such cases the delegate should be prepared to manage multiple loading requests.
-
- If the delegate’s implementation of -[`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforloadingofrequestedresource:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) without finishing the loading request immediately, it may be invoked again with another loading request before the prior request is finished; therefore in such cases the delegate should be prepared to manage multiple loading requests.
 
 ## Parameters
 

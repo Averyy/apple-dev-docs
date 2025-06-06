@@ -1,6 +1,6 @@
 # es_event_tcc_modify_t
 
-**Framework**: Endpoint Security  
+**Framework**: Endpointsecurity  
 **Kind**: struct
 
 **Availability**:
@@ -18,8 +18,6 @@ struct es_event_tcc_modify_t
 Or revoked.
 
 > **Note**: This event type does not support caching.
-
-This event type does not support caching.
 
 ## Topics
 

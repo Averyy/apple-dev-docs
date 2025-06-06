@@ -1,6 +1,6 @@
 # open(_:)
 
-**Framework**: Apple CryptoKit  
+**Framework**: Cryptokit  
 **Kind**: method
 
 Decrypts a message, if the ciphertext is valid.
@@ -29,8 +29,6 @@ The resulting cleartext message if the message is authentic.
 You can call this method multiple times to decrypt a series of messages. When using this method, the recipient of the ciphertext messages needs to decrypt them in the same order that the sender encrypts them.
 
 > **Note**: The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
-
-The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
 
 ## Parameters
 

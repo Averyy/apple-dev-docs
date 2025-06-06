@@ -1,6 +1,6 @@
 # changedValuesForCurrentEvent()
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: method
 
 Returns a dictionary containing the keys and new values of persistent properties with changes since the last fetching or saving of the managed object.
@@ -29,8 +29,6 @@ A dictionary with keys that are the names of persistent properties with changes 
 This method only reports changes to properties that are persistent properties of the receiver, not changes to transient properties or custom instance variables.
 
 > **Note**: In Objective-C, this method returns the keys and values of persistent properties with changes since the last posting of [`NSManagedObjectContextObjectsDidChangeNotification`](nsmanagedobjectcontextobjectsdidchangenotification.md).
-
-In Objective-C, this method returns the keys and values of persistent properties with changes since the last posting of [`NSManagedObjectContextObjectsDidChangeNotification`](nsmanagedobjectcontextobjectsdidchangenotification.md).
 
 ## See Also
 

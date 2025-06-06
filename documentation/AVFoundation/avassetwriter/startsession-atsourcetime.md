@@ -1,6 +1,6 @@
 # startSession(atSourceTime:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Starts an asset-writing session.
@@ -28,8 +28,6 @@ Each writing session has a start time that, where allowed by the file format you
 To end a session, call [`endSession(atSourceTime:)`](avassetwriter/endsession(atsourcetime:).md)or [`finishWriting(completionHandler:)`](avassetwriter/finishwriting(completionhandler:).md)
 
 > **Note**:  An asset writer doesn’t support multiple sample-writing sessions. It’s an error to call [`startSession(atSourceTime:)`](avassetwriter/startsession(atsourcetime:).md) a second time after calling [`endSession(atSourceTime:)`](avassetwriter/endsession(atsourcetime:).md).
-
- An asset writer doesn’t support multiple sample-writing sessions. It’s an error to call [`startSession(atSourceTime:)`](avassetwriter/startsession(atsourcetime:).md) a second time after calling [`endSession(atSourceTime:)`](avassetwriter/endsession(atsourcetime:).md).
 
 ## Parameters
 

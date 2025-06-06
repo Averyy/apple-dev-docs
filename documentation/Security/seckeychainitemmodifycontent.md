@@ -24,8 +24,6 @@ The keychain item is written to the keychain’s permanent data store.
 
 > **Note**:  For new development, where possible, you should generally use [`SecItemUpdate(_:_:)`](secitemupdate(_:_:).md) to modify the data and attributes of keychain items instead, because that function is based on Core Foundation types.
 
- For new development, where possible, you should generally use [`SecItemUpdate(_:_:)`](secitemupdate(_:_:).md) to modify the data and attributes of keychain items instead, because that function is based on Core Foundation types.
-
 If the keychain item has not previously been added to a keychain, a call to this function does nothing and returns `noErr`.
 
 Note that when you use this function to modify a keychain item, Keychain Services updates the modification date of the item. Therefore, you cannot use this function to modify the modification date, as the value you specify will be overwritten with the current time. If you want to change the modification date to something other than the current time, use a CSSM function to do so.

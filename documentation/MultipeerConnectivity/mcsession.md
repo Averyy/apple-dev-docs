@@ -1,6 +1,6 @@
 # MCSession
 
-**Framework**: Multipeer Connectivity  
+**Framework**: Multipeerconnectivity  
 **Kind**: class
 
 An `MCSession` object enables and manages communication among all peers in a Multipeer Connectivity session.
@@ -42,8 +42,6 @@ Once you have set up the session, your app can send data to other peers by calli
 
 > ❗ **Important**:  Delegate calls occur on a private operation queue. If your app needs to perform an action on a particular run loop or operation queue, its delegate method should explicitly dispatch or schedule that work.
 
- Delegate calls occur on a private operation queue. If your app needs to perform an action on a particular run loop or operation queue, its delegate method should explicitly dispatch or schedule that work.
-
 ##### Managing Peers Manually
 
 If instead of using the framework’s browser and advertiser objects to perform peer discovery, you decide to write your own peer discovery code (with `NSNetService` or the Bonjour C API, for example), you can manually connect nearby peers into a session. To do this:
@@ -54,21 +52,15 @@ Each peer should serialize its own local `MCPeerID` object with `NSKeyedArchiver
 
 > ❗ **Important**:  Do not attempt to construct a peer ID object for a nonlocal peer using [`init(displayName:)`](mcpeerid/init(displayname:).md). A peer ID object must be constructed .
 
- Do not attempt to construct a peer ID object for a nonlocal peer using [`init(displayName:)`](mcpeerid/init(displayname:).md). A peer ID object must be constructed .
-
 1. Exchange connection data. After you have obtained the nearby peer’s ID object, call [`nearbyConnectionData(forPeer:withCompletionHandler:)`](mcsession/nearbyconnectiondata(forpeer:withcompletionhandler:).md) to obtain a connection data object specific to that nearby peer.
 
 When the completion handler block is called, send the resulting connection data object to that peer.
 
 > **Note**:  Each device in the session must perform this step for each nonlocal peer in the session. So if there are four devices in the session, each device must generate a connection data object for each of the other three devices.
 
- Each device in the session must perform this step for each nonlocal peer in the session. So if there are four devices in the session, each device must generate a connection data object for each of the other three devices.
-
 1. When your app receives connection data from another peer, it must call [`connectPeer(_:withNearbyConnectionData:)`](mcsession/connectpeer(_:withnearbyconnectiondata:).md) to add that peer to the session.
 
 > **Note**:  Each of the nonlocal peers must also call [`connectPeer(_:withNearbyConnectionData:)`](mcsession/connectpeer(_:withnearbyconnectiondata:).md) with the connection data that it received from your app and other nonlocal peers.
-
- Each of the nonlocal peers must also call [`connectPeer(_:withNearbyConnectionData:)`](mcsession/connectpeer(_:withnearbyconnectiondata:).md) with the connection data that it received from your app and other nonlocal peers.
 
 You can also cancel an outstanding connection attempt by calling [`cancelConnectPeer(_:)`](mcsession/cancelconnectpeer(_:).md). These methods are described in the Managing Peers Manually group.
 
@@ -152,4 +144,4 @@ To leave a session, your app must call [`disconnect()`](mcsession/disconnect().m
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/multipeerconnectivity/mcsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MultipeerConnectivity/mcsession)*

@@ -25,8 +25,6 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 
 > **Note**:  watchOS supports Network framework for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/Technotes/tn3135-low-level-networking-on-watchOS).
 
- watchOS supports Network framework for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/Technotes/tn3135-low-level-networking-on-watchOS).
-
 ## Topics
 
 ### Essentials

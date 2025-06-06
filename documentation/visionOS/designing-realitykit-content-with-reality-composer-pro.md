@@ -18,8 +18,6 @@ For efficiency, store all of your RealityKit assets in Reality Composer Pro proj
 
 > **Note**: Loading assets from a `.reality` file is considerably faster and more resource efficient than loading individual asset files.
 
-Loading assets from a `.reality` file is considerably faster and more resource efficient than loading individual asset files.
-
 ##### Orient Yourself in Reality Composer Pro
 
 The Reality Composer Pro window has several sections. The top-half displays the active scene. If you have multiple scenes, the window shows a tab bar at the top with one tab for each open scene. A  in Reality Composer Pro is an entity hierarchy stored in a `.usda` file.
@@ -27,8 +25,6 @@ The Reality Composer Pro window has several sections. The top-half displays the 
 The left side of the top pane contains the hierarchy browser, which shows a tree representation of the entities in the active scene. You can toggle it using the top-left toolbar button to reveal errors and warnings. The middle pane is the 3D View, which shows a 3D representation of the active scene. The top-right is the inspector, which shows configurable values for the item selected in the 3D view, hierarchy view, or Shader Graph, depending on which has focus.
 
 > 💡 **Tip**: A Reality Composer Pro scene can represent an entire RealityKit scene, and you can have multiple scenes in your Reality Composer Pro project, each driving a different [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) in the same app. A scene can also contain a collection of entities to use as a building block. For example, if you had an airplane model, you might build a scene for it that contains its 3D model, a particle effect to make smoke come out its engine, and audio entities or components that represent the various sounds a plane makes. Your app could then load those combined assets and use them together anywhere it needs.
-
-A Reality Composer Pro scene can represent an entire RealityKit scene, and you can have multiple scenes in your Reality Composer Pro project, each driving a different [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) in the same app. A scene can also contain a collection of entities to use as a building block. For example, if you had an airplane model, you might build a scene for it that contains its 3D model, a particle effect to make smoke come out its engine, and audio entities or components that represent the various sounds a plane makes. Your app could then load those combined assets and use them together anywhere it needs.
 
 The bottom half of Reality Composer Pro contains the following four tabs:
 
@@ -54,16 +50,12 @@ In Reality Composer Pro, you design scenes by first importing assets into your p
 
 > **Note**: Reality Composer Pro projects can contain assets not used in any scene. Such assets are still compiled into your app and can be loaded at runtime and take full advantage of the efficient loading process for `.reality` files.
 
-Reality Composer Pro projects can contain assets not used in any scene. Such assets are still compiled into your app and can be loaded at runtime and take full advantage of the efficient loading process for `.reality` files.
-
 Reality Composer Pro can represent many assets as entities, but it can’t represent all assets that way; for example:
 
 - USDZ models do become an entity or entity hierarchy when you add them to a scene.
 - Image files do not become an entity. Reality Composer Pro only uses image assets indirectly, such as being the source texture for materials you build in Shader Graph. If you drag assets that Reality Composer Pro can’t turn into an entity, nothing happens.
 
 > ❗ **Important**: Reality Composer Pro treats your imported assets as read-only.
-
-Reality Composer Pro treats your imported assets as read-only.
 
 Changes you make to assets in a scene only affect that scene’s copy of the asset. The changes you make are stored in the scene’s `.usda` file, not in the original asset. That means you can work without fear of inadvertently changing other scenes. If you plan to make significant changes to an imported 3D model, such as by replacing its materials with dynamic Shader Graph materials, import the model as a`.usdc` file instead of as a `.usdz` file, and then separately import just the supporting assets you need to avoid Xcode compiling assets that you don’t need into your app.
 
@@ -79,8 +71,6 @@ All RealityKit entities in a scene exist at a specific position, orientation, an
 - To scale the selected entity uniformly, click the rotation circle and drag away from the entity origin to scale it up, or toward the entity origin to scale it down. Because it scales uniformly, it doesn’t matter which rotation handle Reality Composer Pro is showing.
 
 > **Note**: In the manipulator, Red indicates the X axis, Green indicates the Y axis, and Blue indicates the Z axis.
-
-In the manipulator, Red indicates the X axis, Green indicates the Y axis, and Blue indicates the Z axis.
 
 ##### Activate and Deactivate Scene Entities
 
@@ -104,8 +94,6 @@ When you import a USDZ model into Reality Composer Pro, it creates a RealityKit 
 
 > **Note**: The library in Reality Composer Pro contains materials for several common real-world surfaces like metal, wood, and denim that you can import into your project.
 
-The library in Reality Composer Pro contains materials for several common real-world surfaces like metal, wood, and denim that you can import into your project.
-
 ##### Build Materials in Shader Graph
 
 PBR materials are great at reproducing real-world surfaces. However, they can’t represent nonrealistic materials like cartoon shaders, and they can’t contain logic. This means that you can’t animate a PBR material or have it react to input from your app.
@@ -114,8 +102,6 @@ Reality Composer Pro offers a second type of material called a . You can build a
 
 > **Note**: RealityKit doesn’t represent Reality Composer Pro custom materials as an instance of [`CustomMaterial`](https://developer.apple.com/documentation/RealityKit/CustomMaterial), as you might expect. Instead, RealityKit represents these materials as [`ShaderGraphMaterial`](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial) instances.
 
-RealityKit doesn’t represent Reality Composer Pro custom materials as an instance of [`CustomMaterial`](https://developer.apple.com/documentation/RealityKit/CustomMaterial), as you might expect. Instead, RealityKit represents these materials as [`ShaderGraphMaterial`](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial) instances.
-
 ![A screenshot showing a complex graph of nodes in the Shader Graph tab.](https://docs-assets.developer.apple.com/published/1994cf8e5f506e92a38542f52d2c41a8/RCPro-ShaderGraphWindow%402x.png)
 
 The materials you build in the editor can affect both the look of an entity and its shape. If you build a node graph and connect it to the Custom Surface pin on the output node, that node graph controls the surface appearance of the model and roughly equates to writing Metal code in a fragment shader. If you build a node graph and connect it to the Custom Geometry Modifier output pin, those nodes control the shape of the entity, which equates to Metal code running in a vertex shader.
@@ -123,8 +109,6 @@ The materials you build in the editor can affect both the look of an entity and 
 Nodes represent values and operations and serve the same purpose as either a variable or constant, or a function in Metal. If you need the sine of a value, for example, connect the value’s output node to the input pin of a `Sin` node. Add new nodes to the graph by double-clicking the background of the Shader Graph view or click the New Node button on the right side of the screen.
 
 > ❗ **Important**: Some nodes, like `Sin`, are universal and can be used with either output pin. Other nodes are specific to either the Custom Surface or Geometry Modifier outputs. If a node name starts with Geometry Modifier, you can only connect it to the Geometry Modifier output pin. If the node’s name starts with “Surface”, you can only connect it to the Custom Surface output pin.
-
-Some nodes, like `Sin`, are universal and can be used with either output pin. Other nodes are specific to either the Custom Surface or Geometry Modifier outputs. If a node name starts with Geometry Modifier, you can only connect it to the Geometry Modifier output pin. If the node’s name starts with “Surface”, you can only connect it to the Custom Surface output pin.
 
 To unlock the real power of Shader Graph, you need to be able to change values on the material from Swift code. Shader Graph allows you to do this by creating , which are parameters you can set and read from Swift to change your material at runtime. If you have a feature that you want to turn on and off, you might create a Boolean input parameter and have conditional logic based on its value. If you want to smoothly interpolate between two colors, you might create a `Float` input parameter and use it to control how to interpolate between the two colors. You can Control-click on a constant node and select Promote to turn it into a promoted input. You can also turn a promoted input back into a constant by Control-clicking it and selecting Demote.
 
@@ -139,8 +123,6 @@ If your project has multiple scenes that share assets, you can use references to
 To add a reference, click the Add button (+) at the bottom of the references section in the inspector, choose the `.usda` file for the scene that contains the asset, then choose the asset you want to link to. After you do that, the selected entity or material becomes a copy of the one you linked to.
 
 > ❗ **Important**: If you make changes to a linked asset, those changes will affect every linked reference.
-
-If you make changes to a linked asset, those changes will affect every linked reference.
 
 ##### Preview Scenes on Device
 
@@ -163,8 +145,6 @@ RealityView { content in
 ```
 
 > **Note**: The code above saves a reference to the root node. This isn’t required, but with [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView), unlike [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) on iOS and macOS, you don’t have ready access to the scene content, so it’s often handy to maintain your own reference to the root entity of your scene in your app’s data model.
-
-The code above saves a reference to the root node. This isn’t required, but with [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView), unlike [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) on iOS and macOS, you don’t have ready access to the scene content, so it’s often handy to maintain your own reference to the root entity of your scene in your app’s data model.
 
 When RealityKit finishes loading the scene, the `scene` variable contains the root entity of the scene you specified. Add it to `content` and RealityKit displays it to the user.
 
@@ -196,4 +176,4 @@ When RealityKit finishes loading the scene, the `scene` variable contains the ro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/designing-realitykit-content-with-reality-composer-pro)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/designing-realitykit-content-with-reality-composer-pro)*

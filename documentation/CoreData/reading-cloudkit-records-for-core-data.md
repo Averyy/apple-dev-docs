@@ -1,6 +1,6 @@
 # Reading CloudKit Records for Core Data
 
-**Framework**: Core Data
+**Framework**: Coredata
 
 Access CloudKit records created from Core Data managed objects.
 
@@ -13,8 +13,6 @@ To prevent collision with existing CloudKit record types and reserved names, Clo
 To work with records directly, you need to understand the mappings between entities and record types, attributes and fields, and the ways a record stores relationships.
 
 > **Note**:  Core Data doesn’t use CloudKit’s native support for relationships, [`CKRecord.Reference`](https://developer.apple.com/documentation/CloudKit/CKRecord/Reference), because this field limits the number of references to 750, and cannot represent many-to-many relationships. Core Data stores the relationship in CloudKit according to its cardinality (one-to-one, one-to-many, or many-to-many), as described in this article.
-
- Core Data doesn’t use CloudKit’s native support for relationships, [`CKRecord.Reference`](https://developer.apple.com/documentation/CloudKit/CKRecord/Reference), because this field limits the number of references to 750, and cannot represent many-to-many relationships. Core Data stores the relationship in CloudKit according to its cardinality (one-to-one, one-to-many, or many-to-many), as described in this article.
 
 ##### Read Entities From Record Types
 
@@ -215,4 +213,4 @@ Alternatively, use the class functions [`recordForManagedObjectID:`](nspersisten
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/reading-cloudkit-records-for-core-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/reading-cloudkit-records-for-core-data)*

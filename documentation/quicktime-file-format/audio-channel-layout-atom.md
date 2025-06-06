@@ -1,6 +1,6 @@
 # Audio channel layout atom ('chan')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An optional extension to the sound sample description specifying audio channel layouts for sound media contained in QuickTime movies.
@@ -10,8 +10,6 @@ An optional extension to the sound sample description specifying audio channel l
 This atom is an optional extension to the sound sample description specifying audio channel layouts for sound media contained in QuickTime movies. It is a full atom followed by a big-endian audio channel layout structure as defined by Apple’s Core Audio framework. Audio channel layouts can be applied to both compressed and uncompressed sound formats.
 
 > **Note**: Audio channel layouts with more than two channels per track require implementation with a version 2 sound sample description.
-
-Audio channel layouts with more than two channels per track require implementation with a version 2 sound sample description.
 
 ## Topics
 

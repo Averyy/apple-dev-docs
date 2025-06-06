@@ -1,6 +1,6 @@
 # min()
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns the minimum element in the sequence.
@@ -35,8 +35,6 @@ print(lowestHeight)
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## See Also
 

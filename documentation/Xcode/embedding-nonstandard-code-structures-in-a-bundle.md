@@ -19,8 +19,6 @@ Fortunately there’s another way.  This document walks you through an example o
 
 > ❗ **Important**: This is just an example.  It’s likely that the code you’re using will have a structure that’s different from this example.  Adapt the techniques shown here to your specific situation.
 
-This is just an example.  It’s likely that the code you’re using will have a structure that’s different from this example.  Adapt the techniques shown here to your specific situation.
-
 ##### Separate Read Only and Readwrite Content
 
 A bundle is a read-only structure.  All Apple platforms except the Mac enforce this requirement at runtime.  On iOS, for example, any attempt to modify your app’s bundle at runtime will fail with an error.  The Mac may or may not enforce this requirement at runtime, depending on the context, but modifying your app’s bundle isn’t supported because it breaks the seal on the app’s code signature.
@@ -106,8 +104,6 @@ Not all code with a nonstandard structure is as accommodating as libWaffleVarnis
 This tool and its associated dynamic libraries will only work when they’re installed in `/usr/local/libRubPat`, so you can’t embed this code as-is in your bundle.
 
 > **Note**: libWaffleVarnish, which is based entirely on rpath-relative paths, and libRubPat, which is based entirely on absolute paths, aren’t the only possibilities.  Many nonstandard code structures use a mishmash of absolute paths, relative paths, executable-relative paths (`@executable_path`), loader-relative paths (`@loader_path`), and rpath-relative paths (`@rpath`).  Sorting this out can be a challenge.
-
-libWaffleVarnish, which is based entirely on rpath-relative paths, and libRubPat, which is based entirely on absolute paths, aren’t the only possibilities.  Many nonstandard code structures use a mishmash of absolute paths, relative paths, executable-relative paths (`@executable_path`), loader-relative paths (`@loader_path`), and rpath-relative paths (`@rpath`).  Sorting this out can be a challenge.
 
 The best way to fix this problem is to update the code’s build system to use rpath-relative references.  However, this isn’t possible for libRubPat because that library is not open source.  To embed libRubPat in your bundle, use `install_name_tool` to change the paths embedded in its code items.  First remove all the code signatures:
 
@@ -252,4 +248,4 @@ In most cases, however, it’s easier and better to rewrite everything to use rp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/embedding-nonstandard-code-structures-in-a-bundle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/embedding-nonstandard-code-structures-in-a-bundle)*

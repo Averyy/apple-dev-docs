@@ -1,6 +1,6 @@
 # Read report instance information
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Get details for a specific instance of an analytics report.
@@ -11,8 +11,6 @@ Get details for a specific instance of an analytics report.
 #### Discussion
 
 > **Note**:  If you don’t retrieve data for a long time, a report request changes to `stoppedDueToInactivity`. You need to make a new request to resume getting reports.
-
- If you don’t retrieve data for a long time, a report request changes to `stoppedDueToInactivity`. You need to make a new request to resume getting reports.
 
 ##### Examples Request and Response
 

@@ -1,6 +1,6 @@
 # AUAudioUnitBusArray
 
-**Framework**: Audio Toolbox  
+**Framework**: Audiotoolbox  
 **Kind**: class
 
 A class that defines a container for an audio unit’s input or output busses.
@@ -26,8 +26,6 @@ Hosts can observe a bus property across all busses by using KVO on a bus array o
 This version 3 class is bridged to the version 2 `kAudioUnitProperty_ElementCount` API.
 
 > **Note**:  You could add listeners to individual busses, but that means you have to observe bus count changes and add or remove listeners in response. Furthermore, the [`addObserver(_:toObjectsAt:forKeyPath:options:context:)`](https://developer.apple.com/documentation/foundation/nsarray/1411404-addobserver) method is problematic; it does not let the individual objects override the observation request, and so a bus which is proxying a bus in an extension process does not get the message.
-
- You could add listeners to individual busses, but that means you have to observe bus count changes and add or remove listeners in response. Furthermore, the [`addObserver(_:toObjectsAt:forKeyPath:options:context:)`](https://developer.apple.com/documentation/foundation/nsarray/1411404-addobserver) method is problematic; it does not let the individual objects override the observation request, and so a bus which is proxying a bus in an extension process does not get the message.
 
 ## Topics
 
@@ -98,4 +96,4 @@ This version 3 class is bridged to the version 2 `kAudioUnitProperty_ElementCoun
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/auaudiounitbusarray)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox/auaudiounitbusarray)*

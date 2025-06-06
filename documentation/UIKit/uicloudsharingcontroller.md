@@ -1,6 +1,6 @@
 # UICloudSharingController
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A view controller that presents standard screens for adding and removing people from a CloudKit share record.
@@ -56,8 +56,6 @@ After you create the controller, present it to show the People screen. From this
 
 > **Note**:  If all participants have left the share, the controller presents the Invitation screen, not the People screen, when [`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) is used to create the controller instance.
 
- If all participants have left the share, the controller presents the Invitation screen, not the People screen, when [`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) is used to create the controller instance.
-
 ##### Viewing Participants and Leaving a Share
 
 To allow a participant to view the list of participants and remove themselves from a share, create the [`UICloudSharingController`](uicloudsharingcontroller.md) instance using the [`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) initializer method.
@@ -73,8 +71,6 @@ After you create the controller, present it to show the People screen. From this
 [`UICloudSharingController`](uicloudsharingcontroller.md) is designed for use in a popover. Therefore, you should always set the [`popoverPresentationController`](uiviewcontroller/popoverpresentationcontroller.md) source information before presenting the Cloud sharing controller. Doing this ensures that the [`UICloudSharingController`](uicloudsharingcontroller.md) instance is displayed properly across all device types.
 
 > ❗ **Important**:  Presenting the Cloud sharing controller in an iPad app without setting the popover presentation controller causes a run-time error.
-
- Presenting the Cloud sharing controller in an iPad app without setting the popover presentation controller causes a run-time error.
 
 The following code shows an example of setting the [`popoverPresentationController`](uiviewcontroller/popoverpresentationcontroller.md) before presenting a Cloud sharing controller.
 
@@ -137,4 +133,4 @@ You can also show or hide the permission and access options presented to the use
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uicloudsharingcontroller)*

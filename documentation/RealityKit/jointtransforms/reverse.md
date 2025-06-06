@@ -1,6 +1,6 @@
 # reverse()
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Reverses the elements of the collection in place.
@@ -30,8 +30,6 @@ print(characters)
 ```
 
 > **Note**: O(), where  is the number of elements in the collection.
-
-O(), where  is the number of elements in the collection.
 
 ## See Also
 

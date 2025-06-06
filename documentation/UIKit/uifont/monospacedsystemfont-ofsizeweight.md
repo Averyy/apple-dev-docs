@@ -1,6 +1,6 @@
 # monospacedSystemFont(ofSize:weight:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Returns the fixed-width font for standard interface text in the specified size.
@@ -28,8 +28,6 @@ A font object of the specified size.
 This method provides the same font as the [`monospaced`](uifontdescriptor/systemdesign/monospaced.md) system font descriptor. For design guidance, see [`Typography`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/) in the Human Interface Guidelines.
 
 > **Note**:  To display text in the standard system font, but with fixed-width digits, use [`monospacedDigitSystemFont(ofSize:weight:)`](uifont/monospaceddigitsystemfont(ofsize:weight:).md) instead.
-
- To display text in the standard system font, but with fixed-width digits, use [`monospacedDigitSystemFont(ofSize:weight:)`](uifont/monospaceddigitsystemfont(ofsize:weight:).md) instead.
 
 ## Parameters
 

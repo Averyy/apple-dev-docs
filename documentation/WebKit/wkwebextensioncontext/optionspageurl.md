@@ -27,8 +27,6 @@ The app should provide access to this page through a user interface element.
 
 > **Note**: Navigation to the options page is only possible after this extension has been loaded.
 
-Navigation to the options page is only possible after this extension has been loaded.
-
 ## See Also
 
 - [var webViewConfiguration: WKWebViewConfiguration?](wkwebextensioncontext/webviewconfiguration.md)

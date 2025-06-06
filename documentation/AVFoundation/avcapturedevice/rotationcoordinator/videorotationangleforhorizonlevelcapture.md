@@ -1,6 +1,6 @@
 # videoRotationAngleForHorizonLevelCapture
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 An angle the coordinator provides your app to apply to photos or videos it captures with the device so that they’re level relative to gravity.
@@ -27,8 +27,6 @@ Apps typically apply the property’s value to an [`AVCaptureConnection`](avcapt
 Alternatively, if your app uses an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) instance with an [`AVAssetWriter`](avassetwriter.md), such as for recording custom videos with effects, don’t rotate the video with [`AVCaptureConnection`](avcaptureconnection.md). Instead, set the rotation with an [`AVAssetWriterInput`](avassetwriterinput.md) instance’s [`transform`](avassetwriterinput/transform.md) property, which alters the output file’s metadata. With this approach, video-playing apps apply the rotation during playback, which uses less energy than rotating each frame with the capture connection.
 
 > **Note**:  Your app needs to convert the [`videoRotationAngleForHorizonLevelCapture`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md) value from degrees to radians for an asset writer input’s transform, which is a [`CGAffineTransform`](https://developer.apple.com/documentation/CoreGraphics/cgaffinetransform).
-
- Your app needs to convert the [`videoRotationAngleForHorizonLevelCapture`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md) value from degrees to radians for an asset writer input’s transform, which is a [`CGAffineTransform`](https://developer.apple.com/documentation/CoreGraphics/cgaffinetransform).
 
 ## See Also
 

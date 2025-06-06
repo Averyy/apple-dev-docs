@@ -20,8 +20,6 @@ Always present the Now Playing view so that it fills the screen in a nonscrollin
 
 > **Note**:  If you are using SwiftUI, use the [`NowPlayingView`](nowplayingview.md) structure instead.
 
- If you are using SwiftUI, use the [`NowPlayingView`](nowplayingview.md) structure instead.
-
 The Now Playing view uses your app’s tint color, but otherwise has no attributes or properties that you can set. In addition, no public interface class exists for the Now Playing view. This means you can’t access or control the view programmatically. Your app just presents the view; the system handles the rest.
 
 ## See Also
@@ -44,4 +42,4 @@ The Now Playing view uses your app’s tint color, but otherwise has no attribut
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/adding-a-now-playing-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/adding-a-now-playing-view)*

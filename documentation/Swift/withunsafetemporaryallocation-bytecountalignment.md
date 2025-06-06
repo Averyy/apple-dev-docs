@@ -28,8 +28,6 @@ Whatever is returned by `body`.
 
 > **Note**: Whatever is thrown by `body`.
 
-Whatever is thrown by `body`.
-
 This function is useful for cheaply allocating raw storage for a brief duration. Storage may be allocated on the heap or on the stack, depending on the required size and alignment.
 
 When `body` is called, the contents of the buffer pointer passed to it are in an unspecified, uninitialized state. `body` is responsible for initializing the buffer pointer before it is used  for deinitializing it before returning, but deallocation is automatic.

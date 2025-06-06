@@ -1,6 +1,6 @@
 # Creating an Intents App Extension
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Add and configure an Intents app extension in your Xcode project.
 
@@ -35,8 +35,6 @@ Adding an Intents app extension target provides the initial files you need to bu
 
 > **Note**:  You may add more than one Intents extension to your app, but each extension must support different intents. Create multiple extensions only if doing so provides a performance advantage or reduces the memory footprint of each extension.
 
- You may add more than one Intents extension to your app, but each extension must support different intents. Create multiple extensions only if doing so provides a performance advantage or reduces the memory footprint of each extension.
-
 ![A screenshot of a project in Xcode with the template selection sheet open. Intents Extension is selected in the iOS pane.](https://docs-assets.developer.apple.com/published/e24ab8c6ba1c7f1ae54470037f178475/media-3172417%402x.png)
 
 ##### Specify the Intents Your Extension Supports
@@ -51,8 +49,6 @@ After adding your Intents extension target to your project, specify the intents 
 Choose Restricted While Locked to specify that the intent requires an unlocked device. Some intents, such as those involving financial transactions, always require the user’s device to be unlocked. For those intents, Siri automatically asks the user to unlock the device, even if you leave the Authentication set to None. In watchOS, all intents require the device to be unlocked.
 
 > ❗ **Important**:  Unless your watchOS app has [`WKRunsIndependentlyOfCompanionApp`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKRunsIndependentlyOfCompanionApp) enabled, your iOS app must support all of the intents your watchOS app supports, either directly in the app or in an app extension.
-
- Unless your watchOS app has [`WKRunsIndependentlyOfCompanionApp`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKRunsIndependentlyOfCompanionApp) enabled, your iOS app must support all of the intents your watchOS app supports, either directly in the app or in an app extension.
 
 When an ambiguous user utterance resolves to multiple intents, SiriKit uses the order of the intents in the Supported Intents table to determine which intent to send to your app. Organize your list of intents by putting the most relevant ones at the top of the table. Prioritizing your intents is especially important when your Intents extension supports multiple domains with similar semantics. For example, an app that supports calling and messaging intents might choose to prioritize sending a message over initiating a call.
 
@@ -105,4 +101,4 @@ When installing your extension for the first time, Siri may not immediately reco
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/creating-an-intents-app-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/creating-an-intents-app-extension)*

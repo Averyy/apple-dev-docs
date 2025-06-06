@@ -23,8 +23,6 @@ Use the production server for your shipping apps and the development server for 
 
 > 💡 **Tip**:  You can also use port 2197 (instead of port 443) on either server when communicating with APNs. You might use this port to allow APNs traffic through your firewall but to block other HTTPS traffic.
 
- You can also use port 2197 (instead of port 443) on either server when communicating with APNs. You might use this port to allow APNs traffic through your firewall but to block other HTTPS traffic.
-
 APNs allows multiple concurrent streams for each connection, but don’t assume a specific number of streams. The exact number varies based on server load and whether you use a provider certificate or an authentication token. For example, when using an authentication token, APNs allows only one stream until you post a request with a valid authentication token. APNs ignores `HTTP/2 PRIORITY` frames, so don’t send them on your streams.
 
 If you experience a revoked provider certificate, or if you revoke your authentication token, close all connections to APNs, fix the problem, and then open new connections. APNs may also terminate a connection by sending a `GOAWAY` frame. The payload of the `GOAWAY` frame includes JSON data with a `reason` key, indicating the reason for the connection termination. For a list of values for the `reason` key, refer to the response error strings in [`Handling notification responses from APNs`](handling-notification-responses-from-apns.md).
@@ -38,8 +36,6 @@ To send a notification to a user’s device, construct and send a POST notificat
 - The notification’s payload, specified as JSON data; refer to [`Generating a remote notification`](generating-a-remote-notification.md).
 
 > **Note**:  If you’re using certificate-based authentication, you send your provider certificate to APNs when setting up your TLS connection. For more information, refer to [`Establishing a certificate-based connection to APNs`](establishing-a-certificate-based-connection-to-apns.md).
-
- If you’re using certificate-based authentication, you send your provider certificate to APNs when setting up your TLS connection. For more information, refer to [`Establishing a certificate-based connection to APNs`](establishing-a-certificate-based-connection-to-apns.md).
 
 ##### Send a Post Request to Apns
 
@@ -131,8 +127,6 @@ Below are some APNs best practices to consider:
 
 > **Note**:  APNs doesn’t support legacy binary protocol as of March 31, 2021. Update to the HTTP/2-based API as soon as possible.
 
- APNs doesn’t support legacy binary protocol as of March 31, 2021. Update to the HTTP/2-based API as soon as possible.
-
 ## See Also
 
 - [Handling notification responses from APNs](handling-notification-responses-from-apns.md)
@@ -143,4 +137,4 @@ Below are some APNs best practices to consider:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/sending-notification-requests-to-apns)*

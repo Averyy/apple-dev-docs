@@ -1,6 +1,6 @@
 # destinationRect
 
-**Framework**: ScreenCaptureKit  
+**Framework**: Screencapturekit  
 **Kind**: property
 
 A rectangle that specifies a destination into which to write the output.
@@ -20,8 +20,6 @@ var destinationRect: CGRect { get set }
 If you don’t specify a destination rectangle, the system uses the full dimensions of the output surface.
 
 > **Note**:  The system doesn’t reference this value when capturing a single window because it draws the window into the output’s full bounds.
-
- The system doesn’t reference this value when capturing a single window because it draws the window into the output’s full bounds.
 
 ## See Also
 

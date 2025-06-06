@@ -1,6 +1,6 @@
 # dynamic()
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: method
 
 Creates a physics body that can be affected by forces and collisions.
@@ -33,8 +33,6 @@ For the body to participate in collision detection or respond to forces, you mus
 SceneKit automatically creates a physics shape for the body when you attach it to a node, based on that node’s [`geometry`](scnnode/geometry.md) property. To create a physics shape that’s based on the geometries of a node and its hierarchy of children, or to control the level of detail in a physics shape, create the physics shape manually using an [`SCNPhysicsShape`](scnphysicsshape.md) class method.
 
 > **Note**:  For nodes containing custom geometry, the physics shape SceneKit automatically creates is a rough approximation of the geometry. This approximation, or , provides a compromise between accuracy and performance in collision detection. For the best collision detection performance, create an [`SCNPhysicsShape`](scnphysicsshape.md) instance based on a basic geometry class ([`SCNBox`](scnbox.md), [`SCNSphere`](scnsphere.md), [`SCNPyramid`](scnpyramid.md), [`SCNCone`](scncone.md), [`SCNCylinder`](scncylinder.md), or [`SCNCapsule`](scncapsule.md)).
-
- For nodes containing custom geometry, the physics shape SceneKit automatically creates is a rough approximation of the geometry. This approximation, or , provides a compromise between accuracy and performance in collision detection. For the best collision detection performance, create an [`SCNPhysicsShape`](scnphysicsshape.md) instance based on a basic geometry class ([`SCNBox`](scnbox.md), [`SCNSphere`](scnsphere.md), [`SCNPyramid`](scnpyramid.md), [`SCNCone`](scncone.md), [`SCNCylinder`](scncylinder.md), or [`SCNCapsule`](scncapsule.md)).
 
 ## See Also
 

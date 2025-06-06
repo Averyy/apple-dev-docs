@@ -35,8 +35,6 @@ To provide an optimal viewing experience, the Studio environment minimizes objec
 
 > **Note**: Reality Composer Pro provides a template to set up a docking region and default video reflection configuration. You can access this template from the Insert menu by selecting Insert > Environment > Video Dock.
 
-Reality Composer Pro provides a template to set up a docking region and default video reflection configuration. You can access this template from the Insert menu by selecting Insert > Environment > Video Dock.
-
 #### Display Specular Video Reflections
 
 Specular reflections, like shown below, provide a direct reflection of the video’s content onto surrounding surfaces. You typically apply this type of reflection to glossy surfaces such as metals, mirrors, and water.
@@ -75,8 +73,6 @@ To calculate Emitter UVs, iterate over each vertex of the surface mesh, and samp
 
 > ❗ **Important**: The number of random points sampled from the docking region can have a large impact on the overall computation time when generating emitter UVs. You can configure how many samples to use when calculating emitter UVs with the [`ComputeDiffuseReflectionUVs`](https://developer.apple.comhttps://developer.apple.com/sample-code/ar/WWDC_2024_Diffuse_Reflection_UV_Computation_Tool.zip) python script.
 
-The number of random points sampled from the docking region can have a large impact on the overall computation time when generating emitter UVs. You can configure how many samples to use when calculating emitter UVs with the [`ComputeDiffuseReflectionUVs`](https://developer.apple.comhttps://developer.apple.com/sample-code/ar/WWDC_2024_Diffuse_Reflection_UV_Computation_Tool.zip) python script.
-
 Attenuation UVs are a top-down projection of the attenuation texture onto the input geometry (UV-coordinate system). An attenuation texture contains a soft falloff mask that shapes the light from the emitter.
 
 The attenuation texture contains a falloff pattern that shapes the the diffuse reflection on to the surface mesh. The image below shows the default Reality Composer Pro attenuation texture.
@@ -99,8 +95,6 @@ The attenuation UVs are calculated from mapping the surface mesh, in world space
 
 > **Note**: When using the [`ComputeDiffuseReflectionUVs`](https://developer.apple.comhttps://developer.apple.com/sample-code/ar/WWDC_2024_Diffuse_Reflection_UV_Computation_Tool.zip) python script for mapping using a custom attenuation texture, you only need to measure the the `uStart`, `uEnd`, `vStart`, and `vEnd` values of your attenuation texture. If you’re using the default attenuation texture in Reality Composer Pro, the script uses the default values.
 
-When using the [`ComputeDiffuseReflectionUVs`](https://developer.apple.comhttps://developer.apple.com/sample-code/ar/WWDC_2024_Diffuse_Reflection_UV_Computation_Tool.zip) python script for mapping using a custom attenuation texture, you only need to measure the the `uStart`, `uEnd`, `vStart`, and `vEnd` values of your attenuation texture. If you’re using the default attenuation texture in Reality Composer Pro, the script uses the default values.
-
 To learn more about how the environment sets up and applies diffuse reflections, open the Studio project in Reality Composer Pro to view its configuration.
 
 ###### Related Samples
@@ -112,4 +106,4 @@ To learn more about how the environment sets up and applies diffuse reflections,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/enabling-video-reflections-in-an-immersive-environment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/enabling-video-reflections-in-an-immersive-environment)*

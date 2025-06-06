@@ -1,6 +1,6 @@
 # Supporting business model changes by using the app transaction
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Access the app transaction to learn when a customer first purchased an app, to determine the app features they’re entitled to.
 
@@ -55,8 +55,6 @@ for await result in Transaction.currentEntitlements {
 
 > **Note**:  Session 10007:  [`What’s new with in-app purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10007/)
 
- Session 10007:  [`What’s new with in-app purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10007/)
-
 ## See Also
 
 - [struct AppTransaction](apptransaction.md)
@@ -65,4 +63,4 @@ for await result in Transaction.currentEntitlements {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/supporting-business-model-changes-by-using-the-app-transaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/supporting-business-model-changes-by-using-the-app-transaction)*

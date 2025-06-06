@@ -1,6 +1,6 @@
 # NSTokenField
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A text field that converts text into visually distinct tokens.
@@ -22,10 +22,6 @@ Use a token field when you want typed text to be transformed into “tokens”, 
 `NSTokenField` uses an [`NSTokenFieldCell`](nstokenfieldcell.md) to implement much of the control’s functionality. `NSTokenField` provides cover methods for most methods of `NSTokenFieldCell`, which invoke the corresponding cell method.
 
 > **Note**:  In OS X v10.4 and earlier, represented objects associated with token fields had to conform to [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding). Starting with OS X v10.5, they no longer need to. In OS X v10.4, `NSTokenField` trims whitespace around tokens but it does not trim whitespace in macOS versions 10.5.0 and 10.5.1. In OS X v10.5.2, you get whitespace-trimming behavior by either linking against the v10.4 binary or linking against the v10.5 binary and  implementing the [`tokenField(_:representedObjectForEditing:)`](nstokenfielddelegate/tokenfield(_:representedobjectforediting:).md) method. If you do not want the whitespace-trimming behavior, link against the v10.5 binary and implement this method, returning the editing string if you have no represented object.
-
- In OS X v10.4 and earlier, represented objects associated with token fields had to conform to [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding). Starting with OS X v10.5, they no longer need to.
-
-In OS X v10.4, `NSTokenField` trims whitespace around tokens but it does not trim whitespace in macOS versions 10.5.0 and 10.5.1. In OS X v10.5.2, you get whitespace-trimming behavior by either linking against the v10.4 binary or linking against the v10.5 binary and  implementing the [`tokenField(_:representedObjectForEditing:)`](nstokenfielddelegate/tokenfield(_:representedobjectforediting:).md) method. If you do not want the whitespace-trimming behavior, link against the v10.5 binary and implement this method, returning the editing string if you have no represented object.
 
 ## Topics
 

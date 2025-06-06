@@ -1,6 +1,6 @@
 # Adding Support for Background Tag Reading
 
-**Framework**: Core NFC
+**Framework**: Corenfc
 
 Allow users to scan NFC tags without an app using background tag reading.
 
@@ -9,8 +9,6 @@ Allow users to scan NFC tags without an app using background tag reading.
 On iPhones that support background tag reading, the system scans for and reads NFC data without requiring users to scan tags using an app. The system displays a pop-up notification each time it reads a new tag. After the user taps the notification, the system delivers the tag data to the appropriate app. If the iPhone is locked, the system prompts the user to unlock the phone before providing the tag data to the app.
 
 > **Note**:  iPhone XS and later support background tag reading.
-
- iPhone XS and later support background tag reading.
 
 To avoid unintentional tag reading, the system reads tags in the background only when the user’s iPhone is in use. Also, be aware there are times when the display is on and background tag reading is unavailable, such as if:
 
@@ -53,8 +51,6 @@ Background tag reading supports the following URL schemes:
 For more information on URL schemes, see [`Apple URL Scheme Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
 > **Note**:  Background tag reading doesn’t support custom URL schemes. Use universal links instead.
-
- Background tag reading doesn’t support custom URL schemes. Use universal links instead.
 
 ##### Configure Your App
 
@@ -112,4 +108,4 @@ Not all devices support background tag reading, so be sure to provide the user t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corenfc/adding-support-for-background-tag-reading)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreNFC/adding-support-for-background-tag-reading)*

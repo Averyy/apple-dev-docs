@@ -1,6 +1,6 @@
 # Getting up-to-date calling and blocking information for your app
 
-**Framework**: SMS and Call Reporting
+**Framework**: Identitylookup
 
 Implement the Live Caller ID Lookup app extension to provide call-blocking and identity services.
 
@@ -9,8 +9,6 @@ Implement the Live Caller ID Lookup app extension to provide call-blocking and i
 With the Live Caller ID Lookup app extension, you can provide caller ID and call-blocking services from a server you maintain. The app extension tells the system how to communicate with your server. When someone’s device receives a phone call, the system communicates with your back-end server to retrieve caller ID and blocking information, and then displays that information on the incoming call screen and in the device’s recent phone calls.
 
 > **Note**:  The Live Caller ID Lookup app extension requires you to use Apple relay servers to support making calls to your server endpoints. This requires endpoint validation from Apple. If you’re interested in using the app extension, [`submit your request`](https://developer.apple.comhttps://developer.apple.com/contact/request/live-caller-id-lookup/). For more information on the server side API, see the [`Live Caller ID Lookup example`](https://developer.apple.comhttps://github.com/apple/live-caller-id-lookup-example) and the [`Swift homomorphic encryption library`](https://developer.apple.comhttps://github.com/apple/swift-homomorphic-encryption).
-
- The Live Caller ID Lookup app extension requires you to use Apple relay servers to support making calls to your server endpoints. This requires endpoint validation from Apple. If you’re interested in using the app extension, [`submit your request`](https://developer.apple.comhttps://developer.apple.com/contact/request/live-caller-id-lookup/). For more information on the server side API, see the [`Live Caller ID Lookup example`](https://developer.apple.comhttps://github.com/apple/live-caller-id-lookup-example) and the [`Swift homomorphic encryption library`](https://developer.apple.comhttps://github.com/apple/swift-homomorphic-encryption).
 
 ##### Add the App Extension to Your Project
 
@@ -95,4 +93,4 @@ If you communicate to your app through push notifications, or other means, about
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/identitylookup/getting-up-to-date-calling-and-blocking-information-for-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/IdentityLookup/getting-up-to-date-calling-and-blocking-information-for-your-app)*

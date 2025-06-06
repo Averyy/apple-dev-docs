@@ -1,6 +1,6 @@
 # init(dictionaryLiteral:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: init
 
 Creates a data frame from a dictionary literal.
@@ -43,8 +43,6 @@ The initializer checks each column’s elements and, if possible, defines the co
 Otherwise, the data frame sets a column’s type to `Any`.
 
 > **Note**: Use [`append(column:)`](dataframe/append(column:)-aema.md) to add a column of a specific type.
-
-Use [`append(column:)`](dataframe/append(column:)-aema.md) to add a column of a specific type.
 
 ## Parameters
 

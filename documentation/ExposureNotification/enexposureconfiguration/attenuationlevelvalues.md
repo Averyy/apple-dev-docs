@@ -1,6 +1,6 @@
 # attenuationLevelValues
 
-**Framework**: Exposure Notification  
+**Framework**: Exposurenotification  
 **Kind**: property
 
 The level values for attenuation.
@@ -20,8 +20,6 @@ var attenuationLevelValues: [NSNumber] { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 This property contains eight risk-level values in the range 0-8, one for each range of attenuation.
 
 - `attenuationLevelValues[0]` when attenuation > 73.
@@ -34,8 +32,6 @@ This property contains eight risk-level values in the range 0-8, one for each ra
 - `attenuationLevelValues[7]` when 10 >= attenuation.
 
 > **Note**:  On iOS 13.7 and 14.0, the framework ignores the values of this property. Instead, it uses `[1, 2, 3, 4, 5, 6, 7, 8]` for the attenuation level values.
-
- On iOS 13.7 and 14.0, the framework ignores the values of this property. Instead, it uses `[1, 2, 3, 4, 5, 6, 7, 8]` for the attenuation level values.
 
 ## See Also
 
@@ -53,4 +49,4 @@ This property contains eight risk-level values in the range 0-8, one for each ra
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration/attenuationlevelvalues)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposureconfiguration/attenuationlevelvalues)*

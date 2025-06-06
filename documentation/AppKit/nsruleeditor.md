@@ -1,6 +1,6 @@
 # NSRuleEditor
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An interface for configuring a rule-based list of options.
@@ -22,8 +22,6 @@ A rule editor lets the user visually create and configure a list of options that
 `NSRuleEditor` exposes one binding, `rows`. You can bind `rows` to an ordered collection (such as an instance of `NSMutableArray`). Each object in the collection should have the following properties:
 
 > **Note**: If you override [`viewDidMoveToWindow()`](nsview/viewdidmovetowindow().md) in a subclass of [`NSRuleEditor`](nsruleeditor.md), you must invoke super’s implementation.
-
-If you override [`viewDidMoveToWindow()`](nsview/viewdidmovetowindow().md) in a subclass of [`NSRuleEditor`](nsruleeditor.md), you must invoke super’s implementation.
 
 ## Topics
 
@@ -167,4 +165,4 @@ If you override [`viewDidMoveToWindow()`](nsview/viewdidmovetowindow().md) in a 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsruleeditor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsruleeditor)*

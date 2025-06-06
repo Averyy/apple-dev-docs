@@ -1,6 +1,6 @@
 # Adding procedural assets to a scene
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Create procedurally generated shape primitives to your Reality Composer scene.
 
@@ -25,8 +25,6 @@ let boxResource = MeshResource.generateBox(size: 0.08)
 ```
 
 > **Note**: All [`MeshResource`](meshresource.md) generator methods require measurement parameters to be expressed in meters.
-
-All [`MeshResource`](meshresource.md) generator methods require measurement parameters to be expressed in meters.
 
 ##### Define the Appearance of the Procedural Asset
 
@@ -89,4 +87,4 @@ arView.scene.addAnchor(anchorEntity)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/adding-procedural-assets-to-a-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/adding-procedural-assets-to-a-scene)*

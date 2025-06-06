@@ -1,6 +1,6 @@
 # Apple Pay Status Codes
 
-**Framework**: Apple Pay on the Web
+**Framework**: Applepayontheweb
 
 Codes used to report the status of an Apple Pay session after a callback.
 
@@ -9,8 +9,6 @@ Codes used to report the status of an Apple Pay session after a callback.
 Use an appropriate status code to report your status when you complete a callback.
 
 > **Note**:  Use a status code that is supported for the completion method you are calling.
-
- Use a status code that is supported for the completion method you are calling.
 
 | Method | Supported status codes |
 | --- | --- |
@@ -54,4 +52,4 @@ Apple Pay JS API supports customized errors in Apple Pay API version 3 and later
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/apple-pay-status-codes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/apple-pay-status-codes)*

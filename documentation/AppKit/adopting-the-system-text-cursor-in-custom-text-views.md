@@ -1,6 +1,6 @@
 # Adopting the system text cursor in custom text views
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 Incorporate the system text cursor into your custom text UI in AppKit.
 
@@ -102,8 +102,6 @@ If you implement custom text UI in a UIKit app, see [`Adopting system selection 
 
 > **Note**:  Session 10058: [`What’s new with text and text interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10058/)
 
- Session 10058: [`What’s new with text and text interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10058/)
-
 ## See Also
 
 - [class NSTextInputContext](nstextinputcontext.md)
@@ -124,4 +122,4 @@ If you implement custom text UI in a UIKit app, see [`Adopting system selection 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/adopting-the-system-text-cursor-in-custom-text-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/adopting-the-system-text-cursor-in-custom-text-views)*

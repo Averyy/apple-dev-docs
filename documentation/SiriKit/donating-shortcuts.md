@@ -1,6 +1,6 @@
 # Donating Shortcuts
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Tell Siri about shortcuts to actions that the user performed in your app.
 
@@ -16,16 +16,12 @@ However, don’t make more than one shortcut donation for an action at the time 
 
 > **Note**:  To have Siri display the shortcut on the Siri watch face, save the shortcut as a  shortcut. For more information, see doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support.
 
- To have Siri display the shortcut on the Siri watch face, save the shortcut as a  shortcut. For more information, see doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support.
-
 Your app can make donations using one of the following objects:
 
 - [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity). Donate the shortcut using a user activity when the action involves a view within your app, such as displaying recent transactions in a banking app.
 - [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction). Donate the shortcut using an interaction when the action involves a task the user accomplishes with your app, such as recording activity in a ski and snowboard tracking app.
 
 > ❗ **Important**:  In iOS 17 and later, the Journal app encourages people to reflect and write about their day-to-day experiences. If your app donates activities or interactions to SiriKit, the subject matter of the interaction may appear as a suggestion in the Journal app, or other apps that utilize the [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) framework.
-
- In iOS 17 and later, the Journal app encourages people to reflect and write about their day-to-day experiences. If your app donates activities or interactions to SiriKit, the subject matter of the interaction may appear as a suggestion in the Journal app, or other apps that utilize the [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) framework.
 
 ##### Donate a User Activity
 
@@ -48,8 +44,6 @@ Before diving into the source code, look through the list of system-provided int
 To donate the intent, create an instance of the intent class. Set its parameter values and add images to the parameters as needed. To recommend a voice phrase that the user may want to add to Siri, set the intent’s [`suggestedInvocationPhrase`](https://developer.apple.com/documentation/intents/inintent/suggestedinvocationphrase) property to a string containing the phrase.
 
 > ❗ **Important**:  Siri reads the Intent Definition file to determine the intent and parameter combinations that an app supports for prediction. In order to help Siri make the best possible suggestions, add all the system-provided and custom intents your app supports and their parameter combinations to your Intent Definition file.
-
- Siri reads the Intent Definition file to determine the intent and parameter combinations that an app supports for prediction. In order to help Siri make the best possible suggestions, add all the system-provided and custom intents your app supports and their parameter combinations to your Intent Definition file.
 
 After creating the intent, create an instance of [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) and call its [`donate(completion:)`](https://developer.apple.com/documentation/intents/ininteraction/donate(completion:)) method, passing in the intent. This tells Siri about the shortcut.
 
@@ -93,4 +87,4 @@ Even if you provide an Intents App Extension, you should always implement the [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/donating-shortcuts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/donating-shortcuts)*

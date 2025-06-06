@@ -28,8 +28,6 @@ The Performance section includes the total GPU time and the number of vertices. 
 
 > **Note**: If you don’t select the Profile after Replay checkbox in the Metal Capture popover (see [`Capturing a Metal workload in Xcode`](capturing-a-metal-workload-in-xcode.md)) or the Profile GPU Trace checkbox in the Replay window (see [`Replaying a GPU trace file`](replaying-a-gpu-trace-file.md)), the performance section doesn’t show any statistics. To see the statistics, click the Profile button and wait for profiling to finish.
 
-If you don’t select the Profile after Replay checkbox in the Metal Capture popover (see [`Capturing a Metal workload in Xcode`](capturing-a-metal-workload-in-xcode.md)) or the Profile GPU Trace checkbox in the Replay window (see [`Replaying a GPU trace file`](replaying-a-gpu-trace-file.md)), the performance section doesn’t show any statistics. To see the statistics, click the Profile button and wait for profiling to finish.
-
 ![A screenshot of the Performance section when there isn’t any profiling data displaying. The Profile button is highlighted.](https://docs-assets.developer.apple.com/published/684e8b3148503f6c9bbfad5864245538/gputools-metal-debugger-sp-no-profile%402x.png)
 
 The Memory section includes a brief overview of GPU memory for various resource types, such as textures and buffers. If your Metal workload is using a large amount of memory, consider optimizing the memory use. You can also click the Show Memory button to open the Memory viewer and discover which aspects of your Metal workload are using the most memory (see [`Analyzing memory usage`](analyzing-memory-usage.md)).
@@ -96,4 +94,4 @@ The following additional filter tools appear to the right:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-your-metal-workload)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-your-metal-workload)*

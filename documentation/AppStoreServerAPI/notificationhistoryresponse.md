@@ -1,6 +1,6 @@
 # NotificationHistoryResponse
 
-**Framework**: App Store Server API  
+**Framework**: Appstoreserverapi  
 **Kind**: dictionary
 
 A response that contains the App Store Server Notifications history for your app.
@@ -26,8 +26,6 @@ The notification history response contains a maximum of 20 notification history 
 
 > **Note**:  The notifications in the history records reflect the state of an in-app purchase at the time the App Store originally sent the notification, and may not reflect its current state. To get the current state of auto-renewable subscriptions, call the [`Get All Subscription Statuses`](get-all-subscription-statuses.md) endpoint. For all other in-app purchase types, call the [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint.
 
- The notifications in the history records reflect the state of an in-app purchase at the time the App Store originally sent the notification, and may not reflect its current state. To get the current state of auto-renewable subscriptions, call the [`Get All Subscription Statuses`](get-all-subscription-statuses.md) endpoint. For all other in-app purchase types, call the [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint.
-
 ## Topics
 
 ### Data types
@@ -48,4 +46,4 @@ The notification history response contains a maximum of 20 notification history 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/notificationhistoryresponse)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/notificationhistoryresponse)*

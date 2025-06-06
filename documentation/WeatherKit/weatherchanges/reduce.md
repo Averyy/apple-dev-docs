@@ -48,8 +48,6 @@ If the sequence has no elements, `nextPartialResult` is never executed and `init
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## Parameters
 
 - `initialResult`: The value to use as the initial accumulating value.    is passed to   the first time the   closure is executed.

@@ -1,6 +1,6 @@
 # compactMap(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.
@@ -41,8 +41,6 @@ let compactMapped: [Int] = possibleNumbers.compactMap { str in Int(str) }
 ```
 
 > **Note**: O(), where  is the length of this sequence.
-
-O(), where  is the length of this sequence.
 
 ## Parameters
 

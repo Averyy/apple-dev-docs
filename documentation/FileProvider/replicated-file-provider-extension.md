@@ -1,6 +1,6 @@
 # Replicated File Provider extension
 
-**Framework**: File Provider
+**Framework**: Fileprovider
 
 Build a File Provider extension that syncs the local copies of your files with your remote storage.
 
@@ -15,8 +15,6 @@ At a minimum, the File Provider extension needs to perform the following:
 - Implement a class that adopts the [`NSFileProviderItemVersion`](nsfileprovideritemversion.md) protocol to represent the items (directories and files) enumerated by your file provider.
 
 > **Note**:  The system uses two different enumerators. The first lets the system enumerate items from your remote storage. The second lets your app enumerate the items stored locally by the system. You must implement the first enumerator, returning it when the system calls your [`enumerator(for:request:)`](nsfileproviderenumerating/enumerator(for:request:).md) method. The system provides the second enumerator when you call methods like the [`NSFileProviderManager`](nsfileprovidermanager.md) class’s [`enumeratorForMaterializedItems()`](nsfileprovidermanager/enumeratorformaterializeditems().md) method.
-
- The system uses two different enumerators. The first lets the system enumerate items from your remote storage. The second lets your app enumerate the items stored locally by the system. You must implement the first enumerator, returning it when the system calls your [`enumerator(for:request:)`](nsfileproviderenumerating/enumerator(for:request:).md) method. The system provides the second enumerator when you call methods like the [`NSFileProviderManager`](nsfileprovidermanager.md) class’s [`enumeratorForMaterializedItems()`](nsfileprovidermanager/enumeratorformaterializeditems().md) method.
 
 Your File Provider extension can add custom actions to the file browser’s context menu using the [`File Provider UI`](https://developer.apple.com/documentation/FileProviderUI) framework. You can also define custom services to communicate with the host app using [`NSFileProviderService`](https://developer.apple.com/documentation/Foundation/NSFileProviderService). Use these interfaces to add features that aren’t provided by the base API.
 
@@ -107,4 +105,4 @@ Your File Provider extension can add custom actions to the file browser’s cont
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/replicated-file-provider-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/replicated-file-provider-extension)*

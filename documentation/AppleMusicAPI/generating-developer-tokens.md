@@ -1,6 +1,6 @@
 # Generating Developer Tokens
 
-**Framework**: Apple Music API
+**Framework**: Applemusicapi
 
 Generate a developer token needed to make requests to Apple Music API.
 
@@ -26,8 +26,6 @@ Construct a developer token as a JSON object whose header contains:
 
 > ❗ **Important**:  Apple Music supports only developer tokens signed with the ES256 algorithm. Apple Music rejects unsecured developer tokens or developer tokens signed with other algorithms. These rejections result in a `401` error code.
 
- Apple Music supports only developer tokens signed with the ES256 algorithm. Apple Music rejects unsecured developer tokens or developer tokens signed with other algorithms. These rejections result in a `401` error code.
-
 In the  payload of the token, include:
 
 - The  (`iss`) registered claim key, whose value is your 10-character Team ID, obtained from your developer account
@@ -36,8 +34,6 @@ In the  payload of the token, include:
 - Optional, but recommended for web clients, use the  (`origin`). Only use this JWT if the origin header of the request matches one of the values in the array. This addition helps prevent unauthorized use of the tokens. For example: “`origin`”`:[`”`https://example.com`”`,`”`https://music.example.com`”`]`.
 
 > 💡 **Tip**:  To locate your Team ID, sign in to your [`developer account`](https://developer.apple.comhttps://developer.apple.com/account), and click Membership in the sidebar. Your Team ID appears in the Membership Information section under the team name.
-
- To locate your Team ID, sign in to your [`developer account`](https://developer.apple.comhttps://developer.apple.com/account), and click Membership in the sidebar. Your Team ID appears in the Membership Information section under the team name.
 
 A decoded developer token has the following format.
 
@@ -56,8 +52,6 @@ A decoded developer token has the following format.
 After you create the token, sign it with your MusicKit private key using the ES256 algorithm.
 
 > **Note**:  ES256 is the [`JSON Web Algorithms (JWA)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
-
- ES256 is the [`JSON Web Algorithms (JWA)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
 
 ##### Authorize Requests
 
@@ -93,4 +87,4 @@ Apple Music API limits the number of requests your app can make using a develope
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/generating-developer-tokens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/generating-developer-tokens)*

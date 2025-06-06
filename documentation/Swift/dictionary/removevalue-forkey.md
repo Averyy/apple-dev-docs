@@ -50,8 +50,6 @@ if let value = hues.removeValue(forKey: "Cerise") {
 
 > **Note**: O(), where  is the number of key-value pairs in the dictionary.
 
-O(), where  is the number of key-value pairs in the dictionary.
-
 ## Parameters
 
 - `key`: The key to remove along with its associated value.

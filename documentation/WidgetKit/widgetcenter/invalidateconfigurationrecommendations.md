@@ -28,8 +28,6 @@ In watchOS, call this function when your app receives new data for preconfigured
 
 > **Note**: On platforms that offer a dedicated user interface for configuring widgets — for example, iOS or macOS — `invalidateConfigurationRecommendations()` is inactive.
 
-On platforms that offer a dedicated user interface for configuring widgets — for example, iOS or macOS — `invalidateConfigurationRecommendations()` is inactive.
-
 
 ---
 

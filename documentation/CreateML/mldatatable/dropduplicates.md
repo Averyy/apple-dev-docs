@@ -1,6 +1,6 @@
 # dropDuplicates()
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Creates a subset of the table by removing all duplicate rows.
@@ -26,8 +26,6 @@ A new data table.
 #### Discussion
 
 > **Note**: The order of the rows may not be preserved.
-
-The order of the rows may not be preserved.
 
 ## See Also
 

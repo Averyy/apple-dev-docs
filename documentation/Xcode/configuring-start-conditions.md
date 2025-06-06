@@ -26,8 +26,6 @@ Additionally, configure your workflow and its start conditions in the Xcode Clou
 
 > **Note**: You need to use Xcode to initially configure your project or workspace to use Xcode Cloud. After you’ve started your first build, you can manage workflows in either Xcode or App Store Connect.
 
-You need to use Xcode to initially configure your project or workspace to use Xcode Cloud. After you’ve started your first build, you can manage workflows in either Xcode or App Store Connect.
-
 ##### Review the Default Start Condition
 
 When you create a new workflow, Xcode configures a default workflow that uses the Branch Changes start condition for each change to your repository’s default branch. Even if the workflow doesn’t take a lot of time to complete, starting a new build for every change from your repository’s default branch can be impractical. For example, a workflow that runs UI tests on many simulated devices can take a significant amount of time and slow your development cycle. To start builds less frequently, use a different start condition or configure Xcode Cloud to monitor or ignore changes to specific files or folders as described in [`Monitor or ignore specific files and folders`](configuring-start-conditions#Monitor-or-ignore-specific-files-and-folders.md) below.
@@ -44,8 +42,6 @@ First, open your workflow in Xcode or App Store Connect. Select or add the Branc
 ![A screenshot of Xcode that shows a workflow’s Start Condition section with configured custom branches that begin with the string “feature”.](https://docs-assets.developer.apple.com/published/1255d2063c06efd43c8ff07693beb332/Configuring-Start-Conditions-3%402x.png)
 
 > 💡 **Tip**: Instead of specifying several custom branches, configure a workflow to start a build from every branch that starts with a custom string. For example, enter `feature` and choose “Branches beginning with feature”.
-
-Instead of specifying several custom branches, configure a workflow to start a build from every branch that starts with a custom string. For example, enter `feature` and choose “Branches beginning with feature”.
 
 You can further customize the Branch Changes start condition with the Custom Conditions setting. For more information, see [`Monitor or ignore specific files and folders`](configuring-start-conditions#Monitor-or-ignore-specific-files-and-folders.md) below.
 
@@ -74,8 +70,6 @@ Similar to how you can configure a workflow that starts a new build if a branch 
 
 > 💡 **Tip**: Instead of specifying several custom tags, configure a workflow to start a build from every tag that starts with a given string. For example, enter `v1` and choose “Tags beginning with v1”.
 
-Instead of specifying several custom tags, configure a workflow to start a build from every tag that starts with a given string. For example, enter `v1` and choose “Tags beginning with v1”.
-
 You can further customize the Branch Changes start condition with the Custom Conditions setting.
 
 ##### Monitor or Ignore Specific Files and Folders
@@ -100,8 +94,6 @@ If you choose Filename, don’t include a wildcard like `*` in the filename. For
 
 > **Note**: A start condition’s Custom Conditions setting can either start or skip a build, not both.
 
-A start condition’s Custom Conditions setting can either start or skip a build, not both.
-
 ##### Skip a Build
 
 When you push changes to your Git repository in quick succession — for example, in early development of your app — you may want Xcode Cloud to ignore a change and not start a build. To tell Xcode Cloud to skip a build when you push changes, include `[ci skip]` in the title or message of the latest commit you push to your remote repository.
@@ -125,4 +117,4 @@ Team members can manually start an Xcode Cloud build for workflows you configure
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-start-conditions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-start-conditions)*

@@ -1,6 +1,6 @@
 # Applying temporal antialiasing and upscaling using MetalFX
 
-**Framework**: MetalFX
+**Framework**: Metalfx
 
 Reduce render workloads while increasing image detail with MetalFX.
 
@@ -13,8 +13,6 @@ Reduce render workloads while increasing image detail with MetalFX.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [`10103: Boost performance with MetalFX upscaling`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10103/).
-
-This sample code project is associated with WWDC22 session [`10103: Boost performance with MetalFX upscaling`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10103/).
 
 ##### Configure the Sample Code Project
 
@@ -34,4 +32,4 @@ This sample code project requires the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalfx/applying-temporal-antialiasing-and-upscaling-using-metalfx)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MetalFX/applying-temporal-antialiasing-and-upscaling-using-metalfx)*

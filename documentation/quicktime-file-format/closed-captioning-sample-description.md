@@ -1,6 +1,6 @@
 # Closed captioning sample description
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that defines how to interpret closed captioning media data.
@@ -12,8 +12,6 @@ The closed captioning sample description contains information that defines how t
 The data format field in the sample description must be set to `'c608'` or `'c708'`. A closed caption track must use only one data format.
 
 > **Note**: Closed caption tracks with data formats other than `'c608'` or `'c708'` are not defined by this specification. Unrecognized data formats should be ignored.
-
-Closed caption tracks with data formats other than `'c608'` or `'c708'` are not defined by this specification. Unrecognized data formats should be ignored.
 
 ## See Also
 

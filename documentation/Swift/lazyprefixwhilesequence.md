@@ -25,8 +25,6 @@ struct LazyPrefixWhileSequence<Base> where Base : Sequence
 
 > **Note**: When `LazyPrefixWhileSequence` wraps a collection type, the performance of accessing `endIndex` depends on how many elements satisfy the predicate at the start of the collection, and might not offer the usual performance given by the `Collection` protocol. Accessing `endIndex`, the `last` property, or calling methods that depend on moving indices might not have the documented complexity.
 
-When `LazyPrefixWhileSequence` wraps a collection type, the performance of accessing `endIndex` depends on how many elements satisfy the predicate at the start of the collection, and might not offer the usual performance given by the `Collection` protocol. Accessing `endIndex`, the `last` property, or calling methods that depend on moving indices might not have the documented complexity.
-
 ## Topics
 
 ### Type Aliases
@@ -72,4 +70,4 @@ When `LazyPrefixWhileSequence` wraps a collection type, the performance of acces
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/lazyprefixwhilesequence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/lazyprefixwhilesequence)*

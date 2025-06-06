@@ -1,6 +1,6 @@
 # NSPageController
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An object that controls swipe navigation and animations between views or view content.
@@ -22,8 +22,6 @@ class NSPageController
 Conceptually, the page controller manages swiping between an array of pages, the [`arrangedObjects`](nspagecontroller/arrangedobjects.md). Using the [`selectedIndex`](nspagecontroller/selectedindex.md) property, you can determine how many pages forward or backward the user may navigate.
 
 > **Note**:  When using history mode, do not wire `pageController.view` to an [`NSSplitView`](nssplitview.md) subview. This will actually cause a 3rd split when the private transition view is put in the view hierarchy. You can work around this by using an empty [`NSView`](nsview.md) instance as the [`NSSplitView`](nssplitview.md) subview and placing the real contents in a subview of the empty view.
-
- When using history mode, do not wire `pageController.view` to an [`NSSplitView`](nssplitview.md) subview. This will actually cause a 3rd split when the private transition view is put in the view hierarchy. You can work around this by using an empty [`NSView`](nsview.md) instance as the [`NSSplitView`](nssplitview.md) subview and placing the real contents in a subview of the empty view.
 
 ##### Page Controller Modes
 
@@ -152,4 +150,4 @@ During page controller initiated animations, [`pageControllerWillStartLiveTransi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nspagecontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nspagecontroller)*

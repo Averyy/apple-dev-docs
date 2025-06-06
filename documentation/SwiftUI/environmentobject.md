@@ -1,6 +1,6 @@
 # EnvironmentObject
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A property wrapper type for an observable object that a parent or ancestor view supplies.
@@ -26,8 +26,6 @@ A property wrapper type for an observable object that a parent or ancestor view 
 An environment object invalidates the current view whenever the observable object that conforms to [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) changes. If you declare a property as an environment object, be sure to set a corresponding model object on an ancestor view by calling its [`environmentObject(_:)`](view/environmentobject(_:).md) modifier.
 
 > **Note**: If your observable object conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, use [`Environment`](environment.md) instead of `EnvironmentObject` and set the model object in an ancestor view by calling its [`environment(_:)`](view/environment(_:).md) or [`environment(_:_:)`](view/environment(_:_:).md) modifiers.
-
-If your observable object conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, use [`Environment`](environment.md) instead of `EnvironmentObject` and set the model object in an ancestor view by calling its [`environment(_:)`](view/environment(_:).md) or [`environment(_:_:)`](view/environment(_:_:).md) modifiers.
 
 ## Topics
 
@@ -58,4 +56,4 @@ If your observable object conforms to the [`Observable`](https://developer.apple
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentobject)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentobject)*

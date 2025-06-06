@@ -1,6 +1,6 @@
 # Creating USD files for Apple devices
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Generate 3D assets that render as expected.
 
@@ -13,8 +13,6 @@ All three renderers use a physically based rendering (PBR) technique that the US
 USD and many DCCs also support a second PBR technique called the  (sometimes also called the ). The specular workflow renders assets by using another algorithm that takes different input values. Only Storm supports the specular workflow, so for maximum compatibility, use metallic workflow shaders in your DCC, or your preview renders won’t accurately represent how your final rendered asset looks.
 
 > **Note**: Find more information and an example shader implementation for both of USD’s PBR workflows by reading the [`USDPreviewSurface shader page`](https://developer.apple.comhttps://graphics.pixar.com/usd/release/spec_usdpreviewsurface.html) in the USD specification.
-
-Find more information and an example shader implementation for both of USD’s PBR workflows by reading the [`USDPreviewSurface shader page`](https://developer.apple.comhttps://graphics.pixar.com/usd/release/spec_usdpreviewsurface.html) in the USD specification.
 
 #### Target a Renderer
 
@@ -32,15 +30,11 @@ The USD adoption process often results in changes to proposed schemas before the
 
 > **Note**: Only the RealityKit renderer supports custom preliminary schemas.
 
-Only the RealityKit renderer supports custom preliminary schemas.
-
 #### Target Your Use of Subdivision
 
 USD supports a feature called , which tells the renderer to generate additional geometry on-the-fly to make the entity render more smoothly. Target your use of this feature to instances when you most need smooth rendering. Each level of subdivision increases the number of rendered polygons in the model by a factor of four, which can have substantial performance implications.
 
 > **Note**: The default `subdivisionScheme` value in USD is `catmullClark`, a subdivision surfaces algorithm. This means subdivision surfaces is automatically enabled for assets that don’t explicitly include a subdivision scheme. To ensure that subdivision surfaces is not enabled for your asset, explicitly set `subdivisionScheme` to `none` when exporting from a DCC. For more information, see the [`documentation for GetSubdivisionSchemeAttr() in the USD specification.`](https://developer.apple.comhttps://graphics.pixar.com/usd/release/api/class_usd_geom_mesh.html#a01c7ff0dc2e9b6be9f09db6cfafb7c0a) You can also use the support scripts below to set `subdivisionScheme` to `none` automatically in your USD files.
-
-The default `subdivisionScheme` value in USD is `catmullClark`, a subdivision surfaces algorithm. This means subdivision surfaces is automatically enabled for assets that don’t explicitly include a subdivision scheme. To ensure that subdivision surfaces is not enabled for your asset, explicitly set `subdivisionScheme` to `none` when exporting from a DCC. For more information, see the [`documentation for GetSubdivisionSchemeAttr() in the USD specification.`](https://developer.apple.comhttps://graphics.pixar.com/usd/release/api/class_usd_geom_mesh.html#a01c7ff0dc2e9b6be9f09db6cfafb7c0a) You can also use the support scripts below to set `subdivisionScheme` to `none` automatically in your USD files.
 
 #### Target Your Use of Double Sided Geometry
 
@@ -48,15 +42,11 @@ USD geometry can be set to render both sides of a surface by setting the `double
 
 > **Note**: The default `doubleSided` value is off, however some DCCs enable it automatically during export. It is recommended to review your applications export settings to make sure it is only enabled when desired. You can also use the support scripts below to turn off `doubleSided` on your geometry.
 
-The default `doubleSided` value is off, however some DCCs enable it automatically during export. It is recommended to review your applications export settings to make sure it is only enabled when desired. You can also use the support scripts below to turn off `doubleSided` on your geometry.
-
 #### Limit Rigged Models to a Single Skeleton
 
 USD supports skeletal animation, which you can use to animate a character or other complex model by manipulating a hierarchy of bones or joints to deform the model. Many DCCs allow you to use multiple  (sometimes called  or ), to deform a single mesh. For example, for a character model, you might create one skeleton to handle facial animation and a second one to control general body movement. Before exporting models with multiple skeletons to a USD file, merge all the skeletons into a single joint or bone hierarchy. Models with multiple hierarchies can cause performance and compatibility issues with all three renderers.
 
 > **Note**: All DCCs implement skeletal animation using either a hierarchy of bones or joints. Both approaches deform the model for animation, but use different underlying data representations. DCCs that use bone-based skeletons automatically convert the skeleton to joints when exporting to USD, because USD only supports joint-based skeletons.
-
-All DCCs implement skeletal animation using either a hierarchy of bones or joints. Both approaches deform the model for animation, but use different underlying data representations. DCCs that use bone-based skeletons automatically convert the skeleton to joints when exporting to USD, because USD only supports joint-based skeletons.
 
 #### Include Material and Skeleton Bindings
 
@@ -64,15 +54,11 @@ USD requires that any geometry with an applied material use the `MaterialBinding
 
 > **Note**: Some DCC versions may not correctly apply these bindings in a USD. You can use the support script below to automatically apply them to geometry that has the attributes.
 
-Some DCC versions may not correctly apply these bindings in a USD. You can use the support script below to automatically apply them to geometry that has the attributes.
-
 #### Expose Configurations As Variants
 
 USD supports the ability to have multiple representations of an object using a feature called `variants`. USD files define the primary hierarchy path in the file using the `defaultPrim` metadata. Variants that are defined this `defaultPrim` hierarchy path are shown to the user as configuration options when using QuickLook with USDZ files. The variant configuration interface is available starting with visionOS 2, macOS 15, iOS 18 and iPadOS 18. When a configuration option is selected, the appearance of the USD being viewed in QuickLook will change to respect the selected variant.
 
 > **Note**: Variants can be authored in some DCCs or using the USD API. You can also use the support script below to combine USDZ files into a single file as variants, as long as they only vary in their material or skeleton animations.
-
-Variants can be authored in some DCCs or using the USD API. You can also use the support script below to combine USDZ files into a single file as variants, as long as they only vary in their material or skeleton animations.
 
 #### Support Scripts
 
@@ -102,4 +88,4 @@ To download these scripts, see [`USD Support Scripts`](https://developer.apple.c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-usd-files-for-apple-devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-usd-files-for-apple-devices)*

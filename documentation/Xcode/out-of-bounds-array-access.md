@@ -10,8 +10,6 @@ Use this check to detect attempts to access indexes that exceed the array’s bo
 
 > **Note**: This check doesn’t detect out-of-bounds accesses into heap-allocated arrays.
 
-This check doesn’t detect out-of-bounds accesses into heap-allocated arrays.
-
 ##### Out of Bounds Array Access in C
 
 In the following example, out-of-bounds access of `array` occurs on the last iteration of the loop:
@@ -63,4 +61,4 @@ Ensure that accessed indexes don’t exceed the array’s bounds.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/out-of-bounds-array-access)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/out-of-bounds-array-access)*

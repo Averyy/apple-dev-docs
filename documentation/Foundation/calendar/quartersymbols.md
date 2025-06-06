@@ -26,8 +26,6 @@ For example, for English in the Gregorian calendar, returns `["1st quarter", "2n
 
 > **Note**:  By default, Calendars have no locale set. If you wish to receive a localized answer, be sure to set the `locale` property first - most likely to `Locale.autoupdatingCurrent`.
 
- By default, Calendars have no locale set. If you wish to receive a localized answer, be sure to set the `locale` property first - most likely to `Locale.autoupdatingCurrent`.
-
 ## See Also
 
 - [var shortQuarterSymbols: [String]](calendar/shortquartersymbols.md)

@@ -1,6 +1,6 @@
 # DCAppAttestService
 
-**Framework**: DeviceCheck  
+**Framework**: Devicecheck  
 **Kind**: class
 
 A service that you use to validate the instance of your app running on a device.
@@ -35,8 +35,6 @@ Use the [`shared`](dcappattestservice/shared.md) instance of the [`DCAppAttestSe
 For more information about how to support App Attest in your app, see [`Establishing your app’s integrity`](establishing-your-app-s-integrity.md). For information about the complementary procedures you implement on your server, see [`Validating apps that connect to your server`](validating-apps-that-connect-to-your-server.md).
 
 > **Note**: To use the App Attest service, your app must have an app ID that you register on the [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account/) website.
-
-To use the App Attest service, your app must have an app ID that you register on the [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account/) website.
 
 ## Topics
 
@@ -82,4 +80,4 @@ To use the App Attest service, your app must have an app ID that you register on
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicecheck/dcappattestservice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceCheck/dcappattestservice)*

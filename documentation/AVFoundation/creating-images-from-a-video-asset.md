@@ -1,6 +1,6 @@
 # Creating images from a video asset
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Display images for specific times within the media timeline by generating images from a video’s frames.
 
@@ -22,8 +22,6 @@ let generator = AVAssetImageGenerator(asset: asset)
 ```
 
 > **Note**:  You can generate images from an HLS stream that provides a media playlist with the `EXT-X-I-FRAMES-ONLY` tag. The durations the playlist specifies between I-frames determines the time resolution of image-generation requests.
-
- You can generate images from an HLS stream that provides a media playlist with the `EXT-X-I-FRAMES-ONLY` tag. The durations the playlist specifies between I-frames determines the time resolution of image-generation requests.
 
 An image generator is ready to produce images when you create it, but it also provides configurable properties that you can use to customize its behavior. One property that you typically set is its [`maximumSize`](avassetimagegenerator/maximumsize.md). By default, a generator produces images at the video’s native resolution, which is often larger than required, and can be CPU and memory intensive. Instead, set a value for its [`maximumSize`](avassetimagegenerator/maximumsize.md) property to constrain the size of its output. For example, you can constrain the width to a specific value, and specify `0` to proportionally scale the height, by setting a maximum size as follows.
 
@@ -86,4 +84,4 @@ This method returns an asynchronous sequence of type [`AVAssetImageGenerator.Ima
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/creating-images-from-a-video-asset)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/creating-images-from-a-video-asset)*

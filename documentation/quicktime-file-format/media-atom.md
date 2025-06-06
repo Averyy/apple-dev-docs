@@ -1,6 +1,6 @@
 # Media atom ('mdia')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that describes and defines a track’s media type and sample data.
@@ -10,8 +10,6 @@ An atom that describes and defines a track’s media type and sample data.
 The media atom has an atom type of `'mdia'`. It must contain a media header atom (`'mdhd'`), and it can contain a handler reference (`'hdlr'`) atom, media information (`'minf'`) atom, and user data (`'udta'`) atom.
 
 > **Note**: Do not confuse the media atom (`'mdia'`) with the media data atom (`'mdat'`). The media atom contains only references to media data; the media data atom contains the actual media samples.
-
-Do not confuse the media atom (`'mdia'`) with the media data atom (`'mdat'`). The media atom contains only references to media data; the media data atom contains the actual media samples.
 
 The layout of a media atom is as follows.
 

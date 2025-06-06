@@ -1,6 +1,6 @@
 # textField(_:textCompletionFor:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method  
 **Required**: Yes
 
@@ -63,8 +63,6 @@ Recipe: ┃ Applesauce                   ┃
 ```
 
 > **Note**: This function may or may not be called when an item is highlighted, depending on a variety of factors. Don’t depend upon the timing of when this function is called. Solely use it to return the full completion text for a particular item.
-
-This function may or may not be called when an item is highlighted, depending on a variety of factors. Don’t depend upon the timing of when this function is called. Solely use it to return the full completion text for a particular item.
 
 ## Parameters
 

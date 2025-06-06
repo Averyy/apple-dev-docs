@@ -1,6 +1,6 @@
 # Creating visual effects with SwiftUI
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Add scroll effects, rich color treatments, custom transitions, and advanced effects using shaders and a text renderer.
 
@@ -12,8 +12,6 @@ Add scroll effects, rich color treatments, custom transitions, and advanced effe
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10151: [`Create custom visual effects in SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10151/).
-
-This sample code project is associated with WWDC24 session 10151: [`Create custom visual effects in SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10151/).
 
 ## See Also
 
@@ -29,4 +27,4 @@ This sample code project is associated with WWDC24 session 10151: [`Create custo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/creating-visual-effects-with-swiftui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/creating-visual-effects-with-swiftui)*

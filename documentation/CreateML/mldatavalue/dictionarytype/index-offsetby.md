@@ -1,6 +1,6 @@
 # index(_:offsetBy:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Returns an index that is the specified distance from the given index.
@@ -37,8 +37,6 @@ print(s[i])
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the absolute value of `distance`.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the absolute value of `distance`.
 
 ## Parameters
 

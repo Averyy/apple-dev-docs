@@ -1,6 +1,6 @@
 # invalidateDetents()
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Notifies the sheet to re-evaluate its detent value in the next layout pass.
@@ -24,8 +24,6 @@ When an external input (like a captured property) to a custom detent changes, ca
 To animate custom detents to their new heights, call this method within [`animateChanges(_:)`](uisheetpresentationcontroller/animatechanges(_:).md).
 
 > **Note**:  You don’t need to call this method if [`detents`](uisheetpresentationcontroller/detents.md) only contains system detents, or if your custom detents only use information from the passed-in context.
-
- You don’t need to call this method if [`detents`](uisheetpresentationcontroller/detents.md) only contains system detents, or if your custom detents only use information from the passed-in context.
 
 
 ---

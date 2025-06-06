@@ -1,6 +1,6 @@
 # Placing objects and handling 3D interaction
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Place virtual content at tracked, real-world locations, and enable the user to interact with virtual content by using gestures.
 
@@ -16,8 +16,6 @@ The key facet of an AR experience is the ability to intermix virtual and real-wo
 To enable the user to put a virtual item on the real-world surface when they tap the screen, ARKit incorporates ray casting, which provides a 3D location in physical space that corresponds to the screen’s touch location. When the user rotates or otherwise moves the virtual items they place, you respond to the respective touch gestures and correlate that input to the virtual content’s look in the physical environment.
 
 > **Note**: ARKit requires a device with an A9 or later processor. ARKit is not available in iOS Simulator.
-
-ARKit requires a device with an A9 or later processor. ARKit is not available in iOS Simulator.
 
 #### Set a Goal to Coach the Users Movement
 
@@ -300,4 +298,4 @@ func coachingOverlayViewDidRequestSessionReset(_ coachingOverlayView: ARCoaching
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/placing-objects-and-handling-3d-interaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/placing-objects-and-handling-3d-interaction)*

@@ -1,6 +1,6 @@
 # ignore
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 Any child accessibility elements become hidden.
@@ -47,8 +47,6 @@ Before using the  [`ignore`](accessibilitychildbehavior/ignore.md)behavior, cons
 
 > **Note**: A new accessibility element is always created.
 
-A new accessibility element is always created.
-
 ## See Also
 
 - [static let combine: AccessibilityChildBehavior](accessibilitychildbehavior/combine.md)
@@ -59,4 +57,4 @@ A new accessibility element is always created.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/accessibilitychildbehavior/ignore)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/accessibilitychildbehavior/ignore)*

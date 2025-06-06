@@ -1,6 +1,6 @@
 # encoded(using:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Generates a column by encoding each element’s value.
@@ -27,8 +27,6 @@ A new column of encoded values.
 #### Discussion
 
 > **Note**: `ColumnEncodingError` when the encoder fails to encode an element.
-
-`ColumnEncodingError` when the encoder fails to encode an element.
 
 ## Parameters
 

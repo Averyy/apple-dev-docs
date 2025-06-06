@@ -1,6 +1,6 @@
 # LivePhotosKit JS
 
-**Framework**: LivePhotosKit JS  
+**Framework**: Livephotoskitjs  
 **Kind**: module
 
 Play Live Photos on the web.
@@ -26,8 +26,6 @@ Use the script tag and link to Apple’s hosted version of LivePhotosKit JS at [
 
 > **Note**:  The LivePhotosKit JS version number is in the URL. For example, 1 specifies LivePhotosKit JS 1.0.0.
 
- The LivePhotosKit JS version number is in the URL. For example, 1 specifies LivePhotosKit JS 1.0.0.
-
 1. Enable JavaScript strict mode.
 
 To enable strict mode for an entire script, put ‘use strict’ before any other statements.
@@ -37,12 +35,6 @@ To enable strict mode for an entire script, put ‘use strict’ before any othe
 ```
 
 > **Note**:  LivePhotosKit JS is also available through NPM at [`https://www.npmjs.com/package/livephotoskit`](https://developer.apple.comhttps://www.npmjs.com/package/livephotoskit). The install command is: `npm install --save livephotoskit`
-
- LivePhotosKit JS is also available through NPM at [`https://www.npmjs.com/package/livephotoskit`](https://developer.apple.comhttps://www.npmjs.com/package/livephotoskit).
-
-The install command is:
-
-`npm install --save livephotoskit`
 
 ##### Declarative Html
 
@@ -162,8 +154,6 @@ The LivePhotosKit JS player is supported on the following browsers:
 Live Photos consist of two components: a still photo and a video of the moments just before and after the photo is taken. Using one of the following methods will let you obtain the still photo as a JPG and the video as a MOV file.
 
 > ❗ **Important**:  If the assets are large, they will take a long time to download. If the photo takes too long, it will not be able to show the progress badge. To avoid this problem, the element that is being decorated to be a player should explicitly specify its height and width. Downsizing assets will greatly improve performance and reduce bandwidth usage.
-
- If the assets are large, they will take a long time to download. If the photo takes too long, it will not be able to show the progress badge. To avoid this problem, the element that is being decorated to be a player should explicitly specify its height and width. Downsizing assets will greatly improve performance and reduce bandwidth usage.
 
 A sample project is also [`available`](https://developer.apple.comhttps://developer.apple.com/library/content/samplecode/UsingPhotosFramework/Introduction/Intro.html).
 

@@ -28,8 +28,6 @@ This function adds a shared password item that will be accessible by Safari and 
 
 > **Note**:  Because a request involving shared web credentials may potentially require user interaction or other verification to be approved, this function is dispatched asynchronously; your code provides a completion handler that is called as soon as the results (if any) are available.
 
- Because a request involving shared web credentials may potentially require user interaction or other verification to be approved, this function is dispatched asynchronously; your code provides a completion handler that is called as soon as the results (if any) are available.
-
 When this function is called, the system tries to get the site association file from the server. If the file is unavailable, the sever returns a 500-599 code.
 
 ## Parameters

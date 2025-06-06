@@ -12,8 +12,6 @@ To ensure you see the most up-to-date debug information, set your app’s deploy
 
 > ❗ **Important**: The Shader Validation layer has a corresponding impact on GPU performance, and shaders might take longer to compile in runtime. This layer adds instrumentation code to all your GPU functions, which increases the number of times they access memory.
 
-The Shader Validation layer has a corresponding impact on GPU performance, and shaders might take longer to compile in runtime. This layer adds instrumentation code to all your GPU functions, which increases the number of times they access memory.
-
 For more information, see the WWDC20 video [`Debug GPU-side errors in Metal`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10616/) and the WWDC21 video [`Discover Metal debugging, profiling, and asset creation tools`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10157?time=770).
 
 ##### Enable Shader Validation in Xcode
@@ -70,8 +68,6 @@ To print the UIDs to Console or a `log stream` instance, set `MTL_SHADER_VALIDAT
 
 > **Note**: To see the logs, go to Action > Include Debug Messages in Console.
 
-To see the logs, go to Action > Include Debug Messages in Console.
-
 ![A screenshot of the Console.App window displaying dumped Shader Validation UIDs.](https://docs-assets.developer.apple.com/published/1b67f69cc82a8010b711b747ed1a96d0/gputools-runtime-shader-validation-uid-in-console%402x.png)
 
 ##### View Shader Validation Errors
@@ -106,4 +102,4 @@ If you discover an error in your shader, consider taking a capture (see [`Captur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/validating-your-apps-metal-shader-usage)*

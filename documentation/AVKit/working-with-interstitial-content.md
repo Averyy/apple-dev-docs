@@ -1,6 +1,6 @@
 # Working with Interstitial Content
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Present additional content alongside your main media presentation using HTTP Live Streaming support.
 
@@ -43,8 +43,6 @@ When you define interstitial time ranges, [`AVPlayerViewController`](avplayervie
 ![An abstract representation of a video player with a timeline along the bottom and two interstitial time ranges highlighted.](https://docs-assets.developer.apple.com/published/40ac9c27ddd298f45c0dd2163fde476b/media-3921828%402x.png)
 
 > **Note**:  The player interface’s collapsing of time ranges is only visual. Any programmatic operations you perform, such as seeking, happen on the full asset timeline, inclusive of interstitial content.
-
- The player interface’s collapsing of time ranges is only visual. Any programmatic operations you perform, such as seeking, happen on the full asset timeline, inclusive of interstitial content.
 
 ##### Enforce Linear Playback
 
@@ -176,4 +174,4 @@ playerItem.interstitialTimeRanges = appInterstitials
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/working-with-interstitial-content)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/working-with-interstitial-content)*

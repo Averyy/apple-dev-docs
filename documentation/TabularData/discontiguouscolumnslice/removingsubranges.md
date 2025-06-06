@@ -1,6 +1,6 @@
 # removingSubranges(_:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Returns a collection of the elements in this collection that are not represented by the given range set.
@@ -39,8 +39,6 @@ print(String(disemvoweled))
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

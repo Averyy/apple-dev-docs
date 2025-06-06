@@ -1,6 +1,6 @@
 # commit()
 
-**Framework**: BrowserEngineKit  
+**Framework**: Browserenginekit  
 **Kind**: method
 
 `commit` must be called on  instance and it must be the last call to each instance. note that it does not commit `CATransaction`s but rather commits the coordination of transactions in the render server. note that coordinators should have as constrained a lifespan as possible and will timeout if held open too long.
@@ -31,8 +31,6 @@ You need to add all relevant views and layer hierarchies to the transaction coor
 You need to call `commit()` as the last action on the transaction coordinator in all processes that use the same transaction coordinator.
 
 > **Note**:  Committing a transaction coordinator synchronizes changes committed in [`CATransaction`](https://developer.apple.com/documentation/QuartzCore/CATransaction) objects that affect the added views and layer hierarchies, it doesn’t commit the transactions. You call [`commit()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/commit()) on each relevant transaction.
-
- Committing a transaction coordinator synchronizes changes committed in [`CATransaction`](https://developer.apple.com/documentation/QuartzCore/CATransaction) objects that affect the added views and layer hierarchies, it doesn’t commit the transactions. You call [`commit()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/commit()) on each relevant transaction.
 
 ## See Also
 

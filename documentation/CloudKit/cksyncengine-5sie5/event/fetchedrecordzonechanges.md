@@ -1,6 +1,6 @@
 # CKSyncEngine.Event.FetchedRecordZoneChanges
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: struct
 
 A type that provides information about fetched record zone changes.
@@ -23,8 +23,6 @@ struct FetchedRecordZoneChanges
 #### Overview
 
 > **Note**:  Although CloudKit doesn’t guarantee the order of fetched record zone changes, the typical order for both deletions and modifications is oldest to newest.
-
- Although CloudKit doesn’t guarantee the order of fetched record zone changes, the typical order for both deletions and modifications is oldest to newest.
 
 ## Topics
 

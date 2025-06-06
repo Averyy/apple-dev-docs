@@ -1,6 +1,6 @@
 # Displaying a point cloud using scene depth
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Present a visualization of the physical environment by placing points based a scene’s depth data.
 
@@ -22,8 +22,6 @@ The following figure illustrates a point cloud from a single frame of data, rota
 The app cycles through depth  values (see [`confidenceMap`](ardepthdata/confidencemap.md), enlarges the depth buffer, and toggles ARKit’s smooth depth option [`smoothedSceneDepth`](arconfiguration/framesemantics-swift.struct/smoothedscenedepth.md). By applying the user’s selections to the point cloud live, the user can see the difference that the settings make throughout the experience.
 
 > **Note**: WWDC20 session [`10611: Explore ARKit 4`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10611/) references a prior version of this sample app that accumulates points in a cloud. For the original version of the app as shown in the session, clone the initial commit from the Git repository in the download’s root folder.
-
-WWDC20 session [`10611: Explore ARKit 4`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10611/) references a prior version of this sample app that accumulates points in a cloud. For the original version of the app as shown in the session, clone the initial commit from the Git repository in the download’s root folder.
 
 For a practical application of ARKit’s depth data, see [`Creating a fog effect using scene depth`](creating-a-fog-effect-using-scene-depth.md).
 
@@ -124,8 +122,6 @@ half4 rgbaResult = half4(y + 1.402h * uv.y, y - 0.7141h * uv.y - 0.3441h * uv.x,
 ```
 
 > **Note**: For brevity, the sample project demonstrates YUV to RGB conversion inline. To see an example that extracts static conversion factors to a 4 x 4 matrix, see [`Displaying an AR Experience with Metal`](displaying-an-ar-experience-with-metal.md).
-
-For brevity, the sample project demonstrates YUV to RGB conversion inline. To see an example that extracts static conversion factors to a 4 x 4 matrix, see [`Displaying an AR Experience with Metal`](displaying-an-ar-experience-with-metal.md).
 
 #### Set Up the Point Cloud View
 
@@ -437,4 +433,4 @@ fragment half4 planeFragmentShaderConfidence(ColorInOut in [[stage_in]], texture
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/displaying-a-point-cloud-using-scene-depth)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/displaying-a-point-cloud-using-scene-depth)*

@@ -14,8 +14,6 @@ Quantify and visualize where people are likely to look in an image.
 
 > **Note**: For more information about this sample code project, see [`WWDC 2019 Session 222: Understanding Images in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/222/).
 
-For more information about this sample code project, see [`WWDC 2019 Session 222: Understanding Images in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/222/).
-
 ## See Also
 
 - [Cropping Images Using Saliency](cropping-images-using-saliency.md)
@@ -30,4 +28,4 @@ For more information about this sample code project, see [`WWDC 2019 Session 222
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/highlighting-areas-of-interest-in-an-image-using-saliency)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/highlighting-areas-of-interest-in-an-image-using-saliency)*

@@ -17,8 +17,6 @@ The Contacts framework has a new fetch request to retrieve information from the 
 
 > ❗ **Important**: Your app needs to obtain permission from the user before accessing Contacts entries. See [`Requesting Authorization to Access Contacts`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/requesting_authorization_to_access_contacts) for details.
 
-Your app needs to obtain permission from the user before accessing Contacts entries. See [`Requesting Authorization to Access Contacts`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/requesting_authorization_to_access_contacts) for details.
-
 #### Adopt the Change History Event Visitor Protocol
 
 The [`CNChangeHistoryEvent`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryevent?language=objc) class encapsulates all possible changes that the system can make to the Contacts database, such as dropping cached information, adding a contact, or updating a group. To receive these changes in your app, create and use a class that conforms to the [`CNChangeHistoryEventVisitor`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor?language=objc) protocol. Classes adopting this protocol must implement the [`visitDropEverythingEvent:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/3113275-visitdropeverythingevent), [`visitAddContactEvent:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/3113269-visitaddcontactevent/), [`visitUpdateContactEvent:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/3113278-visitupdatecontactevent), and [`visitDeleteContactEvent:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/3113273-visitdeletecontactevent) instance methods.
@@ -114,8 +112,6 @@ fetchRequest.excludedTransactionAuthors = @[@"com.mycompany.myappname"];
 
 > **Note**: Transaction authors allow you to filter transactions returned in the fetched change history events. They don’t provide any information about the author responsible for making a given change.
 
-Transaction authors allow you to filter transactions returned in the fetched change history events. They don’t provide any information about the author responsible for making a given change.
-
 #### Execute the Change History Fetch Request
 
 Call [`enumeratorForChangeHistoryFetchRequest:error:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontactstore/3294190-enumeratorforchangehistoryfetchr?language=occ) on an instance of [`CNContactStore`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontactstore?language=objc) to execute the change history fetch request. Pass the created [`CNChangeHistoryFetchRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest?language=objc) object and a [`NSError`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/nserror?language=occ) object to the call.
@@ -142,8 +138,6 @@ for (CNChangeHistoryEvent *event in fetchResult.value) {
 If your app receives a drop everything event, enough has changed since the last time your app fetched the history changes that an incremental sync is no longer possible. Following the drop everything event, your app receives an add event for each contact and group currently in the database. This allows you to implement full syncs and incremental syncs using the same code.
 
 > ❗ **Important**: Using [`isKindOfClass`](https://developer.apple.comhttps://developer.apple.com/documentation/objectivec/1418956-nsobject/1418511-iskindofclass/) to determine the specific class of a change history event isn’t recommended. Use the protocol instance methods as described in [`Adopt the change history event visitor protocol`](tn3149-fetching-change-history-events#Adopt-the-change-history-event-visitor-protocol.md).
-
-Using [`isKindOfClass`](https://developer.apple.comhttps://developer.apple.com/documentation/objectivec/1418956-nsobject/1418511-iskindofclass/) to determine the specific class of a change history event isn’t recommended. Use the protocol instance methods as described in [`Adopt the change history event visitor protocol`](tn3149-fetching-change-history-events#Adopt-the-change-history-event-visitor-protocol.md).
 
 #### Save the Starting History Token
 
@@ -193,4 +187,4 @@ self.historyToken = fetchResult.currentHistoryToken;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3149-fetching-change-history-events)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3149-fetching-change-history-events)*

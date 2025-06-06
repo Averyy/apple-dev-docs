@@ -1,6 +1,6 @@
 # Injecting a script into a webpage
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Inject a script that you write for a Safari app extension into a webpage.
 
@@ -19,8 +19,6 @@ After specifying website access, add the script to your Safari app extension.
 3. For each script file, add a dictionary to the array. Each dictionary must have a `Script` key with a value that specifies the path (relative to the Resources directory of the bundle) to the script file to include.
 
 > **Note**:  By default, the system injects a script file when the extension has permission to access the webpage. However, you can specify additional dictionary keys to provide more fine-grained control over whether to inject that script file into the webpage. For more information, see Access and permissions.
-
- By default, the system injects a script file when the extension has permission to access the webpage. However, you can specify additional dictionary keys to provide more fine-grained control over whether to inject that script file into the webpage. For more information, see Access and permissions.
 
 If your app extension specifies multiple scripts to inject into the webpage, the scripts execute in the order in which they appear in the `Info.plist` file.
 
@@ -83,4 +81,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/injecting-a-script-into-a-webpage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/injecting-a-script-into-a-webpage)*

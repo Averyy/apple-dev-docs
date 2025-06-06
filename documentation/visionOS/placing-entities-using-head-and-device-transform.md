@@ -21,15 +21,11 @@ The sample code project uses RealityKit and ARKit, respectively, to position the
 
 > **Note**: See [`Design considerations for vision and motion`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10078?time=678) and [`Motion`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/motion) in the Human Interface Guidelines for guidance on continuously head-tracked entities.
 
-See [`Design considerations for vision and motion`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10078?time=678) and [`Motion`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/motion) in the Human Interface Guidelines for guidance on continuously head-tracked entities.
-
 #### Show Entities at a Persons Head Position
 
 To launch the hummingbird feeder at the position of the wearer’s head, the sample uses `AnchorEntity` with the anchoring target of [`AnchoringComponent.Target.head`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/Target-swift.enum/head). This target provides the center of the wearer’s head, rather than the position of the device itself. You can only use `AnchorEntity` in an immersive space. Although it allows you to anchor content to the wearer’s head, you can’t access its transform because there’s no authorization required. If you attempt to access the transform, the property returns the identity transform instead.
 
 > **Note**: You can get the transform of an `AnchorEntity` with a different [`AnchoringComponent.Target`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/Target-swift.enum), such as a hand, by using a [`SpatialTrackingSession`](https://developer.apple.com/documentation/RealityKit/SpatialTrackingSession) and requesting authorization from the person using the app.
-
-You can get the transform of an `AnchorEntity` with a different [`AnchoringComponent.Target`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/Target-swift.enum), such as a hand, by using a [`SpatialTrackingSession`](https://developer.apple.com/documentation/RealityKit/SpatialTrackingSession) and requesting authorization from the person using the app.
 
 The sample creates an `AnchorEntity` that anchors to the wearer’s head, and sets the [`AnchoringComponent.TrackingMode`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-swift.struct) to [`once`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-swift.struct/once) to stop tracking after the initial anchor. The head-positioned entity root contains both the feeder entity and the hummingbird entity, which the sample loads from Reality Composer Pro. The app adds the root entity as a subentity of the head anchor to track it. The sample then offsets the feeder from the center of the wearer’s head by setting the position.
 
@@ -65,8 +61,6 @@ This sample contains a hummingbird that reacts to the wearer while they move aro
 You can only use `queryDeviceAnchor` in an immersive space, but it doesn’t require authorization.
 
 > **Note**: `queryDeviceAnchor` gives you the transform of the device, not the wearer’s head. If you want to get the visual transform of the center of the wearer’s head, use `AnchorEntity(.head)`.
-
-`queryDeviceAnchor` gives you the transform of the device, not the wearer’s head. If you want to get the visual transform of the center of the wearer’s head, use `AnchorEntity(.head)`.
 
 The sample starts by creating a RealityKit system, which allows you to update the entities with each scene update. See [`Implementing systems for entities in a scene`](https://developer.apple.com/documentation/RealityKit/implementing-systems-for-entities-in-a-scene) for information on creating a system class and using components to query entities. In the system, the app creates a query for entities with the `FollowComponent` [`WorldTrackingProvider`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider) and an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) as follows:
 
@@ -106,8 +100,6 @@ public struct FollowSystem: System {
 The sample adds a custom [`Component`](https://developer.apple.com/documentation/RealityKit/Component) named `FollowComponent` to the root entity of the hummingbird entity, and then uses it to query the entities in the scene to apply the movement to.
 
 > ❗ **Important**: Make sure to register both the system and the component.
-
-Make sure to register both the system and the component.
 
 The following example shows how to query the device anchor and move the entity accordingly:
 
@@ -176,4 +168,4 @@ func startFollowMode() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/placing-entities-using-head-and-device-transform)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/placing-entities-using-head-and-device-transform)*

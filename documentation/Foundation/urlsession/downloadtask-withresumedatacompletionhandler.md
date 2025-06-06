@@ -45,8 +45,6 @@ If the request completes successfully, the `location` parameter of the completio
 
 > **Note**:  A download can be resumed only if it is an HTTP or HTTPS `GET` request, and only if the remote server supports byte-range requests (with the `Range` header) and provides the `ETag` or `Last-Modified` header in its responses. A download may also restart if the file on the server has been modified, or if the temporary file has been deleted because of low disk space.
 
- A download can be resumed only if it is an HTTP or HTTPS `GET` request, and only if the remote server supports byte-range requests (with the `Range` header) and provides the `ETag` or `Last-Modified` header in its responses. A download may also restart if the file on the server has been modified, or if the temporary file has been deleted because of low disk space.
-
 ## Parameters
 
 - `resumeData`: A data object that provides the data necessary to resume the download.

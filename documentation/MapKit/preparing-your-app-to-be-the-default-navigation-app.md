@@ -1,14 +1,12 @@
 # Preparing your app to be the default navigation app
 
-**Framework**: MapKit
+**Framework**: Mapkit
 
 Configure your navigation app so people can set it as the default on their devices.
 
 #### Overview
 
 > **Note**: The ability to make a specific app the default navigation app applies only to the European Union (EU).
-
-The ability to make a specific app the default navigation app applies only to the European Union (EU).
 
 #### Overview
 
@@ -37,8 +35,6 @@ You can use several of these parameters in combination to provide a number of ac
 
 > **Note**: The system doesn’t pass Apple place IDs, transportation modes, or route preferences to default navigation apps.
 
-The system doesn’t pass Apple place IDs, transportation modes, or route preferences to default navigation apps.
-
 #### Add the Geonavigation Url Type Support and Url Scheme
 
 Use the following steps to add the `geo-navigation` support to your app’s `Info.plist` file:
@@ -64,4 +60,4 @@ To submit your app to App Store Connect, it needs to meet the following criteria
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/preparing-your-app-to-be-the-default-navigation-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKit/preparing-your-app-to-be-the-default-navigation-app)*

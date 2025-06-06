@@ -1,6 +1,6 @@
 # abRecord(with:)
 
-**Framework**: EventKit  
+**Framework**: Eventkit  
 **Kind**: method
 
 Returns the address book record that represents the participant.
@@ -27,8 +27,6 @@ This method searches for a record match based on the participant’s email addre
 ##### Special Considerations
 
 > **Note**:  This instance method is only available on iOS. For macOS, see the [`abPerson(in:)`](ekparticipant/abperson(in:).md) instance method.
-
- This instance method is only available on iOS. For macOS, see the [`abPerson(in:)`](ekparticipant/abperson(in:).md) instance method.
 
 ## Parameters
 

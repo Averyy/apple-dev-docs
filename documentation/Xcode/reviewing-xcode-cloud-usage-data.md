@@ -25,8 +25,6 @@ After logging into [`App Store Connect`](https://developer.apple.comhttps://apps
 
 > **Note**: Every team member with access to App Store Connect can view usage data for the team but they can only view usage information for apps they have access to.
 
-Every team member with access to App Store Connect can view usage data for the team but they can only view usage information for apps they have access to.
-
 The following screenshot shows the usage dashboard for the Food Truck sample code app from [`Food Truck: Building a SwiftUI multiplatform app`](https://developer.apple.com/documentation/swiftui/food_truck_building_a_swiftui_multiplatform_app). It displays the number of builds and the usage for 30 days — including trends.
 
 ![A screenshot of the App Store Connect website. It displays the usage dashboard for the Food Truck app. It shows usage trend information for 30 days, including the number of builds and the usage.](https://docs-assets.developer.apple.com/published/629a79febcaba86e0a88cc1885289880/reviewing-usage-data%402x.png)
@@ -34,4 +32,4 @@ The following screenshot shows the usage dashboard for the Food Truck sample cod
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/reviewing-xcode-cloud-usage-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/reviewing-xcode-cloud-usage-data)*

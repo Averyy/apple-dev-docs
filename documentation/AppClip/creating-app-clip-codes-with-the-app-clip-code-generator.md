@@ -1,6 +1,6 @@
 # Creating App Clip Codes with the App Clip Code Generator
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Use the App Clip Code Generator command-line tool to verify your code’s colors, get color suggestions, and create App Clip Codes.
 
@@ -9,8 +9,6 @@ Use the App Clip Code Generator command-line tool to verify your code’s colors
 By placing an App Clip Code at a physical location or using it in printed or digital marketing materials, you make your App Clip more discoverable. An App Clip Code always uses a design Apple provides, and users instantly recognize and scan it to launch your App Clip. Use the App Clip Code generator command-line tool to create App Clip Codes during development of your App Clip or to automate the creation of App Clip Codes.
 
 > **Note**:  You must be enrolled in the Apple Developer Program before you can download the App Clip Code Generator. For information about the Apple Developer Program, see [`How the Program Works`](https://developer.apple.comhttps://developer.apple.com/programs/how-it-works/).
-
- You must be enrolled in the Apple Developer Program before you can download the App Clip Code Generator. For information about the Apple Developer Program, see [`How the Program Works`](https://developer.apple.comhttps://developer.apple.com/programs/how-it-works/).
 
 With the App Clip Code Generator command-line tool, you can:
 
@@ -169,4 +167,4 @@ Doing so generates four App Clip Codes using the data in the CSV file and saves 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/creating-app-clip-codes-with-the-app-clip-code-generator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/creating-app-clip-codes-with-the-app-clip-code-generator)*

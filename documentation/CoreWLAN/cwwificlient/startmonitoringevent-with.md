@@ -1,6 +1,6 @@
 # startMonitoringEvent(with:)
 
-**Framework**: Core WLAN  
+**Framework**: Corewlan  
 **Kind**: method
 
 Register for specific Wi-Fi event notifications.
@@ -21,8 +21,6 @@ After registering for notifications, when an event of the given type happens, th
 Use the [`stopMonitoringEvent(with:)`](cwwificlient/stopmonitoringevent(with:).md) method when you want to stop receiving notifications of the given event type. Use [`stopMonitoringAllEvents()`](cwwificlient/stopmonitoringallevents().md) to stop receiving all notifications from a client.
 
 > **Note**:  In order to monitor Wi-Fi events, you must specify the `com.apple.wifi.events` entitlement for your app.
-
- In order to monitor Wi-Fi events, you must specify the `com.apple.wifi.events` entitlement for your app.
 
 ## Parameters
 

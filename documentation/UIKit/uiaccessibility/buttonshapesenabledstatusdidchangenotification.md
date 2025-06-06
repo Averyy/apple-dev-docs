@@ -1,6 +1,6 @@
 # buttonShapesEnabledStatusDidChangeNotification
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A notification that UIKit posts when the system’s Button Shapes setting changes.
@@ -22,8 +22,6 @@ static let buttonShapesEnabledStatusDidChangeNotification: NSNotification.Name
 #### Discussion
 
 > **Note**:  Session 10020: [`Make Your App Visually Accessible`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10020)
-
- Session 10020: [`Make Your App Visually Accessible`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10020)
 
 ## See Also
 

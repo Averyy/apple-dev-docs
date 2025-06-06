@@ -26,10 +26,6 @@ Call these methods before issuing any draw or dispatch calls that may access the
 
 > **Note**:  To track resource access and dependency hazards, use [`MTLFence`](mtlfence.md) instances. If all the required resources aren’t resident when executing a render or compute pass, the associated [`MTLCommandBuffer`](mtlcommandbuffer.md) instance fails.
 
- To track resource access and dependency hazards, use [`MTLFence`](mtlfence.md) instances.
-
-If all the required resources aren’t resident when executing a render or compute pass, the associated [`MTLCommandBuffer`](mtlcommandbuffer.md) instance fails.
-
 ## See Also
 
 - [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)

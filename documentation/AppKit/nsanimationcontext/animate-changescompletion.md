@@ -1,6 +1,6 @@
 # animate(_:changes:completion:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Animate changes to one or more views using the specified SwiftUI animation.
@@ -27,8 +27,6 @@ NSAnimationContext.animate(.smooth) {
 ```
 
 > **Note**: When a SwiftUI animation is used for animating AppKit’s `NSAnimatablePropertyContainer`s, the animations are run in-process, and are not backed by `CAAnimation`s in the render server.
-
-When a SwiftUI animation is used for animating AppKit’s `NSAnimatablePropertyContainer`s, the animations are run in-process, and are not backed by `CAAnimation`s in the render server.
 
 ## Parameters
 

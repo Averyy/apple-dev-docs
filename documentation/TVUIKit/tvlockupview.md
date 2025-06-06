@@ -1,6 +1,6 @@
 # TVLockupView
 
-**Framework**: TVUIKit  
+**Framework**: Tvuikit  
 **Kind**: class
 
 A focusable view that presents main content, like a movie poster, and an optional header and footer.
@@ -24,8 +24,6 @@ The following figure shows a `TVLockupView` object that’s in focus. The yellow
 ![A diagram depicting five TV lockup views in a row, separated by yellow, vertical bars that indicate the space between views. The center view is larger than the other views and covers part of the yellow areas on either side of it.](https://docs-assets.developer.apple.com/published/2ed04a2c3cfadc7465289bdfbee40037/media-3016664%402x.png)
 
 > **Note**:  Don’t create a [`TVLockupView`](tvlockupview.md) directly. Instead, create an instance of the subclass that best suits your use case, such as [`TVPosterView`](tvposterview.md) or [`TVCardView`](tvcardview.md).
-
- Don’t create a [`TVLockupView`](tvlockupview.md) directly. Instead, create an instance of the subclass that best suits your use case, such as [`TVPosterView`](tvposterview.md) or [`TVCardView`](tvcardview.md).
 
 ## Topics
 
@@ -94,4 +92,4 @@ The following figure shows a `TVLockupView` object that’s in focus. The yellow
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvuikit/tvlockupview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVUIKit/tvlockupview)*

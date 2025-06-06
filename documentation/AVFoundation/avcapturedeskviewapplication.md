@@ -1,6 +1,6 @@
 # AVCaptureDeskViewApplication
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: class
 
 An object that programmatically presents Desk View.
@@ -20,8 +20,6 @@ class AVCaptureDeskViewApplication
 Use this class to programmatically launch Desk View from your app. You can optionally customize the presentation and specifiy an action to take afterward.
 
 > **Note**:  Desk View is available in iOS 16 and later on iPhone 11 and later, excluding iPhone SE, for use with a Mac running macOS 13 and later.
-
- Desk View is available in iOS 16 and later on iPhone 11 and later, excluding iPhone SE, for use with a Mac running macOS 13 and later.
 
 The following example shows how to configure and present Desk View with a completion handler:
 
@@ -73,4 +71,4 @@ deskView.present(launchConfiguration: configuration) { error in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avcapturedeskviewapplication)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avcapturedeskviewapplication)*

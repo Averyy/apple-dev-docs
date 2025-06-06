@@ -38,8 +38,6 @@ If the sequence is empty, this method returns `true`.
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## Parameters
 
 - `predicate`: A closure that takes an element of the sequence   as its argument and returns a Boolean value that indicates whether   the passed element satisfies a condition.

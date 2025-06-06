@@ -1,6 +1,6 @@
 # Handling Resource Representation and Relationships
 
-**Framework**: Apple Music API
+**Framework**: Applemusicapi
 
 Fetch resources with extended attributes and included relationships and relationship views.
 
@@ -9,8 +9,6 @@ Fetch resources with extended attributes and included relationships and relation
 Resources are fetched with a default representation of attributes and relationships. Extend the default representation for a resource type to fetch additional attributes and include relationships and relationship views.
 
 > **Note**:  If any relationship or relationship view contains too many related resources, use pagination to fetch the next set of objects. See [`Fetching Resources by Page`](fetching-resources-by-page.md).
-
- If any relationship or relationship view contains too many related resources, use pagination to fetch the next set of objects. See [`Fetching Resources by Page`](fetching-resources-by-page.md).
 
 ##### Extend Resource Attributes
 
@@ -53,8 +51,6 @@ GET https://api.music.apple.com/v1/catalog/us/albums/310730204?views=other-versi
 ```
 
 > **Note**:  You can request any combination of resource relationship and relationship views using the `include`, `relate`, and `views` parameters.
-
- You can request any combination of resource relationship and relationship views using the `include`, `relate`, and `views` parameters.
 
 ##### Scoping Parameters
 
@@ -126,4 +122,4 @@ GET https://api.music.apple.com/v1/catalog/us/artists/462006/view/featured-playl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/handling-resource-representation-and-relationships)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/handling-resource-representation-and-relationships)*

@@ -18,8 +18,6 @@ class VZMacTrackpadConfiguration
 
 > **Note**:  The framework recognizes this device in virtual machines running macOS 13 and later. To support both macOS 13.0 and earlier guests, set [`pointingDevices`](vzvirtualmachineconfiguration/pointingdevices.md) to an array that contains both a [`VZMacTrackpadConfiguration`](vzmactrackpadconfiguration.md) and a [`VZUSBScreenCoordinatePointingDeviceConfiguration`](vzusbscreencoordinatepointingdeviceconfiguration.md) object.
 
- The framework recognizes this device in virtual machines running macOS 13 and later. To support both macOS 13.0 and earlier guests, set [`pointingDevices`](vzvirtualmachineconfiguration/pointingdevices.md) to an array that contains both a [`VZMacTrackpadConfiguration`](vzmactrackpadconfiguration.md) and a [`VZUSBScreenCoordinatePointingDeviceConfiguration`](vzusbscreencoordinatepointingdeviceconfiguration.md) object.
-
 The [`VZVirtualMachineView`](vzvirtualmachineview.md) uses this device to send pointer events and multi-touch trackpad gestures to the virtual machine. In macOS 13 and later, guests use the multi-touch trackpad device, while earlier versions of macOS uses the USB pointing device.
 
 ## Topics
@@ -51,4 +49,4 @@ The [`VZVirtualMachineView`](vzvirtualmachineview.md) uses this device to send p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/vzmactrackpadconfiguration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/vzmactrackpadconfiguration)*

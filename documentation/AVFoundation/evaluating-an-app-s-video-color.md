@@ -1,6 +1,6 @@
 # Evaluating an App’s Video Color
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments.
 
@@ -11,8 +11,6 @@ AVFoundation automatically applies color management to video during playback. Co
 ColorSync uses the display’s ICC profile to obtain its chromaticity and gamma characteristics. It then performs the color match using perceptual rendering intent to scale the video colors so they fit into the destination gamut specified by the display. AVFoundation applies this color transformation to each pixel of each frame in real time during video playback, ensuring the color fidelity of the original video.
 
 > **Note**:  Viewers typically watch broadcast standards-based video in a dimly lit viewing environment such as a living room. The color management applied during playback lessens the contrast to preserve the correct tonality when viewing video in brighter viewing conditions.
-
- Viewers typically watch broadcast standards-based video in a dimly lit viewing environment such as a living room. The color management applied during playback lessens the contrast to preserve the correct tonality when viewing video in brighter viewing conditions.
 
 ##### Manage Color Reproduction
 
@@ -86,4 +84,4 @@ To ensure application of the appropriate color management to your video during p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/evaluating-an-app-s-video-color)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/evaluating-an-app-s-video-color)*

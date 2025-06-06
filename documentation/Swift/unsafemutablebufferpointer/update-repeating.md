@@ -26,8 +26,6 @@ The buffer’s memory must be initialized or its `Element` type must be a trivia
 
 > **Note**: All buffer elements must already be initialized.
 
-All buffer elements must already be initialized.
-
 ## Parameters
 
 - `repeatedValue`: The value used when updating this pointer’s memory.

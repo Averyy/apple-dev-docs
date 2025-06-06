@@ -1,6 +1,6 @@
 # Extending your app’s background execution time
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Ensure that critical tasks finish when your app moves to the background.
 
@@ -13,8 +13,6 @@ When your app moves to the background, the system calls your app delegate’s [`
 You extend your app’s runtime by calling the [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method. Calling this method gives you extra time to perform important tasks. (You can find out the maximum background time available using the [`backgroundTimeRemaining`](uiapplication/backgroundtimeremaining.md) property.) When you finish your tasks, call the [`endBackgroundTask(_:)`](uiapplication/endbackgroundtask(_:).md) method right away to let the system know that you’re done. If you don’t end your tasks in a timely manner, the system terminates your app.
 
 > **Note**:  Don’t wait until your app moves to the background to call the [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method. Call the method before performing any long-running task.
-
- Don’t wait until your app moves to the background to call the [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method. Call the method before performing any long-running task.
 
 The following code shows an example that configures a background task so that the app may save data to its server, which could take longer than five seconds. The [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method returns an identifier that you must save and pass to the [`endBackgroundTask(_:)`](uiapplication/endbackgroundtask(_:).md) method.
 
@@ -42,8 +40,6 @@ func sendDataToServer( data : NSData ) {
 
 > **Note**:  The [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method can’t be called from an app extension. To request extra execution time from your app extension, call the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/1617030-performexpiringactivity) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
 
- The [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method can’t be called from an app extension. To request extra execution time from your app extension, call the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/1617030-performexpiringactivity) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
-
 ## See Also
 
 - [Using background tasks to update your app](using-background-tasks-to-update-your-app.md)
@@ -54,4 +50,4 @@ func sendDataToServer( data : NSData ) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/extending-your-app-s-background-execution-time)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/extending-your-app-s-background-execution-time)*

@@ -1,6 +1,6 @@
 # randomElement()
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a random element of the collection.
@@ -35,8 +35,6 @@ let randomName = names.randomElement()!
 This method is equivalent to calling `randomElement(using:)`, passing in the system’s default random generator.
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
 
 ## See Also
 

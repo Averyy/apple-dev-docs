@@ -1,6 +1,6 @@
 # imagery
 
-**Framework**: MapKit  
+**Framework**: Mapkit  
 **Kind**: property
 
 A map style that represents a satellite image of the area the map displays.
@@ -23,8 +23,6 @@ static var imagery: MapStyle { get }
 #### Discussion
 
 > **Note**:  In watchOS, depending on rendering calculations, MapKit may render the map using the Standard map style rather than requested Hybrid or Imagery styles.
-
- In watchOS, depending on rendering calculations, MapKit may render the map using the Standard map style rather than requested Hybrid or Imagery styles.
 
 ## See Also
 

@@ -16,8 +16,6 @@ Your ability to configure window size and position is subject to the following c
 
 > **Note**: Windows in iPadOS occupy the full screen, or share the screen with another window in Slide Over or Split View. You can’t programmatically affect window geometry on that platform.
 
-Windows in iPadOS occupy the full screen, or share the screen with another window in Slide Over or Split View. You can’t programmatically affect window geometry on that platform.
-
 ##### Specify Initial Window Position
 
 ##### Specify Initial Window Size
@@ -89,4 +87,4 @@ Although you can specify a volume’s size in points, it’s typically better to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/positioning-and-sizing-windows)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/positioning-and-sizing-windows)*

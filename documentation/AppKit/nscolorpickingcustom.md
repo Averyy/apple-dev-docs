@@ -1,6 +1,6 @@
 # NSColorPickingCustom
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: protocol
 
 A set of methods that provides a way to add color pickers—custom user interfaces for color selection—to an app’s color panel.
@@ -19,8 +19,6 @@ protocol NSColorPickingCustom : NSColorPickingDefault
 [`NSColorPickingCustom`](nscolorpickingcustom.md) works with the [`NSColorPickingDefault`](nscolorpickingdefault.md) protocol—which provides basic behavior for a color picker—to enable custom color pickers.
 
 > **Note**:  This protocol must be implemented by a custom picker, or an error will occur.
-
- This protocol must be implemented by a custom picker, or an error will occur.
 
 ## Topics
 
@@ -53,4 +51,4 @@ protocol NSColorPickingCustom : NSColorPickingDefault
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscolorpickingcustom)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscolorpickingcustom)*

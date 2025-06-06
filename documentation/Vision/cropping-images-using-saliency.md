@@ -34,8 +34,6 @@ Both types of saliency requests return their results as heatmaps, which are 68 x
 
 > **Note**:  Saliency is computed on individual images. While it’s possible to compute saliency on each frame of a video stream, keep in mind that the saliency of objects in the scene may vary due to subtle changes in image composition, such as image framing or new subject matter.
 
- Saliency is computed on individual images. While it’s possible to compute saliency on each frame of a video stream, keep in mind that the saliency of objects in the scene may vary due to subtle changes in image composition, such as image framing or new subject matter.
-
 If your app overlays the saliency heatmap on the original input image, upsample the heatmap and apply a colormap before showing it to the user.
 
 ##### Merge Salient Regions for Object Based Saliency
@@ -68,4 +66,4 @@ Once you know which regions of an image are interesting, you can use the output 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/cropping-images-using-saliency)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/cropping-images-using-saliency)*

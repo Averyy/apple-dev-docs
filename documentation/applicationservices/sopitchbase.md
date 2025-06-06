@@ -1,6 +1,6 @@
 # soPitchBase
 
-**Framework**: Application Services  
+**Framework**: Applicationservices  
 **Kind**: data
 
 **Availability**:
@@ -19,8 +19,6 @@ Get or set the speech channel’s baselinespeech pitch. This selector is intende
 This selector works with both the `GetSpeechInfo` and `SetSpeechInfo` functions.
 
 > **Note**: The change in speech pitch may not be noticeable until the next sentence or paragraph is spoken.
-
-The change in speech pitch may not be noticeable until the next sentence or paragraph is spoken.
 
 
 ---

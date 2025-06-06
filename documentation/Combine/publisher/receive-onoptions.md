@@ -22,8 +22,8 @@ func receive<S>(on scheduler: S, options: S.SchedulerOptions? = nil) -> Publishe
 
 ## Mentions
 
-- [Replacing Foundation Timers with Timer Publishers](replacing-foundation-timers-with-timer-publishers.md)
 - [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
+- [Replacing Foundation Timers with Timer Publishers](replacing-foundation-timers-with-timer-publishers.md)
 
 #### Return Value
 
@@ -64,8 +64,6 @@ pub.receive(on: DispatchQueue.main).sink {
 ```
 
 > **Note**: [`receive(on:options:)`](publisher/receive(on:options:).md) doesn’t affect the scheduler used to call the subscriber’s [`receive(subscription:)`](subscriber/receive(subscription:).md) method.
-
-[`receive(on:options:)`](publisher/receive(on:options:).md) doesn’t affect the scheduler used to call the subscriber’s [`receive(subscription:)`](subscriber/receive(subscription:).md) method.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # AnimationStateProtocol
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: protocol
 
 The protocol representing the current animation state of an action animation.
@@ -27,8 +27,6 @@ Animating values with the animation engine allows for cross-fading and additive 
 Access the animation state structure from the event structure returned to `.updated` event handlers. Define a valid bind target and matching animation type to make the state structure available and non nil.
 
 > **Note**: Custom actions don’t support animating [`BlendShapeWeights`](blendshapeweights.md).
-
-Custom actions don’t support animating [`BlendShapeWeights`](blendshapeweights.md).
 
 ## Topics
 
@@ -68,4 +66,4 @@ Custom actions don’t support animating [`BlendShapeWeights`](blendshapeweights
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/animationstateprotocol)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/animationstateprotocol)*

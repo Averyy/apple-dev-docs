@@ -1,6 +1,6 @@
 # Verifying Device Support and User Permission
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Check whether your app can use ARKit and respect user privacy at runtime.
 
@@ -16,8 +16,6 @@ How to handle device compatibility support depends on how your app uses ARKit:
 
 > 💡 **Tip**:  Check the [`isSupported`](arconfiguration/issupported.md) property before offering AR features in your app’s UI, so that users on unsupported devices aren’t disappointed by trying to access those features.
 
- Check the [`isSupported`](arconfiguration/issupported.md) property before offering AR features in your app’s UI, so that users on unsupported devices aren’t disappointed by trying to access those features.
-
 ##### Handle User Consent and Privacy
 
 For your app to use ARKit, the user must explicitly grant your app permission for camera access. ARKit automatically asks the user for permission the first time your app runs an AR session.
@@ -25,8 +23,6 @@ For your app to use ARKit, the user must explicitly grant your app permission fo
 iOS requires your app to provide a static message to be displayed when the system asks for camera or microphone permission. Your app’s `Info.plist` file must include the [`NSCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSCameraUsageDescription) key. For that key, provide text that explains why your app needs camera access so that the user can feel confident granting permission to your app.
 
 > **Note**:  If you create a new ARKit app using the Xcode template, a default camera usage description is provided for you.
-
- If you create a new ARKit app using the Xcode template, a default camera usage description is provided for you.
 
 If your app uses [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md), ARKit provides your app with personal facial information. If you use ARKit face tracking features, your app must include a privacy policy describing to users how you intend to use face tracking and face data. For details, see the [`Apple Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/terms/).
 
@@ -42,4 +38,4 @@ If your app uses [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/verifying-device-support-and-user-permission)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/verifying-device-support-and-user-permission)*

@@ -1,6 +1,6 @@
 # Building a multidevice workout app
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
 
@@ -13,8 +13,6 @@ Mirror a workout from a watchOS app to its companion iOS app, and perform bidire
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10023: [`Build a multidevice workout app`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10023/).
-
-This sample code project is associated with WWDC23 session 10023: [`Build a multidevice workout app`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10023/).
 
 ##### Configure the Sample Code Project
 
@@ -43,4 +41,4 @@ This sample code project needs to run on physical devices. Before you run it wit
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/building-a-multidevice-workout-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/building-a-multidevice-workout-app)*

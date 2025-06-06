@@ -1,6 +1,6 @@
 # prefix(through:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a subsequence from the start of the collection through the specified position.
@@ -44,8 +44,6 @@ if let i = numbers.firstIndex(of: 40) {
 ```
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

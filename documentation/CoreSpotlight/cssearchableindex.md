@@ -1,6 +1,6 @@
 # CSSearchableIndex
 
-**Framework**: Core Spotlight  
+**Framework**: Corespotlight  
 **Kind**: class
 
 An on-device index for your app’s searchable content.
@@ -27,8 +27,6 @@ class CSSearchableIndex
 A `CSSearchableIndex` object manages an on-device index for your app’s searchable content. To make your app’s content searchable, package it in one or more [`CSSearchableItem`](cssearchableitem.md) objects and add them to the index. You can create as many searchable indexes as you need to manage your content, and you can apply different levels of encryption to protect the content in each index. When you execute a query, Core Spotlight searches your app’s indexes for the requested information and returns the results to your code.
 
 > **Note**: If your app creates [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects, set the [`isEligibleForSearch`](https://developer.apple.com/documentation/foundation/nsuseractivity/1417761-iseligibleforsearch) property of those objects to `true` to ensure they appear in search results.
-
-If your app creates [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects, set the [`isEligibleForSearch`](https://developer.apple.com/documentation/foundation/nsuseractivity/1417761-iseligibleforsearch) property of those objects to `true` to ensure they appear in search results.
 
 Put your content into a custom `CSSearchableIndex` that you create. Custom indexes support batch operations and additional levels of data protection. Place sensitive personal information in protected indexes to encrypt that content, and prevent its disclosure without proper authorization from the owner of the device. Although you can put content into the default index, you can’t encrypt the content in that index or perform batch operations to add content to it.
 
@@ -102,4 +100,4 @@ Modify custom `CSSearchableIndex` objects only on one thread or task at a time. 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corespotlight/cssearchableindex)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreSpotlight/cssearchableindex)*

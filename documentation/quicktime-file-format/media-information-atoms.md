@@ -1,6 +1,6 @@
 # Media information atoms
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 An atom that contains a number of other atoms that define specific characteristics of the video media data.
 
@@ -13,8 +13,6 @@ These atoms contain information that is specific to the type of data defined by 
 This section describes the atoms that store media information for the video (`'vmhd'`), sound (`'smhd'`), and base (`'gmhd'`) portions of QuickTime movies.
 
 > **Note**: [`Using sample atoms`](using_sample_atoms.md) discusses how the video media handler locates samples in a video media.
-
-[`Using sample atoms`](using_sample_atoms.md) discusses how the video media handler locates samples in a video media.
 
 ## See Also
 

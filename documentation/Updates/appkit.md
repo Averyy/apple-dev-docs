@@ -74,8 +74,6 @@ Browse notable changes in [`AppKit`](https://developer.apple.comhttps://develope
 
 > **Note**: Session 10054: [`What’s new in AppKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10054/)
 
-Session 10054: [`What’s new in AppKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10054/)
-
 ## See Also
 
 - [Accelerate updates](accelerate.md)
@@ -112,4 +110,4 @@ Session 10054: [`What’s new in AppKit`](https://developer.apple.comhttps://dev
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/updates/appkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Updates/appkit)*

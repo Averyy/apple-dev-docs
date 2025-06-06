@@ -1,6 +1,6 @@
 # init(x:y:domain:function:)
 
-**Framework**: Swift Charts  
+**Framework**: Charts  
 **Kind**: init
 
 Creates a mark that fills the area between zero and the given function.
@@ -31,8 +31,6 @@ Parameters:
 - function: The function to graph..
 
 > **Note**: For x values where the function is undefined or is infinity, the function is expected to return `Double.nan` or `Double.infinity` respectively.
-
-For x values where the function is undefined or is infinity, the function is expected to return `Double.nan` or `Double.infinity` respectively.
 
 
 ---

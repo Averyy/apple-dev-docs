@@ -1,6 +1,6 @@
 # enable()
 
-**Framework**: ContactProvider  
+**Framework**: Contactprovider  
 **Kind**: method
 
 Requests the person using the app to enable the extension domain.
@@ -20,8 +20,6 @@ func enable() async throws
 If necessary, this call waits for the person using the app to explicitly approve or deny using the extension domain.
 
 > **Note**: `ContactProviderError.deniedByUser` if the person dismisses the prompt without enabling the extension domain.
-
-`ContactProviderError.deniedByUser` if the person dismisses the prompt without enabling the extension domain.
 
 ## See Also
 

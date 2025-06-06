@@ -1,6 +1,6 @@
 # Menu
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A control for presenting a menu of actions.
@@ -65,8 +65,6 @@ Menu {
 ```
 
 > **Note**: This behavior does not apply to buttons outside of a menu’s content.
-
-This behavior does not apply to buttons outside of a menu’s content.
 
 ##### Primary Action
 
@@ -139,4 +137,4 @@ Menu("Editing") {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/menu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/menu)*

@@ -1,6 +1,6 @@
 # MPEG-4 elementary stream descriptor atom ('esds')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 A required extension to the video sample description for MPEG-4 video.
@@ -15,8 +15,6 @@ A required extension to the video sample description for MPEG-4 video.
 This atom contains an MPEG-4 elementary stream descriptor atom. This is a required extension to the video sample description for MPEG-4 video. This extension appears in video sample descriptions only when the codec type is `'mp4v'`.
 
 > **Note**: The elementary stream descriptor which this atom contains is defined in the MPEG-4 specification ISO/IEC FDIS 14496-1.
-
-The elementary stream descriptor which this atom contains is defined in the MPEG-4 specification ISO/IEC FDIS 14496-1.
 
 ## Topics
 

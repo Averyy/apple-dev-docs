@@ -26,8 +26,6 @@ var pointee: Pointee { get nonmutating set }
 
 > **Note**: The pointee has been initialized with an instance of type `Pointee`.
 
-The pointee has been initialized with an instance of type `Pointee`.
-
 ## See Also
 
 - [subscript(Int) -> Pointee](autoreleasingunsafemutablepointer/subscript(_:).md)
@@ -36,4 +34,4 @@ The pointee has been initialized with an instance of type `Pointee`.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/autoreleasingunsafemutablepointer/pointee)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/autoreleasingunsafemutablepointer/pointee)*

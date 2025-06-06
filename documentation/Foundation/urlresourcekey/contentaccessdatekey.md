@@ -26,8 +26,6 @@ This key corresponds to an [`NSDate`](nsdate.md) value, or `nil` if the volume d
 
 > **Note**:  Beginning in macOS 10.13, iOS 11, watchOS 4, tvOS 11, and later, [`contentAccessDateKey`](urlresourcekey/contentaccessdatekey.md) is read-write. Attempts to set a value for this file resource property on earlier systems are ignored.
 
- Beginning in macOS 10.13, iOS 11, watchOS 4, tvOS 11, and later, [`contentAccessDateKey`](urlresourcekey/contentaccessdatekey.md) is read-write. Attempts to set a value for this file resource property on earlier systems are ignored.
-
 When you set the [`contentAccessDateKey`](urlresourcekey/contentaccessdatekey.md) for a resource, also set [`contentModificationDateKey`](urlresourcekey/contentmodificationdatekey.md) in the same call to the [`setResourceValues(_:)`](nsurl/setresourcevalues(_:).md) method. Otherwise, the file system may set the [`contentAccessDateKey`](urlresourcekey/contentaccessdatekey.md) value to the current [`contentModificationDateKey`](urlresourcekey/contentmodificationdatekey.md) value.
 
 ## See Also

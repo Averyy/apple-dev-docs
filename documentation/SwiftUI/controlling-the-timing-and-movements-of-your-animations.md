@@ -1,6 +1,6 @@
 # Controlling the timing and movements of your animations
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Build sophisticated animations that you control using phase and keyframe animators.
 
@@ -215,8 +215,6 @@ The code also applies different animation types based on the phase in the `anima
 
 > **Note**: Use the canvas preview in Xcode to help determine the animation types and values to apply for the phase animations. Make changes to the code and see those changes reflected in the canvas preview.
 
-Use the canvas preview in Xcode to help determine the animation types and values to apply for the phase animations. Make changes to the code and see those changes reflected in the canvas preview.
-
 A [`PhaseAnimator`](phaseanimator.md) gives you control of an animation based on discrete phases, which helps you add extra polish to an animation. But if you find that you need even more control over the timing and movement of an animation, use a [`KeyframeAnimator`](keyframeanimator.md).
 
 #### Gain More Control with a Keyframe Animator
@@ -237,8 +235,6 @@ private struct AnimationValues {
 ```
 
 > **Note**: [`KeyframeAnimator`](keyframeanimator.md) can animate any value that conforms to the [`Animatable`](animatable.md) protocol.
-
-[`KeyframeAnimator`](keyframeanimator.md) can animate any value that conforms to the [`Animatable`](animatable.md) protocol.
 
 To create a animation using a keyframe animator, apply either the [`keyframeAnimator(initialValue:repeating:content:keyframes:)`](view/keyframeanimator(initialvalue:repeating:content:keyframes:).md) or [`keyframeAnimator(initialValue:trigger:content:keyframes:)`](view/keyframeanimator(initialvalue:trigger:content:keyframes:).md) modifier to the view that you want to animate. For instance, the following code applies the second modifier to `EmojiView`. The initial value for the animation is a new instance of `AnimationValues`, and the state variable `likeCount` is the value that the animator observes for changes as it did in the previous phase animation example.
 
@@ -295,8 +291,6 @@ struct KeyframeAnimationView: View {
 ```
 
 > ❗ **Important**: SwiftUI calls the keyframe animator’s `content` closure on every frame of the animation, so avoid performing any expensive operations directly within it.
-
-SwiftUI calls the keyframe animator’s `content` closure on every frame of the animation, so avoid performing any expensive operations directly within it.
 
 Next, define the keyframes. Keyframes let you build sophisticated animations with different keyframe for different properties. To make this possible, you organize the keyframes into tracks. Each track controls a different property of the type that you are animating. You associate a property to a track by providing the key path to the property when creating the track. For example, the following code adds a [`KeyframeTrack`](keyframetrack.md) for the `scale` property:
 
@@ -364,8 +358,6 @@ struct KeyframeAnimationView: View {
 Each keyframe type receives a value. The animator uses this value to generate interpolated values between frames and sets the property specified in the track’s key path before calling the animator’s content closure. For instance, in the previous code listing, the scale value is `1.0` during the linear keyframes, which keeps the emoji at its original size. Then the scale changes to `1.5` during the first spring keyframe. This causes the emoji to grow in size. The final spring keyframe sets the scale to `1.0`, which returns the emoji back to its original size.
 
 > **Note**: SwiftUI preserves the velocity (that is, the speed of the animation) across multiple keyframes for continuous motion within a track.
-
-SwiftUI preserves the velocity (that is, the speed of the animation) across multiple keyframes for continuous motion within a track.
 
 When implementing a keyframe animation, include a track for each property that you want to animate. For instance, `AnimationValues` has four properties:
 
@@ -436,8 +428,6 @@ The combination of these keyframe tracks creates an animation that squishes and 
 
 > **Note**: As with phase animations, use the canvas preview in Xcode to help determine the animation types and values to apply for the keyframe animations. Make changes to the code and see those changes reflected in the canvas preview.
 
-As with phase animations, use the canvas preview in Xcode to help determine the animation types and values to apply for the keyframe animations. Make changes to the code and see those changes reflected in the canvas preview.
-
 ## See Also
 
 - [func phaseAnimator<Phase>(some Sequence, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](view/phaseanimator(_:content:animation:).md)
@@ -450,4 +440,4 @@ As with phase animations, use the canvas preview in Xcode to help determine the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/controlling-the-timing-and-movements-of-your-animations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/controlling-the-timing-and-movements-of-your-animations)*

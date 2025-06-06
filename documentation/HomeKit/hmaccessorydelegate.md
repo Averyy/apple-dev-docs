@@ -1,6 +1,6 @@
 # HMAccessoryDelegate
 
-**Framework**: HomeKit  
+**Framework**: Homekit  
 **Kind**: protocol
 
 A set of methods that defines the communication method for state updates from accessories to their delegates.
@@ -24,8 +24,6 @@ protocol HMAccessoryDelegate : NSObjectProtocol, Sendable
 Adopt this protocol to find out about changes made outside your app to a specific accessory, like when the accessory’s name changes, or when a characteristic value changes.
 
 > **Note**:  To receive [`accessory(_:service:didUpdateValueFor:)`](hmaccessorydelegate/accessory(_:service:didupdatevaluefor:).md) method calls for a particular characteristic, indicating when the characteristic value changes, you must first call the characteristic’s [`enableNotification(_:completionHandler:)`](hmcharacteristic/enablenotification(_:completionhandler:).md) method.
-
- To receive [`accessory(_:service:didUpdateValueFor:)`](hmaccessorydelegate/accessory(_:service:didupdatevaluefor:).md) method calls for a particular characteristic, indicating when the characteristic value changes, you must first call the characteristic’s [`enableNotification(_:completionHandler:)`](hmcharacteristic/enablenotification(_:completionhandler:).md) method.
 
 Changes that your app initiates—even those made asynchronously followed by a call to a completion handler—generate delegate callbacks in other apps, but not in your own. As a result, your app must update its internal data store or user interface from both the completion handler of an asynchronous call, and the delegate callback that corresponds to the same kind of change made by another app.
 
@@ -67,4 +65,4 @@ To find out about changes made to the accessory’s home, adopt the [`HMHomeDele
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/homekit/hmaccessorydelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HomeKit/hmaccessorydelegate)*

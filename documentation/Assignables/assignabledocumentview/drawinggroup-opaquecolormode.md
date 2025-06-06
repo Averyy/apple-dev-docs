@@ -51,8 +51,6 @@ VStack {
 
 > **Note**: Views backed by native platform views may not render into the image. Instead, they log a warning and display a placeholder image to highlight the error.
 
-Views backed by native platform views may not render into the image. Instead, they log a warning and display a placeholder image to highlight the error.
-
 ## Parameters
 
 - `opaque`: A Boolean value that indicates whether the image is opaque.   The default is  ; if set to  , the alpha channel of the   image must be  .

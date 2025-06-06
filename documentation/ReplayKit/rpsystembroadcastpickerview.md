@@ -1,6 +1,6 @@
 # RPSystemBroadcastPickerView
 
-**Framework**: ReplayKit  
+**Framework**: Replaykit  
 **Kind**: class
 
 A view displaying a broadcast button that, when tapped, shows a broadcast picker.
@@ -23,8 +23,6 @@ class RPSystemBroadcastPickerView
 Add this view to your view hierarchy to let users broadcast directly from your app. When a user taps the broadcast button, it displays a broadcast picker, allowing the user to select a broadcast provider.
 
 > **Note**:  Clicking the broadcast button has no effect in Mac apps built with Mac Catalyst.
-
- Clicking the broadcast button has no effect in Mac apps built with Mac Catalyst.
 
 You can limit the picker to a particular broadcast provider by setting [`preferredExtension`](rpsystembroadcastpickerview/preferredextension.md) to the bundle identifier of a broadcast extension. You can also show or hide the microphone button displayed in the picker by setting the [`showsMicrophoneButton`](rpsystembroadcastpickerview/showsmicrophonebutton.md) property. Set these properties before presenting [`RPSystemBroadcastPickerView`](rpsystembroadcastpickerview.md), as shown here:
 
@@ -100,4 +98,4 @@ class ViewController: UIViewController {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/replaykit/rpsystembroadcastpickerview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ReplayKit/rpsystembroadcastpickerview)*

@@ -1,6 +1,6 @@
 # record(_:toCorrection:forWord:language:inSpellDocumentWithTag:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Records the user response to the correction indicator being displayed.
@@ -19,8 +19,6 @@ func record(_ response: NSSpellChecker.CorrectionResponse, toCorrection correcti
 When a correction is automatically proposed, the user may respond in one of several ways.  Clients may report this to the spell checker so that it can learn from the user’s response and adjust future correction behavior accordingly.
 
 > **Note**:  Use of this method implies that the client stored the original word and original correction at least from the point at which the user accepts it until the user edits or reverts it.
-
- Use of this method implies that the client stored the original word and original correction at least from the point at which the user accepts it until the user edits or reverts it.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Making your app’s functionality available to Siri
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Add assistant schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 
@@ -16,11 +16,7 @@ Using this sample app, people can keep track of photos and videos they capture w
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
 > **Note**: Session 10133: [`Bring your app to Siri`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10133/)
-
-Session 10133: [`Bring your app to Siri`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10133/)
 
 ##### Make App Functionality Available to Siri
 
@@ -143,4 +139,4 @@ For more information about making onscreen content available to Siri and Apple I
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-your-app-s-functionality-available-to-siri)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-your-app-s-functionality-available-to-siri)*

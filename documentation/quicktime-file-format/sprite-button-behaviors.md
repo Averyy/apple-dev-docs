@@ -1,14 +1,12 @@
 # Sprite button behaviors
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Specify simple button behaviors for sprites in a sprite track.
 
 #### Overview
 
 > ❗ **Important**: Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
-
-Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
 
 In QuickTime 4 and later, sprites in a sprite track can specify simple button behaviors. These behaviors can control the sprite’s image, the system cursor, and the status message displayed in a Web browser. They also provide a shortcut for a common set of actions that may result in more efficient QuickTime movies.
 
@@ -23,8 +21,6 @@ Three types of behaviors are available; you may choose one or more behaviors. Ea
 Setting a property’s value to `–1` means don’t change it.
 
 > **Note**: The cursor is automatically set back to the default system cursor when leaving a sprite.
-
-The cursor is automatically set back to the default system cursor when leaving a sprite.
 
 The sprite track handles letting one sprite act as an active button at a time.
 

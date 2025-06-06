@@ -1,6 +1,6 @@
 # jsonRepresentation
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: property
 
 The JSON representation of the app transaction information.
@@ -26,8 +26,6 @@ The [`jsonRepresentation`](apptransaction/jsonrepresentation.md) is UTF-8 string
 The JSON Web Signature (JWS) Compact Serialization for the [`AppTransaction`](apptransaction.md) is available in the [`jwsRepresentation`](verificationresult/jwsrepresentation-6ma59.md) property of the [`VerificationResult`](verificationresult.md). The JWS string consists of three Base64URL-encoded components, separated by a period: a header, a payload, and a signature. The [`jsonRepresentation`](apptransaction/jsonrepresentation.md) is the Base64URL-decoded payload component.
 
 > **Note**:  If you send the app transaction to your server or store it, use the [`jwsRepresentation`](verificationresult/jwsrepresentation-178oj.md) and validate the signature before parsing it.
-
- If you send the app transaction to your server or store it, use the [`jwsRepresentation`](verificationresult/jwsrepresentation-178oj.md) and validate the signature before parsing it.
 
 
 ---

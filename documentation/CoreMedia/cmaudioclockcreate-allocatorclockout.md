@@ -1,6 +1,6 @@
 # CMAudioClockCreate(allocator:clockOut:)
 
-**Framework**: Core Media  
+**Framework**: Coremedia  
 **Kind**: func
 
 Creates a clock that advances at the same rate as audio output.
@@ -25,13 +25,9 @@ This clock doesn’t drift from audio output, but may drift from [`CMClockGetHos
 
 > ❗ **Important**:  In Objective-C, you’re responsible for calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release the returned `clockOut`.
 
- In Objective-C, you’re responsible for calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release the returned `clockOut`.
-
 You can use this clock as the [`sourceClock`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/sourceClock) of an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) instance when synchronizing video-only playback with audio played through other APIs or objects.
 
 > **Note**:  For Mac apps built with Mac Catalyst, use [`CMAudioDeviceClockCreate(allocator:deviceUID:clockOut:)`](cmaudiodeviceclockcreate(allocator:deviceuid:clockout:).md) or [`CMAudioDeviceClockCreateFromAudioDeviceID(allocator:deviceID:clockOut:)`](cmaudiodeviceclockcreatefromaudiodeviceid(allocator:deviceid:clockout:).md) to target a specific, nondefault audio device.
-
- For Mac apps built with Mac Catalyst, use [`CMAudioDeviceClockCreate(allocator:deviceUID:clockOut:)`](cmaudiodeviceclockcreate(allocator:deviceuid:clockout:).md) or [`CMAudioDeviceClockCreateFromAudioDeviceID(allocator:deviceID:clockOut:)`](cmaudiodeviceclockcreatefromaudiodeviceid(allocator:deviceid:clockout:).md) to target a specific, nondefault audio device.
 
 ## Parameters
 

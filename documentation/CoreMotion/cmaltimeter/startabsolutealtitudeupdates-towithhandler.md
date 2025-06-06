@@ -1,6 +1,6 @@
 # startAbsoluteAltitudeUpdates(to:withHandler:)
 
-**Framework**: Core Motion  
+**Framework**: Coremotion  
 **Kind**: method
 
 Starts the delivery of absolute altitude data to the specified handler.
@@ -22,8 +22,6 @@ func startAbsoluteAltitudeUpdates(to queue: OperationQueue, withHandler handler:
 Call [`isAbsoluteAltitudeAvailable()`](cmaltimeter/isabsolutealtitudeavailable().md) to verify that the current device supports absolute altitude updates before calling the `startAbsoluteAltitudeUpdates(to:withHandler:)` method.
 
 > **Note**:  Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
-
- Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
 
 ## Parameters
 

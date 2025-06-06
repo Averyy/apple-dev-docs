@@ -1,6 +1,6 @@
 # topK(_:)
 
-**Framework**: Core ML  
+**Framework**: Coreml  
 **Kind**: method
 
 Returns the  largest values along the last axis of the tensor.
@@ -27,8 +27,6 @@ A tuple of (values, indices) with values containing the top k values along the l
 #### Discussion
 
 > **Note**: The tensor must have at least k elements along its last axis and order returned by largest values which are equal is not deterministic.
-
-The tensor must have at least k elements along its last axis and order returned by largest values which are equal is not deterministic.
 
 For example:
 

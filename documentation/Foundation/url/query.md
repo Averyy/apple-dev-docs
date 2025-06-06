@@ -24,8 +24,6 @@ var query: String? { get }
 
 > **Note**:  This function resolves against the base `URL`.
 
- This function resolves against the base `URL`.
-
 New code should use [`query(percentEncoded:)`](url/query(percentencoded:).md) instead of this property.
 
 ## See Also

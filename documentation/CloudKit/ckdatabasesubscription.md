@@ -1,6 +1,6 @@
 # CKDatabaseSubscription
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 A subscription that generates push notifications when CloudKit modifies records in a database.
@@ -26,15 +26,11 @@ Subscriptions track the creation, modification, and deletion of records in a dat
 
 > **Note**:  You don’t need to explicitly enable push notifications for your App ID to receive subscription notifications. Xcode automatically adds the entitlement when you enable the CloudKit capability. For more information, see [`Enabling CloudKit in Your App`](enabling-cloudkit-in-your-app.md). To use silent push notifications, add the Background Modes capability in your Xcode project and then select the “Background fetch” and “Remote notifications” options.
 
- You don’t need to explicitly enable push notifications for your App ID to receive subscription notifications. Xcode automatically adds the entitlement when you enable the CloudKit capability. For more information, see [`Enabling CloudKit in Your App`](enabling-cloudkit-in-your-app.md). To use silent push notifications, add the Background Modes capability in your Xcode project and then select the “Background fetch” and “Remote notifications” options.
-
 A database subscription executes whenever a change occurs in a custom record zone that resides in the database where you save the subscription. This is important for the shared database because you don’t know what record zones exist in advance. The only exception to this is the default record zone in the user’s private database, which doesn’t participate in database subscriptions.
 
 You can further specialize a database subscription by setting its [`recordType`](ckdatabasesubscription/recordtype-46v7a.md) property to a specific record type. This limits the scope of the subscription to only track changes to records of that type and reduces the number of notifications it generates.
 
 > **Note**:  Only private and shared databases support database subscriptions. If you attempt to save a database subscription in the public database, CloudKit returns an error.
-
- Only private and shared databases support database subscriptions. If you attempt to save a database subscription in the public database, CloudKit returns an error.
 
 Create any subscriptions on your app’s first launch. After you initialize a subscription, save it to the server using [`CKModifySubscriptionsOperation`](ckmodifysubscriptionsoperation.md). After the operation completes, record that state on-device (in [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults), for example). You can then check that state on subsequent launches to prevent unnecessary trips to the server.
 
@@ -126,4 +122,4 @@ if([[NSUserDefaults standardUserDefaults]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckdatabasesubscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckdatabasesubscription)*

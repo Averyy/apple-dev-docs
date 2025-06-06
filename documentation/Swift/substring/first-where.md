@@ -38,8 +38,6 @@ if let firstNegative = numbers.first(where: { $0 < 0 }) {
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## Parameters
 
 - `predicate`: A closure that takes an element of the sequence as   its argument and returns a Boolean value indicating whether the   element is a match.

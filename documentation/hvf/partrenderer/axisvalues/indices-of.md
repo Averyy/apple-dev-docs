@@ -1,6 +1,6 @@
 # indices(of:)
 
-**Framework**: hvf  
+**Framework**: Hvf  
 **Kind**: method
 
 Returns the indices of all the elements that are equal to the given element.
@@ -35,8 +35,6 @@ let allTheEs = str.indices(of: "e")
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

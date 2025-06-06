@@ -32,8 +32,6 @@ The timeline’s refresh policy specifies the earliest date for WidgetKit to req
 
 > **Note**: WidgetKit may not update the widget’s view exactly at a timeline entry’s date. The update may occur at a later date.
 
-WidgetKit may not update the widget’s view exactly at a timeline entry’s date. The update may occur at a later date.
-
 For more information about generating timelines, see [`TimelineProvider`](timelineprovider.md).
 
 ## Topics
@@ -69,4 +67,4 @@ For more information about generating timelines, see [`TimelineProvider`](timeli
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/timeline)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/timeline)*

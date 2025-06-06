@@ -1,6 +1,6 @@
 # convolution9Horizontal()
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: clm
 
 Applies a convolution-9 horizontal filter to the `RGBA` components of an image.
@@ -29,8 +29,6 @@ This method applies a 9 x 1 convolution to the `RGBA` components of an image. Th
  The convolution 9-horizontal filter uses the following properties:
 
 > **Note**: When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
-
-When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
 
 The following code creates a filter that detects edges in the input image:
 

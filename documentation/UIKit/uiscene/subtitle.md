@@ -1,6 +1,6 @@
 # subtitle
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A string that the app displays in the title bar of a window when running in macOS.
@@ -24,8 +24,6 @@ var subtitle: String { get set }
 When this property is an empty string, the system removes the subtitle from the window layout. The default value is an empty string.
 
 > **Note**:  Apps running in iOS ignore the [`subtitle`](uiscene/subtitle.md) property.
-
- Apps running in iOS ignore the [`subtitle`](uiscene/subtitle.md) property.
 
 ## See Also
 

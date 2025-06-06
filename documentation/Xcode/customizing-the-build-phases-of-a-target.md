@@ -28,8 +28,6 @@ Xcode supports the following build phases:
 
 > **Note**: For some operations, Xcode customizes the name of an existing build phase to reflect the corresponding action. For example, when you embed a framework in an app, Xcode configures a Copy Files build phase with the title Embed Frameworks.
 
-For some operations, Xcode customizes the name of an existing build phase to reflect the corresponding action. For example, when you embed a framework in an app, Xcode configures a Copy Files build phase with the title Embed Frameworks.
-
 After you add a build phase, configure its contents. For most build phases, you add one or more files related to the associated task. In some cases, you can also configure additional settings. For example, in the Compile Sources build phase, you can add compiler flags to individual files.
 
 Xcode adds new build phases to the end of the list initially. You can rearrange build phases by dragging them in the editor, but Xcode still executes tasks according to dependency order. To remove a build phase from your target, click the close button (x) next to that build phase.
@@ -82,8 +80,6 @@ For each build phase, you can supply a subpath string to copy files to a specifi
 
 > **Note**: The Copy Files build phase supports signing any resources you place in the bundle. Typically, you use this option when copying built products such as app extensions to your bundle.
 
-The Copy Files build phase supports signing any resources you place in the bundle. Typically, you use this option when copying built products such as app extensions to your bundle.
-
 For details on the location of platform-specific bundle directories, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle)
 
 ## See Also
@@ -100,4 +96,4 @@ For details on the location of platform-specific bundle directories, see [`Placi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/customizing-the-build-phases-of-a-target)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/customizing-the-build-phases-of-a-target)*

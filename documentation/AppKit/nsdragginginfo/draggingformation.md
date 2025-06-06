@@ -1,6 +1,6 @@
 # draggingFormation
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property  
 **Required**: Yes
 
@@ -24,8 +24,6 @@ The default value is the current drag formation.
 
 > **Note**:  Set this property before or after the [`NSDraggingInfo`](nsdragginginfo.md) or [`NSDraggingSession`](nsdraggingsession.md) class’s method [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](nsdragginginfo/enumeratedraggingitems(options:for:classes:searchoptions:using:).md) not inside the enumeration Block.
 
- Set this property before or after the [`NSDraggingInfo`](nsdragginginfo.md) or [`NSDraggingSession`](nsdraggingsession.md) class’s method [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](nsdragginginfo/enumeratedraggingitems(options:for:classes:searchoptions:using:).md) not inside the enumeration Block.
-
 ## See Also
 
 - [func slideDraggedImage(to: NSPoint)](nsdragginginfo/slidedraggedimage(to:).md)
@@ -36,4 +34,4 @@ The default value is the current drag formation.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsdragginginfo/draggingformation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsdragginginfo/draggingformation)*

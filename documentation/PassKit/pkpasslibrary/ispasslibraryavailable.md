@@ -1,6 +1,6 @@
 # isPassLibraryAvailable()
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the pass library is available.
@@ -28,8 +28,6 @@ class func isPassLibraryAvailable() -> Bool
 This method exists because the pass library may be unavailable even if the [`PKPassLibrary`](pkpasslibrary.md) class exists.
 
 > **Note**:  Don’t use this method to determine whether the user can add passes on the device. A device may have a pass library, but still not be able to add passes. Use the [`PKAddPassesViewController`](pkaddpassesviewcontroller.md) class’s [`canAddPasses()`](pkaddpassesviewcontroller/canaddpasses().md) method instead.
-
- Don’t use this method to determine whether the user can add passes on the device. A device may have a pass library, but still not be able to add passes. Use the [`PKAddPassesViewController`](pkaddpassesviewcontroller.md) class’s [`canAddPasses()`](pkaddpassesviewcontroller/canaddpasses().md) method instead.
 
 ## See Also
 

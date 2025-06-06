@@ -1,6 +1,6 @@
 # UIStackView
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A streamlined interface for laying out a collection of views in either a column or a row.
@@ -29,8 +29,6 @@ To use a stack view, open the Storyboard you wish to edit. Drag either a Horizon
 
 > **Note**:  You’re responsible for defining the position and (optionally) the size of the stack view. The stack view then manages the layout and size of its content.
 
- You’re responsible for defining the position and (optionally) the size of the stack view. The stack view then manages the layout and size of its content.
-
 ##### Stack View and Auto Layout
 
 The stack view uses Auto Layout to position and size its arranged views. The stack view aligns the first and last arranged view with its edges along the stack’s axis. In a horizontal stack, this means the first arranged view’s leading edge is pinned to the stack’s leading edge, and the last arranged view’s trailing edge is pinned to the stack’s trailing edge. In vertical stacks, the top and bottom edges are pinned to the stack’s top and bottom edges, respectively. If you set the stack view’s [`isLayoutMarginsRelativeArrangement`](uistackview/islayoutmarginsrelativearrangement.md) property to [`true`](https://developer.apple.com/documentation/swift/true), the stack view pins its content to the relevant margin instead of its edge.
@@ -55,8 +53,6 @@ You can also position a stack view based on its first or last baseline, instead 
 - A vertical stack view returns its first arranged view for [`forFirstBaselineLayout`](uiview/forfirstbaselinelayout.md) and its last arranged view for [`forLastBaselineLayout`](uiview/forlastbaselinelayout.md). If either of these views are also stack views, then it returns the result of calling [`forFirstBaselineLayout`](uiview/forfirstbaselinelayout.md) or [`forLastBaselineLayout`](uiview/forlastbaselinelayout.md) on the nested stack view.
 
 > **Note**:  Baseline alignment only works on views whose height matches their intrinsic content size’s height. If the view is stretched or compressed, the baseline appears in the wrong location.
-
- Baseline alignment only works on views whose height matches their intrinsic content size’s height. If the view is stretched or compressed, the baseline appears in the wrong location.
 
 ###### Define Common Stack View Layouts
 
@@ -104,8 +100,6 @@ Typically, you use a single stack view to lay out a small number of items. You c
 You can also fine-tune an arranged view’s appearance by adding additional constraints to the arranged view. For example, you can use constraints to set a minimum or maximum height or width for the view. Or you can define an aspect ratio for the view. The stack view uses these constraints when laying out its content.
 
 > **Note**:  Be careful to avoid introducing conflicts when adding constraints to views inside a stack view. As a general rule, if a view’s size defaults back to its intrinsic content size for a given dimension, you can safely add a constraint for that dimension.
-
- Be careful to avoid introducing conflicts when adding constraints to views inside a stack view. As a general rule, if a view’s size defaults back to its intrinsic content size for a given dimension, you can safely add a constraint for that dimension.
 
 ##### Maintain Consistency Between the Arranged Views and Subviews
 
@@ -211,4 +205,4 @@ Finally, you can define size-class specific values for many of the stack view’
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uistackview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uistackview)*

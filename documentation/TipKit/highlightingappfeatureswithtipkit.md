@@ -1,6 +1,6 @@
 # Highlighting app features with TipKit
 
-**Framework**: TipKit
+**Framework**: Tipkit
 
 Bring attention to new features in your app by using tips.
 
@@ -16,8 +16,6 @@ With TipKit, you can teach people about a new feature in your app, or show them 
 Each example highlights a different feature of the TipKit framework. The TipView and PopoverView examples show you how to add two different styles of tips to your app. Action buttons demonstrate how to direct people to information or options. The Parameters, Events, and Options examples show you various ways to control when your tips appear. And the Combining rules example shows you how to combine several conditions for when your tips display.
 
 > **Note**: Session 10229: [`Make features discoverable with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10229/)
-
-Session 10229: [`Make features discoverable with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10229/)
 
 ##### Define Tip Content
 
@@ -65,8 +63,6 @@ struct TipKitExamples: App {
 ```
 
 > **Note**: The sample project is currently configured to reset tip state each time the sample runs. To turn this off, and see how tips behave in production, comment out `try Tips.resetDatastore()` in the `setupTipsForTesting` method of `TipKitExamplesApp`.
-
-The sample project is currently configured to reset tip state each time the sample runs. To turn this off, and see how tips behave in production, comment out `try Tips.resetDatastore()` in the `setupTipsForTesting` method of `TipKitExamplesApp`.
 
 ##### Embed a Tip Directly in the View Using Inline Tips
 
@@ -228,8 +224,6 @@ struct ParameterRuleTip: Tip {
 
 > **Note**: If you define no rules within a tip content structure, all tips display until dismissed or they exceed the threshold of their display frequency.
 
-If you define no rules within a tip content structure, all tips display until dismissed or they exceed the threshold of their display frequency.
-
 With this rule defined, the sample triggers a change of state when someone taps the button.
 
 ```swift
@@ -265,8 +259,6 @@ struct ParameterView: View {
 ```
 
 > **Note**: A tip dismissed by the user won’t appear again until its datastore is reset. See the section on overriding tip eligibility rules for instructions on how to reset a tip’s state.
-
-A tip dismissed by the user won’t appear again until its datastore is reset. See the section on overriding tip eligibility rules for instructions on how to reset a tip’s state.
 
 The [`Tips.Parameter`](tips/parameter.md) property wrapper also support types that conforms to the `Codable` and `Sendable` protocol. In this example, the tip displays if the plants tip has more than two favorites, and one of the favorites is a string with the value “Rose”.
 
@@ -553,4 +545,4 @@ try Tips.resetDatastore()
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tipkit/highlightingappfeatureswithtipkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TipKit/highlightingappfeatureswithtipkit)*

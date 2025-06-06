@@ -30,8 +30,6 @@ This function only supports loading trivial types, and will trap if this precond
 
 > **Note**: A trivial type can be copied with just a bit-for-bit copy without any indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enums.
 
-A trivial type can be copied with just a bit-for-bit copy without any indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enums.
-
 ## Parameters
 
 - `offset`: The offset from this pointer, in bytes.   must be   nonnegative. The default is zero.

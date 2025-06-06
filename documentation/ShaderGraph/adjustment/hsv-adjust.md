@@ -1,6 +1,6 @@
 # HSV Adjust
 
-**Framework**: ShaderGraph  
+**Framework**: Shadergraph  
 **Kind**: subscript
 
 Adjusts the hue, saturation and value of an RGB color by a vector .
@@ -14,8 +14,6 @@ Adjusts the hue, saturation and value of an RGB color by a vector .
 The HSV Adjust node adjusts the hue, saturation, and value of the color passed to the `In` parameter. The node performs this adjustment by adding the first value of the `Amount` vector to the hue, multiplying the saturation by the second value of the `Amount` vector, and multiplying that value by the third value of the `Amount` vector. When adjusting the hue, a positive value rotates the hue in the direction of red to green to blue. A value of 1 represents an entire rotation, and results in no change.
 
 > **Note**: This node never changes the alpha of a `color4`.
-
-This node never changes the alpha of a `color4`.
 
 ## See Also
 

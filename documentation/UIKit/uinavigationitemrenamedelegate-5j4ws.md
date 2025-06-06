@@ -1,6 +1,6 @@
 # UINavigationItemRenameDelegate
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: protocol
 
 Methods an object implements to rename a navigation item.
@@ -23,10 +23,6 @@ Methods an object implements to rename a navigation item.
 A navigation item ([`UINavigationItem`](uinavigationitem.md)) uses this delegate to determine whether a person can change the navigation item’s title and to handle the rename process.
 
 > **Note**:  Session 10069: [`Meet desktop-class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069) Session 10070: [`Build a desktop-class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070)
-
- Session 10069: [`Meet desktop-class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069)
-
-Session 10070: [`Build a desktop-class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070)
 
 ## Topics
 

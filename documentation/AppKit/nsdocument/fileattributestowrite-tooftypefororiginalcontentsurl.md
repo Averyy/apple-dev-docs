@@ -1,6 +1,6 @@
 # fileAttributesToWrite(to:ofType:for:originalContentsURL:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Returns the attributes to write to the file or file package at the specified URL, and targeting the specified type of save operation.
@@ -32,10 +32,6 @@ For backward binary compatibility with OS X v10.3 and earlier, the default imple
 The default implementation of [`writeSafely(to:ofType:for:)`](nsdocument/writesafely(to:oftype:for:).md) automatically copies important attributes like file permissions, creation date, and Finder information from the old on-disk version of a document to the new one during an `NSSaveOperation` or `NSAutosaveInPlaceOperation`. This method is meant to be used just for attributes that need to be written for the first time, for `NSSaveAsOperation` and `NSSaveToOperation`. The `url` and `absoluteOriginalContentsURL` parameters are passed in for completeness; NSDocument’s default implementation doesn’t need to use them.
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

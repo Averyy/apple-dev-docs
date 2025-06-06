@@ -1,6 +1,6 @@
 # PKIdentityNationalIDCardDescriptor
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: class
 
 An object for requesting information from a user’s national ID card.
@@ -26,8 +26,6 @@ class PKIdentityNationalIDCardDescriptor
 For the elements you request, the response contains the corresponding elements present in the user’s identity document. The table below maps the elements you request using [`PKIdentityElement`](pkidentityelement.md) with the ISO and JP namespace in the response.
 
 > **Note**:  You can retrieve elements specific to Japan only when you have set the API region to `JP`.
-
- You can retrieve elements specific to Japan only when you have set the API region to `JP`.
 
 | Identity element | ISO namespace | JP namespace |
 | --- | --- | --- |
@@ -84,4 +82,4 @@ Building an app with this entitlement requires macOS 13 or later. For more infor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/passkit/pkidentitynationalidcarddescriptor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/pkidentitynationalidcarddescriptor)*

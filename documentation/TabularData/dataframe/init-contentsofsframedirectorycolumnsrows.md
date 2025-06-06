@@ -1,6 +1,6 @@
 # init(contentsOfSFrameDirectory:columns:rows:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: init
 
 Creates a data frame from a Turi Create scalable data frame.
@@ -23,8 +23,6 @@ init(contentsOfSFrameDirectory url: URL, columns: [String]? = nil, rows: Range<I
 #### Discussion
 
 > **Note**: An `SFrameReadingError` instance.
-
-An `SFrameReadingError` instance.
 
 ## Parameters
 

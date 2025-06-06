@@ -1,6 +1,6 @@
 # NSObjectProtocol
 
-**Framework**: Objective-C Runtime  
+**Framework**: Objectivec  
 **Kind**: protocol
 
 The group of methods that are fundamental to all Objective-C objects.
@@ -23,8 +23,6 @@ protocol NSObjectProtocol
 #### Overview
 
 > **Note**:  This protocol is imported into Swift with the name `NSObjectProtocol`.
-
- This protocol is imported into Swift with the name `NSObjectProtocol`.
 
 An object that conforms to this protocol can be considered a first-class object. Such an object can be asked about its:
 
@@ -79,4 +77,4 @@ The Cocoa root class [`NSObject`](nsobject-swift.class.md) adopts this protocol,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/objectivec/nsobjectprotocol)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ObjectiveC/nsobjectprotocol)*

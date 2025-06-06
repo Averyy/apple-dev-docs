@@ -1,6 +1,6 @@
 # certificate(withIdentifier:)
 
-**Framework**: ManagedApp  
+**Framework**: Managedapp  
 **Kind**: method
 
 Provides a certificate by its identifier.
@@ -28,11 +28,7 @@ The MDM server can change the available certificates at any time. When that happ
 
 > ❗ **Important**: Avoid storing the certificate and instead, call this method whenever the app needs the certificate. For security reasons, avoid logging or displaying the certificate. Even though the cerificate is a “public” certificate, it can contain sensitive information.
 
-Avoid storing the certificate and instead, call this method whenever the app needs the certificate. For security reasons, avoid logging or displaying the certificate. Even though the cerificate is a “public” certificate, it can contain sensitive information.
-
 > **Note**: [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if no certificate exists with the specified identifier.
-
-[`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if no certificate exists with the specified identifier.
 
 ## Parameters
 

@@ -34,9 +34,7 @@ if let lastNumber = numbers.last {
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/contiguousarray/last)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/contiguousarray/last)*

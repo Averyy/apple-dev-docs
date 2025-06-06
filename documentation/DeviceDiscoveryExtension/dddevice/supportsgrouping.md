@@ -1,6 +1,6 @@
 # supportsGrouping
 
-**Framework**: DeviceDiscoveryExtension  
+**Framework**: Devicediscoveryextension  
 **Kind**: property
 
 A Boolean value that indicates whether to group the device with others in the AirPlay UI.
@@ -27,8 +27,6 @@ When someone selects a media receiver in the AirPlay menu, the system checks if 
 If a person selects multiple devices in the menu, the selected devices reorder next to each other in the list.
 
 > **Note**:  Implement [`didReceiveEvent(_:)`](dddiscoveryextension/didreceiveevent(_:).md) in the [`DDDiscoveryExtension`](dddiscoveryextension.md) to detect when a person changes the device grouping using the AirPlay UI.
-
- Implement [`didReceiveEvent(_:)`](dddiscoveryextension/didreceiveevent(_:).md) in the [`DDDiscoveryExtension`](dddiscoveryextension.md) to detect when a person changes the device grouping using the AirPlay UI.
 
 ## See Also
 

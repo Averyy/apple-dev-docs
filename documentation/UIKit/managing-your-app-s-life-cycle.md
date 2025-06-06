@@ -1,6 +1,6 @@
 # Managing your app’s life cycle
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Respond to system notifications when your app is in the foreground or background, and handle other significant system-related events.
 
@@ -15,15 +15,11 @@ When your app’s state changes, UIKit notifies you by calling methods of the ap
 
 > **Note**:  When you enable scene support in your app, iOS always uses your scene delegates in iOS 13 and later. In iOS 12 and earlier, the system uses your app delegate.
 
- When you enable scene support in your app, iOS always uses your scene delegates in iOS 13 and later. In iOS 12 and earlier, the system uses your app delegate.
-
 ##### Respond to Scene Based Life Cycle Events
 
 UIKit delivers separate life-cycle events for each scene. A scene represents one instance of your app’s UI running on a device. A person can create multiple scenes for each app, and show and hide them separately. Because each scene has its own life cycle, each can be in a different state of execution. For example, one scene might be in the foreground while others are in the background or are suspended.
 
 > ❗ **Important**:  Scene support is an opt-in feature. To enable basic support, add the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key to your app’s `Info.plist` file as described in [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md).
-
- Scene support is an opt-in feature. To enable basic support, add the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key to your app’s `Info.plist` file as described in [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md).
 
 The following figure shows the state transitions for scenes. When a person or the system requests a new scene for your app, UIKit creates it and puts it in the unattached state. Person-requested scenes move quickly to the foreground, where they appear onscreen. A system-requested scene typically moves to the background so that it can process an event. For example, the system might launch the scene in the background to process a location event. When someone dismisses your app’s UI, UIKit moves the associated scene to the background state and eventually to the suspended state. UIKit can disconnect a background or suspended scene at any time to reclaim its resources, returning that scene to the unattached state.
 
@@ -86,4 +82,4 @@ In addition to handling life-cycle events, apps must also be prepared to handle 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/managing-your-app-s-life-cycle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/managing-your-app-s-life-cycle)*

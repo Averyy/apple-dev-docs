@@ -1,6 +1,6 @@
 # DirectionalLightComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that defines a directional light source.
@@ -26,8 +26,6 @@ Change the a directional light’s direction with the [`orientation`](entity/ori
 
 > 💡 **Tip**: Turn on shadows for a directional light by adding the [`DirectionalLightComponent.Shadow`](directionallightcomponent/shadow.md) component to an entity that has a `DirectionalLightComponent`.
 
-Turn on shadows for a directional light by adding the [`DirectionalLightComponent.Shadow`](directionallightcomponent/shadow.md) component to an entity that has a `DirectionalLightComponent`.
-
 Use this component with shadows by adding `DirectionalLightComponent` and [`DirectionalLightComponent.Shadow`](directionallightcomponent/shadow.md) to an entity’s [`components`](entity/components.md) set. In this example, the light’s color is red, and the intensity is `10_000`, which is an approximate lux for ambient daylight:
 
 ```swift
@@ -47,8 +45,6 @@ The directional light illuminates entities evenly in the direction it derives fr
 | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube. There is no obvious lighting in the scene, so the edges of the cube are not clear.](https://docs-assets.developer.apple.com/published/e8b038bfa7b07c3d0dcacbd9fc181188/directionallight-cube-off.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and five small green arrows in a row above the cube. There is a red light uniformly affecting the scene from above, casting a shadow to the right of the cube.](https://docs-assets.developer.apple.com/published/f01ce460b71220e95e8772c713bd9d84/directionallight-cube-on.jpg) |
 
 > **Note**: The green arrows in the above illustration are only a visual representation of the light’s direction.
-
-The green arrows in the above illustration are only a visual representation of the light’s direction.
 
 ## Topics
 
@@ -103,4 +99,4 @@ The green arrows in the above illustration are only a visual representation of t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/directionallightcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/directionallightcomponent)*

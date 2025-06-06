@@ -1,6 +1,6 @@
 # cuttable(for:action:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Specifies an action that moves items to the Clipboard in response to the system’s Cut command.
@@ -47,8 +47,6 @@ struct CuttableExample: View {
 When someone selects “owl” and issues a Cut command, the `action` closure removes the selected item from the list and returns it. In response, SwiftUI moves it to the Clipboard. If you want to copy the item without removing it, use the [`copyable(_:)`](view/copyable(_:).md) modifier instead.
 
 > **Note**: To enable people to cut using a custom action — like from a context menu item — rather than using the system Cut command, update the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/UIKit/UIPasteboard) instance.
-
-To enable people to cut using a custom action — like from a context menu item — rather than using the system Cut command, update the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/UIKit/UIPasteboard) instance.
 
 ## Parameters
 

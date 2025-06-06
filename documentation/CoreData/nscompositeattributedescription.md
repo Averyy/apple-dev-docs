@@ -1,6 +1,6 @@
 # NSCompositeAttributeDescription
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: class
 
 A description of an attribute that derives its value by composing other attributes.
@@ -25,8 +25,6 @@ class NSCompositeAttributeDescription
 Composite attributes enable you to define and store complex data types, and then query, index, and apply constraints to those types. Model classes use dictionaries to represent those composites in-memory, where each dictionary contains keys corresponding to the names of the underlying attributes. You may use composite attributes anywhere you use standard attributes, including lightweight migrations and CloudKit, through [`NSPersistentCloudKitContainer`](nspersistentcloudkitcontainer.md). You can even nest composites inside other composites to create complex object hierarchies without additional model classes.
 
 > **Note**:  Composite attributes are available only to persistent stores that you configure with the [`sqlite`](nspersistentstore/storetype/sqlite.md) store type.
-
- Composite attributes are available only to persistent stores that you configure with the [`sqlite`](nspersistentstore/storetype/sqlite.md) store type.
 
 In most scenarios, prefer to use Xcode’s model editor to add composite attributes to your entities and then regenerate your model classes. However, if you need to create composites dynamically at runtime, create an instance of this class and populate its [`elements`](nscompositeattributedescription/elements.md) property with the necessary attribute descriptions.
 
@@ -81,4 +79,4 @@ print(quake.magnitude.richter)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nscompositeattributedescription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nscompositeattributedescription)*

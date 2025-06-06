@@ -1,6 +1,6 @@
 # Representing haptic patterns in AHAP files
 
-**Framework**: Core Haptics
+**Framework**: Corehaptics
 
 Understand the Apple Haptic and Audio Pattern (AHAP) file format.
 
@@ -44,8 +44,6 @@ Each parameter has a `ParameterID` string and an associated value. The range of 
 
 > **Note**:  A value of 0 doesn’t mean that the parameter has no effect, or that the absolute value of the parameter is zero. It’s a normalized value that maps to the minimum value the system supports. Likewise, a value of 1 doesn’t indicate 1 second; rather, it maps to the maximum supported value.
 
- A value of 0 doesn’t mean that the parameter has no effect, or that the absolute value of the parameter is zero. It’s a normalized value that maps to the minimum value the system supports. Likewise, a value of 1 doesn’t indicate 1 second; rather, it maps to the maximum supported value.
-
 ##### Add Dynamic Parameters to Change the Pattern During Playback
 
 Like event parameters, each dynamic parameter has a `ParameterID` string and an associated value. Unlike event parameters, dynamic parameters affect the entire pattern, across all events. You indicate a dynamic parameter in the AHAP file with an entry labeled `Parameter` at the same level as `Event`.
@@ -64,4 +62,4 @@ For more information about parameter curves, see [`CHHapticParameterCurve`](chha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/representing-haptic-patterns-in-ahap-files)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/representing-haptic-patterns-in-ahap-files)*

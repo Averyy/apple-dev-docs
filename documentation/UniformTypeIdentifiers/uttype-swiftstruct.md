@@ -1,6 +1,6 @@
 # UTType
 
-**Framework**: Uniform Type Identifiers  
+**Framework**: Uniformtypeidentifiers  
 **Kind**: struct
 
 A structure that represents a type of data to load, send, or receive.
@@ -25,8 +25,6 @@ struct UTType
 The [`UTType`](uttype-swift.struct.md) instance may represent files on disk, abstract data types with no on-disk representation, or entirely unrelated hierarchical classification systems, such as hardware. Each instance has a unique [`identifier`](uttype-swift.struct/identifier.md), and helpful properties, such as [`preferredFilenameExtension`](uttype-swift.struct/preferredfilenameextension.md) and [`preferredMIMEType`](uttype-swift.struct/preferredmimetype.md).
 
 > **Note**:  The system includes static declarations for many common types, which you can look up by identifier, filename extension, or MIME type.
-
- The system includes static declarations for many common types, which you can look up by identifier, filename extension, or MIME type.
 
 A [`UTType`](uttype-swift.struct.md) instance may provide additional information related to the type. For example, it may include a localized user-facing description, a reference URL to technical documentation about the type, or its version number. You can look up types by their conformance to get either a type or a list of types that are relevant to your use case.
 

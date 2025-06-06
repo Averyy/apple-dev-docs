@@ -26,9 +26,7 @@ The corresponding value is of type [`CFString`](https://developer.apple.com/docu
 
 > **Note**:  For compatibility with earlier Keychain APIs, functions in [`Keychain services`](keychain-services.md) accept a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) for the authentication scheme. The number is a 32-bit integer that encodes the authentication scheme as a `FourCharCode`. In your code, use a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) with one of the values from [`Authentication Type Values`](item-attribute-keys-and-values#Authentication-Type-Values.md) instead of a number.
 
- For compatibility with earlier Keychain APIs, functions in [`Keychain services`](keychain-services.md) accept a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) for the authentication scheme. The number is a 32-bit integer that encodes the authentication scheme as a `FourCharCode`. In your code, use a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) with one of the values from [`Authentication Type Values`](item-attribute-keys-and-values#Authentication-Type-Values.md) instead of a number.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/ksecattrauthenticationtype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/ksecattrauthenticationtype)*

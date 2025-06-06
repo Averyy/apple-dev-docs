@@ -1,6 +1,6 @@
 # sourceRect
 
-**Framework**: ScreenCaptureKit  
+**Framework**: Screencapturekit  
 **Kind**: property
 
 A rectangle that specifies the source area to capture.
@@ -20,8 +20,6 @@ var sourceRect: CGRect { get set }
 If you don’t specify a source rectangle to capture, the system captures the entire display.
 
 > **Note**:  The system doesn’t reference this value when you capture a single window because it captures the full bounds of the window.
-
- The system doesn’t reference this value when you capture a single window because it captures the full bounds of the window.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # dropFirst(_:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Returns a subsequence containing all but the given number of initial elements.
@@ -36,8 +36,6 @@ print(numbers.dropFirst(10))
 ```
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the number of elements to drop from the beginning of the collection.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the number of elements to drop from the beginning of the collection.
 
 ## Parameters
 

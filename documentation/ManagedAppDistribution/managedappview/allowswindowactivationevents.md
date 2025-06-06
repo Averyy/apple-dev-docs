@@ -1,6 +1,6 @@
 # allowsWindowActivationEvents(_:)
 
-**Framework**: ManagedAppDistribution  
+**Framework**: Managedappdistribution  
 **Kind**: method
 
 Configures whether gestures in this view hierarchy can handle events that activate the containing window.
@@ -32,8 +32,6 @@ HStack {
 ```
 
 > **Note**: It’s only possible to disallow handling events that activate the containing window for views that allow it by default or that inherit this behavior from their ancestors. Views that explicitly already disallow this functionality can’t have it turned on.
-
-It’s only possible to disallow handling events that activate the containing window for views that allow it by default or that inherit this behavior from their ancestors. Views that explicitly already disallow this functionality can’t have it turned on.
 
 ## Parameters
 

@@ -28,8 +28,6 @@ A measurement of value `lhs.value - rhs.value` and unit `lhs.unit`.
 
 > **Note**: The `unit` of `lhs` and `rhs` must be `isEqual`.
 
-The `unit` of `lhs` and `rhs` must be `isEqual`.
-
 ## See Also
 
 - [static func * (Double, Measurement<UnitType>) -> Measurement<UnitType>](measurement/*(_:_:)-1d26c.md)

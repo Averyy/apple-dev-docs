@@ -17,8 +17,6 @@ If `Product.products(for:)` fails to return a Product instance for your In-App P
 
 > **Note**: If your app fails to display its products when testing In-App Purchases in the Apple sandbox environment, or when launching the app in the App Store, see [`TN3186: Troubleshooting In-App Purchases availability in the sandbox`](tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md) and [`TN3188: Troubleshooting In-App Purchases availability in the App Store`](tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.md), respectively.
 
-If your app fails to display its products when testing In-App Purchases in the Apple sandbox environment, or when launching the app in the App Store, see [`TN3186: Troubleshooting In-App Purchases availability in the sandbox`](tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md) and [`TN3188: Troubleshooting In-App Purchases availability in the App Store`](tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.md), respectively.
-
 #### Validate Your Product Identifier List
 
 Inspect the active StoreKit configuration file in your Xcode project. Confirm each product identifier in your list matches the product identifier of an In-App Purchase configured in this file.
@@ -74,4 +72,4 @@ To prevent the test environment from simulating a load products failure scenario
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3185-troubleshooting-in-app-purchases-availability-in-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3185-troubleshooting-in-app-purchases-availability-in-xcode)*

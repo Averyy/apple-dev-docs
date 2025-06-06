@@ -1,6 +1,6 @@
 # tv-scrollable-bounds-inset
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Creates an unscrollable region of a specified size at the top and bottom of the stack template.
 
@@ -11,8 +11,6 @@ Use the `tv-scrollable-bounds-inset` style to create an unscrollable region of s
 Once focus is shifted from an unscrollable region to a scrollable region, the content offset of the template is adjusted to the specified `tv-scrollable-bounds-inset` value, so that the unscrollable region doesn’t appear on screen.
 
 > **Note**: By default, the entire template is scrollable if you don’t define the tv-scrollable-bounds-inset style.
-
-By default, the entire template is scrollable if you don’t define the tv-scrollable-bounds-inset style.
 
 Here’s an example that sets the inset (unscrollable space) at the top, right, bottom, and left all to 100 points.
 
@@ -52,8 +50,6 @@ Here’s an example that sets the inset (unscrollable space) at the top to 50 po
 
 > ❗ **Important**: Currently, creating unscrollable regions at the left and right of the `stackTemplate `is not supported and will not have any effect.
 
-Currently, creating unscrollable regions at the left and right of the `stackTemplate `is not supported and will not have any effect.
-
 ##### Elements That Use Tv Scrollable Bounds Inset
 
 - [`stackTemplate`](stacktemplate.md)
@@ -88,4 +84,4 @@ Currently, creating unscrollable regions at the left and right of the `stackTemp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/tv-scrollable-bounds-inset)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/tv-scrollable-bounds-inset)*

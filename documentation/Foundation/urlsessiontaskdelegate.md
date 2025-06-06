@@ -36,8 +36,6 @@ You use this protocol in one of two ways, depending on how you use a [`URLSessio
 
 > **Note**:  Your [`URLSession`](urlsession.md) object doesn’t need to have a delegate. If you don’t assign a delegate, the session uses a system-provided delegate. In this case, you must provide a completion callback or use the Swift `async`-`await` methods to obtain the data.
 
- Your [`URLSession`](urlsession.md) object doesn’t need to have a delegate. If you don’t assign a delegate, the session uses a system-provided delegate. In this case, you must provide a completion callback or use the Swift `async`-`await` methods to obtain the data.
-
 ## Topics
 
 ### Handling task life cycle changes
@@ -97,4 +95,4 @@ You use this protocol in one of two ways, depending on how you use a [`URLSessio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessiontaskdelegate)*

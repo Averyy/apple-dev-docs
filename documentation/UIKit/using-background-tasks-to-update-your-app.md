@@ -1,6 +1,6 @@
 # Using background tasks to update your app
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Configure your app to perform tasks in the background to make efficient use of processing time and power.
 
@@ -42,8 +42,6 @@ In iOS 13 and later, adding a [`BGTaskSchedulerPermittedIdentifiers`](https://de
 For each task, provide the [`BGTaskScheduler`](https://developer.apple.com/documentation/BackgroundTasks/BGTaskScheduler) object with a  — a small block of code that runs the task — and a unique identifier. Register all of the tasks before the end of the app launch sequence. For more information, see [`About the app launch sequence`](about-the-app-launch-sequence.md).
 
 > **Note**:  An extension can schedule a task, but your main app must register the task. The system launches the app to run the task.
-
- An extension can schedule a task, but your main app must register the task. The system launches the app to run the task.
 
 ![Flow diagram showing when a task object is run. The flow starts with app launch, after which the task is scheduled, run, and completed.](https://docs-assets.developer.apple.com/published/067ce635a06a72f812bdbe72b3f5dd3b/media-3399760%402x.png)
 
@@ -111,4 +109,4 @@ func handleAppRefresh(task: BGAppRefreshTask) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/using-background-tasks-to-update-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/using-background-tasks-to-update-your-app)*

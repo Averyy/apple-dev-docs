@@ -10,8 +10,6 @@ By default, Metal tracks the write hazards and synchronizes the resources (see [
 
 > **Note**:  You can also create a resource from a Metal device and set it to [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md), or create a resource from a Metal heap and set it to [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md).
 
- You can also create a resource from a Metal device and set it to [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md), or create a resource from a Metal heap and set it to [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md).
-
 Your app is responsible for manually synchronizing the resources that Metal doesn’t track. You can synchronize resources with these mechanisms, which are in ascending scope order:
 
 - Memory barriers
@@ -28,8 +26,6 @@ An [`MTLEvent`](mtlevent.md) synchronizes access to one or more resources on a 
 An [`MTLSharedEvent`](mtlsharedevent.md) synchronizes access to one or more resources with other Metal device instances or with the CPU. Shared events are similar to a regular event, but with a larger scope that goes beyond a single GPU to include the CPU and other GPUs. See [`Synchronizing Events Between a GPU and the CPU`](synchronizing-events-between-a-gpu-and-the-cpu.md) and [`Synchronizing Events Across Multiple Devices or Processes`](synchronizing-events-across-multiple-devices-or-processes.md) for more information.
 
 > 💡 **Tip**:  For better performance, use the synchronization mechanism with the smallest scope possible.
-
- For better performance, use the synchronization mechanism with the smallest scope possible.
 
 ## Topics
 
@@ -83,4 +79,4 @@ An [`MTLSharedEvent`](mtlsharedevent.md) synchronizes access to one or more res
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/resource-synchronization)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/resource-synchronization)*

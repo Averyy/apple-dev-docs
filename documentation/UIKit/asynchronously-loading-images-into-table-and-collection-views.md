@@ -1,6 +1,6 @@
 # Asynchronously loading images into table and collection views
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Store and fetch images asynchronously to make your app more responsive.
 
@@ -66,8 +66,6 @@ An app that loads all of its data on launch risks running out of memory or termi
 
 > **Note**: To ensure items load before becoming visible on screen, make use of prefetching APIs when applicable. See [`Prefetching collection view data`](prefetching-collection-view-data.md) for best practices of prefetching data.
 
-To ensure items load before becoming visible on screen, make use of prefetching APIs when applicable. See [`Prefetching collection view data`](prefetching-collection-view-data.md) for best practices of prefetching data.
-
 Generally the app should wait until the data source requests a cell to fetch and set an image. The sample project demonstrates one approach to fetching and displaying an image on a reusable view :
 
 ```swift
@@ -109,4 +107,4 @@ cell.contentConfiguration = content
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/asynchronously-loading-images-into-table-and-collection-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/asynchronously-loading-images-into-table-and-collection-views)*

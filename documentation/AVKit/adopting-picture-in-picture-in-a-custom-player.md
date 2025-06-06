@@ -1,6 +1,6 @@
 # Adopting Picture in Picture in a Custom Player
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Add controls to your custom player user interface to invoke Picture in Picture (PiP) playback.
 
@@ -67,8 +67,6 @@ For PiP functionality to work, maintain a strong reference to the controller obj
 
 > **Note**:  The PiP display doesn’t use the `AVPlayerLayer` that you passed to `AVPictureInPictureController`, so AVFoundation stops vending video frames to `AVPlayerLayer` when PiP mode is active.
 
- The PiP display doesn’t use the `AVPlayerLayer` that you passed to `AVPictureInPictureController`, so AVFoundation stops vending video frames to `AVPlayerLayer` when PiP mode is active.
-
 To participate in PiP life-cycle events, your code should adopt the [`AVPictureInPictureControllerDelegate`](avpictureinpicturecontrollerdelegate.md) protocol and set itself as the controller’s delegate. Also, use KVO on the controller’s [`isPictureInPicturePossible`](avpictureinpicturecontroller/ispictureinpicturepossible.md) property to observe whether using PiP mode is possible in the current context, for example, when the system is displaying an active FaceTime window. By observing this property, you can determine when it’s appropriate to change the enabled state of your PiP button.
 
 ##### Publish the Now Playing State
@@ -99,8 +97,6 @@ With the `AVPictureInPictureController` setup complete, add an `@IBAction` metho
 ```
 
 > ❗ **Important**:  Only begin PiP playback in response to user interaction and never programmatically. The App Store review team rejects apps that fail to follow this requirement.
-
- Only begin PiP playback in response to user interaction and never programmatically. The App Store review team rejects apps that fail to follow this requirement.
 
 ##### Restore Control to Your App
 
@@ -148,4 +144,4 @@ func pictureInPictureControllerDidStopPictureInPicture(_ pictureInPictureControl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/adopting-picture-in-picture-in-a-custom-player)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/adopting-picture-in-picture-in-a-custom-player)*

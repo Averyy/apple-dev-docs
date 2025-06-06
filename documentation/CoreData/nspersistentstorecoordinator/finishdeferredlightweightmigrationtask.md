@@ -1,6 +1,6 @@
 # finishDeferredLightweightMigrationTask()
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: method
 
 Executes a single pending task of a deferred lightweight migration.
@@ -23,8 +23,6 @@ func finishDeferredLightweightMigrationTask() throws
 #### Discussion
 
 > **Note**:  Enable deferred lightweight migrations before using this method. For more information, see [`NSPersistentStoreDeferredLightweightMigrationOptionKey`](nspersistentstoredeferredlightweightmigrationoptionkey.md).
-
- Enable deferred lightweight migrations before using this method. For more information, see [`NSPersistentStoreDeferredLightweightMigrationOptionKey`](nspersistentstoredeferredlightweightmigrationoptionkey.md).
 
 ## See Also
 

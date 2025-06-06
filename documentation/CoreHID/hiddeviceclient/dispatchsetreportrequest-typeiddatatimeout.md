@@ -1,6 +1,6 @@
 # dispatchSetReportRequest(type:id:data:timeout:)
 
-**Framework**: Core HID  
+**Framework**: Corehid  
 **Kind**: method
 
 Send a set report request to the device over the transport.
@@ -25,8 +25,6 @@ Many HID devices accept set report requests to send data to the device or alter 
 For more details, see [`Human Interface Devices (HID) Specifications and Tools`](https://developer.apple.comhttps://www.usb.org/hid).
 
 > **Note**: [`HIDDeviceError`](hiddeviceerror.md) if there is an issue with the request.
-
-[`HIDDeviceError`](hiddeviceerror.md) if there is an issue with the request.
 
 ## Parameters
 

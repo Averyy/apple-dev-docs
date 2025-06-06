@@ -80,8 +80,6 @@ If you use a Custom distribution method and disable the “Manage version and bu
 
 > **Note**: Build strings for Mac apps must increment across all versions of your app. Build strings for apps built for other platforms can start back over at 1 for new versions.
 
-Build strings for Mac apps must increment across all versions of your app. Build strings for apps built for other platforms can start back over at 1 for new versions.
-
 ##### Edit Deployment Info Settings
 
 For iOS and iPadOS apps, choose the device orientations your app supports.
@@ -137,4 +135,4 @@ To learn more, see [`Complying with Encryption Export Regulations`](https://deve
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution)*

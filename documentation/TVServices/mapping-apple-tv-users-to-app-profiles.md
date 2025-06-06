@@ -1,6 +1,6 @@
 # Mapping Apple TV users to app profiles
 
-**Framework**: TV Services
+**Framework**: Tvservices
 
 Adapt the content of your app for the current viewer by using an entitlement and simplifying sign-in flows.
 
@@ -13,8 +13,6 @@ Adapt the content of your app for the current viewer by using an entitlement and
 This sample demonstrates how to reduce configuration dialogs for people who share an Apple TV and a service account, such as a family media subscription. To let people get to your content more directly, your app should save shared login information where it can access the credentials regardless of the current user, and your code should also remember which profile to load for each user.
 
 > **Note**: This sample code project is associated with WWDC22 session 110384: [`Support multiple users in tvOS apps`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110384/).
-
-This sample code project is associated with WWDC22 session 110384: [`Support multiple users in tvOS apps`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110384/).
 
 ##### Configure the Sample Code Project
 
@@ -36,8 +34,6 @@ Apple TV supports multiple users. To opt-in to keeping separate data for each us
 ```
 
 > **Note**: This entitlement value grants your app per-user data storage on tvOS 16 and higher but maintains single-user behavior on tvOS 15 or earlier.
-
-This entitlement value grants your app per-user data storage on tvOS 16 and higher but maintains single-user behavior on tvOS 15 or earlier.
 
 ##### Save Each Users Profile
 
@@ -183,4 +179,4 @@ func removeCredentials() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvservices/mapping-apple-tv-users-to-app-profiles)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVServices/mapping-apple-tv-users-to-app-profiles)*

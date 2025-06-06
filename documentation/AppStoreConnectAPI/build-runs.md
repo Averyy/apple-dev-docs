@@ -1,6 +1,6 @@
 # Build Runs
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read detailed build information and start new builds.
 
@@ -17,8 +17,6 @@ The `ciBuildRuns` resource represents an Xcode Cloud build. Use it to get a list
 Additionally, use the `ciBuildRuns` resource to tell Xcode Cloud to start a new build.
 
 > **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
-
- This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
 
@@ -56,4 +54,4 @@ Additionally, use the `ciBuildRuns` resource to tell Xcode Cloud to start a new 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/build-runs)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/build-runs)*

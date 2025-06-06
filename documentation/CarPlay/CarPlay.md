@@ -1,6 +1,6 @@
 # CarPlay
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: module
 
 Integrate CarPlay in apps related to audio, communication, navigation, parking, EV charging, food ordering, and more.
@@ -19,8 +19,6 @@ CarPlay features run when the current device supports CarPlay and when that devi
 You can use other technologies to drive portions of your app’s CarPlay interface. Messaging apps can include [`SiriKit`](https://developer.apple.com/documentation/SiriKit) support to allow someone to read or send messages. VoIP apps can use [`CallKit`](https://developer.apple.com/documentation/CallKit) to manage incoming and outgoing calls, often in combination with SiriKit call support. Navigation apps can include [`MapKit`](https://developer.apple.com/documentation/MapKit) support.
 
 > **Note**:  Session 10635: [`Accelerate Your App with CarPlay`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10635/)
-
- Session 10635: [`Accelerate Your App with CarPlay`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10635/)
 
 ## Topics
 

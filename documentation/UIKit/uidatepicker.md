@@ -1,6 +1,6 @@
 # UIDatePicker
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A control for inputting date and time values.
@@ -44,8 +44,6 @@ The figure below shows a date picker configured with the [`datePickerMode`](uida
 ![A screenshot of a wheels-style date pickering showing the selected value of 1 hour and 15 minutes.](https://docs-assets.developer.apple.com/published/b2e540a05def72391939e2cef1050d68/media-2279158%402x.png)
 
 > **Note**:  You can use a [`UIDatePicker`](uidatepicker.md) object for the selection of a time interval, but you must use an [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) object to implement the actual timer behavior. For more information, see [`Timer`](https://developer.apple.com/documentation/Foundation/Timer).
-
- You can use a [`UIDatePicker`](uidatepicker.md) object for the selection of a time interval, but you must use an [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) object to implement the actual timer behavior. For more information, see [`Timer`](https://developer.apple.com/documentation/Foundation/Timer).
 
 ##### Respond to User Interaction
 
@@ -199,4 +197,4 @@ For further information about making iOS controls accessible, see the [`Accessib
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uidatepicker)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uidatepicker)*

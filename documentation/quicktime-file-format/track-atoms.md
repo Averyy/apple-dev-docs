@@ -1,6 +1,6 @@
 # Track atoms
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Atoms that define a single track of a movie.
 
@@ -15,8 +15,6 @@ Tracks are used specifically for the following purposes:
 - To contain packetization information for streaming protocols (hint tracks). Hint tracks may contain references to media sample data or copies of media sample data. For more information about hint tracks, refer to [`Hint media`](hint_media.md).
 
 > **Note**: A QuickTime movie cannot consist solely of hint tracks or modifier tracks; there must be at least one media track. Furthermore, media tracks cannot be deleted from a hinted movie, even if the hint tracks contain copies of the media sample data—in addition to the hint tracks, the entire unhinted movie must remain.
-
-A QuickTime movie cannot consist solely of hint tracks or modifier tracks; there must be at least one media track. Furthermore, media tracks cannot be deleted from a hinted movie, even if the hint tracks contain copies of the media sample data—in addition to the hint tracks, the entire unhinted movie must remain.
 
 ## Topics
 

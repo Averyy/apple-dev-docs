@@ -1,6 +1,6 @@
 # distance(from:to:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns the distance between two indices.
@@ -27,8 +27,6 @@ The distance between `start` and `end`. The result can be negative only if the c
 Unless the collection conforms to the `BidirectionalCollection` protocol, `start` must be less than or equal to `end`.
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the resulting distance.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the resulting distance.
 
 ## Parameters
 

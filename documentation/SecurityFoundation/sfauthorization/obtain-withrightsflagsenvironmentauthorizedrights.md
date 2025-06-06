@@ -1,6 +1,6 @@
 # obtain(withRights:flags:environment:authorizedRights:)
 
-**Framework**: Security Foundation  
+**Framework**: Securityfoundation  
 **Kind**: method
 
 Authorizes and preauthorizes rights to access a privileged operation and returns the granted rights.
@@ -33,8 +33,6 @@ If you do not specify the `kAuthorizationFlagInteractionAllowed` mask and the Se
 If you specify the `kAuthorizationFlagInteractionAllowed` mask and the user cancels the authentication process, then the method returns [`false`](https://developer.apple.com/documentation/swift/false) and the `error` parameter returns `errAuthorizationCanceled`.
 
 > **Note**: In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/Swift/about-imported-cocoa-error-parameters).
-
-In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/Swift/about-imported-cocoa-error-parameters).
 
 ## Parameters
 

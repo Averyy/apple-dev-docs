@@ -1,6 +1,6 @@
 # Testing your ClassKit app during development
 
-**Framework**: ClassKit
+**Framework**: Classkit
 
 Use development mode to test your app without a Managed Apple ID.
 
@@ -11,8 +11,6 @@ When you distribute your ClassKit-enabled app through the App Store, it runs in 
 During development, you might not have access to users with Managed Apple IDs. Instead, you run your app in development mode. In this mode, which Xcode enables by default, you manually set the user’s role in your device Settings, and all ClassKit data remains stored locally on your device. Nothing is sent to iCloud, and so a Managed Apple ID isn’t required. However, the ClassKit API behaves just as it does in production mode, so that you can test your ClassKit adoption.
 
 > **Note**:  You can’t test ClassKit behavior in Simulator because Schoolwork isn’t available in that environment. Instead, test your ClassKit adoption on real iOS devices with the Schoolwork app installed.
-
- You can’t test ClassKit behavior in Simulator because Schoolwork isn’t available in that environment. Instead, test your ClassKit adoption on real iOS devices with the Schoolwork app installed.
 
 ##### Choose a Role in the Classkit Developer Settings
 
@@ -48,9 +46,7 @@ From your app’s point of view, the ClassKit API behaves exactly the same in pr
 
 > ❗ **Important**:  If you choose production mode in your app’s entitlements, make sure to disable ClassKit development mode on your development devices. In Settings, choose Developer > ClassKit API > Off. Otherwise, ClassKit keeps all data on the device, regardless of your app’s settings.
 
- If you choose production mode in your app’s entitlements, make sure to disable ClassKit development mode on your development devices. In Settings, choose Developer > ClassKit API > Off. Otherwise, ClassKit keeps all data on the device, regardless of your app’s settings.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/testing-your-classkit-app-during-development)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/testing-your-classkit-app-during-development)*

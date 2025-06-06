@@ -24,8 +24,6 @@ var timeZone: TimeZone? { get set }
 
 > **Note**:  This value is interpreted in the context of the calendar in which it is used.
 
- This value is interpreted in the context of the calendar in which it is used.
-
 ## See Also
 
 - [init(calendar: Calendar?, timeZone: TimeZone?, era: Int?, year: Int?, month: Int?, day: Int?, hour: Int?, minute: Int?, second: Int?, nanosecond: Int?, weekday: Int?, weekdayOrdinal: Int?, quarter: Int?, weekOfMonth: Int?, weekOfYear: Int?, yearForWeekOfYear: Int?)](datecomponents/init(calendar:timezone:era:year:month:day:hour:minute:second:nanosecond:weekday:weekdayordinal:quarter:weekofmonth:weekofyear:yearforweekofyear:).md)

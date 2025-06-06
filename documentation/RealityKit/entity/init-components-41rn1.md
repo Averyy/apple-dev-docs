@@ -1,6 +1,6 @@
 # init(components:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates an entity with multiple components.
@@ -36,8 +36,6 @@ let floorCubeEntity = Entity(components: floorCubeComponents)
 ```
 
 > **Note**: You can change any of the entity’s components at any time by modifying the entity’s [`components`](entity/components.md) set.
-
-You can change any of the entity’s components at any time by modifying the entity’s [`components`](entity/components.md) set.
 
 ## Parameters
 

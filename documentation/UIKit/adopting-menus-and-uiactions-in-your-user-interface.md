@@ -1,6 +1,6 @@
 # Adopting menus and UIActions in your user interface
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Add menus to your user interface, with built-in button support and bar-button items, and create custom menu experiences.
 
@@ -12,8 +12,6 @@ Add menus to your user interface, with built-in button support and bar-button it
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [`10052: Build with iOS Pickers, Menus and Actions`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10052/).
-
-This sample code project is associated with WWDC20 session [`10052: Build with iOS Pickers, Menus and Actions`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10052/).
 
 ## See Also
 
@@ -39,4 +37,4 @@ This sample code project is associated with WWDC20 session [`10052: Build with i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/adopting-menus-and-uiactions-in-your-user-interface)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/adopting-menus-and-uiactions-in-your-user-interface)*

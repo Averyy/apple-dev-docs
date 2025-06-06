@@ -1,6 +1,6 @@
 # previewController(_:shouldOpen:for:)
 
-**Framework**: Quick Look  
+**Framework**: Quicklook  
 **Kind**: method
 
 Tells the delegate that the preview controller is trying to open a URL.
@@ -28,8 +28,6 @@ The system invokes this method when the user taps a URL link in a preview. If yo
 If you don’t implement this method, it defaults to returning [`true`](https://developer.apple.com/documentation/swift/true).
 
 > **Note**:  The system doesn’t call this delegate method for Mac apps built with Mac Catalyst.
-
- The system doesn’t call this delegate method for Mac apps built with Mac Catalyst.
 
 ## Parameters
 

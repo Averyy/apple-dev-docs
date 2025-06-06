@@ -1,6 +1,6 @@
 # cgImage(options:)
 
-**Framework**: Assets Library  
+**Framework**: Assetslibrary  
 **Kind**: method
 
 Returns a full resolution CGImage of the representation.
@@ -25,8 +25,6 @@ A full resolution CGImage of the representation.
 This method provides a convenient way to obtain a CGImage representation of an asset. This method returns the biggest, best representation available.
 
 > **Note**:  In iOS 8 and later, use the Photos framework to access different versions and sizes of a photo asset. See [`PHImageManager`](https://developer.apple.com/documentation/Photos/PHImageManager).
-
- In iOS 8 and later, use the Photos framework to access different versions and sizes of a photo asset. See [`PHImageManager`](https://developer.apple.com/documentation/Photos/PHImageManager).
 
 ## Parameters
 

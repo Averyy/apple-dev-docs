@@ -1,6 +1,6 @@
 # prefix(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
@@ -35,8 +35,6 @@ print(numbers.prefix(10))
 ```
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the number of elements to select from the beginning of the collection.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the number of elements to select from the beginning of the collection.
 
 ## Parameters
 

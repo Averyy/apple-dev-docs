@@ -59,8 +59,6 @@ _depthState = [_device newDepthStencilStateWithDescriptor:depthDescriptor];
 
 > **Note**: Metal combines depth testing with a , which performs a similar test using a count stored for each pixel, typically the number of times that fragments pass the depth test. Stencil operations are useful for implementing certain 3D algorithms. By default, the stencil test is disabled, and this sample doesn’t enable it.
 
-Metal combines depth testing with a , which performs a similar test using a count stored for each pixel, typically the number of times that fragments pass the depth test. Stencil operations are useful for implementing certain 3D algorithms. By default, the stencil test is disabled, and this sample doesn’t enable it.
-
 ##### Generate Depth Values in Your Shaders
 
 Now that the initialization steps are complete, you can write the vertex shader. In [`Using a Render Pipeline to Render Primitives`](using-a-render-pipeline-to-render-primitives.md), you learned that Metal’s Normalized Device Coordinate (NDC) system uses four-dimensional coordinates, and that your vertex shader must provide a position for each vertex. That sample ignored the z coordinate, but to implement the depth test, you need to provide a value for the z coordinate.
@@ -133,4 +131,4 @@ Experiment with the sliders and see how the results change.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/calculating-primitive-visibility-using-depth-testing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/calculating-primitive-visibility-using-depth-testing)*

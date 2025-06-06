@@ -1,6 +1,6 @@
 # Playing video content in a standard user interface
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Play media full screen, embedded inline, or in a floating Picture in Picture (PiP) window using a player view controller.
 
@@ -21,8 +21,6 @@ The sample uses `AVPlayerViewController` in full-screen playback mode to scale t
 Getting started with [`AVPlayerViewController`](avplayerviewcontroller.md) is straightforward. You create an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer), and then create an `AVPlayerViewController` and assign the player to it. And finally, you present the `AVPlayerViewController`. When playing full screen, embedded inline, or in a floating PiP window, you implement callback methods to respond to the various `AVPlayerViewController` events.
 
 > **Note**: This sample code project is associated with WWDC 2019 session 503: [`Delivering Intuitive Media Playback with AVKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/503/).
-
-This sample code project is associated with WWDC 2019 session 503: [`Delivering Intuitive Media Playback with AVKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/503/).
 
 ##### Create and Configure the Player View Controller
 
@@ -228,4 +226,4 @@ func playerViewController(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/playing-video-content-in-a-standard-user-interface)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/playing-video-content-in-a-standard-user-interface)*

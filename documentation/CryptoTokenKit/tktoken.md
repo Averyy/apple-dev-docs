@@ -1,6 +1,6 @@
 # TKToken
 
-**Framework**: CryptoTokenKit  
+**Framework**: Cryptotokenkit  
 **Kind**: class
 
 A representation of a hardware-based cryptographic token.
@@ -23,8 +23,6 @@ class TKToken
 #### Overview
 
 > **Note**:  When working with smart card tokens, use or inherit from the [`TKSmartCardToken`](tksmartcardtoken.md) subclass instead.
-
- When working with smart card tokens, use or inherit from the [`TKSmartCardToken`](tksmartcardtoken.md) subclass instead.
 
 ## Topics
 
@@ -88,4 +86,4 @@ class TKToken
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cryptotokenkit/tktoken)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CryptoTokenKit/tktoken)*

@@ -1,6 +1,6 @@
 # Preparing your UI to run in the background
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Prepare your app to be suspended.
 
@@ -69,8 +69,6 @@ Your app’s UI must not contain any sensitive user information, such as passwor
 
 > **Note**:  For apps that support state preservation and restoration, the system begins the preservation process shortly after your delegate method returns. Removing sensitive data also prevents that information from being saved in your app’s preservation archive. For more information, see [`Preserving your app’s UI across launches`](preserving-your-app-s-ui-across-launches.md).
 
- For apps that support state preservation and restoration, the system begins the preservation process shortly after your delegate method returns. Removing sensitive data also prevents that information from being saved in your app’s preservation archive. For more information, see [`Preserving your app’s UI across launches`](preserving-your-app-s-ui-across-launches.md).
-
 ##### Respond to Important Events in the Background
 
 Apps don’t normally receive any extra execution time after they enter the background. However, UIKit does grant execution time to apps that support any of the following time-sensitive capabilities:
@@ -103,4 +101,4 @@ Enable the Background Modes capability in Xcode if your app supports background 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/preparing-your-ui-to-run-in-the-background)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/preparing-your-ui-to-run-in-the-background)*

@@ -1,6 +1,6 @@
 # Explore more content with MusicKit
 
-**Framework**: MusicKit
+**Framework**: Musickit
 
 Track your outdoor runs with access to the Apple Music catalog, personal recommendations, and your own personal music library.
 
@@ -12,8 +12,6 @@ Track your outdoor runs with access to the Apple Music catalog, personal recomme
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [`110347: Explore more content with MusicKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110347/).
-
-This sample code project is associated with WWDC22 session [`110347: Explore more content with MusicKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110347/).
 
 ##### 4042109
 

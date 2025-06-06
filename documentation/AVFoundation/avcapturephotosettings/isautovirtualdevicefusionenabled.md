@@ -1,6 +1,6 @@
 # isAutoVirtualDeviceFusionEnabled
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that specifies whether to use automatic virtual-device image fusion.
@@ -24,8 +24,6 @@ When [`isAutoVirtualDeviceFusionEnabled`](avcapturephotosettings/isautovirtualde
 The default value for this property is true, unless you’re capturing a RAW photo or a bracket using [`AVCapturePhotoBracketSettings`](avcapturephotobracketsettings.md).
 
 > **Note**:  When using the deprecated [`AVCaptureStillImageOutput`](avcapturestillimageoutput.md) interface with a virtual device, [`isAutoVirtualDeviceFusionEnabled`](avcapturephotosettings/isautovirtualdevicefusionenabled.md) is always enabled, if supported.
-
- When using the deprecated [`AVCaptureStillImageOutput`](avcapturestillimageoutput.md) interface with a virtual device, [`isAutoVirtualDeviceFusionEnabled`](avcapturephotosettings/isautovirtualdevicefusionenabled.md) is always enabled, if supported.
 
 ## See Also
 

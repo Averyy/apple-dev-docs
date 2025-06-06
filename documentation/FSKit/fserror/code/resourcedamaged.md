@@ -1,6 +1,6 @@
 # FSError.Code.resourceDamaged
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: case
 
 The resource is damaged.
@@ -20,8 +20,6 @@ This error indicates the resource needs a repair operation, or that a repair ope
 
 > **Note**: The status in this error applies to the resource. A failing repair operation reports a more specific error status.
 
-The status in this error applies to the resource. A failing repair operation reports a more specific error status.
-
 ## See Also
 
 - [FSError.Code.invalidDirectoryCookie](fserror/code/invaliddirectorycookie.md)
@@ -40,4 +38,4 @@ The status in this error applies to the resource. A failing repair operation rep
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fserror/code/resourcedamaged)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FSKit/fserror/code/resourcedamaged)*

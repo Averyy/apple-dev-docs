@@ -17,8 +17,6 @@ These are LLVM-based tools that add specific checks to your code. You enable the
 
 > **Note**: The sanitizer tools support all C-based languages. The tools also support the Swift language, with the exception of the Undefined Behavior Sanitizer tool, which supports only C-based languages.
 
-The sanitizer tools support all C-based languages. The tools also support the Swift language, with the exception of the Undefined Behavior Sanitizer tool, which supports only C-based languages.
-
 Test your app with sanitizer tools enabled to catch otherwise difficult to catch bugs. Test your code using a comprehensive set of unit tests, and use additional integration and UI tests to exercise additional code at runtime. The `Address Sanitizer`, `Thread Sanitizer`, `Undefined Behavior Sanitizer`, and `Main Thread Checker` values of a test plan configuration enable these sanitizers during test runs, see [`Improving code assessment by organizing tests into test plans`](organizing-tests-to-improve-feedback.md).  For more information about testing your code, see [`Testing`](testing.md).
 
 ##### Locate Memory Corruption Issues in Your Code
@@ -36,8 +34,6 @@ To enable ASan from the command line, use the following flags:
 The Address Sanitizer tool replaces the `malloc(_:)` and `free(_:)` functions with custom implementations. The custom `malloc(_:)` function surrounds a requested memory block with special off-limits regions, and reports attempts to access those regions. The `free(_:)` function places a deallocated block into a special quarantine queue, and reports attempts to access that quarantined memory.
 
 > ❗ **Important**: Address Sanitizer doesn’t detect memory leaks, attempts to access uninitialized memory, or integer overflow errors. Use Instruments and the other sanitizer tools to find additional errors.
-
-Address Sanitizer doesn’t detect memory leaks, attempts to access uninitialized memory, or integer overflow errors. Use Instruments and the other sanitizer tools to find additional errors.
 
 For most use cases, the overhead that Address Sanitizer adds to your code should be acceptable for daily development. Running your code with Address Sanitizer increases memory usage by two to three times, and also adds 2x to 5x slowdown of your code. To improve your code’s memory usage, compile your code with the `-O1` optimization.
 
@@ -59,8 +55,6 @@ The Thread Sanitizer tool inserts diagnostics into your code to record each memo
 
 > ❗ **Important**: You can’t use Thread Sanitizer to diagnose iOS, iPadOS, tvOS, visionOS, and watchOS apps running on a device. Use Thread Sanitizer only on your 64-bit macOS app, or to diagnose your 64-bit iOS, iPadOS, tvOS, visionOS, or watchOS app running in Simulator.
 
-You can’t use Thread Sanitizer to diagnose iOS, iPadOS, tvOS, visionOS, and watchOS apps running on a device. Use Thread Sanitizer only on your 64-bit macOS app, or to diagnose your 64-bit iOS, iPadOS, tvOS, visionOS, or watchOS app running in Simulator.
-
 Because Thread Sanitizer inserts diagnostics into your code, it increases memory usage by five to ten times. Running your code with these diagnostics also introduces a 2x to 20x slowdown of your app. To improve your code’s memory usage, compile your code with the `-O1` optimization.
 
 ##### Detect Improper Ui Updates on Background Threads
@@ -74,8 +68,6 @@ The Main Thread Checker tool ensures that all calls that must occur on the main 
 The Main Thread Checker tool dynamically replaces system methods that must execute on the main thread with variants that check the current thread. The tool replaces only system APIs with well-known thread requirements, and doesn’t replace all system APIs. Because the replacements occur in system frameworks, Main Thread Checker doesn’t require you to recompile your app.
 
 > **Note**: Because Main Thread Checker doesn’t require you to recompile your code, you can run it on an existing macOS binary. Inject the dynamic library located at `/Applications/Xcode.app/Contents/Developer/usr/lib/libMainThreadChecker.dylib` into your executable.
-
-Because Main Thread Checker doesn’t require you to recompile your code, you can run it on an existing macOS binary. Inject the dynamic library located at `/Applications/Xcode.app/Contents/Developer/usr/lib/libMainThreadChecker.dylib` into your executable.
 
 To fix problems identified by Main Thread Checker, dispatch calls to your app’s main thread. The most common place where main thread errors occur is completion handler blocks. The following code wraps the text label modification with an asynchronous dispatch call to the main thread.
 
@@ -209,4 +201,4 @@ The performance impact of Undefined Behavior Sanitizer is minimal. The tool adds
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/diagnosing-memory-thread-and-crash-issues-early)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/diagnosing-memory-thread-and-crash-issues-early)*

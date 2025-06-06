@@ -33,8 +33,6 @@ You can only call this method on a counter sample buffer that you create with [`
 
 > **Note**:  The GPU stores [`MTLCounterErrorValue`](mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
 
- The GPU stores [`MTLCounterErrorValue`](mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
-
 ## Parameters
 
 - `range`: A range that indicates which sample instances the method resolves in the counter sample buffer.

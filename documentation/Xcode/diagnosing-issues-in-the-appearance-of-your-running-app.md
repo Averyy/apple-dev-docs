@@ -38,8 +38,6 @@ To annotate your content with an overlay, click the Debug Visualizations button 
 
 > **Note**: The Anchoring, Axes, and Bounds options apply to the entities for the app you are debugging while the Collision Shapes & Axes option applies to all entities in Shared Space. The Occlusion Mesh and Surfaces options apply to objects the system detects in your surroundings.
 
-The Anchoring, Axes, and Bounds options apply to the entities for the app you are debugging while the Collision Shapes & Axes option applies to all entities in Shared Space. The Occlusion Mesh and Surfaces options apply to objects the system detects in your surroundings.
-
 ## See Also
 
 - [Diagnosing memory, thread, and crash issues early](diagnosing-memory-thread-and-crash-issues-early.md)
@@ -52,4 +50,4 @@ The Anchoring, Axes, and Bounds options apply to the entities for the app you ar
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/diagnosing-issues-in-the-appearance-of-your-running-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/diagnosing-issues-in-the-appearance-of-your-running-app)*

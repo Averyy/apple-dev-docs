@@ -1,6 +1,6 @@
 # Receiving postbacks in multiple conversion windows
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Learn about the data that postbacks may contain in each conversion window.
 
@@ -34,8 +34,6 @@ The [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)
 After receiving a locked conversion value, the system immediately prepares the postback and ignores any further conversion value updates in the same conversion window. The system sends the postbacks after the same random delay following the locked conversion: a 24–48-hour delay for the first postback, and a 24–144-hour delay for the second and third postbacks. The system ignores further updates to the conversion value for the remaining time in the same conversion window.
 
 > **Note**:  The earliest you may receive the first postback is unchanged from version 3 to version 4: the total delay is 24–48 hours after the app updates its final conversion value.
-
- The earliest you may receive the first postback is unchanged from version 3 to version 4: the total delay is 24–48 hours after the app updates its final conversion value.
 
 - In version 3, the app finalizes the conversion value when a 24-hour timer expires after the last conversion value update. Then, the device sends the postback after a random 0–24 hour delay, making the earliest postback 24–48 hours after the app sets the final conversion value.
 - In version 4, the app may finalize the conversion value by locking it. Then, the device sends the postback after a random 24–48 hour delay.
@@ -112,4 +110,4 @@ Ads signed with version 4 and later are eligible for second and third postbacks 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/receiving-postbacks-in-multiple-conversion-windows)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/receiving-postbacks-in-multiple-conversion-windows)*

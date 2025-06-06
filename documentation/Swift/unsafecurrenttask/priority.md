@@ -24,11 +24,7 @@ var priority: TaskPriority { get }
 
 > **Note**: `TaskPriority`
 
-`TaskPriority`
-
 > **Note**: `Task.currentPriority`
-
-`Task.currentPriority`
 
 
 ---

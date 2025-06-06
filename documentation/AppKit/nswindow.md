@@ -1,6 +1,6 @@
 # NSWindow
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A window that an app displays on the screen.
@@ -23,8 +23,6 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 - To accept and distribute mouse and keyboard events the user generates to the appropriate views
 
 > **Note**:  Although the [`NSWindow`](nswindow.md) class inherits the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocol from [`NSResponder`](nsresponder.md), the class doesn’t support coding. Legacy support for archivers exists, but its use is deprecated and may not work. Any attempt to archive or unarchive a window object using a keyed coding object raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) exception. For details about window restoration, see [`restorationClass`](nswindow/restorationclass.md).
-
- Although the [`NSWindow`](nswindow.md) class inherits the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocol from [`NSResponder`](nsresponder.md), the class doesn’t support coding. Legacy support for archivers exists, but its use is deprecated and may not work. Any attempt to archive or unarchive a window object using a keyed coding object raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) exception. For details about window restoration, see [`restorationClass`](nswindow/restorationclass.md).
 
 ## Topics
 
@@ -743,4 +741,4 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow)*

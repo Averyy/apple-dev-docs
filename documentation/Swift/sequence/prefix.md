@@ -38,8 +38,6 @@ print(numbers.prefix(10))
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `maxLength`: The maximum number of elements to return. The   value of   must be greater than or equal to zero.

@@ -1,6 +1,6 @@
 # decline()
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Removes the last read from store.
@@ -22,8 +22,6 @@ func decline() async throws
 This method should be used after a read, when the merchant receives the [`PaymentCardReadResult`](paymentcardreadresult.md) and decides to not accept the payment. It must be called within the 60 seconds allowance time window and the payment must not have been included in a batch, otherwise an error will be thrown.
 
 > **Note**: This method throws a `ReadError` if no previous read was executed, if invoked after the 60 seconds allowance time window or if the payment you are trying to decline belongs to a batch.
-
-This method throws a `ReadError` if no previous read was executed, if invoked after the 60 seconds allowance time window or if the payment you are trying to decline belongs to a batch.
 
 
 ---

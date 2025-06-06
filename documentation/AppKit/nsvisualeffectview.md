@@ -1,6 +1,6 @@
 # NSVisualEffectView
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A view that adds translucency and vibrancy effects to the views in your interface.
@@ -40,8 +40,6 @@ For visual effect views you create yourself, use the [`blendingMode`](nsvisualef
 The presence of a visual effect view in your view hierarchy does not automatically add vibrancy to your content. For custom views, you must explicitly enable vibrancy by overriding the [`allowsVibrancy`](nsview/allowsvibrancy.md) property and returning [`true`](https://developer.apple.com/documentation/swift/true).
 
 > **Note**:  AppKit views and controls automatically add vibrancy where appropriate. For example, [`NSTextField`](nstextfield.md) enables vibrancy to increase the contrast between the text and background. Don’t change the vibrancy settings of standard AppKit views and controls.
-
- AppKit views and controls automatically add vibrancy where appropriate. For example, [`NSTextField`](nstextfield.md) enables vibrancy to increase the contrast between the text and background. Don’t change the vibrancy settings of standard AppKit views and controls.
 
 It is recommended that you enable vibrancy only in the leaf views of your view hierarchy. Subviews inherit the vibrancy of their parent. Once enabled in a parent view, a subview cannot turn off vibrancy. As a result, enabling vibrancy in a parent view can lead to subviews that look incorrect if they are not designed to take advantage of the vibrancy effect.
 
@@ -117,4 +115,4 @@ If you subclass `NSVisualEffectView`:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsvisualeffectview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsvisualeffectview)*

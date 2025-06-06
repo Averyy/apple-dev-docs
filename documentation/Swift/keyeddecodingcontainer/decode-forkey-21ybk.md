@@ -28,15 +28,9 @@ A value of the requested type, if present for the given key and convertible to t
 
 > **Note**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
 
-`DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
-
 > **Note**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
 
-`DecodingError.keyNotFound` if `self` does not have an entry for the given key.
-
 > **Note**: `DecodingError.valueNotFound` if `self` has a null entry for the given key.
-
-`DecodingError.valueNotFound` if `self` has a null entry for the given key.
 
 ## Parameters
 

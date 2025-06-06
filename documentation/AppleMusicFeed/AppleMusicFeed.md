@@ -1,6 +1,6 @@
 # Apple Music Feed
 
-**Framework**: Apple Music Feed  
+**Framework**: Applemusicfeed  
 **Kind**: module
 
 Access the content of the Apple Music Catalog in bulk.
@@ -17,8 +17,6 @@ With access to the raw data and the information in this documentation, you can u
 Apple Music Feed uses the Parquet format, which is an open-source columnar storage file format that optimizes the storage and processing of large datasets. The Parquet format improves query performance and reduces storage costs in scenarios where you need to read or process data selectively. It achieves this by using columns and storing the values of each column together, which allows efficient compression and encoding techniques that you can apply specifically to each column. Many large-scale data-processing frameworks, like Hadoop and Spark, use this format.
 
 > **Note**: Although the feed is in Parquet format, this documentation provides data examples in JSON format for illustrative purposes.
-
-Although the feed is in Parquet format, this documentation provides data examples in JSON format for illustrative purposes.
 
 #### Use Sample Scripts
 

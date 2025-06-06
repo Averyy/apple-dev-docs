@@ -1,6 +1,6 @@
 # supportsZoom
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The accessibility element supports zooming in and out on its content.
@@ -67,8 +67,6 @@ class ZoomingImageView: UIScrollView {
 ```
 
 > **Note**:  Session 10036: [`Build accessible apps with SwiftUI and UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10036/)
-
- Session 10036: [`Build accessible apps with SwiftUI and UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10036/)
 
 ## See Also
 

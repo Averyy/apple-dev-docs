@@ -31,8 +31,6 @@ The type of XPC service you build depends on the requirements of the work it per
 
 > **Note**:  The LaunchAgent and LaunchDaemon types require special installation and configuration. Prior to macOS 13, apps typically used installation scripts to configure these service types. In macOS 13 and later, the [`Service Management`](https://developer.apple.com/documentation/ServiceManagement) framework provides a new structure for packaging and installing these service types.
 
- The LaunchAgent and LaunchDaemon types require special installation and configuration. Prior to macOS 13, apps typically used installation scripts to configure these service types. In macOS 13 and later, the [`Service Management`](https://developer.apple.com/documentation/ServiceManagement) framework provides a new structure for packaging and installing these service types.
-
 You can build an XPC service using C, Swift, or Objective-C. There are both high- and low-level APIs for using XPC. If your project uses the Foundation framework, [`NSXPCConnection`](https://developer.apple.com/documentation/Foundation/NSXPCConnection) provides a high-level object-oriented API that enables a transparent remote method dispatch mechanism between processes. Using [`NSXPCConnection`](https://developer.apple.com/documentation/Foundation/NSXPCConnection) in the Foundation framework lets you design a well-defined protocol for clients to use. If your project doesn’t or can’t link against Foundation, use the lower-level `libSystem` APIs in the XPC framework.
 
 ## Topics

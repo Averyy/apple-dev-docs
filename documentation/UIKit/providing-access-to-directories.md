@@ -1,6 +1,6 @@
 # Providing access to directories
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Use a document picker to access the content of a directory outside your app’s container.
 
@@ -36,8 +36,6 @@ After the user taps Done, the system calls your delegate’s [`documentPicker(_:
 If the user taps Cancel, the system calls [`documentPickerWasCancelled(_:)`](uidocumentpickerdelegate/documentpickerwascancelled(_:).md) instead.
 
 > **Note**:  The [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) doesn’t support the [`folder`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/folder) document type. To provide access to directories, use the [`UIDocumentPickerViewController`](uidocumentpickerviewcontroller.md) instead.
-
- The [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) doesn’t support the [`folder`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/folder) document type. To provide access to directories, use the [`UIDocumentPickerViewController`](uidocumentpickerviewcontroller.md) instead.
 
 ##### Access the Directorys Content
 
@@ -162,4 +160,4 @@ This means your app must be ready to handle failures when accessing a directory�
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/providing-access-to-directories)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/providing-access-to-directories)*

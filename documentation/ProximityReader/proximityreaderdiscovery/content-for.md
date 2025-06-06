@@ -1,6 +1,6 @@
 # content(for:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Fetches the content for the specified topic.
@@ -24,8 +24,6 @@ The requested content, when successful.
 #### Discussion
 
 > **Note**: The method throws a [`ProximityReaderDiscovery.ContentError`](proximityreaderdiscovery/contenterror.md) if it fails to get the content.
-
-The method throws a [`ProximityReaderDiscovery.ContentError`](proximityreaderdiscovery/contenterror.md) if it fails to get the content.
 
 Call this method to get the content definition for the specified topic. The discovery interface uses the specified identifier to determine what to display.
 

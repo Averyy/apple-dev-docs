@@ -1,6 +1,6 @@
 # score(for:)
 
-**Framework**: GameplayKit  
+**Framework**: Gameplaykit  
 **Kind**: method
 
 Returns a number rating the desirability of the game model’s current state from the perspective of the specified player.
@@ -32,8 +32,6 @@ Exactly how you calculate scores to return from this method depends on the rules
 This method should return [`NSIntegerMin`](https://developer.apple.com/documentation/ObjectiveC/NSIntegerMin) if the specified player is not valid.
 
 > **Note**:  This method is optional; however, your game model class must implement at least one of the [`score(for:)`](gkgamemodel/score(for:).md), [`isLoss(for:)`](gkgamemodel/isloss(for:).md), and [`isWin(for:)`](gkgamemodel/iswin(for:).md) methods.
-
- This method is optional; however, your game model class must implement at least one of the [`score(for:)`](gkgamemodel/score(for:).md), [`isLoss(for:)`](gkgamemodel/isloss(for:).md), and [`isWin(for:)`](gkgamemodel/iswin(for:).md) methods.
 
 ## Parameters
 

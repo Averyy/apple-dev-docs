@@ -27,15 +27,11 @@ Xcode creates a new target containing Swift files for the widget, an asset catal
 
 > ❗ **Important**: After you add a WidgetKit extension to your project, the system tries to use it to generate complications for your watchOS app. As soon as your WidgetKit extension begins providing widget-based complications, the system disables your app’s ClockKit complications. It no longer wakes your app to call your [`CLKComplicationDataSource`](https://developer.apple.com/documentation/ClockKit/CLKComplicationDataSource) object’s methods to request timeline entries. However, the system may still wake your data source to call [`getWidgetConfiguration(from:completionHandler:)`](https://developer.apple.com/documentation/ClockKit/CLKComplicationWidgetMigrator/getWidgetConfiguration(from:completionHandler:)), while migrating complications from ClockKit to WidgetKit.
 
-After you add a WidgetKit extension to your project, the system tries to use it to generate complications for your watchOS app. As soon as your WidgetKit extension begins providing widget-based complications, the system disables your app’s ClockKit complications. It no longer wakes your app to call your [`CLKComplicationDataSource`](https://developer.apple.com/documentation/ClockKit/CLKComplicationDataSource) object’s methods to request timeline entries. However, the system may still wake your data source to call [`getWidgetConfiguration(from:completionHandler:)`](https://developer.apple.com/documentation/ClockKit/CLKComplicationWidgetMigrator/getWidgetConfiguration(from:completionHandler:)), while migrating complications from ClockKit to WidgetKit.
-
 ##### Configure Your Timeline Provider
 
 The template creates a `Provider` structure that adopts the `TimelineProvider` or `AppIntentTimelineProvider` protocol, and provides a default implementation for the protocol’s methods. WidgetKit calls these methods to get the data needed to create the widget view.
 
 > **Note**: WidgetKit’s daily budget for reloading the timeline works differently than ClockKit’s. Your widget-based complication receives up to 75 updates per day, based on how often they’re viewed. If you have a complication on the Apple Watch face, it’s always considered viewed, so your budget tends towards the higher end of that range.
-
-WidgetKit’s daily budget for reloading the timeline works differently than ClockKit’s. Your widget-based complication receives up to 75 updates per day, based on how often they’re viewed. If you have a complication on the Apple Watch face, it’s always considered viewed, so your budget tends towards the higher end of that range.
 
 In each of the protocol methods, your app needs to create and return one or more [`TimelineEntry`](timelineentry.md) instances:
 
@@ -216,8 +212,6 @@ WidgetKit reduces the number of families you need to support. In some cases, a W
 
 > **Note**: watchOS 9 and later no longer shows families like [`CLKComplicationFamily.circularSmall`](https://developer.apple.com/documentation/ClockKit/CLKComplicationFamily/circularSmall), [`CLKComplicationFamily.modularSmall`](https://developer.apple.com/documentation/ClockKit/CLKComplicationFamily/modularSmall), or [`CLKComplicationFamily.modularLarge`](https://developer.apple.com/documentation/ClockKit/CLKComplicationFamily/modularLarge) on watch faces.
 
-watchOS 9 and later no longer shows families like [`CLKComplicationFamily.circularSmall`](https://developer.apple.com/documentation/ClockKit/CLKComplicationFamily/circularSmall), [`CLKComplicationFamily.modularSmall`](https://developer.apple.com/documentation/ClockKit/CLKComplicationFamily/modularSmall), or [`CLKComplicationFamily.modularLarge`](https://developer.apple.com/documentation/ClockKit/CLKComplicationFamily/modularLarge) on watch faces.
-
 Use the [`widgetFamily`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/widgetFamily) environment value to determine the complication’s family. You can provide a different SwiftUI view for each family. You can also get the family from the context passed to your timeline provider’s [`getTimeline(in:completion:)`](timelineprovider/gettimeline(in:completion:).md), [`getSnapshot(in:completion:)`](timelineprovider/getsnapshot(in:completion:).md), and [`placeholder(in:)`](timelineprovider/placeholder(in:).md) methods.
 
 ```swift
@@ -290,8 +284,6 @@ You can add a standard background to your complication by adding a [`AccessoryWi
 Finally, consider how Always On affects your complications. You may need to redact sensitive information, or adjust the widget’s appearance for reduced luminance. You can explicitly redact sensitive information using the [`privacySensitive(_:)`](https://developer.apple.com/documentation/SwiftUI/View/privacySensitive(_:)) view modifier. If you do, the system displays the redacted version of your view during Always On. For more information, see [`Designing your app for the Always On state`](https://developer.apple.com/documentation/watchOS-Apps/designing-your-app-for-the-always-on-state).
 
 > **Note**: If you don’t use the [`privacySensitive(_:)`](https://developer.apple.com/documentation/SwiftUI/View/privacySensitive(_:)) view modifier anywhere in your view hierarchy, the system displays a placeholder instead of a live complication. By default, the placeholder redacts all of your complication’s content.
-
-If you don’t use the [`privacySensitive(_:)`](https://developer.apple.com/documentation/SwiftUI/View/privacySensitive(_:)) view modifier anywhere in your view hierarchy, the system displays a placeholder instead of a live complication. By default, the placeholder redacts all of your complication’s content.
 
 #### Migrate Complications on a Watch Face
 
@@ -372,4 +364,4 @@ func widgetConfiguration(from complicationDescriptor: CLKComplicationDescriptor)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/converting-a-clockkit-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/converting-a-clockkit-app)*

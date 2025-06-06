@@ -1,6 +1,6 @@
 # CLHeading
 
-**Framework**: Core Location  
+**Framework**: Corelocation  
 **Kind**: class
 
 The orientation of the user’s device, relative to true or magnetic north.
@@ -25,8 +25,6 @@ A [`CLHeading`](clheading.md) object contains computed values for the device’s
 Typically, you don’t create instances of this class yourself, nor do you subclass it. Instead, you receive instances of this class through the delegate assigned to the [`CLLocationManager`](cllocationmanager.md) object whose [`startUpdatingHeading()`](cllocationmanager/startupdatingheading().md) method you called.
 
 > **Note**:  If you want heading objects to contain valid data for the [`trueHeading`](clheading/trueheading.md) property, configure your location manager object to deliver location updates. You can start the delivery of these updates by calling the location manager object’s [`startUpdatingLocation()`](cllocationmanager/startupdatinglocation().md) method.
-
- If you want heading objects to contain valid data for the [`trueHeading`](clheading/trueheading.md) property, configure your location manager object to deliver location updates. You can start the delivery of these updates by calling the location manager object’s [`startUpdatingLocation()`](cllocationmanager/startupdatinglocation().md) method.
 
 ## Topics
 
@@ -73,4 +71,4 @@ Typically, you don’t create instances of this class yourself, nor do you subcl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/clheading)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/clheading)*

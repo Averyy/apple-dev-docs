@@ -1,6 +1,6 @@
 # Create a Subscription Price Change
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Schedule a subscription price change for a specific territory.
@@ -16,8 +16,6 @@ Schedule a subscription price change for a specific territory.
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
 ## See Also
 
 - [Read Subscription Price Point Information](get-v1-subscriptionpricepoints-_id_.md)
@@ -30,4 +28,4 @@ Schedule a subscription price change for a specific territory.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-subscriptionprices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-subscriptionprices)*

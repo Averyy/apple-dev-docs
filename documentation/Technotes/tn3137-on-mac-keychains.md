@@ -16,8 +16,6 @@ macOS has three keychain APIs:
 
 > **Note**: The Keychain API is declared in `<KeychainCore.h>` within the Core Services framework.  The SecKeychain API is declared in `<Security/SecKeychain.h>`, `<Security/SecKeychainItem.h>`, and `<Security/SecKeychainSearch.h>`, all within the Security framework.  The SecItem API is declared in `<Security/SecItem.h>`, also within the Security framework.
 
-The Keychain API is declared in `<KeychainCore.h>` within the Core Services framework.  The SecKeychain API is declared in `<Security/SecKeychain.h>`, `<Security/SecKeychainItem.h>`, and `<Security/SecKeychainSearch.h>`, all within the Security framework.  The SecItem API is declared in `<Security/SecItem.h>`, also within the Security framework.
-
 macOS has two keychain implementations:
 
 - File-based keychain
@@ -26,8 +24,6 @@ macOS has two keychain implementations:
 The file-based keychain has its origins on traditional Mac OS.  The data protection keychain originated on iOS and came to macOS with the advent of iCloud Keychain on macOS 10.9.
 
 > ❗ **Important**: iOS, tvOS, and watchOS only support the SecItem API with the data protection keychain implementation.
-
-iOS, tvOS, and watchOS only support the SecItem API with the data protection keychain implementation.
 
 The Keychain and SecKeychain APIs always target the file-based keychain.  The SecItem API can target either implementation.  It defaults to targeting the file-based keychain.  To target the data protection keychain, set the [`kSecUseDataProtectionKeychain`](https://developer.apple.com/documentation/Security/kSecUseDataProtectionKeychain) attribute or the [`kSecAttrSynchronizable`](https://developer.apple.com/documentation/Security/kSecAttrSynchronizable) attribute to true.
 
@@ -80,8 +76,6 @@ Each keychain implementation uses its own access control model:
 macOS builds the list of data protection keychain access groups available to your program from its code signing entitlements.  For the details, see [`Sharing access to keychain items among a collection of apps`](https://developer.apple.com/documentation/Security/sharing-access-to-keychain-items-among-a-collection-of-apps).  These entitlements must be authorized by a provisioning profile.  Your program needs an app-like bundle structure in which to embed that profile.  This is standard for app and app extensions but not for command-line tools.  For information on how to wrap a command-line tool in a dummy app-like structure, see [`Signing a daemon with a restricted entitlement`](https://developer.apple.com/documentation/Xcode/signing-a-daemon-with-a-restricted-entitlement).
 
 > ❗ **Important**: This command-line tool will only work when run from a user context because, regardless of the packaging, the data protection keychain is only available in that context.
-
-This command-line tool will only work when run from a user context because, regardless of the packaging, the data protection keychain is only available in that context.
 
 If you’re building library code, its data protection keychain access is determined by the entitlements of the host process’s main executable.
 
@@ -146,4 +140,4 @@ The keychain support in the `security` command-line tool is primarily focused on
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3137-on-mac-keychains)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3137-on-mac-keychains)*

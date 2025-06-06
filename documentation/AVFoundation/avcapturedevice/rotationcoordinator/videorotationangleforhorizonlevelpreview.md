@@ -1,6 +1,6 @@
 # videoRotationAngleForHorizonLevelPreview
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 An angle the coordinator provides your app to apply to the preview layer so that it’s level relative to gravity.
@@ -24,15 +24,11 @@ Your app can get immediate rotation angle updates from the rotation coordinator 
 
 > ❗ **Important**:  Avoid unnecessary delays and visual artifacts by updating your app’s UI directly from an observer that monitors the property.
 
- Avoid unnecessary delays and visual artifacts by updating your app’s UI directly from an observer that monitors the property.
-
 Apps typically apply the property’s value to an [`AVCaptureConnection`](avcaptureconnection.md) instance’s [`videoRotationAngle`](avcaptureconnection/videorotationangle.md) property, such as displaying a camera preview with the correction for an [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) instance.
 
 Alternatively, if your app uses an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) instance to display a custom camera preview, such as with effects, don’t rotate the video with [`AVCaptureConnection`](avcaptureconnection.md). Instead, set the rotation in your [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) instance’s [`transform`](https://developer.apple.com/documentation/QuartzCore/CALayer/transform) property, such as with an [`AVSampleBufferDisplayLayer`](avsamplebufferdisplaylayer.md) instance. This approach uses less energy than rotating each frame with the capture connection.
 
 > **Note**:  Your app needs to convert the [`videoRotationAngleForHorizonLevelPreview`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md) value from degrees to radians for an asset writer layer’s transform, which is a [`CATransform3D`](https://developer.apple.com/documentation/QuartzCore/CATransform3D).
-
- Your app needs to convert the [`videoRotationAngleForHorizonLevelPreview`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md) value from degrees to radians for an asset writer layer’s transform, which is a [`CATransform3D`](https://developer.apple.com/documentation/QuartzCore/CATransform3D).
 
 ## See Also
 

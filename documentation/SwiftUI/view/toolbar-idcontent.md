@@ -1,6 +1,6 @@
 # toolbar(id:content:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Populates the toolbar or navigation bar with the specified items, allowing for user customization.
@@ -26,8 +26,6 @@ func toolbar<Content>(id: String, @ToolbarContentBuilder content: () -> Content)
 Use this modifier when you want to allow the user to customize the components and layout of elements in the toolbar. The toolbar modifier expects a collection of toolbar items which you can provide either by supplying a collection of views with each view wrapped in a [`ToolbarItem`](toolbaritem.md).
 
 > **Note**: Customizable toolbars will be displayed on both macOS and iOS, but only apps running on iPadOS 16.0 and later will support user customization.
-
-Customizable toolbars will be displayed on both macOS and iOS, but only apps running on iPadOS 16.0 and later will support user customization.
 
 The example below creates a view that represents each [`ToolbarItem`](toolbaritem.md) along with an ID that uniquely identifies the toolbar item to the customization editor:
 
@@ -87,8 +85,6 @@ struct ToolsEditorView: View {
 ![A window showing the macOS toolbar customization](https://docs-assets.developer.apple.com/published/a76937b9ea7c379deb618ef3b0171731/SwiftUI-View-Styling-ToolbarCustomization%402x.png)
 
 > **Note**: Only [`secondaryAction`](toolbaritemplacement/secondaryaction.md) items support customization in iPadOS. Other items follow the normal placement rules and can’t be customized by the user.
-
-Only [`secondaryAction`](toolbaritemplacement/secondaryaction.md) items support customization in iPadOS. Other items follow the normal placement rules and can’t be customized by the user.
 
 In macOS you can enable menu support for toolbar customization by adding a [`ToolbarCommands`](toolbarcommands.md) instance to a scene using the [`commands(content:)`](scene/commands(content:).md) scene modifier:
 

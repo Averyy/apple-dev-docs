@@ -25,8 +25,6 @@ Provides an array of all parse-time errors for the extension, with repeat errors
 
 > **Note**: Once the extension is loaded, use the [`errors`](wkwebextension/errors.md) property on an extension context to monitor any runtime errors, as they can occur after the extension is loaded.
 
-Once the extension is loaded, use the [`errors`](wkwebextension/errors.md) property on an extension context to monitor any runtime errors, as they can occur after the extension is loaded.
-
 
 ---
 

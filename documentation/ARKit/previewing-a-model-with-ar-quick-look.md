@@ -1,6 +1,6 @@
 # Previewing a Model with AR Quick Look
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Display a model or scene that the user can move, scale, and share with others.
 
@@ -18,8 +18,6 @@ You provide content for your AR experience in `.usdz` or `.reality` format:
 - To browse a library of `.reality` assets, use Reality Composer. For more information, see `Creating 3D Content with Reality Composer`.
 
 > **Note**:  If you include a Reality Composer file (`.rcproject`) in your app’s Copy Files build phase, Xcode automatically outputs a converted `.reality` file in your app bundle at build time.
-
- If you include a Reality Composer file (`.rcproject`) in your app’s Copy Files build phase, Xcode automatically outputs a converted `.reality` file in your app bundle at build time.
 
 ##### Display an Ar Experience in Your App
 
@@ -80,4 +78,4 @@ When the user clicks the link in Safari or within a web view that’s displayed 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/previewing-a-model-with-ar-quick-look)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/previewing-a-model-with-ar-quick-look)*

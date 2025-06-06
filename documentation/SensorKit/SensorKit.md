@@ -1,6 +1,6 @@
 # SensorKit
 
-**Framework**: SensorKit  
+**Framework**: Sensorkit  
 **Kind**: module
 
 Retrieve data and derived metrics from sensors on an iPhone, or paired Apple Watch.
@@ -22,8 +22,6 @@ As the system gathers information using various sensors on a device, SensorKit e
 See [`SRSensor`](srsensor.md) for the complete list.
 
 > **Note**:  This framework ignores calls from Mac apps that you build with Mac Catalyst, and from compatible iPad and iPhone apps running in visionOS.
-
- This framework ignores calls from Mac apps that you build with Mac Catalyst, and from compatible iPad and iPhone apps running in visionOS.
 
 ## Topics
 

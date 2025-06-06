@@ -1,6 +1,6 @@
 # External link account
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Enable qualifying apps to link to an external website for account creation or management.
 
@@ -15,8 +15,6 @@ If your account has the [`com.apple.developer.storekit.external-link.account`](h
 
 > **Note**:  In a compatible iPad or iPhone app running in visionOS, on a Mac with Apple silicon, or on a Mac app built with Mac Catalyst, the External Link Account APIs throw an error or return `false`.
 
- In a compatible iPad or iPhone app running in visionOS, on a Mac with Apple silicon, or on a Mac app built with Mac Catalyst, the External Link Account APIs throw an error or return `false`.
-
 ## Topics
 
 ### External accounts
@@ -30,4 +28,4 @@ If your account has the [`com.apple.developer.storekit.external-link.account`](h
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/external-link-account)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/external-link-account)*

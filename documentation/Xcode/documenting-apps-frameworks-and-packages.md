@@ -37,8 +37,6 @@ DocC takes information from the Swift compiler and the Objective-C compiler and 
 
 > **Note**: You can’t use the build setting with a Swift package.
 
-You can’t use the build setting with a Swift package.
-
 ##### Configure a Richer Documentation Experience
 
 DocC combines the public API information from the Swift compiler and the Objective-C compiler with the contents of the documentation catalog to generate a much richer DocC Archive.
@@ -68,11 +66,9 @@ To enable the documentation compiler build setting, do the following:
 
 > **Note**: For existing projects, the build setting appears only after you add a documentation catalog. You can’t use the build setting with a Swift package.
 
-For existing projects, the build setting appears only after you add a documentation catalog. You can’t use the build setting with a Swift package.
-
 DocC also integrates with `xcodebuild`, which means you can build documentation from the command line. This is useful if you want to incorporate documentation builds into a continuous integration process. For more information, see [`Distributing documentation to other developers`](distributing-documentation-to-other-developers.md).
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/documenting-apps-frameworks-and-packages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/documenting-apps-frameworks-and-packages)*

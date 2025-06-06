@@ -1,6 +1,6 @@
 # Using MusicKit to Integrate with Apple Music
 
-**Framework**: MusicKit
+**Framework**: Musickit
 
 Find an album in Apple Music that corresponds to a CD in a user’s collection, and present the information for the album.
 
@@ -12,8 +12,6 @@ Find an album in Apple Music that corresponds to a CD in a user’s collection, 
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`10294: Meet MusicKit for Swift`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10294/).
-
-This sample code project is associated with WWDC21 session [`10294: Meet MusicKit for Swift`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10294/).
 
 ##### 3866697
 

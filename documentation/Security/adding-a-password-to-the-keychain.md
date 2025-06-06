@@ -52,8 +52,6 @@ The query dictionary’s first key-value pair indicates that the item is an Inte
 
 > **Note**:  Keychain services also offers the related [`kSecClassGenericPassword`](ksecclassgenericpassword.md) item class. Generic passwords are similar in most respects to Internet passwords, but they lack certain attributes specific to remote access (for example, they don’t have a [`kSecAttrServer`](ksecattrserver.md) attribute). When you don’t need these extra attributes, use a generic password instead.
 
- Keychain services also offers the related [`kSecClassGenericPassword`](ksecclassgenericpassword.md) item class. Generic passwords are similar in most respects to Internet passwords, but they lack certain attributes specific to remote access (for example, they don’t have a [`kSecAttrServer`](ksecattrserver.md) attribute). When you don’t need these extra attributes, use a generic password instead.
-
 Although not necessary in this case, you might further characterize the password by specifying additional attributes, such as the port number or the network protocol. For example, if you need to store distinct FTP and HTTP credentials for the same user working on the same server, you might add the [`kSecAttrProtocol`](ksecattrprotocol.md) attribute to distinguish between them.
 
 Finally, the query contains the password from the user, encoded as a [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance.
@@ -71,8 +69,6 @@ Although you typically ignore the return data supplied by reference in the secon
 
 > **Note**:  If you do want the return data, keep in mind that the [`SecItemAdd(_:_:)`](secitemadd(_:_:).md) function behaves much like the [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) function in this regard. See [`Searching for keychain items`](searching-for-keychain-items.md) for details.
 
- If you do want the return data, keep in mind that the [`SecItemAdd(_:_:)`](secitemadd(_:_:).md) function behaves much like the [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) function in this regard. See [`Searching for keychain items`](searching-for-keychain-items.md) for details.
-
 ##### Ensure Searchability
 
 To find the item later, use your knowledge of its attributes. In this example, the server and the account are the item’s distinguishing characteristics. For constant attributes (here, the server), use the same value during lookup. In contrast, the account attribute is dynamic, because it holds a value provided by the user at runtime. As long as your app never adds similar items with varying attributes (such as passwords for different accounts on the same server), you can omit these dynamic attributes as search parameters and instead retrieve them along with the item. As a result, when you look up the password, you also get the corresponding username. For more information on finding keychain items, see [`Searching for keychain items`](searching-for-keychain-items.md).
@@ -84,4 +80,4 @@ In other cases, it might make sense to further characterize the item by adding m
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/adding-a-password-to-the-keychain)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/adding-a-password-to-the-keychain)*

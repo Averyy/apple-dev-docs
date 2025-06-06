@@ -1,6 +1,6 @@
 # startSpeaking(_:to:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Begins synthesizing text into a sound (AIFF) file.
@@ -25,8 +25,6 @@ When synthesis of `text` finishes normally or is stopped, the message [`speechSy
 One example of how you might use this method is in an email program that automatically converts new messages into sound files that can be stored on an iPod for later listening.
 
 > **Note**:  In OS X V 10.4 and earlier, the delegate does not receive [`speechSynthesizer(_:willSpeakWord:of:)`](nsspeechsynthesizerdelegate/speechsynthesizer(_:willspeakword:of:).md) and [`speechSynthesizer(_:willSpeakPhoneme:)`](nsspeechsynthesizerdelegate/speechsynthesizer(_:willspeakphoneme:).md) messages when text is being synthesized to a file.
-
- In OS X V 10.4 and earlier, the delegate does not receive [`speechSynthesizer(_:willSpeakWord:of:)`](nsspeechsynthesizerdelegate/speechsynthesizer(_:willspeakword:of:).md) and [`speechSynthesizer(_:willSpeakPhoneme:)`](nsspeechsynthesizerdelegate/speechsynthesizer(_:willspeakphoneme:).md) messages when text is being synthesized to a file.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # insert(contentsOf:beforeIndex:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method  
 **Required**: Yes
 
@@ -22,8 +22,6 @@ mutating func insert<S>(contentsOf sequence: S, beforeIndex index: Int) where S 
 #### Discussion
 
 > **Note**: This operation can invalidate the index order of any extant entities.
-
-This operation can invalidate the index order of any extant entities.
 
 ## Parameters
 

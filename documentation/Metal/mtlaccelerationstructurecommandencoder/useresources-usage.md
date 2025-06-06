@@ -27,8 +27,6 @@ Call this method before issuing any dispatch calls that may access the resource.
 
 > **Note**:  To track resource access and dependency hazards, you must use [`MTLFence`](mtlfence.md) separately.
 
- To track resource access and dependency hazards, you must use [`MTLFence`](mtlfence.md) separately.
-
 ## Parameters
 
 - `resources`: An array of resources within an argument buffer.

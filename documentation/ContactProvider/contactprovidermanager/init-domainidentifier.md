@@ -1,6 +1,6 @@
 # init(domainIdentifier:)
 
-**Framework**: ContactProvider  
+**Framework**: Contactprovider  
 **Kind**: init
 
 Creates a provider manager.
@@ -21,11 +21,7 @@ If needed, the manager registers the [`DefaultContactProviderDomain`](defaultcon
 
 > **Note**: [`ContactProviderError.extensionNotFound`](contactprovidererror/extensionnotfound.md) if discovering the extension fails.
 
-[`ContactProviderError.extensionNotFound`](contactprovidererror/extensionnotfound.md) if discovering the extension fails.
-
 > **Note**: [`ContactProviderError.featureNotAvailable`](contactprovidererror/featurenotavailable.md) when running on an unsupported platform.
-
-[`ContactProviderError.featureNotAvailable`](contactprovidererror/featurenotavailable.md) when running on an unsupported platform.
 
 ## Parameters
 

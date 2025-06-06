@@ -26,8 +26,6 @@ Note that the `Element` array is suitably-aligned . You are expected to construc
 
 > **Note**: Subclasses must not have any stored properties; any storage needed should be included in `Header`.
 
-Subclasses must not have any stored properties; any storage needed should be included in `Header`.
-
 ## Topics
 
 ### Instance Properties
@@ -54,4 +52,4 @@ Subclasses must not have any stored properties; any storage needed should be inc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/managedbuffer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/managedbuffer)*

@@ -1,6 +1,6 @@
 # viewDidAppear(_:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Notifies the view controller that its view was added to a view hierarchy.
@@ -29,8 +29,6 @@ func viewDidAppear(_ animated: Bool)
 You can override this method to perform additional tasks associated with presenting the view. If you override this method, you must call `super` at some point in your implementation.
 
 > **Note**:  If a view controller is presented by a view controller inside of a popover, this method is not invoked on the presenting view controller after the presented controller is dismissed.
-
- If a view controller is presented by a view controller inside of a popover, this method is not invoked on the presenting view controller after the presented controller is dismissed.
 
 ## Parameters
 

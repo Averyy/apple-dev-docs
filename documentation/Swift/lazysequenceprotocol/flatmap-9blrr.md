@@ -26,8 +26,6 @@ Use this method to receive a single-level sequence when your transformation prod
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

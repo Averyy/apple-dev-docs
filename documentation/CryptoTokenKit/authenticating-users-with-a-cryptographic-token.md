@@ -1,6 +1,6 @@
 # Authenticating Users with a Cryptographic Token
 
-**Framework**: CryptoTokenKit
+**Framework**: Cryptotokenkit
 
 Grant access to user accounts and the keychain by creating a smart card app extension.
 
@@ -39,8 +39,6 @@ For more information about working with app extensions in general, see [`App Ext
 
 > **Note**:  The host app for this kind of extension typically contains no functionality. Instead, it exists only as a delivery mechanism for the extension.
 
- The host app for this kind of extension typically contains no functionality. Instead, it exists only as a delivery mechanism for the extension.
-
 A smart card app extension has no UI component. The system handles all user interaction associated with authenticating the user. Instead, your `TokenDriver` class—derived from the [`TKSmartCardTokenDriver`](tksmartcardtokendriver.md) class—acts as the entry point for the extension. More precisely, the `NSExtensionAttributes` subdictionary of the `NSExtension` dictionary in the `Info.plist` file has a key `com.apple.ctk.driver-class` that names the entry point class. Xcode sets this for you as part of the template:
 
 ![Screenshot of Xcode showing the Info.plist file of the TokenExtension, highlighting the driver class item.](https://docs-assets.developer.apple.com/published/fe4784f0d2bed0cb08f563bb05c4da01/media-2940045%402x.png)
@@ -75,4 +73,4 @@ The hosting app may in fact do nothing more than exit cleanly, but the act of ru
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cryptotokenkit/authenticating-users-with-a-cryptographic-token)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CryptoTokenKit/authenticating-users-with-a-cryptographic-token)*

@@ -30,8 +30,6 @@ If no input sources or timers are attached to the run loop, this method exits im
 
 > **Note**:  A timer is not considered an input source and may fire multiple times while waiting for this method to return
 
- A timer is not considered an input source and may fire multiple times while waiting for this method to return
-
 ## Parameters
 
 - `mode`: The mode in which to run. You may specify custom modes or use one of the modes listed in  .

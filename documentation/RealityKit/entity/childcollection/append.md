@@ -1,6 +1,6 @@
 # append(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Adds the specified entity to the end of this collection.
@@ -21,8 +21,6 @@ mutating func append(_ entity: Entity)
 #### Discussion
 
 > **Note**: This operation can invalidate the index order of any extant entities.
-
-This operation can invalidate the index order of any extant entities.
 
 ## Parameters
 

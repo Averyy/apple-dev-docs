@@ -1,6 +1,6 @@
 # HKWorkout
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: class
 
 A workout sample that stores information about a single physical activity.
@@ -38,8 +38,6 @@ The [`HKWorkout`](hkworkout.md) class is a concrete subclass of the [`HKSample`]
 The workout records a summary of information about a single physical activity (for example, the duration, total distance, and total energy burned). It also acts as a container for other [`HKSample`](hksample.md) objects. You can associate any number of samples with a workout, adding details over the course of the workout. For example, you may want to break a single run into a number of shorter intervals, and then add samples to track the user’s heart rate, energy burned, distance traveled, and steps taken for each interval. For more information, see [`Adding samples to a workout`](adding-samples-to-a-workout.md).
 
 > **Note**:  If a workout has summary information, it also needs a set of associated samples that add up to the summary’s total. See [`Adding samples to a workout`](adding-samples-to-a-workout.md).
-
- If a workout has summary information, it also needs a set of associated samples that add up to the summary’s total. See [`Adding samples to a workout`](adding-samples-to-a-workout.md).
 
 HealthKit supports a wide range of activity types. For a complete list, see [`HKWorkoutActivityType`](hkworkoutactivitytype.md).
 
@@ -171,4 +169,4 @@ For more information, see the methods [`init(activityType:start:end:duration:tot
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkworkout)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkworkout)*

@@ -1,6 +1,6 @@
 # children
 
-**Framework**: Model I/O  
+**Framework**: Modelio  
 **Kind**: property
 
 A component that manages this object’s collection of children.
@@ -27,8 +27,6 @@ This property’s value is a component object—either a [`MDLObjectContainer`](
 
 > **Note**:  Reading or writing this property is equivalent to calling the [`componentConforming(to:)`](mdlobject/componentconforming(to:).md) or [`setComponent(_:for:)`](mdlobject/setcomponent(_:for:).md) method with the [`MDLObjectContainerComponent`](mdlobjectcontainercomponent.md) protocol.
 
- Reading or writing this property is equivalent to calling the [`componentConforming(to:)`](mdlobject/componentconforming(to:).md) or [`setComponent(_:for:)`](mdlobject/setcomponent(_:for:).md) method with the [`MDLObjectContainerComponent`](mdlobjectcontainercomponent.md) protocol.
-
 Container components support fast enumeration and subscripting, so you can treat an object’s children property similarly to an array.
 
 ## See Also
@@ -47,4 +45,4 @@ Container components support fast enumeration and subscripting, so you can treat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/modelio/mdlobject/children)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ModelIO/mdlobject/children)*

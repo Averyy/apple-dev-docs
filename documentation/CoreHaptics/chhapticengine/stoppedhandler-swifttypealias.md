@@ -1,6 +1,6 @@
 # CHHapticEngine.StoppedHandler
 
-**Framework**: Core Haptics  
+**Framework**: Corehaptics  
 **Kind**: typealias
 
 A typealias for the block that the haptic engine calls after it stops due to an external cause.
@@ -24,8 +24,6 @@ typealias StoppedHandler = (CHHapticEngine.StoppedReason) -> Void
 The system calls the stopped handler for when it’s stopped by an external event like an audio session interruption or an auto-shutdown.
 
 > **Note**:  The stopped handler isn’t called if you explicitly stop the engine by calling the [`stop(completionHandler:)`](chhapticengine/stop(completionhandler:).md) method.
-
- The stopped handler isn’t called if you explicitly stop the engine by calling the [`stop(completionHandler:)`](chhapticengine/stop(completionhandler:).md) method.
 
 ## See Also
 

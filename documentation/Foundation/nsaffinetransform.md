@@ -23,13 +23,9 @@ A transformation specifies how points in one coordinate system are transformed t
 
 > **Note**:  In OS X 10.3 and earlier the [`NSAffineTransform`](nsaffinetransform.md) class was declared and implemented entirely in the Application Kit framework. As of macOS 10.4 the [`NSAffineTransform`](nsaffinetransform.md) class has been split across the Foundation and Application Kit frameworks.
 
- In OS X 10.3 and earlier the [`NSAffineTransform`](nsaffinetransform.md) class was declared and implemented entirely in the Application Kit framework. As of macOS 10.4 the [`NSAffineTransform`](nsaffinetransform.md) class has been split across the Foundation and Application Kit frameworks.
-
 Methods for applying affine transformations to the current graphics context and a method for applying an affine transformation to an [`NSBezierPath`](https://developer.apple.com/documentation/AppKit/NSBezierPath) object are described in NSAffineTransform Additions Reference in the Application Kit.
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`AffineTransform`](affinetransform.md) structure, which bridges to the [`NSAffineTransform`](nsaffinetransform.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
- The Swift overlay to the Foundation framework provides the [`AffineTransform`](affinetransform.md) structure, which bridges to the [`NSAffineTransform`](nsaffinetransform.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
 ## Topics
 
@@ -92,4 +88,4 @@ Methods for applying affine transformations to the current graphics context and 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsaffinetransform)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsaffinetransform)*

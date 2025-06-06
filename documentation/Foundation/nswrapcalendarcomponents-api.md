@@ -8,8 +8,6 @@ A legacy constant used to control overflow in date calculations.
 
 > **Note**:  Use [`wrapComponents`](nscalendar/options/wrapcomponents.md) instead.
 
- Use [`wrapComponents`](nscalendar/options/wrapcomponents.md) instead.
-
 ## Topics
 
 ### Constants
@@ -34,4 +32,4 @@ A legacy constant used to control overflow in date calculations.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nswrapcalendarcomponents-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nswrapcalendarcomponents-api)*

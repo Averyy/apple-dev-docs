@@ -1,6 +1,6 @@
 # userActivity
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 An object encapsulating a user activity supported by this responder.
@@ -24,8 +24,6 @@ var userActivity: NSUserActivity? { get set }
 By setting the [`userActivity`](uiresponder/useractivity.md) property on a responder, the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object becomes managed by UIKit. User activities managed by UIKit are saved automatically at appropriate times. You can lazily add state data representing the user’s activity using the [`updateUserActivityState(_:)`](uiresponder/updateuseractivitystate(_:).md) override. Multiple responders can share a single [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) instance, in which case they all get an [`updateUserActivityState(_:)`](uiresponder/updateuseractivitystate(_:).md) callback.
 
 > **Note**:  Prior to invoking [`updateUserActivityState(_:)`](uiresponder/updateuseractivitystate(_:).md) on all of the associated objects, the `userInfo` dictionary for the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object is cleared.
-
- Prior to invoking [`updateUserActivityState(_:)`](uiresponder/updateuseractivitystate(_:).md) on all of the associated objects, the `userInfo` dictionary for the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object is cleared.
 
 A responder object can set its [`userActivity`](uiresponder/useractivity.md) property to `nil` if it no longer wants to participate. Any [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects that are managed by UIKit but which have no associated responders (or documents) are automatically invalidated.
 

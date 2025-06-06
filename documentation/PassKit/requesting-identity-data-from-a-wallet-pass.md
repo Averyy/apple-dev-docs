@@ -1,6 +1,6 @@
 # Requesting identity data from a Wallet pass
 
-**Framework**: PassKit (Apple Pay and Wallet)
+**Framework**: Passkit
 
 Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
 
@@ -13,8 +13,6 @@ Beginning on iPhone with iOS 16, you can request information from IDs in Wallet 
 For design guidance, see [`Human Interface Guidelines > Technologies > Wallet`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/technologies/wallet/introduction).
 
 > ❗ **Important**:  This API only works on iPhone and returns an error if you access it on iPad. It requires a special entitlement from Apple. Building an app with this entitlement requires macOS 13 or later. For more information about the entitlement, see [`Getting started with the Verify with Wallet API`](https://developer.apple.comhttps://developer.apple.com/wallet/get-started-with-verify-with-wallet/).
-
- This API only works on iPhone and returns an error if you access it on iPad. It requires a special entitlement from Apple. Building an app with this entitlement requires macOS 13 or later. For more information about the entitlement, see [`Getting started with the Verify with Wallet API`](https://developer.apple.comhttps://developer.apple.com/wallet/get-started-with-verify-with-wallet/).
 
 ##### Create an Identity Document Descriptor
 
@@ -90,8 +88,6 @@ The elements in [`PKIdentityDriversLicenseDescriptor`](pkidentitydriverslicensed
 
 > **Note**:  Only one request can be in progress at a time. Otherwise, the system returns a [`PKIdentityError.Code.requestAlreadyInProgress`](pkidentityerror-swift.struct/code/requestalreadyinprogress.md) error.
 
- Only one request can be in progress at a time. Otherwise, the system returns a [`PKIdentityError.Code.requestAlreadyInProgress`](pkidentityerror-swift.struct/code/requestalreadyinprogress.md) error.
-
 To learn more about verifying identity requests, see [`Verifying Wallet identity requests`](verifying-wallet-identity-requests.md).
 
 ##### Test the Implementation
@@ -122,4 +118,4 @@ Even if you don’t live in an area that supports IDs in Wallet, you can test yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/passkit/requesting-identity-data-from-a-wallet-pass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/requesting-identity-data-from-a-wallet-pass)*

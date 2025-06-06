@@ -1,6 +1,6 @@
 # fileMover(isPresented:files:onCompletion:onCancellation:)
 
-**Framework**: ManagedAppDistribution  
+**Framework**: Managedappdistribution  
 **Kind**: method
 
 Presents a system dialog for allowing the user to move a collection of existing files to a new location.
@@ -20,8 +20,6 @@ func fileMover<C>(isPresented: Binding<Bool>, files: C, onCompletion: @escaping 
 #### Discussion
 
 > **Note**: This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
-
-This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
 
 For example, a button that allows the user to move files might look like this:
 

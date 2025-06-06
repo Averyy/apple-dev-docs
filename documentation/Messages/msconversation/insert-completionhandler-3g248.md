@@ -26,14 +26,6 @@ func insert(_ message: MSMessage) async throws
 func insert(_ message: MSMessage) async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func insert(_ message: MSMessage) async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 Use this method to insert an [`MSMessage`](msmessage.md) object into the Message app’s input field. Users can then send the message by tapping Send. iMessage apps suport this method only in the [`MSMessagesAppPresentationContext.messages`](msmessagesapppresentationcontext/messages.md) context. If called in the [`MSMessagesAppPresentationContext.media`](msmessagesapppresentationcontext/media.md) context, the method fails with an [`MSMessageErrorCode.apiUnavailableInPresentationContext`](msmessageerrorcode/apiunavailableinpresentationcontext.md) error.
 
 The message object’s appearance is determined by its [`layout`](msmessage/layout.md) property. The message can contain app-specific data and can be associated with a session, letting other participants update the message. For more information, see [`MSMessage`](msmessage.md).
@@ -41,8 +33,6 @@ The message object’s appearance is determined by its [`layout`](msmessage/layo
 This method operates asynchronously. Although the method returns immediately, the actual work is deferred and performed in the background. As soon as the attachment is inserted, the system calls the completion block on a background queue.
 
 > **Note**:  This method does not send the message. It inserts the message into the Messages app’s input field. The message is not sent until the user taps Send.
-
- This method does not send the message. It inserts the message into the Messages app’s input field. The message is not sent until the user taps Send.
 
 Subsequent calls to this method replace any existing message in the input field.
 

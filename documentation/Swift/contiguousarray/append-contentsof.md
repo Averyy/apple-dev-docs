@@ -33,8 +33,6 @@ print(numbers)
 
 > **Note**: O() on average, where  is the length of `newElements`, over many calls to `append(contentsOf:)` on the same array.
 
-O() on average, where  is the length of `newElements`, over many calls to `append(contentsOf:)` on the same array.
-
 ## Parameters
 
 - `newElements`: The elements to append to the array.

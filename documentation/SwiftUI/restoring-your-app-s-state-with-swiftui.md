@@ -1,6 +1,6 @@
 # Restoring Your App’s State with SwiftUI
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Provide app continuity for users by preserving their current activities.
 
@@ -44,8 +44,6 @@ Each view that needs its own state preservation implements a `@SceneStorage` pro
 ```
 
 > **Note**: Each scene storage key must be unique, and properly scoped to the area or use within the app. Because this scene storage is local to the app, it’s not necessary to prefix it with the app’s bundle identifier. Use some disambiguating prefix where needed to ensure its uniqueness.
-
-Each scene storage key must be unique, and properly scoped to the area or use within the app. Because this scene storage is local to the app, it’s not necessary to prefix it with the app’s bundle identifier. Use some disambiguating prefix where needed to ensure its uniqueness.
 
 ##### 3686250
 

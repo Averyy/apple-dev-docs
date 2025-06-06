@@ -47,8 +47,6 @@ range.contains(20..<20)   // true
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `other`: A range to check for containment within this closed   range.

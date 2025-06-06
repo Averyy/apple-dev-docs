@@ -1,6 +1,6 @@
 # magnetic()
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: method
 
 Creates a field that attracts or repels objects based on their electrical charge, velocity, and distance from the field’s axis.
@@ -33,8 +33,6 @@ By default, physics bodies and particle systems have no electric charge, so they
 When the field’s [`strength`](scnphysicsfield/strength.md) value is positive (the default), the magnetic field vectors circulate counterclockwise relative to the field’s [`direction`](scnphysicsfield/direction.md) vector. (That is, the magnetic field models a real-world magnetic field created by current in a wire oriented in the field’s direction.) To make field vectors circulate clockwise, set the field’s [`strength`](scnphysicsfield/strength.md) property to a negative value.
 
 > **Note**:  This [`SCNPhysicsField`](scnphysicsfield.md) option models the real-world physics effect of magnetic fields on moving, electrically charged bodies, not the behavior of permanent magnets or electromagnets. To make objects in your scene simply attract or repel one another, use a different field type. For example, a field created by the [`radialGravity()`](scnphysicsfield/radialgravity().md) method attracts or repels all dynamic bodies near it according to its [`strength`](scnphysicsfield/strength.md) property, and a field created by the [`electric()`](scnphysicsfield/electric().md) method selectively attracts or repels bodies according to their electric charge.
-
- This [`SCNPhysicsField`](scnphysicsfield.md) option models the real-world physics effect of magnetic fields on moving, electrically charged bodies, not the behavior of permanent magnets or electromagnets. To make objects in your scene simply attract or repel one another, use a different field type. For example, a field created by the [`radialGravity()`](scnphysicsfield/radialgravity().md) method attracts or repels all dynamic bodies near it according to its [`strength`](scnphysicsfield/strength.md) property, and a field created by the [`electric()`](scnphysicsfield/electric().md) method selectively attracts or repels bodies according to their electric charge.
 
 The default [`falloffExponent`](scnphysicsfield/falloffexponent.md) value for a magnetic field is `2.0`, indicating that the field’s effect diminishes with the square of distance from its center.
 

@@ -8,8 +8,6 @@ Implement a custom operation that uses Metal kernels to accelerate neural-networ
 
 > **Note**: This sample code project is associated with WWDC22 session [`10063: Accelerate machine learning with Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10063/).
 
-This sample code project is associated with WWDC22 session [`10063: Accelerate machine learning with Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10063/).
-
 ##### Configure the Sample Code
 
 1. Follow the instructions in [`Getting started with tensorflow-metal`](https://developer.apple.comhttps://developer.apple.com/metal/tensorflow-plugin/).
@@ -35,8 +33,6 @@ python tiny_nerf_mlp.py
 
 > **Note**: The sample uses low-resolution (100x100) images by default. You can alternatively use a high-resolution version of the data to produce a clearer rendering.
 
-The sample uses low-resolution (100x100) images by default. You can alternatively use a high-resolution version of the data to produce a clearer rendering.
-
 ## See Also
 
 - [Performing Calculations on a GPU](performing-calculations-on-a-gpu.md)
@@ -49,4 +45,4 @@ The sample uses low-resolution (100x100) images by default. You can alternativel
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/customizing-a-tensorflow-operation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/customizing-a-tensorflow-operation)*

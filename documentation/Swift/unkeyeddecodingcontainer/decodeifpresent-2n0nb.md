@@ -31,8 +31,6 @@ This method returns `nil` if the container has no elements left to decode, or if
 
 > **Note**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
 
-`DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
-
 ## Parameters
 
 - `type`: The type of value to decode.

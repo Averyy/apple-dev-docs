@@ -1,6 +1,6 @@
 # index(_:offsetBy:limitedBy:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
@@ -48,8 +48,6 @@ print(j)
 The value passed as `distance` must not offset `i` beyond the bounds of the collection, unless the index passed as `limit` prevents offsetting beyond those bounds.
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

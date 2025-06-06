@@ -1,6 +1,6 @@
 # reduce(into:_:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Returns the result of combining the elements of the sequence using the given closure.
@@ -49,8 +49,6 @@ When `letters.reduce(into:_:)` is called, the following steps occur:
 If the sequence has no elements, `updateAccumulatingResult` is never executed and `initialResult` is the result of the call to `reduce(into:_:)`.
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

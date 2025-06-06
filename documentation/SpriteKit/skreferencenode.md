@@ -1,6 +1,6 @@
 # SKReferenceNode
 
-**Framework**: SpriteKit  
+**Framework**: Spritekit  
 **Kind**: class
 
 A node that’s defined in an archived `.sks` file.
@@ -29,8 +29,6 @@ class SKReferenceNode
 `SKReferenceNode` is used within an archived `.sks` file to refer to node defined in another `.sks` file without duplicating its definition. This way, a change to the referenced node propagates to all the references in other files.
 
 > **Note**:  `SKReferenceNode` is mostly used in conjunction with Xcode’s SpriteKit Scene editor, but it’s possible to instantiate it yourself and use the [`resolve()`](skreferencenode/resolve().md) function as a handy way to restore a node’s appearance.
-
- `SKReferenceNode` is mostly used in conjunction with Xcode’s SpriteKit Scene editor, but it’s possible to instantiate it yourself and use the [`resolve()`](skreferencenode/resolve().md) function as a handy way to restore a node’s appearance.
 
 As an example, you might want to share an enemy ship across two different levels, Scene1.sks and Scene2.sks, in a level-based game. Reference nodes allow you to do that without creating copies of the shared node and its properties.
 
@@ -100,4 +98,4 @@ When each scene is loaded, the reference nodes are resolved dynamically, and the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/skreferencenode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/skreferencenode)*

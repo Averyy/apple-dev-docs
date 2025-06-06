@@ -1,6 +1,6 @@
 # allowBluetoothA2DP
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: property
 
 An option that determines whether you can stream audio from this session to Bluetooth devices that support the Advanced Audio Distribution Profile (A2DP).
@@ -28,8 +28,6 @@ Starting with iOS 10.0, apps using the [`playAndRecord`](avaudiosession/category
 Audio sessions using the [`multiRoute`](avaudiosession/category-swift.struct/multiroute.md) or [`record`](avaudiosession/category-swift.struct/record.md) categories implicitly clear this option. If you clear it, paired Bluetooth A2DP devices don’t show up as available audio output routes.
 
 > **Note**:  If this option and the [`allowBluetooth`](avaudiosession/categoryoptions-swift.struct/allowbluetooth.md) option are both set, when a single device supports both the Hands-Free Profile (HFP) and A2DP, the system gives hands-free ports a higher priority for routing.
-
- If this option and the [`allowBluetooth`](avaudiosession/categoryoptions-swift.struct/allowbluetooth.md) option are both set, when a single device supports both the Hands-Free Profile (HFP) and A2DP, the system gives hands-free ports a higher priority for routing.
 
 ## See Also
 

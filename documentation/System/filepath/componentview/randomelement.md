@@ -38,8 +38,6 @@ This method is equivalent to calling `randomElement(using:)`, passing in the sys
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
 
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
-
 
 ---
 

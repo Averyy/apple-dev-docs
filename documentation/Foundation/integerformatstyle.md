@@ -28,8 +28,6 @@ Instances of [`IntegerFormatStyle`](integerformatstyle.md) create localized, hum
 
 > **Note**:  Foundation provides another format style type, [`FloatingPointFormatStyle`](floatingpointformatstyle.md), for working with numbers that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint). For Foundation’s [`Decimal`](decimal.md) type, use [`Decimal.FormatStyle`](decimal/formatstyle.md).
 
- Foundation provides another format style type, [`FloatingPointFormatStyle`](floatingpointformatstyle.md), for working with numbers that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint). For Foundation’s [`Decimal`](decimal.md) type, use [`Decimal.FormatStyle`](decimal/formatstyle.md).
-
 ##### Formatting Integers
 
 Use the [`formatted()`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted()) method to create a string representation of an integer using the default [`IntegerFormatStyle`](integerformatstyle.md) configuration.
@@ -207,4 +205,4 @@ let localizedInteger = match?.1 // 123456
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/integerformatstyle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/integerformatstyle)*

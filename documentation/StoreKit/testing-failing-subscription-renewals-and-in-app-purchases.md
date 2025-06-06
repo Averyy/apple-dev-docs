@@ -1,6 +1,6 @@
 # Testing failing subscription renewals and In-App Purchases
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed In-App Purchases.
 
@@ -27,8 +27,6 @@ Follow these steps on a test device running iOS 16 or iPadOS 16, or later:
 Disabling this setting causes In-App Purchases to fail, and auto-renewable subscriptions to not renew in the sandbox environment.
 
 > **Note**:  This setting applies to all devices that the Sandbox Apple Account signs in to, and to all active auto-renewable subscriptions belonging to that account.
-
- This setting applies to all devices that the Sandbox Apple Account signs in to, and to all active auto-renewable subscriptions belonging to that account.
 
 This setting stays in a disabled state until you reenable it. Reenable it to simulate a customer resolving a billing issue.
 
@@ -76,8 +74,6 @@ To test subscriptions entering a billing grace period:
 7. Check that your app recognizes the billing retry state. Subscriptions aren’t entitled to service after the billing grace period expires.
 
 > **Note**:  Auto-renewable subscriptions in a billing grace period state are entitled to service.
-
- Auto-renewable subscriptions in a billing grace period state are entitled to service.
 
 ##### Test Billing Problem Messaging After a Subscription Enters a Billing Retry State
 
@@ -153,4 +149,4 @@ To test a failed purchase attempt, follow these steps:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-failing-subscription-renewals-and-in-app-purchases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-failing-subscription-renewals-and-in-app-purchases)*

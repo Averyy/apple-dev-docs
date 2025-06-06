@@ -1,6 +1,6 @@
 # Creating an Image Classifier Model
 
-**Framework**: Create ML
+**Framework**: Createml
 
 Train a machine learning model to classify images, and add it to your Core ML app.
 
@@ -27,8 +27,6 @@ The images can be in any format you can open in the Quicktime Player, such as JP
 If possible, gather images that best represent what you expect the model to see when you use it in your app. For example, if your app classifies images from a device’s camera in an outdoor setting, gather outdoor images from an identical or similar camera.
 
 > **Note**: By default, the image classifier uses the scene print feature extractor to accelerate the training process and works best with real-world objects. For more information, see [`MLImageClassifier.FeatureExtractorType.scenePrint(revision:)`](mlimageclassifier/featureextractortype/sceneprint(revision:).md).
-
-By default, the image classifier uses the scene print feature extractor to accelerate the training process and works best with real-world objects. For more information, see [`MLImageClassifier.FeatureExtractorType.scenePrint(revision:)`](mlimageclassifier/featureextractortype/sceneprint(revision:).md).
 
 ##### Organize Your Training Data
 
@@ -149,4 +147,4 @@ For example, you can initialize two [`MLImageClassifier.DataSource`](mlimageclas
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateML/creating-an-image-classifier-model)*

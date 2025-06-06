@@ -1,6 +1,6 @@
 # evaluatedPolicyDomainState
 
-**Framework**: Local Authentication  
+**Framework**: Localauthentication  
 **Kind**: property
 
 The current state of the evaluated policy domain.
@@ -25,8 +25,6 @@ The value of this property is non-`nil` when the [`canEvaluatePolicy(_:error:)`]
 Compare the values you get from successive calls to this property to determine whether the authorized database changed. However, the value you get doesn’t describe the nature of a change; it only lets you detect if a change happens.
 
 > **Note**:  The value of this property is different in different processes, so you can’t compare the value from one app to the value from another app.
-
- The value of this property is different in different processes, so you can’t compare the value from one app to the value from another app.
 
 ## See Also
 

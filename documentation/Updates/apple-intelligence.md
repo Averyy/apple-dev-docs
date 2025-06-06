@@ -34,8 +34,6 @@ Writing Tools in AppKit:
 
 > **Note**: Testing and using Apple Intelligence features requires iOS 18.1 or later, or macOS 15.1 or later.
 
-Testing and using Apple Intelligence features requires iOS 18.1 or later, or macOS 15.1 or later.
-
 ##### Writing Tools
 
 - In SwiftUI, adjust the level of support for Writing Tools features using the [`writingToolsBehavior(_:)`](https://developer.apple.com/documentation/SwiftUI/View/writingToolsBehavior(_:)) modifier on the [`Text`](https://developer.apple.com/documentation/SwiftUI/Text), [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField), and [`TextEditor`](https://developer.apple.com/documentation/SwiftUI/TextEditor) types.
@@ -90,4 +88,4 @@ Testing and using Apple Intelligence features requires iOS 18.1 or later, or mac
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/updates/apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Updates/apple-intelligence)*

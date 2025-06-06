@@ -28,8 +28,6 @@ To run this sample app, you need the following:
 
 > **Note**: This sample doesn’t support running in Simulator.
 
-This sample doesn’t support running in Simulator.
-
 ## See Also
 
 - [Accelerating ray tracing using Metal](accelerating-ray-tracing-using-metal.md)
@@ -44,4 +42,4 @@ This sample doesn’t support running in Simulator.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/rendering-reflections-in-real-time-using-ray-tracing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/rendering-reflections-in-real-time-using-ray-tracing)*

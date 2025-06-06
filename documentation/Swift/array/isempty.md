@@ -36,8 +36,6 @@ if horseName.isEmpty {
 
 > **Note**: O(1)
 
-O(1)
-
 ## See Also
 
 - [var count: Int](array/count.md)
@@ -48,4 +46,4 @@ O(1)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/array/isempty)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/array/isempty)*

@@ -1,6 +1,6 @@
 # CKQuerySubscription
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 A subscription that generates push notifications when CloudKit modifies records that match a predicate.
@@ -26,13 +26,9 @@ Subscriptions track the creation, modification, and deletion of records in a dat
 
 > **Note**:  You don’t need to explicitly enable push notifications for your App ID to receive subscription notifications. Xcode automatically adds the entitlement when you enable the CloudKit capability. For more information, see [`Enabling CloudKit in Your App`](enabling-cloudkit-in-your-app.md). To use silent push notifications, add the Background Modes capability in your Xcode project and then select the “Background fetch” and “Remote notifications” options.
 
- You don’t need to explicitly enable push notifications for your App ID to receive subscription notifications. Xcode automatically adds the entitlement when you enable the CloudKit capability. For more information, see [`Enabling CloudKit in Your App`](enabling-cloudkit-in-your-app.md). To use silent push notifications, add the Background Modes capability in your Xcode project and then select the “Background fetch” and “Remote notifications” options.
-
 Query subscriptions execute whenever a change occurs in a database that matches the predicate and options you specify. You scope a query subscription to an individual record type that you provide during initialization. You can set the subscription’s [`zoneID`](ckquerysubscription/zoneid.md) property to further specialize the subscription to a specific record zone in the database. This limits the scope of the subscription to only track changes in that record zone and reduces the number of notifications it generates. For more information about defining CloudKit-compatible predicates, see [`CKQuery`](ckquery.md).
 
 > **Note**:  Only public and private databases support query subscriptions. If you attempt to save a database subscription in the shared database, CloudKit returns an error.
-
- Only public and private databases support query subscriptions. If you attempt to save a database subscription in the shared database, CloudKit returns an error.
 
 Create any subscriptions on your app’s first launch. After you initialize a subscription, save it to the server using [`CKModifySubscriptionsOperation`](ckmodifysubscriptionsoperation.md). When the operation completes, record that state on-device (in [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults), for example). You can then check that state on subsequent launches to prevent unnecessary trips to the server.
 
@@ -141,4 +137,4 @@ operation.qualityOfService = NSQualityOfServiceUtility;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckquerysubscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckquerysubscription)*

@@ -16,8 +16,6 @@ In Accessibility Inspector, the target menu displays a list of connected devices
 
 > **Note**: Accessibility Inspector targets the current foreground app by default.
 
-Accessibility Inspector targets the current foreground app by default.
-
 Once you select your app, Accessibility Inspector displays detailed information about the accessibility properties of the current screen and focused element. The following images show the inspection of an app with the Quote element selected, and the corresponding iOS app showing the Quote element highlighted in green:
 
 ##### Inspect Individual Elements
@@ -36,11 +34,9 @@ The play button starts an automatic sequence of navigation that loops from the c
 
 > **Note**: By default, left and right navigation drills into elements if possible. To change this navigation behavior to strictly traverse sibling elements, choose Inspection > Disable Auto-interact Into Elements.
 
-By default, left and right navigation drills into elements if possible. To change this navigation behavior to strictly traverse sibling elements, choose Inspection > Disable Auto-interact Into Elements.
-
 If any elements have missing or improper spoken descriptions, find the source of that element in your app’s source code and make corrections.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/inspecting-the-accessibility-of-screens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/inspecting-the-accessibility-of-screens)*

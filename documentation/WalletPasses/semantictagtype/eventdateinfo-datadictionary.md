@@ -20,8 +20,6 @@ object SemanticTagType.EventDateInfo
 
 > **Note**:  The time zone identifiers come from the [`IANA time zone database`](https://developer.apple.comhttps://www.iana.org/time-zones).
 
- The time zone identifiers come from the [`IANA time zone database`](https://developer.apple.comhttps://www.iana.org/time-zones).
-
 ## See Also
 
 - [object SemanticTagType.CurrencyAmount](semantictagtype/currencyamount-data.dictionary.md)

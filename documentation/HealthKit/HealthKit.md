@@ -1,6 +1,6 @@
 # HealthKit
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: module
 
 Access and share health and fitness data while maintaining the user’s privacy and control.
@@ -32,8 +32,6 @@ For example, users can select their favorite weight-tracking, step-counting, and
 HealthKit is also designed to manage and merge data from multiple sources. For example, users can view and manage all of their data in the Health App, including adding data, deleting data, and changing an app’s permissions. Therefore, your app needs to handle these changes, even when they occur outside your app.
 
 > **Note**:  Because health data may contain sensitive, personal information, apps must receive permission from the user to read data from or write data to the HealthKit store. They must also take steps to protect that data at all times. For more information, see [`Protecting user privacy`](protecting-user-privacy.md).
-
- Because health data may contain sensitive, personal information, apps must receive permission from the user to read data from or write data to the HealthKit store. They must also take steps to protect that data at all times. For more information, see [`Protecting user privacy`](protecting-user-privacy.md).
 
 ## Topics
 

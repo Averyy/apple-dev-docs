@@ -40,15 +40,11 @@ If your app or extension enters the background with an active file presenter, it
 
 > **Note**:  The [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) class automatically removes itself when your app goes to the background. It automatically adds itself again when your app returns to the foreground.
 
- The [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) class automatically removes itself when your app goes to the background. It automatically adds itself again when your app returns to the foreground.
-
 ##### File Coordinators and Ios
 
 A coordinated read or write will automatically begin a background task when granted, similar to one created with the [`beginBackgroundTask(expirationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/beginBackgroundTask(expirationHandler:)) method. This helps ensure that your app or extension has sufficient time to finish the read or write operation if it’s suspended, without creating a deadlock on access to that file by other processes. If a process is suspended while waiting for a coordinated read or write to be granted, the request is canceled, and an `NSError` object with the code [`NSUserCancelledError`](nsusercancellederror-swift.var.md) is produced. If the background task expires, the process is terminated.
 
 > **Note**:  The [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) class automatically requests additional background time and safely performs coordinated reads and writes when loading and saving the document.
-
- The [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) class automatically requests additional background time and safely performs coordinated reads and writes when loading and saving the document.
 
 ##### Threading Considerations
 
@@ -119,4 +115,4 @@ Each file coordinator object you create should be used on a single thread only. 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsfilecoordinator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsfilecoordinator)*

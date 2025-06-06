@@ -35,8 +35,6 @@ To learn more about the semantic versioning standard, visit [`Semantic Versionin
 
 > **Note**: Make sure to commit any changes that you want to include in the release of your Swift package before creating a version tag.
 
-Make sure to commit any changes that you want to include in the release of your Swift package before creating a version tag.
-
 In the Source Code Navigator, click the disclosure triangle next to Branches to show a list of your branches, then select a branch. In the history editor, Control-click a commit, then choose Tag “Your Identifier” from the pop-up menu. In the sheet that appears, enter a tag name that follows the semantic versioning standard, such as `1.2.4`. Add an optional message, then click Create.
 
 ##### Make Your Swift Package Publicly Available
@@ -44,8 +42,6 @@ In the Source Code Navigator, click the disclosure triangle next to Branches to 
 Ensure the Source Control Navigator is visible and select your local repository. Right-click it, and choose Create  Remote. In case you’ve already created an empty remote repository for your Swift package, choose Add Existing Remote.
 
 > ❗ **Important**: You need to add a hosted Git account in Xcode’s Settings to be able to create or connect a Git remote.
-
-You need to add a hosted Git account in Xcode’s Settings to be able to create or connect a Git remote.
 
 Next, push your local changes and the version tag to your Git remote. Click the Source Control menu, select Push, choose the branch from the dropdown menu, check the checkbox next to Include Tags, and click Push.
 
@@ -56,4 +52,4 @@ Learn more about adopting package dependencies in [`Adding package dependencies 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/publishing-a-swift-package-with-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/publishing-a-swift-package-with-xcode)*

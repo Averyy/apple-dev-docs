@@ -25,8 +25,6 @@ A flag indicating whether adding a user decision was successful.
 
 > **Note**:  Adding a decision can fail if the decision focuses on a detection or detection group that does not exist or if its time is not within the time range of the Cinematic script.
 
- Adding a decision can fail if the decision focuses on a detection or detection group that does not exist or if its time is not within the time range of the Cinematic script.
-
 ## Parameters
 
 - `decision`: The decision to add.

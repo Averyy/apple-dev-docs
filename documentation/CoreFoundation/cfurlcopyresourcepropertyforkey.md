@@ -1,6 +1,6 @@
 # CFURLCopyResourcePropertyForKey(_:_:_:_:)
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: func
 
 Returns the value of a given resource property of a given URL.
@@ -35,8 +35,6 @@ If this function returns [`true`](https://developer.apple.com/documentation/swif
 If this function returns [`false`](https://developer.apple.com/documentation/swift/false), an error occurred. the object pointer referenced by `error` is populated with additional information.
 
 > **Note**:  This method applies only to URLs that represent file system resources.
-
- This method applies only to URLs that represent file system resources.
 
 ## Parameters
 

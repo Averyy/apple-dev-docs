@@ -24,8 +24,6 @@ A widget’s budget applies to a 24-hour period. WidgetKit tunes the 24-hour win
 
 > **Note**: The system takes a few days to learn the user’s behavior. During this learning period, your widget may receive more reloads than normal.
 
-The system takes a few days to learn the user’s behavior. During this learning period, your widget may receive more reloads than normal.
-
 Cases in which WidgetKit doesn’t count reloads against your widget’s budget include when:
 
 - The widget’s containing app is in the foreground.
@@ -67,8 +65,6 @@ When the 2 hours have passed, and the character’s health is at 100 percent, Wi
 In addition to specifying a date  the end of the timeline, the provider can specify a date  the end of the timeline. This is useful when you know that the widget’s state will not change until a later time. For example, a stock market widget could create a timeline at the close of the market on Friday with an [`after(_:)`](timelinereloadpolicy/after(_:).md) refresh policy specifying the time the market opens on Monday. Because the stock market is closed over the weekend, there is no need to update the widget until the market opens.
 
 > ❗ **Important**: Plan ahead if your widget makes requests to a server when it reloads and uses [`after(_:)`](timelinereloadpolicy/after(_:).md) with a specific date in timeline entries. WidgetKit tries to respect the date you specify, which may cause a significant increase in server load when multiple devices reload your widget at around the same time.
-
-Plan ahead if your widget makes requests to a server when it reloads and uses [`after(_:)`](timelinereloadpolicy/after(_:).md) with a specific date in timeline entries. WidgetKit tries to respect the date you specify, which may cause a significant increase in server load when multiple devices reload your widget at around the same time.
 
 ##### Inform Widgetkit When a Timeline Changes
 
@@ -135,4 +131,4 @@ You may need to load new data from your server before reloading a timeline. To d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/keeping-a-widget-up-to-date)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/keeping-a-widget-up-to-date)*

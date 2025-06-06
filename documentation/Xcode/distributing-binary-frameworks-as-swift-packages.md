@@ -12,8 +12,6 @@ Carefully consider whether you want to distribute your code in binary form becau
 
 > **Note**: A Swift package can contain a mix of both source files and binaries. This use case is common for packages that contain source code that wraps closed-source binaries.
 
-A Swift package can contain a mix of both source files and binaries. This use case is common for packages that contain source code that wraps closed-source binaries.
-
 ##### Package Binaries As an Xcframework Bundle
 
 To distribute code in binary form as a Swift package, create an XCFramework bundle, or , that contains the binaries. Then, make the bundle available locally or on a server:
@@ -91,4 +89,4 @@ let package = Package(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/distributing-binary-frameworks-as-swift-packages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/distributing-binary-frameworks-as-swift-packages)*

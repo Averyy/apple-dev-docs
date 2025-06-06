@@ -1,6 +1,6 @@
 # overlaysAtPoint
 
-**Framework**: MapKit JS  
+**Framework**: Mapkitjs  
 **Kind**: method
 
 Returns an array of overlays at a given point on the webpage.
@@ -27,8 +27,6 @@ If the point is above an overlay fill or stroke, MapKit JS returns the overlay. 
 Similar to overlay selection events, this method considers the overlay’s style at the point.
 
 > **Note**:  The point needs to be above a non-null overlay fill or stroke to return the overlay.
-
- The point needs to be above a non-null overlay fill or stroke to return the overlay.
 
 For example, the following cases don’t return an overlay:
 
@@ -62,4 +60,4 @@ Opacity isn’t a factor and can have any value. For example, if the point is on
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit.map/overlaysatpoint)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit.map/overlaysatpoint)*

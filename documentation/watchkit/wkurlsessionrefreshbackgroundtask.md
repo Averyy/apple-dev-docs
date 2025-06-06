@@ -49,8 +49,6 @@ Don’t subclass or create instances of this class. Instead, the system instanti
 
 > **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
 
- In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
-
 The system creates a background [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) task when any of the following events occur:
 
 - The server requires authentication to complete a background transfer.
@@ -101,4 +99,4 @@ To get more information about the transfer, create a background configuration ob
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkurlsessionrefreshbackgroundtask)*

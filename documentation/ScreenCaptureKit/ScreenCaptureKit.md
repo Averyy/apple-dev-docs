@@ -1,6 +1,6 @@
 # ScreenCaptureKit
 
-**Framework**: ScreenCaptureKit  
+**Framework**: Screencapturekit  
 **Kind**: module
 
 Filter and select screen content and stream it to your app.
@@ -14,12 +14,6 @@ Filter and select screen content and stream it to your app.
 Use the ScreenCaptureKit framework to add support for high-performance frame capture of screen and audio content to your Mac app. The framework gives you fine-grained control to select and stream only the content that you want to capture. As a stream captures new video frames and audio samples, it passes them to your app as [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects that contain the media data and its related metadata. ScreenCaptureKit also provides a macOS-integrated picker for streaming selection and management, [`SCContentSharingPicker`](sccontentsharingpicker.md).
 
 > **Note**:  Session 10156: [`Meet ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10156) Session 10155: [`Take ScreenCaptureKit to the next level`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10155) Session 10136: [`What’s new in ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10136/)
-
- Session 10156: [`Meet ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10156)
-
-Session 10155: [`Take ScreenCaptureKit to the next level`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10155)
-
-Session 10136: [`What’s new in ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10136/)
 
 ## Topics
 

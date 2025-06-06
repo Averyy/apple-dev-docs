@@ -24,8 +24,6 @@ Use the [`accelerationIncludingGravity`](devicemotionevent/1629110-accelerationi
 
 > **Note**: If the device does not have a gyroscope, then you may need to implement your own gravity direction detection using a low pass filter.
 
-If the device does not have a gyroscope, then you may need to implement your own gravity direction detection using a low pass filter.
-
 ## See Also
 
 - [accelerationIncludingGravity](devicemotionevent/1629110-accelerationincludinggravity.md)

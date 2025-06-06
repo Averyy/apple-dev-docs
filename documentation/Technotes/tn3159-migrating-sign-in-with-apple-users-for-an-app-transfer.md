@@ -48,8 +48,6 @@ For more information about steps above, please see Transferring your apps and us
 
 > **Note**: If you receive errors while obtaining access tokens or generating transfer identifiers, but have completed your app transfer within 60 days, see [`TN3107: Resolving Sign in with Apple response errors`](tn3107-resolving-sign-in-with-apple-response-errors.md). Otherwise, see [`Migrating users after the 60-day app transfer period`](tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer#Migrating-users-after-the-60-day-app-transfer-period.md) to learn how to proceed with your user migration.
 
-If you receive errors while obtaining access tokens or generating transfer identifiers, but have completed your app transfer within 60 days, see [`TN3107: Resolving Sign in with Apple response errors`](tn3107-resolving-sign-in-with-apple-response-errors.md). Otherwise, see [`Migrating users after the 60-day app transfer period`](tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer#Migrating-users-after-the-60-day-app-transfer-period.md) to learn how to proceed with your user migration.
-
 ##### 1 Team a Obtains Access Tokens
 
 There are two ways of obtaining access tokens for user migration:
@@ -191,4 +189,4 @@ Within your app or web service, you can confirm the user migration was successfu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer)*

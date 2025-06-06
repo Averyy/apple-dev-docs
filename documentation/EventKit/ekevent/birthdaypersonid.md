@@ -1,6 +1,6 @@
 # birthdayPersonID
 
-**Framework**: EventKit  
+**Framework**: Eventkit  
 **Kind**: property
 
 The Address Book framework record identifier of the person for this birthday event.
@@ -24,8 +24,6 @@ This property is only set if this is a birthday event; otherwise the property is
 ##### Special Considerations
 
 > **Note**:  This property is equivalent to the [`birthdayPersonUniqueID`](ekevent/birthdaypersonuniqueid.md) property in macOS.
-
- This property is equivalent to the [`birthdayPersonUniqueID`](ekevent/birthdaypersonuniqueid.md) property in macOS.
 
 ## See Also
 

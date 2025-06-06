@@ -1,6 +1,6 @@
 # popFirst()
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Removes and returns the first element of the collection.
@@ -27,8 +27,6 @@ The first element of the collection if the collection is not empty; otherwise, `
 #### Discussion
 
 > **Note**: O(1)
-
-O(1)
 
 ## See Also
 

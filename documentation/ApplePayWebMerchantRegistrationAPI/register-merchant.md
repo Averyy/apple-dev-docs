@@ -1,6 +1,6 @@
 # Register Merchant
 
-**Framework**: Apple Pay Web Merchant Registration API  
+**Framework**: Applepaywebmerchantregistrationapi  
 **Kind**: httpRequest
 
 Register a merchant and its corresponding set of fully qualified domains.
@@ -22,8 +22,6 @@ This request returns no response body for a successful 200 response. Apple Pay s
 
 > **Note**:  To access the sandbox environment, use `POST` `https://apple-pay-gateway-cert.apple.com/paymentservices/registerMerchant`.
 
- To access the sandbox environment, use `POST` `https://apple-pay-gateway-cert.apple.com/paymentservices/registerMerchant`.
-
 ## Request Body
 
 The request body you use to register merchants.
@@ -38,4 +36,4 @@ The request body you use to register merchants.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepaywebmerchantregistrationapi/register-merchant)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayWebMerchantRegistrationAPI/register-merchant)*

@@ -1,6 +1,6 @@
 # App intent domains
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
 
@@ -9,8 +9,6 @@ Make your app’s actions and content available to Siri and Apple Intelligence w
 To enable enhanced understanding and more conversational interactions with Siri for your app, choose a domain and a schema that match your app’s functionality. By conforming your app intent, app entity, or your app enumeration to a schema, you ensure that Apple Intelligence understands your app’s actions and content. When you’ve identified the schema to use, leverage the [`AssistantIntent(schema:)`](assistantintent(schema:).md), [`AssistantEntity(schema:)`](assistantentity(schema:).md), and [`AssistantEnum(schema:)`](assistantenum(schema:).md) macros to write schema-conforming code.
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md) and [`Making onscreen content available to Siri and Apple Intelligence`](making-onscreen-content-available-to-siri-and-apple-intelligence.md).
 
@@ -138,4 +136,4 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/app-intent-domains)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/app-intent-domains)*

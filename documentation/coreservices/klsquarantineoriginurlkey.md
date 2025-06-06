@@ -1,6 +1,6 @@
 # kLSQuarantineOriginURLKey
 
-**Framework**: Core Services  
+**Framework**: Coreservices  
 **Kind**: data
 
 The URL of the resource originally hosting the quarantined item.
@@ -19,8 +19,6 @@ let kLSQuarantineOriginURLKey: CFString
 For web downloads, this property is the URL of the web page on which the user initiated the download. For attachments, this property is the URL of the resource to which the quarantined item was attached (e.g. the email message, calendar event, etc.). The origin URL may be a file URL for local resources, or a custom URL to which the quarantining app will respond when asked to open it. The quarantining app should respond by displaying the resource to the user. 
 
 > **Note**: The origin URL should not be set to the data URL, or the quarantining app may start downloading the file again if the user choses to view the origin URL while resolving a quarantine warning.
-
-The origin URL should not be set to the data URL, or the quarantining app may start downloading the file again if the user choses to view the origin URL while resolving a quarantine warning.
 
 ## See Also
 

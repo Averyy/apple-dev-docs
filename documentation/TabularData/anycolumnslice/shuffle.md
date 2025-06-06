@@ -1,6 +1,6 @@
 # shuffle()
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Shuffles the collection in place.
@@ -33,8 +33,6 @@ names.shuffle()
 This method is equivalent to calling `shuffle(using:)`, passing in the system’s default random generator.
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## See Also
 

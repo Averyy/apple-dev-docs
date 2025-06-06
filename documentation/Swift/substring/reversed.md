@@ -42,8 +42,6 @@ print(reversedWord)
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

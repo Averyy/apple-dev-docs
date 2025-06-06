@@ -1,6 +1,6 @@
 # Defining and Applying Text Styles
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Define and apply custom, default, and inline text styles, or use HTML tags or Markdown syntax to style your text.
 
@@ -25,8 +25,6 @@ The recommended type sizes are as follows:
 - For [`Caption`](https://developer.apple.com/documentation/applenewsformat/caption) `text`, choose a size that’s smaller than 16 points.
 
 > **Note**:  You must use only lowercase characters for custom tags. For example, if you have a default text style called `default-tag-blueBackgroundColor`, Apple News Format won’t apply the default text style. You must name it `default-tag-bluebackgroundcolor`.
-
- You must use only lowercase characters for custom tags. For example, if you have a default text style called `default-tag-blueBackgroundColor`, Apple News Format won’t apply the default text style. You must name it `default-tag-bluebackgroundcolor`.
 
 ##### Define a Custom Default Text Style
 
@@ -180,4 +178,4 @@ You can use HTML tags and Markdown syntax to style text in your article and to a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/defining-and-applying-text-styles)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/defining-and-applying-text-styles)*

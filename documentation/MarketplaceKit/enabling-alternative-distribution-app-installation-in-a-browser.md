@@ -1,6 +1,6 @@
 # Enabling alternative distribution app installation in a browser
 
-**Framework**: MarketplaceKit
+**Framework**: Marketplacekit
 
 Add support for browser apps to install alternative distribution apps from websites.
 
@@ -13,8 +13,6 @@ To enable the installation of an alternative distribution app from a webpage, yo
 [`MarketplaceKit`](MarketplaceKit.md) requires a one-to-one mapping between an alternative distribution app and the domain of the website that distributes it. When a page visitor taps a button to install the app, your browser app passes the origin of the site’s main frame to [`MarketplaceKit`](MarketplaceKit.md), which confirms that the owner of the domain also owns the app.
 
 > **Note**: The system requires that your browser app have a specific entitlement to call the [`MarketplaceKit`](MarketplaceKit.md) installation method. For more information and to request the entitlement, see [`com.apple.developer.browser.app-installation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.browser.app-installation).
-
-The system requires that your browser app have a specific entitlement to call the [`MarketplaceKit`](MarketplaceKit.md) installation method. For more information and to request the entitlement, see [`com.apple.developer.browser.app-installation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.browser.app-installation).
 
 #### Respond to App Installation Requests Using Browserenginekit
 
@@ -50,8 +48,6 @@ To forward the navigation request to [`MarketplaceKit`](MarketplaceKit.md), call
 
 > ❗ **Important**:  To comply with operation system requirements, ignore the `marketplace-kit://` URL invocation if the navigation doesn’t result from a user interaction, such as tapping a button, or if the navigation results from a redirect.
 
- To comply with operation system requirements, ignore the `marketplace-kit://` URL invocation if the navigation doesn’t result from a user interaction, such as tapping a button, or if the navigation results from a redirect.
-
 #### Respond to App Installation Requests Using Webkit
 
 If your browser app uses [`WebKit`](https://developer.apple.com/documentation/WebKit), modify your app’s [`webView(_:decidePolicyFor:decisionHandler:)`](https://developer.apple.com/documentation/WebKit/WKNavigationDelegate/webView(_:decidePolicyFor:decisionHandler:)-2ni62) navigation delegate method. When the system calls the delegate method with a URL matching the  `MarketplaceKitURIScheme` scheme, call the `decisionHandler` with a value of `WKNavigationActionPolicyAllow`.
@@ -67,4 +63,4 @@ In iOS or iPadOS 18.2 and later, development builds of browser apps with the def
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/enabling-alternative-distribution-app-installation-in-a-browser)*

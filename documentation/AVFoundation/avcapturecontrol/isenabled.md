@@ -1,6 +1,6 @@
 # isEnabled
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether this control supports user interaction.
@@ -25,8 +25,6 @@ Controls support user interaction by default. You can temporarily disable user i
 The default value is `true`.
 
 > **Note**:  Apps can programmatically change the value of a control while in a disabled state.
-
- Apps can programmatically change the value of a control while in a disabled state.
 
 
 ---

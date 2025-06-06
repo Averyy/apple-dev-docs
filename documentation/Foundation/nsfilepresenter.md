@@ -40,8 +40,6 @@ If your app enters the background with an active file presenter, any other proce
 
 > **Note**:  The [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) class automatically removes itself when your app goes to the background. It automatically adds itself again when your app returns to the foreground.
 
- The [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) class automatically removes itself when your app goes to the background. It automatically adds itself again when your app returns to the foreground.
-
 ## Topics
 
 ### Accessing File Presenter Attributes
@@ -110,4 +108,4 @@ If your app enters the background with an active file presenter, any other proce
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsfilepresenter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsfilepresenter)*

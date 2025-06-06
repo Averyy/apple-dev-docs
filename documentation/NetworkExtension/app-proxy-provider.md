@@ -1,6 +1,6 @@
 # App proxy provider
 
-**Framework**: Network Extension
+**Framework**: Networkextension
 
 Implement a VPN client for a flow-oriented, custom VPN protocol.
 
@@ -21,8 +21,6 @@ App proxy providers are one form of per-app VPN, the other being a [`Packet tunn
 For detailed information about app proxy provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/Technotes/tn3134-network-extension-provider-deployment).
 
 > **Note**:  When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
-
- When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
 
 ## Topics
 
@@ -91,4 +89,4 @@ For detailed information about app proxy provider deployment options, see [`TN31
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/app-proxy-provider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/app-proxy-provider)*

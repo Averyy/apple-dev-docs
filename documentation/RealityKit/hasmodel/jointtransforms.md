@@ -1,6 +1,6 @@
 # jointTransforms
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 The relative joint transforms of the model entity.
@@ -24,8 +24,6 @@ The relative joint transforms of the model entity.
 Call [`jointNames`](bodytrackedentity/jointnames.md) to determine the name and order of the joints.
 
 > **Note**: Active animations may override the joint transforms set using this property.
-
-Active animations may override the joint transforms set using this property.
 
 ## See Also
 

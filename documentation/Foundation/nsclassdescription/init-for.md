@@ -27,14 +27,6 @@ If you have an instance of the receiver’s class, you can use the `NSObject` in
 
 > **Note**:  In macOS 10.6 and later, this method (and as a result [`classDescription`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/classDescription) methods of any object) will return `nil` when the sdef contains no `<class>` element for the Cocoa class, but there is a `<class>` element defined for a superclass. This is incorrect, as object instances should never be required to be exactly a given class, any class should be allowed to be a subclass of the required class and receive the correct `<class>` value. This situation can have a serious impact on Cocoa Scripting, and there is no plan on changing this behavior. Instead of using this method, you should use the [`init(for:)`](nsscriptclassdescription/init(for:).md) method of [`NSScriptClassDescription`](nsscriptclassdescription.md) instead.
 
- In macOS 10.6 and later, this method (and as a result [`classDescription`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/classDescription) methods of any object) will return `nil` when the sdef contains no `<class>` element for the Cocoa class, but there is a `<class>` element defined for a superclass.
-
-This is incorrect, as object instances should never be required to be exactly a given class, any class should be allowed to be a subclass of the required class and receive the correct `<class>` value.
-
-This situation can have a serious impact on Cocoa Scripting, and there is no plan on changing this behavior.
-
-Instead of using this method, you should use the [`init(for:)`](nsscriptclassdescription/init(for:).md) method of [`NSScriptClassDescription`](nsscriptclassdescription.md) instead.
-
 ## Parameters
 
 - `aClass`: The class for which to return a class description. See note below for important details.

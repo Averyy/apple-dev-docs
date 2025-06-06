@@ -1,6 +1,6 @@
 # UIView
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that manages the content for a rectangular area on the screen.
@@ -65,8 +65,6 @@ View drawing occurs on an as-needed basis. When a view is first shown, or when a
 When the actual content of your view changes, it’s your responsibility to notify the system that your view needs to be redrawn. You do this by calling your view’s [`setNeedsDisplay()`](uiview/setneedsdisplay().md) or [`setNeedsDisplay(_:)`](uiview/setneedsdisplay(_:).md) method of the view. These methods let the system know that it should update the view during the next drawing cycle. Because it waits until the next drawing cycle to update the view, you can call these methods on multiple views to update them at the same time.
 
 > **Note**:  If you’re using OpenGL ES to do your drawing, you should use the [`GLKView`](https://developer.apple.com/documentation/GLKit/GLKView) class instead of subclassing [`UIView`](uiview.md). For more information about how to draw using OpenGL ES, see [`OpenGL ES Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793).
-
- If you’re using OpenGL ES to do your drawing, you should use the [`GLKView`](https://developer.apple.com/documentation/GLKit/GLKView) class instead of subclassing [`UIView`](uiview.md). For more information about how to draw using OpenGL ES, see [`OpenGL ES Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793).
 
 For detailed information about the view drawing cycle and the role your views have in this cycle, see [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503).
 
@@ -628,4 +626,4 @@ Animations are another way to make visible changes to a view without requiring y
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiview)*

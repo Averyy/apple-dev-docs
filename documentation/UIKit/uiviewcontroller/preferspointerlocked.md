@@ -1,6 +1,6 @@
 # prefersPointerLocked
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A Boolean value that indicates whether the view controller prefers to lock the pointer to a specific scene.
@@ -27,8 +27,6 @@ The default is [`false`](https://developer.apple.com/documentation/swift/false).
 - For an app built with Mac Catalyst, the app must be in the foreground, and the window that contains the scene ordered to the front.
 
 > **Note**:  Bringing an app built with Mac Catalyst to the foreground doesn’t immediately enable pointer lock. To enable pointer lock, the user must click in the window. To exit pointer lock, users can use Command-tab to switch to another app, or using Command-tilde.
-
- Bringing an app built with Mac Catalyst to the foreground doesn’t immediately enable pointer lock. To enable pointer lock, the user must click in the window. To exit pointer lock, users can use Command-tab to switch to another app, or using Command-tilde.
 
 The system continuously monitors the state and when the app no longer satisfies the requirements, it disables the pointer lock. When the lock state changes, the system posts [`didChangeNotification`](uipointerlockstate/didchangenotification.md).
 

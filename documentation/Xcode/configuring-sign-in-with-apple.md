@@ -12,8 +12,6 @@ To use Sign in with Apple in your app, add the capability by configuring your ap
 
 > **Note**: If your app targets an OS version that predates the availability of Sign in with Apple, use the JavaScript library to provide the same functionality. For more information, see doc://com.apple.documentation/documentation/sign_in_with_apple/sign_in_with_apple_js/incorporating_sign_in_with_apple_into_other_platforms.
 
-If your app targets an OS version that predates the availability of Sign in with Apple, use the JavaScript library to provide the same functionality. For more information, see doc://com.apple.documentation/documentation/sign_in_with_apple/sign_in_with_apple_js/incorporating_sign_in_with_apple_into_other_platforms.
-
 ##### Add the Sign in with Apple Capability to Your App
 
 Follow the instructions in the [`Add a capability`](adding-capabilities-to-your-app#Add-a-capability.md) section of [`Adding capabilities to your app`](adding-capabilities-to-your-app.md). When you reach the Capabilities library, choose Sign in with Apple. For watchOS apps with separate WatchKit extensions, add the capability to the WatchKit Extension’s target.
@@ -23,8 +21,6 @@ Follow the instructions in the [`Add a capability`](adding-capabilities-to-your-
 After you add the capability, Xcode updates the target’s entitlements to include the [`Sign in with Apple Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.applesignin) — an array that contains a single string of `Default`, the value that represents normal operation. If you configure Xcode to automatically manage app signing, then at this point, Xcode also enables Sign in with Apple for your app’s App ID in your developer account.
 
 > **Note**: If you later remove the Sign in with Apple capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable Sign in with Apple.
-
-If you later remove the Sign in with Apple capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable Sign in with Apple.
 
 Users must provide their consent before Apple shares any information with your app. If you have a number of related apps — for example, an iOS app and a macOS app — group their App IDs so the user only needs to provide consent on the first device they use to access your app. For more information, see [`Group Apps for Sign in with Apple`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/group-apps-for-sign-in-with-apple/).
 
@@ -63,4 +59,4 @@ You must complete these steps before you can send emails to your users’ hidden
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-sign-in-with-apple)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-sign-in-with-apple)*

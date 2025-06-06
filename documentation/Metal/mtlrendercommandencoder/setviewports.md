@@ -29,8 +29,6 @@ Use this method to configure multiple active viewports and corresponding scissor
 
 > ❗ **Important**:  The number of scissor rectangles you pass to [`setScissorRects(_:)`](mtlrendercommandencoder/setscissorrects(_:).md) needs to match the number of viewports you configure with this method.
 
- The number of scissor rectangles you pass to [`setScissorRects(_:)`](mtlrendercommandencoder/setscissorrects(_:).md) needs to match the number of viewports you configure with this method.
-
 The maximum number of viewports and scissor rectangles a GPU supports varies by device family. For more information, see [`MTLGPUFamily`](mtlgpufamily.md) and [`Detecting GPU Features and Metal Software Versions`](detecting-gpu-features-and-metal-software-versions.md).
 
 The rendering pipeline sends each primitive to a single viewport and its associated scissor rectangle. You can select which viewport each primitive uses in your vertex shader by adding the `[[viewport_array_index]]` attribute to an output value.
@@ -40,8 +38,6 @@ The render pipeline linearly maps vertex positions from normalized device coordi
 The viewport’s [`originX`](mtlviewport/originx.md) and [`originY`](mtlviewport/originy.md) properties, which default to `0.0`, represent the number of pixels from the top-left corner of the render target. Positive [`originX`](mtlviewport/originx.md) values go to the right and positive [`originY`](mtlviewport/originy.md) values go downward. The default values for its [`width`](mtlviewport/width.md) and [`height`](mtlviewport/height.md) properties are the render target’s width and height, respectively. The default values for its [`znear`](mtlviewport/znear.md) and [`zfar`](mtlviewport/zfar.md) properties are `0.0` and `1.0`, respectively, which you can flip.
 
 > **Note**:  You can change the render pass’s viewport configuration by calling this method again or by calling the [`setViewport(_:)`](mtlrendercommandencoder/setviewport(_:).md) method.
-
- You can change the render pass’s viewport configuration by calling this method again or by calling the [`setViewport(_:)`](mtlrendercommandencoder/setviewport(_:).md) method.
 
 The [`setViewport(_:)`](mtlrendercommandencoder/setviewport(_:).md) method is equivalent to calling this method with a single viewport element in the `viewports` array.
 

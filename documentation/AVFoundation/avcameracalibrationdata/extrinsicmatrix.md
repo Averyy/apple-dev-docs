@@ -1,6 +1,6 @@
 # extrinsicMatrix
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A matrix relating a camera’s position and orientation to a world or scene coordinate system.
@@ -28,8 +28,6 @@ The extrinsic matrix consists of a unitless 3 x 3 rotation matrix (`R`) on the l
 The camera’s pose is expressed with respect to a reference camera (camera-to-world view). If the rotation matrix is an identity matrix, then this camera is the reference camera.
 
 > **Note**:  A [`matrix_float4x3`](https://developer.apple.com/documentation/simd/matrix_float4x3) matrix is column major with 3 rows and 4 columns.
-
- A [`matrix_float4x3`](https://developer.apple.com/documentation/simd/matrix_float4x3) matrix is column major with 3 rows and 4 columns.
 
 ## See Also
 

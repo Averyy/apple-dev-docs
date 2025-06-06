@@ -1,6 +1,6 @@
 # siSlopeAndIntercept atom
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that contains parameters relevant to a decompressor component.
@@ -8,8 +8,6 @@ An atom that contains parameters relevant to a decompressor component.
 #### Overview
 
 > **Note**: The siSlopeAndIntercept atom is deprecated in the QuickTime file format. The information that follows documents existing content containing this atom and should not be used for new development.
-
-The siSlopeAndIntercept atom is deprecated in the QuickTime file format. The information that follows documents existing content containing this atom and should not be used for new development.
 
 The siSlopeAndIntercept atom contains `slope`, `intercept`, `minClip`, and `maxClip` parameters relevant to a decompressor component.
 

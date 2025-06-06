@@ -1,6 +1,6 @@
 # Extend a Subscription Renewal Date
 
-**Framework**: App Store Server API  
+**Framework**: Appstoreserverapi  
 **Kind**: httpRequest
 
 Extends the renewal date of a customer’s active subscription using the original transaction identifier.
@@ -11,8 +11,8 @@ Extends the renewal date of a customer’s active subscription using the origina
 ## Mentions
 
 - [Extending the renewal date for auto-renewable subscriptions](extending-the-renewal-date-for-auto-renewable-subscriptions.md)
-- [Identifying rate limits](identifying-rate-limits.md)
 - [App Store Server API changelog](app-store-server-api-changelog.md)
+- [Identifying rate limits](identifying-rate-limits.md)
 
 #### Discussion
 
@@ -25,8 +25,6 @@ When this endpoint extends eligible purchased subscriptions that support Family 
 A successful response with an `HTTP` `200` status code contains the [`ExtendRenewalDateResponse`](extendrenewaldateresponse.md) object. The response object includes the same unique request identifier you provide in the request, and information you need to determine whether the extension succeeds. For successful extensions, the new subscription expiration date is the [`effectiveDate`](effectivedate.md). All status codes other than `HTTP` `200` indicate that the request failed.
 
 > **Note**:  After the subscription renewal extension goes into effect, there’s no way to reverse it. The extension period doesn’t count toward the one year of paid service when the App Store calculates the developer’s commission rate.
-
- After the subscription renewal extension goes into effect, there’s no way to reverse it. The extension period doesn’t count toward the one year of paid service when the App Store calculates the developer’s commission rate.
 
 After a successful renewal date extension, Apple sends an email to notify the customer of their updated subscription renewal date.
 
@@ -58,4 +56,4 @@ The request body containing subscription-renewal-extension data.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/extend-a-subscription-renewal-date)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/extend-a-subscription-renewal-date)*

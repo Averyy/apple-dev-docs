@@ -1,6 +1,6 @@
 # Customizing a document-based app’s launch experience
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Add unique elements to your app’s document launch scene.
 
@@ -9,8 +9,6 @@ Add unique elements to your app’s document launch scene.
 In iOS 18 and later, you can customize the document browsing experience for your app, such as setting the title and action buttons, configuring the background, and adding custom assets to the scene.
 
 > **Note**:  For information about adopting the document-based launch experience SwiftUI, read [`Building a document-based app with SwiftUI`](https://developer.apple.com/documentation/SwiftUI/Building-a-document-based-app-with-SwiftUI).
-
- For information about adopting the document-based launch experience SwiftUI, read [`Building a document-based app with SwiftUI`](https://developer.apple.com/documentation/SwiftUI/Building-a-document-based-app-with-SwiftUI).
 
 ##### Set Up a Document Based App
 
@@ -165,4 +163,4 @@ override func viewDidLoad() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/customizing-a-document-based-app-s-launch-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/customizing-a-document-based-app-s-launch-experience)*

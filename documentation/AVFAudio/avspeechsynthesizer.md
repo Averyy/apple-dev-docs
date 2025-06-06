@@ -1,6 +1,6 @@
 # AVSpeechSynthesizer
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: class
 
 An object that produces synthesized speech from text utterances and enables monitoring or controlling of ongoing speech.
@@ -33,8 +33,6 @@ You can monitor the speech synthesizer by examining its [`isSpeaking`](avspeechs
 An `AVSpeechSynthesizer` also controls the route where the speech plays. For more information, see Directing speech output.
 
 > **Note**:  The system doesn’t automatically retain the speech synthesizer, so you need to manually retain it until speech concludes.
-
- The system doesn’t automatically retain the speech synthesizer, so you need to manually retain it until speech concludes.
 
 ## Topics
 
@@ -99,4 +97,4 @@ An `AVSpeechSynthesizer` also controls the route where the speech plays. For mor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/avspeechsynthesizer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/avspeechsynthesizer)*

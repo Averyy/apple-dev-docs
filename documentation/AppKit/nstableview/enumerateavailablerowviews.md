@@ -1,6 +1,6 @@
 # enumerateAvailableRowViews(_:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Allows the enumeration of all the table rows that are known to the table view.
@@ -22,8 +22,6 @@ The enumeration includes all views in the [`visibleRect`](nsview/visiblerect.md)
 It is preferred to use this method to efficiently make changes over all views that exist in the table.
 
 > **Note**:  There is no guarantee that the rows will be enumerated in the displayed order.
-
- There is no guarantee that the rows will be enumerated in the displayed order.
 
 ## Parameters
 

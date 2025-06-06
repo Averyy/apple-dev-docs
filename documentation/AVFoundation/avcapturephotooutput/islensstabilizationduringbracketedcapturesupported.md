@@ -1,6 +1,6 @@
 # isLensStabilizationDuringBracketedCaptureSupported
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value indicating whether the capture output currently supports lens stabilization during bracketed image capture.
@@ -22,8 +22,6 @@ var isLensStabilizationDuringBracketedCaptureSupported: Bool { get }
 To make use of optical image stabilization across the entire duration of a bracketed capture, set the [`isLensStabilizationEnabled`](avcapturephotobracketsettings/islensstabilizationenabled.md) property of your bracketed photo settings object.
 
 > **Note**:  This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes.
-
- This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes.
 
 This property supports key-value observing.
 

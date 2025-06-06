@@ -1,6 +1,6 @@
 # pasteDestination(for:action:validator:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Specifies an action that adds validated items to a view in response to the system’s Paste command.
@@ -51,8 +51,6 @@ The paste destination handles only pasted content with a type that matches the `
 Use the `validator` closure to restrict the pasted content to items that make sense in the context of the view. The above example allows people to paste only strings that match one of a known list of bird names because the list is meant to contain only birds. You can omit the final closure if you don’t need to perform any validation.
 
 > **Note**: To enable people to paste using a custom action — like from a context menu item — rather than using the system Paste command, access the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/UIKit/UIPasteboard) instance.
-
-To enable people to paste using a custom action — like from a context menu item — rather than using the system Paste command, access the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/UIKit/UIPasteboard) instance.
 
 ## Parameters
 

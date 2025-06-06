@@ -14,8 +14,6 @@ Implement ray-traced rendering using GPU-based parallel processing.
 
 > **Note**: This sample code project is associated with WWDC22 session [`10105: Maximize your Metal ray tracing performance`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10105/) and WWDC20 session [`10012: Discover ray tracing with Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10012/).
 
-This sample code project is associated with WWDC22 session [`10105: Maximize your Metal ray tracing performance`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10105/) and WWDC20 session [`10012: Discover ray tracing with Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10012/).
-
 ##### Configure the Sample Code Project
 
 This sample requires the following system and software configuration:
@@ -38,4 +36,4 @@ This sample requires the following system and software configuration:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/accelerating-ray-tracing-using-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/accelerating-ray-tracing-using-metal)*

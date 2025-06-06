@@ -1,6 +1,6 @@
 # reportNewIncomingVoIPPushPayload(_:)
 
-**Framework**: LiveCommunicationKit  
+**Framework**: Livecommunicationkit  
 **Kind**: method
 
 Reports a new incoming call after your notification service extension decrypts a VoIP call request.
@@ -21,8 +21,6 @@ final class func reportNewIncomingVoIPPushPayload(_ payload: [AnyHashable : Any]
 #### Discussion
 
 > **Note**: When the system disallows a `Conversation`, an error is thrown that contains information about why it disallowed the `Conversation`.
-
-When the system disallows a `Conversation`, an error is thrown that contains information about why it disallowed the `Conversation`.
 
 ## Parameters
 

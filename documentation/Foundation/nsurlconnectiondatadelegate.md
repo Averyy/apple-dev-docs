@@ -28,8 +28,6 @@ In addition to the methods described in this protocol, an `NSURLConnection` dele
 
 > **Note**:  If you are using `NSURLConnection` as part of Newsstand Kit on iOS, you should also implement the methods in the [`NSURLConnectionDownloadDelegate`](nsurlconnectiondownloaddelegate.md) protocol.
 
- If you are using `NSURLConnection` as part of Newsstand Kit on iOS, you should also implement the methods in the [`NSURLConnectionDownloadDelegate`](nsurlconnectiondownloaddelegate.md) protocol.
-
 ## Topics
 
 ### Handling Incoming Data
@@ -69,4 +67,4 @@ In addition to the methods described in this protocol, an `NSURLConnection` dele
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsurlconnectiondatadelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsurlconnectiondatadelegate)*

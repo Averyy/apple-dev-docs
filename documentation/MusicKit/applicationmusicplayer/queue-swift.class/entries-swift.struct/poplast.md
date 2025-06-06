@@ -1,6 +1,6 @@
 # popLast()
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Removes and returns the last element of the collection.
@@ -28,8 +28,6 @@ The last element of the collection if the collection is not empty; otherwise, `n
 Calling this method may invalidate all saved indices of this collection. Do not rely on a previously stored index value after altering a collection with any operation that can change its length.
 
 > **Note**: O(1)
-
-O(1)
 
 
 ---

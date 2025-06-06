@@ -24,8 +24,6 @@ func getCString(_ buffer: inout [CChar], maxLength: Int, encoding: String.Encodi
 
 > **Note**: Will store a maximum of `min(buffer.count, maxLength)` bytes.
 
-Will store a maximum of `min(buffer.count, maxLength)` bytes.
-
 
 ---
 

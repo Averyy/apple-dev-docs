@@ -1,6 +1,6 @@
 # Loading media data asynchronously
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Build responsive apps by using language-level concurrency features to efficiently load media data.
 
@@ -9,8 +9,6 @@ Build responsive apps by using language-level concurrency features to efficientl
 AVFoundation uses the [`AVAsset`](avasset.md) class to model timed audiovisual media. Creating an asset is a lightweight operation because it defers loading its media until it requires the data. How long it takes an asset to load its data depends on factors, including the media’s size, local device capabilities, and remote network conditions. To avoid blocking the calling thread, you must load media data asynchronously.
 
 > ❗ **Important**:  Starting in iOS 16, tvOS 16, MacCatalyst 16, and macOS 13, AVFoundation deprecates using the synchronous properties and methods of [`AVAsset`](avasset.md), [`AVAssetTrack`](avassettrack.md), and [`AVMetadataItem`](avmetadataitem.md) for Swift clients. It also deprecates loading property values asynchronously using the [`loadValuesAsynchronously(forKeys:completionHandler:)`](avasynchronouskeyvalueloading/loadvaluesasynchronously(forkeys:completionhandler:).md) method in favor of the syntax described below.
-
- Starting in iOS 16, tvOS 16, MacCatalyst 16, and macOS 13, AVFoundation deprecates using the synchronous properties and methods of [`AVAsset`](avasset.md), [`AVAssetTrack`](avassettrack.md), and [`AVMetadataItem`](avmetadataitem.md) for Swift clients. It also deprecates loading property values asynchronously using the [`loadValuesAsynchronously(forKeys:completionHandler:)`](avasynchronouskeyvalueloading/loadvaluesasynchronously(forkeys:completionhandler:).md) method in favor of the syntax described below.
 
 ##### Load Properties Asynchronously
 
@@ -37,8 +35,6 @@ let (duration, metadata) = try await asset.load(.duration, .metadata)
 ```
 
 > **Note**:  Loading several properties at the same time enables AVFoundation to optimize performance by batch-loading requests.
-
- Loading several properties at the same time enables AVFoundation to optimize performance by batch-loading requests.
 
 ##### Determine a Property Status
 
@@ -91,4 +87,4 @@ Using Swift concurrency and the AVFoundation asynchronous APIs makes performing 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/loading-media-data-asynchronously)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/loading-media-data-asynchronously)*

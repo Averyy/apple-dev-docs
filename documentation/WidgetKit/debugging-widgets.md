@@ -14,8 +14,6 @@ To debug your widget, select the widget-extension target in Xcode and choose Pro
 
 > **Note**: If your Home Screen pages are full, Xcode instead uses the Today view.
 
-If your Home Screen pages are full, Xcode instead uses the Today view.
-
 To debug accessory widgets that appear on the iPhone Lock Screen or as complications on Apple Watch, build and run the app target, then manually add the widget.
 
 To configure a specific widget configuration, use the Arguments pane of the widget extension’s scheme, shown here, to set environment variables as described below.
@@ -59,4 +57,4 @@ To select the default view the WidgetKit Simulator app shows when you start a de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/debugging-widgets)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/debugging-widgets)*

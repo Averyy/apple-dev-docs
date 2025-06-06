@@ -1,6 +1,6 @@
 # Adding realistic reflections to an AR experience
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Use ARKit to generate environment probe textures from camera imagery and render reflective virtual objects.
 
@@ -49,8 +49,6 @@ The visual effect of environment texturing depends on how you configure the prop
 ![Detail screenshots showing the effect of three different environment textures on both smooth and rough virtual spheres.](https://docs-assets.developer.apple.com/published/e00c718b92ef4a1fcb9c7c53292d313f/Roughness.png)
 
 > **Note**: If your AR experience uses a rendering technology other than SceneKit, you’ll need to retrieve the generated textures yourself and determine how to use them appropriately in your shading engine. First, implement the [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-9v2kw.md) delegate method to be notified when ARKit generates environment probe textures. In that method, use the [`environmentTexture`](arenvironmentprobeanchor/environmenttexture.md) property of each [`AREnvironmentProbeAnchor`](arenvironmentprobeanchor.md) object to get the texture.
-
-If your AR experience uses a rendering technology other than SceneKit, you’ll need to retrieve the generated textures yourself and determine how to use them appropriately in your shading engine. First, implement the [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-9v2kw.md) delegate method to be notified when ARKit generates environment probe textures. In that method, use the [`environmentTexture`](arenvironmentprobeanchor/environmenttexture.md) property of each [`AREnvironmentProbeAnchor`](arenvironmentprobeanchor.md) object to get the texture.
 
 #### Place Environment Probes Manually for Enhanced Results
 
@@ -120,4 +118,4 @@ Alternatively, your app may include a static environment-map texture for use as 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/adding-realistic-reflections-to-an-ar-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/adding-realistic-reflections-to-an-ar-experience)*

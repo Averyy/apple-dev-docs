@@ -1,6 +1,6 @@
 # filter(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns a new collection of the same type containing, in order, the elements of the original collection that satisfy the given predicate.
@@ -36,8 +36,6 @@ print(shortNames)
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

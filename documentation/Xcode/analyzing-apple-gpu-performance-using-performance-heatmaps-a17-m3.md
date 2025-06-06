@@ -10,8 +10,6 @@ Metal organizes the threads of your shader into single-instruction, multiple-dat
 
 > ❗ **Important**: The performance heat maps feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
 
-The performance heat maps feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
-
 ##### View the Performance Heat Maps
 
 To open the performance heat maps, click the Performance button in the Metal debugger’s Debug navigator, and then click the Heat Map tab above the Performance timeline.
@@ -21,8 +19,6 @@ To open the performance heat maps, click the Performance button in the Metal deb
 When you select an encoder, pipeline state, or GPU command in the Timeline navigator, the heat maps for the corresponding work appear on the right.
 
 > **Note**: Performance heat maps are available for render command encoders, render pipeline states, and compute dispatches. However, they don’t support compute command encoders or compute pipeline states.
-
-Performance heat maps are available for render command encoders, render pipeline states, and compute dispatches. However, they don’t support compute command encoders or compute pipeline states.
 
 In addition, performance heat maps are available for the following shader types:
 
@@ -34,8 +30,6 @@ In addition, performance heat maps are available for the following shader types:
 | Compute shader | Thread location |
 
 > **Note**: For compute, object, and mesh shaders, when the maximum compute thread location in the x-axis or y-axis exceeds 8192, each pixel in the heat map represents a SIMD group instead of a thread.
-
-For compute, object, and mesh shaders, when the maximum compute thread location in the x-axis or y-axis exceeds 8192, each pixel in the heat map represents a SIMD group instead of a thread.
 
 ##### Switch Between Shader Types
 
@@ -127,4 +121,4 @@ For more information about the Metal profiling tools for M3 and A17 Pro, see [`D
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-apple-gpu-performance-using-performance-heatmaps-a17-m3)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-apple-gpu-performance-using-performance-heatmaps-a17-m3)*

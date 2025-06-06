@@ -1,6 +1,6 @@
 # Generating developer tokens
 
-**Framework**: Apple Music Feed
+**Framework**: Applemusicfeed
 
 Create a JSON Web Token to authorize your requests to Apple Media Feed API.
 
@@ -20,13 +20,9 @@ Create a developer token as a JSON object with a header that includes the follow
 
 > ❗ **Important**: Apple Media Feed API supports only developer tokens signed with the ES256 algorithm. Unsecured developer tokens or developer tokens signed with other algorithms reject with a `401` error code.
 
-Apple Media Feed API supports only developer tokens signed with the ES256 algorithm. Unsecured developer tokens or developer tokens signed with other algorithms reject with a `401` error code.
-
 In the claims payload of the token, include the following:
 
 > 💡 **Tip**: To locate your Team ID, sign in to your developer account, and click “Membership details” at the top of the page.
-
-To locate your Team ID, sign in to your developer account, and click “Membership details” at the top of the page.
 
 A decoded developer token has the following format:
 
@@ -46,8 +42,6 @@ After you create the token, sign it with your private key using the ES256 algori
 
 > **Note**: ES256 is the [`JSON Web Algorithms (JWA)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
 
-ES256 is the [`JSON Web Algorithms (JWA)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
-
 #### Authorize Requests
 
 If you manage request authorization directly, in all requests, pass the `Authorization: Bearer` header set to the developer token.
@@ -66,4 +60,4 @@ curl -v -H 'Authorization: Bearer [developer token]' "https://api.ent.apple.com/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applemusicfeed/generating-developer-tokens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicFeed/generating-developer-tokens)*

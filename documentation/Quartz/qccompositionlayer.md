@@ -24,8 +24,6 @@ You can pass data to the input ports, or retrieve data from the output ports, of
 
 > **Note**:  You must not modify the `asynchronous` property of the superclass [`CAOpenGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAOpenGLLayer).
 
- You must not modify the `asynchronous` property of the superclass [`CAOpenGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAOpenGLLayer).
-
 ## Topics
 
 ### Creating a Composition Layer
@@ -78,4 +76,4 @@ You can pass data to the input ports, or retrieve data from the output ports, of
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartz/qccompositionlayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Quartz/qccompositionlayer)*

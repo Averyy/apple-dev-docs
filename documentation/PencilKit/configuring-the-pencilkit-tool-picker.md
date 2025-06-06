@@ -1,6 +1,6 @@
 # Configuring the PencilKit tool picker
 
-**Framework**: PencilKit
+**Framework**: Pencilkit
 
 Incorporate a custom PencilKit tool picker with a variety of system and custom tools into a drawing app.
 
@@ -15,8 +15,6 @@ Incorporate a custom PencilKit tool picker with a variety of system and custom t
 This sample app shows how to configure a [`PKToolPicker`](pktoolpicker.md). The app is a simple drawing tool that allows a person to draw on a canvas using tools from the tool picker. In addition to showing system tools, the tool picker provides a custom tool that a person can use to place stamps on the canvas. The tool picker also contains an accessory item for adding a signature to the canvas.
 
 > **Note**: This sample code project is associated with WWDC24 session 10214: [`Squeeze the most out of Apple Pencil`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10214/).
-
-This sample code project is associated with WWDC24 session 10214: [`Squeeze the most out of Apple Pencil`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10214/).
 
 ##### Configure the Sample Code Project
 
@@ -129,4 +127,4 @@ default:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/pencilkit/configuring-the-pencilkit-tool-picker)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PencilKit/configuring-the-pencilkit-tool-picker)*

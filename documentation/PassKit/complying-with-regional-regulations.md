@@ -1,6 +1,6 @@
 # Complying with regional regulations
 
-**Framework**: PassKit (Apple Pay and Wallet)
+**Framework**: Passkit
 
 Check regional regulations for possible requirements for your Apple Pay-based implementation.
 
@@ -9,8 +9,6 @@ Check regional regulations for possible requirements for your Apple Pay-based im
 Some regional regulations may require specific configurations in your Apple Pay implementation, such as including certain options in properties. Below is some guidance on configuring your implementation in current Apple Pay markets.
 
 > **Note**:  This list may not be complete. Check with your payment service provider (PSP) or the appropriate authorities to ensure your implementation meets requirements.
-
- This list may not be complete. Check with your payment service provider (PSP) or the appropriate authorities to ensure your implementation meets requirements.
 
 You’re also required to show a final amount on the payment sheet.
 
@@ -26,4 +24,4 @@ For more information on PSD2, see [`Strong Customer Authentication Transactions 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/passkit/complying-with-regional-regulations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/complying-with-regional-regulations)*

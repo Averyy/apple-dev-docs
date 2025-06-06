@@ -1,6 +1,6 @@
 # Transaction
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: struct
 
 Information that represents the customer’s purchase of a product in your app.
@@ -49,8 +49,6 @@ Your app doesn’t create transaction objects. Instead, StoreKit automatically m
 
 > **Note**:  Session 110404: [`Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110404/)
 
- Session 110404: [`Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110404/)
-
 You access transactions in several ways:
 
 - Get transaction history anytime by accessing the static [`all`](transaction/all.md) sequence, or get just the most recent transaction for a product with the [`latestTransaction`](product/latesttransaction.md) property of [`Product`](product.md).
@@ -67,8 +65,6 @@ The App Store cryptographically signs transaction information in JWS format. Sto
 To perform your own validation on the device, use the verification result’s [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) string, and use the provided convenience properties [`headerData`](verificationresult/headerdata-9egfp.md), [`payloadData`](verificationresult/payloaddata-uyle.md), and [`signatureData`](verificationresult/signaturedata-4pyv8.md). For added control and security, send the `jwsRepresentation` to your server to verify. Consider using the App Store Server Library to implement your verification. The library provides the functions `verifyAndDecodeTransaction` and `verifyAndDecodeRenewalInfo` in each language the library supports. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
 
 > 💡 **Tip**:  The [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) is the same as the [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) that the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI) returns and to the [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerNotifications/JWSTransaction) that you receive in [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2). You can validate them on your server in the same way.
-
- The [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) is the same as the [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) that the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI) returns and to the [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerNotifications/JWSTransaction) that you receive in [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2). You can validate them on your server in the same way.
 
 If StoreKit returns a transaction as verified, the transaction is valid for the device. For information about performing your own verification for a device, see [`deviceVerification`](transaction/deviceverification.md).
 
@@ -175,4 +171,4 @@ All In-App Purchases that customers make are equally available to your app in th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/transaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/transaction)*

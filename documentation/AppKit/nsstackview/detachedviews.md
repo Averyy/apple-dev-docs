@@ -1,6 +1,6 @@
 # detachedViews
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 An array that contains the detached views from all the stack view’s gravity areas.
@@ -21,8 +21,6 @@ A view in a detached state is not present in the stack view’s view hierarchy, 
 
 > **Note**:  There is no guaranteed ordering of the views in the detached views array.
 
- There is no guaranteed ordering of the views in the detached views array.
-
 ## See Also
 
 - [var views: [NSView]](nsstackview/views.md)
@@ -37,4 +35,4 @@ A view in a detached state is not present in the stack view’s view hierarchy, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsstackview/detachedviews)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsstackview/detachedviews)*

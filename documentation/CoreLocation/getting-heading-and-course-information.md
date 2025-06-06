@@ -1,6 +1,6 @@
 # Getting heading and course information
 
-**Framework**: Core Location
+**Framework**: Corelocation
 
 Use a device’s orientation and course information for navigation.
 
@@ -18,8 +18,6 @@ After determining whether heading information is available, call the [`startUpda
 
 > **Note**:  Heading information is available only on devices with a built-in magnetometer; it’s not available in iOS Simulator. The magnetometer determines a device’s orientation relative to magnetic north. When location data is available, Core Location also reports the device’s orientation relative to true north.
 
- Heading information is available only on devices with a built-in magnetometer; it’s not available in iOS Simulator. The magnetometer determines a device’s orientation relative to magnetic north. When location data is available, Core Location also reports the device’s orientation relative to true north.
-
 ##### Get Course Information
 
 Course information reflects the speed and direction in which a device is moving and is available only on devices with GPS hardware. Don’t confuse course information with heading information. Course direction reflects the direction in which the device is moving and is independent of the device’s physical orientation. The most common use of course information is in navigation apps.
@@ -34,4 +32,4 @@ Course information is included automatically in [`CLLocation`](cllocation.md) ob
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/getting-heading-and-course-information)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/getting-heading-and-course-information)*

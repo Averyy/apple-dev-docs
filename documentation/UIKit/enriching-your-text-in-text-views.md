@@ -1,6 +1,6 @@
 # Enriching your text in text views
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Add exclusion paths, text attachments, and text lists to your text, and render it with text views.
 
@@ -13,8 +13,6 @@ Add exclusion paths, text attachments, and text lists to your text, and render i
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [`10090: What’s new in TextKit and text views`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10090/).
-
-This sample code project is associated with WWDC22 session [`10090: What’s new in TextKit and text views`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10090/).
 
 ## See Also
 
@@ -30,4 +28,4 @@ This sample code project is associated with WWDC22 session [`10090: What’s new
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/enriching-your-text-in-text-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/enriching-your-text-in-text-views)*

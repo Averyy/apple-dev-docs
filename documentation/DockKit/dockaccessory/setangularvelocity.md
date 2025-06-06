@@ -1,6 +1,6 @@
 # setAngularVelocity(_:)
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: method
 
 Sets the angular velocity of each axis of orientation.
@@ -26,8 +26,6 @@ final func setAngularVelocity(_ angularVelocity: Vector3D) async throws
 The angular velocity is expressed in radians per second for pitch, yaw, and roll. This method works only when you disable system tracking.
 
 > **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if the accessory disconnects, or other errors if communication with the accessory fails.
-
-[`DockKitError.notConnected`](dockkiterror/notconnected.md) if the accessory disconnects, or other errors if communication with the accessory fails.
 
 ## Parameters
 

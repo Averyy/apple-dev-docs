@@ -1,6 +1,6 @@
 # coordinateSeek(to:options:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Coordinates a seek to the specified time for all connected participants.
@@ -24,8 +24,6 @@ func coordinateSeek(to time: CMTime, options: AVDelegatingPlaybackCoordinatorSee
 To end a suspension and also affect the group timing, see [`end(proposingNewTime:)`](avcoordinatedplaybacksuspension/end(proposingnewtime:).md).
 
 > **Note**:  Calling this method while the coordinator is in a suspended state affects only the local playback object. It doesn’t affect group state, even after the suspension ends.
-
- Calling this method while the coordinator is in a suspended state affects only the local playback object. It doesn’t affect group state, even after the suspension ends.
 
 ## Parameters
 

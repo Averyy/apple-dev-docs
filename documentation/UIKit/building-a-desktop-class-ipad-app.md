@@ -1,6 +1,6 @@
 # Building a desktop-class iPad app
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Optimize your iPad app’s user experience by adopting desktop-class enhancements for multitasking with Stage Manager, document interactions, text editing, search, and more.
 
@@ -24,8 +24,6 @@ Follow these steps to support a great multitasking experience with Stage Manager
 
 > **Note**:  Session 10068: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10068)
 
- Session 10068: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10068)
-
 ##### Support Powerful Document Editing Workflows
 
 Navigation-based apps support a specialized editor style that brings important document-editing features to the forefront and supports user customization. Navigation-based apps can also use a title menu to surface document management operations, sharing capabilities, and custom actions.
@@ -38,10 +36,6 @@ Follow these steps to support document-editing enhancements on iPad:
 
 > **Note**:  Session 10069: [`Meet desktop-class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069) Session 110343: [`SwiftUI on iPad: Add toolbars, titles, and more`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110343)
 
- Session 10069: [`Meet desktop-class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069)
-
-Session 110343: [`SwiftUI on iPad: Add toolbars, titles, and more`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110343)
-
 ##### Simplify the Text Editing Process
 
 When people use an iPad with an external keyboard, they expect full support for keyboard input, including familiar keyboard shortcuts and interactions. A smooth text-editing experience takes advantage of standard system capabilities, and tailors itself according to touch or keyboard input. To enable a productive text-editing experience, leverage system enhancements to text-editing menus, as well as Find and Replace.
@@ -52,8 +46,6 @@ Follow these steps to provide a great text-editing experience on iPad:
 - Integrate the system Find and Replace experience into your text views. For standard system text input views like [`UITextView`](uitextview.md) or [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView), set [`isFindInteractionEnabled`](uitextview/isfindinteractionenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true) to allow people to find and replace text using the system Find panel. For custom text view implementations, see [`UIFindInteraction`](uifindinteraction.md).
 
 > **Note**:  Session 10071: [`Adopt desktop-class editing interactions`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10071)
-
- Session 10071: [`Adopt desktop-class editing interactions`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10071)
 
 ##### Support Inline Searches with Suggestions
 
@@ -76,10 +68,6 @@ Follow these steps to provide a great experience for multiple selection on iPad:
 
 > **Note**:  Session 10070: [`Build a desktop-class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070) Session 10058: [`SwiftUI on iPad: Organize your interface`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10058)
 
- Session 10070: [`Build a desktop-class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070)
-
-Session 10058: [`SwiftUI on iPad: Organize your interface`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10058)
-
 ##### Bring Your Ipad App to the Mac with Mac Catalyst
 
 If your iPad app already supports a desktop-class experience, you can bring your app over to the Mac using Mac Catalyst. When you build your iPadOS app with Mac Catalyst, the system bridges certain interactions and UI elements to their counterparts in macOS.
@@ -93,8 +81,6 @@ For more information about building an app with Mac Catalyst, see [`Bring an iPa
 
 > **Note**:  Session 10076: [`Bring your iOS app to the Mac`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10076)
 
- Session 10076: [`Bring your iOS app to the Mac`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10076)
-
 ## See Also
 
 - [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
@@ -107,4 +93,4 @@ For more information about building an app with Mac Catalyst, see [`Bring an iPa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/building-a-desktop-class-ipad-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/building-a-desktop-class-ipad-app)*

@@ -1,6 +1,6 @@
 # Integrating CloudKit access into your JavaScript automation scripts
 
-**Framework**: CKTool JS
+**Framework**: Cktooljs
 
 Configure your JavaScript project to use CKTool JS.
 
@@ -23,8 +23,6 @@ If you’ll be accessing with data in a container, then you’ll also require a 
 To install the CKTool JS client library, you need to have the `npm` package management tool already installed on your machine. The client library suite includes a main database package and a package used to target Node.js.
 
 > **Note**:  Each package includes TypeScript type definitions, which enable static type checking and code completion while editing your code.
-
- Each package includes TypeScript type definitions, which enable static type checking and code completion while editing your code.
 
 Add the CKTool JS database package to your `package.json`, alongside any other runtime dependencies that you may have.
 
@@ -97,8 +95,6 @@ In the above example, `importSchema` requires a `file` value as well as the valu
 
 > **Note**:  You can add additional values to your parameters object. If the method doesn’t use them, it ignores those values.
 
- You can add additional values to your parameters object. If the method doesn’t use them, it ignores those values.
-
 ##### Convert Value Types Into the Librarys Expected Types
 
 In order to pass values to CKTool JS functions that expect `Float`, `Double`, `Int32`, `Int64`, `Byte`, `ByteArray`, or `UUID` values, you must convert the parameters into the appropriate type.
@@ -117,4 +113,4 @@ In TypeScript, the compiler catches attempts to pass values of the wrong type. I
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cktooljs/integrating-cloudkit-access-into-your-javascript-automation-scripts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CKToolJS/integrating-cloudkit-access-into-your-javascript-automation-scripts)*

@@ -1,6 +1,6 @@
 # shuffle(using:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Shuffles the collection in place, using the given generator as a source for randomness.
@@ -31,11 +31,7 @@ names.shuffle(using: &myGenerator)
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 > **Note**: The algorithm used to shuffle a collection may change in a future version of Swift. If you’re passing a generator that results in the same shuffled order each time you run your program, that sequence may change when your program is compiled using a different version of Swift.
-
-The algorithm used to shuffle a collection may change in a future version of Swift. If you’re passing a generator that results in the same shuffled order each time you run your program, that sequence may change when your program is compiled using a different version of Swift.
 
 ## Parameters
 

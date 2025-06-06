@@ -1,6 +1,6 @@
 # dragInteraction(_:sessionIsRestrictedToDraggingApplication:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Asks the delegate whether the system should restrict the drag session to the app that started the session.
@@ -27,8 +27,6 @@ optional func dragInteraction(_ interaction: UIDragInteraction, sessionIsRestric
 If you return [`true`](https://developer.apple.com/documentation/swift/true) and the user attempts to drop the drag items onto another app, the system cancels the session.
 
 > **Note**:  The system calls this method only on devices that support dragging across apps.
-
- The system calls this method only on devices that support dragging across apps.
 
 ## Parameters
 

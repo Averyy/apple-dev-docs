@@ -26,8 +26,6 @@ If the length of the receiver’s data is not zero, this property is guaranteed 
 
 > **Note**:  This property is similar to, but different than the [`bytes`](nsdata/bytes.md) property. The [`bytes`](nsdata/bytes.md) property contains a pointer to a constant. You can use The [`bytes`](nsdata/bytes.md) pointer to read the data managed by the data object, but you cannot modify that data. However, if the [`mutableBytes`](nsmutabledata/mutablebytes.md) property contains a non-`null` pointer, this pointer points to mutable data. You can use the [`mutableBytes`](nsmutabledata/mutablebytes.md) pointer to modify the data managed by the data object.
 
- This property is similar to, but different than the [`bytes`](nsdata/bytes.md) property. The [`bytes`](nsdata/bytes.md) property contains a pointer to a constant. You can use The [`bytes`](nsdata/bytes.md) pointer to read the data managed by the data object, but you cannot modify that data. However, if the [`mutableBytes`](nsmutabledata/mutablebytes.md) property contains a non-`null` pointer, this pointer points to mutable data. You can use the [`mutableBytes`](nsmutabledata/mutablebytes.md) pointer to modify the data managed by the data object.
-
 A sample using this method can be found in [`Working With Mutable Binary Data`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/BinaryData/Tasks/WorkingMutableData.html#//apple_ref/doc/uid/20002150).
 
 ## See Also

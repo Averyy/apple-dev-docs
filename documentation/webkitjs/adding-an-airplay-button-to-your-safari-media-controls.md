@@ -39,8 +39,6 @@ To show the AirPlay button when AirPlay is available, you add an event listener 
 
 > **Note**: To conserve battery power, listen for this event only for as long as needed, and then stop listening. If the button is not visible, controls are hidden, or the user is in fullscreen mode, stop listening. 
 
-To conserve battery power, listen for this event only for as long as needed, and then stop listening. If the button is not visible, controls are hidden, or the user is in fullscreen mode, stop listening. 
-
 ```javascript
 if (window.WebKitPlaybackTargetAvailabilityEvent) {
     video.addEventListener('webkitplaybacktargetavailabilitychanged',

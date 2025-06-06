@@ -1,6 +1,6 @@
 # UIView.Invalidating
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: struct
 
 A property wrapper that notifies the system that a property value change has invalidated an aspect of the containing view.
@@ -40,8 +40,6 @@ When you change the badge color, the property wrapper calls [`setNeedsDisplay()`
 Functions such as [`setNeedsDisplay()`](uiview/setneedsdisplay().md) and [`setNeedsLayout()`](uiview/setneedslayout().md) perform changes on the next update cycle. You can make changes to multiple properties and views before any of those views update. Consolidating the updates to one update cycle is usually better for performance.
 
 > **Note**:  You only use [`UIView.Invalidating`](uiview/invalidating.md) on subclasses of [`UIView`](uiview.md).
-
- You only use [`UIView.Invalidating`](uiview/invalidating.md) on subclasses of [`UIView`](uiview.md).
 
 ## Topics
 

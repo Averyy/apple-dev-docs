@@ -1,6 +1,6 @@
 # isLensCorrectionEnabled
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: instp
 
 A Boolean that indicates whether to enable lens correction.
@@ -24,8 +24,6 @@ var isLensCorrectionEnabled: Bool { get set }
 The default value varies by image.
 
 > **Note**: The [`isLensCorrectionSupported`](cirawfilter/3801633-islenscorrectionsupported.md) property is [`false`](https://developer.apple.com/documentation/swift/false) if the current image doesn’t support this adjustment.
-
-The [`isLensCorrectionSupported`](cirawfilter/3801633-islenscorrectionsupported.md) property is [`false`](https://developer.apple.com/documentation/swift/false) if the current image doesn’t support this adjustment.
 
 ## See Also
 

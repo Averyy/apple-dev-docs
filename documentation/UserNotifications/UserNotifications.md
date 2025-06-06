@@ -36,8 +36,6 @@ For webpages in Safari version 16.0 and higher, generate remote notifications fr
 
 > **Note**:  Siri can provide suggestions to users in search, News, Safari, and other apps using on-device information that your app contributes through the Notifications API. Users can change this functionality to allow at any time through Siri and Search settings for your app.
 
- Siri can provide suggestions to users in search, News, Safari, and other apps using on-device information that your app contributes through the Notifications API. Users can change this functionality to allow at any time through Siri and Search settings for your app.
-
 For design guidance, see [`Human Interface Guidelines > Notifications`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/notifications/).
 
 ## Topics

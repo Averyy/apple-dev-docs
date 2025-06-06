@@ -1,6 +1,6 @@
 # Video sample data
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Store video sample data in different formats, depending on the type of compression you use.
 
@@ -77,13 +77,9 @@ Each field of Motion-JPEG format A fully complies with the ISO JPEG specificatio
 
 > **Note**: The last two fields have been added since the original Motion-JPEG specification, and so they may be missing from some Motion-JPEG A files. You should check the length of the APP1 marker before using the start of scan offset and start of data offset fields.
 
-The last two fields have been added since the original Motion-JPEG specification, and so they may be missing from some Motion-JPEG A files. You should check the length of the APP1 marker before using the start of scan offset and start of data offset fields.
-
 Motion-JPEG format B does not support markers. In place of the marker, therefore, QuickTime inserts a header at the beginning of the bitstream. Again, all of the fields are 32-bit integers.
 
 > **Note**: The last two fields were “reserved, must be set to zero” in the original Motion-JPEG specification.
-
-The last two fields were “reserved, must be set to zero” in the original Motion-JPEG specification.
 
 The Motion-JPEG format B header must be a multiple of 16 in size. When you add pad bytes to the header, set them to `0`.
 

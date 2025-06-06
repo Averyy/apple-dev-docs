@@ -1,6 +1,6 @@
 # Add a scheduled price change to an in-app purchase
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Create a scheduled price change for an in-app purchase.
@@ -16,8 +16,6 @@ Create a scheduled price change for an in-app purchase.
 
 > **Note**:  A base territory is now required when adding or creating a price for an in-app purchase.
 
- A base territory is now required when adding or creating a price for an in-app purchase.
-
 ## See Also
 
 - [Read in-app purchase price schedule information](get-v1-inapppurchasepriceschedules-_id_.md)
@@ -32,4 +30,4 @@ Create a scheduled price change for an in-app purchase.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-inapppurchasepriceschedules)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-inapppurchasepriceschedules)*

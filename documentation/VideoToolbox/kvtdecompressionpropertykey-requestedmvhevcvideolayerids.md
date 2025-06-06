@@ -28,8 +28,6 @@ The property is NULL by default. If this property is NULL, MV-HEVC ignores layer
 
 > **Note**:  In multiview decompression, a single video sample contains a single frame (with one PTS) that the system decodes to produce multiple images.
 
- In multiview decompression, a single video sample contains a single frame (with one PTS) that the system decodes to produce multiple images.
-
 
 ---
 

@@ -14,8 +14,6 @@ Improve your app’s performance by refactoring your code to take advantage of a
 
 > **Note**: This sample code project is associated with WWDC21 session [`10194: Swift Concurrency: Update a Sample App`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10194).
 
-This sample code project is associated with WWDC21 session [`10194: Swift Concurrency: Update a Sample App`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10194).
-
 Swift concurrency provides a standard set of language tools and techniques for concurrent programming. However, you may already have an existing project built with concurrency that uses other frameworks and techniques. You don’t have to convert all of your code all at once; instead, you can use specific refactoring techniques to convert your code one piece at time.
 
 This sample provides two separate versions of the Coffee Tracker app:

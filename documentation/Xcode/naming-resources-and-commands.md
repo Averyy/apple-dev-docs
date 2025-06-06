@@ -10,8 +10,6 @@ Resource labels and command debug groups are useful when debugging and profiling
 
 > **Note**: The properties and methods described here don’t affect the graphics-rendering or compute-processing behavior of your app.
 
-The properties and methods described here don’t affect the graphics-rendering or compute-processing behavior of your app.
-
 ##### Annotate Resources
 
 Many Metal objects provide a [`label`](https://developer.apple.com/documentation/Metal/MTLResource/label) property where you can assign a meaningful string. These labels appear in each Metal tool, allowing you to easily identify specific objects.
@@ -72,4 +70,4 @@ The following screenshot shows how the debug groups appear in Xcode’s Debug na
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/naming-resources-and-commands)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/naming-resources-and-commands)*

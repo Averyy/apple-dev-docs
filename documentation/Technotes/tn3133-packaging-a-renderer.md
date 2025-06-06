@@ -42,8 +42,6 @@ The `MySharedTypes` target contains the shared C structs within a header file. S
 
 > **Note**: A target cannot have source files from both Swift and C-family languages, but it’s OK to have Swift and Metal sources in the same target because SwiftPM treats Metal files as resource files.
 
-A target cannot have source files from both Swift and C-family languages, but it’s OK to have Swift and Metal sources in the same target because SwiftPM treats Metal files as resource files.
-
 Add the `MySharedTypes` target as a dependency of the `MyRenderer` target to access the shared C structs in the `MyRenderer` target.
 
 Here is a visual representation of the file structure described in the example above:
@@ -167,4 +165,4 @@ For more information about creating and applying a Swift Package Build Tool Plug
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3133-packaging-a-renderer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3133-packaging-a-renderer)*

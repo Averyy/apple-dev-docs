@@ -1,6 +1,6 @@
 # SCNPhysicsVehicleWheel
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: class
 
 The appearance and physical characteristics of an individual wheel associated with an physics vehicle behavior.
@@ -35,8 +35,6 @@ Because the [`SCNPhysicsVehicle`](scnphysicsvehicle.md) behavior that a wheel is
 The properties of a wheel define the geometry of its connection to the vehicle and simulate its size, traction, and suspension. You can change these properties after the wheel and the vehicle containing it have been added to the physics world. In this way, you can simulate effects such as variable suspension and flat tires.
 
 > **Note**:  Vehicles and their wheels have several properties measured in real-world units (meters, centimeters, and newtons) with default values that produce realistic behavior for vehicles of size similar to an average automobile. If you design your scene on a different scale, proportionally change the values of these properties to fit the desired behavior of your app or game.
-
- Vehicles and their wheels have several properties measured in real-world units (meters, centimeters, and newtons) with default values that produce realistic behavior for vehicles of size similar to an average automobile. If you design your scene on a different scale, proportionally change the values of these properties to fit the desired behavior of your app or game.
 
 ## Topics
 
@@ -96,4 +94,4 @@ The properties of a wheel define the geometry of its connection to the vehicle a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnphysicsvehiclewheel)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SceneKit/scnphysicsvehiclewheel)*

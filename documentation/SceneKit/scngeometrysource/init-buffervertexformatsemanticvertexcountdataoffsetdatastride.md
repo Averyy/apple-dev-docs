@@ -1,6 +1,6 @@
 # init(buffer:vertexFormat:semantic:vertexCount:dataOffset:dataStride:)
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: init
 
 Creates a geometry source whose vertex data resides in the specified Metal buffer, allowing modification through a Metal compute shader.
@@ -62,10 +62,6 @@ Then, to modify the buffer’s contents at render time, implement a scene render
 ```
 
 > **Note**:  Geometry sources backed by a Metal buffer are available only with SceneKit views (or other renderers) whose [`renderingAPI`](scnscenerenderer/renderingapi.md) property is [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md). Metal commands that modify the buffer’s contents must be enqueued from within one of the render loop methods defined in the [`SCNSceneRendererDelegate`](scnscenerendererdelegate.md) protocol. The result of attempting to modify a buffer at any other time is undefined.
-
- Geometry sources backed by a Metal buffer are available only with SceneKit views (or other renderers) whose [`renderingAPI`](scnscenerenderer/renderingapi.md) property is [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md).
-
-Metal commands that modify the buffer’s contents must be enqueued from within one of the render loop methods defined in the [`SCNSceneRendererDelegate`](scnscenerendererdelegate.md) protocol. The result of attempting to modify a buffer at any other time is undefined.
 
 ## Parameters
 

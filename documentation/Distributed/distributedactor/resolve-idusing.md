@@ -29,8 +29,6 @@ A remote distributed actor reference will forward all invocations through the sy
 
 > **Note**: Upon successful return, the returned actor’s [`id`](distributedactor/id.md) and [`actorSystem`](distributedactor/actorsystem-swift.property.md) properties will be equal to the values passed as parameters to this method.
 
-Upon successful return, the returned actor’s [`id`](distributedactor/id.md) and [`actorSystem`](distributedactor/actorsystem-swift.property.md) properties will be equal to the values passed as parameters to this method.
-
 ## Parameters
 
 - `id`: Identity uniquely identifying a, potentially remote, actor in the system

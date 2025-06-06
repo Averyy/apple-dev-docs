@@ -1,6 +1,6 @@
 # Requesting Authorization to Use Siri
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Request permission from the user for Siri and Maps to communicate with your app or Intents app extension.
 
@@ -9,8 +9,6 @@ Request permission from the user for Siri and Maps to communicate with your app 
 Siri can’t interact with your app or app extension until the user grants permission. Maps only interacts with your app extension, but as with Siri, only after the user authorizes it to do so. Request authorization from your iOS app, whether you’re handling intents in an app extension or in your app. When the user approves an authorization request from your iOS app, this grants permission for your iOS app, its Intents app extension, and your watchOS app.
 
 > **Note**:  You don’t need to request authorization if your app only supports actions in the Shortcuts app.
-
- You don’t need to request authorization if your app only supports actions in the Shortcuts app.
 
 ##### Configure Your App Target
 
@@ -27,8 +25,6 @@ Your app’s authorization status is [`INSiriAuthorizationStatus.notDetermined`]
 The user can approve or deny your app’s request for authorization, and can change your app’s authorization status later in the Settings app. The system remembers your app’s authorization status so that subsequent calls to the [`requestSiriAuthorization(_:)`](https://developer.apple.com/documentation/intents/inpreferences/requestsiriauthorization(_:)) method don’t prompt the user again.
 
 > **Note**:  Siri and Maps may assist in authorizing your app or Intents app extension when the user first tries to use an intent you support. Specifically, if the user interacts with your app or app extension and your app’s authorization status isn’t yet determined, Maps requests authorization automatically on your extension’s behalf.
-
- Siri and Maps may assist in authorizing your app or Intents app extension when the user first tries to use an intent you support. Specifically, if the user interacts with your app or app extension and your app’s authorization status isn’t yet determined, Maps requests authorization automatically on your extension’s behalf.
 
 ## See Also
 
@@ -66,4 +62,4 @@ The user can approve or deny your app’s request for authorization, and can cha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/requesting-authorization-to-use-siri)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/requesting-authorization-to-use-siri)*

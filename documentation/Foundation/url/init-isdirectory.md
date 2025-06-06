@@ -23,8 +23,6 @@ init?(_ path: FilePath, isDirectory: Bool)
 
 > **Note**:  This method avoids file system I/O to determine if the path is to a directory. When you know that information, prefer this method to initializers without the parameter.
 
- This method avoids file system I/O to determine if the path is to a directory. When you know that information, prefer this method to initializers without the parameter.
-
 ## Parameters
 
 - `path`: The location in the file system.

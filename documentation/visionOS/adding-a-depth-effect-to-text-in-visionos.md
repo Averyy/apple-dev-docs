@@ -93,8 +93,6 @@ The [`blur(radius:opaque:)`](https://developer.apple.com/documentation/DeviceAct
 
 > **Note**: This property doesn’t change the offset along the z-axis from `0.0`, which places the shadow view in the same plane as the window that contains the `ZStack`.
 
-This property doesn’t change the offset along the z-axis from `0.0`, which places the shadow view in the same plane as the window that contains the `ZStack`.
-
 ##### Stack the Text with Animations
 
 The `DepthTextView` arranges its view properties along its z-axis by adding a [`ZStack`](https://developer.apple.com/documentation/SwiftUI/ZStack) as the main view of its `body` property:
@@ -148,4 +146,4 @@ The `animateWithSpringEffect()` method creates a spring animation with `stiffnes
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/adding-a-depth-effect-to-text-in-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/adding-a-depth-effect-to-text-in-visionos)*

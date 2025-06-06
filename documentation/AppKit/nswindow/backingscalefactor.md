@@ -1,6 +1,6 @@
 # backingScaleFactor
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The backing scale factor.
@@ -24,8 +24,6 @@ There are some scenarios where an application that is resolution-aware may want 
 It is important to note that the value of this property does not represent anything concrete, such as pixel density or physical size, because it can vary based on the configured display mode. For example, the display may be in a mirrored configuration that is still high-resolution scaled, resulting in pixel geometry that may not match the native resolution of the display device.
 
 > **Note**:  For almost all common cases, developers should avoid using the value of [`backingScaleFactor`](nswindow/backingscalefactor.md) as an input to layout or drawing calculations. Developers should instead use the backing coordinate space conversion methods, because the resulting code will more likely work consistently and correctly under both standard and high-resolution operation.
-
- For almost all common cases, developers should avoid using the value of [`backingScaleFactor`](nswindow/backingscalefactor.md) as an input to layout or drawing calculations. Developers should instead use the backing coordinate space conversion methods, because the resulting code will more likely work consistently and correctly under both standard and high-resolution operation.
 
 ## See Also
 
@@ -51,4 +49,4 @@ It is important to note that the value of this property does not represent anyth
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow/backingscalefactor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow/backingscalefactor)*

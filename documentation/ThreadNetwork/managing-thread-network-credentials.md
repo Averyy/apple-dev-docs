@@ -1,6 +1,6 @@
 # Managing Thread network credentials
 
-**Framework**: ThreadNetwork
+**Framework**: Threadnetwork
 
 Store, delete, retrieve, and update Thread network credentials on your Apple device.
 
@@ -18,8 +18,6 @@ Retrieving preferred network credentials requires user consent. Before asking fo
 
 > **Note**: Retrieving preferred network credentials requires user consent.
 
-Retrieving preferred network credentials requires user consent.
-
 If you have previously cached preferred network credentials, call [`checkPreferredNetwork(forActiveOperationalDataset:completion:)`](thclient/checkpreferrednetwork(foractiveoperationaldataset:completion:).md) to verify that they match the preferred network credentials. If they don’t match, retrieve the preferred network credentials using [`retrievePreferredCredentials(_:)`](thclient/retrievepreferredcredentials(_:).md).
 
 ##### Retrieve Your Own Credentials
@@ -36,8 +34,6 @@ If your app detects a modification to the Thread credentials of a configured Bor
 
 > ❗ **Important**: When you store your Border Router credentials to iCloud Keychain using the Border Agent ID, that ID becomes a part of the preferred network. Any modifications that the Border Router makes using that Border Agent ID also modifies the preferred network credentials in iCloud Keychain.
 
-When you store your Border Router credentials to iCloud Keychain using the Border Agent ID, that ID becomes a part of the preferred network. Any modifications that the Border Router makes using that Border Agent ID also modifies the preferred network credentials in iCloud Keychain.
-
 If you want to change your Border Router credentials without affecting the preferred network credentials, delete the existing credentials in iCloud Keychain and then store the new credentials with a new Border Agent ID.
 
 ##### Detect a Modified Ssid
@@ -52,4 +48,4 @@ If a person changes the SSID of a Thread-capable Wi-Fi router, confirm that the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/threadnetwork/managing-thread-network-credentials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ThreadNetwork/managing-thread-network-credentials)*

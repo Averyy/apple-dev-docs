@@ -29,8 +29,6 @@ You can only read or sample resources in the specified heap. This method ignores
 
 > **Note**:  To track resource access and dependency hazards, you must use [`MTLFence`](mtlfence.md) objects.
 
- To track resource access and dependency hazards, you must use [`MTLFence`](mtlfence.md) objects.
-
 ## Parameters
 
 - `heaps`: The sets of heap that contain resources to mark as used.

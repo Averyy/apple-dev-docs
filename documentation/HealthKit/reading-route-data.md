@@ -1,6 +1,6 @@
 # Reading route data
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Access the user’s route for a workout.
 
@@ -105,8 +105,6 @@ store.execute(query)
 
 > **Note**:  Locations from the HealthKit store are accurate within 50 meters, but they may need additional smoothing before you can use them. For example, to produce clean lines when it’s plotting the route on a map.
 
- Locations from the HealthKit store are accurate within 50 meters, but they may need additional smoothing before you can use them. For example, to produce clean lines when it’s plotting the route on a map.
-
 ## See Also
 
 - [Creating a workout route](creating-a-workout-route.md)
@@ -129,4 +127,4 @@ store.execute(query)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/reading-route-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/reading-route-data)*

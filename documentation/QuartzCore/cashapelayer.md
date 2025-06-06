@@ -1,6 +1,6 @@
 # CAShapeLayer
 
-**Framework**: Core Animation  
+**Framework**: Quartzcore  
 **Kind**: class
 
 A layer that draws a cubic Bezier spline in its coordinate space.
@@ -59,8 +59,6 @@ The following figure shows the resulting shape layer.
 ![Composite path displayed in a shape layer](https://docs-assets.developer.apple.com/published/67723bba6f48e3e15851ddfb2c5a2a8c/media-2825196%402x.png)
 
 > **Note**:  Shape rasterization may favor speed over accuracy. For example, pixels with multiple intersecting path segments may not give exact results.
-
- Shape rasterization may favor speed over accuracy. For example, pixels with multiple intersecting path segments may not give exact results.
 
 ## Topics
 
@@ -123,4 +121,4 @@ The following figure shows the resulting shape layer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/cashapelayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/cashapelayer)*

@@ -25,8 +25,6 @@ To wait for an event to be signaled, call [`encodeWaitForEvent(_:value:)`](mtlco
 
 > **Note**:  You can only encode events outside command encoder boundaries, not between encoded commands of a command encoder.
 
- You can only encode events outside command encoder boundaries, not between encoded commands of a command encoder.
-
 ## See Also
 
 - [Implementing a Multistage Image Filter Using Heaps and Events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
@@ -51,4 +49,4 @@ To wait for an event to be signaled, call [`encodeWaitForEvent(_:value:)`](mtlco
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/about-synchronization-events)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/about-synchronization-events)*

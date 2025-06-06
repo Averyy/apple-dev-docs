@@ -1,6 +1,6 @@
 # Creating App Clip Codes
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Help users discover your App Clip by using an NFC-integrated or scan-only App Clip Code.
 
@@ -17,8 +17,6 @@ The image at the center of an App Clip Code icon lets users know how to interact
 In addition to providing a great launch experience for your App Clip, you can also use an App Clip Code to offer a context-aware augmented reality experience. For more information, see [`Interacting with App Clip Codes in AR`](interacting-with-app-clip-codes-in-ar.md).
 
 > **Note**:  Scanning App Clip Codes requires a device that runs iOS 14.3 or later.
-
- Scanning App Clip Codes requires a device that runs iOS 14.3 or later.
 
 Creating an App Clip Code requires the following tasks:
 
@@ -49,8 +47,6 @@ For more information, see [`Creating App Clip Codes with App Store Connect`](cre
 
 > **Note**:  You must be enrolled in the Apple Developer Program before you can download the App Clip Code Generator. For information about the Apple Developer Program, see [`How the Program Works`](https://developer.apple.comhttps://developer.apple.com/programs/how-it-works/).
 
- You must be enrolled in the Apple Developer Program before you can download the App Clip Code Generator. For information about the Apple Developer Program, see [`How the Program Works`](https://developer.apple.comhttps://developer.apple.com/programs/how-it-works/).
-
 ## See Also
 
 - [Preparing multiple App Clip Codes for production](preparing-multiple-app-clip-codes-for-production.md)
@@ -61,4 +57,4 @@ For more information, see [`Creating App Clip Codes with App Store Connect`](cre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/creating-app-clip-codes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/creating-app-clip-codes)*

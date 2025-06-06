@@ -14,8 +14,6 @@ An  turns the data in your chart into an audible representation by encoding the 
 
 > **Note**: Session 10122: [`Bring accessibility to charts in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10122)
 
-Session 10122: [`Bring accessibility to charts in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10122)
-
 ## Topics
 
 ### Essentials
@@ -56,4 +54,4 @@ Session 10122: [`Bring accessibility to charts in your app`](https://developer.a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/audio-graphs)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/audio-graphs)*

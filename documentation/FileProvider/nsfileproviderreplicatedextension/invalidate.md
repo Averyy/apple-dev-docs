@@ -1,6 +1,6 @@
 # invalidate()
 
-**Framework**: File Provider  
+**Framework**: Fileprovider  
 **Kind**: method  
 **Required**: Yes
 
@@ -23,8 +23,6 @@ func invalidate()
 Your implementation should perform any necessary cleanup so that the system can dismiss and deallocate the file provider.
 
 > **Note**:  Your extension must handle multiple active copies of the File Provider extension in the same process, for instance, if the user has several active domains, or when the system discards one instance while initiating another.
-
- Your extension must handle multiple active copies of the File Provider extension in the same process, for instance, if the user has several active domains, or when the system discards one instance while initiating another.
 
 ## See Also
 

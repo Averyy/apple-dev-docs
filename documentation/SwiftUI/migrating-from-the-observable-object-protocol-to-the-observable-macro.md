@@ -1,6 +1,6 @@
 # Migrating from the Observable Object protocol to the Observable macro
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Update your existing app to leverage the benefits of Observation in Swift.
 
@@ -22,8 +22,6 @@ To take advantage of these benefits in your app, you’ll discover how to replac
 
 > **Note**: Download this sample to see the migrated version of the sample app. To see the premigrated version, download the sample available in [`Monitoring data changes in your app`](monitoring-model-data-changes-in-your-app.md). You can also use the premigrated version to code along with this article.
 
-Download this sample to see the migrated version of the sample app. To see the premigrated version, download the sample available in [`Monitoring data changes in your app`](monitoring-model-data-changes-in-your-app.md). You can also use the premigrated version to code along with this article.
-
 ##### Use the Observable Macro
 
 To adopt [`Observation`](https://developer.apple.com/documentation/Observation) in an existing app, begin by replacing [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) in your data model type with the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro. The [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro generates source code at compile time that adds observation support to the type.
@@ -39,8 +37,6 @@ You don’t need to make a wholesale replacement of the [`ObservableObject`](htt
 You may notice slight behavioral differences in your app based on the tracking method. For instance, when tracking as [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()), SwiftUI updates a view only when an observable property changes and the view’s [`body`](view/body-8kl5o.md) reads the property directly. The view doesn’t update when observable properties not read by `body` changes. In contrast, a view updates when any published property of an [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) instance changes, even if the view doesn’t read the property that changes, when tracking as `ObservableObject`.
 
 > **Note**: To learn more about when SwiftUI updates views when observable properties change, see [`Managing model data in your app`](managing-model-data-in-your-app.md).
-
-To learn more about when SwiftUI updates views when observable properties change, see [`Managing model data in your app`](managing-model-data-in-your-app.md).
 
 ##### Migrate Other Source Code
 
@@ -108,4 +104,4 @@ However, if a view needs a binding to an observable type, replace [`ObservedObje
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/migrating-from-the-observable-object-protocol-to-the-observable-macro)*

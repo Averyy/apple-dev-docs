@@ -96,8 +96,6 @@ The test system records a test failure for each `XCTExpectFailure` call that did
 
 > **Note**:  Code coverage metrics include tests with expected failures. Consider this when evaluating code coverage and attempt to resolve issues as soon as possible.
 
- Code coverage metrics include tests with expected failures. Consider this when evaluating code coverage and attempt to resolve issues as soon as possible.
-
 ## Topics
 
 ### Expected Failures
@@ -136,4 +134,4 @@ The test system records a test failure for each `XCTExpectFailure` call that did
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xctest/expected-failures)*
+*[View on Apple Developer](https://developer.apple.com/documentation/XCTest/expected-failures)*

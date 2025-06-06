@@ -142,8 +142,6 @@ One of the most exciting features of visionOS is its ability to play 3D video al
 
 > **Note**: In iOS or tvOS, you typically present video in a full-screen presentation using the [`fullScreenCover(isPresented:onDismiss:content:)`](https://developer.apple.com/documentation/SwiftUI/View/fullScreenCover(isPresented:onDismiss:content:)) modifier. This API is available in visionOS; however, the recommended way to present the player for full-window playback is to set it as the root view of your app’s window group.
 
-In iOS or tvOS, you typically present video in a full-screen presentation using the [`fullScreenCover(isPresented:onDismiss:content:)`](https://developer.apple.com/documentation/SwiftUI/View/fullScreenCover(isPresented:onDismiss:content:)) modifier. This API is available in visionOS; however, the recommended way to present the player for full-window playback is to set it as the root view of your app’s window group.
-
 Destination Video’s `ContentView` displays the app’s library by default. It observes changes to the player model’s `presentation` property, which indicates whether the app requests inline or full-window playback. When the presentation state changes to `fullWindow`, the view redraws the UI to display the player view in place of the library.
 
 ```swift
@@ -276,4 +274,4 @@ With the player configured to use the group session, when the app loads new vide
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/destination-video)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/destination-video)*

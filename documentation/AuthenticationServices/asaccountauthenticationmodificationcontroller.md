@@ -1,6 +1,6 @@
 # ASAccountAuthenticationModificationController
 
-**Framework**: Authentication Services  
+**Framework**: Authenticationservices  
 **Kind**: class
 
 An object that performs a request to modify an account’s authentication properties.
@@ -24,8 +24,6 @@ class ASAccountAuthenticationModificationController
 #### Overview
 
 > **Note**:  This class ignores calls from Mac apps built with Mac Catalyst.
-
- This class ignores calls from Mac apps built with Mac Catalyst.
 
 ## Topics
 
@@ -68,4 +66,4 @@ class ASAccountAuthenticationModificationController
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/asaccountauthenticationmodificationcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/asaccountauthenticationmodificationcontroller)*

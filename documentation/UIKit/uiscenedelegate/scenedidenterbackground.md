@@ -1,6 +1,6 @@
 # sceneDidEnterBackground(_:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Tells the delegate that the scene is running in the background and is no longer onscreen.
@@ -30,8 +30,6 @@ In addition to calling this method, UIKit posts a [`didEnterBackgroundNotificati
 For more information about what to do when your app enters the background, see [`Preparing your UI to run in the background`](preparing-your-ui-to-run-in-the-background.md).
 
 > **Note**:  When you implement this method and enable scenes, UIKit calls this method but does not call the [`applicationDidEnterBackground(_:)`](uiapplicationdelegate/applicationdidenterbackground(_:).md) method on [`UIApplicationDelegate`](uiapplicationdelegate.md).
-
- When you implement this method and enable scenes, UIKit calls this method but does not call the [`applicationDidEnterBackground(_:)`](uiapplicationdelegate/applicationdidenterbackground(_:).md) method on [`UIApplicationDelegate`](uiapplicationdelegate.md).
 
 ## Parameters
 

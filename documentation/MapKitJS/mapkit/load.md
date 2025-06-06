@@ -1,6 +1,6 @@
 # load
 
-**Framework**: MapKit JS  
+**Framework**: Mapkitjs  
 **Kind**: method
 
 Tells MapKit JS which libraries to load.
@@ -17,8 +17,6 @@ void load();
 #### Discussion
 
 > **Note**:  The full bundle of MapKit JS doesn’t implement this method.
-
- The full bundle of MapKit JS doesn’t implement this method.
 
 ## See Also
 
@@ -40,4 +38,4 @@ void load();
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit/load)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit/load)*

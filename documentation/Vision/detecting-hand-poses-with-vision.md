@@ -14,8 +14,6 @@ Create a virtual drawing app by using Vision’s capability to detect hand poses
 
 > **Note**: This sample code project is associated with WWDC20 session [`10653: Detect Body and Hand Pose with Vision`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10653/).
 
-This sample code project is associated with WWDC20 session [`10653: Detect Body and Hand Pose with Vision`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10653/).
-
 ## See Also
 
 - [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
@@ -44,4 +42,4 @@ This sample code project is associated with WWDC20 session [`10653: Detect Body 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/detecting-hand-poses-with-vision)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/detecting-hand-poses-with-vision)*

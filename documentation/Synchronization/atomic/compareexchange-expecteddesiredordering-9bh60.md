@@ -39,8 +39,6 @@ atomic(self) { currentValue in
 
 > **Note**: This method implements a “strong” compare and exchange operation that does not permit spurious failures.
 
-This method implements a “strong” compare and exchange operation that does not permit spurious failures.
-
 ## Parameters
 
 - `expected`: The expected current value.

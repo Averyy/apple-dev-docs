@@ -23,8 +23,6 @@ Add a glossary by placing a property list containing the terms and definitions a
 
 > **Note**: Xcode includes a property list editor you can use to create property lists. For more information, see [`Edit property lists`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev3f399a2a6) in Xcode Help.
 
-Xcode includes a property list editor you can use to create property lists. For more information, see [`Edit property lists`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev3f399a2a6) in Xcode Help.
-
 The top-level key in a glossary’s property list is a dictionary named `Terms`. Inside that dictionary, nest a single dictionary for each term you want to define. The key for each nested dictionary is the name of the term you’re defining.
 
 ![A screen shot showing several terms defined inside the property list editor in Xcode.](https://docs-assets.developer.apple.com/published/be85d4ba0951638e976e6a427712c484/adding-a-glossary-to-a-playground-book-1%402x.png)

@@ -1,6 +1,6 @@
 # sceneWillEnterForeground(_:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Tells the delegate that the scene is about to begin running in the foreground and become visible to the user.
@@ -30,8 +30,6 @@ In addition to calling this method, UIKit posts a [`didActivateNotification`](ui
 For more information on what to do when your app is about to enter the foreground, see [`Preparing your UI to run in the foreground`](preparing-your-ui-to-run-in-the-foreground.md).
 
 > **Note**:  When you implement this method and enable scenes, UIKit calls this method but does not call the [`applicationWillEnterForeground(_:)`](uiapplicationdelegate/applicationwillenterforeground(_:).md) method on [`UIApplicationDelegate`](uiapplicationdelegate.md).
-
- When you implement this method and enable scenes, UIKit calls this method but does not call the [`applicationWillEnterForeground(_:)`](uiapplicationdelegate/applicationwillenterforeground(_:).md) method on [`UIApplicationDelegate`](uiapplicationdelegate.md).
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # SKProductStorePromotionController
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: class
 
 A product promotion controller for customizing the order and visibility of In-App Purchases per device.
@@ -27,8 +27,6 @@ class SKProductStorePromotionController
 For information about promoting In-App Purchases, see [`Promoting In-App Purchases`](promoting-in-app-purchases.md).
 
 > **Note**:  [`SKProductStorePromotionController`](skproductstorepromotioncontroller.md) and promoted In-App Purchases aren’t available to compatible iPad and iPhone apps running in visionOS.
-
- [`SKProductStorePromotionController`](skproductstorepromotioncontroller.md) and promoted In-App Purchases aren’t available to compatible iPad and iPhone apps running in visionOS.
 
 ## Topics
 
@@ -70,4 +68,4 @@ For information about promoting In-App Purchases, see [`Promoting In-App Purchas
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skproductstorepromotioncontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skproductstorepromotioncontroller)*

@@ -1,6 +1,6 @@
 # Customizing Image Transitions
 
-**Framework**: Core Image
+**Framework**: Coreimage
 
 Transition between images in creative ways using Core Image filters.
 
@@ -87,8 +87,6 @@ Adding a [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/
 4. In the update function, remove the link once time has expired.
 
 > **Note**: Adding a [`Timer`](https://developer.apple.com/documentation/foundation/timer) may seem like a logical strategy for stepping time, but the display link fires with greater precision in sync with screen redraws.
-
-Adding a [`Timer`](https://developer.apple.com/documentation/foundation/timer) may seem like a logical strategy for stepping time, but the display link fires with greater precision in sync with screen redraws.
 
 ###### 2953691
 

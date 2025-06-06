@@ -1,6 +1,6 @@
 # Managing in-app purchases
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Learn how to create and manage in-app purchases with the App Store Connect API.
 
@@ -83,8 +83,6 @@ Editing an in-app purchase is similar, but you use `PATCH /v2/inAppPurchases/{id
 
 > **Note**:  The `familySharable` field is editable only for auto-renewable subscriptions and non-consumable in-app purchases.
 
- The `familySharable` field is editable only for auto-renewable subscriptions and non-consumable in-app purchases.
-
 ##### Localize Metadata for Your in App Purchase
 
 To make your in-app purchase ready for consumption, add localized display names and descriptions. Use `POST /v1/inAppPurchaseLocalizations` ([`List All Localizations for an In-App Purchase`](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)) with a payload that describes the locale, the localized display name, and the localized description for the in-app purchase.
@@ -139,8 +137,6 @@ GET /v2/inAppPurchases/{id}/pricePoints?filter[territory]=USA&include=territory&
 ```
 
 > 💡 **Tip**:  Filter the API endpoint to reduce the amount of data you need to review.
-
- Filter the API endpoint to reduce the amount of data you need to review.
 
 Here’s an example response, truncated for clarity:
 
@@ -198,8 +194,6 @@ Note that the ID for the `4.99` price point is `NjQ0NjQ1MjYxNV91c181`. You use t
 To add a price point to an in-app purchase, use `POST /v1/inAppPurchasePriceSchedules` ([`Add a scheduled price change to an in-app purchase`](post-v1-inapppurchasepriceschedules.md)). The first ID is the ID of the in-app purchase, and the final ID is that of the price point.
 
 > ❗ **Important**:  Review carefully because once a price increase goes into effect, your change can’t be reverted. Be sure to review information about price increases and changes at [`App Store Connect for iPhone and iPad`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/).
-
- Review carefully because once a price increase goes into effect, your change can’t be reverted. Be sure to review information about price increases and changes at [`App Store Connect for iPhone and iPad`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/).
 
 Here’s an example payload:
 
@@ -264,8 +258,6 @@ For more information, see [`Uploading Assets to App Store Connect`](uploading-as
 After you upload your screenshot for App Review, the next step is submission.
 
 > ❗ **Important**:  You need to submit your first in-app purchase with an app binary submission. This must be done through [`appstoreconnect.apple.com`](https://developer.apple.comhttps://appstoreconnect.apple.com). For subsequent in-app purchases, you can submit using the following API endpoint without an associated app binary submission.
-
- You need to submit your first in-app purchase with an app binary submission. This must be done through [`appstoreconnect.apple.com`](https://developer.apple.comhttps://appstoreconnect.apple.com). For subsequent in-app purchases, you can submit using the following API endpoint without an associated app binary submission.
 
 If this isn’t your first in-app purchase, use `POST /v1/inAppPurchaseSubmissions` ([`Create a Review Submission for an In-App Purchase`](post-v1-inapppurchasesubmissions.md)) with a payload like this:
 
@@ -620,4 +612,4 @@ For more information on creating and editing in-app purchases, see [`Overview fo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/managing-in-app-purchases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/managing-in-app-purchases)*

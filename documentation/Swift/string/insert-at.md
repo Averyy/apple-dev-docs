@@ -26,8 +26,6 @@ Calling this method invalidates any existing indices for use with this string.
 
 > **Note**: O(), where  is the length of the string.
 
-O(), where  is the length of the string.
-
 ## Parameters
 
 - `newElement`: The new character to insert into the string.

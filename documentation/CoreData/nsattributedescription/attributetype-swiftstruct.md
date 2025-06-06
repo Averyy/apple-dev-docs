@@ -1,6 +1,6 @@
 # NSAttributeDescription.AttributeType
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: struct
 
 The types of attributes that Core Data supports.
@@ -43,8 +43,6 @@ Core Data attribute types explicitly distinguish between bit size. This allows t
 | Undefined | — | — | — |
 
 > **Note**:  If your application uses BLOBs (binary large objects), such as image and sound files, you can choose to store their data in a location that’s external to the persistent store.
-
- If your application uses BLOBs (binary large objects), such as image and sound files, you can choose to store their data in a location that’s external to the persistent store.
 
 ## Topics
 

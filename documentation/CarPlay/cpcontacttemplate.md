@@ -1,6 +1,6 @@
 # CPContactTemplate
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: class
 
 A template that displays information about a person or a business.
@@ -25,8 +25,6 @@ When creating a contact template, you provide an instance of [`CPContact`](cpcon
 To display a contact template, call your interface controller’s [`pushTemplate(_:animated:completion:)`](cpinterfacecontroller/pushtemplate(_:animated:completion:).md) method to push it onto the navigation hierarchy, or [`presentTemplate(_:animated:completion:)`](cpinterfacecontroller/presenttemplate(_:animated:completion:).md) to present it modally.
 
 > **Note**:  `CPContactTemplate` is only available in apps that have the communication or navigation entitlements.
-
- `CPContactTemplate` is only available in apps that have the communication or navigation entitlements.
 
 ## Topics
 
@@ -57,4 +55,4 @@ To display a contact template, call your interface controller’s [`pushTemplate
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpcontacttemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpcontacttemplate)*

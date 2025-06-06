@@ -1,6 +1,6 @@
 # requestDocument(_:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Presents a sheet to read a mobile document and returns the relevant response.
@@ -30,8 +30,6 @@ A [`Response`](mobiledocumentrequest/response.md) if the request was successful.
 Call this method to begin requesting data contained in a mobile document. This method displays a system-provided sheet with instructions on what the mobile document holder needs to do. This UI remains onscreen until the system reads the person’s mobile document, you cancel the task, or an error occurs.
 
 > **Note**: This method throws a [`MobileDocumentReaderError`](mobiledocumentreadererror.md) if a mobile document request error occurs.
-
-This method throws a [`MobileDocumentReaderError`](mobiledocumentreadererror.md) if a mobile document request error occurs.
 
 ## Parameters
 

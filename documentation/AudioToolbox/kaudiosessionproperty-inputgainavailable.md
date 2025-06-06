@@ -1,6 +1,6 @@
 # kAudioSessionProperty_InputGainAvailable
 
-**Framework**: Audio Toolbox  
+**Framework**: Audiotoolbox  
 **Kind**: var
 
 A read-only `UInt32` value that indicates whether or not audio input gain adjustment is available, where a nonzero value means adjustment is available.
@@ -21,8 +21,6 @@ var kAudioSessionProperty_InputGainAvailable: Int { get }
 #### Discussion
 
 > **Note**:  Some audio inputs on some devices do not support gain adjustment. You must check this property’s value before attempting to set audio input gain.
-
- Some audio inputs on some devices do not support gain adjustment. You must check this property’s value before attempting to set audio input gain.
 
 ## See Also
 

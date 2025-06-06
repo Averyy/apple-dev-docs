@@ -134,8 +134,6 @@ private var initialVolumeSize: Size3D = Size3D(width: 900, height: 500, depth: 9
 
 > **Note**: To create a volume with fixed style, don’t specify a default size. Instead, use [`frame(minDepth:idealDepth:maxDepth:alignment:)`](https://developer.apple.com/documentation/SwiftUI/View/frame(minDepth:idealDepth:maxDepth:alignment:)) on the volume’s root view and pass the same value for `minDepth`, `idealDepth`, and `maxDepth`.
 
-To create a volume with fixed style, don’t specify a default size. Instead, use [`frame(minDepth:idealDepth:maxDepth:alignment:)`](https://developer.apple.com/documentation/SwiftUI/View/frame(minDepth:idealDepth:maxDepth:alignment:)) on the volume’s root view and pass the same value for `minDepth`, `idealDepth`, and `maxDepth`.
-
 By default, when a volume changes size, the size of its contents don’t scale with it. BOT-anist’s contents do resize with the volume, which it accomplishes using the [`scaleEffect(_:anchor:)`](https://developer.apple.com/documentation/SwiftUI/View/scaleEffect(_:anchor:)-7q7as) modifier.
 
 ```swift
@@ -227,8 +225,6 @@ While skeletal animations are an incredibly powerful and useful tool, certain ty
 To access blend shapes, use  [`BlendShapeWeightsComponent`](https://developer.apple.com/documentation/RealityKit/BlendShapeWeightsComponent). You can create blend shapes and set their values procedurally but, more often, you create blend shapes and blend shape animations using a 3D modeling tool, then store them in the model’s USDZ file. RealityKit automatically creates a [`BlendShapeWeightsComponent`](https://developer.apple.com/documentation/RealityKit/BlendShapeWeightsComponent) for any model entity it loads from a USDZ file that contains blend shapes. It also adds any blend shape animations in the USDZ file to the entity’s [`AnimationLibraryComponent`](https://developer.apple.com/documentation/RealityKit/AnimationLibraryComponent).
 
 > **Note**: Some software uses different terms when referring to per-vertex offset data. In addition to blend shape, you may also find the same functionality referred to as  or . All of these export to USDZ files as blend shapes and work identically.
-
-Some software uses different terms when referring to per-vertex offset data. In addition to blend shape, you may also find the same functionality referred to as  or . All of these export to USDZ files as blend shapes and work identically.
 
 To animate the plants growing, BOT-anist uses blend shape animations created in a 3D modeling program and stored in the model’s USDZ file. It uses the same approach to animate the celebratory dancing the flowers do once the robot has planted them all. Each type of plant has its own blend shapes and blend shape animations to show the plant growing and celebrating.
 
@@ -358,4 +354,4 @@ component.headEntity.setScale(previousHeadScale, relativeTo: skeleton)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/bot-anist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/bot-anist)*

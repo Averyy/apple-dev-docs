@@ -14,8 +14,6 @@ ATS operates by default for apps linked against the iOS 9.0 or macOS 10.11 SDKs 
 
 > **Note**:  If you link your app against an SDK older than iOS 9.0 or macOS 10.11, ATS is disabled no matter which version of the operating system your app runs on.
 
- If you link your app against an SDK older than iOS 9.0 or macOS 10.11, ATS is disabled no matter which version of the operating system your app runs on.
-
 ##### Prefer High Level Frameworks in Your App
 
 The system enforces ATS when you use the standard [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system). Instances of [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) automatically negotiate the most secure connection available from the server. The only action your app must take is to use secure URLs, like those beginning with `https`. Otherwise, ATS denies the connection and prints a console message:
@@ -47,15 +45,11 @@ ATS requires all of these things, and then provides extended security checks:
 
 > **Note**:  [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) automatically handles server trust evaluation for you, but enables you to customize the process, for example to extend trust to a self-signed certificate embedded in your app, or to bypass certificate expiry. When ATS is enabled, you can no longer loosen trust evaluation requirements that way, but you can still tighten them—for example, to implement certificate pinning. For more information, see [`Performing manual server trust authentication`](https://developer.apple.com/documentation/Foundation/performing-manual-server-trust-authentication).
 
- [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) automatically handles server trust evaluation for you, but enables you to customize the process, for example to extend trust to a self-signed certificate embedded in your app, or to bypass certificate expiry. When ATS is enabled, you can no longer loosen trust evaluation requirements that way, but you can still tighten them—for example, to implement certificate pinning. For more information, see [`Performing manual server trust authentication`](https://developer.apple.com/documentation/Foundation/performing-manual-server-trust-authentication).
-
 ##### Configure Exceptions Only When Needed Prefer Server Fixes
 
 ATS disallows a connection if the server fails to meet one of the security checks discussed in the previous section. Your best response is to update the server. If you can’t do that for some reason, you can specify exceptions in your app to disable one or more aspects of ATS.
 
 > ❗ **Important**:  It’s always better to fix the server when faced with an ATS failure. Exceptions reduce the security of your app. Some also require justification when submitting an app to the App Store, as described in the next section.
-
- It’s always better to fix the server when faced with an ATS failure. Exceptions reduce the security of your app. Some also require justification when submitting an app to the App Store, as described in the next section.
 
 You configure ATS exceptions by providing a dictionary as the value for the optional [`NSAppTransportSecurity`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity) key in your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file. The dictionary has the following structure, where all keys are optional:
 
@@ -91,8 +85,6 @@ You might only need to limit your ATS exception to a single domain. For example,
 
 > **Note**:  Global exceptions don’t apply to any domains that you add to the [`NSExceptionDomains`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSExceptionDomains) dictionary. So you can invert the previous example—allowing insecure traffic on all domains  `example.com`—by placing [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoads) at the top level, and including an empty `example.com` dictionary as an exception domain.
 
- Global exceptions don’t apply to any domains that you add to the [`NSExceptionDomains`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSExceptionDomains) dictionary. So you can invert the previous example—allowing insecure traffic on all domains  `example.com`—by placing [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoads) at the top level, and including an empty `example.com` dictionary as an exception domain.
-
 You can use the `nscurl` command line tool to connect to a server using different combinations of ATS exceptions. This helps you quickly narrow down the source of any ATS failures you have and figure out what exceptions you need. See [`Identifying the Source of Blocked Connections`](identifying-the-source-of-blocked-connections.md) for details.
 
 ##### Provide Justification for Exceptions
@@ -116,8 +108,6 @@ When submitting your app to the App Store, provide sufficient information for th
 
 > ❗ **Important**:  Always look for a way to avoid using exceptions as a first recourse. If you must use an exception, make it as limited in scope as possible.
 
- Always look for a way to avoid using exceptions as a first recourse. If you must use an exception, make it as limited in scope as possible.
-
 ## Topics
 
 ### Evaluation
@@ -130,4 +120,4 @@ When submitting your app to the App Store, provide sufficient information for th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/preventing-insecure-network-connections)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/preventing-insecure-network-connections)*

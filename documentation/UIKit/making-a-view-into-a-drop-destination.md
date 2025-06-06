@@ -1,6 +1,6 @@
 # Making a view into a drop destination
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Adopt drop interaction APIs to selectively consume dragged content.
 
@@ -13,8 +13,6 @@ Adopt drop interaction APIs to selectively consume dragged content.
 By implementing a drop interaction delegate ([`UIDropInteractionDelegate`](uidropinteractiondelegate.md)) for a view, you enable that view to accept dropped items.
 
 > **Note**:  The [`UITextView`](uitextview.md), [`UITableView`](uitableview.md), and [`UICollectionView`](uicollectionview.md) classes each provide their own, specialized support for consuming drag items. See these classes for more information.
-
- The [`UITextView`](uitextview.md), [`UITableView`](uitableview.md), and [`UICollectionView`](uicollectionview.md) classes each provide their own, specialized support for consuming drag items. See these classes for more information.
 
 ##### Enable a View As a Drop Destination
 
@@ -85,8 +83,6 @@ The [`dropInteraction(_:performDrop:)`](uidropinteractiondelegate/dropinteractio
 
 > **Note**:  If you don’t employ the [`loadObjects(ofClass:completion:)`](uidropsession/loadobjects(ofclass:completion:).md) convenience method as shown above, which automatically employs the main thread, explicitly dispatch UI work to the main thread. For example, you can use the `DispatchQueue.main.async` function.
 
- If you don’t employ the [`loadObjects(ofClass:completion:)`](uidropsession/loadobjects(ofclass:completion:).md) convenience method as shown above, which automatically employs the main thread, explicitly dispatch UI work to the main thread. For example, you can use the `DispatchQueue.main.async` function.
-
 ##### Understand a Drop Destination in Context
 
 When the touch point for a drop session moves over a view that you’ve configured as a drop destination, the system initiates a conversation with the drop interaction delegate. This conversation gives your app opportunities to accept or reject the drop, to prepare for consuming the drag items, and to update your model and UI, as shown here:
@@ -115,4 +111,4 @@ The figure above depicts the steps for consuming a drag item, in context:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/making-a-view-into-a-drop-destination)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/making-a-view-into-a-drop-destination)*

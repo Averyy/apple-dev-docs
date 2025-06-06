@@ -24,8 +24,6 @@ init<S>(_ scalars: S) where S : Sequence, Self.Scalar == S.Element
 
 > **Note**: `scalars` must have the same number of elements as the vector type.
 
-`scalars` must have the same number of elements as the vector type.
-
 ## Parameters
 
 - `scalars`: The elements to use in the vector.

@@ -1,6 +1,6 @@
 # SCNetworkConnectionStart(_:_:_:)
 
-**Framework**: System Configuration  
+**Framework**: Systemconfiguration  
 **Kind**: func
 
 Starts the connection process for the specified network connection.
@@ -23,8 +23,6 @@ func SCNetworkConnectionStart(_ connection: SCNetworkConnection, _ userOptions: 
 The connection process is asynchronous and this function returns immediately. The connection status can be obtained by polling or by callback. The connection is made with the default settings from the administrator. Some of the settings can be overridden for the duration of the connection. These are specified in an options dictionary. The options dictionary uses the same format as a network service defined in the system configuration preferences schema.
 
 > **Note**:  Starting and stopping of connections is implicitly arbitrated. Calling `SCNetworkConnectionStart` on a connection already started indicates that the application has interest in the connection and it shouldn’t be stopped by anyone else.
-
- Starting and stopping of connections is implicitly arbitrated. Calling `SCNetworkConnectionStart` on a connection already started indicates that the application has interest in the connection and it shouldn’t be stopped by anyone else.
 
 ## Parameters
 

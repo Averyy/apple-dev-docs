@@ -1,6 +1,6 @@
 # Specifying prices for Advanced Commerce SKUs
 
-**Framework**: Advanced Commerce API
+**Framework**: Advancedcommerceapi
 
 Provide prices for SKUs with the supported number of decimal places, in milliunits of currency.
 
@@ -36,8 +36,6 @@ To determine a price in milliunits, multiply the price by 1000.  One unit of a c
 
 > **Note**: The payment sheet and other customer communications automatically display prices in the standard format, not in milliunits.
 
-The payment sheet and other customer communications automatically display prices in the standard format, not in milliunits.
-
 ##### Use the Supported Number of Decimal Places for Prices
 
 The App Store supports either zero or two decimal places for prices, depending on the currency.
@@ -50,8 +48,6 @@ The following table shows examples of valid and invalid prices, based on the num
 | JPY | 0 | 310  (310000) | 310.95  (310950) |
 
 > ❗ **Important**: Don’t exceed the supported number of decimal places when you supply a price in the Advanced Commerce API. If your API call includes more decimal digits on a price than its currency supports, the system doesn’t display the payment sheet and fails with an error.
-
-Don’t exceed the supported number of decimal places when you supply a price in the Advanced Commerce API. If your API call includes more decimal digits on a price than its currency supports, the system doesn’t display the payment sheet and fails with an error.
 
 ##### Look Up the Supported Number of Decimal Places By Currency Code
 
@@ -119,4 +115,4 @@ The following currencies support two decimal places:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/prices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/prices)*

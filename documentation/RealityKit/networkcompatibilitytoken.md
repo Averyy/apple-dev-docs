@@ -1,6 +1,6 @@
 # NetworkCompatibilityToken
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: class
 
 An opaque token used to check the networking compatibility between two peers in a multipeer connection.
@@ -27,8 +27,6 @@ Client apps send a copy of their token to the host when attempting to connect to
 A client running a [`MCNearbyServiceAdvertiser`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceAdvertiser), for example, writes its own token into its [`discoveryInfo`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceAdvertiser/discoveryInfo) dictionary. When the host (running a [`MCNearbyServiceBrowser`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceBrowser)) discovers that client, it deserializes the client’s token from the `discoverInfo` dictionary and uses it to check compatibility before inviting the client to the [`MCSession`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSession).
 
 > **Note**: Even if two peers are compatible, scene synchronization can fail for other reasons, such as packet corruption or a poor network connection.
-
-Even if two peers are compatible, scene synchronization can fail for other reasons, such as packet corruption or a poor network connection.
 
 ## Topics
 
@@ -67,4 +65,4 @@ Even if two peers are compatible, scene synchronization can fail for other reaso
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/networkcompatibilitytoken)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/networkcompatibilitytoken)*

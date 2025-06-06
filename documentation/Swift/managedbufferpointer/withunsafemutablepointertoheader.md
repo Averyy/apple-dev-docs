@@ -24,8 +24,6 @@ func withUnsafeMutablePointerToHeader<E, R>(_ body: (UnsafeMutablePointer<Header
 
 > **Note**: This pointer is valid only for the duration of the call to `body`.
 
-This pointer is valid only for the duration of the call to `body`.
-
 ## See Also
 
 - [func withUnsafeMutablePointerToElements<E, R>((UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](managedbufferpointer/withunsafemutablepointertoelements(_:).md)

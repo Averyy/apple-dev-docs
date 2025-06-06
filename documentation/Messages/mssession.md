@@ -20,8 +20,6 @@ class MSSession
 
 > **Note**:  The [`MSSession`](mssession.md) class does not declare any instance methods or properties. iMessage apps use [`MSSession`](mssession.md) objects to identify and track updatable messages.
 
- The [`MSSession`](mssession.md) class does not declare any instance methods or properties. iMessage apps use [`MSSession`](mssession.md) objects to identify and track updatable messages.
-
 [`MSMessage`](msmessage.md) objects associated with a session receive the following treatment in the transcript:
 
 - The first time a session is used, the message appears normally in the transcript.
@@ -88,4 +86,4 @@ The Messages app updates the message in the transcript as soon as the user taps 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/messages/mssession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Messages/mssession)*

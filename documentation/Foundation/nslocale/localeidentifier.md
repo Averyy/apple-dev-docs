@@ -28,8 +28,6 @@ Use [`localizedString(forIdentifier:)`](locale/localizedstring(foridentifier:).m
 
 > **Note**:  The value held in the property may differ from the identifier used to initialize the locale because [`NSLocale`](nslocale.md) may canonicalize it during initialization.
 
- The value held in the property may differ from the identifier used to initialize the locale because [`NSLocale`](nslocale.md) may canonicalize it during initialization.
-
 This property contains the same value returned by the [`object(forKey:)`](nslocale/object(forkey:).md) method when passing the [`identifier`](nslocale/key/identifier.md) key.
 
 ## See Also

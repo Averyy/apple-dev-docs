@@ -34,8 +34,6 @@ If [`isEligibleForSearch`](nsuseractivity/iseligibleforsearch.md) is [`true`](ht
 
 > **Note**:  The scheme of the [`webpageURL`](nsuseractivity/webpageurl.md) must be `http` or `https`. Any other scheme throws an exception.
 
- The scheme of the [`webpageURL`](nsuseractivity/webpageurl.md) must be `http` or `https`. Any other scheme throws an exception.
-
 ## See Also
 
 - [var referrerURL: URL?](nsuseractivity/referrerurl.md)

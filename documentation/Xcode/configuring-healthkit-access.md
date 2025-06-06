@@ -16,15 +16,11 @@ Follow the steps in [`Add a capability`](adding-capabilities-to-your-app#Add-a-c
 
 > **Note**: The HealthKit capability is available for iOS and watchOS apps. watchOS apps can only access certain health data. Clinical Health Records aren’t accessible by watchOS apps.
 
-The HealthKit capability is available for iOS and watchOS apps. watchOS apps can only access certain health data. Clinical Health Records aren’t accessible by watchOS apps.
-
 ![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from HealthKit to MDM Managed Associated Domains, and the HealthKit capability is in a selected state. The text on the information pane explains that, by enabling HealthKit, your app, with the user’s permission, is able to store and retrieve personal health information.](https://docs-assets.developer.apple.com/published/6900f466c38e7fe44766968a62821d44/healthkit%402x.png)
 
 After you add the HealthKit capability, Xcode links the [`HealthKit`](https://developer.apple.com/documentation/HealthKit) framework to your target and updates the target’s entitlements file to include the [`HealthKit Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.healthkit). If Xcode automatically manages the signing of your app, it also enables HealthKit for your app’s App ID.
 
 > **Note**: If you later remove the HealthKit capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable HealthKit.
-
-If you later remove the HealthKit capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable HealthKit.
 
 ##### Request Access to the Users Health Data
 
@@ -92,4 +88,4 @@ Xcode adds the [`com.apple.developer.healthkit.background-delivery`](https://dev
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-healthkit-access)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-healthkit-access)*

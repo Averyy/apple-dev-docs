@@ -1,6 +1,6 @@
 # Transforming entities between RealityKit coordinate spaces
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Move an entity between a volumetric window and an immersive space using coordinate space transformations.
 
@@ -16,8 +16,6 @@ The article describes how you can move entities between these different types by
 
 > **Note**: For more information about the different types of spaces available in visionOS, watch the WWDC24 session, [`Dive deep into volumes and immersive spaces`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10153/).
 
-For more information about the different types of spaces available in visionOS, watch the WWDC24 session, [`Dive deep into volumes and immersive spaces`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10153/).
-
 One example of wanting to do this could be a shopping app that displays content within a volumetric window. A person may want to move that content outside of the window, and into their surroundings (an immersive space), to compare multiple items with each other. The person using this app would expect its size to remain consistent, and have no disconnect between spaces.
 
 RealityKit has two named coordinate spaces:
@@ -30,8 +28,6 @@ The scene coordinate space has its origin at the center-back of the volumetric w
 The sample code seamlessly moves an entity from a volumetric window to an immersive space using the [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) method.
 
 > **Note**: Alternatively you could use [`transform(from:to:)`](realitycoordinatespaceconverting/transform(from:to:)-60jfs.md) method as shown in [`Dive deep into volumes and immersive spaces`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10153/?time=1178)
-
-Alternatively you could use [`transform(from:to:)`](realitycoordinatespaceconverting/transform(from:to:)-60jfs.md) method as shown in [`Dive deep into volumes and immersive spaces`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10153/?time=1178)
 
 The sample code creates a cube in a volumetric window and moves the cube to an immersive space and back.
 
@@ -112,8 +108,6 @@ The `faceCulling` property of the material is set to `front` so that the bounds 
 Get the transform matrix of the entity relative to the open immersive space calling the [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) method.
 
 > **Note**: When using the the [`Entity.CoordinateSpaceReference.immersiveSpace`](entity/coordinatespacereference/immersivespace.md) as the value for the argument in the [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) method, you will need to ensure that an immersive space is open and the immersive view has a [`RealityView`](realityview.md) in it. Otherwise the method will return nil.
-
-When using the the [`Entity.CoordinateSpaceReference.immersiveSpace`](entity/coordinatespacereference/immersivespace.md) as the value for the argument in the [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) method, you will need to ensure that an immersive space is open and the immersive view has a [`RealityView`](realityview.md) in it. Otherwise the method will return nil.
 
 Make the cube a subentity of the `immersiveSpaceRootEntity`, which is an entity at the root of the immersive space. Set the transform matrix of the entity relative to it’s container entity calling the [`setTransformMatrix(_:relativeTo:)`](entity/settransformmatrix(_:relativeto:).md) method.
 
@@ -227,4 +221,4 @@ The color of the cube changes from red back to blue, indicating that it’s in t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/transforming-entities-between-realitykit-coordinate-spaces)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/transforming-entities-between-realitykit-coordinate-spaces)*

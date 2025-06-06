@@ -25,8 +25,6 @@ Widgets can support one or more sizes, giving users the flexibility to configure
 
 > **Note**: The sizes of widgets may vary across devices. Your widget content should be flexible and avoid using fixed values.
 
-The sizes of widgets may vary across devices. Your widget content should be flexible and avoid using fixed values.
-
 You specify the sizes your widget supports using the [`supportedFamilies(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supportedFamilies(_:)) property modifier when defining your widget’s configuration.
 
 ```swift
@@ -114,4 +112,4 @@ Use the [`WidgetFamily`](widgetfamily.md) value to return the appropriate conten
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/widgetfamily)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/widgetfamily)*

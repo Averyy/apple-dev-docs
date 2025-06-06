@@ -1,6 +1,6 @@
 # getBytes(_:fromOffset:length:error:)
 
-**Framework**: Assets Library  
+**Framework**: Assetslibrary  
 **Kind**: method
 
 Copies a specified range of bytes into a given buffer.
@@ -25,8 +25,6 @@ The number of bytes actually written to `buffer`. The number of bytes read will 
 This method returns the biggest, best representation available.
 
 > **Note**:  In iOS 8 and later, use the Photos framework to access different versions and sizes of a photo asset. See [`PHImageManager`](https://developer.apple.com/documentation/Photos/PHImageManager).
-
- In iOS 8 and later, use the Photos framework to access different versions and sizes of a photo asset. See [`PHImageManager`](https://developer.apple.com/documentation/Photos/PHImageManager).
 
 ## Parameters
 

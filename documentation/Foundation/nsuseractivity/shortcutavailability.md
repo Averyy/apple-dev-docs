@@ -26,8 +26,6 @@ If none of the availability options apply to your intent, use the empty set. The
 
 > **Note**:  To access the `suggestedInvocationPhrase` property, import the Intents framework.
 
- To access the `suggestedInvocationPhrase` property, import the Intents framework.
-
 ## See Also
 
 - [var isEligibleForPrediction: Bool](nsuseractivity/iseligibleforprediction.md)

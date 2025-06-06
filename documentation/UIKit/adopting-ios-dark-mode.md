@@ -1,6 +1,6 @@
 # Adopting iOS Dark Mode
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Adopt Dark Mode in your iOS app by using dynamic colors and visual effects.
 
@@ -14,8 +14,6 @@ Adopt Dark Mode in your iOS app by using dynamic colors and visual effects.
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`214: Implementing Dark Mode on iOS`](https://developer.apple.comhttps://developer.apple.com/wwdc19/214).
 
-This sample code project is associated with WWDC 2019 session [`214: Implementing Dark Mode on iOS`](https://developer.apple.comhttps://developer.apple.com/wwdc19/214).
-
 ## See Also
 
 - [Supporting Dark Mode in your interface](supporting-dark-mode-in-your-interface.md)
@@ -24,4 +22,4 @@ This sample code project is associated with WWDC 2019 session [`214: Implementin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/adopting-ios-dark-mode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/adopting-ios-dark-mode)*

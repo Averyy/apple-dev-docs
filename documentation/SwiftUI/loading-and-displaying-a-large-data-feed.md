@@ -1,6 +1,6 @@
 # Loading and Displaying a Large Data Feed
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 
@@ -22,8 +22,6 @@ To load the USGS JSON feed, perform either of the following:
 The app will load the requested data on the default delegate queue of [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession), which is an operation queue that runs in the background. After the feed is downloaded and the session data task completes, the app continues working on this queue to import the large number of feed elements to the store without blocking the main queue.
 
 > **Note**: This sample code project is associated with WWDC21 session [`10017: Bring Core Data Concurrency to Swift and SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10017/).
-
-This sample code project is associated with WWDC21 session [`10017: Bring Core Data Concurrency to Swift and SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10017/).
 
 ##### 3865210
 
@@ -123,8 +121,6 @@ After merging changes from the last transaction, the sample needs to store the t
 When apps fetch or create objects in a context, Core Data caches the object to avoid a round trip to the store file when the app uses those objects again. However, that approach grows the memory footprint of an app as it processes more and more objects, and can eventually lead to low-memory warnings or app termination on iOS. `NSBatchInsertRequest` doesn’t obviously increase an app’s memory footprint because it doesn’t load data into memory.
 
 > **Note**: Apps targeted to run on a system earlier than iOS 13 or macOS 10.15 need to avoid memory footprint growing by processing the objects in batches and calling [`reset()`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/reset()) to reset the context after each batch.
-
-Apps targeted to run on a system earlier than iOS 13 or macOS 10.15 need to avoid memory footprint growing by processing the objects in batches and calling [`reset()`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/reset()) to reset the context after each batch.
 
 The sample sets the `viewContext`’s [`automaticallyMergesChangesFromParent`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/automaticallymergeschangesfromparent) property to `false` to prevent Core Data from automatically merging changes every time the background context is saved.
 

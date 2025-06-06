@@ -31,11 +31,7 @@ Equivalent to calling `superDecoder(forKey:)` with `Key(stringValue: "super", in
 
 > **Note**: `DecodingError.keyNotFound` if `self` does not have an entry for the default `super` key.
 
-`DecodingError.keyNotFound` if `self` does not have an entry for the default `super` key.
-
 > **Note**: `DecodingError.valueNotFound` if `self` has a null entry for the default `super` key.
-
-`DecodingError.valueNotFound` if `self` has a null entry for the default `super` key.
 
 
 ---

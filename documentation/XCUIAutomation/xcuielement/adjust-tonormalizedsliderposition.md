@@ -28,8 +28,6 @@ A normalized slider value of `0` corresponds to the minimum value of the slider,
 
 > **Note**:  The adjustment is a best effort to move the indicator to the desired position; absolute fidelity isn’t guaranteed.
 
- The adjustment is a best effort to move the indicator to the desired position; absolute fidelity isn’t guaranteed.
-
 ## See Also
 
 - [var normalizedSliderPosition: CGFloat](xcuielement/normalizedsliderposition.md)

@@ -1,6 +1,6 @@
 # CKDiscoverUserIdentitiesOperation
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 An operation that uses the provided criteria to search for discoverable iCloud users.
@@ -31,8 +31,6 @@ The operation executes the handlers you provide on an internal queue it manages.
 The operation calls [`discoverUserIdentitiesCompletionBlock`](ckdiscoveruseridentitiesoperation/discoveruseridentitiescompletionblock.md) after it executes and returns results. Use the completion handler to perform housekeeping tasks for the operation. It should also manage any failures, whether due to an error or an explicit cancellation.
 
 > **Note**:  Because this class inherits from [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/1408085-completionblock) property. The operation calls both completion handlers if they’re both set.
-
- Because this class inherits from [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you can also set the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/1408085-completionblock) property. The operation calls both completion handlers if they’re both set.
 
 CloudKit operations have a default QoS of [`QualityOfService.default`](https://developer.apple.com/documentation/Foundation/QualityOfService/default). Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the [`qualityOfService`](https://developer.apple.com/documentation/foundation/operation/1413553-qualityofservice) property to set a more appropriate QoS for the operation.
 
@@ -117,4 +115,4 @@ func fetchUserIdentities(withEmails emails: [String],
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckdiscoveruseridentitiesoperation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckdiscoveruseridentitiesoperation)*

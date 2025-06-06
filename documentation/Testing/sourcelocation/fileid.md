@@ -1,6 +1,6 @@
 # fileID
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: property
 
 The file ID of the source file.
@@ -25,8 +25,6 @@ var fileID: String { get set }
 #### Discussion
 
 > **Note**: The value of this property must not be empty and must be formatted as described in the documentation for the [`#fileID`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fileID()). macro in the Swift standard library.
-
-The value of this property must not be empty and must be formatted as described in the documentation for the [`#fileID`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fileID()). macro in the Swift standard library.
 
 ## See Also
 

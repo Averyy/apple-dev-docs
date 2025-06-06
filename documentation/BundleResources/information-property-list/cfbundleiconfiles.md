@@ -1,6 +1,6 @@
 # CFBundleIconFiles
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 The names of the bundle’s icon image files.
@@ -15,8 +15,6 @@ The names of the bundle’s icon image files.
 #### Discussion
 
 > **Note**:  For Action extensions, you can specify the [`CFBundleSymbolName`](information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.md) key instead of `CFBundleIconFiles` to use a symbol from SF Symbols.
-
- For Action extensions, you can specify the [`CFBundleSymbolName`](information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.md) key instead of `CFBundleIconFiles` to use a symbol from SF Symbols.
 
 ## See Also
 

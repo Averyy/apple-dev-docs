@@ -1,6 +1,6 @@
 # removeSubrange(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Removes the elements in the specified subrange from the collection.
@@ -33,8 +33,6 @@ print(measurements)
 Calling this method may invalidate any existing indices for use with this collection.
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

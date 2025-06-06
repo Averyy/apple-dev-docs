@@ -1,6 +1,6 @@
 # UINavigationItem.ItemStyle
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: enum
 
 Constants that determine how the content of the navigation item lays out in the navigation bar.
@@ -26,10 +26,6 @@ Navigation styles allow you to customize the behavior and content density of you
 - Editor apps support focused viewing or editing of individual documents.
 
 > **Note**:  Session 10069: [`Meet desktop-class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069) Session 10070: [`Build a desktop-class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070)
-
- Session 10069: [`Meet desktop-class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069)
-
-Session 10070: [`Build a desktop-class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070)
 
 ## Topics
 

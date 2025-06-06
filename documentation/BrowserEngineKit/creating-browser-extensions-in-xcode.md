@@ -1,6 +1,6 @@
 # Creating browser extensions in Xcode
 
-**Framework**: BrowserEngineKit
+**Framework**: Browserenginekit
 
 Configure your Xcode project to support your alternative browser engine.
 
@@ -37,8 +37,6 @@ Browser apps that include alternative browser engines must use the `arm64e` inst
 
 > ❗ **Important**:  You can develop and test your alternative browser engine using the `arm64` instruction set. To distribute your browser that includes an alternative browser engine, you need to support the `arm64e` instruction set.
 
- You can develop and test your alternative browser engine using the `arm64` instruction set. To distribute your browser that includes an alternative browser engine, you need to support the `arm64e` instruction set.
-
 To configure your Xcode targets to use the `arm64e` instruction set:
 
 1. Select the Xcode project in the Project Navigator.
@@ -59,8 +57,6 @@ ARCHS[sdk=iphoneos*]=arm64e
 
 > ❗ **Important**:  Don’t build your target with the `arm64e` instruction set for Simulator destinations. Simulator for iPhone doesn’t support `arm64e` instructions.
 
- Don’t build your target with the `arm64e` instruction set for Simulator destinations. Simulator for iPhone doesn’t support `arm64e` instructions.
-
 If your Xcode workspace includes Swift Packages as dependencies for your targets, use workspace settings to build the packages using the `arm64e` instruction set. In Terminal, run these commands:
 
 ```zsh
@@ -76,12 +72,6 @@ Additionally, to manage extensions for an alternative browser engine, your app d
 
 > **Note**:  For a non-browser app that uses an alternative browser engine for in-app web browsing, add the `com.apple.developer.embedded-web-browser-engine` entitlement with the value `true`, instead of `com.apple.developer.web-browser`. Your non-browser app includes the alternative web browser engine in its own executable or as a dynamic library, uses only the `arm64` instruction set (not `arm64e`), and doesn’t include any web browser extensions. The alternative web browser engine in a non-browser app can’t use just-in-time (JIT) compilation. Add the following keys and values to your non-browser app’s `Info.plist` file: Add the value `embedded-web-browser-engine` to the `UIRequiredDeviceCapabilities` array in your app’s `Info.plist` file.
 
- For a non-browser app that uses an alternative browser engine for in-app web browsing, add the `com.apple.developer.embedded-web-browser-engine` entitlement with the value `true`, instead of `com.apple.developer.web-browser`. Your non-browser app includes the alternative web browser engine in its own executable or as a dynamic library, uses only the `arm64` instruction set (not `arm64e`), and doesn’t include any web browser extensions. The alternative web browser engine in a non-browser app can’t use just-in-time (JIT) compilation.
-
-Add the following keys and values to your non-browser app’s `Info.plist` file:
-
-Add the value `embedded-web-browser-engine` to the `UIRequiredDeviceCapabilities` array in your app’s `Info.plist` file.
-
 Each of your browser app’s extensions must use the appropriate entitlement from this list:
 
 In each case, set the value for the entitlement to `true`. To use these entitlements, your host app and its extensions must be compiled for the `arm64e` instruction set, described in the “Build for pointer authentication” section, above.
@@ -95,8 +85,6 @@ Optionally, you may add the following entitlements:
 - To restrict access to the system notification service in your web content extension, add the `com.apple.developer.web-browser-engine.restrict.notifyd` entitlement with the value `true`. For more information, see [`Limiting resource access in web content extensions`](limiting-resource-access-in-content-extensions.md)
 
 > ❗ **Important**:  App Store Connect won’t accept your app if your non-browser app includes any of the entitlements for web browsers and their extensions described in this section, or you use the entitlements on other web browser components or with different values than those listed here. You must use all of the entitlements listed here only for the purposes described, for the relevant components of your browser app.
-
- App Store Connect won’t accept your app if your non-browser app includes any of the entitlements for web browsers and their extensions described in this section, or you use the entitlements on other web browser components or with different values than those listed here. You must use all of the entitlements listed here only for the purposes described, for the relevant components of your browser app.
 
 ##### Target Devices with Required Capabilities
 

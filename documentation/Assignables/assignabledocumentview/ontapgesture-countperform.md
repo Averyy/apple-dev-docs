@@ -27,8 +27,6 @@ Use this method to perform the specified `action` when the user clicks or taps o
 
 > **Note**: If you create a control that’s functionally equivalent to a `Button`, use `ButtonStyle` to create a customized button instead.
 
-If you create a control that’s functionally equivalent to a `Button`, use `ButtonStyle` to create a customized button instead.
-
 In the example below, the color of the heart images changes to a random color from the `colors` array whenever the user clicks or taps on the view twice:
 
 ```None

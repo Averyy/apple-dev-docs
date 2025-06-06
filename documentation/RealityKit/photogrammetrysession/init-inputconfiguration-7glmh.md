@@ -1,6 +1,6 @@
 # init(input:configuration:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates a session from a sequence of samples.
@@ -24,8 +24,6 @@ Creates a new session instance from a custom sequence of [`PhotogrammetrySample`
 The constructor will only use `makeIterator()` on `input` and will then iterate through the sequence only once.  A provided iterator should be lazy, or a lazy  [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence) and map used.
 
 > **Note**: To minimize memory usage, use lazy sequences that only create a [`PhotogrammetrySample`](photogrammetrysample.md) as it iterates by making calls to `next()` on its associated [`IteratorProtocol`](https://developer.apple.com/documentation/Swift/IteratorProtocol).
-
-To minimize memory usage, use lazy sequences that only create a [`PhotogrammetrySample`](photogrammetrysample.md) as it iterates by making calls to `next()` on its associated [`IteratorProtocol`](https://developer.apple.com/documentation/Swift/IteratorProtocol).
 
 ## Parameters
 

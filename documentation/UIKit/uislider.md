@@ -1,6 +1,6 @@
 # UISlider
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A control for selecting a single value from a continuous range of values.
@@ -95,8 +95,6 @@ You can also specify the images used to draw the thumb and the track. Provide im
 ![Image of a slider with custom track and thumb images.](https://docs-assets.developer.apple.com/published/63d9b43d57b05ccbcff8d4b365668b63/media-2555497%402x.png)
 
 > **Note**:  The slider control provides a set of default images for both the track and the thumb. If you don’t specify any custom images, those images are used automatically.
-
- The slider control provides a set of default images for both the track and the thumb. If you don’t specify any custom images, those images are used automatically.
 
 If you want to change only the colors of the track and thumb, you don’t need to resort to custom images. You can set custom tint colors for both the track and the thumb of a slider, using the [`minimumTrackTintColor`](uislider/minimumtracktintcolor.md), [`maximumTrackTintColor`](uislider/maximumtracktintcolor.md), and [`thumbTintColor`](uislider/thumbtintcolor.md) properties, as shown in the following image.
 
@@ -241,4 +239,4 @@ For more information about making iOS controls accessible, see the accessibility
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uislider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uislider)*

@@ -1,6 +1,6 @@
 # UIEventAttributionView
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An overlay view that verifies user interaction for Web AdAttributionKit.
@@ -46,8 +46,6 @@ For more information on sending Web AdAttributionKit event attribution data to t
 
 > **Note**:  Web AdAttributionKit isn’t supported in Mac apps built with Mac Catalyst.
 
- Web AdAttributionKit isn’t supported in Mac apps built with Mac Catalyst.
-
 ## Relationships
 
 ### Inherits From
@@ -90,4 +88,4 @@ For more information on sending Web AdAttributionKit event attribution data to t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uieventattributionview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uieventattributionview)*

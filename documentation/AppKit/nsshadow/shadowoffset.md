@@ -1,6 +1,6 @@
 # shadowOffset
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The shadow’s relative position, which you specify with horizontal and vertical offset values.
@@ -20,8 +20,6 @@ This property contains the horizontal and vertical offset values that you specif
 
 > **Note**:  In macOS 10.15 and earlier, if you add a shadow to a layer that has a different graphics context, then positive offset values might extend up and to the right from the user’s perspective, instead of down and to the right as usual.
 
- In macOS 10.15 and earlier, if you add a shadow to a layer that has a different graphics context, then positive offset values might extend up and to the right from the user’s perspective, instead of down and to the right as usual.
-
 ## See Also
 
 - [var shadowBlurRadius: CGFloat](nsshadow/shadowblurradius.md)
@@ -32,4 +30,4 @@ This property contains the horizontal and vertical offset values that you specif
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsshadow/shadowoffset)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsshadow/shadowoffset)*

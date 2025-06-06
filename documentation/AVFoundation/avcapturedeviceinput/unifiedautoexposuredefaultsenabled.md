@@ -1,6 +1,6 @@
 # unifiedAutoExposureDefaultsEnabled
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the input enables unified auto-exposure defaults.
@@ -29,8 +29,6 @@ Depending on the device and format, you may configure the default auto exposure 
 The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 > **Note**:  Manually setting the device’s [`minFrameRate`](avframeraterange/minframerate.md), [`maxFrameRate`](avframeraterange/maxframerate.md), or [`maxExposureDuration`](avcapturedevice/format/maxexposureduration.md) overrides the device defaults, even if you set this property to [`true`](https://developer.apple.com/documentation/swift/true).
-
- Manually setting the device’s [`minFrameRate`](avframeraterange/minframerate.md), [`maxFrameRate`](avframeraterange/maxframerate.md), or [`maxExposureDuration`](avcapturedevice/format/maxexposureduration.md) overrides the device defaults, even if you set this property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

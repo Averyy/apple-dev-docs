@@ -1,6 +1,6 @@
 # Spatial barcode and QR code scanning
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 A Boolean value that indicates whether an app can use ARKit to detect, position, and decode barcode and QR codes.
@@ -11,8 +11,6 @@ A Boolean value that indicates whether an app can use ARKit to detect, position,
 #### Discussion
 
 > **Note**: Spatial barcode & QR code scanning are only available in an immersive space. See [`Setting up access to ARKit data`](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy).
-
-Spatial barcode & QR code scanning are only available in an immersive space. See [`Setting up access to ARKit data`](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy).
 
 ## See Also
 

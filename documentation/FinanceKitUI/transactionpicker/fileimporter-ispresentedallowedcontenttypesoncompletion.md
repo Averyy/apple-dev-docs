@@ -1,6 +1,6 @@
 # fileImporter(isPresented:allowedContentTypes:onCompletion:)
 
-**Framework**: FinanceKitUI  
+**Framework**: Financekitui  
 **Kind**: method
 
 Presents a system interface for allowing the user to import an existing file.
@@ -23,8 +23,6 @@ func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], onC
 In order for the interface to appear, `isPresented` must be `true`. When the operation is finished, `isPresented` will be set to `false` before `onCompletion` is called. If the user cancels the operation, `isPresented` will be set to `false` and `onCompletion` will not be called.
 
 > **Note**: This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
-
-This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
 
 For example, an application can have a button that allows the user to choose the default directory with document templates loaded on every launch. Such a button might look like this:
 
@@ -63,8 +61,6 @@ For example, an application can have a button that allows the user to choose the
 ```
 
 > **Note**: Changing `allowedContentTypes` while the file importer is presented will have no immediate effect, however will apply the next time it is presented.
-
-Changing `allowedContentTypes` while the file importer is presented will have no immediate effect, however will apply the next time it is presented.
 
 ## Parameters
 

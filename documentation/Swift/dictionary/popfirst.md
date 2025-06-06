@@ -30,8 +30,6 @@ The first element of the dictionary is not necessarily the first element added. 
 
 > **Note**: Averages to O(1) over many calls to `popFirst()`.
 
-Averages to O(1) over many calls to `popFirst()`.
-
 ## See Also
 
 - [func dropFirst(Int) -> Self.SubSequence](dictionary/dropfirst(_:).md)

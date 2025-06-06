@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: property
 
 The number of elements in the collection.
@@ -26,9 +26,7 @@ To check whether a collection is empty, use its `isEmpty` property instead of co
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
 
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/classificationdistribution/count)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/classificationdistribution/count)*

@@ -32,8 +32,6 @@ When you create a credential, you can specify it for a single request, persist i
 
 > **Note**:  Permanent storage of credentials is only available for password-based credentials. TLS credentials are never stored permanently by [`URLCredentialStorage`](urlcredentialstorage.md). In general, use for-session persistence for TLS credentials.
 
- Permanent storage of credentials is only available for password-based credentials. TLS credentials are never stored permanently by [`URLCredentialStorage`](urlcredentialstorage.md). In general, use for-session persistence for TLS credentials.
-
 ## Topics
 
 ### Creating a credential
@@ -93,4 +91,4 @@ When you create a credential, you can specify it for a single request, persist i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlcredential)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlcredential)*

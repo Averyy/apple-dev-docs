@@ -1514,8 +1514,10 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                 if image_content:
                     processed_parts.append(image_content)
             
-            # Handle any nested content recursively
-            if 'content' in item and isinstance(item['content'], list):
+            # Handle any nested content recursively for item types that don't process content themselves
+            # Skip recursive processing for items that handle their own content (aside, table, etc.)
+            if ('content' in item and isinstance(item['content'], list) and 
+                item_type not in ['aside', 'table', 'imageBlock']):
                 nested_content = self._process_content_items(item['content'], references)
                 processed_parts.extend(nested_content)
         

@@ -17,8 +17,6 @@ The content of the attachment is an XML property list representation of the prov
 
 > **Note**:  Creating an attachment with a non-property-list-compatible object will trigger an exception at the point that the attachment is added to an [`XCTActivity`](xctactivity.md).
 
- Creating an attachment with a non-property-list-compatible object will trigger an exception at the point that the attachment is added to an [`XCTActivity`](xctactivity.md).
-
 ## Parameters
 
 - `object`: An object that can be serialized to an XML property list format, such as an array, dictionary, string, or date.

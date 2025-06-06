@@ -1,6 +1,6 @@
 # maxIterations
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 The maximum number of iterations the solver is allowed to do per frame.
@@ -25,8 +25,6 @@ If the pose satisfies all of the demands using less iterations, the solve stops 
 The initial value is from the respective [`maxIterations`](ikrig/maxiterations.md).
 
 > **Note**: Values of `0` or less, result in the constant output of the last solved pose.
-
-Values of `0` or less, result in the constant output of the last solved pose.
 
 
 ---

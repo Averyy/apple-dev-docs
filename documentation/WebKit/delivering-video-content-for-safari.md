@@ -60,8 +60,6 @@ This tool places a color overlay on the desktop. Red represents normal power usa
 
 > **Note**:  Use Web Inspector to adjust CSS properties in the browser to see which changes enable low-power mode. Check to see if there are sub-layers attached to the displayed element that contains your video. If there are, adjust your stylesheets with these changes so that there are no sub-layers, then low-power mode can take effect.
 
- Use Web Inspector to adjust CSS properties in the browser to see which changes enable low-power mode. Check to see if there are sub-layers attached to the displayed element that contains your video. If there are, adjust your stylesheets with these changes so that there are no sub-layers, then low-power mode can take effect.
-
 If you use `<video controls>`, then in full screen your video will get low-power mode automatically when the controls disappear. If you make your own custom media controls, then make sure everything is hidden when the user is watching the video. Avoid having items such as timelines remain after it’s clear the user is just watching the video. For more information on debugging low-power mode and other media issues, see [`Debugging Media in Web Inspector`](https://developer.apple.comhttps://webkit.org/blog/8923/debugging-media-in-web-inspector/).
 
 ###### Use Mp4 Video Instead of Animated Gifs
@@ -126,4 +124,4 @@ For more details on WebRTC, see [`Announcing WebRTC and Media Capture`](https://
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/webkit/delivering-video-content-for-safari)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/delivering-video-content-for-safari)*

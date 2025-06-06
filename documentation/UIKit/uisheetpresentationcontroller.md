@@ -1,6 +1,6 @@
 # UISheetPresentationController
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A presentation controller that manages the appearance and behavior of a sheet.
@@ -40,10 +40,6 @@ func showMyViewControllerInACustomizedSheet() {
 Sheet presentation controllers specify a sheet’s size based on a , a height where a sheet naturally rests. Detents allow a sheet to resize from one edge of its fully expanded frame while the other three edges remain fixed. You specify the detents that a sheet supports using [`detents`](uisheetpresentationcontroller/detents.md), and monitor its most recently selected detent using [`selectedDetentIdentifier`](uisheetpresentationcontroller/selecteddetentidentifier.md).
 
 > **Note**:  Session 10063: [`Customize and Resize Sheets in UIKit`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10063) Session 10068: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10068)
-
- Session 10063: [`Customize and Resize Sheets in UIKit`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10063)
-
-Session 10068: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10068)
 
 ## Topics
 

@@ -62,8 +62,6 @@ If you need more control over the capacity of your array, implement your own geo
 
 > **Note**: O(), where  is the number of elements in the array.
 
-O(), where  is the number of elements in the array.
-
 ## Parameters
 
 - `minimumCapacity`: The requested number of elements to store.

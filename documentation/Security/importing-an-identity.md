@@ -16,8 +16,6 @@ An identity is a secret that you guard closely by applying a strong password to 
 
 > ❗ **Important**:  Do not bundle passwords with your app in any form. Doing so is insecure, because no matter how carefully you try to obscure a password, a motivated attacker will find a way to mimic the operations you use to reveal it for your own purposes. Instead, prompt the user for a password when you need it, or read it from the secure storage offered by a keychain.
 
- Do not bundle passwords with your app in any form. Doing so is insecure, because no matter how carefully you try to obscure a password, a motivated attacker will find a way to mimic the operations you use to reveal it for your own purposes. Instead, prompt the user for a password when you need it, or read it from the secure storage offered by a keychain.
-
 Then, use the data and the options in a call to the [`SecPKCS12Import(_:_:_:)`](secpkcs12import(_:_:_:).md) function:
 
 Because the PKCS #12 format allows for bundling multiple cryptographic objects together, this function populates an array object. Typically, you iterate over every object in the array, handling each one in turn. In this case, assume that you are interested in only the first item. If the import function returns no error, and if at least one array item exists, you extract that as the first item in the array, which is a dictionary:
@@ -38,9 +36,7 @@ See [`Evaluating a Trust and Parsing the Result`](evaluating-a-trust-and-parsing
 
 > **Note**:  In macOS, when it succeeds, the [`SecPKCS12Import(_:_:_:)`](secpkcs12import(_:_:_:).md) function call automatically stores the extracted identity in the default keychain in addition to returning a reference to it as one of the items in the array of dictionaries.
 
- In macOS, when it succeeds, the [`SecPKCS12Import(_:_:_:)`](secpkcs12import(_:_:_:).md) function call automatically stores the extracted identity in the default keychain in addition to returning a reference to it as one of the items in the array of dictionaries.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/importing-an-identity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/importing-an-identity)*

@@ -1,6 +1,6 @@
 # gradientType
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The gradient of the buttonâ€™s border.
@@ -23,8 +23,6 @@ If the button has no border, setting this property has no effect on the buttonâ€
 
 > **Note**:  This property is currently unused by AppKit and has no effect.
 
- This property is currently unused by AppKit and has no effect.
-
 ## See Also
 
 - [var backgroundColor: NSColor?](nsbuttoncell/backgroundcolor.md)
@@ -43,4 +41,4 @@ If the button has no border, setting this property has no effect on the buttonâ€
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsbuttoncell/gradienttype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsbuttoncell/gradienttype)*

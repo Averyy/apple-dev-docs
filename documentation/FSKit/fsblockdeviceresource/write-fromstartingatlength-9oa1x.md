@@ -1,6 +1,6 @@
 # write(from:startingAt:length:)
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: method
 
 Asynchronously writes data from from a buffer to the resource.
@@ -23,8 +23,6 @@ The number of bytes written.
 For the write to succeed, requests must conform to any transfer requirements of the underlying resource. Disk drives typically require sector (`physicalBlockSize`) addressed operations of one or more sector-aligned offsets.
 
 > **Note**: An error describing any write error. This value is `EFAULT` if `buffer` is `NULL`, or `errno` if writing to the resource failed.
-
-An error describing any write error. This value is `EFAULT` if `buffer` is `NULL`, or `errno` if writing to the resource failed.
 
 ## Parameters
 

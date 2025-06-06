@@ -1,6 +1,6 @@
 # tokenDriver(_:tokenFor:)
 
-**Framework**: CryptoTokenKit  
+**Framework**: Cryptotokenkit  
 **Kind**: method
 
 Creates a new token for the configuration you specify.
@@ -31,8 +31,6 @@ The system invokes this method to request creation of a token instance, which th
 The created token has access to its current configuration using the [`configurationData`](tktoken/configuration-swift.class/configurationdata.md) property, which can provide token-implementation-specific additional data. The token can access keychain items this token exports with the methods [`key(for:)`](tktoken/configuration-swift.class/key(for:).md) and [`certificate(for:)`](tktoken/configuration-swift.class/certificate(for:).md) that the configuration provides.
 
 > **Note**:  Smart card token drivers must not implement this method.
-
- Smart card token drivers must not implement this method.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # IKRig.Joint.ID
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 The identity type for a joint in a rig.
@@ -21,8 +21,6 @@ struct ID
 #### Overview
 
 > **Note**: Stable only during the lifetime of the containing process.
-
-Stable only during the lifetime of the containing process.
 
 ## Topics
 

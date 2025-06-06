@@ -1,6 +1,6 @@
 # Creating auto-renewable subscription groups
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Configure subscription groups with the App Store Connect API.
 
@@ -33,8 +33,6 @@ Before you get started with creating your subscription, first identify which app
 ```
 
 > 💡 **Tip**:  You can also get the Apple ID of the app in App Store Connect.
-
- You can also get the Apple ID of the app in App Store Connect.
 
 To arrange your subscription groups, make sure to map out all your offerings clearly. The following table shows an example for planning your subscriptions in a subscription group. The example uses subscriptions for a series of ukulele lessons with different levels of instructor feedback and detail, available for various time periods.
 
@@ -73,8 +71,6 @@ Here’s an example payload:
 ```
 
 > **Note**:  The `referenceName` field is internal and isn’t displayed to users. Use a descriptive string that’s useful for your own organization and recognition purposes.
-
- The `referenceName` field is internal and isn’t displayed to users. Use a descriptive string that’s useful for your own organization and recognition purposes.
 
 Here’s an example response, truncated for clarity:
 
@@ -131,4 +127,4 @@ After you configure your subscription group, create your subscription following 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/creating-auto-renewable-subscription-groups)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-auto-renewable-subscription-groups)*

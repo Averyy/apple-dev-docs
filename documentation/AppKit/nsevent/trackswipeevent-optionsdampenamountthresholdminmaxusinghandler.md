@@ -1,6 +1,6 @@
 # trackSwipeEvent(options:dampenAmountThresholdMin:max:usingHandler:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Allows tracking and user interface feedback of scroll wheel events.
@@ -21,8 +21,6 @@ Scroll wheel swipes are tracked not only to the end of the physical gesture phas
 The swipe `gestureAmount` that would fall outside of the range specified by the `minDampenThreshold` and `maxDampenThreshold` are automatically dampened. For example, the user’s physical swipe action results in a value of .50, however, there is no page in that direction to swipe to. The `gestureAmount` reported is adjusted by a damping factor resulting in something like .125. As a developer, you simply treat the `gestureAmount` like you normally do, and the result is an elastic feedback effect to let the user know that there is nothing to swipe to in that direction.
 
 > **Note**:  This method returns immediately and tracking is performed asynchronously.
-
- This method returns immediately and tracking is performed asynchronously.
 
 ## Parameters
 

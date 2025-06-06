@@ -1,6 +1,6 @@
 # insert(_:for:)
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: method
 
 Adds a new quantity to the series with the provided date interval.
@@ -24,8 +24,6 @@ func insert(_ quantity: HKQuantity, for dateInterval: DateInterval) throws
 Use this method to add a quantity to the series. The quantity must have a unit that is compatible with the series builder’s quantity type (see [`is(compatibleWith:)`](hkquantitytype/is(compatiblewith:).md)).
 
 > **Note**:  You can insert quantities in any order. The builder sorts them by the date interval’s [`startDate`](https://developer.apple.com/documentation/foundation/nsdateinterval/1641656-startdate) property when you finish the series.
-
- You can insert quantities in any order. The builder sorts them by the date interval’s [`startDate`](https://developer.apple.com/documentation/foundation/nsdateinterval/1641656-startdate) property when you finish the series.
 
 ## Parameters
 

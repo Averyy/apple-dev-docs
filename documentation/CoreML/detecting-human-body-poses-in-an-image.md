@@ -1,6 +1,6 @@
 # Detecting human body poses in an image
 
-**Framework**: Core ML
+**Framework**: Coreml
 
 Locate people and the stance of their bodies by analyzing an image with a PoseNet model.
 
@@ -18,8 +18,6 @@ This sample project provides an illustrative example of using a third-party [`Co
 The sample finds the locations of the 17 joints for each person in the image and draws a wireframe pose on top of them.
 
 > **Note**: Starting in iOS 14 and macOS 11, [`Vision`](https://developer.apple.com/documentation/Vision) adds the ability to detect human body poses. For details, see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-images).
-
-Starting in iOS 14 and macOS 11, [`Vision`](https://developer.apple.com/documentation/Vision) adds the ability to detect human body poses. For details, see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-images).
 
 ##### Configure the Capture Session
 
@@ -217,4 +215,4 @@ let dstImage = renderer.image { rendererContext in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coreml/detecting-human-body-poses-in-an-image)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/detecting-human-body-poses-in-an-image)*

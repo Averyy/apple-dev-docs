@@ -1,6 +1,6 @@
 # applying(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Applies the given difference to this collection.
@@ -27,8 +27,6 @@ An instance representing the state of the receiver with the difference applied, 
 #### Discussion
 
 > **Note**: O( + ), where  is `self.count` and  is the number of changes contained by the parameter.
-
-O( + ), where  is `self.count` and  is the number of changes contained by the parameter.
 
 ## Parameters
 

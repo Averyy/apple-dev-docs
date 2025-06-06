@@ -60,8 +60,6 @@ To remove this setting from a target, use the Delete key to remove it. Once `VAL
 
 > **Note**: Ensure you completely remove `VALID_ARCHS` by using the Delete key. Do not change its value to an empty value, leaving the setting visible in the User-Defined group.
 
-Ensure you completely remove `VALID_ARCHS` by using the Delete key. Do not change its value to an empty value, leaving the setting visible in the User-Defined group.
-
 If `VALID_ARCHS` was intentionally preventing a target from building for a specific architecture, modify the `EXCLUDED_ARCHS` build setting as needed to achieve the same results as before.
 
 #### Exclude Architectures Sparingly
@@ -87,13 +85,9 @@ If the library named in the error message is from a vendor, see [`Update pre-com
 
 > ❗ **Important**: To resolve these errors, either rebuild the library or follow the advice in [`Update pre-compiled libraries from vendors`](tn3117-resolving-build-errors-for-apple-silicon#Update-pre-compiled-libraries-from-vendors.md). Don’t launch Xcode using Rosetta to resolve these errors.
 
-To resolve these errors, either rebuild the library or follow the advice in [`Update pre-compiled libraries from vendors`](tn3117-resolving-build-errors-for-apple-silicon#Update-pre-compiled-libraries-from-vendors.md). Don’t launch Xcode using Rosetta to resolve these errors.
-
 If you’re developing a watchOS app, all XCFrameworks for your watchOS app must contain `arm64` or `x86_64` libraries built specifically for the watchOS simulator. If you need to test your watchOS app specifically using the `i386` architecture with the watchOS simulator, use an Intel-based Mac.
 
 > **Note**: A pre-compiled library must be built as an XCFramework to separate the device and simulator builds. Combining architectures for iOS, watchOS, or tvOS and their respective simulators into a single binary file is not supported.
-
-A pre-compiled library must be built as an XCFramework to separate the device and simulator builds. Combining architectures for iOS, watchOS, or tvOS and their respective simulators into a single binary file is not supported.
 
 ##### Update Pre Compiled Libraries From Vendors
 
@@ -106,8 +100,6 @@ After temporarily changing `EXCLUDED_ARCHS`, select the appropriate simulator de
 ![Xcode’s menu for displaying simulator destinations](https://docs-assets.developer.apple.com/published/8d098b22ef97e0e2d162cefe9eec7986/tn3117-destination_archs%402x.png)
 
 > ❗ **Important**: Always contact the library vendor to request an updated library supporting the simulator on Apple silicon. Modifications to the `EXCLUDED_ARCHS` build setting for a simulator SDK are not a replacement for getting an updated library, and should only be used while waiting for the vendor to make an updated library available. Remove the changes to `EXCLUDED_ARCHS` after receiving the updated library.
-
-Always contact the library vendor to request an updated library supporting the simulator on Apple silicon. Modifications to the `EXCLUDED_ARCHS` build setting for a simulator SDK are not a replacement for getting an updated library, and should only be used while waiting for the vendor to make an updated library available. Remove the changes to `EXCLUDED_ARCHS` after receiving the updated library.
 
 #### Revision History
 
@@ -153,4 +145,4 @@ Always contact the library vendor to request an updated library supporting the s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3117-resolving-build-errors-for-apple-silicon)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3117-resolving-build-errors-for-apple-silicon)*

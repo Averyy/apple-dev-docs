@@ -24,8 +24,6 @@ This property identifies the app that is making the request. If you distribute m
 
 > **Note**:  This property is only for applications that use the SAML authentication scheme.
 
- This property is only for applications that use the SAML authentication scheme.
-
 ## See Also
 
 - [var attributeNames: [String]](vsaccountmetadatarequest/attributenames.md)

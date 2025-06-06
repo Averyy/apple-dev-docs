@@ -19,8 +19,6 @@ If you write a software updater in the simplest way, you run the risk of a hard-
 
 > **Note**:  Apple software-update mechanisms, such as the App Store updater, the Installer app, and the `installer` command-line tool, aren’t susceptible to this code-signing crash.
 
- Apple software-update mechanisms, such as the App Store updater, the Installer app, and the `installer` command-line tool, aren’t susceptible to this code-signing crash.
-
 ##### Update Files That Include Signed Code
 
 Imagine code that downloads an update for a command-line tool. The final step of that process might look like this:
@@ -93,4 +91,4 @@ This time, the inode number changed. This change indicates that `ditto` replaced
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/updating-mac-software)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/updating-mac-software)*

@@ -1,6 +1,6 @@
 # Outline View Button Keys
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 These keys are used by the outline view to create disclosure buttons that collapse and expand items.
 
@@ -9,8 +9,6 @@ These keys are used by the outline view to create disclosure buttons that collap
 The outline view creates these buttons by calling its inherited [`makeView(withIdentifier:owner:)`](nstableview/makeview(withidentifier:owner:).md) method, passing in the key as the identifier and the delegate as the owner.
 
 > **Note**:  These keys are backwards compatible to OS X v10.7, however, the symbol is not exported prior to v10.9 and the string value (`@"NSOutlineViewDisclosureButtonKey"`) must be used.
-
- These keys are backwards compatible to OS X v10.7, however, the symbol is not exported prior to v10.9 and the string value (`@"NSOutlineViewDisclosureButtonKey"`) must be used.
 
 ## Topics
 
@@ -28,4 +26,4 @@ The outline view creates these buttons by calling its inherited [`makeView(withI
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/outline-view-button-keys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/outline-view-button-keys)*

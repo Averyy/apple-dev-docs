@@ -1,6 +1,6 @@
 # Setting Up a Capture Session
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Configure input devices, output media, preview views, and basic settings before capturing photos or video.
 
@@ -29,8 +29,6 @@ captureSession.addInput(videoDeviceInput)
 
 > **Note**:  iOS offers several other ways to select a camera device. For more information, see [`Choosing a Capture Device`](choosing-a-capture-device.md).
 
- iOS offers several other ways to select a camera device. For more information, see [`Choosing a Capture Device`](choosing-a-capture-device.md).
-
 Next, add outputs for the kinds of media you plan to capture from the camera you’ve selected. For example, to enable capturing photos, add an [`AVCapturePhotoOutput`](avcapturephotooutput.md) to the session:
 
 ```swift
@@ -47,8 +45,6 @@ A session can have multiple inputs and outputs. For example:
 - To capture both photos and movies from the same camera, add both [`AVCapturePhotoOutput`](avcapturephotooutput.md) and [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) to your session.
 
 > ❗ **Important**:  Call [`beginConfiguration()`](avcapturesession/beginconfiguration().md) before changing a session’s inputs or outputs, and call [`commitConfiguration()`](avcapturesession/commitconfiguration().md) after making changes.
-
- Call [`beginConfiguration()`](avcapturesession/beginconfiguration().md) before changing a session’s inputs or outputs, and call [`commitConfiguration()`](avcapturesession/commitconfiguration().md) after making changes.
 
 ##### Display a Camera Preview
 
@@ -76,8 +72,6 @@ self.previewView.videoPreviewLayer.session = self.captureSession
 ```
 
 > **Note**:  If your app supports multiple interface orientations, use the preview layer’s [`connection`](avcapturevideopreviewlayer/connection.md) to the capture session to set a [`videoOrientation`](avcaptureconnection/videoorientation.md) matching that of your UI.
-
- If your app supports multiple interface orientations, use the preview layer’s [`connection`](avcapturevideopreviewlayer/connection.md) to the capture session to set a [`videoOrientation`](avcaptureconnection/videoorientation.md) matching that of your UI.
 
 ##### Run the Capture Session
 
@@ -111,4 +105,4 @@ With other capture outputs, you first start the session running, then use the ca
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/setting-up-a-capture-session)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session)*

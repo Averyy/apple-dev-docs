@@ -1,6 +1,6 @@
 # Supporting promoted In-App Purchases in your app
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Display promoted In-App Purchases on your product page and handle purchases that users initiate on the App Store.
 
@@ -17,8 +17,6 @@ Promoting In-App Purchases requires two steps:
 
 > ❗ **Important**:  To enable promoted in-app purchases, your app needs to use either [`PurchaseIntent`](purchaseintent.md) (starting in iOS 16.4) or [`paymentQueue(_:shouldAddStorePayment:for:)`](skpaymenttransactionobserver/paymentqueue(_:shouldaddstorepayment:for:).md) (starting in iOS 11). Don’t use both at the same time. If necessary, use conditional compilation to identify the OS version the app is running in. For more information, see [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/Xcode/running-code-on-a-specific-version).
 
- To enable promoted in-app purchases, your app needs to use either [`PurchaseIntent`](purchaseintent.md) (starting in iOS 16.4) or [`paymentQueue(_:shouldAddStorePayment:for:)`](skpaymenttransactionobserver/paymentqueue(_:shouldaddstorepayment:for:).md) (starting in iOS 11). Don’t use both at the same time. If necessary, use conditional compilation to identify the OS version the app is running in. For more information, see [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/Xcode/running-code-on-a-specific-version).
-
 You can optionally customize which promoted In-App Purchases a users sees on a specific device using the [`Product.PromotionInfo`](product/promotioninfo.md) API. Using [`Product.PromotionInfo`](product/promotioninfo.md) isn’t required for your promoted In-App Purchases to appear on the App Store.
 
 For marketing guidance on this feature, see [`Promoting Your In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/app-store/promoting-in-app-purchases/).
@@ -26,8 +24,6 @@ For marketing guidance on this feature, see [`Promoting Your In-App Purchases`](
 To test promoted In-App Purchases, see [`Testing promoted In-App Purchases`](testing-promoted-in-app-purchases.md).
 
 > **Note**:  Promoted In-App Purchases aren’t available to compatible iPad or iPhone apps running in visionOS.
-
- Promoted In-App Purchases aren’t available to compatible iPad or iPhone apps running in visionOS.
 
 ##### Set Up Promoted in App Purchases Using App Store Connect
 
@@ -150,4 +146,4 @@ Call [`currentOrder`](product/promotioninfo/currentorder.md) to get a list of yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/supporting-promoted-in-app-purchases-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/supporting-promoted-in-app-purchases-in-your-app)*

@@ -39,8 +39,6 @@ let rangeOfUppercase = letters.moveSubranges(uppercaseRanges, to: 10)
 
 > **Note**: O( log ) where  is the length of the collection.
 
-O( log ) where  is the length of the collection.
-
 ## Parameters
 
 - `subranges`: The subranges of the elements to move.

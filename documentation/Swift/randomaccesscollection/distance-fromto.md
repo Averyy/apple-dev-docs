@@ -31,8 +31,6 @@ Unless the collection conforms to the `BidirectionalCollection` protocol, `start
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `start`: A valid index of the collection.

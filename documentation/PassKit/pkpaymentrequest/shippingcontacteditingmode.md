@@ -1,6 +1,6 @@
 # shippingContactEditingMode
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 A value that indicates whether the shipping mode prevents the user from editing the shipping address.
@@ -30,8 +30,6 @@ Set the value to [`PKShippingContactEditingMode.storePickup`](pkshippingcontacte
 For more information on configuring a package for store pickup, see [`Displaying a Read-Only Pickup Address`](displaying-a-read-only-pickup-address.md).
 
 > **Note**:  Determine whether to disable editing of the shipping contact field before displaying the payment sheet. Switching from a noneditable to an editable shipping contact field requires the user to restart the payment process.
-
- Determine whether to disable editing of the shipping contact field before displaying the payment sheet. Switching from a noneditable to an editable shipping contact field requires the user to restart the payment process.
 
 ## See Also
 

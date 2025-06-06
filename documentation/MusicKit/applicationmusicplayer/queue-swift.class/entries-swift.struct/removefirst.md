@@ -1,6 +1,6 @@
 # removeFirst(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Removes the specified number of elements from the beginning of the collection.
@@ -31,8 +31,6 @@ print(bugs)
 Calling this method may invalidate any existing indices for use with this collection.
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

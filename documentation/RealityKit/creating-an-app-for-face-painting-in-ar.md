@@ -1,6 +1,6 @@
 # Creating an App for Face-Painting in AR
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Combine RealityKit’s face detection with PencilKit to implement virtual face-painting.
 
@@ -12,8 +12,6 @@ Combine RealityKit’s face detection with PencilKit to implement virtual face-p
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`10074: Dive into RealityKit 2`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10074/).
-
-This sample code project is associated with WWDC21 session [`10074: Dive into RealityKit 2`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10074/).
 
 #### Configure the Sample Code Project
 
@@ -33,4 +31,4 @@ This project requires an iPhone or iPad running iOS 15 or iPadOS 15. It doesn’
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-an-app-for-face-painting-in-ar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-an-app-for-face-painting-in-ar)*

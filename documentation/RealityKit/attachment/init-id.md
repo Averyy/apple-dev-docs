@@ -1,6 +1,6 @@
 # init(id:_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates an new attachment from an identifier and a closure.
@@ -26,8 +26,6 @@ Attachment(id: "example") {
 ```
 
 > **Note**: The initializer doesn’t automatically add the views to a [`RealityView`](realityview.md) instance. You need to explicitly add each entity to your app’s scene hierarchy by directly placing an entity attachment to the view or as a child of another entity that’s already in the view.
-
-The initializer doesn’t automatically add the views to a [`RealityView`](realityview.md) instance. You need to explicitly add each entity to your app’s scene hierarchy by directly placing an entity attachment to the view or as a child of another entity that’s already in the view.
 
 ## Parameters
 

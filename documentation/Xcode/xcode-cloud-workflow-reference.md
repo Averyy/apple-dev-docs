@@ -24,15 +24,11 @@ When you develop and maintain your app or framework over time, you need to make 
 
 > ❗ **Important**: Periodically, Xcode Cloud may update available macOS and Xcode versions and subsequently ask you to update your workflows for them to continue to build successfully.
 
-Periodically, Xcode Cloud may update available macOS and Xcode versions and subsequently ask you to update your workflows for them to continue to build successfully.
-
 To reduce the work needed to perform these verifications, configure a workflow’s temporary build environment. For example, create a workflow that builds your project and runs your tests using the latest publicly released Xcode and macOS versions. Then, create another workflow that performs the same verifications with the latest beta versions of macOS and Xcode.
 
 To configure a workflow’s temporary build environment, navigate to the workflow’s Environment section, and choose from available Xcode and macOS versions.
 
 > **Note**: The temporary build environment that Xcode Cloud uses includes tools that are part of macOS and Xcode — for example, Python — and additionally [`Homebrew`](https://developer.apple.comhttps://brew.sh) to support installing third-party dependencies and tools. For more information, see [`Making dependencies available to Xcode Cloud`](making-dependencies-available-to-xcode-cloud.md).
-
-The temporary build environment that Xcode Cloud uses includes tools that are part of macOS and Xcode — for example, Python — and additionally [`Homebrew`](https://developer.apple.comhttps://brew.sh) to support installing third-party dependencies and tools. For more information, see [`Making dependencies available to Xcode Cloud`](making-dependencies-available-to-xcode-cloud.md).
 
 ##### Perform a Clean Build
 
@@ -45,15 +41,11 @@ To configure a workflow that starts a new build without cached data:
 
 > **Note**: Enabling clean builds significantly increases the time it takes to perform a build. Only perform clean builds when necessary; for example, distributing a new version to external testers with TestFlight requires a clean build.
 
-Enabling clean builds significantly increases the time it takes to perform a build. Only perform clean builds when necessary; for example, distributing a new version to external testers with TestFlight requires a clean build.
-
 ##### Custom Environment Variables
 
 In addition to Xcode and macOS versions, you can set custom  for a workflow in its Environment section. These variables are available to custom build scripts you use to extend workflows. For example, set a secret environment variable to contain an API key you use in a custom build script that uploads a workflow’s artifacts to your server.
 
 > ❗ **Important**: To securely store an environment variable and make sure it doesn’t appear in any logs, check the “Keep value redacted” (Xcode) or Secret (App Store Connect) box.
-
-To securely store an environment variable and make sure it doesn’t appear in any logs, check the “Keep value redacted” (Xcode) or Secret (App Store Connect) box.
 
 ##### Start Conditions
 
@@ -68,8 +60,6 @@ By default, workflows have the Auto-cancel Builds setting enabled for each start
 For example, say you push five changes to a branch within five minutes. Xcode Cloud detects each change and starts a build because it meets the Branch Changes start condition, resulting in five builds. To know whether your fifth change passed the configured verifications, you’d have to wait for each build to complete, even though the fifth change supersedes the others. With Auto-cancel Builds enabled, Xcode Cloud cancels the first four builds and immediately starts the build for the latest change.
 
 > 💡 **Tip**: If you prefer not to cancel builds automatically, turn off Auto-cancel Builds for one, multiple, or each start condition in a start condition’s Options section.
-
-If you prefer not to cancel builds automatically, turn off Auto-cancel Builds for one, multiple, or each start condition in a start condition’s Options section.
 
 ##### Actions
 
@@ -125,4 +115,4 @@ Using either Xcode or App Store Connect, you can create custom workflows to veri
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/xcode-cloud-workflow-reference)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/xcode-cloud-workflow-reference)*

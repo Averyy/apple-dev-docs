@@ -1,6 +1,6 @@
 # ARKitSession
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: class
 
 The main entry point for receiving data from ARKit.
@@ -36,8 +36,6 @@ Task {
 Because a [`PlaneDetectionProvider`](planedetectionprovider.md) instance’s required authorizations include [`ARKitSession.AuthorizationType.worldSensing`](arkitsession/authorizationtype/worldsensing.md), the system asks someone using your app to permit world sensing before ARKit supplies any of that kind of data.
 
 > **Note**:  ARKit stops sessions when they’re deinitialized; keep a reference to a session instance for as long as the session needs to run.
-
- ARKit stops sessions when they’re deinitialized; keep a reference to a session instance for as long as the session needs to run.
 
 ## Topics
 
@@ -89,4 +87,4 @@ Because a [`PlaneDetectionProvider`](planedetectionprovider.md) instance’s req
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arkitsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arkitsession)*

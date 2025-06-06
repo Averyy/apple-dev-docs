@@ -29,8 +29,6 @@ Use the [`firstMatch`](xcuielementtypequeryprovider/firstmatch.md) property when
 
 > **Note**:  Only use [`firstMatch`](xcuielementtypequeryprovider/firstmatch.md) in cases where you know categorically that a single element matches a query. Accessing the [`firstMatch`](xcuielementtypequeryprovider/firstmatch.md) property doesn’t check for multiple conflicting matches in ambiguous cases. Use [`XCUIElementQuery`](xcuielementquery.md)‘s [`element`](xcuielementquery/element.md) property instead if you want to check for multiple matches before using the element, and to fail the test if there isn’t a single unique match.
 
- Only use [`firstMatch`](xcuielementtypequeryprovider/firstmatch.md) in cases where you know categorically that a single element matches a query. Accessing the [`firstMatch`](xcuielementtypequeryprovider/firstmatch.md) property doesn’t check for multiple conflicting matches in ambiguous cases. Use [`XCUIElementQuery`](xcuielementquery.md)‘s [`element`](xcuielementquery/element.md) property instead if you want to check for multiple matches before using the element, and to fail the test if there isn’t a single unique match.
-
 ## See Also
 
 - [var element: XCUIElement](xcuielementquery/element.md)

@@ -65,8 +65,6 @@ for i in shorterIndices {
 
 > **Note**: O(1)
 
-O(1)
-
 ## See Also
 
 - [func forEach((Self.Element) throws -> Void) rethrows](string/foreach(_:).md)

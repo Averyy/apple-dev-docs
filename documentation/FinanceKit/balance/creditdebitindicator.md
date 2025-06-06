@@ -1,6 +1,6 @@
 # creditDebitIndicator
 
-**Framework**: FinanceKit  
+**Framework**: Financekit  
 **Kind**: property
 
 A value that indicates whether the balance is a credit or a debit balance.
@@ -22,8 +22,6 @@ If an asset account has a positive balance, then the [`CreditDebitIndicator`](cr
 If a liability account has a  balance, then the `CreditDebitIndicator` is `CreditDebitIndicator/debit`. If it has been  then the `CreditDebitIndicator` is `CreditDebitIndicator/credit`.
 
 > **Note**: FinanceKit considers a zero balance to be a credit balance.
-
-FinanceKit considers a zero balance to be a credit balance.
 
 
 ---

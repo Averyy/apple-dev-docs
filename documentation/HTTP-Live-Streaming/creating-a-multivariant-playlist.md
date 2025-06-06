@@ -1,6 +1,6 @@
 # Creating a Multivariant Playlist
 
-**Framework**: HTTP Live Streaming
+**Framework**: Http Live Streaming
 
 Offer multiple playlist files to provide different encodings of the same content.
 
@@ -36,8 +36,6 @@ The `EXT-X-STREAM-INF` tag has the following parameters:
 
 > **Note**: While the `CODECS` parameter is optional, every `EXT-X-STREAM-INF` tag should include the attribute. This attribute provides a complete list of codecs that are necessary to decode a particular stream. It allows the client to distinguish between variants that are audio only and those that have both audio and video. The client then makes use of this information to provide a better user experience when switching streams.
 
-While the `CODECS` parameter is optional, every `EXT-X-STREAM-INF` tag should include the attribute. This attribute provides a complete list of codecs that are necessary to decode a particular stream. It allows the client to distinguish between variants that are audio only and those that have both audio and video. The client then makes use of this information to provide a better user experience when switching streams.
-
 ## See Also
 
 - [Video on Demand playlist construction](video-on-demand-playlist-construction.md)
@@ -50,4 +48,4 @@ While the `CODECS` parameter is optional, every `EXT-X-STREAM-INF` tag should in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/creating-a-multivariant-playlist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/creating-a-multivariant-playlist)*

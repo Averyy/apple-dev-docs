@@ -1,6 +1,6 @@
 # displayAsPalette
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 An option indicating the menu displays as a row of menu elements for choosing from a collection of items.
@@ -21,8 +21,6 @@ static var displayAsPalette: UIMenu.Options { get }
 #### Discussion
 
 > **Note**:  Session 10055: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10055/)
-
- Session 10055: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10055/)
 
 ## See Also
 

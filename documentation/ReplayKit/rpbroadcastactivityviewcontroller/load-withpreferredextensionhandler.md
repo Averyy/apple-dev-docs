@@ -1,6 +1,6 @@
 # load(withPreferredExtension:handler:)
 
-**Framework**: ReplayKit  
+**Framework**: Replaykit  
 **Kind**: method
 
 Loads a broadcast activity view controller with a preferred extension.
@@ -23,8 +23,6 @@ class func load(withPreferredExtension preferredExtension: String?, handler: @es
 Present the view controller using [`present(_:animated:completion:)`](https://developer.apple.com/documentation/UIKit/UIViewController/present(_:animated:completion:)). Dismiss the view controller when the delegate’s [`broadcastActivityViewController(_:didFinishWith:error:)`](rpbroadcastactivityviewcontrollerdelegate/broadcastactivityviewcontroller(_:didfinishwith:error:).md) method is called.
 
 > **Note**:  On the iPad, the default presentation style for view controllers is a popover. For an instance of `RPBroadcastActivityViewController` to present properly on iPad, insure the popover presentation controller’s [`sourceRect`](https://developer.apple.com/documentation/UIKit/UIPopoverPresentationController/sourceRect) and [`sourceView`](https://developer.apple.com/documentation/UIKit/UIPopoverPresentationController/sourceView) are configured.
-
- On the iPad, the default presentation style for view controllers is a popover. For an instance of `RPBroadcastActivityViewController` to present properly on iPad, insure the popover presentation controller’s [`sourceRect`](https://developer.apple.com/documentation/UIKit/UIPopoverPresentationController/sourceRect) and [`sourceView`](https://developer.apple.com/documentation/UIKit/UIPopoverPresentationController/sourceView) are configured.
 
 ## Parameters
 

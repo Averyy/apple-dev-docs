@@ -1,6 +1,6 @@
 # highlightSelection(inClipRect:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Highlights the region of the table view in the specified rectangle.
@@ -22,8 +22,6 @@ This method is invoked before [`drawRow(_:clipRect:)`](nstableview/drawrow(_:cli
 [`NSCell`](nscell.md)-based table views can override this method to change the manner in which they highlight selections.
 
 > **Note**:  This method should not be subclassed or overridden for a view-base table view. Instead, row drawing customization should be done by subclassing [`NSTableRowView`](nstablerowview.md).
-
- This method should not be subclassed or overridden for a view-base table view. Instead, row drawing customization should be done by subclassing [`NSTableRowView`](nstablerowview.md).
 
 ## Parameters
 

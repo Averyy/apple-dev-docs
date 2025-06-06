@@ -1,6 +1,6 @@
 # Collision detection
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Determine when entities collide with each other or the environment.
 
@@ -15,8 +15,6 @@ Turn an entity into a trigger by adding a [`CollisionComponent`](collisioncompon
 Turn an entity into a  by adding a [`PhysicsBodyComponent`](physicsbodycomponent.md) to the entity in addition to a [`CollisionComponent`](collisioncomponent.md). The [`PhysicsBodyComponent`](physicsbodycomponent.md) defines the physical properties of the entity, such as its mass and collision shape.
 
 > **Note**: RealityKit ignores an entity’s collision component mode if the entity also has a [`PhysicsBodyComponent`](physicsbodycomponent.md). An entity can be a rigid body, or a trigger, but not both at the same time.
-
-RealityKit ignores an entity’s collision component mode if the entity also has a [`PhysicsBodyComponent`](physicsbodycomponent.md). An entity can be a rigid body, or a trigger, but not both at the same time.
 
 ## Topics
 
@@ -66,4 +64,4 @@ RealityKit ignores an entity’s collision component mode if the entity also has
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/physics-collision-detection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/physics-collision-detection)*

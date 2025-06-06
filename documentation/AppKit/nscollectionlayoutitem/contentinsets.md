@@ -1,6 +1,6 @@
 # contentInsets
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The amount of space added around the content of the item to adjust its final size after its position is computed.
@@ -25,8 +25,6 @@ The following diagram shows the result of applying 2 points of content insets to
 
 > **Note**:  The value of this property is ignored for any axis that uses an estimated value for its dimension. For more information, see [`estimated(_:)`](nscollectionlayoutdimension/estimated(_:).md).
 
- The value of this property is ignored for any axis that uses an estimated value for its dimension. For more information, see [`estimated(_:)`](nscollectionlayoutdimension/estimated(_:).md).
-
 ## See Also
 
 - [var edgeSpacing: NSCollectionLayoutEdgeSpacing?](nscollectionlayoutitem/edgespacing.md)
@@ -35,4 +33,4 @@ The following diagram shows the result of applying 2 points of content insets to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscollectionlayoutitem/contentinsets)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscollectionlayoutitem/contentinsets)*

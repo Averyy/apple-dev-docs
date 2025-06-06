@@ -1,6 +1,6 @@
 # Displaying an Indoor Map
 
-**Framework**: MapKit
+**Framework**: Mapkit
 
 Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom overlays and points of interest.
 
@@ -15,8 +15,6 @@ The sample app demonstrates decoding, rendering, and styling of a small subset o
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`241: Adding Indoor Maps to your App and Website`](https://developer.apple.comhttps://developer.apple.com/wwdc19/241).
 
-This sample code project is associated with WWDC 2019 session [`241: Adding Indoor Maps to your App and Website`](https://developer.apple.comhttps://developer.apple.com/wwdc19/241).
-
 ## See Also
 
 - [class MKGeoJSONDecoder](mkgeojsondecoder.md)
@@ -29,4 +27,4 @@ This sample code project is associated with WWDC 2019 session [`241: Adding Indo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/displaying-an-indoor-map)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKit/displaying-an-indoor-map)*

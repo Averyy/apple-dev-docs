@@ -1,6 +1,6 @@
 # biases
 
-**Framework**: Core ML  
+**Framework**: Coreml  
 **Kind**: property
 
 The key you use to access the biases of a layer in a neural network model.
@@ -25,8 +25,6 @@ class var biases: MLParameterKey { get }
 The value type for the [`biases`](mlparameterkey/biases.md) key is an [`MLMultiArray`](mlmultiarray.md). You must scope this key with the name of the specific neural network layer whose biases you’d like to access. See [`scoped(to:)`](mlparameterkey/scoped(to:).md).
 
 > **Note**:  You can only override the biases of a model’s  layers. Model developers mark these layers as updatable with the [`Core ML Tools`](https://developer.apple.comhttps://coremltools.readme.io/).
-
- You can only override the biases of a model’s  layers. Model developers mark these layers as updatable with the [`Core ML Tools`](https://developer.apple.comhttps://coremltools.readme.io/).
 
 ## See Also
 

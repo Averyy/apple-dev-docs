@@ -1,6 +1,6 @@
 # Creating a camera extension with Core Media I/O
 
-**Framework**: Core Media I/O
+**Framework**: Coremediaio
 
 Build high-performance camera drivers that are secure and simple to deploy.
 
@@ -9,8 +9,6 @@ Build high-performance camera drivers that are secure and simple to deploy.
 Camera extensions are a new type of system extension available in macOS 12.3 and later. They provide a simple, secure model for building high-performance camera drivers for macOS. You package and install them with your app, which makes them simple to deploy, including through the App Store.
 
 > **Note**: Session 10022: [`Create camera extensions with Core Media I/O`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10022)
-
-Session 10022: [`Create camera extensions with Core Media I/O`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10022)
 
 The following illustration shows a high-level view of a camera extension.
 
@@ -25,8 +23,6 @@ A camera extension consists of three primary components:
 To simplify creating your own extensions, Xcode provides a Camera Extension template that provides a fully functional extension implementation. It creates a virtual camera device that renders a horizontal white line that moves up and down the display. This article shows how to configure the template’s output to build your own camera extension.
 
 > **Note**:  See the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework for additional information on building, installing, and debugging system extensions.
-
- See the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework for additional information on building, installing, and debugging system extensions.
 
 ##### Add Entitlements to Your Host App
 
@@ -112,8 +108,6 @@ Before the extension is available to the system, a person with Admin privileges 
 
 > 💡 **Tip**:  During development of your extension, it’s often useful to temporarily disable some security restrictions imposed by the system. See [`Debugging and testing system extensions`](https://developer.apple.com/documentation/DriverKit/debugging-and-testing-system-extensions) for more information.
 
- During development of your extension, it’s often useful to temporarily disable some security restrictions imposed by the system. See [`Debugging and testing system extensions`](https://developer.apple.com/documentation/DriverKit/debugging-and-testing-system-extensions) for more information.
-
 ##### Access the Custom Camera
 
 After you’ve allowed the system to use your custom extension, it’s automatically available as a selectable camera in system apps like FaceTime and PhotoBooth. Camera extensions are also fully compatible with [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) capture APIs, which means you can access your extension as an [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) object and use it like any other device. For example, to retrieve your custom camera extension (as well as any others on the system), retrieve it as an [`externalUnknown`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/DeviceType-swift.struct/externalUnknown) device type as shown below.
@@ -141,4 +135,4 @@ let externalDevices = discoverySession.devices
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coremediaio/creating-a-camera-extension-with-core-media-i-o)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreMediaIO/creating-a-camera-extension-with-core-media-i-o)*

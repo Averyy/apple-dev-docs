@@ -1,6 +1,6 @@
 # insert(contentsOf:beforeIndex:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Adds the specified sequence of entities to this collection in order, directly before the entity at the given index.
@@ -21,8 +21,6 @@ mutating func insert<S>(contentsOf sequence: S, beforeIndex index: Int) where S 
 #### Discussion
 
 > **Note**: This operation can invalidate the index order of any extant entities.
-
-This operation can invalidate the index order of any extant entities.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # generateConvex(from:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Creates a convex shape from the given mesh.
@@ -26,8 +26,6 @@ The new shape, defined by the convex hull of the vertices in `mesh`.
 #### Discussion
 
 > **Note**: Will throw an error if `mesh` does not define a nonempty convex volume.  For example, will fail if all the vertices in `mesh` are coplanar.
-
-Will throw an error if `mesh` does not define a nonempty convex volume.  For example, will fail if all the vertices in `mesh` are coplanar.
 
 ## Parameters
 

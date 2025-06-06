@@ -1,6 +1,6 @@
 # animate(motion:)
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: method
 
 Starts an animation sequence.
@@ -26,8 +26,6 @@ A progress object that reports the progress during execution of the animation se
 This method moves the dock accessory along a predefined trajectory to convey a characteristic. Do this only if you disable system tracking.
 
 > **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t connected, [`DockKitError.frameRateTooHigh`](dockkiterror/frameratetoohigh.md) if calling the method too frequently, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) in macOS.
-
-[`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t connected, [`DockKitError.frameRateTooHigh`](dockkiterror/frameratetoohigh.md) if calling the method too frequently, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) in macOS.
 
 ## Parameters
 

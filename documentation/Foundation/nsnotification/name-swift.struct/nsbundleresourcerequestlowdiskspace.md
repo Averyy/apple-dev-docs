@@ -25,8 +25,6 @@ After receiving this notification, the app should release any on-demand resource
 
 > **Note**:  This notification is generated independently of any other iOS notifications for low disk space.
 
- This notification is generated independently of any other iOS notifications for low disk space.
-
 
 ---
 

@@ -1,6 +1,6 @@
 # currentISO
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A constant to indicate not to specify a new ISO value, and instead set it to its current value.
@@ -22,8 +22,6 @@ class let currentISO: Float
 A special value that you may pass as the ISO parameter of the [`setExposureModeCustom(duration:iso:completionHandler:)`](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md) method to indicate that the caller doesn’t specify a value for the ISO property, and to instead set to its current value.
 
 > **Note**:  A device may be adjusting ISO at the time of the call, in which case the value set may differ from the value of thee [`iso`](avcapturedevice/iso.md) property.
-
- A device may be adjusting ISO at the time of the call, in which case the value set may differ from the value of thee [`iso`](avcapturedevice/iso.md) property.
 
 ## See Also
 

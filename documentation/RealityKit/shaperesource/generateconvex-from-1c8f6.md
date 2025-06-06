@@ -1,6 +1,6 @@
 # generateConvex(from:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Creates a convex shape from the given points asynchronously.
@@ -26,8 +26,6 @@ A new ShapeResource object defined by the convex hull of `points`.
 #### Discussion
 
 > **Note**: Will throw an error if `points` do not define a nonempty convex volume.  For example, will fail if all of the points in `points` are coplanar.
-
-Will throw an error if `points` do not define a nonempty convex volume.  For example, will fail if all of the points in `points` are coplanar.
 
 ## Parameters
 

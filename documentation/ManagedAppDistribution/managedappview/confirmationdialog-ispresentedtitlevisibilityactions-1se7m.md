@@ -1,6 +1,6 @@
 # confirmationDialog(_:isPresented:titleVisibility:actions:)
 
-**Framework**: ManagedAppDistribution  
+**Framework**: Managedappdistribution  
 **Kind**: method
 
 Presents a confirmation dialog when a given condition is true, using a string variable as a title.
@@ -53,8 +53,6 @@ The system may reorder the buttons based on their role and prominence.
 Dialogs include a standard dismiss action by default. If you provide a button with a role of `ButtonRole/cancel`, that button takes the place of the default dismiss action. You don’t have to dismiss the presentation with the cancel button’s action.
 
 > **Note**: In regular size classes in iOS, the system renders confirmation dialogs as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the standard dismiss action.
-
-In regular size classes in iOS, the system renders confirmation dialogs as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the standard dismiss action.
 
 ## Parameters
 

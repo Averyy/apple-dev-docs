@@ -57,15 +57,9 @@ For information about the language-level concurrency model that `DiscardingTaskG
 
 > **Note**: [`TaskGroup`](taskgroup.md)
 
-[`TaskGroup`](taskgroup.md)
-
 > **Note**: [`ThrowingTaskGroup`](throwingtaskgroup.md)
 
-[`ThrowingTaskGroup`](throwingtaskgroup.md)
-
 > **Note**: [`DiscardingTaskGroup`](discardingtaskgroup.md)
-
-[`DiscardingTaskGroup`](discardingtaskgroup.md)
 
 ## Topics
 
@@ -116,4 +110,4 @@ For information about the language-level concurrency model that `DiscardingTaskG
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/throwingdiscardingtaskgroup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/throwingdiscardingtaskgroup)*

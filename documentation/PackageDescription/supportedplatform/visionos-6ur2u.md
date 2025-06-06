@@ -1,6 +1,6 @@
 # visionOS(_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Configure the minimum deployment target version for the visionOS platform using a custom version string.
@@ -23,8 +23,6 @@ A `SupportedPlatform` instance.
 The version string must be a series of two or three dot-separated integers, such as `1.0` or `1.0.0`.
 
 > **Note**: First available in PackageDescription 5.9
-
-First available in PackageDescription 5.9
 
 ## Parameters
 

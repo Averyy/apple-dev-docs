@@ -1,6 +1,6 @@
 # MatterAddDeviceExtensionRequestHandler
 
-**Framework**: MatterSupport  
+**Framework**: Mattersupport  
 **Kind**: class
 
 The object that handles configuration and commissioning of a device into an ecosystem.
@@ -30,8 +30,6 @@ This class facilitates the user interface flow during the setup of a new Matter 
 If the [`MatterAddDeviceRequest.Topology`](matteradddevicerequest/topology-swift.struct.md) object in the request has two or more homes, the user interface flow displays a picker to allow selection of a home. If the object contains one home, that home is the selected home and the user interface flow doesn’t display a picker. If the object contains no home, then the user interface flow doesn’t display a picker, and any methods take a home parameter receive `nil`.
 
 > **Note**: Don’t call `super` within the overridden method.
-
-Don’t call `super` within the overridden method.
 
 ## Topics
 
@@ -86,4 +84,4 @@ Don’t call `super` within the overridden method.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MatterSupport/matteradddeviceextensionrequesthandler)*

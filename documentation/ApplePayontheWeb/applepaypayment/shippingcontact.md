@@ -1,6 +1,6 @@
 # shippingContact
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 The shipping contact selected by the user for this transaction.
@@ -60,8 +60,6 @@ Listing 2. Example of  after the user authorizes the transaction
 
 > **Note**:  Address information can come from a wide range of sources and may be in a different format than you expect. Always validate the information before you use it.
 
- Address information can come from a wide range of sources and may be in a different format than you expect. Always validate the information before you use it.
-
 ## See Also
 
 - [billingContact](applepaypayment/billingcontact.md)
@@ -72,4 +70,4 @@ Listing 2. Example of  after the user authorizes the transaction
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypayment/shippingcontact)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypayment/shippingcontact)*

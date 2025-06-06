@@ -1,6 +1,6 @@
 # NSHostingMenu
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: class
 
 An AppKit menu with menu items that are defined by a SwiftUI View.
@@ -23,8 +23,6 @@ A hosting menu’s `items` property will be updated based on the content of the 
 SwiftUI views hosted in the menu will be styled and behave identically to views in a [`Menu`](menu.md) or `View/contextMenu`. Make sure to use a `Group` or a view with multiple subviews as your top level container instead of an `HStack` or other container that would attempt to place all of your actions in a single menu item.
 
 > **Note**: When used as the menu of an `NSPopUpButton`, make sure `NSPopUpButtonCell.usesItemFromMenu` is set to `false`. When using a hosting menu with macOS 14, do not change the value of the `delegate` property. (Setting the delegate is permitted on macOS 15 and newer.)
-
-When used as the menu of an `NSPopUpButton`, make sure `NSPopUpButtonCell.usesItemFromMenu` is set to `false`. When using a hosting menu with macOS 14, do not change the value of the `delegate` property. (Setting the delegate is permitted on macOS 15 and newer.)
 
 For example, the following code would set up the first part of the Finder’s context menu, both in the Action button in the toolbar and as a context menu:
 
@@ -114,4 +112,4 @@ List(directoryContents, selection: $selection) { entry in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/nshostingmenu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/nshostingmenu)*

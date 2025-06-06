@@ -1,6 +1,6 @@
 # onPencilSqueeze(perform:)
 
-**Framework**: Journaling Suggestions  
+**Framework**: Journalingsuggestions  
 **Kind**: method
 
 Adds an action to perform when the user squeezes their Apple Pencil.
@@ -72,8 +72,6 @@ var body: some View {
 ```
 
 > **Note**: If multiple views with the `onPencilSqueeze` view modifier are visible, all their action closures will be performed when the user squeezes their Apple Pencil.
-
-If multiple views with the `onPencilSqueeze` view modifier are visible, all their action closures will be performed when the user squeezes their Apple Pencil.
 
 ## Parameters
 

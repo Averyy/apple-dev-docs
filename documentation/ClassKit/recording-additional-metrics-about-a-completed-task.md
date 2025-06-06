@@ -1,6 +1,6 @@
 # Recording additional metrics about a completed task
 
-**Framework**: ClassKit
+**Framework**: Classkit
 
 Add an activity item to an activity to record additional information about a student’s attempt to complete a task.
 
@@ -46,8 +46,6 @@ CLSDataStore.shared.mainAppContext.descendant(matchingIdentifierPath: identifier
 
 > **Note**:  Always use the same type of primary activity item for a given kind of activity. For example, activities generated for a particular quiz context should always have a primary activity item type of either a score or a pass/fail. Don’t use one value in some places and another in other places. Inconsistent assignment of primary activity items can confuse teachers when they try to interpret reported results.
 
- Always use the same type of primary activity item for a given kind of activity. For example, activities generated for a particular quiz context should always have a primary activity item type of either a score or a pass/fail. Don’t use one value in some places and another in other places. Inconsistent assignment of primary activity items can confuse teachers when they try to interpret reported results.
-
 ##### Dont Overwhelm Teachers with Data
 
 Use activity items to provide insights into a student’s interaction with your app. A quiz score, for example, demonstrates clearly and quantitatively how well a student understands the corresponding material.
@@ -68,4 +66,4 @@ On the other hand, don’t collect data just for the sake of collecting data. Re
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/recording-additional-metrics-about-a-completed-task)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/recording-additional-metrics-about-a-completed-task)*

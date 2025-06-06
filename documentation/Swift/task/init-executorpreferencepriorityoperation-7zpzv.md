@@ -31,8 +31,6 @@ You need to keep a reference to the task if you want to cancel it by calling the
 
 > **Note**: `withTaskExecutorPreference(_:operation:)`
 
-`withTaskExecutorPreference(_:operation:)`
-
 ## Parameters
 
 - `taskExecutor`: The preferred task executor for this task,   and any child tasks created by it. Explicitly passing   is   interpreted as “no preference”.

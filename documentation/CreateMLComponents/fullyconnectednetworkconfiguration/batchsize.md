@@ -1,6 +1,6 @@
 # batchSize
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: property
 
 The number of examples to use per mini-batch.
@@ -26,8 +26,6 @@ A larger batch size will speed up computation when training, as long as the batc
 
 > **Note**: This parameter is only used by the `fitted` method. When using the `update` method it’s up to you to do batching.
 
-This parameter is only used by the `fitted` method. When using the `update` method it’s up to you to do batching.
-
 ## See Also
 
 - [var dropoutProbability: Float](fullyconnectednetworkconfiguration/dropoutprobability.md)
@@ -48,4 +46,4 @@ This parameter is only used by the `fitted` method. When using the `update` meth
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/fullyconnectednetworkconfiguration/batchsize)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/fullyconnectednetworkconfiguration/batchsize)*

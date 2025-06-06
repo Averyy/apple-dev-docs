@@ -1,6 +1,6 @@
 # beginObservingDirectory(at:)
 
-**Framework**: Finder Sync  
+**Framework**: Findersync  
 **Kind**: method
 
 Tells the extension that the user is looking at a monitored directory or at one of its subdirectories.
@@ -19,8 +19,6 @@ optional func beginObservingDirectory(at url: URL)
 Override this method to receive notifications when the user opens the contents of a monitored directory or one of its subdirectories in the Finder. The system calls `beginObservingDirectoryAtURL:` only once for each unique URL. As long as the content remains visible in at least one Finder window, any additional Finder windows that open to the same URL are ignored.
 
 > **Note**: The system creates additional instances of your extension for any Open and Save dialogs. These extensions receive their own calls to `beginObservingDirectoryAtURL:`, even if the directory is already open in a Finder window.
-
-The system creates additional instances of your extension for any Open and Save dialogs. These extensions receive their own calls to `beginObservingDirectoryAtURL:`, even if the directory is already open in a Finder window.
 
 ## Parameters
 

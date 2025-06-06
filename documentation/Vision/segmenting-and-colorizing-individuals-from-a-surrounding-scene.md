@@ -100,8 +100,6 @@ Task { @MainActor in
 
 > **Note**: Perform UI updates on the main thread. Updating the UI on other threads can lead to unstable behavior and hangs.
 
-Perform UI updates on the main thread. Updating the UI on other threads can lead to unstable behavior and hangs.
-
 ##### Colorize Individual People in an Image
 
 The sample’s `InstanceMaskResults` class generates segmented images for up to four people in a scene. It conforms to the `SegmentationResults` protocol. The sample initializes the class with the [`VNInstanceMaskObservation`](vninstancemaskobservation.md) results and a [`VNImageRequestHandler`](vnimagerequesthandler.md).
@@ -174,4 +172,4 @@ if selectedSegments.contains(0) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/segmenting-and-colorizing-individuals-from-a-surrounding-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/segmenting-and-colorizing-individuals-from-a-surrounding-scene)*

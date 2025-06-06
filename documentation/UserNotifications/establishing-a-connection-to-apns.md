@@ -23,8 +23,6 @@ To send a notification to a person’s device, construct and send a POST notific
 
 > **Note**: Depending on the connection you’re establishing with APNs, each request has a different path and header requirement.
 
-Depending on the connection you’re establishing with APNs, each request has a different path and header requirement.
-
 ##### Send a Request to Apns
 
 APNs requires the use of HPACK (header compression for HTTP/2), which prevents repeatedly storing header keys and values. APNs maintains a small dynamic table for HPACK. To avoid filling up that table, encode your headers in the following way—especially when using many streams:
@@ -62,4 +60,4 @@ $ openssl s_client -connect api.development.push.apple.com:443 -cert YourSSLCert
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/establishing-a-connection-to-apns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/establishing-a-connection-to-apns)*

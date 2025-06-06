@@ -1,6 +1,6 @@
 # Developing a browser app that uses an alternative browser engine
 
-**Framework**: BrowserEngineKit
+**Framework**: Browserenginekit
 
 Create a web browser app and associated extensions.
 
@@ -158,8 +158,6 @@ The web-content process checks what kind of data it’s trying to load. If it’
 
 > **Note**:  To open a file in your browser, send a bookmark with implicit security scope to the web-content process, so that it can extend its sandbox to access the file. For more information, see [`Accessing files in browser extensions`](accessing-files-in-browser-extensions.md).
 
- To open a file in your browser, send a bookmark with implicit security scope to the web-content process, so that it can extend its sandbox to access the file. For more information, see [`Accessing files in browser extensions`](accessing-files-in-browser-extensions.md).
-
 In your browser app, you need to handle any networking errors at this point. If the networking extension loads the content, parse it using your alternative browser engine to create rendering commands, that you send to the rendering process. In the rendering process, update the layer that the browser app is hosting.
 
 Finally, the web-content process replies to the browser app, telling the `WebContentView` to update its view.
@@ -178,4 +176,4 @@ Finally, the web-content process replies to the browser app, telling the `WebCon
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/developing-a-browser-app-that-uses-an-alternative-browser-engine)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/developing-a-browser-app-that-uses-an-alternative-browser-engine)*

@@ -1,6 +1,6 @@
 # actionSheet(isPresented:content:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Presents an action sheet when a given condition is true.
@@ -52,8 +52,6 @@ struct ConfirmEraseItems: View {
 ![An action sheet with a title and message showing the use of default and destructive button types.](https://docs-assets.developer.apple.com/published/bf17402357d695dc8c4b82d669a0ef22/SwiftUI-View-ActionSheetisPresentedContent%402x.png)
 
 > **Note**: In regular size classes in iOS, the system renders alert sheets as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the default dismiss button.
-
-In regular size classes in iOS, the system renders alert sheets as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the default dismiss button.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # onTapGesture(count:perform:)
 
-**Framework**: DeviceActivity  
+**Framework**: Deviceactivity  
 **Kind**: method
 
 Adds an action to perform when this view recognizes a tap gesture.
@@ -25,8 +25,6 @@ func onTapGesture(count: Int = 1, perform action: @escaping () -> Void) -> some 
 Use this method to perform the specified `action` when the user clicks or taps on the view or container `count` times.
 
 > **Note**: If you create a control that’s functionally equivalent to a `Button`, use `ButtonStyle` to create a customized button instead.
-
-If you create a control that’s functionally equivalent to a `Button`, use `ButtonStyle` to create a customized button instead.
 
 In the example below, the color of the heart images changes to a random color from the `colors` array whenever the user clicks or taps on the view twice:
 

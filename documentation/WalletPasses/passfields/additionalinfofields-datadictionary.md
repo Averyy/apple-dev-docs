@@ -20,8 +20,6 @@ object PassFields.AdditionalInfoFields
 
 > **Note**:  The Additional Info section is only available on poster event tickets.
 
- The Additional Info section is only available on poster event tickets.
-
 ## Relationships
 
 ### Inherits From

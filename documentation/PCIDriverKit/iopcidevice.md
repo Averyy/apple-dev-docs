@@ -1,6 +1,6 @@
 # IOPCIDevice
 
-**Framework**: PCIDriverKit  
+**Framework**: Pcidriverkit  
 **Kind**: class
 
 A DriverKit provider object that manages access to your custom PCI hardware.
@@ -20,8 +20,6 @@ class IOPCIDevice;
 Use an `IOPCIDevice` object to enable or manage the custom features of your PCI hardware. You don’t create instances of this class directly. Instead, the system creates an `IOPCIDevice` object and passes it to the [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) subclass of your custom driver. Use the methods of this object to read and write your hardware’s configuration settings. You can also use it to read and write any custom data in your device’s memory-mapped I/O.
 
 > **Note**:  The endpoint driver is responsible for enabling the Memory Space Enable and Bus Master Enable settings each time it configures the PCI device. When a crash occurs, or when the system unloads your driver, the system disables these features.
-
- The endpoint driver is responsible for enabling the Memory Space Enable and Bus Master Enable settings each time it configures the PCI device. When a crash occurs, or when the system unloads your driver, the system disables these features.
 
 ## Topics
 
@@ -139,4 +137,4 @@ Use an `IOPCIDevice` object to enable or manage the custom features of your PCI 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/pcidriverkit/iopcidevice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PCIDriverKit/iopcidevice)*

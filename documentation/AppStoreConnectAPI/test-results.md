@@ -1,6 +1,6 @@
 # Test Results
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read test results for test actions Xcode Cloud performs.
 
@@ -16,8 +16,6 @@ The `ciTestResult` resource represents the test results that Xcode Cloud makes a
 - A unique identifier for the tests Xcode Cloud ran
 
 > **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
-
- This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
 
@@ -44,4 +42,4 @@ The `ciTestResult` resource represents the test results that Xcode Cloud makes a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/test-results)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/test-results)*

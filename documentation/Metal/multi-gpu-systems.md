@@ -33,8 +33,6 @@ For more information about external GPU configurations, see [`Use an external gr
 
 > **Note**:  The system may gain or lose an external GPU at any time (see [`Handling External GPU Additions and Removals`](handling-external-gpu-additions-and-removals.md)).
 
- The system may gain or lose an external GPU at any time (see [`Handling External GPU Additions and Removals`](handling-external-gpu-additions-and-removals.md)).
-
 ## Topics
 
 ### Locating GPUs
@@ -83,4 +81,4 @@ For more information about external GPU configurations, see [`Use an external gr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/multi-gpu-systems)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/multi-gpu-systems)*

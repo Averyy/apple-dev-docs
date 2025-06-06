@@ -1,6 +1,6 @@
 # Displaying a Read-Only Pickup Address
 
-**Framework**: PassKit (Apple Pay and Wallet)
+**Framework**: Passkit
 
 Configure a payment request to display a read-only pickup address on the payment sheet.
 
@@ -9,8 +9,6 @@ Configure a payment request to display a read-only pickup address on the payment
 The payment sheet displays the shipping address in the same place whether the shipping method is delivery or pickup. You can prevent the user from editing the address of a pickup and still require other information about the person making the pickup.
 
 > **Note**:  This feature is available in apps built for iOS 15, iPadOS 15, watchOS 8, macOS 12, and apps built with Mac Catalyst 15 and later.
-
- This feature is available in apps built for iOS 15, iPadOS 15, watchOS 8, macOS 12, and apps built with Mac Catalyst 15 and later.
 
 ##### Add a Read Only Pickup Address
 
@@ -57,8 +55,6 @@ paymentRequest.shippingContactEditingMode = .storePickup
 
 > **Note**:  Determine whether to disable editing of the shipping contact field before displaying the payment sheet. Switching from a noneditable to an editable shipping contact field requires the user to start the payment process over again.
 
- Determine whether to disable editing of the shipping contact field before displaying the payment sheet. Switching from a noneditable to an editable shipping contact field requires the user to start the payment process over again.
-
 ## See Also
 
 - [var dateComponentsRange: PKDateComponentsRange?](pkshippingmethod/datecomponentsrange.md)
@@ -79,4 +75,4 @@ paymentRequest.shippingContactEditingMode = .storePickup
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/passkit/displaying-a-read-only-pickup-address)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/displaying-a-read-only-pickup-address)*

@@ -1,6 +1,6 @@
 # worldTransform
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: property
 
 The world transform applied to the node.
@@ -25,8 +25,6 @@ var worldTransform: SCNMatrix4 { get }
 A world transform is the node’s coordinate space transform relative to the scene’s coordinate space. This transform is the concatenation of the node’s [`transform`](scnnode/transform.md) property with that of its parent node, the parent’s parent, and so on up to the [`rootNode`](scnscene/rootnode.md) object of the scene.
 
 > **Note**:  In macOS 10.13, iOS 11, tvOS 11, or watchOS 4 (and later), you can set this value with the [`setWorldTransform(_:)`](scnnode/setworldtransform(_:).md) method.
-
- In macOS 10.13, iOS 11, tvOS 11, or watchOS 4 (and later), you can set this value with the [`setWorldTransform(_:)`](scnnode/setworldtransform(_:).md) method.
 
 ## See Also
 

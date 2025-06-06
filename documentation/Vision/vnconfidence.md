@@ -25,8 +25,6 @@ The Vision framework normalizes this value to `[0.0, 1.0]` under most circumstan
 
 > **Note**:  When the results come from a [`VNCoreMLRequest`](vncoremlrequest.md), Vision forwards confidence values as-is and doesn’t normalize them.
 
- When the results come from a [`VNCoreMLRequest`](vncoremlrequest.md), Vision forwards confidence values as-is and doesn’t normalize them.
-
 ## See Also
 
 - [var minimumAspectRatio: VNAspectRatio](vndetectrectanglesrequest/minimumaspectratio.md)
@@ -49,4 +47,4 @@ The Vision framework normalizes this value to `[0.0, 1.0]` under most circumstan
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/vnconfidence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/vnconfidence)*

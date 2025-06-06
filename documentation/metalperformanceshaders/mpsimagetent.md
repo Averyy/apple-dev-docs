@@ -1,6 +1,6 @@
 # MPSImageTent
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A filter that convolves an image with a tent filter.
@@ -30,10 +30,6 @@ Like a box filter, this arrangement allows for much faster algorithms, especiall
 The tent blur is a separable filter and the Metal Performance Shaders framework will act accordingly to give the best performance for multi-dimensional blurs.
 
 > **Note**: The box filter, while fast, may yield square-ish looking blur effects. However, multiple passes of the box filter tend to smooth out with each additional pass. For example, two 3-wide box blurs produces the same effective convolution as a 5-wide tent blur. In effect, addition passes tend to approximate a Gaussian line shape.
-
-The box filter, while fast, may yield square-ish looking blur effects. However, multiple passes of the box filter tend to smooth out with each additional pass. For example, two 3-wide box blurs produces the same effective convolution as a 5-wide tent blur.
-
-In effect, addition passes tend to approximate a Gaussian line shape.
 
 ## Relationships
 

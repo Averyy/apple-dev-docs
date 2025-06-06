@@ -1,6 +1,6 @@
 # Scaling Fonts Automatically
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Scale text in your interface automatically using Dynamic Type.
 
@@ -45,8 +45,6 @@ label.adjustsFontForContentSizeCategory = true
 
 > **Note**:  In Interface Builder, the Dynamic Type option to automatically adjust fonts applies only to text styles or scaled fonts returned by [`UIFontMetrics`](uifontmetrics.md). It has no effect on custom fonts set in Interface Builder.
 
- In Interface Builder, the Dynamic Type option to automatically adjust fonts applies only to text styles or scaled fonts returned by [`UIFontMetrics`](uifontmetrics.md). It has no effect on custom fonts set in Interface Builder.
-
 Fonts created through [`UIFontMetrics`](uifontmetrics.md) behave the same as the preferred fonts the system provides. The system scales to match the user’s selected text size in a manner that’s similar to the way the text style you supply is scaled.
 
 ## See Also
@@ -65,4 +63,4 @@ Fonts created through [`UIFontMetrics`](uifontmetrics.md) behave the same as the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/scaling-fonts-automatically)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/scaling-fonts-automatically)*

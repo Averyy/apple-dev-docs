@@ -1,6 +1,6 @@
 # init(_:title:subtitle:image:)
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: init
 
 Creates an item with the specified value and visual attributes.
@@ -23,8 +23,6 @@ init(_ value: Value, title: LocalizedStringResource, subtitle: LocalizedStringRe
 #### Discussion
 
 > **Note**: The system uses the provided values even when `value` conforms to the [`DisplayRepresentable`](displayrepresentable.md) protocol.
-
-The system uses the provided values even when `value` conforms to the [`DisplayRepresentable`](displayrepresentable.md) protocol.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # enableExperimentalFeature(_:_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Enable an experimental feature with the given name.
@@ -21,8 +21,6 @@ An experimental feature is one that’s in development, but is not yet available
 You can add and use multiple experimental features in a given target without affecting its dependencies. Targets will ignore any  unknown experimental features.
 
 > **Note**: First available in PackageDescription 5.8.
-
-First available in PackageDescription 5.8.
 
 ## Parameters
 

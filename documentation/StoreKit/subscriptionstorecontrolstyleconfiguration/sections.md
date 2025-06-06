@@ -1,6 +1,6 @@
 # sections
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: property
 
 The subscription options to merchandise by sections.
@@ -28,8 +28,6 @@ Each [`SubscriptionStoreControlStyleConfiguration.Section`](subscriptionstorecon
 The elements of [`sections`](subscriptionstorecontrolstyleconfiguration/sections.md) represent [`SubscriptionOptionSection`](subscriptionoptionsection.md) instances. A minimal store has one implicit section, with the [`sections`](subscriptionstorecontrolstyleconfiguration/sections.md) property containing a single element. The single element’s [`header`](subscriptionstorecontrolstyleconfiguration/section/header-swift.property.md) and [`footer`](subscriptionstorecontrolstyleconfiguration/section/footer-swift.property.md) properties are both `nil`, and its [`options`](subscriptionstorecontrolstyleconfiguration/section/options.md) property is identical to the [`options`](subscriptionstorecontrolstyleconfiguration/options.md) property on [`SubscriptionStoreControlStyleConfiguration`](subscriptionstorecontrolstyleconfiguration.md).
 
 > **Note**:  Typically, a style needs only one of the properties: [`options`](subscriptionstorecontrolstyleconfiguration/options.md) or [`sections`](subscriptionstorecontrolstyleconfiguration/sections.md). Use the [`sections`](subscriptionstorecontrolstyleconfiguration/sections.md) property if your style supports sections.
-
- Typically, a style needs only one of the properties: [`options`](subscriptionstorecontrolstyleconfiguration/options.md) or [`sections`](subscriptionstorecontrolstyleconfiguration/sections.md). Use the [`sections`](subscriptionstorecontrolstyleconfiguration/sections.md) property if your style supports sections.
 
 Use the initializer of the [`SubscriptionStoreView`](subscriptionstoreview.md) to determine the contents of the [`sections`](subscriptionstorecontrolstyleconfiguration/sections.md) array.
 

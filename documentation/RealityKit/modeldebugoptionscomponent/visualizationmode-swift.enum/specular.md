@@ -1,6 +1,6 @@
 # ModelDebugOptionsComponent.VisualizationMode.specular
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: case
 
 A mode that displays en entity’s shininess as its surface color.
@@ -23,8 +23,6 @@ case specular
 Add a [`ModelDebugOptionsComponent`](modeldebugoptionscomponent.md) with a visualization mode of `specular` to an entity to tell RealityKit to draw the entity’s calculated specularity as its surface color. RealityKit uses `specular` to calculate bright highlights caused by shiny surfaces reflecting light. RealityKit draws the specularity value as a grayscale value from black (`0.0`) to white (`1.0`).
 
 > **Note**: In most cases, RealityKit calculates specular highlights based on an entity’s `roughness` and `metallic` values, and not its `specular` value, which is usually `0.0`. As a result, this mode causes most entities to render in solid black. Only entities that need highlights in addition to the ones RealityKit calculates from `roughness` and `metallic` need `specular` values greater than zero. Examples of entities that might use `specular` to create supplemental highlights are gemstones and cut glass.
-
-In most cases, RealityKit calculates specular highlights based on an entity’s `roughness` and `metallic` values, and not its `specular` value, which is usually `0.0`. As a result, this mode causes most entities to render in solid black. Only entities that need highlights in addition to the ones RealityKit calculates from `roughness` and `metallic` need `specular` values greater than zero. Examples of entities that might use `specular` to create supplemental highlights are gemstones and cut glass.
 
 RealityKit calculates specularity for entities with a [`SimpleMaterial`](simplematerial.md) and for entities imported from a USDZ file. For other entities, this option has no effect.
 

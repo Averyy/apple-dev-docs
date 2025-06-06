@@ -1,6 +1,6 @@
 # Responding to the Action button on Apple Watch Ultra
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Use App Intents to register actions for your app.
 
@@ -13,8 +13,6 @@ For workout apps, you can implement the following protocols:
 For dive apps, you can implement the following protocols:
 
 > ❗ **Important**: When creating intents for the Action button, don’t implement them in an [`AppIntentsExtension`](appintentsextension.md). Always implement the intents directly in your watchOS app.
-
-When creating intents for the Action button, don’t implement them in an [`AppIntentsExtension`](appintentsextension.md). Always implement the intents directly in your watchOS app.
 
 ##### Start a New Workout Session
 
@@ -61,8 +59,6 @@ struct MyStartWorkoutIntent: StartWorkoutIntent {
 
 > ❗ **Important**: Define your implementation’s `workoutStyle` property using the [`AppIntent.Parameter`](appintent/parameter.md) property wrapper.
 
-Define your implementation’s `workoutStyle` property using the [`AppIntent.Parameter`](appintent/parameter.md) property wrapper.
-
 You can dynamically change the list of suggested workouts by changing the value of the [`suggestedWorkouts`](startworkoutintent/suggestedworkouts.md) property and then calling [`invalidateSuggestedWorkouts()`](startworkoutintent/invalidatesuggestedworkouts().md), which tells the system to reread the suggested workouts.
 
 Next, set the display strings for the intent by defining the `displayRepresentation` just after the intent’s initializer.
@@ -108,8 +104,6 @@ Similarly, if you update your app and change the data types that the workout ses
 To ensure that your app requests authorization for the current set of HealthKit data types it intends to use during its workout sessions, you need to schedule an authorization request from within your intent’s [`perform()`](appintent/perform().md) method. Because someone using your app doesn’t have access to its user interface until after the `perform()` method returns, you need to schedule the request authorization using a [`Task`](https://developer.apple.com/documentation/Swift/Task).
 
 > **Note**: If your app has never requested authorization for any HealthKit data types, the system just launches your app when someone presses the Action button. It doesn’t call your intent’s [`perform()`](appintent/perform().md) method.
-
-If your app has never requested authorization for any HealthKit data types, the system just launches your app when someone presses the Action button. It doesn’t call your intent’s [`perform()`](appintent/perform().md) method.
 
 Before authorizing the HealthKit data, create and start your workout session.
 
@@ -209,8 +203,6 @@ After implementing your [`StartWorkoutIntent`](startworkoutintent.md), build and
 The device starts a new workout session when you press the Action button.
 
 > ❗ **Important**: The system always launches your app before running the [`perform()`](appintent/perform().md) method for your [`StartWorkoutIntent`](startworkoutintent.md) or [`StartDiveIntent`](startdiveintent.md) structures.  By default, these intents set their [`openAppWhenRun`](appintent/openappwhenrun.md) property to `true`. To ensure these intents run as expected, don’t change the property’s value.
-
-The system always launches your app before running the [`perform()`](appintent/perform().md) method for your [`StartWorkoutIntent`](startworkoutintent.md) or [`StartDiveIntent`](startdiveintent.md) structures.  By default, these intents set their [`openAppWhenRun`](appintent/openappwhenrun.md) property to `true`. To ensure these intents run as expected, don’t change the property’s value.
 
 ##### Support Multiple Workout Types
 
@@ -421,8 +413,6 @@ To read live depth, water pressure, and water temperature data, see [`Accessing 
 
 > ❗ **Important**: Before you can access live dive data, your app needs to include an entitlement to access submersion data. For more information, see [`Express interest in the Submerged Depth and Pressure API`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api/).
 
-Before you can access live dive data, your app needs to include an entitlement to access submersion data. For more information, see [`Express interest in the Submerged Depth and Pressure API`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api/).
-
 Unlike workout sessions, the start dive intent supports only a single type of session. You can donate next actions for your dive session; however, you can’t create intents to pause or resume the session.
 
 ##### Passing Data to the Intents
@@ -451,8 +441,6 @@ One of the main advantages of dependency injection is that you can easily replac
 
 > **Note**: You can only use dependency injection to pass data objects from your main app to its intents. If you need to pass the data to other parts of your app, you need to use a different approach.
 
-You can only use dependency injection to pass data objects from your main app to its intents. If you need to pass the data to other parts of your app, you need to use a different approach.
-
 ##### Debug Intents
 
 To see console output and respond to breakpoints in Xcode, use the following steps to debug your intents:
@@ -479,4 +467,4 @@ Any logging from your intents appears in Xcode’s console. The system also paus
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/actionbuttonarticle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/actionbuttonarticle)*

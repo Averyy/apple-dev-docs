@@ -1,6 +1,6 @@
 # Supporting Multiple Users in Your tvOS App
 
-**Framework**: TV Services
+**Framework**: Tvservices
 
 Store separate data for each user with the new Runs as Current User capability.
 
@@ -12,11 +12,7 @@ Store separate data for each user with the new Runs as Current User capability.
 
 > **Note**: This sample code project is associated with WWDC20 session [`10645: Support Multiple Users in Your tvOS App`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10645).
 
-This sample code project is associated with WWDC20 session [`10645: Support Multiple Users in Your tvOS App`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10645).
-
 > **Note**: You must run this sample code project on a physical device.
-
-You must run this sample code project on a physical device.
 
 ## See Also
 
@@ -30,4 +26,4 @@ You must run this sample code project on a physical device.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvservices/supporting-multiple-users-in-your-tvos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVServices/supporting-multiple-users-in-your-tvos-app)*

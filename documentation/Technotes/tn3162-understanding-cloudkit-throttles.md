@@ -59,8 +59,6 @@ Use these example messages to determine if your app hits CloudKit throttles. If 
 
 > **Note**: The system on a device can throttle CloudKit requests for other reasons. For example, when the battery level on an iPhone or Apple Watch runs low, iOS or watchOS may decide to defer a CloudKit operation, and this kind of throttle expires only after the battery returns to a high level. For more information, see [`Understand system throttles`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-system-throttles.md).
 
-The system on a device can throttle CloudKit requests for other reasons. For example, when the battery level on an iPhone or Apple Watch runs low, iOS or watchOS may decide to defer a CloudKit operation, and this kind of throttle expires only after the battery returns to a high level. For more information, see [`Understand system throttles`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-system-throttles.md).
-
 #### Handle Cloudkit Throttles
 
 CloudKit throttles are implemented to balance the use of CloudKit resources and achieve the best overall user experience of the service. When an app hits throttles, CloudKit stops accepting its requests until the throttles expire. There is no API for an app to configure the expiration time.
@@ -72,8 +70,6 @@ The best strategy to handle CloudKit throttles is to avoid them in the first pla
 - For operations that are not critical for the current launch session, schedule them as background tasks using the [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks) framework to have the system run the operations when it determines appropriate.
 
 > **Note**: Apps that use [`CKSyncEngine`](https://developer.apple.com/documentation/CloudKit/CKSyncEngine-5sie5), which is a part of the CloudKit framework, don’t need to handle the errors. When hitting a throttle,  `CKSyncEngine` respects it and automatically re-schedules the synchronization tasks after the `retry-after` time.
-
-Apps that use [`CKSyncEngine`](https://developer.apple.com/documentation/CloudKit/CKSyncEngine-5sie5), which is a part of the CloudKit framework, don’t need to handle the errors. When hitting a throttle,  `CKSyncEngine` respects it and automatically re-schedules the synchronization tasks after the `retry-after` time.
 
 Similarly, apps that use CloudKit Web Services or CloudKit JS need to gracefully handle the throttle error the CloudKit server returns, and honor the `retry-after` time.
 
@@ -121,4 +117,4 @@ A retried request is not guaranteed to succeed. It may be throttled again, with 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3162-understanding-cloudkit-throttles)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3162-understanding-cloudkit-throttles)*

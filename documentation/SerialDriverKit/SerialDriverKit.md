@@ -1,6 +1,6 @@
 # SerialDriverKit
 
-**Framework**: SerialDriverKit  
+**Framework**: Serialdriverkit  
 **Kind**: module
 
 Develop drivers for serial I/O devices connected to your Mac.
@@ -15,8 +15,6 @@ The SerialDriverKit framework supports the development of drivers for devices th
 Package your driver in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade the driver on the user’s Mac.
 
 > **Note**:  SerialDriverKit is available on macOS.
-
- SerialDriverKit is available on macOS.
 
 ## Topics
 

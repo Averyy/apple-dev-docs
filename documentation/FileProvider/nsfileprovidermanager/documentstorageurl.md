@@ -1,6 +1,6 @@
 # documentStorageURL
 
-**Framework**: File Provider  
+**Framework**: Fileprovider  
 **Kind**: property
 
 The root URL for all shared documents.
@@ -24,8 +24,6 @@ The container URL refers to an app group container directory used by the `NSFile
 
 > **Note**:  While this property is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
 
- While this property is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
-
 ## See Also
 
 - [class var `default`: NSFileProviderManager](nsfileprovidermanager/default.md)
@@ -36,4 +34,4 @@ The container URL refers to an app group container directory used by the `NSFile
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/documentstorageurl)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/nsfileprovidermanager/documentstorageurl)*

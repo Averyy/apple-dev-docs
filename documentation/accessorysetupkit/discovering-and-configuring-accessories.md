@@ -1,6 +1,6 @@
 # Discovering and configuring accessories
 
-**Framework**: AccessorySetupKit
+**Framework**: Accessorysetupkit
 
 Detect nearby accessories and facilitate their setup.
 
@@ -22,8 +22,6 @@ To prepare your app to discover accessories, add the `NSAccessorySetupKitSupport
 If you add `Bluetooth` to the list of supported protocols, you also need to add the following keys and values to your app’s information property list:
 
 > ❗ **Important**:  If your app tries to discover Bluetooth accessories during setup without supplying these keys and values, or uses identifiers, names, or services that it doesn’t include in its information property list, the app crashes. This only affects use of AccessorySetupKit discovery and selection; you can use other services and properties on the accessory after the person using the app selects it.
-
- If your app tries to discover Bluetooth accessories during setup without supplying these keys and values, or uses identifiers, names, or services that it doesn’t include in its information property list, the app crashes. This only affects use of AccessorySetupKit discovery and selection; you can use other services and properties on the accessory after the person using the app selects it.
 
 ##### Activate a Discovery Session
 
@@ -70,8 +68,6 @@ override func viewDidLoad() {
 When the session activates, its [`accessories`](asaccessorysession/accessories.md) array contains any accessories previously authorized for the app, which you can inspect. To discover new devices, your app needs to show an accessory picker. The person using the app uses this picker to choose the accessory to configure.
 
 > **Note**: If someone renames a previously-discovered Wi-Fi accessory, it becomes discoverable again by the picker.
-
-If someone renames a previously-discovered Wi-Fi accessory, it becomes discoverable again by the picker.
 
 Create instances of [`ASPickerDisplayItem`](aspickerdisplayitem.md) that describe the items in the session that your app can configure. Collect these items in an array and pass them to the session for the operating system to present a picker:
 
@@ -126,8 +122,6 @@ For items you want to migrate, set one or both of the following:
 - A [`peripheralIdentifier`](asmigrationdisplayitem/peripheralidentifier.md), which corresponds to the [`identifier`](https://developer.apple.com/documentation/CoreBluetooth/CBPeer/identifier) property of the [`CBPeer`](https://developer.apple.com/documentation/CoreBluetooth/CBPeer) type.
 
 > ❗ **Important**: Don’t initialize a [`CBCentralManager`](https://developer.apple.com/documentation/CoreBluetooth/CBCentralManager) before migration is complete. If you do, your callback handler receives an error and the picker fails to appear.
-
-Don’t initialize a [`CBCentralManager`](https://developer.apple.com/documentation/CoreBluetooth/CBCentralManager) before migration is complete. If you do, your callback handler receives an error and the picker fails to appear.
 
 ##### Connect and Configure the Selected Device
 

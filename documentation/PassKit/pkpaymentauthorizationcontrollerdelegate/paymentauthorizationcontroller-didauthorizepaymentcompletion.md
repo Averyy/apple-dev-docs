@@ -1,6 +1,6 @@
 # paymentAuthorizationController(_:didAuthorizePayment:completion:)
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: method
 
 Tells the delegate that the user authorized the payment request, and asks for a result.
@@ -24,8 +24,6 @@ optional func paymentAuthorizationController(_ controller: PKPaymentAuthorizatio
 This method is called after the payment request is authorized. You submit the payment information to your payment processor to authorize the transaction, and then call the completion block.
 
 > **Note**:  The delegate receives no further callbacks except [`paymentAuthorizationControllerDidFinish(_:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish(_:).md) until it has invoked the completion block.
-
- The delegate receives no further callbacks except [`paymentAuthorizationControllerDidFinish(_:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish(_:).md) until it has invoked the completion block.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # contrastAmount
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: instp
 
 A value that indicates the amount of local contrast to apply to the edges of the image.
@@ -24,8 +24,6 @@ var contrastAmount: Float { get set }
 The value should be in the range of `0...1`. The default value varies by image. A value of `0` indicates no contrast, and a value of `1` indicates maximum contrast.
 
 > **Note**: A value of [`false`](https://developer.apple.com/documentation/swift/false) for [`isContrastSupported`](cirawfilter/3801621-iscontrastsupported.md) indicates that the current image doesn’t support this adjustment.
-
-A value of [`false`](https://developer.apple.com/documentation/swift/false) for [`isContrastSupported`](cirawfilter/3801621-iscontrastsupported.md) indicates that the current image doesn’t support this adjustment.
 
 ## See Also
 

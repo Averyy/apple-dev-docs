@@ -1,6 +1,6 @@
 # drawingGroup(opaque:colorMode:)
 
-**Framework**: Journaling Suggestions  
+**Framework**: Journalingsuggestions  
 **Kind**: method
 
 Composites this view’s contents into an offscreen image before final display.
@@ -47,8 +47,6 @@ VStack {
 ```
 
 > **Note**: Views backed by native platform views may not render into the image. Instead, they log a warning and display a placeholder image to highlight the error.
-
-Views backed by native platform views may not render into the image. Instead, they log a warning and display a placeholder image to highlight the error.
 
 ## Parameters
 

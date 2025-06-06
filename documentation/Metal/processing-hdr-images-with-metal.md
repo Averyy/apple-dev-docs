@@ -15,8 +15,6 @@ Implement a post-processing pipeline using the latest features on Apple GPUs.
 
 > **Note**: This sample code project is associated with WWDC21 session [`10161: Explore HDR rendering with EDR`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10161/), and WWDC20 session [`10602: Harness Apple GPUs with Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10602/).
 
-This sample code project is associated with WWDC21 session [`10161: Explore HDR rendering with EDR`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10161/), and WWDC20 session [`10602: Harness Apple GPUs with Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10602/).
-
 ## See Also
 
 - [Displaying HDR Content in a Metal Layer](displaying-hdr-content-in-a-metal-layer.md)
@@ -35,4 +33,4 @@ This sample code project is associated with WWDC21 session [`10161: Explore HDR 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/processing-hdr-images-with-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/processing-hdr-images-with-metal)*

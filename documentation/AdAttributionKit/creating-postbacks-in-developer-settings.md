@@ -1,6 +1,6 @@
 # Creating postbacks in developer settings
 
-**Framework**: AdAttributionKit
+**Framework**: Adattributionkit
 
 Test development postbacks for your advertised app without interacting with ads from a publisher app.
 
@@ -14,8 +14,6 @@ You can access the AdAttributionKit tools by enabling Developer Mode on your tes
 
 > ❗ **Important**: Enabling Developer Mode reduces the privacy protections the system provides. Use this mode only during development or testing. This setting automatically turns off after two weeks.
 
-Enabling Developer Mode reduces the privacy protections the system provides. Use this mode only during development or testing. This setting automatically turns off after two weeks.
-
 After enabling Developer Mode, access the developer settings on your test device by choosing Settings > Developer. Then scroll down to the Ad Attribution Testing section and tap Development Postbacks, as the screenshot below shows:
 
 ![An image of the iOS Developer Mode settings that shows a number of test settings, including the switch that enables development testing for AdAttributionKit.](https://docs-assets.developer.apple.com/published/eb124a690f0cb16a89a1e285acb57f65/ad-attribution-testing%402x.png)
@@ -28,8 +26,6 @@ To create development postbacks for your app, type in your app’s bundle identi
 
 > **Note**: An app with the specified bundle identifier needs to exist on your device. The system doesn’t allow you to create development postbacks for an app that isn’t installed.
 
-An app with the specified bundle identifier needs to exist on your device. The system doesn’t allow you to create development postbacks for an app that isn’t installed.
-
 ##### Provide the Server Url to Process the Postback
 
 Provide the URL of the server to receive the development postbacks. AdAttributionKit sends the postback to this destination when the postback is eligible for transmission.
@@ -39,8 +35,6 @@ Provide the URL of the server to receive the development postbacks. AdAttributio
 You can also tap Use Developer Postback URL to generate the full postback copy URL that the app’s `Info.plist` file specifies. This is the same URL that AdAttributionKit generates when creating developer copies of postbacks in full end-to-end flows. For more information on receiving developer postback copies, see [`Configuring an advertised app`](configuring-an-advertised-app.md).
 
 > **Note**: It’s a best practice to use a server URL that’s different than the production server URL for testing. The testing URL can include a custom path that’s difficult to guess, such as a UUID that you can disable once the test is complete.
-
-It’s a best practice to use a server URL that’s different than the production server URL for testing. The testing URL can include a custom path that’s difficult to guess, such as a UUID that you can disable once the test is complete.
 
 ##### Fill in Postback Properties
 
@@ -90,4 +84,4 @@ Tapping Clear Development Postbacks deletes all development postbacks currently 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/creating-postbacks-in-developer-settings)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/creating-postbacks-in-developer-settings)*

@@ -35,8 +35,6 @@ Listing 1. Creating the content for a local notification
 
 > **Note**:  Local notifications always result in user interactions, and the system ignores any interactions for which your app isn’t authorized. For information about how to request authorization for user interactions, see [`Asking permission to use notifications`](asking-permission-to-use-notifications.md).
 
- Local notifications always result in user interactions, and the system ignores any interactions for which your app isn’t authorized. For information about how to request authorization for user interactions, see [`Asking permission to use notifications`](asking-permission-to-use-notifications.md).
-
 ##### Localizing the Alert Strings
 
 Localize the strings you display in a notification alert for the current user. Although you can use the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macros to load strings from your app’s resource files, a better option is to specify your string using the [`localizedUserNotificationString(forKey:arguments:)`](https://developer.apple.com/documentation/foundation/nsstring/1649585-localizedusernotificationstring) method of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString). The [`localizedUserNotificationString(forKey:arguments:)`](https://developer.apple.com/documentation/foundation/nsstring/1649585-localizedusernotificationstring) method delays the loading of the localized string until the system delivers the notification. If the user changes the language setting before the system delivers a notification, the system updates the alert text to the user’s current language instead of the language in use when the system scheduled the notification.
@@ -119,4 +117,4 @@ Localize the strings you display in a notification alert for the current user. A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/unmutablenotificationcontent)*

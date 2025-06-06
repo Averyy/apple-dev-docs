@@ -17,10 +17,6 @@ The Swift standard library defines a base layer of functionality for writing Swi
 
 > **Note**: Experiment with Swift standard library types and learn high-level concepts using visualizations and practical examples. Learn how the Swift standard library uses protocols and generics to express powerful constraints. Download the playground below to get started. [`Swift Standard Library.playground`](https://developer.apple.comhttps://developer.apple.com/sample-code/swift/downloads/standard-library.zip)
 
-Experiment with Swift standard library types and learn high-level concepts using visualizations and practical examples. Learn how the Swift standard library uses protocols and generics to express powerful constraints. Download the playground below to get started.
-
-[`Swift Standard Library.playground`](https://developer.apple.comhttps://developer.apple.com/sample-code/swift/downloads/standard-library.zip)
-
 ## Topics
 
 ### Values and Collections

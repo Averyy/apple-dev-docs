@@ -1,6 +1,6 @@
 # UIHoverGestureRecognizer
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A continuous gesture recognizer that interprets pointer movement over a view.
@@ -27,8 +27,6 @@ class UIHoverGestureRecognizer
 On macOS and iPadOS devices, a person can move the pointer over user interface elements. For some UI designs, it’s important to know when the pointer moves over an element, with no other user interactions, such as clicking the mouse button. The text for a hyperlink, for instance, may change colors or appear with an underline as the pointer moves over the link. This creates a rollover effect.
 
 > **Note**:  On iOS, this class doesn’t recognize gestures.
-
- On iOS, this class doesn’t recognize gestures.
 
 To provide this experience in your app, add a hover gesture recognizer that reacts as the pointer moves over the view. Provide the gesture recognizer with a `target` and `action` that the system calls when the pointer enters, exits, and moves across the view. [`UIHoverGestureRecognizer`](uihovergesturerecognizer.md) has no effect when your app runs in iOS. The following code changes the button’s default color to red as the pointer moves over the button.
 
@@ -97,4 +95,4 @@ class ViewController: UIViewController {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uihovergesturerecognizer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uihovergesturerecognizer)*

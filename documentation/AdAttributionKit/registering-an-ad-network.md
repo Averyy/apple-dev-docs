@@ -1,14 +1,12 @@
 # Registering an ad network
 
-**Framework**: AdAttributionKit
+**Framework**: Adattributionkit
 
 Use the AdAttributionKit APIs for your ad campaigns after registering your ad network with Apple.
 
 #### Overview
 
 > **Note**: You can use the ad network ID that you receive during SKAdNetwork registration with AdAttributionKit.
-
-You can use the ad network ID that you receive during SKAdNetwork registration with AdAttributionKit.
 
 Ad networks provide and cryptographically sign ads that are eligible for ad attribution through AdAttributionKit. Ad networks need to register with Apple before using the AdAttributionKit API.
 
@@ -26,8 +24,6 @@ The ad network ID is a unique lowercase identifier in the format of `example123.
 
 > ❗ **Important**: Lowercase the ad network ID string; otherwise, the system doesn’t recognize it as valid.
 
-Lowercase the ad network ID string; otherwise, the system doesn’t recognize it as valid.
-
 #### Generate Your Private Key
 
 Ad networks use a private cryptographic key to generate a signature for each ad that an app displays. During registration, ad networks create a public-private key pair, and send the public key to Apple. The private key you create uses an Elliptic Curve Digital Signature Algorithm (ECDSA) with a prime256v1 curve.
@@ -39,8 +35,6 @@ openssl ecparam -name prime256v1 -genkey -noout -out companyname_adattribuitionk
 ```
 
 > ❗ **Important**: Secure your private keys as you do other credentials, such as passwords. Don’t share your private keys, store keys in a code repository, or include keys in client-side code. Only share your public key.
-
-Secure your private keys as you do other credentials, such as passwords. Don’t share your private keys, store keys in a code repository, or include keys in client-side code. Only share your public key.
 
 #### Generate and Share Your Public Key
 
@@ -64,4 +58,4 @@ Send your public key file to Apple when you register your ad network.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/registering-an-ad-network)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/registering-an-ad-network)*

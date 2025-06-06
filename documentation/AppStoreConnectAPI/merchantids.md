@@ -1,6 +1,6 @@
 # Merchant ID
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Manage your merchant ID for Apple Pay.
 
@@ -11,8 +11,6 @@ Apple Pay developers and merchants can use this resource to automate registering
 To learn more about setting up your Apple developer account and implementing Apple Pay in your apps, see [`Managing merchant IDs and Payment Processing certificates`](managing-payment-processing-certificates.md) and [`Setting up Apple Pay`](https://developer.apple.comhttps://developer.apple.com/documentation/passkit/setting-up-apple-pay).
 
 > **Note**: Apple Pay is not available for Enterprise teams.
-
-Apple Pay is not available for Enterprise teams.
 
 ## Topics
 
@@ -59,4 +57,4 @@ Apple Pay is not available for Enterprise teams.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/merchantids)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/merchantids)*

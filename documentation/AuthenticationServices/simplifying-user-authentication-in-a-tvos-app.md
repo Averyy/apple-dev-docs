@@ -1,6 +1,6 @@
 # Simplifying User Authentication in a tvOS App
 
-**Framework**: Authentication Services
+**Framework**: Authenticationservices
 
 Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
 
@@ -11,8 +11,6 @@ Build a fluid sign-in experience for your tvOS apps using AuthenticationServices
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`10279: Simplify sign in for your tvOS apps`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10279/).
-
-This sample code project is associated with WWDC21 session [`10279: Simplify sign in for your tvOS apps`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10279/).
 
 ##### Configure the Sample Code Project
 
@@ -41,4 +39,4 @@ To configure the sample code project, perform the following steps in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/simplifying-user-authentication-in-a-tvos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/simplifying-user-authentication-in-a-tvos-app)*

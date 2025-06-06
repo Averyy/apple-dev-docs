@@ -25,8 +25,6 @@ Adopt this protocol for potentially long-running Vision requests to provide info
 
 > **Note**:  The Vision framework may call the progress handler on a different dispatch queue from the thread on which you initiated the original request, so ensure that your handler can execute asynchronously, in a thread-safe manner.
 
- The Vision framework may call the progress handler on a different dispatch queue from the thread on which you initiated the original request, so ensure that your handler can execute asynchronously, in a thread-safe manner.
-
 ## Topics
 
 ### Tracking Progress
@@ -50,4 +48,4 @@ Adopt this protocol for potentially long-running Vision requests to provide info
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/vnrequestprogressproviding)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/vnrequestprogressproviding)*

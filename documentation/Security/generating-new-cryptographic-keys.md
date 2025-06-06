@@ -24,8 +24,6 @@ For a complete list of available key attributes, see [`Key Generation Attributes
 
 > **Note**:  Be sure that you don’t generate multiple, identically tagged keys. These are difficult to tell apart during retrieval, unless they differ in some other, searchable characteristic. Instead, use a unique tag for each key generation operation, or delete old keys with a given tag using [`SecItemDelete(_:)`](secitemdelete(_:).md) before creating a new one with that tag.
 
- Be sure that you don’t generate multiple, identically tagged keys. These are difficult to tell apart during retrieval, unless they differ in some other, searchable characteristic. Instead, use a unique tag for each key generation operation, or delete old keys with a given tag using [`SecItemDelete(_:)`](secitemdelete(_:).md) before creating a new one with that tag.
-
 You then call the [`SecKeyCreateRandomKey(_:_:)`](seckeycreaterandomkey(_:_:).md) function with the attributes dictionary:
 
 If the function fails to create a key, as indicated by a `NULL` return value, it fills in the `error` parameter to indicate the reason for failure. Otherwise, the key reference points to a new private key that’s ready for use. The key is also stored in the default keychain, from where you can read it later, as described in [`Storing Keys in the Keychain`](storing-keys-in-the-keychain.md). If you need the corresponding public key (now or later), call the [`SecKeyCopyPublicKey(_:)`](seckeycopypublickey(_:).md) function with the private key reference:
@@ -46,4 +44,4 @@ To get the best of both worlds, you often use asymmetric cryptography to communi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/generating-new-cryptographic-keys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/generating-new-cryptographic-keys)*

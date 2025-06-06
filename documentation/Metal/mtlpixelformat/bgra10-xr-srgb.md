@@ -39,8 +39,6 @@ To display wide color values on devices with wide color displays, you set this p
 
 > **Note**:  Only devices with a wide color display can display color values outside the `[0.0, 1.0]` range; all other devices clamp color values to the `[0.0, 1.0]` range.
 
- Only devices with a wide color display can display color values outside the `[0.0, 1.0]` range; all other devices clamp color values to the `[0.0, 1.0]` range.
-
 ## See Also
 
 - [MTLPixelFormat.bgra10_xr](mtlpixelformat/bgra10_xr.md)

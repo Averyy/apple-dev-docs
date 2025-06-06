@@ -1,6 +1,6 @@
 # Safari app extensions
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Learn how Safari app extensions extend the web-browsing experience in Safari by leveraging web technologies and native code.
 
@@ -11,8 +11,6 @@ A Safari app extension can add new functionality to Safari by reading and modify
 ![A diagram showing Safari app extensions communicating between the containing app and the Safari browser. A box labeled Safari app extension is nested inside a box labeled Containing app. Arrows indicate that the app extension and the containing app pass information to each other through shared resources. Another arrow indicates that the app extension and Safari pass information to each other. ](https://docs-assets.developer.apple.com/published/71d7fb6d3b2fa6b3b63576d00151a2dd/media-2970145%402x.png)
 
 > **Note**:  Previously, Safari extensions provided the communication between apps and Safari. To migrate a legacy Safari extension, see [`Converting a legacy Safari extension to a Safari app extension`](converting-a-legacy-safari-extension-to-a-safari-app-extension.md).
-
- Previously, Safari extensions provided the communication between apps and Safari. To migrate a legacy Safari extension, see [`Converting a legacy Safari extension to a Safari app extension`](converting-a-legacy-safari-extension-to-a-safari-app-extension.md).
 
 Safari app extensions use a combination of JavaScript, CSS, and native code written in Objective-C or Swift. Because you build Safari app extensions on the standard app extension model, you get many native app benefits:
 
@@ -76,4 +74,4 @@ To become familiar with app extension concepts, see [`App Extensions`](https://d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/safari-app-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/safari-app-extensions)*

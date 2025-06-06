@@ -25,8 +25,6 @@ By default, the texture at each index is `nil`.
 
 > **Note**:  The Objective-C version of this method is [`setObjectTextures:withRange:`](mtlrendercommandencoder/setobjecttextures:withrange:.md).
 
- The Objective-C version of this method is [`setObjectTextures:withRange:`](mtlrendercommandencoder/setobjecttextures:withrange:.md).
-
 ## Parameters
 
 - `textures`: An array of   instances the command assigns to entries in the object shader argument table for textures.

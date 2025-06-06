@@ -26,8 +26,6 @@ Some systems contain multiple GPUs that run with different performance and energ
 
 > **Note**:  Systems with Apple silicon only have one GPU, which removes the need to choose a GPU.
 
- Systems with Apple silicon only have one GPU, which removes the need to choose a GPU.
-
 The property is typically [`true`](https://developer.apple.com/documentation/swift/true) for integrated GPUs and [`false`](https://developer.apple.com/documentation/swift/false) for discrete GPUs. However, an Apple silicon GPU on a Mac sets the property to [`false`](https://developer.apple.com/documentation/swift/false) because it doesn’t need to lower its performance to conserve energy.
 
 ## See Also

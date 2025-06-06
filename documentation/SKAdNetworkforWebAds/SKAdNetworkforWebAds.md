@@ -1,6 +1,6 @@
 # SKAdNetwork for Web Ads
 
-**Framework**: SKAdNetwork for Web Ads  
+**Framework**: Skadnetworkforwebads  
 **Kind**: module
 
 Attribute app-install campaigns that originate on the web.
@@ -26,8 +26,6 @@ To use the API, follow these steps:
 For more information about the ad network API, see [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork).
 
 > **Note**:  Ad networks can only use this API to get attributions for web ad clicks in Safari; the API doesn’t get attributions for web ad clicks in [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) or [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView).
-
- Ad networks can only use this API to get attributions for web ad clicks in Safari; the API doesn’t get attributions for web ad clicks in [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) or [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView).
 
 ## Topics
 

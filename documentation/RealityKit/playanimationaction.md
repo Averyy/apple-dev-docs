@@ -1,6 +1,6 @@
 # PlayAnimationAction
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 An action that plays an animation on the given target entity with a range of playback options.
@@ -65,11 +65,7 @@ let animationPlaybackController = entity.playAnimation(animationSequence)
 
 > **Note**: If [`useParentedControllers`](playanimationaction/useparentedcontrollers.md) is set to `true`, the animation will play for the duration of the action. Set the duration of the action to match the length of the animation being played to ensure the entire animation plays.
 
-If [`useParentedControllers`](playanimationaction/useparentedcontrollers.md) is set to `true`, the animation will play for the duration of the action. Set the duration of the action to match the length of the animation being played to ensure the entire animation plays.
-
 > ❗ **Important**: This action does not animate a bound property, such as [`BindTarget.transform`](bindtarget/transform.md).
-
-This action does not animate a bound property, such as [`BindTarget.transform`](bindtarget/transform.md).
 
 ## Topics
 
@@ -133,4 +129,4 @@ This action does not animate a bound property, such as [`BindTarget.transform`](
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/playanimationaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/playanimationaction)*

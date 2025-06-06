@@ -24,8 +24,6 @@ init(_ content: Substring.UTF8View)
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

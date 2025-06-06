@@ -1,6 +1,6 @@
 # strings
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 An array of strings in all pasteboard items.
@@ -22,8 +22,6 @@ var strings: [String]? { get set }
 The value stored in this property is an array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects. The associated array of representation types is [`typeListString`](uipasteboard/typeliststring.md), which includes type `kUTTypeUTF8PlainText`. Setting this property replaces all current items in the pasteboard with the new items.  The returned array may have fewer objects than the number of pasteboard items; this happens if a pasteboard item does not have a value of the indicated type.
 
 > **Note**:  Do not use this property to determine if a pasteboard contains string data. Instead, use the [`hasStrings`](uipasteboard/hasstrings.md) property.
-
- Do not use this property to determine if a pasteboard contains string data. Instead, use the [`hasStrings`](uipasteboard/hasstrings.md) property.
 
 ## See Also
 

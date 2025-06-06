@@ -1,6 +1,6 @@
 # Transferring your apps and users to another team
 
-**Framework**: Sign in with Apple
+**Framework**: Signinwithapple
 
 Migrate Sign in with Apple users to another team.
 
@@ -10,10 +10,6 @@ Sign in with Apple maintains an assocation between your developer team, your app
 
 > **Note**:  If your app supports multiple platforms, ungroup the apps before starting the transfer. The App Store Connect app won’t let you transfer an app if it’s part of an app group. For more information on app groups and ungrouping, see [`Group Apps for Sign in with Apple`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/group-apps-for-sign-in-with-apple).
 
- If your app supports multiple platforms, ungroup the apps before starting the transfer. The App Store Connect app won’t let you transfer an app if it’s part of an app group.
-
-For more information on app groups and ungrouping, see [`Group Apps for Sign in with Apple`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/group-apps-for-sign-in-with-apple).
-
 ##### Protect User Privacy
 
 Every Sign in with Apple user has a user identifier. Apple issues a signed ID token for the user that contains the user identifier and, if applicable, the private email address specific to your team. All of your applications share the same identifier for the user.
@@ -21,8 +17,6 @@ Every Sign in with Apple user has a user identifier. Apple issues a signed ID to
 To avoid exposing the user identifier to a different team, Apple generates a  for each user. The transfer identifier is unique to the recipient team and remains stable throughout the migration process. This allows you to transfer the user data to the recipient without exposing your team-scoped identifiers and private email addresses.
 
 > **Note**:  When exporting the data from your database to transfer to the recipient team, you must exclude the team-scoped identifier and private email address, and include only the transfer identifier to identify the user.
-
- When exporting the data from your database to transfer to the recipient team, you must exclude the team-scoped identifier and private email address, and include only the transfer identifier to identify the user.
 
 The transfer identifer is specific to the target team and has a one-to-one mapping with your team-scoped user identifier. If you transfer more than one application to the same recipient team (even over time), the transfer identifier for a given user remains the same across all applications.
 
@@ -93,8 +87,6 @@ The response contains the `transfer_sub`, with the transfer identifier for the u
 
 > **Note**:  After the recipient team accepts the transfer, you have 60 days to generate transfer identifiers for the client.
 
- After the recipient team accepts the transfer, you have 60 days to generate transfer identifiers for the client.
-
 ##### Deliver Users to the Recipient Team
 
 Once you’ve generated transfer identifiers for each of your users, prepare to export this information by excluding the team-scoped identifier and the private email address from the payload. Include only the transfer identifier to identify the user to the recipient team.
@@ -102,8 +94,6 @@ Once you’ve generated transfer identifiers for each of your users, prepare to 
 If you need to communicate with users during this process, do so using their private email addresses.
 
 > ❗ **Important**:  If a user doesn’t use any other applications from your team, you’ll no longer be able to communicate with them using their private email address after the transfer.
-
- If a user doesn’t use any other applications from your team, you’ll no longer be able to communicate with them using their private email address after the transfer.
 
 ## See Also
 
@@ -113,4 +103,4 @@ If you need to communicate with users during this process, do so using their pri
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SigninwithApple/transferring-your-apps-and-users-to-another-team)*

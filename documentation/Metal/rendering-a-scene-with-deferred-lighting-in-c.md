@@ -25,8 +25,6 @@ The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS
 
 > **Note**: Splitting render targets into separate groups for fragment function execution requires a macOS or iOS device that supports raster order groups. Query the `rasterOrderGroupsSupported` property of your device to determine support.
 
-Splitting render targets into separate groups for fragment function execution requires a macOS or iOS device that supports raster order groups. Query the `rasterOrderGroupsSupported` property of your device to determine support.
-
 The sample contains the following preprocessor conditionals that you can modify to control the configuration of the app.
 
 ```cpp
@@ -69,8 +67,6 @@ A traditional deferred lighting renderer is typically separated into two render 
 
 > **Note**: Some macOS GPUs have an  (IMR) architecture. On IMR GPUs, a deferred lighting renderer can only be implemented with at least two render passes. Therefore, the sample implements a two-pass deferred lighting algorithm for the macOS version of the app. The iOS and tvOS simulators run on macOS Metal implementations so these also use the two-pass deferred lighting algorithm.
 
-Some macOS GPUs have an  (IMR) architecture. On IMR GPUs, a deferred lighting renderer can only be implemented with at least two render passes. Therefore, the sample implements a two-pass deferred lighting algorithm for the macOS version of the app. The iOS and tvOS simulators run on macOS Metal implementations so these also use the two-pass deferred lighting algorithm.
-
 Apple silicon GPUs, found on all iOS and tvOS device and now certain macOS devices, use a tile-based deferred rendering (TBDR) architecture, which allows them to render data to tile memory within the GPU. By rendering to tile memory, the device avoids potentially expensive round trips between the GPU and system memory (via a bandwidth-constrained memory bus). Whether a GPU writes tile memory to system memory depends on these configurations:
 
 - The store action of the app’s render command encoders.
@@ -87,8 +83,6 @@ G-buffer data is produced and consumed exclusively by the GPU, not the CPU, with
 ![Diagram showing how G-buffer data in a single-pass deferred lighting algorithm is accessed in tile memory.](https://docs-assets.developer.apple.com/published/ef0f59c934f11dc0faad9b37bfe5d269/deferred-lighting-cpp-4-SinglePassDeferredLightingOnTBDR%402x.png)
 
 > **Note**: The feature that allows a TBDR GPU to read from attached render targets in a fragment function is also known as .
-
-The feature that allows a TBDR GPU to read from attached render targets in a fragment function is also known as .
 
 By default, when a fragment shader writes data to a pixel, the GPU waits until the shader has completely finished writing to that pixel before beginning the execution of another fragment shader for that same pixel.
 
@@ -272,8 +266,6 @@ Although these fragment functions have different inputs, they share a common imp
 Because this is the first stage that renders to the drawable, the iOS and tvOS renderer obtains a drawable before the earlier G-buffer stage so that the drawable can be merged with the output of later stages. The traditional deferred renderer, however, delays obtaining a drawable until after the G-buffer stage is completed and before the directional light stage begins. This delay reduces the amount of time that the app holds onto the drawable and thus improves performance.
 
 > **Note**: Because of the state of `m_directionLightDepthStencilState`, the `deferred_directional_lighting_fragment` functions only execute for fragments that should be lit. This optimization is simple yet important, and saves many fragment shader execution cycles.
-
-Because of the state of `m_directionLightDepthStencilState`, the `deferred_directional_lighting_fragment` functions only execute for fragments that should be lit. This optimization is simple yet important, and saves many fragment shader execution cycles.
 
 ##### Cull the Light Volumes
 

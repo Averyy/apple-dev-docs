@@ -34,8 +34,6 @@ When the system presents the `Orbit` view in the above code, it also dims passth
 
 > **Note**: This modifier expresses a preference, but the system might not be able to honor it.
 
-This modifier expresses a preference, but the system might not be able to honor it.
-
 Use a value of `nil` to indicate that you have no preference. You typically do this to counteract a preference expressed by a view lower in the view hierarchy.
 
 ## Parameters

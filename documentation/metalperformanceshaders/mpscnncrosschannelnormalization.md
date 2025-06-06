@@ -1,6 +1,6 @@
 # MPSCNNCrossChannelNormalization
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A normalization kernel applied across feature channels.
@@ -38,8 +38,6 @@ Where `k` is the feature channel index (running from 0 to `D-1`) and `D` is the 
 It is your responsibility to ensure that the combination of the values of the [`delta`](mpscnncrosschannelnormalization/1648881-delta.md) and [`alpha`](mpscnncrosschannelnormalization/1648896-alpha.md) properties does not result in a situation where the denominator becomes zero - in such situations the resulting pixel-value is undefined.
 
 > **Note**: The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNCrossChannelNormalization`](mpscnncrosschannelnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
-
-The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNCrossChannelNormalization`](mpscnncrosschannelnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
 
 ## Topics
 

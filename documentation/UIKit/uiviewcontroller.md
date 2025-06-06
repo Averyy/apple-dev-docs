@@ -1,6 +1,6 @@
 # UIViewController
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that manages a view hierarchy for your UIKit app.
@@ -65,8 +65,6 @@ All of these techniques have the same end result, which is to create the appropr
 
 > ❗ **Important**:  A view controller is the sole owner of its view and any subviews it creates. It’s responsible for creating those views and for relinquishing ownership of them at the appropriate times such as when the view controller itself is released. If you use a storyboard or a nib file to store your view objects, each view controller object automatically gets its own copy of these views when the view controller asks for them. However, if you create your views manually, each view controller must have its own unique set of views. You can’t share views between view controllers.
 
- A view controller is the sole owner of its view and any subviews it creates. It’s responsible for creating those views and for relinquishing ownership of them at the appropriate times such as when the view controller itself is released. If you use a storyboard or a nib file to store your view objects, each view controller object automatically gets its own copy of these views when the view controller asks for them. However, if you create your views manually, each view controller must have its own unique set of views. You can’t share views between view controllers.
-
 A view controller’s root view is always sized to fit its assigned space. For other views in your view hierarchy, use Interface Builder to specify the Auto Layout constraints that govern how each view is positioned and sized within its superview’s bounds. You can also create constraints programmatically and add them to your views at appropriate times. For more information about how to create constraints, see [`Auto Layout Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853).
 
 ###### Handle View Related Notifications
@@ -89,8 +87,6 @@ When a rotation occurs for a visible view controller, the [`willRotate(to:durati
 
 > **Note**:  At launch time, apps should always set up their interface in a portrait orientation. After the [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method returns, the app uses the view controller rotation mechanism described above to rotate the views to the appropriate orientation prior to showing the window.
 
- At launch time, apps should always set up their interface in a portrait orientation. After the [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method returns, the app uses the view controller rotation mechanism described above to rotate the views to the appropriate orientation prior to showing the window.
-
 ###### Implement a Container View Controller
 
 A custom [`UIViewController`](uiviewcontroller.md) subclass can also act as a container view controller. A container view controller manages the presentation of content of other view controllers it owns, also known as its child view controllers. A child’s view can be presented as-is or in conjunction with views owned by the container view controller.
@@ -107,10 +103,6 @@ Here are the essential methods you might need to call:
 - [`didMove(toParent:)`](uiviewcontroller/didmove(toparent:).md)
 
 > **Note**:  You’re not required to override any methods when creating a container view controller. By default, rotation and appearance callbacks are automatically forwarded to children. You may optionally override the [`shouldAutomaticallyForwardRotationMethods()`](uiviewcontroller/shouldautomaticallyforwardrotationmethods().md) and [`shouldAutomaticallyForwardAppearanceMethods`](uiviewcontroller/shouldautomaticallyforwardappearancemethods.md) methods to take control of this behavior yourself.
-
- You’re not required to override any methods when creating a container view controller.
-
-By default, rotation and appearance callbacks are automatically forwarded to children. You may optionally override the [`shouldAutomaticallyForwardRotationMethods()`](uiviewcontroller/shouldautomaticallyforwardrotationmethods().md) and [`shouldAutomaticallyForwardAppearanceMethods`](uiviewcontroller/shouldautomaticallyforwardappearancemethods.md) methods to take control of this behavior yourself.
 
 ###### Manage Memory
 
@@ -525,4 +517,4 @@ For more information about how the system determines which view controllers to p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiviewcontroller)*

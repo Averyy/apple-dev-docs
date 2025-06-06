@@ -1,6 +1,6 @@
 # listItemTint(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Sets a fixed tint color for content in a list.
@@ -26,8 +26,6 @@ func listItemTint(_ tint: Color?) -> some View
 The containing list’s style applies the tint as appropriate. For example, watchOS uses the tint color for its background platter appearance. Sidebars on iOS and macOS apply the tint color to their `Label` icons, which otherwise use the accent color by default.
 
 > **Note**: This modifier is equivalent to using the version of the modifier that takes a `ListItemTint` value and specifying the `tint` color in the corresponding `ListItemTint/fixed(_:)` input.
-
-This modifier is equivalent to using the version of the modifier that takes a `ListItemTint` value and specifying the `tint` color in the corresponding `ListItemTint/fixed(_:)` input.
 
 ## Parameters
 

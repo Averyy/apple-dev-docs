@@ -1,6 +1,6 @@
 # Download Sales and Trends Reports
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Download sales and trends reports filtered by your specified criteria.
@@ -10,12 +10,12 @@ Download sales and trends reports filtered by your specified criteria.
 
 ## Mentions
 
-- [App Store Connect API 3.4 release notes](app-store-connect-api-3-4-release-notes.md)
-- [Downloading Analytics Reports](downloading-analytics-reports.md)
 - [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
+- [App Store Connect API 3.4 release notes](app-store-connect-api-3-4-release-notes.md)
 - [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
-- [App Store Connect API 1.8 release notes](app-store-connect-api-1-8-release-notes.md)
 - [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
+- [App Store Connect API 1.8 release notes](app-store-connect-api-1-8-release-notes.md)
+- [Downloading Analytics Reports](downloading-analytics-reports.md)
 
 #### Discussion
 
@@ -24,8 +24,6 @@ Download sales and trends reports filtered by your specified criteria.
 Each sales report type has specific valid values for `reportType`, `reportSubType`, `frequency`, and `version`. If you use other types, it results in an error. For more details on each report type, see [`Download and view reports`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/view-sales-and-trends/download-and-view-reports).
 
 > **Note**:  Version 1_2 of the Subscription, Subscription Event, and Subscriber reports in Sales and Trends is no longer available for download.
-
- Version 1_2 of the Subscription, Subscription Event, and Subscriber reports in Sales and Trends is no longer available for download.
 
 | `reportType` | `reportSubType` | `frequency` | `version` |
 | --- | --- | --- | --- |
@@ -54,4 +52,4 @@ Each sales report type has specific valid values for `reportType`, `reportSubTyp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-salesreports)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/get-v1-salesreports)*

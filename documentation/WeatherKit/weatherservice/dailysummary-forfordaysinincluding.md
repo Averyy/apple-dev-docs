@@ -28,8 +28,6 @@ The requested day weather summaries.
 
 > **Note**: Weather data error `WeatherError`
 
-Weather data error `WeatherError`
-
 This is a variadic API in which any combination of data sets can be requested and returned as a tuple. The following example will get a daily weather summary for New York City.
 
 ```swift

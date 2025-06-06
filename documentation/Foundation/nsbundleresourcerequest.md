@@ -27,15 +27,11 @@ You use the resource request to inform the system when the managed tags are need
 
 > **Note**:  This class ignores calls from Mac apps built with Mac Catalyst.
 
- This class ignores calls from Mac apps built with Mac Catalyst.
-
 The system will not attempt to purge the resources marked with a tag from on-device storage as long as at least one [`NSBundleResourceRequest`](nsbundleresourcerequest.md) object is managing the tag. Apps can access resources after the completion handler of either [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md) or [`conditionallyBeginAccessingResources(completionHandler:)`](nsbundleresourcerequest/conditionallybeginaccessingresources(completionhandler:).md) is called successfully. Management ends after a call to [`endAccessingResources()`](nsbundleresourcerequest/endaccessingresources().md) or after the resource request object is deallocated.
 
 Other properties and methods let you track the progress of a download, change the priority of a download, and check whether the resources marked by a set of tags are already on the device. Methods in [`Bundle`](bundle.md) indicate to the system the relative importance of preserving a tag in memory after it is no longer in use. For more information, see [`setPreservationPriority(_:forTags:)`](bundle/setpreservationpriority(_:fortags:).md) and [`preservationPriority(forTag:)`](bundle/preservationpriority(fortag:).md).
 
 > ❗ **Important**:  An [`NSBundleResourceRequest`](nsbundleresourcerequest.md) object can only be used for one successful resource request.
-
- An [`NSBundleResourceRequest`](nsbundleresourcerequest.md) object can only be used for one successful resource request.
 
 ## Topics
 
@@ -94,4 +90,4 @@ Other properties and methods let you track the progress of a download, change th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsbundleresourcerequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsbundleresourcerequest)*

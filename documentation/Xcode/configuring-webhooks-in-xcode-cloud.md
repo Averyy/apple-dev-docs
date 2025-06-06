@@ -12,8 +12,6 @@ To connect Xcode Cloud with a custom tool or service, you need to configure an H
 
 > **Note**: You can configure up to five webhooks per Xcode Cloud product.
 
-You can configure up to five webhooks per Xcode Cloud product.
-
 Xcode Cloud sends an HTTP request to each webhook’s configured HTTPS endpoint every time it creates, starts, and finishes a build.
 
 ![An illustration that shows the different moments when Xcode Cloud sends a JSON payload to the configured endpoint: when it creates, starts, and finishes a new build.](https://docs-assets.developer.apple.com/published/0a9e7a570ecb8754fe39342feeff1aa9/Configuring-Webhooks-in-Xcode-Cloud-1%402x.png)
@@ -33,8 +31,6 @@ To create a webhook in Xcode Cloud:
 When your service or tool receives a request from Xcode Cloud, respond with an HTTP status code that indicates success. If you return a retry-able server error or Xcode Cloud doesn’t receive a response within 30 seconds, it resends the webhook request until it receives a successful response.
 
 > **Note**: You need to configure a project or workspace to use Xcode Cloud before you can create a webhook.
-
-You need to configure a project or workspace to use Xcode Cloud before you can create a webhook.
 
 ##### Debug a Webhook
 
@@ -226,4 +222,4 @@ The following code snippet shows the payload Xcode Cloud sends with a request:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-webhooks-in-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-webhooks-in-xcode-cloud)*

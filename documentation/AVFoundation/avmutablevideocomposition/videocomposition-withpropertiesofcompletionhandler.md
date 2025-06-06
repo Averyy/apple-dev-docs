@@ -1,6 +1,6 @@
 # videoComposition(withPropertiesOf:completionHandler:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Returns a new video composition that’s configured to present the video tracks of the specified asset.
@@ -29,8 +29,6 @@ This method creates the video composition object and configures it with the valu
 - The value of the [`animationTool`](avvideocomposition/animationtool.md) property is `nil`.
 
 > **Note**:  If you specify an asset that doesn’t contain video tracks, this method returns a video composition with no instructions.
-
- If you specify an asset that doesn’t contain video tracks, this method returns a video composition with no instructions.
 
 ## Parameters
 

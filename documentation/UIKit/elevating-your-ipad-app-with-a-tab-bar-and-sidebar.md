@@ -1,6 +1,6 @@
 # Elevating your iPad app with a tab bar and sidebar
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Provide a compact, ergonomic tab bar for quick access to key parts of your app, and a sidebar for in-depth navigation.
 
@@ -13,8 +13,6 @@ In iPadOS 18 and later, the position of the tab bar moves from the bottom of the
 iPadOS apps automatically receive the new tab bar appearance when you compile them for iPadOS 18 and later.
 
 > **Note**:  For information about adopting the new tab bar appearance in SwiftUI, read [`Enhancing your app’s content with tab navigation`](https://developer.apple.com/documentation/SwiftUI/Enhancing-your-app-content-with-tab-navigation).
-
- For information about adopting the new tab bar appearance in SwiftUI, read [`Enhancing your app’s content with tab navigation`](https://developer.apple.com/documentation/SwiftUI/Enhancing-your-app-content-with-tab-navigation).
 
 ##### Create a Tab Bar
 
@@ -213,8 +211,6 @@ You can also programmatically set the order of items in a tab group using its [`
 
 > ❗ **Important**:  When someone customizes the tab bar or sidebar, the system persists those changes. The next time your app launches, it sets each tab’s [`isHidden`](uitab/ishidden.md) and [`displayOrderIdentifiers`](uitabgroup/displayorderidentifiers.md) properties to the customized values. The system assigns these values when it adds the tab to the [`UITabBarController`](uitabbarcontroller.md). If your app programmatically sets the [`isHidden`](uitab/ishidden.md) or [`displayOrderIdentifiers`](uitabgroup/displayorderidentifiers.md) properties before adding the tabs, the customized values override the values your app assigns. If, however, you change the values after adding the tabs, your values override the customizations.
 
- When someone customizes the tab bar or sidebar, the system persists those changes. The next time your app launches, it sets each tab’s [`isHidden`](uitab/ishidden.md) and [`displayOrderIdentifiers`](uitabgroup/displayorderidentifiers.md) properties to the customized values. The system assigns these values when it adds the tab to the [`UITabBarController`](uitabbarcontroller.md). If your app programmatically sets the [`isHidden`](uitab/ishidden.md) or [`displayOrderIdentifiers`](uitabgroup/displayorderidentifiers.md) properties before adding the tabs, the customized values override the values your app assigns. If, however, you change the values after adding the tabs, your values override the customizations.
-
 ##### Use the Tab Bar and Sidebar on Other Platforms
 
 The new [`UITab`](uitab.md) API is also available in iOS 18, Mac Catalyst 18, tvOS 18, and visionOS 2, and later. Consider using this API to create tab bars on all UIKit-based projects.
@@ -235,4 +231,4 @@ In visionOS, the system displays the platform’s regular tabs, but a [`UITabGro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar)*

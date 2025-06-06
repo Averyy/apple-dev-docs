@@ -1,6 +1,6 @@
 # readPaymentCard(_:vasRequest:stopOnVASResult:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Presents a sheet to read both contactless payments and loyalty cards for a purchase or refund, and returns the relevant card data.
@@ -40,8 +40,6 @@ When the `stopOnVasResult` parameter is `false`:
 - If the customer taps their payment card, the system closes the sheet and returns [`PaymentCardReadResult`](paymentcardreadresult.md) as a result.
 
 > **Note**: This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
-
-This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # NSImageView
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A display of image data in a frame.
@@ -20,8 +20,6 @@ class NSImageView
 Image views can be static or editable. A static image view only displays the image that you specify. An editable image view object lets the user change the displayed image. You can also configure an image view to allow copying, pasting, deleting, and dragging of the image.
 
 > **Note**:  An image view calls its action method only when the user drags an image into the image view’s bounds, and the image view must be editable to receive dragged images. If you want to display an image and respond to clicks in the image, use an [`NSButton`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2219/_index.html#//apple_ref/doc/uid/DTS10004624-CH1-SUBSECTION12) object instead.
-
- An image view calls its action method only when the user drags an image into the image view’s bounds, and the image view must be editable to receive dragged images. If you want to display an image and respond to clicks in the image, use an [`NSButton`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2219/_index.html#//apple_ref/doc/uid/DTS10004624-CH1-SUBSECTION12) object instead.
 
 ## Topics
 
@@ -135,4 +133,4 @@ Image views can be static or editable. A static image view only displays the ima
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsimageview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsimageview)*

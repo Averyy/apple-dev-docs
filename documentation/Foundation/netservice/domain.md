@@ -27,8 +27,6 @@ This property’s value is set when the object is first initialized, whether by 
 
 > **Note**:  This became a property in OS X v10.9 and iOS 7, but the underlying getter method (`domain`) has been available since this class was first introduced.
 
- This became a property in OS X v10.9 and iOS 7, but the underlying getter method (`domain`) has been available since this class was first introduced.
-
 ## See Also
 
 - [class func data(fromTXTRecord: [String : Data]) -> Data](netservice/data(fromtxtrecord:).md)

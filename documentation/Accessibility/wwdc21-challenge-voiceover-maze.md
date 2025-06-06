@@ -13,8 +13,6 @@ Navigate to the end of a dark maze using VoiceOver as your guide.
 
 > **Note**: This is a companion project for WWDC21 Challenge [`VoiceOver Maze`](https://developer.apple.comhttps://developer.apple.com/news/?id=s0tca9uk).
 
-This is a companion project for WWDC21 Challenge [`VoiceOver Maze`](https://developer.apple.comhttps://developer.apple.com/news/?id=s0tca9uk).
-
 ## See Also
 
 - [WWDC22 Challenge: Learn Switch Control through gaming](wwdc22_challenge_learn_switch_control_through_gaming.md)

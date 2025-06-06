@@ -1,6 +1,6 @@
 # preExposure
 
-**Framework**: MetalFX  
+**Framework**: Metalfx  
 **Kind**: property  
 **Required**: Yes
 
@@ -25,8 +25,6 @@ If your app applies an exposure adjustment to your color texture input, set this
 
 > **Note**: Most apps don’t need to set this property, which defaults `1.0`.
 
-Most apps don’t need to set this property, which defaults `1.0`.
-
 The temporal scaler divides each value in the color texture input by this pre-exposure value before it applies any regular exposure adjustments. The regular exposure adjustments either come from the [`exposureTexture`](mtlfxtemporalscaler/exposuretexture.md) property or the temporal scaler’s autoexposure feature (see [`isAutoExposureEnabled`](mtlfxtemporalscalerdescriptor/isautoexposureenabled.md)).
 
 ## See Also
@@ -49,4 +47,4 @@ The temporal scaler divides each value in the color texture input by this pre-ex
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalfx/mtlfxtemporalscaler/preexposure)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MetalFX/mtlfxtemporalscaler/preexposure)*

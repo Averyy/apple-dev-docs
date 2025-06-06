@@ -12,8 +12,6 @@ The normal office or home lighting when using an iPhone indoors is around 314 lu
 
 > **Note**: A Box in the ISOBMFF (ISO/IEC 14496-12) specification is the same as an Atom in the QuickTime File Format (QTFF). Likewise, a VisualSampleEntry in the ISOBMFF specification is analogous to a video media sample description in the QTFF.
 
-A Box in the ISOBMFF (ISO/IEC 14496-12) specification is the same as an Atom in the QuickTime File Format (QTFF). Likewise, a VisualSampleEntry in the ISOBMFF specification is analogous to a video media sample description in the QTFF.
-
 There’s an existing definition in the ISOBMFF (ISO/IEC 14496-12) document:
 
 The AmbientViewingEnvironmentBox box may be used to provide information about the characteristics of the nominal ambient viewing environment for the display of the associated video content and may be present in a VisualSampleEntry. The syntax elements of the ambient viewing environment box may assist the receiving system in adapting the received video content for local display in viewing environments that may be similar or may substantially differ from those assumed or intended when mastering the video content. It is functionally equivalent to, and shall be as described in, the ambient viewing environment SEI message in (ITU-T H.265 |I ISO/IEC 23008-2).
@@ -114,4 +112,4 @@ Refer to [`Incorporating HDR video with Dolby Vision into your apps`](https://de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3145-hdr-video-metadata)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3145-hdr-video-metadata)*

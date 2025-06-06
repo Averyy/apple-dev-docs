@@ -1,6 +1,6 @@
 # SiriKit Cloud Media
 
-**Framework**: SiriKit Cloud Media  
+**Framework**: Sirikitcloudmedia  
 **Kind**: module
 
 Stream music directly to HomePod speakers from your media service.
@@ -21,8 +21,6 @@ Authorize HomePod speakers to contact your media service by adopting [`Media Set
 Provide a HomePod speaker with details about sending requests to your service by implementing the configuration endpoint. Include paths and required headers for the endpoints you support. See  [`Configure Your Service Endpoints`](configuration-resource.md) for more information.
 
 > **Note**:  During a single session, some requests may come from a different HomePod speaker or an Apple TV within the user’s home. Respond to these requests the same as you do when a single device sends all of them. Use the [`Session`](session.md) object to maintain continuity.
-
- During a single session, some requests may come from a different HomePod speaker or an Apple TV within the user’s home. Respond to these requests the same as you do when a single device sends all of them. Use the [`Session`](session.md) object to maintain continuity.
 
 ##### Respond to a Siri Intent with a Media Playback Queue
 

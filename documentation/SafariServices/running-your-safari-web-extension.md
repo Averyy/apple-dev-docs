@@ -1,6 +1,6 @@
 # Running your Safari web extension
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Install and update your extension in Safari as you make changes in development.
 
@@ -25,8 +25,6 @@ Safari removes temporary extensions after 24 hours or when you quit Safari.
 
 > ❗ **Important**: Set up your extension in an Xcode project to test your web extension in iOS, send messages between the extension and your app, or distribute your extension. For more information, see [`Converting a web extension for Safari`](converting-a-web-extension-for-safari.md).
 
-Set up your extension in an Xcode project to test your web extension in iOS, send messages between the extension and your app, or distribute your extension. For more information, see [`Converting a web extension for Safari`](converting-a-web-extension-for-safari.md).
-
 ##### Install Your Safari Web Extension in Ios
 
 If you’re working in iOS, you deploy a Safari web extension in Safari with an iOS app. If you are testing on a device, attach your development iOS device to your computer, then run the containing iOS app to install your web extension in Safari:
@@ -40,8 +38,6 @@ Xcode builds your Safari web extension first, then embeds it inside the finished
 When you install the app in iOS for the first time, enable the web extension in Safari before you run it. In Safari, tap the More menu, then tap Extensions to select and enable your extension. Alternatively, open the Settings app, then select Safari > Extensions. Find your extension in the list, tap it, then tap the switch to enable the extension.
 
 > **Note**:  You must be a member of the [`Apple Developer Program`](https://developer.apple.comhttps://developer.apple.com/programs/) to test on a device. You can test in the iOS simulators before you join the Apple Developer Program.
-
- You must be a member of the [`Apple Developer Program`](https://developer.apple.comhttps://developer.apple.com/programs/) to test on a device. You can test in the iOS simulators before you join the Apple Developer Program.
 
 ##### Install Your Safari Web Extension in Macos
 
@@ -112,4 +108,4 @@ To deploy changes to your extension after installing it the first time, choose P
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/running-your-safari-web-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/running-your-safari-web-extension)*

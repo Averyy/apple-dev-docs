@@ -29,8 +29,6 @@ The results array of a [`Core ML`](https://developer.apple.com/documentation/Cor
 
 > **Note**:  Vision forwards all confidence values from Core ML models as-is and doesn’t normalize them to [0, 1].
 
- Vision forwards all confidence values from Core ML models as-is and doesn’t normalize them to [0, 1].
-
 ## Topics
 
 ### Creating a request
@@ -92,4 +90,4 @@ The results array of a [`Core ML`](https://developer.apple.com/documentation/Cor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/coremlrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/coremlrequest)*

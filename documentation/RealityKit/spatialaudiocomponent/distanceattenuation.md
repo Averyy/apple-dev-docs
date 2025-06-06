@@ -1,6 +1,6 @@
 # distanceAttenuation
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 A value that specifies the way that the sound level decreases as the distance between the listener and the sound source increases.
@@ -21,8 +21,6 @@ var distanceAttenuation: Audio.DistanceAttenuation { get set }
 #### Discussion
 
 > **Note**: You can’t update the `distanceAttenuation` property dynamically. Set it before you prepare or play an audio resource on an entity.
-
-You can’t update the `distanceAttenuation` property dynamically. Set it before you prepare or play an audio resource on an entity.
 
 
 ---

@@ -1,6 +1,6 @@
 # AVCaptureVideoStabilizationMode.cinematicExtendedEnhanced
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: case
 
 A mode that stabilizes video using the enhanced extended cinematic stabilization algorithm.
@@ -22,8 +22,6 @@ case cinematicExtendedEnhanced
 Enhanced extended cinematic has a reduced field of view compared to extended cinematic, without any noticeable increase in latency, and it yields improved stability.
 
 > **Note**:  It’s recommended to use identical or similar minimum and maximum frame durations in conjunction with this mode.
-
- It’s recommended to use identical or similar minimum and maximum frame durations in conjunction with this mode.
 
 ## See Also
 

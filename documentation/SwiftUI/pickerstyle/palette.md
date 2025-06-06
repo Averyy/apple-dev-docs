@@ -1,6 +1,6 @@
 # palette
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 A picker style that presents the options as a row of compact elements.
@@ -21,8 +21,6 @@ static var palette: PalettePickerStyle { get }
 #### Discussion
 
 > **Note**: When used outside of menus, this style is rendered as a segmented picker. If that is the intended usage, consider [`segmented`](pickerstyle/segmented.md) instead.
-
-When used outside of menus, this style is rendered as a segmented picker. If that is the intended usage, consider [`segmented`](pickerstyle/segmented.md) instead.
 
 For each option’s label, use one symbol per item, if you add more than 6 options, the picker scrolls horizontally on iOS.
 
@@ -115,4 +113,4 @@ To apply this style to a picker, or to a view that contains pickers, use the [`p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/pickerstyle/palette)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/pickerstyle/palette)*

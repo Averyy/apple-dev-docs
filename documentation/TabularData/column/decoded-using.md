@@ -1,6 +1,6 @@
 # decoded(_:using:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Generates a column by decoding each element’s data.
@@ -27,8 +27,6 @@ A new column of decoded values.
 #### Discussion
 
 > **Note**: `ColumnDecodingError` when the decoder fails to decode an element.
-
-`ColumnDecodingError` when the decoder fails to decode an element.
 
 ## Parameters
 

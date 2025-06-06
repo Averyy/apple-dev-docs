@@ -1,6 +1,6 @@
 # accessibilityValue()
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method  
 **Required**: Yes
 
@@ -24,8 +24,6 @@ func accessibilityValue() -> NSNumber?
 This method is the getter for the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol’s [`accessibilityValue`](nsaccessibility-c.protocol/accessibilityvalue.md) property.
 
 > **Note**:  This class must also post an [`valueChanged`](nsaccessibility-swift.struct/notification/valuechanged.md) notification whenever its value changes.
-
- This class must also post an [`valueChanged`](nsaccessibility-swift.struct/notification/valuechanged.md) notification whenever its value changes.
 
 
 ---

@@ -12,8 +12,6 @@ A build rule maps a specific file type to the tools Xcode needs to generate the 
 
 > **Note**: A build rule is the preferred way to process files that are independent from each other. The build system processes each file using a separate task, which allows for more parallelization. If you require the build system to process your files as a group in a single operation, create a custom Run Script build phase instead, as described in [`Running custom scripts during a build`](running-custom-scripts-during-a-build.md).
 
-A build rule is the preferred way to process files that are independent from each other. The build system processes each file using a separate task, which allows for more parallelization. If you require the build system to process your files as a group in a single operation, create a custom Run Script build phase instead, as described in [`Running custom scripts during a build`](running-custom-scripts-during-a-build.md).
-
 ##### Add a New Build Rule for a Custom File Type
 
 If your project contains file types not covered by Xcode’s built-in build rules, you can add new build rules to address those types. To create a new build rule:
@@ -33,8 +31,6 @@ A build rule can use either a custom shell script or an existing tool to process
 To match custom file types, select the “Source files with names matching” option in the Process field and specify a custom pattern string. Specify pattern strings that follow the same rules as the `fnmatch` function in the Standard C library. For example, to match all files with the names `myfile.c` and `myfile.h`, specify the string `*/myfile.c */myfile.h`. During a build, Xcode compares the full path of each project file against the specified pattern. When a match occurs, the system executes your custom script code.
 
 > ❗ **Important**: Avoid choosing filename extensions that overlap with the extensions other file types use. Xcode selects the first rule that matches a given file, so any overlap might cause Xcode to run the wrong tool.
-
-Avoid choosing filename extensions that overlap with the extensions other file types use. Xcode selects the first rule that matches a given file, so any overlap might cause Xcode to run the wrong tool.
 
 For information about pattern matching using the `fnmatch` function, see the man page for that function.
 
@@ -57,8 +53,6 @@ When you specify input and output files in your build rule, use the following va
 
 > ❗ **Important**: Place your script’s output files in the directory represented by the `DERIVED_FILE_DIR` variable. If you place them in other locations, your version-control system might not find them, or Xcode might not be able to remove them during a clean build operation.
 
-Place your script’s output files in the directory represented by the `DERIVED_FILE_DIR` variable. If you place them in other locations, your version-control system might not find them, or Xcode might not be able to remove them during a clean build operation.
-
 ##### Access Script Related Files From Environment Variables
 
 Shell scripts have access to the current target’s build settings and the input and output files associated with the build rule. Before executing your build rule’s script, Xcode configures the shell environment with several environment variables. To access the build rule’s input and output files, use the environment variables in the following table.
@@ -75,8 +69,6 @@ Shell scripts have access to the current target’s build settings and the input
 | `HEADER_OUTPUT_DIR` | The directory in which to copy header files. If the current file is in a Headers build phase, copy the file to the location in this environment variable. |
 
 > ❗ **Important**: In your shell scripts, place environment variables in quotation marks before you pass them as parameters to other scripts or tools. The quotation marks prevent parsing errors when a variable contains spaces or special characters.
-
-In your shell scripts, place environment variables in quotation marks before you pass them as parameters to other scripts or tools. The quotation marks prevent parsing errors when a variable contains spaces or special characters.
 
 For a list of build setting environment variables, see [`Build settings reference`](build-settings-reference.md).
 
@@ -109,4 +101,4 @@ Create the actual files in your script code when you build custom files. Fill th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-build-rules-for-custom-file-types)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-build-rules-for-custom-file-types)*

@@ -1,6 +1,6 @@
 # Create Campaign Negative Keywords
 
-**Framework**: Apple Search Ads  
+**Framework**: Apple_Search_Ads  
 **Kind**: httpRequest
 
 Creates negative keywords for a campaign.
@@ -11,8 +11,6 @@ Creates negative keywords for a campaign.
 #### Overview
 
 > **Note**:  If you create duplicate keywords, the payload response indicates an error, but the call returns with a 200 status code.
-
- If you create duplicate keywords, the payload response indicates an error, but the call returns with a 200 status code.
 
 - 400: An invalid query or missing required parameters.
 - 401: An unauthenticated call fails to get the requested response.

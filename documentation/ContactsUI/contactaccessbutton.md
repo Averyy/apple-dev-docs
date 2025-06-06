@@ -1,6 +1,6 @@
 # ContactAccessButton
 
-**Framework**: Contacts UI  
+**Framework**: Contactsui  
 **Kind**: struct
 
 A SwiftUI button that you use to add to the set of contacts someone shares with your app.
@@ -25,8 +25,6 @@ Use this button in addition to a search UI in your app, such as a text field. In
 
 > **Note**: This button is only useful when your app has limited or no access to contacts. To see what level of access your app has to a person’s contacts, call [`authorizationStatus(for:)`](https://developer.apple.com/documentation/Contacts/CNContactStore/authorizationStatus(for:)). If the returned value is [`CNAuthorizationStatus.limited`](https://developer.apple.com/documentation/Contacts/CNAuthorizationStatus/limited), the button updates itself to show partial or single matches based on the query string. If the authorization status is  [`CNAuthorizationStatus.denied`](https://developer.apple.com/documentation/Contacts/CNAuthorizationStatus/denied), the button shows a prompt to allow access to contacts. If the authorization status is [`CNAuthorizationStatus.authorized`](https://developer.apple.com/documentation/Contacts/CNAuthorizationStatus/authorized), the button doesn’t appear at all.
 
-This button is only useful when your app has limited or no access to contacts. To see what level of access your app has to a person’s contacts, call [`authorizationStatus(for:)`](https://developer.apple.com/documentation/Contacts/CNContactStore/authorizationStatus(for:)). If the returned value is [`CNAuthorizationStatus.limited`](https://developer.apple.com/documentation/Contacts/CNAuthorizationStatus/limited), the button updates itself to show partial or single matches based on the query string. If the authorization status is  [`CNAuthorizationStatus.denied`](https://developer.apple.com/documentation/Contacts/CNAuthorizationStatus/denied), the button shows a prompt to allow access to contacts. If the authorization status is [`CNAuthorizationStatus.authorized`](https://developer.apple.com/documentation/Contacts/CNAuthorizationStatus/authorized), the button doesn’t appear at all.
-
 To show a picker of all contacts and allow someone to add them to your app, without presenting your own search UI, use [`contactAccessPicker(isPresented:completionHandler:)`](https://developer.apple.com/documentation/SwiftUI/View/contactAccessPicker(isPresented:completionHandler:)).
 
 ## Topics
@@ -50,4 +48,4 @@ To show a picker of all contacts and allow someone to add them to your app, with
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/contactsui/contactaccessbutton)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ContactsUI/contactaccessbutton)*

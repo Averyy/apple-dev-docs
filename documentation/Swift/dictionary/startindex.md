@@ -26,8 +26,6 @@ If the collection is empty, `startIndex` is equal to `endIndex`.
 
 > **Note**: Amortized O(1) if the dictionary does not wrap a bridged `NSDictionary`. If the dictionary wraps a bridged `NSDictionary`, the performance is unspecified.
 
-Amortized O(1) if the dictionary does not wrap a bridged `NSDictionary`. If the dictionary wraps a bridged `NSDictionary`, the performance is unspecified.
-
 
 ---
 

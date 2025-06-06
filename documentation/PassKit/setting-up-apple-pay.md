@@ -1,6 +1,6 @@
 # Setting up Apple Pay
 
-**Framework**: PassKit (Apple Pay and Wallet)
+**Framework**: Passkit
 
 Fulfill the requirements to provide Apple Pay as a payment option on your website or in your app.
 
@@ -21,8 +21,6 @@ To enable your app to use Apple Pay, register an identifier with Apple that uniq
 Using your registered merchant identifier, create a certificate to secure transaction data. Apple Pay servers use the certificate’s public key to encrypt payment data. You (or your payment service provider) use the private key to decrypt the data to process payments. See [`Create a payment processing certificate`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay#create-a-payment-processing-certificate) for the setup steps.
 
 > **Note**:  If you use an e-commerce provider or a payment platform, contact them for information about how to use their service with Apple Pay. See [`Payment Platforms`](https://developer.apple.comhttps://developer.apple.com/apple-pay/#payment-platforms) for a list of service providers.
-
- If you use an e-commerce provider or a payment platform, contact them for information about how to use their service with Apple Pay. See [`Payment Platforms`](https://developer.apple.comhttps://developer.apple.com/apple-pay/#payment-platforms) for a list of service providers.
 
 ##### Enable Apple Pay Capability in Xcode
 
@@ -55,4 +53,4 @@ If you’re also developing websites using [`Apple Pay on the Web`](https://deve
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/passkit/setting-up-apple-pay)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/setting-up-apple-pay)*

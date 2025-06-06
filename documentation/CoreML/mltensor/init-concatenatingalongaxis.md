@@ -1,6 +1,6 @@
 # init(concatenating:alongAxis:)
 
-**Framework**: Core ML  
+**Framework**: Coreml  
 **Kind**: init
 
 Concatenates `tensors` along the `axis` dimension.
@@ -37,8 +37,6 @@ MLTensor(concatenating: [t3, t4], alongAxis: 1) // has shape [2, 6]
 ```
 
 > **Note**: If you are concatenating along a new axis consider using `MLTensor(stacking:alongAxis:)`.
-
-If you are concatenating along a new axis consider using `MLTensor(stacking:alongAxis:)`.
 
 ## Parameters
 

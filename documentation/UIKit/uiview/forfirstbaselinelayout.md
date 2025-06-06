@@ -1,6 +1,6 @@
 # forFirstBaselineLayout
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 Returns a view used to satisfy first baseline constraints.
@@ -28,8 +28,6 @@ When you make a constraint to a view’s [`NSLayoutConstraint.Attribute.firstBas
 Override this property to return a text-based subview (for example, [`UILabel`](uilabel.md) or a nonscrolling [`UITextView`](uitextview.md)). The returned view must be a subview of the receiver. The default implementation returns the value contained by [`forLastBaselineLayout`](uiview/forlastbaselinelayout.md).
 
 > **Note**:  If the same subview is appropriate for both the first and last baseline, you only need to override the [`forLastBaselineLayout`](uiview/forlastbaselinelayout.md) getter method.
-
- If the same subview is appropriate for both the first and last baseline, you only need to override the [`forLastBaselineLayout`](uiview/forlastbaselinelayout.md) getter method.
 
 ## See Also
 

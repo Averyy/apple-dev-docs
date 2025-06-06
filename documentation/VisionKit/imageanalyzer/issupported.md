@@ -30,8 +30,6 @@ For more information on the kinds of things the analyzer finds in images, see [`
 
 > **Note**: If image analysis is a fundamental requirement for your app’s operation, you can prevent unsupported devices from installing your app. Add the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) key to your app’s `Info.plist` (or update the key if it’s already present) and include the array member `iphone-ipad-minimum-performance-a12`.
 
-If image analysis is a fundamental requirement for your app’s operation, you can prevent unsupported devices from installing your app. Add the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) key to your app’s `Info.plist` (or update the key if it’s already present) and include the array member `iphone-ipad-minimum-performance-a12`.
-
 ## See Also
 
 - [class var supportedTextRecognitionLanguages: [String]](imageanalyzer/supportedtextrecognitionlanguages.md)

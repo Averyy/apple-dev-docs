@@ -1,6 +1,6 @@
 # contextMenu(menuItems:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Adds a context menu to a view.
@@ -57,8 +57,6 @@ The system dismisses the menu if someone makes a selection, or taps or clicks ou
 To customize the default preview, apply a [`contentShape(_:_:eoFill:)`](view/contentshape(_:_:eofill:).md) with a [`contextMenuPreview`](contentshapekinds/contextmenupreview.md) kind. For example, you can change the preview’s corner radius or use a nested view as the preview.
 
 > **Note**: This view modifier produces a context menu on macOS, but that platform doesn’t display a preview.
-
-This view modifier produces a context menu on macOS, but that platform doesn’t display a preview.
 
 If you want to show a different preview, you can use [`contextMenu(menuItems:preview:)`](view/contextmenu(menuitems:preview:).md). To add a context menu to a container that supports selection, like a [`List`](list.md) or a [`Table`](table.md), and to distinguish between menu activation on a selection and activation in an empty area of the container, use [`contextMenu(forSelectionType:menu:primaryAction:)`](view/contextmenu(forselectiontype:menu:primaryaction:).md).
 

@@ -1,6 +1,6 @@
 # refreshCarrierToken()
 
-**Framework**: Core Telephony  
+**Framework**: Coretelephony  
 **Kind**: method
 
 Attempts to refresh the carrier token.
@@ -24,8 +24,6 @@ func refreshCarrierToken() -> Bool
 Call this method to update the [`carrierToken`](ctsubscriber/carriertoken.md) when the token exists but the server rejects it.
 
 > **Note**:  Retrieve and attempt to use `carrierToken` first. Only call this method when you know the token is invalid.
-
- Retrieve and attempt to use `carrierToken` first. Only call this method when you know the token is invalid.
 
 Inspect the return value to determine whether this call results in an actual refresh. If the return value is `true`, the system attempts the refresh and calls the delegate method [`subscriberTokenRefreshed(_:)`](ctsubscriberdelegate/subscribertokenrefreshed(_:).md). A return value of `false` indicates an invalid argument (such as bad carrier descriptors or service descriptor) or that the subscriber doesn’t support the authentication action.
 

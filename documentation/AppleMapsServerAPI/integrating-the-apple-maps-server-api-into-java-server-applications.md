@@ -1,6 +1,6 @@
 # Integrating the Apple Maps Server API into Java server applications
 
-**Framework**: Apple Maps Server API
+**Framework**: Applemapsserverapi
 
 Streamline your app’s API by moving georelated searches from inside your app to your server.
 
@@ -19,8 +19,6 @@ The `MapsApiClientDemo.java` file demonstrates how you use the Apple Maps Server
 - Directions - Get directions between origin and destination points.
 
 > **Note**: This sample code project is associated with WWDC22 session: 10006 [`Meet Apple Maps Server APIs`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10006)
-
-This sample code project is associated with WWDC22 session: 10006 [`Meet Apple Maps Server APIs`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10006)
 
 ##### Configure the Sample Code Project
 
@@ -58,4 +56,4 @@ To run the sample, enter the following commands in Terminal while in the `server
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applemapsserverapi/integrating-the-apple-maps-server-api-into-java-server-applications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleMapsServerAPI/integrating-the-apple-maps-server-api-into-java-server-applications)*

@@ -1,6 +1,6 @@
 # restoreState(with:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Restores the interface-related state of the document.
@@ -22,8 +22,6 @@ This method is part of the window restoration system and is called at launch tim
 Subclasses can override this method and use it to restore the document-related information that was saved in the [`encodeRestorableState(with:)`](nsdocument/encoderestorablestate(with:).md) method. You can also use this method to reconfigure the document (or its associated window controller and window) to their previous appearance.
 
 > **Note**:  If the user’s computer is configured to close all windows when an app quits, the system automatically removes any preserved state as part of that process. As a result, the system doesn’t call `restoreState(with:)` the next time your app launches.
-
- If the user’s computer is configured to close all windows when an app quits, the system automatically removes any preserved state as part of that process. As a result, the system doesn’t call `restoreState(with:)` the next time your app launches.
 
 For information about using a coder object to read data from an archive, see [`Encoding and Decoding Custom Types`](https://developer.apple.com/documentation/Foundation/encoding-and-decoding-custom-types).
 

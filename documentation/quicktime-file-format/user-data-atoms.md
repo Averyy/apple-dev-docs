@@ -1,6 +1,6 @@
 # User data atoms
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Atoms you use to define and store data associated with a QuickTime object.
 
@@ -76,8 +76,6 @@ User data text strings may use either Macintosh text encoding or Unicode text en
 
 > ❗ **Important**: Language code values less than `0x400` are Macintosh language codes. Language code values greater than or equal to `0x400` are ISO language codes. The exception to this rule is language code `0x7FF`F, which indicates an unspecified Macintosh language.
 
-Language code values less than `0x400` are Macintosh language codes. Language code values greater than or equal to `0x400` are ISO language codes. The exception to this rule is language code `0x7FF`F, which indicates an unspecified Macintosh language.
-
 ISO language codes are three-character codes. In order to fit inside a 16-bit field, the characters must be packed into three 5-bit subfields. This packing is described in [`Language code values`](language_code_values.md).
 
 #### Media Characteristic Tags
@@ -105,14 +103,10 @@ Tag strings have the following structure:
 
 > **Note**: Public tags are public because they are documented in this specification or are available in Apple APIs. Other definitions of tags with the “`public.`” prefix are prohibited; use private tags instead.
 
-Public tags are public because they are documented in this specification or are available in Apple APIs. Other definitions of tags with the “`public.`” prefix are prohibited; use private tags instead.
-
 - A private tag starts with the private entity’s domain using a reverse DNS naming convention. For example, `apple.com` becomes `com.apple`. This is followed by one or more segments separated by periods. Examples (not defined) might be `com.apple.this-is-a-tag`, `com.apple.video.includes-sign-language`, and `org.w3c.html5.referenced-video`.
 - The only allowed prefixes are “`public.`” and reversed domains. All other prefixes are reserved for future use.
 
 > **Note**: Generic top-level domains other than “`public`” (if it were to be assigned) are supported. The string “`public`” is reserved to signal public media characteristic tags.
-
-Generic top-level domains other than “`public`” (if it were to be assigned) are supported. The string “`public`” is reserved to signal public media characteristic tags.
 
 This specification defines the following public media characteristic tags. Other public and private tags could be defined outside the specification; unrecognized tags should be ignored.
 

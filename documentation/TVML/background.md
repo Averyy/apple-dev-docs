@@ -1,6 +1,6 @@
 # background
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Displays an image or plays audio in the background of a channel app page.
 
@@ -18,8 +18,6 @@ Here’s an example that shows adding an image and audio to a `background` eleme
 ```
 
 > **Note**: Audio does not work in the background when the `background` element is contained in a `banner` element.
-
-Audio does not work in the background when the `background` element is contained in a `banner` element.
 
 ##### Subelements of Background
 
@@ -58,4 +56,4 @@ Audio does not work in the background when the `background` element is contained
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/background)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/background)*

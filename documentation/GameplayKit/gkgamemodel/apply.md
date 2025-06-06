@@ -1,6 +1,6 @@
 # apply(_:)
 
-**Framework**: GameplayKit  
+**Framework**: Gameplaykit  
 **Kind**: method  
 **Required**: Yes
 
@@ -29,8 +29,6 @@ For example, a move class for a chess game would identify the piece to be moved 
 GameplayKit assumes that calling this method performs a move on behalf of the player identified by the [`activePlayer`](gkgamemodel/activeplayer.md) property.
 
 > **Note**:  By default, a GameplayKit strategist explores possible moves by copying the current game model, then calling this method to test the effect of a move. Copying a game model (see the [`setGameModel(_:)`](gkgamemodel/setgamemodel(_:).md) method) repeatedly can increase the time it takes for a strategist to evaluate moves. If you also implement the [`unapplyGameModelUpdate(_:)`](gkgamemodel/unapplygamemodelupdate(_:).md) method to undo moves, the strategist can evaluate multiple moves without copying the game model, possibly increasing performance.
-
- By default, a GameplayKit strategist explores possible moves by copying the current game model, then calling this method to test the effect of a move. Copying a game model (see the [`setGameModel(_:)`](gkgamemodel/setgamemodel(_:).md) method) repeatedly can increase the time it takes for a strategist to evaluate moves. If you also implement the [`unapplyGameModelUpdate(_:)`](gkgamemodel/unapplygamemodelupdate(_:).md) method to undo moves, the strategist can evaluate multiple moves without copying the game model, possibly increasing performance.
 
 ## Parameters
 

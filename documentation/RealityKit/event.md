@@ -1,6 +1,6 @@
 # Event
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: protocol
 
 A type that can be sent as an event.
@@ -63,8 +63,6 @@ struct RealityGame: View {
 
 > **Note**: Add a [`CollisionComponent`](collisioncomponent.md) to any entities you want to detect collisions for.
 
-Add a [`CollisionComponent`](collisioncomponent.md) to any entities you want to detect collisions for.
-
 ## Relationships
 
 ### Inherits From
@@ -121,4 +119,4 @@ Add a [`CollisionComponent`](collisioncomponent.md) to any entities you want to 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/event)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/event)*

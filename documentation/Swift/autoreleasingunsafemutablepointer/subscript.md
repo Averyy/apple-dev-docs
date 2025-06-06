@@ -24,8 +24,6 @@ subscript(i: Int) -> Pointee { get }
 
 > **Note**: `self != nil`.
 
-`self != nil`.
-
 ## See Also
 
 - [var pointee: Pointee](autoreleasingunsafemutablepointer/pointee.md)

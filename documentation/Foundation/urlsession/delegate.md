@@ -26,8 +26,6 @@ This delegate object is responsible for handling authentication challenges, for 
 
 > **Note**:  This delegate object must be set at object creation time and may not be changed.
 
- This delegate object must be set at object creation time and may not be changed.
-
 ## See Also
 
 - [protocol URLSessionDelegate](urlsessiondelegate.md)

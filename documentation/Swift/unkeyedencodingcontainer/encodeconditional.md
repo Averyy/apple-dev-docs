@@ -29,8 +29,6 @@ For formats which don’t support this feature, the default implementation encod
 
 > **Note**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 
-`EncodingError.invalidValue` if the given value is invalid in the current context for this format.
-
 ## Parameters
 
 - `object`: The object to encode.

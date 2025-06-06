@@ -37,9 +37,7 @@ if horseName.isEmpty {
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/collection/isempty)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/collection/isempty)*

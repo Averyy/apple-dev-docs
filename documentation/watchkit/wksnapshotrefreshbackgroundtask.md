@@ -26,8 +26,6 @@ Don’t subclass or create instances of this class. Instead, schedule a backgrou
 
 > **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
 
- In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
-
 Background snapshot tasks are budgeted. In general, the system performs approximately one task per hour for each app in the dock (including the most recently used app). This budget is shared among all apps on the dock. The system performs multiple tasks an hour for each app with a complication on the active watch face. This budget is shared among all complications on the watch face. After you exhaust the budget, the system delays your requests until more time becomes available.
 
 The system automatically schedules background snapshot request tasks when:
@@ -90,4 +88,4 @@ These requests don’t cancel or replace any of your scheduled requests.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wksnapshotrefreshbackgroundtask)*

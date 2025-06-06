@@ -1,6 +1,6 @@
 # Defining your app’s Focus filter
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Customize your app’s behavior to reflect the device’s current Focus.
 
@@ -14,8 +14,6 @@ Customize your app’s behavior to reflect the device’s current Focus.
 Use App Intents to define your app’s Focus filters, act on changes from the system, and filter notifications based on its parameters.
 
 > **Note**: This sample code project is associated with WWDC22 session 10121: [`Meet Focus filters`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10121).
-
-This sample code project is associated with WWDC22 session 10121: [`Meet Focus filters`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10121).
 
 ##### 4103175
 

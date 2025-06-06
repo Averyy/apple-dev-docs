@@ -1,6 +1,6 @@
 # contextMenu(menuItems:preview:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Adds a context menu with a custom preview to a view.
@@ -56,8 +56,6 @@ When someone activates the context menu with an action like touch and hold in iO
 To customize the lift preview, shown while the system transitions to show your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](view/contentshape(_:_:eofill:).md) with a [`contextMenuPreview`](contentshapekinds/contextmenupreview.md) kind. For example, you can change the lift preview’s corner radius or use a nested view as the lift preview.
 
 > **Note**: This view modifier produces a context menu on macOS, but that platform doesn’t display the preview.
-
-This view modifier produces a context menu on macOS, but that platform doesn’t display the preview.
 
 If you don’t need a preview, use [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md) instead. If you want to add a context menu to a container that supports selection, like a [`List`](list.md) or a [`Table`](table.md), and you want to distinguish between menu activation on a selection and activation in an empty area of the container, use [`contextMenu(forSelectionType:menu:primaryAction:)`](view/contextmenu(forselectiontype:menu:primaryaction:).md).
 

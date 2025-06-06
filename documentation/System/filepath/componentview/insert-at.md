@@ -37,8 +37,6 @@ Calling this method may invalidate any existing indices for use with this collec
 
 > **Note**: O(), where  is the length of the collection. If `i == endIndex`, this method is equivalent to `append(_:)`.
 
-O(), where  is the length of the collection. If `i == endIndex`, this method is equivalent to `append(_:)`.
-
 ## Parameters
 
 - `newElement`: The new element to insert into the collection.

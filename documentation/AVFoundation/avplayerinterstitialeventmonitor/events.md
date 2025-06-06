@@ -1,6 +1,6 @@
 # events
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The schedule of interstitial events.
@@ -27,8 +27,6 @@ When the primary player’s content specifies the schedule of interstitial event
 When you specify the schedule of interstitial events using an [`AVPlayerInterstitialEventController`](avplayerinterstitialeventcontroller.md), this property value changes only when you update the interstitial event controller’s schedule.
 
 > **Note**:  The elements in the [`events`](avplayerinterstitialeventmonitor/events.md) array are immutable. Attempting to modify them generates an exception. To alter an event, make a copy and modify the new instance.
-
- The elements in the [`events`](avplayerinterstitialeventmonitor/events.md) array are immutable. Attempting to modify them generates an exception. To alter an event, make a copy and modify the new instance.
 
 ## See Also
 

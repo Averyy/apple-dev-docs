@@ -157,8 +157,6 @@ amount.formatted(.currency(code: "USD").grouping(.automatic))
 
 > **Note**: To ensure accuracy, don’t use [`Float`](https://developer.apple.com/documentation/Swift/Float) or [`Double`](https://developer.apple.com/documentation/Swift/Double) to represent currency in your app. Use [`Decimal`](https://developer.apple.com/documentation/Foundation/Decimal) instead.
 
-To ensure accuracy, don’t use [`Float`](https://developer.apple.com/documentation/Swift/Float) or [`Double`](https://developer.apple.com/documentation/Swift/Double) to represent currency in your app. Use [`Decimal`](https://developer.apple.com/documentation/Foundation/Decimal) instead.
-
 ##### Format Times As Intervals or Durations
 
 To display an interval of time as a localizable string:
@@ -371,4 +369,4 @@ struct ContentView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/preparing-dates-numbers-with-formatters)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/preparing-dates-numbers-with-formatters)*

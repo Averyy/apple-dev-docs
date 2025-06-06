@@ -1,14 +1,12 @@
 # SCNetworkConnection
 
-**Framework**: System Configuration
+**Framework**: Systemconfiguration
 
 #### Overview
 
 The `SCNetworkConnection` programming interface contains functions that allow an application to control connection-oriented services defined in the system and get connection-status information. Note that these functions allow you to control and get information about existing services only. If you need to create, change, or remove services, you should use the `SCNetworkConfiguration` programming interface instead.
 
 > **Note**:  Currently, only PPP services can be controlled.
-
- Currently, only PPP services can be controlled.
 
 ## Topics
 
@@ -81,4 +79,4 @@ The `SCNetworkConnection` programming interface contains functions that allow an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/systemconfiguration/scnetworkconnection-g7e)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SystemConfiguration/scnetworkconnection-g7e)*

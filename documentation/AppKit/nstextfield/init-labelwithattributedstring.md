@@ -1,6 +1,6 @@
 # init(labelWithAttributedString:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: init
 
 Creates a text field for use as a static label that displays styled text, doesn’t wrap, and doesn’t have selectable text.
@@ -24,8 +24,6 @@ A text field that displays the specified attributed string as a static label.
 The text field determines its line-break mode by inspecting the paragraph style attributes in the attributed string.
 
 > **Note**:  When the text field has an attributed string value, the system ignores the [`textColor`](nstextfield/textcolor.md), [`font`](nscontrol/font.md), [`alignment`](nscontrol/alignment.md), [`lineBreakMode`](nscontrol/linebreakmode.md), and `lineBreakStrategy` properties. Set the [`foregroundColor`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1533563-foregroundcolor), [`font`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1528839-font), [`alignment`](nsmutableparagraphstyle/alignment.md), linebreakmode, and [`lineBreakStrategy`](nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
-
- When the text field has an attributed string value, the system ignores the [`textColor`](nstextfield/textcolor.md), [`font`](nscontrol/font.md), [`alignment`](nscontrol/alignment.md), [`lineBreakMode`](nscontrol/linebreakmode.md), and `lineBreakStrategy` properties. Set the [`foregroundColor`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1533563-foregroundcolor), [`font`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1528839-font), [`alignment`](nsmutableparagraphstyle/alignment.md), linebreakmode, and [`lineBreakStrategy`](nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
 
 ## Parameters
 

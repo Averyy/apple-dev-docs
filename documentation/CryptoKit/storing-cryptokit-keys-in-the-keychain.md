@@ -1,6 +1,6 @@
 # Storing CryptoKit Keys in the Keychain
 
-**Framework**: Apple CryptoKit
+**Framework**: Cryptokit
 
 Convert between strongly typed cryptographic keys and native keychain types.
 
@@ -185,8 +185,6 @@ case let status: throw KeyStoreError("Keychain read failed: \(status.message)")
 ```
 
 > **Note**: The above query returns the first elliptic-curve key with the given label found in the user’s keychain. You might need to perform a more sophisticated search if more than one key might match, as described in [`Storing Keys in the Keychain`](https://developer.apple.com/documentation/security/storing-keys-in-the-keychain).
-
-The above query returns the first elliptic-curve key with the given label found in the user’s keychain. You might need to perform a more sophisticated search if more than one key might match, as described in [`Storing Keys in the Keychain`](https://developer.apple.com/documentation/security/storing-keys-in-the-keychain).
 
 After you get the [`SecKey`](https://developer.apple.com/documentation/security/seckey) reference, initialize a CryptoKit key using the X9.63 representation returned by the [`SecKeyCopyExternalRepresentation(_:_:)`](https://developer.apple.com/documentation/security/seckeycopyexternalrepresentation(_:_:)) function.
 

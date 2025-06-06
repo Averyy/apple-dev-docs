@@ -1,6 +1,6 @@
 # UIDocumentBrowserTransitionController
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that implements the standard loading and transition animations for a document browser.
@@ -28,8 +28,6 @@ Each transition controller is associated with a document in the document browser
 You don’t instantiate instances of [`UIDocumentBrowserTransitionController`](uidocumentbrowsertransitioncontroller.md) yourself. Instead, call the document browser’s [`transitionController(forDocumentURL:)`](uidocumentbrowserviewcontroller/transitioncontroller(fordocumenturl:).md) method to get a transition controller for the specified document.
 
 > **Note**:  In Mac apps built with Mac Catalyst, the transition controller doesn’t trigger animations because the macOS design doesn’t use animations for opening or closing documents.
-
- In Mac apps built with Mac Catalyst, the transition controller doesn’t trigger animations because the macOS design doesn’t use animations for opening or closing documents.
 
 ## Topics
 
@@ -63,4 +61,4 @@ You don’t instantiate instances of [`UIDocumentBrowserTransitionController`](u
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uidocumentbrowsertransitioncontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uidocumentbrowsertransitioncontroller)*

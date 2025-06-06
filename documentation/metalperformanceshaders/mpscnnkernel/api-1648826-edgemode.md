@@ -1,6 +1,6 @@
 # edgeMode
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: instp
 
 The edge mode to use when texture reads stray off the edge of an image.
@@ -26,8 +26,6 @@ Most [`MPSKernel`](mpskernel.md) objects can read off the edge of the source ima
 The default value is [`MPSImageEdgeMode.zero`](mpsimageedgemode/zero.md). 
 
 > **Note**: For an [`MPSCNNPoolingAverage`](mpscnnpoolingaverage.md) object, specifying a [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md) edge mode is interpreted as a "shrink-to-edge" operation, which shrinks the effective filtering window to remain within the source image borders.
-
-For an [`MPSCNNPoolingAverage`](mpscnnpoolingaverage.md) object, specifying a [`MPSImageEdgeMode.clamp`](mpsimageedgemode/clamp.md) edge mode is interpreted as a "shrink-to-edge" operation, which shrinks the effective filtering window to remain within the source image borders.
 
 
 ---

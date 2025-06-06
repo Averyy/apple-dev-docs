@@ -38,8 +38,6 @@ A pass can have only 10 relevant locations. If your pass needs more locations, s
 
 > **Note**:  Test your pass relevancy settings on a device. Simulator doesn’t show passes on the lock screen.
 
- Test your pass relevancy settings on a device. Simulator doesn’t show passes on the lock screen.
-
 ##### Add Relevancy with Ibeacons
 
 Show your pass on the lock screen when the device comes close to an iBeacon. Add up to ten different UUIDs for iBeacons to the `beacons` array of the [`Pass`](pass.md) object.
@@ -75,4 +73,4 @@ The following code shows a pass with one beacon:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/showing-a-pass-on-the-lock-screen)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/showing-a-pass-on-the-lock-screen)*

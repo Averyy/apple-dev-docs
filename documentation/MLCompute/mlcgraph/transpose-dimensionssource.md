@@ -1,6 +1,6 @@
 # transpose(dimensions:source:)
 
-**Framework**: ML Compute  
+**Framework**: Mlcompute  
 **Kind**: method
 
 Adds a new transpose layer to the graph using the dimensions and source tensor you specify.
@@ -27,8 +27,6 @@ A result tensor.
 The dimensions array specifies the input axis source for each output axis. In other words, the `n`th element in the dimensions array specifies the input axis source for the `n`th axis in the output.
 
 > **Note**:  The batch dimension is typically axis 0, which you can’t transpose.
-
- The batch dimension is typically axis 0, which you can’t transpose.
 
 ## Parameters
 

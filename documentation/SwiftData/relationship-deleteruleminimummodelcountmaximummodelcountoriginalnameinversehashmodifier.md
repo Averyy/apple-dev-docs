@@ -1,6 +1,6 @@
 # Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: macro
 
 Specifies the options that SwiftData needs to manage the annotated property as a relationship between two models.
@@ -57,8 +57,6 @@ class Category {
 ```
 
 > **Note**: If you declare a relationship attribute as optional when defining your persistent models, SwiftData only enforces `minimumModelCount` and `maximumModelCount` when that attribute isn’t nil.
-
-If you declare a relationship attribute as optional when defining your persistent models, SwiftData only enforces `minimumModelCount` and `maximumModelCount` when that attribute isn’t nil.
 
 For more information about defining relationships between models, see [`Defining data relationships with enumerations and model classes`](defining-data-relationships-with-enumerations-and-model-classes.md).
 

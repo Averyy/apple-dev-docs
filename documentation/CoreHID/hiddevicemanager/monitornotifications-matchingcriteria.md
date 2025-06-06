@@ -1,6 +1,6 @@
 # monitorNotifications(matchingCriteria:)
 
-**Framework**: Core HID  
+**Framework**: Corehid  
 **Kind**: method
 
 Creates an asynchronous stream that receives notifications for devices of interest.
@@ -42,8 +42,6 @@ for await notification in await manager.monitorNotifications(matchingCriteria: [
 ```
 
 > **Note**: [`HIDDeviceError`](hiddeviceerror.md) if there is an issue with setup.
-
-[`HIDDeviceError`](hiddeviceerror.md) if there is an issue with setup.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Getting the user’s attention with alerts and action sheets
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Present important information to the user or prompt the user about an important choice.
 
@@ -11,8 +11,6 @@ Display an alert or action sheet when your app requires additional information o
 ![An alert shows location services are off. An action sheet from Safari asks what to do with tabs.](https://docs-assets.developer.apple.com/published/f9d8686737bb1cb4a4a13ec0a93a8453/media-2938395%402x.png)
 
 > ❗ **Important**:  Because alerts and action sheets are an interruption, use them sparingly and only when absolutely needed. For detailed guidance on when to use them, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/all-components).
-
- Because alerts and action sheets are an interruption, use them sparingly and only when absolutely needed. For detailed guidance on when to use them, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/all-components).
 
 To display an alert or action sheet, create a [`UIAlertController`](uialertcontroller.md) object, configure it, and call its [`present(_:animated:completion:)`](uiviewcontroller/present(_:animated:completion:).md) method, as shown in the following code. Configuring the alert controller includes specifying the title and message that you want the user to see and the actions the user can select. You must add at least one action — represented by a [`UIAlertAction`](uialertaction.md) object — to an alert controller before presenting it.
 
@@ -78,8 +76,6 @@ To display your action sheet in a popover, specify your popover’s anchor point
 
 > **Note**:  If your set of actions includes a button configured with the [`UIAlertAction.Style.cancel`](uialertaction/style-swift.enum/cancel.md) style, UIKit removes that button when displaying your action sheet in a popover. Tapping anywhere outside of the popover has the same effect as tapping the Cancel button, including calling your action handler.
 
- If your set of actions includes a button configured with the [`UIAlertAction.Style.cancel`](uialertaction/style-swift.enum/cancel.md) style, UIKit removes that button when displaying your action sheet in a popover. Tapping anywhere outside of the popover has the same effect as tapping the Cancel button, including calling your action handler.
-
 ## See Also
 
 - [class UIAlertController](uialertcontroller.md)
@@ -90,4 +86,4 @@ To display your action sheet in a popover, specify your popover’s anchor point
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/getting-the-user-s-attention-with-alerts-and-action-sheets)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/getting-the-user-s-attention-with-alerts-and-action-sheets)*

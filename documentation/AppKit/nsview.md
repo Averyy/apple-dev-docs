@@ -1,6 +1,6 @@
 # NSView
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 The infrastructure for drawing, printing, and handling events in an app.
@@ -63,8 +63,6 @@ If you subclass [`NSView`](nsview.md) directly and handle specific types of even
 - [`tabletProximity(with:)`](nsresponder/tabletproximity(with:).md)
 
 > **Note**:  `NSView` changes the default behavior of [`rightMouseDown(with:)`](nsresponder/rightmousedown(with:).md) so that it calls [`menu(for:)`](nsview/menu(for:).md) and, if non `nil`, presents the contextual menu. In macOS 10.7 and later, if the event is not handled, `NSView` passes the event up the responder chain. Because of these behaviorial changes, call `super` when implementing [`rightMouseDown(with:)`](nsresponder/rightmousedown(with:).md) in your custom `NSView` subclasses.
-
- `NSView` changes the default behavior of [`rightMouseDown(with:)`](nsresponder/rightmousedown(with:).md) so that it calls [`menu(for:)`](nsview/menu(for:).md) and, if non `nil`, presents the contextual menu. In macOS 10.7 and later, if the event is not handled, `NSView` passes the event up the responder chain. Because of these behaviorial changes, call `super` when implementing [`rightMouseDown(with:)`](nsresponder/rightmousedown(with:).md) in your custom `NSView` subclasses.
 
 If your view descends from a class other than `NSView`, call `super` to let the parent view handle any events that you don’t.
 
@@ -168,4 +166,4 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview)*

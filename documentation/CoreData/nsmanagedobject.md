@@ -1,6 +1,6 @@
 # NSManagedObject
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: class
 
 The base class that all Core Data model objects inherit from.
@@ -23,9 +23,9 @@ class NSManagedObject
 ## Mentions
 
 - [Syncing a Core Data Store with CloudKit](syncing-a-core-data-store-with-cloudkit.md)
-- [Using Core Data in the background](using-core-data-in-the-background.md)
 - [Modeling data](modeling-data.md)
 - [Generating code](generating-code.md)
+- [Using Core Data in the background](using-core-data-in-the-background.md)
 
 #### Overview
 
@@ -40,8 +40,6 @@ If you instantiate a managed object directly, you must call the designated initi
 In some respects, an `NSManagedObject` acts like a dictionary—it’s a generic container object that provides efficient storage for the properties defined by its associated `NSEntityDescription` instance. `NSManagedObject` supports a range of common types for attribute values, including string, date, and number (see [`NSAttributeDescription`](nsattributedescription.md) for full details). Therefore, typically you don’t need to define instance variables in subclasses. Sometimes, however, you want to use types that aren’t supported directly, such as colors and C structures. For example, in a graphics application you might want to define a Rectangle entity that has color and bounds attributes that are an instance of `NSColor` and an `NSRect` struct, respectively. For some types you can use a transformable attribute, for others this may require you to create a subclass of `NSManagedObject`.
 
 > **Note**: The default value for [`automaticallyNotifiesObservers(forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/automaticallyNotifiesObservers(forKey:)) is `false` for managed properties of a `NSManagedObject`, and `true` for unmanaged properties.
-
-The default value for [`automaticallyNotifiesObservers(forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/automaticallyNotifiesObservers(forKey:)) is `false` for managed properties of a `NSManagedObject`, and `true` for unmanaged properties.
 
 ##### Faulting
 
@@ -238,4 +236,4 @@ If you implement custom inter-property validation methods like [`validateForUpda
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsmanagedobject)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsmanagedobject)*

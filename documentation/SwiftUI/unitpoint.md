@@ -1,6 +1,6 @@
 # UnitPoint
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A normalized 2D point in a view’s coordinate space.
@@ -47,8 +47,6 @@ You can perform this calculation yourself if you happen to know a view’s size,
 You can create custom unit points with explicit values, like the example above, or you can use one of the built-in unit points that SwiftUI provides, like [`zero`](unitpoint/zero.md), [`center`](unitpoint/center.md), or [`topTrailing`](unitpoint/toptrailing.md). The built-in values correspond to the alignment positions of the similarly named, built-in [`Alignment`](alignment.md) types.
 
 > **Note**: A unit point with one or more components outside the range `[0, 1]` projects to a point outside of the view.
-
-A unit point with one or more components outside the range `[0, 1]` projects to a point outside of the view.
 
 ##### Layout Direction
 
@@ -117,4 +115,4 @@ It’s important to test your app for the different locales that you distribute 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/unitpoint)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/unitpoint)*

@@ -1,6 +1,6 @@
 # shuffled(using:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns the elements of the sequence, shuffled using the given generator as a source for randomness.
@@ -36,11 +36,7 @@ let shuffledNumbers = numbers.shuffled(using: &myGenerator)
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 > **Note**: The algorithm used to shuffle a sequence may change in a future version of Swift. If you’re passing a generator that results in the same shuffled order each time you run your program, that sequence may change when your program is compiled using a different version of Swift.
-
-The algorithm used to shuffle a sequence may change in a future version of Swift. If you’re passing a generator that results in the same shuffled order each time you run your program, that sequence may change when your program is compiled using a different version of Swift.
 
 ## Parameters
 

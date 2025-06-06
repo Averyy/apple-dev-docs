@@ -1,6 +1,6 @@
 # isDepthDataDeliveryEnabled
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that determines whether the photo output captures depth data along with the photo.
@@ -24,8 +24,6 @@ When this property is  [`false`](https://developer.apple.com/documentation/swift
 If you change this property to [`true`](https://developer.apple.com/documentation/swift/true), the capture output records per-pixel scene depth information and delivers an [`AVDepthData`](avdepthdata.md) object in the photo capture results. Enabling depth capture for a photo capture request requires that the photo output first be configured for depth capture using its own [`isDepthDataDeliveryEnabled`](avcapturephotooutput/isdepthdatadeliveryenabled.md) property (and raises an exception otherwise).
 
 > **Note**:  Enabling depth capture along with photo capture adds significant processing time before delivery of results to your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method.
-
- Enabling depth capture along with photo capture adds significant processing time before delivery of results to your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method.
 
 ## See Also
 

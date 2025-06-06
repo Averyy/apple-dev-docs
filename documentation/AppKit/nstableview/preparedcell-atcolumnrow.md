@@ -1,6 +1,6 @@
 # preparedCell(atColumn:row:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Returns the fully prepared cell that the table view will use for drawing or processing of the specified row and column.
@@ -24,8 +24,6 @@ New [`NSCell`](nscell.md) subclass instance to use for the specified `row` and `
 You can override this method to do any additional cell set up that is required, or invoke it to retrieve a cell that has its contents configured for the specified `column` and `row`.
 
 > **Note**:  This method is only available to [`NSCell`](nscell.md)-based table views.
-
- This method is only available to [`NSCell`](nscell.md)-based table views.
 
 ## Parameters
 

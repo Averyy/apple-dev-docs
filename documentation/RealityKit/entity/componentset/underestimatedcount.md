@@ -1,6 +1,6 @@
 # underestimatedCount
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 A value less than or equal to the number of elements in the collection.
@@ -21,8 +21,6 @@ var underestimatedCount: Int { get }
 #### Discussion
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
 
 
 ---

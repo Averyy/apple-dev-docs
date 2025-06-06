@@ -1,6 +1,6 @@
 # AppKit
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: module
 
 Construct and manage a graphical, event-driven user interface for your macOS app.
@@ -20,8 +20,6 @@ Aside from drawing and managing interactions, AppKit handles printing, animating
 AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI), so you can implement parts of your AppKit app in SwiftUI or mix interface elements between the two frameworks. For example, you can place AppKit views and view controllers inside SwiftUI views, and vice versa.
 
 > **Note**:  For information about bringing your iPad app to Mac, see [`Mac Catalyst`](https://developer.apple.com/documentation/UIKit/mac-catalyst). To build an iOS app, you can use SwiftUI to create an app that works across all of Apple’s platforms, or use [`UIKit`](https://developer.apple.com/documentation/UIKit) to create an app for iOS only.
-
- For information about bringing your iPad app to Mac, see [`Mac Catalyst`](https://developer.apple.com/documentation/UIKit/mac-catalyst). To build an iOS app, you can use SwiftUI to create an app that works across all of Apple’s platforms, or use [`UIKit`](https://developer.apple.com/documentation/UIKit) to create an app for iOS only.
 
 ## Topics
 

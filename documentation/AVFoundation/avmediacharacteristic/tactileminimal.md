@@ -1,6 +1,6 @@
 # tactileMinimal
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A media characteristic that indicates that a track or media selection option includes haptic content.
@@ -25,8 +25,6 @@ static let tactileMinimal: AVMediaCharacteristic
 The value of this characteristic is `public.haptics.minimal`. Query the [`hasMediaCharacteristic(_:)`](avassettrack/hasmediacharacteristic(_:).md) method of [`AVAssetTrack`](avassettrack.md) or the [`hasMediaCharacteristic(_:)`](avmediaselectionoption/hasmediacharacteristic(_:).md) of [`AVMediaSelectionOption`](avmediaselectionoption.md) to determine whether the media contains this characteristic.
 
 > **Note**:  A QuickTime movie or MPEG-4 file track contains this characteristic only when the author explicitly tags it that way.
-
- A QuickTime movie or MPEG-4 file track contains this characteristic only when the author explicitly tags it that way.
 
 ## See Also
 

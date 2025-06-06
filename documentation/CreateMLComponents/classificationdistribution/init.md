@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: init
 
 Creates a classification distribution.
@@ -23,8 +23,6 @@ init<C>(_ classifications: C) where C : Collection, C.Element == Classification<
 #### Discussion
 
 > **Note**: The classifications must contain unique labels.
-
-The classifications must contain unique labels.
 
 ## Parameters
 

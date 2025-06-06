@@ -17,8 +17,6 @@ Call this method from within a test method to measure the performance of a block
 
 > **Note**:  This method starts and stops performance measurement automatically. Use [`measureMetrics(_:automaticallyStartMeasuring:for:)`](xctestcase/measuremetrics(_:automaticallystartmeasuring:for:).md) if you need more control over when performance measurement starts and ends.
 
- This method starts and stops performance measurement automatically. Use [`measureMetrics(_:automaticallyStartMeasuring:for:)`](xctestcase/measuremetrics(_:automaticallystartmeasuring:for:).md) if you need more control over when performance measurement starts and ends.
-
 ## Parameters
 
 - `block`: A block whose performance is measured.

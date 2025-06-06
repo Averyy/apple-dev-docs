@@ -1,6 +1,6 @@
 # FormPresentationSizing
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 The size is appropriate for forms and slightly less wide than`.page`
@@ -26,8 +26,6 @@ On iOS, `.form` sizing enforces a platform-defined floor for the vertical and ho
 
 > **Note**: [`form`](presentationsizing/form.md)
 
-[`form`](presentationsizing/form.md)
-
 ## Relationships
 
 ### Conforms To
@@ -46,4 +44,4 @@ On iOS, `.form` sizing enforces a platform-defined floor for the vertical and ho
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/formpresentationsizing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/formpresentationsizing)*

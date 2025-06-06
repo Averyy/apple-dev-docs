@@ -55,8 +55,6 @@ print(line.split(separator: " ", omittingEmptySubsequences: false)
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## Parameters
 
 - `separator`: The element that should be split upon.

@@ -49,8 +49,6 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the absolute value of `distance`.
 
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the absolute value of `distance`.
-
 ## Parameters
 
 - `i`: A valid index of the collection.

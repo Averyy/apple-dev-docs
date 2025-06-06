@@ -1,6 +1,6 @@
 # AppKit Release Notes for macOS 10.14
 
-**Framework**: macOS Release Notes
+**Framework**: Macos Release Notes
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -85,8 +85,6 @@ Named [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) obje
 When you save a rich text file (RTF) in macOS 10.14, the names of the [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) values that represent the colors in the rich text are saved in the file in addition to the individual evaluated components. When you open a rich text file that was saved in macOS 10.14, the named color values are used as the source of color information instead of the components.
 
 > **Note**: Named colors aren’t saved when you use document formats other than RTF or Rich Text Format Directory (RTFD).
-
-Named colors aren’t saved when you use document formats other than RTF or Rich Text Format Directory (RTFD).
 
 The new [`appearance`](https://developer.apple.com/documentation/foundation/nsattributedstring/documentattributekey/3022479-appearance) document attribute controls how the underlying unnamed colors are represented when you save rich text. If you omit this attribute in a document, named colors use the [`aqua`](https://developer.apple.com/documentation/AppKit/NSAppearance/Name-swift.struct/aqua) appearance.
 
@@ -333,8 +331,6 @@ if current < NSAppKitVersion.macOS10_9 {
 ```
 
 > **Note**: In Foundation, you use the [`NSFoundationVersionNumber`](https://developer.apple.com/documentation/Foundation/NSFoundationVersionNumber) global variable.
-
-In Foundation, you use the [`NSFoundationVersionNumber`](https://developer.apple.com/documentation/Foundation/NSFoundationVersionNumber) global variable.
 
 Unlike most AppKit software updates, macOS 10.10 software updates incremented the AppKit major version, which accounts for the specific treatment of [`macOS10_10_Max`](https://developer.apple.com/documentation/AppKit/NSAppKitVersion/macOS10_10_Max) in the example above. Other special cases or situations for version checking are discussed in the release notes as appropriate. Some individual headers may also declare an AppKit version number where some bug fix or functionality is available in a given update, for example:
 

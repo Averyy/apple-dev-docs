@@ -1,6 +1,6 @@
 # validateToolbarItem(_:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method  
 **Required**: Yes
 
@@ -21,8 +21,6 @@ func validateToolbarItem(_ item: NSToolbarItem) -> Bool
 NSToolbar only calls this method for image items.
 
 > **Note**:  [`validateToolbarItem:`](https://developer.apple.com/documentation/objectivec/nsobject/1524282-validatetoolbaritem) is called very frequently, so it must be efficient.
-
- [`validateToolbarItem:`](https://developer.apple.com/documentation/objectivec/nsobject/1524282-validatetoolbaritem) is called very frequently, so it must be efficient.
 
 If the receiver is the `target` for the actions of multiple toolbar items, it’s necessary to determine which toolbar item `theItem` refers to by testing the `itemIdentifier`.
 

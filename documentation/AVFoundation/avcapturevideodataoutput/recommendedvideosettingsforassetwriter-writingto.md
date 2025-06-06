@@ -1,6 +1,6 @@
 # recommendedVideoSettingsForAssetWriter(writingTo:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Specifies the recommended settings for use with an AVAssetWriterInput.
@@ -29,8 +29,6 @@ This dictionary contains keys and values described in [`Video settings`](video-s
 Note that the dictionary of settings is dependent on the current configuration of the output’s [`AVCaptureSession`](avcapturesession.md) and its inputs. The settings dictionary may change if the session’s configuration changes. As such, configure your session first, then query the recommended video settings.
 
 > **Note**:  This method returns appropriate settings based on the device’s default video recording codec, but that default can differ between devices. Use the [`recommendedVideoSettings(forVideoCodecType:assetWriterOutputFileType:)`](avcapturevideodataoutput/recommendedvideosettings(forvideocodectype:assetwriteroutputfiletype:).md) method to obtain video settings appropriate for a specific codec.
-
- This method returns appropriate settings based on the device’s default video recording codec, but that default can differ between devices. Use the [`recommendedVideoSettings(forVideoCodecType:assetWriterOutputFileType:)`](avcapturevideodataoutput/recommendedvideosettings(forvideocodectype:assetwriteroutputfiletype:).md) method to obtain video settings appropriate for a specific codec.
 
 ## Parameters
 

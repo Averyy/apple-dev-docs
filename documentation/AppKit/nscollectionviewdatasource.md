@@ -1,6 +1,6 @@
 # NSCollectionViewDataSource
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: protocol
 
 A set of methods that a data source object implements to provide the information and view objects that a collection view requires to present content.
@@ -44,8 +44,6 @@ When you call the [`makeItem(withIdentifier:for:)`](nscollectionview/makeitem(wi
 
 > **Note**:  You must register the items and supplementary views of your app before trying to recycle or create them. For each element, you can register a class or nib file to use when creating new instances of the item. For more information about registering the elements for your collection view, see [`NSCollectionView`](nscollectionview.md).
 
- You must register the items and supplementary views of your app before trying to recycle or create them. For each element, you can register a class or nib file to use when creating new instances of the item. For more information about registering the elements for your collection view, see [`NSCollectionView`](nscollectionview.md).
-
 The listing below shows how to create and configure an item in the [`collectionView(_:itemForRepresentedObjectAt:)`](nscollectionviewdatasource/collectionview(_:itemforrepresentedobjectat:).md) method of your data source. After retrieving an item using the [`makeItem(withIdentifier:for:)`](nscollectionview/makeitem(withidentifier:for:).md) method, you configure the properties of that item with your custom data. In this case, the code assigns an image to the built-in image view provided by the [`NSCollectionViewItem`](nscollectionviewitem.md) class. If you defined a custom item class with additional views or controls, you would configure those views before returning the item from this method. You must fully configure the item before returning it.
 
 Listing 1. Creating and configuring an item
@@ -85,4 +83,4 @@ After returning an item object from your [`collectionView(_:itemForRepresentedOb
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscollectionviewdatasource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscollectionviewdatasource)*

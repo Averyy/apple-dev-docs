@@ -1,6 +1,6 @@
 # otherParticipants
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The identifiers of the other participants in a group.
@@ -24,8 +24,6 @@ var otherParticipants: [AVCoordinatedPlaybackParticipant] { get }
 Use this property value to create a user interface that informs the user about the state of other participants in the group.
 
 > **Note**:  To observe changes to this property value, register for notifications of type [`otherParticipantsDidChangeNotification`](avplaybackcoordinator/otherparticipantsdidchangenotification.md).
-
- To observe changes to this property value, register for notifications of type [`otherParticipantsDidChangeNotification`](avplaybackcoordinator/otherparticipantsdidchangenotification.md).
 
 ## See Also
 

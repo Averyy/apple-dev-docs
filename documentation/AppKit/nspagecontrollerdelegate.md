@@ -1,6 +1,6 @@
 # NSPageControllerDelegate
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: protocol
 
 The `NSPageControllerDelegate` protocol allows you to customize the behavior of instances of the NSPageController class.
@@ -19,10 +19,6 @@ protocol NSPageControllerDelegate : NSObjectProtocol
 See [`NSPageController`](nspagecontroller.md) for more information.
 
 > **Note**:  If your page controller is going to completely manage the page snapshots, then you should not implement the [`pageController(_:viewControllerForIdentifier:)`](nspagecontrollerdelegate/pagecontroller(_:viewcontrollerforidentifier:).md) or [`pageController(_:prepare:with:)`](nspagecontrollerdelegate/pagecontroller(_:prepare:with:).md) methods. However, if you manually set the `NSPageController` instance’s [`arrangedObjects`](nspagecontroller/arrangedobjects.md) property, you are required to implement the following those methods so that navigation can properly occur.
-
- If your page controller is going to completely manage the page snapshots, then you should not implement the [`pageController(_:viewControllerForIdentifier:)`](nspagecontrollerdelegate/pagecontroller(_:viewcontrollerforidentifier:).md) or [`pageController(_:prepare:with:)`](nspagecontrollerdelegate/pagecontroller(_:prepare:with:).md) methods.
-
-However, if you manually set the `NSPageController` instance’s [`arrangedObjects`](nspagecontroller/arrangedobjects.md) property, you are required to implement the following those methods so that navigation can properly occur.
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # matchStreamingBuffer(_:at:)
 
-**Framework**: ShazamKit  
+**Framework**: Shazamkit  
 **Kind**: method
 
 Converts the audio in the buffer to a signature, and searches the reference signatures in the session catalog.
@@ -29,8 +29,6 @@ The audio buffer must be in one of the supported formats. For the list of the su
 To use the microphone as input for the buffer, see [`Matching audio using the built-in microphone`](matching-audio-using-the-built-in-microphone.md).
 
 > **Note**:  You must use the audio format of the first call to this method in the current session in all subsequent calls for the session.
-
- You must use the audio format of the first call to this method in the current session in all subsequent calls for the session.
 
 ## Parameters
 

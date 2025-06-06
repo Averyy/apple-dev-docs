@@ -1,6 +1,6 @@
 # TimeSeriesClassifier.Model
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: struct
 
 A time-series classifier model.
@@ -22,8 +22,6 @@ struct Model
 #### Overview
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type.
-
-Only `Float` and `Double` are currently supported as the Scalar type.
 
 ## Topics
 
@@ -61,4 +59,4 @@ Only `Float` and `Double` are currently supported as the Scalar type.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/timeseriesclassifier/model)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/timeseriesclassifier/model)*

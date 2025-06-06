@@ -1,6 +1,6 @@
 # Showcase App Data in Spotlight
 
-**Framework**: Core Data
+**Framework**: Coredata
 
 Index app data so users can find it by using Spotlight search.
 
@@ -14,8 +14,6 @@ Index app data so users can find it by using Spotlight search.
 
 > **Note**: This sample code project is associated with WWDC21 session [`10098: Showcase App Data in Spotlight`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10098/).
 
-This sample code project is associated with WWDC21 session [`10098: Showcase App Data in Spotlight`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10098/).
-
 ## See Also
 
 - [let NSCoreDataCoreSpotlightExporter: String](nscoredatacorespotlightexporter.md)
@@ -28,4 +26,4 @@ This sample code project is associated with WWDC21 session [`10098: Showcase App
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/showcase-app-data-in-spotlight)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/showcase-app-data-in-spotlight)*

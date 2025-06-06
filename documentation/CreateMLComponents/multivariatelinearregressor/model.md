@@ -1,6 +1,6 @@
 # MultivariateLinearRegressor.Model
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: struct
 
 A trained multivariate linear regressor model.
@@ -23,8 +23,6 @@ struct Model
 #### Overview
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type.
-
-Only `Float` and `Double` are currently supported as the Scalar type.
 
 ## Topics
 
@@ -83,4 +81,4 @@ Only `Float` and `Double` are currently supported as the Scalar type.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/multivariatelinearregressor/model)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/multivariatelinearregressor/model)*

@@ -1,6 +1,6 @@
 # startMonitoringSignificantLocationChanges()
 
-**Framework**: Core Location  
+**Framework**: Corelocation  
 **Kind**: method
 
 Starts the generation of updates based on significant location changes.
@@ -32,8 +32,6 @@ If you start this service and your app is subsequently terminated, the system au
 In addition to your delegate object implementing the [`locationManager(_:didUpdateLocations:)`](cllocationmanagerdelegate/locationmanager(_:didupdatelocations:).md) method, it should also implement the [`locationManager(_:didFailWithError:)`](cllocationmanagerdelegate/locationmanager(_:didfailwitherror:).md) method to respond to potential errors.
 
 > **Note**:  Apps can expect a notification as soon as the device moves 500 meters or more from its previous notification. It should not expect notifications more frequently than once every five minutes. If the device is able to retrieve data from the network, the location manager is much more likely to deliver notifications in a timely manner.
-
- Apps can expect a notification as soon as the device moves 500 meters or more from its previous notification. It should not expect notifications more frequently than once every five minutes. If the device is able to retrieve data from the network, the location manager is much more likely to deliver notifications in a timely manner.
 
 If a compatible iPad or iPhone app calls this method when running in visionOS, the method does nothing.
 

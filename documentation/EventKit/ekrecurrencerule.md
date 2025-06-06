@@ -1,6 +1,6 @@
 # EKRecurrenceRule
 
-**Framework**: EventKit  
+**Framework**: Eventkit  
 **Kind**: class
 
 A class that describes the pattern for a recurring event.
@@ -30,8 +30,6 @@ After you create a recurrence rule, assign it to an event with the method of [`E
 Recurrence rules can have an end, represented by an [`EKRecurrenceEnd`](ekrecurrenceend.md) object. The end can be based on a specific date or a maximum number of occurrences.
 
 > **Note**:  It is currently not possible to directly modify an `EKRecurrenceRule` or any of its properties. This functionality is achieved by creating a new `EKRecurrenceRule` and setting an event or reminder to use the newly created rule.
-
- It is currently not possible to directly modify an `EKRecurrenceRule` or any of its properties. This functionality is achieved by creating a new `EKRecurrenceRule` and setting an event or reminder to use the newly created rule.
 
 ## Topics
 
@@ -96,4 +94,4 @@ Recurrence rules can have an end, represented by an [`EKRecurrenceEnd`](ekrecurr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/ekrecurrencerule)*
+*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/ekrecurrencerule)*

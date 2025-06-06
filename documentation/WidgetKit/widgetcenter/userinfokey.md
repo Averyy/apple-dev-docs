@@ -22,8 +22,6 @@ struct UserInfoKey
 
 > **Note**: In Objective-C, use [`WGWidgetUserInfoKeyFamily`](wgwidgetuserinfokeyfamily.md) and [`WGWidgetUserInfoKeyKind`](wgwidgetuserinfokeykind.md) instead.
 
-In Objective-C, use [`WGWidgetUserInfoKeyFamily`](wgwidgetuserinfokeyfamily.md) and [`WGWidgetUserInfoKeyKind`](wgwidgetuserinfokeykind.md) instead.
-
 ## Topics
 
 ### Describing a widget

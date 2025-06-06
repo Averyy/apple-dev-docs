@@ -22,8 +22,6 @@ Don’t subclass or create instances of this class. Instead, the system instanti
 
 > **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
 
- In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
-
 The system automatically schedules relevant shortcut refresh tasks based on the user’s engagement with your app’s shortcuts. The more the user glances at or interacts with the shortcuts, the more often the system gives your app a relevant shortcut refresh task.
 
 ## Relationships
@@ -63,4 +61,4 @@ The system automatically schedules relevant shortcut refresh tasks based on the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkrelevantshortcutrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkrelevantshortcutrefreshbackgroundtask)*

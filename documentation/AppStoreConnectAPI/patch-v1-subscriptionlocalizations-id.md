@@ -1,6 +1,6 @@
 # Modify a Subscription Localization
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Update a specific localized subscription display name and description for an auto-renewable subscription.
@@ -11,8 +11,6 @@ Update a specific localized subscription display name and description for an aut
 #### Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
 ## See Also
 

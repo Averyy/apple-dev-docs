@@ -1,6 +1,6 @@
 # split(maxSplits:omittingEmptySubsequences:whereSeparator:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.
@@ -51,8 +51,6 @@ print(line.split(omittingEmptySubsequences: false, whereSeparator: { $0 == " " }
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

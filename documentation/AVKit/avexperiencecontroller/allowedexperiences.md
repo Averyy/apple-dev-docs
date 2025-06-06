@@ -1,6 +1,6 @@
 # allowedExperiences
 
-**Framework**: AVKit  
+**Framework**: Avkit  
 **Kind**: property
 
 The set of experiences the application supports.
@@ -21,8 +21,6 @@ Use this to allow additional experiences like multiview, or to disable expanded.
 
 > **Note**: Because [`AVExperienceController.Experience.embedded`](avexperiencecontroller/experience-swift.enum/embedded.md) is the initial experience, and the one returned to when others end, it’s a programming error to exclude it from this list.
 
-Because [`AVExperienceController.Experience.embedded`](avexperiencecontroller/experience-swift.enum/embedded.md) is the initial experience, and the one returned to when others end, it’s a programming error to exclude it from this list.
-
 ## See Also
 
 - [var availableExperiences: AVExperienceController.Experiences](avexperiencecontroller/availableexperiences.md)
@@ -41,4 +39,4 @@ Because [`AVExperienceController.Experience.embedded`](avexperiencecontroller/ex
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avexperiencecontroller/allowedexperiences)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avexperiencecontroller/allowedexperiences)*

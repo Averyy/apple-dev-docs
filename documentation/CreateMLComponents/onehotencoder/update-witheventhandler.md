@@ -1,6 +1,6 @@
 # update(_:with:eventHandler:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Updates a transformer with a new sequence of examples.
@@ -23,8 +23,6 @@ func update(_ transformer: inout OneHotEncoder<Category>.Transformer, with input
 #### Discussion
 
 > **Note**: You can’t add new categories on subsequent updates. All categories should be present in the initial update.
-
-You can’t add new categories on subsequent updates. All categories should be present in the initial update.
 
 ## Parameters
 

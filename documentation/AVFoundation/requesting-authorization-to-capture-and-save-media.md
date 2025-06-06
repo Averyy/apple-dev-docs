@@ -1,6 +1,6 @@
 # Requesting authorization to capture and save media
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Prompt the user to authorize access to the camera, microphone, and photo library.
 
@@ -37,8 +37,6 @@ In macOS, you also need to enable the following entitlements in Signing & Capabi
 ![A screenshot showing the macOS Camera and Audio Input entitlements enabled in the Signing & Capabilities tab of the app target.](https://docs-assets.developer.apple.com/published/b056f4dfa4048bbbf0d8fd4ae056679e/media-4140079%402x.png)
 
 > ❗ **Important**:  Your app needs to contain the appropriate key in its `Info.plist` file, and the appropriate entitlement enabled in macOS, before it requests authorization or attempts to use a capture device. Otherwise, the system terminates your app.
-
- Your app needs to contain the appropriate key in its `Info.plist` file, and the appropriate entitlement enabled in macOS, before it requests authorization or attempts to use a capture device. Otherwise, the system terminates your app.
 
 ##### Verify and Request Authorization for Capture
 
@@ -79,9 +77,7 @@ Your app must get permission to access the photo library before it attempts to s
 
 > **Note**:  The [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/UIKit/UIImageWriteToSavedPhotosAlbum(_:_:_:_:)) function isn’t recommended for use with photos captured with [`AVCapturePhotoOutput`](avcapturephotooutput.md) because [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) doesn’t support the features and metadata included in photo output.
 
- The [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/UIKit/UIImageWriteToSavedPhotosAlbum(_:_:_:_:)) function isn’t recommended for use with photos captured with [`AVCapturePhotoOutput`](avcapturephotooutput.md) because [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) doesn’t support the features and metadata included in photo output.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/requesting-authorization-to-capture-and-save-media)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/requesting-authorization-to-capture-and-save-media)*

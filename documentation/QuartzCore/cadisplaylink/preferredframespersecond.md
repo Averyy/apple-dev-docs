@@ -1,6 +1,6 @@
 # preferredFramesPerSecond
 
-**Framework**: Core Animation  
+**Framework**: Quartzcore  
 **Kind**: property
 
 A frequency your app prefers for frame updates, affecting how often the system invokes your delegate’s callback.
@@ -28,15 +28,11 @@ The display link makes a best attempt to invoke your app’s callback at the fre
 
 > ❗ **Important**:  Choose a frame rate that your app can consistently maintain.
 
- Choose a frame rate that your app can consistently maintain.
-
 In iOS 15 and later, the system can change the available range of frame rates because it factors in system policies and a person’s preferences. For example, Low Power Mode, critical thermal state, and accessibility settings can affect the system’s frame rate.
 
 The system typically provides a consistent frame rate by choosing one that’s a factor of the display’s maximum refresh rate. For example, a display link could invoke your callback 60 times per second for a display with a refresh rate of 60 hertz. However, the display link could invoke your callback less frequently, such as 30, 20, or 15 times per second, by setting a smaller value.
 
 > **Note**:  The property defaults to `0`, which is equivalent to the display’s maximum refresh rate, such as a [`UIScreen`](https://developer.apple.com/documentation/UIKit/UIScreen) instance’s [`maximumFramesPerSecond`](https://developer.apple.com/documentation/UIKit/UIScreen/maximumFramesPerSecond) property.
-
- The property defaults to `0`, which is equivalent to the display’s maximum refresh rate, such as a [`UIScreen`](https://developer.apple.com/documentation/UIKit/UIScreen) instance’s [`maximumFramesPerSecond`](https://developer.apple.com/documentation/UIKit/UIScreen/maximumFramesPerSecond) property.
 
 See [`Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro`](optimizing-promotion-refresh-rates-for-iphone-13-pro-and-ipad-pro.md) for more information.
 
@@ -58,4 +54,4 @@ See [`Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro`](optimi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/cadisplaylink/preferredframespersecond)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/cadisplaylink/preferredframespersecond)*

@@ -1,6 +1,6 @@
 # Adding voice chat to multiplayer games
 
-**Framework**: GameKit
+**Framework**: Gamekit
 
 Enable players to voice chat with all, or groups of, players in a multiplayer game.
 
@@ -8,15 +8,11 @@ Enable players to voice chat with all, or groups of, players in a multiplayer ga
 
 > ❗ **Important**:  The [`GKVoiceChat`](gkvoicechat.md) class is deprecated. Use SharePlay instead. See [`Enable the local player to choose other players`](finding-multiple-players-for-a-game#Enable-the-local-player-to-choose-other-players.md) and [`startGroupActivity(playerHandler:)`](gkmatchmaker/startgroupactivity(playerhandler:).md).
 
- The [`GKVoiceChat`](gkvoicechat.md) class is deprecated. Use SharePlay instead. See [`Enable the local player to choose other players`](finding-multiple-players-for-a-game#Enable-the-local-player-to-choose-other-players.md) and [`startGroupActivity(playerHandler:)`](gkmatchmaker/startgroupactivity(playerhandler:).md).
-
 Use the [`GKVoiceChat`](gkvoicechat.md) class to implement voice communication among players in a multiplayer game. Enable the player to communicate with all players in a group chat or a subset of players using separate audio channels. GameKit handles the low-level voice encoding and transmission for you; you add the controls to choose players, start and stop chats, mute players, and change the volume.
 
 To learn about audio channels, see the [`AVFAudio`](https://developer.apple.com/documentation/AVFAudio) framework.
 
 > **Note**:  A player can only participate in voice chat when their device has a microphone and it’s connected to a Wi-Fi network. But, your game can configure and start voice chat when the device isn’t currently capable of using voice chat. If conditions change to allow voice chat — for example, the device connects to Wi-Fi — the voice chat object automatically connects to the associated channel.
-
- A player can only participate in voice chat when their device has a microphone and it’s connected to a Wi-Fi network. But, your game can configure and start voice chat when the device isn’t currently capable of using voice chat. If conditions change to allow voice chat — for example, the device connects to Wi-Fi — the voice chat object automatically connects to the associated channel.
 
 ##### Configure Voice Chat
 
@@ -144,4 +140,4 @@ catch {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/adding-voice-chat-to-multiplayer-games)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/adding-voice-chat-to-multiplayer-games)*

@@ -1,6 +1,6 @@
 # focusGroups(for:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Returns the focus group hierarchy for the specified environment object.
@@ -30,8 +30,6 @@ Call this method from the `lldb` debugger using the following command. In the ex
 The method returns the full hierarchy of focus groups for the focus environment object provided.
 
 > **Note**:  This method replaces the `checkFocusGroup(for:)` method, which is functionally equivalent.
-
- This method replaces the `checkFocusGroup(for:)` method, which is functionally equivalent.
 
 ## Parameters
 

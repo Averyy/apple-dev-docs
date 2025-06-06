@@ -18,8 +18,6 @@ Similarly, avoid scheduling work that does not have to execute on the main threa
 
 > **Note**:  The thresholds above are very rough guidelines to give you an understanding what execution times to aim for. There are more nuances about various interaction scenarios and sometimes you have more leeway. To learn more about these cases, the difference between hitches and hangs, how the rendering loop works, and how Apple’s developer tools detect each type of unresponsiveness, see [`Understanding user interface responsiveness`](understanding-user-interface-responsiveness.md).
 
- The thresholds above are very rough guidelines to give you an understanding what execution times to aim for. There are more nuances about various interaction scenarios and sometimes you have more leeway. To learn more about these cases, the difference between hitches and hangs, how the rendering loop works, and how Apple’s developer tools detect each type of unresponsiveness, see [`Understanding user interface responsiveness`](understanding-user-interface-responsiveness.md).
-
 This article describes several best practices to help you avoid introducing hangs and hitches in your app, as well as multiple tools to help you detect and analyze these types of responsiveness issues.
 
 ##### Avoid Hangs By Keeping the Main Thread Free From Non Ui Work
@@ -52,8 +50,6 @@ private func doLongRunningWork() async { /* a lot of work */ } // Implicitly non
 Creating a `Task` in the above example allows the button action to return immediately, before the new task finishes executing. Specifically, the `Task` itself inherits the actor from its enclosing context and  execute on the main actor. Beginning with Swift 5.7, Swift executes nonisolated, asynchronous functions, like `doLongRunningWork()` in the example above, on the concurrency thread pool, off of any actors. Then execution of the `updateUI()` function returns to the main actor because it’s part of a `Task` constrained to the main actor. This is exactly what we want to happen.
 
 > **Note**:  For more information about how actors and tasks interact, and the circumstances under which isolated/nonisolated, synchronous/asynchronous functions execute on and off of an actor, see [`Eliminate data races using Swift concurrency`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110351/).
-
- For more information about how actors and tasks interact, and the circumstances under which isolated/nonisolated, synchronous/asynchronous functions execute on and off of an actor, see [`Eliminate data races using Swift concurrency`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110351/).
 
 Both the `nonisolated` aspect of the function and the `async` nature of it are essential for enabling this behavior. When the long-running work only executes synchronously, it is  to wrap it in a `Task`. For example, the following code produces a hang:
 
@@ -103,8 +99,6 @@ Be aware of the default priority propagation rules. A detached task doesn’t in
 
 > **Note**:  See [`Visualize and optimize Swift concurrency`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110350/) to learn how to use Instruments to detect when your Swift concurrency tasks execute on the main actor.
 
- See [`Visualize and optimize Swift concurrency`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110350/) to learn how to use Instruments to detect when your Swift concurrency tasks execute on the main actor.
-
 When using dispatch queues or manual thread management, dispatch the work to a background queue or thread asynchronously, and have it asynchronously signal the main thread or queue to update the UI when its background work finishes. Don’t synchronize the main thread with a background thread, or make the main thread join a background thread. Both of these actions block the main thread until the work in the background completes, which denies your app the benefit of concurrent operation.
 
 ##### Analyze Which Parts of Your App Need to Execute on the Main Thread and Which Dont
@@ -142,9 +136,6 @@ In general, it’s better to aim for a slightly lower refresh rate that your app
 > **Note**: - See [`Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro`](https://developer.apple.com/documentation/QuartzCore/optimizing-promotion-refresh-rates-for-iphone-13-pro-and-ipad-pro) to learn more about working with variable refresh rates.
 - See [`Optimize for variable refresh rate displays`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10147/) to learn about the difference between fixed-rate and adaptive-sync displays, and how to make the most of variable refresh rate displays.
 
-- See [`Optimizing ProMotion refresh rates for iPhone 13 Pro and iPad Pro`](https://developer.apple.com/documentation/QuartzCore/optimizing-promotion-refresh-rates-for-iphone-13-pro-and-ipad-pro) to learn more about working with variable refresh rates.
-- See [`Optimize for variable refresh rate displays`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10147/) to learn about the difference between fixed-rate and adaptive-sync displays, and how to make the most of variable refresh rate displays.
-
 ##### Write Performance Tests to Ensure Main Thread Bound Code Completes Fast
 
 For code that must execute on the main thread, create an XCTest performance test to measure the time your app spends running the code. Execute the relevant code in a [`measure(_:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(_:)) block. You can either accept the average runtime of your code block as the baseline, or edit the baseline and set it to 100 ms. The performance test fails if the code requires significantly longer than the baseline time to execute.
@@ -152,8 +143,6 @@ For code that must execute on the main thread, create an XCTest performance test
 100 ms is the maximum delay for discrete user interaction before a delay becomes noticeable. However, be aware that some users are more sensitive to delays, so consider using a lower threshold. Also, remember that code the system runs during continuous user interaction, like table and collection view data source methods, must finish much more quickly. Consider using a limit of 5 ms for such code.
 
 > **Note**:  See [`Eliminate animation hitches with XCTest`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10077/) to learn how to use the [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/XCTest/XCTOSSignpostMetric) to write performance tests measuring the hitch ratio, number of hitches, and similar metrics for a piece of code.
-
- See [`Eliminate animation hitches with XCTest`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10077/) to learn how to use the [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/XCTest/XCTOSSignpostMetric) to write performance tests measuring the hitch ratio, number of hitches, and similar metrics for a piece of code.
 
 ##### Detect Hangs and Hang Risks
 
@@ -221,4 +210,4 @@ The operating systems on Apple devices monitor for hangs and hitches for running
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/improving-app-responsiveness)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/improving-app-responsiveness)*

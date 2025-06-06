@@ -1,6 +1,6 @@
 # fetchError
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: property
 
 An error encountered during the most recent attempt to fetch data.
@@ -36,11 +36,7 @@ struct RecipeList: View {
 
 > **Note**: Only access this property within of a view’s `body` property, otherwise its value may be invalid.
 
-Only access this property within of a view’s `body` property, otherwise its value may be invalid.
-
 > **Note**: When an fetch error occurs, `wrappedValue` retains results from the last successful fetch. Its value will update once a new fetch succeeds.
-
-When an fetch error occurs, `wrappedValue` retains results from the last successful fetch. Its value will update once a new fetch succeeds.
 
 ## See Also
 

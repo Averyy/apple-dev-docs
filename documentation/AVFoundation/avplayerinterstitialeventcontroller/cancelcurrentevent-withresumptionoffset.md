@@ -1,6 +1,6 @@
 # cancelCurrentEvent(withResumptionOffset:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Cancels the playback of all currently playing and scheduled interstitial events, and resumes playback of primary content.
@@ -25,8 +25,6 @@ func cancelCurrentEvent(withResumptionOffset resumptionOffset: CMTime)
 When you cancel interstitial events using this method, the resumption offset value that you specify overrides the events’s [`resumptionOffset`](avplayerinterstitialevent/resumptionoffset.md) value.
 
 > **Note**:  If you call this method during the handling of coinciding interstitial events, the system cancels all events for that time. Calling this method has no impact on schedule events that have dates or times later than this event.
-
- If you call this method during the handling of coinciding interstitial events, the system cancels all events for that time. Calling this method has no impact on schedule events that have dates or times later than this event.
 
 ## Parameters
 

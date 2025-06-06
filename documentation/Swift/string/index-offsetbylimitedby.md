@@ -48,8 +48,6 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 
 > **Note**: O(), where  is the absolute value of `distance`.
 
-O(), where  is the absolute value of `distance`.
-
 ## Parameters
 
 - `i`: A valid index of the collection.

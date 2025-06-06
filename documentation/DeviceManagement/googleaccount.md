@@ -1,6 +1,6 @@
 # GoogleAccount
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: dictionary
 
 The payload you use to configure a Google account.
@@ -25,8 +25,6 @@ Specify `com.apple.google-oauth` as the payload type.
 You can install multiple Google payloads. Each sets up a Google email address and any other Google services the user enables after authentication.
 
 > **Note**:  For supervised devices, the system requires installation of Google accounts through MDM or Apple Configurator 2.
-
- For supervised devices, the system requires installation of Google accounts through MDM or Apple Configurator 2.
 
 The payload never contains credentials; the system prompts the user to enter credentials shortly after installation of the payload.
 
@@ -106,4 +104,4 @@ The payload never contains credentials; the system prompts the user to enter cre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/googleaccount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/googleaccount)*

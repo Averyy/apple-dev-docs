@@ -1,6 +1,6 @@
 # validateValue(_:forKey:)
 
-**Framework**: Objective-C Runtime  
+**Framework**: Objectivec  
 **Kind**: method
 
 Indicates whether the value specified by a given pointer is valid, or can be made valid, for the property identified by a given key.
@@ -37,8 +37,6 @@ If you define such a function, the default implementation of [`validateValue(_:f
 If no such function exists for a particular property, [`validateValue(_:forKey:)`](nsobject-swift.class/validatevalue(_:forkey:).md)returns [`YES`](yes.md) without taking any other action. In other words, by default, the general validation call succeeds if you don’t explicitly provide a validation function for the given property.
 
 > **Note**:  You typically use the validation described here only in Objective-C. In Swift, property validation is more idiomatically handled by relying on compiler support for optionals and strong type checking, while using the built-in `willSet` and `didSet` property observers to test any run-time API contracts, as described in the [`Property Observers`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html#//apple_ref/doc/uid/TP40014097-CH14-ID262) section of [`The Swift Programming Language (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097).
-
- You typically use the validation described here only in Objective-C. In Swift, property validation is more idiomatically handled by relying on compiler support for optionals and strong type checking, while using the built-in `willSet` and `didSet` property observers to test any run-time API contracts, as described in the [`Property Observers`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html#//apple_ref/doc/uid/TP40014097-CH14-ID262) section of [`The Swift Programming Language (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097).
 
 See [`Adding Validation`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/Validation.html#//apple_ref/doc/uid/20002173) in [`Key-Value Coding Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i) for more information.
 

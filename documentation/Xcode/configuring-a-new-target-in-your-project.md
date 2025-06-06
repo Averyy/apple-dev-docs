@@ -51,8 +51,6 @@ When there’s a relationship between targets that Xcode can’t easily detect, 
 
 > **Note**: If your target depends on content in a different Xcode project, add a reference to the project before configuring any dependencies. For more information, see [`Managing multiple projects and their dependencies`](managing-multiple-projects-and-their-dependencies.md).
 
-If your target depends on content in a different Xcode project, add a reference to the project before configuring any dependencies. For more information, see [`Managing multiple projects and their dependencies`](managing-multiple-projects-and-their-dependencies.md).
-
 For more information on optimizing your targets to improve build times, see [`Improving the speed of incremental builds`](improving-the-speed-of-incremental-builds.md).
 
 ## See Also
@@ -63,4 +61,4 @@ For more information on optimizing your targets to improve build times, see [`Im
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-a-new-target-in-your-project)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-a-new-target-in-your-project)*

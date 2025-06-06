@@ -1,6 +1,6 @@
 # SKExternalPurchaseMultiLink
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: dictionary
 
 A dictionary that contains an array of URLs to websites where people using your app can make external purchases.
@@ -24,13 +24,9 @@ Include a key entry for each country code where your app supports an external pu
 
 > **Note**:  You can provide up to five links if your app qualifies for the StoreKit External Purchase Link entitlement as described in [`Distributing music streaming apps in the EEA that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/support/music-streaming-services-entitlement-eea/).  Otherwise, provide one link for each country code.
 
- You can provide up to five links if your app qualifies for the StoreKit External Purchase Link entitlement as described in [`Distributing music streaming apps in the EEA that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/support/music-streaming-services-entitlement-eea/).  Otherwise, provide one link for each country code.
-
 Your app accesses these URLs through the [`eligibleURLs`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink/eligibleURLs) array in the [`ExternalPurchaseLink`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink) object, and uses the link you select with the [`open(url:)`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink/open(url:)) method in the [`ExternalPurchaseLink`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink) object.
 
 > ❗ **Important**:  At all times, the destination URLs that you provide in the property list key must match the values in your app binary that you submit to App Review.
-
- At all times, the destination URLs that you provide in the property list key must match the values in your app binary that you submit to App Review.
 
 Make sure each destination URL meets all of the following conditions:
 

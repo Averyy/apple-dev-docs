@@ -1,6 +1,6 @@
 # Objective-C Runtime
 
-**Framework**: Objective-C Runtime
+**Framework**: Objectivec
 
 Describes the macOS Objective-C runtime library support functions and data structures.
 
@@ -15,8 +15,6 @@ The macOS implementation of the Objective-C runtime library is unique to the Mac
 The low-level Objective-C runtime API is significantly updated in OS X version 10.5. Many functions and all existing data structures are replaced with new functions. The old functions and structures are deprecated in 32-bit and absent in 64-bit mode. The API constrains several values to 32-bit ints even in 64-bit mode—class count, protocol count, methods per class, ivars per class, arguments per method, sizeof(all arguments) per method, and class version number. In addition, the new Objective-C ABI (not described here) further constrains `sizeof(anInstance)` to 32 bits, and three other values to 24 bits—methods per class, ivars per class, and sizeof(a single ivar). Finally, the obsolete `NXHashTable` and `NXMapTable` are limited to 4 billion items.
 
 > **Note**:  All `char *` in the runtime API should be considered to have UTF-8 encoding.
-
- All `char *` in the runtime API should be considered to have UTF-8 encoding.
 
 “Deprecated” below means “deprecated in OS X version 10.5 for 32-bit code, and disallowed for 64-bit code.”
 
@@ -276,4 +274,4 @@ Because this isn’t a document about C, it assumes some prior acquaintance with
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/objectivec/objective-c-runtime)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ObjectiveC/objective-c-runtime)*

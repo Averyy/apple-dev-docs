@@ -1,6 +1,6 @@
 # init(_:kem:)
 
-**Framework**: Apple CryptoKit  
+**Framework**: Cryptokit  
 **Kind**: init
 
 Creates a Curve25519 elliptic curve public key for use with Diffie-Hellman key exchange.
@@ -26,8 +26,6 @@ init<D>(_ serialization: D, kem: HPKE.KEM) throws where D : ContiguousBytes
 - kem: The key encapsulation mechanism to use with the public key.
 
 > **Note**: [`HPKE.Errors.inconsistentCiphersuiteAndKey`](hpke/errors/inconsistentciphersuiteandkey.md) if the key encapsulation mechanism requested is incompatible with this public key.
-
-[`HPKE.Errors.inconsistentCiphersuiteAndKey`](hpke/errors/inconsistentciphersuiteandkey.md) if the key encapsulation mechanism requested is incompatible with this public key.
 
 
 ---

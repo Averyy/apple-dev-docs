@@ -1,6 +1,6 @@
 # Export a PDF document from an iWork file
 
-**Framework**: iWork Document Exporting API  
+**Framework**: Iworkdocumentexportingapi  
 **Kind**: httpRequest
 
 Create a PDF preview of an iWork document using JSON Web Token (JWT) authorization.
@@ -115,8 +115,6 @@ And the resulting signed JWT is:
 `eyJhbGciOiJFUzI1NiIsImtpZCI6IkhCTFVGRFkzNjcifQ.eyJlbmNvZGVkX2ZpbGVuYW1lIjoiOEorWWdDQmpiRzkxWk9LWWdTNXVkVzFpWlhKeiIsImV4cG9ydF9mb3JtYXQiOiJjb20uYWRvYmUucGRmIiwiaWF0IjoxNjkzMDA1MDkyLCJpc3MiOiI0M0tUTFlYTTRHIiwiZXhwIjoxNjkzMDEyMjkyfQ.o4haQp-Fo-r_-_rELXhMEbOIXU8n-mr8sAogH8b6i8x9_VdHYnTw29r7hu0OjwA_HWNWfwpBvgLNtqr2dcl4Vg`
 
 > **Note**: The signed JWT can be different for the same input.
-
-The signed JWT can be different for the same input.
 
 ## Request Body
 

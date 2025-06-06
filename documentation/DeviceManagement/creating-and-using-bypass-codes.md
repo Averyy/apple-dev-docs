@@ -1,6 +1,6 @@
 # Creating and Using Bypass Codes
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Maintain the bypass code parameters for disabling Activation Lock.
 
@@ -14,8 +14,6 @@ To manage Activation Lock, your mobile device management (MDM) server implementa
 The server attempts to unlock the device by passing in an escrow key with one of the bypass codes as its value. Try the other code if the first one fails. It’s impossible for the server to determine which code is active at a given time, or even to determine if the device is in a locked state, because the user can erase the device and remove Activation Lock manually by entering the correct Apple ID or password. The deviceʼs `IsActivationLockEnabled` value isn’t a reflection of its Activation Lock state because the device can report either a false-positive or a false-negative.
 
 > **Note**:  The MDM server must request the activation lock bypass code before the device enables Activation Lock. If this sequence isn’t followed, the user may lock the device before MDM installs the bypass, in which case the bypass code won’t work.
-
- The MDM server must request the activation lock bypass code before the device enables Activation Lock. If this sequence isn’t followed, the user may lock the device before MDM installs the bypass, in which case the bypass code won’t work.
 
 ##### Create a Bypass Code
 
@@ -125,4 +123,4 @@ Include the following arguments in the message body:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/creating-and-using-bypass-codes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/creating-and-using-bypass-codes)*

@@ -1,6 +1,6 @@
 # Using composition offset and composition shift least greatest atoms
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Calculate the offset shift when you store an out of order video stream’s sample table.
 
@@ -26,8 +26,6 @@ compositionOffset[n] = displayOffset[n] - compositionOffsetToDisplayOffsetShift;
 ```
 
 > **Note**: If a composition shift least greatest atom is not present, assume `compositionOffsetToDisplayOffsetShift = 0`. The sample tables will need to be scanned to find the least and greatest offsets, as well as the presentation start and end times, to determine the decode time offset required for presentation.
-
-If a composition shift least greatest atom is not present, assume `compositionOffsetToDisplayOffsetShift = 0`. The sample tables will need to be scanned to find the least and greatest offsets, as well as the presentation start and end times, to determine the decode time offset required for presentation.
 
 ## See Also
 

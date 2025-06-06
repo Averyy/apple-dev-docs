@@ -1,6 +1,6 @@
 # extendedLayoutIncludesOpaqueBars
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A Boolean value indicating whether or not the extended layout includes opaque bars.
@@ -24,8 +24,6 @@ var extendedLayoutIncludesOpaqueBars: Bool { get set }
 The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
 
 > **Note**:  Bars are translucent by default in iOS 7.0
-
- Bars are translucent by default in iOS 7.0
 
 ## See Also
 

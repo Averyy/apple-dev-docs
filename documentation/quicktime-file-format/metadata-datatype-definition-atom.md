@@ -1,6 +1,6 @@
 # Metadata datatype definition atom ('dtyp')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom you use to specify the data type of the metadata key atom’s value.
@@ -27,11 +27,7 @@ A `datatype namespace` other than `0` or `1` may occur in a timed metadata track
 
 > **Note**: New datatype namespaces must be registered with Apple.
 
-New datatype namespaces must be registered with Apple.
-
 > **Note**: Many uses for proprietary or custom metadata data types can be satisfied by using the extended data type namespace type code `1`. This allows the new data type to be specified without registration. The reason to add a custom `datatype namespace` type is to allow an existing numbering or naming scheme from a foreign metadata standard to be used with metadata items.
-
-Many uses for proprietary or custom metadata data types can be satisfied by using the extended data type namespace type code `1`. This allows the new data type to be specified without registration. The reason to add a custom `datatype namespace` type is to allow an existing numbering or naming scheme from a foreign metadata standard to be used with metadata items.
 
 ## Topics
 

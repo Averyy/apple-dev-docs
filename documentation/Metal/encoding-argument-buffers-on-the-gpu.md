@@ -79,8 +79,6 @@ _instanceParameters = [_device newBufferWithLength:instanceParameterLength optio
 
 > **Note**: The `[[id(n)]]` attribute qualifier isn’t necessary to define the `InstanceArguments` structure in this sample. This qualifier is needed only when arguments are encoded with the CPU via the Metal API, and not when arguments are encoded with the GPU via a graphics or compute function.
 
-The `[[id(n)]]` attribute qualifier isn’t necessary to define the `InstanceArguments` structure in this sample. This qualifier is needed only when arguments are encoded with the CPU via the Metal API, and not when arguments are encoded with the GPU via a graphics or compute function.
-
 ##### Encode an Argument Buffer with a Compute Function
 
 For each quad to be rendered, the sample executes the `updateInstances` compute function to determine the quad’s position and textures. The compute pass executed by the sample iterates through the `instance_params` array and encodes the correct data for each quad. The sample encodes data into `instance_params` by setting `InstanceArguments` values in the array element at the `instanceID` index value.
@@ -177,4 +175,4 @@ In this sample, you learned how to encode resources into argument buffers with a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/encoding-argument-buffers-on-the-gpu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/encoding-argument-buffers-on-the-gpu)*

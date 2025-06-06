@@ -1,6 +1,6 @@
 # CFDateFormatter
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: class
 
 **Availability**:
@@ -25,8 +25,6 @@ CFDateFormatter objects format the textual representations of CFDate and CFAbsol
 The format of the format string itself is defined by Unicode Technical Standard #35; the version of the standard used varies with release of the operating system, and is described in [`Introduction to Data Formatting Programming Guide For Cocoa`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029).
 
 > **Note**:  CFDateFormatter is not thread safe, so you must not mutate a given date formatter simultaneously from multiple threads.
-
- CFDateFormatter is not thread safe, so you must not mutate a given date formatter simultaneously from multiple threads.
 
 ## Topics
 
@@ -103,4 +101,4 @@ The format of the format string itself is defined by Unicode Technical Standard 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/cfdateformatter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreFoundation/cfdateformatter)*

@@ -1,6 +1,6 @@
 # browserUserInterfaceStyle
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The visual style for the document browser.
@@ -26,8 +26,6 @@ var browserUserInterfaceStyle: UIDocumentBrowserViewController.BrowserUserInterf
 For a list of possible styles, see [`UIDocumentBrowserViewController.BrowserUserInterfaceStyle`](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.enum.md).
 
 > **Note**:  This property has no effect in Mac apps built with Mac Catalyst.
-
- This property has no effect in Mac apps built with Mac Catalyst.
 
 ## See Also
 

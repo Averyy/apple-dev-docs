@@ -12,8 +12,6 @@ Use object tracking in visionOS to attach digital content to real objects to cre
 
 > **Note**: This sample code project is associated with WWDC24 session [`100101: Explore object tracking for visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10101/).
 
-This sample code project is associated with WWDC24 session [`100101: Explore object tracking for visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10101/).
-
 ##### Configure the Sample Code Project
 
 Simulator doesn’t support ARKit, so you can only run this sample on a physical device. This sample can run on Apple Vision Pro with visionOS 2 or later.
@@ -42,4 +40,4 @@ Simulator doesn’t support ARKit, so you can only run this sample on a physical
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/object-tracking-with-reality-composer-pro-experiences)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/object-tracking-with-reality-composer-pro-experiences)*

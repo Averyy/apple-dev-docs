@@ -14,8 +14,6 @@ Keep your complications up-to-date by reading values from a Bluetooth peripheral
 
 > **Note**: This sample code project is associated with WWDC 2022 session [`10135: Get timely alerts from Bluetooth devices in watchOS`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10135/), and with WWDC 2021 session [`10005: Connect Bluetooth Devices to Apple Watch`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10005/).
 
-This sample code project is associated with WWDC 2022 session [`10135: Get timely alerts from Bluetooth devices in watchOS`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10135/), and with WWDC 2021 session [`10005: Connect Bluetooth Devices to Apple Watch`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10005/).
-
 ##### Configure the Sample Code Project
 
 This sample runs only on physical devices.
@@ -51,4 +49,4 @@ The watch app reads a characteristic value from the phone and updates the compli
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/interacting-with-bluetooth-peripherals-during-background-app-refresh)*

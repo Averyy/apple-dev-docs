@@ -83,8 +83,6 @@ The sorting algorithm is guaranteed to be stable. A stable sort preserves the re
 
 > **Note**: O( log ), where  is the length of the sequence.
 
-O( log ), where  is the length of the sequence.
-
 ## Parameters
 
 - `areInIncreasingOrder`: A predicate that returns   if its   first argument should be ordered before its second argument;   otherwise,  .

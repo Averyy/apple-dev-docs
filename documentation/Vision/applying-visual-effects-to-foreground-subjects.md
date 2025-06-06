@@ -13,8 +13,6 @@ Segment the foreground subjects of an image and composite them to a new backgrou
 
 > **Note**: This sample code project is associated with WWDC23 session 10176: [`Lift subjects from images in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10176/).
 
-This sample code project is associated with WWDC23 session 10176: [`Lift subjects from images in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10176/).
-
 ##### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode, set the run destination to an iOS 17 device.
@@ -31,4 +29,4 @@ Before you run the sample code project in Xcode, set the run destination to an i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/applying-visual-effects-to-foreground-subjects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/applying-visual-effects-to-foreground-subjects)*

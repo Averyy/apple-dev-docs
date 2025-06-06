@@ -14,8 +14,6 @@ UI testing lets you verify that when you change parts of your app’s data model
 
 > **Note**:  UI testing isn’t available to apps you build using the visionOS SDK. You can still use it to test compatible iPad and iPhone apps that you build using the iOS SDK but run in visionOS.
 
- UI testing isn’t available to apps you build using the visionOS SDK. You can still use it to test compatible iPad and iPhone apps that you build using the iOS SDK but run in visionOS.
-
 ## Topics
 
 ### Essentials

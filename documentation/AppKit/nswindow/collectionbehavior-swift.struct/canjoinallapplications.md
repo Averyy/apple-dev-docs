@@ -1,6 +1,6 @@
 # canJoinAllApplications
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The behavior marking this window as one that can join all apps for both Stage Manager and full screen.
@@ -22,8 +22,6 @@ Use this collection behavior for floating windows and system overlays. To opt ou
 
 > **Note**:  This property is mutually exclusive. Set only one of [`primary`](nswindow/collectionbehavior-swift.struct/primary.md), [`auxiliary`](nswindow/collectionbehavior-swift.struct/auxiliary.md), or [`canJoinAllApplications`](nswindow/collectionbehavior-swift.struct/canjoinallapplications.md) on a window handled by Stage Manager at a time.
 
- This property is mutually exclusive. Set only one of [`primary`](nswindow/collectionbehavior-swift.struct/primary.md), [`auxiliary`](nswindow/collectionbehavior-swift.struct/auxiliary.md), or [`canJoinAllApplications`](nswindow/collectionbehavior-swift.struct/canjoinallapplications.md) on a window handled by Stage Manager at a time.
-
 ## See Also
 
 - [static var primary: NSWindow.CollectionBehavior](nswindow/collectionbehavior-swift.struct/primary.md)
@@ -34,4 +32,4 @@ Use this collection behavior for floating windows and system overlays. To opt ou
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow/collectionbehavior-swift.struct/canjoinallapplications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow/collectionbehavior-swift.struct/canjoinallapplications)*

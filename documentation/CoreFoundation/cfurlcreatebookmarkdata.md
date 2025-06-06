@@ -1,6 +1,6 @@
 # CFURLCreateBookmarkData(_:_:_:_:_:_:)
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: func
 
 Returns bookmark data for a URL, created with specified options and resource values.
@@ -33,8 +33,6 @@ For an app-scoped bookmark, no sandboxed app other than the one that created the
 For a document-scoped bookmark, any sandboxed app that has access to the bookmark data itself, and has access to the document that owns the bookmark, can obtain access to the resource.
 
 > **Note**:  Security-scoped bookmarks are not available in versions of macOS prior to OS X v10.7.3.
-
- Security-scoped bookmarks are not available in versions of macOS prior to OS X v10.7.3.
 
 ## Parameters
 

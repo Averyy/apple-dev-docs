@@ -29,8 +29,6 @@ There’s no user interaction necessary for the framework to send this message. 
 
 > **Note**: The system may impose a rate limit on frequency of messages sent, if usage exceeds this limit the framework  returns a  [`MSCriticalMessagingError.sendFailed`](mscriticalmessagingerror/sendfailed.md) error.
 
-The system may impose a rate limit on frequency of messages sent, if usage exceeds this limit the framework  returns a  [`MSCriticalMessagingError.sendFailed`](mscriticalmessagingerror/sendfailed.md) error.
-
 ## Parameters
 
 - `message`: The message to send.

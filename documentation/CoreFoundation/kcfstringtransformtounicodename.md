@@ -1,6 +1,6 @@
 # kCFStringTransformToUnicodeName
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: var
 
 The identifier of a reversible transform to transliterate characters other than printable ASCII to their Unicode character name in braces.
@@ -25,8 +25,6 @@ let kCFStringTransformToUnicodeName: CFString!
 Examples include `"\N{AIRPLANE}"` for “✈” and `"\N{GREEK CAPITAL LETTER PSI}"` for “Ψ”.
 
 > **Note**:  The result of a forward transformation delimits each Unicode name with enclosing curly braces and the leading character sequence `"\N"`. In some programming languages, `"\N{...}"` is used as an escape sequence for Unicode characters in strings and regular expressions; this isn’t supported in Swift or Objective-C. To perform the reverse transform of a string literal in Swift or Objective-C, escape the leading backslash (`"\\N{...}"`) for each Unicode name.
-
- The result of a forward transformation delimits each Unicode name with enclosing curly braces and the leading character sequence `"\N"`. In some programming languages, `"\N{...}"` is used as an escape sequence for Unicode characters in strings and regular expressions; this isn’t supported in Swift or Objective-C. To perform the reverse transform of a string literal in Swift or Objective-C, escape the leading backslash (`"\\N{...}"`) for each Unicode name.
 
 ## See Also
 
@@ -64,4 +62,4 @@ Examples include `"\N{AIRPLANE}"` for “✈” and `"\N{GREEK CAPITAL LETTER PS
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/kcfstringtransformtounicodename)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreFoundation/kcfstringtransformtounicodename)*

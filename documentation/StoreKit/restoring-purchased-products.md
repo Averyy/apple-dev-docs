@@ -1,6 +1,6 @@
 # Restoring purchased products
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Give customers functionality that restores their purchases in your app to maintain access to purchased content.
 
@@ -9,8 +9,6 @@ Give customers functionality that restores their purchases in your app to mainta
 Customers sometimes need to restore purchased content, such as when they upgrade to a new phone. Include some mechanism in your app, such as a Restore Purchases button, to let them restore their purchases.
 
 > ❗ **Important**:  Don’t automatically restore purchases, especially when your app launches. Restoring purchases prompts for the user’s App Store credentials, which interrupts the flow of your app.
-
- Don’t automatically restore purchases, especially when your app launches. Restoring purchases prompts for the user’s App Store credentials, which interrupts the flow of your app.
 
 In most cases, you only need to refresh the app receipt and deliver the products on the receipt. The refreshed receipt contains a record of the user’s purchases in the app, from any device the user’s App Store account is logged into. However, an app might require an alternative approach under the given circumstances:
 
@@ -23,8 +21,6 @@ Refreshing a receipt doesn’t create new transactions; it requests the latest c
 Restoring completed transactions creates a new transaction for each previously completed transaction, essentially replaying history for your transaction queue observer. Your app maintains its own state to keep track of why it’s restoring completed transactions and how to handle them. Restoring multiple times creates multiple restored transactions for each completed transaction.
 
 > **Note**:  If the user attempts to purchase a product that they’ve already purchased, the App Store creates a regular transaction instead of a restore transaction, but the user isn’t charged again for the product. Unlock the content for these transactions the same way you do for original transactions.
-
- If the user attempts to purchase a product that they’ve already purchased, the App Store creates a regular transaction instead of a restore transaction, but the user isn’t charged again for the product. Unlock the content for these transactions the same way you do for original transactions.
 
 Give the user an appropriate level of control over the content that’s downloaded again. For example, don’t automatically download three years of daily newspapers or hundreds of megabytes of game levels at the same time.
 
@@ -41,8 +37,6 @@ Your app starts restoring completed transactions by calling the [`restoreComplet
 The App Store generates a new transaction to restore each previously completed transaction. The restored transaction refers to the original transaction. Instances of [`SKPaymentTransaction`](skpaymenttransaction.md) have an [`original`](skpaymenttransaction/original.md) property, and the entries in the receipt have an [`original_transaction_id`](https://developer.apple.com/documentation/appstorereceipts/original_transaction_id) field value.
 
 > **Note**:  The date fields have slightly different meanings for restored purchases. For details, see the `purchase_date` and `original_purchase_date` fields in the [`responseBody.Receipt.In_app`](https://developer.apple.com/documentation/appstorereceipts/responsebody/receipt/in_app).
-
- The date fields have slightly different meanings for restored purchases. For details, see the `purchase_date` and `original_purchase_date` fields in the [`responseBody.Receipt.In_app`](https://developer.apple.com/documentation/appstorereceipts/responsebody/receipt/in_app).
 
 StoreKit calls the transaction queue observer with a status of [`SKPaymentTransactionState.restored`](skpaymenttransactionstate/restored.md) for each restored transaction, as described in [`Processing a transaction`](processing-a-transaction.md). The action you take depends on your app’s design.
 
@@ -66,4 +60,4 @@ If your app doesn’t use the app receipt, it examines all completed transaction
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/restoring-purchased-products)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/restoring-purchased-products)*

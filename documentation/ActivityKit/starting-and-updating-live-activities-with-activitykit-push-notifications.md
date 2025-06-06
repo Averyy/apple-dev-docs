@@ -1,6 +1,6 @@
 # Starting and updating Live Activities with ActivityKit push notifications
 
-**Framework**: ActivityKit
+**Framework**: Activitykit
 
 Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
 
@@ -11,8 +11,6 @@ ActivityKit offers functionality to start, update, and end Live Activities from 
 Starting with iOS 18 and iPadOS 18, you can use broadcast push notifications to update Live Activities for a large audience. You can subscribe to updates on a channel using ActivityKit, and update or end Live Activities for everyone subscribed by sending an ActivityKit push notification on a channel to APNs from your remote server.
 
 > **Note**: [`Session 10185: Update Live Activities with push notifications`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10185)
-
-[`Session 10185: Update Live Activities with push notifications`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10185)
 
 ##### Start and Update Live Activities
 
@@ -41,8 +39,6 @@ To start and update your Live Activities with ActivityKit push notifications on 
 In your Xcode project, start by adding the Push Notifications capability to your app in Xcode as described in [`Registering your app with APNs`](https://developer.apple.com/documentation/UserNotifications/registering-your-app-with-apns). Note that you can’t use the User Notifications framework to register your Live Activity for push notifications. Instead, you use ActivityKit to obtain a push token as described below. If you choose to use broadcast push notifications for your app, refer to [`Setting up broadcast push notifications`](https://developer.apple.com/documentation/UserNotifications/setting-up-broadcast-push-notifications) for more details on enabling broadcast capability for your app.
 
 > **Note**: You can’t enable broadcast capability through Xcode. You can only enable broadcast capabilities using [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com).
-
-You can’t enable broadcast capability through Xcode. You can only enable broadcast capabilities using [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com).
 
 ##### Create a Push Notification Server
 
@@ -125,8 +121,6 @@ To start Live Activities from ActivityKit push notifications, configure your app
 
 > **Note**: You can’t use broadcast push notifications to start a Live Activity.
 
-You can’t use broadcast push notifications to start a Live Activity.
-
 ##### Construct the Activitykit Remote Push Notification Payload
 
 To successfully start, update, or end a Live Activity with an ActivityKit push notification, send an HTTP request to APNs that conforms to the following requirements:
@@ -187,8 +181,6 @@ In your alert implementation, consider localizing both strings. For more informa
 Remember that a person’s device may not receive a push notification — for example, if they’re in an area without a network connection. Similarly, the system ignores an ActivityKit push notification if it arrives after the Live Activity ended. Both cases can cause a Live Activity to display outdated information. To help reduce the chance of showing outdated information, update your Live Activity from your app in addition to push notifications.
 
 > **Note**: When you send ActivityKit push notifications to a device, the system wakes the widget extension to render the UI of your Live Activity.
-
-When you send ActivityKit push notifications to a device, the system wakes the widget extension to render the UI of your Live Activity.
 
 ##### Construct the Payload That Starts a Live Activity
 
@@ -288,8 +280,6 @@ curl \
 
 > **Note**: To test ActivityKit push notifications in Simulator, use a [`Mac with the Apple T2 Security Chip`](https://developer.apple.comhttps://support.apple.com/en-us/HT208862) or a [`Mac with Apple silicon`](https://developer.apple.comhttps://support.apple.com/en-us/HT211814) that runs macOS 13 or later.
 
-To test ActivityKit push notifications in Simulator, use a [`Mac with the Apple T2 Security Chip`](https://developer.apple.comhttps://support.apple.com/en-us/HT208862) or a [`Mac with Apple silicon`](https://developer.apple.comhttps://support.apple.com/en-us/HT211814) that runs macOS 13 or later.
-
 To locally test Live Activity updates to a channel during development:
 
 1. Set up your command line as described in the “Send a Push Notification Using a Token” section of [`Sending push notifications using command-line tools`](https://developer.apple.com/documentation/UserNotifications/sending-push-notifications-using-command-line-tools).
@@ -299,8 +289,6 @@ To locally test Live Activity updates to a channel during development:
 5. Use a `curl` command to send a Live Activity update using APNs. Set the value of the `apns-priority` header field to `10` to deliver the update quickly with high priority.
 
 > **Note**: You can also use Push Notifications Console to send ActivityKit push notifications instead of using terminal. For more information, refer to [`Testing notifications using the Push Notification Console`](https://developer.apple.com/documentation/UserNotifications/testing-notifications-using-the-push-notification-console).
-
-You can also use Push Notifications Console to send ActivityKit push notifications instead of using terminal. For more information, refer to [`Testing notifications using the Push Notification Console`](https://developer.apple.com/documentation/UserNotifications/testing-notifications-using-the-push-notification-console).
 
 If you encounter failures while sending an ActivityKit push notification:
 
@@ -348,8 +336,6 @@ The system expects relative values for the relevance score. Assign a higher valu
 
 > **Note**: Keep track of the relevance scores you assign for each ongoing Live Activity so you can change the order of them as needed with each Live Activity update.
 
-Keep track of the relevance scores you assign for each ongoing Live Activity so you can change the order of them as needed with each Live Activity update.
-
 The following example payload provides a relevance score of `100` to make sure the Live Activity that receives the update appears in the Dynamic Island and at top of the list on the Lock Screen:
 
 ```json
@@ -384,4 +370,4 @@ The following example payload provides a relevance score of `100` to make sure t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/activitykit/starting-and-updating-live-activities-with-activitykit-push-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ActivityKit/starting-and-updating-live-activities-with-activitykit-push-notifications)*

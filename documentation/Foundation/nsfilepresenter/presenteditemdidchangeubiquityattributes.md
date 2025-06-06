@@ -24,8 +24,6 @@ To specify the ubiquity attributes that trigger notifications, implement your fi
 
 > **Note**:  Changes to the ubiquity attributes don’t typically align with [`presentedItemDidChange()`](nsfilepresenter/presenteditemdidchange().md) notifications.
 
- Changes to the ubiquity attributes don’t typically align with [`presentedItemDidChange()`](nsfilepresenter/presenteditemdidchange().md) notifications.
-
 ## Parameters
 
 - `attributes`: The set of ubiquity attributes that have changed. For information about valid ubiquity attributes, see the   property.

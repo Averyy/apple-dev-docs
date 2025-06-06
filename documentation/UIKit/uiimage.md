@@ -1,6 +1,6 @@
 # UIImage
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that manages image data in your app.
@@ -49,8 +49,6 @@ When creating image objects using the methods of this class, you must have exist
 Other methods of the [`UIImage`](uiimage.md) class let you create animations from specific types of data, such as Core Graphics images or image data you create yourself. UIKit also provides the [`UIGraphicsGetImageFromCurrentImageContext()`](uigraphicsgetimagefromcurrentimagecontext().md) function to create images from content you draw yourself. You use that function in conjunction with a bitmap-based graphics context, which you use to capture your drawing commands.
 
 > **Note**:  Because image objects are immutable, you can’t change their properties after creation. Most image properties are set automatically using metadata in the accompanying image file or image data. The immutable nature of image objects also means they’re safe to create and use from any thread.
-
- Because image objects are immutable, you can’t change their properties after creation. Most image properties are set automatically using metadata in the accompanying image file or image data. The immutable nature of image objects also means they’re safe to create and use from any thread.
 
 Image assets are the easiest way to manage the images that ship with your app. Each new Xcode project contains an assets library, to which you can add multiple image sets. An image set contains the variations of a single image that your app uses. A single image set can provide different versions of an image for different platforms, for different trait environments (compact or regular), and for different scale factors.
 
@@ -293,4 +291,4 @@ Image objects don’t provide direct access to their underlying image data. Howe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiimage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiimage)*

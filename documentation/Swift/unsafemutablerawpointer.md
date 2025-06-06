@@ -49,8 +49,6 @@ Memory that has been bound to a type can be rebound to a different type only aft
 
 > **Note**: A trivial type can be copied bit for bit with no indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enumerations.
 
-A trivial type can be copied bit for bit with no indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enumerations.
-
 When reading from or writing to  memory as raw bytes when that memory is bound to a type, you must ensure that you satisfy any alignment requirements. Writing to typed memory as raw bytes must only be performed when the bound type is a trivial type.
 
 ### Raw Pointer Arithmetic
@@ -124,14 +122,6 @@ print(address: &numbers, as: Int.self)
 ```
 
 > ❗ **Important**: The pointer created through implicit bridging of an instance or of an array’s elements is only valid during the execution of the called function. Escaping the pointer to use after the execution of the function is undefined behavior. In particular, do not use implicit bridging when calling an `UnsafeMutableRawPointer` initializer. ```swift
-var number = 5
-let numberPointer = UnsafeMutableRawPointer(&number)
-// Accessing 'numberPointer' is undefined behavior.
-```
-
-The pointer created through implicit bridging of an instance or of an array’s elements is only valid during the execution of the called function. Escaping the pointer to use after the execution of the function is undefined behavior. In particular, do not use implicit bridging when calling an `UnsafeMutableRawPointer` initializer.
-
-```swift
 var number = 5
 let numberPointer = UnsafeMutableRawPointer(&number)
 // Accessing 'numberPointer' is undefined behavior.
@@ -239,4 +229,4 @@ let numberPointer = UnsafeMutableRawPointer(&number)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/unsafemutablerawpointer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/unsafemutablerawpointer)*

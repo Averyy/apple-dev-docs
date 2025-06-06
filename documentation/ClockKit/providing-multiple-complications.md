@@ -1,6 +1,6 @@
 # Providing Multiple Complications
 
-**Framework**: ClockKit
+**Framework**: Clockkit
 
 Present multiple complications for a single complication family using descriptors.
 
@@ -131,8 +131,6 @@ case (.modularSmall, _):
 
 > **Note**: If an app creates templates based on the complication’s `identifier` property, it must check for the [`CLKDefaultComplicationIdentifier`](clkdefaultcomplicationidentifier.md) default identifier. Coffee Tracker first explicitly checks for the Total Cups identifier and then uses the Caffeine Dose templates for any other identifiers.
 
-If an app creates templates based on the complication’s `identifier` property, it must check for the [`CLKDefaultComplicationIdentifier`](clkdefaultcomplicationidentifier.md) default identifier. Coffee Tracker first explicitly checks for the Total Cups identifier and then uses the Caffeine Dose templates for any other identifiers.
-
 If the family only supports a single complication, the app just returns a template based on the family.
 
 ```swift
@@ -162,4 +160,4 @@ private func createCaffeineModularSmallTemplate(forDate date: Date) -> CLKCompli
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/providing-multiple-complications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/providing-multiple-complications)*

@@ -1,6 +1,6 @@
 # export(to:as:isolation:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Exports the asset to the output location in the specified file type.
@@ -26,8 +26,6 @@ This method throws an error if you cancel the export or you specify a file type 
 You can monitor the status of an export by calling the [`states(updateInterval:)`](avassetexportsession/states(updateinterval:).md) method.
 
 > **Note**:  You can cancel an in-progress export by calling [`cancel()`](https://developer.apple.com/documentation/Swift/Task/cancel()) on the [`Task`](https://developer.apple.com/documentation/Swift/Task) or parent task that initiated the operation.
-
- You can cancel an in-progress export by calling [`cancel()`](https://developer.apple.com/documentation/Swift/Task/cancel()) on the [`Task`](https://developer.apple.com/documentation/Swift/Task) or parent task that initiated the operation.
 
 ## Parameters
 

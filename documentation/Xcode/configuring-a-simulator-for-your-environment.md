@@ -51,8 +51,6 @@ Simulator keeps track of the most recent selections for input and for output. Si
 
 > **Note**: When Bluetooth headphones are selected as the input source, playing or listening to audio in Simulator sets the headphones to phone call mode which lowers the quality of the audio. To hear sound at full quality, choose a different audio input source for Simulator.
 
-When Bluetooth headphones are selected as the input source, playing or listening to audio in Simulator sets the headphones to phone call mode which lowers the quality of the audio. To hear sound at full quality, choose a different audio input source for Simulator.
-
 ##### Restart or Reset a Simulated Device
 
 Restart a simulated device to simulate turning off and turning back on a device. To do this, choose Device > Restart.
@@ -77,4 +75,4 @@ Reset a simulated device to factory settings to clear out all installed apps and
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-a-simulator-for-your-environment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-a-simulator-for-your-environment)*

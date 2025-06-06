@@ -1,6 +1,6 @@
 # NSAttributeDescription
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: class
 
 A description of a single attribute belonging to an entity.
@@ -29,8 +29,6 @@ class NSAttributeDescription
 Attribute descriptions are editable until they are used by an object graph manager. This allows you to create or modify them dynamically. However, once a description is used (when the managed object model to which it belongs is associated with a persistent store coordinator), it  (indeed cannot) be changed. This is enforced at runtime: any attempt to mutate a model or any of its sub-objects after the model is associated with a persistent store coordinator causes an exception to be thrown. If you need to modify a model that is in use, create a copy, modify the copy, and then discard the objects with the old model.
 
 > **Note**:  Default values set for attributes are retained by a managed object model, not copied. This means that attribute values do not have to implement the `NSCopying` protocol, however it also means that you should not modify any objects after they have been set as default values.
-
- Default values set for attributes are retained by a managed object model, not copied. This means that attribute values do not have to implement the `NSCopying` protocol, however it also means that you should not modify any objects after they have been set as default values.
 
 ## Topics
 
@@ -92,4 +90,4 @@ Attribute descriptions are editable until they are used by an object graph manag
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsattributedescription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsattributedescription)*

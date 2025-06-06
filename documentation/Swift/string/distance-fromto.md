@@ -28,8 +28,6 @@ The distance between `start` and `end`.
 
 > **Note**: O(), where  is the resulting distance.
 
-O(), where  is the resulting distance.
-
 ## Parameters
 
 - `start`: A valid index of the collection.

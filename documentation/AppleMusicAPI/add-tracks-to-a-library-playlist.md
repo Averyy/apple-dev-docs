@@ -1,6 +1,6 @@
 # Add Tracks to a Library Playlist
 
-**Framework**: Apple Music API  
+**Framework**: Applemusicapi  
 **Kind**: httpRequest
 
 Add new tracks to the end of a library playlist.
@@ -15,8 +15,6 @@ If successful, the HTTP status code is 201 (Created) and a new resource created 
 This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
 
 > **Note**:  There may be a delay before a new resource appears in a user’s library.
-
- There may be a delay before a new resource appears in a user’s library.
 
 You can include an optional `tracks` relationship in this request.
 
@@ -44,4 +42,4 @@ The `POST` request containing the `identifier` and `type` for the tracks to be a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/add-tracks-to-a-library-playlist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/add-tracks-to-a-library-playlist)*

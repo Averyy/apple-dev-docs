@@ -120,11 +120,7 @@ Task {
 
 > **Note**: If the operation closure throws
 
-If the operation closure throws
-
 > **Note**: [`TaskExecutor`](taskexecutor.md)
-
-[`TaskExecutor`](taskexecutor.md)
 
 ## Parameters
 

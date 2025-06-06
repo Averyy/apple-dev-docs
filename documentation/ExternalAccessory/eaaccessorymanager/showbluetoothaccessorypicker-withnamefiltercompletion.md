@@ -1,6 +1,6 @@
 # showBluetoothAccessoryPicker(withNameFilter:completion:)
 
-**Framework**: External Accessory  
+**Framework**: Externalaccessory  
 **Kind**: method
 
 Displays an alert that allows the user to pair the device with a Bluetooth accessory.
@@ -24,19 +24,9 @@ func showBluetoothAccessoryPicker(withNameFilter predicate: NSPredicate?) async 
 func showBluetoothAccessoryPicker(withNameFilter predicate: NSPredicate?) async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func showBluetoothAccessoryPicker(withNameFilter predicate: NSPredicate?) async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 On iOS devices, this method synchronously displays an alert containing the list of Bluetooth accessories that have been discovered by the current device and that match the specified filter (if any). The user can select an accessory from this list and pair the device to it. Pairing an accessory updates the accessory manager’s list of connected accessories and generates a corresponding connection notification. On Apple silicon, this method displays an alert to let the user know that the Bluetooth accessory picker is unavailable.
 
 > **Note**:  The picker displays only Bluetooth devices that include an iAP over Bluetooth unique ID in their extended inquiry response.
-
- The picker displays only Bluetooth devices that include an iAP over Bluetooth unique ID in their extended inquiry response.
 
 ## Parameters
 

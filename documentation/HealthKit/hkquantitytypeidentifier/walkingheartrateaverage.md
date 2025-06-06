@@ -1,6 +1,6 @@
 # walkingHeartRateAverage
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: property
 
 A quantity sample type that measures the user’s heart rate while walking.
@@ -28,8 +28,6 @@ A user’s average heart rate while walking is correlated to their fitness level
 Because walking heart rate estimates become more accurate as the day progresses, the system may delete earlier samples and replace them with better estimates. Apple Watch replaces only the samples written by the watch for the current or previous day.
 
 > **Note**:  Walking heart rate samples are automatically created by HealthKit. You cannot save your own walking heart rate samples; however, you can query these samples.
-
- Walking heart rate samples are automatically created by HealthKit. You cannot save your own walking heart rate samples; however, you can query these samples.
 
 ## See Also
 

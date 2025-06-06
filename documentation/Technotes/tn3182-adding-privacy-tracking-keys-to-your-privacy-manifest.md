@@ -17,8 +17,6 @@ This document describes how to add the `NSPrivacyTracking` and `NSPrivacyTrackin
 
 > **Note**: Before you start adding the keys to your privacy manifest, enable raw keys and values in Xcode to view the raw keys and hide their human-readable names. Click anywhere in the privacy manifest, then choose Xcode > Editor > Raw Keys and Values. Repeat the process to disable this feature.
 
-Before you start adding the keys to your privacy manifest, enable raw keys and values in Xcode to view the raw keys and hide their human-readable names. Click anywhere in the privacy manifest, then choose Xcode > Editor > Raw Keys and Values. Repeat the process to disable this feature.
-
 #### Add the Privacy Tracking Key
 
 The `NSPrivacyTracking` key uses the following format:
@@ -116,4 +114,4 @@ Repeat step 5 for each additional tracking domain your app or third-party SDK co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest)*

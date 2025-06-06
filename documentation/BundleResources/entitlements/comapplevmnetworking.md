@@ -1,6 +1,6 @@
 # com.apple.vm.networking
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 A Boolean that indicates whether the app manages virtual network interfaces without escalating privileges to the root user.
@@ -13,8 +13,6 @@ A Boolean that indicates whether the app manages virtual network interfaces with
 The entitlement is required to use the [`vmnet`](https://developer.apple.com/documentation/vmnet) APIs.
 
 > **Note**:  This entitlement is restricted to developers of virtualization software. To request this entitlement, contact your Apple representative.
-
- This entitlement is restricted to developers of virtualization software. To request this entitlement, contact your Apple representative.
 
 ## See Also
 

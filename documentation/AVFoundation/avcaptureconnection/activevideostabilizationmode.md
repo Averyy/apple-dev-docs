@@ -1,6 +1,6 @@
 # activeVideoStabilizationMode
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The connection’s current stabilization mode.
@@ -22,8 +22,6 @@ var activeVideoStabilizationMode: AVCaptureVideoStabilizationMode { get }
 The property only applies to a video connection, and it explicitly indicates whether it’s using stabilization, which means the value is never [`AVCaptureVideoStabilizationMode.auto`](avcapturevideostabilizationmode/auto.md).
 
 > **Note**:  Devices with a video stabilization feature may only support a subset of available source formats.
-
- Devices with a video stabilization feature may only support a subset of available source formats.
 
 You can monitor this property to detect when the connection applies video stabilization to its video data with key-value observation. See [`NSKeyValueObserving`](https://developer.apple.com/documentation/ObjectiveC/nskeyvalueobserving) and [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift) for more information.
 

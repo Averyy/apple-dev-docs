@@ -1,6 +1,6 @@
 # Creating a Mac version of your iPad app
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Bring your iPad app to macOS with Mac Catalyst.
 
@@ -9,8 +9,6 @@ Bring your iPad app to macOS with Mac Catalyst.
 With Xcode 11 and later, you can create a Mac version of your iPad app using Mac Catalyst. Configuring your app for Mac can take just a click in a checkbox, although you may need more steps, depending on the features and frameworks that your app uses.
 
 > **Note**:  For information about designing a Mac version of your iPad app, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/technologies/mac-catalyst/introduction).
-
- For information about designing a Mac version of your iPad app, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/technologies/mac-catalyst/introduction).
 
 ##### Configure Your App for Mac
 
@@ -46,4 +44,4 @@ After following these steps, you should be able to run your iPad app on Mac. But
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/creating-a-mac-version-of-your-ipad-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/creating-a-mac-version-of-your-ipad-app)*

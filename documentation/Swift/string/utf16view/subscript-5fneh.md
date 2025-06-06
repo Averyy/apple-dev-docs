@@ -39,8 +39,6 @@ print(streets[index!])
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

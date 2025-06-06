@@ -55,8 +55,6 @@ To customize the lift preview, shown while the system transitions to show your c
 
 > **Note**: This view modifier produces a context menu on macOS, but that platform doesn’t display the preview.
 
-This view modifier produces a context menu on macOS, but that platform doesn’t display the preview.
-
 If you don’t need a preview, use `View/contextMenu(menuItems:)` instead. If you want to add a context menu to a container that supports selection, like a `List` or a `Table`, and you want to distinguish between menu activation on a selection and activation in an empty area of the container, use `View/contextMenu(forSelectionType:menu:primaryAction:)`.
 
 ## Parameters

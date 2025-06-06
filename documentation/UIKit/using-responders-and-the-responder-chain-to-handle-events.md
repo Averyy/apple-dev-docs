@@ -1,6 +1,6 @@
 # Using responders and the responder chain to handle events
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Learn how to handle events that propagate through your app.
 
@@ -28,8 +28,6 @@ UIKit designates an object as the first responder to an event based on the type 
 
 > **Note**:  Motion events related to the accelerometers, gyroscopes, and magnetometer don’t follow the responder chain. Instead, Core Motion delivers those events directly to the designated object. For more information, see [`Core Motion Framework`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW27)
 
- Motion events related to the accelerometers, gyroscopes, and magnetometer don’t follow the responder chain. Instead, Core Motion delivers those events directly to the designated object. For more information, see [`Core Motion Framework`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/CoreServicesLayer/CoreServicesLayer.html#//apple_ref/doc/uid/TP40007898-CH10-SW27)
-
 Controls communicate directly with their associated target object using action messages. When the user interacts with a control, the control sends an action message to its target object. Action messages aren’t events, but they may still take advantage of the responder chain. When the target object of a control is `nil`, UIKit starts from the target object and traverses the responder chain until it finds an object that implements the appropriate action method. For example, the UIKit editing menu uses this behavior to search for responder objects that implement methods with names like [`cut(_:)`](uiresponderstandardeditactions/cut(_:).md), [`copy(_:)`](uiresponderstandardeditactions/copy(_:).md), or [`paste(_:)`](uiresponderstandardeditactions/paste(_:).md).
 
 Gesture recognizers receive touch and press events before their view does. If a view’s gesture recognizers fail to recognize a sequence of touches, UIKit sends the touches to the view. If the view doesn’t handle the touches, UIKit passes them up the responder chain. For more information about using gesture recognizer’s to handle events, see [`Handling UIKit gestures`](handling-uikit-gestures.md).
@@ -39,8 +37,6 @@ Gesture recognizers receive touch and press events before their view does. If a 
 UIKit uses view-based hit-testing to determine where touch events occur. Specifically, UIKit compares the touch location to the bounds of view objects in the view hierarchy. The [`hitTest(_:with:)`](uiview/hittest(_:with:).md) method of [`UIView`](uiview.md) traverses the view hierarchy, looking for the deepest subview that contains the specified touch, which becomes the first responder for the touch event.
 
 > **Note**:  If a touch location is outside of a view’s bounds, the [`hitTest(_:with:)`](uiview/hittest(_:with:).md) method ignores that view and all of its subviews. As a result, when a view’s [`clipsToBounds`](uiview/clipstobounds.md) property is [`true`](https://developer.apple.com/documentation/swift/true), subviews outside of that view’s bounds aren’t returned even if they happen to contain the touch. For more information about the hit-testing behavior, see the discussion of the [`hitTest(_:with:)`](uiview/hittest(_:with:).md) method in [`UIView`](uiview.md).
-
- If a touch location is outside of a view’s bounds, the [`hitTest(_:with:)`](uiview/hittest(_:with:).md) method ignores that view and all of its subviews. As a result, when a view’s [`clipsToBounds`](uiview/clipstobounds.md) property is [`true`](https://developer.apple.com/documentation/swift/true), subviews outside of that view’s bounds aren’t returned even if they happen to contain the touch. For more information about the hit-testing behavior, see the discussion of the [`hitTest(_:with:)`](uiview/hittest(_:with:).md) method in [`UIView`](uiview.md).
 
 When a touch occurs, UIKit creates a [`UITouch`](uitouch.md) object and associates it with a view. As the touch location or other parameters change, UIKit updates the same [`UITouch`](uitouch.md) object with the new information. The only property that doesn’t change is the view. (Even when the touch location moves outside the original view, the value in the touch’s [`view`](uitouch/view.md) property doesn’t change). When the touch ends, UIKit releases the [`UITouch`](uitouch.md) object.
 
@@ -67,4 +63,4 @@ Many UIKit classes already override this property and return specific objects, i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/using-responders-and-the-responder-chain-to-handle-events)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/using-responders-and-the-responder-chain-to-handle-events)*

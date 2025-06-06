@@ -25,8 +25,6 @@ A collection containing just the values of the dictionary. When iterated over, v
 
 > **Note**:  The complexity of this property is O(*n*) over the dictionary’s [`count`](xpcdictionary/count.md).
 
- The complexity of this property is O(*n*) over the dictionary’s [`count`](xpcdictionary/count.md).
-
 ## See Also
 
 - [var keys: [String]](xpcdictionary/keys.md)
@@ -63,4 +61,4 @@ A collection containing just the values of the dictionary. When iterated over, v
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xpc/xpcdictionary/values)*
+*[View on Apple Developer](https://developer.apple.com/documentation/XPC/xpcdictionary/values)*

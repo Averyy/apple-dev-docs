@@ -1,6 +1,6 @@
 # MPEG-4 video codec
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 #### Overview
 
@@ -17,8 +17,6 @@ Example: Video ID is indicated by the value `1`.
 A writer of the MPEG-4 Video Codec feature should record the 4 bits corresponding to the `visual_object_type` found in the `VisualObject` within the `ES_descriptor`’s video `DecoderSpecificConfig`. The most significant 28 bits of the value should be set to `0`.
 
 > **Note**: A writer that records the MPEG-4 Video Codec feature is encouraged also to write the QuickTime Video Codec Type feature.
-
-A writer that records the MPEG-4 Video Codec feature is encouraged also to write the QuickTime Video Codec Type feature.
 
 #### Feature Value Algorithm
 

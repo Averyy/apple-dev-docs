@@ -1,6 +1,6 @@
 # Exporting a Reality Composer Scene to USDZ
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Save a scene or project as USDZ to read, collect, or display in an app or website.
 
@@ -24,15 +24,11 @@ In the export sheet, choose whether to export the scene or project in USDZ forma
 
 > **Note**: Reality Composer doesn’t support exporting a scene that contains reimported `.reality` files.
 
-Reality Composer doesn’t support exporting a scene that contains reimported `.reality` files.
-
 ##### Accommodate the Custom Usd Schema and Provide Feedback
 
 Reality Composer extends the USD specification to include most of the features that `.reality` or `.rcproject` files support, such as anchors, behaviors, and physics. Because these features aren’t available in the current USD specification, Reality Composer’s USDZ exports provide more functionality on Apple devices than USD files created with third-party tools. For more information about Apple’s custom USD schemas, see [`USDZ schemas for AR`](usdz-schemas-for-ar.md).
 
 > **Note**: USDZ exports support horizontal, vertical, image, and face anchors. Apple’s custom USD schema doesn’t support object anchors.
-
-USDZ exports support horizontal, vertical, image, and face anchors. Apple’s custom USD schema doesn’t support object anchors.
 
 Some or all of the functionality enabled by these custom schemas may eventually funnel into the USD specification itself. To provide feedback on these schemas, use the [`Feedback Assistant`](https://developer.apple.comhttps://feedbackassistant.apple.com/welcome).
 
@@ -46,4 +42,4 @@ Some or all of the functionality enabled by these custom schemas may eventually 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/exporting-a-reality-composer-scene-to-usdz)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/exporting-a-reality-composer-scene-to-usdz)*

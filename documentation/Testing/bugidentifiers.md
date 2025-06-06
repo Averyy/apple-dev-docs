@@ -1,6 +1,6 @@
 # Interpreting bug identifiers
 
-**Framework**: Swift Testing
+**Framework**: Testing
 
 Examine how the testing library interprets bug identifiers provided by developers.
 
@@ -12,8 +12,6 @@ The testing library supports two distinct ways to identify a bug:
 2. A unique identifier in the bug’s associated bug-tracking system.
 
 > **Note**: “Bugs” as described in this document may also be referred to as “issues.” To avoid confusion with the [`Issue`](issue.md) type in the testing library, this document consistently refers to them as “bugs.”
-
-“Bugs” as described in this document may also be referred to as “issues.” To avoid confusion with the [`Issue`](issue.md) type in the testing library, this document consistently refers to them as “bugs.”
 
 A bug may have both an associated URL  an associated unique identifier. It must have at least one or the other in order for the testing library to be able to interpret it correctly.
 
@@ -52,4 +50,4 @@ To create an instance of [`Bug`](bug.md) with a bug’s unique identifier, use t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/testing/bugidentifiers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Testing/bugidentifiers)*

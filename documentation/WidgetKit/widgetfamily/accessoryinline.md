@@ -29,8 +29,6 @@ The accessory inline widget can appear as a complication in watchOS, or on the L
 
 > **Note**: Widgets on the iPad Lock Screen require iPadOS 17 or later.
 
-Widgets on the iPad Lock Screen require iPadOS 17 or later.
-
 ## See Also
 
 - [WidgetFamily.accessoryCircular](widgetfamily/accessorycircular.md)

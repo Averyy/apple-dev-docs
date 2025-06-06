@@ -1,6 +1,6 @@
 # GKScene
 
-**Framework**: GameplayKit  
+**Framework**: Gameplaykit  
 **Kind**: class
 
 A container for associating GameplayKit objects with a SpriteKit scene.
@@ -26,8 +26,6 @@ When you create a scene in the Xcode SpriteKit scene editor, Xcode automatically
 To use a SpriteKit scene that contains GameplayKit objects, load the scene file with the [`GKScene`](gkscene.md) [`init(fileNamed:)`](gkscene/init(filenamed:).md) method. You can then use the [`entities`](gkscene/entities.md) and [`graphs`](gkscene/graphs.md) properties to access the [`GKEntity`](gkentity.md) (and associated [`GKComponent`](gkcomponent.md)) objects and [`GKGraph`](gkgraph.md) objects in the scene, and the [`rootNode`](gkscene/rootnode.md) property to access the scene’s SpriteKit content.
 
 > **Note**:  Any SpriteKit node in the scene to which you’ve attached an entity or components automatically has a [`GKSKNodeComponent`](gksknodecomponent.md) object to manage the relationship between the node and the the [`GKEntity`](gkentity.md) object it represents.
-
- Any SpriteKit node in the scene to which you’ve attached an entity or components automatically has a [`GKSKNodeComponent`](gksknodecomponent.md) object to manage the relationship between the node and the the [`GKEntity`](gkentity.md) object it represents.
 
 For more information on Entity-Component architecture and pathfinding graphs, see [`Entities and Components`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/EntityComponent.html#//apple_ref/doc/uid/TP40015172-CH6) and [`Pathfinding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
@@ -81,4 +79,4 @@ For more information on Entity-Component architecture and pathfinding graphs, se
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gameplaykit/gkscene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameplayKit/gkscene)*

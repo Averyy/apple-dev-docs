@@ -1,6 +1,6 @@
 # Responding to App Store Server Notifications
 
-**Framework**: App Store Server Notifications
+**Framework**: Appstoreservernotifications
 
 Send HTTP status codes to indicate the success of a notification post.
 
@@ -20,8 +20,6 @@ If the App Store server doesn’t receive a success response from your server af
 
 > **Note**:  Retry notifications are available only in the production environment. In the sandbox environment, the App Store server attempts to send the notification one time.
 
- Retry notifications are available only in the production environment. In the sandbox environment, the App Store server attempts to send the notification one time.
-
 ##### Recover From Server Outages
 
 If your server misses notifications due to an outage, you can always get up-to-date transaction information by calling [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI) endpoints including [`Get Transaction History`](https://developer.apple.com/documentation/AppStoreServerAPI/Get-Transaction-History) and [`Get All Subscription Statuses`](https://developer.apple.com/documentation/AppStoreServerAPI/Get-All-Subscription-Statuses).
@@ -40,4 +38,4 @@ If you use version 2 notifications ([`App Store Server Notifications V2`](app-st
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreservernotifications/responding-to-app-store-server-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerNotifications/responding-to-app-store-server-notifications)*

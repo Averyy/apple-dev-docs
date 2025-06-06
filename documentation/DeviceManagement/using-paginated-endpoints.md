@@ -1,6 +1,6 @@
 # Using Paginated Endpoints
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Manage paginated endpoints to efficiently work with large record sets.
 
@@ -41,8 +41,6 @@ A paginated response includes the following fields:
 | `totalPages` | The total number of pages in the paginated response. |
 
 > **Note**:  The `pageIndex` is a zero-based integer. A `pageIndex` of `0` returns the first page of results. If you omit it from the request, `pageIndex` defaults to `0`. The last page of results has a `pageIndex` equal to `totalPages`-1.
-
- The `pageIndex` is a zero-based integer. A `pageIndex` of `0` returns the first page of results. If you omit it from the request, `pageIndex` defaults to `0`. The last page of results has a `pageIndex` equal to `totalPages`-1.
 
 The following is an example of a request for the first page of records:
 
@@ -162,8 +160,6 @@ To make requests for multiple pages in parallel:
 
 > ❗ **Important**:  The `totalPages` in a result set can change while traversing a paginated result set. This occurs whenever the system modifies underlying data in the result set. When performing parallel requests, it’s important to note whether the value for `totalPages` changes on any paginated response, and to continue to iterate through the result set until you traverse the last page.
 
- The `totalPages` in a result set can change while traversing a paginated result set. This occurs whenever the system modifies underlying data in the result set. When performing parallel requests, it’s important to note whether the value for `totalPages` changes on any paginated response, and to continue to iterate through the result set until you traverse the last page.
-
 ##### Handle Versioned Responses
 
 If you’re unable to subscribe to notifications, or are performing an initial sync, use the `sinceVersionId` query parameter to obtain incremental updates to keep the MDM client up to date with changes without having to retrieve all records.
@@ -171,8 +167,6 @@ If you’re unable to subscribe to notifications, or are performing an initial s
 A `versionId` returns in the response of all versioned endpoints. The `versionId` represents the state of a complete data set for an endpoint. The server generates a new `versionId` for an endpoint whenever the system modifies any underlying data for that endpoint. The MDM client can use a `versionId` in future requests to get records with modifications since the generation of that `versionId`. When any writes occur to the underlying data in a fetch, `versionId` updates.
 
 > **Note**:  The `versionId` for an endpoint can change while traversing a paginated result set. Use the `versionId` that returns on the first page of results in a subsequent query to obtain all newly modified records.
-
- The `versionId` for an endpoint can change while traversing a paginated result set. Use the `versionId` that returns on the first page of results in a subsequent query to obtain all newly modified records.
 
 To use a `versionId` to obtain modified records:
 
@@ -183,8 +177,6 @@ To use a `versionId` to obtain modified records:
 5. Repeat these steps at regular intervals to keep your system up to date with incremental changes.
 
 > ❗ **Important**:  The [`Get Assets`](get-assets-4ski1.md) endpoint returns a `versionId` to indicate when the system modifies underlying data. However, the [`Get Assets`](get-assets-4ski1.md) endpoint doesn’t support the `sinceVersionId` query parameter so you can’t query [`Get Assets`](get-assets-4ski1.md) to obtain only those records with modifications.
-
- The [`Get Assets`](get-assets-4ski1.md) endpoint returns a `versionId` to indicate when the system modifies underlying data. However, the [`Get Assets`](get-assets-4ski1.md) endpoint doesn’t support the `sinceVersionId` query parameter so you can’t query [`Get Assets`](get-assets-4ski1.md) to obtain only those records with modifications.
 
 The following is an example of a request for the initial data:
 
@@ -260,8 +252,6 @@ The response that contains the updated data looks like the following:
 
 > **Note**:  Using the `sinceVersionId` query parameter can result in responses with zero records. This isn’t an error or an end signal. It’s just an indication that there aren’t any records with modifications.
 
- Using the `sinceVersionId` query parameter can result in responses with zero records. This isn’t an error or an end signal. It’s just an indication that there aren’t any records with modifications.
-
 ## See Also
 
 - [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
@@ -282,4 +272,4 @@ The response that contains the updated data looks like the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/using-paginated-endpoints)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/using-paginated-endpoints)*

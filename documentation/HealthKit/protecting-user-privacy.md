@@ -1,6 +1,6 @@
 # Protecting user privacy
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Respect and safeguard your user’s privacy.
 
@@ -11,8 +11,6 @@ Because health data can be sensitive, HealthKit provides users with fine-grained
 For example, a user could let your app read step count data, but prevent it from reading blood glucose levels. To prevent possible information leaks, an app isn’t aware when the user denies permission to read data. From the app’s point of view, no data of that type exists.
 
 > ❗ **Important**:  Apps must include usage descriptions, or it will crash when you request authorization to access HealthKit data. Include the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthShareUsageDescription) key to read, and [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthUpdateUsageDescription) key to write data to Healthkit. For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
-
- Apps must include usage descriptions, or it will crash when you request authorization to access HealthKit data. Include the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthShareUsageDescription) key to read, and [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthUpdateUsageDescription) key to write data to Healthkit. For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
 
 ##### Access Encrypted Data
 
@@ -38,10 +36,6 @@ You must also provide a privacy policy for any app that uses the HealthKit frame
 These models, developed by the Office of the National Coordinator for Health Information Technology (ONC), are designed to improve user experience and comprehension with plain language and approachable designs that explain how your app collects and shares user data. These models aren’t intended to replace a web-based privacy policy, and developers should consult ONC guidance regarding which model is appropriate for a given app. These models are provided for your reference only, and Apple expressly disclaims all liability for your use of such models.
 
 > **Note**:  It’s essential that you understand Apple’s requirements for working with HealthKit and the user’s health-related data. To learn about these requirements, see the HealthKit section in [`App Store Review Guidelines`](https://developer.apple.comhttps://developer.apple.com/app-store/review/guidelines/) and the relevant sections in the [`Apple Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/support/terms/apple-developer-program-license-agreement/). The App Store Review Guidelines are also available from the [`App Review`](https://developer.apple.comhttps://developer.apple.com/app-store/review/) page. For additional technical information about working with sensitive user data, see [`Preparing your UI to run in the background`](https://developer.apple.com/documentation/UIKit/preparing-your-ui-to-run-in-the-background).
-
- It’s essential that you understand Apple’s requirements for working with HealthKit and the user’s health-related data. To learn about these requirements, see the HealthKit section in [`App Store Review Guidelines`](https://developer.apple.comhttps://developer.apple.com/app-store/review/guidelines/) and the relevant sections in the [`Apple Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/support/terms/apple-developer-program-license-agreement/). The App Store Review Guidelines are also available from the [`App Review`](https://developer.apple.comhttps://developer.apple.com/app-store/review/) page.
-
-For additional technical information about working with sensitive user data, see [`Preparing your UI to run in the background`](https://developer.apple.com/documentation/UIKit/preparing-your-ui-to-run-in-the-background).
 
 ## See Also
 

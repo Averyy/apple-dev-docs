@@ -1,6 +1,6 @@
 # textSelection(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Controls whether people can select text within this view.
@@ -55,8 +55,6 @@ On iOS, the person using the app touches and holds on a selectable `Text` view, 
 ![A portion of an iOS view, with header Event Invite and](https://docs-assets.developer.apple.com/published/03f45a86d55e7b5b8c620e8204d33906/View-textSelection-2%402x.png)
 
 > **Note**: [`Button`](button.md) views don’t support text selection.
-
-[`Button`](button.md) views don’t support text selection.
 
 ## See Also
 

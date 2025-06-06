@@ -1,6 +1,6 @@
 # Get Transaction History V1
 
-**Framework**: App Store Server API  
+**Framework**: Appstoreserverapi  
 **Kind**: httpRequest
 
 Get a customer’s in-app purchase transaction history for your app, except finished consumable in-app purchases.
@@ -24,8 +24,6 @@ The [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint retur
 
 > **Note**:  Use [`Get Transaction History`](get-transaction-history.md) instead to get all the product types, including consumable in-app purchases in the finished state.
 
- Use [`Get Transaction History`](get-transaction-history.md) instead to get all the product types, including consumable in-app purchases in the finished state.
-
 You can customize your request by including query parameters that filter the transaction history. The query parameters limit the scope of the request by dates, product IDs, product types, and subscription group identifiers. You can also exclude revoked or nonrevoked transactions, and limit the transactions by in-app ownership type. If you provide multiple filters in the query, the transactions that return match all the filters.
 
 You can also specify a sort order. The App Store sorts the transactions based on their recently modified dates. Use a `DESCENDING` order to get the most recent transactions first. The App Store updates the recently modified date if the customer upgrades a subscription or the App Store revokes an in-app purchase. If a transaction updates while you’re receiving transaction history and the response is sorted in `ASCENDING` order, you may receive the transaction again with updated data.
@@ -39,8 +37,6 @@ GET https://api.storekit.itunes.apple.com/inApps/v1/history/{transactionId}?prod
 When you specify multiple values for a single query parameter, the response contains transactions that match any of the values.
 
 > **Note**:  If you use optional query parameters, be sure to use the same query parameters on subsequent requests that include the `revision` parameter.
-
- If you use optional query parameters, be sure to use the same query parameters on subsequent requests that include the `revision` parameter.
 
 To request a full transaction history in ascending order for your app, start by calling the endpoint without any query parameters, as follows:
 
@@ -64,4 +60,4 @@ GET https://api.storekit.itunes.apple.com/inApps/v1/history/{transactionId}?revi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/get-transaction-history-v1)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/get-transaction-history-v1)*

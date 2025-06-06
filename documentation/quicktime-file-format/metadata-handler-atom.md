@@ -1,6 +1,6 @@
 # Metadata handler atom ('hdlr')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that defines the structure used for all types of metadata stored within the metadata atom.
@@ -14,8 +14,6 @@ An atom that defines the structure used for all types of metadata stored within 
 The metadata handler atom is a full atom with an atom type of `‘hdlr’`. It defines the structure used for all types of metadata stored within the metadata atom.
 
 > **Note**: A reader parsing a metadata atom should confirm the handler type in the metadata handler atom is ‘mdta’ before interpreting any other structures in the metadata atom according to the specification presented here. If the handler type is not ‘mdta’, the interpretation is defined by another specification.
-
-A reader parsing a metadata atom should confirm the handler type in the metadata handler atom is ‘mdta’ before interpreting any other structures in the metadata atom according to the specification presented here. If the handler type is not ‘mdta’, the interpretation is defined by another specification.
 
 ## Topics
 

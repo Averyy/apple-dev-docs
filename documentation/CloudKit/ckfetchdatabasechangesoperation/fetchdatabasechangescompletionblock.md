@@ -1,6 +1,6 @@
 # fetchDatabaseChangesCompletionBlock
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: property
 
 The closure to execute when the operation finishes.
@@ -29,8 +29,6 @@ The closure returns no value and takes the following parameters:
 - An error object that contains information about a problem, or `nil` if CloudKit successfully retrieves the database changes.
 
 > **Note**:  The change token and error parameters are mutally exclusive — that is, the closure provides one of them but not both.
-
- The change token and error parameters are mutally exclusive — that is, the closure provides one of them but not both.
 
 Your app is responsible for saving the change token at the end of the operation and providing it to future uses of [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md). If the server returns a [`CKError.Code.changeTokenExpired`](ckerror/code/changetokenexpired.md) error, the [`previousServerChangeToken`](ckfetchdatabasechangesoperation/previousserverchangetoken.md) value is stale and your app needs to clear its local cache and refetch the database changes, starting with a `nil` change token.
 

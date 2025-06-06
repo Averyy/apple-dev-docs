@@ -1,6 +1,6 @@
 # baseAddress
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: intfp  
 **Required**: Yes
 
@@ -25,8 +25,6 @@ var baseAddress: UnsafeMutableRawPointer { get }
 Use this property if you process the image using a CPU-based routine that cannot make use of higher-level constructs for sharing memory.
 
 > **Note**: If your image processing routine is GPU-based, use the the [`pixelBuffer`](ciimageprocessoroutput/1639647-pixelbuffer.md), [`surface`](ciimageprocessoroutput/1639627-surface.md), or [`metalTexture`](ciimageprocessoroutput/1639631-metaltexture.md) property instead.
-
-If your image processing routine is GPU-based, use the the [`pixelBuffer`](ciimageprocessoroutput/1639647-pixelbuffer.md), [`surface`](ciimageprocessoroutput/1639627-surface.md), or [`metalTexture`](ciimageprocessoroutput/1639631-metaltexture.md) property instead.
 
 ## See Also
 

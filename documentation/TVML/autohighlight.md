@@ -1,6 +1,6 @@
 # autoHighlight
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Specifies that the element should initially be in focus.
 
@@ -26,8 +26,6 @@ Use the `autoHighlight` attribute to denote the element that is initially in foc
 
 > **Note**: The `shelf` and `grid` elements can only use the `autoHighlight` attribute when contained within a `productBundleTemplate`, `productTemplate`, or `stackTemplate`.
 
-The `shelf` and `grid` elements can only use the `autoHighlight` attribute when contained within a `productBundleTemplate`, `productTemplate`, or `stackTemplate`.
-
 ## See Also
 
 - [binding](binding.md)
@@ -42,4 +40,4 @@ The `shelf` and `grid` elements can only use the `autoHighlight` attribute when 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/autohighlight)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/autohighlight)*

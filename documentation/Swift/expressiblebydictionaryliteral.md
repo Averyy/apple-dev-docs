@@ -45,8 +45,6 @@ print(frequencies.count)
 
 > **Note**:  A dictionary literal is  the same as an instance of `Dictionary`. You can’t initialize a type that conforms to `ExpressibleByDictionaryLiteral` simply by assigning an instance of `Dictionary`, `KeyValuePairs`, or similar.
 
- A dictionary literal is  the same as an instance of `Dictionary`. You can’t initialize a type that conforms to `ExpressibleByDictionaryLiteral` simply by assigning an instance of `Dictionary`, `KeyValuePairs`, or similar.
-
 ### Conforming to the Expressiblebydictionaryliteral Protocol
 
 To add the capability to be initialized with a dictionary literal to your own custom types, declare an `init(dictionaryLiteral:)` initializer. The following example shows the dictionary literal initializer for a hypothetical `CountedSet` type, which uses setlike semantics while keeping track of the count for duplicate elements:
@@ -99,4 +97,4 @@ extension CountedSet: ExpressibleByDictionaryLiteral {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/expressiblebydictionaryliteral)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/expressiblebydictionaryliteral)*

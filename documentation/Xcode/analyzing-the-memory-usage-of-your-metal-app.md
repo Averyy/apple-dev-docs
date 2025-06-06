@@ -36,8 +36,6 @@ The Allocations track provides a detailed view of memory allocations, their size
 
 > **Note**: The Allocations track doesn’t include Metal resources with private storage mode — only managed and shared storage modes.
 
-The Allocations track doesn’t include Metal resources with private storage mode — only managed and shared storage modes.
-
 ![A screenshot of Instruments with the Allocations track selected. The bottom details pane displays the statistics from the Allocations track.](https://docs-assets.developer.apple.com/published/a7ef7ee3f0561d17f3d618a01e1d21b1/gputools-instruments-game-memory-allocations%402x.png)
 
 The Statistics view in the bottom detail area displays the categories of memory allocations. At the top of the Category column, there are three umbrella categories that summarize all allocations:
@@ -72,8 +70,6 @@ To conserve the amount of physical memory that your app uses, the system may com
 
 > ❗ **Important**: The system charges your app for any compressed/swapped memory based on its orginal size before compression.
 
-The system charges your app for any compressed/swapped memory based on its orginal size before compression.
-
 ![A screenshot of Instruments with the VM Tracker track selected. The bottom details pane displays a summary of the VM regions.](https://docs-assets.developer.apple.com/published/8b246e2860af1db08f3942abbdf92ad3/gputools-instruments-game-memory-vm-tracker%402x.png)
 
 The center timeline area graphs the following metrics:
@@ -90,4 +86,4 @@ The corresponding columns are also available in the Summary view of the bottom d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-the-memory-usage-of-your-metal-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-the-memory-usage-of-your-metal-app)*

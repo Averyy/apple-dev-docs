@@ -1,6 +1,6 @@
 # Hosting Audio Unit Extensions Using the AUv2 API
 
-**Framework**: Audio Toolbox
+**Framework**: Audiotoolbox
 
 Update your existing Audio Unit v2 host app to load and use Audio Unit extensions.
 
@@ -13,8 +13,6 @@ With only minor modifications to your existing AUv2 host app, you’re able to l
 ![A component diagram that shows the bridging support provided by the framework.](https://docs-assets.developer.apple.com/published/905c919679c026e3a9b37e5404a6f49c/media-3526605%402x.png)
 
 > **Note**:  AUv2 is in maintenance mode, and it’s recommended that you adopt the AUv3 API for new development.
-
- AUv2 is in maintenance mode, and it’s recommended that you adopt the AUv3 API for new development.
 
 ##### Asynchronously Instantiate Audio Units
 
@@ -50,8 +48,6 @@ if (requiresAsync) {
 If the component requires asynchronous instantiation, call the [`AudioComponentInstantiate(_:_:_:)`](audiocomponentinstantiate(_:_:_:).md) function, and pass it the component you want to instantiate, the desired instantiation option (in or out of process), and a completion block that’s called when the instantiation completes. This callback block provides the audio unit instance or any errors that might have occurred while instantiating the component.
 
 > ❗ **Important**:  Don’t block the main thread while waiting for the asynchronous instantiation to complete.
-
- Don’t block the main thread while waiting for the asynchronous instantiation to complete.
 
 ##### Present the Audio Units User Interface
 
@@ -94,4 +90,4 @@ if (isAUv3) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/hosting-audio-unit-extensions-using-the-auv2-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox/hosting-audio-unit-extensions-using-the-auv2-api)*

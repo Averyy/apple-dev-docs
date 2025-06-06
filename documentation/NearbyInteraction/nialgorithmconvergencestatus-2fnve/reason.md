@@ -1,6 +1,6 @@
 # NIAlgorithmConvergenceStatus.Reason
 
-**Framework**: Nearby Interaction  
+**Framework**: Nearbyinteraction  
 **Kind**: struct
 
 The possible reasons for the Camera Assistance status.
@@ -25,8 +25,6 @@ When the app enables Camera Assistance by setting [`isCameraAssistanceEnabled`](
 At runtime, the app needs to check the status in the `convergence` object provided by [`session(_:didUpdateAlgorithmConvergence:for:)`](nisessiondelegate/session(_:didupdatealgorithmconvergence:for:).md). If the status indicates that Camera Assistance requires user intervention, the app needs to coach the user, such as by presenting text that explains what to do for each circumstance that [`reasons`](nialgorithmconvergence/reasons.md) can describe.
 
 > **Note**: The Objective-C version of this class is [`NIAlgorithmConvergenceStatusReason`](nialgorithmconvergencestatusreason.md).
-
-The Objective-C version of this class is [`NIAlgorithmConvergenceStatusReason`](nialgorithmconvergencestatusreason.md).
 
 ## Topics
 

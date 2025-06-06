@@ -1,6 +1,6 @@
 # Distributing your App Clip
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Archive the full app for your App Clip, upload it to App Store Connect, and distribute it to testers or publish it on the App Store.
 
@@ -9,8 +9,6 @@ Archive the full app for your App Clip, upload it to App Store Connect, and dist
 When you submit an App Clip for distribution to testers with [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/) or for publishing in the App Store, you don’t submit the App Clip on its own; you export and submit the app bundle of the full app that includes the App Clip.
 
 > **Note**:  You may also choose Ad Hoc or Development distribution. Note that you need to export the App Clip and the full app separately in these cases. Enterprise distribution isn’t available to App Clips.
-
- You may also choose Ad Hoc or Development distribution. Note that you need to export the App Clip and the full app separately in these cases. Enterprise distribution isn’t available to App Clips.
 
 ##### Archive Your App and Upload It to App Store Connect
 
@@ -27,4 +25,4 @@ For additional information, see [`Testing the launch experience of your App Clip
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/distributing-your-app-clip)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/distributing-your-app-clip)*

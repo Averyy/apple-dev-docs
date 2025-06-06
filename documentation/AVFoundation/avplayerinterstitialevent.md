@@ -1,6 +1,6 @@
 # AVPlayerInterstitialEvent
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: class
 
 An object that provides instructions for how a player presents interstitial content.
@@ -27,8 +27,6 @@ An interstitial event defines a [`date`](avplayerinterstitialevent/date.md) or [
 Use [`AVPlayerInterstitialEventMonitor`](avplayerinterstitialeventmonitor.md) to observe the scheduling and progress of interstitial events. If your app requires specifying the schedule of interstitial events, use [`AVPlayerInterstitialEventController`](avplayerinterstitialeventcontroller.md) instead.
 
 > **Note**:  [`AVPlayerInterstitialEvent`](avplayerinterstitialevent.md) was previously an immutable type. Starting in iOS 16, tvOS 16, macOS 13, and watchOS 9, it’s now a mutable type, which allows you to create and customize an event before setting it on an [`AVPlayerInterstitialEventController`](avplayerinterstitialeventcontroller.md).
-
- [`AVPlayerInterstitialEvent`](avplayerinterstitialevent.md) was previously an immutable type. Starting in iOS 16, tvOS 16, macOS 13, and watchOS 9, it’s now a mutable type, which allows you to create and customize an event before setting it on an [`AVPlayerInterstitialEventController`](avplayerinterstitialeventcontroller.md).
 
 ## Topics
 
@@ -119,4 +117,4 @@ Use [`AVPlayerInterstitialEventMonitor`](avplayerinterstitialeventmonitor.md) to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avplayerinterstitialevent)*

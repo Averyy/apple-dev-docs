@@ -31,8 +31,6 @@ Frameworks that support iOS and macOS use this property to determine if the proc
 
 > **Note**:  To distinguish between an iOS app running on Apple silicon and a Mac app built with Mac Catalyst, use the [`isiOSAppOnMac`](processinfo/isiosapponmac.md) property.
 
- To distinguish between an iOS app running on Apple silicon and a Mac app built with Mac Catalyst, use the [`isiOSAppOnMac`](processinfo/isiosapponmac.md) property.
-
 ## See Also
 
 - [var arguments: [String]](processinfo/arguments.md)

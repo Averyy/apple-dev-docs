@@ -26,8 +26,6 @@ To help protect people’s privacy, visionOS limits app access to cameras and ot
 
 > **Note**: In visionOS, ARKit is only available in an immersive space. See [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
 
-In visionOS, ARKit is only available in an immersive space. See [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
-
 ##### Detect Decode and Highlight Barcodes
 
 Your visionOS app can detect barcodes in a person’s surroundings and highlight the barcode the person is looking for. The following code example detects and highlights every Code 128 or QR Code symbology in a person’s surroundings. The code example includes three steps: detecting the barcode, printing its decoded content, and creating the highlight animation.
@@ -86,8 +84,6 @@ ARKit delivers an asynchronous stream of updates as it detects changes in the sc
 
 > **Note**: You define a barcode’s extents in the x-z plane. They have a width (x-axis), depth (z-axis), and zero height (y-axis).
 
-You define a barcode’s extents in the x-z plane. They have a width (x-axis), depth (z-axis), and zero height (y-axis).
-
 ```swift
 // Define this function in `ImmersiveView`.
 func playAnimation(for anchor: BarcodeAnchor) {
@@ -135,8 +131,6 @@ func playAnimation(for anchor: BarcodeAnchor) {
 
 > **Note**: Because [`BarcodeDetectionProvider`](https://developer.apple.com/documentation/ARKit/BarcodeDetectionProvider) has a low refresh rate, use its transform to initialize the position of content relative to a stationary barcode.
 
-Because [`BarcodeDetectionProvider`](https://developer.apple.com/documentation/ARKit/BarcodeDetectionProvider) has a low refresh rate, use its transform to initialize the position of content relative to a stationary barcode.
-
 ##### Determine the Ideal Barcode Width
 
 The sample code project can’t read barcodes that are too small to appear clearly in a person’s field of view. Larger barcodes generally improve readability, providing that they remain within the field of view. The minimum barcode size depends on its [`BarcodeAnchor.Symbology`](https://developer.apple.com/documentation/ARKit/BarcodeAnchor/Symbology-swift.enum). Refer to the table below to determine the minimum width required for a barcode to be readable under nominal lighting conditions (100 lux) at an arm’s length distance (~40 cm).
@@ -180,4 +174,4 @@ The sample code project can’t read barcodes that are too small to appear clear
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/locating-and-decoding-barcodes-in-3d-space)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/locating-and-decoding-barcodes-in-3d-space)*

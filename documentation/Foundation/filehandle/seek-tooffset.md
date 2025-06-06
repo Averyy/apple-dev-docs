@@ -24,8 +24,6 @@ func seek(toOffset offset: UInt64) throws
 
 > **Note**: Throws an error if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if any other error occurs while seeking.
 
-Throws an error if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if any other error occurs while seeking.
-
 ## Parameters
 
 - `offset`: The offset to seek to.

@@ -1,6 +1,6 @@
 # Synchronizing data during a SharePlay activity
 
-**Framework**: Group Activities
+**Framework**: Groupactivities
 
 Send custom messages and data between devices to synchronize content for your activity, and incorporate messages your app receives from other participants.
 
@@ -11,8 +11,6 @@ During a typical activity, you want the content one participant sees on their de
 When an activity-related session is active, share data among participants using the objects of the Group Activities framework. You can share data with all participants or a subset of participants. For example, a quiz game might share different information with contestants and the people asking the questions. For time-sensitive messages, send small amounts of data using a [`GroupSessionMessenger`](groupsessionmessenger.md) object. When the amount of data is larger and the arrival time is less important, share that data using a [`GroupSessionJournal`](groupsessionjournal.md) object.
 
 > **Note**: The [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) framework supports the synchronization of movie playback without custom messages. For more information, see [`Supporting Coordinated Media Playback`](https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback).
-
-The [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) framework supports the synchronization of movie playback without custom messages. For more information, see [`Supporting Coordinated Media Playback`](https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback).
 
 ##### Define the Messages to Send
 
@@ -84,8 +82,6 @@ Attachments are ideal when you need to send more than just a few kilobytes of in
 
 > **Note**: Don’t use a [`GroupSessionJournal`](groupsessionjournal.md) object to store files larger than 100 megabytes, or when you need to protect or validate content before someone downloads it. Instead, store those files on your company’s server and let participants download them from there.
 
-Don’t use a [`GroupSessionJournal`](groupsessionjournal.md) object to store files larger than 100 megabytes, or when you need to protect or validate content before someone downloads it. Instead, store those files on your company’s server and let participants download them from there.
-
 The [`GroupSessionJournal`](groupsessionjournal.md) object delivers attachments to your app using an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) type. To receive attachments, configure a task and use a `for..in` loop and wait on the attachments property of your journal object, as shown in the following example. When attachments are available for your device, the system wakes up your task and delivers an array of [`GroupSessionJournal.Attachment`](groupsessionjournal/attachment.md) structures for you to process.
 
 ```swift
@@ -123,4 +119,4 @@ For more information about storing files and data attachments, see [`GroupSessio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/synchronizing-data-during-a-shareplay-activity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GroupActivities/synchronizing-data-during-a-shareplay-activity)*

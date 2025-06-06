@@ -34,8 +34,6 @@ You can subscript a collection with any valid index other than the collection’
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

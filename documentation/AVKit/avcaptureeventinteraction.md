@@ -1,6 +1,6 @@
 # AVCaptureEventInteraction
 
-**Framework**: AVKit  
+**Framework**: Avkit  
 **Kind**: class
 
 An object that registers handlers to respond to capture events from system hardware buttons.
@@ -22,8 +22,6 @@ class AVCaptureEventInteraction
 The system Camera app allows people to perform capture functions by pressing hardware buttons on their iOS device. UIKit apps can add similar functionality by using this type to register handlers that respond to interactions from device hardware.
 
 > **Note**:  In SwiftUI, respond to capture events from hardware buttons using [`onCameraCaptureEvent(isEnabled:action:)`](https://developer.apple.com/documentation/SwiftUI/View/onCameraCaptureEvent(isEnabled:action:)) and [`onCameraCaptureEvent(isEnabled:primaryAction:secondaryAction:)`](https://developer.apple.com/documentation/SwiftUI/View/onCameraCaptureEvent(isEnabled:primaryAction:secondaryAction:)) instead.
-
- In SwiftUI, respond to capture events from hardware buttons using [`onCameraCaptureEvent(isEnabled:action:)`](https://developer.apple.com/documentation/SwiftUI/View/onCameraCaptureEvent(isEnabled:action:)) and [`onCameraCaptureEvent(isEnabled:primaryAction:secondaryAction:)`](https://developer.apple.com/documentation/SwiftUI/View/onCameraCaptureEvent(isEnabled:primaryAction:secondaryAction:)) instead.
 
 The following example shows how to add a handler that captures a photo when a user presses a hardware button on their device.
 
@@ -60,10 +58,6 @@ class CameraViewController: UIViewController {
 The event handler queries the capture event to determine its phase, and when the interaction ends, captures a photo.
 
 > ❗ **Important**:  You can only use this API for capture use cases. The system sends capture events only to apps that actively use the camera. Backgrounded capture apps, and apps not performing capture, don’t receive events. Adopting this API overrides default hardware button behavior, so apps must always respond appropriately to any events received. Failing to handle events results in a nonfunctional button that provides a poor user experience. If your app is temporarily unable to handle events, disable the interaction by setting its [`isEnabled`](avcaptureeventinteraction/isenabled.md) property to [`false`](https://developer.apple.com/documentation/swift/false), which restores the system button behavior.
-
- You can only use this API for capture use cases. The system sends capture events only to apps that actively use the camera. Backgrounded capture apps, and apps not performing capture, don’t receive events.
-
-Adopting this API overrides default hardware button behavior, so apps must always respond appropriately to any events received. Failing to handle events results in a nonfunctional button that provides a poor user experience. If your app is temporarily unable to handle events, disable the interaction by setting its [`isEnabled`](avcaptureeventinteraction/isenabled.md) property to [`false`](https://developer.apple.com/documentation/swift/false), which restores the system button behavior.
 
 ## Topics
 
@@ -104,4 +98,4 @@ Adopting this API overrides default hardware button behavior, so apps must alway
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avcaptureeventinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avcaptureeventinteraction)*

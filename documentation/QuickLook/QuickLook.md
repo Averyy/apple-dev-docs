@@ -1,6 +1,6 @@
 # Quick Look
 
-**Framework**: Quick Look  
+**Framework**: Quicklook  
 **Kind**: module
 
 Create previews of files to use inside your app, or perform simple edits on previews.
@@ -29,8 +29,6 @@ On iOS devices, the Quick Look framework provides functionality for performing s
 You can provide previews for your own data types by either rendering a view with your own view controller or by returning a supported preview format, such as PDF or HTML.
 
 > **Note**:  The list of supported common file types may change between operating system releases.
-
- The list of supported common file types may change between operating system releases.
 
 ##### Providing Quick Look Previews for Your Data Types
 

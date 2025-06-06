@@ -1,6 +1,6 @@
 # Supporting Dark Mode in your interface
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Update colors, images, and behaviors so that your app adapts automatically when Dark Mode is active.
 
@@ -42,8 +42,6 @@ let aColor = UIColor(named: "customControlColor")
 When you create a color object from a color asset, you do not have to recreate that object when the current appearance changes. Each time you set the fill or stroke color for drawing, the color object loads the color variant that matches the current environment settings. The same is true for semantic colors such as [`labelColor`](https://developer.apple.com/documentation/AppKit/NSColor/labelColor), which adapt automatically to the current environment. By contrast, color objects you create using fixed component values do not adapt; you must create a new color object instead.
 
 > **Note**:  For the user’s content, always preserve colors that the user explicitly chooses. For example, a painting app should not try to change colors that the user applies to their canvas. Use adaptable colors primarily in the views and controls for your app’s chrome.
-
- For the user’s content, always preserve colors that the user explicitly chooses. For example, a painting app should not try to change colors that the user applies to their canvas. Use adaptable colors primarily in the views and controls for your app’s chrome.
 
 ##### Create Images for All Appearances
 
@@ -100,8 +98,6 @@ Use visual-effect views in your interface as container views, and add subviews t
 
 > ❗ **Important**:  Do not use deprecated materials, such as [`NSVisualEffectView.Material.light`](https://developer.apple.com/documentation/AppKit/NSVisualEffectView/Material-swift.enum/light), in macOS 10.14 and later because those materials do not adapt to Dark Mode. Instead, choose newer materials that adapt correctly to the environment.
 
- Do not use deprecated materials, such as [`NSVisualEffectView.Material.light`](https://developer.apple.com/documentation/AppKit/NSVisualEffectView/Material-swift.enum/light), in macOS 10.14 and later because those materials do not adapt to Dark Mode. Instead, choose newer materials that adapt correctly to the environment.
-
 ##### Opt Out Only As Needed
 
 Make every effort to adopt both light and dark appearances in your apps. If supporting one appearance makes no sense for all or part of your app, you can opt out of appearance changes in the appropriate windows or views. For example, you might always use a light appearance for your app’s printing views.
@@ -136,4 +132,4 @@ When the user toggles between light and dark interfaces, the system asks your ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-dark-mode-in-your-interface)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-dark-mode-in-your-interface)*

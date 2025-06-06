@@ -28,8 +28,6 @@ func contains(_ value: Bound) -> Bool
 
 > **Note**: O(log ), where  is the number of ranges in the range set.
 
-O(log ), where  is the number of ranges in the range set.
-
 ## Parameters
 
 - `value`: The value to look for in the range set.

@@ -1,6 +1,6 @@
 # Backyard Birds: Building an app with SwiftData and widgets
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 
@@ -20,8 +20,6 @@ The sample implements its data model using [`SwiftData`](https://developer.apple
 You can access the source code for this sample on [`GitHub`](https://developer.apple.comhttps://github.com/apple/sample-backyard-birds).
 
 > **Note**: This sample code project is associated with WWDC23 session 102: [`State of the Union`](https://developer.apple.comhttps://developer.apple.com/wwdc23/102/).
-
-This sample code project is associated with WWDC23 session 102: [`State of the Union`](https://developer.apple.comhttps://developer.apple.com/wwdc23/102/).
 
 ##### Configure the Sample Code Project
 
@@ -157,4 +155,4 @@ SubscriptionStoreView(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/backyard-birds-sample)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/backyard-birds-sample)*

@@ -24,8 +24,6 @@ Use the [`NSCloudSharingServiceDelegate`](https://developer.apple.com/documentat
 
 > **Note**:  To create a new share, use the [`registerCloudKitShare(preparationHandler:)`](nsitemprovider/registercloudkitshare(preparationhandler:).md) method instead.
 
- To create a new share, use the [`registerCloudKitShare(preparationHandler:)`](nsitemprovider/registercloudkitshare(preparationhandler:).md) method instead.
-
 The following example shows how to create an item provider with an existing share. It then invokes the cloud-sharing service with the provider and presents the share’s configuration to the user.
 
 ```swift

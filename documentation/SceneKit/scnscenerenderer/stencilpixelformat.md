@@ -1,6 +1,6 @@
 # stencilPixelFormat
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: property  
 **Required**: Yes
 
@@ -25,8 +25,6 @@ var stencilPixelFormat: MTLPixelFormat { get }
 Use this property, along with the [`depthPixelFormat`](scnscenerenderer/depthpixelformat.md) and [`colorPixelFormat`](scnscenerenderer/colorpixelformat.md) properties, if you perform custom drawing with Metal (see the [`SCNSceneRendererDelegate`](scnscenerendererdelegate.md) and [`SCNNodeRendererDelegate`](scnnoderendererdelegate.md) classes) and need to create a new [`MTLRenderPipelineState`](https://developer.apple.com/documentation/Metal/MTLRenderPipelineState) object to change the GPU state as part of your rendering.
 
 > **Note**:  This property is valid only for scene renderers whose [`renderingAPI`](scnscenerenderer/renderingapi.md) value is [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md). You create a SceneKit view that renders using Metal with the [`preferredRenderingAPI`](scnview/option/preferredrenderingapi.md) initialization option or in Interface Builder, or an [`SCNRenderer`](scnrenderer.md) that uses Metal with the [`init(device:options:)`](scnrenderer/init(device:options:).md) method. For OpenGL-based scene renderers, this property’s value is always `nil`.
-
- This property is valid only for scene renderers whose [`renderingAPI`](scnscenerenderer/renderingapi.md) value is [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md). You create a SceneKit view that renders using Metal with the [`preferredRenderingAPI`](scnview/option/preferredrenderingapi.md) initialization option or in Interface Builder, or an [`SCNRenderer`](scnrenderer.md) that uses Metal with the [`init(device:options:)`](scnrenderer/init(device:options:).md) method. For OpenGL-based scene renderers, this property’s value is always `nil`.
 
 ## See Also
 

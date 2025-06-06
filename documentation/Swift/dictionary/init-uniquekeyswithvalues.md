@@ -41,8 +41,6 @@ print(wordToValue)
 
 > **Note**: The sequence must not have duplicate keys.
 
-The sequence must not have duplicate keys.
-
 ## Parameters
 
 - `keysAndValues`: A sequence of key-value pairs to use for   the new dictionary. Every key in   must be unique.

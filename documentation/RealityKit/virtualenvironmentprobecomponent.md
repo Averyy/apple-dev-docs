@@ -1,6 +1,6 @@
 # VirtualEnvironmentProbeComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that provides environment lighting for entities you place within the same virtual world.
@@ -31,8 +31,6 @@ environment.components.set(probeComponent)
 ```
 
 > **Note**: In visionOS, ARKit automatically provides the environment lighting for the shared space.
-
-In visionOS, ARKit automatically provides the environment lighting for the shared space.
 
 ## Topics
 
@@ -70,4 +68,4 @@ In visionOS, ARKit automatically provides the environment lighting for the share
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/virtualenvironmentprobecomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/virtualenvironmentprobecomponent)*

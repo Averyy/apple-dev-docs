@@ -30,19 +30,9 @@ func requestAuthorization(options: UNAuthorizationOptions = []) async throws -> 
 func requestAuthorization(options: UNAuthorizationOptions = []) async throws -> Bool
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func requestAuthorization(options: UNAuthorizationOptions = []) async throws -> Bool
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 If your app’s local or remote notifications involve user interactions, you must request authorization for the system to perform those interactions on your app’s behalf. Interactions include displaying an alert, playing a sound, or badging the app’s icon.
 
 > **Note**:  Always call this method before scheduling any local notifications and before registering with the Apple Push Notification service. Do this in a context that helps people understand why your app needs authorization, as described in [`Asking permission to use notifications`](asking-permission-to-use-notifications.md).
-
- Always call this method before scheduling any local notifications and before registering with the Apple Push Notification service. Do this in a context that helps people understand why your app needs authorization, as described in [`Asking permission to use notifications`](asking-permission-to-use-notifications.md).
 
 The first time your app calls the method, the system prompts the person to authorize the requested interactions. The person may grant or deny authorization, and the system stores the person’s response. Subsequent calls to this method don’t prompt the person again. After determining the authorization status, the user notification center object executes the block in the `completionHandler` parameter. Use that block to make any adjustments to your app’s behavior. For example, if the person denied authorization, you might notify a remote notification server not to send notifications to the user’s device.
 

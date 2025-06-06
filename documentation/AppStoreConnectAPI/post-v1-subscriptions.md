@@ -1,6 +1,6 @@
 # Create an Auto-Renewable Subscription
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Create an auto-renewable subscription for your app.
@@ -15,8 +15,6 @@ Create an auto-renewable subscription for your app.
 #### Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
 ## See Also
 
@@ -54,4 +52,4 @@ Create an auto-renewable subscription for your app.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-subscriptions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-subscriptions)*

@@ -38,8 +38,6 @@ print(numbers.suffix(10))
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is equal to `maxLength`.
 
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is equal to `maxLength`.
-
 ## Parameters
 
 - `maxLength`: The maximum number of elements to return.    must be greater than or equal to zero.

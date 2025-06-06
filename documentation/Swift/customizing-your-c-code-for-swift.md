@@ -48,9 +48,7 @@ extension Color {
 
 > **Note**: You can’t reorder or change the number of arguments for type members imported using the `CF_SWIFT_NAME` macro.
 
-You can’t reorder or change the number of arguments for type members imported using the `CF_SWIFT_NAME` macro.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/customizing-your-c-code-for-swift)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/customizing-your-c-code-for-swift)*

@@ -1,6 +1,6 @@
 # metadataObjectTypes
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 An array of strings identifying the types of metadata objects  to process.
@@ -27,8 +27,6 @@ When assigning a new array to this property, each of the type strings must be pr
 The default is an empty [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object, and as a result, no metadata objects are forwarded to the delegate’s [`metadataOutput(_:didOutput:from:)`](avcapturemetadataoutputobjectsdelegate/metadataoutput(_:didoutput:from:).md) method. The same result can be achieved by setting the property to `nil`. This default behavior maximizes both performance and battery life.
 
 > **Note**:  Applications linked prior to iOS 7.0 will pass [`AVMetadataFaceObject`](avmetadatafaceobject.md) objects to the delegate by default, if supported by the device.
-
- Applications linked prior to iOS 7.0 will pass [`AVMetadataFaceObject`](avmetadatafaceobject.md) objects to the delegate by default, if supported by the device.
 
 ## See Also
 

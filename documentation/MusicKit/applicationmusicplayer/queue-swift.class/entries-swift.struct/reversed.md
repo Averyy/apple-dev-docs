@@ -1,6 +1,6 @@
 # reversed()
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns a view presenting the elements of the collection in reverse order.
@@ -40,8 +40,6 @@ print(reversedWord)
 ```
 
 > **Note**: O(1)
-
-O(1)
 
 
 ---

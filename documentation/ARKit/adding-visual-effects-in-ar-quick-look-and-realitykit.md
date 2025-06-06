@@ -1,6 +1,6 @@
 # Adding Visual Effects in AR Quick Look and RealityKit
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Balance the appearance and performance of your AR experiences with modeling strategies.
 
@@ -42,8 +42,6 @@ For dielectrics, the specular component enables you to control the reflectivenes
 
 > **Note**:  Environment lighting in AR Quick Look supports multiple models in iOS 13. To ensure your virtual content displays with the most realistic reflections in your app, check the iOS version at runtime and load multiple models only in iOS 13.
 
- Environment lighting in AR Quick Look supports multiple models in iOS 13. To ensure your virtual content displays with the most realistic reflections in your app, check the iOS version at runtime and load multiple models only in iOS 13.
-
 ##### Optimize Model Geometry and Transparency
 
 While utilizing features to present virtual content effectively, take steps to keep the AR experience responsive. Because each model mesh results in a draw call, for best results, limit the number of meshes in a USDZ file to around 50. To reduce draw calls while maintaining the same amount of geometry, merge objects that share a material. However, be aware that merging may not afford performance gains in situations where the result prevents the renderer from culling.
@@ -78,4 +76,4 @@ When developing your model for optimal performance, begin with a conservative co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/adding-visual-effects-in-ar-quick-look-and-realitykit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/adding-visual-effects-in-ar-quick-look-and-realitykit)*

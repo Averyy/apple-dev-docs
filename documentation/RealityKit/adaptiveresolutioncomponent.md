@@ -1,6 +1,6 @@
 # AdaptiveResolutionComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that provides the suggested pixels per meter necessary to render an object.
@@ -23,8 +23,6 @@ struct AdaptiveResolutionComponent
 Use the [`pixelsPerMeter`](adaptiveresolutioncomponent/pixelspermeter.md) property to proactively update your scene to disable expensive systems and high-resolution content that is far away.
 
 > **Note**: `pixelsPerMeter` is binned to protect user privacy.
-
-`pixelsPerMeter` is binned to protect user privacy.
 
 ## Topics
 
@@ -56,4 +54,4 @@ Use the [`pixelsPerMeter`](adaptiveresolutioncomponent/pixelspermeter.md) proper
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/adaptiveresolutioncomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/adaptiveresolutioncomponent)*

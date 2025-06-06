@@ -1,6 +1,6 @@
 # inspectorColumnWidth(_:)
 
-**Framework**: FinanceKitUI  
+**Framework**: Financekitui  
 **Kind**: method
 
 Sets a fixed, preferred width for the inspector containing this view when presented as a trailing column.
@@ -34,8 +34,6 @@ MyEditorView()
 ```
 
 > **Note**: A fixed width does not prevent the user collapsing the inspector on macOS. See `View/interactiveDismissDisabled(_:)`.
-
-A fixed width does not prevent the user collapsing the inspector on macOS. See `View/interactiveDismissDisabled(_:)`.
 
 ## Parameters
 

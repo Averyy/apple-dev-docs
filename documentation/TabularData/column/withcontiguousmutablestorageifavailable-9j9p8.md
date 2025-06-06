@@ -1,6 +1,6 @@
 # withContiguousMutableStorageIfAvailable(_:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Call `body(buffer)`, where `buffer` provides access to the non-optional contiguous mutable storage of the entire column. If the column contains missing values, `body` is not called and `nil` is returned.
@@ -29,8 +29,6 @@ The value returned by `body`, or `nil`.
 The optimizer can often eliminate bounds- and uniqueness-checking within an algorithm. When that fails, however, invoking the same algorithm on `body`’s argument may let you trade safety for speed.
 
 > **Note**: `buffer` must not be replaced by `body`.
-
-`buffer` must not be replaced by `body`.
 
 ## Parameters
 

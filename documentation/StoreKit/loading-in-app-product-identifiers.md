@@ -1,6 +1,6 @@
 # Loading in-app product identifiers
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Load the unique identifiers for your in-app products to retrieve product information from the App Store.
 
@@ -15,8 +15,6 @@ To begin the purchase process, your app needs the product identifiers so it can 
 There are several strategies for storing a list of product identifiers in your app, such as embedding them in the app bundle or storing them on your server. You can then retrieve the product identifiers by reading them locally in the app bundle or fetching them from your server. Choose the method that best serves your app’s needs.
 
 > **Note**:  There’s no runtime mechanism to fetch a list of the configured products in App Store Connect for a particular app. You’re responsible for managing your app’s list of products and providing that information to your app.
-
- There’s no runtime mechanism to fetch a list of the configured products in App Store Connect for a particular app. You’re responsible for managing your app’s list of products and providing that information to your app.
 
 ##### Retrieve Product Ids From the App Bundle
 
@@ -83,4 +81,4 @@ After loading all in-app product identifiers, pass them into the product informa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/loading-in-app-product-identifiers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/loading-in-app-product-identifiers)*

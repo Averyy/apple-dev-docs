@@ -1,6 +1,6 @@
 # focusRingMaskBounds
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The focus ring mask bounds, specified in the view’s coordinate space.
@@ -21,8 +21,6 @@ The rectangle in this property is specified relative to the view’s interior (b
 
 > **Note**:  The information provided by this property enables Accessibility to identify selected subelements for zoom tracking, so it is important that this method provide a reasonably tight bounding box and that the [`noteFocusRingMaskChanged()`](nsview/notefocusringmaskchanged().md) method is called as described.
 
- The information provided by this property enables Accessibility to identify selected subelements for zoom tracking, so it is important that this method provide a reasonably tight bounding box and that the [`noteFocusRingMaskChanged()`](nsview/notefocusringmaskchanged().md) method is called as described.
-
 ## See Also
 
 - [var focusRingType: NSFocusRingType](nsview/focusringtype.md)
@@ -39,4 +37,4 @@ The rectangle in this property is specified relative to the view’s interior (b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview/focusringmaskbounds)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview/focusringmaskbounds)*

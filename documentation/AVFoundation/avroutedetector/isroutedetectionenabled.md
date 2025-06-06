@@ -1,6 +1,6 @@
 # isRouteDetectionEnabled
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether route detection is in an enabled state.
@@ -24,8 +24,6 @@ var isRouteDetectionEnabled: Bool { get set }
 The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 > **Note**:  Enabling route detection significantly increases power consumption. Turn it off when you no longer need it.
-
- Enabling route detection significantly increases power consumption. Turn it off when you no longer need it.
 
 ## See Also
 

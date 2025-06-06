@@ -34,8 +34,6 @@ if let lastNumber = numbers.last {
 
 > **Note**: O(1)
 
-O(1)
-
 ## See Also
 
 - [subscript(Int) -> Element](array/subscript(_:)-25iat.md)
@@ -56,4 +54,4 @@ O(1)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/array/last)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/array/last)*

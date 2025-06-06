@@ -13,8 +13,6 @@ Use reports to understand how DNS and protocol handshakes impact connection esta
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`713: Advances in Networking, Part 2`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/713/).
 
-This sample code project is associated with WWDC 2019 session [`713: Advances in Networking, Part 2`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/713/).
-
 ## See Also
 
 - [func requestEstablishmentReport(queue: DispatchQueue, completion: (NWConnection.EstablishmentReport?) -> Void)](nwconnection/requestestablishmentreport(queue:completion:).md)
@@ -31,4 +29,4 @@ This sample code project is associated with WWDC 2019 session [`713: Advances in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/network/collecting-network-connection-metrics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Network/collecting-network-connection-metrics)*

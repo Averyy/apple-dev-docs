@@ -30,11 +30,7 @@ There are no restrictions on where you can call this method. Code inside a child
 
 > **Note**: `Task.isCancelled`
 
-`Task.isCancelled`
-
 > **Note**: `DiscardingTaskGroup.isCancelled`
-
-`DiscardingTaskGroup.isCancelled`
 
 
 ---

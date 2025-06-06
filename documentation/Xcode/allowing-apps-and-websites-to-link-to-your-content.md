@@ -28,8 +28,6 @@ With universal links, users open your app when they click links to your website 
 
 > **Note**: If your app uses one of the above methods to open a universal link to your website, the link won’t open in your app.
 
-If your app uses one of the above methods to open a universal link to your website, the link won’t open in your app.
-
 When a user browses your website in Safari and taps a universal link in the same domain, the system opens that link in Safari, respecting the user’s most likely intent to continue within the browser. If the user taps a universal link in a different domain, the system opens the link in your app.
 
 ##### Communicate with Other Apps
@@ -115,4 +113,4 @@ For more information on handling links within your app, see [`Supporting univers
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content)*

@@ -1,6 +1,6 @@
 # fetchPaymentCardReaderStore()
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Returns a store containing the read results the framework obtained using a Store and Forward session.
@@ -24,8 +24,6 @@ func fetchPaymentCardReaderStore() throws -> PaymentCardReaderStore
 #### Discussion
 
 > **Note**: [`PaymentCardReaderError`](paymentcardreadererror.md) if the method fails to retrieve the store.
-
-[`PaymentCardReaderError`](paymentcardreadererror.md) if the method fails to retrieve the store.
 
 
 ---

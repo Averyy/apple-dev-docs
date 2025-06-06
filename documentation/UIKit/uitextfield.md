@@ -1,6 +1,6 @@
 # UITextField
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that displays an editable text area in your interface.
@@ -51,8 +51,6 @@ For information about the methods of the text field’s delegate object, see [`U
 When a text field becomes first responder, the system automatically shows the keyboard and binds its input to the text field. A text field becomes the first responder automatically when the user taps it. You can also force a text field to become the first responder by calling its [`becomeFirstResponder()`](uiresponder/becomefirstresponder().md) method. You might force a text field to become first responder when you require the user to enter some information.
 
 > **Note**:  The appearance of the keyboard has the potential to obscure portions of your user interface. You should update your interface as needed to ensure that the text field being edited is visible. Use the keyboard notifications to detect the appearance and disappearance of the keyboard and to make necessary changes to your interface. For more information, see [`Respond to keyboard-related notifications`](uitextfield#Respond-to-keyboard-related-notifications.md).
-
- The appearance of the keyboard has the potential to obscure portions of your user interface. You should update your interface as needed to ensure that the text field being edited is visible. Use the keyboard notifications to detect the appearance and disappearance of the keyboard and to make necessary changes to your interface. For more information, see [`Respond to keyboard-related notifications`](uitextfield#Respond-to-keyboard-related-notifications.md).
 
 You can ask the system to dismiss the keyboard by calling the [`resignFirstResponder()`](uiresponder/resignfirstresponder().md) method of your text field. Usually, you dismiss the keyboard in response to specific interactions. For example, you might dismiss the keyboard when the user taps the keyboard’s return key. The system can also dismiss the keyboard in response to user actions. Specifically, the system dismisses the keyboard when the user taps a new control that doesn’t support keyboard input.
 
@@ -314,4 +312,4 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitextfield)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitextfield)*

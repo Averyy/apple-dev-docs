@@ -12,8 +12,6 @@ People need to know why your app wants to access data from ARKit. Add the follow
 
 > **Note**: World  — unlike world  — doesn’t require authorization. For more information, see [`Tracking specific points in world space`](tracking-points-in-world-space.md).
 
-World  — unlike world  — doesn’t require authorization. For more information, see [`Tracking specific points in world space`](tracking-points-in-world-space.md).
-
 ##### Choose Between Up Front or As Needed Authorization
 
 You can choose when someone sees an authorization request to use ARKit data. If you need precise control over when the request appears, call the [`requestAuthorization(for:)`](https://developer.apple.com/documentation/ARKit/ARKitSession/requestAuthorization(for:)) method on [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) to explicitly authorize access at the time you call it. Otherwise, people see an authorization request when you call the [`run(_:)`](https://developer.apple.com/documentation/ARKit/ARKitSession/run(_:)) method. This is an implicit authorization because the timing of the request depends entirely on when you start the session.
@@ -101,4 +99,4 @@ Providing alternatives is especially important if you’re using ARKit for user 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/setting-up-access-to-arkit-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data)*

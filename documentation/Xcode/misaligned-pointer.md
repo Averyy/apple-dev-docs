@@ -32,8 +32,6 @@ memcpy(buffer + 1, &value, sizeof(int32_t)); // Correct
 
 > **Note**: The compiler can often safely optimize calls to `memcpy`, even for unaligned arguments.
 
-The compiler can often safely optimize calls to `memcpy`, even for unaligned arguments.
-
 ##### Misaligned Structure Pointer Assignment in C
 
 In the following example, the `pointer` variable must have 8-byte alignment, but has only 1-byte alignment:
@@ -57,8 +55,6 @@ struct A { ... } __attribute__((packed));
 ```
 
 > ❗ **Important**: Packing a structure may adversely impact performance.
-
-Packing a structure may adversely impact performance.
 
 ## See Also
 
@@ -96,4 +92,4 @@ Packing a structure may adversely impact performance.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/misaligned-pointer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/misaligned-pointer)*

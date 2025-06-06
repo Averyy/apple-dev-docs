@@ -28,8 +28,6 @@ Grab a recent release of the [`Selenium`](https://developer.apple.comhttps://www
 
 > ❗ **Important**:  Don’t use the old SafariDriver implementation, which is no longer supported by the Selenium project. The Apple-developed driver is a replacement for the legacy SafariDriver formerly maintained by the Selenium project.
 
- Don’t use the old SafariDriver implementation, which is no longer supported by the Selenium project. The Apple-developed driver is a replacement for the legacy SafariDriver formerly maintained by the Selenium project.
-
 ##### Configure Safari to Enable Webdriver Support
 
 Safari’s WebDriver support for developers is turned off by default. How you enable it depends on your operating system.
@@ -45,8 +43,6 @@ Run `safaridriver --enable` once. (If you’re upgrading from a previous macOS r
 Once you’ve obtained a client library, you can write a WebDriver test and run it against Safari. The example below uses using Python WebDriver to test important functionality of the [`WebKit Feature Status`](https://developer.apple.comhttps://webkit.org/status/) page.
 
 > **Note**:  In the Python WebDriver library, each method call synchronously blocks processes until the operation completes. Other WebDriver libraries may provide an asynchronous API.
-
- In the Python WebDriver library, each method call synchronously blocks processes until the operation completes. Other WebDriver libraries may provide an asynchronous API.
 
 ```python
 #coding: utf-8
@@ -125,4 +121,4 @@ python test_webkit.py
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/webkit/testing-with-webdriver-in-safari)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/testing-with-webdriver-in-safari)*

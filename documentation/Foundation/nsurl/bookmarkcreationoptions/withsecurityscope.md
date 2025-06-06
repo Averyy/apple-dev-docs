@@ -20,8 +20,6 @@ For use in an app that adopts App Sandbox. For more information, see [`App Sandb
 
 > **Note**:  This flag can’t be used in conjunction with either [`minimalBookmark`](nsurl/bookmarkcreationoptions/minimalbookmark.md) or [`suitableForBookmarkFile`](nsurl/bookmarkcreationoptions/suitableforbookmarkfile.md).
 
- This flag can’t be used in conjunction with either [`minimalBookmark`](nsurl/bookmarkcreationoptions/minimalbookmark.md) or [`suitableForBookmarkFile`](nsurl/bookmarkcreationoptions/suitableforbookmarkfile.md).
-
 ## See Also
 
 - [static var minimalBookmark: NSURL.BookmarkCreationOptions](nsurl/bookmarkcreationoptions/minimalbookmark.md)

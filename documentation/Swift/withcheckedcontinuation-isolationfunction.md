@@ -37,15 +37,9 @@ The checked continuation offers detection of misuse, and dropping the last refer
 
 > **Note**: `withCheckedThrowingContinuation(function:_:)`
 
-`withCheckedThrowingContinuation(function:_:)`
-
 > **Note**: `withUnsafeContinuation(function:_:)`
 
-`withUnsafeContinuation(function:_:)`
-
 > **Note**: `withUnsafeThrowingContinuation(function:_:)`
-
-`withUnsafeThrowingContinuation(function:_:)`
 
 ## Parameters
 

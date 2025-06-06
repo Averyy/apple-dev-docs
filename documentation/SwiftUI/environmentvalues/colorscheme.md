@@ -1,6 +1,6 @@
 # colorScheme
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 The color scheme of this environment.
@@ -38,8 +38,6 @@ When adjusting your app’s user interface to match the color scheme, consider a
 
 > **Note**: If you only need to provide different colors or images for different color scheme and contrast settings, do that in your app’s Asset Catalog. See [`Asset management`](https://developer.apple.com/documentation/Xcode/asset-management).
 
-If you only need to provide different colors or images for different color scheme and contrast settings, do that in your app’s Asset Catalog. See [`Asset management`](https://developer.apple.com/documentation/Xcode/asset-management).
-
 ## See Also
 
 - [func preferredColorScheme(ColorScheme?) -> some View](view/preferredcolorscheme(_:).md)
@@ -50,4 +48,4 @@ If you only need to provide different colors or images for different color schem
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentvalues/colorscheme)*

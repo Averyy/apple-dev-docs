@@ -1,6 +1,6 @@
 # CollisionComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that gives an entity the ability to collide with other entities that also have collision components.
@@ -35,8 +35,6 @@ Turn an entity into a  by adding a  [`PhysicsBodyComponent`](physicsbodycomponen
 The `filter` property defines the entity’s collision filter, which determines which other objects the entity collides with. For more information, see [`Controlling Entity Collisions in RealityKit`](controlling_entity_collisions_in_realitykit.md).
 
 > **Note**: If an entity has a [`PhysicsBodyComponent`](physicsbodycomponent.md), the  collision component’s mode is ignored. An entity can be a rigid body, or a trigger, but not both at the same time.
-
-If an entity has a [`PhysicsBodyComponent`](physicsbodycomponent.md), the  collision component’s mode is ignored. An entity can be a rigid body, or a trigger, but not both at the same time.
 
 ## Topics
 
@@ -105,4 +103,4 @@ If an entity has a [`PhysicsBodyComponent`](physicsbodycomponent.md), the  colli
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/collisioncomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/collisioncomponent)*

@@ -1,6 +1,6 @@
 # chartBackground(alignment:content:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Adds a background to a view that contains a chart.
@@ -26,8 +26,6 @@ func chartBackground<V>(alignment: Alignment = .center, @ViewBuilder content: @e
 You can use this modifier to define a background view as a function of the chart in the view. You can access the chart with the `ChartProxy` object passed into the closure.
 
 > **Note**: If `self` contains more than one chart, the chart proxy will refer to the first chart.
-
-If `self` contains more than one chart, the chart proxy will refer to the first chart.
 
 ## Parameters
 

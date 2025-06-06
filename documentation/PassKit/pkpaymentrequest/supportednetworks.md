@@ -1,6 +1,6 @@
 # supportedNetworks
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 The payment methods that you support.
@@ -26,8 +26,6 @@ This property constrains the payment methods that the user can select to fund th
 In macOS 12.3, iOS 15.4, watchOS 8.5, and Mac Catalyst 15.4 or later, specify payment methods in the order you prefer. For example, to specify the default network to use for cobadged cards, set the first element in the array to the default network, and alternate networks afterward in the order you prefer.
 
 > **Note**:  Apps supporting debit networks should check for regional regulations. For more information, see [`Complying with regional regulations`](complying-with-regional-regulations.md).
-
- Apps supporting debit networks should check for regional regulations. For more information, see [`Complying with regional regulations`](complying-with-regional-regulations.md).
 
 ## See Also
 

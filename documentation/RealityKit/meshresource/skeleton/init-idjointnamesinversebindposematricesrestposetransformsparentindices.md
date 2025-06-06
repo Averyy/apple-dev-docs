@@ -1,6 +1,6 @@
 # init(id:jointNames:inverseBindPoseMatrices:restPoseTransforms:parentIndices:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates a skeleton from arrays which define its joints. Returns `nil` if there was an issue converting the parameters to a valid skeleton.
@@ -22,11 +22,7 @@ init?(id: String, jointNames: [String], inverseBindPoseMatrices: [simd_float4x4]
 
 > **Note**: A parent joint needs to precede all of its child joints.
 
-A parent joint needs to precede all of its child joints.
-
 > **Note**: All the arrays passed to this initializer need to have the same length.
-
-All the arrays passed to this initializer need to have the same length.
 
 ## Parameters
 

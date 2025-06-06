@@ -1,6 +1,6 @@
 # reversed()
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a view presenting the elements of the collection in reverse order.
@@ -39,8 +39,6 @@ print(reversedWord)
 ```
 
 > **Note**: O(1)
-
-O(1)
 
 ## See Also
 

@@ -16,8 +16,6 @@ Additionally, any controls in the user interface remain interactive. Users can t
 
 > **Note**: Always On isn’t available on Apple Watch SE or Apple Watch Series 4 and earlier. For these devices, the screen turns off when the app transitions to the background or inactive states.
 
-Always On isn’t available on Apple Watch SE or Apple Watch Series 4 and earlier. For these devices, the screen turns off when the app transitions to the background or inactive states.
-
 Apps compiled for watchOS 8 and later have Always On enabled by default. You can disable this feature by setting the [`WKSupportsAlwaysOnDisplay`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKSupportsAlwaysOnDisplay) key to [`false`](https://developer.apple.com/documentation/swift/false) in the WatchKit Extension’s `Info.plist` file. Users can also disable Always On for the entire device or on a per-app basis by choosing Settings > Display & Brightness > Always On.
 
 ##### Understand Frontmost App Behavior
@@ -160,8 +158,6 @@ The resulting preview shows both the regular and the Always On interfaces.
 
 > **Note**: The system doesn’t automatically dim the user interface when previewing in Xcode. To see how the system automatically dims the user interface, you must test it on a device or in the simulator.
 
-The system doesn’t automatically dim the user interface when previewing in Xcode. To see how the system automatically dims the user interface, you must test it on a device or in the simulator.
-
 ##### Test Always on in the Simulator
 
 Xcode supports Always On in the simulator. Simply click the Toggle Always On button in the status bar to test.
@@ -184,4 +180,4 @@ You can view any changes to your user interface related to privacy, reduced lumi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/designing-your-app-for-the-always-on-state)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/designing-your-app-for-the-always-on-state)*

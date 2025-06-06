@@ -1,6 +1,6 @@
 # Supporting Exposure Notifications Express
 
-**Framework**: Exposure Notification
+**Framework**: Exposurenotification
 
 Configure servers to notify users of potential exposures to COVID-19 without an app.
 
@@ -18,8 +18,6 @@ To support Exposure Notifications Express, a PHA must deploy two different types
 -  Handles key uploads and downloads. The same key server handles key upload and download for Exposure Notifications apps and Exposure Notifications Express. For more information, see [`Configuring a Key Server for Exposure Notifications Express`](configuring-a-key-server-for-exposure-notifications-express.md). For information on setting up a key server, see [`Setting Up a Key Server`](setting-up-a-key-server.md).
 
 > **Note**:  Prior to the introduction of Exposure Notifications Express in iOS 13.7, the Exposure Notifications Key Server was referred to as the “Exposure Notifications Server” or the “EN Server”.
-
- Prior to the introduction of Exposure Notifications Express in iOS 13.7, the Exposure Notifications Key Server was referred to as the “Exposure Notifications Server” or the “EN Server”.
 
 ##### Verify Diagnoses and Send Notifications
 
@@ -74,4 +72,4 @@ The validated and uploaded keys are available for download by other devices to b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/supporting-exposure-notifications-express)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/supporting-exposure-notifications-express)*

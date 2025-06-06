@@ -1,6 +1,6 @@
 # Generating Log Messages from Your Code
 
-**Framework**: os
+**Framework**: Os
 
 Record useful debugging and analysis information, and include dynamic content in your messages.
 
@@ -45,8 +45,6 @@ Log levels define the severity and importance of a particular message, and you s
 Normally, the system stores debug and info messages only in memory, but you can write info messages to disk using the `log` command-line tool. For the other message types, the system compresses the messages and writes them to the on-disk data store. When that data store exceeds a predefined size, the system purges old messages to make room for new ones.
 
 > **Note**:  You can override the default storage behavior of each log level using tools or custom configuration profiles. For more information on how to do so, see [`Customizing Logging Behavior While Debugging`](customizing-logging-behavior-while-debugging.md).
-
- You can override the default storage behavior of each log level using tools or custom configuration profiles. For more information on how to do so, see [`Customizing Logging Behavior While Debugging`](customizing-logging-behavior-while-debugging.md).
 
 The severity of the log level impacts the speed at which the system logs the information. Debug logs have very low overhead because the system stores them only in memory. Faults and other severe messages incur more overhead because the system often captures additional information and writes all of that information to disk.
 

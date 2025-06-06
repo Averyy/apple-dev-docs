@@ -1,6 +1,6 @@
 # Devices
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Register devices for development and testing.
 
@@ -9,8 +9,6 @@ Register devices for development and testing.
 A `devices` resource represents the iOS, Apple TV, Apple Watch, and Mac devices that you register to use for development and testing. You can register a limited number of new devices and get information about them.
 
 > **Note**:  You can only remove registered devices through the Apple Developer website.
-
- You can only remove registered devices through the Apple Developer website.
 
 ## Topics
 
@@ -54,4 +52,4 @@ A `devices` resource represents the iOS, Apple TV, Apple Watch, and Mac devices 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/devices)*

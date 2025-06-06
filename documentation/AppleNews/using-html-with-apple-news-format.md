@@ -1,6 +1,6 @@
 # Using HTML with Apple News Format
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Use HTML formatting for text components.
 
@@ -40,8 +40,6 @@ This section describes how to use the HTML tags Apple News Format supports.
 
 > **Note**: Generic containers and autonomous custom elements such as `<span>` and `<div>` are allowed; however, they have no effect until you apply styling to them.
 
-Generic containers and autonomous custom elements such as `<span>` and `<div>` are allowed; however, they have no effect until you apply styling to them.
-
 Begin each paragraph block with `<p>`, and end each paragraph with `</p>`.
 
 For example, this code:
@@ -65,8 +63,6 @@ Use `<em>` or `<i>` tags around the text you want emphasized.
 Use the HTML `<a href="">` tag for links.
 
 > **Note**: In URLs, be sure to escape any special characters, such as double quotation marks (`"`) or backslashes (`\`), using a backslash (`\`). For example, `<a href=\"http://www.apple.com\">Apple</a>`.
-
-In URLs, be sure to escape any special characters, such as double quotation marks (`"`) or backslashes (`\`), using a backslash (`\`). For example, `<a href=\"http://www.apple.com\">Apple</a>`.
 
 To add a hyperlink to another component in the same article, use an anchor link that starts with the hash symbol (#) and is followed by the `identifier` property for the component you want to link to.
 
@@ -249,4 +245,4 @@ The following is a list of unsupported HTML tags. Apple News Format rejects arti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/using-html-with-apple-news-format)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/using-html-with-apple-news-format)*

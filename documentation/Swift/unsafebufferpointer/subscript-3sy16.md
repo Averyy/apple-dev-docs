@@ -38,8 +38,6 @@ let sum = numbers.withUnsafeBufferPointer { buffer -> Int in
 
 > **Note**: Bounds checks for `i` are performed only in debug mode.
 
-Bounds checks for `i` are performed only in debug mode.
-
 ## Parameters
 
 - `i`: The position of the element to access.   must be in the   range  .

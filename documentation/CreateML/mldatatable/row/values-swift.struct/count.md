@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: property
 
 The number of elements in the collection.
@@ -24,8 +24,6 @@ var count: Int { get }
 To check whether a collection is empty, use its `isEmpty` property instead of comparing `count` to zero. Unless the collection guarantees random-access performance, calculating `count` can be an O() operation.
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
 
 
 ---

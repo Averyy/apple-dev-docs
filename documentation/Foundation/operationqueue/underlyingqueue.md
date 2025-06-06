@@ -28,8 +28,6 @@ The value of this property should only be set if there are no operations in the 
 
 > **Note**:  This property automatically retains its assigned queue if `OS_OBJECT_IS_OBJC` is [`true`](https://developer.apple.com/documentation/swift/true).
 
- This property automatically retains its assigned queue if `OS_OBJECT_IS_OBJC` is [`true`](https://developer.apple.com/documentation/swift/true).
-
 ## See Also
 
 - [var name: String?](operationqueue/name.md)

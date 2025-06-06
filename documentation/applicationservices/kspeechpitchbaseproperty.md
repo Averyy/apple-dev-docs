@@ -1,6 +1,6 @@
 # kSpeechPitchBaseProperty
 
-**Framework**: Application Services  
+**Framework**: Applicationservices  
 **Kind**: data
 
 Get or set the speech channel’s baseline speech pitch.
@@ -23,8 +23,6 @@ Typical voice frequencies range from around 90 hertz for a low-pitched male voic
 This property works with the [`CopySpeechProperty(_:_:_:)`](1459075-copyspeechproperty.md) and [`SetSpeechProperty(_:_:_:)`](1459256-setspeechproperty.md) functions.
 
 > **Note**: The change in speech pitch may not be noticeable until the next sentence or paragraph is spoken.
-
-The change in speech pitch may not be noticeable until the next sentence or paragraph is spoken.
 
 
 ---

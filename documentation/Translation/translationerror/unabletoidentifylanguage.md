@@ -22,8 +22,6 @@ This error is thrown when you call [`prepareTranslation()`](translationsession/p
 
 > **Note**: For best results in automatic language detection, pass in a sample string of at least 20 characters in length.
 
-For best results in automatic language detection, pass in a sample string of at least 20 characters in length.
-
 ## See Also
 
 - [static let nothingToTranslate: TranslationError](translationerror/nothingtotranslate.md)

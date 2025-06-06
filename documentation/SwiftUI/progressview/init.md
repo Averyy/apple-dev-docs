@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: init
 
 Creates a progress view based on a style configuration.
@@ -41,8 +41,6 @@ struct PinkBorderedProgressViewStyle: ProgressViewStyle {
 ![Two horizontal progress views, one at 25 percent complete and the](https://docs-assets.developer.apple.com/published/dc98a460b4d5e6b5babf527056cf7298/ProgressView-4-macOS%402x.png)
 
 > **Note**: Progress views in widgets don’t apply custom styles.
-
-Progress views in widgets don’t apply custom styles.
 
 
 ---

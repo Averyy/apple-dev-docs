@@ -1,6 +1,6 @@
 # MPSCNNSpatialNormalization
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A spatial normalization kernel.
@@ -30,8 +30,6 @@ For each feature channel, the function computes the sum of squares of `X` inside
 Where `kw` and `kh` are the values of the `kernelWidth` and `kernelHeight` properties, respectively. It is your responsibility to ensure that the combination of the values of the [`delta`](mpscnnspatialnormalization/1648933-delta.md) and [`alpha`](mpscnnspatialnormalization/1648825-alpha.md)`kernelWidth``kernelHeight` properties does not result in a situation where the denominator becomes zero (in such situations the resulting pixel-value is undefined).
 
 > **Note**: The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNSpatialNormalization`](mpscnnspatialnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
-
-The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNSpatialNormalization`](mpscnnspatialnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
 
 ## Topics
 

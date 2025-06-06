@@ -14,8 +14,6 @@ Define custom shader behavior at runtime by creating functions from existing one
 
 > **Note**: This sample code project is associated with WWDC2021 session [`10229: Discover compilation workflows in Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10229/) and WWDC2022 session [`6596: Target and optimize GPU binaries with Metal 3`](https://developer.apple.comhttps://developer.apple.com/wwdc22/6596).
 
-This sample code project is associated with WWDC2021 session [`10229: Discover compilation workflows in Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10229/) and WWDC2022 session [`6596: Target and optimize GPU binaries with Metal 3`](https://developer.apple.comhttps://developer.apple.com/wwdc22/6596).
-
 ## See Also
 
 - [class MTLStitchedLibraryDescriptor](mtlstitchedlibrarydescriptor.md)
@@ -36,4 +34,4 @@ This sample code project is associated with WWDC2021 session [`10229: Discover c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/customizing-shaders-using-function-pointers-and-stitching)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/customizing-shaders-using-function-pointers-and-stitching)*

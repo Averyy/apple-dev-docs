@@ -25,8 +25,6 @@ If this property is `YES`, the extension has content that can be injected by mat
 
 > **Note**: Once the extension is loaded, use the [`hasInjectedContent`](wkwebextension/hasinjectedcontent.md) property on an extension context, as the injectable content can change after the extension is loaded.
 
-Once the extension is loaded, use the [`hasInjectedContent`](wkwebextension/hasinjectedcontent.md) property on an extension context, as the injectable content can change after the extension is loaded.
-
 
 ---
 

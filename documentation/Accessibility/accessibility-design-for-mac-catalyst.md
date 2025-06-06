@@ -14,8 +14,6 @@ Improve navigation in your app by using keyboard shortcuts and accessibility con
 
 > **Note**: This sample code project is associated with WWDC20 session [`10117: Accessibility design for Mac Catalyst`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10117/).
 
-This sample code project is associated with WWDC20 session [`10117: Accessibility design for Mac Catalyst`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10117/).
-
 ## See Also
 
 - [Enhancing the accessibility of your SwiftUI app](enhancing-the-accessibility-of-your-swiftui-app.md)

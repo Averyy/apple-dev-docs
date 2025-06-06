@@ -35,8 +35,6 @@ Alternatively, you can create a custom export options property list file with a 
 
 > 💡 **Tip**:  For a complete list of keys you can use with `xcodebuild -exportOptionsPlist`, run `xcodebuild -help`.
 
- For a complete list of keys you can use with `xcodebuild -exportOptionsPlist`, run `xcodebuild -help`.
-
 Because you can’t upload the `.app` bundle directly to the notary service, you’ll need to create a compressed archive containing the app:
 
 ```sh
@@ -56,8 +54,6 @@ Alternatively, you can put apps, kernel extensions, and other software in a cont
 
 > ❗ **Important**:  If you distribute your software via a custom third-party installer, you need two rounds of notarization. First you notarize the installer’s payload (everything the installer will install). You then package the notarized (and stapled, as described in [`Staple the ticket to your distribution`](customizing-the-notarization-workflow#Staple-the-ticket-to-your-distribution.md)) items into the installer and notarize it as you would any other executable. If you use a network installer, separately notarize both the installer and the items it downloads.
 
- If you distribute your software via a custom third-party installer, you need two rounds of notarization. First you notarize the installer’s payload (everything the installer will install). You then package the notarized (and stapled, as described in [`Staple the ticket to your distribution`](customizing-the-notarization-workflow#Staple-the-ticket-to-your-distribution.md)) items into the installer and notarize it as you would any other executable. If you use a network installer, separately notarize both the installer and the items it downloads.
-
 ##### Upload Your App to the Notarization Service
 
 You upload your app for notarization using `notarytool` command line tool. Xcode 13 or later supports this tool, so if you have more than one version of Xcode installed on your Mac, be sure to use the `xcode-select` utility to choose an appropriate version:
@@ -67,8 +63,6 @@ You upload your app for notarization using `notarytool` command line tool. Xcode
 ```
 
 > **Note**:  The `altool` command has been deprecated, and the Apple notary service no longer supports `altool` from November 1, 2023. For more information, see the WWDC22 session [`What’s new in notarization for Mac apps`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10109).
-
- The `altool` command has been deprecated, and the Apple notary service no longer supports `altool` from November 1, 2023. For more information, see the WWDC22 session [`What’s new in notarization for Mac apps`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10109).
 
 Use `xcrun` to invoke the `notarytool` command with the `submit` option:
 
@@ -109,8 +103,6 @@ Save the `id` value to use later when checking the status of your request. For m
 ```
 
 > **Note**:  To avoid a dependency on Xcode for interacting with the notary service, you can use the [`Notary API`](https://developer.apple.com/documentation/NotaryAPI) described in [`Submitting software for notarization over the web`](https://developer.apple.com/documentation/NotaryAPI/submitting-software-for-notarization-over-the-web).
-
- To avoid a dependency on Xcode for interacting with the notary service, you can use the [`Notary API`](https://developer.apple.com/documentation/NotaryAPI) described in [`Submitting software for notarization over the web`](https://developer.apple.com/documentation/NotaryAPI/submitting-software-for-notarization-over-the-web).
 
 ##### Check the Status of Your Request
 
@@ -159,8 +151,6 @@ The file enumerates any issues that notarization found:
 ```
 
 > **Note**:  Always check the log file, even if notarization succeeds, because it might contain warnings that you can fix prior to your next submission.
-
- Always check the log file, even if notarization succeeds, because it might contain warnings that you can fix prior to your next submission.
 
 For information about how to deal with common problems, see [`Resolving common notarization issues`](resolving-common-notarization-issues.md).
 
@@ -235,4 +225,4 @@ For large uploads, try to exclude non-executable data from notarization. For exa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/customizing-the-notarization-workflow)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/customizing-the-notarization-workflow)*

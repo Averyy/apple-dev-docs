@@ -1,6 +1,6 @@
 # applied(to:eventHandler:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Unwraps an optional element or throws if the value is `nil`.
@@ -27,8 +27,6 @@ The unwrapped value.
 #### Discussion
 
 > **Note**: `MissingValueError` if the input is `nil`.
-
-`MissingValueError` if the input is `nil`.
 
 ## Parameters
 

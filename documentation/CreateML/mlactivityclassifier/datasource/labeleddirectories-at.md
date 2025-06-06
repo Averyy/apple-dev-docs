@@ -1,6 +1,6 @@
 # MLActivityClassifier.DataSource.labeledDirectories(at:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: case
 
 An activity classifier data source that uses a directory of directories that contain sensor data files.
@@ -19,8 +19,6 @@ case labeledDirectories(at: URL)
 Create a data source by organizing each activity’s data files into a directory and naming each directory with the label for that activity.
 
 > **Note**: Each data file must contain exactly one entire recording of an activity.
-
-Each data file must contain exactly one entire recording of an activity.
 
 For example, to organize data files for an activity classifier that recognizes walking, jogging, and running, start by creating directories named “walk”, “jog”, and “run”. Place all the files of walking sensor data into the “walk” directory, and so on.
 

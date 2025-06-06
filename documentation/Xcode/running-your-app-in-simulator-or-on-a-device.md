@@ -18,8 +18,6 @@ To learn more about schemes, see [`Customizing the build schemes for a project`]
 
 > ❗ **Important**: When running apps in Simulator, some hardware-specific features might not be available. Frameworks that provide access to device-specific features also provide API to tell you when those features are available. Call those APIs and handle the case where a feature isn’t available. To test the feature itself, run your code on a real device.
 
-When running apps in Simulator, some hardware-specific features might not be available. Frameworks that provide access to device-specific features also provide API to tell you when those features are available. Call those APIs and handle the case where a feature isn’t available. To test the feature itself, run your code on a real device.
-
 ##### Configure the List of Simulated Devices
 
 Manage real and simulated devices in the Devices and Simulators window in Xcode. To view this window, choose Window > Devices and Simulators. View and configure simulated devices from the Simulators tab.
@@ -29,8 +27,6 @@ Manage real and simulated devices in the Devices and Simulators window in Xcode.
 To add a new simulated device, click the plus (+) button at the bottom of the list of simulators and specify the configuration you want. You can add new simulators to specify a different device type or operating system version than the default set. To remove a simulator from the list, select it and press Delete.
 
 > **Note**: Xcode requires the Simulator runtime for each platform and system version for which you build and run Simulator. If Xcode doesn’t display device types for a platform, you might need to install that platform’s Simulator runtime. For more information on this installation, see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md).
-
-Xcode requires the Simulator runtime for each platform and system version for which you build and run Simulator. If Xcode doesn’t display device types for a platform, you might need to install that platform’s Simulator runtime. For more information on this installation, see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md).
 
 ##### Connect Real Devices to Your Mac
 
@@ -58,8 +54,6 @@ Before installing your app, perform a few additional steps:
 - Enable Developer Mode on an iOS, iPadOS, visionOS, or watchOS device, as described in [`Enabling Developer Mode on a device`](enabling-developer-mode-on-a-device.md).
 
 > **Note**: You don’t need to configure a Mac device to run your macOS apps. Similarly, to run the macOS version of an iPad app, choose My Mac (the Mac running Xcode) as the device.
-
-You don’t need to configure a Mac device to run your macOS apps. Similarly, to run the macOS version of an iPad app, choose My Mac (the Mac running Xcode) as the device.
 
 ##### Run the App
 
@@ -90,4 +84,4 @@ Each device shell and space has specific controls to support interactions. For d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/running-your-app-in-simulator-or-on-a-device)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/running-your-app-in-simulator-or-on-a-device)*

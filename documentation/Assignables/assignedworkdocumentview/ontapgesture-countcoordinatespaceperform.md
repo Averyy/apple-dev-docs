@@ -26,8 +26,6 @@ Use this method to perform the specified `action` when the user clicks or taps o
 
 > **Note**: If you create a control that’s functionally equivalent to a `Button`, use `ButtonStyle` to create a customized button instead.
 
-If you create a control that’s functionally equivalent to a `Button`, use `ButtonStyle` to create a customized button instead.
-
 The following code adds a tap gesture to a `Circle` that toggles the color of the circle based on the tap location.
 
 ```None

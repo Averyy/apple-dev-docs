@@ -1,6 +1,6 @@
 # prepare(for:)
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: method  
 **Required**: Yes
 
@@ -26,8 +26,6 @@ func prepare(for test: Test) async throws
 #### Discussion
 
 > **Note**: Any error that prevents the test from running. If an error is thrown from this method, the test is skipped and the error is recorded as an [`Issue`](issue.md).
-
-Any error that prevents the test from running. If an error is thrown from this method, the test is skipped and the error is recorded as an [`Issue`](issue.md).
 
 The testing library calls this method after it discovers all tests and their traits, and before it begins to run any tests. Use this method to prepare necessary internal state, or to determine whether the test should run.
 

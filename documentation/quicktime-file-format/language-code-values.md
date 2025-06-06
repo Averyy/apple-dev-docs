@@ -1,6 +1,6 @@
 # Language code values
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Indicate the language associated with a particular object using language codes.
 
@@ -16,11 +16,7 @@ If the language is specified using an ISO language code, any associated text use
 
 > **Note**: ISO language codes cannot be used for all elements of a QuickTime file. ISO language codes can be used . All other elements, including text tracks, must be specified using Macintosh language codes.
 
-ISO language codes cannot be used for all elements of a QuickTime file. ISO language codes can be used . All other elements, including text tracks, must be specified using Macintosh language codes.
-
 > **Note**: ISO 639-2/T codes do not distinguish between certain language variations. Use an extended language tag atom (`'elng'`) to make these distinctions. For example, ISO 639-2T does not distinguish between traditional and simplified Chinese, so also use `'elng'` with the value `"zh-Hant"` or `"zh-Hans"`, respectively. See [`Extended language tag atom ('elng')`](extended_language_tag_atom.md).
-
-ISO 639-2/T codes do not distinguish between certain language variations. Use an extended language tag atom (`'elng'`) to make these distinctions. For example, ISO 639-2T does not distinguish between traditional and simplified Chinese, so also use `'elng'` with the value `"zh-Hant"` or `"zh-Hans"`, respectively. See [`Extended language tag atom ('elng')`](extended_language_tag_atom.md).
 
 #### Macintosh Language Codes
 

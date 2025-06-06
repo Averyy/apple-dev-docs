@@ -1,6 +1,6 @@
 # Bringing multiple windows to your SwiftUI app
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Compose rich views by reacting to state changes and customize your app’s scene presentation and behavior on iPadOS and macOS.
 
@@ -11,8 +11,6 @@ Compose rich views by reacting to state changes and customize your app’s scene
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [`10061: Bring multiple windows to your SwiftUI app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10061/).
-
-This sample code project is associated with WWDC22 session [`10061: Bring multiple windows to your SwiftUI app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10061/).
 
 ##### 4164583
 

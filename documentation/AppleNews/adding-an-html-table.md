@@ -1,6 +1,6 @@
 # Adding an HTML Table
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Add a table formatted in HTML to your article.
 
@@ -34,8 +34,6 @@ Apple News Format supports these tags for HTML tables:
 
 > **Note**: HTML `<th>` or `<td>` elements that span multiple columns or rows aren’t supported. Apple News Format ignores `colspan` and `rowspan` attributes.
 
-HTML `<th>` or `<td>` elements that span multiple columns or rows aren’t supported. Apple News Format ignores `colspan` and `rowspan` attributes.
-
 This list describes how to use the basic HTML table tags:
 
 - Begin each row of the table (including the header row) with `<tr>` and end each row with `</tr>`.
@@ -66,4 +64,4 @@ This code results in a table with two columns and two rows — one row is for th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/adding-an-html-table)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/adding-an-html-table)*

@@ -1,6 +1,6 @@
 # Improving control flow integrity with pointer authentication
 
-**Framework**: BrowserEngineKit
+**Framework**: Browserenginekit
 
 Increase confidence that your code uses pointers correctly.
 
@@ -11,8 +11,6 @@ Many common attacks against software use techniques that compromise control flow
 Pointer authentication provides probabilistic protection of control flow integrity (CFI) by annotating pointers with signatures. You sign a raw pointer to produce a signed pointer, which contains an embedded pointer authentication code (PAC). To use a signed pointer, you authenticate it, which validates the PAC and, if valid, returns the raw pointer. Otherwise, if the authentication operation detects that the pointer is invalid, it returns a value that represents an invalid raw pointer. Your process generates a segmentation fault and a crash report when it uses the invalid raw pointer. For more information, see “Recognize pointer authentication failures” in [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/Security/preparing-your-app-to-work-with-pointer-authentication).
 
 > **Note**:  The authentication operation might fail to detect that a value is invalid, and return a usable value even though its input is invalid. The authentication check is a probabilistic signal of confidence, not a guarantee that the pointer isn’t compromised.
-
- The authentication operation might fail to detect that a value is invalid, and return a usable value even though its input is invalid. The authentication check is a probabilistic signal of confidence, not a guarantee that the pointer isn’t compromised.
 
 To generate a PAC that you use to validate a pointer, you need to identify the  that the system uses to sign the pointer, which is made up of the signing key and a discriminator.
 
@@ -75,8 +73,6 @@ To sign a pointer, you need three pieces of information:
 
 > ❗ **Important**:  Don’t store the discriminator alongside a signed pointer in memory if you generate different discriminators for different categories of pointers in your app. Doing so makes it easy for an attacker to replace both the signed pointer and the discriminator that the system uses to validate the PAC.
 
- Don’t store the discriminator alongside a signed pointer in memory if you generate different discriminators for different categories of pointers in your app. Doing so makes it easy for an attacker to replace both the signed pointer and the discriminator that the system uses to validate the PAC.
-
 To produce a signed pointer for a constant address, in this example a data pointer:
 
 ```c
@@ -115,4 +111,4 @@ void *other_signed_pointer = ptrauth_auth_and_resign(signed_pointer, original_ke
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/improving-control-flow-integrity-with-pointer-authentication)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/improving-control-flow-integrity-with-pointer-authentication)*

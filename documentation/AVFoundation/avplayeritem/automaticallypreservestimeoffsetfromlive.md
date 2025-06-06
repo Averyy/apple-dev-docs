@@ -1,6 +1,6 @@
 # automaticallyPreservesTimeOffsetFromLive
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the player preserves its time offset from the live time after a buffering operation.
@@ -26,8 +26,6 @@ var automaticallyPreservesTimeOffsetFromLive: Bool { get set }
 The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). If the value is [`true`](https://developer.apple.com/documentation/swift/true), the player seeks forward after it finishes buffering to restore the position that the playhead had when buffering began, relative to the end of the player item’s [`seekableTimeRanges`](avplayeritem/seekabletimeranges.md) property value.
 
 > **Note**:  This property value has no effect if the asset isn’t a live stream.
-
- This property value has no effect if the asset isn’t a live stream.
 
 ## See Also
 

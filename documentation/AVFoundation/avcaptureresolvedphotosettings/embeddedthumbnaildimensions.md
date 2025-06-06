@@ -1,6 +1,6 @@
 # embeddedThumbnailDimensions
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The size, in pixels, of the thumbnail image that the capture delivers.
@@ -22,8 +22,6 @@ var embeddedThumbnailDimensions: CMVideoDimensions { get }
 Use the [`embeddedThumbnailPhotoFormat`](avcapturephotosettings/embeddedthumbnailphotoformat.md) property in your photo settings object to request delivery of a thumbnail image alongside the main photo output from the capture. When you request a thumbnail, the photo output chooses dimensions that best match your requested size while preserving the aspect ratio of the captured photo. Aspect ratio is determined by capture format and by device orientation at the moment of capture.
 
 > **Note**:  The photo capture system supports both  and  images as companions to the full-size primary image in a photo capture. A preview image is intended for immediate display (as seen when taking photos in the iOS Camera app), and as such is sized for full-screen presentation on the current device. A thumbnail image is intended for embedding in the output image file and can be used by other software (such as Quick Look in a file browser) to allow users to quickly review the image without loading the entire image file; the size of thumbnail images may be limited depending on the output file format.
-
- The photo capture system supports both  and  images as companions to the full-size primary image in a photo capture. A preview image is intended for immediate display (as seen when taking photos in the iOS Camera app), and as such is sized for full-screen presentation on the current device. A thumbnail image is intended for embedding in the output image file and can be used by other software (such as Quick Look in a file browser) to allow users to quickly review the image without loading the entire image file; the size of thumbnail images may be limited depending on the output file format.
 
 This property provides the dimensions of the requested thumbnail image, which is delivered in the [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method. Use this property in earlier delegate methods to find the size of the image before delivery.
 

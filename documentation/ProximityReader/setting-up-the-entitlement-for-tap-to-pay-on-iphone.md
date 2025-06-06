@@ -1,6 +1,6 @@
 # Setting up Tap to Pay on iPhone
 
-**Framework**: ProximityReader
+**Framework**: Proximityreader
 
 Request and configure the required entitlement to support Tap to Pay on iPhone.
 
@@ -13,8 +13,6 @@ To integrate with ProximityReader and use Tap to Pay on iPhone, you need to requ
 After you receive the entitlement, you need to configure your Xcode project to use it, which involves several steps. You create or update an App ID, generate a provisioning profile, and add the entitlement to the `Info.plist` file for your target. Your project’s code signing settings might also require minor changes.
 
 > **Note**: TestFlight beta testing and App Store submissions require an entitlement that allows distribution. If you’ve already completed your testing with the nondistribution entitlement, respond to the original email and rerequest the [`Tap to Pay on iPhone Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/tap-to-pay-on-iphone/).
-
-TestFlight beta testing and App Store submissions require an entitlement that allows distribution. If you’ve already completed your testing with the nondistribution entitlement, respond to the original email and rerequest the [`Tap to Pay on iPhone Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/tap-to-pay-on-iphone/).
 
 ##### Add the Tap to Pay on Iphone Capability to Your App Id
 
@@ -33,8 +31,6 @@ Follow these steps to update your App ID to include the necessary capability:
 
 > 💡 **Tip**: You can skip these steps if you enable Xcode to automatically manage the code signing. For more information, see [`Automatic Signing Controls`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-your-team/automatic-signing-controls/).
 
-You can skip these steps if you enable Xcode to automatically manage the code signing. For more information, see [`Automatic Signing Controls`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-your-team/automatic-signing-controls/).
-
 Follow these steps to use the new provisioning profile to code sign your app:
 
 1. In Xcode, select your project in the Project navigator.
@@ -48,8 +44,6 @@ Follow these steps to use the new provisioning profile to code sign your app:
 In Xcode, you need to create a file to specify the entitlements necessary for your app to use Tap to Pay on iPhone.
 
 > 💡 **Tip**: Xcode might create a `.entitlements` file for you. In that case, just add `com.apple.developer.proximity-reader.payment.acceptance` as a Boolean value to that file.
-
-Xcode might create a `.entitlements` file for you. In that case, just add `com.apple.developer.proximity-reader.payment.acceptance` as a Boolean value to that file.
 
 To create the entitlements file:
 
@@ -81,4 +75,4 @@ The following example shows the contents of an app’s `.entitlements` file with
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/setting-up-the-entitlement-for-tap-to-pay-on-iphone)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/setting-up-the-entitlement-for-tap-to-pay-on-iphone)*

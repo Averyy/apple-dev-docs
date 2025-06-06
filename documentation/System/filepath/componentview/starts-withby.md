@@ -34,8 +34,6 @@ The predicate must be an  over the elements. That is, for any elements `a`, `b`,
 
 > **Note**: O(), where  is the lesser of the length of the sequence and the length of `possiblePrefix`.
 
-O(), where  is the lesser of the length of the sequence and the length of `possiblePrefix`.
-
 ## Parameters
 
 - `possiblePrefix`: A sequence to compare to this sequence.

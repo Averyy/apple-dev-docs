@@ -1,6 +1,6 @@
 # Hosting browser view layers in the rendering extension
 
-**Framework**: BrowserEngineKit
+**Framework**: Browserenginekit
 
 Coordinate view-hierarchy and layer-hierarchy changes between processes.
 
@@ -11,8 +11,6 @@ When your browser app’s alternative browser engine is split between different 
 Create layer hierarchies to manage [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) objects in the rendering extension. Host those layers in a hosting view that you add to your view hierarchy. Indicate to the operating system that the view contains hosted layers, and coordinate changes to the layer hierarchy between your host app and rendering extension.
 
 > **Note**:  If you create images or render content to an [`IOSurfaceRef`](https://developer.apple.com/documentation/IOSurface/IOSurfaceRef) in your rendering extension, you can send that object to the host object over XPC and don’t need to render a hosted layer. If you render UI in a web content extension, use `IOSurfaceRef` in the rendering extension, or generate any UI in the rendering extension other than a `CALayer`, you need to create a visibility propagation interaction for the view in the host app. For more information, see [`Propagating view visibility information to extension processes`](propagating-view-visibility-information-to-browser-extensions.md).
-
- If you create images or render content to an [`IOSurfaceRef`](https://developer.apple.com/documentation/IOSurface/IOSurfaceRef) in your rendering extension, you can send that object to the host object over XPC and don’t need to render a hosted layer. If you render UI in a web content extension, use `IOSurfaceRef` in the rendering extension, or generate any UI in the rendering extension other than a `CALayer`, you need to create a visibility propagation interaction for the view in the host app. For more information, see [`Propagating view visibility information to extension processes`](propagating-view-visibility-information-to-browser-extensions.md).
 
 ##### Create a Hosted Layer Hierarchy and a Hosting View
 
@@ -72,8 +70,6 @@ if let coordinator = try? LayerHostingHierarchyTransactionCoordinator(xpcReprese
 
 > **Note**:  You need to add layers or views to the transaction coordinator before you manipulate those layers or views. Commit the transaction coordinator as the last action in the process of updating the views or layers, after you send the XPC representation of the transaction coordinator to the other process.
 
- You need to add layers or views to the transaction coordinator before you manipulate those layers or views. Commit the transaction coordinator as the last action in the process of updating the views or layers, after you send the XPC representation of the transaction coordinator to the other process.
-
 To initiate the update in the extension, create a `LayerHostingHierarchyTransactionCoordinator` to track changes to the layer hierarchy, then send it to the host app to create the transaction coordinator you use to track changes to the view hierarchy.
 
 `LayerHierarchyHostingTransactionCoordinator` doesn’t communicate any information about the updates you make to the views and layers you add to them. Use your XPC communication channel to send the context of any changes to views and layers between your browser app and extension processes, along with the transaction coordinator.
@@ -98,4 +94,4 @@ When the layer that’s rendered in a `LayerHierarchyHostingView` is no longer n
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/hosting-browser-view-layers-in-the-rendering-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/hosting-browser-view-layers-in-the-rendering-extension)*

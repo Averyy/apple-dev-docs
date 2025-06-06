@@ -1,6 +1,6 @@
 # dropLast(_:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Returns a sequence containing all but the given number of final elements.
@@ -37,8 +37,6 @@ print(numbers.dropLast(10))
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Remote Records
 
-**Framework**: CloudKit
+**Framework**: Cloudkit
 
 Use subscriptions and change tokens to efficiently manage modifications to remote records.
 
@@ -17,8 +17,6 @@ After you fetch the records, subscribe to future changes. Subscriptions run in i
 When the user modifies records on their device, save those changes to iCloud. In response, a subscription generates push notifications using the configuration you provide, and iCloud sends them to the user’s other devices. On receipt of a notification, fetch the changes from iCloud and update your cache. Use the change token from the previous fetch to limit the fetched records. Overwrite the token with the new one the fetch operation provides when it completes.
 
 > **Note**:  Subscriptions belong to the users that create them. iCloud can notify several users’ devices in response to a change in the public database. This is because each user’s subscription is tracking the same set of records.
-
- Subscriptions belong to the users that create them. iCloud can notify several users’ devices in response to a change in the public database. This is because each user’s subscription is tracking the same set of records.
 
 Every subscription type has a corresponding notification object that you can configure to meet your app’s needs. CloudKit supports high-priority visual notifications and medium-priority background notifications. A notification can include a limited number of fields from the changed record. You opt in to this behavior. For more information, see [`desiredKeys`](cksubscription/notificationinfo-swift.class/desiredkeys.md).
 
@@ -117,4 +115,4 @@ func extractCloudRecord(from product: Product) throws -> CKRecord? {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/remote-records)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/remote-records)*

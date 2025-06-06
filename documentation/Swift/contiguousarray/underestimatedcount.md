@@ -24,9 +24,7 @@ var underestimatedCount: Int { get }
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
 
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/contiguousarray/underestimatedcount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/contiguousarray/underestimatedcount)*

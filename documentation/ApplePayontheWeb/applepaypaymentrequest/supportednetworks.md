@@ -1,6 +1,6 @@
 # supportedNetworks
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 The payment networks the merchant supports.
@@ -54,8 +54,6 @@ In macOS 12.3, iOS 15.4, watchOS 8.5, and Mac Catalyst 15.4 or later, specify pa
 
 > **Note**:  Websites supporting debit networks should check for regional regulations. For more information, see [`Complying with regional regulations`](https://developer.apple.com/documentation/PassKit/complying-with-regional-regulations).
 
- Websites supporting debit networks should check for regional regulations. For more information, see [`Complying with regional regulations`](https://developer.apple.com/documentation/PassKit/complying-with-regional-regulations).
-
 ## See Also
 
 - [countryCode](applepaypaymentrequest/countrycode.md)
@@ -80,4 +78,4 @@ In macOS 12.3, iOS 15.4, watchOS 8.5, and Mac Catalyst 15.4 or later, specify pa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest/supportednetworks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypaymentrequest/supportednetworks)*

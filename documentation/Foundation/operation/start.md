@@ -26,8 +26,6 @@ The default implementation of this method updates the execution state of the ope
 
 > **Note**:  An operation is not considered ready to execute if it is still dependent on other operations that have not yet finished.
 
- An operation is not considered ready to execute if it is still dependent on other operations that have not yet finished.
-
 If you are implementing a concurrent operation, you must override this method and use it to initiate your operation. Your custom implementation must not call `super` at any time. In addition to configuring the execution environment for your task, your implementation of this method must also track the state of the operation and provide appropriate state transitions. When the operation executes and subsequently finishes its work, it should generate KVO notifications for the `isExecuting` and `isFinished` key paths respectively. For more information about manually generating KVO notifications, see [`Key-Value Observing Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
 You can call this method explicitly if you want to execute your operations manually. However, it is a programmer error to call this method on an operation object that is already in an operation queue or to queue the operation after calling this method. Once you add an operation object to a queue, the queue assumes all responsibility for it.

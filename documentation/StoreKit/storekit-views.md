@@ -1,6 +1,6 @@
 # StoreKit views
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Display a customizable In-App Purchase store using StoreKit views for SwiftUI.
 
@@ -9,8 +9,6 @@ Display a customizable In-App Purchase store using StoreKit views for SwiftUI.
 The StoreKit views APIs provide UI to help you build a store for your In-App Purchases, and provide a way for customers to complete the purchase. The views support localization, so your customers see the product names, descriptions, and prices appropriate to their App Store storefront.
 
 > **Note**:  Session 10013: [`Meet StoreKit for SwiftUI`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10013)
-
- Session 10013: [`Meet StoreKit for SwiftUI`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10013)
 
 StoreKit manages the layouts across all platforms, so the views look great on any device. You can use SwiftUI APIs to customize how the views integrate with your app.
 
@@ -187,4 +185,4 @@ For more information on configuring your In-App Purchase metadata, see [`Manage 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/storekit-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/storekit-views)*

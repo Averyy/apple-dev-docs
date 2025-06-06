@@ -1,6 +1,6 @@
 # width
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Specifies the maximum width for an image element.
 
@@ -23,8 +23,6 @@ The image is shrunk to fit the bounding box if the image is bigger than the size
 
 > **Note**: When an image is a child of a `lockup` element, the longest dimension of the image must be 70 points longer than the corresponding bounding box dimension.
 
-When an image is a child of a `lockup` element, the longest dimension of the image must be 70 points longer than the corresponding bounding box dimension.
-
 ## See Also
 
 - [height](image-attributes-height.md)
@@ -35,4 +33,4 @@ When an image is a child of a `lockup` element, the longest dimension of the ima
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/image-attributes-width)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/image-attributes-width)*

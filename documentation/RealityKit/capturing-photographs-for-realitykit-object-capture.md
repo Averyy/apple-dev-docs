@@ -1,6 +1,6 @@
 # Capturing photographs for RealityKit Object Capture
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Take high-quality images of objects to generate 3D models.
 
@@ -30,15 +30,11 @@ RealityKit object creation accepts images captured by any digital camera, includ
 
 > **Note**: RealityKit object creation doesn’t require you to take images in any specific order or name them in a specific way.
 
-RealityKit object creation doesn’t require you to take images in any specific order or name them in a specific way.
-
 ##### Compose Your Shots
 
 Position the object so it fills as much of the camera’s frame as possible without excluding or cutting off any part. Use an aperture setting narrow enough to maintain a crisp focus. Shoot at the highest resolution your camera supports and use RAW format if possible.
 
 > ❗ **Important**: Shooting with a narrow aperture requires more light but gives your photographs a greater depth of field, increasing the area of the object that’s in focus. If you don’t have enough light to use a narrow aperture, consider increasing your camera’s ISO setting or adding more light.
-
-Shooting with a narrow aperture requires more light but gives your photographs a greater depth of field, increasing the area of the object that’s in focus. If you don’t have enough light to use a narrow aperture, consider increasing your camera’s ISO setting or adding more light.
 
 In low-light situations, cameras with autofocus can have difficulty finding and maintaining focus. Focus manually if there isn’t enough ambient light to get a focus lock, and put your camera on a tripod to make sure you keep it steady. Use a remote trigger, such as the Apple Watch Camera Remote app, to make sure the camera doesn’t move or shake when you press the button to take a photo.
 
@@ -84,4 +80,4 @@ For information on using the RealityKit Object Capture APIs, see [`Creating 3D o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/capturing-photographs-for-realitykit-object-capture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/capturing-photographs-for-realitykit-object-capture)*

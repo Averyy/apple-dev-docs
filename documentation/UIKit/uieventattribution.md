@@ -1,6 +1,6 @@
 # UIEventAttribution
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that contains event attribution information for Web AdAttributionKit.
@@ -24,8 +24,6 @@ Apps use event attribution objects to send data to the browser when opening an e
 
 > **Note**:  Mac apps built with Mac Catalyst don’t support Web AdAttributionKit.
 
- Mac apps built with Mac Catalyst don’t support Web AdAttributionKit.
-
 You can’t subclass [`UIEventAttribution`](uieventattribution.md).
 
 ##### Define an Endpoint
@@ -45,8 +43,6 @@ Once you create a [`UIEventAttribution`](uieventattribution.md) object, send it 
 There are two different ways to send event attribution data when your app opens an external link, depending on whether your app uses [`UIScene`](uiscene.md) or [`UIApplication`](uiapplication.md) for life cycle management. For more information on application life cycle management, see [`Managing your app’s life cycle`](managing-your-app-s-life-cycle.md).
 
 > ❗ **Important**:  The browser, and not your app, sends the event attribution data to the remote server. If the user’s selected browser doesn’t support Web AdAttributionKit, the event attribution fails even if the external website reports a conversion.
-
- The browser, and not your app, sends the event attribution data to the remote server. If the user’s selected browser doesn’t support Web AdAttributionKit, the event attribution fails even if the external website reports a conversion.
 
 If your app uses [`UIScene`](uiscene.md)-based life cycle management, create a [`UIScene.OpenExternalURLOptions`](uiscene/openexternalurloptions.md) object, assign the event attribution object you created to its [`eventAttribution`](uiapplication/openexternalurloptionskey/eventattribution.md) property, and call [`open(_:options:completionHandler:)`](uiscene/open(_:options:completionhandler:).md):
 
@@ -101,4 +97,4 @@ If your app displays a web page in [`SFSafariViewController`](https://developer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uieventattribution)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uieventattribution)*

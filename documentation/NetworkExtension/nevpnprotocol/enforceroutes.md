@@ -1,6 +1,6 @@
 # enforceRoutes
 
-**Framework**: Network Extension  
+**Framework**: Networkextension  
 **Kind**: property
 
 A Boolean value that indicates whether route rules for the tunnel take precedence over any locally defined routes.
@@ -32,8 +32,6 @@ If you set both the [`enforceRoutes`](nevpnprotocol/enforceroutes.md) and [`excl
 [`NETransparentProxyManager`](netransparentproxymanager.md) doesn’t support this property. The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
 
 > **Note**:  You specify the included and excluded routes using the respective `includedRoutes` and `excludedRoutes` properties in the [`NEIPv4Settings`](neipv4settings.md) and [`NEIPv6Settings`](neipv6settings.md) objects that you provide in the [`NEPacketTunnelProvider`](nepackettunnelprovider.md) settings.
-
- You specify the included and excluded routes using the respective `includedRoutes` and `excludedRoutes` properties in the [`NEIPv4Settings`](neipv4settings.md) and [`NEIPv6Settings`](neipv6settings.md) objects that you provide in the [`NEPacketTunnelProvider`](nepackettunnelprovider.md) settings.
 
 ## See Also
 

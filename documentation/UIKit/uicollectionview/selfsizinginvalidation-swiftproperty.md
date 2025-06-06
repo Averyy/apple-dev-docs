@@ -1,6 +1,6 @@
 # selfSizingInvalidation
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The mode that the collection view uses for invalidating the size of self-sizing cells.
@@ -22,8 +22,6 @@ var selfSizingInvalidation: UICollectionView.SelfSizingInvalidation { get set }
 #### Discussion
 
 > **Note**:  Session 10068: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10068)
-
- Session 10068: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10068)
 
 ## See Also
 

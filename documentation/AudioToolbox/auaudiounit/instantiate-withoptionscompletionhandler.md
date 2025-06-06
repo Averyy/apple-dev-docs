@@ -1,6 +1,6 @@
 # instantiate(with:options:completionHandler:)
 
-**Framework**: Audio Toolbox  
+**Framework**: Audiotoolbox  
 **Kind**: method
 
 Asynchronously creates an audio unit instance.
@@ -24,8 +24,6 @@ class func instantiate(with componentDescription: AudioComponentDescription, opt
 Certain types of audio units must be instantiated asynchronously, such as version 3 units with a view.
 
 > **Note**:  Do not block the main thread while waiting for the completion handler to be called; this can deadlock.
-
- Do not block the main thread while waiting for the completion handler to be called; this can deadlock.
 
 ## Parameters
 

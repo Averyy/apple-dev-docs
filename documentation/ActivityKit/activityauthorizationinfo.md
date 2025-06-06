@@ -1,6 +1,6 @@
 # ActivityAuthorizationInfo
 
-**Framework**: ActivityKit  
+**Framework**: Activitykit  
 **Kind**: class
 
 An object with information about whether a person allowed your app to start Live Activities and permitted content updates with frequent ActivityKit push notifications.
@@ -22,8 +22,6 @@ By default, your app can start, update, and end a Live Activity if you use Activ
 Similarly, `ActivityAuthorizationInfo` provides functionality to check whether a person has permitted your app to update Live Activities with frequent ActivityKit push notifications. To check whether you can send frequent ActivityKit push notifications to update Live Activity content, use the synchronous [`frequentPushesEnabled`](activityauthorizationinfo/frequentpushesenabled.md) property or the asynchronous [`frequentPushEnablementUpdates`](activityauthorizationinfo/frequentpushenablementupdates-swift.property.md) sequence.
 
 > **Note**: To update a Live Activity with frequent ActivityKit push notifications, add the `NSSupportsFrequentLiveActivityUpdates` key with a Boolean value of `YES` to your app’s `Info.plist` file. For additional information, see [`Starting and updating Live Activities with ActivityKit push notifications`](starting-and-updating-live-activities-with-activitykit-push-notifications.md).
-
-To update a Live Activity with frequent ActivityKit push notifications, add the `NSSupportsFrequentLiveActivityUpdates` key with a Boolean value of `YES` to your app’s `Info.plist` file. For additional information, see [`Starting and updating Live Activities with ActivityKit push notifications`](starting-and-updating-live-activities-with-activitykit-push-notifications.md).
 
 ## Topics
 
@@ -47,4 +45,4 @@ To update a Live Activity with frequent ActivityKit push notifications, add the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/activitykit/activityauthorizationinfo)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ActivityKit/activityauthorizationinfo)*

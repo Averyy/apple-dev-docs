@@ -25,8 +25,6 @@ If you need to add testing to additional targets or have an existing target you 
 
 > **Note**: Swift Testing and XCTest can build from the same test target and coexist inside the same test bundle. If your project already contains a test bundle with unit tests written using XCTest, you don’t need to add a new Unit Testing Bundle to your project to start writing unit test with Swift Testing. You can add additional files to the target using Swift Testing and consider converting your old tests as time allows.
 
-Swift Testing and XCTest can build from the same test target and coexist inside the same test bundle. If your project already contains a test bundle with unit tests written using XCTest, you don’t need to add a new Unit Testing Bundle to your project to start writing unit test with Swift Testing. You can add additional files to the target using Swift Testing and consider converting your old tests as time allows.
-
 ##### Write a Unit Test
 
 To write a test, select a test file from your test target, and choose a type or function to write a unit test for. If you need to add a new test file to your target,  choose File > New > New File From Template, then select Swift Testing Unit Test or XCTest Unit Test to add a test file with the appropriate structure. The test function that implements the unit test has the following three steps, in order:
@@ -44,8 +42,6 @@ Cover multiple paths and test for each scenario. For example, if a function rece
 For more information on defining tests using Swift Testing, see [`Defining test functions`](https://developer.apple.com/documentation/Testing/DefiningTests). For more information on defining tests using XCTest, see [`Defining Test Cases and Test Methods`](https://developer.apple.com/documentation/XCTest/defining-test-cases-and-test-methods).
 
 > **Note**: The Swift access control model prevents an external entity from accessing anything declared as internal. To access items declared as internal from your test code, compile the module your test code needs to access with [`Enable Testability`](build-settings-reference#Enable-Testability.md) and add the `@testable` attribute to the import statement for the module. For more information, see [`Access Control`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/#Access-Levels-for-Unit-Test-Targets).
-
-The Swift access control model prevents an external entity from accessing anything declared as internal. To access items declared as internal from your test code, compile the module your test code needs to access with [`Enable Testability`](build-settings-reference#Enable-Testability.md) and add the `@testable` attribute to the import statement for the module. For more information, see [`Access Control`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/#Access-Levels-for-Unit-Test-Targets).
 
 ##### Write an Integration Test
 
@@ -124,4 +120,4 @@ class PerformanceTests : XCTestCase {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-tests-to-your-xcode-project)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-tests-to-your-xcode-project)*

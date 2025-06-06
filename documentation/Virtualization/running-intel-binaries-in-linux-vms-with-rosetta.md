@@ -10,8 +10,6 @@ In macOS 13 and later on Mac computers with Apple silicon chips, the Virtualizat
 
 > **Note**:  Rosetta doesn’t support the bootstrapping or installation of Intel Linux distributions on Mac computers with Apple silicon using the Virtualization framework. Intel Linux distributions can run using the Virtualization framework on Intel-based Mac computers without the need for this translation capability.
 
- Rosetta doesn’t support the bootstrapping or installation of Intel Linux distributions on Mac computers with Apple silicon using the Virtualization framework. Intel Linux distributions can run using the Virtualization framework on Intel-based Mac computers without the need for this translation capability.
-
 ##### Test for Rosetta Availability
 
 Before trying to install, run, or activate Rosetta, your app should check to ensure that the capability is available in the version of macOS running on the host computer. The [`availability`](vzlinuxrosettadirectoryshare/availability.md) class method returns a value from the [`VZLinuxRosettaAvailability`](vzlinuxrosettaavailability.md) enumeration that describes whether the current host supports Rosetta or if the capability is already installed on the host Mac. The example below shows the process for checking for Rosetta availability:
@@ -30,8 +28,6 @@ In order to use Rosetta in the Linux guest, the user must mount the Rosetta shar
 
 > ❗ **Important**:  The remaining steps required to activate Rosetta in a Linux guest aren’t commands that your app can execute or that you can script from inside your application to a Linux VM; the user must perform them either interactively or as part of a script while logged in to the Linux guest. You must communicate these requirements to the user of your app.
 
- The remaining steps required to activate Rosetta in a Linux guest aren’t commands that your app can execute or that you can script from inside your application to a Linux VM; the user must perform them either interactively or as part of a script while logged in to the Linux guest. You must communicate these requirements to the user of your app.
-
 1. Install the `update-binfmts` command, if necessary. The command is part of the binfmt-support package in most Linux distributions; installation methods vary by distribution. Additionally, in order to run this command, the user must be able to use the `sudo` command, which requires adding their username to the system’s `/etc/sudoers` file.
 2. Create a directory as a mount point.
 3. Mount the VirtioFS file system tag to the mount point. This is the file system tag the app uses to identify the share and must be the same as the tag the user specifies on the command line demonstrated here.
@@ -41,8 +37,6 @@ In order to use Rosetta in the Linux guest, the user must mount the Rosetta shar
 The example below lists the commands, with the exception of the `update-binfmts` command installation, required to enable Rosetta in the Linux guest:
 
 > ❗ **Important**:  When using Rosetta in macOS 13, set the `preserve` option to `no.`
-
- When using Rosetta in macOS 13, set the `preserve` option to `no.`
 
 ```bash
 % mkdir /tmp/mountpoint
@@ -90,4 +84,4 @@ The following example shows how to configure Rosetta’s caching options in a ne
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/running-intel-binaries-in-linux-vms-with-rosetta)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/running-intel-binaries-in-linux-vms-with-rosetta)*

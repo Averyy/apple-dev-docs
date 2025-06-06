@@ -1,6 +1,6 @@
 # replace(with:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Replace the contents of this mesh resource.
@@ -22,8 +22,6 @@ Replace the contents of this mesh resource.
 #### Discussion
 
 > **Note**: The contents of the modified mesh resource will not be synced between network clients.
-
-The contents of the modified mesh resource will not be synced between network clients.
 
 ## See Also
 

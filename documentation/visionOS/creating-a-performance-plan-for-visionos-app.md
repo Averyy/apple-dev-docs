@@ -60,8 +60,6 @@ Configure Xcode to run test cases each time you build your app, or create a sepa
 
 > **Note**: Collect performance data using a production version of your app to obtain more accurate results. Debug builds contain additional code to support debugging operations and logging. You can collect data from debug builds too, but keep those metrics separate from production-build metrics.
 
-Collect performance data using a production version of your app to obtain more accurate results. Debug builds contain additional code to support debugging operations and logging. You can collect data from debug builds too, but keep those metrics separate from production-build metrics.
-
 For information about how to write test cases for your app, see [`Testing`](https://developer.apple.com/documentation/Xcode/testing). For information about how to automate testing with Xcode Cloud, see [`Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Xcode-Cloud).
 
 ## See Also
@@ -78,4 +76,4 @@ For information about how to write test cases for your app, see [`Testing`](http
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/creating-a-performance-plan-for-visionos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/creating-a-performance-plan-for-visionos-app)*

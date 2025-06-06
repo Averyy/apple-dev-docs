@@ -1,6 +1,6 @@
 # NSScrubber
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A customizable item picker control for the Touch Bar.
@@ -27,8 +27,6 @@ Refer to the following sample code projects which demonstrate how to use [`NSTou
 Each item that appears in a scrubber is a specialized view that supports selection and scrubber-appropriate decorations. The scrubber keeps track of its items by their index positions.
 
 > **Note**:  Take care to understand the Touch Bar term . An item for a scrubber  a view — an [`NSScrubberItemView`](nsscrubberitemview.md) instance — at a specific index position in the scrubber. This is analogous to a row in a table. An item for a bar (an instance of the [`NSTouchBar`](nstouchbar.md) class), by contrast, is an [`NSTouchBarItem`](nstouchbaritem.md) instance, which  a view.
-
- Take care to understand the Touch Bar term . An item for a scrubber  a view — an [`NSScrubberItemView`](nsscrubberitemview.md) instance — at a specific index position in the scrubber. This is analogous to a row in a table. An item for a bar (an instance of the [`NSTouchBar`](nstouchbar.md) class), by contrast, is an [`NSTouchBarItem`](nstouchbaritem.md) instance, which  a view.
 
 There are many classes in the scrubber API, as well as a delegate protocol, a data source protocol, and a callback-based layout API. The design pattern is reminiscent of that used for a collection view (an instance of the [`NSCollectionView`](nscollectionview.md) class). You might find it helpful to refer to the [`NSCollectionView`](nscollectionview.md) overview for background. Be aware, though of the differences. For example, while scrubbers and collection views both employ a [`makeItem(withIdentifier:owner:)`](nsscrubber/makeitem(withidentifier:owner:).md) method, and both employ a reuse queue, a scrubber is subclassed from the [`NSView`](nsview.md) class while a collection view is subclassed from the [`NSViewController`](nsviewcontroller.md) class.
 
@@ -276,4 +274,4 @@ When choosing between a scrubber and a scroll view, use a scrubber unless the am
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsscrubber)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsscrubber)*

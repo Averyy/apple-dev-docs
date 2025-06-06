@@ -18,8 +18,6 @@ A crash due to a language exception that isn’t caught has a `Last Exception Ba
 
 > **Note**: Exception backtraces to the code throwing the exception aren’t provided for C++ exceptions.
 
-Exception backtraces to the code throwing the exception aren’t provided for C++ exceptions.
-
 ##### Identify the Api Throwing the Exception
 
 In the `Last Exception Backtrace`, the operating system records the full backtrace of function calls leading to the exception. This backtrace ends with frames that make it clear a language exception was thrown. Further down the backtrace, you’ll find key information about what method threw the exception, and what part of your code called the method that threw the exception. For example:
@@ -52,8 +50,6 @@ In this example backtrace, the operating system threw an exception in frames 0-2
 
 > ❗ **Important**: If the API throwing the exception is [`doesNotRecognizeSelector(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/doesNotRecognizeSelector(_:)):, the crash may be due to a zombie object. See [`Investigating crashes for zombie objects`](investigating-crashes-for-zombie-objects.md) for additional information.
 
-If the API throwing the exception is [`doesNotRecognizeSelector(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/doesNotRecognizeSelector(_:)):, the crash may be due to a zombie object. See [`Investigating crashes for zombie objects`](investigating-crashes-for-zombie-objects.md) for additional information.
-
 ##### Check the Exception Message
 
 The uncaught exception handler provided by the operating system logs the exception message to the console before terminating the process. If you reproduce a crash resulting from a language exception with the Xcode debugger attached to your app, you can see this message:
@@ -70,8 +66,6 @@ Continuing the example in [`Identify the API throwing the exception`](addressing
 The crash report excludes the exception message for some errors to prevent disclosing private information about the person using the app. The crash report includes exception messages for many of the common cases of language exceptions your app generates through its use of framework APIs. For more about these exceptions, see [`Reading an exception message`](reading-an-exception-message.md).
 
 > **Note**: [`AppKit`](https://developer.apple.com/documentation/AppKit) apps have a default exception handler that catches all language exceptions raised by code run from its run loop. It logs the exception message and then allows the app to continue running.
-
-[`AppKit`](https://developer.apple.com/documentation/AppKit) apps have a default exception handler that catches all language exceptions raised by code run from its run loop. It logs the exception message and then allows the app to continue running.
 
 If you can reproduce a language exception crash, set an exception breakpoint to pause execution and inspect your app’s state with Xcode’s debugger, as described in [`Pause execution when events occur`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devfeaa874d0). To automatically print the exception message when the exception breakpoint pauses execution, add an action to the exception breakpoint that runs a debugger command:
 
@@ -106,4 +100,4 @@ If you find that exceptions thrown by your app within an exception handling doma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/addressing-language-exception-crashes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/addressing-language-exception-crashes)*

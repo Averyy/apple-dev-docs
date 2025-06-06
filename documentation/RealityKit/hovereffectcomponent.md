@@ -1,6 +1,6 @@
 # HoverEffectComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that applies a visual effect to a hierarchy of entities when a person looks at or selects an entity.
@@ -24,11 +24,7 @@ Add a HoverEffectComponent to an entity to convey the entity can receive gesture
 
 > **Note**: On visionOS, you hover over an entity by looking at or directly touching it. On other platforms, you hover over an entity by moving your mouse cursor over it.
 
-On visionOS, you hover over an entity by looking at or directly touching it. On other platforms, you hover over an entity by moving your mouse cursor over it.
-
 > ❗ **Important**: Entities also need to have an [`InputTargetComponent`](inputtargetcomponent.md) and [`CollisionComponent`](collisioncomponent.md) to receive hover effects.
-
-Entities also need to have an [`InputTargetComponent`](inputtargetcomponent.md) and [`CollisionComponent`](collisioncomponent.md) to receive hover effects.
 
 ```swift
 let boxSize = SIMD3<Float>(0.5, 0.1, 0.05)
@@ -120,8 +116,6 @@ Customize how a `HoverEffectComponent` presents on a partially or fully transpar
 
 > **Note**: Opacity functions can’t be applied to `HoverEffectComponents` that use [`HoverEffectComponent.ShaderHoverEffectInputs`](hovereffectcomponent/shaderhovereffectinputs.md).
 
-Opacity functions can’t be applied to `HoverEffectComponents` that use [`HoverEffectComponent.ShaderHoverEffectInputs`](hovereffectcomponent/shaderhovereffectinputs.md).
-
 ##### Shader Inputs
 
 Pass [`HoverEffectComponent.ShaderHoverEffectInputs`](hovereffectcomponent/shaderhovereffectinputs.md) to the `HoverEffectComponent` constructor with [`shader(_:)`](hovereffectcomponent/hovereffect-swift.struct/shader(_:).md) to activate the `Hover State` Shader Graph node in a [`ShaderGraphMaterial`](shadergraphmaterial.md). Apply the [`ShaderGraphMaterial`](shadergraphmaterial.md) to the entity’s [`ModelComponent`](modelcomponent.md) when using this effect.
@@ -193,4 +187,4 @@ Hovering over the entity displays the following effect.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/hovereffectcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/hovereffectcomponent)*

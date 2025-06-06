@@ -46,13 +46,9 @@ Termination Description: SPRINGBOARD,
 
 > **Note**: For readability, this example includes extra line breaks. In the original crash report file for this example, the watchdog information is on fewer lines.
 
-For readability, this example includes extra line breaks. In the original crash report file for this example, the watchdog information is on fewer lines.
-
 When `scene-create` appears in the `Termination Description`, the app didn’t render the first frame of its UI to the screen within the allowed wall clock time. If `scene-update` appears in the `Termination Description` instead of `scene-create`, the app didn’t update its UI quick enough because the main thread is too busy.
 
 > **Note**: The `scene-create` and `scene-update` terminology used in the crash report refers to any content drawn to the device’s screen. This terminology has no relation to [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) in a scene-based [`UIKit`](https://developer.apple.com/documentation/UIKit) app.
-
-The `scene-create` and `scene-update` terminology used in the crash report refers to any content drawn to the device’s screen. This terminology has no relation to [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) in a scene-based [`UIKit`](https://developer.apple.com/documentation/UIKit) app.
 
 The `Elapsed total CPU time` shows how much time the CPU ran for all processes on the system within the wall clock time. This CPU time, as well as the application CPU time, is for the total CPU utilization across CPU cores, which can exceed 100%. For example, if one CPU core is at 100% utilization and a second CPU core is at 20% utilization, the total CPU utalization is 120%.
 
@@ -74,8 +70,6 @@ Termination Description: SPRINGBOARD,
 ```
 
 > **Note**: For readability, this example includes extra line breaks. In the original crash report file for this example, the watchdog information is on fewer lines.
-
-For readability, this example includes extra line breaks. In the original crash report file for this example, the watchdog information is on fewer lines.
 
 Intrepret the information about wall clock time and CPU time as described in [`Interpret the app responsiveness watchdog information`](addressing-watchdog-terminations#Interpret-the-app-responsiveness-watchdog-information.md).
 
@@ -137,4 +131,4 @@ If networking code is contributing to your watchdog termination, consider these 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/addressing-watchdog-terminations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/addressing-watchdog-terminations)*

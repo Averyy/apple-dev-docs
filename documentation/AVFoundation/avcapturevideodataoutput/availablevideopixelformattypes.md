@@ -1,6 +1,6 @@
 # availableVideoPixelFormatTypes
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The video pixel formats the output supports.
@@ -24,8 +24,6 @@ var availableVideoPixelFormatTypes: [OSType] { get }
 This value contains an array of video formats, in unspecified order, that the output supports. You can set the format by specifying it as the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferPixelFormatTypeKey) entry in the output’s [`videoSettings`](avcapturevideodataoutput/videosettings.md) dictionary.
 
 > **Note**:  The contents of this list may change if the video capture device’s [`activeFormat`](avcapturedevice/activeformat.md) value changes.
-
- The contents of this list may change if the video capture device’s [`activeFormat`](avcapturedevice/activeformat.md) value changes.
 
 ## See Also
 

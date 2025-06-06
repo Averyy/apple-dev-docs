@@ -1,6 +1,6 @@
 # Migrating a test from XCTest
 
-**Framework**: Swift Testing
+**Framework**: Testing
 
 Migrate an existing test method or test class written using XCTest.
 
@@ -37,8 +37,6 @@ The testing library represents individual tests as functions, similar to how the
 As with XCTest, the testing library allows test functions to be marked `async`, `throws`, or `async`-`throws`, and to be isolated to a global actor (for example, by using the `@MainActor` attribute.)
 
 > **Note**: XCTest runs synchronous test methods on the main actor by default, while the testing library runs all test functions on an arbitrary task. If a test function must run on the main thread, isolate it to the main actor with `@MainActor`, or run the thread-sensitive code inside a call to [`MainActor.run(resultType:body:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/mainactor/run(resulttype:body:)).
-
-XCTest runs synchronous test methods on the main actor by default, while the testing library runs all test functions on an arbitrary task. If a test function must run on the main thread, isolate it to the main actor with `@MainActor`, or run the thread-sensitive code inside a call to [`MainActor.run(resultType:body:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/mainactor/run(resulttype:body:)).
 
 For more information about test functions and how to declare and customize them, see [`Defining test functions`](definingtests.md).
 
@@ -84,8 +82,6 @@ An instance of an `XCTestCase` subclass can set its [`continueAfterFailure`](htt
 
 > **Note**: `continueAfterFailure` isn’t fully supported when using the [`swift-corelibs-xctest`](https://developer.apple.comhttps://github.com/swiftlang/swift-corelibs-xctest) library on non-Apple platforms.
 
-`continueAfterFailure` isn’t fully supported when using the [`swift-corelibs-xctest`](https://developer.apple.comhttps://github.com/swiftlang/swift-corelibs-xctest) library on non-Apple platforms.
-
 The behavior of an exception thrown through a Swift stack frame is undefined. If an exception is thrown through an `async` Swift function, it typically causes the process to terminate abnormally, preventing other tests from running.
 
 The testing library doesn’t use exceptions to stop test functions. Instead, use the [`require(_:_:sourceLocation:)`](require(_:_:sourcelocation:)-5l63q.md) macro, which throws a Swift error on failure:
@@ -122,8 +118,6 @@ A test may have a known issue that sometimes or always prevents it from passing.
 This function can be used to annotate a section of a test as having a known issue:
 
 > **Note**: The XCTest function [`XCTExpectFailure(_:options:)`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/3727245-xctexpectfailure), which doesn’t take a closure and which affects the remainder of the test, doesn’t have a direct equivalent in the testing library. To mark an entire test as having a known issue, wrap its body in a call to `withKnownIssue()`.
-
-The XCTest function [`XCTExpectFailure(_:options:)`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/3727245-xctexpectfailure), which doesn’t take a closure and which affects the remainder of the test, doesn’t have a direct equivalent in the testing library. To mark an entire test as having a known issue, wrap its body in a call to `withKnownIssue()`.
 
 If a test may fail intermittently, the call to `XCTExpectFailure(_:options:failingBlock:)` can be marked . When using the testing library, specify that the known issue is  instead:
 
@@ -171,4 +165,4 @@ For more information, see [`Running tests serially or in parallel`](parallelizat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/testing/migratingfromxctest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Testing/migratingfromxctest)*

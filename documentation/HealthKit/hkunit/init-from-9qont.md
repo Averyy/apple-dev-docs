@@ -1,6 +1,6 @@
 # init(from:)
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: init
 
 Returns the unit instance described by the provided string.
@@ -99,8 +99,6 @@ The [`HKUnit`](hkunit.md) class also supports a number of non-SI units, as shown
 Of these, the count and percent units deserve special attention. Count units represent raw scalar values. They can be used to represent the number of times an event occurs—for example, the number of steps the user has taken or the number of times the user has used their inhaler. They can also be used as part of a compound unit—for example, the beats portion of beats per minute.
 
 > **Note**:  In HealthKit quantities, count values are stored using `double` data types, even though they are often interpreted as integers.
-
- In HealthKit quantities, count values are stored using `double` data types, even though they are often interpreted as integers.
 
 The percent unit measures a value between 0.0 and 1.0. HealthKit uses percent units when measuring body fat percentage, oxygen saturation, blood alcohol content, and similar values.
 

@@ -1,6 +1,6 @@
 # assertIsolated(_:file:line:)
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: method
 
 Stops program execution if the current task is not executing on this serial executor.
@@ -29,8 +29,6 @@ This function’s effect varies depending on the build flag used:
 - In `-O` builds (the default for Xcode’s Release configuration), the isolation check is not performed and there are no effects.
 
 > **Note**: This check is performed against the actor’s serial executor, meaning that / if another actor uses the same serial executor–by using that actor’s serial executor as its own `Actor/unownedExecutor`–this check will succeed , as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
-
-This check is performed against the actor’s serial executor, meaning that / if another actor uses the same serial executor–by using that actor’s serial executor as its own `Actor/unownedExecutor`–this check will succeed , as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
 
 ## Parameters
 

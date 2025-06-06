@@ -25,8 +25,6 @@ By default, a request scans for all symbologies. Specify a subset of symbologies
 
 > **Note**:  Setting a revision on the request resets the symbologies to all symbologies for the specified revision.
 
- Setting a revision on the request resets the symbologies to all symbologies for the specified revision.
-
 ## See Also
 
 - [func supportedSymbologies() throws -> [VNBarcodeSymbology]](vndetectbarcodesrequest/supportedsymbologies.md)

@@ -32,8 +32,6 @@ The following features aren’t available in compatible iPad and iPhone apps in 
 
 > **Note**: Although device cameras are unavailable on Apple Vision Pro, compatible apps can capture photos of personas using [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) with the position of `.front` or use continuity camera to capture photo and video from iPhone and iPad.
 
-Although device cameras are unavailable on Apple Vision Pro, compatible apps can capture photos of personas using [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) with the position of `.front` or use continuity camera to capture photo and video from iPhone and iPad.
-
 If your app uses an unsupported feature but can function without it, you can still bring your app to visionOS. Remove features that aren’t available and focus on bringing the rest of your content to the platform. For example, if you have an app that lets people write down notes and take pictures to include with those notes, disable the picture-taking ability in visionOS but let people add text and incorporate images from their library.
 
 If your app relies on frameworks that behave differently in visionOS, update your code to handle those differences. Throughout your code, make sure you respond to unusual situations:
@@ -85,8 +83,6 @@ If your UIKit app uses hardcoded values or relies on `UIScreen` for layout, the 
 
 > **Note**: Device-specific information is available when you absolutely need it, but validate the information you receive and provide reasonable default behavior for unexpected values.
 
-Device-specific information is available when you absolutely need it, but validate the information you receive and provide reasonable default behavior for unexpected values.
-
 Think about ways to create adaptive layouts using the following techniques:
 
 -  [`UIStackView`](https://developer.apple.com/documentation/UIKit/UIStackView) objects adjust the position of their contained views automatically when interface dimensions change. Alternatively, [`Auto Layout`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html) constraints let you specify the rules that determine the size and position of the views in your interface.
@@ -117,4 +113,4 @@ When you use app thinning to optimize your app for different devices and operati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/making-your-app-compatible-with-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/making-your-app-compatible-with-visionos)*

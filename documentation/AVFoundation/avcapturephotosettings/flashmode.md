@@ -1,6 +1,6 @@
 # flashMode
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A setting for whether to fire the flash when capturing photos.
@@ -24,15 +24,9 @@ The default value for this setting is [`AVCaptureDevice.FlashMode.off`](avcaptur
 
 > **Note**:  This setting supersedes the deprecated [`AVCaptureDevice`](avcapturedevice.md) [`flashMode`](avcapturedevice/flashmode-swift.property.md) property. When using the [`AVCapturePhotoOutput`](avcapturephotooutput.md) class, the capture device’s flash mode doesn’t apply—use this property on your photo settings object instead.
 
- This setting supersedes the deprecated [`AVCaptureDevice`](avcapturedevice.md) [`flashMode`](avcapturedevice/flashmode-swift.property.md) property. When using the [`AVCapturePhotoOutput`](avcapturephotooutput.md) class, the capture device’s flash mode doesn’t apply—use this property on your photo settings object instead.
-
 Assuming a static scene, using the [`AVCaptureDevice.FlashMode.auto`](avcapturedevice/flashmode-swift.enum/auto.md) setting is equivalent to testing the [`AVCapturePhotoOutput`](avcapturephotooutput.md) [`isFlashScene`](avcapturephotooutput/isflashscene.md) property (which indicates whether flash is recommended for the scene currently visible to the camera), and then setting the [`flashMode`](avcapturephotosettings/flashmode.md) property of your photo settings output accordingly before requesting a capture. However, the visible scene can change between when you request a capture and when the camera hardware captures an image—the automatic setting ensures that the flash is enabled or disabled appropriately at the moment of capture. When the capture occurs, your [`AVCapturePhotoCaptureDelegate`](avcapturephotocapturedelegate.md) methods receive an [`AVCaptureResolvedPhotoSettings`](avcaptureresolvedphotosettings.md) object whose [`isFlashEnabled`](avcaptureresolvedphotosettings/isflashenabled.md) property indicates which flash mode was used for that capture.
 
 > **Note**:  When the device becomes very hot, the flash becomes temporarily unavailable until the device cools down (see the [`AVCaptureDevice`](avcapturedevice.md) [`isFlashAvailable`](avcapturedevice/isflashavailable.md) property). While the flash is unavailable, a photo output’s [`supportedFlashModes`](avcapturephotooutput/supportedflashmodes-4u69s.md) property still reports the [`AVCaptureDevice.FlashMode.on`](avcapturedevice/flashmode-swift.enum/on.md) and [`AVCaptureDevice.FlashMode.auto`](avcapturedevice/flashmode-swift.enum/auto.md) options as available, so you can still enable the flash in your photo settings even when the flash is temporarily unavailable. When the photo output calls your [`AVCapturePhotoCaptureDelegate`](avcapturephotocapturedelegate.md) methods, check the [`isFlashEnabled`](avcaptureresolvedphotosettings/isflashenabled.md) property of the provided [`AVCaptureResolvedPhotoSettings`](avcaptureresolvedphotosettings.md) to verify whether the flash is in use.
-
- When the device becomes very hot, the flash becomes temporarily unavailable until the device cools down (see the [`AVCaptureDevice`](avcapturedevice.md) [`isFlashAvailable`](avcapturedevice/isflashavailable.md) property). While the flash is unavailable, a photo output’s [`supportedFlashModes`](avcapturephotooutput/supportedflashmodes-4u69s.md) property still reports the [`AVCaptureDevice.FlashMode.on`](avcapturedevice/flashmode-swift.enum/on.md) and [`AVCaptureDevice.FlashMode.auto`](avcapturedevice/flashmode-swift.enum/auto.md) options as available, so you can still enable the flash in your photo settings even when the flash is temporarily unavailable.
-
-When the photo output calls your [`AVCapturePhotoCaptureDelegate`](avcapturephotocapturedelegate.md) methods, check the [`isFlashEnabled`](avcaptureresolvedphotosettings/isflashenabled.md) property of the provided [`AVCaptureResolvedPhotoSettings`](avcaptureresolvedphotosettings.md) to verify whether the flash is in use.
 
 When specifying a flash mode, the following requirements apply:
 

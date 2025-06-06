@@ -1,6 +1,6 @@
 # Providing metadata for xHE-AAC video soundtracks
 
-**Framework**: HTTP Live Streaming
+**Framework**: Http Live Streaming
 
 Ensure volume normalization by including metadata for loudness and dynamic range control.
 
@@ -9,8 +9,6 @@ Ensure volume normalization by including metadata for loudness and dynamic range
 Soundtracks that use xHE-AAC (Extended High-Efficiency Advanced Audio Codec) encoding include MPEG-D DRC metadata for loudness and dynamic range control (DRC). When you create video soundtracks with xHE-AAC, provide at least the following metadata to ensure consistent results across different services. For playback, set up the MPEG-D DRC tool at the decoder by following the guidelines below.
 
 > **Note**: Refer to ISO/IEC 23003-4 for additional information about these metadata specifications.
-
-Refer to ISO/IEC 23003-4 for additional information about these metadata specifications.
 
 ##### Configure Metadata for Content Generation
 
@@ -38,8 +36,6 @@ The DRC for `General Compression` can have several instances to accommodate vari
 
 > **Note**: Refer to ISO/IEC 23003-4:2020 Table 12 for additional information about these metadata specifications.
 
-Refer to ISO/IEC 23003-4:2020 Table 12 for additional information about these metadata specifications.
-
 ##### Configure Metadata for Playback
 
 Configure the MPEG-D DRC decoder for playback according to the specifications below. The configuration occurs completely or partially at the system level and those settings don’t appear at the API level.
@@ -56,8 +52,6 @@ The `methodDefinition` field defaults to `Program Loudness`, if present, if you 
 Some previously deployed implementations may use the default ISO/IEC 23003-4 configuration and may not support the interface for customization. These systems may select loudness metadata with a `methodDefinition` value of `Program Loudness`, if present, in addition to other loudness metadata. This can result in a deviation of the output loudness of the same content from systems that select `Anchor Loudness`, if present, in addition to `Program Loudness`.
 
 > **Note**: Refer to ISO/IEC 23003-4:2020 Table 51 for information about the priority order for `measurementSystem` for the `Expert/Panel` value.
-
-Refer to ISO/IEC 23003-4:2020 Table 51 for information about the priority order for `measurementSystem` for the `Expert/Panel` value.
 
 The following table (ANSI/CTA-2075) provides recommended target loudness value settings of the DRC tool to control the integrated loudness at the output:
 
@@ -79,8 +73,6 @@ The following table specifies the appropriate DRC requests for different listeni
 | `noisy` | all | `noisy` |
 
 > **Note**: An `ideal` environment is a quiet listening environment.
-
-An `ideal` environment is a quiet listening environment.
 
 Request `general` for DRC when you want loudness normalization unless a different DRC request is applicable for the playback scenario. This applies appropriate compression to reach the target loudness, such as when applying gain during normalization.
 
@@ -113,4 +105,4 @@ User preferences can override DRC settings. The following table provides example
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/providing-metadata-for-xhe-aac-video-soundtracks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/providing-metadata-for-xhe-aac-video-soundtracks)*

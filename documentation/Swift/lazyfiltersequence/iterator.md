@@ -25,8 +25,6 @@ struct Iterator
 
 > **Note**: This is the associated `Iterator` of `LazyFilterSequence` and `LazyFilterCollection`.
 
-This is the associated `Iterator` of `LazyFilterSequence` and `LazyFilterCollection`.
-
 ## Topics
 
 ### Instance Properties

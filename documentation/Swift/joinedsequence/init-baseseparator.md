@@ -24,8 +24,6 @@ init<Separator>(base: Base, separator: Separator) where Separator : Sequence, Se
 
 > **Note**: O(`separator.count`).
 
-O(`separator.count`).
-
 
 ---
 

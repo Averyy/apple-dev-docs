@@ -1,6 +1,6 @@
 # Toggle
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A control that toggles between on and off states.
@@ -78,8 +78,6 @@ var body: some View {
 
 > **Note**: This behavior does not apply to [`button`](togglestyle/button.md).
 
-This behavior does not apply to [`button`](togglestyle/button.md).
-
 ##### Styling Toggles
 
 Toggles use a default style that varies based on both the platform and the context. For more information, read about the [`automatic`](togglestyle/automatic.md) toggle style.
@@ -142,4 +140,4 @@ You can also define custom styles by creating a type that conforms to the [`Togg
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/toggle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/toggle)*

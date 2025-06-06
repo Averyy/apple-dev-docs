@@ -1,6 +1,6 @@
 # enqueueIORequest(with:completionHandler:)
 
-**Framework**: IOUSBHost  
+**Framework**: Iousbhost  
 **Kind**: method
 
 Enqueues an input/output request on the stream.
@@ -21,19 +21,9 @@ func enqueueIORequest(with data: NSMutableData?) async throws -> (IOReturn, Int)
 func enqueueIORequest(with data: NSMutableData?) async throws -> (IOReturn, Int)
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func enqueueIORequest(with data: NSMutableData?) async throws -> (IOReturn, Int)
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 This method sends an asynchronous request on the stream.
 
 > **Note**:  Completion timeouts aren’t applicable to streams.
-
- Completion timeouts aren’t applicable to streams.
 
 ## Parameters
 

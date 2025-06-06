@@ -1,6 +1,6 @@
 # name
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: property
 
 A descriptive name for the reference object.
@@ -22,8 +22,6 @@ For a reference object loaded from an Xcode asset catalog, this property is the 
 
 > **Note**:  This string is not localized text intended for user display. However, in debugging you can use this property to indicate which reference object was detected.
 
- This string is not localized text intended for user display. However, in debugging you can use this property to indicate which reference object was detected.
-
 ## See Also
 
 - [var resourceGroupName: String?](arreferenceobject/resourcegroupname.md)
@@ -37,4 +35,4 @@ For a reference object loaded from an Xcode asset catalog, this property is the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arreferenceobject/name)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arreferenceobject/name)*

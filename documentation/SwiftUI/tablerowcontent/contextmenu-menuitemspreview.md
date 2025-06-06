@@ -1,6 +1,6 @@
 # contextMenu(menuItems:preview:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Adds a context menu with a preview to a table row.
@@ -46,8 +46,6 @@ Table(of: Person.self) {
 ```
 
 > **Note**: This view modifier produces a context menu on macOS, but that platform doesn’t display the preview.
-
-This view modifier produces a context menu on macOS, but that platform doesn’t display the preview.
 
 If you don’t need a preview, use [`contextMenu(menuItems:)`](tablerowcontent/contextmenu(menuitems:).md). If you want to display a context menu that’s based on the current selection, use [`contextMenu(forSelectionType:menu:primaryAction:)`](view/contextmenu(forselectiontype:menu:primaryaction:).md). To add context menus to other kinds of views, see [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md).
 

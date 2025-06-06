@@ -15,8 +15,6 @@ You can access the accent color from the [`accentColor`](https://developer.apple
 
 > **Note**: If your accent color is dark, your text may not be legible against the black background. Consider lightening or saturating your accent color to improve the contrast.
 
-If your accent color is dark, your text may not be legible against the black background. Consider lightening or saturating your accent color to improve the contrast.
-
 ##### Set the Accent Color
 
 Xcode automatically configures an asset catalog that includes the accent color when you create a new project. To set the color, open the WatchKit App’s `Assets.xcassets` file, select the AccentColor color set, and then select the AccentColor cell. You can then change the color using the Color section of the Attributes inspector. For example, to specify the RGB values for a color, change the Content to sRGB and then modify the values using the sliders.
@@ -57,4 +55,4 @@ Click the Global Tint pop-up button to display a menu with several preexisting c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/setting-the-app-s-accent-color)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/setting-the-app-s-accent-color)*

@@ -14,8 +14,6 @@ Use this code to follow along with a guide to migrating your code to take advant
 
 > **Note**: This sample code project is associated with WWDC24 session 10169: [`Migrate your app to Swift 6`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10169). It’s based on a similar session from WWDC21 showing how to adopt Swift concurrency in an app, [`Swift concurrency: Update a sample app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10194/).
 
-This sample code project is associated with WWDC24 session 10169: [`Migrate your app to Swift 6`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10169). It’s based on a similar session from WWDC21 showing how to adopt Swift concurrency in an app, [`Swift concurrency: Update a sample app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10194/).
-
 This sample provides two separate versions of the app:
 
 - The original version uses Swift concurrency features but contains a number of issues that are detected by enabling Swift complete concurrency checking and that need to be resolved before enabling the Swift 6 language mode.
@@ -63,4 +61,4 @@ Compare the original project to the updated project to see how it resolves the c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/updating-an-app-to-use-strict-concurrency)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/updating-an-app-to-use-strict-concurrency)*

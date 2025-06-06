@@ -16,8 +16,6 @@ By default, tapping or clicking your widget or Live Activity opens its correspon
 
 > ❗ **Important**: If the view hierarchy includes more than one `widgetURL` modifier, the behavior is undefined.
 
-If the view hierarchy includes more than one `widgetURL` modifier, the behavior is undefined.
-
 For example, the following code snippet from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project shows how the small widget uses `widgetURL(_:)` to allow people to open the app and show a character’s detail information:
 
 ```swift
@@ -46,15 +44,11 @@ For example, the leaderboard widget of the [`Emoji Rangers: Supporting Live Acti
 
 > **Note**: When the widget or Live Activity receives an interaction, the system activates the containing app and passes the URL to [`onOpenURL(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onOpenURL(perform:)), [`application(_:open:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:open:options:)), or [`application(_:open:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/application(_:open:)), depending on the life cycle your app uses.
 
-When the widget or Live Activity receives an interaction, the system activates the containing app and passes the URL to [`onOpenURL(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onOpenURL(perform:)), [`application(_:open:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:open:options:)), or [`application(_:open:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/application(_:open:)), depending on the life cycle your app uses.
-
 ##### Detect the Originating Widget By Accessing the User Activity Object
 
 If a widget doesn’t specify a deep link URL with [`widgetURL(_:)`](https://developer.apple.com/documentation/SwiftUI/View/widgetURL(_:)) or [`Link`](https://developer.apple.com/documentation/SwiftUI/Link) and a person interacts with it, the system opens the containing app and passes an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) to [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)), [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:continue:restorationHandler:)), or [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/application(_:continue:restorationHandler:)). The user activity’s `userInfo` dictionary contains details about the widget the person interacted with. Use the keys in [`WidgetCenter.UserInfoKey`](widgetcenter/userinfokey.md) to access these values from Swift code. To access the `userInfo` values from Objective-C, use the keys `WGWidgetUserInfoKeyKind` and `WGWidgetUserInfoKeyFamily` instead. Then, update your app’s interface to match the widget so people don’t have to navigate to the right place in your app.
 
 > **Note**: If you use an [`AppIntentConfiguration`](appintentconfiguration.md) to configure your widget, use the [`widgetConfigurationIntent(of:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/4226429-widgetconfigurationintent) function to access the widget’s intent. Similarly, if you use an [`IntentConfiguration`](intentconfiguration.md), the user activity’s [`interaction`](https://developer.apple.com/documentation/foundation/nsuseractivity/1690346-interaction) property contains the associated [`INIntent`](https://developer.apple.com/documentation/Intents/INIntent).
-
-If you use an [`AppIntentConfiguration`](appintentconfiguration.md) to configure your widget, use the [`widgetConfigurationIntent(of:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/4226429-widgetconfigurationintent) function to access the widget’s intent. Similarly, if you use an [`IntentConfiguration`](intentconfiguration.md), the user activity’s [`interaction`](https://developer.apple.com/documentation/foundation/nsuseractivity/1690346-interaction) property contains the associated [`INIntent`](https://developer.apple.com/documentation/Intents/INIntent).
 
 ## See Also
 
@@ -66,4 +60,4 @@ If you use an [`AppIntentConfiguration`](appintentconfiguration.md) to configure
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/linking-to-specific-app-scenes-from-your-widget-or-live-activity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/linking-to-specific-app-scenes-from-your-widget-or-live-activity)*

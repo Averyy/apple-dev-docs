@@ -1,6 +1,6 @@
 # Adopting New Safari Web Extension APIs
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Improve your web extension in Safari with a non-persistent background page and new tab-override customization.
 
@@ -13,8 +13,6 @@ Improve your web extension in Safari with a non-persistent background page and n
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 sessions [`10027: Explore Safari Web Extension Improvements`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10027/); and [`10104: Meet Safari Web Extensions on iOS`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10104/).
-
-This sample code project is associated with WWDC21 sessions [`10027: Explore Safari Web Extension Improvements`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10027/); and [`10104: Meet Safari Web Extensions on iOS`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10104/).
 
 ##### Configure the Sample Code Project
 
@@ -49,4 +47,4 @@ On iOS, to run on a device:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/adopting-new-safari-web-extension-apis)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/adopting-new-safari-web-extension-apis)*

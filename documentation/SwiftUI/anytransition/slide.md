@@ -1,6 +1,6 @@
 # slide
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 A transition that inserts by moving in from the leading edge, and removes by moving out towards the trailing edge.
@@ -24,8 +24,6 @@ static var slide: AnyTransition { get }
 
 > **Note**: `AnyTransition.move(edge:)`
 
-`AnyTransition.move(edge:)`
-
 ## See Also
 
 - [static let identity: AnyTransition](anytransition/identity.md)
@@ -46,4 +44,4 @@ static var slide: AnyTransition { get }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/anytransition/slide)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/anytransition/slide)*

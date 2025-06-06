@@ -26,8 +26,6 @@ This property will contain YES when the file wrapper is a directory file wrapper
 
 > **Note**:  Invocations of [`read(from:options:)`](filewrapper/read(from:options:).md) may change the value of this property, if the type of the file on disk has changed.
 
- Invocations of [`read(from:options:)`](filewrapper/read(from:options:).md) may change the value of this property, if the type of the file on disk has changed.
-
 ## See Also
 
 - [var isRegularFile: Bool](filewrapper/isregularfile.md)

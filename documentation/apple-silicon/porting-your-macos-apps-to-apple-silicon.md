@@ -1,6 +1,6 @@
 # Porting your macOS apps to Apple silicon
 
-**Framework**: Apple silicon
+**Framework**: Apple Silicon
 
 Create a version of your macOS app that runs on both Apple silicon and Intel-based Mac computers.
 
@@ -15,8 +15,6 @@ To build a universal binary, you need Xcode 12 or a later version, which adds `a
 After you create a universal binary, test it on both architectures and determine whether you need to make additional changes. macOS frameworks shield apps from most architectural differences between platforms, but some differences may still require you to change your code. In addition, architectural differences may affect your app’s performance and require further changes.
 
 > **Note**: On Apple silicon, apps built for the `x86_64` architecture run under the Rosetta translation environment. For more information, see [`About the Rosetta translation environment`](about-the-rosetta-translation-environment.md).
-
-On Apple silicon, apps built for the `x86_64` architecture run under the Rosetta translation environment. For more information, see [`About the Rosetta translation environment`](about-the-rosetta-translation-environment.md).
 
 To learn how to build a universal binary, see [`Building a universal macOS binary`](building-a-universal-macos-binary.md).
 
@@ -80,8 +78,6 @@ The following list identifies several known architectural differences between Ap
 - C++ ABI details
 
 > **Note**: Both Apple silicon and Intel-based Mac computers use the little-endian format for data, so you don’t need to make endian conversions in your code. However, continue to minimize the need for endian conversions in custom data formats that you create.
-
-Both Apple silicon and Intel-based Mac computers use the little-endian format for data, so you don’t need to make endian conversions in your code. However, continue to minimize the need for endian conversions in custom data formats that you create.
 
 For additional information about architectural differences, see [`Addressing architectural differences in your macOS code`](addressing-architectural-differences-in-your-macos-code.md).
 

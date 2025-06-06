@@ -1,6 +1,6 @@
 # About the EXT-X-VERSION tag
 
-**Framework**: HTTP Live Streaming
+**Framework**: Http Live Streaming
 
 Find the protocol version that corresponds with the HLS features your app supports.
 
@@ -28,8 +28,6 @@ The `EXT-X-VERSION` tag indicates the compatibility version of the Playlist file
 
 > ❗ **Important**: Older clients ignore backward-compatible features and will still play back the content in some form. Specify only the protocol version that’s required for backward compatibility in a given feature. For example, you don’t have to specify protocol version 5 if you’ve just added SUBTITLES.
 
-Older clients ignore backward-compatible features and will still play back the content in some form. Specify only the protocol version that’s required for backward compatibility in a given feature. For example, you don’t have to specify protocol version 5 if you’ve just added SUBTITLES.
-
 The following features aren’t backward compatible. Older clients may fail to play the content if you use these features but don’t specify the protocol version where they were introduced:
 
 - You must use at least protocol version 2 if you have `IV` in `EXT-X-KEY`.
@@ -49,8 +47,6 @@ The following features aren’t backward compatible. Older clients may fail to p
 The following tables list the versions of specifications where specific features are described, along with the corresponding iOS release that supports those features.
 
 > **Note**: Over time, HLS has been described by different documents: draft-pantos-http-live-streaming, which became [`RFC 8216`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc8216), and now [`draft-pantos-hls-rfc8216bis`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis).
-
-Over time, HLS has been described by different documents: draft-pantos-http-live-streaming, which became [`RFC 8216`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc8216), and now [`draft-pantos-hls-rfc8216bis`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis).
 
 ##### Draft Pantos Http Live Streaming and Rfc 8216
 
@@ -97,8 +93,6 @@ Over time, HLS has been described by different documents: draft-pantos-http-live
 
 > ❗ **Important**: Always use the most recent version of the [`HTTP Live Streaming tools`](https://developer.apple.comhttps://developer.apple.com/go/?id=http-live-streaming-tools) to generate or test your HTTP Live Streams.
 
-Always use the most recent version of the [`HTTP Live Streaming tools`](https://developer.apple.comhttps://developer.apple.com/go/?id=http-live-streaming-tools) to generate or test your HTTP Live Streams.
-
 ## See Also
 
 - [Example playlists for HTTP Live Streaming](example-playlists-for-http-live-streaming.md)
@@ -107,4 +101,4 @@ Always use the most recent version of the [`HTTP Live Streaming tools`](https://
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/about-the-ext-x-version-tag)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/about-the-ext-x-version-tag)*

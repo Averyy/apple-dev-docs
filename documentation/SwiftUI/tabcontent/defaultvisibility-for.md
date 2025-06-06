@@ -1,6 +1,6 @@
 # defaultVisibility(_:for:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Configures the default visibility of a tab in customizable contexts.
@@ -26,8 +26,6 @@ The [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) style supports custom
 This modifier has no effect on other platforms or on a [`TabViewStyle`](tabviewstyle.md) that doesn’t support customization.
 
 > **Note**: Tabs in the sidebar represent all of the of tabs in [`TabView`](tabview.md). A tab that’s hidden from the sidebar is also hidden from the top bar.
-
-Tabs in the sidebar represent all of the of tabs in [`TabView`](tabview.md). A tab that’s hidden from the sidebar is also hidden from the top bar.
 
 The following example shows a `TabView` with three tabs, one of which is hidden by default in the sidebar.
 

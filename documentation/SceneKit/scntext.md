@@ -1,6 +1,6 @@
 # SCNText
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: class
 
 A geometry based on a string of text, optionally extruded to create a three-dimensional object.
@@ -31,8 +31,6 @@ In the local coordinate system of the text geometry, the origin corresponds to t
 To position and orient a text geometry in a scene, attach it to the [`geometry`](scnnode/geometry.md) property of an [`SCNNode`](scnnode.md) object.
 
 > **Note**:  SceneKit creates geometry from text in a local coordinate system where one unit is one typographic point. For example, a text geometry whose font is Helvetica 36 (the default) may be up to 36 units tall. If your scene is arranged on a different scale, use the [`scale`](scnnode/scale.md) property of the node containing the text geometry to make it fit within your scene.
-
- SceneKit creates geometry from text in a local coordinate system where one unit is one typographic point. For example, a text geometry whose font is Helvetica 36 (the default) may be up to 36 units tall. If your scene is arranged on a different scale, use the [`scale`](scnnode/scale.md) property of the node containing the text geometry to make it fit within your scene.
 
 SceneKit can optionally  an extruded text geometry by applying a cross-sectional contour to its extruded depth. You use the [`chamferRadius`](scntext/chamferradius.md) property to add a chamfer to the extruded text, and the [`chamferProfile`](scntext/chamferprofile.md) property to control the shape of the chamfer.
 
@@ -101,4 +99,4 @@ SceneKit can render each element using a different material. For details, see th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scntext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SceneKit/scntext)*

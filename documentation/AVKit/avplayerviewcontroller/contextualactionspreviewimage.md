@@ -1,6 +1,6 @@
 # contextualActionsPreviewImage
 
-**Framework**: AVKit  
+**Framework**: Avkit  
 **Kind**: property
 
 An image to show alongside the contextual actions.
@@ -20,8 +20,6 @@ An image to show alongside the contextual actions.
 Use this to enhance a contextual action with more context. For example, if the action presents a button to jump back in time, show a preview frame of where in the movie the action skips to.
 
 > **Note**:  The system only displays an image if the [`contextualActions`](avplayerviewcontroller/contextualactions.md) property contains a single value.
-
- The system only displays an image if the [`contextualActions`](avplayerviewcontroller/contextualactions.md) property contains a single value.
 
 ## See Also
 
@@ -43,4 +41,4 @@ Use this to enhance a contextual action with more context. For example, if the a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avplayerviewcontroller/contextualactionspreviewimage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avplayerviewcontroller/contextualactionspreviewimage)*

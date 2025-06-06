@@ -1,6 +1,6 @@
 # luminanceNoiseReductionAmount
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: instp
 
 A value that indicates the amount of luminance noise reduction to apply to the image.
@@ -24,8 +24,6 @@ var luminanceNoiseReductionAmount: Float { get set }
 The value should be in the range of `0...1`. The default value varies by image. A value of `0` indicates no luminance noise reduction, and a value of `1` indicates maximum luminance noise reduction.
 
 > **Note**: The [`isLuminanceNoiseReductionSupported`](cirawfilter/3801638-isluminancenoisereductionsupport.md) property is [`false`](https://developer.apple.com/documentation/swift/false) if the current image doesn’t support this adjustment.
-
-The [`isLuminanceNoiseReductionSupported`](cirawfilter/3801638-isluminancenoisereductionsupport.md) property is [`false`](https://developer.apple.com/documentation/swift/false) if the current image doesn’t support this adjustment.
 
 ## See Also
 

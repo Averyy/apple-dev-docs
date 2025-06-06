@@ -1,6 +1,6 @@
 # activitySummaryType()
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: method
 
 Returns the shared activity summary type.
@@ -28,8 +28,6 @@ The shared [`HKActivitySummaryType`](hkactivitysummarytype.md) instance.
 This method returns an instance of the [`HKActivitySummaryType`](hkactivitysummarytype.md) concrete subclass. Use this type to request permission to read [`HKActivitySummary`](hkactivitysummary.md) objects from the HealthKit store.
 
 > **Note**:  You cannot request permission to share [`HKActivitySummary`](hkactivitysummary.md) objects.
-
- You cannot request permission to share [`HKActivitySummary`](hkactivitysummary.md) objects.
 
 
 ---

@@ -1,6 +1,6 @@
 # toolbar(_:for:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Specifies the visibility of a bar managed by SwiftUI.
@@ -56,8 +56,6 @@ TabView {
 ```
 
 > **Note**: In macOS, if you provide [`ToolbarCommands`](toolbarcommands.md) to the scene of your app, this modifier disables the toolbar visibility command while the value of the modifier is not [`automatic`](toolbarplacement/automatic.md).
-
-In macOS, if you provide [`ToolbarCommands`](toolbarcommands.md) to the scene of your app, this modifier disables the toolbar visibility command while the value of the modifier is not [`automatic`](toolbarplacement/automatic.md).
 
 Depending on the specified bars, the requested visibility may not be able to be fulfilled.
 

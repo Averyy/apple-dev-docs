@@ -1,6 +1,6 @@
 # init(timerInterval:countsDown:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: init
 
 Creates a progress view for showing continuous progress as time passes.
@@ -44,8 +44,6 @@ By default, the progress view empties as time passes from the start of the date 
 The progress view provided by this initializer omits a descriptive label and provides a text label that automatically updates to describe the current time remaining. To provide custom views for these labels, use [`init(value:total:label:currentValueLabel:)`](progressview/init(value:total:label:currentvaluelabel:).md) instead.
 
 > **Note**: Date-relative progress views, such as those created with this initializer, don’t support custom styles.
-
-Date-relative progress views, such as those created with this initializer, don’t support custom styles.
 
 ## Parameters
 

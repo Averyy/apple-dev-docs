@@ -43,8 +43,6 @@ override func didReceive(_ message: MSMessage, conversation: MSConversation) {
 
 > **Note**:  There is an inherent race condition when multiple participants send messages using the same session object. You cannot guarantee the order in which the messages are received. To ensure that your app always has the latest data, save your data to a server (for example, using CloudKit) and have your messages just carry an ID for that data. Your app can then look up the current data whenever it receives a new message.
 
- There is an inherent race condition when multiple participants send messages using the same session object. You cannot guarantee the order in which the messages are received. To ensure that your app always has the latest data, save your data to a server (for example, using CloudKit) and have your messages just carry an ID for that data. Your app can then look up the current data whenever it receives a new message.
-
 This method is called when a new message arrives while your extension is active. You receive notifications about messages sent using your extension only. You cannot interact with messages from other extensions.
 
 The system does not call this method if the controller’s [`presentationStyle`](msmessagesappviewcontroller/presentationstyle.md) property is [`MSMessagesAppPresentationStyle.transcript`](msmessagesapppresentationstyle/transcript.md), or if its [`presentationContext`](msmessagesappviewcontroller/presentationcontext.md) property is [`MSMessagesAppPresentationContext.media`](msmessagesapppresentationcontext/media.md).

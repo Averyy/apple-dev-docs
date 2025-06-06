@@ -50,8 +50,6 @@ If the sequence has no elements, `updateAccumulatingResult` is never executed an
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## Parameters
 
 - `initialResult`: The value to use as the initial accumulating value.

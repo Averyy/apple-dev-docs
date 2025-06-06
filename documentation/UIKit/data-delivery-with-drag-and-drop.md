@@ -1,6 +1,6 @@
 # Data delivery with drag and drop
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Share data between iPad apps during a drag and drop operation using an item provider.
 
@@ -50,8 +50,6 @@ func tableView(_ tableView: UITableView,
 ```
 
 > **Note**: For information on how to select multiple items for a drag and drop operation using the Simulator, see [`Simulate drag and drop on iOS`](https://developer.apple.comhttps://help.apple.com/simulator/mac/current/index.html?localePath=en.lproj#/devef03b3518).
-
-For information on how to select multiple items for a drag and drop operation using the Simulator, see [`Simulate drag and drop on iOS`](https://developer.apple.comhttps://help.apple.com/simulator/mac/current/index.html?localePath=en.lproj#/devef03b3518).
 
 In both cases, the [`UITableViewDragDelegate`](uitableviewdragdelegate.md) methods create item providers using instances of the `ContactCard` class. This class implements the [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting) protocol, making it possible to initialize a new item provider with a contact card object.
 
@@ -131,4 +129,4 @@ _ = dropItem.dragItem.itemProvider.loadObject(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/data-delivery-with-drag-and-drop)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/data-delivery-with-drag-and-drop)*

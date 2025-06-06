@@ -1,6 +1,6 @@
 # User Management Entitlement
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 The entitlement for distinguishing between multiple user accounts on Apple TV.
@@ -15,8 +15,6 @@ To configure the entitlement, add the User Management capability on your app’s
 For guidance on choosing a data management strategy for your app, see [`Personalizing Your App for Each User on Apple TV`](https://developer.apple.com/documentation/TVServices/personalizing-your-app-for-each-user-on-apple-tv). For an example of how to use this entitlement in your tvOS app, see [`Mapping Apple TV users to app profiles`](https://developer.apple.com/documentation/TVServices/mapping-apple-tv-users-to-app-profiles).
 
 > **Note**:  You can enable `runs-as-current-user` if your app’s minimum version is earlier than tvOS 14, but the app will behave as if the privilege isn’t set when running on the earlier version.
-
- You can enable `runs-as-current-user` if your app’s minimum version is earlier than tvOS 14, but the app will behave as if the privilege isn’t set when running on the earlier version.
 
 ## See Also
 

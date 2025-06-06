@@ -1,6 +1,6 @@
 # Drag and Drop
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 Support the direct manipulation of your app’s content using drag and drop.
 
@@ -9,8 +9,6 @@ Support the direct manipulation of your app’s content using drag and drop.
 With very little programming on your part, custom-view objects can be dragged and dropped anywhere. Objects become part of this dragging mechanism by conforming to dragging protocols: Draggable objects conform to the [`NSDraggingSource`](nsdraggingsource.md) protocol, and destination objects (that is, receivers of a drop) conform to the [`NSDraggingDestination`](nsdraggingdestination.md) protocol. AppKit hides all the details of tracking the cursor and displaying the dragged image.
 
 > **Note**:  To learn how to adopt drag and drop in your iOS app, see [`Drag and drop`](https://developer.apple.com/documentation/UIKit/drag-and-drop).
-
- To learn how to adopt drag and drop in your iOS app, see [`Drag and drop`](https://developer.apple.com/documentation/UIKit/drag-and-drop).
 
 To learn how to use drag and drop for an image view, see [`Supporting Drag and Drop Through File Promises`](supporting-drag-and-drop-through-file-promises.md). To use drag and drop in a table view, see [`Supporting Table View Drag and Drop Through File Promises`](supporting-table-view-drag-and-drop-through-file-promises.md). For an example of drag and drop in a collection view, see [`Supporting Collection View Drag and Drop Through File Promises`](supporting-collection-view-drag-and-drop-through-file-promises.md), and for an outline view: [`Navigating Hierarchical Data Using Outline and Split Views`](navigating-hierarchical-data-using-outline-and-split-views.md).
 
@@ -49,4 +47,4 @@ To learn how to use drag and drop for an image view, see [`Supporting Drag and D
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/drag-and-drop)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/drag-and-drop)*

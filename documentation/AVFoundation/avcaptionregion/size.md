@@ -1,6 +1,6 @@
 # size
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The height and width of the region.
@@ -22,8 +22,6 @@ var size: AVCaptionSize { get }
 CEA608 closed captions limit the [`height`](avcaptionsize/height.md) property’s value to 1 cell, except when the value of its [`scroll`](avcaptionregion/scroll-swift.property.md) property is [`AVCaptionRegion.Scroll.rollUp`](avcaptionregion/scroll-swift.enum/rollup.md). In this case, the [`height`](avcaptionsize/height.md) property’s value must be 2, 3 or 4 cells.
 
 > **Note**:  The caption size has an unspecified height and width when the region doesn’t have width or height information.
-
- The caption size has an unspecified height and width when the region doesn’t have width or height information.
 
 ## See Also
 

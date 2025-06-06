@@ -1,6 +1,6 @@
 # kSpeechPitchModProperty
 
-**Framework**: Application Services  
+**Framework**: Applicationservices  
 **Kind**: data
 
 Get or set a speech channel’s pitch modulation.
@@ -23,8 +23,6 @@ Pitch modulation is also expressed as a floating-point value in the range of 0.0
 This property works with the [`CopySpeechProperty(_:_:_:)`](1459075-copyspeechproperty.md) and [`SetSpeechProperty(_:_:_:)`](1459256-setspeechproperty.md) functions.
 
 > **Note**: The change in pitch modulation may not be noticeable until the next sentence or paragraph is spoken.
-
-The change in pitch modulation may not be noticeable until the next sentence or paragraph is spoken.
 
 
 ---

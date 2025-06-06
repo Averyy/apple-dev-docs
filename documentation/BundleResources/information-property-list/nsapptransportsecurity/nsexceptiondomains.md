@@ -1,6 +1,6 @@
 # NSExceptionDomains
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: dictionary
 
 Custom App Transport Security (ATS) configurations for named domains.
@@ -33,8 +33,6 @@ Follow these rules when setting a domain name string:
 
 > **Note**:  If you exclude a DNS domain name and your app contacts a host by IP address, the ATS exclusion for the domain name doesn’t apply to the connection even if a DNS query for the domain name would resolve to the IP address. If you exclude an IP address and your app contacts a host by DNS name that resolves to that IP address, the ATS exclusion for the IP address doesn’t apply to the connection.
 
- If you exclude a DNS domain name and your app contacts a host by IP address, the ATS exclusion for the domain name doesn’t apply to the connection even if a DNS query for the domain name would resolve to the IP address. If you exclude an IP address and your app contacts a host by DNS name that resolves to that IP address, the ATS exclusion for the IP address doesn’t apply to the connection.
-
 -  — Use `example.com`, not `example.com:443`.
 -  — For example, `example.com.` (with a trailing dot) matches “example.com.” but not “example.com”. Similarly, `example.com` matches “example.com” but not “example.com.”.
 -  — Don’t use `*.example.com`. Instead, use `example.com` and set [`NSIncludesSubdomains`](information-property-list/nsincludessubdomains.md) to `YES`.
@@ -42,8 +40,6 @@ Follow these rules when setting a domain name string:
 The values for the keys in each individual domain’s dictionary control how ATS treats connections made to that domain.
 
 > **Note**:  If you specify an exception domain dictionary, ATS ignores any global configuration keys, like [`NSAllowsArbitraryLoads`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloads.md), for that domain. This is true even if you leave the domain-specific dictionary empty and rely entirely on its keys’ default values.
-
- If you specify an exception domain dictionary, ATS ignores any global configuration keys, like [`NSAllowsArbitraryLoads`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloads.md), for that domain. This is true even if you leave the domain-specific dictionary empty and rely entirely on its keys’ default values.
 
 ## Topics
 

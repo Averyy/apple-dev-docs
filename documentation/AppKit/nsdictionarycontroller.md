@@ -1,6 +1,6 @@
 # NSDictionaryController
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A bindings-compatible controller that manages the display and editing of a dictionary of key-value pairs.
@@ -27,8 +27,6 @@ An [`NSDictionaryController`](nsdictionarycontroller.md) instance can be configu
 The [`arrangedObjects`](nsarraycontroller/arrangedobjects.md) method returns an array of objects that implement the [`NSDictionaryControllerKeyValuePair`](nsdictionarycontrollerkeyvaluepair.md) informal protocol. User interface controls are bound to the arranged objects array using key paths such as: `arrangedObjects.key` (displays the key name), `arrangedObjects.value` (displays the value for the key), or `arrangedObjects.localizedKey` (displays the localized key name). See [`NSDictionaryControllerKeyValuePair`](nsdictionarycontrollerkeyvaluepair.md) for more information.
 
 > **Note**:  You must enable the “Validates Immediately” option for the value binding of all controls that edit the key names or values returned by [`arrangedObjects`](nsarraycontroller/arrangedobjects.md).
-
- You must enable the “Validates Immediately” option for the value binding of all controls that edit the key names or values returned by [`arrangedObjects`](nsarraycontroller/arrangedobjects.md).
 
 [`NSDictionaryController`](nsdictionarycontroller.md) overrides [`arrangedObjects`](nsarraycontroller/arrangedobjects.md) to return an array of objects that implement the [`NSDictionaryControllerKeyValuePair`](nsdictionarycontrollerkeyvaluepair.md) informal protocol. See [`NSDictionaryControllerKeyValuePair`](nsdictionarycontrollerkeyvaluepair.md) and [`Cocoa Bindings Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html#//apple_ref/doc/uid/10000167i) for more information.
 
@@ -98,4 +96,4 @@ The constants listed below are used to specify a binding to [`bind(_:to:withKeyP
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsdictionarycontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsdictionarycontroller)*

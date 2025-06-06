@@ -1,6 +1,6 @@
 # hitTest(_:with:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Returns the farthest descendant in the view hierarchy of the current view, including itself, that contains the specified point.
@@ -36,8 +36,6 @@ This method ignores view objects that are hidden, that have disabled user intera
 This method doesn’t report points that lie outside the view’s bounds as hits, even if they actually lie within one of the view’s subviews. This situation can occur if the view’s [`clipsToBounds`](uiview/clipstobounds.md) property is [`false`](https://developer.apple.com/documentation/swift/false) and the affected subview extends beyond the view’s bounds.
 
 > **Note**:  When the system calls this method to perform hit-testing for event routing, it expects the resulting view to be part of a [`UIWindow`](uiwindow.md) hierarchy.
-
- When the system calls this method to perform hit-testing for event routing, it expects the resulting view to be part of a [`UIWindow`](uiwindow.md) hierarchy.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Integrating custom data types into your intents
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
 
@@ -33,8 +33,6 @@ var id: UUID
 ```
 
 > **Note**: Wherever possible, use one of the three optimized data types for entity identifiers. If you must use a different data type, extend that type and implement the required support. For more information, see [`EntityIdentifierConvertible`](entityidentifierconvertible.md).
-
-Wherever possible, use one of the three optimized data types for entity identifiers. If you must use a different data type, extend that type and implement the required support. For more information, see [`EntityIdentifierConvertible`](entityidentifierconvertible.md).
 
 ##### Provide a Visual Representation for Your Entity
 
@@ -151,8 +149,6 @@ extension ActivityStyle: AppEnum {
 
 > ❗ **Important**: Don’t adopt both protocols in the same type; use [`AppEntity`](appentity.md) for types that provide dynamic values and [`AppEnum`](appenum.md) for types that provide a limited set of static values.
 
-Don’t adopt both protocols in the same type; use [`AppEntity`](appentity.md) for types that provide dynamic values and [`AppEnum`](appenum.md) for types that provide a limited set of static values.
-
 To provide descriptions for each of your app enum’s values, add the protocol’s required [`caseDisplayRepresentations`](casedisplayrepresentable/casedisplayrepresentations.md) variable. Return a dictionary that maps the values to their display representations.
 
 ```swift
@@ -203,4 +199,4 @@ For more information, see [`DisplayRepresentation`](displayrepresentation.md).
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/integrating-custom-types-into-your-intents)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/integrating-custom-types-into-your-intents)*

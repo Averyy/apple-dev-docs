@@ -1,6 +1,6 @@
 # Streaming an AR experience
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Control an AR experience remotely by transferring sensor and user input over the network.
 
@@ -44,8 +44,6 @@ if type == .video {
 ```
 
 > **Note**: Although [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) provides a  [`snapshot(saveToHDR:completion:)`](https://developer.apple.com/documentation/RealityKit/ARView/snapshot(saveToHDR:completion:)-66jzu) function to capture the contents of the view, ReplayKit’s screen recording is more conducive to real-time capture.
-
-Although [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) provides a  [`snapshot(saveToHDR:completion:)`](https://developer.apple.com/documentation/RealityKit/ARView/snapshot(saveToHDR:completion:)-66jzu) function to capture the contents of the view, ReplayKit’s screen recording is more conducive to real-time capture.
 
 #### Compress and Send Frames to the Peer
 
@@ -225,8 +223,6 @@ To enable the remote user to interact with the user’s AR experience, the app p
 
 > ❗ **Important**: AR Stream displays a virtual ball for simplicity. An app may require different virtual content, such as an arrow that points to a precise spot, or virtual text that explains the importance of a location. For an example app that displays text at a real-world location, see [`Creating screen annotations for objects in an AR experience`](creating-screen-annotations-for-objects-in-an-ar-experience.md).
 
-AR Stream displays a virtual ball for simplicity. An app may require different virtual content, such as an arrow that points to a precise spot, or virtual text that explains the importance of a location. For an example app that displays text at a real-world location, see [`Creating screen annotations for objects in an AR experience`](creating-screen-annotations-for-objects-in-an-ar-experience.md).
-
 The project creates this visual marker using a ball-shaped [`ModelEntity`](https://developer.apple.com/documentation/RealityKit/ModelEntity).
 
 ```swift
@@ -264,4 +260,4 @@ marker.isEnabled = true
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/streaming-an-ar-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/streaming-an-ar-experience)*

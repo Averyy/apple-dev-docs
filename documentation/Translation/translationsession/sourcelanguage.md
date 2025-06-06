@@ -22,8 +22,6 @@ If this value is set to `nil` the session tries to identify the source language 
 
 > **Note**: This value doesn’t update after translation; to see what source language the session uses for a particular translation, check the response [`sourceLanguage`](translationsession/response/sourcelanguage.md).
 
-This value doesn’t update after translation; to see what source language the session uses for a particular translation, check the response [`sourceLanguage`](translationsession/response/sourcelanguage.md).
-
 ## See Also
 
 - [let targetLanguage: Locale.Language?](translationsession/targetlanguage.md)

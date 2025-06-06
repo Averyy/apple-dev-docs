@@ -1,6 +1,6 @@
 # Simulating Scratchy Analog Film
 
-**Framework**: Core Image
+**Framework**: Coreimage
 
 Degrade the quality of an image to make it look like dated, analog film.
 
@@ -33,8 +33,6 @@ let sepiaCIImage = sepiaFilter.outputImage
 You can use the output of the [`randomGenerator()`](cifilter/3228396-randomgenerator.md) filter to generate images containing random noise. Even though the noise pattern isn’t customizable in size, you can extend and crop it to fit the image.
 
 > **Note**: The image output from [`randomGenerator()`](cifilter/3228396-randomgenerator.md) is always the same; even if you reseed your random number generator, the image output from this filter is always the same 512x512 pattern. However, it’s suitable for giving the appearance of randomness. For truly random noise generation, see [`GameplayKit`](https://developer.apple.com/documentation/gameplaykit).
-
-The image output from [`randomGenerator()`](cifilter/3228396-randomgenerator.md) is always the same; even if you reseed your random number generator, the image output from this filter is always the same 512x512 pattern. However, it’s suitable for giving the appearance of randomness. For truly random noise generation, see [`GameplayKit`](https://developer.apple.com/documentation/gameplaykit).
 
 The filter takes no inputs.
 

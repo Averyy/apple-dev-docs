@@ -1,6 +1,6 @@
 # Supporting multiple windows on iPad
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Support side-by-side instances of your app’s interface and create new windows.
 
@@ -21,8 +21,6 @@ UIKit provides a subclass of `UISceneDelegate` called [`UIWindowSceneDelegate`](
 For more information on multiple windows in an iPadOS app, refer to [`Human Interface Guidelines for iOS`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/multiple-windows/).
 
 > **Note**: This sample code project was discussed and demonstrated at WWDC 2019 session 212: [`Introducing Multiple Windows on iPad`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/212).
-
-This sample code project was discussed and demonstrated at WWDC 2019 session 212: [`Introducing Multiple Windows on iPad`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/212).
 
 ##### Configure the Sample Code Project
 
@@ -176,4 +174,4 @@ func application(_ application: UIApplication,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-multiple-windows-on-ipad)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-multiple-windows-on-ipad)*

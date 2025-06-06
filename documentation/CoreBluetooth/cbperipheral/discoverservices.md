@@ -1,6 +1,6 @@
 # discoverServices(_:)
 
-**Framework**: Core Bluetooth  
+**Framework**: Corebluetooth  
 **Kind**: method
 
 Discovers the specified services of the peripheral.
@@ -25,8 +25,6 @@ func discoverServices(_ serviceUUIDs: [CBUUID]?)
 You can provide an array of [`CBUUID`](cbuuid.md) objects—representing service UUIDs—in the `serviceUUIDs` parameter. When you do, the peripheral returns only the services of the peripheral that match the provided UUIDs.
 
 > **Note**:  If the `servicesUUIDs` parameter is `nil`, this method returns all of the peripheral’s available services. This is much slower than providing an array of service UUIDs to search for.
-
- If the `servicesUUIDs` parameter is `nil`, this method returns all of the peripheral’s available services. This is much slower than providing an array of service UUIDs to search for.
 
 When the peripheral discovers one or more services, it calls the [`peripheral(_:didDiscoverServices:)`](cbperipheraldelegate/peripheral(_:diddiscoverservices:).md): method of its delegate object. After a peripheral discovers services, you can access them through the peripheral’s [`services`](cbperipheral/services.md) property.
 

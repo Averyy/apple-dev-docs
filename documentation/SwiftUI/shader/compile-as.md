@@ -1,6 +1,6 @@
 # compile(as:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Attempts to asynchronously compile a shader function, to minimize the chance of stalling when it is first used for rendering.
@@ -44,8 +44,6 @@ Circle().fill(
 ```
 
 > **Note**: An error describing why compilation failed.
-
-An error describing why compilation failed.
 
 ## Parameters
 

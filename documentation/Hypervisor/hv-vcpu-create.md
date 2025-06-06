@@ -26,8 +26,6 @@ Intel-based Mac computers have different parameters:
 
 > **Note**:  Using the [`HV_VCPU_TSC_RELATIVE`](hv_vcpu_tsc_relative.md) flag enables use of the Time-Stamp Counter (TSC) relative offset capabilities, but disables the default TSC for vCPUs that you create with this flag.
 
- Using the [`HV_VCPU_TSC_RELATIVE`](hv_vcpu_tsc_relative.md) flag enables use of the Time-Stamp Counter (TSC) relative offset capabilities, but disables the default TSC for vCPUs that you create with this flag.
-
 ## Parameters
 
 - `vcpu`: An argument that the hypervisor populates with the instance of a vCPU on a successful return.

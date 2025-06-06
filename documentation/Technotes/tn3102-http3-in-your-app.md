@@ -121,8 +121,6 @@ For cases where `HTTP/3` is not supported on the server, or over the network, yo
 
 > **Note**: Servers that support `HTTP/3` need to be based on Draft 29 or later.
 
-Servers that support `HTTP/3` need to be based on Draft 29 or later.
-
 If you experience issues while debugging your network transactions, take a look at these requests in the Network Instruments tool to debug what you are seeing being sent back from your server. For more on this, see the article for [`Analyzing HTTP Traffic with Instruments`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/url_loading_system/analyzing_http_traffic_with_instruments).
 
 #### Revision History
@@ -167,4 +165,4 @@ If you experience issues while debugging your network transactions, take a look 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3102-http3-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3102-http3-in-your-app)*

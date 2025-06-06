@@ -1,6 +1,6 @@
 # setMode(_:)
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: method
 
 Sets the audio session’s mode.
@@ -24,8 +24,6 @@ func setMode(_ mode: AVAudioSession.Mode) throws
 The audio session’s category and mode together define how your app uses audio. Typically, you set the category and mode before activating the session. You can also set the category or mode while the session is active, but doing so results in an immediate change.
 
 > **Note**:  Instead of setting your [`category`](avaudiosession/category-swift.property.md) and [`mode`](avaudiosession/mode-swift.property.md) properties independently, set them at the same time using the [`setCategory(_:mode:options:)`](avaudiosession/setcategory(_:mode:options:).md) or [`setCategory(_:mode:policy:options:)`](avaudiosession/setcategory(_:mode:policy:options:).md) method.
-
- Instead of setting your [`category`](avaudiosession/category-swift.property.md) and [`mode`](avaudiosession/mode-swift.property.md) properties independently, set them at the same time using the [`setCategory(_:mode:options:)`](avaudiosession/setcategory(_:mode:options:).md) or [`setCategory(_:mode:policy:options:)`](avaudiosession/setcategory(_:mode:policy:options:).md) method.
 
 ## Parameters
 

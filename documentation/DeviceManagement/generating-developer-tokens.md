@@ -1,6 +1,6 @@
 # Generating developer tokens
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Create a JSON Web Token to authorize your requests to the Apps and Books for Organizations API.
 
@@ -17,8 +17,6 @@ Use your developer account to [`create a Services identifier and obtain a key ID
 Construct a developer token as a JSON object whose header contains:
 
 > ❗ **Important**:  Apps and Books for Organizations supports only developer tokens signed with the ES256 algorithm. Apps and Books for Organizations rejects unsecured developer tokens or developer tokens signed with other algorithms. These rejections result in a `401` error code.
-
- Apps and Books for Organizations supports only developer tokens signed with the ES256 algorithm. Apps and Books for Organizations rejects unsecured developer tokens or developer tokens signed with other algorithms. These rejections result in a `401` error code.
 
 In the  payload of the token, include:
 
@@ -39,8 +37,6 @@ A decoded developer token has the following format:
 After you create the token, sign it with your private key using the ES256 algorithm.
 
 > **Note**:  ES256 is the [`JSON Web Algorithms (JWA)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
-
- ES256 is the [`JSON Web Algorithms (JWA)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7518) name for the Elliptic Curve Digital Signature Algorithm (ECDSA) with the P-256 curve and the SHA-256 hash.
 
 ##### Authorize Requests
 
@@ -70,4 +66,4 @@ The Apps and Books for Organizations API limits the number of requests your app 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/generating-developer-tokens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/generating-developer-tokens)*

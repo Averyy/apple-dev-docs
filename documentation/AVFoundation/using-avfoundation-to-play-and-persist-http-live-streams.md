@@ -1,6 +1,6 @@
 # Using AVFoundation to play and persist HTTP Live Streams
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Play HTTP Live Streams and persist streams on disk for offline playback using AVFoundation.
 
@@ -16,8 +16,6 @@ This sample provides a catalog of HTTP Live Streams (HLS) that you can play by t
 The sample creates and initializes an [`AVAssetDownloadConfiguration`](avassetdownloadconfiguration.md) and creates a [`AVAssetDownloadTask`](avassetdownloadtask.md) using the download configuration for the download of a stream. The example shows how to set a primary [`AVAssetDownloadContentConfiguration`](avassetdownloadcontentconfiguration.md) and at least one auxiliary content configuration to be downloaded.
 
 > **Note**: This sample doesn’t support saving FairPlay Streaming (FPS) content. For a version of the sample that demonstrates how to download FPS content, see [`FairPlay Streaming Server SDK`](https://developer.apple.comhttps://developer.apple.com/streaming/fps/).
-
-This sample doesn’t support saving FairPlay Streaming (FPS) content. For a version of the sample that demonstrates how to download FPS content, see [`FairPlay Streaming Server SDK`](https://developer.apple.comhttps://developer.apple.com/streaming/fps/).
 
 ##### Configure the Sample Code Project
 
@@ -155,8 +153,6 @@ func downloadStream(for asset: Asset) async throws {
 
 > **Note**: You can’t save an HTTP Live Stream while it’s in progress. If you try to save a live stream, the system throws an exception. Only Video On Demand (VOD) streams support offline playback.
 
-You can’t save an HTTP Live Stream while it’s in progress. If you try to save a live stream, the system throws an exception. Only Video On Demand (VOD) streams support offline playback.
-
 ##### Cancel an Http Live Stream
 
 Tap the button in the corresponding stream’s table view cell to reveal the accessory view, then tap Cancel to stop downloading the stream. The following function in `AssetPersistenceManager` cancels the download by calling the `URLSessionTask` [`cancel()`](https://developer.apple.com/documentation/foundation/urlsessiontask/1411591-cancel) method.
@@ -205,8 +201,6 @@ func deleteAsset(_ asset: Asset) {
 
 > **Note**: You can view the various performance indicators in the console during playback.
 
-You can view the various performance indicators in the console during playback.
-
 For example, here’s the code to calculate the total time spent playing the stream, obtained from the `AVPlayerItemAccessLog`:
 
 ```swift
@@ -234,4 +228,4 @@ var totalDurationWatched: Double {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/using-avfoundation-to-play-and-persist-http-live-streams)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/using-avfoundation-to-play-and-persist-http-live-streams)*

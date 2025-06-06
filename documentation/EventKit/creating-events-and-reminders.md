@@ -1,6 +1,6 @@
 # Creating events and reminders
 
-**Framework**: EventKit
+**Framework**: Eventkit
 
 Create and modify events and reminders in a person’s database.
 
@@ -22,21 +22,15 @@ You can edit the details of a new event or an event you previously fetched from 
 
 > **Note**:  In iOS, you have the option of letting users modify event data with the event view controllers provided in the EventKit UI framework. For information on how to use these event view controllers, see [`EventKit UI`](https://developer.apple.com/documentation/EventKitUI).
 
- In iOS, you have the option of letting users modify event data with the event view controllers provided in the EventKit UI framework. For information on how to use these event view controllers, see [`EventKit UI`](https://developer.apple.com/documentation/EventKitUI).
-
 ###### Save and Delete Events
 
 > ❗ **Important**:  If your app modifies a user’s Calendar database, it must get confirmation from the user before doing so. An app should never modify the Calendar database without specific instruction from the user.
-
- If your app modifies a user’s Calendar database, it must get confirmation from the user before doing so. An app should never modify the Calendar database without specific instruction from the user.
 
 Save your changes to the Calendar database with the [`EKEventStore`](ekeventstore.md) method [`save(_:span:commit:)`](ekeventstore/save(_:span:commit:).md). If you want to remove an event from the Calendar database, use the `EKEventStore` method [`remove(_:span:commit:)`](ekeventstore/remove(_:span:commit:).md). Whether you are saving or removing an event, implementing the respective method automatically syncs your changes with the calendar the event belongs to (CalDAV, Exchange, and so on).
 
 If you are saving a recurring event, your changes can apply to all future occurrences of the event by specifying [`EKSpan.futureEvents`](ekspan/futureevents.md) for the span parameter of the [`save(_:span:commit:)`](ekeventstore/save(_:span:commit:).md) method. Likewise, you can remove all future occurrences of an event by specifying [`EKSpan.futureEvents`](ekspan/futureevents.md) for the `span` parameter of the [`remove(_:span:commit:)`](ekeventstore/remove(_:span:commit:).md) method.
 
 > **Note**:  If you pass `NO` to the `commit` parameter, make sure that you later invoke the [`commit()`](ekeventstore/commit().md) method to permanently save your changes.
-
- If you pass `NO` to the `commit` parameter, make sure that you later invoke the [`commit()`](ekeventstore/commit().md) method to permanently save your changes.
 
 ##### Create Reminders
 
@@ -45,8 +39,6 @@ Reminders are tasks that may be tied to a specific time or location. They are si
 Because [`EKReminder`](ekreminder.md) inherits from [`EKCalendarItem`](ekcalendaritem.md), you can perform the same methods on a reminder as you would on an event, such as adding an alarm with [`addAlarm(_:)`](ekcalendaritem/addalarm(_:).md) or setting a recurrence rule with [`addRecurrenceRule(_:)`](ekcalendaritem/addrecurrencerule(_:).md).
 
 > ❗ **Important**:  If your iOS app links on macOS and you need to access Reminders data, be sure to include the [`NSRemindersUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW16) key in your `Info.plist` file.
-
- If your iOS app links on macOS and you need to access Reminders data, be sure to include the [`NSRemindersUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW16) key in your `Info.plist` file.
 
 You can create reminders using the [`init(eventStore:)`](ekreminder/init(eventstore:).md) class method. The [`title`](ekcalendaritem/title.md) and [`calendar`](ekcalendaritem/calendar.md) properties are required. The calendar for a reminder is the list with which it is grouped.
 
@@ -58,15 +50,11 @@ To save a reminder to the Calendar database, call the [`save(_:commit:)`](ekeven
 
 > **Note**:  Just like when saving or removing events, make sure that if you pass `NO` to the `commit` parameter, you later invoke the [`commit()`](ekeventstore/commit().md) method to save your changes.
 
- Just like when saving or removing events, make sure that if you pass `NO` to the `commit` parameter, you later invoke the [`commit()`](ekeventstore/commit().md) method to save your changes.
-
 ###### Edit Reminders
 
 To associate a start date or due date with a reminder, use the [`startDateComponents`](ekreminder/startdatecomponents.md) and [`dueDateComponents`](ekreminder/duedatecomponents.md) properties. To complete a reminder, set the completed property to `YES`, which automatically sets [`completionDate`](ekreminder/completiondate.md) to the current date.
 
 > ❗ **Important**:  If your app modifies a user’s Calendar database, it must get confirmation from the user before doing so. An app should never modify the Calendar database without specific instruction from the user.
-
- If your app modifies a user’s Calendar database, it must get confirmation from the user before doing so. An app should never modify the Calendar database without specific instruction from the user.
 
 ## See Also
 
@@ -84,4 +72,4 @@ To associate a start date or due date with a reminder, use the [`startDateCompon
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/creating-events-and-reminders)*
+*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/creating-events-and-reminders)*

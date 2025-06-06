@@ -1,6 +1,6 @@
 # init(checkpoint:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: init
 
 Creates a boosted tree classifier from a checkpoint.
@@ -22,8 +22,6 @@ init(checkpoint: MLCheckpoint) throws
 #### Discussion
 
 > **Note**: `MLCreateError` if the checkpoint can’t be loaded.
-
-`MLCreateError` if the checkpoint can’t be loaded.
 
 ## Parameters
 

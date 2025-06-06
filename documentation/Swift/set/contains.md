@@ -41,8 +41,6 @@ if primes.contains(x) {
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `member`: An element to look for in the set.

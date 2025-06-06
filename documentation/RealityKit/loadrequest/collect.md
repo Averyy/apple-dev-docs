@@ -1,6 +1,6 @@
 # collect(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Collects up to the specified number of elements, and then emits a single array of the collection.
@@ -42,8 +42,6 @@ cancellable = numbers.publisher
 ```
 
 > **Note**: When this publisher receives a request for `.max(n)` elements, it requests `.max(count * n)` from the upstream publisher.
-
-When this publisher receives a request for `.max(n)` elements, it requests `.max(count * n)` from the upstream publisher.
 
 ## Parameters
 

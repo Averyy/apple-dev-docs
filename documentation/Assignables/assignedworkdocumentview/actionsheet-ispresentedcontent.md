@@ -51,8 +51,6 @@ struct ConfirmEraseItems: View {
 
 > **Note**: In regular size classes in iOS, the system renders alert sheets as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the default dismiss button.
 
-In regular size classes in iOS, the system renders alert sheets as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the default dismiss button.
-
 ## Parameters
 
 - `isPresented`: A binding to a Boolean value that determines whether   to present the action sheet that you create in the modifier’s    closure. When the user presses or taps the sheet’s default   action button the system sets this value to   dismissing   the sheet.

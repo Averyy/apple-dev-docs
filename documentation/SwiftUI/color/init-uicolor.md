@@ -1,6 +1,6 @@
 # init(uiColor:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: init
 
 Creates a color from a UIKit color.
@@ -37,8 +37,6 @@ The `Box` view defined above automatically changes its appearance when the user 
 ![A side by side comparison of light and dark appearance screenshots of](https://docs-assets.developer.apple.com/published/599bf4a06d3976ad099cbd7337fdc258/Color-init-3%402x.png)
 
 > **Note**: Use this initializer only if you need to convert an existing [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) to a SwiftUI color. Otherwise, create a SwiftUI [`Color`](color.md) using an initializer like [`init(_:red:green:blue:opacity:)`](color/init(_:red:green:blue:opacity:).md), or use a system color like [`blue`](shapestyle/blue.md).
-
-Use this initializer only if you need to convert an existing [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) to a SwiftUI color. Otherwise, create a SwiftUI [`Color`](color.md) using an initializer like [`init(_:red:green:blue:opacity:)`](color/init(_:red:green:blue:opacity:).md), or use a system color like [`blue`](shapestyle/blue.md).
 
 ## See Also
 

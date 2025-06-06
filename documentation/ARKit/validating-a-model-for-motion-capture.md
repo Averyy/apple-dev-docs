@@ -1,6 +1,6 @@
 # Validating a Model for Motion Capture
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Verify that your character model matches ARKit’s Motion Capture requirements.
 
@@ -25,8 +25,6 @@ Although your skeleton must contain all the expected joints in the correct hiera
 Make sure to match the orientation of every joint in your model in its bind post to match the values in the [`model biped skeleton`](https://developer.apple.comhttps://developer.apple.com/sample-code/ar/Biped-Robot.zip).
 
 > **Note**:  Joints in a skeletal model represent any potential point of articulation. While many of the joints correspond to anatomical joints, others simply represent a portion of the model that can be moved or deformed in some way.
-
- Joints in a skeletal model represent any potential point of articulation. While many of the joints correspond to anatomical joints, others simply represent a portion of the model that can be moved or deformed in some way.
 
 ##### Confirm Bind Pose and Binding
 
@@ -188,4 +186,4 @@ The structure and naming convention of the joints of the left hand are similar t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/validating-a-model-for-motion-capture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/validating-a-model-for-motion-capture)*

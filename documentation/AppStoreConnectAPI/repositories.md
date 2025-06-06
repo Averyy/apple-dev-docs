@@ -1,6 +1,6 @@
 # Repositories
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read detailed information for each repository Xcode Cloud can access, including Git references and pull requests.
 
@@ -13,8 +13,6 @@ The `scmRepositories` resource represents Git repositories Xcode Cloud can acces
 - The HTTP and SSH URLs for cloning the repository
 
 > **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
-
- This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
 
@@ -47,4 +45,4 @@ The `scmRepositories` resource represents Git repositories Xcode Cloud can acces
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/repositories)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/repositories)*

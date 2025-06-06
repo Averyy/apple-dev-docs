@@ -1,6 +1,6 @@
 # CPAssistantCellActionType.startCall
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: case
 
 Provides an action that uses Siri to prompt the user for a person, group, or business to call.
@@ -19,8 +19,6 @@ case startCall
 #### Discussion
 
 > **Note**:  This action is only available in communication apps that include an Intents Extension capable of handling doc://com.apple.documentation/documentation/sirikit/instartcallintent. For more information, see [`Creating an Intents App Extension`](https://developer.apple.com/documentation/SiriKit/creating-an-intents-app-extension).
-
- This action is only available in communication apps that include an Intents Extension capable of handling doc://com.apple.documentation/documentation/sirikit/instartcallintent. For more information, see [`Creating an Intents App Extension`](https://developer.apple.com/documentation/SiriKit/creating-an-intents-app-extension).
 
 The system provides the user’s response to your app’s Intents Extension. Your app must respond by identifying the requested person, group, or business and start a voice call with them.
 

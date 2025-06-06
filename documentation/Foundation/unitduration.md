@@ -30,8 +30,6 @@ Duration is a quantity of time. The SI unit for time is the second (sec), which 
 
 > **Note**:  Use the [`NSDateComponents`](nsdatecomponents.md) class to represent quantities of calendrical units, such as days, weeks, months, and years.
 
- Use the [`NSDateComponents`](nsdatecomponents.md) class to represent quantities of calendrical units, such as days, weeks, months, and years.
-
 The [`UnitDuration`](unitduration.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`seconds`](unitduration/seconds.md), and provides the following units, which [`UnitConverterLinear`](unitconverterlinear.md) converters initialize with the given coefficients:
 
 | Name | Method | Symbol | Coefficient |
@@ -89,4 +87,4 @@ The [`UnitDuration`](unitduration.md) class defines its [`baseUnit()`](dimension
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/unitduration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/unitduration)*

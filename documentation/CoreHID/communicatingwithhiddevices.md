@@ -1,6 +1,6 @@
 # Communicating with human interface devices
 
-**Framework**: Core HID
+**Framework**: Corehid
 
 Interact with and obtain data from devices such as keyboards and mice.
 
@@ -9,8 +9,6 @@ Interact with and obtain data from devices such as keyboards and mice.
 To communicate with a human interface device (HID), you must identify and match it using a set of matching critiera. When you match the device, you become its client and can query its properties and capabilities.
 
 > **Note**: Interacting with certain HIDs, such as keyboards, require user approval. Ensure that you grant permission to access the device to use it.
-
-Interacting with certain HIDs, such as keyboards, require user approval. Ensure that you grant permission to access the device to use it.
 
 ##### Locate the Device of Interest
 
@@ -207,4 +205,4 @@ guard leftShiftStateBefore == leftShiftStateAfter else {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehid/communicatingwithhiddevices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHID/communicatingwithhiddevices)*

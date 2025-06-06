@@ -1,6 +1,6 @@
 # discardEvents(matching:before:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Removes all events matching the given mask and generated before the specified event.
@@ -20,8 +20,6 @@ func discardEvents(matching mask: NSEvent.EventTypeMask, before lastEvent: NSEve
 Use this method to ignore any events that occurred before a specific event. For example, suppose your app has a tracking loop that you exit when the user releases the mouse button. You could use this method, specifying `NSAnyEventMask` as the mask argument and the ending mouse-up event as the `lastEvent` argument, to discard all events that occurred while you were tracking mouse movements in your loop. Passing the mouse-up event as `lastEvent` ensures that any events that might have occurred after the mouse-up event (that is, that appear in the queue after the mouse-up event) aren’t discarded.
 
 > **Note**:  Typically, you send this message to an [`NSWindow`](nswindow.md) object, rather than to the app object. Discarding events for a window clears out all of the events for that window only, leaving events for other windows in place.
-
- Typically, you send this message to an [`NSWindow`](nswindow.md) object, rather than to the app object. Discarding events for a window clears out all of the events for that window only, leaving events for other windows in place.
 
 For the `mask` parameter, you can add together event type constants such as the following:
 

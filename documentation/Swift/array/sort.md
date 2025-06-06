@@ -45,8 +45,6 @@ The sorting algorithm is guaranteed to be stable. A stable sort preserves the re
 
 > **Note**: O( log ), where  is the length of the collection.
 
-O( log ), where  is the length of the collection.
-
 ## See Also
 
 - [func sort(by: (Self.Element, Self.Element) throws -> Bool) rethrows](array/sort(by:).md)

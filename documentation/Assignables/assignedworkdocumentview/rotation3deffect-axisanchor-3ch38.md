@@ -23,8 +23,6 @@ A view with rotated content.
 
 > **Note**: During an animation, the angle and each element of the axis is interpolated separately, which may cause undesirable results. To achieve more natural animations, consider using `View/rotation3DEffect(_:anchor:)`
 
-During an animation, the angle and each element of the axis is interpolated separately, which may cause undesirable results. To achieve more natural animations, consider using `View/rotation3DEffect(_:anchor:)`
-
 This modifier rotates the view’s content without changing the view’s frame. The following code displays a 3D model with a rotation of 45° about the y-axis using the default anchor point at the center of the view:
 
 ```None
@@ -33,8 +31,6 @@ Model3D(named: "robot")
 ```
 
 > **Note**: The following example is not equivalent to the previous. This example will use spherical linear interpolation during an animation.
-
-The following example is not equivalent to the previous. This example will use spherical linear interpolation during an animation.
 
 ```swift
 Model3D(named: "robot")

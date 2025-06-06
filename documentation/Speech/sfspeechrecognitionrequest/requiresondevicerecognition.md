@@ -24,8 +24,6 @@ Set this property to [`true`](https://developer.apple.com/documentation/swift/tr
 
 > **Note**:  The request only honors this setting if the [`supportsOnDeviceRecognition`](sfspeechrecognizer/supportsondevicerecognition.md) ([`SFSpeechRecognizer`](sfspeechrecognizer.md)) property is also [`true`](https://developer.apple.com/documentation/swift/true).
 
- The request only honors this setting if the [`supportsOnDeviceRecognition`](sfspeechrecognizer/supportsondevicerecognition.md) ([`SFSpeechRecognizer`](sfspeechrecognizer.md)) property is also [`true`](https://developer.apple.com/documentation/swift/true).
-
 ## See Also
 
 - [var shouldReportPartialResults: Bool](sfspeechrecognitionrequest/shouldreportpartialresults.md)

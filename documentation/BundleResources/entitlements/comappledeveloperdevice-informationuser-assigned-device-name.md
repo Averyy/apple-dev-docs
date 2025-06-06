@@ -1,6 +1,6 @@
 # com.apple.developer.device-information.user-assigned-device-name
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 The entitlement for accessing the user-assigned device name instead of a generic device name.
@@ -28,10 +28,6 @@ To access the user-assigned device name through the [`name`](https://developer.a
 If your app meets the criteria, you can request this entitlement at [`User-Assigned Device Name Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/user-assigned-device-name/).
 
 > **Note**:  Session 10096: [`What’s new in privacy`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10096) Session 10068: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10068)
-
- Session 10096: [`What’s new in privacy`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10096)
-
-Session 10068: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10068)
 
 
 ---

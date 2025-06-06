@@ -22,15 +22,11 @@ Take the opportunity to build trust with the user through your usage description
 
 > ❗ **Important**:  You must include the [`NSSpeechRecognitionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSpeechRecognitionUsageDescription) key in your app’s `Info.plist` file. If this key is not present, your app will crash when it attempts to request authorization or use the APIs of the Speech framework.
 
- You must include the [`NSSpeechRecognitionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSpeechRecognitionUsageDescription) key in your app’s `Info.plist` file. If this key is not present, your app will crash when it attempts to request authorization or use the APIs of the Speech framework.
-
 ##### Request Authorization at First Use
 
 Before using the APIs of the Speech framework, you must call [`requestAuthorization(_:)`](sfspeechrecognizer/requestauthorization(_:).md) on the [`SFSpeechRecognizer`](sfspeechrecognizer.md) object. The method executes asynchronously and delivers the results to a block you provide. Use that block to determine whether the user granted or rejected your request.
 
 > **Note**:  Do not request access to speech recognition if you do not intend to use the feature right away. Instead, delay requests until the user interacts with the portion of your app that uses such features.
-
- Do not request access to speech recognition if you do not intend to use the feature right away. Instead, delay requests until the user interacts with the portion of your app that uses such features.
 
 The first time your app requests authorization to use speech recognition, the system prompts the user to accept or deny that request. The system records the user’s selection so that subsequent requests do not prompt the user again. Instead, subsequent requests return almost immediately with the previously recorded results.
 
@@ -81,4 +77,4 @@ override public func viewDidAppear(_ animated: Bool) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/speech/asking-permission-to-use-speech-recognition)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Speech/asking-permission-to-use-speech-recognition)*

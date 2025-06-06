@@ -1,6 +1,6 @@
 # fileImporter(isPresented:allowedContentTypes:allowsMultipleSelection:onCompletion:)
 
-**Framework**: DeviceActivity  
+**Framework**: Deviceactivity  
 **Kind**: method
 
 Presents a system interface for allowing the user to import multiple files.
@@ -23,8 +23,6 @@ func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], all
 In order for the interface to appear, `isPresented` must be `true`. When the operation is finished, `isPresented` will be set to `false` before `onCompletion` is called. If the user cancels the operation, `isPresented` will be set to `false` and `onCompletion` will not be called.
 
 > **Note**: This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
-
-This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
 
 For example, a button that allows the user to choose multiple PDF files for the application to combine them later, might look like this:
 
@@ -66,8 +64,6 @@ For example, a button that allows the user to choose multiple PDF files for the 
 ```
 
 > **Note**: Changing `allowedContentTypes` or `allowsMultipleSelection` while the file importer is presented will have no immediate effect, however will apply the next time it is presented.
-
-Changing `allowedContentTypes` or `allowsMultipleSelection` while the file importer is presented will have no immediate effect, however will apply the next time it is presented.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # backingStoreIdentity
 
-**Framework**: File Provider  
+**Framework**: Fileprovider  
 **Kind**: property
 
 A unique identifier for the backing store used by the system.
@@ -25,8 +25,6 @@ While rebuilding the backing store, the system invalidates any extension instanc
 
 > **Note**:  This property is only available on file provider extensions based on the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
 
- This property is only available on file provider extensions based on the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
-
 ## See Also
 
 - [var displayName: String](nsfileproviderdomain/displayname.md)
@@ -49,4 +47,4 @@ While rebuilding the backing store, the system invalidates any extension instanc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/backingstoreidentity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/nsfileproviderdomain/backingstoreidentity)*

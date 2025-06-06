@@ -26,8 +26,6 @@ Calling the `resume` method on the returned object starts the listener and never
 
 > **Note**:  This method requires that the XPC service has the appropriate configuration in its `Info.plist` file.
 
- This method requires that the XPC service has the appropriate configuration in its `Info.plist` file.
-
 ## See Also
 
 - [class func anonymous() -> NSXPCListener](nsxpclistener/anonymous.md)

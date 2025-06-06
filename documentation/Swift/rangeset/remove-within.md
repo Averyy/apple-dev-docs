@@ -24,8 +24,6 @@ mutating func remove<C>(_ index: Bound, within collection: C) where Bound == C.I
 
 > **Note**: O(), where  is the number of ranges in the range set.
 
-O(), where  is the number of ranges in the range set.
-
 ## Parameters
 
 - `index`: The index to remove from the range set.   must be a   valid index of   that isn’t the collection’s  .

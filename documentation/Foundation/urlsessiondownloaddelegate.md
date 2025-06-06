@@ -32,8 +32,6 @@ In addition to the methods in this protocol, be sure to implement the methods in
 
 > **Note**:  An [`URLSession`](urlsession.md) object need not have a delegate. If no delegate is assigned, a system-provided delegate is used, and you must provide a completion callback to obtain the data.
 
- An [`URLSession`](urlsession.md) object need not have a delegate. If no delegate is assigned, a system-provided delegate is used, and you must provide a completion callback to obtain the data.
-
 ## Topics
 
 ### Handling download life cycle changes
@@ -74,4 +72,4 @@ In addition to the methods in this protocol, be sure to implement the methods in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessiondownloaddelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessiondownloaddelegate)*

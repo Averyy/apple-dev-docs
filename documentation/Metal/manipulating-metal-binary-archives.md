@@ -44,8 +44,6 @@ amdgpu_gfx1032.binary.metallib       applegpu_g15g.binary.metallib        appleg
 
 > **Note**:  Using `metal-lipo -thin` doesn’t remove the architectures from the original binary archive.
 
- Using `metal-lipo -thin` doesn’t remove the architectures from the original binary archive.
-
 ##### Combine Individual Slices Into a New Binary Archive
 
 The `metal-lipo` command-line tool also has a `-create` flag that performs the opposite of thinning. It combines binary archives to create a Metal library that contains each individual binary slice. Using this approach, you can create three new binary archives from a full set of binary archives: one for Intel-based Mac computers, one for AMD GPUs in an expansion slot, and one for Apple silicon.
@@ -63,8 +61,6 @@ The `metal-lipo` command-line tool also has a `-create` flag that performs the o
 
 > 💡 **Tip**:  The `metal-lipo` command-line tool only works for combining binaries that are part of the same pipelines. To combine multiple binaries for different pipelines into a single library, use the `metal-pack` command-line tool. For information on `metal-pack`, run the command `man metal-pack` in Terminal.
 
- The `metal-lipo` command-line tool only works for combining binaries that are part of the same pipelines. To combine multiple binaries for different pipelines into a single library, use the `metal-pack` command-line tool. For information on `metal-pack`, run the command `man metal-pack` in Terminal.
-
 ## See Also
 
 - [Creating Binary Archives from Device-Built Pipeline State Objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
@@ -75,4 +71,4 @@ The `metal-lipo` command-line tool also has a `-create` flag that performs the o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/manipulating-metal-binary-archives)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/manipulating-metal-binary-archives)*

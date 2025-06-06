@@ -1,6 +1,6 @@
 # Metadata key atom
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that contains a key that corresponds to the timed metadata track containing it.
@@ -25,8 +25,6 @@ A `local_key_id` of `0xFFFFFFFF` must not occur in a metadata key atom. It is re
 All other type codes are available for use as a `local_key_id`.
 
 > **Note**: Because the atoms within the metadata key table atom can take on any atom type, there should be no special interpretation of the type for contained atoms other than for the special value `0`. Therefore, including a `'free'` atom does not have the conventional meaning in the metadata key atom. It is recommended that writers avoid the use of overly confusing existing atom type codes.
-
-Because the atoms within the metadata key table atom can take on any atom type, there should be no special interpretation of the type for contained atoms other than for the special value `0`. Therefore, including a `'free'` atom does not have the conventional meaning in the metadata key atom. It is recommended that writers avoid the use of overly confusing existing atom type codes.
 
 Each metadata key atom contains a variable number of atoms that define the key structure, optionally the data type for values, and optionally locale information for values. Atoms may be introduced in the future.
 

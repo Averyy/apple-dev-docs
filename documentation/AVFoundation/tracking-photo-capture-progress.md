@@ -1,6 +1,6 @@
 # Tracking Photo Capture Progress
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Monitor key events during capture to provide feedback in your camera UI.
 
@@ -46,8 +46,6 @@ When the photo output has image data available for your app, it calls your deleg
 For example, if you request RAW+HEIF capture in a three-exposure bracket, the photo output calls your delegate’s `didFinishProcessingPhoto` method six times (2 formats × 3 exposures), providing six [`AVCapturePhoto`](avcapturephoto.md) objects. To keep track of multiple results, compare the [`photoCount`](avcapturephoto/photocount.md) from each photo to the [`expectedPhotoCount`](avcaptureresolvedphotosettings/expectedphotocount.md) of your resolved settings.
 
 > **Note**:  If you request Live Photo capture, additional delegate methods provide feedback on that process. See [`Capturing and Saving Live Photos`](capturing-and-saving-live-photos.md).
-
- If you request Live Photo capture, additional delegate methods provide feedback on that process. See [`Capturing and Saving Live Photos`](capturing-and-saving-live-photos.md).
 
 ##### Clean Up When Capture Is Complete
 
@@ -95,4 +93,4 @@ func shootPhoto() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/tracking-photo-capture-progress)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/tracking-photo-capture-progress)*

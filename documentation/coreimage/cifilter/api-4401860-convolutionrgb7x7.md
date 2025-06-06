@@ -1,6 +1,6 @@
 # convolutionRGB7X7()
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: clm
 
 Applies a convolution 7 x 7 filter to the RGB components of an image.
@@ -30,8 +30,6 @@ This method applies a 7 x 7 convolution to the `RGB` components image. The effec
 The convolution-RGB 7 x 7 filter uses the following properties:
 
 > **Note**: When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
-
-When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
 
 The following code creates a filter that highlights edges in the input image:
 

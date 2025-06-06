@@ -1,6 +1,6 @@
 # Reference movies
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 A movie that contains references to alternate movies is called a reference movie.
 
@@ -19,8 +19,6 @@ The reference movie atom contains one or more reference movie descriptor atoms, 
 Each reference movie descriptor atom contains a data reference atom, which specifies the location of a movie.
 
 > **Note**: Movie locations are specified using QuickTime data references. QuickTime supports multiple types of data reference, but alternate movies are generally specified using data reference types of either url (`'url '`) or file alias (`'alis'`).
-
-Movie locations are specified using QuickTime data references. QuickTime supports multiple types of data reference, but alternate movies are generally specified using data reference types of either url (`'url '`) or file alias (`'alis'`).
 
 A reference movie descriptor atom may contain other atoms that specify the movie’s system requirements and the movie quality. If so, there will be an atom of an appropriate type for each requirement that must be met for the movie to play, and there may be a quality atom as well.
 

@@ -1,6 +1,6 @@
 # MKDirections.Request
 
-**Framework**: MapKit  
+**Framework**: Mapkit  
 **Kind**: class
 
 The start and end points of a route, along with the planned mode of transportation.
@@ -26,8 +26,6 @@ You use an [`MKDirections.Request`](mkdirections/request.md) object when request
 Prior to iOS 14, for apps that provide directions, you receive direction-related URLs in your app delegate’s [`application(_:open:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:open:options:))method. Upon receiving a URL, call the [`isDirectionsRequest(_:)`](mkdirections/request/isdirectionsrequest(_:).md) method of this class to determine whether the URL relates to routing directions. If it does, create an instance of this class using the provided URL and extract the map items associated with the start and end points.
 
 > **Note**:  Prior to iOS 14, to provide routing directions, your app needs to include special keys in its `Info.plist` file and be able to handle URLs that the Maps app sends to it. These keys indicate a special URL type that you app needs to handle. For information about how to implement this support, see [`Location and Maps Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497).
-
- Prior to iOS 14, to provide routing directions, your app needs to include special keys in its `Info.plist` file and be able to handle URLs that the Maps app sends to it. These keys indicate a special URL type that you app needs to handle. For information about how to implement this support, see [`Location and Maps Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497).
 
 ## Topics
 

@@ -28,8 +28,6 @@ The relative path, or an empty string if the URL has an empty path.
 
 > **Note**:  This function resolve against the base `URL`.
 
- This function resolve against the base `URL`.
-
 ## See Also
 
 - [var baseURL: URL?](url/baseurl.md)

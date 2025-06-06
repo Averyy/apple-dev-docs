@@ -1,6 +1,6 @@
 # Supporting Security Key Authentication Using Physical Keys
 
-**Framework**: Authentication Services
+**Framework**: Authenticationservices
 
 Allow users to authenticate using NFC, USB, and Lightning security keys in your app or service.
 
@@ -11,8 +11,6 @@ Security key authentication supports physical security devices for authenticatio
 Take special care when using physical devices for authentication. If the user loses the device or someone steals it, there is no way to perform authentication with associated services. Have a backup strategy in place for such events.
 
 > ❗ **Important**:  You must have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains) for more information.__
-
- You must have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains) for more information.__
 
 ##### Register a New Account on a Service
 
@@ -59,8 +57,6 @@ The device displays a sheet instructing the user about how to use the physical s
 
 > **Note**:  Unlike platform public key requests and other types of authorization requests, a security key request always shows a sign-in user interface. Ensure that your user is expecting to sign in with a security key before making a security key request.
 
- Unlike platform public key requests and other types of authorization requests, a security key request always shows a sign-in user interface. Ensure that your user is expecting to sign in with a security key before making a security key request.
-
 ##### Respond to the Request
 
 [`ASAuthorizationControllerDelegate`](asauthorizationcontrollerdelegate.md) provides information about the outcome of a registration or authentication request. Adopt this protocol to determine how to react to authorization success or errors. The following code defines [`authorizationController(controller:didCompleteWithAuthorization:)`](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewithauthorization:).md) to handle registration and assertion, as well as [`authorizationController(controller:didCompleteWithError:)`](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewitherror:).md) to handle any errors:
@@ -94,4 +90,4 @@ If an error occurs during the authorization, the framework calls [`authorization
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/supporting-security-key-authentication-using-physical-keys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/supporting-security-key-authentication-using-physical-keys)*

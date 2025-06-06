@@ -1,6 +1,6 @@
 # Capture setup
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Configure built-in cameras and microphones, and external capture devices, for media capture.
 
@@ -14,8 +14,6 @@ The AVFoundation Capture subsystem provides a common high-level architecture for
 - Get live access to pixel or audio data streaming directly from a capture device.
 
 > **Note**:  To instead let the user capture media with the system camera UI within your app, see [`UIImagePickerController`](https://developer.apple.com/documentation/UIKit/UIImagePickerController).
-
- To instead let the user capture media with the system camera UI within your app, see [`UIImagePickerController`](https://developer.apple.com/documentation/UIKit/UIImagePickerController).
 
 The main parts of the capture architecture are sessions, inputs, and outputs: Capture sessions connect one or more inputs to one or more outputs. Inputs are sources of media, including capture devices like the cameras and microphones built into an iOS device or Mac. Outputs acquire media from inputs to produce useful data, such as movie files written to disk or raw pixel buffers available for live processing.
 
@@ -98,4 +96,4 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/capture-setup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/capture-setup)*

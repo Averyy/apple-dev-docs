@@ -1,6 +1,6 @@
 # headerSearchPath(_:_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Provides a header search path relative to the target’s directory.
@@ -21,8 +21,6 @@ Use this setting to add a search path for headers within your target. You can’
 The path must be a directory inside the package.
 
 > **Note**: First available in PackageDescription 5.0.
-
-First available in PackageDescription 5.0.
 
 ## Parameters
 

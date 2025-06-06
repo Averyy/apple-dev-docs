@@ -1,6 +1,6 @@
 # Defining test functions
 
-**Framework**: Swift Testing
+**Framework**: Testing
 
 Define a test function to validate that code is working correctly.
 
@@ -17,8 +17,6 @@ import Testing
 ```
 
 > **Note**: Only import the testing library into a test target. Importing the testing library into an application, library, or binary target isn’t supported or recommended. Test functions aren’t stripped from binaries when building for release, so logic and fixtures of a test may be visible to anyone who inspects a build product that contains a test function.
-
-Only import the testing library into a test target. Importing the testing library into an application, library, or binary target isn’t supported or recommended. Test functions aren’t stripped from binaries when building for release, so logic and fixtures of a test may be visible to anyone who inspects a build product that contains a test function.
 
 ##### Declare a Test Function
 
@@ -78,4 +76,4 @@ If a test function can only run on newer versions of an operating system or of t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/testing/definingtests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Testing/definingtests)*

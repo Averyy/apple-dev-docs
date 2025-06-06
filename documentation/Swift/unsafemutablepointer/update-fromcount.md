@@ -26,8 +26,6 @@ The region of memory starting at this pointer and covering `count` instances of 
 
 > **Note**: Returns without performing work if `self` and `source` are equal.
 
-Returns without performing work if `self` and `source` are equal.
-
 ## Parameters
 
 - `source`: A pointer to at least   initialized instances of type   . The memory regions referenced by   and this   pointer may overlap.

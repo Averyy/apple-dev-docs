@@ -1,6 +1,6 @@
 # indicatesHorizontalFieldOfView
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A media characteristic that indicates the video track carries information related to the horizontal field of view.
@@ -26,8 +26,6 @@ This media characteristic is present when the [`CMVideoFormatDescription`](https
 The value of this characteristic is `public.indicates-horizontal-field-of-view`.
 
 > **Note**:  The presence of this characteristic is strictly inferred from the format description of the associated track.
-
- The presence of this characteristic is strictly inferred from the format description of the associated track.
 
 ## See Also
 

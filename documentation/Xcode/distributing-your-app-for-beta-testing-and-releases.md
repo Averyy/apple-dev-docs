@@ -12,8 +12,6 @@ If necessary, review [`Preparing your app for distribution`](preparing-your-app-
 
 > **Note**: Session 10224: [`Simplify distribution in Xcode and Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10224)
 
-Session 10224: [`Simplify distribution in Xcode and Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10224)
-
 ##### Join the Apple Developer Program
 
 Distribution methods range from exporting your app for test devices to uploading it to App Store Connect. You can use TestFlight to distribute beta builds to testers and collect feedback. If you want to distribute your app to registered devices, to beta testers using TestFlight, or through the App Store, join the Apple Developer Program. After you join the Apple Developer Program, Apple creates an App Store Connect account for you and you can start uploading builds.
@@ -42,8 +40,6 @@ For a Mac app built with Mac Catalyst, create separate archives for the iPad and
 
 > **Note**: Earlier versions of Xcode didn’t allow you to build an archive with a simulator set as the run destination. In Xcode 15 and later, choosing to build an archive with a simulator as the run destination builds an archive with all the CPU architectures necessary to run on that class of device.
 
-Earlier versions of Xcode didn’t allow you to build an archive with a simulator set as the run destination. In Xcode 15 and later, choosing to build an archive with a simulator as the run destination builds an archive with all the CPU architectures necessary to run on that class of device.
-
 ##### Select a Method for Distribution
 
 You can export the archive or upload it to App Store Connect. If you export the archive, you can distribute it outside of the App Store. Otherwise, upload the archive to App Store Connect to distribute it through TestFlight or the App Store.
@@ -57,8 +53,6 @@ Select one of the following options to distribute using recommended settings:
 After selecting a distribution option, click the Distribute button. Xcode begins processing, packaging, and uploading. Click the link at the at the end to access the builds page for the app on App Store Connect or click the Export button to access the assets locally.
 
 > **Note**: Before you upload your app to the App Store for the first time, create an app record to register your app with App Store Connect. If you haven’t done this already, Xcode asks you for the information it needs to create this record for you. For more information, see [`Create an app record`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app).
-
-Before you upload your app to the App Store for the first time, create an app record to register your app with App Store Connect. If you haven’t done this already, Xcode asks you for the information it needs to create this record for you. For more information, see [`Create an app record`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app).
 
 ##### Create a Custom Distribution
 
@@ -134,4 +128,4 @@ If you distribute your app using TestFlight or through the App Store, you can vi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/distributing-your-app-for-beta-testing-and-releases)*

@@ -1,6 +1,6 @@
 # receive(on:options:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Specifies the scheduler on which to receive elements from the publisher.
@@ -59,8 +59,6 @@ pub.receive(on: DispatchQueue.main).sink {
 ```
 
 > **Note**: [`receive(on:options:)`](scene/publisher/receive(on:options:).md) doesn’t affect the scheduler used to call the subscriber’s `Subscriber/receive(subscription:)` method.
-
-[`receive(on:options:)`](scene/publisher/receive(on:options:).md) doesn’t affect the scheduler used to call the subscriber’s `Subscriber/receive(subscription:)` method.
 
 ## Parameters
 

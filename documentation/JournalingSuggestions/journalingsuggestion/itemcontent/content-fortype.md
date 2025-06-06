@@ -1,6 +1,6 @@
 # content(forType:)
 
-**Framework**: Journaling Suggestions  
+**Framework**: Journalingsuggestions  
 **Kind**: method
 
 Retrieves a suggestion’s contents by returning a structure specific to the given content type.
@@ -23,8 +23,6 @@ An instance of the requested type, if it exists in the suggestion.
 The framework templates this method, where `Content` is [`JournalingSuggestionAsset`](journalingsuggestionasset.md), because the `content` argument is a `Type` rather than an enumeration case, or other primitive.
 
 > **Note**: An error if the journaling suggestions picker encounters an unexpected issue.
-
-An error if the journaling suggestions picker encounters an unexpected issue.
 
 ## Parameters
 

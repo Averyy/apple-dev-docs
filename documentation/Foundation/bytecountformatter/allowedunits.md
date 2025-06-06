@@ -30,8 +30,6 @@ This is the default value if [`NSByteCountFormatterUseDefault`](nsbytecountforma
 
 > **Note**:  ZB and YB cannot be covered by the range of possible values, but you can still choose to use these units to get fractional display (`0.0035 ZB` for instance).
 
- ZB and YB cannot be covered by the range of possible values, but you can still choose to use these units to get fractional display (`0.0035 ZB` for instance).
-
 ## See Also
 
 - [var formattingContext: Formatter.Context](bytecountformatter/formattingcontext.md)

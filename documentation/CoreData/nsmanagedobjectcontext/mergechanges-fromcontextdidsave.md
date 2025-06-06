@@ -1,6 +1,6 @@
 # mergeChanges(fromContextDidSave:)
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: method
 
 Merges the changes specified in a given notification.
@@ -22,8 +22,8 @@ func mergeChanges(fromContextDidSave notification: Notification)
 
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
 - [Accessing data when the store changes](accessing-data-when-the-store-changes.md)
+- [Consuming relevant store changes](consuming-relevant-store-changes.md)
 
 #### Discussion
 
@@ -32,8 +32,6 @@ This method refreshes any objects which have been updated in the other context, 
 You can pass a [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave) notification posted by a managed object context on another thread, however you must not use the managed objects in the user info dictionary directly. For more details, see Concurrency with Core Data.
 
 > **Note**: Objective-C uses instances of [`NSManagedObjectContextDidSaveNotification`](nsmanagedobjectcontextdidsavenotification.md) instead of [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave).
-
-Objective-C uses instances of [`NSManagedObjectContextDidSaveNotification`](nsmanagedobjectcontextdidsavenotification.md) instead of [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave).
 
 ## Parameters
 

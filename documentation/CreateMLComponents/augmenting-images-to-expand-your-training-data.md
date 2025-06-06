@@ -1,6 +1,6 @@
 # Augmenting images to expand your training data
 
-**Framework**: Create ML Components
+**Framework**: Createmlcomponents
 
 Improve your model by using transformed versions of your training images.
 
@@ -60,8 +60,6 @@ let augmentedTrainingData = augmenter.applied(
 
 > **Note**: The result of the augmentations is an asynchronous sequence. The augmenter doesn’t perform augmentations until you request them to avoid the memory overhead.
 
-The result of the augmentations is an asynchronous sequence. The augmenter doesn’t perform augmentations until you request them to avoid the memory overhead.
-
 ##### Train an Image Classifier
 
 You can now use your augmented data set to train an image classifier. Because augmentations take images, not URLs, you may need to read your files first.
@@ -113,8 +111,6 @@ for iteration in 0 ..< 100 {
 The example above applies the `augmenter` to shuffled images. Shuffling images creates more variation, which helps prevent over-fitting. The example breaks the data into batches after each augmentation, and updates the model with each `batch`. Using a smaller batch size typically produces a better model, while using a larger batch size can speed up training.
 
 > 💡 **Tip**: A batch size of 32 is often a good starting point.
-
-A batch size of 32 is often a good starting point.
 
 ##### Stop Training
 
@@ -194,4 +190,4 @@ for iteration in 0 ..< 100 {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/augmenting-images-to-expand-your-training-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/augmenting-images-to-expand-your-training-data)*

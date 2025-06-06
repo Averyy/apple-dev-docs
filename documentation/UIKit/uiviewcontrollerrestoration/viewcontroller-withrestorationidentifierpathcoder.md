@@ -1,6 +1,6 @@
 # viewController(withRestorationIdentifierPath:coder:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method  
 **Required**: Yes
 
@@ -40,8 +40,6 @@ It isn’t always necessary to create a new view controller object in your imple
 Your implementation of this method may use any data in the provided `coder` to assist in the restoration process. However, you don’t need to restore the entire state of the view controller at this point. During a later pass, view controllers that define a [`decodeRestorableState(with:)`](uiviewcontroller/decoderestorablestate(with:).md) method are given a chance to restore their state from the same coder object.
 
 > **Note**:  If you return an object whose class doesn’t match the class of the originally preserved object, or whose class isn’t a direct subclass of the original, the restoration system doesn’t call the [`decodeRestorableState(with:)`](uiviewcontroller/decoderestorablestate(with:).md) method of the view controller.
-
- If you return an object whose class doesn’t match the class of the originally preserved object, or whose class isn’t a direct subclass of the original, the restoration system doesn’t call the [`decodeRestorableState(with:)`](uiviewcontroller/decoderestorablestate(with:).md) method of the view controller.
 
 ## Parameters
 

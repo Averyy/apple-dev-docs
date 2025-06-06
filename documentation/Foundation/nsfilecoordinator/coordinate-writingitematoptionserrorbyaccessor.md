@@ -39,8 +39,6 @@ This method calls the [`relinquishPresentedItem(toWriter:)`](nsfilepresenter/rel
 
 > **Note**:  When deleting an item inside a file package using the [`forDeleting`](nsfilecoordinator/writingoptions/fordeleting.md) option, the file coordinator does not call the [`accommodatePresentedItemDeletion(completionHandler:)`](nsfilepresenter/accommodatepresenteditemdeletion(completionhandler:).md) method of any file presenters monitoring the file package directory itself. Instead, the delete operation is treated as a write operation on the file package.
 
- When deleting an item inside a file package using the [`forDeleting`](nsfilecoordinator/writingoptions/fordeleting.md) option, the file coordinator does not call the [`accommodatePresentedItemDeletion(completionHandler:)`](nsfilepresenter/accommodatepresenteditemdeletion(completionhandler:).md) method of any file presenters monitoring the file package directory itself. Instead, the delete operation is treated as a write operation on the file package.
-
 With one exception, do not nest calls to file coordinator methods inside the block you pass to this method. You may call the [`coordinate(readingItemAt:options:error:byAccessor:)`](nsfilecoordinator/coordinate(readingitemat:options:error:byaccessor:).md) method to read the file if you discover through modification-date checking that the contents of the file have changed. However, if you call this method from inside your block, the file coordinator object throws an exception.
 
 ## Parameters

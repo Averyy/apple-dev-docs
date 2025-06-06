@@ -26,8 +26,6 @@ The error is always an instance of `CancellationError`.
 
 > **Note**: `isCancelled()`
 
-`isCancelled()`
-
 ## See Also
 
 - [struct CancellationError](cancellationerror.md)

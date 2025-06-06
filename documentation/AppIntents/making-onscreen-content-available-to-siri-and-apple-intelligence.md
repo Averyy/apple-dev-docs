@@ -1,6 +1,6 @@
 # Making onscreen content available to Siri and Apple Intelligence
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Enable Siri and Apple Intelligence to respond to a person’s questions and action requests for your app’s onscreen content.
 
@@ -19,8 +19,6 @@ Enable Siri and Apple Intelligence to respond to a person’s questions and acti
 When a user asks a question about onscreen content or wants to perform an action on it, Siri and Apple Intelligence will be able to retrieve the content to respond to the question and perform the action. If the user explicitly requests it, Siri and Apple Intelligence will be able to send content to supported third-party services. For example, someone could view a website and use Siri to provide a summary by saying or typing a phrase like “Hey Siri, what’s this document about?”
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 ##### Create an App Entity and Associate It with the User Activity Object
 
@@ -60,8 +58,6 @@ By conforming your `AppEntity` to  `Transferable` and an assistant schema, you e
 
 > **Note**: The listed requests below are examples and not exhaustive. Actual functionality depends on factors such as the features provided by Siri and Apple Intelligence, the functionality offered by third-party services, or the phrase a person uses.
 
-The listed requests below are examples and not exhaustive. Actual functionality depends on factors such as the features provided by Siri and Apple Intelligence, the functionality offered by third-party services, or the phrase a person uses.
-
 | Domain | Schema | Swift macro | Example request |
 | --- | --- | --- | --- |
 | Browser | [`tab`](assistantschemas/browserentity/tab.md) | `@AssistantEntity(schema: .browser.tab)` | A person might ask Siri questions about the web page. |
@@ -91,4 +87,4 @@ The listed requests below are examples and not exhaustive. Actual functionality 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-onscreen-content-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-onscreen-content-available-to-siri-and-apple-intelligence)*

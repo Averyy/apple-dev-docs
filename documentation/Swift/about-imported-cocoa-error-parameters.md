@@ -35,8 +35,6 @@ Otherwise, if no convention can be inferred, the method is left intact.
 
 > **Note**: You use the `NS_SWIFT_NOTHROW` macro on Objective-C method declarations that produce an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) to prevent it from being imported by Swift as a method that throws.
 
-You use the `NS_SWIFT_NOTHROW` macro on Objective-C method declarations that produce an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) to prevent it from being imported by Swift as a method that throws.
-
 ## See Also
 
 - [Using Key-Value Observing in Swift](using-key-value-observing-in-swift.md)
@@ -51,4 +49,4 @@ You use the `NS_SWIFT_NOTHROW` macro on Objective-C method declarations that pro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/about-imported-cocoa-error-parameters)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/about-imported-cocoa-error-parameters)*

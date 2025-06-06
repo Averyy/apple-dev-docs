@@ -1,6 +1,6 @@
 # look(at:from:upVector:relativeTo:forward:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Positions and orients the entity such that it looks at certain target from a give position.
@@ -24,8 +24,6 @@ Positions and orients the entity such that it looks at certain target from a giv
 This function moves the entity to the specified `position`. It rotates the entity such that the forward direction is pointing towards `target`. It further makes sure that entity’s  direction aligns with the specified `upVector`.
 
 > **Note**: This method can be used for non-camera entities.
-
-This method can be used for non-camera entities.
 
 ## Parameters
 

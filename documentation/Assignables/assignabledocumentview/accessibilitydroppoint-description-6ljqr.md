@@ -38,8 +38,6 @@ By default, if an accessible view or its subtree has drag and/or drop interactio
 
 > **Note**: An accessibility element can have multiple points for a drop, provided they have different descriptions.
 
-An accessibility element can have multiple points for a drop, provided they have different descriptions.
-
 
 ---
 

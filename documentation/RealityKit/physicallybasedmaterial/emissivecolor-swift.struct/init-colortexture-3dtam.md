@@ -1,6 +1,6 @@
 # init(color:texture:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates a color of emitted light in iOS.
@@ -48,8 +48,6 @@ The following Metal code demonstrates how to replicate the emissive behavior of 
 ```
 
 > **Note**: Unlike [`PhysicallyBasedMaterial`](physicallybasedmaterial.md), [`CustomMaterial`](custommaterial.md) has no [`emissiveIntensity`](physicallybasedmaterial/emissiveintensity.md) value. If you need to pass an emissive intensity value to your surface shader, use the [`custom`](custommaterial/custom-swift.property.md) property or another unused attribute property.
-
-Unlike [`PhysicallyBasedMaterial`](physicallybasedmaterial.md), [`CustomMaterial`](custommaterial.md) has no [`emissiveIntensity`](physicallybasedmaterial/emissiveintensity.md) value. If you need to pass an emissive intensity value to your surface shader, use the [`custom`](custommaterial/custom-swift.property.md) property or another unused attribute property.
 
 ## Parameters
 

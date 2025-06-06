@@ -37,8 +37,6 @@ If your watchOS app is running on screen, or is the frontmost app when a notific
 
 > **Note**: If you don’t implement the [`userNotificationCenter(_:willPresent:withCompletionHandler:)`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenterDelegate/userNotificationCenter(_:willPresent:withCompletionHandler:)) method, the system silences the notification and doesn’t deliver it to your watchOS app.
 
-If you don’t implement the [`userNotificationCenter(_:willPresent:withCompletionHandler:)`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenterDelegate/userNotificationCenter(_:willPresent:withCompletionHandler:)) method, the system silences the notification and doesn’t deliver it to your watchOS app.
-
 ##### Send Notifications Directly to Apple Watch
 
 With watchOS 6 and later, you can send remote notifications directly to Apple Watch. Before sending a notification, you must register your watchOS app, as described in [`Registering your app with APNs`](https://developer.apple.com/documentation/UserNotifications/registering-your-app-with-apns). Registering your app creates a unique device token for the watch. Use that token to send notifications directly to the watch.
@@ -61,4 +59,4 @@ For more information on watchOS app types, see [`Creating independent watchOS ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/enabling-and-receiving-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/enabling-and-receiving-notifications)*

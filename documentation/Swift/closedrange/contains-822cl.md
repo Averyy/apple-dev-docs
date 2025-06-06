@@ -37,8 +37,6 @@ range.contains(2...12)       // false
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `other`: A closed range to check for containment within this   closed range.

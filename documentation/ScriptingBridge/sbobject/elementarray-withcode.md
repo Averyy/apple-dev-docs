@@ -1,6 +1,6 @@
 # elementArray(withCode:)
 
-**Framework**: Scripting Bridge  
+**Framework**: Scriptingbridge  
 **Kind**: method
 
 Returns an array containing every child of the receiver with the given class-type code.
@@ -24,8 +24,6 @@ An [`SBElementArray`](sbelementarray.md) object containing every child of the re
 `SBObject` subclasses use this method to implement application-specific property accessor methods. You should not need to call this method directly.
 
 > **Note**: This method doesn’t retrieve the value of the property. To get the value, call [`get()`](sbobject/get().md).
-
-This method doesn’t retrieve the value of the property. To get the value, call [`get()`](sbobject/get().md).
 
 ## Parameters
 

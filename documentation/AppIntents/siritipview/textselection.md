@@ -1,6 +1,6 @@
 # textSelection(_:)
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: method
 
 Controls whether people can select text within this view.
@@ -50,8 +50,6 @@ On macOS, people use the mouse or trackpad to select a range of text, which they
 On iOS, the person using the app touches and holds on a selectable `Text` view, which brings up a system menu with menu items appropriate for the current context. These menu items operate on the entire contents of the `Text` view; the person can’t select a range of text like they can on macOS.
 
 > **Note**: `Button` views don’t support text selection.
-
-`Button` views don’t support text selection.
 
 
 ---

@@ -44,8 +44,6 @@ In fact, `s.flatMap(transform)`  is equivalent to `Array(s.map(transform).joined
 
 > **Note**: O( + ), where  is the length of this sequence and  is the length of the result.
 
-O( + ), where  is the length of this sequence and  is the length of the result.
-
 ## Parameters
 
 - `transform`: A closure that accepts an element of this   sequence as its argument and returns a sequence or collection.

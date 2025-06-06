@@ -10,8 +10,6 @@ Use this check to detect when a function with the `returns_nonnull` attribute, o
 
 > **Note**: The nonnull violation check for return types with the `_Nonnull` annotation is off by default. You can turn it on by enabling the `-fsanitize=nullability-return` compiler flag.
 
-The nonnull violation check for return types with the `_Nonnull` annotation is off by default. You can turn it on by enabling the `-fsanitize=nullability-return` compiler flag.
-
 ##### Violation of the Nonnull Attribute for a Function in C
 
 In the following code, there is a violation of the `returns_nonnull` attribute of the `nonnull_returning_function` function:
@@ -78,4 +76,4 @@ Correct logic errors, add any necessary null guards to the function, or remove t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/nonnull-return-value-violation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/nonnull-return-value-violation)*

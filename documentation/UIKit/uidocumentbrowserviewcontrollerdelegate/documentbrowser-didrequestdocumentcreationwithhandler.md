@@ -1,6 +1,6 @@
 # documentBrowser(_:didRequestDocumentCreationWithHandler:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Asks the delegate to create a new document.
@@ -33,8 +33,6 @@ Implement this method to create new documents for the user:
 5. Modally present this document to the user.
 
 > ❗ **Important**:  You must always call the import handler. If you cannot create a new document, pass `nil` for the URL and [`UIDocumentBrowserViewController.ImportMode.none`](uidocumentbrowserviewcontroller/importmode/none.md) for the import mode.
-
- You must always call the import handler. If you cannot create a new document, pass `nil` for the URL and [`UIDocumentBrowserViewController.ImportMode.none`](uidocumentbrowserviewcontroller/importmode/none.md) for the import mode.
 
 The following example shows a possible implementation of the  [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
 
@@ -87,8 +85,6 @@ The document browser enables the Add button (+) only when both of the following 
 - The document browser delegate implements the [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
 
 > **Note**:  The document browser cannot create new documents if you do not implement this delegate method.
-
- The document browser cannot create new documents if you do not implement this delegate method.
 
 ## Parameters
 

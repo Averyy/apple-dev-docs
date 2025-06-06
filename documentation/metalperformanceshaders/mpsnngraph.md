@@ -1,6 +1,6 @@
 # MPSNNGraph
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 An optimized representation of a graph of neural network image and filter nodes.
@@ -24,8 +24,6 @@ class MPSNNGraph : MPSKernel
 Once you have prepared a graph of [`MPSNNImageNode`](mpsnnimagenode.md), [`MPSNNFilterNode`](mpsnnfilternode.md), and, if needed, [`MPSNNStateNode`](mpsnnstatenode.md) objects, you may initialize a [`MPSNNGraph`](mpsnngraph.md) using the image node that you wish to appear as the result. The graph object will introspect the graph representation and determine which nodes are needed for inputs, and which nodes are produced as output state (if any). Nodes which are not needed to calculate the result image node are ignored. Some nodes may be internally concatenated with other nodes for better performance.
 
 > **Note**: The [`MPSNNImageNode`](mpsnnimagenode.md) that you choose as the result node may be interior to a graph. This feature is provided as a means to examine intermediate computations in the full graph for debugging purposes.
-
-The [`MPSNNImageNode`](mpsnnimagenode.md) that you choose as the result node may be interior to a graph. This feature is provided as a means to examine intermediate computations in the full graph for debugging purposes.
 
 During [`MPSNNGraph`](mpsnngraph.md) construction, the graph attached to the result node will be parsed and reduced to an optimized representation. This representation may be saved using the [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) protocol for later recall.
 

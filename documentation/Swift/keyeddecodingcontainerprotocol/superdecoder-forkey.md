@@ -29,11 +29,7 @@ A new `Decoder` to pass to `super.init(from:)`.
 
 > **Note**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
 
-`DecodingError.keyNotFound` if `self` does not have an entry for the given key.
-
 > **Note**: `DecodingError.valueNotFound` if `self` has a null entry for the given key.
-
-`DecodingError.valueNotFound` if `self` has a null entry for the given key.
 
 ## Parameters
 

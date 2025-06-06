@@ -1,6 +1,6 @@
 # Making spreadsheet actions available to Siri and Apple Intelligence
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Create app intents and entities to integrate your app’s spreadsheet functionality with Siri and Apple Intelligence.
 
@@ -9,8 +9,6 @@ Create app intents and entities to integrate your app’s spreadsheet functional
 To integrate your app’s spreadsheet capabilities with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance for your app intent and app entity implementation that Apple Intelligence needs.
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 For example, if your app allows someone to open a spreadsheet, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.spreadsheet` domain and the [`open`](assistantschemas/spreadsheetintent/open.md) schema:
 
@@ -63,4 +61,4 @@ For a list of available app entity schemas in the `.spreadsheet` domain, see [`A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-spreadsheet-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-spreadsheet-actions-available-to-siri-and-apple-intelligence)*

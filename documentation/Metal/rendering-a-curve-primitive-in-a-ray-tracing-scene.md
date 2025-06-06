@@ -14,8 +14,6 @@ Implement ray traced rendering using GPU-based parallel processing.
 
 > **Note**: This sample code project is associated with WWDC23 session [`10128: Your guide to Metal ray tracing`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10128).
 
-This sample code project is associated with WWDC23 session [`10128: Your guide to Metal ray tracing`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10128).
-
 ##### Configure the Sample Code Project
 
 This sample requires the following system and software configuration:
@@ -38,4 +36,4 @@ This sample requires the following system and software configuration:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/rendering-a-curve-primitive-in-a-ray-tracing-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/rendering-a-curve-primitive-in-a-ray-tracing-scene)*

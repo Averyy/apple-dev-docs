@@ -1,6 +1,6 @@
 # Controlling a DockKit accessory using your camera app
 
-**Framework**: DockKit
+**Framework**: Dockkit
 
 Follow subjects in real time using an iPhone that you mount on a DockKit accessory.
 
@@ -22,8 +22,6 @@ The sample app defines two key services:
 - `DockControlService` is an actor that manages interactions with a [`DockAccessory`](DockAccessory.md) using DockKit APIs. This object listens to `DockAccessory` connection/disconnection events, manages subscriptions to the connected `DockAccessory`, and controls its movements using an asynchronous interface. It also delegates camera control in response to `DockAccessory` events to the `CameraModel` object.
 
 > **Note**: Configuring and starting a capture session are blocking operations that can take time to complete. To keep the user interface responsive, the app defines `CaptureService` as an actor type to ensure that AVFoundation capture API calls don’t occur on the main thread.
-
-Configuring and starting a capture session are blocking operations that can take time to complete. To keep the user interface responsive, the app defines `CaptureService` as an actor type to ensure that AVFoundation capture API calls don’t occur on the main thread.
 
 ##### Configure the Sample Code Project
 
@@ -309,4 +307,4 @@ func selectNextVideoDevice() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/dockkit/controlling-a-dockkit-accessory-using-your-camera-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DockKit/controlling-a-dockkit-accessory-using-your-camera-app)*

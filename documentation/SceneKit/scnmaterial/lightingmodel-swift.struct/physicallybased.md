@@ -1,6 +1,6 @@
 # physicallyBased
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: property
 
 Shading based on a realistic abstraction of physical lights and materials.
@@ -35,8 +35,6 @@ In addition, you can add surface detail to a physically based material with the 
 Physically based materials ignore the [`ambient`](scnmaterial/ambient.md), [`specular`](scnmaterial/specular.md), and [`reflective`](scnmaterial/reflective.md) material properties and the [`shininess`](scnmaterial/shininess.md), [`fresnelExponent`](scnmaterial/fresnelexponent.md), and [`locksAmbientWithDiffuse`](scnmaterial/locksambientwithdiffuse.md) parameters.
 
 > **Note**:  Physically based rendering requires a Metal renderer. When displaying a material in a view whose [`renderingAPI`](scnscenerenderer/renderingapi.md) value is not [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md), SceneKit falls back to rendering that material with the [`blinn`](scnmaterial/lightingmodel-swift.struct/blinn.md) lighting model. (Metal rendering is not supported in Simulator or Xcode Playgrounds when targeting iOS or tvOS, and is not available at all in watchOS, so this fallback always occurs in those environments.)
-
- Physically based rendering requires a Metal renderer. When displaying a material in a view whose [`renderingAPI`](scnscenerenderer/renderingapi.md) value is not [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md), SceneKit falls back to rendering that material with the [`blinn`](scnmaterial/lightingmodel-swift.struct/blinn.md) lighting model. (Metal rendering is not supported in Simulator or Xcode Playgrounds when targeting iOS or tvOS, and is not available at all in watchOS, so this fallback always occurs in those environments.)
 
 ## See Also
 

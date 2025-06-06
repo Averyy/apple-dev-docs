@@ -1,6 +1,6 @@
 # Viewing the Finished Article for the Introductory Design Tutorial
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 See the full JSON code from this tutorial.
 
@@ -11,8 +11,6 @@ This page brings together all of the Apple News Format features from this tutori
 You can copy or download this template (which is also the `article.json` file in `News_Design_Tutorial_6_Embeds`) and modify it to create your own News articles. See [`Download the Article Bundle Examples`](setting-up-the-introductory-tutorial#Download-the-Article-Bundle-Examples.md). To preview this article, see [`Preview the Article Bundle Examples`](setting-up-the-introductory-tutorial#Preview-the-Article-Bundle-Examples.md).
 
 > **Note**:  If your `article.json` file refers to an image using a URL that begins with `bundle://`, that image must be located within the same folder as your `article.json` file.
-
- If your `article.json` file refers to an image using a URL that begins with `bundle://`, that image must be located within the same folder as your `article.json` file.
 
 ```json
 {
@@ -452,4 +450,4 @@ You can copy or download this template (which is also the `article.json` file in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/viewing-the-finished-article-for-the-introductory-design-tutorial)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/viewing-the-finished-article-for-the-introductory-design-tutorial)*

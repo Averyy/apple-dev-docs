@@ -1,6 +1,6 @@
 # init(trainingData:parameters:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: init
 
 Creates an image classifier with a training dataset represented by a data source.
@@ -57,8 +57,6 @@ if let downloads = FileManager.default.urls(for: .downloadsDirectory, in: .userD
 Training begins immediately.
 
 > **Note**: If you represent your training data with a dictionary of strings and corresponding URL arrays, use [`init(trainingData:parameters:)`](mlimageclassifier/init(trainingdata:parameters:)-7j4w6.md) instead.
-
-If you represent your training data with a dictionary of strings and corresponding URL arrays, use [`init(trainingData:parameters:)`](mlimageclassifier/init(trainingdata:parameters:)-7j4w6.md) instead.
 
 ## Parameters
 

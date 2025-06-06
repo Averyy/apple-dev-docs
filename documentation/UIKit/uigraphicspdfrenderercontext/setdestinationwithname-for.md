@@ -1,6 +1,6 @@
 # setDestinationWithName(_:for:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Creates a link rectangle in the current page that jumps the PDF viewer to the named destination when clicked.
@@ -23,8 +23,6 @@ func setDestinationWithName(_ name: String, for rect: CGRect)
 Use this method in conjunction with the [`addDestination(withName:at:)`](uigraphicspdfrenderercontext/adddestination(withname:at:).md) method to create internal links within a PDF. This method represents the creation of the links that, when clicked, jump the user to a named destination, created using the [`addDestination(withName:at:)`](uigraphicspdfrenderercontext/adddestination(withname:at:).md) method.
 
 > **Note**:  Specify the `rect` value in the PDF coordinate space, not the Core Graphics coordinate space. This means the origin is in the bottom-left corner of the context rather than the top-left, and the y-axis increases in an upwards direction. Use the [`userSpaceToDeviceSpaceTransform`](https://developer.apple.com/documentation/CoreGraphics/CGContext/userSpaceToDeviceSpaceTransform) property on [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) to map between the two.
-
- Specify the `rect` value in the PDF coordinate space, not the Core Graphics coordinate space. This means the origin is in the bottom-left corner of the context rather than the top-left, and the y-axis increases in an upwards direction. Use the [`userSpaceToDeviceSpaceTransform`](https://developer.apple.com/documentation/CoreGraphics/CGContext/userSpaceToDeviceSpaceTransform) property on [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) to map between the two.
 
 For an example of how to use internal links, including mapping between coordinate spaces, see  [`Creating internal links`](uigraphicspdfrenderer#Creating-internal-links.md) in [`UIGraphicsPDFRenderer`](uigraphicspdfrenderer.md).
 

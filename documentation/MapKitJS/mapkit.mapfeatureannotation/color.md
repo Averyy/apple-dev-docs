@@ -1,6 +1,6 @@
 # color
 
-**Framework**: MapKit JS  
+**Framework**: Mapkitjs  
 **Kind**: property
 
 The color of the map feature.
@@ -17,8 +17,6 @@ attribute string color;
 #### Discussion
 
 > **Note**:  This property is only available when the [`featureType`](mapkit.mapfeatureannotation/featuretype.md) is [`PointOfInterest`](mapkit.mapfeaturetype/pointofinterest.md).
-
- This property is only available when the [`featureType`](mapkit.mapfeatureannotation/featuretype.md) is [`PointOfInterest`](mapkit.mapfeaturetype/pointofinterest.md).
 
 ## See Also
 
@@ -38,4 +36,4 @@ attribute string color;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit.mapfeatureannotation/color)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit.mapfeatureannotation/color)*

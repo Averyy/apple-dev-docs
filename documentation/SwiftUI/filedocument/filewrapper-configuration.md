@@ -1,6 +1,6 @@
 # fileWrapper(configuration:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method  
 **Required**: Yes
 
@@ -35,8 +35,6 @@ func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
 ```
 
 > **Note**: SwiftUI calls this method on a background thread. Don’t make user interface changes from that thread.
-
-SwiftUI calls this method on a background thread. Don’t make user interface changes from that thread.
 
 ## Parameters
 

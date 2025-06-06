@@ -1,6 +1,6 @@
 # Prefetching collection view data
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Load data for collection view cells before they display.
 
@@ -18,8 +18,6 @@ The image below shows cells outside the bounds of the collection view that have 
 ![An image that shows a collection view implementation. The collection view has a white background, and two columns of cells that each have a red background. A callout that says Displayed UICollectionView highlights the first three rows of cells. Below that, another callout that says Prefetched collection view cells highlights the last full row of cells and a partial row of cells.](https://docs-assets.developer.apple.com/published/b8e86eb4b8bdf044442c86e75f554ca8/prefetching-screenshot.png)
 
 > **Note**: The storyboard in this project contains a collection view controller with a collection view that has Clips To Bounds disabled. With this configuration, you can visualize the cells before they display.
-
-The storyboard in this project contains a collection view controller with a collection view that has Clips To Bounds disabled. With this configuration, you can visualize the cells before they display.
 
 ##### Enable Prefetching
 
@@ -56,8 +54,6 @@ func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPat
 ```
 
 > **Note**: Developers can create their own version of `AsyncFetcher` to fit their requirements. The implementation in this sample makes heavy use of [`Operation`](https://developer.apple.com/documentation/Foundation/Operation) and [`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue), leveraging their ability to handle thread safety and cancellation. Developers might consider a similar approach.
-
-Developers can create their own version of `AsyncFetcher` to fit their requirements. The implementation in this sample makes heavy use of [`Operation`](https://developer.apple.com/documentation/Foundation/Operation) and [`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue), leveraging their ability to handle thread safety and cancellation. Developers might consider a similar approach.
 
 When prefetching is complete, the sample adds the cell’s data to the `AsyncFetcher`‘s cache, so it’s ready to use when the cell displays. The cell’s background color changes from white to red when data is available for that cell.
 
@@ -140,4 +136,4 @@ func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItem
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/prefetching-collection-view-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/prefetching-collection-view-data)*

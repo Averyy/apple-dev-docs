@@ -32,8 +32,6 @@ Note that the default font for `NSAttributedString` objects is Helvetica 12-poin
 
 > **Note**:  In iOS, this class is used primarily in conjunction with the Core Text framework.
 
- In iOS, this class is used primarily in conjunction with the Core Text framework.
-
 `NSMutableAttributedString` is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableAttributedString`](https://developer.apple.com/documentation/CoreFoundation/CFMutableAttributedString). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
 ## Topics
@@ -136,4 +134,4 @@ Note that the default font for `NSAttributedString` objects is Helvetica 12-poin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsmutableattributedstring)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsmutableattributedstring)*

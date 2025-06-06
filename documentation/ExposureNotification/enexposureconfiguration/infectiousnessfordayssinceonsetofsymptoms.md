@@ -1,6 +1,6 @@
 # infectiousnessForDaysSinceOnsetOfSymptoms
 
-**Framework**: Exposure Notification  
+**Framework**: Exposurenotification  
 **Kind**: property
 
 The mapping between the days since onset of symptoms to the degree of infectiousness.
@@ -20,8 +20,6 @@ var infectiousnessForDaysSinceOnsetOfSymptoms: [NSNumber : NSNumber]? { get set 
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 
- This property is available in iOS 12.5, and in iOS 13.7 and later.
-
 The dictionary key is the day since the onset of symptoms. The corresponding value is an [`ENInfectiousness`](eninfectiousness.md) value. When the day is not known, use [`ENDaysSinceOnsetOfSymptomsUnknown`](endayssinceonsetofsymptomsunknown.md) as the dictionary key, like this:
 
 ```swift
@@ -32,8 +30,6 @@ infectiousnessForDaysSinceOnsetOfSymptoms[ENDaysSinceOnsetOfSymptionsUnknown] =
 You can’t change this property more often than once per week. During development, you can remove this limitation by adding the test entitlement `com.apple.developer.exposure-notification-test` to your project.
 
 > **Note**:  You must set this property when using the version 2 scoring algorithm.
-
- You must set this property when using the version 2 scoring algorithm.
 
 ## See Also
 
@@ -47,4 +43,4 @@ You can’t change this property more often than once per week. During developme
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration/infectiousnessfordayssinceonsetofsymptoms)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposureconfiguration/infectiousnessfordayssinceonsetofsymptoms)*

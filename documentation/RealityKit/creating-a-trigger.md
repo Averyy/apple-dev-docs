@@ -1,6 +1,6 @@
 # Creating a Trigger
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Define when and how a behavior fires.
 
@@ -13,8 +13,6 @@ Reality Composer supports five types of triggers: Tap, Scene Start, Proximity To
 Select the Tap trigger when you want a behavior to fire in response to the user tapping a specific object or objects. After adding a tap trigger to the behavior, select the object or objects in your scene that you want the user to interact with. If you accidentally select an object that you don’t want, click or tap it a second time to deselect it. When you’re finished making your selection, press the Done button. To make further changes to the affected objects, press the Choose button to return to selection mode.
 
 > 💡 **Tip**: You can only use tap triggers for detecting single taps with one finger. To detect more complex scenarios, such as double-taps, long presses, or multiple-finger taps, use a notification trigger and then use [`Gesture Recognizers`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_10.html#//apple_ref/doc/uid/TP40014484-SW20) or [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) gesture detection. For more information, see [`Fire a behavior from code`](creating-a-trigger#Fire-a-behavior-from-code.md).
-
-You can only use tap triggers for detecting single taps with one finger. To detect more complex scenarios, such as double-taps, long presses, or multiple-finger taps, use a notification trigger and then use [`Gesture Recognizers`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_10.html#//apple_ref/doc/uid/TP40014484-SW20) or [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) gesture detection. For more information, see [`Fire a behavior from code`](creating-a-trigger#Fire-a-behavior-from-code.md).
 
 ##### Fire a Behavior Immediately
 
@@ -31,8 +29,6 @@ Select the Proximity To Camera trigger if you want a behavior to fire whenever t
 Select the Collide trigger if you want a behavior to fire whenever specific objects collide with other objects in your scene, or when objects collide with detected real-world surfaces.
 
 > **Note**: The target of a collide trigger must participate in your scene’s physics simulation. If you select an object that does not participate, Reality Composer prompts you to enable it.
-
-The target of a collide trigger must participate in your scene’s physics simulation. If you select an object that does not participate, Reality Composer prompts you to enable it.
 
 ##### Fire a Behavior From Code
 
@@ -58,4 +54,4 @@ myScene.notifications.spinBox.post()
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-a-trigger)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-a-trigger)*

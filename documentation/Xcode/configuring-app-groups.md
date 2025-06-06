@@ -34,8 +34,6 @@ Xcode automatically selects the new app group in the App Groups list; this selec
 
 > **Note**:  You can also create macOS app groups using the naming convention `<Developer team ID>.<group name>`. By using this naming scheme, macOS checks that the code signature of processes that try to access the app group container contains the same `Developer-Team-ID` as app group container ID.
 
- You can also create macOS app groups using the naming convention `<Developer team ID>.<group name>`. By using this naming scheme, macOS checks that the code signature of processes that try to access the app group container contains the same `Developer-Team-ID` as app group container ID.
-
 ##### Access an App Groups Shared Container
 
 When your app becomes a member of an app group, there are a number of APIs you can use to read and write data to that group’s shared container, such as:
@@ -54,4 +52,4 @@ When your app becomes a member of an app group, there are a number of APIs you c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-app-groups)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-app-groups)*

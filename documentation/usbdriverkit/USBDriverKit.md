@@ -1,6 +1,6 @@
 # USBDriverKit
 
-**Framework**: USBDriverKit  
+**Framework**: Usbdriverkit  
 **Kind**: module
 
 Develop drivers for USB-based devices.
@@ -15,8 +15,6 @@ Use the [`USBDriverKit`](USBDriverKit.md) framework to develop drivers for custo
 Develop your driver by subclassing [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) in the [`DriverKit`](https://developer.apple.com/documentation/DriverKit) framework. On macOS, use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade your driver. On iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
 
 > **Note**:  USBDriverKit is available on macOS for Intel and Apple Silicon devices, and on iPadOS for devices with an M-series chip.
-
- USBDriverKit is available on macOS for Intel and Apple Silicon devices, and on iPadOS for devices with an M-series chip.
 
 ## Topics
 

@@ -24,8 +24,6 @@ By adding a custom SiriKit intent definition to your project and using an [`Inte
 
 > **Note**: On platforms that offer a dedicated user interface for configuring widgets — for example, iOS or macOS — `IntentRecommendation` is inactive.
 
-On platforms that offer a dedicated user interface for configuring widgets — for example, iOS or macOS — `IntentRecommendation` is inactive.
-
 For example, say you develop a game app that allows users to view their in-game character. With intent recommendations, you can recommend an intent configuration for a watch complication that displays character information.
 
 The following example shows a function to create a list of recommended configurations for a game widget that shows current energy levels for a game character.
@@ -71,4 +69,4 @@ public func recommendations() -> [IntentRecommendation<DynamicCharacterSelection
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/intentrecommendation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/intentrecommendation)*

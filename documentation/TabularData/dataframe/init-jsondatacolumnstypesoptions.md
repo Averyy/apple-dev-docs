@@ -1,6 +1,6 @@
 # init(jsonData:columns:types:options:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: init
 
 Creates a data frame by converting JSON data.
@@ -32,8 +32,6 @@ The JSON file should contain a sequence of objects where each object contains a 
 ```
 
 > **Note**: A `JSONReadingError` instance.
-
-A `JSONReadingError` instance.
 
 ## Parameters
 

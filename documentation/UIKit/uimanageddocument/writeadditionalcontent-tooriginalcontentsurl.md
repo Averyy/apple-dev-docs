@@ -1,6 +1,6 @@
 # writeAdditionalContent(_:to:originalContentsURL:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Handles writing non-Core Data content to the document’s file package.
@@ -28,10 +28,6 @@ You override this method to perform to write non-Core Data content in the additi
 - There’s no need to invoke `super`’s implementation.
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ##### Special Considerations
 

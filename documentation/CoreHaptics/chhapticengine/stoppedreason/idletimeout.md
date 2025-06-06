@@ -1,6 +1,6 @@
 # CHHapticEngine.StoppedReason.idleTimeout
 
-**Framework**: Core Haptics  
+**Framework**: Corehaptics  
 **Kind**: case
 
 The engine shut down because you’ve enabled automatic shutdown, and the engine reached its idle timeout.
@@ -25,8 +25,6 @@ If there’s a time-critical pattern to play, restart the engine. Otherwise, do 
 
 > **Note**:  Delegating engine restart to the system can add a slight delay to the start of the pattern.
 
- Delegating engine restart to the system can add a slight delay to the start of the pattern.
-
 ## See Also
 
 - [CHHapticEngine.StoppedReason.audioSessionInterrupt](chhapticengine/stoppedreason/audiosessioninterrupt.md)
@@ -45,4 +43,4 @@ If there’s a time-critical pattern to play, restart the engine. Otherwise, do 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/chhapticengine/stoppedreason/idletimeout)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/chhapticengine/stoppedreason/idletimeout)*

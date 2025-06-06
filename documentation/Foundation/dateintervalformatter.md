@@ -30,13 +30,9 @@ Configuring a formatter object
 
 > **Note**:  Always set to the [`dateStyle`](dateintervalformatter/datestyle.md) and [`timeStyle`](dateintervalformatter/timestyle.md) properties to appropriate values before generating any strings.
 
- Always set to the [`dateStyle`](dateintervalformatter/datestyle.md) and [`timeStyle`](dateintervalformatter/timestyle.md) properties to appropriate values before generating any strings.
-
 The [`string(from:to:)`](dateintervalformatter/string(from:to:).md) method may be called safely from any thread of your app. It is also safe to share a single instance of this class from multiple threads, with the caveat that you should not change the configuration of the object while another thread is using it to generate a string.
 
 > 💡 **Tip**:  In Swift, you can use [`Date.IntervalFormatStyle`](date/intervalformatstyle.md) rather than [`DateIntervalFormatter`](dateintervalformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
-
- In Swift, you can use [`Date.IntervalFormatStyle`](date/intervalformatstyle.md) rather than [`DateIntervalFormatter`](dateintervalformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
 ## Topics
 
@@ -91,4 +87,4 @@ The [`string(from:to:)`](dateintervalformatter/string(from:to:).md) method may b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/dateintervalformatter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/dateintervalformatter)*

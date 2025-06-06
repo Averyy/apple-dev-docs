@@ -28,8 +28,6 @@ The requested monthly weather statistics.
 
 > **Note**: Weather data error `WeatherError`
 
-Weather data error `WeatherError`
-
 The statistics returned for each month are derived from weather data recorded over the past decades, to the present date. Each item returned represents statistics for a particular Gregorian Calendar month of the year.
 
 This is a variadic API in which any combination of data sets can be requested and returned as a tuple. Here’s an example:

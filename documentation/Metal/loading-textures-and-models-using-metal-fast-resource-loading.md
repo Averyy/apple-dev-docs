@@ -12,8 +12,6 @@ Stream texture and buffer data directly from disk into Metal resources using fas
 
 > **Note**: This sample code project is associated with WWDC22 session [`10104: Load resources faster with Metal 3`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10104/).
 
-This sample code project is associated with WWDC22 session [`10104: Load resources faster with Metal 3`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10104/).
-
 ##### Configure the Sample Code Project
 
 This sample code project requires the following:
@@ -53,4 +51,4 @@ This sample code project requires the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/loading-textures-and-models-using-metal-fast-resource-loading)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/loading-textures-and-models-using-metal-fast-resource-loading)*

@@ -1,6 +1,6 @@
 # Synchronizing the File Provider Extension
 
-**Framework**: File Provider
+**Framework**: Fileprovider
 
 Keep the local and remote copies of your File Provider extension’s content in sync.
 
@@ -25,8 +25,6 @@ The system can also convert dataless copies to materialized copies, as needed. F
 The system typically requests information as a response to either user actions or updates from your remote storage. However, it can also enumerate your file provider’s content or materialize items as needed. For example, the system can enumerate and materialize the content of your working set in the background, so that Spotlight can index it. It can also convert materialized items back into dataless items to free disk space.
 
 > **Note**:  To avoid possible data loss, the system won’t convert a materialized item into a dataless item if the item has pending changes that the File Provider extension needs to sync.
-
- To avoid possible data loss, the system won’t convert a materialized item into a dataless item if the item has pending changes that the File Provider extension needs to sync.
 
 ##### Specify the Working Set
 
@@ -75,4 +73,4 @@ Alternatively, instead of having your File Provider extension call [`signalEnume
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/synchronizing-the-file-provider-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/synchronizing-the-file-provider-extension)*

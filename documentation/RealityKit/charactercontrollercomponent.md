@@ -1,6 +1,6 @@
 # CharacterControllerComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that manages character movement.
@@ -24,8 +24,6 @@ To use a character controller, add a `CharacterControllerComponent` to your enti
 
 > **Note**: [`PhysicsBodyComponent`](physicsbodycomponent.md) and [`CollisionComponent`](collisioncomponent.md) are incompatible with `CharacterControllerComponent`, and RealityKit deactivates them if you add them to the same entity.
 
-[`PhysicsBodyComponent`](physicsbodycomponent.md) and [`CollisionComponent`](collisioncomponent.md) are incompatible with `CharacterControllerComponent`, and RealityKit deactivates them if you add them to the same entity.
-
 #### Handle Collision
 
 Character entities are capsular, and you can specify their height and radius in the component’s initializer. A character’s capsule shape aligns with its [`upVector`](charactercontrollercomponent/upvector.md) so that the top and bottom of the capsule pass through that direction vector.
@@ -48,8 +46,6 @@ A common use case for `CharacterControllerComponent` is to control a character i
 To move your character in response to player input, subscribe to [`PhysicsSimulationEvents.WillSimulate`](physicssimulationevents/willsimulate.md) on [`RealityViewContent`](realityviewcontent.md) for your scene. The event object contains information like the time delta since the last update, and you can treat this callback as the update loop for your game.
 
 > **Note**: You can also use [`SceneEvents.Update`](sceneevents/update.md) to run code for each frame, but avoid using it to control physics-based motion in your scene.
-
-You can also use [`SceneEvents.Update`](sceneevents/update.md) to run code for each frame, but avoid using it to control physics-based motion in your scene.
 
 Read the values from [`CharacterControllerStateComponent`](charactercontrollerstatecomponent.md) to accumulate forces (such as gravity) and to check whether the character is on the ground. RealityKit calculates [`isOnGround`](charactercontrollerstatecomponent/isonground.md) and  [`velocity`](charactercontrollerstatecomponent/velocity.md) only after you call `moveCharacter(by:deltaTime:relativeTo:collisionHandler:)`, so it’s a good idea to call this function at each update.
 
@@ -149,4 +145,4 @@ The following video shows a character entity jumping in response to player input
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/charactercontrollercomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/charactercontrollercomponent)*

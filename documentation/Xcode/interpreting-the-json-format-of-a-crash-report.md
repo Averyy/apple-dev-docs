@@ -156,8 +156,6 @@ For more information, see [`Exception information`](examining-the-fields-in-a-cr
 
 > **Note**: This exception information doesn’t refer to language exceptions thrown by an API or language features in Objective-C or C++. Crash reports record language exception information separately.
 
-This exception information doesn’t refer to language exceptions thrown by an API or language features in Objective-C or C++. Crash reports record language exception information separately.
-
 ##### Termination
 
 A report includes termination information in an object that can contain the following properties:
@@ -253,4 +251,4 @@ print(String(format: "0x%lx", decimal))
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/interpreting-the-json-format-of-a-crash-report)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/interpreting-the-json-format-of-a-crash-report)*

@@ -49,8 +49,6 @@ Memory that has been bound to a type can be rebound to a different type only aft
 
 > **Note**: A trivial type can be copied bit for bit with no indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enumerations.
 
-A trivial type can be copied bit for bit with no indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enumerations.
-
 When reading from  memory as raw bytes when that memory is bound to a type, you must ensure that you satisfy any alignment requirements.
 
 ### Raw Pointer Arithmetic
@@ -140,14 +138,6 @@ let numberPointer = UnsafeRawPointer(&number)
 // Accessing 'numberPointer' is undefined behavior.
 ```
 
-The pointer created through implicit bridging of an instance or of an array’s elements is only valid during the execution of the called function. Escaping the pointer to use after the execution of the function is undefined behavior. In particular, do not use implicit bridging when calling an `UnsafeRawPointer` initializer.
-
-```swift
-var number = 5
-let numberPointer = UnsafeRawPointer(&number)
-// Accessing 'numberPointer' is undefined behavior.
-```
-
 ## Topics
 
 ### Initializers
@@ -232,4 +222,4 @@ let numberPointer = UnsafeRawPointer(&number)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/unsaferawpointer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/unsaferawpointer)*

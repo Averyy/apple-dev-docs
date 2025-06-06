@@ -28,8 +28,6 @@ The extra-large system widget can appear on the Home Screen or in the Today View
 
 > **Note**: This value is only available in iPadOS and macOS.
 
-This value is only available in iPadOS and macOS.
-
 ## See Also
 
 - [WidgetFamily.systemSmall](widgetfamily/systemsmall.md)

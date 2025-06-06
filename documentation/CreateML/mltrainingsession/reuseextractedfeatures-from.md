@@ -1,6 +1,6 @@
 # reuseExtractedFeatures(from:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Uses the features another session has already extracted from its dataset.
@@ -26,8 +26,6 @@ You can only use this method for a new training session that doesn’t already h
 - session: Another training session that’s already completed its feature extraction phase.
 
 > **Note**: This method throws an error if the training session has one or more checkpoints.
-
-This method throws an error if the training session has one or more checkpoints.
 
 
 ---

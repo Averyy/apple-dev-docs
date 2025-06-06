@@ -1,6 +1,6 @@
 # External Accessory
 
-**Framework**: External Accessory  
+**Framework**: Externalaccessory  
 **Kind**: module
 
 Communicate with accessories that connect to a device with the Apple Lightning connector, or with Bluetooth wireless technology.
@@ -18,8 +18,6 @@ Communicate with accessories that connect to a device with the Apple Lightning c
 Use the External Accessory framework to set up and manage a connection to an MFi accessory your iOS app supports. The framework supports hardware that connects to an iOS or iPadOS device physically through an Apple Lightning or a 30-pin connector, or wirelessly with Bluetooth technology. The framework notifies your app when the accessory connects or disconnects from the user’s device. While connected, you communicate directly with the accessory using any hardware protocols the device supports.
 
 > **Note**:  iPad and iPhone apps running on a Mac with Apple silicon can’t connect to external accessories using this framework. You may continue to link apps to this framework and run other features on Apple silicon.
-
- iPad and iPhone apps running on a Mac with Apple silicon can’t connect to external accessories using this framework. You may continue to link apps to this framework and run other features on Apple silicon.
 
 The manufacturer of an MFi accessory decides which third-party apps may communicate with their accessories. If you’re developing an app, work with the manufacturer to obtain the information you need to communicate with their hardware. For example, obtain the specifications for the communication protocols the device supports.
 

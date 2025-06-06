@@ -30,8 +30,6 @@ This method provides a means for dynamically discovering multiple bundle resourc
 
 > **Note**:  This method is best suited only for the occasional retrieval of resource files. In most cases where you need to retrieve bundle resources, it is preferable to use the `NSBundle` instance methods instead.
 
- This method is best suited only for the occasional retrieval of resource files. In most cases where you need to retrieve bundle resources, it is preferable to use the `NSBundle` instance methods instead.
-
 ## Parameters
 
 - `ext`: If you specify an empty string or  , the extension is assumed not to exist and all of the files in   are returned.

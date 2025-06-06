@@ -24,8 +24,6 @@ static let isHiddenKey: URLResourceKey
 
 > **Note**:  If the resource is hidden because its name begins with a period, setting this value has no effect.
 
- If the resource is hidden because its name begins with a period, setting this value has no effect.
-
 ## See Also
 
 - [static let keysOfUnsetValuesKey: URLResourceKey](urlresourcekey/keysofunsetvalueskey.md)

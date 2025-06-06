@@ -1,6 +1,6 @@
 # purchase(compactJWS:confirmIn:options:)
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: method
 
 Processes a purchase for the product.
@@ -21,8 +21,6 @@ The result of the purchase.
 #### Discussion
 
 > **Note**:  A `PurchaseError`, `StoreKitError`, or `InvalidRequest` error.
-
- A `PurchaseError`, `StoreKitError`, or `InvalidRequest` error.
 
 ## Parameters
 

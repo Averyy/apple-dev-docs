@@ -1,6 +1,6 @@
 # ContentFailure
 
-**Framework**: SiriKit Cloud Media  
+**Framework**: Sirikitcloudmedia  
 **Kind**: dictionary
 
 An object that describes why the client can’t play a specific piece of content.
@@ -33,8 +33,6 @@ If you receive a [`ContentFailure`](contentfailure.md) with an `errorCode` of `1
 
 > **Note**:  The client doesn’t send an error if your service provides an invalid content key for the specified `assetIdentifier`.
 
- The client doesn’t send an error if your service provides an invalid content key for the specified `assetIdentifier`.
-
 ## See Also
 
 - [Recover from Content Playback Failure](contentplaybackfailure.md)
@@ -47,4 +45,4 @@ If you receive a [`ContentFailure`](contentfailure.md) with an `errorCode` of `1
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikitcloudmedia/contentfailure)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKitCloudMedia/contentfailure)*

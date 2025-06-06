@@ -1,6 +1,6 @@
 # init(contact:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: init
 
 Creates a Home Screen quick action icon from the picture for a contact or a monogram of the contact name if the picture is unavailable.
@@ -25,8 +25,6 @@ A Home Screen quick action icon initialized with the contact’s picture or mono
 To use this method, pass in a contact from the user’s contacts database, available through the [`CNContactStore`](https://developer.apple.com/documentation/Contacts/CNContactStore) object. If the contact you specify has a picture, the system creates a full-color quick action icon from that picture. If the contact has no picture, the system employs the contact’s initials and displays instead a monogram.
 
 > **Note**:  This method employs the [`Contacts`](https://developer.apple.com/documentation/Contacts) framework.
-
- This method employs the [`Contacts`](https://developer.apple.com/documentation/Contacts) framework.
 
 You can, alternatively, pass in a [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) object you create at runtime. Such a contact must have at least a first name or a last name. The quick action icon returned from this method is then a monogram built from the contact’s name. With this approach, it isn’t possible for you to provide an image for the quick action icon.
 

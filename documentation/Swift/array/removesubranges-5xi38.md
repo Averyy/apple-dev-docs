@@ -35,8 +35,6 @@ str.removeSubranges(vowelIndices)
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `subranges`: The indices of the elements to remove.

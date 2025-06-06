@@ -10,8 +10,6 @@ Use this check to detect when you access a libc++ container beyond the region `[
 
 > **Note**: This check is in a disabled state by default because it requires building all statically linked libraries using `std::vector` with an enabled Address Sanitizer. To enable this check, choose the Yes option for the Enable C++ Container Overflow Checks setting.
 
-This check is in a disabled state by default because it requires building all statically linked libraries using `std::vector` with an enabled Address Sanitizer. To enable this check, choose the Yes option for the Enable C++ Container Overflow Checks setting.
-
 ##### Vector Overflow in C++
 
 In the following example, the `vector` variable has valid indexes in the range `[0,2]`, but the accessed index is `3`, which causes an overflow:
@@ -47,4 +45,4 @@ Add a bounds check before attempting to access a container at a specific index.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/overflow-of-c-containers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/overflow-of-c-containers)*

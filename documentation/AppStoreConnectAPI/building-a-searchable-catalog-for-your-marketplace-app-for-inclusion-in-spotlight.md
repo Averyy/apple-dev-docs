@@ -1,6 +1,6 @@
 # Building a searchable catalog for your marketplace app for inclusion in Spotlight
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Set up and build your alternative marketplace’s searchable index.
 
@@ -34,8 +34,6 @@ The following items are required for the alternative marketplace:
 
 > **Note**:  Apple infers the hostname from the root sitemap URL you configure by using [`Add a marketplace domain`](post-v1-marketplacedomains.md).
 
- Apple infers the hostname from the root sitemap URL you configure by using [`Add a marketplace domain`](post-v1-marketplacedomains.md).
-
 The marketplace submits the sitemap URL to App Store Connect with [`Add a marketplace search detail URL`](post-v1-marketplacesearchdetails.md).
 
 The sitemap is the root file where Applebot start its crawl and then it proceeds to the application URLs.
@@ -65,8 +63,6 @@ curl -X GET https://example.com/apps/sitemap.xml
 The [`Applebot`](https://developer.apple.comhttps://support.apple.com/en-us/HT204683) web crawler fetches the list of URLs present in the sitemap and crawls them all. Each URL needs to point to an HTML document that contains structured data schemas that include essential information about the content using the [`JSON-LD format.`](https://developer.apple.comhttps://json-ld.org)
 
 > **Note**:  If you have catalog discovery issues contact [`applebot@apple.com`](https://developer.apple.commailto://applebot@apple.com) for assistance.
-
- If you have catalog discovery issues contact [`applebot@apple.com`](https://developer.apple.commailto://applebot@apple.com) for assistance.
 
 Here’s an example markup:
 
@@ -210,8 +206,6 @@ These fields are the exact and only fields that are mandatory for `MobileApplica
 
 > **Note**:  For each version of your app, provide all the fields contained in `supportingData` in a single instance of `supportingData` that wraps all of them.
 
- For each version of your app, provide all the fields contained in `supportingData` in a single instance of `supportingData` that wraps all of them.
-
 ##### Consider Optional Fields
 
 Optionally, every instance  define additional ranking signals to facilitate surfacing the best results. These signals use [`structured data schemas`](https://developer.apple.comhttps://schema.org)’s `aggregateRating`, which is an app-rating value, together with the total review count and the rating range. The widest supported rating range is from 0 to 100. When using `aggregateRating`, all four properties are mandatory. For more information see [`aggregateRating`](https://developer.apple.comhttps://schema.org/aggregateRating).
@@ -276,4 +270,4 @@ For this example, the user searches for outdoor apps. There are three apps that 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight)*

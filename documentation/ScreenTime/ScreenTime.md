@@ -1,6 +1,6 @@
 # Screen Time
 
-**Framework**: Screen Time  
+**Framework**: Screentime  
 **Kind**: module
 
 Share and manage web-usage data, and observe changes made by a parent or guardian.
@@ -20,8 +20,6 @@ The Screen Time framework gives you the tools you need to help parents and guard
 - Take action when a parent or guardian blocks a URL or begins enforcing child restrictions.
 
 > **Note**: In a compatible iPad or iPhone app running in visionOS, the APIs of this framework do nothing.
-
-In a compatible iPad or iPhone app running in visionOS, the APIs of this framework do nothing.
 
 ## Topics
 

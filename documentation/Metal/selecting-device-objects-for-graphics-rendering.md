@@ -45,8 +45,6 @@ The sample’s view controller manages all Metal devices, with each device repre
 
 > **Note**: Preloading and mirroring resources allows you to transition smoothly between devices, but it also increases your app’s total memory usage. You must carefully determine which resources should be preloaded and mirrored, and which resources should instead be loaded only when your app switches between devices.
 
-Preloading and mirroring resources allows you to transition smoothly between devices, but it also increases your app’s total memory usage. You must carefully determine which resources should be preloaded and mirrored, and which resources should instead be loaded only when your app switches between devices.
-
 ##### Set the Optimal Device for the Views Display
 
 After the view appears, the sample gets the `CGDirectDisplayID` value of the display in which the view appears. The sample uses this identifier to get the Metal device that drives the display.
@@ -209,8 +207,6 @@ After the view disappears, the sample explicitly deregisters itself from any pre
 
 > **Note**: The sample can’t defer the deregistration process to the view controller’s `dealloc` method. When the `dealloc` method is executed, the system’s notification center and Metal still have references to the view controller that prevent it from being destroyed.
 
-The sample can’t defer the deregistration process to the view controller’s `dealloc` method. When the `dealloc` method is executed, the system’s notification center and Metal still have references to the view controller that prevent it from being destroyed.
-
 ## See Also
 
 - [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
@@ -243,4 +239,4 @@ The sample can’t defer the deregistration process to the view controller’s `
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/selecting-device-objects-for-graphics-rendering)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/selecting-device-objects-for-graphics-rendering)*

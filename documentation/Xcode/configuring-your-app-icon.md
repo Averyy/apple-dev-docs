@@ -73,8 +73,6 @@ Add images to each layer by dragging them from the Finder into the image wells i
 
 > **Note**: You can use Parallax Previewer app or Parallax Exporter plug-in to create and preview Layer Source Representation (.lsr and .xlsr) files that you can import into your Asset Catalog in Xcode. Save your file in the LSR file format to import a tvOS icon into Xcode, and save in the XLSR file format to import a visionOS icon. Download these from the [`Apple Design Resources`](https://developer.apple.comhttps://developer.apple.com/design/resources) site.
 
-You can use Parallax Previewer app or Parallax Exporter plug-in to create and preview Layer Source Representation (.lsr and .xlsr) files that you can import into your Asset Catalog in Xcode. Save your file in the LSR file format to import a tvOS icon into Xcode, and save in the XLSR file format to import a visionOS icon. Download these from the [`Apple Design Resources`](https://developer.apple.comhttps://developer.apple.com/design/resources) site.
-
 ##### Specify an App Store Icon
 
 If you distribute your app through the App Store, you must provide app icon imagery to use in the App Store. In the Project navigator, select an asset catalog and add icon images to the appropriate image wells in an app icon set or image stack. The App Store image well location varies by platform.
@@ -114,4 +112,4 @@ For information on configuring tests that use icons in App Store Connect, see [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-your-app-icon)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-your-app-icon)*

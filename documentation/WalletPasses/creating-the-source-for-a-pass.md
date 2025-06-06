@@ -49,8 +49,6 @@ Localize an image by adding the location-specific image files to each localizati
 
 > **Note**:  Adding an image of the same name to the top-level folder of the pass overrides any localized versions. In addition, the localized image of a pass may not update after adding the pass to Wallet.
 
- Adding an image of the same name to the top-level folder of the pass overrides any localized versions. In addition, the localized image of a pass may not update after adding the pass to Wallet.
-
 ##### Localize the Strings
 
 When a user opens a pass, the system localizes displayed strings in two different ways. The system localizes pass fields that contain dates, times, and currencies that use standard formats in the `pass.json` file. For example, in the pass shown above, the expiration date value is an ISO 8601 date in [`PassFieldContent`](passfieldcontent.md):
@@ -123,4 +121,4 @@ Use UTF-16 encoding for non-ASCII characters.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/creating-the-source-for-a-pass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/creating-the-source-for-a-pass)*

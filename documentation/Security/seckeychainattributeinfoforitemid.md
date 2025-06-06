@@ -24,10 +24,6 @@ This call returns more attributes than are supported by the old style Keychain A
 
 > **Note**:  This is a CSSM-based API. CSSM is deprecated. For new development, where possible, you should generally use [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) to obtain the attributes of keychain items instead, because that function is based on Core Foundation types.
 
- This is a CSSM-based API. CSSM is deprecated.
-
-For new development, where possible, you should generally use [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) to obtain the attributes of keychain items instead, because that function is based on Core Foundation types.
-
 ## Parameters
 
 - `keychain`: A keychain object.

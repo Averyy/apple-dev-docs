@@ -27,8 +27,6 @@ Provide a hint in the form of a brief phrase, like “Purchases the item” or �
 
 > **Note**: On macOS, if the view does not have an action and it has been made into a container with `accessibilityElement(children: .contain)`, this will be used to describe the container. For example, if the container is for a graph, the hint could be “graph”.
 
-On macOS, if the view does not have an action and it has been made into a container with `accessibilityElement(children: .contain)`, this will be used to describe the container. For example, if the container is for a graph, the hint could be “graph”.
-
 
 ---
 

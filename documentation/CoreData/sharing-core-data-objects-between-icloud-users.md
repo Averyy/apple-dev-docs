@@ -1,6 +1,6 @@
 # Sharing Core Data objects between iCloud users
 
-**Framework**: Core Data
+**Framework**: Coredata
 
 Use Core Data and CloudKit to synchronize data between devices of an iCloud user and share data between different iCloud users.
 
@@ -60,8 +60,6 @@ To create and share a photo using the sample app, follow these steps:
 
 > **Note**: It may take some time for one user to see changes from the other. CloudKit isn’t for real-time synchronization. For apps that use CloudKit, the system determines when to synchronize data. This helps balance the use of system resources and achieve the best overall user experience. There is no API for apps to configure the timing for the synchronization.
 
-It may take some time for one user to see changes from the other. CloudKit isn’t for real-time synchronization. For apps that use CloudKit, the system determines when to synchronize data. This helps balance the use of system resources and achieve the best overall user experience. There is no API for apps to configure the timing for the synchronization.
-
 To discover more features of the sample app:
 
 - On device A, add another photo, touch and hold it, tap Add to Share, and then tap the trailing icon of the share. The photo soon appears on device B.
@@ -109,8 +107,6 @@ The sample app doesn’t interact with the system sharing UI for other purposes.
 
 > **Note**: For more information about Core Data and CloudKit sharing, see [`Build apps that share data through CloudKit and Core Data`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10015/) and [`What’s new in CloudKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10086).
 
-For more information about Core Data and CloudKit sharing, see [`Build apps that share data through CloudKit and Core Data`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10015/) and [`What’s new in CloudKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10086).
-
 ##### Detect Relevant Changes By Consuming Store Persistent History
 
 When importing data from CloudKit, `NSPersistentCloudKitContainer` records the changes on Core Data objects in the store’s persistent history, and triggers remote change notifications (`.NSPersistentStoreRemoteChange`) so apps can keep their state up-to-date. The sample app observes the notification and performs the following actions in the notification handler:
@@ -144,8 +140,6 @@ if privatePersistentStore.identifier == storeUUID {
 The persistent history stays on the device as a part of the Core Data store, and accumulates over time. Apps that have a large data set can purge it. To do so, observe [`eventChangedNotification`](NSPersistentCloudKitContainer/eventChangedNotification.md) to determine the start date of the last successful `.export` event, and then purge the history that occurs sometime before that date. The  needs to be long enough for the history to become irrelevant, which can be several months for apps that people use on a regular basis. Apps generally only need to purge the history several times a year.
 
 > **Note**: `NSPersistentCloudKitContainer` relies on the persistent history to determine the data it needs to export. The history remains relevant before `NSPersistentCloudKitContainer` finishes processing it. Purging the history that is still relevant invalidates some internal state, and triggers a `reset` operation that synchronizes the store with the CloudKit server truth.
-
-`NSPersistentCloudKitContainer` relies on the persistent history to determine the data it needs to export. The history remains relevant before `NSPersistentCloudKitContainer` finishes processing it. Purging the history that is still relevant invalidates some internal state, and triggers a `reset` operation that synchronizes the store with the CloudKit server truth.
 
 For more information about persistent history processing, see [`Consuming relevant store changes`](consuming-relevant-store-changes.md).
 
@@ -191,8 +185,6 @@ Apps can implement a custom sharing flow when the system sharing UI is unavailab
 
 > **Note**: To be able to accept a share when people tap a share link, an app’s `Info.plist` file needs to contain the `CKSharingSupported` key with a value of `true`.
 
-To be able to accept a share when people tap a share link, an app’s `Info.plist` file needs to contain the `CKSharingSupported` key with a value of `true`.
-
 In this process, the sample app calls [`persistUpdatedShare(_:in:completion:)`](nspersistentcloudkitcontainer/3746832-persistupdatedshare.md) when it changes the share using CloudKit APIs for `NSPersistentCloudKitContainer` to update the store. The following code shows how the app adds a participant:
 
 ```swift
@@ -222,4 +214,4 @@ self.persistentContainer.persistUpdatedShare(share, in: persistentStore) { (shar
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/sharing-core-data-objects-between-icloud-users)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/sharing-core-data-objects-between-icloud-users)*

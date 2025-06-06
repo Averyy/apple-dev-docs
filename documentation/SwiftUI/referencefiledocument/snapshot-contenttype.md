@@ -1,6 +1,6 @@
 # snapshot(contentType:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method  
 **Required**: Yes
 
@@ -36,8 +36,6 @@ func snapshot(contentType: UTType) throws -> Snapshot {
 SwiftUI prevents document edits during the snapshot operation to ensure that the model state remains coherent. After the call completes, SwiftUI reenables edits, and then calls the [`fileWrapper(snapshot:configuration:)`](referencefiledocument/filewrapper(snapshot:configuration:).md) method, where you serialize the snapshot and store it to a file.
 
 > **Note**: SwiftUI calls this method on a background thread. Don’t make user interface changes from that thread.
-
-SwiftUI calls this method on a background thread. Don’t make user interface changes from that thread.
 
 ## Parameters
 

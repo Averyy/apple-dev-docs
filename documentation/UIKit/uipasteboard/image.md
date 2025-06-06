@@ -1,6 +1,6 @@
 # image
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The image object of the first pasteboard item.
@@ -23,8 +23,6 @@ var image: UIImage? { get set }
 The value stored in this property is a [`UIImage`](uiimage.md) object. The associated array of representation types is [`typeListImage`](uipasteboard/typelistimage.md), which includes types `kUTTypePNG` and `kUTTypeJPEG`. Setting this property replaces all current items in the pasteboard with the new item.  If the first item has no value of the indicated type, `nil` is returned.
 
 > **Note**:  Do not use this property to determine if a pasteboard contains image data. Instead, use the [`hasImages`](uipasteboard/hasimages.md) property.
-
- Do not use this property to determine if a pasteboard contains image data. Instead, use the [`hasImages`](uipasteboard/hasimages.md) property.
 
 ## See Also
 

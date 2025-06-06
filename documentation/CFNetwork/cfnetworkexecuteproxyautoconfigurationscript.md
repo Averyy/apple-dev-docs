@@ -1,6 +1,6 @@
 # CFNetworkExecuteProxyAutoConfigurationScript(_:_:_:_:)
 
-**Framework**: CFNetwork  
+**Framework**: Cfnetwork  
 **Kind**: func
 
 Downloads a proxy autoconfiguration script and executes it.
@@ -24,8 +24,6 @@ func CFNetworkExecuteProxyAutoConfigurationScript(_ proxyAutoConfigurationScript
 This function returns a run loop source that the caller should schedule. Once execution of the script has completed, the specified callback function is called.
 
 > **Note**:  If you want to terminate the request before completion, you should invalidate the run loop source.
-
- If you want to terminate the request before completion, you should invalidate the run loop source.
 
 ## Parameters
 

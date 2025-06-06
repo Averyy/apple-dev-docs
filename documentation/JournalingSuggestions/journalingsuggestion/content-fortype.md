@@ -1,6 +1,6 @@
 # content(forType:)
 
-**Framework**: Journaling Suggestions  
+**Framework**: Journalingsuggestions  
 **Kind**: method
 
 Searches a suggestion’s items for information of the given type.
@@ -23,8 +23,6 @@ An array that contains elements of the requested type, if they exist in the sugg
 The framework templates this method, where `Content` is [`JournalingSuggestionAsset`](journalingsuggestionasset.md), because the `content` argument is a `Type` rather than an enumeration case, or other primitive.
 
 > **Note**: An error if the journaling suggestions picker encounters an unexpected issue.
-
-An error if the journaling suggestions picker encounters an unexpected issue.
 
 ## Parameters
 

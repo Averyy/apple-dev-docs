@@ -1,6 +1,6 @@
 # prefix(while:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Returns a subsequence containing the initial elements until `predicate` returns `false` and skipping the remaining elements.
@@ -23,8 +23,6 @@ func prefix(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.Sub
 #### Discussion
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Audio Queue Services
 
-**Framework**: Audio Toolbox
+**Framework**: Audiotoolbox
 
 Connect to audio hardware and manage the recording or playback process.
 
@@ -18,8 +18,6 @@ An audio queue is a software object you use for recording or playing audio. An a
 Audio Queue Services enables you to record and play audio in linear PCM, in compressed formats (such as Apple Lossless and AAC), and in other formats for which users have installed codecs. Audio Queue Services also supports scheduled playback and synchronization of multiple audio queues and synchronization of audio with video.
 
 > **Note**:  Audio Queue Services provides features similar to those previously offered by the Sound Manager and in macOS. It adds additional features such as synchronization. The Sound Manager is deprecated in OS X v10.5 and does not work with 64-bit applications. Audio Queue Services is recommended for all new development and as a replacement for the Sound Manager in existing Mac apps.
-
- Audio Queue Services provides features similar to those previously offered by the Sound Manager and in macOS. It adds additional features such as synchronization. The Sound Manager is deprecated in OS X v10.5 and does not work with 64-bit applications. Audio Queue Services is recommended for all new development and as a replacement for the Sound Manager in existing Mac apps.
 
 ## Topics
 
@@ -268,4 +266,4 @@ Audio Queue Services enables you to record and play audio in linear PCM, in comp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/audio-queue-services)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox/audio-queue-services)*

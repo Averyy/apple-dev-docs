@@ -1,6 +1,6 @@
 # Requesting the OpenGL Renderer
 
-**Framework**: SpriteKit
+**Framework**: Spritekit
 
 Switch to the legacy renderer temporarily for debugging purposes.
 
@@ -9,8 +9,6 @@ Switch to the legacy renderer temporarily for debugging purposes.
 By default, SpriteKit renders with Metal in iOS 9 and OS X 10.11, but you can request the OpenGL renderer by adding the  key to your app’s  and giving it a boolean value of .
 
 > ❗ **Important**:  This key applies to SceneKit content, too. So if your app uses SceneKit within SpriteKit, or displays SceneKit content on its own, that content will also be affected by this key.
-
- This key applies to SceneKit content, too. So if your app uses SceneKit within SpriteKit, or displays SceneKit content on its own, that content will also be affected by this key.
 
 ##### Displaying the Currently Active Renderer
 
@@ -37,9 +35,7 @@ defaults.set( dict, forKey: "SKDefaults" )
 
 > **Note**:  You should add this code within your app’s initialization code.
 
- You should add this code within your app’s initialization code.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/requesting-the-opengl-renderer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/requesting-the-opengl-renderer)*

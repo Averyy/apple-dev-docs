@@ -1,6 +1,6 @@
 # init(descriptor:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates a low-level texture from a descriptor.
@@ -22,8 +22,6 @@ init(descriptor: LowLevelTexture.Descriptor) throws
 #### Discussion
 
 > **Note**: If the descriptor is invalid or if memory was not allocated successfully.
-
-If the descriptor is invalid or if memory was not allocated successfully.
 
 ## Parameters
 

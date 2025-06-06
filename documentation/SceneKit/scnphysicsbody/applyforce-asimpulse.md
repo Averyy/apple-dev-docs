@@ -1,6 +1,6 @@
 # applyForce(_:asImpulse:)
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: method
 
 Applies a force or impulse to the body at its center of mass.
@@ -30,8 +30,6 @@ The `impulse` parameter determines how this method contributes to the physics si
 - If you specify [`false`](https://developer.apple.com/documentation/swift/false), SceneKit treats the `direction` parameter as a force, measured in newtons. At the end of each simulation step (by default, a step occurs once for each frame in the rendering loop), SceneKit sums all forces applied to the physics body during that step and accelerates the body according to the net effect of those forces. Use this option when you want to simulate continuous forces on the body by calling [`applyForce(_:asImpulse:)`](scnphysicsbody/applyforce(_:asimpulse:).md) on each simulation step.
 
 > **Note**:  The `impulse` parameter effectively changes the unit of magnitude. A value that results in a certain acceleration when applied continuously on each frame of the simulation results in much less acceleration if applied only during a single frame.
-
- The `impulse` parameter effectively changes the unit of magnitude. A value that results in a certain acceleration when applied continuously on each frame of the simulation results in much less acceleration if applied only during a single frame.
 
 As with all physical quantities in SceneKit, you need not use realistic force measurements in your app—the effects of the physics simulation depend on the relative differences between forces, not on their absolute values. You may use whatever values produce the behavior or gameplay you’re looking for as long as you use them consistently.
 

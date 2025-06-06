@@ -1,6 +1,6 @@
 # write(from:startingAt:length:)
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: method
 
 Synchronously writes data from from a buffer to the resource and executes a block afterwards.
@@ -25,8 +25,6 @@ This method is a synchronous version of [`writeFrom:startingAt:length:completion
 In some cases, this method performs a partial write. In this case, the return value is shorter than the requested length, and the `error` is set to `nil`.
 
 > **Note**: Any error encountered while writing data.
-
-Any error encountered while writing data.
 
 ## Parameters
 

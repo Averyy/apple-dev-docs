@@ -48,8 +48,6 @@ assert(group.isEmpty())
 
 > **Note**: The  error that was thrown by a child task during draining all the tasks. This first error is stored until all other tasks have completed, and is re-thrown afterwards.
 
-The  error that was thrown by a child task during draining all the tasks. This first error is stored until all other tasks have completed, and is re-thrown afterwards.
-
 ## See Also
 
 - [func next() async throws -> ChildTaskResult?](throwingtaskgroup/next.md)

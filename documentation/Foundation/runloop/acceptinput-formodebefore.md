@@ -26,8 +26,6 @@ If no input sources or timers are attached to the run loop, this method exits im
 
 > **Note**:  A timer is not considered an input source and may fire multiple times while waiting for this method to return
 
- A timer is not considered an input source and may fire multiple times while waiting for this method to return
-
 Manually removing all known input sources and timers from the run loop is not a guarantee that the run loop will exit. macOS can install and remove additional input sources as needed to process requests targeted at the receiver’s thread. Those sources could therefore prevent the run loop from exiting.
 
 ## Parameters

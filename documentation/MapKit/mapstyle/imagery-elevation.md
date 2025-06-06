@@ -1,6 +1,6 @@
 # imagery(elevation:)
 
-**Framework**: MapKit  
+**Framework**: Mapkit  
 **Kind**: method
 
 Creates a map style based on satellite imagery with the elevation characteristics you specify.
@@ -27,8 +27,6 @@ A [`MapStyle`](mapstyle.md) with the elevation style you specified.
 #### Discussion
 
 > **Note**:  In watchOS, depending on rendering calculations, MapKit may render the map using the Standard map style rather than requested Hybrid or Imagery styles.
-
- In watchOS, depending on rendering calculations, MapKit may render the map using the Standard map style rather than requested Hybrid or Imagery styles.
 
 ## Parameters
 

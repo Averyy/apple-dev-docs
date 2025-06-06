@@ -1,6 +1,6 @@
 # Refract (RealityKit)
 
-**Framework**: ShaderGraph  
+**Framework**: Shadergraph  
 **Kind**: subscript
 
 Refracts a vector using a given normal and index of refraction (eta).
@@ -14,8 +14,6 @@ Refracts a vector using a given normal and index of refraction (eta).
 The Refract node takes an incident vector `In` and calculates the direction of refraction off a surface.
 
 > **Note**: The vectors passed as the `In` and `Normal` parameters must both already be normalized in order to get the desired output.
-
-The vectors passed as the `In` and `Normal` parameters must both already be normalized in order to get the desired output.
 
 ## See Also
 

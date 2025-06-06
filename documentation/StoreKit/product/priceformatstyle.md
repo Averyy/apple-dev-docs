@@ -1,6 +1,6 @@
 # priceFormatStyle
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: property
 
 The format style for the numbers in the price of the product.
@@ -28,8 +28,6 @@ The [`priceFormatStyle`](product/priceformatstyle.md) value is a localized numbe
 To display the [`price`](product/price.md) directly, rather than making calculations, use the [`displayPrice`](product/displayprice.md) string instead.
 
 > **Note**:  When using [`priceFormatStyle`](product/priceformatstyle.md) on systems earlier than iOS 16, macOS 13, tvOS 16, and watchOS 9, the property may return a format style with a sentinel locale identifier of `“xx_XX”` in uncommon cases, including if the server has an error, or while testing your app using StoreKit Testing in Xcode. For StoreKit testing, use a later OS version.
-
- When using [`priceFormatStyle`](product/priceformatstyle.md) on systems earlier than iOS 16, macOS 13, tvOS 16, and watchOS 9, the property may return a format style with a sentinel locale identifier of `“xx_XX”` in uncommon cases, including if the server has an error, or while testing your app using StoreKit Testing in Xcode. For StoreKit testing, use a later OS version.
 
 ## See Also
 

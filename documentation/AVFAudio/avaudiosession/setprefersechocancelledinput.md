@@ -1,6 +1,6 @@
 # setPrefersEchoCancelledInput(_:)
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: method
 
 Sets a preference to enable echo-canceled input on supported hardware.
@@ -27,8 +27,6 @@ This option is valid only when used with [`playAndRecord`](avaudiosession/catego
 After an audio session goes active, you can query the [`isEchoCancelledInputEnabled`](avaudiosession/isechocancelledinputenabled.md) property to test whether the system honored the setting.
 
 > **Note**: The input’s enabled state may change if the audio route changes to one that doesn’t support echo cancellation, such as switching to a headset.
-
-The input’s enabled state may change if the audio route changes to one that doesn’t support echo cancellation, such as switching to a headset.
 
 ## Parameters
 

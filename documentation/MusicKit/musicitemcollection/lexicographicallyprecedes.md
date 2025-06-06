@@ -1,6 +1,6 @@
 # lexicographicallyPrecedes(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the less-than operator (`<`) to compare elements.
@@ -40,11 +40,7 @@ print(b.lexicographicallyPrecedes(b))
 
 > **Note**: This method implements the mathematical notion of lexicographical ordering, which has no connection to Unicode.  If you are sorting strings to present to the end user, use `String` APIs that perform localized comparison.
 
-This method implements the mathematical notion of lexicographical ordering, which has no connection to Unicode.  If you are sorting strings to present to the end user, use `String` APIs that perform localized comparison.
-
 > **Note**: O(), where  is the lesser of the length of the sequence and the length of `other`.
-
-O(), where  is the lesser of the length of the sequence and the length of `other`.
 
 ## Parameters
 

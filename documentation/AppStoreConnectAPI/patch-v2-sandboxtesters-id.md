@@ -1,6 +1,6 @@
 # Modify a Sandbox Tester
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Change the subscription renewal time rate, set interrupted purchases or change territory of Sandbox Apple Account.
@@ -11,8 +11,6 @@ Change the subscription renewal time rate, set interrupted purchases or change t
 #### Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
 ##### Example Request and Response
 

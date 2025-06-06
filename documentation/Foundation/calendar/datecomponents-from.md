@@ -28,8 +28,6 @@ The date components of the specified date.
 
 > **Note**:  If you want “date information in a given time zone” in order to display it, you should use `DateFormatter` to format the date.
 
- If you want “date information in a given time zone” in order to display it, you should use `DateFormatter` to format the date.
-
 ## Parameters
 
 - `components`: The components to return.

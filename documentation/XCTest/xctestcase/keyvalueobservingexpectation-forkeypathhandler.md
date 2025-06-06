@@ -30,8 +30,6 @@ You can use [`XCTAssert`](xctassert.md) and related APIs in the block to report 
 
 > **Note**:  For more control over KVO-based expectations, use [`XCTKVOExpectation`](xctkvoexpectation.md) instead of this convenience method.
 
- For more control over KVO-based expectations, use [`XCTKVOExpectation`](xctkvoexpectation.md) instead of this convenience method.
-
 ## Parameters
 
 - `objectToObserve`: The object to observe.

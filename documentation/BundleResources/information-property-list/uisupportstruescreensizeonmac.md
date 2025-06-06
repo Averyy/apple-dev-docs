@@ -1,6 +1,6 @@
 # UISupportsTrueScreenSizeOnMac
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 A Boolean value that indicates whether your iPad app supports arbitrary screen sizes and resolutions when running on a Mac.
@@ -25,8 +25,6 @@ The use of this key implies that your app is capable of handling a variety of di
 Use of the [`UISupportsTrueScreenSizeOnMac`](information-property-list/uisupportstruescreensizeonmac.md) key also implies that your app is capable of handling portrait and landscape sizes even when they don’t align with the device orientation. For instance, if your app supports rotation in iPadOS, the device orientation is always landscape even though the display might have a portrait aspect ratio in reality.
 
 > **Note**:  When running your iPad app on a Mac, macOS chooses the device orientation of your app from the set of app-supported orientations for iOS, regardless of the actual Mac display aspect ratio. This means that you don’t need to update the set of iOS-supported orientations (see [`UISupportedInterfaceOrientations`](information-property-list/uisupportedinterfaceorientations.md)), or alter your code to handle unsupported orientations when using the [`UISupportsTrueScreenSizeOnMac`](information-property-list/uisupportstruescreensizeonmac.md) key.
-
- When running your iPad app on a Mac, macOS chooses the device orientation of your app from the set of app-supported orientations for iOS, regardless of the actual Mac display aspect ratio. This means that you don’t need to update the set of iOS-supported orientations (see [`UISupportedInterfaceOrientations`](information-property-list/uisupportedinterfaceorientations.md)), or alter your code to handle unsupported orientations when using the [`UISupportsTrueScreenSizeOnMac`](information-property-list/uisupportstruescreensizeonmac.md) key.
 
 When you include [`UISupportsTrueScreenSizeOnMac`](information-property-list/uisupportstruescreensizeonmac.md) in your app, your app is responsible for:
 

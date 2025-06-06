@@ -1,6 +1,6 @@
 # pins
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 The entity’s geometric pins.
@@ -64,8 +64,6 @@ let myJointPinRaw = skeletalPoseEntity.pins[#"my\.joint"#]
 ```
 
 > **Note**: Character escaping is only required for skeletal pose joints.
-
-Character escaping is only required for skeletal pose joints.
 
 
 ---

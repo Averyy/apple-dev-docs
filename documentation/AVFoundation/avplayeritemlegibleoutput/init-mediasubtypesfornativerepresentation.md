@@ -1,6 +1,6 @@
 # init(mediaSubtypesForNativeRepresentation:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: init
 
 Creates an initialized legible-output object.
@@ -40,8 +40,6 @@ Initializing an `AVPlayerItemLegibleOutput` using the `init` method (which is pr
 If a media subtype for which there is no legible data in the current player item is included in the media `subtypes` array, no error occurs.  An `AVPlayerItemLegibleOutput` instance doesn’t vend closed caption data as a [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer), so it is an error to include `'c608'` in the media subtypes array.
 
 > **Note**:  The preferred method of creating an `AVPlayerItemLegibleOutput` object is to use the [`init`](1805461-init.md) method.
-
- The preferred method of creating an `AVPlayerItemLegibleOutput` object is to use the [`init`](1805461-init.md) method.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Improving the Accessibility of RealityKit Apps
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Incorporate assistive technologies in your augmented reality app.
 
@@ -9,8 +9,6 @@ Incorporate assistive technologies in your augmented reality app.
 To support assistive technologies such as VoiceOver in your RealityKit apps, set the properties on each visible [`Entity`](entity.md) in your scene. You can configure accessibility in Reality Composer, and in code.
 
 > **Note**: To see an example of accessibility support in a RealityKit app, check out the <doc:[`Configuring Collision in RealityKit`](configuring-collision-in-realitykit.md)> sample code project.
-
-To see an example of accessibility support in a RealityKit app, check out the <doc:[`Configuring Collision in RealityKit`](configuring-collision-in-realitykit.md)> sample code project.
 
 ##### Configure Accessibility in Reality Composer
 
@@ -64,4 +62,4 @@ if #available(iOS 14.0, *) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/improving-the-accessibility-of-realitykit-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/improving-the-accessibility-of-realitykit-apps)*

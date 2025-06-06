@@ -1,6 +1,6 @@
 # HKMetadataKeyAverageSpeed
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: var
 
 A key that indicates the average speed during a workout.
@@ -31,8 +31,6 @@ HealthKit assigns this metadata key to the segments it automatically creates for
 
 > **Note**:  This value represents the average speed while moving. It may not be the same as the value you get when dividing a distance sample’s distance by its duration.
 
- This value represents the average speed while moving. It may not be the same as the value you get when dividing a distance sample’s distance by its duration.
-
 ## See Also
 
 - [let HKMetadataKeyMaximumSpeed: String](hkmetadatakeymaximumspeed.md)
@@ -41,4 +39,4 @@ HealthKit assigns this metadata key to the segments it automatically creates for
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkmetadatakeyaveragespeed)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkmetadatakeyaveragespeed)*

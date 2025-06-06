@@ -1,6 +1,6 @@
 # init(avPlayer:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates a video player component from an AV player object.
@@ -21,8 +21,6 @@ init(avPlayer: AVPlayer)
 #### Discussion
 
 > **Note**: You can’t use the same `AVPlayer` object with more than one `VideoPlayerComponent`.
-
-You can’t use the same `AVPlayer` object with more than one `VideoPlayerComponent`.
 
 Here’s an example of setting up a video player component:
 

@@ -1,6 +1,6 @@
 # linkAccount(using:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Presents a sheet for the merchant to accept Tap to Pay on iPhone’s Terms and Conditions on a device.
@@ -31,8 +31,6 @@ If the merchant hasn’t accepted the Terms and Conditions, calling [`prepare(us
 If the merchant has already accepted the Terms and Conditions, calling this method throws [`PaymentCardReaderError.accountAlreadyLinked`](paymentcardreadererror/accountalreadylinked.md).
 
 > **Note**: [`PaymentCardReaderError.accountAlreadyLinked`](paymentcardreadererror/accountalreadylinked.md) if the merchant already accepted the Tap to Pay on iPhone’s Terms and Conditions. The method throws [`PaymentCardReaderError.accountLinkingFailed`](paymentcardreadererror/accountlinkingfailed.md), [`PaymentCardReaderError.accountLinkingCancelled`](paymentcardreadererror/accountlinkingcancelled.md), or other relevant errors in [`PaymentCardReaderError`](paymentcardreadererror.md) if a problem occurs.
-
-[`PaymentCardReaderError.accountAlreadyLinked`](paymentcardreadererror/accountalreadylinked.md) if the merchant already accepted the Tap to Pay on iPhone’s Terms and Conditions. The method throws [`PaymentCardReaderError.accountLinkingFailed`](paymentcardreadererror/accountlinkingfailed.md), [`PaymentCardReaderError.accountLinkingCancelled`](paymentcardreadererror/accountlinkingcancelled.md), or other relevant errors in [`PaymentCardReaderError`](paymentcardreadererror.md) if a problem occurs.
 
 ## Parameters
 

@@ -37,8 +37,6 @@ Use a filename that matches the target’s product module name. For example, for
 
 > **Note**: For targets with spaces in the product name, Xcode replaces the spaces with underscores in the product module name. To find the product module name in an Xcode project, select the target in the project editor, click the Build Settings tab, and enter Product Module Name in the search field.
 
-For targets with spaces in the product name, Xcode replaces the spaces with underscores in the product module name. To find the product module name in an Xcode project, select the target in the project editor, click the Build Settings tab, and enter Product Module Name in the search field.
-
 ##### Arrange Top Level Symbols Using Topic Groups
 
 By default, DocC arranges the symbols in your project according to their kind. For example, the compiler generates topic groups for classes, structures, protocols, and so forth. You then add information to explain the relationships between those symbols.
@@ -125,11 +123,9 @@ As with the landing page, create named sections for each topic group using a tri
 
 > 💡 **Tip**: Use a symbol’s full path to include it from elsewhere in the documentation hierarchy.
 
-Use a symbol’s full path to include it from elsewhere in the documentation hierarchy.
-
 After you arrange nested symbols in an extension file, choose Product > Build Documentation to compile your changes and review them in Xcode’s documentation viewer.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-structure-to-your-documentation-pages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-structure-to-your-documentation-pages)*

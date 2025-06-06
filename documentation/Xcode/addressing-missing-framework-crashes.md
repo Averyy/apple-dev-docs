@@ -38,8 +38,6 @@ Termination Description: DYLD, Library not loaded: @rpath/MyFramework.framework/
 
 > **Note**: For readability, extra line breaks are in this example. In the original crash report file for these examples, the `dyld` information is on fewer lines.
 
-For readability, extra line breaks are in this example. In the original crash report file for these examples, the `dyld` information is on fewer lines.
-
 ##### Inspect the Frameworks Configuration
 
 Ensure the framework is correctly embedded in the app bundle—see [`Embedding Frameworks In An App`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2435/_index.html#//apple_ref/doc/uid/DTS40017543).
@@ -52,8 +50,6 @@ If you can’t reproduce the crash, archive the app, export it for Development d
 
 > **Note**: If the missing framework is from a third-party framework vendor or uses third-party development tools to integrate it in your app, contact the vendor for assistance in addressing the issue.
 
-If the missing framework is from a third-party framework vendor or uses third-party development tools to integrate it in your app, contact the vendor for assistance in addressing the issue.
-
 ## See Also
 
 - [Analyzing a crash report](analyzing-a-crash-report.md)
@@ -62,4 +58,4 @@ If the missing framework is from a third-party framework vendor or uses third-pa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/addressing-missing-framework-crashes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/addressing-missing-framework-crashes)*

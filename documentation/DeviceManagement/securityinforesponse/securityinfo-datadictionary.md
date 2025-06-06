@@ -1,6 +1,6 @@
 # SecurityInfoResponse.SecurityInfo
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: dictionary
 
 A dictionary that contains security-related information.
@@ -24,8 +24,6 @@ object SecurityInfoResponse.SecurityInfo
 #### Overview
 
 > **Note**: For a device to have data protection, `HardwareEncryptionCaps` must be `3` and `PasscodePresent` must `true`.
-
-For a device to have data protection, `HardwareEncryptionCaps` must be `3` and `PasscodePresent` must `true`.
 
 ```None
 This value is available in iOS 4 and later, and tvOS 6 and later.

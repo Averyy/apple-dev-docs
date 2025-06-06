@@ -1,6 +1,6 @@
 # requestAccess(for:completionHandler:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Requests the user’s permission to allow the app to capture media of a particular type.
@@ -29,13 +29,9 @@ Capturing media requires explicit permission from the user. An app’s default a
 
 > ❗ **Important**:  Your app must provide an explanation for its use of capture devices using the [`NSCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCameraUsageDescription) and [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) Info.plist keys. The system presents the strings you set for these keys when prompting the user for permission, and thereafter in the Settings app. Calling this method or attempting to start a capture session without a usage description raises an exception.
 
- Your app must provide an explanation for its use of capture devices using the [`NSCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCameraUsageDescription) and [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) Info.plist keys. The system presents the strings you set for these keys when prompting the user for permission, and thereafter in the Settings app. Calling this method or attempting to start a capture session without a usage description raises an exception.
-
 Calling this method doesn’t block the thread while the system is prompting the user for access. However, until the grants permission, the system only vends black video frames and silent audio samples.
 
 > **Note**:  Calling this method with a media type of [`audio`](avmediatype/audio.md) is equivalent to calling the [`requestRecordPermission(_:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/requestRecordPermission(_:)) method on [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession).
-
- Calling this method with a media type of [`audio`](avmediatype/audio.md) is equivalent to calling the [`requestRecordPermission(_:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/requestRecordPermission(_:)) method on [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession).
 
 ## Parameters
 

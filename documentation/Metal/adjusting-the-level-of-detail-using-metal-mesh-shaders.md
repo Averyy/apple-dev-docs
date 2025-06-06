@@ -14,8 +14,6 @@ Choose and render meshes with several levels of detail using object and mesh sha
 
 > **Note**: This sample code project is associated with WWDC22 session [`10162: Transform your geometry with Metal mesh shaders`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10162/).
 
-This sample code project is associated with WWDC22 session [`10162: Transform your geometry with Metal mesh shaders`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10162/).
-
 ##### Configure the Sample Code Project
 
 To run this sample, you need Xcode 14 or later, and a physical device that supports [`MTLGPUFamily.mac2`](mtlgpufamily/mac2.md) or [`MTLGPUFamily.apple7`](mtlgpufamily/apple7.md), such as:
@@ -57,4 +55,4 @@ This sample can only run on a physical device because it uses Metal’s mesh sha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/adjusting-the-level-of-detail-using-metal-mesh-shaders)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/adjusting-the-level-of-detail-using-metal-mesh-shaders)*

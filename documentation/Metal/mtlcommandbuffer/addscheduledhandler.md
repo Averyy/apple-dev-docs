@@ -30,13 +30,9 @@ You can register one or more scheduling completion handlers for the same command
 
 > ❗ **Important**:  You can only call this method before calling the command buffer’s [`commit()`](mtlcommandbuffer/commit().md) method.
 
- You can only call this method before calling the command buffer’s [`commit()`](mtlcommandbuffer/commit().md) method.
-
 The GPU device schedules each command buffer — along with tasks from other command buffers — after it identifies the command buffer’s dependencies. At that time, the GPU device sets the command buffer’s status to [`MTLCommandBufferStatus.scheduled`](mtlcommandbufferstatus/scheduled.md) and calls your completion handler.
 
 > **Note**:  The command buffer’s [`status`](mtlcommandbuffer/status.md) property may be equal to another (larger) value by the time your completion handler runs, including [`MTLCommandBufferStatus.completed`](mtlcommandbufferstatus/completed.md).
-
- The command buffer’s [`status`](mtlcommandbuffer/status.md) property may be equal to another (larger) value by the time your completion handler runs, including [`MTLCommandBufferStatus.completed`](mtlcommandbufferstatus/completed.md).
 
 You can use the command buffer’s [`kernelEndTime`](mtlcommandbuffer/kernelendtime.md) and [`kernelStartTime`](mtlcommandbuffer/kernelstarttime.md) properties to calculate how much time the CPU spends scheduling the command buffer.
 

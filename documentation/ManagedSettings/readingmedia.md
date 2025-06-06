@@ -1,6 +1,6 @@
 # Confirming the Effective TV and Movie Ratings
 
-**Framework**: ManagedSettings
+**Framework**: Managedsettings
 
 Read the media rating on a device and determine what media to display on your app.
 
@@ -31,8 +31,6 @@ This code example identifies the maximum movie rating the user can view on their
 
 > **Note**: Because your app only reads media settings, you don’t need to request `Family Controls` authorization from the user or monitor device activity.
 
-Because your app only reads media settings, you don’t need to request `Family Controls` authorization from the user or monitor device activity.
-
 While the example above shows how to view the maximum movie ratings, the example can translate to checking the effective maximum TV show ratings as well.
 
 The following code example shows how to get the current TV show rating on a device:
@@ -52,8 +50,6 @@ case 300:
 
 > **Note**: Both [`effectiveMaximumMovieRating`](managedsettingsstore/effectivemaximummovierating.md) and [`effectiveMaximumTVShowRating`](managedsettingsstore/effectivemaximumtvshowrating.md) are `@Published` and can change at any time. Keep track of the changes to these properties in your media app.
 
-Both [`effectiveMaximumMovieRating`](managedsettingsstore/effectivemaximummovierating.md) and [`effectiveMaximumTVShowRating`](managedsettingsstore/effectivemaximumtvshowrating.md) are `@Published` and can change at any time. Keep track of the changes to these properties in your media app.
-
 ##### Monitor the Effective Rating
 
 The parental controls app can change the effective rating at any time. To reflect the changes, make sure to incorporate them into your media app. Use publishers to subscribe to updates on changes to a rating. Managed Settings uses [`$effectiveMaximumMovieRating`](managedsettingsstore/$effectivemaximummovierating.md) and [`$effectiveMaximumTVShowRating`](managedsettingsstore/$effectivemaximumtvshowrating.md) to publish to media changes.
@@ -72,8 +68,6 @@ self.movieRatingCancellable = store.$effectiveMaximumMovieRating.sink { effectiv
 
 > ❗ **Important**: Use the [`Family Controls`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls) entitlement in your app to subscribe for TV and Movie rating changes. For more information on how to set up entitlements, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 
-Use the [`Family Controls`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls) entitlement in your app to subscribe for TV and Movie rating changes. For more information on how to set up entitlements, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
-
 ## See Also
 
 - [Manage Settings on Devices in a Family Sharing Group](connectionwithframeworks.md)
@@ -82,4 +76,4 @@ Use the [`Family Controls`](https://developer.apple.com/documentation/BundleReso
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/managedsettings/readingmedia)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ManagedSettings/readingmedia)*

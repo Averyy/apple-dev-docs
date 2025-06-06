@@ -1,6 +1,6 @@
 # Tracking Your File Provider’s Changes
 
-**Framework**: File Provider
+**Framework**: Fileprovider
 
 Create an enumerator to track changes to your file provider’s content.
 
@@ -9,8 +9,6 @@ Create an enumerator to track changes to your file provider’s content.
 While an enumerator is active, it also tracks any changes to its contents. The system only tracks changes to a document or folder while it has an active enumerator for that item (for example, while a document is open or a folder is being browsed).
 
 > **Note**:  The system always tracks changes to the working set. If it doesn’t have an active enumerator for the working set, it creates a new one.
-
- The system always tracks changes to the working set. If it doesn’t have an active enumerator for the working set, it creates a new one.
 
 ![The flow of information between your File Provider and the system. ](https://docs-assets.developer.apple.com/published/26264611abbe399f064377c5121697ec/media-2910269%402x.png)
 
@@ -40,4 +38,4 @@ After the system is alerted to the change, it calls [`enumerateChanges(for:from:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/tracking-your-file-provider-s-changes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/tracking-your-file-provider-s-changes)*

@@ -1,6 +1,6 @@
 # CPBarButtonProviding
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: protocol
 
 The methods that templates use to provide buttons for the navigation bar.
@@ -23,8 +23,6 @@ protocol CPBarButtonProviding : NSObjectProtocol
 You don’t adopt this protocol in your own types. If you want to add buttons to the navigation bar, you must use one of the prebuilt templates that already conforms to the protocol, such as [`CPMapTemplate`](cpmaptemplate.md) or [`CPContactTemplate`](cpcontacttemplate.md).
 
 > **Note**:  The root templates of a tab bar don’t show leading or trailing bar buttons, and the system throws an exception if you attempt to assign bar buttons to the Now Playing template.
-
- The root templates of a tab bar don’t show leading or trailing bar buttons, and the system throws an exception if you attempt to assign bar buttons to the Now Playing template.
 
 ## Topics
 
@@ -66,4 +64,4 @@ You don’t adopt this protocol in your own types. If you want to add buttons to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpbarbuttonproviding)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpbarbuttonproviding)*

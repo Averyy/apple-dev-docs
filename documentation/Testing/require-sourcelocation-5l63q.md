@@ -1,6 +1,6 @@
 # require(_:_:sourceLocation:)
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: macro
 
 Check that an expectation has passed after a condition has been evaluated and throw an error if it failed.
@@ -31,8 +31,6 @@ Check that an expectation has passed after a condition has been evaluated and th
 #### Overview
 
 > **Note**: An instance of [`ExpectationFailedError`](expectationfailederror.md) if `condition` evaluates to `false`.
-
-An instance of [`ExpectationFailedError`](expectationfailederror.md) if `condition` evaluates to `false`.
 
 If `condition` evaluates to `false`, an [`Issue`](issue.md) is recorded for the test that is running in the current task and an instance of [`ExpectationFailedError`](expectationfailederror.md) is thrown.
 

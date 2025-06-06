@@ -1,6 +1,6 @@
 # AudioGeneratorController
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: class
 
 A controller that manages the playback of a real-time audio stream.
@@ -57,8 +57,6 @@ During playback, the audio appears to come from the entity that you use to creat
 
 > **Note**: Audio stops rendering when the system deallocates `AudioGeneratorController`. Create another `AudioGeneratorController` to restart audio.
 
-Audio stops rendering when the system deallocates `AudioGeneratorController`. Create another `AudioGeneratorController` to restart audio.
-
 Call [`stop()`](audiogeneratorcontroller/stop().md) to halt the audio, and [`play()`](audiogeneratorcontroller/play().md) to restart the stream.
 
 ## Topics
@@ -97,4 +95,4 @@ Call [`stop()`](audiogeneratorcontroller/stop().md) to halt the audio, and [`pla
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/audiogeneratorcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/audiogeneratorcontroller)*

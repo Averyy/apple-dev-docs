@@ -1,6 +1,6 @@
 # State
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A property wrapper type that can read and write a value managed by SwiftUI.
@@ -121,8 +121,6 @@ struct ContentView: View {
 Delaying the creation of the observable state object ensures that unnecessary allocations of the object doesn’t happen each time SwiftUI initializes the view. Using the [`task(priority:_:)`](view/task(priority:_:).md) modifier is also an effective way to defer any other kind of work required to create the initial state of the view, such as network calls or file access.
 
 > **Note**: It’s possible to store an object that conforms to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol in a `State` property. However the view will only update when the reference to the object changes, such as when setting the property with a reference to another object. The view will not update if any of the object’s published properties change. To track changes to both the reference and the object’s published properties, use [`StateObject`](stateobject.md) instead of [`State`](state.md) when storing the object.
-
-It’s possible to store an object that conforms to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol in a `State` property. However the view will only update when the reference to the object changes, such as when setting the property with a reference to another object. The view will not update if any of the object’s published properties change. To track changes to both the reference and the object’s published properties, use [`StateObject`](stateobject.md) instead of [`State`](state.md) when storing the object.
 
 ##### Share Observable State Objects with Subviews
 
@@ -260,4 +258,4 @@ struct BookEditorView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/state)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/state)*

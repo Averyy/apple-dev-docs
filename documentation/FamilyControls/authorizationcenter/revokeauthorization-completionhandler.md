@@ -1,6 +1,6 @@
 # revokeAuthorization(completionHandler:)
 
-**Framework**: FamilyControls  
+**Framework**: Familycontrols  
 **Kind**: method
 
 Revokes authorization to provide parental controls.
@@ -21,8 +21,6 @@ func revokeAuthorization(completionHandler: @escaping (Result<Void, any Error>) 
 If your app’s authentication status is [`AuthorizationStatus.approved`](authorizationstatus/approved.md) this method revokes authentication.
 
 > **Note**: This method has no effect if your app’s current authentication status is [`AuthorizationStatus.denied`](authorizationstatus/denied.md).
-
-This method has no effect if your app’s current authentication status is [`AuthorizationStatus.denied`](authorizationstatus/denied.md).
 
 The completion handler’s [`Result`](https://developer.apple.com/documentation/Swift/Result) parameter indicates whether the request completed successfully. It doesn’t indicate your app’s authorization state.
 

@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: subscript
 
 Accesses a contiguous subrange of the collection’s elements.
@@ -37,8 +37,6 @@ print(streets[index!])
 ```
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

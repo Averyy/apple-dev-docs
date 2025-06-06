@@ -1,6 +1,6 @@
 # firstIndex(of:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns the first index where the specified value appears in the collection.
@@ -36,8 +36,6 @@ print(students)
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

@@ -14,21 +14,15 @@ This article explains how to serialize an [`MTLBinaryArchive`](mtlbinaryarchive.
 
 > **Note**:  [`MTLBinaryArchive`](mtlbinaryarchive.md) serialization on device doesn’t have support for specialized functions. For shaders using specialized functions, you need to manually edit the configuration script. For instructions, see [`Compiling Binary Archives from a Custom Configuration Script`](compiling-binary-archives-from-a-custom-configuration-script.md).
 
- [`MTLBinaryArchive`](mtlbinaryarchive.md) serialization on device doesn’t have support for specialized functions. For shaders using specialized functions, you need to manually edit the configuration script. For instructions, see [`Compiling Binary Archives from a Custom Configuration Script`](compiling-binary-archives-from-a-custom-configuration-script.md).
-
 ##### Create a Metal Binary Archive in Your App
 
 Create an instance of [`MTLBinaryArchive`](mtlbinaryarchive.md) from an [`MTLBinaryArchiveDescriptor`](mtlbinaryarchivedescriptor.md) with a `nil` [`url`](mtlbinaryarchivedescriptor/url.md) property. This instructs Metal to create, rather than load, a binary archive. After creating the archive, add all pipeline descriptors you use in your encoder to the binary archive. The following code example performs these steps for an [`MTLDevice`](mtldevice.md) instance named `device` and an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance named `pipelineStateDescriptor`:
 
 > 💡 **Tip**:  If you’re adding binary archive serialization to an existing app, create your render pipeline state after creating your binary archive instance in the app. When you do, Metal can take advantage of optimizations that increase shader compilation speed and reduce memory usage.
 
- If you’re adding binary archive serialization to an existing app, create your render pipeline state after creating your binary archive instance in the app. When you do, Metal can take advantage of optimizations that increase shader compilation speed and reduce memory usage.
-
 After adding pipeline descriptors to the binary archive, serialize it to storage. The following code example shows how to serialize an [`MTLBinaryArchive`](mtlbinaryarchive.md) instance to device storage:
 
 > **Note**:  In macOS, store resources outside your application bundle and within an appropriate directory. Storing runtime-created resources inside an application bundle can cause code-signing and verification errors when rebuilding. For more information on how to discover and diagnose these issues, see [`Testing a release build`](https://developer.apple.com/documentation/Xcode/testing-a-release-build).
-
- In macOS, store resources outside your application bundle and within an appropriate directory. Storing runtime-created resources inside an application bundle can cause code-signing and verification errors when rebuilding. For more information on how to discover and diagnose these issues, see [`Testing a release build`](https://developer.apple.com/documentation/Xcode/testing-a-release-build).
 
 Run your app on a device to create a Metal binary archive at the URL in your code.
 
@@ -87,8 +81,6 @@ In the copied configuration script, you tell the Metal translator where to locat
 
 > **Note**:  Some shader types, such as tile shaders, require specific GPU or Metal support. For Metal translator to compile binaries of these shaders, add an `enable` key to the pipeline description and set its value to a pipeline script defining which conditions make a valid platform. For full documentation on the script format, run `man metal-pipelines-script` in Terminal.
 
- Some shader types, such as tile shaders, require specific GPU or Metal support. For Metal translator to compile binaries of these shaders, add an `enable` key to the pipeline description and set its value to a pipeline script defining which conditions make a valid platform. For full documentation on the script format, run `man metal-pipelines-script` in Terminal.
-
 Run the `metal-tt` command-line tool in Terminal to generate a new archived binary. The following command builds for devices running iOS 16 that support Metal 3:
 
 ```shell
@@ -96,8 +88,6 @@ Run the `metal-tt` command-line tool in Terminal to generate a new archived bina
 ```
 
 > 💡 **Tip**:  The `metal-config` command-line tool can provide a full set of compiler flags for `metal-tt`. For more information, run `man metal-config` in Terminal.
-
- The `metal-config` command-line tool can provide a full set of compiler flags for `metal-tt`. For more information, run `man metal-config` in Terminal.
 
 Any compatible device can load the `precompiled.binary.metallib` and skip runtime compilation of shaders. Running the `metal-lipo` command-line tool shows the available architectures.
 
@@ -114,8 +104,6 @@ For Metal to take advantage of precompiled binaries, load them with [`makeBinary
 
 > 💡 **Tip**:  Failing to load a binary archive isn’t a fatal error in Metal, and it falls back on the compilation of Metal IR at runtime. To cause a failure from the Metal system when an expected binary archive doesn’t load, configure your pipeline with an [`MTLPipelineOption`](mtlpipelineoption.md) of [`failOnBinaryArchiveMiss`](mtlpipelineoption/failonbinaryarchivemiss.md).
 
- Failing to load a binary archive isn’t a fatal error in Metal, and it falls back on the compilation of Metal IR at runtime. To cause a failure from the Metal system when an expected binary archive doesn’t load, configure your pipeline with an [`MTLPipelineOption`](mtlpipelineoption.md) of [`failOnBinaryArchiveMiss`](mtlpipelineoption/failonbinaryarchivemiss.md).
-
 ## See Also
 
 - [Manipulating Metal Binary Archives](manipulating-metal-binary-archives.md)
@@ -126,4 +114,4 @@ For Metal to take advantage of precompiled binaries, load them with [`makeBinary
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/creating-binary-archives-from-device-built-pipeline-state-objects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/creating-binary-archives-from-device-built-pipeline-state-objects)*

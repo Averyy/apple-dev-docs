@@ -1,6 +1,6 @@
 # Syncing Safari web extensions across devices and platforms
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Let users install your extension on one device and then use and manage the extension on all their other iOS and macOS devices.
 
@@ -18,8 +18,6 @@ In the following circumstances, extensions automatically sync with no configurat
 If your extension has different bundle identifiers in macOS and iOS, turn on syncing by configuring your Xcode project for both macOS and iOS.
 
 > **Note**:  If you provide your extension in both iOS and macOS, consider selling them together as one product to improve the purchasing experience for your users. For more information, see [`Offering Universal Purchase`](https://developer.apple.comhttps://developer.apple.com/support/universal-purchase/).
-
- If you provide your extension in both iOS and macOS, consider selling them together as one product to improve the purchasing experience for your users. For more information, see [`Offering Universal Purchase`](https://developer.apple.comhttps://developer.apple.com/support/universal-purchase/).
 
 ##### Configure Your Macos App and Extension
 
@@ -40,8 +38,6 @@ Next, configure your macOS extension for syncing:
 
 > **Note**:  The bundle identifiers for the iOS app and extension you specify must be from the same developer account as your macOS app and extension.
 
- The bundle identifiers for the iOS app and extension you specify must be from the same developer account as your macOS app and extension.
-
 ##### Configure Your Ios App and Extension
 
 In your Xcode project, configure your iOS app to refer to your macOS app to support extension syncing:
@@ -61,8 +57,6 @@ Next, configure your iOS extension for syncing:
 
 > **Note**:  The bundle identifiers for the macOS app and extension you specify must be from the same developer account as your iOS app and extension.
 
- The bundle identifiers for the macOS app and extension you specify must be from the same developer account as your iOS app and extension.
-
 ## See Also
 
 - [Optimizing your web extension for Safari](optimizing-your-web-extension-for-safari.md)
@@ -77,4 +71,4 @@ Next, configure your iOS extension for syncing:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/syncing-safari-web-extensions-across-devices-and-platforms)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/syncing-safari-web-extensions-across-devices-and-platforms)*

@@ -1,6 +1,6 @@
 # insert(contentsOf:at:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Inserts the elements of a sequence into the collection at the specified position.
@@ -35,8 +35,6 @@ print(numbers)
 Calling this method may invalidate any existing indices for use with this collection.
 
 > **Note**: O( + ), where  is length of this collection and  is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
-
-O( + ), where  is length of this collection and  is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 

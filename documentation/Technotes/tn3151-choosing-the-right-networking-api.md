@@ -17,8 +17,6 @@ With all that choice, it’s hard to know where to start.  This technote aims to
 
 > ❗ **Important**: If you’re working on watchOS, read [`TN3135: Low-level networking on watchOS`](tn3135-low-level-networking-on-watchOS.md) to understand its unique constraints.
 
-If you’re working on watchOS, read [`TN3135: Low-level networking on watchOS`](tn3135-low-level-networking-on-watchOS.md) to understand its unique constraints.
-
 The focus here is on APIs that allow you to  the networking stack.  If you want to  the networking stack—for example, to add support for a custom VPN protocol—implement a Network Extension provider.  For the details, see [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension).
 
 #### Recommendations By Protocol
@@ -64,8 +62,6 @@ The QUIC protocol has significant advantages over TCP.  If you’re building a c
 
 > ❗ **Important**: QUIC is a key component of HTTP/3.  If your ultimate goal is to support HTTP/3, use `URLSession`.  It has direct support for HTTP/3.  Network framework’s QUIC support allows you to create custom network protocols running over QUIC.
 
-QUIC is a key component of HTTP/3.  If your ultimate goal is to support HTTP/3, use `URLSession`.  It has direct support for HTTP/3.  Network framework’s QUIC support allows you to create custom network protocols running over QUIC.
-
 ##### Tcp
 
 For TCP you have two reasonable options:
@@ -92,8 +88,6 @@ For UDP flows—where you have a stream of unicast datagrams flowing between two
 However, not all UDP communication is that straightforward.  UDP also supports multicast, broadcast, and other asymmetric designs.  Network framework supports UDP multicast using the [`NWConnectionGroup`](https://developer.apple.com/documentation/Network/NWConnectionGroup) class, but that support has limits and, specifically, it does not support UDP broadcast.  If you need something that’s not supported by Network framework, use BSD Sockets.
 
 > **Note**: If you’re using UDP to implement a service discovery protocol, consider adopting Bonjour instead.  For more details, see [`Bonjour service discovery`](tn3151-choosing-the-right-networking-api#Bonjour-service-discovery.md).
-
-If you’re using UDP to implement a service discovery protocol, consider adopting Bonjour instead.  For more details, see [`Bonjour service discovery`](tn3151-choosing-the-right-networking-api#Bonjour-service-discovery.md).
 
 Regardless of the API you use, if you work with multicast or broadcast UDP on iOS, you must have the multicast networking entitlement.  For the details, see [`com.apple.developer.networking.multicast`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.multicast).
 
@@ -122,8 +116,6 @@ For more options, see [`Bonjour alternatives`](tn3151-choosing-the-right-network
 Peer-to-peer Wi-Fi allows you to communicate with a service on another local device even if that device is not on the same network.  [`Network`](https://developer.apple.com/documentation/Network) framework supports peer-to-peer Wi-Fi, but you must opt in to it.  To do that, set the [`includePeerToPeer`](https://developer.apple.com/documentation/Network/NWParameters/includePeerToPeer) property ([`nw_parameters_set_include_peer_to_peer(_:_:)`](https://developer.apple.com/documentation/network/3019340-nw_parameters_set_include_peer_t) in C) of the parameters object you use to create your connection and listener objects.
 
 > **Note**: The on-the-wire protocol used by peer-to-peer Wi-Fi is not documented for third-party use, so this technique only works between Apple devices.
-
-The on-the-wire protocol used by peer-to-peer Wi-Fi is not documented for third-party use, so this technique only works between Apple devices.
 
 To communicate between a watchOS app and its companion iOS app, use [`Watch Connectivity`](https://developer.apple.com/documentation/WatchConnectivity).  In many cases, however, it might be better to have your watchOS app operate independently, using `URLSession` to communicate directly with your server.
 
@@ -164,8 +156,6 @@ In some very specific cases, you might find that `URLSession` doesn’t meet you
 
 > ❗ **Important**: If you need to do some HTTP task that’s not supported by `URLSession`, let us know by [`filing a suggestion`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/) describing your requirements and why `URLSession` doesn’t work for you.
 
-If you need to do some HTTP task that’s not supported by `URLSession`, let us know by [`filing a suggestion`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/) describing your requirements and why `URLSession` doesn’t work for you.
-
 ##### Websocket Alternatives
 
 Both of the recommended WebSocket APIs were introduced in 2015 (see [`Versions`](tn3151-choosing-the-right-networking-api#Versions.md)).  If you need to support older OS releases, there are a variety of good quality third-party WebSocket libraries available for Apple platforms.
@@ -187,8 +177,6 @@ In some circumstances that may not be possible.  Perhaps you’re working with a
 - Adopt a third-party FTP library.
 
 > ❗ **Important**: When you evaluate a third-party FTP library, check that it implements FTP directly.  If the library uses `CFFTPStream` internally, there’s no point adopting it.
-
-When you evaluate a third-party FTP library, check that it implements FTP directly.  If the library uses `CFFTPStream` internally, there’s no point adopting it.
 
 ##### Tcp Alternatives
 
@@ -225,8 +213,6 @@ In 2021 (see [`Versions`](tn3151-choosing-the-right-networking-api#Versions.md))
 Use it when your requirements are aligned with those features.  Don’t use it if your program uses a client/server architecture; Network framework works better in that case.  For an example, see [`Building a custom peer-to-peer protocol`](https://developer.apple.com/documentation/Network/building-a-custom-peer-to-peer-protocol).
 
 > ❗ **Important**: A common misconception is that Multipeer Connectivity is the only way to use peer-to-peer Wi-Fi.  That’s not the case.  Network framework has opt-in peer-to-peer Wi-Fi support.  For the details, see [`Peer-to-peer networking`](tn3151-choosing-the-right-networking-api#Peer-to-peer-networking.md).
-
-A common misconception is that Multipeer Connectivity is the only way to use peer-to-peer Wi-Fi.  That’s not the case.  Network framework has opt-in peer-to-peer Wi-Fi support.  For the details, see [`Peer-to-peer networking`](tn3151-choosing-the-right-networking-api#Peer-to-peer-networking.md).
 
 Foundation also has peer-to-peer Wi-Fi support:
 
@@ -279,8 +265,6 @@ BSD Sockets has a number of limitations.  Your life will be easier if you use [`
 
 > ❗ **Important**: If you don’t follow these best practices your networking code will fail in some specific network environments.  Such environments are hard to replicate at your workplace, so you might only notice the problem when your program fails after it’s been deployed.
 
-If you don’t follow these best practices your networking code will fail in some specific network environments.  Such environments are hard to replicate at your workplace, so you might only notice the problem when your program fails after it’s been deployed.
-
 If your primary reason for using BSD Sockets is cross-platform support, consider using a network abstraction layer that adapts to the target platform.  One such option is [`SwiftNIO Transport Services`](https://developer.apple.comhttps://github.com/apple/swift-nio-transport-services), which makes it straightforward to use Network framework on Apple platforms and BSD Sockets elsewhere.
 
 Apple’s BSD Sockets implementation is documented in the man pages.  If you’re unfamiliar with that term, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).  Man pages are notoriously succinct.  If you’re getting started with BSD Sockets, take advantage of the wide range of non-Apple resources out there.  A classic work in the field is the book  by Stevens et al.
@@ -288,8 +272,6 @@ Apple’s BSD Sockets implementation is documented in the man pages.  If you’r
 One traditional challenge with BSD Sockets is how best to handle nonblocking sockets.  For cross-platform code you have all the usual options (`select`, `poll`, `kqueue`).  For Apple-specific code you have one more: a Dispatch read source.  Use this to integrate a nonblocking socket into existing code that uses Dispatch queues.  For more details, see [`Dispatch Source`](https://developer.apple.com/documentation/Dispatch/dispatch-source).
 
 > **Note**: If you’re using [`CFSocket`](https://developer.apple.com/documentation/CoreFoundation/CFSocket) to handle a nonblocking socket, consider switching to a Dispatch read source.
-
-If you’re using [`CFSocket`](https://developer.apple.com/documentation/CoreFoundation/CFSocket) to handle a nonblocking socket, consider switching to a Dispatch read source.
 
 ##### Dns Best Practices
 
@@ -367,4 +349,4 @@ Networking is fundamental to all Apple platforms.  When Apple introduces a new n
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3151-choosing-the-right-networking-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3151-choosing-the-right-networking-api)*

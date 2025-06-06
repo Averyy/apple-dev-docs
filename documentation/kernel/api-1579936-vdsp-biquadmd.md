@@ -24,8 +24,6 @@ The function supports interleaved data. In this case, define the stride as the n
 
 > **Note**: For the best performance and energy efficiency, specify a stride of `1` for non-interleaved data. Specify a stride equal to the number of channels for interleaved data. 
 
-For the best performance and energy efficiency, specify a stride of `1` for non-interleaved data. Specify a stride equal to the number of channels for interleaved data. 
-
 The function updates the state contained in the `setup` object upon return.
 
 ## Parameters

@@ -30,8 +30,6 @@ An `NSPersonNameComponents` object encapsulates the components of a person’s n
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`PersonNameComponents`](personnamecomponents.md) structure, which bridges to the [`NSPersonNameComponents`](nspersonnamecomponents.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
- The Swift overlay to the Foundation framework provides the [`PersonNameComponents`](personnamecomponents.md) structure, which bridges to the [`NSPersonNameComponents`](nspersonnamecomponents.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
 ##### Working with Names
 
 It is important to understand that names are disjoint from a person’s identity. An individual may, at any time, have zero, one, or many names. Names cannot be used as a determination of a person’s identity, because two names may correspond to the same individual, and two people may have the same name. Nor can names be used as a determination of a person’s relation to others, because an individual may have a different family name than their relatives, and two individuals may have the same family name, but not be related.
@@ -39,8 +37,6 @@ It is important to understand that names are disjoint from a person’s identity
 Many locales and cultures have rules about what kinds of names are allowed and how they are structured. An `NSPersonNameComponents` object does not impose any restrictions about which combinations of properties may have values or what those values may be.
 
 > **Note**:  `NSPersonNameComponents` represents only the components of a name. To represent contact information, such as postal addresses or phone numbers, in addition to a personal name, use [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) or [`CNMutableContact`](https://developer.apple.com/documentation/Contacts/CNMutableContact) instead.
-
- `NSPersonNameComponents` represents only the components of a name. To represent contact information, such as postal addresses or phone numbers, in addition to a personal name, use [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) or [`CNMutableContact`](https://developer.apple.com/documentation/Contacts/CNMutableContact) instead.
 
 ##### Name Components
 
@@ -165,4 +161,4 @@ Because each alias represents a separate name, an individual with one or more al
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nspersonnamecomponents)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nspersonnamecomponents)*

@@ -42,8 +42,6 @@ Live Activities are available on iPhone and iPad and appear on the Lock Screen. 
 
 > ❗ **Important**: You need to support all Live Activity appearances, from minimal and compact presentations to larger extended and Lock Screen presentations.
 
-You need to support all Live Activity appearances, from minimal and compact presentations to larger extended and Lock Screen presentations.
-
 Approach WidgetKit adoption iteratively. For example, start with a nonconfigurable [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) widget as described in [`Creating a widget extension`](creating-a-widget-extension.md) because it gives your content broad exposure in the WidgetKit ecosystem on iPhone, iPad, and Mac. Then, add support for configuration, additional widget sizes, and — depending on your app’s features — Live Activities or a watchOS app with watch complications.
 
 ##### Leverage Additional Frameworks
@@ -93,8 +91,6 @@ By default, people tap a widget, watch complication, or Live Activity to launch 
 
 > **Note**: In iOS 16 and macOS 13 or earlier versions, only large and extra-large widgets can use [`Link`](https://developer.apple.com/documentation/SwiftUI/Link).
 
-In iOS 16 and macOS 13 or earlier versions, only large and extra-large widgets can use [`Link`](https://developer.apple.com/documentation/SwiftUI/Link).
-
 Starting with iOS 17 and macOS 14, widgets offer direct interaction with your app using   the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework and SwiftUI. Both [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) and [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle) offer dedicated initializers for this purpose. For more information, see [`Adding interactivity to widgets and Live Activities`](adding-interactivity-to-widgets-and-live-activities.md).
 
 ##### Offer Configurable Widgets and Watch Complications
@@ -140,4 +136,4 @@ For additional information, see [`Accessing location information in widgets`](ac
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/developing-a-widgetkit-strategy)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/developing-a-widgetkit-strategy)*

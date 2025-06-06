@@ -1,6 +1,6 @@
 # Making email actions available to Siri and Apple Intelligence
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Create app intents and entities to integrate your app’s email functionality with Siri and Apple Intelligence.
 
@@ -9,8 +9,6 @@ Create app intents and entities to integrate your app’s email functionality wi
 To integrate your app’s email capabilities with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance for your app intent and app entity implementation that Apple Intelligence needs.
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 For example, if your app allows someone to draft an email and send that at a later date and time, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.mail` domain and the [`sendDraft`](assistantschemas/mailintent/senddraft.md) schema:
 
@@ -73,4 +71,4 @@ For a list of available app entity schemas in the `.mail` domain, see [`Assistan
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-email-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-email-actions-available-to-siri-and-apple-intelligence)*

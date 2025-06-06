@@ -1,6 +1,6 @@
 # reversed()
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: method
 
 Returns an array containing the elements of this sequence in reverse order.
@@ -29,8 +29,6 @@ An array containing the elements of this sequence in reverse order.
 The sequence must be finite.
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 
 ---

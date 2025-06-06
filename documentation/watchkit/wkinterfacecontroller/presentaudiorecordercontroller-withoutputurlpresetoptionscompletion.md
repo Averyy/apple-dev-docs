@@ -31,8 +31,6 @@ When specifying a filename with the `.wav` extension, the resulting audio format
 
 > **Note**:  Do not attempt to record audio while gathering heart rate data using Health Kit. If you present a media interface, WatchKit automatically disables the gathering of heart rate data.
 
- Do not attempt to record audio while gathering heart rate data using Health Kit. If you present a media interface, WatchKit automatically disables the gathering of heart rate data.
-
 ## Parameters
 
 - `URL`: The URL at which to store the recorded output. The filename extension determines the type of audio to record. You may specify the extensions  ,  , and  .

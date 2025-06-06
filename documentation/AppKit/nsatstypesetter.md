@@ -1,6 +1,6 @@
 # NSATSTypesetter
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A concrete typesetter object that places glyphs during the text layout process.
@@ -19,8 +19,6 @@ class NSATSTypesetter
 An [`NSATSTypesetter`](nsatstypesetter.md) object creates line fragment rectangles, positions glyphs within the line fragments, determines line breaks by word wrapping and hyphenation, and handles tab positioning. This object encapsulates the advanced typesetting capabilities of Core Text. [`NSATSTypesetter`](nsatstypesetter.md) provides line and character spacing accuracy and supports many languages, including bidirectional languages.
 
 > **Note**:  Use this class with [`NSLayoutManager`](nslayoutmanager.md) in macOS11 and earlier. In macOS12 and later, consider using [`NSTextLayoutManager`](nstextlayoutmanager.md) which provides improved support for international scripts.
-
- Use this class with [`NSLayoutManager`](nslayoutmanager.md) in macOS11 and earlier. In macOS12 and later, consider using [`NSTextLayoutManager`](nstextlayoutmanager.md) which provides improved support for international scripts.
 
 ## Topics
 
@@ -113,4 +111,4 @@ An [`NSATSTypesetter`](nsatstypesetter.md) object creates line fragment rectangl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsatstypesetter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsatstypesetter)*

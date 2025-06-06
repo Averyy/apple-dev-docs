@@ -1,6 +1,6 @@
 # multilineTextAlignment(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Sets the alignment of a text view that contains multiple lines of text.
@@ -47,8 +47,6 @@ The modifier applies the alignment to the all the lines of text in the view, reg
 The modifier has no effect on a [`Text`](text.md) view that contains only one line of text, because a text view has a width that exactly matches the width of its widest line. If you want to align an entire text view rather than its contents, set the aligment of its container, like a [`VStack`](vstack.md) or a frame that you create with the [`frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:)`](view/frame(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:alignment:).md) modifier.
 
 > **Note**: You can use this modifier to control the alignment of a [`Text`](text.md) view that you create with the [`init(_:style:)`](text/init(_:style:).md) initializer to display localized dates and times, including when the view uses only a single line, but only when that view appears in a widget.
-
-You can use this modifier to control the alignment of a [`Text`](text.md) view that you create with the [`init(_:style:)`](text/init(_:style:).md) initializer to display localized dates and times, including when the view uses only a single line, but only when that view appears in a widget.
 
 The modifier also affects the content alignment of other text container types, like [`TextEditor`](texteditor.md) and [`TextField`](textfield.md). In those cases, the modifier sets the alignment even when the view contains only a single line because view’s width isn’t dictated by the width of the text it contains.
 

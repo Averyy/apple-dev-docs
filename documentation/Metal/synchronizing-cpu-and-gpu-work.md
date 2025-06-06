@@ -23,8 +23,6 @@ The sample stores the triangle vertices in a buffer that’s shared between the 
 
 > **Note**: The Xcode project contains schemes for running the sample on macOS, iOS, and tvOS. The default scheme is macOS, which runs the sample on your Mac.
 
-The Xcode project contains schemes for running the sample on macOS, iOS, and tvOS. The default scheme is macOS, which runs the sample on your Mac.
-
 ##### Understand the Solution to Data Dependencies and Processor Stalls
 
 Resource sharing creates a  between the processors; the CPU must finish writing to the resource before the GPU reads it. If the GPU reads the resource before the CPU writes to it, the GPU reads undefined resource data. If the GPU reads the resource while the CPU is writing to it, the GPU reads incorrect resource data.
@@ -145,8 +143,6 @@ After you update a buffer instance, you don’t access its data with the CPU for
 
 > **Note**: You must finalize all CPU writes to one buffer instance before you commit a command buffer that references it. Otherwise, the GPU may begin reading the buffer instance while the CPU is still writing to it.
 
-You must finalize all CPU writes to one buffer instance before you commit a command buffer that references it. Otherwise, the GPU may begin reading the buffer instance while the CPU is still writing to it.
-
 ##### Encode Gpu Commands
 
 Next, you encode commands that reference the buffer instance in a render pass:
@@ -211,8 +207,6 @@ _currentBuffer = (_currentBuffer + 1) % MaxFramesInFlight;
 
 > **Note**: Core Animation provides optimized displayable resources, commonly referred to as , for you to render content and display it onscreen. Drawables are efficient yet expensive system resources, so Core Animation limits the number of drawables that you can use simultaneously in your app. The default limit is 3, but you can set it to 2 with the [`maximumDrawableCount`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/maximumDrawableCount) property (2 and 3 are the only supported values). Because the maximum number of drawables is 3, this sample creates 3 buffer instances. You donʼt need to create more buffer instances than the maximum number of drawables available.
 
-Core Animation provides optimized displayable resources, commonly referred to as , for you to render content and display it onscreen. Drawables are efficient yet expensive system resources, so Core Animation limits the number of drawables that you can use simultaneously in your app. The default limit is 3, but you can set it to 2 with the [`maximumDrawableCount`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/maximumDrawableCount) property (2 and 3 are the only supported values). Because the maximum number of drawables is 3, this sample creates 3 buffer instances. You donʼt need to create more buffer instances than the maximum number of drawables available.
-
 ##### Manage the Rate of Cpu and Gpu Work
 
 When you have multiple instances of a buffer, you can make the CPU start work for frame `n+1` with one instance, while the GPU finishes work for frame `n` with another instance. This implementation improves your app’s efficiency by making the CPU and the GPU work simultaneously. However, you need to manage your app’s rate of work so you don’t exceed the number of buffer instances available.
@@ -265,4 +259,4 @@ Metal can optimize the performance of immutable buffers, but not mutable buffers
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/synchronizing-cpu-and-gpu-work)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/synchronizing-cpu-and-gpu-work)*

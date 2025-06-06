@@ -1,6 +1,6 @@
 # getRectsExposedDuringLiveResize(_:count:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Returns a list of rectangles indicating the newly exposed areas of the view.
@@ -20,8 +20,6 @@ func getRectsExposedDuringLiveResize(_ exposedRects: UnsafeMutablePointer<NSRect
 If your view does not support content preservation during live resizing, the entire area of your view is returned in the `exposedRects` parameter. To support content preservation, override the [`preservesContentDuringLiveResize`](nsview/preservescontentduringliveresize.md) property in your view and have your implementation return [`true`](https://developer.apple.com/documentation/swift/true).
 
 > **Note**:  The window containing your view must also support content preservation. To enable support for this feature in your window, use the [`preservesContentDuringLiveResize`](nswindow/preservescontentduringliveresize.md) method of `NSWindow`.
-
- The window containing your view must also support content preservation. To enable support for this feature in your window, use the [`preservesContentDuringLiveResize`](nswindow/preservescontentduringliveresize.md) method of `NSWindow`.
 
 If the view decreased in both height and width, the list of returned rectangles will be empty. If the view increased in both height and width and its upper-left corner stayed anchored in the same position, the list of returned rectangles will contain a vertical and horizontal component indicating the exposed area.
 

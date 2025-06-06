@@ -1,6 +1,6 @@
 # Personal VPN
 
-**Framework**: Network Extension
+**Framework**: Networkextension
 
 Create and manage a VPN configuration that uses one of the built-in VPN protocols (IPsec or IKEv2).
 
@@ -9,8 +9,6 @@ Create and manage a VPN configuration that uses one of the built-in VPN protocol
 With the Personal VPN feature in macOS and iOS, your app can create and manage a VPN configuration that uses one of the built-in VPN protocols (IPsec or IKEv2). The user must explicitly authorize your app the first time it saves a VPN configuration.
 
 > **Note**:  Personal VPN only supports recommended VPN protocols; it doesn’t support legacy VPN protocols, like PPTP and L2TP.
-
- Personal VPN only supports recommended VPN protocols; it doesn’t support legacy VPN protocols, like PPTP and L2TP.
 
 Before starting with Personal VPN, verify that the client is compatible with your VPN server. Use Apple Configurator to create a configuration profile with a VPN payload for your server. If you can connect using the VPN configuration from your configuration profile, you should be able to connect using Personal VPN.
 
@@ -21,8 +19,6 @@ Once you’ve set up a Personal VPN configuration, you can connect and disconnec
 Both iOS and macOS also support managed VPN, meaning VPN configurations installed by a configuration profile. Managed VPN configurations take precedence over Personal VPN configurations. If there’s simultaneously a managed VPN configuration and Personal VPN configuration, both configured to act as the default route, the managed tunnel serves as the default route.
 
 > **Note**:  When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
-
- When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
 
 ## Topics
 
@@ -56,4 +52,4 @@ Both iOS and macOS also support managed VPN, meaning VPN configurations installe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/personal-vpn)*
+*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/personal-vpn)*

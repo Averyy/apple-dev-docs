@@ -1,6 +1,6 @@
 # Creating an App Clip with Xcode
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Add an App Clip target to your Xcode project and share code between the App Clip and its corresponding full app.
 
@@ -31,8 +31,6 @@ Additionally, Xcode creates a new build phase for the app target that embeds the
 Before you add code to the App Clip target, run the App Clip in Simulator or on a device. At this point, the App Clip shows an empty white screen because you haven’t yet added any code and assets to the App Clip target.
 
 > **Note**:  When you archive the app that comes with an App Clip, Xcode adds the [`com.apple.developer.associated-appclip-app-identifiers`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-appclip-app-identifiers) entitlement to your app. Together with the [`Parent Application Identifiers Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.parent-application-identifiers), it associates your App Clip with your app.
-
- When you archive the app that comes with an App Clip, Xcode adds the [`com.apple.developer.associated-appclip-app-identifiers`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-appclip-app-identifiers) entitlement to your app. Together with the [`Parent Application Identifiers Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.parent-application-identifiers), it associates your App Clip with your app.
 
 ##### Add Code and Assets
 
@@ -116,4 +114,4 @@ When it’s time to test your App Clip, use Xcode to test the launch experience 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/creating-an-app-clip-with-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode)*

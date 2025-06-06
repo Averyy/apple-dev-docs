@@ -1,6 +1,6 @@
 # SpatialAudioComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that configures how sounds emit from an entity into a person’s environment.
@@ -23,8 +23,6 @@ struct SpatialAudioComponent
 The audio system continuously updates the position and orientation of spatial audio sources automatically, so sounds come from an entity wherever it goes and wherever it points. Spatial audio sources incorporate a person’s environment acoustics so that they blend in naturally with the surrounding area. The system distance-attenuates the spatial audio sources so they become quieter the farther away they are from the person.
 
 > **Note**: Spatial audio sources emit only a single channel (that is, mono). The engine mixes any stereo or multichannel audio resources down to a single channel before spatialization. To avoid any unwanted mixdown artifacts, use mono source material where possible.
-
-Spatial audio sources emit only a single channel (that is, mono). The engine mixes any stereo or multichannel audio resources down to a single channel before spatialization. To avoid any unwanted mixdown artifacts, use mono source material where possible.
 
 RealityKit audio playback is spatial by default, so no additional configuration is necessary to opt into sophisticated spatial rendering.
 
@@ -128,4 +126,4 @@ entity.spatialAudio?.distanceAttenuation = .rolloff(factor: 2)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/spatialaudiocomponent)*

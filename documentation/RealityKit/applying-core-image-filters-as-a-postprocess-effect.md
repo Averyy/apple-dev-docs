@@ -1,6 +1,6 @@
 # Applying core image filters as a postprocess effect
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Create special rendering effects for your RealityKit scenes using Core Image.
 
@@ -77,8 +77,6 @@ func postProcessWithCoreImage(context: ARView.PostProcessContext) {
 
 > **Note**: The `compatibleTargetTexture` property referenced above is a derived property based on [`targetColorTexture`](arview/postprocesscontext/targetcolortexture.md). It ensures that the output texture uses the appropriate pixel format for the current device. For more information, see [`Checking the pixel format of a postprocess effect’s output texture`](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
 
-The `compatibleTargetTexture` property referenced above is a derived property based on [`targetColorTexture`](arview/postprocesscontext/targetcolortexture.md). It ensures that the output texture uses the appropriate pixel format for the current device. For more information, see [`Checking the pixel format of a postprocess effect’s output texture`](checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
-
 ##### Register the Callback Function
 
 To apply the effect, register the function as the [`postProcess`](arview/rendercallbacks-swift.struct/postprocess.md) render callback for the [`ARView`](arview.md).
@@ -89,9 +87,7 @@ arView.renderCallbacks.postProcess = postProcessWithCoreImage
 
 > **Note**: For more information on using Core Image to create postprocess effects, see the [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md) sample code, which demonstrates multiple postprocess techniques, including Core Image.
 
-For more information on using Core Image to create postprocess effects, see the [`Implementing Special Rendering Effects with RealityKit Postprocessing`](implementing_special_rendering_effects_with_realitykit_postprocessing.md) sample code, which demonstrates multiple postprocess techniques, including Core Image.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/applying-core-image-filters-as-a-postprocess-effect)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/applying-core-image-filters-as-a-postprocess-effect)*

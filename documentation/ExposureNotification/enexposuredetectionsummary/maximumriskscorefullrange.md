@@ -1,6 +1,6 @@
 # maximumRiskScoreFullRange
 
-**Framework**: Exposure Notification  
+**Framework**: Exposurenotification  
 **Kind**: property
 
 The value that represents the highest, full-range risk score of all the exposures for the user.
@@ -20,13 +20,9 @@ var maximumRiskScoreFullRange: Double { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.6 and later.
 
- This property is available in iOS 12.5, and in iOS 13.6 and later.
-
 This value is not limited by [`ENRiskScoreMax`](enriskscoremax.md).
 
 > **Note**:  This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
-
- This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
 
 ## See Also
 
@@ -48,4 +44,4 @@ This value is not limited by [`ENRiskScoreMax`](enriskscoremax.md).
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposuredetectionsummary/maximumriskscorefullrange)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposuredetectionsummary/maximumriskscorefullrange)*

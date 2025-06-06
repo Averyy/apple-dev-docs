@@ -1,6 +1,6 @@
 # FSKit
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: module
 
 Implement a file system that runs in user space.
@@ -29,8 +29,6 @@ FSKit provides two design flows, with different trade-offs of functionality and 
 - [`FSUnaryFileSystem`](fsunaryfilesystem.md) is a simpler file system where containers use only one resource and provide only one volume. Most file systems shipping in macOS fit this pattern, including `HFS`, `msdosfs`, `ExFAT`, `ntfs`, and others.
 
 > **Note**: The current version of FSKit supports only `FSUnaryFileSystem`.
-
-The current version of FSKit supports only `FSUnaryFileSystem`.
 
 When you choose a design flow, write an app extension that conforms to either `FileSystemExtension` or [`UnaryFileSystemExtension`](unaryfilesystemextension.md), based on your chosen flow. These protocols declare a `fileSystem` delegate object that your extension creates and returns. This delegate object subclasses either `FSFileSystem` or `FSUnaryFileSystem` as appropriate, and conforms to either the `FSFileSystemOperations` or [`FSUnaryFileSystemOperations`](fsunaryfilesystemoperations.md) protocol. These protocols define a `loadResource` method, which FSKit uses to make a resource available to the module.
 

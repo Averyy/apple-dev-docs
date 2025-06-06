@@ -1,6 +1,6 @@
 # LPMetadataProvider
 
-**Framework**: Link Presentation  
+**Framework**: Linkpresentation  
 **Kind**: class
 
 An object that retrieves metadata for a URL.
@@ -24,8 +24,6 @@ class LPMetadataProvider
 Use [`LPMetadataProvider`](lpmetadataprovider.md) to fetch metadata for a URL, including its title, icon, and image or video links. All properties on the resulting [`LPLinkMetadata`](lplinkmetadata.md) instance are optional.
 
 > **Note**: To enable macOS clients to fetch metadata for remote URLs, add the [`com.apple.security.network.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.network.client) entitlement.
-
-To enable macOS clients to fetch metadata for remote URLs, add the [`com.apple.security.network.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.network.client) entitlement.
 
 #### Fetch Link Metadata From a Url
 
@@ -86,4 +84,4 @@ For more information about handling errors, see [`LPError`](lperror.md).
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/linkpresentation/lpmetadataprovider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/LinkPresentation/lpmetadataprovider)*

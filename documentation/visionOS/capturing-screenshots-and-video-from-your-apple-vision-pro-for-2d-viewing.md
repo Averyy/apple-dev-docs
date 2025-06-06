@@ -12,8 +12,6 @@ The system renders content with spatial effects and optimizations for viewing du
 
 > **Note**: For guidance on the screenshots and previews you include in your app’s product page, see [`Submit your apps to the App Store for Apple Vision Pro`](https://developer.apple.comhttps://developer.apple.com/visionos/submit/).
 
-For guidance on the screenshots and previews you include in your app’s product page, see [`Submit your apps to the App Store for Apple Vision Pro`](https://developer.apple.comhttps://developer.apple.com/visionos/submit/).
-
 ##### Pair Your Apple Vision Pro to Xcode
 
 Before capturing screenshots and video from your device, pair it with a Mac that has Xcode and the visionOS SDK installed. For instructions on pairing your device, see [`Running your app in Simulator or on a device`](https://developer.apple.com/documentation/Xcode/running-your-app-in-simulator-or-on-a-device).
@@ -56,8 +54,6 @@ The capture session ends when the elapsed time exceeds 60 seconds. You can click
 
 > **Note**: To begin a capture, the device must have a stable connection to your Mac and start at low power and thermal levels to stay below thresholds necessary to achieve consistent frame rates. When capturing multiple sessions, you might need to wait between each session.
 
-To begin a capture, the device must have a stable connection to your Mac and start at low power and thermal levels to stay below thresholds necessary to achieve consistent frame rates. When capturing multiple sessions, you might need to wait between each session.
-
 ##### Review the Captured Video File
 
 Each recording session creates a QuickTime Movie file (`.mov`) and saves it to the desktop of your Mac. The file includes video captured at 30 FPS using 10-bit HEVC in HDTV Rec. 709 color space with system audio recorded in 32-bit floating-point linear PCM.
@@ -94,4 +90,4 @@ Use additional video-editing tools to trim, edit, and apply post-processing, suc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing)*

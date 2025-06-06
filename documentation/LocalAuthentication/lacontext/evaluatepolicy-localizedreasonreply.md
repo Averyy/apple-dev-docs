@@ -1,6 +1,6 @@
 # evaluatePolicy(_:localizedReason:reply:)
 
-**Framework**: Local Authentication  
+**Framework**: Localauthentication  
 **Kind**: method
 
 Evaluates the specified policy.
@@ -25,19 +25,9 @@ func evaluatePolicy(_ policy: LAPolicy, localizedReason: String) async throws ->
 func evaluatePolicy(_ policy: LAPolicy, localizedReason: String) async throws -> Bool
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func evaluatePolicy(_ policy: LAPolicy, localizedReason: String) async throws -> Bool
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 This method asynchronously evaluates an authentication policy. Evaluating a policy may involve prompting the user for various kinds of interaction or authentication. The actual behavior is dependent on the evaluated policy and the device type. The behavior can also be affected by installed configuration profiles.
 
 > **Note**:  To control the authentication prompt on devices that support it, attach the associated local authentication context to an [`LAAuthenticationView`](https://developer.apple.com/documentation/LocalAuthenticationEmbeddedUI/LAAuthenticationView) instance before calling this method.
-
- To control the authentication prompt on devices that support it, attach the associated local authentication context to an [`LAAuthenticationView`](https://developer.apple.com/documentation/LocalAuthenticationEmbeddedUI/LAAuthenticationView) instance before calling this method.
 
 In the localized string you present to the user in the authentication dialog, provide a clear reason for the authentication request, and describe the resulting action. Make the message short and clear, and provide it in the user’s language. Don’t include the app name, which already appears in the authentication dialog (in macOS, in the title of the dialog; in iOS, in the subtitle).
 

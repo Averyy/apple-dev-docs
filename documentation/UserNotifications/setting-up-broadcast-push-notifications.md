@@ -14,11 +14,7 @@ Instead of using a device token to update a Live Activity for an individual pers
 
 > **Note**: Broadcast push notifications are only available on Live Activities.
 
-Broadcast push notifications are only available on Live Activities.
-
 > 💡 **Tip**:  Refer to [`Viewing the status of push notifications using Metrics and APNs`](viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
-
- Refer to [`Viewing the status of push notifications using Metrics and APNs`](viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
 
 ##### Enable Broadcast Capability
 
@@ -37,8 +33,6 @@ The Overview tab of the [`Push Notification Console`](https://developer.apple.co
 Metrics provide information on the number of broadcast push notifications published, the number of devices that received them, and a snapshot count of all devices subscribed to receive broadcast push notifications. The insight you gain from metrics can improve your understanding of usage patterns for Live Activity push notifications. Metrics are collected and aggregated on daily basis.
 
 > ❗ **Important**: Metrics only record in the production environment; they aren’t available in the development environment.
-
-Metrics only record in the production environment; they aren’t available in the development environment.
 
 The Channels tab provides broadcast push notification metrics for the channels of your app. If you recently deleted a channel, you can still see its metrics in the Push Notifications Console. You can only view a one-week history of your channel’s metrics, and broadcast push notification metrics aren’t displayed for channels with very few subscribers.
 
@@ -63,4 +57,4 @@ The following table describes the metrics for the aggregated broadcast push noti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/setting-up-broadcast-push-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/setting-up-broadcast-push-notifications)*

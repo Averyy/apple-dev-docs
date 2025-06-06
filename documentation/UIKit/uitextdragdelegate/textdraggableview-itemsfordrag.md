@@ -1,6 +1,6 @@
 # textDraggableView(_:itemsForDrag:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Asks the delegate for custom drag items from a text view.
@@ -27,8 +27,6 @@ An array of drag items that represent the items to drag.
 You implement this method when you need to provide custom drag items. The drag request gives you the text range of the text that is included in the drag activity. It also gives you the default drag items, which you can add to or change. If you return an empty array, the drag operation does not happen.
 
 > **Note**:  This method may be called more than once. For instance, it is called each time the user adds more drag items to the session. You can detect additional calls to this method by checking the [`existingItems`](uitextdragrequest/existingitems.md) property on the drag request.
-
- This method may be called more than once. For instance, it is called each time the user adds more drag items to the session. You can detect additional calls to this method by checking the [`existingItems`](uitextdragrequest/existingitems.md) property on the drag request.
 
 ## Parameters
 

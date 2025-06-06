@@ -15,8 +15,6 @@ func expectation(forNotification notificationName: NSNotification.Name, object o
 
 > **Note**:  For more control over notification-based expectations, use [`XCTNSNotificationExpectation`](xctnsnotificationexpectation.md) instead of this convenience method.
 
- For more control over notification-based expectations, use [`XCTNSNotificationExpectation`](xctnsnotificationexpectation.md) instead of this convenience method.
-
 ## Parameters
 
 - `notificationName`: The notification to register for.

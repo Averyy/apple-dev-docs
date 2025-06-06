@@ -1,6 +1,6 @@
 # CollisionComponent.Mode.default
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: case
 
 A default collision object.
@@ -23,8 +23,6 @@ case `default`
 When two objects of this type collide, RealityKit computes the full contact details (contact points, normal vectors, penetration depths, and so on) and stores them in the contact set.
 
 > **Note**: Collisions will fall through and do not collide by default, to enable colliding see the [`CollisionComponent.Mode.colliding`](collisioncomponent/mode-swift.enum/colliding.md) mode.
-
-Collisions will fall through and do not collide by default, to enable colliding see the [`CollisionComponent.Mode.colliding`](collisioncomponent/mode-swift.enum/colliding.md) mode.
 
 ## See Also
 

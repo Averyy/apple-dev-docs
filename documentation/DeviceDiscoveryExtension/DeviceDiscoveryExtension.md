@@ -1,6 +1,6 @@
 # DeviceDiscoveryExtension
 
-**Framework**: DeviceDiscoveryExtension  
+**Framework**: Devicediscoveryextension  
 **Kind**: module
 
 Stream media to a third-party device that a user selects in a system menu.
@@ -28,8 +28,6 @@ Once the extension loads:
 Because DDE runs in a system sandbox, the extension doesn’t need to ask the user for local-network or Bluetooth permissions. The picker view displays discovered third-party devices and protocols in the same system menu as AirPlay, which provides a unified device-selection experience.
 
 > **Note**:  To stream to a third-party device that you don’t manufacture, bundle your app with the device discovery extension that the manufacturer provides as part of its SDK.
-
- To stream to a third-party device that you don’t manufacture, bundle your app with the device discovery extension that the manufacturer provides as part of its SDK.
 
 ## Topics
 

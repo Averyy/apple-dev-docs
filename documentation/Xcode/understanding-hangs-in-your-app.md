@@ -16,8 +16,6 @@ A hang is almost always the result of long-running work on the main thread. This
 
 > **Note**:  This article assumes a basic understanding of the event-handling and rendering loop, as well as a basic understanding of hangs and hitches, and how they differ. If you’re unfamiliar with hangs and hitches, see [`Understanding user interface responsiveness`](understanding-user-interface-responsiveness.md) for more information about them, as well as the event-handling and rendering loop.
 
- This article assumes a basic understanding of the event-handling and rendering loop, as well as a basic understanding of hangs and hitches, and how they differ. If you’re unfamiliar with hangs and hitches, see [`Understanding user interface responsiveness`](understanding-user-interface-responsiveness.md) for more information about them, as well as the event-handling and rendering loop.
-
 ##### Understand Work on the Main Thread
 
 Processing incoming events and updating the UI accordingly is the responsibility of an app’s main thread. As part of handling an event, the main thread performs the following work:
@@ -154,4 +152,4 @@ Hang reporting only measures the time on the main run loop. The time necessary f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/understanding-hangs-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/understanding-hangs-in-your-app)*

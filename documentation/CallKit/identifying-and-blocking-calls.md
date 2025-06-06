@@ -1,6 +1,6 @@
 # Identifying and blocking calls
 
-**Framework**: CallKit
+**Framework**: Callkit
 
 Create a Call Directory app extension to identify and block incoming callers by their phone number.
 
@@ -9,8 +9,6 @@ Create a Call Directory app extension to identify and block incoming callers by 
 Use the Call Directory app extension to manage callers by their phone number. The system communicates with the app extension and checks a person’s contacts and block lists to identify callers.
 
 > **Note**:  The [`CXCallDirectoryPhoneNumber`](cxcalldirectoryphonenumber.md) type represents phone numbers in a Call Directory app extension, and consists of a country calling code (such as `1` for the United States) followed by a sequence of digits.
-
- The [`CXCallDirectoryPhoneNumber`](cxcalldirectoryphonenumber.md) type represents phone numbers in a Call Directory app extension, and consists of a country calling code (such as `1` for the United States) followed by a sequence of digits.
 
 ##### Create a Call Directory App Extension
 
@@ -40,8 +38,6 @@ To block incoming calls for a particular phone number, you use the [`addBlocking
 
 > **Note**:  You can specify that your Call Directory app extension adds identification and blocks phone numbers in its implementation of [`beginRequest(with:)`](cxcalldirectoryprovider/beginrequest(with:).md).
 
- You can specify that your Call Directory app extension adds identification and blocks phone numbers in its implementation of [`beginRequest(with:)`](cxcalldirectoryprovider/beginrequest(with:).md).
-
 ##### Handle Audio Session Interruptions
 
 Like other audio apps, VoIP apps need to handle audio session interruptions. Interruptions may occur for several reasons, including a person accepting another call or closing the Smart Folio of their iPad. In these situations, an interruption notification contains the reason for the interruption and allows your app to correctly terminate the call, if necessary. For more information, see [`Handling audio interruptions`](https://developer.apple.com/documentation/AVFAudio/handling-audio-interruptions).
@@ -60,4 +56,4 @@ Like other audio apps, VoIP apps need to handle audio session interruptions. Int
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/callkit/identifying-and-blocking-calls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CallKit/identifying-and-blocking-calls)*

@@ -1,6 +1,6 @@
 # Create an image for a subscription
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Reserve an image asset to appear in the App Store, representing a subscription.
@@ -16,8 +16,6 @@ Reserve an image asset to appear in the App Store, representing a subscription.
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
 ## See Also
 
 - [Read subscription image information](get-v1-subscriptionimages-_id_.md)
@@ -32,4 +30,4 @@ Reserve an image asset to appear in the App Store, representing a subscription.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-subscriptionimages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-subscriptionimages)*

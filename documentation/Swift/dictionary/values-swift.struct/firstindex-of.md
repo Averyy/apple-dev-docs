@@ -39,8 +39,6 @@ print(students)
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `element`: An element to search for in the collection.

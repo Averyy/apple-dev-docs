@@ -26,8 +26,6 @@ The allocated size in bytes is the number of blocks times block size.
 
 > **Note**:  This only applies to regular files.
 
- This only applies to regular files.
-
 ## See Also
 
 - [var documentIdentifier: Int?](urlresourcevalues/documentidentifier.md)

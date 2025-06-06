@@ -1,6 +1,6 @@
 # variantPreferences
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The preferences the player item uses when selecting variant playlists.
@@ -26,8 +26,6 @@ var variantPreferences: AVVariantPreferences { get set }
 The default value is [`AVVariantPreferenceNone`](avvariantpreferences/avvariantpreferencenone.md).
 
 > **Note**:  Changing variant preferences during playback might result in a variant switch.
-
- Changing variant preferences during playback might result in a variant switch.
 
 ## See Also
 

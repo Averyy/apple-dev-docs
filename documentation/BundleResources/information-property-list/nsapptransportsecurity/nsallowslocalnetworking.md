@@ -1,6 +1,6 @@
 # NSAllowsLocalNetworking
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 A Boolean value that indicates whether to allow local resources to load.
@@ -24,8 +24,6 @@ In iOS 17, iPadOS 17, and macOS 14, ATS no longer allows connections to IP addre
 The local networking exception tells newer versions of the OS to ignore the arbitrary loads key, and enable access to unqualified domains, `.local` domains, and IP addresses that they would otherwise restrict. Meanwhile, the arbitrary loads key tells older versions of the OS, which don’t process the local networking exception key, to bypass ATS completely. This allows your app to work on different OS versions while minimizing the use of the wider exception. For more information about how global ATS exceptions interact across OS versions, see the [`NSAppTransportSecurity`](information-property-list/nsapptransportsecurity.md) key’s Versioning section.
 
 > **Note**:  While ATS doesn’t block local loads by default in newer versions of the OS, consider setting [`NSAllowsLocalNetworking`](information-property-list/nsapptransportsecurity/nsallowslocalnetworking.md) to `YES` as a declaration of intent, if appropriate, even if you don’t support older OS versions.
-
- While ATS doesn’t block local loads by default in newer versions of the OS, consider setting [`NSAllowsLocalNetworking`](information-property-list/nsapptransportsecurity/nsallowslocalnetworking.md) to `YES` as a declaration of intent, if appropriate, even if you don’t support older OS versions.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Matching audio using the built-in microphone
 
-**Framework**: ShazamKit
+**Framework**: Shazamkit
 
 Use the audio stream from the microphone as the source for a ShazamKit session.
 
@@ -63,8 +63,6 @@ func configureAudioEngine() {
 ```
 
 > **Note**:  The output from the built-in microphone on devices running iOS 14 and earlier is already in a format that’s compatible with ShazamKit. Other microphones or input sources may not be compatible.
-
- The output from the built-in microphone on devices running iOS 14 and earlier is already in a format that’s compatible with ShazamKit. Other microphones or input sources may not be compatible.
 
 ##### Start and Stop the Audio Engine
 
@@ -144,4 +142,4 @@ func match(_ catalog: SHCustomCatalog) throws {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/shazamkit/matching-audio-using-the-built-in-microphone)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ShazamKit/matching-audio-using-the-built-in-microphone)*

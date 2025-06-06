@@ -1,6 +1,6 @@
 # allowsSimultaneousRecognitionDuringLift
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A Boolean value that determines whether the interaction allows recognition of other gestures during the lift activity.
@@ -23,8 +23,6 @@ var allowsSimultaneousRecognitionDuringLift: Bool { get set }
 If you set the [`allowsSimultaneousRecognitionDuringLift`](uidraginteraction/allowssimultaneousrecognitionduringlift.md) property to [`true`](https://developer.apple.com/documentation/swift/true), the interaction is canceled when another gesture is recognized. If you set this property to [`false`](https://developer.apple.com/documentation/swift/false) (the default value), competing gesture recognizers fail.
 
 > **Note**:  [`UILongPressGestureRecognizer`](uilongpressgesturerecognizer.md) instances are always delayed and happen simultaneously during the lift activity.
-
- [`UILongPressGestureRecognizer`](uilongpressgesturerecognizer.md) instances are always delayed and happen simultaneously during the lift activity.
 
 ## See Also
 

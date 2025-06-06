@@ -28,13 +28,7 @@ class MessagePort
 
 > **Note**:  [`MessagePort`](messageport.md) conforms to the [`NSCoding`](nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](nsportcoder.md) object. [`Port`](port.md) and its subclasses do not support archiving.
 
- [`MessagePort`](messageport.md) conforms to the [`NSCoding`](nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](nsportcoder.md) object. [`Port`](port.md) and its subclasses do not support archiving.
-
 > ❗ **Important**:  Avoid [`MessagePort`](messageport.md). There’s little reason to use [`MessagePort`](messageport.md) rather than [`NSMachPort`](nsmachport.md) or [`SocketPort`](socketport.md). There’s no particular performance or functionality advantage. It is recommended avoiding its use. [`MessagePort`](messageport.md) may be deprecated in the macOS 10.6 or later.
-
- Avoid [`MessagePort`](messageport.md). There’s little reason to use [`MessagePort`](messageport.md) rather than [`NSMachPort`](nsmachport.md) or [`SocketPort`](socketport.md). There’s no particular performance or functionality advantage. It is recommended avoiding its use.
-
-[`MessagePort`](messageport.md) may be deprecated in the macOS 10.6 or later.
 
 ## Relationships
 
@@ -67,4 +61,4 @@ class MessagePort
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/messageport)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/messageport)*

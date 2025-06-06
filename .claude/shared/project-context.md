@@ -1,11 +1,11 @@
 # Apple Developer Documentation Scraper - Project Context
 
 ## Project Overview
-Building a comprehensive Python scraper to mirror Apple's entire developer documentation ecosystem for Context7 integration. This enables developers to query "apple swiftui", "apple metal", etc., and receive accurate, up-to-date documentation.
+Building a comprehensive Python scraper to mirror Apple's entire developer documentation ecosystem with local MCP server integration. This enables developers to use natural language queries to retrieve accurate, up-to-date Apple developer documentation.
 
 ## Scale & Scope
 - **Target**: 150+ frameworks across all Apple platforms
-- **Estimated Pages**: 50,000-100,000+ documentation pages
+- **Actual Pages**: 278,778 documentation pages (1.17 GB)
 - **Platforms**: iOS, macOS, tvOS, watchOS, visionOS
 - **Frameworks**: SwiftUI, UIKit, Metal, ARKit, Core ML, HealthKit, and 100+ more
 

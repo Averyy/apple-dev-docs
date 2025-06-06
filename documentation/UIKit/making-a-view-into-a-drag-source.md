@@ -1,6 +1,6 @@
 # Making a view into a drag source
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Adopt drag interaction APIs to provide items for dragging.
 
@@ -13,8 +13,6 @@ Adopt drag interaction APIs to provide items for dragging.
 By implementing a drag interaction delegate ([`UIDragInteractionDelegate`](uidraginteractiondelegate.md)) for a view, you enable that view to function as a drag source in your app.
 
 > **Note**:  The [`UITextView`](uitextview.md), [`UITableView`](uitableview.md), and [`UICollectionView`](uicollectionview.md) classes each provide their own, specialized support for creating drag items. See these classes for more information.
-
- The [`UITextView`](uitextview.md), [`UITableView`](uitableview.md), and [`UICollectionView`](uicollectionview.md) classes each provide their own, specialized support for creating drag items. See these classes for more information.
 
 ##### Enable a View As a Drag Source
 
@@ -51,8 +49,6 @@ func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session
 
 > **Note**:  The cast from the Swift [`String`](https://developer.apple.com/documentation/Swift/String) type to the Foundation [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) class, in the code snippet above, is required because model objects for drag and drop must support the [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting) protocol.
 
- The cast from the Swift [`String`](https://developer.apple.com/documentation/Swift/String) type to the Foundation [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) class, in the code snippet above, is required because model objects for drag and drop must support the [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting) protocol.
-
 This implementation uses the [`init(object:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/2888328-init) convenience initializer. When you instantiate a drag item, pass an object in your app’s native representation, or in the highest-fidelity representation you support. In general, ensure that the first element in the item provider’s [`registeredTypeIdentifiers`](https://developer.apple.com/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers) array represents the highest-fidelity data your drag interaction delegate can deliver.
 
 To add more data representations to a drag item, as you typically would in your app, add them in fidelity order, from highest to lowest. When adding representations, you have choices:
@@ -86,4 +82,4 @@ The figure above depicts the steps for constructing a drag item, in context:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/making-a-view-into-a-drag-source)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/making-a-view-into-a-drag-source)*

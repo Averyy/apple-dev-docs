@@ -1,6 +1,6 @@
 # pitchBase
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 Get or set a synthesizer’s baseline speech pitch.
@@ -21,8 +21,6 @@ An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) o
 This property is used with [`setObject(_:forProperty:)`](nsspeechsynthesizer/setobject(_:forproperty:).md) and [`object(forProperty:)`](nsspeechsynthesizer/object(forproperty:).md).
 
 > **Note**:  The change in speech pitch may not be noticeable until the next sentence or paragraph is spoken.
-
- The change in speech pitch may not be noticeable until the next sentence or paragraph is spoken.
 
 ## See Also
 
@@ -60,4 +58,4 @@ This property is used with [`setObject(_:forProperty:)`](nsspeechsynthesizer/set
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsspeechsynthesizer/speechpropertykey/pitchbase)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsspeechsynthesizer/speechpropertykey/pitchbase)*

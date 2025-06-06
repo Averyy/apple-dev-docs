@@ -24,8 +24,6 @@ Don’t subclass or create instances of this class. Instead, when this backgroun
 
 > **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
 
- In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
-
 Background watch connectivity tasks are triggered whenever the paired device sends data using one of the following [`WCSession`](https://developer.apple.com/documentation/WatchConnectivity/WCSession) methods:
 
 - [`updateApplicationContext(_:)`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/updateApplicationContext(_:))
@@ -72,4 +70,4 @@ The background watch connectivity task informs you that your app is given backgr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkwatchconnectivityrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkwatchconnectivityrefreshbackgroundtask)*

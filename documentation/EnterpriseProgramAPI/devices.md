@@ -1,6 +1,6 @@
 # Devices
 
-**Framework**: Enterprise Program API
+**Framework**: Enterpriseprogramapi
 
 Register devices for development and testing.
 
@@ -9,8 +9,6 @@ Register devices for development and testing.
 A `devices` resource represents the Apple devices that you register to use for development and testing. You can register a limited number of new devices and get information about them.
 
 > **Note**:  You can only reset your device list through the Apple Developer website.
-
- You can only reset your device list through the Apple Developer website.
 
 ## Topics
 
@@ -53,4 +51,4 @@ A `devices` resource represents the Apple devices that you register to use for d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/enterpriseprogramapi/devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/EnterpriseProgramAPI/devices)*

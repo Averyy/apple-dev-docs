@@ -1,6 +1,6 @@
 # BlendTreeNode
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: protocol
 
 An interface for a node that’s a member of a blend tree.
@@ -26,8 +26,6 @@ This protocol specifies the common functionality for the animations that compose
 - [`BlendTreeSourceNode`](blendtreesourcenode.md), which defines an animation to blend with its [`source`](blendtreesourcenode/source.md) property.
 
 > **Note**: A node in the tree may be of type [`BlendTreeInvalidNode`](blendtreeinvalidnode.md), which neither specifies a list of sources nor an animation.
-
-A node in the tree may be of type [`BlendTreeInvalidNode`](blendtreeinvalidnode.md), which neither specifies a list of sources nor an animation.
 
 Each node type supplies a name and weight, which you can set during or after initialization.
 
@@ -76,4 +74,4 @@ let blendNode = BlendTreeSourceNode(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/blendtreenode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/blendtreenode)*

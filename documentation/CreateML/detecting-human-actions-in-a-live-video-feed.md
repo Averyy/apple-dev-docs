@@ -1,6 +1,6 @@
 # Detecting Human Actions in a Live Video Feed
 
-**Framework**: Create ML
+**Framework**: Createml
 
 Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 
@@ -20,8 +20,6 @@ This sample app recognizes a person’s body moves, called , by analyzing a seri
 ![Flow diagram that illustrates the purpose of an action classifier starting with a human performing jumping jacks in front of the device’s camera and ending with a prediction label. Starting at the top of the flow diagram, a camera generates video frames. The Vision framework consumes the frames to generate a data window of body location data. The action classifier consumes the data window and predicts the label: Jumping Jacks.](https://docs-assets.developer.apple.com/published/6969ad3794/rendered2x-1612563032.png)
 
 > **Note**: See `Creating an Action Classifier Model` for information about creating your own action classifier.
-
-See `Creating an Action Classifier Model` for information about creating your own action classifier.
 
 The app continually presents its current action prediction on top of a live, full-screen video feed from the device’s camera. When the app recognizes one or more people in the frame, it overlays a wireframe body pose on each person. At the same time, the app predicts the  person’s current action; typically this is the person closest to the camera.
 
@@ -62,8 +60,6 @@ return success ? output : nil
 The `createCameraInput(position:frameRate:)` method selects the front- or rear-facing camera and configures its frame rate so it matches that of the action classifier.
 
 > ❗ **Important**: If you replace the `ExerciseClassifier.mlmodel` file with your own action classifier model, set the `frameRate` property to match the Frame Rate training parameter you used in the Create ML developer tool.
-
-If you replace the `ExerciseClassifier.mlmodel` file with your own action classifier model, set the `frameRate` property to match the Frame Rate training parameter you used in the Create ML developer tool.
 
 The `AVCaptureVideoDataOutput.withPixelFormatType(_:)` method creates an [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput) that produces frames with a specific pixel format.
 
@@ -190,8 +186,6 @@ The next publisher in the chain is a [`Publishers.Map`](https://developer.apple.
 
 > ❗ **Important**: Improve your app’s efficiency by creating and reusing a single [`VNDetectHumanBodyPoseRequest`](https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest) instance.
 
-Improve your app’s efficiency by creating and reusing a single [`VNDetectHumanBodyPoseRequest`](https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest) instance.
-
 ```swift
 // Create a request handler for the image.
 let visionRequestHandler = VNImageRequestHandler(cgImage: frame)
@@ -229,8 +223,6 @@ private func isolateLargestPose(_ poses: [Pose]?) -> Pose? {
 The closure compares the poses’ area estimates, with the goal of consistently selecting the same person’s pose over time, when multiple people are in frame.
 
 > ❗ **Important**: Get the most accurate predictions from an action classifier by using whatever technique you think best tracks a person from frame to frame, and use the multiarray from that person’s [`VNHumanBodyPoseObservation`](https://developer.apple.com/documentation/vision/vnhumanbodyposeobservation) result.
-
-Get the most accurate predictions from an action classifier by using whatever technique you think best tracks a person from frame to frame, and use the multiarray from that person’s [`VNHumanBodyPoseObservation`](https://developer.apple.com/documentation/vision/vnhumanbodyposeobservation) result.
 
 ##### 3744226
 

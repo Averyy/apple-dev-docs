@@ -1,6 +1,6 @@
 # Identifying unique locations with Place IDs
 
-**Framework**: MapKit
+**Framework**: Mapkit
 
 Obtain information about a point of interest that persists over its lifetime.
 
@@ -11,8 +11,6 @@ Obtain information about a point of interest that persists over its lifetime.
 A Place ID is a great feature for referencing a place’s information, even after that place’s information changes. Place IDs are also useful for displaying a place on a map. Use Place IDs to maintain unique collections of places that are important to your app.
 
 > **Note**:  Place IDs are exempt from the storage restrictions in Section 2.5 of Attachment 6 to the [`Apple Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/support/terms/apple-developer-program-license-agreement/).
-
- Place IDs are exempt from the storage restrictions in Section 2.5 of Attachment 6 to the [`Apple Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/support/terms/apple-developer-program-license-agreement/).
 
 ##### Obtain a Place Id
 
@@ -59,4 +57,4 @@ To maintain performance, use these steps to perform de-duplication on a periodic
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids)*

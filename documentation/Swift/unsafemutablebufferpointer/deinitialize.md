@@ -31,8 +31,6 @@ The region of memory underlying this buffer must be fully initialized. After cal
 
 > **Note**: All buffer elements must already be initialized.
 
-All buffer elements must already be initialized.
-
 
 ---
 

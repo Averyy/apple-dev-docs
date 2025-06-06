@@ -1,6 +1,6 @@
 # selectedIndex
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The index of the view controller associated with the currently selected tab item.
@@ -26,8 +26,6 @@ This property nominally represents an index into the array of the [`viewControll
 In versions of iOS prior to version 3.0, this property reflects the index of the selected tab bar item only. Attempting to set this value to an index of a view controller that is not visible in the tab bar, but is instead managed by the More navigation controller, has no effect.
 
 > **Note**:  The More interface is not available in tvOS.
-
- The More interface is not available in tvOS.
 
 ## See Also
 

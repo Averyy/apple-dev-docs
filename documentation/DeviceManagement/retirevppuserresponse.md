@@ -1,6 +1,6 @@
 # RetireVppUserResponse
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: dictionary
 
 The response from retiring a user.
@@ -19,8 +19,6 @@ object RetireVppUserResponse
 
 > **Note**:  If the user passes the `userId` value for an already-retired user, this request returns an error that indicates the user has already been retired.
 
- If the user passes the `userId` value for an already-retired user, this request returns an error that indicates the user has already been retired.
-
 ## See Also
 
 - [object RetireVppUserRequest](retirevppuserrequest.md)
@@ -29,4 +27,4 @@ object RetireVppUserResponse
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/retirevppuserresponse)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/retirevppuserresponse)*

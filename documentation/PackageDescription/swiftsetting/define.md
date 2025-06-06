@@ -1,6 +1,6 @@
 # define(_:_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Defines a compilation condition.
@@ -27,8 +27,6 @@ Use compilation conditions to only compile statements if a certain condition is 
 Unlike macros in C/C++, compilation conditions don’t have an associated value.
 
 > **Note**: First available in PackageDescription 5.0.
-
-First available in PackageDescription 5.0.
 
 ## Parameters
 

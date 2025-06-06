@@ -28,8 +28,6 @@ An individual match is represented by an instance of the [`NSTextCheckingResult`
 
 > **Note**:  [`NSRegularExpression`](nsregularexpression.md) conforms to the International Components for Unicode ([`ICU`](https://developer.apple.comhttps://unicode-org.github.io/icu/)) specification for [`regular expressions`](https://developer.apple.comhttps://unicode-org.github.io/icu/userguide/strings/regexp.html).
 
- [`NSRegularExpression`](nsregularexpression.md) conforms to the International Components for Unicode ([`ICU`](https://developer.apple.comhttps://unicode-org.github.io/icu/)) specification for [`regular expressions`](https://developer.apple.comhttps://unicode-org.github.io/icu/userguide/strings/regexp.html).
-
 ##### Examples Using Nsregularexpression
 
 What follows are a set of graduated examples for using the `NSRegularExpression` class. All these examples use the regular expression `\\b(a|b)(c|d)\\b` as their regular expression.
@@ -265,4 +263,4 @@ All trademarks and registered trademarks mentioned herein are the property of th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsregularexpression)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsregularexpression)*

@@ -14,8 +14,6 @@ Replace your app’s deprecated OpenGL code with Metal.
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`611: Bringing OpenGL Apps to Metal`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/611/).
 
-This sample code project is associated with WWDC 2019 session [`611: Bringing OpenGL Apps to Metal`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/611/).
-
 ##### Configure the Sample Code Project
 
 To run the app:
@@ -31,4 +29,4 @@ To run the app:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/migrating-opengl-code-to-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/migrating-opengl-code-to-metal)*

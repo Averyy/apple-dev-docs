@@ -31,10 +31,6 @@ Your session delegate should also implement the methods in the [`URLSessionTaskD
 
 > **Note**:  A [`URLSession`](urlsession.md) object need not have a delegate. If no delegate is assigned, when you create tasks in that session, you must provide a completion handler block to obtain the data. Completion handler blocks are primarily intended as an alternative to using a custom delegate. If you create a task using a method that takes a completion handler block, the delegate methods for response and data delivery are not called.
 
- A [`URLSession`](urlsession.md) object need not have a delegate. If no delegate is assigned, when you create tasks in that session, you must provide a completion handler block to obtain the data.
-
-Completion handler blocks are primarily intended as an alternative to using a custom delegate. If you create a task using a method that takes a completion handler block, the delegate methods for response and data delivery are not called.
-
 ## Topics
 
 ### Handling task life cycle changes

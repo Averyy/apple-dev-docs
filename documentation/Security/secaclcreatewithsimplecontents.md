@@ -24,8 +24,6 @@ The ACL entry returned by this method includes a list of trusted apps, the name 
 
 > **Note**:  Starting in macOS 10.13.1, for added security, the system ignores the `promptSelector` property of an ACL object and always prompts for the keychain password when asking the user whether to add an app to the list of trusted apps.
 
- Starting in macOS 10.13.1, for added security, the system ignores the `promptSelector` property of an ACL object and always prompts for the keychain password when asking the user whether to add an app to the list of trusted apps.
-
 The system requires exactly one owner ACL entry in each access instance. The [`SecACLCreateWithSimpleContents(_:_:_:_:_:)`](secaclcreatewithsimplecontents(_:_:_:_:_:).md) method fails if you attempt to add a second owner entry. To change owner access controls, use the [`SecAccessCopyMatchingACLList(_:_:)`](secaccesscopymatchingacllist(_:_:).md) function to find the owner entry (the only one with an authorization tag of [`kSecACLAuthorizationChangeACL`](ksecaclauthorizationchangeacl.md)) and the [`SecACLSetContents(_:_:_:_:)`](secaclsetcontents(_:_:_:_:).md) method to change it as needed.
 
 ## Parameters

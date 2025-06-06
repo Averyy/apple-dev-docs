@@ -24,8 +24,6 @@ The code example above gives the CPU access to the counter sample buffer by conf
 
 > **Note**:  The value you set for [`sampleCount`](mtlcountersamplebufferdescriptor/samplecount.md) depends on the type of data you sample and the number of passes you sample that data from.
 
- The value you set for [`sampleCount`](mtlcountersamplebufferdescriptor/samplecount.md) depends on the type of data you sample and the number of passes you sample that data from.
-
 When your app has a counter sample buffer, it can then instruct the GPU to save its counter sample data to it during a pass. See [`Sampling GPU Data into Counter Sample Buffers`](sampling-gpu-data-into-counter-sample-buffers.md) for more information.
 
 ## See Also
@@ -42,4 +40,4 @@ When your app has a counter sample buffer, it can then instruct the GPU to save 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass)*

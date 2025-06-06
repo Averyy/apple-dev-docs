@@ -25,8 +25,6 @@ You can make multiple resources  (available in GPU memory) for the remaining dur
 
 > **Note**:  You don’t need to call this method if you bind a resource to a shader stage.
 
- You don’t need to call this method if you bind a resource to a shader stage.
-
 For example, you can explicitly bind resources for the vertex stage with the methods in the [`Vertex Shader Resource Preparation Commands`](vertex-shader-resource-preparation-commands.md) collection.
 
 The method also informs Metal when to apply hazard tracking for the resources you create with [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md). For resources you create with [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md), you need to apply an [`MTLFence`](mtlfence.md) or an [`MTLEvent`](mtlevent.md) to account for potential reading and writing hazards.

@@ -1,6 +1,6 @@
 # Addressing architectural differences in your macOS code
 
-**Framework**: Apple silicon
+**Framework**: Apple Silicon
 
 Fix problems that stem from architectural differences between Apple silicon and Intel-based Mac computers.
 
@@ -38,8 +38,6 @@ macOS includes numerous synchronization primitives:
 If you use lockless algorithms or custom synchronization techniques, consider replacing them with system-provided primitives. If you’re not able to adopt the system primitives, validate the correctness of your custom code on Apple silicon before deploying it in your binary.
 
 > **Note**: Use the thread sanitizer to detect data races and identify places where your code requires synchronization. For more information, see [`Diagnosing memory, thread, and crash issues early`](https://developer.apple.com/documentation/Xcode/diagnosing-memory-thread-and-crash-issues-early).
-
-Use the thread sanitizer to detect data races and identify places where your code requires synchronization. For more information, see [`Diagnosing memory, thread, and crash issues early`](https://developer.apple.com/documentation/Xcode/diagnosing-memory-thread-and-crash-issues-early).
 
 ##### Dont Redeclare a Function to Have Variable Parameters
 
@@ -229,8 +227,6 @@ b = 0x80000000 = -21474836548  // The indefinite integer value.
 
 > **Note**: The Swift programming language defines consistent float-to-int conversion behaviors for all CPU architectures.
 
-The Swift programming language defines consistent float-to-int conversion behaviors for all CPU architectures.
-
 If your code converts floating-point numbers to integers, audit your code to make sure that you handle boundary conditions correctly. One way to detect invalid conversions is to run the UBSan tool with the `float-cast-overflow` option selected. To detect implicit conversions by the compiler, enable the `-Wconversion` compiler flag when building your code.
 
 For information about how to use the UBSan tool, see [`Diagnosing memory, thread, and crash issues early`](https://developer.apple.com/documentation/Xcode/diagnosing-memory-thread-and-crash-issues-early).
@@ -264,8 +260,6 @@ BOOL receivedBytes = !!nBytes;
 ```
 
 > **Note**: Enable the `-Wobjc-signed-char-bool-implicit-int-conversion` compiler option to generate warnings for implicit `BOOL` conversions at compile time.
-
-Enable the `-Wobjc-signed-char-bool-implicit-int-conversion` compiler option to generate warnings for implicit `BOOL` conversions at compile time.
 
 ##### Update Just in Time Compilers
 

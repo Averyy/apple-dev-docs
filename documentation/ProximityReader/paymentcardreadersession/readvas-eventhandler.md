@@ -1,6 +1,6 @@
 # readVAS(_:eventHandler:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Presents a sheet to read a loyalty card for Value Added Services (VAS), and returns the loyalty card data.
@@ -25,8 +25,6 @@ A [`VASReadResult`](vasreadresult.md) if the read operation was successful.
 Call this method to read the data from a loyalty card. When you call this method, the system displays UI with instructions on what the person needs to do. This UI remains onscreen until the system reads the person’s card, you cancel the operation, or an error occurs.
 
 > **Note**: This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
-
-This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
 
 ## Parameters
 

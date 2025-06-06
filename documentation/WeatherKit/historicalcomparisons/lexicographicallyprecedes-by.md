@@ -34,11 +34,7 @@ The predicate must be a  over the elements. That is, for any elements `a`, `b`, 
 
 > **Note**: This method implements the mathematical notion of lexicographical ordering, which has no connection to Unicode.  If you are sorting strings to present to the end user, use `String` APIs that perform localized comparison instead.
 
-This method implements the mathematical notion of lexicographical ordering, which has no connection to Unicode.  If you are sorting strings to present to the end user, use `String` APIs that perform localized comparison instead.
-
 > **Note**: O(), where  is the lesser of the length of the sequence and the length of `other`.
-
-O(), where  is the lesser of the length of the sequence and the length of `other`.
 
 ## Parameters
 

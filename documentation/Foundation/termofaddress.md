@@ -28,8 +28,6 @@ Many languages rely on gender for their grammar. Without knowing the subject’s
 
 > **Note**:  Not all terms of address exist in all languages.
 
- Not all terms of address exist in all languages.
-
 For example, to substitute the masculine pronoun , for the neutral pronoun , do the following:
 
 ```swift
@@ -143,4 +141,4 @@ For examples of how to use terms of address, see:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/termofaddress)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/termofaddress)*

@@ -35,8 +35,6 @@ If a customer reports a crash in your app and you don’t have a crash report fo
 
 > **Note**: Crash reports from watchOS are available on the paired iPhone.
 
-Crash reports from watchOS are available on the paired iPhone.
-
 To locate and email crash reports for iOS, iPadOS, tvOS, visionOS, and watchOS apps:
 
 1. Open the Analytics & Improvements section of Settings on the device. See [`Share analytics, diagnostics, and usage information with Apple`](https://developer.apple.comhttps://support.apple.com/en-us/HT202100).
@@ -85,4 +83,4 @@ To access a device’s console logs:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/acquiring-crash-reports-and-diagnostic-logs)*

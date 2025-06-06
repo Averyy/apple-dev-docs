@@ -25,8 +25,6 @@ The class’s delegate object must conform to IKImageBrowserDelegate Protocol pr
 
 > **Note**:  The image browser supports either being hosted in a layer-backed view or using custom layers for its own appearance. Custom layers on the image browser are not supported when the image browser is itself backed by a layer.
 
- The image browser supports either being hosted in a layer-backed view or using custom layers for its own appearance. Custom layers on the image browser are not supported when the image browser is itself backed by a layer.
-
 ## Topics
 
 ### Updating the Display of the Content
@@ -188,4 +186,4 @@ The class’s delegate object must conform to IKImageBrowserDelegate Protocol pr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartz/ikimagebrowserview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Quartz/ikimagebrowserview)*

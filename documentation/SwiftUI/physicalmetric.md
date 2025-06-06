@@ -1,6 +1,6 @@
 # PhysicalMetric
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 Provides access to a value in points that corresponds to the specified physical measurement.
@@ -59,11 +59,7 @@ struct ContentView: View {
 
 > **Note**: [`PhysicalMetricsConverter`](physicalmetricsconverter.md)
 
-[`PhysicalMetricsConverter`](physicalmetricsconverter.md)
-
 > **Note**: [`WorldScalingCompensation`](worldscalingcompensation.md)
-
-[`WorldScalingCompensation`](worldscalingcompensation.md)
 
 ## Topics
 
@@ -101,4 +97,4 @@ struct ContentView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/physicalmetric)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/physicalmetric)*

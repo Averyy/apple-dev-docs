@@ -18,8 +18,6 @@ After you add the Game Controllers capability to your game’s target, Xcode app
 
 > **Note**: The Game Controllers capability is only available to games that target iOS, iPadOS, tvOS, and visionOS.
 
-The Game Controllers capability is only available to games that target iOS, iPadOS, tvOS, and visionOS.
-
 ##### Select the Supported Game Controller Profiles
 
 When you add support for game controllers to your app, you don’t integrate with specific hardware. Instead, you integrate one or more of the game-controller profiles that the [`Game Controller`](https://developer.apple.com/documentation/GameController) framework provides. Each profile maps to a control layout that Apple defines, and that profile describes a set of physical controls that the hardware manufacturer guarantees to be available on the controller.
@@ -54,4 +52,4 @@ For more information, see the video [`Tap into virtual and physical game control
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-game-controllers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-game-controllers)*

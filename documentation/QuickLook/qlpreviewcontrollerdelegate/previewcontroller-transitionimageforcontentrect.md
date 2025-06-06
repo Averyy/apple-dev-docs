@@ -1,6 +1,6 @@
 # previewController(_:transitionImageFor:contentRect:)
 
-**Framework**: Quick Look  
+**Framework**: Quicklook  
 **Kind**: method
 
 Tells the delegate that the system is about to present the preview full screen or dismiss it, and asks for information to provide a smooth transition when zooming.
@@ -24,8 +24,6 @@ A [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object th
 #### Discussion
 
 > **Note**:  Starting with macOS 11, animated transitions are available for Mac apps built with Mac Catalyst. On Mac computers running a version earlier than macOS 11, the system doesn’t call this delegate method.
-
- Starting with macOS 11, animated transitions are available for Mac apps built with Mac Catalyst. On Mac computers running a version earlier than macOS 11, the system doesn’t call this delegate method.
 
 ## Parameters
 

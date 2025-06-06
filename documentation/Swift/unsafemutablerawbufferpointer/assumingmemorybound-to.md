@@ -30,8 +30,6 @@ Use this method when you have a raw buffer to memory that has already been bound
 
 > **Note**: The buffer’s base address must match the alignment of `T` (as reported by `MemoryLayout<T>.alignment`). That is, `Int(bitPattern: self.baseAddress) % MemoryLayout<T>.alignment` must equal zero.
 
-The buffer’s base address must match the alignment of `T` (as reported by `MemoryLayout<T>.alignment`). That is, `Int(bitPattern: self.baseAddress) % MemoryLayout<T>.alignment` must equal zero.
-
 ## Parameters
 
 - `to`: The type   that the memory has already been bound to.

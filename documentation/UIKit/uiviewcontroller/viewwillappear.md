@@ -1,6 +1,6 @@
 # viewWillAppear(_:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Notifies the view controller that its view is about to be added to a view hierarchy.
@@ -31,8 +31,6 @@ This method is called before the view controller’s view is about to be added t
 For more information about the how views are added to view hierarchies by a view controller, and the sequence of messages that occur, see [`Supporting Accessibility`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/SupportingAccessibility.html#//apple_ref/doc/uid/TP40007457-CH12).
 
 > **Note**:  If a view controller is presented by a view controller inside of a popover, this method is not invoked on the presenting view controller after the presented controller is dismissed.
-
- If a view controller is presented by a view controller inside of a popover, this method is not invoked on the presenting view controller after the presented controller is dismissed.
 
 ## Parameters
 

@@ -18,11 +18,7 @@ As shown in the image below, the Security Server is a daemon running in the oper
 
 > **Note**:  For a simplified, class-based version of this API, consider using the [`SFAuthorization`](https://developer.apple.com/documentation/SecurityFoundation/SFAuthorization) class instead. When you need a user interface that enables display and control of the current authorization state for a particular set of rights, use the [`SFAuthorizationView`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationView) class.
 
- For a simplified, class-based version of this API, consider using the [`SFAuthorization`](https://developer.apple.com/documentation/SecurityFoundation/SFAuthorization) class instead. When you need a user interface that enables display and control of the current authorization state for a particular set of rights, use the [`SFAuthorizationView`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationView) class.
-
 > ❗ **Important**:  The Authorization Services API is not supported within an App Sandbox because the API allows privilege escalation.
-
- The Authorization Services API is not supported within an App Sandbox because the API allows privilege escalation.
 
 ## Topics
 
@@ -91,4 +87,4 @@ As shown in the image below, the Security Server is a daemon running in the oper
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/authorization-services)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/authorization-services)*

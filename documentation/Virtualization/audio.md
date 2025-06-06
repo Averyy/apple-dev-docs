@@ -10,8 +10,6 @@ If your app can configure an audio input device, you must set an [`NSMicrophoneU
 
 > **Note**:  To enable VIRTIO sound support in Linux guests, configure sound support in the kernel using the `CONFIG_SND_VIRTIO` kernel parameter.
 
- To enable VIRTIO sound support in Linux guests, configure sound support in the kernel using the `CONFIG_SND_VIRTIO` kernel parameter.
-
 You can add audio support to your guest with just a few lines of code. The example below shows how to configure a VM to expose a VIRTIO sound device that consists of an audio input and output on the guest that the system bridges to the host machine’s speakers and microphone:
 
 ## Topics
@@ -66,4 +64,4 @@ You can add audio support to your guest with just a few lines of code. The examp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/audio)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/audio)*

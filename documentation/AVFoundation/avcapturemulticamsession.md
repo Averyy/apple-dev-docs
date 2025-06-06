@@ -1,6 +1,6 @@
 # AVCaptureMultiCamSession
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: class
 
 A capture session that supports simultaneous capture from multiple inputs of the same media type.
@@ -25,8 +25,6 @@ The session preset for a multicamera session is always [`inputPriority`](avcaptu
 You can dynamically enable and disable this session’s individual camera inputs without interrupting capture preview. To stop an individual camera, disable all of its connections or connected ports. The camera then stops streaming data to save power and bandwidth. Other inputs that are streaming data through the session are unaffected.
 
 > **Note**:  If your app only needs to capture from a single camera at a time, use [`AVCaptureSession`](avcapturesession.md) instead.
-
- If your app only needs to capture from a single camera at a time, use [`AVCaptureSession`](avcapturesession.md) instead.
 
 ## Topics
 
@@ -75,4 +73,4 @@ You can dynamically enable and disable this session’s individual camera inputs
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avcapturemulticamsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avcapturemulticamsession)*

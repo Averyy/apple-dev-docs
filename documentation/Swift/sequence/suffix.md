@@ -34,8 +34,6 @@ print(numbers.suffix(10))
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## Parameters
 
 - `maxLength`: The maximum number of elements to return. The   value of   must be greater than or equal to zero.

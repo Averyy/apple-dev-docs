@@ -15,8 +15,6 @@ Pace rendering with minimal input latency while providing essential information 
 
 > **Note**: This sample code project is associated with WWDC23 session 10123: [`Bring your game to Mac: Make a game plan`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10123/).
 
-This sample code project is associated with WWDC23 session 10123: [`Bring your game to Mac: Make a game plan`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10123/).
-
 ## See Also
 
 - [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
@@ -49,4 +47,4 @@ This sample code project is associated with WWDC23 session 10123: [`Bring your g
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/achieving-smooth-frame-rates-with-metal-s-display-link)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/achieving-smooth-frame-rates-with-metal-s-display-link)*

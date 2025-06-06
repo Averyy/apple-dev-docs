@@ -1,6 +1,6 @@
 # AGL
 
-**Framework**: AGL
+**Framework**: Agl
 
 Create and manage OpenGL rendering contexts for use in macOS, and perform operations on drawable objects.
 
@@ -9,8 +9,6 @@ Create and manage OpenGL rendering contexts for use in macOS, and perform operat
 To use AGL from the Carbon framework, your application must link to both the AGL and the OpenGL (`OpenGL/OpenGL.h`) frameworks.
 
 > **Note**:  This document was previously titled .
-
- This document was previously titled .
 
 ## Topics
 
@@ -43,4 +41,4 @@ To use AGL from the Carbon framework, your application must link to both the AGL
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/agl/agl-collection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AGL/agl-collection)*

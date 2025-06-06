@@ -1,14 +1,12 @@
 # Adding an Apple Pay Later visual merchandising widget
 
-**Framework**: Apple Pay on the Web
+**Framework**: Applepayontheweb
 
 Configure and style Apple Pay Later visual merchandising widgets to match your website.
 
 #### Overview
 
 > **Note**:  Apple Pay Later is deprecated.
-
- Apple Pay Later is deprecated.
 
 In iOS and iPadOS 16.4 and later, Apple Pay on the Web provides a variety of Apple Pay merchandising widget types that you can use on your website. You can specify the Apple Pay merchandising widget style, type, and localization using attributes that you supply to a JavaScript function that displays the widget.
 
@@ -60,4 +58,4 @@ For sizing requirements for the Apple Pay Later visual merchandising widget, alo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/adding-an-apple-pay-later-visual-merchandising-widget)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/adding-an-apple-pay-later-visual-merchandising-widget)*

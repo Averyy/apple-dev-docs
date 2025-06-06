@@ -30,8 +30,6 @@ In iOS 17 and macOS 14 and later, VisionKit identifies subjects within an image 
 
 > **Note**: In macOS 14 and later, macOS apps built with Mac Catalyst support the [`ImageAnalyzer`](imageanalyzer.md) and [`ImageAnalysisInteraction`](imageanalysisinteraction.md) classes.
 
-In macOS 14 and later, macOS apps built with Mac Catalyst support the [`ImageAnalyzer`](imageanalyzer.md) and [`ImageAnalysisInteraction`](imageanalysisinteraction.md) classes.
-
 ## Topics
 
 ### Content recognition and interaction in images

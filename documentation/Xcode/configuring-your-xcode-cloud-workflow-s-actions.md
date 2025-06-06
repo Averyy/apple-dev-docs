@@ -40,8 +40,6 @@ When Xcode Cloud performs an action, it:
 
 > **Note**: Xcode Cloud performs each action separately in a temporary build environment. As a result, an action’s artifacts might not be available to other actions. For example, a test action’s test result bundle isn’t available to other actions.
 
-Xcode Cloud performs each action separately in a temporary build environment. As a result, an action’s artifacts might not be available to other actions. For example, a test action’s test result bundle isn’t available to other actions.
-
 ##### Add an Action to a Workflow
 
 To add an action to a workflow, first open or create a workflow in Xcode or in the Xcode Cloud tab on the [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com) website. Click the Add button (+) next to Actions, choose an action, enter required information, choose from available settings, and save the workflow. Then, manually start a new build or wait for Xcode Cloud to start a new build.
@@ -76,8 +74,6 @@ Verifying a change by running your tests is another key task of a CI/CD practice
 
 > **Note**: Adding a test action builds your app or framework for testing. You don’t need to add a build action to run your tests.
 
-Adding a test action builds your app or framework for testing. You don’t need to add a build action to run your tests.
-
 To add a test action to a workflow:
 
 1. Open or create a workflow in Xcode or in the Xcode Cloud tab on the [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com) website.
@@ -94,8 +90,6 @@ The following screenshot shows an Xcode Cloud workflow for the [`Fruta app`](htt
 A test action runs in two separate phases: In the first phase, Xcode Cloud accesses your source code and creates test products using the `xcodebuild build-for-testing` command. In the second phase, Xcode Cloud uses the test products it creates in the first phase to run your tests using the `xcodebuild test-without-building` command.
 
 > **Note**: The source code isn’t available when Xcode Cloud runs your tests in the second phase.
-
-The source code isn’t available when Xcode Cloud runs your tests in the second phase.
 
 When Xcode Cloud completes the test action, it makes test products and the result bundle with the test results available as artifacts.
 
@@ -134,4 +128,4 @@ When Xcode Cloud performs the archive action, it accesses your code and runs the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-your-xcode-cloud-workflow-s-actions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-your-xcode-cloud-workflow-s-actions)*

@@ -1,6 +1,6 @@
 # MLImageClassifier.FeatureExtractorType.scenePrint(revision:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: case
 
 A feature extractor trained on millions of images.
@@ -25,8 +25,6 @@ case scenePrint(revision: Int?)
 #### Discussion
 
 > **Note**: The case’s associated value indicates which revision of the feature extractor to use. Set this to 1 when creating a scene print feature extractor.
-
-The case’s associated value indicates which revision of the feature extractor to use. Set this to 1 when creating a scene print feature extractor.
 
 The scene print feature extractor works best with images of real world objects because it trained on millions of such images. Scene print is not suitable for character recognition, because the input images are highly binary in nature (pixels are either on or off).
 

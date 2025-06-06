@@ -1,6 +1,6 @@
 # Atoms
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 The basic data unit in a QuickTime file is the atom.
 
@@ -9,8 +9,6 @@ The basic data unit in a QuickTime file is the atom.
 The basic data unit in a QuickTime file is the atom. Each atom contains size and type fields that precede any other data. The size field indicates the total number of bytes in the atom, including the size and type fields. The type field specifies the type of data stored in the atom and, by implication, the format of that data. In some cases, the size and type fields are followed by a version field and a flags field. An atom with these version and flags fields is sometimes called a .
 
 > **Note**: An atom, as this documentation describes, is functionally identical to a , as the ISO specifications describe for MPEG-4 and Motion JPEG-2000. An atom that includes version and flags fields is functionally identical to a  as those specifications define.
-
-An atom, as this documentation describes, is functionally identical to a , as the ISO specifications describe for MPEG-4 and Motion JPEG-2000. An atom that includes version and flags fields is functionally identical to a  as those specifications define.
 
 Atom types are specified by a 32-bit unsigned integer, typically interpreted as a four-character ASCII code. Apple, Inc. reserves all four-character codes consisting entirely of lowercase letters. Unless otherwise stated, all data in a QuickTime movie is stored in big-endian byte ordering, also known as network byte ordering, in which the most significant bytes are stored and transmitted first.
 
@@ -51,8 +49,6 @@ The following figure shows how to calculate the size of an atom.
 
 > ⚠️ **Warning**: The internal structure of a given type of atom can change when a new version is introduced. Always check the version field, if one exists. Never attempt to interpret data that falls outside of the atom, as defined by the Size or Extended Size fields.
 
-The internal structure of a given type of atom can change when a new version is introduced. Always check the version field, if one exists. Never attempt to interpret data that falls outside of the atom, as defined by the Size or Extended Size fields.
-
 When the `size` field contains the actual size of the atom, the `extended size` field is not present. This means that when a QuickTime atom is modified by adding data, and its size crosses the 2^32 byte limit, there is no `extended size` field in which to record the new atom size. Consequently, it is not always possible to enlarge an atom beyond 2^32 bytes without copying its contents to a new atom.
 
 To prevent this inconvenience, media data atoms are typically created with a 64-bit placeholder atom immediately preceding them in the movie file. The placeholder atom has a type of `kWideAtomPlaceholderType` (`'wide'`).
@@ -62,8 +58,6 @@ Much like a `'free'` or `'skip'` atom, the `'wide'` atom is reserved space, but 
 The `'wide'` atom is exactly 8 bytes in size, and consists solely of its `size` and `type` fields. It contains no other data.
 
 > **Note**: A common error is thinking that the `'wide'` atom contains the extended size. The `'wide'` atom is merely a placeholder that can be overwritten if necessary, by an atom header containing an `extended size` field.
-
-A common error is thinking that the `'wide'` atom contains the extended size. The `'wide'` atom is merely a placeholder that can be overwritten if necessary, by an atom header containing an `extended size` field.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # register(_:forIdentifier:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Registers a NIB for the specified identifier, so that view-based table views can use it to instantiate views.
@@ -22,8 +22,6 @@ Use this method to associate one of the NIB’s cell views with `identifier` so 
 Because a NIB can contain multiple views, you can associate the same NIB with multiple identifiers. To remove a previously associated NIB for `identifier`, pass in `nil` for the `nib` value.
 
 > **Note**:  This method applies only to [`NSView`](nsview.md)-based table views.
-
- This method applies only to [`NSView`](nsview.md)-based table views.
 
 ## Parameters
 

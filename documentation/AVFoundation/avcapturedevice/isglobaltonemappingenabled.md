@@ -1,6 +1,6 @@
 # isGlobalToneMappingEnabled
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the device should use global tone mapping.
@@ -32,8 +32,6 @@ This property resets to its default value of [`false`](https://developer.apple.c
 Key-value observe this property to observe automatic changes to its value.
 
 > **Note**:  When you enable global tone mapping, an [`AVCapturePhotoOutput`](avcapturephotooutput.md) object connected to the device input’s session disables all forms of still image fusion, resulting in still images with no automatic stabilization applied.
-
- When you enable global tone mapping, an [`AVCapturePhotoOutput`](avcapturephotooutput.md) object connected to the device input’s session disables all forms of still image fusion, resulting in still images with no automatic stabilization applied.
 
 
 ---

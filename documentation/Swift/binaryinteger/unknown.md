@@ -38,8 +38,6 @@ let allOnes = ~UInt8.min   // 0b11111111
 
 > **Note**: O(1).
 
-O(1).
-
 ## See Also
 
 - [static func & (Self, Self) -> Self](binaryinteger/&(_:_:).md)

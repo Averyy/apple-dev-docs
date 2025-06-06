@@ -1,6 +1,6 @@
 # init(input:configuration:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates a session from a specified directory of images.
@@ -22,8 +22,6 @@ convenience init(input: URL, configuration: PhotogrammetrySession.Configuration 
 Creates a new session instance using all images in the specified [`URL`](https://developer.apple.com/documentation/Foundation/URL) input directory [`URL`](https://developer.apple.com/documentation/Foundation/URL) as samples for reconstruction.
 
 > **Note**: If `input` is not a file [`URL`](https://developer.apple.com/documentation/Foundation/URL).
-
-If `input` is not a file [`URL`](https://developer.apple.com/documentation/Foundation/URL).
 
 ## Parameters
 

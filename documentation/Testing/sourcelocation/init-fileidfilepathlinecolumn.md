@@ -1,6 +1,6 @@
 # init(fileID:filePath:line:column:)
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: init
 
 Initialize an instance of this type with the specified location details.
@@ -26,15 +26,9 @@ init(fileID: String, filePath: String, line: Int, column: Int)
 
 > **Note**: `fileID` must not be empty and must be formatted as described in the documentation for [`#fileID`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fileID()).
 
-`fileID` must not be empty and must be formatted as described in the documentation for [`#fileID`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fileID()).
-
 > **Note**: `line` must be greater than `0`.
 
-`line` must be greater than `0`.
-
 > **Note**: `column` must be greater than `0`.
-
-`column` must be greater than `0`.
 
 ## Parameters
 

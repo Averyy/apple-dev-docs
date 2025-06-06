@@ -1,6 +1,6 @@
 # minimumGrade(forFacts:)
 
-**Framework**: GameplayKit  
+**Framework**: Gameplaykit  
 **Kind**: method
 
 Returns the lowest membership grade among the specified facts.
@@ -28,8 +28,6 @@ The lowest membership grade in the array of facts.
 In fuzzy logic, this method is called the AND Zadeh operator, because it corresponds to the AND operator in Boolean logic.
 
 > **Note**:  If a fact is not in the [`facts`](gkrulesystem/facts.md) array, its membership grade for purposes of this operation is implicitly zero.
-
- If a fact is not in the [`facts`](gkrulesystem/facts.md) array, its membership grade for purposes of this operation is implicitly zero.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # saturation(_:)
 
-**Framework**: ManagedAppDistribution  
+**Framework**: Managedappdistribution  
 **Kind**: method
 
 Adjusts the color saturation of this view.
@@ -46,8 +46,6 @@ struct Saturation: View {
 ```
 
 > **Note**: `contrast(_:)`
-
-`contrast(_:)`
 
 ## Parameters
 

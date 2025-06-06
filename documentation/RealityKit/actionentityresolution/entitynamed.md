@@ -1,6 +1,6 @@
 # ActionEntityResolution.entityNamed(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: case
 
 An option that resolves an entity from the specified name within the scene of the entity playing the action.
@@ -21,8 +21,6 @@ case entityNamed(String)
 #### Discussion
 
 > **Note**: Consider unique entity names when resolving with this option.
-
-Consider unique entity names when resolving with this option.
 
 
 ---

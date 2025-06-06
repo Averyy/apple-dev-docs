@@ -1,6 +1,6 @@
 # load(fromContents:ofType:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Loads the document data into the app’s data model.
@@ -23,10 +23,6 @@ func load(fromContents contents: Any, ofType typeName: String?) throws
 Override this method to accept and load the data for a document. After `UIDocument` reads the document data from the file located at [`fileURL`](uidocument/fileurl.md) it calls your subclass, passing the data to the subclass in this method. This method is called on the queue that the [`open(completionHandler:)`](uidocument/open(completionhandler:).md) method was called on (typically, the main queue).
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

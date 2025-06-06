@@ -1,6 +1,6 @@
 # onshippingcontactselected
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 An event handler to call when the user selects a shipping contact in the payment sheet.
@@ -44,10 +44,6 @@ Listing 1. An example of redacted shipping contact information
 ```
 
 > **Note**:  The data returned may differ based on the user’s geographic region. For Canada and United Kingdom, a redacted shipping address excludes the  last three characters of the postal code.  For US addresses, the redacted zip code contains the first five digits. The full postal code is provided after the user authorizes the transaction.
-
- The data returned may differ based on the user’s geographic region. For Canada and United Kingdom, a redacted shipping address excludes the  last three characters of the postal code.  For US addresses, the redacted zip code contains the first five digits.
-
-The full postal code is provided after the user authorizes the transaction.
 
 ## See Also
 

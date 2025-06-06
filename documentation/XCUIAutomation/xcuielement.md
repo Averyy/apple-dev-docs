@@ -28,8 +28,6 @@ In macOS and iPadOS 15 and later, [`XCUIElement`](xcuielement.md) provides a way
 
 > **Note**:  [`XCUIElement`](xcuielement.md) adopts the [`XCUIElementAttributes`](xcuielementattributes.md) protocol, which provides additional properties for querying the current state of a UI element’s attributes.
 
- [`XCUIElement`](xcuielement.md) adopts the [`XCUIElementAttributes`](xcuielementattributes.md) protocol, which provides additional properties for querying the current state of a UI element’s attributes.
-
 ## Topics
 
 ### Querying element state
@@ -182,4 +180,4 @@ In macOS and iPadOS 15 and later, [`XCUIElement`](xcuielement.md) provides a way
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuielement)*
+*[View on Apple Developer](https://developer.apple.com/documentation/XCUIAutomation/xcuielement)*

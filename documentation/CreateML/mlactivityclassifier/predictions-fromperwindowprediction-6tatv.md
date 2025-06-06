@@ -1,6 +1,6 @@
 # predictions(from:perWindowPrediction:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Predict activities from new observations.
@@ -21,8 +21,6 @@ An array of predicted class names.
 #### Discussion
 
 > **Note**: `MLCreateError.type` if `testingData` format is invalid.
-
-`MLCreateError.type` if `testingData` format is invalid.
 
 ## Parameters
 

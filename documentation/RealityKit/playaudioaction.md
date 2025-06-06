@@ -1,6 +1,6 @@
 # PlayAudioAction
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 An action which plays an audio resource on the given target entity.
@@ -50,11 +50,7 @@ entity.playAnimation(snapAudioAnimation)
 
 > **Note**: If [`useControlledPlayback`](playaudioaction/usecontrolledplayback.md) is set to `true`, the animation will play for the duration of the action. Set the duration of the action to match the length of the audio being played to ensure the entire audio plays.
 
-If [`useControlledPlayback`](playaudioaction/usecontrolledplayback.md) is set to `true`, the animation will play for the duration of the action. Set the duration of the action to match the length of the audio being played to ensure the entire audio plays.
-
 > ❗ **Important**: This action does not directly animate a bound property, such as [`BindTarget.transform`](bindtarget/transform.md).
-
-This action does not directly animate a bound property, such as [`BindTarget.transform`](bindtarget/transform.md).
 
 ## Topics
 
@@ -112,4 +108,4 @@ This action does not directly animate a bound property, such as [`BindTarget.tra
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/playaudioaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/playaudioaction)*

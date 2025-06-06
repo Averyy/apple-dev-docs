@@ -1,6 +1,6 @@
 # tableView(_:willDisplayCell:for:row:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Tells the delegate that the table view will display the specified cell at the specified row and column.
@@ -22,8 +22,6 @@ The delegate can modify the display attributes of `aCell` to alter the appearanc
 Because `aCell` is reused for every row in `aTableColumn`, the delegate must set the display attributes both when drawing special cells and when drawing standard cells.
 
 > **Note**:  The implementation of this method must not draw portions of the cell. It should only alter the state of the passed-in cell.
-
- The implementation of this method must not draw portions of the cell. It should only alter the state of the passed-in cell.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # AVAudioSession
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: class
 
 An object that communicates to the system how you intend to use audio in your app.
@@ -57,8 +57,6 @@ func configureAudioSession() {
 The audio session uses this configuration when you activate the session using the [`setActive:error:`](avaudiosession/setactive:error:.md) or [`setActive(_:options:)`](avaudiosession/setactive(_:options:).md) method.
 
 > **Note**:  You can activate the audio session at any time after setting its category, but it’s generally preferable to defer this call until your app begins audio playback. Deferring the call ensures that you won’t prematurely interrupt any other background audio that may be in progress.
-
- You can activate the audio session at any time after setting its category, but it’s generally preferable to defer this call until your app begins audio playback. Deferring the call ensures that you won’t prematurely interrupt any other background audio that may be in progress.
 
 ## Topics
 
@@ -256,4 +254,4 @@ The audio session uses this configuration when you activate the session using th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/avaudiosession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/avaudiosession)*

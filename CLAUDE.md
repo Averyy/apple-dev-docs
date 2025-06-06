@@ -30,13 +30,13 @@ curl -H 'If-None-Match: W/"399a0f24205d58c9443159732da8989a"' ...
 # Returns 304 Not Modified if unchanged, or 200 with new content if updated
 ```
 
-This means after initial scraping with ETag collection, we can check all ~45K documents for changes in ~10 minutes using just HEAD requests!
+This means after initial scraping with ETag collection, we can check all 278K documents for changes efficiently using just HEAD requests!
 
 ### Actual Project Size (Production Data):
-- **Documentation files**: ~45K files (180MB total on disk)
-- **ETag storage**: Single JSON file (~9-10MB) - easily fits in GitHub
-- **Vectorstore size**: ~1.6GB (must be generated on deploy, too large for GitHub)
-- **Initial embeddings cost**: ~$5 one-time per server
+- **Documentation files**: 278,778 files (1.17GB total on disk)
+- **ETag storage**: Single JSON file - easily fits in GitHub
+- **Vectorstore size**: ~1.1GB (BGE-M3 1024 dimensions)
+- **Initial embeddings cost**: $0 (local TEI server)
 
 ### ETag Storage Strategy:
 Using a single `/data/metadata/etags.json` file containing all ETags:
@@ -47,7 +47,7 @@ Using a single `/data/metadata/etags.json` file containing all ETags:
 - Matches existing single-file patterns (frameworks list, progress tracking)
 
 ## Project Mission
-Create a comprehensive Python scraper to mirror Apple's entire developer documentation ecosystem (340+ frameworks, 100,000+ pages) for Context7 integration, enabling natural language queries like "apple swiftui" or "apple metal" to retrieve accurate, up-to-date documentation.
+Create a comprehensive Python scraper to mirror Apple's entire developer documentation ecosystem (340+ frameworks, 278,778 pages) with local MCP server integration, enabling natural language queries to retrieve accurate, up-to-date Apple developer documentation.
 
 ## Claude Guidelines
 

@@ -30,8 +30,6 @@ All delegate method calls and completion handlers related to the session are per
 
 > **Note**:  This queue must be set at object creation time and may not be changed.
 
- This queue must be set at object creation time and may not be changed.
-
 ## See Also
 
 - [var delegate: (any URLSessionDelegate)?](urlsession/delegate.md)

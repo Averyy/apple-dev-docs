@@ -1,6 +1,6 @@
 # Running your iOS apps in macOS
 
-**Framework**: Apple silicon
+**Framework**: Apple Silicon
 
 Modernize the iOS apps you choose to run on a Mac with Apple silicon, or opt out of running on a Mac altogether.
 
@@ -15,8 +15,6 @@ Although there is no porting process, consider updating your code anyway to prov
 In some cases, you might choose to prevent your app from running in macOS altogether. For example, if you already have a macOS app, or your app relies on features available only on iOS devices, you can choose not to run your app in macOS.
 
 > **Note**: Although you can run your iOS apps unmodified on a Mac with Apple silicon, Mac Catalyst lets you build your app specifically for macOS and customize your app’s behavior on that platform. Mac Catalyst also supports deployment on both Apple silicon and Intel-based Mac computers. For more information about how to build your app with Mac Catalyst, see [`Mac Catalyst`](https://developer.apple.com/documentation/UIKit/mac-catalyst).
-
-Although you can run your iOS apps unmodified on a Mac with Apple silicon, Mac Catalyst lets you build your app specifically for macOS and customize your app’s behavior on that platform. Mac Catalyst also supports deployment on both Apple silicon and Intel-based Mac computers. For more information about how to build your app with Mac Catalyst, see [`Mac Catalyst`](https://developer.apple.com/documentation/UIKit/mac-catalyst).
 
 ##### Determine Whether Your App Makes Sense in Macos
 
@@ -46,8 +44,6 @@ Some iOS features make it easier for your app to run in macOS and improve the ov
 - Use standard gesture recognizers for pinch, scroll, rotate, and zoom effects. The standard gesture recognizers map automatically to appropriate gestures in macOS.
 
 > **Note**: If you design your iPad app for a full-screen experience (for instance, your app is a game), you can add the keys [`UILaunchToFullScreenByDefaultOnMac`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchToFullScreenByDefaultOnMac) and [`UISupportsTrueScreenSizeOnMac`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsTrueScreenSizeOnMac) to your app’s `Info.plist` file to provide a pixel-perfect, edge-to-edge, full-screen experience when the app runs on a Mac.
-
-If you design your iPad app for a full-screen experience (for instance, your app is a game), you can add the keys [`UILaunchToFullScreenByDefaultOnMac`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchToFullScreenByDefaultOnMac) and [`UISupportsTrueScreenSizeOnMac`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsTrueScreenSizeOnMac) to your app’s `Info.plist` file to provide a pixel-perfect, edge-to-edge, full-screen experience when the app runs on a Mac.
 
 ##### Audit Your Code to Handle Environment Differences
 

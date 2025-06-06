@@ -1,6 +1,6 @@
 # Screen Saver
 
-**Framework**: Screen Saver  
+**Framework**: Screensaver  
 **Kind**: module
 
 Animate screen savers, and interact with the screen saver infrastructure.
@@ -32,8 +32,6 @@ When macOS starts your screen saver, the system:
 When the user takes some action, the system calls your view’s [`stopAnimation()`](screensaverview/stopanimation().md) method to stop your screen saver. Use that method to clean up any state information you establish in your [`startAnimation()`](screensaverview/startanimation().md) method.
 
 > **Note**:  The [`stopAnimation()`](screensaverview/stopanimation().md) or [`startAnimation()`](screensaverview/startanimation().md) methods don’t immediately start or stop the animations. The system can still call your [`animateOneFrame()`](screensaverview/animateoneframe().md) method after calling [`stopAnimation()`](screensaverview/stopanimation().md).
-
- The [`stopAnimation()`](screensaverview/stopanimation().md) or [`startAnimation()`](screensaverview/startanimation().md) methods don’t immediately start or stop the animations. The system can still call your [`animateOneFrame()`](screensaverview/animateoneframe().md) method after calling [`stopAnimation()`](screensaverview/stopanimation().md).
 
 ## Topics
 

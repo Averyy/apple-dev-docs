@@ -1,6 +1,6 @@
 # openInMaps(launchOptions:)
 
-**Framework**: MapKit  
+**Framework**: Mapkit  
 **Kind**: method
 
 Opens the Maps app and displays the map item.
@@ -30,8 +30,6 @@ You use this method to pass the map item to the Maps app. If your map item conta
 If you specify the [`MKLaunchOptionsDirectionsModeKey`](mklaunchoptionsdirectionsmodekey.md) option in the `launchOptions` dictionary, the Maps app interprets that as an attempt to map from the user’s current location to the location that the map item specifies.
 
 > **Note**:  This is a blocking call and the system suspends interaction with your app until the Maps app finishes launching.
-
- This is a blocking call and the system suspends interaction with your app until the Maps app finishes launching.
 
 If you don’t include the [`MKLaunchOptionsMapCenterKey`](mklaunchoptionsmapcenterkey.md) and [`MKLaunchOptionsMapSpanKey`](mklaunchoptionsmapspankey.md) keys in your `launchOptions` dictionary, the Maps app constructs a region around the map item. It uses that region to set the visible portion of the map.
 

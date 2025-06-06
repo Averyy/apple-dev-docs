@@ -1,6 +1,6 @@
 # Building missing contexts
 
-**Framework**: ClassKit
+**Framework**: Classkit
 
 Create and initialize missing contexts.
 
@@ -63,8 +63,6 @@ Once you create and configure the context, you simply return it to the data stor
 
 > **Note**:  It’s possible to build a context hierarchy without using the delegate protocol by initializing [`CLSContext`](clscontext.md) instances and manually assigning them as children of other contexts, starting with the app’s main context at the root. But a context hierarchy might already exist in the local data store from a previous launch of your app. Rebuilding generates needless network traffic while the updates are synchronized through iCloud. By using a data store delegate, you only create new contexts when they aren’t already in the data store.
 
- It’s possible to build a context hierarchy without using the delegate protocol by initializing [`CLSContext`](clscontext.md) instances and manually assigning them as children of other contexts, starting with the app’s main context at the root. But a context hierarchy might already exist in the local data store from a previous launch of your app. Rebuilding generates needless network traffic while the updates are synchronized through iCloud. By using a data store delegate, you only create new contexts when they aren’t already in the data store.
-
 ## See Also
 
 - [var delegate: (any CLSDataStoreDelegate)?](clsdatastore/delegate.md)
@@ -75,4 +73,4 @@ Once you create and configure the context, you simply return it to the data stor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/building-missing-contexts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/building-missing-contexts)*

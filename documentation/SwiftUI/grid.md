@@ -1,6 +1,6 @@
 # Grid
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A container view that arranges other views in a two dimensional layout.
@@ -43,8 +43,6 @@ A grid and its rows behave something like a collection of [`HStack`](hstack.md) 
 ![A screenshot of items arranged in a grid. The upper-left](https://docs-assets.developer.apple.com/published/6ce3d6ec21845fdf9aab2ca5cbe95f03/Grid-1-iOS%402x.png)
 
 > **Note**: If you need a grid that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`GridLayout`](gridlayout.md) instead.
-
-If you need a grid that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`GridLayout`](gridlayout.md) instead.
 
 ##### Multicolumn Cells
 
@@ -160,4 +158,4 @@ Lazy grids render their cells when SwiftUI needs to display them, rather than al
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/grid)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/grid)*

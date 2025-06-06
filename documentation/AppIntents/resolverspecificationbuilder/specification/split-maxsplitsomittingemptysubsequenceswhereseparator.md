@@ -1,6 +1,6 @@
 # split(maxSplits:omittingEmptySubsequences:whereSeparator:)
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: method
 
 Returns the longest possible subsequences of the sequence, in order, that don’t contain elements satisfying the given predicate. Elements that are used to split the sequence are not returned as part of any subsequence.
@@ -56,8 +56,6 @@ print(
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

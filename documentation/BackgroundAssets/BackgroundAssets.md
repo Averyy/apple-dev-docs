@@ -1,6 +1,6 @@
 # Background Assets
 
-**Framework**: Background Assets  
+**Framework**: Backgroundassets  
 **Kind**: module
 
 Schedule background downloads of large assets during or after app installation, when the app updates, and periodically while the app remains on-device.
@@ -21,13 +21,9 @@ With the Background Assets framework, you can improve the experience of your app
 
 > **Note**:  For compatible iPad and iPhone apps, Background Assets is available in visionOS 1.0 and later. For apps built for visionOS, Background Assets is available in visionOS 2.4 and later.
 
- For compatible iPad and iPhone apps, Background Assets is available in visionOS 1.0 and later. For apps built for visionOS, Background Assets is available in visionOS 2.4 and later.
-
 Add a Background Assets extension to your app’s target, and let the system notify that extension about an app installation or subsequent update. Then use the download manager to schedule background downloads of required content from your servers or content delivery network (CDN), and have those downloads finish even when the app isn’t running. Check for updated content when the system periodically launches the extension (dependent on app usage) and, when content is available, schedule it for immediate download. The framework leverages [`ExtensionKit`](https://developer.apple.com/documentation/ExtensionKit) and common types like [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest). For more information see, 2022 WWDC session 110403: [`Meet Background Assets`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110403/)
 
 > ❗ **Important**:  Use the framework only to download additional assets for your app; don’t use it for any other purposes. For example, don’t collect or transmit data to identify a user or device or to perform advertising or advertising measurement.
-
- Use the framework only to download additional assets for your app; don’t use it for any other purposes. For example, don’t collect or transmit data to identify a user or device or to perform advertising or advertising measurement.
 
 #### The Background Assets Extension Life Cycle
 

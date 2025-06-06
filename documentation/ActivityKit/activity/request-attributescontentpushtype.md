@@ -1,6 +1,6 @@
 # request(attributes:content:pushType:)
 
-**Framework**: ActivityKit  
+**Framework**: Activitykit  
 **Kind**: method
 
 Requests and starts a Live Activity.
@@ -33,8 +33,6 @@ If your Live Activity displays image assets, the system requires them to use a r
 For additional information on starting a Live Activity, see [`Displaying live data with Live Activities`](displaying-live-data-with-live-activities.md).
 
 > **Note**: [`ActivityAuthorizationError`](activityauthorizationerror.md) if the app can’t start a new Live Activity. For example, [`ActivityAuthorizationError.denied`](activityauthorizationerror/denied.md) indicates that the person deactivated Live Activities for the app.
-
-[`ActivityAuthorizationError`](activityauthorizationerror.md) if the app can’t start a new Live Activity. For example, [`ActivityAuthorizationError.denied`](activityauthorizationerror/denied.md) indicates that the person deactivated Live Activities for the app.
 
 ## Parameters
 

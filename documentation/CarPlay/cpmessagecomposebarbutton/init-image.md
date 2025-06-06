@@ -1,6 +1,6 @@
 # init(image:)
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: init
 
 Creates a message compose button that displays a custom image.
@@ -23,8 +23,6 @@ A message compose button with the custom image.
 #### Discussion
 
 > **Note**:  This button type does not use a handler. Instead, tapping this button activates Siri and initiates the compose message flow.
-
- This button type does not use a handler. Instead, tapping this button activates Siri and initiates the compose message flow.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Debugging an Invalid token
 
-**Framework**: Apple Maps Server API
+**Framework**: Applemapsserverapi
 
 Inspect the JavaScript console logs, the token, and events to determine why a token is invalid.
 
@@ -34,8 +34,6 @@ In the above output, you can see that the token has two `kid` headers.
 If you find duplicate headers in your token, review the software that you used to create the key to remove any duplicate headers.
 
 > **Note**:  A token contains additional encrypted fields that aren’t decoded and made visible with the command above.
-
- A token contains additional encrypted fields that aren’t decoded and made visible with the command above.
 
 For more information on how to create a new token, see [`Creating and using tokens with Maps Server API`](creating-and-using-tokens-with-maps-server-api.md).
 
@@ -74,4 +72,4 @@ For more information about MapKit JS events, see [`Handling initialization event
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applemapsserverapi/debugging-an-invalid-token)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleMapsServerAPI/debugging-an-invalid-token)*

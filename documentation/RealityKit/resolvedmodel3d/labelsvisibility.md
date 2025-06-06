@@ -1,6 +1,6 @@
 # labelsVisibility(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Controls the visibility of labels of any controls contained within this view.
@@ -55,8 +55,6 @@ Menu {
 ```
 
 > **Note**: This modifier doesn’t work for all labels. It applies to `LabeledContent` elements, including controls like `Picker` and `Toggle`, but not to controls like a bordered button where the label is inside the button’s border.
-
-This modifier doesn’t work for all labels. It applies to `LabeledContent` elements, including controls like `Picker` and `Toggle`, but not to controls like a bordered button where the label is inside the button’s border.
 
 
 ---

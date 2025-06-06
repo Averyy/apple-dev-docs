@@ -1,6 +1,6 @@
 # AVPlayerItemMetadataOutput
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: class
 
 An object that vends collections of metadata items that a player item’s tracks carry.
@@ -23,8 +23,6 @@ class AVPlayerItemMetadataOutput
 #### Overview
 
 > **Note**:  Setting the value of [`suppressesPlayerRendering`](avplayeritemoutput/suppressesplayerrendering.md) on an instance of `AVPlayerItemMetadataOutput` has no effect.
-
- Setting the value of [`suppressesPlayerRendering`](avplayeritemoutput/suppressesplayerrendering.md) on an instance of `AVPlayerItemMetadataOutput` has no effect.
 
 ## Topics
 
@@ -77,4 +75,4 @@ class AVPlayerItemMetadataOutput
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avplayeritemmetadataoutput)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avplayeritemmetadataoutput)*

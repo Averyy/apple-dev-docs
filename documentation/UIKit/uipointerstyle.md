@@ -1,6 +1,6 @@
 # UIPointerStyle
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that defines the pointer shape and effect.
@@ -23,8 +23,6 @@ class UIPointerStyle
 Whenever possible, match pointer styles to UIKit styles and make them consistent with the visual intent of similar views.
 
 > **Note**:  When supporting the use of Apple Pencil, effect-based styles, such as a pointer style created using [`init(effect:shape:)`](uipointerstyle/init(effect:shape:).md) are fully supported, but shape-based pointer styles created using [`init(shape:constrainedAxes:)`](uipointerstyle/init(shape:constrainedaxes:).md) aren’t.
-
- When supporting the use of Apple Pencil, effect-based styles, such as a pointer style created using [`init(effect:shape:)`](uipointerstyle/init(effect:shape:).md) are fully supported, but shape-based pointer styles created using [`init(shape:constrainedAxes:)`](uipointerstyle/init(shape:constrainedaxes:).md) aren’t.
 
 For more information, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/inputs/pointing-devices/).
 
@@ -70,4 +68,4 @@ For more information, see [`Human Interface Guidelines`](https://developer.apple
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipointerstyle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipointerstyle)*

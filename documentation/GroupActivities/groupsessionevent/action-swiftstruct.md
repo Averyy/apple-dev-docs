@@ -1,6 +1,6 @@
 # GroupSessionEvent.Action
 
-**Framework**: Group Activities  
+**Framework**: Groupactivities  
 **Kind**: struct
 
 A playback-related change that occurs during the session.
@@ -29,8 +29,6 @@ Use this structure to communicate playback-related changes to participants using
 When a change occurs in your custom player or playback queue, create an instance of this structure to describe the change and wrap it in a [`GroupSessionEvent`](groupsessionevent.md) structure. To display the event to the participant call the [`showNotice(_:)`](groupsession/shownotice(_:).md) method of the session. The system formats and displays the information you provide.
 
 > **Note**: If your app uses AV Foundation to play content, you don’t need to communicate transport-related events yourself. AV Foundation generates appropriate events when the user plays, pauses, seeks, or skips tracks.
-
-If your app uses AV Foundation to play content, you don’t need to communicate transport-related events yourself. AV Foundation generates appropriate events when the user plays, pauses, seeks, or skips tracks.
 
 ## Topics
 

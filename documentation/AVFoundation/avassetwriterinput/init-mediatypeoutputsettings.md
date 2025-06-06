@@ -1,6 +1,6 @@
 # init(mediaType:outputSettings:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: init
 
 Creates an input to append sample buffers of the specified type to the output file.
@@ -33,8 +33,6 @@ You must fully specify the audio settings dictionary when using this initializer
 
 > **Note**:  The system doesn’t support specifying a value for [`AVSampleRateConverterAudioQualityKey`](https://developer.apple.com/documentation/AVFAudio/AVSampleRateConverterAudioQualityKey) in audio output settings.
 
- The system doesn’t support specifying a value for [`AVSampleRateConverterAudioQualityKey`](https://developer.apple.com/documentation/AVFAudio/AVSampleRateConverterAudioQualityKey) in audio output settings.
-
 ##### Configuring Video Settings
 
 A video output settings dictionary must request a compressed video format, which means that the value you specify must follow the rules for compressed video output.
@@ -42,8 +40,6 @@ A video output settings dictionary must request a compressed video format, which
 You must fully specify the video settings dictionary when using this initializer, which means you must provide values for the following keys [`AVVideoCodecKey`](avvideocodeckey.md), [`AVVideoWidthKey`](avvideowidthkey.md), [`AVVideoHeightKey`](avvideoheightkey.md).
 
 > **Note**:  Specifying a [`AVVideoScalingModeKey`](avvideoscalingmodekey.md) value of [`AVVideoScalingModeFit`](avvideoscalingmodefit.md) results in an error.
-
- Specifying a [`AVVideoScalingModeKey`](avvideoscalingmodekey.md) value of [`AVVideoScalingModeFit`](avvideoscalingmodefit.md) results in an error.
 
 ## Parameters
 

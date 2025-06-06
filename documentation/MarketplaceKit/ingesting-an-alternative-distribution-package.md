@@ -1,6 +1,6 @@
 # Ingesting an alternative distribution package
 
-**Framework**: MarketplaceKit
+**Framework**: Marketplacekit
 
 Process an available app version from App Store Connect and store it for download from your server.
 
@@ -69,8 +69,6 @@ In the response, navigate to the `data.attributes.url`, which downloads `alterna
 | `signature` | A signature that the device’s operating system uses to verify the package contents. |
 
 > 💡 **Tip**: Save the `alternativeDistributionPackageId` in case you want to query App Store Connect for all alternative distribution package versions outside of a normal `AlternativeDistributionPackageVersionAvailable` notification. For more information, see [`Read alternative distribution package information`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackages-_id_).
-
-Save the `alternativeDistributionPackageId` in case you want to query App Store Connect for all alternative distribution package versions outside of a normal `AlternativeDistributionPackageVersionAvailable` notification. For more information, see [`Read alternative distribution package information`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackages-_id_).
 
 For more information on alternative distribution package workflows, see [`Alternative Distribution Packages`](https://developer.apple.com/documentation/AppStoreConnectAPI/alternative-distribution-packages).
 
@@ -198,8 +196,6 @@ In the response, navigate to the `data.attributes.url`, which refers to an insta
 
 > **Note**: Although an app that resides on App Store Connect might contain binaries for multiple platforms, the alternative distribution package sent to the marketplace only contains variants for the platforms that MarketplaceKit supports. For example, a specific alternative distribution package that a marketplace receives contains only iPhone or iPad variants; it doesn’t contain watch variants.
 
-Although an app that resides on App Store Connect might contain binaries for multiple platforms, the alternative distribution package sent to the marketplace only contains variants for the platforms that MarketplaceKit supports. For example, a specific alternative distribution package that a marketplace receives contains only iPhone or iPad variants; it doesn’t contain watch variants.
-
 The `alternativeDistributionKeyBlob` () has a unique value for each variant. The [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK) requires the key blob during licensing requests. Store the key blob so your licensing service can use it to decrypt the license request payload coming from a device as required to generate an app license for the variant.
 
 #### Download App Deltas
@@ -227,8 +223,6 @@ Example response:
 ```
 
 > ❗ **Important**: When App Store Connect sends a new app version notification, it sends an app distribution package that includes the variants first, followed by another for deltas, if any are available for the app. Deltas arrive an unspecified amount of time after the app’s variants. You don’t need to wait for deltas to arrive before serving the new app to devices. Rather, App Store Connect sends variants first to expedite the app’s availability for customers.
-
-When App Store Connect sends a new app version notification, it sends an app distribution package that includes the variants first, followed by another for deltas, if any are available for the app. Deltas arrive an unspecified amount of time after the app’s variants. You don’t need to wait for deltas to arrive before serving the new app to devices. Rather, App Store Connect sends variants first to expedite the app’s availability for customers.
 
 #### Store the App Data at an Expected Path
 
@@ -297,4 +291,4 @@ The tool’s return value indicates success or failure, so you can branch condit
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/ingesting-an-alternative-distribution-package)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/ingesting-an-alternative-distribution-package)*

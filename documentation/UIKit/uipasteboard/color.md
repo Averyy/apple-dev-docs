@@ -1,6 +1,6 @@
 # color
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The color object of the first pasteboard item.
@@ -23,8 +23,6 @@ var color: UIColor? { get set }
 The value stored in this property is a [`UIColor`](uicolor.md) object. The associated array of representation types is [`typeListColor`](uipasteboard/typelistcolor.md). Setting this property replaces all current items in the pasteboard with the new item. If the first item has no value of the indicated type, `nil` is returned.
 
 > **Note**:  Do not use this property to determine if a pasteboard contains color data. Instead, use the [`hasColors`](uipasteboard/hascolors.md) property.
-
- Do not use this property to determine if a pasteboard contains color data. Instead, use the [`hasColors`](uipasteboard/hascolors.md) property.
 
 ## See Also
 

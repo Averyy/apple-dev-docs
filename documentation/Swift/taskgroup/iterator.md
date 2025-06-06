@@ -37,8 +37,6 @@ for await r in group { print(r) }
 
 > **Note**: `TaskGroup.next()`
 
-`TaskGroup.next()`
-
 ## Topics
 
 ### Instance Methods

@@ -1,6 +1,6 @@
 # autohidesScrollers
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 A Boolean that indicates whether the scroll view automatically hides its scroll bars when they are not needed.
@@ -21,8 +21,6 @@ The horizontal and vertical scroll bars are hidden independently of each other. 
 
 > **Note**:  The `autohidesScrollers` property introduced in OS X v10.3, while still relevant for legacy-style scrollers, does not apply to the automatic hiding behavior of overlay-style scrollers. The property may still be set, but is ignored by a scroll view that’s using overlay scrollers.
 
- The `autohidesScrollers` property introduced in OS X v10.3, while still relevant for legacy-style scrollers, does not apply to the automatic hiding behavior of overlay-style scrollers. The property may still be set, but is ignored by a scroll view that’s using overlay scrollers.
-
 ## See Also
 
 - [var scrollerStyle: NSScroller.Style](nsscrollview/scrollerstyle.md)
@@ -39,4 +37,4 @@ The horizontal and vertical scroll bars are hidden independently of each other. 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsscrollview/autohidesscrollers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsscrollview/autohidesscrollers)*

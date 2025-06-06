@@ -1,6 +1,6 @@
 # Managing Apps and Books Through Web Services
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Associate volume purchases with users or devices using endpoints for Mobile Device Management (MDM), provided by the Volume Purchase Program (VPP).
 
@@ -49,8 +49,6 @@ If this field is present in the response, it should serve as a reminder that it 
 You can tailor different sets of privileges for individual content managers using Managed Apple IDs. This allows a fine range of control over what these users can do. For example, a content manager that only has the “Read Only” privileges can use the [`Get a User`](get-a-user.md), [`Get Users`](get-users-5boi1.md), and [`Get Assets`](get-assets-44p83.md) endpoints, but can’t use the [`Retire a User`](retire-a-user.md) or [`Manage Licenses`](manage-licenses.md) endpoints. You can also assign content managers “Can Purchase” and/or “Can Manage” privileges, so that an individual content manager can manage licenses but not buy them.
 
 > **Note**:  Purchasing users and managing users automatically have read privileges.
-
- Purchasing users and managing users automatically have read privileges.
 
 ##### Responses
 
@@ -142,4 +140,4 @@ In the latter example, the delay is 2 minutes.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/managing-apps-and-books-through-web-services-legacy)*

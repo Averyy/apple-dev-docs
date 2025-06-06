@@ -1,6 +1,6 @@
 # CFURLClearResourcePropertyCache(_:)
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: func
 
 Removes all cached resource values and temporary resource values from the URL object.
@@ -25,8 +25,6 @@ func CFURLClearResourcePropertyCache(_ url: CFURL!)
 This method is applicable only to URLs that represent file system resources.
 
 > **Note**:  The caching behavior of the `NSURL` and `CFURL` APIs differ. For `NSURL`, all cached values (not temporary values) are automatically removed after each pass through the run loop. You only need to call the [`CFURL`](cfurl.md) method when you want to clear the cache within a single execution of the run loop. The `CFURL` functions, on the other hand, do not automatically clear cached resource values. The client has complete control over the cache lifetimes, and you must use [`CFURLClearResourcePropertyCacheForKey(_:_:)`](cfurlclearresourcepropertycacheforkey(_:_:).md) or [`CFURLClearResourcePropertyCache(_:)`](cfurlclearresourcepropertycache(_:).md) to clear cached resource values.
-
- The caching behavior of the `NSURL` and `CFURL` APIs differ. For `NSURL`, all cached values (not temporary values) are automatically removed after each pass through the run loop. You only need to call the [`CFURL`](cfurl.md) method when you want to clear the cache within a single execution of the run loop. The `CFURL` functions, on the other hand, do not automatically clear cached resource values. The client has complete control over the cache lifetimes, and you must use [`CFURLClearResourcePropertyCacheForKey(_:_:)`](cfurlclearresourcepropertycacheforkey(_:_:).md) or [`CFURLClearResourcePropertyCache(_:)`](cfurlclearresourcepropertycache(_:).md) to clear cached resource values.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # CATextLayer
 
-**Framework**: Core Animation  
+**Framework**: Quartzcore  
 **Kind**: class
 
 A layer that provides simple text layout and rendering of plain or attributed strings.
@@ -25,11 +25,7 @@ The first line is aligned to the top of the layer.
 
 > **Note**:  `CATextLayer` disables sub-pixel antialiasing when rendering text. Text can only be drawn using sub-pixel antialiasing when it is composited into an existing opaque background at the same time that it’s rasterized. There is no way to draw text with sub-pixel antialiasing by itself, whether into an image or a layer, in advance of having the background pixels to weave the text pixels into. Setting the `opacity` property of the layer to [`true`](https://developer.apple.com/documentation/swift/true) does not change the rendering mode.
 
- `CATextLayer` disables sub-pixel antialiasing when rendering text. Text can only be drawn using sub-pixel antialiasing when it is composited into an existing opaque background at the same time that it’s rasterized. There is no way to draw text with sub-pixel antialiasing by itself, whether into an image or a layer, in advance of having the background pixels to weave the text pixels into. Setting the `opacity` property of the layer to [`true`](https://developer.apple.com/documentation/swift/true) does not change the rendering mode.
-
 > **Note**:  In macOS, when a `CATextLayer` instance is positioned using the [`CAConstraintLayoutManager`](caconstraintlayoutmanager.md) class the bounds of the layer is resized to fit the text content.
-
- In macOS, when a `CATextLayer` instance is positioned using the [`CAConstraintLayoutManager`](caconstraintlayoutmanager.md) class the bounds of the layer is resized to fit the text content.
 
 ## Topics
 
@@ -83,4 +79,4 @@ The first line is aligned to the top of the layer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/catextlayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/catextlayer)*

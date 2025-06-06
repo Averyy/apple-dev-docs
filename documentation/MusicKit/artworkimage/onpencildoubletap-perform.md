@@ -1,6 +1,6 @@
 # onPencilDoubleTap(perform:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Adds an action to perform after the user double-taps their Apple Pencil.
@@ -78,8 +78,6 @@ var body: some View {
 For more information about Apple Pencil double-tap gestures, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble#Double-tap).
 
 > **Note**: If multiple views with the `onPencilDoubleTap` view modifier are visible, all their action closures will be performed after the user double-taps their Apple Pencil.
-
-If multiple views with the `onPencilDoubleTap` view modifier are visible, all their action closures will be performed after the user double-taps their Apple Pencil.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # CMAbsoluteAltitudeHandler
 
-**Framework**: Core Motion  
+**Framework**: Coremotion  
 **Kind**: typealias
 
 A block for receiving absolute altitude data.
@@ -24,8 +24,6 @@ You pass a block of this type to the altimeter object’s [`startAbsoluteAltitud
 
 > **Note**:  Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
 
- Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
-
 ## Parameters
 
 - `altitudeData`: The current altitude for the device. If there’s an error generating the data, this parameter is  .
@@ -47,4 +45,4 @@ You pass a block of this type to the altimeter object’s [`startAbsoluteAltitud
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmabsolutealtitudehandler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreMotion/cmabsolutealtitudehandler)*

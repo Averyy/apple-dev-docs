@@ -28,8 +28,6 @@ A value of `Instance` if the lazy reference was written to, or `nil` if it has n
 
 > **Note**: The load operation is performed with the memory ordering `AtomicLoadOrdering.acquiring`.
 
-The load operation is performed with the memory ordering `AtomicLoadOrdering.acquiring`.
-
 
 ---
 

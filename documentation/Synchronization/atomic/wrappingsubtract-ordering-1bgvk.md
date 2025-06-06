@@ -29,8 +29,6 @@ A tuple containing the original value before the operation and the new value aft
 
 > **Note**: This operation silently wraps around on overflow, like the `&-` operator does on `Int16` values.
 
-This operation silently wraps around on overflow, like the `&-` operator does on `Int16` values.
-
 ## Parameters
 
 - `operand`: An integer value.

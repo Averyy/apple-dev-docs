@@ -1,6 +1,6 @@
 # Customizing the Appearance of Notifications
 
-**Framework**: User Notifications UI
+**Framework**: Usernotificationsui
 
 Customize the appearance of your iOS app’s notification alerts with a notification content app extension.
 
@@ -21,8 +21,6 @@ Your app extension must configure its view controller using the data immediately
 
 > **Note**: Notification content app extensions are supported only in iOS apps. For information about how to customize the appearance of notifications in watchOS, see [`App Programming Guide for watchOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969).
 
-Notification content app extensions are supported only in iOS apps. For information about how to customize the appearance of notifications in watchOS, see [`App Programming Guide for watchOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969).
-
 ##### Add the Notification Content App Extension to Your Project
 
 To add a notification content app extension to your iOS app:
@@ -35,8 +33,6 @@ To add a notification content app extension to your iOS app:
 
 > **Note**: You may add more than one notification content app extension to your project, but each one must support a unique set of notification categories. You specify the categories for your app extension in its `Info.plist` file, as described in [`Declare the Supported Notification Types`](customizing-the-appearance-of-notifications#Declare-the-Supported-Notification-Types.md).
 
-You may add more than one notification content app extension to your project, but each one must support a unique set of notification categories. You specify the categories for your app extension in its `Info.plist` file, as described in [`Declare the Supported Notification Types`](customizing-the-appearance-of-notifications#Declare-the-Supported-Notification-Types.md).
-
 ##### Add Views to Your View Controller
 
 The template provided by Xcode includes a storyboard and a view controller for you to configure. Build your custom notification interface by adding views to your view controller. For example, use labels to display the title, subtitle, and body text of the notification. You can also add image views and views that display noninteractive content. You don’t need to provide any initial content for your views.
@@ -44,8 +40,6 @@ The template provided by Xcode includes a storyboard and a view controller for y
 You can add interactive controls (for example, buttons or switches) in iOS 12 and later. For more information, see Support Interactive Controls.
 
 > ❗ **Important**: Don’t add additional view controllers to your app extension or storyboard file. Your app extension must contain exactly one view controller.
-
-Don’t add additional view controllers to your app extension or storyboard file. Your app extension must contain exactly one view controller.
 
 ##### Configure Your View Controller
 
@@ -71,8 +65,6 @@ The following figure shows the `Info.plist` file of a notification content app e
 ![A screenshot of the plist editor, showing the UNNotificationExtensionCategory for two notification types.](https://docs-assets.developer.apple.com/published/152e34869924e4cd1a285365566a5a97/customizing_the_appearance_of_notifications-2%402x.png)
 
 > **Note**: Initially, the value of the `UNNotificationExtensionCategory` key is a string, which lets your notification content app extension support only one notification type. To support multiple types, change the type to an array of strings.
-
-Initially, the value of the `UNNotificationExtensionCategory` key is a string, which lets your notification content app extension support only one notification type. To support multiple types, change the type to an array of strings.
 
 For a local notification, put its category string into the [`categoryIdentifier`](https://developer.apple.com/documentation/UserNotifications/UNMutableNotificationContent/categoryIdentifier) property of your [`UNMutableNotificationContent`](https://developer.apple.com/documentation/UserNotifications/UNMutableNotificationContent) object. For a remote notification, put the string into the `category` key of your JSON payload. For information about declaring your app’s notification types, see [`Declaring your actionable notification types`](https://developer.apple.com/documentation/UserNotifications/declaring-your-actionable-notification-types).
 

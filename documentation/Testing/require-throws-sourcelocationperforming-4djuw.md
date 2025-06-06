@@ -1,6 +1,6 @@
 # require(throws:_:sourceLocation:performing:)
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: macro
 
 **Availability**:
@@ -29,8 +29,6 @@ The instance of `E` that was thrown by `expression` and is equal to `error`.
 
 > **Note**: An instance of [`ExpectationFailedError`](expectationfailederror.md) if `expression` does not throw a matching error. The error thrown by `expression` is not rethrown.
 
-An instance of [`ExpectationFailedError`](expectationfailederror.md) if `expression` does not throw a matching error. The error thrown by `expression` is not rethrown.
-
 Use this overload of `#require()` when the expression `expression`  throw a specific error:
 
 ```swift
@@ -43,8 +41,6 @@ try #require(throws: EngineFailureError.batteryDied) {
 If `expression` does not throw an error, or if it throws an error that is not equal to `error`, an [`Issue`](issue.md) is recorded for the test that is running in the current task and an instance of [`ExpectationFailedError`](expectationfailederror.md) is thrown. Any value returned by `expression` is discarded.
 
 > **Note**: If you use this macro with a Swift compiler version lower than 6.1, it doesn’t return a value.
-
-If you use this macro with a Swift compiler version lower than 6.1, it doesn’t return a value.
 
 If the thrown error need only be an instance of a particular type, use [`require(throws:_:sourceLocation:performing:)`](require(throws:_:sourcelocation:performing:)-7n34r.md) instead.
 

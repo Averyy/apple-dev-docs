@@ -1,6 +1,6 @@
 # preferredVideoStabilizationMode
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The stabilization mode that’s the most appropriate for a video connection.
@@ -24,8 +24,6 @@ The property only applies to a video connection, and defaults to [`AVCaptureVide
 You can enable video stabilization by setting it to an available stabilization mode (other than [`AVCaptureVideoStabilizationMode.off`](avcapturevideostabilizationmode/off.md)). Video stabilization introduces additional latency into the video capture pipeline and may consume more system memory, depending on the stabilization mode and format. If a stabilization mode isn’t available, the connection sets its [`activeVideoStabilizationMode`](avcaptureconnection/activevideostabilizationmode.md) property to [`AVCaptureVideoStabilizationMode.off`](avcapturevideostabilizationmode/off.md). You can make the connection use an appropriate capture format and frame rate by setting the property to [`AVCaptureVideoStabilizationMode.auto`](avcapturevideostabilizationmode/auto.md).
 
 > **Note**:  Devices with a video stabilization feature may only support a subset of available source formats.
-
- Devices with a video stabilization feature may only support a subset of available source formats.
 
 Use key-value observing with the [`activeVideoStabilizationMode`](avcaptureconnection/activevideostabilizationmode.md) property to determine which stabilization mode is in use.
 

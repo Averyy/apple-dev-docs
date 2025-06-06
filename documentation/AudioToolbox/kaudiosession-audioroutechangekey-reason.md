@@ -1,6 +1,6 @@
 # kAudioSession_AudioRouteChangeKey_Reason
 
-**Framework**: Audio Toolbox  
+**Framework**: Audiotoolbox  
 **Kind**: var
 
 Identifies the reason for the audio route change.
@@ -25,8 +25,6 @@ Value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation
 #### Discussion
 
 > **Note**:  It is typically more convenient to instead use the [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) version of this constant, [`kAudioSession_RouteChangeKey_Reason`](kaudiosession_routechangekey_reason.md).
-
- It is typically more convenient to instead use the [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) version of this constant, [`kAudioSession_RouteChangeKey_Reason`](kaudiosession_routechangekey_reason.md).
 
 
 ---

@@ -30,8 +30,6 @@ Set this property to [`true`](https://developer.apple.com/documentation/swift/tr
 
 > **Note**:  When a number formatter is configured to use significant digits, it ignores any minimum or maximum values used to set integer or fraction digits.
 
- When a number formatter is configured to use significant digits, it ignores any minimum or maximum values used to set integer or fraction digits.
-
 The following code demonstrates the effect of configuring [`usesSignificantDigits`](numberformatter/usessignificantdigits.md) when formatting various numbers:
 
 ```swift

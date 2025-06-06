@@ -1,6 +1,6 @@
 # Effecting People Occlusion in Custom Renderers
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Occlude your app’s virtual content where ARKit recognizes people in the camera feed by using matte generator.
 
@@ -13,11 +13,7 @@ Occlude your app’s virtual content where ARKit recognizes people in the camera
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`607: Bringing People into AR`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/607/).
 
-This sample code project is associated with WWDC 2019 session [`607: Bringing People into AR`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/607/).
-
 > **Note**: To run the app, use an iOS device with A12 chip or later.
-
-To run the app, use an iOS device with A12 chip or later.
 
 ## See Also
 
@@ -31,4 +27,4 @@ To run the app, use an iOS device with A12 chip or later.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/effecting-people-occlusion-in-custom-renderers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/effecting-people-occlusion-in-custom-renderers)*

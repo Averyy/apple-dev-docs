@@ -1,6 +1,6 @@
 # Creating recurring leaderboards
 
-**Framework**: GameKit
+**Framework**: Gamekit
 
 Create a leaderboard for your game that ranks player scores based on a schedule.
 
@@ -21,8 +21,6 @@ Under Recurring, set a start date for the first occurrence. Then enter the durat
 For example, if the restart interval and duration are both 24 hours, the recurring leaderboard runs daily with no gaps between occurrences. To create a 1-hour contest every Sunday at noon, set the start date to Sunday at noon, then set the restart interval to 7 days and the duration to 60 minutes. To create a 15-minute competition every hour, set the restart interval to 60 minutes and the duration to 15 minutes.
 
 > **Note**: If you’ve already pushed your configuration changes to App Store Connect, removing a leaderboard or leaderboard set from the local configuration file doesn’t remove the leaderboard or leaderboard set from App Store Connect.
-
-If you’ve already pushed your configuration changes to App Store Connect, removing a leaderboard or leaderboard set from the local configuration file doesn’t remove the leaderboard or leaderboard set from App Store Connect.
 
 To learn more about the information you enter in App Store Connect, see [`Leaderboard properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/leaderboards#leaderboard-properties).
 
@@ -64,8 +62,6 @@ try await GKLeaderboard.submitScore(points,
 
 > **Note**:  You can only use the [`submitScore(_:context:player:completionHandler:)`](gkleaderboard/submitscore(_:context:player:completionhandler:).md) instance method for recurring leaderboards.
 
- You can only use the [`submitScore(_:context:player:completionHandler:)`](gkleaderboard/submitscore(_:context:player:completionhandler:).md) instance method for recurring leaderboards.
-
 However, submitting a score with this method fails if the leaderboard isn’t active, so check the start date and duration properties of the leaderboard before calling the [`submitScore(_:context:player:completionHandler:)`](gkleaderboard/submitscore(_:context:player:completionhandler:).md) method. To get the start date of the next occurrence, use the [`nextStartDate`](gkleaderboard/nextstartdate.md) property.
 
 ##### Access the Previous Occurrence
@@ -86,8 +82,6 @@ if let current = leaderboards.first {
 
 > **Note**:  Game Center keeps expired occurrences for up to 30 days. However, a player can view scores only on the current occurrence and one previous occurrence. The previous occurrence is the most recent expired occurrence in which the player submitted a score.
 
- Game Center keeps expired occurrences for up to 30 days. However, a player can view scores only on the current occurrence and one previous occurrence. The previous occurrence is the most recent expired occurrence in which the player submitted a score.
-
 ## See Also
 
 - [Encourage progress and competition with leaderboards](encourage-progress-and-competition-with-leaderboards.md)
@@ -104,4 +98,4 @@ if let current = leaderboards.first {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/creating-recurring-leaderboards)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/creating-recurring-leaderboards)*

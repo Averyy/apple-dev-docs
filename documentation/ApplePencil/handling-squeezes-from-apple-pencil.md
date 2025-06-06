@@ -1,6 +1,6 @@
 # Handling squeezes from Apple Pencil
 
-**Framework**: Apple Pencil
+**Framework**: Applepencil
 
 Detect and respond to squeezes a person makes on Apple Pencil Pro.
 
@@ -11,8 +11,6 @@ You can use Apple Pencil interactions to allow people to access functionality in
 ![An illustration showing a hand squeezing Apple Pencil near the tip.](https://docs-assets.developer.apple.com/published/7d3dbec5d663bd982e3a4b95467f91c7/apple-pencil-squeeze%402x.png)
 
 > **Note**: Only Apple Pencil Pro supports squeeze interactions.
-
-Only Apple Pencil Pro supports squeeze interactions.
 
 ##### Register for a Squeeze
 
@@ -39,4 +37,4 @@ The following code shows a snippet from a drawing app that provides custom drawi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepencil/handling-squeezes-from-apple-pencil)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePencil/handling-squeezes-from-apple-pencil)*

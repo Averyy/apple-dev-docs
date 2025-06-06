@@ -26,8 +26,6 @@ By default, all actor types execute tasks on a shared global concurrent pool. Th
 
 > **Note**: The runtime may perform various optimizations to minimize un-necessary thread switching.
 
-The runtime may perform various optimizations to minimize un-necessary thread switching.
-
 Sometimes it is important to be able to customize the execution behavior of an actor. For example, when an actor is known to perform heavy blocking operations (such as IO), and we would like to keep this work  the global shared pool, as blocking it may prevent other actors from being responsive.
 
 You can implement a custom executor, by conforming a type to the [`SerialExecutor`](serialexecutor.md) protocol, and implementing the `enqueue(_:)` method.
@@ -116,4 +114,4 @@ Alternatively, you can also use existing serial executor implementations, such a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/serialexecutor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/serialexecutor)*

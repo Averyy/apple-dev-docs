@@ -23,8 +23,6 @@ var hasPersistentBackgroundContent: Bool { get }
 
 > **Note**: Note that extensions are only allowed to have persistent background content on macOS. An [`WKWebExtension.Error.Code.invalidBackgroundPersistence`](wkwebextension/error/code/invalidbackgroundpersistence.md) error will be reported on iOS, iPadOS, and visionOS if an attempt is made to load a persistent extension.
 
-Note that extensions are only allowed to have persistent background content on macOS. An [`WKWebExtension.Error.Code.invalidBackgroundPersistence`](wkwebextension/error/code/invalidbackgroundpersistence.md) error will be reported on iOS, iPadOS, and visionOS if an attempt is made to load a persistent extension.
-
 
 ---
 

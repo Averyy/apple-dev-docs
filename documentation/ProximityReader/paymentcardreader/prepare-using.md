@@ -1,6 +1,6 @@
 # prepare(using:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Configures the pipeline for reading payment or loyalty cards.
@@ -38,8 +38,6 @@ After calling this method, there are four possible scenarios:
 - This method throws a [`PaymentCardReaderError`](paymentcardreadererror.md) if a problem occurs.
 
 > **Note**: [`PaymentCardReaderError`](paymentcardreadererror.md) if the method fails to configure the device.
-
-[`PaymentCardReaderError`](paymentcardreadererror.md) if the method fails to configure the device.
 
 ## Parameters
 

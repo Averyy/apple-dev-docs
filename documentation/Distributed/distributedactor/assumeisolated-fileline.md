@@ -37,11 +37,7 @@ This method can only be used from synchronous functions, as asynchronous functio
 
 > **Note**: This check is performed against the actor’s serial executor, meaning that / if another actor uses the same serial executor–by using another actor’s executor as its own [`unownedExecutor`](distributedactor/unownedexecutor.md) –this check will succeed , as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
 
-This check is performed against the actor’s serial executor, meaning that / if another actor uses the same serial executor–by using another actor’s executor as its own [`unownedExecutor`](distributedactor/unownedexecutor.md) –this check will succeed , as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
-
 > **Note**: Rethrows the `Error` thrown by the operation if it threw
-
-Rethrows the `Error` thrown by the operation if it threw
 
 ## Parameters
 

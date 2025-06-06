@@ -1,6 +1,6 @@
 # CMSampleBufferCopySampleBufferForRange(allocator:sampleBuffer:sampleRange:sampleBufferOut:)
 
-**Framework**: Core Media  
+**Framework**: Coremedia  
 **Kind**: func
 
 Creates a sample buffer that contains a range of samples from an existing sample buffer.
@@ -27,8 +27,6 @@ A result code. See [`Sample Buffer Error Codes`](sample-buffer-errors.md).
 #### Discussion
 
 > **Note**:  Samples containing non-interleaved audio aren’t supported.
-
- Samples containing non-interleaved audio aren’t supported.
 
 ## Parameters
 

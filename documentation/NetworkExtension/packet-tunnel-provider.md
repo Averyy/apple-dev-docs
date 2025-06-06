@@ -1,6 +1,6 @@
 # Packet tunnel provider
 
-**Framework**: Network Extension
+**Framework**: Networkextension
 
 Implement a VPN client for a packet-oriented, custom VPN protocol.
 
@@ -21,8 +21,6 @@ Packet tunnel providers can run in destination IP mode or source-application mod
 For detailed information about packet tunnel provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/Technotes/tn3134-network-extension-provider-deployment).
 
 > **Note**:  When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
-
- When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
 
 ## Topics
 
@@ -80,4 +78,4 @@ For detailed information about packet tunnel provider deployment options, see [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/packet-tunnel-provider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/packet-tunnel-provider)*

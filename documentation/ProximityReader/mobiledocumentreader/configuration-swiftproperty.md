@@ -1,6 +1,6 @@
 # configuration
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: property
 
 The configuration of the mobile document reader.
@@ -21,8 +21,6 @@ final var configuration: MobileDocumentReader.Configuration { get async throws }
 Use the information contained in the configuration to construct as reader token on your server.
 
 > **Note**: A [`MobileDocumentReaderError`](mobiledocumentreadererror.md) if an error occurs.
-
-A [`MobileDocumentReaderError`](mobiledocumentreadererror.md) if an error occurs.
 
 ## See Also
 

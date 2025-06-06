@@ -1,6 +1,6 @@
 # removeRows(at:withAnimation:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Removes the rows using the specified animation.
@@ -26,8 +26,6 @@ Calling this method multiple times within the same [`beginUpdates()`](nstablevie
 Changes are processed incrementally as the [`insertRows(at:withAnimation:)`](nstableview/insertrows(at:withanimation:).md), [`removeRows(at:withAnimation:)`](nstableview/removerows(at:withanimation:).md), and the [`moveRow(at:to:)`](nstableview/moverow(at:to:).md) methods are called. It is acceptable to delete row `0` multiple times, as long as there is still a row available.
 
 > **Note**:  [`NSCell`](nscell.md)-based table views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
-
- [`NSCell`](nscell.md)-based table views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
 
 ## Parameters
 

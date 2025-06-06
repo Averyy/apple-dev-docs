@@ -1,6 +1,6 @@
 # Converting a Safari app extension to a Safari web extension
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Unify your web extensions and simplify development by sharing code with a Safari web extension.
 
@@ -9,8 +9,6 @@ Unify your web extensions and simplify development by sharing code with a Safari
 Safari 14 and later in macOS and Safari 15 and later in iOS include support for Safari web extensions, which support the same JavaScript APIs that other browsers use in their extensions. If you have an extension for other browsers and a Safari app extension that offer the same features, you can replace your Safari app extension with a Safari web extension and share code.
 
 > **Note**:  You must use the same developer account to create the Safari web extension that you used to create the Safari app extension.
-
- You must use the same developer account to create the Safari web extension that you used to create the Safari app extension.
 
 To convert your Safari app extension to a Safari web extension:
 
@@ -34,4 +32,4 @@ When your app installs, the Safari web extension installs with it, and Safari re
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/converting-a-safari-app-extension-to-a-safari-web-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/converting-a-safari-app-extension-to-a-safari-web-extension)*

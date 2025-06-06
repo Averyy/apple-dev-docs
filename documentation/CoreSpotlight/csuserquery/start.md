@@ -1,6 +1,6 @@
 # start()
 
-**Framework**: Core Spotlight  
+**Framework**: Corespotlight  
 **Kind**: method
 
 Starts searching the index for items that match the current query string and parameters.
@@ -27,8 +27,6 @@ func start()
 This method uses the configured search parameters and query string to begin a search of the index. It then delivers the results of that search to the closures in the [`foundItemsHandler`](cssearchquery/founditemshandler.md), [`foundSuggestionsHandler`](csuserquery/foundsuggestionshandler.md), and [`completionHandler`](cssearchquery/completionhandler.md) properties of the query object.
 
 > **Note**: Don’t call this method if you fetch the query results using the [`responses`](csuserquery/responses-swift.property.md) property. Accessing that property automatically starts the query.
-
-Don’t call this method if you fetch the query results using the [`responses`](csuserquery/responses-swift.property.md) property. Accessing that property automatically starts the query.
 
 ## See Also
 

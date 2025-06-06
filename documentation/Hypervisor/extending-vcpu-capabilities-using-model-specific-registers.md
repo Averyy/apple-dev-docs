@@ -62,8 +62,6 @@ rdmsr
 
 > **Note**:  The MSRs include several collections of related registers, including [`HV_MSR_IA32_PMC0`](hv_msr_ia32_pmc0.md), [`HV_MSR_IA32_PMC7`](hv_msr_ia32_pmc7.md), [`HV_MSR_IA32_PERFEVNTSEL0`](hv_msr_ia32_perfevntsel0.md), and [`HV_MSR_IA32_PERFEVNTSEL7`](hv_msr_ia32_perfevntsel7.md). To avoid repetition, this article refers to these collections as `HV_MSR_IA32_PMCn` and `HV_MSR_IA32_PERFEVTSELn`, respectively when referring to these register sets. A listing of MSR register names is available in the Model-Specific Registers Constants section.
 
- The MSRs include several collections of related registers, including [`HV_MSR_IA32_PMC0`](hv_msr_ia32_pmc0.md), [`HV_MSR_IA32_PMC7`](hv_msr_ia32_pmc7.md), [`HV_MSR_IA32_PERFEVNTSEL0`](hv_msr_ia32_perfevntsel0.md), and [`HV_MSR_IA32_PERFEVNTSEL7`](hv_msr_ia32_perfevntsel7.md). To avoid repetition, this article refers to these collections as `HV_MSR_IA32_PMCn` and `HV_MSR_IA32_PERFEVTSELn`, respectively when referring to these register sets. A listing of MSR register names is available in the Model-Specific Registers Constants section.
-
 ##### Analyze Guest Performance
 
 You can use the performance counter MSRs to allow the guest OS to use hardware performance counters to measure aspects of guest performance. These measurements can be in the guest kernel or apps running in the guest OS.
@@ -142,4 +140,4 @@ The framework’s [`hv_vmx_get_msr_info(_:_:)`](hv_vmx_get_msr_info(_:_:).md) fu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/hypervisor/extending-vcpu-capabilities-using-model-specific-registers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Hypervisor/extending-vcpu-capabilities-using-model-specific-registers)*

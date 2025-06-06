@@ -1,6 +1,6 @@
 # Capturing stereo audio from built-In microphones
 
-**Framework**: AVFAudio
+**Framework**: Avfaudio
 
 Configure an iOS device’s built-in microphones to add stereo recording capabilities to your app.
 
@@ -21,8 +21,6 @@ Because a user can hold an iOS device in a variety of ways, you need to specify 
 This sample app shows how to configure your app to record stereo audio, and helps you visualize changes to the input orientation and data-source selection.
 
 > **Note**: You must run the sample on a supported physical device running iOS 14, or later. To determine whether a device supports stereo recording, query the audio session’s selected data source to see if its [`supportedPolarPatterns`](AVAudioSessionDataSourceDescription/supportedPolarPatterns.md) array contains the [`stereo`](AVAudioSession/PolarPattern/stereo.md) polar pattern.
-
-You must run the sample on a supported physical device running iOS 14, or later. To determine whether a device supports stereo recording, query the audio session’s selected data source to see if its [`supportedPolarPatterns`](AVAudioSessionDataSourceDescription/supportedPolarPatterns.md) array contains the [`stereo`](AVAudioSession/PolarPattern/stereo.md) polar pattern.
 
 ##### Configure the Audio Session Category
 
@@ -129,4 +127,4 @@ This method finds the data source with the selected name, sets its preferred pol
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/capturing-stereo-audio-from-built-in-microphones)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/capturing-stereo-audio-from-built-in-microphones)*

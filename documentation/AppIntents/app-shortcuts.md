@@ -1,6 +1,6 @@
 # App Shortcuts
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
 
@@ -9,8 +9,6 @@ Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotli
 Starting with iOS 15 and macOS 13, you can create a preconfigured App Shortcut that enables people to discover and run your app intent without any configuration. By creating App Shortcuts, you make your app’s functionality instantly available for use in Shortcuts, Spotlight, and Siri from the moment a person installs your app — without any setup in the Shortcuts app or an Add to Siri button. On iPhone models that support the Action button, people can associate your preconfigured App Shortcut on the Action button for quick access of your app’s functionality.
 
 > **Note**: Apple may extract anonymized App Shortcuts data such as localized phrases, display representation values, and the title and description of related intents. Machine learning models use this data when training to help improve the App Shortcuts experience.
-
-Apple may extract anonymized App Shortcuts data such as localized phrases, display representation values, and the title and description of related intents. Machine learning models use this data when training to help improve the App Shortcuts experience.
 
 Key app functionalities that people use to complete a task quickly and that you expose to the system with app intents are great candidates for App Shortcuts. For each high-value app intent, create an App Shortcut that specifies the intended action, the required parameters, the spoken phrases someone uses to run it, and the short title and the image that appear in the Shortcuts app.
 
@@ -23,8 +21,6 @@ To offer an App Shortcut:
 With these three steps, you make your app’s functionality more discoverable and enable people to interact with your app in a lightweight way. However, the system displays a default interface for your App Shortcut. To display a custom view for each shortcut, return a SwiftUI view in your app intent’s [`perform()`](appintent/perform().md) method.
 
 > **Note**: [`Session 10170: Implement App Shortcuts with App Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10170) and [`Session 10169: Design App Shortcuts`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10169).
-
-[`Session 10170: Implement App Shortcuts with App Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10170) and [`Session 10169: Design App Shortcuts`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10169).
 
 #### Offer App Shortcuts with Preconfigured Parameters
 
@@ -103,4 +99,4 @@ Although App Shortcuts don’t require a person to do any configuration in the S
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/app-shortcuts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/app-shortcuts)*

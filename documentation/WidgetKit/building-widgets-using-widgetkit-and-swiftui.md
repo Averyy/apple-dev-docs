@@ -14,8 +14,6 @@ Create widgets to show your app’s content on the Home screen, with custom inte
 
 > **Note**: This sample code project is associated with WWDC20 session [`10034: Widgets Code-Along, Part 1: The Adventure Begins`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10034/); session [`10035: Widgets Code-Along, Part 2: Alternate Timelines`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10035/); and session [`10036: Widgets Code-Along, Part 3: Advancing Timelines`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10036/).
 
-This sample code project is associated with WWDC20 session [`10034: Widgets Code-Along, Part 1: The Adventure Begins`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10034/); session [`10035: Widgets Code-Along, Part 2: Alternate Timelines`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10035/); and session [`10036: Widgets Code-Along, Part 3: Advancing Timelines`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10036/).
-
 ## See Also
 
 - [Creating a widget extension](creating-a-widget-extension.md)

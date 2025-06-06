@@ -28,8 +28,6 @@ The requested hourly weather statistics.
 
 > **Note**: Weather data error `WeatherError`
 
-Weather data error `WeatherError`
-
 The statistics returned for each hour are derived from weather data recorded over the past decades, to the present date. Each item returned represents statistics for a particular hour of the year, in UTC.
 
 This is a variadic API in which any combination of data sets can be requested and returned as a tuple. The following example will return statistics for the first 24 hours of the year.
@@ -45,8 +43,6 @@ let hourlyTemperatureStatistics = try await service.hourlyStatistics(for: newYor
 ```
 
 > **Note**: `startHour in 1...8784 && endHour in 1...8784`
-
-`startHour in 1...8784 && endHour in 1...8784`
 
 ## Parameters
 

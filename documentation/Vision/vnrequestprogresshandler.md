@@ -25,8 +25,6 @@ Vision may populate the [`results`](vnrequest/results.md) array in the request w
 
 > **Note**:  The Vision framework may call the progress handler on a different dispatch queue from the thread on which you initiated the original request, so ensure that your handler can execute asynchronously, in a thread-safe manner.
 
- The Vision framework may call the progress handler on a different dispatch queue from the thread on which you initiated the original request, so ensure that your handler can execute asynchronously, in a thread-safe manner.
-
 ## Parameters
 
 - `request`: The completed Vision request. The results of the request, if no error occurred, reside in the   array of the request.
@@ -41,4 +39,4 @@ Vision may populate the [`results`](vnrequest/results.md) array in the request w
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/vnrequestprogresshandler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/vnrequestprogresshandler)*

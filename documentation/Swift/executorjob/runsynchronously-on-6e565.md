@@ -32,8 +32,6 @@ Converting a `ExecutorJob` to an [`UnownedJob`](unownedjob.md) and invoking ``Un
 
 > **Note**: [`runSynchronously(isolatedTo:taskExecutor:)`](executorjob/runsynchronously(isolatedto:taskexecutor:).md)
 
-[`runSynchronously(isolatedTo:taskExecutor:)`](executorjob/runsynchronously(isolatedto:taskexecutor:).md)
-
 ## Parameters
 
 - `executor`: The executor this job will be run on.

@@ -1,6 +1,6 @@
 # Geometric Property
 
-**Framework**: ShaderGraph  
+**Framework**: Shadergraph  
 **Kind**: subscript
 
 The value of the specified geometric property (defined using ) of the currently-bound geometry.
@@ -14,8 +14,6 @@ The value of the specified geometric property (defined using ) of the currently-
 The Geometric Property node attempts to return the value of the geometric property with the name defined by the `Geomprop` parameter. If that property doesn’t exist or there’s an error retrieving the property’s value, the node outputs the value of the `Default` parameter.
 
 > **Note**: The type of this node must be the same as the type of the geometric property you’re attempting to reference.
-
-The type of this node must be the same as the type of the geometric property you’re attempting to reference.
 
 ## See Also
 

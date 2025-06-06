@@ -13,8 +13,6 @@ Simulate a conversation using speech synthesis.
 
 > **Note**: This is a companion project for WWDC21 Challenge [`Speech Synthesizer Simulator`](https://developer.apple.comhttps://developer.apple.com/news/?id=ux4fipi2).
 
-This is a companion project for WWDC21 Challenge [`Speech Synthesizer Simulator`](https://developer.apple.comhttps://developer.apple.com/news/?id=ux4fipi2).
-
 ## See Also
 
 - [WWDC22 Challenge: Learn Switch Control through gaming](wwdc22_challenge_learn_switch_control_through_gaming.md)

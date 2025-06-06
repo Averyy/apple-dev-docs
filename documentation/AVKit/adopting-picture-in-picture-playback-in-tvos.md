@@ -1,6 +1,6 @@
 # Adopting Picture in Picture Playback in tvOS
 
-**Framework**: AVKit
+**Framework**: Avkit
 
 Add advanced multitasking capabilities to your video apps by using Picture in Picture playback in tvOS.
 
@@ -13,8 +13,6 @@ Add advanced multitasking capabilities to your video apps by using Picture in Pi
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [`10176: Master Picture in Picture on tvOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10176/).
-
-This sample code project is associated with WWDC20 session [`10176: Master Picture in Picture on tvOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10176/).
 
 ##### Requirements
 
@@ -36,4 +34,4 @@ This sample code project must be run on a physical device.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/adopting-picture-in-picture-playback-in-tvos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/adopting-picture-in-picture-playback-in-tvos)*

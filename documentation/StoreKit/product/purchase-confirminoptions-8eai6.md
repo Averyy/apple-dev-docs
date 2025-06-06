@@ -1,6 +1,6 @@
 # purchase(confirmIn:options:)
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: method
 
 Processes a purchase for the product.
@@ -21,8 +21,6 @@ The result of the purchase
 #### Discussion
 
 > **Note**: A `PurchaseError` or `StoreKitError`.
-
-A `PurchaseError` or `StoreKitError`.
 
 ## Parameters
 

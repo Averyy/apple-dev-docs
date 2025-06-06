@@ -1,6 +1,6 @@
 # Adopting system selection UI in custom text views
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Incorporate the system text-selection experience into your custom text UI in UIKit.
 
@@ -103,8 +103,6 @@ If you implement custom text UI in an AppKit app, see [`Adopting the system text
 
 > **Note**:  Session 10058: [`What’s new with text and text interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10058/)
 
- Session 10058: [`What’s new with text and text interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10058/)
-
 ## See Also
 
 - [class UITextSelectionDisplayInteraction](uitextselectiondisplayinteraction.md)
@@ -124,4 +122,4 @@ If you implement custom text UI in an AppKit app, see [`Adopting the system text
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/adopting-system-selection-ui-in-custom-text-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/adopting-system-selection-ui-in-custom-text-views)*

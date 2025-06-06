@@ -1,6 +1,6 @@
 # Implementing the simple authentication user-enrollment flow
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Understand the steps of the authentication flow between the user, client, server, and Apple services.
 
@@ -222,8 +222,6 @@ Content-Length: 6785
 
 > **Note**:  The `AccessRights` key must not be present in the `com.apple.mdm` payload.
 
- The `AccessRights` key must not be present in the `com.apple.mdm` payload.
-
 ##### Enrollment Profile
 
 In step 13 above, the MDM profile delivered by the server in the second enrollment attempt must include the following keys:
@@ -257,4 +255,4 @@ In step 19 above, once all management setup steps are complete, the device proce
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/implementing-the-simple-authentication-user-enrollment-flow)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/implementing-the-simple-authentication-user-enrollment-flow)*

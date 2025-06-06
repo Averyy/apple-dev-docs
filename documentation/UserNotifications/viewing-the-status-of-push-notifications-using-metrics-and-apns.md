@@ -55,8 +55,6 @@ While in APNs persistent storage, other notifications can overwrite notification
 
 > **Note**:  When storing a push notification, APNs uses either the specified expiry or defaults to time-to-live (TTL) of 30 days, whichever comes first.
 
- When storing a push notification, APNs uses either the specified expiry or defaults to time-to-live (TTL) of 30 days, whichever comes first.
-
 If your push notification expires before the destination device connects to APNs and removes power state restrictions, APNs discards the notification. Your app may need to synchronize with your application server about the information missed due to discarded, expired, or overwritten notification.
 
 ## See Also
@@ -69,4 +67,4 @@ If your push notification expires before the destination device connects to APNs
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/viewing-the-status-of-push-notifications-using-metrics-and-apns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/viewing-the-status-of-push-notifications-using-metrics-and-apns)*

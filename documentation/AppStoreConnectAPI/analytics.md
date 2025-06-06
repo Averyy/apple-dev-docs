@@ -1,6 +1,6 @@
 # Analytics
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Get data about your apps and usage.
 
@@ -29,12 +29,6 @@ The Sales and Reports role can also read [`Download Sales and Trends Reports`](g
 To learn more about roles, see [`Program Roles`](https://developer.apple.comhttps://developer.apple.com/support/roles/).
 
 > **Note**:  If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option: Developer Tools & Resources > App Store Connect API > Data Request [`Learn more`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
-
- If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option:
-
-Developer Tools & Resources > App Store Connect API > Data Request
-
-[`Learn more`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
 ## Topics
 

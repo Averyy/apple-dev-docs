@@ -1,6 +1,6 @@
 # CADisplayLink
 
-**Framework**: Core Animation  
+**Framework**: Quartzcore  
 **Kind**: class
 
 A timer object that allows your app to synchronize its drawing to the refresh rate of the display.
@@ -50,8 +50,6 @@ The system rounds, to the nearest factor, preferred frame rates that aren’t a 
 The code listing below shows how to calculate the actual frame rate by dividing 1 by your display link’s [`timestamp`](cadisplaylink/timestamp.md) subtracted from its [`targetTimestamp`](cadisplaylink/targettimestamp.md).
 
 > **Note**:  If your app needs more control over refresh rate to ensure smooth rendering of frames, use [`CAMetalDisplayLink`](cametaldisplaylink.md) and the information from [`CAMetalLayer`](cametallayer.md) instances to render frames.
-
- If your app needs more control over refresh rate to ensure smooth rendering of frames, use [`CAMetalDisplayLink`](cametaldisplaylink.md) and the information from [`CAMetalLayer`](cametallayer.md) instances to render frames.
 
 ## Topics
 
@@ -113,4 +111,4 @@ The code listing below shows how to calculate the actual frame rate by dividing 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/cadisplaylink)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/cadisplaylink)*

@@ -1,6 +1,6 @@
 # Tracking geographic locations in AR
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Track specific geographic areas of interest and render them in an AR experience.
 
@@ -22,8 +22,6 @@ For example, when the user approaches a location anchor, an app may reveal a vir
 ![Figure of an AR app showing two views. The upper view displays a camera feed that captures a busy city intersection. A series of floating blue buoys form a path leading the user to turn right. In the lower view, a top-down map provides an alternate view of the same scene. Dots on the map correspond to the buoys seen in the camera feed, which appear to lead the user through the city.](https://docs-assets.developer.apple.com/published/3147e58a789e9fe8068eb9257a9f7c0c/arkit-3d-interaction-hero-image.png)
 
 > **Note**: ARKit supports geotracking only with the device’s rear camera.
-
-ARKit supports geotracking only with the device’s rear camera.
 
 #### Configure the Sample Code Project
 
@@ -80,8 +78,6 @@ arView.session.run(geoTrackingConfig, options: .removeExistingAnchors)
 ```
 
 > **Note**: If geotracking is unavailable in the user’s current location, an app can suggest an alternative area if [`checkAvailability(at:completionHandler:)`](argeotrackingconfiguration/checkavailability(at:completionhandler:).md) returns `true` for a nearby location.
-
-If geotracking is unavailable in the user’s current location, an app can suggest an alternative area if [`checkAvailability(at:completionHandler:)`](argeotrackingconfiguration/checkavailability(at:completionhandler:).md) returns `true` for a nearby location.
 
 #### Coach the User for Geotracking Status
 
@@ -200,8 +196,6 @@ Then, the sample project creates a location anchor with the result. Because the 
 
 > **Note**: For more on raycasting, see [`Environmental Analysis`](environmental-analysis.md).
 
-For more on raycasting, see [`Environmental Analysis`](environmental-analysis.md).
-
 #### Assess Geotracking Accuracy
 
 To ensure the best possible user experience, an app must monitor and react to the geotracking [`accuracy`](argeotrackingstatus/accuracy-swift.property.md). When possible, the sample project displays the accuracy as part of its state messaging to the user. The session populates accuracy in its [`geoTrackingStatus`](arframe/geotrackingstatus.md) in state [`ARGeoTrackingStatus.State.localized`](argeotrackingstatus/state-swift.enum/localized.md).
@@ -239,4 +233,4 @@ mapView.setCamera(camera, animated: false)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/tracking-geographic-locations-in-ar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/tracking-geographic-locations-in-ar)*

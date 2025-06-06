@@ -1,6 +1,6 @@
 # dataCell
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The cell prototype used by the table column to draw individual cells.
@@ -23,8 +23,6 @@ You can also assign a cell that displays things other than text—for example, y
 
 > **Note**:  This property is only valid for cell-based table views.
 
- This property is only valid for cell-based table views.
-
 ## See Also
 
 - [func dataCell(forRow: Int) -> Any](nstablecolumn/datacell(forrow:).md)
@@ -33,4 +31,4 @@ You can also assign a cell that displays things other than text—for example, y
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstablecolumn/datacell)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstablecolumn/datacell)*

@@ -1,6 +1,6 @@
 # Cube Image LOD (RealityKit)
 
-**Framework**: ShaderGraph  
+**Framework**: Shadergraph  
 **Kind**: subscript
 
 A texturecube with RealityKit properties and a explicit level of detail.
@@ -15,13 +15,9 @@ The Cube Image LOD node produces a texture using the contents of the image file 
 
 > **Note**: Create the input file in a `.ktx` format or the node won’t work properly.
 
-Create the input file in a `.ktx` format or the node won’t work properly.
-
 For the wrap mode parameters, the possible values are:
 
 > ⚠️ **Warning**: You can only use the clamp-to-zero option if the `Border Color` parameter is set to `transparent_black`; otherwise, the behavior of the node is undefined.
-
-You can only use the clamp-to-zero option if the `Border Color` parameter is set to `transparent_black`; otherwise, the behavior of the node is undefined.
 
 For the `Mag Filter` and `Min Filter` parameters, the possible values are:
 

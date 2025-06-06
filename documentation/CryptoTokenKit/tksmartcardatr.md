@@ -1,6 +1,6 @@
 # TKSmartCardATR
 
-**Framework**: CryptoTokenKit  
+**Framework**: Cryptotokenkit  
 **Kind**: class
 
 A parsed ATR (Answer To Reset) message from a Smart Card.
@@ -25,8 +25,6 @@ class TKSmartCardATR
 This class declares a programmatic interface to parsing an ATR from data or a byte stream, and accessing the individual parts.
 
 > **Note**:  The [`TKSmartCardATR`](tksmartcardatr.md) class parses ATR messages according to the ISO/IEC 7816-3 specification.
-
- The [`TKSmartCardATR`](tksmartcardatr.md) class parses ATR messages according to the ISO/IEC 7816-3 specification.
 
 ## Topics
 
@@ -72,4 +70,4 @@ This class declares a programmatic interface to parsing an ATR from data or a by
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cryptotokenkit/tksmartcardatr)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CryptoTokenKit/tksmartcardatr)*

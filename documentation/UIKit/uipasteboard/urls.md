@@ -1,6 +1,6 @@
 # urls
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 An array of URL objects in all pasteboard items.
@@ -22,8 +22,6 @@ var urls: [URL]? { get set }
 The value stored in this property is an array of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects. The associated array of representation types is [`typeListURL`](uipasteboard/typelisturl.md), which includes type `kUTTypeURL`. Setting this property replaces all current items in the pasteboard with the new items. The returned array may have fewer objects than the number of pasteboard items; this happens if a pasteboard item does not have a value of the indicated type.
 
 > **Note**:  Do not use this property to determine if a pasteboard contains URL data. Instead, use the [`hasURLs`](uipasteboard/hasurls.md) property.
-
- Do not use this property to determine if a pasteboard contains URL data. Instead, use the [`hasURLs`](uipasteboard/hasurls.md) property.
 
 ## See Also
 

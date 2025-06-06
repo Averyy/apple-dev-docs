@@ -1,6 +1,6 @@
 # Tracking and visualizing faces
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Detect faces in a front-camera AR experience, overlay virtual content, and animate facial expressions in real-time.
 
@@ -24,8 +24,6 @@ Use the tab bar to switch between these modes.
 ![Screenshot of UI for choosing AR face modes.](https://docs-assets.developer.apple.com/published/ad7ee8f029463c1094b9d67248c1529e/FaceExampleModes.png)
 
 > ❗ **Important**: Face tracking is available on all devices with Apple Neural Engine in iOS 14 & iPad OS 14, and requires a device with TrueDepth camera on iOS 13 & iPadOS 13 and below. ARKit is not available in iOS Simulator.
-
-Face tracking is available on all devices with Apple Neural Engine in iOS 14 & iPad OS 14, and requires a device with TrueDepth camera on iOS 13 & iPadOS 13 and below. ARKit is not available in iOS Simulator.
 
 ##### Start a Face Tracking Session in a Scenekit View
 
@@ -97,8 +95,6 @@ func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode
 
 > **Note**: This example uses a texture with transparency to create the illusion of colorful grid lines painted onto a real face. You can use the `wireframeTexture.png` image included with this sample code project as a starting point to design your own face textures.
 
-This example uses a texture with transparency to create the illusion of colorful grid lines painted onto a real face. You can use the `wireframeTexture.png` image included with this sample code project as a starting point to design your own face textures.
-
 ARKit updates its face mesh conform to the shape of the user’s face, even as the user blinks, talks, and makes various expressions. To make the displayed face model follow the user’s expressions, retrieve an updated face meshes in the [`renderer(_:didUpdate:for:)`](arscnviewdelegate/renderer(_:didupdate:for:).md) delegate callback, then update the [`ARSCNFaceGeometry`](arscnfacegeometry.md) object in your scene to match by passing the new face mesh to its [`update(from:)`](arscnfacegeometry/update(from:).md) method:
 
 ```swift
@@ -131,8 +127,6 @@ Because the material renders depth, other objects rendered by SceneKit correctly
 The sample app combines this technique with a SceneKit object positioned in front of the user’s eyes, creating an effect where the user’s nose realistically obscures the object. This object uses physically-based materials, so it automatically benefits from the real-time directional lighting information that [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md) provides.
 
 > **Note**: The `ARFaceGeometry.obj` file included in this sample project represents ARKit’s face geometry in a neutral pose. You can use this as a template to design your own 3D art assets for placement on a real face.
-
-The `ARFaceGeometry.obj` file included in this sample project represents ARKit’s face geometry in a neutral pose. You can use this as a template to design your own 3D art assets for placement on a real face.
 
 ##### Map Camera Video Onto 3d Face Geometry
 
@@ -182,8 +176,6 @@ faceGeometry.setValue(SCNMatrix4Invert(transform), forKey: "displayTransform")
 
 > **Note**: This example’s shader modifier also applies a constant scale factor to all vertices, causing the user’s face to appear larger than life. Try other transformations to distort the face in other ways.
 
-This example’s shader modifier also applies a constant scale factor to all vertices, causing the user’s face to appear larger than life. Try other transformations to distort the face in other ways.
-
 ##### Animate a Character with Blend Shapes
 
 In addition to the face mesh shown in the earlier examples, ARKit also provides a more abstract representation of the user’s facial expressions. You can use this representation (called ) to control animation parameters for your own 2D or 3D assets, creating a character that follows the user’s real facial movements and expressions.
@@ -215,4 +207,4 @@ There are more than 50 unique [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/tracking-and-visualizing-faces)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/tracking-and-visualizing-faces)*

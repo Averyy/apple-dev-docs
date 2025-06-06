@@ -1,6 +1,6 @@
 # Setting up promotional offers
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Generate a key and configure offers for auto-renewable subscriptions in App Store Connect.
 
@@ -11,8 +11,6 @@ You can offer a discounted or free period of service for auto-renewable subscrip
 Before you can provide promotional offers in your app, you must first generate a subscription key and set up the offers in your App Store Connect account.
 
 > **Note**:  If your goal is to attract new users, use introductory offers and promote the in-app purchase on the App Store. Redeeming an introductory offer doesn’t affect a user’s eligibility for a promotional offer. For more information, see [`Implementing introductory offers in your app`](implementing-introductory-offers-in-your-app.md).
-
- If your goal is to attract new users, use introductory offers and promote the in-app purchase on the App Store. Redeeming an introductory offer doesn’t affect a user’s eligibility for a promotional offer. For more information, see [`Implementing introductory offers in your app`](implementing-introductory-offers-in-your-app.md).
 
 ##### Generate a Private Key
 
@@ -27,8 +25,6 @@ Once you’ve generated your subscription key, you’re given the opportunity to
 The keys are provided in base64-encoded PEM format. Apple doesn’t keep a copy of the private key.
 
 > ❗ **Important**:  Store your private subscription key in a safe place. You should never share your keys, store keys in a code repository, or include keys in apps or client-side code.
-
- Store your private subscription key in a safe place. You should never share your keys, store keys in a code repository, or include keys in apps or client-side code.
 
 If the key becomes lost or compromised, revoke it immediately and update your promotional offers. See [`Revoke a subscription key`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev689c93225?sub=dev4587a2b9c) for more information.
 
@@ -52,4 +48,4 @@ For business guidance on using promotional offers, see [`Auto-renewable Subscrip
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/setting-up-promotional-offers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/setting-up-promotional-offers)*

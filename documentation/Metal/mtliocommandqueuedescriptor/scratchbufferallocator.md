@@ -25,8 +25,6 @@ Your app can manage an input/output command queue’s scratch memory by an imple
 
 > **Note**:  An input/output command queue uses scratch buffers for memory-intensives tasks, including loading textures and decompressing asset files.
 
- An input/output command queue uses scratch buffers for memory-intensives tasks, including loading textures and decompressing asset files.
-
 
 ---
 

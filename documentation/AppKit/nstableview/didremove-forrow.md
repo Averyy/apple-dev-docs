@@ -1,6 +1,6 @@
 # didRemove(_:forRow:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Invoked when a row view is removed from the table.
@@ -20,8 +20,6 @@ func didRemove(_ rowView: NSTableRowView, forRow row: Int)
 The subclass can implement this method to be alerted when `rowView` has been removed from the table. The removed `rowView` may be reused by the table, so any additionally inserted views should be removed at this point. Subclasses must be sure to call `super`.
 
 > **Note**:  This method is only applicable to [`NSView`](nsview.md)-based table views.
-
- This method is only applicable to [`NSView`](nsview.md)-based table views.
 
 ## Parameters
 

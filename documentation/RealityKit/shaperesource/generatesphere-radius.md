@@ -1,6 +1,6 @@
 # generateSphere(radius:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Creates a sphere shape with the specified radius.
@@ -26,8 +26,6 @@ The new sphere centered at the local origin.
 #### Discussion
 
 > **Note**: Collision shape extents that fall below 2mm are forced to be 2mm in size - this includes, entities with negative scale values.
-
-Collision shape extents that fall below 2mm are forced to be 2mm in size - this includes, entities with negative scale values.
 
 ## Parameters
 

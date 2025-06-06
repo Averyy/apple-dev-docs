@@ -1,6 +1,6 @@
 # mass
 
-**Framework**: GameplayKit  
+**Framework**: Gameplaykit  
 **Kind**: property
 
 The resistance of the agent to changes in speed or direction.
@@ -24,8 +24,6 @@ var mass: Float { get set }
 The higher the value of this property, the slower the agent will be to respond to goals that change its speed or direction, and vice versa.
 
 > **Note**:  The simulation responsible for agent movement is based on realistic physical behaviors; however, this simulation is  connected to the physics subsystems in SpriteKit, SceneKit, or any other graphics engine. For example, setting the [`mass`](gkagent/mass.md) property of an agent does not affect the collision behavior of any SpriteKit physics bodies.
-
- The simulation responsible for agent movement is based on realistic physical behaviors; however, this simulation is  connected to the physics subsystems in SpriteKit, SceneKit, or any other graphics engine. For example, setting the [`mass`](gkagent/mass.md) property of an agent does not affect the collision behavior of any SpriteKit physics bodies.
 
 ## See Also
 

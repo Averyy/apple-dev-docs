@@ -1,6 +1,6 @@
 # Capturing and Saving Live Photos
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Capture Live Photos like those created in the system Camera app and save them to the Photos library.
 
@@ -9,8 +9,6 @@ Capture Live Photos like those created in the system Camera app and save them to
 A Live Photo is a picture that includes motion and sound from the moments just before and after its capture. Your app can capture and record Live Photos using the AVFoundation capture system and the [`AVCapturePhotoOutput`](avcapturephotooutput.md) class.
 
 > **Note**:  If you’re not already familiar with capture sessions, input setup, and photo capture, see [`Setting Up a Capture Session`](setting-up-a-capture-session.md) and [`Capturing Still and Live Photos`](capturing-still-and-live-photos.md).
-
- If you’re not already familiar with capture sessions, input setup, and photo capture, see [`Setting Up a Capture Session`](setting-up-a-capture-session.md) and [`Capturing Still and Live Photos`](capturing-still-and-live-photos.md).
 
 ##### Enable Live Photo Capture
 
@@ -125,8 +123,6 @@ func photoOutput(_ output: AVCapturePhotoOutput,
 
 > **Note**:  To display Live Photos after capture, see [`PHLivePhoto`](https://developer.apple.com/documentation/Photos/PHLivePhoto) and [`PHLivePhotoView`](https://developer.apple.com/documentation/PhotosUI/PHLivePhotoView).
 
- To display Live Photos after capture, see [`PHLivePhoto`](https://developer.apple.com/documentation/Photos/PHLivePhoto) and [`PHLivePhotoView`](https://developer.apple.com/documentation/PhotosUI/PHLivePhotoView).
-
 ##### Save a Live Photo to the Photos Library
 
 Use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/Photos/PHAssetCreationRequest) class to create a single Photos asset consisting of media from multiple files—in the case of a Live Photo, the still image and its paired video. As in [`Saving Captured Photos`](saving-captured-photos.md), you’ll need to wrap that request in a [`PHPhotoLibrary`](https://developer.apple.com/documentation/Photos/PHPhotoLibrary) change block, and first make sure that your app has the user’s permission to access Photos.
@@ -152,8 +148,6 @@ func saveLivePhotoToPhotosLibrary(stillImageData: Data, livePhotoMovieURL: URL) 
 ```
 
 > 💡 **Tip**:  Use the [`shouldMoveFile`](https://developer.apple.com/documentation/Photos/PHAssetResourceCreationOptions/shouldMoveFile) option so that iOS can transfer the movie file from your app’s sandbox to the system Photos library without an expensive data-copying operation.
-
- Use the [`shouldMoveFile`](https://developer.apple.com/documentation/Photos/PHAssetResourceCreationOptions/shouldMoveFile) option so that iOS can transfer the movie file from your app’s sandbox to the system Photos library without an expensive data-copying operation.
 
 ##### Track Live Photo Progress
 
@@ -207,4 +201,4 @@ class LivePhotoCaptureProcessor: NSObject, AVCapturePhotoCaptureDelegate {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/capturing-and-saving-live-photos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/capturing-and-saving-live-photos)*

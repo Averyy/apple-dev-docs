@@ -24,8 +24,6 @@ Authenticate each call to your server using a shared secret before responding us
 
 > **Note**:  Your web service must use an HTTPS connection for production, but you can use an HTTP connection during testing.
 
- Your web service must use an HTTPS connection for production, but you can use an HTTP connection during testing.
-
 ###### Store Information
 
 Updating passes requires storing information for the registered passes and for their associated devices. One way you can store these details is to use a traditional relational database with two entities – devices and passes – and one relationship, registrations. The three tables are:
@@ -78,8 +76,6 @@ For more information on sending push notifications, see [`Sending notification r
 
 > **Note**:  A push notification for a pass update works only in the production environment.
 
- A push notification for a pass update works only in the production environment.
-
 ###### Return the Updated Passes
 
 A device that receives the push notification requests a list of serial numbers for updated passes, such as a tickets to an event. Your server sends the serial numbers for updated passes.
@@ -125,4 +121,4 @@ The device then sends a request to your server for each updated pass.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/adding-a-web-service-to-update-passes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/adding-a-web-service-to-update-passes)*

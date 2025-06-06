@@ -1,6 +1,6 @@
 # NSPreviewRepresentingActivityItem
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A type that adds metadata to an item you share using the macOS share sheet.
@@ -19,8 +19,6 @@ class NSPreviewRepresentingActivityItem
 An [`NSPreviewRepresentingActivityItem`](nspreviewrepresentingactivityitem.md) object provides a concrete implementation of the [`NSPreviewRepresentableActivityItem`](nspreviewrepresentableactivityitem.md) protocol. Use it to create shareable items for common types such as strings or images, or when you don’t want to adopt the [`NSPreviewRepresentableActivityItem`](nspreviewrepresentableactivityitem.md) protocol directly in your app’s objects. To share the item from your app, initialize the [`NSSharingServicePicker`](nssharingservicepicker.md) object with this object.
 
 > **Note**:  If your data consists of a URL, pass that URL directly to the sharing service picker instead of using this class.
-
- If your data consists of a URL, pass that URL directly to the sharing service picker instead of using this class.
 
 ## Topics
 
@@ -53,4 +51,4 @@ An [`NSPreviewRepresentingActivityItem`](nspreviewrepresentingactivityitem.md) o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nspreviewrepresentingactivityitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nspreviewrepresentingactivityitem)*

@@ -1,6 +1,6 @@
 # makeTransformer()
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Creates a default-initialized impute transformer suitable for incremental fitting.
@@ -23,8 +23,6 @@ func makeTransformer() -> NumericImputer<Element>.Transformer
 #### Discussion
 
 > **Note**: You can’t use incremental fitting with an impute transformer when using the `median` strategy.
-
-You can’t use incremental fitting with an impute transformer when using the `median` strategy.
 
 
 ---

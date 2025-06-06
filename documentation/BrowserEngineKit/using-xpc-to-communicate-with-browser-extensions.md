@@ -1,6 +1,6 @@
 # Using XPC to communicate with browser extensions
 
-**Framework**: BrowserEngineKit
+**Framework**: Browserenginekit
 
 Build interprocess communication between your host app and extensions.
 
@@ -62,8 +62,6 @@ class MyNetworkExtension: NetworkingExtension {
 ```
 
 > ❗ **Important**:  Don’t call [`xpc_main(_:)`](https://developer.apple.com/documentation/XPC/xpc_main(_:)) from a browser extension. This function sets up the event loop for an XPC service, which causes problems if you call it in a process that isn’t an XPC service, for example a browser extension.
-
- Don’t call [`xpc_main(_:)`](https://developer.apple.com/documentation/XPC/xpc_main(_:)) from a browser extension. This function sets up the event loop for an XPC service, which causes problems if you call it in a process that isn’t an XPC service, for example a browser extension.
 
 #### Pass Anonymous Connection Endpoints Between Extensions
 
@@ -131,8 +129,6 @@ To be confident that your browser app or extension is communicating with the cor
 
 > **Note**:  It’s possible for the process sending messages to your XPC connection to change at runtime, for example, if the listener creates an [`xpc_endpoint_t`](https://developer.apple.com/documentation/XPC/xpc_endpoint_t) and forwards it to a different process.
 
- It’s possible for the process sending messages to your XPC connection to change at runtime, for example, if the listener creates an [`xpc_endpoint_t`](https://developer.apple.com/documentation/XPC/xpc_endpoint_t) and forwards it to a different process.
-
 In the sending process, if you send a message over an XPC connection and the receiving process doesn’t satisfy the lightweight code requirement you set, the message isn’t delivered. If you request a reply, XPC delivers the `XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT` error.
 
 In the receiving process, if a process that doesn’t satisfy the lightweight code requirement you set sends a message to your connection, the operating system drops the message and your event handler isn’t called.
@@ -162,4 +158,4 @@ xpc_connection_set_peer_entitlement_matches_value_requirement(connection,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/using-xpc-to-communicate-with-browser-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/using-xpc-to-communicate-with-browser-extensions)*

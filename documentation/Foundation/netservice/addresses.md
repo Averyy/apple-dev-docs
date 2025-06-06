@@ -27,8 +27,6 @@ It is possible for a single service to resolve to more than one address or not r
 
 > **Note**:  This became a property in OS X v10.9 and iOS 7, but the underlying getter method (`addresses`) has been available since this class was first introduced.
 
- This became a property in OS X v10.9 and iOS 7, but the underlying getter method (`addresses`) has been available since this class was first introduced.
-
 ## See Also
 
 - [func resolve()](netservice/resolve.md)

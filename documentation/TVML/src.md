@@ -1,6 +1,6 @@
 # src
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Specifies the URL for an image.
 
@@ -13,8 +13,6 @@ The URL can point to an image on a server or to the resource scheme in your app.
 ```
 
 > **Note**: When this attribute loads an image using an HTTP URL, you must add `height` and `width` attributes to the element.
-
-When this attribute loads an image using an HTTP URL, you must add `height` and `width` attributes to the element.
 
 ##### Values for Src
 
@@ -34,4 +32,4 @@ When this attribute loads an image using an HTTP URL, you must add `height` and 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/src)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/src)*

@@ -1,6 +1,6 @@
 # Unregister Merchant
 
-**Framework**: Apple Pay Web Merchant Registration API  
+**Framework**: Applepaywebmerchantregistrationapi  
 **Kind**: httpRequest
 
 Unregister one or more domains associated with a previously registered merchant.
@@ -16,8 +16,6 @@ If you pass a subset of the merchant’s registered domains, Apple Pay server un
 
 > **Note**:  To access the sandbox environment, use `POST https://apple-pay-gateway-cert.apple.com/paymentservices/unregisterMerchant`.
 
- To access the sandbox environment, use `POST https://apple-pay-gateway-cert.apple.com/paymentservices/unregisterMerchant`.
-
 ## Request Body
 
 The request body for unregistering merchants.
@@ -30,4 +28,4 @@ The request body for unregistering merchants.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepaywebmerchantregistrationapi/unregister-merchant)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayWebMerchantRegistrationAPI/unregister-merchant)*

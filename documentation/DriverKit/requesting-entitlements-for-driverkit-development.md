@@ -1,6 +1,6 @@
 # Requesting Entitlements for DriverKit Development
 
-**Framework**: DriverKit
+**Framework**: Driverkit
 
 Request the entitlement for DriverKit development, and request other entitlements your driver needs to interact with specific devices and interfaces.
 
@@ -31,8 +31,6 @@ Apple ties any requested entitlements to your development team’s profile. When
 
 > **Note**:  While waiting for Apple to grant your entitlement requests, you can continue to develop and test your drivers on your local systems. For information about how to disable the necessary security checks, see [`Debugging and testing system extensions`](debugging-and-testing-system-extensions.md).
 
- While waiting for Apple to grant your entitlement requests, you can continue to develop and test your drivers on your local systems. For information about how to disable the necessary security checks, see [`Debugging and testing system extensions`](debugging-and-testing-system-extensions.md).
-
 ##### Update Your Drivers Entitlements File
 
 Xcode provides a default entitlements file for every new DriverKit driver you create. This file is separate from your app’s entitlements file, and contains only the entitlements that your driver needs to run.
@@ -56,8 +54,6 @@ To distribute a driver using the entitlements that Apple provides, go to the Cer
 When you create the provisioning profile for your driver, the portal prompts you to select any additional entitlements to include with your profile. Select the DriverKit-related entitlements group that Apple added to your development team. You can select only one group, so that group must contain all of the entitlements your driver needs to operate. Download the resulting provisioning profile and configure it as the provisioning profile for your driver.
 
 > **Note**:  During development, you can temporarily disable the normal security checks to simplify the debugging process for your drivers. For more information, see [`Debugging and testing system extensions`](debugging-and-testing-system-extensions.md).
-
- During development, you can temporarily disable the normal security checks to simplify the debugging process for your drivers. For more information, see [`Debugging and testing system extensions`](debugging-and-testing-system-extensions.md).
 
 ##### Add the System Extension Capability to Your App
 
@@ -86,4 +82,4 @@ For more information about how to install drivers, see `Installing System Extens
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/driverkit/requesting-entitlements-for-driverkit-development)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DriverKit/requesting-entitlements-for-driverkit-development)*

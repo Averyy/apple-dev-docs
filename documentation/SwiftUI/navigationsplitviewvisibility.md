@@ -1,6 +1,6 @@
 # NavigationSplitViewVisibility
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 The visibility of the leading columns in a navigation split view.
@@ -30,8 +30,6 @@ Use a value of this type to control the visibility of the columns of a [`Navigat
 - Rely on the automatic behavior for the current context with [`automatic`](navigationsplitviewvisibility/automatic.md).
 
 > **Note**: Some platforms don’t respect every option. For example, macOS always displays the content column.
-
-Some platforms don’t respect every option. For example, macOS always displays the content column.
 
 ## Topics
 
@@ -73,4 +71,4 @@ Some platforms don’t respect every option. For example, macOS always displays 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/navigationsplitviewvisibility)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/navigationsplitviewvisibility)*

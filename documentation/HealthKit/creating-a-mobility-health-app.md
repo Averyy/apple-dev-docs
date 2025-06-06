@@ -1,6 +1,6 @@
 # Creating a Mobility Health App
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Create a health app that allows a clinical care team to send and receive mobility data.
 
@@ -12,8 +12,6 @@ Create a health app that allows a clinical care team to send and receive mobilit
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [`10664: Getting Started in HealthKit`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10664/) and WWDC20 session [`10184: Synchronizing Your Health Data with HealthKit`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10184/).
-
-This sample code project is associated with WWDC20 session [`10664: Getting Started in HealthKit`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10664/) and WWDC20 session [`10184: Synchronizing Your Health Data with HealthKit`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10184/).
 
 ##### Configure the Sample Code Project
 
@@ -42,4 +40,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/creating-a-mobility-health-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/creating-a-mobility-health-app)*

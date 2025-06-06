@@ -1,6 +1,6 @@
 # maxBracketedCapturePhotoCount
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The maximum number of images that the photo capture output can support in a single bracketed capture.
@@ -22,10 +22,6 @@ var maxBracketedCapturePhotoCount: Int { get }
 To perform a bracketed capture of multiple images with varied capture settings, create a [`AVCapturePhotoBracketSettings`](avcapturephotobracketsettings.md) instance containing the combination of settings and bracketed variations you want. The maximum number of photos per capture depends on the size and format of images to be captured.
 
 > **Note**:  This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes. Not all devices and capture formats support bracketed capture. If the current device or active format does not support bracketed capture, this property’s value is zero.
-
- This property’s value can change if the [`sessionPreset`](avcapturesession/sessionpreset.md) property of the current capture session or the [`activeFormat`](avcapturedevice/activeformat.md) property of the underlying capture device changes.
-
-Not all devices and capture formats support bracketed capture. If the current device or active format does not support bracketed capture, this property’s value is zero.
 
 This property supports key-value observing.
 

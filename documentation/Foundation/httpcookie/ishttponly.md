@@ -28,11 +28,7 @@ Cookies can be marked as HTTP-only by a server (or by JavaScript code). Cookies 
 
 > **Note**:  [`RFC 6265`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6265) formally defines the `HttpOnly` attribute.
 
- [`RFC 6265`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6265) formally defines the `HttpOnly` attribute.
-
 > ❗ **Important**:  To prevent cross-site scripting vulnerabilities, don’t deliver cookies marked as HTTP-only to JavaScript code.
-
- To prevent cross-site scripting vulnerabilities, don’t deliver cookies marked as HTTP-only to JavaScript code.
 
 ## See Also
 

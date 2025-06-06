@@ -45,8 +45,6 @@ invalidUTF8.withUnsafeBufferPointer { ptr in
 
 > **Note**: This initializer has been renamed. Use `String.init?(validatingCString:)` instead.
 
-This initializer has been renamed. Use `String.init?(validatingCString:)` instead.
-
 ## Parameters
 
 - `cString`:    A pointer to a null-terminated sequence of UTF-8 code units.

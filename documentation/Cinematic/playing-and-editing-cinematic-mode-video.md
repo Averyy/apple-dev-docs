@@ -12,8 +12,6 @@ Play and edit Cinematic mode video with an adjustable depth of field and focus p
 
 > **Note**: This sample code project is associated with WWDC23 session [`10137: Support Cinematic mode videos in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10137/).
 
-This sample code project is associated with WWDC23 session [`10137: Support Cinematic mode videos in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10137/).
-
 ## See Also
 
 - [class CNScript](cnscript-1ispe.md)
@@ -22,4 +20,4 @@ This sample code project is associated with WWDC23 session [`10137: Support Cine
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cinematic/playing-and-editing-cinematic-mode-video)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Cinematic/playing-and-editing-cinematic-mode-video)*

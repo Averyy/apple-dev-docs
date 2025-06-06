@@ -1,6 +1,6 @@
 # prepare
 
-**Framework**: Media Toolbox  
+**Framework**: Mediatoolbox  
 **Kind**: property
 
 A callback to prepare the tap processor.
@@ -24,8 +24,6 @@ var prepare: MTAudioProcessingTapPrepareCallback?
 Apps can use this callback to allocate memory buffers or perform other preparation. This field an be `NULL`.
 
 > **Note**: The system may call this function multiple times.
-
-The system may call this function multiple times.
 
 ## See Also
 

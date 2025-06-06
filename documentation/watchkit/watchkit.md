@@ -18,8 +18,6 @@ You can also use WatchKit to design your app’s user interface in a storyboard,
 
 > **Note**:  Building your app with SwiftUI gives you more control over the user interface than designing it in a storyboard. When creating a new watchOS app, strongly consider using [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI). For more information, see [`Building a watchOS app`](https://developer.apple.com/documentation/watchOS-Apps/building_a_watchos_app).
 
- Building your app with SwiftUI gives you more control over the user interface than designing it in a storyboard. When creating a new watchOS app, strongly consider using [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI). For more information, see [`Building a watchOS app`](https://developer.apple.com/documentation/watchOS-Apps/building_a_watchos_app).
-
 For more information on building watchOS apps, see [`watchOS apps`](https://developer.apple.com/documentation/watchOS-Apps).
 
 ## Topics

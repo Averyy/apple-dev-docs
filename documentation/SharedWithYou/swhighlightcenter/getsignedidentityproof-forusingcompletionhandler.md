@@ -1,6 +1,6 @@
 # getSignedIdentityProof(for:using:completionHandler:)
 
-**Framework**: Shared With You  
+**Framework**: Sharedwithyou  
 **Kind**: method
 
 Signs passed-in data with the local device’s private key.
@@ -28,21 +28,11 @@ func signedIdentityProof(for collaborationHighlight: SWCollaborationHighlight, u
 func signedIdentityProof(for collaborationHighlight: SWCollaborationHighlight, using data: Data) async throws -> SWPerson.SignedIdentityProof
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func signedIdentityProof(for collaborationHighlight: SWCollaborationHighlight, using data: Data) async throws -> SWPerson.SignedIdentityProof
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 When a collaboration message is sent, the system sends it individually to each of a person’s devices. Messages identifies each device using a cryptographic public key. Since the goal is to allow access only on this set of devices, the root hash is derived from the set of public keys registered to each recipient.
 
 The root hash is the root node of a data structure called a Merkle tree. A Merkle tree is a binary tree that is built by performing a sequence of hashing operations. In order to derive an identity for the user based on their public keys, the keys are used as the leaves of this tree. The hashing algorithm used in the Merkle tree ensures that the root node can only be computed from that set of keys.
 
 > **Note**:  Session 10093: [`Integrate your custom collaboration app with Messages`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10093/)
-
- Session 10093: [`Integrate your custom collaboration app with Messages`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10093/)
 
 ## Parameters
 

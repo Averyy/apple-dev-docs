@@ -29,8 +29,6 @@ The app must also swap web views in tabs when navigating to and from web extensi
 
 > **Note**: Navigations will fail if a web view using this configuration attempts to navigate to a URL that doesn’t originate from this extension’s base URL. Similarly, navigations will be canceled if a web view not configured with this configuration attempts to navigate to a URL that does originate from this extension’s base URL.
 
-Navigations will fail if a web view using this configuration attempts to navigate to a URL that doesn’t originate from this extension’s base URL. Similarly, navigations will be canceled if a web view not configured with this configuration attempts to navigate to a URL that does originate from this extension’s base URL.
-
 
 ---
 

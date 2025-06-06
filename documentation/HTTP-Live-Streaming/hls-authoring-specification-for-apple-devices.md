@@ -1,6 +1,6 @@
 # HTTP Live Streaming (HLS) authoring specification for Apple devices
 
-**Framework**: HTTP Live Streaming
+**Framework**: Http Live Streaming
 
 Learn the requirements for live and on-demand audio and video content delivery using HLS.
 
@@ -13,8 +13,6 @@ For a deeper discussion of the features available in HLS, refer to [`Apple’s s
 The HLS specification is a published RFC ([`RFC 8216`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc8216)). However, HLS continues to evolve, so there’s an updated draft specification — [`draft-pantos-hls-rfc8216bis (HLS2)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis). This document always uses the most recent version of the draft standard.
 
 > **Note**: HLS was originally specified in draft-pantos-http-live-streaming (HLS1). That document was superseded by RFC 8216.
-
-HLS was originally specified in draft-pantos-http-live-streaming (HLS1). That document was superseded by RFC 8216.
 
 The key words “MUST,” “MUST NOT,” “REQUIRED,” “SHALL,” “SHALL NOT,” “SHOULD,” “SHOULD NOT,” “RECOMMENDED,” “MAY,” and “OPTIONAL” in this document are to be interpreted as described in [`RFC 2119`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc8219).
 
@@ -116,10 +114,6 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 | 3840 x 2160 | 16800 | 20000 | Same as source |
 
 > **Note**: The above bit rates are initial encoding targets for typical content delivered via HLS. Apple recommends that you evaluate them against your specific content and encoding workflow, then adjust accordingly. 30i source content is considered to have a source frame rate of 60 fps. 24 fps HEVC content should use bit rates reduced by about 20% from the values above.
-
-The above bit rates are initial encoding targets for typical content delivered via HLS. Apple recommends that you evaluate them against your specific content and encoding workflow, then adjust accordingly.
-
-30i source content is considered to have a source frame rate of 60 fps. 24 fps HEVC content should use bit rates reduced by about 20% from the values above.
 
 1.26. For VOD content, the average segment bit rate MUST be within 10% of the `AVERAGE-BANDWIDTH` attribute. (See [`Declared versus measured values of bandwidths`](hls-authoring-specification-for-apple-devices-appendixes#Declared-versus-measured-values-of-bandwidths.md).)
 
@@ -333,10 +327,6 @@ The above bit rates are initial encoding targets for typical content delivered v
 
 > **Note**: These bit rates are based on the assumption of a 1 fps dense I-frame track. The values should be modified based on the actual frame rate of the I-frame rendition. (See item 6.5.) The above tables are average bit rates. Earlier versions of this specification used peak bit rates.
 
-These bit rates are based on the assumption of a 1 fps dense I-frame track. The values should be modified based on the actual frame rate of the I-frame rendition. (See item 6.5.)
-
-The above tables are average bit rates. Earlier versions of this specification used peak bit rates.
-
 6.8. I-frame playlists MUST contain the `EXT-X-I-FRAMES-ONLY` tag.
 
 6.9. The peak segment bit rate MUST be calculated according to the HLS specification.
@@ -504,13 +494,9 @@ The above tables are average bit rates. Earlier versions of this specification u
 
 > **Note**: The M3U playlist MIME type `audio/mpegurl` isn’t registered with the IANA. According to the IANA, the `audio/aac` MIME type allows LATM/LOAS or ADTS. HLS only supports ADTS. Some older players are known to reject `text/vtt` as an illegal type. For compatibility, `text/plain` is acceptable.
 
-The M3U playlist MIME type `audio/mpegurl` isn’t registered with the IANA. According to the IANA, the `audio/aac` MIME type allows LATM/LOAS or ADTS. HLS only supports ADTS. Some older players are known to reject `text/vtt` as an illegal type. For compatibility, `text/plain` is acceptable.
-
 ###### Privacy
 
 > **Note**: In a future release, Apple may require delivery over TLS.
-
-In a future release, Apple may require delivery over TLS.
 
 11. 
 
@@ -562,8 +548,6 @@ In a future release, Apple may require delivery over TLS.
 
 > **Note**: HD is approximately the range of 720p to 1080p.
 
-HD is approximately the range of 720p to 1080p.
-
 ###### Low Latency Hls
 
 14. 
@@ -588,8 +572,6 @@ HD is approximately the range of 720p to 1080p.
 
 > **Note**: Other requirements only apply to the playlists and media received by a single client. SharePlay adds requirements that apply to all participants in the SharePlay session.
 
-Other requirements only apply to the playlists and media received by a single client. SharePlay adds requirements that apply to all participants in the SharePlay session.
-
 15. 
 
 15.1. For live (linear) content, the timeline derived from the EXT-X-PROGRAM-DATE-TIME tag is used for synchronization. That timeline MUST be in agreement for all participants.
@@ -605,8 +587,6 @@ Other requirements only apply to the playlists and media received by a single cl
 16.1. All variants containing stereo video content MUST be marked with a REQ-VIDEO-LAYOUT attribute.
 
 > **Note**: Stereo video is only supported in visionOS. See amended requirements for visionOS.
-
-Stereo video is only supported in visionOS. See amended requirements for visionOS.
 
 ##### Amended Requirements for Tvos
 
@@ -757,8 +737,6 @@ All general rules apply except as expressly modified by a rule with the same num
 
 > **Note**: AirPlay on older third-party TVs does  support the Sample Group Description Box (`'sgpd'`) and Sample to Group Box (`'sbgp'`) for encrypted content. You must remove them from encrypted CMAF content to enable playback.
 
-AirPlay on older third-party TVs does  support the Sample Group Description Box (`'sgpd'`) and Sample to Group Box (`'sbgp'`) for encrypted content. You must remove them from encrypted CMAF content to enable playback.
-
 ###### Video
 
 1. 
@@ -866,4 +844,4 @@ The following table describes the changes to this document.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/hls-authoring-specification-for-apple-devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices)*

@@ -1,6 +1,6 @@
 # AVMultiCamPiP: Capturing from Multiple Cameras
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
 
@@ -12,8 +12,6 @@ Simultaneously record the output from the front and back cameras into a single m
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`225: Advances in Camera Capture & Portrait Segmentation`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/225/).
-
-This sample code project is associated with WWDC 2019 session [`225: Advances in Camera Capture & Portrait Segmentation`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/225/).
 
 ##### Configure the Sample Code Project
 
@@ -46,4 +44,4 @@ You must run this sample code on one of these devices:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avmulticampip-capturing-from-multiple-cameras)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avmulticampip-capturing-from-multiple-cameras)*

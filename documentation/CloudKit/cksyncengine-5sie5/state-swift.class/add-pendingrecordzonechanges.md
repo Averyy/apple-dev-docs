@@ -1,6 +1,6 @@
 # add(pendingRecordZoneChanges:)
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: method
 
 Adds the specified record zone changes to the state.
@@ -29,8 +29,6 @@ If there are no scheduled sync operations when you invoke this method, the sync 
 The sync engine ensures the consistency of any pending changes it’s tracking, deduplicating them as necessary. The engine removes changes from the list as it sends them, but retains any that fail due to a recoverable error, such as a network issue or exceeding the rate limit.
 
 > **Note**:  The order in which you apply record zone changes is important. For example, if you add a save change and then a delete change, the sync engine discards the save and sends only the delete change. The reverse is also true.
-
- The order in which you apply record zone changes is important. For example, if you add a save change and then a delete change, the sync engine discards the save and sends only the delete change. The reverse is also true.
 
 ## Parameters
 

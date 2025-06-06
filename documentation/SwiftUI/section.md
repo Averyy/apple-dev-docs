@@ -1,6 +1,6 @@
 # Section
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A container view that you can use to add hierarchy within certain views.
@@ -35,8 +35,6 @@ Use `Section` instances in views like [`List`](list.md), [`Picker`](picker.md), 
 Create sections that expand and collapse by using an initializer that accepts an `isExpanded` binding. A collapsible section in a [`List`](list.md) that uses the [`sidebar`](liststyle/sidebar.md) style shows a disclosure indicator next to the section’s header. Tapping on the disclosure indicator toggles the appearance of the section’s content.
 
 > **Note**: Not all contexts provide a default control to trigger collapse or expansion.
-
-Not all contexts provide a default control to trigger collapse or expansion.
 
 ## Topics
 
@@ -84,4 +82,4 @@ Not all contexts provide a default control to trigger collapse or expansion.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/section)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/section)*

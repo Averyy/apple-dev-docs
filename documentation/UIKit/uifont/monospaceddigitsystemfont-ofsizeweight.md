@@ -1,6 +1,6 @@
 # monospacedDigitSystemFont(ofSize:weight:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Returns the standard system font with all digits of consistent width.
@@ -28,8 +28,6 @@ A font object of the specified size and weight, with variable-width text and fix
 The system font uses proportional spacing. When displaying numerical data, you can use this method to retrieve a monospace font for displaying that data. With a monospaced font, each digit occupies the same amount of space, which makes it easier to read numbers that are stacked vertically.
 
 > **Note**:  This method returns the same font as [`systemFont(ofSize:weight:)`](uifont/systemfont(ofsize:weight:).md), but with modified digits. If you want all characters to be fixed-width, use [`monospacedSystemFont(ofSize:weight:)`](uifont/monospacedsystemfont(ofsize:weight:).md) instead.
-
- This method returns the same font as [`systemFont(ofSize:weight:)`](uifont/systemfont(ofsize:weight:).md), but with modified digits. If you want all characters to be fixed-width, use [`monospacedSystemFont(ofSize:weight:)`](uifont/monospacedsystemfont(ofsize:weight:).md) instead.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Creating a plane with low-level mesh
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Create a low-level mesh and set its vertex positions and normals to form a plane.
 
@@ -121,8 +121,6 @@ Prepare the mesh for rendering by filling in its vertex and index buffers with d
 
 > **Note**: You can also fill in the data on the GPU by running a Metal compute shader (see [`Generating interactive geometry with RealityKit`](generating-interactive-geometry-with-realitykit.md)).
 
-You can also fill in the data on the GPU by running a Metal compute shader (see [`Generating interactive geometry with RealityKit`](generating-interactive-geometry-with-realitykit.md)).
-
 Start by defining a helper method that converts a two-dimensional vertex coordinate to a one-dimensional vertex buffer array index:
 
 ```swift
@@ -220,8 +218,6 @@ Loop over the indices within the [`withUnsafeMutableIndices`](https://developer.
 
 > **Note**: The winding order of the vertices in a triangle determine which side of the triangle is the front. RealityKit considers a counterclockwise winding order to be front-facing.
 
-The winding order of the vertices in a triangle determine which side of the triangle is the front. RealityKit considers a counterclockwise winding order to be front-facing.
-
 #### Initialize the Mesh Parts
 
 Initialize the mesh parts by specifying the mesh’s index count, topology, and bounds:
@@ -242,8 +238,6 @@ func initializeMeshParts() {
 In this example, the `maxVertexDepth` property specifies the maximum offset depth for the vertices. The mesh’s bounding box relies on this value to ensure it will encompass the vertices at all times, even if they are offset from their original positions.
 
 > **Note**: RealityKit uses `bounds` to determine whether or not to cull an object during rendering. Therefore, it’s essential that the bounds you define are large enough to contain all of the vertices of your mesh; otherwise, RealityKit may not render it correctly.
-
-RealityKit uses `bounds` to determine whether or not to cull an object during rendering. Therefore, it’s essential that the bounds you define are large enough to contain all of the vertices of your mesh; otherwise, RealityKit may not render it correctly.
 
 #### Create an Entity with the Low Level Mesh
 
@@ -291,4 +285,4 @@ The following image shows the result of rendering a `PlaneMesh`’s low-level me
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-a-plane-with-low-level-mesh)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-a-plane-with-low-level-mesh)*

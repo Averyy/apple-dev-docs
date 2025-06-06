@@ -25,8 +25,6 @@ The stereo track is associated as the fallback track for the Spatial Audio track
 
 > ❗ **Important**: If your app examines or uses audio tracks directly, it should honor the relationship between tracks in an alternate group, and use no more than one track from any alternate group at one time. If you mix audio from different tracks in the same group, your app will produce incorrect audio.
 
-If your app examines or uses audio tracks directly, it should honor the relationship between tracks in an alternate group, and use no more than one track from any alternate group at one time. If you mix audio from different tracks in the same group, your app will produce incorrect audio.
-
 #### Enabled Tracks
 
 When you use [`AVAsset`](https://developer.apple.com/documentation/AVFoundation/AVAsset) APIs to access tracks in a movies, each track in the asset reports an `isEnabled` property telling you whether the track is marked in the movie file as enabled or disabled.
@@ -51,11 +49,7 @@ To query alternate track groups, use the [`trackGroups`](https://developer.apple
 
 > ❗ **Important**: If your app currently iterates over audio tracks for custom processing without taking notice of whether the tracks are enabled or disabled, you should update it to do so.
 
-If your app currently iterates over audio tracks for custom processing without taking notice of whether the tracks are enabled or disabled, you should update it to do so.
-
 > **Note**: [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) uses a more sophisticated strategy. It automatically enables the audio track appropriate for the current audio route and disables the others.
-
-[`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) uses a more sophisticated strategy. It automatically enables the audio track appropriate for the current audio route and disables the others.
 
 #### Enabled State in Movie File Tracks
 
@@ -64,8 +58,6 @@ When you’re using [`AVFoundation`](https://developer.apple.com/documentation/A
 If you have reasons to implement parsing and writing yourself, you’ll need to understand where to find the enabled and alternate group state of tracks in the movie file format, whether [`QuickTime File Format`](https://developer.apple.com/documentation/quicktime-file-format) or ISO Base Media File Format (`ISOBMFF`) (ISO/IEC 14496-12:2020).
 
 > **Note**: `MP4` files are the best known member of the `ISOBMFF` family.
-
-`MP4` files are the best known member of the `ISOBMFF` family.
 
 QuickTime Movie and `ISOBMFF` files both carry audiovisual media. The QuickTime File Format and `ISOBMFF` are very similar, as the latter was based upon the former. The format organization of QuickTime Movie files uses structures called “atoms”. `ISOBMFF` files uses many of the same structures but calls them “boxes”. You can find descriptions of “Track atom” and “TrackBox”, for instance, by reading the respective specifications.
 
@@ -85,8 +77,6 @@ A track’s alternate group is signaled using a 16-bit integer used to associate
 A value of `0` indicates the track is not a member of an alternate group. A non-zero value in one track can be matched to the same value in other tracks to identify alternate group membership.
 
 > **Note**: If more than one audio or video track is present in an alternate group, their `track_enabled` flags, as described above, indicate the default choice of track from the group to be presented. The ordering of their serialization in the file should not be considered significant.
-
-If more than one audio or video track is present in an alternate group, their `track_enabled` flags, as described above, indicate the default choice of track from the group to be presented. The ordering of their serialization in the file should not be considered significant.
 
 #### Revision History
 
@@ -128,4 +118,4 @@ If more than one audio or video track is present in an alternate group, their `t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3177-understanding-alternate-audio-track-groups-in-movie-files)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3177-understanding-alternate-audio-track-groups-in-movie-files)*

@@ -1,6 +1,6 @@
 # shouldFocusCell(_:atColumn:row:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Returns whether the fully prepared cell at the specified row and column can be made the focused cell.
@@ -26,8 +26,6 @@ By default, only cells that are enabled can be focused. In addition, if the cell
 Subclasses can override this to further control which cells can and can’t be made focused.
 
 > **Note**:  This method is only applicable to [`NSCell`](nscell.md)-based table views.
-
- This method is only applicable to [`NSCell`](nscell.md)-based table views.
 
 ## Parameters
 

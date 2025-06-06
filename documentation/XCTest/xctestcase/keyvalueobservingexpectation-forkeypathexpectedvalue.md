@@ -30,8 +30,6 @@ Creates an [`XCTestExpectation`](xctestexpectation.md) that uses Key Value Obser
 
 > **Note**:  For more control over KVO-based expectations, use [`XCTKVOExpectation`](xctkvoexpectation.md) instead of this convenience method.
 
- For more control over KVO-based expectations, use [`XCTKVOExpectation`](xctkvoexpectation.md) instead of this convenience method.
-
 ## Parameters
 
 - `objectToObserve`: The object to observe.

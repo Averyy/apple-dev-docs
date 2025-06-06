@@ -1,6 +1,6 @@
 # Running workout sessions
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Track a workout on Apple Watch.
 
@@ -37,8 +37,6 @@ healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (su
 
 > **Note**:  In watchOS 6 and later, users can authorize reading and sharing data on Apple Watch. As a result, you must add usage descriptions to your WatchKit App Extension. Use the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthShareUsageDescription) key to describe why your app needs to read the requested data. Use [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthUpdateUsageDescription) for the data your app intends to write. For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
 
- In watchOS 6 and later, users can authorize reading and sharing data on Apple Watch. As a result, you must add usage descriptions to your WatchKit App Extension. Use the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthShareUsageDescription) key to describe why your app needs to read the requested data. Use [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthUpdateUsageDescription) for the data your app intends to write. For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
-
 Apps with an active workout session can run in the background, so you need to add the background modes capability to your WatchKit App Extension.
 
 Workout sessions require the Workout processing background mode. If your app plays audio or provides haptic feedback during the workout session, you must also add the Audio background mode.
@@ -48,8 +46,6 @@ Workout sessions require the Workout processing background mode. If your app pla
 Use the [`AVAudioPlayer`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer) class to play short audio clips. To play long form audio in the background, see [`Playing Background Audio`](https://developer.apple.com/documentation/WatchKit/playing-background-audio).
 
 > **Note**:  Workout apps can use the AVFoundation framework to play short audio clips in the background, such as coaching or notifications. In order to play an audio clip, an active workout session must be running; any attempt to play background audio outside a workout session are invalid.
-
- Workout apps can use the AVFoundation framework to play short audio clips in the background, such as coaching or notifications. In order to play an audio clip, an active workout session must be running; any attempt to play background audio outside a workout session are invalid.
 
 ##### Start a Session
 
@@ -63,7 +59,7 @@ configuration.locationType = .outdoor
 
 Use the configuration to set the type of activity and the location for the workout. Apple Watch optimizes both the sensors and the calorimetry based on the configuration.
 
-For example, while the session runs, Apple Watch automatically saves active energy-burned samples to the HealthKit store. HealthKit provides optimized calorie calculations for run, walk, cycle, stair-climbing, elliptical, and rowing activities. Furthermore, the calculations for run, walk, and cycle activities differ between indoor and outdoor locations. For all other activities, the system estimates calories based on the data from Apple Watch’s sensors. This rate is never lower than the brisk walk burn rate.
+For example, while the session runs, Apple Watch automatically saves active energy-burned samples to the HealthKit store. HealthKit provides optimized calorie calculations for some activities. These include, but are not limited to, run, walk, cycle, stair-climbing, elliptical, and rowing activities. Furthermore, the calculations for activities may differ between indoor and outdoor locations. For all other activities, the system estimates calories based on the data from Apple Watch’s sensors. Depending on the activity, this rate is either never lower than the brisk walk burn rate or never lower than the brisk walk burn rate when moving.
 
 Next, use the configuration to create your workout session and get a reference to the session’s [`HKLiveWorkoutBuilder`](hkliveworkoutbuilder.md) object.
 
@@ -228,4 +224,4 @@ As soon as you receive the session object, you must access its builder and set u
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/running-workout-sessions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/running-workout-sessions)*

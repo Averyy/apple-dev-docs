@@ -1,6 +1,6 @@
 # linkedLibrary(_:_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Declares linkage to a system library.
@@ -19,8 +19,6 @@ static func linkedLibrary(_ library: String, _ condition: BuildSettingCondition?
 This setting is most useful when the library can’t be linked automatically, such as C++ based libraries and non-modular libraries.
 
 > **Note**: First available in PackageDescription 5.0.
-
-First available in PackageDescription 5.0.
 
 ## Parameters
 

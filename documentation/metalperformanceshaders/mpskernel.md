@@ -1,6 +1,6 @@
 # MPSKernel
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A standard interface for Metal Performance Shaders kernels.
@@ -41,8 +41,6 @@ commandBuffer.commit()
 ```
 
 > **Note**: It should be self evident that step 2 may not be thread safe. That is, you can not have multiple threads manipulating the same properties on the same kernel object at the same time and achieve coherent output. In common usage, the kernel properties don’t often need to be changed from their default values, but if you need to apply the same filter to multiple images on multiple threads with cropping/tiling, make additional kernel objects per thread (they are cheap). You can use multiple kernel objects on multiple threads, as long as only one thread is operating on any particular kernel object at a time.
-
-It should be self evident that step 2 may not be thread safe. That is, you can not have multiple threads manipulating the same properties on the same kernel object at the same time and achieve coherent output. In common usage, the kernel properties don’t often need to be changed from their default values, but if you need to apply the same filter to multiple images on multiple threads with cropping/tiling, make additional kernel objects per thread (they are cheap). You can use multiple kernel objects on multiple threads, as long as only one thread is operating on any particular kernel object at a time.
 
 ## Topics
 

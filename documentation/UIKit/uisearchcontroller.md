@@ -1,6 +1,6 @@
 # UISearchController
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A view controller that manages the display of search results based on interactions with a search bar.
@@ -28,8 +28,6 @@ In iOS, incorporate the search controller’s [`searchBar`](uisearchcontroller/s
 In tvOS, start with a [`UISearchContainerViewController`](uisearchcontainerviewcontroller.md) to manage the presentation of the search controller. See [`UIKit Catalog (tvOS): Creating and Customizing UIKit Controls`](https://developer.apple.comhttps://developer.apple.com/library/archive/samplecode/UICatalogFortvOS/Introduction/Intro.html#//apple_ref/doc/uid/TP40016433) to learn how to implement a search controller embedded inside a `UISearchContainerViewController` object.
 
 > **Note**:  Don’t use a [`UISearchContainerViewController`](uisearchcontainerviewcontroller.md) in iOS.
-
- Don’t use a [`UISearchContainerViewController`](uisearchcontainerviewcontroller.md) in iOS.
 
 ##### Display Search Results
 
@@ -144,4 +142,4 @@ To customize the presentation or dismissal of the search results controller, set
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uisearchcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uisearchcontroller)*

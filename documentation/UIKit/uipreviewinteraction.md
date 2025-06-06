@@ -1,6 +1,6 @@
 # UIPreviewInteraction
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A class that registers a view to provide a custom user experience in response to 3D Touch interactions.
@@ -27,8 +27,6 @@ A 3D Touch interaction results in a  that comprises two phases, the first also c
 When using view controller previewing,  represents the preview phase, and  the commit phase.
 
 > **Note**:  If you want to provide the system default view controller previewing behavior ( and ), use the [`registerForPreviewing(with:sourceView:)`](uiviewcontroller/registerforpreviewing(with:sourceview:).md) and [`unregisterForPreviewing(withContext:)`](uiviewcontroller/unregisterforpreviewing(withcontext:).md) methods on [`UIViewController`](uiviewcontroller.md) instead of [`UIPreviewInteraction`](uipreviewinteraction.md). See `Working With 3D Touch Previews and Preview Quick Actions` for further details.
-
- If you want to provide the system default view controller previewing behavior ( and ), use the [`registerForPreviewing(with:sourceView:)`](uiviewcontroller/registerforpreviewing(with:sourceview:).md) and [`unregisterForPreviewing(withContext:)`](uiviewcontroller/unregisterforpreviewing(withcontext:).md) methods on [`UIViewController`](uiviewcontroller.md) instead of [`UIPreviewInteraction`](uipreviewinteraction.md). See `Working With 3D Touch Previews and Preview Quick Actions` for further details.
 
 A preview interaction is responsible for managing 3D Touch interactions for a specified view. It uses a delegate object to communicate the progress and status of the interaction to your code.
 
@@ -81,4 +79,4 @@ For more information about the state transitions through which a preview interac
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipreviewinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipreviewinteraction)*

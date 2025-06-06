@@ -10,8 +10,6 @@ Many of the APIs you use in Swift take a closure—or a function passed as an in
 
 > ❗ **Important**: Making false assumptions about when a closure is called can lead to data inconsistency and app crashes.
 
-Making false assumptions about when a closure is called can lead to data inconsistency and app crashes.
-
 ##### Understand the Results of Synchronous and Asynchronous Calls
 
 When you pass a closure to an API, consider  that closure will be called relative to the other code in your app. In synchronous APIs, the result of calling the closure will be available immediately after you pass the closure. In asynchronous APIs, the result won’t be available until sometime later; this difference affects how you write code both  your closure as well as the code  your closure.
@@ -55,8 +53,6 @@ let semaphore = DispatchSemaphore(value: 0).wait(timeout: .now() + 10)
 Running the code in the example above usually prints the letters in the order `B` → `C` → `D` → `A`. Even though the line that prints `A` is first in the code, it’s ordered later in the output. The ordering difference happens due to the way the `now(_:)` and `later(_:)` functions are defined. You need to know how each function calls its closure if you write code that relies on a specific execution order.
 
 > **Note**: The order in which `A` is printed relative to the other letters isn’t guaranteed. Under typical system conditions, it’s usually printed last, but you shouldn’t write code that relies on the order of an asychronous call relative to synchronous code without performing more careful synchronization between threads.
-
-The order in which `A` is printed relative to the other letters isn’t guaranteed. Under typical system conditions, it’s usually printed last, but you shouldn’t write code that relies on the order of an asychronous call relative to synchronous code without performing more careful synchronization between threads.
 
 You’ll need to consider this kind of time-based execution problem frequently when using APIs that take closures. In many cases, only one sequence of calls is correct for your app, so it’s important to think through what the state of your app will be, given the APIs you’re using. Use API names and parameter names along with documentation to determine whether an API is synchronous or asynchronous.
 
@@ -159,4 +155,4 @@ if amountOwed > 0 {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/preventing-timing-problems-when-using-closures)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/preventing-timing-problems-when-using-closures)*

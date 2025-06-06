@@ -1,6 +1,6 @@
 # PCIDriverKit
 
-**Framework**: PCIDriverKit  
+**Framework**: Pcidriverkit  
 **Kind**: module
 
 Develop device drivers for Peripheral Component Interconnect (PCI) accessories.
@@ -20,8 +20,6 @@ Use the PCIDriverKit framework to develop drivers that manage custom features on
 On macOS, use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade your driver. On iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
 
 > **Note**:  PCIDriverKit is available on macOS for Intel and Apple Silicon devices, and on iPadOS for devices with an M-series chip.
-
- PCIDriverKit is available on macOS for Intel and Apple Silicon devices, and on iPadOS for devices with an M-series chip.
 
 ## Topics
 

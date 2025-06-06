@@ -15,8 +15,6 @@ The ARMv6 specification defines the calling conventions for passing arguments an
 
 > **Note**: Apple defines its own procedural programming interfaces for passing arguments to functions. Object-oriented languages may use different rules for their own method calls. For example, the conventions for C++ virtual functions are typically different than the conventions for C functions.
 
-Apple defines its own procedural programming interfaces for passing arguments to functions. Object-oriented languages may use different rules for their own method calls. For example, the conventions for C++ virtual functions are typically different than the conventions for C functions.
-
 The Procedure Call Standard for the ARM Architecture (AAPCS) is available at [`https://developer.arm.com`](https://developer.apple.comhttps://developer.arm.com).
 
 ##### Preserve Specific Registers in Armv6
@@ -179,4 +177,4 @@ For complete details about argument-passing and return result behaviors, see the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/writing-armv6-code-for-ios)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/writing-armv6-code-for-ios)*

@@ -1,6 +1,6 @@
 # requestReview(in:)
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: method
 
 Tells StoreKit to ask the customer to rate or review the app, if appropriate, using the specified scene.
@@ -26,8 +26,6 @@ When you call this method in your shipping app and the system displays a rating 
 - If the person has rated or reviewed your app on this device, StoreKit displays the ratings and review request if the app version is new, and if more than 365 days have passed since the person’s previous review.
 
 > **Note**:  Because this method may not present an alert, don’t call [`requestReview()`](skstorereviewcontroller/requestreview().md) or [`requestReview(in:)`](skstorereviewcontroller/requestreview(in:).md) in response to a button tap or other user action.
-
- Because this method may not present an alert, don’t call [`requestReview()`](skstorereviewcontroller/requestreview().md) or [`requestReview(in:)`](skstorereviewcontroller/requestreview(in:).md) in response to a button tap or other user action.
 
 It’s up to your app to decide on the best timing for requesting reviews. For design guidance, see Human Interface Guidelines > [`Ratings and reviews`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews).
 

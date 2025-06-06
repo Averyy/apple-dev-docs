@@ -1,6 +1,6 @@
 # originator
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The participant that causes the coordinator to issue the command.
@@ -24,8 +24,6 @@ var originator: AVCoordinatedPlaybackParticipant? { get }
 Only commands that the system issues on behalf of another participant contain an originator. Local commands to coordinate rate change, or those that originate from a call to [`reapplyCurrentItemStateToPlaybackControlDelegate()`](avdelegatingplaybackcoordinator/reapplycurrentitemstatetoplaybackcontroldelegate().md), don’t.
 
 > **Note**:  You can use the existance of an originator value to show a user interface that indicates another partipant’s action.
-
- You can use the existance of an originator value to show a user interface that indicates another partipant’s action.
 
 ## See Also
 

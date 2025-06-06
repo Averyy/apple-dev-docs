@@ -30,8 +30,6 @@ A [`UNNotificationCategory`](unnotificationcategory.md) object defines a type of
 
 > **Note**:  When someone performs a Double Tap gesture while viewing a notification on Apple Watch Series 9 or Apple Watch Ultra 2, the system invokes the first nondestructive action. A nondestructive action doesn’t include the [`destructive`](unnotificationactionoptions/destructive.md) option, and won’t delete user data or change the app irrevocably.
 
- When someone performs a Double Tap gesture while viewing a notification on Apple Watch Series 9 or Apple Watch Ultra 2, the system invokes the first nondestructive action. A nondestructive action doesn’t include the [`destructive`](unnotificationactionoptions/destructive.md) option, and won’t delete user data or change the app irrevocably.
-
 To apply category objects to your notifications, include the category’s identifier string in the payload of any notifications you create. For local notifications, put this string in the [`categoryIdentifier`](unmutablenotificationcontent/categoryidentifier.md) property of the [`UNMutableNotificationContent`](unmutablenotificationcontent.md) object that you use to specify the notification’s content. For remote notifications, use this string as the value of the `category` key in the `aps` dictionary of your payload.
 
 Categories can have associated actions, which define custom buttons the system displays for notifications of that category. When the system has unlimited space, the system displays up to 10 actions. When the system has limited space, the system displays at most two actions.
@@ -89,4 +87,4 @@ Categories can have associated actions, which define custom buttons the system d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/unnotificationcategory)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/unnotificationcategory)*

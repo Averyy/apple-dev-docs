@@ -26,8 +26,6 @@ The property returns `nil` if the information isn’t available. The allocated s
 
 > **Note**:  This only applies to regular files.
 
- This only applies to regular files.
-
 ## See Also
 
 - [var documentIdentifier: Int?](urlresourcevalues/documentidentifier.md)

@@ -1,6 +1,6 @@
 # MKPinAnnotationView
 
-**Framework**: MapKit  
+**Framework**: Mapkit  
 **Kind**: class
 
 An annotation view that displays a pin image on the map.
@@ -25,8 +25,6 @@ class MKPinAnnotationView
 Return instances of this class from the [`mapView(_:viewFor:)`](mkmapviewdelegate/mapview(_:viewfor:)-8humz.md) method of your map view delegate when you want to display a pin for one of your annotations. The pins displayed by this view are the same ones found in the Maps application. You can specify the type of pin you want to display and whether you want the pin to be animated into place.
 
 > **Note**:  In iOS 5.1 and earlier, the MapKit framework uses the Google Mobile Maps (GMM) service to provide map data. Use of specific classes of this framework (and their associated interfaces) is subject to the Google Mobile Maps terms of service, found at [`http://code.google.com/apis/maps/iphone/terms.html`](https://developer.apple.comhttp://code.google.com/apis/maps/iphone/terms.html).
-
- In iOS 5.1 and earlier, the MapKit framework uses the Google Mobile Maps (GMM) service to provide map data. Use of specific classes of this framework (and their associated interfaces) is subject to the Google Mobile Maps terms of service, found at [`http://code.google.com/apis/maps/iphone/terms.html`](https://developer.apple.comhttp://code.google.com/apis/maps/iphone/terms.html).
 
 ## Topics
 
@@ -101,4 +99,4 @@ Return instances of this class from the [`mapView(_:viewFor:)`](mkmapviewdelegat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/mkpinannotationview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKit/mkpinannotationview)*

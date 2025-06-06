@@ -1,6 +1,6 @@
 # status
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A value that indicates the readiness of a player object for playback.
@@ -28,8 +28,6 @@ If the value of this property is [`AVPlayer.Status.failed`](avplayer/status-swif
 This property is key-value observable.
 
 > **Note**:  The player’s [`status`](avplayer/status-swift.property.md) doesn’t indicate its readiness to play a specific player item. You should instead use the [`status`](avplayeritem/status-swift.property.md) property of [`AVPlayerItem`](avplayeritem.md) to make that determination.
-
- The player’s [`status`](avplayer/status-swift.property.md) doesn’t indicate its readiness to play a specific player item. You should instead use the [`status`](avplayeritem/status-swift.property.md) property of [`AVPlayerItem`](avplayeritem.md) to make that determination.
 
 ## See Also
 

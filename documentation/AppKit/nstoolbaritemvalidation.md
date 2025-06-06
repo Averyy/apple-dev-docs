@@ -1,6 +1,6 @@
 # NSToolbarItemValidation
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: protocol
 
 Validation of a toolbar item.
@@ -19,8 +19,6 @@ protocol NSToolbarItemValidation : NSObjectProtocol
 A toolbar item with a valid target and action is enabled by default. To allow a toolbar item to be disabled in certain situations, a toolbar item’s target can implement the [`validateToolbarItem(_:)`](nstoolbaritemvalidation/validatetoolbaritem(_:).md) method.
 
 > **Note**:  The [`NSToolbarItem`](nstoolbaritem.md) [`validate()`](nstoolbaritem/validate().md) method is called only if the item’s target has a valid action defined on its target and if the item isn’t a custom view item. If you want to validate a custom view item, then you have to subclass [`NSToolbarItem`](nstoolbaritem.md) and override [`validate()`](nstoolbaritem/validate().md).
-
- The [`NSToolbarItem`](nstoolbaritem.md) [`validate()`](nstoolbaritem/validate().md) method is called only if the item’s target has a valid action defined on its target and if the item isn’t a custom view item. If you want to validate a custom view item, then you have to subclass [`NSToolbarItem`](nstoolbaritem.md) and override [`validate()`](nstoolbaritem/validate().md).
 
 ## Topics
 
@@ -43,4 +41,4 @@ A toolbar item with a valid target and action is enabled by default. To allow a 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstoolbaritemvalidation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstoolbaritemvalidation)*

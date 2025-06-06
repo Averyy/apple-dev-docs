@@ -17,8 +17,6 @@ Use Simulator to efficiently capture screenshots and videos of your app in actio
 
 > **Note**: Screenshots and videos you capture from a visionOS simulator might have a different size and ratio than those you capture from a physical device. To match App Store requirements, you can resize and crop them. For more information, see [`Screenshot Specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/screenshot-specifications) and [`App Preview Specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-preview-specifications).
 
-Screenshots and videos you capture from a visionOS simulator might have a different size and ratio than those you capture from a physical device. To match App Store requirements, you can resize and crop them. For more information, see [`Screenshot Specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/screenshot-specifications) and [`App Preview Specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-preview-specifications).
-
 ##### Capture a Screenshot of Your App
 
 To take a screenshot, navigate to the place in your app you would like to capture, then:
@@ -60,4 +58,4 @@ Simulator creates a file name with a combination of “Simulator Screen Recordin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/capturing-screenshots-and-videos-from-simulator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/capturing-screenshots-and-videos-from-simulator)*

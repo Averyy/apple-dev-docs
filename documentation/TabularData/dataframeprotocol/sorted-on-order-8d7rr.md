@@ -1,6 +1,6 @@
 # sorted(on:_:order:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name and type.
@@ -23,8 +23,6 @@ func sorted<T>(on columnName: String, _ type: T.Type, order: Order = .ascending)
 #### Discussion
 
 > **Note**: Elements with a value of `nil` are less than all non-`nil` values.
-
-Elements with a value of `nil` are less than all non-`nil` values.
 
 ## Parameters
 

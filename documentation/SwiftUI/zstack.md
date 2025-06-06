@@ -1,6 +1,6 @@
 # ZStack
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A view that overlays its subviews, aligning them in both axes.
@@ -76,8 +76,6 @@ var body: some View {
 
 > **Note**: If you need a version of this stack that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`ZStackLayout`](zstacklayout.md) instead.
 
-If you need a version of this stack that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`ZStackLayout`](zstacklayout.md) instead.
-
 ## Topics
 
 ### Creating a stack
@@ -129,4 +127,4 @@ If you need a version of this stack that conforms to the [`Layout`](layout.md) p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/zstack)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/zstack)*

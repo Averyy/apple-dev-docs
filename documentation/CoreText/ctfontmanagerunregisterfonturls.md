@@ -1,6 +1,6 @@
 # CTFontManagerUnregisterFontURLs(_:_:_:)
 
-**Framework**: Core Text  
+**Framework**: Coretext  
 **Kind**: func
 
 Unregisters fonts from the specified font URLs with the font manager.
@@ -25,8 +25,6 @@ func CTFontManagerUnregisterFontURLs(_ fontURLs: CFArray, _ scope: CTFontManager
 Unregistered fonts don’t participate in font descriptor matching.
 
 > **Note**:  On iOS, you can only use this function to unregister fonts that you registered using [`CTFontManagerRegisterFontsForURL(_:_:_:)`](ctfontmanagerregisterfontsforurl(_:_:_:).md) or [`CTFontManagerRegisterFontsForURLs(_:_:_:)`](ctfontmanagerregisterfontsforurls(_:_:_:).md).
-
- On iOS, you can only use this function to unregister fonts that you registered using [`CTFontManagerRegisterFontsForURL(_:_:_:)`](ctfontmanagerregisterfontsforurl(_:_:_:).md) or [`CTFontManagerRegisterFontsForURLs(_:_:_:)`](ctfontmanagerregisterfontsforurls(_:_:_:).md).
 
 ## Parameters
 

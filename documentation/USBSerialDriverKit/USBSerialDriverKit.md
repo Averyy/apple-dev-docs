@@ -16,8 +16,6 @@ Package your driver in an app that uses the [`System Extensions`](https://develo
 
 > **Note**:  USBSerialDriverKit is available on macOS.
 
- USBSerialDriverKit is available on macOS.
-
 ## Topics
 
 ### Samples

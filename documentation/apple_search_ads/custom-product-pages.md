@@ -1,6 +1,6 @@
 # Custom Product Pages
 
-**Framework**: Apple Search Ads
+**Framework**: Apple_Search_Ads
 
 View Custom Product Page details.
 
@@ -19,8 +19,6 @@ To create a custom product page ad, use the following workflow:
 5. Use [`Get Ad-Level Reports`](get-ad-level-reports.md) to track the performance of ads in your campaigns. These details help you optimize your Apple Search Ads campaigns to deliver a contextualized customer experience.
 
 > **Note**:  If you’ve been using Creative Sets with the API, see section 4.1 in  [`Apple Search Ads Campaign Management API 4`](apple-search-ads-campaign-management-api-4.md) for Creative Sets deprecation details.
-
- If you’ve been using Creative Sets with the API, see section 4.1 in  [`Apple Search Ads Campaign Management API 4`](apple-search-ads-campaign-management-api-4.md) for Creative Sets deprecation details.
 
 ## Topics
 

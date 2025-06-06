@@ -41,8 +41,6 @@ If someone dismisses the progress UI while the languages download, the system th
 
 > **Note**: Calls to this function can take several minutes while languages download.
 
-Calls to this function can take several minutes while languages download.
-
 ## Parameters
 
 - `string`: The string of text to translate.

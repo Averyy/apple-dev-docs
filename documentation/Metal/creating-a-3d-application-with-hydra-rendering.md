@@ -8,8 +8,6 @@ Build a 3D application that integrates with Hydra and USD.
 
 > **Note**: This sample code project is associated with WWDC22 session 10141: [`Explore USD tools and rendering`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10141/).
 
-This sample code project is associated with WWDC22 session 10141: [`Explore USD tools and rendering`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10141/).
-
 ##### Configure the Sample Code Project
 
 This sample requires Xcode 14 or later and macOS 13 or later. To build the project, you first need to [`get and build the USD source code`](https://developer.apple.comhttps://github.com/PixarAnimationStudios/USD/blob/release/README.md#getting-and-building-the-code) from Pixar’s GitHub repository, and then use CMake to generate an Xcode project with references to both the compiled USD libraries and the header files in the USD source code. If you don’t already have CMake installed, [`download the latest version of CMake`](https://developer.apple.comhttps://cmake.org/download/) to your Applications folder.
@@ -22,8 +20,6 @@ export PATH
 ```
 
 > **Note**: The previous command assumes you use the default `zsh` shell and adds `cmake` to your path for only the current terminal session. To add `cmake` to your path permanently, or if you’re using another shell like `bash`, add `/Applications/CMake.app/Contents/bin/` to the `$PATH` declaration in your `.zshrc` file or in the configuration file your shell uses.
-
-The previous command assumes you use the default `zsh` shell and adds `cmake` to your path for only the current terminal session. To add `cmake` to your path permanently, or if you’re using another shell like `bash`, add `/Applications/CMake.app/Contents/bin/` to the `$PATH` declaration in your `.zshrc` file or in the configuration file your shell uses.
 
 Clone the USD repo, using the following command:
 
@@ -52,8 +48,6 @@ cmake -S ~/dev/CreatingA3DApplicationWithHydraRendering/ -B ~/dev/CreatingA3DApp
 Finally, open the generated Xcode project, and change the scheme to `hydraplayer`.
 
 > ❗ **Important**: You’re responsible for abiding by the terms of the license(s) associated with the code from the USD repo.
-
-You’re responsible for abiding by the terms of the license(s) associated with the code from the USD repo.
 
 ## See Also
 
@@ -87,4 +81,4 @@ You’re responsible for abiding by the terms of the license(s) associated with 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/creating-a-3d-application-with-hydra-rendering)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/creating-a-3d-application-with-hydra-rendering)*

@@ -1,6 +1,6 @@
 # report(completionHandler:)
 
-**Framework**: GameKit  
+**Framework**: Gamekit  
 **Kind**: method
 
 Reports the player’s progress to Game Center.
@@ -21,8 +21,6 @@ func report() async throws
 When the player makes progress towards completing an achievement, your game communicates the player’s progress to Game Center by calling this method. An achievement object is implicitly tied to the local player that was authenticated when the object was created; your game should only report progress when the same local player is still authenticated on the device.
 
 > **Note**:  To avoid using network bandwidth unnecessarily, only report an achievement when the player has made more progress towards completing it.
-
- To avoid using network bandwidth unnecessarily, only report an achievement when the player has made more progress towards completing it.
 
 When the progress is successfully reported, the achievement is made visible if it was previously hidden. The [`percentComplete`](gkachievement/percentcomplete.md) and [`lastReportedDate`](gkachievement/lastreporteddate.md) property values stored on Game Center are updated if the new [`percentComplete`](gkachievement/percentcomplete.md) value is greater than the value previously stored on Game Center. if the value of the [`percentComplete`](gkachievement/percentcomplete.md) property was equal to `100.0`, then the achievement is marked as completed and a banner may be shown to the player.
 

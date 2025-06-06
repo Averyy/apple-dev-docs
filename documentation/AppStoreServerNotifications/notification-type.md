@@ -1,6 +1,6 @@
 # notification_type
 
-**Framework**: App Store Server Notifications  
+**Framework**: Appstoreservernotifications  
 **Kind**: typealias
 
 The type that describes the in-app purchase event for which the App Store sends the version 1 notification.
@@ -24,8 +24,6 @@ string notification_type
 You receive and can react to server notifications in real time for the subscription and refund events that these notification type values describe. The `notification_type` appears in the [`responseBodyV1`](responsebodyv1.md).
 
 > **Note**:  If you’re receiving App Store Server Notifications Version 2, see [`responseBodyV2`](responsebodyv2.md) and [`notificationType`](notificationtype.md) instead.
-
- If you’re receiving App Store Server Notifications Version 2, see [`responseBodyV2`](responsebodyv2.md) and [`notificationType`](notificationtype.md) instead.
 
 ##### Handle Use Cases for Notification Events
 

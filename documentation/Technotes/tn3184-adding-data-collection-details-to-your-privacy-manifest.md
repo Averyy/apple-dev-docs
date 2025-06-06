@@ -17,8 +17,6 @@ This document describes how to add the `NSPrivacyCollectedDataType`, `NSPrivacyC
 
 > **Note**:  Before you start adding the keys to your privacy manifest, enable raw keys and values in Xcode to view the raw keys and hide their human-readable names. Click anywhere in the privacy manifest, then choose Xcode > Editor > Raw Keys and Values. Repeat the process to disable this feature.
 
- Before you start adding the keys to your privacy manifest, enable raw keys and values in Xcode to view the raw keys and hide their human-readable names. Click anywhere in the privacy manifest, then choose Xcode > Editor > Raw Keys and Values. Repeat the process to disable this feature.
-
 #### Add a Collected Data Type Key
 
 The `NSPrivacyCollectedDataType` key uses the following format:
@@ -230,4 +228,4 @@ Repeat step 5 for each additional data type your app or third-party SDK collects
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3184-adding-data-collection-details-to-your-privacy-manifest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3184-adding-data-collection-details-to-your-privacy-manifest)*

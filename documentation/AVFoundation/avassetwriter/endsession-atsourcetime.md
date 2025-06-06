@@ -1,6 +1,6 @@
 # endSession(atSourceTime:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Finishes an asset-writing session.
@@ -28,8 +28,6 @@ The end time defines the moment on the timeline of source samples at which the s
 If you don’t explicitly call this method, the system invokes it automatically when you call [`finishWriting(completionHandler:)`](avassetwriter/finishwriting(completionhandler:).md). In that case, the session’s effective end time is the timestamp of the last sample you append.
 
 > **Note**:  An asset writer doesn’t support multiple sample-writing sessions. It’s an error to call [`startSession(atSourceTime:)`](avassetwriter/startsession(atsourcetime:).md) a second time after calling [`endSession(atSourceTime:)`](avassetwriter/endsession(atsourcetime:).md).
-
- An asset writer doesn’t support multiple sample-writing sessions. It’s an error to call [`startSession(atSourceTime:)`](avassetwriter/startsession(atsourcetime:).md) a second time after calling [`endSession(atSourceTime:)`](avassetwriter/endsession(atsourcetime:).md).
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # ARConfiguration.WorldAlignment.camera
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: case
 
 The scene coordinate system is locked to match the orientation of the camera.
@@ -22,8 +22,6 @@ Camera alignment defines a coordinate system based on the native sensor orientat
 
 > **Note**:  This coordinate system is always the same regardless of device or user interface orientation. That is, the x-axis always points along the long axis of the device, even if that direction is “down” relative to the user.
 
- This coordinate system is always the same regardless of device or user interface orientation. That is, the x-axis always points along the long axis of the device, even if that direction is “down” relative to the user.
-
 When this alignment is active, ARKit performs no device motion tracking. That is, world-space positions are effectively always relative to the current position and orientation of the device. (For example, a SceneKit object placed in an [`ARSCNView`](arscnview.md) will thus maintain the same position on screen, even as the camera image changes while the device moves.)
 
 ## See Also
@@ -36,4 +34,4 @@ When this alignment is active, ARKit performs no device motion tracking. That is
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arconfiguration/worldalignment-swift.enum/camera)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arconfiguration/worldalignment-swift.enum/camera)*

@@ -1,6 +1,6 @@
 # Capturing Photos with Depth
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
 
@@ -43,8 +43,6 @@ self.captureSession.commitConfiguration()
 ```
 
 > **Note**:  Enabling depth capture on a dual camera locks the zoom factor of both the wide and telephoto cameras.
-
- Enabling depth capture on a dual camera locks the zoom factor of both the wide and telephoto cameras.
 
 ##### Choose Settings
 
@@ -119,4 +117,4 @@ captureSession.commitConfiguration()
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/capturing-photos-with-depth)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/capturing-photos-with-depth)*

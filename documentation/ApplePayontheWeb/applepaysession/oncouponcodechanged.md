@@ -1,6 +1,6 @@
 # oncouponcodechanged
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 An event handler called by the system when the user enters or updates a coupon code.
@@ -39,8 +39,6 @@ session.addEventListener("couponcodechanged", function(event) {
 
 > **Note**:  Call `completeCouponCodeChange` within `30` seconds to prevent the system ending the payment request.
 
- Call `completeCouponCodeChange` within `30` seconds to prevent the system ending the payment request.
-
 ## See Also
 
 - [completeCouponCodeChange](applepaysession/completecouponcodechange.md)
@@ -53,4 +51,4 @@ session.addEventListener("couponcodechanged", function(event) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaysession/oncouponcodechanged)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaysession/oncouponcodechanged)*

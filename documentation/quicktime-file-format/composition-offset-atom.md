@@ -1,6 +1,6 @@
 # Composition offset atom ('ctts')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom you use to specify out-of-order video samples.
@@ -14,15 +14,11 @@ Video samples in encoded formats have a decode order and a presentation order (a
 
 > **Note**: Decode time does not directly imply presentation time when working with out of order video samples. The ordering is significant.
 
-Decode time does not directly imply presentation time when working with out of order video samples. The ordering is significant.
-
 The composition offset atom contains a sample-by-sample mapping of the decode-to-presentation time. Each entry in the composition offset table is a time delta from decode to presentation time: `CT(n) = DT(n) + CTTS(n)` where `CTTS(n)` is the (uncompressed) table entry for sample `n` `DT` is the decode time and `CT` is the composition (or display) time. The delta expressed in the composition offset table can be positive or negative.
 
 When the time-to-sample atom and the composition offset atom are present, a reader parsing out-of-order video samples has all the information necessary to calculate the start and end times, as well as the minimum and maximum offsets between decode time and presentation time. The sample tables are scanned to obtain these values.
 
 > **Note**: At the last displayed frame, the decode duration is used as presentation duration.
-
-At the last displayed frame, the decode duration is used as presentation duration.
 
 The type of the composition offset atom is `‘ctts’`.
 

@@ -1,6 +1,6 @@
 # Executing Observer Queries
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Create and run observer queries.
 
@@ -47,8 +47,6 @@ This runs the query on an anonymous background queue. Whenever a matching sample
 
 > **Note**:  The observer query’s update handler does not receive any information about the change—just that a change occurred. You must execute another query, for example an [`HKSampleQuery`](hksamplequery.md) or [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md), to access the changes.
 
- The observer query’s update handler does not receive any information about the change—just that a change occurred. You must execute another query, for example an [`HKSampleQuery`](hksamplequery.md) or [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md), to access the changes.
-
 To stop the query, call the HealthKit store’s [`stop(_:)`](hkhealthstore/stop(_:).md) method.
 
 ##### Receive Background Deliveries
@@ -60,8 +58,6 @@ As soon as your app launches, HealthKit calls the update handler for any observe
 After your observer queries have finished processing the new data, you must call the update’s completion handler to notify HealthKit that you have successfully received the background delivery.
 
 > ❗ **Important**:  Background server queries aren’t supported on the Simulator. Be sure to test your background queries on a device.
-
- Background server queries aren’t supported on the Simulator. Be sure to test your background queries on a device.
 
 For more information on managing background deliveries, see Managing Background Deliveries in [`HKHealthStore`](hkhealthstore.md). For more information on the background delivery completion handler, see [`HKObserverQueryCompletionHandler`](hkobserverquerycompletionhandler.md).
 
@@ -77,4 +73,4 @@ For more information on managing background deliveries, see Managing Background 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/executing-observer-queries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/executing-observer-queries)*

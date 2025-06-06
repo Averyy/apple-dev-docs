@@ -27,8 +27,6 @@ By default, the sampler state at each index is `nil`.
 
 > **Note**:  The Objective-C version of this method is [`setVertexSamplerStates:lodMinClamps:lodMaxClamps:withRange:`](mtlrendercommandencoder/setvertexsamplerstates:lodminclamps:lodmaxclamps:withrange:.md).
 
- The Objective-C version of this method is [`setVertexSamplerStates:lodMinClamps:lodMaxClamps:withRange:`](mtlrendercommandencoder/setvertexsamplerstates:lodminclamps:lodmaxclamps:withrange:.md).
-
 ## Parameters
 
 - `samplers`: An array of   instances the command assigns to entries in the vertex shader argument table for sampler states.

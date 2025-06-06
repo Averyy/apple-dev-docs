@@ -1,6 +1,6 @@
 # providesPreciseDurationAndTiming
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the asset provides precise duration and timing.
@@ -27,8 +27,6 @@ Use the [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md) method to retrie
 This property value is [`true`](https://developer.apple.com/documentation/swift/true) if you initialized the asset with the [`AVURLAssetPreferPreciseDurationAndTimingKey`](avurlassetpreferprecisedurationandtimingkey.md) initialization option, otherwise it’s [`false`](https://developer.apple.com/documentation/swift/false).
 
 > **Note**:  If calculating precise duration and timing isn’t possible for the media resources that the URL references, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), even if you requested otherwise.
-
- If calculating precise duration and timing isn’t possible for the media resources that the URL references, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), even if you requested otherwise.
 
 ## See Also
 

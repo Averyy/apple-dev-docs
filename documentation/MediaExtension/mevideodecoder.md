@@ -1,6 +1,6 @@
 # MEVideoDecoder
 
-**Framework**: MediaExtension  
+**Framework**: Mediaextension  
 **Kind**: protocol
 
 A protocol that defines the requirements for a video decoder.
@@ -20,15 +20,9 @@ This protocol provides an interface for [`Video Toolbox`](https://developer.appl
 
 > **Note**:  Developers who wish to build MediaExtension video decoders using this API need to include a [`Video decoder entitlement`](video-decoder-entitlement.md), provisioning profile, and specialized dictionary in their Info.plist file when building their extensions. For more information, see [`Entitlements`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements), [`Create a development provisioning profile`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/create-a-development-provisioning-profile), and [`Video decoder property list dictionary`](video-decoder-property-list-dictionary.md)
 
- Developers who wish to build MediaExtension video decoders using this API need to include a [`Video decoder entitlement`](video-decoder-entitlement.md), provisioning profile, and specialized dictionary in their Info.plist file when building their extensions.
-
-For more information, see [`Entitlements`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements), [`Create a development provisioning profile`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/create-a-development-provisioning-profile), and [`Video decoder property list dictionary`](video-decoder-property-list-dictionary.md)
-
 Once a user installs and runs the host app, embedded video decoder extensions become available to any app on the user’s system that opts in to using them by calling [`VTRegisterProfessionalVideoWorkflowVideoDecoders()`](https://developer.apple.com/documentation/VideoToolbox/VTRegisterProfessionalVideoWorkflowVideoDecoders()).
 
 > ❗ **Important**:  `MEVideoDecoder` objects run in a sandboxed process without access to the filesystem, network, and other kernel resources.
-
- `MEVideoDecoder` objects run in a sandboxed process without access to the filesystem, network, and other kernel resources.
 
 The following sections explain the video decoder life cycle and performing decoding operations.
 

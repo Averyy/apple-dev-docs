@@ -1,6 +1,6 @@
 # HKPrescriptionType
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: class
 
 A type that identifies samples that store a prescription.
@@ -42,8 +42,6 @@ store.requestAuthorization(toShare: [visionPrescriptionType],
 
 > **Note**: Important Vision prescription samples require per-object authorization. Requesting authorization to read these samples using [`requestAuthorization(toShare:read:)`](hkhealthstore/requestauthorization(toshare:read:).md) fails with an error. Instead, use [`requestPerObjectReadAuthorization(for:predicate:completion:)`](hkhealthstore/requestperobjectreadauthorization(for:predicate:completion:).md) to request authorization before querying for samples.
 
-Important Vision prescription samples require per-object authorization. Requesting authorization to read these samples using [`requestAuthorization(toShare:read:)`](hkhealthstore/requestauthorization(toshare:read:).md) fails with an error. Instead, use [`requestPerObjectReadAuthorization(for:predicate:completion:)`](hkhealthstore/requestperobjectreadauthorization(for:predicate:completion:).md) to request authorization before querying for samples.
-
 ## Relationships
 
 ### Inherits From
@@ -80,4 +78,4 @@ Important Vision prescription samples require per-object authorization. Requesti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkprescriptiontype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkprescriptiontype)*

@@ -1,6 +1,6 @@
 # readerInstanceIdentifier
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: property
 
 The unique identifier for the mobile document reader instance.
@@ -24,9 +24,7 @@ let readerInstanceIdentifier: String
 
 > **Note**: Do not cache this value. When generating a reader token always retrieve the latest reader instance identifier first.
 
-Do not cache this value. When generating a reader token always retrieve the latest reader instance identifier first.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/mobiledocumentreader/configuration-swift.struct/readerinstanceidentifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/mobiledocumentreader/configuration-swift.struct/readerinstanceidentifier)*

@@ -1,6 +1,6 @@
 # NSMenuItemCell
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An object that handles the measurement and display of a single menu item in its encompassing frame.
@@ -18,8 +18,6 @@ class NSMenuItemCell
 #### Overview
 
 > **Note**:  `NSMenuItemCell` is no longer used to draw menus. Using it does not affect the appearance of your menus.
-
- `NSMenuItemCell` is no longer used to draw menus. Using it does not affect the appearance of your menus.
 
 ## Topics
 
@@ -108,4 +106,4 @@ class NSMenuItemCell
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsmenuitemcell)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsmenuitemcell)*

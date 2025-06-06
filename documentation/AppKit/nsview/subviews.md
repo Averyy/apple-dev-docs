@@ -1,6 +1,6 @@
 # subviews
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The array of views embedded in the current view.
@@ -29,8 +29,6 @@ This property marks the affected view and window areas as needing display.
 
 > **Note**:  The contents of this array may change at any time. If you intend to manipulate the contents of the array, work off a copy of the array.
 
- The contents of this array may change at any time. If you intend to manipulate the contents of the array, work off a copy of the array.
-
 ## See Also
 
 - [func addSubview(NSView, positioned: NSWindow.OrderingMode, relativeTo: NSView?)](nsview/addsubview(_:positioned:relativeto:).md)
@@ -57,4 +55,4 @@ This property marks the affected view and window areas as needing display.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview/subviews)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview/subviews)*

@@ -33,8 +33,6 @@ Because source control plays such a fundamental role in CI/CD, Xcode Cloud requi
 
 > **Note**: Xcode Cloud comes with support for [`Git LFS`](https://developer.apple.comhttps://git-lfs.github.com/).
 
-Xcode Cloud comes with support for [`Git LFS`](https://developer.apple.comhttps://git-lfs.github.com/).
-
 To learn more about source control with Xcode, see [`Source control management`](source-control-management.md).
 
 ##### The Importance of Automated Building and Testing
@@ -75,8 +73,6 @@ You can also configure Xcode Cloud to detect new PRs, or changes to an existing 
 
 > 💡 **Tip**: Using your SCM provider’s website, you can require the Xcode Cloud build to succeed before team members can complete the PR and merge branches.
 
-Using your SCM provider’s website, you can require the Xcode Cloud build to succeed before team members can complete the PR and merge branches.
-
 ## See Also
 
 - [Setting up your project to use Xcode Cloud](setting-up-your-project-to-use-xcode-cloud.md)
@@ -87,4 +83,4 @@ Using your SCM provider’s website, you can require the Xcode Cloud build to su
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/about-continuous-integration-and-delivery-with-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/about-continuous-integration-and-delivery-with-xcode-cloud)*

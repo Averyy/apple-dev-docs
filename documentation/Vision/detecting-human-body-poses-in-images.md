@@ -36,8 +36,6 @@ do {
 
 > **Note**:  If you have a known region of interest (ROI) in an image, you can specify it using the request’s [`regionOfInterest`](vnimagebasedrequest/regionofinterest.md) property. Setting an ROI reduces the region in the image where the request performs its analysis, which generally results in more accurate pose estimation.
 
- If you have a known region of interest (ROI) in an image, you can specify it using the request’s [`regionOfInterest`](vnimagebasedrequest/regionofinterest.md) property. Setting an ROI reduces the region in the image where the request performs its analysis, which generally results in more accurate pose estimation.
-
 ##### Process the Results
 
 After the request handler processes the request, it calls the request’s completion closure, passing it the request and any errors that occurred. Retrieve the observations by querying the request object for its [`results`](vnrequest/results.md), which it returns as an array of [`VNHumanBodyPoseObservation`](vnhumanbodyposeobservation.md) objects. The request returns a unique observation for each detected human body pose, with each containing the recognized points and a confidence score indicating the accuracy of the observation.
@@ -94,8 +92,6 @@ func processObservation(_ observation: VNHumanBodyPoseObservation) {
 
 > **Note**:  The points the [`recognizedPoints(_:)`](vnhumanbodyposeobservation/recognizedpoints(_:).md) method returns are in normalized coordinates (0.0 to 1.0), with the origin at the bottom-left. Use the [`VNImagePointForNormalizedPoint(_:_:_:)`](vnimagepointfornormalizedpoint(_:_:_:).md) function to translate the normalized points to the input image coordinates.
 
- The points the [`recognizedPoints(_:)`](vnhumanbodyposeobservation/recognizedpoints(_:).md) method returns are in normalized coordinates (0.0 to 1.0), with the origin at the bottom-left. Use the [`VNImagePointForNormalizedPoint(_:_:_:)`](vnimagepointfornormalizedpoint(_:_:_:).md) function to translate the normalized points to the input image coordinates.
-
 For an example of how you can use and visualize recognized body points, see the [`Building a feature-rich app for sports analysis`](building-a-feature-rich-app-for-sports-analysis.md) sample app.
 
 ##### Improve Pose Detection Accuracy
@@ -135,4 +131,4 @@ To achieve the most accurate results from Vision’s human body pose-detection c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/detecting-human-body-poses-in-images)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-images)*

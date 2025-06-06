@@ -1,6 +1,6 @@
 # FamilyActivityPicker
 
-**Framework**: FamilyControls  
+**Framework**: Familycontrols  
 **Kind**: struct
 
 A view in which users specify applications, web domains, and categories without revealing their choices to the app.
@@ -47,8 +47,6 @@ struct ExampleView: View {
 ```
 
 > **Note**: A `FamilyControls/FamilyActivityPicker` shown on a parent device only displays applications and websites from authorized child devices within the Family Sharing Group. A `FamilyControls/FamilyActivityPicker` shown on an individually authorized device includes applications and websites from that same device.
-
-A `FamilyControls/FamilyActivityPicker` shown on a parent device only displays applications and websites from authorized child devices within the Family Sharing Group. A `FamilyControls/FamilyActivityPicker` shown on an individually authorized device includes applications and websites from that same device.
 
 To streamline this process, call  the [`familyActivityPicker(isPresented:selection:)`](familyactivitypicker/familyactivitypicker(ispresented:selection:).md) modifier on a view in your user interface. This modifier displays the picker view as a sheet over your user interface when the `isPresented` binding is `true`.
 
@@ -109,4 +107,4 @@ Your app passes the selected values to the appropriate instances and methods fro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/familycontrols/familyactivitypicker)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FamilyControls/familyactivitypicker)*

@@ -40,8 +40,6 @@ print(String(disemvoweled))
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `subranges`: A range set representing the indices of the   elements to remove.

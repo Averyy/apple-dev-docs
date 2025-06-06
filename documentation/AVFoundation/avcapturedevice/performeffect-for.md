@@ -1,6 +1,6 @@
 # performEffect(for:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Performs the specified reaction type on the video stream.
@@ -23,8 +23,6 @@ func performEffect(for reactionType: AVCaptureReactionType)
 The entries in the [`reactionEffectsInProgress`](avcapturedevice/reactioneffectsinprogress.md) property may not reflect one-to-one with calls to this method. Depending on reaction style or resource limits, the system may coalesce overlapping reactions of the same type by extending an existing reaction rather than overlaying a new one.
 
 > **Note**:  Calling this method has no effect when the value of [`canPerformReactionEffects`](avcapturedevice/canperformreactioneffects.md) is [`false`](https://developer.apple.com/documentation/swift/false). In this case, VoIP apps should transmit and display reactions outside of the video feed.
-
- Calling this method has no effect when the value of [`canPerformReactionEffects`](avcapturedevice/canperformreactioneffects.md) is [`false`](https://developer.apple.com/documentation/swift/false). In this case, VoIP apps should transmit and display reactions outside of the video feed.
 
 ## Parameters
 

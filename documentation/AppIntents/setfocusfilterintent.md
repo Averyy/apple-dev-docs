@@ -1,6 +1,6 @@
 # SetFocusFilterIntent
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: protocol
 
 An interface for providing an app intent that you use to adapt your app’s behavior when Focus changes.
@@ -23,8 +23,6 @@ protocol SetFocusFilterIntent : AppIntent, InstanceDisplayRepresentable
 #### Overview
 
 > **Note**:  Session 10121: [`Meet Focus filters`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10121).
-
- Session 10121: [`Meet Focus filters`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10121).
 
 ## Topics
 
@@ -58,4 +56,4 @@ protocol SetFocusFilterIntent : AppIntent, InstanceDisplayRepresentable
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/setfocusfilterintent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/setfocusfilterintent)*

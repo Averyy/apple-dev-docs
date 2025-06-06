@@ -1,6 +1,6 @@
 # fileWrapper(ofType:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Creates and returns a file wrapper that contains the contents of the document, formatted to the specified type.
@@ -24,10 +24,6 @@ A file wrapper containing the document contents, or, if the file wrapper could n
 For backward binary compatibility with OS X v10.3 and earlier, if [`fileWrapperRepresentationOfType:`](nsdocument/filewrapperrepresentationoftype:.md) is overridden, the default implementation of this method instead invokes `[self fileWrapperRepresentationOfType:typeName]`.
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

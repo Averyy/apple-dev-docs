@@ -1,6 +1,6 @@
 # resetBatchState()
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Resets the current batch state in the store, allowing you to request a new batch.
@@ -22,8 +22,6 @@ func resetBatchState() async throws
 Use this method if the transmission of the batch to the partner service provider fails and the batch processing status is unknown. The framework doesn’t delete the reads; instead, it dissociates them from the batch.
 
 > **Note**: This method throws a [`PaymentCardReaderStore.StoreError`](paymentcardreaderstore/storeerror.md) if there’s no batch for the framework to reset.
-
-This method throws a [`PaymentCardReaderStore.StoreError`](paymentcardreaderstore/storeerror.md) if there’s no batch for the framework to reset.
 
 
 ---

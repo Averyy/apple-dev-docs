@@ -1,14 +1,12 @@
 # Choosing a receipt validation technique
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Select the type of receipt validation, on the device or on your server, that works for your app.
 
 #### Overview
 
 > **Note**:  The receipt isn’t necessary if you use [`AppTransaction`](apptransaction.md) to validate the app download, or [`Transaction`](transaction.md) to validate in-app purchases. Only use the receipt if your app uses the [`Original API for In-App Purchase`](original-api-for-in-app-purchase.md), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](apptransaction.md).
-
- The receipt isn’t necessary if you use [`AppTransaction`](apptransaction.md) to validate the app download, or [`Transaction`](transaction.md) to validate in-app purchases. Only use the receipt if your app uses the [`Original API for In-App Purchase`](original-api-for-in-app-purchase.md), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](apptransaction.md).
 
 An App Store receipt provides a record of the sale of an app and any purchases the person makes within the app. You can authenticate purchased content by adding receipt validation code to your app or server. Receipt validation requires an understanding of secure coding techniques to employ a solution that’s secure and unique to your app.
 
@@ -47,8 +45,6 @@ To ensure that your app receives all transactions, add the transaction observer,
 
 > **Note**:  Session 705: [`Engineering Subscriptions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/705/)
 
- Session 705: [`Engineering Subscriptions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/705/)
-
 ## See Also
 
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
@@ -61,4 +57,4 @@ To ensure that your app receives all transactions, add the transaction observer,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/choosing-a-receipt-validation-technique)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/choosing-a-receipt-validation-technique)*

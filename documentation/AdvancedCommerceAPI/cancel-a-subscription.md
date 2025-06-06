@@ -1,6 +1,6 @@
 # Cancel a Subscription
 
-**Framework**: Advanced Commerce API  
+**Framework**: Advancedcommerceapi  
 **Kind**: httpRequest
 
 Turn off automatic renewal to cancel a customer’s auto-renewable subscription.
@@ -21,8 +21,6 @@ To immediately cancel a subscription instead, see [`Revoke Subscription`](revoke
 
 > **Note**: To use the `Cancel a Subscription` endpoint, your membership Account Holder must sign the Advanced Commerce API Addendum, and you must meet certain eligibility requirements. For more information, see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/). If the most recent version of this agreement isn’t yet accepted, you can’t call this endpoint, and it returns an error.
 
-To use the `Cancel a Subscription` endpoint, your membership Account Holder must sign the Advanced Commerce API Addendum, and you must meet certain eligibility requirements. For more information, see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/). If the most recent version of this agreement isn’t yet accepted, you can’t call this endpoint, and it returns an error.
-
 Refer to the Advanced Commerce API Addendum to learn the use cases for the `Cancel a Subscription`, [`Revoke Subscription`](revoke-subscription.md), and [`Request Transaction Refund`](request-transaction-refund.md) APIs.
 
 ##### Example Request and Response
@@ -41,4 +39,4 @@ The request body that includes information about the subscription to cancel.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/cancel-a-subscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/cancel-a-subscription)*

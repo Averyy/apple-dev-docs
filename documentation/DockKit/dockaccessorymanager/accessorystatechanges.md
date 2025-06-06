@@ -1,6 +1,6 @@
 # accessoryStateChanges
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: property
 
 Obtain a reference to a dock accessory and receive notifications about its state.
@@ -43,8 +43,6 @@ do {
 ```
 
 > **Note**: [`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
-
-[`DockKitError.notSupported`](dockkiterror/notsupported.md) if called on macOS.
 
 
 ---

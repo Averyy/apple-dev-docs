@@ -26,8 +26,6 @@ The `-o` option indicates the output file name and the `-c` option tells the too
 
 > **Note**:  This example uses the `macosx` SDK, but you can use any SDK your app targets.
 
- This example uses the `macosx` SDK, but you can use any SDK your app targets.
-
 Optionally, you can combine several intermediate representation files into a single Metal archive with the `metal-ar` tool.
 
 ```shell
@@ -46,8 +44,6 @@ The command produces a Metal library that your app can load at runtime. One way 
 
 > **Note**:  The Metal command-line tools for Windows use the same options and arguments as their macOS counterparts.
 
- The Metal command-line tools for Windows use the same options and arguments as their macOS counterparts.
-
 ##### Retrieve and Load a Library
 
 At runtime, you can access a library by creating an [`MTLLibrary`](mtllibrary.md) instance with the [`makeLibrary(URL:)`](mtldevice/makelibrary(url:).md) method.
@@ -62,4 +58,4 @@ At runtime, you can access a library by creating an [`MTLLibrary`](mtllibrary.md
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/building-a-shader-library-by-precompiling-source-files)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/building-a-shader-library-by-precompiling-source-files)*

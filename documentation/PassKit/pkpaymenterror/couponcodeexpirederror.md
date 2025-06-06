@@ -1,6 +1,6 @@
 # couponCodeExpiredError
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 The error code that indicates an expired coupon.
@@ -23,8 +23,6 @@ static var couponCodeExpiredError: PKPaymentError.Code { get }
 Use this error code if the user entered an expired coupon code in the payment sheet. You can use [`paymentCouponCodeExpiredError(localizedDescription:)`](pkpaymentrequest/paymentcouponcodeexpirederror(localizeddescription:).md) to create an expired coupon error object.
 
 > **Note**:  A coupon code error doesn’t prevent the user from authorizing the payment.
-
- A coupon code error doesn’t prevent the user from authorizing the payment.
 
 ## See Also
 

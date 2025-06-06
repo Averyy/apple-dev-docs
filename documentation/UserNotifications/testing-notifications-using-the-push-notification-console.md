@@ -16,11 +16,7 @@ The console also provides additional tooling to help debug and authenticate toke
 
 > **Note**:  Session 10025: [`Meet Push Notifications Console`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10025/) Session 9162: [`Broadcast updates to your Live Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/9162/)
 
- Session 10025: [`Meet Push Notifications Console`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10025/) Session 9162: [`Broadcast updates to your Live Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/9162/)
-
 > 💡 **Tip**:  Refer to [`Viewing the status of push notifications using Metrics and APNs`](viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
-
- Refer to [`Viewing the status of push notifications using Metrics and APNs`](viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
 
 ##### Create and Send a Test Push Notification
 
@@ -80,8 +76,6 @@ You can generate an authentication token using the JWT generator by providing yo
 
 > **Note**:  The signing key isn’t uploaded anywhere, it’s only used in your browser.
 
- The signing key isn’t uploaded anywhere, it’s only used in your browser.
-
 ![A screenshot depicting an example of a valid Key ID used to generate a token.](https://docs-assets.developer.apple.com/published/fdb0dc6b51ba64112c807b531447f462/media-4251167%402x.png)
 
 ## See Also
@@ -94,4 +88,4 @@ You can generate an authentication token using the JWT generator by providing yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/testing-notifications-using-the-push-notification-console)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/testing-notifications-using-the-push-notification-console)*

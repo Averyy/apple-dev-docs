@@ -1,6 +1,6 @@
 # ClassKit
 
-**Framework**: ClassKit  
+**Framework**: Classkit  
 **Kind**: module
 
 Enable teachers to assign activities from your app’s content and to view student progress.
@@ -23,8 +23,6 @@ The ClassKit environment consists of a teacher’s device (or devices) and many 
 ClassKit doesn’t replace any existing logic or storage mechanisms in your app, and you don’t use it to generate any new user interfaces. Instead, you use ClassKit to publicize the structure you already have, so that teachers can use Apple’s Schoolwork app to create assignments based on your app’s content and measure their students’ progress through those assignments.
 
 > **Note**:  ClassKit is designed for educational organizations that use [`Apple School Manager and Managed Apple IDs`](https://developer.apple.comhttps://www.apple.com/education/it/). Consider adopting ClassKit if education is your intended market.
-
- ClassKit is designed for educational organizations that use [`Apple School Manager and Managed Apple IDs`](https://developer.apple.comhttps://www.apple.com/education/it/). Consider adopting ClassKit if education is your intended market.
 
 ## Topics
 

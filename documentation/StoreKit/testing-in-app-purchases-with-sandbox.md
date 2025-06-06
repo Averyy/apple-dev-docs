@@ -1,6 +1,6 @@
 # Testing In-App Purchases with sandbox
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Test your implementation of In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
 
@@ -61,8 +61,6 @@ Your device now has access to the sandbox controls for testing your beta app, an
 
 > ❗ **Important**: Signing out of Media & Purchases can remove your access to purchased content in production apps on your device. Consider using a dedicated testing device when testing a TestFlight app with sandbox controls.
 
-Signing out of Media & Purchases can remove your access to purchased content in production apps on your device. Consider using a dedicated testing device when testing a TestFlight app with sandbox controls.
-
 If you sign back in to your Apple Account in Media & Purchases, apps you install through TestFlight revert to attributing In-App Purchases to your Apple Account and not to your Sandbox Apple Account.
 
 ##### Manage Sandbox Settings From App Store Connect or Ios Account Settings
@@ -88,8 +86,6 @@ To access the Account Settings in iOS, follow these steps:
 3. On the pop-up sheet, select Manage. The Account Settings page appears.
 
 > **Note**:  Changes you make to product metadata in App Store Connect can take up to one hour to appear in the sandbox environment.
-
- Changes you make to product metadata in App Store Connect can take up to one hour to appear in the sandbox environment.
 
 For information on all aspects of managing sandbox settings in App Store Connect, see [`Overview of testing in sandbox`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/overview-of-testing-in-sandbox).
 
@@ -127,8 +123,6 @@ For information about clearing the purchase history from App Store Connect, see 
 Clearing the purchase history for Sandbox Apple Accounts with a high number of purchases can take longer than several minutes. When the process completes, the transaction history is empty and the Sandbox Apple Account is eligible for introductory offers. If you’re signed in with the Sandbox Apple Account, you can purchase subscriptions previously subscribed to without causing duplicate purchases.
 
 > **Note**:  Clearing the purchase history doesn’t affect In-App Purchases that customers make on the App Store.
-
- Clearing the purchase history doesn’t affect In-App Purchases that customers make on the App Store.
 
 ## Topics
 
@@ -186,4 +180,4 @@ Clearing the purchase history for Sandbox Apple Accounts with a high number of p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-in-app-purchases-with-sandbox)*

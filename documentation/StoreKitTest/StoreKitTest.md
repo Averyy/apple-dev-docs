@@ -1,6 +1,6 @@
 # StoreKit Test
 
-**Framework**: StoreKit Test  
+**Framework**: Storekittest  
 **Kind**: module
 
 Create and automate tests in Xcode for your app’s subscription and in-app purchase transactions, and SKAdNetwork implementations.
@@ -25,8 +25,6 @@ For testing ad impressions and postbacks, use `SKAdTestSession`. Each instance o
 Testing StoreKit in iOS, watchOS, or tvOS apps requires Xcode 12 or later running on macOS 10.15 or later. Testing StoreKit in a macOS app requires Xcode 12 or later running on macOS 11 or later.
 
 > **Note**:  Session 10659 : [`Introducing StoreKit testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10659)
-
- Session 10659 : [`Introducing StoreKit testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10659)
 
 ## Topics
 

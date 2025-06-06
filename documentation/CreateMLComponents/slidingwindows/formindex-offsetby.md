@@ -1,6 +1,6 @@
 # formIndex(_:offsetBy:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Offsets the given index by the specified distance.
@@ -25,8 +25,6 @@ func formIndex(_ i: inout Self.Index, offsetBy distance: Int)
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the absolute value of `distance`.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the absolute value of `distance`.
 
 ## Parameters
 

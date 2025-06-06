@@ -21,13 +21,9 @@ Explicitly defining a view’s text content type improves the performance of Pas
 
 > ❗ **Important**:  tvOS apps can also support Password AutoFill using the same content-type settings. The AutoFill QuickType bar appears above the keyboard when entering passwords with an iOS device using the Control Center keyboard, the Remote app, or the Continuity Keyboard. Focus is also advanced to the login button when the login fields are populated.
 
- tvOS apps can also support Password AutoFill using the same content-type settings. The AutoFill QuickType bar appears above the keyboard when entering passwords with an iOS device using the Control Center keyboard, the Remote app, or the Continuity Keyboard. Focus is also advanced to the login button when the login fields are populated.
-
 By default, the system selects a keyboard based on the input view’s [`textContentType`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/textContentType) property; however, you can mix the input view’s text content type and keyboard type to explicitly define the desired keyboard. For example, if your site uses email addresses as user names, set the input view’s [`textContentType`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/textContentType) property to [`username`](https://developer.apple.com/documentation/UIKit/UITextContentType/username), and set the [`keyboardType`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/keyboardType) property to [`UIKeyboardType.emailAddress`](https://developer.apple.com/documentation/UIKit/UIKeyboardType/emailAddress).
 
 > **Note**:  Leverage the system keyboard rather than implementing a keyboard directly in your app’s view hierarchy.
-
- Leverage the system keyboard rather than implementing a keyboard directly in your app’s view hierarchy.
 
 This example defines text fields for logging in:
 
@@ -54,11 +50,9 @@ iOS supports Password AutoFill on [`UITextField`](https://developer.apple.com/do
 
 > ⚠️ **Warning**:  If you use a custom input view for a security code input text field, iOS can’t display the necessary AutoFill UI.
 
- If you use a custom input view for a security code input text field, iOS can’t display the necessary AutoFill UI.
-
 For more information on how to enable Password AutoFill behavior in web apps, see [`Enabling Password AutoFill on an HTML input element`](enabling-password-autofill-on-an-html-input-element.md).
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/enabling-password-autofill-on-a-text-input-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/enabling-password-autofill-on-a-text-input-view)*

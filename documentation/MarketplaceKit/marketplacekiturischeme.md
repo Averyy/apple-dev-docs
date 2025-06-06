@@ -1,6 +1,6 @@
 # MarketplaceKitURIScheme
 
-**Framework**: MarketplaceKit  
+**Framework**: Marketplacekit  
 **Kind**: var
 
 A URI scheme that defines an alternative distribution app installation link.
@@ -54,8 +54,6 @@ The fully qualified domain in the `alternateDistributionPackage` value needs to 
 
 > **Note**: To allow installation, the web browser also needs to support the app installation URL scheme. If you develop a browser app, see [`Enabling alternative distribution app installation in a browser`](enabling-alternative-distribution-app-installation-in-a-browser.md) for more information.
 
-To allow installation, the web browser also needs to support the app installation URL scheme. If you develop a browser app, see [`Enabling alternative distribution app installation in a browser`](enabling-alternative-distribution-app-installation-in-a-browser.md) for more information.
-
 ## See Also
 
 - [class AppLibrary](applibrary.md)
@@ -74,4 +72,4 @@ To allow installation, the web browser also needs to support the app installatio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/marketplacekiturischeme)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/marketplacekiturischeme)*

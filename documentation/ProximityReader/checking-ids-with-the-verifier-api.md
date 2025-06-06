@@ -1,6 +1,6 @@
 # Checking IDs with the Verifier API
 
-**Framework**: ProximityReader
+**Framework**: Proximityreader
 
 Read and verify mobile driver’s license information without any additional hardware.
 
@@ -11,8 +11,6 @@ Read and verify mobile driver’s license information without any additional har
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10114: [`What’s new in Wallet and Apple Pay`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10114/).
-
-This sample code project is associated with WWDC23 session 10114: [`What’s new in Wallet and Apple Pay`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10114/).
 
 ##### Configure the Sample Code Project
 
@@ -35,4 +33,4 @@ The project contains two targets:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/checking-ids-with-the-verifier-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/checking-ids-with-the-verifier-api)*

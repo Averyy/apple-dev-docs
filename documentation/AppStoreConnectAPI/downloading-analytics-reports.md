@@ -1,6 +1,6 @@
 # Downloading Analytics Reports
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Learn how to request and review data about your apps, their usage, engagement, and performance.
 
@@ -9,8 +9,6 @@ Learn how to request and review data about your apps, their usage, engagement, a
 Use the Analytics Reports API to request and download reports for your apps. This API provides access to reports in these categories:
 
 > **Note**:  To learn more about the contents of each report, see [`Analytics Reports`](https://developer.apple.com/documentation/analytics-reports).
-
- To learn more about the contents of each report, see [`Analytics Reports`](https://developer.apple.com/documentation/analytics-reports).
 
 ##### Understand Roles and Reports
 
@@ -24,8 +22,6 @@ To download analytics reports, be sure your API key has one of the following rol
 
 > **Note**:  If you share an API key for your developer account with a third party for analyzing or processing your reports, select the `Sales and Reports` role when generating a new key. This role can access to the [`Download Sales and Trends Reports`](get-v1-salesreports.md) but can’t access [`Download Finance Reports`](get-v1-financereports.md) endpoint.
 
- If you share an API key for your developer account with a third party for analyzing or processing your reports, select the `Sales and Reports` role when generating a new key. This role can access to the [`Download Sales and Trends Reports`](get-v1-salesreports.md) but can’t access [`Download Finance Reports`](get-v1-financereports.md) endpoint.
-
 ##### Request Analytics Reports
 
 Start by using the [`Request reports`](post-v1-analyticsreportrequests.md) API to request generation of reports for one of your apps. There are two types of `accessTypes` for report requests:
@@ -37,8 +33,6 @@ To see a list of your report requests, use [`Read report requests`](get-v1-apps-
 To read more information about a specific request, use [`Read report request information`](get-v1-analyticsreportrequests-_id_.md) with the `ID` from [`Read report requests`](get-v1-apps-_id_-analyticsreportrequests.md) to see if the report is still active and generating new reports.
 
 > **Note**:  If you don’t retrieve data for a long time, a report request changes to `stoppedDueToInactivity`. You need to make a new request to resume getting reports.
-
- If you don’t retrieve data for a long time, a report request changes to `stoppedDueToInactivity`. You need to make a new request to resume getting reports.
 
 ##### Read the Analytics Reports
 
@@ -72,4 +66,4 @@ For `ONGOING` report requests you need to regularly use these APIs to get update
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/downloading-analytics-reports)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/downloading-analytics-reports)*

@@ -1,6 +1,6 @@
 # NSFilePromiseReceiver
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An object that receives a file promise from the pasteboard.
@@ -21,8 +21,6 @@ Because [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) implements the [`NSP
 Likewise, you can enumerate dragged items by calling the following:
 
 > **Note**:  A non-item-based drag source may promise multiple files on the same pasteboard item. To be compatible with these drag sources, many [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) methods return an array of values. Multiple-file item-based promises result in one [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) per promised file.
-
- A non-item-based drag source may promise multiple files on the same pasteboard item. To be compatible with these drag sources, many [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) methods return an array of values. Multiple-file item-based promises result in one [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) per promised file.
 
 ## Topics
 
@@ -67,4 +65,4 @@ Likewise, you can enumerate dragged items by calling the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsfilepromisereceiver)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsfilepromisereceiver)*

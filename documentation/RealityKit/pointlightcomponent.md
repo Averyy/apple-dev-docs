@@ -1,6 +1,6 @@
 # PointLightComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that defines a point light source.
@@ -53,8 +53,6 @@ The point light illuminates entities based on its distance from them. Here is a 
 
 > **Note**: The green dot in the above illustrations is only a visual representation of the light’s position.
 
-The green dot in the above illustrations is only a visual representation of the light’s position.
-
 ## Topics
 
 ### Creating a point light component
@@ -104,4 +102,4 @@ The green dot in the above illustrations is only a visual representation of the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/pointlightcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/pointlightcomponent)*

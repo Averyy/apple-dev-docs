@@ -29,13 +29,9 @@ This property will be implicitly accessed when work needs to be scheduled onto t
 
 > **Note**: [`SerialExecutor`](serialexecutor.md)
 
-[`SerialExecutor`](serialexecutor.md)
-
 > **Note**: [`TaskExecutor`](taskexecutor.md)
-
-[`TaskExecutor`](taskexecutor.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/mainactor/unownedexecutor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/mainactor/unownedexecutor)*

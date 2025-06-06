@@ -1,6 +1,6 @@
 # Tagging Media with Video Color Information
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Inspect and set video color space information when writing and transcoding media.
 
@@ -14,13 +14,9 @@ For historical reasons, color scientists defined many permutations of broadcast 
 
 > **Note**:  The term  refers to optional color space information parameters in the media that describe the content. The tags describe video colorimetry in a simplified way.
 
- The term  refers to optional color space information parameters in the media that describe the content. The tags describe video colorimetry in a simplified way.
-
 This color information tagging mechanism supports three key video parameters:
 
 > **Note**:  Each represents indices, not actual values. The [`QuickTime File Format`](https://developer.apple.com/documentation/quicktime-file-format) and [`Uncompressed Y´CbCr Video in QuickTime Files`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2162/_index.html#//apple_ref/doc/uid/DTS40013070-CH1-TNTAG10) describe these indices in the `‘colr’` extension of type `‘nclc’`.
-
- Each represents indices, not actual values. The [`QuickTime File Format`](https://developer.apple.com/documentation/quicktime-file-format) and [`Uncompressed Y´CbCr Video in QuickTime Files`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2162/_index.html#//apple_ref/doc/uid/DTS40013070-CH1-TNTAG10) describe these indices in the `‘colr’` extension of type `‘nclc’`.
 
 ColorSync uses these video parameters to generate one of the following video color spaces:
 
@@ -85,8 +81,6 @@ videoComposition.colorYCbCrMatrix = AVVideoYCbCrMatrix_ITU_R_709_2
 ```
 
 > **Note**:  The default value for the above properties is `nil`. When the value of a property is `nil`, the system adopts and propogates the source’s value.
-
- The default value for the above properties is `nil`. When the value of a property is `nil`, the system adopts and propogates the source’s value.
 
 ##### Tag Your Core Video Buffers with Color Space Information
 
@@ -205,4 +199,4 @@ class MyCustomVideoCompositor : AVVideoCompositing {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/tagging-media-with-video-color-information)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/tagging-media-with-video-color-information)*

@@ -28,8 +28,6 @@ The full URL is the concatenation of the scheme, a colon (`:`), and the value of
 
 > **Note**:  The term “protocol” is also sometimes used when talking about network-based URL schemes. However, not all URL schemes are networking protocols—`data://` URLs, for example.
 
- The term “protocol” is also sometimes used when talking about network-based URL schemes. However, not all URL schemes are networking protocols—`data://` URLs, for example.
-
 ## See Also
 
 - [var absoluteString: String?](nsurl/absolutestring.md)

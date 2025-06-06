@@ -1,6 +1,6 @@
 # prefix(while:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a sequence containing the initial, consecutive elements that satisfy the given predicate.
@@ -35,8 +35,6 @@ let positivePrefix = numbers.prefix(while: { $0 > 0 })
 If `predicate` matches every element in the sequence, the resulting sequence contains every element of the sequence.
 
 > **Note**: O(), where  is the length of the result.
-
-O(), where  is the length of the result.
 
 ## Parameters
 

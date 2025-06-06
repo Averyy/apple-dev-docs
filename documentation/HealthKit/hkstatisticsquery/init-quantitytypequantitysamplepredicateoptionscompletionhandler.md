@@ -1,6 +1,6 @@
 # init(quantityType:quantitySamplePredicate:options:completionHandler:)
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: init
 
 Initializes a statistics query instance that performs the specified calculations over the matching samples in the HeathKit store.
@@ -32,8 +32,6 @@ A newly initialized statistics query object.
 After instantiating the query, call the `HKHealthStore` class’s `executeQuery:` method to run this query. Queries run on an anonymous background queue. As soon as the query is complete, the results handler is executed on the same background queue (but not necessarily on the same thread). You typically dispatch these results to the main queue to update the user interface.
 
 > **Note**:  Statistical calculations can take a considerable amount of time, especially if there are a large number of samples involved.
-
- Statistical calculations can take a considerable amount of time, especially if there are a large number of samples involved.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # starts(with:by:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a Boolean value indicating whether the initial elements of the sequence are equivalent to the elements in another sequence, using the given predicate as the equivalence test.
@@ -31,8 +31,6 @@ The predicate must be an  over the elements. That is, for any elements `a`, `b`,
 - If `areEquivalent(a, b)` and `areEquivalent(b, c)` are both `true`, then `areEquivalent(a, c)` is also `true`. (Transitivity)
 
 > **Note**: O(), where  is the lesser of the length of the sequence and the length of `possiblePrefix`.
-
-O(), where  is the lesser of the length of the sequence and the length of `possiblePrefix`.
 
 ## Parameters
 

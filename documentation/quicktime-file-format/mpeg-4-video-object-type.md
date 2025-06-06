@@ -1,6 +1,6 @@
 # MPEG-4 video object type
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 #### Overview
 
@@ -15,8 +15,6 @@ Example: The Simple Object Type video object is indicated by the value `1`.
 A writer of the MPEG-4 Video Object Type feature should record the 8 bits corresponding to the `video_object_type_indication` found in the `VideoObjectLayer` within the `ES_descriptor`’s video `DecoderSpecificConfig`. The most significant 24 bits of the value should be set to `0`. This feature should be written only for MPEG-4 video of video object type `1` (Video ID). If the MPEG-4 video does not use Video ID (`1`) for `visual_object_type`, the esds will have no `VideoObjectLayer` and consequently no `video_object_type_indication`. In this case, no MPEG-4 Video Object Type feature should be written.
 
 > **Note**: A writer that records the MPEG-4 Video Object Type feature for encoded video using the Video ID visual object type is encouraged to write the MPEG-4 Video Codec and MPEG-4 Video Profile features as well.
-
-A writer that records the MPEG-4 Video Object Type feature for encoded video using the Video ID visual object type is encouraged to write the MPEG-4 Video Codec and MPEG-4 Video Profile features as well.
 
 #### Feature Value Algorithm
 

@@ -1,6 +1,6 @@
 # Limiting resource access in web content extensions
 
-**Framework**: BrowserEngineKit
+**Framework**: Browserenginekit
 
 Reduce the impact of vulnerabilities in web content extensions by limiting privileges.
 
@@ -64,8 +64,6 @@ Design your web content extension so that it doesn’t need to do any of the abo
 
 > **Note**:  The rendering extension and networking extension both conform to [`RestrictedSandboxAppliable`](restrictedsandboxappliable.md) and you can apply a restricted sandbox to them. Revision 1 of the restricted sandbox doesn’t apply any additional restrictions to those extensions.
 
- The rendering extension and networking extension both conform to [`RestrictedSandboxAppliable`](restrictedsandboxappliable.md) and you can apply a restricted sandbox to them. Revision 1 of the restricted sandbox doesn’t apply any additional restrictions to those extensions.
-
 #### Restrict Access to System Notifications
 
 Limit the possibility for malicious code that runs in your web-content extension to post notifications using the system’s notification service by adding the `com.apple.developer.web-browser-engine.restrict.notifyd` entitlement with the value `true`. When it has this entitlement, your web-content extension can’t post notifications by connecting directly to the system’s notification daemon.
@@ -84,4 +82,4 @@ Limit the possibility for malicious code that runs in your web-content extension
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/limiting-resource-access-in-content-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/limiting-resource-access-in-content-extensions)*

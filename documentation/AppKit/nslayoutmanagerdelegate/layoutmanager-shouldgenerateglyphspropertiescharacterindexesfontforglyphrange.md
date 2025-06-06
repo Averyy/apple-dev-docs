@@ -1,6 +1,6 @@
 # layoutManager(_:shouldGenerateGlyphs:properties:characterIndexes:font:forGlyphRange:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Enables customization of the initial glyph generation process.
@@ -23,8 +23,6 @@ The actual glyph range stored in this method. By returning `0`, it can indicate 
 This message is sent whenever the layout manager is about to store the initial glyph information via [`setGlyphs(_:properties:characterIndexes:font:forGlyphRange:)`](nslayoutmanager/setglyphs(_:properties:characterindexes:font:forglyphrange:).md). To customize the initial glyph generation process, this method can invoke [`setGlyphs(_:properties:characterIndexes:font:forGlyphRange:)`](nslayoutmanager/setglyphs(_:properties:characterindexes:font:forglyphrange:).md) with modified glyph information.
 
 > **Note**:  Querying glyph information surrounding `glyphRange` could lead to recursion since the data might not be available yet.
-
- Querying glyph information surrounding `glyphRange` could lead to recursion since the data might not be available yet.
 
 ## Parameters
 

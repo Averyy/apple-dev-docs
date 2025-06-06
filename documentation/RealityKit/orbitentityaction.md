@@ -1,6 +1,6 @@
 # OrbitEntityAction
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 An action which animates the transform of an entity to revolve around a specified pivot entity.
@@ -50,15 +50,9 @@ entity.playAnimation(orbitAnimation)
 
 > **Note**: Use the [`orbitalAxis`](orbitentityaction/orbitalaxis.md) to determine whether the entity orbits clockwise or counterclockwise.
 
-Use the [`orbitalAxis`](orbitentityaction/orbitalaxis.md) to determine whether the entity orbits clockwise or counterclockwise.
-
 > ❗ **Important**: This action directly animates the [`BindTarget.transform`](bindtarget/transform.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
 
-This action directly animates the [`BindTarget.transform`](bindtarget/transform.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
-
 > ❗ **Important**: For a successful orbit, ensure the translational offset between the target and pivot entity are not parallel to the orbit axis.
-
-For a successful orbit, ensure the translational offset between the target and pivot entity are not parallel to the orbit axis.
 
 ## Topics
 
@@ -118,4 +112,4 @@ For a successful orbit, ensure the translational offset between the target and p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/orbitentityaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/orbitentityaction)*

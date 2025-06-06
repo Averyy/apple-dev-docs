@@ -24,8 +24,6 @@ Your iOS app and watchOS app must both create and configure an instance of this 
 
 > ❗ **Important**:  The session object must be configured and activated before you attempt to send messages or obtain information about the state of the connection. Before activating the session, you may call the [`isSupported()`](wcsession/issupported().md) method to make sure that current device can use the Watch Connectivity framework.
 
- The session object must be configured and activated before you attempt to send messages or obtain information about the state of the connection. Before activating the session, you may call the [`isSupported()`](wcsession/issupported().md) method to make sure that current device can use the Watch Connectivity framework.
-
 ##### Configuring and Activating the Session
 
 To configure and activate the session, assign a [`delegate`](wcsession/delegate.md) to the default session object and call that object’s [`activate()`](wcsession/activate().md) method, as shown in Listing 1. Your WatchKit extension and iOS app must each configure their own session object. Activating the session establishes a connection between the two apps.
@@ -35,8 +33,6 @@ Listing 1. Configuring and activating a session
 To support the pairing of multiple watches to the same iPhone, the session delegate of both your apps must implement the activation APIs. Implementing the [`session(_:activationDidCompleteWith:error:)`](wcsessiondelegate/session(_:activationdidcompletewith:error:).md) method lets the session know that your app supports asynchronous activation. Implementing the [`sessionDidBecomeInactive(_:)`](wcsessiondelegate/sessiondidbecomeinactive(_:).md) and [`sessionDidDeactivate(_:)`](wcsessiondelegate/sessiondiddeactivate(_:).md) methods in the session delegate of your iOS app is required to manage transitions between different Apple Watches.
 
 > ❗ **Important**:  If your delegate does not implement the appropriate methods for asynchronous activation and activation state changes, your app opts out of multiple Apple Watch support altogether. Opting out has important implications for your app when the user switches from one Apple Watch to another. When a switch occurs, your app’s session is deactivated. When your app subsequently moves to the background, the system terminates your app. (Background execution modes do not prevent the termination of your app.) The next time your app launches, it connects with the new Apple Watch.
-
- If your delegate does not implement the appropriate methods for asynchronous activation and activation state changes, your app opts out of multiple Apple Watch support altogether. Opting out has important implications for your app when the user switches from one Apple Watch to another. When a switch occurs, your app’s session is deactivated. When your app subsequently moves to the background, the system terminates your app. (Background execution modes do not prevent the termination of your app.) The next time your app launches, it connects with the new Apple Watch.
 
 Apps may initiate transfers only when the session is active—that is, the [`activationState`](wcsession/activationstate.md) is set to [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md). Your iOS app should also check the [`isPaired`](wcsession/ispaired.md) and [`isWatchAppInstalled`](wcsession/iswatchappinstalled.md) properties before sending any background messages, and it may need to check other properties as needed. Most of the properties you need to check are valid only while the session is active. At other times, the values of the properties may be undefined. The [`activationState`](wcsession/activationstate.md) property is always valid and contains the current activation state of the session. For details, see the corresponding property description.
 
@@ -71,8 +67,6 @@ You may initiate data transfers to a counterpart app only when the [`activationS
 When sending messages to a counterpart, background messages are placed on a queue and transmitted in order. Incoming messages are similarly queued and delivered to the delegate in the order in which they were received. Data sent using the [`sendMessage(_:replyHandler:errorHandler:)`](wcsession/sendmessage(_:replyhandler:errorhandler:).md), [`sendMessageData(_:replyHandler:errorHandler:)`](wcsession/sendmessagedata(_:replyhandler:errorhandler:).md), and [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) methods has a higher priority and is transmitted right away. All messages received by your app are delivered to the session delegate serially on a background thread.
 
 > **Note**:  Remember that background transfers are not delivered immediately. The system sends data as quickly as possible but transfers are not instantaneous, and the system may delay transfers slightly to improve power usage. Also, sending a large data file requires a commensurate amount of time to transmit the data to the other device and process it on the receiving side.
-
- Remember that background transfers are not delivered immediately. The system sends data as quickly as possible but transfers are not instantaneous, and the system may delay transfers slightly to improve power usage. Also, sending a large data file requires a commensurate amount of time to transmit the data to the other device and process it on the receiving side.
 
 When sending messages, send only the data that your app needs. All transfers involve sending data wireless to the counterpart app, which consumes power. Rather than sending all of your data every time, send only the items that have changed.
 
@@ -167,4 +161,4 @@ Be prepared to handle errors and provide a graceful fallback when data cannot be
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchconnectivity/wcsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchConnectivity/wcsession)*

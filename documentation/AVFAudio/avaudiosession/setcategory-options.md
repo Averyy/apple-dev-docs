@@ -1,6 +1,6 @@
 # setCategory(_:options:)
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: method
 
 Sets the audio session’s category with the specified options.
@@ -26,8 +26,6 @@ The audio session’s category defines how you intend to use audio in your app. 
 You can tailor the behavior of certain categories by specifying a mask of category options. Specifying an unsupported option for the indicated category results in an error. See [`AVAudioSession.CategoryOptions`](avaudiosession/categoryoptions-swift.struct.md) for category compatibility.
 
 > **Note**:  Instead of setting your [`category`](avaudiosession/category-swift.property.md) and [`mode`](avaudiosession/mode-swift.property.md) properties independently, set them at the same time using the [`setCategory(_:mode:options:)`](avaudiosession/setcategory(_:mode:options:).md) or [`setCategory(_:mode:policy:options:)`](avaudiosession/setcategory(_:mode:policy:options:).md) method.
-
- Instead of setting your [`category`](avaudiosession/category-swift.property.md) and [`mode`](avaudiosession/mode-swift.property.md) properties independently, set them at the same time using the [`setCategory(_:mode:options:)`](avaudiosession/setcategory(_:mode:options:).md) or [`setCategory(_:mode:policy:options:)`](avaudiosession/setcategory(_:mode:policy:options:).md) method.
 
 ## Parameters
 

@@ -27,8 +27,6 @@ Use `accentColor(_:)` when you want to apply a broad theme color to your app’s
 
 > **Note**: In macOS, SwiftUI applies customization of the accent color only if the user chooses Multicolor under General > Accent color in System Preferences.
 
-In macOS, SwiftUI applies customization of the accent color only if the user chooses Multicolor under General > Accent color in System Preferences.
-
 In the example below, the outer `VStack` contains two child views. The first is a button with the default accent color. The second is a `VStack` that contains a button and a slider, both of which adopt the purple accent color of their containing view. Note that the `Text` element used as a label alongside the `Slider` retains its default color.
 
 ```None

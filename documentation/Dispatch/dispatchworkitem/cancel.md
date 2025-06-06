@@ -28,8 +28,6 @@ Release of any resources associated with the block object is delayed until execu
 
 > **Note**:  Take care to ensure that a work item does not capture any resources that require execution of the block body in order to be released, such as memory allocated with `malloc(3)` on which the block body calls `free(3)`. Such resources are leaked if the block body is never executed due to cancellation.
 
- Take care to ensure that a work item does not capture any resources that require execution of the block body in order to be released, such as memory allocated with `malloc(3)` on which the block body calls `free(3)`. Such resources are leaked if the block body is never executed due to cancellation.
-
 ## See Also
 
 - [var isCancelled: Bool](dispatchworkitem/iscancelled.md)

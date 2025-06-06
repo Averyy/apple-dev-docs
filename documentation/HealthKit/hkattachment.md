@@ -1,6 +1,6 @@
 # HKAttachment
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: class
 
 A file that is attached to a sample in the HealthKit store.
@@ -76,8 +76,6 @@ do {
 
 > **Note**:  You can only add attachments to [`HKVisionPrescription`](hkvisionprescription.md), [`HKGlassesPrescription`](hkglassesprescription.md), and [`HKContactsPrescription`](hkcontactsprescription.md) samples. You can also read attachments from [`clinicalNoteRecord`](hkclinicaltypeidentifier/clinicalnoterecord.md) samples.
 
- You can only add attachments to [`HKVisionPrescription`](hkvisionprescription.md), [`HKGlassesPrescription`](hkglassesprescription.md), and [`HKContactsPrescription`](hkcontactsprescription.md) samples. You can also read attachments from [`clinicalNoteRecord`](hkclinicaltypeidentifier/clinicalnoterecord.md) samples.
-
 ## Topics
 
 ### Accessing attachment data
@@ -128,4 +126,4 @@ do {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkattachment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkattachment)*

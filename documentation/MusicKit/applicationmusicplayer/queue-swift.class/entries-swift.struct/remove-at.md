@@ -1,6 +1,6 @@
 # remove(at:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Removes and returns the element at the specified position.
@@ -38,8 +38,6 @@ print(measurements)
 Calling this method may invalidate any existing indices for use with this collection.
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

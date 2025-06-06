@@ -1,6 +1,6 @@
 # previewController(_:frameFor:inSourceView:)
 
-**Framework**: Quick Look  
+**Framework**: Quicklook  
 **Kind**: method
 
 Tells the delegate that the system is about to present the preview full screen or dismiss it, and asks for information to provide a zoom effect.
@@ -27,8 +27,6 @@ Use this delegate method to configure a zoom animation for presenting and dismis
 
 > **Note**:  Starting with macOS 11, animated transitions are available for Mac apps built with Mac Catalyst. On Mac computers running a version earlier than macOS 11, the system doesn’t call this delegate method.
 
- Starting with macOS 11, animated transitions are available for Mac apps built with Mac Catalyst. On Mac computers running a version earlier than macOS 11, the system doesn’t call this delegate method.
-
 The system only invokes this method when your app uses the animation option for presentation or dismissal. Specifically, the following statements result in invocation of this method:
 
 ```objc
@@ -42,8 +40,6 @@ If you use Boolean [`false`](https://developer.apple.com/documentation/swift/fal
 The preview item, and its origin point, can change while displaying a preview. For example, the user may navigate to a different item using the controller, or may rotate the device. Return the correct origin point when zooming to full screen, and when zooming back to your representation of the item.
 
 > **Note**:  Zoom animation is most effective on large-screen devices. On iPhone and iPod touch, use a [`UINavigationController`](https://developer.apple.com/documentation/UIKit/UINavigationController) object to push the [`QLPreviewController`](qlpreviewcontroller.md) into view. When using a navigation controller to push a preview, the system doesn’t invoke this method.
-
- Zoom animation is most effective on large-screen devices. On iPhone and iPod touch, use a [`UINavigationController`](https://developer.apple.com/documentation/UIKit/UINavigationController) object to push the [`QLPreviewController`](qlpreviewcontroller.md) into view. When using a navigation controller to push a preview, the system doesn’t invoke this method.
 
 To produce a zoom animation, return a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) object that represents the frame for the preview item as it appears in your app. Use coordinates relative to the [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) object that contains the item, and specify that view in the `view` parameter.
 

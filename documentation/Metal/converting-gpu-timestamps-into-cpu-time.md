@@ -18,15 +18,11 @@ You can sample the initial timestamps any time before a pass, such as at launch 
 
 > 💡 **Tip**:  Call [`sampleTimestamps()`](mtldevice/sampletimestamps().md) sparingly because doing so may trap to the kernel (to read the GPU clock), which can affect your app’s runtime performance.
 
- Call [`sampleTimestamps()`](mtldevice/sampletimestamps().md) sparingly because doing so may trap to the kernel (to read the GPU clock), which can affect your app’s runtime performance.
-
 Calculate the time span by sampling the GPU and CPU timestamps again after the command buffer completes.
 
 The span of time establishes a baseline that your app needs to convert timestamps from a counter sample buffer into real-world time values.
 
 > 💡 **Tip**:  One good strategy is to sample the timestamps when you create a command buffer, and again inside a completion handler for that command buffer.
-
- One good strategy is to sample the timestamps when you create a command buffer, and again inside a completion handler for that command buffer.
 
 For example, the code below samples the GPU and CPU timestamps before and immediately after the GPU runs the command buffer.
 
@@ -35,8 +31,6 @@ For example, the code below samples the GPU and CPU timestamps before and immedi
 Calculate the CPU time equivalent of a GPU timestamp by mathematically converting it using two sets of your app’s reference GPU and CPU timestamps.
 
 > **Note**:  The system measures CPU timestamps in nanoseconds.
-
- The system measures CPU timestamps in nanoseconds.
 
 Convert a GPU timestamp by following these steps:
 
@@ -59,4 +53,4 @@ This method is useful to show the duration between the beginning and end of an e
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/converting-gpu-timestamps-into-cpu-time)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/converting-gpu-timestamps-into-cpu-time)*

@@ -1,6 +1,6 @@
 # prepare(using:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Configures the device to read mobile documents.
@@ -38,8 +38,6 @@ After calling this method, there are three possible scenarios:
 - This method throws a [`MobileDocumentReaderError`](mobiledocumentreadererror.md) if a problem occurs.
 
 > **Note**: A [`MobileDocumentReaderError`](mobiledocumentreadererror.md) if the method fails to configure the device.
-
-A [`MobileDocumentReaderError`](mobiledocumentreadererror.md) if the method fails to configure the device.
 
 ## Parameters
 

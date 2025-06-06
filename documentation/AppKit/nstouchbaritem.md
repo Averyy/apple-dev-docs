@@ -1,6 +1,6 @@
 # NSTouchBarItem
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A UI control shown in the Touch Bar on supported models of MacBook Pro.
@@ -50,8 +50,6 @@ You typically use a  (an instance of the [`NSCustomTouchBarItem`](nscustomtouchb
 
 > **Note**:  When you create custom items, it’s important to use convenience initializers, available starting in macOS 10.12, for the [`NSButton`](nsbutton.md), [`NSSegmentedControl`](nssegmentedcontrol.md), and [`NSSlider`](nsslider.md) classes. These initializers take care of sizing their controls correctly for the Touch Bar, and they configure appearance appropriately for the Touch Bar. If you don’t use the convenience initializers, it’s your app’s responsibility to ensure correct sizing and appearance.
 
- When you create custom items, it’s important to use convenience initializers, available starting in macOS 10.12, for the [`NSButton`](nsbutton.md), [`NSSegmentedControl`](nssegmentedcontrol.md), and [`NSSlider`](nsslider.md) classes. These initializers take care of sizing their controls correctly for the Touch Bar, and they configure appearance appropriately for the Touch Bar. If you don’t use the convenience initializers, it’s your app’s responsibility to ensure correct sizing and appearance.
-
 ##### Popover Items
 
 A  (an instance of the [`NSPopoverTouchBarItem`](nspopovertouchbaritem.md) class) — the second commonly-used type — lets you provide a new bar (an [`NSTouchBar`](nstouchbar.md) object) when a user taps, or presses-and-holds, on the collapsed representation of the popover item.
@@ -61,8 +59,6 @@ In its expanded state, a popover appears as an overlay above other items in the 
 To show a bar when a user taps a popover item, specify a bar in the item’s [`popoverTouchBar`](nspopovertouchbaritem/popovertouchbar.md) property. Enable press-and-hold by specifying a bar in the [`pressAndHoldTouchBar`](nspopovertouchbaritem/pressandholdtouchbar.md) property. The press-and-hold feature is suitable only for a simple popover, such as one that contains a single segmented control (an instance of the [`NSSegmentedControl`](nssegmentedcontrol.md) class) or slider (an instance of the [`NSSliderTouchBarItem`](nsslidertouchbaritem.md) class).
 
 > **Note**:  If your popover bar requires significant user interaction and contains many items or many scroll views, don’t enable press-and-hold; doing so can result in an awkward user experience.
-
- If your popover bar requires significant user interaction and contains many items or many scroll views, don’t enable press-and-hold; doing so can result in an awkward user experience.
 
 The system automatically shows a chevron in the popover item under the following conditions: You specify the same [`NSTouchBar`](nstouchbar.md) object for both [`pressAndHoldTouchBar`](nspopovertouchbaritem/pressandholdtouchbar.md) and [`popoverTouchBar`](nspopovertouchbaritem/popovertouchbar.md) properties,  you use the default view for the popover item’s [`collapsedRepresentation`](nspopovertouchbaritem/collapsedrepresentation.md) property.
 
@@ -374,4 +370,4 @@ If using the [`NSTouch`](nstouch.md) class directly, be sure to implement the [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstouchbaritem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstouchbaritem)*

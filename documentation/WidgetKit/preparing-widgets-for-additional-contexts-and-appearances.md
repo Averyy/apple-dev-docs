@@ -25,8 +25,6 @@ The following table shows the rendering modes for each widget you need to suppor
 
 > **Note**: For design guidance, see [`Human Interface Guidelines > Complications`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/complications) and [`Human Interface Guidelines > Widgets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/widgets).
 
-For design guidance, see [`Human Interface Guidelines > Complications`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/complications) and [`Human Interface Guidelines > Widgets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/widgets).
-
 In your code, read the [`widgetRenderingMode`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/widgetRenderingMode) environment variable to create SwiftUI views for each applicable rendering mode, as shown in the following example:
 
 ```swift
@@ -77,8 +75,6 @@ To make sure your widget appears correctly, mark your background views as remova
 
 > ❗ **Important**: If a widget doesn’t support removable background views or doesn’t explicitly mark a background as nonremovable, the system displays a warning message that overlays the widget during development with Xcode.
 
-If a widget doesn’t support removable background views or doesn’t explicitly mark a background as nonremovable, the system displays a warning message that overlays the widget during development with Xcode.
-
 To mark your background views as removable:
 
 1. Add the [`containerBackground(_:for:)`](https://developer.apple.com/documentation/SwiftUI/View/containerBackground(_:for:)) modifier to your background views to define the background appearance of your widget and tell WidgetKit that it can remove the view where applicable.
@@ -112,8 +108,6 @@ Marking background views as removable by defining a background container allows 
 
 > **Note**: On Apple Watch, rectangular widgets in the Smart Stack use a default dark material background. By adding a container background, the widget renders with a background that visually ties it to your app and makes it more recognizable to people.
 
-On Apple Watch, rectangular widgets in the Smart Stack use a default dark material background. By adding a container background, the widget renders with a background that visually ties it to your app and makes it more recognizable to people.
-
 To detect whether a widget appears with or without a background, use the [`showsWidgetContainerBackground`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/showsWidgetContainerBackground) environment variable.
 
 ##### Explicitly Opt Out of Background Removal
@@ -121,8 +115,6 @@ To detect whether a widget appears with or without a background, use the [`shows
 Some widgets don’t have distinct foreground content, and background removal can negatively impact their functionality. For example, a widget might display a photo or map that takes up the entirety of the widget’s bounds. Removing the photo or map removes the functionality of the widget. If this case applies to your widget, set the [`containerBackgroundRemovable(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/containerBackgroundRemovable(_:)) modifier to `false` for your widget configuration.
 
 > ❗ **Important**: Marking a background as nonremovable excludes your widget from the widget gallery in contexts that require a removable background; for example, on the iPad Lock Screen and in StandBy.
-
-Marking a background as nonremovable excludes your widget from the widget gallery in contexts that require a removable background; for example, on the iPad Lock Screen and in StandBy.
 
 ##### Set the Background Color of Accessory Widgets
 
@@ -163,4 +155,4 @@ When people place an iPhone widget on the Mac desktop, the system renders it usi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/preparing-widgets-for-additional-contexts-and-appearances)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/preparing-widgets-for-additional-contexts-and-appearances)*

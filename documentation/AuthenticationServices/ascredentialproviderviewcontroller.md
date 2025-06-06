@@ -1,6 +1,6 @@
 # ASCredentialProviderViewController
 
-**Framework**: Authentication Services  
+**Framework**: Authenticationservices  
 **Kind**: class
 
 A view controller that a password manager app uses to extend AutoFill.
@@ -29,8 +29,6 @@ To integrate a password, passkey, or one-time passcode manager app with AutoFill
 4. Optionally, override the [`prepareInterfaceForExtensionConfiguration()`](ascredentialproviderviewcontroller/prepareinterfaceforextensionconfiguration().md) method to specify a configuration interface that you can show when people first enable your credentials manager in Settings.
 
 > **Note**:  This class ignores calls from Mac apps built with Mac Catalyst.
-
- This class ignores calls from Mac apps built with Mac Catalyst.
 
 ## Topics
 
@@ -133,4 +131,4 @@ To integrate a password, passkey, or one-time passcode manager app with AutoFill
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/ascredentialproviderviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/ascredentialproviderviewcontroller)*

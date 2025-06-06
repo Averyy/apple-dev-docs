@@ -1,6 +1,6 @@
 # NSTableView.Style.automatic
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: case
 
 The system resolves the table view style based on the table view hierarchy.
@@ -24,8 +24,6 @@ The system resolves the table view style in the following manner:
 
 > **Note**:  For backward compatibility reasons, when [`selectionHighlightStyle`](nstableview/selectionhighlightstyle-swift.property.md) is [`NSTableView.SelectionHighlightStyle.sourceList`](nstableview/selectionhighlightstyle-swift.enum/sourcelist.md), [`style`](nstableview/style-swift.property.md) also resolves to [`NSTableView.Style.sourceList`](nstableview/style-swift.enum/sourcelist.md).
 
- For backward compatibility reasons, when [`selectionHighlightStyle`](nstableview/selectionhighlightstyle-swift.property.md) is [`NSTableView.SelectionHighlightStyle.sourceList`](nstableview/selectionhighlightstyle-swift.enum/sourcelist.md), [`style`](nstableview/style-swift.property.md) also resolves to [`NSTableView.Style.sourceList`](nstableview/style-swift.enum/sourcelist.md).
-
 ## See Also
 
 - [NSTableView.Style.fullWidth](nstableview/style-swift.enum/fullwidth.md)
@@ -40,4 +38,4 @@ The system resolves the table view style in the following manner:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstableview/style-swift.enum/automatic)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstableview/style-swift.enum/automatic)*

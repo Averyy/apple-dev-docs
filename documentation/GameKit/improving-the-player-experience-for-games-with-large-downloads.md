@@ -1,6 +1,6 @@
 # Improving the player experience for games with large downloads
 
-**Framework**: GameKit
+**Framework**: Gamekit
 
 Provide ample content in your base installation and then use on-demand resources and the Background Assets API to handle additional content.
 
@@ -56,10 +56,6 @@ If your game targets iOS 18, iPadOS 18, or tvOS 18, it can have up to 70 GB of a
 Use the [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) framework if you want to host your game’s additional content outside the App Store. To use Background Assets, write a Background Assets extension that tells the system how to download assets from your website or CDN. Your extension can also react to authentication challenges and changes in download status. Your game uses the [`BADownloadManager`](https://developer.apple.com/documentation/BackgroundAssets/BADownloadManager) API to stay informed of completed downloads and schedule new downloads.
 
 > **Note**:  Session 110403: [`Meet Background Assets`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110403/) Session 10108: [`What’s New in Background Assets`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10108/)
-
- Session 110403: [`Meet Background Assets`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110403/)
-
-Session 10108: [`What’s New in Background Assets`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10108/)
 
 ##### Add Information About Your Essential Content
 

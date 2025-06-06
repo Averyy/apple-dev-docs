@@ -1,6 +1,6 @@
 # CTFontManagerCreateFontDescriptorFromData(_:)
 
-**Framework**: Core Text  
+**Framework**: Coretext  
 **Kind**: func
 
 Creates a font descriptor representing the font in the supplied data.
@@ -29,8 +29,6 @@ A font descriptor created from the data or `NULL` if it is not a valid font.
 If the data contains a font collection (TTC or OTC), only the first font in the collection will be returned. Use [`CTFontManagerCreateFontDescriptorsFromData(_:)`](ctfontmanagercreatefontdescriptorsfromdata(_:).md) in that case.
 
 > **Note**:  The font descriptor returned by this function is not available through font descriptor matching. As a result, you can’t directly look for the font by name with functions like [`CTFontCreateWithName(_:_:_:)`](ctfontcreatewithname(_:_:_:).md). If you wish to make the font available for name matching, use [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](ctfontmanagerregisterfonturls(_:_:_:_:).md) instead.
-
- The font descriptor returned by this function is not available through font descriptor matching. As a result, you can’t directly look for the font by name with functions like [`CTFontCreateWithName(_:_:_:)`](ctfontcreatewithname(_:_:_:).md). If you wish to make the font available for name matching, use [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](ctfontmanagerregisterfonturls(_:_:_:_:).md) instead.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # CKRecordZoneSubscription
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 A subscription that generates push notifications when CloudKit modifies records in a specific record zone.
@@ -26,13 +26,9 @@ Subscriptions track the creation, modification, and deletion of records in a dat
 
 > **Note**:  You don’t need to explicitly enable push notifications for your App ID to receive subscription notifications. Xcode automatically adds the entitlement when you enable the CloudKit capability. For more information, see [`Enabling CloudKit in Your App`](enabling-cloudkit-in-your-app.md). To use silent push notifications, add the Background Modes capability in your Xcode project and then select the “Background fetch” and “Remote notifications” options.
 
- You don’t need to explicitly enable push notifications for your App ID to receive subscription notifications. Xcode automatically adds the entitlement when you enable the CloudKit capability. For more information, see [`Enabling CloudKit in Your App`](enabling-cloudkit-in-your-app.md). To use silent push notifications, add the Background Modes capability in your Xcode project and then select the “Background fetch” and “Remote notifications” options.
-
 Record zone subscriptions execute whenever a change happens in the record zone you specify when you create the subscription. You can further specialize the subscription by setting its [`recordType`](ckdatabasesubscription/recordtype-46v7a.md) property to a specific record type. This limits the scope of the subscription to only track changes to records of that type and reduces the number of notifications it generates.
 
 > **Note**:  Only the private database supports record zone subscriptions. If you attempt to save a record zone subscription in a public or shared database, CloudKit returns an error.
-
- Only the private database supports record zone subscriptions. If you attempt to save a record zone subscription in a public or shared database, CloudKit returns an error.
 
 Create any subscriptions on your app’s first launch. After you initialize a subscription, save it to the server using [`CKModifySubscriptionsOperation`](ckmodifysubscriptionsoperation.md). When the operation completes, record that state on-device (in [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults), for example). You can then check that state on subsequent launches to prevent unnecessary trips to the server.
 
@@ -128,4 +124,4 @@ if([[NSUserDefaults standardUserDefaults]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckrecordzonesubscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckrecordzonesubscription)*

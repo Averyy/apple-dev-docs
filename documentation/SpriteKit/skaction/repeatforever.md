@@ -1,6 +1,6 @@
 # repeatForever(_:)
 
-**Framework**: SpriteKit  
+**Framework**: Spritekit  
 **Kind**: method
 
 Creates an action that repeats another action forever.
@@ -31,8 +31,6 @@ When the action executes, the associated action runs to completion and then repe
 This action is reversible; it creates a new action that is the reverse of the specified action and then repeats it forever.
 
 > **Note**:  The action to be repeated must have a non-instantaneous duration.
-
- The action to be repeated must have a non-instantaneous duration.
 
 ## Parameters
 

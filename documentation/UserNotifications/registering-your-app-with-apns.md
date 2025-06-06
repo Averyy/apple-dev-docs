@@ -10,8 +10,6 @@ Apple Push Notification service (APNs) must know the address of a user’s devic
 
 > **Note**:  You can’t use the same device token for more than one app, even when the apps are on the same device. Every app must request their own unique device token and forward it to your provider server.
 
- You can’t use the same device token for more than one app, even when the apps are on the same device. Every app must request their own unique device token and forward it to your provider server.
-
 ##### Enable the Push Notifications Capability
 
 To add the required entitlements to your app, enable the Push Notifications capability in your Xcode project, as shown in . Enabling this option in iOS adds the [`APS Environment Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/aps-environment) to the app. In macOS, it adds the [`APS Environment (macOS) Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.aps-environment). See [`Enable push notifications`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devdfd3d04a1) in Xcode help for more information.
@@ -19,8 +17,6 @@ To add the required entitlements to your app, enable the Push Notifications capa
 ![Add entitlements to your Xcode project by enabling the push notification capability in the Capabilities tab.](https://docs-assets.developer.apple.com/published/d01d47767d5a70a20a63bb93bcd68aee/media-4321361%402x.png)
 
 > ❗ **Important**:  In your developer account, enable the push notification service for the App ID assigned to your project. For more information about configuring your developer account, go to your [`Developer Account`](https://developer.apple.comhttps://developer.apple.com/account/#/overview/) page.
-
- In your developer account, enable the push notification service for the App ID assigned to your project. For more information about configuring your developer account, go to your [`Developer Account`](https://developer.apple.comhttps://developer.apple.com/account/#/overview/) page.
 
 ##### Register Your App and Retrieve Your Apps Device Token
 
@@ -58,8 +54,6 @@ func application(_ application: UIApplication,
 
 > ❗ **Important**:  Never cache device tokens in local storage. APNs issues a new token when the user restores a device from a backup, when the user installs your app on a new device, and when the user reinstalls the operating system. You get an up-to-date token each time you ask the system to provide the token.
 
- Never cache device tokens in local storage. APNs issues a new token when the user restores a device from a backup, when the user installs your app on a new device, and when the user reinstalls the operating system. You get an up-to-date token each time you ask the system to provide the token.
-
 ##### Forward Tokens to Your Provider Server
 
 Upon receiving a device token, open a network connection from your app to your provider server. Securely forward the device token and any other information you need to identify the specific user to your server. For example, you might include the user’s login name or something that connects them to your service. Encrypt any information you send over the network.
@@ -80,4 +74,4 @@ For information about how to send payloads and device tokens to APNs, see [`Send
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/registering-your-app-with-apns)*

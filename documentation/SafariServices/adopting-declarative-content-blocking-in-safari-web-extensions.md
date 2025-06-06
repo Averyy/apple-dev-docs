@@ -1,6 +1,6 @@
 # Adopting Declarative Content Blocking in Safari Web Extensions
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Block web content with your web extension using the declarative net request API.
 
@@ -13,8 +13,6 @@ Block web content with your web extension using the declarative net request API.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`10027: Explore Safari Web Extension Improvements`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10027/).
-
-This sample code project is associated with WWDC21 session [`10027: Explore Safari Web Extension Improvements`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10027/).
 
 ##### Configure the Sample Code Project
 
@@ -43,4 +41,4 @@ On iOS, to run on a device:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/adopting-declarative-content-blocking-in-safari-web-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/adopting-declarative-content-blocking-in-safari-web-extensions)*

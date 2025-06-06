@@ -1,6 +1,6 @@
 # centersPlaceholder
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 A Boolean value that determines whether the search field’s components are centered within the control.
@@ -21,8 +21,6 @@ When this property is set to [`true`](https://developer.apple.com/documentation/
 
 > **Note**:  When set to [`true`](https://developer.apple.com/documentation/swift/true), [`wantsLayer`](nsview/wantslayer.md) is also [`true`](https://developer.apple.com/documentation/swift/true).
 
- When set to [`true`](https://developer.apple.com/documentation/swift/true), [`wantsLayer`](nsview/wantslayer.md) is also [`true`](https://developer.apple.com/documentation/swift/true).
-
 ## See Also
 
 - [func rectForCancelButton(whenCentered: Bool) -> NSRect](nssearchfield/rectforcancelbutton(whencentered:).md)
@@ -35,4 +33,4 @@ When this property is set to [`true`](https://developer.apple.com/documentation/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nssearchfield/centersplaceholder)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nssearchfield/centersplaceholder)*

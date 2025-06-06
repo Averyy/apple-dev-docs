@@ -1,6 +1,6 @@
 # BillboardAction
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 An action that animates the blend factor of an entity’s billboard component.
@@ -69,11 +69,7 @@ robotModel.playAnimation(billboardAnimation)
 
 > **Note**: If an entity doesn’t have a [`BillboardComponent`](billboardcomponent.md), the default initializer creates one for you so that it can restore the entity back to a state without the billboard.
 
-If an entity doesn’t have a [`BillboardComponent`](billboardcomponent.md), the default initializer creates one for you so that it can restore the entity back to a state without the billboard.
-
 > ❗ **Important**: This action directly animates the [`BindTarget.billboardBlendFactor`](bindtarget/billboardblendfactor.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
-
-This action directly animates the [`BindTarget.billboardBlendFactor`](bindtarget/billboardblendfactor.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
 
 Ensure the action can transition back to a non-billboard state by adding the component to the entity and check the [`blendFactor`](billboardcomponent/blendfactor.md) property has a value that you expect.
 
@@ -132,4 +128,4 @@ Ensure the action can transition back to a non-billboard state by adding the com
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/billboardaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/billboardaction)*

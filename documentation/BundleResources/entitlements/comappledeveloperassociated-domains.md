@@ -1,6 +1,6 @@
 # Associated Domains Entitlement
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 The associated domains for specific services, such as shared web credentials, universal links, and App Clips.
@@ -25,8 +25,6 @@ Services include:
 
 > **Note**:  In macOS 11 and later and iOS 14 and later, apps request `apple-app-site-association` files from an Apple-managed content delivery network (CDN) specifically for associated domains, instead of directly from your web server. If the CDN has an old version of the file, or doesn’t already have a copy of the file, it connects to your web server to obtain the latest version.
 
- In macOS 11 and later and iOS 14 and later, apps request `apple-app-site-association` files from an Apple-managed content delivery network (CDN) specifically for associated domains, instead of directly from your web server. If the CDN has an old version of the file, or doesn’t already have a copy of the file, it connects to your web server to obtain the latest version.
-
 If you use a private web server, which is unreachable from the public internet, while developing your app, enable the alternate mode feature to bypass the CDN and connect directly to your server. To do this, add a query string to your associated domains entitlement, as shown in the following example:
 
 ```console
@@ -38,8 +36,6 @@ Where `alternate mode` is one of the following:
 To enable associated domains, add the Associated Domains capability to your target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 
 > ❗ **Important**:  For watchOS apps, you must add the Associated Domains capability to the WatchKit Extension target.
-
- For watchOS apps, you must add the Associated Domains capability to the WatchKit Extension target.
 
 ## See Also
 

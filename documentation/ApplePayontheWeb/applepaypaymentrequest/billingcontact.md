@@ -1,6 +1,6 @@
 # billingContact
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 Billing contact information for the user.
@@ -21,8 +21,6 @@ If you have an up-to-date billing address on file, you can set it here. This bil
 
 > **Note**:  If you supply a billing address, you must also request “`postalAddress`” in [`requiredBillingContactFields`](applepaypaymentrequest/requiredbillingcontactfields.md).
 
- If you supply a billing address, you must also request “`postalAddress`” in [`requiredBillingContactFields`](applepaypaymentrequest/requiredbillingcontactfields.md).
-
 ## See Also
 
 - [shippingContact](applepaypaymentrequest/shippingcontact.md)
@@ -33,4 +31,4 @@ If you have an up-to-date billing address on file, you can set it here. This bil
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest/billingcontact)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypaymentrequest/billingcontact)*

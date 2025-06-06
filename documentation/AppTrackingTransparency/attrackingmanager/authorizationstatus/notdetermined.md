@@ -1,6 +1,6 @@
 # ATTrackingManager.AuthorizationStatus.notDetermined
 
-**Framework**: App Tracking Transparency  
+**Framework**: Apptrackingtransparency  
 **Kind**: case
 
 The value that returns when the app can’t determine the user’s authorization status for access to app-related data for tracking the user or the device.
@@ -22,8 +22,6 @@ case notDetermined
 #### Discussion
 
 > **Note**: If you call `ATTrackingManager.trackingAuthorizationStatus` in macOS, the result is always `ATTrackingManager.AuthorizationStatus.notDetermined`.
-
-If you call `ATTrackingManager.trackingAuthorizationStatus` in macOS, the result is always `ATTrackingManager.AuthorizationStatus.notDetermined`.
 
 ## See Also
 

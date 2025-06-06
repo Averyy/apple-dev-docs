@@ -1,6 +1,6 @@
 # CFURLSetResourcePropertiesForKeys(_:_:_:)
 
-**Framework**: Core Foundation  
+**Framework**: Corefoundation  
 **Kind**: func
 
 Sets the URL’s resource properties for a given set of keys to a given set of values.
@@ -33,8 +33,6 @@ Attempts to set a read-only resource property or to set a resource property that
 The order in which the resource values are set is not defined. If you need to guarantee the order in which resource values are set, you should make multiple requests to this function or [`CFURLSetResourcePropertyForKey(_:_:_:_:)`](cfurlsetresourcepropertyforkey(_:_:_:_:).md).
 
 > **Note**:  This method applies only to URLs for file system resources.
-
- This method applies only to URLs for file system resources.
 
 ## Parameters
 

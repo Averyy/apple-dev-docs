@@ -1,6 +1,6 @@
 # Displaying Live Photos
 
-**Framework**: PhotoKit
+**Framework**: Photokit
 
 Provide the same interactive playback of Live Photos as in the iOS Photos app.
 
@@ -17,8 +17,6 @@ To display Live Photo content on the web, use the [`LivePhotosKit JS`](https://d
 After obtaining a [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) object, use a Live Photo view to display the photo and control playback of its motion and sound content. In iOS and tvOS, you can obtain Live Photos from the user’s photo library using the [`UIImagePickerController`](https://developer.apple.com/documentation/UIKit/UIImagePickerController), [`PHAsset`](https://developer.apple.com/documentation/photos/phasset), and [`PHImageManager`](https://developer.apple.com/documentation/photos/phimagemanager) classes, or by creating one from asset resources exported from a photo library. In macOS, Live Photos are available only when editing Live Photo content in a photo editing extension that runs in the Photos app—see the [`PHContentEditingInput`](https://developer.apple.com/documentation/photos/phcontenteditinginput) class to access Live Photos in an editing session.
 
 > **Note**:  For guidance on how to integrate Live Photos with your app’s user experience, see [`Live Photos`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/MobileHIG/LivePhotos.html#//apple_ref/doc/uid/TP40006556-CH74) in [`iOS Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/ios/human-interface-guidelines/).
-
- For guidance on how to integrate Live Photos with your app’s user experience, see [`Live Photos`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/MobileHIG/LivePhotos.html#//apple_ref/doc/uid/TP40006556-CH74) in [`iOS Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/ios/human-interface-guidelines/).
 
 By default, a Live Photo view uses its own gesture recognizer to allow the user to play the motion and sound content of a Live Photo with the same interactions and visual effects seen in the Photos app. To customize this gesture recognizer—for example, to install it on a different view for proper event handling in your app’s view hierarchy—use the [`playbackGestureRecognizer`](https://developer.apple.com/documentation/photosui/phlivephotoview/playbackgesturerecognizer) property.
 
@@ -38,4 +36,4 @@ Typically, an app doesn’t need to directly control Live Photo playback. In som
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/photokit/displaying-live-photos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PhotoKit/displaying-live-photos)*

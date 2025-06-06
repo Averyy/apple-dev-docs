@@ -1,6 +1,6 @@
 # updatePostbackConversionValue(_:completionHandler:)
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: method
 
 Verifies the first launch of an advertised app and, on subsequent calls, updates the conversion value or calls a completion handler if the update fails.
@@ -27,8 +27,6 @@ Invalid conversion values cause the method to fail and return error [`SKANError.
 
 > **Note**:  Consider using [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:).md) instead of this method for newer implementations.
 
- Consider using [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:).md) instead of this method for newer implementations.
-
 Apps call this method to update conversion values as people engage with the app. It’s up to the app or ad network to define the conversion value’s meaning. Call this method immediately when the user first launches the app to confirm the app’s launch. Call this method again, as needed, to reflect the person’s engagement with the app.
 
 The final conversion value appears in the postback if sending the data meets Apple’s privacy threshold. Only postbacks that win the ad attribution can contain a conversion value. Nonwinning postbacks don’t contain conversion values. For more information, see [`Receiving ad attributions and postbacks`](receiving-ad-attributions-and-postbacks.md).
@@ -47,8 +45,6 @@ If the ad network signs the winning ad with version 3 or earlier, calling this m
 ##### Update the Conversion Value for Version 4 Ads and Later
 
 > **Note**:  This method supports ads signed with version 4 and later, however, it doesn’t provide advanced features, such as multiple postbacks and coarse conversion values, available starting in version 4. To get those advanced features for ads signed with version 4 and later, use [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:).md) instead of this method.
-
- This method supports ads signed with version 4 and later, however, it doesn’t provide advanced features, such as multiple postbacks and coarse conversion values, available starting in version 4. To get those advanced features for ads signed with version 4 and later, use [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:).md) instead of this method.
 
 If the ad network signs the winning ad with version 4 or later, calling this method behaves as follows:
 

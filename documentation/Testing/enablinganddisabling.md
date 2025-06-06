@@ -1,6 +1,6 @@
 # Enabling and disabling tests
 
-**Framework**: Swift Testing
+**Framework**: Testing
 
 Conditionally enable or disable individual tests before they run.
 
@@ -9,8 +9,6 @@ Conditionally enable or disable individual tests before they run.
 Often, a test is only applicable in specific circumstances. For instance, you might want to write a test that only runs on devices with particular hardware capabilities, or performs locale-dependent operations. The testing library allows you to add traits to your tests that cause runners to automatically skip them if conditions like these are not met.
 
 > **Note**: A condition may be evaluated multiple times during testing.
-
-A condition may be evaluated multiple times during testing.
 
 ##### Disable a Test
 
@@ -119,4 +117,4 @@ func makeSundae() async throws { ... }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/testing/enablinganddisabling)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Testing/enablinganddisabling)*

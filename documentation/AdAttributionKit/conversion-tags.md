@@ -1,6 +1,6 @@
 # Identifying conversion values with conversion tags
 
-**Framework**: AdAttributionKit
+**Framework**: Adattributionkit
 
 Use conversion tags to identify and update specific postbacks when you have overlapping conversion windows.
 
@@ -18,8 +18,6 @@ If this reengagement is of interest to you and you want to independently update 
 
 > **Note**: The internal identifier is for your own bookkeeping and has no role in the API.
 
-The internal identifier is for your own bookkeeping and has no role in the API.
-
 #### Selectively Update Conversion Values with Conversion Tags
 
 In iOS 18.4 and later, the [`PostbackUpdate`](postbackupdate.md) structure can accept an optional `String` property named [`conversionTag`](postbackupdate/conversiontag.md) during initialization.
@@ -31,8 +29,6 @@ Call AdAttributionKit’s [`updateConversionValue(_:)`](postback/updateconversio
 If the framework finds a conversion with the specified conversion tag, it updates it with the values you specify in the [`PostbackUpdate`](postbackupdate.md) instance.
 
 > **Note**: If you don’t specify a conversion tag, AdAttributionKit updates the most recent conversion. This is same behavior the framework implements prior to iOS 18.4.
-
-If you don’t specify a conversion tag, AdAttributionKit updates the most recent conversion. This is same behavior the framework implements prior to iOS 18.4.
 
 ## See Also
 
@@ -46,4 +42,4 @@ If you don’t specify a conversion tag, AdAttributionKit updates the most recen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/conversion-tags)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/conversion-tags)*

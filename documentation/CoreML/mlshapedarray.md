@@ -1,6 +1,6 @@
 # MLShapedArray
 
-**Framework**: Core ML  
+**Framework**: Coreml  
 **Kind**: struct
 
 A machine learning collection type that stores scalar values in a multidimensional array.
@@ -31,8 +31,6 @@ A shaped array is a multidimensional array type that’s the Swift counterpart t
 Each dimension in a shaped array is typically significant or meaningful. For example, a model could have an input that accepts images as a three-dimensional array of pixels, C x H x W. The first dimension, ,_ _represents the number of color channels, and the second and third dimensions,  and , represent the image’s height and width, respectively. The number of dimensions and size of each dimension define the shaped array’s .
 
 > **Note**:  Some models use a one-dimensional multiarray for an input or output. This type of shaped array is conceptually identical to a conventional [`Array`](https://developer.apple.com/documentation/Swift/Array).
-
- Some models use a one-dimensional multiarray for an input or output. This type of shaped array is conceptually identical to a conventional [`Array`](https://developer.apple.com/documentation/Swift/Array).
 
 A shaped array’s [`shape`](mlmultiarray/shape.md) property is an integer array in which each element defines the size of the corresponding dimension. To inspect the shape and constraints of a model’s multiarray input or output feature:
 
@@ -129,4 +127,4 @@ A shaped array’s [`shape`](mlmultiarray/shape.md) property is an integer array
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coreml/mlshapedarray)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/mlshapedarray)*

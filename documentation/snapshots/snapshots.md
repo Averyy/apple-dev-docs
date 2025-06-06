@@ -1,6 +1,6 @@
 # Maps Web Snapshots
 
-**Framework**: Maps Web Snapshots
+**Framework**: Snapshots
 
 Create a static image of a map from a URL.
 
@@ -14,8 +14,6 @@ Use the Maps Web Snapshots service to generate static map images from a URL. You
 ![A screenshot of a  map created using Maps Web Snapshots API.](https://docs-assets.developer.apple.com/published/19ae23841c/3325414@2x.png)
 
 > **Note**: If you need an interactive map on the web, see [`MapKit JS`](https://developer.apple.com/documentation/mapkitjs). To generate static map snapshots in iOS, macOS, or tvOS apps, see [`MKMapSnapshotter`](https://developer.apple.com/documentation/mapkit/mkmapsnapshotter).
-
-If you need an interactive map on the web, see [`MapKit JS`](https://developer.apple.com/documentation/mapkitjs). To generate static map snapshots in iOS, macOS, or tvOS apps, see [`MKMapSnapshotter`](https://developer.apple.com/documentation/mapkit/mkmapsnapshotter).
 
 To learn how to construct a signed and validated snapshot URL, see [`Generating a URL and Signature to Create a Maps Web Snapshot`](generating_a_url_and_signature_to_create_a_maps_web_snapshot.md). You generate the required signature using credentials obtained through your Apple Developer account. See [`Creating a Maps identifier and a private key`](https://developer.apple.com/documentation/applemapsserverapi/creating-a-maps-identifier-and-a-private-key) to learn how to get these credentials. You can also obtain HTML to show information about a place using [`Create a Map`](https://developer.apple.comhttps://devcms.apple.com/maps/create-a-map/).
 

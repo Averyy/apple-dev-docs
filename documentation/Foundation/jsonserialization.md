@@ -35,8 +35,6 @@ Other rules may apply. Calling [`isValidJSONObject(_:)`](jsonserialization/isval
 
 > **Note**:  On iOS 7 and later and macOS 10.9 and later, [`JSONSerialization`](jsonserialization.md) is thread safe.
 
- On iOS 7 and later and macOS 10.9 and later, [`JSONSerialization`](jsonserialization.md) is thread safe.
-
 ## Topics
 
 ### Creating a JSON Object
@@ -78,4 +76,4 @@ Other rules may apply. Calling [`isValidJSONObject(_:)`](jsonserialization/isval
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/jsonserialization)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/jsonserialization)*

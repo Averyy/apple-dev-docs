@@ -29,8 +29,6 @@ Use [`UNNotificationAction`](unnotificationaction.md) objects to define the acti
 
 > **Note**:  When someone performs a Double Tap gesture while viewing a notification on Apple Watch Series 9 or Apple Watch Ultra 2, the system invokes the first nondestructive action. A nondestructive action doesn’t include the [`destructive`](unnotificationactionoptions/destructive.md) option, and won’t delete user data or change the app irrevocably.
 
- When someone performs a Double Tap gesture while viewing a notification on Apple Watch Series 9 or Apple Watch Ultra 2, the system invokes the first nondestructive action. A nondestructive action doesn’t include the [`destructive`](unnotificationactionoptions/destructive.md) option, and won’t delete user data or change the app irrevocably.
-
 For information on how to define actions and categories, see [`Declaring your actionable notification types`](declaring-your-actionable-notification-types.md).
 
 ##### Responding to the Selection of Actions
@@ -88,4 +86,4 @@ For information on how to handle actions, see [`Handling notifications and notif
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/unnotificationaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/unnotificationaction)*

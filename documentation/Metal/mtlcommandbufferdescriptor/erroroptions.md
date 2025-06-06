@@ -27,8 +27,6 @@ To create a command buffer that saves additional GPU runtime error information, 
 
 > **Note**:  Enabling the [`encoderExecutionStatus`](mtlcommandbuffererroroption/encoderexecutionstatus.md) option can slightly reduce your app’s CPU runtime performance.
 
- Enabling the [`encoderExecutionStatus`](mtlcommandbuffererroroption/encoderexecutionstatus.md) option can slightly reduce your app’s CPU runtime performance.
-
 ## See Also
 
 - [var logState: (any MTLLogState)?](mtlcommandbufferdescriptor/logstate.md)

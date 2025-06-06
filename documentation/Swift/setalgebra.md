@@ -26,8 +26,6 @@ You use types that conform to the `SetAlgebra` protocol when you need efficient 
 
 > **Note**: Unlike ordinary set types, the `Element` type of an `OptionSet` is identical to the `OptionSet` type itself. The `SetAlgebra` protocol is specifically designed to accommodate both kinds of set.
 
-Unlike ordinary set types, the `Element` type of an `OptionSet` is identical to the `OptionSet` type itself. The `SetAlgebra` protocol is specifically designed to accommodate both kinds of set.
-
 ### Conforming to the Setalgebra Protocol
 
 When implementing a custom type that conforms to the `SetAlgebra` protocol, you must implement the required initializers and methods. For the inherited methods to work properly, conforming types must meet the following axioms. Assume that `S` is a custom type that conforms to the `SetAlgebra` protocol, `x` and `y` are instances of `S`, and `e` is of type `S.Element`—the type that the set holds.
@@ -112,4 +110,4 @@ When implementing a custom type that conforms to the `SetAlgebra` protocol, you 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/setalgebra)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/setalgebra)*

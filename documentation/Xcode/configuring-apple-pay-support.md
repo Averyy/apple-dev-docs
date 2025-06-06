@@ -18,8 +18,6 @@ After you add the Apple Pay capability, Xcode updates your target’s entitlemen
 
 > **Note**: If you later remove the Apple Pay capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable Apple Pay.
 
-If you later remove the Apple Pay capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable Apple Pay.
-
 ##### Select or Create a Merchant Identifier
 
 A  uniquely identifies you to Apple Pay as a merchant that’s able to accept payments. To allow your app to submit payment requests, specify at least one merchant identifier in your project’s configuration. After you add the Apple Pay capability, Xcode retrieves any existing merchant identifiers from your developer account and displays them in the capability’s Merchant IDs list. To fetch an updated list of your account’s merchant identifiers, click the refresh button below the list.
@@ -29,8 +27,6 @@ A  uniquely identifies you to Apple Pay as a merchant that’s able to accept pa
 Enable one or more merchant identifiers in the list using their checkboxes. Conversely, uncheck a merchant identifier’s checkbox to disallow your app from using it. Xcode updates the Merchant IDs array — `com.apple.developer.in-app-payments` — in your target’s entitlements file to reflect any changes you make, and associates the selected merchant identifiers with the app’s App ID in your developer account.
 
 > **Note**: To avoid breaking a live version of your app that relies on the identifier association, Xcode doesn’t automatically dissociate a merchant identifier from your App ID when you deselect it in the capability.
-
-To avoid breaking a live version of your app that relies on the identifier association, Xcode doesn’t automatically dissociate a merchant identifier from your App ID when you deselect it in the capability.
 
 To create a new merchant identifier, perform the following steps:
 
@@ -54,8 +50,6 @@ Before you can use your merchant identifier, you must generate a  — a digital 
 
 > **Note**: If you use an e-commerce platform or payment service provider, please contact them for information about using their service with Apple Pay. For a list of supported platforms and providers, see [`Payment Platforms`](https://developer.apple.comhttps://developer.apple.com/apple-pay/payment-platforms/).
 
-If you use an e-commerce platform or payment service provider, please contact them for information about using their service with Apple Pay. For a list of supported platforms and providers, see [`Payment Platforms`](https://developer.apple.comhttps://developer.apple.com/apple-pay/payment-platforms/).
-
 After you create your merchant identifier and payment processing certificate, use the PassKit framework to enable the collection of payments from within your app. For more information, see the [`Apple Pay`](https://developer.apple.com/documentation/PassKit/apple-pay) documentation and the sample code [`Offering Apple Pay in Your App`](https://developer.apple.com/documentation/PassKit/offering-apple-pay-in-your-app).
 
 ## See Also
@@ -68,4 +62,4 @@ After you create your merchant identifier and payment processing certificate, us
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-apple-pay-support)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-apple-pay-support)*

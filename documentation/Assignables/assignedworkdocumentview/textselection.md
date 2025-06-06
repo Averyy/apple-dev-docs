@@ -52,8 +52,6 @@ On iOS, the person using the app touches and holds on a selectable `Text` view, 
 
 > **Note**: `Button` views don’t support text selection.
 
-`Button` views don’t support text selection.
-
 
 ---
 

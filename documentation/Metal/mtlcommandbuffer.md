@@ -44,8 +44,6 @@ To add commands to an [`MTLCommandBuffer`](mtlcommandbuffer.md) instance, create
 
 > **Note**:  All encoders inherit additional methods from the [`MTLCommandEncoder`](mtlcommandencoder.md).
 
- All encoders inherit additional methods from the [`MTLCommandEncoder`](mtlcommandencoder.md).
-
 You can use only a single encoder at a time to add commands to a command buffer. To start using a different command encoder, first signal that you’re done with the current encoder by calling its [`endEncoding()`](mtlcommandencoder/endencoding().md) method. Then create another command encoder from the command buffer and continue adding commands to the buffer with the new encoder.
 
 Repeat the process until you finish encoding commands to the command buffer and are ready to run the buffer’s contents on the GPU. Then submit the command buffer to the command queue that you used to create it by calling the command buffer’s [`commit()`](mtlcommandbuffer/commit().md) method. After an app commits a command buffer, you check its [`status`](mtlcommandbuffer/status.md) property or block a thread by calling its [`waitUntilScheduled()`](mtlcommandbuffer/waituntilscheduled().md) or [`waitUntilCompleted()`](mtlcommandbuffer/waituntilcompleted().md) methods.
@@ -53,8 +51,6 @@ Repeat the process until you finish encoding commands to the command buffer and 
 You also have the option to reserve a place for the command buffer in its command queue by calling the command buffer’s [`enqueue()`](mtlcommandbuffer/enqueue().md) method. You can call this method exactly once at any time before you commit the buffer to the queue. If you don’t enqueue a command buffer, it implicitly enqueues itself when you commit it. Each command queue ensures the order that you enqueue its command buffers is the same order the queue schedules them to run on the GPU.
 
 > 💡 **Tip**:  Establish an order of execution for multiple command buffers you encode in parallel by first calling their [`enqueue()`](mtlcommandbuffer/enqueue().md) methods in that order.
-
- Establish an order of execution for multiple command buffers you encode in parallel by first calling their [`enqueue()`](mtlcommandbuffer/enqueue().md) methods in that order.
 
 For example, a multithreaded app might set the GPU’s execution order for a sequence of related subtasks by:
 
@@ -132,4 +128,4 @@ For example, a multithreaded app might set the GPU’s execution order for a seq
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlcommandbuffer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/mtlcommandbuffer)*

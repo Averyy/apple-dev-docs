@@ -1,6 +1,6 @@
 # ObservedObject
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A property wrapper type that subscribes to an observable object and invalidates a view whenever the observable object changes.
@@ -56,10 +56,6 @@ When any published property of the observable object changes, SwiftUI updates an
 Don’t specify a default or initial value for the observed object. Use the attribute only for a property that acts as an input for a view, as in the above example.
 
 > **Note**: Don’t wrap objects conforming to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol with `@ObservedObject`. SwiftUI automatically tracks dependencies to `Observable` objects used within body and updates dependent views when their data changes. Attempting to wrap an `Observable` object with `@ObservedObject` may cause a compiler error, because it requires that its wrapped object to conform to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol. If the view needs a binding to a property of an `Observable` object in its body, wrap the object with the [`Bindable`](bindable.md) property wrapper instead; for example, `@Bindable var model: DataModel`. For more information, see [`Managing model data in your app`](managing-model-data-in-your-app.md).
-
-Don’t wrap objects conforming to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol with `@ObservedObject`. SwiftUI automatically tracks dependencies to `Observable` objects used within body and updates dependent views when their data changes. Attempting to wrap an `Observable` object with `@ObservedObject` may cause a compiler error, because it requires that its wrapped object to conform to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol.
-
-If the view needs a binding to a property of an `Observable` object in its body, wrap the object with the [`Bindable`](bindable.md) property wrapper instead; for example, `@Bindable var model: DataModel`. For more information, see [`Managing model data in your app`](managing-model-data-in-your-app.md).
 
 ## Topics
 

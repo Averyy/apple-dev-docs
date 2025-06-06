@@ -1,6 +1,6 @@
 # findAction(forAnswers:)
 
-**Framework**: GameplayKit  
+**Framework**: Gameplaykit  
 **Kind**: method
 
 Searches the decision tree, following the branches corresponding to each of the specified answers, and returns the resulting action object.
@@ -32,8 +32,6 @@ In a manually created decision tree, an action is the “attribute” of a leaf 
 In an automatically learned decision tree, you provide action values with the [`init(examples:actions:attributes:)`](gkdecisiontree/init(examples:actions:attributes:).md) initializer.
 
 > **Note**:  If a tree contains random branches (defined with the [`createBranch(weight:attribute:)`](gkdecisionnode/createbranch(weight:attribute:).md) method), you do not need to provide an answer for the corresponding attribute when finding an action.
-
- If a tree contains random branches (defined with the [`createBranch(weight:attribute:)`](gkdecisionnode/createbranch(weight:attribute:).md) method), you do not need to provide an answer for the corresponding attribute when finding an action.
 
 ## Parameters
 

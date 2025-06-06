@@ -1,6 +1,6 @@
 # AudioServicesPlayAlertSound(_:)
 
-**Framework**: Audio Toolbox  
+**Framework**: Audiotoolbox  
 **Kind**: func
 
 Plays a system sound as an alert.
@@ -30,8 +30,6 @@ Depending on the particular iOS device, this function plays a short sound and ma
 In iOS, the duration of the sound to be played must not be more than 30 seconds.
 
 > **Note**:  System-supplied alert sounds and system-supplied user-interface sound effects are not available to your iOS application. For example, using the `kSystemSoundID_UserPreferredAlert` constant as a parameter to the `AudioServicesPlayAlertSound` function will not play anything.
-
- System-supplied alert sounds and system-supplied user-interface sound effects are not available to your iOS application. For example, using the `kSystemSoundID_UserPreferredAlert` constant as a parameter to the `AudioServicesPlayAlertSound` function will not play anything.
 
 In macOS, when a user has configured System Preferences to flash the screen for alerts, or if sound cannot be rendered, calling this function will result in the screen flashing. In macOS, pass the constant `kSystemSoundID_UserPreferredAlert` to play the alert sound selected by the user in System Preferences. In iOS there is no preferred user alert sound.
 

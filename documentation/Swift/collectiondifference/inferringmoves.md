@@ -28,8 +28,6 @@ A collection difference with all possible moves inferred.
 
 > **Note**: O() where  is the number of collection differences.
 
-O() where  is the number of collection differences.
-
 
 ---
 

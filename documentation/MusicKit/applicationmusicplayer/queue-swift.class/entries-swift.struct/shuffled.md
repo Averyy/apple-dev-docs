@@ -1,6 +1,6 @@
 # shuffled()
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns the elements of the sequence, shuffled.
@@ -36,8 +36,6 @@ let shuffledNumbers = numbers.shuffled()
 This method is equivalent to calling `shuffled(using:)`, passing in the system’s default random generator.
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 
 ---

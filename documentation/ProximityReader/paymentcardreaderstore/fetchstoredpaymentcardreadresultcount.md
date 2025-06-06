@@ -1,6 +1,6 @@
 # fetchStoredPaymentCardReadResultCount()
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Returns the number of reads the framework performed using a Store and Forward session.
@@ -20,8 +20,6 @@ func fetchStoredPaymentCardReadResultCount() async throws -> Int
 #### Discussion
 
 > **Note**: This method throws a [`PaymentCardReaderStore.StoreError`](paymentcardreaderstore/storeerror.md) if the count cannot be fetched.
-
-This method throws a [`PaymentCardReaderStore.StoreError`](paymentcardreaderstore/storeerror.md) if the count cannot be fetched.
 
 
 ---

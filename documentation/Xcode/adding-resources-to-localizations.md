@@ -18,8 +18,6 @@ In the inspector, under Localization, you can also select or deselect localizati
 
 > **Note**: If you add a Settings Bundle or WatchKit Settings Bundle file to your project, it’s automatically localizable.
 
-If you add a Settings Bundle or WatchKit Settings Bundle file to your project, it’s automatically localizable.
-
 ## See Also
 
 - [Localizing assets in a catalog](localizing-assets-in-a-catalog.md)
@@ -28,4 +26,4 @@ If you add a Settings Bundle or WatchKit Settings Bundle file to your project, i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-resources-to-localizations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-resources-to-localizations)*

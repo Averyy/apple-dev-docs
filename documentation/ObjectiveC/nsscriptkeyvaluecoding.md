@@ -1,6 +1,6 @@
 # NSScriptKeyValueCoding
 
-**Framework**: Objective-C Runtime
+**Framework**: Objectivec
 
 A collection of methods that provide additional capabilities for working with key-value coding.
 
@@ -11,8 +11,6 @@ Cocoa scripting takes advantage of key-value coding to get and set information i
 Because Cocoa scripting invokes [`setValue(_:forKey:)`](nsobject-swift.class/setvalue(_:forkey:).md) and [`mutableArrayValue(forKey:)`](nsobject-swift.class/mutablearrayvalue(forkey:).md), changes to model objects made by AppleScript scripts are observable using automatic key-value observing.
 
 > **Note**:  In OS X 10.3 and earlier, Cocoa scripting did not invoke [`setValue(_:forKey:)`](nsobject-swift.class/setvalue(_:forkey:).md) or [`mutableArrayValue(forKey:)`](nsobject-swift.class/mutablearrayvalue(forkey:).md), so automatic key-value observing notification was not always done for model object changes caused by scripts. Starting in macOS 10.4, for backward binary compatibility, if it is overridden, Cocoa invokes the now-deprecated method [`takeValue(_:forKey:)`](nsobject-swift.class/takevalue(_:forkey:).md) instead of [`setValue(_:forKey:)`](nsobject-swift.class/setvalue(_:forkey:).md).
-
- In OS X 10.3 and earlier, Cocoa scripting did not invoke [`setValue(_:forKey:)`](nsobject-swift.class/setvalue(_:forkey:).md) or [`mutableArrayValue(forKey:)`](nsobject-swift.class/mutablearrayvalue(forkey:).md), so automatic key-value observing notification was not always done for model object changes caused by scripts. Starting in macOS 10.4, for backward binary compatibility, if it is overridden, Cocoa invokes the now-deprecated method [`takeValue(_:forKey:)`](nsobject-swift.class/takevalue(_:forkey:).md) instead of [`setValue(_:forKey:)`](nsobject-swift.class/setvalue(_:forkey:).md).
 
 ## Topics
 
@@ -53,4 +51,4 @@ Because Cocoa scripting invokes [`setValue(_:forKey:)`](nsobject-swift.class/set
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/objectivec/nsscriptkeyvaluecoding)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ObjectiveC/nsscriptkeyvaluecoding)*

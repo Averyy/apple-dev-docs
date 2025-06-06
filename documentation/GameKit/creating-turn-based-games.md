@@ -1,6 +1,6 @@
 # Creating turn-based games
 
-**Framework**: GameKit
+**Framework**: Gamekit
 
 Develop games where multiple players take turns and can exchange data while waiting for their turn.
 
@@ -105,8 +105,6 @@ try await match.endTurn(withNextParticipants: nextParticipants, turnTimeout: GKT
 ```
 
 > **Note**: In games with more than two participants, best practice is to add multiple participants to the array for the next participants. Then if communication fails, or a participant doesn’t finish their turn within the time limit, Game Center passes the turn to the next participant in the array to keep the match going.
-
-In games with more than two participants, best practice is to add multiple participants to the array for the next participants. Then if communication fails, or a participant doesn’t finish their turn within the time limit, Game Center passes the turn to the next participant in the array to keep the match going.
 
 The first time the game passes the turn, GameKit sends invitations to all the participants.
 
@@ -285,4 +283,4 @@ Because the match data changes, GameKit invokes the [`player(_:receivedTurnEvent
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/creating-turn-based-games)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/creating-turn-based-games)*

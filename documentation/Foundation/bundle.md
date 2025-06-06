@@ -36,8 +36,6 @@ Some types of frequently used resources can be located and opened without a bund
 
 > **Note**: Unlike some other Foundation classes with corresponding Core Foundation names (such as [`NSString`](nsstring.md) and [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString)), [`Bundle`](bundle.md) objects cannot be cast to [`CFBundle`](https://developer.apple.com/documentation/CoreFoundation/CFBundle) references. If you need functionality provided by [`CFBundle`](https://developer.apple.com/documentation/CoreFoundation/CFBundle), you can still create a [`CFBundle`](https://developer.apple.com/documentation/CoreFoundation/CFBundle) and use the [`CFBundle`](https://developer.apple.com/documentation/CoreFoundation/CFBundle) API. See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
-Unlike some other Foundation classes with corresponding Core Foundation names (such as [`NSString`](nsstring.md) and [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString)), [`Bundle`](bundle.md) objects cannot be cast to [`CFBundle`](https://developer.apple.com/documentation/CoreFoundation/CFBundle) references. If you need functionality provided by [`CFBundle`](https://developer.apple.com/documentation/CoreFoundation/CFBundle), you can still create a [`CFBundle`](https://developer.apple.com/documentation/CoreFoundation/CFBundle) and use the [`CFBundle`](https://developer.apple.com/documentation/CoreFoundation/CFBundle) API. See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
-
 ##### Finding and Opening a Bundle
 
 Before you can locate a resource, you must first specify which bundle contains it. The [`Bundle`](bundle.md) class has many constructors, but the one you use most often is [`main`](bundle/main.md). The main bundle represents the bundle directory that contains the currently executing code. So for an app, the main bundle object gives you access to the resources that shipped with your app.
@@ -65,8 +63,6 @@ Bundle objects follow a specific search pattern when looking for resources on di
 Because global resources take precedence over language-specific resources, you should never include both a global and localized version of a given resource in your app. When a global version of a resource exists, language-specific versions are never returned. The reason for this precedence is performance. If localized resources were searched first, the bundle object might waste time searching for a nonexistent localized resource before returning the global resource.
 
 > ❗ **Important**:  Bundle objects always consider case when searching for resource files, even on file systems that support case-insensitive filenames. Always make sure that you specify filenames with case sensitivity in mind.
-
- Bundle objects always consider case when searching for resource files, even on file systems that support case-insensitive filenames. Always make sure that you specify filenames with case sensitivity in mind.
 
 When locating resource files, the bundle object automatically considers many standard filename modifiers when determining which file to return. Resources may be tagged for a specific device (`~iphone`, `~ipad`) or for a specific screen resolution (`@2x`, `@3x`). Do not include these modifiers when specifying the name of the resource you want. The bundle object selects the file that is most appropriate for the underlying device. For more information, see [`App Icons on iPhone, iPad and Apple Watch`](https://developer.apple.comhttps://developer.apple.com/library/archive/qa/qa1686/_index.html#//apple_ref/doc/uid/DTS40009882).
 
@@ -264,4 +260,4 @@ For information about the bundle structure of iOS and macOS apps, see [`Bundle P
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/bundle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/bundle)*

@@ -1,6 +1,6 @@
 # additionalLeadingNavigationBarButtonItems
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 Additional bar button items that the document browser displays on the leading side of its navigation bar.
@@ -27,8 +27,6 @@ var additionalLeadingNavigationBarButtonItems: [UIBarButtonItem] { get set }
 Actions triggered by these items don’t have any access to the browser’s content or to the URLs of selected items. Use these bar button items for global actions only (actions that don’t affect a specific document or folder).
 
 > **Note**:  Bar button items added using this property don’t appear in Mac apps built with Mac Catalyst. You must find another way to display these actions (for example, using [`UIMenuBuilder`](uimenubuilder.md) to add the actions to your app’s menu).
-
- Bar button items added using this property don’t appear in Mac apps built with Mac Catalyst. You must find another way to display these actions (for example, using [`UIMenuBuilder`](uimenubuilder.md) to add the actions to your app’s menu).
 
 ## See Also
 

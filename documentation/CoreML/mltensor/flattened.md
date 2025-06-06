@@ -1,6 +1,6 @@
 # flattened()
 
-**Framework**: Core ML  
+**Framework**: Coreml  
 **Kind**: method
 
 Reshape to a one-dimensional tensor.
@@ -23,8 +23,6 @@ func flattened() -> MLTensor
 #### Discussion
 
 > **Note**: Flattening a zero-dimensional tensor will return a one-dimensional tensor.
-
-Flattening a zero-dimensional tensor will return a one-dimensional tensor.
 
 For example:
 

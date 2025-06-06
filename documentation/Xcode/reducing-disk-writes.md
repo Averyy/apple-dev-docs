@@ -58,8 +58,6 @@ The Filesystem Suggestions instrument and the Disk Writes Reports pane in the Xc
 
 > **Note**: The size of physical reads and writes on the disk doesn’t correlate with the size of logical filesystem activity. The disk controller works with regions called blocks, frequently 4 KB in size. Writes to the disk occur in units of blocks, so saving a file with only a single-byte change writes 4 KB to the disk.
 
-The size of physical reads and writes on the disk doesn’t correlate with the size of logical filesystem activity. The disk controller works with regions called blocks, frequently 4 KB in size. Writes to the disk occur in units of blocks, so saving a file with only a single-byte change writes 4 KB to the disk.
-
 ##### Batch Multiple Write Operations
 
 Repeatedly opening, saving, and then closing the same file can increase the frequency of disk writes. Collecting small changes and performing them as a single write reduces the frequency, though it can also result in an increase in your app’s memory use. Design your app’s persistence model to effectively balance its use of these two resources. See [`Reducing your app’s memory use`](reducing-your-app-s-memory-use.md).
@@ -184,4 +182,4 @@ The Disk Writes Report pane suggests using incremental vacuuming when a stack tr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/reducing-disk-writes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/reducing-disk-writes)*

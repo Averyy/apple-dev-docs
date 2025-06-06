@@ -1,6 +1,6 @@
 # init(cube:options:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Asynchronously creates an environment resource from a cube texture.
@@ -24,8 +24,6 @@ Asynchronously creates an environment resource from a cube texture.
 RealityKit generates an environment resource from a skybox cube texture of the environment. The created environment shares the input skybox.
 
 > **Note**: [`EnvironmentResource.CreateOptions.SamplingQuality.high`](environmentresource/createoptions/samplingquality-swift.enum/high.md) and [`EnvironmentResource.CreateOptions.SamplingQuality.veryHigh`](environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md), along with [`astc(blockSize:quality:)`](textureresource/compression/astc(blocksize:quality:).md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](entity/write(to:).md). Compression options also significantly reduce an environmental resource’s memory and disk usage.
-
-[`EnvironmentResource.CreateOptions.SamplingQuality.high`](environmentresource/createoptions/samplingquality-swift.enum/high.md) and [`EnvironmentResource.CreateOptions.SamplingQuality.veryHigh`](environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md), along with [`astc(blockSize:quality:)`](textureresource/compression/astc(blocksize:quality:).md) compression options, are only available in macOS. Use these options to write optimized scenes for all target platforms when exporting from macOS with [`write(to:)`](entity/write(to:).md). Compression options also significantly reduce an environmental resource’s memory and disk usage.
 
 ```swift
 // Use compression and high quality options to export optimized resources.
@@ -58,8 +56,6 @@ lightEntity.components.set(ImageBasedLightComponent(
 ```
 
 > **Note**: If you request `.astc` compression and `cubeTexture` isn’t already compressed, RealityKit compresses it.
-
-If you request `.astc` compression and `cubeTexture` isn’t already compressed, RealityKit compresses it.
 
 ## Parameters
 

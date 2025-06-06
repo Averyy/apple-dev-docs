@@ -27,8 +27,6 @@ The system displays the suggested invocation phrase to the user when they create
 
 > **Note**:  To access the [`suggestedInvocationPhrase`](nsuseractivity/suggestedinvocationphrase.md) property, import the  framework.
 
- To access the [`suggestedInvocationPhrase`](nsuseractivity/suggestedinvocationphrase.md) property, import the  framework.
-
 ## See Also
 
 - [var isEligibleForPrediction: Bool](nsuseractivity/iseligibleforprediction.md)

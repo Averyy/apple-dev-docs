@@ -28,8 +28,6 @@ To test your universal links behavior, paste a link into your Notes app and long
 
 > **Note**: Entering the URL directly into the web browser’s address bar will never open the app, as this is direct navigation within the web browser. As long as the user is on your domain after navigating there directly, your site will show a banner to open your app.
 
-Entering the URL directly into the web browser’s address bar will never open the app, as this is direct navigation within the web browser. As long as the user is on your domain after navigating there directly, your site will show a banner to open your app.
-
 On iOS, you can additionally test your universal links with the associated domains diagnostic tests in Developer settings through these steps:
 
 1. Turn on Developer Mode in Settings. Read [`Enabling Developer Mode on a device`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device) for more help.
@@ -66,8 +64,6 @@ This will only work with `applinks:www.example.com`. Each specific subdomain in 
 
 > **Note**: Domains in your `applinks` can’t contain a port number. For example, `applinks:example.com:8080` will not open your app.
 
-Domains in your `applinks` can’t contain a port number. For example, `applinks:example.com:8080` will not open your app.
-
 #### Use Universal Links on Your Site
 
 To use a universal link to open your app while already browsing in the web browser, use a different subdomain. Reasons for this could be completing a questionnaire or choosing to sign in. If a universal link has the same domain as the previous navigation, the web browser will expect the user wants to continue navigating within the browser. Review [`Allowing apps and websites to link your content`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content#Support-universal-links) for more information.
@@ -103,8 +99,6 @@ Using a different subdomain prevents the web browser from treating the link as n
 
 > ❗ **Important**: It is up to third-party web browsers to enable universal links functionality. Universal links may not be enabled in every web browser. For information about other browsers, developers should check with the browser’s vendor. Safari implements all of the function described in this technote.
 
-It is up to third-party web browsers to enable universal links functionality. Universal links may not be enabled in every web browser. For information about other browsers, developers should check with the browser’s vendor. Safari implements all of the function described in this technote.
-
 #### Host and Verify Your Aasa
 
 If your universal links are still not opening in your app, inspect your HTTP response headers and AASA content. For example, log the HTTP response headers and AASA JSON contents in Terminal using the following command:
@@ -128,8 +122,6 @@ https://example.com/.well-known/apple-app-site-association
 ```
 
 > **Note**: Redirection is allowed, although not preferred, when opening universal links from another app. If the link tapped on by the user is not a universal link but redirects to one, the user will be routed through the web browser to the app.
-
-Redirection is allowed, although not preferred, when opening universal links from another app. If the link tapped on by the user is not a universal link but redirects to one, the user will be routed through the web browser to the app.
 
 If you see a 403 or 404 HTTP error, your site denied access. Generally, this happens when the AASA file path is not publicly accessible from all IP addresses or your site is blocked for some other reason. Confirm your website’s configuration allows direct access to the AASA file in the `.well-known` directory, in all geographical locations, from any IP address. Specific IP addresses and ranges are not published as they cannot be guaranteed. Additionally, your server should accept all user agent requests. You can verify this by setting a random user agent and confirm if your server responds with the AASA file or an error message. For example:
 
@@ -212,8 +204,6 @@ When testing, if you’re running your app from Xcode, using a server that is un
 
 > ❗ **Important**: On iOS 14 and later, Apple’s CDN retrieves and caches the AASA file. When your app is installed, devices download the file from the CDN immediately. Devices check for updates approximately once per week after app installation. To download a newer version of the AASA file, reinstall the app. There is no direct CDN invalidation option.
 
-On iOS 14 and later, Apple’s CDN retrieves and caches the AASA file. When your app is installed, devices download the file from the CDN immediately. Devices check for updates approximately once per week after app installation. To download a newer version of the AASA file, reinstall the app. There is no direct CDN invalidation option.
-
 #### Revision History
 
 -  Added User-Agent policies for the hosted AASA file.
@@ -257,4 +247,4 @@ On iOS 14 and later, Apple’s CDN retrieves and caches the AASA file. When your
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3155-debugging-universal-links)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3155-debugging-universal-links)*

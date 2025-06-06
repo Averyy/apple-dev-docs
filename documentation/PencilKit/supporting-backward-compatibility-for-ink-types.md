@@ -1,6 +1,6 @@
 # Supporting backward compatibility for ink types
 
-**Framework**: PencilKit
+**Framework**: Pencilkit
 
 Leverage the latest PencilKit features while providing a good user experience in earlier versions of the OS that don’t support those features.
 
@@ -67,8 +67,6 @@ toolPicker.maximumSupportedContentVersion = .version1
 
 > **Note**:  Session 10055: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10055/)
 
- Session 10055: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10055/)
-
 ## See Also
 
 - [enum PKContentVersion](pkcontentversion.md)
@@ -77,4 +75,4 @@ toolPicker.maximumSupportedContentVersion = .version1
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/pencilkit/supporting-backward-compatibility-for-ink-types)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PencilKit/supporting-backward-compatibility-for-ink-types)*

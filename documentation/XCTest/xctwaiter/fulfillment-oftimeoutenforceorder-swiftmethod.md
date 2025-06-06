@@ -57,8 +57,6 @@ Expectations can only appear in the array once. The call may return before the t
 
 > **Note**:  If you don’t specify a timeout when calling this function, enable test timeouts to prevent unfulfilled expectation from hanging the test.
 
- If you don’t specify a timeout when calling this function, enable test timeouts to prevent unfulfilled expectation from hanging the test.
-
 ## Parameters
 
 - `expectations`: An array of expectations the test must satisfy.

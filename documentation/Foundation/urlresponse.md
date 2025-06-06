@@ -31,10 +31,6 @@ The related [`HTTPURLResponse`](httpurlresponse.md) class is a commonly used sub
 
 > **Note**:  [`URLResponse`](urlresponse.md) objects don’t contain the actual bytes representing the content of a URL. Instead, the data is returned either a piece at a time through delegate calls or in its entirety when the request completes, depending on the method and class used to initiate the request. Read [`Fetching website data into memory`](fetching-website-data-into-memory.md) to learn various ways to receive the content data from a URL load.
 
- [`URLResponse`](urlresponse.md) objects don’t contain the actual bytes representing the content of a URL. Instead, the data is returned either a piece at a time through delegate calls or in its entirety when the request completes, depending on the method and class used to initiate the request.
-
-Read [`Fetching website data into memory`](fetching-website-data-into-memory.md) to learn various ways to receive the content data from a URL load.
-
 ## Topics
 
 ### Creating a response

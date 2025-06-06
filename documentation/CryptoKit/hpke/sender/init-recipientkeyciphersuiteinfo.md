@@ -1,6 +1,6 @@
 # init(recipientKey:ciphersuite:info:)
 
-**Framework**: Apple CryptoKit  
+**Framework**: Cryptokit  
 **Kind**: init
 
 Creates a sender in base mode.
@@ -25,8 +25,6 @@ init<PK>(recipientKey: PK, ciphersuite: HPKE.Ciphersuite, info: Data) throws whe
 The `Sender` encrypts messages in base mode with a symmetric encryption key it derives using a key derivation function (KDF). The KDF uses the key schedule data in `info` as input to generate the key. The `Sender` encapsulates the derived key using the recipient’s public key. You access the encapsulated key using [`encapsulatedKey`](hpke/sender/encapsulatedkey.md).
 
 > **Note**: The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
-
-The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
 
 ## Parameters
 

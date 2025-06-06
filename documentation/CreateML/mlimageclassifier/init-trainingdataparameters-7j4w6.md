@@ -1,6 +1,6 @@
 # init(trainingData:parameters:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: init
 
 Creates an image classifier with a training dataset represented by a dictionary.
@@ -53,8 +53,6 @@ let trainingData = [
 ```
 
 > **Note**: If you have training data in an [`MLImageClassifier.DataSource`](mlimageclassifier/datasource.md) instance, use the similarly named [`init(trainingData:parameters:)`](mlimageclassifier/init(trainingdata:parameters:)-4r6hr.md) instead. That initialization method takes a data source instead of a dictionary as its training data.
-
-If you have training data in an [`MLImageClassifier.DataSource`](mlimageclassifier/datasource.md) instance, use the similarly named [`init(trainingData:parameters:)`](mlimageclassifier/init(trainingdata:parameters:)-4r6hr.md) instead. That initialization method takes a data source instead of a dictionary as its training data.
 
 Use the parameter structure and training data to initialize the classifier. Training begins immediately.
 

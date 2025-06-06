@@ -23,8 +23,6 @@ For more information on configuring test plans, see [`Improving code assessment 
 
 > **Note**:  When you set a simulated location in Xcode, the location changes only for code running in the test bundle. UI automation tests communicate with your app running as a separate process, so in those tests, your app doesn’t use the simulated location. To simulate location in a UI automation test, see the “Set a simulated location for UI automation” section below.
 
- When you set a simulated location in Xcode, the location changes only for code running in the test bundle. UI automation tests communicate with your app running as a separate process, so in those tests, your app doesn’t use the simulated location. To simulate location in a UI automation test, see the “Set a simulated location for UI automation” section below.
-
 ##### Replay a Previously Recorded Journey
 
 Test features of your app that work with changes to the device’s location by setting the simulated location to a GPX file. Xcode uses the GPX file to replay a journey while your tests are running, updating the simulated location, elevation, and velocity of the device to replicate the recorded journey. To add a GPX file to your workspace, follow these steps:
@@ -61,4 +59,4 @@ final class SampleAppTests: XCTestCase {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/simulating-location-in-tests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/simulating-location-in-tests)*

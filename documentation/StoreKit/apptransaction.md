@@ -1,6 +1,6 @@
 # AppTransaction
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: struct
 
 Information that represents the customer’s purchase of the app, cryptographically signed by the App Store.
@@ -28,8 +28,6 @@ struct AppTransaction
 #### Overview
 
 > **Note**:  Session 10007:  [`What’s new with in-app purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10007/)
-
- Session 10007:  [`What’s new with in-app purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10007/)
 
 ## Topics
 
@@ -99,4 +97,4 @@ struct AppTransaction
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/apptransaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/apptransaction)*

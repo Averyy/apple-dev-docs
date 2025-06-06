@@ -1,6 +1,6 @@
 # stopAbsoluteAltitudeUpdates()
 
-**Framework**: Core Motion  
+**Framework**: Coremotion  
 **Kind**: method
 
 Stops the delivery of absolute altitude data for this altimeter object.
@@ -22,8 +22,6 @@ func stopAbsoluteAltitudeUpdates()
 Calling this method ends the delivery of absolute altitude events and releases the references to the operation queue and block that you specified in the [`startAbsoluteAltitudeUpdates(to:withHandler:)`](cmaltimeter/startabsolutealtitudeupdates(to:withhandler:).md) method. If you haven’t started delivering data, or if you’ve already called `stopAbsoluteAltitudeUpdates()`, this method does nothing.
 
 > **Note**:  Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
-
- Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
 
 ## See Also
 

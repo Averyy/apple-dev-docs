@@ -27,8 +27,6 @@ Use this modifier when you want to allow the user to customize the components an
 
 > **Note**: Customizable toolbars will be displayed on both macOS and iOS, but only apps running on iPadOS 16.0 and later will support user customization.
 
-Customizable toolbars will be displayed on both macOS and iOS, but only apps running on iPadOS 16.0 and later will support user customization.
-
 The example below creates a view that represents each `ToolbarItem` along with an ID that uniquely identifies the toolbar item to the customization editor:
 
 ```None
@@ -85,8 +83,6 @@ struct ToolsEditorView: View {
 ```
 
 > **Note**: Only `ToolbarItemPlacement/secondaryAction` items support customization in iPadOS. Other items follow the normal placement rules and can’t be customized by the user.
-
-Only `ToolbarItemPlacement/secondaryAction` items support customization in iPadOS. Other items follow the normal placement rules and can’t be customized by the user.
 
 In macOS you can enable menu support for toolbar customization by adding a `ToolbarCommands` instance to a scene using the `Scene/commands(content:)` scene modifier:
 

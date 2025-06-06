@@ -254,8 +254,6 @@ If your code uses a singleton object to gain access to globally-available state 
 
 > **Note**: Commonly-used singletons, including [`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplication) and the default [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager), have behavior that’s dependent on external state. Components that use these singletons directly introduce more complications for reliable testing.
 
-Commonly-used singletons, including [`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplication) and the default [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager), have behavior that’s dependent on external state. Components that use these singletons directly introduce more complications for reliable testing.
-
 In this example, a `LoginHandler` object participates in authenticating someone to a network service. Part of its capability is retrieving a username that the app previously used for the service, which it gets from the standard user defaults object:
 
 ```swift
@@ -313,4 +311,4 @@ You may need to combine this change with those described in the article sections
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/updating-your-existing-codebase-to-accommodate-unit-tests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/updating-your-existing-codebase-to-accommodate-unit-tests)*

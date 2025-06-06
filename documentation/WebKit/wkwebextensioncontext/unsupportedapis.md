@@ -25,8 +25,6 @@ This property allows the app to specify a subset of web extension APIs that it c
 
 > **Note**: For example, specifying `"browser.windows.create"` and `"browser.storage"` in this set will result in the `browser.windows.create()` function and `browser.storage` property being `undefined`.
 
-For example, specifying `"browser.windows.create"` and `"browser.storage"` in this set will result in the `browser.windows.create()` function and `browser.storage` property being `undefined`.
-
 
 ---
 

@@ -22,8 +22,6 @@ Note that these may or may not have been actually presented to the user. See the
 
 > **Note**:  A scheduled user notification that specifies a [`deliveryRepeatInterval`](nsusernotification/deliveryrepeatinterval.md) remains in the [`scheduledNotifications`](nsusernotificationcenter/schedulednotifications.md) list, even though it has been delivered.  The item that goes into the `deliveredNotifications` list is a copy of the user notification item.
 
- A scheduled user notification that specifies a [`deliveryRepeatInterval`](nsusernotification/deliveryrepeatinterval.md) remains in the [`scheduledNotifications`](nsusernotificationcenter/schedulednotifications.md) list, even though it has been delivered.  The item that goes into the `deliveredNotifications` list is a copy of the user notification item.
-
 ## See Also
 
 - [func deliver(NSUserNotification)](nsusernotificationcenter/deliver(_:).md)

@@ -30,8 +30,6 @@ Use this method when you have a raw buffer to memory that has already been bound
 
 > **Note**: The buffer slice’s start address must match the alignment of `T` (as reported by `MemoryLayout<T>.alignment`). That is, `Int(bitPattern: base.baseAddress+startIndex) % MemoryLayout<T>.alignment` must equal zero.
 
-The buffer slice’s start address must match the alignment of `T` (as reported by `MemoryLayout<T>.alignment`). That is, `Int(bitPattern: base.baseAddress+startIndex) % MemoryLayout<T>.alignment` must equal zero.
-
 
 ---
 

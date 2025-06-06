@@ -1,6 +1,6 @@
 # menuBarTemplate
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Creates a page with items along the top and related information below.
 
@@ -11,8 +11,6 @@ Use the `menuBarTemplate` to display a list of selectable items across the top o
 ![Layout diagram showing a menu bar area at the top and a related content area below.](https://docs-assets.developer.apple.com/published/177505cf6a027229a8287dbf3d699d01/menubartemplate-1%402x.png)
 
 > **Note**: You can display up to seven items in the menu bar.
-
-You can display up to seven items in the menu bar.
 
 ##### Main Elements
 
@@ -112,4 +110,4 @@ The following figure shows the output for the above example:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/menubartemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/menubartemplate)*

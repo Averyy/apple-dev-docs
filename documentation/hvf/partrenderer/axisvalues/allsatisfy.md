@@ -1,6 +1,6 @@
 # allSatisfy(_:)
 
-**Framework**: hvf  
+**Framework**: Hvf  
 **Kind**: method
 
 Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
@@ -37,8 +37,6 @@ let allHaveAtLeastFive = names.allSatisfy({ $0.count >= 5 })
 If the sequence is empty, this method returns `true`.
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

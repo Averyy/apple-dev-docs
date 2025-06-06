@@ -1,6 +1,6 @@
 # Integrating custom browser text views with UIKit
 
-**Framework**: BrowserEngineKit
+**Framework**: Browserenginekit
 
 Process keyboard interactions asynchronously in your iOS browser app’s text view.
 
@@ -54,8 +54,6 @@ If you don’t handle the key event and return `false` from the completion handl
 
 > ❗ **Important**:  Your text view needs to call the completion handler for each key event it receives, to indicate to the text system that it’s ready for the next event. The operating system processes key events on a serial queue, so if you don’t call the completion handler you block key input to your app.
 
- Your text view needs to call the completion handler for each key event it receives, to indicate to the text system that it’s ready for the next event. The operating system processes key events on a serial queue, so if you don’t call the completion handler you block key input to your app.
-
 Additionally, implement [`shiftKeyStateChanged(fromState:toState:)`](betextinput/shiftkeystatechanged(fromstate:tostate:).md) to discover when someone presses and releases the shift key and when someone engages and disengages the caps lock.
 
 ##### Report Text Content and Layout
@@ -79,8 +77,6 @@ As someone continues their text-selection gesture, you need to update the geomet
 Implement [`updateSelection(extent:boundary:completionHandler:)`](betextinput/updateselection(extent:boundary:completionhandler:).md) to get notified when someone modifies the selection.
 
 > **Note**:  Your text view also needs to support marked text.  is very similar to selected text, and represents a range of text proposed for insertion that someone hasn’t yet confirmed they want. Use distinct display styles for marked and selected text.
-
- Your text view also needs to support marked text.  is very similar to selected text, and represents a range of text proposed for insertion that someone hasn’t yet confirmed they want. Use distinct display styles for marked and selected text.
 
 ##### Edit Text and Support Autocorrect
 
@@ -116,4 +112,4 @@ On iPad, a person can dismiss the on-screen keyboard from a control on the keybo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/integrating-custom-browser-text-views-with-uikit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/integrating-custom-browser-text-views-with-uikit)*

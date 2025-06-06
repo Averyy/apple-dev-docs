@@ -1,6 +1,6 @@
 # init(_:_:_:)
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: init
 
 Initializes a version struct with the provided components of a semantic version.
@@ -24,8 +24,6 @@ init(_ major: Int, _ minor: Int, _ patch: Int)
 #### Discussion
 
 > **Note**: `major >= 0 && minor >= 0 && patch >= 0`.
-
-`major >= 0 && minor >= 0 && patch >= 0`.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Incorporating Audio Effects and Instruments
 
-**Framework**: Audio Toolbox
+**Framework**: Audiotoolbox
 
 Add custom audio processing and MIDI instruments to your app by hosting Audio Unit (AU) plug-ins.
 
@@ -68,8 +68,6 @@ AVAudioUnit.instantiate(with: description, options: options) { avAudioUnit, erro
 
 > **Note**: iOS and macOS support using existing AUv2 plug-ins. iOS supports only those provided by the operating system, but macOS supports third-party AUv2 plug-ins as well. In both platforms, these plug-ins are  run as part of the host app’s process.
 
-iOS and macOS support using existing AUv2 plug-ins. iOS supports only those provided by the operating system, but macOS supports third-party AUv2 plug-ins as well. In both platforms, these plug-ins are  run as part of the host app’s process.
-
 ##### Present an Audio Units Custom View
 
 A plug-in can provide a custom user interface to control its parameters. You get the custom view by asking the plug-in for its view controller, which returns an instance of [`AUViewController`](https://developer.apple.com/documentation/CoreAudioKit/AUViewController), or `nil` if it doesn’t provide a custom view. You add the view controller’s view to your user interface using the appropriate approach for your platform.
@@ -102,8 +100,6 @@ private var viewConfigurations: [AUAudioUnitViewConfiguration] = {
 ```
 
 > **Note**: The view configuration object’s [`hostHasController`](https://developer.apple.com/documentation/CoreAudioKit/AUAudioUnitViewConfiguration/hostHasController) property indicates whether the host app should show its control surface for the view configuration. The host app should respect this setting and update its user interface accordingly.
-
-The view configuration object’s [`hostHasController`](https://developer.apple.com/documentation/CoreAudioKit/AUAudioUnitViewConfiguration/hostHasController) property indicates whether the host app should show its control surface for the view configuration. The host app should respect this setting and update its user interface accordingly.
 
 The host can ask the plug-in which, if any, custom view configurations it supports.
 
@@ -227,4 +223,4 @@ public var currentPreset: Preset? {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/incorporating-audio-effects-and-instruments)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox/incorporating-audio-effects-and-instruments)*

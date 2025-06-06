@@ -221,8 +221,6 @@ You use the Group Activities framework in visionOS to support SharePlay during a
 
 > **Note**: Developers using the [`Apple Vision Pro developer kit`](https://developer.apple.comhttps://developer.apple.com/visionos/work-with-apple/) can test spatial SharePlay experiences on-device by installing the [`Persona Preview Profile`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=persona).
 
-Developers using the [`Apple Vision Pro developer kit`](https://developer.apple.comhttps://developer.apple.com/visionos/work-with-apple/) can test spatial SharePlay experiences on-device by installing the [`Persona Preview Profile`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=persona).
-
 Use a reliable channel to send information that’s important to be correct, even if it can be slightly delayed as a result. The following shows how Happy Beam updates the game model’s score state in response to a score message:
 
 ```swift
@@ -272,4 +270,4 @@ func sendBeamPositionUpdate(_ pose: Pose3D) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/happybeam)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/happybeam)*

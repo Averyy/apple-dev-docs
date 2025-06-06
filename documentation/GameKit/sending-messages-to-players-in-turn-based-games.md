@@ -1,6 +1,6 @@
 # Sending messages to players in turn-based games
 
-**Framework**: GameKit
+**Framework**: Gamekit
 
 Notify players of match events by sending messages and game data.
 
@@ -11,8 +11,6 @@ GameKit provides several APIs for you to communicate events and send messages in
 To send other types of data between players when they’re not taking their turn, see the [`GKTurnBasedExchange`](gkturnbasedexchange.md) class.
 
 > ❗ **Important**:  The code listings in this article use GameKit asynchronous methods that you invoke from an `async` method or within a `Task` structure. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
-
- The code listings in this article use GameKit asynchronous methods that you invoke from an `async` method or within a `Task` structure. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
 
 ##### Pass Messages From the Current Participant
 
@@ -61,8 +59,6 @@ When the player taps the notification, GameKit invokes the `GKTurnBasedEventList
 
 > **Note**:  If you exceed the system’s 10-minute limit for the frequency of sending reminders, a `GKServerTurnBasedMaxSessionOtherError` error occurs.
 
- If you exceed the system’s 10-minute limit for the frequency of sending reminders, a `GKServerTurnBasedMaxSessionOtherError` error occurs.
-
 ## See Also
 
 - [Creating turn-based games](creating-turn-based-games.md)
@@ -89,4 +85,4 @@ When the player taps the notification, GameKit invokes the `GKTurnBasedEventList
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/sending-messages-to-players-in-turn-based-games)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/sending-messages-to-players-in-turn-based-games)*

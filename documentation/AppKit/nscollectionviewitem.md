@@ -1,6 +1,6 @@
 # NSCollectionViewItem
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 The visual representation for a single data element in a collection view.
@@ -50,8 +50,6 @@ Before you can ask the collection view to create items, you must register those 
 - Use the [`register(_:forItemWithIdentifier:)`](nscollectionview/register(_:foritemwithidentifier:)-90h1i.md) method when you store the item’s views in a nib file.
 
 > **Note**:  A single collection view can support multiple item types, each with its own distinct appearance, and you can mix and match item types in the same collection view if you want.
-
- A single collection view can support multiple item types, each with its own distinct appearance, and you can mix and match item types in the same collection view if you want.
 
 You must register at least one item type before trying to display content from your collection view. The collection view’s data source uses the [`makeItem(withIdentifier:for:)`](nscollectionview/makeitem(withidentifier:for:).md) method to fetch an empty item for configuration. During the initial configuration of the collection view, that method creates all items using the registered classes and nib files you provided. Later on, the method may return a recycled item that can be repurposed with new data.
 
@@ -114,4 +112,4 @@ For apps built before OS X 10.11, you created a template item and assigned it to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscollectionviewitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscollectionviewitem)*

@@ -1,6 +1,6 @@
 # Configuring Your Environment
 
-**Framework**: Apple Pay on the Web
+**Framework**: Applepayontheweb
 
 Create your Apple Pay merchant ID and certificates, and verify your domain.
 
@@ -9,8 +9,6 @@ Create your Apple Pay merchant ID and certificates, and verify your domain.
 To support Apple Pay on your website, you must complete the setup steps in your developer account. The steps include registering a merchant ID, creating two certificates, and verifying your domain. Completing the setup enables you to use either or both web APIs: [`Apple Pay JS API`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api) or [`Payment Request API`](https://developer.apple.com/documentation/apple_pay_on_the_web/payment_request_api).
 
 > **Note**:  Incorporating Apple Pay on your website is subject to the [`Apple Pay Acceptable Use Guidelines`](https://developer.apple.comhttps://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/). You must have an [`Apple Developer Account`](https://developer.apple.comhttps://developer.apple.com/account/) to complete the setup, and log in with a Team Agent or Admin role.
-
- Incorporating Apple Pay on your website is subject to the [`Apple Pay Acceptable Use Guidelines`](https://developer.apple.comhttps://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/). You must have an [`Apple Developer Account`](https://developer.apple.comhttps://developer.apple.com/account/) to complete the setup, and log in with a Team Agent or Admin role.
 
 ##### Configure Merchant Id and Certificates
 
@@ -23,8 +21,6 @@ Follow the instructions in [`Configure Apple Pay on the Web`](https://developer.
 While your merchant ID never expires, the payment processing certificate, merchant identity certificate, and domain verification do expire. See [`Maintaining Your Environment`](https://developer.apple.com/documentation/apple_pay_on_the_web/maintaining_your_environment) for more information.
 
 > 💡 **Tip**:  You can use the same merchant ID and payment processing certificate in iOS and watchOS apps. If you’re developing apps, enable Apple Pay in Xcode as a last step. See [`Setting up Apple Pay`](https://developer.apple.com/documentation/PassKit/setting-up-apple-pay) for more information.
-
- You can use the same merchant ID and payment processing certificate in iOS and watchOS apps. If you’re developing apps, enable Apple Pay in Xcode as a last step. See [`Setting up Apple Pay`](https://developer.apple.com/documentation/PassKit/setting-up-apple-pay) for more information.
 
 ##### Register and Verify Your Domain
 
@@ -54,4 +50,4 @@ However, you can create more than one merchant ID if you wish. Be sure to use th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/configuring-your-environment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/configuring-your-environment)*

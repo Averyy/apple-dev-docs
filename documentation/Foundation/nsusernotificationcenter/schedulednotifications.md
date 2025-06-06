@@ -20,8 +20,6 @@ Newly scheduled notifications are added to the end of the array. You may also bu
 
 > **Note**:  The scheduled user notification could be changing to a delivered notification at the time you are calling this method. and if that case the user notification will still be delivered.
 
- The scheduled user notification could be changing to a delivered notification at the time you are calling this method. and if that case the user notification will still be delivered.
-
 ## See Also
 
 - [func scheduleNotification(NSUserNotification)](nsusernotificationcenter/schedulenotification(_:).md)

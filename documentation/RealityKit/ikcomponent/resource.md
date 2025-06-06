@@ -1,6 +1,6 @@
 # resource
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 Reference to the resource describing the desired inverse kinematics setup.
@@ -21,8 +21,6 @@ var resource: IKResource?
 #### Discussion
 
 > **Note**: There is one engine tick delay between setting new resource and the change reflected in `solvers`.
-
-There is one engine tick delay between setting new resource and the change reflected in `solvers`.
 
 
 ---

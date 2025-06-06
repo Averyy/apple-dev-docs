@@ -1,6 +1,6 @@
 # productIdentifier
 
-**Framework**: StoreKit Test  
+**Framework**: Storekittest  
 **Kind**: property
 
 An identifier that uniquely represents a product, which you provide in the StoreKit configuration file.
@@ -25,8 +25,6 @@ var productIdentifier: String { get }
 You configure the product identifiers in the .`storekit` configuration file. Each product identifier must be unique.
 
 > **Note**:  The StoreKitTest framework never accesses App Store Connect, so it doesn’t retrieve actual product identifiers you may have configured there.
-
- The StoreKitTest framework never accesses App Store Connect, so it doesn’t retrieve actual product identifiers you may have configured there.
 
 ## See Also
 

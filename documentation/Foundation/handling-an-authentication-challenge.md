@@ -19,13 +19,9 @@ Implement one or both delegate authentication methods, depending on the nature o
 
 > **Note**:  See [`NSURLProtectionSpace authentication method constants`](nsurlprotectionspace-authentication-method-constants.md) for a guide to which authentication methods are session-wide or task-specific.
 
- See [`NSURLProtectionSpace authentication method constants`](nsurlprotectionspace-authentication-method-constants.md) for a guide to which authentication methods are session-wide or task-specific.
-
 As a simple example, consider what happens when you request an `http` URL protected by HTTP Basic authentication, as defined in [`RFC 7617`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7617). Because this is a task-specific challenge, you handle this by implementing [`urlSession(_:task:didReceive:completionHandler:)`](urlsessiontaskdelegate/urlsession(_:task:didreceive:completionhandler:).md).
 
 > **Note**:  If you connect via `https`, you also receive a server trust challenge. See [`Performing manual server trust authentication`](performing-manual-server-trust-authentication.md) for information on handling this type of session-wide challenge.
-
- If you connect via `https`, you also receive a server trust challenge. See [`Performing manual server trust authentication`](performing-manual-server-trust-authentication.md) for information on handling this type of session-wide challenge.
 
 [`Figure 1`](url_loading_system/handling_an_authentication_challenge#2948287.md) outlines a strategy for responding to the HTTP Basic challenge.
 
@@ -93,8 +89,6 @@ If you supply a credential that is accepted by the server, the task begins uploa
 
 > ❗ **Important**:  You can pass the completion handler to other methods or temporarily store it in a property, for situations like waiting for the user to complete a username/password dialog. But eventually you must call the completion handler to complete the challenge and allow the task to proceed, even if you’re choosing to cancel, as seen in the failure case of the previous example.
 
- You can pass the completion handler to other methods or temporarily store it in a property, for situations like waiting for the user to complete a username/password dialog. But eventually you must call the completion handler to complete the challenge and allow the task to proceed, even if you’re choosing to cancel, as seen in the failure case of the previous example.
-
 ##### Handle Failures Gracefully
 
 If the credential is refused, the system calls your delegate method again. When this happens, the callback provides your rejected credential as the [`proposedCredential`](urlauthenticationchallenge/proposedcredential.md) property of the [`URLAuthenticationChallenge`](urlauthenticationchallenge.md) parameter. The challenge instance also includes a [`previousFailureCount`](urlauthenticationchallenge/previousfailurecount.md) property, which indicates how many times the credential has been rejected. You can use these properties to determine what to do next. For example, if the [`previousFailureCount`](urlauthenticationchallenge/previousfailurecount.md) is greater than zero, you could use the user string of the [`proposedCredential`](urlauthenticationchallenge/proposedcredential.md) to populate a user/password reentry UI.
@@ -119,4 +113,4 @@ If the credential is refused, the system calls your delegate method again. When 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/handling-an-authentication-challenge)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/handling-an-authentication-challenge)*

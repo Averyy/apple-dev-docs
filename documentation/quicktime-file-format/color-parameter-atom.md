@@ -1,6 +1,6 @@
 # Color parameter atom ('colr')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 A required extension for uncompressed Y´CbCr data formats.
@@ -44,13 +44,9 @@ The Y´CbCr values stored in a file are normalized to a range of `[0,1]` for Y´
 
 > **Note**: The symbols used for these values are not intended to correspond to the use of these same symbols in other standards. In particular, “E” should not be interpreted as voltage.
 
-The symbols used for these values are not intended to correspond to the use of these same symbols in other standards. In particular, “E” should not be interpreted as voltage.
-
 These normalized values can be mapped onto the stored integer values of a particular compression type’s Y´, Cb, and Cr components using two different schemes, which we will call Scheme A and Scheme B.
 
 > ⚠️ **Warning**: Other, slightly different encoding/mapping schemes exist in the video industry, and data encoded using these schemes must be converted to one of the QuickTime schemes defined here.
-
-Other, slightly different encoding/mapping schemes exist in the video industry, and data encoded using these schemes must be converted to one of the QuickTime schemes defined here.
 
 Scheme A uses “Wide-Range” mapping (full scale) with unsigned Y´ and twos-complement Cb and Cr values as the following figure shows:
 
@@ -60,13 +56,9 @@ This maps normalized values to stored values so that, for example, 8-bit unsigne
 
 > ⚠️ **Warning**: In specifications such as ITU-R BT.601-4, JFIF 1.02, and SPIFF (Rec. ITU-T T.84), the symbols Cb and Cr are used to describe offset binary integers, not twos-complement signed integers shown here.
 
-In specifications such as ITU-R BT.601-4, JFIF 1.02, and SPIFF (Rec. ITU-T T.84), the symbols Cb and Cr are used to describe offset binary integers, not twos-complement signed integers shown here.
-
 Scheme B uses “Video-Range” mapping with unsigned Y´ and offset binary Cb and Cr values.
 
 > **Note**: Scheme B, shown in the following figure, comes from digital video industry specifications such as Rec. ITU-R BT. 601-4. All standard digital video tape formats (e.g., SMPTE D-1, SMPTE D-5) and all standard digital video links (e.g., SMPTE 259M-1997 serial digital video) use this scheme. Professional video storage and processing equipment from vendors such as Abekas, Accom, and SGI also use this scheme. MPEG-2, DVC and many other codecs specify source Y´CbCr pixels using this scheme.
-
-Scheme B, shown in the following figure, comes from digital video industry specifications such as Rec. ITU-R BT. 601-4. All standard digital video tape formats (e.g., SMPTE D-1, SMPTE D-5) and all standard digital video links (e.g., SMPTE 259M-1997 serial digital video) use this scheme. Professional video storage and processing equipment from vendors such as Abekas, Accom, and SGI also use this scheme. MPEG-2, DVC and many other codecs specify source Y´CbCr pixels using this scheme.
 
 ![An image that shows three equations for stored Y’CbCr values with a bit depth of n in scheme B. The first equation is Y’ is equal to the floor of a parenthetical formula fragment. The fragment contains zero point five plus two to the power of n minus 8, then multiplied by, in parentheses, two hundred nineteen multiplied by E with a subcript Y’ plus sixteen. The second equation is Cb is equal to the floor of a parenthetical formula fragment. The fragment contains zero point five plus two to the power of n minus 8, then multiplied by, in parentheses, two hundred twenty-four multiplied by E with a subcript Cb plus one hundred twenty-eight. The third equation is Cr is equal to the floor of a parenthetical formula fragment. The fragment contains zero point five plus two to the power of n minus 8, then multiplied by, in parentheses, two hundred twenty-four multiplied by E with a subcript Cr plus one hundred twenty-eight.](https://docs-assets.developer.apple.com/published/936ea2964a17d0008a7315f84c1c762d/color-parameter-atom-scheme-b%402x.png)
 

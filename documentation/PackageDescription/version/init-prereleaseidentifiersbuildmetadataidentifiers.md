@@ -1,6 +1,6 @@
 # init(_:_:_:prereleaseIdentifiers:buildMetadataIdentifiers:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: init
 
 Initializes a version struct with the provided components of a semantic version.
@@ -15,15 +15,9 @@ init(_ major: Int, _ minor: Int, _ patch: Int, prereleaseIdentifiers: [String] =
 
 > **Note**: `major >= 0 && minor >= 0 && patch >= 0`.
 
-`major >= 0 && minor >= 0 && patch >= 0`.
-
 > **Note**: `prereleaseIdentifiers` can contain only ASCII alpha-numeric characters and “-”.
 
-`prereleaseIdentifiers` can contain only ASCII alpha-numeric characters and “-”.
-
 > **Note**: `buildMetaDataIdentifiers` can contain only ASCII alpha-numeric characters and “-”.
-
-`buildMetaDataIdentifiers` can contain only ASCII alpha-numeric characters and “-”.
 
 ## Parameters
 

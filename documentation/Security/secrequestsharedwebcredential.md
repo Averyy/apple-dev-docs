@@ -41,8 +41,6 @@ If the found item specifies a nonstandard port number (other than 443 for `https
 
 > **Note**:  Because a request involving shared web credentials may potentially require user interaction or other verification to be approved, this function is dispatched asynchronously; your code provides a completion handler that will be called as soon as the results (if any) are available.
 
- Because a request involving shared web credentials may potentially require user interaction or other verification to be approved, this function is dispatched asynchronously; your code provides a completion handler that will be called as soon as the results (if any) are available.
-
 ## Parameters
 
 - `fqdn`: (Optional) The fully qualified domain name of the website for which passwords are being requested. If   is passed in this argument, the domain name(s) listed in the calling app’s   are searched implicitly.

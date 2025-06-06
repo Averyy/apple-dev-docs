@@ -31,15 +31,11 @@ Use this method to configure a different scissor rectangle for multiple viewport
 
 > ❗ **Important**:  The number of scissor rectangles you pass to this method needs to match the number of viewports you configure with the [`setViewports(_:)`](mtlrendercommandencoder/setviewports(_:).md) method.
 
- The number of scissor rectangles you pass to this method needs to match the number of viewports you configure with the [`setViewports(_:)`](mtlrendercommandencoder/setviewports(_:).md) method.
-
 The maximum number of viewports and scissor rectangles a GPU supports varies by device family. For more information, see [`MTLGPUFamily`](mtlgpufamily.md) and [`Detecting GPU Features and Metal Software Versions`](detecting-gpu-features-and-metal-software-versions.md).
 
 The rendering pipeline sends each primitive to a single viewport and its associated scissor rectangle. You can select which viewport each primitive uses in your vertex shader by adding the `[[viewport_array_index]]` attribute to an output value.
 
 > **Note**:  You can change the render pass’s scissor rectangle configuration by calling this method again or by calling the [`setScissorRect(_:)`](mtlrendercommandencoder/setscissorrect(_:).md) method.
-
- You can change the render pass’s scissor rectangle configuration by calling this method again or by calling the [`setScissorRect(_:)`](mtlrendercommandencoder/setscissorrect(_:).md) method.
 
 The [`setScissorRect(_:)`](mtlrendercommandencoder/setscissorrect(_:).md) method is equivalent to calling this method with a single element in the `scissorRects` array.
 

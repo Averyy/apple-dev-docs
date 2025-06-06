@@ -1,6 +1,6 @@
 # UIGraphicsPDFRendererContext
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 The drawing environment for a PDF renderer.
@@ -23,8 +23,6 @@ class UIGraphicsPDFRendererContext
 When using the [`UIGraphicsPDFRenderer`](uigraphicspdfrenderer.md) drawing methods, you must pass a block of type [`UIGraphicsPDFRenderer.DrawingActions`](uigraphicspdfrenderer/drawingactions.md) as an argument, which provides a [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md) instance as an argument. Use the context object to access high-level drawing functions and the underlying Core Graphics context.
 
 > **Note**:  [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md) inherits much of its functionality from its abstract superclass [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md).
-
- [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md) inherits much of its functionality from its abstract superclass [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md).
 
 To learn how to use a [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md) object in combination with a PDF renderer, see [`Creating a graphics PDF renderer`](uigraphicspdfrenderer#Creating-a-graphics-PDF-renderer.md).
 
@@ -80,4 +78,4 @@ To learn how to use a [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercont
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uigraphicspdfrenderercontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uigraphicspdfrenderercontext)*

@@ -1,6 +1,6 @@
 # Enhancing your app with fluid transitions
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Use the fluid zoom transition to provide a continuously interactive and responsive experience in your app.
 
@@ -35,8 +35,6 @@ navigationController?.pushViewController(detailViewController, animated: true)
 
 > ❗ **Important**:  Because the transition runs on both zoom in and zoom out, use a stable identifier to look up the view in the closure instead of capturing a [`UIView`](uiview.md) or [`IndexPath`](https://developer.apple.com/documentation/Foundation/IndexPath) instance.
 
- Because the transition runs on both zoom in and zoom out, use a stable identifier to look up the view in the closure instead of capturing a [`UIView`](uiview.md) or [`IndexPath`](https://developer.apple.com/documentation/Foundation/IndexPath) instance.
-
 If your app lets people swipe between different items without leaving the detail view, the thumbnail you want to zoom back to can change. To look up the correct thumbnail, use the context that the system passes to the closure.
 
 ```swift
@@ -60,8 +58,6 @@ navigationController?.pushViewController(detailViewController, animated: true)
 ```
 
 > **Note**:  You can also use the `preferredTransition` property for other system transitions, such as [`coverVertical`](uiviewcontroller/transition/coververtical.md), [`flipHorizontal`](uiviewcontroller/transition/fliphorizontal.md), [`crossDissolve`](uiviewcontroller/transition/crossdissolve.md), and [`partialCurl`](uiviewcontroller/transition/partialcurl.md).
-
- You can also use the `preferredTransition` property for other system transitions, such as [`coverVertical`](uiviewcontroller/transition/coververtical.md), [`flipHorizontal`](uiviewcontroller/transition/fliphorizontal.md), [`crossDissolve`](uiviewcontroller/transition/crossdissolve.md), and [`partialCurl`](uiviewcontroller/transition/partialcurl.md).
 
 ##### Work with State Changes and Callbacks
 
@@ -100,8 +96,6 @@ However, if someone interrupts a navigation push, the system doesn’t cancel pu
 
 > ❗ **Important**:  The system handles the push and pop transitions differently. It doesn’t cancel a push — instead, it converts it to a pop. This ensures that the view controller reaches the appeared state, and calls the full cycle of appear and disappear callbacks.
 
- The system handles the push and pop transitions differently. It doesn’t cancel a push — instead, it converts it to a pop. This ensures that the view controller reaches the appeared state, and calls the full cycle of appear and disappear callbacks.
-
 ##### Maintain Seamless Transitions
 
 When using continuously interactive transitions, your app needs to be ready for a new transition to start or stop at any time. Follow these guidelines to help your transitions run seamlessly and smoothly:
@@ -115,4 +109,4 @@ When using continuously interactive transitions, your app needs to be ready for 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/enhancing-your-app-with-fluid-transitions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/enhancing-your-app-with-fluid-transitions)*

@@ -1,6 +1,6 @@
 # removeAll(keepingCapacity:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Removes all elements from the collection.
@@ -24,8 +24,6 @@ mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 Calling this method may invalidate any existing indices for use with this collection.
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

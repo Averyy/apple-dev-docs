@@ -1,6 +1,6 @@
 # insertItems(at:inParent:withAnimation:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Inserts new items at the given indexes in the given parent with the specified optional animations.
@@ -20,8 +20,6 @@ func insertItems(at indexes: IndexSet, inParent parent: Any?, withAnimation anim
 This method parallels the [`insertRows(at:withAnimation:)`](nstableview/insertrows(at:withanimation:).md) method of [`NSTableView`](nstableview.md) and is used in a way similar to the [`insert(_:at:)`](https://developer.apple.com/documentation/foundation/nsmutablearray/1416482-insert) method of [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray). The method does nothing if `parent` is not expanded. The actual item values are determined by the data source’s [`outlineView(_:child:ofItem:)`](nsoutlineviewdatasource/outlineview(_:child:ofitem:).md) method (which is called only after [`endUpdates()`](nstableview/endupdates().md) to ensure data source integrity).
 
 > **Note**:  [`NSCell`](nscell.md)-based outline views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
-
- [`NSCell`](nscell.md)-based outline views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
 
 You can call this method multiple times within the same [`beginUpdates()`](nstableview/beginupdates().md)/[`endUpdates()`](nstableview/endupdates().md) block; new insertions move previously inserted new items, just like modifying an array. Inserting an index beyond what is available throws an exception.
 

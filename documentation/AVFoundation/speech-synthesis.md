@@ -1,6 +1,6 @@
 # Speech synthesis
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Configure voices to speak strings of text.
 
@@ -41,8 +41,6 @@ Optionally, use the speech synthesizer instance to control or respond to ongoing
 
 > **Note**:  Speech generation occurs on device and isn’t sent to a server for processing.
 
- Speech generation occurs on device and isn’t sent to a server for processing.
-
 ## Topics
 
 ### Spoken text attributes
@@ -65,4 +63,4 @@ Optionally, use the speech synthesizer instance to control or respond to ongoing
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/speech-synthesis)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/speech-synthesis)*

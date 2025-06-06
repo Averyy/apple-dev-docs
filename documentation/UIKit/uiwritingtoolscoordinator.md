@@ -1,6 +1,6 @@
 # UIWritingToolsCoordinator
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 An object that manages interactions between Writing Tools and your custom text view.
@@ -31,8 +31,6 @@ Create the `UIWritingToolsCoordinator` object when setting up your UI, and initi
 When defining the delegate, choose an object from your app that has access to your view and its text storage. You can adopt the [`UIWritingToolsCoordinator.Delegate`](uiwritingtoolscoordinator/delegate-swift.protocol.md) protocol in the view itself, or in another type that your view uses to manage content. During the interactions with Writing Tools, the delegate gets and sets the contents of the view’s text storage and supports Writing Tools behaviors.
 
 > **Note**: You don’t need to create an `UIWritingToolsCoordinator`  object if you display text using a [`UITextView`](uitextview.md), [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView), [`Text`](https://developer.apple.com/documentation/SwiftUI/Text), [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField), or [`TextEditor`](https://developer.apple.com/documentation/SwiftUI/TextEditor) view. Those views already include the required support to handle Writing Tools interactions.
-
-You don’t need to create an `UIWritingToolsCoordinator`  object if you display text using a [`UITextView`](uitextview.md), [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView), [`Text`](https://developer.apple.com/documentation/SwiftUI/Text), [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField), or [`TextEditor`](https://developer.apple.com/documentation/SwiftUI/TextEditor) view. Those views already include the required support to handle Writing Tools interactions.
 
 ## Topics
 
@@ -111,4 +109,4 @@ You don’t need to create an `UIWritingToolsCoordinator`  object if you display
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiwritingtoolscoordinator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiwritingtoolscoordinator)*

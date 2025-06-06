@@ -14,8 +14,6 @@ Before you combine targets into a multiplatform target, check your app to determ
 
 > **Note**: iOS, iPadOS, macOS, tvOS, and visionOS apps can share a single target. watchOS apps remain in a separate target.
 
-iOS, iPadOS, macOS, tvOS, and visionOS apps can share a single target. watchOS apps remain in a separate target.
-
 ##### Evaluate the Project Settings and Code Your Apps Share
 
 If you want to bring an existing app to a new platform, consider the technologies you use on the platform you already support and the additional platforms you plan to build for. If the technologies and project settings that you plan to use overlap considerably, multiplatform app targets are a good fit. Otherwise, use a separate target for each platform. For example, if your existing app uses SwiftUI and you plan to use SwiftUI for the new platform, use one multiplatform target. However, if your existing app uses UIKit and you want to use AppKit for the Mac, use separate targets.
@@ -111,4 +109,4 @@ Build, run, and test your app on each platform before submitting each version to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-a-multiplatform-app-target)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-a-multiplatform-app-target)*

@@ -1,6 +1,6 @@
 # findEntity(id:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns `Entity` with the given `Entity.ID` in the `Scene`.
@@ -26,8 +26,6 @@ Returns `Entity` with the given `Entity.ID` in the `Scene`.
 #### Discussion
 
 > **Note**: This method uses efficient mapping from `Entity.ID` to `Entity`, not linear traversal of all Entities in the `Scene`.
-
-This method uses efficient mapping from `Entity.ID` to `Entity`, not linear traversal of all Entities in the `Scene`.
 
 ## Parameters
 

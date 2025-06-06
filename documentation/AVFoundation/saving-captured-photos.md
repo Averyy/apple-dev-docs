@@ -1,6 +1,6 @@
 # Saving Captured Photos
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Add an image and other data from a photo capture to the photo library.
 
@@ -11,8 +11,6 @@ When you complete a photo capture with [`AVCapturePhotoOutput`](avcapturephotoou
 After capturing a photo, use [`PhotoKit`](https://developer.apple.com/documentation/PhotoKit) to add that data to the user’s photo library.
 
 > **Note**:  If your app only needs to access content in the photo library, you can use the [`PhotoKit`](https://developer.apple.com/documentation/PhotoKit) Photos picker instead, which doesn’t require you to request access from the user. To learn more, see [`Selecting Photos and Videos in iOS`](https://developer.apple.com/documentation/PhotoKit/selecting-photos-and-videos-in-ios).
-
- If your app only needs to access content in the photo library, you can use the [`PhotoKit`](https://developer.apple.com/documentation/PhotoKit) Photos picker instead, which doesn’t require you to request access from the user. To learn more, see [`Selecting Photos and Videos in iOS`](https://developer.apple.com/documentation/PhotoKit/selecting-photos-and-videos-in-ios).
 
 ##### Configure Properties and Capabilities for Your App Targets
 
@@ -25,8 +23,6 @@ In macOS, you also need to enable the [`Photos Library Entitlement`](https://dev
 ![A screenshot showing the macOS Photos Library entitlement enabled in the Signing & Capabilities tab of the app target.](https://docs-assets.developer.apple.com/published/1e8a0e60993966540c623b4f28eb1d8a/media-4132908%402x.png)
 
 > ❗ **Important**:  Your app needs to contain the appropriate key in its `Info.plist` file, and the appropriate entitlement enabled in macOS, before it requests authorization or attempts to use a device. Otherwise, the system terminates your app.
-
- Your app needs to contain the appropriate key in its `Info.plist` file, and the appropriate entitlement enabled in macOS, before it requests authorization or attempts to use a device. Otherwise, the system terminates your app.
 
 ##### Request Permission to Access the Users Photo Library
 
@@ -52,8 +48,6 @@ var isPhotoLibraryReadWriteAccessGranted: Bool {
 ```
 
 > **Note**:  Don’t wait to request access to the photo library until after the user takes their first photo because the permission alert prevents their ability to take multiple photos.
-
- Don’t wait to request access to the photo library until after the user takes their first photo because the permission alert prevents their ability to take multiple photos.
 
 ##### Use a Creation Request to Add a Photo Asset
 
@@ -107,4 +101,4 @@ func save(photo: AVCapturePhoto) async {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/saving-captured-photos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/saving-captured-photos)*

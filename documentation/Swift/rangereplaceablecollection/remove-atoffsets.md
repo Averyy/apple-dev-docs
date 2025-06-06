@@ -24,8 +24,6 @@ mutating func remove(atOffsets offsets: IndexSet)
 
 > **Note**: O() where  is the length of the collection.
 
-O() where  is the length of the collection.
-
 
 ---
 

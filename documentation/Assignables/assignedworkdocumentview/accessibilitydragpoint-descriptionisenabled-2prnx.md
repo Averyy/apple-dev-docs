@@ -39,8 +39,6 @@ By default, if an accessible view or its subtree has drag and/or drop interactio
 
 > **Note**: An accessibility element can have multiple points for a drag, provided they have different descriptions.
 
-An accessibility element can have multiple points for a drag, provided they have different descriptions.
-
 ## Parameters
 
 - `point`: The point the assitive technology will begin a drag   interaction.

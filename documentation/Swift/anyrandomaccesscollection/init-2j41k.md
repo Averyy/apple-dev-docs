@@ -26,8 +26,6 @@ If the underlying collection stored by `other` does not satisfy `RandomAccessCol
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

@@ -1,6 +1,6 @@
 # Attestation Object Validation Guide
 
-**Framework**: DeviceCheck
+**Framework**: Devicecheck
 
 Use this guide to validate your implementation of verifying the attestation object verification process.
 
@@ -21,8 +21,6 @@ After calling generateKey, this example produces the following `keyId`:
 ```
 
 > **Note**: The `keyId` from the generateKey API is already in Base64 encoded format.
-
-The `keyId` from the generateKey API is already in Base64 encoded format.
 
 After calling attestKey, this example produces the following `attestationObject`, as a Base64 encoded string:
 
@@ -104,8 +102,6 @@ Expected counter field:
 
 > **Note**: The `counter` is incremented on each subsequent call to generateAssertion, following the call to attestKey.
 
-The `counter` is incremented on each subsequent call to generateAssertion, following the call to attestKey.
-
 1. Verify that the authenticator data’s `aaguid` field is either `appattestdevelop` if operating in the development environment, or `appattest` followed by seven `0x00` bytes if operating in the production environment.
 
 Expected `aaguid` field for production:
@@ -125,4 +121,4 @@ Expected `credentialId`:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicecheck/attestation-object-validation-guide)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceCheck/attestation-object-validation-guide)*

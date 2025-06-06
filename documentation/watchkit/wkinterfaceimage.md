@@ -53,8 +53,6 @@ Whenever possible, place image resources in an asset catalog in your Watch app b
 
 > **Note**:  You cannot use the [`animatedImageNamed(_:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImageNamed(_:duration:)) method of [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) to create an animated image based on images in your Watch app’s bundle. That method looks for images in the bundle of the active process, which is your WatchKit extension’s bundle. To load an animated image sequence from images in your Watch app bundle, you must name your image resources appropriately and use the [`setImageNamed(_:)`](wkinterfaceimage/setimagenamed(_:).md) method of this class.
 
- You cannot use the [`animatedImageNamed(_:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImageNamed(_:duration:)) method of [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) to create an animated image based on images in your Watch app’s bundle. That method looks for images in the bundle of the active process, which is your WatchKit extension’s bundle. To load an animated image sequence from images in your Watch app bundle, you must name your image resources appropriately and use the [`setImageNamed(_:)`](wkinterfaceimage/setimagenamed(_:).md) method of this class.
-
 For more information on how to create animated images, see the discussions of the [`animatedImageNamed(_:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImageNamed(_:duration:)) and [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImage(with:duration:)) methods in [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
 
 ##### Interface Builder Configuration Options
@@ -111,4 +109,4 @@ Xcode lets you configure information about your image interface object in your s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkinterfaceimage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkinterfaceimage)*

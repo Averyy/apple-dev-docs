@@ -1,6 +1,6 @@
 # CAMetalLayer
 
-**Framework**: Core Animation  
+**Framework**: Quartzcore  
 **Kind**: class
 
 A Core Animation layer that Metal can render into, typically displayed onscreen.
@@ -80,8 +80,6 @@ This block releases drawables promptly and avoids possible deadlock situations w
 
 > **Note**:  As of iOS 10 and tvOS 10, you can safely retain a drawable to query its properties, such as [`drawableID`](https://developer.apple.com/documentation/Metal/MTLDrawable/drawableID) and [`presentedTime`](https://developer.apple.com/documentation/Metal/MTLDrawable/presentedTime), after the system has presented it. If you don’t need to query these properties, release the drawable when you no longer need it.
 
- As of iOS 10 and tvOS 10, you can safely retain a drawable to query its properties, such as [`drawableID`](https://developer.apple.com/documentation/Metal/MTLDrawable/drawableID) and [`presentedTime`](https://developer.apple.com/documentation/Metal/MTLDrawable/presentedTime), after the system has presented it. If you don’t need to query these properties, release the drawable when you no longer need it.
-
 ## Topics
 
 ### Configuring the Metal Device
@@ -150,4 +148,4 @@ This block releases drawables promptly and avoids possible deadlock situations w
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/cametallayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/cametallayer)*

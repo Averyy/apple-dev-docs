@@ -1,6 +1,6 @@
 # partition(by:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Reorders the elements of the collection such that all the elements that match the given predicate are after all the elements that don’t match.
@@ -49,8 +49,6 @@ let second = numbers[p...]
 Note that the order of elements in both partitions changed. That is, `40` appears before `60` in the original collection, but, after calling `partition(by:)`, `60` appears before `40`.
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

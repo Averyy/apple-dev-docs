@@ -1,6 +1,6 @@
 # Deprecated Symbols
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 Review unsupported symbols and their replacements.
 
@@ -11,8 +11,6 @@ The table below describes keys for an `NSDictionary` object containing informati
 Note that these constants are considered legacy.
 
 > **Note**:  It is strongly suggested that you use the `NSWorkspace` class’s [`runningApplications`](nsworkspace/runningapplications.md) method and the [`NSRunningApplication`](nsrunningapplication.md) class to retrieve this information in apps target macOS 10.6 and later, rather than the [`activeApplication()`](nsworkspace/activeapplication().md) and [`launchedApplications`](nsworkspace/launchedapplications.md) methods.
-
- It is strongly suggested that you use the `NSWorkspace` class’s [`runningApplications`](nsworkspace/runningapplications.md) method and the [`NSRunningApplication`](nsrunningapplication.md) class to retrieve this information in apps target macOS 10.6 and later, rather than the [`activeApplication()`](nsworkspace/activeapplication().md) and [`launchedApplications`](nsworkspace/launchedapplications.md) methods.
 
 | Key | Value |
 | --- | --- |
@@ -77,4 +75,4 @@ Note that these constants are considered legacy.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsworkspace-deprecated-symbols)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsworkspace-deprecated-symbols)*

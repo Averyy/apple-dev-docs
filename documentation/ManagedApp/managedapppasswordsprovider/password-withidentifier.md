@@ -1,6 +1,6 @@
 # password(withIdentifier:)
 
-**Framework**: ManagedApp  
+**Framework**: Managedapp  
 **Kind**: method
 
 Provides a password by its identifier.
@@ -32,11 +32,7 @@ The MDM server can change the available passwords at any time. When that happens
 
 > ❗ **Important**: Avoid storing the password and instead, call this method whenever the app needs the password. For security reasons, avoid logging or displaying the password.
 
-Avoid storing the password and instead, call this method whenever the app needs the password. For security reasons, avoid logging or displaying the password.
-
 > **Note**: [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if no password exists with the specified identifier.
-
-[`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if no password exists with the specified identifier.
 
 ## Parameters
 

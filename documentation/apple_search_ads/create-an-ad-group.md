@@ -1,6 +1,6 @@
 # Create an Ad Group
 
-**Framework**: Apple Search Ads  
+**Framework**: Apple_Search_Ads  
 **Kind**: httpRequest
 
 Creates an ad group as part of a campaign.
@@ -13,8 +13,6 @@ Creates an ad group as part of a campaign.
 To create ad groups, use the associated `campaignId` as a resource in the URI. In the request, specify [`TargetingDimensions`](targetingdimensions.md) and apply it to ad groups.
 
 > **Note**:  You can’t create or update ad groups with geotargeting for campaigns with multiple `countriesOrRegions`.
-
- You can’t create or update ad groups with geotargeting for campaigns with multiple `countriesOrRegions`.
 
 ##### Payload Example Create an Ad Group with Targeting
 

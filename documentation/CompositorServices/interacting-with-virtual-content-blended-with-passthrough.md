@@ -1,6 +1,6 @@
 # Interacting with virtual content blended with passthrough
 
-**Framework**: Compositor Services
+**Framework**: Compositorservices
 
 Present a mixed immersion style space to draw content in a person’s surroundings, and choose how upper limbs appear with respect to rendered content.
 
@@ -11,8 +11,6 @@ Present a mixed immersion style space to draw content in a person’s surroundin
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10092: [`Render Metal with passthrough in visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10092/).
-
-This sample code project is associated with WWDC24 session 10092: [`Render Metal with passthrough in visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10092/).
 
 ## See Also
 
@@ -28,4 +26,4 @@ This sample code project is associated with WWDC24 session 10092: [`Render Metal
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/interacting-with-virtual-content-blended-with-passthrough)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CompositorServices/interacting-with-virtual-content-blended-with-passthrough)*

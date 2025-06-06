@@ -1,6 +1,6 @@
 # UIImageView
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A view that displays a single image or a sequence of animated images in your interface.
@@ -45,15 +45,11 @@ Images are composited onto the image view’s background and are then composited
 
 > ❗ **Important**:  It’s computationally expensive to composite the alpha channel of an image with the alpha channel of a non-opaque image view. The performance impact is further magnified if you use Core Animation shadows, because the shape of the shadow is then based on the contents of the view and must be dynamically computed. If you aren’t intentionally using the alpha channel of the image or the alpha channel of the image view, set the [`isOpaque`](uiview/isopaque.md) property to [`true`](https://developer.apple.com/documentation/swift/true) to improve performance. For additional optimization tips, see [`Improve performance`](uiimageview#Improve-performance.md).
 
- It’s computationally expensive to composite the alpha channel of an image with the alpha channel of a non-opaque image view. The performance impact is further magnified if you use Core Animation shadows, because the shape of the shadow is then based on the contents of the view and must be dynamically computed. If you aren’t intentionally using the alpha channel of the image or the alpha channel of the image view, set the [`isOpaque`](uiview/isopaque.md) property to [`true`](https://developer.apple.com/documentation/swift/true) to improve performance. For additional optimization tips, see [`Improve performance`](uiimageview#Improve-performance.md).
-
 ##### Animate a Sequence of Images
 
 An image view can store an animated image sequence and play all or part of that sequence. You specify an image sequence as an array of [`UIImage`](uiimage.md) objects and assign them to the [`animationImages`](uiimageview/animationimages.md) property. Once assigned, you can use the methods and properties of this class to configure the animation timing and to start and stop the animation.
 
 > **Note**:  You can also construct a single [`UIImage`](uiimage.md) object from a sequence of individual images using the [`animatedImage(with:duration:)`](uiimage/animatedimage(with:duration:).md) method. Doing so yields the same results as assigning the individual images to the [`animationImages`](uiimageview/animationimages.md) property.
-
- You can also construct a single [`UIImage`](uiimage.md) object from a sequence of individual images using the [`animatedImage(with:duration:)`](uiimage/animatedimage(with:duration:).md) method. Doing so yields the same results as assigning the individual images to the [`animationImages`](uiimageview/animationimages.md) property.
 
 Consider the following tips when displaying a sequence of animated images:
 
@@ -102,8 +98,6 @@ Internationalization of image views is automatic if your view displays only stat
 2. Load that image by passing the URL or data for the correct image to an appropriate [`UIImage`](uiimage.md) class method, such as [`imageWithData:`](uiimage/imagewithdata:.md) or [`imageWithContentsOfFile:`](uiimage/imagewithcontentsoffile:.md).
 
 > **Note**:  Screen metrics and layout may also change depending on the language and locale, particularly if the internationalized versions of your images have different dimensions. Where possible, you should try to make minimize dimension differences in internationalized versions of image resources.
-
- Screen metrics and layout may also change depending on the language and locale, particularly if the internationalized versions of your images have different dimensions. Where possible, you should try to make minimize dimension differences in internationalized versions of image resources.
 
 For more information, see [`Localization`](https://developer.apple.com/documentation/Xcode/localization).
 
@@ -244,4 +238,4 @@ When you assign a value to an image view’s [`restorationIdentifier`](uiviewcon
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiimageview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiimageview)*

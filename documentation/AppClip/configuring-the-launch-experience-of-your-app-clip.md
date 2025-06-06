@@ -1,6 +1,6 @@
 # Configuring the launch experience of your App Clip
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Review how people launch your App Clip, identify invocation URLs, make use of default App Clip links, and configure experiences in App Store Connect.
 
@@ -9,8 +9,6 @@ Review how people launch your App Clip, identify invocation URLs, make use of de
 People launch your App Clip by performing an  — for example, by scanning an App Clip Code or tapping a Smart App Banner on a website. Upon launch, the App Clip receives an  that determines what information appears on the App Clip card. To offer the best launch experience for the person’s current context, you can also use the invocation URL on launch to update the UI of your App Clip. To configure invocation URLs and the metadata that appears on the App Clip card, create the required  in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). To support all invocations — for example, from App Clip Codes — configure optional .
 
 > ❗ **Important**:  In some cases, the App Clip doesn’t receive an invocation URL upon launch. Make sure to handle this use case in your code. For more information on responding to invocations where the invocation URL isn’t available, see [`Ensure your code handles all invocations`](responding-to-invocations#Ensure-your-code-handles-all-invocations.md).
-
- In some cases, the App Clip doesn’t receive an invocation URL upon launch. Make sure to handle this use case in your code. For more information on responding to invocations where the invocation URL isn’t available, see [`Ensure your code handles all invocations`](responding-to-invocations#Ensure-your-code-handles-all-invocations.md).
 
 The actual configuration of your App Clip experiences typically happens when you upload the first build that contains an App Clip to App Store Connect. However, it’s important you understand how App Clip experiences work before you start developing your App Clip. You need to identify invocations, invocation URLs, and plan changes to your code before or in parallel to implementing functionality provided by your App Clip. Additionally, to support advanced App Clip experiences or iOS versions older than iOS 16.4, you need to make changes to your server to associate your App Clip with your website.
 
@@ -31,8 +29,6 @@ People don’t search the App Store for an App Clip. They discover it when and w
 With each invocation, the system verifies whether the invocation URL matches the invocation URL you configure in App Store Connect. After it verifies the invocation, the system uses the invocation URL to determine which App Clip experience to use for launching your App Clip. It then uses the App Clip experience’s metadata to populate the App Clip card and passes the invocation URL to the App Clip.
 
 > ❗ **Important**:  When people install the corresponding app for an App Clip, the full app replaces the App Clip. Every invocation from that moment on launches the full app instead of the App Clip. As a result, the full app must handle all invocations and offer the same functionality that the App Clip provides.
-
- When people install the corresponding app for an App Clip, the full app replaces the App Clip. Every invocation from that moment on launches the full app instead of the App Clip. As a result, the full app must handle all invocations and offer the same functionality that the App Clip provides.
 
 ##### Compare Default and Advanced App Clip Experiences
 
@@ -69,8 +65,6 @@ Note that you can also localize the text that appears on the App Clip card in Ap
 
 > **Note**:  Keep the text that appears on the App Clip card short: Use up to 30 characters for the title and up to 56 characters for the subtitle.
 
- Keep the text that appears on the App Clip card short: Use up to 30 characters for the title and up to 56 characters for the subtitle.
-
 ##### Configure a Default App Clip Experience
 
 An App Clip always requires a corresponding full app, and you submit your App Clip binary together with your full app’s binary to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). After you’ve uploaded your full app to App Store Connect, configure a default App Clip experience. Navigate to the page for the app version that offers an App Clip, expand the App Clip section, and provide the following metadata for the App Clip card:
@@ -103,13 +97,9 @@ To support additional invocations (for example, from scanning an App Clip Code),
 
 > ❗ **Important**:  If you’re using a URL with a different domain than the default App Clip experience, make sure the system can verify the association between your App Clip and the domain. For more information, see [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
 
- If you’re using a URL with a different domain than the default App Clip experience, make sure the system can verify the association between your App Clip and the domain. For more information, see [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
-
 In App Store Connect, select your App, and then select the iOS app version for which you want to add an advanced App Clip experience. Then, click Edit Advanced Experiences and create an advanced App Clip experience. For more information, see [`Set up an App Clip experience`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev43c15c696) in the App Store Connect Help.
 
 > ❗ **Important**:  To set up an advanced App Clip experience that appears in Apple Maps, create a place association that connects the App Clip experience to a physical location. Apple Maps uses any location data that you provide solely for matching an App Clip experience to an existing location. If it can’t find a match, Apple Maps doesn’t use the provided location data.
-
- To set up an advanced App Clip experience that appears in Apple Maps, create a place association that connects the App Clip experience to a physical location. Apple Maps uses any location data that you provide solely for matching an App Clip experience to an existing location. If it can’t find a match, Apple Maps doesn’t use the provided location data.
 
 In your Xcode project, add or modify code for both your App Clip and your full app to respond to the new URL you registered. For more information, see [`Responding to invocations`](responding-to-invocations.md).
 
@@ -169,4 +159,4 @@ To help you create and manage a large number of App Clip experiences, use the Ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/configuring-the-launch-experience-of-your-app-clip)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/configuring-the-launch-experience-of-your-app-clip)*

@@ -29,11 +29,7 @@ A value of the requested type, if present for the given key and convertible to t
 
 > **Note**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
 
-`DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
-
 > **Note**: `DecodingError.valueNotFound` if the encountered encoded value is null, or of there are no more values to decode.
-
-`DecodingError.valueNotFound` if the encountered encoded value is null, or of there are no more values to decode.
 
 ## Parameters
 

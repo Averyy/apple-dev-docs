@@ -1,6 +1,6 @@
 # relinkAccount(using:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 Presents a sheet for the merchant to re-accept Tap to Pay on iPhone’s Terms and Conditions on a device using a different Apple Account.
@@ -25,8 +25,6 @@ To use this method, a merchant must have already accepted the Terms and Conditio
 After a merchant accepts the Terms and Conditions for their specific merchant identifier on one device, they don’t need to accept it again on additional devices that use the same identifier.
 
 > **Note**: [`PaymentCardReaderError.accountLinkingFailed`](paymentcardreadererror/accountlinkingfailed.md), [`PaymentCardReaderError.accountLinkingCancelled`](paymentcardreadererror/accountlinkingcancelled.md), or other relevant errors in [`PaymentCardReaderError`](paymentcardreadererror.md).
-
-[`PaymentCardReaderError.accountLinkingFailed`](paymentcardreadererror/accountlinkingfailed.md), [`PaymentCardReaderError.accountLinkingCancelled`](paymentcardreadererror/accountlinkingcancelled.md), or other relevant errors in [`PaymentCardReaderError`](paymentcardreadererror.md).
 
 ## Parameters
 

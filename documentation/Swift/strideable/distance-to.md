@@ -31,8 +31,6 @@ If this type’s `Stride` type conforms to `BinaryInteger`, then for two values 
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `other`: The value to calculate the distance to.

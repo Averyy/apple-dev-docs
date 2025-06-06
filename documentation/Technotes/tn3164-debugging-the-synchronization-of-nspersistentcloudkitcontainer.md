@@ -20,15 +20,11 @@ The goal of implementing such a mechanism is to balance the use of system resour
 
 > **Note**: When your data synchronizes but not immediately, it is most likely that the system intentionally defers the synchronization. To discover what really happens inside an export or import, see [`Understand the export`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-the-export.md) and  [`Understand the import`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-the-import.md).
 
-When your data synchronizes but not immediately, it is most likely that the system intentionally defers the synchronization. To discover what really happens inside an export or import, see [`Understand the export`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-the-export.md) and  [`Understand the import`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-the-import.md).
-
 #### Present the Latest Data
 
 When your app doesn’t show the changes the other peer exported to the CloudKit database, it can be that the data is synchronized but your app’s UI is not refreshed. To verify if that is your case, quit your app, relaunch it, and confirm that the data is now up-to-date.
 
 > **Note**: `NSPersistentCloudKitContainer` may import data while an app is launching. If relaunching your app causes synchronization, it may be that the system intentionally deferred the imports in the previous launch session. See [`Understand the import`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-the-import.md) for more information.
-
-`NSPersistentCloudKitContainer` may import data while an app is launching. If relaunching your app causes synchronization, it may be that the system intentionally deferred the imports in the previous launch session. See [`Understand the import`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-the-import.md) for more information.
 
 `NSPersistentCloudKitContainer` synchronizes data when appropriate. To know the state of the synchronization, observe [`eventChangedNotification`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainer/eventChangedNotification). To get notified that `NSPersistentCloudKitContainer` imported data to the store, observe [`NSPersistentStoreRemoteChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange).
 
@@ -74,8 +70,6 @@ server message = "Invalid bundle ID for container"; … container ID = …>
 
 > **Note**: For better readability, the logs in this technote are formatted to fit the page size, and some information in the logs is omitted.
 
-For better readability, the logs in this technote are formatted to fit the page size, and some information in the logs is omitted.
-
 To confirm that your CloudKit container and app ID are correctly associated:
 
 1. Log in Apple’s [`Developer Portal`](https://developer.apple.comhttp://developer.apple.com/account) with your developer account, select the Certificates, Identifiers & Profiles page, and find the app ID of your app.
@@ -86,8 +80,6 @@ To confirm that your CloudKit container and app ID are correctly associated:
 If the portal shows that the association between your CloudKit container and app ID is correct, but the error still exists, it is most likely because the association isn’t synchronized to the CloudKit server. In that case, consider using a new CloudKit container to continue your development.
 
 > **Note**: You can hide a CloudKit container using CloudKit Console, as shown in WWDC22 session 10115: [`What’s new in CloudKit Console`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10115) (the content starting at 1 minute), but can’t delete an existing container.
-
-You can hide a CloudKit container using CloudKit Console, as shown in WWDC22 session 10115: [`What’s new in CloudKit Console`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10115) (the content starting at 1 minute), but can’t delete an existing container.
 
 If your CloudKit container is already used in the production environment and switching to a new container leads to data loss, consider filing a feedback report with the following information to request manually associating your CloudKit container with your app ID:
 
@@ -126,8 +118,6 @@ To completely mirror your Core Data model to CloudKit, see [`Sharing Core Data o
 CloudKit doesn’t support all the features of a Core Data model. When designing your model, avoid using the unsupported features, such as unique constraints and ordered relationships. For more information, see [`Creating a Core Data Model for CloudKit`](https://developer.apple.com/documentation/CoreData/creating-a-core-data-model-for-cloudkit). For an example on how to avoid duplicates, see [`Sharing Core Data objects between iCloud users`](https://developer.apple.com/documentation/CoreData/sharing-core-data-objects-between-icloud-users).
 
 > **Note**: If the debug build of your app synchronizes correctly but the App Store or TestFlight build doesn’t, it is most likely because you haven’t deployed your CloudKit schema to the production environment. For more information, see [`Deploying an iCloud Container’s Schema`](https://developer.apple.com/documentation/CloudKit/deploying-an-icloud-container-s-schema).
-
-If the debug build of your app synchronizes correctly but the App Store or TestFlight build doesn’t, it is most likely because you haven’t deployed your CloudKit schema to the production environment. For more information, see [`Deploying an iCloud Container’s Schema`](https://developer.apple.com/documentation/CloudKit/deploying-an-icloud-container-s-schema).
 
 #### Avoid Hitting a Cloudkit Limit
 
@@ -229,4 +219,4 @@ If your issue isn’t covered in the technote, consider figuring out what happen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3164-debugging-the-synchronization-of-nspersistentcloudkitcontainer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3164-debugging-the-synchronization-of-nspersistentcloudkitcontainer)*

@@ -1,12 +1,10 @@
 # TVML
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Use Apple TV Markup Language to create individual pages inside of a client-server app.
 
 > **Note**: TVML is deprecated in tvOS 18 and later. Instead, develop apps for tvOS with [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) or [`UIKit`](https://developer.apple.com/documentation/UIKit).
-
-TVML is deprecated in tvOS 18 and later. Instead, develop apps for tvOS with [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) or [`UIKit`](https://developer.apple.com/documentation/UIKit).
 
 #### Overview
 

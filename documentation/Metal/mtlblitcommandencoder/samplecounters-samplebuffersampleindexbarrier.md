@@ -30,8 +30,6 @@ Inserting a barrier ensures that any work you encode with this encoder is comple
 
 > **Note**:  The GPU doesn’t isolate this sampling command from any commands that come from another encoder, with or without a barrier.
 
- The GPU doesn’t isolate this sampling command from any commands that come from another encoder, with or without a barrier.
-
 ## Parameters
 
 - `sampleBuffer`: A counter sample buffer where the command stores the sample data.

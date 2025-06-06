@@ -1,6 +1,6 @@
 # requestPriceIncreaseConsentForTransaction(identifier:)
 
-**Framework**: StoreKit Test  
+**Framework**: Storekittest  
 **Kind**: method
 
 Simulates a price increase that requires customer consent for an auto-renewable subscription.
@@ -27,8 +27,6 @@ Use this method to test how your app handles a price increase consent flow. When
 You may call this method repeatedly to prompt the testing environment to send the price increase consent message.
 
 > **Note**:  The system displays a price increase consent sheet in iOS only. On other supported platforms, use [`requestPriceIncreaseConsentForTransaction(identifier:)`](sktestsession/requestpriceincreaseconsentfortransaction(identifier:).md) to test that your app handles the subscription status update correctly.
-
- The system displays a price increase consent sheet in iOS only. On other supported platforms, use [`requestPriceIncreaseConsentForTransaction(identifier:)`](sktestsession/requestpriceincreaseconsentfortransaction(identifier:).md) to test that your app handles the subscription status update correctly.
 
 By default, if your app doesn’t listen for [`messages`](https://developer.apple.com/documentation/StoreKit/Message/messages-swift.type.property) or implement [`paymentQueueShouldShowPriceConsent(_:)`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueueDelegate/paymentQueueShouldShowPriceConsent(_:)), the system displays the price increase consent sheet immediately. Your app may delay displaying the sheet to ensure a good user experience. For more information, see [`Message.Messages`](https://developer.apple.com/documentation/StoreKit/Message/Messages-swift.struct) for apps that run in iOS 16 and later, and [`paymentQueueShouldShowPriceConsent(_:)`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueueDelegate/paymentQueueShouldShowPriceConsent(_:)) and [`showPriceConsentIfNeeded()`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/showPriceConsentIfNeeded()) for apps that run in earlier versions.
 
@@ -57,8 +55,6 @@ To simulate a user canceling their subscription, the tester closes the price inc
 Start with [`disableDialogs`](sktestsession/disabledialogs.md) set to `true`, so the system doesn’t displays the price increase consent sheet in the testing environment.
 
 > **Note**:  The system doesn’t display any sheets in the testing environment if [`disableDialogs`](sktestsession/disabledialogs.md) is `true`.
-
- The system doesn’t display any sheets in the testing environment if [`disableDialogs`](sktestsession/disabledialogs.md) is `true`.
 
 To simulate a user consenting to a price increase, call [`consentToPriceIncreaseForTransaction(identifier:)`](sktestsession/consenttopriceincreasefortransaction(identifier:).md). The auto-renewable subscription renews at the next renewal period.
 

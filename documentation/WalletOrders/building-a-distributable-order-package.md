@@ -69,8 +69,6 @@ Write the manifest object to a new file called `manifest.json` in the top-level 
 
 > **Note**:  Don’t include metadata files that aren’t part of the order format, such as the `.DS_Store` file, in the manifest or distributable order package.
 
- Don’t include metadata files that aren’t part of the order format, such as the `.DS_Store` file, in the manifest or distributable order package.
-
 ##### Sign and Compress the Order Package
 
 To sign the order package, follow these steps:
@@ -119,4 +117,4 @@ If your order package doesn’t build correctly, check whether the following are
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/walletorders/building-a-distributable-order-package)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WalletOrders/building-a-distributable-order-package)*

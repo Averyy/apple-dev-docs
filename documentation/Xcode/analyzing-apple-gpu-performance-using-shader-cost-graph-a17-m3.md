@@ -10,15 +10,11 @@ One key method of triaging performance bottlenecks is to look at the most expens
 
 > ❗ **Important**: The shader cost graph feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
 
-The shader cost graph feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
-
 ##### View the Shader Cost Graph
 
 To open the shader cost graph, click the Performance button in the Metal debugger’s Debug navigator, and then click the Shaders tab above the Performance timeline.
 
 > **Note**: The shader cost graph is available for pipeline states only.
-
-The shader cost graph is available for pipeline states only.
 
 When you select a pipeline state in the Timeline navigator, the shader cost graph for that pipeline state’s shaders appears on the right.
 
@@ -120,4 +116,4 @@ For more information about the Metal profiling tools for M3 and A17 Pro, see [`D
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-apple-gpu-performance-using-shader-cost-graph-a17-m3)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-apple-gpu-performance-using-shader-cost-graph-a17-m3)*

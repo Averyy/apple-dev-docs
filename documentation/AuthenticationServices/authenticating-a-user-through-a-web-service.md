@@ -1,6 +1,6 @@
 # Authenticating a User Through a Web Service
 
-**Framework**: Authentication Services
+**Framework**: Authenticationservices
 
 Use a web authentication session to authenticate a user in your app.
 
@@ -60,8 +60,6 @@ Safari always respects the request. In macOS, the user can choose a different de
 
 > **Note**:  When not using an ephemeral session, all cookies except session cookies are available to the browser.
 
- When not using an ephemeral session, all cookies except session cookies are available to the browser.
-
 ##### Start the Authentication Flow
 
 After configuring the session, call its [`start()`](aswebauthenticationsession/start().md) method:
@@ -115,4 +113,4 @@ The above example looks for a token stored as a query parameter. The specific pa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/authenticating-a-user-through-a-web-service)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/authenticating-a-user-through-a-web-service)*

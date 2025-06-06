@@ -1,6 +1,6 @@
 # Adding Custom Functions to a Shader Graph
 
-**Framework**: Metal Performance Shaders Graph
+**Framework**: Metalperformanceshadersgraph
 
 Run your own graph functions on the GPU by building the function programmatically.
 
@@ -12,8 +12,6 @@ Run your own graph functions on the GPU by building the function programmaticall
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [`10677: Build Customized ML Models with the Metal Performance Shaders Graph`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10677/).
-
-This sample code project is associated with WWDC20 session [`10677: Build Customized ML Models with the Metal Performance Shaders Graph`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10677/).
 
 ##### 3675548
 

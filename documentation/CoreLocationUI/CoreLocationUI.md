@@ -1,6 +1,6 @@
 # CoreLocationUI
 
-**Framework**: CoreLocationUI  
+**Framework**: Corelocationui  
 **Kind**: module
 
 Streamline access to users’ location data through a standard, secure UI.
@@ -18,8 +18,6 @@ The CoreLocationUI framework contains a standardized UI that interacts securely 
 CoreLocationUI provides [`LocationButton`](locationbutton.md) for SwiftUI apps and [`CLLocationButton`](cllocationbutton.md) for UIKit apps. Add these buttons to your UI when you want someone to grant one-time authorization for your app to fetch their location. The button’s style is consistent with the standard Core Location design language, giving users a sense of familiarity and trust when they interact with it.
 
 > **Note**: The location button ignores user input on Mac apps built with Mac Catalyst, and on compatible iPad and iPhone apps running in visionOS.
-
-The location button ignores user input on Mac apps built with Mac Catalyst, and on compatible iPad and iPhone apps running in visionOS.
 
 ## Topics
 

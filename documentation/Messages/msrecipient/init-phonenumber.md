@@ -21,8 +21,6 @@ Use this method to create a new critical message recipient. When delivering mess
 
 > **Note**: If the framework can’t send a message due to an invalid phone number, the framework throws and [`MSCriticalMessagingError.sendFailed`](mscriticalmessagingerror/sendfailed.md) error.
 
-If the framework can’t send a message due to an invalid phone number, the framework throws and [`MSCriticalMessagingError.sendFailed`](mscriticalmessagingerror/sendfailed.md) error.
-
 ## Parameters
 
 - `phoneNumber`: A phone number that conforms to the  , without any non-numeric characters such as parentheses, periods, dashes, or a plus character (+) that introduces a country code.

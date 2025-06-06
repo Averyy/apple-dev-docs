@@ -1,6 +1,6 @@
 # provideCredentialWithoutUserInteraction(for:)
 
-**Framework**: Authentication Services  
+**Framework**: Authenticationservices  
 **Kind**: method
 
 Attempts to provide the user-requested credential with no further user interaction.
@@ -28,8 +28,6 @@ Call the context’s [`completeRequest(withSelectedCredential:completionHandler:
 You can alternatively call the cancel method to indicate other error conditions using one of the codes in [`ASExtensionError.Code`](asextensionerror/code.md).
 
 > **Note**:  When the system calls this method, your extension’s view controller isn’t showing. Don’t attempt to perform any user interaction from this method.
-
- When the system calls this method, your extension’s view controller isn’t showing. Don’t attempt to perform any user interaction from this method.
 
 ## Parameters
 

@@ -28,8 +28,6 @@ A keyed decoding container view into `self`.
 
 > **Note**: `DecodingError.typeMismatch` if the encountered stored value is not a keyed container.
 
-`DecodingError.typeMismatch` if the encountered stored value is not a keyed container.
-
 ## Parameters
 
 - `type`: The key type to use for the container.

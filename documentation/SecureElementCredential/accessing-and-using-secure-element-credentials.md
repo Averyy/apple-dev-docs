@@ -1,6 +1,6 @@
 # Accessing and using secure element credentials
 
-**Framework**: SecureElementCredential
+**Framework**: Secureelementcredential
 
 Manage and use payment cards and other credentials.
 
@@ -87,15 +87,11 @@ The assertion expires when the object deinitializes, you call [`relinquish()`](c
 
 > **Note**: You can acquire a maximum of two instances of [`CredentialSession.PresentmentIntentAssertion`](credentialsession/presentmentintentassertion.md) in one 80-second period.
 
-You can acquire a maximum of two instances of [`CredentialSession.PresentmentIntentAssertion`](credentialsession/presentmentintentassertion.md) in one 80-second period.
-
 ##### Enter Wired Mode
 
 After obtaining a [`CredentialSession.Credential`](credentialsession/credential.md), many tasks require changing the [`state`](credentialsession/state-swift.property.md) before you perform them. For example, you might need to maintain a credential by directly interacting with it in the Secure Element, which you can only do in the [`CredentialSession.State.wired(credential:)`](credentialsession/state-swift.enum/wired(credential:).md) state. Credential maintenance tasks include exchanging keys and certificates with an installed credential.
 
 > 💡 **Tip**: Be aware that you can only perform these kinds of maintenance tasks if your app has owner-level access to the credential.
-
-Be aware that you can only perform these kinds of maintenance tasks if your app has owner-level access to the credential.
 
 You can perform credential maintenance by transitioning the session state to [`CredentialSession.State.wired(credential:)`](credentialsession/state-swift.enum/wired(credential:).md). Next, you send Application Protocol Data Unit (APDU) commands, as defined by [`ISO 7816-4`](https://developer.apple.comhttps://www.iso.org/obp/ui/#iso:std:iso-iec:7816:-4:ed-4:v1:en), to the credential with the session’s [`transceive(_:)`](credentialsession/transceive(_:).md) method. See the integration guide in the [`Apple Business Register`](https://developer.apple.comhttps://register.apple.com) for more information about the payloads for these calls.
 
@@ -388,4 +384,4 @@ struct TransactionView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/secureelementcredential/accessing-and-using-secure-element-credentials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SecureElementCredential/accessing-and-using-secure-element-credentials)*

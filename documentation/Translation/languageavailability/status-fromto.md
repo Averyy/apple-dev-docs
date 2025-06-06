@@ -26,8 +26,6 @@ Use this function to determine whether the language assets the device requires f
 
 > **Note**: The framework doesn’t support translating from and to the same language. For example you can’t translate from English (US) to English (UK).
 
-The framework doesn’t support translating from and to the same language. For example you can’t translate from English (US) to English (UK).
-
 ## Parameters
 
 - `source`: The source language of the content.

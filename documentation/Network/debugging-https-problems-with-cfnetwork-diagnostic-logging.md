@@ -16,8 +16,6 @@ For information about other network debugging tools, see [`Choosing a Network De
 
 > **Note**:  Xcode 13 includes the HTTP Tracing instrument to aid in debugging HTTP issues. See [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments).
 
- Xcode 13 includes the HTTP Tracing instrument to aid in debugging HTTP issues. See [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments).
-
 ##### Understand the Security Implications
 
 CFNetwork diagnostic logs may contain decrypted TLS data and other security-sensitive information. Take these precautions:
@@ -27,8 +25,6 @@ CFNetwork diagnostic logs may contain decrypted TLS data and other security-sens
 - If you send a log to Apple, redact any security-sensitive information.
 
 > ❗ **Important**:  CFNetwork diagnostic logs may contain information that’s  security-sensitive. Protect these logs accordingly.
-
- CFNetwork diagnostic logs may contain information that’s  security-sensitive. Protect these logs accordingly.
 
 ##### Enable Logging in Xcode
 
@@ -49,8 +45,6 @@ Do this right at the beginning of the app’s launch sequence:
 - If you’re programming in Swift, put this code in `main.swift`.
 
 > **Note**:  By default, Swift apps don’t have a `main.swift`; [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) explains how to add one.
-
- By default, Swift apps don’t have a `main.swift`; [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) explains how to add one.
 
 ##### View Log Entries
 
@@ -76,4 +70,4 @@ How you view the resulting log entries depends on your specific situation:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/network/debugging-https-problems-with-cfnetwork-diagnostic-logging)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Network/debugging-https-problems-with-cfnetwork-diagnostic-logging)*

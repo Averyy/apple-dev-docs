@@ -1,6 +1,6 @@
 # Installing System Extensions and Drivers
 
-**Framework**: System Extensions
+**Framework**: Systemextensions
 
 Activate system extensions and drivers to make them available to the system, and update or deactivate them as needed.
 
@@ -39,8 +39,6 @@ If the verification process fails, the system reports the error back to your del
 
 > **Note**:  During development, you can disable some verification checks to simplify testing your system extensions. For more information, see Debugging and Testing System Extensions.
 
- During development, you can disable some verification checks to simplify testing your system extensions. For more information, see Debugging and Testing System Extensions.
-
 ##### Update an Existing System Extension
 
 To update a driver, increment the driver’s version and activate it using the same process for new system extensions. When the system detects an existing extension with the same identifier, it passes the version information for both extensions to the [`request(_:actionForReplacingExtension:withExtension:)`](ossystemextensionrequestdelegate/request(_:actionforreplacingextension:withextension:).md) method of your request delegate. Use that information to determine whether you want to install the new extension or keep the old one.
@@ -71,4 +69,4 @@ For more information about how to use the `systemextensionsctl` tool, see the ma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/systemextensions/installing-system-extensions-and-drivers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SystemExtensions/installing-system-extensions-and-drivers)*

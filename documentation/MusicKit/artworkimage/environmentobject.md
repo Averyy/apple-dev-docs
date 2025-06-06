@@ -1,6 +1,6 @@
 # environmentObject(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Supplies an observable object to a view’s hierarchy.
@@ -28,8 +28,6 @@ Use this modifier to add an observable object to a view’s environment. The obj
 Adding an object to a view’s environment makes the object available to subviews in the view’s hierarchy. To retrieve the object in a subview, use the `EnvironmentObject` property wrapper.
 
 > **Note**: If the observable object conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, use either `View/environment(_:)` or the `View/environment(_:_:)` modifier to add the object to the view’s environment.
-
-If the observable object conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, use either `View/environment(_:)` or the `View/environment(_:_:)` modifier to add the object to the view’s environment.
 
 ## Parameters
 

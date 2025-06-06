@@ -22,8 +22,6 @@ If your app isn’t running already, Xcode builds it and launches it. Then, as y
 
 > **Note**: The first time you record a UI test, Xcode prompts you to grant it access to control the computer. In this alert, click Open Settings. Next, in the Accessibility privacy settings, toggle the Xcode Helper switch to the on position.
 
-The first time you record a UI test, Xcode prompts you to grant it access to control the computer. In this alert, click Open Settings. Next, in the Accessibility privacy settings, toggle the Xcode Helper switch to the on position.
-
 You can also record interactions with your app’s settings UI and any alert panels it creates. In these situations, you don’t need to launch your app in the test.
 
 ##### Select Appropriate Element Queries
@@ -42,9 +40,7 @@ In your test method, after the interactions that Xcode recorded, add assertions 
 
 > **Note**:  A test method that doesn’t contain any assertions passes if it runs to completion without throwing any errors. Use this to test that recorded interactions in your app are still possible in updated versions, and that the app doesn’t crash when you interact with it.
 
- A test method that doesn’t contain any assertions passes if it runs to completion without throwing any errors. Use this to test that recorded interactions in your app are still possible in updated versions, and that the app doesn’t crash when you interact with it.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/recording-ui-automation-for-testing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/XCUIAutomation/recording-ui-automation-for-testing)*

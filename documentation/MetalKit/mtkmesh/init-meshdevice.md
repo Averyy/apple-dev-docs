@@ -1,6 +1,6 @@
 # init(mesh:device:)
 
-**Framework**: MetalKit  
+**Framework**: Metalkit  
 **Kind**: init
 
 Initializes a MetalKit mesh and its submeshes from a Model I/O mesh.
@@ -44,8 +44,6 @@ A Model I/O submesh may have its index type and/or geometric primitive type conv
 | `MDLGeometryTypeTriangles` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `MDLGeometryTypeQuads` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `MDLGeometryTypeVariableTopology` | `MTLPrimitiveTypeTriangle` |
 
 > **Note**:  In macOS, vertex buffers allocated from a [`MTKMeshBufferAllocator`](mtkmeshbufferallocator.md) object are aligned to 256 bytes. Index buffers are not aligned.
-
- In macOS, vertex buffers allocated from a [`MTKMeshBufferAllocator`](mtkmeshbufferallocator.md) object are aligned to 256 bytes. Index buffers are not aligned.
 
 ## Parameters
 

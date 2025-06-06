@@ -1,6 +1,6 @@
 # scene
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 The coordinate space that represents ARKit world space.
@@ -25,8 +25,6 @@ In a visionOS window or volume, or when using the [`virtual`](realityviewcamera/
 When in a visionOS Immersive Space, or using the `RealityViewCamera/worldTracking` camera in iOS, the `scene` coordinate space is the [`ARKit`](https://developer.apple.com/documentation/ARKit) world origin.
 
 > **Note**: This static type is equivalent to a [`SceneRealityCoordinateSpace`](scenerealitycoordinatespace.md) instance.
-
-This static type is equivalent to a [`SceneRealityCoordinateSpace`](scenerealitycoordinatespace.md) instance.
 
 
 ---

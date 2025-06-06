@@ -1,6 +1,6 @@
 # SwiftData
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: module
 
 Write your model code declaratively to add managed persistence and automatic iCloud sync.
@@ -27,8 +27,6 @@ SwiftData is unintrusive by design and supplements your app’s existing model c
 To display models in a SwiftUI view, use the [`Query()`](query().md) macro and specify a predicate or fetch descriptor. SwiftData performs the fetch when the view appears, and tells SwiftUI about any subsequent changes to the fetched models so the view can update accordingly. You can access the model context in any SwiftUI view using the [`modelContext`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext) environment value, and specify a particular model container or context for a view with the [`modelContainer(_:)`](https://developer.apple.com/documentation/SwiftUI/View/modelContainer(_:)) and [`modelContext(_:)`](https://developer.apple.com/documentation/SwiftUI/View/modelContext(_:)) view modifiers.
 
 > **Note**: To provide automatic iCloud sync, SwiftData requires the CloudKit entitlement and an iCloud container. For more information, see [`Configuring iCloud services`](https://developer.apple.com/documentation/Xcode/configuring-icloud-services).
-
-To provide automatic iCloud sync, SwiftData requires the CloudKit entitlement and an iCloud container. For more information, see [`Configuring iCloud services`](https://developer.apple.com/documentation/Xcode/configuring-icloud-services).
 
 ## Topics
 

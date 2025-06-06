@@ -1,6 +1,6 @@
 # focusedColumn()
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Returns the currently focused column.
@@ -24,8 +24,6 @@ The index of the column, or -1 if there is no focused column
 The focus interaction will always be on the [`selectedRow`](nstableview/selectedrow.md) of the table. If the [`selectedRow`](nstableview/selectedrow.md) is a full width cell, then `focusedColumn` will return `1` when focused.
 
 > **Note**:  This method is not applicable for [`NSView`](nsview.md)-based table views. Instead, the view that has focus will be the [`firstResponder`](nswindow/firstresponder.md).
-
- This method is not applicable for [`NSView`](nsview.md)-based table views. Instead, the view that has focus will be the [`firstResponder`](nswindow/firstresponder.md).
 
 ## See Also
 

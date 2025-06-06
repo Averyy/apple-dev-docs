@@ -1,6 +1,6 @@
 # tagNames
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The tag names that you want to include on a saved file.
@@ -20,8 +20,6 @@ var tagNames: [String]? { get set }
 When the value of [`showsTagField`](nssavepanel/showstagfield.md) is [`true`](https://developer.apple.com/documentation/swift/true), use this property to provide an array of strings that represent the initial tag names to display in the panel. If you set the property to `nil` or an empty array, the panel displays no initial tag names.
 
 > **Note**:  The Tags field is appropriate only in a Save panel.
-
- The Tags field is appropriate only in a Save panel.
 
 ## See Also
 
@@ -45,4 +43,4 @@ When the value of [`showsTagField`](nssavepanel/showstagfield.md) is [`true`](ht
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nssavepanel/tagnames)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nssavepanel/tagnames)*

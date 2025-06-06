@@ -1,6 +1,6 @@
 # Modify an Auto-Renewable Subscription
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Update a specific auto-renewable subscription.
@@ -11,8 +11,6 @@ Update a specific auto-renewable subscription.
 #### Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
 ## See Also
 

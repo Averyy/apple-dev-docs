@@ -1,6 +1,6 @@
 # Create Targeting Keywords
 
-**Framework**: Apple Search Ads  
+**Framework**: Apple_Search_Ads  
 **Kind**: httpRequest
 
 Creates targeting keywords in ad groups.
@@ -11,8 +11,6 @@ Creates targeting keywords in ad groups.
 #### Overview
 
 > **Note**:  If you create duplicate keywords, the payload response indicates an error, but the call returns with a 200 status code.
-
- If you create duplicate keywords, the payload response indicates an error, but the call returns with a 200 status code.
 
 - 400: An invalid query or missing required parameters.
 - 401: An unauthenticated call fails to get the requested response.
@@ -28,8 +26,6 @@ Keywords must belong to a specific ad group, unlike negative keywords, which can
 To create targeting keywords, use the associated `campaignId` and `adgroupId` in the URI.
 
 > **Note**:  The limit is 5000 targeting keywords per campaign and per ad group.
-
- The limit is 5000 targeting keywords per campaign and per ad group.
 
 ##### Payload Example Create Ad Group Targeting Keywords
 

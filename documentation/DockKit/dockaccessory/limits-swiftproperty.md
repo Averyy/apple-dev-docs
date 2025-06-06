@@ -1,6 +1,6 @@
 # limits
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: property
 
 Current limits for the axes of rotation and maximum angular velocity.
@@ -24,8 +24,6 @@ The pitch, yaw, and roll limit. Each value can be `nil` if it’s unsupported. S
 #### Discussion
 
 > **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if the device has disconnected.
-
-[`DockKitError.notConnected`](dockkiterror/notconnected.md) if the device has disconnected.
 
 ## See Also
 

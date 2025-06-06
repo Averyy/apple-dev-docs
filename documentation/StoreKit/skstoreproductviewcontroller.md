@@ -1,6 +1,6 @@
 # SKStoreProductViewController
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: class
 
 A view controller that provides a page where customers can purchase media from the App Store.
@@ -39,15 +39,11 @@ To recommend another app without displaying a full product page, and to recommen
 
 > **Note**:  In a compatible iPad or iPhone app running in visionOS, this method displays a minimal sheet to enable an app purchase or to launch the App Store for more information. For an in-line experience that’s consistent across platforms, use [`SKOverlay`](skoverlay.md) instead.
 
- In a compatible iPad or iPhone app running in visionOS, this method displays a minimal sheet to enable an app purchase or to launch the App Store for more information. For an in-line experience that’s consistent across platforms, use [`SKOverlay`](skoverlay.md) instead.
-
 ##### Prevent Exceptions
 
 The `SKStoreProductViewController` class doesn’t support subclassing or embedding, and must be used as-is.
 
 > ❗ **Important**:  If you compile with the iOS 13 SDK, attempting to instantiate a subclass of `SKStoreProductViewController` results in a runtime exception.
-
- If you compile with the iOS 13 SDK, attempting to instantiate a subclass of `SKStoreProductViewController` results in a runtime exception.
 
 This class throws the following runtime exceptions:
 
@@ -111,4 +107,4 @@ This class throws the following runtime exceptions:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skstoreproductviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skstoreproductviewcontroller)*

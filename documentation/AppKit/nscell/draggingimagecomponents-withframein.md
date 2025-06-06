@@ -1,6 +1,6 @@
 # draggingImageComponents(withFrame:in:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Generates dragging image components with the specified frame in the view.
@@ -26,8 +26,6 @@ The default implementation generates an image from the cell and return two compo
 This method can be subclassed and overridden to provide a custom set of [`NSDraggingImageComponent`](nsdraggingimagecomponent.md) to create the drag image for the cell. This method is generally used by NSTableView/NSOutlineView.
 
 > **Note**:  NSCell currently has an issue where it will return an empty array from `draggingImageComponentsWithFrame:inView:` if the cell does not have an image portion. To work around this, subclass NSCell and override `draggingImageComponentsWithFrame:inView:` and generate your own [`NSDraggingImageComponent`](nsdraggingimagecomponent.md) in the returned array.
-
- NSCell currently has an issue where it will return an empty array from `draggingImageComponentsWithFrame:inView:` if the cell does not have an image portion. To work around this, subclass NSCell and override `draggingImageComponentsWithFrame:inView:` and generate your own [`NSDraggingImageComponent`](nsdraggingimagecomponent.md) in the returned array.
 
 ## Parameters
 

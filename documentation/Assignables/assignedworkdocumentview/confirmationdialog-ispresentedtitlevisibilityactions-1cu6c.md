@@ -56,8 +56,6 @@ Dialogs include a standard dismiss action by default. If you provide a button wi
 
 > **Note**: In regular size classes in iOS, the system renders confirmation dialogs as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the standard dismiss action.
 
-In regular size classes in iOS, the system renders confirmation dialogs as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the standard dismiss action.
-
 ## Parameters
 
 - `title`: A text string used as the title of the dialog.

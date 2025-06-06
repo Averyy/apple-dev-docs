@@ -1,6 +1,6 @@
 # activityItemsConfiguration
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property  
 **Required**: Yes
 
@@ -25,8 +25,6 @@ To offer a configuration for sharing through Siri or the toolbar in an app built
 To offer a configuration for sharing through a context menu, override this property on your [`UIView`](uiview.md) subclass, and attach a [`UIContextMenuInteraction`](uicontextmenuinteraction.md) to that view.
 
 > **Note**:  When the user asks Siri to “share this” on iOS, if both [`activityItemsConfiguration`](uiactivityitemsconfigurationproviding/activityitemsconfiguration.md) and [`activityItemsConfigurationSource`](uiwindowscene/activityitemsconfigurationsource.md) are `nil`, the system uses the [`webpageURL`](https://developer.apple.com/documentation/foundation/nsuseractivity/1418086-webpageurl) property on your app’s current [`userActivity`](uiresponder/useractivity.md) to create shareable content. The system doesn’t offer this fallback behavior in an app built with Mac Catalyst.
-
- When the user asks Siri to “share this” on iOS, if both [`activityItemsConfiguration`](uiactivityitemsconfigurationproviding/activityitemsconfiguration.md) and [`activityItemsConfigurationSource`](uiwindowscene/activityitemsconfigurationsource.md) are `nil`, the system uses the [`webpageURL`](https://developer.apple.com/documentation/foundation/nsuseractivity/1418086-webpageurl) property on your app’s current [`userActivity`](uiresponder/useractivity.md) to create shareable content. The system doesn’t offer this fallback behavior in an app built with Mac Catalyst.
 
 
 ---

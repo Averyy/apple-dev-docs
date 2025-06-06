@@ -1,6 +1,6 @@
 # generateBox(size:cornerRadius:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Creates a box mesh from a length for the box’s width, height, and depth, and a radius for the corners.
@@ -24,8 +24,6 @@ Creates a box mesh from a length for the box’s width, height, and depth, and a
 The method centers the box at the entity’s origin and aligns the box’s faces with the coordinate system’s axes.
 
 > **Note**: The method clamps `cornerRadius` so that it doesn’t exceed half the length of the box’s smallest dimension.
-
-The method clamps `cornerRadius` so that it doesn’t exceed half the length of the box’s smallest dimension.
 
 ## Parameters
 

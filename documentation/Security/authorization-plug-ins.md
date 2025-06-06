@@ -12,8 +12,6 @@ You must import this API explicitly:
 
 > **Note**:  When your plug-in needs to interact with the user, subclass the [`SFAuthorizationPluginView`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationPluginView) class to maintain the look and feel of the system authentication dialogs.
 
- When your plug-in needs to interact with the user, subclass the [`SFAuthorizationPluginView`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationPluginView) class to maintain the look and feel of the system authentication dialogs.
-
 ## Topics
 
 ### First Steps
@@ -28,4 +26,4 @@ You must import this API explicitly:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/authorization-plug-ins)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/authorization-plug-ins)*

@@ -10,8 +10,6 @@ Mach-O is the executable image format on Apple platforms.  A Mach-O image is a M
 
 > **Note**: Mach-O images have nothing to do with images in the more general sense, like PNG files.
 
-Mach-O images have nothing to do with images in the more general sense, like PNG files.
-
 A Mach-O image should contain a UUID that identifies the image.  This build UUID is vital to various subsystems.  For example, the build UUID connects an image to its debug symbol (`dSYM`) file, as explained in [`Building your app to include debugging information`](https://developer.apple.com/documentation/Xcode/building-your-app-to-include-debugging-information) and [`Adding identifiable symbol names to a crash report`](https://developer.apple.com/documentation/Xcode/adding-identifiable-symbol-names-to-a-crash-report).
 
 Most Mach-O images are created by the Apple linker (`ld`).  If you use Xcode, it invokes the Apple linker as part of its build process.  The Apple linker sets the build UUID to a unique value, so most developers never run into build UUID problems.  However, you might run into problems if:
@@ -45,13 +43,9 @@ Load command 8
 
 > **Note**: To learn more about these tools, see the UNIX online manual, known as .  For information on how to access that documentation, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
 
-To learn more about these tools, see the UNIX online manual, known as .  For information on how to access that documentation, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
-
 By default the Apple linker sets the build UUID based on a hash of the built code.  This promotes reproducible builds.
 
 > **Note**: The central idea of reproducible builds is that the same source code built with the same tools and settings should produce the same binary.  Apple tools strive to support reproducible builds within the constraints imposed by the Mach-O file format.  That’s why the linker generates a hash-based UUID by default.
-
-The central idea of reproducible builds is that the same source code built with the same tools and settings should produce the same binary.  Apple tools strive to support reproducible builds within the constraints imposed by the Mach-O file format.  That’s why the linker generates a hash-based UUID by default.
 
 The `-random_uuid` option tells the linker to generate a random build UUID.  This is rarely used; see the `ld` man page for more about it.
 
@@ -105,8 +99,6 @@ The easiest fix is to build both apps from source code.  Typically, the linker a
 
 > **Note**: In Xcode, use the [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference) to change the module name.  It defaults to the app name, with any unrepresentable characters, such as space, replaced by underscore (`_`).
 
-In Xcode, use the [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference) to change the module name.  It defaults to the app name, with any unrepresentable characters, such as space, replaced by underscore (`_`).
-
 If that doesn’t resolve the issue, add some unique code to each app.
 
 Once you’re done, run `dwarfdump` to confirm that you’ve achieved your ultimate goal of giving each app a unique main executable UUID.
@@ -151,4 +143,4 @@ Once you’re done, run `dwarfdump` to confirm that you’ve achieved your ultim
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3178-checking-for-and-resolving-build-uuid-problems)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3178-checking-for-and-resolving-build-uuid-problems)*

@@ -1,6 +1,6 @@
 # Passing control from one app to another with cooperative activation
 
-**Framework**: AppKit
+**Framework**: Appkit
 
 Request focus for your app, and coordinate passing control from one app to another.
 
@@ -11,8 +11,6 @@ When someone uses your app and another app unexpectedly steals focus, the user e
 Cooperative activation addresses this problem by making app activation a request instead of a command. Instead of apps stealing focus, they now request focus from the system when they’re ready. This means apps should set expectations accordingly when requesting activation and not assume the system will grant them activation. The system dynamically determines whether to grant activation state based on the context. This lets you request focus for your app when needed, and hand off focus from one app to another.
 
 > **Note**:  Session 10054: [`What’s new in AppKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10054)
-
- Session 10054: [`What’s new in AppKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10054)
 
 ##### Request Activation to Gain Focus
 
@@ -67,4 +65,4 @@ Replace calls to [`deactivate()`](nsapplication/deactivate().md) with [`yieldAct
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/passing-control-from-one-app-to-another-with-cooperative-activation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/passing-control-from-one-app-to-another-with-cooperative-activation)*

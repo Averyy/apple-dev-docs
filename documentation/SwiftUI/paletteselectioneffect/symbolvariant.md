@@ -1,6 +1,6 @@
 # symbolVariant(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Applies the specified symbol variant when selected.
@@ -21,8 +21,6 @@ static func symbolVariant(_ variant: SymbolVariants) -> PaletteSelectionEffect
 #### Discussion
 
 > **Note**: This effect only applies to SF Symbols.
-
-This effect only applies to SF Symbols.
 
 ## See Also
 

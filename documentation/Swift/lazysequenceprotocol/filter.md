@@ -24,8 +24,6 @@ func filter(_ isIncluded: @escaping (Self.Elements.Element) -> Bool) -> LazyFilt
 
 > **Note**: The elements of the result are computed on-demand, as the result is used. No buffering storage is allocated and each traversal step invokes `predicate` on one or more underlying elements.
 
-The elements of the result are computed on-demand, as the result is used. No buffering storage is allocated and each traversal step invokes `predicate` on one or more underlying elements.
-
 
 ---
 

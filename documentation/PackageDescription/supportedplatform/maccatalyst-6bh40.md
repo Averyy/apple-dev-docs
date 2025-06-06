@@ -1,6 +1,6 @@
 # macCatalyst(_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Configures the minimum deployment target version for the Mac Catalyst platform.
@@ -21,8 +21,6 @@ A `SupportedPlatform` instance.
 #### Discussion
 
 > **Note**: First available in PackageDescription 5.5
-
-First available in PackageDescription 5.5
 
 ## Parameters
 

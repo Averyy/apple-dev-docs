@@ -1,6 +1,6 @@
 # Monitoring System Events with Endpoint Security
 
-**Framework**: Endpoint Security
+**Framework**: Endpointsecurity
 
 Receive notifications and authorization requests for sensitive operations by creating an Endpoint Security client for your app.
 
@@ -11,8 +11,6 @@ Receive notifications and authorization requests for sensitive operations by cre
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2020 session [`10159: Build an Endpoint Security App`](https://developer.apple.comhttp://developer.apple.com/wwdc20/10159). For further information, see WWDC 2019 session [`702: System Extensions and DriverKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/702/).
-
-This sample code project is associated with WWDC 2020 session [`10159: Build an Endpoint Security App`](https://developer.apple.comhttp://developer.apple.com/wwdc20/10159). For further information, see WWDC 2019 session [`702: System Extensions and DriverKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/702/).
 
 `SampleEndpointApp` is a minimal system extension that shows how to use the Endpoint Security library. You can configure the extension to either receive notifications of events after they occur, or to allow or deny in-flight events.
 
@@ -60,4 +58,4 @@ To  uninstall the system extension:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/endpointsecurity/monitoring-system-events-with-endpoint-security)*
+*[View on Apple Developer](https://developer.apple.com/documentation/EndpointSecurity/monitoring-system-events-with-endpoint-security)*

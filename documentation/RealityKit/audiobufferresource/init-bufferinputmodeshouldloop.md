@@ -1,6 +1,6 @@
 # init(buffer:inputMode:shouldLoop:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Init an AudioBufferResource from an `AVAudioBuffer` instead of a file location. This is intended for use with `AVSpeechSynthesisVoice`.
@@ -21,8 +21,6 @@ Init an AudioBufferResource from an `AVAudioBuffer` instead of a file location. 
 #### Discussion
 
 > **Note**: This function throws an error when the `AVAudioBuffer`  cannot be cast or converted to `AVAudioPCMBuffer`.
-
-This function throws an error when the `AVAudioBuffer`  cannot be cast or converted to `AVAudioPCMBuffer`.
 
 ## Parameters
 

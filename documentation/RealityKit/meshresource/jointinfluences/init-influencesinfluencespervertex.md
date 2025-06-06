@@ -1,6 +1,6 @@
 # init(influences:influencesPerVertex:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Associates every vertex in the mesh with a fixed number of influences per vertex.
@@ -21,8 +21,6 @@ init(influences: MeshBuffers.JointInfluences, influencesPerVertex: Int)
 #### Discussion
 
 > **Note**: The buffer should contain `vertexCount * influencesPerVertex` elements.
-
-The buffer should contain `vertexCount * influencesPerVertex` elements.
 
 ## Parameters
 

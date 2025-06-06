@@ -1,6 +1,6 @@
 # MPSCNNBinaryConvolution
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A convolution kernel with binary weights and an input image using binary approximations.
@@ -44,8 +44,6 @@ where  is the original input image (in full precision) and  is the number of inp
 Finally the normal activation neuron is applied and the result is written to the output image. 
 
 > **Note**: [`MPSCNNBinaryConvolution`](mpscnnbinaryconvolution.md) does not currently support [`groups`](mpscnnconvolutiondescriptor/1648849-groups.md) greater than 1.
-
-[`MPSCNNBinaryConvolution`](mpscnnbinaryconvolution.md) does not currently support [`groups`](mpscnnconvolutiondescriptor/1648849-groups.md) greater than 1.
 
 ## Topics
 

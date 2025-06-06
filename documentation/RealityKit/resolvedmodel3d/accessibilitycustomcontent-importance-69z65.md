@@ -1,6 +1,6 @@
 # accessibilityCustomContent(_:_:importance:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Add additional accessibility information to the view.
@@ -25,8 +25,6 @@ func accessibilityCustomContent(_ labelKey: LocalizedStringKey, _ valueKey: Loca
 Use this method to add information you want accessibility users to be able to access about this element, beyond the basics of label, value, and hint. For example, `accessibilityCustomContent` can be used to add information about the orientation of a photograph, or the number of people found in the picture.
 
 > **Note**: Repeated calls of `accessibilityCustomContent` with different labels will create new entries of additional information. Calling `accessibilityAdditionalContent` repeatedly with the same label will instead replace the previous value and importance.
-
-Repeated calls of `accessibilityCustomContent` with different labels will create new entries of additional information. Calling `accessibilityAdditionalContent` repeatedly with the same label will instead replace the previous value and importance.
 
 ## Parameters
 

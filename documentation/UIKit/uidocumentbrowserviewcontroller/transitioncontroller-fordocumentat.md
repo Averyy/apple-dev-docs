@@ -1,6 +1,6 @@
 # transitionController(forDocumentAt:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Creates a transition controller that provides the standard system-loading and segue animations for the document browser.
@@ -29,8 +29,6 @@ For the animations to function properly, you must maintain a strong reference to
 For more about using the transition controller, see [`UIDocumentBrowserTransitionController`](uidocumentbrowsertransitioncontroller.md).
 
 > **Note**:  In Mac apps built with Mac Catalyst, the transition controller doesn’t generate animations. macOS doesn’t use animations when opening or closing documents.
-
- In Mac apps built with Mac Catalyst, the transition controller doesn’t generate animations. macOS doesn’t use animations when opening or closing documents.
 
 ## Parameters
 

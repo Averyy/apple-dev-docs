@@ -1,6 +1,6 @@
 # Drawing fully immersive content using Metal
 
-**Framework**: Compositor Services
+**Framework**: Compositorservices
 
 Create a fully immersive experience in visionOS using a custom Metal-based rendering engine.
 
@@ -9,8 +9,6 @@ Create a fully immersive experience in visionOS using a custom Metal-based rende
 If your app draws fully immersive content using Metal, Compositor Services provides a bridge between your SwiftUI code and your Metal rendering engine code. Use this framework to present a fully immersive scene that supports Metal rendering. When you present the scene from your app, Compositor Services provides a layer, which contains the Metal types, textures, and other information you need. The layer also provides timing information to help you manage your app’s rendering loop and deliver frames of content in a timely manner.
 
 > **Note**:  If you don’t use Metal to create a fully immersive experience, you don’t need to use Compositor Services.
-
- If you don’t use Metal to create a fully immersive experience, you don’t need to use Compositor Services.
 
 When creating fully immersive content using Metal, you draw everything the person sees. The result of your drawing efforts is two images, one for each eye, to create a stereosopic effect when viewed on Apple Vision Pro. Use the timing information in the layer to render up to 90 frames a second using a custom rendering loop.
 
@@ -79,8 +77,6 @@ struct MyContentConfiguration: CompositorLayerConfiguration {
 
 > **Note**:  Apple Vision Pro uses the P3 color space for all pixel color values.
 
- Apple Vision Pro uses the P3 color space for all pixel color values.
-
 To use your configuration options for rendering, pass your custom [`CompositorLayerConfiguration`](compositorlayerconfiguration.md) type to your [`CompositorLayer`](compositorlayer.md) at initialization time. The following example modifies the previous scene’s setup code to include custom configuration data. Compositor Services integrates your configuration details into the [`LayerRenderer`](layerrenderer.md) type it creates.
 
 ```swift
@@ -140,8 +136,6 @@ void myEngineRenderLoop(my_engine *engine) {
 ```
 
 > ❗ **Important**:  Always run your render loop code in a dedicated thread, and not in your app’s main thread.
-
- Always run your render loop code in a dedicated thread, and not in your app’s main thread.
 
 Creating Metal pipeline state information is potentially expensive, so use the setup phase of your render loop to configure as much of your Metal code as possible. Start loading textures and shader code, and set up the render and compute descriptors you need for your content. You can also use your setup code to configure the ARKit code you need to fetch device anchor information.
 
@@ -352,8 +346,6 @@ struct MyApp: App {
 
 > ❗ **Important**:  To prevent issues when reading or writing event data, use locks or another synchronization mechanism to access event data. The system delivers events on the app’s main thread, but your rendering loop handles those events on a different thread. Synchronization is therefore necessary to prevent errors, undefined behavior, or crashes.
 
- To prevent issues when reading or writing event data, use locks or another synchronization mechanism to access event data. The system delivers events on the app’s main thread, but your rendering loop handles those events on a different thread. Synchronization is therefore necessary to prevent errors, undefined behavior, or crashes.
-
 For information about ARKit hand tracking, see [`ARKit`](https://developer.apple.com/documentation/ARKit).
 
 ## See Also
@@ -370,4 +362,4 @@ For information about ARKit hand tracking, see [`ARKit`](https://developer.apple
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/drawing-fully-immersive-content-using-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CompositorServices/drawing-fully-immersive-content-using-metal)*

@@ -1,6 +1,6 @@
 # App Store Receipts
 
-**Framework**: App Store Receipts
+**Framework**: Appstorereceipts
 
 Validate app and In-App Purchase receipts with the App Store.
 
@@ -10,8 +10,6 @@ Validate app and In-App Purchase receipts with the App Store.
 #### Overview
 
 > ❗ **Important**: The [`verifyReceipt`](verifyreceipt.md) endpoint is deprecated. To validate receipts on your server, follow the steps in [`Validating receipts on the device`](validating_receipts_on_the_device.md) on your server. 
-
-The [`verifyReceipt`](verifyreceipt.md) endpoint is deprecated. To validate receipts on your server, follow the steps in [`Validating receipts on the device`](validating_receipts_on_the_device.md) on your server. 
 
 Your server can access the [`verifyReceipt`](verifyreceipt.md) endpoint to validate app and in-app transaction receipts. Submit a receipt to the App Store with your [`shared secret`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/generate-a-shared-secret-to-verify-receipts) to receive a JSON response containing the app information and in-app purchase details in the fields that make up the receipt. Each field or combination of fields provides insight you can use to deliver service and content to the user, as you define. 
 
@@ -24,8 +22,6 @@ You can test validating receipts in the sandbox environment. For more informatio
 You can validate receipts from the App Store using server-side receipt validation or on-device validation. For more information about receipt validation options, see [`Choosing a receipt validation technique`](https://developer.apple.com/documentation/storekit/choosing-a-receipt-validation-technique).
 
 > **Note**: Session 110404: [`Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110404/).
-
-Session 110404: [`Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110404/).
 
 ## Topics
 

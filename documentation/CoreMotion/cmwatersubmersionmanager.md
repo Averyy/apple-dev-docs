@@ -1,6 +1,6 @@
 # CMWaterSubmersionManager
 
-**Framework**: Core Motion  
+**Framework**: Coremotion  
 **Kind**: class
 
 An object for managing the collection of pressure and temperature data during submersion.
@@ -32,8 +32,6 @@ To access data for dives with a maximum depth of 6 m, add the Shallow Depth and 
 To enable a maximum depth of 40 m, you must apply for the full Submerged Depth and Pressure entitlement. For more information, see [`Express interest in the Submerged Depth and Pressure API`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api/).
 
 > **Note**:  As the wearer approaches the maximum depth, the system sends a measurement with an [`CMWaterSubmersionMeasurement.DepthState.approachingMaxDepth`](cmwatersubmersionmeasurement/depthstate/approachingmaxdepth.md) submersion state. When they pass the maximum depth, it sends a [`CMWaterSubmersionMeasurement.DepthState.pastMaxDepth`](cmwatersubmersionmeasurement/depthstate/pastmaxdepth.md) state, and if they continue to descent past the maximum depth, it sends a [`CMWaterSubmersionMeasurement.DepthState.sensorDepthError`](cmwatersubmersionmeasurement/depthstate/sensordeptherror.md) state.
-
- As the wearer approaches the maximum depth, the system sends a measurement with an [`CMWaterSubmersionMeasurement.DepthState.approachingMaxDepth`](cmwatersubmersionmeasurement/depthstate/approachingmaxdepth.md) submersion state. When they pass the maximum depth, it sends a [`CMWaterSubmersionMeasurement.DepthState.pastMaxDepth`](cmwatersubmersionmeasurement/depthstate/pastmaxdepth.md) state, and if they continue to descent past the maximum depth, it sends a [`CMWaterSubmersionMeasurement.DepthState.sensorDepthError`](cmwatersubmersionmeasurement/depthstate/sensordeptherror.md) state.
 
 Next, check whether submersion data is available.
 
@@ -98,4 +96,4 @@ Your delegate then begins receiving updates from the system. For more informatio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmwatersubmersionmanager)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreMotion/cmwatersubmersionmanager)*

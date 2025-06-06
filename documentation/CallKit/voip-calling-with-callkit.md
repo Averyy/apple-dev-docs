@@ -1,6 +1,6 @@
 # VoIP calling with CallKit
 
-**Framework**: CallKit
+**Framework**: Callkit
 
 Use the CallKit framework to integrate native VoIP calling.
 
@@ -13,8 +13,6 @@ Use the CallKit framework to integrate native VoIP calling.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC16 session [`230: Enhancing VoIP Apps with CallKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2016/230/).
-
-This sample code project is associated with WWDC16 session [`230: Enhancing VoIP Apps with CallKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2016/230/).
 
 This sample code project must be run on a physical device.
 
@@ -38,4 +36,4 @@ Before you run the sample code project in Xcode, check to be sure your device ha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/callkit/voip-calling-with-callkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CallKit/voip-calling-with-callkit)*

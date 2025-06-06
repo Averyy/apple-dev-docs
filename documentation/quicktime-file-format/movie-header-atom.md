@@ -1,6 +1,6 @@
 # Movie header atom ('mvhd')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that specifies the characteristics of an entire QuickTime movie.
@@ -33,8 +33,6 @@ The following table shows the layout of the movie header atom. The movie header 
 | [`Next track ID`](movie_header_atom/next_track_id.md) | 4 |
 
 > **Note**: Set the creation and modification date with coordinated universal time (UTC). In prior versions of the QuickTime file format, this was not specified, and these fields were commonly set to local time for the time zone where the movie was created.
-
-Set the creation and modification date with coordinated universal time (UTC). In prior versions of the QuickTime file format, this was not specified, and these fields were commonly set to local time for the time zone where the movie was created.
 
 ## Topics
 

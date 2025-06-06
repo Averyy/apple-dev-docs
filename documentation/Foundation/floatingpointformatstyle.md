@@ -28,8 +28,6 @@ Instances of [`FloatingPointFormatStyle`](floatingpointformatstyle.md) create lo
 
 > **Note**:  Foundation provides another format style type, [`IntegerFormatStyle`](integerformatstyle.md), for working with numbers that conform to [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger). For Foundation’s [`Decimal`](decimal.md) type, use [`Decimal.FormatStyle`](decimal/formatstyle.md).
 
- Foundation provides another format style type, [`IntegerFormatStyle`](integerformatstyle.md), for working with numbers that conform to [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger). For Foundation’s [`Decimal`](decimal.md) type, use [`Decimal.FormatStyle`](decimal/formatstyle.md).
-
 ##### Formatting Floating Point Values
 
 Use the [`formatted()`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint/formatted()) method to create a string representation of a floating-point value using the default [`FloatingPointFormatStyle`](floatingpointformatstyle.md) configuration.
@@ -201,4 +199,4 @@ print("\(localizedPercentage!)") // 0.551
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/floatingpointformatstyle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/floatingpointformatstyle)*

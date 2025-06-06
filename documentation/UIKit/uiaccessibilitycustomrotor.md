@@ -1,6 +1,6 @@
 # UIAccessibilityCustomRotor
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A context-sensitive function that helps VoiceOver users find the next instance of a related element.
@@ -24,8 +24,6 @@ class UIAccessibilityCustomRotor
 You might use an instance of this class to find the next link in an article, or the next misspelled word in a document.
 
 > **Note**:  Session 10116: [`VoiceOver Efficiency with Custom Rotors`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10116)
-
- Session 10116: [`VoiceOver Efficiency with Custom Rotors`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10116)
 
 ## Topics
 
@@ -77,4 +75,4 @@ You might use an instance of this class to find the next link in an article, or 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiaccessibilitycustomrotor)*

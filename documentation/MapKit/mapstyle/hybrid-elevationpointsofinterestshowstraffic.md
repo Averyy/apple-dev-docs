@@ -1,6 +1,6 @@
 # hybrid(elevation:pointsOfInterest:showsTraffic:)
 
-**Framework**: MapKit  
+**Framework**: Mapkit  
 **Kind**: method
 
 Creates a hybrid map style that includes the elevation, point of interest, and traffic characteristics you specify.
@@ -27,8 +27,6 @@ A [`MapStyle`](mapstyle.md) with the configuration you specified.
 #### Discussion
 
 > **Note**:  In watchOS, depending on rendering calculations, MapKit may render the map using the Standard map style rather than requested Hybrid or Imagery styles.
-
- In watchOS, depending on rendering calculations, MapKit may render the map using the Standard map style rather than requested Hybrid or Imagery styles.
 
 ## Parameters
 

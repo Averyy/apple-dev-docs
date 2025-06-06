@@ -1,6 +1,6 @@
 # com.apple.developer.browser.app-installation
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 The entitlement that enables a browser to install alternative-distribution apps from a website.
@@ -15,15 +15,11 @@ The system requires that your browser app have this entitlement to install alter
 
 > ❗ **Important**:  Request the default browser entitlement by filling out the [`Default browser entitlement request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/default-browser-entitlement/). In that form you can also request this entitlement. If you do that and your request for the default browser entitlement is accepted you get both the default browser entitlement and the app-installation entitlement for your browser app.
 
- Request the default browser entitlement by filling out the [`Default browser entitlement request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/default-browser-entitlement/). In that form you can also request this entitlement. If you do that and your request for the default browser entitlement is accepted you get both the default browser entitlement and the app-installation entitlement for your browser app.
-
 Your browser app needs to enforce specific webpage criteria as part of using this entitlement. For more information, see [`Enabling alternative distribution app installation in a browser`](https://developer.apple.com/documentation/appdistribution/enabling-alternative-distribution-app-installation-in-a-browser).
 
 If your account receives this entitlement, provision your app with the entitlement according to: [`Provisioning with managed capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities/).
 
 > **Note**:  This entitlement isn’t available for Enterprise or Developer ID distributed apps.
-
- This entitlement isn’t available for Enterprise or Developer ID distributed apps.
 
 ## See Also
 

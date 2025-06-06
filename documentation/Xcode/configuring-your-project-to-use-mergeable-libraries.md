@@ -20,8 +20,6 @@ In release builds, the binary is slightly larger, but avoids the overhead of loa
 
 > **Note**: Session 10268: [`Meet mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10268)
 
-Session 10268: [`Meet mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10268)
-
 ##### Merge Libraries Automatically in Xcode
 
 To automatically merge libraries, first open your project in Xcode 15 or later. Then, add the `MERGED_BINARY_TYPE` build setting to your app target, and set the value to `automatic`. With this build setting, Xcode treats mergeable dependencies like normal dynamic libraries in debug builds, but performs steps in release mode to automatically handle merging for direct dependencies. For more information on the `MERGED_BINARY_TYPE` build setting, see [`Create Merged Binary`](build-settings-reference#Create-Merged-Binary.md).
@@ -41,8 +39,6 @@ In release builds:
 - Xcode embeds mergeable target products in either the merged binary product or into a product, such as an app, that contains the merged binary product. Xcode does  include the binaries from the libraries in the embedded copy.
 
 > **Note**: Xcode does not automatically build indirect dependencies as mergeable in release builds. To configure indirect dependencies for merging, see the [`Manually configure merging`](https://developer.apple.com#Manually-configure-merging) section below.
-
-Xcode does not automatically build indirect dependencies as mergeable in release builds. To configure indirect dependencies for merging, see the [`Manually configure merging`](https://developer.apple.com#Manually-configure-merging) section below.
 
 In debug builds:
 
@@ -97,4 +93,4 @@ To use your XCFramework that contains mergeable metadata, add it to the Link Bin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-your-project-to-use-mergeable-libraries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-your-project-to-use-mergeable-libraries)*

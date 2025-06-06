@@ -1,6 +1,6 @@
 # Creating drivers for iPadOS
 
-**Framework**: DriverKit
+**Framework**: Driverkit
 
 Bring your drivers to iPadOS by using the platform’s DriverKit support.
 
@@ -15,8 +15,6 @@ iPadOS 16 supports the core [`DriverKit`](DriverKit.md) framework, as well as th
 - [`AudioDriverKit`](https://developer.apple.com/documentation/AudioDriverKit)
 
 > **Note**:  DriverKit on iPadOS requires an iPad with an M-series chip.
-
- DriverKit on iPadOS requires an iPad with an M-series chip.
 
 ##### Add a Driverkit Target to Your Xcode Project
 
@@ -65,4 +63,4 @@ To allow user clients to connect to your driver, you need specific entitlements,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/driverkit/creating-drivers-for-ipados)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DriverKit/creating-drivers-for-ipados)*

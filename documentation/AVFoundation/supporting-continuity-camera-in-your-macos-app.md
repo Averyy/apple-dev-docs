@@ -1,6 +1,6 @@
 # Supporting Continuity Camera in your macOS app
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Enable high-quality photo and video capture by using an iPhone camera as an external capture device.
 
@@ -17,8 +17,6 @@ Starting in macOS 13, the operating system remembers the camera that it prefers 
 The sample app shows you how to access the iPhone camera and microphone, adopt automatic camera selection, and control and observe the state of system video effects.
 
 > **Note**: This sample code project is associated with WWDC22 session [`10018: Bring Continuity Camera to your macOS app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10018)
-
-This sample code project is associated with WWDC22 session [`10018: Bring Continuity Camera to your macOS app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10018)
 
 ##### Configure the Sample Code Project
 
@@ -148,8 +146,6 @@ In the case of a camera device, if the selection request came from user input, t
 
 > **Note**: Setting the user-preferred camera also updates the value of the [systemPreferredCamera][7] property.
 
-Setting the user-preferred camera also updates the value of the [systemPreferredCamera][7] property.
-
 ##### Support System Video Effects
 
 When the app’s selected camera changes, the system evaluates the new capture device’s [`activeFormat`](avcapturedevice/activeformat.md) to determine if it supports Center Stage. If it does, the app enables the Center Stage checkbox so you can change its value. Toggling the state of the feature sets the [`centerStageControlMode`](avcapturedevice/centerstagecontrolmode-swift.type.property.md) to [`AVCaptureDevice.CenterStageControlMode.cooperative`](avcapturedevice/centerstagecontrolmode-swift.enum/cooperative.md) and updates its enabled state.
@@ -182,4 +178,4 @@ AVCaptureDevice.self.addObserver(self, forKeyPath: studioLightKeyPath, options: 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/supporting-continuity-camera-in-your-macos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/supporting-continuity-camera-in-your-macos-app)*

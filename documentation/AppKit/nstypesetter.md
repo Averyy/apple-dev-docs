@@ -1,6 +1,6 @@
 # NSTypesetter
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An abstract class that performs various type layout tasks.
@@ -19,8 +19,6 @@ class NSTypesetter
 [`NSLayoutManager`](nslayoutmanager.md) uses concrete subclasses of [`NSTypesetter`](nstypesetter.md) to perform line layout, which includes word wrapping, hyphenation, and line breaking in either vertical or horizontal rectangles. By default, the text system uses the concrete subclass [`NSATSTypesetter`](nsatstypesetter.md).
 
 > **Note**:  Use this class with [`NSLayoutManager`](nslayoutmanager.md) in macOS11 and earlier. In macOS12 and later, consider using [`NSLayoutManager`](nslayoutmanager.md) which provides improved support for international scripts.
-
- Use this class with [`NSLayoutManager`](nslayoutmanager.md) in macOS11 and earlier. In macOS12 and later, consider using [`NSLayoutManager`](nslayoutmanager.md) which provides improved support for international scripts.
 
 ##### Subclassing Notes
 
@@ -217,4 +215,4 @@ Override these methods to customize the text layout process, including modifying
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstypesetter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstypesetter)*

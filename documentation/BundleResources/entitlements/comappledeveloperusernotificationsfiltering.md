@@ -1,6 +1,6 @@
 # com.apple.developer.usernotifications.filtering
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 Enable receiving notifications without displaying the notification to the user.
@@ -44,8 +44,6 @@ override func didReceive(_ request: UNNotificationRequest, withContentHandler co
 ```
 
 > **Note**:  To silence a remote notification, you must set the `apns-push-type` header field to `alert` when you send the notification to the APNS server. Otherwise, the system always displays the notification banner to the user.
-
- To silence a remote notification, you must set the `apns-push-type` header field to `alert` when you send the notification to the APNS server. Otherwise, the system always displays the notification banner to the user.
 
 ## See Also
 

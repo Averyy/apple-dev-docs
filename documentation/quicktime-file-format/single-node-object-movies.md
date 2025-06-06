@@ -1,6 +1,6 @@
 # Single-node object movies
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Store a QTVR track, an object track, and an object image track in a single-node object movie.
 
@@ -16,13 +16,9 @@ In addition to these three required tracks, an object movie can also contain a h
 
 > **Note**: To assign a single fixed-position hot spot to all views of an object, you should create a hot spot image track that consists of a single video frame whose duration is the entire node time.
 
-To assign a single fixed-position hot spot to all views of an object, you should create a hot spot image track that consists of a single video frame whose duration is the entire node time.
-
 To play a time-based track with the object movie, you must synchronize the sample data of that track to the start and stop times of a view in the object image track. For example, to play a different sound with each view of an object, you might store a sound track in the movie file with each set of sound samples synchronized to play at the same time as the corresponding object’s view image. (This technique also works for video samples.) Another way to add sound or video is simply to play a sound or video track during the object’s view animation; to do this, you need to add an active track to the object that is equal in duration to the object’s row duration.
 
 > ❗ **Important**: In a QuickTime VR movie file, the panorama image tracks and panorama hot spot tracks must be disabled. For an object, the object image tracks must be enabled and the object hot spot tracks must be disabled.
-
-In a QuickTime VR movie file, the panorama image tracks and panorama hot spot tracks must be disabled. For an object, the object image tracks must be enabled and the object hot spot tracks must be disabled.
 
 ## See Also
 

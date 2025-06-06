@@ -39,8 +39,6 @@ atomic(self) { currentValue in
 
 > **Note**: The weakCompareExchange form may sometimes return false even when the original and expected values are equal. (Such failures may happen when some transient condition prevents the underlying operation from succeeding – such as an incoming interrupt during a load-link/store-conditional instruction sequence.) This variant is designed to be called in a loop that only exits when the exchange is successful; in such loops, using weakCompareExchange may lead to a performance improvement by eliminating a nested loop in the regular, “strong”, compareExchange variants.
 
-The weakCompareExchange form may sometimes return false even when the original and expected values are equal. (Such failures may happen when some transient condition prevents the underlying operation from succeeding – such as an incoming interrupt during a load-link/store-conditional instruction sequence.) This variant is designed to be called in a loop that only exits when the exchange is successful; in such loops, using weakCompareExchange may lead to a performance improvement by eliminating a nested loop in the regular, “strong”, compareExchange variants.
-
 ## Parameters
 
 - `expected`: The expected current value.

@@ -1,6 +1,6 @@
 # NSAccessibilityElementProtocol
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: protocol
 
 A role-based protocol that declares the minimum interface necessary to interact with an assistive app.
@@ -19,8 +19,6 @@ protocol NSAccessibilityElementProtocol : NSObjectProtocol
 This protocol provides the base behavior for more specific, role-based accessibility protocols. In general, your user interface elements shouldn’t adopt this protocol. They should adopt a more specific, role-based protocol instead. See [`Custom Controls`](custom-controls.md).
 
 > **Note**:  Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary.
-
- Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary.
 
 ## Topics
 
@@ -148,4 +146,4 @@ This protocol provides the base behavior for more specific, role-based accessibi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsaccessibilityelementprotocol)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsaccessibilityelementprotocol)*

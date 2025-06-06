@@ -1,6 +1,6 @@
 # CIPlugIn
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: cl
 
 The mechanism for loading image units in macOS. 
@@ -19,8 +19,6 @@ class CIPlugIn : NSObject
 An image unit is an image processing bundle that contains one or more Core Image filters. Th`e.plugin` extension indicates one or more filters packaged as an image unit.
 
 > **Note**: Starting in macOS 10.15, loading executable CIFilter plugins is deprecated.
-
-Starting in macOS 10.15, loading executable CIFilter plugins is deprecated.
 
 ## Topics
 

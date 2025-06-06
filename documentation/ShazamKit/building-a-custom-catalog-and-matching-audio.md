@@ -1,6 +1,6 @@
 # Building a Custom Catalog and Matching Audio
 
-**Framework**: ShazamKit
+**Framework**: Shazamkit
 
 Display lesson content that’s synchronized to a learning video by matching the audio to a custom reference signature and associated metadata.
 
@@ -12,8 +12,6 @@ Display lesson content that’s synchronized to a learning video by matching the
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`10045: Create Custom Audio Experiences with ShazamKit`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10045/).
-
-This sample code project is associated with WWDC21 session [`10045: Create Custom Audio Experiences with ShazamKit`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10045/).
 
 ##### Configure the Sample Code Project
 
@@ -33,4 +31,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/shazamkit/building-a-custom-catalog-and-matching-audio)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ShazamKit/building-a-custom-catalog-and-matching-audio)*

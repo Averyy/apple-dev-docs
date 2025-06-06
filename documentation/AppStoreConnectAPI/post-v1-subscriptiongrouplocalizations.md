@@ -1,6 +1,6 @@
 # Create a Subscription Group Localization
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Create a localized display name and optional custom app name for a subscription group.
@@ -16,8 +16,6 @@ Create a localized display name and optional custom app name for a subscription 
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 
- Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
-
 ## See Also
 
 - [Read Subscription Group Localization Information](get-v1-subscriptiongrouplocalizations-_id_.md)
@@ -30,4 +28,4 @@ Create a localized display name and optional custom app name for a subscription 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-subscriptiongrouplocalizations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-subscriptiongrouplocalizations)*

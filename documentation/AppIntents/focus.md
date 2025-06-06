@@ -1,6 +1,6 @@
 # Focus
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
 
@@ -11,8 +11,6 @@ Adjust your app’s behavior and filter incoming notifications when the current 
 People use Focus on macOS, iOS, and iPadOS to minimize distractions. For example, someone might use a Work Focus to hide notifications from personal email or message accounts. When someone engages a Focus, the system executes your app’s custom [`SetFocusFilterIntent`](setfocusfilterintent.md). Define a version of this intent to update your app’s configuration and filter incoming notifications.
 
 > **Note**:  Session 10121: [`Meet Focus filters`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10121).
-
- Session 10121: [`Meet Focus filters`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10121).
 
 ## Topics
 
@@ -39,4 +37,4 @@ People use Focus on macOS, iOS, and iPadOS to minimize distractions. For example
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/focus)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/focus)*

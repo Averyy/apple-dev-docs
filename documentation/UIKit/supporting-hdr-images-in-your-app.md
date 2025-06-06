@@ -1,6 +1,6 @@
 # Supporting HDR images in your app
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
 
@@ -15,8 +15,6 @@
 This sample code project shows how to read, write, edit, and display HDR images using SwiftUI, UIKit, AppKit, Core Image, and Core Graphics. It loads a film strip of multiple images from on-disk or from the Photos library. Then it allows you to select, edit, and save an image in HDR. The sample uses several new APIs in various frameworks to correctly handle HDR images in a complete HDR workflow. ​
 
 > **Note**: This sample code project is associated with WWDC23 session 10181: [`Support HDR images in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10181/). ​
-
-This sample code project is associated with WWDC23 session 10181: [`Support HDR images in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10181/). ​
 
 ##### Configure the Sample Code Project
 
@@ -91,4 +89,4 @@ guard let outputURL = try? output.renderedContentURL(for: .heic) else {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-hdr-images-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-hdr-images-in-your-app)*

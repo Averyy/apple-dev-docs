@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: subscript
 
 Accesses a contiguous subrange of the collection’s elements.
@@ -51,8 +51,6 @@ print(streetsSlice[0])
 ```
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

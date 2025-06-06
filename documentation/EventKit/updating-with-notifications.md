@@ -1,6 +1,6 @@
 # Updating with notifications
 
-**Framework**: EventKit
+**Framework**: Eventkit
 
 Register for notifications about changes and keep your app up to date.
 
@@ -29,8 +29,6 @@ Because your local data is often invalidated or incomplete when a change occurs 
 
 > **Note**:  Events being modified in an event view controller with EventKitUI for iOS are updated automatically when a change occurs in the Calendar database. See [`EventKit UI`](https://developer.apple.com/documentation/EventKitUI) for more.
 
- Events being modified in an event view controller with EventKitUI for iOS are updated automatically when a change occurs in the Calendar database. See [`EventKit UI`](https://developer.apple.com/documentation/EventKitUI) for more.
-
 ## See Also
 
 - [Creating events and reminders](creating-events-and-reminders.md)
@@ -47,4 +45,4 @@ Because your local data is often invalidated or incomplete when a change occurs 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/updating-with-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/updating-with-notifications)*

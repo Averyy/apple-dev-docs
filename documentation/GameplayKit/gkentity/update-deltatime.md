@@ -1,6 +1,6 @@
 # update(deltaTime:)
 
-**Framework**: GameplayKit  
+**Framework**: Gameplaykit  
 **Kind**: method
 
 Performs periodic updates for each of the entity’s components.
@@ -28,8 +28,6 @@ The [`GKEntity`](gkentity.md) [`update(deltaTime:)`](gkentity/update(deltatime:)
 The other option is to dispatch updates per-component, rather than per-entity, using a [`GKComponentSystem`](gkcomponentsystem.md) object. Using a component system allows you to update all components of a specific component class in a deterministic order, without needing to traverse your game’s object graph and update each entity.
 
 > **Note**:  If a component owned by an entity is a member of a component system, calling the entity’s [`update(deltaTime:)`](gkentity/update(deltatime:).md) method will not update that component.
-
- If a component owned by an entity is a member of a component system, calling the entity’s [`update(deltaTime:)`](gkentity/update(deltatime:).md) method will not update that component.
 
 ## Parameters
 

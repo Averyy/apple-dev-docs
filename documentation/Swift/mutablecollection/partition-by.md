@@ -51,8 +51,6 @@ Note that the order of elements in both partitions changed. That is, `40` appear
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `belongsInSecondPartition`: A predicate used to partition   the collection. All elements satisfying this predicate are ordered   after all elements not satisfying it.

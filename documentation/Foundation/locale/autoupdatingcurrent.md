@@ -26,8 +26,6 @@ If mutated, this Locale will no longer track the user’s preferences.
 
 > **Note**:  The autoupdating Locale will only compare equal to another autoupdating Locale.
 
- The autoupdating Locale will only compare equal to another autoupdating Locale.
-
 ## See Also
 
 - [static var current: Locale](locale/current.md)

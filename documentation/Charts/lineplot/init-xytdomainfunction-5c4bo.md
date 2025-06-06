@@ -1,6 +1,6 @@
 # init(x:y:t:domain:function:)
 
-**Framework**: Swift Charts  
+**Framework**: Charts  
 **Kind**: init
 
 Creates a mark that graphs a parametric function (x, y) = f(t).
@@ -32,8 +32,6 @@ Parameters:
 - function: The function to graph. Returns a tuple of (x, y) for a value of t.
 
 > **Note**: For t values where the function is undefined or is infinity, the function is expected to return `Double.nan` or `Double.infinity` respectively.
-
-For t values where the function is undefined or is infinity, the function is expected to return `Double.nan` or `Double.infinity` respectively.
 
 
 ---

@@ -58,17 +58,19 @@ documentation/
 - **Incremental updates**: Only re-scrapes changed content
 - **Rate limiting**: Respects Apple's servers (0.2s delays)
 
-## Context7 Integration
+## MCP Server Integration
 
-After scraping, you can use Context7 to query the documentation:
+After scraping, the documentation is indexed locally for semantic search:
 
 ```
-Query: "apple swiftui list"
+Query: "SwiftUI list"
 Result: Documentation for SwiftUI List component with examples
 
-Query: "apple metal shader"  
+Query: "Metal shader"  
 Result: Metal shading language documentation and examples
 ```
+
+All queries are processed through the local MCP server with zero API costs.
 
 ## Troubleshooting
 

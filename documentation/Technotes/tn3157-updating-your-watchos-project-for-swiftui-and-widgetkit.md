@@ -27,8 +27,6 @@ This technote uses the following terminology to refer a watchOS app with differe
 
 > **Note**: Both single-target and dual-target apps can have other targets. For example, you can add targets to implement widgets or app intents for a single-target or dual-target app.
 
-Both single-target and dual-target apps can have other targets. For example, you can add targets to implement widgets or app intents for a single-target or dual-target app.
-
 #### From Dependent to Independent
 
 Apple Watch users expect that the apps to just work, even when they don’t have their iPhones with them. If you have a dependent watchOS app, consider making it independent. See [`Creating independent watchOS apps`](https://developer.apple.comhttps://developer.apple.com/documentation/watchos-apps/creating-independent-watchos-apps#Convert-a-dependent-watchOS-app-to-an-independent-watchOS-app) for details.
@@ -38,8 +36,6 @@ Apple Watch users expect that the apps to just work, even when they don’t have
 If your watchOS app is dual-target, convert it to single-target. This simplifies the project configuration and eliminates any confusion about where to embed a resource or apply an entitlement. Single-target watchOS apps work on watchOS 7 and later. For more information, see [`Build a productivity app for Apple Watch`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10133/).
 
 > **Note**: A single-target watchOS app requires watchOS 9.2 or later to inherit the HealthKit permissions granted to its companion iOS app. If your app uses HealthKit and needs to support earlier versions of watchOS, keep your dual-target app configuration.
-
-A single-target watchOS app requires watchOS 9.2 or later to inherit the HealthKit permissions granted to its companion iOS app. If your app uses HealthKit and needs to support earlier versions of watchOS, keep your dual-target app configuration.
 
 To convert a dual-target app to a single target:
 
@@ -100,15 +96,11 @@ To migrate a ClockKit complication to WidgetKit:
 
 > **Note**: When the ClockKit complication doesn’t have a descriptor, the system passes a descriptor with the default identifier ([`CLKDefaultComplicationIdentifier`](https://developer.apple.comhttps://developer.apple.com/documentation/clockkit/clkdefaultcomplicationidentifier)) to [`getWidgetConfiguration(from:completionHandler:)`](https://developer.apple.comhttps://developer.apple.com/documentation/clockkit/clkcomplicationwidgetmigrator/3972695-getwidgetconfiguration). Ignore the descriptor and return a [`CLKComplicationWidgetMigrationConfiguration`](https://developer.apple.comhttps://developer.apple.com/documentation/clockkit/clkcomplicationwidgetmigrationconfiguration) object with the appropriate widget kind.
 
-When the ClockKit complication doesn’t have a descriptor, the system passes a descriptor with the default identifier ([`CLKDefaultComplicationIdentifier`](https://developer.apple.comhttps://developer.apple.com/documentation/clockkit/clkdefaultcomplicationidentifier)) to [`getWidgetConfiguration(from:completionHandler:)`](https://developer.apple.comhttps://developer.apple.com/documentation/clockkit/clkcomplicationwidgetmigrator/3972695-getwidgetconfiguration). Ignore the descriptor and return a [`CLKComplicationWidgetMigrationConfiguration`](https://developer.apple.comhttps://developer.apple.com/documentation/clockkit/clkcomplicationwidgetmigrationconfiguration) object with the appropriate widget kind.
-
 #### From a Watch Only App to a Watchos App with a Companion Ios App
 
 SwiftUI and WidgetKit are both cross-platform. If you have a watch-only app, you might want to enhance the watchOS app by adding an iOS companion app, and have the iOS app share SwiftUI views and widgets with the watchOS app.
 
 > **Note**: After adding an iOS companion app and publishing it to the App Store, you can’t roll back to a watch-only app.
-
-After adding an iOS companion app and publishing it to the App Store, you can’t roll back to a watch-only app.
 
 To add an iOS companion app to an existing watch-only app project:
 
@@ -160,4 +152,4 @@ You now have a project that has an independent watchOS app with a companion iOS 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3157-updating-your-watchos-project-for-swiftui-and-widgetkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3157-updating-your-watchos-project-for-swiftui-and-widgetkit)*

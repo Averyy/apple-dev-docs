@@ -19,8 +19,6 @@ class WebView
 
 > **Note**:  In apps that run in OS X 10.10 and later, use the [`WKWebView`](wkwebview.md) class instead of using [`WebView`](webview.md).
 
- In apps that run in OS X 10.10 and later, use the [`WKWebView`](wkwebview.md) class instead of using [`WebView`](webview.md).
-
 Behind the scenes, `WebFrame` objects encapsulate the content contained in a single frame element. A hierarchy of `WebFrame` objects is used to model an entire webpage where the root is called the . There is a `WebFrameView` object per `WebFrame` object used to display the frame content. Therefore, there is a parallel hierarchy of `WebFrameView` objects used to render an entire page. The `WebView` object is also the parent view of this hierarchy. You do not need to create `WebFrame` and `WebFrameView` objects directly. These objects are automatically created when the page loads, either programmatically or by the user clicking a link.
 
 You customize your embedded web content by implementing `WebView` delegates to handle certain aspects of the process. `WebView` objects have multiple delegates because the process of loading a webpage is asynchronous and complicated if errors occur. All the `WebView` delegates use informal protocols so you only need to implement only the delegates and methods that define the behavior you wish to change—default implementations are already provided.
@@ -355,4 +353,4 @@ You can also extend WebKit by implementing your own document view and representa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/webkit/webview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/webview)*

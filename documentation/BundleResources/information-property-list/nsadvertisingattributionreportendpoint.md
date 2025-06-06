@@ -1,6 +1,6 @@
 # NSAdvertisingAttributionReportEndpoint
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 The URL where Private Click Measurement and SKAdNetwork send attribution information.
@@ -27,8 +27,6 @@ Replace `example.com` with your domain name. The system uses only the registrabl
 For more information about PCM and setting up a server to receive event attribution data, see [`Introducing Private Click Measurement`](https://developer.apple.comhttps://webkit.org/blog/11529/introducing-private-click-measurement-pcm/). For more information about configuring an advertised app to enable its developer to receive postbacks, see [`Configuring an advertised app`](https://developer.apple.com/documentation/StoreKit/configuring-an-advertised-app) and [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork).
 
 > **Note**:  Mac apps built with Mac Catalyst don’t support PCM.
-
- Mac apps built with Mac Catalyst don’t support PCM.
 
 ## See Also
 

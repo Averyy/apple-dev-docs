@@ -1,6 +1,6 @@
 # mtu
 
-**Framework**: Network Extension  
+**Framework**: Networkextension  
 **Kind**: property
 
 The size of the maximum trasnmission unit, in bytes.
@@ -25,8 +25,6 @@ var mtu: NSNumber? { get set }
 The maximum transmission unit (MTU) size represents the largest number of bytes that anything can assign to the TUN interface.
 
 > **Note**:  The system ignores the [`tunnelOverheadBytes`](nepackettunnelnetworksettings/tunneloverheadbytes.md) property when this property is non-`nil`.
-
- The system ignores the [`tunnelOverheadBytes`](nepackettunnelnetworksettings/tunneloverheadbytes.md) property when this property is non-`nil`.
 
 ## See Also
 

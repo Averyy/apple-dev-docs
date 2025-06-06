@@ -23,8 +23,6 @@ For example, you might use this property if you attach a web view to an `NSTabVi
 
 > **Note**:  Plug-ins and JavaScript depend on a window to function properly even if the web view is not in an actual window.
 
- Plug-ins and JavaScript depend on a window to function properly even if the web view is not in an actual window.
-
 
 ---
 

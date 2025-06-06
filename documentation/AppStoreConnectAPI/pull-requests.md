@@ -1,6 +1,6 @@
 # Pull Requests
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read pull request information such as source and destination branches.
 
@@ -13,8 +13,6 @@ The `scmPullRequests` resource represents pull requests (PRs) for repositories X
 - A value that indicates whether the PR involves more than one repository
 
 > **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
-
- This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
 
@@ -41,4 +39,4 @@ The `scmPullRequests` resource represents pull requests (PRs) for repositories X
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/pull-requests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/pull-requests)*

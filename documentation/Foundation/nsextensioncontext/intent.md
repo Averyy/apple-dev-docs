@@ -30,8 +30,6 @@ This property is `nil` if your app’s share extension wasn’t launched from th
 
 > **Note**:  To learn more about adding a share extension to the list of suggested apps, read [`Supporting suggestions in your app’s share extension`](supporting-suggestions-in-your-app-s-share-extension.md).
 
- To learn more about adding a share extension to the list of suggested apps, read [`Supporting suggestions in your app’s share extension`](supporting-suggestions-in-your-app-s-share-extension.md).
-
 
 ---
 

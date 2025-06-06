@@ -16,8 +16,6 @@ Valid image files meet the following specifications:
 
 > **Note**:  Always provide @3x images (300 x 300 pixels to 618 x 618 pixels). The system generates the @2x and @1x versions by downscaling the @3x images at runtime.
 
- Always provide @3x images (300 x 300 pixels to 618 x 618 pixels). The system generates the @2x and @1x versions by downscaling the @3x images at runtime.
-
 Messages supports three sticker sizes, which the system displays in a grid-based browser. In the Xcode Attributes inspector, pick one of the following sizes for your sticker pack:
 
 - Small. 100 x 100 points @3x (300 x 300 pixels).
@@ -46,4 +44,4 @@ You can either restrict your sticker pack to just Messages, or make it available
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/messages/adding-your-sticker-packs-to-messages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Messages/adding-your-sticker-packs-to-messages)*

@@ -1,6 +1,6 @@
 # MDM
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: dictionary
 
 The payload you use to configure mobile device management (MDM) settings.
@@ -32,8 +32,6 @@ object MDM
 Also define the following four standard payload values in your MDM payload:
 
 > **Note**:  MDM reserves profile payload dictionary keys with the  prefix. Don’t treat them as managed preferences.
-
- MDM reserves profile payload dictionary keys with the  prefix. Don’t treat them as managed preferences.
 
 ##### Profile Availability
 
@@ -216,4 +214,4 @@ Also define the following four standard payload values in your MDM payload:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/mdm)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/mdm)*

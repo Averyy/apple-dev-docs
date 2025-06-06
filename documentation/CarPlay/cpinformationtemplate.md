@@ -1,6 +1,6 @@
 # CPInformationTemplate
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: class
 
 A template that provides information for a point of interest, food order, parking location, or charging location.
@@ -27,8 +27,6 @@ When creating an information template, you populate the list with an array of [`
 To display an information template, call your interface controller’s [`pushTemplate(_:animated:completion:)`](cpinterfacecontroller/pushtemplate(_:animated:completion:).md) method to push it onto the navigation hierarchy, or [`presentTemplate(_:animated:completion:)`](cpinterfacecontroller/presenttemplate(_:animated:completion:).md) to present it modally.
 
 > **Note**:  You can’t use `CPInformationTemplate` in apps with the audio entitlement.
-
- You can’t use `CPInformationTemplate` in apps with the audio entitlement.
 
 ## Topics
 

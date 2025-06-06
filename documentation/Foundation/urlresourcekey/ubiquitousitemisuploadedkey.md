@@ -26,8 +26,6 @@ The system returns the read-only value as a Boolean [`NSNumber`](nsnumber.md). T
 
 > **Note**:  When waiting for an upload to complete, don’t poll this key from within a block that you pass to [`coordinate(readingItemAt:options:error:byAccessor:)`](nsfilecoordinator/coordinate(readingitemat:options:error:byaccessor:).md) because the system can’t perform, the coordinated read necessary to obtain this value until that block completes and returns. Instead, use [`NSMetadataQuery`](nsmetadataquery.md) or an [`NSFilePresenter`](nsfilepresenter.md) delegate to asynchronously notify your app when the status changes.
 
- When waiting for an upload to complete, don’t poll this key from within a block that you pass to [`coordinate(readingItemAt:options:error:byAccessor:)`](nsfilecoordinator/coordinate(readingitemat:options:error:byaccessor:).md) because the system can’t perform, the coordinated read necessary to obtain this value until that block completes and returns. Instead, use [`NSMetadataQuery`](nsmetadataquery.md) or an [`NSFilePresenter`](nsfilepresenter.md) delegate to asynchronously notify your app when the status changes.
-
 ## See Also
 
 - [static let isUbiquitousItemKey: URLResourceKey](urlresourcekey/isubiquitousitemkey.md)

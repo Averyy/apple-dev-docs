@@ -35,8 +35,6 @@ print(numbers)
 
 > **Note**: O(), where  is the length of the array. If `i == endIndex`, this method is equivalent to `append(_:)`.
 
-O(), where  is the length of the array. If `i == endIndex`, this method is equivalent to `append(_:)`.
-
 ## Parameters
 
 - `newElement`: The new element to insert into the array.

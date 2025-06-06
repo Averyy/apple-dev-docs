@@ -1,6 +1,6 @@
 # firstIndex(where:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns the first index in which an element of the collection satisfies the given predicate.
@@ -35,8 +35,6 @@ if let i = students.firstIndex(where: { $0.hasPrefix("A") }) {
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

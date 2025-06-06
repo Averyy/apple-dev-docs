@@ -1,6 +1,6 @@
 # require(_:_:sourceLocation:)
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: macro
 
 Unwrap an optional value or, if it is `nil`, fail and throw an error.
@@ -34,8 +34,6 @@ The unwrapped value of `optionalValue`.
 #### Overview
 
 > **Note**: An instance of [`ExpectationFailedError`](expectationfailederror.md) if `optionalValue` is `nil`.
-
-An instance of [`ExpectationFailedError`](expectationfailederror.md) if `optionalValue` is `nil`.
 
 If `optionalValue` is `nil`, an [`Issue`](issue.md) is recorded for the test that is running in the current task and an instance of [`ExpectationFailedError`](expectationfailederror.md) is thrown.
 

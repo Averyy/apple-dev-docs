@@ -1,6 +1,6 @@
 # Customizing Logging Behavior While Debugging
 
-**Framework**: os
+**Framework**: Os
 
 Control which log events are recorded.
 
@@ -90,8 +90,6 @@ The example below shows a complete logging profile, which configures a subsystem
 ```
 
 > **Note**:  Subsystems inherit the logging behavior of the system, and categories inherit the behavior of the subsystem in which they reside. Therefore, settings only need to be specified if they differ from the inherited behavior.
-
- Subsystems inherit the logging behavior of the system, and categories inherit the behavior of the subsystem in which they reside. Therefore, settings only need to be specified if they differ from the inherited behavior.
 
 ## See Also
 

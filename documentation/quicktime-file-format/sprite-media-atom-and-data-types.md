@@ -1,14 +1,12 @@
 # Sprite media atom and data types
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Atoms that represent sprite media and data types.
 
 #### Overview
 
 > ❗ **Important**: Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
-
-Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
 
 The following constants represent atom types for sprite media:
 
@@ -49,19 +47,13 @@ enum {
 
 > ❗ **Important**: You must assign group IDs to your sprite sample if you want a sprite to display images with non-equivalent image descriptions (i.e., images with different dimensions).
 
-You must assign group IDs to your sprite sample if you want a sprite to display images with non-equivalent image descriptions (i.e., images with different dimensions).
-
 For each of the following atom types (added to QuickTime 4) — except `kSpriteBehaviorsAtomType` — you fill in the structure `QTSpriteButtonBehaviorStruct`, which contains a value for each of the four states.
 
 > **Note**: All sprite media — specifically the leaf data in the QT atom containers for sample and sprite track properties — should be written in big-endian format.
 
-All sprite media — specifically the leaf data in the QT atom containers for sample and sprite track properties — should be written in big-endian format.
-
 Although QuickTime does not currently use this atom internally, tools that edit sprite media can use the information provided to optimize certain operations, such as cut, copy, and paste.
 
 > ❗ **Important**: You must assign group IDs to your sprite sample if you want a sprite to display images with non-equivalent image descriptions (that is, images with different dimensions).
-
-You must assign group IDs to your sprite sample if you want a sprite to display images with non-equivalent image descriptions (that is, images with different dimensions).
 
 You use the following atom types, which were added to QuickTime 4, to specify that an image is referenced and how to access it.
 

@@ -1,6 +1,6 @@
 # init(contentsOfCSVFile:columns:rows:types:options:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: init
 
 Creates a data frame from a CSV file.
@@ -23,8 +23,6 @@ init(contentsOfCSVFile url: URL, columns: [String]? = nil, rows: Range<Int>? = n
 #### Discussion
 
 > **Note**: A `CSVReadingError` instance.
-
-A `CSVReadingError` instance.
 
 ## Parameters
 

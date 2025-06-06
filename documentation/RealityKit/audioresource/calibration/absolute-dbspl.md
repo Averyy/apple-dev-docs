@@ -1,6 +1,6 @@
 # absolute(dBSPL:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 The reference level (-12dBLUFS) of the audio source material will be reproduced at the given `dBSPL` level on known audio output hardware.
@@ -21,8 +21,6 @@ static func absolute(dBSPL: Audio.Decibel) -> AudioResource.Calibration
 #### Discussion
 
 > **Note**: The -12dBLUFS reference level is achieved automatically by using `Normalization.dynamic`.
-
-The -12dBLUFS reference level is achieved automatically by using `Normalization.dynamic`.
 
 
 ---

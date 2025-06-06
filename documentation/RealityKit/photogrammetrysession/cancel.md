@@ -1,6 +1,6 @@
 # cancel()
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Requests cancellation of any running requests.
@@ -22,8 +22,6 @@ func cancel()
 When cancellation has completed, a `.processingCancelled` message will be output and `isProcessing` will be `false`.  Calling this method has no effect if `!isProcessing`.
 
 > **Note**: This call is asynchronous and it may take some time before the pipeline fully stops, resources are reclaimed, and the error is actually produced, so callers should monitor `output` for the message before making a new session.
-
-This call is asynchronous and it may take some time before the pipeline fully stops, resources are reclaimed, and the error is actually produced, so callers should monitor `output` for the message before making a new session.
 
 ## See Also
 

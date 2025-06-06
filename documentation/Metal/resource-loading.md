@@ -20,8 +20,6 @@ For each asset, create an [`MTLIOFileHandle`](mtliofilehandle.md) instance using
 
 > **Note**:  You must create each file handle using the same [`MTLDevice`](mtldevice.md) instance that created the [`MTLIOCommandQueue`](mtliocommandqueue.md) and [`MTLIOCommandBuffer`](mtliocommandbuffer.md) instances that load the files.
 
- You must create each file handle using the same [`MTLDevice`](mtldevice.md) instance that created the [`MTLIOCommandQueue`](mtliocommandqueue.md) and [`MTLIOCommandBuffer`](mtliocommandbuffer.md) instances that load the files.
-
 To help minimize your appʼs storage footprint, compress your assets at development time. First, create a new compression context with the [`MTLIOCreateCompressionContext`](mtliocreatecompressioncontext.md) function. Then, add data for an asset to the compression context using the [`MTLIOCompressionContextAppendData(_:_:_:)`](mtliocompressioncontextappenddata(_:_:_:).md) function. Finally, call the  [`MTLIOFlushAndDestroyCompressionContext(_:)`](mtlioflushanddestroycompressioncontext(_:).md) function to save the context to a compressed file that you add to your project.
 
 ## Topics
@@ -84,4 +82,4 @@ To help minimize your appʼs storage footprint, compress your assets at developm
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/resource-loading)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/resource-loading)*

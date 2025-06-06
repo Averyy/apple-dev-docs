@@ -1,6 +1,6 @@
 # DCDevice
 
-**Framework**: DeviceCheck  
+**Framework**: Devicecheck  
 **Kind**: class
 
 A representation of a device that provides a unique, authenticated token.
@@ -42,8 +42,6 @@ On your server, combine the token with an authentication key that you obtain fro
 
 > **Note**: To use the `DCDevice` class, your app must have an app ID that you register on the [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account/) website.
 
-To use the `DCDevice` class, your app must have an app ID that you register on the [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account/) website.
-
 Apple records the bits for you, and reports the bits back to you, but you’re responsible for keeping track of what the bits mean. You’re also responsible for determining when to reset the bits for a given device; for example, when a user sells the device to someone else.
 
 ## Topics
@@ -78,4 +76,4 @@ Apple records the bits for you, and reports the bits back to you, but you’re r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicecheck/dcdevice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceCheck/dcdevice)*

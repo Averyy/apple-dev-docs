@@ -1,6 +1,6 @@
 # Classifying Images with Vision and Core ML
 
-**Framework**: Core ML
+**Framework**: Coreml
 
 Crop and scale photos using the Vision framework and classify them with a Core ML model.
 
@@ -15,15 +15,13 @@ The app in this sample identifies the most prominent object in an image by using
 
 ![Screenshots of the app identifying a monarch butterfly, broccoli, and a daisy in a field.](https://docs-assets.developer.apple.com/published/a15de432ec/rendered2x-1630546953.png)
 
-Each time a user selects a photo from the library or takes a photo with a camera, the app passes it to a [`Vision`](https://developer.apple.com/documentation/vision) image classification request. Vision resizes and crops the photo to meet the MobileNet model’s constraints for its image input, and then passes the photo to the model using the [`Core ML`](CoreML.md) framework behind the scenes. Once the model generates a prediction, Vision relays it back to the app, which presents the results to the user.
+Each time a user selects a photo from the library or takes a photo with a camera, the app passes it to a [`Vision`](https://developer.apple.com/documentation/vision) image classification request. Vision resizes and crops the photo to meet the MobileNet model’s constraints for its image input, and then passes the photo to the model using the [`Core ML`](coreml.md) framework behind the scenes. Once the model generates a prediction, Vision relays it back to the app, which presents the results to the user.
 
 The sample uses MobileNet as an example of how to use a third-party Core ML model. You can download open source models — including a newer version of MobileNet — on the [`Core ML model gallery`](https://developer.apple.comhttps://developer.apple.com/machine-learning/models).
 
 Before you integrate a third-party model to solve a problem — which may increase the size of your app — consider using an API in the SDK. For example, the [`Vision`](https://developer.apple.com/documentation/vision) framework’s [`VNClassifyImageRequest`](https://developer.apple.com/documentation/vision/vnclassifyimagerequest) class offers the same functionality as MobileNet, but with potentially better performance and without increasing the size of your app (see [`Classifying images for categorization and search`](https://developer.apple.com/documentation/vision/classifying-images-for-categorization-and-search)).
 
 > **Note**: You can make a custom image classifier that identifies your choice of object types with [`Create ML`](https://developer.apple.com/documentation/createml). See [`Creating an Image Classifier Model`](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model) to learn how to create a custom image classifier that can replace the MobileNet model in this sample.
-
-You can make a custom image classifier that identifies your choice of object types with [`Create ML`](https://developer.apple.com/documentation/createml). See [`Creating an Image Classifier Model`](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model) to learn how to create a custom image classifier that can replace the MobileNet model in this sample.
 
 ##### 4042638
 
@@ -35,8 +33,6 @@ The sample targets iOS 14 or later, but the MobileNet model in the project works
 To take photos within the app, run the sample on a device with a camera. Otherwise, you can select photos from the library in Simulator.
 
 > **Note**: Add your own photos to the photo library in Simulator by dragging photos onto its window.
-
-Add your own photos to the photo library in Simulator by dragging photos onto its window.
 
 ##### 4042639
 
@@ -76,8 +72,6 @@ The method creates a Core ML model instance for Vision by:
 The Image Predictor class minimizes runtime by only creating a single instance it shares across the app.
 
 > **Note**: Share a single [`VNCoreMLModel`](https://developer.apple.com/documentation/vision/vncoremlmodel) instance for each Core ML model in your project.
-
-Share a single [`VNCoreMLModel`](https://developer.apple.com/documentation/vision/vncoremlmodel) instance for each Core ML model in your project.
 
 ##### 4042640
 
@@ -121,8 +115,6 @@ try handler.perform(requests)
 ```
 
 > **Note**: You can perform multiple Vision requests on the same image by adding each request to the array you pass to the [`perform(_:)`](https://developer.apple.com/documentation/vision/vnimagerequesthandler/perform(_:)) method’s `requests` parameter.
-
-You can perform multiple Vision requests on the same image by adding each request to the array you pass to the [`perform(_:)`](https://developer.apple.com/documentation/vision/vnimagerequesthandler/perform(_:)) method’s `requests` parameter.
 
 ##### 4042643
 
@@ -186,8 +178,6 @@ func updatePredictionLabel(_ message: String) {
 ```
 
 > ❗ **Important**: Keep your app’s UI responsive by making predictions with Core ML models off of the main thread.
-
-Keep your app’s UI responsive by making predictions with Core ML models off of the main thread.
 
 ## See Also
 

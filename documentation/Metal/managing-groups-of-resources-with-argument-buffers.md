@@ -43,8 +43,6 @@ Commands that set individual resources can become numerous and expensive, especi
 
 > **Note**: To access individual resources in an argument buffer, the sample code calls the `useResource:usage:` method for each resource that it uses. Additional information is available in the “Enable the GPU memory of resources in the argument buffer” section below.
 
-To access individual resources in an argument buffer, the sample code calls the `useResource:usage:` method for each resource that it uses. Additional information is available in the “Enable the GPU memory of resources in the argument buffer” section below.
-
 ##### Define Argument Buffers
 
 The Metal Shading Language defines argument buffers as custom structures. Each structure element represents an individual resource that the shader code declares as a texture, sampler, buffer, or constant data type.
@@ -167,8 +165,6 @@ However, when the renderer encodes resources into an argument buffer, setting th
 
 > **Note**: Best practice is to call the `useResource:usage:` method once for each resource during the lifetime of a `MTLRenderCommandEncoder`, even when using the resource in multiple draw calls. The `useResource:usage:` method is specific to argument buffers, but calling it is far less expensive than setting each resource individually.
 
-Best practice is to call the `useResource:usage:` method once for each resource during the lifetime of a `MTLRenderCommandEncoder`, even when using the resource in multiple draw calls. The `useResource:usage:` method is specific to argument buffers, but calling it is far less expensive than setting each resource individually.
-
 ##### Set Argument Buffers
 
 The following example calls the `useResource:usage:` method for the `_texture` and `_indirectBuffer` encoded resources in the argument buffer. These calls specify `MTLResourceUsage` values that further indicate which GPU operations to perform on each resource (the GPU samples the texture and reads the buffer):
@@ -179,8 +175,6 @@ The following example calls the `useResource:usage:` method for the `_texture` a
 ```
 
 > **Note**: The `useResource:usage:` method doesn’t apply to samplers or constants because they’re not `MTLResource` objects.
-
-The `useResource:usage:` method doesn’t apply to samplers or constants because they’re not `MTLResource` objects.
 
 The following example sets only `_fragmentShaderArgumentBuffer` as an argument to the fragment function. It doesn’t set the `_texture`, `_indirectBuffer`, `_sampler`, or `bufferElements` resources individually. This command allows the fragment function to access the argument buffer and its encoded resources:
 
@@ -239,4 +233,4 @@ The [`Using Argument Buffers with Resource Heaps`](using-argument-buffers-with-r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/managing-groups-of-resources-with-argument-buffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/managing-groups-of-resources-with-argument-buffers)*

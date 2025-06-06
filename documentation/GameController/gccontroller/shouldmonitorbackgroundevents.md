@@ -1,6 +1,6 @@
 # shouldMonitorBackgroundEvents
 
-**Framework**: Game Controller  
+**Framework**: Gamecontroller  
 **Kind**: property
 
 A Boolean value that indicates whether the app needs to respond to controller events when it isn’t the frontmost app.
@@ -24,8 +24,6 @@ class var shouldMonitorBackgroundEvents: Bool { get set }
 If [`false`](https://developer.apple.com/documentation/swift/false), and the app isn’t in the foreground, the framework doesn’t forward any input from the game controller until the app becomes the frontmost.
 
 > **Note**:  In macOS 11.3 and later, the default value for this property is [`false`](https://developer.apple.com/documentation/swift/false). Prior to macOS 11.3, the default value is [`true`](https://developer.apple.com/documentation/swift/true). In iOS and tvOS, the framework ignores this property.
-
- In macOS 11.3 and later, the default value for this property is [`false`](https://developer.apple.com/documentation/swift/false). Prior to macOS 11.3, the default value is [`true`](https://developer.apple.com/documentation/swift/true). In iOS and tvOS, the framework ignores this property.
 
 ## See Also
 

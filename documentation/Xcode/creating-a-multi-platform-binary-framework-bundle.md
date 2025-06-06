@@ -12,8 +12,6 @@ Include an XCFramework bundle inside a Swift package to distribute code in binar
 
 > **Note**: Session 417: [`Binary Frameworks in Swift`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/416)
 
-Session 417: [`Binary Frameworks in Swift`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/416)
-
 ##### Set Up the Project
 
 To set up your project for creating an XCFramework, ensure your Xcode project has a scheme that builds only the framework target and its dependencies.
@@ -49,8 +47,6 @@ An XCFramework can contain versions of your framework built for macOS with and w
 To see an extensive list of all the command options, execute `xcodebuild` with the `-help` flag.
 
 > **Note**: Clients of your XCFramework need it to support all the possible architectures the platform uses. As platforms move forward to adopt new architectures, such as the adoption of Apple silicon by macOS and iOS Simulator, keep the binaries your XCFramework includes up to date by rebuilding the frameworks and libraries to include new architectures. To determine the architectures of a binary, see [`Determine the architectures a binary supports`](creating-a-multi-platform-binary-framework-bundle#Determine-the-architectures-a-binary-supports.md).
-
-Clients of your XCFramework need it to support all the possible architectures the platform uses. As platforms move forward to adopt new architectures, such as the adoption of Apple silicon by macOS and iOS Simulator, keep the binaries your XCFramework includes up to date by rebuilding the frameworks and libraries to include new architectures. To determine the architectures of a binary, see [`Determine the architectures a binary supports`](creating-a-multi-platform-binary-framework-bundle#Determine-the-architectures-a-binary-supports.md).
 
 ##### Generate the Xcframework Bundle
 
@@ -98,8 +94,6 @@ To sign a framework for distribution as a member of the Apple Developer Program,
 
 > ❗ **Important**:  If you revoke a certificate for a code signing identity that you use to sign frameworks for distribution, sign the framework with a different code signing identity that isn’t revoked and share that version with developers who use your framework. The Xcode build system fails with an error when it encounters a framework with a code signature that contains a revoked certificate.
 
- If you revoke a certificate for a code signing identity that you use to sign frameworks for distribution, sign the framework with a different code signing identity that isn’t revoked and share that version with developers who use your framework. The Xcode build system fails with an error when it encounters a framework with a code signature that contains a revoked certificate.
-
 ##### Avoid Issues When Using Alternate Build Systems
 
 When using an alternative build system, common for open source projects, follow a similar process to compile the source code into static library files, using one binary per platform, or . Use the files to create the XCFramework.
@@ -139,4 +133,4 @@ file <PathToLibrary>/libMyLibrary.a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-a-multi-platform-binary-framework-bundle)*

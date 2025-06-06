@@ -30,8 +30,6 @@ These reports use this data completeness approach:
 
 > **Note**: For reports not listed here, see the Completeness section in each report.
 
-For reports not listed here, see the Completeness section in each report.
-
 For example, if you review a report instance with  `granularity` and a `processingDate` of `2024-04-01`, you might find that the Date column contains multiple dates, going back as far as the completeness threshold for that report. In this case you might find records with `2024-03-31` and `2024-03-30` in the Date column, and possibly more.
 
 Instances from a more recent `processingDate` overwrite instances with an earlier `processingDate`. The report instance with a `processingDate` of `2024-04-01` overwrites a set of records for a `Date` of `2024-03-30` from a report instance with a `processingDate` of `2024-03-31`. Don’t merge records for a Date of `2024-03-30` across two report instances to avoid double counting. Use the latest instance.
@@ -39,8 +37,6 @@ Instances from a more recent `processingDate` overwrite instances with an earlie
 Alternatively, you can choose to wait until data is finalized (see the Completeness description in the Overview on each report page) and download once.
 
 > **Note**: In rare cases of data corrections, you might receive new record sets for a date in the past, beyond the completeness threshold.
-
-In rare cases of data corrections, you might receive new record sets for a date in the past, beyond the completeness threshold.
 
 #### Platforms
 
@@ -51,8 +47,6 @@ In reports with data from iPad, the Device column shows `iPad`, and the Platform
 In this example the report has a completeness of two days. You can wait 2 days and download final complete daily set of records for Date of 2024-03-30 from the report instance with `processingDate` of 2024-04-01 and with daily `granularity`. The Daily, Weekly, and Monthly report tables below show what data you can expect in each `processingDate` and when you can expect to see complete data sets for a given date.
 
 > **Note**: These are not fields in reports, but descriptions of what you might read in your reports.
-
-These are not fields in reports, but descriptions of what you might read in your reports.
 
 ##### Daily Reports
 

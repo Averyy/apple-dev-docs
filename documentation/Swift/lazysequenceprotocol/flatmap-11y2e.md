@@ -27,8 +27,6 @@ Use this method to receive a sequence of non-optional values when your transform
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `transform`: A closure that accepts an element of this sequence   as its argument and returns an optional value.

@@ -35,8 +35,6 @@ print(numbers)
 
 > **Note**: O(), where  is the length of `newElements`.
 
-O(), where  is the length of `newElements`.
-
 ## Parameters
 
 - `newElements`: The elements to append to the collection.

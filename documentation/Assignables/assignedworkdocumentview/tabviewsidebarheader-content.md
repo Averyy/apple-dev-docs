@@ -47,8 +47,6 @@ TabView {
 
 > **Note**: To have a sidebar, a`TabView` needs the `TabViewStyle/sidebarAdaptable` style.
 
-To have a sidebar, a`TabView` needs the `TabViewStyle/sidebarAdaptable` style.
-
 
 ---
 

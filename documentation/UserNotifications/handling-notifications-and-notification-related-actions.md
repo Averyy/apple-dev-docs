@@ -21,8 +21,6 @@ Actionable notifications let the user respond to a notification directly from th
 
 > **Note**:  You declare actionable notification types at launch time at the same time you declare your app’s supported categories. For more information, see [`Declaring your actionable notification types`](declaring-your-actionable-notification-types.md).
 
- You declare actionable notification types at launch time at the same time you declare your app’s supported categories. For more information, see [`Declaring your actionable notification types`](declaring-your-actionable-notification-types.md).
-
 You handle selected actions from the delegate object of the shared [`UNUserNotificationCenter`](unusernotificationcenter.md) object. When the user selects an action, the system launches your app in the background and calls the delegate’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](unusernotificationcenterdelegate/usernotificationcenter(_:didreceive:withcompletionhandler:).md) method. Match the value in the [`actionIdentifier`](unnotificationresponse/actionidentifier.md) property of the response object to one of your app’s actions or a system-defined action. The system reports special actions when the user dismisses the notification or launches your app.
 
 Listing 1 shows an example that processes actions associated with a meeting invitation. The `ACCEPT_ACTION` and `DECLINE_ACTION` strings identify the app-specific actions, which generate an appropriate response to the meeting invitation. If the user doesn’t choose one of the app-defined actions, the method saves the invitation until the user launches the app.
@@ -125,4 +123,4 @@ If you registered your app with PushKit, notifications targeting PushKit-types a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/handling-notifications-and-notification-related-actions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/handling-notifications-and-notification-related-actions)*

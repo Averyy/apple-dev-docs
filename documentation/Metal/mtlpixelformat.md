@@ -25,8 +25,6 @@ There are three varieties of pixel formats: ordinary, packed, and compressed. Fo
 
 > **Note**:  Pixel format availability and capabilities vary by feature set. See [`Pixel Format Capabilities`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for more information.
 
- Pixel format availability and capabilities vary by feature set. See [`Pixel Format Capabilities`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for more information.
-
 ##### Storage Characteristics
 
 The number and size of each pixel component determines the storage size of each pixel format. For example, the storage size of [`MTLPixelFormat.bgra8Unorm`](mtlpixelformat/bgra8unorm.md) is 32 bits (four 8-bit components) and the storage size of [`MTLPixelFormat.bgr5A1Unorm`](mtlpixelformat/bgr5a1unorm.md) is 16 bits (three 5-bit components and one 1-bit component).
@@ -34,8 +32,6 @@ The number and size of each pixel component determines the storage size of each 
 For normalized signed integer formats (`Snorm`), values in the range `[-1.0, 1.0]` map to `[MIN_INT, MAX_INT]`, where `MIN_INT` is the greatest negative integer and `MAX_INT` is the greatest positive integer for the number of bits in the storage size. Positive values and zero distribute uniformly in the range `[0.0, 1.0]`, and negative integer values greater than `(MIN_INT + 1)` distribute uniformly in the range `(-1.0, 0.0)`.
 
 > ❗ **Important**:  For `Snorm` formats, the values `MIN_INT` and `(MIN_INT + 1)` both map to `-1.0`.
-
- For `Snorm` formats, the values `MIN_INT` and `(MIN_INT + 1)` both map to `-1.0`.
 
 For normalized unsigned integer formats (`Unorm`), values in the range `[0.0, 1.0]` are uniformly mapped to `[0, MAX_UINT]`, where `MAX_UINT` is the greatest unsigned integer for the number of bits in the storage size.
 
@@ -369,4 +365,4 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlpixelformat)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/mtlpixelformat)*

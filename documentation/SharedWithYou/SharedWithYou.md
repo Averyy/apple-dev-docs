@@ -1,6 +1,6 @@
 # Shared With You
 
-**Framework**: Shared With You  
+**Framework**: Sharedwithyou  
 **Kind**: module
 
 Surface shared content and collaborate in your app.
@@ -26,8 +26,6 @@ Access and view content shared from Messages across the system and continue the 
 Support a Shared with You shelf in your app to visually represent shared items with an [`SWAttributionView`](swattributionview.md) that the system renders. Securely share universal links that your app accesses using the [`SWHighlight`](swhighlight.md) class. For information on getting started, see [`Making your app content shareable`](making-your-app-content-shareable.md).
 
 > **Note**:  Session 10094: [`Add Shared with You to your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10094)
-
- Session 10094: [`Add Shared with You to your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10094)
 
 ## Topics
 

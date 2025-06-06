@@ -1,6 +1,6 @@
 # Audio Session Modes
 
-**Framework**: Audio Toolbox
+**Framework**: Audiotoolbox
 
 Mode identifiers for audio sessions, used as values for the [`kAudioSessionProperty_Mode`](kaudiosessionproperty_mode.md) property.
 
@@ -9,8 +9,6 @@ Mode identifiers for audio sessions, used as values for the [`kAudioSessionPrope
 Each app running in iOS has a single audio session, which in turn has a single mode. A mode refines the device’s audio configuration according to the purpose of the mode. You can change your audio session’s mode only when your audio session is inactive, and only if your audio session category is configured to disallow mixing with other apps.
 
 > **Note**:  Misusing a mode by setting it for an inappropriate audio session category—such as setting the [`kAudioSessionMode_VoiceChat`](kaudiosessionmode_voicechat.md) mode for the [`kAudioSessionCategory_AudioProcessing`](kaudiosessioncategory_audioprocessing.md) category—results in the behavior provided by the [`kAudioSessionMode_Default`](kaudiosessionmode_default.md) mode.
-
- Misusing a mode by setting it for an inappropriate audio session category—such as setting the [`kAudioSessionMode_VoiceChat`](kaudiosessionmode_voicechat.md) mode for the [`kAudioSessionCategory_AudioProcessing`](kaudiosessioncategory_audioprocessing.md) category—results in the behavior provided by the [`kAudioSessionMode_Default`](kaudiosessionmode_default.md) mode.
 
 ## Topics
 

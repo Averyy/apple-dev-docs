@@ -44,8 +44,6 @@ The sample wraps the `MTLEvent` API in the `AAPLEventWrapper` protocol accessed 
 
 > **Note**: Because the event’s signal counter is wrapped within `AAPLSingleDeviceEventWrapper`, it can be used as a bridge between two or more nodes that depend on each other in an execution graph. Without this bridge, the signal counter and the `MTLEvent` object wouldn’t be tightly paired, and this potential mismatch could lead to synchronization errors in your code (for example, you might use a wrong `MTLEvent` object for a signal counter, or vice versa).
 
-Because the event’s signal counter is wrapped within `AAPLSingleDeviceEventWrapper`, it can be used as a bridge between two or more nodes that depend on each other in an execution graph. Without this bridge, the signal counter and the `MTLEvent` object wouldn’t be tightly paired, and this potential mismatch could lead to synchronization errors in your code (for example, you might use a wrong `MTLEvent` object for a signal counter, or vice versa).
-
 The sample calls the `wait:` method to wait for a workload to complete execution.
 
 ```objective-c
@@ -73,8 +71,6 @@ The sample calls the `signal:` method to signal that a workload has completed ex
 ```
 
 > **Note**: You can reimplement this wrapper to support any other type of synchronization primitive, such as [`MTLSharedEvent`](mtlsharedevent.md), [`MTLFence`](mtlfence.md), or CPU-side routines.
-
-You can reimplement this wrapper to support any other type of synchronization primitive, such as [`MTLSharedEvent`](mtlsharedevent.md), [`MTLFence`](mtlfence.md), or CPU-side routines.
 
 ##### Manage Dependencies Between Filters
 
@@ -250,4 +246,4 @@ Finally, the sample calls the `signal:` method to indicate that the frame has be
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/implementing-a-multistage-image-filter-using-heaps-and-events)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/implementing-a-multistage-image-filter-using-heaps-and-events)*

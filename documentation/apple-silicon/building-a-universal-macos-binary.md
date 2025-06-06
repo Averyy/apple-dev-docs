@@ -1,6 +1,6 @@
 # Building a universal macOS binary
 
-**Framework**: Apple silicon
+**Framework**: Apple Silicon
 
 Create macOS apps and other executables that run natively on both Apple silicon and Intel-based Mac computers.
 
@@ -23,8 +23,6 @@ Turn all of your compiled code into universal binaries, not just apps. The follo
 - Kernel extensions
 
 > **Note**: You can build a universal binary on either an Apple silicon or Intel-based Mac computer, but you cannot debug the `arm64` slice of your binary on an Intel-based Mac computer. It’s possible to debug both slices of a universal binary on Apple silicon, but you must run the `x86_64` slice under Rosetta translation.
-
-You can build a universal binary on either an Apple silicon or Intel-based Mac computer, but you cannot debug the `arm64` slice of your binary on an Intel-based Mac computer. It’s possible to debug both slices of a universal binary on Apple silicon, but you must run the `x86_64` slice under Rosetta translation.
 
 ##### Download and Install Xcode on Your Mac Computer
 
@@ -62,8 +60,6 @@ universal_app: x86_app arm_app
 When writing code for a specific platform or processor type, isolate that code using the appropriate conditional compilation statements. For C-based code, the system defines a set of macros for you to use in `/usr/include/TargetConditionals.h`. The Swift language also supports conditional compilation using conditional compilation blocks.
 
 > **Note**: If you share code across multiple platforms, you can also use compiler-specific macros such as `__arm64__` or `__aarch64__` in conditional compilation statements. These macros don’t require you to include the `TargetConditionals.h` header file. For a list of compiler macros, see the compiler documentation.
-
-If you share code across multiple platforms, you can also use compiler-specific macros such as `__arm64__` or `__aarch64__` in conditional compilation statements. These macros don’t require you to include the `TargetConditionals.h` header file. For a list of compiler macros, see the compiler documentation.
 
 To distinguish code meant for a specific type of processor, add conditional compilation statements that target the appropriate architecture. Universal macOS apps support the `arm64` and `x86_64` architectures, and the following example shows how to write conditional code for those architectures in Swift:
 
@@ -157,8 +153,6 @@ If you never want users to run your app under Rosetta translation, add the [`LSR
 If you want to prioritize one architecture, without preventing users from running your app under translation, add the [`LSArchitecturePriority`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSArchitecturePriority) key to your app’s `Info.plist` file. The value of this key is an ordered array of strings, which define the priority order for selecting an architecture.
 
 > **Note**: If an app doesn’t contain an executable binary, the system may run it under Rosetta translation as a precautionary measure to prevent potential runtime issues. For example, the system runs script-only apps under Rosetta translation. If you verified that your app runs correctly on both Apple silicon and Intel-based Mac computers, add the [`LSArchitecturePriority`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSArchitecturePriority) key to your app’s `Info.plist` file and list the `arm64` architecture first.
-
-If an app doesn’t contain an executable binary, the system may run it under Rosetta translation as a precautionary measure to prevent potential runtime issues. For example, the system runs script-only apps under Rosetta translation. If you verified that your app runs correctly on both Apple silicon and Intel-based Mac computers, add the [`LSArchitecturePriority`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSArchitecturePriority) key to your app’s `Info.plist` file and list the `arm64` architecture first.
 
 ## See Also
 

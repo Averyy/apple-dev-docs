@@ -30,8 +30,6 @@ This operation consumes the job, preventing it accidental use after it has been 
 
 > **Note**: `runSynchronously(on:)`
 
-`runSynchronously(on:)`
-
 ## Parameters
 
 - `serialExecutor`: The executor this job will be semantically running on.

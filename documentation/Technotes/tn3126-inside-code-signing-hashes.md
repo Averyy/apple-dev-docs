@@ -25,8 +25,6 @@ Code signing is a foundational technology on all Apple platforms.  Many document
 
 > ❗ **Important**: The  technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
-The  technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
-
 #### Code Signature Storage
 
 The code signature for an item is stored in one of four ways:
@@ -80,8 +78,6 @@ Authority=Apple Development: …
 
 > ❗ **Important**: Storing a code signature in EAs is brittle because many file transfer mechanisms drop these.  To avoid this potential pitfall, follow the rules in [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).
 
-Storing a code signature in EAs is brittle because many file transfer mechanisms drop these.  To avoid this potential pitfall, follow the rules in [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).
-
 For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).  Specifically, the `codesign` man page is the key reference if you’re working at this level.
 
 #### Code Directory
@@ -89,8 +85,6 @@ For more information about the tools used in these examples, read their man page
 The central concept in a code signature is the .  This is a data structure that holds all of the info about the code that was signed.  It’s this data structure that’s signed as part of the signing process.  Hashes within this data structure seal the executable pages, resources, and metadata of the code.
 
 > **Note**: The final code signature uses Cryptographic Message Syntax.  To learn more about this implementation detail, see [`TN3161: Inside Code Signing: Certificates`](tn3161-inside-code-signing-certificates.md).
-
-The final code signature uses Cryptographic Message Syntax.  To learn more about this implementation detail, see [`TN3161: Inside Code Signing: Certificates`](tn3161-inside-code-signing-certificates.md).
 
 In a universal binary, each architecture is signed independently, each with its own code directory.
 
@@ -129,8 +123,6 @@ CDHash=dec2275a0e3800fefd1c84c76cd01756984a74c1
 ```
 
 > **Note**: The command above includes the `--arch x86_64` option to show the Intel code signature.  Without that `codesign` shows the code signature for the architecture on which you run the command.  So, if you’re on Apple silicon, you’ll see the Apple silicon code signature.  Apple silicon debuted with macOS 11, and thus Apple silicon code never includes a legacy SHA-1 code directory.
-
-The command above includes the `--arch x86_64` option to show the Intel code signature.  Without that `codesign` shows the code signature for the architecture on which you run the command.  So, if you’re on Apple silicon, you’ll see the Apple silicon code signature.  Apple silicon debuted with macOS 11, and thus Apple silicon code never includes a legacy SHA-1 code directory.
 
 The `CDHash` property is the cdhash value used by this Mac; it’s the strongest `CandidateCDHash` value understood by this version of macOS.  The `CandidateCDHash` and `CandidateCDHashFull` properties are alternative cdhash values, each specifying a hash algorithm.  The `Full` variant includes the full hash, while the other variant is truncated to 20 bytes to match SHA-1.
 
@@ -197,8 +189,6 @@ This per-page architecture allows the kernel to check each page as it’s loaded
 macOS doesn’t  check code as it’s paged in.  One key feature of the [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime) is that it opts the process into this checking by default.  The [`Disable Executable Memory Protection Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-executable-page-protection) opts you out of this and other security features.  Don’t do that!
 
 > **Note**: The [`Disable Executable Memory Protection Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-executable-page-protection) only has this effect on Intel code. For Apple silicon code, this entitlement leaves page protection enabled, making it equivalent to the [`Allow Unsigned Executable Memory Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-unsigned-executable-memory).
-
-The [`Disable Executable Memory Protection Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-executable-page-protection) only has this effect on Intel code. For Apple silicon code, this entitlement leaves page protection enabled, making it equivalent to the [`Allow Unsigned Executable Memory Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-unsigned-executable-memory).
 
 #### Special Slots
 
@@ -274,8 +264,6 @@ Now let’s look at that file:
 It’s a property list with four top-level dictionaries: `files`, `files2`, `rules`, and `rules2`.  Amusingly, three out of four of these items are vestigial.  The one that matters is `files2`.
 
 > **Note**: The `files` dictionary contains SHA-1 hashes and is present for compatibility purposes.  The `rules` and `rules2` dictionaries contain resource rules, a concept that’s now obsolete.  For more on the move away from resource rules, see Technote 2206 [`macOS Code Signing In Depth`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2206/_index.html).
-
-The `files` dictionary contains SHA-1 hashes and is present for compatibility purposes.  The `rules` and `rules2` dictionaries contain resource rules, a concept that’s now obsolete.  For more on the move away from resource rules, see Technote 2206 [`macOS Code Signing In Depth`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2206/_index.html).
 
 The `files2` dictionary contains two kinds of items.  The first kind of item is a reference to a resource file.  For example:
 
@@ -358,8 +346,6 @@ In theory this lets you update the nested code with a new version, as long as it
 
 > ❗ **Important**: iOS, watchOS, and tvOS have a different model for nested code.  They put strict limits on where you can place nested code.  For details on those limits, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).  Also, when you nest code in an app, the app references that nested code as a collection of resource files rather than using a single nested code reference.  Nested code references are only used on macOS.
 
-iOS, watchOS, and tvOS have a different model for nested code.  They put strict limits on where you can place nested code.  For details on those limits, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).  Also, when you nest code in an app, the app references that nested code as a collection of resource files rather than using a single nested code reference.  Nested code references are only used on macOS.
-
 For more information about code signing requirements, see [`TN3127: Inside Code Signing: Requirements`](tn3127-inside-code-signing-requirements.md).
 
 #### Revision History
@@ -405,4 +391,4 @@ For more information about code signing requirements, see [`TN3127: Inside Code 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3126-inside-code-signing-hashes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3126-inside-code-signing-hashes)*

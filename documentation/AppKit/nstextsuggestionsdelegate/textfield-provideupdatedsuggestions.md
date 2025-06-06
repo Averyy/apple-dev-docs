@@ -1,6 +1,6 @@
 # textField(_:provideUpdatedSuggestions:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method  
 **Required**: Yes
 
@@ -77,11 +77,7 @@ func textField(
 
 > **Note**: `responseHandler` must be called on the main thread. This can be (and should be for best user experience) called once synchronously from this function call to provide immediate response to the user typing in text. But, it can optionally be called additional times later if more results can be provided asynchronously (such as making a network request). Note that this closure is unique each time this function is called. Invoking a previously-provided closure will be ignored, therefore not negatively impacting the results the user sees by displaying results incongruous to the text field’s contents. If possible, it’s a good idea to cancel any long-running or expensive operations called for previous search requests when this function is called again.
 
-`responseHandler` must be called on the main thread. This can be (and should be for best user experience) called once synchronously from this function call to provide immediate response to the user typing in text. But, it can optionally be called additional times later if more results can be provided asynchronously (such as making a network request). Note that this closure is unique each time this function is called. Invoking a previously-provided closure will be ignored, therefore not negatively impacting the results the user sees by displaying results incongruous to the text field’s contents. If possible, it’s a good idea to cancel any long-running or expensive operations called for previous search requests when this function is called again.
-
 > **Note**: This function is automatically called when the text field’s text or tokens change and the system determines that new suggestions are needed. This function may or may not be called with a delay for debouncing purposes.
-
-This function is automatically called when the text field’s text or tokens change and the system determines that new suggestions are needed. This function may or may not be called with a delay for debouncing purposes.
 
 ## Parameters
 

@@ -107,8 +107,6 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10,
 
 > **Note**: Session 10165: [`What’s new in Xcode 15`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10165)
 
-Session 10165: [`What’s new in Xcode 15`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10165)
-
 ##### Code
 
 - Use code completion more effectively. Xcode uses more sources of input for code completion, prioritizes completions based on context, and improves the display of parameter options.
@@ -119,10 +117,6 @@ Session 10165: [`What’s new in Xcode 15`](https://developer.apple.comhttps://d
 - Use mergeable dynamic libraries to get app launch times similar to static linking in release builds, without losing dynamically linked build times in debug builds. See [`Configuring your project to use mergeable libraries`](https://developer.apple.com/documentation/Xcode/configuring-your-project-to-use-mergeable-libraries).
 
 > **Note**: Session 10166: [`Write Swift macros`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10166) Session 10268: [`Meet mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10268)
-
-Session 10166: [`Write Swift macros`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10166)
-
-Session 10268: [`Meet mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10268)
 
 ##### Interface
 
@@ -135,8 +129,6 @@ Session 10268: [`Meet mergeable libraries`](https://developer.apple.comhttps://d
 
 > **Note**: Session 10252: [`Build programmatic UI using Xcode Previews`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10252)
 
-Session 10252: [`Build programmatic UI using Xcode Previews`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10252)
-
 ##### Documentation
 
 - Preview your docs in real time. Access the new Documentation Preview assistant from the assistant jump bar.
@@ -145,8 +137,6 @@ Session 10252: [`Build programmatic UI using Xcode Previews`](https://developer.
 - Use DocC to document Swift extensions.
 
 > **Note**: Session 10244: [`Create rich documentation with Swift DocC`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10244)
-
-Session 10244: [`Create rich documentation with Swift DocC`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10244)
 
 ##### Tuning and Debugging
 
@@ -160,10 +150,6 @@ Session 10244: [`Create rich documentation with Swift DocC`](https://developer.a
 
 > **Note**: Session 10226: [`Debug with structured logging`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10226) Session 10175: [`Fix failures faster with Xcode test reports`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10175)
 
-Session 10226: [`Debug with structured logging`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10226)
-
-Session 10175: [`Fix failures faster with Xcode test reports`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10175)
-
 ##### Distribution and Continuous Integration
 
 - Use streamlined options in the Xcode Organizer window to distribute your app using recommended settings. Choose from several preconfigured methods of distribution or create a custom configuration for your needs.  See [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/Xcode/distributing-your-app-for-beta-testing-and-releases).
@@ -173,8 +159,6 @@ Session 10175: [`Fix failures faster with Xcode test reports`](https://developer
 - Xcode Server is no longer available as a part of Xcode. Use Xcode Cloud instead.
 
 > **Note**: Session 10224: [`Simplify distribution in Xcode and Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10224)
-
-Session 10224: [`Simplify distribution in Xcode and Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10224)
 
 ## See Also
 
@@ -212,4 +196,4 @@ Session 10224: [`Simplify distribution in Xcode and Xcode Cloud`](https://develo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/updates/xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Updates/xcode)*

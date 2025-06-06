@@ -31,8 +31,6 @@ You can make a resource  (available in GPU memory) for the remaining duration of
 
 > **Note**:  You don’t need to call this method if you bind a resource for compute kernels to access.
 
- You don’t need to call this method if you bind a resource for compute kernels to access.
-
 The method also informs Metal when to apply hazard tracking for a resource you create with [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md). For a resource you create with [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md), you need to apply an [`MTLFence`](mtlfence.md) or an [`MTLEvent`](mtlevent.md) to account for potential reading and writing hazards.
 
 You can reconfigure an individual resource’s `usage` options for subsequent draw calls in the same render pass by calling this method again.

@@ -1,6 +1,6 @@
 # Revoke Subscription
 
-**Framework**: Advanced Commerce API  
+**Framework**: Advancedcommerceapi  
 **Kind**: httpRequest
 
 Immediately cancel a customer’s subscription and all the items that are included in the subscription, and request a full or prorated refund.
@@ -11,8 +11,8 @@ Immediately cancel a customer’s subscription and all the items that are includ
 ## Mentions
 
 - [Advanced Commerce API changelog](changelog.md)
-- [Authorizing API requests from your server](authorizing-server-calls.md)
 - [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
+- [Authorizing API requests from your server](authorizing-server-calls.md)
 
 #### Discussion
 
@@ -21,8 +21,6 @@ When this endpoint succeeds, the system sets the subscription’s auto-renew sta
 To cancel a subscription at the end of the current period instead, see [`Cancel a Subscription`](cancel-a-subscription.md).
 
 > **Note**: To use the `Revoke Subscription` endpoint, your membership Account Holder must sign the Advanced Commerce API Addendum, and you must meet certain eligibility requirements. For more information, see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/). If the most recent version of this agreement isn’t yet accepted, you can’t call this endpoint, and it returns an error.
-
-To use the `Revoke Subscription` endpoint, your membership Account Holder must sign the Advanced Commerce API Addendum, and you must meet certain eligibility requirements. For more information, see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/). If the most recent version of this agreement isn’t yet accepted, you can’t call this endpoint, and it returns an error.
 
 Refer to the Advanced Commerce API Addendum to learn the use cases for the [`Cancel a Subscription`](cancel-a-subscription.md), `Revoke Subscription`, and [`Request Transaction Refund`](request-transaction-refund.md) APIs.
 
@@ -36,4 +34,4 @@ Refer to the Advanced Commerce API Addendum to learn the use cases for the [`Can
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/revoke-subscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/revoke-subscription)*

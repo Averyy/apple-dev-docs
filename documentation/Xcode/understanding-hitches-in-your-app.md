@@ -10,8 +10,6 @@ Human perception is very sensitive to interruptions in motion. When a fluid moti
 
 > **Note**:  This article assumes a basic understanding of the event-handling and rendering loop, as well as a basic understanding of hangs and hitches, and how they differ. If you’re not familiar with hangs and hitches, see [`Understanding user interface responsiveness`](understanding-user-interface-responsiveness.md) for more information about them, as well as the event-handling and rendering loop.
 
- This article assumes a basic understanding of the event-handling and rendering loop, as well as a basic understanding of hangs and hitches, and how they differ. If you’re not familiar with hangs and hitches, see [`Understanding user interface responsiveness`](understanding-user-interface-responsiveness.md) for more information about them, as well as the event-handling and rendering loop.
-
 An interruption in motion occurs when the display doesn’t update at the expected pace. The display doesn’t update in time when the next frame isn’t ready for display, so the frame is late.
 
 A delay due to a late frame often causes the system to skip one or more subsequent frames, which is why such behavior is also referred to as a . However, dropping a frame is just one potential response the system uses to recover from a late frame, and not every hitch causes a frame drop.
@@ -19,8 +17,6 @@ A delay due to a late frame often causes the system to skip one or more subseque
 When a frame is late, it’s usually due to a delay occurring somewhere in the render loop. These delays are the result of a delay in the main thread, most often in the commit phase, known as a , or a delay in the render phase, known as a .
 
 > 💡 **Tip**:  Hitches are related to hangs because an unresponsive main thread can cause both. Whether long-running work on the main thread causes a commit hitch or a hang depends on which user interaction the main thread work coincides with. The hang detection tools detect all cases of extended unresponsive main thread periods, so they can also detect a major source of commit hitches. If you fix all hangs in the area of the app you’re investigating, you’re likely to eliminate many hitches as well. For more information about hangs, see [`Understanding hangs in your app`](understanding-hangs-in-your-app.md).
-
- Hitches are related to hangs because an unresponsive main thread can cause both. Whether long-running work on the main thread causes a commit hitch or a hang depends on which user interaction the main thread work coincides with. The hang detection tools detect all cases of extended unresponsive main thread periods, so they can also detect a major source of commit hitches. If you fix all hangs in the area of the app you’re investigating, you’re likely to eliminate many hitches as well. For more information about hangs, see [`Understanding hangs in your app`](understanding-hangs-in-your-app.md).
 
 ##### Understand the Render Loop
 
@@ -67,8 +63,6 @@ Although the begin time and the commit deadline often align with a vsync, this i
 
 > **Note**: In most cases, the begin time and the commit deadline align with a vsync, so the illustrations in this article represent that scenario. However, if they differ, or if you plan to make calculations based on these times, use the begin time, commit deadline, and presentation time of the relevant API instead of vsyncs.
 
-In most cases, the begin time and the commit deadline align with a vsync, so the illustrations in this article represent that scenario. However, if they differ, or if you plan to make calculations based on these times, use the begin time, commit deadline, and presentation time of the relevant API instead of vsyncs.
-
 ##### Understand Frame Lifetime and Hitch Duration
 
 Most Apple devices operate in a double-buffer mode, meaning that the render server and the display driver share two buffers. The display driver uses one buffer to read pixel values for the screen, and the render server uses the other buffer to render the next frame for display. When the vsync occurs, the render server and the display driver switch buffers. So the display driver uses the newly rendered buffer to update the screen, and the render server renders a new frame into the buffer that the display driver used for the previous frame.
@@ -109,8 +103,6 @@ Even though rendering occurs inside the render server and not in the app itself,
 
 > **Note**:  For more information, see [`Explore UI animation hitches and the render loop`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/10855/).
 
- For more information, see [`Explore UI animation hitches and the render loop`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/10855/).
-
 ## See Also
 
 - [Analyzing responsiveness issues in your shipping app](analyzing-responsiveness-issues-in-your-shipping-app.md)
@@ -133,4 +125,4 @@ Even though rendering occurs inside the render server and not in the app itself,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/understanding-hitches-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/understanding-hitches-in-your-app)*

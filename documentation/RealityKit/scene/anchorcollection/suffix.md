@@ -1,6 +1,6 @@
 # suffix(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a subsequence, up to the given maximum length, containing the final elements of the collection.
@@ -35,8 +35,6 @@ print(numbers.suffix(10))
 ```
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
 
 ## Parameters
 

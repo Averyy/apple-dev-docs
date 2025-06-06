@@ -1,6 +1,6 @@
 # configure(_:)
 
-**Framework**: TipKit  
+**Framework**: Tipkit  
 **Kind**: method
 
 Loads and configures the persistent state of all tips in your app.
@@ -23,8 +23,6 @@ static func configure(_ configuration: [Tips.ConfigurationOption] = []) throws
 #### Discussion
 
 > **Note**: This function must be called before tips display in your app.
-
-This function must be called before tips display in your app.
 
 Call this function during app initialization. By default, all tips persist to a default location with a display frequency of [`immediate`](tips/configurationoption/displayfrequency/immediate.md).
 

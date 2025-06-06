@@ -112,8 +112,6 @@ On initialization, the `HandTrackingSystem` starts a task that calls the `runSes
 
 > 💡 **Tip**: If you want to later cancel `runSession()`, keep a reference to the `Task` that encapsulates it.
 
-If you want to later cancel `runSession()`, keep a reference to the `Task` that encapsulates it.
-
 The `runSession()` method starts an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) with the [`HandTrackingProvider`](https://developer.apple.com/documentation/ARKit/HandTrackingProvider):
 
 ```swift
@@ -177,8 +175,6 @@ func addJoints(to handEntity: Entity, handComponent: inout HandTrackingComponent
 The [`System`](https://developer.apple.com/documentation/RealityKit/System) protocol has an [`update(context:)`](https://developer.apple.com/documentation/RealityKit/System/update(context:)) method that the app calls for each scene update, to update its hand entities.
 
 > **Note**: The [`update(context:)`](https://developer.apple.com/documentation/RealityKit/System/update(context:)) instance method is required to create a custom system.
-
-The [`update(context:)`](https://developer.apple.com/documentation/RealityKit/System/update(context:)) instance method is required to create a custom system.
 
 The app finds the hand entities for each scene update with an [`EntityQuery`](https://developer.apple.com/documentation/RealityKit/EntityQuery) instance that retrieves entities with a hand-tracking component.
 
@@ -277,4 +273,4 @@ The `makeHandEntities(in:)` method creates the left- and right-hand entities, an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/tracking-and-visualizing-hand-movement)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/tracking-and-visualizing-hand-movement)*

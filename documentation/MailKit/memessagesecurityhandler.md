@@ -1,6 +1,6 @@
 # MEMessageSecurityHandler
 
-**Framework**: MailKit  
+**Framework**: Mailkit  
 **Kind**: protocol
 
 An object that digitally signs or encrypts messages the user sends and receives.
@@ -26,8 +26,6 @@ As the user composes a mail message, MailKit calls [`getEncodingStatus(for:compo
 When MailKit needs the original message content, it invokes the handler’s [`decodedMessage(forMessageData:)`](memessagedecoder/decodedmessage(formessagedata:).md) method. This method creates an instance of [`MEDecodedMessage`](medecodedmessage.md) that includes the raw decoded message data and the details of who signed the message in an instance of [`MEMessageSecurityInformation`](memessagesecurityinformation.md).
 
 > **Note**:  MailKit stores the encrypted and signed message content. Therefore, MailKit may ask a message security handler to decode the same message repeatedly over time when it needs the decoded original message content.
-
- MailKit stores the encrypted and signed message content. Therefore, MailKit may ask a message security handler to decode the same message repeatedly over time when it needs the decoded original message content.
 
 To indicate that your extension contains a message security handler, add `MEMessageSecurityHandler` to the [`MEExtensionCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/MEExtensionCapabilities) array in the extension’s `Info.plist` file:
 
@@ -78,4 +76,4 @@ To indicate that your extension contains a message security handler, add `MEMess
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mailkit/memessagesecurityhandler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MailKit/memessagesecurityhandler)*

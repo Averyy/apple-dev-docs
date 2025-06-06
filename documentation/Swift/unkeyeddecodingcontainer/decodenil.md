@@ -31,8 +31,6 @@ If the value is not null, does not increment currentIndex.
 
 > **Note**: `DecodingError.valueNotFound` if there are no more values to decode.
 
-`DecodingError.valueNotFound` if there are no more values to decode.
-
 
 ---
 

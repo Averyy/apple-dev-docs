@@ -1,6 +1,6 @@
 # Deleting persistent data from your app
 
-**Framework**: SwiftData
+**Framework**: Swiftdata
 
 Explore different ways to use SwiftData to delete persistent data.
 
@@ -20,8 +20,6 @@ Data-driven apps typically provide a way for a person to delete data, and this s
 - Deleting all
 
 > **Note**: If you want to learn how to add and edit data using SwiftData, see [`Adding and editing persistent data in your app`](adding-and-editing-persistent-data-in-your-app.md).
-
-If you want to learn how to add and edit data using SwiftData, see [`Adding and editing persistent data in your app`](adding-and-editing-persistent-data-in-your-app.md).
 
 #### Swipe to Delete
 
@@ -89,8 +87,6 @@ private func removeAnimals(at indexSet: IndexSet) {
 ```
 
 > **Note**: To disable the autosave feature, set the `isAutoSaveEnabled` parameter to `false` when creating the model container using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/SwiftUI/View/modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)-18hhy) modifier. You can also disable autosave by setting set the model context property [`autosaveEnabled`](modelcontext/autosaveenabled.md) to `false`.
-
-To disable the autosave feature, set the `isAutoSaveEnabled` parameter to `false` when creating the model container using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/SwiftUI/View/modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)-18hhy) modifier. You can also disable autosave by setting set the model context property [`autosaveEnabled`](modelcontext/autosaveenabled.md) to `false`.
 
 #### Delete with Confirmation
 
@@ -213,4 +209,4 @@ To delete all persistent data from your app and not just data of a certain model
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/deleting-persistent-data-from-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/deleting-persistent-data-from-your-app)*

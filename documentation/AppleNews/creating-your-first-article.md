@@ -1,6 +1,6 @@
 # Creating Your First Article
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Create an article with text components and component text styles.
 
@@ -30,8 +30,6 @@ After you make this change in your code, you can preview your working `article.j
 The body content in the example is in HTML. For details about using HTML tags to format articles, see [`Using HTML with Apple News Format`](using-html-with-apple-news-format.md).
 
 > ❗ **Important**:  Make sure to save your `article.json` file. Do not change the file name.
-
- Make sure to save your `article.json` file. Do not change the file name.
 
 ###### Components Copy This Code
 
@@ -255,8 +253,6 @@ A drop cap changes the size, position, and style of a text component’s first c
 
 > **Note**:  The drop cap text style was named `dropCapStyle` for this tutorial, but when you create your own articles, you can create your own component and style names.
 
- The drop cap text style was named `dropCapStyle` for this tutorial, but when you create your own articles, you can create your own component and style names.
-
 1. Copy the example code [`bodyFirstDropCap: Copy This Code`](creating-your-first-article#bodyFirstDropCap-Copy-This-Code.md).
 2. Paste the code inside the `ArticleDocument.componentTextStyles` object in your `article.json` file, after the closing brace (`}`) of the last `ComponentTextStyle` object and before the closing brace for the whole `componentTextStyles` property.
 
@@ -383,4 +379,4 @@ The drop cap in your article now uses the new height that you chose. If you chos
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/creating-your-first-article)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/creating-your-first-article)*

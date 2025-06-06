@@ -1,6 +1,6 @@
 # Creating a camera experience for the Lock Screen
 
-**Framework**: LockedCameraCapture
+**Framework**: Lockedcameracapture
 
 Offer your app’s camera experience on locked devices from Control Center, the Lock Screen, and the Action button.
 
@@ -27,8 +27,6 @@ The Locked Camera Capture Extension template provides everything you need to sta
 The template creates an extension target that contains an implementation of [`LockedCameraCaptureUIScene`](lockedcameracaptureuiscene.md) that uses a [`UIImagePickerController`](https://developer.apple.com/documentation/UIKit/UIImagePickerController) to capture content using the rear camera.
 
 > **Note**: The capture extension inherits camera permissions from your app. If the person hasn’t granted access, the system prompts them to authenticate and unlock their device. It then opens the app and the app requests access. For more information about requesting camera access, refer to [`Requesting authorization to capture and save media`](https://developer.apple.com/documentation/AVFoundation/requesting-authorization-to-capture-and-save-media).
-
-The capture extension inherits camera permissions from your app. If the person hasn’t granted access, the system prompts them to authenticate and unlock their device. It then opens the app and the app requests access. For more information about requesting camera access, refer to [`Requesting authorization to capture and save media`](https://developer.apple.com/documentation/AVFoundation/requesting-authorization-to-capture-and-save-media).
 
 ##### Launch Your App Extension
 
@@ -188,4 +186,4 @@ for await update in LockedCameraCaptureManager.shared.sessionContentUpdates {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/lockedcameracapture/creating-a-camera-experience-for-the-lock-screen)*
+*[View on Apple Developer](https://developer.apple.com/documentation/LockedCameraCapture/creating-a-camera-experience-for-the-lock-screen)*

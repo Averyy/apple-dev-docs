@@ -26,8 +26,6 @@ The [`enqueue()`](mtlcommandbuffer/enqueue().md) method adds the command buffer 
 
 > **Note**:  The command buffer can only reserve a place in its queue a single time; all subsequent [`enqueue()`](mtlcommandbuffer/enqueue().md) calls have no effect.
 
- The command buffer can only reserve a place in its queue a single time; all subsequent [`enqueue()`](mtlcommandbuffer/enqueue().md) calls have no effect.
-
 Enqueuing your command buffers first gives you the flexibility to arrange their relative order of execution before encoding commands to any of them. This approach lets you potentially encode each command buffer on a thread, in parallel, instead of encoding them one by one on a single thread. The order in which each worker thread finishes encoding and commits its command buffer doesn’t matter when you enqueue them in order before committing.
 
 ## See Also

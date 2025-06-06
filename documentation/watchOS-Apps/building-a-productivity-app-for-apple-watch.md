@@ -14,8 +14,6 @@ Create a watch app to manage and share a task list and visualize the status with
 
 > **Note**: This sample code project is associated with WWDC22 session [`10133: Build a productivity app for Apple Watch`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10133/).
 
-This sample code project is associated with WWDC22 session [`10133: Build a productivity app for Apple Watch`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10133/).
-
 ##### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode:
@@ -37,4 +35,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/building-a-productivity-app-for-apple-watch)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/building-a-productivity-app-for-apple-watch)*

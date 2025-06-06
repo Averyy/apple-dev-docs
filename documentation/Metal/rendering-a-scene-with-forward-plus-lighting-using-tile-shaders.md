@@ -14,8 +14,6 @@ Implement a forward plus renderer using the latest features on Apple GPUs.
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`601: Modern Rendering with Metal`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/601/).
 
-This sample code project is associated with WWDC 2019 session [`601: Modern Rendering with Metal`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/601/).
-
 ##### Configure the Sample Code Project
 
 To run the app:
@@ -37,4 +35,4 @@ To run the app:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/rendering-a-scene-with-forward-plus-lighting-using-tile-shaders)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/rendering-a-scene-with-forward-plus-lighting-using-tile-shaders)*

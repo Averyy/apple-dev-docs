@@ -1,6 +1,6 @@
 # Modifying RealityKit rendering using custom materials
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Write Metal shader functions to implement custom rendering effects.
 
@@ -9,8 +9,6 @@ Write Metal shader functions to implement custom rendering effects.
 RealityKit provides several types of materials that render entities using different techniques. Two examples are [`PhysicallyBasedMaterial`](physicallybasedmaterial.md), which renders entities in highly realistic fashion, and [`UnlitMaterial`](unlitmaterial.md), which renders without any shadow or lighting effects. On iOS 15 and later, [`CustomMaterial`](custommaterial.md) allows you to write shader functions in Metal to modify how RealityKit renders an entity, while still leveraging RealityKit’s built-in shader pipeline.
 
 > **Note**: For the Metal API documentation for custom material shader functions, see [`the Metal RealityKit APIs PDF.`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-RealityKit-APIs.pdf)
-
-For the Metal API documentation for custom material shader functions, see [`the Metal RealityKit APIs PDF.`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-RealityKit-APIs.pdf)
 
 Custom materials support two types of custom Metal shader functions:  and . Surface shaders are responsible for specifying the final attributes of each pixel that RealityKit draws to render the entity. They also support an optional geometry modifier, which you can use to manipulate the location of the model’s vertices, allowing you to dynamically change the size or shape of the entity.
 
@@ -120,8 +118,6 @@ void simpleGeometryModifier(realitykit::geometry_parameters params)
 
 > ❗ **Important**: If your geometry modifier moves any vertices outside of the entity’s bounding box, assign a value to [`boundsMargin`](modelcomponent/boundsmargin.md) to enlarge the bounding box and prevent RealityKit from incorrectly culling the entity.
 
-If your geometry modifier moves any vertices outside of the entity’s bounding box, assign a value to [`boundsMargin`](modelcomponent/boundsmargin.md) to enlarge the bounding box and prevent RealityKit from incorrectly culling the entity.
-
 ##### Load the Custom Shaders
 
 To create a custom material for an entity, first load the Metal library that contains your shader functions, then load the functions by name, as the following sample code demonstrates:
@@ -221,4 +217,4 @@ You can download RealityKit’s custom shader Metal API documentation from [`the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/modifying-realitykit-rendering-using-custom-materials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/modifying-realitykit-rendering-using-custom-materials)*

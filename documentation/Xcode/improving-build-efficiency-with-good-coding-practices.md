@@ -12,8 +12,6 @@ Over the years, Xcode’s compiler has introduced optimizations to speed up comp
 
 > **Note**: You can also optimize build times through project-level changes. For more information on optimizing build times, see [`Improving the speed of incremental builds`](improving-the-speed-of-incremental-builds.md).
 
-You can also optimize build times through project-level changes. For more information on optimizing build times, see [`Improving the speed of incremental builds`](improving-the-speed-of-incremental-builds.md).
-
 ##### Include Framework Names in Import Statements
 
 When you import headers into your source files, always include the name of the parent framework or library in your import statement. In C-based code, importing headers usually copies the contents of the header file into your source. When you include the framework name, the compiler has the option to use module maps to import the headers, which significantly reduces importation time. With module maps, the compiler loads and processes the framework’s header files once, and caches the resulting symbol information on disk. When you import the same framework from another source file, the compiler reuses the cached data, eliminating the need to again read and preprocess the header files.
@@ -148,4 +146,4 @@ func sumNonOptional(i: Int?, j: Int?, k: Int?) -> Int? {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/improving-build-efficiency-with-good-coding-practices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/improving-build-efficiency-with-good-coding-practices)*

@@ -26,11 +26,7 @@ A variable color animation draws attention to a symbol by changing the opacity o
 
 > **Note**:  Variable color animations affect only symbols containing variable color layers.
 
- Variable color animations affect only symbols containing variable color layers.
-
 > ❗ **Important**:  Because SwiftUI is a state-driven framework, you pass a `value` parameter when adding discrete effects, like bounce. You trigger the animation by changing the `value` parameter. Because AppKit and UIKit are event-driven frameworks, discrete effects animate automatically when added to an image view.
-
- Because SwiftUI is a state-driven framework, you pass a `value` parameter when adding discrete effects, like bounce. You trigger the animation by changing the `value` parameter. Because AppKit and UIKit are event-driven frameworks, discrete effects animate automatically when added to an image view.
 
 ```swift
 // Add an effect in SwiftUI.
@@ -118,4 +114,4 @@ imageView2.addSymbolEffect(.variableColor.hideInactiveLayers.cumulative, options
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/symbols/variablecolorsymboleffect)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Symbols/variablecolorsymboleffect)*

@@ -1,6 +1,6 @@
 # Transient()
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: macro
 
 Tells SwiftData not to persist the annotated property when managing the owning class.
@@ -31,8 +31,6 @@ Tells SwiftData not to persist the annotated property when managing the owning c
 If your model class has one or more stored properties that you want to omit from writes to the persistent storage, annotate each of those properties with the `@Transient` macro.
 
 > **Note**: By default, SwiftData considers any computed properties to be transient. You don’t need to explicitly annotate those properties.
-
-By default, SwiftData considers any computed properties to be transient. You don’t need to explicitly annotate those properties.
 
 ```swift
 @Model

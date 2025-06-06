@@ -12,8 +12,6 @@ You use a URL session instance to create the task. If your needs are fairly simp
 
 > **Note**:  Be careful to not create more sessions than you need. For example, if you have several parts of your app that need a similarly configured session, create one session and share it among them.
 
- Be careful to not create more sessions than you need. For example, if you have several parts of your app that need a similarly configured session, create one session and share it among them.
-
 Once you have a session, you create a data task with one of the `dataTask()` methods. Tasks are created in a suspended state, and can be started by calling [`resume()`](urlsessiontask/resume().md).
 
 ##### Receive Results with a Completion Handler
@@ -59,8 +57,6 @@ func startLoad() {
 ```
 
 > ❗ **Important**:  The completion handler is called on a different Grand Central Dispatch queue than the one that created the task. Therefore, any work that uses `data` or `error` to update the UI — like updating `webView` — should be explicitly placed on the main queue, as shown here.
-
- The completion handler is called on a different Grand Central Dispatch queue than the one that created the task. Therefore, any work that uses `data` or `error` to update the UI — like updating `webView` — should be explicitly placed on the main queue, as shown here.
 
 ##### Receive Transfer Details and Results with a Delegate
 
@@ -149,4 +145,4 @@ The various delegate protocols offer methods beyond those shown in the above cod
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/fetching-website-data-into-memory)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/fetching-website-data-into-memory)*

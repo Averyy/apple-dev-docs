@@ -8,8 +8,6 @@ Edit, build, and add example order packages to Wallet.
 
 > **Note**: This sample code project is associated with WWDC22 [`session 10041`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10041).
 
-This sample code project is associated with WWDC22 [`session 10041`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10041).
-
 ## See Also
 
 - [Creating the source for an order](creating-the-source-for-an-order.md)
@@ -26,4 +24,4 @@ This sample code project is associated with WWDC22 [`session 10041`](https://dev
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/walletorders/example-order-packages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WalletOrders/example-order-packages)*

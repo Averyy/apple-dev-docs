@@ -34,8 +34,6 @@ Calling this method may invalidate any existing indices for use with this collec
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `bounds`: The subrange of the collection to remove. The bounds   of the range must be valid indices of the collection.

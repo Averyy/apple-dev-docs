@@ -26,8 +26,6 @@ To help protect people’s privacy, visionOS limits app access to cameras and ot
 
 > **Note**: In visionOS, ARKit is only available in an immersive space. See [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
 
-In visionOS, ARKit is only available in an immersive space. See [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
-
 ##### Access and Display Main Camera Frames
 
 The following code example accesses and displays the left main camera at the highest available resolution. To access the camera, start an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) with a [`CameraFrameProvider`](https://developer.apple.com/documentation/ARKit/CameraFrameProvider), and then request [`CameraFrameProvider.CameraFrameUpdates`](https://developer.apple.com/documentation/ARKit/CameraFrameProvider/CameraFrameUpdates) in a given format. ARKit delivers a stream of [`CameraFrame`](https://developer.apple.com/documentation/ARKit/CameraFrame) instances; each frame includes a [`CameraFrame.Sample`](https://developer.apple.com/documentation/ARKit/CameraFrame/Sample) containing a [`pixelBuffer`](https://developer.apple.com/documentation/ARKit/CameraFrame/Sample/pixelBuffer) and [`CameraFrame.Sample.Parameters`](https://developer.apple.com/documentation/ARKit/CameraFrame/Sample/Parameters-swift.struct) describing the frame’s characteristics.
@@ -127,4 +125,4 @@ extension CVPixelBuffer {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/accessing-the-main-camera)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/accessing-the-main-camera)*

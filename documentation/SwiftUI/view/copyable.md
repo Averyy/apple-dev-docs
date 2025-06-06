@@ -1,6 +1,6 @@
 # copyable(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Specifies a list of items to copy in response to the system’s Copy command.
@@ -80,8 +80,6 @@ This example does two things that the previous example didn’t have to:
 When someone copies the first item in the list, which appears in the interface as a red rectangle, and then pastes into a text editor, they get the string “red”.
 
 > **Note**: To enable people to copy using a custom action — like from a context menu item — rather than using the system Copy command, update the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/UIKit/UIPasteboard) instance.
-
-To enable people to copy using a custom action — like from a context menu item — rather than using the system Copy command, update the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/UIKit/UIPasteboard) instance.
 
 ## Parameters
 

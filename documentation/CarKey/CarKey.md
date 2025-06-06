@@ -1,6 +1,6 @@
 # CarKey
 
-**Framework**: CarKey  
+**Framework**: Carkey  
 **Kind**: module
 
 Access the remote keyless features of configured vehicles in the Wallet app.
@@ -21,8 +21,6 @@ The CarKey framework offers a way to communicate with vehicles already provision
 The Wallet app maintains a list of vehicles that match your company’s make, and that the user previously configured for remote access. Create a session object to get information about those vehicles and to establish a connection to ones that are in range. Use the session to retrieve the list of commands available to the current person, and to initiate actions from your app.
 
 > **Note**: Your app must have the `com.apple.developer.carkey.session` entitlement to use this framework. To request the entitlement, you must be an automaker enrolled in the MFi Program. For details, see [`https://developer.apple.com/mfi/`](https://developer.apple.comhttps://developer.apple.com/mfi/).
-
-Your app must have the `com.apple.developer.carkey.session` entitlement to use this framework. To request the entitlement, you must be an automaker enrolled in the MFi Program. For details, see [`https://developer.apple.com/mfi/`](https://developer.apple.comhttps://developer.apple.com/mfi/).
 
 ## Topics
 

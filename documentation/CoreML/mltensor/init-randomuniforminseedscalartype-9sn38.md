@@ -1,6 +1,6 @@
 # init(randomUniform:in:seed:scalarType:)
 
-**Framework**: Core ML  
+**Framework**: Coreml  
 **Kind**: init
 
 Creates a tensor with the specified shape, randomly sampling scalar values from a uniform distribution in `bounds`.
@@ -23,8 +23,6 @@ init<Scalar>(randomUniform shape: [Int], in bounds: Range<Scalar> = 0..<1, seed:
 #### Discussion
 
 > **Note**: Using the same seed produces the same result only when dispatched to the same compute device.
-
-Using the same seed produces the same result only when dispatched to the same compute device.
 
 ## Parameters
 

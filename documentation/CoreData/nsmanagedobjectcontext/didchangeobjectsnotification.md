@@ -1,6 +1,6 @@
 # didChangeObjectsNotification
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: property
 
 A notification that posts when a context makes changes to its registered objects.
@@ -23,8 +23,6 @@ static let didChangeObjectsNotification: Notification.Name
 #### Discussion
 
 > **Note**:  This notification posts only when there are changes to the context’s registered managed objects. It doesn’t post when a fetch adds managed objects to the context.
-
- This notification posts only when there are changes to the context’s registered managed objects. It doesn’t post when a fetch adds managed objects to the context.
 
 This notification’s `object` property is the changed managed object context. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](nsmanagedobjectcontext.md) posts notifications to the same thread that creates it.
 

@@ -1,6 +1,6 @@
 # remove(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Removes the entity from the collection.
@@ -22,8 +22,6 @@ mutating func remove(_ child: Entity)
 #### Discussion
 
 > **Note**: This operation can invalidate the index order of any remaining entities.
-
-This operation can invalidate the index order of any remaining entities.
 
 
 ---

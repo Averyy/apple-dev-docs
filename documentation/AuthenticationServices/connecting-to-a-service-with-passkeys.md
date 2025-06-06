@@ -1,6 +1,6 @@
 # Connecting to a service with passkeys
 
-**Framework**: Authentication Services
+**Framework**: Authenticationservices
 
 Allow users to sign in to a service without typing a password.
 
@@ -13,8 +13,6 @@ Allow users to sign in to a service without typing a password.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [`10092: Meet passkeys`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10092/) and WWDC21 session [`10106: Move beyond passwords`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10106/).
-
-This sample code project is associated with WWDC22 session [`10092: Meet passkeys`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10092/) and WWDC21 session [`10106: Move beyond passwords`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10106/).
 
 ##### Configure the Sample Code Project
 
@@ -37,4 +35,4 @@ To build and run this sample:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/connecting-to-a-service-with-passkeys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/connecting-to-a-service-with-passkeys)*

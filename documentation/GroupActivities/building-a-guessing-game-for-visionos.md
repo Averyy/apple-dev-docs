@@ -1,6 +1,6 @@
 # Building a guessing game for visionOS
 
-**Framework**: Group Activities
+**Framework**: Groupactivities
 
 Create a team-based guessing game for visionOS using Group Activities.
 
@@ -16,11 +16,7 @@ After the initial welcome screen for the game, the participants select categorie
 
 > **Note**: This sample code project is associated with WWDC24 session [`10201: Customize spatial Persona templates in SharePlay`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10201).
 
-This sample code project is associated with WWDC24 session [`10201: Customize spatial Persona templates in SharePlay`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10201).
-
 > **Note**: SharePlay requires the  [`com.apple.developer.group-session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.group-session) entitlement. For instructions on configuring this entitlement, see “Configure the SharePlay entitlements” section of [`Configure the SharePlay entitlements`](defining-your-apps-shareplay-activities#Configure-the-SharePlay-entitlements.md).
-
-SharePlay requires the  [`com.apple.developer.group-session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.group-session) entitlement. For instructions on configuring this entitlement, see “Configure the SharePlay entitlements” section of [`Configure the SharePlay entitlements`](defining-your-apps-shareplay-activities#Configure-the-SharePlay-entitlements.md).
 
 ##### Define the Group Activity
 
@@ -374,4 +370,4 @@ For more information about building custom spatial templates, see [`SpatialTempl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/building-a-guessing-game-for-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GroupActivities/building-a-guessing-game-for-visionos)*

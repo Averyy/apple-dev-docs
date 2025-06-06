@@ -1,6 +1,6 @@
 # Grouping data with lazy stack views
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Split content into logical sections inside lazy stack views.
 
@@ -11,8 +11,6 @@ Split content into logical sections inside lazy stack views.
 To group content or data inside a lazy stack view, use [`Section`](section.md) instances as containers for collections of grouped views. [`Section`](section.md) views don’t have any visual representation themselves but can contain header and footer views that can either scroll with the stack’s content or that you can pin to the top or bottom of the [`ScrollView`](scrollview.md).
 
 > **Note**: Use [`Section`](section.md) views to get platform-appropriate grouping inside stack views or lazy stacks, lazy grids, [`List`](list.md), [`CommandMenu`](commandmenu.md), [`Form`](form.md), and several other container types.
-
-Use [`Section`](section.md) views to get platform-appropriate grouping inside stack views or lazy stacks, lazy grids, [`List`](list.md), [`CommandMenu`](commandmenu.md), [`Form`](form.md), and several other container types.
 
 The code samples in this article build a user interface for visualizing shades of primary colors. Each section in the stack represents a primary color, containing five subviews, each showing a different variation of the color.
 
@@ -126,4 +124,4 @@ With this change, section headers are pinned to the top of the view as the user 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/grouping-data-with-lazy-stack-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/grouping-data-with-lazy-stack-views)*

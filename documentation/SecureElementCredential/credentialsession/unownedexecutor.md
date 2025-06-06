@@ -1,6 +1,6 @@
 # unownedExecutor
 
-**Framework**: SecureElementCredential  
+**Framework**: Secureelementcredential  
 **Kind**: property
 
 Retrieve the executor for this actor as an optimized, unowned reference.
@@ -24,11 +24,7 @@ This property will be implicitly accessed when work needs to be scheduled onto t
 
 > **Note**: `SerialExecutor`
 
-`SerialExecutor`
-
 > **Note**: `TaskExecutor`
-
-`TaskExecutor`
 
 
 ---

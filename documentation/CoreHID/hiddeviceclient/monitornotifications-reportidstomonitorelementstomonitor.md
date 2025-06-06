@@ -1,6 +1,6 @@
 # monitorNotifications(reportIDsToMonitor:elementsToMonitor:)
 
-**Framework**: Core HID  
+**Framework**: Corehid  
 **Kind**: method
 
 Creates an asynchronous that receives notifications about the associated device.
@@ -45,8 +45,6 @@ case .deviceRemoved:
 ```
 
 > **Note**: [`HIDDeviceError`](hiddeviceerror.md) if there is an issue with setup.
-
-[`HIDDeviceError`](hiddeviceerror.md) if there is an issue with setup.
 
 ## Parameters
 

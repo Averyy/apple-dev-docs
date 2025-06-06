@@ -1,6 +1,6 @@
 # requiresSynchronousInitialization
 
-**Framework**: MetalFX  
+**Framework**: Metalfx  
 **Kind**: property
 
 A Boolean value that indicates whether MetalFX compiles a temporal scaling effect’s underlying upscaler as it creates the instance.
@@ -31,8 +31,6 @@ By default, the property is equal to [`false`](https://developer.apple.com/docum
 
 > **Note**: The image quality of the effect’s output texture is consistent, whether it’s using the slower interim upscaler or the final, faster upscaler.
 
-The image quality of the effect’s output texture is consistent, whether it’s using the slower interim upscaler or the final, faster upscaler.
-
 ## See Also
 
 - [var inputWidth: Int](mtlfxtemporalscalerdescriptor/inputwidth.md)
@@ -61,4 +59,4 @@ The image quality of the effect’s output texture is consistent, whether it’s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerdescriptor/requiressynchronousinitialization)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MetalFX/mtlfxtemporalscalerdescriptor/requiressynchronousinitialization)*

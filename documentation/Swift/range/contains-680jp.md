@@ -40,8 +40,6 @@ emptyRange.contains(3...3)   // false
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `other`: A closed range to check for containment within this   range.

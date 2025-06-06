@@ -1,6 +1,6 @@
 # MPSCopyAllocator
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: tdef
 
 A block to make a copy of a source texture for filters that can only execute out of place.
@@ -32,8 +32,6 @@ If there is any metadata associated with the source texture, such as colorspace 
 If the kernel’s [`clipRect`](mpsunaryimagekernel/1618859-cliprect.md) property doesn’t cover the entire image, you may need to copy pixels from the source texture to the new texture, or regions of the next texture will be uninitialized. You can make a command encoder to encode work on the command buffer here, if necessary. It will be scheduled to run immediately before the kernel work. You may call any of the [`enqueue()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/enqueue()), [`commit()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/commit()), [`waitUntilCompleted()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/waituntilcompleted()), or [`waitUntilScheduled()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/waituntilscheduled()) methods inside the copy allocator block. Make sure to call [`endEncoding()`](https://developer.apple.com/documentation/metal/mtlcommandencoder/endencoding()) on the command encoder so that the command buffer has no active encoder before returning.
 
 > **Note**: The next command placed on the command buffer after the copy allocator returns is almost assuredly going to be encoded with a compute command encoder. Creating any other type of encoder in the copy allocator will probably cost an additional 0.5 ms of both CPU  GPU time (or more!) due to a double mode switch penalty.
-
-The next command placed on the command buffer after the copy allocator returns is almost assuredly going to be encoded with a compute command encoder. Creating any other type of encoder in the copy allocator will probably cost an additional 0.5 ms of both CPU  GPU time (or more!) due to a double mode switch penalty.
 
 [`Listing 1`](mpscopyallocator#1942956.md) shows a minimal copy allocator implementation.
 

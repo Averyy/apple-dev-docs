@@ -1,6 +1,6 @@
 # batchSize
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: property
 
 The number of examples in each training batch.
@@ -24,8 +24,6 @@ var batchSize: Int
 
 > **Note**: This parameter is only used by the `fitted` method.
 
-This parameter is only used by the `fitted` method.
-
 ## See Also
 
 - [var maximumIterationCount: Int](multivariatelinearregressorconfiguration/maximumiterationcount.md)
@@ -42,4 +40,4 @@ This parameter is only used by the `fitted` method.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/multivariatelinearregressorconfiguration/batchsize)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/multivariatelinearregressorconfiguration/batchsize)*

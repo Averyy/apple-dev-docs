@@ -1,6 +1,6 @@
 # isDefault
 
-**Framework**: CFNetwork  
+**Framework**: Cfnetwork  
 **Kind**: property
 
 Specifies whether the resulting domain is the default registration or browse domain.
@@ -25,8 +25,6 @@ If set, the resulting domain is the default registration or browse domain, depen
 
 > **Note**:  In previous versions of this API, this constant was `kCFNetServiceFlagIsRegistrationDomain`, which is retained for backward compatibility.
 
- In previous versions of this API, this constant was `kCFNetServiceFlagIsRegistrationDomain`, which is retained for backward compatibility.
-
 ## See Also
 
 - [static var isDomain: CFNetServiceBrowserFlags](cfnetservicebrowserflags/isdomain.md)
@@ -41,4 +39,4 @@ If set, the resulting domain is the default registration or browse domain, depen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowserflags/isdefault)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CFNetwork/cfnetservicebrowserflags/isdefault)*

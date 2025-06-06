@@ -1,6 +1,6 @@
 # Setting up and authorizing a Bluetooth accessory
 
-**Framework**: AccessorySetupKit
+**Framework**: Accessorysetupkit
 
 Discover, select, and set up a specific Bluetooth accessory without requesting permission to use Bluetooth.
 
@@ -16,8 +16,6 @@ This sample project uses two app targets to demonstrate how to use AccessorySetu
 The `ASKSample` target uses AccessorySetupKit to authorize the use of a Bluetooth dice accessory and receive roll results. When you tap the “Add Dice” button, the app searches for dice and presents the set up AccessorySetupKit UI. AccessorySetupKit then authorizes and grants the app access to that accessory. After authorization, you can connect to the accessory and receive roll results until you decide to disconnect or remove authorization altogether.
 
 > **Note**: This sample code project is associated with WWDC24 session [`10203: Meet AccessorySetupKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10203/).
-
-This sample code project is associated with WWDC24 session [`10203: Meet AccessorySetupKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10203/).
 
 ##### Configure the Sample Code Project
 

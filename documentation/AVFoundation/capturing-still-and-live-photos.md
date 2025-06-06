@@ -1,6 +1,6 @@
 # Capturing Still and Live Photos
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Configure and capture single or multiple still images, Live Photos, and other forms of photography.
 
@@ -11,8 +11,6 @@ Video captured on the iPhone 8, iPhone 8 Plus, and iPhone X running iOS 11 or la
 AVFoundation supports many ways to capture photos. You can simply capture still HEIF or JPEG images, capture in RAW format for custom processing, snap several images in one shot, create Live Photos with motion and sound, and much more. In iOS, all photography workflows use the [`AVCapturePhotoOutput`](avcapturephotooutput.md) class.
 
 > **Note**:  For macOS, see [`AVCaptureStillImageOutput`](avcapturestillimageoutput.md) instead.
-
- For macOS, see [`AVCaptureStillImageOutput`](avcapturestillimageoutput.md) instead.
 
 ##### Prepare for Photo Capture
 
@@ -69,8 +67,6 @@ Other possible photo settings include Live Photos, depth data capture, and multi
 Pass your photo settings object to the [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method to trigger photo capture with the settings you’ve chosen.
 
 > ❗ **Important**:  Calling [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) is analogous to pressing a camera’s shutter button—each call starts a new photo capture. Each call requires a unique [`AVCapturePhotoSettings`](avcapturephotosettings.md) object with the settings for that capture. To reuse settings for multiple captures, see [`init(from:)`](avcapturephotosettings/init(from:).md).
-
- Calling [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) is analogous to pressing a camera’s shutter button—each call starts a new photo capture. Each call requires a unique [`AVCapturePhotoSettings`](avcapturephotosettings.md) object with the settings for that capture. To reuse settings for multiple captures, see [`init(from:)`](avcapturephotosettings/init(from:).md).
 
 ##### Handle Capture Results
 
@@ -132,4 +128,4 @@ When your captured image data is ready for use, the photo output calls your dele
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/capturing-still-and-live-photos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/capturing-still-and-live-photos)*

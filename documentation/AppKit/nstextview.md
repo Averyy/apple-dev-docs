@@ -1,6 +1,6 @@
 # NSTextView
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A view that draws text and handles user interactions with that text.
@@ -27,8 +27,6 @@ class NSTextView
 The [`NSTextView`](nstextview.md) class is the front-end class to the AppKit text system. The class draws the text managed by the back-end components and handles user events to select and modify its text, in addition to supporting rich text, attachments, input management, and key binding, and marked text attributes.
 
 > **Note**:  If you need only to implement a simple editable text field, see [`NSTextField`](nstextfield.md).
-
- If you need only to implement a simple editable text field, see [`NSTextField`](nstextfield.md).
 
 [`NSTextView`](nstextview.md) is the principal means to obtain a text object that caters to almost all needs for displaying and managing text at the user interface level. While [`NSTextView`](nstextview.md) is a subclass of the [`NSText`](nstext.md) class — which declares the most general Cocoa interface to the text system — [`NSTextView`](nstextview.md) adds major features beyond the capabilities of [`NSText`](nstext.md). You can also do more powerful and more creative text manipulation (such as displaying text in a circle) using [`NSTextStorage`](nstextstorage.md), [`NSTextLayoutManager`](nstextlayoutmanager.md), [`NSTextContainer`](nstextcontainer.md), and related classes.
 
@@ -512,4 +510,4 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstextview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstextview)*

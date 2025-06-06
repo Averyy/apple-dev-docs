@@ -1,6 +1,6 @@
 # Automatic Assessment Configuration
 
-**Framework**: Automatic Assessment Configuration  
+**Framework**: Automaticassessmentconfiguration  
 **Kind**: module
 
 Enter single-app mode and prevent students from accessing specific system features while taking an exam.
@@ -36,8 +36,6 @@ Additionally, a session:
 - Clears the pasteboard buffer when starting and stopping the session
 
 > **Note**:  If you publish an educational app that delivers exams to students, you can request permission to use the [`com.apple.developer.automatic-assessment-configuration`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.automatic-assessment-configuration) entitlement by filling in the [`Automatic Assessment Configuration Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/automatic-assessment-configuration/) form.
-
- If you publish an educational app that delivers exams to students, you can request permission to use the [`com.apple.developer.automatic-assessment-configuration`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.automatic-assessment-configuration) entitlement by filling in the [`Automatic Assessment Configuration Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/automatic-assessment-configuration/) form.
 
 The framework reports an error if you try to start an assessment from an app running in visionOS.
 

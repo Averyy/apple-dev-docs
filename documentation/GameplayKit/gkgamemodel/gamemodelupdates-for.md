@@ -1,6 +1,6 @@
 # gameModelUpdates(for:)
 
-**Framework**: GameplayKit  
+**Framework**: Gameplaykit  
 **Kind**: method  
 **Required**: Yes
 
@@ -33,8 +33,6 @@ For example, in a Tic-Tac-Toe game, the move class would identify which of the n
 This method should return `nil` if the specified player is not valid or if no moves are available to that player.
 
 > **Note**:  If the current game model represents an end state for the game—that is, if one player has won, or if the game has resulted in a draw—return `nil` to indicate that the strategist should not attempt to plan further moves.
-
- If the current game model represents an end state for the game—that is, if one player has won, or if the game has resulted in a draw—return `nil` to indicate that the strategist should not attempt to plan further moves.
 
 ## Parameters
 

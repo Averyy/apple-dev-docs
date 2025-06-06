@@ -34,8 +34,6 @@ The method call `dog->speak()` is suspect. If the `speak` method in `Dog` is `fi
 
 > **Note**: This UBSan check requires runtime type information, and is incompatible with the `-fno-rtti` compiler flag.
 
-This UBSan check requires runtime type information, and is incompatible with the `-fno-rtti` compiler flag.
-
 ###### Solution
 
 Use `reinterpret_cast` sparingly, and only when it’s possible to verify that the cast object is an instance of the destination type.
@@ -76,4 +74,4 @@ Use `reinterpret_cast` sparingly, and only when it’s possible to verify that t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/dynamic-type-violation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/dynamic-type-violation)*

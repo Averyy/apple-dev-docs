@@ -1,6 +1,6 @@
 # ASAccountAuthenticationModificationExtensionContext
 
-**Framework**: Authentication Services  
+**Framework**: Authenticationservices  
 **Kind**: class
 
 An object that you interact with to change an account’s password or to upgrade to Sign in with Apple.
@@ -20,8 +20,6 @@ class ASAccountAuthenticationModificationExtensionContext
 #### Overview
 
 > **Note**:  This class ignores calls from Mac apps built with Mac Catalyst.
-
- This class ignores calls from Mac apps built with Mac Catalyst.
 
 ## Topics
 
@@ -61,4 +59,4 @@ class ASAccountAuthenticationModificationExtensionContext
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/asaccountauthenticationmodificationextensioncontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/asaccountauthenticationmodificationextensioncontext)*

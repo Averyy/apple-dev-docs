@@ -1,6 +1,6 @@
 # Tip.Rule
 
-**Framework**: TipKit  
+**Framework**: Tipkit  
 **Kind**: typealias
 
 A condition to meet before displaying a tip.
@@ -72,8 +72,6 @@ struct FavoriteLandmarkTip: Tip {
 ```
 
 > **Note**: If no rules are defined within a tip content structure, the tip displays until dismissed or they exceed the threshold of their display frequency.
-
-If no rules are defined within a tip content structure, the tip displays until dismissed or they exceed the threshold of their display frequency.
 
 ## Topics
 

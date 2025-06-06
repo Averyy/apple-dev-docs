@@ -1,6 +1,6 @@
 # maximumRiskScore
 
-**Framework**: Exposure Notification  
+**Framework**: Exposurenotification  
 **Kind**: property
 
 The vaue that represents the highest risk score of all exposure incidents.
@@ -20,13 +20,9 @@ var maximumRiskScore: ENRiskScore { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 This property has a maximum value of 255.
 
 > **Note**:  This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
-
- This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
 
 ## See Also
 
@@ -48,4 +44,4 @@ This property has a maximum value of 255.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposuredetectionsummary/maximumriskscore)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposuredetectionsummary/maximumriskscore)*

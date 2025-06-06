@@ -1,6 +1,6 @@
 # read(from:ofType:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Sets the contents of this document by reading from data of a specified type.
@@ -20,10 +20,6 @@ func read(from data: Data, ofType typeName: String) throws
 The default implementation of this method throws an exception because at least one of the three reading methods (this method, [`read(from:ofType:)`](nsdocument/read(from:oftype:)-1vttv.md), [`read(from:ofType:)`](nsdocument/read(from:oftype:)-3rzsi.md)), or every method that may invoke [`read(from:ofType:)`](nsdocument/read(from:oftype:)-1vttv.md), must be overridden.
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

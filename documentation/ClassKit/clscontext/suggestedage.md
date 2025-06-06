@@ -1,6 +1,6 @@
 # suggestedAge
 
-**Framework**: ClassKit  
+**Framework**: Classkit  
 **Kind**: property
 
 The range of ages, measured in years, for which you deem a context’s content suitable.
@@ -38,8 +38,6 @@ New contexts that you create have the “all ages” setting by default.
 
 > **Note**:  Because [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange) defines its upper bound as one more than the last value contained in the range, use `Int.max - 1` to indicate the unbounded case and prevent the upper bound from overflowing.
 
- Because [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange) defines its upper bound as one more than the last value contained in the range, use `Int.max - 1` to indicate the unbounded case and prevent the upper bound from overflowing.
-
 ## See Also
 
 - [var suggestedCompletionTime: NSRange](clscontext/suggestedcompletiontime.md)
@@ -50,4 +48,4 @@ New contexts that you create have the “all ages” setting by default.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/clscontext/suggestedage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/clscontext/suggestedage)*

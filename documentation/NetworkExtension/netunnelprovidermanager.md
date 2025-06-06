@@ -1,6 +1,6 @@
 # NETunnelProviderManager
 
-**Framework**: Network Extension  
+**Framework**: Networkextension  
 **Kind**: class
 
 An object to create and manage the tunnel provider’s VPN configuration.
@@ -34,8 +34,6 @@ The [`NETunnelProviderManager`](netunnelprovidermanager.md) class inherits most 
 
 > ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required to use the [`NETunnelProviderManager`](netunnelprovidermanager.md) class. Enable this entitlement when creating an App ID in your developer account.
 
- The `com.apple.developer.networking.networkextension` entitlement is required to use the [`NETunnelProviderManager`](netunnelprovidermanager.md) class. Enable this entitlement when creating an App ID in your developer account.
-
 ##### Configuration Model
 
 Each [`NETunnelProviderManager`](netunnelprovidermanager.md) instance corresponds to a single VPN configuration stored in the Network Extension preferences. Multiple VPN configurations can be created and managed by creating multiple [`NETunnelProviderManager`](netunnelprovidermanager.md) instances.
@@ -53,8 +51,6 @@ Credential Storage
 VPN credentials such as private keys and passwords that are imported into the system via configuration profiles are stored in the keychain in a special access group called `com.apple.managed.vpn.shared`. In order to use these credentials the app and Packet Tunnel Provider extension must have the `com.apple.managed.vpn.shared` keychain access group entitlement.
 
 > ❗ **Important**:  The app and Packet Tunnel Provider extension must not write to the `com.apple.managed.vpn.shared` keychain access group. When writing to the keychain, the app and Packet Tunnel Provider must target a different keychain access group.
-
- The app and Packet Tunnel Provider extension must not write to the `com.apple.managed.vpn.shared` keychain access group. When writing to the keychain, the app and Packet Tunnel Provider must target a different keychain access group.
 
 ##### Routing Network Data to the Vpn
 
@@ -80,8 +76,6 @@ The MDM client running on the device creates one app rule in the VPN configurati
 
 > **Note**:  It is not possible to create app rules for Apple system apps. The one exception to this rule is Safari. In the case of Safari, the VPN can only tunnel the network traffic for web sites in certain domains, not all web sites. See the `SafariDomains` field in [`Configuration Profile Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010206).
 
- It is not possible to create app rules for Apple system apps. The one exception to this rule is Safari. In the case of Safari, the VPN can only tunnel the network traffic for web sites in certain domains, not all web sites. See the `SafariDomains` field in [`Configuration Profile Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010206).
-
 Per-App VPN On Demand
 
 The Per-App VPN app rules serve as both routing rules and VPN On Demand rules. This is in contrast to IP destination-based routing, where the VPN On Demand rules are configured separately from the routing rules. When the `onDemandEnabled` property is set to [`true`](https://developer.apple.com/documentation/swift/true) and an app that matches the Per-App VPN rules attempts to communicate over the network, the VPN will be started automatically.
@@ -93,8 +87,6 @@ Testing Per-App VPN
 As described above, an MDM server is required to configure Per-App VPN for VPN apps distributed via the App Store. To make testing Per-App VPN easier, it is possible to configure Per-App VPN without an MDM server during development by using the `NETestAppMapping` `Info.plist` key.
 
 > ❗ **Important**:  The `NETestAppMapping Info.plist` key can only be used to create app rules in apps that are signed with a Development provisioning profile. In apps that are signed with Distribution provisioning profiles the `NETestAppMapping Info.plist` key has no effect.
-
- The `NETestAppMapping Info.plist` key can only be used to create app rules in apps that are signed with a Development provisioning profile. In apps that are signed with Distribution provisioning profiles the `NETestAppMapping Info.plist` key has no effect.
 
 Here is what you need to do to make use of this capability:
 
@@ -175,4 +167,4 @@ The system will create one app rule in the VPN configuration for each bundle ide
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/netunnelprovidermanager)*
+*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/netunnelprovidermanager)*

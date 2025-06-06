@@ -1,6 +1,6 @@
 # Building an object reconstruction app
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Reconstruct objects from user-selected input images by using photogrammetry.
 
@@ -11,8 +11,6 @@ Reconstruct objects from user-selected input images by using photogrammetry.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10107: [`Discover Area Mode for Object Capture`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10107/).
-
-This sample code project is associated with WWDC24 session 10107: [`Discover Area Mode for Object Capture`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10107/).
 
 ## See Also
 
@@ -40,4 +38,4 @@ This sample code project is associated with WWDC24 session 10107: [`Discover Are
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/building-an-object-reconstruction-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/building-an-object-reconstruction-app)*

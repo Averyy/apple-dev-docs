@@ -17,8 +17,6 @@ watchOS 10 introduces a redesigned user interface to surface timely information,
 
 > **Note**: This sample code project is associated with WWDC23 sessions 10031: [`Update your app for watchOS 10`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10031/) and 10029: [`Build widgets for the Smart Stack on Apple Watch`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10029/). It’s based on the [`Backyard Birds: Building an app with SwiftData and widgets`](https://developer.apple.com/documentation/SwiftUI/Backyard-birds-sample) sample.
 
-This sample code project is associated with WWDC23 sessions 10031: [`Update your app for watchOS 10`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10031/) and 10029: [`Build widgets for the Smart Stack on Apple Watch`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10029/). It’s based on the [`Backyard Birds: Building an app with SwiftData and widgets`](https://developer.apple.com/documentation/SwiftUI/Backyard-birds-sample) sample.
-
 ## See Also
 
 - [Creating an intuitive and effective UI in watchOS 10](creating-an-intuitive-and-effective-ui-in-watchos-10.md)
@@ -31,4 +29,4 @@ This sample code project is associated with WWDC23 sessions 10031: [`Update your
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/updating-your-app-and-widgets-for-watchos-10)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/updating-your-app-and-widgets-for-watchos-10)*

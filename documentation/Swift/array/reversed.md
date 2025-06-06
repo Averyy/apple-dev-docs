@@ -42,8 +42,6 @@ print(reversedWord)
 
 > **Note**: O(1)
 
-O(1)
-
 ## See Also
 
 - [func sort()](array/sort.md)

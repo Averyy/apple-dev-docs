@@ -24,8 +24,6 @@ init(_ other: AnyBidirectionalCollection<Element>)
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

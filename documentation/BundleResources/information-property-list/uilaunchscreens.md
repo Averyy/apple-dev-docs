@@ -1,6 +1,6 @@
 # UILaunchScreens
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: dictionary
 
 The user interfaces to show while an app launches in response to different URL schemes.
@@ -18,8 +18,6 @@ To define launch screens, create an array of dictionaries, each similar to the o
 To map from URL schemes to a launch screens, create a dictionary of schemes and identifiers, and store it as the value for the [`UIURLToLaunchScreenAssociations`](information-property-list/uilaunchscreens/uiurltolaunchscreenassociations.md) key. Additionally, indicate a default launch screen by setting a value for the [`UIDefaultLaunchScreen`](information-property-list/uilaunchscreens/uidefaultlaunchscreen.md) key.
 
 > **Note**:  Use this key to configure the user interface during app launch in a way that doesn’t rely on storyboards. If you prefer to use storyboards to define the launch screen, use the [`UILaunchStoryboards`](information-property-list/uilaunchstoryboards.md) key instead.
-
- Use this key to configure the user interface during app launch in a way that doesn’t rely on storyboards. If you prefer to use storyboards to define the launch screen, use the [`UILaunchStoryboards`](information-property-list/uilaunchstoryboards.md) key instead.
 
 ## Topics
 

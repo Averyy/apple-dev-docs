@@ -1,6 +1,6 @@
 # Add a Resource to a Library
 
-**Framework**: Apple Music API  
+**Framework**: Applemusicapi  
 **Kind**: httpRequest
 
 Add a catalog resource to a user’s iCloud Music Library.
@@ -16,8 +16,6 @@ This endpoint requires a music user token. For more information, see [`User Auth
 
 > **Note**:  There may be a delay before a new resource appears in a user’s library.
 
- There may be a delay before a new resource appears in a user’s library.
-
 ##### Example
 
 ## See Also
@@ -28,4 +26,4 @@ This endpoint requires a music user token. For more information, see [`User Auth
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/add-a-resource-to-a-library)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/add-a-resource-to-a-library)*

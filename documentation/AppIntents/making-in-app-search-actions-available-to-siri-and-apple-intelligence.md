@@ -1,6 +1,6 @@
 # Making in-app search actions available to Siri and Apple Intelligence
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Create app intents and entities to integrate your app’s search functionality with Siri and Apple Intelligence.
 
@@ -9,8 +9,6 @@ Create app intents and entities to integrate your app’s search functionality w
 To integrate your in-app search with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance to your [`ShowInAppSearchResultsIntent`](showinappsearchresultsintent.md) implementation.
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 Use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.system` domain and the [`search`](assistantschemas/systemintent/search.md) schema:
 
@@ -44,4 +42,4 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-in-app-search-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-in-app-search-actions-available-to-siri-and-apple-intelligence)*

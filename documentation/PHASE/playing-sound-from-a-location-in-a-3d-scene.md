@@ -1,6 +1,6 @@
 # Playing sound from a location in a 3D scene
 
-**Framework**: PHASE
+**Framework**: Phase
 
 Position sound from a specific direction and automatically raise or lower volume based on the environment.
 
@@ -52,8 +52,6 @@ chessPiecePointSource.transform = chessPiecePose
 
 > 💡 **Tip**:  Set the [`unitsPerMeter`](phaseengine/unitspermeter.md) parameter to instruct PHASE to interpret [`transform`](phaseobject/transform.md) values in your app’s preferred unit of measurement.
 
- Set the [`unitsPerMeter`](phaseengine/unitspermeter.md) parameter to instruct PHASE to interpret [`transform`](phaseobject/transform.md) values in your app’s preferred unit of measurement.
-
 ##### Originate Sound From a Geometric Area
 
 For spatial sounds, the framework requires a 3D position from which the sound originates. To emanate sound from an area larger than a point, for example, the full length of an electric fence in a game, describe the region by configuring a [`PHASEShape`](phaseshape.md) object. The following code models a fence by using a [`Model I/O`](https://developer.apple.com/documentation/ModelIO) plane:
@@ -73,8 +71,6 @@ catch { print ("Failed to add a child object to the scene.") }
 ```
 
 > **Note**:  You can supply high-resolution geometry to a [`PHASESource`](phasesource.md). For collision detection, games usually supply a low-resolution approximation that contains a detailed visual asset to maximize runtime performance. However, [`PHASEShape`](phaseshape.md) supports geometry of any resolution with little performance impact.
-
- You can supply high-resolution geometry to a [`PHASESource`](phasesource.md). For collision detection, games usually supply a low-resolution approximation that contains a detailed visual asset to maximize runtime performance. However, [`PHASEShape`](phaseshape.md) supports geometry of any resolution with little performance impact.
 
 ##### Create an Object That Hears Sound
 
@@ -161,8 +157,6 @@ The spatial mixer can add environmental layers to the output, such as reflection
 PHASE attenuates sound over the distance between a source and a listener by observing the distance model you define on the spatial mixer. As a source emits sound, the spatial mixer adjusts its volume based on the distance from the listener. The farther away the source is from the listener, the more the volume attenuates and the quieter the sound gets with respect to the listener.
 
 > ❗ **Important**:  Without a distance model, the spatial mixer plays sound at a constant level, disregarding the distance between the source and the listener.
-
- Without a distance model, the spatial mixer plays sound at a constant level, disregarding the distance between the source and the listener.
 
 For more information about distance modeling and its various types,  and , see [`Spatial Mixing`](spatial-mixing.md).
 
@@ -284,8 +278,6 @@ Because `electricBuzzingSamplerNode` and `shufflingSamplerNode` have no children
 
 > 💡 **Tip**:  You can create a more sophisticated node hiearchy that plays different sounds based on your app’s state. By adding multiple nodes that sample varying audio as children to a control node, PHASE plays the right audio for the moment based on control logic that you define. For more information, see Audio Selection and Playback.
 
- You can create a more sophisticated node hiearchy that plays different sounds based on your app’s state. By adding multiple nodes that sample varying audio as children to a control node, PHASE plays the right audio for the moment based on control logic that you define. For more information, see Audio Selection and Playback.
-
 ## See Also
 
 - [Personalizing spatial audio in your app](personalizing-spatial-audio-in-your-app.md)
@@ -296,4 +288,4 @@ Because `electricBuzzingSamplerNode` and `shufflingSamplerNode` have no children
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/phase/playing-sound-from-a-location-in-a-3d-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PHASE/playing-sound-from-a-location-in-a-3d-scene)*

@@ -62,8 +62,6 @@ When your app is active and in the foreground, the timeline schedule runs in the
 
 > **Note**: In the Always On state, apps running a background session may not need to use a `TimelineView` to update their user interface. Any changes the app makes while running in the background continue to update its interface; however, to preserve battery life, the system only refreshes the user interface about once per second. For more information, see [`Designing your app for the Always On state`](designing-your-app-for-the-always-on-state.md).
 
-In the Always On state, apps running a background session may not need to use a `TimelineView` to update their user interface. Any changes the app makes while running in the background continue to update its interface; however, to preserve battery life, the system only refreshes the user interface about once per second. For more information, see [`Designing your app for the Always On state`](designing-your-app-for-the-always-on-state.md).
-
 While the actual cadence can vary depending on the requested schedule and the current state of the system, apps generally receive an update frequency based on whether they have background runtime or are inactive, frontmost apps.
 
 Apps with background runtime receive updates at the `TimelineView.Context.Cadence.seconds` frequency. This would include apps with an active background session (like workout or background audio apps) or apps executing a background refresh task.
@@ -90,4 +88,4 @@ For example, an egg timer could use an `ExplicitTimelineSchedule` to set up per-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/updating-watchos-apps-with-timelines)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/updating-watchos-apps-with-timelines)*

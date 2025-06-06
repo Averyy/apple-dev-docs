@@ -1,6 +1,6 @@
 # string
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The string value of the first pasteboard item.
@@ -22,8 +22,6 @@ var string: String? { get set }
 The value stored in this property is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object. The associated array of representation types is [`typeListString`](uipasteboard/typeliststring.md), which includes type `kUTTypeUTF8PlainText`. Setting this property replaces all current items in the pasteboard with the new item. If the first item has no value of the indicated type, `nil` is returned.
 
 > **Note**:  Do not use this property to determine if a pasteboard contains string data. Instead, use the [`hasStrings`](uipasteboard/hasstrings.md) property.
-
- Do not use this property to determine if a pasteboard contains string data. Instead, use the [`hasStrings`](uipasteboard/hasstrings.md) property.
 
 ## See Also
 

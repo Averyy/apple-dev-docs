@@ -120,8 +120,6 @@ Note that the `>` operator provided by the standard library is used in this exam
 
 > **Note**: A conforming type may contain a subset of values which are treated as exceptional—that is, values that are outside the domain of meaningful arguments for the purposes of the `Comparable` protocol. For example, the special “not a number” value for floating-point types (`FloatingPoint.nan`) compares as neither less than, greater than, nor equal to any normal floating-point value. Exceptional values need not take part in the strict total order.
 
-A conforming type may contain a subset of values which are treated as exceptional—that is, values that are outside the domain of meaningful arguments for the purposes of the `Comparable` protocol. For example, the special “not a number” value for floating-point types (`FloatingPoint.nan`) compares as neither less than, greater than, nor equal to any normal floating-point value. Exceptional values need not take part in the strict total order.
-
 ## Topics
 
 ### Range Expressions
@@ -265,4 +263,4 @@ A conforming type may contain a subset of values which are treated as exceptiona
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/comparable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/comparable)*

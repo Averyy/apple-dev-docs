@@ -1,6 +1,6 @@
 # Enabling ClassKit in your app
 
-**Framework**: ClassKit
+**Framework**: Classkit
 
 Prepare your app and your development environment to adopt ClassKit.
 
@@ -25,8 +25,6 @@ To test your app’s ClassKit adoption, you install Schoolwork on your own devel
 To get Schoolwork, download it from the [`App Store`](https://developer.apple.comhttps://itunes.apple.com/us/app/schoolwork/id1355112526?ls=1&mt=8).
 
 > **Note**:  You can’t test ClassKit behavior in Simulator because Schoolwork isn’t available in that environment.
-
- You can’t test ClassKit behavior in Simulator because Schoolwork isn’t available in that environment.
 
 ##### Use Development Mode to Test Locally
 
@@ -53,4 +51,4 @@ When you distribute your ClassKit enabled app through the App Store, it runs in 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/enabling-classkit-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/enabling-classkit-in-your-app)*

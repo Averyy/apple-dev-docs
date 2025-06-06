@@ -24,8 +24,6 @@ mutating func formUnion(_ other: RangeSet<Bound>)
 
 > **Note**: O( + ), where  and  are the number of ranges in this and the other range set.
 
-O( + ), where  and  are the number of ranges in this and the other range set.
-
 ## Parameters
 
 - `other`: A range set to merge with this one.

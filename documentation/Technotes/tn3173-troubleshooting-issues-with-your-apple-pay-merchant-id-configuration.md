@@ -92,8 +92,6 @@ If your domain is available both with and without the `www.` subdomain, it is re
 
 > **Note**:  If your website uses multiple subdomains (such as `example.com`, `www.example.com`, and `shop.example.com`), each requires its own entry as a registered merchant domain, and each must serve its own domain verification file.
 
- If your website uses multiple subdomains (such as `example.com`, `www.example.com`, and `shop.example.com`), each requires its own entry as a registered merchant domain, and each must serve its own domain verification file.
-
 If you attempt to verify your domain with a file associated with a different domain, you will not be able to successfully complete verification. So ensure you use the file specific to the domain you have registered.
 
 ##### Your Domain Does Not Automatically Re Verify
@@ -152,4 +150,4 @@ Please confirm the following when automatic re-verification fails:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3173-troubleshooting-issues-with-your-apple-pay-merchant-id-configuration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3173-troubleshooting-issues-with-your-apple-pay-merchant-id-configuration)*

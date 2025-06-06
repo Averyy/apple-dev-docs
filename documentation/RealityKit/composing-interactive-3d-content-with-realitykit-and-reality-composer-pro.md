@@ -1,6 +1,6 @@
 # Composing interactive 3D content with RealityKit and Reality Composer Pro
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Build an interactive scene using an animation timeline.
 
@@ -11,8 +11,6 @@ Build an interactive scene using an animation timeline.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10102: [`Compose interactive 3D content in Reality Composer Pro`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10102/).
-
-This sample code project is associated with WWDC24 session 10102: [`Compose interactive 3D content in Reality Composer Pro`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10102/).
 
 ## See Also
 
@@ -34,4 +32,4 @@ This sample code project is associated with WWDC24 session 10102: [`Compose inte
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro)*

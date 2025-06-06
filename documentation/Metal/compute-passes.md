@@ -12,8 +12,6 @@ Encode commands for your compute pass by creating a [`MTLCommandBuffer`](mtlcomm
 
 > **Note**:  Everything used to set up your compute pass is CPU thread-safe, except for [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md). Synchronize [`MTLResource`](mtlresource.md) instances you share between the CPU and GPU with an [`MTLFence`](mtlfence.md), an [`MTLEvent`](mtlevent.md), or a completion callback.
 
- Everything used to set up your compute pass is CPU thread-safe, except for [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md). Synchronize [`MTLResource`](mtlresource.md) instances you share between the CPU and GPU with an [`MTLFence`](mtlfence.md), an [`MTLEvent`](mtlevent.md), or a completion callback.
-
 For information on dispatching commands to encode, see the [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) reference. Compute passes also support indirect command buffers; for more information, see Dispatching from Indirect Command Buffers.
 
 The following two samples demonstrate basic compute passes:
@@ -46,8 +44,6 @@ Compute kernels can access argument data to populate a Metal structure, using an
 Resources become resident on a per-instance basis by calling methods like [`useResource(_:usage:)`](mtlcomputecommandencoder/useresource(_:usage:).md) and heaps become resident by calling methods like [`useHeap(_:)`](mtlcomputecommandencoder/useheap(_:).md).
 
 > ❗ **Important**:  For the duration of your compute pass, don’t access any resident resources on the CPU. Doing so in your app can cause GPU memory corruption, such as visual artifacts.
-
- For the duration of your compute pass, don’t access any resident resources on the CPU. Doing so in your app can cause GPU memory corruption, such as visual artifacts.
 
 When using resident resources, avoid data corruption by using an appropriate [`MTLHazardTrackingMode`](mtlhazardtrackingmode.md) or by manually managing memory barriers and fences for untracked resources with the methods in Synchronizing Across Command Execution.
 
@@ -119,4 +115,4 @@ For device support and other tile memory limitations, see [`Metal feature set ta
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/compute-passes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/compute-passes)*

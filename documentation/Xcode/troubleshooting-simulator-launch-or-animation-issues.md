@@ -18,8 +18,6 @@ If it’s not possible to free up enough resources, raise the system limits unti
 
 > **Note**: It’s possible to exceed the maximum number of process or the maximum number of open files when you launch other programs or open other files some time after you’ve launched a simulator. If this occurs, Simulator doesn’t give you a warning. The effects depend on what program is trying to launch the process or open the file.
 
-It’s possible to exceed the maximum number of process or the maximum number of open files when you launch other programs or open other files some time after you’ve launched a simulator. If this occurs, Simulator doesn’t give you a warning. The effects depend on what program is trying to launch the process or open the file.
-
 First, find the current process and file limits:
 
 1. Open Terminal.
@@ -31,8 +29,6 @@ Run the command `ps -A | wc -l` in Terminal to show the current total of running
 If you need to increase the maximum number of processes, run the command `sudo launchctl limit maxproc <per user limit> <total limit>`, replacing `<per user limit>` and `<total limit>` with numbers. For example, the command `sudo launchctl limit maxproc 2000 2500` sets the maximum number of concurrent processes for any one user to 2000 and the total number of all concurrent processes to 2500.
 
 > ⚠️ **Warning**: Setting the maximum number of processes to a number that is too low can prevent your Mac from operating correctly. Restart your machine to restore the original limits.
-
-Setting the maximum number of processes to a number that is too low can prevent your Mac from operating correctly. Restart your machine to restore the original limits.
 
 If you need to increase the maximum number of open files, run the command `sudo launchctl limit maxfiles <per process limit> <total limit>`, replacing `<per process limit>` and `<total limit>` with numbers. For example, the command `sudo launchctl limit maxfiles 2000 unlimited` sets the maximum number of open files for any one process to 2000 and the total number of all open files to `unlimited`.
 
@@ -61,4 +57,4 @@ xcrun simctl diagnose --help
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/troubleshooting-simulator-launch-or-animation-issues)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/troubleshooting-simulator-launch-or-animation-issues)*

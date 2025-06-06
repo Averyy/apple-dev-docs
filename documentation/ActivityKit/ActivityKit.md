@@ -1,6 +1,6 @@
 # ActivityKit
 
-**Framework**: ActivityKit  
+**Framework**: Activitykit  
 **Kind**: module
 
 Share live updates from your app as Live Activities in the Dynamic Island, on the Lock Screen, and on the Smart Stack in watchOS.
@@ -25,8 +25,6 @@ A Live Activity appears in highly visible contexts:
 
 > **Note**: [`Session 10184: Meet ActivityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10184), [`Session 10185: Update Live Activities with push notifications`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10185), and [`Session 10194: Design dynamic Live Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10194)
 
-[`Session 10184: Meet ActivityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10184), [`Session 10185: Update Live Activities with push notifications`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10185), and [`Session 10194: Design dynamic Live Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10194)
-
 In addition to viewing real-time information, people tap a Live Activity to launch your app and interact with its buttons or toggles to perform essential functionality without launching your app. In the Dynamic Island, people touch and hold the compact and minimal presentations to show an expanded presentation with more content that feels like a peek into your app.
 
 ![Three screenshots of iPhone that show a Live Activity for a delivery app. They show the Live Activity on the Lock Screen, in the leading and trailing presentations in the Dynamic Island, and in the expanded presentation.](https://docs-assets.developer.apple.com/published/a81e13e284bbdea7bed42f642b5d9ee5/live-activity-dynamic-island%402x.png)
@@ -36,8 +34,6 @@ In your app, use ActivityKit to configure, start, update, and end the Live Activ
 However, Live Activities use a different mechanism to receive updates compared to widgets. Instead of using a timeline mechanism, Live Activities receive updated data from your app with ActivityKit and remotely with ActivityKit push notifications. Starting with iOS 17.2 and iPadOS 17.2, you can also start Live Activities with ActivityKit push notifications.
 
 > **Note**: visionOS doesn’t load WidgetKit extensions found in compatible iPad and iPhone apps. As a result, it doesn’t support Live Activities.
-
-visionOS doesn’t load WidgetKit extensions found in compatible iPad and iPhone apps. As a result, it doesn’t support Live Activities.
 
 ## Topics
 

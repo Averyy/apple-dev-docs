@@ -1,14 +1,12 @@
 # Apple Search Ads Campaign Management API 2
 
-**Framework**: Apple Search Ads
+**Framework**: Apple_Search_Ads
 
 Apple no longer supports this API.
 
 #### Overview
 
 > **Note**:  As of February 2021, Apple no longer supports the Apple Search Ads Campaign Management API 2. A 301 RESOURCE_MOVED_PERMANENTLY error occurs if you use an API 2 endpoint. API usage requires version 3 or later.
-
- As of February 2021, Apple no longer supports the Apple Search Ads Campaign Management API 2. A 301 RESOURCE_MOVED_PERMANENTLY error occurs if you use an API 2 endpoint. API usage requires version 3 or later.
 
 The Apple Search Ads API 2 broadens international support by allowing advertisers to include multiple countries or regions within a single campaign.
 

@@ -1,6 +1,6 @@
 # tableView(_:rowViewForRow:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Asks the delegate for a view to display the specified row.
@@ -26,8 +26,6 @@ The delegate can implement this method to return a custom [`NSTableRowView`](nst
 The reuse queue can be used in the same way as documented in [`tableView(_:viewFor:row:)`](nstableviewdelegate/tableview(_:viewfor:row:).md). The returned view will have attributes properly set to it before it’s added to the `tableView`.
 
 > **Note**:  This method is only valid for [`NSView`](nsview.md)-based table views.
-
- This method is only valid for [`NSView`](nsview.md)-based table views.
 
 ## Parameters
 

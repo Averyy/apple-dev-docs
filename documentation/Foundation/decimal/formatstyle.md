@@ -28,8 +28,6 @@ Instances of [`Decimal.FormatStyle`](decimal/formatstyle.md) create localized, h
 
 > **Note**:  Foundation provides other format style types for working with the numeric types that the Swift standard library defines. [`IntegerFormatStyle`](integerformatstyle.md) works with types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger), and [`FloatingPointFormatStyle`](floatingpointformatstyle.md) works with types that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint).
 
- Foundation provides other format style types for working with the numeric types that the Swift standard library defines. [`IntegerFormatStyle`](integerformatstyle.md) works with types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger), and [`FloatingPointFormatStyle`](floatingpointformatstyle.md) works with types that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint).
-
 ##### Formatting Decimal Values
 
 Use the [`formatted()`](decimal/formatted().md) method to create a string representation of a decimal value using the default [`Decimal.FormatStyle`](decimal/formatstyle.md) configuration:

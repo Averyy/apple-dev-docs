@@ -1,6 +1,6 @@
 # unsafeFlags(_:_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Set unsafe flags to pass arbitrary command-line flags to the corresponding build tool.
@@ -21,8 +21,6 @@ As the usage of the word “unsafe” implies, Swift Package Manager can’t saf
 As some build flags can be exploited for unsupported or malicious behavior, the use of unsafe flags makes the products containing this target ineligible for use by other packages.
 
 > **Note**: First available in PackageDescription 5.0.
-
-First available in PackageDescription 5.0.
 
 ## Parameters
 

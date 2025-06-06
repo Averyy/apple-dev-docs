@@ -1,6 +1,6 @@
 # AVContinuityDevicePickerViewController
 
-**Framework**: AVKit  
+**Framework**: Avkit  
 **Kind**: class
 
 A view controller that provides an interface to a person so they can select and connect a continuity device to the system.
@@ -21,13 +21,9 @@ The view controller presents an interface on an Apple TV that lets a person choo
 
 > ❗ **Important**:  The continuity device picker presents any devices near the Apple TV that use the same Apple ID.
 
- The continuity device picker presents any devices near the Apple TV that use the same Apple ID.
-
 To respond to the various outcome events from the picker, your app needs to implement the [`AVContinuityDevicePickerViewControllerDelegate`](avcontinuitydevicepickerviewcontrollerdelegate.md) and assign it to the picker’s [`delegate`](avcontinuitydevicepickerviewcontroller/delegate.md) property.
 
 > **Note**:  SwiftUI apps can present the same interface with the `VideoPlayer/continuityDevicePicker(isPresented:onDidConnect:)` view modifier.
-
- SwiftUI apps can present the same interface with the `VideoPlayer/continuityDevicePicker(isPresented:onDidConnect:)` view modifier.
 
 ## Topics
 
@@ -93,4 +89,4 @@ To respond to the various outcome events from the picker, your app needs to impl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avcontinuitydevicepickerviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avcontinuitydevicepickerviewcontroller)*

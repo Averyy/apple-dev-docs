@@ -10,8 +10,6 @@ You can index an argument buffer similarly to buffers, textures, and samplers. H
 
 > **Note**:  Because argument buffers are represented by [`MTLBuffer`](mtlbuffer.md) objects, they can be explicitly distinguished from regular buffers in the Metal shading language if they contain any resources indexed with the `[[id(n)]]` attribute. If any member of a Metal shading language structure has an `[[id(n)]]` attribute, the whole structure is treated as an argument buffer.
 
- Because argument buffers are represented by [`MTLBuffer`](mtlbuffer.md) objects, they can be explicitly distinguished from regular buffers in the Metal shading language if they contain any resources indexed with the `[[id(n)]]` attribute. If any member of a Metal shading language structure has an `[[id(n)]]` attribute, the whole structure is treated as an argument buffer.
-
 Manually assigned argument buffer resource indices don’t need to be contiguous, but they must be unique and arranged in an increasing order. The following example shows manual and automatic index assignment:
 
 ```metal
@@ -94,4 +92,4 @@ fragment float4 my_fragment(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/indexing-argument-buffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/indexing-argument-buffers)*

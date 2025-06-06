@@ -26,8 +26,6 @@ To receive timely alerts, your peripheral must use Generic Attribute Profile (GA
 
 > **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
 
- In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
-
 The critical alerts and background scans share a budget. Your app can only use five timely alerts or background scans within a rolling 24-hour window.
 
 When your app receives a timely alert and your budget has only one Bluetooth alert task remaining, the system raises a [`leGattNearBackgroundNotificationLimit`](https://developer.apple.com/documentation/CoreBluetooth/CBError-swift.struct/leGattNearBackgroundNotificationLimit) error. If you exceed the budget, it raises a [`leGattExceededBackgroundNotificationLimit`](https://developer.apple.com/documentation/CoreBluetooth/CBError-swift.struct/leGattExceededBackgroundNotificationLimit) error. The system passes these errors to your [`CBPeripheralDelegate`](https://developer.apple.com/documentation/CoreBluetooth/CBPeripheralDelegate), by calling methods like the [`peripheral(_:didUpdateValueFor:error:)`](https://developer.apple.com/documentation/CoreBluetooth/CBPeripheralDelegate/peripheral(_:didUpdateValueFor:error:)-1xyna) method.
@@ -71,4 +69,4 @@ If you exceed your budget, your app doesn’t receive any timely alerts until ad
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkbluetoothalertrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkbluetoothalertrefreshbackgroundtask)*

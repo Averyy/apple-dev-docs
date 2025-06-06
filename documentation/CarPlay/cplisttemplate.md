@@ -1,6 +1,6 @@
 # CPListTemplate
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: class
 
 A template that displays and manages a list of items.
@@ -25,8 +25,6 @@ To create a list template, call the [`init(title:sections:)`](cplisttemplate/ini
 Each section contains an array of list items — objects that conform to either the [`CPListTemplateItem`](cplisttemplateitem.md) or the [`CPSelectableListItem`](cpselectablelistitem.md) protocol. CarPlay provides three concrete implementations of these protocols:
 
 > **Note**:  The depth of a hierarchical list in CarPlay depends on your app’s entitlements. Food-ordering apps must not exceed two levels. The framework restricts all other categories of apps to five levels. Also, some vehicles limit the number of items that the list displays. See [`CPSessionConfiguration`](cpsessionconfiguration.md) for more information.
-
- The depth of a hierarchical list in CarPlay depends on your app’s entitlements. Food-ordering apps must not exceed two levels. The framework restricts all other categories of apps to five levels. Also, some vehicles limit the number of items that the list displays. See [`CPSessionConfiguration`](cpsessionconfiguration.md) for more information.
 
 To display the list, call your interface controller’s [`pushTemplate(_:animated:completion:)`](cpinterfacecontroller/pushtemplate(_:animated:completion:).md) method, passing in the list template to add it to your navigation hierarchy. Alternatively, add the template as a tab in your [`CPTabBarTemplate`](cptabbartemplate.md).
 
@@ -118,4 +116,4 @@ To enable the assistant cell in your list template, use [`init(title:sections:as
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cplisttemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cplisttemplate)*

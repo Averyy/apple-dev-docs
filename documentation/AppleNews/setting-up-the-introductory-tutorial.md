@@ -1,6 +1,6 @@
 # Setting Up the Introductory Tutorial
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Download the tutorial files, and learn about what you’ll create in the introductory tutorial.
 
@@ -40,8 +40,6 @@ If you chose option 1 in [`Choose an Option for Completing the Introductory Tuto
 - [`News_Design_Tutorial_1_Article_Structure.zip`](https://developer.apple.comhttps://developer.apple.com/apple-news/download/ANF_Design_Tutorial_1_Article_Structure.zip). This ZIP file includes an `article.json` file and a header image for the basic structure of an article.
 
 > **Note**:  You can’t preview this article yet, because it doesn’t contain sufficient content. You’ll add this missing content as you work through the tutorial.
-
- You can’t preview this article yet, because it doesn’t contain sufficient content. You’ll add this missing content as you work through the tutorial.
 
 ###### Files to Download for Option 2
 
@@ -121,4 +119,4 @@ It’s recommended that you choose a text editor designed for editing code. Alth
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/setting-up-the-introductory-tutorial)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/setting-up-the-introductory-tutorial)*

@@ -1,6 +1,6 @@
 # saturation(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Adjusts the color saturation of the view.
@@ -29,8 +29,6 @@ An effect that adjusts the saturation of the view.
 Use color saturation to increase or decrease the intensity of colors in a view.
 
 > **Note**: `contrast(_:)`
-
-`contrast(_:)`
 
 ## Parameters
 

@@ -12,8 +12,6 @@ In Metal, a  is a texture that bridges the display subsystem within [`Core Anima
 
 > **Note**:  You can’t present a texture you directly create in Metal unless you copy its content to a drawable using a blit pass (see [`Blit Passes`](blit-passes.md)).
 
- You can’t present a texture you directly create in Metal unless you copy its content to a drawable using a blit pass (see [`Blit Passes`](blit-passes.md)).
-
 To display content on a device’s screen, add one of these to your Metal app:
 
 - A [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) instance within a custom view class
@@ -54,4 +52,4 @@ Whichever mechanism you choose, pay close attention to how your app handles draw
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/onscreen-presentation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/onscreen-presentation)*

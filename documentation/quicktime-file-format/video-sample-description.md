@@ -1,6 +1,6 @@
 # Video sample description ('stsd')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that contains information that defines how to interpret video media data.
@@ -10,8 +10,6 @@ An atom that contains information that defines how to interpret video media data
 The video sample description contains information that defines how to interpret video media data. A video sample description begins with the four fields described in the ‘General structure of a sample description’ section of [`Sample description atom ('stsd')`](sample_description_atom.md).
 
 > **Note**: Some video sample descriptions contain an optional 4-byte terminator with all bytes set to `0`, following all other sample description and sample description extension data. If this optional terminator is present, the sample description size value will include it. It is important to check the sample description size when parsing: more than or fewer than these four optional bytes, if present in the size value, indicates a malformed sample description.
-
-Some video sample descriptions contain an optional 4-byte terminator with all bytes set to `0`, following all other sample description and sample description extension data. If this optional terminator is present, the sample description size value will include it. It is important to check the sample description size when parsing: more than or fewer than these four optional bytes, if present in the size value, indicates a malformed sample description.
 
 The data format field of a video sample description indicates the type of compression that was used to compress the image data, or the color space representation of uncompressed video data. The following table shows some of the formats supported. The list is not exhaustive, and is subject to addition.
 

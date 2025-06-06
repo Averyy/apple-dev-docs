@@ -56,8 +56,6 @@ You can make rendered 3D content more lifelike by having it appear to interact p
 
 > ⚠️ **Warning**: Be mindful of how much content you include in immersive scenes that use the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) style. For more information, see [`Creating fully immersive experiences in your app`](creating-fully-immersive-experiences.md).
 
-Be mindful of how much content you include in immersive scenes that use the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) style. For more information, see [`Creating fully immersive experiences in your app`](creating-fully-immersive-experiences.md).
-
 Use low-priority tasks to generate meshes, because generating them is a computationally expensive operation. The following creates a mesh entity with collision shapes using scene reconstruction:
 
 ```swift
@@ -91,8 +89,6 @@ func processReconstructionUpdates() async {
 
 > **Note**: Scene reconstruction meshes only support the [`PhysicsBodyMode.static`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyMode/static) physics body component mode.
 
-Scene reconstruction meshes only support the [`PhysicsBodyMode.static`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyMode/static) physics body component mode.
-
 Each object in the scene reconstruction mesh updates its [`originFromAnchorTransform`](https://developer.apple.com/documentation/ARKit/MeshAnchor/originFromAnchorTransform) information independently and requires a separate static mesh because ARKit subdivides its representation of the world into multiple, distinct sections.
 
 ##### Display Scene Reconstruction Meshes During Debugging
@@ -123,4 +119,4 @@ People using an app that leverages scene reconstruction typically don’t need t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/incorporating-real-world-surroundings-in-an-immersive-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/incorporating-real-world-surroundings-in-an-immersive-experience)*

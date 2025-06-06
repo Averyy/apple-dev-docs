@@ -22,8 +22,6 @@ init(intent: T, description: Text)
 
 > **Note**: On platforms that offer a dedicated user interface for configuring widgets — for example, iOS or macOS — `IntentRecommendation` is inactive.
 
-On platforms that offer a dedicated user interface for configuring widgets — for example, iOS or macOS — `IntentRecommendation` is inactive.
-
 ## Parameters
 
 - `intent`: The intent that represents the recommended   configuration.

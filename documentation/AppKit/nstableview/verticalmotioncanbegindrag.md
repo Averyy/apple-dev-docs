@@ -1,6 +1,6 @@
 # verticalMotionCanBeginDrag
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 A Boolean value indicating whether vertical motion is treated as a drag or selection change.
@@ -21,8 +21,6 @@ The default value of this property is [`true`](https://developer.apple.com/docum
 
 > **Note**:  Horizontal motion is always a valid motion to begin a drag.
 
- Horizontal motion is always a valid motion to begin a drag.
-
 ## See Also
 
 - [func dragImageForRows(with: IndexSet, tableColumns: [NSTableColumn], event: NSEvent, offset: NSPointPointer) -> NSImage](nstableview/dragimageforrows(with:tablecolumns:event:offset:).md)
@@ -39,4 +37,4 @@ The default value of this property is [`true`](https://developer.apple.com/docum
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstableview/verticalmotioncanbegindrag)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstableview/verticalmotioncanbegindrag)*

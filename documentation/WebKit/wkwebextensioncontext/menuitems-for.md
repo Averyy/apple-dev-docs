@@ -27,8 +27,6 @@ The app is responsible for displaying these menu items, typically in a context m
 
 > **Note**: The properties of the menu items, including the items themselves, can change dynamically. Therefore, the app should fetch the menu items immediately before showing them, to ensure that the most current and relevant items are presented.
 
-The properties of the menu items, including the items themselves, can change dynamically. Therefore, the app should fetch the menu items immediately before showing them, to ensure that the most current and relevant items are presented.
-
 ## Parameters
 
 - `tab`: The tab for which to retrieve the menu items.

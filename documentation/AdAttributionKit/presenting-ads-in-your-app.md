@@ -1,6 +1,6 @@
 # Presenting ads in your app
 
-**Framework**: AdAttributionKit
+**Framework**: Adattributionkit
 
 Render different ad styles in your app.
 
@@ -15,8 +15,6 @@ The first step to presenting ads in your app is to initialize an [`AppImpression
 Custom rendered ads include ad content that overlays the app view. To record a view-through impression use the AdAttributionKit [`beginView()`](appimpression/beginview().md) and [`endView()`](appimpression/endview().md) methods as shown in the following SwiftUI example using the `onAppear()` and `onDisappear()` view modifiers:
 
 > **Note**: In UIKit, use the [`viewDidAppear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidAppear(_:)) and [`viewWillDisappear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewWillDisappear(_:)) methods. Don’t use or rely on timer methods to determine when to end an ad impression view in either SwiftUI or UIKit.
-
-In UIKit, use the [`viewDidAppear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidAppear(_:)) and [`viewWillDisappear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewWillDisappear(_:)) methods. Don’t use or rely on timer methods to determine when to end an ad impression view in either SwiftUI or UIKit.
 
 ```swift
 struct AdContentView: View {
@@ -91,4 +89,4 @@ Pass an `AppImpression` when configuring a StoreKit rendered ad, and it handles 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/presenting-ads-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/presenting-ads-in-your-app)*

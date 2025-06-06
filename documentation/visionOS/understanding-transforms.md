@@ -16,8 +16,6 @@ A root entity has no parent entity. Its location in the scene is either controll
 
 > **Note**: In addition to a spatial tracking session, apps can use an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession) with any number of data providers. The available list can be found in the type [`DataProvider`](https://developer.apple.com/documentation/ARKit/DataProvider), and a full list of anchor types is found in [`AnchoringComponent.Target`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/Target-swift.enum).
 
-In addition to a spatial tracking session, apps can use an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession) with any number of data providers. The available list can be found in the type [`DataProvider`](https://developer.apple.com/documentation/ARKit/DataProvider), and a full list of anchor types is found in [`AnchoringComponent.Target`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/Target-swift.enum).
-
 Each entity added to the tree adds a new coordinate system defined by its [`transform`](https://developer.apple.com/documentation/RealityKit/HasTransform/transform) and is relative to its container entity. Each of the coordinate systems relate to each other by the hierarchy of entities and their transforms. For example a hierarchy of entities built with this code:
 
 ```swift
@@ -102,8 +100,6 @@ func createCube() -> ModelEntity? {
 
 > **Note**: For more information about constructing meshes, see [`MeshDescriptor`](https://developer.apple.com/documentation/RealityKit/MeshDescriptor). When you set the `transform` on an entity, the system transforms the mesh vertices to the new coordinate system.
 
-For more information about constructing meshes, see [`MeshDescriptor`](https://developer.apple.com/documentation/RealityKit/MeshDescriptor). When you set the `transform` on an entity, the system transforms the mesh vertices to the new coordinate system.
-
 #### Add the Cube Entity to a Reality View
 
 You add the `cube` entity to the volumetric window via SwiftUI like this:
@@ -172,8 +168,6 @@ The order is important: scale first then translate.
 
 > ❗ **Important**: Multiplying matrixes isn’t commutative, which means that `A` * `B` is not equal to `B` * `A`.
 
-Multiplying matrixes isn’t commutative, which means that `A` * `B` is not equal to `B` * `A`.
-
 Multiplying these two transformation matrices in the order shown above yields this result:
 
 ![A matrix multiplication with three matrices. The left most matrix is the translation matrix. The first column is 1.0, 0.0, 0.0, 0.0. The second column is 0.0, 1.0, 0.0, 0.0. The third column is 0.0, 0.0, 1.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0. The next matrix is the scale matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.0, 0.0, 0.0, 1.0. The third matrix is the result of multiplying the two matrices. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0.](https://docs-assets.developer.apple.com/published/3b2172f15566e6659b01e3b7cca14c5f/Combination1MatrixMultiplication%402x.png)
@@ -187,8 +181,6 @@ Switching that order yields a different matrix:
 This resulting matrix yields a similar uniform scale of `2`, but the translation is scaled by `2` as well. The net result of this matrix is to scale the model uniformly by `2` and move it in the positive `x` direction by `0.2`:
 
 > ❗ **Important**: Matrix multiplication is associative, which means that you can move the parenthesis around. So `A` *  `B` * `C` can be done as `A` *  (`B` * `C`)  or (`A` *  `B`) * `C`. This allows the `transform` to be one matrix application instead of two.
-
-Matrix multiplication is associative, which means that you can move the parenthesis around. So `A` *  `B` * `C` can be done as `A` *  (`B` * `C`)  or (`A` *  `B`) * `C`. This allows the `transform` to be one matrix application instead of two.
 
 Multiply the `scale` matrix by the `translation` matrix to get the combined `transform` matrix. RealityKit then applies the combined matrix to the vertices:
 
@@ -222,8 +214,6 @@ Rotation around any other axis is achieved in the same way. For example, to rota
 ```
 
 > ❗ **Important**: The [`normalize(_:)`](https://developer.apple.com/documentation/simd/normalize(_:)-3lhrd) function returns a vector pointing in the same direction with a length of 1.0. Make sure to normalize the `axis` argument when creating quaternions.
-
-The [`normalize(_:)`](https://developer.apple.com/documentation/simd/normalize(_:)-3lhrd) function returns a vector pointing in the same direction with a length of 1.0. Make sure to normalize the `axis` argument when creating quaternions.
 
 That code performs a rotation that looks like this:
 
@@ -274,4 +264,4 @@ The order of these transforms is `translation` followed by `rotation` then `scal
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/understanding-transforms)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/understanding-transforms)*

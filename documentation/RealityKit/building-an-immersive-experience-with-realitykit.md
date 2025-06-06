@@ -1,6 +1,6 @@
 # Building an immersive experience with RealityKit
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Use systems and postprocessing effects to create a realistic underwater scene.
 
@@ -12,8 +12,6 @@ Use systems and postprocessing effects to create a realistic underwater scene.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`10074: Dive into RealityKit 2`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10074/).
-
-This sample code project is associated with WWDC21 session [`10074: Dive into RealityKit 2`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10074/).
 
 #### Configure the Sample Code Project
 
@@ -31,4 +29,4 @@ This project requires an iPhone or iPad running at least iOS 15 or iPadOS 15. It
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/building-an-immersive-experience-with-realitykit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/building-an-immersive-experience-with-realitykit)*

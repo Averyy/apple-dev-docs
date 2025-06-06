@@ -1,6 +1,6 @@
 # EntityAction
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: protocol
 
 A protocol that defines an action for an entity.
@@ -29,8 +29,6 @@ These events allow application code to animate target values (see [`AnimationSta
 The action data stored within an action animation is available to the action’s event handler.
 
 > **Note**: Custom actions don’t support animating [`BlendShapeWeights`](blendshapeweights.md).
-
-Custom actions don’t support animating [`BlendShapeWeights`](blendshapeweights.md).
 
 ## Topics
 
@@ -83,4 +81,4 @@ Custom actions don’t support animating [`BlendShapeWeights`](blendshapeweights
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/entityaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/entityaction)*

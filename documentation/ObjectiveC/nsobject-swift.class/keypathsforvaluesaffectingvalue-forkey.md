@@ -1,6 +1,6 @@
 # keyPathsForValuesAffectingValue(forKey:)
 
-**Framework**: Objective-C Runtime  
+**Framework**: Objectivec  
 **Kind**: method
 
 Returns a set of key paths for properties whose values affect the value of the specified key.
@@ -29,8 +29,6 @@ The default implementation of this method searches the receiving class for a met
 You can override this method when the getter method of one of your properties computes a value to return using the values of other properties, including those that are located by key paths. Your override should typically call `super` and return a set that includes any members in the set that result from doing that (so as not to interfere with overrides of this method in superclasses).
 
 > **Note**:  You must not override this method when you add a computed property to an existing class using a category, overriding methods in categories is unsupported. In that case, implement a matching `+keyPathsForValuesAffecting<Key>` to take advantage of this mechanism.
-
- You must not override this method when you add a computed property to an existing class using a category, overriding methods in categories is unsupported. In that case, implement a matching `+keyPathsForValuesAffecting<Key>` to take advantage of this mechanism.
 
 ## Parameters
 

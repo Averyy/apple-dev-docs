@@ -28,8 +28,6 @@ The [`XCUIElementAttributes`](xcuielementattributes.md) protocol adds attribute-
 
 > **Note**:  The attributes provided by this protocol represent data exposed to the Accessibility system, and are available during query matching.
 
- The attributes provided by this protocol represent data exposed to the Accessibility system, and are available during query matching.
-
 ## Topics
 
 ### Identity
@@ -87,4 +85,4 @@ The [`XCUIElementAttributes`](xcuielementattributes.md) protocol adds attribute-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuielementattributes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/XCUIAutomation/xcuielementattributes)*

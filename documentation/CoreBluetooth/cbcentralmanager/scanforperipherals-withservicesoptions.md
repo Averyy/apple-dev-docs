@@ -1,6 +1,6 @@
 # scanForPeripherals(withServices:options:)
 
-**Framework**: Core Bluetooth  
+**Framework**: Corebluetooth  
 **Kind**: method
 
 Scans for peripherals that are advertising services.
@@ -25,8 +25,6 @@ func scanForPeripherals(withServices serviceUUIDs: [CBUUID]?, options: [String :
 You can provide an array of [`CBUUID`](cbuuid.md) objects — representing service UUIDs — in the `serviceUUIDs` parameter. When you do, the central manager returns only peripherals that advertise the services you specify. If the `serviceUUIDs` parameter is `nil`, this method returns all discovered peripherals, regardless of their supported services.
 
 > **Note**:  The recommended practice is to populate the `serviceUUIDs` parameter rather than leaving it `nil`.
-
- The recommended practice is to populate the `serviceUUIDs` parameter rather than leaving it `nil`.
 
 If the central manager is actively scanning with one set of parameters and it receives another set to scan, the new parameters override the previous set. When the central manager discovers a peripheral, it calls the [`centralManager(_:didDiscover:advertisementData:rssi:)`](cbcentralmanagerdelegate/centralmanager(_:diddiscover:advertisementdata:rssi:).md) method of its delegate object.
 

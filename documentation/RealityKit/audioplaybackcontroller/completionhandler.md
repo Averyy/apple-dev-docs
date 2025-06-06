@@ -1,6 +1,6 @@
 # completionHandler
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 A closure that the playback controller executes when it reaches the end of the audio stream.
@@ -24,8 +24,6 @@ A closure that the playback controller executes when it reaches the end of the a
 The controller doesn’t call the closure if you manually stop the audio by calling the [`stop()`](audioplaybackcontroller/stop().md) or the [`pause()`](audioplaybackcontroller/pause().md) method.
 
 > **Note**: You can only register one handler at a time. If you set a new handler, the controller discards the old one.
-
-You can only register one handler at a time. If you set a new handler, the controller discards the old one.
 
 
 ---

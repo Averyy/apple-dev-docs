@@ -1,6 +1,6 @@
 # ExternalPurchase
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: enum
 
 Enables qualifying apps to offer external purchases within the app.
@@ -30,8 +30,6 @@ This functionality is only available to and required by apps with the [`com.appl
 
 > **Note**:  If your app is running on iOS 15.4 through 17.3 or the iPadOS 15.4 through 17.3 and configured to use the External Purchase API, you must check [`canMakePayments`](appstore/canmakepayments.md) before calling the External Purchase APIs. If [`canMakePayments`](appstore/canmakepayments.md) is `false`, do not call the [`ExternalPurchaseLink`](externalpurchaselink.md) or [`ExternalPurchase`](externalpurchase.md) APIs.
 
- If your app is running on iOS 15.4 through 17.3 or the iPadOS 15.4 through 17.3 and configured to use the External Purchase API, you must check [`canMakePayments`](appstore/canmakepayments.md) before calling the External Purchase APIs. If [`canMakePayments`](appstore/canmakepayments.md) is `false`, do not call the [`ExternalPurchaseLink`](externalpurchaselink.md) or [`ExternalPurchase`](externalpurchase.md) APIs.
-
 ## Topics
 
 ### Offering an external purchase
@@ -59,4 +57,4 @@ This functionality is only available to and required by apps with the [`com.appl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/externalpurchase)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/externalpurchase)*

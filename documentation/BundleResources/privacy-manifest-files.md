@@ -1,6 +1,6 @@
 # Privacy manifest files
 
-**Framework**: Bundle Resources
+**Framework**: Bundleresources
 
 Describe the data your app or third-party SDK collects and the reasons required APIs it uses.
 
@@ -15,8 +15,6 @@ For each type of data your app or third-party SDK collects and category of requi
 
 > ❗ **Important**:  You need to include a privacy manifest file in your third-party SDK if it’s listed in “SDKs that require a privacy manifest and signature,” in [`Upcoming third-party SDK requirements`](https://developer.apple.comhttps://developer.apple.com/support/third-party-SDK-requirements/). Otherwise, include a privacy manifest file in your third-party SDK if it uses required reasons API, collects data about the person using apps that include the third-party SDK, enables the app to collect data about people using the app, or contacts tracking domains. Providing a privacy manifest file helps app developers to understand the API use and data-collection practices of your third-party SDK.
 
- You need to include a privacy manifest file in your third-party SDK if it’s listed in “SDKs that require a privacy manifest and signature,” in [`Upcoming third-party SDK requirements`](https://developer.apple.comhttps://developer.apple.com/support/third-party-SDK-requirements/). Otherwise, include a privacy manifest file in your third-party SDK if it uses required reasons API, collects data about the person using apps that include the third-party SDK, enables the app to collect data about people using the app, or contacts tracking domains. Providing a privacy manifest file helps app developers to understand the API use and data-collection practices of your third-party SDK.
-
 ##### Create a Privacy Manifest
 
 To add the privacy manifest to your app or third-party SDK in Xcode, follow these steps:
@@ -30,8 +28,6 @@ To add the privacy manifest to your app or third-party SDK in Xcode, follow thes
 By default, the file is named `PrivacyInfo.xcprivacy`; this is the required file name for bundled privacy manifests.
 
 > **Note**:  You need to add the privacy manifest file to your target’s resources for Xcode to use it when you generate a privacy report. If you distribute your third-party SDK as a static library, use the support for static frameworks in Xcode 15 or later to bundle resources, including the privacy manifest file. Create a framework target in Xcode that builds your product, set its Mach-O type build setting to “Static Library,” and add the privacy manifest file to your target’s bundle resources along with any other resources, for example, image files.
-
- You need to add the privacy manifest file to your target’s resources for Xcode to use it when you generate a privacy report. If you distribute your third-party SDK as a static library, use the support for static frameworks in Xcode 15 or later to bundle resources, including the privacy manifest file. Create a framework target in Xcode that builds your product, set its Mach-O type build setting to “Static Library,” and add the privacy manifest file to your target’s bundle resources along with any other resources, for example, image files.
 
 At the top level of this property list file, add the following keys to the dictionary:
 
@@ -59,4 +55,4 @@ To provide a list of internet domains in `NSPrivacyTrackingDomains`, set `NSPriv
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files)*

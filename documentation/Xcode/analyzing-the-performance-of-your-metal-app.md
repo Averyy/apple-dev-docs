@@ -105,8 +105,6 @@ By contrast, if your rendering threads don’t show much blocked time, it’s li
 
 > **Note**: Option-click the disclosure triangle to automatically disclose your app’s symbols.
 
-Option-click the disclosure triangle to automatically disclose your app’s symbols.
-
 The time a thread spends running is represented by the collection of blue and orange areas in the timeline track. If a frame interval has little blocked time, it indicates CPU overutilization. To resolve the issue, focus your optimization efforts on improving slow-running code. Because the long-running methods are in your host app, you can easily determine whether — and how — you can optimize them to run faster.
 
 ##### Check Cpu Thread Prioritization
@@ -145,4 +143,4 @@ For example, if you have a rendering algorithm that needs the result from a comp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-the-performance-of-your-metal-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-the-performance-of-your-metal-app)*

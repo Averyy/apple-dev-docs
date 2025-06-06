@@ -1,6 +1,6 @@
 # sourceFormatHint
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A hint about the format of the sample buffers to append to the input.
@@ -24,8 +24,6 @@ var sourceFormatHint: CMFormatDescription? { get }
 An input may use this hint to fill in missing output settings or perform additional upfront validation of samples.
 
 > **Note**:  To ensure successful file writing when you initialize an input with a source format hint, only append samples of this type.
-
- To ensure successful file writing when you initialize an input with a source format hint, only append samples of this type.
 
 ## See Also
 

@@ -8,8 +8,6 @@ Give users even more confidence in your macOS software by submitting it to Apple
 
 > ❗ **Important**:  Starting November 1, 2023, the Apple notary service no longer accepts uploads from `altool` or Xcode 13 or earlier. If you notarize your Mac software with the Apple notary service using the `altool` command-line utility or Xcode 13 or earlier, you need to transition to the `notarytool` command-line utility or upgrade to Xcode 14 or later.
 
- Starting November 1, 2023, the Apple notary service no longer accepts uploads from `altool` or Xcode 13 or earlier. If you notarize your Mac software with the Apple notary service using the `altool` command-line utility or Xcode 13 or earlier, you need to transition to the `notarytool` command-line utility or upgrade to Xcode 14 or later.
-
 Notarize your macOS software to give users more confidence that the Developer ID-signed software you distribute has been checked by Apple for malicious components. Notarization of macOS software is not App Review. The Apple notary service is an automated system that scans your software for malicious content, checks for code-signing issues, and returns the results to you quickly. If there are no issues, the notary service generates a ticket for you to staple to your software; the notary service also publishes that ticket online where Gatekeeper can find it.
 
 When the user first installs or runs your macOS software, the presence of a ticket (either online or attached to the executable) tells Gatekeeper that Apple notarized the software. Gatekeeper then places descriptive information in the initial launch dialog to help the user make an informed choice about whether to launch the app.
@@ -27,8 +25,6 @@ Notarization also protects your users if your Developer ID signing key is expose
 
 > ❗ **Important**:  Beginning in macOS 10.14.5, software signed with a new Developer ID certificate and all new or updated kernel extensions must be notarized to run. Beginning in macOS 10.15, all software built after June 1, 2019, and distributed with Developer ID must be notarized. However, you aren’t required to notarize software that you distribute through the Mac App Store because the App Store submission process already includes equivalent security checks.
 
- Beginning in macOS 10.14.5, software signed with a new Developer ID certificate and all new or updated kernel extensions must be notarized to run. Beginning in macOS 10.15, all software built after June 1, 2019, and distributed with Developer ID must be notarized. However, you aren’t required to notarize software that you distribute through the Mac App Store because the App Store submission process already includes equivalent security checks.
-
 ##### Prepare Your Software for Notarization
 
 Apple’s notary service requires you to adopt the following protections:
@@ -44,8 +40,6 @@ Apple’s notary service requires you to adopt the following protections:
 Apple recommends that you notarize all of the software that you’ve distributed, including older releases, and even software that doesn’t meet all of these requirements or that is unsigned. Apple’s notary service uses a variety of methods, including telemetry, to determine which of the above rules to relax for preexisting software. For more information, see [`Notarize your preexisting software`](notarizing-macos-software-before-distribution#Notarize-your-preexisting-software.md).
 
 > ❗ **Important**:  Some preexisting software might not run properly after being successfully notarized. For example, Gatekeeper might find code signing issues that a relaxed notarization process didn’t enforce. Always review the notary log for any warnings, and test your software before distribution.
-
- Some preexisting software might not run properly after being successfully notarized. For example, Gatekeeper might find code signing issues that a relaxed notarization process didn’t enforce. Always review the notary log for any warnings, and test your software before distribution.
 
 ##### Notarize Plug Ins
 
@@ -64,8 +58,6 @@ Also include resource access entitlements, like the Address Book or Location acc
 For a complete list of hardened runtime entitlements, see [`Hardened Runtime`](hardened-runtime.md). For information about usage strings, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources).
 
 > ❗ **Important**:  In macOS 10.14.x, for executables using the hardened runtime, PDEs load only if the host executable has the [`Disable Library Validation Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-library-validation). Beginning in macOS 10.15, the entitlement is no longer needed.
-
- In macOS 10.14.x, for executables using the hardened runtime, PDEs load only if the host executable has the [`Disable Library Validation Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-library-validation). Beginning in macOS 10.15, the entitlement is no longer needed.
 
 ##### Notarize Your App Automatically As Part of the Distribution Process
 
@@ -101,8 +93,6 @@ To notarize your preexisting software, do the following:
 
 > **Note**:  You don’t need to rebuild or re-sign your software before submitting it for notarization, but you must use an appropriate version of Xcode to perform the notarization steps. Submit everything you’ve previously released, as well as your most recent version, to protect users who continue to use older versions of your software.
 
- You don’t need to rebuild or re-sign your software before submitting it for notarization, but you must use an appropriate version of Xcode to perform the notarization steps. Submit everything you’ve previously released, as well as your most recent version, to protect users who continue to use older versions of your software.
-
 For tips on how to resolve issues that can occur during notarization, see [`Resolving common notarization issues`](resolving-common-notarization-issues.md).
 
 ##### Add a Notarization Step to Your Build Scripts
@@ -127,4 +117,4 @@ For information about how to incorporate notarization into your custom build scr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/notarizing-macos-software-before-distribution)*

@@ -1,6 +1,6 @@
 # SKStorefront
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: class
 
 An object containing the location and unique identifier of an Apple App Store storefront.
@@ -27,8 +27,6 @@ In-app products you create through App Store Connect are available for sale in e
 You must maintain your own list of product identifiers and the storefronts in which you want to make them available.
 
 > **Note**:  Don’t save the storefront information with your customer information; storefront information can change at any time. Always get the storefront identifier immediately before you display product information or availability to the customer in your app. Storefront information may not be used to develop or enhance a customer profile, or track customers for advertising or marketing purposes.
-
- Don’t save the storefront information with your customer information; storefront information can change at any time. Always get the storefront identifier immediately before you display product information or availability to the customer in your app. Storefront information may not be used to develop or enhance a customer profile, or track customers for advertising or marketing purposes.
 
 ##### Show Products Based on the Current Storefront
 
@@ -117,8 +115,6 @@ When you change the App Store Country or Region in App Store Connect for a Sandb
 
 > ❗ **Important**:  To successfully activate a storefront after you change the region in App Store Connect, sign out of the Sandbox Apple ID account on the device and sign back in.
 
- To successfully activate a storefront after you change the region in App Store Connect, sign out of the Sandbox Apple ID account on the device and sign back in.
-
 ## Topics
 
 ### Identifying the Storefront
@@ -143,4 +139,4 @@ When you change the App Store Country or Region in App Store Connect for a Sandb
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skstorefront)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skstorefront)*

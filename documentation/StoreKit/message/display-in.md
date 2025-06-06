@@ -1,6 +1,6 @@
 # display(in:)
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: method
 
 Requests the system to display the App Store message in the window scene.
@@ -27,8 +27,6 @@ func display(in scene: UIWindowScene) throws
 The system displays the message if the message is applicable; for example, if the user has previously seen the same App Store message, the system may determine whether to display the message again.
 
 > **Note**:  If your app uses SwiftUI views, use [`DisplayMessageAction`](displaymessageaction.md) instead of [`display(in:)`](message/display(in:).md).
-
- If your app uses SwiftUI views, use [`DisplayMessageAction`](displaymessageaction.md) instead of [`display(in:)`](message/display(in:).md).
 
 For more information about using [`display(in:)`](message/display(in:).md), see [`Message`](message.md).
 

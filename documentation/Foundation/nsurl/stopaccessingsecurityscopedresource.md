@@ -28,13 +28,9 @@ You must balance each call to [`startAccessingSecurityScopedResource()`](nsurl/s
 
 > ⚠️ **Warning**:  If you fail to relinquish your access to file-system resources when you no longer need them, your app leaks kernel resources. If sufficient kernel resources leak, your app loses its ability to add file-system locations to its sandbox, such as with Powerbox or security-scoped bookmarks, until relaunched.
 
- If you fail to relinquish your access to file-system resources when you no longer need them, your app leaks kernel resources. If sufficient kernel resources leak, your app loses its ability to add file-system locations to its sandbox, such as with Powerbox or security-scoped bookmarks, until relaunched.
-
 If you call this method on a URL whose referenced resource you don’t have access to, nothing happens.
 
 > **Note**:  Security-scoped bookmarks aren’t available in versions of macOS prior to OS X 10.7.3.
-
- Security-scoped bookmarks aren’t available in versions of macOS prior to OS X 10.7.3.
 
 ## See Also
 

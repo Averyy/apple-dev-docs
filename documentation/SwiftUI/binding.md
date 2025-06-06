@@ -1,6 +1,6 @@
 # Binding
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A property wrapper type that can read and write a value owned by a source of truth.
@@ -70,8 +70,6 @@ A binding conforms to `Sendable` only if its wrapped value type also conforms to
 
 > **Note**: To create bindings to properties of a type that conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, use the [`Bindable`](bindable.md) property wrapper. For more information, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
 
-To create bindings to properties of a type that conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, use the [`Bindable`](bindable.md) property wrapper. For more information, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
-
 ## Topics
 
 ### Creating a binding
@@ -126,4 +124,4 @@ To create bindings to properties of a type that conforms to the [`Observable`](h
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/binding)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/binding)*

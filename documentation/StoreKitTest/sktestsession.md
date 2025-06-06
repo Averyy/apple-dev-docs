@@ -1,6 +1,6 @@
 # SKTestSession
 
-**Framework**: StoreKit Test  
+**Framework**: Storekittest  
 **Kind**: class
 
 The controls and environment configuration you use to test StoreKit transactions in Xcode.
@@ -25,8 +25,6 @@ class SKTestSession
 This class controls the settings that the server uses when it processes transactions. Run tests that reconfigure the environment serially, not concurrently, to avoid overwriting each other’s environment settings.
 
 > **Note**:  There’s a single instance of the test environment. All `SKTestSession` instances control the same test environment.
-
- There’s a single instance of the test environment. All `SKTestSession` instances control the same test environment.
 
 The test environment creates an [`SKTestTransaction`](sktesttransaction.md) instance each time your test code calls any method of `SKTestSession` that affects in-app purchases, including:
 
@@ -144,4 +142,4 @@ Before automating a test session with `SKTestSession`, you must create a StoreKi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekittest/sktestsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKitTest/sktestsession)*

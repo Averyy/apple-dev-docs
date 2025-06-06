@@ -1,6 +1,6 @@
 # Adding touch controls to games that support game controllers in iOS
 
-**Framework**: Game Controller
+**Framework**: Gamecontroller
 
 Use touch input and virtual controllers to make your game available to players without controllers.
 
@@ -13,8 +13,6 @@ Many people play games on iOS devices without using a physical controller. You c
 A Metal-based game typically presents content in a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView). An instance of [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController), known as the root view controller, manages the [`UIView`](https://developer.apple.com/documentation/UIKit/UIView). Your root view controller is responsible for the [`GCVirtualController`](gcvirtualcontroller.md) instance. To take responsibility, subclass from [`GCEventViewController`](gceventviewcontroller.md) rather than [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController).
 
 > **Note**:  If your game supports tvOS, you need to subclass from [`GCEventViewController`](gceventviewcontroller.md).
-
- If your game supports tvOS, you need to subclass from [`GCEventViewController`](gceventviewcontroller.md).
 
 To create a custom subclass of [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController), create a new file in your project using the Cocoa Touch Class template. In the “Subclass of” combination box, enter “GCEventViewController”. In the Language menu, choose Objective-C. Then, open the newly created header file and import the Game Controller framework.
 
@@ -126,8 +124,6 @@ For better immersion and performance, the game can render a custom virtual contr
 
 > **Note**:  When rendering custom touch controls, UIKit handles touch events and draws the results as part of the game’s user interface render pass. If your game is multithreaded, you need to pass data to your render thread in a thread-safe way because UIKit is only available on the main thread.
 
- When rendering custom touch controls, UIKit handles touch events and draws the results as part of the game’s user interface render pass. If your game is multithreaded, you need to pass data to your render thread in a thread-safe way because UIKit is only available on the main thread.
-
 Set the hidden property to true when you create the [`GCVirtualController.Configuration`](gcvirtualcontroller/configuration.md). Continue to set the [`elements`](gcvirtualcontroller/configuration/elements.md) property because this affects the elements of the corresponding [`GCController`](gccontroller.md).
 
 ```swift
@@ -191,8 +187,6 @@ Then, declare an extension of the root view controller subclass that conforms to
 Implement the action methods to interpret the location of the touch, update the virtual controller, and inform the render thread.
 
 > **Note**:  Update your user interface from the main thread, instead of game controller code, to avoid unnecessary input latency.
-
- Update your user interface from the main thread, instead of game controller code, to avoid unnecessary input latency.
 
 ```swift
 - (void)thumbstickAction {
@@ -307,4 +301,4 @@ Update [`GCControllerDidConnect`](https://developer.apple.com/documentation/foun
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamecontroller/adding-touch-controls-to-games-that-support-game-controllers-in-ios)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameController/adding-touch-controls-to-games-that-support-game-controllers-in-ios)*

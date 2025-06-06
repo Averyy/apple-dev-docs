@@ -1,6 +1,6 @@
 # Swizzle
 
-**Framework**: ShaderGraph  
+**Framework**: Shadergraph  
 **Kind**: subscript
 
 Performs an arbitrary permutation of the channels of the input stream, returning a new stream of the specified type.
@@ -14,8 +14,6 @@ Performs an arbitrary permutation of the channels of the input stream, returning
 The Swizzle node determines its output by first looking at the `Channels` parameter. Each character in the `Channel` string represents one of the channels of the `In` parameter. For example, if you pass in a vector3 of `(1, 5, 10)` as the `In` parameter, “x” refers to `1`, “y” to `5`, and “z” to `10`. The order of the characters determines how the channels of the input switch around to create the output. For the previous example, if the `Channels` parameter is “zzz”, the output is `(10, 10, 10)`.
 
 > **Note**: The number of characters in the `Channels` must be equal to the number of channels in the output.
-
-The number of characters in the `Channels` must be equal to the number of channels in the output.
 
 The table below shows additional examples of the swizzle node process.
 

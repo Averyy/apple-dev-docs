@@ -1,6 +1,6 @@
 # App Clips
 
-**Framework**: App Clips  
+**Framework**: Appclip  
 **Kind**: module
 
 Provide people a shortcut to selected content and features of your app.
@@ -21,14 +21,6 @@ People find an App Clip by performing an  for example, by tapping a location-bas
 Again, consider the coffee shop’s App Clip: When a person walks past the coffee shop, the system displays a location-based suggestion from Siri Suggestions on their device. They tap the suggestion, confirm the launch of the App Clip on the system-provided , and instantly use the App Clip to order a drink. After a person completes the order, the App Clip recommends its corresponding app to them, and they download the app. The next time they tap the location-based suggestion, they launch the full app instead of the App Clip. If they don’t install the app, tapping the suggestion and confirming the invocation continues launching the App Clip.
 
 > **Note**:  Session 10178: [`What’s new in App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10178) (WWDC23) Session 10097: [`What’s new in App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10097) (WWDC22) Session 10013: [`Build light and fast App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10013) (WWDC21) Session 10012:  [`What’s new in App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10012) (WWDC21)
-
- Session 10178: [`What’s new in App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10178) (WWDC23)
-
-Session 10097: [`What’s new in App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10097) (WWDC22)
-
-Session 10013: [`Build light and fast App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10013) (WWDC21)
-
-Session 10012:  [`What’s new in App Clips`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10012) (WWDC21)
 
 ##### Offer a Great User Experience
 

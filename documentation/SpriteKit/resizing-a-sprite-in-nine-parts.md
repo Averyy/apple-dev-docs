@@ -1,6 +1,6 @@
 # Resizing a Sprite in Nine Parts
 
-**Framework**: SpriteKit
+**Framework**: Spritekit
 
 Scale a sprite using nine-part algorithm.
 
@@ -14,8 +14,6 @@ The size of the sprite node’s [`frame`](sknode/frame.md) property is determine
 For example, if the sprite node’s base size is 32 x 32 pixels and it has an [`xScale`](sknode/xscale.md) value of 1.0 and a [`yScale`](sknode/yscale.md) value of 2.0, the size of its frame is 32 x 64 pixels.
 
 > **Note**:  The scaling values of the sprite node’s ancestors in the scene are also used to scale it. This changes the effective size of the sprite without changing its actual frame value. See .
-
- The scaling values of the sprite node’s ancestors in the scene are also used to scale it. This changes the effective size of the sprite without changing its actual frame value. See .
 
 When a sprite node’s frame is larger than its texture, the texture is stretched to cover its frame. Normally, the texture is stretched uniformly across the frame, as shown in the following figure.
 
@@ -48,4 +46,4 @@ The following figure shows that the corners remain the same, even when the butto
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/resizing-a-sprite-in-nine-parts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/resizing-a-sprite-in-nine-parts)*

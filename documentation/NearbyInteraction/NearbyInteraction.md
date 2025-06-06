@@ -1,6 +1,6 @@
 # Nearby Interaction
 
-**Framework**: Nearby Interaction  
+**Framework**: Nearbyinteraction  
 **Kind**: module
 
 Locate and interact with nearby devices using identifiers, distance, and direction.
@@ -38,8 +38,6 @@ In iOS 15 and later and watchOS 8 and later, U1-enabled devices can interact wit
 
 > **Note**:  The [`supportsPreciseDistanceMeasurement`](nidevicecapability/supportsprecisedistancemeasurement.md) function returns [`false`](https://developer.apple.com/documentation/swift/false) in Mac apps built with Mac Catalyst. For a compatible iPad or iPhone app running in visionOS, framework features are unavailable, and any calls you make to the framework APIs have no effect.
 
- The [`supportsPreciseDistanceMeasurement`](nidevicecapability/supportsprecisedistancemeasurement.md) function returns [`false`](https://developer.apple.com/documentation/swift/false) in Mac apps built with Mac Catalyst. For a compatible iPad or iPhone app running in visionOS, framework features are unavailable, and any calls you make to the framework APIs have no effect.
-
 ##### Using Nearby Interaction in the Background
 
 While your app is in the foreground, it can freely use Nearby Interaction to perform ranging between UWB devices. When the app moves to the background, it can perform UWB ranging only with devices that are Bluetooth Low Energy (LE)-paired and connected.
@@ -47,8 +45,6 @@ While your app is in the foreground, it can freely use Nearby Interaction to per
 In iOS 18.4 and later, your app can continue ranging in the background with any supported device if the app starts a Live Activity as it goes to the background. For more information about creating Live Activities, see [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
 
 > **Note**: Both these forms of background activity require that you enable the appropriate capability in Xcode. In your target’s Signing & Capabilities tab, add the “Background Modes” capability, then select “Uses Nearby Interaction”.
-
-Both these forms of background activity require that you enable the appropriate capability in Xcode. In your target’s Signing & Capabilities tab, add the “Background Modes” capability, then select “Uses Nearby Interaction”.
 
 ## Topics
 

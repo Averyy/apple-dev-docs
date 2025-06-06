@@ -1,6 +1,6 @@
 # showCorrectionIndicator(of:primaryString:alternativeStrings:forStringIn:view:completionHandler:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Display a suitable user interface to indicate a correction may need to be made.
@@ -19,8 +19,6 @@ func showCorrectionIndicator(of type: NSSpellChecker.CorrectionIndicatorType, pr
 Only one indicator at a time may be displayed for a given view, and the only thing a client may do with the indicator after displaying it is to dismiss it using the [`dismissCorrectionIndicator(for:)`](nsspellchecker/dismisscorrectionindicator(for:).md) method.
 
 > **Note**:  In order to record responses properly (for use with the [`record(_:toCorrection:forWord:language:inSpellDocumentWithTag:)`](nsspellchecker/record(_:tocorrection:forword:language:inspelldocumentwithtag:).md) method), clients must store the original word and original correction at least from the point at which the user accepts it until the user edits or reverts it.
-
- In order to record responses properly (for use with the [`record(_:toCorrection:forWord:language:inSpellDocumentWithTag:)`](nsspellchecker/record(_:tocorrection:forword:language:inspelldocumentwithtag:).md) method), clients must store the original word and original correction at least from the point at which the user accepts it until the user edits or reverts it.
 
 ## Parameters
 

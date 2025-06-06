@@ -36,8 +36,6 @@ Upgrading to the Swift 6 language mode enables all of the new language features 
 
 > **Note**:  After you upgrade, the list of upcoming features still includes a few features that will be part of a future Swift version, which are disabled by default in the Swift 6 language mode.
 
- After you upgrade, the list of upcoming features still includes a few features that will be part of a future Swift version, which are disabled by default in the Swift 6 language mode.
-
 After you turn on strict concurrency checking, you might see a large number of new compiler errors and warnings. However, fixing the data race in one part of your app often resolves multiple reported errors. You don’t have to fix all of the reported data races at once. If you need to, you can fix some of them now, switch back to the Swift 5 language mode or switch back to minimal concurrency checking, and then continue fixing the remaining data races later.
 
 For information about how to migrate, including techniques for interoperating with code that hasn’t yet migrated to strict checking, see [`Migrating to Swift 6`](https://developer.apple.comhttps://swift.org/migration).
@@ -50,4 +48,4 @@ For information about how to migrate, including techniques for interoperating wi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/adoptingswift6)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/adoptingswift6)*

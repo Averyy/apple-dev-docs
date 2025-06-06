@@ -14,9 +14,7 @@ Learn how to make your watchOS app more accessible.
 
 > **Note**: This sample code project is associated with WWDC21 session [`10223: Create accessible experiences for watchOS`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10223/).
 
-This sample code project is associated with WWDC21 session [`10223: Create accessible experiences for watchOS`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10223/).
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/create-accessible-experiences-for-watchos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/create-accessible-experiences-for-watchos)*

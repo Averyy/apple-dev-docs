@@ -1,6 +1,6 @@
 # Material
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A background material type.
@@ -77,8 +77,6 @@ When you add a material, foreground elements exhibit vibrancy, a context-specifi
 
 > **Note**: A material blurs a background that’s part of your app, but not what appears behind your app on the screen. For example, the content on the Home Screen doesn’t affect the appearance of a widget.
 
-A material blurs a background that’s part of your app, but not what appears behind your app on the screen. For example, the content on the Home Screen doesn’t affect the appearance of a widget.
-
 ## Topics
 
 ### Getting material types
@@ -141,4 +139,4 @@ A material blurs a background that’s part of your app, but not what appears be
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/material)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/material)*

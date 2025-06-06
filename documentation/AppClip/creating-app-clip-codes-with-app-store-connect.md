@@ -1,6 +1,6 @@
 # Creating App Clip Codes with App Store Connect
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Select one or more advanced App Clip experiences in App Store Connect and create App Clip Codes for users to scan to launch your App Clip.
 
@@ -14,8 +14,6 @@ By placing an App Clip Code at a physical location or using it in printed or dig
 - Save your generated App Clip Codes as Scalable Vector Graphics (SVG) files.
 
 > ❗ **Important**:  To create an App Clip Code with App Store Connect, you first need to upload a build of your app that contains the App Clip and create an advanced App Clip experience. If you haven’t already done so — for example, during development — use the App Clip Code Generator command-line tool instead.
-
- To create an App Clip Code with App Store Connect, you first need to upload a build of your app that contains the App Clip and create an advanced App Clip experience. If you haven’t already done so — for example, during development — use the App Clip Code Generator command-line tool instead.
 
 ##### Select One or More Advanced App Clip Experiences
 
@@ -52,8 +50,6 @@ Note that each URL in the CSV file must match the selected App Clip experience.
 
 > **Note**:  If adding parameters results in a URL that doesn’t fit into an App Clip Code, the website displays an error and doesn’t create a code. For more information about choosing the right URL to encode, see [`Encoding a URL in an App Clip Code`](encoding-a-url-in-an-app-clip-code.md).
 
- If adding parameters results in a URL that doesn’t fit into an App Clip Code, the website displays an error and doesn’t create a code. For more information about choosing the right URL to encode, see [`Encoding a URL in an App Clip Code`](encoding-a-url-in-an-app-clip-code.md).
-
 ##### Configure Your App Clip Code Appearance
 
 On the next screen, choose a default color pattern or experiment with custom colors and instantly preview and verify them. App Clip Codes use three different colors: a foreground color and a background color you choose, and a third color that [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) generates for you based on the other two colors.
@@ -71,4 +67,4 @@ After creating your App Clip Code, download the created SVG file and print it yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/creating-app-clip-codes-with-app-store-connect)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/creating-app-clip-codes-with-app-store-connect)*

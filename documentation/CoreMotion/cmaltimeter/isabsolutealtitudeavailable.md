@@ -1,6 +1,6 @@
 # isAbsoluteAltitudeAvailable()
 
-**Framework**: Core Motion  
+**Framework**: Coremotion  
 **Kind**: method
 
 Returns a Boolean value indicating whether the current device reports changes in the absolute altitude.
@@ -22,8 +22,6 @@ class func isAbsoluteAltitudeAvailable() -> Bool
 Use this method to determine if altitude updates are available before calling the [`startAbsoluteAltitudeUpdates(to:withHandler:)`](cmaltimeter/startabsolutealtitudeupdates(to:withhandler:).md) method.
 
 > **Note**:  Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
-
- Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
 
 ## See Also
 

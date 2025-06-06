@@ -1,6 +1,6 @@
 # UIImage.Orientation
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: enum
 
 Constants that specify the intended display orientation for an image.
@@ -30,8 +30,6 @@ For example, an iOS device camera always encodes pixel data in the camera sensor
 ![UIImage rotates an image with right orientation for correct display](https://docs-assets.developer.apple.com/published/a4de8a358cbf9a76800cc595fceb8892/media-2948302%402x.png)
 
 > **Note**:  Some frameworks describe image orientation using the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) type (or the raw TIFF/Exif numeric values that type defines symbols for). However, the underlying numeric values of that type are incompatible with [`UIImage.Orientation`](uiimage/orientation.md). For conversion help, see the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) overview.
-
- Some frameworks describe image orientation using the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) type (or the raw TIFF/Exif numeric values that type defines symbols for). However, the underlying numeric values of that type are incompatible with [`UIImage.Orientation`](uiimage/orientation.md). For conversion help, see the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) overview.
 
 ## Topics
 

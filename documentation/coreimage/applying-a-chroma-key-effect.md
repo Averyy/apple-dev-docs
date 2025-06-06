@@ -1,6 +1,6 @@
 # Applying a Chroma Key Effect
 
-**Framework**: Core Image
+**Framework**: Coreimage
 
 Replace a color in one image with the background from another.
 
@@ -70,8 +70,6 @@ func chromaKeyFilter(fromHue: CGFloat, toHue: CGFloat) -> CIColorCube {
 5. Create a [`colorCube()`](cifilter/3228287-colorcube.md) filter with the cube data.
 
 > **Note**: The framework doesn’t have built-in direct conversion between color spaces, but you can access the hue of a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) created with RGB values. Create a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) from the raw RGB values and then read the hue from it.
-
-The framework doesn’t have built-in direct conversion between color spaces, but you can access the hue of a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) created with RGB values. Create a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) from the raw RGB values and then read the hue from it.
 
 ```swift
 func getHue(red: CGFloat, green: CGFloat, blue: CGFloat) -> CGFloat {

@@ -1,6 +1,6 @@
 # maximumGrade(forFacts:)
 
-**Framework**: GameplayKit  
+**Framework**: Gameplaykit  
 **Kind**: method
 
 Returns the highest membership grade among the specified facts.
@@ -28,8 +28,6 @@ The highest membership grade in the array of facts.
 In fuzzy logic, this method is called the OR Zadeh operator, because it corresponds to the OR operator in Boolean logic.
 
 > **Note**:  If a fact is not in the [`facts`](gkrulesystem/facts.md) array, its membership grade for purposes of this operation is implicitly zero.
-
- If a fact is not in the [`facts`](gkrulesystem/facts.md) array, its membership grade for purposes of this operation is implicitly zero.
 
 ## Parameters
 

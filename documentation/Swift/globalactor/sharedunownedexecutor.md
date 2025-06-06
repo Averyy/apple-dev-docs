@@ -31,8 +31,6 @@ Returning different executors for different invocations of this computed propert
 
 > **Note**: [`SerialExecutor`](serialexecutor.md)
 
-[`SerialExecutor`](serialexecutor.md)
-
 
 ---
 

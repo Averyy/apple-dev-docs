@@ -22,8 +22,8 @@ class URLSessionTask
 
 ## Mentions
 
-- [Uploading data to a website](uploading-data-to-a-website.md)
 - [Uploading streams of data](uploading-streams-of-data.md)
+- [Uploading data to a website](uploading-data-to-a-website.md)
 
 #### Overview
 
@@ -37,8 +37,6 @@ The [`URLSessionTask`](urlsessiontask.md) class is the base class for tasks in a
 After you create a task, you start it by calling its [`resume()`](urlsessiontask/resume().md) method. The session then maintains a strong reference to the task until the request finishes or fails; you don’t need to maintain a reference to the task unless it’s useful for your app’s internal bookkeeping.
 
 > **Note**:  All task properties support key-value observing.
-
- All task properties support key-value observing.
 
 ## Topics
 
@@ -138,4 +136,4 @@ After you create a task, you start it by calling its [`resume()`](urlsessiontask
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessiontask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessiontask)*

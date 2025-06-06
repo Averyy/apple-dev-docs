@@ -1,14 +1,12 @@
 # Generating a Promotional Offer Signature on the Server
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Generate a signature using your private key and lightweight cryptography libraries.
 
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`305: Subscription Offers Best Practices`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/305/).
-
-This sample code project is associated with WWDC 2019 session [`305: Subscription Offers Best Practices`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/305/).
 
 This sample code is a simple server written using JavaScript and Node.js. It demonstrates how to generate a signature for promotional offers. The sample demonstrates:
 
@@ -67,4 +65,4 @@ The request must have a `Content-type` header of `application/json`, and JSON bo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/generating-a-promotional-offer-signature-on-the-server)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/generating-a-promotional-offer-signature-on-the-server)*

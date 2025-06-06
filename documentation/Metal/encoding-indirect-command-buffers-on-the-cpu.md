@@ -61,8 +61,6 @@ Recreating draws that were equivalent to ones you did in a previous queue can be
 
 > **Note**: To access individual buffers referenced by an indirect command buffer, you must call the `useResource:usage:` method for each buffer that you want to use. For more information, see the “Execute an Indirect Command Buffer” section.
 
-To access individual buffers referenced by an indirect command buffer, you must call the `useResource:usage:` method for each buffer that you want to use. For more information, see the “Execute an Indirect Command Buffer” section.
-
 ##### Define Render Commands and Inherited Render State
 
 For the indirect command buffer, `_indirectCommandBuffer`, the sample defines render commands that:
@@ -219,4 +217,4 @@ The sample continues to execute `_indirectCommandBuffer` each frame.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/encoding-indirect-command-buffers-on-the-cpu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/encoding-indirect-command-buffers-on-the-cpu)*

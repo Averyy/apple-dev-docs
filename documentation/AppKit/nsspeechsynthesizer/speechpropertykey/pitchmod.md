@@ -1,6 +1,6 @@
 # pitchMod
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 Get or set a synthesizer’s pitch modulation.
@@ -23,8 +23,6 @@ Pitch modulation is also expressed as a floating-point value in the range of 0.0
 This property is used with [`setObject(_:forProperty:)`](nsspeechsynthesizer/setobject(_:forproperty:).md) and [`object(forProperty:)`](nsspeechsynthesizer/object(forproperty:).md).
 
 > **Note**:  The change in pitch modulation may not be noticeable until the next sentence or paragraph is spoken.
-
- The change in pitch modulation may not be noticeable until the next sentence or paragraph is spoken.
 
 ## See Also
 
@@ -62,4 +60,4 @@ This property is used with [`setObject(_:forProperty:)`](nsspeechsynthesizer/set
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsspeechsynthesizer/speechpropertykey/pitchmod)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsspeechsynthesizer/speechpropertykey/pitchmod)*

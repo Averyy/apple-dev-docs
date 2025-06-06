@@ -33,8 +33,6 @@ print(characters)
 
 > **Note**: O(), where  is the number of elements in the collection.
 
-O(), where  is the number of elements in the collection.
-
 ## See Also
 
 - [func sort()](array/sort.md)

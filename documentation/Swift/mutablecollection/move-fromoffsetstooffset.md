@@ -48,8 +48,6 @@ letters.move(fromOffsets: IndexSet(integer: 2), toOffset: 2)
 
 > **Note**: O( log ), where  is the length of the collection.
 
-O( log ), where  is the length of the collection.
-
 ## Parameters
 
 - `source`: An index set representing the offsets of all elements that   should be moved.

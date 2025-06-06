@@ -1,6 +1,6 @@
 # tv-text-highlight-style
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Specifies how an element looks when it comes into focus.
 
@@ -17,8 +17,6 @@ Use the `tv-text-highlight-style` style to specify how a label reacts when it co
 - [`title`](title.md)
 
 > **Note**: `tv-text-highlight-style` is only applied to the above elements when they are contained in a `listItemLockup` or `lockup` element. Elements contained in a `listItemLockup` can only use the `marquee-on-highlight`.
-
-`tv-text-highlight-style` is only applied to the above elements when they are contained in a `listItemLockup` or `lockup` element. Elements contained in a `listItemLockup` can only use the `marquee-on-highlight`.
 
 ## See Also
 
@@ -42,4 +40,4 @@ Use the `tv-text-highlight-style` style to specify how a label reacts when it co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/tv-text-highlight-style)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/tv-text-highlight-style)*

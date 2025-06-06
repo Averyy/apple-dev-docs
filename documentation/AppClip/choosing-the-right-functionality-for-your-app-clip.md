@@ -1,6 +1,6 @@
 # Choosing the right functionality for your App Clip
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Review frameworks available to App Clips and identify functionality that makes a great App Clip.
 
@@ -9,8 +9,6 @@ Review frameworks available to App Clips and identify functionality that makes a
 An App Clip is a lightweight version of your app that offers some of its functionality when and where it’s needed. It offers a focused feature set and is designed to launch instantly, protect user privacy, and preserve resources. As a result, an App Clip comes with some limitations. Before you create your App Clip, first review technology that’s available to App Clips and identify functionality that makes a great App Clip.
 
 > **Note**:  Your full app can offer multiple App Clip experiences, but you have to package them as a single App Clip target. Additionally, the full app must include the same functionality as the App Clip.
-
- Your full app can offer multiple App Clip experiences, but you have to package them as a single App Clip target. Additionally, the full app must include the same functionality as the App Clip.
 
 To ensure a fast launch experience, App Clips must be small:
 
@@ -77,4 +75,4 @@ App Clips provide an in-the-moment experience and focus on offering the quickest
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/choosing-the-right-functionality-for-your-app-clip)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/choosing-the-right-functionality-for-your-app-clip)*

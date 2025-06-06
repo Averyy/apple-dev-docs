@@ -1,6 +1,6 @@
 # trialBilling
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: property
 
 The trial billing cycle for the recurring payment.
@@ -21,8 +21,6 @@ The trial billing cycle is optional; use it if the recurring payment has a trial
 
 > **Note**:  Set the [`paymentTiming`](applepaylineitem/paymenttiming.md) property of the line item to `"recurring"` to avoid an error.
 
- Set the [`paymentTiming`](applepaylineitem/paymenttiming.md) property of the line item to `"recurring"` to avoid an error.
-
 ## See Also
 
 - [regularBilling](applepayrecurringpaymentrequest/regularbilling.md)
@@ -33,4 +31,4 @@ The trial billing cycle is optional; use it if the recurring payment has a trial
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepayrecurringpaymentrequest/trialbilling)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepayrecurringpaymentrequest/trialbilling)*

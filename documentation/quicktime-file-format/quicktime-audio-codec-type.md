@@ -1,6 +1,6 @@
 # QuickTime audio codec type
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 #### Overview
 
@@ -15,8 +15,6 @@ Examples: `'mp4a'`, `'twos'`.
 A writer of the QuickTime audio codec type feature should record the four-character-code corresponding to the QuickTime audio format type or types also recorded in the sound track’s sample descriptions.
 
 > **Note**: A writer that records the QuickTime Audio Codec type for the `'mp4a'` codec is encouraged also to write the MPEG-4 Audio Codec feature.
-
-A writer that records the QuickTime Audio Codec type for the `'mp4a'` codec is encouraged also to write the MPEG-4 Audio Codec feature.
 
 #### Feature Value Algorithm
 

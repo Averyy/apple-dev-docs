@@ -1,6 +1,6 @@
 # SHMediaLibrary
 
-**Framework**: ShazamKit  
+**Framework**: Shazamkit  
 **Kind**: class
 
 An object that represents the user’s Shazam library.
@@ -25,8 +25,6 @@ class SHMediaLibrary
 Use `SHMediaLibrary` to add matched songs from the Shazam catalog to the user’s Shazam library.
 
 > **Note**:  There’s no system permission necessary to write to the user’s Shazam library. Consider requesting permission from the user before adding songs to the library.
-
- There’s no system permission necessary to write to the user’s Shazam library. Consider requesting permission from the user before adding songs to the library.
 
 ## Topics
 
@@ -56,4 +54,4 @@ Use `SHMediaLibrary` to add matched songs from the Shazam catalog to the user’
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/shazamkit/shmedialibrary)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ShazamKit/shmedialibrary)*

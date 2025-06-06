@@ -1,6 +1,6 @@
 # SKProductsRequest
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: class
 
 An object that can retrieve localized information from the App Store about a specified list of products.
@@ -34,8 +34,6 @@ Your app uses an [`SKProductsRequest`](skproductsrequest.md) object to present l
 To use an [`SKProductsRequest`](skproductsrequest.md) object, you initialize it with a list of product identifier strings, attach a delegate, and then call the request’s [`start()`](skrequest/start().md) method. When the request completes, your delegate receives an [`SKProductsResponse`](skproductsresponse.md) object.
 
 > **Note**:  Be sure to keep a strong reference to the request object; otherwise, the system might deallocate the request before it can complete.
-
- Be sure to keep a strong reference to the request object; otherwise, the system might deallocate the request before it can complete.
 
 ## Topics
 
@@ -74,4 +72,4 @@ To use an [`SKProductsRequest`](skproductsrequest.md) object, you initialize it 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skproductsrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skproductsrequest)*

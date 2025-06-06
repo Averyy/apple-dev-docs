@@ -1,6 +1,6 @@
 # Managing MDM Devices and Users in macOS
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Manage devices and users as separate entities in macOS.
 
@@ -43,8 +43,6 @@ Example of a User Request
 
 > **Note**:  A device can block login momentarily while it contacts the MDM server for its latest settings.
 
- A device can block login momentarily while it contacts the MDM server for its latest settings.
-
 Extensions to the MDM protocol also enable multiple network users to log in to a device that an MDM admin binds to an Open Directory. For more information, see [`Enabling Network and Mobile User Logins`](enabling-network-and-mobile-user-logins.md).
 
 ##### Create a Separate Managed Profile for Each Account
@@ -67,4 +65,4 @@ If a user requests a password change for an account, your servers can update the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/managing-mdm-devices-and-users-in-macos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/managing-mdm-devices-and-users-in-macos)*

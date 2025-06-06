@@ -23,8 +23,6 @@ This sample demonstrates dynamic terrain generation on an outdoor landscape, usi
 
 > **Note**: This sample reduces the overhead of encoding commands on the CPU by using argument buffers. For an introduction to argument buffers, see the samples listed in [`Buffers`](buffers.md).
 
-This sample reduces the overhead of encoding commands on the CPU by using argument buffers. For an introduction to argument buffers, see the samples listed in [`Buffers`](buffers.md).
-
 ##### Getting Started
 
 The Xcode project contains schemes for running the sample in macOS and iOS. Metal isn’t supported in the iOS Simulator, so the iOS scheme requires a physical device that supports GPU family 4 to run the sample. The default scheme is macOS, which runs the sample as is on your Mac.
@@ -43,8 +41,6 @@ In iOS, use these controls to navigate the scene:
 -  Cycle through a predefined terrain manipulation sequence.
 
 > **Note**: The particle effects in this sample require a Mac that supports Tier 2 argument buffers. Particle effects aren’t available on iOS devices.
-
-The particle effects in this sample require a Mac that supports Tier 2 argument buffers. Particle effects aren’t available on iOS devices.
 
 ##### Respond to Landscape Alterations
 
@@ -265,4 +261,4 @@ data.texture = terrainParams.habitats [habitatIndex].diffSpecTextureArray;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/rendering-terrain-dynamically-with-argument-buffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/rendering-terrain-dynamically-with-argument-buffers)*

@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The text field’s delegate.
@@ -24,8 +24,6 @@ weak var delegate: (any UITextFieldDelegate)? { get set }
 A text field delegate responds to editing-related messages from the text field. You can use the delegate to respond to the text entered by the user and to some special commands, such as when the user taps Return.
 
 > **Note**:  If the text field is a [`UISearchTextField`](uisearchtextfield.md), set its delegate to an object that also conforms to the [`UISearchTextFieldDelegate`](uisearchtextfielddelegate.md) protocol.
-
- If the text field is a [`UISearchTextField`](uisearchtextfield.md), set its delegate to an object that also conforms to the [`UISearchTextFieldDelegate`](uisearchtextfielddelegate.md) protocol.
 
 ## See Also
 

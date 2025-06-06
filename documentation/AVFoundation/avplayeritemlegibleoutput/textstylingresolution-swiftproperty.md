@@ -1,6 +1,6 @@
 # textStylingResolution
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A string identifier indicating the degree of text styling to be applied to attributed strings vended by the  object.
@@ -26,8 +26,6 @@ Valid values are described in `Text Style Settings`.  An exception ([`invalidArg
 The default value is [`default`](avplayeritemlegibleoutput/textstylingresolution-swift.struct/default.md), which indicates that attributed strings vended by the receiver includes the same level of styling information that would be used if the text was rendered by an instance of [`AVPlayerLayer`](avplayerlayer.md).
 
 > **Note**:  This is an advanced feature and you should rarely need to change it from the default value.
-
- This is an advanced feature and you should rarely need to change it from the default value.
 
 ## See Also
 

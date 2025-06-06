@@ -30,8 +30,6 @@ If it can detect the source language of the text, it checks to see if the necess
 
 > **Note**: For best results in automatic language detection, pass in a sample string of at least 20 characters in length.
 
-For best results in automatic language detection, pass in a sample string of at least 20 characters in length.
-
 ## Parameters
 
 - `text`: A sample string of text representing the source language you want to translation from.

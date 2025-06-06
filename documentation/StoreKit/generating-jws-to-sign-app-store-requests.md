@@ -1,6 +1,6 @@
 # Generating JWS to sign App Store requests
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Create signed JSON Web Signature (JWS) strings on your server to authorize your API requests in your app.
 
@@ -17,8 +17,6 @@ The following App Store features require a JWS Compact Serialization to authoriz
 The data you sign when generating the JWS is a JSON Web Token (JWT). The JWT contains name-value pairs called , including claims specific to the feature you’re using. Your server returns the JWS Compact Serialization to your app. Your app uses the JWS in the relevant StoreKit API call.
 
 > 💡 **Tip**:  The App Store Server Library provides a signing utility that creates JWS specific for each of these uses. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
-
- The App Store Server Library provides a signing utility that creates JWS specific for each of these uses. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
 
 To get started, you need your key ID and issuer ID from App Store Connect. Then, to generate a signed JWS, you perform these steps on your server:
 
@@ -188,8 +186,6 @@ After signing, you should have a string in JWS compact serialization format.  Se
 
 > **Note**: Always use a secure connection when sending data, including the signature, between your app and server. For more information on ensuring your data’s security, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/Security/preventing-insecure-network-connections).
 
-Always use a secure connection when sending data, including the signature, between your app and server. For more information on ensuring your data’s security, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/Security/preventing-insecure-network-connections).
-
 ## See Also
 
 - [struct AdvancedCommerceProduct](advancedcommerceproduct.md)
@@ -200,4 +196,4 @@ Always use a secure connection when sending data, including the signature, betwe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/generating-jws-to-sign-app-store-requests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/generating-jws-to-sign-app-store-requests)*

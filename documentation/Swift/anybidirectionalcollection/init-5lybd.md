@@ -24,8 +24,6 @@ init<C>(_ base: C) where Element == C.Element, C : BidirectionalCollection
 
 > **Note**: O(1).
 
-O(1).
-
 ## Parameters
 
 - `base`: The collection to wrap.

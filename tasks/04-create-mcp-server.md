@@ -295,7 +295,7 @@ echo '{"jsonrpc": "2.0", "method": "tools/list", "id": 1}' | python mcp_server.p
 - [ ] Search queries return relevant results
 - [ ] Full content mode works for detailed queries
 - [ ] Error handling works gracefully
-- [ ] Response time < 500ms for searches
+- [ ] Response time < 1000ms for searches (278K doc search index)
 
 ## Time Estimate
 3-4 hours for implementation (much simpler with FastMCP!)

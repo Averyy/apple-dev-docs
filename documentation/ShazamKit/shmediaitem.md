@@ -1,6 +1,6 @@
 # SHMediaItem
 
-**Framework**: ShazamKit  
+**Framework**: Shazamkit  
 **Kind**: class
 
 An object that represents the metadata for a reference signature.
@@ -50,8 +50,6 @@ let mediaItem = SHMediaItem(properties: [.episode: 42,
 ```
 
 > **Note**:  The class of the object that represents a custom object must be one of: `Dictionary`, `Array`, `URL`, `Number`, `String`, `Date`, or `Data`.
-
- The class of the object that represents a custom object must be one of: `Dictionary`, `Array`, `URL`, `Number`, `String`, `Date`, or `Data`.
 
 ## Topics
 
@@ -141,4 +139,4 @@ let mediaItem = SHMediaItem(properties: [.episode: 42,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/shazamkit/shmediaitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ShazamKit/shmediaitem)*

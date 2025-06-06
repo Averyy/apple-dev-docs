@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: subscript
 
 Accesses a pose transformation using the index of the joint name.
@@ -21,8 +21,6 @@ subscript(joint: String) -> Transform? { get set }
 #### Overview
 
 > **Note**: Setting a joint to `nil` has no effect.
-
-Setting a joint to `nil` has no effect.
 
 ## Parameters
 

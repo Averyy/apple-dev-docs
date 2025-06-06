@@ -1,6 +1,6 @@
 # containsStereoMultiviewVideo
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A media characteristic that indicates that a track contains stereoscopic video captured in a multiview compression format.
@@ -26,8 +26,6 @@ Stereoscopic video contains two views with one view for the left eye and one vie
 The value of this characteristic is `public.contains-stereo-multiview-video`.
 
 > **Note**:  The presence of this characteristic is strictly inferred from the format description of the associated track.
-
- The presence of this characteristic is strictly inferred from the format description of the associated track.
 
 ## See Also
 

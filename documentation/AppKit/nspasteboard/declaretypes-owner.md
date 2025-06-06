@@ -1,6 +1,6 @@
 # declareTypes(_:owner:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Prepares the receiver for a change in its contents by declaring the new types of data it will contain and a new owner.
@@ -23,8 +23,6 @@ The receiver’s new change count.
 This method is the equivalent of invoking [`clearContents()`](nspasteboard/clearcontents().md), implicitly writing the first pasteboard item, and then calling [`addTypes(_:owner:)`](nspasteboard/addtypes(_:owner:).md) to promise types for the first pasteboard item.
 
 > **Note**:  In macOS 10.5 and earlier, this method is the first step in writing data to the pasteboard and must precede the messages that actually write the data. A [`declareTypes(_:owner:)`](nspasteboard/declaretypes(_:owner:).md) message essentially changes the contents of the receiver: It invalidates the current contents of the receiver and increments its change count.
-
- In macOS 10.5 and earlier, this method is the first step in writing data to the pasteboard and must precede the messages that actually write the data. A [`declareTypes(_:owner:)`](nspasteboard/declaretypes(_:owner:).md) message essentially changes the contents of the receiver: It invalidates the current contents of the receiver and increments its change count.
 
 ##### Special Considerations
 

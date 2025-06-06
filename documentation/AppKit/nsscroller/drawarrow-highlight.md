@@ -1,6 +1,6 @@
 # drawArrow(_:highlight:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Draws the scroll button indicated by `arrow`, which is either `NSScrollerIncrementArrow` (the down or right scroll button) or `NSScrollerDecrementArrow` (up or left).
@@ -20,8 +20,6 @@ func drawArrow(_ whichArrow: NSScroller.Arrow, highlight flag: Bool)
 If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the button is drawn highlighted; otherwise it’s drawn normally. You should never need to invoke this method directly, but may wish to override it to customize the appearance of scroll buttons.
 
 > **Note**:  The [`drawArrow(_:highlight:)`](nsscroller/drawarrow(_:highlight:).md) method is not invoked in macOS 10.7 and later.
-
- The [`drawArrow(_:highlight:)`](nsscroller/drawarrow(_:highlight:).md) method is not invoked in macOS 10.7 and later.
 
 ## See Also
 

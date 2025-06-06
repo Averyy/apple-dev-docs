@@ -28,8 +28,6 @@ The CPU can access the updated content from its copy of the texture after the sy
 
 > **Note**:  The command this method encodes behaves similarly to the command that [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) encodes, except that it flushes only the applicable slice and mipmap level.
 
- The command this method encodes behaves similarly to the command that [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) encodes, except that it flushes only the applicable slice and mipmap level.
-
 ## Parameters
 
 - `texture`: An   instance with a   property that’s equal to  .

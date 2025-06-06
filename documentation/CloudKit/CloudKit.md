@@ -1,6 +1,6 @@
 # CloudKit
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: module
 
 Store structured app and user data in iCloud containers that all users of your app can share.
@@ -27,8 +27,6 @@ Records are at the heart of all data transactions in CloudKit. A record is a dic
 Before using CloudKit, make sure it’s the most suitable option for your app. For more information, see [`Deciding whether CloudKit is right for your app`](deciding-whether-cloudkit-is-right-for-your-app.md).
 
 > **Note**:  The classes of the CloudKit framework aren’t for subclassing. Use these classes as-is to save, retrieve, and manipulate data in iCloud. In addition, many of the protocols of this framework aren’t for adoption by classes outside of CloudKit and UIKit. Each protocol reference document includes information about whether you can adopt the protocol in your own classes.
-
- The classes of the CloudKit framework aren’t for subclassing. Use these classes as-is to save, retrieve, and manipulate data in iCloud. In addition, many of the protocols of this framework aren’t for adoption by classes outside of CloudKit and UIKit. Each protocol reference document includes information about whether you can adopt the protocol in your own classes.
 
 ## Topics
 

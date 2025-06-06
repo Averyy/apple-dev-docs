@@ -21,8 +21,6 @@ The Metal framework doesn’t provide an API to directly load image data from a 
 
 > **Note**: The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS devices. The default scheme is macOS, which runs the sample as is on your Mac.
 
-The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS devices. The default scheme is macOS, which runs the sample as is on your Mac.
-
 ##### Load and Format Image Data
 
 You can create a texture or update its contents manually, a process that’s covered in the next few sections. You might do this for multiple reasons:
@@ -34,8 +32,6 @@ You can create a texture or update its contents manually, a process that’s cov
 In the sample, the `AAPLImage` class loads and parses image data from TGA files. The class converts pixel data from the TGA file into a pixel format that Metal understands. The sample uses the image’s metadata to create a new Metal texture and copies the pixel data into the texture.
 
 > **Note**: The `AAPLImage` class isn’t the focal point of this sample, so it isn’t discussed in detail. The class demonstrates basic image loading operations but doesn’t use or depend on the Metal framework. Its sole purpose is to facilitate loading image data and converting it into a Metal pixel format. You might create a similar class if you need to load an image that’s in a custom format.
-
-The `AAPLImage` class isn’t the focal point of this sample, so it isn’t discussed in detail. The class demonstrates basic image loading operations but doesn’t use or depend on the Metal framework. Its sole purpose is to facilitate loading image data and converting it into a Metal pixel format. You might create a similar class if you need to load an image that’s in a custom format.
 
 Metal requires all textures to be formatted with a specific [`MTLPixelFormat`](mtlpixelformat.md) value. The pixel format describes the layout of pixel data in the texture. This sample uses the `MTLPixelFormat/bgra8Unorm` pixel format, which uses 32 bits per pixel, arranged into 8 bits per component, in blue, green, red, and alpha order:
 
@@ -228,8 +224,6 @@ const half4 colorSample = colorTexture.sample(textureSampler, in.textureCoordina
 
 > **Note**: Try increasing or decreasing the size of the quad to see how filtering works.
 
-Try increasing or decreasing the size of the quad to see how filtering works.
-
 ##### Encode the Draw Parameters
 
 The process for encoding and submitting drawing commands is the same as that shown in Using a Render Pipeline to Render Primitives, so the complete code is not shown below. The difference in this sample is that the fragment shader has an additional parameter. When you encode the command’s arguments, set the fragment function’s texture argument. This sample uses the `AAPLTextureIndexBaseColor` index to identify the texture in both Objective-C and Metal Shading Language code.
@@ -251,4 +245,4 @@ The process for encoding and submitting drawing commands is the same as that sho
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/creating-and-sampling-textures)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/creating-and-sampling-textures)*

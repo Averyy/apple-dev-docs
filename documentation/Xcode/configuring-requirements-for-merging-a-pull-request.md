@@ -18,8 +18,6 @@ The user interface for configuring requirements for PRs depends on the SCM provi
 
 > **Note**: To configure requirements for PRs, you need the same permission or role that you need to initially connect Xcode Cloud to your Git repository. For information about required permissions and roles, see [`Use a remote source control repository`](setting-up-your-project-to-use-xcode-cloud#Use-a-remote-source-control-repository.md).
 
-To configure requirements for PRs, you need the same permission or role that you need to initially connect Xcode Cloud to your Git repository. For information about required permissions and roles, see [`Use a remote source control repository`](setting-up-your-project-to-use-xcode-cloud#Use-a-remote-source-control-repository.md).
-
 #### Configure Requirements
 
 To require a successful Xcode Cloud build or action before it’s possible to merge a PR:
@@ -37,4 +35,4 @@ For example, configure an Xcode Cloud workflow that starts a build for each chan
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-requirements-for-merging-a-pull-request)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-requirements-for-merging-a-pull-request)*

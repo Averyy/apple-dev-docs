@@ -1,6 +1,6 @@
 # Checking for Apple Pay availability
 
-**Framework**: Apple Pay on the Web
+**Framework**: Applepayontheweb
 
 Use the Apple Pay JS API to check whether Apple Pay is available, to check whether a device has a payment credential provisioned in Wallet, and to determine when to display an Apple Pay button.
 
@@ -66,8 +66,6 @@ After verifying the person’s device type and iOS version, call [`canMakePaymen
 
 > **Note**:  Don’t display the Apple Pay button if the device is a Mac, if the iOS version is earlier than 11.2, or if the call to [`canMakePayments`](applepaysession/canmakepayments.md) returns `false`.
 
- Don’t display the Apple Pay button if the device is a Mac, if the iOS version is earlier than 11.2, or if the call to [`canMakePayments`](applepaysession/canmakepayments.md) returns `false`.
-
 ## See Also
 
 - [canMakePayments](applepaysession/canmakepayments.md)
@@ -84,4 +82,4 @@ After verifying the person’s device type and iOS version, call [`canMakePaymen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/checking-for-apple-pay-availability)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/checking-for-apple-pay-availability)*

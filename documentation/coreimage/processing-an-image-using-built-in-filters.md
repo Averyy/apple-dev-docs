@@ -1,6 +1,6 @@
 # Processing an Image Using Built-in Filters
 
-**Framework**: Core Image
+**Framework**: Coreimage
 
 Apply effects such as sepia tint, highlight strengthening, and scaling to images.
 
@@ -81,8 +81,6 @@ Like the sepia filter, the intensity of the bloom filter’s effect ranges betwe
 
 > **Note**: The [`gloom()`](cifilter/3228334-gloom.md) filter performs the opposite effect.
 
-The [`gloom()`](cifilter/3228334-gloom.md) filter performs the opposite effect.
-
 To display the output, convert the [`CIImage`](ciimage.md) to a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage).
 
 ```swift
@@ -115,15 +113,11 @@ func scaleFilter(_ input:CIImage, aspectRatio : Float, scale : Float) -> CIImage
 
 > ❗ **Important**: To optimize computation, Core Image doesn’t actually render any intermediate [`CIImage`](ciimage.md) result until you force the [`CIImage`](ciimage.md) to display its content onscreen, as you might do using [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview).
 
-To optimize computation, Core Image doesn’t actually render any intermediate [`CIImage`](ciimage.md) result until you force the [`CIImage`](ciimage.md) to display its content onscreen, as you might do using [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview).
-
 ```swift
 self.imageView.image = UIImage(ciImage:scaledCIImage)
 ```
 
 > **Note**: Core Image optimizes filtering by reordering the three chained filters and concatenating them into a single image processing kernel, saving computation and rendering cycles.
-
-Core Image optimizes filtering by reordering the three chained filters and concatenating them into a single image processing kernel, saving computation and rendering cycles.
 
 In addition to trying out the built-in filters for a fixed effect, you can combine filters in certain [`Filter Recipes`](https://developer.apple.com/documentation/coreimage#2951339) to accomplish tasks such as [`Applying a Chroma Key Effect`](applying_a_chroma_key_effect.md), [`Selectively Focusing on an Image`](selectively_focusing_on_an_image.md), [`Customizing Image Transitions`](customizing_image_transitions.md), and [`Simulating Scratchy Analog Film`](simulating_scratchy_analog_film.md).
 

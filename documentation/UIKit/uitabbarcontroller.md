@@ -1,6 +1,6 @@
 # UITabBarController
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A container view controller that manages a multiselection interface, where the selection determines which child view controller to display.
@@ -54,8 +54,6 @@ The tab bar has limited space for displaying your custom items. If you add six o
 The interface for the standard More item includes an Edit button that allows the user to reconfigure the tab bar. By default, the user is allowed to rearrange all items on the tab bar. If you do not want the user to modify some items, though, you can remove the appropriate view controllers from the array in the [`customizableViewControllers`](uitabbarcontroller/customizableviewcontrollers.md) property.
 
 > **Note**:  Tab bar customization and the More interface are not available in tvOS.
-
- Tab bar customization and the More interface are not available in tvOS.
 
 ##### State Preservation
 
@@ -180,4 +178,4 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitabbarcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitabbarcontroller)*

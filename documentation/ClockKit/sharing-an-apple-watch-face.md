@@ -1,6 +1,6 @@
 # Sharing an Apple Watch face
 
-**Framework**: ClockKit
+**Framework**: Clockkit
 
 Distribute a customized watch face to Apple Watch users.
 
@@ -23,8 +23,6 @@ On iOS, open the Apple Watch app, and select a watch face from the gallery. Then
 You can then share the watch face file using Messages, Mail, or other apps that support `.watchface` files. You can also save the watch face to Files. However, if you plan to share the watch face on your web page or in your app, always use email to share the face. Unlike the other share methods, email includes both the `.watchface` file and a preview of the face.
 
 > **Note**:  You don’t need an Apple Watch to share watch faces; you can create and share watch faces in the Watch app in iPhone or from the watchOS simulator.
-
- You don’t need an Apple Watch to share watch faces; you can create and share watch faces in the Watch app in iPhone or from the watchOS simulator.
 
 The resulting `.watchface` file contains information about the watch face, including its configuration, color, any images it displays, and its complications. The file may also include [`userInfo`](clkcomplication/userinfo.md) or [`userActivity`](clkcomplication/useractivity.md) data associated with the complications, although the system removes this data if the user excludes personal data from the watch face.
 
@@ -51,8 +49,6 @@ For example, a weather app may provide separate complications for all of the use
 Finally, ClockKit calls your data source’s methods to populate the complication’s timeline. This includes calling [`getTimelineEndDate(for:withHandler:)`](clkcomplicationdatasource/gettimelineenddate(for:withhandler:).md) and [`getCurrentTimelineEntry(for:withHandler:)`](clkcomplicationdatasource/getcurrenttimelineentry(for:withhandler:).md), and then calling [`getTimelineEntries(for:after:limit:withHandler:)`](clkcomplicationdatasource/gettimelineentries(for:after:limit:withhandler:).md) if your app supports batch downloading future timeline entries.
 
 > **Note**:  Users can exclude personal information from watch faces that they share. When a user excludes information, the system sets the shared [`CLKComplication`](clkcomplication.md) object’s `identifier` property to `CLKDefaultComplicationTypeIdentifier`. If your watchOS app provides complications, your [`CLKComplicationDataSource`](clkcomplicationdatasource.md) must handle default identifiers.
-
- Users can exclude personal information from watch faces that they share. When a user excludes information, the system sets the shared [`CLKComplication`](clkcomplication.md) object’s `identifier` property to `CLKDefaultComplicationTypeIdentifier`. If your watchOS app provides complications, your [`CLKComplicationDataSource`](clkcomplicationdatasource.md) must handle default identifiers.
 
 ##### Add Watch Faces From Your App
 
@@ -82,8 +78,6 @@ Only add watch faces in response to the user tapping an Add Apple Watch Face but
 
 > **Note**:  Some newer watch faces are available only on Apple Watch SE and Apple Watch Series 4 and later. Nike watch faces are only available on Apple Watch Nike, and Hermès watch faces on Apple Watch Hermès. If you share a watch face that isn’t available on all watches, check for errors when calling [`addWatchFace(at:completionHandler:)`](clkwatchfacelibrary/addwatchface(at:completionhandler:).md), and provide a face that anyone can install. For a list of watch faces, see [`Apple Watch faces and their features`](https://developer.apple.comhttps://support.apple.com/guide/watch/faces-and-features-apde9218b440/watchos).
 
- Some newer watch faces are available only on Apple Watch SE and Apple Watch Series 4 and later. Nike watch faces are only available on Apple Watch Nike, and Hermès watch faces on Apple Watch Hermès. If you share a watch face that isn’t available on all watches, check for errors when calling [`addWatchFace(at:completionHandler:)`](clkwatchfacelibrary/addwatchface(at:completionhandler:).md), and provide a face that anyone can install. For a list of watch faces, see [`Apple Watch faces and their features`](https://developer.apple.comhttps://support.apple.com/guide/watch/faces-and-features-apde9218b440/watchos).
-
 When adding a watch face in your app, all of the complications on the watch face must come from apps that have a valid App Store ID, such as an app from an App Store or TestFlight build. If you try to use complications from a development build, the system won’t recognize the development ID as a valid App Store ID.
 
 ## See Also
@@ -94,4 +88,4 @@ When adding a watch face in your app, all of the complications on the watch face
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/sharing-an-apple-watch-face)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/sharing-an-apple-watch-face)*

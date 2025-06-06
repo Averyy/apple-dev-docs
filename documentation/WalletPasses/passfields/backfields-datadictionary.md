@@ -24,8 +24,6 @@ object PassFields.BackFields
 
 > **Note**:  The information on the back of the pass is displayed in watchOS 7.0 and later.
 
- The information on the back of the pass is displayed in watchOS 7.0 and later.
-
 ## Relationships
 
 ### Inherits From

@@ -26,8 +26,6 @@ Calling this method invalidates any existing indices for use with this string.
 
 > **Note**: O(), where  is the combined length of the string and `newElements`. If the call to `replaceSubrange(_:with:)` simply removes text at the end of the string, the complexity is O(), where  is equal to `bounds.count`.
 
-O(), where  is the combined length of the string and `newElements`. If the call to `replaceSubrange(_:with:)` simply removes text at the end of the string, the complexity is O(), where  is equal to `bounds.count`.
-
 ## Parameters
 
 - `subrange`: The range of text to replace. The bounds of the range must be   valid indices of the string.

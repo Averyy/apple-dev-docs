@@ -1,6 +1,6 @@
 # run(_:)
 
-**Framework**: Nearby Interaction  
+**Framework**: Nearbyinteraction  
 **Kind**: method
 
 Starts a session with a nearby peer.
@@ -28,8 +28,6 @@ Before calling this function, ensure the device supports the features your app r
 To restart a session as the result of unpausing, call this function as described in [`pause()`](nisession/pause().md). The app calls this function when resuming from session suspension, as described in [`sessionSuspensionEnded(_:)`](nisessiondelegate/sessionsuspensionended(_:).md).
 
 > **Note**:  A session’s [`discoveryToken`](nisession/discoverytoken.md) maintains its original value through restarts.
-
- A session’s [`discoveryToken`](nisession/discoverytoken.md) maintains its original value through restarts.
 
 ##### Prompt for User Approval
 

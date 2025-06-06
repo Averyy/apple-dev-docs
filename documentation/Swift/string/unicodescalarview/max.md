@@ -38,8 +38,6 @@ print(greatestHeight)
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 
 ---
 

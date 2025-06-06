@@ -91,8 +91,6 @@ For a better user experience, after creating your new window, set the following 
 
 > **Note**:  If your window is closed and not showing, you can display it again by calling the window’s [`setIsVisible(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/setIsVisible(_:)) and [`makeKeyAndOrderFront(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/makeKeyAndOrderFront(_:)) methods. For an example, see the “Make the window visible and present in front” section below.
 
- If your window is closed and not showing, you can display it again by calling the window’s [`setIsVisible(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/setIsVisible(_:)) and [`makeKeyAndOrderFront(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/makeKeyAndOrderFront(_:)) methods. For an example, see the “Make the window visible and present in front” section below.
-
 ##### Display Your Metal Content in Your New View
 
 When you want Metal to render a layer’s contents, use a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer). You set up a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) and use it to replace the [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) in the view you set up previously. Begin by creating a new [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer):
@@ -147,8 +145,6 @@ You can call this same method again to switch out of full-screen mode. For more 
 Note that when using the [`toggleFullScreen(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/toggleFullScreen(_:)) method, you don’t specify what full screen means, and you let the system decide what it means in a way that’s most familiar to the user. When you call [`toggleFullScreen(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/toggleFullScreen(_:)), the system adjusts your window’s size to what it considers to be full screen.
 
 > ❗ **Important**:  Use [`toggleFullScreen(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/toggleFullScreen(_:)) to switch to full screen so your app’s full-screen mode works in a way consistent with other apps that use full-screen mode. This keeps control over the window in the user’s hands, and AppKit takes responsibility for finding the optimal position and size for your window on the screen that you selected. Avoid customizing any aspects of what [`toggleFullScreen(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/toggleFullScreen(_:)) does.
-
- Use [`toggleFullScreen(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/toggleFullScreen(_:)) to switch to full screen so your app’s full-screen mode works in a way consistent with other apps that use full-screen mode. This keeps control over the window in the user’s hands, and AppKit takes responsibility for finding the optimal position and size for your window on the screen that you selected. Avoid customizing any aspects of what [`toggleFullScreen(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/toggleFullScreen(_:)) does.
 
 ##### Add Code So Your Window Can Handle Resizing
 
@@ -221,4 +217,4 @@ Interactions between the AppKit framework and the Game Controller framework can,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/managing-your-game-window-for-metal-in-macos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/managing-your-game-window-for-metal-in-macos)*

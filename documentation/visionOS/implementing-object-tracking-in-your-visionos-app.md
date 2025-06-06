@@ -37,8 +37,6 @@ Before beginning the training process in Create ML with the 3D model asset, keep
 
 > **Note**: While training the machine learning model with the 3D model asset, Create ML ignores any animations, virtual cameras, and lights within the asset, treating them as static.
 
-While training the machine learning model with the 3D model asset, Create ML ignores any animations, virtual cameras, and lights within the asset, treating them as static.
-
 ##### Train a Machine Learning Model with the 3d Model Asset in Create Ml
 
 Object tracking requires a reference object file to track the spatial location and orientation of the corresponding real-world object. You use Create ML to train a machine learning model to create a reference object file unique to your object. The training of machine learning models with your 3D asset and the creation of the reference object file both run locally on your Mac.
@@ -68,8 +66,6 @@ The Front option works only for tracking objects that stand upright on a surface
 
 > **Note**: Only choose the All Angles option if you want to track your object from all sides. The more restricted the viewing angle is, the more accurate the object tracking is in visionOS.
 
-Only choose the All Angles option if you want to track your object from all sides. The more restricted the viewing angle is, the more accurate the object tracking is in visionOS.
-
 If there’s an object in a person’s surroundings that’s similar to the object you want to track, the object-tracking feature might recognize it and track it instead of your object. To prevent this from happening, add the similar object as a negative example when training the machine learning model with your reference object. Below the 3D viewport, choose More Options > Objects to avoid. Use this section to add USDZ samples of similar items to ensure the machine learning model doesn’t identify them as the object you want to track.
 
 ![A Create ML screenshot of the Objects to avoid settings.](https://docs-assets.developer.apple.com/published/62838b26be7ec80c5b25afecfd418ed9/objects-to-avoid%402x.png)
@@ -79,8 +75,6 @@ Create ML supports training multiple machine learning models in the same object-
 ![A Create ML screenshot of the Model Sources section in the left pane.](https://docs-assets.developer.apple.com/published/1d2865d8a7c83978f5bac7dd6ff8a1b1/adding-objects%403x.png)
 
 > **Note**: You can track up to 10 different reference objects simultaneously without an impact to performance.
-
-You can track up to 10 different reference objects simultaneously without an impact to performance.
 
 After inspecting your 3D model asset and configuring the training settings, click Train to begin the training process. A progress bar indicates the amount of time until the machine learning training is complete. The machine learning training can take a few hours, depending on the configuration of your Mac. A more advanced processor and additional RAM significantly improve the training time.
 
@@ -99,8 +93,6 @@ You use the Reference Object Compiler in Xcode to remove the USDZ data from the 
 After you generate the reference object file, you can set up object tracking in your app using Reality Composer Pro, RealityKit, or ARKit. For more information about each of these methods, see [`Using a reference object with Reality Composer Pro`](using-a-reference-object-with-reality-composer-pro.md), [`Using a reference object with RealityKit`](using-a-reference-object-with-realitykit.md), and [`Using a reference object with ARKit`](using-a-reference-object-with-arkit.md).
 
 > **Note**: Object tracking works only in an [`ImmersiveSpace`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/immersivespace) within Xcode. Attempting to use object tracking in a window or volume results in a silent failure.
-
-Object tracking works only in an [`ImmersiveSpace`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/immersivespace) within Xcode. Attempting to use object tracking in a window or volume results in a silent failure.
 
 For more information about object tracking, see [`Explore object tracking for visionOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10101/). For an example of using ARKit for object tracking, see [`Exploring object tracking with ARKit`](https://developer.apple.comhttps://developer.apple.com/documentation/visionos/exploring_object_tracking_with_arkit).
 
@@ -142,4 +134,4 @@ For more information about object tracking, see [`Explore object tracking for vi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/implementing-object-tracking-in-your-visionos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/implementing-object-tracking-in-your-visionos-app)*

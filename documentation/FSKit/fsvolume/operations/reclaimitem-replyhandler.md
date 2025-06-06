@@ -1,6 +1,6 @@
 # reclaimItem(_:replyHandler:)
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: method  
 **Required**: Yes
 
@@ -20,8 +20,6 @@ func reclaimItem(_ item: FSItem) async throws
 FSKit guarantees that for every [`FSItem`](fsitem.md) returned by the volume, a corresponding reclaim operation occurs after the upper layers no longer reference that item.
 
 > **Note**: Block device file systems may assess whether an underyling resource terminates before processing reclaim operations. On unary file systems, for example, the associated volumes unmount when such resources disconnect from the system. The unmount triggers a reclaiming of all items. Some implementations benefit greatly from short-circuiting in such cases. With a terminated resource, all I/O results in an error, making short-circuiting the most efficient response.
-
-Block device file systems may assess whether an underyling resource terminates before processing reclaim operations. On unary file systems, for example, the associated volumes unmount when such resources disconnect from the system. The unmount triggers a reclaiming of all items. Some implementations benefit greatly from short-circuiting in such cases. With a terminated resource, all I/O results in an error, making short-circuiting the most efficient response.
 
 ## Parameters
 

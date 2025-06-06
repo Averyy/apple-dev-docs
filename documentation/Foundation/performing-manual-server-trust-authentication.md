@@ -10,8 +10,6 @@ When you use a secure connection (such as `https`) with a URL request, your [`UR
 
 > 💡 **Tip**:  See [`Handling an authentication challenge`](handling-an-authentication-challenge.md) for an introduction to authentication challenges.
 
- See [`Handling an authentication challenge`](handling-an-authentication-challenge.md) for an introduction to authentication challenges.
-
 ##### Determine When Manual Server Trust Evaluation Is Appropriate
 
 In most cases, you should let the URL Loading System’s default handling evaluate the server trust. You get this behavior when you either don’t have a delegate or don’t handle authentication challenges. However, performing your own evaluation may be useful for scenarios like the following:
@@ -24,8 +22,6 @@ In most cases, you should let the URL Loading System’s default handling evalua
 ![Flow diagram of a server trust being evaluated manually by a delegate method. A certificate in the server trust matches a certificate inside the app bundle, so the server trust is manually accepted and the flow ends with a “connect” state.](https://docs-assets.developer.apple.com/published/f0b62792d68fe6d5404e22e59c322799/media-2959678%402x.png)
 
 > **Note**:  [`URLSession`](urlsession.md) enforces [`App Transport Security (ATS)`](urlsession#App-Transport-Security-ATS.md), if it is enabled for the domain you are connecting to. This applies security requirements for the certificates, TLS version, and cipher used by the connection. You cannot loosen server trust requirements for an ATS-protected domain, but you can tighten them, using the manual evaluation technique shown in this article. See [`NSAppTransportSecurity`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSAppTransportSecurity) in [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247) for further details.
-
- [`URLSession`](urlsession.md) enforces [`App Transport Security (ATS)`](urlsession#App-Transport-Security-ATS.md), if it is enabled for the domain you are connecting to. This applies security requirements for the certificates, TLS version, and cipher used by the connection. You cannot loosen server trust requirements for an ATS-protected domain, but you can tighten them, using the manual evaluation technique shown in this article. See [`NSAppTransportSecurity`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSAppTransportSecurity) in [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247) for further details.
 
 ##### Handle Server Trust Authentication Challenges
 
@@ -76,8 +72,6 @@ Once the code determines the validity of the server trust, it takes one of two a
 
 > 💡 **Tip**:  See [`Certificate, Key, and Trust Services`](https://developer.apple.com/documentation/Security/certificate-key-and-trust-services) to learn more about how to evaluate a [`SecTrust`](https://developer.apple.com/documentation/Security/SecTrust) instance or access certificates or public keys from it.
 
- See [`Certificate, Key, and Trust Services`](https://developer.apple.com/documentation/Security/certificate-key-and-trust-services) to learn more about how to evaluate a [`SecTrust`](https://developer.apple.com/documentation/Security/SecTrust) instance or access certificates or public keys from it.
-
 ##### Create a Long Term Server Authentication Strategy
 
 If you determine that you need to evaluate server trust manually in some or all cases,  plan for what your app will do if you need to change your server credentials. Keep the following guidelines in mind:
@@ -89,4 +83,4 @@ If you determine that you need to evaluate server trust manually in some or all 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/performing-manual-server-trust-authentication)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/performing-manual-server-trust-authentication)*

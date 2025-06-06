@@ -1,6 +1,6 @@
 # emitterShape
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: property
 
 The shape of the region of space where the system spawns new particles.
@@ -25,8 +25,6 @@ var emitterShape: SCNGeometry? { get set }
 To randomize the locations where new particles spawn, assign a geometry to this property. This geometry defines the shape of the space where new particles may spawn, and the [`birthLocation`](scnparticlesystem/birthlocation.md) and [`birthDirection`](scnparticlesystem/birthdirection.md) properties define locations within and directions relative to the shape. For example, assigning a sphere geometry causes particles to spawn at random locations along the surface of the sphere (or within the volume of the sphere, according to the [`birthLocation`](scnparticlesystem/birthlocation.md) property).
 
 > **Note**:  For best results, use an instance of one of the SceneKit basic geometry classes ([`SCNPlane`](scnplane.md), [`SCNBox`](scnbox.md), [`SCNSphere`](scnsphere.md), [`SCNPyramid`](scnpyramid.md), [`SCNCone`](scncone.md), [`SCNCylinder`](scncylinder.md), [`SCNCapsule`](scncapsule.md), [`SCNTube`](scntube.md), and [`SCNTorus`](scntorus.md)). These classes provide a more efficient simulation and more even appearance to the rendered particle system.
-
- For best results, use an instance of one of the SceneKit basic geometry classes ([`SCNPlane`](scnplane.md), [`SCNBox`](scnbox.md), [`SCNSphere`](scnsphere.md), [`SCNPyramid`](scnpyramid.md), [`SCNCone`](scncone.md), [`SCNCylinder`](scncylinder.md), [`SCNCapsule`](scncapsule.md), [`SCNTube`](scntube.md), and [`SCNTorus`](scntorus.md)). These classes provide a more efficient simulation and more even appearance to the rendered particle system.
 
 The default value is `nil`, specifying that all new particles emit from a single point. For particle systems attached to a node, this point is the origin of the node’s coordinate system. For particle systems attached directly to a scene using the [`addParticleSystem(_:transform:)`](scnscene/addparticlesystem(_:transform:).md) method, use that method’s `transform` parameter to specify the emission point.
 

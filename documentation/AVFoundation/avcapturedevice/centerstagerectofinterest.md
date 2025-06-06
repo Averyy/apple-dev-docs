@@ -1,6 +1,6 @@
 # centerStageRectOfInterest
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The effective region within the output pixel buffer to perform Center Stage framing.
@@ -23,8 +23,6 @@ Apps that require cropping the output from Center Stage can use this property to
 
 > **Note**:  Setting this property has no impact on the configuration or output of [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) instances that you associate with a capture session.
 
- Setting this property has no impact on the configuration or output of [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) instances that you associate with a capture session.
-
 Attempting to set a rectangle of interest in the following cases results in the system throwing an illegal argument exception:
 
 - If none of the capture device’s supported formats support Center Stage.
@@ -32,8 +30,6 @@ Attempting to set a rectangle of interest in the following cases results in the 
 - If you specify a value that’s outside the normalized (`0`-`1`)  coordinate space.
 
 > ❗ **Important**:  Before changing the value of this property, you must call [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) to acquire exclusive access to the device’s configuration properties. Otherwise, setting the value of this property raises an exception. When you’re done configuring the device, call [`unlockForConfiguration()`](avcapturedevice/unlockforconfiguration().md) to release the lock.
-
- Before changing the value of this property, you must call [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) to acquire exclusive access to the device’s configuration properties. Otherwise, setting the value of this property raises an exception. When you’re done configuring the device, call [`unlockForConfiguration()`](avcapturedevice/unlockforconfiguration().md) to release the lock.
 
 ## See Also
 

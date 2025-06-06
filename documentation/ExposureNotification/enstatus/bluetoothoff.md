@@ -1,6 +1,6 @@
 # ENStatus.bluetoothOff
 
-**Framework**: Exposure Notification  
+**Framework**: Exposurenotification  
 **Kind**: case
 
 Bluetooth is turned off.
@@ -22,8 +22,6 @@ Bluetooth is required for Exposure Notification. If Bluetooth is disabled, notif
 
 > **Note**:  This may not match the state of Bluetooth as reported by CoreBluetooth.
 
- This may not match the state of Bluetooth as reported by CoreBluetooth.
-
 Exposure Notification is a system service and can use Bluetooth in situations when apps cannot. For the purposes of notification of exposure, it’s better to use this API instead of CoreBluetooth.
 
 ## See Also
@@ -44,4 +42,4 @@ Exposure Notification is a system service and can use Bluetooth in situations wh
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enstatus/bluetoothoff)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enstatus/bluetoothoff)*

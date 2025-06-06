@@ -18,8 +18,6 @@ Create a file named `render.mtlp-json` in the same directory as `render.metallib
 
 > ❗ **Important**:  The `metal-tt` command-line tool requires that all configuration scripts end with the `mtlp-json` extension.
 
- The `metal-tt` command-line tool requires that all configuration scripts end with the `mtlp-json` extension.
-
 The basic format of this file is a JSON dictionary containing at least two keys, `libraries` and `pipelines`. The `libraries` key defines which compiled Metal libraries contain your compiled shaders, as an array of paths. Each path is a dictionary with a label that defines how you refer to the library in the configuration script, and a path that points to the library itself. The following code example is the start of a configuration script that sets the alias `LibRender` for the Metal library `render.metallib`:
 
 ```json
@@ -71,8 +69,6 @@ Dictionaries describing render pipelines need both a `vertex_function` and a `fr
 
 > 💡 **Tip**:  Full documentation of the configuration script format, including how to conditionally control compilation to binary, is available by running `man metal-pipelines-script` in Terminal.
 
- Full documentation of the configuration script format, including how to conditionally control compilation to binary, is available by running `man metal-pipelines-script` in Terminal.
-
 ##### Add Compute Pipeline States with Visible and Intersection Functions
 
 In the following code example, the compute kernel uses the ray-tracing intersection function `sphereIntersection` and the visible function `evaluateGeometry`:
@@ -112,8 +108,6 @@ The following code example is the JSON configuration script representation of th
 ```
 
 > ❗ **Important**:  Use function names in the `binary_functions` array, not function aliases.
-
- Use function names in the `binary_functions` array, not function aliases.
 
 ##### Add Specialization Constants for Your Compute Pipeline
 
@@ -207,8 +201,6 @@ To use your compiled Metal binary archive, you need to add it to your Xcode proj
 
 > **Note**:  Select the “Copy items if needed” checkbox to ensure the created archive is in your project, and the system doesn’t overwrite or delete it.
 
- Select the “Copy items if needed” checkbox to ensure the created archive is in your project, and the system doesn’t overwrite or delete it.
-
 In your code, load binary archives by calling [`makeBinaryArchive(descriptor:)`](mtldevice/makebinaryarchive(descriptor:).md) and add the resulting instances to your pipeline state descriptor’s [`binaryArchives`](mtlfunctiondescriptor/binaryarchives.md) property. For specialized, visible, and intersection functions, load them into an appropriate [`MTLFunctionDescriptor`](mtlfunctiondescriptor.md) instance’s [`binaryArchives`](mtlfunctiondescriptor/binaryarchives.md) property. The code examples throughout this article include sections for linking binary archives when a function has a precompiled shader.
 
 ## See Also
@@ -221,4 +213,4 @@ In your code, load binary archives by calling [`makeBinaryArchive(descriptor:)`]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/compiling-binary-archives-from-a-custom-configuration-script)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/compiling-binary-archives-from-a-custom-configuration-script)*

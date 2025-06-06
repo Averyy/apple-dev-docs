@@ -1,14 +1,14 @@
 # App License Delivery SDK
 
-**Framework**: App License Delivery SDK  
+**Framework**: Applicensedeliverysdk  
 **Kind**: module
 
 Secure the installation of alternative distribution apps on iOS or iPadOS devices by vending licenses from your web server.
 
 ## Mentions
 
-- [Configuring your app licensing environment](configuring-the-app-licensing-environment.md)
 - [Licensing alternative distribution apps](licensing-alternative-distribution-apps.md)
+- [Configuring your app licensing environment](configuring-the-app-licensing-environment.md)
 
 #### Overview
 
@@ -25,8 +25,6 @@ Use this SDK’s framework to implement a license server on your website back en
 You can download this SDK from [`Downloads`](https://developer.apple.comhttps://developer.apple.com/download/all/) if your developer account qualifies to distribute apps from your website. For more information, see  [`Distributing your app from your website`](https://developer.apple.com/documentation/appdistribution/distributing-your-app-from-your-website).
 
 > **Note**:  Apple silicon Macs, Intel Macs, macOS 13.5+, select Linux versions on x86_64, and Xcode 15+ (including the macOS 14 SDK).
-
- Apple silicon Macs, Intel Macs, macOS 13.5+, select Linux versions on x86_64, and Xcode 15+ (including the macOS 14 SDK).
 
 ## Topics
 

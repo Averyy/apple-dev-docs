@@ -1,6 +1,6 @@
 # unownedExecutor
 
-**Framework**: Core HID  
+**Framework**: Corehid  
 **Kind**: property
 
 Retrieve the executor for this actor as an optimized, unowned reference.
@@ -27,13 +27,9 @@ This property will be implicitly accessed when work needs to be scheduled onto t
 
 > **Note**: `SerialExecutor`
 
-`SerialExecutor`
-
 > **Note**: `TaskExecutor`
-
-`TaskExecutor`
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehid/hiddevicemanager/unownedexecutor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHID/hiddevicemanager/unownedexecutor)*

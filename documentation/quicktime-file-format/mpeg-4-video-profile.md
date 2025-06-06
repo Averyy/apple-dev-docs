@@ -1,6 +1,6 @@
 # MPEG-4 video profile
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 #### Overview
 
@@ -13,8 +13,6 @@ The least significant 8 bits hold the value. The most significant 24 bits of the
 A writer of the MPEG-4 video profile feature should record the 8 bits corresponding to the `profile_and_level_indication` from the `visual_object_sequence`, as defined in specification ISO/IEC 14496-2, found in the video parameters encoded in the esds of the MPEG-4 video codec sample description (with QuickTime codec type `'mp4v'`).
 
 > **Note**: A writer that records the MPEG-4 video profile feature is encouraged also to write the QuickTime Video Codec Type feature.
-
-A writer that records the MPEG-4 video profile feature is encouraged also to write the QuickTime Video Codec Type feature.
 
 #### Feature Value Algorithm
 

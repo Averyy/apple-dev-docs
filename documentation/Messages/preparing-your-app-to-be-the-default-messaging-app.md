@@ -28,8 +28,6 @@ To add this support, see [`Defining a custom URL scheme for your app`](https://d
 
 > **Note**: The `im:` URL scheme format is identical to the `sms:` URL scheme format, which is `im:NUMBER` or `sms:NUMBER`, respectively. To use an email address, use `im:EMAIL` or `sms:EMAIL`. The `NUMBER` URL string can contain the digits 0 through 9, the plus (+), hyphen (-), and period (.) characters. The URL string must not include any message text or other information.
 
-The `im:` URL scheme format is identical to the `sms:` URL scheme format, which is `im:NUMBER` or `sms:NUMBER`, respectively. To use an email address, use `im:EMAIL` or `sms:EMAIL`. The `NUMBER` URL string can contain the digits 0 through 9, the plus (+), hyphen (-), and period (.) characters. The URL string must not include any message text or other information.
-
 You can process incoming messages using either [`scene(_:openURLContexts:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:openURLContexts:)) delegate method or the `UIApplication` delegate method [`application(_:open:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:open:options:)).
 
 ##### Provide Fallback Behavior in Your App
@@ -39,4 +37,4 @@ In cases where your app can’t handle the provided phone number, you can config
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/messages/preparing-your-app-to-be-the-default-messaging-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Messages/preparing-your-app-to-be-the-default-messaging-app)*

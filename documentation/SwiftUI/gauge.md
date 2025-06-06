@@ -1,6 +1,6 @@
 # Gauge
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 A view that shows a value within a range.
@@ -66,8 +66,6 @@ struct LabeledGauge: View {
 As shown above, the default style for gauges is a linear, continuous bar with an indicator showing the current value, and optional labels describing the gauge’s purpose, current, minimum, and maximum values.
 
 > **Note**: Some visual presentations of `Gauge` don’t display all the labels required by the API. However, the accessibility system does use the label content and you should use these labels to fully describe the gauge for accessibility users.
-
-Some visual presentations of `Gauge` don’t display all the labels required by the API. However, the accessibility system does use the label content and you should use these labels to fully describe the gauge for accessibility users.
 
 To change the style of a gauge, use the [`gaugeStyle(_:)`](view/gaugestyle(_:).md) view modifier and supply an initializer for a specific gauge style. For example, to display the same gauge in a circular style, apply the [`circular`](gaugestyle/circular.md) style to the view:
 
@@ -186,4 +184,4 @@ struct StyledGauge: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/gauge)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/gauge)*

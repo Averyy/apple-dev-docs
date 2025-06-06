@@ -1,6 +1,6 @@
 # QTVR string atom
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that contains a string for QuickTime VR.
@@ -23,8 +23,6 @@ typedef struct QTVRStringAtom {
 Each string atom may also have a sibling leaf atom, called the string encoding atom. The string encoding atom’s atom type is `kQTVRStringEncodingAtomType` (`'vrse'`). Its atom ID is the same as that of the corresponding string atom. The string encoding atom contains a single variable, `TextEncoding`, a `UInt32`, as defined in the header file `TextCommon.h`. The value of `TextEncoding` is handed, along with the string, to the routine `QTTextToNativeText` for conversion for display on the current machine. The routine `QTTextToNativeText` is found in the header file `Movies.h`.
 
 > **Note**: The header file TextCommon.h contains constants and routines for generating and handling text encodings.
-
-The header file TextCommon.h contains constants and routines for generating and handling text encodings.
 
 ## Topics
 

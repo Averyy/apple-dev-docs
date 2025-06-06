@@ -19,8 +19,6 @@ interface StyleMedia
 
 > **Note**: This class name changed from `Media` in iOS 4.2 and later.
 
-This class name changed from `Media` in iOS 4.2 and later.
-
 ## Topics
 
 ### Get Properties

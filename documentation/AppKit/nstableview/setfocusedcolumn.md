@@ -1,6 +1,6 @@
 # setFocusedColumn(_:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Sets the currently focused column to the specified index.
@@ -24,8 +24,6 @@ The focused column has a focus ring drawn around the [`selectedRow`](nstableview
 You should not override this method.
 
 > **Note**:  This method is not applicable for [`NSView`](nsview.md)-based table views.
-
- This method is not applicable for [`NSView`](nsview.md)-based table views.
 
 ## Parameters
 

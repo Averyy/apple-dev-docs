@@ -20,8 +20,6 @@ Use the authorization button to initiate Sign in with Apple on Apple Watch. You 
 
 > **Note**:  The authorization button doesn’t perform the sign-in request; it provides a button with the correct branding. You must connect this button to an action method to perform the actual request. For more information, see [`Authentication Services`](https://developer.apple.com/documentation/AuthenticationServices).
 
- The authorization button doesn’t perform the sign-in request; it provides a button with the correct branding. You must connect this button to an action method to perform the actual request. For more information, see [`Authentication Services`](https://developer.apple.com/documentation/AuthenticationServices).
-
 Don’t subclass or create instances of this class yourself. Instead, drag the button from the Object library and add it to your storyboard. Then define an outlet in your interface controller class and connect it to the button object.
 
 While initializing the interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the button (for example, hiding or disabling the button). This class inherits the methods and properties from its superclass, the [`WKInterfaceObject`](wkinterfaceobject.md) class.
@@ -78,4 +76,4 @@ In the action method, create a sign-in request using the authorization provider,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkinterfaceauthorizationappleidbutton)*

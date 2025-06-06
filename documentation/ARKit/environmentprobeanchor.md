@@ -1,6 +1,6 @@
 # EnvironmentProbeAnchor
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: struct
 
 An environment probe in the world.
@@ -19,8 +19,6 @@ struct EnvironmentProbeAnchor
 Use environment probes to light virtual geometry by producing environment textures from the probe’s location in the world.
 
 > **Note**:  The framework always positions the anchor at the location of the Vision Pro device.
-
- The framework always positions the anchor at the location of the Vision Pro device.
 
 ## Topics
 
@@ -54,4 +52,4 @@ Use environment probes to light virtual geometry by producing environment textur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/environmentprobeanchor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/environmentprobeanchor)*

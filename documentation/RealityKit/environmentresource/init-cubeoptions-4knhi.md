@@ -1,6 +1,6 @@
 # init(cube:options:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Synchronously generates an environment resource from a cube texture resource.
@@ -61,8 +61,6 @@ await MainActor.run {
 ```
 
 > **Note**: If you request `.astc` compression and `cubeTexture` isn’t already compressed, RealityKit compresses it.
-
-If you request `.astc` compression and `cubeTexture` isn’t already compressed, RealityKit compresses it.
 
 ## Parameters
 

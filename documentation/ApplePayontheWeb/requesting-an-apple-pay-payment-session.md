@@ -1,6 +1,6 @@
 # Requesting an Apple Pay payment session
 
-**Framework**: Apple Pay on the Web
+**Framework**: Applepayontheweb
 
 Request a valid session from the Apple Pay server.
 
@@ -17,8 +17,6 @@ The endpoint returns an opaque Apple Pay session object for Apple Pay on the web
 For Apple Pay on the web, you can also use the endpoint `POST https://<validation URL>/paymentSession` with a fully qualified validation URL that you receive in [`onvalidatemerchant`](applepaysession/onvalidatemerchant.md). Be sure to allow all of the domains listed in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server).
 
 > ❗ **Important**:  Ensure that your server accesses only the validation URLs provided by Apple in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server), and fails for other URLs. It’s a best practice to use a strict allow list for the validation URLs. You must send the payment session request from your server; never request the session from the client.
-
- Ensure that your server accesses only the validation URLs provided by Apple in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server), and fails for other URLs. It’s a best practice to use a strict allow list for the validation URLs. You must send the payment session request from your server; never request the session from the client.
 
 ##### Provide Request Parameters
 
@@ -71,8 +69,6 @@ The `displayName` you provide in the payload appears in the Touch Bar like this:
 
 > **Note**:  Start Session is being phased out and replaced by Payment Session.
 
- Start Session is being phased out and replaced by Payment Session.
-
 ## See Also
 
 - [Creating an Apple Pay Session](creating-an-apple-pay-session.md)
@@ -85,4 +81,4 @@ The `displayName` you provide in the payload appears in the Touch Bar like this:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/requesting-an-apple-pay-payment-session)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/requesting-an-apple-pay-payment-session)*

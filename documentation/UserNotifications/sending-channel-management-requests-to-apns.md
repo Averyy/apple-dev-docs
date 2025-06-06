@@ -81,8 +81,6 @@ The table below describes the HTTP/2 response fields:
 
 > **Note**: Channels can’t be shared across environments: a channel created in the development environment can’t be used in the production environment. Also, don’t make assumptions on the channel ID size.
 
-Channels can’t be shared across environments: a channel created in the development environment can’t be used in the production environment. Also, don’t make assumptions on the channel ID size.
-
 ##### Read a Channel
 
 To read the configuration for a channel, construct and send a request over the connection you created using HTTP/2 and TLS. The table below describes the HTTP/2 request header fields:
@@ -240,4 +238,4 @@ The key below describes the HTTP/2 response body for a successful request:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/sending-channel-management-requests-to-apns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/sending-channel-management-requests-to-apns)*

@@ -1,6 +1,6 @@
 # junctionImage
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: property
 
 An image that represents an upcoming junction.
@@ -23,8 +23,6 @@ Provide a junction image to show more visual details about the maneuver, such as
 You use a named image asset to supply variants for both dark and light interface styles, and initialize the image using [`init(named:)`](https://developer.apple.com/documentation/UIKit/UIImage/init(named:)). CarPlay then selects the correct image for the current interface style.
 
 > **Note**:  The maximum image size is 140 x 100 points. CarPlay scales a larger image to fit while maintaining its aspect ratio.
-
- The maximum image size is 140 x 100 points. CarPlay scales a larger image to fit while maintaining its aspect ratio.
 
 ## See Also
 

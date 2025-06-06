@@ -1,6 +1,6 @@
 # NSTouchBar
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 An object that provides dynamic contextual controls in the Touch Bar of supported models of MacBook Pro.
@@ -42,8 +42,6 @@ There’s no need, and no API, for your app to know whether or not there’s a T
 The Touch Bar is a Retina display, like the screen of a MacBook Pro. To perform custom drawing or animation within the Touch Bar, follow the same best practices that you would on the screen.
 
 > **Note**:  Although the Touch Bar is a display, it’s first and foremost an input device. Don’t use the Touch Bar to provide a display-only element.
-
- Although the Touch Bar is a display, it’s first and foremost an input device. Don’t use the Touch Bar to provide a display-only element.
 
 On the right side of the Touch Bar, the system supplies the always-available . The Control Strip gives the user access to standard controls for display brightness, sound volume, Siri, and so on. Your app’s bars appear to the left of the Control Strip. The user can choose to hide the Control Strip, which gives the frontmost app the entire Touch Bar width.
 
@@ -88,8 +86,6 @@ To programmatically invalidate a bar associated with a bar provider, such as bec
 A bar itself (an [`NSTouchBar`](nstouchbar.md) object) has no visible representation in a MacBook Pro Touch Bar. A user instead sees the bar’s items, each of which is an instance of the [`NSTouchBarItem`](nstouchbaritem.md) class.
 
 > **Note**:  This section explains how to use items in bars. For details on the various kinds of items and how to create and configure them, see [`NSTouchBarItem`](nstouchbaritem.md).
-
- This section explains how to use items in bars. For details on the various kinds of items and how to create and configure them, see [`NSTouchBarItem`](nstouchbaritem.md).
 
 The items presented in a bar are the elements in a private array owned by the bar. To specify the items for a bar, you don’t fill this array directly, but rather rely on the bar to manage its items based on various groups of items and item identifiers that you do specify directly.
 
@@ -369,4 +365,4 @@ Always test Touch Bar performance using the specific MacBook hardware you suppor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstouchbar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstouchbar)*

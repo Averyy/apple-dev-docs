@@ -1,6 +1,6 @@
 # Creating a dynamic height and normal map with low-level texture
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Create a low-level texture and update its pixel data on the GPU to form a dynamic height and normal map.
 
@@ -151,8 +151,6 @@ You can derive surface normal directions directly from the height map and store 
 
 > **Note**: The [`Generating interactive geometry with RealityKit`](generating-interactive-geometry-with-realitykit.md) sample sets its vertex normals with the normals the height map texture stores.
 
-The [`Generating interactive geometry with RealityKit`](generating-interactive-geometry-with-realitykit.md) sample sets its vertex normals with the normals the height map texture stores.
-
 Derive the normal direction at each pixel in the height map by computing the difference between the pixel’s neighboring height values:
 
 ```cpp
@@ -236,4 +234,4 @@ The following video shows the normal map the compute shader function derives fro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-a-dynamic-height-map-with-low-level-texture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-a-dynamic-height-map-with-low-level-texture)*

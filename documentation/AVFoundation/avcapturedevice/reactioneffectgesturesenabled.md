@@ -1,6 +1,6 @@
 # reactionEffectGesturesEnabled
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that indicates whether gesture detection triggers reaction effects on the video stream.
@@ -27,8 +27,6 @@ Gesture detection runs only when the device’s active format supports reaction 
 This property is key-value observable.
 
 > **Note**:  Your app can call [`performEffect(for:)`](avcapturedevice/performeffect(for:).md)independently the value of this property. The system intermixes reaction effects from either source.
-
- Your app can call [`performEffect(for:)`](avcapturedevice/performeffect(for:).md)independently the value of this property. The system intermixes reaction effects from either source.
 
 ## See Also
 

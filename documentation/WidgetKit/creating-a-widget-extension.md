@@ -28,8 +28,6 @@ The Widget Extension template provides a starting point for creating your widget
 
 > **Note**: Live Activities use WidgetKit and share many aspects of their design and implementation with the widgets in your app. If your app supports Live Activities, consider implementing them at the same time you add your widgets. For more information about Live Activities, see [`Displaying live data with Live Activities`](https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities).
 
-Live Activities use WidgetKit and share many aspects of their design and implementation with the widgets in your app. If your app supports Live Activities, consider implementing them at the same time you add your widgets. For more information about Live Activities, see [`Displaying live data with Live Activities`](https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities).
-
 The widget extension template provides an initial implementation that conforms to the [`Widget`](https://developer.apple.com/documentation/SwiftUI/Widget) protocol. The widget’s `body` property determines the type of content that the widget presents. Static widgets use a [`StaticConfiguration`](staticconfiguration.md) for the `body` property. Other types of widget configurations include:
 
 - [`AppIntentConfiguration`](appintentconfiguration.md) that enables user customization, such as a weather widget that needs a zip or postal code for a city, or a package-tracking widget that needs a tracking number.
@@ -63,8 +61,6 @@ struct GameStatusWidget: Widget {
 The widget’s provider generates a timeline for the widget, and includes the game-status details in each entry. When the date of each timeline entry arrives, WidgetKit invokes the `content` closure to display the widget’s content. Finally, the modifiers specify the name and description shown in the widget gallery, and the sizes that the widget supports.
 
 > ❗ **Important**: For an app’s widget to appear in the widget gallery, a person must launch the app that contains the widget at least once after the app is installed.
-
-For an app’s widget to appear in the widget gallery, a person must launch the app that contains the widget at least once after the app is installed.
 
 Note the usage of the `@main` attribute on this widget. This attribute indicates that the `GameStatusWidget` is the entry point for the widget extension, implying that the extension contains a single widget. To support multiple widgets, see the [`WidgetBundle`](https://developer.apple.com/documentation/SwiftUI/WidgetBundle).
 
@@ -167,8 +163,6 @@ In your widget, as you add more supported families to the widget’s configurati
 
 > **Note**: The view declares its body with `@ViewBuilder` because the type of view it uses varies.
 
-The view declares its body with `@ViewBuilder` because the type of view it uses varies.
-
 ##### Display a Placeholder Widget
 
 A placeholder view is similar to a preview snapshot, but instead of showing example data to let people see the type of data the widget displays, it shows a generic visual representation with no specific content. When WidgetKit renders your widget, it may need to render your content as a placeholder, for example, while you load data in the background or if you tell the system that your widget contains sensitive information.
@@ -267,4 +261,4 @@ You can include multiple widget types in your widget extension, although your ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/creating-a-widget-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/creating-a-widget-extension)*

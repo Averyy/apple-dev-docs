@@ -1,6 +1,6 @@
 # chamferProfile
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 A path that determines the cross-sectional contour of each chamfered edge.
@@ -21,8 +21,6 @@ var chamferProfile: Path? { get set }
 #### Discussion
 
 > **Note**: If the chamfer profile is `nil`, a circular profile is used.
-
-If the chamfer profile is `nil`, a circular profile is used.
 
 The chamfer profile needs to satisfy the following conditions:
 

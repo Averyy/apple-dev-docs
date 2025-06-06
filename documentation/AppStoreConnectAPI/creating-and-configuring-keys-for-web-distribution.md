@@ -1,6 +1,6 @@
 # Creating and configuring keys for web distribution
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Manage keys you use to sign JSON web tokens (JWTs).
 
@@ -22,8 +22,6 @@ This command creates the file `private_key.pem`, which contains your private key
 
 > ❗ **Important**:  Secure your private keys as you do other credentials, such as passwords. Don’t share your private keys, store keys in a code repository, or include keys in client-side code. Share only your public key.
 
- Secure your private keys as you do other credentials, such as passwords. Don’t share your private keys, store keys in a code repository, or include keys in client-side code. Share only your public key.
-
 ##### Generate Your Public Key
 
 Create a public key from the private key you created in the previous section. The public key is a PEM-encoded PKCS#8 EC key that uses the P-256 curve. In Terminal, enter the following command:
@@ -37,8 +35,6 @@ This command creates the file `public_key.pem`, which contains your public key. 
 ##### Create an Alternative Distribution Key
 
 > **Note**:  For web-distribution apps, add a single alternative distribution key, then add an alternative distribution domain. For more information, see [`Add an alternative distribution domain`](post-v1-alternativedistributiondomains.md) and [`Add an alternative distribution key`](post-v1-alternativedistributionkeys.md).
-
- For web-distribution apps, add a single alternative distribution key, then add an alternative distribution domain. For more information, see [`Add an alternative distribution domain`](post-v1-alternativedistributiondomains.md) and [`Add an alternative distribution key`](post-v1-alternativedistributionkeys.md).
 
 Next, upload your public key to App Store Connect using the endpoint described in [`Add an alternative distribution key`](post-v1-alternativedistributionkeys.md).
 
@@ -90,4 +86,4 @@ POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/creating-and-configuring-keys-for-web-distribution)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-and-configuring-keys-for-web-distribution)*

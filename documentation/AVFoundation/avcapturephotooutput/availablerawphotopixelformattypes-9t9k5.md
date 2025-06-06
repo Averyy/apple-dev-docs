@@ -1,6 +1,6 @@
 # availableRawPhotoPixelFormatTypes
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The pixel formats the capture output supports for RAW photo capture.
@@ -24,10 +24,6 @@ var availableRawPhotoPixelFormatTypes: [OSType] { get }
 To capture a photo in RAW format, use the [`init(rawPixelFormatType:)`](avcapturephotosettings/init(rawpixelformattype:).md) or [`init(rawPixelFormatType:processedFormat:)`](avcapturephotosettings/init(rawpixelformattype:processedformat:).md) initializer to create your photo settings object. The value for that initializer’s `rawPixelFormatType` parameter must be one of the Bayer RAW format identifiers listed in this array.
 
 > **Note**:  Read this property only after adding the photo capture output to an [`AVCaptureSession`](avcapturesession.md) object containing a video source. If the photo capture output isn’t connected to a session with a video source, this array is empty. Not all devices support RAW image capture. If the current device doesn’t support RAW capture, this array is empty.
-
- Read this property only after adding the photo capture output to an [`AVCaptureSession`](avcapturesession.md) object containing a video source. If the photo capture output isn’t connected to a session with a video source, this array is empty.
-
-Not all devices support RAW image capture. If the current device doesn’t support RAW capture, this array is empty.
 
 This property supports key-value observing.
 

@@ -29,8 +29,6 @@ An unkeyed container view into this decoder.
 
 > **Note**: `DecodingError.typeMismatch` if the encountered stored value is not an unkeyed container.
 
-`DecodingError.typeMismatch` if the encountered stored value is not an unkeyed container.
-
 
 ---
 

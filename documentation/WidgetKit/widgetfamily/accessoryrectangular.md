@@ -30,8 +30,6 @@ In watchOS, the accessory rectangular widget can appear as a widget in the Smart
 
 > **Note**: Widgets on the iPad Lock Screen require iPadOS 17 or later.
 
-Widgets on the iPad Lock Screen require iPadOS 17 or later.
-
 ## See Also
 
 - [WidgetFamily.accessoryCircular](widgetfamily/accessorycircular.md)

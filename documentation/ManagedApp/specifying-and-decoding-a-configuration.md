@@ -1,6 +1,6 @@
 # Specifying and decoding a configuration
 
-**Framework**: ManagedApp
+**Framework**: Managedapp
 
 Publish a configuration specification and implement a decoder that parses and validates configuration provided by an MDM admin.
 
@@ -31,8 +31,6 @@ The ingestion of a configuration, its decoding, and yielding of a decoded config
 
 > **Note**: Create a configuration decoder to enable the customization of arbitrary properties.  For information about handling secure credentials such as passwords, certificates, and identities, see [`Accessing provisioned secrets with identifiers`](accessing-provisioned-secrets-with-identifiers.md).
 
-Create a configuration decoder to enable the customization of arbitrary properties.  For information about handling secure credentials such as passwords, certificates, and identities, see [`Accessing provisioned secrets with identifiers`](accessing-provisioned-secrets-with-identifiers.md).
-
 #### Design a Configuration Specification
 
 Create a formal specification document for your app’s configuration. You can create a table or use the `appconfig.org` schema. A specification typically includes the following information for every property: key name, value type, whether the property is required, a default value, allowed values, and descriptive text. For example:
@@ -44,8 +42,6 @@ Create a formal specification document for your app’s configuration. You can c
 | role | string | false | staff | sales, marketing, engineering, operations, staff | The person’s job, which can determine that an extra tab displays. |
 
 > ❗ **Important**: When designing your specification, keep the configuration small to facilitate fast transmission. For example, recommend that the MDM admin store any large files that your app needs on an asset server rather than as serialized data in the configuration and include any credentials needed to authenticate their download using a separate network request.
-
-When designing your specification, keep the configuration small to facilitate fast transmission. For example, recommend that the MDM admin store any large files that your app needs on an asset server rather than as serialized data in the configuration and include any credentials needed to authenticate their download using a separate network request.
 
 #### Implement a Configuration Decoder
 
@@ -148,8 +144,6 @@ class MyAppConfigurationProvider {
 
 > 💡 **Tip**: Although not required, this example uses a singleton to let you access the configuration globally.
 
-Although not required, this example uses a singleton to let you access the configuration globally.
-
 Rely on default values while your app hasn’t yet received a configuration from the server. The following example adds defaults to the custom configuration type:
 
 ```swift
@@ -239,8 +233,6 @@ For more information on status reporting, see [`Leveraging the declarative manag
 
 > ❗ **Important**: Because the framework logs errors, don’t include sensitive information in error messages.
 
-Because the framework logs errors, don’t include sensitive information in error messages.
-
 #### Receive the Configuration and Any Updates
 
 Inside your custom provider’s singleton initializer, receive a configuration:
@@ -259,8 +251,6 @@ For the lifetime of the task, the `for await` waits for an updated configuration
 
 > ❗ **Important**: Because the configuration can contain sensitive information, don’t log or displaying decoded portions of the configuration.
 
-Because the configuration can contain sensitive information, don’t log or displaying decoded portions of the configuration.
-
 #### Apply Configured Values
 
 After your app receives the configuration, it can adjust to the new information. For example if it receives a server URL, your app can request the URL and access the configurable asset or page it refers to. As another example, your app might reveal a Sales tab after learning that the person is a member of the sales team.
@@ -275,4 +265,4 @@ After your app receives the configuration, it can adjust to the new information.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/managedapp/specifying-and-decoding-a-configuration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ManagedApp/specifying-and-decoding-a-configuration)*

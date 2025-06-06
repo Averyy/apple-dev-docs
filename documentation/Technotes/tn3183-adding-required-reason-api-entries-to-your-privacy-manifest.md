@@ -17,8 +17,6 @@ This document describes how to add the `NSPrivacyAccessedAPIType`, `NSPrivacyAcc
 
 > **Note**: Before you start adding the keys to your privacy manifest, enable raw keys and values in Xcode to view the raw keys and hide their human-readable names. Click anywhere in the privacy manifest, then choose Xcode > Editor > Raw Keys and Values. Repeat the process to disable this feature.
 
-Before you start adding the keys to your privacy manifest, enable raw keys and values in Xcode to view the raw keys and hide their human-readable names. Click anywhere in the privacy manifest, then choose Xcode > Editor > Raw Keys and Values. Repeat the process to disable this feature.
-
 #### Select an Accessed Api Category
 
 A privacy accessed API category identifies the category of required reason APIs your app or third-party SDK uses. Set the value of the `NSPrivacyAccessedAPIType` key to a privacy accessed API category. For more information, see [`Describing use of required reason API`](https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api).
@@ -180,4 +178,4 @@ Repeat step 5 for each additional required reason API your app or third-party SD
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3183-adding-required-reason-api-entries-to-your-privacy-manifest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3183-adding-required-reason-api-entries-to-your-privacy-manifest)*

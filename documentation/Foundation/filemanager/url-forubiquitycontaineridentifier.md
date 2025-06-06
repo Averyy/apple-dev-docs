@@ -32,15 +32,11 @@ You can use the URL returned by this method to build paths to files and director
 
 > ❗ **Important**:  Do not call this method from your app’s main thread. Because this method might take a nontrivial amount of time to set up iCloud and return the requested URL, you should always call it from a secondary thread. To determine if iCloud is available, especially at launch time, check the value of the [`ubiquityIdentityToken`](filemanager/ubiquityidentitytoken.md) property instead.
 
- Do not call this method from your app’s main thread. Because this method might take a nontrivial amount of time to set up iCloud and return the requested URL, you should always call it from a secondary thread. To determine if iCloud is available, especially at launch time, check the value of the [`ubiquityIdentityToken`](filemanager/ubiquityidentitytoken.md) property instead.
-
 In addition to writing to its own ubiquity container, an app can write to any container directory for which it has the appropriate permission. Each additional ubiquity container should be listed as an additional value in the `com.apple.developer.ubiquity-container-identifiers` entitlement array.
 
 To learn how to view your development team’s unique  value, read To view the team ID in Tools Workflow Guide for Mac.
 
 > **Note**:  The development team ID that precedes each container ID string is the unique identifier associated with your development team. To learn how to view your development team’s unique  value, read To view the team ID in Tools Workflow Guide for Mac.
-
- The development team ID that precedes each container ID string is the unique identifier associated with your development team. To learn how to view your development team’s unique  value, read To view the team ID in Tools Workflow Guide for Mac.
 
 ## Parameters
 

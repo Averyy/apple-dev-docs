@@ -1,6 +1,6 @@
 # About the app launch sequence
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Learn the order in which the system executes your code at app launch time.
 
@@ -25,8 +25,6 @@ In iOS 15 and later, the system may, depending on device conditions,  your app â
 
 > **Note**:  For more information about the low-level structures the system requires during app launch, see the WWDC session video [`App Startup Time: Past, Present, and Future`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2017/413).
 
- For more information about the low-level structures the system requires during app launch, see the WWDC session video [`App Startup Time: Past, Present, and Future`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2017/413).
-
 After the system prewarms your app, its launch sequence remains in a paused state until the app launches and the sequence resumes, or the system removes the prewarmed app from memory to reclaim resources. The system can prewarm your app after a device reboot, and periodically as system conditions allow.
 
 If your app executes code before the call to [`UIApplicationMain(_:_:_:_:)`](uiapplicationmain(_:_:_:_:)-1yub7.md), such as in static initializers like [`load()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/load()), donâ€™t make assumptions about what services and resources are available. For example, keychain items may be unavailable because their data protection policies require an unlocked device and prewarming happens even when the device is in a locked state. If your code is dependent upon access to a specific service or resource, migrate that code to a later part of the launch sequence.
@@ -43,4 +41,4 @@ Prewarming an app results in an indeterminate amount of time between when the pr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/about-the-app-launch-sequence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/about-the-app-launch-sequence)*

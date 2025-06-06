@@ -1,6 +1,6 @@
 # GKGameSessionSharingViewController
 
-**Framework**: GameKit  
+**Framework**: Gamekit  
 **Kind**: class
 
 A user interface you can use to invite other users into a tvOS game session.
@@ -20,8 +20,6 @@ class GKGameSessionSharingViewController
 The sharing view controller on tvOS presents a user’s Game Center friend list, along with other people with whom the user has recently played the game. Users can select a person from the list and send them an invite using the Send button.
 
 > **Note**:  Currently, the a user’s Game Center friend’s list is frozen and users will no longer be able to add friends to the list.
-
- Currently, the a user’s Game Center friend’s list is frozen and users will no longer be able to add friends to the list.
 
 ## Topics
 
@@ -90,4 +88,4 @@ The sharing view controller on tvOS presents a user’s Game Center friend list,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/gkgamesessionsharingviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/gkgamesessionsharingviewcontroller)*

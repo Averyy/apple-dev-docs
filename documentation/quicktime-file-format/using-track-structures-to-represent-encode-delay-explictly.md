@@ -1,6 +1,6 @@
 # Using track structures to represent encoder delay explicitly
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Represent encoder delay explicitly with an edit list atom and sample group structures.
 
@@ -10,8 +10,6 @@ In QuickTime movie files (.mov) and related MPEG-4 files, AAC encoded audio is c
 
 > ❗ **Important**: A complete implementation using the sample group structures is required to explicitly represent the placement of the source signal in the encoded track. An incomplete implementation will result in unspecified interpretation by Apple software and tools. In the absence of the sample group structures, the classic solution of expecting an implicit encoding delay of 2112 samples and the edit list to start at the beginning of encoder delay will be assumed as described in the previous section.
 
-A complete implementation using the sample group structures is required to explicitly represent the placement of the source signal in the encoded track. An incomplete implementation will result in unspecified interpretation by Apple software and tools. In the absence of the sample group structures, the classic solution of expecting an implicit encoding delay of 2112 samples and the edit list to start at the beginning of encoder delay will be assumed as described in the previous section.
-
 #### Edit List Atom
 
 See [`Edit atom ('edts')`](edit_atom.md) and [`Edit list atom ('elst')`](edit_list_atom.md) for details of edit lists in track atom structures.
@@ -20,13 +18,9 @@ A sound track of AAC encoded audio uses an edit list to indicate the placement o
 
 > **Note**: Track duration uses the movie timescale instead of the media timescale used by media time. If the media timescale and movie timescale differ, the track duration may not be sample accurate.
 
-Track duration uses the movie timescale instead of the media timescale used by media time. If the media timescale and movie timescale differ, the track duration may not be sample accurate.
-
 #### Sample Group Structures
 
 > **Note**: This implementation of sample group structures in QuickTime is designed to be compatible with the ISO Sample Group Structures definition and allow for future generalization. A full description of ISO 14996-12 Sample Group Structures is not required in order to provide explicit encoder delay representation. A short description of the more general characteristics of these structures is included in the descriptions below, followed by the information required for use with QuickTime.
-
-This implementation of sample group structures in QuickTime is designed to be compatible with the ISO Sample Group Structures definition and allow for future generalization. A full description of ISO 14996-12 Sample Group Structures is not required in order to provide explicit encoder delay representation. A short description of the more general characteristics of these structures is included in the descriptions below, followed by the information required for use with QuickTime.
 
 Sample group structures of roll-group type with a constant roll distance are used to represent decoder dependencies for AAC encoded media. The sample group structures are intended to serve two purposes:
 
@@ -34,8 +28,6 @@ Sample group structures of roll-group type with a constant roll distance are use
 - To signal to readers parsing QuickTime movies that the sound track includes explicit information for encoder delay and remainder samples for the AAC packets encoded in the file
 
 > **Note**: The effect of using sample group structures in the track in this manner is that the edit list’s media time and track duration fields do not include encoder delay, as specified above in [`Edit list atom ('elst')`](edit_list_atom.md).
-
-The effect of using sample group structures in the track in this manner is that the edit list’s media time and track duration fields do not include encoder delay, as specified above in [`Edit list atom ('elst')`](edit_list_atom.md).
 
 Two sample group structure atoms are used to represent the amount of encoder delay and remainder samples which must be trimmed: [`Sample group description atom ('sgpd')`](sample_group_description_atom.md) and [`Sample-to-group atom ('sbpd')`](sample-to-group_atom.md).
 

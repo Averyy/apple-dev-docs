@@ -64,8 +64,6 @@ struct NavigationSplitViewWrapper<Sidebar, Content, Detail>: View where Sidebar:
 
 > **Note**: Navigation split view collapses all of its columns into a stack and shows the last column that displays useful information for [`compact size classes`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/layout), such as on iPhone or in iPad’s Slide Over mode. It also collapses all of its columns into a stack on Apple Watch and Apple TV, regardless of the size class.
 
-Navigation split view collapses all of its columns into a stack and shows the last column that displays useful information for [`compact size classes`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/layout), such as on iPhone or in iPad’s Slide Over mode. It also collapses all of its columns into a stack on Apple Watch and Apple TV, regardless of the size class.
-
 #### Revision History
 
 -  First published.
@@ -106,4 +104,4 @@ Navigation split view collapses all of its columns into a stack and shows the la
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3154-adopting-swiftui-navigation-split-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3154-adopting-swiftui-navigation-split-view)*

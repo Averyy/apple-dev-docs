@@ -1,6 +1,6 @@
 # tableView(_:shouldEdit:row:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Asks the delegate if the cell at the specified row and column can be edited.
@@ -24,8 +24,6 @@ optional func tableView(_ tableView: NSTableView, shouldEdit tableColumn: NSTabl
 The delegate can implement this method to disallow editing of specific cells.
 
 > **Note**:  This method is only valid for [`NSCell`](nscell.md)-based table views.
-
- This method is only valid for [`NSCell`](nscell.md)-based table views.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # UICollectionViewDataSourcePrefetching
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: protocol
 
 A protocol that provides advance warning of the data requirements for a collection view, allowing the triggering of asynchronous data load operations.
@@ -32,8 +32,6 @@ Follow these steps to add a prefetch data source to your collection view:
 5. Cancel pending data load operations when the collection view informs you that the data is no longer required in the [`collectionView(_:cancelPrefetchingForItemsAt:)`](uicollectionviewdatasourceprefetching/collectionview(_:cancelprefetchingforitemsat:).md) method.
 
 > **Note**:  The prefetch method isn’t necessarily called for every cell in the collection view. See [`Load data asynchronously`](uicollectionviewdatasourceprefetching#Load-data-asynchronously.md) for details on a suggested approach to loading data.
-
- The prefetch method isn’t necessarily called for every cell in the collection view. See [`Load data asynchronously`](uicollectionviewdatasourceprefetching#Load-data-asynchronously.md) for details on a suggested approach to loading data.
 
 For more information, see [`UICollectionView`](uicollectionview.md).
 
@@ -84,4 +82,4 @@ One approach that handles all of these situations is to use [`Operation`](https:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicollectionviewdatasourceprefetching)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uicollectionviewdatasourceprefetching)*

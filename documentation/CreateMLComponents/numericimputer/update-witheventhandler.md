@@ -1,6 +1,6 @@
 # update(_:with:eventHandler:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Updates an impute transformer with a new sequence of examples.
@@ -23,8 +23,6 @@ func update(_ transformer: inout ImputeTransformer<Element>, with input: some Se
 #### Discussion
 
 > **Note**: You can’t update an impute transformer when using the `median` strategy.
-
-You can’t update an impute transformer when using the `median` strategy.
 
 ## Parameters
 

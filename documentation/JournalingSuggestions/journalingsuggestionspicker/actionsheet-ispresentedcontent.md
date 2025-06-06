@@ -1,6 +1,6 @@
 # actionSheet(isPresented:content:)
 
-**Framework**: Journaling Suggestions  
+**Framework**: Journalingsuggestions  
 **Kind**: method
 
 Presents an action sheet when a given condition is true.
@@ -48,8 +48,6 @@ struct ConfirmEraseItems: View {
 ```
 
 > **Note**: In regular size classes in iOS, the system renders alert sheets as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the default dismiss button.
-
-In regular size classes in iOS, the system renders alert sheets as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the default dismiss button.
 
 ## Parameters
 

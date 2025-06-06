@@ -1,6 +1,6 @@
 # init(privateKey:ciphersuite:info:encapsulatedKey:authenticatedBy:)
 
-**Framework**: Apple CryptoKit  
+**Framework**: Cryptokit  
 **Kind**: init
 
 Creates a recipient in authentication mode.
@@ -25,8 +25,6 @@ init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulated
 The `Receiver` decrypts messages in authentication mode using the encapsulated key with the key schedule information (`info` data). Messages also include authentication data so that the recipient can verify the authenticity of the sender’s private key.
 
 > **Note**: The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
-
-The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
 
 ## Parameters
 

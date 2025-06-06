@@ -45,8 +45,6 @@ emptyRange.contains(5..<5)   // true
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `other`: A range to check for containment within this range.

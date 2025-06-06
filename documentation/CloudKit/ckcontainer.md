@@ -1,6 +1,6 @@
 # CKContainer
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 A conduit to your app’s databases.
@@ -33,8 +33,6 @@ Every app has a default container that manages its own content. If you develop a
 
 > **Note**:  `CKContainer` instances operate with a [`QualityOfService.userInitiated`](https://developer.apple.com/documentation/Foundation/QualityOfService/userInitiated) quality of service level by default. For information about quality of service, see [`Prioritize Work with Quality of Service Classes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [`Prioritize Work at the Task Level`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
 
- `CKContainer` instances operate with a [`QualityOfService.userInitiated`](https://developer.apple.com/documentation/Foundation/QualityOfService/userInitiated) quality of service level by default. For information about quality of service, see [`Prioritize Work with Quality of Service Classes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [`Prioritize Work at the Task Level`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
-
 ##### Interacting with a Container
 
 A container coordinates all interactions between your app and the server. Most of these interactions involve the following tasks:
@@ -50,8 +48,6 @@ Each container provides a public and a private database for storing data. The co
 The public database is always available, regardless of whether the device has an active iCloud account. When there isn’t an iCloud account, your app can fetch records from and query the public database, but it can’t save changes. Saving records to the public database requires an active iCloud account to identify the owner of those records. Access to the private database always requires an active iCloud account on the device.
 
 > **Note**:  The data in a public database counts toward the iCloud storage quota of the app that owns the container. That data doesn’t count toward the storage quota of any single user. Data in the private database counts toward the user’s iCloud storage quota.
-
- The data in a public database counts toward the iCloud storage quota of the app that owns the container. That data doesn’t count toward the storage quota of any single user. Data in the private database counts toward the user’s iCloud storage quota.
 
 ##### Using Icloud
 
@@ -70,8 +66,6 @@ At runtime, CloudKit uses your app’s `com.apple.developer.icloud-container-env
 Before shipping your app, always test your app’s behavior in the production environment. The production server generates errors when your app tries to add record types or add new fields to existing record types. Testing in the production environment helps you find and fix the places in your code where you’re making those types of changes. You can use CloudKit Dashboard to modify record types in the development environment, and then migrate those changes to the production environment.
 
 > **Note**:  Simulator works only with the development environment. When you’re ready to test your app in a production environment, do so from a device.
-
- Simulator works only with the development environment. When you’re ready to test your app in a production environment, do so from a device.
 
 ## Topics
 
@@ -191,4 +185,4 @@ Before shipping your app, always test your app’s behavior in the production en
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckcontainer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckcontainer)*

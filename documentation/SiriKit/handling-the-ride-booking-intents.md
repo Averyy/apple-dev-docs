@@ -1,6 +1,6 @@
 # Handling the Ride-Booking Intents
 
-**Framework**: SiriKit
+**Framework**: Sirikit
 
 Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
 
@@ -15,8 +15,6 @@ A ride-booking Intents app extension provides a list of available vehicles, deta
 With Maps, users specify information such as the start and end points of their route directly using the Maps interface. Then Maps sends an [`INListRideOptionsIntent`](https://developer.apple.com/documentation/intents/inlistrideoptionsintent) object that describes the user’s trip to your Intents app extension. Provide ride options available for the user’s requested trip. For more information about providing effective ride options, see [`Generating a List of Ride Options`](generating-a-list-of-ride-options.md). After the user selects one of your ride options, Maps sends an [`INRequestRideIntent`](https://developer.apple.com/documentation/intents/inrequestrideintent) object to your Intents app extension to handle. Use the information in this object to book the ride.
 
 > **Note**:  When you handle a ride-booking intent from Maps, there isn’t a resolve or confirm step. Instead, Maps validates the user’s origin and destination before sending intents to your Intents app extension.
-
- When you handle a ride-booking intent from Maps, there isn’t a resolve or confirm step. Instead, Maps validates the user’s origin and destination before sending intents to your Intents app extension.
 
 Maps may send the same [`INGetRideStatusIntent`](https://developer.apple.com/documentation/intents/ingetridestatusintent) object to your Intents app extension multiple times after booking is complete. Maps may also call the [`startSendingUpdates(for:to:)`](https://developer.apple.com/documentation/intents/ingetridestatusintenthandling/startsendingupdates(for:to:)) method of your intent handler to ask for live status updates. Prepare your handler to push frequent status updates to the specified observer object. For information about how to handle live status updates, see [`Providing Live Status Updates`](providing-live-status-updates.md).
 
@@ -68,4 +66,4 @@ Shortcuts and Siri Suggestions send your Intents app extension [`INRequestRideIn
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/handling-the-ride-booking-intents)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/handling-the-ride-booking-intents)*

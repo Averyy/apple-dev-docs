@@ -1,6 +1,6 @@
 # ARFaceTrackingConfiguration
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: class
 
 A configuration that tracks facial movement and expressions using the front camera.
@@ -30,8 +30,6 @@ Face tracking supports devices with Apple Neural Engine in iOS 14 and iPadOS 14 
 When you enable the [`isLightEstimationEnabled`](arconfiguration/islightestimationenabled.md) setting, a face-tracking configuration estimates directional and environmental lighting (an [`ARDirectionalLightEstimate`](ardirectionallightestimate.md) object) by referring to the detected face as a light probe.
 
 > **Note**:  Because face tracking provides your app with personal facial information, your app must include a privacy policy describing to users how you intend to use face tracking and face data. For details, see the [`Apple Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/terms/).
-
- Because face tracking provides your app with personal facial information, your app must include a privacy policy describing to users how you intend to use face tracking and face data. For details, see the [`Apple Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/terms/).
 
 ## Topics
 
@@ -70,4 +68,4 @@ When you enable the [`isLightEstimationEnabled`](arconfiguration/islightestimati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arfacetrackingconfiguration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arfacetrackingconfiguration)*

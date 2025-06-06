@@ -12,8 +12,6 @@ Xcode Cloud includes a set of predefined environment variables that you can use 
 
 > 💡 **Tip**: In addition to predefined environment variables, you can set custom environment variables in a workflow’s Environment section and access them in your custom build scripts or test actions.
 
-In addition to predefined environment variables, you can set custom environment variables in a workflow’s Environment section and access them in your custom build scripts or test actions.
-
 For more information on using custom build scripts and accessing environment variables, see [`Writing custom build scripts`](writing-custom-build-scripts.md).
 
 ##### Variables That Are Always Available
@@ -21,8 +19,6 @@ For more information on using custom build scripts and accessing environment var
 The following environment variables are available every time Xcode Cloud starts a build, no matter which actions or start conditions you configure for a workflow:
 
 > **Note**: Xcode Cloud builds your project using temporary build environments that use an HTTP proxy and makes the standard `HTTP_PROXY` and `HTTPS_PROXY` environment variables available. Many tools respect those variables and use them to change their settings.
-
-Xcode Cloud builds your project using temporary build environments that use an HTTP proxy and makes the standard `HTTP_PROXY` and `HTTPS_PROXY` environment variables available. Many tools respect those variables and use them to change their settings.
 
 ##### Variables for Specific Start Conditions
 
@@ -44,8 +40,6 @@ The availability of the following environment variables depends on the action Xc
 
 > **Note**: Xcode Cloud makes all the environment variables for test actions available to the processes that execute your tests, known as . This includes environment variables set by the system as well as any custom environment variables you set in the Environment section of your workflow. When executing your test action, Xcode Cloud adds the prefix `TEST_RUNNER_` to each variable’s name, which is required by `xcodebuild` for the test runner process to access each variable by its original name. For more information on using the `TEST_RUNNER_` prefix on your environment variables when running `xcodebuild`, see the Environment Variables section of `xcodebuild`’s [`man page`](https://developer.apple.comx-man-page://1/xcodebuild).
 
-Xcode Cloud makes all the environment variables for test actions available to the processes that execute your tests, known as . This includes environment variables set by the system as well as any custom environment variables you set in the Environment section of your workflow. When executing your test action, Xcode Cloud adds the prefix `TEST_RUNNER_` to each variable’s name, which is required by `xcodebuild` for the test runner process to access each variable by its original name. For more information on using the `TEST_RUNNER_` prefix on your environment variables when running `xcodebuild`, see the Environment Variables section of `xcodebuild`’s [`man page`](https://developer.apple.comx-man-page://1/xcodebuild).
-
 ###### Variables for Archive Actions
 
 ## See Also
@@ -56,4 +50,4 @@ Xcode Cloud makes all the environment variables for test actions available to th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/environment-variable-reference)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/environment-variable-reference)*

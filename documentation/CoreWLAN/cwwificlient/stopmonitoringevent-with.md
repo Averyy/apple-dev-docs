@@ -1,6 +1,6 @@
 # stopMonitoringEvent(with:)
 
-**Framework**: Core WLAN  
+**Framework**: Corewlan  
 **Kind**: method
 
 Unregister for specific Wi-Fi event notifications.
@@ -19,8 +19,6 @@ func stopMonitoringEvent(with type: CWEventType) throws
 Use this method to indicate that the client should no longer send notifications for the given event type.
 
 > **Note**:  In order to monitor Wi-Fi events, you must specify the `com.apple.wifi.events` entitlement for your app.
-
- In order to monitor Wi-Fi events, you must specify the `com.apple.wifi.events` entitlement for your app.
 
 ## Parameters
 

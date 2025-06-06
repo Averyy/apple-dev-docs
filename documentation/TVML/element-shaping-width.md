@@ -1,6 +1,6 @@
 # width
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Specifies how wide an element is.
 
@@ -15,8 +15,6 @@ Use the `width` style to change the width of an element. Here’s an example tha
 ##### Values for Width
 
 > **Note**: You must explicitly set this style for custom cell elements provided by your app binary.
-
-You must explicitly set this style for custom cell elements provided by your app binary.
 
 ##### Elements That Use Width
 
@@ -50,4 +48,4 @@ You must explicitly set this style for custom cell elements provided by your app
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/element-shaping-width)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/element-shaping-width)*

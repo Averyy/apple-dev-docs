@@ -1,6 +1,6 @@
 # multilineTextAlignment
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 An environment value that indicates how a text view aligns its lines when the content wraps or contains newlines.
@@ -28,8 +28,6 @@ This value has no effect on a [`Text`](text.md) view that contains only one line
 
 > **Note**: You can use this value to control the alignment of a [`Text`](text.md) view that you create with the [`init(_:style:)`](text/init(_:style:).md) initializer to display localized dates and times, including when the view uses only a single line, but only when that view appears in a widget.
 
-You can use this value to control the alignment of a [`Text`](text.md) view that you create with the [`init(_:style:)`](text/init(_:style:).md) initializer to display localized dates and times, including when the view uses only a single line, but only when that view appears in a widget.
-
 ## See Also
 
 - [func lineSpacing(CGFloat) -> some View](view/linespacing(_:).md)
@@ -42,4 +40,4 @@ You can use this value to control the alignment of a [`Text`](text.md) view that
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentvalues/multilinetextalignment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentvalues/multilinetextalignment)*

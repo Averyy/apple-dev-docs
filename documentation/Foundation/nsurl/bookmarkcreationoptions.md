@@ -26,8 +26,6 @@ When creating a bookmark, use bitwise `OR` operators to combine the options you 
 
 > **Note**:  Security-scoped bookmarks aren’t available in versions of macOS prior to 10.7.3.
 
- Security-scoped bookmarks aren’t available in versions of macOS prior to 10.7.3.
-
 ## Topics
 
 ### Creating a bookmark creation option

@@ -1,6 +1,6 @@
 # Promoting In-App Purchases
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Show promoted In-App Purchases on your product page and handle purchases that customers initiate on the App Store.
 
@@ -9,8 +9,6 @@ Show promoted In-App Purchases on your product page and handle purchases that cu
 Starting in iOS 11, you can promote in-app purchases on the App Store.
 
 > **Note**:  To support promoted in-app purchases in apps with a minimum version of iOS 16.4 and later, use [`PurchaseIntent`](purchaseintent.md). For more information, see [`Supporting promoted In-App Purchases in your app`](supporting-promoted-in-app-purchases-in-your-app.md).
-
- To support promoted in-app purchases in apps with a minimum version of iOS 16.4 and later, use [`PurchaseIntent`](purchaseintent.md). For more information, see [`Supporting promoted In-App Purchases in your app`](supporting-promoted-in-app-purchases-in-your-app.md).
 
 Promoted in-app purchases appear on your product page, can appear in search results, and can appear as featured items on an appropriate tab on the App Store. Users can start an in-app purchase on the App Store and then transition to your app to continue the transaction. If your app isn’t installed, they receive a prompt to download it.
 
@@ -21,15 +19,11 @@ Promoting in-app purchases requires two steps:
 
 > ❗ **Important**:  To enable promoted in-app purchases, your app needs to use either [`PurchaseIntent`](purchaseintent.md) (starting in iOS 16.4) or [`paymentQueue(_:shouldAddStorePayment:for:)`](skpaymenttransactionobserver/paymentqueue(_:shouldaddstorepayment:for:).md) (starting in iOS 11). Don’t use both at the same time. If necessary, use conditional compilation to identify the OS version the app is running in. For more information, see [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/Xcode/running-code-on-a-specific-version).
 
- To enable promoted in-app purchases, your app needs to use either [`PurchaseIntent`](purchaseintent.md) (starting in iOS 16.4) or [`paymentQueue(_:shouldAddStorePayment:for:)`](skpaymenttransactionobserver/paymentqueue(_:shouldaddstorepayment:for:).md) (starting in iOS 11). Don’t use both at the same time. If necessary, use conditional compilation to identify the OS version the app is running in. For more information, see [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/Xcode/running-code-on-a-specific-version).
-
 To customize the list of promoted in-app purchases for users, you can override their default order and visibility using [`SKProductStorePromotionController`](skproductstorepromotioncontroller.md). Use overrides to show promotions that are relevant to the user. Overrides are specific to a device, and take effect after the user launches the app at least once. Using [`SKProductStorePromotionController`](skproductstorepromotioncontroller.md) is optional and isn’t required for your in-app purchases to appear on the App Store.
 
 For marketing guidance on this feature, see [`Promoting Your In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/app-store/promoting-in-app-purchases/).
 
 > **Note**:  Promoted in-app purchases aren’t available to compatible iPad or iPhone apps running in visionOS.
-
- Promoted in-app purchases aren’t available to compatible iPad or iPhone apps running in visionOS.
 
 ##### Complete the Purchase in the App
 
@@ -181,4 +175,4 @@ storePromotionController.fetchStorePromotionOrder(completionHandler: {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/promoting-in-app-purchases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/promoting-in-app-purchases)*

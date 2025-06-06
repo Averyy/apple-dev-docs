@@ -1,6 +1,6 @@
 # setOrientation(_:duration:relative:)
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: method
 
 Sets the position of each axis of orientation to radians for pitch, yaw, and roll.
@@ -30,8 +30,6 @@ A progress object that reports the progress towards the target orientation.
 This method works only when you disable system tracking.
 
 > **Note**: [`DockKitError.frameRateTooHigh`](dockkiterror/frameratetoohigh.md) if calling the method too frequently, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) in macOS.
-
-[`DockKitError.frameRateTooHigh`](dockkiterror/frameratetoohigh.md) if calling the method too frequently, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) in macOS.
 
 ## Parameters
 

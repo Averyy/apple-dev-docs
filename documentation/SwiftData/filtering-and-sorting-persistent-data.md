@@ -1,6 +1,6 @@
 # Filtering and sorting persistent data
 
-**Framework**: SwiftData
+**Framework**: Swiftdata
 
 Manage data store presentation using predicates and dynamic queries.
 
@@ -17,8 +17,6 @@ This sample app displays a list of earthquakes, showing the time, location, and 
 The app uses SwiftData to store and manage the earthquake data, and relies on dynamic queries to present the data in different ways. For example, people can select which day’s earthquakes to display, sort the earthquakes by magnitude or time in forward or reverse order, and filter by location name.
 
 > **Note**: To learn how the app retrieves and stores earthquake data, see [`Maintaining a local copy of server data`](maintaining-a-local-copy-of-server-data.md).
-
-To learn how the app retrieves and stores earthquake data, see [`Maintaining a local copy of server data`](maintaining-a-local-copy-of-server-data.md).
 
 ##### Read the Entire Collection with a Simple Query
 
@@ -73,8 +71,6 @@ Map(selection: $selectedIdMap) {
 ```
 
 > **Note**: The app binds `selectedIdMap` to the map’s selection input and manually synchronizes this with the main `selectedId` value that’s used elsewhere in code. Keeping separate selection values enables the app to detect changes driven from the map and then scroll the list to match.
-
-The app binds `selectedIdMap` to the map’s selection input and manually synchronizes this with the main `selectedId` value that’s used elsewhere in code. Keeping separate selection values enables the app to detect changes driven from the map and then scroll the list to match.
 
 ##### Define a Filter Using a Predicate
 
@@ -187,4 +183,4 @@ These two initializers have different sorting constraints to match the needs of 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/filtering-and-sorting-persistent-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/filtering-and-sorting-persistent-data)*

@@ -26,8 +26,6 @@ To check whether a string is empty, use its `isEmpty` property instead of compar
 
 > **Note**: O(n), where n is the length of the string.
 
-O(n), where n is the length of the string.
-
 ## See Also
 
 - [var isEmpty: Bool](string/isempty.md)

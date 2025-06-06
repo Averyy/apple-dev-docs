@@ -1,6 +1,6 @@
 # dropInteraction(_:canHandle:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Asks the delegate whether it can handle the session’s drag items.
@@ -50,8 +50,6 @@ func dropInteraction(_ interaction: UIDropInteraction, canHandle session: UIDrop
 ```
 
 > **Note**:  You can’t check the actual data the user is dragging because it isn’t available when the interaction calls this method. Only the data type is available inside this method.
-
- You can’t check the actual data the user is dragging because it isn’t available when the interaction calls this method. Only the data type is available inside this method.
 
 ## Parameters
 

@@ -40,8 +40,6 @@ print(streets[index!])
 
 > **Note**: O(1)
 
-O(1)
-
 ## See Also
 
 - [subscript<R>(R) -> Self.SubSequence](string/subscript(_:)-4h7s3.md)

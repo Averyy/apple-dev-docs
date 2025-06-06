@@ -1,6 +1,6 @@
 # starts(with:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a Boolean value indicating whether the initial elements of the sequence are the same as the elements in another sequence.
@@ -42,8 +42,6 @@ print(b.starts(with: []))
 ```
 
 > **Note**: O(), where  is the lesser of the length of the sequence and the length of `possiblePrefix`.
-
-O(), where  is the lesser of the length of the sequence and the length of `possiblePrefix`.
 
 ## Parameters
 

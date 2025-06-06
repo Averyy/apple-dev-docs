@@ -25,8 +25,6 @@ By default, the texture at each index is `nil`.
 
 > **Note**:  The Objective-C version of this method is [`setObjectBuffers:offsets:withRange:`](mtlrendercommandencoder/setobjectbuffers:offsets:withrange:.md).
 
- The Objective-C version of this method is [`setObjectBuffers:offsets:withRange:`](mtlrendercommandencoder/setobjectbuffers:offsets:withrange:.md).
-
 ## Parameters
 
 - `buffers`: An array of   instances the command assigns to entries in the object shader argument table for buffers.

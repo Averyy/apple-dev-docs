@@ -1,6 +1,6 @@
 # SKReceiptRefreshRequest
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: class
 
 A request to the App Store to get the app receipt, which represents the customer’s transactions with your app.
@@ -30,13 +30,9 @@ class SKReceiptRefreshRequest
 
 > **Note**:  The receipt isn’t necessary if you use [`AppTransaction`](apptransaction.md) to validate the app download, or [`Transaction`](transaction.md) to validate in-app purchases. Only use the receipt if your app uses the [`Original API for In-App Purchase`](original-api-for-in-app-purchase.md), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](apptransaction.md).
 
- The receipt isn’t necessary if you use [`AppTransaction`](apptransaction.md) to validate the app download, or [`Transaction`](transaction.md) to validate in-app purchases. Only use the receipt if your app uses the [`Original API for In-App Purchase`](original-api-for-in-app-purchase.md), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](apptransaction.md).
-
 Use this API to request a new app receipt from the App Store if the receipt is invalid or missing from its expected location, [`appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/bundle/1407276-appstorereceipturl). To request the receipt using the [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.md) object, you initialize it, attach a [`delegate`](skrequest/delegate.md), and then call the request’s [`start()`](skrequest/start().md) method.
 
 > ❗ **Important**:  The receipt refresh request displays a system prompt that asks users to authenticate with their App Store credentials. For a better user experience, initiate the request after an explicit user action, like tapping or clicking a button.
-
- The receipt refresh request displays a system prompt that asks users to authenticate with their App Store credentials. For a better user experience, initiate the request after an explicit user action, like tapping or clicking a button.
 
 When the request completes successfully, your delegate receives an [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.md) object in its [`requestDidFinish(_:)`](skrequestdelegate/requestdidfinish(_:).md) method. Locate the app receipt using the [`appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/bundle/1407276-appstorereceipturl) property. For information about validating the receipt, see [`Choosing a receipt validation technique`](choosing-a-receipt-validation-technique.md).
 
@@ -90,4 +86,4 @@ There are times when using [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.m
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skreceiptrefreshrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skreceiptrefreshrequest)*

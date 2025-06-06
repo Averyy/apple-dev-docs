@@ -40,8 +40,6 @@ An [`NSString`](nsstring.md) object can be initialized from or written to a C bu
 
 > **Note**:  An immutable string is a text string that is defined when it is created and subsequently cannot be changed. An immutable string is implemented as an array of UTF–16 code units (in other words, a text string). To create and manage an immutable string, use the [`NSString`](nsstring.md) class. To construct and manage a string that can be changed after it has been created, use [`NSMutableString`](nsmutablestring.md).
 
- An immutable string is a text string that is defined when it is created and subsequently cannot be changed. An immutable string is implemented as an array of UTF–16 code units (in other words, a text string). To create and manage an immutable string, use the [`NSString`](nsstring.md) class. To construct and manage a string that can be changed after it has been created, use [`NSMutableString`](nsmutablestring.md).
-
 The objects you create using [`NSString`](nsstring.md) and [`NSMutableString`](nsmutablestring.md) are referred to as string objects (or, when no confusion will result, merely as strings). The term C string refers to the standard `char *` type.
 
 Because of the nature of class clusters, string objects aren’t actual instances of the [`NSString`](nsstring.md) or [`NSMutableString`](nsmutablestring.md) classes but of one of their private subclasses. Although a string object’s class is private, its interface is public, as declared by these abstract superclasses, [`NSString`](nsstring.md) and [`NSMutableString`](nsmutablestring.md). The string classes adopt the [`NSCopying`](nscopying.md) and [`NSMutableCopying`](nsmutablecopying.md) protocols, making it convenient to convert a string of one type to the other.
@@ -441,7 +439,6 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [init?(coder: NSCoder)](nsstring/init(coder:).md)
 - [convenience init(format: NSString, any CVarArg...)](nsstring/init(format:_:).md)
 - [convenience init(format: NSString, locale: Locale?, any CVarArg...)](nsstring/init(format:locale:_:).md)
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsstring/init(pasteboardpropertylist:oftype:).md)
 - [convenience init(string: NSString)](nsstring/init(string:)-7xgq7.md)
 ### Instance Properties
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](nsstring/customplaygroundquicklook.md)
@@ -488,4 +485,4 @@ If the behavior you want to add supplements that of the existing class, you coul
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsstring)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsstring)*

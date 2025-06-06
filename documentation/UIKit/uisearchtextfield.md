@@ -1,6 +1,6 @@
 # UISearchTextField
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A view for displaying and editing text and search tokens.
@@ -25,8 +25,6 @@ Use a search text field to display search criteria represented as text and token
 [`UISearchBar`](uisearchbar.md) hosts a search text field, but you may also use a search text field in other roles, such as the title view of a [`UINavigationItem`](uinavigationitem.md).
 
 > **Note**:  The search field assigns text positions ([`UITextPosition`](uitextposition.md)) to tokens as well as text so that users can interact with tokens using selection gestures and keyboard input. If the current selection includes any tokens, [`selectedTextRange`](uitextinput/selectedtextrange.md) includes their positions. Use the search field’s [`textualRange`](uisearchtextfield/textualrange.md) property to access the range of just the text without the tokens.
-
- The search field assigns text positions ([`UITextPosition`](uitextposition.md)) to tokens as well as text so that users can interact with tokens using selection gestures and keyboard input. If the current selection includes any tokens, [`selectedTextRange`](uitextinput/selectedtextrange.md) includes their positions. Use the search field’s [`textualRange`](uisearchtextfield/textualrange.md) property to access the range of just the text without the tokens.
 
 Tokens can be programmatically selected by including their position in a range assigned to the [`selectedTextRange`](uitextinput/selectedtextrange.md) property.
 
@@ -117,4 +115,4 @@ Tokens can be programmatically selected by including their position in a range a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uisearchtextfield)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uisearchtextfield)*

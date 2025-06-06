@@ -17,8 +17,6 @@ The Action & Vision sample app leverages several capabilities available in Visio
 
 > **Note**: This sample code project is associated with the WWDC20 session 10099: [`Explore the Action & Vision App`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10099/).
 
-This sample code project is associated with the WWDC20 session 10099: [`Explore the Action & Vision App`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10099/).
-
 The app analyzes player performance in a game of bean bag toss. In this easy-to-learn game, you throw bean bags at a 4 x 2-foot board that has a 6-inch hole in one end. You stand 25 feet away from the center hole of the board, and score points if you toss the bean bag onto the board, and score additional points if it goes through the hole. To make gameplay more interesting, the app adds a style dimension to the scoring. It analyzes your throw and adds additional points based on your throw style, including overhand, underhand, or underleg.
 
 ![A diagram of the dimensions of the bean bag toss game. A human figure stands 25 feet from a 2 x 4-foot board. A dotted line indicates the movement of a bean bag tossed toward a 6-inch opening in the board.](https://docs-assets.developer.apple.com/published/2e1863dff96a5d5bb4598e628024d1a2/dimensions.png)
@@ -59,8 +57,6 @@ To learn more about using `VNDetectTrajectoriesRequest`, see [`Identifying Traje
 
 > **Note**: `VNDetectTrajectoriesRequest` detects multiple, concurrent trajectories, so an app needs to apply its own business logic to filter the trajectories to only those of interest. For example, the sample app knows the location of the gameboard, and it discards any trajectories that move in the opposite direction.
 
-`VNDetectTrajectoriesRequest` detects multiple, concurrent trajectories, so an app needs to apply its own business logic to filter the trajectories to only those of interest. For example, the sample app knows the location of the gameboard, and it discards any trajectories that move in the opposite direction.
-
 ##### Determine the Throw Type
 
 To determine the throw type, the app uses another custom Core ML model, one trained using the Action Classification template available in Create ML. The app’s model training used video clips of people performing overhand, underhand, and underleg throws, and also included a negative training set with players performing actions other than throwing.
@@ -72,4 +68,4 @@ To learn more about Action Classification, see [`Creating an Action Classifier M
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/building-a-feature-rich-app-for-sports-analysis)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/building-a-feature-rich-app-for-sports-analysis)*

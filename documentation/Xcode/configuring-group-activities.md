@@ -20,8 +20,6 @@ After you add the Group Activities capability, Xcode updates your target’s ent
 
 > **Note**: If you remove the Group Activities capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable Group Activities.
 
-If you remove the Group Activities capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable Group Activities.
-
 When you add the Group Activities capability, there are additional steps you must complete before your app’s users can start experiencing shared activities; for more information on these steps, see [`Defining your app’s SharePlay activities`](https://developer.apple.com/documentation/GroupActivities/defining-your-apps-shareplay-activities) and [`Joining and managing a shared activity`](https://developer.apple.com/documentation/GroupActivities/joining-and-managing-a-shared-activity).
 
 ## See Also
@@ -36,4 +34,4 @@ When you add the Group Activities capability, there are additional steps you mus
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-group-activities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-group-activities)*

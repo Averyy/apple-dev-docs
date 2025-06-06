@@ -25,8 +25,6 @@ object PassFieldContent
 
 > **Note**:  Wallet uses data detectors to add links for text shown on the back of the pass.
 
- Wallet uses data detectors to add links for text shown on the back of the pass.
-
 ## Relationships
 
 ### Inherited By
@@ -45,4 +43,4 @@ object PassFieldContent
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/passfieldcontent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/passfieldcontent)*

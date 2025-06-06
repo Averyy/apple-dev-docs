@@ -16,8 +16,6 @@ Xcode also includes several development tools to help you rapidly prototype and 
 
 > **Note**: Download the latest version of Xcode from the [`Mac App Store`](https://developer.apple.comhttps://apps.apple.com/us/app/xcode/id497799835). Download beta versions of Xcode from the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com/xcode/).
 
-Download the latest version of Xcode from the [`Mac App Store`](https://developer.apple.comhttps://apps.apple.com/us/app/xcode/id497799835). Download beta versions of Xcode from the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com/xcode/).
-
 ## Topics
 
 ### Essentials

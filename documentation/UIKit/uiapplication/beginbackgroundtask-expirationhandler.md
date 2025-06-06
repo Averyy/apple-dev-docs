@@ -1,6 +1,6 @@
 # beginBackgroundTask(expirationHandler:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Marks the start of a task that should continue if the app enters the background.
@@ -38,8 +38,6 @@ To assist with debugging, this method generates a name for the task, based on th
 This method can be safely called on a non-main thread. To extend the execution time of an app extension, use the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/1617030-performexpiringactivity) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
 
 > **Note**:  If you’re having trouble debugging your background task code, you might try using the [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method instead of this one. That method provides the same behavior but lets you specify a debugger-visible name for your task.
-
- If you’re having trouble debugging your background task code, you might try using the [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method instead of this one. That method provides the same behavior but lets you specify a debugger-visible name for your task.
 
 ## Parameters
 

@@ -162,8 +162,6 @@ extension FavoriteColor {
 
 > **Note**: You might encounter Objective-C code that uses the older `NS_STRING_ENUM` and `NS_EXTENSIBLE_STRING_ENUM` macros, which were used to group string constants. Use `NS_TYPED_ENUM` and `NS_TYPED_EXTENSIBLE_ENUM` when grouping related constants of any type, including string constants.
 
-You might encounter Objective-C code that uses the older `NS_STRING_ENUM` and `NS_EXTENSIBLE_STRING_ENUM` macros, which were used to group string constants. Use `NS_TYPED_ENUM` and `NS_TYPED_EXTENSIBLE_ENUM` when grouping related constants of any type, including string constants.
-
 ## See Also
 
 - [Designating Nullability in Objective-C APIs](designating-nullability-in-objective-c-apis.md)
@@ -180,4 +178,4 @@ You might encounter Objective-C code that uses the older `NS_STRING_ENUM` and `N
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/grouping-related-objective-c-constants)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/grouping-related-objective-c-constants)*

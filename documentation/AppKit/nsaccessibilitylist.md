@@ -1,6 +1,6 @@
 # NSAccessibilityList
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: protocol
 
 A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a list view.
@@ -21,8 +21,6 @@ Use this protocol when you want a user interface element to behave like a list�
 You can further enhance the adopting element by implementing any of the information properties or action methods that the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol declares.
 
 > **Note**:  Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary.
-
- Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary.
 
 Although the [`NSAccessibilityList`](nsaccessibilitylist.md) protocol doesn’t declare any methods, it does conform to the [`NSAccessibilityTable`](nsaccessibilitytable.md) protocol. You may need to explicitly implement methods from any of the protocols that [`NSAccessibilityList`](nsaccessibilitylist.md) conforms to.
 
@@ -46,4 +44,4 @@ Although the [`NSAccessibilityList`](nsaccessibilitylist.md) protocol doesn’t 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsaccessibilitylist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsaccessibilitylist)*

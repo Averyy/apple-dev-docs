@@ -1,6 +1,6 @@
 # seal(_:authenticating:)
 
-**Framework**: Apple CryptoKit  
+**Framework**: Cryptokit  
 **Kind**: method
 
 Encrypts the given cleartext message and attaches additional authenticated data.
@@ -29,8 +29,6 @@ The ciphertext for the recipient to decrypt.
 You can call this method multiple times to encrypt a series of messages. When using this method, you need to supply ciphertext messages to the decryption code on the receiving side in the same order as you encrypt them.
 
 > **Note**: The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
-
-The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # CKFetchShareParticipantsOperation
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 An operation that converts user identities into share participants.
@@ -27,8 +27,6 @@ Participants are a fundamental part of sharing in CloudKit. A participant provid
 You don’t create participants. Instead, create an instance of [`CKUserIdentity.LookupInfo`](ckuseridentity/lookupinfo-swift.class.md) for each user. Provide the user’s email address or phone number, and then use this operation to convert them into participants that you can add to a share. CloudKit limits the number of participants in a share to 100, and each participant must have an active iCloud account.
 
 > **Note**:  [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) provides a consistent and familiar experience for managing a share’s participants and their permissions. Only use this operation when you want to provide an app-specific approach.
-
- [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) provides a consistent and familiar experience for managing a share’s participants and their permissions. Only use this operation when you want to provide an app-specific approach.
 
 CloudKit queries iCloud for corresponding accounts as part of the operation. If it doesn’t find an account, the server updates the participant’s [`userIdentity`](ckshare/participant/useridentity.md) to reflect that by setting the [`hasiCloudAccount`](ckuseridentity/hasicloudaccount.md) property to [`false`](https://developer.apple.com/documentation/swift/false). CloudKit associates a participant with their iCloud account when they accept the share.
 
@@ -113,4 +111,4 @@ The operation calls [`shareParticipantFetchedBlock`](ckfetchshareparticipantsope
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckfetchshareparticipantsoperation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckfetchshareparticipantsoperation)*

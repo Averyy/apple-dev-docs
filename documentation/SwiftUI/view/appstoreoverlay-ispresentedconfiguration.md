@@ -1,6 +1,6 @@
 # appStoreOverlay(isPresented:configuration:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Presents a StoreKit overlay when a given condition is true.
@@ -24,8 +24,6 @@ You use `appStoreOverlay` to display an overlay that recommends another app. The
 When `isPresented` is true, the system will run `configuration` to determine how to configure the overlay. The overlay will automatically be presented over the current scene.
 
 > **Note**: SKOverlay.Configuration.
-
-SKOverlay.Configuration.
 
 ## Parameters
 

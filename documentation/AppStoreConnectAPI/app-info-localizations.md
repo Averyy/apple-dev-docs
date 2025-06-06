@@ -1,6 +1,6 @@
 # App Info Localizations
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Manage the app metadata that is localized and appears on the App Store.
 
@@ -17,8 +17,6 @@ Manage the app metadata that is localized and appears on the App Store.
 You can update localized metadata when your app is in an editable state. For more information about the metadata, see [`Localize App Store information`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-app-information/localize-app-store-information). For a list of supported languages, see [`App Store localizations`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-store-localizations).
 
 > **Note**:  The languages you add to an `appInfoLocalizations` resource only affect your app’s metadata. To add languages to your app’s binary, see [`What is localization`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/deve2bc11fab).
-
- The languages you add to an `appInfoLocalizations` resource only affect your app’s metadata. To add languages to your app’s binary, see [`What is localization`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/deve2bc11fab).
 
 ## Topics
 
@@ -63,4 +61,4 @@ You can update localized metadata when your app is in an editable state. For mor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/app-info-localizations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/app-info-localizations)*

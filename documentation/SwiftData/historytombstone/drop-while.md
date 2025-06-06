@@ -1,6 +1,6 @@
 # drop(while:)
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: method
 
 Returns a sequence by skipping the initial, consecutive elements that satisfy the given predicate.
@@ -37,8 +37,6 @@ let startingWithNegative = numbers.drop(while: { $0 > 0 })
 If `predicate` matches every element in the sequence, the result is an empty sequence.
 
 > **Note**: O(), where  is the number of elements to drop from the beginning of the sequence.
-
-O(), where  is the number of elements to drop from the beginning of the sequence.
 
 ## Parameters
 

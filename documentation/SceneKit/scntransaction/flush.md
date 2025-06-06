@@ -1,6 +1,6 @@
 # flush()
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: method
 
 Applies all changes from the current automatic transaction.
@@ -27,8 +27,6 @@ SceneKit automatically calls this method at the end of each pass through the run
 If the current transaction has any nested transactions that are still animating, SceneKit waits to commit the current transaction’s changes until those transactions complete.
 
 > **Note**:  If possible, avoid calling [`flush()`](scntransaction/flush().md) explicitly. By allowing [`flush()`](scntransaction/flush().md) to execute during the run loop, your app achieves better performance, atomic screen updates are preserved, and transactions and animations that work from transaction to transaction continue to function.
-
- If possible, avoid calling [`flush()`](scntransaction/flush().md) explicitly. By allowing [`flush()`](scntransaction/flush().md) to execute during the run loop, your app achieves better performance, atomic screen updates are preserved, and transactions and animations that work from transaction to transaction continue to function.
 
 ## See Also
 

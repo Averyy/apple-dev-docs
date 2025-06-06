@@ -25,8 +25,6 @@ By default, the intersection function table at each index is `nil`.
 
 > **Note**:  The Objective-C version of this method is [`setVertexIntersectionFunctionTables:withBufferRange:`](mtlrendercommandencoder/setvertexintersectionfunctiontables:withbufferrange:.md).
 
- The Objective-C version of this method is [`setVertexIntersectionFunctionTables:withBufferRange:`](mtlrendercommandencoder/setvertexintersectionfunctiontables:withbufferrange:.md).
-
 ## Parameters
 
 - `functionTables`: An array of   instances the command assigns to entries in the vertex shader argument table for intersection function tables.

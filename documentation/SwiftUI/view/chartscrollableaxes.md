@@ -1,6 +1,6 @@
 # chartScrollableAxes(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Configures the scrollable behavior of charts in this view.
@@ -36,8 +36,6 @@ Chart(data) {
 ```
 
 > **Note**: When scrolling is enabled along an axis, a default portion of the chart will be made visible. You can use the `chartXVisibleDomain` or `chartYVisibleDomain` modifiers to configure the visible domain.
-
-When scrolling is enabled along an axis, a default portion of the chart will be made visible. You can use the `chartXVisibleDomain` or `chartYVisibleDomain` modifiers to configure the visible domain.
 
 ## Parameters
 

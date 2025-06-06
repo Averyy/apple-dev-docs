@@ -20,8 +20,6 @@ To ensure the App Sandbox is in an enabled state, launch your macOS app using Xc
 
 > **Note**: When you use Mac Catalyst to enable your iPad app to run in macOS, Xcode automatically adds the App Sandbox and Hardened Runtime capabilities to the macOS target. For more information, see [`Creating a Mac version of your iPad app`](https://developer.apple.com/documentation/UIKit/creating-a-mac-version-of-your-ipad-app).
 
-When you use Mac Catalyst to enable your iPad app to run in macOS, Xcode automatically adds the App Sandbox and Hardened Runtime capabilities to the macOS target. For more information, see [`Creating a Mac version of your iPad app`](https://developer.apple.com/documentation/UIKit/creating-a-mac-version-of-your-ipad-app).
-
 ##### Enable Access to Restricted Resources
 
 If your app requires access to restricted or sensitive system resources, such as network connections or connected Bluetooth devices, it must include the relevant entitlements that provide access to those resources. Follow these steps to add those entitlements:
@@ -37,8 +35,6 @@ If your app requires access to restricted or sensitive system resources, such as
 Xcode updates the entitlements file of your macOS app to include the necessary entitlements and sets the value of those entitlements to `true`.
 
 > ❗ **Important**: Entitlements inform the system of your app’s intent to access the related resources. In most cases, you must still seek the user’s explicit permission before the system grants that access. See the relevant framework documentation for specific requirements.
-
-Entitlements inform the system of your app’s intent to access the related resources. In most cases, you must still seek the user’s explicit permission before the system grants that access. See the relevant framework documentation for specific requirements.
 
 The following table describes the resource access entitlements the App Sandbox supports:
 
@@ -73,8 +69,6 @@ Follow these steps to add the required entitlements:
 
 > **Note**: The User Selected File option enables access to arbitrary locations that the user chooses with AppKit’s [`NSOpenPanel`](https://developer.apple.com/documentation/AppKit/NSOpenPanel) and [`NSSavePanel`](https://developer.apple.com/documentation/AppKit/NSSavePanel).
 
-The User Selected File option enables access to arbitrary locations that the user chooses with AppKit’s [`NSOpenPanel`](https://developer.apple.com/documentation/AppKit/NSOpenPanel) and [`NSSavePanel`](https://developer.apple.com/documentation/AppKit/NSSavePanel).
-
 After you configure the necessary file access, Xcode updates your app’s entitlements file to include the corresponding entitlements and sets the value of those entitlements to `true`.
 
 ## See Also
@@ -87,4 +81,4 @@ After you configure the necessary file access, Xcode updates your app’s entitl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-the-macos-app-sandbox)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-the-macos-app-sandbox)*

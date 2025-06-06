@@ -1,6 +1,6 @@
 # NSPreviewRepresentableActivityItem
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: protocol
 
 An interface you adopt in custom objects that you want to share using the macOS share sheet.
@@ -19,8 +19,6 @@ protocol NSPreviewRepresentableActivityItem : NSObjectProtocol
 Adopt the [`NSPreviewRepresentableActivityItem`](nspreviewrepresentableactivityitem.md) interface in custom types your app makes available for sharing. Use this protocol to specify the item itself and a title and image the share sheet can use to create a preview for your item. To share the item from your app, initialize the [`NSSharingServicePicker`](nssharingservicepicker.md) object with the object that adopts this protocol.
 
 > **Note**:  If your data consists of standard types like strings or images, use an [`NSPreviewRepresentingActivityItem`](nspreviewrepresentingactivityitem.md) object to specify metadata for those types. If your data consists of URLs, pass them directly to the sharing service picker instead of creating a custom preview item.
-
- If your data consists of standard types like strings or images, use an [`NSPreviewRepresentingActivityItem`](nspreviewrepresentingactivityitem.md) object to specify metadata for those types. If your data consists of URLs, pass them directly to the sharing service picker instead of creating a custom preview item.
 
 ## Topics
 
@@ -60,4 +58,4 @@ Adopt the [`NSPreviewRepresentableActivityItem`](nspreviewrepresentableactivityi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nspreviewrepresentableactivityitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nspreviewrepresentableactivityitem)*

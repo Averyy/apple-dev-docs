@@ -1,6 +1,6 @@
 # searchTemplate
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Searches for a media item based on user input.
 
@@ -32,8 +32,6 @@ The following listing shows the main elements of the `searchTemplate` element in
 ```
 
 > **Note**: The `shelf` element can be replaced with a `collectionList` or `list` element to change the look of the search results.
-
-The `shelf` element can be replaced with a `collectionList` or `list` element to change the look of the search results.
 
 ###### Element Descriptions
 
@@ -122,4 +120,4 @@ The following listing shows the output for the above example:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/searchtemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/searchtemplate)*

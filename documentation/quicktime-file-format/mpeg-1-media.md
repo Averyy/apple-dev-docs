@@ -1,6 +1,6 @@
 # MPEG-1 media
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Store MPEG-1 video streams, MPEG-1, layer 2 audio streams, and multiplexed MPEG-1 audio and video streams in QuickTime movies.
 
@@ -15,8 +15,6 @@ The MPEG-1 sample description uses the standard sample description header, as de
 The data format field in the sample description is always set to `'MPEG'`. The MPEG-1 media handler adds no additional fields to the sample description.
 
 > **Note**: This data format is not used for MPEG-1, layer 3 audio, however (see MPEG-1 Layer 3 (MP3) Codecs in [`Sound sample data`](sound_sample_data.md)).
-
-This data format is not used for MPEG-1, layer 3 audio, however (see MPEG-1 Layer 3 (MP3) Codecs in [`Sound sample data`](sound_sample_data.md)).
 
 #### Mpeg 1 Sample Data
 

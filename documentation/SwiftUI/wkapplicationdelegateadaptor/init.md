@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: init
 
 Creates an `WKApplicationDelegateAdaptor` using a WatchKit Application Delegate.
@@ -20,8 +20,6 @@ Creates an `WKApplicationDelegateAdaptor` using a WatchKit Application Delegate.
 The framework will initialize the provided delegate and manage its lifetime, calling out to it when appropriate after performing its own work.
 
 > **Note**: The instantiated delegate will be placed in the Environment and may be accessed by using the `@Environment` property wrapper in the view hierarchy.
-
-The instantiated delegate will be placed in the Environment and may be accessed by using the `@Environment` property wrapper in the view hierarchy.
 
 
 ---

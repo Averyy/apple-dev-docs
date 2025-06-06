@@ -1,6 +1,6 @@
 # Bringing Photos picker to your SwiftUI app
 
-**Framework**: PhotoKit
+**Framework**: Photokit
 
 Select media assets by using a Photos picker view that SwiftUI provides.
 
@@ -16,8 +16,6 @@ Select media assets by using a Photos picker view that SwiftUI provides.
 This sample shows how to use the SwiftUI Photos picker to browse and select a photo from your photo library. The app displays an interface that allows you to fill in customer profile details, and includes a button to select a photo from the Photos library. The sample explores how to retrieve a SwiftUI image by using [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) — a new SwiftUI protocol you use to move data.
 
 > **Note**: This sample code project is associated with WWDC22 session [`10023: What’s new in the Photos picker`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10023).
-
-This sample code project is associated with WWDC22 session [`10023: What’s new in the Photos picker`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10023).
 
 ##### Configure the Sample Code Project
 
@@ -128,4 +126,4 @@ When handling many items at the same time, or large assets, use [`FileRepresenta
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/photokit/bringing-photos-picker-to-your-swiftui-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PhotoKit/bringing-photos-picker-to-your-swiftui-app)*

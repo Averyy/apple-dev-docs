@@ -1,6 +1,6 @@
 # SCNProgram
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: class
 
 A complete Metal or OpenGL shader program that replaces SceneKit’s rendering of a geometry or material.
@@ -26,8 +26,6 @@ You use an [`SCNProgram`](scnprogram.md) object to perform custom rendering usin
 Use a program object when you want to completely replace SceneKit’s rendering. Your shaders take input from SceneKit and become responsible for all transform, lighting, and shading effects that you want to produce.
 
 > **Note**:  If instead you want to simply modify or extend SceneKit’s rendering, use the [`shaderModifiers`](scnshadable/shadermodifiers.md) property of a geometry or material to insert snippets of Metal or GLSL source code into SceneKit’s built-in shader programs. For details on creating and using shader modifiers, see [`SCNShadable`](scnshadable.md).
-
- If instead you want to simply modify or extend SceneKit’s rendering, use the [`shaderModifiers`](scnshadable/shadermodifiers.md) property of a geometry or material to insert snippets of Metal or GLSL source code into SceneKit’s built-in shader programs. For details on creating and using shader modifiers, see [`SCNShadable`](scnshadable.md).
 
 To use a custom shader program in SceneKit, create an [`SCNProgram`](scnprogram.md) object and optionally specify its [`delegate`](scnprogram/delegate.md) object for handling errors. Next, provide shaders:
 
@@ -252,4 +250,4 @@ Custom uniform variables. To provide values for your own custom uniform variable
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnprogram)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SceneKit/scnprogram)*

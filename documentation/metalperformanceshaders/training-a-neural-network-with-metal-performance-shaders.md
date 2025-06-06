@@ -1,6 +1,6 @@
 # Training a Neural Network with Metal Performance Shaders
 
-**Framework**: Metal Performance Shaders
+**Framework**: Metalperformanceshaders
 
 Use an MPS neural network graph to train a simple neural network digit classifier.
 
@@ -13,8 +13,6 @@ Use an MPS neural network graph to train a simple neural network digit classifie
 The sample code describes how to write a neural network using [`MPSNNGraph`](mpsnngraph.md) and how to train the network to recognize a digit in an image. The sample trains a network for 300 iterations on a batch size of 40 images. You’ll see how to set up training of weights and biases using data sources, including how to initialize and update weights. You’ll also see how to validate the network using a test dataset.
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`614: Metal for Machine Learning`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/614/).
-
-This sample code project is associated with WWDC 2019 session [`614: Metal for Machine Learning`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/614/).
 
 You can use any dataset of your choice to train this model.  The following dataset works well for this purpose:
 

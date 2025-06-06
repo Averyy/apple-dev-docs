@@ -116,7 +116,7 @@ except:
     " 2>/dev/null || echo "0")
     
     if [ "$DOC_COUNT" -gt 0 ]; then
-        echo -e "${GREEN}✓ Vector database ready with $DOC_COUNT documents${NC}"
+        echo -e "${GREEN}✓ Vector database ready with $DOC_COUNT documents (expect ~278K for full Apple docs)${NC}"
     else
         echo -e "${BLUE}Vector database exists but is empty${NC}"
         echo -e "${BLUE}The scheduler will build it at midnight or run:${NC}"

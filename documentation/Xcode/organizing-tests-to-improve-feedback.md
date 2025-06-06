@@ -26,8 +26,6 @@ In Xcode 16 and later, you can use tags in your test plans to specify which test
 
 > **Note**: Tags aren’t a replacement for test suites. Suites impose hierarchical structure on test functions at the source level, while tags help you associate tests from different files, suites, and targets.
 
-Tags aren’t a replacement for test suites. Suites impose hierarchical structure on test functions at the source level, while tags help you associate tests from different files, suites, and targets.
-
 ##### Create Schemes to Associate Test Targets with Products
 
 A scheme instructs Xcode to use specific targets when you invoke the building, testing, running, analyzing, profiling, and archiving actions, shown in the figure below. In the test action for a scheme, include the target for the product under test along with the test targets that contain tests relevant to that product.
@@ -154,4 +152,4 @@ To run the tests in the “Performance Tests” test plan, using all configurati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/organizing-tests-to-improve-feedback)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/organizing-tests-to-improve-feedback)*

@@ -26,8 +26,6 @@ The buffer slice’s memory must be initialized or its `Element` must be a trivi
 
 > **Note**: All buffer elements must already be initialized.
 
-All buffer elements must already be initialized.
-
 ## Parameters
 
 - `repeatedValue`: The value used when updating this pointer’s memory.

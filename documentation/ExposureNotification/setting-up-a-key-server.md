@@ -1,6 +1,6 @@
 # Setting Up a Key Server
 
-**Framework**: Exposure Notification
+**Framework**: Exposurenotification
 
 Ensure that your server meets the requirements for supporting Exposure Notifications.
 
@@ -18,8 +18,6 @@ If providing a client app, a Health Authority can choose how to implement these 
 Google has created an [`implementation of a key server `](https://developer.apple.comhttps://github.com/google/exposure-notifications-server/)that you can use as a reference, or as a starting point for creating your own key server.
 
 > **Note**:  Diagnosis keys are temporary exposure keys for individuals who have had a positive diagnosis of COVID-19.
-
- Diagnosis keys are temporary exposure keys for individuals who have had a positive diagnosis of COVID-19.
 
 Before you begin setting up your key server, [`request an Exposure Notification Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/exposure-notification-entitlement). Once your request is accepted, you’ll be asked to provide information that clients will use to authenticate the data they receive from your server, such as its public key.
 
@@ -55,8 +53,6 @@ A key server can send multiple zip archives to the same client, but each archive
 For best results, zip archives should be no larger than 16 MB and contain no more than 750,000 keys.
 
 > **Note**:  While both the key and signature file specifications support multi-file batches, not all exposure notification clients accept them. To ensure that all clients can accept your key server’s diagnosis keys, always set `batch_num` and `batch_size` to a value of 1.
-
- While both the key and signature file specifications support multi-file batches, not all exposure notification clients accept them. To ensure that all clients can accept your key server’s diagnosis keys, always set `batch_num` and `batch_size` to a value of 1.
 
 The `.bin` file in the zip archive is a binary file that begins with a 16-byte header that contains `​EK Export v1`​  in UTF-8 encoding, right-padded with whitespace characters. This header represents the current version of the exposure-key binary format. The header is followed by a serialized ​protocol buffer​ message named `TemporaryExposureKeyExport`,​ which uses the following protocol buffer definition:
 
@@ -190,4 +186,4 @@ To calculate the `signature` data inside a `TEKSignature` message, start by gene
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/setting-up-a-key-server)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/setting-up-a-key-server)*

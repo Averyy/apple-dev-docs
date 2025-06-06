@@ -1,6 +1,6 @@
 # Counting human body action repetitions in a live video feed
 
-**Framework**: Create ML Components
+**Framework**: Createmlcomponents
 
 Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 
@@ -12,8 +12,6 @@ Use Create ML Components to analyze a series of video frames and count a person�
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [`110332: What’s new in Create ML`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110332/).
-
-This sample code project is associated with WWDC22 session [`110332: What’s new in Create ML`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110332/).
 
 This sample app counts a person’s repetitive or periodic body movements () by analyzing a series of video frames and making a prediction with a human body action repetition counter. The counter in this sample can count arbitrary body moves that occur at moderate speed, such as jumping jacks, dance spins, and waving arms.
 
@@ -143,8 +141,6 @@ The goal of this strategy is to consistently select the same person’s pose fro
 ![A flow diagram that illustrates two detected poses in the same frame passing into a pose selector, where the default strategy selects the most-prominent pose, and the output is a single pose. ](https://docs-assets.developer.apple.com/published/e848533bc0/renderedDark2x-1658258329.png)
 
 > ❗ **Important**: Get the most accurate predictions by using whatever strategy best tracks a person from frame to frame.
-
-Get the most accurate predictions by using whatever strategy best tracks a person from frame to frame.
 
 ##### 4065205
 

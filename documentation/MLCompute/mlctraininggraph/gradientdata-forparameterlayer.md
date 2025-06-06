@@ -1,6 +1,6 @@
 # gradientData(forParameter:layer:)
 
-**Framework**: ML Compute  
+**Framework**: Mlcompute  
 **Kind**: method
 
 Gets the gradient data for the trainable parameter and associated layer you specify.
@@ -34,8 +34,6 @@ The layer must be an instance one of the following types:
 - [`MLCLayerNormalizationLayer`](mlclayernormalizationlayer.md)
 
 > **Note**:  This method returns `nil` if the layer isn’t trainable or you didn’t execute the training graph with separate calls to forward and gradient passes.
-
- This method returns `nil` if the layer isn’t trainable or you didn’t execute the training graph with separate calls to forward and gradient passes.
 
 ## Parameters
 

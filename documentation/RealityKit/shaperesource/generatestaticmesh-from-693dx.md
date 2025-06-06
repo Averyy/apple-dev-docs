@@ -1,6 +1,6 @@
 # generateStaticMesh(from:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Creates a mesh-based collision shape derived from an ARKit scene-understanding mesh anchor.
@@ -29,8 +29,6 @@ The returned `ShapeResource` can only be used under the following circumstances:
 In other words, the returned shape can only be used for static world geometry.
 
 > **Note**: Generating a shape resource from the AR mesh takes time, because the input mesh needs to be preprocessed (“cooked”) by the physics engine before it can be used.  This function is marked `async` because ideally this precomputation should occur in the background.  For example, when calling from non-`async` code, you can use Swift’s `Task` API to assign a priority (see the example below).
-
-Generating a shape resource from the AR mesh takes time, because the input mesh needs to be preprocessed (“cooked”) by the physics engine before it can be used.  This function is marked `async` because ideally this precomputation should occur in the background.  For example, when calling from non-`async` code, you can use Swift’s `Task` API to assign a priority (see the example below).
 
 Below is example usage of this function, assumed to be called from a non-async block:
 

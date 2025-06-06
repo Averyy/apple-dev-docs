@@ -53,8 +53,6 @@ Preview canvas supports the following variations:
 
 > **Note**: Because variant mode shows all the values for a given device setting, you can override what variant mode displays by making further changes in Device settings. For example, to see how your view appears in different sizes of text in Dark Mode, select the Dynamic Type Variants option from Variant mode, and then enable the Dark Mode color scheme in Device settings.
 
-Because variant mode shows all the values for a given device setting, you can override what variant mode displays by making further changes in Device settings. For example, to see how your view appears in different sizes of text in Dark Mode, select the Dynamic Type Variants option from Variant mode, and then enable the Dark Mode color scheme in Device settings.
-
 ##### Preview on a Specific Device
 
 To see how your view displays on a specific device, select the Preview destination picker option, and then select the device you want your preview to display. When you do, Xcode displays a preview of your view on that device.
@@ -108,8 +106,6 @@ struct PlayButton: View {
 Tagging a dynamic property with the `Previewable` macro gets rid of the need to create wrapper views in previews.
 
 > **Note**: [`Previewable()`](https://developer.apple.com/documentation/SwiftUI/Previewable()) is a SwiftUI only macro and doesn’t apply to UIKit or AppKit previews.
-
-[`Previewable()`](https://developer.apple.com/documentation/SwiftUI/Previewable()) is a SwiftUI only macro and doesn’t apply to UIKit or AppKit previews.
 
 ##### Make Complex Objects Reusable with a Preview Modifier
 
@@ -228,4 +224,4 @@ Add items to the Development Assets of a project target as follows:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/previewing-your-apps-interface-in-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/previewing-your-apps-interface-in-xcode)*

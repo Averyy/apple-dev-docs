@@ -1,6 +1,6 @@
 # Managing model data in your app
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Create connections between your app’s data model and views.
 
@@ -20,8 +20,6 @@ SwiftUI helps keep your app’s UI up to date with changes made to the data than
 
 > **Note**: [`Observation`](https://developer.apple.com/documentation/Observation) support in SwiftUI is available starting with iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10. For information about adopting Observation in existing apps, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
 
-[`Observation`](https://developer.apple.com/documentation/Observation) support in SwiftUI is available starting with iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10. For information about adopting Observation in existing apps, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
-
 ##### Make Model Data Observable
 
 To make data changes visible to SwiftUI, apply the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro to your data model. This macro generates code that adds observation support to your data model at compile time, keeping your data model code focused on the properties that store data. For example, the following code defines a data model for books:
@@ -35,8 +33,6 @@ To make data changes visible to SwiftUI, apply the [`Observable()`](https://deve
 ```
 
 > ❗ **Important**: The [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro, in addition to adding observation functionality, also conforms your data model type to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, which serves as a signal to other APIs that your type supports observation. Don’t apply the `Observable` protocol by itself to your data model type, since that alone doesn’t add any observation functionality. Instead, always use the `Observable` macro when adding observation support to your type.
-
-The [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro, in addition to adding observation functionality, also conforms your data model type to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, which serves as a signal to other APIs that your type supports observation. Don’t apply the `Observable` protocol by itself to your data model type, since that alone doesn’t add any observation functionality. Instead, always use the `Observable` macro when adding observation support to your type.
 
 ##### Observe Model Data in a View
 
@@ -108,8 +104,6 @@ struct LibraryView: View {
 However, `LibraryView` doesn’t form a dependency on the property `title` because the view’s [`body`](view/body-8kl5o.md) doesn’t read it directly. The view stores the [`List`](list.md) content closure as an `@escaping` closure that SwiftUI calls when lazily creating list items before they appear on the screen. This means that instead of `LibraryView` depending on a book’s `title`, each [`Text`](text.md) item of the list depends on `title`. Any changes to a `title` updates only the individual [`Text`](text.md) representing the book and not the others.
 
 > **Note**: Observation tracks changes to any observable property that appears in the execution scope of a view’s [`body`](view/body-8kl5o.md) property.
-
-Observation tracks changes to any observable property that appears in the execution scope of a view’s [`body`](view/body-8kl5o.md) property.
 
 You can also share an observable model data object with another view. The receiving view forms a dependency if it reads any properties of the object in the its [`body`](view/body-8kl5o.md). For example, in the following code `LibraryView` shares an instance of `Book` with `BookView`, and `BookView` displays the book’s `title`. If the book’s `title` changes, SwiftUI updates only `BookView`, and not `LibraryView`, because only `BookView` reads the `title` property.
 
@@ -404,4 +398,4 @@ The `@Bindable` variable `book` provides a binding that connects [`TextField`](t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/managing-model-data-in-your-app)*

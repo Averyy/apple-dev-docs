@@ -33,8 +33,6 @@ print(streets[1])
 
 > **Note**: Reading an element from an array is O(1). Writing is O(1) unless the array’s storage is shared with another array or uses a bridged `NSArray` instance as its storage, in which case writing is O(), where  is the length of the array.
 
-Reading an element from an array is O(1). Writing is O(1) unless the array’s storage is shared with another array or uses a bridged `NSArray` instance as its storage, in which case writing is O(), where  is the length of the array.
-
 ## Parameters
 
 - `index`: The position of the element to access.   must be   greater than or equal to   and less than  .

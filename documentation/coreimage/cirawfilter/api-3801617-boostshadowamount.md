@@ -1,6 +1,6 @@
 # boostShadowAmount
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: instp
 
 A value that indicates the amount to boost the shadow areas of the image.
@@ -24,8 +24,6 @@ var boostShadowAmount: Float { get set }
 Use this value to lighten details in shadows. The value should be in the range of `0...2`. The default value is `1`. A value less than `1` darkens the shadows, and a value greater than `1` lightens the shadows.
 
 > **Note**: Setting this value has no effect if the [`boostAmount`](cirawfilter/3801616-boostamount.md) is `0`.
-
-Setting this value has no effect if the [`boostAmount`](cirawfilter/3801616-boostamount.md) is `0`.
 
 ## See Also
 

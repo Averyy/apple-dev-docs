@@ -1,6 +1,6 @@
 # Metadata header atom ('mhdr')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that holds the integer value for the next unique item identifier to assign.
@@ -13,15 +13,11 @@ To make the assignment of unique item identifiers more efficient, the metadata a
 
 > ❗ **Important**: The metadata header atom must exist if there are metadata item atoms containing an item information atom indicating the item’s unique ID.
 
-The metadata header atom must exist if there are metadata item atoms containing an item information atom indicating the item’s unique ID.
-
 Upon assigning the identifier to a metadata item, if the value of the `nextItemID` field is less than `0xFFFFFFFF`, it should be incremented to the next unused value. If the value of `nextItemID` is equal to `0xFFFFFFFF`, it should not be changed: in that case, a search for an unused item identifier value in the range from `0` to `0xFFFFFFFF` is needed for all additions.
 
 The metadata header atom is a full atom with an atom type of `‘mhdr’`.
 
 > **Note**: If the last metadata item with an item information atom is removed and value of `nextItemID` is `0xFFFFFFFF`, an implementation may reset the metadata header atom’s `nextItemID` value to `0` so that new assignments are again efficient (that is, they do not require a search for unused identifiers).
-
-If the last metadata item with an item information atom is removed and value of `nextItemID` is `0xFFFFFFFF`, an implementation may reset the metadata header atom’s `nextItemID` value to `0` so that new assignments are again efficient (that is, they do not require a search for unused identifiers).
 
 ## Topics
 

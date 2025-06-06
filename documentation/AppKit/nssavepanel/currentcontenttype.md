@@ -1,6 +1,6 @@
 # currentContentType
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 `NSSavePanel`:The current type. If set to `nil`, resets to the first allowed content type. Returns `nil` if `allowedContentTypes` is empty. `NSOpenPanel`: Not used.
@@ -19,9 +19,7 @@ var currentContentType: UTType? { get set }
 
 > **Note**: Asserts that `currentContentType` conforms to `UTTypeData` or `UTTypeDirectory`.
 
-Asserts that `currentContentType` conforms to `UTTypeData` or `UTTypeDirectory`.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nssavepanel/currentcontenttype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nssavepanel/currentcontenttype)*

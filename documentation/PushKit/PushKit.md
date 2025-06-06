@@ -1,6 +1,6 @@
 # PushKit
 
-**Framework**: PushKit  
+**Framework**: Pushkit  
 **Kind**: module
 
 Respond to push notifications related to your app’s complications, file providers, and VoIP services.
@@ -22,8 +22,6 @@ To receive PushKit notifications, your app creates a [`PKPushRegistry`](pkpushre
 For information about how to configure your server to work with APNs, see [`Setting up a remote notification server`](https://developer.apple.com/documentation/UserNotifications/setting-up-a-remote-notification-server).
 
 > **Note**: PushKit doesn’t support some special use cases in which access to Apple Push Notification service (APNs) isn’t possible. For information about when you might need to support these cases, see [`iOS 10 and the Legacy VoIP Architecture`](https://developer.apple.comhttps://developer.apple.com/library/archive/qa/qa1938/_index.html#//apple_ref/doc/uid/DTS40017564).
-
-PushKit doesn’t support some special use cases in which access to Apple Push Notification service (APNs) isn’t possible. For information about when you might need to support these cases, see [`iOS 10 and the Legacy VoIP Architecture`](https://developer.apple.comhttps://developer.apple.com/library/archive/qa/qa1938/_index.html#//apple_ref/doc/uid/DTS40017564).
 
 ## Topics
 

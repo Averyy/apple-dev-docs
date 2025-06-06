@@ -1,6 +1,6 @@
 # numberOfRows(in:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Returns the number of records managed for `aTableView` by the data source object.
@@ -26,8 +26,6 @@ An instance of [`NSTableView`](nstableview.md) uses this method to determine how
 Both view-based table views and cell-based table views must implement this method.
 
 > **Note**:  This method is mandatory unless your application is using Cocoa bindings for providing data to the table view.
-
- This method is mandatory unless your application is using Cocoa bindings for providing data to the table view.
 
 ## Parameters
 

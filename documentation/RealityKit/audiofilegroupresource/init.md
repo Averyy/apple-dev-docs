@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: init
 
 Creates a group resource from an array of audio file resources.
@@ -24,8 +24,6 @@ Creates a group resource from an array of audio file resources.
 An [`AudioFileGroupResource`](audiofilegroupresource.md) provides a single, random element from its collection of [`AudioFileResource`](audiofileresource.md) objects each time [`play()`](audioplaybackcontroller/play().md) is called on the [`AudioPlaybackController`](audioplaybackcontroller.md) on which it is prepared.
 
 > **Note**: An error if the provided array is empty or if the underlying audio assets do not have matching channel layouts.
-
-An error if the provided array is empty or if the underlying audio assets do not have matching channel layouts.
 
 ## See Also
 

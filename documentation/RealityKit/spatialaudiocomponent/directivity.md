@@ -1,6 +1,6 @@
 # directivity
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 The radiation pattern for sound that an entity emits.
@@ -21,8 +21,6 @@ var directivity: Audio.Directivity
 #### Discussion
 
 > **Note**: You can’t update the `directivity` property dynamically. Set it before you prepare or play an audio resource on an entity.
-
-You can’t update the `directivity` property dynamically. Set it before you prepare or play an audio resource on an entity.
 
 
 ---

@@ -18,8 +18,6 @@ Use Xcode or [`App Store Connect`](https://developer.apple.comhtts://appstorecon
 
 > **Note**: Depending on your team’s Slack workspace settings, you may need to ask your team’s Slack administrator to connect Xcode Cloud to Slack. For more information, see [`Install the Slack app for Xcode Cloud using App Store Connect`](connecting-xcode-cloud-to-slack#Install-the-Slack-app-for-Xcode-Cloud-using-App-Store-Connect.md).
 
-Depending on your team’s Slack workspace settings, you may need to ask your team’s Slack administrator to connect Xcode Cloud to Slack. For more information, see [`Install the Slack app for Xcode Cloud using App Store Connect`](connecting-xcode-cloud-to-slack#Install-the-Slack-app-for-Xcode-Cloud-using-App-Store-Connect.md).
-
 ##### Install the Slack App for Xcode Cloud Using Xcode
 
 To connect Xcode Cloud to Slack, you’ll need to install the Slack app Apple provides into your Slack workspace. The app manages access to your team’s Slack workspace.
@@ -35,8 +33,6 @@ To install the Slack app using Xcode:
 7. Click Allow to install the app into your Slack workspace. This takes you to Xcode where you can now configure the Notify post-action to send build notifications to your team’s Slack channels as described in [`Choose a Slack channel`](connecting-xcode-cloud-to-slack#Choose-a-Slack-channel.md).
 
 > 💡 **Tip**: Configure Xcode Cloud to send build notifications to yourself as direct messages (DMs) in Slack. Navigate to your account in App Store Connect, select the Xcode Cloud tab, choose Notifications in the sidebar, and select the checkbox next to Slack.
-
-Configure Xcode Cloud to send build notifications to yourself as direct messages (DMs) in Slack. Navigate to your account in App Store Connect, select the Xcode Cloud tab, choose Notifications in the sidebar, and select the checkbox next to Slack.
 
 ##### Install the Slack App for Xcode Cloud Using App Store Connect
 
@@ -82,8 +78,6 @@ To configure a workflow to send a build notification to a Slack channel:
 
 > **Note**: If you configure Xcode Cloud to send build status notifications to a private Slack channel, Xcode Cloud redacts its name for team members who aren’t members of the private channel.
 
-If you configure Xcode Cloud to send build status notifications to a private Slack channel, Xcode Cloud redacts its name for team members who aren’t members of the private channel.
-
 ## See Also
 
 - [Configuring webhooks in Xcode Cloud](configuring-webhooks-in-xcode-cloud.md)
@@ -94,4 +88,4 @@ If you configure Xcode Cloud to send build status notifications to a private Sla
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/connecting-xcode-cloud-to-slack)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/connecting-xcode-cloud-to-slack)*

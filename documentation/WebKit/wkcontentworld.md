@@ -32,8 +32,6 @@ Use the methods and properties of this class to fetch the content world you need
 
 > **Note**:  The content world doesn’t apply to the current document or DOM of a webpage. Changes you make to the DOM are visible to all script code, regardless of content world. The content world affects only references to other JavaScript variables.
 
- The content world doesn’t apply to the current document or DOM of a webpage. Changes you make to the DOM are visible to all script code, regardless of content world. The content world affects only references to other JavaScript variables.
-
 ## Topics
 
 ### Getting the Default Content World
@@ -77,4 +75,4 @@ Use the methods and properties of this class to fetch the content world you need
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/webkit/wkcontentworld)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/wkcontentworld)*

@@ -1,6 +1,6 @@
 # Integrating AirPlay for Long-Form Video Apps
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Integrate AirPlay features and implement a dedicated external playback experience by preparing the routing system for long-form video playback.
 
@@ -13,8 +13,6 @@ Integrate AirPlay features and implement a dedicated external playback experienc
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`507: Best Practices for 3rd Party AirPlay`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/507/).
 
-This sample code project is associated with WWDC 2019 session [`507: Best Practices for 3rd Party AirPlay`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/507/).
-
 ## See Also
 
 - [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
@@ -25,4 +23,4 @@ This sample code project is associated with WWDC 2019 session [`507: Best Practi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/integrating-airplay-for-long-form-video-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/integrating-airplay-for-long-form-video-apps)*

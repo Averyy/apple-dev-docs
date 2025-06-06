@@ -1,6 +1,6 @@
 # phase
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 Describes the phase of results. In other words, whether this batch of items represents an intermediate set of results–and more are coming, or whether these results are complete/final. Defaults to `.final`.
@@ -18,11 +18,7 @@ var phase: NSSuggestionItemResponse<SuggestionItemType>.Phase
 
 > **Note**: This controls whether or not a indeterminate spinner appears by the control and suggestions menu to indicate to the user that there may be any/more/different/updated suggestions coming.
 
-This controls whether or not a indeterminate spinner appears by the control and suggestions menu to indicate to the user that there may be any/more/different/updated suggestions coming.
-
 > **Note**: Once a final set of results have been provided, the control will ignore subsequent provisions until the search request changes.
-
-Once a final set of results have been provided, the control will ignore subsequent provisions until the search request changes.
 
 
 ---

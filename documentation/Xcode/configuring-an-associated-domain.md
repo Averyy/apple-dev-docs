@@ -16,8 +16,6 @@ If not already present, Xcode updates your target’s entitlements file to inclu
 
 > **Note**: If you later remove the Associated Domains capability in Xcode, you must manually update your App ID’s configuration in your developer account to fully disable the feature.
 
-If you later remove the Associated Domains capability in Xcode, you must manually update your App ID’s configuration in your developer account to fully disable the feature.
-
 ##### Define a Service and Its Associated Domain
 
 When you want your app and one or more of your websites to interact using predefined services, define an associated domain by performing the following steps. Xcode automatically updates the `com.apple.developer.associated-domains` array in your target’s entitlements file to include those you define.
@@ -40,8 +38,6 @@ Update the placeholder to contain the service your app supports and its associat
 Only include the top-level domain and, where necessary, the subdomain; don’t include path and query components, or a trailing slash.
 
 > 💡 **Tip**: For services other than App Clips, prefix a domain with `*.` to include all of its subdomains.
-
-For services other than App Clips, prefix a domain with `*.` to include all of its subdomains.
 
 The following table describes the services that associated domains support:
 
@@ -85,8 +81,6 @@ The following table describes the alternate modes that associated domains suppor
 
 > ❗ **Important**: Only use alternate mode during development; you must remove the query string from the associated domains before you submit your app to the App Store.
 
-Only use alternate mode during development; you must remove the query string from the associated domains before you submit your app to the App Store.
-
 ## See Also
 
 - [Configuring app groups](configuring-app-groups.md)
@@ -97,4 +91,4 @@ Only use alternate mode during development; you must remove the query string fro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-an-associated-domain)*

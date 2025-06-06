@@ -1,6 +1,6 @@
 # matchesOnlyOnBestFittingAxis
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 A Boolean value that indicates whether the image matches only on the best fitting axis.
@@ -24,9 +24,7 @@ With the addition of 2x assets these apps are finding this policy displays the 2
 
 > **Note**:  It is still preferable to use the [`NSDrawThreePartImage(_:_:_:_:_:_:_:_:)`](nsdrawthreepartimage(_:_:_:_:_:_:_:_:).md) and [`NSDrawNinePartImage(_:_:_:_:_:_:_:_:_:_:_:_:_:)`](nsdrawninepartimage(_:_:_:_:_:_:_:_:_:_:_:_:_:).md), functions when possible.
 
- It is still preferable to use the [`NSDrawThreePartImage(_:_:_:_:_:_:_:_:)`](nsdrawthreepartimage(_:_:_:_:_:_:_:_:).md) and [`NSDrawNinePartImage(_:_:_:_:_:_:_:_:_:_:_:_:_:)`](nsdrawninepartimage(_:_:_:_:_:_:_:_:_:_:_:_:_:).md), functions when possible.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsimage/matchesonlyonbestfittingaxis)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsimage/matchesonlyonbestfittingaxis)*

@@ -1,6 +1,6 @@
 # append(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Adds an element to the end of the collection.
@@ -32,8 +32,6 @@ print(numbers)
 ```
 
 > **Note**: O(1) on average, over many calls to `append(_:)` on the same collection.
-
-O(1) on average, over many calls to `append(_:)` on the same collection.
 
 ## Parameters
 

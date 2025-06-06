@@ -1,6 +1,6 @@
 # sourceIdentifier
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: property
 
 A four-digit integer that ad networks define to represent the ad campaign.
@@ -29,8 +29,6 @@ The [`sourceIdentifier`](skadimpression/sourceidentifier.md) key is available fo
 Ad networks and developers define the meaning of the hierarchical source identifier. This integer can have up to four digits. You can encode information about your advertisement in each set of digits; you may receive two, three, or all four digits of the [`sourceIdentifier`](skadimpression/sourceidentifier.md) in the first winning postback, depending on the ad impression’s postback data tier. For more information about the value you may get in the postback, see [`Receiving postbacks in multiple conversion windows`](receiving-postbacks-in-multiple-conversion-windows.md).
 
 > **Note**:  An install-validation postback represents this integer as a string in its `source-identifier` parameter. For more details about the parameters of an install-validation postback, see [`Identifying the parameters in install-validation postbacks`](identifying-the-parameters-in-install-validation-postbacks.md).
-
- An install-validation postback represents this integer as a string in its `source-identifier` parameter. For more details about the parameters of an install-validation postback, see [`Identifying the parameters in install-validation postbacks`](identifying-the-parameters-in-install-validation-postbacks.md).
 
 ## See Also
 

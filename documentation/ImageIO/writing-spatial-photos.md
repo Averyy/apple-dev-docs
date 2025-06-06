@@ -1,6 +1,6 @@
 # Writing spatial photos
 
-**Framework**: Image I/O
+**Framework**: Imageio
 
 Create spatial photos for visionOS by packaging a pair of left- and right-eye images as a stereo HEIC file with related spatial metadata.
 
@@ -17,8 +17,6 @@ To learn more about why you might want to package a pair of stereo images as a s
 This sample app demonstrates how to use [`Image I/O`](ImageIO.md) APIs to convert two separate images into a spatial photo, saving the output as a HEIC file. The app’s `SpatialPhotoConverter` class performs this conversion process.
 
 > **Note**: This sample app is a macOS command-line application, but you can also perform the spatial photo conversion process on other Apple platforms such as visionOS and iOS.
-
-This sample app is a macOS command-line application, but you can also perform the spatial photo conversion process on other Apple platforms such as visionOS and iOS.
 
 ##### Configure the Sample Code Project
 
@@ -77,8 +75,6 @@ guard leftImage.width == rightImage.width, leftImage.height == rightImage.height
 
 > ❗ **Important**: The left- and right-eye images in a spatial photo must have the same pixel size.
 
-The left- and right-eye images in a spatial photo must have the same pixel size.
-
 ##### Define an Extrinsic Position for Each Image
 
 The app converts the provided baseline distance from millimeters to meters.
@@ -96,8 +92,6 @@ let rightPosition: [Double] = [baselineInMeters, 0, 0]
 ```
 
 > ❗ **Important**: The distance in 3D space between the left- and right-eye camera extrinsic positions must always represent the baseline in meters between the two cameras that captured the images. The position of the right-eye camera must always be positioned to the right of the left-eye camera in the left-eye camera’s coordinate space.
-
-The distance in 3D space between the left- and right-eye camera extrinsic positions must always represent the baseline in meters between the two cameras that captured the images. The position of the right-eye camera must always be positioned to the right of the left-eye camera in the left-eye camera’s coordinate space.
 
 ##### Compute a Camera Intrinsics Matrix
 
@@ -202,8 +196,6 @@ For the groups dictionary, the convenience method defines a single stereo pair g
 
 > ❗ **Important**: The stereo pair group for a spatial photo must always define a disparity adjustment offset. Disparity adjustment and group index are provided as part of the image properties for each image, so the app includes the same index and disparity adjustment value in the groups dictionary for both the left- and right-eye images.
 
-The stereo pair group for a spatial photo must always define a disparity adjustment offset. Disparity adjustment and group index are provided as part of the image properties for each image, so the app includes the same index and disparity adjustment value in the groups dictionary for both the left- and right-eye images.
-
 For the HEIF dictionary, the convenience method defines:
 
 - A camera extrinsics ([`kIIOMetadata_CameraExtrinsicsKey`](kIIOMetadata_CameraExtrinsicsKey.md)) dictionary that contains the extrinsic position and rotation for the camera
@@ -212,8 +204,6 @@ For the HEIF dictionary, the convenience method defines:
 The camera extrinsics dictionary specifies an identity rotation to indicate that the app defines camera extrinsics with a position offset only.
 
 > ❗ **Important**: The camera model dictionary for the left- and right-eye images in a spatial photo must always define a camera model type of either [`kIIOCameraModelType_SimplifiedPinhole`](kIIOCameraModelType_SimplifiedPinhole.md) or [`kIIOCameraModelType_GenericPinhole`](kIIOCameraModelType_GenericPinhole.md).
-
-The camera model dictionary for the left- and right-eye images in a spatial photo must always define a camera model type of either [`kIIOCameraModelType_SimplifiedPinhole`](kIIOCameraModelType_SimplifiedPinhole.md) or [`kIIOCameraModelType_GenericPinhole`](kIIOCameraModelType_GenericPinhole.md).
 
 The properties dictionary also specifies a [`kCGImagePropertyHasAlpha`](kCGImagePropertyHasAlpha.md) value of `false` to indicate that the system should ignore any alpha channel data in the source image when adding that source image to the image destination.
 
@@ -270,4 +260,4 @@ guard CGImageDestinationFinalize(destination) else {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/imageio/writing-spatial-photos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ImageIO/writing-spatial-photos)*

@@ -1,6 +1,6 @@
 # Controlling User Interaction on Nodes
 
-**Framework**: SpriteKit
+**Framework**: Spritekit
 
 Enable your node to respond to user input, like touches or mouse clicks.
 
@@ -44,8 +44,6 @@ class TouchScene: SKScene {
 ```
 
 > **Note**:  Alternatively, you could override [`sceneDidLoad()`](skscene/scenedidload().md) and set [`isUserInteractionEnabled`](sknode/isuserinteractionenabled.md) to `true` in your implementation.
-
- Alternatively, you could override [`sceneDidLoad()`](skscene/scenedidload().md) and set [`isUserInteractionEnabled`](sknode/isuserinteractionenabled.md) to `true` in your implementation.
 
 The overridden [`touchesBegan(_:with:)`](https://developer.apple.com/documentation/UIKit/UIResponder/touchesBegan(_:with:)) method shows two techniques to find the nodes that have been touched. [`nodes(at:)`](sknode/nodes(at:).md) returns an array of all of the sprites and [`atPoint(_:)`](sknode/atpoint(_:).md) returns the top-most touched node.
 
@@ -178,8 +176,6 @@ In this case, only touches or mouse events over the red spots shown in the figur
 
 > ❗ **Important**:  Nodes that have user interaction disabled will block touch and mouse events on nodes behind them where they overlap.
 
- Nodes that have user interaction disabled will block touch and mouse events on nodes behind them where they overlap.
-
 ## See Also
 
 - [var isUserInteractionEnabled: Bool](sknode/isuserinteractionenabled.md)
@@ -190,4 +186,4 @@ In this case, only touches or mouse events over the red spots shown in the figur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/controlling-user-interaction-on-nodes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/controlling-user-interaction-on-nodes)*

@@ -1,6 +1,6 @@
 # map(_:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Returns an array containing the results of mapping the given closure over the sequence’s elements.
@@ -37,8 +37,6 @@ let letterCounts = cast.map { $0.count }
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

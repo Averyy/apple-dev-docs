@@ -1,6 +1,6 @@
 # predictions(from:perWindowPrediction:)
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: method
 
 Predict activities from new observations.
@@ -24,8 +24,6 @@ An array of predicted class names.
 - perWindowPrediction: A Boolean option to specify the prediction frequency. Default is false, and prediction is made per sample, instead of per window.
 
 > **Note**: `MLCreateError.type` if `testingData` format is invalid.
-
-`MLCreateError.type` if `testingData` format is invalid.
 
 ## See Also
 

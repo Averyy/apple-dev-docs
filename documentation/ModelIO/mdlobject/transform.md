@@ -1,6 +1,6 @@
 # transform
 
-**Framework**: Model I/O  
+**Framework**: Modelio  
 **Kind**: property
 
 A component that manages this object’s spatial transform and its changes over time.
@@ -25,8 +25,6 @@ A transform defines the local coordinate space for an object’s content—that 
 
 > **Note**:  Reading or writing this property is equivalent to calling the [`componentConforming(to:)`](mdlobject/componentconforming(to:).md) or [`setComponent(_:for:)`](mdlobject/setcomponent(_:for:).md) method with the [`MDLTransformComponent`](mdltransformcomponent.md) protocol.
 
- Reading or writing this property is equivalent to calling the [`componentConforming(to:)`](mdlobject/componentconforming(to:).md) or [`setComponent(_:for:)`](mdlobject/setcomponent(_:for:).md) method with the [`MDLTransformComponent`](mdltransformcomponent.md) protocol.
-
 ## See Also
 
 - [func boundingBox(atTime: TimeInterval) -> MDLAxisAlignedBoundingBox](mdlobject/boundingbox(attime:).md)
@@ -35,4 +33,4 @@ A transform defines the local coordinate space for an object’s content—that 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/modelio/mdlobject/transform)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ModelIO/mdlobject/transform)*

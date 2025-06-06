@@ -37,8 +37,6 @@ let allTheVowels = str.indices(where: { vowels.contains($0) })
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `predicate`: A closure that takes an element as its argument   and returns a Boolean value that indicates whether the passed element   represents a match.

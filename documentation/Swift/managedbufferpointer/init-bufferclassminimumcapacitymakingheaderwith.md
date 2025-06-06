@@ -24,8 +24,6 @@ init(bufferClass: AnyClass, minimumCapacity: Int, makingHeaderWith factory: (Any
 
 > **Note**: `minimumCapacity >= 0`, and the type indicated by `bufferClass` is a non-`@objc` class with no declared stored properties.  The `deinit` of `bufferClass` must destroy its stored `Header` and any constructed `Element`s.
 
-`minimumCapacity >= 0`, and the type indicated by `bufferClass` is a non-`@objc` class with no declared stored properties.  The `deinit` of `bufferClass` must destroy its stored `Header` and any constructed `Element`s.
-
 ## Parameters
 
 - `bufferClass`: The class of the object used for storage.

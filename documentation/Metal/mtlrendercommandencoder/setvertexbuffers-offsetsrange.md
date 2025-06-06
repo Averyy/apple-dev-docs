@@ -25,8 +25,6 @@ By default, the buffer at each index is `nil`.
 
 > **Note**:  The Objective-C version of this method is [`setVertexBuffers:offsets:withRange:`](mtlrendercommandencoder/setvertexbuffers:offsets:withrange:.md).
 
- The Objective-C version of this method is [`setVertexBuffers:offsets:withRange:`](mtlrendercommandencoder/setvertexbuffers:offsets:withrange:.md).
-
 ## Parameters
 
 - `buffers`: An array of   instances the command assigns to entries in the vertex shader argument table for buffers.

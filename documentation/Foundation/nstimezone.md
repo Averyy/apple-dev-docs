@@ -28,21 +28,15 @@ Time zones represent the standard time policies for a geopolitical region. Time 
 
 > **Note**:  Time zone database entries such as “America/Los_Angeles” are IDs, not names. An example of a time zone name is “Pacific Daylight Time”. Although many [`NSTimeZone`](nstimezone.md) symbols include the word “name”, they actually refer to IDs.
 
- Time zone database entries such as “America/Los_Angeles” are IDs, not names. An example of a time zone name is “Pacific Daylight Time”. Although many [`NSTimeZone`](nstimezone.md) symbols include the word “name”, they actually refer to IDs.
-
 Time zones can also represent a temporal offset—either plus or minus—from Greenwich Mean Time (GMT). For example, the temporal offset of Pacific Standard Time is 8 hours behind Greenwich Mean Time (GMT-8). You can create time zone objects with a temporal offset by using [`init(forSecondsFromGMT:)`](nstimezone/init(forsecondsfromgmt:).md).
 
 You typically work with system time zones rather than creating time zones by identifier or by offset. The [`system`](nstimezone/system.md) class property returns the time zone currently used by the system, if known. This value is cached once the property is accessed and doesn’t reflect any system time zone changes until you call the [`resetSystemTimeZone()`](nstimezone/resetsystemtimezone().md) method. The [`local`](nstimezone/local.md) class property returns an autoupdating proxy object that always returns the current time zone used by the system. You can also set the [`default`](nstimezone/default.md) class property to make your app run as if it were in a different time zone than the system.
 
 > 💡 **Tip**:  You can’t use [`NSTimeZone`](nstimezone.md) APIs to change the time zone of the device or of other apps.
 
- You can’t use [`NSTimeZone`](nstimezone.md) APIs to change the time zone of the device or of other apps.
-
 [`NSTimeZone`](nstimezone.md) is  with its Core Foundation counterpart, [`CFTimeZone`](https://developer.apple.com/documentation/CoreFoundation/CFTimeZone). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`TimeZone`](timezone.md) structure, which bridges to the [`NSTimeZone`](nstimezone.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
- The Swift overlay to the Foundation framework provides the [`TimeZone`](timezone.md) structure, which bridges to the [`NSTimeZone`](nstimezone.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
 ## Topics
 
@@ -130,4 +124,4 @@ You typically work with system time zones rather than creating time zones by ide
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nstimezone)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nstimezone)*

@@ -1,14 +1,12 @@
 # Apple Search Ads Campaign Management API 3
 
-**Framework**: Apple Search Ads
+**Framework**: Apple_Search_Ads
 
 Apple no longer supports this API.
 
 #### Overview
 
 > **Note**:  As of June 2023, Apple no longer supports the Apple Search Ads Campaign Management API 3. Endpoints are no longer accessible. Use API 4. See [`Implementing OAuth for the Apple Search Ads API`](implementing-oauth-for-the-apple-search-ads-api.md).
-
- As of June 2023, Apple no longer supports the Apple Search Ads Campaign Management API 3. Endpoints are no longer accessible. Use API 4. See [`Implementing OAuth for the Apple Search Ads API`](implementing-oauth-for-the-apple-search-ads-api.md).
 
 ##### 31
 

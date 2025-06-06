@@ -1,6 +1,6 @@
 # Creating a MIDI device driver
 
-**Framework**: MIDIDriverKit
+**Framework**: Mididriverkit
 
 Implement a configurable virtual MIDI driver as a driver extension that runs in user space in macOS and iPadOS.
 
@@ -48,8 +48,6 @@ If you want to run the app with manual signing, do the following:
 To run the sample app in macOS, use the scheme selector to select the CreatingMIDIDriverSampleApp scheme and the My Mac destination. Build the target, then copy the app to the Applications folder and launch the app.
 
 > **Note**: You can run the app directly from Xcode, without moving the app bundle to `/Applications` each time, by using the `systemextensionsctl` command to enable system extensions developer mode, as explained in [`Debugging and testing system extensions`](https://developer.apple.comhttps://developer.apple.com/documentation//driverkit/debugging_and_testing_system_extensions).
-
-You can run the app directly from Xcode, without moving the app bundle to `/Applications` each time, by using the `systemextensionsctl` command to enable system extensions developer mode, as explained in [`Debugging and testing system extensions`](https://developer.apple.comhttps://developer.apple.com/documentation//driverkit/debugging_and_testing_system_extensions).
 
 In macOS, the CreatingMIDIDriverSampleApp app has two sections: Driver Manager, which installs the app, and User Client Manager, which interacts with the running driver. Under Driver Manager, click Install Driver. If a System Extension Blocked dialog appears, open System Settings and navigate to the Login Items & Extensions pane. Unlock the pane, if necessary, and click Allow to complete the installation. When installation completes, the Driver Manager status in the app displays the message “CreatingMIDIDriverSampleAppDriver has been activated and is ready to use.”
 
@@ -346,4 +344,4 @@ When this method returns, the configuration change is complete, and the system r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mididriverkit/creating-a-midi-device-driver)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MIDIDriverKit/creating-a-midi-device-driver)*

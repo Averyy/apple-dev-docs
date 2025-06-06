@@ -111,8 +111,6 @@ Each configured widget receives a limited number of refreshes every day. Several
 
 > **Note**: WidgetKit does not impose this limit when debugging your widget in Xcode. To verify that your widget behaves correctly, test your app and widget’s behavior outside of Xcode’s debugger.
 
-WidgetKit does not impose this limit when debugging your widget in Xcode. To verify that your widget behaves correctly, test your app and widget’s behavior outside of Xcode’s debugger.
-
 Use the following approaches to optimize your widget refreshes:
 
 - Have the containing app prepare data for the widget in advance of when the widget needs it. Use a shared group container to store the data.
@@ -159,4 +157,4 @@ When your app is in the foreground, has an active media session, or is using the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/timelineprovider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/timelineprovider)*

@@ -48,8 +48,6 @@ If some of the certificates needed to verify the leaf certificate are missing fr
 
 > **Note**:  Although this function searches the user’s keychain (or the application keychain in iOS) for intermediate certificates, it does not search those keychains for anchor (root) certificates. To add an anchor certificate, you must call [`SecTrustSetAnchorCertificates(_:_:)`](sectrustsetanchorcertificates(_:_:).md).
 
- Although this function searches the user’s keychain (or the application keychain in iOS) for intermediate certificates, it does not search those keychains for anchor (root) certificates. To add an anchor certificate, you must call [`SecTrustSetAnchorCertificates(_:_:)`](sectrustsetanchorcertificates(_:_:).md).
-
 As a rule, you should handle the various return values as follows:
 
 - [`SecTrustResultType.unspecified`](sectrustresulttype/unspecified.md)—Evaluation successfully reached an (implicitly trusted) anchor certificate without any evaluation failures, but never encountered any explicitly stated user-trust preference. This is the most common return value.

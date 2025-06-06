@@ -1,6 +1,6 @@
 # availableApps
 
-**Framework**: ManagedAppDistribution  
+**Framework**: Managedappdistribution  
 **Kind**: property
 
 The current managed apps available to this device.
@@ -21,8 +21,6 @@ final var availableApps: ManagedAppLibrary.ManagedApps { get }
 The current managed apps are of type `Result<[ManagedApp], ManagedAppDistributionError>`. Use an asynchronous `for` loop to update your views when the current managed apps change. If the device can’t retrieve the metadata for the apps, fetching the list of managed apps fails with `ManagedAppDistributionError.networkError`. An example of this failure is if the device is offline.
 
 > **Note**: The async sequence returns an error and the sequence ends when running as an iOS app on macOS.
-
-The async sequence returns an error and the sequence ends when running as an iOS app on macOS.
 
 ## See Also
 

@@ -34,8 +34,6 @@ print(numbers)
 
 > **Note**: O(1) on average, over many calls to `append(_:)` on the same collection.
 
-O(1) on average, over many calls to `append(_:)` on the same collection.
-
 ## Parameters
 
 - `newElement`: The element to append to the collection.

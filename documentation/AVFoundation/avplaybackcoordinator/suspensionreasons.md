@@ -1,6 +1,6 @@
 # suspensionReasons
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 The reasons a coordinator is currently unable to participate in a group playback activity.
@@ -24,8 +24,6 @@ var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason] { get }
 The coordinator doesn’t respond to changes in group playback state when this property value contains suspension reasons.
 
 > **Note**:  To observe changes to this property value, register for notifications of type [`suspensionReasonsDidChangeNotification`](avplaybackcoordinator/suspensionreasonsdidchangenotification.md).
-
- To observe changes to this property value, register for notifications of type [`suspensionReasonsDidChangeNotification`](avplaybackcoordinator/suspensionreasonsdidchangenotification.md).
 
 ## See Also
 

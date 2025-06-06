@@ -1,6 +1,6 @@
 # swiftLanguageMode(_:_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Defines a `-language-mode` to pass  to the corresponding build tool.
@@ -17,8 +17,6 @@ static func swiftLanguageMode(_ mode: SwiftLanguageMode, _ condition: BuildSetti
 #### Discussion
 
 > **Note**: First available in PackageDescription 6.0.
-
-First available in PackageDescription 6.0.
 
 ## Parameters
 

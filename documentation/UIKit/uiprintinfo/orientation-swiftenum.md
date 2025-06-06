@@ -1,6 +1,6 @@
 # UIPrintInfo.Orientation
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: enum
 
 Constants that describe the orientation of printing on a page.
@@ -22,8 +22,6 @@ enum Orientation
 You use these constants when setting the value of the [`orientation`](uiprintinfo/orientation-swift.property.md) property of a `UIPrintInfo` object.
 
 > **Note**:  UIKit ignores the [`orientation`](uiprintinfo/orientation-swift.property.md) property when printable content is assigned to the `printingItem` or `printingItems` properties of the shared [`UIPrintInteractionController`](uiprintinteractioncontroller.md) object. It determines the orientation based on the type of content.
-
- UIKit ignores the [`orientation`](uiprintinfo/orientation-swift.property.md) property when printable content is assigned to the `printingItem` or `printingItems` properties of the shared [`UIPrintInteractionController`](uiprintinteractioncontroller.md) object. It determines the orientation based on the type of content.
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # primary
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 The behavior marking this window as primary for both Stage Manager and full screen.
@@ -24,8 +24,6 @@ Use this collection behavior for document or viewer windows.
 
 > **Note**:  This property is mutually exclusive. Set only one of [`primary`](nswindow/collectionbehavior-swift.struct/primary.md), [`auxiliary`](nswindow/collectionbehavior-swift.struct/auxiliary.md), or [`canJoinAllApplications`](nswindow/collectionbehavior-swift.struct/canjoinallapplications.md) on a window handled by Stage Manager at a time.
 
- This property is mutually exclusive. Set only one of [`primary`](nswindow/collectionbehavior-swift.struct/primary.md), [`auxiliary`](nswindow/collectionbehavior-swift.struct/auxiliary.md), or [`canJoinAllApplications`](nswindow/collectionbehavior-swift.struct/canjoinallapplications.md) on a window handled by Stage Manager at a time.
-
 ## See Also
 
 - [static var auxiliary: NSWindow.CollectionBehavior](nswindow/collectionbehavior-swift.struct/auxiliary.md)
@@ -36,4 +34,4 @@ Use this collection behavior for document or viewer windows.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow/collectionbehavior-swift.struct/primary)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow/collectionbehavior-swift.struct/primary)*

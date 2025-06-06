@@ -53,8 +53,6 @@ print(streetsSlice[0])
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

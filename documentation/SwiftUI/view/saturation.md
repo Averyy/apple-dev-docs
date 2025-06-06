@@ -1,6 +1,6 @@
 # saturation(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Adjusts the color saturation of this view.
@@ -50,8 +50,6 @@ struct Saturation: View {
 ![Rendering showing the effects of saturation adjustments in 20%](https://docs-assets.developer.apple.com/published/3ab2f7bf1752ad0140cc40da2b2075ba/SwiftUI-View-saturation%402x.png)
 
 > **Note**: `contrast(_:)`
-
-`contrast(_:)`
 
 ## Parameters
 

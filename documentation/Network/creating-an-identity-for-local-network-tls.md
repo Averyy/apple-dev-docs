@@ -141,8 +141,6 @@ let connection = NWConnection(to: endpoint, using: tlsParams)
 
 > **Note**:  If the root certificate from the CA is installed on the device, you can use the code above without implementing [`sec_protocol_options_set_verify_block(_:_:_:)`](https://developer.apple.com/documentation/Security/sec_protocol_options_set_verify_block(_:_:_:)) to override trust evaluation.
 
- If the root certificate from the CA is installed on the device, you can use the code above without implementing [`sec_protocol_options_set_verify_block(_:_:_:)`](https://developer.apple.com/documentation/Security/sec_protocol_options_set_verify_block(_:_:_:)) to override trust evaluation.
-
 If your client needs to connect over IP, instead of using a local network name, the server needs to use a leaf certificate that lists the IP in the “IP Address” field of the Subject Alternative Name. This also avoids having to override trust evaluation on the client and allows client connections to use the following:
 
 ```swift
@@ -165,8 +163,6 @@ Attempting to connect from a client to a server without the root certificate ins
 ```
 
 > **Note**:  The same is true if either the IP Address or DNS Name in the Subject Alternative Name fields are missing in the leaf certificate.
-
- The same is true if either the IP Address or DNS Name in the Subject Alternative Name fields are missing in the leaf certificate.
 
 To work around this on the client, use `sec_protocol_options_set_verify_block` to perform your own verification checks on the peer’s leaf certificate. This isn’t the recommended path, but could be done in extreme cases. In the following example, [`SecPolicyCreateBasicX509()`](https://developer.apple.com/documentation/Security/SecPolicyCreateBasicX509()) checks against the certificate’s basic x509 policy:
 
@@ -200,4 +196,4 @@ From there the client can set up a handshake using TLS on a local network.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/network/creating-an-identity-for-local-network-tls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Network/creating-an-identity-for-local-network-tls)*

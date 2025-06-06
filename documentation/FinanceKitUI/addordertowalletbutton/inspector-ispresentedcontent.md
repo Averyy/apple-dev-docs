@@ -1,6 +1,6 @@
 # inspector(isPresented:content:)
 
-**Framework**: FinanceKitUI  
+**Framework**: Financekitui  
 **Kind**: method
 
 Inserts an inspector at the applied position in the view hierarchy.
@@ -36,11 +36,7 @@ struct ShapeEditor: View {
 
 > **Note**: Trailing column inspectors have their presentation state restored by the framework.
 
-Trailing column inspectors have their presentation state restored by the framework.
-
 > **Note**: `InspectorCommands` for including the default inspector commands and keyboard shortcuts.
-
-`InspectorCommands` for including the default inspector commands and keyboard shortcuts.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # IKComponent
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A component that allows you to procedurally animate a skeletal model using a full body inverse kinematics solver.
@@ -99,8 +99,6 @@ armEntity.components[IKComponent.self]!.solvers[0].constraints["end_constraint"]
 
 > **Note**: Any value updates won’t be reflected until the modified [`IKComponent`](ikcomponent.md) is set on the [`Entity`](entity.md).
 
-Any value updates won’t be reflected until the modified [`IKComponent`](ikcomponent.md) is set on the [`Entity`](entity.md).
-
 ## Topics
 
 ### Classes
@@ -157,4 +155,4 @@ Any value updates won’t be reflected until the modified [`IKComponent`](ikcomp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/ikcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/ikcomponent)*

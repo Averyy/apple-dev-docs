@@ -1,6 +1,6 @@
 # Interacting with a home automation network
 
-**Framework**: HomeKit
+**Framework**: Homekit
 
 Find all the automation accessories in the primary home and control their state.
 
@@ -132,8 +132,6 @@ On success, the completion handler refreshes the app’s copy of the HomeKit dat
 The sample app’s split view detail controller shows an `AccessoryView` with information about a single accessory. This includes a list of accessory properties, like the accessory’s name and manufacturer. It also includes services, like a door opener or a light bulb, that the accessory offers. Optionally, for an accessory that’s a bridge, which is an accessory that serves as a link to accessories on a non-HomeKit network, the view also shows a list of the accessories to which the bridge provides access.
 
 > **Note**: Bridged accessories (those with the [`isBridged`](HMAccessory/isBridged.md) property set to `true`) also appear in the home view’s main list of accessories because HomeKit makes them directly accessible. Listing them in the accessory view is a convenience to show the relationship with their bridge.
-
-Bridged accessories (those with the [`isBridged`](HMAccessory/isBridged.md) property set to `true`) also appear in the home view’s main list of accessories because HomeKit makes them directly accessible. Listing them in the accessory view is a convenience to show the relationship with their bridge.
 
 When the user taps an accessory in the home view, you use the [`prepare(for:sender:)`](https://developer.apple.com/documentation/UIKit/UIViewController/prepare(for:sender:)) method override to assign the corresponding accessory to the accessory view, which triggers the view to reload its content:
 
@@ -297,4 +295,4 @@ For more information about user interface considerations for HomeKit enabled app
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/homekit/interacting-with-a-home-automation-network)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HomeKit/interacting-with-a-home-automation-network)*

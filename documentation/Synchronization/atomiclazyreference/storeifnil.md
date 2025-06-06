@@ -46,8 +46,6 @@ class Image {
 
 > **Note**: This operation uses acquiring-and-releasing memory ordering.
 
-This operation uses acquiring-and-releasing memory ordering.
-
 ## Parameters
 
 - `desired`: A value of   that we will attempt to store   if the lazy reference is currently nil.

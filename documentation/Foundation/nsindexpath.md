@@ -30,11 +30,7 @@ Each index in an index path represents the index into an array of children from 
 
 > **Note**:  The UIKit framework adds programming interfaces to the `NSIndexPath` class of the Foundation framework to facilitate the identification of rows and sections in [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) objects and the identification of items and sections in [`UICollectionView`](https://developer.apple.com/documentation/UIKit/UICollectionView) objects. The API consists of class factory methods and properties for accessing the various indexed values. You use the factory methods to create an index path for the corresponding table view or collection view.
 
- The UIKit framework adds programming interfaces to the `NSIndexPath` class of the Foundation framework to facilitate the identification of rows and sections in [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) objects and the identification of items and sections in [`UICollectionView`](https://developer.apple.com/documentation/UIKit/UICollectionView) objects. The API consists of class factory methods and properties for accessing the various indexed values. You use the factory methods to create an index path for the corresponding table view or collection view.
-
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`IndexPath`](indexpath.md) structure, which bridges to the [`NSIndexPath`](nsindexpath.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
- The Swift overlay to the Foundation framework provides the [`IndexPath`](indexpath.md) structure, which bridges to the [`NSIndexPath`](nsindexpath.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
 ## Topics
 
@@ -92,4 +88,4 @@ Each index in an index path represents the index into an array of children from 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsindexpath)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsindexpath)*

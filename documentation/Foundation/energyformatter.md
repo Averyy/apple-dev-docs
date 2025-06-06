@@ -24,8 +24,6 @@ class EnergyFormatter
 
 > **Note**:  As of iOS 10, macOS 10.12, tvOS 10, and watchOS 3, Foundation provides the [`MeasurementFormatter`](measurementformatter.md) class, which can be used to represent quantities of [`UnitEnergy`](unitenergy.md) to provide equivalent functionality to [`EnergyFormatter`](energyformatter.md). You are encouraged to transition to these new Foundation Units and Measurements APIs whenever possible.
 
- As of iOS 10, macOS 10.12, tvOS 10, and watchOS 3, Foundation provides the [`MeasurementFormatter`](measurementformatter.md) class, which can be used to represent quantities of [`UnitEnergy`](unitenergy.md) to provide equivalent functionality to [`EnergyFormatter`](energyformatter.md). You are encouraged to transition to these new Foundation Units and Measurements APIs whenever possible.
-
 ## Topics
 
 ### Formatting Energy Strings
@@ -73,4 +71,4 @@ class EnergyFormatter
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/energyformatter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/energyformatter)*

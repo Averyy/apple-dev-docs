@@ -1,6 +1,6 @@
 # directoryURL
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The initial directory that the document picker displays.
@@ -29,8 +29,6 @@ Set this property to specify the starting directory for the document picker. Thi
 The [`directoryURL`](uidocumentpickerviewcontroller/directoryurl.md) property only returns a value when you explicitly set it. For example, it doesn’t calculate the default URL presented to the user when the property isn’t set.
 
 > **Note**:  This property has no effect in Mac apps built with Mac Catalyst.
-
- This property has no effect in Mac apps built with Mac Catalyst.
 
 ## See Also
 

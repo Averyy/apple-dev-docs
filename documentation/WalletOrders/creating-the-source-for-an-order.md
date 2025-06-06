@@ -34,8 +34,6 @@ Localize an image by adding the location-specific image files to each localizati
 
 > **Note**:  Adding an image of the same name to the top-level folder of the order file overrides any localized versions.
 
- Adding an image of the same name to the top-level folder of the order file overrides any localized versions.
-
 ##### Localize the Strings
 
 The system localizes the strings in your order using a strings file that contains a list of keys and associated localized strings. For more information about fields that are localizable, see the top-level [`Order`](order.md) object.
@@ -78,13 +76,9 @@ Then define the values for the keys in the German strings in `de.lproj/order.str
 
 > **Note**:  Use UTF-16 encoding for non-ASCII characters.
 
- Use UTF-16 encoding for non-ASCII characters.
-
 The system localizes fields that contain dates and times that use standard formats in the `order.json` file. The system always displays localized versions of these values, even when your order doesn’t contain localization folders for the language.
 
 > ❗ **Important**:  The system doesn’t perform currency conversion on fields that contain monetary values. Monetary values display in the provided currency.
-
- The system doesn’t perform currency conversion on fields that contain monetary values. Monetary values display in the provided currency.
 
 ## See Also
 
@@ -102,4 +96,4 @@ The system localizes fields that contain dates and times that use standard forma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/walletorders/creating-the-source-for-an-order)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WalletOrders/creating-the-source-for-an-order)*

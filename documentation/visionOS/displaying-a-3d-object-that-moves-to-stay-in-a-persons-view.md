@@ -216,8 +216,6 @@ Device tracking is accessible within immersive spaces. The sample creates a cust
 
 > **Note**: Device-tracking data isn’t available in visionOS apps that only display a SwiftUI window view or a SwiftUI volumetric view.
 
-Device-tracking data isn’t available in visionOS apps that only display a SwiftUI window view or a SwiftUI volumetric view.
-
 ```swift
 import SwiftUI
 import RealityKit

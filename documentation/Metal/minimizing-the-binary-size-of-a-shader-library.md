@@ -44,8 +44,6 @@ To optimize for size when compiling a Metal shader source file in a command-line
 
 > **Note**:  This example uses the `macosx` SDK, but you can use any SDK your app targets.
 
- This example uses the `macosx` SDK, but you can use any SDK your app targets.
-
 ##### Compile Shaders at Runtime
 
 If you want to compile shaders at runtime, your app can configure the Metal API to optimize for size. For some apps, it may be more practical to compile a shader on the device when the app is running, typically to reduce the app’s storage size. You can also compile shaders at runtime for rapid prototyping and debugging.
@@ -68,4 +66,4 @@ To minimize binary size when compiling a shader library on a device:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/minimizing-the-binary-size-of-a-shader-library)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/minimizing-the-binary-size-of-a-shader-library)*

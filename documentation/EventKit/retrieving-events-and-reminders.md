@@ -1,6 +1,6 @@
 # Retrieving events and reminders
 
-**Framework**: EventKit
+**Framework**: Eventkit
 
 Fetch events and reminders from the Calendar database.
 
@@ -15,8 +15,6 @@ There are two ways to retrieve events and reminders. You can fetch via:
 
 > **Note**:  Retrieving events from the Calendar database does not necessarily return events in chronological order. To sort an array of [`EKEvent`](ekevent.md) objects by date, call [`sortedArray(using:)`](https://developer.apple.com/documentation/foundation/nsarray/1410025-sortedarray) on the array, providing the selector for the [`compareStartDate(with:)`](ekevent/comparestartdate(with:).md) method.
 
- Retrieving events from the Calendar database does not necessarily return events in chronological order. To sort an array of [`EKEvent`](ekevent.md) objects by date, call [`sortedArray(using:)`](https://developer.apple.com/documentation/foundation/nsarray/1410025-sortedarray) on the array, providing the selector for the [`compareStartDate(with:)`](ekevent/comparestartdate(with:).md) method.
-
 ##### Search with Predicates
 
 Predicates return events and reminders that match a search query.
@@ -26,8 +24,6 @@ Predicates return events and reminders that match a search query.
 It’s common to fetch events and reminders that fall within a date range. The [`EKEventStore`](ekeventstore.md) method [`events(matching:)`](ekeventstore/events(matching:).md): fetches all events that fall within the date range specified in the predicate you provide. The following listing demonstrates how to fetch all events that occur between one day before and one year after the current date.
 
 > **Note**:  Although the [`events(matching:)`](ekeventstore/events(matching:).md) method accepts a parameter of type [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate), you must supply a predicate created with the [`EKEventStore`](ekeventstore.md) method [`predicateForEvents(withStart:end:calendars:)`](ekeventstore/predicateforevents(withstart:end:calendars:).md).
-
- Although the [`events(matching:)`](ekeventstore/events(matching:).md) method accepts a parameter of type [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate), you must supply a predicate created with the [`EKEventStore`](ekeventstore.md) method [`predicateForEvents(withStart:end:calendars:)`](ekeventstore/predicateforevents(withstart:end:calendars:).md).
 
 Listing 1. Fetching events with a predicate
 
@@ -109,4 +105,4 @@ Similarly, if you know a specific reminder’s unique identifier from previously
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/retrieving-events-and-reminders)*
+*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/retrieving-events-and-reminders)*

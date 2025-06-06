@@ -1,6 +1,6 @@
 # CLKComplicationDataSource
 
-**Framework**: ClockKit  
+**Framework**: Clockkit  
 **Kind**: protocol
 
 A protocol that provides ClockKit with information about your complication.
@@ -17,8 +17,8 @@ protocol CLKComplicationDataSource : NSObjectProtocol
 
 ## Mentions
 
-- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 - [Enabling Complications for Your watchOS App](enabling-complications-for-your-watchos-app.md)
+- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 
 #### Overview
 
@@ -33,8 +33,6 @@ Your complication data source class must implement the [`CLKComplicationDataSour
 You may implement other methods as needed to support the data in your complication. For example, to batch load future timeline entries, implement [`getTimelineEndDate(for:withHandler:)`](clkcomplicationdatasource/gettimelineenddate(for:withhandler:).md) and pass a future date to the handler. For more information, see [`Creating complications for your watchOS app`](creating-complications-for-your-watchos-app.md).
 
 > **Note**:  For watchOS 6 and earlier, you must implement both [`getCurrentTimelineEntry(for:withHandler:)`](clkcomplicationdatasource/getcurrenttimelineentry(for:withhandler:).md) and [`getSupportedTimeTravelDirections(for:withHandler:)`](clkcomplicationdatasource/getsupportedtimetraveldirections(for:withhandler:).md). Use [`getSupportedTimeTravelDirections(for:withHandler:)`](clkcomplicationdatasource/getsupportedtimetraveldirections(for:withhandler:).md) to specify whether your app can batch load future timeline entries.
-
- For watchOS 6 and earlier, you must implement both [`getCurrentTimelineEntry(for:withHandler:)`](clkcomplicationdatasource/getcurrenttimelineentry(for:withhandler:).md) and [`getSupportedTimeTravelDirections(for:withHandler:)`](clkcomplicationdatasource/getsupportedtimetraveldirections(for:withhandler:).md). Use [`getSupportedTimeTravelDirections(for:withHandler:)`](clkcomplicationdatasource/getsupportedtimetraveldirections(for:withhandler:).md) to specify whether your app can batch load future timeline entries.
 
 ClockKit calls your data source methods on your watchOS app’s main thread.
 
@@ -117,4 +115,4 @@ ClockKit calls your data source methods on your watchOS app’s main thread.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/clkcomplicationdatasource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/clkcomplicationdatasource)*

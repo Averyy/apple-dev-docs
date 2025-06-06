@@ -1,6 +1,6 @@
 # NFCVASReaderSession
 
-**Framework**: Core NFC  
+**Framework**: Corenfc  
 **Kind**: class
 
 A reader session for processing Value Added Service (VAS) tags.
@@ -19,8 +19,6 @@ class NFCVASReaderSession
 #### Overview
 
 > **Note**:  Using NFCVASReaderSession requires an entitlement from Apple. Updates will include information about the entitlement and a link to the entitlement request form.
-
- Using NFCVASReaderSession requires an entitlement from Apple. Updates will include information about the entitlement and a link to the entitlement request form.
 
 ## Topics
 
@@ -63,4 +61,4 @@ class NFCVASReaderSession
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corenfc/nfcvasreadersession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreNFC/nfcvasreadersession)*

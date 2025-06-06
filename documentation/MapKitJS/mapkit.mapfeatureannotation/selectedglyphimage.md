@@ -1,6 +1,6 @@
 # selectedGlyphImage
 
-**Framework**: MapKit JS  
+**Framework**: Mapkitjs  
 **Kind**: property
 
 The glyph image for the selected feature.
@@ -17,8 +17,6 @@ attribute mapkit.MapFeatureAnnotationGlyphImage selectedGlyphImage;
 #### Discussion
 
 > **Note**:  This property is only available when the [`featureType`](mapkit.mapfeatureannotation/featuretype.md) is [`PointOfInterest`](mapkit.mapfeaturetype/pointofinterest.md).
-
- This property is only available when the [`featureType`](mapkit.mapfeatureannotation/featuretype.md) is [`PointOfInterest`](mapkit.mapfeaturetype/pointofinterest.md).
 
 ## See Also
 
@@ -38,4 +36,4 @@ attribute mapkit.MapFeatureAnnotationGlyphImage selectedGlyphImage;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit.mapfeatureannotation/selectedglyphimage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit.mapfeatureannotation/selectedglyphimage)*

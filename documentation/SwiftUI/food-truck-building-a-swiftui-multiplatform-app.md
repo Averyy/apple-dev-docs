@@ -1,6 +1,6 @@
 # Food Truck: Building a SwiftUI multiplatform app
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Create a single codebase and app target for Mac, iPad, and iPhone.
 
@@ -17,8 +17,6 @@ Using the Food Truck app, someone who operates a food truck can keep track of or
 You can access the source code for this sample on [`GitHub`](https://developer.apple.comhttps://github.com/apple/sample-food-truck).
 
 > **Note**: This sample code project is associated with WWDC22 session [`110492: State of the Union`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110492/).
-
-This sample code project is associated with WWDC22 session [`110492: State of the Union`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110492/).
 
 The Food Truck sample project contains two types of app targets:
 
@@ -44,8 +42,6 @@ To configure the Food Truck All app to run on your devices, follow these steps:
 6. In the `AccountManager.swift` file, replace all occurrences of `example.com` with the name of your domain.
 
 > **Note**: To use the weather forecast feature in the sample, you need to perform additional steps to configure WeatherKit, as described in the Configure the project for WeatherKit section below, or the sample will detect an error and use static data included in the project.
-
-To use the weather forecast feature in the sample, you need to perform additional steps to configure WeatherKit, as described in the Configure the project for WeatherKit section below, or the sample will detect an error and use static data included in the project.
 
 ##### 4143585
 

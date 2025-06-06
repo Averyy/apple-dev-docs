@@ -1,6 +1,6 @@
 # Using HEVC Video with Alpha
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Play, write, and export HEVC video with an alpha channel to add overlay effects to your video processing.
 
@@ -11,8 +11,6 @@ Play, write, and export HEVC video with an alpha channel to add overlay effects 
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`506: HEVC Video with Alpha`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/506/).
-
-This sample code project is associated with WWDC 2019 session [`506: HEVC Video with Alpha`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/506/).
 
 ## See Also
 
@@ -26,4 +24,4 @@ This sample code project is associated with WWDC 2019 session [`506: HEVC Video 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/using-hevc-video-with-alpha)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/using-hevc-video-with-alpha)*

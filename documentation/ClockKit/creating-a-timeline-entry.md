@@ -1,6 +1,6 @@
 # Creating a timeline entry
 
-**Framework**: ClockKit
+**Framework**: Clockkit
 
 Package your app-specific data into a template and create a timeline entry for that template.
 
@@ -63,8 +63,6 @@ Select and create a template for the specified family from the following pages:
 - [`Graphic`](graphic.md)
 
 > **Note**:  For watchOS 6 and earlier, your app can provide only one complication per family. To support these versions of watchOS, you only need to check the complication’s [`family`](clkcomplication/family.md) property when determining which template to use.
-
- For watchOS 6 and earlier, your app can provide only one complication per family. To support these versions of watchOS, you only need to check the complication’s [`family`](clkcomplication/family.md) property when determining which template to use.
 
 ##### Create Data Providers to Fill the Template
 
@@ -162,4 +160,4 @@ For future timeline entries, specify the date and time for the data to appear on
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/creating-a-timeline-entry)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/creating-a-timeline-entry)*

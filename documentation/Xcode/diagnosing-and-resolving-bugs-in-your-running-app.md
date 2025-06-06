@@ -34,8 +34,6 @@ Add a breakpoint to your code in a location based on problem characteristics, th
 
 > **Note**: Your Swift code can receive an Objective-C exception when it uses code from a module that uses Objective-C.
 
-Your Swift code can receive an Objective-C exception when it uses code from a module that uses Objective-C.
-
 ##### Inspect Variables and Execution Sequence Without Pausing
 
 When you develop code, it’s helpful to log actions and variable values so you understand how your code runs and what values your variables have at different points in your app. This is especially true when you develop , or code that executes simultaneously across multiple queues or threads, because bugs can be intermittent and difficult to reproduce. Often, you reproduce a bug in normal execution, but not when stepping through the debugger, because the timing is different between normal execution and debugging. The debugger provides tools to inspect variables without pausing and disturbing the timing of your concurrent code.
@@ -51,8 +49,6 @@ To log a variable value to the console without pausing, add a breakpoint with a 
 To log custom text to the console and add context to variable values, add a breakpoint with a Log Message action. Specify your custom text, and include expressions, the breakpoint name, or the breakpoint hit count to provide more information.
 
 > **Note**: Because `po` compiles code dynamically to evaluate expressions, it takes more time to evaluate your variable and log it to the console. To reduce timing issues, use `v` to log variable values instead.
-
-Because `po` compiles code dynamically to evaluate expressions, it takes more time to evaluate your variable and log it to the console. To reduce timing issues, use `v` to log variable values instead.
 
 Use other breakpoint actions to execute an AppleScript or a shell script, or to capture a GPU frame.
 
@@ -120,4 +116,4 @@ For information on using these features to debug the appearance of your app, see
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/diagnosing-and-resolving-bugs-in-your-running-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/diagnosing-and-resolving-bugs-in-your-running-app)*

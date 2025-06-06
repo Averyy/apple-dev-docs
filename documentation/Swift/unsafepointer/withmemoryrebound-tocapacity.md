@@ -47,8 +47,6 @@ After executing `body`, this method rebinds memory back to the original `Pointee
 
 > **Note**: Only use this method to rebind the pointer’s memory to a type that is layout compatible with the `Pointee` type. The stride of the temporary type (`T`) may be an integer multiple or a whole fraction of `Pointee`’s stride, for example to point to one element of an aggregate. To bind a region of memory to a type that does not match these requirements, convert the pointer to a raw pointer and use the `bindMemory(to:)` method. If `T` and `Pointee` have different alignments, this pointer must be aligned with the larger of the two alignments.
 
-Only use this method to rebind the pointer’s memory to a type that is layout compatible with the `Pointee` type. The stride of the temporary type (`T`) may be an integer multiple or a whole fraction of `Pointee`’s stride, for example to point to one element of an aggregate. To bind a region of memory to a type that does not match these requirements, convert the pointer to a raw pointer and use the `bindMemory(to:)` method. If `T` and `Pointee` have different alignments, this pointer must be aligned with the larger of the two alignments.
-
 ## Parameters
 
 - `type`: The type to temporarily bind the memory referenced by this   pointer. The type   must be layout compatible   with the pointer’s   type.

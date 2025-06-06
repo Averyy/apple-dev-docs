@@ -32,8 +32,6 @@ For UIKit-based apps using a Storyboard Launch Screen:
 
 > **Note**:  If you are using a 3rd party development environment that provides the launch screen for your app, contact that 3rd party support team for help.
 
- If you are using a 3rd party development environment that provides the launch screen for your app, contact that 3rd party support team for help.
-
 #### App Launching with State Restoration
 
 Implement state restoration in your app so that the launch screen is used less often. iOS snapshots your app when it’s suspended and may use this snapshot instead of the launch screen the next time the app is launched. Users expect your app to be in the same state as when they left it. For more information on state restoration refer to [`About the UI restoration process`](https://developer.apple.com/documentation/UIKit/about-the-ui-restoration-process).
@@ -80,4 +78,4 @@ Implement state restoration in your app so that the launch screen is used less o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3118-debugging-your-apps-launch-screen)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3118-debugging-your-apps-launch-screen)*

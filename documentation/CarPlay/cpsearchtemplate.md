@@ -1,6 +1,6 @@
 # CPSearchTemplate
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: class
 
 A template that provides the ability to search for a destination and see a list of search results.
@@ -21,8 +21,6 @@ class CPSearchTemplate
 Use this template to provide the ability to search for a destination. When CarPlay displays the template, the user sees a search field, a Cancel button, and a localized keyboard. The template also shows the list of search results after your app completes the search request.
 
 > **Note**:  Some vehicles may limit the display of the keyboard. Check the [`limitedUserInterfaces`](cpsessionconfiguration/limiteduserinterfaces.md) property to determine whether there are limits.
-
- Some vehicles may limit the display of the keyboard. Check the [`limitedUserInterfaces`](cpsessionconfiguration/limiteduserinterfaces.md) property to determine whether there are limits.
 
 To use a search template, create an instance of [`CPSearchTemplate`](cpsearchtemplate.md) and set its [`delegate`](cpsearchtemplate/delegate.md) to an object that conforms to the [`CPSearchTemplateDelegate`](cpsearchtemplatedelegate.md) protocol. Push the template onto the navigation hierarchy by calling [`pushTemplate(_:animated:completion:)`](cpinterfacecontroller/pushtemplate(_:animated:completion:).md) on the interface controller. This presents the search template to the user.
 
@@ -68,4 +66,4 @@ When the user selects an item from the search result, the system calls the [`sea
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpsearchtemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpsearchtemplate)*

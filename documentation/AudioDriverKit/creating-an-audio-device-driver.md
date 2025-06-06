@@ -1,6 +1,6 @@
 # Creating an audio device driver
 
-**Framework**: AudioDriverKit
+**Framework**: Audiodriverkit
 
 Implement a configurable audio input source as a driver extension that runs in user space in macOS and iPadOS.
 
@@ -13,8 +13,6 @@ Implement a configurable audio input source as a driver extension that runs in u
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`Create audio drivers with DriverKit`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10190/). This version updates the sample to run in iPadOS, as discussed in WWDC22 session [`Bring your driver to iPad with DriverKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110373/).
-
-This sample code project is associated with WWDC21 session [`Create audio drivers with DriverKit`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10190/). This version updates the sample to run in iPadOS, as discussed in WWDC22 session [`Bring your driver to iPad with DriverKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110373/).
 
 This sample shows how to create an audio driver extension using the AudioDriverKit framework. The sample provides a C++ DriverKit implementation to publish a single audio device, output stream, input stream, volume control, and data-source selector control.
 
@@ -54,8 +52,6 @@ To run the sample app in macOS, use the scheme selector to select the SimpleAudi
 
 > **Note**: You can run the app directly from Xcode, without moving the app bundle to `/Applications` each time, by using the `systemextensionsctl` command to enable system extensions developer mode, as explained in [`Debugging and testing system extensions`](https://developer.apple.com/documentation/DriverKit/debugging-and-testing-system-extensions).
 
-You can run the app directly from Xcode, without moving the app bundle to `/Applications` each time, by using the `systemextensionsctl` command to enable system extensions developer mode, as explained in [`Debugging and testing system extensions`](https://developer.apple.com/documentation/DriverKit/debugging-and-testing-system-extensions).
-
 In macOS, the SimpleAudio app has two sections: Driver Manager, which installs the app, and User Client Manager, which interacts with the running driver. Under Driver Manager, click Install Driver. If a System Extension Blocked dialog appears, open System Settings and navigate to the Security & Privacy pane. Unlock the pane if necessary and click Allow to complete the installation. When installation completes, the Driver Manager status in the app displays the message “SimpleAudioDriver has been activated and is ready to use.”
 
 At this point, the sample’s audio device is available to Core Audio. To inspect the newly installed device, use the Audio MIDI Setup app (`Applications/Utilities`), which shows the sine tone’s frequency and sample rate. You can change these settings there, or in the SimpleAudio app’s User Client Manager section. Click Open User Client to open a connection from the app to the driver. Then you can use the other buttons in this section to toggle the frequency and sample rate.
@@ -81,8 +77,6 @@ To create an AudioDriverKit driver, the sample creates a driver that subclasses 
 The driver subclass is the entry point into the dext, while the device subclass handles start and stop I/O-related messages, timestamps, and configuration messages. The device also owns various [`IOUserAudioObject`](IOUserAudioObject.md) instances for things like timer dispatch sources and [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) references. In an actual hardware driver, the device class is also responsible for communication with the hardware over USB or PCI, and requires appropriate DriverKit entitlements for those transports. The sample doesn’t actually connect to hardware, and instead provides a virtual device that generates a sine tone.
 
 > **Note**: When creating a virtual device, best practice is to use an Audio Server Driver Plug-in instead, as described in [`Creating an Audio Server Driver Plug-in`](https://developer.apple.com/documentation/CoreAudio/creating-an-audio-server-driver-plug-in). AudioDriverKit only supports physical audio devices.
-
-When creating a virtual device, best practice is to use an Audio Server Driver Plug-in instead, as described in [`Creating an Audio Server Driver Plug-in`](https://developer.apple.com/documentation/CoreAudio/creating-an-audio-server-driver-plug-in). AudioDriverKit only supports physical audio devices.
 
 After initialization, DriverKit calls the driver’s [`Start`](https://developer.apple.com/documentation/kernel/ioservice/3180710-start) method. The implementation in `SimpleAudioDriver` creates and configures the `SimpleAudioDevice` instance and, if successful, calls [`RegisterService`](https://developer.apple.com/documentation/kernel/ioservice/3180701-registerservice) to let the system know the driver is running.
 
@@ -290,8 +284,6 @@ AddCustomProperty(custom_property.get());
 ```
 
 > **Note**: iPadOS doesn’t support custom properties and qualifiers.
-
-iPadOS doesn’t support custom properties and qualifiers.
 
 ##### Handle the Callback to Start Device Io
 
@@ -540,4 +532,4 @@ When this method returns, the configuration change is complete, and the system r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/audiodriverkit/creating-an-audio-device-driver)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AudioDriverKit/creating-an-audio-device-driver)*

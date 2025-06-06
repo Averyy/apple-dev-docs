@@ -1,6 +1,6 @@
 # Track aperture mode dimension atoms
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Atoms that store information for each of the track aperture presentation modes.
 
@@ -10,8 +10,6 @@ A video track in a QuickTime Movie can signal clean aperture and pixel aspect ra
 
 > **Note**: QuickTime tracks define simple dimensions for their content in the track header dimensions. In the absence of a track aperture mode dimensions atom, the dimensions in the track header are used for all modes.
 
-QuickTime tracks define simple dimensions for their content in the track header dimensions. In the absence of a track aperture mode dimensions atom, the dimensions in the track header are used for all modes.
-
 Considering this context, the dimensions recorded in the image description define the dimensions of the encoded pixels (encoded dimensions). What’s actually displayed is a result of applying the pixel aspect ratio and the clean aperture (display dimensions).
 
 Although the result of applying the clean aperture and the pixel aspect ratio is what is intended for final display, there are cases where it is useful to display all the pixels that exist in the content for various different purposes. Readers parsing QuickTime movies require information allowing these different display modes in order to provide this flexibility:
@@ -19,8 +17,6 @@ Although the result of applying the clean aperture and the pixel aspect ratio is
 The information for each of these presentation modes are represented in the optional track aperture mode dimensions atoms.
 
 > **Note**: Older applications built prior to QuickTime 7 will continue to use the dimension values stored in the track header.
-
-Older applications built prior to QuickTime 7 will continue to use the dimension values stored in the track header.
 
 ## Topics
 

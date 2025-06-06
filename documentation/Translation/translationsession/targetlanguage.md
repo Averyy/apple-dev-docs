@@ -22,8 +22,6 @@ If this value is set to `nil` the session chooses an optimal language to transla
 
 > **Note**: This value doesn’t update after translation; to see what target language the session uses for a particular translation, check the response [`targetLanguage`](translationsession/response/targetlanguage.md).
 
-This value doesn’t update after translation; to see what target language the session uses for a particular translation, check the response [`targetLanguage`](translationsession/response/targetlanguage.md).
-
 ## See Also
 
 - [let sourceLanguage: Locale.Language?](translationsession/sourcelanguage.md)

@@ -1,6 +1,6 @@
 # UIWebView
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A view that embeds web content in your app.
@@ -20,11 +20,7 @@ class UIWebView
 
 > **Note**:  In apps that run in iOS 8 and later, use the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class instead of using [`UIWebView`](uiwebview.md). Additionally, consider setting the [`WKPreferences`](https://developer.apple.com/documentation/WebKit/WKPreferences) property [`javaScriptEnabled`](https://developer.apple.com/documentation/WebKit/WKPreferences/javaScriptEnabled) to [`false`](https://developer.apple.com/documentation/swift/false) if you render files that aren’t supposed to run JavaScript.
 
- In apps that run in iOS 8 and later, use the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class instead of using [`UIWebView`](uiwebview.md). Additionally, consider setting the [`WKPreferences`](https://developer.apple.com/documentation/WebKit/WKPreferences) property [`javaScriptEnabled`](https://developer.apple.com/documentation/WebKit/WKPreferences/javaScriptEnabled) to [`false`](https://developer.apple.com/documentation/swift/false) if you render files that aren’t supposed to run JavaScript.
-
 > ❗ **Important**:  An iOS app linked on or after iOS 10.0 must include in its `Info.plist` file the usage description keys for the types of data it needs to access or it will crash. To access a user’s photo data specifically, it must include [`NSPhotoLibraryUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW17) and [`NSCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW24).
-
- An iOS app linked on or after iOS 10.0 must include in its `Info.plist` file the usage description keys for the types of data it needs to access or it will crash. To access a user’s photo data specifically, it must include [`NSPhotoLibraryUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW17) and [`NSCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW24).
 
 Use the [`loadHTMLString(_:baseURL:)`](uiwebview/loadhtmlstring(_:baseurl:).md) method to begin loading local HTML files or the [`loadRequest(_:)`](uiwebview/loadrequest(_:).md) method to begin loading web content. Use the [`stopLoading()`](uiwebview/stoploading().md) method to stop loading, and the [`isLoading`](uiwebview/isloading.md) property to find out if a web view is in the process of loading.
 
@@ -37,8 +33,6 @@ You can also use the [`scalesPageToFit`](uiwebview/scalespagetofit.md) property 
 Set the [`delegate`](uiwebview/delegate.md) property to an object conforming to the [`UIWebViewDelegate`](uiwebviewdelegate.md) protocol if you want to track the loading of web content.
 
 > ❗ **Important**:  You shouldn’t embed [`UIWebView`](uiwebview.md) or [`UITableView`](uitableview.md) objects in [`UIScrollView`](uiscrollview.md) objects. If you do so, unexpected behavior can result because touch events for the two objects can be mixed up and wrongly handled.
-
- You shouldn’t embed [`UIWebView`](uiwebview.md) or [`UITableView`](uitableview.md) objects in [`UIScrollView`](uiscrollview.md) objects. If you do so, unexpected behavior can result because touch events for the two objects can be mixed up and wrongly handled.
 
 You can debug the HTML, CSS, and JavaScript contained inside a [`UIWebView`](uiwebview.md) with Web Inspector. Read Debugging Web Content on iOS to learn how to configure Web Inspector for iOS. Read the rest of [`Safari Web Content Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002051) to learn how to create web content that’s optimized for Safari on iPhone and iPad.
 
@@ -186,4 +180,4 @@ The [`UIWebView`](uiwebview.md) class shouldn’t be subclassed.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiwebview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiwebview)*

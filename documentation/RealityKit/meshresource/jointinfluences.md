@@ -1,6 +1,6 @@
 # MeshResource.JointInfluences
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A buffer of vertex-joint influences which bind the mesh part’s vertices to a skeleton via a skinning deformation.
@@ -23,8 +23,6 @@ struct JointInfluences
 Each vertex is associated with a fixed number of influences. If `influencesPerVertex` is 4, then there should be four elements in the buffer of joint influences for each vertex in the mesh part.
 
 > **Note**: If a particular vertex needs fewer influences than the `influencesPerVertex` value, the influences for that vertex can be padded with zero-weight influences.
-
-If a particular vertex needs fewer influences than the `influencesPerVertex` value, the influences for that vertex can be padded with zero-weight influences.
 
 ## Topics
 

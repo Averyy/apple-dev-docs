@@ -1,6 +1,6 @@
 # videoZoomChanged
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 Restrict switching to a fallback camera only when the device’s video zoom changes.
@@ -23,8 +23,6 @@ static var videoZoomChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedS
 This condition switches cameras when the video zoom factor changes, either by setting a value for the device’s [`videoZoomFactor`](avcapturedevice/videozoomfactor.md) property or calling its [`ramp(toVideoZoomFactor:withRate:)`](avcapturedevice/ramp(tovideozoomfactor:withrate:).md) method.
 
 > **Note**:  All changes to video zoom factor allow switching to a fallback camera, not only those changes across switch-over zoom factors.
-
- All changes to video zoom factor allow switching to a fallback camera, not only those changes across switch-over zoom factors.
 
 ## See Also
 

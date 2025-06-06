@@ -23,8 +23,6 @@ If your app is universal, you’ll need to obtain images for both Apple silicon 
 
 > **Note**:  If the distribution you choose doesn’t provide images for the kernel and RAM disk, you’ll need to assemble and package those images yourself.
 
- If the distribution you choose doesn’t provide images for the kernel and RAM disk, you’ll need to assemble and package those images yourself.
-
 Some Linux distributions store kernel images in a compressed format, sometimes indicated by a `.gz` filename extension. If the image doesn’t have a file extension, you can determine the file’s compression status using the `file` command. After determining the file format for the image, add the appropriate filename extension. For example, if the output shows the file format as “gzip compressed data,” add the `.gz` extension to the image, and then use the `gzip` or `gunzip` command to unpack the image. Running `file` against the unpacked image reveals details about the kernel image you’re verifying.
 
 You can include the Linux kernel and RAM disk as resources in your Xcode project for use in your app, or implement a custom solution that allows the user to download and save images over the network.
@@ -75,4 +73,4 @@ Instantiate a [`VZVirtualMachine`](vzvirtualmachine.md) from the `VZVirtualMachi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/creating-and-running-a-linux-virtual-machine)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/creating-and-running-a-linux-virtual-machine)*

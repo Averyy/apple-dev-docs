@@ -1,6 +1,6 @@
 # subscriptionPeriod
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: property
 
 An object that defines the period for the product discount.
@@ -27,8 +27,6 @@ This object represents the duration of a single subscription period. A period is
 To calculate the total amount of time that the discount price is available to the user, multiply the [`subscriptionPeriod`](skproductdiscount/subscriptionperiod.md) by [`numberOfPeriods`](skproductdiscount/numberofperiods.md).
 
 > **Note**:  The subscription period for the discount is independent of the product’s regular subscription period, and does not have to match in units or duration.
-
- The subscription period for the discount is independent of the product’s regular subscription period, and does not have to match in units or duration.
 
 ## See Also
 

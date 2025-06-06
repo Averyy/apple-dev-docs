@@ -1,6 +1,6 @@
 # setFramingMode(_:)
 
-**Framework**: DockKit  
+**Framework**: Dockkit  
 **Kind**: method
 
 Customize the dock accessory’s tracking behavior.
@@ -26,8 +26,6 @@ Set the frame mode to the desired value before performing your own custom tracki
 The default is [`DockAccessory.FramingMode.automatic`](dockaccessory/framingmode-swift.enum/automatic.md). See [`DockAccessory.FramingMode`](dockaccessory/framingmode-swift.enum.md) for other values you can use to override.
 
 > **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t connected, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) in macOS.
-
-[`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t connected, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) in macOS.
 
 ## Parameters
 

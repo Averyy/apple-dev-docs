@@ -1,6 +1,6 @@
 # removeAll(where:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Removes all the elements that satisfy the given predicate.
@@ -32,8 +32,6 @@ phrase.removeAll(where: { vowels.contains($0) })
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Text.Case.lowercase
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: case
 
 Displays text in all lowercase characters.
@@ -26,8 +26,6 @@ For example, “Hello” would be displayed as “hello”.
 
 > **Note**: `StringProtocol.lowercased(with:)`
 
-`StringProtocol.lowercased(with:)`
-
 ## See Also
 
 - [Text.Case.uppercase](text/case/uppercase.md)
@@ -36,4 +34,4 @@ For example, “Hello” would be displayed as “hello”.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/text/case/lowercase)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/text/case/lowercase)*

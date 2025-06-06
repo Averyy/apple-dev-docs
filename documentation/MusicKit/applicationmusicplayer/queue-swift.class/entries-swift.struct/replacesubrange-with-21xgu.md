@@ -1,6 +1,6 @@
 # replaceSubrange(_:with:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Replaces the specified subrange of elements with the given collection.
@@ -39,8 +39,6 @@ Likewise, if you pass a zero-length collection as the `newElements` parameter, t
 Calling this method may invalidate any existing indices for use with this collection.
 
 > **Note**: O( + ), where  is length of this collection and  is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the collection, this method is equivalent to `append(contentsOf:)`.
-
-O( + ), where  is length of this collection and  is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the collection, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 

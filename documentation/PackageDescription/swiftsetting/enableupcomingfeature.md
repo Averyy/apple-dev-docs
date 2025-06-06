@@ -1,6 +1,6 @@
 # enableUpcomingFeature(_:_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Enable an upcoming feature with the given name.
@@ -21,8 +21,6 @@ An upcoming feature is one that is available in Swift as of a certain language v
 You can add and use multiple upcoming features in a given target without affecting its dependencies. Targets will ignore any unknown upcoming features.
 
 > **Note**: First available in PackageDescription 5.8.
-
-First available in PackageDescription 5.8.
 
 ## Parameters
 

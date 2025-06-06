@@ -1,6 +1,6 @@
 # Validating apps that connect to your server
 
-**Framework**: DeviceCheck
+**Framework**: Devicecheck
 
 Verify that connections to your server come from legitimate instances of your app.
 
@@ -28,8 +28,6 @@ The App Attest service creates an attestation object that consists of authentica
 - `credentialId` (32 bytes) — A hash of the public key part of the attested cryptographic key pair.
 
 > **Note**: An attestation `RP ID` that an App Clip generates uses the full app’s identifier, not the App Clip’s identifier. For information about the difference between the two, see [`Creating an App Clip with Xcode`](https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode).
-
-An attestation `RP ID` that an App Clip generates uses the full app’s identifier, not the App Clip’s identifier. For information about the difference between the two, see [`Creating an App Clip with Xcode`](https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode).
 
 The attestation statement uses a custom Apple attestation statement format with the following syntax:
 
@@ -77,8 +75,6 @@ After successfully completing these steps, you can trust the attestation object.
 
 > **Note**: Follow the [`Attestation Object Validation Guide`](attestation-object-validation-guide.md) to ensure your implementation for the steps above is correct.
 
-Follow the [`Attestation Object Validation Guide`](attestation-object-validation-guide.md) to ensure your implementation for the steps above is correct.
-
 ##### Store the Public Key and Receipt
 
 Store the verified public key from `credCert` on your server and associate it with the user for the specific device. You use this key to check assertions later. As an added protection against replay attacks, make sure that the public key doesn’t already have an association with another user.
@@ -88,8 +84,6 @@ The attestation statement also contains a receipt that you can use later in a se
 When attestation succeeds, independently verify and store the receipt immediately. For more information about how to interpret the receipt, and how to use a receipt to obtain or refresh the metric, see [`Assessing fraud risk`](assessing-fraud-risk.md).
 
 > ❗ **Important**: Be prepared to store multiple (key, receipt) pairs for each user. Store one pair for each device the user uses to access your services. Also, keep development pairs separate from production pairs because you can’t use one set in the other’s environment.
-
-Be prepared to store multiple (key, receipt) pairs for each user. Store one pair for each device the user uses to access your services. Also, keep development pairs separate from production pairs because you can’t use one set in the other’s environment.
 
 ##### Verify the Assertion
 
@@ -133,4 +127,4 @@ When the assertion meets all of these conditions, you can trust it. Store `count
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicecheck/validating-apps-that-connect-to-your-server)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceCheck/validating-apps-that-connect-to-your-server)*

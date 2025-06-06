@@ -1,6 +1,6 @@
 # AVPlaybackCoordinator
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: class
 
 An object that coordinates the playback of players in a connected group.
@@ -27,8 +27,6 @@ The framework provides two playback coordinator subclasses that manage different
 - [`AVDelegatingPlaybackCoordinator`](avdelegatingplaybackcoordinator.md) coordinates the state of custom player objects. If your app uses a custom player, such as one that renders media using [`AVSampleBufferDisplayLayer`](avsamplebufferdisplaylayer.md) and [`AVSampleBufferAudioRenderer`](avsamplebufferaudiorenderer.md), use this object to coordinate group playback. Adopt the coordinator’s delegate protocol so that your player responds to the commands that the coordinator issues.
 
 > **Note**:  Use the [`Group Activities`](https://developer.apple.com/documentation/GroupActivities) framework to connect a playback coordinator to its peers.
-
- Use the [`Group Activities`](https://developer.apple.com/documentation/GroupActivities) framework to connect a playback coordinator to its peers.
 
 ## Topics
 
@@ -94,4 +92,4 @@ The framework provides two playback coordinator subclasses that manage different
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avplaybackcoordinator)*

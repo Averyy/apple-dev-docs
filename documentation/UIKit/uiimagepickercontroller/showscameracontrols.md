@@ -1,6 +1,6 @@
 # showsCameraControls
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 A Boolean value that indicates whether the image picker displays the default camera controls.
@@ -22,8 +22,6 @@ var showsCameraControls: Bool { get set }
 The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which specifies that the default camera controls are visible in the picker. Set it to [`false`](https://developer.apple.com/documentation/swift/false) to hide the default controls if you want to instead provide a custom overlay view using the [`cameraOverlayView`](uiimagepickercontroller/cameraoverlayview.md) property.
 
 > **Note**:  In iOS 3.1.3 and earlier, hiding the default camera controls limits you to taking still pictures only, regardless of whether movie capture is available on the device.
-
- In iOS 3.1.3 and earlier, hiding the default camera controls limits you to taking still pictures only, regardless of whether movie capture is available on the device.
 
 If you set this property to [`false`](https://developer.apple.com/documentation/swift/false) and provide your own custom controls, you can take multiple pictures before dismissing the image picker interface. However, if you set this property to [`true`](https://developer.apple.com/documentation/swift/true), your delegate must dismiss the image picker interface after the user takes one picture or cancels the operation.
 

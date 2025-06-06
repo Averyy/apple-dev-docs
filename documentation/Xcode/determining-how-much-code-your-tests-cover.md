@@ -20,8 +20,6 @@ Code coverage is a testing option you can configure for your test plans. When yo
 
 > **Note**:  Code coverage data collection impacts your code’s performance. Even if the impact is significant, it is also linear, so results between two runs with code coverage enabled remain comparable. However, consider its impact when critically evaluating the performance of routines in your tests.
 
- Code coverage data collection impacts your code’s performance. Even if the impact is significant, it is also linear, so results between two runs with code coverage enabled remain comparable. However, consider its impact when critically evaluating the performance of routines in your tests.
-
 You enable code coverage in the Configurations pane of your test plan using the following steps:
 
 1. Open a test plan from the Project navigator or the scheme editor. For more information on creating a test plan, see [`Improving code assessment by organizing tests into test plans`](organizing-tests-to-improve-feedback.md).
@@ -53,8 +51,6 @@ According to the counts in the screenshot above, the test frequently called the 
 
 > **Note**: Swift Testing and XCTest support ways to identify a test to skip or a test you expect to fail due to known issue. Code coverage metrics do not include skipped tests but they do include tests that run marked with known issues or expected failures. Consider this when evaluating code coverage and attempt to resolve issues as soon as possible.
 
-Swift Testing and XCTest support ways to identify a test to skip or a test you expect to fail due to known issue. Code coverage metrics do not include skipped tests but they do include tests that run marked with known issues or expected failures. Consider this when evaluating code coverage and attempt to resolve issues as soon as possible.
-
 ## See Also
 
 - [Adding tests to your Xcode project](adding-tests-to-your-xcode-project.md)
@@ -67,4 +63,4 @@ Swift Testing and XCTest support ways to identify a test to skip or a test you e
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/determining-how-much-code-your-tests-cover)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/determining-how-much-code-your-tests-cover)*

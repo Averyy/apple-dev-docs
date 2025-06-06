@@ -28,8 +28,6 @@ Whether the encountered value was null.
 
 > **Note**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
 
-`DecodingError.keyNotFound` if `self` does not have an entry for the given key.
-
 ## Parameters
 
 - `key`: The key that the decoded value is associated with.

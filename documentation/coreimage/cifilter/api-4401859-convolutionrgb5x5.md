@@ -1,6 +1,6 @@
 # convolutionRGB5X5()
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: clm
 
 Applies a convolution 5 x 5 filter to the `RGB` components of an image.
@@ -26,8 +26,6 @@ This method applies a 5 x 5 convolution to the `RGB` components image. The effec
 The convolution-RGB 5 x 5 filter uses the following properties:
 
 > **Note**: When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
-
-When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
 
 The following code creates a filter that applies an unsharp kernel to the input image:
 

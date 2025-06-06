@@ -28,8 +28,6 @@ The path, or an empty string if the URL has an empty path.
 
 > **Note**:  This function resolves against the base `URL`.
 
- This function resolves against the base `URL`.
-
 New code should use [`path(percentEncoded:)`](url/path(percentencoded:).md) instead of this property.
 
 ## See Also

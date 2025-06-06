@@ -1,6 +1,6 @@
 # init(factor:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: init
 
 Creates a down sample temporal transformer.
@@ -23,8 +23,6 @@ init(factor: Int)
 #### Discussion
 
 > **Note**: `factor` must be greater than 0.
-
-`factor` must be greater than 0.
 
 ## Parameters
 

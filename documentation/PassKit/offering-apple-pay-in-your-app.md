@@ -1,6 +1,6 @@
 # Offering Apple Pay in Your App
 
-**Framework**: PassKit (Apple Pay and Wallet)
+**Framework**: Passkit
 
 Collect payments with iPhone and Apple Watch using Apple Pay.
 
@@ -23,8 +23,6 @@ A shared `PaymentHandler` class handles payment in each of the apps.
 
 > **Note**: This sample code project is associated with WWDC21 session [`10092: What’s New in Wallet and Apple Pay`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10092/).
 
-This sample code project is associated with WWDC21 session [`10092: What’s New in Wallet and Apple Pay`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10092/).
-
 ##### Configure the Sample Code Project
 
 Test Apple Pay payments with this sample by configuring the bundle identifiers and Apple Pay configuration items in Xcode. Doing this requires an Apple developer account. Before building the app, complete these four steps:
@@ -37,8 +35,6 @@ Test Apple Pay payments with this sample by configuring the bundle identifiers a
 Running this app on an iPhone or Apple Watch requires an Apple Pay card. Running in Simulator doesn’t require a card.
 
 > **Note**: Not all Apple Pay features are supported in the iOS simulator. Testing Apple Pay is unsupported in the watchOS simulator.
-
-Not all Apple Pay features are supported in the iOS simulator. Testing Apple Pay is unsupported in the watchOS simulator.
 
 For more information about processing an Apple Pay payment using a payment platform or merchant bank, see [`An easier way to pay within apps and websites`](https://developer.apple.comhttps://developer.apple.com/apple-pay). To set up your sandbox environment for testing, see [`Sandbox Testing`](https://developer.apple.comhttps://developer.apple.com/apple-pay/sandbox-testing/).
 
@@ -65,8 +61,6 @@ class func applePayStatus() -> (canMakePayments: Bool, canSetupCards: Bool) {
 The iOS app displays the payment button by adding an instance of [`PKPaymentButton`](pkpaymentbutton.md).
 
 > **Note**: The sample app doesn’t display the add button if a device can’t accept payments due to hardware limitations, parental controls, or any other reasons.
-
-The sample app doesn’t display the add button if a device can’t accept payments due to hardware limitations, parental controls, or any other reasons.
 
 ```swift
 let result = PaymentHandler.applePayStatus()
@@ -177,8 +171,6 @@ After the user enters an accepted coupon code, the method adds a new `PKPaymentS
 
 > **Note**: This method is wrapped in a conditional compilation flag as watchOS 8 doesn’t support coupon codes.
 
-This method is wrapped in a conditional compilation flag as watchOS 8 doesn’t support coupon codes.
-
 ```swift
 #if !os(watchOS)
 
@@ -266,4 +258,4 @@ Once the sample app calls the completion handler in the [`paymentAuthorizationCo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/passkit/offering-apple-pay-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/offering-apple-pay-in-your-app)*

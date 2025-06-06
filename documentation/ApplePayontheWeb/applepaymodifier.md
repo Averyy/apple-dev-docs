@@ -1,6 +1,6 @@
 # ApplePayModifier
 
-**Framework**: Apple Pay on the Web  
+**Framework**: Applepayontheweb  
 **Kind**: struct
 
 A dictionary that defines the Apple Pay modifiers for a payment type in the W3C Payment Request API.
@@ -27,8 +27,8 @@ dictionary ApplePayModifier {
 ## Mentions
 
 - [Setting up the payment request API to accept Apple Pay](setting-up-the-payment-request-api-to-accept-apple-pay.md)
-- [Apple Pay on the Web Version 14 Release Notes](apple-pay-on-the-web-version-14-release-notes.md)
 - [Apple Pay on the Web Version 12 Release Notes](apple-pay-on-the-web-version-12-release-notes.md)
+- [Apple Pay on the Web Version 14 Release Notes](apple-pay-on-the-web-version-14-release-notes.md)
 
 #### Overview
 
@@ -91,8 +91,6 @@ Applying the modifier overwrites the total in the payment request when the modif
 
 > ❗ **Important**:  The payment sheet displays data only. You’re responsible for supplying all values, including calculating new totals that result from using a modifier.
 
- The payment sheet displays data only. You’re responsible for supplying all values, including calculating new totals that result from using a modifier.
-
 For more information about using the Apple Pay modifier, see [`Setting up the payment request API to accept Apple Pay`](https://developer.apple.com/documentation/apple_pay_on_the_web/payment_request_api/setting_up_the_payment_request_api_to_accept_apple_pay).
 
 ##### Providing Multiple Modifiers
@@ -110,8 +108,6 @@ A typical payment request is for a one-time payment. To support different types 
 - The [`multiTokenContexts`](applepaymodifier/multitokencontexts.md) property to request multiple payment tokens to support multimerchant payments.
 
 > **Note**:  You can set only one of these optional payment type properties in the [`ApplePayModifier`](applepaymodifier.md).
-
- You can set only one of these optional payment type properties in the [`ApplePayModifier`](applepaymodifier.md).
 
 ##### Requesting a Recurring Payment
 
@@ -174,4 +170,4 @@ Use the [`multiTokenContexts`](applepaymodifier/multitokencontexts.md) property 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaymodifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaymodifier)*

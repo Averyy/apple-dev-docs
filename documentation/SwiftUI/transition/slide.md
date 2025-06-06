@@ -1,6 +1,6 @@
 # slide
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 A transition that inserts by moving in from the leading edge, and removes by moving out towards the trailing edge.
@@ -24,8 +24,6 @@ A transition that inserts by moving in from the leading edge, and removes by mov
 #### Discussion
 
 > **Note**: `AnyTransition.move(edge:)`
-
-`AnyTransition.move(edge:)`
 
 ## See Also
 
@@ -57,4 +55,4 @@ A transition that inserts by moving in from the leading edge, and removes by mov
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/transition/slide)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/transition/slide)*

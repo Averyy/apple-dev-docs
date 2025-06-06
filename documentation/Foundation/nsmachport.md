@@ -28,8 +28,6 @@ To use [`NSMachPort`](nsmachport.md) effectively, you should be familiar with Ma
 
 > **Note**:  [`NSMachPort`](nsmachport.md) conforms to the [`NSCoding`](nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](nsportcoder.md). [`Port`](port.md) and its subclasses do not support archiving.
 
- [`NSMachPort`](nsmachport.md) conforms to the [`NSCoding`](nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](nsportcoder.md). [`Port`](port.md) and its subclasses do not support archiving.
-
 ## Topics
 
 ### Creating and Initializing
@@ -88,4 +86,4 @@ To use [`NSMachPort`](nsmachport.md) effectively, you should be familiar with Ma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsmachport)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsmachport)*

@@ -1,6 +1,6 @@
 # IKRig
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A full body inverse kinematics rig definition for a single skeleton.
@@ -40,8 +40,6 @@ The table below provides detailed mappings of these weights to their respective 
 | Constraint orientation | Not applicable | [`weight`](ikrig/constraint/ikorientationdemand/weight.md) |
 
 > **Note**: While constraints do not have rig weight, they have blending weight between automatic and custom targets. See [`animationOverrideWeight`](ikcomponent/constraint/animationoverrideweight.md) for more information.
-
-While constraints do not have rig weight, they have blending weight between automatic and custom targets. See [`animationOverrideWeight`](ikcomponent/constraint/animationoverrideweight.md) for more information.
 
 ## Topics
 
@@ -83,4 +81,4 @@ While constraints do not have rig weight, they have blending weight between auto
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/ikrig)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/ikrig)*

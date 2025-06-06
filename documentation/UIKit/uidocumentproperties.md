@@ -1,6 +1,6 @@
 # UIDocumentProperties
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 Information that UIKit uses to generate a document header for a navigation item’s title menu.
@@ -30,10 +30,6 @@ Additionally, you can configure a set of sharing capabilities that allow people 
 - Set a [`dragItemsProvider`](uidocumentproperties/dragitemsprovider.md) to allow people to drag and drop the document by dragging the preview icon.
 
 > **Note**:  Session 10069: [`Meet desktop-class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069) Session 10070: [`Build a desktop-class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070)
-
- Session 10069: [`Meet desktop-class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069)
-
-Session 10070: [`Build a desktop-class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070)
 
 ## Topics
 

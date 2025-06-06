@@ -1,6 +1,6 @@
 # MultivariateLinearRegressor
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: struct
 
 A multivariate linear regressor.
@@ -25,8 +25,6 @@ struct MultivariateLinearRegressor<Scalar> where Scalar : MLShapedArrayScalar, S
 Unlike a [`LinearRegressor`](linearregressor.md), a [`MultivariateLinearRegressor`](multivariatelinearregressor.md) supports shaped array outputs with any number of elements. It also provides a wider range of training options better suited for large multi-dimensional regression.
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type. You may get faster training when using `Float`.
-
-Only `Float` and `Double` are currently supported as the Scalar type. You may get faster training when using `Float`.
 
 ## Topics
 
@@ -108,4 +106,4 @@ Only `Float` and `Double` are currently supported as the Scalar type. You may ge
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/multivariatelinearregressor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/multivariatelinearregressor)*

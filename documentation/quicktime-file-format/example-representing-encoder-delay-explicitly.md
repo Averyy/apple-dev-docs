@@ -1,6 +1,6 @@
 # Representing encoder delay explicitly
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 Review an example that represents the temporal position of 5 seconds of 48kHz PCM audio encoded in a 48kHz AAC sound track.
 
@@ -49,8 +49,6 @@ The edit list atom contains this [`Edit list table`](edit_list_atom/edit_list_ta
 
 > **Note**: For this example, the conventional encoder delay value of 2112 audio samples has been used. Alternative encoder delay values can also be explicitly represented with this mechanism, depending upon codec implementation.
 
-For this example, the conventional encoder delay value of 2112 audio samples has been used. Alternative encoder delay values can also be explicitly represented with this mechanism, depending upon codec implementation.
-
 The [`Sample group description atom ('sgpd')`](sample_group_description_atom.md) contains this data:
 
 - [`Size`](sample_group_description_atom/size.md): `26`
@@ -66,8 +64,6 @@ The sample group description atom contains this [`Payload data`](sample_group_de
 - payload data: `-1`
 
 > **Note**: Recall that the payload data value could be an alternative value, depending upon the particular codec in use. `-1` is typical for current AAC codecs.
-
-Recall that the payload data value could be an alternative value, depending upon the particular codec in use. `-1` is typical for current AAC codecs.
 
 And the [`Sample-to-group atom ('sbpd')`](sample-to-group_atom.md) contains this data:
 

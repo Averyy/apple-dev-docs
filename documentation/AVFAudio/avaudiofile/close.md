@@ -1,6 +1,6 @@
 # close()
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: method
 
 Closes the audio file.
@@ -25,8 +25,6 @@ func close()
 Calling this method closes the underlying file, if open. It’s normally unnecessary to close a file opened for reading because it’s automatically closed when released. It’s only necessary to close a file opened for writing in order to achieve specific control over when the file’s header is updated.
 
 > **Note**:  Once closed, further file read or write operations fail with a [`kAudio_FileNotFoundError`](https://developer.apple.com/documentation/CoreAudioTypes/kAudio_FileNotFoundError).
-
- Once closed, further file read or write operations fail with a [`kAudio_FileNotFoundError`](https://developer.apple.com/documentation/CoreAudioTypes/kAudio_FileNotFoundError).
 
 ## See Also
 

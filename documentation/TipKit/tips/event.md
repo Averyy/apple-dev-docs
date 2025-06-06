@@ -1,6 +1,6 @@
 # Tips.Event
 
-**Framework**: TipKit  
+**Framework**: Tipkit  
 **Kind**: struct
 
 A repeatable user-defined action.
@@ -25,8 +25,6 @@ struct Event<DonationInfo> where DonationInfo : Decodable, DonationInfo : Encoda
 Use an event when you want to track an action that can occur one or more times in your app (such as a user logging in). Then use [`donate()`](tips/event/donate().md) to donate to the event when the action occurs, increasing the event count by one.
 
 > **Note**: In order to remain performant, by default events only query their most recent 1000 donations.
-
-In order to remain performant, by default events only query their most recent 1000 donations.
 
 ##### Creating an Event with No Associated Donation Value
 

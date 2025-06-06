@@ -44,8 +44,6 @@ print(leastHue)
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## Parameters
 
 - `areInIncreasingOrder`: A predicate that returns    if its first argument should be ordered before its second   argument; otherwise,  .

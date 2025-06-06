@@ -8,8 +8,6 @@ Support HTTP resumable upload protocol in SwiftNIO by translating resumable uplo
 
 > **Note**: This sample code project is associated with WWDC23 session 10006: [`Build robust and resumable file transfers`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10006/).
 
-This sample code project is associated with WWDC23 session 10006: [`Build robust and resumable file transfers`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10006/).
-
 ##### Configure the Sample Code Project
 
 Before you run the sample code project:
@@ -31,4 +29,4 @@ Before you run the sample code project:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/building-a-resumable-upload-server-with-swiftnio)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/building-a-resumable-upload-server-with-swiftnio)*

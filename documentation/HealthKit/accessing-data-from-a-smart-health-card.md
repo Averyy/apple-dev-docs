@@ -1,6 +1,6 @@
 # Accessing Data from a SMART Health Card
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Query for and validate a verifiable clinical record.
 
@@ -12,8 +12,6 @@ Query for and validate a verifiable clinical record.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [`10089: Explore Verifiable Health Records`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10089/).
-
-This sample code project is associated with WWDC21 session [`10089: Explore Verifiable Health Records`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10089/).
 
 ##### Configure the Sample Code Project
 
@@ -52,4 +50,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/accessing-data-from-a-smart-health-card)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/accessing-data-from-a-smart-health-card)*

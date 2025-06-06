@@ -1,6 +1,6 @@
 # Distributing your app on an alternative app marketplace
 
-**Framework**: MarketplaceKit
+**Framework**: Marketplacekit
 
 Design your app for alternative distribution from an alternative app marketplace.
 
@@ -99,8 +99,6 @@ Set your target’s  build setting to a list of marketplace bundle IDs for the a
 
 > **Note**: The build setting by name is `MARKETPLACES`. Open your Xcode project in Xcode 15.3 or later and add the build setting manually if one by that title isn’t present.
 
-The build setting by name is `MARKETPLACES`. Open your Xcode project in Xcode 15.3 or later and add the build setting manually if one by that title isn’t present.
-
 This build setting overrides the [`current`](appdistributor/current.md) property for development builds, which enables you to test any custom code branching your app might do, such as displaying a different image or offering different menu items.
 
 ![A screenshot of Xcode Scheme settings window with Run selected in the sidebar and the options tab open. The Distribution pop-up menu shows the com.megabytemart.megabytemart option selected.](https://docs-assets.developer.apple.com/published/70e79d5d902f0366fe7fd4361d78a65f/distributing-your-app-on-an-alternative-marketplace-3%402x.png)
@@ -121,4 +119,4 @@ Similarly, to override the `current` distributor in a test plan, choose a market
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/distributing-your-app-on-an-alternative-marketplace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/distributing-your-app-on-an-alternative-marketplace)*

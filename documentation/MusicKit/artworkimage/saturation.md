@@ -1,6 +1,6 @@
 # saturation(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Adjusts the color saturation of this view.
@@ -48,8 +48,6 @@ struct Saturation: View {
 ```
 
 > **Note**: `contrast(_:)`
-
-`contrast(_:)`
 
 ## Parameters
 

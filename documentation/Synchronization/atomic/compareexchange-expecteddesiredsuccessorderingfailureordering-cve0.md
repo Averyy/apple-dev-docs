@@ -41,8 +41,6 @@ The `successOrdering` argument specifies the memory ordering to use when the ope
 
 > **Note**: This method implements a “strong” compare and exchange operation that does not permit spurious failures.
 
-This method implements a “strong” compare and exchange operation that does not permit spurious failures.
-
 ## Parameters
 
 - `expected`: The expected current value.

@@ -1,6 +1,6 @@
 # CustomMessageIdentifiable
 
-**Framework**: Group Activities  
+**Framework**: Groupactivities  
 **Kind**: protocol
 
 A type that assigns a custom ID string to messages you send to other devices.
@@ -27,8 +27,6 @@ Providing an app-specific string makes it possible to use different types to sup
 
 > **Note**: Custom types that adopt this protocol must also adopt the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol.
 
-Custom types that adopt this protocol must also adopt the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol.
-
 ## Topics
 
 ### Type Properties
@@ -49,4 +47,4 @@ Custom types that adopt this protocol must also adopt the [`Codable`](https://de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/custommessageidentifiable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GroupActivities/custommessageidentifiable)*

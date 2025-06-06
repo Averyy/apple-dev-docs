@@ -1,6 +1,6 @@
 # chunkDetails()
 
-**Framework**: MediaExtension  
+**Framework**: Mediaextension  
 **Kind**: method
 
 Returns information about the chunk that holds the sample indicated by the cursor.
@@ -23,8 +23,6 @@ A sample cursor chunk.
 If the sample resides in a contiguous chunk of the file among similar samples, this method returns information about that chunk.
 
 > **Note**:  If a cursor implements this method, it also needs to implement [`sampleLocation()`](mesamplecursor/samplelocation().md) to get samples inside the chunk’s location.
-
- If a cursor implements this method, it also needs to implement [`sampleLocation()`](mesamplecursor/samplelocation().md) to get samples inside the chunk’s location.
 
 It may not be practical to use this method with some media assets. In this case, or if the cursor doesn’t support this method, it returns [`MEError.Code.locationNotAvailable`](meerror-swift.struct/code/locationnotavailable.md), which indicates to use [`loadSampleBufferContainingSamples(to:completionHandler:)`](mesamplecursor/loadsamplebuffercontainingsamples(to:completionhandler:).md) to load the sample data instead.
 

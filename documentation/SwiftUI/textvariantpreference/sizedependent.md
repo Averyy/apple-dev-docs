@@ -1,6 +1,6 @@
 # sizeDependent
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: property
 
 The size dependent preference allows the text to take the available space into account when choosing the size variant to display.
@@ -26,8 +26,6 @@ When a [`Text`](text.md) provides different size options for its content, the si
 
 > **Note**: Only use this option where needed as it incurrs a performance cost on every [`Text`](text.md) it is applied to, even if the concrete text initializer cannot provide multiple size variants and there is no visual impact.
 
-Only use this option where needed as it incurrs a performance cost on every [`Text`](text.md) it is applied to, even if the concrete text initializer cannot provide multiple size variants and there is no visual impact.
-
 #### Difference to Doccomappleswiftuidocumentationswiftuiviewthatfits
 
 The [`sizeDependent`](textvariantpreference/sizedependent.md) text variant preference differs from [`ViewThatFits`](viewthatfits.md) both in usage and in behavior. [`ViewThatFits`](viewthatfits.md) chooses the first child where the  size fits the available space. For [`Text`](text.md) this means that it will only choose texts that can fit their contents into the available space . With this text variant preference, on the other hand, the largest variant is chosen that can fit the available space while respecting all the regular layout rules, such as [`lineLimit`](environmentvalues/linelimit.md).
@@ -37,4 +35,4 @@ To use [`ViewThatFits`](viewthatfits.md), multiple different views have to be pr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/textvariantpreference/sizedependent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/textvariantpreference/sizedependent)*

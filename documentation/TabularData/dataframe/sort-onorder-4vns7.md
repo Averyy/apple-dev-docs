@@ -1,6 +1,6 @@
 # sort(on:order:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Arranges the rows of a data frame according to a column that you select by its name.
@@ -31,8 +31,6 @@ This is a convenience method that only works for columns of the following types:
 - [`Date`](https://developer.apple.com/documentation/Foundation/Date)
 
 > **Note**: Elements with a value of `nil` are less than all non-`nil` values.
-
-Elements with a value of `nil` are less than all non-`nil` values.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # Audio.GeneratorRenderHandler
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: typealias
 
 A handler that generates real-time audio.
@@ -23,8 +23,6 @@ typealias GeneratorRenderHandler = AVAudioSourceNodeRenderBlock
 The audio format is `Float32` with a sample rate of `48000`.
 
 > **Note**: The system executes your handler in a real-time audio thread. Achieve optimal performance by ensuring the closure finishes quickly. Avoid heap allocations or locks within the closure.
-
-The system executes your handler in a real-time audio thread. Achieve optimal performance by ensuring the closure finishes quickly. Avoid heap allocations or locks within the closure.
 
 
 ---

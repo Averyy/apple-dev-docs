@@ -1,6 +1,6 @@
 # Handling input from Apple Pencil
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Learn how to detect and respond to touches from Apple Pencil.
 
@@ -13,8 +13,6 @@ UIKit reports touches from Apple Pencil in the same way it reports touches from 
 Because Apple Pencil is a separate device, there’s a delay between the time Apple Pencil gathers altitude, azimuth, and force values and the time that those values are reported to your app. As a result, UIKit may provide  values for those properties initially, and then provide the real values at a later time. If you use altitude, azimuth, or force information from Apple Pencil, you must explicitly handle estimated properties.
 
 > **Note**:  Devices that work with Apple Pencil can report touches at up to 240 Hz. Because UIKit usually reports touches at around 60 Hz, any additional touches are coalesced into a single touch representing the last location. For information about how to get the additional touch data, see [`Getting high-fidelity input with coalesced touches`](getting-high-fidelity-input-with-coalesced-touches.md).
-
- Devices that work with Apple Pencil can report touches at up to 240 Hz. Because UIKit usually reports touches at around 60 Hz, any additional touches are coalesced into a single touch representing the last location. For information about how to get the additional touch data, see [`Getting high-fidelity input with coalesced touches`](getting-high-fidelity-input-with-coalesced-touches.md).
 
 ##### Handle Estimated Properties
 
@@ -89,4 +87,4 @@ override func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/handling-input-from-apple-pencil)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/handling-input-from-apple-pencil)*

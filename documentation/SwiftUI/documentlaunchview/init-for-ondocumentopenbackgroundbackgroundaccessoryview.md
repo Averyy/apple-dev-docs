@@ -1,6 +1,6 @@
 # init(_:for:_:onDocumentOpen:background:backgroundAccessoryView:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: init
 
 Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background view, and a background accessory view.
@@ -18,8 +18,6 @@ init(_ title: LocalizedStringKey, for contentTypes: [UTType], @ViewBuilder _ act
 #### Discussion
 
 > **Note**:  An alternative to `DocumentLaunchView` is a scene variant of this API: [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md). If the app definition contains `DocumentGroup` scenes, consider using a `DocumentGroupLaunchScene` instead of this view.
-
- An alternative to `DocumentLaunchView` is a scene variant of this API: [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md). If the app definition contains `DocumentGroup` scenes, consider using a `DocumentGroupLaunchScene` instead of this view.
 
 ## Parameters
 

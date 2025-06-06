@@ -1,6 +1,6 @@
 # restartPolling()
 
-**Framework**: Core NFC  
+**Framework**: Corenfc  
 **Kind**: method
 
 Restarts the polling sequence so the reader session can discover new tags.
@@ -21,8 +21,6 @@ func restartPolling()
 After restarting the polling sequence, the reader session sends newly detected tags to the session’s delegate method [`tagReaderSession(_:didDetect:)`](nfctagreadersessiondelegate-2joku/tagreadersession(_:diddetect:).md).
 
 > **Note**:  Tags detected before polling restarts are invalid. Your app should discard any references it has to the invalid tags to free system resources.
-
- Tags detected before polling restarts are invalid. Your app should discard any references it has to the invalid tags to free system resources.
 
 Calling [`restartPolling()`](nfctagreadersession/restartpolling().md) on an invalidated session has no effect. If you need to restart the reader session, create a new [`NFCTagReaderSession`](nfctagreadersession.md).
 

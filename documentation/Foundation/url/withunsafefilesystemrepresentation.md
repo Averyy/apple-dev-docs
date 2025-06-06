@@ -30,8 +30,6 @@ The file system representation is a null-terminated C string with canonical UTF-
 
 > **Note**:  The pointer is not valid outside the context of the closure.
 
- The pointer is not valid outside the context of the closure.
-
 ## Parameters
 
 - `block`: The parameter passed to the closure is   if the URL cannot be represented by the file system. For example, if the URL contains an accented character and the file system only supports ASCII, no file system representation is possible.

@@ -1,6 +1,6 @@
 # saturation(_:)
 
-**Framework**: App Intents  
+**Framework**: Appintents  
 **Kind**: method
 
 Adjusts the color saturation of this view.
@@ -47,8 +47,6 @@ struct Saturation: View {
 ```
 
 > **Note**: `contrast(_:)`
-
-`contrast(_:)`
 
 ## Parameters
 

@@ -48,8 +48,6 @@ You can create an invalid privacy manifest when you use both `NSPrivacyTrackingD
 
 > **Note**: If your app or third-party SDK doesn’t connect, or no longer connects to any tracking domains, remove both `NSPrivacyTrackingDomains` and `NSPrivacyTracking` keys from your privacy manifest. Alternatively, set the value of `NSPrivacyTracking` to `false` and remove `NSPrivacyTrackingDomains` from your privacy manifest.
 
-If your app or third-party SDK doesn’t connect, or no longer connects to any tracking domains, remove both `NSPrivacyTrackingDomains` and `NSPrivacyTracking` keys from your privacy manifest. Alternatively, set the value of `NSPrivacyTracking` to `false` and remove `NSPrivacyTrackingDomains` from your privacy manifest.
-
 #### Possible Reasons for an Invalid Accessed Api Type Value
 
 The following table lists reasons why a value for the `NSPrivacyAccessedAPIType` key is invalid:
@@ -70,8 +68,6 @@ The following table lists reasons why a value for the `NSPrivacyAccessedAPITypeR
 | The value is an array of strings, but some entries don’t match the expected values for the `NSPrivacyAccessedAPIType` key you provide. | In the dictionary that contains the `NSPrivacyAccessedAPITypeReasons` key, check the value of the `NSPrivacyAccessedAPIType` key. Confirm each reason string in the array exactly matches a value associated with `NSPrivacyAccessedAPIType`. |
 
 > **Note**: If your app or third-party SDK doesn’t use, or no longer uses a specific required reason API, remove its related dictionary from the `NSPrivacyAccessedAPITypes` key. If `NSPrivacyAccessedAPITypes` is empty, remove it from the privacy manifest.
-
-If your app or third-party SDK doesn’t use, or no longer uses a specific required reason API, remove its related dictionary from the `NSPrivacyAccessedAPITypes` key. If `NSPrivacyAccessedAPITypes` is empty, remove it from the privacy manifest.
 
 #### Possible Reasons for an Invalid Accessed Api Types Value
 
@@ -109,8 +105,6 @@ If the privacy manifest is malformed, an error message appears in Terminal:
 To fix the errors, open your privacy manifest in a text editor or Xcode to address them.
 
 > **Note**: If your privacy manifest is a valid plist, check its keys and values. Your privacy manifest could still be invalid if its keys and values don’t match the values App Store Connect expects. For more information about the keys and values App Store Connect expects, see [`Privacy manifest files`](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files).
-
-If your privacy manifest is a valid plist, check its keys and values. Your privacy manifest could still be invalid if its keys and values don’t match the values App Store Connect expects. For more information about the keys and values App Store Connect expects, see [`Privacy manifest files`](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files).
 
 #### Revision History
 
@@ -152,4 +146,4 @@ If your privacy manifest is a valid plist, check its keys and values. Your priva
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3181-debugging-invalid-privacy-manifest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3181-debugging-invalid-privacy-manifest)*

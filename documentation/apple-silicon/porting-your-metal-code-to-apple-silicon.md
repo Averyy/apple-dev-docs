@@ -1,6 +1,6 @@
 # Porting your Metal code to Apple silicon
 
-**Framework**: Apple silicon
+**Framework**: Apple Silicon
 
 Create a version of your Metal app that runs on both Apple silicon and Intel-based Mac computers.
 
@@ -40,8 +40,6 @@ Apple-family GPUs use tile memory inside the GPU to temporarily hold texture con
 
 > **Note**: If your app is linked against macOS 10.15 or earlier, is running under Rosetta translation, and you set a load action to [`MTLLoadAction.dontCare`](https://developer.apple.com/documentation/Metal/MTLLoadAction/dontCare), Metal forces the GPU to load the contents into tile memory, trading performance for behavior more consistent with Intel-based Macs.
 
-If your app is linked against macOS 10.15 or earlier, is running under Rosetta translation, and you set a load action to [`MTLLoadAction.dontCare`](https://developer.apple.com/documentation/Metal/MTLLoadAction/dontCare), Metal forces the GPU to load the contents into tile memory, trading performance for behavior more consistent with Intel-based Macs.
-
 For more information on load and store actions, see [`Setting Load and Store Actions`](https://developer.apple.com/documentation/Metal/setting-load-and-store-actions).
 
 ##### Make Vertex Shader Positions Invariant
@@ -64,8 +62,6 @@ When Metal compiles vertex shaders, the compiler optimizes the shader for perfor
 
 > **Note**: If your app is linked against macOS 10.15 or earlier and is running under Rosetta translation, Metal compiles vertex positions as if the `invariant` keyword were present, trading performance for behavior more consistent with Intel-based Macs.
 
-If your app is linked against macOS 10.15 or earlier and is running under Rosetta translation, Metal compiles vertex positions as if the `invariant` keyword were present, trading performance for behavior more consistent with Intel-based Macs.
-
 ##### Bind Textures Once for Write Access
 
 Metal doesn’t permit you to bind the same texture to multiple arguments of a shader if any those arguments can write to the texture (`access::write` or `access:: read_write`). If you need both read and write access, you must bind the texture to a single argument with the `access::read_write` keyword, and synchronize access to the texture.
@@ -75,8 +71,6 @@ Similarly, if you assign a depth texture to a render pass and update its content
 To detect code that incorrectly binds textures, turn on Metal API validation in Xcode and run your app. Revise that code to perform the work in separate render passes, so updates to textures are complete before you read from them.
 
 > **Note**: If your app is linked against macOS 10.15 or earlier and is running under Rosetta translation, Metal takes snapshots of depth data before a render pass, redirecting any memory reads to the snapshot. This behavior comes with a cost in performance.
-
-If your app is linked against macOS 10.15 or earlier and is running under Rosetta translation, Metal takes snapshots of depth data before a render pass, redirecting any memory reads to the snapshot. This behavior comes with a cost in performance.
 
 ##### Check Depth and Stencil Texture Formats
 

@@ -1,6 +1,6 @@
 # texture(with:options:)
 
-**Framework**: GLKit  
+**Framework**: Glkit  
 **Kind**: method
 
 Loads a 2D texture image from a Quartz image and creates a new texture from the data.
@@ -36,10 +36,6 @@ If the image was created using the CGBitmapImageContextCreate function, it must 
 | RGB | 32 bpp, 8 bpc, [`CGImageAlphaInfo.premultipliedFirst`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/premultipliedFirst) |
 
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

@@ -87,8 +87,6 @@ To learn more about the `PackageDescription` framework, see [`Package`](https://
 
 > **Note**: Xcode provides code completion when you edit the package manifest.
 
-Xcode provides code completion when you edit the package manifest.
-
 ##### Add Your Code
 
 Per convention, source files reside in a subfolder of the package’s `Sources` directory that has the same name as the target they belong to. Note how the package manifest above declares the `MyLibrary` target. Its source files reside in `Sources/MyLibrary` while source files for tests reside in `Tests/MyLibraryTests`. You can use additional subfolders to structure them. Per default, Xcode includes all valid source files inside a target’s folder. If you prefer to declare included source files explicitly, pass them using the [`sources`](https://developer.apple.com/documentation/PackageDescription/Target/sources) parameter when you initialize the [`Target`](https://developer.apple.com/documentation/PackageDescription/Target). You can also pass paths to directories.
@@ -190,8 +188,6 @@ let package = Package(
 
 > 💡 **Tip**: If you plan to publish a Swift package that doesn’t support all platforms, consider mentioning the supported platforms in your `README.md` file. In addition, think about adding support for other platforms to grow its audience.
 
-If you plan to publish a Swift package that doesn’t support all platforms, consider mentioning the supported platforms in your `README.md` file. In addition, think about adding support for other platforms to grow its audience.
-
 ##### Build Your Targets and Run Unit Tests
 
 Xcode creates a scheme for each product in the package manifest. Select a scheme for the package’s build-and-run destination, and build it as you’d build an app target. Each source target usually has at least one corresponding test target. If your package contains multiple products, Xcode creates an additional scheme with the name -Package to build all targets and run all unit tests.
@@ -214,4 +210,4 @@ Xcode creates a scheme for each product in the package manifest. Select a scheme
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-a-standalone-swift-package-with-xcode)*

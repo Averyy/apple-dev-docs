@@ -32,8 +32,6 @@ The collection of changes passed as `changes` must meet these requirements:
 
 > **Note**: O( * log()), where  is the length of the parameter.
 
-O( * log()), where  is the length of the parameter.
-
 ## Parameters
 
 - `changes`: A collection of changes that represent a transition   between two states.

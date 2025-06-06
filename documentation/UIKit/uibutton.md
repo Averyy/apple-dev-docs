@@ -1,6 +1,6 @@
 # UIButton
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A control that executes your custom code in response to user interactions.
@@ -42,8 +42,6 @@ When adding a button to your interface, perform the following steps:
 
 > ❗ **Important**:  An app built with Mac Catalyst running in macOS 11 throws an exception when calling a button’s [`addGestureRecognizer(_:)`](uiview/addgesturerecognizer(_:).md) method when [`buttonType`](uibutton/buttontype-swift.property.md) is [`UIButton.ButtonType.system`](uibutton/buttontype-swift.enum/system.md) and the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md).
 
- An app built with Mac Catalyst running in macOS 11 throws an exception when calling a button’s [`addGestureRecognizer(_:)`](uiview/addgesturerecognizer(_:).md) method when [`buttonType`](uibutton/buttontype-swift.property.md) is [`UIButton.ButtonType.system`](uibutton/buttontype-swift.enum/system.md) and the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md).
-
 ##### Respond to Button Taps
 
 Buttons use the target-action design pattern to notify your app when the user taps the button. Rather than handle touch events directly, you assign action methods to the button and designate which events trigger calls to your methods. At runtime, the button handles all incoming touch events and calls your methods in response.
@@ -55,8 +53,6 @@ You connect a button to your action method using the [`addTarget(_:action:for:)`
 A button’s type defines its basic appearance and behavior. You specify the type of a button at creation time using the [`init(type:)`](uibutton/init(type:).md) method or in your storyboard file. After creating a button, you can’t change its type. The most commonly used button types are the Custom and System types, but use the other types when appropriate.
 
 > **Note**:  To configure the appearance of all buttons in your app, use the appearance proxy object. The [`UIButton`](uibutton.md) class implements the [`appearance()`](uiappearance/appearance().md) class method, which you can use to fetch the appearance proxy for all buttons in your app.
-
- To configure the appearance of all buttons in your app, use the appearance proxy object. The [`UIButton`](uibutton.md) class implements the [`appearance()`](uiappearance/appearance().md) class method, which you can use to fetch the appearance proxy for all buttons in your app.
 
 ###### Configure Button States
 
@@ -318,4 +314,4 @@ For more information about making iOS controls accessible, see the accessibility
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibutton)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uibutton)*

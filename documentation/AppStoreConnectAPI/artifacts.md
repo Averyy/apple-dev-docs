@@ -1,6 +1,6 @@
 # Artifacts
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read information about artifacts Xcode Cloud creates when it performs a build.
 
@@ -16,8 +16,6 @@ The `ciArtifacts` resource represents an artifact that Xcode Cloud creates when 
 Use the provided information to create statistics for the artifacts Xcode Cloud creates or archive Xcode Cloud build artifacts on your own server.
 
 > **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
-
- This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
 
@@ -44,4 +42,4 @@ Use the provided information to create statistics for the artifacts Xcode Cloud 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/artifacts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/artifacts)*

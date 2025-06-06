@@ -1,6 +1,6 @@
 # SFAuthenticationSession
 
-**Framework**: Safari Services  
+**Framework**: Safariservices  
 **Kind**: class
 
 A class that manages sharing a one-time login between Safari and an app, which can also provide automatic login for associated apps.
@@ -26,8 +26,6 @@ The two cases where you would use `SFAuthenticationSession` are:
 - Providing a single sign-on (SSO) experience for applications. This option works well for enterprise companies that have many applications installed on the same device.
 
 > **Note**:  Ensure that there is a strong reference to the `SFAuthenticationSession` instance when the session is in progress.
-
- Ensure that there is a strong reference to the `SFAuthenticationSession` instance when the session is in progress.
 
 If an application uses `SFAuthenticationSession`, users are prompted by a dialog to give explicit consent, allowing the application to access the website’s data in Safari. When the webpage is presented, it runs in a separate process, so the user and web service are guaranteed that the app has no way to gain access to the user’s credentials. Instead, the app gets a unique authentication token.
 
@@ -77,4 +75,4 @@ The dismiss button in `SFAuthenticationSession` always says Cancel. Applications
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sfauthenticationsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/sfauthenticationsession)*

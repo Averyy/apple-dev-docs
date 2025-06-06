@@ -1,6 +1,6 @@
 # prepareInterfaceForExtensionConfiguration()
 
-**Framework**: Authentication Services  
+**Framework**: Authenticationservices  
 **Kind**: method
 
 Prepares the interface to enable the user to configure the extension.
@@ -26,8 +26,6 @@ The system calls this method after the user enables your extension in Settings. 
 After finishing configuration, tell the system to dismiss your view controller by calling the context’s [`completeExtensionConfigurationRequest()`](ascredentialproviderextensioncontext/completeextensionconfigurationrequest().md) method.
 
 > **Note**:  To receive a call to this method, specify the [`ShowsConfigurationUI`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/ASCredentialProviderExtensionCapabilities/ShowsConfigurationUI) key with a value of `YES` in the [`ASCredentialProviderExtensionCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/ASCredentialProviderExtensionCapabilities) dictionary, within the [`NSExtensionAttributes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes) dictionary in the extension’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
-
- To receive a call to this method, specify the [`ShowsConfigurationUI`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/ASCredentialProviderExtensionCapabilities/ShowsConfigurationUI) key with a value of `YES` in the [`ASCredentialProviderExtensionCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/ASCredentialProviderExtensionCapabilities) dictionary, within the [`NSExtensionAttributes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes) dictionary in the extension’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # contentShape(_:_:eoFill:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Sets the content shape for this view.
@@ -67,8 +67,6 @@ When someone activates the context menu with an action like touch and hold in iO
 The content shape also supports applying modifiers such as [`inset(by:)`](insettableshape/inset(by:).md) to add padding.
 
 > **Note**: Similar to [`focusEffect`](contentshapekinds/focuseffect.md), the [`contextMenuPreview`](contentshapekinds/contextmenupreview.md) and [`dragPreview`](contentshapekinds/dragpreview.md) content shapes do not impact the hit-testing shape. In this example, someone can touch and hold anywhere on the [`VStack`](vstack.md) to activate the menu. If you only want the [`Image`](image.md) to activate the menu, apply [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md) to the [`Image`](image.md) instead.
-
-Similar to [`focusEffect`](contentshapekinds/focuseffect.md), the [`contextMenuPreview`](contentshapekinds/contextmenupreview.md) and [`dragPreview`](contentshapekinds/dragpreview.md) content shapes do not impact the hit-testing shape. In this example, someone can touch and hold anywhere on the [`VStack`](vstack.md) to activate the menu. If you only want the [`Image`](image.md) to activate the menu, apply [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md) to the [`Image`](image.md) instead.
 
 ## Parameters
 

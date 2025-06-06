@@ -66,8 +66,6 @@ The [`Progress`](progress.md) reporting mechanism supports a loosely coupled rel
 
 > **Note**:  The [`completedUnitCount`](progress/completedunitcount.md) property for a containing progress object only updates when the suboperation is `100%` complete. The [`fractionCompleted`](progress/fractioncompleted.md) property for a containing progress object updates continuously as work progresses for all suboperations.
 
- The [`completedUnitCount`](progress/completedunitcount.md) property for a containing progress object only updates when the suboperation is `100%` complete. The [`fractionCompleted`](progress/fractioncompleted.md) property for a containing progress object updates continuously as work progresses for all suboperations.
-
 You add suboperation progress objects to your tree implicitly or explicitly.
 
 ###### Adding a Progress Operation Implicitly
@@ -247,4 +245,4 @@ In the following example, the overall progress object has 10 units. The subopera
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/progress)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/progress)*

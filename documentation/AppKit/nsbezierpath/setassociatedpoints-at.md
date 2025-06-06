@@ -1,6 +1,6 @@
 # setAssociatedPoints(_:at:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Changes the points associated with the specified path element.
@@ -33,8 +33,6 @@ NSPoint newPoint = NSMakePoint(50.0, 50.0);
 ```
 
 > **Note**:  If you specify too few points for a path element of type [`NSCurveToBezierPathElement`](nscurvetobezierpathelement.md), the behavior of this method is undefined.
-
- If you specify too few points for a path element of type [`NSCurveToBezierPathElement`](nscurvetobezierpathelement.md), the behavior of this method is undefined.
 
 ## Parameters
 

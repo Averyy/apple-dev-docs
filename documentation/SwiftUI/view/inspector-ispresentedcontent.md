@@ -1,6 +1,6 @@
 # inspector(isPresented:content:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Inserts an inspector at the applied position in the view hierarchy.
@@ -36,11 +36,7 @@ struct ShapeEditor: View {
 
 > **Note**: Trailing column inspectors have their presentation state restored by the framework.
 
-Trailing column inspectors have their presentation state restored by the framework.
-
 > **Note**: [`InspectorCommands`](inspectorcommands.md) for including the default inspector commands and keyboard shortcuts.
-
-[`InspectorCommands`](inspectorcommands.md) for including the default inspector commands and keyboard shortcuts.
 
 ## Parameters
 

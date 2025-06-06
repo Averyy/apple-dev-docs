@@ -1,6 +1,6 @@
 # replaceAll(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Replaces all entities in this collection with those from the given sequence.
@@ -21,8 +21,6 @@ mutating func replaceAll<S>(_ children: S) where S : Sequence, S.Element : Entit
 #### Discussion
 
 > **Note**: This operation might not maintain the new entities’ index order.
-
-This operation might not maintain the new entities’ index order.
 
 
 ---

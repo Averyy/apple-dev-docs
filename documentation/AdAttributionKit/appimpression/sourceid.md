@@ -1,6 +1,6 @@
 # sourceID
 
-**Framework**: AdAttributionKit  
+**Framework**: Adattributionkit  
 **Kind**: property
 
 A four-digit integer that ad networks define to represent the ad campaign.
@@ -21,8 +21,6 @@ var sourceID: Int { get }
 The `sourceID` is also known as the . Ad networks and developers define its meaning. This integer can have up to four digits. You might receive two, three, or all four digits of the `sourceID` in the first winning postback, based on the data tier of the postback. You can use the different digits of the source identifier to represent different aspects of your ad, such as campaign information, placement, locale, and so on. For more information about the values you might get in the postback, see [`Identifying the parameters in a postback`](identifying-the-parameters-in-a-postback.md).
 
 > **Note**: A postback report represents this integer as a string in the `source-identifier` parameter in the payload of the JSON Web Signature (JWS). For more details about the parameters of a postback, see [`Identifying the parameters in a postback`](identifying-the-parameters-in-a-postback.md).
-
-A postback report represents this integer as a string in the `source-identifier` parameter in the payload of the JSON Web Signature (JWS). For more details about the parameters of a postback, see [`Identifying the parameters in a postback`](identifying-the-parameters-in-a-postback.md).
 
 
 ---

@@ -1,6 +1,6 @@
 # Security Interface
 
-**Framework**: Security Interface  
+**Framework**: Securityinterface  
 **Kind**: module
 
 Provide user interface elements for security features such as authorization, access to digital certificates, and access to items in keychains.
@@ -11,8 +11,6 @@ Provide user interface elements for security features such as authorization, acc
 #### Overview
 
 > **Note**:  This document was previously titled . The documentation for the SFAuthorization class is now in a separate document, [`Security Foundation`](https://developer.apple.com/documentation/SecurityFoundation).
-
- This document was previously titled . The documentation for the SFAuthorization class is now in a separate document, [`Security Foundation`](https://developer.apple.com/documentation/SecurityFoundation).
 
 The Security Interface framework is a set of Objective-C classes that provide user interface elements for programs that implement security features such as authorization, access to digital certificates, and access to items in keychains.
 

@@ -28,11 +28,7 @@ func getBytes<R>(_ buffer: inout [UInt8], maxLength maxBufferCount: Int, usedLen
 
 > **Note**: Conversion stops when the buffer fills or when the conversion isn’t possible due to the chosen encoding.
 
-Conversion stops when the buffer fills or when the conversion isn’t possible due to the chosen encoding.
-
 > **Note**: Will get a maximum of `min(buffer.count, maxLength)` bytes.
-
-Will get a maximum of `min(buffer.count, maxLength)` bytes.
 
 ## Parameters
 

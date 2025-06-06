@@ -38,8 +38,6 @@ Session cookies (where the cookie object’s [`isSessionOnly`](httpcookie/issess
 
 > **Note**:  In cases where a cookie storage is shared between processes, changes made to the cookie accept policy affect all currently running apps using the cookie storage.
 
- In cases where a cookie storage is shared between processes, changes made to the cookie accept policy affect all currently running apps using the cookie storage.
-
 ##### Subclassing Notes
 
 The [`HTTPCookieStorage`](httpcookiestorage.md) class is usable as-is, but you can subclass it. For example, you can override the storage methods like [`storeCookies(_:for:)`](httpcookiestorage/storecookies(_:for:).md), [`getCookiesFor(_:completionHandler:)`](httpcookiestorage/getcookiesfor(_:completionhandler:).md) to screen which cookies are stored, or reimplement the storage mechanism for security or other reasons.
@@ -108,4 +106,4 @@ When overriding methods of this class, be aware that methods that take a `task` 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/httpcookiestorage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/httpcookiestorage)*

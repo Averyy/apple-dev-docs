@@ -1,6 +1,6 @@
 # Content filter providers
 
-**Framework**: Network Extension
+**Framework**: Networkextension
 
 Create an on-device network content filter.
 
@@ -20,8 +20,6 @@ For example, your filter control provider might download a set of filtering rule
 For detailed information about content filter provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/Technotes/tn3134-network-extension-provider-deployment).
 
 > **Note**:  When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
-
- When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
 
 ## Topics
 
@@ -70,4 +68,4 @@ For detailed information about content filter provider deployment options, see [
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/content-filter-providers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/content-filter-providers)*

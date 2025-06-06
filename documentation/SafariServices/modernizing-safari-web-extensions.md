@@ -1,6 +1,6 @@
 # Modernizing Safari Web Extensions
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Learn about enhancements to Safari Web Extensions.
 
@@ -13,8 +13,6 @@ Learn about enhancements to Safari Web Extensions.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [`10099: What’s new in Safari Web Extensions`](https://developer.apple.comhttps://developer.apple.com/wwdc2022/10099/).
-
-This sample code project is associated with WWDC22 session [`10099: What’s new in Safari Web Extensions`](https://developer.apple.comhttps://developer.apple.com/wwdc2022/10099/).
 
 ##### Configure the Sample Code Project
 
@@ -30,4 +28,4 @@ Before you run the sample code project in Xcode, open Safari and choose Develop 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/modernizing-safari-web-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/modernizing-safari-web-extensions)*

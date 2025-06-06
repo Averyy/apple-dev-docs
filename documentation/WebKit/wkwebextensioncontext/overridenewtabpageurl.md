@@ -27,8 +27,6 @@ The app should prompt the user for permission to use the extension’s new tab p
 
 > **Note**: Navigation to the override new tab page is only possible after this extension has been loaded.
 
-Navigation to the override new tab page is only possible after this extension has been loaded.
-
 ## See Also
 
 - [var webViewConfiguration: WKWebViewConfiguration?](wkwebextensioncontext/webviewconfiguration.md)

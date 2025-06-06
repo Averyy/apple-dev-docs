@@ -1,6 +1,6 @@
 # MPSMatrix
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A 2D array of data that stores the data's values.
@@ -24,8 +24,6 @@ class MPSMatrix : NSObject
 [`MPSMatrix`](mpsmatrix.md) objects serve as inputs and outputs of [`MPSMatrixMultiplication`](mpsmatrixmultiplication.md) objects. Matrix data is assumed to be stored in row-major order.
 
 > **Note**: An [`MPSMatrix`](mpsmatrix.md) object maintains its internal storage using a [`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer) object. Thus, the same rules for maintaining coherency of the buffer’s data between CPU memory and GPU memory also apply to an [`MPSMatrix`](mpsmatrix.md) object.
-
-An [`MPSMatrix`](mpsmatrix.md) object maintains its internal storage using a [`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer) object. Thus, the same rules for maintaining coherency of the buffer’s data between CPU memory and GPU memory also apply to an [`MPSMatrix`](mpsmatrix.md) object.
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # addItem(withProductID:completionHandler:)
 
-**Framework**: Media Player  
+**Framework**: Mediaplayer  
 **Kind**: method
 
 Adds the designated item to the user’s music library.
@@ -22,8 +22,6 @@ func addItem(withProductID productID: String) async throws -> [MPMediaEntity]
 Use this method to add media items to a user’s music library. Use the [`Apple Music API Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/AppleMusicWebServicesReference/index.html#//apple_ref/doc/uid/TP40017625) to search for content contained in the iTunes, App, Book, and Mac App stores.
 
 > **Note**:  This method only works for 64-bit apps.
-
- This method only works for 64-bit apps.
 
 ## Parameters
 

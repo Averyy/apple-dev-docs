@@ -1,6 +1,6 @@
 # AppKit Release Notes for macOS Ventura 13
 
-**Framework**: macOS Release Notes
+**Framework**: Macos Release Notes
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -31,8 +31,6 @@ AppKit in macOS Ventura 13 includes new features, as well as API changes and dep
 - NSTableView and NSOutlineView now automatically estimate row heights for view-based table views whose delegates implement [`tableView(_:heightOfRow:)`](https://developer.apple.com/documentation/AppKit/NSTableViewDelegate/tableView(_:heightOfRow:)) and provide variable row heights. This provides performance improvements for table views with large numbers of rows by reducing the frequency of the calls to [`tableView(_:heightOfRow:)`](https://developer.apple.com/documentation/AppKit/NSTableViewDelegate/tableView(_:heightOfRow:)).
 
 > **Note**: To get the benefit of row height estimation, the table view must be view-based and not override [`rect(ofRow:)`](https://developer.apple.com/documentation/AppKit/NSTableView/rect(ofRow:)), [`row(at:)`](https://developer.apple.com/documentation/AppKit/NSTableView/row(at:)), or [`rows(in:)`](https://developer.apple.com/documentation/AppKit/NSTableView/rows(in:)).
-
-To get the benefit of row height estimation, the table view must be view-based and not override [`rect(ofRow:)`](https://developer.apple.com/documentation/AppKit/NSTableView/rect(ofRow:)), [`row(at:)`](https://developer.apple.com/documentation/AppKit/NSTableView/row(at:)), or [`rows(in:)`](https://developer.apple.com/documentation/AppKit/NSTableView/rows(in:)).
 
 - For cell-based table views, checking Autosave Column Information in Interface Builder now correctly persists column information for columns that have automatic column identifiers.
 - For apps linked against the macOS 13 SDK, [`NSTableRowView`](https://developer.apple.com/documentation/AppKit/NSTableRowView) and subclasses that override [`drawSeparator(in:)`](https://developer.apple.com/documentation/AppKit/NSTableRowView/drawSeparator(in:)) now draw their separators correctly, even when displayed as floating group rows.

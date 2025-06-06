@@ -1,6 +1,6 @@
 # Sign in with Apple
 
-**Framework**: Sign in with Apple
+**Framework**: Signinwithapple
 
 Provide users the ability to sign in to your apps and websites using their Apple ID.
 
@@ -15,8 +15,6 @@ Sign in with Apple gives your users a fast and safe way to sign in to your apps 
 Sign in with Apple at Work & School provides the same ease of use for users with managed Apple IDs in Apple School Manager (ASM) or Apple Business Manager (ABM).
 
 > **Note**:  Administrators can configure Access Management controls for Sign in with Apple at Work & School within Apple Business Manager and Apple School Manager.
-
- Administrators can configure Access Management controls for Sign in with Apple at Work & School within Apple Business Manager and Apple School Manager.
 
 To support Sign in with Apple for iOS, macOS, tvOS, and watchOS apps, see [`Implementing User Authentication with Sign in with Apple`](https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple). For website support, see [`Sign in with Apple JS`](https://developer.apple.com/documentation/signinwithapplejs), and use the [`Sign in with Apple REST API`](https://developer.apple.com/documentation/signinwithapplerestapi) to communicate with Apple servers.
 

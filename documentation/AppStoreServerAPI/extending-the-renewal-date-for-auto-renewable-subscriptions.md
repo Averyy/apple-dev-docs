@@ -1,6 +1,6 @@
 # Extending the renewal date for auto-renewable subscriptions
 
-**Framework**: App Store Server API
+**Framework**: Appstoreserverapi
 
 Compensate eligible active subscribers for service interruptions by extending a subscription’s renewal date.
 
@@ -14,8 +14,6 @@ If your service experiences a temporary outage, canceled event, or interruption 
 You can move the renewal date for active auto-renewable subscriptions up to 90 days into the future if your service experiences an unexpected outage. To give you flexibility to resolve service issues or outages, you can extend the renewal date twice within a year (365 days) per customer.
 
 > **Note**:  After the subscription renewal extension goes into effect, there’s no way to reverse it. The extension period doesn’t count toward the one year of paid service when the App Store calculates the developer’s commission rate.
-
- After the subscription renewal extension goes into effect, there’s no way to reverse it. The extension period doesn’t count toward the one year of paid service when the App Store calculates the developer’s commission rate.
 
 After a successful renewal date extension, Apple sends an email to notify the customer of their updated subscription renewal date.
 
@@ -94,4 +92,4 @@ The App Store server sends real-time notifications as it processes your request 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/extending-the-renewal-date-for-auto-renewable-subscriptions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/extending-the-renewal-date-for-auto-renewable-subscriptions)*

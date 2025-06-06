@@ -1,6 +1,6 @@
 # Get Refund History V1
 
-**Framework**: App Store Server API  
+**Framework**: Appstoreserverapi  
 **Kind**: httpRequest
 
 Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
@@ -18,8 +18,6 @@ Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
 Call this endpoint to get a customer’s refund history for your app. The response ([`RefundLookupResponse`](refundlookupresponse.md)) includes up to 50 of the customer’s most-recently refunded transactions, based on the [`revocationDate`](revocationdate.md).
 
 > **Note**:  To get the complete refund history, use [`Get Refund History`](get-refund-history.md).
-
- To get the complete refund history, use [`Get Refund History`](get-refund-history.md).
 
 To call this endpoint, provide any original transaction identifier ([`originalID`](https://developer.apple.com/documentation/StoreKit/Transaction/originalID)) for any of the customer’s in-app purchases. The response only includes App Store-approved refunds for any product type: consumable, non-consumable, auto-renewable subscriptions, and non-renewing subscriptions. For more information about product types, see [`In-app purchase`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/).
 
@@ -41,4 +39,4 @@ The App Store Server API returns information based on the customer’s in-app pu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/get-refund-history-v1)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/get-refund-history-v1)*

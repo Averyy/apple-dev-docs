@@ -1,6 +1,6 @@
 # UITableViewDataSourcePrefetching
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: protocol
 
 A protocol that provides advance warning of the data requirements for a table view, allowing you to start potentially long-running data operations early.
@@ -34,8 +34,6 @@ You use a prefetch data source object in conjunction with your table view’s da
 - Cancel pending data load operations when the table view informs you that the data is no longer required in the [`tableView(_:cancelPrefetchingForRowsAt:)`](uitableviewdatasourceprefetching/tableview(_:cancelprefetchingforrowsat:).md) method.
 
 > **Note**:  The prefetch method isn’t necessarily called for every cell in the table view. For details about a suggested approach to loading data, see [`Load data asynchronously`](uitableviewdatasourceprefetching#Load-data-asynchronously.md).
-
- The prefetch method isn’t necessarily called for every cell in the table view. For details about a suggested approach to loading data, see [`Load data asynchronously`](uitableviewdatasourceprefetching#Load-data-asynchronously.md).
 
 When configuring the table view object, assign your prefetch data source to its [`prefetchDataSource`](uitableview/prefetchdatasource.md) property. For more information about how a table view works, see [`UITableView`](uitableview.md).
 
@@ -84,4 +82,4 @@ One approach that handles all of these situations is to use [`Operation`](https:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitableviewdatasourceprefetching)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitableviewdatasourceprefetching)*

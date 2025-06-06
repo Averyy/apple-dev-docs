@@ -28,8 +28,6 @@ Note that the getter is on the superclass, [`NSCoder`](nscoder.md). See [`NSCode
 
 > **Note**:  Enabling secure coding doesn’t change the output format of the archive. This means that you can encode archives with secure coding enabled, and decode them later with secure coding disabled.
 
- Enabling secure coding doesn’t change the output format of the archive. This means that you can encode archives with secure coding enabled, and decode them later with secure coding disabled.
-
 ## Parameters
 
 - `flag`:   if the receiver requires  ;   if not.

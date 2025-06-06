@@ -1,6 +1,6 @@
 # animationController(forPresented:presenting:source:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Asks your delegate for the transition animator object to use when presenting a view controller.
@@ -28,8 +28,6 @@ The animator object to use when presenting the view controller or `nil` if you d
 Use this method to create and return an object that implements the methods of the [`UIViewControllerAnimatedTransitioning`](uiviewcontrolleranimatedtransitioning.md) protocol. Your implementation of that protocol must animate the appearance of the `presented` view controller’s view onscreen. Use the `presented`, `presenting`, and `source` parameters to initialize your animator object or perform any tasks necessary to prepare the transition animations. You may return `nil` from this method if you do not want to implement a custom transition animation for the specified set of view controllers.
 
 > **Note**:  You must implement this method if you also plan to use an interactive animator object to manage the appearance of the view controller. The animator object returned by this method is responsible for executing the animations. The interactive animator object manages only the timing of the animation, not the animations themselves.
-
- You must implement this method if you also plan to use an interactive animator object to manage the appearance of the view controller. The animator object returned by this method is responsible for executing the animations. The interactive animator object manages only the timing of the animation, not the animations themselves.
 
 For information on implementing your transition animator object, see [`UIViewControllerAnimatedTransitioning`](uiviewcontrolleranimatedtransitioning.md).
 

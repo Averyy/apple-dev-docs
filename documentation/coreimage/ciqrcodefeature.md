@@ -1,6 +1,6 @@
 # CIQRCodeFeature
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: cl
 
 Information about a Quick Response code detected in a still or video image.
@@ -22,8 +22,6 @@ class CIQRCodeFeature : CIFeature
 #### Overview
 
 > **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectBarcodesRequest`](https://developer.apple.com/documentation/vision/vndetectbarcodesrequest).
-
-In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectBarcodesRequest`](https://developer.apple.com/documentation/vision/vndetectbarcodesrequest).
 
 A QR code is a two-dimensional barcode using the ISO/IEC 18004:2006 standard. The properties of a [`CIQRCodeFeature`](ciqrcodefeature.md) object identify the corners of the barcode in the image perspective and provide the decoded message.
 

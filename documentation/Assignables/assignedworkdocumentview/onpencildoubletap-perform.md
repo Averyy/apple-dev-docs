@@ -79,8 +79,6 @@ For more information about Apple Pencil double-tap gestures, see [`Human Interfa
 
 > **Note**: If multiple views with the `onPencilDoubleTap` view modifier are visible, all their action closures will be performed after the user double-taps their Apple Pencil.
 
-If multiple views with the `onPencilDoubleTap` view modifier are visible, all their action closures will be performed after the user double-taps their Apple Pencil.
-
 ## Parameters
 
 - `action`: The action to perform after the user double-taps their   Apple Pencil.

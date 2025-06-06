@@ -1,6 +1,6 @@
 # open(_:authenticating:)
 
-**Framework**: Apple CryptoKit  
+**Framework**: Cryptokit  
 **Kind**: method
 
 Decrypts a message, if the ciphertext is valid, verifying the integrity of additional authentication data.
@@ -29,8 +29,6 @@ The resulting cleartext message if the message is authentic.
 You can call this method multiple times to decrypt a series of messages. When using this method, the recipient of the ciphertext messages needs to decrypt them in the same order that the sender encrypts them. The system doesn’t decrypt the additional authentication data in the `aad` parameter that the recipient uses to verify the message integrity.
 
 > **Note**: The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
-
-The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
 
 ## Parameters
 

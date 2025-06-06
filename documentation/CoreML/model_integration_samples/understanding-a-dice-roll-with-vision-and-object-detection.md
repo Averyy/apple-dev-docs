@@ -1,6 +1,6 @@
 # Understanding a Dice Roll with Vision and Object Detection
 
-**Framework**: Core ML
+**Framework**: Coreml
 
 Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 
@@ -16,8 +16,6 @@ This sample app uses an object detection model trained with  to recognize the to
 After you run the object detection model on camera frames through [`Vision`](https://developer.apple.com/documentation/vision), the model interprets the result to identify when a roll has ended and what values the dice show.
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`228: Creating Great Apps Using Core ML and ARKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/228/).
-
-This sample code project is associated with WWDC 2019 session [`228: Creating Great Apps Using Core ML and ARKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/228/).
 
 ##### 3640221
 

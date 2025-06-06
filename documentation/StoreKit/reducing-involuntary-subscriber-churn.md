@@ -1,6 +1,6 @@
 # Reducing Involuntary Subscriber Churn
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Prevent unintentional loss of subscribers due to billing issues.
 
@@ -22,8 +22,6 @@ For example, if the user’s payment information is no longer valid, the first r
 
 > ❗ **Important**:  The `RENEWAL` notification type is scheduled for deprecation. Update any existing code to rely on the identical `DID_RECOVER` notification type instead.
 
- The `RENEWAL` notification type is scheduled for deprecation. Update any existing code to rely on the identical `DID_RECOVER` notification type instead.
-
 Your app may optionally present in-app messaging that informs users they can avoid losing access to paid service by taking action and resolving their billing error. If you choose to prompt the user, ensure your app’s subscription logic can handle different values of [`expiration_intent`](https://developer.apple.com/documentation/appstorereceipts/expiration_intent) along with [`expires_date_ms`](https://developer.apple.com/documentation/appstorereceipts/expires_date_ms), to show the appropriate message. An invalid payment method could be due to a number of things, such as a low balance on a stored value card or an expired credit card. Your app should be ready to react immediately to a billing information update. Your app can deep link customers to the Manage Payments page on their account settings by opening this URL:
 
 ```http
@@ -31,8 +29,6 @@ https://apps.apple.com/account/billing
 ```
 
 > **Note**:  This URL is only supported for iOS and macOS.
-
- This URL is only supported for iOS and macOS.
 
 For more general guidance on handling subscriptions that enter a billing retry state, see [`WWDC 2018 > Engineering Subscriptions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/705/). You can also agree to provide a grace period for subscribers in a billing retry state. Billing error recoveries made within the set grace period automatically recover subscribers onto their current billing cycle, also providing revenue continuity.
 
@@ -79,4 +75,4 @@ StoreKit adds a new transaction for the renewal to the transaction queue on the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/reducing-involuntary-subscriber-churn)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/reducing-involuntary-subscriber-churn)*

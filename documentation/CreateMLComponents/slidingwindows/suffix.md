@@ -1,6 +1,6 @@
 # suffix(_:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Returns a subsequence, up to the given maximum length, containing the final elements of the collection.
@@ -37,8 +37,6 @@ print(numbers.suffix(10))
 ```
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is equal to `maxLength`.
-
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is equal to `maxLength`.
 
 ## Parameters
 

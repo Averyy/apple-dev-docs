@@ -10,8 +10,6 @@ StoreKit Testing in Xcode is a local test environment for testing in-app purchas
 
 > **Note**: Enable Developer Mode to test your app on devices running iOS 16 and later, visionOS, or watchOS 9 and later. For more information about how to enable Developer Mode, see [`Enabling Developer Mode on a device`](enabling-developer-mode-on-a-device.md).
 
-Enable Developer Mode to test your app on devices running iOS 16 and later, visionOS, or watchOS 9 and later. For more information about how to enable Developer Mode, see [`Enabling Developer Mode on a device`](enabling-developer-mode-on-a-device.md).
-
 As you test transactions, the test environment displays a payment sheet with localized values, and produces receipts for you to verify.
 
 Testing in-app purchase scenarios with StoreKit in Xcode is useful for:
@@ -46,21 +44,15 @@ If you rename the configuration file, be sure to keep its file extension .`store
 
 > **Note**: You can convert a synced configuration file to a local configuration file. If you want to sync again, create a new synced configuration file.
 
-You can convert a synced configuration file to a local configuration file. If you want to sync again, create a new synced configuration file.
-
 ##### Set Up a Storekit Configuration
 
 To edit the settings in a local StoreKit configuration file, select the file in the Project navigator to open the custom editor. Click the Add button (+) in the editor to add product details to the configuration file.
 
 > **Note**: You can’t edit a synced configuration file unless you convert it to be a local configuration file. To convert a synced configuration file, select the file, then choose Editor > Convert to Local StoreKit Configuration from the Xcode menu. Click Convert File in the confirmation dialog. When you’re viewing a synced configuration file, click the Sync button in the bottom left corner to pull the latest updates from App Store Connect.
 
-You can’t edit a synced configuration file unless you convert it to be a local configuration file. To convert a synced configuration file, select the file, then choose Editor > Convert to Local StoreKit Configuration from the Xcode menu. Click Convert File in the confirmation dialog. When you’re viewing a synced configuration file, click the Sync button in the bottom left corner to pull the latest updates from App Store Connect.
-
 Enter the information in your local StoreKit configuration file manually. The product names, IDs, prices, localizations, and any other data you provide in the StoreKit configuration file don’t upload to App Store Connect, and don’t appear in App Store-signed apps. App Store Connect data transfers only to a synced StoreKit configuration file, which you can’t edit in Xcode.
 
 > 💡 **Tip**: If you have a synced configuration file with items you want to test in a local configuration file, you may copy an item from your synced configuration file to your local configuration file. To do this, Control-click an item in your synced configuration file, and choose Copy. In your local configuration file, select where you want to place the item, and choose Edit > Paste from the Xcode menu.
-
-If you have a synced configuration file with items you want to test in a local configuration file, you may copy an item from your synced configuration file to your local configuration file. To do this, Control-click an item in your synced configuration file, and choose Copy. In your local configuration file, select where you want to place the item, and choose Edit > Paste from the Xcode menu.
 
 Each in-app purchase and non-renewing subscription has a reference name, product ID, and price. In-app purchases and non-renewing subscriptions optionally have localizations. This metadata shows up in the payment sheet after you click to buy a product in your app. Note that the price is a placeholder value that’s not connected to price tiers or real pricing information. However, it appears using the correct currency symbols for the storefront you’re testing.
 
@@ -110,8 +102,6 @@ StoreKit Testing in Xcode generates locally signed receipts that your app valida
 
 > **Note**: The test environment’s certificate is a root certificate. There’s no certificate chain to validate when you validate the receipt signature.
 
-The test environment’s certificate is a root certificate. There’s no certificate chain to validate when you validate the receipt signature.
-
 ![An Xcode screenshot with the file StoreKitCertificate.cer selected in the Project navigator. The editor area shows the details of the certificate, including: Subject Name, Issuer Name, Serial Number, Version, and so forth.](https://docs-assets.developer.apple.com/published/37ca74052131f14f29d04da229bc96e1/storeKit-saved-certificate%402x.png)
 
 Be sure your code uses the correct certificate in all environments. Add the following conditional compilation block to your receipt validation code to select the test certificate for testing, and the Apple root certificate, otherwise:
@@ -128,8 +118,6 @@ Your code is ready to validate receipts by selecting the appropriate certificate
 
 > ❗ **Important**: Receipts you produce in the test environment aren’t signed by the App Store and aren’t valid for apps in production.
 
-Receipts you produce in the test environment aren’t signed by the App Store and aren’t valid for apps in production.
-
 ## See Also
 
 - [Testing in-app purchases with StoreKit transaction manager in Xcode](testing-in-app-purchases-with-storekit-transaction-manager-in-code.md)
@@ -138,4 +126,4 @@ Receipts you produce in the test environment aren’t signed by the App Store an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode)*

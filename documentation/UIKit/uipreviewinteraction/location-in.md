@@ -1,6 +1,6 @@
 # location(in:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Returns the location of the touch that started the interaction.
@@ -27,8 +27,6 @@ The [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint
 Use this method to establish the current location of the touch that triggered the preview interaction.
 
 > **Note**:  [`UIView`](uiview.md) adopts the [`UICoordinateSpace`](uicoordinatespace.md) protocol, so you can find the touch location within a view in the view hierarchy.
-
- [`UIView`](uiview.md) adopts the [`UICoordinateSpace`](uicoordinatespace.md) protocol, so you can find the touch location within a view in the view hierarchy.
 
 When the preview interaction isn’t running, calling this method returns an invalid point. You must therefore only call this method in response to one of the delegate callbacks specified in [`UIPreviewInteractionDelegate`](uipreviewinteractiondelegate.md).
 

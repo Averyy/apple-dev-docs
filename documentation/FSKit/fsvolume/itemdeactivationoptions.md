@@ -1,6 +1,6 @@
 # FSVolume.ItemDeactivationOptions
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: struct
 
 Options to specify the item deactivation policy.
@@ -19,8 +19,6 @@ struct ItemDeactivationOptions
 Callers may want to set a deactivation policy because [`deactivateItem(_:replyHandler:)`](fsvolume/itemdeactivation/deactivateitem(_:replyhandler:).md) processing blocks the kernel. Setting a deactivation policy allows the file system to take action at a definitive point in the item’s life cycle. These options allow the file system to instruct the FSKit kernel of which circumstances require the expense of a round-trip call to the module.
 
 > **Note**: To avoid performing deactivation calls, Objective-C developers use the value `FSItemDeactivationNever`. In Swift, use an empty option set (`[]`).
-
-To avoid performing deactivation calls, Objective-C developers use the value `FSItemDeactivationNever`. In Swift, use an empty option set (`[]`).
 
 ## Topics
 
@@ -57,4 +55,4 @@ To avoid performing deactivation calls, Objective-C developers use the value `FS
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fsvolume/itemdeactivationoptions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FSKit/fsvolume/itemdeactivationoptions)*

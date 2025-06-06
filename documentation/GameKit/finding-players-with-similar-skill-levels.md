@@ -1,6 +1,6 @@
 # Finding players with similar skill levels
 
-**Framework**: GameKit
+**Framework**: Gamekit
 
 Add a rule to find players in a range of skill levels to balance competitive gameplay.
 
@@ -117,8 +117,6 @@ For more information on the Game Center functions you can use in expressions, se
 
 > ❗ **Important**:  If you have previous versions of your game that don’t provide player properties used in your rules, you can write expressions that provide default value for those properties. See [`Creating matchmaking rules for backward compatibility`](creating-matchmaking-rules-for-backward-compatibility.md).
 
- If you have previous versions of your game that don’t provide player properties used in your rules, you can write expressions that provide default value for those properties. See [`Creating matchmaking rules for backward compatibility`](creating-matchmaking-rules-for-backward-compatibility.md).
-
 ##### Create a Match Rule Containing the Expression
 
 Create a skill-level rule and add it to the rule set. Pass `MATCH` for the rule `type` field, the skill-level expression, and the rule set, along with other settings, to the [`Create a rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) ``endpoint.
@@ -149,8 +147,6 @@ POST /v1/gameCenterMatchmakingRules
 The `description` and `referenceName` fields are specific to your game. In the `relationships` field, pass the `id` for the rule set in the `GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet.Data` object.
 
 > **Note**:  Typically, you add more than one rule to a rule set. For example, add a `COMPATIBLE` rule to check whether the player’s app versions are the same and a `DISTANCE` rule to find players nearby that Game Center applies before `MATCH` rules.
-
- Typically, you add more than one rule to a rule set. For example, add a `COMPATIBLE` rule to check whether the player’s app versions are the same and a `DISTANCE` rule to find players nearby that Game Center applies before `MATCH` rules.
 
 ##### Submit a Skill Level Match Request
 
@@ -196,4 +192,4 @@ For more information, see [`Finding multiple players for a game`](finding-multip
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/finding-players-with-similar-skill-levels)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/finding-players-with-similar-skill-levels)*

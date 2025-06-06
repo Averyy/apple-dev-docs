@@ -14,16 +14,6 @@ For information on how input propagates through the system and updates content o
 
 > **Note**: Session 10099: [`Meet RealityKit Trace`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10099) Session 10100: [`Optimize app power and performance for spatial computing`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10100) Session 10274: [`Create 3D models for Quick Look spatial experiences`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10274) Session 10160: [`Demystify SwiftUI performance`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10160/) Session 10080: [`Build spatial experiences with RealityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10080/)
 
-Session 10099: [`Meet RealityKit Trace`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10099)
-
-Session 10100: [`Optimize app power and performance for spatial computing`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10100)
-
-Session 10274: [`Create 3D models for Quick Look spatial experiences`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10274)
-
-Session 10160: [`Demystify SwiftUI performance`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10160/)
-
-Session 10080: [`Build spatial experiences with RealityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10080/)
-
 ##### Reduce the Complexity of Meshes and Materials
 
 To reduce the render server’s CPU overhead, lower draw call counts. One way to do this is to combine parts of your mesh that share a material. The render server performs a draw call for each individual part and uses the CPU to setup each call it sends to the GPU. While combining parts can improve performance, avoid combining parts that are far apart in your scene or that become too large to stay in the field of view when combined. The system renders the entire mesh for a part that is only partially in the field of view. It doesn’t render a part that completely falls outside the field of view.
@@ -67,15 +57,11 @@ When your custom systems modify entities and audio components, your app uses the
 
 > **Note**: Certain actions initiate updates indirectly. For example, a physics simulation might cause transform updates.
 
-Certain actions initiate updates indirectly. For example, a physics simulation might cause transform updates.
-
 To identify areas of frequent and complex updates, check the RealityKit Metrics instrument for Entity Commits (CPU) and  Custom RealityKit Systems (CPU) bottlenecks. The instrument collects metrics on the number of app updates the render server receives and the number of entities that it creates and destroys. Expand the view of the RealityKit Metrics instrument in the timeline pane to reveal graphs of this data under the Entity Commits section. Select the section to view a summary of these metrics in the detail pane.
 
 ![A screenshot that contains part of an Instruments trace document. It displays a vertical stack of timelines for RealityKit Metrics instrument. The metrics are expanded to display additional timelines for 3D Render, Core Animation Render, and Entity Commits metrics. The timeline for Entity Commits metrics is highlighted with an overlay. Below the timeline is an an outline view containing a Summary information for the Entity Commit metrics.](https://docs-assets.developer.apple.com/published/12500cbace572b1a24b4295ee54f6e39/realitykit-metrics-entity-commits%402x.png)
 
 > **Note**: Depending on the type of content, you might see additional bottlenecks that result from these updates. Transform updates, animations, material updates, asset loading, and view hierarchy updates also cause the render server to redraw 3D content.
-
-Depending on the type of content, you might see additional bottlenecks that result from these updates. Transform updates, animations, material updates, asset loading, and view hierarchy updates also cause the render server to redraw 3D content.
 
 ##### Optimize Animations
 
@@ -102,8 +88,6 @@ Collisions between objects in the Shared Space result in expensive physics calcu
 - Reduce the number of physics objects stacked on top of one another. Stacked and overlapping physics shapes require more memory to track the overlapping contact pairs.
 
 > 💡 **Tip**: Take into account a mesh’s structure when you use [`generateCollisionShapes(recursive:static:)`](https://developer.apple.com/documentation/RealityKit/Entity/generateCollisionShapes(recursive:static:)) to generate physics shapes. This function recursively generates shapes for the meshes, but the shapes might be inefficient for collisions. Set `isStatic` to true to generate static colliders that are more efficient.
-
-Take into account a mesh’s structure when you use [`generateCollisionShapes(recursive:static:)`](https://developer.apple.com/documentation/RealityKit/Entity/generateCollisionShapes(recursive:static:)) to generate physics shapes. This function recursively generates shapes for the meshes, but the shapes might be inefficient for collisions. Set `isStatic` to true to generate static colliders that are more efficient.
 
 To identify areas with high CPU overhead resulting from collisions and physics calculations, check the RealityKit Metrics instrument for RealityKit Physics (CPU) bottlenecks. Expand the RealityKit Metrics instrument in the timeline pane to reveal graphs of this data under the RealityKit Physics section. Select the section to view a summary of this data in the detail pane.
 
@@ -143,4 +127,4 @@ The tool provides information about entity counts, physics, animations, particle
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/reducing-the-rendering-cost-of-realitykit-content-on-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/reducing-the-rendering-cost-of-realitykit-content-on-visionos)*

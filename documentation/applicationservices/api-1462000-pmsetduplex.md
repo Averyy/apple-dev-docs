@@ -1,6 +1,6 @@
 # PMSetDuplex(_:_:)
 
-**Framework**: Application Services  
+**Framework**: Applicationservices  
 **Kind**: func
 
 Sets the duplex mode.
@@ -23,8 +23,6 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 Duplex printing is a print job that prints on both sides of the paper. Two-Sided printing controls are displayed in the Layout pane of the Print dialog. This function allows you to specify whether the document should be printed single-sided, double-sided with short-edge binding, or double-sided with long-edge binding.  
 
 > **Note**: Not all printers support duplex printing. This function specifies a setting that might not be available on a given destination.
-
-Not all printers support duplex printing. This function specifies a setting that might not be available on a given destination.
 
 If you call this function after initiating a print job, the change is ignored for the current job.
 

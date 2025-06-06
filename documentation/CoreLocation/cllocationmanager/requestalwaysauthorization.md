@@ -1,6 +1,6 @@
 # requestAlwaysAuthorization()
 
-**Framework**: Core Location  
+**Framework**: Corelocation  
 **Kind**: method
 
 Requests the user’s permission to use location services regardless of whether the app is in use.
@@ -40,8 +40,6 @@ To obtain Always authorization, your app must first request When In Use permissi
 If the user grants When In Use permission after your app calls [`requestWhenInUseAuthorization()`](cllocationmanager/requestwheninuseauthorization().md), then calling [`requestAlwaysAuthorization()`](cllocationmanager/requestalwaysauthorization().md) immediately prompts the user to request Always permission. If the user responded to [`requestWhenInUseAuthorization()`](cllocationmanager/requestwheninuseauthorization().md) with Allow Once, then Core Location ignores further calls to [`requestAlwaysAuthorization()`](cllocationmanager/requestalwaysauthorization().md) due to the temporary authorization.
 
 > **Note**:  In iOS 16 and later, apps that actively track a user’s location or that have recently enabled Core Location display an indicator in Control Center. Be mindful of battery use and user privacy by monitoring the device’s location only when necessary and when the user expects it.
-
- In iOS 16 and later, apps that actively track a user’s location or that have recently enabled Core Location display an indicator in Control Center. Be mindful of battery use and user privacy by monitoring the device’s location only when necessary and when the user expects it.
 
 Core Location prompts the user to grant permission with the string from [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription). The user prompt displays the following options, which determine the authorization your app can receive:
 

@@ -36,8 +36,6 @@ For a sandboxed app in macOS, the group directory is located at `~/Library/Group
 
 > **Note**:  Always use the URL returned by this method to locate the group directory rather than manually constructing a URL with an explicit path. The exact location of the directory in the file system might change in future releases of macOS, but this method will always return the correct URL.
 
- Always use the URL returned by this method to locate the group directory rather than manually constructing a URL with an explicit path. The exact location of the directory in the file system might change in future releases of macOS, but this method will always return the correct URL.
-
 The system also creates the `Library/Application Support`, `Library/Caches`, and `Library/Preferences` subdirectories inside the group directory the first time you use it. You are free to add or remove subdirectories as you see fit, but you are encouraged to use these standardized locations as you would in the app’s usual container.
 
 If you call the method with an invalid group identifier, namely one for which you do not have an entitlement, the method still returns a URL of the expected form, but the corresponding group directory does not actually exist, nor can your sandboxed app create it. Therefore be sure to test that you can successfully access the returned URL before using it.

@@ -1,6 +1,6 @@
 # HIDDriverKit
 
-**Framework**: HIDDriverKit  
+**Framework**: Hiddriverkit  
 **Kind**: module
 
 Develop drivers for human-interface devices, such as keyboards, pointing devices, and digitizers like pens and touch pads.
@@ -16,8 +16,6 @@ The HIDDriverKit framework provides C++ classes for developing drivers for human
 Develop your driver with DriverKit and HIDDriverKit, and package it in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade the driver on the user’s Mac.
 
 > **Note**:  HIDDriverKit is available on macOS.
-
- HIDDriverKit is available on macOS.
 
 ## Topics
 

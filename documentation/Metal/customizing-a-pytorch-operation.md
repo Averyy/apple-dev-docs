@@ -8,8 +8,6 @@ Implement a custom operation in PyTorch that uses Metal kernels to improve perfo
 
 > **Note**: This sample code project is associated with WWDC23 session 10050: [`Optimize machine learning for Metal apps`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10050).
 
-This sample code project is associated with WWDC23 session 10050: [`Optimize machine learning for Metal apps`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10050).
-
 ##### Configure the Sample Code Project
 
 Before you run the sample code project:
@@ -37,4 +35,4 @@ python3 run_sample.py
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/customizing-a-pytorch-operation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/customizing-a-pytorch-operation)*

@@ -82,8 +82,6 @@ ARKit offers [`Entitlements`](https://developer.apple.comhttps://developer.apple
 
 > **Note**: The object-tracking properties are adjustable only for Enterprise apps. For more information on the Enterprise program, see [`Apple Developer Enterprise Program`](https://developer.apple.comhttps://developer.apple.com/programs/enterprise/).
 
-The object-tracking properties are adjustable only for Enterprise apps. For more information on the Enterprise program, see [`Apple Developer Enterprise Program`](https://developer.apple.comhttps://developer.apple.com/programs/enterprise/).
-
 To configure the entitlement within your app, select your Xcode project and click the Signing & Capabilities tab. Click the Add Capability button (+), scroll to the Object Tracking Parameter Adjustment option, and double-click it to add it to your app. This creates an entitlement file with the `com.apple.developer.arkit.object-tracking-parameter-adjustment.allow` key.
 
 ![An Xcode screenshot of the Capabilities library dialog with the Object Tracking Parameter Adjustment option selected.](https://docs-assets.developer.apple.com/published/7aaf40e61871a5623726a9361cab6ecb/capabilities%402x.png)
@@ -127,8 +125,6 @@ do {
 
 > **Note**: The object-tracking parameter adjustment key doesn’t allow you to change the maximum of 10 reference objects that the system can detect at once.
 
-The object-tracking parameter adjustment key doesn’t allow you to change the maximum of 10 reference objects that the system can detect at once.
-
 ## See Also
 
 - [Using a reference object with Reality Composer Pro](using-a-reference-object-with-reality-composer-pro.md)
@@ -139,4 +135,4 @@ The object-tracking parameter adjustment key doesn’t allow you to change the m
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/using-a-reference-object-with-arkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/using-a-reference-object-with-arkit)*

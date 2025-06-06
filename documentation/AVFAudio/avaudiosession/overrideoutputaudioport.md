@@ -1,6 +1,6 @@
 # overrideOutputAudioPort(_:)
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: method
 
 Temporarily changes the current audio route.
@@ -26,8 +26,6 @@ If your app uses the [`playAndRecord`](avaudiosession/category-swift.struct/play
 If you’d prefer to permanently enable this behavior, you should instead set the category’s [`defaultToSpeaker`](avaudiosession/categoryoptions-swift.struct/defaulttospeaker.md) option. Setting this option routes to the speaker rather than the receiver if no other accessory such as headphones are in use.
 
 > **Note**:  The preferred method for routing audio to the speaker instead of the receiver for speakerphone functionality is through the use of the [`Media Player`](https://developer.apple.com/documentation/MediaPlayer) framework’s [`MPVolumeView`](https://developer.apple.com/documentation/MediaPlayer/MPVolumeView) class.
-
- The preferred method for routing audio to the speaker instead of the receiver for speakerphone functionality is through the use of the [`Media Player`](https://developer.apple.com/documentation/MediaPlayer) framework’s [`MPVolumeView`](https://developer.apple.com/documentation/MediaPlayer/MPVolumeView) class.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # showPriceConsentIfNeeded()
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: method
 
 Asks the system to display the price consent sheet if the user hasn’t yet responded to a subscription price increase.
@@ -33,8 +33,6 @@ This function displays the price consent sheet if both of the following are true
 Otherwise, this function has no effect.
 
 > **Note**:  When you increase the price of a subscription, Apple informs affected subscribers through an email, push notification, and in-app price consent sheet and asks them to agree to the new price. If they don’t agree or take no action, their subscription expires at the end of their current billing cycle. For more information, see [`Managing Prices`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#managing-prices-for-existing-subscribers) and [`Manage pricing for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devc9870599e).
-
- When you increase the price of a subscription, Apple informs affected subscribers through an email, push notification, and in-app price consent sheet and asks them to agree to the new price. If they don’t agree or take no action, their subscription expires at the end of their current billing cycle. For more information, see [`Managing Prices`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#managing-prices-for-existing-subscribers) and [`Manage pricing for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devc9870599e).
 
 In Mac apps built with Mac Catalyst, this function has no effect.
 

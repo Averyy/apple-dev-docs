@@ -70,11 +70,7 @@ Don’t call this method from outside the task where this task group was created
 
 > **Note**: The error thrown by the next child task that completes.
 
-The error thrown by the next child task that completes.
-
 > **Note**: `nextResult()`
-
-`nextResult()`
 
 
 ---

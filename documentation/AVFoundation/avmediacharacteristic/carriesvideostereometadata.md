@@ -1,6 +1,6 @@
 # carriesVideoStereoMetadata
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A media characteristic that indicates that the stereoscopic video track carries additional information related to the stereoscopic video.
@@ -26,8 +26,6 @@ This characteristic doesnindicate whether the encoded video contains stereoscopi
 The value of this characteristic is `com.apple.quicktime.video.stereo-metadata`.
 
 > **Note**:  The presence of this characteristic is strictly inferred from the format description of the associated track.
-
- The presence of this characteristic is strictly inferred from the format description of the associated track.
 
 ## See Also
 

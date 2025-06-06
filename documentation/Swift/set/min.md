@@ -38,8 +38,6 @@ print(lowestHeight)
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## See Also
 
 - [subscript(Set<Element>.Index) -> Element](set/subscript(_:).md)

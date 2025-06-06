@@ -42,8 +42,6 @@ print(reversedWord)
 
 > **Note**: O(1)
 
-O(1)
-
 ## See Also
 
 - [func sort(by: (Self.Element, Self.Element) throws -> Bool) rethrows](data/sort(by:).md)

@@ -1,6 +1,6 @@
 # prefix(upTo:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Returns a subsequence from the start of the collection up to, but not including, the specified position.
@@ -53,8 +53,6 @@ if let i = numbers.firstIndex(of: 40) {
 ```
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

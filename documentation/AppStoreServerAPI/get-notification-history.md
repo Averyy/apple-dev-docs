@@ -1,6 +1,6 @@
 # Get Notification History
 
-**Framework**: App Store Server API  
+**Framework**: Appstoreserverapi  
 **Kind**: httpRequest
 
 Get a list of notifications that the App Store server attempted to send to your server.
@@ -25,8 +25,6 @@ This endpoint is available in the production and sandbox environments. For more 
 
 > **Note**:  For notifications that relate to in-app purchases, the history records reflect the state of an in-app purchase at the time the App Store originally sent the notification, and may not reflect its current state. To get the current state of auto-renewable subscriptions, call the [`Get All Subscription Statuses`](get-all-subscription-statuses.md) endpoint. For all other in-app purchase types, call the [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint.
 
- For notifications that relate to in-app purchases, the history records reflect the state of an in-app purchase at the time the App Store originally sent the notification, and may not reflect its current state. To get the current state of auto-renewable subscriptions, call the [`Get All Subscription Statuses`](get-all-subscription-statuses.md) endpoint. For all other in-app purchase types, call the [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint.
-
 ## Request Body
 
 The request body that includes the start and end dates, and optional query constraints.
@@ -43,4 +41,4 @@ The request body that includes the start and end dates, and optional query const
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/get-notification-history)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/get-notification-history)*

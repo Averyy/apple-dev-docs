@@ -27,8 +27,6 @@ func VTSessionCopyProperty(_ session: VTSession, key propertyKey: CFString, allo
 
 > **Note**: For most types of properties, the returned values should be considered immutable. In particular, for CFPropertyList types, sharing of mutable property value objects between the client, session and codec should be avoided. However, some properties will be used for exchanging service objects that are inherently mutable (eg, CVPixelBufferPool).
 
-For most types of properties, the returned values should be considered immutable. In particular, for CFPropertyList types, sharing of mutable property value objects between the client, session and codec should be avoided. However, some properties will be used for exchanging service objects that are inherently mutable (eg, CVPixelBufferPool).
-
 ## Parameters
 
 - `session`: A Video Toolbox session object.

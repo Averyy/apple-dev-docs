@@ -1,6 +1,6 @@
 # opacityThreshold
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 A threshold below which RealityKit ignores opacity.
@@ -23,8 +23,6 @@ var opacityThreshold: Float? { get set }
 When `opacityThreshold` is set, RealityKit discards pixels with opacity values less than the `opacityThreshold`, and renders opacity values greater than or equal to `opacityThreshold` fully opaque.
 
 > **Note**: When the `opacityThreshold` property is set, the blend mode of the [`blending`](unlitmaterial/blending-swift.property.md) property is ignored and the renderer applies the masking behavior.
-
-When the `opacityThreshold` property is set, the blend mode of the [`blending`](unlitmaterial/blending-swift.property.md) property is ignored and the renderer applies the masking behavior.
 
 ## See Also
 

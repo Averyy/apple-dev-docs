@@ -1,6 +1,6 @@
 # Creating a JSON Web Encryption (JWE) login response
 
-**Framework**: Authentication Services
+**Framework**: Authenticationservices
 
 Create an encrypted login response and configure the concatenation key derivation function (Concat KDF).
 
@@ -23,8 +23,6 @@ RFC 7518 Section 4.6.2 and NIST.800-56A sections 5.8.1 and 6.2.2.2 describe the 
 | `SuppPrivInfo` | `NULL` | Per RFC 7518 Section 4.6.2 |
 
 > **Note**:  The key agreement algorithm ECDH-ES is actually ECIES, a proven-secure algorithm with the public keys included.
-
- The key agreement algorithm ECDH-ES is actually ECIES, a proven-secure algorithm with the public keys included.
 
 Here’s an example of the Concat KDF inputs:
 
@@ -253,4 +251,4 @@ If the Kerberos ticket is from a read-only domain controller (RODC) per MS-KILE 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/creating-a-json-web-encryption-jwe-login-response)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/creating-a-json-web-encryption-jwe-login-response)*

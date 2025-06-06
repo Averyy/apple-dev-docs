@@ -1,6 +1,6 @@
 # drawingGroup(opaque:colorMode:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Composites this view’s contents into an offscreen image before final display.
@@ -50,8 +50,6 @@ VStack {
 ```
 
 > **Note**: Views backed by native platform views may not render into the image. Instead, they log a warning and display a placeholder image to highlight the error.
-
-Views backed by native platform views may not render into the image. Instead, they log a warning and display a placeholder image to highlight the error.
 
 ![A screenshot showing the effects on several stacks configured as a](https://docs-assets.developer.apple.com/published/c81675b1f1b78f79e131cdabc7d7a89a/SwiftUI-View-drawingGroup%402x.png)
 

@@ -1,6 +1,6 @@
 # removeLast(_:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Removes values from the end of this path.
@@ -23,8 +23,6 @@ mutating func removeLast(_ k: Int = 1)
 #### Discussion
 
 > **Note**: The input parameter `k` must be greater than or equal to zero, and must be less than or equal to the number of elements in the path.
-
-The input parameter `k` must be greater than or equal to zero, and must be less than or equal to the number of elements in the path.
 
 ## Parameters
 

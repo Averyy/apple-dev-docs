@@ -1,6 +1,6 @@
 # Generating Tokens for API Requests
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
 
@@ -43,8 +43,6 @@ To get your key ID for your individual API key from App Store Connect, log in to
 3. Click Generate API Key.
 
 > 💡 **Tip**:  If you have more than one team API key, use the key ID of the same private key that you use to sign the JWT.
-
- If you have more than one team API key, use the key ID of the same private key that you use to sign the JWT.
 
 Here’s an example of a JWT header:
 
@@ -104,8 +102,6 @@ The JWT payload for Individual keys contains information specific to the App Sto
 
 > **Note**:  Individual keys don’t use the Issuer ID key `iss`, but do require the Subject key `sub.`
 
- Individual keys don’t use the Issuer ID key `iss`, but do require the Subject key `sub.`
-
 Here’s an example of a JWT payload:
 
 ```javascript
@@ -134,8 +130,6 @@ The scope claim is an array of strings, each representing a request. Each scope 
 App Store Connect rejects a token with a scope claim if none of the scope entries match the attempted request.
 
 > **Note**:  The order of query parameters isn’t important. Additionally, App Store Connect ignores the following query parameters when it checks the scope: `limit`, `cursor`, and `sort`.
-
- The order of query parameters isn’t important. Additionally, App Store Connect ignores the following query parameters when it checks the scope: `limit`, `cursor`, and `sort`.
 
 The following code listing shows an example of a JWT payload with a scope.
 
@@ -189,8 +183,6 @@ Regardless of the programming language you’re using with the App Store Connect
 
 > 💡 **Tip**:  You don’t need to generate a new token for every API request. To get better performance from the App Store Connect API, reuse the same signed token for multiple requests until it expires.
 
- You don’t need to generate a new token for every API request. To get better performance from the App Store Connect API, reuse the same signed token for multiple requests until it expires.
-
 ##### Include the Jwt in the Requests Authorization Header
 
 Once you have a complete and signed token, provide the token in the request’s authorization header as a bearer token.
@@ -218,4 +210,4 @@ curl -v -H 'Authorization: Bearer [signed token]'
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/generating-tokens-for-api-requests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/generating-tokens-for-api-requests)*

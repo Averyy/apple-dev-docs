@@ -1,6 +1,6 @@
 # Reauthenticating a person to manage apps
 
-**Framework**: MarketplaceKit
+**Framework**: Marketplacekit
 
 Renew your app’s authorization when an app needs updating or when a device restores from backup.
 
@@ -12,8 +12,6 @@ If your marketplace app restricts the download of apps according to specific cri
 - App updates, when a person interacts with your marketplace app’s UI, for example, by tapping an app’s Update button. It can also happen, when Automatic Updates are on, as the system periodically checks your server for newer versions of the installed apps.
 
 > **Note**: [`MarketplaceKit`](MarketplaceKit.md) implements the OAuth2.0 specification for reauthentication described in [`RFC 8693`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc8693).
-
-[`MarketplaceKit`](MarketplaceKit.md) implements the OAuth2.0 specification for reauthentication described in [`RFC 8693`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc8693).
 
 #### Reinstall an Alternative Marketplace From a Backup
 
@@ -50,11 +48,6 @@ https://example.com/authorize
 | `redirect_uri` | A special URL scheme at which the system confirms authorization. |
 
 > 💡 **Tip**: For more information about: - Login hints, response types, or redirect URI, see [`OpenID Connect Core`](https://developer.apple.comhttps://openid.net/specs/openid-connect-core-1_0.html).
-- Code challenges, see the [`RFC7636 - Proof Key for Code Exchange`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7636).
-
-For more information about:
-
-- Login hints, response types, or redirect URI, see [`OpenID Connect Core`](https://developer.apple.comhttps://openid.net/specs/openid-connect-core-1_0.html).
 - Code challenges, see the [`RFC7636 - Proof Key for Code Exchange`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7636).
 
 In response to the call, your authorization endpoint provides a login page for the person to enter their credentials. On the login page, display the account based on the `login_hint` request parameter.
@@ -137,4 +130,4 @@ For example, if the system encounters an invalid access token while performing a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/reauthenticating-a-person-to-manage-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/reauthenticating-a-person-to-manage-apps)*

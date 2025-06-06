@@ -1,6 +1,6 @@
 # totalFlightsClimbed
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: property
 
 The total number of flights of stairs climbed during the workout.
@@ -24,8 +24,6 @@ var totalFlightsClimbed: HKQuantity? { get }
 This property contains a quantity using count units, or `nil`.
 
 > **Note**:  Provide the total flights climbed value whenever the number of flights climbed is relevant to the workout type. In addition, add flights climbed samples to a workout using the [`add(_:to:completion:)`](hkhealthstore/add(_:to:completion:).md) method. These samples should sum up to the total flights climbed, while providing detailed information about how the intensity changes over the duration of the workout.
-
- Provide the total flights climbed value whenever the number of flights climbed is relevant to the workout type. In addition, add flights climbed samples to a workout using the [`add(_:to:completion:)`](hkhealthstore/add(_:to:completion:).md) method. These samples should sum up to the total flights climbed, while providing detailed information about how the intensity changes over the duration of the workout.
 
 ## See Also
 

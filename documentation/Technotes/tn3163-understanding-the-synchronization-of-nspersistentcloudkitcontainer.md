@@ -109,11 +109,7 @@ info  … 14:14:15.230887 …  YourCoolApp debug: CoreData+CloudKit:
 
 > **Note**: For better readability, the logs in this technote are formatted to fit the page size, and some information in the logs is omitted.
 
-For better readability, the logs in this technote are formatted to fit the page size, and some information in the logs is omitted.
-
 > **Note**: If you save a managed object context but can’t find the relevant logs, confirm that the save was successful. Be sure to save the [`parent`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext/parent), if you use a nested context.
-
-If you save a managed object context but can’t find the relevant logs, confirm that the save was successful. Be sure to save the [`parent`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext/parent), if you use a nested context.
 
 The logs contain the Core Data [`NSStoreUUIDKey`](https://developer.apple.com/documentation/CoreData/NSStoreUUIDKey), or `A73C42D5-ADEE-4758-B2A1-F75DEBF93702` in this example, which can be used with the `message` filter to filter out the logs irrelevant to the store.
 
@@ -327,8 +323,6 @@ com.apple.coredata.cloudkit.private.subscription <CKDatabaseNotification: …>
 
 > **Note**: If the system receives a CloudKit notification but doesn’t forward it to your app, confirm that the `Remote notification` background mode is on in your project, as described in [`Setting Up Core Data with CloudKit`](https://developer.apple.com/documentation/CoreData/setting-up-core-data-with-cloudkit).
 
-If the system receives a CloudKit notification but doesn’t forward it to your app, confirm that the `Remote notification` background mode is on in your project, as described in [`Setting Up Core Data with CloudKit`](https://developer.apple.com/documentation/CoreData/setting-up-core-data-with-cloudkit).
-
 ##### Confirm That the Import Can Proceed
 
 As it does for an export, `NSPersistentCloudKitContainer` coordinates with the system on when to do an import. Use the `process` (“dasd”) and `message` (“activity.import.<the-store-UUID>”) filters to find the relevant logs. The following example shows the system applied `Activity Group Policy` to throttle an import, and let it go almost immediately because the throttle quickly expired:
@@ -445,8 +439,6 @@ For more information about filing a great feedback report, see WWDC22 session 10
 
 > **Note**: When providing feedback for other CloudKit APIs, such as the [`CloudKit`](https://developer.apple.com/documentation/CloudKit) framework and [`NSUbiquitousKeyValueStore`](https://developer.apple.com/documentation/Foundation/NSUbiquitousKeyValueStore), make your report actionable as well by providing the same information, except the Core Data store that isn’t needed.
 
-When providing feedback for other CloudKit APIs, such as the [`CloudKit`](https://developer.apple.com/documentation/CloudKit) framework and [`NSUbiquitousKeyValueStore`](https://developer.apple.com/documentation/Foundation/NSUbiquitousKeyValueStore), make your report actionable as well by providing the same information, except the Core Data store that isn’t needed.
-
 #### Revision History
 
 -  Adjusted some of the video links.
@@ -488,4 +480,4 @@ When providing feedback for other CloudKit APIs, such as the [`CloudKit`](https:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer)*

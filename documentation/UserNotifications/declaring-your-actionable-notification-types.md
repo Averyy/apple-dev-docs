@@ -12,8 +12,6 @@ Actionable notifications let the user respond to a delivered notification withou
 
 > **Note**:  When someone performs a Double Tap gesture while viewing a notification on Apple Watch Series 9 or Apple Watch Ultra 2, the system invokes the first nondestructive action. A nondestructive action doesn’t include the [`destructive`](unnotificationactionoptions/destructive.md) option, and won’t delete user data or change the app irrevocably.
 
- When someone performs a Double Tap gesture while viewing a notification on Apple Watch Series 9 or Apple Watch Ultra 2, the system invokes the first nondestructive action. A nondestructive action doesn’t include the [`destructive`](unnotificationactionoptions/destructive.md) option, and won’t delete user data or change the app irrevocably.
-
 To support actionable notifications, you must:
 
 - Declare one or more notification categories at launch time from your iOS app.
@@ -22,8 +20,6 @@ To support actionable notifications, you must:
 - Assign category identifiers to notification payloads when generating notifications.
 
 > **Note**:  The system also uses categories to determine whether it should launch your notification service app extension or notification content app extension. For information about how to create a notification service app extension, see [`Modifying content in newly delivered notifications`](modifying-content-in-newly-delivered-notifications.md). For information about how to create a notification content app extension, see [`Customizing the Appearance of Notifications`](https://developer.apple.com/documentation/UserNotificationsUI/customizing-the-appearance-of-notifications).
-
- The system also uses categories to determine whether it should launch your notification service app extension or notification content app extension. For information about how to create a notification service app extension, see [`Modifying content in newly delivered notifications`](modifying-content-in-newly-delivered-notifications.md). For information about how to create a notification content app extension, see [`Customizing the Appearance of Notifications`](https://developer.apple.com/documentation/UserNotificationsUI/customizing-the-appearance-of-notifications).
 
 ##### Declare Your Custom Actions and Notification Types
 
@@ -58,8 +54,6 @@ notificationCenter.setNotificationCategories([meetingInviteCategory])
 ```
 
 > ❗ **Important**:  All of your action objects must have unique identifiers. When handling actions, the identifier is the only way to distinguish one action from another, even when those actions belong to different categories.
-
- All of your action objects must have unique identifiers. When handling actions, the identifier is the only way to distinguish one action from another, even when those actions belong to different categories.
 
 Most actions result in a user selection, but text input actions also let the user type custom text-based responses. Your app can then incorporate the user’s typed response into your handling of the action. For example, a messaging app could send the typed text as the response to an incoming message. To create a text input action, create a [`UNTextInputNotificationAction`](untextinputnotificationaction.md) object instead of a [`UNNotificationAction`](unnotificationaction.md) object. When the user taps the button for a text input action, the system displays an editable text field. When reporting the action to your app, the system includes the text that the user typed as part of the response.
 
@@ -142,8 +136,6 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 
 > ❗ **Important**:  If your response to an action involves accessing files on disk, consider a different approach. Users can respond to actions while the device is locked, which would make files encrypted with the [`complete`](https://developer.apple.com/documentation/foundation/fileprotectiontype/1616200-complete) option unavailable to your app. If that happens, you may need to save changes temporarily and integrate them into your app’s data structures later.
 
- If your response to an action involves accessing files on disk, consider a different approach. Users can respond to actions while the device is locked, which would make files encrypted with the [`complete`](https://developer.apple.com/documentation/foundation/fileprotectiontype/1616200-complete) option unavailable to your app. If that happens, you may need to save changes temporarily and integrate them into your app’s data structures later.
-
 ## See Also
 
 - [class UNNotificationCategory](unnotificationcategory.md)
@@ -156,4 +148,4 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/declaring-your-actionable-notification-types)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/declaring-your-actionable-notification-types)*

@@ -48,8 +48,6 @@ func overlayView(_ overlayView: ImageAnalysisOverlayView, updateMenu menu: NSMen
 
 > **Note**: The framework is the delegate for the returned menu item. The framework continues to support [`NSMenuDelegate`](https://developer.apple.com/documentation/AppKit/NSMenuDelegate) callbacks for VisionKit-specific menu items.
 
-The framework is the delegate for the returned menu item. The framework continues to support [`NSMenuDelegate`](https://developer.apple.com/documentation/AppKit/NSMenuDelegate) callbacks for VisionKit-specific menu items.
-
 ## Parameters
 
 - `overlayView`: The associated overlay view for the updated menu.

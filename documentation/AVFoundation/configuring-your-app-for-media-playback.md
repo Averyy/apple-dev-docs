@@ -1,6 +1,6 @@
 # Configuring your app for media playback
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Configure apps to enable standard media playback behavior.
 
@@ -46,8 +46,6 @@ To enable this category, activate the audio session using the [`setActive(_:opti
 
 > **Note**:  You can activate the audio session at any time after setting its category, but it’s recommended to defer this call until your app begins audio playback. Deferring the call ensures that you don’t prematurely interrupt any other background audio that may be in progress.
 
- You can activate the audio session at any time after setting its category, but it’s recommended to defer this call until your app begins audio playback. Deferring the call ensures that you don’t prematurely interrupt any other background audio that may be in progress.
-
 Setting the category is the minimal interaction with an audio session, but other configuration options and features are available. For example, in visionOS, you customize a user’s spatial audio experience by configuring the audio session. For more information, see [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession).
 
 ##### Configure the Background Modes
@@ -67,4 +65,4 @@ With this mode enabled and your audio session configured, your app is ready to p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/configuring-your-app-for-media-playback)*

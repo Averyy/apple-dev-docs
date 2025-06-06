@@ -1,6 +1,6 @@
 # maximumIterations
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: property
 
 The maximum number of allowed passes through the data.
@@ -26,8 +26,6 @@ More passes over the data can result in a more accurately trained model. Conside
 
 > **Note**: This parameter is only used by the `fitted` method. When using the `update` method it’s up to you to decide when to stop.
 
-This parameter is only used by the `fitted` method. When using the `update` method it’s up to you to decide when to stop.
-
 ## See Also
 
 - [var convergenceThreshold: Double](logisticregressionclassifier/configuration-swift.struct/convergencethreshold.md)
@@ -48,4 +46,4 @@ This parameter is only used by the `fitted` method. When using the `update` meth
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/logisticregressionclassifier/configuration-swift.struct/maximumiterations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/logisticregressionclassifier/configuration-swift.struct/maximumiterations)*

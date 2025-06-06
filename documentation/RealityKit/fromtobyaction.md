@@ -1,6 +1,6 @@
 # FromToByAction
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 An action that starts, stops, or increments by a specific value.
@@ -25,8 +25,6 @@ This action animates a bound parameters value over time. Specifying a [`from`](f
 This action exposes [`FromToByAction.TransformMode`](fromtobyaction/transformmode.md) which is used when animating a [`Transform`](transform.md) property. Use this mode to determine the reference space the property is relative to. For example, [`FromToByAction.TransformMode.local`](fromtobyaction/transformmode/local.md) means the provided transforms are relative to the transform of the bound entity. The only exception is when [`by`](fromtobyaction/by.md) is specified, this is relative to the space of the starting transform.
 
 > **Note**: `FromToByAction` doesn’t support [`JointTransforms`](jointtransforms.md) or [`BlendShapeWeights`](blendshapeweights.md) types. Use [`FromToByAnimation`](fromtobyanimation.md) to animate these types.
-
-`FromToByAction` doesn’t support [`JointTransforms`](jointtransforms.md) or [`BlendShapeWeights`](blendshapeweights.md) types. Use [`FromToByAnimation`](fromtobyanimation.md) to animate these types.
 
 ##### Creating a From to By Action to Animate an Entitys Opacity
 
@@ -91,19 +89,11 @@ entity.playAnimation(transformAnimation)
 
 > **Note**: The default source value is the base value of the of animated property. If multiple animations target the property, then the framework observes the output of the previous animation as the subsequent animation’s default source value.
 
-The default source value is the base value of the of animated property. If multiple animations target the property, then the framework observes the output of the previous animation as the subsequent animation’s default source value.
-
 > ❗ **Important**: This action animates various bound properties, for example [`BindTarget.transform`](bindtarget/transform.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
-
-This action animates various bound properties, for example [`BindTarget.transform`](bindtarget/transform.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
 
 > **Note**: For more information on the combination of inputs this action supports see [`FromToByAnimation`](fromtobyanimation.md).
 
-For more information on the combination of inputs this action supports see [`FromToByAnimation`](fromtobyanimation.md).
-
 > ❗ **Important**: If you do not provide values for any of the `from`, `to`, and `by` parameters, the animation stays at the default source value.
-
-If you do not provide values for any of the `from`, `to`, and `by` parameters, the animation stays at the default source value.
 
 ## Topics
 
@@ -182,4 +172,4 @@ If you do not provide values for any of the `from`, `to`, and `by` parameters, t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/fromtobyaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/fromtobyaction)*

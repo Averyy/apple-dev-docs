@@ -1,6 +1,6 @@
 # speed
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: property
 
 The rate at which the simulation executes.
@@ -25,8 +25,6 @@ var speed: CGFloat { get set }
 The default value is `1.0`, which means that the simulation runs at normal speed. A value other than the default changes the rate at which time passes in the physics simulation. For example, a speed value of `2.0` indicates that time in the physics simulation passes twice as fast as the scene’s simulation time. A value of `0.0` pauses the physics simulation.
 
 > **Note**:  Increasing the speed of the physics simulation reduces its accuracy.
-
- Increasing the speed of the physics simulation reduces its accuracy.
 
 ## See Also
 

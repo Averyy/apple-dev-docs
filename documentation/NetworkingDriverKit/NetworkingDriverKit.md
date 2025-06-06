@@ -1,6 +1,6 @@
 # NetworkingDriverKit
 
-**Framework**: NetworkingDriverKit  
+**Framework**: Networkingdriverkit  
 **Kind**: module
 
 Develop drivers for Ethernet networking devices.
@@ -17,8 +17,6 @@ Note that Ethernet is the only networking interface currently supported by Netwo
 Develop your driver with DriverKit and NetworkingDriverKit. Use USBDriverKit to manage the connection to your hardware device. Include your driver inside your macOS app and use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade the driver on the user’s Mac.
 
 > **Note**:  NetworkingDriverKit is available on macOS.
-
- NetworkingDriverKit is available on macOS.
 
 ## Topics
 

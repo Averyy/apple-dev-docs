@@ -1,6 +1,6 @@
 # interruptionNotification
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: property
 
 A notification the system posts when an audio interruption occurs.
@@ -32,10 +32,6 @@ See [`Handling audio interruptions`](handling-audio-interruptions.md) for more i
 The system posts this notification on the main thread.
 
 > **Note**:  Starting in iOS 10, the system deactivates an app’s audio session when it suspends the app process. When the app starts running again, it receives an interruption notification that the system has deactivated its audio session. This notification is necessarily delayed in time because the system can only deliver it once the app is running again. If the system suspended your app’s audio session for this reason, the user-information dictionary contains the [`AVAudioSessionInterruptionWasSuspendedKey`](avaudiosessioninterruptionwassuspendedkey.md) key with a value of [`true`](https://developer.apple.com/documentation/swift/true). If you configured your audio session to be nonmixable (the default behavior for the [`playback`](avaudiosession/category-swift.struct/playback.md), [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md), [`soloAmbient`](avaudiosession/category-swift.struct/soloambient.md), and [`multiRoute`](avaudiosession/category-swift.struct/multiroute.md) categories), deactivate your audio session if you’re not actively using audio when you go into the background. Doing so avoids having your audio session deactivated by the system (and receiving this somewhat confusing notification).
-
- Starting in iOS 10, the system deactivates an app’s audio session when it suspends the app process. When the app starts running again, it receives an interruption notification that the system has deactivated its audio session. This notification is necessarily delayed in time because the system can only deliver it once the app is running again. If the system suspended your app’s audio session for this reason, the user-information dictionary contains the [`AVAudioSessionInterruptionWasSuspendedKey`](avaudiosessioninterruptionwassuspendedkey.md) key with a value of [`true`](https://developer.apple.com/documentation/swift/true).
-
-If you configured your audio session to be nonmixable (the default behavior for the [`playback`](avaudiosession/category-swift.struct/playback.md), [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md), [`soloAmbient`](avaudiosession/category-swift.struct/soloambient.md), and [`multiRoute`](avaudiosession/category-swift.struct/multiroute.md) categories), deactivate your audio session if you’re not actively using audio when you go into the background. Doing so avoids having your audio session deactivated by the system (and receiving this somewhat confusing notification).
 
 ## Topics
 

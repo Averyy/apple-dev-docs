@@ -1,6 +1,6 @@
 # groupLevel
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: property
 
 The rank of the subscription relative to other subscriptions in the same subscription group.
@@ -29,8 +29,6 @@ Subscriptions with the highest level of service within a subscription group have
 For more information on ranking, see [`Ranking subscriptions within the group`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#ranking). For information on assigning subscription levels in App Store Connect, see [`Assign subscription levels`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/#assign-subscription-levels).
 
 > **Note**:  On systems earlier than iOS 17, macOS 14, tvOS 17, and watchOS 10, this property returns a sentinel value of `0` when you test your app using StoreKit Testing in Xcode or if there’s an unexpected server error.
-
- On systems earlier than iOS 17, macOS 14, tvOS 17, and watchOS 10, this property returns a sentinel value of `0` when you test your app using StoreKit Testing in Xcode or if there’s an unexpected server error.
 
 ## See Also
 

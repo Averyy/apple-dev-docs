@@ -1,6 +1,6 @@
 # Associating bugs with tests
 
-**Framework**: Swift Testing
+**Framework**: Testing
 
 Associate bugs uncovered or verified by tests.
 
@@ -9,8 +9,6 @@ Associate bugs uncovered or verified by tests.
 Tests allow developers to prove that the code they write is working as expected. If code isn’t working correctly, bug trackers are often used to track the work necessary to fix the underlying problem. It’s often useful to associate specific bugs with tests that reproduce them or verify they are fixed.
 
 > **Note**: “Bugs” as described in this document may also be referred to as “issues.” To avoid confusion with the [`Issue`](issue.md) type in the testing library, this document consistently refers to them as “bugs.”
-
-“Bugs” as described in this document may also be referred to as “issues.” To avoid confusion with the [`Issue`](issue.md) type in the testing library, this document consistently refers to them as “bugs.”
 
 #### Associate a Bug with a Test
 
@@ -82,4 +80,4 @@ func hasNapkins() async {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/testing/associatingbugs)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Testing/associatingbugs)*

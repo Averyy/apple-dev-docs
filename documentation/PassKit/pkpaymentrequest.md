@@ -1,6 +1,6 @@
 # PKPaymentRequest
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: class
 
 An object that represents a request for payment, including details about payment-processing capabilities, the payment amount, and shipping information.
@@ -36,8 +36,6 @@ A typical payment request is for a one-time payment. To support different types 
 | Multiple payment tokens to support for multimerchant payments | [`multiTokenContexts`](pkpaymentrequest/multitokencontexts.md) |
 
 > **Note**:  You can set only one optional payment request type on a payment request object.
-
- You can set only one optional payment request type on a payment request object.
 
 ##### Request a Recurring Payment
 
@@ -208,4 +206,4 @@ Use the [`multiTokenContexts`](pkpaymentrequestupdate/multitokencontexts.md) pro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/passkit/pkpaymentrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/pkpaymentrequest)*

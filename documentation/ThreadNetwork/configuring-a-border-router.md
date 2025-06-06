@@ -1,6 +1,6 @@
 # Configuring a Border Router
 
-**Framework**: ThreadNetwork
+**Framework**: Threadnetwork
 
 Set up or add a Border Router on a Thread network.
 
@@ -14,15 +14,11 @@ To begin setup, first check for a configured preferred network using [`isPreferr
 
 > **Note**: Retrieving preferred network credentials requires user consent.
 
-Retrieving preferred network credentials requires user consent.
-
 If a preferred network isn’t available, you must create a new Thread network and configure the Thread Border Router with this information.
 
 After you configure the Border Router, store the credentials to iCloud Keychain using [`storeCredentials(forBorderAgent:activeOperationalDataSet:completion:)`](thclient/storecredentials(forborderagent:activeoperationaldataset:completion:).md).
 
 > ❗ **Important**: If you’re setting up a Thread-capable Wi-Fi router, read the preferred network only after the user configures the Wi-Fi SSID on that router.
-
-If you’re setting up a Thread-capable Wi-Fi router, read the preferred network only after the user configures the Wi-Fi SSID on that router.
 
 Storing credentials marks the newly created Thread network as the preferred network in iCloud Keychain. This process makes the Thread network immediately available for devices to join.
 
@@ -35,8 +31,6 @@ After you’ve configured the Border Router, use [`storeCredentials(forBorderAge
 
 > ❗ **Important**: Use [`isPreferredNetworkAvailable(completion:)`](thclient/ispreferrednetworkavailable(completion:).md) before calling  [`checkPreferredNetwork(forActiveOperationalDataset:completion:)`](thclient/checkpreferrednetwork(foractiveoperationaldataset:completion:).md) to avoid a scenario in which a user configures an initial device at one home, and a subsequent device at a different home.
 
-Use [`isPreferredNetworkAvailable(completion:)`](thclient/ispreferrednetworkavailable(completion:).md) before calling  [`checkPreferredNetwork(forActiveOperationalDataset:completion:)`](thclient/checkpreferrednetwork(foractiveoperationaldataset:completion:).md) to avoid a scenario in which a user configures an initial device at one home, and a subsequent device at a different home.
-
 ## See Also
 
 - [Managing Thread network credentials](managing-thread-network-credentials.md)
@@ -45,4 +39,4 @@ Use [`isPreferredNetworkAvailable(completion:)`](thclient/ispreferrednetworkavai
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/threadnetwork/configuring-a-border-router)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ThreadNetwork/configuring-a-border-router)*

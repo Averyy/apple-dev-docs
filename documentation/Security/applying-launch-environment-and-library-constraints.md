@@ -40,8 +40,6 @@ For information about the options to use with `codesign` in Terminal, see the UN
 
 > **Note**:  You don’t embed spawn constraints for `launchd` daemons and agents into their executable file’s code signature. Instead, add the constraint to the `SpawnConstraint` key in the daemon or agent’s `launchd` property list file.
 
- You don’t embed spawn constraints for `launchd` daemons and agents into their executable file’s code signature. Instead, add the constraint to the `SpawnConstraint` key in the daemon or agent’s `launchd` property list file.
-
 ##### Diagnose Launch Constraint Failures
 
 When the operating system blocks a process from launching because of an unsatisfied launch constraint, the crash log for the process reports that a launch constraint violation occurred. Additionally, when the operating system detects an unsatisfied launch constraint, it logs a message that you can search for in Console. The log message has this form:
@@ -73,4 +71,4 @@ The fields in the log message have the following meanings:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/applying-launch-environment-and-library-constraints)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/applying-launch-environment-and-library-constraints)*

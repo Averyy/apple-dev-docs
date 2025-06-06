@@ -1,6 +1,6 @@
 # addToSimulation()
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Adds this joint to the simulation.
@@ -32,8 +32,6 @@ If found, it adds the joint to that ancestor’s [`PhysicsJointsComponent`](phys
 The traversal stops when reaching an [`Entity`](entity.md) with [`PhysicsSimulationComponent`](physicssimulationcomponent.md), or when it cannot traverse up anymore. In the former case it adds the joint to [`joints`](physicsjointscomponent/joints.md). In the latter case it adds [`PhysicsJointsComponent`](physicsjointscomponent.md) to the first [`Entity`](entity.md) referenced by the joint, and adds the joint to the newly created [`PhysicsJointsComponent`](physicsjointscomponent.md).
 
 > **Note**: When the joint contains invalid data.
-
-When the joint contains invalid data.
 
 
 ---

@@ -1,6 +1,6 @@
 # pageController(_:prepare:with:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Prepare the view controller and it’s view for drawing.
@@ -20,8 +20,6 @@ optional func pageController(_ pageController: NSPageController, prepare viewCon
 If this method is not implemented, then `viewController` object’s `representedObject` is set to the object.
 
 > **Note**:  This method is called on the main thread and should return immediately. The view will be asked to draw on a background thread and must support background drawing.
-
- This method is called on the main thread and should return immediately. The view will be asked to draw on a background thread and must support background drawing.
 
 This method is only useful if [`pageController(_:identifierFor:)`](nspagecontrollerdelegate/pagecontroller(_:identifierfor:).md) and [`pageController(_:prepare:with:)`](nspagecontrollerdelegate/pagecontroller(_:prepare:with:).md) are implemented.
 

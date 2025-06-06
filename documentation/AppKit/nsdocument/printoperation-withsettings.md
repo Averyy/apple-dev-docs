@@ -1,6 +1,6 @@
 # printOperation(withSettings:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Creates and returns a print operation for the document’s contents.
@@ -25,13 +25,7 @@ The print operation can be run to print the document’s current contents. The `
 
 > ❗ **Important**:  You must override this method to enable printing in your app. The default implementation raises an exception.
 
- You must override this method to enable printing in your app. The default implementation raises an exception.
-
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

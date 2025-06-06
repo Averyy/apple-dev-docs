@@ -1,6 +1,6 @@
 # classCount
 
-**Framework**: ML Compute  
+**Framework**: Mlcompute  
 **Kind**: property
 
 The number of classes.
@@ -24,8 +24,6 @@ The default value is 1.
 
 > **Note**:  This is only valid for the loss function type [`MLCLossType.softmaxCrossEntropy`](mlclosstype/softmaxcrossentropy.md).
 
- This is only valid for the loss function type [`MLCLossType.softmaxCrossEntropy`](mlclosstype/softmaxcrossentropy.md).
-
 ## See Also
 
 - [var lossType: MLCLossType](mlclossdescriptor/losstype.md)
@@ -44,4 +42,4 @@ The default value is 1.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mlcompute/mlclossdescriptor/classcount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MLCompute/mlclossdescriptor/classcount)*

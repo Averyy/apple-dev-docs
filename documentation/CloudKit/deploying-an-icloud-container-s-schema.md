@@ -1,6 +1,6 @@
 # Deploying an iCloud Container’s Schema
 
-**Framework**: CloudKit
+**Framework**: Cloudkit
 
 Reset your container’s state during development and deploy your container’s schema to production.
 
@@ -32,8 +32,6 @@ After you finalize your schema and test your app in the development environment,
 
 > **Note**:  To deploy a schema, you must have privileges to edit the production environment. If you’re an individual, you’re the team administrator and have those privileges. If you’re a member of a team, ask your team administrator to perform these steps for you, or to grant you the administrator privilege.
 
- To deploy a schema, you must have privileges to edit the production environment. If you’re an individual, you’re the team administrator and have those privileges. If you’re a member of a team, ask your team administrator to perform these steps for you, or to grant you the administrator privilege.
-
 To deploy the development schema to production:
 
 1. Sign in to CloudKit Console at [`https://icloud.developer.apple.com/`](https://developer.apple.comhttps://icloud.developer.apple.com/).
@@ -56,4 +54,4 @@ To deploy the development schema to production:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/deploying-an-icloud-container-s-schema)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/deploying-an-icloud-container-s-schema)*

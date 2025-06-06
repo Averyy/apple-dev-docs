@@ -1,6 +1,6 @@
 # automaticallyConfiguresCaptureDeviceForWideColor
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A Boolean value that specifies whether the session should automatically use wide-gamut color where available.
@@ -29,8 +29,6 @@ When this property is [`true`](https://developer.apple.com/documentation/swift/t
 For information about which devices and session configurations automatically enable wide-gamut capture, see Wide-Gamut Capture in [`iOS Device Compatibility Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013599).
 
 > **Note**:  When this property is [`true`](https://developer.apple.com/documentation/swift/true), and your session configuration isn’t appropriate for wide-gamut capture, session presets other than [`inputPriority`](avcapturesession/preset/inputpriority.md) may choose a capture format that doesn’t support wide-gamut capture.
-
- When this property is [`true`](https://developer.apple.com/documentation/swift/true), and your session configuration isn’t appropriate for wide-gamut capture, session presets other than [`inputPriority`](avcapturesession/preset/inputpriority.md) may choose a capture format that doesn’t support wide-gamut capture.
 
 Set this property to [`false`](https://developer.apple.com/documentation/swift/false) if you want to directly change the value of the capture device’s [`activeColorSpace`](avcapturedevice/activecolorspace.md) property (regardless of whether you configure your device with a session preset or by directly setting a capture format).
 

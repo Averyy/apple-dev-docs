@@ -20,8 +20,6 @@ For best results, ensure that the total duration of a parallelized subdivision i
 
 > **Note**:  This configuration isn’t supported by all video encoders.
 
- This configuration isn’t supported by all video encoders.
-
 ## See Also
 
 - [let kVTVideoEncoderSpecification_EncoderID: CFString](kvtvideoencoderspecification_encoderid.md)

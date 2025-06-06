@@ -12,8 +12,6 @@ Capabilities simplify the configuration process for many of Apple’s services, 
 
 > **Note**: You add most capabilities directly from Xcode, but some app services — such as Game Center and In-App Purchase — require additional setup in App Store Connect and your developer account. For more information, see the documentation below for the specific capability.
 
-You add most capabilities directly from Xcode, but some app services — such as Game Center and In-App Purchase — require additional setup in App Store Connect and your developer account. For more information, see the documentation below for the specific capability.
-
 ## Topics
 
 ### Essentials
@@ -78,4 +76,4 @@ You add most capabilities directly from Xcode, but some app services — such as
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/capabilities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/capabilities)*

@@ -1,6 +1,6 @@
 # Making camera actions available to Siri and Apple Intelligence
 
-**Framework**: App Intents
+**Framework**: Appintents
 
 Create app intents and enumerations to integrate your app’s camera functionality with Siri and Apple Intelligence.
 
@@ -9,8 +9,6 @@ Create app intents and enumerations to integrate your app’s camera functionali
 To integrate your app’s camera capabilities with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance for your app intent and app enumeration implementation that Apple Intelligence needs.
 
 > **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
-
-Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
 
 For example, if your app allows a person to take a photo or video, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.camera` domain and the [`startCapture`](assistantschemas/cameraintent/startcapture.md) schema:
 
@@ -59,4 +57,4 @@ For a list of available app enumeration schemas in the `.camera` domain, see [`A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-camera-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-camera-actions-available-to-siri-and-apple-intelligence)*

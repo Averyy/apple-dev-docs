@@ -57,8 +57,6 @@ For more information about managing Swift packages, see [`Swift packages`](swift
 
 > **Note**: To use RealityKit content that you create using Reality Composer Pro, you can add its folder to your Xcode project and link against the Swift Package it contains. For more information about Reality Composer Pro, see [`Designing RealityKit content with Reality Composer Pro`](https://developer.apple.com/documentation/visionOS/designing-realitykit-content-with-reality-composer-pro).
 
-To use RealityKit content that you create using Reality Composer Pro, you can add its folder to your Xcode project and link against the Swift Package it contains. For more information about Reality Composer Pro, see [`Designing RealityKit content with Reality Composer Pro`](https://developer.apple.com/documentation/visionOS/designing-realitykit-content-with-reality-composer-pro).
-
 ##### Organize Project Files in the Navigator
 
 Most new projects contain some structure to organize the project’s content — for example, to separate source files from generated products. You can create additional groups and folders to organize your content and make it easier to navigate large projects.
@@ -69,8 +67,6 @@ Most new projects contain some structure to organize the project’s content �
 In the Project navigator, create and modify groups using direct interaction or menu commands:
 
 > ❗ **Important**: If a group is associated with a folder, Xcode performs all rename, delete, move, and copy operations on the folder in the file system. For projects under source control, Xcode uses the source-control system to perform the operations and track the changes. If you move files between groups in the same Git repository, Xcode moves the files in the file system. If the files are in different repositories, Xcode copies the files into the folder in the new repository.
-
-If a group is associated with a folder, Xcode performs all rename, delete, move, and copy operations on the folder in the file system. For projects under source control, Xcode uses the source-control system to perform the operations and track the changes. If you move files between groups in the same Git repository, Xcode moves the files in the file system. If the files are in different repositories, Xcode copies the files into the folder in the new repository.
 
 ##### Delete Files and Folders
 
@@ -97,4 +93,4 @@ To convert the files Xcode displays in Show Details, make the file and directory
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/managing-files-and-folders-in-your-xcode-project)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/managing-files-and-folders-in-your-xcode-project)*

@@ -26,8 +26,6 @@ The closure you provide to the `AsyncStream` in `init(_:bufferingPolicy:_:)` rec
 
 > **Note**: Unlike other continuations in Swift, `AsyncStream.Continuation` supports escaping.
 
-Unlike other continuations in Swift, `AsyncStream.Continuation` supports escaping.
-
 ## Topics
 
 ### Producing Elements

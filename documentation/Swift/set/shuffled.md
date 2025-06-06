@@ -38,8 +38,6 @@ This method is equivalent to calling `shuffled(using:)`, passing in the systemâ€
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## See Also
 
 - [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](set/compactmap(_:).md)

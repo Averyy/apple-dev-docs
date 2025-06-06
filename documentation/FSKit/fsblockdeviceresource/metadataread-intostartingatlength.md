@@ -1,6 +1,6 @@
 # metadataRead(into:startingAt:length:)
 
-**Framework**: FSKit  
+**Framework**: Fskit  
 **Kind**: method
 
 Synchronously reads file system metadata from the resource into a buffer.
@@ -23,8 +23,6 @@ For the read to succeed, requests must conform to any transfer requirements of t
 This method doesn’t support partial reading of metadata.
 
 > **Note**: Any error encountered while reading data.
-
-Any error encountered while reading data.
 
 ## Parameters
 

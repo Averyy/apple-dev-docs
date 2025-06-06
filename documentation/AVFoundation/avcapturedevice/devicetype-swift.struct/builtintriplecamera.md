@@ -1,6 +1,6 @@
 # builtInTripleCamera
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: property
 
 A built-in camera device type that consists of three cameras of fixed focal length, one ultrawide angle, one wide angle, and one telephoto.
@@ -33,8 +33,6 @@ The built-in triple camera doesn’t support the following features:
 Even when locked, exposure duration, ISO, aperture, white balance gains, or lens position may change when the device switches from one camera to another. However, the overall exposure, white balance, and focus position should be consistent.
 
 > **Note**:  You can only discover this device type using an [`AVCaptureDevice.DiscoverySession`](avcapturedevice/discoverysession.md) or the [`AVCaptureDevice`](avcapturedevice.md) [`default(_:for:position:)`](avcapturedevice/default(_:for:position:).md) method.
-
- You can only discover this device type using an [`AVCaptureDevice.DiscoverySession`](avcapturedevice/discoverysession.md) or the [`AVCaptureDevice`](avcapturedevice.md) [`default(_:for:position:)`](avcapturedevice/default(_:for:position:).md) method.
 
 ## See Also
 

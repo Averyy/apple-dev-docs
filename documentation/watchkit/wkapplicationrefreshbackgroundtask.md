@@ -24,8 +24,6 @@ Don’t subclass or create instances of this class. Instead, schedule a backgrou
 
 > **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
 
- In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
-
 The system budgets the number of background refresh tasks available to an app. In general, the system performs approximately four tasks per hour for each app with a complication on the active watch face. All the complications on the current watch face share this budget. After you exhaust the budget, the system delays your requests until more time becomes available.
 
 ## Relationships
@@ -65,4 +63,4 @@ The system budgets the number of background refresh tasks available to an app. I
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkapplicationrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkapplicationrefreshbackgroundtask)*

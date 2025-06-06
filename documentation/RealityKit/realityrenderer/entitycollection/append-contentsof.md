@@ -1,6 +1,6 @@
 # append(contentsOf:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Adds the specified sequence of entities to the end of this collection, in order.
@@ -22,8 +22,6 @@ mutating func append<S>(contentsOf sequence: S) where S : Sequence, S.Element : 
 #### Discussion
 
 > **Note**: This operation can invalidate the index order of any extant entities.
-
-This operation can invalidate the index order of any extant entities.
 
 ## Parameters
 

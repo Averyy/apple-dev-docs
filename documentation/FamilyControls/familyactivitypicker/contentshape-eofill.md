@@ -1,6 +1,6 @@
 # contentShape(_:_:eoFill:)
 
-**Framework**: FamilyControls  
+**Framework**: Familycontrols  
 **Kind**: method
 
 Sets the content shape for this view.
@@ -62,8 +62,6 @@ When someone activates the context menu with an action like touch and hold in iO
 The content shape also supports applying modifiers such as `InsettableShape/inset(by:)` to add padding.
 
 > **Note**: Similar to `ContentShapeKinds/focusEffect`, the `ContentShapeKinds/contextMenuPreview` and `ContentShapeKinds/dragPreview` content shapes do not impact the hit-testing shape. In this example, someone can touch and hold anywhere on the `VStack` to activate the menu. If you only want the `Image` to activate the menu, apply `View/contextMenu(menuItems:)` to the `Image` instead.
-
-Similar to `ContentShapeKinds/focusEffect`, the `ContentShapeKinds/contextMenuPreview` and `ContentShapeKinds/dragPreview` content shapes do not impact the hit-testing shape. In this example, someone can touch and hold anywhere on the `VStack` to activate the menu. If you only want the `Image` to activate the menu, apply `View/contextMenu(menuItems:)` to the `Image` instead.
 
 ## Parameters
 

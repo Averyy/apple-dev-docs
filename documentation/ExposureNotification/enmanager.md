@@ -1,6 +1,6 @@
 # ENManager
 
-**Framework**: Exposure Notification  
+**Framework**: Exposurenotification  
 **Kind**: class
 
 A class that manages exposure notifications.
@@ -20,15 +20,11 @@ class ENManager
 
 > ❗ **Important**:  This class is available in iOS 12.5, and in iOS 13.5 and later.
 
- This class is available in iOS 12.5, and in iOS 13.5 and later.
-
 Before using an instance of this class, call [`activate(completionHandler:)`](enmanager/activate(completionhandler:).md). If the completion handler completes successfully, you can work with the remaining properties and methods on the class. Activating this object doesn’t enable exposure notification; it only allows this object to be used. Once activated, exposure notification can be enabled with [`setExposureNotificationEnabled(_:completionHandler:)`](enmanager/setexposurenotificationenabled(_:completionhandler:).md), if needed.
 
 If the app no longer needs an instance of this class, you must call [`invalidate()`](enmanager/invalidate().md), which stops any outstanding operations and invokes the invalidation handler.
 
 > **Note**:  Invalidation is asynchronous so it’s possible for handlers to be invoked after calling [`invalidate()`](enmanager/invalidate().md).
-
- Invalidation is asynchronous so it’s possible for handlers to be invoked after calling [`invalidate()`](enmanager/invalidate().md).
 
 The framework invokes the invalidation handler once invalidation finishes, and performs the invocation exactly once, even if [`invalidate()`](enmanager/invalidate().md) is called multiple times. It does not call any additional handlers.
 
@@ -128,4 +124,4 @@ After calling [`invalidate()`](enmanager/invalidate().md), your app can’t reus
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enmanager)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enmanager)*

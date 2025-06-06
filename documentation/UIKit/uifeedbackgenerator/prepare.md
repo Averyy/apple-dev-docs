@@ -1,6 +1,6 @@
 # prepare()
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: method
 
 Prepares the generator to trigger feedback.
@@ -36,8 +36,6 @@ You can also extend the prepared state by repeatedly calling the [`prepare()`](u
 If you no longer need a prepared generator, remove all references to the generator object and let the system deallocate it. This lets the Taptic Engine return to its idle state.
 
 > **Note**:  The [`prepare()`](uifeedbackgenerator/prepare().md) method is optional; however, it is highly recommended. Calling this method helps ensure that your feedback has the lowest possible latency.
-
- The [`prepare()`](uifeedbackgenerator/prepare().md) method is optional; however, it is highly recommended. Calling this method helps ensure that your feedback has the lowest possible latency.
 
 ## See Also
 

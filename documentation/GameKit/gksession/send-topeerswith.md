@@ -1,6 +1,6 @@
 # send(_:toPeers:with:)
 
-**Framework**: GameKit  
+**Framework**: Gamekit  
 **Kind**: method
 
 Transmits a collection of bytes to a list of connected peers.
@@ -21,10 +21,6 @@ func send(_ data: Data!, toPeers peers: [Any]!, with mode: GKSendDataMode) throw
 The session queues the data and transmits it in the order it was queued. Data transmitted unreliably may be received out of order by the other peers.
 
 > **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

@@ -31,8 +31,6 @@ The `pageSize` field in the jetsam event report header records the number of byt
 
 > **Note**: This example shows the header fields needed to diagnose a crash from a jetsam event report. The complete header information contains more fields than shown in this example.
 
-This example shows the header fields needed to diagnose a crash from a jetsam event report. The complete header information contains more fields than shown in this example.
-
 While inspecting the header, examine the `largestProcess` field—this field names the process using the highest number of memory pages on the system. If other apps in addition to yours are regularly jettisoned, and your app is the largest process, you should reduce your memory use to better cooperate with other apps’ memory needs.
 
 ##### Identify the Jetsam Reason
@@ -40,8 +38,6 @@ While inspecting the header, examine the `largestProcess` field—this field nam
 A jetsam event report contains a `processes` array, with each item in the array describing a single process in the system. Search for the `reason` key to identify the jettisoned process and why the system jettisoned it. Only the jettisoned process has the reason key.
 
 > ❗ **Important**: If your app crashed, but the jettisoned process isn’t your app, then the crash isn’t due to memory pressure. To diagnose your app’s issue, see [`Acquiring crash reports and diagnostic logs`](acquiring-crash-reports-and-diagnostic-logs.md) to locate its crash report.
-
-If your app crashed, but the jettisoned process isn’t your app, then the crash isn’t due to memory pressure. To diagnose your app’s issue, see [`Acquiring crash reports and diagnostic logs`](acquiring-crash-reports-and-diagnostic-logs.md) to locate its crash report.
 
 This example is one process entry in the `processes` array:
 
@@ -61,8 +57,6 @@ This example is one process entry in the `processes` array:
 ```
 
 > **Note**: This example shows the process fields needed for diagnosing a crash from a jetsam event report. The complete process information in a report contains more fields than shown in this example.
-
-This example shows the process fields needed for diagnosing a crash from a jetsam event report. The complete process information in a report contains more fields than shown in this example.
 
 If the jettisoned process is your app, the value of the `reason` key explains the conditions that led to the jetsam event:
 
@@ -99,4 +93,4 @@ In addition to lowering your app’s memory use, ensure you are receiving the lo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/identifying-high-memory-use-with-jetsam-event-reports)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/identifying-high-memory-use-with-jetsam-event-reports)*

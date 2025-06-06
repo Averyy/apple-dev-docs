@@ -1,6 +1,6 @@
 # rate
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: property
 
 The audio player’s playback rate.
@@ -27,8 +27,6 @@ To set an audio player’s playback rate, you must first enable the rate adjustm
 The default value of this property is `1.0`, which indicates that audio playback occurs at standard speed. This property supports values in the range of `0.5` for half-speed playback to `2.0` for double-speed playback.
 
 > **Note**:  Adjusting the audio’s playback rate doesn’t alter its pitch.
-
- Adjusting the audio’s playback rate doesn’t alter its pitch.
 
 ## See Also
 

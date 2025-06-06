@@ -1,6 +1,6 @@
 # Executing Statistics Collection Queries
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Calculate statistical data for graphs and charts.
 
@@ -9,8 +9,6 @@ Calculate statistical data for graphs and charts.
 Produce data for graphs and charts using statistics collection queries. For example, you might create a statistics collection query that calculates the total number of steps for each day or the average heart rate for each hour.
 
 > **Note**:  HealthKit provides two types of queries for calculating statistics over sets of samples. [`HKStatisticsQuery`](hkstatisticsquery.md) calculates a single value over all matching samples, while [`HKStatisticsCollectionQuery`](hkstatisticscollectionquery.md) partitions the samples into time intervals and calculates a value for each time interval.
-
- HealthKit provides two types of queries for calculating statistics over sets of samples. [`HKStatisticsQuery`](hkstatisticsquery.md) calculates a single value over all matching samples, while [`HKStatisticsCollectionQuery`](hkstatisticscollectionquery.md) partitions the samples into time intervals and calculates a value for each time interval.
 
 Statistics collection queries use an anchor point and a time interval to partition the set of matching samples into collections. The anchor point defines an arbitrary starting point. The position of this point often doesn’t matter. It could be in the future or in the past. Time intervals extend away from this anchor point in both directions.
 
@@ -163,4 +161,4 @@ Since the sample doesn’t provide an update results handler, when the initial r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/executing-statistics-collection-queries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/executing-statistics-collection-queries)*

@@ -28,8 +28,6 @@ The CPU can access the updated content from its copy of the resources after the 
 
 > **Note**:  You can encode a command that selectively synchronizes parts of an [`MTLTexture`](mtltexture.md) by calling the [`synchronize(texture:slice:level:)`](mtlblitcommandencoder/synchronize(texture:slice:level:).md) method.
 
- You can encode a command that selectively synchronizes parts of an [`MTLTexture`](mtltexture.md) by calling the [`synchronize(texture:slice:level:)`](mtlblitcommandencoder/synchronize(texture:slice:level:).md) method.
-
 ## Parameters
 
 - `resource`: An   instance — such as an   or   — with a   property that’s equal to  .

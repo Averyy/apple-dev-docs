@@ -1,6 +1,6 @@
 # PhysicsCustomJoint
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 A joint with six degrees of freedom that can be individually specified.
@@ -24,13 +24,9 @@ A custom joint allows you to choose the restraints of all 6 degrees of freedom. 
 
 > **Note**: By default all degrees of freedom are locked, similar to [`PhysicsFixedJoint`](physicsfixedjoint.md).
 
-By default all degrees of freedom are locked, similar to [`PhysicsFixedJoint`](physicsfixedjoint.md).
-
 For example, you can constrain the motion of [`pin1`](physicscustomjoint/pin1.md) in the xy-plane of [`pin0`](physicscustomjoint/pin0.md), set movement along the x-axis to [`PhysicsCustomJoint.MotionLimit.unlimited`](physicscustomjoint/motionlimit/unlimited.md), and leave all rotations as the default value of [`PhysicsCustomJoint.MotionLimit.fixed`](physicscustomjoint/motionlimit/fixed.md).
 
 > **Note**: The xy-plane is a plane that aligns with the x and y axes.
-
-The xy-plane is a plane that aligns with the x and y axes.
 
 ```swift
 let joint = PhysicsCustomJoint(
@@ -103,4 +99,4 @@ If [`pin0`](physicscustomjoint/pin0.md) is in a fixed location for the example a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/physicscustomjoint)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/physicscustomjoint)*

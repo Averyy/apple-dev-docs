@@ -21,8 +21,6 @@ To use this setting, enable timeouts in your test plan or set the `-test-timeout
 
 > **Note**:  The test may run for less time than you specify if you customize the Maximum Test Execution Time Allowance setting in the test plan, or if you pass the `-maximum-test-execution-time-allowance` option to `xcodebuild`.
 
- The test may run for less time than you specify if you customize the Maximum Test Execution Time Allowance setting in the test plan, or if you pass the `-maximum-test-execution-time-allowance` option to `xcodebuild`.
-
 ## See Also
 
 - [class var runsForEachTargetApplicationUIConfiguration: Bool](xctestcase/runsforeachtargetapplicationuiconfiguration.md)

@@ -1,6 +1,6 @@
 # Defining your app’s SharePlay activities
 
-**Framework**: Group Activities
+**Framework**: Groupactivities
 
 Configure your app’s SharePlay support and define the activities that people can perform from your app.
 
@@ -18,8 +18,6 @@ SharePlay activities are an organic way to create experiences that people can en
 Consider the preceding list of activities, and any other activities your app supports, and build SharePlay support for them. Think about how people might enjoy those activities if they were together in the same physical space. Consider the types of interactions that can occur in the real world, and build support for those interactions into your activities. For example, a movie-watching app needs to pause playback for all participants when one person hits the pause button. A shared whiteboard app needs to transmit newly drawn content to other participants, and send all of the content to someone who arrives late.
 
 > **Note**: Make activities available on all the platforms your app supports to ensure people can join from any device. Customize the experience as needed for each platform to give it a more intuitive feel.
-
-Make activities available on all the platforms your app supports to ensure people can join from any device. Customize the experience as needed for each platform to give it a more intuitive feel.
 
 ##### Configure the Shareplay Entitlements
 
@@ -158,4 +156,4 @@ For more information on displaying a share sheet or supporting SharePlay via Air
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/defining-your-apps-shareplay-activities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GroupActivities/defining-your-apps-shareplay-activities)*

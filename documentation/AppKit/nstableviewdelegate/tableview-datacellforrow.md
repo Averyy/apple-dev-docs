@@ -1,6 +1,6 @@
 # tableView(_:dataCellFor:row:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Asks the delegate for a custom data cell for the specified row and column.
@@ -28,8 +28,6 @@ If `tableColumn` is non-`nil`, you should return a cell (generally as the result
 While each row is being drawn, this method is first called with a `tableColumn` value of `nil` to allow you to return a group cell—that is, a cell that will be used to draw the entire row. If you return a cell when `tableColumn` is `nil`, all implemented datasource and delegate methods must be prepared to handle a `nil` table column value. If you don’t return a cell, this method is called once for each `tableColumn` in `tableView`.
 
 > **Note**:  This method is only valid for [`NSCell`](nscell.md)-based table views.
-
- This method is only valid for [`NSCell`](nscell.md)-based table views.
 
 ## Parameters
 

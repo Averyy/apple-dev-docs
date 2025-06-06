@@ -26,8 +26,6 @@ This value represents the successful enqueueing of an element, whether the strea
 
 > **Note**: From a thread safety point of view, `remaining` is a lower bound on the number of remaining slots. This is because a subsequent call that uses the `remaining` value could race on the consumption of values from the stream.
 
-From a thread safety point of view, `remaining` is a lower bound on the number of remaining slots. This is because a subsequent call that uses the `remaining` value could race on the consumption of values from the stream.
-
 ## See Also
 
 - [AsyncStream.Continuation.YieldResult.dropped(_:)](asyncstream/continuation/yieldresult/dropped(_:).md)

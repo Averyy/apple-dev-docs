@@ -15,8 +15,6 @@ Configure alternative render paths in your Metal app to enable running your app 
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`418: Getting the Most Out of Simulator`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/418/).
 
-This sample code project is associated with WWDC 2019 session [`418: Getting the Most Out of Simulator`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/418/).
-
 ## See Also
 
 - [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
@@ -41,4 +39,4 @@ This sample code project is associated with WWDC 2019 session [`418: Getting the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/supporting-simulator-in-a-metal-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/supporting-simulator-in-a-metal-app)*

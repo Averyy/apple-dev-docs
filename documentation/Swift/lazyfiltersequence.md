@@ -25,8 +25,6 @@ struct LazyFilterSequence<Base> where Base : Sequence
 
 > **Note**: `s.lazy.filter { ... }`, for an arbitrary sequence `s`, is a `LazyFilterSequence`.
 
-`s.lazy.filter { ... }`, for an arbitrary sequence `s`, is a `LazyFilterSequence`.
-
 ## Topics
 
 ### Instance Properties
@@ -75,4 +73,4 @@ struct LazyFilterSequence<Base> where Base : Sequence
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/lazyfiltersequence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/lazyfiltersequence)*

@@ -46,8 +46,6 @@ If you need to pass an optional pointer as a `CVarArg` argument, use the `Int(bi
 
 > **Note**: Declaring conformance to the `CVarArg` protocol for types defined outside the standard library is not supported.
 
-Declaring conformance to the `CVarArg` protocol for types defined outside the standard library is not supported.
-
 ## Relationships
 
 ### Conforming Types
@@ -85,4 +83,4 @@ Declaring conformance to the `CVarArg` protocol for types defined outside the st
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/cvararg)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/cvararg)*

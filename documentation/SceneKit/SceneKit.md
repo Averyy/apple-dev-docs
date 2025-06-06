@@ -1,6 +1,6 @@
 # SceneKit
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: module
 
 Create 3D games and add 3D content to apps using high-level scene descriptions, and easily add animations, physics simulation, particle effects, and realistic physically based rendering.
@@ -19,8 +19,6 @@ Create 3D games and add 3D content to apps using high-level scene descriptions, 
 SceneKit combines a high-performance rendering engine with a descriptive API for import, manipulation, and rendering of 3D assets. Unlike lower-level APIs such as Metal and OpenGL that require you to implement in precise detail the rendering algorithms that display a scene, SceneKit requires only descriptions of your scene’s contents and the actions or animations you want it to perform.
 
 > **Note**:  In visionOS, you can display SceneKit content only in 2D views and textures. For information about how to create immersive 3D content, see [`Creating fully immersive experiences in your app`](https://developer.apple.com/documentation/visionOS/creating-fully-immersive-experiences).
-
- In visionOS, you can display SceneKit content only in 2D views and textures. For information about how to create immersive 3D content, see [`Creating fully immersive experiences in your app`](https://developer.apple.com/documentation/visionOS/creating-fully-immersive-experiences).
 
 ## Topics
 

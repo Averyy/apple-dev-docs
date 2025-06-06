@@ -23,8 +23,6 @@ func fileMover(isPresented: Binding<Bool>, file: URL?, onCompletion: @escaping (
 
 > **Note**: This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
 
-This dialog provides security-scoped URLs. Call the `startAccessingSecurityScopedResource` method to access or bookmark the URLs, and the `stopAccessingSecurityScopedResource` method to release the access.
-
 For example, a button that allows the user to move a file might look like this:
 
 ```None

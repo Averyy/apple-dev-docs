@@ -28,8 +28,6 @@ The [`WCSession`](wcsession.md) object calls the methods of its delegate seriall
 
 > **Note**:  The methods of this protocol are called on a background thread of your app, so any code you write should be written with that fact in mind. In particular, if your method implementations initiate modifications to your app’s interface, make sure to redirect those modifications to your app’s main thread.
 
- The methods of this protocol are called on a background thread of your app, so any code you write should be written with that fact in mind. In particular, if your method implementations initiate modifications to your app’s interface, make sure to redirect those modifications to your app’s main thread.
-
 ##### Supporting Communication with Multiple Apple Watches
 
 An iPhone running iOS 9.3 or later may pair with more than one Apple Watch running watchOS 2.2 or later. Implement the following methods in your session delegate:
@@ -94,4 +92,4 @@ For more information about the flow of messages when a user switches from one Ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchConnectivity/wcsessiondelegate)*

@@ -1,6 +1,6 @@
 # Tables in an Article
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Add a JSON or HTML data table, and understand  the options for changing the look of your table.
 
@@ -16,8 +16,6 @@ For both the JSON and HTML table components, you can adjust the look of the rows
 Once you add a table, you can apply styles (backgrounds, borders, and so on) and add row and column labels. You can also use conditions to apply styles only to those rows, columns, and cells that meet a specific criteria. See [`Enhancing Your Articles with Styles`](enhancing-your-articles-with-styles.md).
 
 > **Note**: When you view your published article with its table, notice that the News app positions and sizes the table to make use of the available space. If data in the table is wider than the component, News scrolls the data horizontally within the component.
-
-When you view your published article with its table, notice that the News app positions and sizes the table to make use of the available space. If data in the table is wider than the component, News scrolls the data horizontally within the component.
 
 ## Topics
 
@@ -47,4 +45,4 @@ When you view your published article with its table, notice that the News app po
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/tables-in-an-article)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/tables-in-an-article)*

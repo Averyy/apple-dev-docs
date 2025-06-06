@@ -1,6 +1,6 @@
 # Positioning Text Components
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Adjust the positions of the text components in your article—for example, place the article body off-center.
 
@@ -21,8 +21,6 @@ In [`Creating Your First Article`](creating-your-first-article.md), you added so
 3. Paste the copied code into `article.json`, replacing the line that you selected in the previous step.
 
 > **Note**:  The names of these `ComponentLayout` objects were created for this tutorial; when you create your own articles, you can create your own `ComponentLayout` object names. For the purposes of this tutorial, a “full” margin was considered to be a 24-point space above a or below a component, a “half” margin to be a 12-point space, and a “quarter” margin to be a 6-point space.
-
- The names of these `ComponentLayout` objects were created for this tutorial; when you create your own articles, you can create your own `ComponentLayout` object names. For the purposes of this tutorial, a “full” margin was considered to be a 24-point space above a or below a component, a “half” margin to be a 12-point space, and a “quarter” margin to be a 6-point space.
 
 ###### Basic Componentlayout Objects Copy This Code
 
@@ -208,4 +206,4 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/positioning-text-components)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/positioning-text-components)*

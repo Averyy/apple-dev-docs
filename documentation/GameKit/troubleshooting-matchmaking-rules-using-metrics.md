@@ -1,6 +1,6 @@
 # Troubleshooting matchmaking rules using metrics
 
-**Framework**: GameKit
+**Framework**: Gamekit
 
 Investigate issues with Game Center by evaluating your matchmaking rules using metrics endpoints.
 
@@ -44,8 +44,6 @@ GET /v1/gameCenterMatchmakingQueues/8fb73d41-1ca1-1cbf-2538-9df424beb10b/metrics
 ```
 
 > **Note**:  It’s common for players to cancel a match request by quitting a game or other compatible match requests to arrive too late to fill empty slots. However, if the amount of canceled and expired match requests exceeds the amount of matched requests, investigate whether there’s a problem with your rules.
-
- It’s common for players to cancel a match request by quitting a game or other compatible match requests to arrive too late to fill empty slots. However, if the amount of canceled and expired match requests exceeds the amount of matched requests, investigate whether there’s a problem with your rules.
 
 ##### View Match Request Errors
 
@@ -93,4 +91,4 @@ To get the queue `id`, use the [`Create a queue`](https://developer.apple.com/do
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/troubleshooting-matchmaking-rules-using-metrics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/troubleshooting-matchmaking-rules-using-metrics)*

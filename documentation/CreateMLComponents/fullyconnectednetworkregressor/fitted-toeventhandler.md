@@ -1,6 +1,6 @@
 # fitted(to:eventHandler:)
 
-**Framework**: Create ML Components  
+**Framework**: Createmlcomponents  
 **Kind**: method
 
 Fits a fully connected network regressor model to a sequence of examples.
@@ -29,8 +29,6 @@ The fitted transformer.
 The training process partitions the input into random batches according to the batch size configuration parameter. Training stops when the maximum number of iterations is reached.
 
 > **Note**: This method does not do early-stopping, using a high value for `maximumIterations` may lead to over-fitting. Consider providing a validation set.
-
-This method does not do early-stopping, using a high value for `maximumIterations` may lead to over-fitting. Consider providing a validation set.
 
 ## Parameters
 

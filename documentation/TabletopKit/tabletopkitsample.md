@@ -1,6 +1,6 @@
 # Creating tabletop games
 
-**Framework**: TabletopKit
+**Framework**: Tabletopkit
 
 Develop a spatial board game where multiple players interact with pieces on a table.
 
@@ -13,8 +13,6 @@ Develop a spatial board game where multiple players interact with pieces on a ta
 You can run this sample code in Simulator to see the game layout, but to experience multiplayer, you need two or more Apple Vision Pro devices. This sample uses Group Activities for multiplayer, which doesn’t support Simulator.
 
 > **Note**: This sample code project is associated with WWDC24 session 10091: [`Meet TabletopKit for visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10091/).
-
-This sample code project is associated with WWDC24 session 10091: [`Meet TabletopKit for visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10091/).
 
 #### Configure the Sample Code Project
 
@@ -65,4 +63,4 @@ Players who join the FaceTime call can drag the pawns, pick up cards, and toss t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tabletopkit/tabletopkitsample)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TabletopKit/tabletopkitsample)*

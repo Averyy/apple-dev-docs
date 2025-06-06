@@ -27,8 +27,6 @@ This initializer does not try to repair ill-formed UTF-8 code unit sequences. If
 
 > **Note**: This initializer is deprecated. Use the initializer `String.init?(validating: array, as: UTF8.self)` instead, remembering that “\0” is a valid character in Swift.
 
-This initializer is deprecated. Use the initializer `String.init?(validating: array, as: UTF8.self)` instead, remembering that “\0” is a valid character in Swift.
-
 ## Parameters
 
 - `cString`:    An array containing a null-terminated sequence of UTF-8 code units.

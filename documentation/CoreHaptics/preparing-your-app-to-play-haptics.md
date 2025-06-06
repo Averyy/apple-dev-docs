@@ -1,6 +1,6 @@
 # Preparing your app to play haptics
 
-**Framework**: Core Haptics
+**Framework**: Corehaptics
 
 Set up your app to play haptics.
 
@@ -9,8 +9,6 @@ Set up your app to play haptics.
 This article describes the process of setting up your app to play haptics. You’ll check for device compatibility, create a haptic engine, and then configure the engine’s handler properties.
 
 > **Note**:  Make sure you set the engine’s handler properties before starting it to play a haptic.
-
- Make sure you set the engine’s handler properties before starting it to play a haptic.
 
 ##### Check for Device Compatibility
 
@@ -32,8 +30,6 @@ Create this engine early in your app’s life cycle—for example, in your main 
 
 > **Note**:  The haptic engine isn’t a singleton; you can create multiple instances in different parts of your app or game, like different view controllers or levels. Each instance of the haptic engine behaves independently. Core Haptics is thread-safe, meaning you can execute player operations on separate threads.
 
- The haptic engine isn’t a singleton; you can create multiple instances in different parts of your app or game, like different view controllers or levels. Each instance of the haptic engine behaves independently. Core Haptics is thread-safe, meaning you can execute player operations on separate threads.
-
 ##### Set the Reset Handler to Recover From Failure
 
 Core Haptics calls the reset handler after the media server has recovered from failure. When this occurs, inside the reset handler, your app should do the following:
@@ -53,8 +49,6 @@ As you’re testing your app, set the [`stoppedHandler`](chhapticengine/stoppedh
 In production, your app can handle each cause in a different way. For example, you could handle the case [`CHHapticEngine.StoppedReason.systemError`](chhapticengine/stoppedreason/systemerror.md) by continuing the app without haptics, or by throwing a fatal error to terminate the app.
 
 > **Note**:  The stopped handler defined in the code above is called only when external causes trigger an engine stoppage. The stopped handler isn’t called if you manually stop the engine through an explicit [`stop(completionHandler:)`](chhapticengine/stop(completionhandler:).md) call. Instead, Core Haptics calls the completion handler passed as input to the explicit stop call.
-
- The stopped handler defined in the code above is called only when external causes trigger an engine stoppage. The stopped handler isn’t called if you manually stop the engine through an explicit [`stop(completionHandler:)`](chhapticengine/stop(completionhandler:).md) call. Instead, Core Haptics calls the completion handler passed as input to the explicit stop call.
 
 ##### Define and Play Haptics
 
@@ -80,4 +74,4 @@ Once you’ve set up your app to play haptics, you can incorporate haptic patter
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/preparing-your-app-to-play-haptics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/preparing-your-app-to-play-haptics)*

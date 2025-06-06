@@ -1,6 +1,6 @@
 # elapsedTime(at:)
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: method
 
 Calculates the duration of the workout at the specified time.
@@ -24,8 +24,6 @@ func elapsedTime(at date: Date) -> TimeInterval
 The duration of a workout doesn’t include intervals between pause and resume events.
 
 > **Note**:  The duration of a workout can decrease when you add past occurrences of pause events.
-
- The duration of a workout can decrease when you add past occurrences of pause events.
 
 ## Parameters
 

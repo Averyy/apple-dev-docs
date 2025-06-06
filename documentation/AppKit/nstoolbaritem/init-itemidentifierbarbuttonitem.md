@@ -1,6 +1,6 @@
 # init(itemIdentifier:barButtonItem:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: init
 
 Creates a toolbar item with property values from the specified bar button item.
@@ -24,8 +24,6 @@ A new toolbar item.
 Use this method to create and initialize a toolbar item with property values from a [`UIBarButtonItem`](https://developer.apple.com/documentation/UIKit/UIBarButtonItem), such as [`title`](nstoolbaritem/title.md), [`image`](nstoolbaritem/image.md), [`action`](nstoolbaritem/action.md), and [`target`](nstoolbaritem/target.md).
 
 > **Note**:  In macOS 12 and earlier, this method doesn’t support creating a toolbar item from a bar button item that contains a custom view.
-
- In macOS 12 and earlier, this method doesn’t support creating a toolbar item from a bar button item that contains a custom view.
 
 ## Parameters
 

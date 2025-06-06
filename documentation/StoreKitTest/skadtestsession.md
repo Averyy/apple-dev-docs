@@ -1,6 +1,6 @@
 # SKAdTestSession
 
-**Framework**: StoreKit Test  
+**Framework**: Storekittest  
 **Kind**: class
 
 The class you use to test ad impressions and postbacks in Xcode.
@@ -21,8 +21,6 @@ class SKAdTestSession
 Use the `SKAdTestSession` class to test your implementations of SKAdNetwork. Create one instance of this class to use in multiple test cases. The instance represents a test session, and holds a set of test postbacks. Use [`SKAdTestPostback`](skadtestpostback.md) to create test postbacks. Call [`setPostbacks(_:)`](skadtestsession/setpostbacks(_:).md) to add test postbacks to the test session. The test session deletes the postbacks from the instance after you call [`flushPostbacks(responses:)`](skadtestsession/flushpostbacks(responses:).md).
 
 > **Note**:  Check [`SKAdTestPostbackVersion`](skadtestpostbackversion.md) for the list of SKAdNetwork versions that the testing environment supports.
-
- Check [`SKAdTestPostbackVersion`](skadtestpostbackversion.md) for the list of SKAdNetwork versions that the testing environment supports.
 
 ##### Validate Ad Impressions
 
@@ -99,4 +97,4 @@ To perform tests on conversion values and postbacks, follow these steps:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekittest/skadtestsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKitTest/skadtestsession)*

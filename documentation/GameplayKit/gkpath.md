@@ -1,6 +1,6 @@
 # GKPath
 
-**Framework**: GameplayKit  
+**Framework**: Gameplaykit  
 **Kind**: class
 
 A polygonal path that can be followed by an agent.
@@ -26,8 +26,6 @@ To make an agent move to or stay within the area defined by a path, create a goa
 A path can be expressed as a sequence of either 2D points or 3D points. Use the former to create paths for use by [`GKAgent2D`](gkagent2d.md) objects, and the latter to create paths for [`GKAgent3D`](gkagent3d.md) objects to follow.
 
 > **Note**:  The coordinate system in which you express the path’s vertices and radius is arbitrary; you may choose how to map agent positions and sizes into your game scene. It often makes sense to use the same coordinate system as your game engine—for example, when using agents in a SpriteKit-based game, you’d typically specify a path in screen points.
-
- The coordinate system in which you express the path’s vertices and radius is arbitrary; you may choose how to map agent positions and sizes into your game scene. It often makes sense to use the same coordinate system as your game engine—for example, when using agents in a SpriteKit-based game, you’d typically specify a path in screen points.
 
 To learn more about using goals and agents, see [`Agents, Goals, and Behaviors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Agent.html#//apple_ref/doc/uid/TP40015172-CH8) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
@@ -86,4 +84,4 @@ To learn more about using goals and agents, see [`Agents, Goals, and Behaviors`]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gameplaykit/gkpath)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameplayKit/gkpath)*

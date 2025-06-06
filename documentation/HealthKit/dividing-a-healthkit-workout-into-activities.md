@@ -1,6 +1,6 @@
 # Dividing a HealthKit workout into activities
 
-**Framework**: HealthKit
+**Framework**: Healthkit
 
 Partition multisport and interval workouts into activities that represent the different parts of the workout.
 
@@ -15,8 +15,6 @@ To model these activities in HealthKit, use the [`HKWorkoutActivity`](hkworkouta
 [`HKWorkoutActivity`](hkworkoutactivity.md) instances have two main use cases:
 
 > **Note**:  All [`HKWorkout`](hkworkout.md) objects have at least one associated [`HKWorkoutActivity`](hkworkoutactivity.md). If you don’t explicitly add an activity to a workout, HealthKit adds an activity that matches the workout’s activity type. This means you can use [`predicateForWorkoutActivities(workoutActivityType:)`](hkquery/predicateforworkoutactivities(workoutactivitytype:).md) to filter for all the workouts that track an activity type. For example, filtering for workout activities that use [`HKWorkoutActivityType.running`](hkworkoutactivitytype/running.md) includes regular running workouts, running interval training, and [`HKWorkoutActivityType.swimBikeRun`](hkworkoutactivitytype/swimbikerun.md) workouts that include a running activity.
-
- All [`HKWorkout`](hkworkout.md) objects have at least one associated [`HKWorkoutActivity`](hkworkoutactivity.md). If you don’t explicitly add an activity to a workout, HealthKit adds an activity that matches the workout’s activity type. This means you can use [`predicateForWorkoutActivities(workoutActivityType:)`](hkquery/predicateforworkoutactivities(workoutactivitytype:).md) to filter for all the workouts that track an activity type. For example, filtering for workout activities that use [`HKWorkoutActivityType.running`](hkworkoutactivitytype/running.md) includes regular running workouts, running interval training, and [`HKWorkoutActivityType.swimBikeRun`](hkworkoutactivitytype/swimbikerun.md) workouts that include a running activity.
 
 ##### Mark Transitions
 
@@ -190,4 +188,4 @@ This example returns all the workouts that have an activity with an average hear
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/dividing-a-healthkit-workout-into-activities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/dividing-a-healthkit-workout-into-activities)*

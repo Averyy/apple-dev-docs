@@ -1,6 +1,6 @@
 # biologicalSex()
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: method
 
 Reads someone’s biological sex from the HealthKit store.
@@ -34,10 +34,6 @@ For a list of possible values, see [`HKBiologicalSex`](hkbiologicalsex.md).
 If a person hasn’t set their biological sex or if they’ve denied permission to read the biological sex, this method returns an [`HKBiologicalSex.notSet`](hkbiologicalsex/notset.md) value.
 
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/Swift/about-imported-cocoa-error-parameters).
-
- In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/Swift/about-imported-cocoa-error-parameters).
 
 ## Topics
 

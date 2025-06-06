@@ -1,6 +1,6 @@
 # referenceDisplayModeStatus
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The status of the screen’s reference display mode.
@@ -21,8 +21,6 @@ var referenceDisplayModeStatus: UIScreen.ReferenceDisplayModeStatus { get }
 #### Discussion
 
 > **Note**:   refers to Pro Display Mode on the iPad Pro 12.9-inch (5th generation or later).
-
-  refers to Pro Display Mode on the iPad Pro 12.9-inch (5th generation or later).
 
 ## See Also
 

@@ -45,8 +45,6 @@ Then, prepare your app as needed, and choose Features > Trigger iCloud Sync to t
 
 > **Note**: You must trigger synchronization manually because Simulator doesn’t support  notifications that trigger automatic data synchronization.
 
-You must trigger synchronization manually because Simulator doesn’t support  notifications that trigger automatic data synchronization.
-
 ##### Test Changing Locations
 
 Test how your app handles moving to a specific location, or moving along a route in Simulator.
@@ -77,4 +75,4 @@ Use the system log to find errors, warnings, and other issues with your applicat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/testing-complex-hardware-device-scenarios-in-simulator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/testing-complex-hardware-device-scenarios-in-simulator)*

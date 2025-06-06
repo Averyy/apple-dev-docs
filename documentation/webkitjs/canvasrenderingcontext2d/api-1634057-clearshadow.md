@@ -21,8 +21,6 @@ When you set a shadow color or shadow blur, and a shadow offset, all subsequent 
 
 > **Note**: The `clearShadow()` method is not currently part of the HTML5 specification. It is supported in Safari and other Webkit-based browsers.
 
-The `clearShadow()` method is not currently part of the HTML5 specification. It is supported in Safari and other Webkit-based browsers.
-
 ## See Also
 
 - [shadowBlur](canvasrenderingcontext2d/1632236-shadowblur.md)

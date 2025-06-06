@@ -36,8 +36,6 @@ let allTheEs = str.indices(of: "e")
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `element`: An element to look for in the collection.

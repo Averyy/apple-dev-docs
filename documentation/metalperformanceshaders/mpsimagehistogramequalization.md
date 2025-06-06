@@ -1,6 +1,6 @@
 # MPSImageHistogramEqualization
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A filter that equalizes the histogram of an image.
@@ -28,8 +28,6 @@ The process is divided into three steps:
 3. Call the [`encode(commandBuffer:sourceTexture:destinationTexture:)`](mpsunaryimagekernel/1618741-encode.md) method to read data from the source texture, apply the equalization transform to it, and write to the destination texture. This step is also done on the GPU on a command queue.
 
 > **Note**: You can reuse the same equalization transform on other images to perform the same transform on those images. (Since their distribution is probably different, they will probably not be equalized by it.) This filter usually will not be able to work in place.
-
-You can reuse the same equalization transform on other images to perform the same transform on those images. (Since their distribution is probably different, they will probably not be equalized by it.) This filter usually will not be able to work in place.
 
 ## Topics
 

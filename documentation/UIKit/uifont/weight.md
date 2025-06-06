@@ -1,6 +1,6 @@
 # UIFont.Weight
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: struct
 
 Constants that represent standard typeface styles.
@@ -24,8 +24,6 @@ struct Weight
 Use system-defined constants as interchangeable values for [`weight`](uifontdescriptor/traitkey/weight.md). Each constant corresponds to a different value that indicates the weight of a font. Use these constants to specify the weight parameter in [`systemFont(ofSize:weight:)`](uifont/systemfont(ofsize:weight:).md). When providing a weight that doesn’t precisely match a font face in the family, the system locates a face that most closely matches the request.
 
 > **Note**:  Font [`familyNames`](uifont/familynames.md) don’t include all system-defined font constants.
-
- Font [`familyNames`](uifont/familynames.md) don’t include all system-defined font constants.
 
 ## Topics
 

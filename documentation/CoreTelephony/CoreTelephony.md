@@ -1,6 +1,6 @@
 # Core Telephony
 
-**Framework**: Core Telephony  
+**Framework**: Coretelephony  
 **Kind**: module
 
 Access information about a user’s cellular service provider, such as its unique identifier and whether the carrier allows VoIP.
@@ -18,8 +18,6 @@ Use the Core Telephony framework to obtain information about a user’s home cel
 A [`CTCarrier`](ctcarrier.md) object gives you information about the user’s cellular service provider, such as whether it allows use of VoIP (Voice over Internet Protocol) on its network. A [`CTCall`](ctcall.md) object gives you information about a current call, including a unique identifier and state information such as dialing, incoming, connected, or disconnected.
 
 > **Note**:  VoIP and cellular services through Core Telephony are unavailable for compatible iPad and iPhone apps running in visionOS. You can still use the APIs of this framework, but services don’t return carrier information.
-
- VoIP and cellular services through Core Telephony are unavailable for compatible iPad and iPhone apps running in visionOS. You can still use the APIs of this framework, but services don’t return carrier information.
 
 ## Topics
 

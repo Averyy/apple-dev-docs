@@ -1,6 +1,6 @@
 # Core Printing
 
-**Framework**: Application Services
+**Framework**: Applicationservices
 
 #### Overview
 
@@ -17,8 +17,6 @@ In Carbon applications, Core Printing is used together with Carbon Printing to i
 In Cocoa applications, Core Printing can be used to extend the functionality in the Cocoa printing classes. The [`NSPrintInfo`](https://developer.apple.com/documentation/appkit/nsprintinfo) class provides direct access to some Core Printing objects.
 
 > **Note**: Core Printing is available to 64-bit applications, except for functions, data types, and constants that have been deprecated.
-
-Core Printing is available to 64-bit applications, except for functions, data types, and constants that have been deprecated.
 
 ## Topics
 

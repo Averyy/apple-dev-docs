@@ -30,8 +30,6 @@ This function’s effect varies depending on the build flag used:
 
 > **Note**: This check is performed against the actor’s serial executor, meaning that / if another actor uses the same serial executor–by using that actor’s serial executor as its own [`unownedExecutor`](actor/unownedexecutor.md)–this check will succeed , as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
 
-This check is performed against the actor’s serial executor, meaning that / if another actor uses the same serial executor–by using that actor’s serial executor as its own [`unownedExecutor`](actor/unownedexecutor.md)–this check will succeed , as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
-
 ## Parameters
 
 - `message`: The message to print if the assertion fails.

@@ -1,6 +1,6 @@
 # timeStamp
 
-**Framework**: IOUSBHost  
+**Framework**: Iousbhost  
 **Kind**: property
 
 The observed time for the frame’s completion.
@@ -18,8 +18,6 @@ var timeStamp: IOUSBHostTime
 #### Discussion
 
 > **Note**:  Interrupt latency and system load may result in more than one frame completing with the same timestamp.
-
- Interrupt latency and system load may result in more than one frame completing with the same timestamp.
 
 ## See Also
 

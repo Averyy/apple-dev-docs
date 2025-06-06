@@ -88,8 +88,6 @@ A decimal or hexadecimal string is converted to a `Float` instance using the IEE
 
 > **Note**: Prior to Swift 5.4, a decimal or hexadecimal input string whose value was too large to represent as a finite `Float` instance returned `nil` instead of `Float.infinity`.
 
-Prior to Swift 5.4, a decimal or hexadecimal input string whose value was too large to represent as a finite `Float` instance returned `nil` instead of `Float.infinity`.
-
 ## Parameters
 
 - `text`: An input string to convert to a   instance.

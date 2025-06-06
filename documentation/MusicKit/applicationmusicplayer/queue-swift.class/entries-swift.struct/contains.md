@@ -1,6 +1,6 @@
 # contains(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns a Boolean value indicating whether the sequence contains the given element.
@@ -36,8 +36,6 @@ print(cast.contains("James"))
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 ## Parameters
 

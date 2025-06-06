@@ -1,6 +1,6 @@
 # AudioBuffer
 
-**Framework**: Core Audio Types  
+**Framework**: Coreaudiotypes  
 **Kind**: struct
 
 A structure that holds a buffer of audio data.
@@ -27,8 +27,6 @@ An audio buffer holds a single buffer of audio data in its [`mData`](audiobuffer
 - Interleaved audio with the number of channels set by the [`mNumberChannels`](audiobuffer/mnumberchannels.md) field
 
 > **Note**:  The [`mDataByteSize`](audiostreampacketdescription/mdatabytesize.md) and [`mNumberChannels`](audiobuffer/mnumberchannels.md) parameters needs to match the memory layout of [`mData`](audiobuffer/mdata.md), so update the size and number of channels when you update the data field.
-
- The [`mDataByteSize`](audiostreampacketdescription/mdatabytesize.md) and [`mNumberChannels`](audiobuffer/mnumberchannels.md) parameters needs to match the memory layout of [`mData`](audiobuffer/mdata.md), so update the size and number of channels when you update the data field.
 
 ## Topics
 
@@ -61,4 +59,4 @@ An audio buffer holds a single buffer of audio data in its [`mData`](audiobuffer
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreAudioTypes/audiobuffer)*

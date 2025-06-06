@@ -23,11 +23,7 @@ The value specified for this key should be of type doc://com.apple.documentation
 
 > ❗ **Important**: Specifying a value for `vmnet_interface_id_key` does not guarantee the return of MAC address associated with the identifier. In cases where the MAC address associated with the id cannot be granted, an error is returned to the caller.
 
-Specifying a value for `vmnet_interface_id_key` does not guarantee the return of MAC address associated with the identifier. In cases where the MAC address associated with the id cannot be granted, an error is returned to the caller.
-
 > **Note**: This key may also be used in an XPC dictionary for a `interface_param` argument, for which it represents the identifier mapping to the MAC address returned in `vmnet_mac_address_key`. See [`interface_param XPC Dictionary Keys`](interface_param_xpc_dictionary_keys.md) for more information.
-
-This key may also be used in an XPC dictionary for a `interface_param` argument, for which it represents the identifier mapping to the MAC address returned in `vmnet_mac_address_key`. See [`interface_param XPC Dictionary Keys`](interface_param_xpc_dictionary_keys.md) for more information.
 
 ## See Also
 

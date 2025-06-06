@@ -1,6 +1,6 @@
 # transceive(_:)
 
-**Framework**: SecureElementCredential  
+**Framework**: Secureelementcredential  
 **Kind**: method
 
 Send a wired command Application Protocol Data Unit (APDU) to the credential.
@@ -28,8 +28,6 @@ A response APDU.
 Before calling this method, make sure the credential session state is [`CredentialSession.State.wired(credential:)`](credentialsession/state-swift.enum/wired(credential:).md). The state transitions to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md) if the call encounters a [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md) error; otherwise the state remains unchanged.
 
 > **Note**: When performing a [`transceive(_:)`](credentialsession/transceive(_:).md) call, the system grants your app a 15-second grace period from invalidating the session, in the event your app goes into the background.
-
-When performing a [`transceive(_:)`](credentialsession/transceive(_:).md) call, the system grants your app a 15-second grace period from invalidating the session, in the event your app goes into the background.
 
 ## Parameters
 

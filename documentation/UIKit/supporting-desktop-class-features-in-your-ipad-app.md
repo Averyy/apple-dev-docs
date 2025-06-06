@@ -1,6 +1,6 @@
 # Supporting desktop-class features in your iPad app
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Enhance your iPad app by adding desktop-class features and document support.
 
@@ -15,8 +15,6 @@ Enhance your iPad app by adding desktop-class features and document support.
 This sample project shows how to build an app that takes full advantage of the iPad’s desktop-class features like hardware keyboard and trackpad support, Stage Manager, and rich document-editing capabilities. The app is a markup document editor that allows creating, editing, previewing, and saving documents, including features like a title menu with custom actions, document renaming, Find and Replace, and more.
 
 > **Note**: This sample code project is associated with WWDC22 sessions: [`10069: Meet desktop class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069/), [`10070: Build a desktop class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070/), and [`10076: Bring your iOS app to the Mac`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10076/).
-
-This sample code project is associated with WWDC22 sessions: [`10069: Meet desktop class iPad`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10069/), [`10070: Build a desktop class iPad app`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10070/), and [`10076: Bring your iOS app to the Mac`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10076/).
 
 ##### Choose the Appropriate Navigation Style
 
@@ -147,4 +145,4 @@ func collectionView(_ collectionView: UICollectionView, performPrimaryActionForI
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-desktop-class-features-in-your-ipad-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-desktop-class-features-in-your-ipad-app)*

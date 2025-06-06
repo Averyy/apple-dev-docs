@@ -1,6 +1,6 @@
 # Testing Family Sharing
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Verify that your app handles auto-renewable subscriptions and non-consumable in-app purchases that family members share with Family Sharing.
 
@@ -9,8 +9,6 @@ Verify that your app handles auto-renewable subscriptions and non-consumable in-
 Family Sharing lets people share access to auto-renewable subscriptions or non-consumables that have Family Sharing enabled with up to five family members. You can use Sandbox Test Families to test whether your app works with Family Sharing as expected.
 
 > **Note**:  Changes that you make to product metadata in App Store Connect can take up to one hour to appear in the sandbox environment.
-
- Changes that you make to product metadata in App Store Connect can take up to one hour to appear in the sandbox environment.
 
 To test Family Sharing in your app:
 
@@ -66,4 +64,4 @@ Note that you can also change the sharing status using App Store Connect instead
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-family-sharing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-family-sharing)*

@@ -1,6 +1,6 @@
 # play()
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: method
 
 Begins playback of the current item.
@@ -30,8 +30,6 @@ func play()
 Calling this method is the same as setting the [`rate`](avplayer/rate.md) to `1.0`.
 
 > **Note**:  Before macOS 13, iOS 16, tvOS 16, and watchOS 9, you can only call this method on the main thread or queue.
-
- Before macOS 13, iOS 16, tvOS 16, and watchOS 9, you can only call this method on the main thread or queue.
 
 ## See Also
 

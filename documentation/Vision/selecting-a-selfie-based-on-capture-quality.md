@@ -78,8 +78,6 @@ Connect the iPhone to the Mac over USB. The first time you run this sample app, 
 
 > **Note**: This sample code project is associated with WWDC19 session 222: [`Understanding Images in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/222/).
 
-This sample code project is associated with WWDC19 session 222: [`Understanding Images in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/222/).
-
 ## See Also
 
 - [class VNDetectFaceCaptureQualityRequest](vndetectfacecapturequalityrequest.md)
@@ -96,4 +94,4 @@ This sample code project is associated with WWDC19 session 222: [`Understanding 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/selecting-a-selfie-based-on-capture-quality)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/selecting-a-selfie-based-on-capture-quality)*

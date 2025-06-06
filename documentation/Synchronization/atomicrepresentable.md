@@ -132,8 +132,6 @@ When defining your own `AtomicRepresentable` conformance, it is critical that yo
 
 > **Note**: `Int8.AtomicRepresentation` is the same type as `UInt8.AtomicRepresentation` and the same is true for all of the same sized integer types. If your type wraps an unsigned integer, you should prefer to use an unsigned integer’s atomic representation instead of a signed ones and vice versa. `Int` and `UInt`’s representation will be 64 bits wide on 64 bit systems and 32 bit wide on 32 bit systems. `Int64` and `UInt64` always conform to `AtomicRepresentable` on 64 bit systems, but on 32 bit systems they will only conform if the platform supports double wide atomics. `WordPair` will only conform to `AtomicRepresentable` on platforms that support double wide atomics, but if they do it will be 128 bits wide on 64 bit systems and 64 bits wide on 32 bit systems.
 
-`Int8.AtomicRepresentation` is the same type as `UInt8.AtomicRepresentation` and the same is true for all of the same sized integer types. If your type wraps an unsigned integer, you should prefer to use an unsigned integer’s atomic representation instead of a signed ones and vice versa. `Int` and `UInt`’s representation will be 64 bits wide on 64 bit systems and 32 bit wide on 32 bit systems. `Int64` and `UInt64` always conform to `AtomicRepresentable` on 64 bit systems, but on 32 bit systems they will only conform if the platform supports double wide atomics. `WordPair` will only conform to `AtomicRepresentable` on platforms that support double wide atomics, but if they do it will be 128 bits wide on 64 bit systems and 64 bits wide on 32 bit systems.
-
 ## Topics
 
 ### Associated Types
@@ -196,4 +194,4 @@ When defining your own `AtomicRepresentable` conformance, it is critical that yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/synchronization/atomicrepresentable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Synchronization/atomicrepresentable)*

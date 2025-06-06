@@ -1,6 +1,6 @@
 # Sharing CloudKit Data with Other iCloud Users
 
-**Framework**: CloudKit
+**Framework**: Cloudkit
 
 Create and share private CloudKit data with other users by implementing the sharing UI.
 
@@ -68,8 +68,6 @@ To create and share a topic with another iCloud user using the sample, follow th
 6. After receiving the link on device B, tap it to accept and open the share. The sample app launches, and then the shared topic and its zone appear in the shared database.
 
 > **Note**: To be able to accept a share when users tap a share link, the app’s `info.plist` file must contain the `CKSharingSupported` key and its value must be `true`.
-
-To be able to accept a share when users tap a share link, the app’s `info.plist` file must contain the `CKSharingSupported` key and its value must be `true`.
 
 To discover more features in the CloudKit sharing UI:
 
@@ -229,4 +227,4 @@ To be thread-safe, the sample serializes data access with a dispatch queue ([`Di
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/sharing-cloudkit-data-with-other-icloud-users)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/sharing-cloudkit-data-with-other-icloud-users)*

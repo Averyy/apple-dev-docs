@@ -1,6 +1,6 @@
 # moireReductionAmount
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: instp
 
 A value that indicates the amount of moire artifact reduction to apply to high frequency areas of the image.
@@ -24,8 +24,6 @@ var moireReductionAmount: Float { get set }
 The value should be in the range of `0...1`. The default value varies by image. A value of `0` indicates no moire reduction, and a value of `1` indicates maximum moire reduction.
 
 > **Note**: The [`isMoireReductionSupported`](cirawfilter/3801640-ismoirereductionsupported.md) property is [`false`](https://developer.apple.com/documentation/swift/false) if the current image doesn’t support this adjustment.
-
-The [`isMoireReductionSupported`](cirawfilter/3801640-ismoirereductionsupported.md) property is [`false`](https://developer.apple.com/documentation/swift/false) if the current image doesn’t support this adjustment.
 
 ## See Also
 

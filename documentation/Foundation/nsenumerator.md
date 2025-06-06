@@ -30,8 +30,6 @@ The enumerator subclasses used by `NSArray`, `NSDictionary`, and `NSSet` retain 
 
 > **Note**:  In Objective-C, it is not safe to modify a mutable collection while enumerating through it. Some enumerators may currently allow enumeration of a collection that is modified, but this behavior is not guaranteed to be supported in the future.
 
- In Objective-C, it is not safe to modify a mutable collection while enumerating through it. Some enumerators may currently allow enumeration of a collection that is modified, but this behavior is not guaranteed to be supported in the future.
-
 ## Topics
 
 ### Getting the Enumerated Objects
@@ -74,4 +72,4 @@ The enumerator subclasses used by `NSArray`, `NSDictionary`, and `NSSet` retain 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsenumerator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsenumerator)*

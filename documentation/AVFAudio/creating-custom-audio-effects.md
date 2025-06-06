@@ -1,6 +1,6 @@
 # Creating custom audio effects
 
-**Framework**: AVFAudio
+**Framework**: Avfaudio
 
 Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
 
@@ -23,8 +23,6 @@ The project has targets for both iOS and macOS. Each platform’s main app targe
 
 > **Note**: See [`Incorporating Audio Effects and Instruments`](https://developer.apple.com/documentation/AudioToolbox/incorporating-audio-effects-and-instruments) for details on how you can use this Audio Unit extension in a host app.
 
-See [`Incorporating Audio Effects and Instruments`](https://developer.apple.com/documentation/AudioToolbox/incorporating-audio-effects-and-instruments) for details on how you can use this Audio Unit extension in a host app.
-
 ##### Create a Custom Audio Effect Plug in
 
 The extension itself contains two primary pieces: an Audio Unit proper and a factory object that creates it.
@@ -43,8 +41,6 @@ extension AUv3FilterDemoViewController: AUAudioUnitFactory {
 ```
 
 > ❗ **Important**: To ensure glitch-free performance, your plug-in’s audio processing must occur in a real-time safe context. Don’t allocate memory, perform file I/O, take locks, or interact with the Swift or Objective-C runtimes when rendering audio.
-
-To ensure glitch-free performance, your plug-in’s audio processing must occur in a real-time safe context. Don’t allocate memory, perform file I/O, take locks, or interact with the Swift or Objective-C runtimes when rendering audio.
 
 ##### Add Custom Parameters to Your Audio Unit
 
@@ -311,8 +307,6 @@ Finally, in the extension’s `Info.plist` file, set the Audio Unit’s factory 
 
 > **Note**: See [`Incorporating Audio Effects and Instruments`](https://developer.apple.com/documentation/AudioToolbox/incorporating-audio-effects-and-instruments) for a host app you can use to load your plug-in both in-process and out-of-process.
 
-See [`Incorporating Audio Effects and Instruments`](https://developer.apple.com/documentation/AudioToolbox/incorporating-audio-effects-and-instruments) for a host app you can use to load your plug-in both in-process and out-of-process.
-
 ## See Also
 
 - [Audio Units](audio-units.md)
@@ -321,4 +315,4 @@ See [`Incorporating Audio Effects and Instruments`](https://developer.apple.com/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/creating-custom-audio-effects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/creating-custom-audio-effects)*

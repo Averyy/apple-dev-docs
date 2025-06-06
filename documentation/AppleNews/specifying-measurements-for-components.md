@@ -1,6 +1,6 @@
 # Specifying Measurements for Components
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Specify the units of measure to use for margins, minimum heights, and other dimensions.
 
@@ -9,8 +9,6 @@ Specify the units of measure to use for margins, minimum heights, and other dime
 In Apple News Format, you can use variable sizing for component margins, minimum component height, and other measurements. Sizes can be a percentage of the width or height of the viewport, the document margins and gutters, or the component’s height (the part of the document visible to the user).
 
 > **Note**:  By default, values are set in points (pt). You can set the points value as a number, or as a string that includes the `pt` abbreviation.
-
- By default, values are set in points (pt). You can set the points value as a number, or as a string that includes the `pt` abbreviation.
 
 This example sets the margin to 10 points, as a string value.
 
@@ -136,8 +134,6 @@ This example creates a vertical margin that’s 50 percent of the left margin of
 
 > **Note**:  A value such as `100dm` in versions of iOS earlier than iOS 11 is interpreted as a left-right margin of 100 points.
 
- A value such as `100dm` in versions of iOS earlier than iOS 11 is interpreted as a left-right margin of 100 points.
-
 ## See Also
 
 - [Creating a Layered Header](creating-a-layered-header.md)
@@ -152,4 +148,4 @@ This example creates a vertical margin that’s 50 percent of the left margin of
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/specifying-measurements-for-components)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/specifying-measurements-for-components)*

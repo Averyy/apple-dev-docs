@@ -1,6 +1,6 @@
 # Applying realistic material and lighting effects to entities
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
 
@@ -65,8 +65,6 @@ For [`metallic`](physicallybasedmaterial/metallic-swift.property.md) and [`rough
 RealityKit’s `PhysicallyBasedMaterial` supports normal maps using the [`normal`](physicallybasedmaterial/normal-swift.property.md) property.
 
 > **Note**: RealityKit uses  which many 3D software packages can create. You can recognize tangent space normal maps by their predominately purple color.
-
-RealityKit uses  which many 3D software packages can create. You can recognize tangent space normal maps by their predominately purple color.
 
 To add a `normal` map to your entity, load it as a texture resource, and use the resource to create a `PhysicallyBasedMaterial.Normal` instance, as in this example:
 
@@ -239,4 +237,4 @@ if let anisoAngleResource = try? TextureResource.load(named: "entity_aniso_angle
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/applying-realistic-material-and-lighting-effects-to-entities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/applying-realistic-material-and-lighting-effects-to-entities)*

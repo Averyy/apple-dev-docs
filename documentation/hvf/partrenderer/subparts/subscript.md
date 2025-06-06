@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: hvf  
+**Framework**: Hvf  
 **Kind**: subscript
 
 Accesses the element at the specified position.
@@ -33,8 +33,6 @@ print(streets[1])
 You can subscript a collection with any valid index other than the collection’s end index. The end index refers to the position one past the last element of a collection, so it doesn’t correspond with an element.
 
 > **Note**: O(1)
-
-O(1)
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # ARFaceAnchor.BlendShapeLocation
 
-**Framework**: ARKit  
+**Framework**: Arkit  
 **Kind**: struct
 
 Identifiers for specific facial features, for use with coefficients describing the relative movements of those features.
@@ -23,8 +23,6 @@ The [`blendShapes`](arfaceanchor/blendshapes.md) dictionary provided by an [`ARF
 ARKit provides many blend shape coefficients, resulting in a detailed model of a facial expression; however, you can use as many or as few of the coefficients as you desire to create a visual effect. For example, you might animate a simple cartoon character using only the [`jawOpen`](arfaceanchor/blendshapelocation/jawopen.md), [`eyeBlinkLeft`](arfaceanchor/blendshapelocation/eyeblinkleft.md), and [`eyeBlinkRight`](arfaceanchor/blendshapelocation/eyeblinkright.md) coefficients. A professional 3D artist could create a detailed character model rigged for realistic animation using a larger set, or the entire set, of coefficients.
 
 > **Note**:  In the naming of blend shape coefficients, the left and right directions are relative to the face. That is, the [`eyeBlinkRight`](arfaceanchor/blendshapelocation/eyeblinkright.md) coefficient refers to the face’s right eye. ARKit views running a face-tracking session mirror the camera image, so the face’s right eye appears on the right side in the view.
-
- In the naming of blend shape coefficients, the left and right directions are relative to the face. That is, the [`eyeBlinkRight`](arfaceanchor/blendshapelocation/eyeblinkright.md) coefficient refers to the face’s right eye. ARKit views running a face-tracking session mirror the camera image, so the face’s right eye appears on the right side in the view.
 
 ## Topics
 
@@ -157,4 +155,4 @@ ARKit provides many blend shape coefficients, resulting in a detailed model of a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arfaceanchor/blendshapelocation)*

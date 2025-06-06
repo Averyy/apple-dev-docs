@@ -1,6 +1,6 @@
 # makeCurrentContext()
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Sets the context as the current OpenGL context object.
@@ -19,8 +19,6 @@ func makeCurrentContext()
 Subsequent OpenGL calls are rendered into the context defined by the receiver.
 
 > **Note**:  A context is current on a per-thread basis. Multiple threads must serialize calls into the same context object.
-
- A context is current on a per-thread basis. Multiple threads must serialize calls into the same context object.
 
 ## See Also
 

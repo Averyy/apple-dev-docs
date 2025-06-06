@@ -1,6 +1,6 @@
 # AudioPlaybackController
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: class
 
 A controller that manages an audio playback instance.
@@ -26,8 +26,6 @@ You can obtain an audio playback controller by calling an entity’s Entity/prep
 During playback, the audio appears to come from the entity that you used to create the controller. As you move around the MR scene, RealityKit modulates the characteristics of the audio to account for your location.
 
 > **Note**: Playback commences only after the entity is parented and placed within a scene.
-
-Playback commences only after the entity is parented and placed within a scene.
 
 After playback completes, or if you call the [`stop()`](audioplaybackcontroller/stop().md) method, the audio resource resets, allowing you to replay the resource from the beginning. Alternatively, you can enable indefinite looping by setting the `loops` property of the audio resource to `true`.
 
@@ -99,4 +97,4 @@ Look for one of the events in [`AudioEvents`](audioevents.md) if you want to be 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/audioplaybackcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/audioplaybackcontroller)*

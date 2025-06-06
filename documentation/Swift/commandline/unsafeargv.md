@@ -26,8 +26,6 @@ The value of this property is a `nil`-terminated C array. Including the trailing
 
 > **Note**: Accessing the argument vector through this pointer is unsafe. Where possible, use [`arguments`](commandline/arguments.md) instead.
 
-Accessing the argument vector through this pointer is unsafe. Where possible, use [`arguments`](commandline/arguments.md) instead.
-
 ## See Also
 
 - [static var argc: Int32](commandline/argc.md)

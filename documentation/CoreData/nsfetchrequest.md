@@ -1,6 +1,6 @@
 # NSFetchRequest
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: class
 
 A description of search criteria used to retrieve data from a persistent store.
@@ -33,8 +33,6 @@ Use [`execute()`](nsfetchrequest/execute().md) to perform the fetch directly on 
 
 > **Note**:  When you execute an instance of [`NSFetchRequest`](nsfetchrequest.md), it always accesses the underlying persistent stores to retrieve the latest results.
 
- When you execute an instance of [`NSFetchRequest`](nsfetchrequest.md), it always accesses the underlying persistent stores to retrieve the latest results.
-
 In [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI), you can use a [`FetchRequest`](https://developer.apple.com/documentation/SwiftUI/FetchRequest) property wrapper to execute the fetch and assign the results to a property. First, create the request:
 
 ```swift
@@ -64,8 +62,6 @@ Then use a [`FetchRequest`](https://developer.apple.com/documentation/SwiftUI/Fe
 ```
 
 > 💡 **Tip**:  If you don’t need to specify multiple properties of the fetch, you can avoid creating the fetch request separately and declare it in the property wrapper instead. See [`FetchRequest`](https://developer.apple.com/documentation/SwiftUI/FetchRequest) for more information.
-
- If you don’t need to specify multiple properties of the fetch, you can avoid creating the fetch request separately and declare it in the property wrapper instead. See [`FetchRequest`](https://developer.apple.com/documentation/SwiftUI/FetchRequest) for more information.
 
 You often predefine fetch requests in an [`NSManagedObjectModel`](nsmanagedobjectmodel.md) managed object model to provide an API to retrieve a stored fetch request by name. Stored fetch requests can include placeholders for variable substitution, and serve as templates for later completion. Fetch request templates allow you to predefine queries with variables to substitute at runtime.
 
@@ -161,4 +157,4 @@ You often predefine fetch requests in an [`NSManagedObjectModel`](nsmanagedobjec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsfetchrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsfetchrequest)*

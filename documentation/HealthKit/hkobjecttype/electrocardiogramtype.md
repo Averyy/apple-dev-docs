@@ -1,6 +1,6 @@
 # electrocardiogramType()
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: method
 
 Returns the shared electrocardiogram type.
@@ -28,8 +28,6 @@ The shared [`HKElectrocardiogramType`](hkelectrocardiogramtype.md) instance.
 This method returns an instance of the [`HKElectrocardiogramType`](hkelectrocardiogramtype.md) concrete subclass. Use this type to request permission to read [`HKElectrocardiogram`](hkelectrocardiogram.md) objects from the HealthKit store.
 
 > **Note**:  You can’t request permission to share [`HKActivitySummary`](hkactivitysummary.md) objects.
-
- You can’t request permission to share [`HKActivitySummary`](hkactivitysummary.md) objects.
 
 
 ---

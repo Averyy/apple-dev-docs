@@ -1,6 +1,6 @@
 # SCNMaterialProperty
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: class
 
 A container for the color or texture of one of a material’s visual properties.
@@ -27,10 +27,6 @@ A material has several visual properties that together determine its appearance 
 A material property’s contents can be either a color, which provides a uniform effect across the surface of a material, or a texture, which SceneKit maps across the surface of a material using texture coordinates provided by the geometry object the material is attached to. A texture, in turn, can come from any of several sources, such as an image object, a URL to an image file, a specially formatted image or set of images for use as a cube map, or even animated content provided by Core Animation, SpriteKit, or AVFoundation—for the full set of options, see the [`contents`](scnmaterialproperty/contents.md) property.
 
 > **Note**:  Typically, you associate texture images with materials when creating 3D assets with third-party authoring tools, and the scene files containing those assets reference external image files. For best results when shipping assets in your app bundle, place scene files in a folder with the `.scnassets` extension, and place image files referenced as textures from those scenes in an Asset Catalog. Xcode then optimizes the scene and texture resources for best performance on each target device, and prepares your texture resources for delivery features such as App Thinning and On-Demand Resources.
-
- Typically, you associate texture images with materials when creating 3D assets with third-party authoring tools, and the scene files containing those assets reference external image files. For best results when shipping assets in your app bundle, place scene files in a folder with the `.scnassets` extension, and place image files referenced as textures from those scenes in an Asset Catalog.
-
-Xcode then optimizes the scene and texture resources for best performance on each target device, and prepares your texture resources for delivery features such as App Thinning and On-Demand Resources.
 
 SceneKit uses the material property’s [`contents`](scnmaterialproperty/contents.md) object in different ways for each visual property of a material. For example:
 

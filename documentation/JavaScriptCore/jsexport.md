@@ -1,6 +1,6 @@
 # JSExport
 
-**Framework**: JavaScriptCore  
+**Framework**: Javascriptcore  
 **Kind**: protocol
 
 The protocol for exporting Objective-C objects to JavaScript.
@@ -78,8 +78,6 @@ Wrapped Objective-C properties, parameters, and return values convert according 
 
 > **Note**:  If a class declares conformance to the [`JSExport`](jsexport.md) protocol, JavaScriptCore ignores its normal copying conventions for built-in types. For example, if you define a custom [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) subclass that conforms to the [`JSExport`](jsexport.md) protocol and pass an instance of that class to the `valueWithObject:` method, the result is a JavaScript wrapper object for the custom class, not a JavaScript string primitive.
 
- If a class declares conformance to the [`JSExport`](jsexport.md) protocol, JavaScriptCore ignores its normal copying conventions for built-in types. For example, if you define a custom [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) subclass that conforms to the [`JSExport`](jsexport.md) protocol and pass an instance of that class to the `valueWithObject:` method, the result is a JavaScript wrapper object for the custom class, not a JavaScript string primitive.
-
 ##### Customize Export of Objective C Selectors
 
 When exporting a selector that takes one or more arguments, JavaScriptCore generates a corresponding function name using the following conversion:
@@ -90,8 +88,6 @@ When exporting a selector that takes one or more arguments, JavaScriptCore gener
 For example, under the default conversion, the Objective-C selector `doX:withY:` exports as the JavaScript function `doXWithY`.
 
 > **Note**:  You can only apply the `JSExportAs` macro to a selector that takes one or more arguments.
-
- You can only apply the `JSExportAs` macro to a selector that takes one or more arguments.
 
 To rename a selector that you export to JavaScript, use the `JSExportAs` macro. For example, to instead export the Objective-C selector `doX:withY:` as the JavaScript function `doX`, use the following declaration:
 
@@ -106,4 +102,4 @@ JSExportAs(doX,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/javascriptcore/jsexport)*
+*[View on Apple Developer](https://developer.apple.com/documentation/JavaScriptCore/jsexport)*

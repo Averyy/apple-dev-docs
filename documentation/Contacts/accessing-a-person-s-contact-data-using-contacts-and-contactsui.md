@@ -13,8 +13,6 @@ Allow people to grant your app access to contact data by adding the Contact acce
 
 > **Note**: This sample code project is associated with WWDC24 session 10121: [`Meet the Contact Access Button`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10121/).
 
-This sample code project is associated with WWDC24 session 10121: [`Meet the Contact Access Button`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10121/).
-
 ##### Configure the Sample Code Project
 
 Before running the sample code project in Xcode, select the sample target, then configure it to use your Developer team for signing.
@@ -33,4 +31,4 @@ Before running the sample code project in Xcode, select the sample target, then 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/contacts/accessing-a-person-s-contact-data-using-contacts-and-contactsui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Contacts/accessing-a-person-s-contact-data-using-contacts-and-contactsui)*

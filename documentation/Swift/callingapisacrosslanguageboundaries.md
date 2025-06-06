@@ -12,8 +12,6 @@ Use a variety of C++ APIs in Swift – and vice-versa – across multiple target
 
 > **Note**: This sample code project is associated with WWDC 2023 sessions 10172: [`Mix Swift and C++`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10172) and 10268: [`Meet mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10268).
 
-This sample code project is associated with WWDC 2023 sessions 10172: [`Mix Swift and C++`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10172) and 10268: [`Meet mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10268).
-
 ##### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode, ensure you’re using macOS 14.0 or later.
@@ -26,4 +24,4 @@ Before you run the sample code project in Xcode, ensure you’re using macOS 14.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/callingapisacrosslanguageboundaries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/callingapisacrosslanguageboundaries)*

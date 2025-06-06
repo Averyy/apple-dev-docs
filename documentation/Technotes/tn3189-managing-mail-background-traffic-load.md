@@ -28,8 +28,6 @@ it indicates that the connection is being used for background downloading.
 
 > **Note**: The event field may contain other identifiers, either by themselves or as a list of comma-separated identifiers. The server should ignore all identifiers except `indexer` and `back-fill`. Allowing for other identifiers supports extension without affecting IMAP email servers’ ability to detect background downloading.
 
-The event field may contain other identifiers, either by themselves or as a list of comma-separated identifiers. The server should ignore all identifiers except `indexer` and `back-fill`. Allowing for other identifiers supports extension without affecting IMAP email servers’ ability to detect background downloading.
-
 The `event` field could take on values such as:
 
 - `periodic`
@@ -85,8 +83,6 @@ Here the IMAP email server responds with a tagged response containing `NO` and t
 
 > **Note**: Mail does not include an event field on macOS. It also doesn’t handle load shedding through the `NO [UNAVAILABLE]` server response.
 
-Mail does not include an event field on macOS. It also doesn’t handle load shedding through the `NO [UNAVAILABLE]` server response.
-
 #### Revision History
 
 -  First published.
@@ -127,4 +123,4 @@ Mail does not include an event field on macOS. It also doesn’t handle load she
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3189-managing-mail-background-traffic-load)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3189-managing-mail-background-traffic-load)*

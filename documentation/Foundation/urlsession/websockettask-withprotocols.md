@@ -26,8 +26,6 @@ During the WebSocket handshake, the task uses the provided protocols to negotiat
 
 > **Note**:  The protocol doesn’t affect the WebSocket framing. More details on the protocol are available in [`RFC 6455, The WebSocket Protocol`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6455).
 
- The protocol doesn’t affect the WebSocket framing. More details on the protocol are available in [`RFC 6455, The WebSocket Protocol`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6455).
-
 ## Parameters
 
 - `url`: The WebSocket URL with which to connect.

@@ -18,8 +18,6 @@ You implement Handoff in your app by:
 
 > ❗ **Important**:  To handoff between apps on different platforms, your apps must share the same developer Team ID. This means you must either distribute your apps through the App Store, or sign them with the same credentials.
 
- To handoff between apps on different platforms, your apps must share the same developer Team ID. This means you must either distribute your apps through the App Store, or sign them with the same credentials.
-
 ##### Declare Handoff Activities in Your Apps Infoplist
 
 Start by identifying which activities make sense to use with Handoff. Choose activities that represent what the user is doing at some point in time, like creating a shape or editing document properties. Choose a universally-unique identifier string for each of your activities, using a reverse-DNS pattern, like `com.example.app.activity-name`.
@@ -82,8 +80,6 @@ After launching your app, Handoff calls the [`application(_:willContinueUserActi
 
 > **Note**:  While watchOS can create [`NSUserActivity`](nsuseractivity.md) objects and send them to other devices, Handoff cannot launch watchOS apps.
 
- While watchOS can create [`NSUserActivity`](nsuseractivity.md) objects and send them to other devices, Handoff cannot launch watchOS apps.
-
 Handoff provides the activity to your app in the [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:continue:restorationHandler:)) (iOS), or [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/application(_:continue:restorationHandler:)) (macOS) delegate method. Implement the method by creating an array of view controllers that need to update for the activity, and provide this array to the completion handler. Return [`true`](https://developer.apple.com/documentation/swift/true) if your implementation successfully handled the activity, or [`false`](https://developer.apple.com/documentation/swift/false) if it did not. The following example shows an iOS app delegate finding its top view controller and providing it to the completion handler.
 
 ```swift
@@ -132,4 +128,4 @@ For URLs transferred in the [`userInfo`](nsuseractivity/userinfo.md) dictionary,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/implementing-handoff-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/implementing-handoff-in-your-app)*

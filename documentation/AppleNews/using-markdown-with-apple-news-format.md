@@ -1,6 +1,6 @@
 # Using Markdown with Apple News Format
 
-**Framework**: Apple News
+**Framework**: Applenews
 
 Use Markdown formatting for text components.
 
@@ -91,8 +91,6 @@ In this example, the word  (but not the apostrophe and the letter  that follow i
 
 > **Note**: Apple News Format doesn’t support the use of triple asterisks (`***`) or triple underscores (`___`) to create bold-italic.
 
-Apple News Format doesn’t support the use of triple asterisks (`***`) or triple underscores (`___`) to create bold-italic.
-
 ###### Strikethrough
 
 For strikethrough text, surround with double tildes (~~).
@@ -124,8 +122,6 @@ The second example italicizes the entire sentence, including the link text.
 The third example italicizes just the link.
 
 > **Note**: Apple News Format doesn’t support Markdown reference links, which use a second set of square brackets that contain a label that’s defined elsewhere in the article.
-
-Apple News Format doesn’t support Markdown reference links, which use a second set of square brackets that contain a label that’s defined elsewhere in the article.
 
 ##### Block Level Markdown
 
@@ -180,8 +176,6 @@ First line of paragraph 2.
 Apple News Format doesn’t support Markdown paragraph and line separators (`\n` or `\n\n`) at the beginning or end of components. To add space in these locations within a component, use layout margins.
 
 > **Note**: Apple News Format does not support single `\n` or `\r` Markdown tags. You can use the Unicode line separator `(\u2028)` to start a new line.
-
-Apple News Format does not support single `\n` or `\r` Markdown tags. You can use the Unicode line separator `(\u2028)` to start a new line.
 
 ###### Lists
 
@@ -332,4 +326,4 @@ This is an underscore: _
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applenews/using-markdown-with-apple-news-format)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/using-markdown-with-apple-news-format)*

@@ -59,8 +59,6 @@ When `letterCounts[letter, default: 0] += 1` is executed with a value of `letter
 
 > **Note**: Do not use this subscript to modify dictionary values if the dictionary’s `Value` type is a class. In that case, the default value and key are not written back to the dictionary after an operation.
 
-Do not use this subscript to modify dictionary values if the dictionary’s `Value` type is a class. In that case, the default value and key are not written back to the dictionary after an operation.
-
 ## Parameters
 
 - `key`: The key the look up in the dictionary.

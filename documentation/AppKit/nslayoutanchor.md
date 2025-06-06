@@ -1,6 +1,6 @@
 # NSLayoutAnchor
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A factory class for creating layout constraint objects using a fluent API.
@@ -25,21 +25,11 @@ As you can see from these examples, the [`NSLayoutAnchor`](nslayoutanchor.md) cl
 
 > **Note**:  While the [`NSLayoutAnchor`](nslayoutanchor.md) class provides additional type checking, it is still possible to create invalid constraints. For example, the compiler allows you to constrain one view’s [`leadingAnchor`](nsview/leadinganchor.md) with another view’s [`leftAnchor`](nsview/leftanchor.md), since they are both [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) instances. However, Auto Layout does not allow constraints that mix leading and trailing attributes with left or right attributes. As a result, this constraint crashes at runtime.
 
- While the [`NSLayoutAnchor`](nslayoutanchor.md) class provides additional type checking, it is still possible to create invalid constraints. For example, the compiler allows you to constrain one view’s [`leadingAnchor`](nsview/leadinganchor.md) with another view’s [`leftAnchor`](nsview/leftanchor.md), since they are both [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) instances. However, Auto Layout does not allow constraints that mix leading and trailing attributes with left or right attributes. As a result, this constraint crashes at runtime.
-
 For more information on the anchor properties, see [`bottomAnchor`](nsview/bottomanchor.md) in the [`NSView`](nsview.md) or [`NSLayoutGuide`](nslayoutguide.md).
 
 > **Note**:  You never use the [`NSLayoutAnchor`](nslayoutanchor.md) class directly. Instead, use one of its subclasses, based on the type of constraint you wish to create. - Use [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) to create horizontal constraints.
 - Use [`NSLayoutYAxisAnchor`](nslayoutyaxisanchor.md) to create vertical constraints.
 - Use [`NSLayoutDimension`](nslayoutdimension.md) to create constraints that affect the view’s height or width. However, since you access [`NSLayoutAnchor`](nslayoutanchor.md) objects using the anchor properties of an [`NSView`](nsview.md) or [`NSLayoutGuide`](nslayoutguide.md), a correct subclass is automatically provided.
-
- You never use the [`NSLayoutAnchor`](nslayoutanchor.md) class directly. Instead, use one of its subclasses, based on the type of constraint you wish to create.
-
-- Use [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) to create horizontal constraints.
-- Use [`NSLayoutYAxisAnchor`](nslayoutyaxisanchor.md) to create vertical constraints.
-- Use [`NSLayoutDimension`](nslayoutdimension.md) to create constraints that affect the view’s height or width.
-
-However, since you access [`NSLayoutAnchor`](nslayoutanchor.md) objects using the anchor properties of an [`NSView`](nsview.md) or [`NSLayoutGuide`](nslayoutguide.md), a correct subclass is automatically provided.
 
 ## Topics
 
@@ -94,4 +84,4 @@ However, since you access [`NSLayoutAnchor`](nslayoutanchor.md) objects using th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nslayoutanchor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nslayoutanchor)*

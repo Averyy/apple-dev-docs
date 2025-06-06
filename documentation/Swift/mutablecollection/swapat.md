@@ -27,8 +27,6 @@ Both parameters must be valid indices of the collection and not equal to `endInd
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `i`: The index of the first value to swap.

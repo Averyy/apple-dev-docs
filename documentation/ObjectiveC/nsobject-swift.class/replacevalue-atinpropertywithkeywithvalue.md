@@ -1,6 +1,6 @@
 # replaceValue(at:inPropertyWithKey:withValue:)
 
-**Framework**: Objective-C Runtime  
+**Framework**: Objectivec  
 **Kind**: method
 
 Replaces the object at the specified index in the collection specified by the passed key.
@@ -20,8 +20,6 @@ func replaceValue(at index: Int, inPropertyWithKey key: String, withValue value:
 The method `replaceIn<Key>:atIndex:` is invoked if it exists. If no corresponding scripting-KVC-compliant method (`-replaceIn<Key>atIndex:`) is found, this method invokes `-mutableArrayValueForKey:` and mutates the result.
 
 > **Note**:  Prior to OS X version 10.4, this method did not invoke `-mutableArrayValueForKey:`.
-
- Prior to OS X version 10.4, this method did not invoke `-mutableArrayValueForKey:`.
 
 ## See Also
 

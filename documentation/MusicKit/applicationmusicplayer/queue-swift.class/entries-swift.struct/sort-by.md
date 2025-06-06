@@ -1,6 +1,6 @@
 # sort(by:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Sorts the collection in place, using the given predicate as the comparison between elements.
@@ -68,8 +68,6 @@ print(students)
 The sorting algorithm is guaranteed to be stable. A stable sort preserves the relative order of elements for which `areInIncreasingOrder` does not establish an order.
 
 > **Note**: O( log ), where  is the length of the collection.
-
-O( log ), where  is the length of the collection.
 
 ## Parameters
 

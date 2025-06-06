@@ -1,6 +1,6 @@
 # registerAudioResource(_:options:)
 
-**Framework**: Core Haptics  
+**Framework**: Corehaptics  
 **Kind**: method
 
 Registers an external audio to use as a custom waveform.
@@ -34,8 +34,6 @@ Before you initialize a Core Haptics event with your own audio file, use this me
 Input the value that this method returns when creating the dictionary or event representation of a haptic pattern.
 
 > **Note**:  In an Apple Haptics and Audio File (AHAP), you specify audio files by their path, as opposed to their registered resource URL. For more information, see [`Representing haptic patterns in AHAP files`](representing-haptic-patterns-in-ahap-files.md).
-
- In an Apple Haptics and Audio File (AHAP), you specify audio files by their path, as opposed to their registered resource URL. For more information, see [`Representing haptic patterns in AHAP files`](representing-haptic-patterns-in-ahap-files.md).
 
 ## Parameters
 

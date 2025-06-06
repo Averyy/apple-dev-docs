@@ -1,6 +1,6 @@
 # elements
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: property
 
 The document elements you’re requesting.
@@ -21,8 +21,6 @@ var elements: [MobileNationalIDCardDisplayRequest.Element]
 
 > **Note**: A request isn’t considered valid if the list of elements is empty, contains duplicates, or contains both [`age`](mobilenationalidcarddisplayrequest/element/age.md) and [`ageAtLeast(_:)`](mobilenationalidcarddisplayrequest/element/ageatleast(_:).md). If you call [`requestDocument(_:)`](mobiledocumentreadersession/requestdocument(_:).md) with an invalid request, the framework throws an [`MobileDocumentReaderError.invalidRequest`](mobiledocumentreadererror/invalidrequest.md) error.
 
-A request isn’t considered valid if the list of elements is empty, contains duplicates, or contains both [`age`](mobilenationalidcarddisplayrequest/element/age.md) and [`ageAtLeast(_:)`](mobilenationalidcarddisplayrequest/element/ageatleast(_:).md). If you call [`requestDocument(_:)`](mobiledocumentreadersession/requestdocument(_:).md) with an invalid request, the framework throws an [`MobileDocumentReaderError.invalidRequest`](mobiledocumentreadererror/invalidrequest.md) error.
-
 ## See Also
 
 - [var region: Locale.Region](mobilenationalidcarddisplayrequest/region.md)
@@ -37,4 +35,4 @@ A request isn’t considered valid if the list of elements is empty, contains du
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/mobilenationalidcarddisplayrequest/elements)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/mobilenationalidcarddisplayrequest/elements)*

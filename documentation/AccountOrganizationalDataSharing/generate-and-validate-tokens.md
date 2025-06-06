@@ -1,6 +1,6 @@
 # Generate and validate tokens
 
-**Framework**: Account & Organizational Data Sharing  
+**Framework**: Accountorganizationaldatasharing  
 **Kind**: httpRequest
 
 Validate an authorization grant code delivered to your app to obtain tokens, or validate an existing refresh token.
@@ -23,8 +23,6 @@ When you send an authorization request to the validation server, include the fol
 - `redirect_uri`
 
 > **Note**: When authorizing a user with your app, include the `redirect_uri` parameter only if the application provided a `redirect_uri` in the initial authorization request.
-
-When authorizing a user with your app, include the `redirect_uri` parameter only if the application provided a `redirect_uri` in the initial authorization request.
 
 For information on how to create the JWT that you use as the client secret, see [`Creating a client secret`](creating-a-client-secret.md).
 
@@ -101,4 +99,4 @@ The list of input parameters required for the server to validate the authorizati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accountorganizationaldatasharing/generate-and-validate-tokens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/generate-and-validate-tokens)*

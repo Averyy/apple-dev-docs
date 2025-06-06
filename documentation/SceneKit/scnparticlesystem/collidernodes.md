@@ -1,6 +1,6 @@
 # colliderNodes
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: property
 
 The nodes whose geometry the system’s particles can collide with.
@@ -25,8 +25,6 @@ var colliderNodes: [SCNNode]? { get set }
 A particle system can perform limited collision detection and resolution with geometries in the scene. If a moving particle intersects a geometry attached to one of the [`SCNNode`](scnnode.md) objects in this array, SceneKit resolves the collision, either by removing the particle from the scene or allowing it to bounce off or slide along the geometry’s surface.
 
 > **Note**:  Collision detection is computationally intensive. For the best rendering performance, limit the number of collider nodes for each particle system, and use only simple geometries—represented by the [`SCNSphere`](scnsphere.md), [`SCNPlane`](scnplane.md), and [`SCNFloor`](scnfloor.md) classes—as collision surfaces.
-
- Collision detection is computationally intensive. For the best rendering performance, limit the number of collider nodes for each particle system, and use only simple geometries—represented by the [`SCNSphere`](scnsphere.md), [`SCNPlane`](scnplane.md), and [`SCNFloor`](scnfloor.md) classes—as collision surfaces.
 
 This array is empty by default.
 

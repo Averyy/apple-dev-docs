@@ -1,6 +1,6 @@
 # removeItems(at:inParent:withAnimation:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Removes items at the given indexes in the given parent with the specified optional animations.
@@ -20,8 +20,6 @@ func removeItems(at indexes: IndexSet, inParent parent: Any?, withAnimation anim
 This method parallels the [`removeRows(at:withAnimation:)`](nstableview/removerows(at:withanimation:).md) method of [`NSTableView`](nstableview.md) and is used in a way similar to the [`removeObjects(at:)`](https://developer.apple.com/documentation/foundation/nsmutablearray/1410154-removeobjects) method of [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray). The method does nothing if `parent` is not expanded. If any of the child items is expanded, then all of its child rows are also be removed.
 
 > **Note**:  [`NSCell`](nscell.md)-based outline views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
-
- [`NSCell`](nscell.md)-based outline views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
 
 You can call this method multiple times within the same [`beginUpdates()`](nstableview/beginupdates().md)/[`endUpdates()`](nstableview/endupdates().md) block; changes work just like modifying an array. Removing an item at an index beyond what is available throws an exception.
 

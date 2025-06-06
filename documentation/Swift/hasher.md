@@ -36,8 +36,6 @@ Within the execution of a Swift program, `Hasher` guarantees that finalizing it 
 
 > **Note**: Do not save or otherwise reuse hash values across executions of your program. `Hasher` is usually randomly seeded, which means it will return different values on every new execution of your program. The hash algorithm implemented by `Hasher` may itself change between any two versions of the standard library.
 
-Do not save or otherwise reuse hash values across executions of your program. `Hasher` is usually randomly seeded, which means it will return different values on every new execution of your program. The hash algorithm implemented by `Hasher` may itself change between any two versions of the standard library.
-
 ## Topics
 
 ### Creating a Hasher
@@ -67,4 +65,4 @@ Do not save or otherwise reuse hash values across executions of your program. `H
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/hasher)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/hasher)*

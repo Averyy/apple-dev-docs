@@ -50,8 +50,6 @@ The ARM64 red zone consists of the 128 bytes immediately below the stack pointer
 
 > **Note**: If a function calls itself, the caller must assume that the callee modifies the contents of its red zone. The caller must therefore create a proper stack frame.
 
-If a function calls itself, the caller must assume that the callee modifies the contents of its red zone. The caller must therefore create a proper stack frame.
-
 ##### Pass Arguments to Functions Correctly
 
 The stack pointer on Apple platforms follows the ARM64 standard ABI and requires 16-byte alignment. When passing arguments to functions, Apple platforms diverge from the ARM64 standard ABI in the following ways:
@@ -84,8 +82,6 @@ Because of these changes, the type `va_list` is an alias for `char*`, and not fo
 
 > **Note**: The C language requires the promotion of arguments smaller than int before a call. Beyond that, the Apple platforms ABI doesn’t add unused bytes to the stack.
 
-The C language requires the promotion of arguments smaller than int before a call. Beyond that, the Apple platforms ABI doesn’t add unused bytes to the stack.
-
 ##### Handle C++ Differences
 
 The generic ARM64 C++ ABI mirrors the Itanium C++ ABI, which many UNIX-like systems use. Apple’s C++ ABI differs from this ABI in the following ways:
@@ -109,8 +105,6 @@ Apple silicon provides  (DIT), in which the processor completes certain instruct
 Enable DIT in specialized situations, such as cryptographic routines. Because DIT can slow down your code, only enable it in situations where you write software to run in constant time with respect to sensitive data, and to avoid leaking sensitive information. Apple cryptographic routines implemented in the operating system, and which are made available in APIs such as Apple CryptoKit, enable DIT internally.
 
 > ❗ **Important**: While DIT ensures the timing of certain instructions don’t reveal information about the data, you need additional programming practices to prevent other changes to the processor’s microarchitectural state from providing an adversary with signals about secret values. For example, avoid conditional branches and memory access locations based on the value of the secret data.
-
-While DIT ensures the timing of certain instructions don’t reveal information about the data, you need additional programming practices to prevent other changes to the processor’s microarchitectural state from providing an adversary with signals about secret values. For example, avoid conditional branches and memory access locations based on the value of the secret data.
 
 In iOS 18.2, iPadOS 18.2, macOS 15.2, tvOS 18.2, watchOS 11.2, and visionOS 2.2 and later, two new function calls are available to control and optimize DIT for Apple devices. The functions are available on all devices regardless of whether they support DIT, but only turn on DIT on supported devices.
 
@@ -339,4 +333,4 @@ int cryptographic_routine(void) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/writing-arm64-code-for-apple-platforms)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/writing-arm64-code-for-apple-platforms)*

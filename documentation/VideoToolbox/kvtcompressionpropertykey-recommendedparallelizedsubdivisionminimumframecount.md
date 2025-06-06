@@ -20,8 +20,6 @@ For best results, ensure that the total number of frames of a parallelized subdi
 
 > **Note**:  This configuration isn’t supported by all video encoders.
 
- This configuration isn’t supported by all video encoders.
-
 ## See Also
 
 - [let kVTVideoEncoderSpecification_EncoderID: CFString](kvtvideoencoderspecification_encoderid.md)

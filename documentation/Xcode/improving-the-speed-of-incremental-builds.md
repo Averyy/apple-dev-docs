@@ -12,8 +12,6 @@ Always ensure that your project’s inter-target dependencies and configuration 
 
 > **Note**: Following coding best practices can also improve Xcode’s efficiency during compilation. For more information, see [`Improving build efficiency with good coding practices`](improving-build-efficiency-with-good-coding-practices.md).
 
-Following coding best practices can also improve Xcode’s efficiency during compilation. For more information, see [`Improving build efficiency with good coding practices`](improving-build-efficiency-with-good-coding-practices.md).
-
 ##### Measure the Time It Takes for Each Build Task
 
 Before you perform any build optimizations, always gather timing information to see where optimizations might be most effective. Open your project in Xcode and choose Product > Perform Action > Build With Timing Summary to build your target with detailed timing information. To view the timing information for a specific build, select that build in the Report navigator.
@@ -21,8 +19,6 @@ Before you perform any build optimizations, always gather timing information to 
 ![A screenshot of Xcode build results that include detailed timing information.](https://docs-assets.developer.apple.com/published/dfbcc8f34dce5c30e636d91c50997cef/improving-the-speed-of-incremental-builds-1%402x.png)
 
 > **Note**: To generate timing information using the `xcodebuild` command-line tool, pass the `-showBuildTimingSummary` option to the tool.
-
-To generate timing information using the `xcodebuild` command-line tool, pass the `-showBuildTimingSummary` option to the tool.
 
 The first time you build your project, Xcode builds everything, but subsequent builds are incremental. For each incremental build, pay particular attention to the preparation section and the specific tasks that Xcode performs for each target.
 
@@ -56,8 +52,6 @@ The system frameworks already include module maps, but you must provide module m
 ![A screenshot of the DEFINES_MODULE build setting in Xcode.](https://docs-assets.developer.apple.com/published/d3afac2c05ccaed02b9eae7b5d36503b/improving-the-speed-of-incremental-builds-3%402x.png)
 
 > ❗ **Important**: To obtain the benefit from module maps, always include the framework name in any import statements. If you don’t include the framework name, the compiler can’t determine whether a module map is present. For more information on how to import header files from a module, see [`Include framework names in import statements`](improving-build-efficiency-with-good-coding-practices#Include-framework-names-in-import-statements.md).
-
-To obtain the benefit from module maps, always include the framework name in any import statements. If you don’t include the framework name, the compiler can’t determine whether a module map is present. For more information on how to import header files from a module, see [`Include framework names in import statements`](improving-build-efficiency-with-good-coding-practices#Include-framework-names-in-import-statements.md).
 
 Before you create a module map, make sure your framework meets the following requirements:
 
@@ -102,4 +96,4 @@ You need to decide whether modifications to your project’s targets offer any b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/improving-the-speed-of-incremental-builds)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/improving-the-speed-of-incremental-builds)*

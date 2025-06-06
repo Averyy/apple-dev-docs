@@ -27,8 +27,6 @@ The default value is [`false`](https://developer.apple.com/documentation/swift/f
 
 > **Note**:  This optional Boolean value is used as a performance optimization hint and it is ignored on some GPUs. Enabling LOD averaging may provide a performance benefit for shaders that sample from explicit per-fragment mipmap levels, or apply per-fragment LOD bias, at the potential cost of reduced texture sample quality.
 
- This optional Boolean value is used as a performance optimization hint and it is ignored on some GPUs. Enabling LOD averaging may provide a performance benefit for shaders that sample from explicit per-fragment mipmap levels, or apply per-fragment LOD bias, at the potential cost of reduced texture sample quality.
-
 ## See Also
 
 - [var minFilter: MTLSamplerMinMagFilter](mtlsamplerdescriptor/minfilter.md)

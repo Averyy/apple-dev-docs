@@ -47,8 +47,6 @@ if let i = numbers.firstIndex(of: 40) {
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `position`: The index of the last element to include in the   resulting subsequence.   must be a valid index of the collection   that is not equal to the   property.

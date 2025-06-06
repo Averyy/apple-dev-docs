@@ -30,8 +30,6 @@ These characters include compatibility characters as well as pre-composed charac
 
 > **Note**:  This character set doesn’t currently include the Hangul characters defined in version 2.0 of the Unicode standard.
 
- This character set doesn’t currently include the Hangul characters defined in version 2.0 of the Unicode standard.
-
 ## See Also
 
 - [class var alphanumerics: CharacterSet](nscharacterset/alphanumerics.md)

@@ -49,8 +49,6 @@ struct TranslationExample: View {
 
 > **Note**: All translations using the `TranslationSession` class are processed on the user’s device. Apple may collect API usage and performance metrics including the app bundle ID and the original and translated language, but this data does not include the original or translated content.
 
-All translations using the `TranslationSession` class are processed on the user’s device. Apple may collect API usage and performance metrics including the app bundle ID and the original and translated language, but this data does not include the original or translated content.
-
 ## Topics
 
 ### Translating text
@@ -94,4 +92,4 @@ All translations using the `TranslationSession` class are processed on the user�
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/translation/translationsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Translation/translationsession)*

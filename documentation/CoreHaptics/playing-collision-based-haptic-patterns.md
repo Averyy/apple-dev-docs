@@ -1,6 +1,6 @@
 # Playing Collision-Based Haptic Patterns
 
-**Framework**: Core Haptics
+**Framework**: Corehaptics
 
 Play a custom haptic pattern whose strength depends on an object’s collision speed.
 
@@ -16,8 +16,6 @@ The sample code project, HapticBounce, demonstrates how to play a haptic with au
 Although the sample app uses UIKit Dynamics and UIKit for simplicity and familiarity with UIKit classes, but your app can also use a 2D engine like SpriteKit to represent interactive object collisions.
 
 > **Note**: HapticBounce requires Xcode 11 or later. Simulator doesn’t support a haptic interface, so build and run this sample on an iPhone 8, 8 Plus, X, XR, XS, or XS Max running iOS 13 or later.
-
-HapticBounce requires Xcode 11 or later. Simulator doesn’t support a haptic interface, so build and run this sample on an iPhone 8, 8 Plus, X, XR, XS, or XS Max running iOS 13 or later.
 
 ##### Configure the App to Play Haptics
 
@@ -176,4 +174,4 @@ Instead of adjusting haptic intensity and sharpness based on the sphere’s velo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/playing-collision-based-haptic-patterns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/playing-collision-based-haptic-patterns)*

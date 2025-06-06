@@ -24,8 +24,6 @@ func index(after i: String.UnicodeScalarView.Index) -> String.UnicodeScalarView.
 
 > **Note**: The next location exists.
 
-The next location exists.
-
 
 ---
 

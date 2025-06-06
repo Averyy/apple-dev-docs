@@ -1,6 +1,6 @@
 # UILayoutGuide
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A rectangular area that can interact with Auto Layout.
@@ -40,10 +40,6 @@ You can use these guides to define the space between elements in your layout. Th
 A layout guide can also act as an opaque box that contains other views and controls, letting you encapsulate parts of your view and break up your layout into modular chunks.
 
 > **Note**:  Layout guides provides a lightweight method for encapsulating part of your layout. Note that this technique only affects how Auto Layout interacts with the encapsulated views. It does not change the view hierarchy in any way. However, this is not the only way to create modular user interfaces. Container views and container view controllers provide an even greater degree of encapsulation, letting you separate the layout, the view hierarchy and even the related view controller code. For more information, see [`Adaptivity and Size Changes`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/TheAdaptiveModel.html#//apple_ref/doc/uid/TP40007457-CH18) in [`View Controller Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457). Additionally, layout constraints do not fully encapsulate their contents. The system still compares the priority of optional constraints inside the layout guide with the priority of optional constraints outside the guide.
-
- Layout guides provides a lightweight method for encapsulating part of your layout. Note that this technique only affects how Auto Layout interacts with the encapsulated views. It does not change the view hierarchy in any way. However, this is not the only way to create modular user interfaces. Container views and container view controllers provide an even greater degree of encapsulation, letting you separate the layout, the view hierarchy and even the related view controller code. For more information, see [`Adaptivity and Size Changes`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/TheAdaptiveModel.html#//apple_ref/doc/uid/TP40007457-CH18) in [`View Controller Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457).
-
-Additionally, layout constraints do not fully encapsulate their contents. The system still compares the priority of optional constraints inside the layout guide with the priority of optional constraints outside the guide.
 
 ## Topics
 

@@ -48,8 +48,6 @@ To synchronize the iOS and Mac keyboard languages, select I/O > Keyboard > Use t
 
 > **Note**: For Simulator to automatically switch keyboard languages when the Mac layout is changed, select both Connect Hardware Keyboard and Use the Same Keyboard Language as macOS.
 
-For Simulator to automatically switch keyboard languages when the Mac layout is changed, select both Connect Hardware Keyboard and Use the Same Keyboard Language as macOS.
-
 ##### Use Game Controller Input
 
 For a visionOS simulator, you can share the input from a game controller connected to your Mac.
@@ -68,4 +66,4 @@ To connect your Mac game controller to an app running in the simulated device, s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/sharing-data-with-simulator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/sharing-data-with-simulator)*

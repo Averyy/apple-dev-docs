@@ -1,6 +1,6 @@
 # Generating the signature to validate StoreKit-rendered ads
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Initiate install validation by displaying a StoreKit-rendered ad with signed parameters.
 
@@ -9,8 +9,6 @@ Initiate install validation by displaying a StoreKit-rendered ad with signed par
 Install validation informs an ad network when users install and launch an app they purchase after viewing an ad. Ad networks first provide an ad with cryptographically signed information that includes their ad network ID. Later, if the ad results in a conversion, the customer’s device sends install-validation postbacks. For information about attribution-winning and nonwinning postbacks, see [`Receiving ad attributions and postbacks`](receiving-ad-attributions-and-postbacks.md).
 
 > **Note**:  These instructions are for signing StoreKit-rendered ads. If you’re presenting a view-through ad, see [`Generating the signature to validate view-through ads`](generating-the-signature-to-validate-view-through-ads.md).
-
- These instructions are for signing StoreKit-rendered ads. If you’re presenting a view-through ad, see [`Generating the signature to validate view-through ads`](generating-the-signature-to-validate-view-through-ads.md).
 
 To display a StoreKit-rendered ad and initiate a validation, an app needs to call [`loadProduct(withParameters:completionBlock:)`](skstoreproductviewcontroller/loadproduct(withparameters:completionblock:).md) with a signature key that the ad network generates, [`SKStoreProductParameterAdNetworkAttributionSignature`](skstoreproductparameteradnetworkattributionsignature.md). To generate the signature, combine the required values from [`Ad network install-validation keys`](ad-network-install-validation-keys.md) and cryptographically sign the resulting string. Use the ad network ID and PKCS#8 private key that you establish when registering to use the API. For more information, see [`Registering an ad network`](registering-an-ad-network.md).
 
@@ -42,8 +40,6 @@ To create signatures for previous SKAdNetwork versions, see:
 Create the UTF-8 string using the parameters in the example below.
 
 > ❗ **Important**:  Lowercase the string representation of the nonce: [`SKStoreProductParameterAdNetworkNonce`](skstoreproductparameteradnetworknonce.md). Failing to do so results in an invalid signature. Only ads with valid signatures can get ad attributions.
-
- Lowercase the string representation of the nonce: [`SKStoreProductParameterAdNetworkNonce`](skstoreproductparameteradnetworknonce.md). Failing to do so results in an invalid signature. Only ads with valid signatures can get ad attributions.
 
 For version 4 and later, combine the values into a UTF-8 string with an invisible separator (`‘\u2063’`) between them, in the exact order the code below shows:
 
@@ -96,4 +92,4 @@ If the user installs and launches the advertised app, the attribution-winning ad
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/generating-the-signature-to-validate-storekit-rendered-ads)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/generating-the-signature-to-validate-storekit-rendered-ads)*

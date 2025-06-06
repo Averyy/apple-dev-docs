@@ -38,8 +38,6 @@ This method is equivalent to calling `shuffled(using:)`, passing in the systemâ€
 
 > **Note**: O(), where  is the length of the sequence.
 
-O(), where  is the length of the sequence.
-
 ## See Also
 
 - [func shuffled<T>(using: inout T) -> [Self.Element]](sequence/shuffled(using:).md)

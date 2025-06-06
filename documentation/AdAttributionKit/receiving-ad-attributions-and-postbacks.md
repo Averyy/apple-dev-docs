@@ -1,6 +1,6 @@
 # Receiving ad attributions and postbacks
 
-**Framework**: AdAttributionKit
+**Framework**: Adattributionkit
 
 Understand timeframes and priorities for ad impressions that result in ad attributions, and how impressions qualify for postbacks.
 
@@ -38,8 +38,6 @@ When multiple ad impressions qualify for postbacks from an install conversion, t
 
 > **Note**: Install conversions always produce winning postbacks if there’s a qualifying ad impression, subject to their Crowd Anonymity tier.
 
-Install conversions always produce winning postbacks if there’s a qualifying ad impression, subject to their Crowd Anonymity tier.
-
 ##### Receive a Nonwinning Postback
 
 Each ad network can receive only one postback, winning or nonwinning. If you receive the winning postback, you don’t receive any nonwinning postbacks even if your ads have multiple qualifying ad impressions. Up to five ad networks receive one nonwinning postback each. The system sorts the recorded ad impressions based on recency and whether they are click-through or view-through, with the most recent ad views and click-through taking precedence. Devices send nonwinning postbacks for the top five ad impressions from different ad networks that qualify for ad attribution.
@@ -57,8 +55,6 @@ It’s possible a reengagement conversion may occur for an app when there’s al
 AdAttributionsKit represents reengagement postbacks as `reengagement` in the postback’s `conversion-type` field. For more information about the postback parameters, see [`Identifying the parameters in a postback`](identifying-the-parameters-in-a-postback.md).
 
 > ❗ **Important**: The system doesn’t always produce postbacks after a reengagement. The device is subject to reengagement limits on a monthly per-app basis, as well as a yearly per-device basis. The parameter AdAttributionsKit appends to the URL is always present on the URL, however, even if AdAttributionsKit doesn’t create reengagement postbacks.
-
-The system doesn’t always produce postbacks after a reengagement. The device is subject to reengagement limits on a monthly per-app basis, as well as a yearly per-device basis. The parameter AdAttributionsKit appends to the URL is always present on the URL, however, even if AdAttributionsKit doesn’t create reengagement postbacks.
 
 #### Update Postbacks By Their Conversion Type
 
@@ -103,4 +99,4 @@ AdAttributionKit records a maximum of 15 view-through ad impressions per publish
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/receiving-ad-attributions-and-postbacks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/receiving-ad-attributions-and-postbacks)*

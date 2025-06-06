@@ -42,8 +42,6 @@ xcodebuild docbuild -scheme SlothCreator -derivedDataPath ~/Desktop/SlothCreator
 
 > 💡 **Tip**: Although `-derivedDataPath` isn’t a required option, including it makes it easier for an automated script to identify the build output and find the resulting `.doccarchive` bundle.
 
-Although `-derivedDataPath` isn’t a required option, including it makes it easier for an automated script to identify the build output and find the resulting `.doccarchive` bundle.
-
 As part of the build process, `xcodebuild` produces many files in the derived data path. One way to locate the documentation archive in the build output is to use the `find` command. For example, use the following to locate the documentation archive that the `xcodebuild` command above produces:
 
 ```shell
@@ -78,8 +76,6 @@ A file server is the recommended solution to host your documentation. But, if yo
 
 > **Note**: The following sections use Apache as an example. Other web server installations have similar mechanisms. Consult your server’s documentation for details about performing similar configurations.
 
-The following sections use Apache as an example. Other web server installations have similar mechanisms. Consult your server’s documentation for details about performing similar configurations.
-
 To host a documentation archive on your website, do the following:
 
 1. Copy the documentation archive to the directory that your web server uses to serve files. In this example, the documentation archive is `SlothCreator.doccarchive`.
@@ -112,4 +108,4 @@ After configuring your web server to host a documentation archive, keep it up to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/distributing-documentation-to-other-developers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/distributing-documentation-to-other-developers)*

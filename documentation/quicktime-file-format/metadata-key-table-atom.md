@@ -1,6 +1,6 @@
 # Metadata key table atom ('keys')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that contains a table of keys and mappings to payload data in the corresponding timed metadata media samples.
@@ -16,8 +16,6 @@ If the metadata key table atom does not contain a key for which a client is sear
 If the metadata key table atom does contain a particular key, this does not guarantee that timed metadata media samples containing a value for the key were written. So, clients finding a key in the metadata key table atom may still need to look through the track’s timed metadata media samples for values to determine if the track has the particular metadata.
 
 > **Note**: Having the ability for the metadata key table atom to contain keys that are not associated with any instances of timed metadata media samples allows a metadata sample description to be populated with keys that might be discovered (say during a capture process) and then samples to be written with a binding only for the keys found. If a key is never used, there’s no requirement that the timed metadata sample description be rewritten to exclude the key that isn’t needed.
-
-Having the ability for the metadata key table atom to contain keys that are not associated with any instances of timed metadata media samples allows a metadata sample description to be populated with keys that might be discovered (say during a capture process) and then samples to be written with a binding only for the keys found. If a key is never used, there’s no requirement that the timed metadata sample description be rewritten to exclude the key that isn’t needed.
 
 If it is possible to remove unused entries and rewrite the metadata sample description efficiently, this is preferred.
 

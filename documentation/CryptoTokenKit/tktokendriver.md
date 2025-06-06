@@ -1,6 +1,6 @@
 # TKTokenDriver
 
-**Framework**: CryptoTokenKit  
+**Framework**: Cryptotokenkit  
 **Kind**: class
 
 A base class for building token drivers.
@@ -27,8 +27,6 @@ When using the [`TKTokenDriver`](tktokendriver.md) class, implement the [`TKToke
 An implementation can also access its associated token configuration using the [`TKToken.Configuration`](tktoken/configuration-swift.class.md) property.
 
 > **Note**:  When working with smart card tokens, use or inherit from the [`TKSmartCardTokenDriver`](tksmartcardtokendriver.md) subclass instead.
-
- When working with smart card tokens, use or inherit from the [`TKSmartCardTokenDriver`](tksmartcardtokendriver.md) subclass instead.
 
 ## Topics
 
@@ -68,4 +66,4 @@ An implementation can also access its associated token configuration using the [
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cryptotokenkit/tktokendriver)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CryptoTokenKit/tktokendriver)*

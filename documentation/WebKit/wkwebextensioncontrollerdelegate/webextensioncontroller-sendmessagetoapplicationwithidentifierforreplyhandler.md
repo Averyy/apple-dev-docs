@@ -27,8 +27,6 @@ If not implemented, the default behavior is to pass the message to the app exten
 
 > **Note**: The reply message must be JSON-serializable according to doc://com.apple.documentation/documentation/foundation/foundation/jsonserialization.
 
-The reply message must be JSON-serializable according to doc://com.apple.documentation/documentation/foundation/foundation/jsonserialization.
-
 ## Parameters
 
 - `controller`: The web extension controller that is managing the extension.

@@ -12,8 +12,6 @@ After you configure your app to process SiriKit intents, add code — to your ap
 
 > **Note**: watchOS doesn’t support all intent types. For example, a watchOS app can’t start a video call or handle intents in the CarPlay domain. Check an intent’s availability information to determine whether you can use it on watchOS.
 
-watchOS doesn’t support all intent types. For example, a watchOS app can’t start a video call or handle intents in the CarPlay domain. Check an intent’s availability information to determine whether you can use it on watchOS.
-
 ##### Add the Siri Capability to Your Target
 
 Follow the steps in [`Add a capability`](adding-capabilities-to-your-app#Add-a-capability.md) to add the capability to your app’s target, making sure you select the Siri capability from Xcode’s Capabilities library. For watchOS apps with separate WatchKit extensions, you must add the capability to the WatchKit Extension target. The capability isn’t available for macOS.
@@ -46,4 +44,4 @@ In the same way you configure an Intents extension, you must specify the types o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-siri-support)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-siri-support)*

@@ -1,6 +1,6 @@
 # fetchContents(for:version:request:completionHandler:)
 
-**Framework**: File Provider  
+**Framework**: Fileprovider  
 **Kind**: method  
 **Required**: Yes
 
@@ -31,8 +31,6 @@ An item that tracks your extension’s progress. The system automatically calls 
 The system initially learns about available items through enumerations; however, the enumeration only provides the item’s metadata. When the user accesses the item, the system needs to download the full contents from your remote store. After you call the completion handler, the system takes complete control over the local copy.
 
 > **Note**:  The URL you pass to the completion handler must be on the same volume as the URL returned by the file provider manager’s  [`temporaryDirectoryURL()`](nsfileprovidermanager/temporarydirectoryurl().md) method, so that the system can clone it to provide the content for the dataless item.
-
- The URL you pass to the completion handler must be on the same volume as the URL returned by the file provider manager’s  [`temporaryDirectoryURL()`](nsfileprovidermanager/temporarydirectoryurl().md) method, so that the system can clone it to provide the content for the dataless item.
 
 If the `requestedVersion` parameter is not `nil`, you must return the specified version of the item, or return an error. If the parameter is `nil`, return a version that is the same or newer than the most recent version enumerated to the system. In either case, the [`contentVersion`](nsfileprovideritemversion/contentversion.md) of the [`NSFileProviderItem`](nsfileprovideritem-swift.typealias.md)  passed to the completion handler must match the version you return.
 

@@ -1,6 +1,6 @@
 # Declaring complications for your app
 
-**Framework**: ClockKit
+**Framework**: Clockkit
 
 Define the complications that your app supports.
 
@@ -75,8 +75,6 @@ Use [`init(identifier:displayName:supportedFamilies:userInfo:)`](clkcomplication
 
 > ⚠️ **Warning**:  Because the system can pass complications as part of a shared watch face, only place data in the user info dictionary that other instances of your app can use. For example, when referring to data, avoid using identifiers that can change between users—like an index into the user’s favorites list. Instead use items that remain constant across all copies of the app, like unique string identifiers.
 
- Because the system can pass complications as part of a shared watch face, only place data in the user info dictionary that other instances of your app can use. For example, when referring to data, avoid using identifiers that can change between users—like an index into the user’s favorites list. Instead use items that remain constant across all copies of the app, like unique string identifiers.
-
 When the user taps your complication, ClockKit includes the content of the `userInfo` parameter in the dictionary that passes to the extension delegate’s [`handleUserActivity(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handleUserActivity(_:)) method. You can also use this data to navigate to a particular part of your app.
 
 ##### Dynamically Define Descriptors
@@ -141,8 +139,6 @@ ClockKit then calls your [`getComplicationDescriptors(handler:)`](clkcomplicatio
 
 > **Note**:  If your data source removes a complication that’s already present on a watch face, ClockKit continues to display and request new timeline entries for that complication. However, the user won’t be able to add the complication to new watch faces.
 
- If your data source removes a complication that’s already present on a watch face, ClockKit continues to display and request new timeline entries for that complication. However, the user won’t be able to add the complication to new watch faces.
-
 ##### Run on Earlier Versions of Watchos
 
 In watchOS 6 and earlier, you statically define the supported complication families in the WatchKit extension’s General tab under the Complication and Configuration settings.
@@ -177,4 +173,4 @@ In watchOS 7 and later, if you implement [`getComplicationDescriptors(handler:)`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/declaring-complications-for-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/declaring-complications-for-your-app)*

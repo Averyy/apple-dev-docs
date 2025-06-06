@@ -1,6 +1,6 @@
 # PDF Widgets
 
-**Framework**: PDFKit
+**Framework**: Pdfkit
 
 Demonstrates adding widgets—interactive form elements—to a PDF document.
 
@@ -81,8 +81,6 @@ The `textFieldMultiline` text widget annotation sets one extra property: `isMult
 
 > **Note**: The strings used for both `fieldName` and `buttonWidgetStateString` are arbitrary; what matters is that `fieldName` is the same for each button, and the `buttonWidgetStateString` strings for each button are unique to that grouping.
 
-The strings used for both `fieldName` and `buttonWidgetStateString` are arbitrary; what matters is that `fieldName` is the same for each button, and the `buttonWidgetStateString` strings for each button are unique to that grouping.
-
  The `resetButton` button widget annotation sets one extra property: [`PDFActionResetForm`](PDFActionResetForm.md). With this property set, the given action is performed when the user clicks (or taps) this button. The `PDFActionResetForm` action is special in that it clears all widgets associated with it. `PDFActionResetForm` takes an array of strings that represent widget field names. The default behavior is to clear all fields included in that array. This behavior can be changed to clear all widgets not included in the array, by setting the `fieldsIncludedAreCleared` property to false. Because the behavior to clear all widgets isn’t included in the list, and no field names were set, this action clears all widgets in the document.
 
 ## See Also
@@ -99,4 +97,4 @@ The strings used for both `fieldName` and `buttonWidgetStateString` are arbitrar
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/pdfkit/pdf-widgets)*
+*[View on Apple Developer](https://developer.apple.com/documentation/PDFKit/pdf-widgets)*

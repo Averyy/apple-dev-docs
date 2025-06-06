@@ -1,6 +1,6 @@
 # isPersonalVoice
 
-**Framework**: AVFAudio  
+**Framework**: Avfaudio  
 **Kind**: property
 
 The trait that indicates a voice is a personal voice.
@@ -25,8 +25,6 @@ static var isPersonalVoice: AVSpeechSynthesisVoice.Traits { get }
 A user generates and owns a personal voice.
 
 > **Note**:  The system only makes personal voices available when [`personalVoiceAuthorizationStatus`](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.type.property.md) is [`AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.authorized`](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/authorized.md).
-
- The system only makes personal voices available when [`personalVoiceAuthorizationStatus`](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.type.property.md) is [`AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus.authorized`](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum/authorized.md).
 
 ## See Also
 

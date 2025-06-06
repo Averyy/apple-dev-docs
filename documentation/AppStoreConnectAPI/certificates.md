@@ -1,6 +1,6 @@
 # Certificates
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Create, download, and revoke signing certificates for app development and distribution.
 
@@ -9,8 +9,6 @@ Create, download, and revoke signing certificates for app development and distri
 The `certificates` resource represents the digital certificates you use to sign your iOS or Mac apps for development and distribution. You can create new certificates, revoke existing certificates, and download certificates.
 
 > **Note**:  You can only create Developer ID certificates for macOS through the Apple Developer website or Xcode. For more information, see [`Security`](https://developer.apple.comhttps://developer.apple.com/developer-id/).
-
- You can only create Developer ID certificates for macOS through the Apple Developer website or Xcode. For more information, see [`Security`](https://developer.apple.comhttps://developer.apple.com/developer-id/).
 
 ## Topics
 
@@ -58,4 +56,4 @@ The `certificates` resource represents the digital certificates you use to sign 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/certificates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/certificates)*

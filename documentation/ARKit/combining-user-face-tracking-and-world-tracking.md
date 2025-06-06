@@ -1,6 +1,6 @@
 # Combining user face-tracking and world tracking
 
-**Framework**: ARKit
+**Framework**: Arkit
 
 Track the user’s face in an app that displays an AR experience with the rear camera.
 
@@ -183,8 +183,6 @@ When the app sets `headPreview` to `nil`, it creates another robot head preview,
 
 > **Note**: For more detail about placing virtual content in the real world, see [`Placing objects and handling 3D interaction`](placing-objects-and-handling-3d-interaction.md).
 
-For more detail about placing virtual content in the real world, see [`Placing objects and handling 3D interaction`](placing-objects-and-handling-3d-interaction.md).
-
 ## See Also
 
 - [Tracking and visualizing faces](tracking-and-visualizing-faces.md)
@@ -195,4 +193,4 @@ For more detail about placing virtual content in the real world, see [`Placing o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/arkit/combining-user-face-tracking-and-world-tracking)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/combining-user-face-tracking-and-world-tracking)*

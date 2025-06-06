@@ -1,6 +1,6 @@
 # 5G Network Slicing Traffic Category
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 The key that defines the traffic category entitlement to enable Cellular Network Slicing.
@@ -26,8 +26,6 @@ Also set one of the following properties, depending on your app’s networking i
 If your app uses sockets, set this entitlement to `defaultslice-1`. With sockets, all your app traffic uses a slice defined by the carrier to accept all traffic categories. You should still set the [`5G Network Slicing App Category`](entitlements/com.apple.developer.networking.slicing.appcategory.md) entitlement.
 
 > **Note**:  Cellular Network Slicing is only available on supported carriers. Check with individual carriers for availability.
-
- Cellular Network Slicing is only available on supported carriers. Check with individual carriers for availability.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # split(separator:maxSplits:omittingEmptySubsequences:)
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: method
 
 Returns the longest possible subsequences of the collection, in order, around elements equal to the given element.
@@ -51,8 +51,6 @@ print(line.split(separator: " ", omittingEmptySubsequences: false))
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

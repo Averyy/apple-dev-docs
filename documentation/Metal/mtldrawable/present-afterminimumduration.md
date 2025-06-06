@@ -26,8 +26,6 @@ When a command queue schedules a command buffer for execution, it tracks whether
 
 > **Note**:  To avoid presenting a drawable before any work is scheduled, or to avoid holding on to a drawable longer than necessary, call a command buffer’s [`present(_:afterMinimumDuration:)`](mtlcommandbuffer/present(_:afterminimumduration:).md) method instead. The [`present(_:afterMinimumDuration:)`](mtlcommandbuffer/present(_:afterminimumduration:).md) method is a convenience method that calls the given drawable’s [`present(afterMinimumDuration:)`](mtldrawable/present(afterminimumduration:).md) method after the command queue schedules that command buffer for execution.
 
- To avoid presenting a drawable before any work is scheduled, or to avoid holding on to a drawable longer than necessary, call a command buffer’s [`present(_:afterMinimumDuration:)`](mtlcommandbuffer/present(_:afterminimumduration:).md) method instead. The [`present(_:afterMinimumDuration:)`](mtlcommandbuffer/present(_:afterminimumduration:).md) method is a convenience method that calls the given drawable’s [`present(afterMinimumDuration:)`](mtldrawable/present(afterminimumduration:).md) method after the command queue schedules that command buffer for execution.
-
 ## Parameters
 
 - `duration`: The previous drawable’s minimum display time, in seconds.

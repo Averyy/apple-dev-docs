@@ -28,8 +28,6 @@ If you attempt to set the scheme to an invalid scheme string, this class throws 
 
 > **Note**:  The term “protocol” is also sometimes used when talking about network-based URL schemes. However, not all URL schemes are networking protocols—`data://` URLs, for example.
 
- The term “protocol” is also sometimes used when talking about network-based URL schemes. However, not all URL schemes are networking protocols—`data://` URLs, for example.
-
 ## See Also
 
 - [var fragment: String?](nsurlcomponents/fragment.md)

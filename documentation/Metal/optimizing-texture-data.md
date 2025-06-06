@@ -12,8 +12,6 @@ Before optimizing texture data, carefully consider the storage modes and usage o
 
 > **Note**:  Metal may not be able to optimize some textures for specific hardware and ignores optimization API calls for those textures.
 
- Metal may not be able to optimize some textures for specific hardware and ignores optimization API calls for those textures.
-
 ##### Optimize Texture Data for Gpu Access
 
 By default, Metal attempts to optimize texture data for GPU access if it meets any of these conditions:
@@ -78,4 +76,4 @@ Finally, create a texture from the texture descriptor.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/optimizing-texture-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/optimizing-texture-data)*

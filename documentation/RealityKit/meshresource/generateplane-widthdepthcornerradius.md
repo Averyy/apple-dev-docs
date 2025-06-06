@@ -1,6 +1,6 @@
 # generatePlane(width:depth:cornerRadius:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Creates a new rectangle mesh with the specified dimensions in the entity’s xz-plane.
@@ -28,8 +28,6 @@ The rectangle mesh.
 The rectangle is centered at the entity’s origin and aligned with its x and y axes. The surface normal points along the y-axis. The depth along the y-axis is 0.
 
 > **Note**: The xz-plane is a plane that aligns with the x and z axes.
-
-The xz-plane is a plane that aligns with the x and z axes.
 
 ## Parameters
 

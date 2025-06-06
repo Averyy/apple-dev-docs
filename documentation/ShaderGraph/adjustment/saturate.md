@@ -1,6 +1,6 @@
 # Saturate
 
-**Framework**: ShaderGraph  
+**Framework**: Shadergraph  
 **Kind**: subscript
 
 Adjusts the saturation of a color.
@@ -14,8 +14,6 @@ Adjusts the saturation of a color.
 The Saturate node performs a linear interpolation between the incoming color value and the luminance of the incoming color value. Setting the value of the `Amount` parameter to `0` adjusts the output to a grayscale of the input equal to the value that the [`Luminance`](adjustment/luminance.md) would output.
 
 > **Note**: The effect of this node isn’t equivalent to adjusting saturation with the [`HSV Adjust`](adjustment/hsv-adjust.md) node. The Saturate node takes into account a colorspace when processing its modifications.
-
-The effect of this node isn’t equivalent to adjusting saturation with the [`HSV Adjust`](adjustment/hsv-adjust.md) node. The Saturate node takes into account a colorspace when processing its modifications.
 
 Below is an example of a simple node graph that uses the Saturate node to modify the saturation of an image.
 

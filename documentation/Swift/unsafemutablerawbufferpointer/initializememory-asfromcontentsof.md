@@ -32,8 +32,6 @@ This method initializes the buffer with the contents of `source` until `source` 
 
 > **Note**: The memory regions referenced by `source` and this buffer must not overlap.
 
-The memory regions referenced by `source` and this buffer must not overlap.
-
 ## Parameters
 
 - `type`: The type of element to which this buffer’s memory will be bound.

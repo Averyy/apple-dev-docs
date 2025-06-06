@@ -31,8 +31,6 @@ You can distribute a bundle of passes the same way you distribute a single pass.
 
 > **Note**:  You can have up to 10 passes or 150 MB for a bundle of passes.
 
- You can have up to 10 passes or 150 MB for a bundle of passes.
-
 ## See Also
 
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
@@ -45,4 +43,4 @@ You can distribute a bundle of passes the same way you distribute a single pass.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/distributing-and-updating-a-pass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/distributing-and-updating-a-pass)*

@@ -37,11 +37,7 @@ Distributed notifications are delivered via a task’s run loop. A task must be 
 
 > ❗ **Important**:  `NSDistributedNotificationCenter` does not implement a secure communications protocol. When using distributed notifications, your app should treat any data passed in the notification as untrusted. See [`Security Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976) for general guidance on secure coding practices.
 
- `NSDistributedNotificationCenter` does not implement a secure communications protocol. When using distributed notifications, your app should treat any data passed in the notification as untrusted. See [`Security Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976) for general guidance on secure coding practices.
-
 > **Note**:  `NSDistributedNotificationCenter` objects should not be used to send notifications between threads within the same task. Use [`Distributed Objects Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i) or the [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) method [`performSelector(onMainThread:with:waitUntilDone:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/performSelector(onMainThread:with:waitUntilDone:)), instead. You can also setup an [`Port`](port.md) object to receive and distribute messages from other threads.
-
- `NSDistributedNotificationCenter` objects should not be used to send notifications between threads within the same task. Use [`Distributed Objects Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i) or the [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) method [`performSelector(onMainThread:with:waitUntilDone:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/performSelector(onMainThread:with:waitUntilDone:)), instead. You can also setup an [`Port`](port.md) object to receive and distribute messages from other threads.
 
 ## Topics
 
@@ -93,4 +89,4 @@ Distributed notifications are delivered via a task’s run loop. A task must be 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/distributednotificationcenter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/distributednotificationcenter)*

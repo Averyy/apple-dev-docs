@@ -1,6 +1,6 @@
 # CPAssistantCellActionType.playMedia
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: case
 
 Provides an action that uses Siri to prompt the user for media playback.
@@ -19,8 +19,6 @@ case playMedia
 #### Discussion
 
 > **Note**:  This action is only available in audio apps that include an Intents Extension capable of handling doc://com.apple.documentation/documentation/sirikit/inplaymediaintent. For more information, see [`Creating an Intents App Extension`](https://developer.apple.com/documentation/SiriKit/creating-an-intents-app-extension).
-
- This action is only available in audio apps that include an Intents Extension capable of handling doc://com.apple.documentation/documentation/sirikit/inplaymediaintent. For more information, see [`Creating an Intents App Extension`](https://developer.apple.com/documentation/SiriKit/creating-an-intents-app-extension).
 
 The system provides the user’s response to your app’s Intents Extension. Your app must respond by searching for the requested media and, if it’s available, start its playback and display a [`CPNowPlayingTemplate`](cpnowplayingtemplate.md).
 

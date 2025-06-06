@@ -67,8 +67,6 @@ If the dropped count is non-zero, increase the packet recording buffer size by p
 
 > **Note**:  For more information about this and other `tcpdump` options, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
 
- For more information about this and other `tcpdump` options, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
-
 ##### Use Promiscuous Mode Effectively
 
 On modern systems it’s generally best to run your packet trace tool on one of the machines involved in the communication you’re investigating. However, in some cases that’s not practical, so you have to run your tool on a different machine entirely. When doing so, be aware of these challenges:
@@ -98,4 +96,4 @@ The [`Wireshark wiki`](https://developer.apple.comhttps://wiki.wireshark.org/) h
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/network/troubleshooting-packet-traces)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Network/troubleshooting-packet-traces)*

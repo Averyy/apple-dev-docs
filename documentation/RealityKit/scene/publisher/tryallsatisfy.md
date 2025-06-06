@@ -1,6 +1,6 @@
 # tryAllSatisfy(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Publishes a single Boolean value that indicates whether all received elements pass a given error-throwing predicate.
@@ -50,8 +50,6 @@ numbers.publisher
 With operators similar to [`reduce(_:_:)`](scene/publisher/reduce(_:_:).md), this publisher produces at most one value.
 
 > **Note**: Upon receiving any request greater than zero, this publisher requests unlimited elements from the upstream publisher.
-
-Upon receiving any request greater than zero, this publisher requests unlimited elements from the upstream publisher.
 
 ## Parameters
 

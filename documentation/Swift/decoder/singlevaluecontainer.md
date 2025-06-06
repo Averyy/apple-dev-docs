@@ -29,8 +29,6 @@ A single value container view into this decoder.
 
 > **Note**: `DecodingError.typeMismatch` if the encountered stored value is not a single value container.
 
-`DecodingError.typeMismatch` if the encountered stored value is not a single value container.
-
 
 ---
 

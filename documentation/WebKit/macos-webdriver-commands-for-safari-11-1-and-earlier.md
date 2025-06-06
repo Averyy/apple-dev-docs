@@ -12,8 +12,6 @@ All URI templates listed here work in Safari on macOS 10.11 and later.
 
 > ❗ **Important**:  WebDriver for Safari supports file upload with the “Element Send Keys “ command. Uploaded files must be world-readable and must respect the `multiple` and `accept` attributes.
 
- WebDriver for Safari supports file upload with the “Element Send Keys “ command. Uploaded files must be world-readable and must respect the `multiple` and `accept` attributes.
-
 | Method | URI template | Supported | Safari Technology Preview release, Safari version |
 | --- | --- | --- | --- |
 | GET | [`/status`](https://developer.apple.comhttps://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#status) | See note below |  |
@@ -101,8 +99,6 @@ All URI templates listed here work in Safari on macOS 10.11 and later.
 
 > **Note**:  These endpoints are not supported because they are implemented by intermediary nodes only.
 
- These endpoints are not supported because they are implemented by intermediary nodes only.
-
 ## See Also
 
 - [macOS WebDriver Commands for Safari 12 and later](macos-webdriver-commands-for-safari-12-and-later.md)
@@ -115,4 +111,4 @@ All URI templates listed here work in Safari on macOS 10.11 and later.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/webkit/macos-webdriver-commands-for-safari-11-1-and-earlier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/macos-webdriver-commands-for-safari-11-1-and-earlier)*

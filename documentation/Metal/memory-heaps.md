@@ -12,8 +12,6 @@ Create a heap by calling an [`MTLDevice`](mtldevice.md) instance’s [`makeHeap(
 
 > **Note**:  Metal only synchronizes resources that you create from a Metal heap and that have the [`hazardTrackingMode`](mtlheap/hazardtrackingmode.md) property set to [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md).
 
- Metal only synchronizes resources that you create from a Metal heap and that have the [`hazardTrackingMode`](mtlheap/hazardtrackingmode.md) property set to [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md).
-
 ## Topics
 
 ### Resource Memory Allocation and Management
@@ -48,4 +46,4 @@ Create a heap by calling an [`MTLDevice`](mtldevice.md) instance’s [`makeHeap(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/memory-heaps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/memory-heaps)*

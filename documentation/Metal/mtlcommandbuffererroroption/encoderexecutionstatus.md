@@ -25,8 +25,6 @@ You can set this option to a command buffer descriptor’s [`errorOptions`](mtlc
 
 > **Note**:  Enabling this option can slightly reduce your app’s CPU runtime performance.
 
- Enabling this option can slightly reduce your app’s CPU runtime performance.
-
 
 ---
 

@@ -29,8 +29,6 @@ To begin using the framework, you create a request for the type of analysis you 
 
 > **Note**:  Starting in iOS 18.0, the Vision framework provides a new Swift-only API. See [`Original Objective-C and Swift API`](original-objective-c-and-swift-api.md) to view the original API.
 
- Starting in iOS 18.0, the Vision framework provides a new Swift-only API. See [`Original Objective-C and Swift API`](original-objective-c-and-swift-api.md) to view the original API.
-
 ## Topics
 
 ### Still-image analysis

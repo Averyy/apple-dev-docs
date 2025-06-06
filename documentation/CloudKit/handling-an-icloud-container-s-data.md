@@ -1,6 +1,6 @@
 # Handling an iCloud Container’s Data
 
-**Framework**: CloudKit
+**Framework**: Cloudkit
 
 Inspect and manage your app’s iCloud container data using the CloudKit Database app.
 
@@ -27,8 +27,6 @@ To search for records of a record type:
 ![A screenshot showing a container’s records on the data management page of the CloudKit Database app.](https://docs-assets.developer.apple.com/published/3f11d7dc8b0410179939c7dd119ca714/media-3699103%402x.png)
 
 > **Note**:  If you get the error, `“Field recordName is not marked queryable,”` see the [`Enable querying for your record type`](inspecting-and-editing-an-icloud-container-s-schema#Enable-querying-for-your-record-type.md) section of [`Inspecting and Editing an iCloud Container’s Schema`](inspecting-and-editing-an-icloud-container-s-schema.md).
-
- If you get the error, `“Field recordName is not marked queryable,”` see the [`Enable querying for your record type`](inspecting-and-editing-an-icloud-container-s-schema#Enable-querying-for-your-record-type.md) section of [`Inspecting and Editing an iCloud Container’s Schema`](inspecting-and-editing-an-icloud-container-s-schema.md).
 
 ##### Create a Record
 
@@ -74,4 +72,4 @@ To modify or delete an existing record:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/handling-an-icloud-container-s-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/handling-an-icloud-container-s-data)*

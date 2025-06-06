@@ -46,8 +46,6 @@ The modifier has no effect on a `Text` view that contains only one line of text,
 
 > **Note**: You can use this modifier to control the alignment of a `Text` view that you create with the `Text/init(_:style:)` initializer to display localized dates and times, including when the view uses only a single line, but only when that view appears in a widget.
 
-You can use this modifier to control the alignment of a `Text` view that you create with the `Text/init(_:style:)` initializer to display localized dates and times, including when the view uses only a single line, but only when that view appears in a widget.
-
 The modifier also affects the content alignment of other text container types, like `TextEditor` and `TextField`. In those cases, the modifier sets the alignment even when the view contains only a single line because view’s width isn’t dictated by the width of the text it contains.
 
 The modifier operates by setting the `EnvironmentValues/multilineTextAlignment` value in the environment, so it affects all the text containers in the modified view hierarchy. For example, you can apply the modifier to a `VStack` to configure all the text views inside the stack.

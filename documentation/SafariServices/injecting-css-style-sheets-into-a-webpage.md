@@ -1,6 +1,6 @@
 # Injecting CSS style sheets into a webpage
 
-**Framework**: Safari Services
+**Framework**: Safariservices
 
 Add to or override styles by injecting CSS style sheets into webpages.
 
@@ -19,8 +19,6 @@ After specifying website access, add the style sheet to your Safari app extensio
 3. For each CSS file, add a dictionary to this array. Each dictionary must have a `Style Sheet` key with a value that specifies the path (relative to the Resources directory of the bundle) to the style sheet to include.
 
 > **Note**:  By default, the system injects a style sheet when the extension has permission to access the webpage. However, you can specify additional dictionary keys to provide more fine-grained control over whether to inject that style sheet into the webpage. For more information, see Access and permissions.
-
- By default, the system injects a style sheet when the extension has permission to access the webpage. However, you can specify additional dictionary keys to provide more fine-grained control over whether to inject that style sheet into the webpage. For more information, see Access and permissions.
 
 You can have more than one injected style sheet. Style sheets process in the order in which you specify them.
 
@@ -50,4 +48,4 @@ Your style sheet can reference resources in your app extension’s bundle. All r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/injecting-css-style-sheets-into-a-webpage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/injecting-css-style-sheets-into-a-webpage)*

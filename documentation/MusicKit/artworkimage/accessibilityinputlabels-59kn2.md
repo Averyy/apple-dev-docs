@@ -1,6 +1,6 @@
 # accessibilityInputLabels(_:)
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Sets alternate input labels with which users identify a view.
@@ -26,8 +26,6 @@ func accessibilityInputLabels<S>(_ inputLabels: [S]) -> ModifiedContent<Self, Ac
 Provide labels in descending order of importance. Voice Control and Full Keyboard Access use the input labels.
 
 > **Note**: If you don’t specify any input labels, the user can still refer to the view using the accessibility label that you add with the `accessibilityLabel()` modifier.
-
-If you don’t specify any input labels, the user can still refer to the view using the accessibility label that you add with the `accessibilityLabel()` modifier.
 
 
 ---

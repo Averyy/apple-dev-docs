@@ -14,8 +14,6 @@ As a best practice, try to keep your data synchronization points to a minimum. E
 
 > **Note**:  Managed resources are the default memory storage type for Intel and external GPU devices in Metal. For more information about macOS resource storage modes and how to select them, see [`Choosing a Resource Storage Mode for Intel and AMD GPUs`](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md).
 
- Managed resources are the default memory storage type for Intel and external GPU devices in Metal. For more information about macOS resource storage modes and how to select them, see [`Choosing a Resource Storage Mode for Intel and AMD GPUs`](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md).
-
 ##### Synchronize a Managed Buffer
 
 First, create an [`MTLBuffer`](mtlbuffer.md) with the option [`MTLStorageMode.managed`](mtlstoragemode/managed.md), which tells Metal to reserve managed memory space for the resource:
@@ -52,4 +50,4 @@ After encoding a GPU modification, encode a [`synchronize(resource:)`](mtlblitco
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/synchronizing-a-managed-resource-in-macos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/synchronizing-a-managed-resource-in-macos)*

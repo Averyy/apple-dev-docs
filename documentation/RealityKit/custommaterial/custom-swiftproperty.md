@@ -1,6 +1,6 @@
 # custom
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: property
 
 User-defined properties for the material’s shader functions.
@@ -22,8 +22,6 @@ var custom: CustomMaterial.Custom { get set }
 Use a [`CustomMaterial.Custom`](custommaterial/custom-swift.struct.md) object to send custom data to your shader functions. A custom object can hold a texture or a vector value, or both. Both the texture and vector value are available in your shader functions.
 
 > **Note**: Unlike other [`CustomMaterial`](custommaterial.md) properties, you don’t need to create a [`CustomMaterial.Custom`](custommaterial/custom-swift.struct.md) object for your material. All [`CustomMaterial`](custommaterial.md) objects have one by default; you just need to set the [`value`](custommaterial/custom-swift.struct/value.md) property, [`texture`](custommaterial/custom-swift.struct/texture.md) property, or both.
-
-Unlike other [`CustomMaterial`](custommaterial.md) properties, you don’t need to create a [`CustomMaterial.Custom`](custommaterial/custom-swift.struct.md) object for your material. All [`CustomMaterial`](custommaterial.md) objects have one by default; you just need to set the [`value`](custommaterial/custom-swift.struct/value.md) property, [`texture`](custommaterial/custom-swift.struct/texture.md) property, or both.
 
 The following code demonstrates how to use the custom property to pass a vector to your shader functions:
 

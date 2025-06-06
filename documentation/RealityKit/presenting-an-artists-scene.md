@@ -1,6 +1,6 @@
 # Presenting an artist’s scene
 
-**Framework**: RealityKit
+**Framework**: Realitykit
 
 Display a scene from Reality Composer Pro in visionOS.
 
@@ -11,8 +11,6 @@ Display a scene from Reality Composer Pro in visionOS.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10186: [`Optimize your 3D assets for spatial computing`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10186/).
-
-This sample code project is associated with WWDC24 session 10186: [`Optimize your 3D assets for spatial computing`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10186/).
 
 ## See Also
 
@@ -34,4 +32,4 @@ This sample code project is associated with WWDC24 session 10186: [`Optimize you
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/presenting-an-artists-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/presenting-an-artists-scene)*

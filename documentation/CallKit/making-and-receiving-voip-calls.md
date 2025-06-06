@@ -1,6 +1,6 @@
 # Making and receiving VoIP calls
 
-**Framework**: CallKit
+**Framework**: Callkit
 
 Initiate outgoing calls with VoIP and configure your app to receive incoming calls.
 
@@ -55,8 +55,6 @@ To configure your app to receive incoming calls, first create a [`CXProvider`](c
 
 > **Note**:  For more information about VoIP push notifications and PushKit, see [`Supporting PushKit Notifications in Your App`](https://developer.apple.com/documentation/PushKit/supporting-pushkit-notifications-in-your-app).
 
- For more information about VoIP push notifications and PushKit, see [`Supporting PushKit Notifications in Your App`](https://developer.apple.com/documentation/PushKit/supporting-pushkit-notifications-in-your-app).
-
 Using the information from the external notification in the callback, the app creates a UUID and a [`CXCallUpdate`](cxcallupdate.md) object to uniquely identify the call and the caller. Then it passes them both to the provider using the [`reportNewIncomingCall(with:update:completion:)`](cxprovider/reportnewincomingcall(with:update:completion:).md) method to report the incoming call.
 
 ```swift
@@ -100,4 +98,4 @@ func provider(_ provider: CXProvider, perform action: CXAnswerCallAction) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/callkit/making-and-receiving-voip-calls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CallKit/making-and-receiving-voip-calls)*

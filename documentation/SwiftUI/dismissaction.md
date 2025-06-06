@@ -1,6 +1,6 @@
 # DismissAction
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: struct
 
 An action that dismisses a presentation.
@@ -89,8 +89,6 @@ The dismiss action has no effect on a view that isn’t currently presented. If 
 
 > **Note**: While the dismiss action can be used to a close window that you create with [`WindowGroup`](windowgroup.md) or [`Window`](window.md), prefer [`DismissWindowAction`](dismisswindowaction.md) for that use case instead.
 
-While the dismiss action can be used to a close window that you create with [`WindowGroup`](windowgroup.md) or [`Window`](window.md), prefer [`DismissWindowAction`](dismisswindowaction.md) for that use case instead.
-
 ## Topics
 
 ### Calling the action
@@ -114,4 +112,4 @@ While the dismiss action can be used to a close window that you create with [`Wi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/dismissaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/dismissaction)*

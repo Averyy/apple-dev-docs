@@ -28,15 +28,11 @@ The [`URLSessionStreamTask`](urlsessionstreamtask.md) class provides an interfac
 
 > **Note**:  See [`RFC 2817`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2817) and [`RFC 6455`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6455) for information about the `Upgrade:` header.
 
- See [`RFC 2817`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2817) and [`RFC 6455`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6455) for information about the `Upgrade:` header.
-
 A [`URLSessionStreamTask`](urlsessionstreamtask.md) object performs asynchronous reads and writes, which are enqueued and executed serially, calling a handler upon completion being on the session delegate queue. If the task is canceled, all enqueued reads and writes will call their completion handlers with an appropriate error.
 
 When working with APIs that accept [`Stream`](stream.md) objects, you can create [`InputStream`](inputstream.md) and [`OutputStream`](outputstream.md) objects from an [`URLSessionStreamTask`](urlsessionstreamtask.md) object by calling the [`captureStreams()`](urlsessionstreamtask/capturestreams().md) method.
 
 > **Note**:  watchOS supports [`URLSessionStreamTask`](urlsessionstreamtask.md) for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/Technotes/tn3135-low-level-networking-on-watchOS).
-
- watchOS supports [`URLSessionStreamTask`](urlsessionstreamtask.md) for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/Technotes/tn3135-low-level-networking-on-watchOS).
 
 ## Topics
 
@@ -90,4 +86,4 @@ When working with APIs that accept [`Stream`](stream.md) objects, you can create
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessionstreamtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessionstreamtask)*

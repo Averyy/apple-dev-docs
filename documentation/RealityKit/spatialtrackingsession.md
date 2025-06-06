@@ -1,6 +1,6 @@
 # SpatialTrackingSession
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: class
 
 An object that incorporates spatial tracking capabilities into your RealityKit apps.
@@ -72,8 +72,6 @@ To modify the configuration, run `SpatialTrackingSession` again with the new con
 
 > **Note**: RealityKit stops `SpatialTrackingSession` automatically when it goes out of scope and deinitializes.
 
-RealityKit stops `SpatialTrackingSession` automatically when it goes out of scope and deinitializes.
-
 ##### Other Methods for Incorporating Ar Content in Your Apps
 
 Although `SpatialTrackingSession` offers you an easy way to configure AR capabilities in your app, there are other options available.
@@ -138,4 +136,4 @@ You can set up an ARKit session manually and receive an anchor transform directl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/spatialtrackingsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/spatialtrackingsession)*

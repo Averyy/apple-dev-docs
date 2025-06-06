@@ -1,6 +1,6 @@
 # CPNowPlayingTemplate
 
-**Framework**: CarPlay  
+**Framework**: Carplay  
 **Kind**: class
 
 A shared system template that displays Now Playing information.
@@ -27,8 +27,6 @@ To display the Now Playing template, call your interface controller’s [`pushTe
 When CarPlay presents Now Playing information for your app, it uses the shared instance of this template.
 
 > **Note**:  `CPNowPlayingTemplate` is only available in apps with the audio entitlement.
-
- `CPNowPlayingTemplate` is only available in apps with the audio entitlement.
 
 ## Topics
 
@@ -94,4 +92,4 @@ When CarPlay presents Now Playing information for your app, it uses the shared i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpnowplayingtemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpnowplayingtemplate)*

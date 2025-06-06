@@ -1,6 +1,6 @@
 # AVCaptureBracketedStillImageSettings
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: class
 
 The abstract superclass for bracketed photo capture settings.
@@ -20,8 +20,6 @@ class AVCaptureBracketedStillImageSettings
 #### Overview
 
 > **Note**:  The `AVCaptureBracketedStillImageSettings` class must not be instantiated directly. You should create instances of the `AVCaptureManualExposureBracketedStillImageSettings` and `AVCaptureAutoExposureBracketedStillImageSettings` classes as appropriate.
-
- The `AVCaptureBracketedStillImageSettings` class must not be instantiated directly. You should create instances of the `AVCaptureManualExposureBracketedStillImageSettings` and `AVCaptureAutoExposureBracketedStillImageSettings` classes as appropriate.
 
 ## Relationships
 
@@ -48,4 +46,4 @@ class AVCaptureBracketedStillImageSettings
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avcapturebracketedstillimagesettings)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avcapturebracketedstillimagesettings)*

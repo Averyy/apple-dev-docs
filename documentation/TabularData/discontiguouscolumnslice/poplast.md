@@ -1,6 +1,6 @@
 # popLast()
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Removes and returns the last element of the collection.
@@ -29,8 +29,6 @@ The last element of the collection if the collection has one or more elements; o
 You can use `popLast()` to remove the last element of a collection that might be empty. The `removeLast()` method must be used only on a nonempty collection.
 
 > **Note**: O(1)
-
-O(1)
 
 ## See Also
 

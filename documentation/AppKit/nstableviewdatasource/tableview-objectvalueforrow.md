@@ -1,6 +1,6 @@
 # tableView(_:objectValueFor:row:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Called by the table view to return the data object associated with the specified row and column.
@@ -24,8 +24,6 @@ An item in the data source in the specified table column of the view.
 [`tableView(_:objectValueFor:row:)`](nstableviewdatasource/tableview(_:objectvaluefor:row:).md) is called each time the table cell needs to be redisplayed, so it must be efficient.
 
 > **Note**:  This method is mandatory unless your application is using Cocoa bindings for providing data to the table view.
-
- This method is mandatory unless your application is using Cocoa bindings for providing data to the table view.
 
 ## Parameters
 

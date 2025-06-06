@@ -1,6 +1,6 @@
 # Modify an In-App Purchase
 
-**Framework**: App Store Connect API  
+**Framework**: Appstoreconnectapi  
 **Kind**: httpRequest
 
 Update the reference name of a specific in-app purchase.
@@ -15,8 +15,6 @@ Update the reference name of a specific in-app purchase.
 #### Discussion
 
 > **Note**:  Changes that you make to product metadata in App Store Connect can take up to 1 hour to appear in the sandbox environment.
-
- Changes that you make to product metadata in App Store Connect can take up to 1 hour to appear in the sandbox environment.
 
 ## See Also
 

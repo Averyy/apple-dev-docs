@@ -1,6 +1,6 @@
 # Type
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: property
 
 A 32-bit integer that identifies the atom type.
@@ -10,8 +10,6 @@ A 32-bit integer that identifies the atom type.
 This field must be set to `'cdat'`.
 
 > **Note**: Apple reserves all atom types with lowercase letters and numbers.
-
-Apple reserves all atom types with lowercase letters and numbers.
 
 ## See Also
 

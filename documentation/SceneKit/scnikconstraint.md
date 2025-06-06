@@ -1,6 +1,6 @@
 # SCNIKConstraint
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: class
 
 A constraint that applies inverse kinematics to make a chain of nodes “reach” toward a target point.
@@ -33,8 +33,6 @@ class SCNIKConstraint
 5. To set the constrained nodes in motion, provide a target position for the constraint with its [`targetPosition`](scnikconstraint/targetposition.md) property. You can animate a change to this property
 
 > **Note**:  SceneKit’s physics and inverse kinematics simulations are separate. When SceneKit prepares to render a scene, it processes the physics simulation before applying constraints (including IK constraints). As a result, the effects of an IK constraint override the results of the physics simulation. To use physics with a node also affected by constraints, the node’s [`physicsBody`](scnnode/physicsbody.md) object must be a kinematic physics body.
-
- SceneKit’s physics and inverse kinematics simulations are separate. When SceneKit prepares to render a scene, it processes the physics simulation before applying constraints (including IK constraints). As a result, the effects of an IK constraint override the results of the physics simulation. To use physics with a node also affected by constraints, the node’s [`physicsBody`](scnnode/physicsbody.md) object must be a kinematic physics body.
 
 ## Topics
 
@@ -73,4 +71,4 @@ class SCNIKConstraint
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnikconstraint)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SceneKit/scnikconstraint)*

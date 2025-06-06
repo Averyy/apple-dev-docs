@@ -28,8 +28,6 @@ The first element of the collection if the collection is not empty; otherwise, `
 
 > **Note**: O(1)
 
-O(1)
-
 ## See Also
 
 - [func removeFirst() -> Self.Element](collection/removefirst.md)

@@ -1,6 +1,6 @@
 # Drawing content in a group session
 
-**Framework**: Group Activities
+**Framework**: Groupactivities
 
 Invite your friends to draw on a shared canvas while on a FaceTime call.
 
@@ -12,8 +12,6 @@ Invite your friends to draw on a shared canvas while on a FaceTime call.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10241: [`Share files with SharePlay`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10241), and WWDC21 session 10187: [`Build custom experiences with Group Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10187/).
-
-This sample code project is associated with WWDC23 session 10241: [`Share files with SharePlay`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10241), and WWDC21 session 10187: [`Build custom experiences with Group Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10187/).
 
 Group Activities allows you to build shared experiences across devices with SharePlay. Although its focus is on creating media experiences, you can design your own custom app experiences to share with multiple devices. The real-time interactions you unlock, and the instant reaction people who use your app get, can lead to some truly special moments.
 

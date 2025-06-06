@@ -1,6 +1,6 @@
 # Adding and editing persistent data in your app
 
-**Framework**: SwiftData
+**Framework**: Swiftdata
 
 Create a data entry form for collecting and changing data managed by SwiftData.
 
@@ -184,8 +184,6 @@ After saving the data, the Save button’s action closes the editor by calling [
 
 > **Note**: The `AnimalEditor` view retrieves the model context from the view’s environment by creating a reference to the context with `@Environment(\.modelContext) private var modelContext`. For more information, see [`modelContext`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext).
 
-The `AnimalEditor` view retrieves the model context from the view’s environment by creating a reference to the context with `@Environment(\.modelContext) private var modelContext`. For more information, see [`modelContext`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext).
-
 ##### Discard the Data Changes
 
 To discard changes that someone made, the editor provides a Cancel button in the toolbar:
@@ -222,4 +220,4 @@ When a person clicks the Cancel button, the editor discards any changes made to 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/adding-and-editing-persistent-data-in-your-app)*

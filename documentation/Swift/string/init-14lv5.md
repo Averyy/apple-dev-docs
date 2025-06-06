@@ -24,8 +24,6 @@ init(_ substring: Substring)
 
 > **Note**: O(), where  is the length of `substring`.
 
-O(), where  is the length of `substring`.
-
 ## Parameters
 
 - `substring`: A substring to convert to a standalone    instance.

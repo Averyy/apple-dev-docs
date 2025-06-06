@@ -24,8 +24,6 @@ mutating func removeFirst(_ k: Int)
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the specified number of elements.
 
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the specified number of elements.
-
 ## Parameters
 
 - `k`: The number of elements to remove.   must be greater than   or equal to zero, and must be less than or equal to the number of   elements in the collection.

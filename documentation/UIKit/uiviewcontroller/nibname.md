@@ -1,6 +1,6 @@
 # nibName
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The name of the view controller’s nib file, if one was specified.
@@ -29,8 +29,6 @@ If you use a nib file to store your view controller’s view, it is recommended 
 2. It looks for a nib file whose name matches the name of the view controller class. For example, if the class name is `MyViewController`, it looks for a `MyViewController.nib` file.
 
 > **Note**:  Nib names that include a platform-specific identifier such as `~iphone` or `~ipad` are loaded only on a device of the corresponding type. For example, a nib name of `MyViewController~ipad.nib` is loaded only on iPad. If your app supports both platform types, you must provide versions of your nib files for each platform.
-
- Nib names that include a platform-specific identifier such as `~iphone` or `~ipad` are loaded only on a device of the corresponding type. For example, a nib name of `MyViewController~ipad.nib` is loaded only on iPad. If your app supports both platform types, you must provide versions of your nib files for each platform.
 
 ## See Also
 

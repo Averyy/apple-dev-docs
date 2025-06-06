@@ -1,6 +1,6 @@
 # NSCoreDataCoreSpotlightDelegate
 
-**Framework**: Core Data  
+**Framework**: Coredata  
 **Kind**: class
 
 A set of methods that enable integration with Core Spotlight.
@@ -21,8 +21,6 @@ class NSCoreDataCoreSpotlightDelegate
 #### Overview
 
 > **Note**:  Core Spotlight integration is only available for persistent stores that have a store type of [`sqlite`](nspersistentstore/storetype/sqlite.md), and which use persistent history tracking. For more information, see [`Consuming relevant store changes`](consuming-relevant-store-changes.md).
-
- Core Spotlight integration is only available for persistent stores that have a store type of [`sqlite`](nspersistentstore/storetype/sqlite.md), and which use persistent history tracking. For more information, see [`Consuming relevant store changes`](consuming-relevant-store-changes.md).
 
 ## Topics
 
@@ -79,4 +77,4 @@ class NSCoreDataCoreSpotlightDelegate
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nscoredatacorespotlightdelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nscoredatacorespotlightdelegate)*

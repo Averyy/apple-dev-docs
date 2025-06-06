@@ -1,6 +1,6 @@
 # NSOpenGLView
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A view that displays OpenGL content in a view.
@@ -24,8 +24,6 @@ An `NSOpenGLView` object cannot have subviews. You can, however, divide a single
 When creating an `NSOpenGLView` object in Interface Builder, you use the inspector window to specify the pixel format attributes you want for the view. Only those attributes listed in the Interface Builder inspector are set when the view is instantiated.
 
 > **Note**:  In versions of the Xcode Tools that shipped prior to OS X v10.4, the Interface Builder inspector does not list any pixel format attributes for `NSOpenGLView`.
-
- In versions of the Xcode Tools that shipped prior to OS X v10.4, the Interface Builder inspector does not list any pixel format attributes for `NSOpenGLView`.
 
 ## Topics
 
@@ -101,4 +99,4 @@ When creating an `NSOpenGLView` object in Interface Builder, you use the inspect
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsopenglview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsopenglview)*

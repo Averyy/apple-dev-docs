@@ -1,6 +1,6 @@
 # Displaying overlays on a map
 
-**Framework**: MapKit
+**Framework**: Mapkit
 
 Add regions of layered content to a map view.
 
@@ -233,8 +233,6 @@ func createMultiPolylineRenderer(for multiPolygon: MKMultiPolygon) -> MKMultiPol
 
 > **Note**: To maximize rendering efficiency, developers need to group overlays using `MKMultiPolyline` or `MKMultiPolygon` whenever the visual style is the same. This is especially important when an app displays significant numbers of visually identical overlays.
 
-To maximize rendering efficiency, developers need to group overlays using `MKMultiPolyline` or `MKMultiPolygon` whenever the visual style is the same. This is especially important when an app displays significant numbers of visually identical overlays.
-
 ##### Create Visual Effects Using Blend Modes
 
  relate the content that draws in an overlay to the content that draws behind the overlay. This enables creating visual effects on the map by adding overlays with a specific Z-order and applying a blend mode on the different overlays. For example, the app highlights a park hosting an outdoor event by using blend modes to lighten the map areas outside the park and to amplify the colors within the park.
@@ -346,4 +344,4 @@ Because the app treats the overlay object as both an overlay and an annotation, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/displaying-overlays-on-a-map)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MapKit/displaying-overlays-on-a-map)*

@@ -1,6 +1,6 @@
 # toggleStyle(_:)
 
-**Framework**: Journaling Suggestions  
+**Framework**: Journalingsuggestions  
 **Kind**: method
 
 Sets the style for toggles in a view hierarchy.
@@ -91,8 +91,6 @@ The style that SwiftUI uses as the default depends on both the platform and the 
 | macOS |  |
 
 > **Note**: Like toggle style does for toggles, the `View/labelStyle(_:)` modifier sets the style for `Label` instances in the hierarchy. The example above demostrates the compact `LabelStyle/iconOnly` style, which is useful for button toggles in space-constrained contexts. Always include a descriptive title for better accessibility.
-
-Like toggle style does for toggles, the `View/labelStyle(_:)` modifier sets the style for `Label` instances in the hierarchy. The example above demostrates the compact `LabelStyle/iconOnly` style, which is useful for button toggles in space-constrained contexts. Always include a descriptive title for better accessibility.
 
 For more information about how SwiftUI chooses a default toggle style, see the `ToggleStyle/automatic` style.
 

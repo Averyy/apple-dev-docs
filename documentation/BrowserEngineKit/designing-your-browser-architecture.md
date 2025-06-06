@@ -1,6 +1,6 @@
 # Designing your browser architecture
 
-**Framework**: BrowserEngineKit
+**Framework**: Browserenginekit
 
 Isolate privileged access to operating system resources and private data from untrusted code.
 
@@ -15,8 +15,6 @@ Your app presents the browser GUI, handles input from the person using the brows
 Use other API as necessary to provide common app features, for example, store a person’s preferences with [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults).
 
 > **Note**:  A browser app has a restricted app sandbox that stops the app from accessing some APIs. Your app can’t get the [`advertisingIdentifier`](https://developer.apple.com/documentation/AdSupport/ASIdentifierManager/advertisingIdentifier), and can’t detect the presence of other apps using [`canOpenURL(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/canOpenURL(_:)).
-
- A browser app has a restricted app sandbox that stops the app from accessing some APIs. Your app can’t get the [`advertisingIdentifier`](https://developer.apple.com/documentation/AdSupport/ASIdentifierManager/advertisingIdentifier), and can’t detect the presence of other apps using [`canOpenURL(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/canOpenURL(_:)).
 
 If your browser engine uses custom text rendering and layout routines to display text on a web page, your browser app needs to adopt [`UITextInput`](https://developer.apple.com/documentation/UIKit/UITextInput) and `BETextInput` to integrate with standard text interactions like showing text selection and displaying the contextual menu.
 
@@ -48,4 +46,4 @@ The operating system maintains a low level for the maximum memory that the rende
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/designing-your-browser-architecture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/designing-your-browser-architecture)*

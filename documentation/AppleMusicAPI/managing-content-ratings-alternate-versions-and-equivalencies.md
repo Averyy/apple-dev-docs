@@ -1,6 +1,6 @@
 # Managing Content Ratings, Alternate Versions, and Equivalencies
 
-**Framework**: Apple Music API
+**Framework**: Applemusicapi
 
 Handle multiple and alternate versions of content.
 
@@ -32,8 +32,6 @@ GET https://api.music.apple.com/v1/catalog/us/albums?filter[equivalents]=1540031
 
 > **Note**:  When using the explicit restriction, this parameter replaces content with an explicit rating with the best available clean equivalent version. If no suitable replacement is available, the original content is not replaced.
 
- When using the explicit restriction, this parameter replaces content with an explicit rating with the best available clean equivalent version. If no suitable replacement is available, the original content is not replaced.
-
 ## See Also
 
 - [Generating Developer Tokens](generating-developer-tokens.md)
@@ -54,4 +52,4 @@ GET https://api.music.apple.com/v1/catalog/us/albums?filter[equivalents]=1540031
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/managing-content-ratings-alternate-versions-and-equivalencies)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/managing-content-ratings-alternate-versions-and-equivalencies)*

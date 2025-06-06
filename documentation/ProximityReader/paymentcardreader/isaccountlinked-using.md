@@ -1,6 +1,6 @@
 # isAccountLinked(using:)
 
-**Framework**: ProximityReader  
+**Framework**: Proximityreader  
 **Kind**: method
 
 A Boolean value that indicates whether the account is already linked.
@@ -22,11 +22,7 @@ Call [`linkAccount(using:)`](paymentcardreader/linkaccount(using:).md) to link a
 
 > **Note**: If [`prepare(using:)`](paymentcardreader/prepare(using:).md) throws an [`PaymentCardReaderError.accountNotLinked`](paymentcardreadererror/accountnotlinked.md) error call [`linkAccount(using:)`](paymentcardreader/linkaccount(using:).md) again to relink the account.
 
-If [`prepare(using:)`](paymentcardreader/prepare(using:).md) throws an [`PaymentCardReaderError.accountNotLinked`](paymentcardreadererror/accountnotlinked.md) error call [`linkAccount(using:)`](paymentcardreader/linkaccount(using:).md) again to relink the account.
-
 > **Note**: [`PaymentCardReaderError`](paymentcardreadererror.md)
-
-[`PaymentCardReaderError`](paymentcardreadererror.md)
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # makeUIGestureRecognizer(context:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method  
 **Required**: Yes
 
@@ -21,8 +21,6 @@ Creates an instance of the represented gesture recognizer.
 #### Discussion
 
 > **Note**: Gesture recognizers are created on-demand and torn down when an event sequence ends, so do not perform expensive work in this method.
-
-Gesture recognizers are created on-demand and torn down when an event sequence ends, so do not perform expensive work in this method.
 
 ## Parameters
 

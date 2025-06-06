@@ -1,6 +1,6 @@
 # Rewarding players with achievements
 
-**Framework**: GameKit
+**Framework**: Gamekit
 
 Use achievements to motivate players and engage them more in your game.
 
@@ -24,15 +24,11 @@ To create a new achievement, click Add (+) at the bottom of the left column, and
 
 > 💡 **Tip**: Reorganize the list of leaderboards and leaderboard sets that Xcode displays in the order you want Game Center to present them.
 
-Reorganize the list of leaderboards and leaderboard sets that Xcode displays in the order you want Game Center to present them.
-
 You also localize the user-facing text and assets in each language and region you support, and specify whether to hide the achievement from players before they reach a goal in your game. If you don’t hide the achievement, Game Center shows it immediately in the locked state. Players can browse all the achievements in your game, including locked achievements, to learn more about them.
 
 If you add an achievement to an unreleased version of your game or sign the game with a development certificate, Game Center annotates the achievement with a prerelease indicator. For example, if you run your game in Xcode, a prerelease indicator appears next to the achievement name and a message appears in the detail view. To change an achievement’s app version, see [`Add achievements to an app version`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/add-achievements-to-an-app-version).
 
 > **Note**: If you’ve already pushed your configuration changes to App Store Connect, removing a leaderboard or leaderboard set from the local configuration file doesn’t remove the leaderboard or leaderboard set from App Store Connect.
-
-If you’ve already pushed your configuration changes to App Store Connect, removing a leaderboard or leaderboard set from the local configuration file doesn’t remove the leaderboard or leaderboard set from App Store Connect.
 
 To learn more about the information you enter in App Store Connect, see [`Achievement properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/achievements).
 
@@ -116,4 +112,4 @@ If you want to display the data directly in your interface, you can load details
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/rewarding-players-with-achievements)*
+*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/rewarding-players-with-achievements)*

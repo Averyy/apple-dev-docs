@@ -1,6 +1,6 @@
 # SCNSceneSource
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: class
 
 An object that manages the data-reading tasks associated with loading scene contents from a file or data.
@@ -42,8 +42,6 @@ When you include a scene file in DAE or Alembic format in your Xcode project, Xc
 The [`SCNSceneSource`](scnscenesource.md) class can also load SceneKit archive files, which you create in the Xcode scene editor or programmatically by using the [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) class to serialize an [`SCNScene`](scnscene.md) object and the scene graph it contains.
 
 > **Note**:  For best results, place scene files that ship in your app bundle in a folder with the `.scnassets` extension, and place image files referenced as textures from those scenes in an Asset Catalog. Xcode then optimizes the scene and texture resources for best performance on each target device, and prepares your texture resources for delivery features such as App Thinning and On-Demand Resources.
-
- For best results, place scene files that ship in your app bundle in a folder with the `.scnassets` extension, and place image files referenced as textures from those scenes in an Asset Catalog. Xcode then optimizes the scene and texture resources for best performance on each target device, and prepares your texture resources for delivery features such as App Thinning and On-Demand Resources.
 
 ## Topics
 
@@ -105,4 +103,4 @@ The [`SCNSceneSource`](scnscenesource.md) class can also load SceneKit archive f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnscenesource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SceneKit/scnscenesource)*

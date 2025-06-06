@@ -1,6 +1,6 @@
 # chartYAxis(content:)
 
-**Framework**: SwiftUI  
+**Framework**: Swiftui  
 **Kind**: method
 
 Configures the y-axis for charts in the view.
@@ -85,8 +85,6 @@ Chart(BatteryData.data, id: \.date) {
 The above code customizes the y-axis to appear on the leading edge of the chart, with a solid grid line at the 0% and 100% marks.
 
 > **Note**: To add an axis label, use one of the label modifiers, like [`chartYAxisLabel(position:alignment:spacing:content:)`](View/chartYAxisLabel(position:alignment:spacing:content:).md).
-
-To add an axis label, use one of the label modifiers, like [`chartYAxisLabel(position:alignment:spacing:content:)`](View/chartYAxisLabel(position:alignment:spacing:content:).md).
 
 ## Parameters
 

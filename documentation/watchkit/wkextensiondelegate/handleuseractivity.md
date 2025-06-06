@@ -23,8 +23,6 @@ The default implementation of this method does nothing. When overriding this met
 
 > **Note**:  If you are creating a SwiftUI app for watchOS 7 or later, use the [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) modifier instead.
 
- If you are creating a SwiftUI app for watchOS 7 or later, use the [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) modifier instead.
-
 ##### Handling Activities From Complications and Notifications
 
 WatchKit calls this method when your app launches from a complication or notification. Update your app’s user interface based on the `userInfo` parameter. Your app should seamlessly continue the interaction from the complication or notification.

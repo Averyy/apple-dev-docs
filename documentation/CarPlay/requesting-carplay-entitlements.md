@@ -1,6 +1,6 @@
 # Requesting CarPlay Entitlements
 
-**Framework**: CarPlay
+**Framework**: Carplay
 
 Configure your CarPlay-enabled app with the entitlements it requires.
 
@@ -11,8 +11,6 @@ To integrate with CarPlay, you must request the appropriate entitlement for your
 After you receive the entitlement, you need to configure your Xcode project to use it, which involves several steps. You create or update an App ID, generate a provisioning profile, and add an `Entitlements.plist` file to your target. Your project’s code signing settings also require minor changes.
 
 > **Note**:  CarPlay-enabled apps are subject to an additional set of App Store Review guidelines. For more information, see the [`CarPlay App Programming Guide`](https://developer.apple.comhttps://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf).
-
- CarPlay-enabled apps are subject to an additional set of App Store Review guidelines. For more information, see the [`CarPlay App Programming Guide`](https://developer.apple.comhttps://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf).
 
 ##### Add Carplay Capabilities to Your App Id
 
@@ -92,4 +90,4 @@ In Xcode, use a simulator to build and run your project. After Simulator launche
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/carplay/requesting-carplay-entitlements)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/requesting-carplay-entitlements)*

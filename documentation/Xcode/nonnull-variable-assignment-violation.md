@@ -10,8 +10,6 @@ Use this check to detect when you assign `null` to a variable with the `_Nonnull
 
 > **Note**: The nonnull violation check for variable assignment is off by default. You can turn it on by enabling the `-fsanitize=nullability-assign` compiler flag.
 
-The nonnull violation check for variable assignment is off by default. You can turn it on by enabling the `-fsanitize=nullability-assign` compiler flag.
-
 ##### Violation of Nonnull Annotation with Variable Assignment in C
 
 In the following example, the call to `assigns_a_value` breaks the `_Nonnull` annotation of the variable `q`:
@@ -63,4 +61,4 @@ Correct logic errors, or remove the `_Nonnull` annotation.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/nonnull-variable-assignment-violation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/nonnull-variable-assignment-violation)*

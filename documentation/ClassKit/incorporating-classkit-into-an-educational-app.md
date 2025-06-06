@@ -1,6 +1,6 @@
 # Incorporating ClassKit into an Educational App
 
-**Framework**: ClassKit
+**Framework**: Classkit
 
 Walk through the process of setting up assignments and recording student progress.
 
@@ -24,8 +24,6 @@ The GreatPlays app provides a navigable hierarchy of plays, acts, and scenes, al
 For this example, the structure of a single play—Shakespeare’s —is added to the library at launch, from inside the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)) method.
 
 > **Note**: When writing an app for the educational market, consider supporting shared iPad, as described in [`Optimizing Apps for Shared iPad`](https://developer.apple.comhttps://developer.apple.com/education/shared-ipad/). This sample app does that by not using any persistent local storage and by setting the [`NSSupportsPurgeableLocalStorage`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW45) key to `YES` in its `Info.plist` file.
-
-When writing an app for the educational market, consider supporting shared iPad, as described in [`Optimizing Apps for Shared iPad`](https://developer.apple.comhttps://developer.apple.com/education/shared-ipad/). This sample app does that by not using any persistent local storage and by setting the [`NSSupportsPurgeableLocalStorage`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW45) key to `YES` in its `Info.plist` file.
 
 In a real app, in addition to the structure, you would also add the play’s text, along with quiz questions tailored to each scene. You might also support other plays, either distributed with the app, or downloaded later.
 
@@ -376,4 +374,4 @@ If you do decide to set a primary item, make sure you always set the same kind o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/incorporating-classkit-into-an-educational-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/incorporating-classkit-into-an-educational-app)*

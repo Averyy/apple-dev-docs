@@ -1,6 +1,6 @@
 # allowPrivate
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: property
 
 The option that restricts access to people who have been invited.
@@ -22,8 +22,6 @@ static var allowPrivate: UICloudSharingController.PermissionOptions { get }
 To give the user the option to limit access to people who have been invited, include the [`allowPrivate`](uicloudsharingcontroller/permissionoptions/allowprivate.md) option when setting the [`availablePermissions`](uicloudsharingcontroller/availablepermissions.md) property on the [`UICloudSharingController`](uicloudsharingcontroller.md) instance.
 
 > **Note**:  When inviting someone, the user must provide that person’s email address or phone number. This is how the person is identified when accepting the invitation.
-
- When inviting someone, the user must provide that person’s email address or phone number. This is how the person is identified when accepting the invitation.
 
 ## See Also
 

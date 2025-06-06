@@ -1,6 +1,6 @@
 # riskScoreSumFullRange
 
-**Framework**: Exposure Notification  
+**Framework**: Exposurenotification  
 **Kind**: property
 
 The sum of the full-range risk scores for all exposures for the user.
@@ -20,13 +20,9 @@ var riskScoreSumFullRange: Double { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.6 and later.
 
- This property is available in iOS 12.5, and in iOS 13.6 and later.
-
 The values used in the sum are not limited by [`ENRiskScoreMax`](enriskscoremax.md).
 
 > **Note**:  This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
-
- This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
 
 ## See Also
 
@@ -48,4 +44,4 @@ The values used in the sum are not limited by [`ENRiskScoreMax`](enriskscoremax.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposuredetectionsummary/riskscoresumfullrange)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposuredetectionsummary/riskscoresumfullrange)*

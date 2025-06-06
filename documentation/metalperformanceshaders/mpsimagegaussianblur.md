@@ -1,6 +1,6 @@
 # MPSImageGaussianBlur
 
-**Framework**: Metal Performance Shaders  
+**Framework**: Metalperformanceshaders  
 **Kind**: cl
 
 A filter that convolves an image with a Gaussian blur of a given sigma in both the x and y directions.
@@ -22,10 +22,6 @@ class MPSImageGaussianBlur : MPSUnaryImageKernel
 #### Overview
 
 > **Note**: The Gaussian blur utilizes a very fast algorithm that typically runs at approximately half the speed of copy speeds. Notably, it is faster than either the tent or box blur except perhaps for very large filter windows. Mathematically, it is an approximate Gaussian. Some non-Gaussian behavior may be detectable with advanced analytical methods such as FFT. If an analytically clean Gaussian filter is required, use the [`MPSImageConvolution`](mpsimageconvolution.md) filter instead with an appropriate set of weights. The [`MPSImageGaussianBlur`](mpsimagegaussianblur.md) filter is intended to be suitable for all common image processing needs demanding ~10 bits of precision or less.
-
-The Gaussian blur utilizes a very fast algorithm that typically runs at approximately half the speed of copy speeds. Notably, it is faster than either the tent or box blur except perhaps for very large filter windows. Mathematically, it is an approximate Gaussian. Some non-Gaussian behavior may be detectable with advanced analytical methods such as FFT.
-
-If an analytically clean Gaussian filter is required, use the [`MPSImageConvolution`](mpsimageconvolution.md) filter instead with an appropriate set of weights. The [`MPSImageGaussianBlur`](mpsimagegaussianblur.md) filter is intended to be suitable for all common image processing needs demanding ~10 bits of precision or less.
 
 ## Topics
 

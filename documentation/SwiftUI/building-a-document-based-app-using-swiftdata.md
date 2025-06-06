@@ -1,6 +1,6 @@
 # Building a document-based app using SwiftData
 
-**Framework**: SwiftUI
+**Framework**: Swiftui
 
 Code along with the WWDC presenter to transform an app with SwiftData.
 
@@ -16,8 +16,6 @@ Learn how to use [`Query`](https://developer.apple.com/documentation/SwiftData/Q
 
 > **Note**: This sample code project is associated with WWDC23 session 10154: [`Build an app with SwiftData`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10154/).
 
-This sample code project is associated with WWDC23 session 10154: [`Build an app with SwiftData`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10154/).
-
 ## See Also
 
 - [Building a document-based app with SwiftUI](building-a-document-based-app-with-swiftui.md)
@@ -28,4 +26,4 @@ This sample code project is associated with WWDC23 session 10154: [`Build an app
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/building-a-document-based-app-using-swiftdata)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/building-a-document-based-app-using-swiftdata)*

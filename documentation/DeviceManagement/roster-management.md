@@ -1,6 +1,6 @@
 # Roster Management
 
-**Framework**: Device Management
+**Framework**: Devicemanagement
 
 Manage classes for your students and teachers.
 
@@ -9,8 +9,6 @@ Manage classes for your students and teachers.
 Administrators of Apple School Manager can use this API to access information about classes and people in their organization. If you’re a developer who needs access to information about somebody else’s organization, see the [`Roster API`](https://developer.apple.com/documentation/RosterAPI).
 
 > **Note**:  This API isn’t supported for Apple Business Manager organizations.
-
- This API isn’t supported for Apple Business Manager organizations.
 
 ## Topics
 
@@ -60,4 +58,4 @@ Administrators of Apple School Manager can use this API to access information ab
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/roster-management)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/roster-management)*

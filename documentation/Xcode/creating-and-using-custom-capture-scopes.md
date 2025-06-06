@@ -10,8 +10,6 @@ When you capture a frame using the default capture scope by clicking the Metal C
 
 > **Note**: Don’t allocate custom capture scopes yourself. Instead, call one of the [`MTLCaptureManager`](https://developer.apple.com/documentation/Metal/MTLCaptureManager) methods: [`makeCaptureScope(device:)`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/makeCaptureScope(device:)) or [`makeCaptureScope(commandQueue:)`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/makeCaptureScope(commandQueue:)).
 
-Don’t allocate custom capture scopes yourself. Instead, call one of the [`MTLCaptureManager`](https://developer.apple.com/documentation/Metal/MTLCaptureManager) methods: [`makeCaptureScope(device:)`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/makeCaptureScope(device:)) or [`makeCaptureScope(commandQueue:)`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/makeCaptureScope(commandQueue:)).
-
 ##### Define Capture Boundaries
 
 Call [`begin()`](https://developer.apple.com/documentation/Metal/MTLCaptureScope/begin()) on your capture scope to instruct the Metal debugger to record your app’s subsequent Metal activity. To stop recording a frame and to present the Metal debugger, call [`end()`](https://developer.apple.com/documentation/Metal/MTLCaptureScope/end()).
@@ -29,8 +27,6 @@ myCaptureScope.end()
 ```
 
 > ❗ **Important**: Create capture scopes outside your rendering or compute loop, situating your calls between [`begin()`](https://developer.apple.com/documentation/Metal/MTLCaptureScope/begin()) and [`end()`](https://developer.apple.com/documentation/Metal/MTLCaptureScope/end()). For Metal capture to work correctly, you need to hold a strong reference to an active capture scope for the duration of the work that the capture scope contains.
-
-Create capture scopes outside your rendering or compute loop, situating your calls between [`begin()`](https://developer.apple.com/documentation/Metal/MTLCaptureScope/begin()) and [`end()`](https://developer.apple.com/documentation/Metal/MTLCaptureScope/end()). For Metal capture to work correctly, you need to hold a strong reference to an active capture scope for the duration of the work that the capture scope contains.
 
 ##### Label Your Capture Scope
 
@@ -64,4 +60,4 @@ MTLCaptureManager.shared().defaultCaptureScope = myCaptureScope
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-and-using-custom-capture-scopes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-and-using-custom-capture-scopes)*

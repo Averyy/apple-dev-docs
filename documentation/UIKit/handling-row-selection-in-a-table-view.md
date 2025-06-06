@@ -1,6 +1,6 @@
 # Handling row selection in a table view
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Detect when a user taps a table view cell so your app can take the next indicated action.
 
@@ -45,8 +45,6 @@ If the row displays the detail button accessory view and the user taps it, the t
 The selection of a row may originate within the app itself rather than from a tap in the table view. For example, a user might add a new person to an address book, then return to the list of contacts. After returning to the contact list, the app scrolls the list to show the row of the newly added person. In this situation, use the table view method [`selectRow(at:animated:scrollPosition:)`](uitableview/selectrow(at:animated:scrollposition:).md) to select and scroll to the new row.
 
 > **Note**:  Selecting a row programmatically doesn’t call the delegate methods [`tableView(_:willSelectRowAt:)`](uitableviewdelegate/tableview(_:willselectrowat:).md) or [`tableView(_:didSelectRowAt:)`](uitableviewdelegate/tableview(_:didselectrowat:).md), nor does it send [`selectionDidChangeNotification`](uitableview/selectiondidchangenotification.md) notifications to observers.
-
- Selecting a row programmatically doesn’t call the delegate methods [`tableView(_:willSelectRowAt:)`](uitableviewdelegate/tableview(_:willselectrowat:).md) or [`tableView(_:didSelectRowAt:)`](uitableviewdelegate/tableview(_:didselectrowat:).md), nor does it send [`selectionDidChangeNotification`](uitableview/selectiondidchangenotification.md) notifications to observers.
 
 ##### Manage Selection Lists
 
@@ -116,4 +114,4 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/handling-row-selection-in-a-table-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/handling-row-selection-in-a-table-view)*

@@ -23,8 +23,6 @@ func dataRecords(ofTypes dataTypes: Set<WKWebExtension.DataType>) async -> [WKWe
 
 > **Note**: The extension does not need to be loaded to be included in the result.
 
-The extension does not need to be loaded to be included in the result.
-
 ## Parameters
 
 - `dataTypes`: The extension data types to fetch records for.

@@ -1,6 +1,6 @@
 # font
 
-**Framework**: Core Animation  
+**Framework**: Quartzcore  
 **Kind**: property
 
 The font used to render the receiver’s text.
@@ -27,8 +27,6 @@ The `font` property is only used when the [`string`](catextlayer/string.md) prop
 
 > **Note**:  If the font property is a `CTFontRef`, a `CGFontRef`, or an instance of `NSFont`, the font size of the property is ignored.
 
- If the font property is a `CTFontRef`, a `CGFontRef`, or an instance of `NSFont`, the font size of the property is ignored.
-
 ## See Also
 
 - [var fontSize: CGFloat](catextlayer/fontsize.md)
@@ -41,4 +39,4 @@ The `font` property is only used when the [`string`](catextlayer/string.md) prop
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/catextlayer/font)*
+*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/catextlayer/font)*

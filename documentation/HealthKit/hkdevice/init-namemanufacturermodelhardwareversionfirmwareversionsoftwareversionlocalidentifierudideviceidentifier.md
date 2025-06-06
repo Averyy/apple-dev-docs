@@ -1,6 +1,6 @@
 # init(name:manufacturer:model:hardwareVersion:firmwareVersion:softwareVersion:localIdentifier:udiDeviceIdentifier:)
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: init
 
 Initializes a new device object.
@@ -32,8 +32,6 @@ When creating device objects for use in queries, only pass in values for the par
 When creating devices for new samples, it is best to provide values for as many parameters as you can. Even if you aren’t interest in a particular parameter, other apps may use it in their queries. More importantly, your app may need to use it in the future.
 
 > **Note**:  When a sample is saved with a device, that sample is permanently associated with that device. You cannot edit either the sample or the device object. To change the information about the device, you must delete the old sample, and save a new sample with a new device object.
-
- When a sample is saved with a device, that sample is permanently associated with that device. You cannot edit either the sample or the device object. To change the information about the device, you must delete the old sample, and save a new sample with a new device object.
 
 ## Parameters
 

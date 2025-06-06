@@ -1,6 +1,6 @@
 # column
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: property
 
 The column in the source file.
@@ -25,8 +25,6 @@ var column: Int { get set }
 #### Discussion
 
 > **Note**: The value of this property must be greater than `0`.
-
-The value of this property must be greater than `0`.
 
 
 ---

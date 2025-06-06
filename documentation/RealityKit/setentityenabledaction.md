@@ -1,6 +1,6 @@
 # SetEntityEnabledAction
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 An action that enables or disables the targeted entity and its descendants when played as an animation.
@@ -49,15 +49,9 @@ rootEntity.playAnimation(disableEntityAnimation)
 
 > **Note**: Animations do not play on entities that are disabled. In order to disable, and enable the target entity, play this action on another entity, such as a root entity, or its parent.
 
-Animations do not play on entities that are disabled. In order to disable, and enable the target entity, play this action on another entity, such as a root entity, or its parent.
-
 > ❗ **Important**: This action does not animate a bound property, such as [`BindTarget.transform`](bindtarget/transform.md).
 
-This action does not animate a bound property, such as [`BindTarget.transform`](bindtarget/transform.md).
-
 > 💡 **Tip**: This action performs instantaneously, consider supplying a small positive duration value when creating the animation.
-
-This action performs instantaneously, consider supplying a small positive duration value when creating the animation.
 
 ## Topics
 
@@ -111,4 +105,4 @@ This action performs instantaneously, consider supplying a small positive durati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/setentityenabledaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/setentityenabledaction)*

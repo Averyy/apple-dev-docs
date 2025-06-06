@@ -1,6 +1,6 @@
 # HKVerifiableClinicalRecordQueryDescriptor
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: struct
 
 A query interface that provides one-time access to a SMART Health Card or EU Digital COVID Certificate using Swift concurrency.
@@ -60,8 +60,6 @@ Unlike other HealthKit queries, you don’t need to request permission to read v
 
 > **Note**:  Running an [`HKVerifiableClinicalRecordQuery`](hkverifiableclinicalrecordquery.md) requires a special entitlement from Apple, or the query fails with an [`HKError.Code.errorAuthorizationDenied`](hkerror/code/errorauthorizationdenied.md) error. To request the entitlement, see [`Request Access to the Verifiable Health Records Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/verifiable-health-records/).
 
- Running an [`HKVerifiableClinicalRecordQuery`](hkverifiableclinicalrecordquery.md) requires a special entitlement from Apple, or the query fails with an [`HKError.Code.errorAuthorizationDenied`](hkerror/code/errorauthorizationdenied.md) error. To request the entitlement, see [`Request Access to the Verifiable Health Records Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/verifiable-health-records/).
-
 ## Topics
 
 ### Creating Query Descriptors
@@ -100,4 +98,4 @@ Unlike other HealthKit queries, you don’t need to request permission to read v
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkverifiableclinicalrecordquerydescriptor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkverifiableclinicalrecordquerydescriptor)*

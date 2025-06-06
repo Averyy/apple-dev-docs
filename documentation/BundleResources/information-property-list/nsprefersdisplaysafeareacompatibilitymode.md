@@ -1,6 +1,6 @@
 # NSPrefersDisplaySafeAreaCompatibilityMode
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 A Boolean value that indicates whether the app prefers to run in compatibility mode when necessary.
@@ -17,8 +17,6 @@ On Mac computers that include a camera housing, the Finder adds a checkbox to yo
 After you audit your app and verify that it runs correctly on Mac computers that include a camera housing, add this key to your `Info.plist` file and set its value to [`false`](https://developer.apple.com/documentation/swift/false). If you discover issues during your audit, add the key and set its value to [`true`](https://developer.apple.com/documentation/swift/true) until you’re able to fix those issues.
 
 > **Note**:  On Mac computers that include a camera housing in the bezel, the [`auxiliaryTopLeftArea`](https://developer.apple.com/documentation/AppKit/NSScreen/auxiliaryTopLeftArea-uglc) and [`auxiliaryTopRightArea`](https://developer.apple.com/documentation/AppKit/NSScreen/auxiliaryTopRightArea-gr2n) properties of [`NSScreen`](https://developer.apple.com/documentation/AppKit/NSScreen) contain the regions to the left and right of the camera housing. Use those properties and the [`visibleFrame`](https://developer.apple.com/documentation/AppKit/NSScreen/visibleFrame) property to determine where to display your content.
-
- On Mac computers that include a camera housing in the bezel, the [`auxiliaryTopLeftArea`](https://developer.apple.com/documentation/AppKit/NSScreen/auxiliaryTopLeftArea-uglc) and [`auxiliaryTopRightArea`](https://developer.apple.com/documentation/AppKit/NSScreen/auxiliaryTopRightArea-gr2n) properties of [`NSScreen`](https://developer.apple.com/documentation/AppKit/NSScreen) contain the regions to the left and right of the camera housing. Use those properties and the [`visibleFrame`](https://developer.apple.com/documentation/AppKit/NSScreen/visibleFrame) property to determine where to display your content.
 
 ## See Also
 

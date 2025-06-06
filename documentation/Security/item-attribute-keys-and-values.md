@@ -12,8 +12,6 @@ You specify attributes as the keys and values of a dictionary. The available att
 
 > **Note**:  Not all attributes apply to every item class. You can find the list of attributes applicable to a given class in the relevant item class value definition, namely in [`kSecClassGenericPassword`](ksecclassgenericpassword.md), [`kSecClassInternetPassword`](ksecclassinternetpassword.md), [`kSecClassCertificate`](ksecclasscertificate.md), [`kSecClassIdentity`](ksecclassidentity.md), or [`kSecClassKey`](ksecclasskey.md).
 
- Not all attributes apply to every item class. You can find the list of attributes applicable to a given class in the relevant item class value definition, namely in [`kSecClassGenericPassword`](ksecclassgenericpassword.md), [`kSecClassInternetPassword`](ksecclassinternetpassword.md), [`kSecClassCertificate`](ksecclasscertificate.md), [`kSecClassIdentity`](ksecclassidentity.md), or [`kSecClassKey`](ksecclasskey.md).
-
 ## Topics
 
 ### General Item Attribute Keys
@@ -276,4 +274,4 @@ You specify attributes as the keys and values of a dictionary. The available att
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/item-attribute-keys-and-values)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/item-attribute-keys-and-values)*

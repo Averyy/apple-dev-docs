@@ -1,6 +1,6 @@
 # Detecting nudity in media and providing intervention options
 
-**Framework**: SensitiveContentAnalysis
+**Framework**: Sensitivecontentanalysis
 
 Alert people before displaying images or video that might be sensitive.
 
@@ -18,8 +18,6 @@ The SensitiveContentAnalysis framework doesn’t dictate your user interface. Yo
 
 > ❗ **Important**: Apple provides the SensitiveContentAnalysis framework to prevent people from viewing unwanted content, not as a way for an app to report on someone’s behavior. To protect user privacy, don’t transmit any information off the user’s device about whether the SensitiveContentAnalysis framework has identified an image or video as containing nudity. For more information, see the [`Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/programs/apple-developer-program-license-agreement/#sensitive-content-analysis-framework).
 
-Apple provides the SensitiveContentAnalysis framework to prevent people from viewing unwanted content, not as a way for an app to report on someone’s behavior. To protect user privacy, don’t transmit any information off the user’s device about whether the SensitiveContentAnalysis framework has identified an image or video as containing nudity. For more information, see the [`Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/programs/apple-developer-program-license-agreement/#sensitive-content-analysis-framework).
-
 ##### Add the App Entitlement
 
 The OS requires the [`com.apple.developer.sensitivecontentanalysis.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.sensitivecontentanalysis.client) entitlement in your app’s code signature to use SensitiveContentAnalysis. Calls to the framework fail to return positive results without it. You can can add this entitlement to your app by enabling the Sensitive Content Analysis capability in Xcode; see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
@@ -27,8 +25,6 @@ The OS requires the [`com.apple.developer.sensitivecontentanalysis.client`](http
 Any team member of the paid App Store developer program can add the entitlement to an app after enabling the capability in Xcode and then signing the Developer Program License Agreement on the [`Accounts`](https://developer.apple.comhttp://developer.apple.com/account) website.
 
 > **Note**: The SensitiveContentAnalysis entitlement is not available for Enterprise development or for people with free accounts.
-
-The SensitiveContentAnalysis entitlement is not available for Enterprise development or for people with free accounts.
 
 ##### Check Images or Video for Unsafe Content
 
@@ -117,4 +113,4 @@ Inline interventions for the Sensitive Content Warning setting aim to interfere 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/sensitivecontentanalysis/detecting-nudity-in-media-and-providing-intervention-options)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SensitiveContentAnalysis/detecting-nudity-in-media-and-providing-intervention-options)*

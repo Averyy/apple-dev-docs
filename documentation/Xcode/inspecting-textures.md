@@ -80,8 +80,6 @@ Drag the slice slider in the control bar to visually compare different mipmap le
 
 > **Note**: By default, the Texture viewer stacks 3D textures, such as [`MTLTextureType.type3D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type3D), using the z-coordinate. You can disable stacking to see the depth slices side by side. If your 3D texture has multiple mipmap levels, you can choose either Stack Mips or Stack Z.
 
-By default, the Texture viewer stacks 3D textures, such as [`MTLTextureType.type3D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type3D), using the z-coordinate. You can disable stacking to see the depth slices side by side. If your 3D texture has multiple mipmap levels, you can choose either Stack Mips or Stack Z.
-
 ## See Also
 
 - [Inspecting acceleration structures](inspecting-acceleration-structures.md)
@@ -98,4 +96,4 @@ By default, the Texture viewer stacks 3D textures, such as [`MTLTextureType.type
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/inspecting-textures)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/inspecting-textures)*

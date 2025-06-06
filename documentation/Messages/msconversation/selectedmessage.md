@@ -32,8 +32,6 @@ Override [`willSelect(_:conversation:)`](msmessagesappviewcontroller/willselect(
 
 > **Note**:  This property is always set to the message object selected by the user. If this message belongs to a session, then the selected message might not contain the most current data. The selected message is not updated when you receive new messages. Instead, override your view controller’s [`didReceive(_:conversation:)`](msmessagesappviewcontroller/didreceive(_:conversation:).md) message to handle updates.
 
- This property is always set to the message object selected by the user. If this message belongs to a session, then the selected message might not contain the most current data. The selected message is not updated when you receive new messages. Instead, override your view controller’s [`didReceive(_:conversation:)`](msmessagesappviewcontroller/didreceive(_:conversation:).md) message to handle updates.
-
 
 ---
 

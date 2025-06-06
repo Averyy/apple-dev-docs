@@ -74,8 +74,6 @@ By default, visionOS reverberates spatial audio sources by simulating the acoust
 
 > **Note**: When your app presents an environment in an immersive space using the [`progressive`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/progressive) immersion style, turning the Digital Crown blends the acoustics of the real and virtual spaces to match the visual level of immersion.
 
-When your app presents an environment in an immersive space using the [`progressive`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/progressive) immersion style, turning the Digital Crown blends the acoustics of the real and virtual spaces to match the visual level of immersion.
-
 The Studio environment defines a `Reverb` entity and adds a [`ReverbComponent`](https://developer.apple.com/documentation/RealityKit/ReverbComponent) to it in Reality Composer Pro’s Inspector. The component defines a single [`reverb`](https://developer.apple.com/documentation/RealityKit/ReverbComponent/reverb) property to indicate a specific preset to apply. There are several high-quality reverb presets to choose from including various rooms, hall, and outside spaces. The app uses the `Very Large Room` preset, which best fits the environment’s visuals.
 
 ![An image that shows a reverb component in Reality Composer Pro's Inspector. The component has the title Reverb at the top. Below the title is a Preset label followed by a pop-up menu with Very Large Room preset selected.](https://docs-assets.developer.apple.com/published/3dbce6a64f6fcfae83ecd544a7e5b7f8/reverb-component%402x.png)
@@ -83,8 +81,6 @@ The Studio environment defines a `Reverb` entity and adds a [`ReverbComponent`](
 Define a reverb component in your scene even if it doesn’t provide custom audio. The system still uses the reverb preset to spatialize system sounds such as UI interactions.
 
 > **Note**: To optimize the viewing experience, in most cases lower the volume of environment sounds, or stop their playback altogether, when video playback begins.
-
-To optimize the viewing experience, in most cases lower the volume of environment sounds, or stop their playback altogether, when video playback begins.
 
 #### Specify Content Brightness and Surroundings Effects
 
@@ -169,4 +165,4 @@ After adding these buttons to the environment picker, they appear alongside the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/building-an-immersive-media-viewing-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/building-an-immersive-media-viewing-experience)*

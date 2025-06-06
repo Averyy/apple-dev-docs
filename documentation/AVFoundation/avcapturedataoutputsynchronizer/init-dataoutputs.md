@@ -1,6 +1,6 @@
 # init(dataOutputs:)
 
-**Framework**: AVFoundation  
+**Framework**: Avfoundation  
 **Kind**: init
 
 Creates a capture output synchronizer for the specified capture outputs.
@@ -24,8 +24,6 @@ The first output in the array acts as the main data output and determines when t
 For example, if you specify a video data output as your first (main) output and a metadata output for detected faces as your second output, your data callback is not called until there is face data ready for a corresponding video frame, or it is assured that there is no face metadata for that particular video frame.
 
 > **Note**:  The [`AVCaptureDataOutputSynchronizer`](avcapturedataoutputsynchronizer.md) class overrides the delegate (and delegate dispatch queue) settings of all of its data outputs, but video and depth data outputs still honor their [`alwaysDiscardsLateVideoFrames`](avcapturevideodataoutput/alwaysdiscardslatevideoframes.md) and [`alwaysDiscardsLateDepthData`](avcapturedepthdataoutput/alwaysdiscardslatedepthdata.md) properties.
-
- The [`AVCaptureDataOutputSynchronizer`](avcapturedataoutputsynchronizer.md) class overrides the delegate (and delegate dispatch queue) settings of all of its data outputs, but video and depth data outputs still honor their [`alwaysDiscardsLateVideoFrames`](avcapturevideodataoutput/alwaysdiscardslatevideoframes.md) and [`alwaysDiscardsLateDepthData`](avcapturedepthdataoutput/alwaysdiscardslatedepthdata.md) properties.
 
 ## Parameters
 

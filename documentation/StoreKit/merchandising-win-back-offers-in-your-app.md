@@ -1,6 +1,6 @@
 # Merchandising win-back offers in your app
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Present win-back offers to eligible customers in your app with the win-back offer sheet or by implementing custom merchandising.
 
@@ -9,8 +9,6 @@ Present win-back offers to eligible customers in your app with the win-back offe
 If a customer is eligible for a win-back offer, StoreKit provides several ways to for your app to merchandise the offer. By default, StoreKit automatically displays a win-back offer sheet to eligible customers when the app launches. You can choose to suppress (or delay) this sheet using the [`Message`](message.md) API, present the win-back offer using [`StoreKit views`](storekit-views.md), or use StoreKit APIs and customize your UI.
 
 > **Note**:  Session 10110: [`Implement App Store Offers`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10110)
-
- Session 10110: [`Implement App Store Offers`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10110)
 
 For information on configuring win-back offers, handling redeemed offers, and more, see [`Supporting win-back offers in your app`](supporting-win-back-offers-in-your-app.md).
 
@@ -44,8 +42,6 @@ For more information about App Store messages, see [`Message`](message.md).
 
 > **Note**:  Redeeming an offer in the win-back offer sheet results in a transaction that StoreKit treats the same as transactions that occur outside of the app; your app observes the transaction in the [`updates`](transaction/updates.md) sequence.
 
- Redeeming an offer in the win-back offer sheet results in a transaction that StoreKit treats the same as transactions that occur outside of the app; your app observes the transaction in the [`updates`](transaction/updates.md) sequence.
-
 ##### Present Win Back Offers in Storekit Views
 
 StoreKit views automatically support displaying pricing details in the [`SubscriptionStoreView`](subscriptionstoreview.md) for all subscription offers the customer is eligible for, including win-back offers. The StoreKit views fetch the offer metadata and set up the purchase for you. If a customer is eligible for multiple offers, use the view modifier [`preferredSubscriptionOffer(_:)`](https://developer.apple.com/documentation/SwiftUI/View/preferredSubscriptionOffer(_:)) to control which offer to present.
@@ -75,4 +71,4 @@ To add a win-back offer to a purchase, include the win-back offer the customer c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/merchandising-win-back-offers-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/merchandising-win-back-offers-in-your-app)*

@@ -1,6 +1,6 @@
 # Providing an integrated view of your timeline when playing HLS interstitials
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
 
@@ -12,8 +12,6 @@ Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10114: [`Enhance ad experiences with HLS Interstitials`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10114/)
-
-This sample code project is associated with WWDC24 session 10114: [`Enhance ad experiences with HLS Interstitials`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10114/)
 
 ##### Configure the Sample Code Project
 
@@ -41,4 +39,4 @@ When the stream starts, copy its URL, which is in the following format: `http://
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials)*

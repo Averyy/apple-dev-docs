@@ -1,6 +1,6 @@
 # Main camera access
 
-**Framework**: Bundle Resources  
+**Framework**: Bundleresources  
 **Kind**: typealias
 
 A Boolean value that indicates whether an app can use ARKit to access the main cameras on Apple Vision Pro.
@@ -11,8 +11,6 @@ A Boolean value that indicates whether an app can use ARKit to access the main c
 #### Discussion
 
 > **Note**: Main camera access is only available in an immersive space. See [`Setting up access to ARKit data`](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy).
-
-Main camera access is only available in an immersive space. See [`Setting up access to ARKit data`](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy).
 
 ## See Also
 

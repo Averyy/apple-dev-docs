@@ -38,8 +38,6 @@ if let i = students.lastIndex(where: { $0.hasPrefix("A") }) {
 
 > **Note**: O(), where  is the length of the collection.
 
-O(), where  is the length of the collection.
-
 ## Parameters
 
 - `predicate`: A closure that takes an element as its argument   and returns a Boolean value that indicates whether the passed element   represents a match.

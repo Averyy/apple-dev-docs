@@ -39,8 +39,6 @@ for _ in 1...3 {
 
 > **Note**: The algorithm used to create random values may change in a future version of Swift. If you’re passing a generator that results in the same sequence of integer values each time you run your program, that sequence may change when your program is compiled using a different version of Swift.
 
-The algorithm used to create random values may change in a future version of Swift. If you’re passing a generator that results in the same sequence of integer values each time you run your program, that sequence may change when your program is compiled using a different version of Swift.
-
 ## Parameters
 
 - `range`: The range in which to create a random value.    must not be empty.

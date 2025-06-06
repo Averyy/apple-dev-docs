@@ -34,8 +34,6 @@ If the function can’t append the path component, it returns an unchanged URL.
 
 > **Note**:  The modified URL has a directory path if `contentType` conforms to [`directory`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/directory).
 
- The modified URL has a directory path if `contentType` conforms to [`directory`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/directory).
-
 For more information about types, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
 
 ## Parameters

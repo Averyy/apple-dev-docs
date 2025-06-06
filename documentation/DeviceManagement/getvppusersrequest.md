@@ -1,6 +1,6 @@
 # GetVppUsersRequest
 
-**Framework**: Device Management  
+**Framework**: Devicemanagement  
 **Kind**: dictionary
 
 The request for the users’ details service.
@@ -19,8 +19,6 @@ object GetVppUsersRequest
 
 > **Note**:  The `batchToken` encodes the original value of `includeRetired`; therefore, if a `batchToken` is present on the request, the `includeRetired` field (if passed) is ignored.
 
- The `batchToken` encodes the original value of `includeRetired`; therefore, if a `batchToken` is present on the request, the `includeRetired` field (if passed) is ignored.
-
 ## See Also
 
 - [object GetVppUsersResponse](getvppusersresponse.md)
@@ -29,4 +27,4 @@ object GetVppUsersRequest
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/getvppusersrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/getvppusersrequest)*

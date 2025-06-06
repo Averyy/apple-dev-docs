@@ -38,8 +38,6 @@ To access the underlying memory through typed operations, the memory must be bou
 
 > **Note**: A  can be copied bit for bit with no indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enums. Copying memory that contains values of nontrivial types can only be done safely with a typed pointer. Copying bytes directly from nontrivial, in-memory values does not produce valid copies and can only be done by calling a C API, such as `memmove()`.
 
-A  can be copied bit for bit with no indirection or reference-counting operations. Generally, native Swift types that do not contain strong or weak references or other forms of indirection are trivial, as are imported C structs and enums. Copying memory that contains values of nontrivial types can only be done safely with a typed pointer. Copying bytes directly from nontrivial, in-memory values does not produce valid copies and can only be done by calling a C API, such as `memmove()`.
-
 ### Unsafemutablerawbufferpointer Semantics
 
 An `UnsafeMutableRawBufferPointer` instance is a view into memory and does not own the memory that it references. Copying a variable or constant of type `UnsafeMutableRawBufferPointer` does not copy the underlying memory. However, initializing another collection with an `UnsafeMutableRawBufferPointer` instance copies bytes out of the referenced memory and into the new collection.
@@ -149,4 +147,4 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/unsafemutablerawbufferpointer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/unsafemutablerawbufferpointer)*

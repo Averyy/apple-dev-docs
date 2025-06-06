@@ -20,8 +20,6 @@ By default, the map doesn’t show the user’s heading.
 
 > **Note**:  Calling this method has no effect unless the map is showing the user’s location. For more information, see [`setShowsUserLocation(_:)`](wkinterfacemap/setshowsuserlocation(_:).md).
 
- Calling this method has no effect unless the map is showing the user’s location. For more information, see [`setShowsUserLocation(_:)`](wkinterfacemap/setshowsuserlocation(_:).md).
-
 ## See Also
 
 - [func setShowsUserLocation(Bool)](wkinterfacemap/setshowsuserlocation(_:).md)

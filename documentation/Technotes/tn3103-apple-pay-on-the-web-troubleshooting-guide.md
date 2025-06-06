@@ -14,8 +14,6 @@ Your Developer Account registers a Merchant by creating a new Merchant Identifie
 
 > **Note**: If you are working with a Payment Service Provider who can give you access to Apple Pay without an Apple Developer Account, the process outlined below will be different and you should contact the the Payment Service Provider for additional help on configuring your Merchant Assets.
 
-If you are working with a Payment Service Provider who can give you access to Apple Pay without an Apple Developer Account, the process outlined below will be different and you should contact the the Payment Service Provider for additional help on configuring your Merchant Assets.
-
 After you have created your Merchant Identifier you will need to create a Payment Processing Certificate using a 256-bit ECC key pair. However, if you are using a third-party Payment Service Provider, they may provide this certificate for you. If so, skip to Step 2 below.
 
 ##### Create a Payment Processing Identity
@@ -26,8 +24,6 @@ After you have created your Merchant Identifier you will need to create a Paymen
 
 > **Note**: The process described here details a situation where you, as the Developer, are setting up the Merchant Assets. It could also be the case that your Payment Service Provider creates the CSR and gives it to you, the Merchant, to upload to the Merchant ID Configuration page to generate a Payment Certificate. The benefit of this workflow is you would not need to export your Payment Processing Identity from your Keychain to provide it to the Payment Processor, they would already have the required private key from the CSR that they had previously generated.
 
-The process described here details a situation where you, as the Developer, are setting up the Merchant Assets. It could also be the case that your Payment Service Provider creates the CSR and gives it to you, the Merchant, to upload to the Merchant ID Configuration page to generate a Payment Certificate. The benefit of this workflow is you would not need to export your Payment Processing Identity from your Keychain to provide it to the Payment Processor, they would already have the required private key from the CSR that they had previously generated.
-
 ##### Create a Merchant Identity Certificate
 
 In the Merchant ID Configuration page under your Merchant Identifier, you will need to create a [`Merchant Identity Certificate`](https://developer.apple.comhttps://help.apple.com/developer-account/#/dev1731126fb) in the same place you created the Payment Processing Certificate.
@@ -37,8 +33,6 @@ In the Merchant ID Configuration page under your Merchant Identifier, you will n
 3. Create a Merchant Identity (p12 / key and cert) by downloading the generated Payment Merchant Certificate and installing it into the Keychain on the same Mac used to create the initial CSR. If you created the CSR outside of a Mac then the key and certificate will need to be stored on the device the CSR was created.
 
 > **Note**: A CSR does not have to be created in the Keychain of a macOS computer. A CSR can technically be created from an external source such as a server, another workstation, or from your Payment Service Provider, with a tool like OpenSSL.
-
-A CSR does not have to be created in the Keychain of a macOS computer. A CSR can technically be created from an external source such as a server, another workstation, or from your Payment Service Provider, with a tool like OpenSSL.
 
 The important thing to remember is that when a CSR is created, so is a private key. After uploading the CSR to the Apple Developer Portal and receiving a certificate, you will need to store the certificate and the private key in a secure location so that a PKCS#12 (or p12) can be created from both the private key and certificate. The Keychain on macOS does this for you and so you do not have to worry about it, but if using an external tool, you will need to do this by hand. The creation of a p12 from a private key and certificate is what makes up a digital identity, and this is what is used to authenticate your team as a Merchant to the Apple Pay servers. For example, the creation of a Merchant Identity in the form of a p12, or a stacked PEM, contains your private key and Merchant Certificate. These assets that are tied to your Merchant account are then used to perform client authentication when requesting a payment session from the Apple Pay servers.
 
@@ -61,8 +55,6 @@ https://example.com/.well-known/apple-developer-merchantid-domain-association.tx
 This file above will need to be placed at the root level of your server.
 
 > ❗ **Important**: The domain verification file expires after , so if you are not able to verify your domain after 7 days you will need to regenerate this file and replace it on your server.
-
-The domain verification file expires after , so if you are not able to verify your domain after 7 days you will need to regenerate this file and replace it on your server.
 
 To perform domain verification, click the Verify button in the Merchant ID Configuration page to verify the domain. If all goes well, your domain should be verified and show up as “Verified” in the Merchant ID Configuration page. If you experience issues, please read further to resolve common reasons domain verification fails.
 
@@ -299,4 +291,4 @@ For a complete overview of how to decrypt the Apple Pay Payment token and how th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3103-apple-pay-on-the-web-troubleshooting-guide)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3103-apple-pay-on-the-web-troubleshooting-guide)*

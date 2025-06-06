@@ -1,6 +1,6 @@
 # CKDatabaseNotification
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: class
 
 A notification that triggers when the contents of a database change.
@@ -29,8 +29,6 @@ You configure a subscription’s notifications by setting it’s [`notificationI
 A subscription uses [`CKSubscription.NotificationInfo`](cksubscription/notificationinfo-swift.class.md) to configure its notifications. For background delivery, set only its [`shouldSendContentAvailable`](cksubscription/notificationinfo-swift.class/shouldsendcontentavailable.md) property to [`true`](https://developer.apple.com/documentation/swift/true). If you set any other property, CloudKit treats the notification as high-priority.
 
 > **Note**:  To receive silent push notifications, add the Background Modes capability to your Xcode project and select the “Background fetch” and “Remote notifications” options.
-
- To receive silent push notifications, add the Background Modes capability to your Xcode project and select the “Background fetch” and “Remote notifications” options.
 
 Don’t rely on push notifications for specific changes because the system can coalesce them. CloudKit can omit data to keep the notification’s payload size under the APNs size limit. Consider notifications an indication of remote changes. Use [`databaseScope`](ckdatabasenotification/databasescope.md) to determine which database has changes, and then [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) to fetch those changes. A notification’s [`isPruned`](cknotification/ispruned.md) property is [`true`](https://developer.apple.com/documentation/swift/true) if CloudKit omits data.
 
@@ -65,4 +63,4 @@ You don’t instantiate this class. Instead, implement [`application(_:didReceiv
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckdatabasenotification)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckdatabasenotification)*

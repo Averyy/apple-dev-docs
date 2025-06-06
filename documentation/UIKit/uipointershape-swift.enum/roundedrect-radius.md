@@ -1,6 +1,6 @@
 # UIPointerShape.roundedRect(_:radius:)
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: case
 
 The pointer morphs into a rounded rectangle using the provided corner radius.
@@ -22,8 +22,6 @@ case roundedRect(CGRect, radius: CGFloat = UIPointerShape.defaultCornerRadius)
 If you don’t specify a radius, the rounded rectangle uses the `defaultCornerRadius`.
 
 > **Note**:  If used alongside a content effect, this rectangle must be in the view coordinate space of the [`preview`](uipointereffect-swift.enum/preview.md). Otherwise, it’s centered around the pointer’s current location, and the rectangle’s origin is interpreted as an offset.
-
- If used alongside a content effect, this rectangle must be in the view coordinate space of the [`preview`](uipointereffect-swift.enum/preview.md). Otherwise, it’s centered around the pointer’s current location, and the rectangle’s origin is interpreted as an offset.
 
 ## See Also
 

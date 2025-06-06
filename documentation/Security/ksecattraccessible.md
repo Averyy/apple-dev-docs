@@ -30,13 +30,9 @@ The corresponding value, one of those found in [`Accessibility Values`](item-att
 
 > ❗ **Important**:  You can use this attribute for macOS keychain items only if you also set a value of `true` for the [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) key, the [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) key, or both. For any item marked as synchronizable, the value for the [`kSecAttrAccessible`](ksecattraccessible.md) key may only be one whose name does not end with `ThisDeviceOnly`, as those cannot sync to another device.
 
- You can use this attribute for macOS keychain items only if you also set a value of `true` for the [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) key, the [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) key, or both. For any item marked as synchronizable, the value for the [`kSecAttrAccessible`](ksecattraccessible.md) key may only be one whose name does not end with `ThisDeviceOnly`, as those cannot sync to another device.
-
 > **Note**:  The app  provide the contents of the keychain item ([`kSecValueData`](ksecvaluedata.md)) when changing this attribute in iOS 4 and earlier.
-
- The app  provide the contents of the keychain item ([`kSecValueData`](ksecvaluedata.md)) when changing this attribute in iOS 4 and earlier.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/ksecattraccessible)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security/ksecattraccessible)*

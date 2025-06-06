@@ -1,6 +1,6 @@
 # insertValue(_:at:inPropertyWithKey:)
 
-**Framework**: Objective-C Runtime  
+**Framework**: Objectivec  
 **Kind**: method
 
 Inserts an object at the specified index in the collection specified by the passed key.
@@ -20,8 +20,6 @@ func insertValue(_ value: Any, at index: Int, inPropertyWithKey key: String)
 The method `insertIn<Key>:atIndex:` is invoked if it exists. If no corresponding scripting-KVC-compliant method (`insertIn<Key>:atIndex:` ) is found, this method invokes `mutableArrayValueForKey:` and mutates the result.
 
 > **Note**:  Prior to OS X version 10.4, this method did not invoke `-mutableArrayValueForKey:`.
-
- Prior to OS X version 10.4, this method did not invoke `-mutableArrayValueForKey:`.
 
 ## See Also
 

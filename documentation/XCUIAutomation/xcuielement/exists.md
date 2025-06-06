@@ -28,8 +28,6 @@ This property determines if the element exists within the app’s current UI hie
 
 > **Note**:  The fact that an element exists doesn’t imply that it’s hittable. Elements can exist offscreen, or exist onscreen but be hidden by another element, causing their [`isHittable`](xcuielement/ishittable.md) property to return false.
 
- The fact that an element exists doesn’t imply that it’s hittable. Elements can exist offscreen, or exist onscreen but be hidden by another element, causing their [`isHittable`](xcuielement/ishittable.md) property to return false.
-
 ## See Also
 
 - [func waitForExistence(timeout: TimeInterval) -> Bool](xcuielement/waitforexistence(timeout:).md)

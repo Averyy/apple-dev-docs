@@ -18,8 +18,6 @@ On Apple Watch, the long-look interface displays the actions as buttons below th
 
 > **Note**: Interactive notifications and actionable notifications play similar but distinct roles. An interactive notification enables direct interaction with the notification from the long-look interface, but the system keeps the interactive notification on screen as it calls the notification controller’s action methods. You typically use interactive notifications to modify the notification’s appearance, such as showing or hiding additional information. Actionable notifications, on the other hand, pass control back to your app. Use actionable notifications to enable users to trigger actions based on the notification. For more information, see [`Customizing your long-look interface`](customizing-your-long-look-interface.md).
 
-Interactive notifications and actionable notifications play similar but distinct roles. An interactive notification enables direct interaction with the notification from the long-look interface, but the system keeps the interactive notification on screen as it calls the notification controller’s action methods. You typically use interactive notifications to modify the notification’s appearance, such as showing or hiding additional information. Actionable notifications, on the other hand, pass control back to your app. Use actionable notifications to enable users to trigger actions based on the notification. For more information, see [`Customizing your long-look interface`](customizing-your-long-look-interface.md).
-
 ##### Register Actions with the Category
 
 Before you can add actions to a notification, you must create a notification category and register the actions for that category. A category is just a string identifier that specifies a type of notification used by your app.
@@ -90,4 +88,4 @@ The following rules define where the system handles the action:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/adding-actions-to-notifications-on-watchos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/adding-actions-to-notifications-on-watchos)*

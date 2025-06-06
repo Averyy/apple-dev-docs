@@ -1,6 +1,6 @@
 # MLDataTable
 
-**Framework**: Create ML  
+**Framework**: Createml  
 **Kind**: struct
 
 A table of data for training or evaluating a machine learning model.
@@ -36,8 +36,6 @@ After you create a data table, you can modify it with methods like [`append(cont
 
 > **Note**: For a demonstration that creates and uses data tables, see [`Creating a Model from Tabular Data`](creating_a_model_from_tabular_data.md).
 
-For a demonstration that creates and uses data tables, see [`Creating a Model from Tabular Data`](creating_a_model_from_tabular_data.md).
-
 Finally, when your data table is ready, use it to train and evaluate a model from these groups:
 
 - Regressors like [`MLRegressor`](mlregressor.md) and its supporting types
@@ -45,8 +43,6 @@ Finally, when your data table is ready, use it to train and evaluate a model fro
 - Natural language processing types like [`MLTextClassifier`](mltextclassifier.md) and [`MLWordTagger`](mlwordtagger.md)
 
 > **Note**: It’s easier to train an [`MLTextClassifier`](mltextclassifier.md) from folders and files with [`init(trainingData:parameters:)`](mltextclassifier/init(trainingdata:parameters:)-8n8vs.md) if your data is ready to use, as-is. Otherwise, use a data table to prepare your data before training a text classifier.
-
-It’s easier to train an [`MLTextClassifier`](mltextclassifier.md) from folders and files with [`init(trainingData:parameters:)`](mltextclassifier/init(trainingdata:parameters:)-8n8vs.md) if your data is ready to use, as-is. Otherwise, use a data table to prepare your data before training a text classifier.
 
 ## Topics
 
@@ -167,4 +163,4 @@ It’s easier to train an [`MLTextClassifier`](mltextclassifier.md) from folders
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/createml/mldatatable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CreateML/mldatatable)*

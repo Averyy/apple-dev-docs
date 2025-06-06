@@ -1,6 +1,6 @@
 # usesStaticContents
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 A Boolean value indicating whether the table uses static data.
@@ -23,8 +23,6 @@ In Xcode, any rows you add to a static table are saved in the corresponding nib 
 
 > **Note**:  A table with static contents must be an [`NSView`](nsview.md)-based table view.
 
- A table with static contents must be an [`NSView`](nsview.md)-based table view.
-
 ## See Also
 
 - [var dataSource: (any NSTableViewDataSource)?](nstableview/datasource.md)
@@ -37,4 +35,4 @@ In Xcode, any rows you add to a static table are saved in the corresponding nib 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstableview/usesstaticcontents)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstableview/usesstaticcontents)*

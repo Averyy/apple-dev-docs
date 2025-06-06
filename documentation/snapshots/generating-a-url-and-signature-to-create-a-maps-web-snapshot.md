@@ -1,6 +1,6 @@
 # Generating a URL and Signature to Create a Maps Web Snapshot
 
-**Framework**: Maps Web Snapshots
+**Framework**: Snapshots
 
 Create a Snapshot URL and generate a signature to validate the request. 
 
@@ -20,8 +20,6 @@ If you don’t have a MapKit JS key, learn how to obtain one in [`Creating a Map
 
 > 💡 **Tip**: To locate your Team ID, sign in to your [`Apple Developer account`](https://developer.apple.comhttps://developer.apple.com/account) and click Membership in the left sidebar.
 
-To locate your Team ID, sign in to your [`Apple Developer account`](https://developer.apple.comhttps://developer.apple.com/account) and click Membership in the left sidebar.
-
 ##### 3290639
 
 Once you have your Team ID, Key ID, and private key file, use these credentials to generate a signature for a Maps Web Snapshots URL. You generate the signature using your credentials plus the snapshot URL request path and all query parameters, as described in [`Create a Maps Web Snapshot`](create_a_maps_web_snapshot.md). 
@@ -33,8 +31,6 @@ https://snapshot.apple-mapkit.com/api/v1/snapshot?center=apple+park
 ```
 
 > **Note**: Each query parameter must be URL-encoded. 
-
-Each query parameter must be URL-encoded. 
 
 Add the `teamID` and `keyID` parameters to the URL, setting the values of the parameters to your own Team ID and Key ID. For example: 
 

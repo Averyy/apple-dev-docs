@@ -1,6 +1,6 @@
 # SCPreferencesCommitChanges(_:)
 
-**Framework**: System Configuration  
+**Framework**: Systemconfiguration  
 **Kind**: func
 
 Commits changes made to the configuration preferences to persistent storage.
@@ -23,8 +23,6 @@ func SCPreferencesCommitChanges(_ prefs: SCPreferences) -> Bool
 Implicit calls to the [`SCPreferencesLock(_:_:)`](scpreferenceslock(_:_:).md) and [`SCPreferencesUnlock(_:)`](scpreferencesunlock(_:).md) functions are made if exclusive access has not already been established.
 
 > **Note**:  This function commits changes to persistent storage. To apply the changes to the running system, use the [`SCPreferencesApplyChanges(_:)`](scpreferencesapplychanges(_:).md) function.
-
- This function commits changes to persistent storage. To apply the changes to the running system, use the [`SCPreferencesApplyChanges(_:)`](scpreferencesapplychanges(_:).md) function.
 
 ## Parameters
 

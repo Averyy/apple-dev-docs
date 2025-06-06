@@ -1,6 +1,6 @@
 # sendChanges(_:)
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: method
 
 Sends pending local changes to the server.
@@ -25,8 +25,6 @@ final func sendChanges(_ options: CKSyncEngine.SendChangesOptions = .init()) asy
 Use this method to ensure the sync engine sends all pending local changes to the server before your app continues. This isn’t necessary in normal use, as the engine automatically syncs your app’s records. It is useful, however, in scenarios where you require greater control over sync, such as a “Backup now” button or unit tests.
 
 > **Note**:  [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) returns only after your sync delegate finishes processing all related send events.
-
- [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) returns only after your sync delegate finishes processing all related send events.
 
 ## Parameters
 

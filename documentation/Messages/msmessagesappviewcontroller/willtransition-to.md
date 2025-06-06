@@ -25,8 +25,6 @@ The system doesn’t call this method on a view controller that is presenting a 
 
 > **Note**:  Because the keyboard is not available in the [`MSMessagesAppPresentationStyle.compact`](msmessagesapppresentationstyle/compact.md) style, adding text fields or text views to your compact layout is not recommended.
 
- Because the keyboard is not available in the [`MSMessagesAppPresentationStyle.compact`](msmessagesapppresentationstyle/compact.md) style, adding text fields or text views to your compact layout is not recommended.
-
 ## Parameters
 
 - `presentationStyle`: The new presentation style. For a list of possible styles, see  .

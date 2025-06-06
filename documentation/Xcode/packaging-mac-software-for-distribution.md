@@ -17,8 +17,6 @@ If you can’t build and distribute your product using Xcode alone, choose a con
 
 > **Note**: If you use a third-party developer tool to build your app, consult its documentation for advice specific to that tool.
 
-If you use a third-party developer tool to build your app, consult its documentation for advice specific to that tool.
-
 #### Decide on a Container Format
 
 To get started, decide on your container format. Mac products support two distribution channels:
@@ -66,8 +64,6 @@ Run the following command to confirm that your Installer-signing identity is pre
 The `-v` argument filters for valid identities only. If the Installer-signing identity you need isn’t listed, see [`Developer Account Help`](https://developer.apple.comhttps://help.apple.com/developer-account/).
 
 > ❗ **Important**: Don’t use the `-p codesigning` option to filter for code-signing identities. Installer-signing identities are different from code-signing identities, so the `-p codesigning` option filters out installer-signing identities.
-
-Don’t use the `-p codesigning` option to filter for code-signing identities. Installer-signing identities are different from code-signing identities, so the `-p codesigning` option filters out installer-signing identities.
 
 If your product consists of a single app, use the `productbuild` tool to create a simple Installer package for it. The following is the simplest use of `productbuild`, sufficient for submitting your app to the Mac App Store:
 
@@ -155,4 +151,4 @@ For products that you distribute as zip files or disk image files, consider thes
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/packaging-mac-software-for-distribution)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/packaging-mac-software-for-distribution)*

@@ -1,6 +1,6 @@
 # DriverKit
 
-**Framework**: DriverKit  
+**Framework**: Driverkit  
 **Kind**: module
 
 Develop device drivers that run in user space.
@@ -24,8 +24,6 @@ The drivers you build with DriverKit run in user space, rather than as kernel ex
 In macOS, use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade your driver. In iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
 
 > **Note**:  The base DriverKit framework is available in macOS for Apple silicon and Intel-based Mac computers, and in iPadOS for devices with an M-series chip. The availability of family frameworks like [`USBDriverKit`](https://developer.apple.com/documentation/USBDriverKit) and [`AudioDriverKit`](https://developer.apple.com/documentation/AudioDriverKit) varies by platform.
-
- The base DriverKit framework is available in macOS for Apple silicon and Intel-based Mac computers, and in iPadOS for devices with an M-series chip. The availability of family frameworks like [`USBDriverKit`](https://developer.apple.com/documentation/USBDriverKit) and [`AudioDriverKit`](https://developer.apple.com/documentation/AudioDriverKit) varies by platform.
 
 ## Topics
 

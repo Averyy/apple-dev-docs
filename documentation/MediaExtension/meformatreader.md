@@ -1,6 +1,6 @@
 # MEFormatReader
 
-**Framework**: MediaExtension  
+**Framework**: Mediaextension  
 **Kind**: protocol
 
 A protocol that defines the requirements for a format reader, which represents a single media asset.
@@ -20,17 +20,11 @@ This protocol provides an interface for the Media Toolbox to interact with exten
 
 > **Note**:  Developers who wish to build MediaExtension format readers using this API need to include a [`Format reader entitlement`](format-reader-entitlement.md), provisioning profile, and specialized dictionary in their Info.plist file when building their extensions. For more information, see [`Entitlements`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements), [`Create a development provisioning profile`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/create-a-development-provisioning-profile), and [`Format reader property list dictionaries`](format-reader-property-list-dictionaries.md).
 
- Developers who wish to build MediaExtension format readers using this API need to include a [`Format reader entitlement`](format-reader-entitlement.md), provisioning profile, and specialized dictionary in their Info.plist file when building their extensions.
-
-For more information, see [`Entitlements`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements), [`Create a development provisioning profile`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/create-a-development-provisioning-profile), and [`Format reader property list dictionaries`](format-reader-property-list-dictionaries.md).
-
 To create an `MEFormatReader` object, Media Toolbox first creates a primary [`MEByteSource`](mebytesource.md) object from a source media asset. It then creates an [`MEFormatReaderExtension`](meformatreaderextension.md) object and calls its [`formatReader(with:options:)`](meformatreaderextension/formatreader(with:options:).md) method.
 
 Once a user installs and runs the host app, embedded MediaExtension format reader extensions become available to any app on the user’s system that opts in to using them by calling [`MTRegisterProfessionalVideoWorkflowFormatReaders()`](https://developer.apple.com/documentation/MediaToolbox/MTRegisterProfessionalVideoWorkflowFormatReaders()).
 
 > ❗ **Important**:  `MEFormatReader` objects run in a sandboxed process with restricted access to the filesystem, network, and other kernel resources.
-
- `MEFormatReader` objects run in a sandboxed process with restricted access to the filesystem, network, and other kernel resources.
 
 ## Topics
 

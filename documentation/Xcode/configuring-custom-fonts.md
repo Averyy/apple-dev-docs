@@ -20,8 +20,6 @@ To register your app as a provider or consumer of systemwide custom fonts, follo
 
 > **Note**: The Fonts capability is only available to use with iOS apps that target iOS 13 and later.
 
-The Fonts capability is only available to use with iOS apps that target iOS 13 and later.
-
 ##### Select the Required Privileges
 
 Before your iOS app can install one or more custom fonts or use fonts that other apps provide, you must enable the necessary privileges by performing the following:
@@ -35,8 +33,6 @@ Before your iOS app can install one or more custom fonts or use fonts that other
 ![A screenshot of the Fonts capability after you add it to an iOS target. The Install Fonts and Use Installed Fonts privileges are in an enabled state.](https://docs-assets.developer.apple.com/published/7537b87aaffa33681a478a748a9bf357/fonts-consumer-provider%402x.png)
 
 > 💡 **Tip**: Fonts privileges aren’t exclusive; your iOS app can provide fonts for use in other apps and consume fonts that other apps install systemwide.
-
-Fonts privileges aren’t exclusive; your iOS app can provide fonts for use in other apps and consume fonts that other apps install systemwide.
 
 Xcode adds the `com.apple.developer.user-fonts` array to your app’s entitlements file, if not already present, and uses the privileges you enable to populate that array with the corresponding values.
 
@@ -66,4 +62,4 @@ For more information, see the WWDC session video [`Font Management and Text Scal
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-custom-fonts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-custom-fonts)*

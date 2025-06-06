@@ -123,9 +123,7 @@ In this example, the `CFArrayCallBacks` initializer uses `nil` values as argumen
 
 > **Note**: Only Swift function types with C function reference calling convention may be used for function pointer arguments. Like a C function pointer, a Swift function type with the `@convention(c)` attribute does not capture the context of its surrounding scope.
 
-Only Swift function types with C function reference calling convention may be used for function pointer arguments. Like a C function pointer, a Swift function type with the `@convention(c)` attribute does not capture the context of its surrounding scope.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/calling-functions-with-pointer-parameters)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/calling-functions-with-pointer-parameters)*

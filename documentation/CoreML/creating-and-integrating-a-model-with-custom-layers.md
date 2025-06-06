@@ -1,6 +1,6 @@
 # Creating and Integrating a Model with Custom Layers
 
-**Framework**: Core ML
+**Framework**: Coreml
 
 Add models with custom neural-network layers to your app.
 
@@ -9,8 +9,6 @@ Add models with custom neural-network layers to your app.
 New network layers and architectures solve problems that might be difficult or impractical with code. You can support each new layer type before Core ML directly supports it by implementing a . A custom layer is a class that adopts [`MLCustomLayer`](mlcustomlayer.md) and implements the methods to run a neural network layer in code.
 
 > **Note**:  Core ML supports models with custom layers beginning with these software releases: iOS 11.2, macOS 10.13.2, tvOS 11.2 and watchOS 4.2.
-
- Core ML supports models with custom layers beginning with these software releases: iOS 11.2, macOS 10.13.2, tvOS 11.2 and watchOS 4.2.
 
 ##### Add a Model You Acquire or Create
 
@@ -40,15 +38,11 @@ Create a class for each custom layer that the model has in its list of dependenc
 
 > ❗ **Important**:  Swift classes must subclass [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) and use the `@objc` attribute so that Core ML can access your custom layer’s implementation.
 
- Swift classes must subclass [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) and use the `@objc` attribute so that Core ML can access your custom layer’s implementation.
-
 Adopt the [`MLCustomLayer`](mlcustomlayer.md) protocol by implementing the following:
 
 Core ML invokes the appropriate [`MLCustomLayer`](mlcustomlayer.md) methods for each custom layer at runtime when your app calls the [`prediction(from:)`](mlmodel/prediction(from:)-9y2aa.md) method.
 
 > ⚠️ **Warning**:  Don’t change the values that Core ML provides to these methods — such as weights, inputs, or outputs — because it may cause your app to behave in unexpected ways, and possibly crash.
-
- Don’t change the values that Core ML provides to these methods — such as weights, inputs, or outputs — because it may cause your app to behave in unexpected ways, and possibly crash.
 
 ##### Test the Custom Layers
 
@@ -62,4 +56,4 @@ If applicable, test the custom layers by using the model to make predictions wit
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coreml/creating-and-integrating-a-model-with-custom-layers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/creating-and-integrating-a-model-with-custom-layers)*

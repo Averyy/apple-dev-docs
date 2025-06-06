@@ -1,6 +1,6 @@
 # placeholderURL(for:)
 
-**Framework**: File Provider  
+**Framework**: Fileprovider  
 **Kind**: method
 
 Returns a placeholder URL for a given document URL.
@@ -25,8 +25,6 @@ A placeholder URL for the given document.
 This method maps file URLs into their corresponding placeholder URLs. You typically call this method to generate the placeholder URL before calling [`writePlaceholder(at:withMetadata:)`](nsfileproviderextension/writeplaceholder(at:withmetadata:).md).
 
 > **Note**:  While this method is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
-
- While this method is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
 
 ## Parameters
 

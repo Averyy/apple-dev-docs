@@ -28,8 +28,6 @@ If no options are specified, the formatter localizes according to the preference
 
 > **Note**:  `NSMeasurementFormatter` handles the conversion of measurements to the preferred units in a particular locale when this option is specified. For example, if provided a measurement object in kilojoules, the formatter implicitly converts the measurement object to kilocalories and returns the formatted string as the equivalent measurement in kilocalories.
 
- `NSMeasurementFormatter` handles the conversion of measurements to the preferred units in a particular locale when this option is specified. For example, if provided a measurement object in kilojoules, the formatter implicitly converts the measurement object to kilocalories and returns the formatted string as the equivalent measurement in kilocalories.
-
 ## See Also
 
 - [var unitStyle: Formatter.UnitStyle](measurementformatter/unitstyle.md)

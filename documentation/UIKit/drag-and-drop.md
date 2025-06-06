@@ -1,6 +1,6 @@
 # Drag and drop
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Bring drag and drop to your app by using interaction APIs with your views.
 
@@ -16,8 +16,6 @@ With drag and drop in iOS, users can drag items from one onscreen location to an
 
 > **Note**:  Prior to iOS 15, drag-and-drop activities on iPhone can take place in a single app but not between two apps.
 
- Prior to iOS 15, drag-and-drop activities on iPhone can take place in a single app but not between two apps.
-
 The app from which an item is dragged is the . The app on which an item is dropped is the . For drag and drop in a single app, that app plays both roles simultaneously. The complete user action from start to finish — using system-mediated gestures — is a . A , by contrast, is an object that’s managed by the system and that manages the items the user is dragging.
 
 When dragging is in progress, the source and destination apps continue to run normally and support user interaction. A user can invoke the Dock, return to the Home screen, open a second app in Split View, and even start another drag activity.
@@ -27,8 +25,6 @@ Unlike in macOS, iOS drag and drop supports multiple simultaneous drag activitie
 Text views and text fields automatically support drag and drop. Collection views and table views offer dedicated, view-specific methods and properties, and text views offer APIs for customizing the views’ drag-and-drop behavior. You can configure any custom view to support drag and drop, as well.
 
 > **Note**:  The system handles all security aspects of inter-app drag and drop in iOS. You don’t need to perform additional configuration like setting special entitlements or `Info.plist` keys.
-
- The system handles all security aspects of inter-app drag and drop in iOS. You don’t need to perform additional configuration like setting special entitlements or `Info.plist` keys.
 
 ## Topics
 
@@ -126,4 +122,4 @@ Text views and text fields automatically support drag and drop. Collection views
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/drag-and-drop)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/drag-and-drop)*

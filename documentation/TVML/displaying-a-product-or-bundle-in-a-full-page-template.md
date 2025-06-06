@@ -1,6 +1,6 @@
 # Displaying a Product or Bundle in a Full-Page Template
 
-**Framework**: TVML
+**Framework**: Tvml
 
 Specify scrollable and fixed regions in a product page.
 
@@ -11,8 +11,6 @@ Specify scrollable and fixed regions in a product page.
 #### Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`211: Mastering the Living Room with tvOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/211/).
-
-This sample code project is associated with WWDC 2019 session [`211: Mastering the Living Room with tvOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/211/).
 
 ##### Configure the Sample Code Project
 
@@ -60,4 +58,4 @@ ruby -run -ehttpd . -p9001
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvml/displaying-a-product-or-bundle-in-a-full-page-template)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVML/displaying-a-product-or-bundle-in-a-full-page-template)*

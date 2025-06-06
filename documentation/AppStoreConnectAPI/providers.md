@@ -1,6 +1,6 @@
 # Providers
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read information about source code management providers you connected to Xcode Cloud.
 
@@ -13,8 +13,6 @@ The `scmProviders` resource represents the source code management (SCM) provider
 - The provider’s URL
 
 > **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
-
- This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
 
@@ -45,4 +43,4 @@ The `scmProviders` resource represents the source code management (SCM) provider
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/providers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/providers)*

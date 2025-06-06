@@ -36,8 +36,6 @@ You can generate the `app-argument` parameter for each page dynamically with a s
 
 > **Note**:  You can’t display Smart App Banners inside a frame. Banners don’t appear in the iOS simulator.
 
- You can’t display Smart App Banners inside a frame. Banners don’t appear in the iOS simulator.
-
 ##### Provide Navigational Context to Your App
 
 Implement the [`application(_:open:sourceApplication:annotation:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:open:sourceApplication:annotation:)): method in your app delegate, which fires when your app is launched from a URL. Then provide logic that can interpret the URL you pass. The value you set for the `app-argument` parameter is available as the [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) [`url`](https://developer.apple.com/documentation/foundation/nsurlcomponents/1413469-url) object.
@@ -76,4 +74,4 @@ The code sample below is for a website that passes data to a native iOS app. It 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/webkit/promoting-apps-with-smart-app-banners)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/promoting-apps-with-smart-app-banners)*

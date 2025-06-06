@@ -1,6 +1,6 @@
 # QuickTime video codec type
 
-**Framework**: QuickTime File Format
+**Framework**: Quicktime File Format
 
 #### Overview
 
@@ -15,8 +15,6 @@ Examples: `'mp4v'`, `'jpeg'`.
 A writer of the QuickTime video codec type feature should record the four-character code corresponding to the QuickTime video format type or types also recorded in the video track’s sample descriptions.
 
 > **Note**: A writer that records the QuickTime Video Codec type for the `'mp4v'` codec is encouraged also to write the MPEG-4 Video Profile feature.
-
-A writer that records the QuickTime Video Codec type for the `'mp4v'` codec is encouraged also to write the MPEG-4 Video Profile feature.
 
 #### Feature Value Algorithm
 

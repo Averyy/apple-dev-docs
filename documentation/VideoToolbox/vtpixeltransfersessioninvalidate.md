@@ -25,8 +25,6 @@ When you finish with a pixel transfer session you created, call this function to
 
 > **Note**:  A pixel transfer session is automatically invalidated when its retain count reaches zero, but because sessions may be retained by multiple parties, it’s hard to predict when the invalidation will happen.  Calling this function ensures a deterministic, orderly teardown.
 
- A pixel transfer session is automatically invalidated when its retain count reaches zero, but because sessions may be retained by multiple parties, it’s hard to predict when the invalidation will happen.  Calling this function ensures a deterministic, orderly teardown.
-
 ## Parameters
 
 - `session`: The pixel transfer session to invalidate.

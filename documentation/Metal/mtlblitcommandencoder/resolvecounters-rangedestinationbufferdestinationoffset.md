@@ -29,8 +29,6 @@ For an example of how and when to use this method, see [`Converting a GPU’s Co
 
 > **Note**:  The GPU stores [`MTLCounterErrorValue`](mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
 
- The GPU stores [`MTLCounterErrorValue`](mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
-
 ## Parameters
 
 - `sampleBuffer`: A counter sample buffer source that contains the sample data.

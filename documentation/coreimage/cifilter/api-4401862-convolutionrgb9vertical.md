@@ -1,6 +1,6 @@
 # convolutionRGB9Vertical()
 
-**Framework**: Core Image  
+**Framework**: Coreimage  
 **Kind**: clm
 
 Applies a convolution 1 x 9 filter to the RGB components of an image.
@@ -26,8 +26,6 @@ This method applies a 1 x 9 convolution to the `RGB` components of an image. The
 The convolution-RGB-9-vertical filter uses the following properties:
 
 > **Note**: When using a nonzero `bias` value, the output image has an infinite extent. You should crop the image before attempting to render it. 
-
-When using a nonzero `bias` value, the output image has an infinite extent. You should crop the image before attempting to render it. 
 
 The following code creates a filter that blurs the image in the vertical direction:
 

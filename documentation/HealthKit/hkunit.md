@@ -1,6 +1,6 @@
 # HKUnit
 
-**Framework**: HealthKit  
+**Framework**: Healthkit  
 **Kind**: class
 
 A class for managing the units of measure within HealthKit.
@@ -30,8 +30,6 @@ The unit class supports most standard SI units (meters, seconds, and grams), SI 
 You use units when working with HealthKit quantities. Quantities store both the value (as a `double` data type) and its corresponding unit. You can then request the value from the quantity in any compatible units. For more information on working with quantities, see [`HKQuantity`](hkquantity.md).
 
 > **Note**: Number formatters that use units (for example, [`EnergyFormatter`](https://developer.apple.com/documentation/Foundation/EnergyFormatter), [`LengthFormatter`](https://developer.apple.com/documentation/Foundation/LengthFormatter), and [`MassFormatter`](https://developer.apple.com/documentation/Foundation/MassFormatter)) use a custom enumeration to specify their units. For example, the [`EnergyFormatter`](https://developer.apple.com/documentation/Foundation/EnergyFormatter) class uses the [`EnergyFormatter.Unit`](https://developer.apple.com/documentation/Foundation/EnergyFormatter/Unit) enum. The [`HKUnit`](hkunit.md) class provides several methods to translate between the formatter enumerations and the HealthKit units. For more information, see Working with formatter units.
-
-Number formatters that use units (for example, [`EnergyFormatter`](https://developer.apple.com/documentation/Foundation/EnergyFormatter), [`LengthFormatter`](https://developer.apple.com/documentation/Foundation/LengthFormatter), and [`MassFormatter`](https://developer.apple.com/documentation/Foundation/MassFormatter)) use a custom enumeration to specify their units. For example, the [`EnergyFormatter`](https://developer.apple.com/documentation/Foundation/EnergyFormatter) class uses the [`EnergyFormatter.Unit`](https://developer.apple.com/documentation/Foundation/EnergyFormatter/Unit) enum. The [`HKUnit`](hkunit.md) class provides several methods to translate between the formatter enumerations and the HealthKit units. For more information, see Working with formatter units.
 
 ##### Using Units
 
@@ -246,4 +244,4 @@ Additionally, the unit class uses a single unit instance to represent all copies
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkunit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkunit)*

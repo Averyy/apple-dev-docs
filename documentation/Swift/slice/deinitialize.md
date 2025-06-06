@@ -31,8 +31,6 @@ The region of memory underlying this buffer slice must be fully initialized. Aft
 
 > **Note**: All buffer elements must already be initialized.
 
-All buffer elements must already be initialized.
-
 
 ---
 

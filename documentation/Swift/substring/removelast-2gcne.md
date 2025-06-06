@@ -31,8 +31,6 @@ The collection must not be empty. To remove the last element of a collection tha
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

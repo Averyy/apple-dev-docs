@@ -1,6 +1,6 @@
 # Supporting invocations from your website and the Messages app
 
-**Framework**: App Clips
+**Framework**: Appclip
 
 Display a Smart App Banner and the App Clip card on your website that people tap to launch your App Clip, and add support for invocations from the Messages app.
 
@@ -24,8 +24,6 @@ With the App Clip card on your website, people don’t need to tap the Smart App
 
 > 💡 **Tip**:  Displaying an App Clip card in Safari on devices that run iOS 15 or later increases the discoverability of your App Clip and reduces the number of taps required to launch the App Clip. However, obscuring your website’s content with the App Clip card may not be ideal. In this case, creating a dedicated page that displays the App Clip card in Safari and linking to it may be a good option to guide people to launch your App Clip.
 
- Displaying an App Clip card in Safari on devices that run iOS 15 or later increases the discoverability of your App Clip and reduces the number of taps required to launch the App Clip. However, obscuring your website’s content with the App Clip card may not be ideal. In this case, creating a dedicated page that displays the App Clip card in Safari and linking to it may be a good option to guide people to launch your App Clip.
-
 ##### Add Code to Display the Smart App Banner and the App Clip Card on Your Website
 
 In most cases, the best time to add the Smart App Banner and the App Clip card to your website is while you associate your App Clip with your website. Add both by including the following HTML `meta` tag and replacing all placeholders with the appropriate values:
@@ -37,8 +35,6 @@ In most cases, the best time to add the Smart App Banner and the App Clip card t
 Note how the `meta` tag’s `content` attribute includes the `app-clip-bundle-id`, `app-id`, and `app-clip-display` parameters. By including the `app-id` parameter, you enable the Smart App Banner to open the full app on devices that run iOS 13 or earlier and on devices where Screen Time or a mobile device management (MDM) profile don’t allow App Clips. By including the `app-clip-display` parameter, you display the App Clip card in Safari or an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) on devices running iOS 15 or later.
 
 > 💡 **Tip**:  If you already display a Smart App Banner on your site, add the `app-clip-bundle-id=appClipBundleID` attribute to the existing `meta` tag for the Smart App Banner, and use the bundle identifier of your App Clip for its value. To display the App Clip card on devices running iOS 15 or later, also add the `app-clip-display` parameter.
-
- If you already display a Smart App Banner on your site, add the `app-clip-bundle-id=appClipBundleID` attribute to the existing `meta` tag for the Smart App Banner, and use the bundle identifier of your App Clip for its value. To display the App Clip card on devices running iOS 15 or later, also add the `app-clip-display` parameter.
 
 Note that the value of a Smart App Banner’s `app-argument` attribute isn’t available to App Clips.
 
@@ -54,8 +50,6 @@ Sharing your App Clip in Messages requires that the recipient’s device:
 If a person shares the link with someone else as an SMS, the recipient must opt to load the rich link before they can tap the preview to launch the App Clip.
 
 > **Note**:  When a person taps a link to a website that displays the Smart App Banner in the Messages app, the invocation URL of your App Clip opens in the default browser.
-
- When a person taps a link to a website that displays the Smart App Banner in the Messages app, the invocation URL of your App Clip opens in the default browser.
 
 In addition to the above requirements, you must provide the preview image that appears in the Messages app. To provide the preview image:
 
@@ -79,8 +73,6 @@ In some cases, you may want to add the App Clip card and the Smart App Banner to
 
 > ❗ **Important**:  Remember to associate each domain where you display the App Clip card and the Smart App Banner with your App Clip as described in [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
 
- Remember to associate each domain where you display the App Clip card and the Smart App Banner with your App Clip as described in [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
-
 To avoid associating your App Clip with multiple domains, consider using one domain and use URLs like `https://example.com/business1` or `https://example.com/business2`. By using one domain, you’ll only have to associate your app and App Clip with `https://example.com` and configure an advanced App Clip experience for each URL.
 
 ## See Also
@@ -103,4 +95,4 @@ To avoid associating your App Clip with multiple domains, consider using one dom
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appclip/supporting-invocations-from-your-website-and-the-messages-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/supporting-invocations-from-your-website-and-the-messages-app)*

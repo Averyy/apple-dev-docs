@@ -18,8 +18,6 @@ When a user installs your app, the system attempts to download the associated do
 
 > **Note**: If your site uses multiple subdomains (such as `example.com`, `www.example.com`, and `support.example.com`), each requires its own entry in the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains), and each must serve its own `apple-app-site-association` file.
 
-If your site uses multiple subdomains (such as `example.com`, `www.example.com`, and `support.example.com`), each requires its own entry in the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains), and each must serve its own `apple-app-site-association` file.
-
 To add the associated domain file to your website, create a file named `apple-app-site-association` (without an extension). Update the JSON code in the file for the services you support on the domain. For universal links, be sure to list the app identifiers for your domain in the `applinks` service. Similarly, if you create an App Clip, be sure to list your App Clip’s app identifier using the `appclips` service.
 
 The following JSON code represents the contents of a simple association file:
@@ -86,8 +84,6 @@ To set up the entitlement in your app, open the target’s Signing & Capabilitie
 
 > ❗ **Important**: For a single-target watchOS apps, add the Associated Domains capability to the watchOS app target. For watchOS apps with separate WatchKit extensions, you must add the Associated Domains capability to the WatchKit Extension target.
 
-For a single-target watchOS apps, add the Associated Domains capability to the watchOS app target. For watchOS apps with separate WatchKit extensions, you must add the Associated Domains capability to the WatchKit Extension target.
-
 To add your domain to the entitlement, click Add (+) at the bottom of the Domains table to add a placeholder domain. Replace the placeholder with the appropriate prefix for the service your app supports and your site’s domain. Make sure to only include the desired subdomain and the top-level domain. Don’t include path and query components or a trailing slash (`/)`.
 
 ![A screenshot of the Associated Domains table in Xcode with two domains listed.](https://docs-assets.developer.apple.com/published/3c16a5146cb1de5e57b632dce38b5553/supporting-associated-domains-1%402x.png)
@@ -114,8 +110,6 @@ For more information about alternate modes, see [`Associated Domains Entitlement
 
 > ❗ **Important**: Apple’s content delivery network requests the `apple-app-site-association` file for your domain within 24 hours. Devices check for updates approximately once per week after app installation.
 
-Apple’s content delivery network requests the `apple-app-site-association` file for your domain within 24 hours. Devices check for updates approximately once per week after app installation.
-
 ## Topics
 
 ### Entitlements
@@ -128,4 +122,4 @@ Apple’s content delivery network requests the `apple-app-site-association` fil
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/supporting-associated-domains)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/supporting-associated-domains)*

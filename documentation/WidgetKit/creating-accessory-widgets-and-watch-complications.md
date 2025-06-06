@@ -19,11 +19,7 @@ Your path to creating accessory widgets and WidgetKit complications depends on y
 
 > **Note**: [`Session 10050: Complications and widgets: Reloaded`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10050) and [`Session 10051: Go further with complications in WidgetKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10051)
 
-[`Session 10050: Complications and widgets: Reloaded`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10050) and [`Session 10051: Go further with complications in WidgetKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10051)
-
 > **Note**: [`Session 10309:Design widgets for the Smart Stack on Apple Watch`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10309) and [`Session 10027: Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10027)
-
-[`Session 10309:Design widgets for the Smart Stack on Apple Watch`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10309) and [`Session 10027: Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10027)
 
 ##### Create a New App That Offers Widgets and Watch Complications
 
@@ -54,8 +50,6 @@ If your existing watchOS app doesn’t offer complications, add a watchOS widget
 If your watchOS app offers ClockKit complications, continue to use these to support watchOS 8 and earlier. However, plan to migrate your existing ClockKit complications to WidgetKit as described in [`Migrating ClockKit complications to WidgetKit`](converting-a-clockkit-app.md).
 
 > ❗ **Important**: As soon as you offer a widget-based complication, the system stops calling ClockKit APIs. For example, it no longer calls your [`CLKComplicationDataSource`](https://developer.apple.com/documentation/ClockKit/CLKComplicationDataSource) object’s methods to request timeline entries. The system may still wake your data source for migration requests.
-
-As soon as you offer a widget-based complication, the system stops calling ClockKit APIs. For example, it no longer calls your [`CLKComplicationDataSource`](https://developer.apple.com/documentation/ClockKit/CLKComplicationDataSource) object’s methods to request timeline entries. The system may still wake your data source for migration requests.
 
 Additionally, consider adding support for iOS by adding an iOS app target to your Xcode project if your watchOS app doesn’t come with an iOS companion app.
 
@@ -91,4 +85,4 @@ Additionally, consider adding support for iOS by adding an iOS app target to you
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/creating-accessory-widgets-and-watch-complications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/creating-accessory-widgets-and-watch-complications)*

@@ -1,6 +1,6 @@
 # zoomIn
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: property
 
 Returns the zoom-in cursor.
@@ -21,9 +21,7 @@ class var zoomIn: NSCursor { get }
 
 > **Note**: This cursor is used to indicate zooming in on (magnifying) a canvas or object.
 
-This cursor is used to indicate zooming in on (magnifying) a canvas or object.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscursor/zoomin)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscursor/zoomin)*

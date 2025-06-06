@@ -28,8 +28,6 @@ var isHittable: Bool { get }
 
 > **Note**:  [`isHittable`](xcuielement/ishittable.md) only returns [`true`](https://developer.apple.com/documentation/swift/true) if the element is already visible and hittable onscreen. It returns [`false`](https://developer.apple.com/documentation/swift/false) for an offscreen element in a scrollable view, even if the element can be scrolled into a hittable position by calling [`click()`](xcuielement/click().md), [`tap()`](xcuielement/tap().md), or another hit-point-related interaction method.
 
- [`isHittable`](xcuielement/ishittable.md) only returns [`true`](https://developer.apple.com/documentation/swift/true) if the element is already visible and hittable onscreen. It returns [`false`](https://developer.apple.com/documentation/swift/false) for an offscreen element in a scrollable view, even if the element can be scrolled into a hittable position by calling [`click()`](xcuielement/click().md), [`tap()`](xcuielement/tap().md), or another hit-point-related interaction method.
-
 ## See Also
 
 - [func waitForExistence(timeout: TimeInterval) -> Bool](xcuielement/waitforexistence(timeout:).md)

@@ -14,8 +14,6 @@ Generate ray-traced images with motion blur using GPU-based parallel processing.
 
 > **Note**: This sample code project is associated with WWDC22 session [`10105: Maximize your Metal ray tracing performance`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10105/) and WWDC21 session [`10149: Enhance your app with Metal ray tracing`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10149/).
 
-This sample code project is associated with WWDC22 session [`10105: Maximize your Metal ray tracing performance`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10105/) and WWDC21 session [`10149: Enhance your app with Metal ray tracing`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10149/).
-
 ##### Configure the Sample Code Project
 
 This sample requires the following system and software configuration:
@@ -38,4 +36,4 @@ This sample requires the following system and software configuration:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/accelerating-ray-tracing-and-motion-blur-using-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Metal/accelerating-ray-tracing-and-motion-blur-using-metal)*

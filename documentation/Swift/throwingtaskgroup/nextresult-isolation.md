@@ -47,8 +47,6 @@ If the next child task throws an error and you propagate that error from this me
 
 > **Note**: `next()`
 
-`next()`
-
 ## See Also
 
 - [func next() async throws -> ChildTaskResult?](throwingtaskgroup/next.md)

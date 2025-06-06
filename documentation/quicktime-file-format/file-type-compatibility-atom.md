@@ -1,6 +1,6 @@
 # File type compatibility atom ('ftyp')
 
-**Framework**: QuickTime File Format  
+**Framework**: Quicktime File Format  
 **Kind**: class
 
 An atom that identifies the file type specifications with which the file is compatible.
@@ -19,8 +19,6 @@ The file type atom serves a further purpose of distinguishing among different ve
 
 > **Note**: The file type atom described here is functionally identical to the file type box defined in the ISO specifications for MPEG-4 and JPEG-2000.
 
-The file type atom described here is functionally identical to the file type box defined in the ISO specifications for MPEG-4 and JPEG-2000.
-
 The file type atom is optional, but strongly recommended. If present, it must be the first significant atom in the file, preceding the movie atom (and any free space atoms, preview atom, or movie data atoms).
 
 The file type atom has an atom type value of `'ftyp'` and contains the following fields: [`Size`](file_type_compatibility_atom/size.md), [`Type`](file_type_compatibility_atom/type.md), [`Major brand`](file_type_compatibility_atom/major_brand.md), [`Minor version`](file_type_compatibility_atom/minor_version.md), [`Compatible brands`](file_type_compatibility_atom/compatible_brands.md).
@@ -29,13 +27,9 @@ If none of the [`Compatible brands`](file_type_compatibility_atom/compatible_bra
 
 > **Note**: A common source of this error is an MPEG-4 file incorrectly named with the .mov file extension or with the MIME type incorrectly set to `“video/quicktime”`. MPEG-4 files are automatically imported by QuickTime only when they are correctly identified as MPEG-4 files using the Mac OS file type, file extension, or MIME type.
 
-A common source of this error is an MPEG-4 file incorrectly named with the .mov file extension or with the MIME type incorrectly set to `“video/quicktime”`. MPEG-4 files are automatically imported by QuickTime only when they are correctly identified as MPEG-4 files using the Mac OS file type, file extension, or MIME type.
-
 If you are creating a file type that is fully compatible with the QuickTime file format, one of the [`Compatible brands`](file_type_compatibility_atom/compatible_brands.md) fields must be set to `'qt  '`; otherwise QuickTime will not recognize the file as a QuickTime movie.
 
 > ⚠️ **Warning**: Use of the QuickTime file format in this manner is subject to license from Apple, Inc.
-
-Use of the QuickTime file format in this manner is subject to license from Apple, Inc.
 
 ## Topics
 

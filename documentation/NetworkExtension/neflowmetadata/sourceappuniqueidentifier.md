@@ -1,6 +1,6 @@
 # sourceAppUniqueIdentifier
 
-**Framework**: Network Extension  
+**Framework**: Networkextension  
 **Kind**: property
 
 A data instance that contains a unique hash value for the source application.
@@ -23,8 +23,6 @@ var sourceAppUniqueIdentifier: Data { get }
 The property contains the Code Directory Hash for the application.
 
 > **Note**:  The property’s value changes between different versions of an application.
-
- The property’s value changes between different versions of an application.
 
 ## See Also
 

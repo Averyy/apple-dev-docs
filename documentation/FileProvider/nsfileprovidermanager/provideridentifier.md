@@ -1,6 +1,6 @@
 # providerIdentifier
 
-**Framework**: File Provider  
+**Framework**: Fileprovider  
 **Kind**: property
 
 A purpose identifier for coordinated reads and writes.
@@ -26,8 +26,6 @@ This method returns the containing app’s bundle identifier.
 
 > **Note**:  While this property is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
 
- While this property is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
-
 ## See Also
 
 - [class var `default`: NSFileProviderManager](nsfileprovidermanager/default.md)
@@ -38,4 +36,4 @@ This method returns the containing app’s bundle identifier.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/provideridentifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/nsfileprovidermanager/provideridentifier)*

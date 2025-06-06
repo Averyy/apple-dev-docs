@@ -26,8 +26,6 @@ Call this method to have the render pipeline apply a bias to the rasterized dept
 
 > **Note**:  A depth bias only influences triangle primitives, but doesn’t apply to points or lines.
 
- A depth bias only influences triangle primitives, but doesn’t apply to points or lines.
-
 You can use a slope-scaled bias to fine-tune shadow maps and avoid artifacts. Depth artifacts typically come from polygons that exist in the same plane or when a polygon shadows itself, also known as . The pipeline calculates the bias value differently depending on the data type of the depth pixel format (see [`MTLPixelFormat`](mtlpixelformat.md)).
 
 For unsigned normal or (`Unorm`) pixel formats, the pipeline calculates the bias with a formula that consists of the following definitions:

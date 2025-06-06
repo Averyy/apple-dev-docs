@@ -22,8 +22,6 @@ func hv_vm_space_destroy(_ asid: hv_vm_space_t) -> hv_return_t
 
 > **Note**:  You can’t destroy default address space, `HV_VM_SPACE_DEFAULT.`
 
- You can’t destroy default address space, `HV_VM_SPACE_DEFAULT.`
-
 ## Parameters
 
 - `asid`: The address space ID.

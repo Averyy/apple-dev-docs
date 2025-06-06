@@ -1,6 +1,6 @@
 # elementsEqual(_:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Returns a Boolean value indicating whether this sequence and another sequence contain the same elements in the same order.
@@ -39,8 +39,6 @@ print(a.elementsEqual([1, 2, 3]))
 ```
 
 > **Note**: O(), where  is the lesser of the length of the sequence and the length of `other`.
-
-O(), where  is the lesser of the length of the sequence and the length of `other`.
 
 ## Parameters
 

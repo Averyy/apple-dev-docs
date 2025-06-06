@@ -28,8 +28,6 @@ The requested weather data set.
 
 > **Note**: Weather data error `WeatherError`
 
-Weather data error `WeatherError`
-
 This is a variadic API in which any combination of data sets can be requested and returned as a tuple. Here’s an example:
 
 ```None

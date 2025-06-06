@@ -1,6 +1,6 @@
 # SceneRealityCoordinateSpace
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: struct
 
 The coordinate space that represents the center of a RealityKit scene.
@@ -23,8 +23,6 @@ struct SceneRealityCoordinateSpace
 The center, or origin, of a RealityKit scene varies depending on the platform and context:
 
 > **Note**: This object is equivalent to [`scene`](realitycoordinatespace/scene.md).
-
-This object is equivalent to [`scene`](realitycoordinatespace/scene.md).
 
 ## Topics
 
@@ -53,4 +51,4 @@ This object is equivalent to [`scene`](realitycoordinatespace/scene.md).
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/scenerealitycoordinatespace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/scenerealitycoordinatespace)*

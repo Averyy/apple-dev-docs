@@ -1,6 +1,6 @@
 # init(contentsOf:ofType:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: init
 
 Initializes a document located by a URL of a specified type.
@@ -28,10 +28,6 @@ This method is invoked by the `NSDocumentController` method [`makeDocument(withC
 For backward binary compatibility with OS X v10.3 and earlier, the default implementation of this method instead invokes [`initWithContentsOfFile:ofType:`](nsdocument/initwithcontentsoffile:oftype:.md) if it is overridden and the URL uses the `file:` scheme. It still updates the  [`fileModificationDate`](nsdocument/filemodificationdate.md) property in this situation.
 
 > **Note**:  In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure. When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
-
- In Swift, this method is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
-
-When overriding this method, use the `throw` statement to throw an `NSError`, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 

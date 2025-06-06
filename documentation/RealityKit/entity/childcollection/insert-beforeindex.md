@@ -1,6 +1,6 @@
 # insert(_:beforeIndex:)
 
-**Framework**: RealityKit  
+**Framework**: Realitykit  
 **Kind**: method
 
 Adds the specified entity to this collection directly before the entity at the given index. If the entity is already located before the index, the collection will not change.
@@ -21,8 +21,6 @@ mutating func insert(_ entity: Entity, beforeIndex index: Int)
 #### Discussion
 
 > **Note**: This operation can invalidate the index order of any extant entities.
-
-This operation can invalidate the index order of any extant entities.
 
 ## Parameters
 

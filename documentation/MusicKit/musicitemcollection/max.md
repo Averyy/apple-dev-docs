@@ -1,6 +1,6 @@
 # max()
 
-**Framework**: MusicKit  
+**Framework**: Musickit  
 **Kind**: method
 
 Returns the maximum element in the sequence.
@@ -37,8 +37,6 @@ print(greatestHeight)
 ```
 
 > **Note**: O(), where  is the length of the sequence.
-
-O(), where  is the length of the sequence.
 
 
 ---

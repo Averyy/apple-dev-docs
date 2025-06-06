@@ -29,8 +29,6 @@ A new `Decoder` to pass to `super.init(from:)`.
 
 > **Note**: `DecodingError.valueNotFound` if the encountered encoded value is null, or of there are no more values to decode.
 
-`DecodingError.valueNotFound` if the encountered encoded value is null, or of there are no more values to decode.
-
 
 ---
 

@@ -40,11 +40,7 @@ If the task has already run past the last point where it could have performed a 
 
 > **Note**: `Task.checkCancellation()`
 
-`Task.checkCancellation()`
-
 > **Note**: `withTaskCancellationHandler(operation:onCancel:isolation:)`
-
-`withTaskCancellationHandler(operation:onCancel:isolation:)`
 
 ## See Also
 

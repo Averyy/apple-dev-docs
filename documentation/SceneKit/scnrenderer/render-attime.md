@@ -1,6 +1,6 @@
 # render(atTime:)
 
-**Framework**: SceneKit  
+**Framework**: Scenekit  
 **Kind**: method
 
 Renders the scene’s contents at the specified system time in the renderer’s OpenGL context.
@@ -26,8 +26,6 @@ This method can be used only with an [`SCNRenderer`](scnrenderer.md) object crea
 When you call this method, SceneKit updates its hierarchy of presentation nodes based on the specified timestamp, and then draws the scene.
 
 > **Note**:  By default, the playback timing of actions and animations in a scene is based on the system time, not the scene time. Before using this method to control the playback of animations, set the [`usesSceneTimeBase`](https://developer.apple.com/documentation/QuartzCore/CAAnimation/usesSceneTimeBase) property of each animation to [`true`](https://developer.apple.com/documentation/swift/true), or specify the [`playUsingSceneTimeBase`](scnscenesource/animationimportpolicy/playusingscenetimebase.md) option when loading a scene file that contains animations.
-
- By default, the playback timing of actions and animations in a scene is based on the system time, not the scene time. Before using this method to control the playback of animations, set the [`usesSceneTimeBase`](https://developer.apple.com/documentation/QuartzCore/CAAnimation/usesSceneTimeBase) property of each animation to [`true`](https://developer.apple.com/documentation/swift/true), or specify the [`playUsingSceneTimeBase`](scnscenesource/animationimportpolicy/playusingscenetimebase.md) option when loading a scene file that contains animations.
 
 ## Parameters
 

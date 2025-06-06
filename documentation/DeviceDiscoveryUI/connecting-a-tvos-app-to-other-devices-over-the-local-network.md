@@ -1,6 +1,6 @@
 # Connecting a tvOS app to other devices over the local network
 
-**Framework**: DeviceDiscoveryUI
+**Framework**: Devicediscoveryui
 
 Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 
@@ -105,8 +105,6 @@ These devices:
 If the user selects a device, the system calls your `onSelect` closure. If they dismiss the device picker view, control returns to the view that displayed the device picker view.
 
 > **Note**:  While you can display the [`DevicePicker`](devicepicker.md) view in Simulator, it won’t show any devices on the local network. To test connections, run your code on a test device instead.
-
- While you can display the [`DevicePicker`](devicepicker.md) view in Simulator, it won’t show any devices on the local network. To test connections, run your code on a test device instead.
 
 If you’re using [`UIKit`](https://developer.apple.com/documentation/UIKit), use a [`DDDevicePickerViewController`](dddevicepickerviewcontroller.md) to present the device picker view.
 
@@ -257,4 +255,4 @@ Start the listener as quickly as possible after your app launches. This ensures 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/devicediscoveryui/connecting-a-tvos-app-to-other-devices-over-the-local-network)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DeviceDiscoveryUI/connecting-a-tvos-app-to-other-devices-over-the-local-network)*

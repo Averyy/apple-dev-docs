@@ -28,8 +28,6 @@ A collection of the elements at the positions in `subranges`.
 
 > **Note**: O(1)
 
-O(1)
-
 ## Parameters
 
 - `subranges`: The indices of the elements to retrieve from this   collection.

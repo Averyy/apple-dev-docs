@@ -1,6 +1,6 @@
 # streamType
 
-**Framework**: ScreenCaptureKit  
+**Framework**: Screencapturekit  
 **Kind**: property
 
 The type of the streaming content.
@@ -18,8 +18,6 @@ var streamType: SCStreamType { get }
 #### Discussion
 
 > **Note**:  Use the [`style`](sccontentfilter/style.md) property instead, which provides additional information about the content.
-
- Use the [`style`](sccontentfilter/style.md) property instead, which provides additional information about the content.
 
 ## See Also
 

@@ -28,8 +28,6 @@ If you set this value to something that is not a valid, percent-encoded string, 
 
 > **Note**:  Although an unencoded semicolon is a valid character in a percent-encoded path, for compatibility with the [`NSURL`](nsurl.md) class, you should always percent-encode it. To properly encode a string for use in the path component of a URL, use the character set returned by the `URLPathAllowedCharacterSet` method in conjunction with the [`addingPercentEncoding(withAllowedCharacters:)`](nsstring/addingpercentencoding(withallowedcharacters:).md) method.
 
- Although an unencoded semicolon is a valid character in a percent-encoded path, for compatibility with the [`NSURL`](nsurl.md) class, you should always percent-encode it. To properly encode a string for use in the path component of a URL, use the character set returned by the `URLPathAllowedCharacterSet` method in conjunction with the [`addingPercentEncoding(withAllowedCharacters:)`](nsstring/addingpercentencoding(withallowedcharacters:).md) method.
-
 ## See Also
 
 - [var percentEncodedFragment: String?](nsurlcomponents/percentencodedfragment.md)

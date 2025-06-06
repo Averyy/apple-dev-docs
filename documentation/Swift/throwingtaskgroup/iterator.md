@@ -45,8 +45,6 @@ for try await r in group { print(r) }
 
 > **Note**: `ThrowingTaskGroup.next()`
 
-`ThrowingTaskGroup.next()`
-
 ## Topics
 
 ### Instance Methods

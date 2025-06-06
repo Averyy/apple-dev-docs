@@ -1,6 +1,6 @@
 # NSLayoutAnchor
 
-**Framework**: UIKit  
+**Framework**: Uikit  
 **Kind**: class
 
 A factory class for creating layout constraint objects using a fluent API.
@@ -25,8 +25,6 @@ Use these constraints to programatically define your layout using Auto Layout. I
 
 > **Note**:  [`UIView`](uiview.md) does not provide anchor properties for the layout margin attributes. Instead, the [`layoutMarginsGuide`](uiview/layoutmarginsguide.md) property provides a [`UILayoutGuide`](uilayoutguide.md) object that represents these margins. Use the guide’s anchor properties to create your constraints.
 
- [`UIView`](uiview.md) does not provide anchor properties for the layout margin attributes. Instead, the [`layoutMarginsGuide`](uiview/layoutmarginsguide.md) property provides a [`UILayoutGuide`](uilayoutguide.md) object that represents these margins. Use the guide’s anchor properties to create your constraints.
-
 As you can see from these examples, the [`NSLayoutAnchor`](nslayoutanchor.md) class provides several advantages over using the [`NSLayoutConstraint`](nslayoutconstraint.md) API directly.
 
 - The code is cleaner, more concise, and easier to read.
@@ -34,21 +32,11 @@ As you can see from these examples, the [`NSLayoutAnchor`](nslayoutanchor.md) cl
 
 > **Note**:  While the [`NSLayoutAnchor`](nslayoutanchor.md) class provides additional type checking, it is still possible to create invalid constraints. For example, the compiler allows you to constrain one view’s [`leadingAnchor`](uiview/leadinganchor.md) with another view’s [`leftAnchor`](uiview/leftanchor.md), since they are both [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) instances. However, Auto Layout does not allow constraints that mix leading and trailing attributes with left or right attributes. As a result, this constraint crashes at runtime.
 
- While the [`NSLayoutAnchor`](nslayoutanchor.md) class provides additional type checking, it is still possible to create invalid constraints. For example, the compiler allows you to constrain one view’s [`leadingAnchor`](uiview/leadinganchor.md) with another view’s [`leftAnchor`](uiview/leftanchor.md), since they are both [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) instances. However, Auto Layout does not allow constraints that mix leading and trailing attributes with left or right attributes. As a result, this constraint crashes at runtime.
-
 For more information on the anchor properties, see [`bottomAnchor`](https://developer.apple.com/documentation/AppKit/NSView/bottomAnchor) in the [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/AppKit/NSView), or [`UILayoutGuide`](uilayoutguide.md).
 
 > **Note**:  You never use the [`NSLayoutAnchor`](nslayoutanchor.md) class directly. Instead, use one of its subclasses, based on the type of constraint you wish to create. - Use [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) to create horizontal constraints.
 - Use [`NSLayoutYAxisAnchor`](nslayoutyaxisanchor.md) to create vertical constraints.
 - Use [`NSLayoutDimension`](nslayoutdimension.md) to create constraints that affect the view’s height or width. However, since you access [`NSLayoutAnchor`](nslayoutanchor.md) objects using the anchor properties of a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/AppKit/NSView), or [`UILayoutGuide`](uilayoutguide.md), a correct subclass is automatically provided.
-
- You never use the [`NSLayoutAnchor`](nslayoutanchor.md) class directly. Instead, use one of its subclasses, based on the type of constraint you wish to create.
-
-- Use [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) to create horizontal constraints.
-- Use [`NSLayoutYAxisAnchor`](nslayoutyaxisanchor.md) to create vertical constraints.
-- Use [`NSLayoutDimension`](nslayoutdimension.md) to create constraints that affect the view’s height or width.
-
-However, since you access [`NSLayoutAnchor`](nslayoutanchor.md) objects using the anchor properties of a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/AppKit/NSView), or [`UILayoutGuide`](uilayoutguide.md), a correct subclass is automatically provided.
 
 ## Topics
 
@@ -105,4 +93,4 @@ However, since you access [`NSLayoutAnchor`](nslayoutanchor.md) objects using th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/nslayoutanchor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/nslayoutanchor)*

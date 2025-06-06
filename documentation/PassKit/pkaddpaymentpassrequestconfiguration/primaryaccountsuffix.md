@@ -1,6 +1,6 @@
 # primaryAccountSuffix
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 The last four or five digits of the card’s number.
@@ -23,8 +23,6 @@ var primaryAccountSuffix: String? { get set }
 The system prepends four dots to indicate that this is a partial number.
 
 > **Note**:  Do not use the complete primary account number from the card. Use the last four or five digits only.
-
- Do not use the complete primary account number from the card. Use the last four or five digits only.
 
 ## See Also
 

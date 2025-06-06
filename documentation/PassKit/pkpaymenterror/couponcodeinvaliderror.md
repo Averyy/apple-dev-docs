@@ -1,6 +1,6 @@
 # couponCodeInvalidError
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 The error code that indicates an invalid coupon.
@@ -23,8 +23,6 @@ static var couponCodeInvalidError: PKPaymentError.Code { get }
 Use this error code if the user entered an invalid coupon code in the payment sheet. You can use [`paymentCouponCodeInvalidError(localizedDescription:)`](pkpaymentrequest/paymentcouponcodeinvaliderror(localizeddescription:).md) to create an invalid coupon error object.
 
 > **Note**:  A coupon code error doesn’t prevent the user from authorizing the payment.
-
- A coupon code error doesn’t prevent the user from authorizing the payment.
 
 ## See Also
 

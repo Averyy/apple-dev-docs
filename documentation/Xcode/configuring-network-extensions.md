@@ -16,8 +16,6 @@ After you add the Network Extensions capability, Xcode updates your app’s enti
 
 > **Note**: If you remove the Network Extensions capability in Xcode, you must manually update the configuration of your app’s App ID in your developer account to disable Network Extensions.
 
-If you remove the Network Extensions capability in Xcode, you must manually update the configuration of your app’s App ID in your developer account to disable Network Extensions.
-
 ##### Enable the Required App Capabilities
 
 Before your app can use the [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension) framework to customize and extend the core networking features of iOS and macOS by implementing specific app capabilities, you must configure your Xcode project to include the necessary entitlements by performing the following steps:
@@ -34,8 +32,6 @@ Xcode automatically updates the [`Network Extensions Entitlement`](https://devel
 
 > ❗ **Important**: App capabilities may have specific restrictions and use cases, such as only being available on supervised iOS devices. For more information, see the documentation for each capability.
 
-App capabilities may have specific restrictions and use cases, such as only being available on supervised iOS devices. For more information, see the documentation for each capability.
-
 The following table lists the app capabilities that Network Extensions support:
 
 | Name | Description |
@@ -47,8 +43,6 @@ The following table lists the app capabilities that Network Extensions support:
 | DNS Settings | Your app creates and manages a system-wide DNS configuration using the DNS protocols DNS-over-TLS and DNS-over-HTTP. For more information, see [`DNS settings`](https://developer.apple.com/documentation/NetworkExtension/dns-settings). |
 
 > 💡 **Tip**: To learn more about the APIs you use to create apps that extend and customize the device’s networking capabilities, see the WWDC videos [`Network Extensions for the Modern Mac`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/714), [`Advances in Networking, Part 1`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/712), and [`What’s New in Network Extension and VPN`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2015/717).
-
-To learn more about the APIs you use to create apps that extend and customize the device’s networking capabilities, see the WWDC videos [`Network Extensions for the Modern Mac`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/714), [`Advances in Networking, Part 1`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/712), and [`What’s New in Network Extension and VPN`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2015/717).
 
 ## See Also
 
@@ -62,4 +56,4 @@ To learn more about the APIs you use to create apps that extend and customize th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-network-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-network-extensions)*

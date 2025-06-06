@@ -1,6 +1,6 @@
 # SKTileMapNode
 
-**Framework**: SpriteKit  
+**Framework**: Spritekit  
 **Kind**: class
 
 A two-dimensional array of images.
@@ -29,11 +29,7 @@ As with sprite nodes, you can layer tile maps with different blend modes or cont
 
 > **Note**:  A tile map can only render tile definitions that exist within the [`SKTileSet`](sktileset.md) you have provided it.
 
- A tile map can only render tile definitions that exist within the [`SKTileSet`](sktileset.md) you have provided it.
-
 > ❗ **Important**:  A tile map does not expose its tiles as nodes, and therefore you cannot assign individual tiles with a different [`zPosition`](sknode/zposition.md) or [`physicsBody`](sknode/physicsbody.md). Instead, layer tile map nodes on top of each other at the varying zPositions, and layer invisible `SKNodes` on top of the tile map node to attach physicsBodies to your tile map node.
-
- A tile map does not expose its tiles as nodes, and therefore you cannot assign individual tiles with a different [`zPosition`](sknode/zposition.md) or [`physicsBody`](sknode/physicsbody.md). Instead, layer tile map nodes on top of each other at the varying zPositions, and layer invisible `SKNodes` on top of the tile map node to attach physicsBodies to your tile map node.
 
 To work with a tile map programmatically, you supply `SKTileMapNode` with a tile set that defines the tile definitions it can render. Then, fill each tile in the tile map with the [`fill(with:)`](sktilemapnode/fill(with:).md) method and set individual tiles with [`setTileGroup(_:andTileDefinition:forColumn:row:)`](sktilemapnode/settilegroup(_:andtiledefinition:forcolumn:row:).md).
 
@@ -124,4 +120,4 @@ To work with a tile map programmatically, you supply `SKTileMapNode` with a tile
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/sktilemapnode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/sktilemapnode)*

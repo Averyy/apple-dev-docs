@@ -1,6 +1,6 @@
 # swiftLanguageVersion(_:_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Defines a `-swift-version` to pass  to the corresponding build tool.
@@ -17,8 +17,6 @@ static func swiftLanguageVersion(_ version: SwiftVersion, _ condition: BuildSett
 #### Discussion
 
 > **Note**: First available in PackageDescription 6.0.
-
-First available in PackageDescription 6.0.
 
 ## Parameters
 

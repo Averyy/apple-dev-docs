@@ -1,6 +1,6 @@
 # sorted(on:_:order:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Generates a data frame by copying the data frame’s rows and then sorting the rows according to two columns that you select by their column identifiers.
@@ -23,8 +23,6 @@ func sorted<T0, T1>(on columnID0: ColumnID<T0>, _ columnID1: ColumnID<T1>, order
 #### Discussion
 
 > **Note**: Elements with a value of `nil` are less than all non-`nil` values.
-
-Elements with a value of `nil` are less than all non-`nil` values.
 
 ## Parameters
 

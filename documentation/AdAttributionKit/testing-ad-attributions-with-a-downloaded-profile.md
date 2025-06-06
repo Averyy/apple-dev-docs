@@ -1,14 +1,12 @@
 # Testing ad attributions with a downloaded profile
 
-**Framework**: AdAttributionKit
+**Framework**: Adattributionkit
 
 Reduce the time-window for ad attributions and inspect postbacks using a proxy during testing.
 
 #### Overview
 
 > ❗ **Important**: You can only use the AdAttributionKit testing profile for devices running OS versions earlier than iOS 18. In iOS 18 and later, the testing profile no longer works in AdAttributionKit or SKAdNetwork, so you need to use the AdAttributionKit Developer Mode. For more information see, [`Testing ad attributions with Developer Mode`](testing-adattributionkit-with-developer-mode.md).
-
-You can only use the AdAttributionKit testing profile for devices running OS versions earlier than iOS 18. In iOS 18 and later, the testing profile no longer works in AdAttributionKit or SKAdNetwork, so you need to use the AdAttributionKit Developer Mode. For more information see, [`Testing ad attributions with Developer Mode`](testing-adattributionkit-with-developer-mode.md).
 
 You can reduce the time-window for receiving ad attribution postbacks by installing an AdAttributionKit testing profile on your test device.
 
@@ -21,8 +19,6 @@ With this profile, the installed app has 5 minutes to update the conversion valu
 This testing profile expires 2 weeks after you install it on the device. To continue testing, download the latest profile and reinstall it.
 
 > **Note**: To test ad attributions, you need to log in to the device with a production Apple ID. AdAttributionKit doesn’t support sandbox Apple IDs.
-
-To test ad attributions, you need to log in to the device with a production Apple ID. AdAttributionKit doesn’t support sandbox Apple IDs.
 
 #### Inspect Postbacks Using an Http Proxy
 
@@ -45,4 +41,4 @@ With the installed profile, the AdAttributionKit postbacks that the device sends
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/testing-ad-attributions-with-a-downloaded-profile)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/testing-ad-attributions-with-a-downloaded-profile)*

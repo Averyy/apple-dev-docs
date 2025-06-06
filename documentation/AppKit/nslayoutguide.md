@@ -1,6 +1,6 @@
 # NSLayoutGuide
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: class
 
 A rectangular area that can interact with Auto Layout.
@@ -35,8 +35,6 @@ You can use these guides to define the space between elements in your layout. Th
 A layout guide can also act as an opaque box that contains other views and controls, letting you encapsulate parts of your view and break up your layout into modular chunks.
 
 > **Note**:  Layout constraints do not fully encapsulate their contents. The system still compares the priority of optional constraints inside the layout guide with the priority of optional constraints outside the guide.
-
- Layout constraints do not fully encapsulate their contents. The system still compares the priority of optional constraints inside the layout guide with the priority of optional constraints outside the guide.
 
 ## Topics
 
@@ -95,4 +93,4 @@ A layout guide can also act as an opaque box that contains other views and contr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nslayoutguide)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nslayoutguide)*

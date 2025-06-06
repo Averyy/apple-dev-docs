@@ -1,6 +1,6 @@
 # Building a Full Screen Top Shelf Extension
 
-**Framework**: TV Services
+**Framework**: Tvservices
 
 Highlight content from your Apple TV application by building a full screen Top Shelf extension.
 
@@ -12,8 +12,6 @@ Highlight content from your Apple TV application by building a full screen Top S
 
 > **Note**: This sample code project is associated with WWDC 2019 session [`211: Mastering the Living Room With tvOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/211/).
 
-This sample code project is associated with WWDC 2019 session [`211: Mastering the Living Room With tvOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/211/).
-
 ## See Also
 
 - [class TVTopShelfContentProvider](tvtopshelfcontentprovider.md)
@@ -24,4 +22,4 @@ This sample code project is associated with WWDC 2019 session [`211: Mastering t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/tvservices/building-a-full-screen-top-shelf-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/TVServices/building-a-full-screen-top-shelf-extension)*

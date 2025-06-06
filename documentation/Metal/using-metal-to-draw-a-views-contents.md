@@ -17,8 +17,6 @@ In this sample, you’ll learn the basics of rendering graphics content with Met
 
 > **Note**: MetalKit automates windowing system tasks, loads textures, and handles 3D model data. See [`MetalKit`](https://developer.apple.com/documentation/MetalKit) for more information.
 
-MetalKit automates windowing system tasks, loads textures, and handles 3D model data. See [`MetalKit`](https://developer.apple.com/documentation/MetalKit) for more information.
-
 ##### Prepare a Metalkit View to Draw
 
 MetalKit provides a class called [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView), which is a subclass of [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) (in macOS) or [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) (in iOS and tvOS). `MTKView` handles many of the details related to getting the content you draw with Metal onto the screen.

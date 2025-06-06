@@ -36,8 +36,6 @@ print(cafe.lowercased())
 
 > **Note**: O()
 
-O()
-
 ## See Also
 
 - [func uppercased() -> String](string/uppercased.md)

@@ -1,6 +1,6 @@
 # indices(where:)
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Returns the indices of all the elements that match the given predicate.
@@ -36,8 +36,6 @@ let allTheVowels = str.indices(where: { vowels.contains($0) })
 ```
 
 > **Note**: O(), where  is the length of the collection.
-
-O(), where  is the length of the collection.
 
 ## Parameters
 

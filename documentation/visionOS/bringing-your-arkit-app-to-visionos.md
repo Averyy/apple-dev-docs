@@ -22,8 +22,6 @@ If you use [`Metal`](https://developer.apple.com/documentation/Metal) to draw yo
 
 > **Note**: In visionOS 2.0 and later, you can create a mixed immersive experience with Metal as well. Watch [`Render Metal with passthrough in visionOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10092) for more information and sample code.
 
-In visionOS 2.0 and later, you can create a mixed immersive experience with Metal as well. Watch [`Render Metal with passthrough in visionOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10092) for more information and sample code.
-
 ##### Convert 3d Assets to the Usdz Format
 
 The recommended format for 3D assets in iOS and visionOS is USDZ. This format offers a compact single file for everything, including your models, textures, behaviors, physics, anchoring, and more. If you have assets that don’t use this format, use the Reality Converter tool that comes with Xcode to convert them for your project.
@@ -48,8 +46,6 @@ A [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityVi
 
 > **Note**: You can load iOS storyboards into a visionOS app, but you can’t customize your interface for visionOS or include 3D content. If you want to share interface files between iOS and visionOS, adopt SwiftUI views or create your interface programmatically.
 
-You can load iOS storyboards into a visionOS app, but you can’t customize your interface for visionOS or include 3D content. If you want to share interface files between iOS and visionOS, adopt SwiftUI views or create your interface programmatically.
-
 For more information about how to use `RealityView` and respond to interactions with your content, see [`Adding 3D content to your app`](adding-3d-content-to-your-app.md).
 
 ##### Replace Your Arkit Code
@@ -67,8 +63,6 @@ The only time you use ARKit in visionOS is when you need one of the following se
 Use plane detection, image tracking, and scene reconstruction to facilitate interactions between your app’s virtual content and real-world items. For example, use plane detection to detect a tabletop on which to place your content. Use world tracking to record anchors that you want to persist between launches of your app. Use hand tracking if your app requires custom hand-based input.
 
 > ❗ **Important**: In visionOS 2.0 and later, use [`SpatialTrackingSession`](https://developer.apple.com/documentation/RealityKit/SpatialTrackingSession) for available AR data instead.
-
-In visionOS 2.0 and later, use [`SpatialTrackingSession`](https://developer.apple.com/documentation/RealityKit/SpatialTrackingSession) for available AR data instead.
 
 To start ARKit services in your app, create an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) object and run it with the data providers for each service. Unlike ARKit in iOS, services in visionOS are independent of one another, and you can start and stop each one at any time. The following example shows how to detect horizontal and vertical planes. Data providers deliver new information using an asynchronous sequence.
 
@@ -123,4 +117,4 @@ If you use ARKit raycasting in iOS to detect interactions with objects in the pe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/bringing-your-arkit-app-to-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/bringing-your-arkit-app-to-visionos)*

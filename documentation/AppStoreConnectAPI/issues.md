@@ -1,6 +1,6 @@
 # Issues
 
-**Framework**: App Store Connect API
+**Framework**: Appstoreconnectapi
 
 Read information about issues that occurred when Xcode Cloud performs a build.
 
@@ -13,8 +13,6 @@ The `ciIssues` resource represents issues that occur when Xcode Cloud performs a
 - A message describing the issue
 
 > **Note**:  This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
-
- This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
 
@@ -43,4 +41,4 @@ The `ciIssues` resource represents issues that occur when Xcode Cloud performs a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/issues)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/issues)*

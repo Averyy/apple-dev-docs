@@ -1,6 +1,6 @@
 # Recording student progress
 
-**Framework**: ClassKit
+**Framework**: Classkit
 
 Create an activity to record student progress through an assignment.
 
@@ -49,8 +49,6 @@ For privacy reasons, only users logged in with managed student accounts who have
 When you create and start an activity as shown above, you indicate that the user has begun an attempt at the task represented by the given context. This code runs each time a student attempts a task. For example, within the context of a book chapter, the app may create a reading activity that measures progress through the material. If the user abandons the task, then the next time they attempt it, create a new activity to record the new attempt as a new task. What it means to abandon a task (as opposed to pausing it) depends on your app’s usage model.
 
 > **Note**:  In some cases, the user might only pause the task—for example, to review something that appears in an earlier chapter. In that case, when the user resumes the current task, don’t create a new activity. Instead, restart the existing one. See [`Pause an activity when the user interrupts a task briefly`](recording-student-progress#Pause-an-activity-when-the-user-interrupts-a-task-briefly.md) for more details.
-
- In some cases, the user might only pause the task—for example, to review something that appears in an earlier chapter. In that case, when the user resumes the current task, don’t create a new activity. Instead, restart the existing one. See [`Pause an activity when the user interrupts a task briefly`](recording-student-progress#Pause-an-activity-when-the-user-interrupts-a-task-briefly.md) for more details.
 
 ##### Update Progress Periodically
 
@@ -105,8 +103,6 @@ Call the data store’s [`save(completion:)`](clsdatastore/save(completion:).md)
 
 > **Note**:  Because data must be synchronized across the network, expect some delay in a production environment between when you record results in your app, and when the teacher actually sees the results in Schoolwork.
 
- Because data must be synchronized across the network, expect some delay in a production environment between when you record results in your app, and when the teacher actually sees the results in Schoolwork.
-
 ##### Pause an Activity When the User Interrupts a Task Briefly
 
 You can also use the [`stop()`](clsactivity/stop().md) method to pause an activity. For example, if you’re measuring progress through a game and the user taps the pause button, you may want to tell the corresponding activity to stop. Resume a paused activity with another call to the [`start()`](clsactivity/start().md) method. You can stop and start repeatedly, but once you create a new activity in a given context using a call to the [`createNewActivity()`](clscontext/createnewactivity().md) method, the previous activity becomes final, and can no longer be accessed from your app.
@@ -114,8 +110,6 @@ You can also use the [`stop()`](clsactivity/stop().md) method to pause an activi
 Whether pausing makes sense depends on the particulars of your app. Typically, you pause when the user interrupts a task with the expectation of continuing after a brief delay, but create a new activity when the user makes a fresh attempt at a task.
 
 > **Note**:  The framework automatically pauses a running activity if your app enters the background, and resumes the same activity when your app returns to the foreground.
-
- The framework automatically pauses a running activity if your app enters the background, and resumes the same activity when your app returns to the foreground.
 
 ##### Optionally Mark an Assignment As Done
 
@@ -128,8 +122,6 @@ CLSDataStore.shared.completeAllAssignedActivities(matching: ["chapter-1", "quiz-
 You can do this automatically for tasks that have a well-defined end point, like a timed quiz. After time runs out, the student isn’t allowed to make any further changes, so your app marks the task as done. For a task without a strict time limit, but that ends with a submission of an artifact, like a drawing or a poem, you can call the completion method as part of the submission flow. If you already have a done button of some kind in your interface, you can call the method from that button’s handler.
 
 > **Note**:  A task’s progress isn’t connected to its Done indicator. For example, setting the [`progress`](clsactivity/progress.md) property to 1 doesn’t automatically force the Done indicator to true. Use progress to give teachers an idea of which parts of a task the student has attempted. Use the Done indicator to indicate that the student plans no further action for the activity.
-
- A task’s progress isn’t connected to its Done indicator. For example, setting the [`progress`](clsactivity/progress.md) property to 1 doesn’t automatically force the Done indicator to true. Use progress to give teachers an idea of which parts of a task the student has attempted. Use the Done indicator to indicate that the student plans no further action for the activity.
 
 ##### Record Progress at Multiple Levels of Hierarchy
 
@@ -145,8 +137,6 @@ When you do run more than one activity at a time, the data store’s [`runningAc
 
 > ❗ **Important**:  Recording at multiple levels of hierarchy is available in iOS 11.4 or later. In iOS 11.3, you can only run one activity at a time, so starting an activity when one is already running implicitly forces the running one to stop.
 
- Recording at multiple levels of hierarchy is available in iOS 11.4 or later. In iOS 11.3, you can only run one activity at a time, so starting an activity when one is already running implicitly forces the running one to stop.
-
 ## See Also
 
 - [class CLSActivity](clsactivity.md)
@@ -155,4 +145,4 @@ When you do run more than one activity at a time, the data store’s [`runningAc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/classkit/recording-student-progress)*
+*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/recording-student-progress)*

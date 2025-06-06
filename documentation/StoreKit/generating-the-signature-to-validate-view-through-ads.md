@@ -1,6 +1,6 @@
 # Generating the signature to validate view-through ads
 
-**Framework**: StoreKit
+**Framework**: Storekit
 
 Initiate install validation by displaying a view-through ad with signed parameters.
 
@@ -11,8 +11,6 @@ Install validation informs an ad network when users install and launch an app th
 Starting in iOS 14.5 with SKAdNetwork 2.2, ad networks can present view-through ads to provide custom ads using any media.
 
 > **Note**:  These instructions are for signing view-through ads. If you’re presenting a StoreKit-rendered ad, see [`Generating the signature to validate StoreKit-rendered ads`](generating-the-signature-to-validate-storekit-rendered-ads.md).
-
- These instructions are for signing view-through ads. If you’re presenting a StoreKit-rendered ad, see [`Generating the signature to validate StoreKit-rendered ads`](generating-the-signature-to-validate-storekit-rendered-ads.md).
 
 To provide a view-through ad and initiate a validation, the app calls [`startImpression(_:completionHandler:)`](skadnetwork/startimpression(_:completionhandler:).md), presents the ad, and then calls [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:completionhandler:).md). The ad network needs to generate the [`signature`](skadimpression/signature.md) in the [`SKAdImpression`](skadimpression.md) instance that both methods share.
 
@@ -91,4 +89,4 @@ After you generate the signature, you have all the required values for your [`SK
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/generating-the-signature-to-validate-view-through-ads)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/generating-the-signature-to-validate-view-through-ads)*

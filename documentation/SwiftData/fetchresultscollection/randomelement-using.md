@@ -1,6 +1,6 @@
 # randomElement(using:)
 
-**Framework**: SwiftData  
+**Framework**: Swiftdata  
 **Kind**: method
 
 Returns a random element of the collection, using the given generator as a source for randomness.
@@ -36,11 +36,7 @@ let randomName = names.randomElement(using: &myGenerator)!
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
 
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the length of the collection.
-
 > **Note**: The algorithm used to select a random element may change in a future version of Swift. If you’re passing a generator that results in the same sequence of elements each time you run your program, that sequence may change when your program is compiled using a different version of Swift.
-
-The algorithm used to select a random element may change in a future version of Swift. If you’re passing a generator that results in the same sequence of elements each time you run your program, that sequence may change when your program is compiled using a different version of Swift.
 
 ## Parameters
 

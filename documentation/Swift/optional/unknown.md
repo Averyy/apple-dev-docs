@@ -39,8 +39,6 @@ case let x?:
 
 > **Note**: To test whether an instance is `nil` in an `if` statement, use the equal-to operator (`==`) instead of the pattern-matching operator. The pattern-matching operator is primarily intended to enable `case` statement pattern matching.
 
-To test whether an instance is `nil` in an `if` statement, use the equal-to operator (`==`) instead of the pattern-matching operator. The pattern-matching operator is primarily intended to enable `case` statement pattern matching.
-
 ## Parameters
 
 - `lhs`: A   literal.

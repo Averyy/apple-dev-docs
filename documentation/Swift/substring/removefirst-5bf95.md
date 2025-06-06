@@ -31,8 +31,6 @@ The collection must not be empty.
 
 > **Note**: O(1)
 
-O(1)
-
 
 ---
 

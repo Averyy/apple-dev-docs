@@ -31,8 +31,6 @@ When you want two (or more) targets to share common keychain items, make the sam
 
 > **Note**: Although not visible, Xcode prepends the name of each keychain group with the `$(AppIdentifierPrefix)` build variable, which it automatically resolves at build time.
 
-Although not visible, Xcode prepends the name of each keychain group with the `$(AppIdentifierPrefix)` build variable, which it automatically resolves at build time.
-
 After you make a keychain group accessible to your target, you can later revoke that access by selecting the appropriate keychain group and clicking the Remove button (-) below the Keychain Groups list.
 
 Keychain groups you specify are then available to use with the [`Keychain services`](https://developer.apple.com/documentation/Security/keychain-services) APIs, such as [`SecItemAdd(_:_:)`](https://developer.apple.com/documentation/Security/SecItemAdd(_:_:)) and [`SecItemCopyMatching(_:_:)`](https://developer.apple.com/documentation/Security/SecItemCopyMatching(_:_:)).
@@ -54,8 +52,6 @@ After making changes to the order, choose File > Save to store those changes and
 
 > **Note**: Although you can use an App Group to share keychain items, it can never be the default keychain group because the app’s unique application identifier always takes precedence.
 
-Although you can use an App Group to share keychain items, it can never be the default keychain group because the app’s unique application identifier always takes precedence.
-
 ## See Also
 
 - [Configuring the hardened runtime](configuring-the-hardened-runtime.md)
@@ -66,4 +62,4 @@ Although you can use an App Group to share keychain items, it can never be the d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-keychain-sharing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-keychain-sharing)*

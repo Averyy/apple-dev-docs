@@ -1,6 +1,6 @@
 # Creating a Model from Tabular Data
 
-**Framework**: Create ML
+**Framework**: Createml
 
 Train a machine learning model by using Core ML to import and manage tabular data.
 
@@ -133,8 +133,6 @@ let worstValidationError = regressor.validationMetrics.maximumError
 
 > **Note**:  [`MLRegressorMetrics`](mlregressormetrics.md) also has a [`rootMeanSquaredError`](mlregressormetrics/rootmeansquarederror.md) property.
 
- [`MLRegressorMetrics`](mlregressormetrics.md) also has a [`rootMeanSquaredError`](mlregressormetrics/rootmeansquarederror.md) property.
-
 The playground evaluates the regressor’s performance by passing its evaluation data table.
 
 ```swift
@@ -163,8 +161,6 @@ let classifier = try MLClassifier(trainingData: classifierTrainingTable,
 A classifier can only predict values provided in its training data, unlike a regressor, which can predict numeric values beyond those in its training data. For example, the playground’s classifier can only predict a value of `"power"`, `"farm"`, or `"general"` because those are the only values in the `purpose` column.
 
 > **Note**: As an alternative, you may also train a classifier with numerical values instead of textual labels (strings) demonstrated here. As with textual labels, classifiers can only return specific numerical values from its training data, and will not interpolate or extrapolate new values, unlike a regressor.
-
-As an alternative, you may also train a classifier with numerical values instead of textual labels (strings) demonstrated here. As with textual labels, classifiers can only return specific numerical values from its training data, and will not interpolate or extrapolate new values, unlike a regressor.
 
 ##### 3130369
 
@@ -223,8 +219,6 @@ try classifier.write(to: desktopPath.appendingPathComponent("MarsHabitatPurposeC
 ```
 
 > **Note**: To see the author, version, and description of a model’s [`MLModelMetadata`](mlmodelmetadata.md), select the model in Xcode’s project navigator after you add it to an app.
-
-To see the author, version, and description of a model’s [`MLModelMetadata`](mlmodelmetadata.md), select the model in Xcode’s project navigator after you add it to an app.
 
 ##### 3130371
 

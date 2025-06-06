@@ -1,6 +1,6 @@
 # supportsCameraAssistance
 
-**Framework**: Nearby Interaction  
+**Framework**: Nearbyinteraction  
 **Kind**: property  
 **Required**: Yes
 
@@ -27,8 +27,6 @@ var supportsCameraAssistance: Bool { get }
 For more on Camera Assistance, see [`isCameraAssistanceEnabled`](ninearbypeerconfiguration/iscameraassistanceenabled.md).
 
 > **Note**:  Apple Watch doesn’t support Camera Assistance.
-
- Apple Watch doesn’t support Camera Assistance.
 
 ## See Also
 

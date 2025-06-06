@@ -25,8 +25,6 @@ The Vision framework normalizes this value to `[0.0, 1.0]` under most circumstan
 
 > **Note**:  When the results come from a [`VNCoreMLRequest`](vncoremlrequest.md), Vision forwards confidence values as-is and doesn’t normalize them.
 
- When the results come from a [`VNCoreMLRequest`](vncoremlrequest.md), Vision forwards confidence values as-is and doesn’t normalize them.
-
 ## See Also
 
 - [var timeRange: CMTimeRange](vnobservation/timerange.md)

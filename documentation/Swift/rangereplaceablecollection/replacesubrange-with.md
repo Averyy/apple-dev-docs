@@ -42,8 +42,6 @@ Calling this method may invalidate any existing indices for use with this collec
 
 > **Note**: O( + ), where  is length of this collection and  is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the collection, this method is equivalent to `append(contentsOf:)`.
 
-O( + ), where  is length of this collection and  is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the collection, this method is equivalent to `append(contentsOf:)`.
-
 ## Parameters
 
 - `subrange`: The subrange of the collection to replace. The bounds of   the range must be valid indices of the collection.

@@ -1,6 +1,6 @@
 # About the UI restoration process
 
-**Framework**: UIKit
+**Framework**: Uikit
 
 Learn how to customize the UIKit state restoration process.
 
@@ -42,8 +42,6 @@ func viewController(withRestorationIdentifierPath
 
 > **Note**:  Your restoration class should always return the class expected by UIKit. The restoration archive includes the class of each preserved view controller. If your restoration class returns an instance of a different class, UIKit doesn’t call that view controller’s [`decodeRestorableState(with:)`](uiviewcontroller/decoderestorablestate(with:).md) method.
 
- Your restoration class should always return the class expected by UIKit. The restoration archive includes the class of each preserved view controller. If your restoration class returns an instance of a different class, UIKit doesn’t call that view controller’s [`decodeRestorableState(with:)`](uiviewcontroller/decoderestorablestate(with:).md) method.
-
 ## See Also
 
 - [About the UI preservation process](about-the-ui-preservation-process.md)
@@ -52,4 +50,4 @@ func viewController(withRestorationIdentifierPath
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/about-the-ui-restoration-process)*
+*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/about-the-ui-restoration-process)*

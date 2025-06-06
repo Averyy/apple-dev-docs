@@ -1,6 +1,6 @@
 # sorted()
 
-**Framework**: TabularData  
+**Framework**: Tabulardata  
 **Kind**: method
 
 Returns the elements of the sequence, sorted.
@@ -48,8 +48,6 @@ print(descendingStudents)
 The sorting algorithm is guaranteed to be stable. A stable sort preserves the relative order of elements that compare as equal.
 
 > **Note**: O( log ), where  is the length of the sequence.
-
-O( log ), where  is the length of the sequence.
 
 ## See Also
 

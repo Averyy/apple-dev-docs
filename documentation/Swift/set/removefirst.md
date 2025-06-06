@@ -31,8 +31,6 @@ Because a set is not an ordered collection, the “first” element may not be t
 
 > **Note**: Amortized O(1) if the set does not wrap a bridged `NSSet`. If the set wraps a bridged `NSSet`, the performance is unspecified.
 
-Amortized O(1) if the set does not wrap a bridged `NSSet`. If the set wraps a bridged `NSSet`, the performance is unspecified.
-
 ## See Also
 
 - [func filter((Element) throws -> Bool) rethrows -> Set<Element>](set/filter(_:).md)

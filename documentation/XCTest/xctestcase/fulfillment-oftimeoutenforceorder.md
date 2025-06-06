@@ -26,8 +26,6 @@ Use this concurrency-safe alternative to [`wait(for:timeout:enforceOrder:)`](xct
 
 > **Note**:  If you don’t specify a timeout when calling this function, enable test timeouts to prevent unfulfilled expectation from hanging the test.
 
- If you don’t specify a timeout when calling this function, enable test timeouts to prevent unfulfilled expectation from hanging the test.
-
 ## Parameters
 
 - `expectations`: An array of expectations the test must satisfy.

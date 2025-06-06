@@ -1,6 +1,6 @@
 # readFileContentsType(_:toFile:)
 
-**Framework**: AppKit  
+**Framework**: Appkit  
 **Kind**: method
 
 Reads data representing a file’s contents from the receiver and writes it to the specified file.
@@ -23,8 +23,6 @@ The name of the file into which the data was actually written.
 Data of any file contents type should only be read using this method. If data matching the specified type is not found on the pasteboard, data of type `NSFileContentsPboardType` is requested.
 
 > **Note**:  In macOS 10.5 and earlier, the file contents pboard type allowed you to synthesize a pboard type for a file’s contents based on the file’s extension. In macOS 10.5 and later, using the UTI of a file to represent its contents now replaces this functionality.
-
- In macOS 10.5 and earlier, the file contents pboard type allowed you to synthesize a pboard type for a file’s contents based on the file’s extension. In macOS 10.5 and later, using the UTI of a file to represent its contents now replaces this functionality.
 
 ##### Special Considerations
 

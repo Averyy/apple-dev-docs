@@ -24,8 +24,6 @@ var nanosecond: Int? { get set }
 
 > **Note**:  This value is interpreted in the context of the calendar in which it is used.
 
- This value is interpreted in the context of the calendar in which it is used.
-
 ## See Also
 
 - [var hour: Int?](datecomponents/hour.md)

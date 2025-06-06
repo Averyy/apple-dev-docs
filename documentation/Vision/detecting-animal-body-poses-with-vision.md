@@ -13,8 +13,6 @@ Draw the skeleton of an animal by using Vision’s capability to detect animal b
 
 > **Note**: This sample code project is associated with WWDC23 session 10045: [`Detect animal poses in Vision`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10045).
 
-This sample code project is associated with WWDC23 session 10045: [`Detect animal poses in Vision`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10045).
-
 ##### Configure the Sample Code Project
 
 This sample app doesn’t run in Simulator, so you need to run it on a physical device with iOS 17 or later, or iPadOS 17 or later. To run the app, start a live video feed from the back camera.
@@ -29,4 +27,4 @@ This sample app doesn’t run in Simulator, so you need to run it on a physical 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/vision/detecting-animal-body-poses-with-vision)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Vision/detecting-animal-body-poses-with-vision)*

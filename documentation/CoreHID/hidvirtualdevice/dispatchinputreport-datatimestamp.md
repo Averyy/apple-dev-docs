@@ -1,6 +1,6 @@
 # dispatchInputReport(data:timestamp:)
 
-**Framework**: Core HID  
+**Framework**: Corehid  
 **Kind**: method
 
 Dispatch an input report to the system.
@@ -19,8 +19,6 @@ func dispatchInputReport(data: Data, timestamp: SuspendingClock.Instant) async t
 This dispatches an input report to the system, as if a person is interacting with a physical control. For example, if the virtual device represents a keyboard, a keyboard report can be dispatched here to simulate a person pressing a key on the keyboard. The system receives the report and any [`HIDDeviceClient`](hiddeviceclient.md) devices monitoring for such activity. [`activate(delegate:)`](hidvirtualdevice/activate(delegate:).md) must run successfully before this function runs.
 
 > **Note**: [`HIDDeviceError`](hiddeviceerror.md) if there is an issue with the request.
-
-[`HIDDeviceError`](hiddeviceerror.md) if there is an issue with the request.
 
 ## Parameters
 

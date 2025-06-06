@@ -1,6 +1,6 @@
 # activationData
 
-**Framework**: PassKit (Apple Pay and Wallet)  
+**Framework**: Passkit  
 **Kind**: property
 
 The request’s activation data.
@@ -23,8 +23,6 @@ var activationData: Data? { get set }
 This property contains the data provided to the payment network as a cryptographic one-time pad (OTP), per the Payment Network API specification. The cryptographic OTP is not interpreted by Apple or iOS. The OTP should be verified by the issuer and/or payment network upon receipt of the provisioning request to ensure the request’s authenticity. For more information about the activation data’s content, contact your payment network.
 
 > **Note**:  This is the same type of activation data that is accepted by the pass library’s [`activate(_:withActivationData:completion:)`](pkpasslibrary/activate(_:withactivationdata:completion:).md) method.
-
- This is the same type of activation data that is accepted by the pass library’s [`activate(_:withActivationData:completion:)`](pkpasslibrary/activate(_:withactivationdata:completion:).md) method.
 
 ## See Also
 

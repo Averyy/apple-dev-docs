@@ -1,6 +1,6 @@
 # CGDirectDisplayCopyCurrentMetalDevice(_:)
 
-**Framework**: Core Graphics  
+**Framework**: Coregraphics  
 **Kind**: func
 
 Returns the GPU device instance that’s currently driving a display.
@@ -22,8 +22,6 @@ A device that supports Metal framework commands.
 #### Discussion
 
 > **Note**:  This function can change its return value at any time for the built-in display when the system has automatic graphics switching enabled.
-
- This function can change its return value at any time for the built-in display when the system has automatic graphics switching enabled.
 
 ## Parameters
 

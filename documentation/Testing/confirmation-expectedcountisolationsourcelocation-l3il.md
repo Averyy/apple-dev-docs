@@ -1,6 +1,6 @@
 # confirmation(_:expectedCount:isolation:sourceLocation:_:)
 
-**Framework**: Swift Testing  
+**Framework**: Testing  
 **Kind**: func
 
 Confirm that some event occurs during the invocation of a function.
@@ -27,8 +27,6 @@ Whatever is returned by `body`.
 #### Discussion
 
 > **Note**: Whatever is thrown by `body`.
-
-Whatever is thrown by `body`.
 
 Use confirmations to check that an event occurs while a test is running in complex scenarios where `#expect()` and `#require()` are insufficient. For example, a confirmation may be useful when an expected event occurs:
 

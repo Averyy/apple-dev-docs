@@ -28,8 +28,6 @@ Calling this method may invalidate all saved indices of this collection. Do not 
 
 > **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the specified number of elements.
 
-O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(), where  is the specified number of elements.
-
 ## Parameters
 
 - `k`: The number of elements to remove from the collection.    must be greater than or equal to zero and must not exceed the   number of elements in the collection.

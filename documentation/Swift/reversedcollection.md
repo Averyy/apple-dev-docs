@@ -25,8 +25,6 @@ struct ReversedCollection<Base> where Base : BidirectionalCollection
 
 > **Note**: This type is the result of `x.reversed()` where `x` is a collection having bidirectional indices.
 
-This type is the result of `x.reversed()` where `x` is a collection having bidirectional indices.
-
 The `reversed()` method is always lazy when applied to a collection with bidirectional indices, but does not implicitly confer laziness on algorithms applied to its result.  In other words, for ordinary collections `c` having bidirectional indices:
 
 - `c.reversed()` does not create new storage
@@ -86,4 +84,4 @@ The `reversed()` method is always lazy when applied to a collection with bidirec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/reversedcollection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/reversedcollection)*

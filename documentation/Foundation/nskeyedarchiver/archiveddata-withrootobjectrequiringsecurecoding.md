@@ -26,8 +26,6 @@ To prevent the possibility of encoding an object that [`NSKeyedUnarchiver`](nske
 
 > **Note**:  Enabling secure coding doesn’t change the output format of the archive. This means that you can encode archives with secure coding enabled, and decode them later with secure coding disabled.
 
- Enabling secure coding doesn’t change the output format of the archive. This means that you can encode archives with secure coding enabled, and decode them later with secure coding disabled.
-
 ## Parameters
 
 - `object`: The root of the object graph to archive.

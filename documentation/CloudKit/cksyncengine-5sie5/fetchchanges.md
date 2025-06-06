@@ -1,6 +1,6 @@
 # fetchChanges(_:)
 
-**Framework**: CloudKit  
+**Framework**: Cloudkit  
 **Kind**: method
 
 Fetches pending remote changes from the server.
@@ -25,8 +25,6 @@ final func fetchChanges(_ options: CKSyncEngine.FetchChangesOptions = .init()) a
 Use this method to ensure the sync engine immediately fetches all pending remote changes before your app continues. This isn’t necessary in normal use, as the engine automatically syncs your app’s records. It is useful, however, in scenarios where you require more control over sync, such as pull-to-refresh or unit tests.
 
 > **Note**:  [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) returns only after your sync delegate finishes processing all related fetch events.
-
- [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) returns only after your sync delegate finishes processing all related fetch events.
 
 ## Parameters
 

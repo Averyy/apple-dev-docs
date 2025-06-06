@@ -28,8 +28,6 @@ Because the `String(reflecting:)` initializer works for instances of  type, retu
 
 > **Note**: Calling the `dump(_:_:_:_:)` function and printing in the debugger uses both `String(reflecting:)` and `Mirror(reflecting:)` to collect information about an instance. If you implement `CustomDebugStringConvertible` conformance for your custom type, you may want to consider providing a custom mirror by implementing `CustomReflectable` conformance, as well.
 
-Calling the `dump(_:_:_:_:)` function and printing in the debugger uses both `String(reflecting:)` and `Mirror(reflecting:)` to collect information about an instance. If you implement `CustomDebugStringConvertible` conformance for your custom type, you may want to consider providing a custom mirror by implementing `CustomReflectable` conformance, as well.
-
 ### Conforming to the Customdebugstringconvertible Protocol
 
 Add `CustomDebugStringConvertible` conformance to your custom types by defining a `debugDescription` property.
@@ -133,4 +131,4 @@ print(String(reflecting: p))
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/customdebugstringconvertible)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Swift/customdebugstringconvertible)*

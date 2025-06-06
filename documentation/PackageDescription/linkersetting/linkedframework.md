@@ -1,6 +1,6 @@
 # linkedFramework(_:_:)
 
-**Framework**: PackageDescription  
+**Framework**: Packagedescription  
 **Kind**: method
 
 Declares linkage to a system framework.
@@ -19,8 +19,6 @@ static func linkedFramework(_ framework: String, _ condition: BuildSettingCondit
 This setting is most useful when the framework can’t be linked automatically, such as C++ based frameworks and non-modular frameworks.
 
 > **Note**: First available in PackageDescription 5.0.
-
-First available in PackageDescription 5.0.
 
 ## Parameters
 

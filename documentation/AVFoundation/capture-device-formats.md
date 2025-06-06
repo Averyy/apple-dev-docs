@@ -1,6 +1,6 @@
 # Formats
 
-**Framework**: AVFoundation
+**Framework**: Avfoundation
 
 Configure capture formats and camera frame rates.
 
@@ -47,10 +47,6 @@ func configureCameraForHighestFrameRate(device: AVCaptureDevice) {
 Most common configurations of capture settings are available through the [`AVCaptureSession`](avcapturesession.md) object and its available presets. However, on iOS devices, some specialized options (such as high frame rate) require directly setting a capture format on an [`AVCaptureDevice`](avcapturedevice.md) instance.
 
 > **Note**:  In iOS, directly configuring a capture device’s [`activeFormat`](avcapturedevice/activeformat.md) property changes the capture session’s preset to [`inputPriority`](avcapturesession/preset/inputpriority.md). Upon making this change, the capture session no longer automatically configures the capture format when you call the [`startRunning()`](avcapturesession/startrunning().md) method or call the [`commitConfiguration()`](avcapturesession/commitconfiguration().md) method after changing the session topology. In macOS, a capture session can still automatically configure the capture format after you make changes. To prevent automatic changes to the capture format in macOS, follow the advice listed under the [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) method.
-
- In iOS, directly configuring a capture device’s [`activeFormat`](avcapturedevice/activeformat.md) property changes the capture session’s preset to [`inputPriority`](avcapturesession/preset/inputpriority.md). Upon making this change, the capture session no longer automatically configures the capture format when you call the [`startRunning()`](avcapturesession/startrunning().md) method or call the [`commitConfiguration()`](avcapturesession/commitconfiguration().md) method after changing the session topology.
-
-In macOS, a capture session can still automatically configure the capture format after you make changes. To prevent automatic changes to the capture format in macOS, follow the advice listed under the [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) method.
 
 ## Topics
 

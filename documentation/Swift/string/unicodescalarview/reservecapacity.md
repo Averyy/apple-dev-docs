@@ -26,8 +26,6 @@ Because a Unicode scalar value can require more than a single ASCII character’
 
 > **Note**: O(), where  is the capacity being reserved.
 
-O(), where  is the capacity being reserved.
-
 ## Parameters
 
 - `n`: The minimum number of ASCII character’s worth of storage   to allocate.

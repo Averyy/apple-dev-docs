@@ -1,6 +1,6 @@
 # HMCharacteristicTypeProgramMode
 
-**Framework**: HomeKit  
+**Framework**: Homekit  
 **Kind**: var
 
 The current mode of the accessory’s scheduled programs.
@@ -24,8 +24,6 @@ let HMCharacteristicTypeProgramMode: String
 The corresponding value is one of the constants in the [`HMCharacteristicValueProgramMode`](hmcharacteristicvalueprogrammode.md) enumeration.
 
 > **Note**:  This characteristic type doesn’t add, modify, or delete the schedule itself. The user must set or modify the schedule through the accessory’s user interface, or using an app designed to communicate directly with the accessory (for example, using an API provided by the accessory’s manufacturer).
-
- This characteristic type doesn’t add, modify, or delete the schedule itself. The user must set or modify the schedule through the accessory’s user interface, or using an app designed to communicate directly with the accessory (for example, using an API provided by the accessory’s manufacturer).
 
 ## Topics
 
@@ -69,4 +67,4 @@ The corresponding value is one of the constants in the [`HMCharacteristicValuePr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/homekit/hmcharacteristictypeprogrammode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HomeKit/hmcharacteristictypeprogrammode)*

@@ -1,6 +1,6 @@
 # ExternalPurchaseLink
 
-**Framework**: StoreKit  
+**Framework**: Storekit  
 **Kind**: enum
 
 Enables qualifying apps to offer external purchase links.
@@ -30,8 +30,6 @@ This functionality is only available to and required by apps with the [`com.appl
 - [`Distributing music streaming apps in the EEA that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/support/music-streaming-services-entitlement-eea/)
 
 > **Note**:  If your app is running on iOS 15.4 through 17.3 or iPadOS 15.4 through 17.3 and is configured to use the External Purchase API, you must check [`canMakePayments`](appstore/canmakepayments.md) before calling the External Purchase APIs. If [`canMakePayments`](appstore/canmakepayments.md) is `false`, do not call the [`ExternalPurchaseLink`](externalpurchaselink.md) or [`ExternalPurchase`](externalpurchase.md) APIs.
-
- If your app is running on iOS 15.4 through 17.3 or iPadOS 15.4 through 17.3 and is configured to use the External Purchase API, you must check [`canMakePayments`](appstore/canmakepayments.md) before calling the External Purchase APIs. If [`canMakePayments`](appstore/canmakepayments.md) is `false`, do not call the [`ExternalPurchaseLink`](externalpurchaselink.md) or [`ExternalPurchase`](externalpurchase.md) APIs.
 
 ## Topics
 
@@ -67,4 +65,4 @@ This functionality is only available to and required by apps with the [`com.appl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/storekit/externalpurchaselink)*
+*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/externalpurchaselink)*
