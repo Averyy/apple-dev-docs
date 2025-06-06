@@ -1,0 +1,37 @@
+# Object-tracking parameter adjustment
+
+**Framework**: Bundle Resources  
+**Kind**: typealias
+
+A Boolean value that allows an app to use ARKit to track more objects with a higher frequency.
+
+**Availability**:
+- visionOS 2.0+
+
+#### Discussion
+
+With this entitlement, you can use the [`ObjectTrackingProvider.TrackingConfiguration`](https://developer.apple.com/documentation/ARKit/ObjectTrackingProvider/TrackingConfiguration-swift.struct) to change object tracking parameters.
+
+> **Note**: Object-tracking parameter adjustment is only available in an immersive space. See [`Setting up access to ARKit data`](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy).
+
+Object-tracking parameter adjustment is only available in an immersive space. See [`Setting up access to ARKit data`](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy).
+
+## See Also
+
+- [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
+  A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
+- [Increased performance headroom](entitlements/com.apple.developer.app-compute-category.md)
+  An entitlement that allows an app to adjust thresholds that balance thermal dissipation and performance against fan noise and other factors.
+- [Passthrough in screen capture](entitlements/com.apple.developer.screen-capture.include-passthrough.md)
+  A Boolean value that indicates whether an app can include passthrough in screen capture.
+- [Main camera access](entitlements/com.apple.developer.arkit.main-camera-access.allow.md)
+  A Boolean value that indicates whether an app can use ARKit to access the main cameras on Apple Vision Pro.
+- [Spatial barcode and QR code scanning](entitlements/com.apple.developer.arkit.barcode-detection.allow.md)
+  A Boolean value that indicates whether an app can use ARKit to detect, position, and decode barcode and QR codes.
+- [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)
+  A Boolean value that indicates whether the app can stream USB UVC devices connected to the Developer strap.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow)*

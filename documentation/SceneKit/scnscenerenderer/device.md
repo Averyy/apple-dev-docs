@@ -1,0 +1,47 @@
+# device
+
+**Framework**: SceneKit  
+**Kind**: property  
+**Required**: Yes
+
+The Metal device this renderer uses for rendering.
+
+**Availability**:
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 13.1+
+- macOS 10.11+
+- tvOS 9.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+var device: (any MTLDevice)? { get }
+```
+
+#### Discussion
+
+Use this property to create or look up other Metal resources that use the same device as your SceneKit renderer.
+
+> **Note**:  This property is valid only for scene renderers whose [`renderingAPI`](scnscenerenderer/renderingapi.md) value is [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md). You create a SceneKit view that renders using Metal with the [`preferredRenderingAPI`](scnview/option/preferredrenderingapi.md) initialization option or in Interface Builder, or an [`SCNRenderer`](scnrenderer.md) that uses Metal with the [`init(device:options:)`](scnrenderer/init(device:options:).md) method. For OpenGL-based scene renderers, this property’s value is always `nil`.
+
+ This property is valid only for scene renderers whose [`renderingAPI`](scnscenerenderer/renderingapi.md) value is [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md). You create a SceneKit view that renders using Metal with the [`preferredRenderingAPI`](scnview/option/preferredrenderingapi.md) initialization option or in Interface Builder, or an [`SCNRenderer`](scnrenderer.md) that uses Metal with the [`init(device:options:)`](scnrenderer/init(device:options:).md) method. For OpenGL-based scene renderers, this property’s value is always `nil`.
+
+## See Also
+
+- [var currentRenderCommandEncoder: (any MTLRenderCommandEncoder)?](scnscenerenderer/currentrendercommandencoder.md)
+  The Metal render command encoder in use for the current SceneKit rendering pass.
+- [var commandQueue: (any MTLCommandQueue)?](scnscenerenderer/commandqueue.md)
+  The Metal command queue this renderer uses for rendering.
+- [var colorPixelFormat: MTLPixelFormat](scnscenerenderer/colorpixelformat.md)
+  The Metal pixel format for the renderer’s color output.
+- [var depthPixelFormat: MTLPixelFormat](scnscenerenderer/depthpixelformat.md)
+  The Metal pixel format for the renderer’s depth buffer.
+- [var stencilPixelFormat: MTLPixelFormat](scnscenerenderer/stencilpixelformat.md)
+  The Metal pixel format for the renderer’s stencil buffer.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnscenerenderer/device)*

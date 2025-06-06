@@ -1,0 +1,51 @@
+# CSS_HZ
+
+**Framework**: Webkitjs  
+**Kind**: clconst
+
+**Availability**:
+- Safari Desktop 10.1+
+- Safari Mobile 10.1+
+
+## Declaration
+
+```swift
+const unsigned short CSS_HZ;
+```
+
+## See Also
+
+- [CSS_ATTR](deprecatedcssomprimitivevalue/2871245-css_attr.md)
+- [CSS_CM](deprecatedcssomprimitivevalue/2871470-css_cm.md)
+- [CSS_COUNTER](deprecatedcssomprimitivevalue/2871457-css_counter.md)
+- [CSS_DEG](deprecatedcssomprimitivevalue/2871476-css_deg.md)
+- [CSS_DIMENSION](deprecatedcssomprimitivevalue/2871341-css_dimension.md)
+- [CSS_EMS](deprecatedcssomprimitivevalue/2871471-css_ems.md)
+- [CSS_EXS](deprecatedcssomprimitivevalue/2871478-css_exs.md)
+- [CSS_GRAD](deprecatedcssomprimitivevalue/2871401-css_grad.md)
+- [CSS_IDENT](deprecatedcssomprimitivevalue/2871013-css_ident.md)
+- [CSS_IN](deprecatedcssomprimitivevalue/2871172-css_in.md)
+- [CSS_KHZ](deprecatedcssomprimitivevalue/2871251-css_khz.md)
+- [CSS_MM](deprecatedcssomprimitivevalue/2871004-css_mm.md)
+- [CSS_MS](deprecatedcssomprimitivevalue/2871447-css_ms.md)
+- [CSS_NUMBER](deprecatedcssomprimitivevalue/2871051-css_number.md)
+- [CSS_PC](deprecatedcssomprimitivevalue/2871093-css_pc.md)
+- [CSS_PERCENTAGE](deprecatedcssomprimitivevalue/2871065-css_percentage.md)
+- [CSS_PT](deprecatedcssomprimitivevalue/2871362-css_pt.md)
+- [CSS_PX](deprecatedcssomprimitivevalue/2871432-css_px.md)
+- [CSS_RAD](deprecatedcssomprimitivevalue/2871374-css_rad.md)
+- [CSS_RECT](deprecatedcssomprimitivevalue/2871157-css_rect.md)
+- [CSS_RGBCOLOR](deprecatedcssomprimitivevalue/2871252-css_rgbcolor.md)
+- [CSS_S](deprecatedcssomprimitivevalue/2871369-css_s.md)
+- [CSS_STRING](deprecatedcssomprimitivevalue/2871025-css_string.md)
+- [CSS_UNKNOWN](deprecatedcssomprimitivevalue/2871377-css_unknown.md)
+- [CSS_URI](deprecatedcssomprimitivevalue/2870985-css_uri.md)
+- [CSS_VH](deprecatedcssomprimitivevalue/2870998-css_vh.md)
+- [CSS_VMAX](deprecatedcssomprimitivevalue/2871088-css_vmax.md)
+- [CSS_VMIN](deprecatedcssomprimitivevalue/2871241-css_vmin.md)
+- [CSS_VW](deprecatedcssomprimitivevalue/2870979-css_vw.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkitjs/deprecatedcssomprimitivevalue/2871071-css_hz)*

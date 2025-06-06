@@ -1,6 +1,6 @@
 # WKInterfaceMap.UserTrackingMode.none
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The map remains stationary, even if the user moves off the map.

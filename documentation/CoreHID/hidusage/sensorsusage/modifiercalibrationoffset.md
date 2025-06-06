@@ -1,0 +1,18 @@
+# HIDUsage.SensorsUsage.modifierCalibrationOffset
+
+**Framework**: Core HID  
+**Kind**: case
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+case modifierCalibrationOffset
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corehid/hidusage/sensorsusage/modifiercalibrationoffset)*

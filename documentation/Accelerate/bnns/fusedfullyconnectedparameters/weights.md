@@ -1,0 +1,32 @@
+# weights
+
+**Framework**: Accelerate  
+**Kind**: property
+
+The descriptor of the weights.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst ?+
+- macOS 12.0+
+- tvOS 15.0+
+- watchOS 8.0+
+- Unknown ?+ - Deprecated
+- visionOS ?+
+
+## Declaration
+
+```swift
+var weights: BNNSNDArrayDescriptor
+```
+
+## See Also
+
+- [var bias: BNNSNDArrayDescriptor?](bnns/fusedfullyconnectedparameters/bias.md)
+  The descriptor of the bias.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/bnns/fusedfullyconnectedparameters/weights)*

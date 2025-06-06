@@ -1,0 +1,4 @@
+Completed scraping Sign in with Apple!
+Total pages scraped: 7
+Pages skipped (unchanged): 1
+Pages failed: 0

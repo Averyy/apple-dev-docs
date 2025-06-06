@@ -1,6 +1,6 @@
 # sessionIdentifier
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The identifier for the triggering background transfer.

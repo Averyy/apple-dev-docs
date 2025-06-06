@@ -1,6 +1,6 @@
 # reloadRootPageControllers(withNames:contexts:orientation:pageIndex:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Loads the specified interface controllers and rebuilds the app’s page-based interface for the given scrolling orientation.

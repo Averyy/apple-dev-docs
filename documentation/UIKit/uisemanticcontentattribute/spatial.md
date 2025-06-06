@@ -1,0 +1,39 @@
+# UISemanticContentAttribute.spatial
+
+**Framework**: UIKit  
+**Kind**: case
+
+A view representing a directional control, such as a segment control for text alignment, or a D-pad control for a game.
+
+**Availability**:
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 13.1+
+- tvOS 9.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+case spatial
+```
+
+#### Discussion
+
+These views aren’t flipped when switching between left-to-right and right-to-left layouts.
+
+## See Also
+
+- [UISemanticContentAttribute.unspecified](uisemanticcontentattribute/unspecified.md)
+  The default value for views.
+- [UISemanticContentAttribute.playback](uisemanticcontentattribute/playback.md)
+  A view representing the playback controls, such as Play, Rewind, or Fast Forward buttons or playhead scrubbers.
+- [UISemanticContentAttribute.forceLeftToRight](uisemanticcontentattribute/forcelefttoright.md)
+  A view that’s always displayed using a left-to-right layout.
+- [UISemanticContentAttribute.forceRightToLeft](uisemanticcontentattribute/forcerighttoleft.md)
+  A view that’s always displayed using a right-to-left layout.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uisemanticcontentattribute/spatial)*

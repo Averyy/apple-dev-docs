@@ -1,0 +1,45 @@
+# objc_setEnumerationMutationHandler(_:)
+
+**Framework**: Objective-C Runtime  
+**Kind**: func
+
+Sets the current mutation handler.
+
+**Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 13.1+
+- macOS 10.5+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 1.0+
+
+## Declaration
+
+```swift
+func objc_setEnumerationMutationHandler(_ handler: ((Any) -> Void)?)
+```
+
+## Parameters
+
+- `handler`: A function pointer to the new mutation handler.
+
+## See Also
+
+- [func objc_enumerationMutation(Any)](objc_enumerationmutation(_:).md)
+  Inserted by the compiler when a mutation is detected during a foreach iteration.
+- [func imp_implementationWithBlock(Any) -> IMP](imp_implementationwithblock(_:).md)
+  Creates a pointer to a function that calls the specified block when the method is called.
+- [func imp_getBlock(IMP) -> Any?](imp_getblock(_:).md)
+  Returns the block associated with an `IMP` that was created using [`imp_implementationWithBlock(_:)`](imp_implementationwithblock(_:).md).
+- [func imp_removeBlock(IMP) -> Bool](imp_removeblock(_:).md)
+  Disassociates a block from an `IMP` that was created using [`imp_implementationWithBlock(_:)`](imp_implementationwithblock(_:).md), and releases the copy of the block that was created.
+- [func objc_loadWeak(AutoreleasingUnsafeMutablePointer<AnyObject?>) -> Any?](objc_loadweak(_:).md)
+  Loads the object referenced by a weak pointer and returns it.
+- [func objc_storeWeak(AutoreleasingUnsafeMutablePointer<AnyObject?>, Any?) -> Any?](objc_storeweak(_:_:).md)
+  Stores a new value in a `__weak` variable.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/objectivec/objc_setenumerationmutationhandler(_:))*

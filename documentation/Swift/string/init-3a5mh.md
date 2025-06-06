@@ -1,0 +1,28 @@
+# init(_:)
+
+**Framework**: Swift  
+**Kind**: init
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
+- macOS 11.0+
+- tvOS 14.0+
+- Unknown ?+ - Deprecated
+- watchOS 7.0+
+
+## Declaration
+
+```swift
+init(_ path: FilePath)
+```
+
+## See Also
+
+- [init?(validatingUTF8: FilePath)](string/init(validatingutf8:)-6i0in.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/string/init(_:)-3a5mh)*

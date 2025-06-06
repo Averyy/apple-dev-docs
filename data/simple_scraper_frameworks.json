@@ -1,0 +1,3132 @@
+{
+  "extraction_summary": {
+    "total_unique_frameworks": 346,
+    "framework_ids": [
+      "Accelerate",
+      "accelerate",
+      "Accessibility",
+      "accessorysetupkit",
+      "AccountDataTransfer",
+      "AccountOrganizationalDataSharing",
+      "Accounts",
+      "ActivityKit",
+      "AdAttributionKit",
+      "AddressBook",
+      "AddressBookUI",
+      "AdServices",
+      "AdSupport",
+      "AdvancedCommerceAPI",
+      "AGL",
+      "analytics-reports",
+      "AppClip",
+      "AppDataTransfer",
+      "AppIntents",
+      "AppKit",
+      "apple-silicon",
+      "apple_search_ads",
+      "AppleArchive",
+      "AppleMapsServerAPI",
+      "AppleMusicAPI",
+      "AppleMusicFeed",
+      "AppleNews",
+      "ApplePayontheWeb",
+      "ApplePayWebMerchantRegistrationAPI",
+      "ApplePencil",
+      "applicationservices",
+      "AppLicenseDeliverySDK",
+      "AppStoreConnectAPI",
+      "appstorereceipts",
+      "AppStoreServerAPI",
+      "AppStoreServerNotifications",
+      "AppTrackingTransparency",
+      "ARKit",
+      "AssetsLibrary",
+      "Assignables",
+      "AudioDriverKit",
+      "AudioToolbox",
+      "AudioUnit",
+      "AuthenticationServices",
+      "AutomatedDeviceEnrollment",
+      "AutomaticAssessmentConfiguration",
+      "Automator",
+      "AVFAudio",
+      "AVFoundation",
+      "AVKit",
+      "AVRouting",
+      "BackgroundAssets",
+      "BackgroundTasks",
+      "BlockStorageDeviceDriverKit",
+      "BrowserEngineCore",
+      "BrowserEngineKit",
+      "BrowserKit",
+      "BundleResources",
+      "CallKit",
+      "carekit",
+      "CarKey",
+      "CarPlay",
+      "CFNetwork",
+      "Charts",
+      "Cinematic",
+      "CKToolJS",
+      "ClassKit",
+      "ClassKitCatalogAPI",
+      "ClockKit",
+      "CloudKit",
+      "CloudKitJS",
+      "Collaboration",
+      "ColorSync",
+      "Combine",
+      "CompositorServices",
+      "Compression",
+      "ContactProvider",
+      "Contacts",
+      "ContactsUI",
+      "CoreAudio",
+      "CoreAudioKit",
+      "CoreAudioTypes",
+      "CoreBluetooth",
+      "CoreData",
+      "CoreFoundation",
+      "CoreGraphics",
+      "CoreHaptics",
+      "CoreHID",
+      "coreimage",
+      "CoreLocation",
+      "CoreLocationUI",
+      "CoreMedia",
+      "CoreMediaIO",
+      "CoreMIDI",
+      "CoreML",
+      "CoreMotion",
+      "CoreNFC",
+      "coreservices",
+      "CoreSpotlight",
+      "CoreTelephony",
+      "CoreText",
+      "CoreTransferable",
+      "CoreVideo",
+      "CoreWLAN",
+      "CreateML",
+      "CreateMLComponents",
+      "CryptoKit",
+      "CryptoTokenKit",
+      "DarwinNotify",
+      "DataDetection",
+      "DeveloperToolsSupport",
+      "DeviceActivity",
+      "DeviceCheck",
+      "DeviceDiscoveryExtension",
+      "DeviceDiscoveryUI",
+      "DeviceManagement",
+      "DiskArbitration",
+      "Dispatch",
+      "Distributed",
+      "dnssd",
+      "docc",
+      "DockKit",
+      "DriverKit",
+      "EndpointSecurity",
+      "EnterpriseProgramAPI",
+      "EventKit",
+      "EventKitUI",
+      "ExceptionHandling",
+      "ExecutionPolicy",
+      "ExposureNotification",
+      "ExtensionFoundation",
+      "ExtensionKit",
+      "ExternalAccessory",
+      "ExternalPurchaseServerAPI",
+      "FamilyControls",
+      "FileProvider",
+      "FileProviderUI",
+      "FinanceKit",
+      "FinanceKitUI",
+      "FinderSync",
+      "ForceFeedback",
+      "Foundation",
+      "FSKit",
+      "GameController",
+      "GameKit",
+      "GameplayKit",
+      "GLKit",
+      "GroupActivities",
+      "GSS",
+      "HealthKit",
+      "HIDDriverKit",
+      "HomeKit",
+      "HTTP-Live-Streaming",
+      "hvf",
+      "Hypervisor",
+      "iAd",
+      "IdentityLookup",
+      "ImageCaptureCore",
+      "ImageIO",
+      "ImagePlayground",
+      "InputMethodKit",
+      "installer_js",
+      "IOBluetooth",
+      "IOBluetoothUI",
+      "iokit",
+      "ios-ipados-release-notes",
+      "IOSurface",
+      "IOUSBHost",
+      "iTunesLibrary",
+      "iWorkDocumentExportingAPI",
+      "JavaScriptCore",
+      "JournalingSuggestions",
+      "kernel",
+      "kernelmanagement",
+      "LatentSemanticMapping",
+      "LightweightCodeRequirements",
+      "LinkPresentation",
+      "LiveCommunicationKit",
+      "LivePhotosKitJS",
+      "LocalAuthentication",
+      "LocalAuthenticationEmbeddedUI",
+      "LockedCameraCapture",
+      "macos-release-notes",
+      "MailKit",
+      "ManagedApp",
+      "ManagedAppDistribution",
+      "ManagedSettings",
+      "ManagedSettingsUI",
+      "MapKit",
+      "MapKitJS",
+      "MarketplaceKit",
+      "Matter",
+      "MatterSupport",
+      "MediaAccessibility",
+      "MediaExtension",
+      "MediaLibrary",
+      "MediaPlayer",
+      "MediaSetup",
+      "MediaToolbox",
+      "MerchantTokenNotificationServices",
+      "Messages",
+      "MessageUI",
+      "Metal",
+      "MetalFX",
+      "MetalKit",
+      "metalperformanceshaders",
+      "MetalPerformanceShadersGraph",
+      "MetricKit",
+      "MIDIDriverKit",
+      "MLCompute",
+      "ModelIO",
+      "MultipeerConnectivity",
+      "MusicKit",
+      "NaturalLanguage",
+      "NearbyInteraction",
+      "Network",
+      "NetworkExtension",
+      "NetworkingDriverKit",
+      "NotaryAPI",
+      "NotificationCenter",
+      "ObjectiveC",
+      "Observation",
+      "OpenDirectory",
+      "OpenGLES",
+      "os",
+      "OSLog",
+      "PackageDescription",
+      "ParavirtualizedGraphics",
+      "PassKit",
+      "PCIDriverKit",
+      "PDFKit",
+      "PencilKit",
+      "PHASE",
+      "PhotoKit",
+      "playgroundbluetooth",
+      "playgroundsupport",
+      "PreferencePanes",
+      "professional_video_applications",
+      "ProximityReader",
+      "PushKit",
+      "PushToTalk",
+      "Quartz",
+      "QuartzCore",
+      "QuickLook",
+      "QuickLookThumbnailing",
+      "QuickLookUI",
+      "quicktime-file-format",
+      "RealityKit",
+      "RegexBuilder",
+      "ReplayKit",
+      "RoomPlan",
+      "RosterAPI",
+      "safari-developer-tools",
+      "safari-release-notes",
+      "SafariServices",
+      "SafetyKit",
+      "SampleCode",
+      "SceneKit",
+      "ScreenCaptureKit",
+      "ScreenSaver",
+      "ScreenTime",
+      "ScriptingBridge",
+      "SCSIControllerDriverKit",
+      "SCSIPeripheralsDriverKit",
+      "SecureElementCredential",
+      "Security",
+      "SecurityFoundation",
+      "SecurityInterface",
+      "SensitiveContentAnalysis",
+      "SensorKit",
+      "SerialDriverKit",
+      "ServiceManagement",
+      "ShaderGraph",
+      "SharedWithYou",
+      "ShazamKit",
+      "SigninwithApple",
+      "SiriEventSuggestionsMarkup",
+      "SiriKit",
+      "SiriKitCloudMedia",
+      "SKAdNetworkforWebAds",
+      "snapshots",
+      "Social",
+      "SoundAnalysis",
+      "Spatial",
+      "Speech",
+      "SpriteKit",
+      "StoreKit",
+      "StoreKitTest",
+      "Swift",
+      "swift-playgrounds",
+      "SwiftData",
+      "SwiftUI",
+      "Symbols",
+      "Synchronization",
+      "System",
+      "SystemConfiguration",
+      "SystemExtensions",
+      "TabletopKit",
+      "TabularData",
+      "Technotes",
+      "Testing",
+      "ThreadNetwork",
+      "TipKit",
+      "Translation",
+      "TVML",
+      "tvmljs",
+      "TVMLKit",
+      "tvos-release-notes",
+      "TVServices",
+      "TVUIKit",
+      "UIKit",
+      "UniformTypeIdentifiers",
+      "Updates",
+      "USBDriverKit",
+      "USBSerialDriverKit",
+      "UserNotifications",
+      "UserNotificationsUI",
+      "VideoSubscriberAccount",
+      "VideoToolbox",
+      "Virtualization",
+      "Vision",
+      "VisionKit",
+      "visionOS",
+      "visionos-release-notes",
+      "vmnet",
+      "WalletOrders",
+      "WalletPasses",
+      "WatchConnectivity",
+      "WatchKit",
+      "watchOS-Apps",
+      "watchos-release-notes",
+      "WeatherKit",
+      "WeatherKitRESTAPI",
+      "WebKit",
+      "webkitjs",
+      "Welcome",
+      "WidgetKit",
+      "WorkoutKit",
+      "Xcode",
+      "Xcode-Release-Notes",
+      "xcode-release-notes",
+      "XcodeKit",
+      "xcselect",
+      "XCTest",
+      "XCUIAutomation",
+      "XPC"
+    ],
+    "framework_titles": [
+      "Accelerate",
+      "accelerate",
+      "Performing accessibility testing for your app",
+      "Discovering and configuring accessories",
+      "Account Data Transfer",
+      "Account & Organizational Data Sharing",
+      "Accounts",
+      "ActivityKit",
+      "AdAttributionKit",
+      "Address Book",
+      "Address Book UI",
+      "AdServices",
+      "AdSupport",
+      "Advanced Commerce API",
+      "AGL",
+      "analytics-reports",
+      "App Clips",
+      "App Data Transfer",
+      "Making onscreen content available to Siri and Apple Intelligence",
+      "AppKit",
+      "apple-silicon",
+      "apple_search_ads",
+      "Apple Archive",
+      "Apple Maps Server API",
+      "Apple Music API",
+      "Apple Music Feed",
+      "Apple News",
+      "Apple Pay on the Web",
+      "Apple Pay Web Merchant Registration API",
+      "Apple Pencil",
+      "Application Services",
+      "App License Delivery SDK",
+      "App Store Connect API",
+      "App Store Receipts",
+      "App Store Server API",
+      "App Store Server Notifications",
+      "App Tracking Transparency",
+      "ARKit",
+      "Assets Library",
+      "Assignables",
+      "AudioDriverKit",
+      "Audio Toolbox",
+      "Audio Unit",
+      "Authentication Services",
+      "Automated Device Enrollment",
+      "Automatic Assessment Configuration",
+      "Automator",
+      "AVFAudio",
+      "Enhancing your app experience with the Camera Control",
+      "AVKit",
+      "AVRouting",
+      "Background Assets",
+      "Background Tasks",
+      "BlockStorageDeviceDriverKit",
+      "BrowserEngineCore",
+      "BrowserEngineKit",
+      "BrowserKit",
+      "Bundle Resources",
+      "CallKit",
+      "https://carekit-apple.github.io/CareKit/documentation/carekit",
+      "CarKey",
+      "CarPlay",
+      "CFNetwork",
+      "Swift Charts",
+      "Cinematic",
+      "CKTool JS",
+      "ClassKit",
+      "ClassKit Catalog API",
+      "ClockKit",
+      "CloudKit",
+      "CloudKit JS",
+      "Collaboration",
+      "ColorSync",
+      "Combine",
+      "Compositor Services",
+      "Compression",
+      "ContactProvider",
+      "Contacts",
+      "Contacts UI",
+      "Core Audio",
+      "CoreAudioKit",
+      "Core Audio Types",
+      "Core Bluetooth",
+      "Core Data",
+      "Core Foundation",
+      "Core Graphics",
+      "Core Haptics",
+      "Communicating with human interface devices",
+      "Core Image",
+      "Core Location",
+      "CoreLocationUI",
+      "Core Media",
+      "Core Media I/O",
+      "Core MIDI",
+      "Core ML",
+      "Getting motion-activity data from headphones",
+      "Core NFC",
+      "Core Services",
+      "Core Spotlight",
+      "Core Telephony",
+      "Core Text",
+      "Core Transferable",
+      "Core Video",
+      "Core WLAN",
+      "Create ML",
+      "Create ML Components",
+      "Apple CryptoKit",
+      "CryptoTokenKit",
+      "Darwin Notify",
+      "DataDetection",
+      "DeveloperToolsSupport",
+      "DeviceActivity",
+      "DeviceCheck",
+      "DeviceDiscoveryExtension",
+      "DeviceDiscoveryUI",
+      "Device Management",
+      "Disk Arbitration",
+      "Dispatch",
+      "Distributed",
+      "dnssd",
+      "https://www.swift.org/documentation/docc",
+      "DockKit",
+      "DriverKit",
+      "Endpoint Security",
+      "Enterprise Program API",
+      "EventKit",
+      "EventKit UI",
+      "Exception Handling",
+      "Execution Policy",
+      "Exposure Notification",
+      "ExtensionFoundation",
+      "ExtensionKit",
+      "External Accessory",
+      "External Purchase Server API",
+      "FamilyControls",
+      "File Provider",
+      "File Provider UI",
+      "FinanceKit",
+      "FinanceKitUI",
+      "Finder Sync",
+      "Force Feedback",
+      "Foundation",
+      "FSKit",
+      "Game Controller",
+      "GameKit",
+      "GameplayKit",
+      "GLKit",
+      "Group Activities",
+      "GSS",
+      "HealthKit",
+      "HIDDriverKit",
+      "HomeKit",
+      "HTTP-Live-Streaming",
+      "hvf",
+      "Hypervisor",
+      "iAd",
+      "SMS and Call Reporting",
+      "ImageCaptureCore",
+      "Image I/O",
+      "Image Playground",
+      "InputMethodKit",
+      "installer_js",
+      "IOBluetooth",
+      "IOBluetooth UI",
+      "iokit",
+      "iOS & iPadOS Release Notes",
+      "IOSurface",
+      "IOUSBHost",
+      "iTunes Library",
+      "iWork Document Exporting API",
+      "JavaScriptCore",
+      "Journaling Suggestions",
+      "kernel",
+      "Kernel Management",
+      "Latent Semantic Mapping",
+      "LightweightCodeRequirements",
+      "Link Presentation",
+      "LiveCommunicationKit",
+      "LivePhotosKit JS",
+      "Local Authentication",
+      "Local Authentication Embedded UI",
+      "LockedCameraCapture",
+      "macos-release-notes",
+      "MailKit",
+      "ManagedApp",
+      "ManagedAppDistribution",
+      "ManagedSettings",
+      "ManagedSettingsUI",
+      "Adopting unified Maps URLs",
+      "MapKit JS",
+      "MarketplaceKit",
+      "Matter",
+      "MatterSupport",
+      "Media Accessibility",
+      "MediaExtension",
+      "Media Library",
+      "Media Player",
+      "Media Setup",
+      "Media Toolbox",
+      "Apple Pay Merchant Token Management API",
+      "Messages",
+      "Message UI",
+      "Metal",
+      "MetalFX",
+      "MetalKit",
+      "Metal Performance Shaders",
+      "Metal Performance Shaders Graph",
+      "MetricKit",
+      "MIDIDriverKit",
+      "ML Compute",
+      "Model I/O",
+      "Multipeer Connectivity",
+      "MusicKit",
+      "Natural Language",
+      "Nearby Interaction",
+      "Network",
+      "Network Extension",
+      "NetworkingDriverKit",
+      "Notary API",
+      "Notification Center",
+      "Objective-C Runtime",
+      "Observation",
+      "Open Directory",
+      "OpenGL ES",
+      "os",
+      "OSLog",
+      "PackageDescription",
+      "Paravirtualized Graphics",
+      "PassKit (Apple Pay and Wallet)",
+      "PCIDriverKit",
+      "PDFKit",
+      "PencilKit",
+      "PHASE",
+      "PhotoKit",
+      "Playground Bluetooth",
+      "Playground Support",
+      "Preference Panes",
+      "professional_video_applications",
+      "Adding support for Tap to Pay on iPhone to your app",
+      "PushKit",
+      "Push to Talk",
+      "Quartz",
+      "Core Animation",
+      "Quick Look",
+      "Quick Look Thumbnailing",
+      "Quick Look UI",
+      "quicktime-file-format",
+      "RealityKit",
+      "RegexBuilder",
+      "ReplayKit",
+      "RoomPlan",
+      "Roster API",
+      "Safari Developer Features",
+      "safari-release-notes",
+      "Safari app extensions",
+      "SafetyKit",
+      "Sample Code Library",
+      "SceneKit",
+      "ScreenCaptureKit",
+      "Screen Saver",
+      "Screen Time",
+      "Scripting Bridge",
+      "SCSIControllerDriverKit",
+      "SCSIPeripheralsDriverKit",
+      "SecureElementCredential",
+      "Security",
+      "Security Foundation",
+      "Security Interface",
+      "SensitiveContentAnalysis",
+      "SensorKit",
+      "SerialDriverKit",
+      "Service Management",
+      "ShaderGraph",
+      "Shared With You",
+      "ShazamKit",
+      "Sign in with Apple",
+      "Siri Event Suggestions Markup",
+      "SiriKit",
+      "SiriKit Cloud Media",
+      "SKAdNetwork for Web Ads",
+      "Maps Web Snapshots",
+      "Social",
+      "Sound Analysis",
+      "Spatial",
+      "Speech",
+      "SpriteKit",
+      "StoreKit",
+      "StoreKit Test",
+      "Adopting strict concurrency in Swift 6 apps",
+      "swift-playgrounds",
+      "Fetching and filtering time-based model changes",
+      "Enhancing your app\u2019s content with tab navigation",
+      "Symbols",
+      "Synchronization",
+      "System",
+      "System Configuration",
+      "System Extensions",
+      "Creating tabletop games",
+      "TabularData",
+      "Technotes",
+      "Swift Testing",
+      "ThreadNetwork",
+      "TipKit",
+      "Translation",
+      "TVML",
+      "TVMLKit JS",
+      "TVMLKit",
+      "tvos-release-notes",
+      "TV Services",
+      "TVUIKit",
+      "Mac Catalyst",
+      "Uniform Type Identifiers",
+      "Apple Intelligence updates",
+      "USBDriverKit",
+      "USBSerialDriverKit",
+      "Setting up broadcast push notifications",
+      "User Notifications UI",
+      "Video Subscriber Account",
+      "Video Toolbox",
+      "Virtualization",
+      "Classifying images for categorization and search",
+      "VisionKit",
+      "Creating your first visionOS app",
+      "visionos-release-notes",
+      "vmnet",
+      "Wallet Orders",
+      "Wallet Passes",
+      "Watch Connectivity",
+      "WatchKit",
+      "Enabling the double-tap gesture on Apple Watch",
+      "watchos-release-notes",
+      "WeatherKit",
+      "WeatherKit REST API",
+      "WebKit",
+      "WebKit JS",
+      "Introducing SwiftUI",
+      "Creating controls to perform actions across the system",
+      "WorkoutKit",
+      "Supporting multiple languages in your app",
+      "Xcode-Release-Notes",
+      "xcode-release-notes",
+      "XcodeKit",
+      "xcselect",
+      "XCTest",
+      "XCUIAutomation",
+      "XPC"
+    ],
+    "detailed_links": [
+      {
+        "framework_id": "Accelerate",
+        "title": "Accelerate",
+        "url": "https://developer.apple.com/documentation/Accelerate",
+        "href_path": "/documentation/Accelerate",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "accelerate",
+        "title": "accelerate",
+        "url": "https://developer.apple.com/documentation/accelerate",
+        "href_path": "/documentation/accelerate",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Accessibility",
+        "title": "Performing accessibility testing for your app",
+        "url": "https://developer.apple.com/documentation/Accessibility",
+        "href_path": "/documentation/Accessibility",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "accessorysetupkit",
+        "title": "Discovering and configuring accessories",
+        "url": "https://developer.apple.com/documentation/accessorysetupkit",
+        "href_path": "/documentation/accessorysetupkit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AccountDataTransfer",
+        "title": "Account Data Transfer",
+        "url": "https://developer.apple.com/documentation/AccountDataTransfer",
+        "href_path": "/documentation/AccountDataTransfer",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AccountOrganizationalDataSharing",
+        "title": "Account & Organizational Data Sharing",
+        "url": "https://developer.apple.com/documentation/AccountOrganizationalDataSharing",
+        "href_path": "/documentation/AccountOrganizationalDataSharing",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Accounts",
+        "title": "Accounts",
+        "url": "https://developer.apple.com/documentation/Accounts",
+        "href_path": "/documentation/Accounts",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ActivityKit",
+        "title": "ActivityKit",
+        "url": "https://developer.apple.com/documentation/ActivityKit",
+        "href_path": "/documentation/ActivityKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AdAttributionKit",
+        "title": "AdAttributionKit",
+        "url": "https://developer.apple.com/documentation/AdAttributionKit",
+        "href_path": "/documentation/AdAttributionKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AddressBook",
+        "title": "Address Book",
+        "url": "https://developer.apple.com/documentation/AddressBook",
+        "href_path": "/documentation/AddressBook",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AddressBookUI",
+        "title": "Address Book UI",
+        "url": "https://developer.apple.com/documentation/AddressBookUI",
+        "href_path": "/documentation/AddressBookUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AdServices",
+        "title": "AdServices",
+        "url": "https://developer.apple.com/documentation/AdServices",
+        "href_path": "/documentation/AdServices",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AdSupport",
+        "title": "AdSupport",
+        "url": "https://developer.apple.com/documentation/AdSupport",
+        "href_path": "/documentation/AdSupport",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AdvancedCommerceAPI",
+        "title": "Advanced Commerce API",
+        "url": "https://developer.apple.com/documentation/AdvancedCommerceAPI",
+        "href_path": "/documentation/AdvancedCommerceAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AGL",
+        "title": "AGL",
+        "url": "https://developer.apple.com/documentation/AGL",
+        "href_path": "/documentation/AGL",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "analytics-reports",
+        "title": "analytics-reports",
+        "url": "https://developer.apple.com/documentation/analytics-reports",
+        "href_path": "/documentation/analytics-reports",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppClip",
+        "title": "App Clips",
+        "url": "https://developer.apple.com/documentation/AppClip",
+        "href_path": "/documentation/AppClip",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppDataTransfer",
+        "title": "App Data Transfer",
+        "url": "https://developer.apple.com/documentation/AppDataTransfer",
+        "href_path": "/documentation/AppDataTransfer",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppIntents",
+        "title": "Making onscreen content available to Siri and Apple Intelligence",
+        "url": "https://developer.apple.com/documentation/AppIntents",
+        "href_path": "/documentation/AppIntents",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppKit",
+        "title": "AppKit",
+        "url": "https://developer.apple.com/documentation/AppKit",
+        "href_path": "/documentation/AppKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "apple-silicon",
+        "title": "apple-silicon",
+        "url": "https://developer.apple.com/documentation/apple-silicon",
+        "href_path": "/documentation/apple-silicon",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "apple_search_ads",
+        "title": "apple_search_ads",
+        "url": "https://developer.apple.com/documentation/apple_search_ads",
+        "href_path": "/documentation/apple_search_ads",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppleArchive",
+        "title": "Apple Archive",
+        "url": "https://developer.apple.com/documentation/AppleArchive",
+        "href_path": "/documentation/AppleArchive",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppleMapsServerAPI",
+        "title": "Apple Maps Server API",
+        "url": "https://developer.apple.com/documentation/AppleMapsServerAPI",
+        "href_path": "/documentation/AppleMapsServerAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppleMusicAPI",
+        "title": "Apple Music API",
+        "url": "https://developer.apple.com/documentation/AppleMusicAPI",
+        "href_path": "/documentation/AppleMusicAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppleMusicFeed",
+        "title": "Apple Music Feed",
+        "url": "https://developer.apple.com/documentation/AppleMusicFeed",
+        "href_path": "/documentation/AppleMusicFeed",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppleNews",
+        "title": "Apple News",
+        "url": "https://developer.apple.com/documentation/AppleNews",
+        "href_path": "/documentation/AppleNews",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ApplePayontheWeb",
+        "title": "Apple Pay on the Web",
+        "url": "https://developer.apple.com/documentation/ApplePayontheWeb",
+        "href_path": "/documentation/ApplePayontheWeb",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ApplePayWebMerchantRegistrationAPI",
+        "title": "Apple Pay Web Merchant Registration API",
+        "url": "https://developer.apple.com/documentation/ApplePayWebMerchantRegistrationAPI",
+        "href_path": "/documentation/ApplePayWebMerchantRegistrationAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ApplePencil",
+        "title": "Apple Pencil",
+        "url": "https://developer.apple.com/documentation/ApplePencil",
+        "href_path": "/documentation/ApplePencil",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "applicationservices",
+        "title": "Application Services",
+        "url": "https://developer.apple.com/documentation/applicationservices",
+        "href_path": "/documentation/applicationservices",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppLicenseDeliverySDK",
+        "title": "App License Delivery SDK",
+        "url": "https://developer.apple.com/documentation/AppLicenseDeliverySDK",
+        "href_path": "/documentation/AppLicenseDeliverySDK",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppStoreConnectAPI",
+        "title": "App Store Connect API",
+        "url": "https://developer.apple.com/documentation/AppStoreConnectAPI",
+        "href_path": "/documentation/AppStoreConnectAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "appstorereceipts",
+        "title": "App Store Receipts",
+        "url": "https://developer.apple.com/documentation/appstorereceipts",
+        "href_path": "/documentation/appstorereceipts",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppStoreServerAPI",
+        "title": "App Store Server API",
+        "url": "https://developer.apple.com/documentation/AppStoreServerAPI",
+        "href_path": "/documentation/AppStoreServerAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppStoreServerNotifications",
+        "title": "App Store Server Notifications",
+        "url": "https://developer.apple.com/documentation/AppStoreServerNotifications",
+        "href_path": "/documentation/AppStoreServerNotifications",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AppTrackingTransparency",
+        "title": "App Tracking Transparency",
+        "url": "https://developer.apple.com/documentation/AppTrackingTransparency",
+        "href_path": "/documentation/AppTrackingTransparency",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ARKit",
+        "title": "ARKit",
+        "url": "https://developer.apple.com/documentation/ARKit",
+        "href_path": "/documentation/ARKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AssetsLibrary",
+        "title": "Assets Library",
+        "url": "https://developer.apple.com/documentation/AssetsLibrary",
+        "href_path": "/documentation/AssetsLibrary",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Assignables",
+        "title": "Assignables",
+        "url": "https://developer.apple.com/documentation/Assignables",
+        "href_path": "/documentation/Assignables",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AudioDriverKit",
+        "title": "AudioDriverKit",
+        "url": "https://developer.apple.com/documentation/AudioDriverKit",
+        "href_path": "/documentation/AudioDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AudioToolbox",
+        "title": "Audio Toolbox",
+        "url": "https://developer.apple.com/documentation/AudioToolbox",
+        "href_path": "/documentation/AudioToolbox",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AudioUnit",
+        "title": "Audio Unit",
+        "url": "https://developer.apple.com/documentation/AudioUnit",
+        "href_path": "/documentation/AudioUnit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AuthenticationServices",
+        "title": "Authentication Services",
+        "url": "https://developer.apple.com/documentation/AuthenticationServices",
+        "href_path": "/documentation/AuthenticationServices",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AutomatedDeviceEnrollment",
+        "title": "Automated Device Enrollment",
+        "url": "https://developer.apple.com/documentation/AutomatedDeviceEnrollment",
+        "href_path": "/documentation/AutomatedDeviceEnrollment",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AutomaticAssessmentConfiguration",
+        "title": "Automatic Assessment Configuration",
+        "url": "https://developer.apple.com/documentation/AutomaticAssessmentConfiguration",
+        "href_path": "/documentation/AutomaticAssessmentConfiguration",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Automator",
+        "title": "Automator",
+        "url": "https://developer.apple.com/documentation/Automator",
+        "href_path": "/documentation/Automator",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AVFAudio",
+        "title": "AVFAudio",
+        "url": "https://developer.apple.com/documentation/AVFAudio",
+        "href_path": "/documentation/AVFAudio",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AVFoundation",
+        "title": "Enhancing your app experience with the Camera Control",
+        "url": "https://developer.apple.com/documentation/AVFoundation",
+        "href_path": "/documentation/AVFoundation",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AVKit",
+        "title": "AVKit",
+        "url": "https://developer.apple.com/documentation/AVKit",
+        "href_path": "/documentation/AVKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "AVRouting",
+        "title": "AVRouting",
+        "url": "https://developer.apple.com/documentation/AVRouting",
+        "href_path": "/documentation/AVRouting",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "BackgroundAssets",
+        "title": "Background Assets",
+        "url": "https://developer.apple.com/documentation/BackgroundAssets",
+        "href_path": "/documentation/BackgroundAssets",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "BackgroundTasks",
+        "title": "Background Tasks",
+        "url": "https://developer.apple.com/documentation/BackgroundTasks",
+        "href_path": "/documentation/BackgroundTasks",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "BlockStorageDeviceDriverKit",
+        "title": "BlockStorageDeviceDriverKit",
+        "url": "https://developer.apple.com/documentation/BlockStorageDeviceDriverKit",
+        "href_path": "/documentation/BlockStorageDeviceDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "BrowserEngineCore",
+        "title": "BrowserEngineCore",
+        "url": "https://developer.apple.com/documentation/BrowserEngineCore",
+        "href_path": "/documentation/BrowserEngineCore",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "BrowserEngineKit",
+        "title": "BrowserEngineKit",
+        "url": "https://developer.apple.com/documentation/BrowserEngineKit",
+        "href_path": "/documentation/BrowserEngineKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "BrowserKit",
+        "title": "BrowserKit",
+        "url": "https://developer.apple.com/documentation/BrowserKit",
+        "href_path": "/documentation/BrowserKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "BundleResources",
+        "title": "Bundle Resources",
+        "url": "https://developer.apple.com/documentation/BundleResources",
+        "href_path": "/documentation/BundleResources",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CallKit",
+        "title": "CallKit",
+        "url": "https://developer.apple.com/documentation/CallKit",
+        "href_path": "/documentation/CallKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "carekit",
+        "title": "https://carekit-apple.github.io/CareKit/documentation/carekit",
+        "url": "https://developer.apple.com/documentation/carekit",
+        "href_path": "/documentation/carekit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CarKey",
+        "title": "CarKey",
+        "url": "https://developer.apple.com/documentation/CarKey",
+        "href_path": "/documentation/CarKey",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CarPlay",
+        "title": "CarPlay",
+        "url": "https://developer.apple.com/documentation/CarPlay",
+        "href_path": "/documentation/CarPlay",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CFNetwork",
+        "title": "CFNetwork",
+        "url": "https://developer.apple.com/documentation/CFNetwork",
+        "href_path": "/documentation/CFNetwork",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Charts",
+        "title": "Swift Charts",
+        "url": "https://developer.apple.com/documentation/Charts",
+        "href_path": "/documentation/Charts",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Cinematic",
+        "title": "Cinematic",
+        "url": "https://developer.apple.com/documentation/Cinematic",
+        "href_path": "/documentation/Cinematic",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CKToolJS",
+        "title": "CKTool JS",
+        "url": "https://developer.apple.com/documentation/CKToolJS",
+        "href_path": "/documentation/CKToolJS",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ClassKit",
+        "title": "ClassKit",
+        "url": "https://developer.apple.com/documentation/ClassKit",
+        "href_path": "/documentation/ClassKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ClassKitCatalogAPI",
+        "title": "ClassKit Catalog API",
+        "url": "https://developer.apple.com/documentation/ClassKitCatalogAPI",
+        "href_path": "/documentation/ClassKitCatalogAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ClockKit",
+        "title": "ClockKit",
+        "url": "https://developer.apple.com/documentation/ClockKit",
+        "href_path": "/documentation/ClockKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CloudKit",
+        "title": "CloudKit",
+        "url": "https://developer.apple.com/documentation/CloudKit",
+        "href_path": "/documentation/CloudKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CloudKitJS",
+        "title": "CloudKit JS",
+        "url": "https://developer.apple.com/documentation/CloudKitJS",
+        "href_path": "/documentation/CloudKitJS",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Collaboration",
+        "title": "Collaboration",
+        "url": "https://developer.apple.com/documentation/Collaboration",
+        "href_path": "/documentation/Collaboration",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ColorSync",
+        "title": "ColorSync",
+        "url": "https://developer.apple.com/documentation/ColorSync",
+        "href_path": "/documentation/ColorSync",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Combine",
+        "title": "Combine",
+        "url": "https://developer.apple.com/documentation/Combine",
+        "href_path": "/documentation/Combine",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CompositorServices",
+        "title": "Compositor Services",
+        "url": "https://developer.apple.com/documentation/CompositorServices",
+        "href_path": "/documentation/CompositorServices",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Compression",
+        "title": "Compression",
+        "url": "https://developer.apple.com/documentation/Compression",
+        "href_path": "/documentation/Compression",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ContactProvider",
+        "title": "ContactProvider",
+        "url": "https://developer.apple.com/documentation/ContactProvider",
+        "href_path": "/documentation/ContactProvider",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Contacts",
+        "title": "Contacts",
+        "url": "https://developer.apple.com/documentation/Contacts",
+        "href_path": "/documentation/Contacts",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ContactsUI",
+        "title": "Contacts UI",
+        "url": "https://developer.apple.com/documentation/ContactsUI",
+        "href_path": "/documentation/ContactsUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreAudio",
+        "title": "Core Audio",
+        "url": "https://developer.apple.com/documentation/CoreAudio",
+        "href_path": "/documentation/CoreAudio",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreAudioKit",
+        "title": "CoreAudioKit",
+        "url": "https://developer.apple.com/documentation/CoreAudioKit",
+        "href_path": "/documentation/CoreAudioKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreAudioTypes",
+        "title": "Core Audio Types",
+        "url": "https://developer.apple.com/documentation/CoreAudioTypes",
+        "href_path": "/documentation/CoreAudioTypes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreBluetooth",
+        "title": "Core Bluetooth",
+        "url": "https://developer.apple.com/documentation/CoreBluetooth",
+        "href_path": "/documentation/CoreBluetooth",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreData",
+        "title": "Core Data",
+        "url": "https://developer.apple.com/documentation/CoreData",
+        "href_path": "/documentation/CoreData",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreFoundation",
+        "title": "Core Foundation",
+        "url": "https://developer.apple.com/documentation/CoreFoundation",
+        "href_path": "/documentation/CoreFoundation",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreGraphics",
+        "title": "Core Graphics",
+        "url": "https://developer.apple.com/documentation/CoreGraphics",
+        "href_path": "/documentation/CoreGraphics",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreHaptics",
+        "title": "Core Haptics",
+        "url": "https://developer.apple.com/documentation/CoreHaptics",
+        "href_path": "/documentation/CoreHaptics",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreHID",
+        "title": "Communicating with human interface devices",
+        "url": "https://developer.apple.com/documentation/CoreHID",
+        "href_path": "/documentation/CoreHID",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "coreimage",
+        "title": "Core Image",
+        "url": "https://developer.apple.com/documentation/coreimage",
+        "href_path": "/documentation/coreimage",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreLocation",
+        "title": "Core Location",
+        "url": "https://developer.apple.com/documentation/CoreLocation",
+        "href_path": "/documentation/CoreLocation",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreLocationUI",
+        "title": "CoreLocationUI",
+        "url": "https://developer.apple.com/documentation/CoreLocationUI",
+        "href_path": "/documentation/CoreLocationUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreMedia",
+        "title": "Core Media",
+        "url": "https://developer.apple.com/documentation/CoreMedia",
+        "href_path": "/documentation/CoreMedia",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreMediaIO",
+        "title": "Core Media I/O",
+        "url": "https://developer.apple.com/documentation/CoreMediaIO",
+        "href_path": "/documentation/CoreMediaIO",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreMIDI",
+        "title": "Core MIDI",
+        "url": "https://developer.apple.com/documentation/CoreMIDI",
+        "href_path": "/documentation/CoreMIDI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreML",
+        "title": "Core ML",
+        "url": "https://developer.apple.com/documentation/CoreML",
+        "href_path": "/documentation/CoreML",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreMotion",
+        "title": "Getting motion-activity data from headphones",
+        "url": "https://developer.apple.com/documentation/CoreMotion",
+        "href_path": "/documentation/CoreMotion",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreNFC",
+        "title": "Core NFC",
+        "url": "https://developer.apple.com/documentation/CoreNFC",
+        "href_path": "/documentation/CoreNFC",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "coreservices",
+        "title": "Core Services",
+        "url": "https://developer.apple.com/documentation/coreservices",
+        "href_path": "/documentation/coreservices",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreSpotlight",
+        "title": "Core Spotlight",
+        "url": "https://developer.apple.com/documentation/CoreSpotlight",
+        "href_path": "/documentation/CoreSpotlight",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreTelephony",
+        "title": "Core Telephony",
+        "url": "https://developer.apple.com/documentation/CoreTelephony",
+        "href_path": "/documentation/CoreTelephony",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreText",
+        "title": "Core Text",
+        "url": "https://developer.apple.com/documentation/CoreText",
+        "href_path": "/documentation/CoreText",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreTransferable",
+        "title": "Core Transferable",
+        "url": "https://developer.apple.com/documentation/CoreTransferable",
+        "href_path": "/documentation/CoreTransferable",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreVideo",
+        "title": "Core Video",
+        "url": "https://developer.apple.com/documentation/CoreVideo",
+        "href_path": "/documentation/CoreVideo",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CoreWLAN",
+        "title": "Core WLAN",
+        "url": "https://developer.apple.com/documentation/CoreWLAN",
+        "href_path": "/documentation/CoreWLAN",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CreateML",
+        "title": "Create ML",
+        "url": "https://developer.apple.com/documentation/CreateML",
+        "href_path": "/documentation/CreateML",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CreateMLComponents",
+        "title": "Create ML Components",
+        "url": "https://developer.apple.com/documentation/CreateMLComponents",
+        "href_path": "/documentation/CreateMLComponents",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CryptoKit",
+        "title": "Apple CryptoKit",
+        "url": "https://developer.apple.com/documentation/CryptoKit",
+        "href_path": "/documentation/CryptoKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "CryptoTokenKit",
+        "title": "CryptoTokenKit",
+        "url": "https://developer.apple.com/documentation/CryptoTokenKit",
+        "href_path": "/documentation/CryptoTokenKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DarwinNotify",
+        "title": "Darwin Notify",
+        "url": "https://developer.apple.com/documentation/DarwinNotify",
+        "href_path": "/documentation/DarwinNotify",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DataDetection",
+        "title": "DataDetection",
+        "url": "https://developer.apple.com/documentation/DataDetection",
+        "href_path": "/documentation/DataDetection",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DeveloperToolsSupport",
+        "title": "DeveloperToolsSupport",
+        "url": "https://developer.apple.com/documentation/DeveloperToolsSupport",
+        "href_path": "/documentation/DeveloperToolsSupport",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DeviceActivity",
+        "title": "DeviceActivity",
+        "url": "https://developer.apple.com/documentation/DeviceActivity",
+        "href_path": "/documentation/DeviceActivity",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DeviceCheck",
+        "title": "DeviceCheck",
+        "url": "https://developer.apple.com/documentation/DeviceCheck",
+        "href_path": "/documentation/DeviceCheck",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DeviceDiscoveryExtension",
+        "title": "DeviceDiscoveryExtension",
+        "url": "https://developer.apple.com/documentation/DeviceDiscoveryExtension",
+        "href_path": "/documentation/DeviceDiscoveryExtension",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DeviceDiscoveryUI",
+        "title": "DeviceDiscoveryUI",
+        "url": "https://developer.apple.com/documentation/DeviceDiscoveryUI",
+        "href_path": "/documentation/DeviceDiscoveryUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DeviceManagement",
+        "title": "Device Management",
+        "url": "https://developer.apple.com/documentation/DeviceManagement",
+        "href_path": "/documentation/DeviceManagement",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DiskArbitration",
+        "title": "Disk Arbitration",
+        "url": "https://developer.apple.com/documentation/DiskArbitration",
+        "href_path": "/documentation/DiskArbitration",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Dispatch",
+        "title": "Dispatch",
+        "url": "https://developer.apple.com/documentation/Dispatch",
+        "href_path": "/documentation/Dispatch",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Distributed",
+        "title": "Distributed",
+        "url": "https://developer.apple.com/documentation/Distributed",
+        "href_path": "/documentation/Distributed",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "dnssd",
+        "title": "dnssd",
+        "url": "https://developer.apple.com/documentation/dnssd",
+        "href_path": "/documentation/dnssd",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "docc",
+        "title": "https://www.swift.org/documentation/docc",
+        "url": "https://developer.apple.com/documentation/docc",
+        "href_path": "/documentation/docc",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DockKit",
+        "title": "DockKit",
+        "url": "https://developer.apple.com/documentation/DockKit",
+        "href_path": "/documentation/DockKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "DriverKit",
+        "title": "DriverKit",
+        "url": "https://developer.apple.com/documentation/DriverKit",
+        "href_path": "/documentation/DriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "EndpointSecurity",
+        "title": "Endpoint Security",
+        "url": "https://developer.apple.com/documentation/EndpointSecurity",
+        "href_path": "/documentation/EndpointSecurity",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "EnterpriseProgramAPI",
+        "title": "Enterprise Program API",
+        "url": "https://developer.apple.com/documentation/EnterpriseProgramAPI",
+        "href_path": "/documentation/EnterpriseProgramAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "EventKit",
+        "title": "EventKit",
+        "url": "https://developer.apple.com/documentation/EventKit",
+        "href_path": "/documentation/EventKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "EventKitUI",
+        "title": "EventKit UI",
+        "url": "https://developer.apple.com/documentation/EventKitUI",
+        "href_path": "/documentation/EventKitUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ExceptionHandling",
+        "title": "Exception Handling",
+        "url": "https://developer.apple.com/documentation/ExceptionHandling",
+        "href_path": "/documentation/ExceptionHandling",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ExecutionPolicy",
+        "title": "Execution Policy",
+        "url": "https://developer.apple.com/documentation/ExecutionPolicy",
+        "href_path": "/documentation/ExecutionPolicy",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ExposureNotification",
+        "title": "Exposure Notification",
+        "url": "https://developer.apple.com/documentation/ExposureNotification",
+        "href_path": "/documentation/ExposureNotification",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ExtensionFoundation",
+        "title": "ExtensionFoundation",
+        "url": "https://developer.apple.com/documentation/ExtensionFoundation",
+        "href_path": "/documentation/ExtensionFoundation",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ExtensionKit",
+        "title": "ExtensionKit",
+        "url": "https://developer.apple.com/documentation/ExtensionKit",
+        "href_path": "/documentation/ExtensionKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ExternalAccessory",
+        "title": "External Accessory",
+        "url": "https://developer.apple.com/documentation/ExternalAccessory",
+        "href_path": "/documentation/ExternalAccessory",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ExternalPurchaseServerAPI",
+        "title": "External Purchase Server API",
+        "url": "https://developer.apple.com/documentation/ExternalPurchaseServerAPI",
+        "href_path": "/documentation/ExternalPurchaseServerAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "FamilyControls",
+        "title": "FamilyControls",
+        "url": "https://developer.apple.com/documentation/FamilyControls",
+        "href_path": "/documentation/FamilyControls",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "FileProvider",
+        "title": "File Provider",
+        "url": "https://developer.apple.com/documentation/FileProvider",
+        "href_path": "/documentation/FileProvider",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "FileProviderUI",
+        "title": "File Provider UI",
+        "url": "https://developer.apple.com/documentation/FileProviderUI",
+        "href_path": "/documentation/FileProviderUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "FinanceKit",
+        "title": "FinanceKit",
+        "url": "https://developer.apple.com/documentation/FinanceKit",
+        "href_path": "/documentation/FinanceKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "FinanceKitUI",
+        "title": "FinanceKitUI",
+        "url": "https://developer.apple.com/documentation/FinanceKitUI",
+        "href_path": "/documentation/FinanceKitUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "FinderSync",
+        "title": "Finder Sync",
+        "url": "https://developer.apple.com/documentation/FinderSync",
+        "href_path": "/documentation/FinderSync",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ForceFeedback",
+        "title": "Force Feedback",
+        "url": "https://developer.apple.com/documentation/ForceFeedback",
+        "href_path": "/documentation/ForceFeedback",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Foundation",
+        "title": "Foundation",
+        "url": "https://developer.apple.com/documentation/Foundation",
+        "href_path": "/documentation/Foundation",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "FSKit",
+        "title": "FSKit",
+        "url": "https://developer.apple.com/documentation/FSKit",
+        "href_path": "/documentation/FSKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "GameController",
+        "title": "Game Controller",
+        "url": "https://developer.apple.com/documentation/GameController",
+        "href_path": "/documentation/GameController",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "GameKit",
+        "title": "GameKit",
+        "url": "https://developer.apple.com/documentation/GameKit",
+        "href_path": "/documentation/GameKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "GameplayKit",
+        "title": "GameplayKit",
+        "url": "https://developer.apple.com/documentation/GameplayKit",
+        "href_path": "/documentation/GameplayKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "GLKit",
+        "title": "GLKit",
+        "url": "https://developer.apple.com/documentation/GLKit",
+        "href_path": "/documentation/GLKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "GroupActivities",
+        "title": "Group Activities",
+        "url": "https://developer.apple.com/documentation/GroupActivities",
+        "href_path": "/documentation/GroupActivities",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "GSS",
+        "title": "GSS",
+        "url": "https://developer.apple.com/documentation/GSS",
+        "href_path": "/documentation/GSS",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "HealthKit",
+        "title": "HealthKit",
+        "url": "https://developer.apple.com/documentation/HealthKit",
+        "href_path": "/documentation/HealthKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "HIDDriverKit",
+        "title": "HIDDriverKit",
+        "url": "https://developer.apple.com/documentation/HIDDriverKit",
+        "href_path": "/documentation/HIDDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "HomeKit",
+        "title": "HomeKit",
+        "url": "https://developer.apple.com/documentation/HomeKit",
+        "href_path": "/documentation/HomeKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "HTTP-Live-Streaming",
+        "title": "HTTP-Live-Streaming",
+        "url": "https://developer.apple.com/documentation/HTTP-Live-Streaming",
+        "href_path": "/documentation/HTTP-Live-Streaming",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "hvf",
+        "title": "hvf",
+        "url": "https://developer.apple.com/documentation/hvf",
+        "href_path": "/documentation/hvf",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Hypervisor",
+        "title": "Hypervisor",
+        "url": "https://developer.apple.com/documentation/Hypervisor",
+        "href_path": "/documentation/Hypervisor",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "iAd",
+        "title": "iAd",
+        "url": "https://developer.apple.com/documentation/iAd",
+        "href_path": "/documentation/iAd",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "IdentityLookup",
+        "title": "SMS and Call Reporting",
+        "url": "https://developer.apple.com/documentation/IdentityLookup",
+        "href_path": "/documentation/IdentityLookup",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ImageCaptureCore",
+        "title": "ImageCaptureCore",
+        "url": "https://developer.apple.com/documentation/ImageCaptureCore",
+        "href_path": "/documentation/ImageCaptureCore",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ImageIO",
+        "title": "Image I/O",
+        "url": "https://developer.apple.com/documentation/ImageIO",
+        "href_path": "/documentation/ImageIO",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ImagePlayground",
+        "title": "Image Playground",
+        "url": "https://developer.apple.com/documentation/ImagePlayground",
+        "href_path": "/documentation/ImagePlayground",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "InputMethodKit",
+        "title": "InputMethodKit",
+        "url": "https://developer.apple.com/documentation/InputMethodKit",
+        "href_path": "/documentation/InputMethodKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "installer_js",
+        "title": "installer_js",
+        "url": "https://developer.apple.com/documentation/installer_js",
+        "href_path": "/documentation/installer_js",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "IOBluetooth",
+        "title": "IOBluetooth",
+        "url": "https://developer.apple.com/documentation/IOBluetooth",
+        "href_path": "/documentation/IOBluetooth",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "IOBluetoothUI",
+        "title": "IOBluetooth UI",
+        "url": "https://developer.apple.com/documentation/IOBluetoothUI",
+        "href_path": "/documentation/IOBluetoothUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "iokit",
+        "title": "iokit",
+        "url": "https://developer.apple.com/documentation/iokit",
+        "href_path": "/documentation/iokit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ios-ipados-release-notes",
+        "title": "iOS & iPadOS Release Notes",
+        "url": "https://developer.apple.com/documentation/ios-ipados-release-notes",
+        "href_path": "/documentation/ios-ipados-release-notes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "IOSurface",
+        "title": "IOSurface",
+        "url": "https://developer.apple.com/documentation/IOSurface",
+        "href_path": "/documentation/IOSurface",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "IOUSBHost",
+        "title": "IOUSBHost",
+        "url": "https://developer.apple.com/documentation/IOUSBHost",
+        "href_path": "/documentation/IOUSBHost",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "iTunesLibrary",
+        "title": "iTunes Library",
+        "url": "https://developer.apple.com/documentation/iTunesLibrary",
+        "href_path": "/documentation/iTunesLibrary",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "iWorkDocumentExportingAPI",
+        "title": "iWork Document Exporting API",
+        "url": "https://developer.apple.com/documentation/iWorkDocumentExportingAPI",
+        "href_path": "/documentation/iWorkDocumentExportingAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "JavaScriptCore",
+        "title": "JavaScriptCore",
+        "url": "https://developer.apple.com/documentation/JavaScriptCore",
+        "href_path": "/documentation/JavaScriptCore",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "JournalingSuggestions",
+        "title": "Journaling Suggestions",
+        "url": "https://developer.apple.com/documentation/JournalingSuggestions",
+        "href_path": "/documentation/JournalingSuggestions",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "kernel",
+        "title": "kernel",
+        "url": "https://developer.apple.com/documentation/kernel",
+        "href_path": "/documentation/kernel",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "kernelmanagement",
+        "title": "Kernel Management",
+        "url": "https://developer.apple.com/documentation/kernelmanagement",
+        "href_path": "/documentation/kernelmanagement",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "LatentSemanticMapping",
+        "title": "Latent Semantic Mapping",
+        "url": "https://developer.apple.com/documentation/LatentSemanticMapping",
+        "href_path": "/documentation/LatentSemanticMapping",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "LightweightCodeRequirements",
+        "title": "LightweightCodeRequirements",
+        "url": "https://developer.apple.com/documentation/LightweightCodeRequirements",
+        "href_path": "/documentation/LightweightCodeRequirements",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "LinkPresentation",
+        "title": "Link Presentation",
+        "url": "https://developer.apple.com/documentation/LinkPresentation",
+        "href_path": "/documentation/LinkPresentation",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "LiveCommunicationKit",
+        "title": "LiveCommunicationKit",
+        "url": "https://developer.apple.com/documentation/LiveCommunicationKit",
+        "href_path": "/documentation/LiveCommunicationKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "LivePhotosKitJS",
+        "title": "LivePhotosKit JS",
+        "url": "https://developer.apple.com/documentation/LivePhotosKitJS",
+        "href_path": "/documentation/LivePhotosKitJS",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "LocalAuthentication",
+        "title": "Local Authentication",
+        "url": "https://developer.apple.com/documentation/LocalAuthentication",
+        "href_path": "/documentation/LocalAuthentication",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "LocalAuthenticationEmbeddedUI",
+        "title": "Local Authentication Embedded UI",
+        "url": "https://developer.apple.com/documentation/LocalAuthenticationEmbeddedUI",
+        "href_path": "/documentation/LocalAuthenticationEmbeddedUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "LockedCameraCapture",
+        "title": "LockedCameraCapture",
+        "url": "https://developer.apple.com/documentation/LockedCameraCapture",
+        "href_path": "/documentation/LockedCameraCapture",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "macos-release-notes",
+        "title": "macos-release-notes",
+        "url": "https://developer.apple.com/documentation/macos-release-notes",
+        "href_path": "/documentation/macos-release-notes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MailKit",
+        "title": "MailKit",
+        "url": "https://developer.apple.com/documentation/MailKit",
+        "href_path": "/documentation/MailKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ManagedApp",
+        "title": "ManagedApp",
+        "url": "https://developer.apple.com/documentation/ManagedApp",
+        "href_path": "/documentation/ManagedApp",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ManagedAppDistribution",
+        "title": "ManagedAppDistribution",
+        "url": "https://developer.apple.com/documentation/ManagedAppDistribution",
+        "href_path": "/documentation/ManagedAppDistribution",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ManagedSettings",
+        "title": "ManagedSettings",
+        "url": "https://developer.apple.com/documentation/ManagedSettings",
+        "href_path": "/documentation/ManagedSettings",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ManagedSettingsUI",
+        "title": "ManagedSettingsUI",
+        "url": "https://developer.apple.com/documentation/ManagedSettingsUI",
+        "href_path": "/documentation/ManagedSettingsUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MapKit",
+        "title": "Adopting unified Maps URLs",
+        "url": "https://developer.apple.com/documentation/MapKit",
+        "href_path": "/documentation/MapKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MapKitJS",
+        "title": "MapKit JS",
+        "url": "https://developer.apple.com/documentation/MapKitJS",
+        "href_path": "/documentation/MapKitJS",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MarketplaceKit",
+        "title": "MarketplaceKit",
+        "url": "https://developer.apple.com/documentation/MarketplaceKit",
+        "href_path": "/documentation/MarketplaceKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Matter",
+        "title": "Matter",
+        "url": "https://developer.apple.com/documentation/Matter",
+        "href_path": "/documentation/Matter",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MatterSupport",
+        "title": "MatterSupport",
+        "url": "https://developer.apple.com/documentation/MatterSupport",
+        "href_path": "/documentation/MatterSupport",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MediaAccessibility",
+        "title": "Media Accessibility",
+        "url": "https://developer.apple.com/documentation/MediaAccessibility",
+        "href_path": "/documentation/MediaAccessibility",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MediaExtension",
+        "title": "MediaExtension",
+        "url": "https://developer.apple.com/documentation/MediaExtension",
+        "href_path": "/documentation/MediaExtension",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MediaLibrary",
+        "title": "Media Library",
+        "url": "https://developer.apple.com/documentation/MediaLibrary",
+        "href_path": "/documentation/MediaLibrary",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MediaPlayer",
+        "title": "Media Player",
+        "url": "https://developer.apple.com/documentation/MediaPlayer",
+        "href_path": "/documentation/MediaPlayer",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MediaSetup",
+        "title": "Media Setup",
+        "url": "https://developer.apple.com/documentation/MediaSetup",
+        "href_path": "/documentation/MediaSetup",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MediaToolbox",
+        "title": "Media Toolbox",
+        "url": "https://developer.apple.com/documentation/MediaToolbox",
+        "href_path": "/documentation/MediaToolbox",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MerchantTokenNotificationServices",
+        "title": "Apple Pay Merchant Token Management API",
+        "url": "https://developer.apple.com/documentation/MerchantTokenNotificationServices",
+        "href_path": "/documentation/MerchantTokenNotificationServices",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Messages",
+        "title": "Messages",
+        "url": "https://developer.apple.com/documentation/Messages",
+        "href_path": "/documentation/Messages",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MessageUI",
+        "title": "Message UI",
+        "url": "https://developer.apple.com/documentation/MessageUI",
+        "href_path": "/documentation/MessageUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Metal",
+        "title": "Metal",
+        "url": "https://developer.apple.com/documentation/Metal",
+        "href_path": "/documentation/Metal",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MetalFX",
+        "title": "MetalFX",
+        "url": "https://developer.apple.com/documentation/MetalFX",
+        "href_path": "/documentation/MetalFX",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MetalKit",
+        "title": "MetalKit",
+        "url": "https://developer.apple.com/documentation/MetalKit",
+        "href_path": "/documentation/MetalKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "metalperformanceshaders",
+        "title": "Metal Performance Shaders",
+        "url": "https://developer.apple.com/documentation/metalperformanceshaders",
+        "href_path": "/documentation/metalperformanceshaders",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MetalPerformanceShadersGraph",
+        "title": "Metal Performance Shaders Graph",
+        "url": "https://developer.apple.com/documentation/MetalPerformanceShadersGraph",
+        "href_path": "/documentation/MetalPerformanceShadersGraph",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MetricKit",
+        "title": "MetricKit",
+        "url": "https://developer.apple.com/documentation/MetricKit",
+        "href_path": "/documentation/MetricKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MIDIDriverKit",
+        "title": "MIDIDriverKit",
+        "url": "https://developer.apple.com/documentation/MIDIDriverKit",
+        "href_path": "/documentation/MIDIDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MLCompute",
+        "title": "ML Compute",
+        "url": "https://developer.apple.com/documentation/MLCompute",
+        "href_path": "/documentation/MLCompute",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ModelIO",
+        "title": "Model I/O",
+        "url": "https://developer.apple.com/documentation/ModelIO",
+        "href_path": "/documentation/ModelIO",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MultipeerConnectivity",
+        "title": "Multipeer Connectivity",
+        "url": "https://developer.apple.com/documentation/MultipeerConnectivity",
+        "href_path": "/documentation/MultipeerConnectivity",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "MusicKit",
+        "title": "MusicKit",
+        "url": "https://developer.apple.com/documentation/MusicKit",
+        "href_path": "/documentation/MusicKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "NaturalLanguage",
+        "title": "Natural Language",
+        "url": "https://developer.apple.com/documentation/NaturalLanguage",
+        "href_path": "/documentation/NaturalLanguage",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "NearbyInteraction",
+        "title": "Nearby Interaction",
+        "url": "https://developer.apple.com/documentation/NearbyInteraction",
+        "href_path": "/documentation/NearbyInteraction",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Network",
+        "title": "Network",
+        "url": "https://developer.apple.com/documentation/Network",
+        "href_path": "/documentation/Network",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "NetworkExtension",
+        "title": "Network Extension",
+        "url": "https://developer.apple.com/documentation/NetworkExtension",
+        "href_path": "/documentation/NetworkExtension",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "NetworkingDriverKit",
+        "title": "NetworkingDriverKit",
+        "url": "https://developer.apple.com/documentation/NetworkingDriverKit",
+        "href_path": "/documentation/NetworkingDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "NotaryAPI",
+        "title": "Notary API",
+        "url": "https://developer.apple.com/documentation/NotaryAPI",
+        "href_path": "/documentation/NotaryAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "NotificationCenter",
+        "title": "Notification Center",
+        "url": "https://developer.apple.com/documentation/NotificationCenter",
+        "href_path": "/documentation/NotificationCenter",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ObjectiveC",
+        "title": "Objective-C Runtime",
+        "url": "https://developer.apple.com/documentation/ObjectiveC",
+        "href_path": "/documentation/ObjectiveC",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Observation",
+        "title": "Observation",
+        "url": "https://developer.apple.com/documentation/Observation",
+        "href_path": "/documentation/Observation",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "OpenDirectory",
+        "title": "Open Directory",
+        "url": "https://developer.apple.com/documentation/OpenDirectory",
+        "href_path": "/documentation/OpenDirectory",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "OpenGLES",
+        "title": "OpenGL ES",
+        "url": "https://developer.apple.com/documentation/OpenGLES",
+        "href_path": "/documentation/OpenGLES",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "os",
+        "title": "os",
+        "url": "https://developer.apple.com/documentation/os",
+        "href_path": "/documentation/os",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "OSLog",
+        "title": "OSLog",
+        "url": "https://developer.apple.com/documentation/OSLog",
+        "href_path": "/documentation/OSLog",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "PackageDescription",
+        "title": "PackageDescription",
+        "url": "https://developer.apple.com/documentation/PackageDescription",
+        "href_path": "/documentation/PackageDescription",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ParavirtualizedGraphics",
+        "title": "Paravirtualized Graphics",
+        "url": "https://developer.apple.com/documentation/ParavirtualizedGraphics",
+        "href_path": "/documentation/ParavirtualizedGraphics",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "PassKit",
+        "title": "PassKit (Apple Pay and Wallet)",
+        "url": "https://developer.apple.com/documentation/PassKit",
+        "href_path": "/documentation/PassKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "PCIDriverKit",
+        "title": "PCIDriverKit",
+        "url": "https://developer.apple.com/documentation/PCIDriverKit",
+        "href_path": "/documentation/PCIDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "PDFKit",
+        "title": "PDFKit",
+        "url": "https://developer.apple.com/documentation/PDFKit",
+        "href_path": "/documentation/PDFKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "PencilKit",
+        "title": "PencilKit",
+        "url": "https://developer.apple.com/documentation/PencilKit",
+        "href_path": "/documentation/PencilKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "PHASE",
+        "title": "PHASE",
+        "url": "https://developer.apple.com/documentation/PHASE",
+        "href_path": "/documentation/PHASE",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "PhotoKit",
+        "title": "PhotoKit",
+        "url": "https://developer.apple.com/documentation/PhotoKit",
+        "href_path": "/documentation/PhotoKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "playgroundbluetooth",
+        "title": "Playground Bluetooth",
+        "url": "https://developer.apple.com/documentation/playgroundbluetooth",
+        "href_path": "/documentation/playgroundbluetooth",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "playgroundsupport",
+        "title": "Playground Support",
+        "url": "https://developer.apple.com/documentation/playgroundsupport",
+        "href_path": "/documentation/playgroundsupport",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "PreferencePanes",
+        "title": "Preference Panes",
+        "url": "https://developer.apple.com/documentation/PreferencePanes",
+        "href_path": "/documentation/PreferencePanes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "professional_video_applications",
+        "title": "professional_video_applications",
+        "url": "https://developer.apple.com/documentation/professional_video_applications",
+        "href_path": "/documentation/professional_video_applications",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ProximityReader",
+        "title": "Adding support for Tap to Pay on iPhone to your app",
+        "url": "https://developer.apple.com/documentation/ProximityReader",
+        "href_path": "/documentation/ProximityReader",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "PushKit",
+        "title": "PushKit",
+        "url": "https://developer.apple.com/documentation/PushKit",
+        "href_path": "/documentation/PushKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "PushToTalk",
+        "title": "Push to Talk",
+        "url": "https://developer.apple.com/documentation/PushToTalk",
+        "href_path": "/documentation/PushToTalk",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Quartz",
+        "title": "Quartz",
+        "url": "https://developer.apple.com/documentation/Quartz",
+        "href_path": "/documentation/Quartz",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "QuartzCore",
+        "title": "Core Animation",
+        "url": "https://developer.apple.com/documentation/QuartzCore",
+        "href_path": "/documentation/QuartzCore",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "QuickLook",
+        "title": "Quick Look",
+        "url": "https://developer.apple.com/documentation/QuickLook",
+        "href_path": "/documentation/QuickLook",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "QuickLookThumbnailing",
+        "title": "Quick Look Thumbnailing",
+        "url": "https://developer.apple.com/documentation/QuickLookThumbnailing",
+        "href_path": "/documentation/QuickLookThumbnailing",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "QuickLookUI",
+        "title": "Quick Look UI",
+        "url": "https://developer.apple.com/documentation/QuickLookUI",
+        "href_path": "/documentation/QuickLookUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "quicktime-file-format",
+        "title": "quicktime-file-format",
+        "url": "https://developer.apple.com/documentation/quicktime-file-format",
+        "href_path": "/documentation/quicktime-file-format",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "RealityKit",
+        "title": "RealityKit",
+        "url": "https://developer.apple.com/documentation/RealityKit",
+        "href_path": "/documentation/RealityKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "RegexBuilder",
+        "title": "RegexBuilder",
+        "url": "https://developer.apple.com/documentation/RegexBuilder",
+        "href_path": "/documentation/RegexBuilder",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ReplayKit",
+        "title": "ReplayKit",
+        "url": "https://developer.apple.com/documentation/ReplayKit",
+        "href_path": "/documentation/ReplayKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "RoomPlan",
+        "title": "RoomPlan",
+        "url": "https://developer.apple.com/documentation/RoomPlan",
+        "href_path": "/documentation/RoomPlan",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "RosterAPI",
+        "title": "Roster API",
+        "url": "https://developer.apple.com/documentation/RosterAPI",
+        "href_path": "/documentation/RosterAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "safari-developer-tools",
+        "title": "Safari Developer Features",
+        "url": "https://developer.apple.com/documentation/safari-developer-tools",
+        "href_path": "/documentation/safari-developer-tools",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "safari-release-notes",
+        "title": "safari-release-notes",
+        "url": "https://developer.apple.com/documentation/safari-release-notes",
+        "href_path": "/documentation/safari-release-notes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SafariServices",
+        "title": "Safari app extensions",
+        "url": "https://developer.apple.com/documentation/SafariServices",
+        "href_path": "/documentation/SafariServices",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SafetyKit",
+        "title": "SafetyKit",
+        "url": "https://developer.apple.com/documentation/SafetyKit",
+        "href_path": "/documentation/SafetyKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SampleCode",
+        "title": "Sample Code Library",
+        "url": "https://developer.apple.com/documentation/SampleCode",
+        "href_path": "/documentation/SampleCode",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SceneKit",
+        "title": "SceneKit",
+        "url": "https://developer.apple.com/documentation/SceneKit",
+        "href_path": "/documentation/SceneKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ScreenCaptureKit",
+        "title": "ScreenCaptureKit",
+        "url": "https://developer.apple.com/documentation/ScreenCaptureKit",
+        "href_path": "/documentation/ScreenCaptureKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ScreenSaver",
+        "title": "Screen Saver",
+        "url": "https://developer.apple.com/documentation/ScreenSaver",
+        "href_path": "/documentation/ScreenSaver",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ScreenTime",
+        "title": "Screen Time",
+        "url": "https://developer.apple.com/documentation/ScreenTime",
+        "href_path": "/documentation/ScreenTime",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ScriptingBridge",
+        "title": "Scripting Bridge",
+        "url": "https://developer.apple.com/documentation/ScriptingBridge",
+        "href_path": "/documentation/ScriptingBridge",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SCSIControllerDriverKit",
+        "title": "SCSIControllerDriverKit",
+        "url": "https://developer.apple.com/documentation/SCSIControllerDriverKit",
+        "href_path": "/documentation/SCSIControllerDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SCSIPeripheralsDriverKit",
+        "title": "SCSIPeripheralsDriverKit",
+        "url": "https://developer.apple.com/documentation/SCSIPeripheralsDriverKit",
+        "href_path": "/documentation/SCSIPeripheralsDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SecureElementCredential",
+        "title": "SecureElementCredential",
+        "url": "https://developer.apple.com/documentation/SecureElementCredential",
+        "href_path": "/documentation/SecureElementCredential",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Security",
+        "title": "Security",
+        "url": "https://developer.apple.com/documentation/Security",
+        "href_path": "/documentation/Security",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SecurityFoundation",
+        "title": "Security Foundation",
+        "url": "https://developer.apple.com/documentation/SecurityFoundation",
+        "href_path": "/documentation/SecurityFoundation",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SecurityInterface",
+        "title": "Security Interface",
+        "url": "https://developer.apple.com/documentation/SecurityInterface",
+        "href_path": "/documentation/SecurityInterface",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SensitiveContentAnalysis",
+        "title": "SensitiveContentAnalysis",
+        "url": "https://developer.apple.com/documentation/SensitiveContentAnalysis",
+        "href_path": "/documentation/SensitiveContentAnalysis",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SensorKit",
+        "title": "SensorKit",
+        "url": "https://developer.apple.com/documentation/SensorKit",
+        "href_path": "/documentation/SensorKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SerialDriverKit",
+        "title": "SerialDriverKit",
+        "url": "https://developer.apple.com/documentation/SerialDriverKit",
+        "href_path": "/documentation/SerialDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ServiceManagement",
+        "title": "Service Management",
+        "url": "https://developer.apple.com/documentation/ServiceManagement",
+        "href_path": "/documentation/ServiceManagement",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ShaderGraph",
+        "title": "ShaderGraph",
+        "url": "https://developer.apple.com/documentation/ShaderGraph",
+        "href_path": "/documentation/ShaderGraph",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SharedWithYou",
+        "title": "Shared With You",
+        "url": "https://developer.apple.com/documentation/SharedWithYou",
+        "href_path": "/documentation/SharedWithYou",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ShazamKit",
+        "title": "ShazamKit",
+        "url": "https://developer.apple.com/documentation/ShazamKit",
+        "href_path": "/documentation/ShazamKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SigninwithApple",
+        "title": "Sign in with Apple",
+        "url": "https://developer.apple.com/documentation/SigninwithApple",
+        "href_path": "/documentation/SigninwithApple",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SiriEventSuggestionsMarkup",
+        "title": "Siri Event Suggestions Markup",
+        "url": "https://developer.apple.com/documentation/SiriEventSuggestionsMarkup",
+        "href_path": "/documentation/SiriEventSuggestionsMarkup",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SiriKit",
+        "title": "SiriKit",
+        "url": "https://developer.apple.com/documentation/SiriKit",
+        "href_path": "/documentation/SiriKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SiriKitCloudMedia",
+        "title": "SiriKit Cloud Media",
+        "url": "https://developer.apple.com/documentation/SiriKitCloudMedia",
+        "href_path": "/documentation/SiriKitCloudMedia",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SKAdNetworkforWebAds",
+        "title": "SKAdNetwork for Web Ads",
+        "url": "https://developer.apple.com/documentation/SKAdNetworkforWebAds",
+        "href_path": "/documentation/SKAdNetworkforWebAds",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "snapshots",
+        "title": "Maps Web Snapshots",
+        "url": "https://developer.apple.com/documentation/snapshots",
+        "href_path": "/documentation/snapshots",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Social",
+        "title": "Social",
+        "url": "https://developer.apple.com/documentation/Social",
+        "href_path": "/documentation/Social",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SoundAnalysis",
+        "title": "Sound Analysis",
+        "url": "https://developer.apple.com/documentation/SoundAnalysis",
+        "href_path": "/documentation/SoundAnalysis",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Spatial",
+        "title": "Spatial",
+        "url": "https://developer.apple.com/documentation/Spatial",
+        "href_path": "/documentation/Spatial",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Speech",
+        "title": "Speech",
+        "url": "https://developer.apple.com/documentation/Speech",
+        "href_path": "/documentation/Speech",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SpriteKit",
+        "title": "SpriteKit",
+        "url": "https://developer.apple.com/documentation/SpriteKit",
+        "href_path": "/documentation/SpriteKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "StoreKit",
+        "title": "StoreKit",
+        "url": "https://developer.apple.com/documentation/StoreKit",
+        "href_path": "/documentation/StoreKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "StoreKitTest",
+        "title": "StoreKit Test",
+        "url": "https://developer.apple.com/documentation/StoreKitTest",
+        "href_path": "/documentation/StoreKitTest",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Swift",
+        "title": "Adopting strict concurrency in Swift 6 apps",
+        "url": "https://developer.apple.com/documentation/Swift",
+        "href_path": "/documentation/Swift",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "swift-playgrounds",
+        "title": "swift-playgrounds",
+        "url": "https://developer.apple.com/documentation/swift-playgrounds",
+        "href_path": "/documentation/swift-playgrounds",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SwiftData",
+        "title": "Fetching and filtering time-based model changes",
+        "url": "https://developer.apple.com/documentation/SwiftData",
+        "href_path": "/documentation/SwiftData",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SwiftUI",
+        "title": "Enhancing your app\u2019s content with tab navigation",
+        "url": "https://developer.apple.com/documentation/SwiftUI",
+        "href_path": "/documentation/SwiftUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Symbols",
+        "title": "Symbols",
+        "url": "https://developer.apple.com/documentation/Symbols",
+        "href_path": "/documentation/Symbols",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Synchronization",
+        "title": "Synchronization",
+        "url": "https://developer.apple.com/documentation/Synchronization",
+        "href_path": "/documentation/Synchronization",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "System",
+        "title": "System",
+        "url": "https://developer.apple.com/documentation/System",
+        "href_path": "/documentation/System",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SystemConfiguration",
+        "title": "System Configuration",
+        "url": "https://developer.apple.com/documentation/SystemConfiguration",
+        "href_path": "/documentation/SystemConfiguration",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "SystemExtensions",
+        "title": "System Extensions",
+        "url": "https://developer.apple.com/documentation/SystemExtensions",
+        "href_path": "/documentation/SystemExtensions",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "TabletopKit",
+        "title": "Creating tabletop games",
+        "url": "https://developer.apple.com/documentation/TabletopKit",
+        "href_path": "/documentation/TabletopKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "TabularData",
+        "title": "TabularData",
+        "url": "https://developer.apple.com/documentation/TabularData",
+        "href_path": "/documentation/TabularData",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Technotes",
+        "title": "Technotes",
+        "url": "https://developer.apple.com/documentation/Technotes",
+        "href_path": "/documentation/Technotes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Testing",
+        "title": "Swift Testing",
+        "url": "https://developer.apple.com/documentation/Testing",
+        "href_path": "/documentation/Testing",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "ThreadNetwork",
+        "title": "ThreadNetwork",
+        "url": "https://developer.apple.com/documentation/ThreadNetwork",
+        "href_path": "/documentation/ThreadNetwork",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "TipKit",
+        "title": "TipKit",
+        "url": "https://developer.apple.com/documentation/TipKit",
+        "href_path": "/documentation/TipKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Translation",
+        "title": "Translation",
+        "url": "https://developer.apple.com/documentation/Translation",
+        "href_path": "/documentation/Translation",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "TVML",
+        "title": "TVML",
+        "url": "https://developer.apple.com/documentation/TVML",
+        "href_path": "/documentation/TVML",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "tvmljs",
+        "title": "TVMLKit JS",
+        "url": "https://developer.apple.com/documentation/tvmljs",
+        "href_path": "/documentation/tvmljs",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "TVMLKit",
+        "title": "TVMLKit",
+        "url": "https://developer.apple.com/documentation/TVMLKit",
+        "href_path": "/documentation/TVMLKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "tvos-release-notes",
+        "title": "tvos-release-notes",
+        "url": "https://developer.apple.com/documentation/tvos-release-notes",
+        "href_path": "/documentation/tvos-release-notes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "TVServices",
+        "title": "TV Services",
+        "url": "https://developer.apple.com/documentation/TVServices",
+        "href_path": "/documentation/TVServices",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "TVUIKit",
+        "title": "TVUIKit",
+        "url": "https://developer.apple.com/documentation/TVUIKit",
+        "href_path": "/documentation/TVUIKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "UIKit",
+        "title": "Mac Catalyst",
+        "url": "https://developer.apple.com/documentation/UIKit",
+        "href_path": "/documentation/UIKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "UniformTypeIdentifiers",
+        "title": "Uniform Type Identifiers",
+        "url": "https://developer.apple.com/documentation/UniformTypeIdentifiers",
+        "href_path": "/documentation/UniformTypeIdentifiers",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Updates",
+        "title": "Apple Intelligence updates",
+        "url": "https://developer.apple.com/documentation/Updates",
+        "href_path": "/documentation/Updates",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "USBDriverKit",
+        "title": "USBDriverKit",
+        "url": "https://developer.apple.com/documentation/USBDriverKit",
+        "href_path": "/documentation/USBDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "USBSerialDriverKit",
+        "title": "USBSerialDriverKit",
+        "url": "https://developer.apple.com/documentation/USBSerialDriverKit",
+        "href_path": "/documentation/USBSerialDriverKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "UserNotifications",
+        "title": "Setting up broadcast push notifications",
+        "url": "https://developer.apple.com/documentation/UserNotifications",
+        "href_path": "/documentation/UserNotifications",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "UserNotificationsUI",
+        "title": "User Notifications UI",
+        "url": "https://developer.apple.com/documentation/UserNotificationsUI",
+        "href_path": "/documentation/UserNotificationsUI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "VideoSubscriberAccount",
+        "title": "Video Subscriber Account",
+        "url": "https://developer.apple.com/documentation/VideoSubscriberAccount",
+        "href_path": "/documentation/VideoSubscriberAccount",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "VideoToolbox",
+        "title": "Video Toolbox",
+        "url": "https://developer.apple.com/documentation/VideoToolbox",
+        "href_path": "/documentation/VideoToolbox",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Virtualization",
+        "title": "Virtualization",
+        "url": "https://developer.apple.com/documentation/Virtualization",
+        "href_path": "/documentation/Virtualization",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Vision",
+        "title": "Classifying images for categorization and search",
+        "url": "https://developer.apple.com/documentation/Vision",
+        "href_path": "/documentation/Vision",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "VisionKit",
+        "title": "VisionKit",
+        "url": "https://developer.apple.com/documentation/VisionKit",
+        "href_path": "/documentation/VisionKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "visionOS",
+        "title": "Creating your first visionOS app",
+        "url": "https://developer.apple.com/documentation/visionOS",
+        "href_path": "/documentation/visionOS",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "visionos-release-notes",
+        "title": "visionos-release-notes",
+        "url": "https://developer.apple.com/documentation/visionos-release-notes",
+        "href_path": "/documentation/visionos-release-notes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "vmnet",
+        "title": "vmnet",
+        "url": "https://developer.apple.com/documentation/vmnet",
+        "href_path": "/documentation/vmnet",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "WalletOrders",
+        "title": "Wallet Orders",
+        "url": "https://developer.apple.com/documentation/WalletOrders",
+        "href_path": "/documentation/WalletOrders",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "WalletPasses",
+        "title": "Wallet Passes",
+        "url": "https://developer.apple.com/documentation/WalletPasses",
+        "href_path": "/documentation/WalletPasses",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "WatchConnectivity",
+        "title": "Watch Connectivity",
+        "url": "https://developer.apple.com/documentation/WatchConnectivity",
+        "href_path": "/documentation/WatchConnectivity",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "WatchKit",
+        "title": "WatchKit",
+        "url": "https://developer.apple.com/documentation/WatchKit",
+        "href_path": "/documentation/WatchKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "watchOS-Apps",
+        "title": "Enabling the double-tap gesture on Apple Watch",
+        "url": "https://developer.apple.com/documentation/watchOS-Apps",
+        "href_path": "/documentation/watchOS-Apps",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "watchos-release-notes",
+        "title": "watchos-release-notes",
+        "url": "https://developer.apple.com/documentation/watchos-release-notes",
+        "href_path": "/documentation/watchos-release-notes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "WeatherKit",
+        "title": "WeatherKit",
+        "url": "https://developer.apple.com/documentation/WeatherKit",
+        "href_path": "/documentation/WeatherKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "WeatherKitRESTAPI",
+        "title": "WeatherKit REST API",
+        "url": "https://developer.apple.com/documentation/WeatherKitRESTAPI",
+        "href_path": "/documentation/WeatherKitRESTAPI",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "WebKit",
+        "title": "WebKit",
+        "url": "https://developer.apple.com/documentation/WebKit",
+        "href_path": "/documentation/WebKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "webkitjs",
+        "title": "WebKit JS",
+        "url": "https://developer.apple.com/documentation/webkitjs",
+        "href_path": "/documentation/webkitjs",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Welcome",
+        "title": "Introducing SwiftUI",
+        "url": "https://developer.apple.com/documentation/Welcome",
+        "href_path": "/documentation/Welcome",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "WidgetKit",
+        "title": "Creating controls to perform actions across the system",
+        "url": "https://developer.apple.com/documentation/WidgetKit",
+        "href_path": "/documentation/WidgetKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "WorkoutKit",
+        "title": "WorkoutKit",
+        "url": "https://developer.apple.com/documentation/WorkoutKit",
+        "href_path": "/documentation/WorkoutKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Xcode",
+        "title": "Supporting multiple languages in your app",
+        "url": "https://developer.apple.com/documentation/Xcode",
+        "href_path": "/documentation/Xcode",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "Xcode-Release-Notes",
+        "title": "Xcode-Release-Notes",
+        "url": "https://developer.apple.com/documentation/Xcode-Release-Notes",
+        "href_path": "/documentation/Xcode-Release-Notes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "xcode-release-notes",
+        "title": "xcode-release-notes",
+        "url": "https://developer.apple.com/documentation/xcode-release-notes",
+        "href_path": "/documentation/xcode-release-notes",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "XcodeKit",
+        "title": "XcodeKit",
+        "url": "https://developer.apple.com/documentation/XcodeKit",
+        "href_path": "/documentation/XcodeKit",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "xcselect",
+        "title": "xcselect",
+        "url": "https://developer.apple.com/documentation/xcselect",
+        "href_path": "/documentation/xcselect",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "XCTest",
+        "title": "XCTest",
+        "url": "https://developer.apple.com/documentation/XCTest",
+        "href_path": "/documentation/XCTest",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "XCUIAutomation",
+        "title": "XCUIAutomation",
+        "url": "https://developer.apple.com/documentation/XCUIAutomation",
+        "href_path": "/documentation/XCUIAutomation",
+        "source": "json_api"
+      },
+      {
+        "framework_id": "XPC",
+        "title": "XPC",
+        "url": "https://developer.apple.com/documentation/XPC",
+        "href_path": "/documentation/XPC",
+        "source": "json_api"
+      }
+    ]
+  },
+  "timestamp": "2025-06-04",
+  "source": "HTTP scraping of Apple documentation pages",
+  "methods": [
+    "main_page",
+    "technologies_page",
+    "json_apis"
+  ]
+}

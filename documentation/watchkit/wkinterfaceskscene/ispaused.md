@@ -1,6 +1,6 @@
 # isPaused
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A Boolean value that determines whether the view’s scene animations are paused.

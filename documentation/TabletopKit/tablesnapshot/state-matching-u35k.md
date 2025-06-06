@@ -1,0 +1,30 @@
+# state(matching:)
+
+**Framework**: TabletopKit  
+**Kind**: method
+
+**Availability**:
+- visionOS 2.0+
+
+## Declaration
+
+```swift
+func state(matching equipmentID: EquipmentIdentifier) -> (any EquipmentState)?
+```
+
+## See Also
+
+- [func equipment<E>(of: E.Type) -> [(E, E.State)]](tablesnapshot/equipment(of:).md)
+- [func equipment<E>(of: E.Type, childrenOf: some Equipment) -> [(E, E.State)]](tablesnapshot/equipment(of:childrenof:)-4z4s1.md)
+- [func equipment<E>(of: E.Type, childrenOf: EquipmentIdentifier) -> [(E, E.State)]](tablesnapshot/equipment(of:childrenof:)-5w137.md)
+- [func equipment<E>(of: E.Type, matching: some Sequence<EquipmentIdentifier>) -> [(E, E.State)]](tablesnapshot/equipment(of:matching:)-7ai0c.md)
+- [func equipment<E>(of: E.Type, matching: EquipmentIdentifier) -> (E, E.State)?](tablesnapshot/equipment(of:matching:)-8qve2.md)
+- [func equipmentIDs() -> [EquipmentIdentifier]](tablesnapshot/equipmentids.md)
+- [func equipmentIDs(childrenOf: some Equipment) -> [EquipmentIdentifier]](tablesnapshot/equipmentids(childrenof:)-432sk.md)
+- [func equipmentIDs(childrenOf: EquipmentIdentifier) -> [EquipmentIdentifier]](tablesnapshot/equipmentids(childrenof:)-f1sp.md)
+- [func entity(matching: EquipmentIdentifier) -> Entity?](tablesnapshot/entity(matching:)-vb9w.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabletopkit/tablesnapshot/state(matching:)-u35k)*

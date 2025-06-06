@@ -1,6 +1,6 @@
 # WKCrownSequencer
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: class
 
 An object that reports the current state of the digital crown, including its rotational speed when it is in motion.
@@ -42,14 +42,14 @@ Although the crown sequencer object has properties that contain the current stat
 ## Relationships
 
 ### Inherits From
-- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
-- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
-- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

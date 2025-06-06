@@ -1,6 +1,6 @@
 # givenName
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A given name.

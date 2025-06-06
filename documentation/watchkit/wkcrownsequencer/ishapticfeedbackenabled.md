@@ -1,6 +1,6 @@
 # isHapticFeedbackEnabled
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A Boolean value that determines whether the crown sequencer’s haptic feedback is enabled.

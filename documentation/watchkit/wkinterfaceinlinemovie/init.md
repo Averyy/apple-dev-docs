@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Creates an inline movie object for use in SwiftUI.

@@ -1,0 +1,46 @@
+# accessoryOutOfCompliance
+
+**Framework**: HomeKit  
+**Kind**: property
+
+An error indicating the accessory is out of compliance.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 8.0+
+- tvOS 10.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+static var accessoryOutOfCompliance: HMError.Code { get }
+```
+
+## See Also
+
+- [static var accessoryIsBlocked: HMError.Code](hmerror/accessoryisblocked.md)
+  An error indicating a blocked accessory.
+- [static var accessoryIsBusy: HMError.Code](hmerror/accessoryisbusy.md)
+  An error indicating the accessory is busy.
+- [static var accessoryIsSuspended: HMError.Code](hmerror/accessoryissuspended.md)
+  The accessory is suspended.
+- [static var accessoryNotReachable: HMError.Code](hmerror/accessorynotreachable.md)
+  An error indicating the accessory is not reachable over the network.
+- [static var accessoryOutOfResources: HMError.Code](hmerror/accessoryoutofresources.md)
+  An error indicating the accessory is out of resources.
+- [static var accessoryPoweredOff: HMError.Code](hmerror/accessorypoweredoff.md)
+  An error indicating the accessory is off.
+- [static var accessoryResponseError: HMError.Code](hmerror/accessoryresponseerror.md)
+  An error with the accessory’s response.
+- [static var addAccessoryFailed: HMError.Code](hmerror/addaccessoryfailed.md)
+  A failed attempt to add an accessory.
+- [static var incompatibleAccessory: HMError.Code](hmerror/incompatibleaccessory.md)
+  The accessory is incompatible.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/homekit/hmerror/accessoryoutofcompliance)*

@@ -1,6 +1,6 @@
 # Handling User Activity
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Detect and respond to user activity information from Handoff or a complication.
 

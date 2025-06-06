@@ -1,6 +1,6 @@
 # WKMenuItemIcon.more
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The icon indicating that more actions or options are available.

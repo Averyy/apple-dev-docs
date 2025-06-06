@@ -1,0 +1,52 @@
+# hasDestructiveAction
+
+**Framework**: AppKit  
+**Kind**: property
+
+A Boolean value that defines whether a button’s action has a destructive effect.
+
+**Availability**:
+- macOS 11.0+
+
+## Declaration
+
+```swift
+@MainActor
+var hasDestructiveAction: Bool { get set }
+```
+
+#### Discussion
+
+The default value of `hasDestructiveAction` is `false`. Setting this to `true` allows the system to guard a destructive-action button against accidental presses, and can give the button a special appearance in certain contexts to caution against unintentional use.
+
+## See Also
+
+- [func setButtonType(NSButton.ButtonType)](nsbutton/setbuttontype(_:).md)
+  Sets the button’s type, which affects its user interface and behavior when clicked.
+- [func getPeriodicDelay(UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)](nsbutton/getperiodicdelay(_:interval:).md)
+  Returns by reference the delay and interval periods for a continuous button.
+- [func setPeriodicDelay(Float, interval: Float)](nsbutton/setperiodicdelay(_:interval:).md)
+  Sets the message delay and interval periods for a continuous button.
+- [var contentTintColor: NSColor?](nsbutton/contenttintcolor.md)
+  A tint color to use for the template image and text content.
+- [var alternateTitle: String](nsbutton/alternatetitle.md)
+  The title that the button displays when the button is in an on state.
+- [var attributedTitle: NSAttributedString](nsbutton/attributedtitle.md)
+  The title that the button displays in an off state, as an attributed string.
+- [var attributedAlternateTitle: NSAttributedString](nsbutton/attributedalternatetitle.md)
+  The title that the button displays as an attributed string when the button is in an on state.
+- [var title: String](nsbutton/title.md)
+  The title displayed on the button when it’s in an off state.
+- [var symbolConfiguration: NSImage.SymbolConfiguration?](nsbutton/symbolconfiguration.md)
+  The combination of point size, weight, and scale to use when sizing and displaying symbol images.
+- [var sound: NSSound?](nsbutton/sound.md)
+  The sound that plays when the user clicks the button.
+- [var isSpringLoaded: Bool](nsbutton/isspringloaded.md)
+  A Boolean value that indicates whether spring loading is enabled for the button.
+- [var maxAcceleratorLevel: Int](nsbutton/maxacceleratorlevel.md)
+  An integer value indicating the maximum pressure level for a button of type [`NSMultiLevelAcceleratorButton`](nsmultilevelacceleratorbutton.md).
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsbutton/hasdestructiveaction)*

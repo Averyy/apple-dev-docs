@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionState.scheduled
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The app has scheduled the session to run at a future date.

@@ -1,0 +1,18 @@
+# launchControlFlags
+
+**Framework**: Application Services  
+**Kind**: structp
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```swift
+var launchControlFlags: LaunchFlags
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/applicationservices/launchparamblockrec/1460826-launchcontrolflags)*

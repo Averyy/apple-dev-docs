@@ -1,0 +1,26 @@
+# kAudioLevelControlPropertyDecibelValue
+
+**Framework**: Core Audio  
+**Kind**: var
+
+**Availability**:
+- Mac Catalyst ?+
+- macOS ?+
+
+## Declaration
+
+```swift
+var kAudioLevelControlPropertyDecibelValue: AudioObjectPropertySelector { get }
+```
+
+## See Also
+
+- [var kAudioLevelControlPropertyConvertDecibelsToScalar: AudioObjectPropertySelector](kaudiolevelcontrolpropertyconvertdecibelstoscalar.md)
+- [var kAudioLevelControlPropertyConvertScalarToDecibels: AudioObjectPropertySelector](kaudiolevelcontrolpropertyconvertscalartodecibels.md)
+- [var kAudioLevelControlPropertyDecibelRange: AudioObjectPropertySelector](kaudiolevelcontrolpropertydecibelrange.md)
+- [var kAudioLevelControlPropertyScalarValue: AudioObjectPropertySelector](kaudiolevelcontrolpropertyscalarvalue.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreaudio/kaudiolevelcontrolpropertydecibelvalue)*

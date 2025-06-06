@@ -1,0 +1,71 @@
+# init(forReadingFromURL:)
+
+**Framework**: Foundation  
+**Kind**: init
+
+Returns a file handle initialized for reading the file, device, or named socket at the specified URL.
+
+**Availability**:
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 13.1+
+- macOS 10.6+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+convenience init(forReadingFrom url: URL) throws
+```
+
+#### Return Value
+
+The initialized file handle object or `nil` if no file exists at `url`.
+
+#### Discussion
+
+The file pointer is set to the beginning of the file. You cannot write data to the returned file handle object. Use the [`readDataToEndOfFile()`](filehandle/readdatatoendoffile().md) or [`readData(ofLength:)`](filehandle/readdata(oflength:).md) methods to read data from it.
+
+When using this method to create a file handle object, the file handle owns its associated file descriptor and is responsible for closing it.
+
+> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+
+ In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+
+You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+
+## Parameters
+
+- `url`: The URL of the file, device, or named socket to access.
+
+## See Also
+
+- [var availableData: Data](filehandle/availabledata.md)
+  The data currently available in the receiver.
+- [func readData(ofLength: Int) -> Data](filehandle/readdata(oflength:).md)
+  Reads data synchronously up to the specified number of bytes.
+- [func readDataToEndOfFile() -> Data](filehandle/readdatatoendoffile.md)
+  Reads the available data synchronously up to the end of file or maximum number of bytes.
+- [convenience init(fileDescriptor: Int32)](filehandle/init(filedescriptor:).md)
+  Creates and returns a file handle object associated with the specified file descriptor.
+- [init(fileDescriptor: Int32, closeOnDealloc: Bool)](filehandle/init(filedescriptor:closeondealloc:).md)
+  Creates and returns a file handle object associated with the specified file descriptor and deallocation policy.
+- [convenience init?(forReadingAtPath: String)](filehandle/init(forreadingatpath:).md)
+  Returns a file handle initialized for reading the file, device, or named socket at the specified path.
+- [convenience init?(forWritingAtPath: String)](filehandle/init(forwritingatpath:).md)
+  Returns a file handle initialized for writing to the file, device, or named socket at the specified path.
+- [convenience init(forWritingToURL: URL) throws](filehandle/init(forwritingtourl:).md)
+  Returns a file handle initialized for writing to the file, device, or named socket at the specified URL.
+- [convenience init?(forUpdatingAtPath: String)](filehandle/init(forupdatingatpath:).md)
+  Returns a file handle initialized for reading and writing to the file, device, or named socket at the specified path.
+- [convenience init(forUpdatingURL: URL) throws](filehandle/init(forupdatingurl:).md)
+  Returns a file handle initialized for reading and writing to the file, device, or named socket at the specified URL.
+- [init?(coder: NSCoder)](filehandle/init(coder:).md)
+  Returns a file handle initialized from data in an unarchiver.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/filehandle/init(forreadingfromurl:))*

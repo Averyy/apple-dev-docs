@@ -1,6 +1,6 @@
 # setHidden(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Hides or shows the interface object in your user interface.

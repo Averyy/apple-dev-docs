@@ -1,6 +1,6 @@
 # play()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Begins playback of the current item.

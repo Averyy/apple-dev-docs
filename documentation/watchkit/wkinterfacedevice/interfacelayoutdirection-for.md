@@ -1,6 +1,6 @@
 # interfaceLayoutDirection(for:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Returns the user interface direction for the given semantic content attribute.

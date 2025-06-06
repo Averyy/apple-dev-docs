@@ -1,0 +1,4 @@
+Completed scraping GameplayKit!
+Total pages scraped: 439
+Pages skipped (unchanged): 1
+Pages failed: 0

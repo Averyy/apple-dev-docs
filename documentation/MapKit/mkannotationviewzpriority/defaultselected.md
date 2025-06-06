@@ -1,0 +1,34 @@
+# defaultSelected
+
+**Framework**: MapKit  
+**Kind**: property
+
+The default view overlapping priority for a selected view.
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
+- macOS 11.0+
+- tvOS 14.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+static let defaultSelected: MKAnnotationViewZPriority
+```
+
+## See Also
+
+- [static let defaultUnselected: MKAnnotationViewZPriority](mkannotationviewzpriority/defaultunselected.md)
+  The default view overlapping priority for an unselected view.
+- [static let max: MKAnnotationViewZPriority](mkannotationviewzpriority/max.md)
+  The maximum allowed priority for overlapping views.
+- [static let min: MKAnnotationViewZPriority](mkannotationviewzpriority/min.md)
+  The minimum allowed priority for overlapping views.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/mkannotationviewzpriority/defaultselected)*

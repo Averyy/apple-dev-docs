@@ -1,6 +1,6 @@
 # scene
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The scene to be displayed.

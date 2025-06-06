@@ -1,0 +1,57 @@
+# MTRClusterActivatedCarbonFilterMonitoring
+
+**Framework**: Matter  
+**Kind**: class
+
+**Availability**:
+- iOS 17.6+
+- iPadOS 17.6+
+- Mac Catalyst 17.6+
+- macOS 14.6+
+- tvOS 17.6+
+- visionOS 1.0+
+- watchOS 10.6+
+
+## Declaration
+
+```swift
+class MTRClusterActivatedCarbonFilterMonitoring
+```
+
+## Topics
+
+### Initializers
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusteractivatedcarbonfiltermonitoring/init(device:endpointid:queue:).md)
+### Instance Methods
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributeacceptedcommandlist(with:).md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributeattributelist(with:).md)
+- [func readAttributeChangeIndication(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributechangeindication(with:).md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributeclusterrevision(with:).md)
+- [func readAttributeCondition(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributecondition(with:).md)
+- [func readAttributeDegradationDirection(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributedegradationdirection(with:).md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributefeaturemap(with:).md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributegeneratedcommandlist(with:).md)
+- [func readAttributeInPlaceIndicator(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributeinplaceindicator(with:).md)
+- [func readAttributeLastChangedTime(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributelastchangedtime(with:).md)
+- [func readAttributeReplacementProductList(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributereplacementproductlist(with:).md)
+- [func resetCondition(with: MTRActivatedCarbonFilterMonitoringClusterResetConditionParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusteractivatedcarbonfiltermonitoring/resetcondition(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func resetCondition(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusteractivatedcarbonfiltermonitoring/resetcondition(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func writeAttributeLastChangedTime(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusteractivatedcarbonfiltermonitoring/writeattributelastchangedtime(withvalue:expectedvalueinterval:).md)
+- [func writeAttributeLastChangedTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusteractivatedcarbonfiltermonitoring/writeattributelastchangedtime(withvalue:expectedvalueinterval:params:).md)
+
+## Relationships
+
+### Inherits From
+- [MTRGenericCluster](mtrgenericcluster.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/matter/mtrclusteractivatedcarbonfiltermonitoring)*

@@ -1,6 +1,6 @@
 # setImageNamed(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the displayed image using a named image resource file.

@@ -1,0 +1,37 @@
+# pushDebugGroup(_:)
+
+**Framework**: Metal  
+**Kind**: method  
+**Required**: Yes
+
+Pushes a specific string onto a stack of debug group strings for the command encoder.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.11+
+- tvOS ?+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+func pushDebugGroup(_ string: String)
+```
+
+#### Discussion
+
+For more information, see `Enhancing Frame Capture by Using Labels`.
+
+## See Also
+
+- [func insertDebugSignpost(String)](mtlcommandencoder/insertdebugsignpost(_:).md)
+  Inserts a debug string into the captured frame data.
+- [func popDebugGroup()](mtlcommandencoder/popdebuggroup.md)
+  Pops the latest string off of a stack of debug group strings for the command encoder.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlcommandencoder/pushdebuggroup(_:))*

@@ -1,0 +1,44 @@
+# removeAnimation(forKey:)
+
+**Framework**: SceneKit  
+**Kind**: method  
+**Required**: Yes
+
+Removes the animation attached to the object with the specified key.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
+
+## Declaration
+
+```swift
+func removeAnimation(forKey key: String)
+```
+
+## Parameters
+
+- `key`: A string identifying an attached animation to remove.
+
+## See Also
+
+- [func addAnimation(any SCNAnimationProtocol, forKey: String?)](scnanimatable/addanimation(_:forkey:).md)
+  Adds an animation object for the specified key.
+- [func animation(forKey: String) -> CAAnimation?](scnanimatable/animation(forkey:).md)
+  Returns the animation with the specified key.
+- [var animationKeys: [String]](scnanimatable/animationkeys.md)
+  An array containing the keys of all animations currently attached to the object.
+- [func removeAllAnimations()](scnanimatable/removeallanimations.md)
+  Removes all the animations currently attached to the object.
+- [func removeAnimation(forKey: String, fadeOutDuration: CGFloat)](scnanimatable/removeanimation(forkey:fadeoutduration:).md)
+  Removes the animation attached to the object with the specified key, smoothly transitioning out of the animation’s effect.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnanimatable/removeanimation(forkey:))*

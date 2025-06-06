@@ -1,0 +1,25 @@
+# onNOCChainGenerationNeeded(_:attestationInfo:onNOCChainGenerationComplete:)
+
+**Framework**: Matter  
+**Kind**: method  
+**Required**: Yes
+
+**Availability**:
+- iOS 16.1+
+- iPadOS 16.1+
+- Mac Catalyst 16.1+
+- macOS 13.0+
+- tvOS 16.1+
+- visionOS 1.0+
+- watchOS 9.1+
+
+## Declaration
+
+```swift
+func onNOCChainGenerationNeeded(_ csrInfo: CSRInfo, attestationInfo: AttestationInfo, onNOCChainGenerationComplete: @escaping MTRNOCChainGenerationCompleteHandler)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/matter/mtrnocchainissuer/onnocchaingenerationneeded(_:attestationinfo:onnocchaingenerationcomplete:))*

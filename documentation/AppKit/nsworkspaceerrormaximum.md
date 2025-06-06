@@ -1,0 +1,29 @@
+# NSWorkspaceErrorMaximum
+
+**Framework**: AppKit  
+**Kind**: var
+
+**Availability**:
+- macOS 10.14+
+
+## Declaration
+
+```swift
+var NSWorkspaceErrorMaximum: Int { get }
+```
+
+## See Also
+
+- [var NSWorkspaceAuthorizationInvalidError: Int](nsworkspaceauthorizationinvaliderror.md)
+  The provided workspace authorization credentials expired or are invalid.
+- [var NSWorkspaceErrorMinimum: Int](nsworkspaceerrorminimum.md)
+- [var NSWindowSharingErrorMaximum: Int](nswindowsharingerrormaximum.md)
+- [var NSWindowSharingErrorMinimum: Int](nswindowsharingerrorminimum.md)
+- [var NSWindowSharingRequestAlreadyRequested: Int](nswindowsharingrequestalreadyrequested.md)
+- [var NSWindowSharingRequestNoEligibleSession: Int](nswindowsharingrequestnoeligiblesession.md)
+- [var NSWindowSharingRequestUnspecifiedError: Int](nswindowsharingrequestunspecifiederror.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsworkspaceerrormaximum)*

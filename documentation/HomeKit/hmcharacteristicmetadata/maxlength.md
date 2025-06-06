@@ -1,0 +1,40 @@
+# maxLength
+
+**Framework**: HomeKit  
+**Kind**: property
+
+The maximum number of UTF-8 characters allowed in a characteristic that uses a string format.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 8.0+
+- tvOS 10.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+var maxLength: NSNumber? { get }
+```
+
+#### Discussion
+
+This value only applies to characteristics with a string type.
+
+## See Also
+
+- [var validValues: [NSNumber]?](hmcharacteristicmetadata/validvalues.md)
+  The subset of valid values supported by the characteristic when the format is of type unsigned integer.
+- [var minimumValue: NSNumber?](hmcharacteristicmetadata/minimumvalue.md)
+  The minimum value for the characteristic.
+- [var maximumValue: NSNumber?](hmcharacteristicmetadata/maximumvalue.md)
+  The maximum value for the characteristic.
+- [var stepValue: NSNumber?](hmcharacteristicmetadata/stepvalue.md)
+  The minimum interval between values for the characteristic.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/homekit/hmcharacteristicmetadata/maxlength)*

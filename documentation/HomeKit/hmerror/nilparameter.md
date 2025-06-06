@@ -1,0 +1,34 @@
+# nilParameter
+
+**Framework**: HomeKit  
+**Kind**: property
+
+An error indicating that nil was passed for an operation that does not accept nil.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 8.0+
+- tvOS 10.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+static var nilParameter: HMError.Code { get }
+```
+
+## See Also
+
+- [static var invalidParameter: HMError.Code](hmerror/invalidparameter.md)
+  An error indicating the object is invalid for the given operation.
+- [static var missingParameter: HMError.Code](hmerror/missingparameter.md)
+  An error indicating a missing parameter.
+- [static var unconfiguredParameter: HMError.Code](hmerror/unconfiguredparameter.md)
+  An error indicating an unconfigured parameter.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/homekit/hmerror/nilparameter)*

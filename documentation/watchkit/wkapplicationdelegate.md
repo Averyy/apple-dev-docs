@@ -1,6 +1,6 @@
 # WKApplicationDelegate
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: protocol
 
 A collection of methods that manages the app-level behavior for a single-target watchOS app.
@@ -111,7 +111,7 @@ Finally, implement the delegate methods you want to handle.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
@@ -127,7 +127,7 @@ Finally, implement the delegate methods you want to handle.
   Creates the application object and the application delegate, and sets up the app’s event cycle.
 - [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- [WKPrefersNetworkUponForeground](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground)
+- [WKPrefersNetworkUponForeground](../BundleResources/Information-Property-List/WKPrefersNetworkUponForeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

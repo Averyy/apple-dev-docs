@@ -1,0 +1,4 @@
+Completed scraping Device Management!
+Total pages scraped: 1192
+Pages skipped (unchanged): 1
+Pages failed: 0

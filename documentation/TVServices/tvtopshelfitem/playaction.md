@@ -1,0 +1,31 @@
+# playAction
+
+**Framework**: TV Services  
+**Kind**: property
+
+The action to perform when the user wants to play the current item.
+
+**Availability**:
+- tvOS 13.0+
+
+## Declaration
+
+```swift
+var playAction: TVTopShelfAction? { get set }
+```
+
+#### Discussion
+
+In a carousel inteface, the first of two buttons invites the user to play the content associated with the current item. The action object you assign to this property provides the title and image to use for that button. When selected, the system loads the action’s URL.
+
+In a sectioned interface, tvOS loads the URL for the specified action when the current item is focused and the user presses the play/pause button.
+
+## See Also
+
+- [var displayAction: TVTopShelfAction?](tvtopshelfitem/displayaction.md)
+  The action to perform when the user wants to see more information for the current item.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tvservices/tvtopshelfitem/playaction)*

@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionErrorCode.barDisabled
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The user has disabled background app refresh.

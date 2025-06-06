@@ -1,6 +1,6 @@
 # WKAlertControllerStyle.sideBySideButtonsAlert
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 An alert sheet with side-by-side buttons.

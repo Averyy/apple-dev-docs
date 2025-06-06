@@ -1,0 +1,24 @@
+# MeshDescriptor.Materials.allFaces(_:)
+
+**Framework**: RealityKit  
+**Kind**: case
+
+A single material index for the whole mesh.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- visionOS ?+
+
+## Declaration
+
+```swift
+case allFaces(UInt32)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/meshdescriptor/materials-swift.enum/allfaces(_:))*

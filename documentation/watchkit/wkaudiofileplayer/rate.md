@@ -1,6 +1,6 @@
 # rate
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The current rate of playback.

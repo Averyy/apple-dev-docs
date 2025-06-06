@@ -1,0 +1,43 @@
+# mappingModel
+
+**Framework**: Core Data  
+**Kind**: property
+
+The mapping model for the migration manager.
+
+**Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 13.1+
+- macOS 10.5+
+- tvOS ?+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+var mappingModel: NSMappingModel { get }
+```
+
+## See Also
+
+- [func migrateStore(from: URL, sourceType: String, options: [AnyHashable : Any]?, with: NSMappingModel?, toDestinationURL: URL, destinationType: String, destinationOptions: [AnyHashable : Any]?) throws](nsmigrationmanager/migratestore(from:sourcetype:options:with:todestinationurl:destinationtype:destinationoptions:).md)
+  Migrates the store at a given source URL to the store at a given destination URL, performing all of the mappings specified in a given mapping model.
+- [var destinationContext: NSManagedObjectContext](nsmigrationmanager/destinationcontext.md)
+  The managed object context the migration manager uses for writing the destination persistent store.
+- [var destinationModel: NSManagedObjectModel](nsmigrationmanager/destinationmodel.md)
+  The destination model for the migration manager.
+- [var sourceContext: NSManagedObjectContext](nsmigrationmanager/sourcecontext.md)
+  The managed object context the migration manager uses for reading the source persistent store.
+- [var sourceModel: NSManagedObjectModel](nsmigrationmanager/sourcemodel.md)
+  The source model for the migration manager.
+- [func destinationEntity(for: NSEntityMapping) -> NSEntityDescription?](nsmigrationmanager/destinationentity(for:).md)
+  Returns the entity description for the destination entity of a given entity mapping.
+- [func sourceEntity(for: NSEntityMapping) -> NSEntityDescription?](nsmigrationmanager/sourceentity(for:).md)
+  Returns the entity description for the source entity of a given entity mapping.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsmigrationmanager/mappingmodel)*

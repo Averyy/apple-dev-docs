@@ -1,0 +1,51 @@
+# /(_:_:)
+
+**Framework**: Create ML  
+**Kind**: op
+
+Creates a column of integers by dividing each element in the first column by the corresponding element in the second column.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 10.14+
+- tvOS 16.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+static func / (a: MLDataColumn<Int>, b: MLDataColumn<Int>) -> MLDataColumn<Int>
+```
+
+#### Return Value
+
+A new column of integers if the columns are the same size; otherwise an invalid column.
+
+## Parameters
+
+- `a`: A column of integers.
+- `b`: A column of integers.
+
+## See Also
+
+- [static func + (MLDataColumn<Int>, MLDataColumn<Int>) -> MLDataColumn<Int>](mldatacolumn/+(_:_:)-24g38.md)
+  Creates a column of integers by adding each element in the first column to the corresponding element in the second column.
+- [static func + (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](mldatacolumn/+(_:_:)-q5bb.md)
+  Creates a column of doubles by adding each element in the first column to the corresponding element in the second column.
+- [static func - (MLDataColumn<Int>, MLDataColumn<Int>) -> MLDataColumn<Int>](mldatacolumn/-(_:_:)-11hbf.md)
+  Creates a column of integers by subtracting each element in the second column from the corresponding element in the first column.
+- [static func - (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](mldatacolumn/-(_:_:)-3mwsr.md)
+  Creates a column of doubles by subtracting each element in the second column from the corresponding element in the first column.
+- [static func * (MLDataColumn<Int>, MLDataColumn<Int>) -> MLDataColumn<Int>](mldatacolumn/*(_:_:)-40smy.md)
+  Creates a column of integers by multiplying each element in the first column by the corresponding element in the second column.
+- [static func * (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](mldatacolumn/*(_:_:)-lchb.md)
+  Creates a column of doubles by multiplying each element in the first column by the corresponding element in the second column.
+- [static func / (MLDataColumn<Double>, MLDataColumn<Double>) -> MLDataColumn<Double>](mldatacolumn/_(_:_:)-69vgc.md)
+  Creates a column of doubles by dividing each element in the first column by the corresponding element in the second column.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/mldatacolumn/_(_:_:)-5uxby)*

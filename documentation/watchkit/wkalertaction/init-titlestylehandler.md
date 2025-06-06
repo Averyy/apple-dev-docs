@@ -1,6 +1,6 @@
 # init(title:style:handler:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Creates and returns an action object with the specified button information.

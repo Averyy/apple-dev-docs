@@ -1,6 +1,6 @@
 # willActivate()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the interface controller that the system is about to activate its view.

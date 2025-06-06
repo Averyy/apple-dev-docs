@@ -1,6 +1,6 @@
 # WatchKitError.Code.recordingFailed
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 An audio recording error.

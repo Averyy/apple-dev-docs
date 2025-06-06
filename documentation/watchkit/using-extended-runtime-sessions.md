@@ -1,6 +1,6 @@
 # Using extended runtime sessions
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Create an extended runtime session that continues running your app after the user stops interacting with it.
 

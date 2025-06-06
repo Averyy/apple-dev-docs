@@ -1,6 +1,6 @@
 # WKMenuItemIcon.decline
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The icon indicating an action to decline or cancel an event.

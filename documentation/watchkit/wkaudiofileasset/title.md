@@ -1,6 +1,6 @@
 # title
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The title information for the audio file.

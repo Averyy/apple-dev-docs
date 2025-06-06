@@ -1,0 +1,4 @@
+Completed scraping AVFoundation!
+Total pages scraped: 4509
+Pages skipped (unchanged): 1
+Pages failed: 0

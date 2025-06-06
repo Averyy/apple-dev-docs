@@ -1,0 +1,64 @@
+# ar_barcode_detection_symbology_t
+
+**Framework**: ARKit  
+**Kind**: enum
+
+An enumeration that describes the kinds of barcode the framework can detect.
+
+## Declaration
+
+```swift
+typedef enum { ... } ar_barcode_detection_symbology_t;
+```
+
+## Topics
+
+### Barcode types
+- [ar_barcode_detection_symbology_aztec](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_aztec.md)
+- [ar_barcode_detection_symbology_codabar](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_codabar.md)
+- [ar_barcode_detection_symbology_code_128](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_128.md)
+- [ar_barcode_detection_symbology_code_39](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_39.md)
+- [ar_barcode_detection_symbology_code_39_checksum](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_39_checksum.md)
+- [ar_barcode_detection_symbology_code_39_full_ascii](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_39_full_ascii.md)
+- [ar_barcode_detection_symbology_code_39_full_ascii_checksum](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_39_full_ascii_checksum.md)
+- [ar_barcode_detection_symbology_code_93](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_93.md)
+- [ar_barcode_detection_symbology_code_93i](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_93i.md)
+- [ar_barcode_detection_symbology_data_matrix](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_data_matrix.md)
+- [ar_barcode_detection_symbology_ean_13](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_ean_13.md)
+- [ar_barcode_detection_symbology_ean_8](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_ean_8.md)
+- [ar_barcode_detection_symbology_gs1_databar](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_gs1_databar.md)
+- [ar_barcode_detection_symbology_gs1_databar_expanded](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_gs1_databar_expanded.md)
+- [ar_barcode_detection_symbology_gs1_databar_limited](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_gs1_databar_limited.md)
+- [ar_barcode_detection_symbology_itf](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_itf.md)
+- [ar_barcode_detection_symbology_itf_14](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_itf_14.md)
+- [ar_barcode_detection_symbology_itf_checksum](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_itf_checksum.md)
+- [ar_barcode_detection_symbology_micropdf417](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_micropdf417.md)
+- [ar_barcode_detection_symbology_microqr](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_microqr.md)
+- [ar_barcode_detection_symbology_msi_plessey](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_msi_plessey.md)
+- [ar_barcode_detection_symbology_none](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_none.md)
+- [ar_barcode_detection_symbology_pdf417](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_pdf417.md)
+- [ar_barcode_detection_symbology_qr](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_qr.md)
+- [ar_barcode_detection_symbology_upce](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_upce.md)
+
+## See Also
+
+- [ar_barcode_anchor_copy_payload_data](ar_barcode_anchor_copy_payload_data.md)
+- [ar_barcode_anchor_get_extent](ar_barcode_anchor_get_extent.md)
+- [ar_barcode_anchor_get_identifier](ar_barcode_anchor_get_identifier.md)
+- [ar_barcode_anchor_get_origin_from_anchor_transform](ar_barcode_anchor_get_origin_from_anchor_transform.md)
+- [ar_barcode_anchor_get_payload_string_value](ar_barcode_anchor_get_payload_string_value.md)
+- [ar_barcode_anchor_get_symbology](ar_barcode_anchor_get_symbology.md)
+- [ar_barcode_anchor_get_timestamp](ar_barcode_anchor_get_timestamp.md)
+- [ar_barcode_anchors_enumerate_anchors](ar_barcode_anchors_enumerate_anchors.md)
+- [ar_barcode_anchors_enumerate_anchors_f](ar_barcode_anchors_enumerate_anchors_f.md)
+- [ar_barcode_anchors_get_count](ar_barcode_anchors_get_count.md)
+- [ar_barcode_detection_configuration_create](ar_barcode_detection_configuration_create.md)
+- [ar_barcode_detection_configuration_set_detection_symbology](ar_barcode_detection_configuration_set_detection_symbology.md)
+- [ar_barcode_detection_provider_create](ar_barcode_detection_provider_create.md)
+- [ar_barcode_detection_provider_get_required_authorization_type](ar_barcode_detection_provider_get_required_authorization_type.md)
+- [ar_barcode_detection_provider_is_supported](ar_barcode_detection_provider_is_supported.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/ar_barcode_detection_symbology_t)*

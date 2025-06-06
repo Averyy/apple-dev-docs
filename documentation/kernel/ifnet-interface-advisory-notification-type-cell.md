@@ -1,0 +1,31 @@
+# ifnet_interface_advisory_notification_type_cell
+
+**Framework**: Kernel  
+**Kind**: tag
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+enum ifnet_interface_advisory_notification_type_cell : uint8_t {
+    ...
+};
+```
+
+## Topics
+
+### Constants
+- [IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_CELLULAR_BANDWIDTH_LIMITATION_EVENT](ifnet_interface_advisory_notification_type_cell/if_interface_advisory_notification_type_cellular_bandwidth_limitation_event.md)
+- [IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_CELLULAR_DEFAULT](ifnet_interface_advisory_notification_type_cell/if_interface_advisory_notification_type_cellular_default.md)
+- [IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_CELLULAR_DISCONTINUOUS_RECEPTION_EVENT](ifnet_interface_advisory_notification_type_cell/if_interface_advisory_notification_type_cellular_discontinuous_reception_event.md)
+- [IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_CELLULAR_MEASUREMENT_UPDATE](ifnet_interface_advisory_notification_type_cell/if_interface_advisory_notification_type_cellular_measurement_update.md)
+- [IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_CELLULAR_OUTAGE_EVENT](ifnet_interface_advisory_notification_type_cell/if_interface_advisory_notification_type_cellular_outage_event.md)
+- [IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_CELLULAR_THERMAL_CRA_EVENT](ifnet_interface_advisory_notification_type_cell/if_interface_advisory_notification_type_cellular_thermal_cra_event.md)
+- [IF_INTERFACE_ADVISORY_NOTIFICATION_TYPE_CELLULAR_UPLINK_CRA](ifnet_interface_advisory_notification_type_cell/if_interface_advisory_notification_type_cellular_uplink_cra.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/ifnet_interface_advisory_notification_type_cell)*

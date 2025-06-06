@@ -1,0 +1,27 @@
+# AtomicRepresentation
+
+**Framework**: Synchronization  
+**Kind**: associatedtype  
+**Required**: Yes
+
+The storage representation type that `Self` encodes to and decodes from which is a suitable type when used in atomic operations.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
+
+## Declaration
+
+```swift
+associatedtype AtomicRepresentation : BitwiseCopyable
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/synchronization/atomicrepresentable/atomicrepresentation)*

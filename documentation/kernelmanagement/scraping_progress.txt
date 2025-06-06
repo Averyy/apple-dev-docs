@@ -1,0 +1,4 @@
+Completed scraping Kernel Management!
+Total pages scraped: 4
+Pages skipped (unchanged): 1
+Pages failed: 0

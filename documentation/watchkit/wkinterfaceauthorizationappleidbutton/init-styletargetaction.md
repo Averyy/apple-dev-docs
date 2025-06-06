@@ -1,6 +1,6 @@
 # init(style:target:action:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Creates an authorization button for use in SwiftUI.

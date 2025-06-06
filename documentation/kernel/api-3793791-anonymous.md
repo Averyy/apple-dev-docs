@@ -1,0 +1,60 @@
+# Anonymous
+
+**Framework**: Kernel  
+**Kind**: enum
+
+**Availability**:
+- macOS 12.0+
+
+## Declaration
+
+```swift
+enum : unsigned int {
+    ...
+};
+```
+
+## Topics
+
+### Constants
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilityMinRxLaneCount](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilityminrxlanecount.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilityMinRxLaneCountPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilityminrxlanecountphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilityMinTxLaneCount](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitymintxlanecount.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilityMinTxLaneCountPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitymintxlanecountphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilityReserved](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilityreserved.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilityReservedPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilityreservedphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkAsymmetric](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkasymmetric.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkDirection](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkdirection.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkDirectionPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkdirectionphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkDirectionRx](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkdirectionrx.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkDirectionTx](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkdirectiontx.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkLSE](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinklse.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkLSEBits](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinklsebits.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkLSEGbits](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinklsegbits.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkLSEKbits](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinklsekbits.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkLSEMbits](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinklsembits.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkLSEPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinklsephase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkMinSpeedId](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkminspeedid.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkMinSpeedIdPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkminspeedidphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkProtocol](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkprotocol.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkProtocolPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkprotocolphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkReserved](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkreserved.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkReservedPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkreservedphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSpeedAttrCount](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkspeedattrcount.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSpeedAttrCountPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkspeedattrcountphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSpeedId](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkspeedid.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSpeedIdCount](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkspeedidcount.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSpeedIdCountPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkspeedidcountphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSpeedIdPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkspeedidphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSpeedMantissa](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkspeedmantissa.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSpeedMantissaPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinkspeedmantissaphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSymmetric](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinksymmetric.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSymmetry](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinksymmetry.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkSymmetryPhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinksymmetryphase.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkType](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinktype.md)
+- [StandardUSB::kSuperSpeedPlusDeviceCapabilitySublinkTypePhase](3793791-anonymous/standardusb_ksuperspeedplusdevicecapabilitysublinktypephase.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/3793791-anonymous)*

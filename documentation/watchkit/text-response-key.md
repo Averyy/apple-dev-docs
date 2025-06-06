@@ -1,13 +1,13 @@
 # Text Response Key
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Keys for retrieving text response information.
 
 ## Topics
 
 ### Constants
-- [let UIUserNotificationActionResponseTypedTextKey: String](https://developer.apple.com/documentation/UIKit/UIUserNotificationActionResponseTypedTextKey)
+- [let UIUserNotificationActionResponseTypedTextKey: String](../UIKit/UIUserNotificationActionResponseTypedTextKey.md)
   The response text selected by the user.
 
 ## See Also

@@ -1,0 +1,36 @@
+# debugDescription
+
+**Framework**: ML Compute  
+**Kind**: property
+
+A textual description of the loss type, suitable for debugging.
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
+- macOS 11.0+
+- tvOS 14.0+
+
+## Declaration
+
+```swift
+var debugDescription: String { get }
+```
+
+## See Also
+
+- [MLCLossType.categoricalCrossEntropy](mlclosstype/categoricalcrossentropy.md)
+- [MLCLossType.cosineDistance](mlclosstype/cosinedistance.md)
+- [MLCLossType.hinge](mlclosstype/hinge.md)
+- [MLCLossType.huber](mlclosstype/huber.md)
+- [MLCLossType.log](mlclosstype/log.md)
+- [MLCLossType.meanAbsoluteError](mlclosstype/meanabsoluteerror.md)
+- [MLCLossType.meanSquaredError](mlclosstype/meansquarederror.md)
+- [MLCLossType.sigmoidCrossEntropy](mlclosstype/sigmoidcrossentropy.md)
+- [MLCLossType.softmaxCrossEntropy](mlclosstype/softmaxcrossentropy.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/mlcompute/mlclosstype/debugdescription)*

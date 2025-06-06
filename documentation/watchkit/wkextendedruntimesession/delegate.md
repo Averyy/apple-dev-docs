@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A delegate object for monitoring the session and responding to state changes and errors.

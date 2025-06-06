@@ -1,0 +1,24 @@
+# append(_:)
+
+**Framework**: Combine  
+**Kind**: method
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
+- watchOS 6.0+
+
+## Declaration
+
+```swift
+func append<S>(_ elements: S) -> Publishers.Sequence<Elements, Failure> where S : Sequence, Elements.Element == S.Element
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/sequence/append(_:)-45rm8)*

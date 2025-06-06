@@ -1,0 +1,4 @@
+Completed scraping Core Audio Types!
+Total pages scraped: 599
+Pages skipped (unchanged): 1
+Pages failed: 0

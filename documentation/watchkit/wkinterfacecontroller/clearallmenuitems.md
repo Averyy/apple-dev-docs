@@ -1,6 +1,6 @@
 # clearAllMenuItems()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Removes all programmatically added actions from the context menu.

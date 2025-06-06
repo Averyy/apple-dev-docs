@@ -1,0 +1,20 @@
+# foveationEnabled
+
+**Framework**: Compositor Services  
+**Kind**: property
+
+An option to request a layout that supports foveated rendering.
+
+**Availability**:
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+static let foveationEnabled: LayerRenderer.Capabilities.SupportedLayoutsOptions
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/layerrenderer/capabilities/supportedlayoutsoptions/foveationenabled)*

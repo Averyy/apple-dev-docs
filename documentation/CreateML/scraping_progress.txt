@@ -1,0 +1,4 @@
+Completed scraping Create ML!
+Total pages scraped: 2686
+Pages skipped (unchanged): 1
+Pages failed: 0

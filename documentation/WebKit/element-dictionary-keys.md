@@ -1,0 +1,40 @@
+# Element Dictionary Keys
+
+**Framework**: Webkit
+
+Predefined keys used to access an element dictionary.
+
+#### Overview
+
+These constants represent predefined keys used to access an element dictionary. An element dictionary is an NSDictionary representation of an HTML element, as in a clicked or selected element. Some methods in the WebPolicyDelegate informal protocol have an element dictionary argument. The descriptions below describe the dictionary value for the key.
+
+## Topics
+
+### Constants
+- [let WebElementDOMNodeKey: String](webelementdomnodekey.md)
+  The DOMNode for this element.
+- [let WebElementFrameKey: String](webelementframekey.md)
+  The WebFrame object associated with this element.
+- [let WebElementImageAltStringKey: String](webelementimagealtstringkey.md)
+  An NSString of the ALT attribute of an image element.
+- [let WebElementImageKey: String](webelementimagekey.md)
+  An NSImage representing an image element.
+- [let WebElementImageRectKey: String](webelementimagerectkey.md)
+  An NSValue containing an NSRect, the size of an image element.
+- [let WebElementImageURLKey: String](webelementimageurlkey.md)
+  An NSURL containing the location of an image element.
+- [let WebElementIsSelectedKey: String](webelementisselectedkey.md)
+  An NSNumber used as a BOOL value to indicate whether a text element is selected or not. Zero value indicates false, true otherwise.
+- [let WebElementLinkURLKey: String](webelementlinkurlkey.md)
+  An NSURL containing the location of a link if the element is within an anchor.
+- [let WebElementLinkTargetFrameKey: String](webelementlinktargetframekey.md)
+  The WebFrame object associated with the target of the anchor.
+- [let WebElementLinkTitleKey: String](webelementlinktitlekey.md)
+  An NSString containing the title of an anchor.
+- [let WebElementLinkLabelKey: String](webelementlinklabelkey.md)
+  An NSString containing the text within an anchor.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/element-dictionary-keys)*

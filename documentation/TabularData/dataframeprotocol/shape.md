@@ -1,0 +1,47 @@
+# shape
+
+**Framework**: TabularData  
+**Kind**: property  
+**Required**: Yes
+
+The number or rows and columns of the data frame type.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+var shape: (rows: Int, columns: Int) { get }
+```
+
+## Parameters
+
+- `rows`: The number of rows in the data frame type.
+- `columns`: The number of columns in the data frame type.
+
+## See Also
+
+- [var isEmpty: Bool](dataframeprotocol/isempty.md)
+  A Boolean that indicates whether the data frame type is empty.
+- [var columns: [Self.ColumnType]](dataframeprotocol/columns.md)
+  The columns of the underlying data frame.
+- [associatedtype ColumnType : AnyColumnProtocol](dataframeprotocol/columntype.md)
+  A type that conforms to the type-erased column protocol.
+- [var rows: DataFrame.Rows](dataframeprotocol/rows.md)
+  The rows of the underlying data frame.
+- [DataFrame.Rows](dataframe/rows-swift.struct.md)
+  A collection of rows in a data frame.
+- [var base: DataFrame](dataframeprotocol/base.md)
+  The underlying data frame.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabulardata/dataframeprotocol/shape)*

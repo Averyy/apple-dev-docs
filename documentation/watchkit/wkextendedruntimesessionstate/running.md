@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionState.running
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The session is actively running.

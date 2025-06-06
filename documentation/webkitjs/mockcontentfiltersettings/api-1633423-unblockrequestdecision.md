@@ -1,0 +1,19 @@
+# unblockRequestDecision
+
+**Framework**: Webkitjs  
+**Kind**: instp
+
+**Availability**:
+- Safari Desktop 9.0+
+- Safari Mobile 9.0+
+
+## Declaration
+
+```swift
+attribute octet unblockRequestDecision;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkitjs/mockcontentfiltersettings/1633423-unblockrequestdecision)*

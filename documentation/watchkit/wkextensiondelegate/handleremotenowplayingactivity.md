@@ -1,6 +1,6 @@
 # handleRemoteNowPlayingActivity()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the delegate when the user plays audio in the corresponding iOS app.

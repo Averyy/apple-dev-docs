@@ -1,6 +1,6 @@
 # unknown
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 An unknown error.

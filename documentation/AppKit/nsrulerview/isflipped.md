@@ -1,0 +1,46 @@
+# isFlipped
+
+**Framework**: AppKit  
+**Kind**: property
+
+A Boolean that indicates if the ruler view’s coordinate system is flipped.
+
+**Availability**:
+- macOS ?+
+
+## Declaration
+
+```swift
+@MainActor
+var isFlipped: Bool { get }
+```
+
+#### Discussion
+
+[`true`](https://developer.apple.com/documentation/swift/true) if the receiver’s coordinate system is flipped, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+
+A vertical ruler takes into account whether the coordinate system of the [`NSScrollView`](nsscrollview.md)‘s document view—not the receiver’s client view—is flipped. A horizontal ruler is always flipped.
+
+## See Also
+
+- [var scrollView: NSScrollView?](nsrulerview/scrollview.md)
+  The NSScrollView that owns the receiver to `scrollView`, without retaining it.
+- [var orientation: NSRulerView.Orientation](nsrulerview/orientation-swift.property.md)
+  The orientation of the receiver to `orientation`.
+- [NSRulerView.Orientation](nsrulerview/orientation-swift.enum.md)
+  These constants are defined to specify a ruler’s orientation and are used by [`orientation`](nsrulerview/orientation-swift.property.md).
+- [var reservedThicknessForAccessoryView: CGFloat](nsrulerview/reservedthicknessforaccessoryview.md)
+  The room available for the receiver’s accessory view to `thickness`.
+- [var reservedThicknessForMarkers: CGFloat](nsrulerview/reservedthicknessformarkers.md)
+  The room available for ruler markers to `thickness`.
+- [var ruleThickness: CGFloat](nsrulerview/rulethickness.md)
+  The thickness of the area where ruler hash marks and labels are drawn.
+- [var requiredThickness: CGFloat](nsrulerview/requiredthickness.md)
+  The thickness needed for proper tiling of the receiver within an NSScrollView.
+- [var baselineLocation: CGFloat](nsrulerview/baselinelocation.md)
+  The location of the receiver’s baseline, in its own coordinate system.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsrulerview/isflipped)*

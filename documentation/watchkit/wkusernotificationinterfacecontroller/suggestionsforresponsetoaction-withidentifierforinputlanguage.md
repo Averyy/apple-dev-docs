@@ -1,6 +1,6 @@
 # suggestionsForResponseToAction(withIdentifier:for:inputLanguage:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Returns an array of attributed strings representing the text suggestions to display during text input.

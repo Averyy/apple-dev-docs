@@ -1,0 +1,39 @@
+# doubleValue
+
+**Framework**: Foundation  
+**Kind**: property
+
+The decimal number’s closest approximate `double` value.
+
+**Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 13.0+
+- macOS 10.0+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+var doubleValue: Double { get }
+```
+
+#### Discussion
+
+Not all decimal numbers can be accurately represented using a `double` value.
+
+## See Also
+
+- [var decimalValue: Decimal](nsdecimalnumber/decimalvalue.md)
+  The decimal number’s value, expressed as an [`Decimal`](decimal.md) structure.
+- [func description(withLocale: Any?) -> String](nsdecimalnumber/description(withlocale:).md)
+  Returns a string representation of the decimal number appropriate for the specified locale.
+- [var objCType: UnsafePointer<CChar>](nsdecimalnumber/objctype.md)
+  A C string containing the Objective-C type for the data contained in the decimal number object.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsdecimalnumber/doublevalue)*

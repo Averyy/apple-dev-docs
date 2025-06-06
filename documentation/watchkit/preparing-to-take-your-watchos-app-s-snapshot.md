@@ -1,6 +1,6 @@
 # Preparing to take your watchOS app’s snapshot
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Provide a timely, accurate snapshot of your app by using snapshot background tasks.
 

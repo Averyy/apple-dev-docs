@@ -1,0 +1,54 @@
+# product(name:package:moduleAliases:condition:)
+
+**Framework**: PackageDescription  
+**Kind**: method
+
+Creates a target dependency on a product from a package dependency.
+
+**Availability**:
+- SwiftPM 5.7+
+
+## Declaration
+
+```swift
+static func product(name: String, package: String, moduleAliases: [String : String]? = nil, condition: TargetDependencyCondition? = nil) -> Target.Dependency
+```
+
+#### Return Value
+
+A `Target.Dependency` instance.
+
+## Parameters
+
+- `name`: The name of the product.
+- `package`: The name of the package.
+- `moduleAliases`: The module aliases for targets in the product.
+- `condition`: A condition that limits the application of the target dependency. For example, only apply a   dependency for a specific platform.
+
+## See Also
+
+- [static func product(name: String, package: String, condition: TargetDependencyCondition?) -> Target.Dependency](target/dependency/product(name:package:condition:).md)
+  Creates a target dependency on a product from a package dependency.
+- [static func product(name: String, package: String?) -> Target.Dependency](target/dependency/product(name:package:)-fp0j.md)
+  Creates a dependency on a product from a package dependency.
+- [static func product(name: String, package: String) -> Target.Dependency](target/dependency/product(name:package:)-2nako.md)
+  Creates a dependency on a product from a package dependency.
+- [static func target(name: String, condition: TargetDependencyCondition?) -> Target.Dependency](target/dependency/target(name:condition:).md)
+  Creates a dependency on a target in the same package.
+- [static func target(name: String) -> Target.Dependency](target/dependency/target(name:).md)
+  Creates a dependency on a target in the same package.
+- [static func byName(name: String, condition: TargetDependencyCondition?) -> Target.Dependency](target/dependency/byname(name:condition:).md)
+  Creates a dependency that resolves to either a target or a product with the specified name.
+- [static func byName(name: String) -> Target.Dependency](target/dependency/byname(name:).md)
+  Creates a dependency that resolves to either a target or a product with the specified name.
+- [struct TargetDependencyCondition](targetdependencycondition.md)
+  A condition that limits the application of a target’s dependency.
+- [init(stringLiteral: String)](target/dependency/init(stringliteral:).md)
+  Creates a target dependency instance with the given value.
+- [init(extendedGraphemeClusterLiteral: Self.StringLiteralType)](target/dependency/init(extendedgraphemeclusterliteral:).md)
+- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](target/dependency/init(unicodescalarliteral:).md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/packagedescription/target/dependency/product(name:package:modulealiases:condition:))*

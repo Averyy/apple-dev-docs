@@ -1,6 +1,6 @@
 # applicationDidFinishLaunching()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the delegate that the launch process is almost done and the app is almost ready to run.

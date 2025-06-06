@@ -1,6 +1,6 @@
 # WKInterfaceVolumeControl.Origin.companion
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 Audio playing on iPhone.

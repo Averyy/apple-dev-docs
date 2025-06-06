@@ -1,0 +1,34 @@
+# tcp_connection_client_accurate_ecn_state_t
+
+**Framework**: Kernel  
+**Kind**: enum
+
+**Availability**:
+- macOS 14.0+
+
+## Declaration
+
+```swift
+typedef enum tcp_connection_client_accurate_ecn_state_t : unsigned int {
+    ...
+} tcp_connection_client_accurate_ecn_state_t;
+```
+
+## Topics
+
+### Constants
+- [tcp_connection_client_accurate_ecn_ace_bleaching_detected](tcp_connection_client_accurate_ecn_state_t/tcp_connection_client_accurate_ecn_ace_bleaching_detected.md)
+- [tcp_connection_client_accurate_ecn_feature_disabled](tcp_connection_client_accurate_ecn_state_t/tcp_connection_client_accurate_ecn_feature_disabled.md)
+- [tcp_connection_client_accurate_ecn_feature_enabled](tcp_connection_client_accurate_ecn_state_t/tcp_connection_client_accurate_ecn_feature_enabled.md)
+- [tcp_connection_client_accurate_ecn_invalid](tcp_connection_client_accurate_ecn_state_t/tcp_connection_client_accurate_ecn_invalid.md)
+- [tcp_connection_client_accurate_ecn_negotiation_blackholed](tcp_connection_client_accurate_ecn_state_t/tcp_connection_client_accurate_ecn_negotiation_blackholed.md)
+- [tcp_connection_client_accurate_ecn_negotiation_success](tcp_connection_client_accurate_ecn_state_t/tcp_connection_client_accurate_ecn_negotiation_success.md)
+- [tcp_connection_client_accurate_ecn_negotiation_success_ect_bleaching_detected](tcp_connection_client_accurate_ecn_state_t/tcp_connection_client_accurate_ecn_negotiation_success_ect_bleaching_detected.md)
+- [tcp_connection_client_accurate_ecn_negotiation_success_ect_mangling_detected](tcp_connection_client_accurate_ecn_state_t/tcp_connection_client_accurate_ecn_negotiation_success_ect_mangling_detected.md)
+- [tcp_connection_client_classic_ecn_available](tcp_connection_client_accurate_ecn_state_t/tcp_connection_client_classic_ecn_available.md)
+- [tcp_connection_client_ecn_not_available](tcp_connection_client_accurate_ecn_state_t/tcp_connection_client_ecn_not_available.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/tcp_connection_client_accurate_ecn_state_t)*

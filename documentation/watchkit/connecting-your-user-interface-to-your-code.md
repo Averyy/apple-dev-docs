@@ -1,6 +1,6 @@
 # Connecting Your User Interface to Your Code
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Connect the interface objects in your storyboard to outlets and action methods in your WatchKit extension.
 

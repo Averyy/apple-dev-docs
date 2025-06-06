@@ -1,6 +1,6 @@
 # setRowTypes(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Creates the row controllers to use when populating the table with data.

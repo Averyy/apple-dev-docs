@@ -1,0 +1,45 @@
+# init(MKCoordinate:)
+
+**Framework**: Foundation  
+**Kind**: init
+
+Creates a new value object containing the specified CoreLocation geographic coordinate structure.
+
+**Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 13.0+
+- macOS 10.0+
+- tvOS 9.2+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+init(mkCoordinate coordinate: CLLocationCoordinate2D)
+```
+
+#### Return Value
+
+A new value object that contains the geographic coordinate information.
+
+## Parameters
+
+- `coordinate`: The value for the new object.
+
+## See Also
+
+- [struct CLLocationCoordinate2D](../CoreLocation/CLLocationCoordinate2D.md)
+  The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
+- [init(MKCoordinateSpan: MKCoordinateSpan)](nsvalue/init(mkcoordinatespan:).md)
+  Creates a new value object containing the specified MapKit coordinate span structure.
+- [var mkCoordinateValue: CLLocationCoordinate2D](nsvalue/mkcoordinatevalue.md)
+  The CoreLocation geographic coordinate structure representation of the value.
+- [var mkCoordinateSpanValue: MKCoordinateSpan](nsvalue/mkcoordinatespanvalue.md)
+  The MapKit coordinate span structure representation of the value.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsvalue/init(mkcoordinate:))*

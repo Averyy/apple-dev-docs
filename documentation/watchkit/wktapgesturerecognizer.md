@@ -1,6 +1,6 @@
 # WKTapGestureRecognizer
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: class
 
 A gesture recognizer that interprets a touch event occurring and ending in approximately the same area on the screen.
@@ -49,12 +49,12 @@ The [`WKGestureRecognizer`](wkgesturerecognizer.md) parent class also defines at
 ### Inherits From
 - [WKGestureRecognizer](wkgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
-- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
-- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

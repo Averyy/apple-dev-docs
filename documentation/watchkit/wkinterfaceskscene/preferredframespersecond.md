@@ -1,6 +1,6 @@
 # preferredFramesPerSecond
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The animation frame rate that the interface uses to render its scene.

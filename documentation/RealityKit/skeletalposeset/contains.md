@@ -1,0 +1,32 @@
+# contains(_:)
+
+**Framework**: RealityKit  
+**Kind**: method
+
+Checks if the set contains a pose with the given name.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- visionOS 2.0+
+
+## Declaration
+
+```swift
+func contains(_ poseID: SkeletalPose.ID) -> Bool
+```
+
+#### Return Value
+
+`true` a pose with matching name is contained in the set.
+
+## Parameters
+
+- `poseID`: The name of the pose to look up
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/skeletalposeset/contains(_:))*

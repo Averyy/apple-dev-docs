@@ -1,0 +1,60 @@
+# NewCMConcatCallBackUPP
+
+**Framework**: Application Services  
+**Kind**: func
+
+Creates a new universal procedure pointer (UPP) to a progress-monitoring callback.
+
+## Declaration
+
+```swift
+func NewCMConcatCallBackUPP(_ userRoutine: CMConcatCallBackProcPtr) -> CMConcatCallBackUPP
+```
+
+#### Return_value
+
+The universal procedure pointer.
+
+#### Overview
+
+The callback protects against the appearance of a stalled machine during lengthy color world processing. If a CMM takes more than several seconds to process the information and create a color world, it will call the callback, if one is provided, and pass it the `refCon` provided. Passed to the functions `NCWNewLinkProfile` or `NCWConcatColorWorld` function .
+
+## Parameters
+
+- `userRoutine`: A pointer to your progress-monitoring callback function.
+
+## See Also
+
+- [NewCMBitmapCallBackUPP](colorsync_manager/1805297-newcmbitmapcallbackupp.md)
+  Creates a new universal procedure pointer (UPP) to a bitmap callback.
+- [DisposeCMBitmapCallBackUPP](colorsync_manager/1805300-disposecmbitmapcallbackupp.md)
+  Disposes of a universal procedure pointer (UPP) to a bitmap callback.
+- [InvokeCMBitmapCallBackUPP](colorsync_manager/1805303-invokecmbitmapcallbackupp.md)
+  Invokes a universal procedure pointer (UPP) to a bitmap callback.
+- [DisposeCMConcatCallBackUPP](colorsync_manager/1805310-disposecmconcatcallbackupp.md)
+  Disposes of a universal procedure pointer (UPP) to a progress-monitoring callback.
+- [InvokeCMConcatCallBackUPP](colorsync_manager/1805312-invokecmconcatcallbackupp.md)
+  Invokes a universal procedure pointer (UPP) to a progress-monitoring callback.
+- [NewCMFlattenUPP](colorsync_manager/1805315-newcmflattenupp.md)
+  Creates a new universal procedure pointer (UPP) to a data-flattening callback.
+- [DisposeCMFlattenUPP](colorsync_manager/1805318-disposecmflattenupp.md)
+  Disposes of a universal procedure pointer (UPP) to a data-flattening callback.
+- [InvokeCMFlattenUPP](colorsync_manager/1805320-invokecmflattenupp.md)
+  Invokes a universal procedure pointer (UPP) to a data-flattening callback.
+- [NewCMMIterateUPP](colorsync_manager/1805322-newcmmiterateupp.md)
+  Creates a new universal procedure pointer (UPP) to a progress-monitoring callback for the `CMIterateCMMInfo` function.
+- [DisposeCMMIterateUPP](colorsync_manager/1805323-disposecmmiterateupp.md)
+  Disposes of a universal procedure pointer (UPP) to a progress-monitoring callback for the `CMIterateCMMInfo` function.
+- [InvokeCMMIterateUPP](colorsync_manager/1805325-invokecmmiterateupp.md)
+  Invokes a universal procedure pointer (UPP) to a progress-monitoring callback for the [`CMIterateCMMInfo`](colorsync_manager/1805185-cmiteratecmminfo.md) function.
+- [NewCMProfileIterateUPP](colorsync_manager/1805339-newcmprofileiterateupp.md)
+  Creates a new universal procedure pointer (UPP) to a profile-iteration callback.
+- [DisposeCMProfileIterateUPP](colorsync_manager/1805341-disposecmprofileiterateupp.md)
+  Disposes of a universal procedure pointer (UPP) to a profile-iteration callback.
+- [InvokeCMProfileIterateUPP](colorsync_manager/1805343-invokecmprofileiterateupp.md)
+  Invokes a universal procedure pointer (UPP) to a profile-iteration callback.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/applicationservices/colorsync_manager/1805306-newcmconcatcallbackupp)*

@@ -1,0 +1,30 @@
+# /=(_:_:)
+
+**Framework**: Core ML  
+**Kind**: op
+
+Computes element-wise multiplication.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
+
+## Declaration
+
+```swift
+static func /= (lhs: inout MLTensor, rhs: MLTensor)
+```
+
+#### Discussion
+
+Shapes must be broadcastable, where the broadcasted shape becomes the shape of the output.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreml/mltensor/_=(_:_:)-53k1k)*

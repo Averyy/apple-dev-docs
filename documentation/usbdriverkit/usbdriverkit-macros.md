@@ -1,0 +1,83 @@
+# USBDriverKit Macros
+
+**Framework**: USBDriverKit
+
+## Topics
+
+### Macros
+- [IOUSBHostFamilyBit](iousbhostfamilybit.md)
+- [IOUSBHostFamilyBitRange](iousbhostfamilybitrange.md)
+- [IOUSBHostFamilyBitRange64](iousbhostfamilybitrange64.md)
+- [IOUSBHostFamilyBitRangePhase](iousbhostfamilybitrangephase.md)
+- [iokit_usb_codemask](iokit_usb_codemask.md)
+- [iokit_usbhost_err](iokit_usbhost_err.md)
+- [iokit_usbhost_group](iokit_usbhost_group.md)
+- [iokit_usbhost_msg](iokit_usbhost_msg.md)
+- [iokit_usblegacy_err_msg](iokit_usblegacy_err_msg.md)
+- [iokit_usblegacy_group](iokit_usblegacy_group.md)
+- [kAppleCurrentExtra](kapplecurrentextra.md)
+- [kAppleCurrentExtraInSleep](kapplecurrentextrainsleep.md)
+- [kAppleExternalConnectorBitmap](kappleexternalconnectorbitmap.md)
+- [kAppleMaxPortCurrent](kapplemaxportcurrent.md)
+- [kAppleMaxPortCurrentInSleep](kapplemaxportcurrentinsleep.md)
+- [kIOUSB20BitrateFull](kiousb20bitratefull.md)
+- [kIOUSB20BitrateHigh](kiousb20bitratehigh.md)
+- [kIOUSB20BitrateLow](kiousb20bitratelow.md)
+- [kIOUSBBillboardEntitlement](kiousbbillboardentitlement.md)
+- [kIOUSBHostControllerInterfaceEntitlement](kiousbhostcontrollerinterfaceentitlement.md)
+- [kIOUSBHostVMEntitlement](kiousbhostvmentitlement.md)
+- [kIOUSBTransportDextEntitlement](kiousbtransportdextentitlement.md)
+- [kUSBHostControllerPropertyControlRequestPolicy](kusbhostcontrollerpropertycontrolrequestpolicy.md)
+- [kUSBHostControllerPropertyDeferRegisterService](kusbhostcontrollerpropertydeferregisterservice.md)
+- [kUSBHostControllerPropertyInterruptRMBS](kusbhostcontrollerpropertyinterruptrmbs.md)
+- [kUSBHostControllerPropertyIsochronousRMBS](kusbhostcontrollerpropertyisochronousrmbs.md)
+- [kUSBHostControllerPropertyPortWakeSourcesPolicy](kusbhostcontrollerpropertyportwakesourcespolicy.md)
+- [kUSBHostControllerPropertySoftRetryPolicy](kusbhostcontrollerpropertysoftretrypolicy.md)
+- [kUSBHostControllerPropertyStreamPolicy](kusbhostcontrollerpropertystreampolicy.md)
+- [kUSBHostControllerPropertyTierLimit](kusbhostcontrollerpropertytierlimit.md)
+- [kUSBHostControllerPropertyUSB2LPMPolicy](kusbhostcontrollerpropertyusb2lpmpolicy.md)
+- [kUSBHostControllerPropertyUSB3LPMPolicy](kusbhostcontrollerpropertyusb3lpmpolicy.md)
+- [kUSBHostControllerPropertyUSB4LPMPolicy](kusbhostcontrollerpropertyusb4lpmpolicy.md)
+- [kUSBHostDevicePropertyDeviceUDID](kusbhostdevicepropertydeviceudid.md)
+- [kUSBHostDevicePropertyEnumerationState](kusbhostdevicepropertyenumerationstate.md)
+- [kUSBHostDevicePropertyPowerSinkCapability](kusbhostdevicepropertypowersinkcapability.md)
+- [kUSBHostDevicePropertySignature](kusbhostdevicepropertysignature.md)
+- [kUSBHostDevicePropertyStreamsSupported](kusbhostdevicepropertystreamssupported.md)
+- [kUSBHostDevicePropertyTunnel](kusbhostdevicepropertytunnel.md)
+- [kUSBHostInterfacePropertyNumEndpoints](kusbhostinterfacepropertynumendpoints.md)
+- [kUSBHostInterfacePropertyString](kusbhostinterfacepropertystring.md)
+- [kUSBHostInterfacePropertyStringIndex](kusbhostinterfacepropertystringindex.md)
+- [kUSBHostMatchingPropertyDeviceReleaseNumberRange](kusbhostmatchingpropertydevicereleasenumberrange.md)
+- [kUSBHostMessageConfigurationSet](kusbhostmessageconfigurationset.md)
+- [kUSBHostMessageControllerException](kusbhostmessagecontrollerexception.md)
+- [kUSBHostMessageDeviceIsRequestingClose](kusbhostmessagedeviceisrequestingclose.md)
+- [kUSBHostMessageRenegotiateCurrent](kusbhostmessagerenegotiatecurrent.md)
+- [kUSBHostPortPropertyLinkSpeedLimit](kusbhostportpropertylinkspeedlimit.md)
+- [kUSBHostPortPropertyStatus](kusbhostportpropertystatus.md)
+- [kUSBHostPortPropertyUSB3Mode](kusbhostportpropertyusb3mode.md)
+- [kUSBHostPortPropertyUsb3ComplianceMode](kusbhostportpropertyusb3compliancemode.md)
+- [kUSBHostPropertyAllowSoftRetry](kusbhostpropertyallowsoftretry.md)
+- [kUSBHostPropertyExclusiveOwner](kusbhostpropertyexclusiveowner.md)
+- [kUSBHostPropertyForceHardwareException](kusbhostpropertyforcehardwareexception.md)
+- [kUSBHostPropertyForceLinkSpeed](kusbhostpropertyforcelinkspeed.md)
+- [kUSBHostReturnNoPower](kusbhostreturnnopower.md)
+- [kUSBHostReturnPipeStalled](kusbhostreturnpipestalled.md)
+- [kUSBHostReturnRedundant](kusbhostreturnredundant.md)
+- [kUSBHostUserClientPropertyBufferAllocations](kusbhostuserclientpropertybufferallocations.md)
+- [kUSBHostUserClientPropertyBufferStatistics](kusbhostuserclientpropertybufferstatistics.md)
+- [kUSBHostUserClientPropertyEnableDataToggleReset](kusbhostuserclientpropertyenabledatatogglereset.md)
+- [kUSBHostUserClientPropertyEnableReset](kusbhostuserclientpropertyenablereset.md)
+- [kUSBHostUserClientPropertyEntitlement](kusbhostuserclientpropertyentitlement.md)
+- [kUSBHostUserClientPropertyEntitlementExceptionAllowUnlocked](kusbhostuserclientpropertyentitlementexceptionallowunlocked.md)
+- [kUSBHostUserClientPropertyEntitlementRequired](kusbhostuserclientpropertyentitlementrequired.md)
+
+## See Also
+
+- [USBDriverKit Enumerations](usbdriverkit-enumerations.md)
+- [USBDriverKit Functions](usbdriverkit-functions.md)
+- [USBDriverKit Data Types](usbdriverkit-data-types.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/usbdriverkit/usbdriverkit-macros)*

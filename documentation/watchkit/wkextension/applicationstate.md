@@ -1,6 +1,6 @@
 # applicationState
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The runtime state of the Watch app.

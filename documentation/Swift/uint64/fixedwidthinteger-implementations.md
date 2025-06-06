@@ -1,0 +1,65 @@
+# FixedWidthInteger Implementations
+
+**Framework**: Swift
+
+## Topics
+
+### Operators
+- [static func &* (Self, Self) -> Self](uint64/&*(_:_:).md)
+  Returns the product of the two given values, wrapping the result in case of any overflow.
+- [static func &*= (inout Self, Self)](uint64/&*=(_:_:).md)
+  Multiplies two values and stores the result in the left-hand-side variable, wrapping any overflow.
+- [static func &+ (Self, Self) -> Self](uint64/&+(_:_:).md)
+  Returns the sum of the two given values, wrapping the result in case of any overflow.
+- [static func &+= (inout Self, Self)](uint64/&+=(_:_:).md)
+  Adds two values and stores the result in the left-hand-side variable, wrapping any overflow.
+- [static func &- (Self, Self) -> Self](uint64/&-(_:_:).md)
+  Returns the difference of the two given values, wrapping the result in case of any overflow.
+- [static func &-= (inout Self, Self)](uint64/&-=(_:_:).md)
+  Subtracts the second value from the first and stores the difference in the left-hand-side variable, wrapping any overflow.
+- [static func &<< <Other>(Self, Other) -> Self](uint64/&__(_:_:)-20r54.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the left, masking the shift amount to the type’s bit width.
+- [static func &>> <Other>(Self, Other) -> Self](uint64/&__(_:_:)-47n63.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width.
+- [static func &>> (UInt64, UInt64) -> UInt64](uint64/&__(_:_:)-4ncka.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width.
+- [static func &<< (Self, Self) -> Self](uint64/&__(_:_:)-67e3c.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the left, masking the shift amount to the type’s bit width.
+- [static func &<< (UInt64, UInt64) -> UInt64](uint64/&__(_:_:)-8qsy.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the left, masking the shift amount to the type’s bit width.
+- [static func &>> (Self, Self) -> Self](uint64/&__(_:_:)-9phvf.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width.
+- [static func &<<= <Other>(inout Self, Other)](uint64/&__=(_:_:)-487ah.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the left, masking the shift amount to the type’s bit width, and stores the result in the left-hand-side variable.
+- [static func &>>= <Other>(inout Self, Other)](uint64/&__=(_:_:)-4hmss.md)
+  Calculates the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width, and stores the result in the left-hand-side variable.
+### Initializers
+- [init<T>(T)](uint64/init(_:)-5j67w.md)
+- [init?(String)](uint64/init(_:)-6f9pj.md)
+  Creates a new integer value from the given string.
+- [init?<S>(S, radix: Int)](uint64/init(_:radix:).md)
+  Creates a new integer value from the given string and radix.
+- [init(bigEndian: Self)](uint64/init(bigendian:).md)
+  Creates an integer from its big-endian representation, changing the byte order if necessary.
+- [init?<T>(exactly: T)](uint64/init(exactly:)-7m1hy.md)
+- [init(littleEndian: Self)](uint64/init(littleendian:).md)
+  Creates an integer from its little-endian representation, changing the byte order if necessary.
+### Instance Properties
+- [var bigEndian: Self](uint64/bigendian.md)
+  The big-endian representation of this integer.
+- [var littleEndian: Self](uint64/littleendian.md)
+  The little-endian representation of this integer.
+### Type Methods
+- [static func random(in: ClosedRange<Self>) -> Self](uint64/random(in:)-4xxb6.md)
+  Returns a random value within the specified range.
+- [static func random(in: Range<Self>) -> Self](uint64/random(in:)-5grii.md)
+  Returns a random value within the specified range.
+- [static func random<T>(in: ClosedRange<Self>, using: inout T) -> Self](uint64/random(in:using:)-75uk1.md)
+  Returns a random value within the specified range, using the given generator as a source for randomness.
+- [static func random<T>(in: Range<Self>, using: inout T) -> Self](uint64/random(in:using:)-8r8yl.md)
+  Returns a random value within the specified range, using the given generator as a source for randomness.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/uint64/fixedwidthinteger-implementations)*

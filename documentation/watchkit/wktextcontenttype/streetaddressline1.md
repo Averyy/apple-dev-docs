@@ -1,6 +1,6 @@
 # streetAddressLine1
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The first line of a street address.

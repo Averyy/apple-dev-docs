@@ -1,6 +1,6 @@
 # setAccessibilityImageRegions(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Marks portions of an image as separate accessible elements.

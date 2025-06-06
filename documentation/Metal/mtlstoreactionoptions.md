@@ -1,0 +1,60 @@
+# MTLStoreActionOptions
+
+**Framework**: Metal  
+**Kind**: struct
+
+Options that modify a store action.
+
+**Availability**:
+- iOS 11.0+
+- iPadOS 11.0+
+- Mac Catalyst 13.1+
+- macOS 10.13+
+- tvOS 11.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+struct MTLStoreActionOptions
+```
+
+#### Overview
+
+This property modifies the intended behavior of the store actions in the [`MTLStoreAction`](mtlstoreaction.md) enumeration.
+
+## Topics
+
+### Constants
+- [init(rawValue: UInt)](mtlstoreactionoptions/init(rawvalue:).md)
+  Creates a store action option from a raw integer value.
+- [static var customSamplePositions: MTLStoreActionOptions](mtlstoreactionoptions/customsamplepositions.md)
+  An option that stores data in a sample-position–agnostic representation.
+### Using Programmable Sample Positions
+- [static var customSamplePositions: MTLStoreActionOptions](mtlstoreactionoptions/customsamplepositions.md)
+  An option that stores data in a sample-position–agnostic representation.
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
+
+## See Also
+
+- [protocol MTLParallelRenderCommandEncoder](mtlparallelrendercommandencoder.md)
+  An object that splits up a single render pass so that it can be simultaneously encoded from multiple threads.
+- [enum MTLLoadAction](mtlloadaction.md)
+  Types of actions performed for an attachment at the start of a rendering pass.
+- [enum MTLStoreAction](mtlstoreaction.md)
+  Types of actions performed for an attachment at the end of a rendering pass.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlstoreactionoptions)*

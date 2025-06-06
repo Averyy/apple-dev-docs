@@ -1,6 +1,6 @@
 # middleName
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A middle name.

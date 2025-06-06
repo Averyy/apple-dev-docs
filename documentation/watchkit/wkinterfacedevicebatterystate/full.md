@@ -1,6 +1,6 @@
 # WKInterfaceDeviceBatteryState.full
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The device is connected to a charger, and its battery is charged to 100%.

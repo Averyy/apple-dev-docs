@@ -1,6 +1,6 @@
 # applicationWillResignActive()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the delegate that the system is about to deactivate the watchOS app.

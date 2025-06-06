@@ -1,0 +1,43 @@
+# setFragmentIntersectionFunctionTables(_:bufferRange:)
+
+**Framework**: Metal  
+**Kind**: method
+
+Assigns multiple intersection function tables to a range of entries in the fragment shader argument table.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst ?+
+- macOS 12.0+
+- tvOS 16.0+
+- visionOS ?+
+
+## Declaration
+
+```swift
+func setFragmentIntersectionFunctionTables(_ functionTables: [(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)
+```
+
+#### Discussion
+
+By default, the intersection function table at each index is `nil`.
+
+> **Note**:  The Objective-C version of this method is [`setFragmentIntersectionFunctionTables:withBufferRange:`](mtlrendercommandencoder/setfragmentintersectionfunctiontables:withbufferrange:.md).
+
+ The Objective-C version of this method is [`setFragmentIntersectionFunctionTables:withBufferRange:`](mtlrendercommandencoder/setfragmentintersectionfunctiontables:withbufferrange:.md).
+
+## Parameters
+
+- `functionTables`: An array of   instances the command assigns to entries in the fragment shader argument table for intersection function tables.
+- `bufferRange`: A span of integers that represent the entries in the fragment shader argument table for intersection function tables. Each entry stores a record of the corresponding element in  .
+
+## See Also
+
+- [func setFragmentIntersectionFunctionTable((any MTLIntersectionFunctionTable)?, bufferIndex: Int)](mtlrendercommandencoder/setfragmentintersectionfunctiontable(_:bufferindex:).md)
+  Assigns an intersection function table to an entry in the fragment shader argument table.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlrendercommandencoder/setfragmentintersectionfunctiontables(_:bufferrange:))*

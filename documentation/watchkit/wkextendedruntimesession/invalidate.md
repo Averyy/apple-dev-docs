@@ -1,6 +1,6 @@
 # invalidate()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Stops the session.

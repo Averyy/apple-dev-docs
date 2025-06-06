@@ -1,0 +1,43 @@
+# withCString
+
+**Framework**: DriverKit  
+**Kind**: method
+
+Allocates an OSString object with a copy of a c-string, up to a given length.
+
+**Availability**:
+- DriverKit ?+
+- iOS ?+
+- iPadOS ?+
+- macOS ?+
+
+## Declaration
+
+```swift
+static OSStringPtr withCString(const char * cString, size_t length);
+```
+
+#### Return Value
+
+NULL on failure, otherwise the allocated OSString with reference count 1 to be released by the caller.
+
+## Parameters
+
+- `cString`: Pointer to null terminated c-string. The string will be copied at the time of the call.
+- `length`: Maximum length of the string to copy.
+
+## See Also
+
+- [withString](osstring/withstring.md)
+  Allocates an OSString object with a copy of an OString object.
+- [withCString](osstring/withcstring-4wsql.md)
+  Allocates an OSString object with a copy of a c-string.
+- [withCStringNoCopy](osstring/withcstringnocopy.md)
+  Allocates an OSString object with a copy of a c-string.
+- [OSStringCreate](osstringcreate.md)
+- [free](osstring/free.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/driverkit/osstring/withcstring-721oh)*

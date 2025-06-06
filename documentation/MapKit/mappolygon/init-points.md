@@ -1,0 +1,37 @@
+# init(points:)
+
+**Framework**: MapKit  
+**Kind**: init
+
+Creates a polygon from a list of map points.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst ?+
+- macOS 14.0+
+- tvOS 17.0+
+- visionOS ?+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+init(points: [MKMapPoint])
+```
+
+## Parameters
+
+- `points`: An array of   points that make up the vertices of the polygon.
+
+## See Also
+
+- [init(coordinates: [CLLocationCoordinate2D])](mappolygon/init(coordinates:).md)
+  Creates a polygon from a list of coordinates you provide.
+- [init(MKPolygon)](mappolygon/init(_:).md)
+  Creates a polygon from the polygon you provide.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/mappolygon/init(points:))*

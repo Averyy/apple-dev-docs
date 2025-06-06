@@ -1,0 +1,33 @@
+# AVEncoderBitRateKey
+
+**Framework**: AVFAudio  
+**Kind**: var
+
+**Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 13.1+
+- macOS 10.7+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
+
+## Declaration
+
+```swift
+let AVEncoderBitRateKey: String
+```
+
+## See Also
+
+- [let AVEncoderAudioQualityKey: String](avencoderaudioqualitykey.md)
+  A constant that represents an integer from the audio quality enumeration.
+- [let AVEncoderBitRatePerChannelKey: String](avencoderbitrateperchannelkey.md)
+- [let AVEncoderBitRateStrategyKey: String](avencoderbitratestrategykey.md)
+  A constant that represents the bit rate strategy for the encoder to use.
+- [let AVEncoderBitDepthHintKey: String](avencoderbitdepthhintkey.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/avencoderbitratekey)*

@@ -1,0 +1,43 @@
+# CKShare.ParticipantType.unknown
+
+**Framework**: CloudKit  
+**Kind**: case
+
+An unknown role.
+
+**Availability**:
+- iOS 10.0+
+- iPadOS 10.0+
+- Mac Catalyst 13.1+
+- macOS 10.12+
+- tvOS 10.0+
+- visionOS 1.0+
+- watchOS 3.0+
+
+## Declaration
+
+```swift
+case unknown
+```
+
+## See Also
+
+- [CKShare.ParticipantRole.owner](ckshare/participantrole/owner.md)
+  The participant is the share’s owner.
+- [CKShare.ParticipantRole.privateUser](ckshare/participantrole/privateuser.md)
+  The participant has the private role.
+- [CKShare.ParticipantRole.publicUser](ckshare/participantrole/publicuser.md)
+  The participant has the public role.
+- [CKShare.ParticipantRole.unknown](ckshare/participantrole/unknown.md)
+  The participant’s role is unknown.
+- [CKShare.ParticipantType.owner](ckshare/participanttype/owner.md)
+  The type of an owner.
+- [CKShare.ParticipantType.privateUser](ckshare/participanttype/privateuser.md)
+  The type of a private user.
+- [CKShare.ParticipantType.publicUser](ckshare/participanttype/publicuser.md)
+  The type of a public owner.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckshare/participanttype/unknown)*

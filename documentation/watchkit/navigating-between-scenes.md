@@ -1,6 +1,6 @@
 # Navigating Between Scenes
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Help users navigate between interface controllers.
 

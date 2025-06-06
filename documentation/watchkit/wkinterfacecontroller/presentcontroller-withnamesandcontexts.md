@@ -1,6 +1,6 @@
 # presentController(withNamesAndContexts:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Presents a page-based interface modally.

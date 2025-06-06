@@ -1,0 +1,24 @@
+# direction
+
+**Framework**: RealityKit  
+**Kind**: property
+
+The direction of the force relative to the effect’s transform.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- visionOS 2.0+
+
+## Declaration
+
+```swift
+let direction: SIMD3<Float>
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/constantforceeffect/direction)*

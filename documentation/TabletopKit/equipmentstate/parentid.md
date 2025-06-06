@@ -1,0 +1,21 @@
+# parentID
+
+**Framework**: TabletopKit  
+**Kind**: property  
+**Required**: Yes
+
+The identifier for the parent equipment that holds or contains this equipment.
+
+**Availability**:
+- visionOS 2.0+
+
+## Declaration
+
+```swift
+var parentID: EquipmentIdentifier { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabletopkit/equipmentstate/parentid)*

@@ -1,6 +1,6 @@
 # reasonForSnapshot
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The reason for taking the upcoming snapshot.

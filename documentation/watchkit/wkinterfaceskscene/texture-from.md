@@ -1,6 +1,6 @@
 # texture(from:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Renders the contents of a node tree and returns the rendered image as a SpriteKit texture.

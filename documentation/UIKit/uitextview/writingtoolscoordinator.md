@@ -1,0 +1,22 @@
+# writingToolsCoordinator
+
+**Framework**: UIKit  
+**Kind**: property
+
+**Availability**:
+- iOS 18.2+
+- iPadOS 18.2+
+- Mac Catalyst 18.2+
+- visionOS 2.4+
+
+## Declaration
+
+```swift
+@MainActor
+var writingToolsCoordinator: UIWritingToolsCoordinator { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitextview/writingtoolscoordinator)*

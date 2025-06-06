@@ -1,6 +1,6 @@
 # performNotificationDefaultAction()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Launches the watchOS app and performs the current notification’s default action.

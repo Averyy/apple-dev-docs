@@ -1,6 +1,6 @@
 # systemVersion
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The version of the operating system.

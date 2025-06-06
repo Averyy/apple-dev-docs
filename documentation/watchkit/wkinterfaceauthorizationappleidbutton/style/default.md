@@ -1,6 +1,6 @@
 # WKInterfaceAuthorizationAppleIDButton.Style.default
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The system’s default button style.

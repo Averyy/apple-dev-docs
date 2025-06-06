@@ -1,0 +1,19 @@
+# dropEffect
+
+**Framework**: Webkitjs  
+**Kind**: instp
+
+**Availability**:
+- Safari Desktop 9.0+
+- Safari Mobile 9.0+
+
+## Declaration
+
+```swift
+attribute DOMString dropEffect;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkitjs/datatransfer/1634191-dropeffect)*

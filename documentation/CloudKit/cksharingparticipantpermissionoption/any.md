@@ -1,0 +1,31 @@
+# any
+
+**Framework**: CloudKit  
+**Kind**: property
+
+The permission option the system uses to control whether a user can grant read-only or write access.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+static var any: CKSharingParticipantPermissionOption { get }
+```
+
+## See Also
+
+- [static var readOnly: CKSharingParticipantPermissionOption](cksharingparticipantpermissionoption/readonly.md)
+  The permission option the system uses to control whether a user can grant read-only access.
+- [static var readWrite: CKSharingParticipantPermissionOption](cksharingparticipantpermissionoption/readwrite.md)
+  The permission option the system uses to control whether a user can grant write access.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/cksharingparticipantpermissionoption/any)*

@@ -1,6 +1,6 @@
 # WatchKitError
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: struct
 
 An error reported by WatchKit.
@@ -41,11 +41,11 @@ struct WatchKitError
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](https://developer.apple.com/documentation/Foundation/CustomNSError)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Error](https://developer.apple.com/documentation/Swift/Error)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
+- [CustomNSError](../Foundation/CustomNSError.md)
+- [Equatable](../Swift/Equatable.md)
+- [Error](../Swift/Error.md)
+- [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

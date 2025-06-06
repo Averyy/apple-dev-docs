@@ -1,0 +1,54 @@
+# filter(_:)
+
+**Framework**: RealityKit  
+**Kind**: method
+
+Returns an array containing, in order, the elements of the sequence that satisfy the given predicate.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- visionOS ?+
+
+## Declaration
+
+```swift
+func filter(_ isIncluded: (Self.Element) throws -> Bool) rethrows -> [Self.Element]
+```
+
+#### Return Value
+
+An array of the elements that `isIncluded` allowed.
+
+#### Discussion
+
+In this example, `filter(_:)` is used to include only names shorter than five characters.
+
+```None
+let cast = ["Vivien", "Marlon", "Kim", "Karl"]
+let shortNames = cast.filter { $0.count < 5 }
+print(shortNames)
+// Prints "["Kim", "Karl"]"
+```
+
+> **Note**: O(), where  is the length of the sequence.
+
+O(), where  is the length of the sequence.
+
+## Parameters
+
+- `isIncluded`: A closure that takes an element of the   sequence as its argument and returns a Boolean value indicating   whether the element should be included in the returned array.
+
+## See Also
+
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>](queryresult/drop(while:).md)
+  Returns a sequence by skipping the initial, consecutive elements that satisfy the given predicate.
+- [func filter<T>(matchingCategory: CMTypedTag<T>.Category) -> [CMTypedTag<T>]](queryresult/filter(matchingcategory:).md)
+  Filters a sequence of tags based on matching the specified category.  Returns the tags that match the specified category.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/queryresult/filter(_:))*

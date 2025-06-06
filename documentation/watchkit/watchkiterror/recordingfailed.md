@@ -1,6 +1,6 @@
 # recordingFailed
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 An audio recording error.

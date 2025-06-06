@@ -1,6 +1,6 @@
 # setImage(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the displayed image using the specified image object.

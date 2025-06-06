@@ -1,0 +1,4 @@
+Completed scraping Open Directory!
+Total pages scraped: 743
+Pages skipped (unchanged): 1
+Pages failed: 0

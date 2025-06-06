@@ -1,0 +1,26 @@
+# SupervisedTabularEstimator Implementations
+
+**Framework**: Create ML Components
+
+## Topics
+
+### Instance Methods
+- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
+](preprocessingsupervisedtabularestimator/appending(_:)-4sdn5.md)
+  Composes this supervised tabular estimator with another supervised tabular estimator.
+- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other.Transformer>, Self.Annotation>
+](preprocessingsupervisedtabularestimator/appending(_:)-4tonz.md)
+  Composes this tabular supervised estimator with a tabular estimator.
+- [func appending<Other>(Other) -> some SupervisedTabularEstimator<ComposedTabularTransformer<Self.Transformer, Other>, Self.Annotation>
+](preprocessingsupervisedtabularestimator/appending(_:)-6jlcr.md)
+  Composes this supervised tabular estimator with a tabular transformer.
+- [func fitted(to: DataFrame, validateOn: DataFrame?) async throws -> Self.Transformer](preprocessingsupervisedtabularestimator/fitted(to:validateon:).md)
+- [func read(from: URL) throws -> Self.Transformer](preprocessingsupervisedtabularestimator/read(from:).md)
+  Reads the encoded transformer from a file.
+- [func write(Self.Transformer, to: URL, overwrite: Bool) throws](preprocessingsupervisedtabularestimator/write(_:to:overwrite:).md)
+  Writes the encoded transformer to a file.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/preprocessingsupervisedtabularestimator/supervisedtabularestimator-implementations)*

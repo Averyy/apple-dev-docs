@@ -1,6 +1,6 @@
 # NowPlayingView
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: struct
 
 A view that displays the system’s Now Playing interface so that the user can control audio.
@@ -36,8 +36,8 @@ Always present the Now Playing view so that it fills the screen in a nonscrollin
 ## Relationships
 
 ### Conforms To
-- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
-- [View](https://developer.apple.com/documentation/SwiftUI/View)
+- [Sendable](../Swift/Sendable.md)
+- [View](../SwiftUI/View.md)
 
 ## See Also
 

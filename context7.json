@@ -1,30 +1,40 @@
 {
   "$schema": "https://context7.com/schema/context7.json",
   "projectTitle": "Apple Developer Documentation",
-  "description": "Complete Apple developer documentation for all frameworks, enabling natural language queries across SwiftUI, UIKit, Metal, and 150+ frameworks",
-  "folders": ["documentation"],
+  "description": "Comprehensive Apple developer documentation of all frameworks including SwiftUI, UIKit, Foundation, Metal, ARKit, and more.",
+  "folders": ["documentation/"],
   "excludeFolders": [
-    "scraper",
-    "tests",
-    "scripts",
-    "_metadata",
-    "venv",
-    ".claude"
+    "scraper/",
+    "scripts/",
+    "tests/",
+    "data/",
+    "_metadata/",
+    ".hashes/",
+    "venv/",
+    "__pycache__/",
+    ".git/",
+    ".github/",
+    "build/",
+    "dist/",
+    "*.egg-info/"
   ],
   "excludeFiles": [
-    "*.pyc",
-    "*.log",
+    "scraping_progress.txt",
+    "scraping_master_progress.txt",
+    "test_progress.txt",
     ".DS_Store",
-    "*.tmp"
+    "*.pyc",
+    "*.pyo",
+    "*.log",
+    "*.tmp",
+    "*.swp"
   ],
   "rules": [
-    "Always specify the framework when referencing Apple APIs",
-    "Include platform availability in code examples",
-    "Use Swift syntax unless Objective-C is specifically requested",
-    "Preserve Apple's naming conventions and API signatures exactly",
-    "Link to related APIs within the same framework",
-    "Consider iOS as the default platform unless specified otherwise",
-    "Include import statements in code examples"
+    "Use the latest Swift syntax and modern API patterns from the documentation",
+    "Follow Apple's naming conventions and design patterns",
+    "Check 'See Also' sections for related APIs and best practices",
+    "Use platform-specific APIs only when targeting the appropriate platform",
+    "Consider SwiftUI for new UI code when deployment target allows"
   ],
   "previousVersions": []
 }

@@ -1,0 +1,33 @@
+# personSegmentation
+
+**Framework**: ARKit  
+**Kind**: property
+
+An option that indicates that people occlude your app’s virtual content.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.1+
+
+## Declaration
+
+```swift
+static var personSegmentation: ARConfiguration.FrameSemantics { get }
+```
+
+#### Discussion
+
+The [`personSegmentation`](arconfiguration/framesemantics-swift.struct/personsegmentation.md) frame semantic specifies that any person ARKit detects in the camera feed occludes virtual content, regardless of the person’s depth in the scene.
+
+When this option is enabled, ARKit sets the [`estimatedDepthData`](arframe/estimateddepthdata.md) and [`segmentationBuffer`](arframe/segmentationbuffer.md) properties to serve as a foundation for people occlusion. The standard renderers ([`ARView`](https://developer.apple.com/documentation/RealityKit/ARView), and [`ARSCNView`](arscnview.md)) use those properties to implement people occlusion for you. See [`frameSemantics`](arconfiguration/framesemantics-swift.property.md) for more information.
+
+## See Also
+
+- [static var personSegmentationWithDepth: ARConfiguration.FrameSemantics](arconfiguration/framesemantics-swift.struct/personsegmentationwithdepth.md)
+  An option that indicates that people occlude your app’s virtual content depending on depth.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arconfiguration/framesemantics-swift.struct/personsegmentation)*

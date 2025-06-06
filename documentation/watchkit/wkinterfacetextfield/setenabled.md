@@ -1,6 +1,6 @@
 # setEnabled(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Enables or disables the text field.

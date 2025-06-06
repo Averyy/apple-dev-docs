@@ -1,0 +1,33 @@
+# morphology
+
+**Framework**: Foundation  
+**Kind**: property
+
+The morphology of the pronoun form.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- visionOS 1.0+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+var morphology: Morphology
+```
+
+## See Also
+
+- [var pronoun: String](morphology/pronoun/pronoun.md)
+  The string representation of the pronoun.
+- [var dependentMorphology: Morphology?](morphology/pronoun/dependentmorphology.md)
+  The dependent morphology of the pronoun form.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/morphology/pronoun/morphology)*

@@ -1,0 +1,4 @@
+Completed scraping iAd!
+Total pages scraped: 30
+Pages skipped (unchanged): 1
+Pages failed: 0

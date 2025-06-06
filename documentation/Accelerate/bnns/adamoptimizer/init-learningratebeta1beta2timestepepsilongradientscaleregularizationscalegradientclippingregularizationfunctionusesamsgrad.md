@@ -1,0 +1,45 @@
+# init(learningRate:beta1:beta2:timeStep:epsilon:gradientScale:regularizationScale:gradientClipping:regularizationFunction:usesAMSGrad:)
+
+**Framework**: Accelerate  
+**Kind**: init
+
+Returns a new Adam optimizer object with gradient clipped by value or clipped by norm.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst ?+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS ?+
+- watchOS 8.0+
+- Unknown ?+ - Deprecated
+
+## Declaration
+
+```swift
+init(learningRate: Float = 0.001, beta1: Float = 0.9, beta2: Float = 0.999, timeStep: Float, epsilon: Float = 1e-8, gradientScale: Float, regularizationScale: Float, gradientClipping: BNNS.GradientClipping, regularizationFunction: BNNSOptimizerRegularizationFunction, usesAMSGrad: Bool = false)
+```
+
+## Parameters
+
+- `learningRate`: A value that specifies the learning rate.
+- `beta1`: A value that specifies the first-moment constant, in the range   to  .
+- `beta2`: A value that specifies the second-moment constant, in the range   to  .
+- `timeStep`: A value that’s at least   and represents the optimizer’s current time.
+- `epsilon`: The epsilon value you use to improve numerical stability.
+- `gradientScale`: A value that specifies the gradient scaling factor.
+- `regularizationScale`: A value that specifies the regularization scaling factor.
+- `gradientClipping`: The gradient clipping function and bounds.
+- `regularizationFunction`: A value that specifies the regularization function.
+- `usesAMSGrad`: A Boolean value that specifies whether the optimizer should use the AMSGrad variant.
+
+## See Also
+
+- [init(learningRate: Float, beta1: Float, beta2: Float, timeStep: Float, epsilon: Float, gradientScale: Float, regularizationScale: Float, clipsGradientsTo: ClosedRange<Float>?, regularizationFunction: BNNSOptimizerRegularizationFunction)](bnns/adamoptimizer/init(learningrate:beta1:beta2:timestep:epsilon:gradientscale:regularizationscale:clipsgradientsto:regularizationfunction:).md)
+  Returns a new Adam optimizer object.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/bnns/adamoptimizer/init(learningrate:beta1:beta2:timestep:epsilon:gradientscale:regularizationscale:gradientclipping:regularizationfunction:usesamsgrad:))*

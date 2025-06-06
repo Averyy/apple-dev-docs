@@ -1,6 +1,6 @@
 # nameSuffix
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A suffix for a name.

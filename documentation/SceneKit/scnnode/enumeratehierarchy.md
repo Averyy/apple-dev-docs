@@ -1,0 +1,45 @@
+# enumerateHierarchy(_:)
+
+**Framework**: SceneKit  
+**Kind**: method
+
+Executes the specified block for each of the node’s child and descendant nodes, as well as for the node itself.
+
+**Availability**:
+- iOS 10.0+
+- iPadOS 10.0+
+- Mac Catalyst 13.1+
+- macOS 10.12+
+- tvOS 10.0+
+- visionOS 1.0+
+- watchOS 3.0+
+
+## Declaration
+
+```swift
+func enumerateHierarchy(_ block: (SCNNode, UnsafeMutablePointer<ObjCBool>) -> Void)
+```
+
+#### Discussion
+
+SceneKit uses a recursive preorder traversal to process the child node subtree—that is, the block runs for a node before it runs for each of the node’s children, and it processes all children of a node before processing any of that node’s sibling nodes.
+
+This method is equivalent to the [`enumerateChildNodes(_:)`](scnnode/enumeratechildnodes(_:).md) method, but unlike that method it also runs the block to process the node itself, not just its child nodes.
+
+## Parameters
+
+- `block`: The block to apply to the node’s child and descendant nodes.
+
+## See Also
+
+- [func childNodes(passingTest: (SCNNode, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [SCNNode]](scnnode/childnodes(passingtest:).md)
+  Returns all nodes in the node’s child node subtree that satisfy the test applied by a block.
+- [func childNode(withName: String, recursively: Bool) -> SCNNode?](scnnode/childnode(withname:recursively:).md)
+  Returns the first node in the node’s child node subtree with the specified name.
+- [func enumerateChildNodes((SCNNode, UnsafeMutablePointer<ObjCBool>) -> Void)](scnnode/enumeratechildnodes(_:).md)
+  Executes the specified block for each of the node’s child and descendant nodes.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnnode/enumeratehierarchy(_:))*

@@ -1,0 +1,43 @@
+# allowsDefaultTighteningForTruncation
+
+**Framework**: UIKit  
+**Kind**: property
+
+A Boolean value that indicates whether the system tightens intercharacter spacing before truncating text.
+
+**Availability**:
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 13.1+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+var allowsDefaultTighteningForTruncation: Bool { get set }
+```
+
+#### Discussion
+
+When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the system tries to reduce the space between characters before truncating characters. The system performs this tightening in cases where the text would not otherwise fit in the available space. The maximum amount of tightening performed by the system is dependent on the font, line width, and other factors.
+
+The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+
+## See Also
+
+- [var lineBreakMode: NSLineBreakMode](nsmutableparagraphstyle/linebreakmode.md)
+  The mode for breaking lines in the paragraph.
+- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](nsmutableparagraphstyle/linebreakstrategy.md)
+  The strategies that the text system may use to break lines while laying out the paragraph.
+- [var hyphenationFactor: Float](nsmutableparagraphstyle/hyphenationfactor.md)
+  The paragraph’s threshold for hyphenation.
+- [var usesDefaultHyphenation: Bool](nsmutableparagraphstyle/usesdefaulthyphenation.md)
+- [var tighteningFactorForTruncation: Float { get set }](../AppKit/NSMutableParagraphStyle/tighteningFactorForTruncation.md)
+  The threshold for using tightening as an alternative to truncation.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/allowsdefaulttighteningfortruncation)*

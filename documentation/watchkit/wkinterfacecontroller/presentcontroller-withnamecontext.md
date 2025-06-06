@@ -1,6 +1,6 @@
 # presentController(withName:context:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Presents a single interface controller modally.

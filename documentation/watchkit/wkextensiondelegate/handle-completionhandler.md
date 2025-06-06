@@ -1,6 +1,6 @@
 # handle(_:completionHandler:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Responds to a Siri intent.

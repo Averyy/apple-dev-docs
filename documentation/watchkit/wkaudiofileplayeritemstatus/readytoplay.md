@@ -1,6 +1,6 @@
 # WKAudioFilePlayerItemStatus.readyToPlay
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The item is ready to play.

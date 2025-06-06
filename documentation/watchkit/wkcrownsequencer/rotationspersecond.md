@@ -1,6 +1,6 @@
 # rotationsPerSecond
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The rotational speed of the crown, measured in rotations per second.

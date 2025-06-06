@@ -1,0 +1,22 @@
+# GL_EXT_color_buffer_half_float
+
+**Framework**: OpenGL ES  
+**Kind**: var
+
+**Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 2.0+
+- tvOS 9.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+var GL_EXT_color_buffer_half_float: Int32 { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/opengles/gl_ext_color_buffer_half_float)*

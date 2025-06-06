@@ -1,6 +1,6 @@
 # WKSwipeGestureRecognizerDirection
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: struct
 
 Constants indicating the direction of a swipe.
@@ -32,13 +32,13 @@ struct WKSwipeGestureRecognizerDirection
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [ExpressibleByArrayLiteral](https://developer.apple.com/documentation/Swift/ExpressibleByArrayLiteral)
-- [OptionSet](https://developer.apple.com/documentation/Swift/OptionSet)
-- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
-- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
-- [SetAlgebra](https://developer.apple.com/documentation/Swift/SetAlgebra)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
 
 
 ---

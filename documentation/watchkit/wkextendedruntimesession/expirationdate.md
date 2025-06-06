@@ -1,6 +1,6 @@
 # expirationDate
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The time and date when the session expires.

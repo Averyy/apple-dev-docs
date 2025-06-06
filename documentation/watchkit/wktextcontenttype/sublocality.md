@@ -1,6 +1,6 @@
 # sublocality
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The sublocality.

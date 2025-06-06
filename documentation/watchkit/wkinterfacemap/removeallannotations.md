@@ -1,6 +1,6 @@
 # removeAllAnnotations()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Removes all annotations from the map.

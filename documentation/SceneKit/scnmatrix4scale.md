@@ -1,0 +1,52 @@
+# SCNMatrix4Scale(_:_:_:_:)
+
+**Framework**: SceneKit  
+**Kind**: func
+
+Returns a new matrix created by concatenating the specified matrix with a scale transformation.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst 13.1+
+- macOS 10.10+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
+
+## Declaration
+
+```swift
+func SCNMatrix4Scale(_ m: SCNMatrix4, _ sx: Float, _ sy: Float, _ sz: Float) -> SCNMatrix4
+```
+
+#### Return Value
+
+A new matrix.
+
+#### Discussion
+
+The resulting transformation consists of the specified scale followed by the transformation represented by the `mat` parameter.
+
+## Parameters
+
+- `m`: The matrix to be combined with a translation.
+- `sx`: The scale factor in the x-axis direction.
+- `sy`: The scale factor in the y-axis direction.
+- `sz`: The scale factor in the z-axis direction.
+
+## See Also
+
+- [func SCNMatrix4Translate(SCNMatrix4, Float, Float, Float) -> SCNMatrix4](scnmatrix4translate(_:_:_:_:).md)
+  Returns a new matrix created by concatenating the specified matrix with a translation transformation.
+- [func SCNMatrix4Rotate(SCNMatrix4, Float, Float, Float, Float) -> SCNMatrix4](scnmatrix4rotate(_:_:_:_:_:).md)
+  Returns a new matrix created by concatenating the specified matrix with a rotation transformation.
+- [func SCNMatrix4Invert(SCNMatrix4) -> SCNMatrix4](scnmatrix4invert(_:).md)
+  Returns the inverse of the specified matrix.
+- [func SCNMatrix4Mult(SCNMatrix4, SCNMatrix4) -> SCNMatrix4](scnmatrix4mult(_:_:).md)
+  Returns the product of two matrices.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnmatrix4scale(_:_:_:_:))*

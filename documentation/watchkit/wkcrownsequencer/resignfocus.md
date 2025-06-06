@@ -1,6 +1,6 @@
 # resignFocus()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Ends the delivery of crown events to the current crown sequencer.

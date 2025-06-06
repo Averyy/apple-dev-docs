@@ -1,0 +1,66 @@
+# HIDDriverKit Macros
+
+**Framework**: HIDDriverKit
+
+## Topics
+
+### Macros
+- [kHIDAccelParametricCurvesKey](khidaccelparametriccurveskey.md)
+- [kHIDPointerReportRateKey](khidpointerreportratekey.md)
+- [kHIDScrollAccelParametricCurvesKey](khidscrollaccelparametriccurveskey.md)
+- [kIOHIDBatchIntervalKey](kiohidbatchintervalkey.md)
+- [kIOHIDBuiltInKey](kiohidbuiltinkey.md)
+- [kIOHIDCountryCodeKey](kiohidcountrycodekey.md)
+- [kIOHIDDeviceAccessEntitlementKey](kiohiddeviceaccessentitlementkey.md)
+- [kIOHIDDeviceDefaultAsyncRequestTimeout](kiohiddevicedefaultasyncrequesttimeout.md)
+- [kIOHIDDeviceMaxAsyncRequestTimeout](kiohiddevicemaxasyncrequesttimeout.md)
+- [kIOHIDDeviceMinAsyncRequestTimeout](kiohiddeviceminasyncrequesttimeout.md)
+- [kIOHIDDeviceUsageKey](kiohiddeviceusagekey.md)
+- [kIOHIDDeviceUsagePageKey](kiohiddeviceusagepagekey.md)
+- [kIOHIDDeviceUsagePairsKey](kiohiddeviceusagepairskey.md)
+- [kIOHIDDigitizerTipThresholdKey](kiohiddigitizertipthresholdkey.md)
+- [kIOHIDDropAccelPropertyEventsKey](kiohiddropaccelpropertyeventskey.md)
+- [kIOHIDEventDriverHandlesReport](kiohideventdriverhandlesreport.md)
+- [kIOHIDHeightKey](kiohidheightkey.md)
+- [kIOHIDLocationIDKey](kiohidlocationidkey.md)
+- [kIOHIDManufacturerKey](kiohidmanufacturerkey.md)
+- [kIOHIDMaxFeatureReportSizeKey](kiohidmaxfeaturereportsizekey.md)
+- [kIOHIDMaxInputReportSizeKey](kiohidmaxinputreportsizekey.md)
+- [kIOHIDMaxOutputReportSizeKey](kiohidmaxoutputreportsizekey.md)
+- [kIOHIDMouseAccelerationTypeKey](kiohidmouseaccelerationtypekey.md)
+- [kIOHIDMouseScrollAccelerationKey](kiohidmousescrollaccelerationkey.md)
+- [kIOHIDPhysicalDeviceUniqueIDKey](kiohidphysicaldeviceuniqueidkey.md)
+- [kIOHIDPointerAccelerationKey](kiohidpointeraccelerationkey.md)
+- [kIOHIDPointerAccelerationMultiplierKey](kiohidpointeraccelerationmultiplierkey.md)
+- [kIOHIDPointerAccelerationSupportKey](kiohidpointeraccelerationsupportkey.md)
+- [kIOHIDPointerAccelerationTypeKey](kiohidpointeraccelerationtypekey.md)
+- [kIOHIDPrimaryUsageKey](kiohidprimaryusagekey.md)
+- [kIOHIDPrimaryUsagePageKey](kiohidprimaryusagepagekey.md)
+- [kIOHIDProductIDKey](kiohidproductidkey.md)
+- [kIOHIDProductKey](kiohidproductkey.md)
+- [kIOHIDReportDescriptorKey](kiohidreportdescriptorkey.md)
+- [kIOHIDReportIntervalKey](kiohidreportintervalkey.md)
+- [kIOHIDRequestTimeoutKey](kiohidrequesttimeoutkey.md)
+- [kIOHIDScrollAccelerationKey](kiohidscrollaccelerationkey.md)
+- [kIOHIDScrollAccelerationSupportKey](kiohidscrollaccelerationsupportkey.md)
+- [kIOHIDScrollAccelerationTypeKey](kiohidscrollaccelerationtypekey.md)
+- [kIOHIDScrollReportRateKey](kiohidscrollreportratekey.md)
+- [kIOHIDScrollResolutionKey](kiohidscrollresolutionkey.md)
+- [kIOHIDScrollResolutionXKey](kiohidscrollresolutionxkey.md)
+- [kIOHIDScrollResolutionYKey](kiohidscrollresolutionykey.md)
+- [kIOHIDScrollResolutionZKey](kiohidscrollresolutionzkey.md)
+- [kIOHIDSerialNumberKey](kiohidserialnumberkey.md)
+- [kIOHIDServiceAccelerationProperties](kiohidserviceaccelerationproperties.md)
+- [kIOHIDSurfaceDimensionsKey](kiohidsurfacedimensionskey.md)
+- [kIOHIDTrackpadAccelerationType](kiohidtrackpadaccelerationtype.md)
+- [kIOHIDTrackpadScrollAccelerationKey](kiohidtrackpadscrollaccelerationkey.md)
+- [kIOHIDTransportKey](kiohidtransportkey.md)
+- [kIOHIDUseLinearScalingMouseAccelerationKey](kiohiduselinearscalingmouseaccelerationkey.md)
+- [kIOHIDVendorIDKey](kiohidvendoridkey.md)
+- [kIOHIDVersionNumberKey](kiohidversionnumberkey.md)
+- [kIOHIDWidthKey](kiohidwidthkey.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/hiddriverkit/hiddriverkit-macros)*

@@ -1,6 +1,6 @@
 # init(url:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Returns an asset for the audio file at the specified URL.

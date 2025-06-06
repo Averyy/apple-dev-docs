@@ -1,0 +1,18 @@
+# HIDUsage.vesaVirtualControls(_:)
+
+**Framework**: Core HID  
+**Kind**: case
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+case vesaVirtualControls(HIDUsage.VESAVirtualControlsUsage?)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corehid/hidusage/vesavirtualcontrols(_:))*

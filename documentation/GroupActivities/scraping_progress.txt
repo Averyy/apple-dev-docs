@@ -1,0 +1,4 @@
+Completed scraping Group Activities!
+Total pages scraped: 512
+Pages skipped (unchanged): 1
+Pages failed: 0

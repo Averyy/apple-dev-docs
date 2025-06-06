@@ -1,0 +1,39 @@
+# accessibilityLabel(_:)
+
+**Framework**: Swift Charts  
+**Kind**: method
+
+Adds a label to the chart content that describes its contents.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
+
+## Declaration
+
+```swift
+nonisolated
+func accessibilityLabel(_ label: KeyPath<Self.DataElement, some StringProtocol>) -> some VectorizedChartContent<Self.DataElement>
+```
+
+## See Also
+
+- [func accessibilityHidden(KeyPath<Self.DataElement, Bool>) -> some VectorizedChartContent<Self.DataElement>
+](vectorizedchartcontent/accessibilityhidden(_:).md)
+  Specifies whether to hide this chart content from system accessibility features.
+- [func accessibilityIdentifier(KeyPath<Self.DataElement, String>) -> some VectorizedChartContent<Self.DataElement>
+](vectorizedchartcontent/accessibilityidentifier(_:).md)
+  Adds an identifier string to the chart content.
+- [func accessibilityValue(KeyPath<Self.DataElement, some StringProtocol>) -> some VectorizedChartContent<Self.DataElement>
+](vectorizedchartcontent/accessibilityvalue(_:)-2rv8b.md)
+  Adds a description of the value that the chart content contains.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilitylabel(_:)-8zoay)*

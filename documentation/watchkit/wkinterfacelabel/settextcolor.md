@@ -1,6 +1,6 @@
 # setTextColor(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the color to apply to plain text strings.

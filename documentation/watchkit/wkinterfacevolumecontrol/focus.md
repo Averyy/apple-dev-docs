@@ -1,6 +1,6 @@
 # focus()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the volume control as the focus for input from the Digital Crown.

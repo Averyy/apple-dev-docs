@@ -1,6 +1,6 @@
 # setTextContentType(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the text field’s semantic meaning.

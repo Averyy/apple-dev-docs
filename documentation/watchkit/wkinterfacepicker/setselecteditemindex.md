@@ -1,6 +1,6 @@
 # setSelectedItemIndex(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Selects the specified item in the list.

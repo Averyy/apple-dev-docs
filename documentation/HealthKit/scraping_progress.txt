@@ -1,0 +1,4 @@
+Completed scraping HealthKit!
+Total pages scraped: 1927
+Pages skipped (unchanged): 1
+Pages failed: 0

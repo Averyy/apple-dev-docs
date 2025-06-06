@@ -1,6 +1,6 @@
 # appendItem(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Adds the specified item to the end of the queue.

@@ -1,0 +1,21 @@
+# init(rawValue:)
+
+**Framework**: UIKit  
+**Kind**: init
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- tvOS 16.0+
+
+## Declaration
+
+```swift
+init?(rawValue: Int)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiscreen/referencedisplaymodestatus-swift.enum/init(rawvalue:))*

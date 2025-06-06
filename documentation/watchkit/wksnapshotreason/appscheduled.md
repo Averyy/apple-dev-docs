@@ -1,6 +1,6 @@
 # WKSnapshotReason.appScheduled
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The app scheduled this snapshot.

@@ -1,0 +1,54 @@
+# HMCharacteristicTypePositionState
+
+**Framework**: HomeKit  
+**Kind**: var
+
+The position of an accessory like a door, window, awning, or window covering.
+
+**Availability**:
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 9.0+
+- tvOS 10.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+let HMCharacteristicTypePositionState: String
+```
+
+#### Discussion
+
+The corresponding value is one of the constants in the [`HMCharacteristicValuePositionState`](hmcharacteristicvaluepositionstate.md) enumeration.
+
+## Topics
+
+### Values
+- [enum HMCharacteristicValuePositionState](hmcharacteristicvaluepositionstate.md)
+  Possible values for the position states of an accessory like a door, window, awning, or window covering.
+
+## See Also
+
+- [let HMCharacteristicTypeCurrentDoorState: String](hmcharacteristictypecurrentdoorstate.md)
+  The current door state.
+- [let HMCharacteristicTypeTargetDoorState: String](hmcharacteristictypetargetdoorstate.md)
+  The target door state.
+- [let HMCharacteristicTypeCurrentPosition: String](hmcharacteristictypecurrentposition.md)
+  The current position of a door, window, awning, or window covering.
+- [let HMCharacteristicTypeTargetPosition: String](hmcharacteristictypetargetposition.md)
+  The target position of a door, window, awning, or window covering.
+- [let HMCharacteristicTypeStatusJammed: String](hmcharacteristictypestatusjammed.md)
+  An indicator of whether an accessory is jammed.
+- [let HMCharacteristicTypeHoldPosition: String](hmcharacteristictypeholdposition.md)
+  A control for holding the position of an accessory like a door or window.
+- [let HMCharacteristicTypeSlatType: String](hmcharacteristictypeslattype.md)
+  The type of slat on an accessory like a window or a fan.
+- [let HMCharacteristicTypeCurrentSlatState: String](hmcharacteristictypecurrentslatstate.md)
+  The current state of slats on an accessory like a window or a fan.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/homekit/hmcharacteristictypepositionstate)*

@@ -1,6 +1,6 @@
 # init(origin:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Creates a volume control for use in SwiftUI.

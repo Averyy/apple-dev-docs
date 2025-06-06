@@ -1,6 +1,6 @@
 # WKAudioRecorderPreset.highQualityAudio
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 A high-quality audio recording. This preset records audio with a 44.1 kHz sampling rate using either the LPCM 705.6 kbps or AAC 96 kbps format.

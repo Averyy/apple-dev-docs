@@ -1,6 +1,6 @@
 # WKAudioRecorderPreset.wideBandSpeech
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 Audio quality suitable for higher fidelity speech recording. This preset records audio with a 16 kHz sampling rate using either the LPCM 256 kbps or AAC 32 kbps format.

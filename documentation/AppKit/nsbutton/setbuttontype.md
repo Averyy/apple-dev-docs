@@ -1,0 +1,67 @@
+# setButtonType(_:)
+
+**Framework**: AppKit  
+**Kind**: method
+
+Sets the button’s type, which affects its user interface and behavior when clicked.
+
+**Availability**:
+- macOS ?+
+
+## Declaration
+
+```swift
+@MainActor
+func setButtonType(_ type: NSButton.ButtonType)
+```
+
+#### Discussion
+
+This method causes the button to update to reflect the new type before the method finishes executing.
+
+The types available are for the most common button types, which are also accessible in Interface Builder. You can configure different behavior with the `NSButtonCell` methods  [`highlightsBy`](nsbuttoncell/highlightsby.md) and [`showsStateBy`](nsbuttoncell/showsstateby.md).
+
+Note that there is no `-buttonType` method. The set method sets various button properties that together establish the behavior of the type.
+
+## Parameters
+
+- `type`: A constant specifying the type of the button. The available button types are listed under   in the   class.
+
+## See Also
+
+- [var image: NSImage?](nsbutton/image.md)
+  The image that appears on the button when it’s in an off state, or `nil` if there is no such image.
+- [func setButtonType(NSButton.ButtonType)](nsbuttoncell/setbuttontype(_:).md)
+  Sets how the button highlights while pressed and how it shows its state.
+- [Button Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Button/Button.html#//apple_ref/doc/uid/10000019i)
+- [var alternateImage: NSImage?](nsbutton/alternateimage.md)
+  An alternate image that appears on the button when the button is in an on state.
+- [func getPeriodicDelay(UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)](nsbutton/getperiodicdelay(_:interval:).md)
+  Returns by reference the delay and interval periods for a continuous button.
+- [func setPeriodicDelay(Float, interval: Float)](nsbutton/setperiodicdelay(_:interval:).md)
+  Sets the message delay and interval periods for a continuous button.
+- [var contentTintColor: NSColor?](nsbutton/contenttintcolor.md)
+  A tint color to use for the template image and text content.
+- [var hasDestructiveAction: Bool](nsbutton/hasdestructiveaction.md)
+  A Boolean value that defines whether a button’s action has a destructive effect.
+- [var alternateTitle: String](nsbutton/alternatetitle.md)
+  The title that the button displays when the button is in an on state.
+- [var attributedTitle: NSAttributedString](nsbutton/attributedtitle.md)
+  The title that the button displays in an off state, as an attributed string.
+- [var attributedAlternateTitle: NSAttributedString](nsbutton/attributedalternatetitle.md)
+  The title that the button displays as an attributed string when the button is in an on state.
+- [var title: String](nsbutton/title.md)
+  The title displayed on the button when it’s in an off state.
+- [var symbolConfiguration: NSImage.SymbolConfiguration?](nsbutton/symbolconfiguration.md)
+  The combination of point size, weight, and scale to use when sizing and displaying symbol images.
+- [var sound: NSSound?](nsbutton/sound.md)
+  The sound that plays when the user clicks the button.
+- [var isSpringLoaded: Bool](nsbutton/isspringloaded.md)
+  A Boolean value that indicates whether spring loading is enabled for the button.
+- [var maxAcceleratorLevel: Int](nsbutton/maxacceleratorlevel.md)
+  An integer value indicating the maximum pressure level for a button of type [`NSMultiLevelAcceleratorButton`](nsmultilevelacceleratorbutton.md).
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsbutton/setbuttontype(_:))*

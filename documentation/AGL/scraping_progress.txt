@@ -1,0 +1,4 @@
+Completed scraping AGL!
+Total pages scraped: 200
+Pages skipped (unchanged): 1
+Pages failed: 0

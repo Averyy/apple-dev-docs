@@ -1,0 +1,45 @@
+# collectionView(_:willPerformPreviewActionForMenuWith:animator:)
+
+**Framework**: UIKit  
+**Kind**: method
+
+Informs the delegate when a user triggers a commit by tapping the preview.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.1+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+@MainActor
+optional func collectionView(_ collectionView: UICollectionView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: any UIContextMenuInteractionCommitAnimating)
+```
+
+## Parameters
+
+- `collectionView`: The collection view that informs the delegate of this event.
+- `configuration`: The configuration of the menu being displayed.
+- `animator`: The animations to run alongside the commit transition.
+
+## See Also
+
+- [Adding context menus in your app](adding-context-menus-in-your-app.md)
+  Provide quick access to useful actions by adding context menus to your iOS app.
+- [func collectionView(UICollectionView, willDisplayContextMenu: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](uicollectionviewdelegate/collectionview(_:willdisplaycontextmenu:animator:).md)
+  Informs the delegate when a context menu will appear.
+- [func collectionView(UICollectionView, willEndContextMenuInteraction: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](uicollectionviewdelegate/collectionview(_:willendcontextmenuinteraction:animator:).md)
+  Informs the delegate when a context menu will disappear.
+- [func collectionView(UICollectionView, contextMenuConfigurationForItemsAt: [IndexPath], point: CGPoint) -> UIContextMenuConfiguration?](uicollectionviewdelegate/collectionview(_:contextmenuconfigurationforitemsat:point:).md)
+  Asks the delegate for a context-menu configuration for the items at the specified index paths.
+- [func collectionView(UICollectionView, contextMenuConfiguration: UIContextMenuConfiguration, highlightPreviewForItemAt: IndexPath) -> UITargetedPreview?](uicollectionviewdelegate/collectionview(_:contextmenuconfiguration:highlightpreviewforitemat:).md)
+  Asks the delegate for a preview of the item at the specified index path when a context-menu interaction begins.
+- [func collectionView(UICollectionView, contextMenuConfiguration: UIContextMenuConfiguration, dismissalPreviewForItemAt: IndexPath) -> UITargetedPreview?](uicollectionviewdelegate/collectionview(_:contextmenuconfiguration:dismissalpreviewforitemat:).md)
+  Asks the delegate for a preview of the item at the specified index path when a context-menu interaction ends.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/collectionview(_:willperformpreviewactionformenuwith:animator:))*

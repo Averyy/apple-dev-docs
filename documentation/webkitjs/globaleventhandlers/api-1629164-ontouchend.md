@@ -1,0 +1,19 @@
+# ontouchend
+
+**Framework**: Webkitjs  
+**Kind**: instp
+
+**Availability**:
+- Safari Desktop 9.0+
+- Safari Mobile 9.0+
+
+## Declaration
+
+```swift
+attribute EventHandler ontouchend;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkitjs/globaleventhandlers/1629164-ontouchend)*

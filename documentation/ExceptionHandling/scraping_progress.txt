@@ -1,0 +1,4 @@
+Completed scraping Exception Handling!
+Total pages scraped: 38
+Pages skipped (unchanged): 1
+Pages failed: 0

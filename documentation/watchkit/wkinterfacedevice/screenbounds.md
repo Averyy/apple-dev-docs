@@ -1,6 +1,6 @@
 # screenBounds
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The bounding rectangle of the screen.

@@ -1,0 +1,18 @@
+# HIDUsage.genericDeviceControls(_:)
+
+**Framework**: Core HID  
+**Kind**: case
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+case genericDeviceControls(HIDUsage.GenericDeviceControlsUsage?)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corehid/hidusage/genericdevicecontrols(_:))*

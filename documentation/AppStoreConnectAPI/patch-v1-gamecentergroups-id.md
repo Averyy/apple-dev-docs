@@ -1,0 +1,33 @@
+# Modify a group
+
+**Framework**: App Store Connect API  
+**Kind**: httpRequest
+
+Edit the reference name for a group.
+
+**Availability**:
+- App Store Connect API 3.0+
+
+## See Also
+
+- [Read group information](get-v1-gamecentergroups.md)
+  List information for all groups.
+- [Read group information for a specific group](get-v1-gamecentergroups-_id_.md)
+  Read information for a specific group.
+- [Create a group](post-v1-gamecentergroups.md)
+  Add a new group.
+- [Delete a group](delete-v1-gamecentergroups-_id_.md)
+  Remove a group.
+- [List the achievements in a group](get-v1-gamecentergroups-_id_-gamecenterachievements.md)
+  List achievements information for a specific group.
+- [List Game Center details for a group](get-v1-gamecentergroups-_id_-gamecenterdetails.md)
+  Read Game Center detail information for a specific group.
+- [List Game Center leaderboard sets in a group](get-v1-gamecentergroups-_id_-gamecenterleaderboardsets.md)
+  Read Game Center leaderboard sets information for a specific group.
+- [List Game Center leaderboards for a group](get-v1-gamecentergroups-_id_-gamecenterleaderboards.md)
+  Read Game Center leaderboard information for a specific group.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/patch-v1-gamecentergroups-_id_)*

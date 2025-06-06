@@ -1,6 +1,6 @@
 # dismissAddPassesController()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Dismisses the pass interface controller

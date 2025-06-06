@@ -1,0 +1,18 @@
+# enqueuePackets
+
+**Framework**: NetworkingDriverKit  
+**Kind**: method
+
+**Availability**:
+- DriverKit ?+
+
+## Declaration
+
+```swift
+IOReturn enqueuePackets(IOUserNetworkPacket * * inPackets, uint32_t count, IOOptionBits options);
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/networkingdriverkit/iousernetworkpacketqueue/enqueuepackets-13ln6)*

@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Returns an initialized interface controller object.

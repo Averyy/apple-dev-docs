@@ -1,6 +1,6 @@
 # playFromBeginning()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Plays the movie from the beginning.

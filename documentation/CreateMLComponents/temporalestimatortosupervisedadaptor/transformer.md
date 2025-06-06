@@ -1,0 +1,32 @@
+# TemporalEstimatorToSupervisedAdaptor.Transformer
+
+**Framework**: Create ML Components  
+**Kind**: typealias
+
+The transformer type created by this estimator.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+typealias Transformer = Estimator.Transformer
+```
+
+## See Also
+
+- [func fitted<InputSequence, FeatureSequence>(to: InputSequence, eventHandler: EventHandler?) async throws -> TemporalEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](temporalestimatortosupervisedadaptor/fitted(to:eventhandler:).md)
+  Fits a transformer to a sequence of examples.
+- [func fitted<InputSequence, Validation, FeatureSequence>(to: InputSequence, validateOn: Validation, eventHandler: EventHandler?) async throws -> TemporalEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](temporalestimatortosupervisedadaptor/fitted(to:validateon:eventhandler:).md)
+  Fits a transformer to a sequence of examples while validating with a validation sequence.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/temporalestimatortosupervisedadaptor/transformer)*

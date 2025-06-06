@@ -1,6 +1,6 @@
 # setAccessibilityLabel(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets a succinct label on the object that identifies the accessibility element.

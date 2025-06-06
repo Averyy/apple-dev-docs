@@ -1,6 +1,6 @@
 # Using background tasks
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Handle scheduled update tasks in the background, and respond to background system interactions including Siri intents and incoming Bluetooth messages.
 

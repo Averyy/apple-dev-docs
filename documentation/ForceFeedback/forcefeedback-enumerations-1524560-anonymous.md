@@ -1,0 +1,39 @@
+# Anonymous
+
+**Framework**: Force Feedback
+
+## Topics
+
+### Constants
+- [var FFEB_NOTRIGGER: UInt32](ffeb_notrigger.md)
+- [var FFEP_ALLPARAMS: UInt32](ffep_allparams.md)
+- [var FFEP_AXES: UInt32](ffep_axes.md)
+- [var FFEP_DIRECTION: UInt32](ffep_direction.md)
+- [var FFEP_DURATION: UInt32](ffep_duration.md)
+- [var FFEP_ENVELOPE: UInt32](ffep_envelope.md)
+- [var FFEP_GAIN: UInt32](ffep_gain.md)
+- [var FFEP_NODOWNLOAD: UInt32](ffep_nodownload.md)
+- [var FFEP_NORESTART: UInt32](ffep_norestart.md)
+- [var FFEP_SAMPLEPERIOD: UInt32](ffep_sampleperiod.md)
+- [var FFEP_START: UInt32](ffep_start.md)
+- [var FFEP_STARTDELAY: UInt32](ffep_startdelay.md)
+- [var FFEP_TRIGGERBUTTON: UInt32](ffep_triggerbutton.md)
+- [var FFEP_TRIGGERREPEATINTERVAL: UInt32](ffep_triggerrepeatinterval.md)
+- [var FFEP_TYPESPECIFICPARAMS: UInt32](ffep_typespecificparams.md)
+
+## See Also
+
+- [Anonymous](forcefeedback-enumerations-1524471-anonymous.md)
+- [Anonymous](forcefeedback-enumerations-1524584-anonymous.md)
+- [Anonymous](forcefeedback-enumerations-1524526-anonymous.md)
+- [Anonymous](forcefeedback-enumerations-1524546-anonymous.md)
+- [Anonymous](forcefeedback-enumerations-1524506-anonymous.md)
+- [Anonymous](forcefeedback-enumerations-1524537-anonymous.md)
+- [Anonymous](forcefeedback-enumerations-1524522-anonymous.md)
+- [Anonymous](forcefeedback-enumerations-1524566-anonymous.md)
+- [Anonymous](forcefeedback-enumerations-1524447-anonymous.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/forcefeedback/forcefeedback-enumerations-1524560-anonymous)*

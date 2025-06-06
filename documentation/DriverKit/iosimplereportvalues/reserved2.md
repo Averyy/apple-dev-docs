@@ -1,0 +1,21 @@
+# reserved2
+
+**Framework**: DriverKit  
+**Kind**: property
+
+**Availability**:
+- DriverKit ?+
+- iOS ?+
+- iPadOS ?+
+- macOS ?+
+
+## Declaration
+
+```swift
+uint64_t reserved2;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/driverkit/iosimplereportvalues/reserved2)*

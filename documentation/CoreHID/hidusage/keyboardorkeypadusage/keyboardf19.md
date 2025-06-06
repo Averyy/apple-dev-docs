@@ -1,0 +1,18 @@
+# HIDUsage.KeyboardOrKeypadUsage.keyboardF19
+
+**Framework**: Core HID  
+**Kind**: case
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+case keyboardF19
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corehid/hidusage/keyboardorkeypadusage/keyboardf19)*

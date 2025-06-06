@@ -1,0 +1,18 @@
+# HIDUsage.BatterySystemUsage.thermistorHot
+
+**Framework**: Core HID  
+**Kind**: case
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+case thermistorHot
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corehid/hidusage/batterysystemusage/thermistorhot)*

@@ -1,6 +1,6 @@
 # albumTitle
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The album title information for the audio file.

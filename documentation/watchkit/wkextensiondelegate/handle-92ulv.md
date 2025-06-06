@@ -1,6 +1,6 @@
 # handle(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the delegate that the app has received one or more background tasks.
@@ -29,7 +29,7 @@ The system calls this method after launching your app to handle a background tas
 
 ## See Also
 
-- [func recoverActiveWorkoutSession(completion: (HKWorkoutSession?, (any Error)?) -> Void)](https://developer.apple.com/documentation/healthkit/hkhealthstore/2962889-recoveractiveworkoutsession)
+- [func recoverActiveWorkoutSession(completion: (HKWorkoutSession?, (any Error)?) -> Void)](../healthkit/hkhealthstore/2962889-recoveractiveworkoutsession.md)
   Recovers an active workout session.
 
 

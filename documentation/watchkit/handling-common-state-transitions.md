@@ -1,6 +1,6 @@
 # Handling Common State Transitions
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Detect and respond to common state transitions.
 

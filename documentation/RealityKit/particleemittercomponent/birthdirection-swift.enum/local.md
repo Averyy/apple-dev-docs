@@ -1,0 +1,24 @@
+# ParticleEmitterComponent.BirthDirection.local
+
+**Framework**: RealityKit  
+**Kind**: case
+
+Emit direction is relative to the orientation of the emitter entity’s transform.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+case local
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/particleemittercomponent/birthdirection-swift.enum/local)*

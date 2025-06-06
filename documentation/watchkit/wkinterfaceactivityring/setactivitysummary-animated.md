@@ -1,6 +1,6 @@
 # setActivitySummary(_:animated:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the activity summary displayed by the activity ring view.

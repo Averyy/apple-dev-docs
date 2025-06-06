@@ -1,0 +1,31 @@
+# kIOUSBSuperSpeedEndpointCompanionDescriptorBulkReserved
+
+**Framework**: USBDriverKit  
+**Kind**: case
+
+**Availability**:
+- DriverKit 19.0+
+
+## Declaration
+
+```swift
+kIOUSBSuperSpeedEndpointCompanionDescriptorBulkReserved
+```
+
+## See Also
+
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorMaxBurst](kiousbsuperspeedendpointcompaniondescriptormaxburst.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorMaxBurstPhase](kiousbsuperspeedendpointcompaniondescriptormaxburstphase.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorBulkMaxStreams](kiousbsuperspeedendpointcompaniondescriptorbulkmaxstreams.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorBulkMaxStreamsPhase](kiousbsuperspeedendpointcompaniondescriptorbulkmaxstreamsphase.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorBulkReservedPhase](kiousbsuperspeedendpointcompaniondescriptorbulkreservedphase.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocMult](kiousbsuperspeedendpointcompaniondescriptorisocmult.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocMultPhase](kiousbsuperspeedendpointcompaniondescriptorisocmultphase.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocReserved](kiousbsuperspeedendpointcompaniondescriptorisocreserved.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocReservedPhase](kiousbsuperspeedendpointcompaniondescriptorisocreservedphase.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorSSPIsocCompanion](kiousbsuperspeedendpointcompaniondescriptorsspisoccompanion.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/usbdriverkit/kiousbsuperspeedendpointcompaniondescriptorbulkreserved)*

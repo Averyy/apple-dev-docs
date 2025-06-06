@@ -1,0 +1,52 @@
+# photosPicker(isPresented:selection:matching:preferredItemEncoding:photoLibrary:)
+
+**Framework**: SwiftUI  
+**Kind**: method
+
+Presents a Photos picker that selects a `PhotosPickerItem` from a given photo library.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- macOS 13.0+
+
+## Declaration
+
+```swift
+nonisolated
+func photosPicker(isPresented: Binding<Bool>, selection: Binding<PhotosPickerItem?>, matching filter: PHPickerFilter? = nil, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy = .automatic, photoLibrary: PHPhotoLibrary) -> some View
+```
+
+#### Discussion
+
+The user explicitly grants access only to items they choose, so photo library access authorization is not needed.
+
+## Parameters
+
+- `isPresented`: The binding to whether the Photos picker should be shown.
+- `selection`: The item being shown and selected in the Photos picker.
+- `filter`: Types of items that can be shown. Default is  . Setting it to   means all supported types can be shown.
+- `preferredItemEncoding`: The encoding disambiguation policy of the selected item. Default is  . Setting it to   means the best encoding determined by the system will be used.
+- `photoLibrary`: The photo library to choose from.
+
+## See Also
+
+- [@MainActor @preconcurrency struct PhotosPicker<Label> where Label : View](../PhotosUI/PhotosPicker.md)
+  A view that displays a Photos picker for choosing assets from the photo library.
+- [func photosPicker(isPresented: Binding<Bool>, selection: Binding<PhotosPickerItem?>, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy) -> some View](view/photospicker(ispresented:selection:matching:preferreditemencoding:).md)
+  Presents a Photos picker that selects a `PhotosPickerItem`.
+- [func photosPicker(isPresented: Binding<Bool>, selection: Binding<[PhotosPickerItem]>, maxSelectionCount: Int?, selectionBehavior: PhotosPickerSelectionBehavior, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy) -> some View](view/photospicker(ispresented:selection:maxselectioncount:selectionbehavior:matching:preferreditemencoding:).md)
+  Presents a Photos picker that selects a collection of `PhotosPickerItem`.
+- [func photosPicker(isPresented: Binding<Bool>, selection: Binding<[PhotosPickerItem]>, maxSelectionCount: Int?, selectionBehavior: PhotosPickerSelectionBehavior, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy, photoLibrary: PHPhotoLibrary) -> some View](view/photospicker(ispresented:selection:maxselectioncount:selectionbehavior:matching:preferreditemencoding:photolibrary:).md)
+  Presents a Photos picker that selects a collection of `PhotosPickerItem` from a given photo library.
+- [func photosPickerAccessoryVisibility(Visibility, edges: Edge.Set) -> some View](view/photospickeraccessoryvisibility(_:edges:).md)
+  Sets the accessory visibility of the Photos picker. Accessories include anything between the content and the edge, like the navigation bar or the sidebar.
+- [func photosPickerDisabledCapabilities(PHPickerCapabilities) -> some View](view/photospickerdisabledcapabilities(_:).md)
+  Disables capabilities of the Photos picker.
+- [func photosPickerStyle(PhotosPickerStyle) -> some View](view/photospickerstyle(_:).md)
+  Sets the mode of the Photos picker.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/view/photospicker(ispresented:selection:matching:preferreditemencoding:photolibrary:))*

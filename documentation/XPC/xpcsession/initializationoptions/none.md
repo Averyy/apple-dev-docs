@@ -1,0 +1,32 @@
+# none
+
+**Framework**: Xpc  
+**Kind**: property
+
+Indicates that the listener uses a default configuration during creation.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst ?+
+- macOS 14.0+
+- tvOS 17.0+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+static var none: XPCSession.InitializationOptions
+```
+
+## See Also
+
+- [static var inactive: XPCSession.InitializationOptions](xpcsession/initializationoptions/inactive.md)
+  Indicates that the session isn’t activated during its creation.
+- [static var privileged: XPCSession.InitializationOptions](xpcsession/initializationoptions/privileged.md)
+  Indicates that the Mach service is in the priviledged Mach bootstrap.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/xpc/xpcsession/initializationoptions/none)*

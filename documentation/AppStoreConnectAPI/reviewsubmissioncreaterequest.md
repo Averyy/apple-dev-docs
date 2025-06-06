@@ -1,0 +1,31 @@
+# ReviewSubmissionCreateRequest
+
+**Framework**: App Store Connect API  
+**Kind**: dictionary
+
+**Availability**:
+- App Store Connect API 1.7+
+
+## Declaration
+
+```swift
+object ReviewSubmissionCreateRequest
+```
+
+## Topics
+
+### Objects
+- [object ReviewSubmissionCreateRequest.Data](reviewsubmissioncreaterequest/data-data.dictionary.md)
+
+## See Also
+
+- [object ReviewSubmission](reviewsubmission.md)
+- [object ReviewSubmissionItem](reviewsubmissionitem.md)
+- [object ReviewSubmissionUpdateRequest](reviewsubmissionupdaterequest.md)
+- [object ReviewSubmissionResponse](reviewsubmissionresponse.md)
+- [object ReviewSubmissionsResponse](reviewsubmissionsresponse.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/reviewsubmissioncreaterequest)*

@@ -1,6 +1,6 @@
 # WKHapticType.start
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 Indicates the beginning of an action.

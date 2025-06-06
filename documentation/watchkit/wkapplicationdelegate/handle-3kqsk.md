@@ -1,6 +1,6 @@
 # handle(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Responds to Handoff–related activity from Siri.

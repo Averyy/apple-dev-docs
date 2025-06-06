@@ -1,0 +1,4 @@
+Completed scraping Roster API!
+Total pages scraped: 21
+Pages skipped (unchanged): 1
+Pages failed: 0

@@ -1,6 +1,6 @@
 # Storyboard support
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Connect your code to storyboard elements using interface controllers, interface objects, and event handlers.
 
@@ -68,7 +68,7 @@ The WatchKit framework includes classes to control user interface elements that 
   Provide a view that controls the currently playing audio from your app.
 - [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md)
   An interface element that provides control of the audio volume from the watch or a paired iPhone.
-- [PUICAutoLaunchAudioOptOut](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut)
+- [PUICAutoLaunchAudioOptOut](../BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut.md)
   A Boolean value that indicates whether a watchOS app should opt out of automatically launching when its companion iOS app starts playing audio content.
 - [class WKAudioFilePlayer](wkaudiofileplayer.md)
   An object that controls playback of a single audio item.

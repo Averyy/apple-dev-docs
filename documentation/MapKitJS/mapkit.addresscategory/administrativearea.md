@@ -1,0 +1,33 @@
+# AdministrativeArea
+
+**Framework**: MapKit JS  
+**Kind**: case
+
+The primary administrative divisions of countries or regions.
+
+**Availability**:
+- MapKit JS 5.78.1+
+
+## Declaration
+
+```swift
+const string AdministrativeArea;
+```
+
+## See Also
+
+- [Country](mapkit.addresscategory/country.md)
+  Countries and regions.
+- [Locality](mapkit.addresscategory/locality.md)
+  Local administrative divisions, postal cities, and populated places.
+- [PostalCode](mapkit.addresscategory/postalcode.md)
+  An address code for mail sorting and delivery.
+- [SubAdministrativeArea](mapkit.addresscategory/subadministrativearea.md)
+  The secondary administrative divisions of countries or regions.
+- [SubLocality](mapkit.addresscategory/sublocality.md)
+  Local administrative subdivisions, postal city subdistricts, and neighborhoods.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit.addresscategory/administrativearea)*

@@ -1,0 +1,19 @@
+# width
+
+**Framework**: Webkitjs  
+**Kind**: instp
+
+**Availability**:
+- Safari Desktop 10.1+
+- Safari Mobile 10.1+
+
+## Declaration
+
+```swift
+inherit attribute unrestricted double width;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkitjs/domrect/2871053-width)*

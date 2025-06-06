@@ -1,0 +1,14 @@
+# CustomStringConvertible Implementations
+
+**Framework**: Create ML
+
+## Topics
+
+### Instance Properties
+- [var description: String](mlactionclassifier/modelparameters-swift.struct/description.md)
+  A text representation of the model parameters.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/mlactionclassifier/modelparameters-swift.struct/customstringconvertible-implementations)*

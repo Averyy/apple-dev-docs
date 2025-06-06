@@ -1,6 +1,6 @@
 # password
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 An existing password.

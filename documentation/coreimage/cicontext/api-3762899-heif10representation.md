@@ -1,0 +1,57 @@
+# heif10Representation(of:colorSpace:options:)
+
+**Framework**: Core Image  
+**Kind**: instm
+
+Renders the image and exports the resulting image data in HEIF10 format.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+func heif10Representation(of image: CIImage, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any] = [:]) throws -> Data
+```
+
+## Parameters
+
+- `image`: The image object to render.
+- `colorSpace`: The color space in which to render the output image.
+- `options`: A dictionary with additional options for export.
+
+## See Also
+
+- [func tiffRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/1642220-tiffrepresentation.md)
+  Renders the image and exports the resulting image data in TIFF format.
+- [func jpegRepresentation(of: CIImage, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/1642214-jpegrepresentation.md)
+  Renders the image and exports the resulting image data in JPEG format.
+- [func pngRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/2866196-pngrepresentation.md)
+  Renders the image and exports the resulting image data in PNG format.
+- [func heifRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/2902269-heifrepresentation.md)
+  Renders the image and exports the resulting image data in HEIF format.
+- [func openEXRRepresentation(of: CIImage, options: [CIImageRepresentationOption : Any]) -> Data](cicontext/4210204-openexrrepresentation.md)
+  Renders the image and exports the resulting image data in open EXR format.
+- [func writeTIFFRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any])](cicontext/1642213-writetiffrepresentation.md)
+  Renders the image and exports the resulting image data as a file in TIFF format.
+- [func writeJPEGRepresentation(of: CIImage, to: URL, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any])](cicontext/1642218-writejpegrepresentation.md)
+  Renders the image and exports the resulting image data as a file in JPEG format.
+- [func writePNGRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any])](cicontext/2866197-writepngrepresentation.md)
+  Renders the image and exports the resulting image data as a file in PNG format.
+- [func writeHEIFRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any])](cicontext/2902266-writeheifrepresentation.md)
+  Renders the image and exports the resulting image data as a file in HEIF format.
+- [func writeHEIF10Representation(of: CIImage, to: URL, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any])](cicontext/3762900-writeheif10representation.md)
+  Renders the image and exports the resulting image data as a file in HEIF10 format.
+- [func writeOpenEXRRepresentation(of: CIImage, to: URL, options: [CIImageRepresentationOption : Any])](cicontext/4210205-writeopenexrrepresentation.md)
+  Renders the image and exports the resulting image data as a file in open EXR format.
+- [struct CIImageRepresentationOption](ciimagerepresentationoption.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreimage/cicontext/3762899-heif10representation)*

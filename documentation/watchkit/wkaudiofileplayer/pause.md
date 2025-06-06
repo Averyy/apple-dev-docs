@@ -1,6 +1,6 @@
 # pause()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Pauses playback of the associated item.

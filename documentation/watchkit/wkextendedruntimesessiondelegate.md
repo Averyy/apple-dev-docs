@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionDelegate
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: protocol
 
 A set of optional methods for monitoring an extended runtime session.
@@ -37,7 +37,7 @@ Implement these methods to track the changes to your session’s state.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

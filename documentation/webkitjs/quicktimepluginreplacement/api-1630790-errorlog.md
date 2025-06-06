@@ -1,0 +1,19 @@
+# errorLog
+
+**Framework**: Webkitjs  
+**Kind**: instp
+
+**Availability**:
+- Safari Desktop 10.0+
+- Safari Mobile 10.0+
+
+## Declaration
+
+```swift
+readonly attribute any errorLog;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkitjs/quicktimepluginreplacement/1630790-errorlog)*

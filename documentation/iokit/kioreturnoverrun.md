@@ -1,0 +1,20 @@
+# kIOReturnOverrun
+
+**Framework**: IOKit  
+**Kind**: data
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.9+
+- Xcode 8.0+
+
+## Declaration
+
+```swift
+var kIOReturnOverrun: IOReturn { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iokit/kioreturnoverrun)*

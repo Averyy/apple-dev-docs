@@ -1,6 +1,6 @@
 # state
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The current state of the gesture recognizer.

@@ -1,6 +1,6 @@
 # setTimeZone(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the time zone to use when displaying time information.

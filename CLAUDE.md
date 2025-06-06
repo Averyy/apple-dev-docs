@@ -1,8 +1,8 @@
 # Backend Guidelines
 
-## 🚀 BREAKTHROUGH DISCOVERY: Apple JSON API Endpoints!
+## Apple JSON API Endpoints!
 
-**Game-Changing Finding**: Apple provides JSON API endpoints for ALL documentation pages! No HTML scraping or browser automation needed.
+Apple provides JSON API endpoints for ALL documentation pages! No HTML scraping or browser automation needed.
 
 ### JSON Endpoint Pattern:
 ```
@@ -16,9 +16,38 @@ JSON API URL:      https://developer.apple.com/tutorials/data/documentation/swif
 - ✅ **Complete data** - All content, code examples, metadata in structured format
 - ✅ **Scalable to 100,000+ pages** - Simple async HTTP requests
 - ✅ **Generic solution** - One scraper works for ALL frameworks
+- ✅ **ETag Support** - Apple's API provides ETags for efficient change detection!
+
+### ETag-Based Change Detection
+Apple's JSON API supports HTTP ETags, enabling efficient incremental updates:
+```bash
+# First request returns ETag header
+curl -I https://developer.apple.com/tutorials/data/documentation/swiftui/text.json
+# ETag: W/"399a0f24205d58c9443159732da8989a"
+
+# Subsequent requests can check if content changed
+curl -H 'If-None-Match: W/"399a0f24205d58c9443159732da8989a"' ...
+# Returns 304 Not Modified if unchanged, or 200 with new content if updated
+```
+
+This means after initial scraping with ETag collection, we can check all ~45K documents for changes in ~10 minutes using just HEAD requests!
+
+### Actual Project Size (Production Data):
+- **Documentation files**: ~45K files (180MB total on disk)
+- **ETag storage**: Single JSON file (~9-10MB) - easily fits in GitHub
+- **Vectorstore size**: ~1.6GB (must be generated on deploy, too large for GitHub)
+- **Initial embeddings cost**: ~$5 one-time per server
+
+### ETag Storage Strategy:
+Using a single `/data/metadata/etags.json` file containing all ETags:
+- Manageable size (~10MB for 45K entries)
+- Fast O(1) lookups when loaded into memory
+- Atomic updates for transactional consistency
+- Simple backup/restore operations
+- Matches existing single-file patterns (frameworks list, progress tracking)
 
 ## Project Mission
-Create a comprehensive Python scraper to mirror Apple's entire developer documentation ecosystem (150+ frameworks, 100,000+ pages) for Context7 integration, enabling natural language queries like "apple swiftui" or "apple metal" to retrieve accurate, up-to-date documentation.
+Create a comprehensive Python scraper to mirror Apple's entire developer documentation ecosystem (340+ frameworks, 100,000+ pages) for Context7 integration, enabling natural language queries like "apple swiftui" or "apple metal" to retrieve accurate, up-to-date documentation.
 
 ## Claude Guidelines
 
@@ -58,7 +87,6 @@ Create a comprehensive Python scraper to mirror Apple's entire developer documen
 - Use SHA-256 hashing for content deduplication and change detection
 - Preserve framework structure in directory organization
 - Track scraping progress and metadata separately
-
 
 ## Project Architecture
 

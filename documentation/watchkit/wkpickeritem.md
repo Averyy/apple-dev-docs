@@ -1,6 +1,6 @@
 # WKPickerItem
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: class
 
 A single item in a picker interface.
@@ -41,16 +41,16 @@ The style of the picker determines how you configure the items of that picker:
 ## Relationships
 
 ### Inherits From
-- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
-- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
-- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [NSCoding](https://developer.apple.com/documentation/Foundation/NSCoding)
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
-- [NSSecureCoding](https://developer.apple.com/documentation/Foundation/NSSecureCoding)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

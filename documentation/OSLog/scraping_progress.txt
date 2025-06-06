@@ -1,0 +1,4 @@
+Completed scraping OSLog!
+Total pages scraped: 96
+Pages skipped (unchanged): 1
+Pages failed: 0

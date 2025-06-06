@@ -1,6 +1,6 @@
 # presentScene(_:transition:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Transitions from the current scene to a new scene.

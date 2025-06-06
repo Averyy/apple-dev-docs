@@ -1,6 +1,6 @@
 # WKHapticType.navigationRightTurn
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 Indicates that the user should turn right.

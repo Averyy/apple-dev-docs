@@ -1,0 +1,30 @@
+# IOSurfaceSubsampling.subsampling411
+
+**Framework**: IOSurface  
+**Kind**: case
+
+**Availability**:
+- iOS 11.0+
+- iPadOS 11.0+
+- Mac Catalyst 13.0+
+- macOS 10.6+
+- tvOS 11.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+case subsampling411
+```
+
+## See Also
+
+- [IOSurfaceSubsampling.subsampling420](iosurfacesubsampling/subsampling420.md)
+- [IOSurfaceSubsampling.subsampling422](iosurfacesubsampling/subsampling422.md)
+- [IOSurfaceSubsampling.subsamplingNone](iosurfacesubsampling/subsamplingnone.md)
+- [IOSurfaceSubsampling.subsamplingUnknown](iosurfacesubsampling/subsamplingunknown.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iosurface/iosurfacesubsampling/subsampling411)*

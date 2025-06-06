@@ -1,6 +1,6 @@
 # translationInObject()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 The amount of translation for the pan gesture in the current object.

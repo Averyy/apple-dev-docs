@@ -1,0 +1,44 @@
+# init(subsystem:category:)
+
+**Framework**: os  
+**Kind**: init
+
+Creates a signposter that uses the specified subsystem and category.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst ?+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS ?+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+init(subsystem: String, category: String)
+```
+
+## Parameters
+
+- `subsystem`: The string that identifies the subsystem that emits signposts. Typically, you use the same value as your app’s  . For more information, see  .
+- `category`: The string that the system uses to categorize emitted signposts.
+
+## See Also
+
+- [init()](ossignposter/init.md)
+  Creates a signposter that uses the default subsystem.
+- [init(subsystem: String, category: OSLog.Category)](ossignposter/init(subsystem:category:)-4vdri.md)
+  Creates a signposter that uses the specified subsystem and system-defined log category.
+- [init(logger: Logger)](ossignposter/init(logger:).md)
+  Creates a signposter that uses the subsystem and category of an existing logger.
+- [init(logHandle: OSLog)](ossignposter/init(loghandle:).md)
+  Creates a signposter that uses the subsystem and category of an existing log.
+- [static var disabled: OSSignposter](ossignposter/disabled.md)
+  A shared signposter that doesn’t emit signposts at runtime.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/os/ossignposter/init(subsystem:category:)-94xpb)*

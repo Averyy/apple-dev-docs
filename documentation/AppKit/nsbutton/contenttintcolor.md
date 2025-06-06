@@ -1,0 +1,52 @@
+# contentTintColor
+
+**Framework**: AppKit  
+**Kind**: property
+
+A tint color to use for the template image and text content.
+
+**Availability**:
+- macOS 10.14+
+
+## Declaration
+
+```swift
+@NSCopying
+@MainActor var contentTintColor: NSColor? { get set }
+```
+
+#### Discussion
+
+The `contentTintColor` is only applicable to borderless buttons. This color is used in combination with other theme-appropriate effects.
+
+## See Also
+
+- [func setButtonType(NSButton.ButtonType)](nsbutton/setbuttontype(_:).md)
+  Sets the button’s type, which affects its user interface and behavior when clicked.
+- [func getPeriodicDelay(UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)](nsbutton/getperiodicdelay(_:interval:).md)
+  Returns by reference the delay and interval periods for a continuous button.
+- [func setPeriodicDelay(Float, interval: Float)](nsbutton/setperiodicdelay(_:interval:).md)
+  Sets the message delay and interval periods for a continuous button.
+- [var hasDestructiveAction: Bool](nsbutton/hasdestructiveaction.md)
+  A Boolean value that defines whether a button’s action has a destructive effect.
+- [var alternateTitle: String](nsbutton/alternatetitle.md)
+  The title that the button displays when the button is in an on state.
+- [var attributedTitle: NSAttributedString](nsbutton/attributedtitle.md)
+  The title that the button displays in an off state, as an attributed string.
+- [var attributedAlternateTitle: NSAttributedString](nsbutton/attributedalternatetitle.md)
+  The title that the button displays as an attributed string when the button is in an on state.
+- [var title: String](nsbutton/title.md)
+  The title displayed on the button when it’s in an off state.
+- [var symbolConfiguration: NSImage.SymbolConfiguration?](nsbutton/symbolconfiguration.md)
+  The combination of point size, weight, and scale to use when sizing and displaying symbol images.
+- [var sound: NSSound?](nsbutton/sound.md)
+  The sound that plays when the user clicks the button.
+- [var isSpringLoaded: Bool](nsbutton/isspringloaded.md)
+  A Boolean value that indicates whether spring loading is enabled for the button.
+- [var maxAcceleratorLevel: Int](nsbutton/maxacceleratorlevel.md)
+  An integer value indicating the maximum pressure level for a button of type [`NSMultiLevelAcceleratorButton`](nsmultilevelacceleratorbutton.md).
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsbutton/contenttintcolor)*

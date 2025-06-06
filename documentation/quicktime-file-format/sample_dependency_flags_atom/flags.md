@@ -1,0 +1,26 @@
+# Flags
+
+**Framework**: QuickTime File Format  
+**Kind**: property
+
+A 3-byte space reserved for flags.
+
+#### Overview
+
+Set this field to `0`.
+
+## See Also
+
+- [Size](sample_dependency_flags_atom/size.md)
+  A 32-bit integer that specifies the number of bytes in the sample dependency flags atom.
+- [Type](sample_dependency_flags_atom/type.md)
+  A 32-bit integer that identifies the atom type.
+- [Version](sample_dependency_flags_atom/version.md)
+  A 1-byte specification of the version of this atom.
+- [Sample dependency flags table](sample_dependency_flags_atom/sample_dependency_flags_table.md)
+  A table of 8-bit values indicating the sample flag settings.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/quicktime-file-format/sample_dependency_flags_atom/flags)*

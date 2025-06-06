@@ -1,6 +1,6 @@
 # userDidAcceptCloudKitShare(with:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the delegate that the app has access to shared information in CloudKit.

@@ -1,6 +1,6 @@
 # didFailToRegisterForRemoteNotificationsWithError(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the delegate that Apple Push Notification service (APNs) can’t successfully complete the registration process.

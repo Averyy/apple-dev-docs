@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Creates a map for use in SwiftUI.

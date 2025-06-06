@@ -1,0 +1,4 @@
+Completed scraping Core Services!
+Total pages scraped: 4713
+Pages skipped (unchanged): 1
+Pages failed: 0

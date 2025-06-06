@@ -1,6 +1,6 @@
 # removeRows(at:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Removes the specified rows from the table.

@@ -1,0 +1,42 @@
+# init(imageLiteralResourceName:)
+
+**Framework**: AppKit  
+**Kind**: init
+
+Creates an image initialized with the specified resource name.
+
+**Availability**:
+- macOS 10.9+
+
+## Declaration
+
+```swift
+@nonobjc
+required convenience init(imageLiteralResourceName name: String)
+```
+
+## See Also
+
+- [Configuring and displaying symbol images in your UI](../UIKit/configuring-and-displaying-symbol-images-in-your-ui.md)
+  Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
+- [init?(named: NSImage.Name)](nsimage/init(named:).md)
+  Returns the image object associated with the specified name.
+- [convenience init?(systemSymbolName: String, accessibilityDescription: String?)](nsimage/init(systemsymbolname:accessibilitydescription:).md)
+  Creates a symbol image with the system symbol name and accessibility description you specify.
+- [convenience init?(systemSymbolName: String, variableValue: Double, accessibilityDescription: String?)](nsimage/init(systemsymbolname:variablevalue:accessibilitydescription:).md)
+  Creates a symbol image with the system symbol name and variable value you specify.
+- [convenience init?(symbolName: String, variableValue: Double)](nsimage/init(symbolname:variablevalue:).md)
+  Creates a symbol image with the symbol name and variable value you specify.
+- [convenience init?(symbolName: String, bundle: Bundle?, variableValue: Double)](nsimage/init(symbolname:bundle:variablevalue:).md)
+- [convenience init(resource: ImageResource)](nsimage/init(resource:).md)
+- [func setName(NSImage.Name?) -> Bool](nsimage/setname(_:).md)
+  Registers the image object under the specified name.
+- [func name() -> NSImage.Name?](nsimage/name.md)
+  Returns the name associated with the image, if any.
+- [typealias Name](nsimage/name-swift.typealias.md)
+  Named images, defined by the system or you, for use in your app.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsimage/init(imageliteralresourcename:))*

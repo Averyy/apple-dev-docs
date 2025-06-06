@@ -1,0 +1,24 @@
+# decode(_:configuration:)
+
+**Framework**: Swift  
+**Kind**: method
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+mutating func decode<T>(_: T.Type, configuration: T.DecodingConfiguration) throws -> T where T : DecodableWithConfiguration
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/unkeyeddecodingcontainer/decode(_:configuration:)-3q1ra)*

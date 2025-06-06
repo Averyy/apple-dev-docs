@@ -1,6 +1,6 @@
 # setTaskCompleted(restoredDefaultState:estimatedSnapshotExpiration:userInfo:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Marks the task as complete.

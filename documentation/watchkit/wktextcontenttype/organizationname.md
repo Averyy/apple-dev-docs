@@ -1,6 +1,6 @@
 # organizationName
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 An organization’s name.

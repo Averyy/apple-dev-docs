@@ -1,0 +1,50 @@
+# regularizationFunction
+
+**Framework**: Accelerate  
+**Kind**: property
+
+The variable that specifies the regularization function.
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst ?+
+- macOS 11.0+
+- tvOS 14.0+
+- visionOS ?+
+- watchOS 7.0+
+- Unknown ?+ - Deprecated
+
+## Declaration
+
+```swift
+var regularizationFunction: BNNSOptimizerRegularizationFunction { get set }
+```
+
+## See Also
+
+- [var learningRate: Float](bnns/sgdmomentumoptimizer/learningrate.md)
+  A value that specifies the learning rate.
+- [var momentum: Float](bnns/sgdmomentumoptimizer/momentum.md)
+  The rate of momentum decay.
+- [var gradientScale: Float](bnns/sgdmomentumoptimizer/gradientscale.md)
+  A value that specifies the gradient scaling factor.
+- [var regularizationScale: Float](bnns/sgdmomentumoptimizer/regularizationscale.md)
+  A value that specifies the regularization scaling factor.
+- [var gradientBounds: ClosedRange<Float>?](bnns/sgdmomentumoptimizer/gradientbounds.md)
+  The values for the minimum and maximum gradients.
+- [var gradientClipping: BNNS.GradientClipping](bnns/sgdmomentumoptimizer/gradientclipping.md)
+  The gradient clipping.
+- [BNNS.GradientClipping](bnns/gradientclipping.md)
+  Constants that describe clipping functions.
+- [var usesNestrovMomentum: Bool](bnns/sgdmomentumoptimizer/usesnestrovmomentum.md)
+  A Boolean value that specifies whether to use Nesterov momentum update.
+- [var sgdMomentumVariant: BNNSOptimizerSGDMomentumVariant](bnns/sgdmomentumoptimizer/sgdmomentumvariant.md)
+  The variable that specifies the momentum variant.
+- [var accumulatorCountMultiplier: Int](bnns/sgdmomentumoptimizer/accumulatorcountmultiplier.md)
+  The number of accumulators required for each parameter.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/bnns/sgdmomentumoptimizer/regularizationfunction)*

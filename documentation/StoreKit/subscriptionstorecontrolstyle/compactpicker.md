@@ -1,0 +1,39 @@
+# compactPicker
+
+**Framework**: StoreKit  
+**Kind**: property
+
+A subscription store control style that displays subscription plans as a compact control, with a single button to subscribe.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- macOS 15.0+
+- visionOS 2.0+
+
+## Declaration
+
+```swift
+@MainActor
+@preconcurrency static var compactPicker: CompactPickerSubscriptionStoreControlStyle { get }
+```
+
+## See Also
+
+- [static var automatic: AutomaticSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/automatic.md)
+  A subscription store control style that resolves its appearance automatically, based on the current context.
+- [static var buttons: ButtonsSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/buttons.md)
+  A subscription store control style that displays a subscribe button for each subscription plan.
+- [static var picker: PickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/picker.md)
+  A subscription store control style that displays subscription plans as a picker control, with a single button to subscribe.
+- [static var prominentPicker: ProminentPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/prominentpicker.md)
+  A subscription store control style that displays subscription plans as a prominent picker control, with a single button to subscribe.
+- [static var pagedPicker: PagedPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/pagedpicker.md)
+  A subscription store control style that displays subscription plans as a paged picker control, with a single button to subscribe.
+- [static var pagedProminentPicker: PagedProminentPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/pagedprominentpicker.md)
+  A subscription store control style that displays subscription plans as a prominent paged picker control, with a single button to subscribe.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/subscriptionstorecontrolstyle/compactpicker)*

@@ -1,0 +1,76 @@
+# SpotLight
+
+**Framework**: RealityKit  
+**Kind**: class
+
+An entity that illuminates virtual content in a cone-shaped volume.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- visionOS 2.0+
+
+## Declaration
+
+```swift
+@MainActor
+@preconcurrency class SpotLight
+```
+
+#### Overview
+
+During an AR session, RealityKit automatically lights your virtual objects to match real-world lighting. You can also explicitly add virtual lights that act upon your virtual content. This is typically most useful outside of an AR session on iOS or macOS, where your [`RealityViewCameraContent`](realityviewcameracontent.md) [`camera`](realityviewcameracontent/camera.md) property is set to [`virtual`](realityviewcamera/virtual.md).
+
+A RealityKit scene can contain up to eight dynamic lights, which are entities that contain a [`SpotLightComponent`](spotlightcomponent.md), [`PointLightComponent`](pointlightcomponent.md), or a [`DirectionalLightComponent`](directionallightcomponent.md). This limit doesn’t include light from image-based lighting.
+
+## Topics
+
+### Creating a spotlight
+- [init()](spotlight/init.md)
+  Creates a new entity.
+### Configuring the spotlight
+- [var light: SpotLightComponent](spotlight/light.md)
+  A spotlight component for the entity.
+- [var shadow: SpotLightComponent.Shadow?](spotlight/shadow.md)
+  The shadow for the spotlight.
+### Default Implementations
+- [HasSpotLight Implementations](spotlight/hasspotlight-implementations.md)
+
+## Relationships
+
+### Inherits From
+- [Entity](entity.md)
+### Conforms To
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [EventSource](eventsource.md)
+- [HasHierarchy](hashierarchy.md)
+- [HasSpotLight](hasspotlight.md)
+- [HasSynchronization](hassynchronization.md)
+- [HasTransform](hastransform.md)
+- [Hashable](../Swift/Hashable.md)
+- [Identifiable](../Swift/Identifiable.md)
+- [RealityCoordinateSpace](realitycoordinatespace.md)
+- [Sendable](../Swift/Sendable.md)
+
+## See Also
+
+- [protocol HasPerspectiveCamera](hasperspectivecamera.md)
+  An interface that enables you to configure a virtual camera that you can use to define the rendering perspective when you’re not in an AR session.
+- [class PointLight](pointlight.md)
+  An entity that produces an omnidirectional light for virtual objects.
+- [protocol HasPointLight](haspointlight.md)
+  An interface that defines a point light source component.
+- [protocol HasSpotLight](hasspotlight.md)
+  An interface that defines a spot light source component.
+- [class DirectionalLight](directionallight.md)
+  An entity that casts a virtual light in a particular direction.
+- [protocol HasDirectionalLight](hasdirectionallight.md)
+  An interface that defines a directional light source component.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/spotlight)*

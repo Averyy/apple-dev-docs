@@ -1,0 +1,18 @@
+# CSSM_SAMPLE_TYPE_COMMENT
+
+**Framework**: Security  
+**Kind**: var
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```swift
+var CSSM_SAMPLE_TYPE_COMMENT: Int { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/security/cssm_sample_type_comment)*

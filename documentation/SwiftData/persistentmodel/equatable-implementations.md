@@ -1,0 +1,14 @@
+# Equatable Implementations
+
+**Framework**: SwiftData
+
+## Topics
+
+### Operators
+- [static func == (Self, Self) -> Bool](persistentmodel/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/persistentmodel/equatable-implementations)*

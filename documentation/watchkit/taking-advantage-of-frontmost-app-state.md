@@ -1,6 +1,6 @@
 # Taking Advantage of Frontmost App State
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Understand the frontmost app state, and the features it provides to your app.
 

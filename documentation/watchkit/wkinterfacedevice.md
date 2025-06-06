@@ -1,6 +1,6 @@
 # WKInterfaceDevice
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: class
 
 An object that provides information about the user’s Apple Watch.
@@ -94,14 +94,14 @@ Do not subclass or create instances of this class yourself. Always call the [`cu
 ## Relationships
 
 ### Inherits From
-- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
-- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
-- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
@@ -117,7 +117,7 @@ Do not subclass or create instances of this class yourself. Always call the [`cu
   A collection of methods that manages the app-level behavior of a WatchKit extension.
 - [func WKApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?) -> Int32](wkapplicationmain(_:_:_:).md)
   Creates the application object and the application delegate, and sets up the app’s event cycle.
-- [WKPrefersNetworkUponForeground](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground)
+- [WKPrefersNetworkUponForeground](../BundleResources/Information-Property-List/WKPrefersNetworkUponForeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

@@ -1,0 +1,18 @@
+# gdMode
+
+**Framework**: Application Services  
+**Kind**: structp
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```swift
+var gdMode: Int32
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/applicationservices/gdevice/1461199-gdmode)*

@@ -1,6 +1,6 @@
 # WKMenuItemIcon.resume
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The icon indicating an action to resume playing some content.

@@ -1,0 +1,40 @@
+# randomSplit(by:seed:)
+
+**Framework**: TabularData  
+**Kind**: method
+
+Generates two data frame slices by randomly splitting the rows of the data table.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+func randomSplit(by proportion: Double, seed: Int? = nil) -> (DataFrame.Slice, DataFrame.Slice)
+```
+
+#### Return Value
+
+A tuple of two data frame slices.
+
+## Parameters
+
+- `proportion`: A proportion in the range  .
+- `seed`: A seed number for a random-number generator.
+
+## See Also
+
+- [func randomSplit<G>(by: Double, using: inout G) -> (DataFrame.Slice, DataFrame.Slice)](dataframe/randomsplit(by:using:).md)
+  Generates two data frame slices by randomly splitting the rows of the data table type with a random-number generator.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabulardata/dataframe/randomsplit(by:seed:))*

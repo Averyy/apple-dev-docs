@@ -1,6 +1,6 @@
 # WKInterfaceVolumeControl.Origin.local
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 Audio playing on Apple Watch.

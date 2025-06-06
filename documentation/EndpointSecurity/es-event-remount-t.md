@@ -1,0 +1,46 @@
+# es_event_remount_t
+
+**Framework**: Endpoint Security  
+**Kind**: struct
+
+A type for an event that indicates the unmounting of a file system.
+
+**Availability**:
+- Mac Catalyst ?+
+- macOS ?+
+
+## Declaration
+
+```swift
+struct es_event_remount_t
+```
+
+## Topics
+
+### Inspecting Event Properties
+- [var statfs: UnsafeMutablePointer<statfs>](es_event_remount_t/statfs.md)
+  The statistics of the remounted file system.
+- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](es_event_remount_t/reserved.md)
+  An unused field reserved for future use.
+### Initializers
+- [init(statfs: UnsafeMutablePointer<statfs>, remount_flags: UInt64, disposition: es_mount_disposition_t, reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](es_event_remount_t/init(statfs:remount_flags:disposition:reserved:).md)
+### Instance Properties
+- [var disposition: es_mount_disposition_t](es_event_remount_t/disposition.md)
+- [var remount_flags: UInt64](es_event_remount_t/remount_flags.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+
+## See Also
+
+- [struct es_event_mount_t](es_event_mount_t.md)
+  A type for an event that indicates the mounting of a file system.
+- [struct es_event_unmount_t](es_event_unmount_t.md)
+  A type for an event that indicates the unmounting of a file system.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/endpointsecurity/es_event_remount_t)*

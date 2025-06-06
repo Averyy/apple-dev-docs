@@ -1,6 +1,6 @@
 # presentTextInputControllerWithSuggestions(forLanguage:allowedInputMode:completion:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Displays a modal interface for gathering language-specific text input from the user.

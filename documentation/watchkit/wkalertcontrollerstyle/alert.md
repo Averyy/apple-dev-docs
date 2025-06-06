@@ -1,6 +1,6 @@
 # WKAlertControllerStyle.alert
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 An alert sheet with stacked buttons. The alert sheet includes a default Cancel button at the bottom of the sheet. You can add other buttons, which are placed above the Cancel button.

@@ -1,0 +1,33 @@
+# ar_barcode_detection_symbology_code_39_checksum
+
+**Framework**: ARKit  
+**Kind**: case
+
+## Declaration
+
+```swift
+ar_barcode_detection_symbology_code_39_checksum
+```
+
+## See Also
+
+- [ar_barcode_detection_symbology_aztec](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_aztec.md)
+- [ar_barcode_detection_symbology_codabar](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_codabar.md)
+- [ar_barcode_detection_symbology_code_128](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_128.md)
+- [ar_barcode_detection_symbology_code_39](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_39.md)
+- [ar_barcode_detection_symbology_code_39_full_ascii](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_39_full_ascii.md)
+- [ar_barcode_detection_symbology_code_39_full_ascii_checksum](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_39_full_ascii_checksum.md)
+- [ar_barcode_detection_symbology_code_93](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_93.md)
+- [ar_barcode_detection_symbology_code_93i](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_93i.md)
+- [ar_barcode_detection_symbology_data_matrix](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_data_matrix.md)
+- [ar_barcode_detection_symbology_ean_13](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_ean_13.md)
+- [ar_barcode_detection_symbology_ean_8](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_ean_8.md)
+- [ar_barcode_detection_symbology_gs1_databar](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_gs1_databar.md)
+- [ar_barcode_detection_symbology_gs1_databar_expanded](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_gs1_databar_expanded.md)
+- [ar_barcode_detection_symbology_gs1_databar_limited](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_gs1_databar_limited.md)
+- [ar_barcode_detection_symbology_itf](ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_itf.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/ar_barcode_detection_symbology_t/ar_barcode_detection_symbology_code_39_checksum)*

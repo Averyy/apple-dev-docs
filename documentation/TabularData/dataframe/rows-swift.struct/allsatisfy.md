@@ -1,0 +1,57 @@
+# allSatisfy(_:)
+
+**Framework**: TabularData  
+**Kind**: method
+
+Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+func allSatisfy(_ predicate: (Self.Element) throws -> Bool) rethrows -> Bool
+```
+
+#### Return Value
+
+`true` if the sequence contains only elements that satisfy `predicate`; otherwise, `false`.
+
+#### Discussion
+
+The following code uses this method to test whether all the names in an array have at least five characters:
+
+```None
+let names = ["Sofia", "Camilla", "Martina", "Mateo", "Nicolás"]
+let allHaveAtLeastFive = names.allSatisfy({ $0.count >= 5 })
+// allHaveAtLeastFive == true
+```
+
+If the sequence is empty, this method returns `true`.
+
+> **Note**: O(), where  is the length of the sequence.
+
+O(), where  is the length of the sequence.
+
+## Parameters
+
+- `predicate`: A closure that takes an element of the sequence   as its argument and returns a Boolean value that indicates whether   the passed element satisfies a condition.
+
+## See Also
+
+- [func contains(Self.Element) -> Bool](dataframe/rows-swift.struct/contains(_:).md)
+  Returns a Boolean value indicating whether the sequence contains the given element.
+- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](dataframe/rows-swift.struct/contains(where:).md)
+  Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabulardata/dataframe/rows-swift.struct/allsatisfy(_:))*

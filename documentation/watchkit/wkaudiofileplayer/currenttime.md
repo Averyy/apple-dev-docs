@@ -1,6 +1,6 @@
 # currentTime
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The elapsed time for the current playing item.

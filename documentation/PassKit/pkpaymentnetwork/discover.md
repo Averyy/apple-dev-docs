@@ -1,0 +1,56 @@
+# discover
+
+**Framework**: PassKit (Apple Pay and Wallet)  
+**Kind**: property
+
+A Discover payment card.
+
+**Availability**:
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 13.1+
+- macOS 11.0+
+- visionOS 1.0+
+- watchOS 3.0+
+
+## Declaration
+
+```swift
+static let discover: PKPaymentNetwork
+```
+
+## See Also
+
+- [static let amex: PKPaymentNetwork](pkpaymentnetwork/amex.md)
+  An American Express payment card.
+- [static let bancomat: PKPaymentNetwork](pkpaymentnetwork/bancomat.md)
+  A Bancomat payment card.
+- [static let bancontact: PKPaymentNetwork](pkpaymentnetwork/bancontact.md)
+  A Bancontact payment card.
+- [static let bankAxept: PKPaymentNetwork](pkpaymentnetwork/bankaxept.md)
+- [static let barcode: PKPaymentNetwork](pkpaymentnetwork/barcode.md)
+  A QR code to use for payment.
+- [static let carteBancaire: PKPaymentNetwork](pkpaymentnetwork/cartebancaire.md)
+- [static let cartesBancaires: PKPaymentNetwork](pkpaymentnetwork/cartesbancaires.md)
+  A Cartes Bancaires payment card.
+- [static let chinaUnionPay: PKPaymentNetwork](pkpaymentnetwork/chinaunionpay.md)
+  A China Union Pay payment card.
+- [static let dankort: PKPaymentNetwork](pkpaymentnetwork/dankort.md)
+  The Dankort payment card.
+- [static let eftpos: PKPaymentNetwork](pkpaymentnetwork/eftpos.md)
+  The electronic funds transfer at point of sale (EFTPOS) payment method.
+- [static let electron: PKPaymentNetwork](pkpaymentnetwork/electron.md)
+  An Electron debit card.
+- [static let elo: PKPaymentNetwork](pkpaymentnetwork/elo.md)
+  The Elo payment card.
+- [static let girocard: PKPaymentNetwork](pkpaymentnetwork/girocard.md)
+  A Girocard payment method.
+- [static let idCredit: PKPaymentNetwork](pkpaymentnetwork/idcredit.md)
+  An iD payment card.
+- [static let interac: PKPaymentNetwork](pkpaymentnetwork/interac.md)
+  The Interac payment method.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/passkit/pkpaymentnetwork/discover)*

@@ -1,0 +1,52 @@
+# ShieldConfiguration.Label
+
+**Framework**: ManagedSettingsUI  
+**Kind**: struct
+
+The appearance of text labels within a shield.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+
+## Declaration
+
+```swift
+struct Label
+```
+
+## Topics
+
+### Initializers
+- [init(text: String, color: UIColor)](shieldconfiguration/label/init(text:color:).md)
+  Creates a shield label with the provided text and color.
+### Instance Properties
+- [let color: UIColor](shieldconfiguration/label/color.md)
+  The color of the text on a shield.
+- [let text: String](shieldconfiguration/label/text.md)
+  The text of the label on a shield.
+
+## See Also
+
+- [let backgroundBlurStyle: UIBlurEffect.Style?](shieldconfiguration/backgroundblurstyle.md)
+  A blur style to apply to the background of the shield.
+- [let backgroundColor: UIColor?](shieldconfiguration/backgroundcolor.md)
+  A color for a shield to use in the background blur effect.
+- [let icon: UIImage?](shieldconfiguration/icon.md)
+  An icon to display in the center of the shield.
+- [let primaryButtonBackgroundColor: UIColor?](shieldconfiguration/primarybuttonbackgroundcolor.md)
+  The color to fill the contents of the rounded rectangle primary button.
+- [let primaryButtonLabel: ShieldConfiguration.Label?](shieldconfiguration/primarybuttonlabel.md)
+  The label of the topmost rounded rectangle button.
+- [let secondaryButtonLabel: ShieldConfiguration.Label?](shieldconfiguration/secondarybuttonlabel.md)
+  The label of the optional secondary button.
+- [let subtitle: ShieldConfiguration.Label?](shieldconfiguration/subtitle.md)
+  The subtitle for a shield to display below the title.
+- [let title: ShieldConfiguration.Label?](shieldconfiguration/title.md)
+  The title of the shield to display below the icon.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/managedsettingsui/shieldconfiguration/label)*

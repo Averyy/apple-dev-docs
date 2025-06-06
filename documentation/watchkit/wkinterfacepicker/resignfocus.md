@@ -1,6 +1,6 @@
 # resignFocus()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Removes focus from the picker, causing it to stop receiving input from the Digital Crown.

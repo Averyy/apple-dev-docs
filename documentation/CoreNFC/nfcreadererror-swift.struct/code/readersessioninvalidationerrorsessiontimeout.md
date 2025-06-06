@@ -1,0 +1,41 @@
+# NFCReaderError.Code.readerSessionInvalidationErrorSessionTimeout
+
+**Framework**: Core NFC  
+**Kind**: case
+
+The reader session timed out.
+
+**Availability**:
+- iOS 11.0+
+- iPadOS 11.0+
+- Mac Catalyst 13.1+
+
+## Declaration
+
+```swift
+case readerSessionInvalidationErrorSessionTimeout
+```
+
+## See Also
+
+- [NFCReaderError.Code.readerSessionInvalidationErrorFirstNDEFTagRead](nfcreadererror-swift.struct/code/readersessioninvalidationerrorfirstndeftagread.md)
+  The first NDEF tag read by this session is invalid.
+- [NFCReaderError.Code.readerSessionInvalidationErrorSessionTerminatedUnexpectedly](nfcreadererror-swift.struct/code/readersessioninvalidationerrorsessionterminatedunexpectedly.md)
+  The reader session terminated unexpectedly.
+- [NFCReaderError.Code.readerSessionInvalidationErrorSystemIsBusy](nfcreadererror-swift.struct/code/readersessioninvalidationerrorsystemisbusy.md)
+  The reader session failed because the system is busy.
+- [NFCReaderError.Code.readerSessionInvalidationErrorUserCanceled](nfcreadererror-swift.struct/code/readersessioninvalidationerrorusercanceled.md)
+  The user canceled the reader session.
+- [NFCReaderError.Code.readerSessionInvalidationErrorFirstNDEFTagRead](nfcreadererror-swift.struct/code/readersessioninvalidationerrorfirstndeftagread.md)
+  The first NDEF tag read by this session is invalid.
+- [NFCReaderError.Code.readerSessionInvalidationErrorSessionTerminatedUnexpectedly](nfcreadererror-swift.struct/code/readersessioninvalidationerrorsessionterminatedunexpectedly.md)
+  The reader session terminated unexpectedly.
+- [NFCReaderError.Code.readerSessionInvalidationErrorSystemIsBusy](nfcreadererror-swift.struct/code/readersessioninvalidationerrorsystemisbusy.md)
+  The reader session failed because the system is busy.
+- [NFCReaderError.Code.readerSessionInvalidationErrorUserCanceled](nfcreadererror-swift.struct/code/readersessioninvalidationerrorusercanceled.md)
+  The user canceled the reader session.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corenfc/nfcreadererror-swift.struct/code/readersessioninvalidationerrorsessiontimeout)*

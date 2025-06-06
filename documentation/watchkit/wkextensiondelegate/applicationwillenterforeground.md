@@ -1,6 +1,6 @@
 # applicationWillEnterForeground()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the delegate that the app is about to transition from the background to the foreground.
@@ -17,8 +17,8 @@ optional func applicationWillEnterForeground()
 
 ## Mentions
 
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
 - [Handling Common State Transitions](handling-common-state-transitions.md)
+- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
 
 #### Discussion
 

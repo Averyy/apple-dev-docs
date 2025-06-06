@@ -1,0 +1,42 @@
+# SCStreamConfiguration.Preset
+
+**Framework**: ScreenCaptureKit  
+**Kind**: enum
+
+**Availability**:
+- Mac Catalyst 18.2+
+- macOS 15.0+
+
+## Declaration
+
+```swift
+enum Preset
+```
+
+## Topics
+
+### Enumeration Cases
+- [SCStreamConfiguration.Preset.captureHDRScreenshotCanonicalDisplay](scstreamconfiguration/preset/capturehdrscreenshotcanonicaldisplay.md)
+- [SCStreamConfiguration.Preset.captureHDRScreenshotLocalDisplay](scstreamconfiguration/preset/capturehdrscreenshotlocaldisplay.md)
+- [SCStreamConfiguration.Preset.captureHDRStreamCanonicalDisplay](scstreamconfiguration/preset/capturehdrstreamcanonicaldisplay.md)
+- [SCStreamConfiguration.Preset.captureHDRStreamLocalDisplay](scstreamconfiguration/preset/capturehdrstreamlocaldisplay.md)
+### Initializers
+- [init?(rawValue: Int)](scstreamconfiguration/preset/init(rawvalue:).md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+
+## See Also
+
+- [enum SCCaptureDynamicRange](sccapturedynamicrange.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/screencapturekit/scstreamconfiguration/preset)*

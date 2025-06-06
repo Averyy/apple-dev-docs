@@ -1,0 +1,40 @@
+# UTExportedTypeDeclarations
+
+**Framework**: Bundle Resources  
+**Kind**: dictionary
+
+The uniform type identifiers owned and exported by the app.
+
+**Availability**:
+- iOS 5.0+
+- iPadOS 5.0+
+- macOS 10.7+
+- visionOS 1.0+
+
+## Topics
+
+### Property List Keys
+- [UTTypeConformsTo](information-property-list/utexportedtypedeclarations/uttypeconformsto.md)
+  The Uniform Type Identifier types that this type conforms to.
+- [UTTypeDescription](information-property-list/utexportedtypedeclarations/uttypedescription.md)
+  A description for this type.
+- [UTTypeIconFile](information-property-list/utexportedtypedeclarations/uttypeiconfile.md)
+  The bundle icon resource to associate with this type.
+- [UTTypeIconFiles](information-property-list/utexportedtypedeclarations/uttypeiconfiles.md)
+  One or more bundle icon resources to associate with this type.
+- [UTTypeIdentifier](information-property-list/utexportedtypedeclarations/uttypeidentifier.md)
+  The Uniform Type Identifier to assign to this type.
+- [UTTypeReferenceURL](information-property-list/utexportedtypedeclarations/uttypereferenceurl.md)
+  The webpage for a reference document that describes this type.
+- [UTTypeTagSpecification](information-property-list/utexportedtypedeclarations/uttypetagspecification.md)
+  A dictionary defining one or more equivalent type identifiers.
+
+## See Also
+
+- [UTImportedTypeDeclarations](information-property-list/utimportedtypedeclarations.md)
+  The uniform type identifiers inherently supported, but not owned, by the app.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations)*

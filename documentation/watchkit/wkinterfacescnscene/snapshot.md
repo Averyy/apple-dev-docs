@@ -1,6 +1,6 @@
 # snapshot()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Renders the scene to a new image object.

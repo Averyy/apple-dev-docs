@@ -1,0 +1,26 @@
+# token
+
+**Framework**: Widgetkit  
+**Kind**: property
+
+A unique push token that may be used to deliver updates for this control.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+
+## Declaration
+
+```swift
+let token: Data
+```
+
+#### Discussion
+
+This token is valid until told otherwise through the [`pushTokensDidChange(controls:)`](controlpushhandler/pushtokensdidchange(controls:).md) method on your push handler.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/controlpushinfo/token)*

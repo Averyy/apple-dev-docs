@@ -1,0 +1,30 @@
+# init(rawValue:)
+
+**Framework**: Foundation  
+**Kind**: init
+
+Initializes a new bookmark creation options structure.
+
+**Availability**:
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 13.1+
+- macOS 10.6+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+init(rawValue: UInt)
+```
+
+## Parameters
+
+- `rawValue`: A value with which to initialize the structure.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsurl/bookmarkcreationoptions/init(rawvalue:))*

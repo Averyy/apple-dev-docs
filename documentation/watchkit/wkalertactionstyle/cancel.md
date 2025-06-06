@@ -1,6 +1,6 @@
 # WKAlertActionStyle.cancel
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 A cancel action. Use this style for an action that cancels the operation without making changes.

@@ -1,0 +1,55 @@
+# first
+
+**Framework**: RealityKit  
+**Kind**: property
+
+The first element of the collection.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- visionOS ?+
+
+## Declaration
+
+```swift
+var first: Self.Element? { get }
+```
+
+#### Discussion
+
+If the collection is empty, the value of this property is `nil`.
+
+```None
+let numbers = [10, 20, 30, 40, 50]
+if let firstNumber = numbers.first {
+    print(firstNumber)
+}
+// Prints "10"
+```
+
+## See Also
+
+- [func contains(Self.Element) -> Bool](entity/childcollection/contains(_:).md)
+  Returns a Boolean value indicating whether the sequence contains the given element.
+- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](entity/childcollection/contains(where:).md)
+  Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
+- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](entity/childcollection/allsatisfy(_:).md)
+  Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
+- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](entity/childcollection/first(where:).md)
+  Returns the first element of the sequence that satisfies the given predicate.
+- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](entity/childcollection/max(by:).md)
+  Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
+- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](entity/childcollection/min(by:).md)
+  Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
+- [func randomElement() -> Self.Element?](entity/childcollection/randomelement.md)
+  Returns a random element of the collection.
+- [func randomElement<T>(using: inout T) -> Self.Element?](entity/childcollection/randomelement(using:).md)
+  Returns a random element of the collection, using the given generator as a source for randomness.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/entity/childcollection/first)*

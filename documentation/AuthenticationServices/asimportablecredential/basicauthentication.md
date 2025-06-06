@@ -1,0 +1,65 @@
+# ASImportableCredential.BasicAuthentication
+
+**Framework**: Authentication Services  
+**Kind**: struct
+
+A type to represent a basic authentication password.
+
+**Availability**:
+- iOS 18.2+
+- iPadOS 18.2+
+- Mac Catalyst 18.2+
+- macOS 15.2+
+- visionOS 2.2+
+
+## Declaration
+
+```swift
+struct BasicAuthentication
+```
+
+#### Overview
+
+This type is a representation of `BasicAuth` as defined in the Credential Exchange Format (CXF) specification.
+
+## Topics
+
+### Creating a basic authentication instance
+- [init(urls: [String], username: ASImportableEditableField?, password: ASImportableEditableField?)](asimportablecredential/basicauthentication/init(urls:username:password:).md)
+  Creates a basic authentication password instance.
+### Accessing authentication properties
+- [var urls: [String]](asimportablecredential/basicauthentication/urls.md)
+  The list of URLs for which to fill the password.
+- [var username: ASImportableEditableField?](asimportablecredential/basicauthentication/username.md)
+  The username associated with the credential.
+- [var password: ASImportableEditableField?](asimportablecredential/basicauthentication/password.md)
+  The password associated with the credential.
+- [struct ASImportableEditableField](asimportableeditablefield.md)
+  A field that someone can edit within a credential.
+
+## Relationships
+
+### Conforms To
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+
+## See Also
+
+- [case basicAuthentication(ASImportableCredential.BasicAuthentication)](asimportablecredential/basicauthentication(_:).md)
+  A password credential.
+- [case passkey(ASImportableCredential.Passkey)](asimportablecredential/passkey(_:).md)
+  A passkey credential.
+- [ASImportableCredential.Passkey](asimportablecredential/passkey.md)
+  A type to represent a passkey credential.
+- [case totp(ASImportableCredential.TOTP)](asimportablecredential/totp(_:).md)
+  A time-based one-time password (TOTP) credential.
+- [ASImportableCredential.TOTP](asimportablecredential/totp.md)
+  A type to represent a time-based one-time password generator (TOTP).
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/asimportablecredential/basicauthentication)*

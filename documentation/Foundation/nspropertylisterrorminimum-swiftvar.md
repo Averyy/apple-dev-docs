@@ -1,0 +1,41 @@
+# NSPropertyListErrorMinimum
+
+**Framework**: Foundation  
+**Kind**: var
+
+The start of the range of error codes reserved for property list errors.
+
+**Availability**:
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 13.1+
+- macOS 10.6+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+var NSPropertyListErrorMinimum: Int { get }
+```
+
+## See Also
+
+- [var NSPropertyListReadCorruptError: Int](nspropertylistreadcorrupterror-swift.var.md)
+  Parsing of the property list failed.
+- [var NSPropertyListReadUnknownVersionError: Int](nspropertylistreadunknownversionerror-swift.var.md)
+  The version number of the property list cannot be determined.
+- [var NSPropertyListReadStreamError: Int](nspropertylistreadstreamerror-swift.var.md)
+  Reading of the property list failed.
+- [var NSPropertyListWriteStreamError: Int](nspropertylistwritestreamerror-swift.var.md)
+  Writing to the property list failed.
+- [var NSPropertyListWriteInvalidError: Int](nspropertylistwriteinvaliderror-swift.var.md)
+  Writing failed because of an invalid property list object, or an invalid property list type was specified.
+- [var NSPropertyListErrorMaximum: Int](nspropertylisterrormaximum-swift.var.md)
+  The end of the range of error codes reserved for property list errors.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nspropertylisterrorminimum-swift.var)*

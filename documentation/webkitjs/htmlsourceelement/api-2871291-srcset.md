@@ -1,0 +1,19 @@
+# srcset
+
+**Framework**: Webkitjs  
+**Kind**: instp
+
+**Availability**:
+- Safari Desktop 10.1+
+- Safari Mobile 10.1+
+
+## Declaration
+
+```swift
+attribute USVString srcset;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkitjs/htmlsourceelement/2871291-srcset)*

@@ -1,6 +1,6 @@
 # setVisibleMapRect(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Changes the map’s visible region to the specified map rectangle.

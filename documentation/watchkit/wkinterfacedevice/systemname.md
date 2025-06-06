@@ -1,6 +1,6 @@
 # systemName
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The name of the operating system.

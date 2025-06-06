@@ -1,0 +1,111 @@
+# MTLRenderPipelineState
+
+**Framework**: Metal  
+**Kind**: protocol
+
+An interface that represents a graphics pipeline configuration for a render pass, which the pass applies to the draw commands you encode.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.11+
+- tvOS ?+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+protocol MTLRenderPipelineState : NSObjectProtocol
+```
+
+## Mentions
+
+- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+
+#### Overview
+
+The [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) protocol is an interface that represents a specific configuration for the graphics-rendering pipeline, including which shaders it uses. Use a pipeline state instance to configure a render pass by calling the [`setRenderPipelineState(_:)`](mtlrendercommandencoder/setrenderpipelinestate(_:).md) method of an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance.
+
+To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) method (see [`Pipeline State Creation`](pipeline-state-creation.md)). You typically make pipeline state instances at a noncritical time, like when the app first launches. This is because graphics drivers may need time to evaluate and build each pipeline state. However, you can quickly use and reuse each pipeline state throughout your app’s lifetime.
+
+## Topics
+
+### Identifying a Pipeline State
+- [var device: any MTLDevice](mtlrenderpipelinestate/device.md)
+  The device instance that creates the pipeline state.
+- [var label: String?](mtlrenderpipelinestate/label.md)
+  A string that helps you identify the render pipeline state during debugging.
+- [var gpuResourceID: MTLResourceID](mtlrenderpipelinestate/gpuresourceid.md)
+  An unique identifier that represents the pipeline state, which you can add to an argument buffer.
+### Checking Object Shader Memory Requirements
+- [var maxTotalThreadsPerObjectThreadgroup: Int](mtlrenderpipelinestate/maxtotalthreadsperobjectthreadgroup.md)
+  The largest number of threads the pipeline state can have in a single object shader threadgroup.
+- [var objectThreadExecutionWidth: Int](mtlrenderpipelinestate/objectthreadexecutionwidth.md)
+  The number of threads the render pass applies to a SIMD group for an object shader.
+### Checking Mesh Shader Memory Requirements
+- [var maxTotalThreadsPerMeshThreadgroup: Int](mtlrenderpipelinestate/maxtotalthreadspermeshthreadgroup.md)
+  The largest number of threads the pipeline state can have in a single mesh shader threadgroup.
+- [var maxTotalThreadgroupsPerMeshGrid: Int](mtlrenderpipelinestate/maxtotalthreadgroupspermeshgrid.md)
+  The largest number of threadgroups the pipeline state can have in a single mesh shader grid.
+- [var meshThreadExecutionWidth: Int](mtlrenderpipelinestate/meshthreadexecutionwidth.md)
+  The number of threads the render pass applies to a SIMD group for a mesh shader.
+### Checking Tile Shader Memory Requirements
+- [var maxTotalThreadsPerThreadgroup: Int](mtlrenderpipelinestate/maxtotalthreadsperthreadgroup.md)
+  The largest number of threads the pipeline state can have in a single tile shader threadgroup.
+- [var threadgroupSizeMatchesTileSize: Bool](mtlrenderpipelinestate/threadgroupsizematchestilesize.md)
+  A Boolean value that indicates whether the pipeline state needs a threadgroup’s size to equal a tile’s size.
+- [var imageblockSampleLength: Int](mtlrenderpipelinestate/imageblocksamplelength.md)
+  The memory size, in byes, of the render pipeline’s imageblock for a single sample.
+- [func imageblockMemoryLength(forDimensions: MTLSize) -> Int](mtlrenderpipelinestate/imageblockmemorylength(fordimensions:).md)
+  Returns the length of an imageblock’s memory for the specified imageblock dimensions.
+### Checking Feature Support
+- [var supportIndirectCommandBuffers: Bool](mtlrenderpipelinestate/supportindirectcommandbuffers.md)
+  A Boolean value that indicates whether the render pipeline supports encoding commands into an indirect command buffer.
+### Checking Shader Validation
+- [var shaderValidation: MTLShaderValidation](mtlrenderpipelinestate/shadervalidation.md)
+  The current state of shader validation for the pipeline.
+### Creating Function Handles and Tables
+- [func functionHandle(function: any MTLFunction, stage: MTLRenderStages) -> (any MTLFunctionHandle)?](mtlrenderpipelinestate/functionhandle(function:stage:).md)
+  Creates a function handle for a shader.
+- [func makeVisibleFunctionTable(descriptor: MTLVisibleFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLVisibleFunctionTable)?](mtlrenderpipelinestate/makevisiblefunctiontable(descriptor:stage:).md)
+  Creates a new visible function table.
+- [func makeIntersectionFunctionTable(descriptor: MTLIntersectionFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLIntersectionFunctionTable)?](mtlrenderpipelinestate/makeintersectionfunctiontable(descriptor:stage:).md)
+  Creates a new intersection function table.
+### Creating Modified Clones of the Render Pipeline
+- [func makeRenderPipelineState(additionalBinaryFunctions: MTLRenderPipelineFunctionsDescriptor) throws -> any MTLRenderPipelineState](mtlrenderpipelinestate/makerenderpipelinestate(additionalbinaryfunctions:).md)
+  Creates a new pipeline state that’s a copy of the current pipeline state with additional shaders.
+
+## Relationships
+
+### Inherits From
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [class MTLRenderPipelineDescriptor](mtlrenderpipelinedescriptor.md)
+  An argument of options you pass to a GPU device to get a render pipeline state.
+- [class MTLRenderPipelineFunctionsDescriptor](mtlrenderpipelinefunctionsdescriptor.md)
+  A collection of functions for updating a render pipeline.
+- [class MTLMeshRenderPipelineDescriptor](mtlmeshrenderpipelinedescriptor.md)
+  An object that configures new render pipeline state objects for mesh shading.
+- [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
+  The mutability options for a buffer that a render or compute pipeline uses.
+- [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
+  An array of pipeline buffer descriptors.
+- [class MTLRenderPipelineColorAttachmentDescriptor](mtlrenderpipelinecolorattachmentdescriptor.md)
+  A color render target that specifies the color configuration and color operations for a render pipeline.
+- [class MTLRenderPipelineColorAttachmentDescriptorArray](mtlrenderpipelinecolorattachmentdescriptorarray.md)
+  An array of render pipeline color attachment descriptor objects.
+- [class MTLTileRenderPipelineDescriptor](mtltilerenderpipelinedescriptor.md)
+  An object that configures new render pipeline state objects for tile shading.
+- [class MTLTileRenderPipelineColorAttachmentDescriptor](mtltilerenderpipelinecolorattachmentdescriptor.md)
+  A description of a tile-shading render pipeline’s color render target.
+- [struct MTLPipelineOption](mtlpipelineoption.md)
+  Options that determine how Metal prepares the pipeline.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlrenderpipelinestate)*

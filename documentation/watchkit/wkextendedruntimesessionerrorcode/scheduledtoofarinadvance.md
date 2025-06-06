@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionErrorCode.scheduledTooFarInAdvance
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The app attempted to schedule a session too far in the future.

@@ -1,0 +1,4 @@
+Completed scraping Core WLAN!
+Total pages scraped: 235
+Pages skipped (unchanged): 1
+Pages failed: 0

@@ -1,0 +1,46 @@
+# -(_:_:)
+
+**Framework**: TabularData  
+**Kind**: op
+
+Generates a column by subtracting each element in an optional column type from the corresponding elements of another.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+static func - (lhs: Self, rhs: Self) -> Column<Self.WrappedElement>
+```
+
+#### Return Value
+
+A new column.
+
+## Parameters
+
+- `lhs`: An optional column type.
+- `rhs`: Another optional column type.
+
+## See Also
+
+- [static func + (Self, Self) -> Column<Self.WrappedElement>](columnslice/+(_:_:)-3mep5.md)
+  Generates a column by adding each element in an optional column type to the corresponding elements of another.
+- [static func * (Self, Self) -> Column<Self.WrappedElement>](columnslice/*(_:_:)-hl25.md)
+  Generates a column by multiplying each element in an optional column type by the corresponding elements of another.
+- [static func / (Self, Self) -> Column<Self.WrappedElement>](columnslice/_(_:_:)-3so2z.md)
+  Generates an integer column by dividing each element in an optional column type by the corresponding elements of another.
+- [static func / (Self, Self) -> Column<Self.WrappedElement>](columnslice/_(_:_:)-4125n.md)
+  Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of another.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabulardata/columnslice/-(_:_:)-6dkqb)*

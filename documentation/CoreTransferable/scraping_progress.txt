@@ -1,0 +1,4 @@
+Completed scraping Core Transferable!
+Total pages scraped: 102
+Pages skipped (unchanged): 1
+Pages failed: 0

@@ -1,0 +1,33 @@
+# kIOUSBHostPortTypeExpressCard
+
+**Framework**: USBDriverKit  
+**Kind**: case
+
+A port containing an expansion card.
+
+**Availability**:
+- DriverKit 19.0+
+
+## Declaration
+
+```swift
+kIOUSBHostPortTypeExpressCard
+```
+
+## See Also
+
+- [kIOUSBHostPortTypeStandard](tiousbhostporttype/kiousbhostporttypestandard.md)
+  A general-purpose USB port.
+- [kIOUSBHostPortTypeCaptive](tiousbhostporttype/kiousbhostporttypecaptive.md)
+  A port for which the device cannot be physically disconnected.
+- [kIOUSBHostPortTypeInternal](tiousbhostporttype/kiousbhostporttypeinternal.md)
+  A port that cannot be physically disconnected from the host machine.
+- [kIOUSBHostPortTypeAccessory](tiousbhostporttype/kiousbhostporttypeaccessory.md)
+  A port for which the device might require additional authentication before a driver can access it.
+- [kIOUSBHostPortTypeCount](tiousbhostporttype/kiousbhostporttypecount.md)
+  The number of port types.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/usbdriverkit/tiousbhostporttype/kiousbhostporttypeexpresscard)*

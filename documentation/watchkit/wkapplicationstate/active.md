@@ -1,6 +1,6 @@
 # WKApplicationState.active
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The Watch app is running in the foreground and currently receiving events.

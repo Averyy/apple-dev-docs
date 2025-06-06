@@ -1,0 +1,203 @@
+# BarMark
+
+**Framework**: Swift Charts  
+**Kind**: struct
+
+Chart content that represents data using bars.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS 1.0+
+- watchOS 9.0+
+
+## Declaration
+
+```swift
+@MainActor
+@preconcurrency struct BarMark
+```
+
+## Mentions
+
+- [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)
+
+#### Overview
+
+You can create different kinds of bar charts using the `BarMark` chart content. To create a simple vertical bar chart that plots categories with x positions and numbers with y positions, use [`init(x:y:width:height:stacking:)`](barmark/init(x:y:width:height:stacking:).md). For example, you can display profit by department:
+
+```swift
+struct Profit {
+    let department: String
+    let profit: Double
+}
+
+let data: [Profit] = [
+    Profit(department: "Production", profit: 15000),
+    Profit(department: "Marketing", profit: 8000),
+    Profit(department: "Finance", profit: 10000)
+]
+
+var body: some View {
+    Chart(data) {
+        BarMark(
+            x: .value("Department", $0.department),
+            y: .value("Profit", $0.profit)
+        )
+    }
+}
+```
+
+![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000.](https://docs-assets.developer.apple.com/published/a69f46e0c2563656f66919f67861d18e/BarMarkSwift.BarMarkBarChart%402x.png)
+
+Swift Charts provides several other initializers for `BarMark`. Below are a few more examples using them. For a full list of initializers see the topic section.
+
+##### Stacked Bar Chart
+
+`BarkMark` automatically stacks content when more than one bar maps to the same location. You can see this if you split the profit data up by category:
+
+```swift
+struct ProfitByCategory {
+    let department: String
+    let profit: Double
+    let productCategory: String
+}
+
+let data: [ProfitByCategory] = [
+    ProfitByCategory(department: "Production", profit: 4000, productCategory: "Gizmos"),
+    ProfitByCategory(department: "Production", profit: 5000, productCategory: "Gadgets"),
+    ProfitByCategory(department: "Production", profit: 6000, productCategory: "Widgets"),
+    ProfitByCategory(department: "Marketing", profit: 2000, productCategory: "Gizmos"),
+    ProfitByCategory(department: "Marketing", profit: 1000, productCategory: "Gadgets"),
+    ProfitByCategory(department: "Marketing", profit: 5000, productCategory: "Widgets"),
+    ProfitByCategory(department: "Finance", profit: 2000, productCategory: "Gizmos"),
+    ProfitByCategory(department: "Finance", profit: 3000, productCategory: "Gadgets"),
+    ProfitByCategory(department: "Finance", profit: 5000, productCategory: "Widgets")
+]
+
+var body: some View {
+    Chart(data) {
+        BarMark(
+            x: .value("Category", $0.department),
+            y: .value("Profit", $0.profit)
+        )
+    }
+}
+```
+
+![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance with stacked product categories Gizmos, Gadgets, Widgets, and with y-axis ranging from 0 to 20,000. There are 3 bars: Production 15000, Marketing 8000, and Finance 10000.](https://docs-assets.developer.apple.com/published/a69f46e0c2563656f66919f67861d18e/BarMarkSwift.BarMarkStackedBarChart%402x.png)
+
+This results in a chart that looks identical to the chart seen in the Overview section because the bars with the same department category are stacked on top of each other. To differentiate the product categories, add a [`foregroundStyle(by:)`](chartcontent/foregroundstyle(by:).md) modifer that specifies a visual encoding for the `productCategory`:
+
+```swift
+Chart(data) {
+    BarMark(
+        x: .value("Category", $0.department),
+        y: .value("Profit", $0.profit)
+    )
+    .foregroundStyle(by: .value("Product Category", $0.productCategory))
+}
+```
+
+![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance with stacked product categories Gizmos, Gadgets, Widgets, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15,000: Gizmos 4000, Gadgets 5000, and Widgets 6000, Marketing 8000: Gizmos 2000, Gadgets 1000, and Widgets 5000, Finance 10000: Gizmos 2000, Gadgets 3000, and Widgets 500. Legend showing the color mapped to a product category.](https://docs-assets.developer.apple.com/published/f9963976e24f81fcb62eb62501d49795/BarMarkSwift.BarMarkStackedBarChartWithForegroundColor%402x.png)
+
+You can use the optional `stacking:` parameter in the `BarMark` initializer to modify the stacking mechanism. See [`MarkStackingMethod`](markstackingmethod.md) for the stacking options.
+
+##### 1d Bar Chart
+
+To build a one dimensional chart, use one of the initializers that only requires a [`PlottableValue`](plottablevalue.md) for one dimension, like [`init(x:yStart:yEnd:width:stacking:)`](barmark/init(x:ystart:yend:width:stacking:).md) for plotting with x. The example below reuses the data from the previous example to get the production department values:
+
+```swift
+Chart(data) { // Get the Production values.
+    BarMark(
+        x: .value("Profit", $0.profit)
+    )
+    .foregroundStyle(by: .value("Product Category", $0.productCategory))
+}
+```
+
+![Horizontal bar chart with one bar on the x-axis showing profit ranging from 0 to 15000 with stacked categoreis Gizmos, Gadgets and Widgets. Legend showing the color mapped to a product category.](https://docs-assets.developer.apple.com/published/866989cb862990508465e796c804535b/BarMarkSwift.BarMarkHorizontalStacked1DBarChartWithForegroundColor%402x.png)
+
+##### Interval Bar Chart
+
+Use `BarMark` to represent intervals by using the [`init(xStart:xEnd:y:height:)`](barmark/init(xstart:xend:y:height:).md), [`init(xStart:xEnd:y:height:stacking:)`](barmark/init(xstart:xend:y:height:stacking:).md), [`init(x:yStart:yEnd:width:)`](barmark/init(x:ystart:yend:width:).md) or  [`init(x:yStart:yEnd:width:stacking:)`](barmark/init(x:ystart:yend:width:stacking:).md). The example below displays a Gantt chart by plotting the `start` and `end` properties to x positions and the `task` property to y positions:
+
+```swift
+struct Job {
+    let job: String
+    let start: Double
+    let end: Double
+}
+
+let data: [Job] = [
+    Job(job: "Job 1", start: 0, end: 15),
+    Job(job: "Job 2", start: 5, end: 25),
+    Job(job: "Job 1", start: 20, end: 35),
+    Job(job: "Job 1", start: 40, end: 55),
+    Job(job: "Job 2", start: 30, end: 60),
+    Job(job: "Job 2", start: 30, end: 60)
+]
+
+var body: some View {
+    Chart(data) {
+        BarMark(
+            xStart: .value("Start Time", $0.start),
+            xEnd: .value("End Time", $0.end),
+            y: .value("Job", $0.job)
+        )
+    }
+}
+```
+
+![Horizontal bar chart with x-axis showing start and end time and y-axis showing task name. It has 5 bars, Task 1 range 0 to 15, range 20 to 35, and range 40 to 55, and Task 2 range 5 to 25 and range 30 to 60 task.](https://docs-assets.developer.apple.com/published/fd3042845d4db04fed8b1cf4bff7e0c8/BarMarkSwift.BarMarkHorizontalIntervalBarChart%402x.png)
+
+## Topics
+
+### Creating a bar mark
+- [init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>, width: MarkDimension)](barmark/init(x:ystart:yend:width:).md)
+  Creates a bar mark that plots values with x and its y interval.
+- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>, height: MarkDimension)](barmark/init(xstart:xend:y:height:).md)
+  Creates a bar mark that plots values with its x interval and y.
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension, height: MarkDimension, stacking: MarkStackingMethod)](barmark/init(x:y:width:height:stacking:).md)
+  Creates a bar mark that plots values with x and y.
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension, height: MarkDimension, stacking: MarkStackingMethod)](barmark/init(x:y:width:height:stacking:).md)
+  Creates a bar mark that plots values with x and y.
+- [init<X>(x: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?, width: MarkDimension, stacking: MarkStackingMethod)](barmark/init(x:ystart:yend:width:stacking:).md)
+  Creates a bar mark that plots a value on x with fixed y interval.
+- [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, y: PlottableValue<Y>, height: MarkDimension, stacking: MarkStackingMethod)](barmark/init(xstart:xend:y:height:stacking:).md)
+  Creates a bar mark that plots values on y with fixed x interval.
+### Initializers
+- [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](barmark/init(xstart:xend:ystart:yend:)-7541n.md)
+  Creates a bar mark with fixed x interval that plots values with its y interval.
+- [init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?)](barmark/init(xstart:xend:ystart:yend:)-98wo9.md)
+  Creates a bar mark that plots values with its x interval and fixed y position.
+
+## Relationships
+
+### Conforms To
+- [ChartContent](chartcontent.md)
+- [Copyable](../Swift/Copyable.md)
+- [Sendable](../Swift/Sendable.md)
+
+## See Also
+
+- [struct AreaMark](areamark.md)
+  Chart content that represents data using the area of one or more regions.
+- [struct LineMark](linemark.md)
+  Chart content that represents data using a sequence of connected line segments.
+- [struct PointMark](pointmark.md)
+  Chart content that represents data using points.
+- [struct RectangleMark](rectanglemark.md)
+  Chart content that represents data using rectangles.
+- [struct RuleMark](rulemark.md)
+  Chart content that represents data using a single horizontal or vertical rule.
+- [struct SectorMark](sectormark.md)
+  A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/charts/barmark)*

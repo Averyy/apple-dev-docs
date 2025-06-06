@@ -1,0 +1,51 @@
+# autocapitalization(_:)
+
+**Framework**: FamilyControls  
+**Kind**: method
+
+Sets whether to apply auto-capitalization to this view.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- tvOS 13.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+nonisolated
+func autocapitalization(_ style: UITextAutocapitalizationType) -> some View
+```
+
+#### Discussion
+
+Use `autocapitalization(_:)` when you need to automatically capitalize words, sentences, or other text like proper nouns.
+
+In example below, as the user enters text each word is automatically capitalized:
+
+```swift
+TextField("Last, First", text: $fullName)
+    .autocapitalization(UITextAutocapitalizationType.words)
+```
+
+The [`UITextAutocapitalizationType`](https://developer.apple.com/documentation/UIKit/UITextAutocapitalizationType) enumeration defines the available capitalization modes. The default is [`UITextAutocapitalizationType.sentences`](https://developer.apple.com/documentation/UIKit/UITextAutocapitalizationType/sentences).
+
+## Parameters
+
+- `style`: One of the autocapitalization modes defined in the     enumeration.
+
+## See Also
+
+- [func keyboardType(UIKeyboardType) -> some View](familyactivitypicker/keyboardtype(_:).md)
+  Sets the keyboard type for this view.
+- [func disableAutocorrection(Bool?) -> some View](familyactivitypicker/disableautocorrection(_:).md)
+  Sets whether to disable autocorrection for this view.
+- [func textContentType(UITextContentType?) -> some View](familyactivitypicker/textcontenttype(_:).md)
+  Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on an iOS or tvOS device.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/familycontrols/familyactivitypicker/autocapitalization(_:))*

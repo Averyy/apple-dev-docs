@@ -1,6 +1,6 @@
 # isEnabled
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A Boolean value indicating whether the gesture recognizer is enabled.

@@ -1,0 +1,29 @@
+# zero
+
+**Framework**: SwiftUI  
+**Kind**: property
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
+- watchOS 6.0+
+
+## Declaration
+
+```swift
+static var zero: Angle { get }
+```
+
+## See Also
+
+- [static func degrees(Double) -> Angle](angle/degrees(_:).md)
+- [static func radians(Double) -> Angle](angle/radians(_:).md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/angle/zero)*

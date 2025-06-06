@@ -1,0 +1,19 @@
+# kBusyErr
+
+**Framework**: Core Services  
+**Kind**: data
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.0+
+
+## Declaration
+
+```swift
+var kBusyErr: Int { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreservices/kbusyerr)*

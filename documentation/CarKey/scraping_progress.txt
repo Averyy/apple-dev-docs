@@ -1,0 +1,4 @@
+Completed scraping CarKey!
+Total pages scraped: 121
+Pages skipped (unchanged): 1
+Pages failed: 0

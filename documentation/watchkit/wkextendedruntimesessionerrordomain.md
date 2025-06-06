@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionErrorDomain
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: var
 
 The domain for errors reported by extended runtime sessions.

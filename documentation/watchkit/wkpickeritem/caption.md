@@ -1,6 +1,6 @@
 # caption
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A caption for the item’s content.

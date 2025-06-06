@@ -1,6 +1,6 @@
 # WKAlertActionStyle.default
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The default style. Use this for most of your buttons.

@@ -1,0 +1,29 @@
+# init(name:object:)
+
+**Framework**: Xctest  
+**Kind**: init
+
+Creates an expectation that is fulfilled when an `NSNotification` is posted from the default notification center by a specific object.
+
+## Declaration
+
+```swift
+convenience init(name notificationName: NSNotification.Name, object: Any?)
+```
+
+## Parameters
+
+- `notificationName`: The notification name to watch for.
+- `object`: The object by which the notification must be posted.
+
+## See Also
+
+- [convenience init(name: NSNotification.Name)](xctnsnotificationexpectation/init(name:).md)
+  Creates an expectation that is fulfilled when an `NSNotification` is posted from the default notification center by any object.
+- [init(name: NSNotification.Name, object: Any?, notificationCenter: NotificationCenter)](xctnsnotificationexpectation/init(name:object:notificationcenter:).md)
+  Creates an expectation that is fulfilled when an `NSNotification` is posted from a specific notification center, optionally by a specific object.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/xctest/xctnsnotificationexpectation/init(name:object:))*

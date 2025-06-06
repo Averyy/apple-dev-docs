@@ -1,0 +1,4 @@
+Completed scraping CKTool JS!
+Total pages scraped: 534
+Pages skipped (unchanged): 1
+Pages failed: 0

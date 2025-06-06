@@ -1,6 +1,6 @@
 # numberOfRows
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The number of row controllers available for you to retrieve.

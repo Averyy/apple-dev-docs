@@ -1,6 +1,6 @@
 # Media Player Options
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Keys indicating media playback options.
 

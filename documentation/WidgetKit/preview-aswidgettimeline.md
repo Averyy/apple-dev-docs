@@ -1,0 +1,53 @@
+# Preview(_:as:widget:timeline:)
+
+**Framework**: Widgetkit  
+**Kind**: macro
+
+Preview a timeline-style widget.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+@freestanding
+(declaration) macro Preview<Widget>(_ name: String? = nil, as family: WidgetFamily, widget: @escaping () -> Widget, @PreviewTimelineBuilder timeline: @escaping @MainActor () async -> [any TimelineEntry]) where Widget : Widget
+```
+
+## Mentions
+
+- [Previewing widgets and Live Activities in Xcode](previewing-widgets-and-live-activities-in-xcode.md)
+
+#### Overview
+
+The preview will allow you to step through your timeline and test out the transitions between entries. (The dates of the entries will be ignored.)
+
+> **Note**: The timeline entries must be of the type expected by the widget. (This will be enforced at run-time.)
+
+The timeline entries must be of the type expected by the widget. (This will be enforced at run-time.)
+
+## Parameters
+
+- `name`: An optional display name for the preview, which will appear in the canvas.
+- `family`: The widget family to display.
+- `widget`: A closure producing the widget to be previewed.
+- `timeline`: A closure building the timeline of entries to be previewed.
+
+## See Also
+
+- [macro Preview<Widget, Provider>(String?, as: WidgetFamily, widget: () -> Widget, timelineProvider: () -> Provider)](preview(_:as:widget:timelineprovider:).md)
+  Preview a widget with a static configuration, using the specified timeline provider.
+- [macro Preview<Widget, Provider>(String?, as: WidgetFamily, using: Provider.Intent, widget: () -> Widget, timelineProvider: () -> Provider)](preview(_:as:using:widget:timelineprovider:)-4ljg1.md)
+  Preview a widget with an app intent configuration, using the specified timeline provider.
+- [macro Preview<Widget, Provider>(String?, as: WidgetFamily, using: Provider.Intent, widget: () -> Widget, timelineProvider: () -> Provider)](preview(_:as:using:widget:timelineprovider:)-3df1l.md)
+  Preview a widget with an intent configuration, using the specified timeline provider.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/preview(_:as:widget:timeline:))*

@@ -1,6 +1,6 @@
 # currentTime
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The current playback point, measured in seconds, from the beginning of the audio file.

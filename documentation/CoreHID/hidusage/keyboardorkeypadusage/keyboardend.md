@@ -1,0 +1,18 @@
+# HIDUsage.KeyboardOrKeypadUsage.keyboardEnd
+
+**Framework**: Core HID  
+**Kind**: case
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+case keyboardEnd
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corehid/hidusage/keyboardorkeypadusage/keyboardend)*

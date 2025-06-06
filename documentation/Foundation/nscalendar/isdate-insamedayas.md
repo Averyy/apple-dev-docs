@@ -1,0 +1,50 @@
+# isDate(_:inSameDayAs:)
+
+**Framework**: Foundation  
+**Kind**: method
+
+Indicates whether two dates are in the same day.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.9+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+func isDate(_ date1: Date, inSameDayAs date2: Date) -> Bool
+```
+
+#### Return Value
+
+[`true`](https://developer.apple.com/documentation/swift/true) if both dates are within the same day, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+
+## Parameters
+
+- `date1`: The first date to compare.
+- `date2`: The second date to compare.
+
+## See Also
+
+- [func compare(Date, to: Date, toUnitGranularity: NSCalendar.Unit) -> ComparisonResult](nscalendar/compare(_:to:tounitgranularity:).md)
+  Indicates the ordering of two given dates based on their components down to a given unit granularity.
+- [func isDate(Date, equalTo: Date, toUnitGranularity: NSCalendar.Unit) -> Bool](nscalendar/isdate(_:equalto:tounitgranularity:).md)
+  Indicates whether two dates are equal to a given unit of granularity.
+- [func isDateInToday(Date) -> Bool](nscalendar/isdateintoday(_:).md)
+  Indicates whether the given date is in “today.”
+- [func isDateInTomorrow(Date) -> Bool](nscalendar/isdateintomorrow(_:).md)
+  Indicates whether the given date is in “tomorrow.”
+- [func isDateInWeekend(Date) -> Bool](nscalendar/isdateinweekend(_:).md)
+  Indicates whether a given date falls within a weekend period, as defined by the calendar and the calendar’s locale.
+- [func isDateInYesterday(Date) -> Bool](nscalendar/isdateinyesterday(_:).md)
+  Indicates whether the given date is in “yesterday.”
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nscalendar/isdate(_:insamedayas:))*

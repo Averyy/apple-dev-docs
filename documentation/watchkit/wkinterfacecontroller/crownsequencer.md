@@ -1,6 +1,6 @@
 # crownSequencer
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The object to use when directly tracking crown events.

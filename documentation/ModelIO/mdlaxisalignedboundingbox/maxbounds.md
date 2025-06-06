@@ -1,0 +1,25 @@
+# maxBounds
+
+**Framework**: Model I/O  
+**Kind**: property
+
+The corner of the bounding box with the highest x-, y-, and z-coordinate values.
+
+**Availability**:
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 13.0+
+- macOS 10.11+
+- tvOS 9.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+var maxBounds: vector_float3
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/modelio/mdlaxisalignedboundingbox/maxbounds)*

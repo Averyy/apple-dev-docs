@@ -1,0 +1,55 @@
+# String Attribute Name Constants
+
+**Framework**: Core Text
+
+These constants represent string attribute names.
+
+## Topics
+
+### Constants
+- [let kCTCharacterShapeAttributeName: CFString](kctcharactershapeattributename.md)
+  Controls glyph selection.
+- [let kCTFontAttributeName: CFString](kctfontattributename.md)
+  The font of the text to which this attribute applies.
+- [let kCTKernAttributeName: CFString](kctkernattributename.md)
+  The amount to kern the next character.
+- [let kCTLigatureAttributeName: CFString](kctligatureattributename.md)
+  The type of ligatures to use.
+- [let kCTForegroundColorAttributeName: CFString](kctforegroundcolorattributename.md)
+  The foreground color of the text to which this attribute applies.
+- [let kCTForegroundColorFromContextAttributeName: CFString](kctforegroundcolorfromcontextattributename.md)
+  Sets a foreground color using the context’s fill color.
+- [let kCTParagraphStyleAttributeName: CFString](kctparagraphstyleattributename.md)
+  The paragraph style of the text to which this attribute applies.
+- [let kCTStrokeWidthAttributeName: CFString](kctstrokewidthattributename.md)
+  The stroke width.
+- [let kCTStrokeColorAttributeName: CFString](kctstrokecolorattributename.md)
+  The stroke color.
+- [let kCTSuperscriptAttributeName: CFString](kctsuperscriptattributename.md)
+  Controls vertical text positioning.
+- [let kCTUnderlineColorAttributeName: CFString](kctunderlinecolorattributename.md)
+  The underline color.
+- [let kCTUnderlineStyleAttributeName: CFString](kctunderlinestyleattributename.md)
+  The style of underlining, to be applied at render time, for the text to which this attribute applies.
+- [let kCTVerticalFormsAttributeName: CFString](kctverticalformsattributename.md)
+  The orientation of the glyphs in the text to which this attribute applies.
+- [let kCTGlyphInfoAttributeName: CFString](kctglyphinfoattributename.md)
+  The glyph info object to apply to the text associated with this attribute.
+- [let kCTRunDelegateAttributeName: CFString](kctrundelegateattributename.md)
+  The run-delegate object to apply to an attribute range of the string.
+- [let kCTBaselineOffsetAttributeName: CFString](kctbaselineoffsetattributename.md)
+  Vertical offset for text position.
+- [let kCTTrackingAttributeName: CFString](kcttrackingattributename.md)
+  The tracking for the text.
+
+## See Also
+
+- [struct CTUnderlineStyle](ctunderlinestyle.md)
+  Underline style specifiers.
+- [struct CTUnderlineStyleModifiers](ctunderlinestylemodifiers.md)
+  Underline style modifiers.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coretext/string-attribute-name-constants)*

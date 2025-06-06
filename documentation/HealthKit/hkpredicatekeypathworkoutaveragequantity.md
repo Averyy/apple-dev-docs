@@ -1,0 +1,42 @@
+# HKPredicateKeyPathWorkoutAverageQuantity
+
+**Framework**: HealthKit  
+**Kind**: var
+
+The key path for accessing workouts with a matching average quantity.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- visionOS 1.0+
+- watchOS 9.0+
+
+## Declaration
+
+```swift
+let HKPredicateKeyPathWorkoutAverageQuantity: String
+```
+
+## See Also
+
+- [let HKPredicateKeyPathWorkoutType: String](hkpredicatekeypathworkouttype.md)
+  The key path for accessing the workout’s type.
+- [let HKPredicateKeyPathWorkoutDuration: String](hkpredicatekeypathworkoutduration.md)
+  The key path for accessing the workout’s duration.
+- [let HKPredicateKeyPathWorkoutTotalDistance: String](hkpredicatekeypathworkouttotaldistance.md)
+  The key path for accessing the workout’s total distance.
+- [let HKPredicateKeyPathWorkoutTotalEnergyBurned: String](hkpredicatekeypathworkouttotalenergyburned.md)
+  The key path for accessing the workout’s total energy burned.
+- [let HKPredicateKeyPathWorkoutMaximumQuantity: String](hkpredicatekeypathworkoutmaximumquantity.md)
+  The key path for accessing workouts with a matching maximum quantity.
+- [let HKPredicateKeyPathWorkoutMinimumQuantity: String](hkpredicatekeypathworkoutminimumquantity.md)
+  The key path for accessing workouts with a matching minimum quantity.
+- [let HKPredicateKeyPathWorkoutSumQuantity: String](hkpredicatekeypathworkoutsumquantity.md)
+  The key path for accessing workouts with a matching sum.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkpredicatekeypathworkoutaveragequantity)*

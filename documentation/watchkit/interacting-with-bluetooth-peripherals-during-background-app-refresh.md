@@ -1,6 +1,6 @@
 # Interacting with Bluetooth peripherals during background app refresh
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 

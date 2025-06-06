@@ -1,0 +1,42 @@
+# SubscriptionPrice
+
+**Framework**: App Store Connect API  
+**Kind**: dictionary
+
+**Availability**:
+- App Store Connect API 2.0+
+
+## Declaration
+
+```swift
+object SubscriptionPrice
+```
+
+## Topics
+
+### Objects
+- [object SubscriptionPrice.Attributes](subscriptionprice/attributes-data.dictionary.md)
+- [object SubscriptionPrice.Relationships](subscriptionprice/relationships-data.dictionary.md)
+
+## See Also
+
+- [object SubscriptionCreateRequest](subscriptioncreaterequest.md)
+- [object SubscriptionUpdateRequest](subscriptionupdaterequest.md)
+- [object SubscriptionResponse](subscriptionresponse.md)
+- [object SubscriptionsResponse](subscriptionsresponse.md)
+- [object Subscription](subscription.md)
+- [object SubscriptionIntroductoryOffersResponse](subscriptionintroductoryoffersresponse.md)
+- [object SubscriptionIntroductoryOffer](subscriptionintroductoryoffer.md)
+- [object SubscriptionIntroductoryOffersLinkagesRequest](subscriptionintroductoryofferslinkagesrequest.md)
+- [object SubscriptionIntroductoryOffersLinkagesResponse](subscriptionintroductoryofferslinkagesresponse.md)
+- [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)
+- [object SubscriptionOfferCodesResponse](subscriptionoffercodesresponse.md)
+- [object SubscriptionOfferCode](subscriptionoffercode.md)
+- [object PromotedPurchaseResponse](promotedpurchaseresponse.md)
+- [object PromotedPurchase](promotedpurchase.md)
+- [object SubscriptionPricePointsResponse](subscriptionpricepointsresponse.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/subscriptionprice)*

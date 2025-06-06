@@ -1,6 +1,6 @@
 # setIsAccessibilityElement(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets whether the object is an accessibility element that an assistive app can access.

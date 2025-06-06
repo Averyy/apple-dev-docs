@@ -1,0 +1,43 @@
+# padding_idx
+
+**Framework**: Accelerate  
+**Kind**: property
+
+The padding index.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+var padding_idx: Int
+```
+
+## See Also
+
+- [var flags: BNNSEmbeddingFlags](bnnslayerparametersembedding/flags.md)
+  A bit field for flags that specify additional behavior, such as scaling gradient by frequency.
+- [struct BNNSEmbeddingFlags](bnnsembeddingflags.md)
+  Flags that control behavior of embedding layers.
+- [var i_desc: BNNSNDArrayDescriptor](bnnslayerparametersembedding/i_desc.md)
+  The signed or unsigned integer descriptor of the input.
+- [var o_desc: BNNSNDArrayDescriptor](bnnslayerparametersembedding/o_desc.md)
+  The descriptor of the output.
+- [var dictionary: BNNSNDArrayDescriptor](bnnslayerparametersembedding/dictionary.md)
+  The descriptor of the dictionary.
+- [var max_norm: Float](bnnslayerparametersembedding/max_norm.md)
+  The maximum norm.
+- [var norm_type: Float](bnnslayerparametersembedding/norm_type.md)
+  The norm type.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/bnnslayerparametersembedding/padding_idx)*

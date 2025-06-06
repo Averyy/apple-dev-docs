@@ -1,6 +1,6 @@
 # contentFrame
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The frame rectangle used to display your app’s content.

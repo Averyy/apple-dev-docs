@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionInvalidationReason.none
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The session ended normally.

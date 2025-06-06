@@ -1,0 +1,40 @@
+# HMError.Code.actionSetExecutionInProgress
+
+**Framework**: HomeKit  
+**Kind**: case
+
+An error indicating the execution of the action set is in progress.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 8.0+
+- tvOS 10.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+case actionSetExecutionInProgress
+```
+
+## See Also
+
+- [HMError.Code.actionInAnotherActionSet](hmerror/code/actioninanotheractionset.md)
+  An attempt to add an action that exists in one action set to another action set.
+- [HMError.Code.actionSetExecutionFailed](hmerror/code/actionsetexecutionfailed.md)
+  An attempt to execute the action set failed.
+- [HMError.Code.actionSetExecutionPartialSuccess](hmerror/code/actionsetexecutionpartialsuccess.md)
+  An attempt to execute the action set was only partially successful.
+- [HMError.Code.cannotRemoveBuiltinActionSet](hmerror/code/cannotremovebuiltinactionset.md)
+  An error indicating the built-in action set cannot be removed.
+- [HMError.Code.noActionsInActionSet](hmerror/code/noactionsinactionset.md)
+  An attempt to execute an action set with no actions.
+- [HMError.Code.noRegisteredActionSets](hmerror/code/noregisteredactionsets.md)
+  An attempt to activate a trigger with no action sets.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/homekit/hmerror/code/actionsetexecutioninprogress)*

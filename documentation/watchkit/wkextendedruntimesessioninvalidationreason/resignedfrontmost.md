@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionInvalidationReason.resignedFrontmost
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The app lost its frontmost status.

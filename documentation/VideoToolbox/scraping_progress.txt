@@ -1,0 +1,4 @@
+Completed scraping Videotoolbox!
+Total pages scraped: 624
+Pages skipped (unchanged): 1
+Pages failed: 0

@@ -1,0 +1,32 @@
+# HMServiceTypeWindow
+
+**Framework**: HomeKit  
+**Kind**: var
+
+A window service.
+
+**Availability**:
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 9.0+
+- tvOS 10.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+let HMServiceTypeWindow: String
+```
+
+## See Also
+
+- [let HMServiceTypeWindowCovering: String](hmservicetypewindowcovering.md)
+  A window covering service.
+- [let HMServiceTypeSlats: String](hmservicetypeslats.md)
+  A slats service.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/homekit/hmservicetypewindow)*

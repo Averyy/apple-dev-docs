@@ -1,6 +1,6 @@
 # WKInterfaceMapPinColor.purple
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 A purple pin.

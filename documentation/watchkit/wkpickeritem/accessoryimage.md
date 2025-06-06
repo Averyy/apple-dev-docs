@@ -1,6 +1,6 @@
 # accessoryImage
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A small image to display next to the title string.

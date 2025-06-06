@@ -1,6 +1,6 @@
 # state
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The session’s current state.

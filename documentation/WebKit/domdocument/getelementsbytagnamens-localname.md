@@ -1,0 +1,18 @@
+# getElementsByTagNameNS(_:localName:)
+
+**Framework**: Webkit  
+**Kind**: method
+
+**Availability**:
+- macOS 10.5+
+
+## Declaration
+
+```swift
+func getElementsByTagNameNS(_ namespaceURI: String!, localName: String!) -> DOMNodeList!
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/domdocument/getelementsbytagnamens(_:localname:))*

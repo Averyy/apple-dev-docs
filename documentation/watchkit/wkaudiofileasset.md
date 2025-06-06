@@ -1,6 +1,6 @@
 # WKAudioFileAsset
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: class
 
 An object that stores a reference to an audio file and provides metadata information about that file.
@@ -46,14 +46,14 @@ To play an audio file asset, wrap it in a [`WKAudioFilePlayerItem`](wkaudiofilep
 ## Relationships
 
 ### Inherits From
-- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
-- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
-- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
@@ -63,7 +63,7 @@ To play an audio file asset, wrap it in a [`WKAudioFilePlayerItem`](wkaudiofilep
   Provide a view that controls the currently playing audio from your app.
 - [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md)
   An interface element that provides control of the audio volume from the watch or a paired iPhone.
-- [PUICAutoLaunchAudioOptOut](https://developer.apple.com/documentation/BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut)
+- [PUICAutoLaunchAudioOptOut](../BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut.md)
   A Boolean value that indicates whether a watchOS app should opt out of automatically launching when its companion iOS app starts playing audio content.
 - [class WKAudioFilePlayer](wkaudiofileplayer.md)
   An object that controls playback of a single audio item.

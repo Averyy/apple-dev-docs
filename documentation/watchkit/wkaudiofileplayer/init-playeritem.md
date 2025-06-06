@@ -1,6 +1,6 @@
 # init(playerItem:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Creates and returns a player initialized with the specified player item.

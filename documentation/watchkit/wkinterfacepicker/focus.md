@@ -1,6 +1,6 @@
 # focus()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Configures the picker to receive input from the Digital Crown.

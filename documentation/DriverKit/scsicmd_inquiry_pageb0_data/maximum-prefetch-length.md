@@ -1,0 +1,21 @@
+# MAXIMUM_PREFETCH_LENGTH
+
+**Framework**: DriverKit  
+**Kind**: property
+
+**Availability**:
+- DriverKit ?+
+- iOS ?+
+- iPadOS ?+
+- macOS ?+
+
+## Declaration
+
+```swift
+UInt32 MAXIMUM_PREFETCH_LENGTH;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/driverkit/scsicmd_inquiry_pageb0_data/maximum_prefetch_length)*

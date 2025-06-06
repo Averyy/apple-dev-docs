@@ -1,6 +1,6 @@
 # setOn(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the state of the switch to the specified value.

@@ -1,0 +1,43 @@
+# eph_panic_flags_t
+
+**Framework**: Kernel  
+**Kind**: enum
+
+**Availability**:
+- macOS 13.0+
+
+## Declaration
+
+```swift
+typedef enum eph_panic_flags_t : uint64_t {
+    ...
+} eph_panic_flags_t;
+```
+
+## Topics
+
+### Constants
+- [EMBEDDED_PANIC_HEADER_FLAG_BUTTON_RESET_PANIC](eph_panic_flags_t/embedded_panic_header_flag_button_reset_panic.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_COMPANION_PROC_INITIATED_PANIC](eph_panic_flags_t/embedded_panic_header_flag_companion_proc_initiated_panic.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_COMPRESS_FAILED](eph_panic_flags_t/embedded_panic_header_flag_compress_failed.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_COREDUMP_COMPLETE](eph_panic_flags_t/embedded_panic_header_flag_coredump_complete.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_COREDUMP_FAILED](eph_panic_flags_t/embedded_panic_header_flag_coredump_failed.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_COREFILE_UNLINKED](eph_panic_flags_t/embedded_panic_header_flag_corefile_unlinked.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_ENCRYPTED_COREDUMP_SKIPPED](eph_panic_flags_t/embedded_panic_header_flag_encrypted_coredump_skipped.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_EXCLAVE_PANIC](eph_panic_flags_t/embedded_panic_header_flag_exclave_panic.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_INCOHERENT_PANICLOG](eph_panic_flags_t/embedded_panic_header_flag_incoherent_paniclog.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_INTEGRATED_COPROC_INITIATED_PANIC](eph_panic_flags_t/embedded_panic_header_flag_integrated_coproc_initiated_panic.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_KERNEL_COREDUMP_SKIPPED_EXCLUDE_REGIONS_UNAVAILABLE](eph_panic_flags_t/embedded_panic_header_flag_kernel_coredump_skipped_exclude_regions_unavailable.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_NESTED_PANIC](eph_panic_flags_t/embedded_panic_header_flag_nested_panic.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_STACKSHOT_DATA_COMPRESSED](eph_panic_flags_t/embedded_panic_header_flag_stackshot_data_compressed.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_STACKSHOT_FAILED_DEBUGGERSYNC](eph_panic_flags_t/embedded_panic_header_flag_stackshot_failed_debuggersync.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_STACKSHOT_FAILED_ERROR](eph_panic_flags_t/embedded_panic_header_flag_stackshot_failed_error.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_STACKSHOT_FAILED_INCOMPLETE](eph_panic_flags_t/embedded_panic_header_flag_stackshot_failed_incomplete.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_STACKSHOT_FAILED_NESTED](eph_panic_flags_t/embedded_panic_header_flag_stackshot_failed_nested.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_STACKSHOT_SUCCEEDED](eph_panic_flags_t/embedded_panic_header_flag_stackshot_succeeded.md)
+- [EMBEDDED_PANIC_HEADER_FLAG_USERSPACE_INITIATED_PANIC](eph_panic_flags_t/embedded_panic_header_flag_userspace_initiated_panic.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/eph_panic_flags_t)*

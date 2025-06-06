@@ -1,0 +1,36 @@
+# prefix(while:)
+
+**Framework**: MusicKit  
+**Kind**: method
+
+Returns a subsequence containing the initial elements until `predicate` returns `false` and skipping the remaining elements.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+func prefix(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence
+```
+
+#### Discussion
+
+> **Note**: O(), where  is the length of the collection.
+
+O(), where  is the length of the collection.
+
+## Parameters
+
+- `predicate`: A closure that takes an element of the   sequence as its argument and returns   if the element should   be included or   if it should be excluded. Once the predicate   returns   it will not be called again.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/musickit/musicitemcollection/prefix(while:))*

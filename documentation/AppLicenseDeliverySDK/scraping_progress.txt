@@ -1,0 +1,4 @@
+Completed scraping App License Delivery SDK!
+Total pages scraped: 51
+Pages skipped (unchanged): 1
+Pages failed: 0

@@ -1,0 +1,21 @@
+# delete
+
+**Framework**: Webkitjs  
+**Kind**: instm
+
+**Availability**:
+- Safari Desktop 10.1+
+- Safari Mobile 10.1+
+
+## Declaration
+
+```swift
+void delete(
+    DOMString name
+);
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkitjs/fetchheaders/2871319-delete)*

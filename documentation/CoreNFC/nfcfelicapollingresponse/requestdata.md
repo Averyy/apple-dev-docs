@@ -1,0 +1,20 @@
+# requestData
+
+**Framework**: Core NFC  
+**Kind**: property
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst ?+
+
+## Declaration
+
+```swift
+var requestData: Data?
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corenfc/nfcfelicapollingresponse/requestdata)*

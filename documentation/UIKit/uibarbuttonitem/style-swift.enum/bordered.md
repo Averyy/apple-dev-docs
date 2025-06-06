@@ -1,0 +1,30 @@
+# UIBarButtonItem.Style.bordered
+
+**Framework**: UIKit  
+**Kind**: case
+
+A simple button style with a border.
+
+**Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 13.1+
+- tvOS ?+
+
+## Declaration
+
+```swift
+case bordered
+```
+
+## See Also
+
+- [UIBarButtonItem.Style.plain](uibarbuttonitem/style-swift.enum/plain.md)
+  A button style with plain text styling.
+- [UIBarButtonItem.Style.done](uibarbuttonitem/style-swift.enum/done.md)
+  A button style for a done button.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibarbuttonitem/style-swift.enum/bordered)*

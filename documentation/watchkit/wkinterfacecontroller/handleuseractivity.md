@@ -1,6 +1,6 @@
 # handleUserActivity(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Responds to Handoff–related activity.

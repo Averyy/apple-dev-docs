@@ -1,0 +1,31 @@
+# NFCMiFareFamily.ultralight
+
+**Framework**: Core NFC  
+**Kind**: case
+
+An identifier that indicates the MIFARE Ultralight® product family.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.1+
+
+## Declaration
+
+```swift
+case ultralight
+```
+
+## See Also
+
+- [NFCMiFareFamily.unknown](nfcmifarefamily/unknown.md)
+  An identifier that indicates a compatible ISO14443 Type A tag.
+- [NFCMiFareFamily.plus](nfcmifarefamily/plus.md)
+  An identifier that indicates the MIFARE Plus® product family.
+- [NFCMiFareFamily.desfire](nfcmifarefamily/desfire.md)
+  An identifier that indicates the MIFARE® DESFire® product family.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corenfc/nfcmifarefamily/ultralight)*

@@ -1,6 +1,6 @@
 # WKInterfaceSemanticContentAttribute.spatial
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 A view representing a directional control, for example a segment control for text alignment, or a D-pad control for a game. These views are not flipped when switching between left-to-right and right-to-left layouts.

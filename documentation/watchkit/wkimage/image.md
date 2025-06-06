@@ -1,6 +1,6 @@
 # image
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The UIKit image object

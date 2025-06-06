@@ -1,0 +1,34 @@
+# AppMediaAssetState
+
+**Framework**: App Store Connect API  
+**Kind**: dictionary
+
+The state of an app or media upload, including any errors and warnings.
+
+**Availability**:
+- App Store Connect API 1.2+
+
+## Declaration
+
+```swift
+object AppMediaAssetState
+```
+
+## See Also
+
+- [object RoutingAppCoverage](routingappcoverage.md)
+  The data structure that represents the Routing App Coverages resource.
+- [object RoutingAppCoverageWithoutIncludesResponse](routingappcoveragewithoutincludesresponse.md)
+- [object RoutingAppCoverageCreateRequest](routingappcoveragecreaterequest.md)
+  The request body you use to create a Routing App Coverage.
+- [object RoutingAppCoverageResponse](routingappcoverageresponse.md)
+  A response that contains a single Routing App Coverages resource.
+- [object RoutingAppCoverageUpdateRequest](routingappcoverageupdaterequest.md)
+  The request body you use to update a Routing App Coverage.
+- [object AppMediaStateError](appmediastateerror.md)
+  An error code and description.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/appmediaassetstate)*

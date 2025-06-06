@@ -1,6 +1,6 @@
 # setHorizontalAlignment(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the horizontal alignment of an object relative to its container’s bounds.

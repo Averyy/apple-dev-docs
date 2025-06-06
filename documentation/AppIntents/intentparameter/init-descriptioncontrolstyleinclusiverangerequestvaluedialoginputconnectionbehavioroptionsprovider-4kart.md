@@ -1,0 +1,35 @@
+# init(description:controlStyle:inclusiveRange:requestValueDialog:inputConnectionBehavior:optionsProvider:)
+
+**Framework**: App Intents  
+**Kind**: init
+
+Creates an app intent parameter with a list of selectable options.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
+
+## Declaration
+
+```swift
+convenience init<OptionsProvider>(description: LocalizedStringResource? = nil, controlStyle: IntentParameter<Value>.DoubleControlStyle = .stepper, inclusiveRange: IntentParameter<Value>.InclusiveRange<Value.ValueType>? = nil, requestValueDialog: IntentDialog? = nil, inputConnectionBehavior: InputConnectionBehavior = .default, optionsProvider: OptionsProvider) where OptionsProvider : DynamicOptionsProvider, OptionsProvider.DefaultValue.ValueType == Double
+```
+
+## Parameters
+
+- `description`: Additional details about this parameter.
+- `controlStyle`: The type of user input control for this parameter.
+- `inclusiveRange`: The allowed minimum and maximum values for this parameter.
+- `requestValueDialog`: A prompt that asks a person to provide the parameter value.
+- `inputConnectionBehavior`: An enum that indicates how this parameter receives the output from a preceding app intent.
+- `optionsProvider`: An object that determines selectable options for this parameter.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/intentparameter/init(description:controlstyle:inclusiverange:requestvaluedialog:inputconnectionbehavior:optionsprovider:)-4kart)*

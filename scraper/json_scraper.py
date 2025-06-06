@@ -140,14 +140,19 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         progress_file.write_text(f"Scraping main page: {main_doc_url}\n")
         await self._scrape_and_save_url(main_doc_url)
         
-        # Start discovery and scrape as we go
-        # Force processing of main framework JSON even if already seen
-        if framework_json_url in self.processed_urls:
-            self.processed_urls.remove(framework_json_url)
-        await self._discover_and_scrape_from_json(framework_json_url, progress_file)
-        
-        # Final progress update
-        self._update_progress_file(progress_file, "COMPLETED", final=True)
+        # Use iterative approach instead of recursion to avoid stack overflow
+        try:
+            await self._discover_and_scrape_iterative(framework_json_url, progress_file)
+        finally:
+            # Final progress update - ALWAYS execute this even if an error occurs
+            self._update_progress_file(progress_file, "COMPLETED", final=True)
+            logger.info(
+                "framework_scraping_finalized",
+                framework=self.framework_name,
+                pages_scraped=self.stats['pages_scraped'],
+                pages_skipped=self.stats['pages_skipped'],
+                pages_failed=self.stats['pages_failed']
+            )
         
     def _update_progress_file(self, progress_file: Path, last_url: str, final: bool = False) -> None:
         """Update progress file with current statistics."""
@@ -231,6 +236,157 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         except json.JSONDecodeError:
             logger.warning("failed_to_parse_json", url=json_url)
     
+    async def _discover_and_scrape_iterative(self, initial_json_url: str, progress_file) -> None:
+        """Iterative version of discovery to avoid recursion depth issues."""
+        from collections import deque
+        
+        # Queue of URLs to process
+        url_queue = deque([initial_json_url])
+        
+        logger.info(f"starting_iterative_discovery", initial_url=initial_json_url)
+        
+        # Track queue size for monitoring
+        max_queue_size = 0
+        processed_count = 0
+        
+        while url_queue:
+            # Monitor queue growth for debugging
+            current_queue_size = len(url_queue)
+            max_queue_size = max(max_queue_size, current_queue_size)
+            
+            # Get next URL to process
+            json_url = url_queue.popleft()
+            
+            # Skip if already processed
+            if json_url in self.processed_urls:
+                continue
+                
+            self.processed_urls.add(json_url)
+            processed_count += 1
+            
+            # Log progress periodically
+            if processed_count % 100 == 0:
+                logger.info(
+                    "iterative_discovery_progress",
+                    processed=processed_count,
+                    queue_size=current_queue_size,
+                    max_queue_size=max_queue_size
+                )
+            
+            try:
+                # Fetch the JSON data
+                result = await self.fetch_page_with_etag(json_url, use_etag=False)
+                if not result:
+                    continue
+                response_text = result[0]
+                
+                # Parse JSON
+                try:
+                    data = json.loads(response_text)
+                except json.JSONDecodeError:
+                    logger.warning("failed_to_parse_json", url=json_url)
+                    continue
+                
+                # Scrape this page immediately
+                doc_url = self._convert_json_url_to_doc_url(json_url)
+                scraped = await self._scrape_and_save_url(doc_url)
+                
+                if scraped:
+                    # Update progress
+                    self._update_progress_file(progress_file, doc_url)
+                    
+                    # Log progress every 10 files
+                    if self.stats['pages_scraped'] % 10 == 0:
+                        logger.info(
+                            "scraping_progress",
+                            scraped=self.stats['pages_scraped'],
+                            skipped=self.stats['pages_skipped'],
+                            failed=self.stats['pages_failed'],
+                            queue_size=current_queue_size
+                        )
+                
+                # Extract new URLs and add to queue (instead of recursing)
+                new_urls = self._extract_urls_from_json_data(data)
+                
+                # Filter and add new URLs to queue
+                for new_url in new_urls:
+                    if new_url not in self.processed_urls:
+                        url_queue.append(new_url)
+                        
+            except Exception as e:
+                logger.error("error_processing_url", url=json_url, error=str(e))
+                continue
+        
+        logger.info(
+            "iterative_discovery_complete",
+            total_processed=processed_count,
+            max_queue_size=max_queue_size,
+            framework=self.framework_name
+        )
+    
+    def _extract_urls_from_json_data(self, data: Dict[str, Any]) -> List[str]:
+        """Extract all URLs from JSON data without recursing."""
+        urls = []
+        
+        # Extract related documentation from various sections
+        sections_to_check = [
+            'topicSections',
+            'relationshipsSections', 
+            'seeAlsoSections',
+            'diffAvailability',
+            'variants'
+        ]
+        
+        for section_name in sections_to_check:
+            if section_name in data and isinstance(data[section_name], list):
+                logger.debug(f"Extracting URLs from {section_name} with {len(data[section_name])} items")
+                
+                for section in data[section_name]:
+                    if 'identifiers' in section:
+                        identifiers = section.get('identifiers', [])
+                        section_title = section.get('title', 'Unknown')
+                        logger.info(f"Found section '{section_title}' with {len(identifiers)} identifiers")
+                        
+                        # Convert identifiers to URLs
+                        for identifier in identifiers:
+                            if identifier.startswith('doc://'):
+                                # Only process identifiers for the current framework
+                                identifier_lower = identifier.lower()
+                                framework_check = f"com.apple.{self.framework_id.lower()}"
+                                if framework_check in identifier_lower or f"/{self.framework_id.lower()}/" in identifier_lower or f"/{self.framework_id}/" in identifier:
+                                    json_url = self._convert_identifier_to_json_url(identifier)
+                                    if json_url:
+                                        urls.append(json_url)
+        
+        return urls
+    
+    def _convert_identifier_to_json_url(self, identifier: str) -> Optional[str]:
+        """Convert a doc:// identifier to a JSON URL."""
+        try:
+            # Remove doc:// prefix and /documentation/ if present
+            path = identifier.replace('doc://', '')
+            if '/documentation/' in path:
+                # Split on /documentation/ and take the second part
+                parts = path.split('/documentation/', 1)
+                if len(parts) == 2:
+                    path = parts[1]
+                else:
+                    # Fallback
+                    path = path.replace('/documentation/', '')
+            
+            # Convert to lowercase and ensure it starts with framework_id
+            path_lower = path.lower()
+            
+            # If it starts with framework_id/, keep it. Otherwise prepend framework_id
+            if not path_lower.startswith(f"{self.framework_id.lower()}/"):
+                path_lower = f"{self.framework_id.lower()}/{path_lower}"
+            
+            return f"{self.JSON_BASE_URL}/{path_lower}.json"
+            
+        except Exception as e:
+            logger.error(f"Error converting identifier {identifier}: {e}")
+            return None
+    
     async def _extract_and_scrape_links_from_sections(self, sections: List[Dict], progress_file) -> None:
         """Extract links from sections and scrape them immediately."""
         for section in sections:
@@ -245,37 +401,45 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         logger.info(f"Processing batch of {len(identifiers)} identifiers")
         for identifier in identifiers:
             if identifier.startswith('doc://'):
-                # Skip non-WatchKit identifiers
-                if 'watchkit' in identifier.lower():
+                # Only process identifiers for the current framework
+                # Handle case-insensitive comparison properly
+                identifier_lower = identifier.lower()
+                framework_check = f"com.apple.{self.framework_id.lower()}"
+                if framework_check in identifier_lower or f"/{self.framework_id.lower()}/" in identifier_lower or f"/{self.framework_id}/" in identifier:
                     await self._process_and_scrape_identifier(identifier, progress_file)
     
     async def _process_and_scrape_identifier(self, identifier: str, progress_file) -> None:
         """Process a single identifier and scrape it immediately."""
-        # Convert doc://com.apple.watchkit/documentation/WatchKit/WKApplication to 
-        # https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplication.json
-        
-        # Remove doc:// prefix and /documentation/ if present
-        path = identifier.replace('doc://', '')
-        if '/documentation/' in path:
-            # Split on /documentation/ and take the second part
-            parts = path.split('/documentation/', 1)
-            if len(parts) == 2:
-                path = parts[1]
-            else:
-                # Fallback
-                path = path.replace('/documentation/', '')
+        try:
+            # Convert doc://com.apple.watchkit/documentation/WatchKit/WKApplication to 
+            # https://developer.apple.com/tutorials/data/documentation/watchkit/wkapplication.json
+            
+            # Remove doc:// prefix and /documentation/ if present
+            path = identifier.replace('doc://', '')
+            if '/documentation/' in path:
+                # Split on /documentation/ and take the second part
+                parts = path.split('/documentation/', 1)
+                if len(parts) == 2:
+                    path = parts[1]
+                else:
+                    # Fallback
+                    path = path.replace('/documentation/', '')
+        except Exception as e:
+            logger.error(f"Error processing identifier {identifier}: {e}")
+            return
         
         # Now path is like "WatchKit/WKApplication" or "WatchKit/setting-up-a-watchos-project"
         # Convert to lowercase and ensure it starts with framework_id
         path_lower = path.lower()
         
-        # If it starts with watchkit/, keep it. Otherwise prepend framework_id
-        if not path_lower.startswith(f"{self.framework_id}/"):
-            # Replace any case variation of watchkit with our framework_id
-            if path_lower.startswith('watchkit/'):
-                path_lower = f"{self.framework_id}/{path_lower[9:]}"
+        # If it starts with framework_id/, keep it. Otherwise prepend framework_id
+        if not path_lower.startswith(f"{self.framework_id.lower()}/"):
+            # Replace any case variation of current framework with our framework_id
+            if path_lower.startswith(f'{self.framework_id.lower()}/'):
+                # Already correct
+                pass
             else:
-                path_lower = f"{self.framework_id}/{path_lower}"
+                path_lower = f"{self.framework_id.lower()}/{path_lower}"
         
         json_url = f"{self.JSON_BASE_URL}/{path_lower}.json"
         
@@ -347,10 +511,11 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         
         self.processed_urls.add(json_url)
         
-        # Fetch the JSON data
-        response_text = await self.fetch_page(json_url)
-        if not response_text:
+        # Fetch the JSON data - for discovery, we need content even if unchanged
+        result = await self.fetch_page_with_etag(json_url, use_etag=False)
+        if not result:
             return
+        response_text = result[0]
         
         try:
             data = json.loads(response_text)
@@ -443,9 +608,11 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                 logger.warning("invalid_json_structure", url=json_url)
                 return None
             
-            # Store ETag for future efficient requests
-            if etag:
-                self.hash_manager.update_hash(json_url, response_text, etag)
+            # Always store hash for the JSON URL (with or without ETag)
+            self.hash_manager.update_hash(json_url, response_text, etag)
+            
+            # Also store hash for the documentation URL to track what we've scraped
+            self.hash_manager.update_hash(url, response_text, etag)
             
             return self._extract_from_json(json_data, url)
         except json.JSONDecodeError as e:

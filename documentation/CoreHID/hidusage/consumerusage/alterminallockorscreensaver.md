@@ -1,0 +1,18 @@
+# HIDUsage.ConsumerUsage.alTerminalLockOrScreensaver
+
+**Framework**: Core HID  
+**Kind**: case
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+case alTerminalLockOrScreensaver
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corehid/hidusage/consumerusage/alterminallockorscreensaver)*

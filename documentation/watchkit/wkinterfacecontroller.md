@@ -1,6 +1,6 @@
 # WKInterfaceController
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: class
 
 A class that provides the infrastructure for managing the interface in a watchOS app.
@@ -225,17 +225,17 @@ Override any methods of the class needed to configure your interface and get it 
 ## Relationships
 
 ### Inherits From
-- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
 - [WKUserNotificationInterfaceController](wkusernotificationinterfacecontroller.md)
 ### Conforms To
-- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
-- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
-- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
-- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

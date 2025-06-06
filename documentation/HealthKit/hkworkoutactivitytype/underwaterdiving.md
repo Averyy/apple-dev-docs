@@ -1,0 +1,44 @@
+# HKWorkoutActivityType.underwaterDiving
+
+**Framework**: HealthKit  
+**Kind**: case
+
+The constant for underwater diving.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- visionOS 1.0+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+case underwaterDiving
+```
+
+## See Also
+
+- [HKWorkoutActivityType.paddleSports](hkworkoutactivitytype/paddlesports.md)
+  The constant for canoeing, kayaking, paddling an outrigger, paddling a stand-up paddle board, and related sports.
+- [HKWorkoutActivityType.rowing](hkworkoutactivitytype/rowing.md)
+  The constant for rowing.
+- [HKWorkoutActivityType.sailing](hkworkoutactivitytype/sailing.md)
+  The constant for sailing.
+- [HKWorkoutActivityType.surfingSports](hkworkoutactivitytype/surfingsports.md)
+  The constant for a variety of surf sports, including surfing, kite surfing, and wind surfing.
+- [HKWorkoutActivityType.swimming](hkworkoutactivitytype/swimming.md)
+  The constant for swimming.
+- [HKWorkoutActivityType.waterFitness](hkworkoutactivitytype/waterfitness.md)
+  The constant for aerobic exercise performed in shallow water.
+- [HKWorkoutActivityType.waterPolo](hkworkoutactivitytype/waterpolo.md)
+  The constant for playing water polo.
+- [HKWorkoutActivityType.waterSports](hkworkoutactivitytype/watersports.md)
+  The constant for a variety of water sports, including water skiing, wake boarding, and related activities.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkworkoutactivitytype/underwaterdiving)*

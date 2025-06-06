@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Creates a SpriteKit scene for use in SwiftUI.

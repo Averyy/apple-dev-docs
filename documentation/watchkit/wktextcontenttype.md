@@ -1,6 +1,6 @@
 # WKTextContentType
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: struct
 
 Constants that specify a text field’s semantic meaning.
@@ -83,10 +83,10 @@ struct WKTextContentType
 ## Relationships
 
 ### Conforms To
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
-- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

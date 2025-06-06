@@ -1,0 +1,59 @@
+# kCFURLVolumeSupportsSparseFilesKey
+
+**Framework**: Core Foundation  
+**Kind**: var
+
+Key for determining whether the volume supports sparse files, returned as a `CFBoolean` object.
+
+**Availability**:
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 13.1+
+- macOS 10.6+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+let kCFURLVolumeSupportsSparseFilesKey: CFString!
+```
+
+## See Also
+
+- [let kCFURLVolumeNameKey: CFString!](kcfurlvolumenamekey.md)
+  The name of the volume, returned as a `CFString` object.
+- [let kCFURLVolumeLocalizedNameKey: CFString!](kcfurlvolumelocalizednamekey.md)
+  The user-presentable name of the volume, returned as a `CFString` object.
+- [let kCFURLVolumeLocalizedFormatDescriptionKey: CFString!](kcfurlvolumelocalizedformatdescriptionkey.md)
+  Key for the volume’s descriptive format name, returned as a `CFString` object.
+- [let kCFURLVolumeTotalCapacityKey: CFString!](kcfurlvolumetotalcapacitykey.md)
+  Key for the volume’s capacity in bytes, returned as a `CFNumber` object.
+- [let kCFURLVolumeAvailableCapacityKey: CFString!](kcfurlvolumeavailablecapacitykey.md)
+  Key for the volume’s available capacity in bytes, returned as a `CFNumber` object.
+- [let kCFURLVolumeResourceCountKey: CFString!](kcfurlvolumeresourcecountkey.md)
+  Key for the total number of resources on the volume, returned as a `CFNumber` object.
+- [let kCFURLVolumeSupportsPersistentIDsKey: CFString!](kcfurlvolumesupportspersistentidskey.md)
+  Key for determining whether the volume supports persistent IDs, returned as a `CFBoolean` object.
+- [let kCFURLVolumeSupportsSymbolicLinksKey: CFString!](kcfurlvolumesupportssymboliclinkskey.md)
+  Key for determining whether the volume supports symbolic links, returned as a `CFBoolean` object.
+- [let kCFURLVolumeSupportsHardLinksKey: CFString!](kcfurlvolumesupportshardlinkskey.md)
+  Key for determining whether the volume supports hard links, returned as a `CFBoolean` object.
+- [let kCFURLVolumeSupportsJournalingKey: CFString!](kcfurlvolumesupportsjournalingkey.md)
+  Key for determining whether the volume supports journaling, returned as a `CFBoolean` object.
+- [let kCFURLVolumeIsJournalingKey: CFString!](kcfurlvolumeisjournalingkey.md)
+  Key for determining whether the volume is currently journaling, returned as a `CFBoolean` object.
+- [let kCFURLVolumeSupportsZeroRunsKey: CFString!](kcfurlvolumesupportszerorunskey.md)
+  Key for determining whether the volume supports zero runs, returned as a `CFBoolean` object.
+- [let kCFURLVolumeSupportsCaseSensitiveNamesKey: CFString!](kcfurlvolumesupportscasesensitivenameskey.md)
+  Key for determining whether the volume supports case-sensitive names, returned as a `CFBoolean` object.
+- [let kCFURLVolumeSupportsCasePreservedNamesKey: CFString!](kcfurlvolumesupportscasepreservednameskey.md)
+  Key for determining whether the volume supports case-preserved names, returned as a `CFBoolean` object.
+- [let kCFURLVolumeSupportsRootDirectoryDatesKey: CFString!](kcfurlvolumesupportsrootdirectorydateskey.md)
+  Key for determining whether the volume supports reliable storage of times for the root directory, returned as a `CFBoolean` object.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/kcfurlvolumesupportssparsefileskey)*

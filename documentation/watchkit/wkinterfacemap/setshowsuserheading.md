@@ -1,6 +1,6 @@
 # setShowsUserHeading(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets whether the map shows the user heading.

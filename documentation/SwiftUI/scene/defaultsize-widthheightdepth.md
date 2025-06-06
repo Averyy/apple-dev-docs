@@ -1,0 +1,68 @@
+# defaultSize(width:height:depth:)
+
+**Framework**: SwiftUI  
+**Kind**: method
+
+Sets a default size for a volumetric window.
+
+**Availability**:
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+nonisolated
+func defaultSize(width: CGFloat, height: CGFloat, depth: CGFloat) -> some Scene
+```
+
+#### Return Value
+
+A scene that uses a default size for new windows.
+
+#### Discussion
+
+Use this modifier to indicate the default initial size for a new 3D window created from a [`Scene`](scene.md) using [`VolumetricWindowStyle`](volumetricwindowstyle.md):
+
+```swift
+WindowGroup {
+    ContentView()
+}
+.windowStyle(.volumetric)
+.defaultSize(width: 600, height: 400, depth: 600)
+```
+
+Each parameter is specified in points. The size of a volumetric scene is immutable after creation.
+
+This modifier affects only windows that have the volumetric style in visionOS.
+
+## Parameters
+
+- `width`: The default width for the created window.
+- `height`: The default height for the created window.
+- `depth`: The default depth for the created volumetric window.
+
+## See Also
+
+- [Positioning and sizing windows](../visionOS/positioning-and-sizing-windows.md)
+  Influence the initial geometry of windows that your app presents.
+- [func defaultSize(_:)](scene/defaultsize(_:).md)
+  Sets a default size for a window.
+- [func defaultSize(width: CGFloat, height: CGFloat) -> some Scene](scene/defaultsize(width:height:).md)
+  Sets a default width and height for a window.
+- [func defaultSize(Size3D, in: UnitLength) -> some Scene](scene/defaultsize(_:in:).md)
+  Sets a default size for a volumetric window.
+- [func defaultSize(width: CGFloat, height: CGFloat, depth: CGFloat, in: UnitLength) -> some Scene](scene/defaultsize(width:height:depth:in:).md)
+  Sets a default size for a volumetric window.
+- [func windowResizability(WindowResizability) -> some Scene](scene/windowresizability(_:).md)
+  Sets the kind of resizability to use for a window.
+- [struct WindowResizability](windowresizability.md)
+  The resizability of a window.
+- [func windowIdealSize(WindowIdealSize) -> some Scene](scene/windowidealsize(_:).md)
+  Specifies how windows derived form this scene should determine their size when zooming.
+- [struct WindowIdealSize](windowidealsize.md)
+  A type which defines the size a window should use when zooming.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:depth:))*

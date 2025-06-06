@@ -1,0 +1,26 @@
+# AppStoreVersionReleaseRequestCreateRequest.Data
+
+**Framework**: App Store Connect API  
+**Kind**: dictionary
+
+The data element of the request body.
+
+**Availability**:
+- App Store Connect API 1.5+
+
+## Declaration
+
+```swift
+object AppStoreVersionReleaseRequestCreateRequest.Data
+```
+
+## Topics
+
+### Objects
+- [object AppStoreVersionReleaseRequestCreateRequest.Data.Relationships](appstoreversionreleaserequestcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships to other resources that you can set with this request.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/appstoreversionreleaserequestcreaterequest/data-data.dictionary)*

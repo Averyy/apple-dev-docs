@@ -1,6 +1,6 @@
 # WKInterfaceScrollPosition.bottom
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The bottom of the screen.

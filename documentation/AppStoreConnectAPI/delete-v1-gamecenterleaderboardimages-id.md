@@ -1,0 +1,23 @@
+# Delete a leaderboard image
+
+**Framework**: App Store Connect API  
+**Kind**: httpRequest
+
+Delete an image that’s associated with a leaderboard.
+
+**Availability**:
+- App Store Connect API 3.0+
+
+## See Also
+
+- [Read leaderboard image information](get-v1-gamecenterleaderboardimages-_id_.md)
+  Get information about a leaderboard image and its upload and processing status.
+- [Create a leaderboard image](post-v1-gamecenterleaderboardimages.md)
+  Add a new leaderboard image.
+- [Modify a leaderboard image](patch-v1-gamecenterleaderboardimages-_id_.md)
+  Commit a leaderboard image after uploading it.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/delete-v1-gamecenterleaderboardimages-_id_)*

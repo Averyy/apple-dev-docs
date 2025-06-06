@@ -1,0 +1,4 @@
+Completed scraping Media Accessibility!
+Total pages scraped: 84
+Pages skipped (unchanged): 1
+Pages failed: 0

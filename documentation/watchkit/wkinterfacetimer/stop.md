@@ -1,6 +1,6 @@
 # stop()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Stops updates to the timer’s display.

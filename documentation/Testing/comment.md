@@ -1,0 +1,94 @@
+# Comment
+
+**Framework**: Swift Testing  
+**Kind**: struct
+
+A type that represents a comment related to a test.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
+- Swift 6.0+
+- Xcode 16.0+
+
+## Declaration
+
+```swift
+struct Comment
+```
+
+#### Overview
+
+Use this type to provide context or background information about a test’s purpose, explain how a complex test operates, or include details which may be helpful when diagnosing issues recorded by a test.
+
+To add a comment to a test or suite, add a code comment before its `@Test` or `@Suite` attribute. See [`Adding comments to tests`](addingcomments.md) for more details.
+
+> **Note**: To reference bugs related to a test, use [`bug(_:_:)`](trait/bug(_:_:).md), [`bug(_:id:_:)`](trait/bug(_:id:_:)-10yf5.md), or [`bug(_:id:_:)`](trait/bug(_:id:_:)-3vtpl.md).
+
+To reference bugs related to a test, use [`bug(_:_:)`](trait/bug(_:_:).md), [`bug(_:id:_:)`](trait/bug(_:id:_:)-10yf5.md), or [`bug(_:id:_:)`](trait/bug(_:id:_:)-3vtpl.md).
+
+## Topics
+
+### Initializers
+- [init(rawValue: String)](comment/init(rawvalue:).md)
+  Creates a new instance with the specified raw value.
+### Instance Properties
+- [var rawValue: String](comment/rawvalue-swift.property.md)
+  The single comment string that this comment contains.
+### Type Aliases
+- [typealias RawValue](comment/rawvalue-swift.typealias.md)
+  The raw type that can be used to represent all values of the conforming type.
+### Default Implementations
+- [CustomStringConvertible Implementations](comment/customstringconvertible-implementations.md)
+- [Equatable Implementations](comment/equatable-implementations.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](comment/expressiblebyextendedgraphemeclusterliteral-implementations.md)
+- [ExpressibleByStringInterpolation Implementations](comment/expressiblebystringinterpolation-implementations.md)
+- [ExpressibleByStringLiteral Implementations](comment/expressiblebystringliteral-implementations.md)
+- [ExpressibleByUnicodeScalarLiteral Implementations](comment/expressiblebyunicodescalarliteral-implementations.md)
+- [RawRepresentable Implementations](comment/rawrepresentable-implementations.md)
+- [SuiteTrait Implementations](comment/suitetrait-implementations.md)
+- [Trait Implementations](comment/trait-implementations.md)
+
+## Relationships
+
+### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
+- [ExpressibleByStringInterpolation](../Swift/ExpressibleByStringInterpolation.md)
+- [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SuiteTrait](suitetrait.md)
+- [TestTrait](testtrait.md)
+- [Trait](trait.md)
+
+## See Also
+
+- [struct Bug](bug.md)
+  A type that represents a bug report tracked by a test.
+- [struct ConditionTrait](conditiontrait.md)
+  A type that defines a condition which must be satisfied for the testing library to enable a test.
+- [struct ParallelizationTrait](parallelizationtrait.md)
+  A type that defines whether the testing library runs this test serially or in parallel.
+- [struct Tag](tag.md)
+  A type representing a tag that can be applied to a test.
+- [struct List](tag/list.md)
+  A type representing one or more tags applied to a test.
+- [struct TimeLimitTrait](timelimittrait.md)
+  A type that defines a time limit to apply to a test.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/testing/comment)*

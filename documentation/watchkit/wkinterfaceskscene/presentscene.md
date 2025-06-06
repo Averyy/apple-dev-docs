@@ -1,6 +1,6 @@
 # presentScene(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Presents a scene.

@@ -1,0 +1,59 @@
+# MPSCNNDilatedPoolingMaxGradientNode
+
+**Framework**: Metal Performance Shaders  
+**Kind**: cl
+
+A representation of a gradient dilated max pooling filter.
+
+**Availability**:
+- iOS 11.3+
+- iPadOS 11.3+
+- Mac Catalyst 13.0+
+- macOS 10.13.4+
+- tvOS 11.3+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+class MPSCNNDilatedPoolingMaxGradientNode : MPSCNNPoolingGradientNode
+```
+
+## Topics
+
+### Initializers
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, dilationRateX: Int, dilationRateY: Int)](mpscnndilatedpoolingmaxgradientnode/2948026-init.md)
+### Instance Properties
+- [var dilationRateX: Int](mpscnndilatedpoolingmaxgradientnode/2947996-dilationratex.md)
+- [var dilationRateY: Int](mpscnndilatedpoolingmaxgradientnode/2948037-dilationratey.md)
+
+## Relationships
+
+### Inherits From
+- [MPSCNNPoolingGradientNode](mpscnnpoolinggradientnode.md)
+
+## See Also
+
+- [class MPSCNNPoolingAverageNode](mpscnnpoolingaveragenode.md)
+  A representation of an average pooling filter.
+- [class MPSCNNDilatedPoolingMaxNode](mpscnndilatedpoolingmaxnode.md)
+  A representation of a dilated max pooling filter.
+- [class MPSCNNPoolingL2NormNode](mpscnnpoolingl2normnode.md)
+  A representation of a L2-norm pooling filter.
+- [class MPSCNNPoolingMaxNode](mpscnnpoolingmaxnode.md)
+  A representation of a max pooling filter.
+- [class MPSCNNPoolingNode](mpscnnpoolingnode.md)
+  A representation of a MPS CNN pooling kernel.
+- [class MPSCNNPoolingAverageGradientNode](mpscnnpoolingaveragegradientnode.md)
+  A representation of a gradient average pooling filter.
+- [class MPSCNNPoolingGradientNode](mpscnnpoolinggradientnode.md)
+  A representation of a gradient pooling kernel.
+- [class MPSCNNPoolingL2NormGradientNode](mpscnnpoolingl2normgradientnode.md)
+  A representation of a gradient L2-norm pooling filter.
+- [class MPSCNNPoolingMaxGradientNode](mpscnnpoolingmaxgradientnode.md)
+  A representation of a gradient max pooling filter.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/mpscnndilatedpoolingmaxgradientnode)*

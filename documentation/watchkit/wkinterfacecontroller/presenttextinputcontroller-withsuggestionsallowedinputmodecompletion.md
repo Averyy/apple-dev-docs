@@ -1,6 +1,6 @@
 # presentTextInputController(withSuggestions:allowedInputMode:completion:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Displays a modal interface for gathering text input from the user.

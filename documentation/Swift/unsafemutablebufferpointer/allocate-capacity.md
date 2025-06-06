@@ -1,0 +1,49 @@
+# allocate(capacity:)
+
+**Framework**: Swift  
+**Kind**: method
+
+Allocates uninitialized memory for the specified number of instances of type `Element`.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.0+
+- macOS 10.10+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+static func allocate(capacity count: Int) -> UnsafeMutableBufferPointer<Element>
+```
+
+#### Discussion
+
+The resulting buffer references a region of memory that is bound to `Element` and is `count * MemoryLayout<Element>.stride` bytes in size.
+
+The following example allocates a buffer that can store four `Int` instances and then initializes that memory with the elements of a range:
+
+```swift
+let buffer = UnsafeMutableBufferPointer<Int>.allocate(capacity: 4)
+_ = buffer.initialize(from: 1...4)
+print(buffer[2])
+// Prints "3"
+```
+
+When you allocate memory, always remember to deallocate once you’re finished.
+
+```swift
+buffer.deallocate()
+```
+
+## Parameters
+
+- `count`: The amount of memory to allocate, counted in instances   of  .
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/unsafemutablebufferpointer/allocate(capacity:))*

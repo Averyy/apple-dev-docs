@@ -1,6 +1,6 @@
 # performDismissAction()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Dismisses the notification interface controller.

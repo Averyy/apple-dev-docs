@@ -1,0 +1,4 @@
+Completed scraping Updates!
+Total pages scraped: 67
+Pages skipped (unchanged): 1
+Pages failed: 0

@@ -1,6 +1,6 @@
 # pop()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Pops the current interface controller from the screen.

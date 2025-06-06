@@ -1,0 +1,21 @@
+# glUniform4iv(_:_:_:)
+
+**Framework**: OpenGL ES  
+**Kind**: func
+
+**Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
+- tvOS 9.0+
+
+## Declaration
+
+```swift
+func glUniform4iv(_ location: GLint, _ count: GLsizei, _ v: UnsafePointer<GLint>!)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/opengles/gluniform4iv(_:_:_:))*

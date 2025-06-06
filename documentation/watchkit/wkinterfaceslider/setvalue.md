@@ -1,6 +1,6 @@
 # setValue(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Changes the value of the slider.

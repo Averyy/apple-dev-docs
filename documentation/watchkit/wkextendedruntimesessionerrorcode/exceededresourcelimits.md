@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionErrorCode.exceededResourceLimits
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The session exceeded its resource limits.

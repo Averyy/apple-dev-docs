@@ -1,6 +1,6 @@
 # didEnterBackgroundNotification
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A message indicating that the watchOS app transitioned from the foreground to the background.

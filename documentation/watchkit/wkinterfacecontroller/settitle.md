@@ -1,6 +1,6 @@
 # setTitle(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the title of the interface.

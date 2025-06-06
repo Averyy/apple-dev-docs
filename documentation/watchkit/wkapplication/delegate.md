@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The delegate of the WatchKit app object.

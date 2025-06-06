@@ -1,6 +1,6 @@
 # setColor(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the color of the slider bar.

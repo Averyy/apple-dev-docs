@@ -1,0 +1,42 @@
+# pauseAnimation(forKey:)
+
+**Framework**: SceneKit  
+**Kind**: method  
+**Required**: Yes
+
+Pauses the animation attached to the object with the specified key.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.9+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
+
+## Declaration
+
+```swift
+func pauseAnimation(forKey key: String)
+```
+
+#### Discussion
+
+This method has no effect if no animation is attached to the object with the specified key.
+
+## Parameters
+
+- `key`: A string identifying an attached animation.
+
+## See Also
+
+- [func resumeAnimation(forKey: String)](scnanimatable/resumeanimation(forkey:).md)
+  Resumes a previously paused animation attached to the object with the specified key.
+- [func isAnimationPaused(forKey: String) -> Bool](scnanimatable/isanimationpaused(forkey:).md)
+  Returns a Boolean value indicating whether the animation attached to the object with the specified key is paused.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnanimatable/pauseanimation(forkey:))*

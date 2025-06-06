@@ -1,6 +1,6 @@
 # numberOfTapsRequired
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The number of taps necessary for gesture recognition.

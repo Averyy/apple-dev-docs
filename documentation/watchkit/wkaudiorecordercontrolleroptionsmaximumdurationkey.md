@@ -1,6 +1,6 @@
 # WKAudioRecorderControllerOptionsMaximumDurationKey
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: var
 
 The maximum length of recorded audio clips. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object with an [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) value containing the maximum duration in seconds. If you do not specify this option, there is no maximum recording time.

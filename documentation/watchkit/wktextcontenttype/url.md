@@ -1,6 +1,6 @@
 # URL
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A URL.

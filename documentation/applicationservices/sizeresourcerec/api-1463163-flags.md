@@ -1,0 +1,18 @@
+# flags
+
+**Framework**: Application Services  
+**Kind**: structp
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```swift
+var flags: UInt16
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/applicationservices/sizeresourcerec/1463163-flags)*

@@ -1,6 +1,6 @@
 # setNumberOfRows(_:withRowType:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Creates the specified number of row controllers (of the same type) to use in populating the table with data.

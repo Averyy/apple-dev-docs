@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The object you use to monitor changes to the crown state.

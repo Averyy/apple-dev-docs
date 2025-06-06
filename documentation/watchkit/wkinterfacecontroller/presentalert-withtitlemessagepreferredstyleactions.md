@@ -1,6 +1,6 @@
 # presentAlert(withTitle:message:preferredStyle:actions:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Presents an alert or action sheet over the current interface controller.

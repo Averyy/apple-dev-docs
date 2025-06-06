@@ -1,0 +1,38 @@
+# elements
+
+**Framework**: Game Controller  
+**Kind**: property
+
+The device’s elements as key-value pairs for lookup by name.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst ?+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS ?+
+
+## Declaration
+
+```swift
+var elements: GCPhysicalInputElementCollection<any GCPhysicalInputElement> { get }
+```
+
+## See Also
+
+- [var axes: GCPhysicalInputElementCollection<any GCAxisElement>](gcdevicephysicalinputstate/axes-5u1xr.md)
+  The device’s axes as key-value pairs for lookup by name.
+- [var buttons: GCPhysicalInputElementCollection<any GCButtonElement>](gcdevicephysicalinputstate/buttons-2ovae.md)
+  The device’s buttons as key-value pairs for lookup by name.
+- [var dpads: GCPhysicalInputElementCollection<any GCDirectionPadElement>](gcdevicephysicalinputstate/dpads-7b4o3.md)
+  The device’s directional pads as key-value pairs for lookup by name.
+- [var switches: GCPhysicalInputElementCollection<any GCSwitchElement>](gcdevicephysicalinputstate/switches-6dcny.md)
+  The device’s switches as key-value pairs for lookup by name.
+- [subscript(String) -> (any GCPhysicalInputElement)?](gcdevicephysicalinputstate/subscript(_:).md)
+  Returns the element that the key specifies.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinputstate/elements-46hgy)*

@@ -1,6 +1,6 @@
 # WKMenuItemIcon.play
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The icon indicating an action to play some content.

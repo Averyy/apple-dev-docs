@@ -1,0 +1,26 @@
+# TimeSeriesForecasterAnnotatedWindows.Iterator.Element
+
+**Framework**: Create ML Components  
+**Kind**: typealias
+
+The type of element traversed by the iterator.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
+
+## Declaration
+
+```swift
+typealias Element = AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/timeseriesforecasterannotatedwindows/iterator/element)*

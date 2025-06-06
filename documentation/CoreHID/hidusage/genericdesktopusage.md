@@ -1,0 +1,159 @@
+# HIDUsage.GenericDesktopUsage
+
+**Framework**: Core HID  
+**Kind**: enum
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+enum GenericDesktopUsage
+```
+
+## Topics
+
+### Enumeration Cases
+- [HIDUsage.GenericDesktopUsage.applicationBreak](hidusage/genericdesktopusage/applicationbreak.md)
+- [HIDUsage.GenericDesktopUsage.applicationDebuggerBreak](hidusage/genericdesktopusage/applicationdebuggerbreak.md)
+- [HIDUsage.GenericDesktopUsage.assistiveControl](hidusage/genericdesktopusage/assistivecontrol.md)
+- [HIDUsage.GenericDesktopUsage.byteCount](hidusage/genericdesktopusage/bytecount.md)
+- [HIDUsage.GenericDesktopUsage.callActiveLED](hidusage/genericdesktopusage/callactiveled.md)
+- [HIDUsage.GenericDesktopUsage.callMuteLED](hidusage/genericdesktopusage/callmuteled.md)
+- [HIDUsage.GenericDesktopUsage.callMuteToggle](hidusage/genericdesktopusage/callmutetoggle.md)
+- [HIDUsage.GenericDesktopUsage.callStateManagementControl](hidusage/genericdesktopusage/callstatemanagementcontrol.md)
+- [HIDUsage.GenericDesktopUsage.chassisEnclosure](hidusage/genericdesktopusage/chassisenclosure.md)
+- [HIDUsage.GenericDesktopUsage.computerChassisDevice](hidusage/genericdesktopusage/computerchassisdevice.md)
+- [HIDUsage.GenericDesktopUsage.controlEnable](hidusage/genericdesktopusage/controlenable.md)
+- [HIDUsage.GenericDesktopUsage.coolantCriticalLevel](hidusage/genericdesktopusage/coolantcriticallevel.md)
+- [HIDUsage.GenericDesktopUsage.coolantLevel](hidusage/genericdesktopusage/coolantlevel.md)
+- [HIDUsage.GenericDesktopUsage.coolantPump](hidusage/genericdesktopusage/coolantpump.md)
+- [HIDUsage.GenericDesktopUsage.countedBuffer](hidusage/genericdesktopusage/countedbuffer.md)
+- [HIDUsage.GenericDesktopUsage.dPadDown](hidusage/genericdesktopusage/dpaddown.md)
+- [HIDUsage.GenericDesktopUsage.dPadLeft](hidusage/genericdesktopusage/dpadleft.md)
+- [HIDUsage.GenericDesktopUsage.dPadRight](hidusage/genericdesktopusage/dpadright.md)
+- [HIDUsage.GenericDesktopUsage.dPadUp](hidusage/genericdesktopusage/dpadup.md)
+- [HIDUsage.GenericDesktopUsage.deviceDock](hidusage/genericdesktopusage/devicedock.md)
+- [HIDUsage.GenericDesktopUsage.dial](hidusage/genericdesktopusage/dial.md)
+- [HIDUsage.GenericDesktopUsage.dockableDevice](hidusage/genericdesktopusage/dockabledevice.md)
+- [HIDUsage.GenericDesktopUsage.dockableDeviceDisplayOcclusion](hidusage/genericdesktopusage/dockabledevicedisplayocclusion.md)
+- [HIDUsage.GenericDesktopUsage.dockableDeviceDockingState](hidusage/genericdesktopusage/dockabledevicedockingstate.md)
+- [HIDUsage.GenericDesktopUsage.dockableDeviceObjectType](hidusage/genericdesktopusage/dockabledeviceobjecttype.md)
+- [HIDUsage.GenericDesktopUsage.dockableDevicePrimaryUsageID](hidusage/genericdesktopusage/dockabledeviceprimaryusageid.md)
+- [HIDUsage.GenericDesktopUsage.dockableDevicePrimaryUsagePage](hidusage/genericdesktopusage/dockabledeviceprimaryusagepage.md)
+- [HIDUsage.GenericDesktopUsage.dockableDeviceUniqueID](hidusage/genericdesktopusage/dockabledeviceuniqueid.md)
+- [HIDUsage.GenericDesktopUsage.dockableDeviceVendorID](hidusage/genericdesktopusage/dockabledevicevendorid.md)
+- [HIDUsage.GenericDesktopUsage.featureNotification](hidusage/genericdesktopusage/featurenotification.md)
+- [HIDUsage.GenericDesktopUsage.gamepad](hidusage/genericdesktopusage/gamepad.md)
+- [HIDUsage.GenericDesktopUsage.hatSwitch](hidusage/genericdesktopusage/hatswitch.md)
+- [HIDUsage.GenericDesktopUsage.indexTrigger](hidusage/genericdesktopusage/indextrigger.md)
+- [HIDUsage.GenericDesktopUsage.joystick](hidusage/genericdesktopusage/joystick.md)
+- [HIDUsage.GenericDesktopUsage.keyboard](hidusage/genericdesktopusage/keyboard.md)
+- [HIDUsage.GenericDesktopUsage.keypad](hidusage/genericdesktopusage/keypad.md)
+- [HIDUsage.GenericDesktopUsage.motionWakeup](hidusage/genericdesktopusage/motionwakeup.md)
+- [HIDUsage.GenericDesktopUsage.mouse](hidusage/genericdesktopusage/mouse.md)
+- [HIDUsage.GenericDesktopUsage.multiAxisController](hidusage/genericdesktopusage/multiaxiscontroller.md)
+- [HIDUsage.GenericDesktopUsage.palmTrigger](hidusage/genericdesktopusage/palmtrigger.md)
+- [HIDUsage.GenericDesktopUsage.pointer](hidusage/genericdesktopusage/pointer.md)
+- [HIDUsage.GenericDesktopUsage.portableDeviceControl](hidusage/genericdesktopusage/portabledevicecontrol.md)
+- [HIDUsage.GenericDesktopUsage.qw](hidusage/genericdesktopusage/qw.md)
+- [HIDUsage.GenericDesktopUsage.qx](hidusage/genericdesktopusage/qx.md)
+- [HIDUsage.GenericDesktopUsage.qy](hidusage/genericdesktopusage/qy.md)
+- [HIDUsage.GenericDesktopUsage.qz](hidusage/genericdesktopusage/qz.md)
+- [HIDUsage.GenericDesktopUsage.resolutionMultiplier](hidusage/genericdesktopusage/resolutionmultiplier.md)
+- [HIDUsage.GenericDesktopUsage.rpm](hidusage/genericdesktopusage/rpm.md)
+- [HIDUsage.GenericDesktopUsage.rx](hidusage/genericdesktopusage/rx.md)
+- [HIDUsage.GenericDesktopUsage.ry](hidusage/genericdesktopusage/ry.md)
+- [HIDUsage.GenericDesktopUsage.rz](hidusage/genericdesktopusage/rz.md)
+- [HIDUsage.GenericDesktopUsage.select](hidusage/genericdesktopusage/select.md)
+- [HIDUsage.GenericDesktopUsage.sensorZone](hidusage/genericdesktopusage/sensorzone.md)
+- [HIDUsage.GenericDesktopUsage.slider](hidusage/genericdesktopusage/slider.md)
+- [HIDUsage.GenericDesktopUsage.spatialController](hidusage/genericdesktopusage/spatialcontroller.md)
+- [HIDUsage.GenericDesktopUsage.start](hidusage/genericdesktopusage/start.md)
+- [HIDUsage.GenericDesktopUsage.systemAppMenu](hidusage/genericdesktopusage/systemappmenu.md)
+- [HIDUsage.GenericDesktopUsage.systemBreak](hidusage/genericdesktopusage/systembreak.md)
+- [HIDUsage.GenericDesktopUsage.systemColdRestart](hidusage/genericdesktopusage/systemcoldrestart.md)
+- [HIDUsage.GenericDesktopUsage.systemContextMenu](hidusage/genericdesktopusage/systemcontextmenu.md)
+- [HIDUsage.GenericDesktopUsage.systemControl](hidusage/genericdesktopusage/systemcontrol.md)
+- [HIDUsage.GenericDesktopUsage.systemDebuggerBreak](hidusage/genericdesktopusage/systemdebuggerbreak.md)
+- [HIDUsage.GenericDesktopUsage.systemDismissNotification](hidusage/genericdesktopusage/systemdismissnotification.md)
+- [HIDUsage.GenericDesktopUsage.systemDisplayBoth](hidusage/genericdesktopusage/systemdisplayboth.md)
+- [HIDUsage.GenericDesktopUsage.systemDisplayDual](hidusage/genericdesktopusage/systemdisplaydual.md)
+- [HIDUsage.GenericDesktopUsage.systemDisplayExternal](hidusage/genericdesktopusage/systemdisplayexternal.md)
+- [HIDUsage.GenericDesktopUsage.systemDisplayInternal](hidusage/genericdesktopusage/systemdisplayinternal.md)
+- [HIDUsage.GenericDesktopUsage.systemDisplayInvert](hidusage/genericdesktopusage/systemdisplayinvert.md)
+- [HIDUsage.GenericDesktopUsage.systemDisplayRotationLockButton](hidusage/genericdesktopusage/systemdisplayrotationlockbutton.md)
+- [HIDUsage.GenericDesktopUsage.systemDisplayRotationLockSliderSwitch](hidusage/genericdesktopusage/systemdisplayrotationlocksliderswitch.md)
+- [HIDUsage.GenericDesktopUsage.systemDisplaySwapPrimaryOrSecondary](hidusage/genericdesktopusage/systemdisplayswapprimaryorsecondary.md)
+- [HIDUsage.GenericDesktopUsage.systemDisplayToggleIntOrExtMode](hidusage/genericdesktopusage/systemdisplaytoggleintorextmode.md)
+- [HIDUsage.GenericDesktopUsage.systemDisplayToggleLCDAutoscale](hidusage/genericdesktopusage/systemdisplaytogglelcdautoscale.md)
+- [HIDUsage.GenericDesktopUsage.systemDoNotDisturb](hidusage/genericdesktopusage/systemdonotdisturb.md)
+- [HIDUsage.GenericDesktopUsage.systemDock](hidusage/genericdesktopusage/systemdock.md)
+- [HIDUsage.GenericDesktopUsage.systemFunctionShift](hidusage/genericdesktopusage/systemfunctionshift.md)
+- [HIDUsage.GenericDesktopUsage.systemFunctionShiftLock](hidusage/genericdesktopusage/systemfunctionshiftlock.md)
+- [HIDUsage.GenericDesktopUsage.systemFunctionShiftLockIndicator](hidusage/genericdesktopusage/systemfunctionshiftlockindicator.md)
+- [HIDUsage.GenericDesktopUsage.systemHibernate](hidusage/genericdesktopusage/systemhibernate.md)
+- [HIDUsage.GenericDesktopUsage.systemMainMenu](hidusage/genericdesktopusage/systemmainmenu.md)
+- [HIDUsage.GenericDesktopUsage.systemMenuDown](hidusage/genericdesktopusage/systemmenudown.md)
+- [HIDUsage.GenericDesktopUsage.systemMenuExit](hidusage/genericdesktopusage/systemmenuexit.md)
+- [HIDUsage.GenericDesktopUsage.systemMenuHelp](hidusage/genericdesktopusage/systemmenuhelp.md)
+- [HIDUsage.GenericDesktopUsage.systemMenuLeft](hidusage/genericdesktopusage/systemmenuleft.md)
+- [HIDUsage.GenericDesktopUsage.systemMenuRight](hidusage/genericdesktopusage/systemmenuright.md)
+- [HIDUsage.GenericDesktopUsage.systemMenuSelect](hidusage/genericdesktopusage/systemmenuselect.md)
+- [HIDUsage.GenericDesktopUsage.systemMenuUp](hidusage/genericdesktopusage/systemmenuup.md)
+- [HIDUsage.GenericDesktopUsage.systemMicrophoneMute](hidusage/genericdesktopusage/systemmicrophonemute.md)
+- [HIDUsage.GenericDesktopUsage.systemMultiAxisController](hidusage/genericdesktopusage/systemmultiaxiscontroller.md)
+- [HIDUsage.GenericDesktopUsage.systemPowerDown](hidusage/genericdesktopusage/systempowerdown.md)
+- [HIDUsage.GenericDesktopUsage.systemSetup](hidusage/genericdesktopusage/systemsetup.md)
+- [HIDUsage.GenericDesktopUsage.systemSleep](hidusage/genericdesktopusage/systemsleep.md)
+- [HIDUsage.GenericDesktopUsage.systemSpeakerMute](hidusage/genericdesktopusage/systemspeakermute.md)
+- [HIDUsage.GenericDesktopUsage.systemUndock](hidusage/genericdesktopusage/systemundock.md)
+- [HIDUsage.GenericDesktopUsage.systemWakeUp](hidusage/genericdesktopusage/systemwakeup.md)
+- [HIDUsage.GenericDesktopUsage.systemWarmRestart](hidusage/genericdesktopusage/systemwarmrestart.md)
+- [HIDUsage.GenericDesktopUsage.tabletPCSystemControls](hidusage/genericdesktopusage/tabletpcsystemcontrols.md)
+- [HIDUsage.GenericDesktopUsage.thumbstick](hidusage/genericdesktopusage/thumbstick.md)
+- [HIDUsage.GenericDesktopUsage.vbrx](hidusage/genericdesktopusage/vbrx.md)
+- [HIDUsage.GenericDesktopUsage.vbry](hidusage/genericdesktopusage/vbry.md)
+- [HIDUsage.GenericDesktopUsage.vbrz](hidusage/genericdesktopusage/vbrz.md)
+- [HIDUsage.GenericDesktopUsage.vno](hidusage/genericdesktopusage/vno.md)
+- [HIDUsage.GenericDesktopUsage.vx](hidusage/genericdesktopusage/vx.md)
+- [HIDUsage.GenericDesktopUsage.vy](hidusage/genericdesktopusage/vy.md)
+- [HIDUsage.GenericDesktopUsage.vz](hidusage/genericdesktopusage/vz.md)
+- [HIDUsage.GenericDesktopUsage.waterCoolingDevice](hidusage/genericdesktopusage/watercoolingdevice.md)
+- [HIDUsage.GenericDesktopUsage.wheel](hidusage/genericdesktopusage/wheel.md)
+- [HIDUsage.GenericDesktopUsage.wirelessRadioButton](hidusage/genericdesktopusage/wirelessradiobutton.md)
+- [HIDUsage.GenericDesktopUsage.wirelessRadioControls](hidusage/genericdesktopusage/wirelessradiocontrols.md)
+- [HIDUsage.GenericDesktopUsage.wirelessRadioLED](hidusage/genericdesktopusage/wirelessradioled.md)
+- [HIDUsage.GenericDesktopUsage.wirelessRadioSliderSwitch](hidusage/genericdesktopusage/wirelessradiosliderswitch.md)
+- [HIDUsage.GenericDesktopUsage.x](hidusage/genericdesktopusage/x.md)
+- [HIDUsage.GenericDesktopUsage.y](hidusage/genericdesktopusage/y.md)
+- [HIDUsage.GenericDesktopUsage.z](hidusage/genericdesktopusage/z.md)
+### Initializers
+- [init?(rawValue: UInt16)](hidusage/genericdesktopusage/init(rawvalue:).md)
+  Creates a new instance with the specified raw value.
+### Instance Properties
+- [var rawValue: UInt16](hidusage/genericdesktopusage/rawvalue-swift.property.md)
+  The corresponding value of the raw type.
+### Type Aliases
+- [HIDUsage.GenericDesktopUsage.RawValue](hidusage/genericdesktopusage/rawvalue-swift.typealias.md)
+  The raw type that can be used to represent all values of the conforming type.
+### Type Properties
+- [static let page: UInt16](hidusage/genericdesktopusage/page.md)
+### Default Implementations
+- [Equatable Implementations](hidusage/genericdesktopusage/equatable-implementations.md)
+- [RawRepresentable Implementations](hidusage/genericdesktopusage/rawrepresentable-implementations.md)
+
+## Relationships
+
+### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corehid/hidusage/genericdesktopusage)*

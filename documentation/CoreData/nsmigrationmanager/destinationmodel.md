@@ -1,0 +1,43 @@
+# destinationModel
+
+**Framework**: Core Data  
+**Kind**: property
+
+The destination model for the migration manager.
+
+**Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 13.1+
+- macOS 10.5+
+- tvOS ?+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+var destinationModel: NSManagedObjectModel { get }
+```
+
+## See Also
+
+- [init(sourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel)](nsmigrationmanager/init(sourcemodel:destinationmodel:).md)
+  Initializes a migration manager instance with given source and destination models.
+- [var destinationContext: NSManagedObjectContext](nsmigrationmanager/destinationcontext.md)
+  The managed object context the migration manager uses for writing the destination persistent store.
+- [var mappingModel: NSMappingModel](nsmigrationmanager/mappingmodel.md)
+  The mapping model for the migration manager.
+- [var sourceContext: NSManagedObjectContext](nsmigrationmanager/sourcecontext.md)
+  The managed object context the migration manager uses for reading the source persistent store.
+- [var sourceModel: NSManagedObjectModel](nsmigrationmanager/sourcemodel.md)
+  The source model for the migration manager.
+- [func destinationEntity(for: NSEntityMapping) -> NSEntityDescription?](nsmigrationmanager/destinationentity(for:).md)
+  Returns the entity description for the destination entity of a given entity mapping.
+- [func sourceEntity(for: NSEntityMapping) -> NSEntityDescription?](nsmigrationmanager/sourceentity(for:).md)
+  Returns the entity description for the source entity of a given entity mapping.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsmigrationmanager/destinationmodel)*

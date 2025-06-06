@@ -1,6 +1,6 @@
 # WKTextInputMode.allowAnimatedEmoji
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 Text from dictation and suggestions plus both animated and non animated emoji.

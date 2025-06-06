@@ -1,6 +1,6 @@
 # WKRefreshBackgroundTask
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: class
 
 The abstract superclass for WatchKit’s background task classes.
@@ -43,7 +43,7 @@ Don’t subclass or create instances of this class. The system automatically cre
 ## Relationships
 
 ### Inherits From
-- [NSObject](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
 - [WKApplicationRefreshBackgroundTask](wkapplicationrefreshbackgroundtask.md)
 - [WKBluetoothAlertRefreshBackgroundTask](wkbluetoothalertrefreshbackgroundtask.md)
@@ -53,13 +53,13 @@ Don’t subclass or create instances of this class. The system automatically cre
 - [WKURLSessionRefreshBackgroundTask](wkurlsessionrefreshbackgroundtask.md)
 - [WKWatchConnectivityRefreshBackgroundTask](wkwatchconnectivityrefreshbackgroundtask.md)
 ### Conforms To
-- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
-- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
-- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
-- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

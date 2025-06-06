@@ -1,0 +1,37 @@
+# tX
+
+**Framework**: Foundation  
+**Kind**: property
+
+An element of the transform matrix that contributes translation.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- macOS 10.10+
+- tvOS 9.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+var tX: CGFloat
+```
+
+## See Also
+
+- [var m11: CGFloat](affinetransform/m11.md)
+  An element of the transform matrix that contributes scaling, rotation, and shear.
+- [var m12: CGFloat](affinetransform/m12.md)
+  An element of the transform matrix that contributes scaling, rotation, and shear.
+- [var m21: CGFloat](affinetransform/m21.md)
+  An element of the transform matrix that contributes scaling, rotation, and shear.
+- [var m22: CGFloat](affinetransform/m22.md)
+  An element of the transform matrix that contributes scaling, rotation, and shear.
+- [var tY: CGFloat](affinetransform/ty.md)
+  An element of the transform matrix that contributes translation.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/affinetransform/tx)*

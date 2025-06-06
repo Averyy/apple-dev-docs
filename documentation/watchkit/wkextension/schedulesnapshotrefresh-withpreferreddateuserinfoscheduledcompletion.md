@@ -1,6 +1,6 @@
 # scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Schedules a background task to refresh your app’s snapshot.

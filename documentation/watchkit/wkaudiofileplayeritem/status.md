@@ -1,6 +1,6 @@
 # status
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The status of the player item.

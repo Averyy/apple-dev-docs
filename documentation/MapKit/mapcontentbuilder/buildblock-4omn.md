@@ -1,0 +1,24 @@
+# buildBlock(_:)
+
+**Framework**: MapKit  
+**Kind**: method
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst ?+
+- macOS 14.0+
+- tvOS 17.0+
+- visionOS ?+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+static func buildBlock<each Content>(_ content: repeat each Content) -> TupleMapContent<(repeat each Content)> where repeat each Content : MapContent
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/mapcontentbuilder/buildblock(_:)-4omn)*

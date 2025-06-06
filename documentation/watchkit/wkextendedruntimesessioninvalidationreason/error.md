@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionInvalidationReason.error
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 An error prevented the session from running.

@@ -1,0 +1,29 @@
+# List leaderboard sets in a group leaderboard set
+
+**Framework**: App Store Connect API  
+**Kind**: httpRequest
+
+List information about leaderboards and leaderboard sets in a group leaderboard set.
+
+**Availability**:
+- App Store Connect API 3.0+
+
+## See Also
+
+- [Read leaderboard set information](get-v1-gamecenterleaderboardsets-_id_.md)
+  Read information about a specific leaderboard set.
+- [List leaderboard information for a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-gamecenterleaderboards.md)
+  Read the leadboards that belong to a learderboard set.
+- [List all localizations for a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-localizations.md)
+  Get a list of localized metadata for a leaderboard set.
+- [Read the leaderboards in a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+  List all leaderboards in a leaderboard set.
+- [Read the group leaderboard set in a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-relationships-groupleaderboardset.md)
+  List all the group leaderboard sets in a leaderboard set.
+- [List releases for a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-releases.md)
+  Read the state of releases for a leaderboard set and related information.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-gamecenterleaderboardsets-_id_-groupleaderboardset)*

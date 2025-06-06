@@ -1,0 +1,59 @@
+# NSPreferencePaneUnselectReply
+
+**Framework**: Preference Panes  
+**Kind**: enum
+
+Constants that indicate the preference pane’s availability to be deselected.
+
+**Availability**:
+- Mac Catalyst 14.0+
+- macOS 10.1+
+
+## Declaration
+
+```swift
+enum NSPreferencePaneUnselectReply
+```
+
+## Topics
+
+### Replies
+- [NSPreferencePaneUnselectReply.unselectCancel](nspreferencepaneunselectreply/unselectcancel.md)
+  Cancel the deselection.
+- [NSPreferencePaneUnselectReply.unselectNow](nspreferencepaneunselectreply/unselectnow.md)
+  Continue the deselection.
+- [NSPreferencePaneUnselectReply.unselectLater](nspreferencepaneunselectreply/unselectlater.md)
+  Delay the deselection until the preference pane invokes [`reply(toShouldUnselect:)`](nspreferencepane/reply(toshouldunselect:).md).
+### Initializers
+- [init?(rawValue: UInt)](nspreferencepaneunselectreply/init(rawvalue:).md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+
+## See Also
+
+- [func willSelect()](nspreferencepane/willselect.md)
+  Notifies the preference pane that the main app is about to display the preference pane’s main view.
+- [func didSelect()](nspreferencepane/didselect.md)
+  Notifies the preference pane that the main app has just displayed the preference pane’s main view.
+- [func willUnselect()](nspreferencepane/willunselect.md)
+  Notifies the preference pane that the main app is about to stop displaying the preference pane’s main view.
+- [func didUnselect()](nspreferencepane/didunselect.md)
+  Notifies the preference pane that the main app has just stopped displaying the preference pane’s main view.
+- [var isSelected: Bool](nspreferencepane/isselected.md)
+  A Boolean value that indicates whether the preference pane is currently selected.
+- [var shouldUnselect: NSPreferencePaneUnselectReply](nspreferencepane/shouldunselect.md)
+  A Boolean value that indicates whether the preference pane is able to be deselected.
+- [func reply(toShouldUnselect: Bool)](nspreferencepane/reply(toshouldunselect:).md)
+  Notifies the main application of the preference pane’s ability to be deselected.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/preferencepanes/nspreferencepaneunselectreply)*

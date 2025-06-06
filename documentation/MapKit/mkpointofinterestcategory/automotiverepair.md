@@ -1,0 +1,52 @@
+# automotiveRepair
+
+**Framework**: MapKit  
+**Kind**: property
+
+The point of interest category for automotive repair services.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+
+## Declaration
+
+```swift
+static let automotiveRepair: MKPointOfInterestCategory
+```
+
+## See Also
+
+- [static let animalService: MKPointOfInterestCategory](mkpointofinterestcategory/animalservice.md)
+  The point of interest category for animal services.
+- [static let atm: MKPointOfInterestCategory](mkpointofinterestcategory/atm.md)
+  The point of interest category for ATM machines.
+- [static let bank: MKPointOfInterestCategory](mkpointofinterestcategory/bank.md)
+  The point of interest category for banks.
+- [static let beauty: MKPointOfInterestCategory](mkpointofinterestcategory/beauty.md)
+  The point of interest category for beauty services.
+- [static let evCharger: MKPointOfInterestCategory](mkpointofinterestcategory/evcharger.md)
+  The point of interest category for EV chargers.
+- [static let fitnessCenter: MKPointOfInterestCategory](mkpointofinterestcategory/fitnesscenter.md)
+  The point of interest category for fitness centers.
+- [static let laundry: MKPointOfInterestCategory](mkpointofinterestcategory/laundry.md)
+  The point of interest category for laundries.
+- [static let mailbox: MKPointOfInterestCategory](mkpointofinterestcategory/mailbox.md)
+  The point of interest category for mailboxes.
+- [static let postOffice: MKPointOfInterestCategory](mkpointofinterestcategory/postoffice.md)
+  The point of interest category for post offices.
+- [static let restroom: MKPointOfInterestCategory](mkpointofinterestcategory/restroom.md)
+  The point of interest category for restrooms.
+- [static let spa: MKPointOfInterestCategory](mkpointofinterestcategory/spa.md)
+  The point of interest category for spa services.
+- [static let store: MKPointOfInterestCategory](mkpointofinterestcategory/store.md)
+  The point of interest category for stores.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/mkpointofinterestcategory/automotiverepair)*

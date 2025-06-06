@@ -1,0 +1,18 @@
+# src
+
+**Framework**: Webkit  
+**Kind**: property
+
+**Availability**:
+- macOS 10.4+
+
+## Declaration
+
+```swift
+var src: String! { get set }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/domhtmlframeelement/src)*

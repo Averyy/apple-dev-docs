@@ -1,6 +1,6 @@
 # location
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A point of interest, address, or other identifiable location.

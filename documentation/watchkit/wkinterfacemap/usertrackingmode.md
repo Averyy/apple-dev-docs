@@ -1,6 +1,6 @@
 # WKInterfaceMap.UserTrackingMode
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: enum
 
 Modes for tracking the user’s location on the map.
@@ -31,11 +31,11 @@ enum UserTrackingMode
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](https://developer.apple.com/documentation/Swift/BitwiseCopyable)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [RawRepresentable](https://developer.apple.com/documentation/Swift/RawRepresentable)
-- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

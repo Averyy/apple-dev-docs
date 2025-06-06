@@ -1,6 +1,6 @@
 # didBecomeActiveNotification
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A message indicating that the watchOS app is visible and processing events.

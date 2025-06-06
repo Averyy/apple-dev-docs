@@ -1,0 +1,24 @@
+# ignoreSchemes
+
+**Framework**: Webkit  
+**Kind**: property
+
+Indicates that the scheme components should be ignored while matching.
+
+**Availability**:
+- iOS 18.4+
+- iPadOS 18.4+
+- Mac Catalyst 18.4+
+- macOS 15.4+
+- visionOS 2.4+
+
+## Declaration
+
+```swift
+static var ignoreSchemes: WKWebExtension.MatchPattern.Options { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/wkwebextension/matchpattern/options/ignoreschemes)*

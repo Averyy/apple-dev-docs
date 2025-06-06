@@ -1,6 +1,6 @@
 # supportsAudioStreaming
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A Boolean value that indicates whether the device supports audio streaming.

@@ -1,6 +1,6 @@
 # setVerticalAlignment(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the vertical alignment of an object relative to its container’s bounds.

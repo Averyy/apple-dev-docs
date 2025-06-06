@@ -1,0 +1,46 @@
+# init(named:)
+
+**Framework**: UIKit  
+**Kind**: init
+
+Creates a color object using the information from the named asset.
+
+**Availability**:
+- iOS 11.0+
+- iPadOS 11.0+
+- Mac Catalyst 13.1+
+- tvOS 11.0+
+- visionOS 1.0+
+- watchOS 4.0+
+
+## Declaration
+
+```swift
+init?(named name: String)
+```
+
+#### Return Value
+
+An initialized color object. The returned object uses the color space specified for the asset.
+
+## Parameters
+
+- `name`: The name of the asset containing the color.
+
+## See Also
+
+- [init(white: CGFloat, alpha: CGFloat)](uicolor/init(white:alpha:).md)
+  Creates a color object using the specified opacity and grayscale values.
+- [init(hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](uicolor/init(hue:saturation:brightness:alpha:).md)
+  Creates a color object using the specified opacity and HSB color space component values.
+- [init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](uicolor/init(red:green:blue:alpha:).md)
+  Creates a color object using the specified opacity and RGB component values.
+- [init(displayP3Red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](uicolor/init(displayp3red:green:blue:alpha:).md)
+  Creates a color object using the specified opacity and RGB component values in the Display P3 color space.
+- [init?(named: String, inBundle: Bundle?, compatibleWithTraitCollection: UITraitCollection?)](uicolor/init(named:inbundle:compatiblewithtraitcollection:).md)
+  Creates a color object using the named asset that’s compatible with the specified trait collection.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicolor/init(named:))*

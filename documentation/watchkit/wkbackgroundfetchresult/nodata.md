@@ -1,6 +1,6 @@
 # WKBackgroundFetchResult.noData
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The notification has no associated content.

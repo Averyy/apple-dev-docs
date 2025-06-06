@@ -523,8 +523,20 @@ class AppleDocMarkdownConverter:
                 current_framework = str(self.output_dir.name).lower()
                 
                 if framework_in_url != current_framework:
-                    # Cross-framework reference - keep Apple URL
-                    return f"[{link_text}]({apple_url})"
+                    # Cross-framework reference - link to other framework's local files
+                    if len(path_parts) == 2:
+                        # Direct child of other framework: ../Swift/BitwiseCopyable.md
+                        cross_framework_path = f"../{path_parts[0]}/{path_parts[1]}.md"
+                    else:
+                        # Nested path in other framework
+                        last_part = path_parts[-1].replace('()', '')
+                        nested_path = '/'.join(path_parts[1:-1])
+                        if nested_path:
+                            cross_framework_path = f"../{path_parts[0]}/{nested_path}/{last_part}.md"
+                        else:
+                            cross_framework_path = f"../{path_parts[0]}/{last_part}.md"
+                    
+                    return f"[{link_text}]({cross_framework_path})"
                 
                 # Same framework - create local link
                 # Handle nested paths properly

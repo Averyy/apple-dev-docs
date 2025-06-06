@@ -1,0 +1,33 @@
+# userInterfaceStyleDark
+
+**Framework**: TV Services  
+**Kind**: property
+
+An image meant for a dark user interface.
+
+**Availability**:
+- tvOS 11.0+
+
+## Declaration
+
+```swift
+static var userInterfaceStyleDark: TVContentItemImageTrait { get }
+```
+
+#### Discussion
+
+Specify this constant, or the [`userInterfaceStyleLight`](tvcontentitemimagetrait/userinterfacestylelight.md) constant, but not both.
+
+## See Also
+
+- [static var screenScale1x: TVContentItemImageTrait](tvcontentitemimagetrait/screenscale1x.md)
+  An image meant for a regular display.
+- [static var screenScale2x: TVContentItemImageTrait](tvcontentitemimagetrait/screenscale2x.md)
+  An image meant for a Retina display.
+- [static var userInterfaceStyleLight: TVContentItemImageTrait](tvcontentitemimagetrait/userinterfacestylelight.md)
+  An image meant for a light user interface.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tvservices/tvcontentitemimagetrait/userinterfacestyledark)*

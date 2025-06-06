@@ -1,6 +1,6 @@
 # userInfo
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 Custom information associated with the background task.

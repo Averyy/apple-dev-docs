@@ -1,0 +1,4 @@
+Completed scraping Paravirtualized Graphics!
+Total pages scraped: 109
+Pages skipped (unchanged): 1
+Pages failed: 0

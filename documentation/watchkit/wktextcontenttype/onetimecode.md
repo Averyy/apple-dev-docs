@@ -1,6 +1,6 @@
 # oneTimeCode
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A one-time code.

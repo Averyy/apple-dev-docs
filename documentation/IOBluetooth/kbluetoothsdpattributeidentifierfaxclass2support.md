@@ -1,0 +1,36 @@
+# kBluetoothSDPAttributeIdentifierFaxClass2Support
+
+**Framework**: IOBluetooth  
+**Kind**: var
+
+**Availability**:
+- macOS ?+
+
+## Declaration
+
+```swift
+var kBluetoothSDPAttributeIdentifierFaxClass2Support: SDPAttributeIdentifierCodes { get }
+```
+
+## See Also
+
+- [var kBluetoothSDPAttributeIdentifierAdditionalProtocolsDescriptorList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifieradditionalprotocolsdescriptorlist.md)
+- [var kBluetoothSDPAttributeIdentifierAudioFeedbackSupport: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifieraudiofeedbacksupport.md)
+- [var kBluetoothSDPAttributeIdentifierBluetoothProfileDescriptorList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierbluetoothprofiledescriptorlist.md)
+- [var kBluetoothSDPAttributeIdentifierBrowseGroupList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierbrowsegrouplist.md)
+- [var kBluetoothSDPAttributeIdentifierClientExecutableURL: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierclientexecutableurl.md)
+- [var kBluetoothSDPAttributeIdentifierDocumentationURL: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierdocumentationurl.md)
+- [var kBluetoothSDPAttributeIdentifierExternalNetwork: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierexternalnetwork.md)
+- [var kBluetoothSDPAttributeIdentifierFaxClass1Support: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierfaxclass1support.md)
+- [var kBluetoothSDPAttributeIdentifierFaxClass2_0Support: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierfaxclass2_0support.md)
+- [var kBluetoothSDPAttributeIdentifierGroupID: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiergroupid.md)
+- [var kBluetoothSDPAttributeIdentifierHIDBatteryPower: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidbatterypower.md)
+- [var kBluetoothSDPAttributeIdentifierHIDBootDevice: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidbootdevice.md)
+- [var kBluetoothSDPAttributeIdentifierHIDCountryCode: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidcountrycode.md)
+- [var kBluetoothSDPAttributeIdentifierHIDDescriptorList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhiddescriptorlist.md)
+- [var kBluetoothSDPAttributeIdentifierHIDDeviceSubclass: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhiddevicesubclass.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iobluetooth/kbluetoothsdpattributeidentifierfaxclass2support)*

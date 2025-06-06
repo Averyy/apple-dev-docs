@@ -1,0 +1,91 @@
+{
+  "completed": [
+    {
+      "framework": "Accelerate",
+      "scraped": 10,
+      "skipped": 1,
+      "failed": 0,
+      "files": 458
+    },
+    {
+      "framework": "Accessibility",
+      "scraped": 261,
+      "skipped": 1,
+      "failed": 0,
+      "files": 77
+    },
+    {
+      "framework": "AccountDataTransfer",
+      "scraped": 17,
+      "skipped": 1,
+      "failed": 0,
+      "files": 17
+    },
+    {
+      "framework": "AccountOrganizationalDataSharing",
+      "scraped": 10,
+      "skipped": 1,
+      "failed": 0,
+      "files": 9
+    },
+    {
+      "framework": "Accounts",
+      "scraped": 78,
+      "skipped": 1,
+      "failed": 0,
+      "files": 50
+    },
+    {
+      "framework": "ActivityKit",
+      "scraped": 222,
+      "skipped": 1,
+      "failed": 0,
+      "files": 14
+    },
+    {
+      "framework": "AdAttributionKit",
+      "scraped": 94,
+      "skipped": 1,
+      "failed": 0,
+      "files": 20
+    },
+    {
+      "framework": "AdServices",
+      "scraped": 15,
+      "skipped": 1,
+      "failed": 0,
+      "files": 5
+    },
+    {
+      "framework": "AddressBook",
+      "scraped": 51,
+      "skipped": 1,
+      "failed": 0,
+      "files": 28
+    },
+    {
+      "framework": "AddressBookUI",
+      "scraped": 8,
+      "skipped": 0,
+      "failed": 0,
+      "files": 3
+    },
+    {
+      "framework": "accessorysetupkit",
+      "scraped": 229,
+      "skipped": 1,
+      "failed": 0,
+      "files": 14
+    }
+  ],
+  "incomplete": [],
+  "no_progress": [],
+  "summary": {
+    "total_frameworks": 11,
+    "completed": 11,
+    "incomplete": 0,
+    "no_progress": 0,
+    "total_pages_scraped": 995,
+    "total_pages_skipped": 10
+  }
+}

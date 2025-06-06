@@ -1,6 +1,6 @@
 # WKMediaPlayerControllerOptionsStartTimeKey
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: var
 
 The number of seconds into the media file at which to begin playback. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing an [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) value. Playback begins at the specified number of seconds past the original start point of the media file. If you do not specify this option, playback begins at the beginning of the media file.

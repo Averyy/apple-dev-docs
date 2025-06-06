@@ -1,0 +1,39 @@
+# NSEntityMappingType.customEntityMappingType
+
+**Framework**: Core Data  
+**Kind**: case
+
+Specifies a custom mapping.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
+
+## Declaration
+
+```swift
+case customEntityMappingType
+```
+
+## See Also
+
+- [NSEntityMappingType.undefinedEntityMappingType](nsentitymappingtype/undefinedentitymappingtype.md)
+  Specifies that the developer handles destination instance creation.
+- [NSEntityMappingType.addEntityMappingType](nsentitymappingtype/addentitymappingtype.md)
+  Specifies that this is a new entity in the destination model.
+- [NSEntityMappingType.removeEntityMappingType](nsentitymappingtype/removeentitymappingtype.md)
+  Specifies that this entity is not present in the destination model.
+- [NSEntityMappingType.copyEntityMappingType](nsentitymappingtype/copyentitymappingtype.md)
+  Specifies that source instances are migrated as-is.
+- [NSEntityMappingType.transformEntityMappingType](nsentitymappingtype/transformentitymappingtype.md)
+  Specifies that entity exists in source and destination and is mapped.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsentitymappingtype/customentitymappingtype)*

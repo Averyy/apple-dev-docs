@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Returns a newly instantiated content type.

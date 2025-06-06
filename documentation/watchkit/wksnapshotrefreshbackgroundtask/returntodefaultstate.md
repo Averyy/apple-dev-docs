@@ -1,6 +1,6 @@
 # returnToDefaultState
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A Boolean value indicating that the app should return to its default state.

@@ -1,6 +1,6 @@
 # setAttributedText(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the styled text displayed by the text field.

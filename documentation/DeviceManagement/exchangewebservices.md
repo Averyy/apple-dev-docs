@@ -1,0 +1,100 @@
+# ExchangeWebServices
+
+**Framework**: Device Management  
+**Kind**: dictionary
+
+The payload you use to configure an Exchange Web Services account for Contacts, Mail, Notes, Reminders, and Calendar.
+
+**Availability**:
+- macOS 10.7+
+- Device Assignment Services ?+
+- VPP License Management ?+
+
+## Declaration
+
+```swift
+object ExchangeWebServices
+```
+
+#### Discussion
+
+Specify `com.apple.ews.account` as the payload type.
+
+##### Profile Availability
+
+|  |  |
+| --- | --- |
+| Device Channel | - |
+| User Channel | macOS |
+| Allow Manual Install | macOS |
+| Requires Supervision | - |
+| Requires User Approved MDM | - |
+| Allowed in User Enrollment | macOS |
+| Allow Multiple Payloads | macOS |
+
+##### Profile Example
+
+```None
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>EmailAddress</key>
+            <string>juanchavez4@companyemail.com</string>
+            <key>ExternalHost</key>
+            <string>host.example.com</string>
+            <key>ExternalPath</key>
+            <string></string>
+            <key>ExternalSSL</key>
+            <true/>
+            <key>Host</key>
+            <string>host.example.com</string>
+            <key>MailNumberOfPastDaysToSync</key>
+            <integer>0</integer>
+            <key>Password</key>
+            <string>Password123</string>
+            <key>PayloadDisplayName</key>
+            <string>Exchange Web Service</string>
+            <key>PayloadIdentifier</key>
+            <string>com.example.myewspayload</string>
+            <key>PayloadType</key>
+            <string>com.apple.ews.account</string>
+            <key>PayloadUUID</key>
+            <string>bb4adbbc-5516-45bb-bdee-cc7e47a5c5b5</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>SSL</key>
+            <true/>
+            <key>UserName</key>
+            <string>juanchavez4@companyemail.com</string>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>Exchange Web Service</string>
+    <key>PayloadIdentifier</key>
+    <string>com.example.myprofile</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>ccb3eded-4486-4af8-81a3-add2d39cdfe7</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
+
+```
+
+## See Also
+
+- [object ExchangeActiveSync](exchangeactivesync.md)
+  The payload you use to configure Exchange ActiveSync accounts.
+- [object Mail](mail.md)
+  The payload you use to configure a mail account on the device.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/exchangewebservices)*

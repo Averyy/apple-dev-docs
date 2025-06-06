@@ -1,6 +1,6 @@
 # setText(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the text displayed by the text field.

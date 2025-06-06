@@ -1,6 +1,6 @@
 # setContentInset(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the distance between the edges of the group and any contained objects.

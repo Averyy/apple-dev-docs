@@ -1,6 +1,6 @@
 # WKMenuItemIcon.block
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The icon indicating an action to block or prevent something from happening.

@@ -1,0 +1,98 @@
+# Power Devices
+
+**Framework**: HIDDriverKit
+
+Usages for devices that measure or track power, such as universal power supplies or chargers.
+
+## Topics
+
+### Getting the Usages
+- [kHIDUsage_PD_ActivePower](khidusage_pd_activepower.md)
+- [kHIDUsage_PD_ApparentPower](khidusage_pd_apparentpower.md)
+- [kHIDUsage_PD_AudibleAlarmControl](khidusage_pd_audiblealarmcontrol.md)
+- [kHIDUsage_PD_AwaitingPower](khidusage_pd_awaitingpower.md)
+- [kHIDUsage_PD_BadCount](khidusage_pd_badcount.md)
+- [kHIDUsage_PD_Battery](khidusage_pd_battery.md)
+- [kHIDUsage_PD_BatteryID](khidusage_pd_batteryid.md)
+- [kHIDUsage_PD_BatterySystem](khidusage_pd_batterysystem.md)
+- [kHIDUsage_PD_BatterySystemID](khidusage_pd_batterysystemid.md)
+- [kHIDUsage_PD_Boost](khidusage_pd_boost.md)
+- [kHIDUsage_PD_Buck](khidusage_pd_buck.md)
+- [kHIDUsage_PD_ChangedStatus](khidusage_pd_changedstatus.md)
+- [kHIDUsage_PD_Charger](khidusage_pd_charger.md)
+- [kHIDUsage_PD_ChargerID](khidusage_pd_chargerid.md)
+- [kHIDUsage_PD_CommunicationLost](khidusage_pd_communicationlost.md)
+- [kHIDUsage_PD_ConfigActivePower](khidusage_pd_configactivepower.md)
+- [kHIDUsage_PD_ConfigApparentPower](khidusage_pd_configapparentpower.md)
+- [kHIDUsage_PD_ConfigCurrent](khidusage_pd_configcurrent.md)
+- [kHIDUsage_PD_ConfigFrequency](khidusage_pd_configfrequency.md)
+- [kHIDUsage_PD_ConfigHumidity](khidusage_pd_confighumidity.md)
+- [kHIDUsage_PD_ConfigPercentLoad](khidusage_pd_configpercentload.md)
+- [kHIDUsage_PD_ConfigTemperature](khidusage_pd_configtemperature.md)
+- [kHIDUsage_PD_ConfigVoltage](khidusage_pd_configvoltage.md)
+- [kHIDUsage_PD_Current](khidusage_pd_current.md)
+- [kHIDUsage_PD_DelayBeforeReboot](khidusage_pd_delaybeforereboot.md)
+- [kHIDUsage_PD_DelayBeforeShutdown](khidusage_pd_delaybeforeshutdown.md)
+- [kHIDUsage_PD_DelayBeforeStartup](khidusage_pd_delaybeforestartup.md)
+- [kHIDUsage_PD_Flow](khidusage_pd_flow.md)
+- [kHIDUsage_PD_FlowID](khidusage_pd_flowid.md)
+- [kHIDUsage_PD_Frequency](khidusage_pd_frequency.md)
+- [kHIDUsage_PD_FrequencyOutOfRange](khidusage_pd_frequencyoutofrange.md)
+- [kHIDUsage_PD_Gang](khidusage_pd_gang.md)
+- [kHIDUsage_PD_GangID](khidusage_pd_gangid.md)
+- [kHIDUsage_PD_Good](khidusage_pd_good.md)
+- [kHIDUsage_PD_HighVoltageTransfer](khidusage_pd_highvoltagetransfer.md)
+- [kHIDUsage_PD_Humidity](khidusage_pd_humidity.md)
+- [kHIDUsage_PD_Initialized](khidusage_pd_initialized.md)
+- [kHIDUsage_PD_Input](khidusage_pd_input.md)
+- [kHIDUsage_PD_InputID](khidusage_pd_inputid.md)
+- [kHIDUsage_PD_InternalFailure](khidusage_pd_internalfailure.md)
+- [kHIDUsage_PD_LowVoltageTransfer](khidusage_pd_lowvoltagetransfer.md)
+- [kHIDUsage_PD_ModuleReset](khidusage_pd_modulereset.md)
+- [kHIDUsage_PD_Outlet](khidusage_pd_outlet.md)
+- [kHIDUsage_PD_OutletID](khidusage_pd_outletid.md)
+- [kHIDUsage_PD_OutletSystem](khidusage_pd_outletsystem.md)
+- [kHIDUsage_PD_OutletSystemID](khidusage_pd_outletsystemid.md)
+- [kHIDUsage_PD_Output](khidusage_pd_output.md)
+- [kHIDUsage_PD_OutputID](khidusage_pd_outputid.md)
+- [kHIDUsage_PD_OverCharged](khidusage_pd_overcharged.md)
+- [kHIDUsage_PD_OverTemperature](khidusage_pd_overtemperature.md)
+- [kHIDUsage_PD_Overload](khidusage_pd_overload.md)
+- [kHIDUsage_PD_PercentLoad](khidusage_pd_percentload.md)
+- [kHIDUsage_PD_PeripheralDevice](khidusage_pd_peripheraldevice.md)
+- [kHIDUsage_PD_PowerConverter](khidusage_pd_powerconverter.md)
+- [kHIDUsage_PD_PowerConverterID](khidusage_pd_powerconverterid.md)
+- [kHIDUsage_PD_PowerSummary](khidusage_pd_powersummary.md)
+- [kHIDUsage_PD_PowerSummaryID](khidusage_pd_powersummaryid.md)
+- [kHIDUsage_PD_PowerSupply](khidusage_pd_powersupply.md)
+- [kHIDUsage_PD_Present](khidusage_pd_present.md)
+- [kHIDUsage_PD_PresentStatus](khidusage_pd_presentstatus.md)
+- [kHIDUsage_PD_ShutdownImminent](khidusage_pd_shutdownimminent.md)
+- [kHIDUsage_PD_ShutdownRequested](khidusage_pd_shutdownrequested.md)
+- [kHIDUsage_PD_SwitchOffControl](khidusage_pd_switchoffcontrol.md)
+- [kHIDUsage_PD_SwitchOnControl](khidusage_pd_switchoncontrol.md)
+- [kHIDUsage_PD_SwitchOnOff](khidusage_pd_switchonoff.md)
+- [kHIDUsage_PD_Switchable](khidusage_pd_switchable.md)
+- [kHIDUsage_PD_Temperature](khidusage_pd_temperature.md)
+- [kHIDUsage_PD_Test](khidusage_pd_test.md)
+- [kHIDUsage_PD_Tested](khidusage_pd_tested.md)
+- [kHIDUsage_PD_ToggleControl](khidusage_pd_togglecontrol.md)
+- [kHIDUsage_PD_UPS](khidusage_pd_ups.md)
+- [kHIDUsage_PD_Undefined](khidusage_pd_undefined.md)
+- [kHIDUsage_PD_Used](khidusage_pd_used.md)
+- [kHIDUsage_PD_Voltage](khidusage_pd_voltage.md)
+- [kHIDUsage_PD_VoltageOutOfRange](khidusage_pd_voltageoutofrange.md)
+- [kHIDUsage_PD_iManufacturer](khidusage_pd_imanufacturer.md)
+- [kHIDUsage_PD_iName](khidusage_pd_iname.md)
+- [kHIDUsage_PD_iProduct](khidusage_pd_iproduct.md)
+- [kHIDUsage_PD_iserialNumber](khidusage_pd_iserialnumber.md)
+
+## See Also
+
+- [Battery System](battery-system-enum.md)
+  Usages for devices that manage a battery.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/hiddriverkit/power-devices-enum)*

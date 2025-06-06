@@ -1,0 +1,19 @@
+# CSSMERR_TP_NO_DEFAULT_AUTHORITY
+
+**Framework**: Security  
+**Kind**: var
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.0+
+
+## Declaration
+
+```swift
+var CSSMERR_TP_NO_DEFAULT_AUTHORITY: Int { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/security/cssmerr_tp_no_default_authority)*

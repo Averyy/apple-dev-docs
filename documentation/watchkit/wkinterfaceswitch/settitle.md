@@ -1,6 +1,6 @@
 # setTitle(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the switch title to the specified string.

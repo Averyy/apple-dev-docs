@@ -1,6 +1,6 @@
 # setBackgroundImage(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the button’s background image to the specified image.

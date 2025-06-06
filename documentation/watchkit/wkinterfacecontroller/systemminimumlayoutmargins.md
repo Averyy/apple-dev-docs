@@ -1,6 +1,6 @@
 # systemMinimumLayoutMargins
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 Leading and trailing insets that represent the minimum layout margins for text elements.

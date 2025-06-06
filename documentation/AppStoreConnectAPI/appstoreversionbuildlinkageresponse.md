@@ -1,0 +1,52 @@
+# AppStoreVersionBuildLinkageResponse
+
+**Framework**: App Store Connect API  
+**Kind**: dictionary
+
+A response body that contains the ID of a single related resource.
+
+**Availability**:
+- App Store Connect API 1.2+
+
+## Declaration
+
+```swift
+object AppStoreVersionBuildLinkageResponse
+```
+
+## Topics
+
+### Objects
+- [object AppStoreVersionBuildLinkageResponse.Data](appstoreversionbuildlinkageresponse/data-data.dictionary.md)
+  The data element of the response body.
+
+## See Also
+
+- [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)
+  The request body you use to update an App Store Version.
+- [object AgeRatingDeclaration](ageratingdeclaration.md)
+  The data structure that represents an Age Rating Declarations resource.
+- [object AgeRatingDeclarationWithoutIncludesResponse](ageratingdeclarationwithoutincludesresponse.md)
+- [object AppStoreVersion](appstoreversion.md)
+  The data structure that represent an App Store Versions resource.
+- [object AppStoreVersionResponse](appstoreversionresponse.md)
+  A response that contains a single App Store Versions resource.
+- [object AppStoreVersionsResponse](appstoreversionsresponse.md)
+  A response that contains a list of App Store Version resources.
+- [object AppStoreVersionCreateRequest](appstoreversioncreaterequest.md)
+  The request body you use to create an App Store Version.
+- [object AppStoreVersionBuildLinkageRequest](appstoreversionbuildlinkagerequest.md)
+  The request body you use to attach a build to an App Store version.
+- [object AppStoreVersionAppClipDefaultExperienceLinkageRequest](appstoreversionappclipdefaultexperiencelinkagerequest.md)
+  The request body you use to attach a default App Clip experience to an App Store version.
+- [object AppStoreVersionAppClipDefaultExperienceLinkageResponse](appstoreversionappclipdefaultexperiencelinkageresponse.md)
+  A response that contains the ID of a single related Default App Clip Experiences resource.
+- [type AppStoreVersionState](appstoreversionstate.md)
+  String that represents the state of an app version in the App Store.
+- [type AppVersionState](appversionstate.md)
+  String that represents the state of an app version.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/appstoreversionbuildlinkageresponse)*

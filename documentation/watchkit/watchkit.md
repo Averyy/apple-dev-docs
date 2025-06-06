@@ -1,6 +1,6 @@
 # WatchKit
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: module
 
 Build watchOS apps that use features the app delegate monitors or controls, such as background tasks and extended runtime sessions.
@@ -39,7 +39,7 @@ For more information on building watchOS apps, see [`watchOS apps`](https://deve
   Creates the application object and the application delegate, and sets up the app’s event cycle.
 - [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- [WKPrefersNetworkUponForeground](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground)
+- [WKPrefersNetworkUponForeground](../BundleResources/Information-Property-List/WKPrefersNetworkUponForeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 ### Runtime management
 - [Background execution](background-execution.md)
@@ -64,4 +64,4 @@ For more information on building watchOS apps, see [`watchOS apps`](https://deve
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit)*

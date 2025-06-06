@@ -1,6 +1,6 @@
 # Audio Recording Options
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Options to specify when recording audio.
 

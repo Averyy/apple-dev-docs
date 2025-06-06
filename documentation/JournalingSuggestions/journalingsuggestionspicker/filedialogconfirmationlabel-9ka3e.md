@@ -1,0 +1,26 @@
+# fileDialogConfirmationLabel(_:)
+
+**Framework**: Journaling Suggestions  
+**Kind**: method
+
+On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
+
+**Availability**:
+- iOS 17.0+
+- macOS 14.0+
+
+## Declaration
+
+```swift
+nonisolated
+func fileDialogConfirmationLabel<S>(_ label: S) -> some View where S : StringProtocol
+```
+
+## Parameters
+
+- `label`: The string to use as the label for the confirmation button.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionspicker/filedialogconfirmationlabel(_:)-9ka3e)*

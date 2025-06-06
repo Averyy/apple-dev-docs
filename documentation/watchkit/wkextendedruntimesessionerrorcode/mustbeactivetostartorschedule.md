@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionErrorCode.mustBeActiveToStartOrSchedule
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The watchOS app attempted to start or schedule a session while not in an active state.

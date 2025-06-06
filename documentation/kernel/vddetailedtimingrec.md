@@ -1,0 +1,136 @@
+# VDDetailedTimingRec
+
+**Framework**: Kernel  
+**Kind**: tdef
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```swift
+typedef struct VDDetailedTimingRec VDDetailedTimingRec;
+```
+
+## Topics
+
+### Instance Properties
+- [csDisplayModeAlias](vddetailedtimingrec/1486980-csdisplaymodealias.md)
+- [csDisplayModeID](vddetailedtimingrec/1488149-csdisplaymodeid.md)
+- [csDisplayModeSeed](vddetailedtimingrec/1488503-csdisplaymodeseed.md)
+- [csDisplayModeState](vddetailedtimingrec/1488182-csdisplaymodestate.md)
+- [csHorizontalActive](vddetailedtimingrec/1487099-cshorizontalactive.md)
+- [csHorizontalBlanking](vddetailedtimingrec/1487458-cshorizontalblanking.md)
+- [csHorizontalBorderLeft](vddetailedtimingrec/1487476-cshorizontalborderleft.md)
+- [csHorizontalBorderRight](vddetailedtimingrec/1488010-cshorizontalborderright.md)
+- [csHorizontalSyncConfig](vddetailedtimingrec/1487251-cshorizontalsyncconfig.md)
+- [csHorizontalSyncLevel](vddetailedtimingrec/1488541-cshorizontalsynclevel.md)
+- [csHorizontalSyncOffset](vddetailedtimingrec/1488084-cshorizontalsyncoffset.md)
+- [csHorizontalSyncPulseWidth](vddetailedtimingrec/1487920-cshorizontalsyncpulsewidth.md)
+- [csMaxPixelClock](vddetailedtimingrec/1488407-csmaxpixelclock.md)
+- [csMinPixelClock](vddetailedtimingrec/1487591-csminpixelclock.md)
+- [csNumLinks](vddetailedtimingrec/1486966-csnumlinks.md)
+- [csPixelClock](vddetailedtimingrec/1487998-cspixelclock.md)
+- [csReserved2](vddetailedtimingrec/1487365-csreserved2.md)
+- [csReserved3](vddetailedtimingrec/1487697-csreserved3.md)
+- [csReserved4](vddetailedtimingrec/1488365-csreserved4.md)
+- [csReserved5](vddetailedtimingrec/1487843-csreserved5.md)
+- [csReserved6](vddetailedtimingrec/1487075-csreserved6.md)
+- [csReserved7](vddetailedtimingrec/1488203-csreserved7.md)
+- [csReserved8](vddetailedtimingrec/1488411-csreserved8.md)
+- [csSignalConfig](vddetailedtimingrec/1488539-cssignalconfig.md)
+- [csSignalLevels](vddetailedtimingrec/1488072-cssignallevels.md)
+- [csTimingReserved](vddetailedtimingrec/1488564-cstimingreserved.md)
+- [csTimingSize](vddetailedtimingrec/1487922-cstimingsize.md)
+- [csTimingType](vddetailedtimingrec/1486992-cstimingtype.md)
+- [csTimingVersion](vddetailedtimingrec/1488568-cstimingversion.md)
+- [csVerticalActive](vddetailedtimingrec/1487984-csverticalactive.md)
+- [csVerticalBlanking](vddetailedtimingrec/1486950-csverticalblanking.md)
+- [csVerticalBorderBottom](vddetailedtimingrec/1487176-csverticalborderbottom.md)
+- [csVerticalBorderTop](vddetailedtimingrec/1488543-csverticalbordertop.md)
+- [csVerticalSyncConfig](vddetailedtimingrec/1488220-csverticalsyncconfig.md)
+- [csVerticalSyncLevel](vddetailedtimingrec/1488147-csverticalsynclevel.md)
+- [csVerticalSyncOffset](vddetailedtimingrec/1488460-csverticalsyncoffset.md)
+- [csVerticalSyncPulseWidth](vddetailedtimingrec/1487808-csverticalsyncpulsewidth.md)
+
+## See Also
+
+- [VDClutBehavior](vdclutbehavior.md)
+- [VDClutBehaviorPtr](vdclutbehaviorptr.md)
+- [VDCommunicationInfoPtr](vdcommunicationinfoptr.md)
+- [VDCommunicationInfoRec](vdcommunicationinforec.md)
+- [VDCommunicationPtr](vdcommunicationptr.md)
+- [VDCommunicationRec](vdcommunicationrec.md)
+- [VDConfigurationFeatureListRec](vdconfigurationfeaturelistrec.md)
+- [VDConfigurationFeatureListRecPtr](vdconfigurationfeaturelistrecptr.md)
+- [VDConfigurationPtr](vdconfigurationptr.md)
+- [VDConfigurationRec](vdconfigurationrec.md)
+- [VDConvolutionInfoPtr](vdconvolutioninfoptr.md)
+- [VDConvolutionInfoRec](vdconvolutioninforec.md)
+- [VDDDCBlockPtr](vdddcblockptr.md)
+- [VDDDCBlockRec](vdddcblockrec.md)
+- [VDDefMode](vddefmode.md)
+- [VDDefModePtr](vddefmodeptr.md)
+- [VDDetailedTimingPtr](vddetailedtimingptr.md)
+- [VDDisplayConnectInfoPtr](vddisplayconnectinfoptr.md)
+- [VDDisplayConnectInfoRec](vddisplayconnectinforec.md)
+- [VDDisplayTimingRangePtr](vddisplaytimingrangeptr.md)
+- [VDDisplayTimingRangeRec](vddisplaytimingrangerec.md)
+- [VDDrawHardwareCursorPtr](vddrawhardwarecursorptr.md)
+- [VDDrawHardwareCursorRec](vddrawhardwarecursorrec.md)
+- [VDEntRecPtr](vdentrecptr.md)
+- [VDEntryRecord](vdentryrecord.md)
+- [VDFlagRecPtr](vdflagrecptr.md)
+- [VDFlagRecord](vdflagrecord.md)
+- [VDGamRecPtr](vdgamrecptr.md)
+  Represents a type used by the Video Components API.
+- [VDGammaInfoPtr](vdgammainfoptr.md)
+- [VDGammaInfoRec](vdgammainforec.md)
+- [VDGammaRecord](vdgammarecord.md)
+- [VDGetGammaListPtr](vdgetgammalistptr.md)
+- [VDGetGammaListRec](vdgetgammalistrec.md)
+- [VDGrayPtr](vdgrayptr.md)
+- [VDGrayRecord](vdgrayrecord.md)
+- [VDHardwareCursorDrawStatePtr](vdhardwarecursordrawstateptr.md)
+- [VDHardwareCursorDrawStateRec](vdhardwarecursordrawstaterec.md)
+- [VDMirrorPtr](vdmirrorptr.md)
+- [VDMirrorRec](vdmirrorrec.md)
+- [VDMultiConnectInfoPtr](vdmulticonnectinfoptr.md)
+- [VDMultiConnectInfoRec](vdmulticonnectinforec.md)
+- [VDPageInfo](vdpageinfo.md)
+- [VDPgInfoPtr](vdpginfoptr.md)
+- [VDPowerStatePtr](vdpowerstateptr.md)
+- [VDPowerStateRec](vdpowerstaterec.md)
+- [VDPrivateSelectorDataRec](vdprivateselectordatarec.md)
+- [VDPrivateSelectorRec](vdprivateselectorrec.md)
+- [VDResolutionInfoPtr](vdresolutioninfoptr.md)
+- [VDResolutionInfoRec](vdresolutioninforec.md)
+- [VDRetrieveGammaPtr](vdretrievegammaptr.md)
+- [VDRetrieveGammaRec](vdretrievegammarec.md)
+- [VDScalerInfoPtr](vdscalerinfoptr.md)
+- [VDScalerInfoRec](vdscalerinforec.md)
+- [VDScalerPtr](vdscalerptr.md)
+- [VDScalerRec](vdscalerrec.md)
+- [VDSetEntryPtr](vdsetentryptr.md)
+- [VDSetEntryRecord](vdsetentryrecord.md)
+- [VDSetHardwareCursorPtr](vdsethardwarecursorptr.md)
+- [VDSetHardwareCursorRec](vdsethardwarecursorrec.md)
+- [VDSettings](vdsettings.md)
+- [VDSettingsPtr](vdsettingsptr.md)
+- [VDSizeInfo](vdsizeinfo.md)
+- [VDSupportsHardwareCursorPtr](vdsupportshardwarecursorptr.md)
+- [VDSupportsHardwareCursorRec](vdsupportshardwarecursorrec.md)
+- [VDSwitchInfoPtr](vdswitchinfoptr.md)
+- [VDSwitchInfoRec](vdswitchinforec.md)
+- [VDSyncInfoPtr](vdsyncinfoptr.md)
+- [VDSyncInfoRec](vdsyncinforec.md)
+- [VDSzInfoPtr](vdszinfoptr.md)
+- [VDTimingInfoPtr](vdtiminginfoptr.md)
+- [VDTimingInfoRec](vdtiminginforec.md)
+- [VDVideoParametersInfoPtr](vdvideoparametersinfoptr.md)
+- [VDVideoParametersInfoRec](vdvideoparametersinforec.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/vddetailedtimingrec)*

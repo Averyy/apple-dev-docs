@@ -1,0 +1,4 @@
+Completed scraping GLKit!
+Total pages scraped: 515
+Pages skipped (unchanged): 1
+Pages failed: 0

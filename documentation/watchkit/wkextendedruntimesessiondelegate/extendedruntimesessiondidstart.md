@@ -1,6 +1,6 @@
 # extendedRuntimeSessionDidStart(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method  
 **Required**: Yes
 

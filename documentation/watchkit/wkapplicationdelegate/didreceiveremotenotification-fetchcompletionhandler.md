@@ -1,6 +1,6 @@
 # didReceiveRemoteNotification(_:fetchCompletionHandler:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the delegate that a background notification has arrived.

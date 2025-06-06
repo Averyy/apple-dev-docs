@@ -1,0 +1,35 @@
+# frexp
+
+**Framework**: Kernel  
+**Kind**: func
+
+**Availability**:
+- macOS 10.10+
+
+## Declaration
+
+```swift
+double frexp(double, int *);
+```
+
+## See Also
+
+- [exp](1557217-exp.md)
+- [exp2](1557304-exp2.md)
+- [exp2f](1557192-exp2f.md)
+- [exp2l](1557194-exp2l.md)
+- [expf](1532210-expf.md)
+- [expl](1557224-expl.md)
+- [expm1](1557227-expm1.md)
+- [expm1f](1557179-expm1f.md)
+- [expm1l](1557178-expm1l.md)
+- [frexpf](1557321-frexpf.md)
+- [frexpl](1557175-frexpl.md)
+- [ldexp](1557152-ldexp.md)
+- [ldexpf](1557190-ldexpf.md)
+- [ldexpl](1557365-ldexpl.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1557221-frexp)*

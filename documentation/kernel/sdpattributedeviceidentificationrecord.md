@@ -1,0 +1,35 @@
+# SDPAttributeDeviceIdentificationRecord
+
+**Framework**: Kernel  
+**Kind**: tag
+
+**Availability**:
+- macOS 10.6+
+
+## Declaration
+
+```swift
+enum SDPAttributeDeviceIdentificationRecord : unsigned int {
+    ...
+};
+```
+
+## Topics
+
+### Constants
+- [kBluetoothSDPAttributeDeviceIdentifierClientExecutableURL](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifierclientexecutableurl.md)
+- [kBluetoothSDPAttributeDeviceIdentifierDocumentationURL](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifierdocumentationurl.md)
+- [kBluetoothSDPAttributeDeviceIdentifierPrimaryRecord](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifierprimaryrecord.md)
+- [kBluetoothSDPAttributeDeviceIdentifierProductID](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifierproductid.md)
+- [kBluetoothSDPAttributeDeviceIdentifierReservedRangeEnd](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifierreservedrangeend.md)
+- [kBluetoothSDPAttributeDeviceIdentifierReservedRangeStart](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifierreservedrangestart.md)
+- [kBluetoothSDPAttributeDeviceIdentifierServiceDescription](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifierservicedescription.md)
+- [kBluetoothSDPAttributeDeviceIdentifierSpecificationID](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifierspecificationid.md)
+- [kBluetoothSDPAttributeDeviceIdentifierVendorID](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifiervendorid.md)
+- [kBluetoothSDPAttributeDeviceIdentifierVendorIDSource](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifiervendoridsource.md)
+- [kBluetoothSDPAttributeDeviceIdentifierVersion](sdpattributedeviceidentificationrecord/kbluetoothsdpattributedeviceidentifierversion.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/sdpattributedeviceidentificationrecord)*

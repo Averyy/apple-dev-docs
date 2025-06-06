@@ -1,0 +1,37 @@
+# RightTopMiddle
+
+**Framework**: AudioDriverKit  
+**Kind**: case
+
+The right top middle channel.
+
+**Availability**:
+- DriverKit 21.0+
+
+## Declaration
+
+```swift
+RightTopMiddle
+```
+
+## See Also
+
+- [Right](audiodriverkit/iouseraudiochannellabel/right.md)
+  The right channel.
+- [RightCenter](audiodriverkit/iouseraudiochannellabel/rightcenter.md)
+  The right center channel.
+- [RightTopFront](audiodriverkit/iouseraudiochannellabel/righttopfront.md)
+  The right top front channel.
+- [VerticalHeightRight](audiodriverkit/iouseraudiochannellabel/verticalheightright.md)
+  A synonym for the top-right–front channel.
+- [RightTopRear](audiodriverkit/iouseraudiochannellabel/righttoprear.md)
+  The right top rear channel.
+- [RightTotal](audiodriverkit/iouseraudiochannellabel/righttotal.md)
+  A matrix encode of four right channels.
+- [RightWide](audiodriverkit/iouseraudiochannellabel/rightwide.md)
+  The right wide channel.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/audiodriverkit/audiodriverkit/iouseraudiochannellabel/righttopmiddle)*

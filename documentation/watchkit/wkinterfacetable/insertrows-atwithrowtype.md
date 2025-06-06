@@ -1,6 +1,6 @@
 # insertRows(at:withRowType:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Inserts rows into the table at the specified indexes.

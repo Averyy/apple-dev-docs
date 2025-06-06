@@ -1,0 +1,38 @@
+# BluetoothAMPCreatePhysicalLinkResponseStatus
+
+**Framework**: Kernel  
+**Kind**: tdef
+
+**Availability**:
+- macOS 10.6+
+
+## Declaration
+
+```swift
+typedef enum BluetoothAMPCreatePhysicalLinkResponseStatus BluetoothAMPCreatePhysicalLinkResponseStatus;
+```
+
+## Topics
+
+### Constants
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseAMPDisconnectedPhysicalLinkRequestReceived](bluetoothampcreatephysicallinkresponsestatus/kbluetoothampmanagercreatephysicallinkresponseampdisconnectedphysicallinkrequestreceived.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseCollisionOccurred](bluetoothampcreatephysicallinkresponsestatus/kbluetoothampmanagercreatephysicallinkresponsecollisionoccurred.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseInvalidControllerID](bluetoothampcreatephysicallinkresponsestatus/kbluetoothampmanagercreatephysicallinkresponseinvalidcontrollerid.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponsePhysicalLinkAlreadyExists](bluetoothampcreatephysicallinkresponsestatus/kbluetoothampmanagercreatephysicallinkresponsephysicallinkalreadyexists.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseSecurityViolation](bluetoothampcreatephysicallinkresponsestatus/kbluetoothampmanagercreatephysicallinkresponsesecurityviolation.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseSuccess](bluetoothampcreatephysicallinkresponsestatus/kbluetoothampmanagercreatephysicallinkresponsesuccess.md)
+- [kBluetoothAMPManagerCreatePhysicalLinkResponseUnableToStartLinkCreation](bluetoothampcreatephysicallinkresponsestatus/kbluetoothampmanagercreatephysicallinkresponseunabletostartlinkcreation.md)
+
+## See Also
+
+- [BluetoothAMPCommandRejectReason](bluetoothampcommandrejectreason.md)
+- [BluetoothAMPDisconnectPhysicalLinkResponseStatus](bluetoothampdisconnectphysicallinkresponsestatus.md)
+- [BluetoothAMPDiscoverResponseControllerStatus](bluetoothampdiscoverresponsecontrollerstatus.md)
+- [BluetoothAMPGetAssocResponseStatus](bluetoothampgetassocresponsestatus.md)
+- [BluetoothAMPGetInfoResponseStatus](bluetoothampgetinforesponsestatus.md)
+- [BluetoothAMPManagerCode](bluetoothampmanagercode.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/bluetoothampcreatephysicallinkresponsestatus)*

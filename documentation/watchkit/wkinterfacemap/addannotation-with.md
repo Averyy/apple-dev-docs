@@ -1,6 +1,6 @@
 # addAnnotation(_:with:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Adds a pin to the map at the specified location.

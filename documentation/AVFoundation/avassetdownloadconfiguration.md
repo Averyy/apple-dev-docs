@@ -1,0 +1,68 @@
+# AVAssetDownloadConfiguration
+
+**Framework**: AVFoundation  
+**Kind**: class
+
+An object that provides the configuration for a download task.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+class AVAssetDownloadConfiguration
+```
+
+## Topics
+
+### Creating a Configuration
+- [convenience init(asset: AVURLAsset, title: String)](avassetdownloadconfiguration/init(asset:title:).md)
+  Creates a download configuration for a media asset.
+### Accessing Configuration Details
+- [var artworkData: Data?](avassetdownloadconfiguration/artworkdata.md)
+  A data value that represents the asset’s artwork.
+- [var primaryContentConfiguration: AVAssetDownloadContentConfiguration](avassetdownloadconfiguration/primarycontentconfiguration.md)
+  The configuration for the primary content that the task downloads.
+- [var auxiliaryContentConfigurations: [AVAssetDownloadContentConfiguration]](avassetdownloadconfiguration/auxiliarycontentconfigurations.md)
+  The configuration for the auxiliary content that the task downloads.
+- [class AVAssetDownloadContentConfiguration](avassetdownloadcontentconfiguration.md)
+  A configuration object that contains variant qualifiers and media options.
+- [var optimizesAuxiliaryContentConfigurations: Bool](avassetdownloadconfiguration/optimizesauxiliarycontentconfigurations.md)
+  A Boolean value that indicates whether the task optimizes auxiliary content selection.
+### Instance Methods
+- [func setInterstitialMediaSelectionCriteria([AVPlayerMediaSelectionCriteria], forMediaCharacteristic: AVMediaCharacteristic)](avassetdownloadconfiguration/setinterstitialmediaselectioncriteria(_:formediacharacteristic:).md)
+
+## Relationships
+
+### Inherits From
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [func makeAssetDownloadTask(downloadConfiguration: AVAssetDownloadConfiguration) -> AVAssetDownloadTask](avassetdownloadurlsession/makeassetdownloadtask(downloadconfiguration:).md)
+  Creates a download task that uses the specified configuration.
+- [func makeAssetDownloadTask(asset: AVURLAsset, assetTitle: String, assetArtworkData: Data?, options: [String : Any]?) -> AVAssetDownloadTask?](avassetdownloadurlsession/makeassetdownloadtask(asset:assettitle:assetartworkdata:options:).md)
+  Creates a download task to download the asset.
+- [func aggregateAssetDownloadTask(with: AVURLAsset, mediaSelections: [AVMediaSelection], assetTitle: String, assetArtworkData: Data?, options: [String : Any]?) -> AVAggregateAssetDownloadTask?](avassetdownloadurlsession/aggregateassetdownloadtask(with:mediaselections:assettitle:assetartworkdata:options:).md)
+  Creates a download task to download the asset and media selections.
+- [func makeAssetDownloadTask(asset: AVURLAsset, destinationURL: URL, options: [String : Any]?) -> AVAssetDownloadTask?](avassetdownloadurlsession/makeassetdownloadtask(asset:destinationurl:options:).md)
+  Creates a download task to download the asset to the indicated location.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avassetdownloadconfiguration)*

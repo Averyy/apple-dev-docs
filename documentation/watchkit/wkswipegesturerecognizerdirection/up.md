@@ -1,6 +1,6 @@
 # up
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The touch moves upward.

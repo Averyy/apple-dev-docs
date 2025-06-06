@@ -1,0 +1,81 @@
+# MetricsKey
+
+**Framework**: Create ML Components  
+**Kind**: struct
+
+A key that uniquely identifies a metric.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS 1.0+
+- watchOS 11.0+
+
+## Declaration
+
+```swift
+struct MetricsKey
+```
+
+## Topics
+
+### Creating the key
+- [init(rawValue: String)](metricskey/init(rawvalue:).md)
+  Creates a new instance with the specified raw value.
+### Getting the properties
+- [static let source: MetricsKey](metricskey/source.md)
+  A key associated with a temporal stream source (e.g. a file name).
+- [static let trainingAccuracy: MetricsKey](metricskey/trainingaccuracy.md)
+  A key associated with a training accuracy metric.
+- [static let trainingError: MetricsKey](metricskey/trainingerror.md)
+  A key associated with a training error metric.
+- [static let trainingLoss: MetricsKey](metricskey/trainingloss.md)
+  A key associated with a training loss metric.
+- [static let trainingMaximumError: MetricsKey](metricskey/trainingmaximumerror.md)
+  A key associated with a training maximum error metric.
+- [static let trainingMeanAveragePrecision: MetricsKey](metricskey/trainingmeanaverageprecision.md)
+  A key associated with a training mean average precision metric.
+- [static let validationAccuracy: MetricsKey](metricskey/validationaccuracy.md)
+  A key associated with a validation accuracy metric.
+- [static let validationError: MetricsKey](metricskey/validationerror.md)
+  A key associated with a validation error metric.
+- [static let validationLoss: MetricsKey](metricskey/validationloss.md)
+  A key associated with a validation loss metric.
+- [static let validationMaximumError: MetricsKey](metricskey/validationmaximumerror.md)
+  A key associated with a validation maximum error metric.
+- [static let validationMeanAveragePrecision: MetricsKey](metricskey/validationmeanaverageprecision.md)
+  A key associated with a validation mean average precision metric.
+- [var rawValue: String](metricskey/rawvalue-swift.property.md)
+  The corresponding value of the raw type.
+### Type Aliases
+- [MetricsKey.RawValue](metricskey/rawvalue-swift.typealias.md)
+  The raw type that can be used to represent all values of the conforming type.
+### Default Implementations
+- [CustomDebugStringConvertible Implementations](metricskey/customdebugstringconvertible-implementations.md)
+- [Equatable Implementations](metricskey/equatable-implementations.md)
+- [RawRepresentable Implementations](metricskey/rawrepresentable-implementations.md)
+
+## Relationships
+
+### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+
+## See Also
+
+- [struct Event](event.md)
+  Maintains the status of the pipeline.
+- [typealias EventHandler](eventhandler.md)
+  A closure to handle processing events.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/metricskey)*

@@ -1,0 +1,33 @@
+# firstPicked
+
+**Framework**: ImageCaptureCore  
+**Kind**: property
+
+A Boolean value that indicates whether a file is autopicked by Photos to represent the burst.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.1+
+- macOS 10.13+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+var firstPicked: Bool { get }
+```
+
+## See Also
+
+- [var burstUUID: String?](iccamerafile/burstuuid.md)
+  The burst UUID of the file if it is in a burst.
+- [var burstFavorite: Bool](iccamerafile/burstfavorite.md)
+  A Boolean value that indicates this file is the burst favorite in a burst.
+- [var burstPicked: Bool](iccamerafile/burstpicked.md)
+  A Boolean value that indicates whether this file is user picked in a burst.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/imagecapturecore/iccamerafile/firstpicked)*

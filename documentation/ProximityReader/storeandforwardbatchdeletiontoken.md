@@ -1,0 +1,52 @@
+# StoreAndForwardBatchDeletionToken
+
+**Framework**: ProximityReader  
+**Kind**: struct
+
+A secure token that you use to delete a Store and Forward batch.
+
+**Availability**:
+- iOS 18.4+
+- iPadOS 18.4+
+- Mac Catalyst 18.4+
+- visionOS 2.4+
+
+## Declaration
+
+```swift
+struct StoreAndForwardBatchDeletionToken
+```
+
+#### Overview
+
+A `StoreAndForwardBatchDeletionToken` holds the token  your payment service provider supplies when they successfully send a batch of Store and Forward payments for processing.
+
+After receiving the raw token data from your provider, create an instance of this structure and pass it to the [`resolveBatch(batchDeletionToken:)`](paymentcardreaderstore/resolvebatch(batchdeletiontoken:).md) method. When resolving a Store and Forward batch, the [`PaymentCardReaderStore`](paymentcardreaderstore.md) uses this token to verify that the payments were delivered to the payment service provider and can now be deleted.
+
+## Topics
+
+### Initializers
+- [init(rawValue: String)](storeandforwardbatchdeletiontoken/init(rawvalue:).md)
+  Creates a token with the string your payment service provider provides.
+### Instance Properties
+- [let rawValue: String](storeandforwardbatchdeletiontoken/rawvalue-swift.property.md)
+  The raw token string your payment service provider supplies.
+### Type Aliases
+- [StoreAndForwardBatchDeletionToken.RawValue](storeandforwardbatchdeletiontoken/rawvalue-swift.typealias.md)
+  The raw type that can be used to represent all values of the conforming type.
+### Default Implementations
+- [Equatable Implementations](storeandforwardbatchdeletiontoken/equatable-implementations.md)
+- [RawRepresentable Implementations](storeandforwardbatchdeletiontoken/rawrepresentable-implementations.md)
+
+## Relationships
+
+### Conforms To
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/storeandforwardbatchdeletiontoken)*

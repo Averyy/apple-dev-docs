@@ -1,0 +1,72 @@
+# max(by:)
+
+**Framework**: RealityKit  
+**Kind**: method
+
+Publishes the maximum value received from the upstream publisher, using the provided ordering closure.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst ?+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS ?+
+- watchOS 6.0+
+
+## Declaration
+
+```swift
+func max(by areInIncreasingOrder: @escaping (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>
+```
+
+#### Return Value
+
+A publisher that publishes the maximum value received from the upstream publisher, after the upstream publisher finishes.
+
+#### Discussion
+
+Use `Publisher/max(by:)` to determine the maximum value of elements received from the upstream publisher based on an ordering closure you specify.
+
+In the example below, an array publishes enumeration elements representing playing card ranks. The `Publisher/max(by:)` operator compares the current and next elements using the `rawValue` property of each enumeration value in the user supplied closure and prints the maximum value found after publishing all of the elements.
+
+```None
+enum Rank: Int {
+    case ace = 1, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king
+}
+
+let cards: [Rank] = [.five, .queen, .ace, .eight, .jack]
+cancellable = cards.publisher
+    .max {
+        return  $0.rawValue > $1.rawValue
+    }
+    .sink { print("\($0)") }
+
+// Prints: "queen"
+```
+
+After this publisher receives a request for more than 0 items, it requests unlimited items from its upstream publisher.
+
+## Parameters
+
+- `areInIncreasingOrder`: A closure that receives two elements and returns true if they’re in increasing order.
+
+## See Also
+
+- [func count() -> Publishers.Count<Self>](loadrequest/count.md)
+  Publishes the number of elements received from the upstream publisher.
+- [func max() -> Publishers.Comparison<Self>](loadrequest/max.md)
+  Publishes the maximum value received from the upstream publisher, after it finishes.
+- [func tryMax(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](loadrequest/trymax(by:).md)
+  Publishes the maximum value received from the upstream publisher, using the provided error-throwing closure to order the items.
+- [func min() -> Publishers.Comparison<Self>](loadrequest/min.md)
+  Publishes the minimum value received from the upstream publisher, after it finishes.
+- [func min(by: (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>](loadrequest/min(by:).md)
+  Publishes the minimum value received from the upstream publisher, after it finishes.
+- [func tryMin(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](loadrequest/trymin(by:).md)
+  Publishes the minimum value received from the upstream publisher, using the provided error-throwing closure to order the items.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/loadrequest/max(by:))*

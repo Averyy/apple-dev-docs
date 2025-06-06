@@ -1,6 +1,6 @@
 # WKAudioFilePlayerStatus.unknown
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The status of the item is unknown because the player has not yet loaded the audio file for playback.

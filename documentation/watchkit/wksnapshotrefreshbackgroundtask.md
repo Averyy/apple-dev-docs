@@ -1,6 +1,6 @@
 # WKSnapshotRefreshBackgroundTask
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: class
 
 A background task used to update your app’s user interface in preparation for a snapshot.
@@ -58,13 +58,13 @@ These requests don’t cancel or replace any of your scheduled requests.
 ### Inherits From
 - [WKRefreshBackgroundTask](wkrefreshbackgroundtask.md)
 ### Conforms To
-- [CVarArg](https://developer.apple.com/documentation/Swift/CVarArg)
-- [CustomDebugStringConvertible](https://developer.apple.com/documentation/Swift/CustomDebugStringConvertible)
-- [CustomStringConvertible](https://developer.apple.com/documentation/Swift/CustomStringConvertible)
-- [Equatable](https://developer.apple.com/documentation/Swift/Equatable)
-- [Hashable](https://developer.apple.com/documentation/Swift/Hashable)
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
-- [Sendable](https://developer.apple.com/documentation/Swift/Sendable)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

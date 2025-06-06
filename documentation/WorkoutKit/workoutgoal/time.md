@@ -1,0 +1,33 @@
+# WorkoutGoal.time(_:_:)
+
+**Framework**: Workoutkit  
+**Kind**: case
+
+A goal based on the amount of time that has elapsed during the workout.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+case time(Double, UnitDuration)
+```
+
+## See Also
+
+- [WorkoutGoal.open](workoutgoal/open.md)
+  An open workout with no set goal.
+- [case distance(Double, UnitLength)](workoutgoal/distance(_:_:).md)
+  A goal based on distance traveled during the workout.
+- [case energy(Double, UnitEnergy)](workoutgoal/energy(_:_:).md)
+  A goal based on the amount of energy burned during the workout.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/workoutkit/workoutgoal/time(_:_:))*

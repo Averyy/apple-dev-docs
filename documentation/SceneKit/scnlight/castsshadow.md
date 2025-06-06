@@ -1,0 +1,53 @@
+# castsShadow
+
+**Framework**: SceneKit  
+**Kind**: property
+
+A Boolean value that determines whether the light casts shadows.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
+
+## Declaration
+
+```swift
+var castsShadow: Bool { get set }
+```
+
+#### Discussion
+
+Geometries illuminated by the light cast shadows only if the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and the [`type`](scnlight/type.md) property of the light is [`spot`](scnlight/lighttype/spot.md) or [`directional`](scnlight/lighttype/directional.md). The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+
+## See Also
+
+- [var shadowRadius: CGFloat](scnlight/shadowradius.md)
+  A number that specifies the amount of blurring around the edges of shadows cast by the light. Animatable.
+- [var shadowColor: Any](scnlight/shadowcolor.md)
+  The color of shadows cast by the light. Animatable.
+- [var shadowMapSize: CGSize](scnlight/shadowmapsize.md)
+  The size of the shadow map image that SceneKit renders when creating shadows.
+- [var shadowSampleCount: Int](scnlight/shadowsamplecount.md)
+  The number of samples from the shadow map that SceneKit uses to render each pixel.
+- [var shadowMode: SCNShadowMode](scnlight/shadowmode.md)
+  The mode SceneKit uses to render shadows.
+- [enum SCNShadowMode](scnshadowmode.md)
+  Options for SceneKit’s rendering of shadows cast by a light, used by the [`shadowMode`](scnlight/shadowmode.md) property.
+- [var shadowBias: CGFloat](scnlight/shadowbias.md)
+  The amount of correction to apply to the shadow to prevent rendering artifacts.
+- [var orthographicScale: CGFloat](scnlight/orthographicscale.md)
+  The orthographic scale SceneKit uses when rendering the shadow map for a directional light.
+- [var zFar: CGFloat](scnlight/zfar.md)
+  The maximum distance between the light and a visible surface for casting shadows.
+- [var zNear: CGFloat](scnlight/znear.md)
+  The minimum distance between the light and a visible surface for casting shadows. Animatable.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnlight/castsshadow)*

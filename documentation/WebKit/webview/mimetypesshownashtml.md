@@ -1,0 +1,40 @@
+# mimeTypesShownAsHTML()
+
+**Framework**: Webkit  
+**Kind**: method
+
+Returns a list of MIME types that WebKit renders as HTML.
+
+**Availability**:
+- macOS 10.3+
+
+## Declaration
+
+```swift
+@MainActor
+class func mimeTypesShownAsHTML() -> [Any]!
+```
+
+#### Return Value
+
+An array containing `NSString` objects that represent the MIME types WebKit attempts to render as HTML.
+
+## See Also
+
+- [class func canShowMIMEType(String!) -> Bool](webview/canshowmimetype(_:).md)
+  Returns whether the receiver can display content of a given MIME type.
+- [class func setMIMETypesShownAsHTML([Any]!)](webview/setmimetypesshownashtml(_:).md)
+  Sets the MIME types that WebKit attempts to render as HTML.
+- [class func canShowMIMEType(asHTML: String!) -> Bool](webview/canshowmimetype(ashtml:).md)
+  Returns whether the receiver interprets a MIME type as HTML.
+- [var supportsTextEncoding: Bool](webview/supportstextencoding.md)
+  A Boolean that indicates whether the document view supports different text encodings.
+- [var customTextEncodingName: String!](webview/customtextencodingname.md)
+  The custom text encoding name.
+- [var textSizeMultiplier: Float](webview/textsizemultiplier.md)
+  The font size multiplier for text displayed in web frame view objects managed by the receiver.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/webview/mimetypesshownashtml())*

@@ -1,6 +1,6 @@
 # contentImage
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The image to display for the item.

@@ -1,6 +1,6 @@
 # advanceToNextItem()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Ends playback of the current item and begins playing the next item in the queue.

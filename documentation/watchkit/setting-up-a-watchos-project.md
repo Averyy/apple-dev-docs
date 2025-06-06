@@ -1,6 +1,6 @@
 # Setting up a watchOS project
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Create a new watchOS project or add a watch target to an existing iOS project.
 
@@ -52,17 +52,17 @@ When developing your watchOS app, edit your app’s storyboard in the WatchKit a
 ## Topics
 
 ### Information Property List Keys
-- [WKWatchKitApp](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKWatchKitApp)
+- [WKWatchKitApp](../BundleResources/Information-Property-List/WKWatchKitApp.md)
   A Boolean value that indicates whether the bundle is a watchOS app.
-- [WKAppBundleIdentifier](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKAppBundleIdentifier)
+- [WKAppBundleIdentifier](../BundleResources/Information-Property-List/WKAppBundleIdentifier.md)
   The bundle ID of the watchOS app.
-- [WKCompanionAppBundleIdentifier](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKCompanionAppBundleIdentifier)
+- [WKCompanionAppBundleIdentifier](../BundleResources/Information-Property-List/WKCompanionAppBundleIdentifier.md)
   The bundle ID of the watchOS app’s companion iOS app.
-- [WKExtensionDelegateClassName](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKExtensionDelegateClassName)
+- [WKExtensionDelegateClassName](../BundleResources/Information-Property-List/WKExtensionDelegateClassName.md)
   The name of your watchOS app’s extension delegate.
-- [WKRunsIndependentlyOfCompanionApp](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKRunsIndependentlyOfCompanionApp)
+- [WKRunsIndependentlyOfCompanionApp](../BundleResources/Information-Property-List/WKRunsIndependentlyOfCompanionApp.md)
   A Boolean value indicating whether the user can install and run the watchOS app independently of its iOS companion app.
-- [WKWatchOnly](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKWatchOnly)
+- [WKWatchOnly](../BundleResources/Information-Property-List/WKWatchOnly.md)
   A Boolean value indicating whether the app is a watch-only app.
 
 ## See Also
@@ -79,7 +79,7 @@ When developing your watchOS app, edit your app’s storyboard in the WatchKit a
   Creates the application object and the application delegate, and sets up the app’s event cycle.
 - [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- [WKPrefersNetworkUponForeground](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKPrefersNetworkUponForeground)
+- [WKPrefersNetworkUponForeground](../BundleResources/Information-Property-List/WKPrefersNetworkUponForeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

@@ -1,0 +1,34 @@
+# loops
+
+**Framework**: PHASE  
+**Kind**: property
+
+Indicates a buffer restarts after it finishes processing.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+static var loops: PHASEPushStreamBufferOptions { get }
+```
+
+## See Also
+
+- [static var `default`: PHASEPushStreamBufferOptions](phasepushstreambufferoptions/default.md)
+  Indicates a buffer processes after existing buffers in the queue.
+- [static var interrupts: PHASEPushStreamBufferOptions](phasepushstreambufferoptions/interrupts.md)
+  Indicates a buffer begins processing immediately.
+- [static var interruptsAtLoop: PHASEPushStreamBufferOptions](phasepushstreambufferoptions/interruptsatloop.md)
+  Indicates a buffer begins processing when an existing buffer loops.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/phase/phasepushstreambufferoptions/loops)*

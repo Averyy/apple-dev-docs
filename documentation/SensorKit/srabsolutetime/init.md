@@ -1,0 +1,31 @@
+# init(_:)
+
+**Framework**: SensorKit  
+**Kind**: init
+
+Creates an absolute time from a raw value.
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst 14.0+
+
+## Declaration
+
+```swift
+init(_ rawValue: CFTimeInterval)
+```
+
+## Parameters
+
+- `rawValue`: The case’s raw value.
+
+## See Also
+
+- [init(rawValue: CFTimeInterval)](srabsolutetime/init(rawvalue:).md)
+  Creates an absolute time from a raw value.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/sensorkit/srabsolutetime/init(_:))*

@@ -1,0 +1,19 @@
+# comment
+
+**Framework**: Open Directory  
+**Kind**: property
+
+**Availability**:
+- Mac Catalyst ?+
+- macOS 10.9+
+
+## Declaration
+
+```swift
+var comment: String! { get set }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/opendirectory/odmappings/comment-swift.property)*

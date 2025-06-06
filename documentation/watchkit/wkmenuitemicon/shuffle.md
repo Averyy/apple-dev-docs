@@ -1,6 +1,6 @@
 # WKMenuItemIcon.shuffle
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The icon indicating an action to shuffle content.

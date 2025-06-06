@@ -1,0 +1,45 @@
+# MTRPowerSourceFeature
+
+**Framework**: Matter  
+**Kind**: struct
+
+**Availability**:
+- iOS 16.1+
+- iPadOS 16.1+
+- Mac Catalyst 16.1+
+- macOS 13.0+
+- tvOS 16.1+
+- visionOS 1.0+
+- watchOS 9.1+
+
+## Declaration
+
+```swift
+struct MTRPowerSourceFeature
+```
+
+## Topics
+
+### Initializers
+- [init(rawValue: UInt32)](mtrpowersourcefeature/init(rawvalue:).md)
+### Type Properties
+- [static var battery: MTRPowerSourceFeature](mtrpowersourcefeature/battery.md)
+- [static var rechargeable: MTRPowerSourceFeature](mtrpowersourcefeature/rechargeable.md)
+- [static var replaceable: MTRPowerSourceFeature](mtrpowersourcefeature/replaceable.md)
+- [static var wired: MTRPowerSourceFeature](mtrpowersourcefeature/wired.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/matter/mtrpowersourcefeature)*

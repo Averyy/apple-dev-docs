@@ -1,0 +1,33 @@
+# summary()
+
+**Framework**: TabularData  
+**Kind**: method
+
+Generates a categorical summary of the column slice’s elements.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+func summary() -> CategoricalSummary<WrappedElement>
+```
+
+## See Also
+
+- [func numericSummary() -> NumericSummary<Double>](discontiguouscolumnslice/numericsummary-3r7pn.md)
+  Generates a numeric summary of the integer column slice’s elements.
+- [func numericSummary() -> NumericSummary<WrappedElement>](discontiguouscolumnslice/numericsummary-4b7m0.md)
+  Generates a numeric summary of the floating-point column slice’s elements.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabulardata/discontiguouscolumnslice/summary())*

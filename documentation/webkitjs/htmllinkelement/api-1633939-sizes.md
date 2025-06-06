@@ -1,0 +1,19 @@
+# sizes
+
+**Framework**: Webkitjs  
+**Kind**: instp
+
+**Availability**:
+- Safari Desktop 9.0+
+- Safari Mobile 9.0+
+
+## Declaration
+
+```swift
+readonly attribute DOMTokenList sizes;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkitjs/htmllinkelement/1633939-sizes)*

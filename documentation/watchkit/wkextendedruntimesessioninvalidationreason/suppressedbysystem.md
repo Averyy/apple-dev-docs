@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionInvalidationReason.suppressedBySystem
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The system is in a state that doesn’t allow sessions of this type.

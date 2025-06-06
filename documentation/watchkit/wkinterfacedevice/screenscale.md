@@ -1,6 +1,6 @@
 # screenScale
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The number of pixels per point for the current screen.

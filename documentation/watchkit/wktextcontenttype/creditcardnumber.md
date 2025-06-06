@@ -1,6 +1,6 @@
 # creditCardNumber
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A credit card number.

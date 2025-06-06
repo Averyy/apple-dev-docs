@@ -1,6 +1,6 @@
 # start()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Starts running the session.

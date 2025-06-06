@@ -1,0 +1,45 @@
+# AVMergedMetrics
+
+**Framework**: AVFoundation  
+**Kind**: struct
+
+An asynchronous stream of metric information from different publishers.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst ?+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
+
+## Declaration
+
+```swift
+struct AVMergedMetrics<MetricEvent1, MetricEvent2, each MetricEventPack> where MetricEvent1 : AVMetricEvent, MetricEvent2 : AVMetricEvent, repeat each MetricEventPack : AVMetricEvent
+```
+
+## Relationships
+
+### Conforms To
+- [AsyncSequence](../Swift/AsyncSequence.md)
+
+## See Also
+
+- [struct AVMetrics](avmetrics.md)
+  An asynchronous stream of metric information.
+- [class AVVideoPerformanceMetrics](avvideoperformancemetrics.md)
+  An object that provides metrics related to video playback quality.
+- [protocol AVMetricEventStreamPublisher](avmetriceventstreampublisher.md)
+  A type for objects that publish metric events to the event stream.
+- [class AVMetricEvent](avmetricevent.md)
+  A base class that represents a metric event.
+- [class AVMetricErrorEvent](avmetricerrorevent.md)
+  An object that represents a metric event when an error occurs.
+- [Metric event types](metric-event-types.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avmergedmetrics)*

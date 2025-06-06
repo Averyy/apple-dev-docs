@@ -1,6 +1,6 @@
 # registerForRemoteNotifications()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Register to receive remote notifications from the Apple Push Notification service (APNs).

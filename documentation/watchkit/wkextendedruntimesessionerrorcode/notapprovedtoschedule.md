@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionErrorCode.notApprovedToSchedule
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The app attempted to schedule a session, but the session type does not support scheduling.

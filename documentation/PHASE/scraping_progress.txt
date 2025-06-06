@@ -1,0 +1,4 @@
+Completed scraping PHASE!
+Total pages scraped: 471
+Pages skipped (unchanged): 1
+Pages failed: 0

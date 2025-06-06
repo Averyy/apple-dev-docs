@@ -1,0 +1,18 @@
+# fifthLongAttribute
+
+**Framework**: Webkitjs  
+**Kind**: instp
+
+**Availability**:
+- Safari Mobile 10.1+
+
+## Declaration
+
+```swift
+attribute long fifthLongAttribute;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkitjs/testserialization/2871237-fifthlongattribute)*

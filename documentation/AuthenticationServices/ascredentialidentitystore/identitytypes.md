@@ -1,0 +1,52 @@
+# ASCredentialIdentityStore.IdentityTypes
+
+**Framework**: Authentication Services  
+**Kind**: struct
+
+**Availability**:
+- iOS 17.4+
+- iPadOS 17.4+
+- Mac Catalyst 17.4+
+- macOS 14.4+
+- visionOS 1.1+
+
+## Declaration
+
+```swift
+struct IdentityTypes
+```
+
+## Topics
+
+### Initializers
+- [init(rawValue: UInt)](ascredentialidentitystore/identitytypes/init(rawvalue:).md)
+### Type Properties
+- [static var passkey: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/passkey.md)
+- [static var password: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/password.md)
+- [static var oneTimeCode: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/onetimecode.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
+
+## See Also
+
+- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum.md)
+- [ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.struct.md)
+- [enum ASAuthorizationProviderExtensionPlatformSSOProtocolVersion](asauthorizationproviderextensionplatformssoprotocolversion.md)
+- [struct ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes.md)
+- [enum ASAuthorizationPublicKeyCredentialAttachment](asauthorizationpublickeycredentialattachment.md)
+- [enum ASPublicKeyCredentialClientDataCrossOriginValue](aspublickeycredentialclientdatacrossoriginvalue.md)
+- [enum ASUserAgeRange](asuseragerange.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/ascredentialidentitystore/identitytypes)*

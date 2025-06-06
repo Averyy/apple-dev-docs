@@ -1,6 +1,6 @@
 # curvesAtBottom
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A Boolean value that determines whether the rows shrink to match the curved corners at the bottom of the screen.

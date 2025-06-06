@@ -1,0 +1,47 @@
+# secondaryTextureCoordinateTransform
+
+**Framework**: RealityKit  
+**Kind**: property
+
+A two-dimensional transformation RealityKit applies to the entity’s secondary texture coordinates.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+
+## Declaration
+
+```swift
+var secondaryTextureCoordinateTransform: CustomMaterial.TextureCoordinateTransform { get set }
+```
+
+#### Discussion
+
+An entity’s UV texture coordinates define how RealityKit maps image textures onto an entity. Use this property to transform the secondary texture coordinates and change the way this material maps textures onto an entity. If an entity has multiple materials assigned to it, the transformation doesn’t affect how the other materials map their textures.
+
+For example, you might change the scale of the UV coordinates to apply a tiled, repeating pattern to the surface of your entity, or continuously rotate or translate the texture coordinates to animate materials and create special effects, such as fire or flowing liquids.
+
+The following example demonstrates how to set a material’s UV transformation:
+
+```swift
+let rotationRadians = Float(45.0) * .pi / 180 // 45 degrees converted to radians.
+
+secondaryTextureCoordinateTransform = .init(
+    offset: [0.5, 0.5], scale: [0.5, 0.5],
+    rotation: rotationRadians
+)
+```
+
+The material’s shader function doesn’t have to do anything to apply the transformation. When the shader calls `params.geometry().uv1()`, RealityKit already transforms the returned coordinates.
+
+## See Also
+
+- [var textureCoordinateTransform: CustomMaterial.TextureCoordinateTransform](custommaterial/texturecoordinatetransform-swift.property.md)
+  A two-dimensional transformation RealityKit applies to the entity’s primary texture coordinates.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/custommaterial/secondarytexturecoordinatetransform)*

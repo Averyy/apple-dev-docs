@@ -1,0 +1,45 @@
+# MLIdentifier
+
+**Framework**: Create ML  
+**Kind**: protocol
+
+A type the Create ML framework can use as a machine learning identifier.
+
+**Availability**:
+- macOS 10.15+
+
+## Declaration
+
+```swift
+protocol MLIdentifier
+```
+
+#### Overview
+
+You can use any type that conforms to the [`MLIdentifier`](mlidentifier.md) protocol, typically [`Int`](https://developer.apple.com/documentation/Swift/Int) or [`String`](https://developer.apple.com/documentation/Swift/String), to uniquely identify users and items in these [`MLRecommender`](mlrecommender.md) methods:
+
+[`recommendations(fromUsers:maxCount:restrictingToItems:excluding:excludingObserved:)`](mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-7an46.md)
+
+- [`getSimilarItems(fromItems:maxCount:)`](mlrecommender/getsimilaritems(fromitems:maxcount:)-kq37.md)
+
+## Topics
+
+### Getting an identifier
+- [var identifierValue: MLDataValue](mlidentifier/identifiervalue.md)
+  The value of the unique identifier wrapped in a data value.
+
+## See Also
+
+- [func recommendations<T>(fromUsers: MLDataColumn<T>, maxCount: Int, restrictingToItems: MLDataColumn<T>?, excluding: MLDataTable?, excludingObserved: Bool) throws -> MLDataTable](mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-416wd.md)
+  Retrieves the highest scored items for the given column of users, based on item similarity and the rating column.
+- [func recommendations(fromUsers: [any MLIdentifier], maxCount: Int, restrictingToItems: [any MLIdentifier]?, excluding: MLDataTable?, excludingObserved: Bool) throws -> MLDataTable](mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-7an46.md)
+  Retrieves the highest scored item for the given array of users, based on item similarity and the rating column.
+- [func getSimilarItems<T>(fromItems: MLDataColumn<T>, maxCount: Int) throws -> MLDataTable](mlrecommender/getsimilaritems(fromitems:maxcount:)-9scon.md)
+  Returns the top ranked similar items based on the model’s similarity type.
+- [func getSimilarItems(fromItems: [any MLIdentifier], maxCount: Int) throws -> MLDataTable](mlrecommender/getsimilaritems(fromitems:maxcount:)-kq37.md)
+  Returns the top ranked similar items based on the model’s similarity type.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/mlidentifier)*

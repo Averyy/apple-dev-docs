@@ -1,6 +1,6 @@
 # WKMenuItemIcon.speaker
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The icon indicating audio output.

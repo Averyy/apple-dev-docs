@@ -1,0 +1,19 @@
+# UITextFormattingViewController.ComponentSize.regular
+
+**Framework**: UIKit  
+**Kind**: case
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+
+## Declaration
+
+```swift
+case regular
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitextformattingviewcontroller/componentsize/regular)*

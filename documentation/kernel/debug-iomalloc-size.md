@@ -1,0 +1,18 @@
+# debug_iomalloc_size
+
+**Framework**: Kernel  
+**Kind**: data
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+size_t debug_iomalloc_size;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/debug_iomalloc_size)*

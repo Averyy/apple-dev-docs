@@ -1,6 +1,6 @@
 # rowController(at:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Returns the row controller for the row at the specified index in the table.

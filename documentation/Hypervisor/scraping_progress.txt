@@ -1,0 +1,4 @@
+Completed scraping Hypervisor!
+Total pages scraped: 2818
+Pages skipped (unchanged): 1
+Pages failed: 0

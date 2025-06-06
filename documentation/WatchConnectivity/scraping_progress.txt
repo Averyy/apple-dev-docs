@@ -1,0 +1,4 @@
+Completed scraping Watchconnectivity!
+Total pages scraped: 104
+Pages skipped (unchanged): 1
+Pages failed: 0

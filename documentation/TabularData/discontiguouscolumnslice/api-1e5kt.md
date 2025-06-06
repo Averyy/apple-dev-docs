@@ -1,0 +1,46 @@
+# /(_:_:)
+
+**Framework**: TabularData  
+**Kind**: op
+
+Generates an integer column by dividing each element in an optional column type by the corresponding elements of another.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+static func / (lhs: Self, rhs: Self) -> Column<Self.WrappedElement>
+```
+
+#### Return Value
+
+A new column.
+
+## Parameters
+
+- `lhs`: An optional column type.
+- `rhs`: Another optional column type.
+
+## See Also
+
+- [static func + (Self, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/+(_:_:)-7swqp.md)
+  Generates a column by adding each element in an optional column type to the corresponding elements of another.
+- [static func - (Self, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/-(_:_:)-2hf72.md)
+  Generates a column by subtracting each element in an optional column type from the corresponding elements of another.
+- [static func * (Self, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/*(_:_:)-2tbo9.md)
+  Generates a column by multiplying each element in an optional column type by the corresponding elements of another.
+- [static func / (Self, Self) -> Column<Self.WrappedElement>](discontiguouscolumnslice/_(_:_:)-6dcws.md)
+  Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of another.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabulardata/discontiguouscolumnslice/_(_:_:)-1e5kt)*

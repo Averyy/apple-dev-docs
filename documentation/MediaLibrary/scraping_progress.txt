@@ -1,0 +1,4 @@
+Completed scraping Media Library!
+Total pages scraped: 212
+Pages skipped (unchanged): 1
+Pages failed: 0

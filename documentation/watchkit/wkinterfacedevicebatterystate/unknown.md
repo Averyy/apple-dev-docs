@@ -1,6 +1,6 @@
 # WKInterfaceDeviceBatteryState.unknown
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 An unknown battery-charging state.

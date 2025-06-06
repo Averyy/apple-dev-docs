@@ -1,0 +1,59 @@
+# resolvedStrokeColor(for:)
+
+**Framework**: UIKit  
+**Kind**: method
+
+Generates the resolved stroke color for the specified tint color, using the stroke color and color transformer.
+
+**Availability**:
+- iOS 14.0+
+- iPadOS 14.0+
+- Mac Catalyst ?+
+- tvOS 14.0+
+- visionOS ?+
+
+## Declaration
+
+```swift
+func resolvedStrokeColor(for tintColor: UIColor) -> UIColor
+```
+
+#### Discussion
+
+The resulting color depends on [`strokeColor`](uibackgroundconfiguration-swift.struct/strokecolor.md) and [`strokeColorTransformer`](uibackgroundconfiguration-swift.struct/strokecolortransformer.md).
+
+## See Also
+
+- [var customView: UIView?](uibackgroundconfiguration-swift.struct/customview.md)
+  A custom view for the background.
+- [var cornerRadius: CGFloat](uibackgroundconfiguration-swift.struct/cornerradius.md)
+  The preferred corner radius, using a continuous corner curve, for the background and stroke.
+- [var backgroundInsets: NSDirectionalEdgeInsets](uibackgroundconfiguration-swift.struct/backgroundinsets.md)
+  The insets (or outsets, if negative) for the background and stroke, relative to the edges of the containing view.
+- [var edgesAddingLayoutMarginsToBackgroundInsets: NSDirectionalRectEdge](uibackgroundconfiguration-swift.struct/edgesaddinglayoutmarginstobackgroundinsets.md)
+  The edges on which the configuration adds the containing view’s layout margins to the background insets.
+- [var backgroundColor: UIColor?](uibackgroundconfiguration-swift.struct/backgroundcolor.md)
+  The color of the background.
+- [var backgroundColorTransformer: UIConfigurationColorTransformer?](uibackgroundconfiguration-swift.struct/backgroundcolortransformer.md)
+  The color transformer for resolving the background color.
+- [func resolvedBackgroundColor(for: UIColor) -> UIColor](uibackgroundconfiguration-swift.struct/resolvedbackgroundcolor(for:).md)
+  Generates the resolved background color for the specified tint color, using the background color and color transformer.
+- [var visualEffect: UIVisualEffect?](uibackgroundconfiguration-swift.struct/visualeffect.md)
+  The visual effect that the configuration applies to the background.
+- [var strokeColor: UIColor?](uibackgroundconfiguration-swift.struct/strokecolor.md)
+  The color of the stroke.
+- [var strokeColorTransformer: UIConfigurationColorTransformer?](uibackgroundconfiguration-swift.struct/strokecolortransformer.md)
+  The color transformer for resolving the stroke color.
+- [var strokeWidth: CGFloat](uibackgroundconfiguration-swift.struct/strokewidth.md)
+  The width of the stroke.
+- [var strokeOutset: CGFloat](uibackgroundconfiguration-swift.struct/strokeoutset.md)
+  The outset (or inset, if negative) for the stroke.
+- [var image: UIImage?](uibackgroundconfiguration-swift.struct/image.md)
+  The image displayed in the view’s background.
+- [var imageContentMode: UIView.ContentMode](uibackgroundconfiguration-swift.struct/imagecontentmode.md)
+  A property that determines the layout of a background image in a view when its bounds change.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibackgroundconfiguration-swift.struct/resolvedstrokecolor(for:))*

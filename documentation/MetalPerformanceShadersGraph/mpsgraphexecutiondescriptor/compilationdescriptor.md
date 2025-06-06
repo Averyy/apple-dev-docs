@@ -1,0 +1,30 @@
+# compilationDescriptor
+
+**Framework**: Metal Performance Shaders Graph  
+**Kind**: property
+
+The compilation descriptor for the graph.
+
+**Availability**:
+- iOS 15.4+
+- iPadOS 15.4+
+- Mac Catalyst 15.4+
+- macOS 12.3+
+- tvOS 15.4+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+@NSCopying
+var compilationDescriptor: MPSGraphCompilationDescriptor? { get set }
+```
+
+#### Discussion
+
+Default value is nil.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraphexecutiondescriptor/compilationdescriptor)*

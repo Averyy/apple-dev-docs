@@ -1,0 +1,54 @@
+# GroupActivitySharingResult
+
+**Framework**: Group Activities  
+**Kind**: enum
+
+The result of a request to share a group activity in iOS.
+
+**Availability**:
+- iOS 15.4+
+- iPadOS 15.4+
+- Mac Catalyst 15.4+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+enum GroupActivitySharingResult
+```
+
+## Topics
+
+### Getting the result
+- [GroupActivitySharingResult.success](groupactivitysharingresult-2ijfu/success.md)
+  A result that indicates someone wants to share the activity with the group.
+- [GroupActivitySharingResult.cancelled](groupactivitysharingresult-2ijfu/cancelled.md)
+  A result that indicates someone canceled the request.
+### Comparing results
+- [static func == (GroupActivitySharingResult, GroupActivitySharingResult) -> Bool](groupactivitysharingresult-2ijfu/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
+### Getting the hash value
+- [func hash(into: inout Hasher)](groupactivitysharingresult-2ijfu/hash(into:).md)
+  Hashes the essential components of this value by feeding them into the given hasher.
+### Instance Properties
+- [var hashValue: Int](groupactivitysharingresult-2ijfu/hashvalue.md)
+  The hash value.
+### Default Implementations
+- [Equatable Implementations](groupactivitysharingresult-2ijfu/equatable-implementations.md)
+
+## Relationships
+
+### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [var result: GroupActivitySharingResult](groupactivitysharingcontroller-ybcy/result.md)
+  The result of a request to share a group activity.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/groupactivitysharingresult-2ijfu)*

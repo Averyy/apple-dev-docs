@@ -1,6 +1,6 @@
 # identifierForVendor
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 An alphanumeric string that uniquely identifies a device to the app’s vendor.

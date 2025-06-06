@@ -1,0 +1,31 @@
+# hashValue
+
+**Framework**: Workoutkit  
+**Kind**: property
+
+The hashed value of the workout goal.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+var hashValue: Int { get }
+```
+
+## See Also
+
+- [func hash(into: inout Hasher)](workoutgoal/hash(into:).md)
+  Hashes the essential components of the workout goal by feeding them into the given hash function.
+- [static func != (Self, Self) -> Bool](workoutgoal/!=(_:_:).md)
+  Returns a Boolean value that indicates whether two workout goals aren’t equal.
+- [static func == (WorkoutGoal, WorkoutGoal) -> Bool](workoutgoal/==(_:_:).md)
+  Returns a Boolean value that indicates whether two workout goals are equal.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/workoutkit/workoutgoal/hashvalue)*

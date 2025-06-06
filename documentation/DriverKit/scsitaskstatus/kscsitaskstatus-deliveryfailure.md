@@ -1,0 +1,42 @@
+# kSCSITaskStatus_DeliveryFailure
+
+**Framework**: DriverKit  
+**Kind**: case
+
+**Availability**:
+- DriverKit ?+
+- iOS ?+
+- iPadOS ?+
+- macOS ?+
+
+## Declaration
+
+```swift
+kSCSITaskStatus_DeliveryFailure
+```
+
+#### Discussion
+
+If the task is unable to be delivered to the device due to a failure in the SCSI Protocol Layer, such as a bus reset or communications error, but the device is is known to be functioning properly, the task status shall be set to kSCSITaskStatus_DeliveryFailure. This can also be reported if the task could not be delivered due to a protocol error that has since been corrected.
+
+## See Also
+
+- [kSCSITaskStatus_GOOD](scsitaskstatus/kscsitaskstatus_good.md)
+- [kSCSITaskStatus_CHECK_CONDITION](scsitaskstatus/kscsitaskstatus_check_condition.md)
+- [kSCSITaskStatus_CONDITION_MET](scsitaskstatus/kscsitaskstatus_condition_met.md)
+- [kSCSITaskStatus_BUSY](scsitaskstatus/kscsitaskstatus_busy.md)
+- [kSCSITaskStatus_INTERMEDIATE](scsitaskstatus/kscsitaskstatus_intermediate.md)
+- [kSCSITaskStatus_INTERMEDIATE_CONDITION_MET](scsitaskstatus/kscsitaskstatus_intermediate_condition_met.md)
+- [kSCSITaskStatus_RESERVATION_CONFLICT](scsitaskstatus/kscsitaskstatus_reservation_conflict.md)
+- [kSCSITaskStatus_TASK_SET_FULL](scsitaskstatus/kscsitaskstatus_task_set_full.md)
+- [kSCSITaskStatus_ACA_ACTIVE](scsitaskstatus/kscsitaskstatus_aca_active.md)
+- [kSCSITaskStatus_TaskTimeoutOccurred](scsitaskstatus/kscsitaskstatus_tasktimeoutoccurred.md)
+- [kSCSITaskStatus_ProtocolTimeoutOccurred](scsitaskstatus/kscsitaskstatus_protocoltimeoutoccurred.md)
+- [kSCSITaskStatus_DeviceNotResponding](scsitaskstatus/kscsitaskstatus_devicenotresponding.md)
+- [kSCSITaskStatus_DeviceNotPresent](scsitaskstatus/kscsitaskstatus_devicenotpresent.md)
+- [kSCSITaskStatus_No_Status](scsitaskstatus/kscsitaskstatus_no_status.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/driverkit/scsitaskstatus/kscsitaskstatus_deliveryfailure)*

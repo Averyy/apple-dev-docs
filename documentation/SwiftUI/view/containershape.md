@@ -1,0 +1,51 @@
+# containerShape(_:)
+
+**Framework**: SwiftUI  
+**Kind**: method
+
+Sets the container shape to use for any container relative shape within this view.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+nonisolated
+func containerShape<T>(_ shape: T) -> some View where T : InsettableShape
+```
+
+#### Discussion
+
+The example below defines a view that shows its content with a rounded rectangle background and the same container shape. Any [`ContainerRelativeShape`](containerrelativeshape.md) within the `content` matches the rounded rectangle shape from this container inset as appropriate.
+
+```swift
+struct PlatterContainer<Content: View> : View {
+    @ViewBuilder var content: Content
+    var body: some View {
+        content
+            .padding()
+            .containerShape(shape)
+            .background(shape.fill(.background))
+    }
+    var shape: RoundedRectangle { RoundedRectangle(cornerRadius: 20) }
+}
+```
+
+## See Also
+
+- [protocol InsettableShape](insettableshape.md)
+  A shape type that is able to inset itself to produce another shape.
+- [struct ContainerRelativeShape](containerrelativeshape.md)
+  A shape that is replaced by an inset version of the current container shape. If no container shape was defined, is replaced by a rectangle.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/view/containershape(_:))*

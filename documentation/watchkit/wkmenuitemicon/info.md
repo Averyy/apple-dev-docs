@@ -1,6 +1,6 @@
 # WKMenuItemIcon.info
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The icon indicating an action to retrieve more information.

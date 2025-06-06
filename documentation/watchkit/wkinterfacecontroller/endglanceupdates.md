@@ -1,6 +1,6 @@
 # endGlanceUpdates()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the system that you finished updating your glance content.

@@ -1,6 +1,6 @@
 # WKImageAnimatable
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: protocol
 
 A collection of methods you can use to control the playback of animated images.
@@ -31,7 +31,7 @@ Existing classes adopt this protocol and you use the methods to control the anim
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Conforming Types
 - [WKInterfaceGroup](wkinterfacegroup.md)
 - [WKInterfaceImage](wkinterfaceimage.md)

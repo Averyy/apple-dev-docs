@@ -1,6 +1,6 @@
 # setShowsUserLocation(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets whether the map shows the user’s current location.

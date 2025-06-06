@@ -1,6 +1,6 @@
 # telephoneNumber
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A telephone number.

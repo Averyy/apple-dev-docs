@@ -1,0 +1,31 @@
+# numberOfItems
+
+**Framework**: UIKit  
+**Kind**: property
+
+The number of items in the snapshot.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst ?+
+- tvOS 13.0+
+- visionOS ?+
+
+## Declaration
+
+```swift
+var numberOfItems: Int { get }
+```
+
+## See Also
+
+- [var numberOfSections: Int](nsdiffabledatasourcesnapshot-swift.struct/numberofsections.md)
+  The number of sections in the snapshot.
+- [func numberOfItems(inSection: SectionIdentifierType) -> Int](nsdiffabledatasourcesnapshot-swift.struct/numberofitems(insection:).md)
+  Returns the number of items in the specified section of the snapshot.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot-swift.struct/numberofitems)*

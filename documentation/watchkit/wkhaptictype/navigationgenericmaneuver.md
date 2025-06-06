@@ -1,6 +1,6 @@
 # WKHapticType.navigationGenericManeuver
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 Indicates a new navigation step.

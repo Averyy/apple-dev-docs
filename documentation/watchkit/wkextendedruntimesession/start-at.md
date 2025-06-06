@@ -1,6 +1,6 @@
 # start(at:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Schedules a session to start running at a future date.

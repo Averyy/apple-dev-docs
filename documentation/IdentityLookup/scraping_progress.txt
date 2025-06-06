@@ -1,0 +1,4 @@
+Completed scraping SMS and Call Reporting!
+Total pages scraped: 110
+Pages skipped (unchanged): 1
+Pages failed: 0

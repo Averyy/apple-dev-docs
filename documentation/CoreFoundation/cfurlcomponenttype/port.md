@@ -1,0 +1,51 @@
+# CFURLComponentType.port
+
+**Framework**: Core Foundation  
+**Kind**: case
+
+The URL’s port.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
+
+## Declaration
+
+```swift
+case port
+```
+
+## See Also
+
+- [CFURLComponentType.scheme](cfurlcomponenttype/scheme.md)
+  The URL’s scheme.
+- [CFURLComponentType.netLocation](cfurlcomponenttype/netlocation.md)
+  The URL’s network location.
+- [CFURLComponentType.path](cfurlcomponenttype/path.md)
+  The URL’s path component.
+- [CFURLComponentType.resourceSpecifier](cfurlcomponenttype/resourcespecifier.md)
+  The URL’s resource specifier.
+- [CFURLComponentType.user](cfurlcomponenttype/user.md)
+  The URL’s user.
+- [CFURLComponentType.password](cfurlcomponenttype/password.md)
+  The user’s password.
+- [CFURLComponentType.userInfo](cfurlcomponenttype/userinfo.md)
+  The user’s information.
+- [CFURLComponentType.host](cfurlcomponenttype/host.md)
+  The URL’s host.
+- [CFURLComponentType.parameterString](cfurlcomponenttype/parameterstring.md)
+  The URL’s parameter string.
+- [CFURLComponentType.query](cfurlcomponenttype/query.md)
+  The URL’s query.
+- [CFURLComponentType.fragment](cfurlcomponenttype/fragment.md)
+  The URL’s fragment.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/cfurlcomponenttype/port)*

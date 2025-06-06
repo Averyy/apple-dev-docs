@@ -1,6 +1,6 @@
 # init(imageName:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: init
 
 Creates an image by loading an image file from the Watch app bundle.

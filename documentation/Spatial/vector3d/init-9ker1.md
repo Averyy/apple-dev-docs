@@ -1,0 +1,47 @@
+# init(_:)
+
+**Framework**: Spatial  
+**Kind**: init
+
+Creates a vector from the specified Spatial spherical coordinates structure.
+
+**Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst ?+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS ?+
+- watchOS 11.0+
+
+## Declaration
+
+```swift
+init(_ coords: SphericalCoordinates3D)
+```
+
+## See Also
+
+- [init()](vector3d/init.md)
+  Creates a vector.
+- [init(x: Double, y: Double, z: Double)](vector3d/init(x:y:z:)-2ejxw.md)
+  Creates a vector from the specified double-precision values.
+- [init<T>(x: T, y: T, z: T)](vector3d/init(x:y:z:)-29hwg.md)
+  Creates a vector from the specified floating-point values.
+- [init(simd_float3)](vector3d/init(_:)-73gdm.md)
+  Creates a ray from the specified single-precision vector.
+- [init(simd_double3)](vector3d/init(_:)-1a9i3.md)
+  Creates a vector from the specified double-precision vector.
+- [init(vector: simd_double3)](vector3d/init(vector:).md)
+  Creates a vector from the specified double-precision vector.
+- [init(RotationAxis3D)](vector3d/init(_:)-3br9h.md)
+  Creates a vector from the specified Spatial rotation axis.
+- [init(Point3D)](vector3d/init(_:)-8vcph.md)
+  Creates a vector from the specified Spatial point structure.
+- [init(Size3D)](vector3d/init(_:)-8egfs.md)
+  Creates a vector from the specified Spatial size structure.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/vector3d/init(_:)-9ker1)*

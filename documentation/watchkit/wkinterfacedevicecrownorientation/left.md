@@ -1,6 +1,6 @@
 # WKInterfaceDeviceCrownOrientation.left
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The left side of the device.

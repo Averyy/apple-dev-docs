@@ -1,6 +1,6 @@
 # expirationHandler
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A block that the system calls when the available runtime for a background task is about to expire.

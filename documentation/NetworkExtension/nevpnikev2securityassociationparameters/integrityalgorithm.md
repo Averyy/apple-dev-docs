@@ -1,0 +1,45 @@
+# integrityAlgorithm
+
+**Framework**: Network Extension  
+**Kind**: property
+
+The algorithm used by the Security Association to verify the integrity of data.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.11+
+- tvOS 17.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+var integrityAlgorithm: NEVPNIKEv2IntegrityAlgorithm { get set }
+```
+
+#### Discussion
+
+The default value of this property is [`NEVPNIKEv2IntegrityAlgorithm.SHA256`](nevpnikev2integrityalgorithm/sha256.md).
+
+The system infers its IKE psedo-random number generation algorithm based on the integrity algorithm.
+
+## See Also
+
+- [var encryptionAlgorithm: NEVPNIKEv2EncryptionAlgorithm](nevpnikev2securityassociationparameters/encryptionalgorithm.md)
+  The algorithm used by the Security Association to encrypt and decrypt data.
+- [enum NEVPNIKEv2EncryptionAlgorithm](nevpnikev2encryptionalgorithm.md)
+  An enumeration of encryption algorithm values.
+- [enum NEVPNIKEv2IntegrityAlgorithm](nevpnikev2integrityalgorithm.md)
+- [var diffieHellmanGroup: NEVPNIKEv2DiffieHellmanGroup](nevpnikev2securityassociationparameters/diffiehellmangroup.md)
+  The Diffie Hellman group used by the Security Association.
+- [enum NEVPNIKEv2DiffieHellmanGroup](nevpnikev2diffiehellmangroup.md)
+  An enumeration of Diffie-Hellman group values.
+- [var lifetimeMinutes: Int32](nevpnikev2securityassociationparameters/lifetimeminutes.md)
+  The duration of the lifetime of the Security Association, in minutes.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/nevpnikev2securityassociationparameters/integrityalgorithm)*

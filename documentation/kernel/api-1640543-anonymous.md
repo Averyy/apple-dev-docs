@@ -1,0 +1,96 @@
+# Anonymous
+
+**Framework**: Kernel  
+**Kind**: enum
+
+**Availability**:
+- macOS 10.12+
+
+## Declaration
+
+```swift
+enum : unsigned int {
+    ...
+};
+```
+
+## Topics
+
+### Constants
+- [kBluetoothDeviceClassMinorAny](1640543-anonymous/kbluetoothdeviceclassminorany.md)
+- [kBluetoothDeviceClassMinorAudioCamcorder](1640543-anonymous/kbluetoothdeviceclassminoraudiocamcorder.md)
+- [kBluetoothDeviceClassMinorAudioCar](1640543-anonymous/kbluetoothdeviceclassminoraudiocar.md)
+- [kBluetoothDeviceClassMinorAudioGamingToy](1640543-anonymous/kbluetoothdeviceclassminoraudiogamingtoy.md)
+- [kBluetoothDeviceClassMinorAudioHandsFree](1640543-anonymous/kbluetoothdeviceclassminoraudiohandsfree.md)
+- [kBluetoothDeviceClassMinorAudioHeadphones](1640543-anonymous/kbluetoothdeviceclassminoraudioheadphones.md)
+- [kBluetoothDeviceClassMinorAudioHeadset](1640543-anonymous/kbluetoothdeviceclassminoraudioheadset.md)
+- [kBluetoothDeviceClassMinorAudioHiFi](1640543-anonymous/kbluetoothdeviceclassminoraudiohifi.md)
+- [kBluetoothDeviceClassMinorAudioLoudspeaker](1640543-anonymous/kbluetoothdeviceclassminoraudioloudspeaker.md)
+- [kBluetoothDeviceClassMinorAudioMicrophone](1640543-anonymous/kbluetoothdeviceclassminoraudiomicrophone.md)
+- [kBluetoothDeviceClassMinorAudioPortable](1640543-anonymous/kbluetoothdeviceclassminoraudioportable.md)
+- [kBluetoothDeviceClassMinorAudioReserved1](1640543-anonymous/kbluetoothdeviceclassminoraudioreserved1.md)
+- [kBluetoothDeviceClassMinorAudioReserved2](1640543-anonymous/kbluetoothdeviceclassminoraudioreserved2.md)
+- [kBluetoothDeviceClassMinorAudioSetTopBox](1640543-anonymous/kbluetoothdeviceclassminoraudiosettopbox.md)
+- [kBluetoothDeviceClassMinorAudioUnclassified](1640543-anonymous/kbluetoothdeviceclassminoraudiounclassified.md)
+- [kBluetoothDeviceClassMinorAudioVCR](1640543-anonymous/kbluetoothdeviceclassminoraudiovcr.md)
+- [kBluetoothDeviceClassMinorAudioVideoCamera](1640543-anonymous/kbluetoothdeviceclassminoraudiovideocamera.md)
+- [kBluetoothDeviceClassMinorAudioVideoConferencing](1640543-anonymous/kbluetoothdeviceclassminoraudiovideoconferencing.md)
+- [kBluetoothDeviceClassMinorAudioVideoDisplayAndLoudspeaker](1640543-anonymous/kbluetoothdeviceclassminoraudiovideodisplayandloudspeaker.md)
+- [kBluetoothDeviceClassMinorAudioVideoMonitor](1640543-anonymous/kbluetoothdeviceclassminoraudiovideomonitor.md)
+- [kBluetoothDeviceClassMinorComputerDesktopWorkstation](1640543-anonymous/kbluetoothdeviceclassminorcomputerdesktopworkstation.md)
+- [kBluetoothDeviceClassMinorComputerHandheld](1640543-anonymous/kbluetoothdeviceclassminorcomputerhandheld.md)
+- [kBluetoothDeviceClassMinorComputerLaptop](1640543-anonymous/kbluetoothdeviceclassminorcomputerlaptop.md)
+- [kBluetoothDeviceClassMinorComputerPalmSized](1640543-anonymous/kbluetoothdeviceclassminorcomputerpalmsized.md)
+- [kBluetoothDeviceClassMinorComputerServer](1640543-anonymous/kbluetoothdeviceclassminorcomputerserver.md)
+- [kBluetoothDeviceClassMinorComputerUnclassified](1640543-anonymous/kbluetoothdeviceclassminorcomputerunclassified.md)
+- [kBluetoothDeviceClassMinorComputerWearable](1640543-anonymous/kbluetoothdeviceclassminorcomputerwearable.md)
+- [kBluetoothDeviceClassMinorEnd](1640543-anonymous/kbluetoothdeviceclassminorend.md)
+- [kBluetoothDeviceClassMinorHealthBloodPressureMonitor](1640543-anonymous/kbluetoothdeviceclassminorhealthbloodpressuremonitor.md)
+- [kBluetoothDeviceClassMinorHealthDataDisplay](1640543-anonymous/kbluetoothdeviceclassminorhealthdatadisplay.md)
+- [kBluetoothDeviceClassMinorHealthGlucoseMeter](1640543-anonymous/kbluetoothdeviceclassminorhealthglucosemeter.md)
+- [kBluetoothDeviceClassMinorHealthHeartRateMonitor](1640543-anonymous/kbluetoothdeviceclassminorhealthheartratemonitor.md)
+- [kBluetoothDeviceClassMinorHealthPulseOximeter](1640543-anonymous/kbluetoothdeviceclassminorhealthpulseoximeter.md)
+- [kBluetoothDeviceClassMinorHealthScale](1640543-anonymous/kbluetoothdeviceclassminorhealthscale.md)
+- [kBluetoothDeviceClassMinorHealthThermometer](1640543-anonymous/kbluetoothdeviceclassminorhealththermometer.md)
+- [kBluetoothDeviceClassMinorHealthUndefined](1640543-anonymous/kbluetoothdeviceclassminorhealthundefined.md)
+- [kBluetoothDeviceClassMinorImaging1Camera](1640543-anonymous/kbluetoothdeviceclassminorimaging1camera.md)
+- [kBluetoothDeviceClassMinorImaging1Display](1640543-anonymous/kbluetoothdeviceclassminorimaging1display.md)
+- [kBluetoothDeviceClassMinorImaging1Printer](1640543-anonymous/kbluetoothdeviceclassminorimaging1printer.md)
+- [kBluetoothDeviceClassMinorImaging1Scanner](1640543-anonymous/kbluetoothdeviceclassminorimaging1scanner.md)
+- [kBluetoothDeviceClassMinorImaging2Unclassified](1640543-anonymous/kbluetoothdeviceclassminorimaging2unclassified.md)
+- [kBluetoothDeviceClassMinorNone](1640543-anonymous/kbluetoothdeviceclassminornone.md)
+- [kBluetoothDeviceClassMinorPeripheral1Combo](1640543-anonymous/kbluetoothdeviceclassminorperipheral1combo.md)
+- [kBluetoothDeviceClassMinorPeripheral1Keyboard](1640543-anonymous/kbluetoothdeviceclassminorperipheral1keyboard.md)
+- [kBluetoothDeviceClassMinorPeripheral1Pointing](1640543-anonymous/kbluetoothdeviceclassminorperipheral1pointing.md)
+- [kBluetoothDeviceClassMinorPeripheral2AnyPointing](1640543-anonymous/kbluetoothdeviceclassminorperipheral2anypointing.md)
+- [kBluetoothDeviceClassMinorPeripheral2CardReader](1640543-anonymous/kbluetoothdeviceclassminorperipheral2cardreader.md)
+- [kBluetoothDeviceClassMinorPeripheral2DigitalPen](1640543-anonymous/kbluetoothdeviceclassminorperipheral2digitalpen.md)
+- [kBluetoothDeviceClassMinorPeripheral2DigitizerTablet](1640543-anonymous/kbluetoothdeviceclassminorperipheral2digitizertablet.md)
+- [kBluetoothDeviceClassMinorPeripheral2Gamepad](1640543-anonymous/kbluetoothdeviceclassminorperipheral2gamepad.md)
+- [kBluetoothDeviceClassMinorPeripheral2GesturalInputDevice](1640543-anonymous/kbluetoothdeviceclassminorperipheral2gesturalinputdevice.md)
+- [kBluetoothDeviceClassMinorPeripheral2HandheldScanner](1640543-anonymous/kbluetoothdeviceclassminorperipheral2handheldscanner.md)
+- [kBluetoothDeviceClassMinorPeripheral2Joystick](1640543-anonymous/kbluetoothdeviceclassminorperipheral2joystick.md)
+- [kBluetoothDeviceClassMinorPeripheral2RemoteControl](1640543-anonymous/kbluetoothdeviceclassminorperipheral2remotecontrol.md)
+- [kBluetoothDeviceClassMinorPeripheral2SensingDevice](1640543-anonymous/kbluetoothdeviceclassminorperipheral2sensingdevice.md)
+- [kBluetoothDeviceClassMinorPeripheral2Unclassified](1640543-anonymous/kbluetoothdeviceclassminorperipheral2unclassified.md)
+- [kBluetoothDeviceClassMinorPhoneCellular](1640543-anonymous/kbluetoothdeviceclassminorphonecellular.md)
+- [kBluetoothDeviceClassMinorPhoneCommonISDNAccess](1640543-anonymous/kbluetoothdeviceclassminorphonecommonisdnaccess.md)
+- [kBluetoothDeviceClassMinorPhoneCordless](1640543-anonymous/kbluetoothdeviceclassminorphonecordless.md)
+- [kBluetoothDeviceClassMinorPhoneSmartPhone](1640543-anonymous/kbluetoothdeviceclassminorphonesmartphone.md)
+- [kBluetoothDeviceClassMinorPhoneUnclassified](1640543-anonymous/kbluetoothdeviceclassminorphoneunclassified.md)
+- [kBluetoothDeviceClassMinorPhoneWiredModemOrVoiceGateway](1640543-anonymous/kbluetoothdeviceclassminorphonewiredmodemorvoicegateway.md)
+- [kBluetoothDeviceClassMinorToyController](1640543-anonymous/kbluetoothdeviceclassminortoycontroller.md)
+- [kBluetoothDeviceClassMinorToyDollActionFigure](1640543-anonymous/kbluetoothdeviceclassminortoydollactionfigure.md)
+- [kBluetoothDeviceClassMinorToyGame](1640543-anonymous/kbluetoothdeviceclassminortoygame.md)
+- [kBluetoothDeviceClassMinorToyRobot](1640543-anonymous/kbluetoothdeviceclassminortoyrobot.md)
+- [kBluetoothDeviceClassMinorToyVehicle](1640543-anonymous/kbluetoothdeviceclassminortoyvehicle.md)
+- [kBluetoothDeviceClassMinorWearableGlasses](1640543-anonymous/kbluetoothdeviceclassminorwearableglasses.md)
+- [kBluetoothDeviceClassMinorWearableHelmet](1640543-anonymous/kbluetoothdeviceclassminorwearablehelmet.md)
+- [kBluetoothDeviceClassMinorWearableJacket](1640543-anonymous/kbluetoothdeviceclassminorwearablejacket.md)
+- [kBluetoothDeviceClassMinorWearablePager](1640543-anonymous/kbluetoothdeviceclassminorwearablepager.md)
+- [kBluetoothDeviceClassMinorWearableWristWatch](1640543-anonymous/kbluetoothdeviceclassminorwearablewristwatch.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1640543-anonymous)*

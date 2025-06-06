@@ -1,0 +1,26 @@
+# notificationFilterPredicate
+
+**Framework**: App Intents  
+**Kind**: property
+
+An `NSPredicate` for system to filter the user’s notifications of the app when a Focus is active.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS 1.0+
+- watchOS 9.0+
+
+## Declaration
+
+```swift
+let notificationFilterPredicate: NSPredicate?
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/focusfilterappcontext/notificationfilterpredicate)*

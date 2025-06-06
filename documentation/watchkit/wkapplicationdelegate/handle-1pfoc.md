@@ -1,6 +1,6 @@
 # handle(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the delegate that the user started a workout session on the paired iPhone.

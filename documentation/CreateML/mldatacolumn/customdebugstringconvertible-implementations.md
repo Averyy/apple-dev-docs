@@ -1,0 +1,14 @@
+# CustomDebugStringConvertible Implementations
+
+**Framework**: Create ML
+
+## Topics
+
+### Instance Properties
+- [var debugDescription: String](mldatacolumn/debugdescription.md)
+  A text representation of the column for debugging.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/mldatacolumn/customdebugstringconvertible-implementations)*

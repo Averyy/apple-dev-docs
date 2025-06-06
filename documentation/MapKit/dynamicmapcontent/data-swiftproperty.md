@@ -1,0 +1,27 @@
+# data
+
+**Framework**: MapKit  
+**Kind**: property  
+**Required**: Yes
+
+The collection of underlying data.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst ?+
+- macOS 14.0+
+- tvOS 17.0+
+- visionOS ?+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+var data: Self.Data { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/dynamicmapcontent/data-swift.property)*

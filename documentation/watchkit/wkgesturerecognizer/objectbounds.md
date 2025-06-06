@@ -1,6 +1,6 @@
 # objectBounds()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Returns the dimensions of the interface object (measured in points) associated with the gesture recognizer.

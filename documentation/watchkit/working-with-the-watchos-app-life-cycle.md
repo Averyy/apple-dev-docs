@@ -1,6 +1,6 @@
 # Working with the watchOS app life cycle
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
 

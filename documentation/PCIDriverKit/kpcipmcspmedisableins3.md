@@ -1,0 +1,42 @@
+# kPCIPMCSPMEDisableInS3
+
+**Framework**: PCIDriverKit  
+**Kind**: case
+
+A bit for a custom power management event.
+
+**Availability**:
+- DriverKit ?+
+- macOS ?+
+
+## Declaration
+
+```swift
+kPCIPMCSPMEDisableInS3
+```
+
+## See Also
+
+- [kPCIPMCSPowerStateD0](kpcipmcspowerstated0.md)
+  The device is in the D0 state.
+- [kPCIPMCSPowerStateD1](kpcipmcspowerstated1.md)
+  The device is in the D1 state.
+- [kPCIPMCSPowerStateD2](kpcipmcspowerstated2.md)
+  The device is in the D2 state.
+- [kPCIPMCSPowerStateD3](kpcipmcspowerstated3.md)
+  The device is in the D3 state.
+- [kPCIPMCSPowerStateMask](kpcipmcspowerstatemask.md)
+  A bit mask you use to determine the current power state of the device.
+- [kPCIPMCSPMEEnable](kpcipmcspmeenable.md)
+  The bit that specifies whether power management events are enabled.
+- [kPCIPMCSPMEStatus](kpcipmcspmestatus.md)
+  The bit that contains the current state of power management events.
+- [kPCIPMCSDefaultEnableBits](kpcipmcsdefaultenablebits.md)
+  The default power management settings.
+- [kPCIPMCSPMEWakeReason](kpcipmcspmewakereason.md)
+  A bit that indicates the reason for waking the device.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/pcidriverkit/kpcipmcspmedisableins3)*

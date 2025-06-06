@@ -1,0 +1,31 @@
+# kCGImagePropertyGPSTimeStamp
+
+**Framework**: Image I/O  
+**Kind**: var
+
+The time in UTC (Coordinated Universal Time).
+
+**Availability**:
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 13.1+
+- macOS 10.4+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+let kCGImagePropertyGPSTimeStamp: CFString
+```
+
+## See Also
+
+- [let kCGImagePropertyGPSDateStamp: CFString](kcgimagepropertygpsdatestamp.md)
+  The date and time information relative to Coordinated Universal Time (UTC).
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/imageio/kcgimagepropertygpstimestamp)*

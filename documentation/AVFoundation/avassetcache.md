@@ -1,0 +1,51 @@
+# AVAssetCache
+
+**Framework**: AVFoundation  
+**Kind**: class
+
+An object that you use to inspect locally cached media data.
+
+**Availability**:
+- iOS 10.0+
+- iPadOS 10.0+
+- Mac Catalyst 13.1+
+- macOS 10.12+
+- tvOS 10.0+
+- visionOS 1.0+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+class AVAssetCache
+```
+
+#### Overview
+
+You can download HTTP Live Streaming assets to an iOS device using the [`AVAssetDownloadURLSession`](avassetdownloadurlsession.md) and [`AVAssetDownloadTask`](avassetdownloadtask.md) classes.
+
+## Topics
+
+### Inspecting the Cached Media
+- [var isPlayableOffline: Bool](avassetcache/isplayableoffline.md)
+  A Boolean value that indicates whether the asset is playable without an internet connection.
+- [func mediaSelectionOptions(in: AVMediaSelectionGroup) -> [AVMediaSelectionOption]](avassetcache/mediaselectionoptions(in:).md)
+  Returns an array of locally cached media selection options that are available for offline use.
+
+## Relationships
+
+### Inherits From
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avassetcache)*

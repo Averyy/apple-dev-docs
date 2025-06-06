@@ -1,0 +1,28 @@
+# submeshes
+
+**Framework**: GLKit  
+**Kind**: property
+
+**Availability**:
+- iOS 9.0+
+- iPadOS 9.0+
+- macOS 10.11+
+- tvOS 9.0+
+
+## Declaration
+
+```swift
+var submeshes: [GLKSubmesh] { get }
+```
+
+## See Also
+
+- [var name: String](glkmesh/name.md)
+- [var vertexBuffers: [GLKMeshBuffer]](glkmesh/vertexbuffers.md)
+- [var vertexCount: Int](glkmesh/vertexcount.md)
+- [var vertexDescriptor: MDLVertexDescriptor](glkmesh/vertexdescriptor.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/glkit/glkmesh/submeshes)*

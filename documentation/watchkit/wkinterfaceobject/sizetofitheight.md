@@ -1,6 +1,6 @@
 # sizeToFitHeight()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the height of the object so that it fills the available vertical space.

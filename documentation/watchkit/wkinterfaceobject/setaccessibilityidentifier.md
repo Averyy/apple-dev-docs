@@ -1,6 +1,6 @@
 # setAccessibilityIdentifier(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the unique identifier string for the interface object.

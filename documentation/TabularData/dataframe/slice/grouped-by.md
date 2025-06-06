@@ -1,0 +1,51 @@
+# grouped(by:_:_:)
+
+**Framework**: TabularData  
+**Kind**: method
+
+Creates a grouping from three columns of different types.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+func grouped<T0, T1, T2>(by column0: ColumnID<T0>, _ column1: ColumnID<T1>, _ column2: ColumnID<T2>) -> some RowGroupingProtocol where T0 : Hashable, T1 : Hashable, T2 : Hashable
+```
+
+## Parameters
+
+- `column0`: A column identifier.
+- `column1`: A second column identifier.
+- `column2`: A third column identifier.
+
+## See Also
+
+- [func grouped(by: String, timeUnit: Calendar.Component) -> RowGrouping<Int>](dataframe/slice/grouped(by:timeunit:)-13w3o.md)
+  Creates a grouping of rows that the method selects by choosing unique units of time in a date column you select by name.
+- [func grouped(by: ColumnID<Date>, timeUnit: Calendar.Component) -> RowGrouping<Int>](dataframe/slice/grouped(by:timeunit:)-696t5.md)
+  Creates a grouping of rows that the method selects by choosing unique units of time in a date column you select by column identifier.
+- [func grouped<InputKey, GroupingKey>(by: String, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey>](dataframe/slice/grouped(by:transform:)-5eoog.md)
+  Creates a grouping of rows that the method selects by choosing unique values the transform closure creates with elements of a column you select by name.
+- [func grouped<InputKey, GroupingKey>(by: ColumnID<InputKey>, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey>](dataframe/slice/grouped(by:transform:)-7e9bm.md)
+  Creates a grouping of rows that the method selects by choosing unique values the transform closure creates with elements of a column you select by column identifier.
+- [struct RowGrouping](rowgrouping.md)
+  A collection of row selections that have the same value in a column.
+- [func grouped(by: String) -> any RowGroupingProtocol](dataframe/slice/grouped(by:).md)
+  Creates a grouping of rows that the method selects by choosing unique values in a column.
+- [func grouped<T0, T1>(by: ColumnID<T0>, ColumnID<T1>) -> some RowGroupingProtocol](dataframe/slice/grouped(by:_:).md)
+  Creates a grouping from two columns of different types.
+- [protocol RowGroupingProtocol](rowgroupingprotocol.md)
+  A type that represents a collection of row selections that have the same value in a column.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabulardata/dataframe/slice/grouped(by:_:_:))*

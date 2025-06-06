@@ -1,6 +1,6 @@
 # allowableMovement
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The maximum movement of the finger on the interface object that allows the gesture to be recognized.

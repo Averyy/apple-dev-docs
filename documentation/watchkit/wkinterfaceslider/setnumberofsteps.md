@@ -1,6 +1,6 @@
 # setNumberOfSteps(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the number of steps for the slider.

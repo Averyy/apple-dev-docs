@@ -1,0 +1,4 @@
+Completed scraping Apple Pay on the Web!
+Total pages scraped: 416
+Pages skipped (unchanged): 1
+Pages failed: 0

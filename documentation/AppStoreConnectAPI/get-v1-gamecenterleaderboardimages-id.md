@@ -1,0 +1,23 @@
+# Read leaderboard image information
+
+**Framework**: App Store Connect API  
+**Kind**: httpRequest
+
+Get information about a leaderboard image and its upload and processing status.
+
+**Availability**:
+- App Store Connect API 3.0+
+
+## See Also
+
+- [Create a leaderboard image](post-v1-gamecenterleaderboardimages.md)
+  Add a new leaderboard image.
+- [Modify a leaderboard image](patch-v1-gamecenterleaderboardimages-_id_.md)
+  Commit a leaderboard image after uploading it.
+- [Delete a leaderboard image](delete-v1-gamecenterleaderboardimages-_id_.md)
+  Delete an image that’s associated with a leaderboard.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-gamecenterleaderboardimages-_id_)*

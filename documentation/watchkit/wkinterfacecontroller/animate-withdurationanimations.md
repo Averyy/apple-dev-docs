@@ -1,6 +1,6 @@
 # animate(withDuration:animations:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Animates changes to one or more interface objects over the specified duration.

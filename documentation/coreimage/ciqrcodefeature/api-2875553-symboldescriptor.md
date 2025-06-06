@@ -1,0 +1,34 @@
+# symbolDescriptor
+
+**Framework**: Core Image  
+**Kind**: instp
+
+An abstract representation of a QR Code symbol.
+
+**Availability**:
+- iOS 11.0+
+- iPadOS 11.0+
+- Mac Catalyst 13.1+
+- macOS 10.13+
+- tvOS 11.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+var symbolDescriptor: CIQRCodeDescriptor? { get }
+```
+
+#### Discussion
+
+Concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md).  Contains the payload, version of the symbol, mask pattern, and error correction level, so the QR Code can be reproduced.
+
+## See Also
+
+- [var messageString: String?](ciqrcodefeature/1438035-messagestring.md)
+  The string decoded from the detected barcode.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreimage/ciqrcodefeature/2875553-symboldescriptor)*

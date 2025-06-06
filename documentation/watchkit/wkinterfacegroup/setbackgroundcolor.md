@@ -1,6 +1,6 @@
 # setBackgroundColor(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Changes the background color for the group container.

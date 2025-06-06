@@ -1,6 +1,6 @@
 # didDeactivate()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the interface controller that its view is no longer active.

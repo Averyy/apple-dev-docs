@@ -1,0 +1,52 @@
+# index(_:offsetBy:)
+
+**Framework**: MusicKit  
+**Kind**: method
+
+Returns an index that is the specified distance from the given index.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+func index(_ i: MusicItemCollection<MusicItemType>.Index, offsetBy distance: Int) -> MusicItemCollection<MusicItemType>.Index
+```
+
+#### Return Value
+
+An index offset by `distance` from the index `i`. If `distance` is positive, this is the same value as the result of `distance` calls to `index(after:)`. If `distance` is negative, this is the same value as the result of `abs(distance)` calls to `index(before:)`.
+
+#### Discussion
+
+The following example obtains an index advanced four positions from a string’s starting index and then prints the character at that position.
+
+```swift
+let s = "Swift"
+let i = s.index(s.startIndex, offsetBy: 4)
+print(s[i])
+// Prints "t"
+```
+
+The value passed as `distance` must not offset `i` beyond the bounds of the collection.
+
+> **Note**: O(1)
+
+O(1)
+
+## Parameters
+
+- `i`: A valid index of the collection.
+- `distance`: The distance to offset  .   must not be negative   unless the collection conforms to the    protocol.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/musickit/musicitemcollection/index(_:offsetby:))*

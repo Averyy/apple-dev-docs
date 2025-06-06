@@ -1,0 +1,113 @@
+# SDPAttributeIdentifierCodes
+
+**Framework**: IOBluetooth  
+**Kind**: struct
+
+**Availability**:
+- macOS ?+
+
+## Declaration
+
+```swift
+struct SDPAttributeIdentifierCodes
+```
+
+## Topics
+
+### Constants
+- [var kBluetoothSDPAttributeIdentifierAdditionalProtocolsDescriptorList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifieradditionalprotocolsdescriptorlist.md)
+- [var kBluetoothSDPAttributeIdentifierAudioFeedbackSupport: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifieraudiofeedbacksupport.md)
+- [var kBluetoothSDPAttributeIdentifierBluetoothProfileDescriptorList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierbluetoothprofiledescriptorlist.md)
+- [var kBluetoothSDPAttributeIdentifierBrowseGroupList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierbrowsegrouplist.md)
+- [var kBluetoothSDPAttributeIdentifierClientExecutableURL: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierclientexecutableurl.md)
+- [var kBluetoothSDPAttributeIdentifierDocumentationURL: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierdocumentationurl.md)
+- [var kBluetoothSDPAttributeIdentifierExternalNetwork: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierexternalnetwork.md)
+- [var kBluetoothSDPAttributeIdentifierFaxClass1Support: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierfaxclass1support.md)
+- [var kBluetoothSDPAttributeIdentifierFaxClass2Support: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierfaxclass2support.md)
+- [var kBluetoothSDPAttributeIdentifierFaxClass2_0Support: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierfaxclass2_0support.md)
+- [var kBluetoothSDPAttributeIdentifierGroupID: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiergroupid.md)
+- [var kBluetoothSDPAttributeIdentifierHIDBatteryPower: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidbatterypower.md)
+- [var kBluetoothSDPAttributeIdentifierHIDBootDevice: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidbootdevice.md)
+- [var kBluetoothSDPAttributeIdentifierHIDCountryCode: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidcountrycode.md)
+- [var kBluetoothSDPAttributeIdentifierHIDDescriptorList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhiddescriptorlist.md)
+- [var kBluetoothSDPAttributeIdentifierHIDDeviceSubclass: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhiddevicesubclass.md)
+- [var kBluetoothSDPAttributeIdentifierHIDLangIDBaseList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidlangidbaselist.md)
+- [var kBluetoothSDPAttributeIdentifierHIDNormallyConnectable: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidnormallyconnectable.md)
+- [var kBluetoothSDPAttributeIdentifierHIDParserVersion: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidparserversion.md)
+- [var kBluetoothSDPAttributeIdentifierHIDProfileVersion: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidprofileversion.md)
+- [var kBluetoothSDPAttributeIdentifierHIDReconnectInitiate: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidreconnectinitiate.md)
+- [var kBluetoothSDPAttributeIdentifierHIDReleaseNumber: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidreleasenumber.md)
+- [var kBluetoothSDPAttributeIdentifierHIDRemoteWake: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidremotewake.md)
+- [var kBluetoothSDPAttributeIdentifierHIDSDPDisable: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidsdpdisable.md)
+- [var kBluetoothSDPAttributeIdentifierHIDSSRHostMaxLatency: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidssrhostmaxlatency.md)
+- [var kBluetoothSDPAttributeIdentifierHIDSSRHostMinTimeout: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidssrhostmintimeout.md)
+- [var kBluetoothSDPAttributeIdentifierHIDSupervisionTimeout: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidsupervisiontimeout.md)
+- [var kBluetoothSDPAttributeIdentifierHIDVirtualCable: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhidvirtualcable.md)
+- [var kBluetoothSDPAttributeIdentifierHomepageURL: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierhomepageurl.md)
+- [var kBluetoothSDPAttributeIdentifierIPSubnet: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifieripsubnet.md)
+- [var kBluetoothSDPAttributeIdentifierIconURL: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiericonurl.md)
+- [var kBluetoothSDPAttributeIdentifierLanguageBaseAttributeIDList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierlanguagebaseattributeidlist.md)
+- [var kBluetoothSDPAttributeIdentifierMaxNetAccessRate: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiermaxnetaccessrate.md)
+- [var kBluetoothSDPAttributeIdentifierNetAccessType: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiernetaccesstype.md)
+- [var kBluetoothSDPAttributeIdentifierNetwork: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiernetwork.md)
+- [var kBluetoothSDPAttributeIdentifierNetworkAddress: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiernetworkaddress.md)
+- [var kBluetoothSDPAttributeIdentifierProtocolDescriptorList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierprotocoldescriptorlist.md)
+- [var kBluetoothSDPAttributeIdentifierProviderName: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierprovidername.md)
+- [var kBluetoothSDPAttributeIdentifierRemoteAudioVolumeControl: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierremoteaudiovolumecontrol.md)
+- [var kBluetoothSDPAttributeIdentifierSecurityDescription: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiersecuritydescription.md)
+- [var kBluetoothSDPAttributeIdentifierServiceAvailability: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierserviceavailability.md)
+- [var kBluetoothSDPAttributeIdentifierServiceClassIDList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierserviceclassidlist.md)
+- [var kBluetoothSDPAttributeIdentifierServiceDatabaseState: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierservicedatabasestate.md)
+- [var kBluetoothSDPAttributeIdentifierServiceDescription: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierservicedescription.md)
+- [var kBluetoothSDPAttributeIdentifierServiceID: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierserviceid.md)
+- [var kBluetoothSDPAttributeIdentifierServiceInfoTimeToLive: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierserviceinfotimetolive.md)
+- [var kBluetoothSDPAttributeIdentifierServiceName: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierservicename.md)
+- [var kBluetoothSDPAttributeIdentifierServiceRecordHandle: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierservicerecordhandle.md)
+- [var kBluetoothSDPAttributeIdentifierServiceRecordState: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierservicerecordstate.md)
+- [var kBluetoothSDPAttributeIdentifierServiceVersion: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierserviceversion.md)
+- [var kBluetoothSDPAttributeIdentifierSupportedCapabilities: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiersupportedcapabilities.md)
+- [var kBluetoothSDPAttributeIdentifierSupportedDataStoresList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiersupporteddatastoreslist.md)
+- [var kBluetoothSDPAttributeIdentifierSupportedFeatures: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiersupportedfeatures.md)
+- [var kBluetoothSDPAttributeIdentifierSupportedFunctions: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiersupportedfunctions.md)
+- [var kBluetoothSDPAttributeIdentifierSupporterFormatsList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiersupporterformatslist.md)
+- [var kBluetoothSDPAttributeIdentifierTotalImagingDataCapacity: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifiertotalimagingdatacapacity.md)
+- [var kBluetoothSDPAttributeIdentifierVersionNumberList: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierversionnumberlist.md)
+- [var kBluetoothSDPAttributeIdentifierWAPGateway: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierwapgateway.md)
+- [var kBluetoothSDPAttributeIdentifierWAPStackType: SDPAttributeIdentifierCodes](kbluetoothsdpattributeidentifierwapstacktype.md)
+### Initializers
+- [init(UInt32)](sdpattributeidentifiercodes/init(_:).md)
+- [init(rawValue: UInt32)](sdpattributeidentifiercodes/init(rawvalue:).md)
+### Instance Properties
+- [var rawValue: UInt32](sdpattributeidentifiercodes/rawvalue.md)
+
+## Relationships
+
+### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+
+## See Also
+
+- [typealias BluetoothAFHMode](bluetoothafhmode.md)
+- [typealias BluetoothAirMode](bluetoothairmode.md)
+- [typealias BluetoothAllowRoleSwitch](bluetoothallowroleswitch.md)
+- [typealias BluetoothAuthenticationRequirements](bluetoothauthenticationrequirements.md)
+- [struct BluetoothAuthenticationRequirementsValues](bluetoothauthenticationrequirementsvalues.md)
+- [typealias BluetoothClassOfDevice](bluetoothclassofdevice.md)
+- [typealias BluetoothClockOffset](bluetoothclockoffset.md)
+- [struct BluetoothCompanyIdentifers](bluetoothcompanyidentifers.md)
+- [typealias BluetoothConnectionHandle](bluetoothconnectionhandle.md)
+- [typealias BluetoothDeviceClassMajor](bluetoothdeviceclassmajor.md)
+- [typealias BluetoothDeviceClassMinor](bluetoothdeviceclassminor.md)
+- [typealias BluetoothDeviceName](bluetoothdevicename.md)
+- [typealias BluetoothEncryptionEnable](bluetoothencryptionenable.md)
+- [struct BluetoothFeatureBits](bluetoothfeaturebits.md)
+- [typealias BluetoothHCIACLDataByteCount](bluetoothhciacldatabytecount.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/iobluetooth/sdpattributeidentifiercodes)*

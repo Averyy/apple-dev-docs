@@ -1,6 +1,6 @@
 # WKApplicationState.inactive
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 The Watch app is running in the foreground, but is not yet responding to actions from controls or gestures.

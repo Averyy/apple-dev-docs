@@ -1,0 +1,20 @@
+# deviceFromLeftViewpointTransform
+
+**Framework**: ARKit  
+**Kind**: property
+
+The transformation matrix that converts from the left viewpoint to the device’s coordinate space.
+
+**Availability**:
+- visionOS 2.4+
+
+## Declaration
+
+```swift
+var deviceFromLeftViewpointTransform: simd_float4x4 { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/viewpointproperties/devicefromleftviewpointtransform)*

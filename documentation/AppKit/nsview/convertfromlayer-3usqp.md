@@ -1,0 +1,68 @@
+# convertFromLayer(_:)
+
+**Framework**: AppKit  
+**Kind**: method
+
+Convert the size from the layer’s interior coordinate system to the view’s interior coordinate system.
+
+**Availability**:
+- macOS 10.7+
+
+## Declaration
+
+```swift
+@MainActor
+func convertFromLayer(_ size: NSSize) -> NSSize
+```
+
+#### Return Value
+
+A size in the view’s interior coordinate system.
+
+#### Discussion
+
+The layer’s space is virtual, and doesn’t take into account the layer’s [`contentsScale`](https://developer.apple.com/documentation/QuartzCore/CALayer/contentsScale) setting.
+
+The returned `NSSize` values are always forced to have positive a width and height.
+
+## Parameters
+
+- `size`: A size in the layer’s interior coordinate system.
+
+## See Also
+
+- [func backingAlignedRect(NSRect, options: AlignmentOptions) -> NSRect](nsview/backingalignedrect(_:options:).md)
+  Returns a backing store pixel-aligned rectangle in local view coordinates.
+- [func convertFromBacking(NSPoint) -> NSPoint](nsview/convertfrombacking(_:)-229ps.md)
+  Converts a point from its pixel aligned backing store coordinate system to the view’s interior coordinate system.
+- [func convertToBacking(NSPoint) -> NSPoint](nsview/converttobacking(_:)-2xx45.md)
+  Converts a point from the view’s interior coordinate system to its pixel aligned backing store coordinate system.
+- [func convertFromLayer(NSPoint) -> NSPoint](nsview/convertfromlayer(_:)-3nsbu.md)
+  Convert the point from the layer’s interior coordinate system to the view’s interior coordinate system.
+- [func convertToLayer(NSPoint) -> NSPoint](nsview/converttolayer(_:)-44u7d.md)
+  Convert the size from the view’s interior coordinate system to the layer’s interior coordinate system.
+- [func convertFromBacking(NSRect) -> NSRect](nsview/convertfrombacking(_:)-2njpa.md)
+  Converts a rectangle from its pixel aligned backing store coordinate system to the view’s interior coordinate system.
+- [func convertToBacking(NSRect) -> NSRect](nsview/converttobacking(_:)-3zors.md)
+  Converts a rectangle from the view’s interior coordinate system to its pixel aligned backing store coordinate system.
+- [func convertFromLayer(NSRect) -> NSRect](nsview/convertfromlayer(_:)-8s5bi.md)
+  Convert the rectangle from the layer’s interior coordinate system to the view’s interior coordinate system.
+- [func convertToLayer(NSRect) -> NSRect](nsview/converttolayer(_:)-160pw.md)
+  Convert the size from the view’s interior coordinate system to the layer’s interior coordinate system.
+- [func convertFromBacking(NSSize) -> NSSize](nsview/convertfrombacking(_:)-4agf9.md)
+  Converts a size from its pixel aligned backing store coordinate system to the view’s interior coordinate system.
+- [func convertToBacking(NSSize) -> NSSize](nsview/converttobacking(_:)-4ra9y.md)
+  Converts a size from the view’s interior coordinate system to its pixel aligned backing store coordinate system.
+- [func convertToLayer(NSSize) -> NSSize](nsview/converttolayer(_:)-2vozx.md)
+  Convert the size from the view’s interior coordinate system to the layer’s interior coordinate system.
+- [func convert(NSPoint, from: NSView?) -> NSPoint](nsview/convert(_:from:)-1dq9l.md)
+  Converts a point from the coordinate system of a given view to that of the view.
+- [func convert(NSPoint, to: NSView?) -> NSPoint](nsview/convert(_:to:)-6u9ir.md)
+  Converts a point from the view’s coordinate system to that of a given view.
+- [func convert(NSSize, from: NSView?) -> NSSize](nsview/convert(_:from:)-40x0w.md)
+  Converts a size from another view’s coordinate system to that of the view.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview/convertfromlayer(_:)-3usqp)*

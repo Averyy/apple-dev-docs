@@ -1,6 +1,6 @@
 # batteryLevel
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The battery’s current percent charge.

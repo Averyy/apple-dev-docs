@@ -1,0 +1,94 @@
+# prefix(upTo:)
+
+**Framework**: TabularData  
+**Kind**: method
+
+Returns a subsequence from the start of the collection up to, but not including, the specified position.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+func prefix(upTo end: Self.Index) -> Self.SubSequence
+```
+
+#### Return Value
+
+A subsequence up to, but not including, the `end` position.
+
+#### Discussion
+
+The resulting subsequence  the element at the position `end`. The following example searches for the index of the number `40` in an array of integers, and then prints the prefix of the array up to, but not including, that index:
+
+```None
+let numbers = [10, 20, 30, 40, 50, 60]
+if let i = numbers.firstIndex(of: 40) {
+    print(numbers.prefix(upTo: i))
+}
+// Prints "[10, 20, 30]"
+```
+
+Passing the collection’s starting index as the `end` parameter results in an empty subsequence.
+
+```None
+print(numbers.prefix(upTo: numbers.startIndex))
+// Prints "[]"
+```
+
+Using the `prefix(upTo:)` method is equivalent to using a partial half-open range as the collection’s subscript. The subscript notation is preferred over `prefix(upTo:)`.
+
+```None
+if let i = numbers.firstIndex(of: 40) {
+    print(numbers[..<i])
+}
+// Prints "[10, 20, 30]"
+```
+
+> **Note**: O(1)
+
+O(1)
+
+## Parameters
+
+- `end`: The “past the end” index of the resulting subsequence.    must be a valid index of the collection.
+
+## See Also
+
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](dataframe/rows-swift.struct/drop(while:).md)
+  Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
+- [func dropFirst(Int) -> Self.SubSequence](dataframe/rows-swift.struct/dropfirst(_:).md)
+  Returns a subsequence containing all but the given number of initial elements.
+- [func prefix(Int) -> Self.SubSequence](dataframe/rows-swift.struct/prefix(_:).md)
+  Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
+- [func prefix(through: Self.Index) -> Self.SubSequence](dataframe/rows-swift.struct/prefix(through:).md)
+  Returns a subsequence from the start of the collection through the specified position.
+- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](dataframe/rows-swift.struct/prefix(while:).md)
+  Returns a subsequence containing the initial elements until `predicate` returns `false` and skipping the remaining elements.
+- [func suffix(Int) -> Self.SubSequence](dataframe/rows-swift.struct/suffix(_:).md)
+  Returns a subsequence, up to the given maximum length, containing the final elements of the collection.
+- [func suffix(from: Self.Index) -> Self.SubSequence](dataframe/rows-swift.struct/suffix(from:).md)
+  Returns a subsequence from the specified position to the end of the collection.
+- [func joined() -> FlattenSequence<Self>](dataframe/rows-swift.struct/joined.md)
+  Returns the elements of this sequence of sequences, concatenated.
+- [func joined<Separator>(separator: Separator) -> JoinedSequence<Self>](dataframe/rows-swift.struct/joined(separator:).md)
+  Returns the concatenated elements of this sequence of sequences, inserting the given separator between each element.
+- [subscript(Range<Self.Index>) -> Slice<Self>](dataframe/rows-swift.struct/subscript(_:)-3c8l4.md)
+  Accesses a contiguous subrange of the collection’s elements.
+- [subscript<R>(R) -> Self.SubSequence](dataframe/rows-swift.struct/subscript(_:)-9e4z3.md)
+  Accesses the contiguous subrange of the collection’s elements specified by a range expression.
+- [subscript<R>(R) -> Self.SubSequence](dataframe/rows-swift.struct/subscript(_:)-9yafe.md)
+- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](dataframe/rows-swift.struct/subscript(_:)-43snh.md)
+- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](dataframe/rows-swift.struct/subscript(_:)-47kxi.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabulardata/dataframe/rows-swift.struct/prefix(upto:))*

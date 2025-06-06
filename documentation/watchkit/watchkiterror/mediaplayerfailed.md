@@ -1,6 +1,6 @@
 # mediaPlayerFailed
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A media player error.

@@ -1,6 +1,6 @@
 # streetAddressLine2
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 The second line of a street address.

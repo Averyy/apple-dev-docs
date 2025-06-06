@@ -1,0 +1,41 @@
+# editMenuInteraction(_:willDismissMenuFor:animator:)
+
+**Framework**: UIKit  
+**Kind**: method
+
+Informs the delegate when the interaction is about to dismiss the menu.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+@MainActor
+optional func editMenuInteraction(_ interaction: UIEditMenuInteraction, willDismissMenuFor configuration: UIEditMenuConfiguration, animator: any UIEditMenuInteractionAnimating)
+```
+
+## Parameters
+
+- `interaction`: The interaction object triggering the menu.
+- `configuration`: The object containing the configuration details for the menu.
+- `animator`: The object you use to add animations that run alongside the dismiss transition.
+
+## See Also
+
+- [func editMenuInteraction(UIEditMenuInteraction, menuFor: UIEditMenuConfiguration, suggestedActions: [UIMenuElement]) -> UIMenu?](uieditmenuinteractiondelegate/editmenuinteraction(_:menufor:suggestedactions:).md)
+  Provides the menu to use when the interaction begins or requires an update.
+- [func editMenuInteraction(UIEditMenuInteraction, targetRectFor: UIEditMenuConfiguration) -> CGRect](uieditmenuinteractiondelegate/editmenuinteraction(_:targetrectfor:).md)
+  Provides the target rectangle to position the menu relative to when the interaction begins or requires an update.
+- [func editMenuInteraction(UIEditMenuInteraction, willPresentMenuFor: UIEditMenuConfiguration, animator: any UIEditMenuInteractionAnimating)](uieditmenuinteractiondelegate/editmenuinteraction(_:willpresentmenufor:animator:).md)
+  Informs the delegate when the interaction is about to present the menu.
+- [protocol UIEditMenuInteractionAnimating](uieditmenuinteractionanimating.md)
+  Methods adopted by system-supplied animator objects when interacting with menus.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uieditmenuinteractiondelegate/editmenuinteraction(_:willdismissmenufor:animator:))*

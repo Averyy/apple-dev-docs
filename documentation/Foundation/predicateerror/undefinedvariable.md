@@ -1,0 +1,30 @@
+# undefinedVariable
+
+**Framework**: Foundation  
+**Kind**: property
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
+- visionOS 1.0+
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+static let undefinedVariable: PredicateError
+```
+
+## See Also
+
+- [static let forceCastFailure: PredicateError](predicateerror/forcecastfailure.md)
+- [static let forceUnwrapFailure: PredicateError](predicateerror/forceunwrapfailure.md)
+- [static let invalidInput: PredicateError](predicateerror/invalidinput.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/predicateerror/undefinedvariable)*

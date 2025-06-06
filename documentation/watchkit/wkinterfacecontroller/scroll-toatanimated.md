@@ -1,6 +1,6 @@
 # scroll(to:at:animated:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Scrolls the specified object to the given position onscreen.

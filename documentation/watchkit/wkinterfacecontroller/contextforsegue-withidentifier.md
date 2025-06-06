@@ -1,6 +1,6 @@
 # contextForSegue(withIdentifier:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Returns the context object to pass to the specified interface controller when a button is tapped.

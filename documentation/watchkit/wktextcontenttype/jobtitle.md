@@ -1,6 +1,6 @@
 # jobTitle
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 A job title.

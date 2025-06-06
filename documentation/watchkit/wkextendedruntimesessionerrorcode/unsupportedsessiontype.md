@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionErrorCode.unsupportedSessionType
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: case
 
 **Availability**:

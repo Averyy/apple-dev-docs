@@ -1,0 +1,4 @@
+Completed scraping External Accessory!
+Total pages scraped: 80
+Pages skipped (unchanged): 1
+Pages failed: 0

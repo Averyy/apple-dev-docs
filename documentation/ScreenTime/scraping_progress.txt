@@ -1,0 +1,4 @@
+Completed scraping Screen Time!
+Total pages scraped: 28
+Pages skipped (unchanged): 1
+Pages failed: 0

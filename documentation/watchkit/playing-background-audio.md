@@ -1,6 +1,6 @@
 # Playing Background Audio
 
-**Framework**: WatchKit
+**Framework**: Watchkit
 
 Enable background audio in your app to provide a seamless playback experience.
 
@@ -95,9 +95,9 @@ session.activate(options: []) { (success, error) in
 
 - [Enabling Background Sessions](enabling-background-sessions.md)
   Enable the background mode for audio, location updates, remote notifications, or workouts.
-- [WKBackgroundModes](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKBackgroundModes)
+- [WKBackgroundModes](../BundleResources/Information-Property-List/WKBackgroundModes.md)
   The services a watchOS app provides that require it to continue running in the background.
-- [UIBackgroundModes](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIBackgroundModes)
+- [UIBackgroundModes](../BundleResources/Information-Property-List/UIBackgroundModes.md)
   Services provided by an app that require it to run in the background.
 
 

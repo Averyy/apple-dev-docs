@@ -1,6 +1,6 @@
 # handleAction(withIdentifier:forRemoteNotification:withResponseInfo:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Delivers a remote notification payload and user response information to the app.

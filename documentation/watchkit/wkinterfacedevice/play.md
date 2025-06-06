@@ -1,6 +1,6 @@
 # play(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Gives haptic feedback to the user.

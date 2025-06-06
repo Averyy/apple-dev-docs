@@ -1,6 +1,6 @@
 # WKCrownDelegate
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: protocol
 
 A collection of methods you can implement to track the user’s interaction with the digital crown, receiving notifications when the user rotates the crown or when rotation stops.
@@ -25,7 +25,7 @@ protocol WKCrownDelegate : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

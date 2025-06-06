@@ -1,0 +1,29 @@
+# NSTextMovement.tab
+
+**Framework**: AppKit  
+**Kind**: case
+
+**Availability**:
+- macOS ?+
+
+## Declaration
+
+```swift
+case tab
+```
+
+## See Also
+
+- [NSTextMovement.return](nstextmovement/return.md)
+- [NSTextMovement.backtab](nstextmovement/backtab.md)
+- [NSTextMovement.left](nstextmovement/left.md)
+- [NSTextMovement.right](nstextmovement/right.md)
+- [NSTextMovement.up](nstextmovement/up.md)
+- [NSTextMovement.down](nstextmovement/down.md)
+- [NSTextMovement.cancel](nstextmovement/cancel.md)
+- [NSTextMovement.other](nstextmovement/other.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstextmovement/tab)*

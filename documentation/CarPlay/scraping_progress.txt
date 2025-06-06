@@ -1,0 +1,4 @@
+Completed scraping CarPlay!
+Total pages scraped: 739
+Pages skipped (unchanged): 1
+Pages failed: 0

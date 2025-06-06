@@ -1,6 +1,6 @@
 # WKAccessibilityIsReduceMotionEnabled()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: func
 
 Returns a Boolean value indicating whether reduced motion is enabled.

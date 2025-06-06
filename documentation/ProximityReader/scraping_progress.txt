@@ -1,0 +1,4 @@
+Completed scraping ProximityReader!
+Total pages scraped: 821
+Pages skipped (unchanged): 1
+Pages failed: 0

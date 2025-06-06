@@ -1,0 +1,45 @@
+# worldUp
+
+**Framework**: SceneKit  
+**Kind**: property
+
+The “up” (+Y) direction vector relative to the node, expressed in world space.
+
+**Availability**:
+- iOS 11.0+
+- iPadOS 11.0+
+- Mac Catalyst 13.1+
+- macOS 10.13+
+- tvOS 11.0+
+- visionOS 1.0+
+- watchOS 4.0+
+
+## Declaration
+
+```swift
+var worldUp: SCNVector3 { get }
+```
+
+#### Discussion
+
+Reading this property is equivalent to reading the [`localUp`](scnnode/localup.md) class property and using the [`convertVector(_:to:)`](scnnode/convertvector(_:to:).md) or [`convertVector(_:from:)`](scnnode/convertvector(_:from:).md) method to convert that vector from the node’s local coordinate space to the scene’s world coordinate space.
+
+## See Also
+
+- [var simdWorldUp: simd_float3](scnnode/simdworldup.md)
+  The “up” (+Y) direction vector relative to the node, expressed in world space.
+- [class var localRight: SCNVector3](scnnode/localright.md)
+  The direction SceneKit treats as “right” in local space for all nodes.
+- [class var localUp: SCNVector3](scnnode/localup.md)
+  The direction SceneKit treats as “up” in local space for all nodes.
+- [class var localFront: SCNVector3](scnnode/localfront.md)
+  The unit vector SceneKit treats as “forward” in local space for all nodes.
+- [var worldRight: SCNVector3](scnnode/worldright.md)
+  The “right” (+X) direction vector relative to the node, expressed in world space.
+- [var worldFront: SCNVector3](scnnode/worldfront.md)
+  The “forward” (-Z) direction vector relative to the node, expressed in world space.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnnode/worldup)*

@@ -1,0 +1,30 @@
+# formatted(_:)
+
+**Framework**: Swift  
+**Kind**: method
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+func formatted<S>(_ style: S) -> S.FormatOutput where Self == S.FormatInput, S : FormatStyle
+```
+
+## See Also
+
+- [func formatted() -> String](sequence/formatted.md)
+- [struct ListFormatStyle<Style, Base> where Style : FormatStyle, Base : Sequence, Style.FormatInput == Base.Element, Style.FormatOutput == String](../Foundation/ListFormatStyle.md)
+  A type that formats lists of items with a separator and conjunction appropriate for a given locale.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/sequence/formatted(_:))*

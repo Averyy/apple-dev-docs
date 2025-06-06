@@ -1,6 +1,6 @@
 # pickerDidResignFocus(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Called to let you know that the specified picker is no longer receiving input from the Digital Crown.

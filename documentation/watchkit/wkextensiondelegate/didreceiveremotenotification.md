@@ -1,6 +1,6 @@
 # didReceiveRemoteNotification(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the delegate that a remote notification arrived.

@@ -1,6 +1,6 @@
 # setText(_:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Sets the label text to the specified string.

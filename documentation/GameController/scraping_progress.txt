@@ -1,0 +1,4 @@
+Completed scraping Game Controller!
+Total pages scraped: 974
+Pages skipped (unchanged): 1
+Pages failed: 0

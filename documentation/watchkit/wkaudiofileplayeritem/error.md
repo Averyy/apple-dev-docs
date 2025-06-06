@@ -1,6 +1,6 @@
 # error
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: property
 
 An error that describes the cause of a failure.

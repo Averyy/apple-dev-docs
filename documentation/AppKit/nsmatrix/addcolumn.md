@@ -1,0 +1,66 @@
+# addColumn()
+
+**Framework**: AppKit  
+**Kind**: method
+
+Adds a new column of cells to the right of the last column.
+
+**Availability**:
+- macOS ?+
+
+## Declaration
+
+```swift
+@MainActor
+func addColumn()
+```
+
+#### Discussion
+
+This method raises an `NSRangeException` if there are 0 rows or 0 columns. This method creates new cells as needed with [`makeCell(atRow:column:)`](nsmatrix/makecell(atrow:column:).md). Use [`renewRows(_:columns:)`](nsmatrix/renewrows(_:columns:).md) to add new cells to an empty matrix.
+
+If the number of rows or columns in the receiver has been changed with [`renewRows(_:columns:)`](nsmatrix/renewrows(_:columns:).md), new cells are created only if they are needed. This fact allows you to grow and shrink an [`NSMatrix`](nsmatrix.md) without repeatedly creating and freeing the cells.
+
+This method redraws the receiver. Your code may need to send [`sizeToCells()`](nsmatrix/sizetocells().md) after sending this method to resize the receiver to fit the newly added cells.
+
+## See Also
+
+- [var prototype: NSCell?](nsmatrix/prototype.md)
+  The prototype cell that’s copied whenever the matrix creates a new cell.
+- [var cellClass: AnyClass](nsmatrix/cellclass.md)
+  The subclass of [`NSCell`](nscell.md) that the matrix uses when creating new (empty) cells.
+- [func addColumn(with: [NSCell])](nsmatrix/addcolumn(with:).md)
+  Adds a new column of cells to the right of the last column, using the given cells.
+- [func addRow()](nsmatrix/addrow.md)
+  Adds a new row of cells below the last row.
+- [func addRow(with: [NSCell])](nsmatrix/addrow(with:).md)
+  Adds a new row of cells below the last row, using the specified cells.
+- [func cellFrame(atRow: Int, column: Int) -> NSRect](nsmatrix/cellframe(atrow:column:).md)
+  Returns the frame rectangle of the cell that would be drawn at the specified location.
+- [var cellSize: NSSize](nsmatrix/cellsize.md)
+  The size of each cell in the matrix.
+- [func getNumberOfRows(UnsafeMutablePointer<Int>?, columns: UnsafeMutablePointer<Int>?)](nsmatrix/getnumberofrows(_:columns:).md)
+  Obtains the number of rows and columns in the receiver.
+- [func insertColumn(Int)](nsmatrix/insertcolumn(_:).md)
+  Inserts a new column of cells at the specified location. .
+- [func insertColumn(Int, with: [NSCell]?)](nsmatrix/insertcolumn(_:with:).md)
+  Inserts a new column of cells before the specified column, using the given cells.
+- [func insertRow(Int)](nsmatrix/insertrow(_:).md)
+  Inserts a new row of cells before the specified row.
+- [func insertRow(Int, with: [NSCell]?)](nsmatrix/insertrow(_:with:).md)
+  Inserts a new row of cells before the specified row, using the given cells.
+- [var intercellSpacing: NSSize](nsmatrix/intercellspacing.md)
+  The vertical and horizontal spacing between cells in the matrix.
+- [func makeCell(atRow: Int, column: Int) -> NSCell](nsmatrix/makecell(atrow:column:).md)
+  Creates a new cell at the location specified by the given row and column in the receiver.
+- [var numberOfColumns: Int](nsmatrix/numberofcolumns.md)
+  The number of columns in the matrix.
+- [var numberOfRows: Int](nsmatrix/numberofrows.md)
+  The number of rows in the matrix.
+- [func putCell(NSCell, atRow: Int, column: Int)](nsmatrix/putcell(_:atrow:column:).md)
+  Replaces the cell at the specified row and column with the new cell.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsmatrix/addcolumn())*

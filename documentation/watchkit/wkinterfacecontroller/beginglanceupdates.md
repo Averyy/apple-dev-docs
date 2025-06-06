@@ -1,6 +1,6 @@
 # beginGlanceUpdates()
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Tells the system that you are about to start a potentially lengthy update task for your glance.

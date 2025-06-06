@@ -1,6 +1,6 @@
 # presentAudioRecorderController(withOutputURL:preset:options:completion:)
 
-**Framework**: WatchKit  
+**Framework**: Watchkit  
 **Kind**: method
 
 Display a standard interface for recording audio from the user’s Apple Watch.

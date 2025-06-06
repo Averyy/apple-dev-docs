@@ -1,0 +1,37 @@
+# UIPencilPreferredAction.showContextualPalette
+
+**Framework**: UIKit  
+**Kind**: case
+
+An action that toggles shows a contextual palette of markup tools, or undo and redo options if tools aren’t available.
+
+**Availability**:
+- iOS 17.5+
+- iPadOS 17.5+
+- Mac Catalyst 17.5+
+
+## Declaration
+
+```swift
+case showContextualPalette
+```
+
+## See Also
+
+- [UIPencilPreferredAction.ignore](uipencilpreferredaction/ignore.md)
+  An action that does nothing.
+- [UIPencilPreferredAction.switchEraser](uipencilpreferredaction/switcheraser.md)
+  An action that switches between the current tool and the eraser.
+- [UIPencilPreferredAction.switchPrevious](uipencilpreferredaction/switchprevious.md)
+  An action that switches between the current tool and the last used tool.
+- [UIPencilPreferredAction.showColorPalette](uipencilpreferredaction/showcolorpalette.md)
+  An action that toggles the display of the color palette.
+- [UIPencilPreferredAction.showInkAttributes](uipencilpreferredaction/showinkattributes.md)
+  An action that toggles the display of the selected tool’s ink attributes.
+- [UIPencilPreferredAction.runSystemShortcut](uipencilpreferredaction/runsystemshortcut.md)
+  An action that runs a system shortcut.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipencilpreferredaction/showcontextualpalette)*

@@ -1,0 +1,4 @@
+Completed scraping Apple Music API!
+Total pages scraped: 420
+Pages skipped (unchanged): 1
+Pages failed: 0
