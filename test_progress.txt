@@ -1,3 +1,0 @@
-Scraping Accelerate in progress...
-Last scraped: https://developer.apple.com/documentation/accelerate/vimagecvimageformat/format/format420ypcbcr8planarfullrange
-Progress: 76 scraped, 0 skipped, 0 failed

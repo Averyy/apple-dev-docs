@@ -58,8 +58,8 @@ class TestCrossFrameworkReferences:
             "UIUserNotificationActionResponseTypedTextKey"
         )
         
-        # Must NOT create local .md link
-        assert ".md" not in result or "([Apple Docs](" in result
+        # Should create cross-framework local link
+        assert "../UIKit/" in result and ".md" in result
         print("✓ Cross-framework reference test passed")
         
 

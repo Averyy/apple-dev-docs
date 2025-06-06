@@ -74,7 +74,7 @@ class AppleFrameworkListScraper:
             # IMPORTANT: Only include top-level frameworks (no sub-paths)
             # This filters out entries like /documentation/accelerate/simd
             if '/' in path:
-                logger.debug(f"Skipping sub-module: {url}")
+                # Skip sub-modules
                 continue
             
             # Extract framework info
@@ -104,13 +104,13 @@ class AppleFrameworkListScraper:
                 seen_lowercase[lowercase_id] = True
                 unique_frameworks.append(fw)
             else:
-                # Log when we skip a duplicate with different casing
-                logger.debug(f"Skipping duplicate framework with different casing: {fw['id']} (already have {lowercase_id})")
+                # Skip duplicate with different casing
+                pass
         
         # Sort alphabetically by title (not ID, since IDs have inconsistent casing)
         unique_frameworks.sort(key=lambda x: x['title'].lower())
         
-        logger.info(f"Extracted {len(unique_frameworks)} top-level frameworks (filtered {len(frameworks) - len(unique_frameworks)} sub-modules/duplicates)")
+        print(f"📊 Extracted {len(unique_frameworks)} top-level frameworks (filtered {len(frameworks) - len(unique_frameworks)} sub-modules/duplicates)")
         
         return unique_frameworks
     

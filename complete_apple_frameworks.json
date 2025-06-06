@@ -1,2057 +1,3083 @@
 {
   "metadata": {
-    "source": "https://developer.apple.com/tutorials/data/documentation/technologies.json",
-    "method": "JSON API extraction - top-level only",
-    "timestamp": "2025-06-04",
+    "source": "Apple technologies.json API",
+    "url": "https://developer.apple.com/tutorials/data/documentation/technologies.json",
     "total_frameworks": 341,
-    "extraction_success": "COMPLETE"
+    "description": "Complete list of Apple frameworks from official API"
   },
   "frameworks": [
     {
       "id": "Accelerate",
       "title": "Accelerate",
+      "url": "/documentation/Accelerate",
       "href": "/documentation/Accelerate",
       "type": "topic"
     },
     {
       "id": "Accessibility",
       "title": "Accessibility",
+      "url": "/documentation/Accessibility",
       "href": "/documentation/Accessibility",
       "type": "topic"
     },
     {
-      "id": "accessorysetupkit",
+      "id": "AccessorySetupKit",
       "title": "AccessorySetupKit",
-      "href": "/documentation/accessorysetupkit",
+      "url": "/documentation/AccessorySetupKit",
+      "href": "/documentation/AccessorySetupKit",
       "type": "topic"
     },
     {
       "id": "AccountOrganizationalDataSharing",
       "title": "Account & Organizational Data Sharing",
+      "url": "/documentation/AccountOrganizationalDataSharing",
       "href": "/documentation/AccountOrganizationalDataSharing",
       "type": "topic"
     },
     {
       "id": "AccountDataTransfer",
       "title": "Account Data Transfer",
+      "url": "/documentation/AccountDataTransfer",
       "href": "/documentation/AccountDataTransfer",
       "type": "topic"
     },
     {
       "id": "Accounts",
       "title": "Accounts",
+      "url": "/documentation/Accounts",
       "href": "/documentation/Accounts",
       "type": "topic"
     },
     {
       "id": "ActivityKit",
       "title": "ActivityKit",
+      "url": "/documentation/ActivityKit",
       "href": "/documentation/ActivityKit",
       "type": "topic"
     },
     {
       "id": "AdAttributionKit",
       "title": "AdAttributionKit",
+      "url": "/documentation/AdAttributionKit",
       "href": "/documentation/AdAttributionKit",
       "type": "topic"
     },
     {
       "id": "AddressBook",
       "title": "Address Book",
+      "url": "/documentation/AddressBook",
       "href": "/documentation/AddressBook",
       "type": "topic"
     },
     {
       "id": "AddressBookUI",
       "title": "Address Book UI",
+      "url": "/documentation/AddressBookUI",
       "href": "/documentation/AddressBookUI",
       "type": "topic"
     },
     {
       "id": "AdServices",
       "title": "AdServices",
+      "url": "/documentation/AdServices",
       "href": "/documentation/AdServices",
       "type": "topic"
     },
     {
       "id": "AdSupport",
       "title": "AdSupport",
+      "url": "/documentation/AdSupport",
       "href": "/documentation/AdSupport",
       "type": "topic"
     },
     {
       "id": "AdvancedCommerceAPI",
       "title": "Advanced Commerce API",
+      "url": "/documentation/AdvancedCommerceAPI",
       "href": "/documentation/AdvancedCommerceAPI",
       "type": "topic"
     },
     {
       "id": "AGL",
       "title": "AGL",
+      "url": "/documentation/AGL",
       "href": "/documentation/AGL",
       "type": "topic"
     },
     {
       "id": "analytics-reports",
       "title": "Analytics Reports",
+      "url": "/documentation/analytics-reports",
       "href": "/documentation/analytics-reports",
       "type": "topic"
     },
     {
       "id": "AppClip",
       "title": "App Clips",
+      "url": "/documentation/AppClip",
       "href": "/documentation/AppClip",
       "type": "topic"
     },
     {
       "id": "AppDataTransfer",
       "title": "App Data Transfer",
+      "url": "/documentation/AppDataTransfer",
       "href": "/documentation/AppDataTransfer",
       "type": "topic"
     },
     {
       "id": "AppIntents",
       "title": "App Intents",
+      "url": "/documentation/AppIntents",
       "href": "/documentation/AppIntents",
       "type": "topic"
     },
     {
       "id": "AppLicenseDeliverySDK",
       "title": "App License Delivery SDK",
+      "url": "/documentation/AppLicenseDeliverySDK",
       "href": "/documentation/AppLicenseDeliverySDK",
       "type": "topic"
     },
     {
       "id": "AppStoreConnectAPI",
       "title": "App Store Connect API",
+      "url": "/documentation/AppStoreConnectAPI",
       "href": "/documentation/AppStoreConnectAPI",
       "type": "topic"
     },
     {
       "id": "appstorereceipts",
       "title": "App Store Receipts",
+      "url": "/documentation/appstorereceipts",
       "href": "/documentation/appstorereceipts",
       "type": "topic"
     },
     {
       "id": "AppStoreServerAPI",
       "title": "App Store Server API",
+      "url": "/documentation/AppStoreServerAPI",
       "href": "/documentation/AppStoreServerAPI",
       "type": "topic"
     },
     {
       "id": "AppStoreServerNotifications",
       "title": "App Store Server Notifications",
+      "url": "/documentation/AppStoreServerNotifications",
       "href": "/documentation/AppStoreServerNotifications",
       "type": "topic"
     },
     {
       "id": "AppTrackingTransparency",
       "title": "App Tracking Transparency",
+      "url": "/documentation/AppTrackingTransparency",
       "href": "/documentation/AppTrackingTransparency",
       "type": "topic"
     },
     {
       "id": "AppKit",
       "title": "AppKit",
+      "url": "/documentation/AppKit",
       "href": "/documentation/AppKit",
       "type": "topic"
     },
     {
       "id": "AppleArchive",
       "title": "Apple Archive",
+      "url": "/documentation/AppleArchive",
       "href": "/documentation/AppleArchive",
       "type": "topic"
     },
     {
       "id": "CryptoKit",
       "title": "Apple CryptoKit",
+      "url": "/documentation/CryptoKit",
       "href": "/documentation/CryptoKit",
       "type": "topic"
     },
     {
       "id": "AppleMapsServerAPI",
       "title": "Apple Maps Server API",
+      "url": "/documentation/AppleMapsServerAPI",
       "href": "/documentation/AppleMapsServerAPI",
       "type": "topic"
     },
     {
       "id": "AppleMusicAPI",
       "title": "Apple Music API",
+      "url": "/documentation/AppleMusicAPI",
       "href": "/documentation/AppleMusicAPI",
       "type": "topic"
     },
     {
       "id": "AppleMusicFeed",
       "title": "Apple Music Feed",
+      "url": "/documentation/AppleMusicFeed",
       "href": "/documentation/AppleMusicFeed",
       "type": "topic"
     },
     {
       "id": "AppleNews",
       "title": "Apple News",
+      "url": "/documentation/AppleNews",
       "href": "/documentation/AppleNews",
       "type": "topic"
     },
     {
       "id": "MerchantTokenNotificationServices",
       "title": "Apple Pay Merchant Token Management API",
+      "url": "/documentation/MerchantTokenNotificationServices",
       "href": "/documentation/MerchantTokenNotificationServices",
       "type": "topic"
     },
     {
       "id": "ApplePayontheWeb",
       "title": "Apple Pay on the Web",
+      "url": "/documentation/ApplePayontheWeb",
       "href": "/documentation/ApplePayontheWeb",
       "type": "topic"
     },
     {
       "id": "ApplePayWebMerchantRegistrationAPI",
       "title": "Apple Pay Web Merchant Registration API",
+      "url": "/documentation/ApplePayWebMerchantRegistrationAPI",
       "href": "/documentation/ApplePayWebMerchantRegistrationAPI",
       "type": "topic"
     },
     {
       "id": "ApplePencil",
       "title": "Apple Pencil",
+      "url": "/documentation/ApplePencil",
       "href": "/documentation/ApplePencil",
       "type": "topic"
     },
     {
       "id": "apple_search_ads",
       "title": "Apple Search Ads",
+      "url": "/documentation/apple_search_ads",
       "href": "/documentation/apple_search_ads",
       "type": "topic"
     },
     {
       "id": "apple-silicon",
       "title": "Apple silicon",
+      "url": "/documentation/apple-silicon",
       "href": "/documentation/apple-silicon",
       "type": "topic"
     },
     {
       "id": "applicationservices",
       "title": "Application Services",
+      "url": "/documentation/applicationservices",
       "href": "/documentation/applicationservices",
       "type": "topic"
     },
     {
       "id": "ARKit",
       "title": "ARKit",
+      "url": "/documentation/ARKit",
       "href": "/documentation/ARKit",
       "type": "topic"
     },
     {
       "id": "AssetsLibrary",
       "title": "Assets Library",
+      "url": "/documentation/AssetsLibrary",
       "href": "/documentation/AssetsLibrary",
       "type": "topic"
     },
     {
       "id": "Assignables",
       "title": "Assignables",
+      "url": "/documentation/Assignables",
       "href": "/documentation/Assignables",
       "type": "topic"
     },
     {
       "id": "AudioToolbox",
       "title": "Audio Toolbox",
+      "url": "/documentation/AudioToolbox",
       "href": "/documentation/AudioToolbox",
       "type": "topic"
     },
     {
       "id": "AudioUnit",
       "title": "Audio Unit",
+      "url": "/documentation/AudioUnit",
       "href": "/documentation/AudioUnit",
       "type": "topic"
     },
     {
       "id": "AudioDriverKit",
       "title": "AudioDriverKit",
+      "url": "/documentation/AudioDriverKit",
       "href": "/documentation/AudioDriverKit",
       "type": "topic"
     },
     {
       "id": "AuthenticationServices",
       "title": "Authentication Services",
+      "url": "/documentation/AuthenticationServices",
       "href": "/documentation/AuthenticationServices",
       "type": "topic"
     },
     {
       "id": "AutomatedDeviceEnrollment",
       "title": "Automated Device Enrollment",
+      "url": "/documentation/AutomatedDeviceEnrollment",
       "href": "/documentation/AutomatedDeviceEnrollment",
       "type": "topic"
     },
     {
       "id": "AutomaticAssessmentConfiguration",
       "title": "Automatic Assessment Configuration",
+      "url": "/documentation/AutomaticAssessmentConfiguration",
       "href": "/documentation/AutomaticAssessmentConfiguration",
       "type": "topic"
     },
     {
       "id": "Automator",
       "title": "Automator",
+      "url": "/documentation/Automator",
       "href": "/documentation/Automator",
       "type": "topic"
     },
     {
       "id": "AVFAudio",
       "title": "AVFAudio",
+      "url": "/documentation/AVFAudio",
       "href": "/documentation/AVFAudio",
       "type": "topic"
     },
     {
       "id": "AVFoundation",
       "title": "AVFoundation",
+      "url": "/documentation/AVFoundation",
       "href": "/documentation/AVFoundation",
       "type": "topic"
     },
     {
       "id": "AVKit",
       "title": "AVKit",
+      "url": "/documentation/AVKit",
       "href": "/documentation/AVKit",
       "type": "topic"
     },
     {
       "id": "AVRouting",
       "title": "AVRouting",
+      "url": "/documentation/AVRouting",
       "href": "/documentation/AVRouting",
       "type": "topic"
     },
     {
       "id": "BackgroundAssets",
       "title": "Background Assets",
+      "url": "/documentation/BackgroundAssets",
       "href": "/documentation/BackgroundAssets",
       "type": "topic"
     },
     {
       "id": "BackgroundTasks",
       "title": "Background Tasks",
+      "url": "/documentation/BackgroundTasks",
       "href": "/documentation/BackgroundTasks",
       "type": "topic"
     },
     {
       "id": "BlockStorageDeviceDriverKit",
       "title": "BlockStorageDeviceDriverKit",
+      "url": "/documentation/BlockStorageDeviceDriverKit",
       "href": "/documentation/BlockStorageDeviceDriverKit",
       "type": "topic"
     },
     {
       "id": "BrowserEngineCore",
       "title": "BrowserEngineCore",
+      "url": "/documentation/BrowserEngineCore",
       "href": "/documentation/BrowserEngineCore",
       "type": "topic"
     },
     {
       "id": "BrowserEngineKit",
       "title": "BrowserEngineKit",
+      "url": "/documentation/BrowserEngineKit",
       "href": "/documentation/BrowserEngineKit",
       "type": "topic"
     },
     {
       "id": "BrowserKit",
       "title": "BrowserKit",
+      "url": "/documentation/BrowserKit",
       "href": "/documentation/BrowserKit",
       "type": "topic"
     },
     {
       "id": "BundleResources",
       "title": "Bundle Resources",
+      "url": "/documentation/BundleResources",
       "href": "/documentation/BundleResources",
       "type": "topic"
     },
     {
       "id": "CallKit",
       "title": "CallKit",
+      "url": "/documentation/CallKit",
       "href": "/documentation/CallKit",
       "type": "topic"
     },
     {
       "id": "CarKey",
       "title": "CarKey",
+      "url": "/documentation/CarKey",
       "href": "/documentation/CarKey",
       "type": "topic"
     },
     {
       "id": "CarPlay",
       "title": "CarPlay",
+      "url": "/documentation/CarPlay",
       "href": "/documentation/CarPlay",
       "type": "topic"
     },
     {
       "id": "CFNetwork",
       "title": "CFNetwork",
+      "url": "/documentation/CFNetwork",
       "href": "/documentation/CFNetwork",
       "type": "topic"
     },
     {
       "id": "Cinematic",
       "title": "Cinematic",
+      "url": "/documentation/Cinematic",
       "href": "/documentation/Cinematic",
       "type": "topic"
     },
     {
       "id": "CKToolJS",
       "title": "CKTool JS",
+      "url": "/documentation/CKToolJS",
       "href": "/documentation/CKToolJS",
       "type": "topic"
     },
     {
       "id": "ClassKit",
       "title": "ClassKit",
+      "url": "/documentation/ClassKit",
       "href": "/documentation/ClassKit",
       "type": "topic"
     },
     {
       "id": "ClassKitCatalogAPI",
       "title": "ClassKit Catalog API",
+      "url": "/documentation/ClassKitCatalogAPI",
       "href": "/documentation/ClassKitCatalogAPI",
       "type": "topic"
     },
     {
       "id": "ClockKit",
       "title": "ClockKit",
+      "url": "/documentation/ClockKit",
       "href": "/documentation/ClockKit",
       "type": "topic"
     },
     {
       "id": "CloudKit",
       "title": "CloudKit",
+      "url": "/documentation/CloudKit",
       "href": "/documentation/CloudKit",
       "type": "topic"
     },
     {
       "id": "CloudKitJS",
       "title": "CloudKit JS",
+      "url": "/documentation/CloudKitJS",
       "href": "/documentation/CloudKitJS",
       "type": "topic"
     },
     {
       "id": "Collaboration",
       "title": "Collaboration",
+      "url": "/documentation/Collaboration",
       "href": "/documentation/Collaboration",
       "type": "topic"
     },
     {
       "id": "ColorSync",
       "title": "ColorSync",
+      "url": "/documentation/ColorSync",
       "href": "/documentation/ColorSync",
       "type": "topic"
     },
     {
       "id": "Combine",
       "title": "Combine",
+      "url": "/documentation/Combine",
       "href": "/documentation/Combine",
       "type": "topic"
     },
     {
       "id": "CompositorServices",
       "title": "Compositor Services",
+      "url": "/documentation/CompositorServices",
       "href": "/documentation/CompositorServices",
       "type": "topic"
     },
     {
       "id": "Compression",
       "title": "Compression",
+      "url": "/documentation/Compression",
       "href": "/documentation/Compression",
       "type": "topic"
     },
     {
       "id": "ContactProvider",
       "title": "ContactProvider",
+      "url": "/documentation/ContactProvider",
       "href": "/documentation/ContactProvider",
       "type": "topic"
     },
     {
       "id": "Contacts",
       "title": "Contacts",
+      "url": "/documentation/Contacts",
       "href": "/documentation/Contacts",
       "type": "topic"
     },
     {
       "id": "ContactsUI",
       "title": "Contacts UI",
+      "url": "/documentation/ContactsUI",
       "href": "/documentation/ContactsUI",
       "type": "topic"
     },
     {
       "id": "QuartzCore",
       "title": "Core Animation",
+      "url": "/documentation/QuartzCore",
       "href": "/documentation/QuartzCore",
       "type": "topic"
     },
     {
       "id": "CoreAudio",
       "title": "Core Audio",
+      "url": "/documentation/CoreAudio",
       "href": "/documentation/CoreAudio",
       "type": "topic"
     },
     {
       "id": "CoreAudioTypes",
       "title": "Core Audio Types",
+      "url": "/documentation/CoreAudioTypes",
       "href": "/documentation/CoreAudioTypes",
       "type": "topic"
     },
     {
       "id": "CoreBluetooth",
       "title": "Core Bluetooth",
+      "url": "/documentation/CoreBluetooth",
       "href": "/documentation/CoreBluetooth",
       "type": "topic"
     },
     {
       "id": "CoreData",
       "title": "Core Data",
+      "url": "/documentation/CoreData",
       "href": "/documentation/CoreData",
       "type": "topic"
     },
     {
       "id": "CoreFoundation",
       "title": "Core Foundation",
+      "url": "/documentation/CoreFoundation",
       "href": "/documentation/CoreFoundation",
       "type": "topic"
     },
     {
       "id": "CoreGraphics",
       "title": "Core Graphics",
+      "url": "/documentation/CoreGraphics",
       "href": "/documentation/CoreGraphics",
       "type": "topic"
     },
     {
       "id": "CoreHaptics",
       "title": "Core Haptics",
+      "url": "/documentation/CoreHaptics",
       "href": "/documentation/CoreHaptics",
       "type": "topic"
     },
     {
       "id": "CoreHID",
       "title": "Core HID",
+      "url": "/documentation/CoreHID",
       "href": "/documentation/CoreHID",
       "type": "topic"
     },
     {
       "id": "coreimage",
       "title": "Core Image",
+      "url": "/documentation/coreimage",
       "href": "/documentation/coreimage",
       "type": "topic"
     },
     {
       "id": "CoreLocation",
       "title": "Core Location",
+      "url": "/documentation/CoreLocation",
       "href": "/documentation/CoreLocation",
       "type": "topic"
     },
     {
       "id": "CoreMedia",
       "title": "Core Media",
+      "url": "/documentation/CoreMedia",
       "href": "/documentation/CoreMedia",
       "type": "topic"
     },
     {
       "id": "CoreMediaIO",
       "title": "Core Media I/O",
+      "url": "/documentation/CoreMediaIO",
       "href": "/documentation/CoreMediaIO",
       "type": "topic"
     },
     {
       "id": "CoreMIDI",
       "title": "Core MIDI",
+      "url": "/documentation/CoreMIDI",
       "href": "/documentation/CoreMIDI",
       "type": "topic"
     },
     {
       "id": "CoreML",
       "title": "Core ML",
+      "url": "/documentation/CoreML",
       "href": "/documentation/CoreML",
       "type": "topic"
     },
     {
       "id": "CoreMotion",
       "title": "Core Motion",
+      "url": "/documentation/CoreMotion",
       "href": "/documentation/CoreMotion",
       "type": "topic"
     },
     {
       "id": "CoreNFC",
       "title": "Core NFC",
+      "url": "/documentation/CoreNFC",
       "href": "/documentation/CoreNFC",
       "type": "topic"
     },
     {
       "id": "coreservices",
       "title": "Core Services",
+      "url": "/documentation/coreservices",
       "href": "/documentation/coreservices",
       "type": "topic"
     },
     {
       "id": "CoreSpotlight",
       "title": "Core Spotlight",
+      "url": "/documentation/CoreSpotlight",
       "href": "/documentation/CoreSpotlight",
       "type": "topic"
     },
     {
       "id": "CoreTelephony",
       "title": "Core Telephony",
+      "url": "/documentation/CoreTelephony",
       "href": "/documentation/CoreTelephony",
       "type": "topic"
     },
     {
       "id": "CoreText",
       "title": "Core Text",
+      "url": "/documentation/CoreText",
       "href": "/documentation/CoreText",
       "type": "topic"
     },
     {
       "id": "CoreTransferable",
       "title": "Core Transferable",
+      "url": "/documentation/CoreTransferable",
       "href": "/documentation/CoreTransferable",
       "type": "topic"
     },
     {
       "id": "CoreVideo",
       "title": "Core Video",
+      "url": "/documentation/CoreVideo",
       "href": "/documentation/CoreVideo",
       "type": "topic"
     },
     {
       "id": "CoreWLAN",
       "title": "Core WLAN",
+      "url": "/documentation/CoreWLAN",
       "href": "/documentation/CoreWLAN",
       "type": "topic"
     },
     {
       "id": "CoreAudioKit",
       "title": "CoreAudioKit",
+      "url": "/documentation/CoreAudioKit",
       "href": "/documentation/CoreAudioKit",
       "type": "topic"
     },
     {
       "id": "CoreLocationUI",
       "title": "CoreLocationUI",
+      "url": "/documentation/CoreLocationUI",
       "href": "/documentation/CoreLocationUI",
       "type": "topic"
     },
     {
       "id": "CreateML",
       "title": "Create ML",
+      "url": "/documentation/CreateML",
       "href": "/documentation/CreateML",
       "type": "topic"
     },
     {
       "id": "CreateMLComponents",
       "title": "Create ML Components",
+      "url": "/documentation/CreateMLComponents",
       "href": "/documentation/CreateMLComponents",
       "type": "topic"
     },
     {
       "id": "CryptoTokenKit",
       "title": "CryptoTokenKit",
+      "url": "/documentation/CryptoTokenKit",
       "href": "/documentation/CryptoTokenKit",
       "type": "topic"
     },
     {
       "id": "DarwinNotify",
       "title": "Darwin Notify",
+      "url": "/documentation/DarwinNotify",
       "href": "/documentation/DarwinNotify",
       "type": "topic"
     },
     {
       "id": "DataDetection",
       "title": "DataDetection",
+      "url": "/documentation/DataDetection",
       "href": "/documentation/DataDetection",
       "type": "topic"
     },
     {
       "id": "DeveloperToolsSupport",
       "title": "DeveloperToolsSupport",
+      "url": "/documentation/DeveloperToolsSupport",
       "href": "/documentation/DeveloperToolsSupport",
       "type": "topic"
     },
     {
       "id": "DeviceManagement",
       "title": "Device Management",
+      "url": "/documentation/DeviceManagement",
       "href": "/documentation/DeviceManagement",
       "type": "topic"
     },
     {
       "id": "DeviceActivity",
       "title": "DeviceActivity",
+      "url": "/documentation/DeviceActivity",
       "href": "/documentation/DeviceActivity",
       "type": "topic"
     },
     {
       "id": "DeviceCheck",
       "title": "DeviceCheck",
+      "url": "/documentation/DeviceCheck",
       "href": "/documentation/DeviceCheck",
       "type": "topic"
     },
     {
       "id": "DeviceDiscoveryExtension",
       "title": "DeviceDiscoveryExtension",
+      "url": "/documentation/DeviceDiscoveryExtension",
       "href": "/documentation/DeviceDiscoveryExtension",
       "type": "topic"
     },
     {
       "id": "DeviceDiscoveryUI",
       "title": "DeviceDiscoveryUI",
+      "url": "/documentation/DeviceDiscoveryUI",
       "href": "/documentation/DeviceDiscoveryUI",
       "type": "topic"
     },
     {
       "id": "DiskArbitration",
       "title": "Disk Arbitration",
+      "url": "/documentation/DiskArbitration",
       "href": "/documentation/DiskArbitration",
       "type": "topic"
     },
     {
       "id": "Dispatch",
       "title": "Dispatch",
+      "url": "/documentation/Dispatch",
       "href": "/documentation/Dispatch",
       "type": "topic"
     },
     {
       "id": "Distributed",
       "title": "Distributed",
+      "url": "/documentation/Distributed",
       "href": "/documentation/Distributed",
       "type": "topic"
     },
     {
       "id": "dnssd",
       "title": "dnssd",
+      "url": "/documentation/dnssd",
       "href": "/documentation/dnssd",
       "type": "topic"
     },
     {
       "id": "DockKit",
       "title": "DockKit",
+      "url": "/documentation/DockKit",
       "href": "/documentation/DockKit",
       "type": "topic"
     },
     {
       "id": "DriverKit",
       "title": "DriverKit",
+      "url": "/documentation/DriverKit",
       "href": "/documentation/DriverKit",
       "type": "topic"
     },
     {
       "id": "EndpointSecurity",
       "title": "Endpoint Security",
+      "url": "/documentation/EndpointSecurity",
       "href": "/documentation/EndpointSecurity",
       "type": "topic"
     },
     {
       "id": "EnterpriseProgramAPI",
       "title": "Enterprise Program API",
+      "url": "/documentation/EnterpriseProgramAPI",
       "href": "/documentation/EnterpriseProgramAPI",
       "type": "topic"
     },
     {
       "id": "EventKit",
       "title": "EventKit",
+      "url": "/documentation/EventKit",
       "href": "/documentation/EventKit",
       "type": "topic"
     },
     {
       "id": "EventKitUI",
       "title": "EventKit UI",
+      "url": "/documentation/EventKitUI",
       "href": "/documentation/EventKitUI",
       "type": "topic"
     },
     {
       "id": "ExceptionHandling",
       "title": "Exception Handling",
+      "url": "/documentation/ExceptionHandling",
       "href": "/documentation/ExceptionHandling",
       "type": "topic"
     },
     {
       "id": "ExecutionPolicy",
       "title": "Execution Policy",
+      "url": "/documentation/ExecutionPolicy",
       "href": "/documentation/ExecutionPolicy",
       "type": "topic"
     },
     {
       "id": "ExposureNotification",
       "title": "Exposure Notification",
+      "url": "/documentation/ExposureNotification",
       "href": "/documentation/ExposureNotification",
       "type": "topic"
     },
     {
       "id": "ExtensionFoundation",
       "title": "ExtensionFoundation",
+      "url": "/documentation/ExtensionFoundation",
       "href": "/documentation/ExtensionFoundation",
       "type": "topic"
     },
     {
       "id": "ExtensionKit",
       "title": "ExtensionKit",
+      "url": "/documentation/ExtensionKit",
       "href": "/documentation/ExtensionKit",
       "type": "topic"
     },
     {
       "id": "ExternalAccessory",
       "title": "External Accessory",
+      "url": "/documentation/ExternalAccessory",
       "href": "/documentation/ExternalAccessory",
       "type": "topic"
     },
     {
       "id": "ExternalPurchaseServerAPI",
       "title": "External Purchase Server API",
+      "url": "/documentation/ExternalPurchaseServerAPI",
       "href": "/documentation/ExternalPurchaseServerAPI",
       "type": "topic"
     },
     {
       "id": "FamilyControls",
       "title": "FamilyControls",
+      "url": "/documentation/FamilyControls",
       "href": "/documentation/FamilyControls",
       "type": "topic"
     },
     {
       "id": "FileProvider",
       "title": "File Provider",
+      "url": "/documentation/FileProvider",
       "href": "/documentation/FileProvider",
       "type": "topic"
     },
     {
       "id": "FileProviderUI",
       "title": "File Provider UI",
+      "url": "/documentation/FileProviderUI",
       "href": "/documentation/FileProviderUI",
       "type": "topic"
     },
     {
       "id": "FinanceKit",
       "title": "FinanceKit",
+      "url": "/documentation/FinanceKit",
       "href": "/documentation/FinanceKit",
       "type": "topic"
     },
     {
       "id": "FinanceKitUI",
       "title": "FinanceKitUI",
+      "url": "/documentation/FinanceKitUI",
       "href": "/documentation/FinanceKitUI",
       "type": "topic"
     },
     {
       "id": "FinderSync",
       "title": "Finder Sync",
+      "url": "/documentation/FinderSync",
       "href": "/documentation/FinderSync",
       "type": "topic"
     },
     {
       "id": "ForceFeedback",
       "title": "Force Feedback",
+      "url": "/documentation/ForceFeedback",
       "href": "/documentation/ForceFeedback",
       "type": "topic"
     },
     {
       "id": "Foundation",
       "title": "Foundation",
+      "url": "/documentation/Foundation",
       "href": "/documentation/Foundation",
       "type": "topic"
     },
     {
       "id": "FSKit",
       "title": "FSKit",
+      "url": "/documentation/FSKit",
       "href": "/documentation/FSKit",
       "type": "topic"
     },
     {
       "id": "GameController",
       "title": "Game Controller",
+      "url": "/documentation/GameController",
       "href": "/documentation/GameController",
       "type": "topic"
     },
     {
       "id": "GameKit",
       "title": "GameKit",
+      "url": "/documentation/GameKit",
       "href": "/documentation/GameKit",
       "type": "topic"
     },
     {
       "id": "GameplayKit",
       "title": "GameplayKit",
+      "url": "/documentation/GameplayKit",
       "href": "/documentation/GameplayKit",
       "type": "topic"
     },
     {
       "id": "GLKit",
       "title": "GLKit",
+      "url": "/documentation/GLKit",
       "href": "/documentation/GLKit",
       "type": "topic"
     },
     {
       "id": "GroupActivities",
       "title": "Group Activities",
+      "url": "/documentation/GroupActivities",
       "href": "/documentation/GroupActivities",
       "type": "topic"
     },
     {
       "id": "GSS",
       "title": "GSS",
+      "url": "/documentation/GSS",
       "href": "/documentation/GSS",
       "type": "topic"
     },
     {
       "id": "HealthKit",
       "title": "HealthKit",
+      "url": "/documentation/HealthKit",
       "href": "/documentation/HealthKit",
       "type": "topic"
     },
     {
       "id": "HIDDriverKit",
       "title": "HIDDriverKit",
+      "url": "/documentation/HIDDriverKit",
       "href": "/documentation/HIDDriverKit",
       "type": "topic"
     },
     {
       "id": "HomeKit",
       "title": "HomeKit",
+      "url": "/documentation/HomeKit",
       "href": "/documentation/HomeKit",
       "type": "topic"
     },
     {
       "id": "HTTP-Live-Streaming",
       "title": "HTTP Live Streaming",
+      "url": "/documentation/HTTP-Live-Streaming",
       "href": "/documentation/HTTP-Live-Streaming",
       "type": "topic"
     },
     {
       "id": "hvf",
       "title": "hvf",
+      "url": "/documentation/hvf",
       "href": "/documentation/hvf",
       "type": "topic"
     },
     {
       "id": "Hypervisor",
       "title": "Hypervisor",
+      "url": "/documentation/Hypervisor",
       "href": "/documentation/Hypervisor",
       "type": "topic"
     },
     {
       "id": "iAd",
       "title": "iAd",
+      "url": "/documentation/iAd",
       "href": "/documentation/iAd",
       "type": "topic"
     },
     {
       "id": "ImageIO",
       "title": "Image I/O",
+      "url": "/documentation/ImageIO",
       "href": "/documentation/ImageIO",
       "type": "topic"
     },
     {
       "id": "ImagePlayground",
       "title": "Image Playground",
+      "url": "/documentation/ImagePlayground",
       "href": "/documentation/ImagePlayground",
       "type": "topic"
     },
     {
       "id": "ImageCaptureCore",
       "title": "ImageCaptureCore",
+      "url": "/documentation/ImageCaptureCore",
       "href": "/documentation/ImageCaptureCore",
       "type": "topic"
     },
     {
       "id": "InputMethodKit",
       "title": "InputMethodKit",
+      "url": "/documentation/InputMethodKit",
       "href": "/documentation/InputMethodKit",
       "type": "topic"
     },
     {
       "id": "installer_js",
       "title": "Installer JS",
+      "url": "/documentation/installer_js",
       "href": "/documentation/installer_js",
       "type": "topic"
     },
     {
       "id": "IOBluetooth",
       "title": "IOBluetooth",
+      "url": "/documentation/IOBluetooth",
       "href": "/documentation/IOBluetooth",
       "type": "topic"
     },
     {
       "id": "IOBluetoothUI",
       "title": "IOBluetooth UI",
+      "url": "/documentation/IOBluetoothUI",
       "href": "/documentation/IOBluetoothUI",
       "type": "topic"
     },
     {
       "id": "iokit",
       "title": "IOKit",
+      "url": "/documentation/iokit",
       "href": "/documentation/iokit",
       "type": "topic"
     },
     {
       "id": "ios-ipados-release-notes",
       "title": "iOS & iPadOS Release Notes",
+      "url": "/documentation/ios-ipados-release-notes",
       "href": "/documentation/ios-ipados-release-notes",
       "type": "topic"
     },
     {
       "id": "IOSurface",
       "title": "IOSurface",
+      "url": "/documentation/IOSurface",
       "href": "/documentation/IOSurface",
       "type": "topic"
     },
     {
       "id": "IOUSBHost",
       "title": "IOUSBHost",
+      "url": "/documentation/IOUSBHost",
       "href": "/documentation/IOUSBHost",
       "type": "topic"
     },
     {
       "id": "iTunesLibrary",
       "title": "iTunes Library",
+      "url": "/documentation/iTunesLibrary",
       "href": "/documentation/iTunesLibrary",
       "type": "topic"
     },
     {
       "id": "iWorkDocumentExportingAPI",
       "title": "iWork Document Exporting API",
+      "url": "/documentation/iWorkDocumentExportingAPI",
       "href": "/documentation/iWorkDocumentExportingAPI",
       "type": "topic"
     },
     {
       "id": "JavaScriptCore",
       "title": "JavaScriptCore",
+      "url": "/documentation/JavaScriptCore",
       "href": "/documentation/JavaScriptCore",
       "type": "topic"
     },
     {
       "id": "JournalingSuggestions",
       "title": "Journaling Suggestions",
+      "url": "/documentation/JournalingSuggestions",
       "href": "/documentation/JournalingSuggestions",
       "type": "topic"
     },
     {
       "id": "kernel",
       "title": "Kernel",
+      "url": "/documentation/kernel",
       "href": "/documentation/kernel",
       "type": "topic"
     },
     {
       "id": "kernelmanagement",
       "title": "Kernel Management",
+      "url": "/documentation/kernelmanagement",
       "href": "/documentation/kernelmanagement",
       "type": "topic"
     },
     {
       "id": "LatentSemanticMapping",
       "title": "Latent Semantic Mapping",
+      "url": "/documentation/LatentSemanticMapping",
       "href": "/documentation/LatentSemanticMapping",
       "type": "topic"
     },
     {
       "id": "LightweightCodeRequirements",
       "title": "LightweightCodeRequirements",
+      "url": "/documentation/LightweightCodeRequirements",
       "href": "/documentation/LightweightCodeRequirements",
       "type": "topic"
     },
     {
       "id": "LinkPresentation",
       "title": "Link Presentation",
+      "url": "/documentation/LinkPresentation",
       "href": "/documentation/LinkPresentation",
       "type": "topic"
     },
     {
       "id": "LiveCommunicationKit",
       "title": "LiveCommunicationKit",
+      "url": "/documentation/LiveCommunicationKit",
       "href": "/documentation/LiveCommunicationKit",
       "type": "topic"
     },
     {
       "id": "LivePhotosKitJS",
       "title": "LivePhotosKit JS",
+      "url": "/documentation/LivePhotosKitJS",
       "href": "/documentation/LivePhotosKitJS",
       "type": "topic"
     },
     {
       "id": "LocalAuthentication",
       "title": "Local Authentication",
+      "url": "/documentation/LocalAuthentication",
       "href": "/documentation/LocalAuthentication",
       "type": "topic"
     },
     {
       "id": "LocalAuthenticationEmbeddedUI",
       "title": "Local Authentication Embedded UI",
+      "url": "/documentation/LocalAuthenticationEmbeddedUI",
       "href": "/documentation/LocalAuthenticationEmbeddedUI",
       "type": "topic"
     },
     {
       "id": "LockedCameraCapture",
       "title": "LockedCameraCapture",
+      "url": "/documentation/LockedCameraCapture",
       "href": "/documentation/LockedCameraCapture",
       "type": "topic"
     },
     {
       "id": "macos-release-notes",
       "title": "macOS Release Notes",
+      "url": "/documentation/macos-release-notes",
       "href": "/documentation/macos-release-notes",
       "type": "topic"
     },
     {
       "id": "MailKit",
       "title": "MailKit",
+      "url": "/documentation/MailKit",
       "href": "/documentation/MailKit",
       "type": "topic"
     },
     {
       "id": "ManagedApp",
       "title": "ManagedApp",
+      "url": "/documentation/ManagedApp",
       "href": "/documentation/ManagedApp",
       "type": "topic"
     },
     {
       "id": "ManagedAppDistribution",
       "title": "ManagedAppDistribution",
+      "url": "/documentation/ManagedAppDistribution",
       "href": "/documentation/ManagedAppDistribution",
       "type": "topic"
     },
     {
       "id": "ManagedSettings",
       "title": "ManagedSettings",
+      "url": "/documentation/ManagedSettings",
       "href": "/documentation/ManagedSettings",
       "type": "topic"
     },
     {
       "id": "ManagedSettingsUI",
       "title": "ManagedSettingsUI",
+      "url": "/documentation/ManagedSettingsUI",
       "href": "/documentation/ManagedSettingsUI",
       "type": "topic"
     },
     {
       "id": "MapKit",
       "title": "MapKit",
+      "url": "/documentation/MapKit",
       "href": "/documentation/MapKit",
       "type": "topic"
     },
     {
       "id": "MapKitJS",
       "title": "MapKit JS",
+      "url": "/documentation/MapKitJS",
       "href": "/documentation/MapKitJS",
       "type": "topic"
     },
     {
       "id": "snapshots",
       "title": "Maps Web Snapshots",
+      "url": "/documentation/snapshots",
       "href": "/documentation/snapshots",
       "type": "topic"
     },
     {
       "id": "MarketplaceKit",
       "title": "MarketplaceKit",
+      "url": "/documentation/MarketplaceKit",
       "href": "/documentation/MarketplaceKit",
       "type": "topic"
     },
     {
       "id": "Matter",
       "title": "Matter",
+      "url": "/documentation/Matter",
       "href": "/documentation/Matter",
       "type": "topic"
     },
     {
       "id": "MatterSupport",
       "title": "MatterSupport",
+      "url": "/documentation/MatterSupport",
       "href": "/documentation/MatterSupport",
       "type": "topic"
     },
     {
       "id": "MediaAccessibility",
       "title": "Media Accessibility",
+      "url": "/documentation/MediaAccessibility",
       "href": "/documentation/MediaAccessibility",
       "type": "topic"
     },
     {
       "id": "MediaLibrary",
       "title": "Media Library",
+      "url": "/documentation/MediaLibrary",
       "href": "/documentation/MediaLibrary",
       "type": "topic"
     },
     {
       "id": "MediaPlayer",
       "title": "Media Player",
+      "url": "/documentation/MediaPlayer",
       "href": "/documentation/MediaPlayer",
       "type": "topic"
     },
     {
       "id": "MediaSetup",
       "title": "Media Setup",
+      "url": "/documentation/MediaSetup",
       "href": "/documentation/MediaSetup",
       "type": "topic"
     },
     {
       "id": "MediaToolbox",
       "title": "Media Toolbox",
+      "url": "/documentation/MediaToolbox",
       "href": "/documentation/MediaToolbox",
       "type": "topic"
     },
     {
       "id": "MediaExtension",
       "title": "MediaExtension",
+      "url": "/documentation/MediaExtension",
       "href": "/documentation/MediaExtension",
       "type": "topic"
     },
     {
       "id": "MessageUI",
       "title": "Message UI",
+      "url": "/documentation/MessageUI",
       "href": "/documentation/MessageUI",
       "type": "topic"
     },
     {
       "id": "Messages",
       "title": "Messages",
+      "url": "/documentation/Messages",
       "href": "/documentation/Messages",
       "type": "topic"
     },
     {
       "id": "Metal",
       "title": "Metal",
+      "url": "/documentation/Metal",
       "href": "/documentation/Metal",
       "type": "topic"
     },
     {
       "id": "metalperformanceshaders",
       "title": "Metal Performance Shaders",
+      "url": "/documentation/metalperformanceshaders",
       "href": "/documentation/metalperformanceshaders",
       "type": "topic"
     },
     {
       "id": "MetalPerformanceShadersGraph",
       "title": "Metal Performance Shaders Graph",
+      "url": "/documentation/MetalPerformanceShadersGraph",
       "href": "/documentation/MetalPerformanceShadersGraph",
       "type": "topic"
     },
     {
       "id": "MetalFX",
       "title": "MetalFX",
+      "url": "/documentation/MetalFX",
       "href": "/documentation/MetalFX",
       "type": "topic"
     },
     {
       "id": "MetalKit",
       "title": "MetalKit",
+      "url": "/documentation/MetalKit",
       "href": "/documentation/MetalKit",
       "type": "topic"
     },
     {
       "id": "MetricKit",
       "title": "MetricKit",
+      "url": "/documentation/MetricKit",
       "href": "/documentation/MetricKit",
       "type": "topic"
     },
     {
       "id": "MIDIDriverKit",
       "title": "MIDIDriverKit",
+      "url": "/documentation/MIDIDriverKit",
       "href": "/documentation/MIDIDriverKit",
       "type": "topic"
     },
     {
       "id": "MLCompute",
       "title": "ML Compute",
+      "url": "/documentation/MLCompute",
       "href": "/documentation/MLCompute",
       "type": "topic"
     },
     {
       "id": "ModelIO",
       "title": "Model I/O",
+      "url": "/documentation/ModelIO",
       "href": "/documentation/ModelIO",
       "type": "topic"
     },
     {
       "id": "MultipeerConnectivity",
       "title": "Multipeer Connectivity",
+      "url": "/documentation/MultipeerConnectivity",
       "href": "/documentation/MultipeerConnectivity",
       "type": "topic"
     },
     {
       "id": "MusicKit",
       "title": "MusicKit",
+      "url": "/documentation/MusicKit",
       "href": "/documentation/MusicKit",
       "type": "topic"
     },
     {
       "id": "NaturalLanguage",
       "title": "Natural Language",
+      "url": "/documentation/NaturalLanguage",
       "href": "/documentation/NaturalLanguage",
       "type": "topic"
     },
     {
       "id": "NearbyInteraction",
       "title": "Nearby Interaction",
+      "url": "/documentation/NearbyInteraction",
       "href": "/documentation/NearbyInteraction",
       "type": "topic"
     },
     {
       "id": "Network",
       "title": "Network",
+      "url": "/documentation/Network",
       "href": "/documentation/Network",
       "type": "topic"
     },
     {
       "id": "NetworkExtension",
       "title": "Network Extension",
+      "url": "/documentation/NetworkExtension",
       "href": "/documentation/NetworkExtension",
       "type": "topic"
     },
     {
       "id": "NetworkingDriverKit",
       "title": "NetworkingDriverKit",
+      "url": "/documentation/NetworkingDriverKit",
       "href": "/documentation/NetworkingDriverKit",
       "type": "topic"
     },
     {
       "id": "NotaryAPI",
       "title": "Notary API",
+      "url": "/documentation/NotaryAPI",
       "href": "/documentation/NotaryAPI",
       "type": "topic"
     },
     {
       "id": "NotificationCenter",
       "title": "Notification Center",
+      "url": "/documentation/NotificationCenter",
       "href": "/documentation/NotificationCenter",
       "type": "topic"
     },
     {
       "id": "ObjectiveC",
       "title": "Objective-C Runtime",
+      "url": "/documentation/ObjectiveC",
       "href": "/documentation/ObjectiveC",
       "type": "topic"
     },
     {
       "id": "Observation",
       "title": "Observation",
+      "url": "/documentation/Observation",
       "href": "/documentation/Observation",
       "type": "topic"
     },
     {
       "id": "OpenDirectory",
       "title": "Open Directory",
+      "url": "/documentation/OpenDirectory",
       "href": "/documentation/OpenDirectory",
       "type": "topic"
     },
     {
       "id": "OpenGLES",
       "title": "OpenGL ES",
+      "url": "/documentation/OpenGLES",
       "href": "/documentation/OpenGLES",
       "type": "topic"
     },
     {
       "id": "os",
       "title": "os",
+      "url": "/documentation/os",
       "href": "/documentation/os",
       "type": "topic"
     },
     {
       "id": "OSLog",
       "title": "OSLog",
+      "url": "/documentation/OSLog",
       "href": "/documentation/OSLog",
       "type": "topic"
     },
     {
       "id": "PackageDescription",
       "title": "PackageDescription",
+      "url": "/documentation/PackageDescription",
       "href": "/documentation/PackageDescription",
       "type": "topic"
     },
     {
       "id": "ParavirtualizedGraphics",
       "title": "Paravirtualized Graphics",
+      "url": "/documentation/ParavirtualizedGraphics",
       "href": "/documentation/ParavirtualizedGraphics",
       "type": "topic"
     },
     {
       "id": "PassKit",
       "title": "PassKit (Apple Pay and Wallet)",
+      "url": "/documentation/PassKit",
       "href": "/documentation/PassKit",
       "type": "topic"
     },
     {
       "id": "PCIDriverKit",
       "title": "PCIDriverKit",
+      "url": "/documentation/PCIDriverKit",
       "href": "/documentation/PCIDriverKit",
       "type": "topic"
     },
     {
       "id": "PDFKit",
       "title": "PDFKit",
+      "url": "/documentation/PDFKit",
       "href": "/documentation/PDFKit",
       "type": "topic"
     },
     {
       "id": "PencilKit",
       "title": "PencilKit",
+      "url": "/documentation/PencilKit",
       "href": "/documentation/PencilKit",
       "type": "topic"
     },
     {
       "id": "PHASE",
       "title": "PHASE",
+      "url": "/documentation/PHASE",
       "href": "/documentation/PHASE",
       "type": "topic"
     },
     {
       "id": "PhotoKit",
       "title": "PhotoKit",
+      "url": "/documentation/PhotoKit",
       "href": "/documentation/PhotoKit",
       "type": "topic"
     },
     {
       "id": "playgroundbluetooth",
       "title": "Playground Bluetooth",
+      "url": "/documentation/playgroundbluetooth",
       "href": "/documentation/playgroundbluetooth",
       "type": "topic"
     },
     {
       "id": "playgroundsupport",
       "title": "Playground Support",
+      "url": "/documentation/playgroundsupport",
       "href": "/documentation/playgroundsupport",
       "type": "topic"
     },
     {
       "id": "PreferencePanes",
       "title": "Preference Panes",
+      "url": "/documentation/PreferencePanes",
       "href": "/documentation/PreferencePanes",
       "type": "topic"
     },
     {
       "id": "professional_video_applications",
       "title": "Professional Video Applications",
+      "url": "/documentation/professional_video_applications",
       "href": "/documentation/professional_video_applications",
       "type": "topic"
     },
     {
       "id": "ProximityReader",
       "title": "ProximityReader",
+      "url": "/documentation/ProximityReader",
       "href": "/documentation/ProximityReader",
       "type": "topic"
     },
     {
       "id": "PushToTalk",
       "title": "Push to Talk",
+      "url": "/documentation/PushToTalk",
       "href": "/documentation/PushToTalk",
       "type": "topic"
     },
     {
       "id": "PushKit",
       "title": "PushKit",
+      "url": "/documentation/PushKit",
       "href": "/documentation/PushKit",
       "type": "topic"
     },
     {
       "id": "Quartz",
       "title": "Quartz",
+      "url": "/documentation/Quartz",
       "href": "/documentation/Quartz",
       "type": "topic"
     },
     {
       "id": "QuickLook",
       "title": "Quick Look",
+      "url": "/documentation/QuickLook",
       "href": "/documentation/QuickLook",
       "type": "topic"
     },
     {
       "id": "QuickLookThumbnailing",
       "title": "Quick Look Thumbnailing",
+      "url": "/documentation/QuickLookThumbnailing",
       "href": "/documentation/QuickLookThumbnailing",
       "type": "topic"
     },
     {
       "id": "QuickLookUI",
       "title": "Quick Look UI",
+      "url": "/documentation/QuickLookUI",
       "href": "/documentation/QuickLookUI",
       "type": "topic"
     },
     {
       "id": "quicktime-file-format",
       "title": "QuickTime File Format",
+      "url": "/documentation/quicktime-file-format",
       "href": "/documentation/quicktime-file-format",
       "type": "topic"
     },
     {
       "id": "RealityKit",
       "title": "RealityKit",
+      "url": "/documentation/RealityKit",
       "href": "/documentation/RealityKit",
       "type": "topic"
     },
     {
       "id": "RegexBuilder",
       "title": "RegexBuilder",
+      "url": "/documentation/RegexBuilder",
       "href": "/documentation/RegexBuilder",
       "type": "topic"
     },
     {
       "id": "ReplayKit",
       "title": "ReplayKit",
+      "url": "/documentation/ReplayKit",
       "href": "/documentation/ReplayKit",
       "type": "topic"
     },
     {
       "id": "RoomPlan",
       "title": "RoomPlan",
+      "url": "/documentation/RoomPlan",
       "href": "/documentation/RoomPlan",
       "type": "topic"
     },
     {
       "id": "RosterAPI",
       "title": "Roster API",
+      "url": "/documentation/RosterAPI",
       "href": "/documentation/RosterAPI",
       "type": "topic"
     },
     {
       "id": "safari-developer-tools",
       "title": "Safari Developer Features",
+      "url": "/documentation/safari-developer-tools",
       "href": "/documentation/safari-developer-tools",
       "type": "topic"
     },
     {
       "id": "safari-release-notes",
       "title": "Safari Release Notes",
+      "url": "/documentation/safari-release-notes",
       "href": "/documentation/safari-release-notes",
       "type": "topic"
     },
     {
       "id": "SafariServices",
       "title": "Safari Services",
+      "url": "/documentation/SafariServices",
       "href": "/documentation/SafariServices",
       "type": "topic"
     },
     {
       "id": "SafetyKit",
       "title": "SafetyKit",
+      "url": "/documentation/SafetyKit",
       "href": "/documentation/SafetyKit",
       "type": "topic"
     },
     {
       "id": "SceneKit",
       "title": "SceneKit",
+      "url": "/documentation/SceneKit",
       "href": "/documentation/SceneKit",
       "type": "topic"
     },
     {
       "id": "ScreenSaver",
       "title": "Screen Saver",
+      "url": "/documentation/ScreenSaver",
       "href": "/documentation/ScreenSaver",
       "type": "topic"
     },
     {
       "id": "ScreenTime",
       "title": "Screen Time",
+      "url": "/documentation/ScreenTime",
       "href": "/documentation/ScreenTime",
       "type": "topic"
     },
     {
       "id": "ScreenCaptureKit",
       "title": "ScreenCaptureKit",
+      "url": "/documentation/ScreenCaptureKit",
       "href": "/documentation/ScreenCaptureKit",
       "type": "topic"
     },
     {
       "id": "ScriptingBridge",
       "title": "Scripting Bridge",
+      "url": "/documentation/ScriptingBridge",
       "href": "/documentation/ScriptingBridge",
       "type": "topic"
     },
     {
       "id": "SCSIControllerDriverKit",
       "title": "SCSIControllerDriverKit",
+      "url": "/documentation/SCSIControllerDriverKit",
       "href": "/documentation/SCSIControllerDriverKit",
       "type": "topic"
     },
     {
       "id": "SCSIPeripheralsDriverKit",
       "title": "SCSIPeripheralsDriverKit",
+      "url": "/documentation/SCSIPeripheralsDriverKit",
       "href": "/documentation/SCSIPeripheralsDriverKit",
       "type": "topic"
     },
     {
       "id": "SecureElementCredential",
       "title": "SecureElementCredential",
+      "url": "/documentation/SecureElementCredential",
       "href": "/documentation/SecureElementCredential",
       "type": "topic"
     },
     {
       "id": "Security",
       "title": "Security",
+      "url": "/documentation/Security",
       "href": "/documentation/Security",
       "type": "topic"
     },
     {
       "id": "SecurityFoundation",
       "title": "Security Foundation",
+      "url": "/documentation/SecurityFoundation",
       "href": "/documentation/SecurityFoundation",
       "type": "topic"
     },
     {
       "id": "SecurityInterface",
       "title": "Security Interface",
+      "url": "/documentation/SecurityInterface",
       "href": "/documentation/SecurityInterface",
       "type": "topic"
     },
     {
       "id": "SensitiveContentAnalysis",
       "title": "SensitiveContentAnalysis",
+      "url": "/documentation/SensitiveContentAnalysis",
       "href": "/documentation/SensitiveContentAnalysis",
       "type": "topic"
     },
     {
       "id": "SensorKit",
       "title": "SensorKit",
+      "url": "/documentation/SensorKit",
       "href": "/documentation/SensorKit",
       "type": "topic"
     },
     {
       "id": "SerialDriverKit",
       "title": "SerialDriverKit",
+      "url": "/documentation/SerialDriverKit",
       "href": "/documentation/SerialDriverKit",
       "type": "topic"
     },
     {
       "id": "ServiceManagement",
       "title": "Service Management",
+      "url": "/documentation/ServiceManagement",
       "href": "/documentation/ServiceManagement",
       "type": "topic"
     },
     {
       "id": "ShaderGraph",
       "title": "ShaderGraph",
+      "url": "/documentation/ShaderGraph",
       "href": "/documentation/ShaderGraph",
       "type": "topic"
     },
     {
       "id": "SharedWithYou",
       "title": "Shared With You",
+      "url": "/documentation/SharedWithYou",
       "href": "/documentation/SharedWithYou",
       "type": "topic"
     },
     {
       "id": "ShazamKit",
       "title": "ShazamKit",
+      "url": "/documentation/ShazamKit",
       "href": "/documentation/ShazamKit",
       "type": "topic"
     },
     {
       "id": "SigninwithApple",
       "title": "Sign in with Apple",
+      "url": "/documentation/SigninwithApple",
       "href": "/documentation/SigninwithApple",
       "type": "topic"
     },
     {
       "id": "SiriEventSuggestionsMarkup",
       "title": "Siri Event Suggestions Markup",
+      "url": "/documentation/SiriEventSuggestionsMarkup",
       "href": "/documentation/SiriEventSuggestionsMarkup",
       "type": "topic"
     },
     {
       "id": "SiriKit",
       "title": "SiriKit",
+      "url": "/documentation/SiriKit",
       "href": "/documentation/SiriKit",
       "type": "topic"
     },
     {
       "id": "SiriKitCloudMedia",
       "title": "SiriKit Cloud Media",
+      "url": "/documentation/SiriKitCloudMedia",
       "href": "/documentation/SiriKitCloudMedia",
       "type": "topic"
     },
     {
       "id": "SKAdNetworkforWebAds",
       "title": "SKAdNetwork for Web Ads",
+      "url": "/documentation/SKAdNetworkforWebAds",
       "href": "/documentation/SKAdNetworkforWebAds",
       "type": "topic"
     },
     {
       "id": "IdentityLookup",
       "title": "SMS and Call Reporting",
+      "url": "/documentation/IdentityLookup",
       "href": "/documentation/IdentityLookup",
       "type": "topic"
     },
     {
       "id": "Social",
       "title": "Social",
+      "url": "/documentation/Social",
       "href": "/documentation/Social",
       "type": "topic"
     },
     {
       "id": "SoundAnalysis",
       "title": "Sound Analysis",
+      "url": "/documentation/SoundAnalysis",
       "href": "/documentation/SoundAnalysis",
       "type": "topic"
     },
     {
       "id": "Spatial",
       "title": "Spatial",
+      "url": "/documentation/Spatial",
       "href": "/documentation/Spatial",
       "type": "topic"
     },
     {
       "id": "Speech",
       "title": "Speech",
+      "url": "/documentation/Speech",
       "href": "/documentation/Speech",
       "type": "topic"
     },
     {
       "id": "SpriteKit",
       "title": "SpriteKit",
+      "url": "/documentation/SpriteKit",
       "href": "/documentation/SpriteKit",
       "type": "topic"
     },
     {
       "id": "StoreKit",
       "title": "StoreKit",
+      "url": "/documentation/StoreKit",
       "href": "/documentation/StoreKit",
       "type": "topic"
     },
     {
       "id": "StoreKitTest",
       "title": "StoreKit Test",
+      "url": "/documentation/StoreKitTest",
       "href": "/documentation/StoreKitTest",
       "type": "topic"
     },
     {
       "id": "Swift",
       "title": "Swift",
+      "url": "/documentation/Swift",
       "href": "/documentation/Swift",
       "type": "topic"
     },
     {
       "id": "Charts",
       "title": "Swift Charts",
+      "url": "/documentation/Charts",
       "href": "/documentation/Charts",
       "type": "topic"
     },
     {
       "id": "swift-playgrounds",
       "title": "Swift Playgrounds",
+      "url": "/documentation/swift-playgrounds",
       "href": "/documentation/swift-playgrounds",
       "type": "topic"
     },
     {
       "id": "Testing",
       "title": "Swift Testing",
+      "url": "/documentation/Testing",
       "href": "/documentation/Testing",
       "type": "topic"
     },
     {
       "id": "SwiftData",
       "title": "SwiftData",
+      "url": "/documentation/SwiftData",
       "href": "/documentation/SwiftData",
       "type": "topic"
     },
     {
       "id": "SwiftUI",
       "title": "SwiftUI",
+      "url": "/documentation/SwiftUI",
       "href": "/documentation/SwiftUI",
       "type": "topic"
     },
     {
       "id": "Symbols",
       "title": "Symbols",
+      "url": "/documentation/Symbols",
       "href": "/documentation/Symbols",
       "type": "topic"
     },
     {
       "id": "Synchronization",
       "title": "Synchronization",
+      "url": "/documentation/Synchronization",
       "href": "/documentation/Synchronization",
       "type": "topic"
     },
     {
       "id": "System",
       "title": "System",
+      "url": "/documentation/System",
       "href": "/documentation/System",
       "type": "topic"
     },
     {
       "id": "SystemConfiguration",
       "title": "System Configuration",
+      "url": "/documentation/SystemConfiguration",
       "href": "/documentation/SystemConfiguration",
       "type": "topic"
     },
     {
       "id": "SystemExtensions",
       "title": "System Extensions",
+      "url": "/documentation/SystemExtensions",
       "href": "/documentation/SystemExtensions",
       "type": "topic"
     },
     {
       "id": "TabletopKit",
       "title": "TabletopKit",
+      "url": "/documentation/TabletopKit",
       "href": "/documentation/TabletopKit",
       "type": "topic"
     },
     {
       "id": "TabularData",
       "title": "TabularData",
+      "url": "/documentation/TabularData",
       "href": "/documentation/TabularData",
       "type": "topic"
     },
     {
       "id": "technologies",
       "title": "Technologies",
+      "url": "/documentation/technologies",
       "href": "/documentation/technologies",
       "type": "link"
     },
     {
       "id": "Technotes",
       "title": "Technotes",
+      "url": "/documentation/Technotes",
       "href": "/documentation/Technotes",
       "type": "topic"
     },
     {
       "id": "ThreadNetwork",
       "title": "ThreadNetwork",
+      "url": "/documentation/ThreadNetwork",
       "href": "/documentation/ThreadNetwork",
       "type": "topic"
     },
     {
       "id": "TipKit",
       "title": "TipKit",
+      "url": "/documentation/TipKit",
       "href": "/documentation/TipKit",
       "type": "topic"
     },
     {
       "id": "Translation",
       "title": "Translation",
+      "url": "/documentation/Translation",
       "href": "/documentation/Translation",
       "type": "topic"
     },
     {
       "id": "TVServices",
       "title": "TV Services",
+      "url": "/documentation/TVServices",
       "href": "/documentation/TVServices",
       "type": "topic"
     },
     {
       "id": "TVML",
       "title": "TVML",
+      "url": "/documentation/TVML",
       "href": "/documentation/TVML",
       "type": "topic"
     },
     {
       "id": "TVMLKit",
       "title": "TVMLKit",
+      "url": "/documentation/TVMLKit",
       "href": "/documentation/TVMLKit",
       "type": "topic"
     },
     {
       "id": "tvmljs",
       "title": "TVMLKit JS",
+      "url": "/documentation/tvmljs",
       "href": "/documentation/tvmljs",
       "type": "topic"
     },
     {
       "id": "tvos-release-notes",
       "title": "tvOS Release Notes",
+      "url": "/documentation/tvos-release-notes",
       "href": "/documentation/tvos-release-notes",
       "type": "topic"
     },
     {
       "id": "TVUIKit",
       "title": "TVUIKit",
+      "url": "/documentation/TVUIKit",
       "href": "/documentation/TVUIKit",
       "type": "topic"
     },
     {
       "id": "UIKit",
       "title": "UIKit",
+      "url": "/documentation/UIKit",
       "href": "/documentation/UIKit",
       "type": "topic"
     },
     {
       "id": "UniformTypeIdentifiers",
       "title": "Uniform Type Identifiers",
+      "url": "/documentation/UniformTypeIdentifiers",
       "href": "/documentation/UniformTypeIdentifiers",
       "type": "topic"
     },
     {
       "id": "Updates",
       "title": "Updates",
+      "url": "/documentation/Updates",
       "href": "/documentation/Updates",
       "type": "topic"
     },
     {
       "id": "USBDriverKit",
       "title": "USBDriverKit",
+      "url": "/documentation/USBDriverKit",
       "href": "/documentation/USBDriverKit",
       "type": "topic"
     },
     {
       "id": "USBSerialDriverKit",
       "title": "USBSerialDriverKit",
+      "url": "/documentation/USBSerialDriverKit",
       "href": "/documentation/USBSerialDriverKit",
       "type": "topic"
     },
     {
       "id": "UserNotifications",
       "title": "User Notifications",
+      "url": "/documentation/UserNotifications",
       "href": "/documentation/UserNotifications",
       "type": "topic"
     },
     {
       "id": "UserNotificationsUI",
       "title": "User Notifications UI",
+      "url": "/documentation/UserNotificationsUI",
       "href": "/documentation/UserNotificationsUI",
       "type": "topic"
     },
     {
       "id": "VideoSubscriberAccount",
       "title": "Video Subscriber Account",
+      "url": "/documentation/VideoSubscriberAccount",
       "href": "/documentation/VideoSubscriberAccount",
       "type": "topic"
     },
     {
       "id": "VideoToolbox",
       "title": "Video Toolbox",
+      "url": "/documentation/VideoToolbox",
       "href": "/documentation/VideoToolbox",
       "type": "topic"
     },
     {
       "id": "Virtualization",
       "title": "Virtualization",
+      "url": "/documentation/Virtualization",
       "href": "/documentation/Virtualization",
       "type": "topic"
     },
     {
       "id": "Vision",
       "title": "Vision",
+      "url": "/documentation/Vision",
       "href": "/documentation/Vision",
       "type": "topic"
     },
     {
       "id": "VisionKit",
       "title": "VisionKit",
+      "url": "/documentation/VisionKit",
       "href": "/documentation/VisionKit",
       "type": "topic"
     },
     {
       "id": "visionOS",
       "title": "visionOS",
+      "url": "/documentation/visionOS",
       "href": "/documentation/visionOS",
       "type": "topic"
     },
     {
       "id": "visionos-release-notes",
       "title": "visionOS Release Notes",
+      "url": "/documentation/visionos-release-notes",
       "href": "/documentation/visionos-release-notes",
       "type": "topic"
     },
     {
       "id": "vmnet",
       "title": "vmnet",
+      "url": "/documentation/vmnet",
       "href": "/documentation/vmnet",
       "type": "topic"
     },
     {
       "id": "WalletOrders",
       "title": "Wallet Orders",
+      "url": "/documentation/WalletOrders",
       "href": "/documentation/WalletOrders",
       "type": "topic"
     },
     {
       "id": "WalletPasses",
       "title": "Wallet Passes",
+      "url": "/documentation/WalletPasses",
       "href": "/documentation/WalletPasses",
       "type": "topic"
     },
     {
       "id": "WatchConnectivity",
       "title": "Watch Connectivity",
+      "url": "/documentation/WatchConnectivity",
       "href": "/documentation/WatchConnectivity",
       "type": "topic"
     },
     {
       "id": "WatchKit",
       "title": "WatchKit",
+      "url": "/documentation/WatchKit",
       "href": "/documentation/WatchKit",
       "type": "topic"
     },
     {
       "id": "watchOS-Apps",
       "title": "watchOS apps",
+      "url": "/documentation/watchOS-Apps",
       "href": "/documentation/watchOS-Apps",
       "type": "topic"
     },
     {
       "id": "watchos-release-notes",
       "title": "watchOS Release Notes",
+      "url": "/documentation/watchos-release-notes",
       "href": "/documentation/watchos-release-notes",
       "type": "topic"
     },
     {
       "id": "WeatherKit",
       "title": "WeatherKit",
+      "url": "/documentation/WeatherKit",
       "href": "/documentation/WeatherKit",
       "type": "topic"
     },
     {
       "id": "WeatherKitRESTAPI",
       "title": "WeatherKit REST API",
+      "url": "/documentation/WeatherKitRESTAPI",
       "href": "/documentation/WeatherKitRESTAPI",
       "type": "topic"
     },
     {
       "id": "WebKit",
       "title": "WebKit",
+      "url": "/documentation/WebKit",
       "href": "/documentation/WebKit",
       "type": "topic"
     },
     {
       "id": "webkitjs",
       "title": "WebKit JS",
+      "url": "/documentation/webkitjs",
       "href": "/documentation/webkitjs",
       "type": "topic"
     },
     {
       "id": "WidgetKit",
       "title": "WidgetKit",
+      "url": "/documentation/WidgetKit",
       "href": "/documentation/WidgetKit",
       "type": "topic"
     },
     {
       "id": "WorkoutKit",
       "title": "WorkoutKit",
+      "url": "/documentation/WorkoutKit",
       "href": "/documentation/WorkoutKit",
       "type": "topic"
     },
     {
       "id": "Xcode",
       "title": "Xcode",
+      "url": "/documentation/Xcode",
       "href": "/documentation/Xcode",
       "type": "topic"
     },
     {
       "id": "Xcode-Release-Notes",
       "title": "Xcode Release Notes",
+      "url": "/documentation/Xcode-Release-Notes",
       "href": "/documentation/Xcode-Release-Notes",
       "type": "topic"
     },
     {
       "id": "XcodeKit",
       "title": "XcodeKit",
+      "url": "/documentation/XcodeKit",
       "href": "/documentation/XcodeKit",
       "type": "topic"
     },
     {
       "id": "xcselect",
       "title": "xcselect",
+      "url": "/documentation/xcselect",
       "href": "/documentation/xcselect",
       "type": "topic"
     },
     {
       "id": "XCTest",
       "title": "XCTest",
+      "url": "/documentation/XCTest",
       "href": "/documentation/XCTest",
       "type": "topic"
     },
     {
       "id": "XCUIAutomation",
       "title": "XCUIAutomation",
+      "url": "/documentation/XCUIAutomation",
       "href": "/documentation/XCUIAutomation",
       "type": "topic"
     },
     {
       "id": "XPC",
       "title": "XPC",
+      "url": "/documentation/XPC",
       "href": "/documentation/XPC",
       "type": "topic"
     }
+  ],
+  "framework_ids": [
+    "Accelerate",
+    "Accessibility",
+    "AccessorySetupKit",
+    "AccountOrganizationalDataSharing",
+    "AccountDataTransfer",
+    "Accounts",
+    "ActivityKit",
+    "AdAttributionKit",
+    "AddressBook",
+    "AddressBookUI",
+    "AdServices",
+    "AdSupport",
+    "AdvancedCommerceAPI",
+    "AGL",
+    "analytics-reports",
+    "AppClip",
+    "AppDataTransfer",
+    "AppIntents",
+    "AppLicenseDeliverySDK",
+    "AppStoreConnectAPI",
+    "appstorereceipts",
+    "AppStoreServerAPI",
+    "AppStoreServerNotifications",
+    "AppTrackingTransparency",
+    "AppKit",
+    "AppleArchive",
+    "CryptoKit",
+    "AppleMapsServerAPI",
+    "AppleMusicAPI",
+    "AppleMusicFeed",
+    "AppleNews",
+    "MerchantTokenNotificationServices",
+    "ApplePayontheWeb",
+    "ApplePayWebMerchantRegistrationAPI",
+    "ApplePencil",
+    "apple_search_ads",
+    "apple-silicon",
+    "applicationservices",
+    "ARKit",
+    "AssetsLibrary",
+    "Assignables",
+    "AudioToolbox",
+    "AudioUnit",
+    "AudioDriverKit",
+    "AuthenticationServices",
+    "AutomatedDeviceEnrollment",
+    "AutomaticAssessmentConfiguration",
+    "Automator",
+    "AVFAudio",
+    "AVFoundation",
+    "AVKit",
+    "AVRouting",
+    "BackgroundAssets",
+    "BackgroundTasks",
+    "BlockStorageDeviceDriverKit",
+    "BrowserEngineCore",
+    "BrowserEngineKit",
+    "BrowserKit",
+    "BundleResources",
+    "CallKit",
+    "CarKey",
+    "CarPlay",
+    "CFNetwork",
+    "Cinematic",
+    "CKToolJS",
+    "ClassKit",
+    "ClassKitCatalogAPI",
+    "ClockKit",
+    "CloudKit",
+    "CloudKitJS",
+    "Collaboration",
+    "ColorSync",
+    "Combine",
+    "CompositorServices",
+    "Compression",
+    "ContactProvider",
+    "Contacts",
+    "ContactsUI",
+    "QuartzCore",
+    "CoreAudio",
+    "CoreAudioTypes",
+    "CoreBluetooth",
+    "CoreData",
+    "CoreFoundation",
+    "CoreGraphics",
+    "CoreHaptics",
+    "CoreHID",
+    "coreimage",
+    "CoreLocation",
+    "CoreMedia",
+    "CoreMediaIO",
+    "CoreMIDI",
+    "CoreML",
+    "CoreMotion",
+    "CoreNFC",
+    "coreservices",
+    "CoreSpotlight",
+    "CoreTelephony",
+    "CoreText",
+    "CoreTransferable",
+    "CoreVideo",
+    "CoreWLAN",
+    "CoreAudioKit",
+    "CoreLocationUI",
+    "CreateML",
+    "CreateMLComponents",
+    "CryptoTokenKit",
+    "DarwinNotify",
+    "DataDetection",
+    "DeveloperToolsSupport",
+    "DeviceManagement",
+    "DeviceActivity",
+    "DeviceCheck",
+    "DeviceDiscoveryExtension",
+    "DeviceDiscoveryUI",
+    "DiskArbitration",
+    "Dispatch",
+    "Distributed",
+    "dnssd",
+    "DockKit",
+    "DriverKit",
+    "EndpointSecurity",
+    "EnterpriseProgramAPI",
+    "EventKit",
+    "EventKitUI",
+    "ExceptionHandling",
+    "ExecutionPolicy",
+    "ExposureNotification",
+    "ExtensionFoundation",
+    "ExtensionKit",
+    "ExternalAccessory",
+    "ExternalPurchaseServerAPI",
+    "FamilyControls",
+    "FileProvider",
+    "FileProviderUI",
+    "FinanceKit",
+    "FinanceKitUI",
+    "FinderSync",
+    "ForceFeedback",
+    "Foundation",
+    "FSKit",
+    "GameController",
+    "GameKit",
+    "GameplayKit",
+    "GLKit",
+    "GroupActivities",
+    "GSS",
+    "HealthKit",
+    "HIDDriverKit",
+    "HomeKit",
+    "HTTP-Live-Streaming",
+    "hvf",
+    "Hypervisor",
+    "iAd",
+    "ImageIO",
+    "ImagePlayground",
+    "ImageCaptureCore",
+    "InputMethodKit",
+    "installer_js",
+    "IOBluetooth",
+    "IOBluetoothUI",
+    "iokit",
+    "ios-ipados-release-notes",
+    "IOSurface",
+    "IOUSBHost",
+    "iTunesLibrary",
+    "iWorkDocumentExportingAPI",
+    "JavaScriptCore",
+    "JournalingSuggestions",
+    "kernel",
+    "kernelmanagement",
+    "LatentSemanticMapping",
+    "LightweightCodeRequirements",
+    "LinkPresentation",
+    "LiveCommunicationKit",
+    "LivePhotosKitJS",
+    "LocalAuthentication",
+    "LocalAuthenticationEmbeddedUI",
+    "LockedCameraCapture",
+    "macos-release-notes",
+    "MailKit",
+    "ManagedApp",
+    "ManagedAppDistribution",
+    "ManagedSettings",
+    "ManagedSettingsUI",
+    "MapKit",
+    "MapKitJS",
+    "snapshots",
+    "MarketplaceKit",
+    "Matter",
+    "MatterSupport",
+    "MediaAccessibility",
+    "MediaLibrary",
+    "MediaPlayer",
+    "MediaSetup",
+    "MediaToolbox",
+    "MediaExtension",
+    "MessageUI",
+    "Messages",
+    "Metal",
+    "metalperformanceshaders",
+    "MetalPerformanceShadersGraph",
+    "MetalFX",
+    "MetalKit",
+    "MetricKit",
+    "MIDIDriverKit",
+    "MLCompute",
+    "ModelIO",
+    "MultipeerConnectivity",
+    "MusicKit",
+    "NaturalLanguage",
+    "NearbyInteraction",
+    "Network",
+    "NetworkExtension",
+    "NetworkingDriverKit",
+    "NotaryAPI",
+    "NotificationCenter",
+    "ObjectiveC",
+    "Observation",
+    "OpenDirectory",
+    "OpenGLES",
+    "os",
+    "OSLog",
+    "PackageDescription",
+    "ParavirtualizedGraphics",
+    "PassKit",
+    "PCIDriverKit",
+    "PDFKit",
+    "PencilKit",
+    "PHASE",
+    "PhotoKit",
+    "playgroundbluetooth",
+    "playgroundsupport",
+    "PreferencePanes",
+    "professional_video_applications",
+    "ProximityReader",
+    "PushToTalk",
+    "PushKit",
+    "Quartz",
+    "QuickLook",
+    "QuickLookThumbnailing",
+    "QuickLookUI",
+    "quicktime-file-format",
+    "RealityKit",
+    "RegexBuilder",
+    "ReplayKit",
+    "RoomPlan",
+    "RosterAPI",
+    "safari-developer-tools",
+    "safari-release-notes",
+    "SafariServices",
+    "SafetyKit",
+    "SceneKit",
+    "ScreenSaver",
+    "ScreenTime",
+    "ScreenCaptureKit",
+    "ScriptingBridge",
+    "SCSIControllerDriverKit",
+    "SCSIPeripheralsDriverKit",
+    "SecureElementCredential",
+    "Security",
+    "SecurityFoundation",
+    "SecurityInterface",
+    "SensitiveContentAnalysis",
+    "SensorKit",
+    "SerialDriverKit",
+    "ServiceManagement",
+    "ShaderGraph",
+    "SharedWithYou",
+    "ShazamKit",
+    "SigninwithApple",
+    "SiriEventSuggestionsMarkup",
+    "SiriKit",
+    "SiriKitCloudMedia",
+    "SKAdNetworkforWebAds",
+    "IdentityLookup",
+    "Social",
+    "SoundAnalysis",
+    "Spatial",
+    "Speech",
+    "SpriteKit",
+    "StoreKit",
+    "StoreKitTest",
+    "Swift",
+    "Charts",
+    "swift-playgrounds",
+    "Testing",
+    "SwiftData",
+    "SwiftUI",
+    "Symbols",
+    "Synchronization",
+    "System",
+    "SystemConfiguration",
+    "SystemExtensions",
+    "TabletopKit",
+    "TabularData",
+    "technologies",
+    "Technotes",
+    "ThreadNetwork",
+    "TipKit",
+    "Translation",
+    "TVServices",
+    "TVML",
+    "TVMLKit",
+    "tvmljs",
+    "tvos-release-notes",
+    "TVUIKit",
+    "UIKit",
+    "UniformTypeIdentifiers",
+    "Updates",
+    "USBDriverKit",
+    "USBSerialDriverKit",
+    "UserNotifications",
+    "UserNotificationsUI",
+    "VideoSubscriberAccount",
+    "VideoToolbox",
+    "Virtualization",
+    "Vision",
+    "VisionKit",
+    "visionOS",
+    "visionos-release-notes",
+    "vmnet",
+    "WalletOrders",
+    "WalletPasses",
+    "WatchConnectivity",
+    "WatchKit",
+    "watchOS-Apps",
+    "watchos-release-notes",
+    "WeatherKit",
+    "WeatherKitRESTAPI",
+    "WebKit",
+    "webkitjs",
+    "WidgetKit",
+    "WorkoutKit",
+    "Xcode",
+    "Xcode-Release-Notes",
+    "XcodeKit",
+    "xcselect",
+    "XCTest",
+    "XCUIAutomation",
+    "XPC"
+  ],
+  "framework_titles": [
+    "Accelerate",
+    "Accessibility",
+    "AccessorySetupKit",
+    "Account & Organizational Data Sharing",
+    "Account Data Transfer",
+    "Accounts",
+    "ActivityKit",
+    "AdAttributionKit",
+    "Address Book",
+    "Address Book UI",
+    "AdServices",
+    "AdSupport",
+    "Advanced Commerce API",
+    "AGL",
+    "Analytics Reports",
+    "App Clips",
+    "App Data Transfer",
+    "App Intents",
+    "App License Delivery SDK",
+    "App Store Connect API",
+    "App Store Receipts",
+    "App Store Server API",
+    "App Store Server Notifications",
+    "App Tracking Transparency",
+    "AppKit",
+    "Apple Archive",
+    "Apple CryptoKit",
+    "Apple Maps Server API",
+    "Apple Music API",
+    "Apple Music Feed",
+    "Apple News",
+    "Apple Pay Merchant Token Management API",
+    "Apple Pay on the Web",
+    "Apple Pay Web Merchant Registration API",
+    "Apple Pencil",
+    "Apple Search Ads",
+    "Apple silicon",
+    "Application Services",
+    "ARKit",
+    "Assets Library",
+    "Assignables",
+    "Audio Toolbox",
+    "Audio Unit",
+    "AudioDriverKit",
+    "Authentication Services",
+    "Automated Device Enrollment",
+    "Automatic Assessment Configuration",
+    "Automator",
+    "AVFAudio",
+    "AVFoundation",
+    "AVKit",
+    "AVRouting",
+    "Background Assets",
+    "Background Tasks",
+    "BlockStorageDeviceDriverKit",
+    "BrowserEngineCore",
+    "BrowserEngineKit",
+    "BrowserKit",
+    "Bundle Resources",
+    "CallKit",
+    "CarKey",
+    "CarPlay",
+    "CFNetwork",
+    "Cinematic",
+    "CKTool JS",
+    "ClassKit",
+    "ClassKit Catalog API",
+    "ClockKit",
+    "CloudKit",
+    "CloudKit JS",
+    "Collaboration",
+    "ColorSync",
+    "Combine",
+    "Compositor Services",
+    "Compression",
+    "ContactProvider",
+    "Contacts",
+    "Contacts UI",
+    "Core Animation",
+    "Core Audio",
+    "Core Audio Types",
+    "Core Bluetooth",
+    "Core Data",
+    "Core Foundation",
+    "Core Graphics",
+    "Core Haptics",
+    "Core HID",
+    "Core Image",
+    "Core Location",
+    "Core Media",
+    "Core Media I/O",
+    "Core MIDI",
+    "Core ML",
+    "Core Motion",
+    "Core NFC",
+    "Core Services",
+    "Core Spotlight",
+    "Core Telephony",
+    "Core Text",
+    "Core Transferable",
+    "Core Video",
+    "Core WLAN",
+    "CoreAudioKit",
+    "CoreLocationUI",
+    "Create ML",
+    "Create ML Components",
+    "CryptoTokenKit",
+    "Darwin Notify",
+    "DataDetection",
+    "DeveloperToolsSupport",
+    "Device Management",
+    "DeviceActivity",
+    "DeviceCheck",
+    "DeviceDiscoveryExtension",
+    "DeviceDiscoveryUI",
+    "Disk Arbitration",
+    "Dispatch",
+    "Distributed",
+    "dnssd",
+    "DockKit",
+    "DriverKit",
+    "Endpoint Security",
+    "Enterprise Program API",
+    "EventKit",
+    "EventKit UI",
+    "Exception Handling",
+    "Execution Policy",
+    "Exposure Notification",
+    "ExtensionFoundation",
+    "ExtensionKit",
+    "External Accessory",
+    "External Purchase Server API",
+    "FamilyControls",
+    "File Provider",
+    "File Provider UI",
+    "FinanceKit",
+    "FinanceKitUI",
+    "Finder Sync",
+    "Force Feedback",
+    "Foundation",
+    "FSKit",
+    "Game Controller",
+    "GameKit",
+    "GameplayKit",
+    "GLKit",
+    "Group Activities",
+    "GSS",
+    "HealthKit",
+    "HIDDriverKit",
+    "HomeKit",
+    "HTTP Live Streaming",
+    "hvf",
+    "Hypervisor",
+    "iAd",
+    "Image I/O",
+    "Image Playground",
+    "ImageCaptureCore",
+    "InputMethodKit",
+    "Installer JS",
+    "IOBluetooth",
+    "IOBluetooth UI",
+    "IOKit",
+    "iOS & iPadOS Release Notes",
+    "IOSurface",
+    "IOUSBHost",
+    "iTunes Library",
+    "iWork Document Exporting API",
+    "JavaScriptCore",
+    "Journaling Suggestions",
+    "Kernel",
+    "Kernel Management",
+    "Latent Semantic Mapping",
+    "LightweightCodeRequirements",
+    "Link Presentation",
+    "LiveCommunicationKit",
+    "LivePhotosKit JS",
+    "Local Authentication",
+    "Local Authentication Embedded UI",
+    "LockedCameraCapture",
+    "macOS Release Notes",
+    "MailKit",
+    "ManagedApp",
+    "ManagedAppDistribution",
+    "ManagedSettings",
+    "ManagedSettingsUI",
+    "MapKit",
+    "MapKit JS",
+    "Maps Web Snapshots",
+    "MarketplaceKit",
+    "Matter",
+    "MatterSupport",
+    "Media Accessibility",
+    "Media Library",
+    "Media Player",
+    "Media Setup",
+    "Media Toolbox",
+    "MediaExtension",
+    "Message UI",
+    "Messages",
+    "Metal",
+    "Metal Performance Shaders",
+    "Metal Performance Shaders Graph",
+    "MetalFX",
+    "MetalKit",
+    "MetricKit",
+    "MIDIDriverKit",
+    "ML Compute",
+    "Model I/O",
+    "Multipeer Connectivity",
+    "MusicKit",
+    "Natural Language",
+    "Nearby Interaction",
+    "Network",
+    "Network Extension",
+    "NetworkingDriverKit",
+    "Notary API",
+    "Notification Center",
+    "Objective-C Runtime",
+    "Observation",
+    "Open Directory",
+    "OpenGL ES",
+    "os",
+    "OSLog",
+    "PackageDescription",
+    "Paravirtualized Graphics",
+    "PassKit (Apple Pay and Wallet)",
+    "PCIDriverKit",
+    "PDFKit",
+    "PencilKit",
+    "PHASE",
+    "PhotoKit",
+    "Playground Bluetooth",
+    "Playground Support",
+    "Preference Panes",
+    "Professional Video Applications",
+    "ProximityReader",
+    "Push to Talk",
+    "PushKit",
+    "Quartz",
+    "Quick Look",
+    "Quick Look Thumbnailing",
+    "Quick Look UI",
+    "QuickTime File Format",
+    "RealityKit",
+    "RegexBuilder",
+    "ReplayKit",
+    "RoomPlan",
+    "Roster API",
+    "Safari Developer Features",
+    "Safari Release Notes",
+    "Safari Services",
+    "SafetyKit",
+    "SceneKit",
+    "Screen Saver",
+    "Screen Time",
+    "ScreenCaptureKit",
+    "Scripting Bridge",
+    "SCSIControllerDriverKit",
+    "SCSIPeripheralsDriverKit",
+    "SecureElementCredential",
+    "Security",
+    "Security Foundation",
+    "Security Interface",
+    "SensitiveContentAnalysis",
+    "SensorKit",
+    "SerialDriverKit",
+    "Service Management",
+    "ShaderGraph",
+    "Shared With You",
+    "ShazamKit",
+    "Sign in with Apple",
+    "Siri Event Suggestions Markup",
+    "SiriKit",
+    "SiriKit Cloud Media",
+    "SKAdNetwork for Web Ads",
+    "SMS and Call Reporting",
+    "Social",
+    "Sound Analysis",
+    "Spatial",
+    "Speech",
+    "SpriteKit",
+    "StoreKit",
+    "StoreKit Test",
+    "Swift",
+    "Swift Charts",
+    "Swift Playgrounds",
+    "Swift Testing",
+    "SwiftData",
+    "SwiftUI",
+    "Symbols",
+    "Synchronization",
+    "System",
+    "System Configuration",
+    "System Extensions",
+    "TabletopKit",
+    "TabularData",
+    "Technologies",
+    "Technotes",
+    "ThreadNetwork",
+    "TipKit",
+    "Translation",
+    "TV Services",
+    "TVML",
+    "TVMLKit",
+    "TVMLKit JS",
+    "tvOS Release Notes",
+    "TVUIKit",
+    "UIKit",
+    "Uniform Type Identifiers",
+    "Updates",
+    "USBDriverKit",
+    "USBSerialDriverKit",
+    "User Notifications",
+    "User Notifications UI",
+    "Video Subscriber Account",
+    "Video Toolbox",
+    "Virtualization",
+    "Vision",
+    "VisionKit",
+    "visionOS",
+    "visionOS Release Notes",
+    "vmnet",
+    "Wallet Orders",
+    "Wallet Passes",
+    "Watch Connectivity",
+    "WatchKit",
+    "watchOS apps",
+    "watchOS Release Notes",
+    "WeatherKit",
+    "WeatherKit REST API",
+    "WebKit",
+    "WebKit JS",
+    "WidgetKit",
+    "WorkoutKit",
+    "Xcode",
+    "Xcode Release Notes",
+    "XcodeKit",
+    "xcselect",
+    "XCTest",
+    "XCUIAutomation",
+    "XPC"
   ]
 }

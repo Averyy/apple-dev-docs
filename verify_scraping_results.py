@@ -6,34 +6,36 @@ Verify scraping results after completion:
 3. Randomly sample markdown files to check quality
 """
 
+import asyncio
 import json
 import random
+import sys
 from pathlib import Path
 from typing import List, Dict, Tuple
 
-def load_framework_list() -> List[Dict[str, str]]:
-    """Load the complete framework list."""
-    framework_file = Path("data/complete_frameworks_list.json")
-    if not framework_file.exists():
-        # Try other locations
-        framework_file = Path("complete_frameworks_list.json")
-    
-    if framework_file.exists():
-        with open(framework_file, 'r') as f:
-            data = json.load(f)
-            return data.get('frameworks', [])
-    else:
-        print("❌ Could not find framework list file")
+# Add scripts directory to path
+sys.path.insert(0, str(Path(__file__).parent / "scripts" / "utilities"))
+
+from framework_list_scraper import AppleFrameworkListScraper
+
+async def load_framework_list() -> List[Dict[str, str]]:
+    """Load the framework list dynamically from Apple's API."""
+    try:
+        async with AppleFrameworkListScraper() as scraper:
+            frameworks = await scraper.fetch_all_frameworks()
+            return frameworks
+    except Exception as e:
+        print(f"❌ Error fetching framework list: {e}")
         return []
 
-def check_all_frameworks_scraped() -> Tuple[List[str], List[str]]:
+async def check_all_frameworks_scraped() -> Tuple[List[str], List[str]]:
     """Check which frameworks have been scraped."""
     documentation_dir = Path("documentation")
     scraped_frameworks = []
     missing_frameworks = []
     
     # Get expected frameworks
-    frameworks = load_framework_list()
+    frameworks = await load_framework_list()
     if not frameworks:
         print("❌ No framework list found")
         return [], []
@@ -78,64 +80,49 @@ def check_hash_files() -> Tuple[int, int]:
     
     return len(hash_files), valid_hashes
 
-def sample_markdown_files(count: int = 10) -> List[Tuple[Path, str]]:
-    """Randomly sample markdown files and check their content."""
+def sample_markdown_files(num_samples: int = 5) -> List[Path]:
+    """Randomly sample markdown files for quality check."""
     documentation_dir = Path("documentation")
     all_md_files = list(documentation_dir.rglob("*.md"))
     
     if not all_md_files:
         return []
     
-    # Sample random files
-    sample_size = min(count, len(all_md_files))
-    sampled_files = random.sample(all_md_files, sample_size)
-    
-    results = []
-    for md_file in sampled_files:
-        try:
-            content = md_file.read_text()
-            # Check for key elements
-            has_framework = "**Framework**:" in content
-            has_declaration = "## Declaration" in content or "```" in content
-            has_apple_link = "View on Apple Developer" in content
-            has_cross_ref = "../" in content  # Cross-framework references
-            
-            quality = []
-            if has_framework:
-                quality.append("✓ Framework")
-            if has_declaration:
-                quality.append("✓ Code")
-            if has_apple_link:
-                quality.append("✓ Link")
-            if has_cross_ref:
-                quality.append("✓ Cross-refs")
-            
-            try:
-                relative_path = md_file.relative_to(documentation_dir.parent)
-            except:
-                relative_path = md_file
-            results.append((relative_path, " | ".join(quality) if quality else "❌ Missing content"))
-        except Exception as e:
-            results.append((md_file, f"❌ Error: {e}"))
-    
-    return results
+    num_samples = min(num_samples, len(all_md_files))
+    return random.sample(all_md_files, num_samples)
 
-def main():
-    """Run all verification checks."""
+def check_markdown_quality(md_file: Path) -> Dict[str, bool]:
+    """Basic quality checks for a markdown file."""
+    try:
+        content = md_file.read_text(encoding='utf-8')
+        
+        checks = {
+            'has_title': content.startswith('# '),
+            'has_framework': '**Framework**:' in content,
+            'has_availability': '**Availability**:' in content or '**Platform**:' in content,
+            'has_content': len(content) > 200,
+            'has_source_link': 'developer.apple.com' in content,
+            'has_code_block': '```' in content,
+        }
+        
+        return checks
+    except Exception as e:
+        print(f"❌ Error reading {md_file}: {e}")
+        return {}
+
+async def main():
     print("🔍 VERIFYING APPLE DOCUMENTATION SCRAPING RESULTS")
     print("=" * 60)
     
-    # Check frameworks
-    scraped, missing = check_all_frameworks_scraped()
+    # Check all frameworks
+    scraped, missing = await check_all_frameworks_scraped()
     
     print(f"\n✅ Scraped Frameworks: {len(scraped)}")
-    if len(scraped) <= 20:
-        for fw in scraped:
+    if scraped:
+        for i, fw in enumerate(scraped[:10]):
             print(f"   - {fw}")
-    else:
-        for fw in scraped[:10]:
-            print(f"   - {fw}")
-        print(f"   ... and {len(scraped) - 10} more")
+        if len(scraped) > 10:
+            print(f"   ... and {len(scraped) - 10} more")
     
     if missing:
         print(f"\n❌ Missing Frameworks: {len(missing)}")
@@ -145,33 +132,38 @@ def main():
             print(f"   ... and {len(missing) - 10} more")
     
     # Check hash files
-    total_hash, valid_hash = check_hash_files()
-    print(f"\n📁 Hash Files: {valid_hash}/{total_hash} valid")
+    total_hashes, valid_hashes = check_hash_files()
+    print(f"\n📁 Hash Files: {valid_hashes}/{total_hashes} valid")
     
-    # Calculate total files
-    doc_dir = Path("documentation")
-    total_md_files = len(list(doc_dir.rglob("*.md"))) if doc_dir.exists() else 0
+    # Count total markdown files
+    documentation_dir = Path("documentation")
+    total_md_files = len(list(documentation_dir.rglob("*.md")))
     print(f"\n📄 Total Markdown Files: {total_md_files:,}")
     
-    # Sample random files
-    print("\n🎲 Random Sample of Markdown Files:")
-    samples = sample_markdown_files(10)
-    for file_path, quality in samples:
-        print(f"   - {file_path}: {quality}")
+    # Sample quality check
+    print("\n🔬 Sample Quality Check:")
+    samples = sample_markdown_files(5)
+    
+    for sample in samples:
+        rel_path = sample.relative_to(documentation_dir)
+        checks = check_markdown_quality(sample)
+        
+        if all(checks.values()):
+            print(f"   ✅ {rel_path}")
+        else:
+            print(f"   ⚠️  {rel_path}")
+            for check, passed in checks.items():
+                if not passed:
+                    print(f"      - Missing: {check}")
     
     # Summary
-    print("\n📊 SUMMARY:")
-    print(f"   - Frameworks scraped: {len(scraped)}/{len(scraped) + len(missing)}")
-    print(f"   - Total files: {total_md_files:,}")
-    print(f"   - Hash files: {valid_hash}")
+    print("\n" + "=" * 60)
+    success_rate = len(scraped) / (len(scraped) + len(missing)) * 100 if (scraped or missing) else 0
+    print(f"📊 SUMMARY: {success_rate:.1f}% frameworks scraped ({len(scraped)}/{len(scraped) + len(missing)})")
     
-    completion_rate = (len(scraped) / (len(scraped) + len(missing)) * 100) if (scraped or missing) else 0
-    print(f"   - Completion: {completion_rate:.1f}%")
-    
-    if completion_rate == 100:
-        print("\n🎉 ALL FRAMEWORKS SUCCESSFULLY SCRAPED!")
-    else:
-        print(f"\n⏳ Scraping in progress... {len(missing)} frameworks remaining")
+    if missing:
+        print("\n💡 To scrape missing frameworks, run:")
+        print("   python3 scrape.py --yes")
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

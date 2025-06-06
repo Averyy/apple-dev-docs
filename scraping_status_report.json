@@ -1,6 +1,48 @@
 {
   "completed": [
     {
+      "framework": "AGL",
+      "scraped": 200,
+      "skipped": 1,
+      "failed": 0,
+      "files": 200
+    },
+    {
+      "framework": "ARKit",
+      "scraped": 1879,
+      "skipped": 1,
+      "failed": 0,
+      "files": 743
+    },
+    {
+      "framework": "AVFAudio",
+      "scraped": 1342,
+      "skipped": 1,
+      "failed": 0,
+      "files": 220
+    },
+    {
+      "framework": "AVFoundation",
+      "scraped": 4509,
+      "skipped": 1,
+      "failed": 0,
+      "files": 594
+    },
+    {
+      "framework": "AVKit",
+      "scraped": 380,
+      "skipped": 1,
+      "failed": 0,
+      "files": 68
+    },
+    {
+      "framework": "AVRouting",
+      "scraped": 32,
+      "skipped": 1,
+      "failed": 0,
+      "files": 8
+    },
+    {
       "framework": "Accelerate",
       "scraped": 10,
       "skipped": 1,
@@ -23,8 +65,8 @@
     },
     {
       "framework": "AccountOrganizationalDataSharing",
-      "scraped": 10,
-      "skipped": 1,
+      "scraped": 0,
+      "skipped": 11,
       "failed": 0,
       "files": 9
     },
@@ -57,6 +99,13 @@
       "files": 5
     },
     {
+      "framework": "AdSupport",
+      "scraped": 0,
+      "skipped": 6,
+      "failed": 0,
+      "files": 2
+    },
+    {
       "framework": "AddressBook",
       "scraped": 51,
       "skipped": 1,
@@ -65,10 +114,1984 @@
     },
     {
       "framework": "AddressBookUI",
+      "scraped": 68,
+      "skipped": 1,
+      "failed": 0,
+      "files": 34
+    },
+    {
+      "framework": "AdvancedCommerceAPI",
+      "scraped": 191,
+      "skipped": 1,
+      "failed": 0,
+      "files": 191
+    },
+    {
+      "framework": "AppClip",
+      "scraped": 34,
+      "skipped": 1,
+      "failed": 0,
+      "files": 25
+    },
+    {
+      "framework": "AppDataTransfer",
+      "scraped": 17,
+      "skipped": 1,
+      "failed": 0,
+      "files": 17
+    },
+    {
+      "framework": "AppIntents",
+      "scraped": 5298,
+      "skipped": 1,
+      "failed": 0,
+      "files": 277
+    },
+    {
+      "framework": "AppKit",
+      "scraped": 5226,
+      "skipped": 5140,
+      "failed": 0,
+      "files": 905
+    },
+    {
+      "framework": "AppLicenseDeliverySDK",
+      "scraped": 51,
+      "skipped": 1,
+      "failed": 0,
+      "files": 8
+    },
+    {
+      "framework": "AppStoreConnectAPI",
+      "scraped": 3936,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1846
+    },
+    {
+      "framework": "AppStoreServerAPI",
+      "scraped": 214,
+      "skipped": 1,
+      "failed": 0,
+      "files": 214
+    },
+    {
+      "framework": "AppStoreServerNotifications",
+      "scraped": 111,
+      "skipped": 1,
+      "failed": 0,
+      "files": 109
+    },
+    {
+      "framework": "AppTrackingTransparency",
+      "scraped": 0,
+      "skipped": 11,
+      "failed": 0,
+      "files": 2
+    },
+    {
+      "framework": "AppleArchive",
+      "scraped": 248,
+      "skipped": 1,
+      "failed": 0,
+      "files": 17
+    },
+    {
+      "framework": "AppleMapsServerAPI",
+      "scraped": 48,
+      "skipped": 1,
+      "failed": 0,
+      "files": 41
+    },
+    {
+      "framework": "AppleMusicAPI",
+      "scraped": 420,
+      "skipped": 1,
+      "failed": 0,
+      "files": 231
+    },
+    {
+      "framework": "AppleMusicFeed",
+      "scraped": 40,
+      "skipped": 1,
+      "failed": 0,
+      "files": 9
+    },
+    {
+      "framework": "AppleNews",
+      "scraped": 60,
+      "skipped": 1,
+      "failed": 0,
+      "files": 60
+    },
+    {
+      "framework": "ApplePayWebMerchantRegistrationAPI",
+      "scraped": 0,
+      "skipped": 10,
+      "failed": 0,
+      "files": 9
+    },
+    {
+      "framework": "ApplePayontheWeb",
+      "scraped": 416,
+      "skipped": 1,
+      "failed": 0,
+      "files": 87
+    },
+    {
+      "framework": "ApplePencil",
+      "scraped": 0,
+      "skipped": 5,
+      "failed": 0,
+      "files": 4
+    },
+    {
+      "framework": "AssetsLibrary",
+      "scraped": 126,
+      "skipped": 1,
+      "failed": 0,
+      "files": 65
+    },
+    {
+      "framework": "Assignables",
+      "scraped": 1804,
+      "skipped": 1,
+      "failed": 0,
+      "files": 25
+    },
+    {
+      "framework": "AudioDriverKit",
+      "scraped": 533,
+      "skipped": 1,
+      "failed": 0,
+      "files": 24
+    },
+    {
+      "framework": "AudioToolbox",
+      "scraped": 3469,
+      "skipped": 1,
+      "failed": 0,
+      "files": 2417
+    },
+    {
+      "framework": "AudioUnit",
+      "scraped": 0,
+      "skipped": 3,
+      "failed": 0,
+      "files": 2
+    },
+    {
+      "framework": "AuthenticationServices",
+      "scraped": 983,
+      "skipped": 1,
+      "failed": 0,
+      "files": 180
+    },
+    {
+      "framework": "AutomatedDeviceEnrollment",
+      "scraped": 0,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1
+    },
+    {
+      "framework": "AutomaticAssessmentConfiguration",
+      "scraped": 62,
+      "skipped": 1,
+      "failed": 0,
+      "files": 10
+    },
+    {
+      "framework": "Automator",
+      "scraped": 155,
+      "skipped": 1,
+      "failed": 0,
+      "files": 14
+    },
+    {
+      "framework": "BackgroundAssets",
+      "scraped": 81,
+      "skipped": 1,
+      "failed": 0,
+      "files": 13
+    },
+    {
+      "framework": "BackgroundTasks",
+      "scraped": 40,
+      "skipped": 1,
+      "failed": 0,
+      "files": 13
+    },
+    {
+      "framework": "BlockStorageDeviceDriverKit",
+      "scraped": 41,
+      "skipped": 1,
+      "failed": 0,
+      "files": 9
+    },
+    {
+      "framework": "BrowserEngineCore",
+      "scraped": 6,
+      "skipped": 1,
+      "failed": 0,
+      "files": 6
+    },
+    {
+      "framework": "BrowserEngineKit",
+      "scraped": 514,
+      "skipped": 1,
+      "failed": 0,
+      "files": 72
+    },
+    {
+      "framework": "BrowserKit",
+      "scraped": 11,
+      "skipped": 1,
+      "failed": 0,
+      "files": 2
+    },
+    {
+      "framework": "BundleResources",
+      "scraped": 799,
+      "skipped": 1,
+      "failed": 0,
+      "files": 23
+    },
+    {
+      "framework": "CFNetwork",
+      "scraped": 416,
+      "skipped": 1,
+      "failed": 0,
+      "files": 279
+    },
+    {
+      "framework": "CKToolJS",
+      "scraped": 534,
+      "skipped": 1,
+      "failed": 0,
+      "files": 143
+    },
+    {
+      "framework": "CallKit",
+      "scraped": 255,
+      "skipped": 1,
+      "failed": 0,
+      "files": 44
+    },
+    {
+      "framework": "CarKey",
+      "scraped": 121,
+      "skipped": 1,
+      "failed": 0,
+      "files": 13
+    },
+    {
+      "framework": "CarPlay",
+      "scraped": 739,
+      "skipped": 1,
+      "failed": 0,
+      "files": 126
+    },
+    {
+      "framework": "Charts",
+      "scraped": 517,
+      "skipped": 1,
+      "failed": 0,
+      "files": 82
+    },
+    {
+      "framework": "Cinematic",
+      "scraped": 175,
+      "skipped": 1,
+      "failed": 0,
+      "files": 22
+    },
+    {
+      "framework": "ClassKit",
+      "scraped": 177,
+      "skipped": 1,
+      "failed": 0,
+      "files": 31
+    },
+    {
+      "framework": "ClassKitCatalogAPI",
+      "scraped": 20,
+      "skipped": 1,
+      "failed": 0,
+      "files": 15
+    },
+    {
+      "framework": "ClockKit",
+      "scraped": 587,
+      "skipped": 1,
+      "failed": 0,
+      "files": 136
+    },
+    {
+      "framework": "CloudKit",
+      "scraped": 927,
+      "skipped": 1,
+      "failed": 0,
+      "files": 106
+    },
+    {
+      "framework": "CloudKitJS",
+      "scraped": 343,
+      "skipped": 1,
+      "failed": 0,
+      "files": 52
+    },
+    {
+      "framework": "Collaboration",
+      "scraped": 39,
+      "skipped": 1,
+      "failed": 0,
+      "files": 6
+    },
+    {
+      "framework": "ColorSync",
+      "scraped": 256,
+      "skipped": 1,
+      "failed": 0,
+      "files": 247
+    },
+    {
+      "framework": "Combine",
+      "scraped": 8606,
+      "skipped": 1,
+      "failed": 0,
+      "files": 135
+    },
+    {
+      "framework": "CompositorServices",
+      "scraped": 130,
+      "skipped": 1,
+      "failed": 0,
+      "files": 17
+    },
+    {
+      "framework": "Compression",
+      "scraped": 64,
+      "skipped": 1,
+      "failed": 0,
+      "files": 31
+    },
+    {
+      "framework": "ContactProvider",
+      "scraped": 107,
+      "skipped": 1,
+      "failed": 0,
+      "files": 13
+    },
+    {
+      "framework": "Contacts",
+      "scraped": 668,
+      "skipped": 1,
+      "failed": 0,
+      "files": 360
+    },
+    {
+      "framework": "ContactsUI",
+      "scraped": 50,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "CoreAudio",
+      "scraped": 843,
+      "skipped": 1,
+      "failed": 0,
+      "files": 568
+    },
+    {
+      "framework": "CoreAudioKit",
+      "scraped": 61,
+      "skipped": 1,
+      "failed": 0,
+      "files": 18
+    },
+    {
+      "framework": "CoreAudioTypes",
+      "scraped": 599,
+      "skipped": 1,
+      "failed": 0,
+      "files": 436
+    },
+    {
+      "framework": "CoreBluetooth",
+      "scraped": 361,
+      "skipped": 1,
+      "failed": 0,
+      "files": 85
+    },
+    {
+      "framework": "CoreData",
+      "scraped": 1028,
+      "skipped": 1,
+      "failed": 0,
+      "files": 302
+    },
+    {
+      "framework": "CoreFoundation",
+      "scraped": 2526,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1556
+    },
+    {
+      "framework": "CoreGraphics",
+      "scraped": 1551,
+      "skipped": 1,
+      "failed": 0,
+      "files": 563
+    },
+    {
+      "framework": "CoreHID",
+      "scraped": 3437,
+      "skipped": 1,
+      "failed": 0,
+      "files": 17
+    },
+    {
+      "framework": "CoreHaptics",
+      "scraped": 216,
+      "skipped": 1,
+      "failed": 0,
+      "files": 28
+    },
+    {
+      "framework": "CoreLocation",
+      "scraped": 451,
+      "skipped": 1,
+      "failed": 0,
+      "files": 79
+    },
+    {
+      "framework": "CoreLocationUI",
+      "scraped": 28,
+      "skipped": 1,
+      "failed": 0,
+      "files": 6
+    },
+    {
+      "framework": "CoreMIDI",
+      "scraped": 968,
+      "skipped": 1,
+      "failed": 0,
+      "files": 358
+    },
+    {
+      "framework": "CoreML",
+      "scraped": 725,
+      "skipped": 1,
+      "failed": 0,
+      "files": 88
+    },
+    {
+      "framework": "CoreMedia",
+      "scraped": 1894,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1055
+    },
+    {
+      "framework": "CoreMediaIO",
+      "scraped": 550,
+      "skipped": 1,
+      "failed": 0,
+      "files": 386
+    },
+    {
+      "framework": "CoreMotion",
+      "scraped": 413,
+      "skipped": 1,
+      "failed": 0,
+      "files": 92
+    },
+    {
+      "framework": "CoreNFC",
+      "scraped": 423,
+      "skipped": 1,
+      "failed": 0,
+      "files": 56
+    },
+    {
+      "framework": "CoreSpotlight",
+      "scraped": 382,
+      "skipped": 1,
+      "failed": 0,
+      "files": 39
+    },
+    {
+      "framework": "CoreTelephony",
+      "scraped": 90,
+      "skipped": 1,
+      "failed": 0,
+      "files": 40
+    },
+    {
+      "framework": "CoreText",
+      "scraped": 2327,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1367
+    },
+    {
+      "framework": "CoreTransferable",
+      "scraped": 102,
+      "skipped": 1,
+      "failed": 0,
+      "files": 13
+    },
+    {
+      "framework": "CoreVideo",
+      "scraped": 583,
+      "skipped": 1,
+      "failed": 0,
+      "files": 504
+    },
+    {
+      "framework": "CoreWLAN",
+      "scraped": 235,
+      "skipped": 1,
+      "failed": 0,
+      "files": 39
+    },
+    {
+      "framework": "CreateML",
+      "scraped": 2686,
+      "skipped": 1,
+      "failed": 0,
+      "files": 74
+    },
+    {
+      "framework": "CreateMLComponents",
+      "scraped": 5765,
+      "skipped": 1,
+      "failed": 0,
+      "files": 188
+    },
+    {
+      "framework": "CryptoKit",
+      "scraped": 503,
+      "skipped": 1,
+      "failed": 0,
+      "files": 39
+    },
+    {
+      "framework": "CryptoTokenKit",
+      "scraped": 268,
+      "skipped": 1,
+      "failed": 0,
+      "files": 45
+    },
+    {
+      "framework": "DarwinNotify",
+      "scraped": 51,
+      "skipped": 1,
+      "failed": 0,
+      "files": 51
+    },
+    {
+      "framework": "DataDetection",
+      "scraped": 32,
+      "skipped": 1,
+      "failed": 0,
+      "files": 10
+    },
+    {
+      "framework": "DeveloperToolsSupport",
+      "scraped": 84,
+      "skipped": 1,
+      "failed": 0,
+      "files": 15
+    },
+    {
+      "framework": "DeviceActivity",
+      "scraped": 970,
+      "skipped": 1,
+      "failed": 0,
+      "files": 15
+    },
+    {
+      "framework": "DeviceCheck",
+      "scraped": 32,
+      "skipped": 1,
+      "failed": 0,
+      "files": 11
+    },
+    {
+      "framework": "DeviceDiscoveryExtension",
+      "scraped": 105,
+      "skipped": 1,
+      "failed": 0,
+      "files": 22
+    },
+    {
+      "framework": "DeviceDiscoveryUI",
+      "scraped": 13,
+      "skipped": 1,
+      "failed": 0,
+      "files": 6
+    },
+    {
+      "framework": "DeviceManagement",
+      "scraped": 1192,
+      "skipped": 1,
+      "failed": 0,
+      "files": 757
+    },
+    {
+      "framework": "DiskArbitration",
+      "scraped": 145,
+      "skipped": 1,
+      "failed": 0,
+      "files": 145
+    },
+    {
+      "framework": "Dispatch",
+      "scraped": 354,
+      "skipped": 1,
+      "failed": 0,
+      "files": 96
+    },
+    {
+      "framework": "Distributed",
+      "scraped": 138,
+      "skipped": 1,
+      "failed": 0,
+      "files": 20
+    },
+    {
+      "framework": "DockKit",
+      "scraped": 380,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "DriverKit",
+      "scraped": 2861,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1864
+    },
+    {
+      "framework": "EndpointSecurity",
+      "scraped": 1545,
+      "skipped": 1,
+      "failed": 0,
+      "files": 518
+    },
+    {
+      "framework": "EnterpriseProgramAPI",
+      "scraped": 185,
+      "skipped": 1,
+      "failed": 0,
+      "files": 116
+    },
+    {
+      "framework": "EventKit",
+      "scraped": 406,
+      "skipped": 1,
+      "failed": 0,
+      "files": 54
+    },
+    {
+      "framework": "EventKitUI",
+      "scraped": 51,
+      "skipped": 1,
+      "failed": 0,
+      "files": 15
+    },
+    {
+      "framework": "ExceptionHandling",
+      "scraped": 38,
+      "skipped": 1,
+      "failed": 0,
+      "files": 31
+    },
+    {
+      "framework": "ExecutionPolicy",
+      "scraped": 25,
+      "skipped": 1,
+      "failed": 0,
+      "files": 8
+    },
+    {
+      "framework": "ExposureNotification",
+      "scraped": 225,
+      "skipped": 1,
+      "failed": 0,
+      "files": 64
+    },
+    {
+      "framework": "ExtensionFoundation",
+      "scraped": 39,
+      "skipped": 1,
+      "failed": 0,
+      "files": 5
+    },
+    {
+      "framework": "ExtensionKit",
+      "scraped": 37,
+      "skipped": 1,
+      "failed": 0,
+      "files": 8
+    },
+    {
+      "framework": "ExternalAccessory",
+      "scraped": 80,
+      "skipped": 1,
+      "failed": 0,
+      "files": 18
+    },
+    {
+      "framework": "ExternalPurchaseServerAPI",
+      "scraped": 81,
+      "skipped": 1,
+      "failed": 0,
+      "files": 81
+    },
+    {
+      "framework": "FSKit",
+      "scraped": 650,
+      "skipped": 1,
+      "failed": 0,
+      "files": 40
+    },
+    {
+      "framework": "FamilyControls",
+      "scraped": 2137,
+      "skipped": 1,
+      "failed": 0,
+      "files": 11
+    },
+    {
+      "framework": "FileProvider",
+      "scraped": 450,
+      "skipped": 1,
+      "failed": 0,
+      "files": 100
+    },
+    {
+      "framework": "FileProviderUI",
+      "scraped": 19,
+      "skipped": 1,
+      "failed": 0,
+      "files": 8
+    },
+    {
+      "framework": "FinanceKit",
+      "scraped": 335,
+      "skipped": 1,
+      "failed": 0,
+      "files": 21
+    },
+    {
+      "framework": "FinanceKitUI",
+      "scraped": 1424,
+      "skipped": 1,
+      "failed": 0,
+      "files": 11
+    },
+    {
+      "framework": "FinderSync",
+      "scraped": 33,
+      "skipped": 1,
+      "failed": 0,
+      "files": 6
+    },
+    {
+      "framework": "ForceFeedback",
+      "scraped": 326,
+      "skipped": 1,
+      "failed": 0,
+      "files": 235
+    },
+    {
+      "framework": "Foundation",
+      "scraped": 8668,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1204
+    },
+    {
+      "framework": "GLKit",
+      "scraped": 515,
+      "skipped": 1,
+      "failed": 0,
+      "files": 294
+    },
+    {
+      "framework": "GSS",
+      "scraped": 365,
+      "skipped": 1,
+      "failed": 0,
+      "files": 310
+    },
+    {
+      "framework": "GameController",
+      "scraped": 974,
+      "skipped": 1,
+      "failed": 0,
+      "files": 318
+    },
+    {
+      "framework": "GameKit",
+      "scraped": 961,
+      "skipped": 1,
+      "failed": 0,
+      "files": 133
+    },
+    {
+      "framework": "GameplayKit",
+      "scraped": 439,
+      "skipped": 1,
+      "failed": 0,
+      "files": 78
+    },
+    {
+      "framework": "GroupActivities",
+      "scraped": 512,
+      "skipped": 1,
+      "failed": 0,
+      "files": 36
+    },
+    {
+      "framework": "HIDDriverKit",
+      "scraped": 2730,
+      "skipped": 1,
+      "failed": 0,
+      "files": 2495
+    },
+    {
+      "framework": "HTTP-Live-Streaming",
+      "scraped": 22,
+      "skipped": 1,
+      "failed": 0,
+      "files": 22
+    },
+    {
+      "framework": "HealthKit",
+      "scraped": 1927,
+      "skipped": 1,
+      "failed": 0,
+      "files": 403
+    },
+    {
+      "framework": "HomeKit",
+      "scraped": 1286,
+      "skipped": 1,
+      "failed": 0,
+      "files": 403
+    },
+    {
+      "framework": "Hypervisor",
+      "scraped": 2818,
+      "skipped": 1,
+      "failed": 0,
+      "files": 2668
+    },
+    {
+      "framework": "IOBluetooth",
+      "scraped": 3880,
+      "skipped": 1,
+      "failed": 0,
+      "files": 2577
+    },
+    {
+      "framework": "IOBluetoothUI",
+      "scraped": 111,
+      "skipped": 1,
+      "failed": 0,
+      "files": 31
+    },
+    {
+      "framework": "IOSurface",
+      "scraped": 215,
+      "skipped": 1,
+      "failed": 0,
+      "files": 115
+    },
+    {
+      "framework": "IOUSBHost",
+      "scraped": 499,
+      "skipped": 1,
+      "failed": 0,
+      "files": 322
+    },
+    {
+      "framework": "IdentityLookup",
+      "scraped": 110,
+      "skipped": 1,
+      "failed": 0,
+      "files": 37
+    },
+    {
+      "framework": "ImageCaptureCore",
+      "scraped": 683,
+      "skipped": 1,
+      "failed": 0,
+      "files": 76
+    },
+    {
+      "framework": "ImageIO",
+      "scraped": 874,
+      "skipped": 1,
+      "failed": 0,
+      "files": 834
+    },
+    {
+      "framework": "ImagePlayground",
+      "scraped": 88,
+      "skipped": 1,
+      "failed": 0,
+      "files": 6
+    },
+    {
+      "framework": "InputMethodKit",
+      "scraped": 101,
+      "skipped": 1,
+      "failed": 0,
+      "files": 34
+    },
+    {
+      "framework": "JavaScriptCore",
+      "scraped": 335,
+      "skipped": 1,
+      "failed": 0,
+      "files": 196
+    },
+    {
+      "framework": "JournalingSuggestions",
+      "scraped": 792,
+      "skipped": 1,
+      "failed": 0,
+      "files": 5
+    },
+    {
+      "framework": "LatentSemanticMapping",
+      "scraped": 72,
+      "skipped": 1,
+      "failed": 0,
+      "files": 72
+    },
+    {
+      "framework": "LightweightCodeRequirements",
+      "scraped": 322,
+      "skipped": 1,
+      "failed": 0,
+      "files": 35
+    },
+    {
+      "framework": "LinkPresentation",
+      "scraped": 38,
+      "skipped": 1,
+      "failed": 0,
+      "files": 8
+    },
+    {
+      "framework": "LiveCommunicationKit",
+      "scraped": 219,
+      "skipped": 1,
+      "failed": 0,
+      "files": 14
+    },
+    {
+      "framework": "LivePhotosKitJS",
+      "scraped": 57,
+      "skipped": 1,
+      "failed": 0,
+      "files": 6
+    },
+    {
+      "framework": "LocalAuthentication",
+      "scraped": 233,
+      "skipped": 1,
+      "failed": 0,
+      "files": 67
+    },
+    {
+      "framework": "LocalAuthenticationEmbeddedUI",
       "scraped": 8,
-      "skipped": 0,
+      "skipped": 1,
+      "failed": 0,
+      "files": 4
+    },
+    {
+      "framework": "LockedCameraCapture",
+      "scraped": 48,
+      "skipped": 1,
+      "failed": 0,
+      "files": 8
+    },
+    {
+      "framework": "MIDIDriverKit",
+      "scraped": 161,
+      "skipped": 1,
+      "failed": 0,
+      "files": 12
+    },
+    {
+      "framework": "MLCompute",
+      "scraped": 701,
+      "skipped": 1,
+      "failed": 0,
+      "files": 81
+    },
+    {
+      "framework": "MailKit",
+      "scraped": 178,
+      "skipped": 1,
+      "failed": 0,
+      "files": 34
+    },
+    {
+      "framework": "ManagedApp",
+      "scraped": 55,
+      "skipped": 1,
+      "failed": 0,
+      "files": 10
+    },
+    {
+      "framework": "ManagedAppDistribution",
+      "scraped": 1483,
+      "skipped": 1,
+      "failed": 0,
+      "files": 10
+    },
+    {
+      "framework": "ManagedSettings",
+      "scraped": 212,
+      "skipped": 1,
+      "failed": 0,
+      "files": 29
+    },
+    {
+      "framework": "ManagedSettingsUI",
+      "scraped": 21,
+      "skipped": 1,
       "failed": 0,
       "files": 3
+    },
+    {
+      "framework": "MapKit",
+      "scraped": 1147,
+      "skipped": 1,
+      "failed": 0,
+      "files": 183
+    },
+    {
+      "framework": "MapKitJS",
+      "scraped": 702,
+      "skipped": 1,
+      "failed": 0,
+      "files": 106
+    },
+    {
+      "framework": "MarketplaceKit",
+      "scraped": 185,
+      "skipped": 1,
+      "failed": 0,
+      "files": 30
+    },
+    {
+      "framework": "Matter",
+      "scraped": 8740,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1536
+    },
+    {
+      "framework": "MatterSupport",
+      "scraped": 68,
+      "skipped": 1,
+      "failed": 0,
+      "files": 4
+    },
+    {
+      "framework": "MediaAccessibility",
+      "scraped": 84,
+      "skipped": 1,
+      "failed": 0,
+      "files": 41
+    },
+    {
+      "framework": "MediaExtension",
+      "scraped": 302,
+      "skipped": 1,
+      "failed": 0,
+      "files": 44
+    },
+    {
+      "framework": "MediaLibrary",
+      "scraped": 212,
+      "skipped": 1,
+      "failed": 0,
+      "files": 169
+    },
+    {
+      "framework": "MediaPlayer",
+      "scraped": 705,
+      "skipped": 1,
+      "failed": 0,
+      "files": 207
+    },
+    {
+      "framework": "MediaSetup",
+      "scraped": 18,
+      "skipped": 1,
+      "failed": 0,
+      "files": 5
+    },
+    {
+      "framework": "MediaToolbox",
+      "scraped": 37,
+      "skipped": 1,
+      "failed": 0,
+      "files": 23
+    },
+    {
+      "framework": "MerchantTokenNotificationServices",
+      "scraped": 0,
+      "skipped": 11,
+      "failed": 0,
+      "files": 10
+    },
+    {
+      "framework": "MessageUI",
+      "scraped": 80,
+      "skipped": 1,
+      "failed": 0,
+      "files": 13
+    },
+    {
+      "framework": "Messages",
+      "scraped": 143,
+      "skipped": 1,
+      "failed": 0,
+      "files": 31
+    },
+    {
+      "framework": "Metal",
+      "scraped": 2965,
+      "skipped": 1,
+      "failed": 0,
+      "files": 526
+    },
+    {
+      "framework": "MetalFX",
+      "scraped": 86,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "MetalKit",
+      "scraped": 117,
+      "skipped": 1,
+      "failed": 0,
+      "files": 19
+    },
+    {
+      "framework": "MetalPerformanceShadersGraph",
+      "scraped": 777,
+      "skipped": 1,
+      "failed": 0,
+      "files": 63
+    },
+    {
+      "framework": "MetricKit",
+      "scraped": 216,
+      "skipped": 1,
+      "failed": 0,
+      "files": 43
+    },
+    {
+      "framework": "ModelIO",
+      "scraped": 890,
+      "skipped": 1,
+      "failed": 0,
+      "files": 125
+    },
+    {
+      "framework": "MultipeerConnectivity",
+      "scraped": 119,
+      "skipped": 1,
+      "failed": 0,
+      "files": 23
+    },
+    {
+      "framework": "MusicKit",
+      "scraped": 2847,
+      "skipped": 1,
+      "failed": 0,
+      "files": 114
+    },
+    {
+      "framework": "NaturalLanguage",
+      "scraped": 293,
+      "skipped": 1,
+      "failed": 0,
+      "files": 24
+    },
+    {
+      "framework": "NearbyInteraction",
+      "scraped": 107,
+      "skipped": 1,
+      "failed": 0,
+      "files": 21
+    },
+    {
+      "framework": "Network",
+      "scraped": 1460,
+      "skipped": 1,
+      "failed": 0,
+      "files": 713
+    },
+    {
+      "framework": "NetworkExtension",
+      "scraped": 1000,
+      "skipped": 1,
+      "failed": 0,
+      "files": 167
+    },
+    {
+      "framework": "NetworkingDriverKit",
+      "scraped": 612,
+      "skipped": 1,
+      "failed": 0,
+      "files": 232
+    },
+    {
+      "framework": "NotaryAPI",
+      "scraped": 25,
+      "skipped": 1,
+      "failed": 0,
+      "files": 12
+    },
+    {
+      "framework": "NotificationCenter",
+      "scraped": 47,
+      "skipped": 1,
+      "failed": 0,
+      "files": 9
+    },
+    {
+      "framework": "OSLog",
+      "scraped": 96,
+      "skipped": 1,
+      "failed": 0,
+      "files": 13
+    },
+    {
+      "framework": "ObjectiveC",
+      "scraped": 649,
+      "skipped": 1,
+      "failed": 0,
+      "files": 221
+    },
+    {
+      "framework": "Observation",
+      "scraped": 22,
+      "skipped": 1,
+      "failed": 0,
+      "files": 6
+    },
+    {
+      "framework": "OpenDirectory",
+      "scraped": 743,
+      "skipped": 1,
+      "failed": 0,
+      "files": 602
+    },
+    {
+      "framework": "OpenGLES",
+      "scraped": 1590,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1571
+    },
+    {
+      "framework": "PCIDriverKit",
+      "scraped": 301,
+      "skipped": 1,
+      "failed": 0,
+      "files": 226
+    },
+    {
+      "framework": "PDFKit",
+      "scraped": 709,
+      "skipped": 1,
+      "failed": 0,
+      "files": 86
+    },
+    {
+      "framework": "PHASE",
+      "scraped": 471,
+      "skipped": 1,
+      "failed": 0,
+      "files": 84
+    },
+    {
+      "framework": "PackageDescription",
+      "scraped": 554,
+      "skipped": 1,
+      "failed": 0,
+      "files": 27
+    },
+    {
+      "framework": "ParavirtualizedGraphics",
+      "scraped": 109,
+      "skipped": 1,
+      "failed": 0,
+      "files": 45
+    },
+    {
+      "framework": "PassKit",
+      "scraped": 1026,
+      "skipped": 1,
+      "failed": 0,
+      "files": 165
+    },
+    {
+      "framework": "PencilKit",
+      "scraped": 275,
+      "skipped": 1,
+      "failed": 0,
+      "files": 39
+    },
+    {
+      "framework": "PhotoKit",
+      "scraped": 11,
+      "skipped": 1,
+      "failed": 0,
+      "files": 11
+    },
+    {
+      "framework": "PreferencePanes",
+      "scraped": 30,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "ProximityReader",
+      "scraped": 821,
+      "skipped": 1,
+      "failed": 0,
+      "files": 31
+    },
+    {
+      "framework": "PushKit",
+      "scraped": 26,
+      "skipped": 1,
+      "failed": 0,
+      "files": 10
+    },
+    {
+      "framework": "PushToTalk",
+      "scraped": 111,
+      "skipped": 1,
+      "failed": 0,
+      "files": 19
+    },
+    {
+      "framework": "Quartz",
+      "scraped": 702,
+      "skipped": 1,
+      "failed": 0,
+      "files": 269
+    },
+    {
+      "framework": "QuartzCore",
+      "scraped": 658,
+      "skipped": 1,
+      "failed": 0,
+      "files": 121
+    },
+    {
+      "framework": "QuickLook",
+      "scraped": 152,
+      "skipped": 1,
+      "failed": 0,
+      "files": 86
+    },
+    {
+      "framework": "QuickLookThumbnailing",
+      "scraped": 64,
+      "skipped": 1,
+      "failed": 0,
+      "files": 10
+    },
+    {
+      "framework": "QuickLookUI",
+      "scraped": 60,
+      "skipped": 1,
+      "failed": 0,
+      "files": 13
+    },
+    {
+      "framework": "RealityKit",
+      "scraped": 8780,
+      "skipped": 1,
+      "failed": 0,
+      "files": 412
+    },
+    {
+      "framework": "RegexBuilder",
+      "scraped": 503,
+      "skipped": 1,
+      "failed": 0,
+      "files": 17
+    },
+    {
+      "framework": "ReplayKit",
+      "scraped": 156,
+      "skipped": 1,
+      "failed": 0,
+      "files": 27
+    },
+    {
+      "framework": "RoomPlan",
+      "scraped": 530,
+      "skipped": 1,
+      "failed": 0,
+      "files": 25
+    },
+    {
+      "framework": "RosterAPI",
+      "scraped": 21,
+      "skipped": 1,
+      "failed": 0,
+      "files": 21
+    },
+    {
+      "framework": "SCSIControllerDriverKit",
+      "scraped": 96,
+      "skipped": 1,
+      "failed": 0,
+      "files": 16
+    },
+    {
+      "framework": "SCSIPeripheralsDriverKit",
+      "scraped": 76,
+      "skipped": 1,
+      "failed": 0,
+      "files": 37
+    },
+    {
+      "framework": "SKAdNetworkforWebAds",
+      "scraped": 7,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "SafariServices",
+      "scraped": 213,
+      "skipped": 1,
+      "failed": 0,
+      "files": 78
+    },
+    {
+      "framework": "SafetyKit",
+      "scraped": 71,
+      "skipped": 1,
+      "failed": 0,
+      "files": 9
+    },
+    {
+      "framework": "SceneKit",
+      "scraped": 1567,
+      "skipped": 1,
+      "failed": 0,
+      "files": 230
+    },
+    {
+      "framework": "ScreenCaptureKit",
+      "scraped": 250,
+      "skipped": 1,
+      "failed": 0,
+      "files": 31
+    },
+    {
+      "framework": "ScreenSaver",
+      "scraped": 20,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "ScreenTime",
+      "scraped": 28,
+      "skipped": 1,
+      "failed": 0,
+      "files": 5
+    },
+    {
+      "framework": "ScriptingBridge",
+      "scraped": 32,
+      "skipped": 1,
+      "failed": 0,
+      "files": 5
+    },
+    {
+      "framework": "SecureElementCredential",
+      "scraped": 159,
+      "skipped": 1,
+      "failed": 0,
+      "files": 8
+    },
+    {
+      "framework": "Security",
+      "scraped": 5168,
+      "skipped": 1,
+      "failed": 0,
+      "files": 4385
+    },
+    {
+      "framework": "SecurityFoundation",
+      "scraped": 10,
+      "skipped": 1,
+      "failed": 0,
+      "files": 2
+    },
+    {
+      "framework": "SecurityInterface",
+      "scraped": 133,
+      "skipped": 1,
+      "failed": 0,
+      "files": 33
+    },
+    {
+      "framework": "SensitiveContentAnalysis",
+      "scraped": 19,
+      "skipped": 1,
+      "failed": 0,
+      "files": 6
+    },
+    {
+      "framework": "SensorKit",
+      "scraped": 460,
+      "skipped": 1,
+      "failed": 0,
+      "files": 39
+    },
+    {
+      "framework": "SerialDriverKit",
+      "scraped": 65,
+      "skipped": 1,
+      "failed": 0,
+      "files": 32
+    },
+    {
+      "framework": "ServiceManagement",
+      "scraped": 51,
+      "skipped": 1,
+      "failed": 0,
+      "files": 35
+    },
+    {
+      "framework": "ShaderGraph",
+      "scraped": 274,
+      "skipped": 1,
+      "failed": 0,
+      "files": 18
+    },
+    {
+      "framework": "SharedWithYou",
+      "scraped": 119,
+      "skipped": 1,
+      "failed": 0,
+      "files": 29
+    },
+    {
+      "framework": "ShazamKit",
+      "scraped": 143,
+      "skipped": 1,
+      "failed": 0,
+      "files": 23
+    },
+    {
+      "framework": "SigninwithApple",
+      "scraped": 7,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "SiriEventSuggestionsMarkup",
+      "scraped": 37,
+      "skipped": 1,
+      "failed": 0,
+      "files": 37
+    },
+    {
+      "framework": "SiriKit",
+      "scraped": 37,
+      "skipped": 1,
+      "failed": 0,
+      "files": 37
+    },
+    {
+      "framework": "SiriKitCloudMedia",
+      "scraped": 168,
+      "skipped": 1,
+      "failed": 0,
+      "files": 103
+    },
+    {
+      "framework": "Social",
+      "scraped": 62,
+      "skipped": 1,
+      "failed": 0,
+      "files": 15
+    },
+    {
+      "framework": "SoundAnalysis",
+      "scraped": 60,
+      "skipped": 1,
+      "failed": 0,
+      "files": 16
+    },
+    {
+      "framework": "Spatial",
+      "scraped": 719,
+      "skipped": 1,
+      "failed": 0,
+      "files": 35
+    },
+    {
+      "framework": "Speech",
+      "scraped": 184,
+      "skipped": 1,
+      "failed": 0,
+      "files": 27
+    },
+    {
+      "framework": "SpriteKit",
+      "scraped": 1035,
+      "skipped": 1,
+      "failed": 0,
+      "files": 164
+    },
+    {
+      "framework": "StoreKit",
+      "scraped": 1261,
+      "skipped": 1,
+      "failed": 0,
+      "files": 234
+    },
+    {
+      "framework": "StoreKitTest",
+      "scraped": 250,
+      "skipped": 1,
+      "failed": 0,
+      "files": 25
+    },
+    {
+      "framework": "Swift",
+      "scraped": 8276,
+      "skipped": 1,
+      "failed": 0,
+      "files": 557
+    },
+    {
+      "framework": "SwiftData",
+      "scraped": 887,
+      "skipped": 1,
+      "failed": 0,
+      "files": 77
+    },
+    {
+      "framework": "SwiftUI",
+      "scraped": 6047,
+      "skipped": 1,
+      "failed": 0,
+      "files": 949
+    },
+    {
+      "framework": "Symbols",
+      "scraped": 112,
+      "skipped": 1,
+      "failed": 0,
+      "files": 19
+    },
+    {
+      "framework": "Synchronization",
+      "scraped": 227,
+      "skipped": 1,
+      "failed": 0,
+      "files": 11
+    },
+    {
+      "framework": "System",
+      "scraped": 621,
+      "skipped": 1,
+      "failed": 0,
+      "files": 12
+    },
+    {
+      "framework": "SystemConfiguration",
+      "scraped": 640,
+      "skipped": 1,
+      "failed": 0,
+      "files": 577
+    },
+    {
+      "framework": "SystemExtensions",
+      "scraped": 82,
+      "skipped": 1,
+      "failed": 0,
+      "files": 16
+    },
+    {
+      "framework": "TVML",
+      "scraped": 189,
+      "skipped": 1,
+      "failed": 0,
+      "files": 189
+    },
+    {
+      "framework": "TVMLKit",
+      "scraped": 348,
+      "skipped": 1,
+      "failed": 0,
+      "files": 74
+    },
+    {
+      "framework": "TVServices",
+      "scraped": 139,
+      "skipped": 1,
+      "failed": 0,
+      "files": 31
+    },
+    {
+      "framework": "TVUIKit",
+      "scraped": 126,
+      "skipped": 1,
+      "failed": 0,
+      "files": 19
+    },
+    {
+      "framework": "TabletopKit",
+      "scraped": 420,
+      "skipped": 1,
+      "failed": 0,
+      "files": 47
+    },
+    {
+      "framework": "TabularData",
+      "scraped": 1714,
+      "skipped": 1,
+      "failed": 0,
+      "files": 47
+    },
+    {
+      "framework": "Technotes",
+      "scraped": 69,
+      "skipped": 1,
+      "failed": 0,
+      "files": 69
+    },
+    {
+      "framework": "Testing",
+      "scraped": 287,
+      "skipped": 1,
+      "failed": 0,
+      "files": 55
+    },
+    {
+      "framework": "ThreadNetwork",
+      "scraped": 25,
+      "skipped": 1,
+      "failed": 0,
+      "files": 5
+    },
+    {
+      "framework": "TipKit",
+      "scraped": 220,
+      "skipped": 1,
+      "failed": 0,
+      "files": 18
+    },
+    {
+      "framework": "Translation",
+      "scraped": 88,
+      "skipped": 1,
+      "failed": 0,
+      "files": 5
+    },
+    {
+      "framework": "UIKit",
+      "scraped": 6851,
+      "skipped": 2425,
+      "failed": 0,
+      "files": 1088
+    },
+    {
+      "framework": "USBSerialDriverKit",
+      "scraped": 15,
+      "skipped": 1,
+      "failed": 0,
+      "files": 2
+    },
+    {
+      "framework": "UniformTypeIdentifiers",
+      "scraped": 191,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "Updates",
+      "scraped": 67,
+      "skipped": 1,
+      "failed": 0,
+      "files": 67
+    },
+    {
+      "framework": "VideoSubscriberAccount",
+      "scraped": 124,
+      "skipped": 1,
+      "failed": 0,
+      "files": 24
+    },
+    {
+      "framework": "VideoToolbox",
+      "scraped": 624,
+      "skipped": 1,
+      "failed": 0,
+      "files": 410
+    },
+    {
+      "framework": "Virtualization",
+      "scraped": 498,
+      "skipped": 1,
+      "failed": 0,
+      "files": 145
+    },
+    {
+      "framework": "Vision",
+      "scraped": 1692,
+      "skipped": 1,
+      "failed": 0,
+      "files": 303
+    },
+    {
+      "framework": "VisionKit",
+      "scraped": 243,
+      "skipped": 1,
+      "failed": 0,
+      "files": 18
+    },
+    {
+      "framework": "WalletOrders",
+      "scraped": 31,
+      "skipped": 1,
+      "failed": 0,
+      "files": 29
+    },
+    {
+      "framework": "WalletPasses",
+      "scraped": 47,
+      "skipped": 1,
+      "failed": 0,
+      "files": 23
+    },
+    {
+      "framework": "WatchConnectivity",
+      "scraped": 104,
+      "skipped": 1,
+      "failed": 0,
+      "files": 10
+    },
+    {
+      "framework": "WatchKit",
+      "scraped": 725,
+      "skipped": 1,
+      "failed": 0,
+      "files": 127
+    },
+    {
+      "framework": "WeatherKit",
+      "scraped": 1380,
+      "skipped": 1,
+      "failed": 0,
+      "files": 51
+    },
+    {
+      "framework": "WeatherKitRESTAPI",
+      "scraped": 41,
+      "skipped": 1,
+      "failed": 0,
+      "files": 34
+    },
+    {
+      "framework": "WebKit",
+      "scraped": 2719,
+      "skipped": 1,
+      "failed": 0,
+      "files": 491
+    },
+    {
+      "framework": "WidgetKit",
+      "scraped": 265,
+      "skipped": 1,
+      "failed": 0,
+      "files": 85
+    },
+    {
+      "framework": "WorkoutKit",
+      "scraped": 314,
+      "skipped": 1,
+      "failed": 0,
+      "files": 25
+    },
+    {
+      "framework": "XCTest",
+      "scraped": 427,
+      "skipped": 1,
+      "failed": 0,
+      "files": 102
+    },
+    {
+      "framework": "XCUIAutomation",
+      "scraped": 597,
+      "skipped": 1,
+      "failed": 0,
+      "files": 29
+    },
+    {
+      "framework": "XPC",
+      "scraped": 362,
+      "skipped": 1,
+      "failed": 0,
+      "files": 248
+    },
+    {
+      "framework": "Xcode",
+      "scraped": 322,
+      "skipped": 1,
+      "failed": 0,
+      "files": 322
+    },
+    {
+      "framework": "Xcode-Release-Notes",
+      "scraped": 55,
+      "skipped": 1,
+      "failed": 0,
+      "files": 55
+    },
+    {
+      "framework": "XcodeKit",
+      "scraped": 37,
+      "skipped": 1,
+      "failed": 0,
+      "files": 13
     },
     {
       "framework": "accessorysetupkit",
@@ -76,16 +2099,303 @@
       "skipped": 1,
       "failed": 0,
       "files": 14
+    },
+    {
+      "framework": "analytics-reports",
+      "scraped": 121,
+      "skipped": 1,
+      "failed": 0,
+      "files": 121
+    },
+    {
+      "framework": "apple-silicon",
+      "scraped": 16,
+      "skipped": 1,
+      "failed": 0,
+      "files": 16
+    },
+    {
+      "framework": "apple_search_ads",
+      "scraped": 251,
+      "skipped": 1,
+      "failed": 0,
+      "files": 236
+    },
+    {
+      "framework": "applicationservices",
+      "scraped": 3488,
+      "skipped": 1,
+      "failed": 0,
+      "files": 2508
+    },
+    {
+      "framework": "appstorereceipts",
+      "scraped": 25,
+      "skipped": 1,
+      "failed": 0,
+      "files": 21
+    },
+    {
+      "framework": "coreimage",
+      "scraped": 1943,
+      "skipped": 1,
+      "failed": 0,
+      "files": 383
+    },
+    {
+      "framework": "coreservices",
+      "scraped": 4713,
+      "skipped": 1,
+      "failed": 0,
+      "files": 4137
+    },
+    {
+      "framework": "dnssd",
+      "scraped": 241,
+      "skipped": 1,
+      "failed": 0,
+      "files": 235
+    },
+    {
+      "framework": "hvf",
+      "scraped": 332,
+      "skipped": 1,
+      "failed": 0,
+      "files": 16
+    },
+    {
+      "framework": "iAd",
+      "scraped": 30,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "iTunesLibrary",
+      "scraped": 277,
+      "skipped": 1,
+      "failed": 0,
+      "files": 98
+    },
+    {
+      "framework": "iWorkDocumentExportingAPI",
+      "scraped": 2,
+      "skipped": 1,
+      "failed": 0,
+      "files": 2
+    },
+    {
+      "framework": "installer_js",
+      "scraped": 51,
+      "skipped": 1,
+      "failed": 0,
+      "files": 9
+    },
+    {
+      "framework": "iokit",
+      "scraped": 582,
+      "skipped": 1,
+      "failed": 0,
+      "files": 470
+    },
+    {
+      "framework": "ios-ipados-release-notes",
+      "scraped": 54,
+      "skipped": 1,
+      "failed": 0,
+      "files": 54
+    },
+    {
+      "framework": "kernel",
+      "scraped": 8624,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7057
+    },
+    {
+      "framework": "kernelmanagement",
+      "scraped": 4,
+      "skipped": 1,
+      "failed": 0,
+      "files": 4
+    },
+    {
+      "framework": "macos-release-notes",
+      "scraped": 53,
+      "skipped": 1,
+      "failed": 0,
+      "files": 53
+    },
+    {
+      "framework": "metalperformanceshaders",
+      "scraped": 2942,
+      "skipped": 1,
+      "failed": 0,
+      "files": 595
+    },
+    {
+      "framework": "os",
+      "scraped": 236,
+      "skipped": 1,
+      "failed": 0,
+      "files": 52
+    },
+    {
+      "framework": "playgroundbluetooth",
+      "scraped": 64,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "playgroundsupport",
+      "scraped": 73,
+      "skipped": 1,
+      "failed": 0,
+      "files": 12
+    },
+    {
+      "framework": "professional_video_applications",
+      "scraped": 5,
+      "skipped": 1,
+      "failed": 0,
+      "files": 5
+    },
+    {
+      "framework": "quicktime-file-format",
+      "scraped": 1152,
+      "skipped": 1,
+      "failed": 0,
+      "files": 331
+    },
+    {
+      "framework": "safari-developer-tools",
+      "scraped": 17,
+      "skipped": 1,
+      "failed": 0,
+      "files": 17
+    },
+    {
+      "framework": "safari-release-notes",
+      "scraped": 33,
+      "skipped": 1,
+      "failed": 0,
+      "files": 33
+    },
+    {
+      "framework": "snapshots",
+      "scraped": 11,
+      "skipped": 1,
+      "failed": 0,
+      "files": 7
+    },
+    {
+      "framework": "swift-playgrounds",
+      "scraped": 24,
+      "skipped": 1,
+      "failed": 0,
+      "files": 24
+    },
+    {
+      "framework": "technologies",
+      "scraped": 1,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1
+    },
+    {
+      "framework": "tvmljs",
+      "scraped": 268,
+      "skipped": 1,
+      "failed": 0,
+      "files": 50
+    },
+    {
+      "framework": "tvos-release-notes",
+      "scraped": 48,
+      "skipped": 1,
+      "failed": 0,
+      "files": 48
+    },
+    {
+      "framework": "usbdriverkit",
+      "scraped": 904,
+      "skipped": 1,
+      "failed": 0,
+      "files": 458
+    },
+    {
+      "framework": "usernotificationsui",
+      "scraped": 20,
+      "skipped": 1,
+      "failed": 0,
+      "files": 5
+    },
+    {
+      "framework": "visionOS",
+      "scraped": 66,
+      "skipped": 1,
+      "failed": 0,
+      "files": 66
+    },
+    {
+      "framework": "visionos-release-notes",
+      "scraped": 11,
+      "skipped": 1,
+      "failed": 0,
+      "files": 10
+    },
+    {
+      "framework": "vmnet",
+      "scraped": 77,
+      "skipped": 1,
+      "failed": 0,
+      "files": 54
+    },
+    {
+      "framework": "watchOS-Apps",
+      "scraped": 26,
+      "skipped": 1,
+      "failed": 0,
+      "files": 26
+    },
+    {
+      "framework": "watchos-release-notes",
+      "scraped": 46,
+      "skipped": 1,
+      "failed": 0,
+      "files": 46
+    },
+    {
+      "framework": "webkitjs",
+      "scraped": 4928,
+      "skipped": 1,
+      "failed": 0,
+      "files": 641
+    },
+    {
+      "framework": "xcselect",
+      "scraped": 1,
+      "skipped": 1,
+      "failed": 0,
+      "files": 1
     }
   ],
-  "incomplete": [],
+  "incomplete": [
+    {
+      "framework": "UserNotifications",
+      "scraped": 128,
+      "files": 62,
+      "last_line": "Last scraped: https://developer.apple.com/documentation/usernotifications/unnotificationcontent/targetcontentidentifier"
+    }
+  ],
   "no_progress": [],
   "summary": {
-    "total_frameworks": 11,
-    "completed": 11,
-    "incomplete": 0,
+    "total_frameworks": 341,
+    "completed": 340,
+    "incomplete": 1,
     "no_progress": 0,
-    "total_pages_scraped": 995,
-    "total_pages_skipped": 10
+    "total_pages_scraped": 251166,
+    "total_pages_skipped": 7953
   }
 }
