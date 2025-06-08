@@ -19,12 +19,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     # Base URL for JSON data
     JSON_BASE_URL = "https://developer.apple.com/tutorials/data/documentation"
     
-    def __init__(self, framework_id: str, framework_name: Optional[str] = None) -> None:
+    def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
+                 include_cross_refs: bool = False) -> None:
         """Initialize JSON-based scraper.
         
         Args:
             framework_id: Framework identifier (e.g., 'swiftui', 'uikit')
             framework_name: Human-readable name (defaults to framework_id)
+            include_cross_refs: Whether to include cross-framework references
         """
         super().__init__(
             framework_id=framework_id,
@@ -35,6 +37,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         self.processed_urls: Set[str] = set()
         self._discovery_batch_size = 1000  # Process URLs in batches to manage memory
         self.topic_hierarchy: Dict[str, Dict[str, List[str]]] = {}  # Track topic organization
+        self.include_cross_refs = include_cross_refs
+        self.cross_framework_refs: Dict[str, Set[str]] = {}  # Track cross-framework references
     
     def _convert_doc_url_to_json_url(self, doc_url: str) -> str:
         """Convert a documentation URL to its JSON data URL.
@@ -111,6 +115,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         
         self.stats["end_time"] = time.time()
         self.stats["duration"] = self.stats["end_time"] - self.stats["start_time"]
+        
+        # Save cross-framework references if tracking was enabled
+        if self.include_cross_refs:
+            self.save_cross_framework_summary()
         
         logger.info(
             "framework_scrape_complete",
@@ -237,7 +245,7 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             logger.warning("failed_to_parse_json", url=json_url)
     
     async def _discover_and_scrape_iterative(self, initial_json_url: str, progress_file) -> None:
-        """Iterative version of discovery to avoid recursion depth issues."""
+        """Iterative version of discovery to avoid recursion depth issues with optimized ETag usage."""
         from collections import deque
         
         # Queue of URLs to process
@@ -274,38 +282,83 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                 )
             
             try:
-                # Fetch the JSON data
-                result = await self.fetch_page_with_etag(json_url, use_etag=False)
-                if not result:
-                    continue
-                response_text = result[0]
+                # OPTIMIZED: Fetch JSON with ETag support for discovery
+                result = await self.fetch_page_with_etag(json_url, use_etag=True)
                 
-                # Parse JSON
+                if not result:
+                    # Got 304 Not Modified - content unchanged
+                    doc_url = self._convert_json_url_to_doc_url(json_url)
+                    logger.debug("content_unchanged_skip_scrape", json_url=json_url, doc_url=doc_url)
+                    self.stats['pages_skipped'] += 1
+                    
+                    # IMPORTANT: Still need to discover child pages!
+                    # The main page might be unchanged but children could be new/updated
+                    
+                    # Check if we have cached discovery data for this page
+                    if json_url in self.hash_manager.hashes:
+                        # We've seen this page before - need to rediscover its children
+                        # Fetch without ETag to get content for discovery
+                        discovery_result = await self.fetch_page_with_etag(json_url, use_etag=False)
+                        if discovery_result:
+                            try:
+                                data = json.loads(discovery_result[0])
+                                # Extract URLs for discovery
+                                new_urls = self._extract_urls_from_json_data(data)
+                                for new_url in new_urls:
+                                    if new_url not in self.processed_urls:
+                                        url_queue.append(new_url)
+                                logger.debug("rediscovered_child_urls", parent=json_url, count=len(new_urls))
+                            except json.JSONDecodeError:
+                                logger.warning("failed_to_parse_json_for_rediscovery", url=json_url)
+                    
+                    # Update progress
+                    if self.stats['pages_skipped'] % 50 == 0:
+                        self._update_progress_file(progress_file, f"{doc_url} (skipped)")
+                    continue
+                
+                # Got 200 OK - content is new or changed
+                response_text, etag = result
+                
+                # Parse JSON for discovery
                 try:
                     data = json.loads(response_text)
                 except json.JSONDecodeError:
                     logger.warning("failed_to_parse_json", url=json_url)
                     continue
                 
-                # Scrape this page immediately
+                # Process and save this page
                 doc_url = self._convert_json_url_to_doc_url(json_url)
-                scraped = await self._scrape_and_save_url(doc_url)
                 
-                if scraped:
-                    # Update progress
-                    self._update_progress_file(progress_file, doc_url)
-                    
-                    # Log progress every 10 files
-                    if self.stats['pages_scraped'] % 10 == 0:
-                        logger.info(
-                            "scraping_progress",
-                            scraped=self.stats['pages_scraped'],
-                            skipped=self.stats['pages_skipped'],
-                            failed=self.stats['pages_failed'],
-                            queue_size=current_queue_size
-                        )
+                # Check if we need to process based on content hash
+                if self.hash_manager.has_changed(json_url, response_text, etag):
+                    # Extract and save page data
+                    page_data = self._extract_from_json(data, doc_url)
+                    if page_data:
+                        # Update hashes before saving
+                        self.hash_manager.update_hash(json_url, response_text, etag)
+                        self.hash_manager.update_hash(doc_url, response_text, etag)
+                        
+                        await self.save_page_data(doc_url, page_data)
+                        self.stats['pages_scraped'] += 1
+                        
+                        # Update progress
+                        self._update_progress_file(progress_file, doc_url)
+                        
+                        # Log progress every 10 files
+                        if self.stats['pages_scraped'] % 10 == 0:
+                            logger.info(
+                                "scraping_progress",
+                                scraped=self.stats['pages_scraped'],
+                                skipped=self.stats['pages_skipped'],
+                                failed=self.stats['pages_failed'],
+                                queue_size=current_queue_size
+                            )
+                else:
+                    # Content hasn't changed according to hash
+                    logger.debug("content_unchanged_via_hash", url=doc_url)
+                    self.stats['pages_skipped'] += 1
                 
-                # Extract new URLs and add to queue (instead of recursing)
+                # Extract new URLs for discovery (regardless of whether we saved)
                 new_urls = self._extract_urls_from_json_data(data)
                 
                 # Filter and add new URLs to queue
@@ -350,13 +403,20 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                         # Convert identifiers to URLs
                         for identifier in identifiers:
                             if identifier.startswith('doc://'):
-                                # Only process identifiers for the current framework
+                                # Check if it's for current framework
                                 identifier_lower = identifier.lower()
                                 framework_check = f"com.apple.{self.framework_id.lower()}"
-                                if framework_check in identifier_lower or f"/{self.framework_id.lower()}/" in identifier_lower or f"/{self.framework_id}/" in identifier:
+                                is_current_framework = (framework_check in identifier_lower or 
+                                                      f"/{self.framework_id.lower()}/" in identifier_lower or 
+                                                      f"/{self.framework_id}/" in identifier)
+                                
+                                if is_current_framework:
                                     json_url = self._convert_identifier_to_json_url(identifier)
                                     if json_url:
                                         urls.append(json_url)
+                                elif self.include_cross_refs:
+                                    # Track cross-framework reference
+                                    self._track_cross_framework_ref(identifier)
         
         return urls
     
@@ -580,44 +640,82 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     if json_url not in self.processed_urls:
                         await self._discover_from_json(json_url)
     
-    async def extract_page_data(self, soup: Any, url: str) -> Optional[Dict[str, Any]]:
-        """Extract data from JSON instead of HTML.
+    async def scrape_page(self, url: str) -> Optional[Dict[str, Any]]:
+        """Override base scrape_page to work with JSON URLs and ETags.
         
         Args:
-            soup: Ignored (for compatibility)
-            url: Documentation URL
+            url: Documentation URL to scrape
             
         Returns:
-            Extracted data
+            Extracted data or None if failed/unchanged
         """
         # Convert to JSON URL
         json_url = self._convert_doc_url_to_json_url(url)
         
-        # Fetch JSON data with ETag support for efficient caching
+        # Check if we have an ETag for this JSON URL
+        stored_etag = self.hash_manager.get_etag(json_url)
+        
+        # Fetch JSON data with ETag support
         result = await self.fetch_page_with_etag(json_url)
         if not result:
             # Either failed or 304 Not Modified (content unchanged)
+            if result is None and stored_etag:
+                # 304 response - content unchanged
+                logger.debug("content_unchanged_via_etag", url=url, json_url=json_url)
+                self.stats["pages_skipped"] += 1
             return None
         
         response_text, etag = result
+        
+        # Check hash to avoid re-processing unchanged content
+        if not self.hash_manager.has_changed(json_url, response_text, etag) and not self.hash_manager.has_changed(url, response_text, etag):
+            logger.debug("content_unchanged", url=url)
+            self.stats["pages_skipped"] += 1
+            return None
         
         try:
             json_data = json.loads(response_text)
             # Basic validation
             if not self._validate_json_structure(json_data):
                 logger.warning("invalid_json_structure", url=json_url)
+                self.stats["pages_failed"] += 1
                 return None
             
-            # Always store hash for the JSON URL (with or without ETag)
-            self.hash_manager.update_hash(json_url, response_text, etag)
+            # Extract data
+            data = self._extract_from_json(json_data, url)
             
-            # Also store hash for the documentation URL to track what we've scraped
-            self.hash_manager.update_hash(url, response_text, etag)
-            
-            return self._extract_from_json(json_data, url)
+            if data:
+                # Update hash for both URLs with ETag for successful extraction
+                self.hash_manager.update_hash(json_url, response_text, etag)
+                self.hash_manager.update_hash(url, response_text, etag)
+                self.stats["pages_scraped"] += 1
+                return data
+            else:
+                logger.warning("no_data_extracted", url=url)
+                self.stats["pages_failed"] += 1
+                return None
+                
         except json.JSONDecodeError as e:
             logger.error("json_parse_error", url=json_url, error=str(e))
+            self.hash_manager.mark_error(json_url, f"JSON parse error: {str(e)}")
+            self.hash_manager.mark_error(url, f"JSON parse error: {str(e)}")
+            self.stats["pages_failed"] += 1
             return None
+    
+    async def extract_page_data(self, soup: Any, url: str) -> Optional[Dict[str, Any]]:
+        """Legacy method for compatibility - actual scraping happens in scrape_page.
+        
+        Args:
+            soup: Ignored (for compatibility)
+            url: Documentation URL
+            
+        Returns:
+            None (all work done in scrape_page)
+        """
+        # This method is not used in the JSON scraper since we override scrape_page
+        # But we keep it for compatibility with the base class interface
+        logger.warning("extract_page_data_called_unexpectedly", url=url)
+        return None
     
     def _extract_from_json(self, json_data: Dict[str, Any], doc_url: str) -> Dict[str, Any]:
         """Extract structured data from Apple's JSON format.
@@ -1721,3 +1819,39 @@ import {self.framework_name.replace(' ', '')}
         """Get platform requirements."""
         # This could be enhanced based on discovered documentation
         return "- iOS 13.0+\n- macOS 10.15+\n- tvOS 13.0+\n- watchOS 6.0+"
+    
+    def _track_cross_framework_ref(self, identifier: str) -> None:
+        """Track a cross-framework reference."""
+        # Extract target framework from identifier
+        if '/documentation/' in identifier:
+            parts = identifier.split('/documentation/', 1)[1].split('/')
+            if parts:
+                target_framework = parts[0]
+                if target_framework not in self.cross_framework_refs:
+                    self.cross_framework_refs[target_framework] = set()
+                self.cross_framework_refs[target_framework].add(identifier)
+    
+    def save_cross_framework_summary(self) -> None:
+        """Save summary of cross-framework references if any were found."""
+        if not self.cross_framework_refs:
+            return
+        
+        summary_path = self.output_dir / "_cross_framework_refs.json"
+        summary_data = {
+            "source_framework": self.framework_id,
+            "total_external_refs": sum(len(refs) for refs in self.cross_framework_refs.values()),
+            "referenced_frameworks": list(self.cross_framework_refs.keys()),
+            "references": {
+                fw: list(refs) for fw, refs in self.cross_framework_refs.items()
+            }
+        }
+        
+        with open(summary_path, 'w') as f:
+            json.dump(summary_data, f, indent=2)
+        
+        logger.info(
+            "saved_cross_framework_summary",
+            framework=self.framework_name,
+            external_refs=summary_data["total_external_refs"],
+            referenced_frameworks=len(summary_data["referenced_frameworks"])
+        )

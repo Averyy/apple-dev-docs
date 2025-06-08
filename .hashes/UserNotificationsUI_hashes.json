@@ -1,0 +1,235 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T13:45:43.517596",
+    "total_pages": 41,
+    "etags_collected": "2025-06-07T13:45:43.517607"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/UserNotificationsUI.json": {
+      "hash": "d7ad27af698e7f8fe351c85e9707aa76f715d36f868247bddb72129e3fc7f9ed",
+      "last_checked": "2025-06-06T13:50:09.649758",
+      "status": "new",
+      "etag": "W/\"5e3657fdcfc20b091729fca5457cde05\""
+    },
+    "https://developer.apple.com/documentation/UserNotificationsUI": {
+      "hash": "e668bed945ed32324ab2191d0927397c85aff2f78cf65f0853efe165eeac2c4f",
+      "last_checked": "2025-06-06T13:50:09.650129",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui.json": {
+      "hash": "e668bed945ed32324ab2191d0927397c85aff2f78cf65f0853efe165eeac2c4f",
+      "last_checked": "2025-06-06T13:50:09.650129",
+      "status": "unchanged",
+      "etag": "W/\"5e3657fdcfc20b091729fca5457cde05\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension.json": {
+      "hash": "1c89f04f704c59dbec899ca3801015f591824268cd4737975a183b2f728dc220",
+      "last_checked": "2025-06-06T13:50:10.938820",
+      "status": "unchanged",
+      "etag": "W/\"05f0916085e72684ec4e93d86a6122bc\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension": {
+      "hash": "1c89f04f704c59dbec899ca3801015f591824268cd4737975a183b2f728dc220",
+      "last_checked": "2025-06-06T13:50:10.938820",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/didreceive(_:).json": {
+      "hash": "5d7e7232b670068fd5ff88f216e9a2f69246fc56694c513c5c768687271eee26",
+      "last_checked": "2025-06-06T13:50:11.442550",
+      "status": "unchanged",
+      "etag": "W/\"8b25a36ed7ddc78b7336b4bc34bcc531\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension/didreceive(_:)": {
+      "hash": "5d7e7232b670068fd5ff88f216e9a2f69246fc56694c513c5c768687271eee26",
+      "last_checked": "2025-06-06T13:50:11.442550",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/didreceive(_:completionhandler:).json": {
+      "hash": "45d83659392e7a1e78410bdf12a37565a4521e383fd2b7bef045fb77f879cb99",
+      "last_checked": "2025-06-06T13:50:11.955456",
+      "status": "unchanged",
+      "etag": "W/\"3047e3cf6cc083b7d1003a5080b4eca5\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension/didreceive(_:completionhandler:)": {
+      "hash": "45d83659392e7a1e78410bdf12a37565a4521e383fd2b7bef045fb77f879cb99",
+      "last_checked": "2025-06-06T13:50:11.955456",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionresponseoption.json": {
+      "hash": "bd6a6688d9eb42b16f9fed788c9d700a929991c393762a17aabd63c7494c0cee",
+      "last_checked": "2025-06-06T13:50:12.307933",
+      "status": "unchanged",
+      "etag": "W/\"0ac5224bbe6426df8589b1008fada8f9\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextensionresponseoption": {
+      "hash": "bd6a6688d9eb42b16f9fed788c9d700a929991c393762a17aabd63c7494c0cee",
+      "last_checked": "2025-06-06T13:50:12.307933",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/mediaplaypausebuttontype.json": {
+      "hash": "000fcad4bdbf0748e7eca47edfa9b827187e46d4cf7466fb9450509f49ce3caa",
+      "last_checked": "2025-06-06T13:50:12.800906",
+      "status": "unchanged",
+      "etag": "W/\"9278bf4061b7800ccd5fcc98707338ff\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension/mediaplaypausebuttontype": {
+      "hash": "000fcad4bdbf0748e7eca47edfa9b827187e46d4cf7466fb9450509f49ce3caa",
+      "last_checked": "2025-06-06T13:50:12.800906",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype.json": {
+      "hash": "012ff2c52072c826ea95774cd0ff3687b509a22623d2736a6a47adf01c2bf676",
+      "last_checked": "2025-06-06T13:50:13.201504",
+      "status": "unchanged",
+      "etag": "W/\"3392bb620dce8386bd739d922e0dab3b\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype": {
+      "hash": "012ff2c52072c826ea95774cd0ff3687b509a22623d2736a6a47adf01c2bf676",
+      "last_checked": "2025-06-06T13:50:13.201504",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/mediaplaypausebuttonframe.json": {
+      "hash": "d959df2af1880d9ed025a5a96e6c76f9690d171339e26b62d88335932f3de8b8",
+      "last_checked": "2025-06-06T13:50:13.618172",
+      "status": "unchanged",
+      "etag": "W/\"9884ce5e83a34ea59cf8746714891ba7\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension/mediaplaypausebuttonframe": {
+      "hash": "d959df2af1880d9ed025a5a96e6c76f9690d171339e26b62d88335932f3de8b8",
+      "last_checked": "2025-06-06T13:50:13.618172",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/mediaplaypausebuttontintcolor.json": {
+      "hash": "be83f635d5dfa8a3eaa6d783cea84d00a15297c1cb1a1963dd433df7243e9721",
+      "last_checked": "2025-06-06T13:50:14.038634",
+      "status": "unchanged",
+      "etag": "W/\"ab31bada2dd07e97b8b56a1a67033d61\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension/mediaplaypausebuttontintcolor": {
+      "hash": "be83f635d5dfa8a3eaa6d783cea84d00a15297c1cb1a1963dd433df7243e9721",
+      "last_checked": "2025-06-06T13:50:14.038634",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/mediaplay().json": {
+      "hash": "916c9f51a68c3477014f677b51da2caf7a3b575b009f485592ee6780c74c7c13",
+      "last_checked": "2025-06-06T13:50:14.489610",
+      "status": "unchanged",
+      "etag": "W/\"1289fd86e8914ddcd8698991c4562036\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension/mediaplay()": {
+      "hash": "916c9f51a68c3477014f677b51da2caf7a3b575b009f485592ee6780c74c7c13",
+      "last_checked": "2025-06-06T13:50:14.489610",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextension/mediapause().json": {
+      "hash": "47bd54ed3dc79828d29cced099aa5fd732ac1a5732474d02a30cc2abc1555aee",
+      "last_checked": "2025-06-06T13:50:14.870866",
+      "status": "unchanged",
+      "etag": "W/\"d34fbea389fe7601eaede9f27180f7f3\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension/mediapause()": {
+      "hash": "47bd54ed3dc79828d29cced099aa5fd732ac1a5732474d02a30cc2abc1555aee",
+      "last_checked": "2025-06-06T13:50:14.870866",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/donotdismiss.json": {
+      "hash": "d82c26e13aa0c19ff45ef2b25901225bd8297018b1d3e3dc8c94626536dafe03",
+      "last_checked": "2025-06-06T13:50:15.311227",
+      "status": "unchanged",
+      "etag": "W/\"9be806c6660fd59a093b4c51fc394746\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/donotdismiss": {
+      "hash": "d82c26e13aa0c19ff45ef2b25901225bd8297018b1d3e3dc8c94626536dafe03",
+      "last_checked": "2025-06-06T13:50:15.311227",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/dismiss.json": {
+      "hash": "3943770b3cde715887e5140d2ec3081ac8bb5373b5db0ecb5420067f26efb213",
+      "last_checked": "2025-06-06T13:50:15.691275",
+      "status": "unchanged",
+      "etag": "W/\"548efad979d6abcaa976a5a331375a34\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/dismiss": {
+      "hash": "3943770b3cde715887e5140d2ec3081ac8bb5373b5db0ecb5420067f26efb213",
+      "last_checked": "2025-06-06T13:50:15.691275",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/dismissandforwardaction.json": {
+      "hash": "a182d88ddb4b7b55afba7e150fa30711741ab641ba113adcf2badb5e4fe83084",
+      "last_checked": "2025-06-06T13:50:16.119976",
+      "status": "unchanged",
+      "etag": "W/\"0a161f6c640912bc1f20f5c251785b4b\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/dismissandforwardaction": {
+      "hash": "a182d88ddb4b7b55afba7e150fa30711741ab641ba113adcf2badb5e4fe83084",
+      "last_checked": "2025-06-06T13:50:16.119976",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/init(rawvalue:).json": {
+      "hash": "6040b44f3ef7adcb85ee1c059b8b8ce409877a2c068f4b34086c75c81688c0bb",
+      "last_checked": "2025-06-06T13:50:16.523206",
+      "status": "unchanged",
+      "etag": "W/\"e086bdc25bcb94011272cdca955b8dcf\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextensionresponseoption/init(rawvalue:)": {
+      "hash": "6040b44f3ef7adcb85ee1c059b8b8ce409877a2c068f4b34086c75c81688c0bb",
+      "last_checked": "2025-06-06T13:50:16.523206",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/none.json": {
+      "hash": "8a5a5939229adfef9a534e70d55984e2b16f2b670c2f7b57d9d31d9a60fb189a",
+      "last_checked": "2025-06-06T13:50:16.919638",
+      "status": "unchanged",
+      "etag": "W/\"9df264ec1f169968db64052331e62002\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/none": {
+      "hash": "8a5a5939229adfef9a534e70d55984e2b16f2b670c2f7b57d9d31d9a60fb189a",
+      "last_checked": "2025-06-06T13:50:16.919638",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/default.json": {
+      "hash": "0900f8a64321a6a0f33e7116a4bbafbc4d33eeb31aeba1aef70917c870b18700",
+      "last_checked": "2025-06-06T13:50:17.300282",
+      "status": "unchanged",
+      "etag": "W/\"972dd27463de985b8920ba97b361e20d\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/default": {
+      "hash": "0900f8a64321a6a0f33e7116a4bbafbc4d33eeb31aeba1aef70917c870b18700",
+      "last_checked": "2025-06-06T13:50:17.300282",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/overlay.json": {
+      "hash": "5c9ae26b46309ed6ffeeecb5d5c7e6a28d5d2f3a28912e41c2d15d565c141d47",
+      "last_checked": "2025-06-06T13:50:17.716454",
+      "status": "unchanged",
+      "etag": "W/\"126a854dfae5977163121338c9c17113\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/overlay": {
+      "hash": "5c9ae26b46309ed6ffeeecb5d5c7e6a28d5d2f3a28912e41c2d15d565c141d47",
+      "last_checked": "2025-06-06T13:50:17.716454",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/init(rawvalue:).json": {
+      "hash": "a6a76898e19464bc5656d9a920f79e5c57399193d51383b3b4cf7c38ef4c04ee",
+      "last_checked": "2025-06-06T13:50:18.118191",
+      "status": "unchanged",
+      "etag": "W/\"76c52f211d645bea4782820392caef32\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextensionmediaplaypausebuttontype/init(rawvalue:)": {
+      "hash": "a6a76898e19464bc5656d9a920f79e5c57399193d51383b3b4cf7c38ef4c04ee",
+      "last_checked": "2025-06-06T13:50:18.118191",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotificationsui/customizing-the-appearance-of-notifications.json": {
+      "hash": "e587a2d6705e3158cfa6427c1647cad6786d579c487507db961a3f28685d4447",
+      "last_checked": "2025-06-06T19:36:45.358679",
+      "status": "unchanged",
+      "etag": "W/\"f8ee300edbb47e8fabca5fcafae9a50e\""
+    },
+    "https://developer.apple.com/documentation/usernotificationsui/customizing-the-appearance-of-notifications": {
+      "hash": "e587a2d6705e3158cfa6427c1647cad6786d579c487507db961a3f28685d4447",
+      "last_checked": "2025-06-06T19:36:45.358679",
+      "status": "unchanged"
+    }
+  }
+}

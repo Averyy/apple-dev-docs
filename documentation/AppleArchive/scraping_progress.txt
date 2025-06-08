@@ -1,4 +1,4 @@
 Completed scraping Apple Archive!
-Total pages scraped: 248
+Total pages scraped: 1
 Pages skipped (unchanged): 1
 Pages failed: 0

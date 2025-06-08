@@ -35,8 +35,6 @@ For information on installing alternative app marketplaces from their company we
 
 > ❗ **Important**:  To distribute an app that uses an alternative browser engine, you need to request the relevant entitlements for your developer account. For more information and to request the entitlements, see [`Using alternative browser engines in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines).
 
- To distribute an app that uses an alternative browser engine, you need to request the relevant entitlements for your developer account. For more information and to request the entitlements, see [`Using alternative browser engines in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines).
-
 ## Topics
 
 ### Essentials

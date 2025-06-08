@@ -30,4 +30,4 @@ init(_ announcement: NSAttributedString)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/accessibilitynotification/announcement/init(_:)-46byj)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/AccessibilityNotification/Announcement/init(_:)-46byj)*

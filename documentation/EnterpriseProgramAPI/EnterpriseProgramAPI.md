@@ -13,8 +13,6 @@ Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain key
 
 > ❗ **Important**:  Changes you make using the Enterprise Program API affect the production data you use for development and distribution.
 
- Changes you make using the Enterprise Program API affect the production data you use for development and distribution.
-
 The API provides resources to automate the following areas of the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com):
 
 - . Manage bundle IDs, capabilities, signing certificates, devices, and provisioning profiles.

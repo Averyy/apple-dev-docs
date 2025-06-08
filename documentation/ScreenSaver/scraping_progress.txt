@@ -1,4 +1,4 @@
 Completed scraping Screen Saver!
-Total pages scraped: 20
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 2
 Pages failed: 0

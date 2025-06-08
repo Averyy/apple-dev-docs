@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T13:41:22.658195",
+    "total_pages": 4,
+    "etags_collected": "2025-06-07T13:41:22.658203"
+  },
+  "hashes": {
+    "https://developer.apple.com/documentation/xcselect/xcselect": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:35:31.476301",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcselect/xcselect.json": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:35:31.476301",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcselect.json": {
+      "hash": "71f1448887e8e011bca988a651667005cd03f7353e68eebb765d34e72765c595",
+      "last_checked": "2025-06-06T20:01:55.500144",
+      "status": "unchanged",
+      "etag": "W/\"855f6f0527ec5835e4017a08802ef052\""
+    },
+    "https://developer.apple.com/documentation/xcselect": {
+      "hash": "71f1448887e8e011bca988a651667005cd03f7353e68eebb765d34e72765c595",
+      "last_checked": "2025-06-06T20:01:55.500144",
+      "status": "unchanged"
+    }
+  }
+}

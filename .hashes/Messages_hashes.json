@@ -1,0 +1,1743 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-08T16:06:39.877206",
+    "total_pages": 289,
+    "etags_collected": "2025-06-08T16:06:39.877226"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/messages/preparing-your-app-to-be-the-default-messaging-app.json": {
+      "hash": "4403f7a45f9957ed69d8fedaa00bbc01f08a8b4562f33df82caca572f1758a6c",
+      "last_checked": "2025-06-06T19:35:04.671967",
+      "status": "unchanged",
+      "etag": "W/\"354cd5e26b3f382ebda266648d77dbe4\""
+    },
+    "https://developer.apple.com/documentation/messages/preparing-your-app-to-be-the-default-messaging-app": {
+      "hash": "0d73b9db323f6d91a864fe03e9f6cd133f292056ee3fec7f2db3ac83134d3202",
+      "last_checked": "2025-06-06T04:14:18.836826",
+      "status": "unchanged",
+      "etag": "2c5edf9850b7ff1e2bbe2453f173583c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.json": {
+      "hash": "accc0475096244c9c49d01a23d33483322677fbc4141d0c86766c1a1a8c1ea2e",
+      "last_checked": "2025-06-06T04:14:19.267352",
+      "status": "unchanged",
+      "etag": "W/\"91e31c5b6a36159d5108481ed0811178\""
+    },
+    "https://developer.apple.com/documentation/messages/adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime": {
+      "hash": "accc0475096244c9c49d01a23d33483322677fbc4141d0c86766c1a1a8c1ea2e",
+      "last_checked": "2025-06-06T04:14:19.267352",
+      "status": "unchanged",
+      "etag": "c4a3cc3c0e5d11902934724fbc63c9fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/adding-your-sticker-packs-to-messages.json": {
+      "hash": "7059e04d8c71cea3270cfede1b75985aaf65268a51f0540f6c03c6717e016981",
+      "last_checked": "2025-06-06T04:14:19.690397",
+      "status": "unchanged",
+      "etag": "W/\"56d8d58fb5f1f0dfda391d54f9d591ad\""
+    },
+    "https://developer.apple.com/documentation/messages/adding-your-sticker-packs-to-messages": {
+      "hash": "7059e04d8c71cea3270cfede1b75985aaf65268a51f0540f6c03c6717e016981",
+      "last_checked": "2025-06-06T04:14:19.690397",
+      "status": "unchanged",
+      "etag": "57f0dbfdff329681304b3685a349a47a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewcontroller.json": {
+      "hash": "db5fd66c8172e9c8dea497675881f7f311dbd5c5569d72c935e642f469a1b178",
+      "last_checked": "2025-06-06T04:14:20.109909",
+      "status": "unchanged",
+      "etag": "W/\"020d2e488e0594e98815ea9b4a104032\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserviewcontroller": {
+      "hash": "db5fd66c8172e9c8dea497675881f7f311dbd5c5569d72c935e642f469a1b178",
+      "last_checked": "2025-06-06T04:14:20.109909",
+      "status": "unchanged",
+      "etag": "54c3a87f94b7a8e16a12dce2c5d8215e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview.json": {
+      "hash": "f4a43ee8194401c7b918793c5009e0b899353fd48917131e4eda9ee30264f5bf",
+      "last_checked": "2025-06-06T04:14:20.717233",
+      "status": "unchanged",
+      "etag": "W/\"3bfed3c386ddc43ed1df52e806d9c9bf\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserview": {
+      "hash": "f4a43ee8194401c7b918793c5009e0b899353fd48917131e4eda9ee30264f5bf",
+      "last_checked": "2025-06-06T04:14:20.717233",
+      "status": "unchanged",
+      "etag": "a83ea37de0d9e0ed4f0b2505f127feb0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview.json": {
+      "hash": "c00b886e493c89c2696cebb6b4c83f3987efd5111eda64b3ab461d8c66a27612",
+      "last_checked": "2025-06-06T04:14:21.099777",
+      "status": "unchanged",
+      "etag": "W/\"6d83e5a8ea09c17e7e3cfa4695cf7f85\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerview": {
+      "hash": "c00b886e493c89c2696cebb6b4c83f3987efd5111eda64b3ab461d8c66a27612",
+      "last_checked": "2025-06-06T04:14:21.099777",
+      "status": "unchanged",
+      "etag": "6c32cba6e39929e8f040c143db0ba6a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickersize.json": {
+      "hash": "4d8321d501cb47e353e4b54702d1a41c7166b7479e1dce73ea438b9ec1aa6fd2",
+      "last_checked": "2025-06-06T04:14:21.466763",
+      "status": "unchanged",
+      "etag": "W/\"97e688e526d55a329a984dedef921a6b\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickersize": {
+      "hash": "4d8321d501cb47e353e4b54702d1a41c7166b7479e1dce73ea438b9ec1aa6fd2",
+      "last_checked": "2025-06-06T04:14:21.466763",
+      "status": "unchanged",
+      "etag": "941aad414ed6333935ade285289c9862"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/icecreambuilder-building-an-imessage-extension.json": {
+      "hash": "840cb6767e71264795573fc3c8a163a78df9576c8e5daad1f7bc7cdf388a69ed",
+      "last_checked": "2025-06-06T04:14:21.853940",
+      "status": "unchanged",
+      "etag": "W/\"642b6ef327d11269654000d892d116fc\""
+    },
+    "https://developer.apple.com/documentation/messages/icecreambuilder-building-an-imessage-extension": {
+      "hash": "840cb6767e71264795573fc3c8a163a78df9576c8e5daad1f7bc7cdf388a69ed",
+      "last_checked": "2025-06-06T04:14:21.853940",
+      "status": "unchanged",
+      "etag": "5c6deb3c10699ccece88c86dac3d170c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/creating-a-sticker-app-with-a-custom-layout.json": {
+      "hash": "b367660a0aa8155a2bb4c7176db9556aef8fab19cab9079998cfce87ba385478",
+      "last_checked": "2025-06-06T04:14:22.448759",
+      "status": "unchanged",
+      "etag": "W/\"4e7ad2ebe0945757698b36630b213a5c\""
+    },
+    "https://developer.apple.com/documentation/messages/creating-a-sticker-app-with-a-custom-layout": {
+      "hash": "b367660a0aa8155a2bb4c7176db9556aef8fab19cab9079998cfce87ba385478",
+      "last_checked": "2025-06-06T04:14:22.448759",
+      "status": "unchanged",
+      "etag": "62aa451a5d7938781a9ba7c4307eb338"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller.json": {
+      "hash": "a3f6617577d397ecc034864336885fbf4e51818bf9d77f17e9c45ad9c4aba6ac",
+      "last_checked": "2025-06-06T04:14:22.934986",
+      "status": "unchanged",
+      "etag": "W/\"672265e96fde0393b6ca30c6d928220c\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller": {
+      "hash": "a3f6617577d397ecc034864336885fbf4e51818bf9d77f17e9c45ad9c4aba6ac",
+      "last_checked": "2025-06-06T04:14:22.934986",
+      "status": "unchanged",
+      "etag": "ea46a11dd6daf2beddd949e077c9f0b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapptranscriptpresentation.json": {
+      "hash": "d37b680d9f97fc6dc1f8cacfd824016e042407a0680a8c1f9ab5f2286255d724",
+      "last_checked": "2025-06-06T04:14:23.269772",
+      "status": "unchanged",
+      "etag": "W/\"98e365dcb3046dfe1a3e836908ad4c6b\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapptranscriptpresentation": {
+      "hash": "d37b680d9f97fc6dc1f8cacfd824016e042407a0680a8c1f9ab5f2286255d724",
+      "last_checked": "2025-06-06T04:14:23.269772",
+      "status": "unchanged",
+      "etag": "4520a8cb27492b1e1c9a79e1bcc02ac3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationstyle.json": {
+      "hash": "3226722eebbf04eca2c051b9dc926fc0104ed1d636322cc02d20683f3aaa392e",
+      "last_checked": "2025-06-06T04:14:23.652830",
+      "status": "unchanged",
+      "etag": "W/\"577b7814d6fd0f234ad240337194c8c3\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapppresentationstyle": {
+      "hash": "3226722eebbf04eca2c051b9dc926fc0104ed1d636322cc02d20683f3aaa392e",
+      "last_checked": "2025-06-06T04:14:23.652830",
+      "status": "unchanged",
+      "etag": "746aa36805269e207a27e93b4c4ebdca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation.json": {
+      "hash": "72e95854e8c1c6a9834e4c2eb788597fe233e561e0277fd2bd3a438dde4b4997",
+      "last_checked": "2025-06-06T04:14:24.035930",
+      "status": "unchanged",
+      "etag": "W/\"3afcc2c2678d4e25b1f0e83778a009d5\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation": {
+      "hash": "72e95854e8c1c6a9834e4c2eb788597fe233e561e0277fd2bd3a438dde4b4997",
+      "last_checked": "2025-06-06T04:14:24.035930",
+      "status": "unchanged",
+      "etag": "852f4b7ff780496d4207f97424caa646"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mssticker.json": {
+      "hash": "b7d481925b2d7b4a48c21dfb9cd0ef7f7ccc820a715b28babcbcf848eceb22c7",
+      "last_checked": "2025-06-06T04:14:24.465430",
+      "status": "unchanged",
+      "etag": "W/\"50b082b998f25d1d613fddb57e3de275\""
+    },
+    "https://developer.apple.com/documentation/messages/mssticker": {
+      "hash": "b7d481925b2d7b4a48c21dfb9cd0ef7f7ccc820a715b28babcbcf848eceb22c7",
+      "last_checked": "2025-06-06T04:14:24.465430",
+      "status": "unchanged",
+      "etag": "9e9d6d723836f7d49e1ca22b92c58565"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage.json": {
+      "hash": "fac4b267416c098c08cab8477d2166bd680af75bc25b4afee978c5dab2479d2a",
+      "last_checked": "2025-06-06T04:14:24.851934",
+      "status": "unchanged",
+      "etag": "W/\"46732fd43afb9abeafca297fbab04824\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage": {
+      "hash": "fac4b267416c098c08cab8477d2166bd680af75bc25b4afee978c5dab2479d2a",
+      "last_checked": "2025-06-06T04:14:24.851934",
+      "status": "unchanged",
+      "etag": "0a89d31387679af46a60b4caec15c453"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mssession.json": {
+      "hash": "5a2fa93816f46e3aa3f8987043424d4e827d9dbdbd727ebabb48feb2b504a0f1",
+      "last_checked": "2025-06-06T04:14:25.296604",
+      "status": "unchanged",
+      "etag": "W/\"21e0f93d2636de8fdb55075f37761d9a\""
+    },
+    "https://developer.apple.com/documentation/messages/mssession": {
+      "hash": "5a2fa93816f46e3aa3f8987043424d4e827d9dbdbd727ebabb48feb2b504a0f1",
+      "last_checked": "2025-06-06T04:14:25.296604",
+      "status": "unchanged",
+      "etag": "3a7dc9294a8d3e2ad1ddd3e78ec7af22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagelayout.json": {
+      "hash": "6b231d3ed0038707f4aa76b86745f23f19843abb9e2824c13cd5f97a67168d36",
+      "last_checked": "2025-06-06T04:14:25.693670",
+      "status": "unchanged",
+      "etag": "W/\"fd794eac2d722e83e19a37e3f91e3105\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagelayout": {
+      "hash": "6b231d3ed0038707f4aa76b86745f23f19843abb9e2824c13cd5f97a67168d36",
+      "last_checked": "2025-06-06T04:14:25.693670",
+      "status": "unchanged",
+      "etag": "8bb69f1dc9815fda81a5b9f6b6d8e10c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagetemplatelayout.json": {
+      "hash": "235aae2f43916396f576eef08ecb229e60adba6968a48b4998dee80907cdef3e",
+      "last_checked": "2025-06-06T04:14:26.078717",
+      "status": "unchanged",
+      "etag": "W/\"46374efff65b81d9106ea5f070f18491\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagetemplatelayout": {
+      "hash": "235aae2f43916396f576eef08ecb229e60adba6968a48b4998dee80907cdef3e",
+      "last_checked": "2025-06-06T04:14:26.078717",
+      "status": "unchanged",
+      "etag": "d4a88b831ef5f6b7b277c6352b81f058"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagelivelayout.json": {
+      "hash": "256fe9c918155c0029600b79c3c3dce64ab425108ce9c7011eaf6b6c3bed7a77",
+      "last_checked": "2025-06-06T04:14:26.519152",
+      "status": "unchanged",
+      "etag": "W/\"22aa63283d71d59aa1dee9f3cd1e791a\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagelivelayout": {
+      "hash": "256fe9c918155c0029600b79c3c3dce64ab425108ce9c7011eaf6b6c3bed7a77",
+      "last_checked": "2025-06-06T04:14:26.519152",
+      "status": "unchanged",
+      "etag": "3773600b50ea4c7fdc1137988f132fb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/critical-messaging-api.json": {
+      "hash": "642b39965c1bd602e308a60823d9ff15998434ab5625577727db4c6a2722e123",
+      "last_checked": "2025-06-06T04:14:26.895879",
+      "status": "unchanged",
+      "etag": "W/\"390a6bd064f3322760158b9932c34ce8\""
+    },
+    "https://developer.apple.com/documentation/messages/critical-messaging-api": {
+      "hash": "642b39965c1bd602e308a60823d9ff15998434ab5625577727db4c6a2722e123",
+      "last_checked": "2025-06-06T04:14:26.895879",
+      "status": "unchanged",
+      "etag": "db4c4d7b74be1ce383f3f22bfd027180"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger.json": {
+      "hash": "7e589890bcdb23ae039f6e903768daf3098c7a45a1f011274ce9be8f7ba510c8",
+      "last_checked": "2025-06-06T04:14:27.248543",
+      "status": "unchanged",
+      "etag": "W/\"139bb85f1245294f05577f0bafd454ca\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger": {
+      "hash": "7e589890bcdb23ae039f6e903768daf3098c7a45a1f011274ce9be8f7ba510c8",
+      "last_checked": "2025-06-06T04:14:27.248543",
+      "status": "unchanged",
+      "etag": "61fc47b471816119810d7e2ddf50a604"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msrecipient.json": {
+      "hash": "ed6e9ad17685a7608c26295821446467ef4d4efb8b9b3b0ee8e09912df6210d6",
+      "last_checked": "2025-06-06T04:14:27.647228",
+      "status": "unchanged",
+      "etag": "W/\"eabb3cb79ee634f73a8836d42c343339\""
+    },
+    "https://developer.apple.com/documentation/messages/msrecipient": {
+      "hash": "ed6e9ad17685a7608c26295821446467ef4d4efb8b9b3b0ee8e09912df6210d6",
+      "last_checked": "2025-06-06T04:14:27.647228",
+      "status": "unchanged",
+      "etag": "e477bb449e06fd66c293cc4216e24074"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessage.json": {
+      "hash": "e62beb261d53949ab05097edb978bde88c5c77555823093a4a8c75278b14ec6d",
+      "last_checked": "2025-06-06T04:14:28.013938",
+      "status": "unchanged",
+      "etag": "W/\"e4fcb6ca3e9b348f2ec0a161ec34929e\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessage": {
+      "hash": "e62beb261d53949ab05097edb978bde88c5c77555823093a4a8c75278b14ec6d",
+      "last_checked": "2025-06-06T04:14:28.013938",
+      "status": "unchanged",
+      "etag": "650426c879a047276e3d25e796e0e376"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessagingauthorizationstatus.json": {
+      "hash": "e5dc462dc8bedbd8ec485947e050f83062c7e12e3aea78947ba5ebe22da0aed2",
+      "last_checked": "2025-06-06T04:14:28.464132",
+      "status": "unchanged",
+      "etag": "W/\"c37d85441a25fb37796eeefac07cb3e3\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessagingauthorizationstatus": {
+      "hash": "e5dc462dc8bedbd8ec485947e050f83062c7e12e3aea78947ba5ebe22da0aed2",
+      "last_checked": "2025-06-06T04:14:28.464132",
+      "status": "unchanged",
+      "etag": "a5b13c2eee5d75a60906c12a51000d2d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerserrordomain.json": {
+      "hash": "859b313ba2624b2c43124ca0416863eaab5aca80b6b091fda7cc67a41f3fadc8",
+      "last_checked": "2025-06-06T04:14:28.880364",
+      "status": "unchanged",
+      "etag": "W/\"d57868861cd5972535c858c12b93d001\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerserrordomain": {
+      "hash": "859b313ba2624b2c43124ca0416863eaab5aca80b6b091fda7cc67a41f3fadc8",
+      "last_checked": "2025-06-06T04:14:28.880364",
+      "status": "unchanged",
+      "etag": "f8cffc4258ad7d6e7f492de25f86c115"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageserrordomain.json": {
+      "hash": "36408a93d9c9752027d21768409ca686f6ef613e53b3a14cc203d3d6a4a66783",
+      "last_checked": "2025-06-06T04:14:29.282098",
+      "status": "unchanged",
+      "etag": "W/\"f5e10f7c882375e6100a73d1ff6b8a3e\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageserrordomain": {
+      "hash": "36408a93d9c9752027d21768409ca686f6ef613e53b3a14cc203d3d6a4a66783",
+      "last_checked": "2025-06-06T04:14:29.282098",
+      "status": "unchanged",
+      "etag": "b3d79250ea1e009243f53c72122ee82b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode.json": {
+      "hash": "90ca7874d87ded2d61a73ab4c9d50ad45bb212c642ff9e93cccdb37653432c50",
+      "last_checked": "2025-06-06T04:14:29.689839",
+      "status": "unchanged",
+      "etag": "W/\"ebbffdc85267a3594eee95da54289d30\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode": {
+      "hash": "90ca7874d87ded2d61a73ab4c9d50ad45bb212c642ff9e93cccdb37653432c50",
+      "last_checked": "2025-06-06T04:14:29.689839",
+      "status": "unchanged",
+      "etag": "10305780e3a8cd59dc2b1038d4a55f40"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessagingerror.json": {
+      "hash": "6ccde7a2704d837bcffed7675e51c0b5d4a528bace832c4918654c90b0142b68",
+      "last_checked": "2025-06-06T04:14:30.083000",
+      "status": "unchanged",
+      "etag": "W/\"d7bab3ed90422ae93fcd85c2c26919cd\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessagingerror": {
+      "hash": "6ccde7a2704d837bcffed7675e51c0b5d4a528bace832c4918654c90b0142b68",
+      "last_checked": "2025-06-06T04:14:30.083000",
+      "status": "unchanged",
+      "etag": "136d546ae43219987f5f9da7ae6903b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewcontroller/init(stickersize:).json": {
+      "hash": "0ed83b9224af15166ef25a26ad4e207116412c0ae866c60fee0c40a65912dc05",
+      "last_checked": "2025-06-06T04:14:30.462870",
+      "status": "unchanged",
+      "etag": "W/\"69b0adcd856087090506a94679530148\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserviewcontroller/init(stickersize:)": {
+      "hash": "0ed83b9224af15166ef25a26ad4e207116412c0ae866c60fee0c40a65912dc05",
+      "last_checked": "2025-06-06T04:14:30.462870",
+      "status": "unchanged",
+      "etag": "1ae308583dee6dcc91549164b7ab8ec5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewcontroller/stickerbrowserview.json": {
+      "hash": "d00bf8fd24f4c7d5bbfb25a2b12210b0855f346db429ab810cdadf6572a41a68",
+      "last_checked": "2025-06-06T04:14:30.817970",
+      "status": "unchanged",
+      "etag": "W/\"df02f8041f1df2c9aa97ce767c7fafd0\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserviewcontroller/stickerbrowserview": {
+      "hash": "d00bf8fd24f4c7d5bbfb25a2b12210b0855f346db429ab810cdadf6572a41a68",
+      "last_checked": "2025-06-06T04:14:30.817970",
+      "status": "unchanged",
+      "etag": "e27b778ac0a8b256d92e508d0cb36784"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewcontroller/stickersize.json": {
+      "hash": "18f52d3ca5ee3679b61e5a1d0a4108b69eceb8ea1746bfd34554a035d1916be2",
+      "last_checked": "2025-06-06T04:14:31.171104",
+      "status": "unchanged",
+      "etag": "W/\"2909fd20a389ef931080b12b5a49d8d9\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserviewcontroller/stickersize": {
+      "hash": "18f52d3ca5ee3679b61e5a1d0a4108b69eceb8ea1746bfd34554a035d1916be2",
+      "last_checked": "2025-06-06T04:14:31.171104",
+      "status": "unchanged",
+      "etag": "55c439fdda9ccd736f02f81f0a989da3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewdatasource.json": {
+      "hash": "67a19cb97ad35c05f64793f036c4b3cc07ac9f30488147cea8443b4ec593864b",
+      "last_checked": "2025-06-06T04:14:31.573288",
+      "status": "unchanged",
+      "etag": "W/\"88a6afc73a6289f6b45a96db9d06437c\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserviewdatasource": {
+      "hash": "67a19cb97ad35c05f64793f036c4b3cc07ac9f30488147cea8443b4ec593864b",
+      "last_checked": "2025-06-06T04:14:31.573288",
+      "status": "unchanged",
+      "etag": "9f6b3ca3254ba9d3295fbf65696f7b3e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/init(frame:).json": {
+      "hash": "c059cfd4acbf5f6e43a701855e6cb25042f20da458f90ed83b4fd171584d7b70",
+      "last_checked": "2025-06-06T04:14:31.944765",
+      "status": "unchanged",
+      "etag": "W/\"bd7cd2d353efffa712ac69b0c3aac4a7\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserview/init(frame:)": {
+      "hash": "c059cfd4acbf5f6e43a701855e6cb25042f20da458f90ed83b4fd171584d7b70",
+      "last_checked": "2025-06-06T04:14:31.944765",
+      "status": "unchanged",
+      "etag": "a7af8ad156da39741d737bc032509a4b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/init(frame:stickersize:).json": {
+      "hash": "519f50e71040cce0066eeea7d3ae49f7e195d2db70098656bd928a3e5b538da3",
+      "last_checked": "2025-06-06T04:14:32.340633",
+      "status": "unchanged",
+      "etag": "W/\"611eabda67e54857a019cb24313886e8\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserview/init(frame:stickersize:)": {
+      "hash": "519f50e71040cce0066eeea7d3ae49f7e195d2db70098656bd928a3e5b538da3",
+      "last_checked": "2025-06-06T04:14:32.340633",
+      "status": "unchanged",
+      "etag": "13ae554789a1922c42c8a983a6735dd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/datasource.json": {
+      "hash": "07882cc2f9d539cfe391dd1f6db849febb2a175e7bdf33dfd2b6c1baf142bdf7",
+      "last_checked": "2025-06-06T04:14:32.720702",
+      "status": "unchanged",
+      "etag": "W/\"e4aea42c157d8a4c5f9dbe0d5d9de5a2\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserview/datasource": {
+      "hash": "07882cc2f9d539cfe391dd1f6db849febb2a175e7bdf33dfd2b6c1baf142bdf7",
+      "last_checked": "2025-06-06T04:14:32.720702",
+      "status": "unchanged",
+      "etag": "e6e2152e47b71e5c9c6d9e9b91706c97"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/reloaddata().json": {
+      "hash": "223909fc88b0c0ee9416ba16e6d5a03900731278e754045596682783c48d0187",
+      "last_checked": "2025-06-06T04:14:33.121517",
+      "status": "unchanged",
+      "etag": "W/\"cce0df902173f6ca3ea322a6d2d4deb5\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserview/reloaddata()": {
+      "hash": "223909fc88b0c0ee9416ba16e6d5a03900731278e754045596682783c48d0187",
+      "last_checked": "2025-06-06T04:14:33.121517",
+      "status": "unchanged",
+      "etag": "707db52edb2f796cbddedb26d5ae0b40"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/contentinset.json": {
+      "hash": "4165b23faa2a2cc1d85693c5bf31dd0e95883835ac985090248e177b652c2e8c",
+      "last_checked": "2025-06-06T04:14:33.547647",
+      "status": "unchanged",
+      "etag": "W/\"2cff08c139d4255cf35c9f4d561ae61b\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserview/contentinset": {
+      "hash": "4165b23faa2a2cc1d85693c5bf31dd0e95883835ac985090248e177b652c2e8c",
+      "last_checked": "2025-06-06T04:14:33.547647",
+      "status": "unchanged",
+      "etag": "3ee1a938a54eba451f2a4ee295be15f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/contentoffset.json": {
+      "hash": "e1544568f3be52afc6ef03d145361bb5650736a347fc5a605262e897239e63cd",
+      "last_checked": "2025-06-06T04:14:33.988503",
+      "status": "unchanged",
+      "etag": "W/\"2cfe6fbdd7f1b36dac92c8bd64d2eae4\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserview/contentoffset": {
+      "hash": "e1544568f3be52afc6ef03d145361bb5650736a347fc5a605262e897239e63cd",
+      "last_checked": "2025-06-06T04:14:33.988503",
+      "status": "unchanged",
+      "etag": "85274d72004f016fd1af8a6c638781d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/setcontentoffset(_:animated:).json": {
+      "hash": "6726efa97680b00f14f5d2a14790e2598328cf7f73ee5e23140543775e8c75f2",
+      "last_checked": "2025-06-06T04:14:34.360480",
+      "status": "unchanged",
+      "etag": "W/\"ba286322d89f22a2cba02b784f97a4c3\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserview/setcontentoffset(_:animated:)": {
+      "hash": "6726efa97680b00f14f5d2a14790e2598328cf7f73ee5e23140543775e8c75f2",
+      "last_checked": "2025-06-06T04:14:34.360480",
+      "status": "unchanged",
+      "etag": "5bc078b8507291c122570a96c28af257"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/stickersize.json": {
+      "hash": "c3f635c84bd0aac72d0d11595377aeea5dbb44c72542eff6df95da7a67628d98",
+      "last_checked": "2025-06-06T04:14:34.771697",
+      "status": "unchanged",
+      "etag": "W/\"4fd090d107b95d81a65e2c512e0eb8e2\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserview/stickersize": {
+      "hash": "c3f635c84bd0aac72d0d11595377aeea5dbb44c72542eff6df95da7a67628d98",
+      "last_checked": "2025-06-06T04:14:34.771697",
+      "status": "unchanged",
+      "etag": "603119db2d6a48cd22a26c687d729cd3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/init(frame:sticker:).json": {
+      "hash": "90f2ecd60be246091ee6b17e7c70e34ed524691a9de3d9acd6e588e3703f52d2",
+      "last_checked": "2025-06-06T04:14:35.098041",
+      "status": "unchanged",
+      "etag": "W/\"9402806c5f4542336e5c294c7c0ac2de\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerview/init(frame:sticker:)": {
+      "hash": "90f2ecd60be246091ee6b17e7c70e34ed524691a9de3d9acd6e588e3703f52d2",
+      "last_checked": "2025-06-06T04:14:35.098041",
+      "status": "unchanged",
+      "etag": "a7da24ca96446c2bae502f4491bc0be8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/sticker.json": {
+      "hash": "c2564556a30cf88548ca3d0300333f62e6acc246b82255a63b8c275d1a7860ad",
+      "last_checked": "2025-06-06T04:14:35.507031",
+      "status": "unchanged",
+      "etag": "W/\"ccf150f45734b3e999c2af30b8915232\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerview/sticker": {
+      "hash": "c2564556a30cf88548ca3d0300333f62e6acc246b82255a63b8c275d1a7860ad",
+      "last_checked": "2025-06-06T04:14:35.507031",
+      "status": "unchanged",
+      "etag": "c6e85ab909922fd003bf9010c3fa1957"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/animationduration.json": {
+      "hash": "519be717aaf34c1f43d18cef5d468b4329e445ff192f60211885af959a00ad8f",
+      "last_checked": "2025-06-06T04:14:35.894497",
+      "status": "unchanged",
+      "etag": "W/\"9ef85c236945811e928ce0d2e4c087e2\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerview/animationduration": {
+      "hash": "519be717aaf34c1f43d18cef5d468b4329e445ff192f60211885af959a00ad8f",
+      "last_checked": "2025-06-06T04:14:35.894497",
+      "status": "unchanged",
+      "etag": "e743195987f2e75690a532460b163077"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/isanimating().json": {
+      "hash": "024b8e98fb1ca0c2adca469287bca5063c30dd77505098c41d858b48d23a9b89",
+      "last_checked": "2025-06-06T04:14:36.267469",
+      "status": "unchanged",
+      "etag": "W/\"b7d70742a499ab5e947c915411f82bc4\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerview/isanimating()": {
+      "hash": "024b8e98fb1ca0c2adca469287bca5063c30dd77505098c41d858b48d23a9b89",
+      "last_checked": "2025-06-06T04:14:36.267469",
+      "status": "unchanged",
+      "etag": "a5e124bdd8f51e934f1ecdac2754cb16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/startanimating().json": {
+      "hash": "6c5320eeb8bc989b55efcb01aa8bc3069752456a4f0b1d0428e4cc5d78b8a9b8",
+      "last_checked": "2025-06-06T04:14:36.682823",
+      "status": "unchanged",
+      "etag": "W/\"316b1ffcc1b9cf20469f839f548797ad\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerview/startanimating()": {
+      "hash": "6c5320eeb8bc989b55efcb01aa8bc3069752456a4f0b1d0428e4cc5d78b8a9b8",
+      "last_checked": "2025-06-06T04:14:36.682823",
+      "status": "unchanged",
+      "etag": "1a5fe2d18c62254a7674a688ca94ab79"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/stopanimating().json": {
+      "hash": "0d3f45e820279b737026d8fb911a30f38fe1398e7d1cd95d3bb087ad6f3ab79d",
+      "last_checked": "2025-06-06T04:14:37.120941",
+      "status": "unchanged",
+      "etag": "W/\"b194a94a8e37e1431ec40805928447be\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerview/stopanimating()": {
+      "hash": "0d3f45e820279b737026d8fb911a30f38fe1398e7d1cd95d3bb087ad6f3ab79d",
+      "last_checked": "2025-06-06T04:14:37.120941",
+      "status": "unchanged",
+      "etag": "57eb1cc83c2ff7206a27fb6c63756aeb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickersize/small.json": {
+      "hash": "481debc3151750f9b2c57b73ee04c407f8cfcf93bf611f4b1ac478d9dd2130fa",
+      "last_checked": "2025-06-06T04:14:37.469181",
+      "status": "unchanged",
+      "etag": "W/\"0f56a0257fd7aef736dca126b0193b1f\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickersize/small": {
+      "hash": "481debc3151750f9b2c57b73ee04c407f8cfcf93bf611f4b1ac478d9dd2130fa",
+      "last_checked": "2025-06-06T04:14:37.469181",
+      "status": "unchanged",
+      "etag": "488934e49735a6e053c8079b712c5a46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickersize/regular.json": {
+      "hash": "345f4b9a8bfd8082607d123fa0df4aa23375b604e687a14a0000db7ae1212f11",
+      "last_checked": "2025-06-06T04:14:37.860255",
+      "status": "unchanged",
+      "etag": "W/\"f13d0adeba22300887199edb880567b2\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickersize/regular": {
+      "hash": "345f4b9a8bfd8082607d123fa0df4aa23375b604e687a14a0000db7ae1212f11",
+      "last_checked": "2025-06-06T04:14:37.860255",
+      "status": "unchanged",
+      "etag": "ba8065d8a055238cfeeb094b600da8a0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickersize/large.json": {
+      "hash": "351ac9fd402879ff9b05d615522c1b136c760739854cc264c730fb48e556d0c7",
+      "last_checked": "2025-06-06T04:14:38.319883",
+      "status": "unchanged",
+      "etag": "W/\"c60c4e0d45406ebf44f8f74c272cec27\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickersize/large": {
+      "hash": "351ac9fd402879ff9b05d615522c1b136c760739854cc264c730fb48e556d0c7",
+      "last_checked": "2025-06-06T04:14:38.319883",
+      "status": "unchanged",
+      "etag": "7a1071b4265bffcd6d5481a3241d4c60"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickersize/init(rawvalue:).json": {
+      "hash": "b2ecb0bc148644f9ec3e421486c2dd5ebed7917f6b741955ef0b3328cedc2e99",
+      "last_checked": "2025-06-06T04:14:38.722403",
+      "status": "unchanged",
+      "etag": "W/\"04cea2d99bf1eff0148a22dd28f33ac6\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickersize/init(rawvalue:)": {
+      "hash": "b2ecb0bc148644f9ec3e421486c2dd5ebed7917f6b741955ef0b3328cedc2e99",
+      "last_checked": "2025-06-06T04:14:38.722403",
+      "status": "unchanged",
+      "etag": "fcc86cedde524ffb69457bb7679db7eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/activeconversation.json": {
+      "hash": "505c60237ba47af0f287947608a30c8897cd074b3595c32670ade0751626c8b4",
+      "last_checked": "2025-06-06T04:14:39.127607",
+      "status": "unchanged",
+      "etag": "W/\"2fa33a2c262ae6dbbf913120eec56078\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/activeconversation": {
+      "hash": "505c60237ba47af0f287947608a30c8897cd074b3595c32670ade0751626c8b4",
+      "last_checked": "2025-06-06T04:14:39.127607",
+      "status": "unchanged",
+      "etag": "cdb12e240ff56f7cb77b71d873f78d8f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/dismiss().json": {
+      "hash": "e732cfbbc16465300bae9ee8c519da70e3270021f78735ae8f02c0452ac80730",
+      "last_checked": "2025-06-06T04:14:39.488936",
+      "status": "unchanged",
+      "etag": "W/\"44ae754055d969e78afc8466b314dc12\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/dismiss()": {
+      "hash": "e732cfbbc16465300bae9ee8c519da70e3270021f78735ae8f02c0452ac80730",
+      "last_checked": "2025-06-06T04:14:39.488936",
+      "status": "unchanged",
+      "etag": "3f1e5bddab298b8c32073bcf5bd3fbb2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/willbecomeactive(with:).json": {
+      "hash": "ff2fd5a5683c47786ab667c9c59383d41efc907df16865bceec91b4b789da8b0",
+      "last_checked": "2025-06-06T04:14:39.882757",
+      "status": "unchanged",
+      "etag": "W/\"fed87e604a8b883f09cd752bd26f1a22\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willbecomeactive(with:)": {
+      "hash": "ff2fd5a5683c47786ab667c9c59383d41efc907df16865bceec91b4b789da8b0",
+      "last_checked": "2025-06-06T04:14:39.882757",
+      "status": "unchanged",
+      "etag": "dc977f4ed245d262c899ef007ba24052"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didbecomeactive(with:).json": {
+      "hash": "ecf2a81bf8203c02880760c2dbc9d544fffd2d00aa548ae9133d18d418e3c45b",
+      "last_checked": "2025-06-06T04:14:40.252932",
+      "status": "unchanged",
+      "etag": "W/\"1a17803c2d72317aa8cda5b2d1458bf4\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didbecomeactive(with:)": {
+      "hash": "ecf2a81bf8203c02880760c2dbc9d544fffd2d00aa548ae9133d18d418e3c45b",
+      "last_checked": "2025-06-06T04:14:40.252932",
+      "status": "unchanged",
+      "etag": "58fdcea50c1641134898c5f93d23229f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/willresignactive(with:).json": {
+      "hash": "ce9c9a7ad52372a1a15c7bd93c327d731970f7cb7af0c57d4784a7d8ba7fc5b8",
+      "last_checked": "2025-06-06T04:14:40.610328",
+      "status": "unchanged",
+      "etag": "W/\"5330cbabc975b0bd3be5573e711f6452\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willresignactive(with:)": {
+      "hash": "ce9c9a7ad52372a1a15c7bd93c327d731970f7cb7af0c57d4784a7d8ba7fc5b8",
+      "last_checked": "2025-06-06T04:14:40.610328",
+      "status": "unchanged",
+      "etag": "97648d5c06f7cafcf4c696d256e992fa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didresignactive(with:).json": {
+      "hash": "b313d25cca16ae3f159652cf6fcc98418b5003f037143b086c470d936f5669c3",
+      "last_checked": "2025-06-06T04:14:40.990441",
+      "status": "unchanged",
+      "etag": "W/\"edfa672e0408d4e3643e49acab84e9d0\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didresignactive(with:)": {
+      "hash": "b313d25cca16ae3f159652cf6fcc98418b5003f037143b086c470d936f5669c3",
+      "last_checked": "2025-06-06T04:14:40.990441",
+      "status": "unchanged",
+      "etag": "d81d2330bf380b5ad0420419c075ae91"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/willselect(_:conversation:).json": {
+      "hash": "4e161afa3e1f664467151fe573000b04c33161d45b73f5ce0a206a3c10650c6d",
+      "last_checked": "2025-06-06T04:14:41.323400",
+      "status": "unchanged",
+      "etag": "W/\"ffc9ce5dfe8ee84ab16eae806fbe9347\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willselect(_:conversation:)": {
+      "hash": "4e161afa3e1f664467151fe573000b04c33161d45b73f5ce0a206a3c10650c6d",
+      "last_checked": "2025-06-06T04:14:41.323400",
+      "status": "unchanged",
+      "etag": "71e8613eb32165ecfe42200c1c193ec3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didselect(_:conversation:).json": {
+      "hash": "1e07381d388a0bdfb57c4a96425962ba86347dbe5ec92f3f562e6c9eb3607c68",
+      "last_checked": "2025-06-06T04:14:41.691286",
+      "status": "unchanged",
+      "etag": "W/\"c126620ef1eb27bb44ab086b65476eed\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didselect(_:conversation:)": {
+      "hash": "1e07381d388a0bdfb57c4a96425962ba86347dbe5ec92f3f562e6c9eb3607c68",
+      "last_checked": "2025-06-06T04:14:41.691286",
+      "status": "unchanged",
+      "etag": "f979a85e66bd3f594b31b8545ff5c880"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didstartsending(_:conversation:).json": {
+      "hash": "c8dbf2be61799ec08bbb3e9bae5af9e1d9618f09a3688ce2a12bbca8acbc22f6",
+      "last_checked": "2025-06-06T04:14:42.476651",
+      "status": "unchanged",
+      "etag": "W/\"4bea2cdda523019fb681e8830b6aad0f\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didstartsending(_:conversation:)": {
+      "hash": "c8dbf2be61799ec08bbb3e9bae5af9e1d9618f09a3688ce2a12bbca8acbc22f6",
+      "last_checked": "2025-06-06T04:14:42.476651",
+      "status": "unchanged",
+      "etag": "f1b051348cfcb36a965e1e10df50aa6d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didcancelsending(_:conversation:).json": {
+      "hash": "acb36d7f7c89ebfc9ff075055bff76aa57e0cabd8e83c225e6c8f3ad6277c41a",
+      "last_checked": "2025-06-06T04:14:42.853291",
+      "status": "unchanged",
+      "etag": "W/\"ac096e2ac9aedfca9b4661624c88fb1a\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didcancelsending(_:conversation:)": {
+      "hash": "acb36d7f7c89ebfc9ff075055bff76aa57e0cabd8e83c225e6c8f3ad6277c41a",
+      "last_checked": "2025-06-06T04:14:42.853291",
+      "status": "unchanged",
+      "etag": "a24561ceaecba16567285436418c6d63"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/presentationstyle.json": {
+      "hash": "4b98c704fdae5228b8d7dc8d9451676a2b10f3d67d388d4c7968f8a2ea66664b",
+      "last_checked": "2025-06-06T04:14:43.209103",
+      "status": "unchanged",
+      "etag": "W/\"65af81a451ef5cda6a7ac99c3993d500\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/presentationstyle": {
+      "hash": "4b98c704fdae5228b8d7dc8d9451676a2b10f3d67d388d4c7968f8a2ea66664b",
+      "last_checked": "2025-06-06T04:14:43.209103",
+      "status": "unchanged",
+      "etag": "597260c8cbbbcc92340810807a32ebf2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/requestpresentationstyle(_:).json": {
+      "hash": "3fdae17453051bf1bf0a52a488f9958acb6ebc103d5075dc98c396e607dc2e61",
+      "last_checked": "2025-06-06T04:14:43.577387",
+      "status": "unchanged",
+      "etag": "W/\"b54977ad623cc4498961e0d30e20f702\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/requestpresentationstyle(_:)": {
+      "hash": "3fdae17453051bf1bf0a52a488f9958acb6ebc103d5075dc98c396e607dc2e61",
+      "last_checked": "2025-06-06T04:14:43.577387",
+      "status": "unchanged",
+      "etag": "7a7762d1f45b2cb02d21388094d992b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didtransition(to:).json": {
+      "hash": "9cb19da29fcf08c77452ef11cec915aecf79c9d8eab40e3f154afc19f094c7f7",
+      "last_checked": "2025-06-06T04:14:44.352811",
+      "status": "unchanged",
+      "etag": "W/\"d99882cc7e59db148ef5092693226906\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didtransition(to:)": {
+      "hash": "9cb19da29fcf08c77452ef11cec915aecf79c9d8eab40e3f154afc19f094c7f7",
+      "last_checked": "2025-06-06T04:14:44.352811",
+      "status": "unchanged",
+      "etag": "dbf5484640dd74c40b54703b8be698a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/presentationcontext.json": {
+      "hash": "db3e8fd6719bb0bfc5693abb3321cfc1017c0d17db1c6c6cfb1a34ae77b3cd9f",
+      "last_checked": "2025-06-06T04:14:44.710130",
+      "status": "unchanged",
+      "etag": "W/\"813792306eea0e4bca1704fc232e298b\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/presentationcontext": {
+      "hash": "db3e8fd6719bb0bfc5693abb3321cfc1017c0d17db1c6c6cfb1a34ae77b3cd9f",
+      "last_checked": "2025-06-06T04:14:44.710130",
+      "status": "unchanged",
+      "etag": "d5693f3f6c75fe0048c9e822fd4d432c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationcontext.json": {
+      "hash": "c5176c99f42d7a8deb48e470a54156beac3f5bd8b2f9329f459ef238726b4775",
+      "last_checked": "2025-06-06T04:14:45.084889",
+      "status": "unchanged",
+      "etag": "W/\"fe2eaa7ab0e474b20d49218a67b82676\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapppresentationcontext": {
+      "hash": "c5176c99f42d7a8deb48e470a54156beac3f5bd8b2f9329f459ef238726b4775",
+      "last_checked": "2025-06-06T04:14:45.084889",
+      "status": "unchanged",
+      "etag": "19e03e84d483e8120f84208e79e9e763"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapptranscriptpresentation/contentsizethatfits(_:).json": {
+      "hash": "2df0c59033bf3f68befacfc606390ec067f28d0f231f6079fe274366fa83fe6e",
+      "last_checked": "2025-06-06T04:14:45.460032",
+      "status": "unchanged",
+      "etag": "W/\"2d0d74ee276d9c67477aef4da1c5462f\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapptranscriptpresentation/contentsizethatfits(_:)": {
+      "hash": "2df0c59033bf3f68befacfc606390ec067f28d0f231f6079fe274366fa83fe6e",
+      "last_checked": "2025-06-06T04:14:45.460032",
+      "status": "unchanged",
+      "etag": "01134ac13d6a236e5095f0c9c8b0ef3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationstyle/compact.json": {
+      "hash": "b3875ea1e0cfb9f9f9fae60b47a9b612ab29eb55490b4bc4afae7f41477e89c5",
+      "last_checked": "2025-06-06T04:14:45.843471",
+      "status": "unchanged",
+      "etag": "W/\"3e11d9be73341092e6d2644c46d787b3\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/compact": {
+      "hash": "b3875ea1e0cfb9f9f9fae60b47a9b612ab29eb55490b4bc4afae7f41477e89c5",
+      "last_checked": "2025-06-06T04:14:45.843471",
+      "status": "unchanged",
+      "etag": "f77139038e0d1ed33ade4283f76d7b15"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationstyle/expanded.json": {
+      "hash": "1ea8620ed1bbbb1eecc8158f807063e3bbc84da8d8e1d744d60598f7c3a22309",
+      "last_checked": "2025-06-06T04:14:46.193110",
+      "status": "unchanged",
+      "etag": "W/\"cc88aa7756728cc6013490f0471c5010\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/expanded": {
+      "hash": "1ea8620ed1bbbb1eecc8158f807063e3bbc84da8d8e1d744d60598f7c3a22309",
+      "last_checked": "2025-06-06T04:14:46.193110",
+      "status": "unchanged",
+      "etag": "39aaf6bfb6fe4ea4394acb420a9edc4f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationstyle/transcript.json": {
+      "hash": "9135d359f003f782de242de9aa006ee7a819c0838e8673145024db3bd9c92f5a",
+      "last_checked": "2025-06-06T04:14:46.548232",
+      "status": "unchanged",
+      "etag": "W/\"1e89d8590716e2ec62be69e86ad03ebf\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/transcript": {
+      "hash": "9135d359f003f782de242de9aa006ee7a819c0838e8673145024db3bd9c92f5a",
+      "last_checked": "2025-06-06T04:14:46.548232",
+      "status": "unchanged",
+      "etag": "c038c551b8144d45cdf89e09c915f366"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationstyle/init(rawvalue:).json": {
+      "hash": "b38981b0c540183d0d5a3a76525cb3be4d17bf09bccb2db6247a1fed57e07283",
+      "last_checked": "2025-06-06T04:14:46.878304",
+      "status": "unchanged",
+      "etag": "W/\"3da3e03c2ede4ce6dce618f062718b23\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/init(rawvalue:)": {
+      "hash": "b38981b0c540183d0d5a3a76525cb3be4d17bf09bccb2db6247a1fed57e07283",
+      "last_checked": "2025-06-06T04:14:46.878304",
+      "status": "unchanged",
+      "etag": "4f6c93ee0b53ec5c77f9adc57da79c97"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/localparticipantidentifier.json": {
+      "hash": "d0aeeaf7a3904ce9f2286992a3f5a32b20ef34fe2f1596e6671060a03da3d1b1",
+      "last_checked": "2025-06-06T04:14:47.632987",
+      "status": "unchanged",
+      "etag": "W/\"6a317121d4266d3dde50e2496bf52a57\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/localparticipantidentifier": {
+      "hash": "d0aeeaf7a3904ce9f2286992a3f5a32b20ef34fe2f1596e6671060a03da3d1b1",
+      "last_checked": "2025-06-06T04:14:47.632987",
+      "status": "unchanged",
+      "etag": "3056aa095721282d2fc258bc0d041e78"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/remoteparticipantidentifiers.json": {
+      "hash": "e063f54d6c83a3d74577369232381865d9b92920cad6a63f07106684f6930a6b",
+      "last_checked": "2025-06-06T04:14:47.998770",
+      "status": "unchanged",
+      "etag": "W/\"690e1d09f210ebc1c3fa5ecea246553c\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/remoteparticipantidentifiers": {
+      "hash": "e063f54d6c83a3d74577369232381865d9b92920cad6a63f07106684f6930a6b",
+      "last_checked": "2025-06-06T04:14:47.998770",
+      "status": "unchanged",
+      "etag": "f4c88826f7cb3facf942ab3a64917093"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/sendattachment(_:withalternatefilename:completionhandler:).json": {
+      "hash": "ed2cf785edf7dc298d10a2bc0c135bf8d3c7d788a61143d421333bd90bc71ad9",
+      "last_checked": "2025-06-06T04:14:49.915474",
+      "status": "unchanged",
+      "etag": "W/\"20b8c6541ac872526ada5eacd10fde84\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/sendattachment(_:withalternatefilename:completionhandler:)": {
+      "hash": "ed2cf785edf7dc298d10a2bc0c135bf8d3c7d788a61143d421333bd90bc71ad9",
+      "last_checked": "2025-06-06T04:14:49.915474",
+      "status": "unchanged",
+      "etag": "5860e0e28d76e7ebc4a8cc40e7c84bf2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/send(_:completionhandler:)-9krz.json": {
+      "hash": "45d18fd293d63e4f0cab76f246f643313b3edb0b0c265671915be644ebb8b8f6",
+      "last_checked": "2025-06-06T04:14:50.271368",
+      "status": "unchanged",
+      "etag": "W/\"d5307cd4f16a0999f0e58aa2c40d2ef9\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/send(_:completionhandler:)-9krz": {
+      "hash": "45d18fd293d63e4f0cab76f246f643313b3edb0b0c265671915be644ebb8b8f6",
+      "last_checked": "2025-06-06T04:14:50.271368",
+      "status": "unchanged",
+      "etag": "3316af33fa9d1a6c81609e67c0bdef03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/send(_:completionhandler:)-4kje0.json": {
+      "hash": "9ace995413286a4124da657fed18a99759b4272ab2dfcea7663804baaa598d28",
+      "last_checked": "2025-06-06T04:14:50.654355",
+      "status": "unchanged",
+      "etag": "W/\"850557c16ae625384cb34798fad0ad12\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/send(_:completionhandler:)-4kje0": {
+      "hash": "9ace995413286a4124da657fed18a99759b4272ab2dfcea7663804baaa598d28",
+      "last_checked": "2025-06-06T04:14:50.654355",
+      "status": "unchanged",
+      "etag": "f874be66f37e9fcc156c13dc8684067a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/sendtext(_:completionhandler:).json": {
+      "hash": "6266d48d57fd7f8f62e1a08ce84aed24ec1e9dd219747de8e584d72b54967a4a",
+      "last_checked": "2025-06-06T04:14:51.048939",
+      "status": "unchanged",
+      "etag": "W/\"c6997569abea7fcc477330e18738a806\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/sendtext(_:completionhandler:)": {
+      "hash": "6266d48d57fd7f8f62e1a08ce84aed24ec1e9dd219747de8e584d72b54967a4a",
+      "last_checked": "2025-06-06T04:14:51.048939",
+      "status": "unchanged",
+      "etag": "5198ddffbb036c4783c9dda0899f95ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mssticker/init(contentsoffileurl:localizeddescription:).json": {
+      "hash": "9a8138b6db51de12f0b4ccfcd47012a15c8c03b930b75138888f0fd5b10997a3",
+      "last_checked": "2025-06-06T04:14:51.445839",
+      "status": "unchanged",
+      "etag": "W/\"180183460689bcae9e26fc77660ef359\""
+    },
+    "https://developer.apple.com/documentation/messages/mssticker/init(contentsoffileurl:localizeddescription:)": {
+      "hash": "9a8138b6db51de12f0b4ccfcd47012a15c8c03b930b75138888f0fd5b10997a3",
+      "last_checked": "2025-06-06T04:14:51.445839",
+      "status": "unchanged",
+      "etag": "e954207892595a0f2f2288dca4c253d5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mssticker/imagefileurl.json": {
+      "hash": "24574bf5d3c00be7ae53b6ebfc4a92a1a5ba16005e34be13335ca60bef9b5d5b",
+      "last_checked": "2025-06-06T04:14:51.784538",
+      "status": "unchanged",
+      "etag": "W/\"d9828a38878ae50a2d47f63edd2dd9e1\""
+    },
+    "https://developer.apple.com/documentation/messages/mssticker/imagefileurl": {
+      "hash": "24574bf5d3c00be7ae53b6ebfc4a92a1a5ba16005e34be13335ca60bef9b5d5b",
+      "last_checked": "2025-06-06T04:14:51.784538",
+      "status": "unchanged",
+      "etag": "6b52ba82ad4cad56122a64ab9044966a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mssticker/localizeddescription.json": {
+      "hash": "91f8d7eddebdcdcc3d0475a4ca69053baf52ebee03e2b82ab4b4f8a82499fca9",
+      "last_checked": "2025-06-06T04:14:52.197203",
+      "status": "unchanged",
+      "etag": "W/\"2534c6f6f915f312ff31d3c2a9abfe1f\""
+    },
+    "https://developer.apple.com/documentation/messages/mssticker/localizeddescription": {
+      "hash": "91f8d7eddebdcdcc3d0475a4ca69053baf52ebee03e2b82ab4b4f8a82499fca9",
+      "last_checked": "2025-06-06T04:14:52.197203",
+      "status": "unchanged",
+      "etag": "350b4214009149e9a0a8c68cfa8d2ce7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/init().json": {
+      "hash": "ff798f6dd8c8c79222974a6cb109c0853b3f12b8e7c0ba175b3d57aab5e43340",
+      "last_checked": "2025-06-06T04:14:52.569108",
+      "status": "unchanged",
+      "etag": "W/\"0da0c0239615dbb7127965231e9763f6\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/init()": {
+      "hash": "ff798f6dd8c8c79222974a6cb109c0853b3f12b8e7c0ba175b3d57aab5e43340",
+      "last_checked": "2025-06-06T04:14:52.569108",
+      "status": "unchanged",
+      "etag": "d00777e03ffb2dbe2ad873c9e9259ab6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/init(session:).json": {
+      "hash": "07e3997213d0ec863f5a8ce81493a3a0f8502ad5e56027f89a1769fb100904b3",
+      "last_checked": "2025-06-06T04:14:52.938022",
+      "status": "unchanged",
+      "etag": "W/\"5bcc768e0d1edbb96a5619ef072313d9\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/init(session:)": {
+      "hash": "07e3997213d0ec863f5a8ce81493a3a0f8502ad5e56027f89a1769fb100904b3",
+      "last_checked": "2025-06-06T04:14:52.938022",
+      "status": "unchanged",
+      "etag": "af7abd46a3d8ceb6e5f8c866858fc81c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/accessibilitylabel.json": {
+      "hash": "c05679891888387d2cfc7492397ab2030b850a305f00d59f439443be641dedc1",
+      "last_checked": "2025-06-06T04:14:53.295501",
+      "status": "unchanged",
+      "etag": "W/\"523121b475442f93a1fcc445f06bbc4d\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/accessibilitylabel": {
+      "hash": "c05679891888387d2cfc7492397ab2030b850a305f00d59f439443be641dedc1",
+      "last_checked": "2025-06-06T04:14:53.295501",
+      "status": "unchanged",
+      "etag": "3b813ff68fbaee6a558c1a082483fd23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/error.json": {
+      "hash": "a19ae397e022ce3fe0e34db28a853806ac72eb22f79c57347af6aa61b6e9c0e7",
+      "last_checked": "2025-06-06T04:14:53.713495",
+      "status": "unchanged",
+      "etag": "W/\"77297c3bce7c06a36214a20e2653aa35\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/error": {
+      "hash": "a19ae397e022ce3fe0e34db28a853806ac72eb22f79c57347af6aa61b6e9c0e7",
+      "last_checked": "2025-06-06T04:14:53.713495",
+      "status": "unchanged",
+      "etag": "95dfd1128f894718819baf75f5ce4441"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/ispending.json": {
+      "hash": "60100a15a9b8ee0829894e20d53cfc9d0d65c390602888455bb6f239d2b296ca",
+      "last_checked": "2025-06-06T04:14:54.052975",
+      "status": "unchanged",
+      "etag": "W/\"62571140db4c371d144f337beb84976f\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/ispending": {
+      "hash": "60100a15a9b8ee0829894e20d53cfc9d0d65c390602888455bb6f239d2b296ca",
+      "last_checked": "2025-06-06T04:14:54.052975",
+      "status": "unchanged",
+      "etag": "4959d1fa96f7de6866dd5bcc21ed50f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/layout.json": {
+      "hash": "05480957efdd49c8da1ed4c1af732511527304f5413d6cec3ca76af5861a9ecc",
+      "last_checked": "2025-06-06T04:14:54.435605",
+      "status": "unchanged",
+      "etag": "W/\"4e86c99fcd998380fa9d9d647be80b43\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/layout": {
+      "hash": "05480957efdd49c8da1ed4c1af732511527304f5413d6cec3ca76af5861a9ecc",
+      "last_checked": "2025-06-06T04:14:54.435605",
+      "status": "unchanged",
+      "etag": "1cb13ba3fa8b2aadf5a14370f2edf77a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/senderparticipantidentifier.json": {
+      "hash": "7f6e3610d1879c16ab5b8a90885ff0d15d8eb756b6061c50461155a623d074f6",
+      "last_checked": "2025-06-06T04:14:54.842536",
+      "status": "unchanged",
+      "etag": "W/\"6d3994da059e98e68d768cde0961839d\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/senderparticipantidentifier": {
+      "hash": "7f6e3610d1879c16ab5b8a90885ff0d15d8eb756b6061c50461155a623d074f6",
+      "last_checked": "2025-06-06T04:14:54.842536",
+      "status": "unchanged",
+      "etag": "777c33b525f03c9f782b9b6825654dd2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/session.json": {
+      "hash": "e5032b77cbf09d345ff6205ab30ef2d62869b7420cfad3de4a993674ad6e70b3",
+      "last_checked": "2025-06-06T04:14:55.214798",
+      "status": "unchanged",
+      "etag": "W/\"11287700a4691960b2327ae5fe5f822c\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/session": {
+      "hash": "e5032b77cbf09d345ff6205ab30ef2d62869b7420cfad3de4a993674ad6e70b3",
+      "last_checked": "2025-06-06T04:14:55.214798",
+      "status": "unchanged",
+      "etag": "1c4f90b423d3a865147a76d0f6bff0d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/shouldexpire.json": {
+      "hash": "5aa2af937e971a4208de9d3c1b898aa9e2d4d242aaf3f137ef6b380af2b29ce0",
+      "last_checked": "2025-06-06T04:14:55.602230",
+      "status": "unchanged",
+      "etag": "W/\"e3b99d6d3521f9581a8bd6d7bff1986f\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/shouldexpire": {
+      "hash": "5aa2af937e971a4208de9d3c1b898aa9e2d4d242aaf3f137ef6b380af2b29ce0",
+      "last_checked": "2025-06-06T04:14:55.602230",
+      "status": "unchanged",
+      "etag": "f3497b0ebd4259df322a33b170bda915"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/summarytext.json": {
+      "hash": "a1c199a4df8d78f70bfe6fec948e9bcb71bb88a73aa02e8e240214d9ccbbda92",
+      "last_checked": "2025-06-06T04:14:56.109424",
+      "status": "unchanged",
+      "etag": "W/\"fd8e1e218066777b825f91127daf46f8\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/summarytext": {
+      "hash": "a1c199a4df8d78f70bfe6fec948e9bcb71bb88a73aa02e8e240214d9ccbbda92",
+      "last_checked": "2025-06-06T04:14:56.109424",
+      "status": "unchanged",
+      "etag": "e8b0c53179ca38bad436fc7f4f579985"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/url.json": {
+      "hash": "5f37ba722366d79d9049f0da490de1a9392648e42281797191d50d55087d7ecb",
+      "last_checked": "2025-06-06T04:14:56.514757",
+      "status": "unchanged",
+      "etag": "W/\"3d8d1facdd8f83a321c0976f751be572\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessage/url": {
+      "hash": "5f37ba722366d79d9049f0da490de1a9392648e42281797191d50d55087d7ecb",
+      "last_checked": "2025-06-06T04:14:56.514757",
+      "status": "unchanged",
+      "etag": "4785dcda4e520edbcbb94428395c5b36"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagetemplatelayout/image.json": {
+      "hash": "154e426e991428112a6ab95fcb6688a5cbcdbaaec5b64688443f5976e0e81858",
+      "last_checked": "2025-06-06T04:14:56.862404",
+      "status": "unchanged",
+      "etag": "W/\"3edafe95bf94e1dc8d1d0b6ee71538bf\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagetemplatelayout/image": {
+      "hash": "154e426e991428112a6ab95fcb6688a5cbcdbaaec5b64688443f5976e0e81858",
+      "last_checked": "2025-06-06T04:14:56.862404",
+      "status": "unchanged",
+      "etag": "2c48c85e74ad7665b6a5d33d17a0f2d5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagetemplatelayout/mediafileurl.json": {
+      "hash": "2238e93970396fc91cc84322f7311ed88795da6c8402597a98325f70a8dff5e1",
+      "last_checked": "2025-06-06T04:14:57.198475",
+      "status": "unchanged",
+      "etag": "W/\"d70a7a38b7f8213d281c2a43a9803eca\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagetemplatelayout/mediafileurl": {
+      "hash": "2238e93970396fc91cc84322f7311ed88795da6c8402597a98325f70a8dff5e1",
+      "last_checked": "2025-06-06T04:14:57.198475",
+      "status": "unchanged",
+      "etag": "c6b60f56e184692ad1a3e350c0d67551"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagetemplatelayout/imagetitle.json": {
+      "hash": "3439ba1d1fbc47c6d6130c6cbbd370dab368cb6a5b58f10d1e1a6a6b7bbf6d62",
+      "last_checked": "2025-06-06T04:14:57.546818",
+      "status": "unchanged",
+      "etag": "W/\"22b30bf768f7e3fbb36cd2d6087c34c1\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagetemplatelayout/imagetitle": {
+      "hash": "3439ba1d1fbc47c6d6130c6cbbd370dab368cb6a5b58f10d1e1a6a6b7bbf6d62",
+      "last_checked": "2025-06-06T04:14:57.546818",
+      "status": "unchanged",
+      "etag": "d048c986bfc90d82e0b75e71ad0bdc3d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagetemplatelayout/imagesubtitle.json": {
+      "hash": "0b14f55ce04a8416e61a1ecddec9b2d91e10e98975be83a3bad721da1f8e88d9",
+      "last_checked": "2025-06-06T04:14:57.976704",
+      "status": "unchanged",
+      "etag": "W/\"db9d7eb0d42a36fd264911a3052be3f3\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagetemplatelayout/imagesubtitle": {
+      "hash": "0b14f55ce04a8416e61a1ecddec9b2d91e10e98975be83a3bad721da1f8e88d9",
+      "last_checked": "2025-06-06T04:14:57.976704",
+      "status": "unchanged",
+      "etag": "45adf1a1eac295ca424350d9804811ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagetemplatelayout/caption.json": {
+      "hash": "3d6226124c6a72a0b1ad13f24bac3cf0f4a3adc70f14ea5cc1017826253bf2f5",
+      "last_checked": "2025-06-06T04:14:58.317660",
+      "status": "unchanged",
+      "etag": "W/\"cb1d52dddd81d7aae6cf89c45b174099\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagetemplatelayout/caption": {
+      "hash": "3d6226124c6a72a0b1ad13f24bac3cf0f4a3adc70f14ea5cc1017826253bf2f5",
+      "last_checked": "2025-06-06T04:14:58.317660",
+      "status": "unchanged",
+      "etag": "427ac84e3a6cb131be43a2e6022c5c2f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagetemplatelayout/subcaption.json": {
+      "hash": "000a8235ad4106b9cb4a5c9a399e694210dfd027cee94a07bd11b1d0961da3a5",
+      "last_checked": "2025-06-06T04:14:58.683932",
+      "status": "unchanged",
+      "etag": "W/\"040afcd7849232c73dbc3ad2c79299b3\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagetemplatelayout/subcaption": {
+      "hash": "000a8235ad4106b9cb4a5c9a399e694210dfd027cee94a07bd11b1d0961da3a5",
+      "last_checked": "2025-06-06T04:14:58.683932",
+      "status": "unchanged",
+      "etag": "902500cace2ffbaf594198b9aa88d250"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagetemplatelayout/trailingcaption.json": {
+      "hash": "ba406af9a5f5d50e99dbd4dfde9da70bcd2c562a6ab14cde02e1764060a26cad",
+      "last_checked": "2025-06-06T04:14:59.024047",
+      "status": "unchanged",
+      "etag": "W/\"184f0eacbf371fdaae07ac76a55db67e\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagetemplatelayout/trailingcaption": {
+      "hash": "ba406af9a5f5d50e99dbd4dfde9da70bcd2c562a6ab14cde02e1764060a26cad",
+      "last_checked": "2025-06-06T04:14:59.024047",
+      "status": "unchanged",
+      "etag": "8374124e811fe10185cc52715d407d93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagetemplatelayout/trailingsubcaption.json": {
+      "hash": "18ef0e9b5335bf617e27c2b235a00ab69038e9ac32cdbdcab64e63bf9fe07dfb",
+      "last_checked": "2025-06-06T04:14:59.389898",
+      "status": "unchanged",
+      "etag": "W/\"613344d6e6e46e0468cab3cfac455e2d\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagetemplatelayout/trailingsubcaption": {
+      "hash": "18ef0e9b5335bf617e27c2b235a00ab69038e9ac32cdbdcab64e63bf9fe07dfb",
+      "last_checked": "2025-06-06T04:14:59.389898",
+      "status": "unchanged",
+      "etag": "239f373fe2ee588d1e572fe6f85ef716"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagelivelayout/init(alternatelayout:).json": {
+      "hash": "5e04630af37dda4b594601712cf88cecd4f30a4f37cffcdab74ec58074c5813a",
+      "last_checked": "2025-06-06T04:14:59.722902",
+      "status": "unchanged",
+      "etag": "W/\"0857be442a2fe632759a5f761f09d29b\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagelivelayout/init(alternatelayout:)": {
+      "hash": "5e04630af37dda4b594601712cf88cecd4f30a4f37cffcdab74ec58074c5813a",
+      "last_checked": "2025-06-06T04:14:59.722902",
+      "status": "unchanged",
+      "etag": "5974aa3e6fe62a7963a3acf6632097d1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagelivelayout/alternatelayout.json": {
+      "hash": "6e2056e75a952b01d283c83f774bf10fe0e979ed83b7371946ae0140f96d4154",
+      "last_checked": "2025-06-06T04:15:00.117709",
+      "status": "unchanged",
+      "etag": "W/\"4781838ae8f0357f726055150a12e523\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagelivelayout/alternatelayout": {
+      "hash": "6e2056e75a952b01d283c83f774bf10fe0e979ed83b7371946ae0140f96d4154",
+      "last_checked": "2025-06-06T04:15:00.117709",
+      "status": "unchanged",
+      "etag": "d08ab2d8094428f8ac46f8c1af03b976"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger/maximumcriticalmessagingrecipients.json": {
+      "hash": "735180e92494f5f57be76a2fb58f75b657b327acec2131c76c3f90cf21a68a61",
+      "last_checked": "2025-06-06T04:15:00.580787",
+      "status": "unchanged",
+      "etag": "W/\"76c640d771df7bedc4e1efa6284ca35b\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger/maximumcriticalmessagingrecipients": {
+      "hash": "735180e92494f5f57be76a2fb58f75b657b327acec2131c76c3f90cf21a68a61",
+      "last_checked": "2025-06-06T04:15:00.580787",
+      "status": "unchanged",
+      "etag": "08f8eb9220ef7d0aa8288ce482199979"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger/requestauthorization(for:).json": {
+      "hash": "f499e439dd27ff068cf6fcff6f60b70cf2ee869cddfab4d1a4e642d1d6dbe8b2",
+      "last_checked": "2025-06-06T04:15:00.987155",
+      "status": "unchanged",
+      "etag": "W/\"01106c75bd36c9dc4245b6f76aa98625\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger/requestauthorization(for:)": {
+      "hash": "f499e439dd27ff068cf6fcff6f60b70cf2ee869cddfab4d1a4e642d1d6dbe8b2",
+      "last_checked": "2025-06-06T04:15:00.987155",
+      "status": "unchanged",
+      "etag": "03cb04a2c58e1daba10885b9bec8958a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger/checkauthorizationstatus(for:).json": {
+      "hash": "364bdc4aab0a11e8fa34d86ae5bb80b36f949eb0b6ea23f804fb1c5191392f69",
+      "last_checked": "2025-06-06T04:15:01.377782",
+      "status": "unchanged",
+      "etag": "W/\"7ac5f39a47ac767a416b75ab9f74195a\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger/checkauthorizationstatus(for:)": {
+      "hash": "364bdc4aab0a11e8fa34d86ae5bb80b36f949eb0b6ea23f804fb1c5191392f69",
+      "last_checked": "2025-06-06T04:15:01.377782",
+      "status": "unchanged",
+      "etag": "19f21e20f03952366ed2f58bbf14a574"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger/init().json": {
+      "hash": "5d9dd529d1d478d7376106203088f12c88c96c09216a1c99de95c0a0cf8c92ab",
+      "last_checked": "2025-06-06T04:15:02.151397",
+      "status": "unchanged",
+      "etag": "W/\"b8db9547b1d4e570a29d1249e34de5a3\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger/init()": {
+      "hash": "5d9dd529d1d478d7376106203088f12c88c96c09216a1c99de95c0a0cf8c92ab",
+      "last_checked": "2025-06-06T04:15:02.151397",
+      "status": "unchanged",
+      "etag": "3f1b0f83127c03f2464a820481b602a6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msrecipient/phonenumber.json": {
+      "hash": "e7e354ef2217eb074875d0454873831b39bda3f1b939880c750d49c86f7b26cf",
+      "last_checked": "2025-06-06T04:15:02.899813",
+      "status": "unchanged",
+      "etag": "W/\"f7a3fc64ae2412fbc12d22995f3294a3\""
+    },
+    "https://developer.apple.com/documentation/messages/msrecipient/phonenumber": {
+      "hash": "e7e354ef2217eb074875d0454873831b39bda3f1b939880c750d49c86f7b26cf",
+      "last_checked": "2025-06-06T04:15:02.899813",
+      "status": "unchanged",
+      "etag": "21e9588b8f1a943c13ee468c71aae7b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessage/init(messagetext:).json": {
+      "hash": "68cdb8da5a7ede9c9a5794ae36483560e466495cc859669a4a79a16af0614df9",
+      "last_checked": "2025-06-06T04:15:03.242793",
+      "status": "unchanged",
+      "etag": "W/\"36b238882e51a09d942855ecb5c9e230\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessage/init(messagetext:)": {
+      "hash": "68cdb8da5a7ede9c9a5794ae36483560e466495cc859669a4a79a16af0614df9",
+      "last_checked": "2025-06-06T04:15:03.242793",
+      "status": "unchanged",
+      "etag": "ebb42b9289ec1aec2e611b12e7518257"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessage/messagetext.json": {
+      "hash": "98b04943f807015f36d97c579b94996a751fe902003a8015898761a5ac5286ce",
+      "last_checked": "2025-06-06T04:15:03.668869",
+      "status": "unchanged",
+      "etag": "W/\"7a3cbb2d479d017a062d364395795c77\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessage/messagetext": {
+      "hash": "98b04943f807015f36d97c579b94996a751fe902003a8015898761a5ac5286ce",
+      "last_checked": "2025-06-06T04:15:03.668869",
+      "status": "unchanged",
+      "etag": "54b297450113851c05add013106451bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessagingauthorizationstatus/unknown.json": {
+      "hash": "4c729e8451c8dd24458755c2f1f6fbb6b4f1d2998c9111071f3e236bbd08bcd7",
+      "last_checked": "2025-06-06T04:15:04.039133",
+      "status": "unchanged",
+      "etag": "W/\"3d4d7e57b16a1dd0ecf66526386895e5\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessagingauthorizationstatus/unknown": {
+      "hash": "4c729e8451c8dd24458755c2f1f6fbb6b4f1d2998c9111071f3e236bbd08bcd7",
+      "last_checked": "2025-06-06T04:15:04.039133",
+      "status": "unchanged",
+      "etag": "a7d59207acb31e3034f414ac5322a45a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessagingauthorizationstatus/denied.json": {
+      "hash": "f259c02e55841182b18673f3988baa02b320800ed497036578721951a326bec7",
+      "last_checked": "2025-06-06T04:15:04.409123",
+      "status": "unchanged",
+      "etag": "W/\"04f1fc830a293d5e08652f9c162b3cf9\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessagingauthorizationstatus/denied": {
+      "hash": "f259c02e55841182b18673f3988baa02b320800ed497036578721951a326bec7",
+      "last_checked": "2025-06-06T04:15:04.409123",
+      "status": "unchanged",
+      "etag": "f6ef6502808cbac9b53f82ac2c869c85"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessagingauthorizationstatus/approved.json": {
+      "hash": "0f1e94c91a82a6caf1d51ed62fa9b2d44a8b4d8187086c5929b44f923676c804",
+      "last_checked": "2025-06-06T04:15:04.779499",
+      "status": "unchanged",
+      "etag": "W/\"73629498ee2c70b17d1e835e8952510c\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessagingauthorizationstatus/approved": {
+      "hash": "0f1e94c91a82a6caf1d51ed62fa9b2d44a8b4d8187086c5929b44f923676c804",
+      "last_checked": "2025-06-06T04:15:04.779499",
+      "status": "unchanged",
+      "etag": "ffecc681d140a4bfd36e622663fa9969"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/filenotfound.json": {
+      "hash": "3f01f312ed7a8db2339158efa8f70e2667abea121a6c32de2c83c7e9102b0bcf",
+      "last_checked": "2025-06-06T04:15:05.177805",
+      "status": "unchanged",
+      "etag": "W/\"e1c10710f8afb278688de80d41f53a6d\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/filenotfound": {
+      "hash": "3f01f312ed7a8db2339158efa8f70e2667abea121a6c32de2c83c7e9102b0bcf",
+      "last_checked": "2025-06-06T04:15:05.177805",
+      "status": "unchanged",
+      "etag": "f24f3c0315ea88d6578b505dee651f45"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/fileunreadable.json": {
+      "hash": "3303c5198d52ce6ff6483d0790ebd566619dfebaa7b2eeece0bce1ecdf8976c7",
+      "last_checked": "2025-06-06T04:15:05.499399",
+      "status": "unchanged",
+      "etag": "W/\"3981273882af8ff2dcfec28ce003f38c\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/fileunreadable": {
+      "hash": "3303c5198d52ce6ff6483d0790ebd566619dfebaa7b2eeece0bce1ecdf8976c7",
+      "last_checked": "2025-06-06T04:15:05.499399",
+      "status": "unchanged",
+      "etag": "281bf3226f0a6919aaa64d981938d467"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/improperfiletype.json": {
+      "hash": "28ca440d39e719e2fa7d165190bbeea6a347cf1cb27df53f4db4324917b2dd17",
+      "last_checked": "2025-06-06T04:15:05.830578",
+      "status": "unchanged",
+      "etag": "W/\"115d8f252545f61d0df9309183bc1cb2\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/improperfiletype": {
+      "hash": "28ca440d39e719e2fa7d165190bbeea6a347cf1cb27df53f4db4324917b2dd17",
+      "last_checked": "2025-06-06T04:15:05.830578",
+      "status": "unchanged",
+      "etag": "b826bc239dd218c5b671a0413ebb60e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/improperfileurl.json": {
+      "hash": "de557dfd4626a5485c8d1fd28007b3c2b54a8bae60d6edd3a5479070aedb0f6c",
+      "last_checked": "2025-06-06T04:15:06.210027",
+      "status": "unchanged",
+      "etag": "W/\"56e2cb876c800f2ca675f2e578606f74\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/improperfileurl": {
+      "hash": "de557dfd4626a5485c8d1fd28007b3c2b54a8bae60d6edd3a5479070aedb0f6c",
+      "last_checked": "2025-06-06T04:15:06.210027",
+      "status": "unchanged",
+      "etag": "ac28c42d677e9a1d9890692e20cf09e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/stickerfileimproperfileattributes.json": {
+      "hash": "c914a2a3b7e3b462ab5368112d774ed0010929b0ebcf9f97e4c039d0ab999d64",
+      "last_checked": "2025-06-06T04:15:06.530436",
+      "status": "unchanged",
+      "etag": "W/\"4283dc76debfb3813866ff6b67e55380\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/stickerfileimproperfileattributes": {
+      "hash": "c914a2a3b7e3b462ab5368112d774ed0010929b0ebcf9f97e4c039d0ab999d64",
+      "last_checked": "2025-06-06T04:15:06.530436",
+      "status": "unchanged",
+      "etag": "97c45ab1e635628f1dcc2bc5ec538eed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/stickerfileimproperfilesize.json": {
+      "hash": "e706b0b86e2bb69081b93beeeec57c247e640ba003f62422a995be27acd29623",
+      "last_checked": "2025-06-06T04:15:06.918240",
+      "status": "unchanged",
+      "etag": "W/\"570995c83d0d2ec3b78c39f58f643f07\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/stickerfileimproperfilesize": {
+      "hash": "e706b0b86e2bb69081b93beeeec57c247e640ba003f62422a995be27acd29623",
+      "last_checked": "2025-06-06T04:15:06.918240",
+      "status": "unchanged",
+      "etag": "99afc55bf767df295b6c646f90be8746"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/stickerfileimproperfileformat.json": {
+      "hash": "a244238e0c8447574619bd66637f90b982a0435a9f3e9c282649106aeb1e5af0",
+      "last_checked": "2025-06-06T04:15:07.312594",
+      "status": "unchanged",
+      "etag": "W/\"ea305a547b8f0acc194631b285337267\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/stickerfileimproperfileformat": {
+      "hash": "a244238e0c8447574619bd66637f90b982a0435a9f3e9c282649106aeb1e5af0",
+      "last_checked": "2025-06-06T04:15:07.312594",
+      "status": "unchanged",
+      "etag": "b4553cd42de12aa5a58d748640fbfd2e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/urlexceedsmaxsize.json": {
+      "hash": "a8072fc57577b1a43f523c1da28f995bbc4f7d28da73107170b1097c0cf527ba",
+      "last_checked": "2025-06-06T04:15:07.741628",
+      "status": "unchanged",
+      "etag": "W/\"dc4144de4c09c0c94411a745c4fa1390\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/urlexceedsmaxsize": {
+      "hash": "a8072fc57577b1a43f523c1da28f995bbc4f7d28da73107170b1097c0cf527ba",
+      "last_checked": "2025-06-06T04:15:07.741628",
+      "status": "unchanged",
+      "etag": "36147c6e36f411e4693c7183a2f1e65e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/sendwhilenotvisible.json": {
+      "hash": "29e964ff8586f272e16525e89499aaba29ea5a41f1ec11bc768bd0d9a40ddd4b",
+      "last_checked": "2025-06-06T04:15:08.176579",
+      "status": "unchanged",
+      "etag": "W/\"aaed5662a5a8f3cbf3554152f7cb0f3e\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/sendwhilenotvisible": {
+      "hash": "29e964ff8586f272e16525e89499aaba29ea5a41f1ec11bc768bd0d9a40ddd4b",
+      "last_checked": "2025-06-06T04:15:08.176579",
+      "status": "unchanged",
+      "etag": "b2ef1d810f6b8df5f71602a30c535f37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/sendwithoutrecentinteraction.json": {
+      "hash": "09903055b62e759b208f816bd3fe60943c02e51bf3becccb2bf70f64b88376c8",
+      "last_checked": "2025-06-06T04:15:08.568937",
+      "status": "unchanged",
+      "etag": "W/\"c5a59c1e12ab61903b0d70b37a8233a8\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/sendwithoutrecentinteraction": {
+      "hash": "09903055b62e759b208f816bd3fe60943c02e51bf3becccb2bf70f64b88376c8",
+      "last_checked": "2025-06-06T04:15:08.568937",
+      "status": "unchanged",
+      "etag": "d4ae24e7c8e57201f3b8c80a0c3026fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/apiunavailableinpresentationcontext.json": {
+      "hash": "fae9f81b8dfff43d02835dee15c2d83654f7b139d44dbe7efc132cd84d8ee1db",
+      "last_checked": "2025-06-06T04:15:08.925937",
+      "status": "unchanged",
+      "etag": "W/\"d066c5d2a4fcde8f9e33412944896d69\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/apiunavailableinpresentationcontext": {
+      "hash": "fae9f81b8dfff43d02835dee15c2d83654f7b139d44dbe7efc132cd84d8ee1db",
+      "last_checked": "2025-06-06T04:15:08.925937",
+      "status": "unchanged",
+      "etag": "63d04c224f70c0b2870fba8649a9bc44"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/unknown.json": {
+      "hash": "14003e3758420a0ad357b11e3372f9a219fc8739c825d3fb54316f17078efd4b",
+      "last_checked": "2025-06-06T04:15:09.311770",
+      "status": "unchanged",
+      "etag": "W/\"d06aac1a7e8041ab7bb5c0deb286ff35\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/unknown": {
+      "hash": "14003e3758420a0ad357b11e3372f9a219fc8739c825d3fb54316f17078efd4b",
+      "last_checked": "2025-06-06T04:15:09.311770",
+      "status": "unchanged",
+      "etag": "881851e84b6ba387ae21a2043eaf7043"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/init(rawvalue:).json": {
+      "hash": "b181a47888407182a51bac1698619c597a317997adccc9016a9c0c2180fa31c1",
+      "last_checked": "2025-06-06T04:15:09.642966",
+      "status": "unchanged",
+      "etag": "W/\"76cf0eb64425eccdf79fc09032cc8403\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessageerrorcode/init(rawvalue:)": {
+      "hash": "b181a47888407182a51bac1698619c597a317997adccc9016a9c0c2180fa31c1",
+      "last_checked": "2025-06-06T04:15:09.642966",
+      "status": "unchanged",
+      "etag": "1885ad9a3f1906cd2c489bb85ea15c7b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessagingerror/unknown.json": {
+      "hash": "3ef17662fe2d3da5e818906eadc99e4cd2c6397691f855e7a6245c8e85b88363",
+      "last_checked": "2025-06-06T04:15:10.009046",
+      "status": "unchanged",
+      "etag": "W/\"da2a4faecc4067ba4fca177aee830f3c\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessagingerror/unknown": {
+      "hash": "3ef17662fe2d3da5e818906eadc99e4cd2c6397691f855e7a6245c8e85b88363",
+      "last_checked": "2025-06-06T04:15:10.009046",
+      "status": "unchanged",
+      "etag": "f1bbcc649c9da4b68778bf9633591617"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessagingerror/invalidauthenticationrequest.json": {
+      "hash": "254f6ebc95290e305843c54a06158f4970d2643976a0735230226f8293bc6598",
+      "last_checked": "2025-06-06T04:15:10.385476",
+      "status": "unchanged",
+      "etag": "W/\"aa9f1970c96336d5eeb0f943f8cc51db\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessagingerror/invalidauthenticationrequest": {
+      "hash": "254f6ebc95290e305843c54a06158f4970d2643976a0735230226f8293bc6598",
+      "last_checked": "2025-06-06T04:15:10.385476",
+      "status": "unchanged",
+      "etag": "33dbf6404d7437ee995bb815b6520a17"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessagingerror/notsupported.json": {
+      "hash": "57bbfca07d8975771396886a145dea6674d3a370f8a28f63be7d2b1fc8364507",
+      "last_checked": "2025-06-06T04:15:10.776647",
+      "status": "unchanged",
+      "etag": "W/\"8c4857fdc78a55281edfd23572ad3f8a\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessagingerror/notsupported": {
+      "hash": "57bbfca07d8975771396886a145dea6674d3a370f8a28f63be7d2b1fc8364507",
+      "last_checked": "2025-06-06T04:15:10.776647",
+      "status": "unchanged",
+      "etag": "27a9b2a2c6d03e1756946cf7e3839fb2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessagingerror/notauthorized.json": {
+      "hash": "1a1612989ffc1a9ee83d610ebd034c3c690c2179b725c9eb108cbf95a1f3bbaa",
+      "last_checked": "2025-06-06T04:15:11.101735",
+      "status": "unchanged",
+      "etag": "W/\"1868cc2884e85d84f23b5069fc217c14\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessagingerror/notauthorized": {
+      "hash": "1a1612989ffc1a9ee83d610ebd034c3c690c2179b725c9eb108cbf95a1f3bbaa",
+      "last_checked": "2025-06-06T04:15:11.101735",
+      "status": "unchanged",
+      "etag": "2031760cc1d816101de991304f40d1ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewdatasource/numberofstickers(in:).json": {
+      "hash": "224fea705e3ee6bcf10d7ef35f475baedb9abdaef0e99b28eceb50ad6bebbcf3",
+      "last_checked": "2025-06-06T04:15:11.862410",
+      "status": "unchanged",
+      "etag": "W/\"e8b0ba4d8cd193360b320dd4e385f3c3\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserviewdatasource/numberofstickers(in:)": {
+      "hash": "224fea705e3ee6bcf10d7ef35f475baedb9abdaef0e99b28eceb50ad6bebbcf3",
+      "last_checked": "2025-06-06T04:15:11.862410",
+      "status": "unchanged",
+      "etag": "f1e24ec9ff467ab1d1540e98196eec2e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewdatasource/stickerbrowserview(_:stickerat:).json": {
+      "hash": "7b1694bf9d4ae21c9a904008534de8429c0a29f500ba7e2a402874d65c1b3f96",
+      "last_checked": "2025-06-06T04:15:12.312652",
+      "status": "unchanged",
+      "etag": "W/\"9018f9591bdde7d5ad6287483fb47892\""
+    },
+    "https://developer.apple.com/documentation/messages/msstickerbrowserviewdatasource/stickerbrowserview(_:stickerat:)": {
+      "hash": "7b1694bf9d4ae21c9a904008534de8429c0a29f500ba7e2a402874d65c1b3f96",
+      "last_checked": "2025-06-06T04:15:12.312652",
+      "status": "unchanged",
+      "etag": "572ced27af11cda86b518c011e7b1fe4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationcontext/media.json": {
+      "hash": "e86302c7fc45e5fb898b2888b4b372820e68be327df26165f704fa4fc5fc0dcd",
+      "last_checked": "2025-06-06T04:15:12.702096",
+      "status": "unchanged",
+      "etag": "W/\"9f566e448243bb86311349855e38bbdf\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapppresentationcontext/media": {
+      "hash": "e86302c7fc45e5fb898b2888b4b372820e68be327df26165f704fa4fc5fc0dcd",
+      "last_checked": "2025-06-06T04:15:12.702096",
+      "status": "unchanged",
+      "etag": "a0a0b4351711787b688b434f82915f38"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationcontext/messages.json": {
+      "hash": "9b06ce1306bb36a9d7e71e02e0c46e1c4924be3837a4b0db2f4b751d98dcf7fa",
+      "last_checked": "2025-06-06T04:15:13.101552",
+      "status": "unchanged",
+      "etag": "W/\"ddfcd63aaa98693b4c7185f7ab21409f\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapppresentationcontext/messages": {
+      "hash": "9b06ce1306bb36a9d7e71e02e0c46e1c4924be3837a4b0db2f4b751d98dcf7fa",
+      "last_checked": "2025-06-06T04:15:13.101552",
+      "status": "unchanged",
+      "etag": "04cb6bd35729d9efc772f0b58c934c44"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationcontext/init(rawvalue:).json": {
+      "hash": "50107bac9ca3d7209c6aeaf507a514cb020511cfb2c05789de0182b2b4b55df3",
+      "last_checked": "2025-06-06T04:15:13.523117",
+      "status": "unchanged",
+      "etag": "W/\"e9dfb9b99f95025853380239a7656a76\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesapppresentationcontext/init(rawvalue:)": {
+      "hash": "50107bac9ca3d7209c6aeaf507a514cb020511cfb2c05789de0182b2b4b55df3",
+      "last_checked": "2025-06-06T04:15:13.523117",
+      "status": "unchanged",
+      "etag": "495fc3b82ab579dd40d55328d4921dbc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/Messages/preparing-your-app-to-be-the-default-messaging-app.json": {
+      "hash": "8430e95ebfe1b814ec46c2dbb3842f0f9decce15471023019a5b64bef6bc0b32",
+      "last_checked": "2025-06-06T19:35:04.671799",
+      "status": "new",
+      "etag": "W/\"354cd5e26b3f382ebda266648d77dbe4\""
+    },
+    "https://developer.apple.com/documentation/Messages/preparing-your-app-to-be-the-default-messaging-app": {
+      "hash": "4403f7a45f9957ed69d8fedaa00bbc01f08a8b4562f33df82caca572f1758a6c",
+      "last_checked": "2025-06-06T19:35:04.671967",
+      "status": "unchanged",
+      "etag": "864780e0241bd50ea16cc5a202875786"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/Messages.json": {
+      "hash": "712d4cdbe2f160f015c47faec4dd950afc7b4956a1e034ab2f90593ab8374b56",
+      "last_checked": "2025-06-06T20:00:44.224927",
+      "status": "new",
+      "etag": "W/\"5c38777b33d8a114a9fe18797162fb32\""
+    },
+    "https://developer.apple.com/documentation/Messages": {
+      "hash": "91e3de2b624c524a5af3f684bcfce96f2f07a1e5fde5ffa68b68729c16133604",
+      "last_checked": "2025-06-06T20:00:44.226062",
+      "status": "unchanged",
+      "etag": "06215e001ca6da2d19379a1e1d93100f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages.json": {
+      "hash": "91e3de2b624c524a5af3f684bcfce96f2f07a1e5fde5ffa68b68729c16133604",
+      "last_checked": "2025-06-06T20:00:44.226062",
+      "status": "unchanged",
+      "etag": "W/\"5c38777b33d8a114a9fe18797162fb32\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger/send(_:to:).json": {
+      "hash": "506dfbaab9291b19e4e010a412e0de8dfc3c74af3f69538d289379c958a25c41",
+      "last_checked": "2025-06-06T21:10:08.971980",
+      "status": "unchanged",
+      "etag": "W/\"41c1828df19c34896141ac8788a0d6a3\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger/send(_:to:)": {
+      "hash": "506dfbaab9291b19e4e010a412e0de8dfc3c74af3f69538d289379c958a25c41",
+      "last_checked": "2025-06-06T21:10:08.971980",
+      "status": "unchanged",
+      "etag": "408be7c7a4523a3d89f16e9d1950b7b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessagingerror/sendfailed.json": {
+      "hash": "dc1e2ad72d3d8eb23930f45e91e65cc15b60eada922064f88bc041fcb3f8e54f",
+      "last_checked": "2025-06-06T21:10:09.499660",
+      "status": "unchanged",
+      "etag": "W/\"80271f493593ae0a89fd295e9082068f\""
+    },
+    "https://developer.apple.com/documentation/messages/mscriticalmessagingerror/sendfailed": {
+      "hash": "dc1e2ad72d3d8eb23930f45e91e65cc15b60eada922064f88bc041fcb3f8e54f",
+      "last_checked": "2025-06-06T21:10:09.499660",
+      "status": "unchanged",
+      "etag": "105ad7bf28ff371c8aea79bdfe3f8dda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msrecipient/init(phonenumber:).json": {
+      "hash": "78cdb8d2e32419a105d6a33778f6a78f3a15785b613be69e7d85e5ffe4f701ca",
+      "last_checked": "2025-06-06T21:10:09.969784",
+      "status": "unchanged",
+      "etag": "W/\"8e678c4e258c46019e804213711c8662\""
+    },
+    "https://developer.apple.com/documentation/messages/msrecipient/init(phonenumber:)": {
+      "hash": "78cdb8d2e32419a105d6a33778f6a78f3a15785b613be69e7d85e5ffe4f701ca",
+      "last_checked": "2025-06-06T21:10:09.969784",
+      "status": "unchanged",
+      "etag": "74f0f601b1dbc5803ffb5362b4154b57"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/insert(_:completionhandler:)-7fpdd.json": {
+      "hash": "bbc28e07734cf85db1ad2a36be3fbd45485358d4b0ccaddb77bc2402368dd00c",
+      "last_checked": "2025-06-06T21:10:10.424452",
+      "status": "unchanged",
+      "etag": "W/\"71c48f3ff1bc41f88409022d8b3de521\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/insert(_:completionhandler:)-7fpdd": {
+      "hash": "bbc28e07734cf85db1ad2a36be3fbd45485358d4b0ccaddb77bc2402368dd00c",
+      "last_checked": "2025-06-06T21:10:10.424452",
+      "status": "unchanged",
+      "etag": "3c7507af823bec45d4b63897005e3ff3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/insert(_:completionhandler:)-3g248.json": {
+      "hash": "3ae462bd175e102d80cb451a925c3973c333cbdecaad61664ce179aae75ebe50",
+      "last_checked": "2025-06-06T21:10:10.918884",
+      "status": "unchanged",
+      "etag": "W/\"c0a94898c68ed0ede9f7806f832a33b3\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/insert(_:completionhandler:)-3g248": {
+      "hash": "3ae462bd175e102d80cb451a925c3973c333cbdecaad61664ce179aae75ebe50",
+      "last_checked": "2025-06-06T21:10:10.918884",
+      "status": "unchanged",
+      "etag": "0986a4a0ae10be65a9e91c6bf0e02542"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/insertattachment(_:withalternatefilename:completionhandler:).json": {
+      "hash": "08f7028d16a0ff463f3e55a5ee0c3451367d0bddbbfb26bdd544d7550451ef26",
+      "last_checked": "2025-06-06T21:10:11.389220",
+      "status": "unchanged",
+      "etag": "W/\"9d0e1c4856ba1759a2afea7cdb4b744c\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/insertattachment(_:withalternatefilename:completionhandler:)": {
+      "hash": "08f7028d16a0ff463f3e55a5ee0c3451367d0bddbbfb26bdd544d7550451ef26",
+      "last_checked": "2025-06-06T21:10:11.389220",
+      "status": "unchanged",
+      "etag": "780cda3a4be491ea94a3c735c628135a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/inserttext(_:completionhandler:).json": {
+      "hash": "c49cf6d208abfa1a02c12f0deb3c28072553eed391bb6224de7c62e5ee4c7a41",
+      "last_checked": "2025-06-06T21:10:11.854721",
+      "status": "unchanged",
+      "etag": "W/\"6faec4a60ce17787df6e22379ba3ba40\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/inserttext(_:completionhandler:)": {
+      "hash": "c49cf6d208abfa1a02c12f0deb3c28072553eed391bb6224de7c62e5ee4c7a41",
+      "last_checked": "2025-06-06T21:10:11.854721",
+      "status": "unchanged",
+      "etag": "30b6af7c0fa2b37d3795e892fde7d253"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/selectedmessage.json": {
+      "hash": "415db7ecb7880ad981103d3917c97765e7845eaa4788e834f1e0883dc5c9382f",
+      "last_checked": "2025-06-06T21:10:12.296436",
+      "status": "unchanged",
+      "etag": "W/\"351372887e3f58c291cae204ce3b2299\""
+    },
+    "https://developer.apple.com/documentation/messages/msconversation/selectedmessage": {
+      "hash": "415db7ecb7880ad981103d3917c97765e7845eaa4788e834f1e0883dc5c9382f",
+      "last_checked": "2025-06-06T21:10:12.296436",
+      "status": "unchanged",
+      "etag": "361bad021f5346b20d844fd5e40d973a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/willtransition(to:).json": {
+      "hash": "5c0fe45248216c8c47e5fef285f8f54e5949570bc073af0de4ced25f325a6cdb",
+      "last_checked": "2025-06-06T21:10:12.716627",
+      "status": "unchanged",
+      "etag": "W/\"e34af6292808d2323c4e28cfa7102f44\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willtransition(to:)": {
+      "hash": "5c0fe45248216c8c47e5fef285f8f54e5949570bc073af0de4ced25f325a6cdb",
+      "last_checked": "2025-06-06T21:10:12.716627",
+      "status": "unchanged",
+      "etag": "32909c9f0d9083f7ea038452acd09775"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didreceive(_:conversation:).json": {
+      "hash": "e1f1ba15afdc26e5e72445f12fdf7a35a50e7ef5cab362953275a4cd54455228",
+      "last_checked": "2025-06-06T21:10:13.156033",
+      "status": "unchanged",
+      "etag": "W/\"3ce4c73ca34c48d6ebac58281d9729a5\""
+    },
+    "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didreceive(_:conversation:)": {
+      "hash": "e1f1ba15afdc26e5e72445f12fdf7a35a50e7ef5cab362953275a4cd54455228",
+      "last_checked": "2025-06-06T21:10:13.156033",
+      "status": "unchanged",
+      "etag": "a7337b2f63afad5432ef9298713b8ae7"
+    }
+  }
+}

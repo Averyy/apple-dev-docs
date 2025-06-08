@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-08T17:22:19.899316",
+    "total_pages": 5
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/AudioUnit.json": {
+      "hash": "db0e741b9cd040e4b79ec748e3b06868d045b86fe7f45455da678f645b21d300",
+      "last_checked": "2025-06-08T17:22:19.722942",
+      "status": "unchanged",
+      "etag": "W/\"27849ac56a51695d2384feb804ceb6a3\""
+    },
+    "https://developer.apple.com/documentation/AudioUnit": {
+      "hash": "db0e741b9cd040e4b79ec748e3b06868d045b86fe7f45455da678f645b21d300",
+      "last_checked": "2025-06-08T17:22:19.722996",
+      "status": "unchanged",
+      "etag": "W/\"27849ac56a51695d2384feb804ceb6a3\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/audiounit.json": {
+      "hash": "38c1b482fcfcad1716aacca3f3293727f489fb072d71f9d631bdbeec8a3024cb",
+      "last_checked": "2025-06-05T16:41:18.155988",
+      "status": "unchanged",
+      "etag": "W/\"27849ac56a51695d2384feb804ceb6a3\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/audiounit/audio_unit_version.json": {
+      "hash": "e197bdb1e21e83509d3df7aa4b83dd37124732160d5b7f509fcb44e468f4ee3f",
+      "last_checked": "2025-06-05T16:41:19.166833",
+      "status": "unchanged",
+      "etag": "W/\"60e1e9c7ed58f761b4bbe51df01b0951\""
+    },
+    "https://developer.apple.com/documentation/audiounit/audio_unit_version": {
+      "hash": "e197bdb1e21e83509d3df7aa4b83dd37124732160d5b7f509fcb44e468f4ee3f",
+      "last_checked": "2025-06-05T16:41:19.166833",
+      "status": "unchanged"
+    }
+  }
+}

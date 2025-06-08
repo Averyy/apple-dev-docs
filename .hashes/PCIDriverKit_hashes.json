@@ -1,0 +1,3463 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T12:40:41.674541",
+    "total_pages": 607,
+    "etags_collected": "2025-06-07T12:40:41.674554"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/creating-custom-pcie-drivers-for-thunderbolt-devices.json": {
+      "hash": "183184f518b4e0b61f0a0c4679d850962990b5c98c4bd49424d7ce9bcf415d03",
+      "last_checked": "2025-06-06T19:39:11.171941",
+      "status": "unchanged",
+      "etag": "W/\"a77e9eaa8c0f96a415621ba257efb26c\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/creating-custom-pcie-drivers-for-thunderbolt-devices": {
+      "hash": "420d7940447160eac4c7fe04ca8212a54110b6cf051eb42ff2b4924fa24b955f",
+      "last_checked": "2025-06-06T05:40:43.936654",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice.json": {
+      "hash": "6b1ad91d28bf7d3e74b26611d70707a4bb8ca91e280f023562d179cf010d392b",
+      "last_checked": "2025-06-06T19:39:09.589135",
+      "status": "unchanged",
+      "etag": "W/\"429dca522544fdb559decf3057b17c5d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice": {
+      "hash": "e565675d77cd777b3a5ab52c3b44f085f16e12aa8d5c9b0950570904bfa0d17d",
+      "last_checked": "2025-06-06T05:40:44.449266",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/pcidriverkit-enumerations.json": {
+      "hash": "c0fcaf840caaa5bdc80199b21e70aa0ace95f56738b29c3b58dd5a3db2ea1d3c",
+      "last_checked": "2025-06-06T05:40:44.996817",
+      "status": "unchanged",
+      "etag": "W/\"c7fa8b0695ac83e582f9f798614d75bf\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/pcidriverkit-enumerations": {
+      "hash": "c0fcaf840caaa5bdc80199b21e70aa0ace95f56738b29c3b58dd5a3db2ea1d3c",
+      "last_checked": "2025-06-06T05:40:44.996817",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/pcidriverkit-data-types.json": {
+      "hash": "f83b41f17e4ba2764b62ab4fb6a8dc9a3083029da8eb4ca606ec4af2ac828c1c",
+      "last_checked": "2025-06-06T05:40:45.527444",
+      "status": "unchanged",
+      "etag": "W/\"1f76dff09634ab6f49b227a376241d5e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/pcidriverkit-data-types": {
+      "hash": "f83b41f17e4ba2764b62ab4fb6a8dc9a3083029da8eb4ca606ec4af2ac828c1c",
+      "last_checked": "2025-06-06T05:40:45.527444",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/pcidriverkit-macros.json": {
+      "hash": "4850fe211b76982fc6294bd3f5c029846aafb8d58a7a78434d0fad07595d1d4a",
+      "last_checked": "2025-06-06T05:40:46.080318",
+      "status": "unchanged",
+      "etag": "W/\"1d42fa163603870093ea221925617655\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/pcidriverkit-macros": {
+      "hash": "4850fe211b76982fc6294bd3f5c029846aafb8d58a7a78434d0fad07595d1d4a",
+      "last_checked": "2025-06-06T05:40:46.080318",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotstatusattentionbuttonpressed.json": {
+      "hash": "298052739f5675a0468d34dc1030953d24d535be80bed15ec61b353594a51c27",
+      "last_checked": "2025-06-06T05:40:46.501728",
+      "status": "unchanged",
+      "etag": "W/\"1de16430fe8c98683f5cb604d4bac8bf\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotstatusattentionbuttonpressed": {
+      "hash": "298052739f5675a0468d34dc1030953d24d535be80bed15ec61b353594a51c27",
+      "last_checked": "2025-06-06T05:40:46.501728",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotstatuscommandcompleted.json": {
+      "hash": "46fcea1fcc943e1b48facb55ed2b3821863293b52e0f575f85901d9fc90d011b",
+      "last_checked": "2025-06-06T05:40:47.004684",
+      "status": "unchanged",
+      "etag": "W/\"e62e9b1b12213d85dd516abe397d21e6\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotstatuscommandcompleted": {
+      "hash": "46fcea1fcc943e1b48facb55ed2b3821863293b52e0f575f85901d9fc90d011b",
+      "last_checked": "2025-06-06T05:40:47.004684",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotstatusdatalinklayerstatechanged.json": {
+      "hash": "68eef0b79f864995dd83e8225a1a428eb62b085790a9d585b00138cc62176eaa",
+      "last_checked": "2025-06-06T05:40:47.425887",
+      "status": "unchanged",
+      "etag": "W/\"da14944137ecf73c0f0278c45612bd24\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotstatusdatalinklayerstatechanged": {
+      "hash": "68eef0b79f864995dd83e8225a1a428eb62b085790a9d585b00138cc62176eaa",
+      "last_checked": "2025-06-06T05:40:47.425887",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotstatuselectromechanicalinterlockstate.json": {
+      "hash": "515a5140b517a9c567ad99c0aa75085f5253835ef588fbaaa8887463fa2d2377",
+      "last_checked": "2025-06-06T05:40:47.818357",
+      "status": "unchanged",
+      "etag": "W/\"96b150943bd8b9f001539f23a573c6fe\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotstatuselectromechanicalinterlockstate": {
+      "hash": "515a5140b517a9c567ad99c0aa75085f5253835ef588fbaaa8887463fa2d2377",
+      "last_checked": "2025-06-06T05:40:47.818357",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotstatusmrlsensorchanged.json": {
+      "hash": "cfc7317c3e6e4b567454c1caa8e965ea2594fce4c597d5be65978afa2bbc6dfe",
+      "last_checked": "2025-06-06T05:40:48.219599",
+      "status": "unchanged",
+      "etag": "W/\"30ec0cbd36d281811f9eb88736f01016\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotstatusmrlsensorchanged": {
+      "hash": "cfc7317c3e6e4b567454c1caa8e965ea2594fce4c597d5be65978afa2bbc6dfe",
+      "last_checked": "2025-06-06T05:40:48.219599",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotstatusmrlsensorstate.json": {
+      "hash": "a3b66885a21ad5fe79dc053ab01eff5137fb2a2f35bcc8afc76fb6d4b0108f68",
+      "last_checked": "2025-06-06T05:40:48.650959",
+      "status": "unchanged",
+      "etag": "W/\"4762511d37bdeedbd43b75fe7a3e035d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotstatusmrlsensorstate": {
+      "hash": "a3b66885a21ad5fe79dc053ab01eff5137fb2a2f35bcc8afc76fb6d4b0108f68",
+      "last_checked": "2025-06-06T05:40:48.650959",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotstatuspowerfaultdetected.json": {
+      "hash": "1bee1e1a9c2c6d5bcef8037f0891ba5df967afb3fd2a1332937adcfc95813ab3",
+      "last_checked": "2025-06-06T05:40:49.110502",
+      "status": "unchanged",
+      "etag": "W/\"54f5aaed181b178299c45fcca7efb64d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotstatuspowerfaultdetected": {
+      "hash": "1bee1e1a9c2c6d5bcef8037f0891ba5df967afb3fd2a1332937adcfc95813ab3",
+      "last_checked": "2025-06-06T05:40:49.110502",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotstatuspresencedetectchanged.json": {
+      "hash": "effb67b42d39bfaa0f0571160ea5e5918c76b0abdb6abb778dfead04bc959256",
+      "last_checked": "2025-06-06T05:40:49.515615",
+      "status": "unchanged",
+      "etag": "W/\"775d078511910880e0d525e006494a55\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotstatuspresencedetectchanged": {
+      "hash": "effb67b42d39bfaa0f0571160ea5e5918c76b0abdb6abb778dfead04bc959256",
+      "last_checked": "2025-06-06T05:40:49.515615",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotstatuspresencedetectstate.json": {
+      "hash": "5b6c87b270103172f1cce75d9e843c32030a69d3b7143e0fa513324104775e6a",
+      "last_checked": "2025-06-06T05:40:49.920815",
+      "status": "unchanged",
+      "etag": "W/\"8e3e3e95750ee05f4ac435f0654bf4bb\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotstatuspresencedetectstate": {
+      "hash": "5b6c87b270103172f1cce75d9e843c32030a69d3b7143e0fa513324104775e6a",
+      "last_checked": "2025-06-06T05:40:49.920815",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/init.json": {
+      "hash": "3a817735520300cc35ecd39bc8af53953a834d8a0c0d15e3a3fd79ee1a569543",
+      "last_checked": "2025-06-06T05:40:50.382639",
+      "status": "unchanged",
+      "etag": "W/\"5e1baee1cef27973591d7808c0df03fc\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/init": {
+      "hash": "3a817735520300cc35ecd39bc8af53953a834d8a0c0d15e3a3fd79ee1a569543",
+      "last_checked": "2025-06-06T05:40:50.382639",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/open.json": {
+      "hash": "9aa00b52de6d63de587df3a21c2a4b2a6b2253dd8d44c82ff75111e806a295c0",
+      "last_checked": "2025-06-06T05:40:50.777155",
+      "status": "unchanged",
+      "etag": "W/\"de17d17fac5b572d5f4c02011f8dabe9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/open": {
+      "hash": "9aa00b52de6d63de587df3a21c2a4b2a6b2253dd8d44c82ff75111e806a295c0",
+      "last_checked": "2025-06-06T05:40:50.777155",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/close.json": {
+      "hash": "839ba7e8b2b8b164aba903517f09d345fe0299168c37ea19ea860328382a40fa",
+      "last_checked": "2025-06-06T05:40:51.310534",
+      "status": "unchanged",
+      "etag": "W/\"1f09a39116bc5257bc705a40f2fbdcf0\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/close": {
+      "hash": "839ba7e8b2b8b164aba903517f09d345fe0299168c37ea19ea860328382a40fa",
+      "last_checked": "2025-06-06T05:40:51.310534",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/free.json": {
+      "hash": "63d0818663434109b3e260681084ac6a3f2924b1cafea1119628e068ff57aea2",
+      "last_checked": "2025-06-06T05:40:51.717723",
+      "status": "unchanged",
+      "etag": "W/\"164ac044173fe4c11f3fa2bec744a7a7\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/free": {
+      "hash": "63d0818663434109b3e260681084ac6a3f2924b1cafea1119628e068ff57aea2",
+      "last_checked": "2025-06-06T05:40:51.717723",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/configurationread8.json": {
+      "hash": "f27216738c46b2e7710b73738018b972086f20e773032d6d1cc23de7e0e14018",
+      "last_checked": "2025-06-06T05:40:52.162060",
+      "status": "unchanged",
+      "etag": "W/\"5131032d6475a03acbfb93ea2a66485a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/configurationread8": {
+      "hash": "f27216738c46b2e7710b73738018b972086f20e773032d6d1cc23de7e0e14018",
+      "last_checked": "2025-06-06T05:40:52.162060",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/configurationread16.json": {
+      "hash": "b5586c7db69b1c524733f4e52b28b72a230243e551a067e72c52d9124eed26e4",
+      "last_checked": "2025-06-06T05:40:52.575606",
+      "status": "unchanged",
+      "etag": "W/\"d554f2621d65c197deb14555b03976de\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/configurationread16": {
+      "hash": "b5586c7db69b1c524733f4e52b28b72a230243e551a067e72c52d9124eed26e4",
+      "last_checked": "2025-06-06T05:40:52.575606",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/configurationread32.json": {
+      "hash": "2313f4607e4d5a19bc8f65bad4bbe9bf70adef2df650e7c013e3da70ad2acc84",
+      "last_checked": "2025-06-06T05:40:52.976471",
+      "status": "unchanged",
+      "etag": "W/\"1b78db910cab9e163fbe9fb1135299e1\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/configurationread32": {
+      "hash": "2313f4607e4d5a19bc8f65bad4bbe9bf70adef2df650e7c013e3da70ad2acc84",
+      "last_checked": "2025-06-06T05:40:52.976471",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/configurationwrite8.json": {
+      "hash": "16a0a46368e21f2bf00dcc34560e260a86c496b6f93485fadb21908de1dfd082",
+      "last_checked": "2025-06-06T05:40:53.381558",
+      "status": "unchanged",
+      "etag": "W/\"b028712f239dfa6bda447cb479c2a36a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/configurationwrite8": {
+      "hash": "16a0a46368e21f2bf00dcc34560e260a86c496b6f93485fadb21908de1dfd082",
+      "last_checked": "2025-06-06T05:40:53.381558",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/configurationwrite16.json": {
+      "hash": "da9b7c11b48f5a3c4968ff086408dae7701c2a4b17637d6df1a653e250c313b3",
+      "last_checked": "2025-06-06T05:40:53.790176",
+      "status": "unchanged",
+      "etag": "W/\"e03569d4db402c10f043baca804568ea\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/configurationwrite16": {
+      "hash": "da9b7c11b48f5a3c4968ff086408dae7701c2a4b17637d6df1a653e250c313b3",
+      "last_checked": "2025-06-06T05:40:53.790176",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/configurationwrite32.json": {
+      "hash": "bca91a9da665ea8c703bd34c00b69748a4162ccf27962a4d0fa71db4481b6b04",
+      "last_checked": "2025-06-06T05:40:54.180132",
+      "status": "unchanged",
+      "etag": "W/\"2ee0831f90dea189948441568d88625a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/configurationwrite32": {
+      "hash": "bca91a9da665ea8c703bd34c00b69748a4162ccf27962a4d0fa71db4481b6b04",
+      "last_checked": "2025-06-06T05:40:54.180132",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/configuration-data-offsets-enum.json": {
+      "hash": "2bb6a72194fb853e1233c5bea88a8a09799e3524f3a24938e28f1a4450b3e079",
+      "last_checked": "2025-06-06T05:40:54.602612",
+      "status": "unchanged",
+      "etag": "W/\"9dc27c144b054f77802c7c827247bb32\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/configuration-data-offsets-enum": {
+      "hash": "2bb6a72194fb853e1233c5bea88a8a09799e3524f3a24938e28f1a4450b3e079",
+      "last_checked": "2025-06-06T05:40:54.602612",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/bridge-header-offsets-enum.json": {
+      "hash": "62b632c4abd580f4a513c3a04e1ec04c8e5dc15a679274417459d18a34fb8f5b",
+      "last_checked": "2025-06-06T05:40:55.134362",
+      "status": "unchanged",
+      "etag": "W/\"82ee3477c6975490deec14a43f1c0916\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/bridge-header-offsets-enum": {
+      "hash": "62b632c4abd580f4a513c3a04e1ec04c8e5dc15a679274417459d18a34fb8f5b",
+      "last_checked": "2025-06-06T05:40:55.134362",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/command-register-bits-enum.json": {
+      "hash": "1cbf13de3454b64afe5db06c33790565ed1977fd36a92b88d3d1d36fe4a4b330",
+      "last_checked": "2025-06-06T05:40:55.553929",
+      "status": "unchanged",
+      "etag": "W/\"89a009e2e905979d75905f8f3856b72a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/command-register-bits-enum": {
+      "hash": "1cbf13de3454b64afe5db06c33790565ed1977fd36a92b88d3d1d36fe4a4b330",
+      "last_checked": "2025-06-06T05:40:55.553929",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/status-register-bits-enum.json": {
+      "hash": "857500a1c67b2be250950e55dbdd0bc45078530434885d2f3123b3dbbf6166b6",
+      "last_checked": "2025-06-06T05:40:55.961222",
+      "status": "unchanged",
+      "etag": "W/\"ca4092bf46101f8254cf55e7254cf85b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/status-register-bits-enum": {
+      "hash": "857500a1c67b2be250950e55dbdd0bc45078530434885d2f3123b3dbbf6166b6",
+      "last_checked": "2025-06-06T05:40:55.961222",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memoryread8-1edw0.json": {
+      "hash": "b110b9d72e33c39fc5d68a792c91466f4693cf144810cebd71e52f69bbf816cf",
+      "last_checked": "2025-06-06T05:40:56.385096",
+      "status": "unchanged",
+      "etag": "W/\"4f61055c6ab6e52828100f0f4ea832e4\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memoryread8-1edw0": {
+      "hash": "b110b9d72e33c39fc5d68a792c91466f4693cf144810cebd71e52f69bbf816cf",
+      "last_checked": "2025-06-06T05:40:56.385096",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memoryread8-7b2zp.json": {
+      "hash": "d55525448e133dc6bbfb928e7ddc7b3a32dcb6cba40f0264a4813af873c3c305",
+      "last_checked": "2025-06-06T05:40:56.809621",
+      "status": "unchanged",
+      "etag": "W/\"c2ae931eb0d0fb050d600ace4433a46e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memoryread8-7b2zp": {
+      "hash": "d55525448e133dc6bbfb928e7ddc7b3a32dcb6cba40f0264a4813af873c3c305",
+      "last_checked": "2025-06-06T05:40:56.809621",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memoryread16-9qkdh.json": {
+      "hash": "2176918be3064bf3aec867e6c95111d21b292569407118190140968edb73621b",
+      "last_checked": "2025-06-06T05:40:57.175975",
+      "status": "unchanged",
+      "etag": "W/\"80fa323da16a7c4157bfd36a90899a8f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memoryread16-9qkdh": {
+      "hash": "2176918be3064bf3aec867e6c95111d21b292569407118190140968edb73621b",
+      "last_checked": "2025-06-06T05:40:57.175975",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memoryread16-50bq8.json": {
+      "hash": "59c4a17809206763a79cb12d60b0c67b4d44746d47d2229103609fbf674a015a",
+      "last_checked": "2025-06-06T05:40:57.531757",
+      "status": "unchanged",
+      "etag": "W/\"671fa9b27ba265ae537328aee8c937d6\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memoryread16-50bq8": {
+      "hash": "59c4a17809206763a79cb12d60b0c67b4d44746d47d2229103609fbf674a015a",
+      "last_checked": "2025-06-06T05:40:57.531757",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memoryread32-60hg9.json": {
+      "hash": "c2ee6105bcf809f8a1c871ca5ba59d81871774554963e20399d7c409bcb6080f",
+      "last_checked": "2025-06-06T05:40:57.862917",
+      "status": "unchanged",
+      "etag": "W/\"b2bfb5108edffcc8833ff556b6f63598\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memoryread32-60hg9": {
+      "hash": "c2ee6105bcf809f8a1c871ca5ba59d81871774554963e20399d7c409bcb6080f",
+      "last_checked": "2025-06-06T05:40:57.862917",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memoryread32-84jap.json": {
+      "hash": "02335e1467dc4e73dcbe5f4eabb98211299df4fe8cc5dec84ce5209e230cb60a",
+      "last_checked": "2025-06-06T05:40:58.256351",
+      "status": "unchanged",
+      "etag": "W/\"3759ad6d7ca02c524db32d102f50131c\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memoryread32-84jap": {
+      "hash": "02335e1467dc4e73dcbe5f4eabb98211299df4fe8cc5dec84ce5209e230cb60a",
+      "last_checked": "2025-06-06T05:40:58.256351",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memoryread64-9ntrf.json": {
+      "hash": "864b4194e0572a7e4eb6d424bfaa3ac104503a8f417869e7b04672469c7003c4",
+      "last_checked": "2025-06-06T05:40:58.654933",
+      "status": "unchanged",
+      "etag": "W/\"42f52d9e684ef2f4df555efba4608cd9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memoryread64-9ntrf": {
+      "hash": "864b4194e0572a7e4eb6d424bfaa3ac104503a8f417869e7b04672469c7003c4",
+      "last_checked": "2025-06-06T05:40:58.654933",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memoryread64-37uob.json": {
+      "hash": "fedeb0018825253d0e5ac276510a98e9881f74d26e4391f082fcc9b9915af71d",
+      "last_checked": "2025-06-06T05:40:59.040220",
+      "status": "unchanged",
+      "etag": "W/\"2bb3f3c00029102838147bbfcd54e0a6\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memoryread64-37uob": {
+      "hash": "fedeb0018825253d0e5ac276510a98e9881f74d26e4391f082fcc9b9915af71d",
+      "last_checked": "2025-06-06T05:40:59.040220",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memorywrite8-1uey6.json": {
+      "hash": "7669e8c1142cd6e77ec767f061487c7c0c75c836d918d6a6efe2fe5447979a07",
+      "last_checked": "2025-06-06T05:40:59.439454",
+      "status": "unchanged",
+      "etag": "W/\"fc83017449f89953dfba670c4bb5d8f5\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memorywrite8-1uey6": {
+      "hash": "7669e8c1142cd6e77ec767f061487c7c0c75c836d918d6a6efe2fe5447979a07",
+      "last_checked": "2025-06-06T05:40:59.439454",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memorywrite8-fzh6.json": {
+      "hash": "3539acd68e16df5a13960ca3e657233fde9bd35a1d3f7f17e98e093fe9993787",
+      "last_checked": "2025-06-06T05:40:59.854956",
+      "status": "unchanged",
+      "etag": "W/\"eb101e7a406c40a59221e611b123cfeb\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memorywrite8-fzh6": {
+      "hash": "3539acd68e16df5a13960ca3e657233fde9bd35a1d3f7f17e98e093fe9993787",
+      "last_checked": "2025-06-06T05:40:59.854956",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memorywrite16-8k6ch.json": {
+      "hash": "5a9a235f5770ee5e118c44e31579bff610cdfd33dca6110536e890e14e3481ef",
+      "last_checked": "2025-06-06T05:41:00.230513",
+      "status": "unchanged",
+      "etag": "W/\"10906e4340b625997eca368fd11111b9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memorywrite16-8k6ch": {
+      "hash": "5a9a235f5770ee5e118c44e31579bff610cdfd33dca6110536e890e14e3481ef",
+      "last_checked": "2025-06-06T05:41:00.230513",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memorywrite16-534yk.json": {
+      "hash": "1e2251e4b79371c4e9067d4a74604a835aa4737360fc841154344688d8727029",
+      "last_checked": "2025-06-06T05:41:00.617049",
+      "status": "unchanged",
+      "etag": "W/\"74f7ef2598063c66be92ce58c2d1e128\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memorywrite16-534yk": {
+      "hash": "1e2251e4b79371c4e9067d4a74604a835aa4737360fc841154344688d8727029",
+      "last_checked": "2025-06-06T05:41:00.617049",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memorywrite32-4pmh.json": {
+      "hash": "8992b9e065e3485e42ba8ac0ff8e2c13db5eba75fe8e089ea5b29658ae808564",
+      "last_checked": "2025-06-06T05:41:01.007698",
+      "status": "unchanged",
+      "etag": "W/\"eb11376699ab4a05648b882cb7c0c94e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memorywrite32-4pmh": {
+      "hash": "8992b9e065e3485e42ba8ac0ff8e2c13db5eba75fe8e089ea5b29658ae808564",
+      "last_checked": "2025-06-06T05:41:01.007698",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memorywrite32-ow7r.json": {
+      "hash": "e30abdb57773b2561fa2f3c175e10f77f33cad37614652ef3153b8c35c1c30fb",
+      "last_checked": "2025-06-06T05:41:01.388594",
+      "status": "unchanged",
+      "etag": "W/\"601ec5b6ab6546a14b81b4422a381e85\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memorywrite32-ow7r": {
+      "hash": "e30abdb57773b2561fa2f3c175e10f77f33cad37614652ef3153b8c35c1c30fb",
+      "last_checked": "2025-06-06T05:41:01.388594",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memorywrite64-8qyob.json": {
+      "hash": "8a342d956dc9037ab5add79f0396273909aaf99cb8861d4ef302eea7108c9a80",
+      "last_checked": "2025-06-06T05:41:01.743060",
+      "status": "unchanged",
+      "etag": "W/\"18770bc21013392bf51862954dd5ee7d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memorywrite64-8qyob": {
+      "hash": "8a342d956dc9037ab5add79f0396273909aaf99cb8861d4ef302eea7108c9a80",
+      "last_checked": "2025-06-06T05:41:01.743060",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/memorywrite64-nvpu.json": {
+      "hash": "41b033ed57e02bddc92828a1deaddf766541fc6e4127d4526dda1275ec510773",
+      "last_checked": "2025-06-06T05:41:02.156286",
+      "status": "unchanged",
+      "etag": "W/\"a047d97a72b59bb7fef01810c6331b7e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/memorywrite64-nvpu": {
+      "hash": "41b033ed57e02bddc92828a1deaddf766541fc6e4127d4526dda1275ec510773",
+      "last_checked": "2025-06-06T05:41:02.156286",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/findpcicapability.json": {
+      "hash": "70a68dc3bc83253bf38b15bd9462719f8ee8d33ee31738c737208e31a1ec6bfa",
+      "last_checked": "2025-06-06T05:41:02.617889",
+      "status": "unchanged",
+      "etag": "W/\"c8dcc0c4818cd086e63c6576715c47f0\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/findpcicapability": {
+      "hash": "70a68dc3bc83253bf38b15bd9462719f8ee8d33ee31738c737208e31a1ec6bfa",
+      "last_checked": "2025-06-06T05:41:02.617889",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/getbusdevicefunction.json": {
+      "hash": "5f9d6d38dd7166b1d6a1f047704a6891b8460717efb7002a61ef1a254fca025a",
+      "last_checked": "2025-06-06T05:41:03.023337",
+      "status": "unchanged",
+      "etag": "W/\"a51a3d31c50e4e0efcd87c100cf21992\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/getbusdevicefunction": {
+      "hash": "5f9d6d38dd7166b1d6a1f047704a6891b8460717efb7002a61ef1a254fca025a",
+      "last_checked": "2025-06-06T05:41:03.023337",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/pci-capabilities-enum.json": {
+      "hash": "24003443ea1ec065bdcc7f02cdf3599e3106b5692d28b9765171c4b9f1bb2a3f",
+      "last_checked": "2025-06-06T05:41:03.384493",
+      "status": "unchanged",
+      "etag": "W/\"3c74f0f9f3300937b1f620f35873f2fa\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/pci-capabilities-enum": {
+      "hash": "24003443ea1ec065bdcc7f02cdf3599e3106b5692d28b9765171c4b9f1bb2a3f",
+      "last_checked": "2025-06-06T05:41:03.384493",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/slot-capabilities-enum.json": {
+      "hash": "07fb590aa4b26806060ffbb733b6710689f4669d87e9f12f4e4708a8235ab115",
+      "last_checked": "2025-06-06T05:41:03.807274",
+      "status": "unchanged",
+      "etag": "W/\"7ade700899f40c074a06ec3960a03219\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/slot-capabilities-enum": {
+      "hash": "07fb590aa4b26806060ffbb733b6710689f4669d87e9f12f4e4708a8235ab115",
+      "last_checked": "2025-06-06T05:41:03.807274",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/haspcipowermanagement.json": {
+      "hash": "70014433469ce17df437c359141466b79fd22e8d957fde6343489c86b683feeb",
+      "last_checked": "2025-06-06T05:41:04.209400",
+      "status": "unchanged",
+      "etag": "W/\"d749777ebf4b0bb2801e977bfbb0f2f0\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/haspcipowermanagement": {
+      "hash": "70014433469ce17df437c359141466b79fd22e8d957fde6343489c86b683feeb",
+      "last_checked": "2025-06-06T05:41:04.209400",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/enablepcipowermanagement.json": {
+      "hash": "0bbf4ce77ca4064b4bf7d8982d6e9d2ce2ad324756ca4563038d4a58536c8c80",
+      "last_checked": "2025-06-06T05:41:04.618654",
+      "status": "unchanged",
+      "etag": "W/\"2e4f895b1339c5edac8b9f6a13711875\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/enablepcipowermanagement": {
+      "hash": "0bbf4ce77ca4064b4bf7d8982d6e9d2ce2ad324756ca4563038d4a58536c8c80",
+      "last_checked": "2025-06-06T05:41:04.618654",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/power-management-capabilities-enum.json": {
+      "hash": "2d45cc893331407f14d28f5bad82450dd8f5d8e4badd05d90011b48266099f72",
+      "last_checked": "2025-06-06T05:41:04.991715",
+      "status": "unchanged",
+      "etag": "W/\"8ffa0a47234711c358b2bc0eff14f2b9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/power-management-capabilities-enum": {
+      "hash": "2d45cc893331407f14d28f5bad82450dd8f5d8e4badd05d90011b48266099f72",
+      "last_checked": "2025-06-06T05:41:04.991715",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/power-management-control-status-register-enum.json": {
+      "hash": "2b4c941867fcb87f81b41eb674df84664a650c4536386a334d123933632a01e5",
+      "last_checked": "2025-06-06T05:41:05.381041",
+      "status": "unchanged",
+      "etag": "W/\"14f5fecad20531a0caaf665f59a09398\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/power-management-control-status-register-enum": {
+      "hash": "2b4c941867fcb87f81b41eb674df84664a650c4536386a334d123933632a01e5",
+      "last_checked": "2025-06-06T05:41:05.381041",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/correctable-error-bits-enum.json": {
+      "hash": "a2442687fd8a1fb8798bc5c768d4a2ae9d678227402bba920fa89d1fbee876f3",
+      "last_checked": "2025-06-06T05:41:05.795904",
+      "status": "unchanged",
+      "etag": "W/\"fa623f0ea2e15b69217a395ca41f2821\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/correctable-error-bits-enum": {
+      "hash": "a2442687fd8a1fb8798bc5c768d4a2ae9d678227402bba920fa89d1fbee876f3",
+      "last_checked": "2025-06-06T05:41:05.795904",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/uncorrectable-error-bits-enum.json": {
+      "hash": "5ed0a993c41307c15c93df31f3ca2ba16496cc6c3a6c4dbf28bac48e74f98b97",
+      "last_checked": "2025-06-06T05:41:06.188584",
+      "status": "unchanged",
+      "etag": "W/\"33f590b02b6ea6dc1c07c8757fc2fba8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/uncorrectable-error-bits-enum": {
+      "hash": "5ed0a993c41307c15c93df31f3ca2ba16496cc6c3a6c4dbf28bac48e74f98b97",
+      "last_checked": "2025-06-06T05:41:06.188584",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/clientcrashed.json": {
+      "hash": "c8e72de1c97909bace14c67c3579065bef79ff0e88b22267fa881ae3abd8bbf6",
+      "last_checked": "2025-06-06T05:41:06.589684",
+      "status": "unchanged",
+      "etag": "W/\"49b9d82a1419fba6ae36302f99062265\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/clientcrashed": {
+      "hash": "c8e72de1c97909bace14c67c3579065bef79ff0e88b22267fa881ae3abd8bbf6",
+      "last_checked": "2025-06-06T05:41:06.589684",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/configureinterrupts.json": {
+      "hash": "bfe05423e5c1dec1a315d3ac772802f70a0b6a36120b18d60ad446d8503fcd14",
+      "last_checked": "2025-06-06T05:41:07.157097",
+      "status": "unchanged",
+      "etag": "W/\"34c438effca1f4288ce70c7c1ed9ad76\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/configureinterrupts": {
+      "hash": "bfe05423e5c1dec1a315d3ac772802f70a0b6a36120b18d60ad446d8503fcd14",
+      "last_checked": "2025-06-06T05:41:07.157097",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/getbarinfo.json": {
+      "hash": "01a9244420ec33b4a686135643d00824aa89b5023c1d60f2bf4687074d03fd21",
+      "last_checked": "2025-06-06T05:41:07.542487",
+      "status": "unchanged",
+      "etag": "W/\"e802dee10bb20888f7d6381ed867d5f9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/getbarinfo": {
+      "hash": "01a9244420ec33b4a686135643d00824aa89b5023c1d60f2bf4687074d03fd21",
+      "last_checked": "2025-06-06T05:41:07.542487",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/getlinkspeed.json": {
+      "hash": "1f15fd97fe991936637ef6346d7ab6eb6f4b142727ac995b2853c153b2d00816",
+      "last_checked": "2025-06-06T05:41:07.929076",
+      "status": "unchanged",
+      "etag": "W/\"1d9c2ce2ae17a7d7d12abc3662684f1f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/getlinkspeed": {
+      "hash": "1f15fd97fe991936637ef6346d7ab6eb6f4b142727ac995b2853c153b2d00816",
+      "last_checked": "2025-06-06T05:41:07.929076",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/reset.json": {
+      "hash": "2d809b7e9d385daa4e2941b7c7311e1e3290320bf765cfbbd5770e5017a89682",
+      "last_checked": "2025-06-06T05:41:08.327980",
+      "status": "unchanged",
+      "etag": "W/\"c19a303c0b61f33d65775f5368a6fc59\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/reset": {
+      "hash": "2d809b7e9d385daa4e2941b7c7311e1e3290320bf765cfbbd5770e5017a89682",
+      "last_checked": "2025-06-06T05:41:08.327980",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/restoredevicestate.json": {
+      "hash": "ab1594adaa6d8f96640a6c90639a1cf63620752b549d25f8368025a9c9a4e615",
+      "last_checked": "2025-06-06T05:41:08.708488",
+      "status": "unchanged",
+      "etag": "W/\"fab6687f82847e282ed8b2e75b7dbe8f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/restoredevicestate": {
+      "hash": "ab1594adaa6d8f96640a6c90639a1cf63620752b549d25f8368025a9c9a4e615",
+      "last_checked": "2025-06-06T05:41:08.708488",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/savedevicestate.json": {
+      "hash": "2498e95ef5c41a021bab70d9af6eca5784a61d515061c21954149f331531183f",
+      "last_checked": "2025-06-06T05:41:09.053393",
+      "status": "unchanged",
+      "etag": "W/\"84a61e9a16fc8ad2c7c79271e9b9ddd8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/savedevicestate": {
+      "hash": "2498e95ef5c41a021bab70d9af6eca5784a61d515061c21954149f331531183f",
+      "last_checked": "2025-06-06T05:41:09.053393",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/setaspmstate.json": {
+      "hash": "12ce4079a3f51f353feec0a1ae76589718028ccfb13e65384081f03e5f5b1ede",
+      "last_checked": "2025-06-06T05:41:09.467941",
+      "status": "unchanged",
+      "etag": "W/\"8cfe99f38890e3c90dc9e9a301335815\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/setaspmstate": {
+      "hash": "12ce4079a3f51f353feec0a1ae76589718028ccfb13e65384081f03e5f5b1ede",
+      "last_checked": "2025-06-06T05:41:09.467941",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/setlinkspeed.json": {
+      "hash": "1269476bef0f833ad2873697ab25debb0b74dadd18ebd1a493d80f6d7b70d9a1",
+      "last_checked": "2025-06-06T05:41:09.831095",
+      "status": "unchanged",
+      "etag": "W/\"07576c0666d0fe442e07581e411499c4\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/setlinkspeed": {
+      "hash": "1269476bef0f833ad2873697ab25debb0b74dadd18ebd1a493d80f6d7b70d9a1",
+      "last_checked": "2025-06-06T05:41:09.831095",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcidevice/setproperties.json": {
+      "hash": "b4b0a055a1c158566de2c2dc6e81087fdea16f72eb7fee2346ae257e88556bdc",
+      "last_checked": "2025-06-06T05:41:10.233330",
+      "status": "unchanged",
+      "etag": "W/\"e5d171a49e55b2b0b61efb5136fb624e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcidevice/setproperties": {
+      "hash": "b4b0a055a1c158566de2c2dc6e81087fdea16f72eb7fee2346ae257e88556bdc",
+      "last_checked": "2025-06-06T05:41:10.233330",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/anonymous-enum.json": {
+      "hash": "c5391a555b6acc2b7fdb9d41341b01528a39aa86dfa79db6bdcdf585ebf5cfd8",
+      "last_checked": "2025-06-06T05:41:10.595196",
+      "status": "unchanged",
+      "etag": "W/\"faf330f0081658737b105d9030c2b4da\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/anonymous-enum": {
+      "hash": "c5391a555b6acc2b7fdb9d41341b01528a39aa86dfa79db6bdcdf585ebf5cfd8",
+      "last_checked": "2025-06-06T05:41:10.595196",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopciaccessoptions.json": {
+      "hash": "9b8e51dea1260f8e28b346a396083653849ef884954a243082a61d4aea9d5f7d",
+      "last_checked": "2025-06-06T05:41:10.997311",
+      "status": "unchanged",
+      "etag": "W/\"66c6d42512e9978ebbb997b8b6951ab6\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopciaccessoptions": {
+      "hash": "9b8e51dea1260f8e28b346a396083653849ef884954a243082a61d4aea9d5f7d",
+      "last_checked": "2025-06-06T05:41:10.997311",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcideviceresetoptions.json": {
+      "hash": "4edac13189ece1e92c7adbea8ea0e0db41323185c1486998bc416b97e37f2a85",
+      "last_checked": "2025-06-06T05:41:11.348972",
+      "status": "unchanged",
+      "etag": "W/\"b2d22212c5f61c49b714a98084e33b93\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcideviceresetoptions": {
+      "hash": "4edac13189ece1e92c7adbea8ea0e0db41323185c1486998bc416b97e37f2a85",
+      "last_checked": "2025-06-06T05:41:11.348972",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcideviceresettypes.json": {
+      "hash": "79e17ffa518b43303cae645c67e394c4d0e5158d05d7c0e28b65b024736f68c7",
+      "last_checked": "2025-06-06T05:41:11.736044",
+      "status": "unchanged",
+      "etag": "W/\"c6a130aa6bc4d3a2468b62bce2cc7bda\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcideviceresettypes": {
+      "hash": "79e17ffa518b43303cae645c67e394c4d0e5158d05d7c0e28b65b024736f68c7",
+      "last_checked": "2025-06-06T05:41:11.736044",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed.json": {
+      "hash": "75840dd9e286ca1a8bb44b5d61b5cd9857d3b4f0f006f1fb4d0c7f703dd61a60",
+      "last_checked": "2025-06-06T05:41:12.135402",
+      "status": "unchanged",
+      "etag": "W/\"856e75b27b63e3d5f5bff74dd9512922\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed": {
+      "hash": "75840dd9e286ca1a8bb44b5d61b5cd9857d3b4f0f006f1fb4d0c7f703dd61a60",
+      "last_checked": "2025-06-06T05:41:12.135402",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcibartype.json": {
+      "hash": "17460420f0eda69981372183e67ad9e7e5c31c7fa587736543e0c4507c2d8490",
+      "last_checked": "2025-06-06T05:41:12.488931",
+      "status": "unchanged",
+      "etag": "W/\"cf07fc1d3cb45620c72e980289899476\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcibartype": {
+      "hash": "17460420f0eda69981372183e67ad9e7e5c31c7fa587736543e0c4507c2d8490",
+      "last_checked": "2025-06-06T05:41:12.488931",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed.json": {
+      "hash": "bf5129c3485cbc8f27aa47dabd6daec818fcab4873aa59b1f435355a677d2bb6",
+      "last_checked": "2025-06-06T05:41:12.835528",
+      "status": "unchanged",
+      "etag": "W/\"bd0caea47cc8afee27f8b5e1a88fe44b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed": {
+      "hash": "bf5129c3485cbc8f27aa47dabd6daec818fcab4873aa59b1f435355a677d2bb6",
+      "last_checked": "2025-06-06T05:41:12.835528",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcimemoryrange.json": {
+      "hash": "a99ff9f22a43129a5f5a3baafd5605409b20ac211139eac85605b9d0f50b8eb4",
+      "last_checked": "2025-06-06T05:41:13.235803",
+      "status": "unchanged",
+      "etag": "W/\"652dc5ca8fb342aba1de91b004b218a8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcimemoryrange": {
+      "hash": "a99ff9f22a43129a5f5a3baafd5605409b20ac211139eac85605b9d0f50b8eb4",
+      "last_checked": "2025-06-06T05:41:13.235803",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcisavedevicestateoptions.json": {
+      "hash": "7944081e830c9f8dbc0166b88159c4622cb1310af69dd40c438a29440743d012",
+      "last_checked": "2025-06-06T05:41:13.585283",
+      "status": "unchanged",
+      "etag": "W/\"b5106f5fe44d6e5a866547ced52c0680\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcisavedevicestateoptions": {
+      "hash": "7944081e830c9f8dbc0166b88159c4622cb1310af69dd40c438a29440743d012",
+      "last_checked": "2025-06-06T05:41:13.585283",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkcontrolaspmbits.json": {
+      "hash": "7a2408d331df131e54bdaf83ee51eb6eab30a8fea239376f2e010729afebe340",
+      "last_checked": "2025-06-06T05:41:13.964034",
+      "status": "unchanged",
+      "etag": "W/\"8929e82efa76237c67c83e922ffe8356\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkcontrolaspmbits": {
+      "hash": "7a2408d331df131e54bdaf83ee51eb6eab30a8fea239376f2e010729afebe340",
+      "last_checked": "2025-06-06T05:41:13.964034",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/interrupt-types-enum.json": {
+      "hash": "b7060a06bf8e91b28795aab171eddd67fe1acff983224a020d6a6edf7fc55c07",
+      "last_checked": "2025-06-06T05:41:14.362413",
+      "status": "unchanged",
+      "etag": "W/\"0b4913c0b7edb98eaac110f7473d7c1a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/interrupt-types-enum": {
+      "hash": "b7060a06bf8e91b28795aab171eddd67fe1acff983224a020d6a6edf7fc55c07",
+      "last_checked": "2025-06-06T05:41:14.362413",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciclassmatchkey.json": {
+      "hash": "cc6fd78eef0e148783638eccfbcc4cb89b053ca62dddf4402a1f8e7214b75d02",
+      "last_checked": "2025-06-06T05:41:14.773424",
+      "status": "unchanged",
+      "etag": "W/\"b3863c24e2ec3c161699b8c47ca8c589\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciclassmatchkey": {
+      "hash": "cc6fd78eef0e148783638eccfbcc4cb89b053ca62dddf4402a1f8e7214b75d02",
+      "last_checked": "2025-06-06T05:41:14.773424",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcidevicecrashresettype.json": {
+      "hash": "58e045a1f1a21141ee130f3c83dd97538f89c69e962ef336d273805ea5ca289d",
+      "last_checked": "2025-06-06T05:41:15.176101",
+      "status": "unchanged",
+      "etag": "W/\"de06d3ad8ba56364ca655bb4553585bc\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcidevicecrashresettype": {
+      "hash": "58e045a1f1a21141ee130f3c83dd97538f89c69e962ef336d273805ea5ca289d",
+      "last_checked": "2025-06-06T05:41:15.176101",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcidevicemapperpagesize.json": {
+      "hash": "ca73b40e1f05dc7049664d474095d5f9d96a6948bca84b6b0f1453600f1a6c1a",
+      "last_checked": "2025-06-06T05:41:15.563928",
+      "status": "unchanged",
+      "etag": "W/\"ff126717ab9b1373c16e87662f1a7cfd\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcidevicemapperpagesize": {
+      "hash": "ca73b40e1f05dc7049664d474095d5f9d96a6948bca84b6b0f1453600f1a6c1a",
+      "last_checked": "2025-06-06T05:41:15.563928",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcidevicememoryarraykey.json": {
+      "hash": "840ecbb6593a81cd4aa8ed8ab56c7c0c948bd4712b81fc8ac76144e5151dd55b",
+      "last_checked": "2025-06-06T05:41:15.937609",
+      "status": "unchanged",
+      "etag": "W/\"eea3772d2783c79b67ca5e09cacb0503\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcidevicememoryarraykey": {
+      "hash": "840ecbb6593a81cd4aa8ed8ab56c7c0c948bd4712b81fc8ac76144e5151dd55b",
+      "last_checked": "2025-06-06T05:41:15.937609",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcidevicememorymapbase.json": {
+      "hash": "a442379fb02389a5fb62c275dea732bac14ea021aeef816fc4f8ab1459641656",
+      "last_checked": "2025-06-06T05:41:16.298878",
+      "status": "unchanged",
+      "etag": "W/\"e080349b63a9a69dc69b63de51023b05\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcidevicememorymapbase": {
+      "hash": "a442379fb02389a5fb62c275dea732bac14ea021aeef816fc4f8ab1459641656",
+      "last_checked": "2025-06-06T05:41:16.298878",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcidevicememorymapsize.json": {
+      "hash": "e8cc6a47b983cc131345266d6f56bb33d11c10fe7b834d62a132cc8e934499b8",
+      "last_checked": "2025-06-06T05:41:16.652925",
+      "status": "unchanged",
+      "etag": "W/\"6966a1a23b0240ee10c467a36381219d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcidevicememorymapsize": {
+      "hash": "e8cc6a47b983cc131345266d6f56bb33d11c10fe7b834d62a132cc8e934499b8",
+      "last_checked": "2025-06-06T05:41:16.652925",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciendpointprsnt.json": {
+      "hash": "d9d65629ffe364e1bbcccec48753f8911548a0215491c09bb133bfce1a1f0507",
+      "last_checked": "2025-06-06T05:41:17.036071",
+      "status": "unchanged",
+      "etag": "W/\"02397ba7face85f8ef599f6ee353ab5d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciendpointprsnt": {
+      "hash": "d9d65629ffe364e1bbcccec48753f8911548a0215491c09bb133bfce1a1f0507",
+      "last_checked": "2025-06-06T05:41:17.036071",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilitieskey.json": {
+      "hash": "2e4720eb4b72eaa7481da1a5387f4ee85fe2a4f4c2c2718209a641f9918331b3",
+      "last_checked": "2025-06-06T05:41:17.414621",
+      "status": "unchanged",
+      "etag": "W/\"6dedbc470681ccc101385d3ae74f0180\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilitieskey": {
+      "hash": "2e4720eb4b72eaa7481da1a5387f4ee85fe2a4f4c2c2718209a641f9918331b3",
+      "last_checked": "2025-06-06T05:41:17.414621",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresslinkcapabilitieskey.json": {
+      "hash": "8cbb2aa670ee2b025a7fbc7f959ff62acdf3bc43d39f768310c2d6d4984c8ef3",
+      "last_checked": "2025-06-06T05:41:17.804031",
+      "status": "unchanged",
+      "etag": "W/\"ab1734c06f2c927e5c94697264c3f5bd\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresslinkcapabilitieskey": {
+      "hash": "8cbb2aa670ee2b025a7fbc7f959ff62acdf3bc43d39f768310c2d6d4984c8ef3",
+      "last_checked": "2025-06-06T05:41:17.804031",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresslinkstatuskey.json": {
+      "hash": "83b477ae265c5b16e7dc25ca56847d47419170eae5a5690f36d34aa2c79f90a9",
+      "last_checked": "2025-06-06T05:41:18.186991",
+      "status": "unchanged",
+      "etag": "W/\"291adaa8769f2adf27ac55914cf508d4\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresslinkstatuskey": {
+      "hash": "83b477ae265c5b16e7dc25ca56847d47419170eae5a5690f36d34aa2c79f90a9",
+      "last_checked": "2025-06-06T05:41:18.186991",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpressslotcapabilitieskey.json": {
+      "hash": "318fb51fda711b144be2adaa322505942d567974fe0b6c4ad6defa76f55b127b",
+      "last_checked": "2025-06-06T05:41:18.512436",
+      "status": "unchanged",
+      "etag": "W/\"a05af10c5457c68f19eb67feb1fe45bb\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpressslotcapabilitieskey": {
+      "hash": "318fb51fda711b144be2adaa322505942d567974fe0b6c4ad6defa76f55b127b",
+      "last_checked": "2025-06-06T05:41:18.512436",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpressslotstatuskey.json": {
+      "hash": "a0b9dd5da9975cccb1e1b41e3c820f6bf1c0336a065129b01c28c460e559a947",
+      "last_checked": "2025-06-06T05:41:18.879449",
+      "status": "unchanged",
+      "etag": "W/\"3d8f682bc564768a5d4ce422a19daeb4\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpressslotstatuskey": {
+      "hash": "a0b9dd5da9975cccb1e1b41e3c820f6bf1c0336a065129b01c28c460e559a947",
+      "last_checked": "2025-06-06T05:41:18.879449",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcikernelmemoryaccess.json": {
+      "hash": "848fd03b32ae2329cda83579b14fb566382cdf64e4a3aaad4f487008e04a1859",
+      "last_checked": "2025-06-06T05:41:19.246100",
+      "status": "unchanged",
+      "etag": "W/\"33f0d738725623e3a80ae8b388ac06a7\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcikernelmemoryaccess": {
+      "hash": "848fd03b32ae2329cda83579b14fb566382cdf64e4a3aaad4f487008e04a1859",
+      "last_checked": "2025-06-06T05:41:19.246100",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcimatchkey.json": {
+      "hash": "20ee546e1a8962dd9e340dcdb7025567be6f78b0e765577b2734561a08235ba0",
+      "last_checked": "2025-06-06T05:41:19.650105",
+      "status": "unchanged",
+      "etag": "W/\"1397467f90b20e83a42579c7892d94e6\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcimatchkey": {
+      "hash": "20ee546e1a8962dd9e340dcdb7025567be6f78b0e765577b2734561a08235ba0",
+      "last_checked": "2025-06-06T05:41:19.650105",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcipausecompatiblekey.json": {
+      "hash": "c66774c4d42fc0132170fd1873a214e17385ca84feaacabf82a256a2961cdab9",
+      "last_checked": "2025-06-06T05:41:20.053493",
+      "status": "unchanged",
+      "etag": "W/\"2302f56d66b40080d70e69b7b6cf3e05\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcipausecompatiblekey": {
+      "hash": "c66774c4d42fc0132170fd1873a214e17385ca84feaacabf82a256a2961cdab9",
+      "last_checked": "2025-06-06T05:41:20.053493",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciprimarymatchkey.json": {
+      "hash": "354872f41aa4942abbdfdab379d9b3b9aebeb7b7e262307e4767034adc169d4e",
+      "last_checked": "2025-06-06T05:41:20.432229",
+      "status": "unchanged",
+      "etag": "W/\"aae9ffb468bd759ab9086e295ae0dbc8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciprimarymatchkey": {
+      "hash": "354872f41aa4942abbdfdab379d9b3b9aebeb7b7e262307e4767034adc169d4e",
+      "last_checked": "2025-06-06T05:41:20.432229",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciretrainlinkkey.json": {
+      "hash": "013367910ad70ff0562fad763e55fe30b42bb4149b905c1149b6a0a623b7ce73",
+      "last_checked": "2025-06-06T05:41:20.805654",
+      "status": "unchanged",
+      "etag": "W/\"9667fc9ddeffa27e2bd0b2c19477ebc8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciretrainlinkkey": {
+      "hash": "013367910ad70ff0562fad763e55fe30b42bb4149b905c1149b6a0a623b7ce73",
+      "last_checked": "2025-06-06T05:41:20.805654",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciretrainlinkmaskkey.json": {
+      "hash": "3d3873318c483764722c6f25a9ffa74f45c53e6b6a3f60655adf1d2f60dcee8b",
+      "last_checked": "2025-06-06T05:41:21.213239",
+      "status": "unchanged",
+      "etag": "W/\"7cd153512467775313dce7c4c093d3e4\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciretrainlinkmaskkey": {
+      "hash": "3d3873318c483764722c6f25a9ffa74f45c53e6b6a3f60655adf1d2f60dcee8b",
+      "last_checked": "2025-06-06T05:41:21.213239",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcisecondarymatchkey.json": {
+      "hash": "0be03c1a03c09eef63333894e1a7505513de9d021421eb89400616e7caa5cec9",
+      "last_checked": "2025-06-06T05:41:21.554744",
+      "status": "unchanged",
+      "etag": "W/\"ab33836fb2de795bbc6aadc1303b00c8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcisecondarymatchkey": {
+      "hash": "0be03c1a03c09eef63333894e1a7505513de9d021421eb89400616e7caa5cec9",
+      "last_checked": "2025-06-06T05:41:21.554744",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcitunnelcompatiblekey.json": {
+      "hash": "471b700b2e32994bef354a0510816a80b98be0004d8690a692e116064991e845",
+      "last_checked": "2025-06-06T05:41:21.992959",
+      "status": "unchanged",
+      "etag": "W/\"4ced3689a13dc6f8fff1401b52ff1da7\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcitunnelcompatiblekey": {
+      "hash": "471b700b2e32994bef354a0510816a80b98be0004d8690a692e116064991e845",
+      "last_checked": "2025-06-06T05:41:21.992959",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcitunnell1enablekey.json": {
+      "hash": "31b25efd65dfbaa44be85a87e2cb522f046b7d5408d1b5dddd33c70e416951ca",
+      "last_checked": "2025-06-06T05:41:22.341240",
+      "status": "unchanged",
+      "etag": "W/\"7a570f045ebfcf9acfca0bf4d39eb7d2\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcitunnell1enablekey": {
+      "hash": "31b25efd65dfbaa44be85a87e2cb522f046b7d5408d1b5dddd33c70e416951ca",
+      "last_checked": "2025-06-06T05:41:22.341240",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcitunnelrootdevicemodelidkey.json": {
+      "hash": "d7655efbd93a5acf82eeacfc0bfd42b5517c39a3f1bdfb76f7997f6d33718227",
+      "last_checked": "2025-06-06T05:41:22.718145",
+      "status": "unchanged",
+      "etag": "W/\"c2e4581f696d0cd6487a57364f3ebbfc\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcitunnelrootdevicemodelidkey": {
+      "hash": "d7655efbd93a5acf82eeacfc0bfd42b5517c39a3f1bdfb76f7997f6d33718227",
+      "last_checked": "2025-06-06T05:41:22.718145",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcitunnelrootdevicevendoridkey.json": {
+      "hash": "1da203bdc453bd10fc0fc86c97fb992d6a8242951e4582e2d75103fdadc1d1bd",
+      "last_checked": "2025-06-06T05:41:23.119348",
+      "status": "unchanged",
+      "etag": "W/\"4902f7b2fd71b51454f902171d217447\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcitunnelrootdevicevendoridkey": {
+      "hash": "1da203bdc453bd10fc0fc86c97fb992d6a8242951e4582e2d75103fdadc1d1bd",
+      "last_checked": "2025-06-06T05:41:23.119348",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcitunnelledkey.json": {
+      "hash": "2477e2d6439648c0b339f799f48afd622305f8a7102e63c29efb2bc98ba462de",
+      "last_checked": "2025-06-06T05:41:23.489994",
+      "status": "unchanged",
+      "etag": "W/\"864baa8401e2b4b8cca773e0d1fbd2d2\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcitunnelledkey": {
+      "hash": "2477e2d6439648c0b339f799f48afd622305f8a7102e63c29efb2bc98ba462de",
+      "last_checked": "2025-06-06T05:41:23.489994",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciwaitforlinkupkey.json": {
+      "hash": "6df4875640b72dc4bdf2f6a0a7036ab218a003b01956067af0ca1748d586ce8f",
+      "last_checked": "2025-06-06T05:41:23.843518",
+      "status": "unchanged",
+      "etag": "W/\"7bd48a639ee9aad2a9a538674eead095\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciwaitforlinkupkey": {
+      "hash": "6df4875640b72dc4bdf2f6a0a7036ab218a003b01956067af0ca1748d586ce8f",
+      "last_checked": "2025-06-06T05:41:23.843518",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopmpciconfigspacevolatilekey.json": {
+      "hash": "a6ca2011b9034e5c0963320e233d7c9f7caf38b7494b016b8e2da205cca5ff62",
+      "last_checked": "2025-06-06T05:41:24.200065",
+      "status": "unchanged",
+      "etag": "W/\"d1fbac2f24f9c3ab85bc59ae6b4f377d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopmpciconfigspacevolatilekey": {
+      "hash": "a6ca2011b9034e5c0963320e233d7c9f7caf38b7494b016b8e2da205cca5ff62",
+      "last_checked": "2025-06-06T05:41:24.200065",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopmpcisleeplinkdisablekey.json": {
+      "hash": "8024bf370ea674eaf7d09770afc9b644083d5d5ecab93d049fa62b343c1ad350",
+      "last_checked": "2025-06-06T05:41:24.563880",
+      "status": "unchanged",
+      "etag": "W/\"a654813c1ee3da08980500a6cd1b42b5\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopmpcisleeplinkdisablekey": {
+      "hash": "8024bf370ea674eaf7d09770afc9b644083d5d5ecab93d049fa62b343c1ad350",
+      "last_checked": "2025-06-06T05:41:24.563880",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopmpcisleepresetkey.json": {
+      "hash": "316136bce15307cf8d2a96c23b14d3d969c05d2fb1f2aaa17689a616a39feb03",
+      "last_checked": "2025-06-06T05:41:24.964365",
+      "status": "unchanged",
+      "etag": "W/\"02fd02526b1991f463cdb50e2fa3d762\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopmpcisleepresetkey": {
+      "hash": "316136bce15307cf8d2a96c23b14d3d969c05d2fb1f2aaa17689a616a39feb03",
+      "last_checked": "2025-06-06T05:41:24.964365",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetvendorid.json": {
+      "hash": "4bb1ae951bceddc2f0f9022f53470db3d98739f57953b626c5e0f0b5a606b723",
+      "last_checked": "2025-06-06T05:41:25.319665",
+      "status": "unchanged",
+      "etag": "W/\"89c8d75fa8bf794a3142e748a690c4dc\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetvendorid": {
+      "hash": "4bb1ae951bceddc2f0f9022f53470db3d98739f57953b626c5e0f0b5a606b723",
+      "last_checked": "2025-06-06T05:41:25.319665",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetdeviceid.json": {
+      "hash": "d67a97197907d15e252823154a41d00c95231e9f2dc412946ce435fa4f04446c",
+      "last_checked": "2025-06-06T05:41:25.675037",
+      "status": "unchanged",
+      "etag": "W/\"3fc72bd44e02ffd996e286679b68e97b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetdeviceid": {
+      "hash": "d67a97197907d15e252823154a41d00c95231e9f2dc412946ce435fa4f04446c",
+      "last_checked": "2025-06-06T05:41:25.675037",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetcommand.json": {
+      "hash": "2db3089a4dc76f022425611a1c0955e4c7b649d0ddbfd0e920d837c803c2eb45",
+      "last_checked": "2025-06-06T05:41:26.198311",
+      "status": "unchanged",
+      "etag": "W/\"00215d2aed046c76c60ead3ff70f9bc2\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetcommand": {
+      "hash": "2db3089a4dc76f022425611a1c0955e4c7b649d0ddbfd0e920d837c803c2eb45",
+      "last_checked": "2025-06-06T05:41:26.198311",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetstatus.json": {
+      "hash": "3f0cfcc1cd14220c2edd4c53c4e08d977d0189f9df22aac3fdaef0159a795fe8",
+      "last_checked": "2025-06-06T05:41:26.637197",
+      "status": "unchanged",
+      "etag": "W/\"097680d14be6ccb2eab489c6e82d4fae\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetstatus": {
+      "hash": "3f0cfcc1cd14220c2edd4c53c4e08d977d0189f9df22aac3fdaef0159a795fe8",
+      "last_checked": "2025-06-06T05:41:26.637197",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetrevisionid.json": {
+      "hash": "ef9acb7d3fa0cf46c2fc273e5687e497fd3d94de64defb4dd952622bca836ab7",
+      "last_checked": "2025-06-06T05:41:27.189286",
+      "status": "unchanged",
+      "etag": "W/\"9c5c71194c39b609a1c2e1a391854801\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetrevisionid": {
+      "hash": "ef9acb7d3fa0cf46c2fc273e5687e497fd3d94de64defb4dd952622bca836ab7",
+      "last_checked": "2025-06-06T05:41:27.189286",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetclasscode.json": {
+      "hash": "428c65355f06be7079480abde825b1de0f8229b3d898d69e802cc300b7df9528",
+      "last_checked": "2025-06-06T05:41:27.729660",
+      "status": "unchanged",
+      "etag": "W/\"8beadd310ddfdd0173e37cd4a69762d7\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetclasscode": {
+      "hash": "428c65355f06be7079480abde825b1de0f8229b3d898d69e802cc300b7df9528",
+      "last_checked": "2025-06-06T05:41:27.729660",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetcachelinesize.json": {
+      "hash": "912df8155ed24f70e67396b4ceed380eb2115efb776ce34ab0be47ec441e1b30",
+      "last_checked": "2025-06-06T05:41:28.282653",
+      "status": "unchanged",
+      "etag": "W/\"b5bb1707b5d499c24d13a6bc02ce219b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetcachelinesize": {
+      "hash": "912df8155ed24f70e67396b4ceed380eb2115efb776ce34ab0be47ec441e1b30",
+      "last_checked": "2025-06-06T05:41:28.282653",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetlatencytimer.json": {
+      "hash": "ce3204b3a6ebd07eebb60ec72dd89163728e7125c173ba84e3f22a0365fa3864",
+      "last_checked": "2025-06-06T05:41:28.722735",
+      "status": "unchanged",
+      "etag": "W/\"50df3bc6c488851d662ff541543215a8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetlatencytimer": {
+      "hash": "ce3204b3a6ebd07eebb60ec72dd89163728e7125c173ba84e3f22a0365fa3864",
+      "last_checked": "2025-06-06T05:41:28.722735",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetheadertype.json": {
+      "hash": "6115e665c1884ecd3a2afd500bd723185847e83ba8d6d60f91c8a7217811ec42",
+      "last_checked": "2025-06-06T05:41:29.134679",
+      "status": "unchanged",
+      "etag": "W/\"0d9fd6dbe34c187d99d20ae379c7effa\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetheadertype": {
+      "hash": "6115e665c1884ecd3a2afd500bd723185847e83ba8d6d60f91c8a7217811ec42",
+      "last_checked": "2025-06-06T05:41:29.134679",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetbist.json": {
+      "hash": "ebabb31ca1b5fcee2803a2f1a91c193d7e611430672bd1ea83ab24c8e91ee46e",
+      "last_checked": "2025-06-06T05:41:29.678906",
+      "status": "unchanged",
+      "etag": "W/\"fb9bab2bbbd21c375573e5c3c975ce58\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetbist": {
+      "hash": "ebabb31ca1b5fcee2803a2f1a91c193d7e611430672bd1ea83ab24c8e91ee46e",
+      "last_checked": "2025-06-06T05:41:29.678906",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress0.json": {
+      "hash": "cf038e47f73b9ddd44bb6e87ff4dbdd7a9e6a94a8f10ff199f1d330264d46b1b",
+      "last_checked": "2025-06-06T05:41:30.242758",
+      "status": "unchanged",
+      "etag": "W/\"9fcba6a2826d21297c4017eae371b38c\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress0": {
+      "hash": "cf038e47f73b9ddd44bb6e87ff4dbdd7a9e6a94a8f10ff199f1d330264d46b1b",
+      "last_checked": "2025-06-06T05:41:30.242758",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress1.json": {
+      "hash": "18d53f703a617f27028bbba3e48b42f6ca071bebef15965edb1f770e90b9d37f",
+      "last_checked": "2025-06-06T05:41:30.760001",
+      "status": "unchanged",
+      "etag": "W/\"376d7cf85752d276e124440db0eafd51\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress1": {
+      "hash": "18d53f703a617f27028bbba3e48b42f6ca071bebef15965edb1f770e90b9d37f",
+      "last_checked": "2025-06-06T05:41:30.760001",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress2.json": {
+      "hash": "d10eb07106e3789966fca4b1d81ece8fefc43da0f78a05bbed753d0acb089ad1",
+      "last_checked": "2025-06-06T05:41:31.348573",
+      "status": "unchanged",
+      "etag": "W/\"ec6792774790dfbbdd19679fb4b254cf\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress2": {
+      "hash": "d10eb07106e3789966fca4b1d81ece8fefc43da0f78a05bbed753d0acb089ad1",
+      "last_checked": "2025-06-06T05:41:31.348573",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress3.json": {
+      "hash": "4865b1f64661c6aeabb9e1cf5a68de6c7dc2d824ddad24f395e0a0a4a4455e71",
+      "last_checked": "2025-06-06T05:41:31.924755",
+      "status": "unchanged",
+      "etag": "W/\"71349bd18d173f1877915bf142f23af2\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress3": {
+      "hash": "4865b1f64661c6aeabb9e1cf5a68de6c7dc2d824ddad24f395e0a0a4a4455e71",
+      "last_checked": "2025-06-06T05:41:31.924755",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress4.json": {
+      "hash": "26cc221316ddd125f01bea54f5afd62b0487b7921334803a69c38c27bbf7e951",
+      "last_checked": "2025-06-06T05:41:32.330220",
+      "status": "unchanged",
+      "etag": "W/\"51ec1403507eecee13aecf219a71baa0\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress4": {
+      "hash": "26cc221316ddd125f01bea54f5afd62b0487b7921334803a69c38c27bbf7e951",
+      "last_checked": "2025-06-06T05:41:32.330220",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress5.json": {
+      "hash": "ed22eb6d71314442f3e4bbddd2f57c7b703f4795f8daf72864b0192a1f7476bb",
+      "last_checked": "2025-06-06T05:41:32.889740",
+      "status": "unchanged",
+      "etag": "W/\"f5901a029461a1908f26c9b8c97fd212\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetbaseaddress5": {
+      "hash": "ed22eb6d71314442f3e4bbddd2f57c7b703f4795f8daf72864b0192a1f7476bb",
+      "last_checked": "2025-06-06T05:41:32.889740",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetcardbuscisptr.json": {
+      "hash": "799046e06a827dc84c0c8c308737509f6a828b01660f47d2aa760fed6a349611",
+      "last_checked": "2025-06-06T05:41:33.301595",
+      "status": "unchanged",
+      "etag": "W/\"0402dd1dbb6529d94ac93778b5e64a3a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetcardbuscisptr": {
+      "hash": "799046e06a827dc84c0c8c308737509f6a828b01660f47d2aa760fed6a349611",
+      "last_checked": "2025-06-06T05:41:33.301595",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetsubsystemvendorid.json": {
+      "hash": "b40ab625368e5c56fc9df8a5ca6609ff8643bce064b5d9006e4285054acd7c8d",
+      "last_checked": "2025-06-06T05:41:33.699183",
+      "status": "unchanged",
+      "etag": "W/\"7db585db9bd257065e84de7d5cb3514e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetsubsystemvendorid": {
+      "hash": "b40ab625368e5c56fc9df8a5ca6609ff8643bce064b5d9006e4285054acd7c8d",
+      "last_checked": "2025-06-06T05:41:33.699183",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetsubsystemid.json": {
+      "hash": "e4f88eb285ea4ce313354f73ffc2848595bbe2dbb8593b323cd1082091bf3412",
+      "last_checked": "2025-06-06T05:41:34.256227",
+      "status": "unchanged",
+      "etag": "W/\"a9396477ea05c6cbbfb189165248e54e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetsubsystemid": {
+      "hash": "e4f88eb285ea4ce313354f73ffc2848595bbe2dbb8593b323cd1082091bf3412",
+      "last_checked": "2025-06-06T05:41:34.256227",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetexpansionrombase.json": {
+      "hash": "9f4268f68997997cf8a5e74732d5249c0542d13633c016d9b320389a48a49fec",
+      "last_checked": "2025-06-06T05:41:34.679582",
+      "status": "unchanged",
+      "etag": "W/\"f8fc03452d13caacce8dc9ba532f3161\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetexpansionrombase": {
+      "hash": "9f4268f68997997cf8a5e74732d5249c0542d13633c016d9b320389a48a49fec",
+      "last_checked": "2025-06-06T05:41:34.679582",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetcapabilitiesptr.json": {
+      "hash": "714f033e1cc4ef86aa3deab9daa294208b1c84a96729b1cae46fe79a983798d7",
+      "last_checked": "2025-06-06T05:41:35.127826",
+      "status": "unchanged",
+      "etag": "W/\"da70acff97e1ad5bc6e840791939ee09\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetcapabilitiesptr": {
+      "hash": "714f033e1cc4ef86aa3deab9daa294208b1c84a96729b1cae46fe79a983798d7",
+      "last_checked": "2025-06-06T05:41:35.127826",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetinterruptline.json": {
+      "hash": "8a965a59d427b1e86dd69b990c0d6ca617f003bd9f8f255b951c1a038ad05692",
+      "last_checked": "2025-06-06T05:41:35.545900",
+      "status": "unchanged",
+      "etag": "W/\"3bf8ffee5e1c2c7b09045eec3e1be14b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetinterruptline": {
+      "hash": "8a965a59d427b1e86dd69b990c0d6ca617f003bd9f8f255b951c1a038ad05692",
+      "last_checked": "2025-06-06T05:41:35.545900",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetinterruptpin.json": {
+      "hash": "23d6787f117004f2863bbb978e053e4cffd5652f626c7a2a99996cd00c351844",
+      "last_checked": "2025-06-06T05:41:35.938716",
+      "status": "unchanged",
+      "etag": "W/\"187730a8b157c8a54746f2c85a423f44\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetinterruptpin": {
+      "hash": "23d6787f117004f2863bbb978e053e4cffd5652f626c7a2a99996cd00c351844",
+      "last_checked": "2025-06-06T05:41:35.938716",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetminimumgrant.json": {
+      "hash": "0f89c57791d7ee0f03c29a0f7d16a1b8c301c302b68874b45db155e626969b10",
+      "last_checked": "2025-06-06T05:41:36.366990",
+      "status": "unchanged",
+      "etag": "W/\"04faa55beb17bdccf01de77fec5d594f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetminimumgrant": {
+      "hash": "0f89c57791d7ee0f03c29a0f7d16a1b8c301c302b68874b45db155e626969b10",
+      "last_checked": "2025-06-06T05:41:36.366990",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciconfigurationoffsetmaximumlatency.json": {
+      "hash": "5344cb7a8e3066d4464a6b0a0571230ae562ca498941fc74e32a57a3f490fb27",
+      "last_checked": "2025-06-06T05:41:36.784955",
+      "status": "unchanged",
+      "etag": "W/\"0243e5d013174857dd29ca92f869b2b1\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciconfigurationoffsetmaximumlatency": {
+      "hash": "5344cb7a8e3066d4464a6b0a0571230ae562ca498941fc74e32a57a3f490fb27",
+      "last_checked": "2025-06-06T05:41:36.784955",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetprimarybus.json": {
+      "hash": "969821adc019a90886149029568504288922922742e926c15e3ddfd254692772",
+      "last_checked": "2025-06-06T05:41:37.202703",
+      "status": "unchanged",
+      "etag": "W/\"6c18aa1e0ab367ea72ba60783cc11f93\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetprimarybus": {
+      "hash": "969821adc019a90886149029568504288922922742e926c15e3ddfd254692772",
+      "last_checked": "2025-06-06T05:41:37.202703",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetsecondarybus.json": {
+      "hash": "b9832d2f59f62b2e4afce9a61c4257166f5cf098d45c7918c1a4656b86a068f2",
+      "last_checked": "2025-06-06T05:41:37.630076",
+      "status": "unchanged",
+      "etag": "W/\"7db2d411e007b1736c9caa4f786ba61c\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetsecondarybus": {
+      "hash": "b9832d2f59f62b2e4afce9a61c4257166f5cf098d45c7918c1a4656b86a068f2",
+      "last_checked": "2025-06-06T05:41:37.630076",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetsubordinatebus.json": {
+      "hash": "26aa9bc337c10e1174e2b6f70520d73c9329507ff1815bc3b6d28a8d24516fc2",
+      "last_checked": "2025-06-06T05:41:38.087746",
+      "status": "unchanged",
+      "etag": "W/\"7d0fb3ce29208693c227111a752f87cd\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetsubordinatebus": {
+      "hash": "26aa9bc337c10e1174e2b6f70520d73c9329507ff1815bc3b6d28a8d24516fc2",
+      "last_checked": "2025-06-06T05:41:38.087746",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetsecondarylt.json": {
+      "hash": "ed66c60f0dcce608d0ecd0f17c3a620734ee118597d154b35ebf4e61aa32588b",
+      "last_checked": "2025-06-06T05:41:38.522894",
+      "status": "unchanged",
+      "etag": "W/\"c3b46f4cbe6da891a6afce20be359caf\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetsecondarylt": {
+      "hash": "ed66c60f0dcce608d0ecd0f17c3a620734ee118597d154b35ebf4e61aa32588b",
+      "last_checked": "2025-06-06T05:41:38.522894",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetiorange.json": {
+      "hash": "51222e3b5e496e6d171a705b6b908068e7451aac1c97a6a6f0e57c7188af0003",
+      "last_checked": "2025-06-06T05:41:38.941878",
+      "status": "unchanged",
+      "etag": "W/\"b8f6b710be72bff0d21523b391ca3b6a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetiorange": {
+      "hash": "51222e3b5e496e6d171a705b6b908068e7451aac1c97a6a6f0e57c7188af0003",
+      "last_checked": "2025-06-06T05:41:38.941878",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetmemoryrange.json": {
+      "hash": "744360572b90cec8a3235c8e60353d7c250c485e0d10814bdcb1e5fba6cb7aaf",
+      "last_checked": "2025-06-06T05:41:39.375849",
+      "status": "unchanged",
+      "etag": "W/\"e8b83a9b71e7cbac9c4d549e70a3f6dd\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetmemoryrange": {
+      "hash": "744360572b90cec8a3235c8e60353d7c250c485e0d10814bdcb1e5fba6cb7aaf",
+      "last_checked": "2025-06-06T05:41:39.375849",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetprefetchmemoryrange.json": {
+      "hash": "02f8aab4772c4a055f045d7a0285cf749082a0562ec5db596d5413e9600ac7d5",
+      "last_checked": "2025-06-06T05:41:39.804883",
+      "status": "unchanged",
+      "etag": "W/\"f098a2a61b0bc3dd9c53dd1f9687c6b4\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetprefetchmemoryrange": {
+      "hash": "02f8aab4772c4a055f045d7a0285cf749082a0562ec5db596d5413e9600ac7d5",
+      "last_checked": "2025-06-06T05:41:39.804883",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetprefetchupperbase.json": {
+      "hash": "d34fdfcad18d4d159879e461b2bba04b6803ba6081a6a4a2f1197b8d2472d113",
+      "last_checked": "2025-06-06T05:41:40.188701",
+      "status": "unchanged",
+      "etag": "W/\"70ec3befc988f00a3ca0396f76b0ef31\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetprefetchupperbase": {
+      "hash": "d34fdfcad18d4d159879e461b2bba04b6803ba6081a6a4a2f1197b8d2472d113",
+      "last_checked": "2025-06-06T05:41:40.188701",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetprefetchupperlimit.json": {
+      "hash": "c0b8ba3a9db44ee6e29cebd1f270e8a9c63417e867bda093e7830052a66d19bd",
+      "last_checked": "2025-06-06T05:41:40.605049",
+      "status": "unchanged",
+      "etag": "W/\"1b0b3a169f85be8bb6b6d9dffcbe59cf\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetprefetchupperlimit": {
+      "hash": "c0b8ba3a9db44ee6e29cebd1f270e8a9c63417e867bda093e7830052a66d19bd",
+      "last_checked": "2025-06-06T05:41:40.605049",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetupperiorange.json": {
+      "hash": "6f644928832e5618596400a93c63edc20e2acfe089eafc05c0fab02e51e384c6",
+      "last_checked": "2025-06-06T05:41:40.996669",
+      "status": "unchanged",
+      "etag": "W/\"d0fac26ee6c536d2fac856a078d876ca\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetupperiorange": {
+      "hash": "6f644928832e5618596400a93c63edc20e2acfe089eafc05c0fab02e51e384c6",
+      "last_checked": "2025-06-06T05:41:40.996669",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpci2pcioffsetbridgecontrol.json": {
+      "hash": "68b340bb1d069a0bd86f4a1b6bafd373d6de5a7610919ebfb2f301e6f2e50d16",
+      "last_checked": "2025-06-06T05:41:41.402811",
+      "status": "unchanged",
+      "etag": "W/\"c07dc308d8eb6a19e8b56e446cf386da\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpci2pcioffsetbridgecontrol": {
+      "hash": "68b340bb1d069a0bd86f4a1b6bafd373d6de5a7610919ebfb2f301e6f2e50d16",
+      "last_checked": "2025-06-06T05:41:41.402811",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandiospace.json": {
+      "hash": "e62b93e16e159471a462051406b840654ba7966f7cb527329495871cd25ce7c1",
+      "last_checked": "2025-06-06T05:41:41.837315",
+      "status": "unchanged",
+      "etag": "W/\"5b88e7c4ee860b9c941b771f050237b0\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandiospace": {
+      "hash": "e62b93e16e159471a462051406b840654ba7966f7cb527329495871cd25ce7c1",
+      "last_checked": "2025-06-06T05:41:41.837315",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandmemoryspace.json": {
+      "hash": "be1891533f1daa44f22a54af0eed74111ed53628578b86c23b05d5fc0121306e",
+      "last_checked": "2025-06-06T05:41:42.356628",
+      "status": "unchanged",
+      "etag": "W/\"36d5d625576217eca08f84ba26402752\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandmemoryspace": {
+      "hash": "be1891533f1daa44f22a54af0eed74111ed53628578b86c23b05d5fc0121306e",
+      "last_checked": "2025-06-06T05:41:42.356628",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandbusmaster.json": {
+      "hash": "be67f539d6d3c61d2fd4b1eb66cc18d7e0a51842d019d340ace96df97e6735f3",
+      "last_checked": "2025-06-06T05:41:42.785256",
+      "status": "unchanged",
+      "etag": "W/\"08b6605f2981e0980b5e10630fcdfd86\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandbusmaster": {
+      "hash": "be67f539d6d3c61d2fd4b1eb66cc18d7e0a51842d019d340ace96df97e6735f3",
+      "last_checked": "2025-06-06T05:41:42.785256",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandspecialcycles.json": {
+      "hash": "e99aef5cc30a68a26a4d873f848bd123370369ebc0a9787fd4eef7dcb1dbfe85",
+      "last_checked": "2025-06-06T05:41:43.241267",
+      "status": "unchanged",
+      "etag": "W/\"2f295eb2dde21e96229fdc3ad0c1573c\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandspecialcycles": {
+      "hash": "e99aef5cc30a68a26a4d873f848bd123370369ebc0a9787fd4eef7dcb1dbfe85",
+      "last_checked": "2025-06-06T05:41:43.241267",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandmemwrinvalidate.json": {
+      "hash": "18f04390abe63a8640867774b9a6c049525ac55b7cd97c460a6ce9ba07d53978",
+      "last_checked": "2025-06-06T05:41:43.666203",
+      "status": "unchanged",
+      "etag": "W/\"ee1fa0a28503bd2157a0366609d6785e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandmemwrinvalidate": {
+      "hash": "18f04390abe63a8640867774b9a6c049525ac55b7cd97c460a6ce9ba07d53978",
+      "last_checked": "2025-06-06T05:41:43.666203",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandpalettesnoop.json": {
+      "hash": "92d697188a3427ec8b01624599babc32d94dff4228d103a45d015cf995a7ed46",
+      "last_checked": "2025-06-06T05:41:44.074634",
+      "status": "unchanged",
+      "etag": "W/\"db7dcf50610927b1e77525aaa5beac86\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandpalettesnoop": {
+      "hash": "92d697188a3427ec8b01624599babc32d94dff4228d103a45d015cf995a7ed46",
+      "last_checked": "2025-06-06T05:41:44.074634",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandparityerror.json": {
+      "hash": "48c89739ea850c9c63fcb0806e6ffd5c4262e103b094b4bed4727bd00145cc19",
+      "last_checked": "2025-06-06T05:41:44.522284",
+      "status": "unchanged",
+      "etag": "W/\"5601868980dc110950bacbf0fa11ea6a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandparityerror": {
+      "hash": "48c89739ea850c9c63fcb0806e6ffd5c4262e103b094b4bed4727bd00145cc19",
+      "last_checked": "2025-06-06T05:41:44.522284",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandaddressstepping.json": {
+      "hash": "b04b808922a023f5c2713b9082515b3df22434292567e6b0d4f8e73940fb098b",
+      "last_checked": "2025-06-06T05:41:44.944791",
+      "status": "unchanged",
+      "etag": "W/\"fb0a48fdd0899a915d03a228e43e28aa\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandaddressstepping": {
+      "hash": "b04b808922a023f5c2713b9082515b3df22434292567e6b0d4f8e73940fb098b",
+      "last_checked": "2025-06-06T05:41:44.944791",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandserr.json": {
+      "hash": "9a228ee0ccb08b50aaf971136db06be50e33c21a8936fb976164f16803054dd2",
+      "last_checked": "2025-06-06T05:41:45.343236",
+      "status": "unchanged",
+      "etag": "W/\"e59c5e1dded4d6eebdddb65428d22933\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandserr": {
+      "hash": "9a228ee0ccb08b50aaf971136db06be50e33c21a8936fb976164f16803054dd2",
+      "last_checked": "2025-06-06T05:41:45.343236",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandfastback2back.json": {
+      "hash": "dfe133c25474f0858488b64660ccdf76073e64190e99ed6f731ee87f488a95ab",
+      "last_checked": "2025-06-06T05:41:45.746294",
+      "status": "unchanged",
+      "etag": "W/\"b7fbc9b0f02237e2bc7f1487b80a4f56\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandfastback2back": {
+      "hash": "dfe133c25474f0858488b64660ccdf76073e64190e99ed6f731ee87f488a95ab",
+      "last_checked": "2025-06-06T05:41:45.746294",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandinterruptdisable.json": {
+      "hash": "389ac997eb85a7c1b625e5229e9cef119c79b986639021c5e4fdf88223a7579d",
+      "last_checked": "2025-06-06T05:41:46.174403",
+      "status": "unchanged",
+      "etag": "W/\"5053f323cadfb1d22ae9c4595bc8f9c9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandinterruptdisable": {
+      "hash": "389ac997eb85a7c1b625e5229e9cef119c79b986639021c5e4fdf88223a7579d",
+      "last_checked": "2025-06-06T05:41:46.174403",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicommandbuslead.json": {
+      "hash": "8cb2d2b09444f1ae6629ff29ddf2b2ded4e21b7b9c7c3b29a39b800d7b92367d",
+      "last_checked": "2025-06-06T05:41:46.678604",
+      "status": "unchanged",
+      "etag": "W/\"ba48dd2d91778f5267af6bda071c3bc7\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicommandbuslead": {
+      "hash": "8cb2d2b09444f1ae6629ff29ddf2b2ded4e21b7b9c7c3b29a39b800d7b92367d",
+      "last_checked": "2025-06-06T05:41:46.678604",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusinterrupt.json": {
+      "hash": "521274c3a40db912c788b56ed4f8c648798e29360aa8dd4c91056fefde1bfeb2",
+      "last_checked": "2025-06-06T05:41:47.098593",
+      "status": "unchanged",
+      "etag": "W/\"62b05709aaf6ddc2b2cf787f505f6050\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusinterrupt": {
+      "hash": "521274c3a40db912c788b56ed4f8c648798e29360aa8dd4c91056fefde1bfeb2",
+      "last_checked": "2025-06-06T05:41:47.098593",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatuscapabilities.json": {
+      "hash": "528a63f170f58bd34147a4d18df308de19cc89c4146962be88716961ae32dffc",
+      "last_checked": "2025-06-06T05:41:47.538272",
+      "status": "unchanged",
+      "etag": "W/\"228384e2ed9b0349bbf83fc32ca7663a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatuscapabilities": {
+      "hash": "528a63f170f58bd34147a4d18df308de19cc89c4146962be88716961ae32dffc",
+      "last_checked": "2025-06-06T05:41:47.538272",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatuspci66.json": {
+      "hash": "da55ee033b8e409a01dcb59e3ad184e3ad82fc66674592a69930bd86b9dcdc83",
+      "last_checked": "2025-06-06T05:41:47.965257",
+      "status": "unchanged",
+      "etag": "W/\"a67d8c65aeca61924f7a091fd9230c9e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatuspci66": {
+      "hash": "da55ee033b8e409a01dcb59e3ad184e3ad82fc66674592a69930bd86b9dcdc83",
+      "last_checked": "2025-06-06T05:41:47.965257",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusudf.json": {
+      "hash": "d256b4f4c3c2d2fbf00076603579e48f4ff499947deb1942650caab630137fbf",
+      "last_checked": "2025-06-06T05:41:48.404843",
+      "status": "unchanged",
+      "etag": "W/\"423cb85d845766ae343884cbc75b6ab6\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusudf": {
+      "hash": "d256b4f4c3c2d2fbf00076603579e48f4ff499947deb1942650caab630137fbf",
+      "last_checked": "2025-06-06T05:41:48.404843",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusfastback2back.json": {
+      "hash": "ae3fbbd4fe93f8db1354b3c9b0a665c5f202e0560f9222e81ed62fe64d72a579",
+      "last_checked": "2025-06-06T05:41:48.844195",
+      "status": "unchanged",
+      "etag": "W/\"61366652d3c076685e1b9d19a450bb89\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusfastback2back": {
+      "hash": "ae3fbbd4fe93f8db1354b3c9b0a665c5f202e0560f9222e81ed62fe64d72a579",
+      "last_checked": "2025-06-06T05:41:48.844195",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatustargetabortcapable.json": {
+      "hash": "49bd85c88e98997ef68e97c3fa68451db56f1878d2e288b1e1452032ee7f88f5",
+      "last_checked": "2025-06-06T05:41:49.285281",
+      "status": "unchanged",
+      "etag": "W/\"8d88a302b2b563ea994e99579d51bbe5\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatustargetabortcapable": {
+      "hash": "49bd85c88e98997ef68e97c3fa68451db56f1878d2e288b1e1452032ee7f88f5",
+      "last_checked": "2025-06-06T05:41:49.285281",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatustargetabortactive.json": {
+      "hash": "a21910fea6ce05c2c3f61bfe8a3649c999691ceb77d5f08801dbb01d6d3cb48c",
+      "last_checked": "2025-06-06T05:41:49.741039",
+      "status": "unchanged",
+      "etag": "W/\"7b7c14c5e412480013dacdc191a21650\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatustargetabortactive": {
+      "hash": "a21910fea6ce05c2c3f61bfe8a3649c999691ceb77d5f08801dbb01d6d3cb48c",
+      "last_checked": "2025-06-06T05:41:49.741039",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusmasterabortactive.json": {
+      "hash": "71849ff989e6d6fe8ee646be61535a294bcb2613b62e5a9f2f303c8803d024de",
+      "last_checked": "2025-06-06T05:41:50.168143",
+      "status": "unchanged",
+      "etag": "W/\"9b9210e6ed966f57bd1f8310ba511ea0\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusmasterabortactive": {
+      "hash": "71849ff989e6d6fe8ee646be61535a294bcb2613b62e5a9f2f303c8803d024de",
+      "last_checked": "2025-06-06T05:41:50.168143",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusserractive.json": {
+      "hash": "016dd4dedfe0c25caa8002ee61c3144ced11bef77f27601bca8c3c4afe49d80c",
+      "last_checked": "2025-06-06T05:41:50.595811",
+      "status": "unchanged",
+      "etag": "W/\"7ecc33aff7ae25ad648705d841ec7747\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusserractive": {
+      "hash": "016dd4dedfe0c25caa8002ee61c3144ced11bef77f27601bca8c3c4afe49d80c",
+      "last_checked": "2025-06-06T05:41:50.595811",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusparityerractive.json": {
+      "hash": "cb20339d2ea7db1954896097388777560f436da632e77661cbd1908a19494099",
+      "last_checked": "2025-06-06T05:41:50.988793",
+      "status": "unchanged",
+      "etag": "W/\"36ad08a019ab9eef46016ffdd7ecb648\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusparityerractive": {
+      "hash": "cb20339d2ea7db1954896097388777560f436da632e77661cbd1908a19494099",
+      "last_checked": "2025-06-06T05:41:50.988793",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusdevsel0.json": {
+      "hash": "a5a493a319483bb1e3bfd93cbeaf39781bdcd1dd850db0df73f9fd7d0bf5f015",
+      "last_checked": "2025-06-06T05:41:51.408693",
+      "status": "unchanged",
+      "etag": "W/\"e868e95e53ad505ae46f09cc7ace625f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusdevsel0": {
+      "hash": "a5a493a319483bb1e3bfd93cbeaf39781bdcd1dd850db0df73f9fd7d0bf5f015",
+      "last_checked": "2025-06-06T05:41:51.408693",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusdevsel1.json": {
+      "hash": "7df4306630fdd6ccb0f8922559b8daab0dad6f06a7f73b647a8851a44ff3744d",
+      "last_checked": "2025-06-06T05:41:51.821399",
+      "status": "unchanged",
+      "etag": "W/\"f099663b187bd219e6ed10614591f0a7\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusdevsel1": {
+      "hash": "7df4306630fdd6ccb0f8922559b8daab0dad6f06a7f73b647a8851a44ff3744d",
+      "last_checked": "2025-06-06T05:41:51.821399",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusdevsel2.json": {
+      "hash": "573900fb01a5c3aaacb48bf0dc0e4754d1ff36ad587bb48c024e3881ba952979",
+      "last_checked": "2025-06-06T05:41:52.231506",
+      "status": "unchanged",
+      "etag": "W/\"65088ddf7450949ca4d51fcdda0e52d9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusdevsel2": {
+      "hash": "573900fb01a5c3aaacb48bf0dc0e4754d1ff36ad587bb48c024e3881ba952979",
+      "last_checked": "2025-06-06T05:41:52.231506",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusdevsel3.json": {
+      "hash": "621a2d11b67a99ff09cb404d199d2b2f117230bf10f1f9361fdd83c4ce2dcfee",
+      "last_checked": "2025-06-06T05:41:52.711136",
+      "status": "unchanged",
+      "etag": "W/\"12f6838878efe3ab6c1d09b99597faf6\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusdevsel3": {
+      "hash": "621a2d11b67a99ff09cb404d199d2b2f117230bf10f1f9361fdd83c4ce2dcfee",
+      "last_checked": "2025-06-06T05:41:52.711136",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcistatusleadabortactive.json": {
+      "hash": "2147b54db57bfda0296116a0662a76fc88f4160f43e1886cebcf1620afb7e3dd",
+      "last_checked": "2025-06-06T05:41:53.178859",
+      "status": "unchanged",
+      "etag": "W/\"89aa79249122b1f372e72277ad1f7085\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcistatusleadabortactive": {
+      "hash": "2147b54db57bfda0296116a0662a76fc88f4160f43e1886cebcf1620afb7e3dd",
+      "last_checked": "2025-06-06T05:41:53.178859",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidoffset.json": {
+      "hash": "2fa8c722a0252e6e511a87e2ec7d2427def448bf011189bb05fbd167ee09d986",
+      "last_checked": "2025-06-06T05:41:53.607466",
+      "status": "unchanged",
+      "etag": "W/\"273e3e55aa8bf1e98c746881059af176\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidoffset": {
+      "hash": "2fa8c722a0252e6e511a87e2ec7d2427def448bf011189bb05fbd167ee09d986",
+      "last_checked": "2025-06-06T05:41:53.607466",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcinextcapabilityoffset.json": {
+      "hash": "c639f5e1d7804e8f9e686e75e842c5943aaa8fb86468bf45471fc31e3dcbc6e1",
+      "last_checked": "2025-06-06T05:41:54.010603",
+      "status": "unchanged",
+      "etag": "W/\"8e1fa5792ee60b54081e740e64356312\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcinextcapabilityoffset": {
+      "hash": "c639f5e1d7804e8f9e686e75e842c5943aaa8fb86468bf45471fc31e3dcbc6e1",
+      "last_checked": "2025-06-06T05:41:54.010603",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidpowermanagement.json": {
+      "hash": "316ca409873100ca6db66fca34861318df3bbf2b46deddf6b8084cac197ada31",
+      "last_checked": "2025-06-06T05:41:54.431099",
+      "status": "unchanged",
+      "etag": "W/\"b7b95c1e953e587940674cda29810958\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidpowermanagement": {
+      "hash": "316ca409873100ca6db66fca34861318df3bbf2b46deddf6b8084cac197ada31",
+      "last_checked": "2025-06-06T05:41:54.431099",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidagp.json": {
+      "hash": "4c5777454ae14d3ee4191c495a385690f3e4f0073619d97333217e596e62316a",
+      "last_checked": "2025-06-06T05:41:54.870685",
+      "status": "unchanged",
+      "etag": "W/\"ced803479999b06e845915475cad74cb\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidagp": {
+      "hash": "4c5777454ae14d3ee4191c495a385690f3e4f0073619d97333217e596e62316a",
+      "last_checked": "2025-06-06T05:41:54.870685",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidvitalproductdata.json": {
+      "hash": "de7d166473fd05aba695b40788a8109b35b867a4a644688d1e767436a35fafd9",
+      "last_checked": "2025-06-06T05:41:55.323877",
+      "status": "unchanged",
+      "etag": "W/\"a7c4f8dc3399d1bb5f704c104bd34166\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidvitalproductdata": {
+      "hash": "de7d166473fd05aba695b40788a8109b35b867a4a644688d1e767436a35fafd9",
+      "last_checked": "2025-06-06T05:41:55.323877",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidslotid.json": {
+      "hash": "94a6dcc38537fd29472a1d92897a932d9f0226f68ecd2f378c319f0036fb3c8b",
+      "last_checked": "2025-06-06T05:41:55.758502",
+      "status": "unchanged",
+      "etag": "W/\"f5c51fefacbe199757703a47ec94e70a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidslotid": {
+      "hash": "94a6dcc38537fd29472a1d92897a932d9f0226f68ecd2f378c319f0036fb3c8b",
+      "last_checked": "2025-06-06T05:41:55.758502",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidmsi.json": {
+      "hash": "adb3db2eb5fc94bb42b612175f192d70919e98fb2a9f96dc665de22232171046",
+      "last_checked": "2025-06-06T05:41:56.158565",
+      "status": "unchanged",
+      "etag": "W/\"9e793475ad966f3bacc296cd37ce23e4\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidmsi": {
+      "hash": "adb3db2eb5fc94bb42b612175f192d70919e98fb2a9f96dc665de22232171046",
+      "last_checked": "2025-06-06T05:41:56.158565",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidcpcihotswap.json": {
+      "hash": "d3de3fae8b3cee8e8c8bf6678ce2e435ea073c516999c0ca4ebf27769a8bde02",
+      "last_checked": "2025-06-06T05:41:56.601464",
+      "status": "unchanged",
+      "etag": "W/\"11bf419c5f33c3e7a43752583dc8c0fd\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidcpcihotswap": {
+      "hash": "d3de3fae8b3cee8e8c8bf6678ce2e435ea073c516999c0ca4ebf27769a8bde02",
+      "last_checked": "2025-06-06T05:41:56.601464",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidpcix.json": {
+      "hash": "731457848dfc781db135315d2e8c57581ecfb68527814ef1aa8f4b2d933125fa",
+      "last_checked": "2025-06-06T05:41:57.018545",
+      "status": "unchanged",
+      "etag": "W/\"6d65deb554f81d818bca1db07a6439d4\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidpcix": {
+      "hash": "731457848dfc781db135315d2e8c57581ecfb68527814ef1aa8f4b2d933125fa",
+      "last_checked": "2025-06-06T05:41:57.018545",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidldt.json": {
+      "hash": "a8c37b10362f1055aba7294aff70a3bef2b9e113496f8b7c94f3f44c2bcb85c1",
+      "last_checked": "2025-06-06T05:41:57.466545",
+      "status": "unchanged",
+      "etag": "W/\"22779344788b1e31aeaac93d189d8b02\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidldt": {
+      "hash": "a8c37b10362f1055aba7294aff70a3bef2b9e113496f8b7c94f3f44c2bcb85c1",
+      "last_checked": "2025-06-06T05:41:57.466545",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidvendorspecific.json": {
+      "hash": "493df47e590546db0f7590c1482c2d4c22ff59a17c6cb1dd992423866157008a",
+      "last_checked": "2025-06-06T05:41:57.900662",
+      "status": "unchanged",
+      "etag": "W/\"5efb9f62f79f5a3de5db32ef79c1c19f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidvendorspecific": {
+      "hash": "493df47e590546db0f7590c1482c2d4c22ff59a17c6cb1dd992423866157008a",
+      "last_checked": "2025-06-06T05:41:57.900662",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityiddebugport.json": {
+      "hash": "509d50b70bfc4d1cf62966c59affb89b98206855ceaba22c853ba9ba8925c4d5",
+      "last_checked": "2025-06-06T05:41:58.347231",
+      "status": "unchanged",
+      "etag": "W/\"51aebaf1de981132146d66f352699d59\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityiddebugport": {
+      "hash": "509d50b70bfc4d1cf62966c59affb89b98206855ceaba22c853ba9ba8925c4d5",
+      "last_checked": "2025-06-06T05:41:58.347231",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidcpciresourcecontrol.json": {
+      "hash": "a1d6777d27a36ef239899b79722fa759bb80b498ed6379dac54245625c084a5d",
+      "last_checked": "2025-06-06T05:41:58.796957",
+      "status": "unchanged",
+      "etag": "W/\"4e54740636595167a9bc830d96c71b38\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidcpciresourcecontrol": {
+      "hash": "a1d6777d27a36ef239899b79722fa759bb80b498ed6379dac54245625c084a5d",
+      "last_checked": "2025-06-06T05:41:58.796957",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidhotplug.json": {
+      "hash": "e1adb796452a89082004429662d364c49483162590f917bee8431bc27dcbfb6e",
+      "last_checked": "2025-06-06T05:41:59.256999",
+      "status": "unchanged",
+      "etag": "W/\"bfa87bc5c2168eabeee3c6eeacf01e5e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidhotplug": {
+      "hash": "e1adb796452a89082004429662d364c49483162590f917bee8431bc27dcbfb6e",
+      "last_checked": "2025-06-06T05:41:59.256999",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidagp8.json": {
+      "hash": "9beda4523b1c0e9b892557d1701cb37af9f2ce0d273f81afb5b81ad957fb3c77",
+      "last_checked": "2025-06-06T05:41:59.714762",
+      "status": "unchanged",
+      "etag": "W/\"8360217988e6f3bcd2f24f48a309b2e8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidagp8": {
+      "hash": "9beda4523b1c0e9b892557d1701cb37af9f2ce0d273f81afb5b81ad957fb3c77",
+      "last_checked": "2025-06-06T05:41:59.714762",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidsecure.json": {
+      "hash": "acbd1c36a9599086c870eda86c5e4c10903ff07a072d65b31b6d5244bd9d58b9",
+      "last_checked": "2025-06-06T05:42:00.158050",
+      "status": "unchanged",
+      "etag": "W/\"0c4f66d71713496596b09472047abc08\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidsecure": {
+      "hash": "acbd1c36a9599086c870eda86c5e4c10903ff07a072d65b31b6d5244bd9d58b9",
+      "last_checked": "2025-06-06T05:42:00.158050",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidpciexpress.json": {
+      "hash": "12dc4ec9298ca7a206b22200b5492f50b6d0119143f4bcc418a7e4902ce652f8",
+      "last_checked": "2025-06-06T05:42:00.587844",
+      "status": "unchanged",
+      "etag": "W/\"73b9b227766f28637b1df547eb00d3b1\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidpciexpress": {
+      "hash": "12dc4ec9298ca7a206b22200b5492f50b6d0119143f4bcc418a7e4902ce652f8",
+      "last_checked": "2025-06-06T05:42:00.587844",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidmsix.json": {
+      "hash": "b655423daf1078cd1d236cdb12dddac54c598f8ea6123274757433a6b1b0545b",
+      "last_checked": "2025-06-06T05:42:01.031734",
+      "status": "unchanged",
+      "etag": "W/\"7cb963f2143fecc946ad7fdd5100ca11\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidmsix": {
+      "hash": "b655423daf1078cd1d236cdb12dddac54c598f8ea6123274757433a6b1b0545b",
+      "last_checked": "2025-06-06T05:42:01.031734",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicapabilityidfpb.json": {
+      "hash": "c6db46cb483fa29d8adce2829f6c50e623dcf9b6de92fba428544975fa800772",
+      "last_checked": "2025-06-06T05:42:01.417287",
+      "status": "unchanged",
+      "etag": "W/\"c6cf359feb544bb512f0669bc1cb1719\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicapabilityidfpb": {
+      "hash": "c6db46cb483fa29d8adce2829f6c50e623dcf9b6de92fba428544975fa800772",
+      "last_checked": "2025-06-06T05:42:01.417287",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityiderrorreporting.json": {
+      "hash": "e907fb7f74cbf31029d5ef8088f24775a4cdce78a6a21ebf8bcea50870c41db1",
+      "last_checked": "2025-06-06T05:42:01.817905",
+      "status": "unchanged",
+      "etag": "W/\"ff726d0cccd09dbb21795fab54ab1fc9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityiderrorreporting": {
+      "hash": "e907fb7f74cbf31029d5ef8088f24775a4cdce78a6a21ebf8bcea50870c41db1",
+      "last_checked": "2025-06-06T05:42:01.817905",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityidvirtualchannel.json": {
+      "hash": "62a40586baae8d97f04090274b4e44570e743471a537f3e658397106c9e2d8a1",
+      "last_checked": "2025-06-06T05:42:02.252106",
+      "status": "unchanged",
+      "etag": "W/\"ae33df9fbd2b1c12d01f5b12993a3e93\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityidvirtualchannel": {
+      "hash": "62a40586baae8d97f04090274b4e44570e743471a537f3e658397106c9e2d8a1",
+      "last_checked": "2025-06-06T05:42:02.252106",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityiddeviceserialnumber.json": {
+      "hash": "65db9c8451eb3889a14f0c63ebfdfa6b16225b8e6d1ba0688f58bd32993e6990",
+      "last_checked": "2025-06-06T05:42:02.695772",
+      "status": "unchanged",
+      "etag": "W/\"acc1c0ff6234821fd2fda1eb6def05c9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityiddeviceserialnumber": {
+      "hash": "65db9c8451eb3889a14f0c63ebfdfa6b16225b8e6d1ba0688f58bd32993e6990",
+      "last_checked": "2025-06-06T05:42:02.695772",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityidpowerbudget.json": {
+      "hash": "99ffcb19a44c023c2d9a77d03d7cf4ba0facec0970640cd1b35fba1c28414f06",
+      "last_checked": "2025-06-06T05:42:03.131328",
+      "status": "unchanged",
+      "etag": "W/\"7ac99ba9562280a0a33dccfad7e49d6b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityidpowerbudget": {
+      "hash": "99ffcb19a44c023c2d9a77d03d7cf4ba0facec0970640cd1b35fba1c28414f06",
+      "last_checked": "2025-06-06T05:42:03.131328",
+      "status": "unchanged",
+      "etag": "c548ff81e3e667dc434b914c1c958234"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityidaccesscontrolservices.json": {
+      "hash": "a2e0061abdc16d398e3285434c217fa3f688f1c70ef2c34d07baaee486f1e367",
+      "last_checked": "2025-06-06T05:42:03.541243",
+      "status": "unchanged",
+      "etag": "W/\"1b9a02a9878b6d2cd243196a594e485c\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityidaccesscontrolservices": {
+      "hash": "a2e0061abdc16d398e3285434c217fa3f688f1c70ef2c34d07baaee486f1e367",
+      "last_checked": "2025-06-06T05:42:03.541243",
+      "status": "unchanged",
+      "etag": "a1750b3800f2a65d6b6eece88c93cf4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityidlatencytolerencereporting.json": {
+      "hash": "3c32bfbf4475c3cac4b3cea143742f766a53918f90b20c9fdc999d9020761bb0",
+      "last_checked": "2025-06-06T05:42:03.957270",
+      "status": "unchanged",
+      "etag": "W/\"3b86751b92d90d56314f2f205eb1a901\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityidlatencytolerencereporting": {
+      "hash": "3c32bfbf4475c3cac4b3cea143742f766a53918f90b20c9fdc999d9020761bb0",
+      "last_checked": "2025-06-06T05:42:03.957270",
+      "status": "unchanged",
+      "etag": "b94aa69ea2b3da77f0144ef760c4eddf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityidl1pmsubstates.json": {
+      "hash": "2b17632e843bf0ef7520b768efb29c1b738e8c0342f987d7f8f3c8703566960c",
+      "last_checked": "2025-06-06T05:42:04.406128",
+      "status": "unchanged",
+      "etag": "W/\"fade55cbf1174d9711ee012009889cb1\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityidl1pmsubstates": {
+      "hash": "2b17632e843bf0ef7520b768efb29c1b738e8c0342f987d7f8f3c8703566960c",
+      "last_checked": "2025-06-06T05:42:04.406128",
+      "status": "unchanged",
+      "etag": "f91849689c3517605d2cdeb08f4d9008"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityidalternativeroutingid.json": {
+      "hash": "381a886d5ab1f2534004183ade283a59a4a8eb7e1c9305384d11053d60351032",
+      "last_checked": "2025-06-06T05:42:04.814828",
+      "status": "unchanged",
+      "etag": "W/\"320ee28e9f528e60ab661ef9174ff8e7\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityidalternativeroutingid": {
+      "hash": "381a886d5ab1f2534004183ade283a59a4a8eb7e1c9305384d11053d60351032",
+      "last_checked": "2025-06-06T05:42:04.814828",
+      "status": "unchanged",
+      "etag": "978e7bbe98ec41161d9945b7c6ab0808"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityidprecisiontimemanagement.json": {
+      "hash": "61741b6de8dedbeb9d944e20b963439b6cf084cc1cc5088734174a43e1330379",
+      "last_checked": "2025-06-06T05:42:05.260076",
+      "status": "unchanged",
+      "etag": "W/\"803d748737df9e6bba7512d4ca3304b2\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityidprecisiontimemanagement": {
+      "hash": "61741b6de8dedbeb9d944e20b963439b6cf084cc1cc5088734174a43e1330379",
+      "last_checked": "2025-06-06T05:42:05.260076",
+      "status": "unchanged",
+      "etag": "f57eb521430078c6beb7ad3333fce1f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotcapabilitiesbitattentionbuttonpresent.json": {
+      "hash": "64622831bbab58f39fa8d5ac08c9917c05dda58e61634ffdf7a16f7624b24a2c",
+      "last_checked": "2025-06-06T05:42:05.665176",
+      "status": "unchanged",
+      "etag": "W/\"08f050af6306cf76f6d1f38833e24403\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotcapabilitiesbitattentionbuttonpresent": {
+      "hash": "64622831bbab58f39fa8d5ac08c9917c05dda58e61634ffdf7a16f7624b24a2c",
+      "last_checked": "2025-06-06T05:42:05.665176",
+      "status": "unchanged",
+      "etag": "aa75b65d1f0106ba4cc5672733cef409"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotcapabilitiesbitpowercontrollerpresent.json": {
+      "hash": "b0e74bc504cfa8fc93f444a712b2bd96aaabd81a0521342f1ca4470efcfae52d",
+      "last_checked": "2025-06-06T05:42:06.082556",
+      "status": "unchanged",
+      "etag": "W/\"95c5134909737a9b6f0ebbb060b834f0\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotcapabilitiesbitpowercontrollerpresent": {
+      "hash": "b0e74bc504cfa8fc93f444a712b2bd96aaabd81a0521342f1ca4470efcfae52d",
+      "last_checked": "2025-06-06T05:42:06.082556",
+      "status": "unchanged",
+      "etag": "9a24c6ceea4e32b744e7d01359d0b5d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotcapabilitiesbitmrlsensorpresent.json": {
+      "hash": "29b72aed92954990554938cc12f1e741d1f44522ed07a8a3f5cab1126552dd7b",
+      "last_checked": "2025-06-06T05:42:06.480890",
+      "status": "unchanged",
+      "etag": "W/\"11630f0e4e1fbb11b75128a0646e201b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotcapabilitiesbitmrlsensorpresent": {
+      "hash": "29b72aed92954990554938cc12f1e741d1f44522ed07a8a3f5cab1126552dd7b",
+      "last_checked": "2025-06-06T05:42:06.480890",
+      "status": "unchanged",
+      "etag": "1b367ccc90915ab9be1b600f5ff9d4b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotcapabilitiesbitattentionindicatorpresent.json": {
+      "hash": "f0edfb4ba9620d748ec33c86cacaf15843f1e4a62f781e752dadc0f92fd26249",
+      "last_checked": "2025-06-06T05:42:06.892053",
+      "status": "unchanged",
+      "etag": "W/\"abfa85b8c82a3cbc0652aa2cd2b5d3d5\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotcapabilitiesbitattentionindicatorpresent": {
+      "hash": "f0edfb4ba9620d748ec33c86cacaf15843f1e4a62f781e752dadc0f92fd26249",
+      "last_checked": "2025-06-06T05:42:06.892053",
+      "status": "unchanged",
+      "etag": "8dc02560d81c33d0cd53e899d4ca9378"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotcapabilitiesbitpowerindicatorpresent.json": {
+      "hash": "62c2c6d62b00fdd5bf9af45a98fa3833e612f44a4d691ecb880dabcd15ab53b9",
+      "last_checked": "2025-06-06T05:42:07.303835",
+      "status": "unchanged",
+      "etag": "W/\"4c1377244797d1230327f18086889478\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotcapabilitiesbitpowerindicatorpresent": {
+      "hash": "62c2c6d62b00fdd5bf9af45a98fa3833e612f44a4d691ecb880dabcd15ab53b9",
+      "last_checked": "2025-06-06T05:42:07.303835",
+      "status": "unchanged",
+      "etag": "dd2069ac62426129e6dc49aadbdd0385"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotcapabilitiesbithotplugsurprise.json": {
+      "hash": "2f582775d92b536a60b89122388b0c729fe84a3e009c1c97e3736c0e9e7e0aeb",
+      "last_checked": "2025-06-06T05:42:07.752324",
+      "status": "unchanged",
+      "etag": "W/\"c947c6dcc2ebdc1bbb52d37d4f8018ae\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotcapabilitiesbithotplugsurprise": {
+      "hash": "2f582775d92b536a60b89122388b0c729fe84a3e009c1c97e3736c0e9e7e0aeb",
+      "last_checked": "2025-06-06T05:42:07.752324",
+      "status": "unchanged",
+      "etag": "6711582d229abbcbe354476471c58e98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotcapabilitiesbithotplugcapable.json": {
+      "hash": "3dd1416916943c4b398f2ef36f1092563a80f785644dcf25fb6fadd0fad818b3",
+      "last_checked": "2025-06-06T05:42:08.187066",
+      "status": "unchanged",
+      "etag": "W/\"eba4038cb3bbd18519b4fc00be622bb8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotcapabilitiesbithotplugcapable": {
+      "hash": "3dd1416916943c4b398f2ef36f1092563a80f785644dcf25fb6fadd0fad818b3",
+      "last_checked": "2025-06-06T05:42:08.187066",
+      "status": "unchanged",
+      "etag": "df7102e1c994da3b80bec17cc515302b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotcapabilitiesbitelectromechanicalinterlockpresent.json": {
+      "hash": "da5ee470578a15fa2e024659bbcc4b406fc957b3ba53f7063cba0977281d5696",
+      "last_checked": "2025-06-06T05:42:08.582305",
+      "status": "unchanged",
+      "etag": "W/\"bf67f738f78a7cd281e1657df1f1227b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotcapabilitiesbitelectromechanicalinterlockpresent": {
+      "hash": "da5ee470578a15fa2e024659bbcc4b406fc957b3ba53f7063cba0977281d5696",
+      "last_checked": "2025-06-06T05:42:08.582305",
+      "status": "unchanged",
+      "etag": "9782da64d52c63ec2488574b3d7fcead"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcislotcapabilitiesbitnocommandcompletedsupport.json": {
+      "hash": "fa42e44e82317347c96983e8fe56a30b21011ec355143dffcbad678d0030355b",
+      "last_checked": "2025-06-06T05:42:09.032460",
+      "status": "unchanged",
+      "etag": "W/\"c8581a0a8eaa589a268f9b6689e0cbf9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcislotcapabilitiesbitnocommandcompletedsupport": {
+      "hash": "fa42e44e82317347c96983e8fe56a30b21011ec355143dffcbad678d0030355b",
+      "last_checked": "2025-06-06T05:42:09.032460",
+      "status": "unchanged",
+      "etag": "a37cbaf25a88eb1d92b5b579c3f79e48"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcpmesupportfromd0.json": {
+      "hash": "1d35eb93ccd97d4e47cfec07d27ce85f2bf4043b1bd12f65248295d83b451aae",
+      "last_checked": "2025-06-06T05:42:09.454782",
+      "status": "unchanged",
+      "etag": "W/\"28ca9cf41c38877ce420494d1a08ef54\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcpmesupportfromd0": {
+      "hash": "1d35eb93ccd97d4e47cfec07d27ce85f2bf4043b1bd12f65248295d83b451aae",
+      "last_checked": "2025-06-06T05:42:09.454782",
+      "status": "unchanged",
+      "etag": "2adc67206ffc93652ea606a9d7c2b8fc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcpmesupportfromd1.json": {
+      "hash": "7c8b2c4bd907517cd2faba5e975bcf158e5ed5c0e25e98e54676c927cb67b033",
+      "last_checked": "2025-06-06T05:42:09.893682",
+      "status": "unchanged",
+      "etag": "W/\"259173d47912e98fd965856ce9fe46d1\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcpmesupportfromd1": {
+      "hash": "7c8b2c4bd907517cd2faba5e975bcf158e5ed5c0e25e98e54676c927cb67b033",
+      "last_checked": "2025-06-06T05:42:09.893682",
+      "status": "unchanged",
+      "etag": "aa9f8d7413eaee3961333a625bc20a1b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcpmesupportfromd2.json": {
+      "hash": "c6b723108964641f26b41acb631aadc20368ff7142b531f94912336fe40f8651",
+      "last_checked": "2025-06-06T05:42:10.305109",
+      "status": "unchanged",
+      "etag": "W/\"b8c205eb3b63bd1631e0e9523b8ab5e8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcpmesupportfromd2": {
+      "hash": "c6b723108964641f26b41acb631aadc20368ff7142b531f94912336fe40f8651",
+      "last_checked": "2025-06-06T05:42:10.305109",
+      "status": "unchanged",
+      "etag": "3b8ee911323f481d73ab7a237ec4bec8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcpmesupportfromd3hot.json": {
+      "hash": "0b5a2f1203d20fb0d7e2602306a29b99c49c4df0e87facde36acc9c4f4de2780",
+      "last_checked": "2025-06-06T05:42:10.714106",
+      "status": "unchanged",
+      "etag": "W/\"fd194a459ab0ad6d82b5985a41f5fb69\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcpmesupportfromd3hot": {
+      "hash": "0b5a2f1203d20fb0d7e2602306a29b99c49c4df0e87facde36acc9c4f4de2780",
+      "last_checked": "2025-06-06T05:42:10.714106",
+      "status": "unchanged",
+      "etag": "c1f7b9cd0261d5a4bbd1fa3071d52086"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcpmesupportfromd3cold.json": {
+      "hash": "267c1d4db19471367cb96a28cd46553af23eb05d5caae1a59bab8dd3df648e1f",
+      "last_checked": "2025-06-06T05:42:11.129896",
+      "status": "unchanged",
+      "etag": "W/\"3eb3568752625540891ac1e469770a5c\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcpmesupportfromd3cold": {
+      "hash": "267c1d4db19471367cb96a28cd46553af23eb05d5caae1a59bab8dd3df648e1f",
+      "last_checked": "2025-06-06T05:42:11.129896",
+      "status": "unchanged",
+      "etag": "e19c6002395268569c0303eca7020ada"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcd1support.json": {
+      "hash": "ae9a89b7435d01503839725009d31269323b18fd2c6fd12cb66a26bb30ba5326",
+      "last_checked": "2025-06-06T05:42:11.535744",
+      "status": "unchanged",
+      "etag": "W/\"c75cf8fa8bab14e46c3cced5a83cd694\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcd1support": {
+      "hash": "ae9a89b7435d01503839725009d31269323b18fd2c6fd12cb66a26bb30ba5326",
+      "last_checked": "2025-06-06T05:42:11.535744",
+      "status": "unchanged",
+      "etag": "ede0be96a08163a386966bdf30391ad0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcd2support.json": {
+      "hash": "ddc12cc55d1c6b888998be90c6dd0c8f6c2e99b1f0fd9b276324baa22cd0b63c",
+      "last_checked": "2025-06-06T05:42:11.934591",
+      "status": "unchanged",
+      "etag": "W/\"22601af598d2fcaca4a737e6d09b4e2d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcd2support": {
+      "hash": "ddc12cc55d1c6b888998be90c6dd0c8f6c2e99b1f0fd9b276324baa22cd0b63c",
+      "last_checked": "2025-06-06T05:42:11.934591",
+      "status": "unchanged",
+      "etag": "a321df7999f0efe003faf91a9d2163d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcd3support.json": {
+      "hash": "fb72ac98d87290ec5bff3118100e8238da8699399bc34836c205887503f78b6a",
+      "last_checked": "2025-06-06T05:42:12.349010",
+      "status": "unchanged",
+      "etag": "W/\"cfadfabc44af512ed6361cb4d9e536ee\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcd3support": {
+      "hash": "fb72ac98d87290ec5bff3118100e8238da8699399bc34836c205887503f78b6a",
+      "last_checked": "2025-06-06T05:42:12.349010",
+      "status": "unchanged",
+      "etag": "014b1991a404d273ef95ca478e0971e3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcspowerstated0.json": {
+      "hash": "46f6417b2138d553b531d3bc7034354f1e97d1306606d335ec9b9c5b636a8dba",
+      "last_checked": "2025-06-06T05:42:12.796527",
+      "status": "unchanged",
+      "etag": "W/\"4f9e5b775e4124fc6a7f96d75fa02910\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcspowerstated0": {
+      "hash": "46f6417b2138d553b531d3bc7034354f1e97d1306606d335ec9b9c5b636a8dba",
+      "last_checked": "2025-06-06T05:42:12.796527",
+      "status": "unchanged",
+      "etag": "29d269953d7f677acdda3cb1ce558167"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcspowerstated1.json": {
+      "hash": "b7034bd2e75d86b8ccc2e03ef52e9a189fbe6f7a63d69f16e99d27c755733344",
+      "last_checked": "2025-06-06T05:42:13.235080",
+      "status": "unchanged",
+      "etag": "W/\"0fce4a8b12753fbbcfe04c90e87f03af\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcspowerstated1": {
+      "hash": "b7034bd2e75d86b8ccc2e03ef52e9a189fbe6f7a63d69f16e99d27c755733344",
+      "last_checked": "2025-06-06T05:42:13.235080",
+      "status": "unchanged",
+      "etag": "65f3000dcaf9ec9923c7c6c5f5d46cf2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcspowerstated2.json": {
+      "hash": "1871826e718efe1ab046d57e503c8302657c903676dd73dbda9da5e56cce2a19",
+      "last_checked": "2025-06-06T05:42:13.629128",
+      "status": "unchanged",
+      "etag": "W/\"73032299324c8a1ab70dde8c721b36df\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcspowerstated2": {
+      "hash": "1871826e718efe1ab046d57e503c8302657c903676dd73dbda9da5e56cce2a19",
+      "last_checked": "2025-06-06T05:42:13.629128",
+      "status": "unchanged",
+      "etag": "8dcdfa0f4e9a5a072dd1a55609895401"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcspowerstated3.json": {
+      "hash": "78f611db4108bc2ba2032dd311d54197a62230b2a2fb397350d2fa7c44fc8932",
+      "last_checked": "2025-06-06T05:42:14.036715",
+      "status": "unchanged",
+      "etag": "W/\"e81710db8218c8e347da9ae149700172\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcspowerstated3": {
+      "hash": "78f611db4108bc2ba2032dd311d54197a62230b2a2fb397350d2fa7c44fc8932",
+      "last_checked": "2025-06-06T05:42:14.036715",
+      "status": "unchanged",
+      "etag": "e04690bd797c3eaeb6277b158aa94df2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcspowerstatemask.json": {
+      "hash": "bbb413a6061cea10bc77cb2010a2ba20cecd785ceba63e70509d7c21949a0fd0",
+      "last_checked": "2025-06-06T05:42:14.479865",
+      "status": "unchanged",
+      "etag": "W/\"e247f68afc94a36727b60e7e8dde49ed\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcspowerstatemask": {
+      "hash": "bbb413a6061cea10bc77cb2010a2ba20cecd785ceba63e70509d7c21949a0fd0",
+      "last_checked": "2025-06-06T05:42:14.479865",
+      "status": "unchanged",
+      "etag": "61950735b02bb91238c63fc0c716cc62"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcspmeenable.json": {
+      "hash": "ff99ac809424b02cfd07b2272ff7e38108a1ab32d9ab096f5a1051b06d234a80",
+      "last_checked": "2025-06-06T05:42:14.874457",
+      "status": "unchanged",
+      "etag": "W/\"47a3a18daed1b02ed3d9114db00732a8\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcspmeenable": {
+      "hash": "ff99ac809424b02cfd07b2272ff7e38108a1ab32d9ab096f5a1051b06d234a80",
+      "last_checked": "2025-06-06T05:42:14.874457",
+      "status": "unchanged",
+      "etag": "f0db15133c40bf3869b4db9765fe9a43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcspmestatus.json": {
+      "hash": "e87078166a9e1e15f83dbabe56f004f64d16f7bad7d434ca7c32755e07e009be",
+      "last_checked": "2025-06-06T05:42:15.310784",
+      "status": "unchanged",
+      "etag": "W/\"175fff1fe89359ed303188330e48fdb1\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcspmestatus": {
+      "hash": "e87078166a9e1e15f83dbabe56f004f64d16f7bad7d434ca7c32755e07e009be",
+      "last_checked": "2025-06-06T05:42:15.310784",
+      "status": "unchanged",
+      "etag": "498e5544a2c6648779e3be2eb35199aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcsdefaultenablebits.json": {
+      "hash": "92a418e1bfa324ff11e2b519f009c0a8c005816c5845370909700755529478f6",
+      "last_checked": "2025-06-06T05:42:15.796818",
+      "status": "unchanged",
+      "etag": "W/\"4fa69c7c0df8984fbbaf4e1005ad8cc5\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcsdefaultenablebits": {
+      "hash": "92a418e1bfa324ff11e2b519f009c0a8c005816c5845370909700755529478f6",
+      "last_checked": "2025-06-06T05:42:15.796818",
+      "status": "unchanged",
+      "etag": "c92ee633ba5f1cc7cab468c6dc48615d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcspmedisableins3.json": {
+      "hash": "b4f5c6b8502a05d57d281b5416807ea7df59a54f0d260e776b42118feddab88d",
+      "last_checked": "2025-06-06T05:42:16.202626",
+      "status": "unchanged",
+      "etag": "W/\"0e622acda095aa181cb6efad85d01627\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcspmedisableins3": {
+      "hash": "b4f5c6b8502a05d57d281b5416807ea7df59a54f0d260e776b42118feddab88d",
+      "last_checked": "2025-06-06T05:42:16.202626",
+      "status": "unchanged",
+      "etag": "7db7f1b908fc795bb3b6de1815070eb4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kpcipmcspmewakereason.json": {
+      "hash": "c53eaea94975b433e9993090b693b21a06402b4a1bf0e19a0e65e64f4a6d2f47",
+      "last_checked": "2025-06-06T05:42:16.596856",
+      "status": "unchanged",
+      "etag": "W/\"fafbea3daa09287b25d8acf67792865b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kpcipmcspmewakereason": {
+      "hash": "c53eaea94975b433e9993090b693b21a06402b4a1bf0e19a0e65e64f4a6d2f47",
+      "last_checked": "2025-06-06T05:42:16.596856",
+      "status": "unchanged",
+      "etag": "32ca1e8e48bfa0a82d084a0bea3ee06f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicorrectableerrorbitreceiver.json": {
+      "hash": "5c3876339a2a8328b010cbfa6d738f042ce777286242e46625ec81361e1bcefb",
+      "last_checked": "2025-06-06T05:42:16.956057",
+      "status": "unchanged",
+      "etag": "W/\"d2a57a3ceb45042601b344f15d73664c\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicorrectableerrorbitreceiver": {
+      "hash": "5c3876339a2a8328b010cbfa6d738f042ce777286242e46625ec81361e1bcefb",
+      "last_checked": "2025-06-06T05:42:16.956057",
+      "status": "unchanged",
+      "etag": "a81722a1a0ad5f859ad7c40c64a1765d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicorrectableerrorbitbadtlp.json": {
+      "hash": "5a885e06879e66e516c915a9ce981714f8e827b697c2e3367efca2645913e1de",
+      "last_checked": "2025-06-06T05:42:17.356347",
+      "status": "unchanged",
+      "etag": "W/\"a7f3cbeb2d4a5c816e28f491f5b78e3b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicorrectableerrorbitbadtlp": {
+      "hash": "5a885e06879e66e516c915a9ce981714f8e827b697c2e3367efca2645913e1de",
+      "last_checked": "2025-06-06T05:42:17.356347",
+      "status": "unchanged",
+      "etag": "a0684d60bc0e087f42c1baa40d4ad19f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicorrectableerrorbitbaddllp.json": {
+      "hash": "2120f4c8b9e951599c7ea5f34f5d215f74d5406b65f3f2d9e071ed397db6bf51",
+      "last_checked": "2025-06-06T05:42:17.667235",
+      "status": "unchanged",
+      "etag": "W/\"6eb1d30f55dcbf26238ee422f22bb61a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicorrectableerrorbitbaddllp": {
+      "hash": "2120f4c8b9e951599c7ea5f34f5d215f74d5406b65f3f2d9e071ed397db6bf51",
+      "last_checked": "2025-06-06T05:42:17.667235",
+      "status": "unchanged",
+      "etag": "dad24875ec29f72574e5fb6eb308f82d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicorrectableerrorbitreplaynumrollover.json": {
+      "hash": "bc9dd74f1dde7702ff1ee2c2a3a1a3d5750f4ea3563f7ae8677f0907e11b6e47",
+      "last_checked": "2025-06-06T05:42:19.937933",
+      "status": "unchanged",
+      "etag": "W/\"445a8b933825dd001787276b33d40a0d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicorrectableerrorbitreplaynumrollover": {
+      "hash": "bc9dd74f1dde7702ff1ee2c2a3a1a3d5750f4ea3563f7ae8677f0907e11b6e47",
+      "last_checked": "2025-06-06T05:42:19.937933",
+      "status": "unchanged",
+      "etag": "8cad1a2d3be1ebda78b78c1437892aef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicorrectableerrorbitreplaytimertimeout.json": {
+      "hash": "cc9945d04a386df109a58407465df230adf0d7d30161a670ce8a85901c48c8b3",
+      "last_checked": "2025-06-06T05:42:20.294534",
+      "status": "unchanged",
+      "etag": "W/\"161dc570bf056cd5d9e62e3e7e47c785\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicorrectableerrorbitreplaytimertimeout": {
+      "hash": "cc9945d04a386df109a58407465df230adf0d7d30161a670ce8a85901c48c8b3",
+      "last_checked": "2025-06-06T05:42:20.294534",
+      "status": "unchanged",
+      "etag": "6d772f5deaa28ab9b7b313ab8d1a2eae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicorrectableerrorbitadvisorynonfatal.json": {
+      "hash": "7309230a45864e0fbfce752760b7411e91c946b24de0731442a0ed1dda4ae58e",
+      "last_checked": "2025-06-06T05:42:20.665328",
+      "status": "unchanged",
+      "etag": "W/\"4dcaea759eef44ca7e4b8345f5839561\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicorrectableerrorbitadvisorynonfatal": {
+      "hash": "7309230a45864e0fbfce752760b7411e91c946b24de0731442a0ed1dda4ae58e",
+      "last_checked": "2025-06-06T05:42:20.665328",
+      "status": "unchanged",
+      "etag": "e7b25ea101e053ee839a2a2717750af4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicorrectableerrorbitcorrectedinternal.json": {
+      "hash": "95527c35f67f3c00b17f381e5f12c11ed338a9719f06cea01e56961d3ee64d05",
+      "last_checked": "2025-06-06T05:42:21.074571",
+      "status": "unchanged",
+      "etag": "W/\"19760be2493f4a43bc5e7a83d4393fb3\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicorrectableerrorbitcorrectedinternal": {
+      "hash": "95527c35f67f3c00b17f381e5f12c11ed338a9719f06cea01e56961d3ee64d05",
+      "last_checked": "2025-06-06T05:42:21.074571",
+      "status": "unchanged",
+      "etag": "b472a7f9ce963f19d3d3c4e63ac3f4b5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopcicorrectableerrorbitheaderlogoverflow.json": {
+      "hash": "51a6032bb4584cce8806ae2475b12c3709e689021e0572410cdf66f7b7c52146",
+      "last_checked": "2025-06-06T05:42:21.451937",
+      "status": "unchanged",
+      "etag": "W/\"dfad555886697cb7f432d967f2e075b9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopcicorrectableerrorbitheaderlogoverflow": {
+      "hash": "51a6032bb4584cce8806ae2475b12c3709e689021e0572410cdf66f7b7c52146",
+      "last_checked": "2025-06-06T05:42:21.451937",
+      "status": "unchanged",
+      "etag": "32150b56b3270e97d31ddbc970496537"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitdatalinkprotocol.json": {
+      "hash": "a2542119dff3dd4283f8e6ec979d2b0de99673407060b10f95e7e0507e974050",
+      "last_checked": "2025-06-06T05:42:21.820038",
+      "status": "unchanged",
+      "etag": "W/\"9266ee26f4b0478a05e9b799bbc60717\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitdatalinkprotocol": {
+      "hash": "a2542119dff3dd4283f8e6ec979d2b0de99673407060b10f95e7e0507e974050",
+      "last_checked": "2025-06-06T05:42:21.820038",
+      "status": "unchanged",
+      "etag": "6f3cf86fcf10e8d17a4e9024be7f6f98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitsurprisedown.json": {
+      "hash": "91feb3b3af0c53d5eea88ae6c7c8dfc591dccfe967ca8e5e6f28ac2aeff861cf",
+      "last_checked": "2025-06-06T05:42:22.221449",
+      "status": "unchanged",
+      "etag": "W/\"60437c83ab959d91e6b702dbcca139bd\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitsurprisedown": {
+      "hash": "91feb3b3af0c53d5eea88ae6c7c8dfc591dccfe967ca8e5e6f28ac2aeff861cf",
+      "last_checked": "2025-06-06T05:42:22.221449",
+      "status": "unchanged",
+      "etag": "39b8684381081474276b3233a0baeccd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitpoisonedtlp.json": {
+      "hash": "d586948e6c744654d53106f35eb9f93bb1b20e2f3c1c217567f793329cc5d157",
+      "last_checked": "2025-06-06T05:42:22.576848",
+      "status": "unchanged",
+      "etag": "W/\"e177a0f0218bebfb63d29e3c61b27d5c\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitpoisonedtlp": {
+      "hash": "d586948e6c744654d53106f35eb9f93bb1b20e2f3c1c217567f793329cc5d157",
+      "last_checked": "2025-06-06T05:42:22.576848",
+      "status": "unchanged",
+      "etag": "5e9a8afbba778c54adcec408bb57812f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitflowcontrolprotocol.json": {
+      "hash": "28e7916feb603902f9b5429aeabd775f37fd9d850c9bcb679815585730cff0cb",
+      "last_checked": "2025-06-06T05:42:22.940490",
+      "status": "unchanged",
+      "etag": "W/\"725f4e039449569bf147b2dbdbbcf636\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitflowcontrolprotocol": {
+      "hash": "28e7916feb603902f9b5429aeabd775f37fd9d850c9bcb679815585730cff0cb",
+      "last_checked": "2025-06-06T05:42:22.940490",
+      "status": "unchanged",
+      "etag": "19e033bc4d7fcd724e33bb2af333306a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitcompletiontimeout.json": {
+      "hash": "31112a90e65ed7a8937f24379483bf033afcf259418eeb41f81d70f5775c4d01",
+      "last_checked": "2025-06-06T05:42:23.310762",
+      "status": "unchanged",
+      "etag": "W/\"f03306e6aacc24cd0686024d35807edc\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitcompletiontimeout": {
+      "hash": "31112a90e65ed7a8937f24379483bf033afcf259418eeb41f81d70f5775c4d01",
+      "last_checked": "2025-06-06T05:42:23.310762",
+      "status": "unchanged",
+      "etag": "1cc2c052e163d3e557e9b81eada8f1a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitcompleterabort.json": {
+      "hash": "87f0ac9ecd1372d2339404a99d359701cc3e1a87514a018a0c4b29bdba43d84a",
+      "last_checked": "2025-06-06T05:42:23.708179",
+      "status": "unchanged",
+      "etag": "W/\"121a9a536b29567b5792f0bd9d9d7865\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitcompleterabort": {
+      "hash": "87f0ac9ecd1372d2339404a99d359701cc3e1a87514a018a0c4b29bdba43d84a",
+      "last_checked": "2025-06-06T05:42:23.708179",
+      "status": "unchanged",
+      "etag": "258b8d74e95681583497afa42dba228e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitunexpectedcompletion.json": {
+      "hash": "4cfc923aecdca929a83b50c757cbce606211090e9e040f3559778c62ad2124a6",
+      "last_checked": "2025-06-06T05:42:24.082585",
+      "status": "unchanged",
+      "etag": "W/\"5e1f80decb15949bd51188364cf2f1da\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitunexpectedcompletion": {
+      "hash": "4cfc923aecdca929a83b50c757cbce606211090e9e040f3559778c62ad2124a6",
+      "last_checked": "2025-06-06T05:42:24.082585",
+      "status": "unchanged",
+      "etag": "ea276dc9ff7c1e291146bcb6ba769b73"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitreceiveroverflow.json": {
+      "hash": "9a1a0e7f94bd839ea16ccea0e8e8eb286db04abcadb1d41f807518c3b3994bf0",
+      "last_checked": "2025-06-06T05:42:24.452678",
+      "status": "unchanged",
+      "etag": "W/\"cc52ffd9d16e0a48b23ce93db17abfef\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitreceiveroverflow": {
+      "hash": "9a1a0e7f94bd839ea16ccea0e8e8eb286db04abcadb1d41f807518c3b3994bf0",
+      "last_checked": "2025-06-06T05:42:24.452678",
+      "status": "unchanged",
+      "etag": "6ee699e8048c1b56ee81f4c852279c12"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitmalformedtlp.json": {
+      "hash": "45453690cc01fcddf7de507dee5e828d2220d97813ccffa85997cfb80e39ec83",
+      "last_checked": "2025-06-06T05:42:24.856214",
+      "status": "unchanged",
+      "etag": "W/\"5cdb7169796787090aef6fc2a97424ec\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitmalformedtlp": {
+      "hash": "45453690cc01fcddf7de507dee5e828d2220d97813ccffa85997cfb80e39ec83",
+      "last_checked": "2025-06-06T05:42:24.856214",
+      "status": "unchanged",
+      "etag": "83de36a311fcabad39244b8270bc7ea6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitecrc.json": {
+      "hash": "32e95fa4ae81a2419b67972d757569bca0358a2ac4cb5eda2fc2883d4233dddc",
+      "last_checked": "2025-06-06T05:42:25.253006",
+      "status": "unchanged",
+      "etag": "W/\"a5d26a9caa17bb2bb2017b4000d66f1b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitecrc": {
+      "hash": "32e95fa4ae81a2419b67972d757569bca0358a2ac4cb5eda2fc2883d4233dddc",
+      "last_checked": "2025-06-06T05:42:25.253006",
+      "status": "unchanged",
+      "etag": "b3f07e81df42928ca4376b3610b8110f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitunsupportedrequest.json": {
+      "hash": "d3b0ea868c5219f3ae58c07e361218bc0199cec4cdcec8ba987fda3e04460ee5",
+      "last_checked": "2025-06-06T05:42:25.646624",
+      "status": "unchanged",
+      "etag": "W/\"43bde4fa0cd179e4d9f08e6deecd511f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitunsupportedrequest": {
+      "hash": "d3b0ea868c5219f3ae58c07e361218bc0199cec4cdcec8ba987fda3e04460ee5",
+      "last_checked": "2025-06-06T05:42:25.646624",
+      "status": "unchanged",
+      "etag": "064aeeb58238eef7c282b00c0a09c379"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitacsviolation.json": {
+      "hash": "ede34789259efb4d04985b0fc7732987224147f90c3b76940db6633fda36ce1f",
+      "last_checked": "2025-06-06T05:42:26.072174",
+      "status": "unchanged",
+      "etag": "W/\"f250ddd85442fd145377178cd3e81e70\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitacsviolation": {
+      "hash": "ede34789259efb4d04985b0fc7732987224147f90c3b76940db6633fda36ce1f",
+      "last_checked": "2025-06-06T05:42:26.072174",
+      "status": "unchanged",
+      "etag": "968ad17f1ba5d6658cc058732b07ad52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitinternal.json": {
+      "hash": "6acfbb8467229f3006bf9a2fa0367fc4bff4a3b09060f7dc165ab2f779c5f711",
+      "last_checked": "2025-06-06T05:42:26.435422",
+      "status": "unchanged",
+      "etag": "W/\"df49f89c17a4b49cc1c82943c28828fb\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitinternal": {
+      "hash": "6acfbb8467229f3006bf9a2fa0367fc4bff4a3b09060f7dc165ab2f779c5f711",
+      "last_checked": "2025-06-06T05:42:26.435422",
+      "status": "unchanged",
+      "etag": "e5f977050676da0420688fd92b74e1d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitmcblockedtlp.json": {
+      "hash": "892522c43b08b8cde51b751e164d19a4950147ddb5563c83c758668cd73e96db",
+      "last_checked": "2025-06-06T05:42:26.830237",
+      "status": "unchanged",
+      "etag": "W/\"18552822a72a121db18abcc2c0e33f4f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitmcblockedtlp": {
+      "hash": "892522c43b08b8cde51b751e164d19a4950147ddb5563c83c758668cd73e96db",
+      "last_checked": "2025-06-06T05:42:26.830237",
+      "status": "unchanged",
+      "etag": "599ff626b2ed52e18543c610ea8921fc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbitatomicopegressblocked.json": {
+      "hash": "43387b5e12f06644721bf99e0fc50e2193cee1fbc2fdfad66cf15b9e40fe81ba",
+      "last_checked": "2025-06-06T05:42:27.229180",
+      "status": "unchanged",
+      "etag": "W/\"de502c428bcb3512d49c496e28e15147\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbitatomicopegressblocked": {
+      "hash": "43387b5e12f06644721bf99e0fc50e2193cee1fbc2fdfad66cf15b9e40fe81ba",
+      "last_checked": "2025-06-06T05:42:27.229180",
+      "status": "unchanged",
+      "etag": "461a582c377da139082808fc8ce46cd2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciuncorrectableerrorbittlpprefixblocked.json": {
+      "hash": "3a6317e5523872fc578a98433de2a81e381ea9db6d527a0cf472b7adc61e1b26",
+      "last_checked": "2025-06-06T05:42:27.622604",
+      "status": "unchanged",
+      "etag": "W/\"3dd70157ab173476f4fcbdd69be6b12f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciuncorrectableerrorbittlpprefixblocked": {
+      "hash": "3a6317e5523872fc578a98433de2a81e381ea9db6d527a0cf472b7adc61e1b26",
+      "last_checked": "2025-06-06T05:42:27.622604",
+      "status": "unchanged",
+      "etag": "2e7b145f74b47fd672d3db35bec45f99"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercapcapcontroloffset.json": {
+      "hash": "959c9e76c4b0b505191e3f4ffc921d71f09148443243a2f118f42deb442b23ff",
+      "last_checked": "2025-06-06T05:42:27.991422",
+      "status": "unchanged",
+      "etag": "W/\"6085dd74ae33856adbc8d3dacb628064\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercapcapcontroloffset": {
+      "hash": "959c9e76c4b0b505191e3f4ffc921d71f09148443243a2f118f42deb442b23ff",
+      "last_checked": "2025-06-06T05:42:27.991422",
+      "status": "unchanged",
+      "etag": "7cf6b2f1749cb9d19edeeb94d4f6e925"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercapcapheaderoffset.json": {
+      "hash": "c659b3af8aa40439bc8f09a18f593b1e998f2771d0dc2f1398d70e666ced9ec1",
+      "last_checked": "2025-06-06T05:42:28.362831",
+      "status": "unchanged",
+      "etag": "W/\"bd81c6b466fb5dceb28167d02b5d6ba1\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercapcapheaderoffset": {
+      "hash": "c659b3af8aa40439bc8f09a18f593b1e998f2771d0dc2f1398d70e666ced9ec1",
+      "last_checked": "2025-06-06T05:42:28.362831",
+      "status": "unchanged",
+      "etag": "892aa0c62e9cbc546cbe25261b127aef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercapcorerrmaskoffset.json": {
+      "hash": "5094acb85231e82458c13fca26b42e53b6b94d8593d2e2f3ee4baaa16aa19eb2",
+      "last_checked": "2025-06-06T05:42:28.741051",
+      "status": "unchanged",
+      "etag": "W/\"63664f3302385ee2d5d57cee74584ecb\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercapcorerrmaskoffset": {
+      "hash": "5094acb85231e82458c13fca26b42e53b6b94d8593d2e2f3ee4baaa16aa19eb2",
+      "last_checked": "2025-06-06T05:42:28.741051",
+      "status": "unchanged",
+      "etag": "9c383808788ce611ec0622edbe93333a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercapcorerrstatusoffset.json": {
+      "hash": "f5cbcba4bc6a0c6085e45a7d90f5c09cff761a4303d2de4ed8994b96cca6627f",
+      "last_checked": "2025-06-06T05:42:29.155859",
+      "status": "unchanged",
+      "etag": "W/\"aa98b8211daf86a700be792e30c835fc\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercapcorerrstatusoffset": {
+      "hash": "f5cbcba4bc6a0c6085e45a7d90f5c09cff761a4303d2de4ed8994b96cca6627f",
+      "last_checked": "2025-06-06T05:42:29.155859",
+      "status": "unchanged",
+      "etag": "e387050ef579c403734ad2846ef4763b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaperrsourceidoffset.json": {
+      "hash": "03479a3f41d2bb9042e68fa160468ef2258d539f3b6c46a8ab9a88d03dc0ea0a",
+      "last_checked": "2025-06-06T05:42:29.492291",
+      "status": "unchanged",
+      "etag": "W/\"ccd5d86bf41685a60d20f0cdd40c5b25\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaperrsourceidoffset": {
+      "hash": "03479a3f41d2bb9042e68fa160468ef2258d539f3b6c46a8ab9a88d03dc0ea0a",
+      "last_checked": "2025-06-06T05:42:29.492291",
+      "status": "unchanged",
+      "etag": "997524554e64c7817093954a8eeaf2e5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaphdrlogdw0offset.json": {
+      "hash": "ba42c339e59ecae0bfc91ae894a1f8cab729e3feb0edc461f19bd59fc6641123",
+      "last_checked": "2025-06-06T05:42:29.851332",
+      "status": "unchanged",
+      "etag": "W/\"4be52ae186c8cd47181d4dd6bef84493\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaphdrlogdw0offset": {
+      "hash": "ba42c339e59ecae0bfc91ae894a1f8cab729e3feb0edc461f19bd59fc6641123",
+      "last_checked": "2025-06-06T05:42:29.851332",
+      "status": "unchanged",
+      "etag": "e96bd5399e34700167a44247a583ad88"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaphdrlogdw1offset.json": {
+      "hash": "ab742ff10d00bcb7b263569a0eb3d0473c15d8f7b7e771c913ebfaff5e05607b",
+      "last_checked": "2025-06-06T05:42:30.256112",
+      "status": "unchanged",
+      "etag": "W/\"49efa17607d742f558d614efd97b6dc1\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaphdrlogdw1offset": {
+      "hash": "ab742ff10d00bcb7b263569a0eb3d0473c15d8f7b7e771c913ebfaff5e05607b",
+      "last_checked": "2025-06-06T05:42:30.256112",
+      "status": "unchanged",
+      "etag": "06004d30fd434eec0d37e4d4a5569bf1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaphdrlogdw2offset.json": {
+      "hash": "8cbbd172413e6ea2fb31255052ac5684c70c799e53b253fb14e7d7ef1023f2b1",
+      "last_checked": "2025-06-06T05:42:30.674281",
+      "status": "unchanged",
+      "etag": "W/\"a38276b3e988487fe6183e8aced9530a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaphdrlogdw2offset": {
+      "hash": "8cbbd172413e6ea2fb31255052ac5684c70c799e53b253fb14e7d7ef1023f2b1",
+      "last_checked": "2025-06-06T05:42:30.674281",
+      "status": "unchanged",
+      "etag": "379f48b40741424138d2d0669abe998b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaphdrlogdw3offset.json": {
+      "hash": "43fe6b960cbe8d60f4d944b34e3dcaf56da60badcfe03bbc74818d335210b64b",
+      "last_checked": "2025-06-06T05:42:31.047886",
+      "status": "unchanged",
+      "etag": "W/\"3c95896eb7166d539a1b7fd43aa55661\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaphdrlogdw3offset": {
+      "hash": "43fe6b960cbe8d60f4d944b34e3dcaf56da60badcfe03bbc74818d335210b64b",
+      "last_checked": "2025-06-06T05:42:31.047886",
+      "status": "unchanged",
+      "etag": "4df6638973682d8ba047dd0915ebdbd1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaprooterrcmdoffset.json": {
+      "hash": "8172411b282e2280dac5d8771e5d07c3122111d66727aa770858795fe372ada6",
+      "last_checked": "2025-06-06T05:42:31.443974",
+      "status": "unchanged",
+      "etag": "W/\"2972a5479030309c023c39ea459a41e5\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaprooterrcmdoffset": {
+      "hash": "8172411b282e2280dac5d8771e5d07c3122111d66727aa770858795fe372ada6",
+      "last_checked": "2025-06-06T05:42:31.443974",
+      "status": "unchanged",
+      "etag": "19a29bcd7912b00631272be4304eaa7f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaprooterrstatusoffset.json": {
+      "hash": "087b7e9fccbcb87571a2bc46abfd732de10ce6fc763f0808d0b8b48790741134",
+      "last_checked": "2025-06-06T05:42:31.825778",
+      "status": "unchanged",
+      "etag": "W/\"804a4be4f3c8973e2dc6813ed4d05a14\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaprooterrstatusoffset": {
+      "hash": "087b7e9fccbcb87571a2bc46abfd732de10ce6fc763f0808d0b8b48790741134",
+      "last_checked": "2025-06-06T05:42:31.825778",
+      "status": "unchanged",
+      "etag": "d7b0b6a9618c2af1effc665babc7f018"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaptlpprefixlogdw0offset.json": {
+      "hash": "f10f6d20856ba8f695bf3bad5350f18704857eaab854b49694f2e93baf31c4e5",
+      "last_checked": "2025-06-06T05:42:32.176480",
+      "status": "unchanged",
+      "etag": "W/\"090e5209538e3594c00cc4a37d3007ed\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaptlpprefixlogdw0offset": {
+      "hash": "f10f6d20856ba8f695bf3bad5350f18704857eaab854b49694f2e93baf31c4e5",
+      "last_checked": "2025-06-06T05:42:32.176480",
+      "status": "unchanged",
+      "etag": "244bb5927290ef38416ea7312b3b5960"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaptlpprefixlogdw1offset.json": {
+      "hash": "02008b2c27aa2b03c33c41f60c97f4225c096942e70fb63c62557994206a8614",
+      "last_checked": "2025-06-06T05:42:32.541482",
+      "status": "unchanged",
+      "etag": "W/\"ecf8eeae4bfb590ae888bd44d7ba28f4\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaptlpprefixlogdw1offset": {
+      "hash": "02008b2c27aa2b03c33c41f60c97f4225c096942e70fb63c62557994206a8614",
+      "last_checked": "2025-06-06T05:42:32.541482",
+      "status": "unchanged",
+      "etag": "66a3f08f323a9a9bb6b5b8d1fa5a343a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaptlpprefixlogdw2offset.json": {
+      "hash": "b98c2167ef800699c20112e8a770eff6b3bb8fefb94715c61d1b95b73b105a4b",
+      "last_checked": "2025-06-06T05:42:32.907406",
+      "status": "unchanged",
+      "etag": "W/\"1ac82dfae232458b48d4271e640a830b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaptlpprefixlogdw2offset": {
+      "hash": "b98c2167ef800699c20112e8a770eff6b3bb8fefb94715c61d1b95b73b105a4b",
+      "last_checked": "2025-06-06T05:42:32.907406",
+      "status": "unchanged",
+      "etag": "ee071ad253ff2f894d6c487e35d2b40c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercaptlpprefixlogdw3offset.json": {
+      "hash": "dd0b107322a62525f543bba354f3ea6e89c7e1c928343093dd7853b4364ced36",
+      "last_checked": "2025-06-06T05:42:33.296246",
+      "status": "unchanged",
+      "etag": "W/\"6dbd7b03266dd42e17fde245a1ad2f93\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercaptlpprefixlogdw3offset": {
+      "hash": "dd0b107322a62525f543bba354f3ea6e89c7e1c928343093dd7853b4364ced36",
+      "last_checked": "2025-06-06T05:42:33.296246",
+      "status": "unchanged",
+      "etag": "69971cac995626893181f364909c015c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercapuncerrmaskoffset.json": {
+      "hash": "975fbb98370cd614d4ae54bcfb719b227e01e80c296c921a49f3f25ab895e0fe",
+      "last_checked": "2025-06-06T05:42:33.685341",
+      "status": "unchanged",
+      "etag": "W/\"cd5f49a3610f5871af615b5b81f7a0fa\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercapuncerrmaskoffset": {
+      "hash": "975fbb98370cd614d4ae54bcfb719b227e01e80c296c921a49f3f25ab895e0fe",
+      "last_checked": "2025-06-06T05:42:33.685341",
+      "status": "unchanged",
+      "etag": "84e8f6b74917301623cbaade193b8017"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercapuncerrseverityoffset.json": {
+      "hash": "576be24516400a5f848cafd4d8a8a1ff891f52f7c3d4bed21dce017d4d82fadc",
+      "last_checked": "2025-06-06T05:42:34.083185",
+      "status": "unchanged",
+      "etag": "W/\"2806586d99a16df4f83b83131677f871\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercapuncerrseverityoffset": {
+      "hash": "576be24516400a5f848cafd4d8a8a1ff891f52f7c3d4bed21dce017d4d82fadc",
+      "last_checked": "2025-06-06T05:42:34.083185",
+      "status": "unchanged",
+      "etag": "4b9768c1222d0c6b9a1376662d66f803"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciaercapuncerrstatusoffset.json": {
+      "hash": "d6af5d687a4922a3f646ef772063492ab92f8b45ca43a7c805cda0134fb2a673",
+      "last_checked": "2025-06-06T05:42:34.466538",
+      "status": "unchanged",
+      "etag": "W/\"9b7f4883955162cf141c7acab816985d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiopciaercapuncerrstatusoffset": {
+      "hash": "d6af5d687a4922a3f646ef772063492ab92f8b45ca43a7c805cda0134fb2a673",
+      "last_checked": "2025-06-06T05:42:34.466538",
+      "status": "unchanged",
+      "etag": "ee9c22259ac95a3adb44d92bf9da1434"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopciaccessoptions/kiopciaccesslatencytoleranthint.json": {
+      "hash": "3a4231337b83151e90f9a82f01b0d0efd6e80bf1d76966e979cdf8f65c7026df",
+      "last_checked": "2025-06-06T05:42:34.813328",
+      "status": "unchanged",
+      "etag": "W/\"3249545665edb0bdc765956a7c525d11\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopciaccessoptions/kiopciaccesslatencytoleranthint": {
+      "hash": "3a4231337b83151e90f9a82f01b0d0efd6e80bf1d76966e979cdf8f65c7026df",
+      "last_checked": "2025-06-06T05:42:34.813328",
+      "status": "unchanged",
+      "etag": "829ef4284b288abe3322c522efef3ee4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcideviceresetoptions/kiopcideviceresetoptionnone.json": {
+      "hash": "4b51e0fdce9db47d23a17bec24d3afaa52439999ecc403566ff0e2502ffe361d",
+      "last_checked": "2025-06-06T05:42:35.150330",
+      "status": "unchanged",
+      "etag": "W/\"a8620ac2d28e414ef4fac82f6bb24589\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcideviceresetoptions/kiopcideviceresetoptionnone": {
+      "hash": "4b51e0fdce9db47d23a17bec24d3afaa52439999ecc403566ff0e2502ffe361d",
+      "last_checked": "2025-06-06T05:42:35.150330",
+      "status": "unchanged",
+      "etag": "82122537a28fd9d41cdb83e9a4239633"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcideviceresetoptions/kiopcideviceresetoptionterminate.json": {
+      "hash": "6a740ca39e81d3c12450a4dc4d71f7e30fc944d901b264db1327569908597cc7",
+      "last_checked": "2025-06-06T05:42:35.460706",
+      "status": "unchanged",
+      "etag": "W/\"a630a8b7cc488040c8bcdfad7c7fec5f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcideviceresetoptions/kiopcideviceresetoptionterminate": {
+      "hash": "6a740ca39e81d3c12450a4dc4d71f7e30fc944d901b264db1327569908597cc7",
+      "last_checked": "2025-06-06T05:42:35.460706",
+      "status": "unchanged",
+      "etag": "7d6a578eab03ef57409ae6b38868fe43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcideviceresettypes/kiopcideviceresettypefunctionreset.json": {
+      "hash": "e29349018d0b13dc93ba305c8132a5a9b6539fe402ab0713473f3cf7a7b8db35",
+      "last_checked": "2025-06-06T05:42:35.807785",
+      "status": "unchanged",
+      "etag": "W/\"bcff476456dc7de9bc3ccb013582b63b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcideviceresettypes/kiopcideviceresettypefunctionreset": {
+      "hash": "e29349018d0b13dc93ba305c8132a5a9b6539fe402ab0713473f3cf7a7b8db35",
+      "last_checked": "2025-06-06T05:42:35.807785",
+      "status": "unchanged",
+      "etag": "0c1248739f6c515514ceee503091e499"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcideviceresettypes/kiopcideviceresettypehotreset.json": {
+      "hash": "1f2b4a867f45d5d8dbcbfad3077fd4c2ef5bc7db278c4d9bd7081e7559f17533",
+      "last_checked": "2025-06-06T05:42:36.208306",
+      "status": "unchanged",
+      "etag": "W/\"149303757488f40ef43eed32798c4548\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcideviceresettypes/kiopcideviceresettypehotreset": {
+      "hash": "1f2b4a867f45d5d8dbcbfad3077fd4c2ef5bc7db278c4d9bd7081e7559f17533",
+      "last_checked": "2025-06-06T05:42:36.208306",
+      "status": "unchanged",
+      "etag": "78bd85ec55bf36375e8ce950a8ceb1fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcideviceresettypes/kiopcideviceresettypewarmreset.json": {
+      "hash": "aeec1f0817058c97f7c002b13be31c0d09abc7f1544487e5f185772331b28f11",
+      "last_checked": "2025-06-06T05:42:36.549207",
+      "status": "unchanged",
+      "etag": "W/\"0f55e94d5d26750ca131e8fb9b5e95a9\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcideviceresettypes/kiopcideviceresettypewarmreset": {
+      "hash": "aeec1f0817058c97f7c002b13be31c0d09abc7f1544487e5f185772331b28f11",
+      "last_checked": "2025-06-06T05:42:36.549207",
+      "status": "unchanged",
+      "etag": "0b908ae49daee38e5e0fd405a354bdcb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcideviceresettypes/kiopcideviceresettypewarmresetdisable.json": {
+      "hash": "c0632ad755d488cbc4430ae4a61e37faccdef9fea2c52933841f9cada1f2ee20",
+      "last_checked": "2025-06-06T05:42:36.886400",
+      "status": "unchanged",
+      "etag": "W/\"e59703793b46bdd87cea47136c5388e0\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcideviceresettypes/kiopcideviceresettypewarmresetdisable": {
+      "hash": "c0632ad755d488cbc4430ae4a61e37faccdef9fea2c52933841f9cada1f2ee20",
+      "last_checked": "2025-06-06T05:42:36.886400",
+      "status": "unchanged",
+      "etag": "368cb275a20e985370e5091aecd04714"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcideviceresettypes/kiopcideviceresettypewarmresetenable.json": {
+      "hash": "454a6ca14b7fbf1ae14fd54a993204494b08e1ce9e2d68a89d20ac2b64292eb0",
+      "last_checked": "2025-06-06T05:42:37.256081",
+      "status": "unchanged",
+      "etag": "W/\"564bc47fad84d66d58d2e99ad9064eb3\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcideviceresettypes/kiopcideviceresettypewarmresetenable": {
+      "hash": "454a6ca14b7fbf1ae14fd54a993204494b08e1ce9e2d68a89d20ac2b64292eb0",
+      "last_checked": "2025-06-06T05:42:37.256081",
+      "status": "unchanged",
+      "etag": "0bb81238d276e1b4d5a5fe55a1dc4be6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_16_gts.json": {
+      "hash": "495ccd7c44845b68ffbe8a413abedde39e328f26643cb01ce26a7983e8dcd90d",
+      "last_checked": "2025-06-06T05:42:37.642669",
+      "status": "unchanged",
+      "etag": "W/\"805d80a5ee5339e23c947d2f235e9d43\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_16_gts": {
+      "hash": "495ccd7c44845b68ffbe8a413abedde39e328f26643cb01ce26a7983e8dcd90d",
+      "last_checked": "2025-06-06T05:42:37.642669",
+      "status": "unchanged",
+      "etag": "c4d98bd340a2ad3c5a9f3f494f03c7b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_2_5_gts.json": {
+      "hash": "9235bc90d280a740e5b44c6f39416752c42de126c10c55b4c569a187f013b2e5",
+      "last_checked": "2025-06-06T05:42:38.012768",
+      "status": "unchanged",
+      "etag": "W/\"3310531d45867273463e3a1863ed3dcd\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_2_5_gts": {
+      "hash": "9235bc90d280a740e5b44c6f39416752c42de126c10c55b4c569a187f013b2e5",
+      "last_checked": "2025-06-06T05:42:38.012768",
+      "status": "unchanged",
+      "etag": "adde166e2fb77ae0d278e9c24c2c9c8c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_32_gts.json": {
+      "hash": "e7989e26dae9bd58a293ddd23a214778067fc590c34e316f4c0ba18378395ae0",
+      "last_checked": "2025-06-06T05:42:38.414998",
+      "status": "unchanged",
+      "etag": "W/\"bcb49da90d9aed122ac303efba7982f4\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_32_gts": {
+      "hash": "e7989e26dae9bd58a293ddd23a214778067fc590c34e316f4c0ba18378395ae0",
+      "last_checked": "2025-06-06T05:42:38.414998",
+      "status": "unchanged",
+      "etag": "c4a22139a14ffbf5131c91c9080ed72e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_5_gts.json": {
+      "hash": "08c8147d830c0ae0010a71730eb7bf9ce77b8471289c78196b63e5f9a362bb43",
+      "last_checked": "2025-06-06T05:42:38.782628",
+      "status": "unchanged",
+      "etag": "W/\"dccf2e0f2ae0e52754360259429e2dfd\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_5_gts": {
+      "hash": "08c8147d830c0ae0010a71730eb7bf9ce77b8471289c78196b63e5f9a362bb43",
+      "last_checked": "2025-06-06T05:42:38.782628",
+      "status": "unchanged",
+      "etag": "1f2ca646beded162f04d2f73a8f50dfb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_8_gts.json": {
+      "hash": "86382cd762c661b6b169ca643d1af1410d741d4ef31eeedd64ac3e3875785aad",
+      "last_checked": "2025-06-06T05:42:39.198564",
+      "status": "unchanged",
+      "etag": "W/\"3e19c7461ca958b5478196d121659e1f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_8_gts": {
+      "hash": "86382cd762c661b6b169ca643d1af1410d741d4ef31eeedd64ac3e3875785aad",
+      "last_checked": "2025-06-06T05:42:39.198564",
+      "status": "unchanged",
+      "etag": "a0feda4af37d9a79f381f1625800bd34"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcibartype/kpcibartypeio.json": {
+      "hash": "e8afef692bc1d4ce9791fa3e7019cc55bf44976dad825e4ca3bd781c14d3a887",
+      "last_checked": "2025-06-06T05:42:39.618388",
+      "status": "unchanged",
+      "etag": "W/\"4252ab77abbb847cf4bcd83ea9936d87\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcibartype/kpcibartypeio": {
+      "hash": "e8afef692bc1d4ce9791fa3e7019cc55bf44976dad825e4ca3bd781c14d3a887",
+      "last_checked": "2025-06-06T05:42:39.618388",
+      "status": "unchanged",
+      "etag": "2e93de9b505f1107e45ba0551d8a3971"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcibartype/kpcibartypem32.json": {
+      "hash": "f96ab46e8c7eaefcf4434bac4b3e088c75c7104e00fb07d874ec090480c66ea7",
+      "last_checked": "2025-06-06T05:42:40.010107",
+      "status": "unchanged",
+      "etag": "W/\"92aab041b775586fd94bf13235b9073f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcibartype/kpcibartypem32": {
+      "hash": "f96ab46e8c7eaefcf4434bac4b3e088c75c7104e00fb07d874ec090480c66ea7",
+      "last_checked": "2025-06-06T05:42:40.010107",
+      "status": "unchanged",
+      "etag": "c5f20e9863ee1eadc2b09cde632231ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcibartype/kpcibartypem32pf.json": {
+      "hash": "a4872ada97be5036d0e20dfd7380ec37dccfacfd6cdb87ae97afd1b9bee70751",
+      "last_checked": "2025-06-06T05:42:40.406138",
+      "status": "unchanged",
+      "etag": "W/\"9d9cbed0f51eee7f0db3d74b81d53008\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcibartype/kpcibartypem32pf": {
+      "hash": "a4872ada97be5036d0e20dfd7380ec37dccfacfd6cdb87ae97afd1b9bee70751",
+      "last_checked": "2025-06-06T05:42:40.406138",
+      "status": "unchanged",
+      "etag": "7f3ecf71bc3f0980f4c6d950b1fede12"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcibartype/kpcibartypem64.json": {
+      "hash": "f1aeefcf52779fb554f2f3c523c1d905bc42f598e9503c1c0cdd18b967783221",
+      "last_checked": "2025-06-06T05:42:40.748287",
+      "status": "unchanged",
+      "etag": "W/\"b9f9fb9425172d813d31d60dcd75759f\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcibartype/kpcibartypem64": {
+      "hash": "f1aeefcf52779fb554f2f3c523c1d905bc42f598e9503c1c0cdd18b967783221",
+      "last_checked": "2025-06-06T05:42:40.748287",
+      "status": "unchanged",
+      "etag": "944ad386f24fa03b0db54e458a6e846e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcibartype/kpcibartypem64pf.json": {
+      "hash": "1151d5442f5cf70434d96c3601c5f940b49ff329e0ae21f7a14f6518d6463bbf",
+      "last_checked": "2025-06-06T05:42:41.136688",
+      "status": "unchanged",
+      "etag": "W/\"ad5b7e807445f49600eb5d7b8ffde670\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcibartype/kpcibartypem64pf": {
+      "hash": "1151d5442f5cf70434d96c3601c5f940b49ff329e0ae21f7a14f6518d6463bbf",
+      "last_checked": "2025-06-06T05:42:41.136688",
+      "status": "unchanged",
+      "etag": "a2de8109481676ecd6db0ff9ef114863"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_16_gts.json": {
+      "hash": "f408307936a944b89d801d1a392957945bc341357a9636149c50f40f7d11ab90",
+      "last_checked": "2025-06-06T05:42:41.560393",
+      "status": "unchanged",
+      "etag": "W/\"4dfd19922853e6ca951dfcbb748e0597\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_16_gts": {
+      "hash": "f408307936a944b89d801d1a392957945bc341357a9636149c50f40f7d11ab90",
+      "last_checked": "2025-06-06T05:42:41.560393",
+      "status": "unchanged",
+      "etag": "95d498489c04996e26df7986cbf49a3c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_2_5_gts.json": {
+      "hash": "6d3150bd5f1a10478baa1604bbeeeade862b2bda4e96dce83e2a716cf8820e83",
+      "last_checked": "2025-06-06T05:42:41.953251",
+      "status": "unchanged",
+      "etag": "W/\"059a18c06949c620379a5cd7e980f46e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_2_5_gts": {
+      "hash": "6d3150bd5f1a10478baa1604bbeeeade862b2bda4e96dce83e2a716cf8820e83",
+      "last_checked": "2025-06-06T05:42:41.953251",
+      "status": "unchanged",
+      "etag": "1965c53afc09c087d816853388c085cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_32_gts.json": {
+      "hash": "5df47299b305ae07dffdf3bf3c6b165ab662266da95dc8149a7f2292841b48b1",
+      "last_checked": "2025-06-06T05:42:42.357528",
+      "status": "unchanged",
+      "etag": "W/\"ee55a4beb5a309bf7a2306ede70e9047\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_32_gts": {
+      "hash": "5df47299b305ae07dffdf3bf3c6b165ab662266da95dc8149a7f2292841b48b1",
+      "last_checked": "2025-06-06T05:42:42.357528",
+      "status": "unchanged",
+      "etag": "48fe3c622b3ec932bcf974e028c9906f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_5_gts.json": {
+      "hash": "d2863173dfc6cd0bf19940a08065c5e738a19ce3c7d7d39c3716a562102538b2",
+      "last_checked": "2025-06-06T05:42:42.804849",
+      "status": "unchanged",
+      "etag": "W/\"39a3c0c883ee826d6ae9788a47212de0\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_5_gts": {
+      "hash": "d2863173dfc6cd0bf19940a08065c5e738a19ce3c7d7d39c3716a562102538b2",
+      "last_checked": "2025-06-06T05:42:42.804849",
+      "status": "unchanged",
+      "etag": "69216f4175925a9b4fb4eae9c71b38f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_8_gts.json": {
+      "hash": "67d8ac502f69200af835886d24400c26f430e2bf82220f07db8eb536f6fd47d3",
+      "last_checked": "2025-06-06T05:42:43.215505",
+      "status": "unchanged",
+      "etag": "W/\"e040c0c5c9a4a820a8858c3403e0bc92\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_8_gts": {
+      "hash": "67d8ac502f69200af835886d24400c26f430e2bf82220f07db8eb536f6fd47d3",
+      "last_checked": "2025-06-06T05:42:43.215505",
+      "status": "unchanged",
+      "etag": "96c1679ec59a31aff43e37b98ec9d436"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar0.json": {
+      "hash": "0ab33b85edc14d9f493540242eb2d45090623491045a31b45b60579e98130dec",
+      "last_checked": "2025-06-06T05:42:43.583184",
+      "status": "unchanged",
+      "etag": "W/\"d21e1630d6e7c7cf6cb6119f3ccd2e2e\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar0": {
+      "hash": "0ab33b85edc14d9f493540242eb2d45090623491045a31b45b60579e98130dec",
+      "last_checked": "2025-06-06T05:42:43.583184",
+      "status": "unchanged",
+      "etag": "4f58e48e1dc789d5c55a9cde28f0ec09"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar1.json": {
+      "hash": "2cfa91bd674d16f5d48aca43de0b28a571a8dfb86dfa99575879725f14a63cfe",
+      "last_checked": "2025-06-06T05:42:43.987167",
+      "status": "unchanged",
+      "etag": "W/\"17aa549ecf9c7f4e62534f14337cd623\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar1": {
+      "hash": "2cfa91bd674d16f5d48aca43de0b28a571a8dfb86dfa99575879725f14a63cfe",
+      "last_checked": "2025-06-06T05:42:43.987167",
+      "status": "unchanged",
+      "etag": "3d59e82726ba0977df6b41d45743cb51"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar2.json": {
+      "hash": "8212bd0234bce5efa9c5539ee6fef637ed643ad8190d3694bb4146676804f867",
+      "last_checked": "2025-06-06T05:42:44.334088",
+      "status": "unchanged",
+      "etag": "W/\"2df7a0120dd226bc9f1f45bf707d6179\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar2": {
+      "hash": "8212bd0234bce5efa9c5539ee6fef637ed643ad8190d3694bb4146676804f867",
+      "last_checked": "2025-06-06T05:42:44.334088",
+      "status": "unchanged",
+      "etag": "22a9d1603fcd358af65fec231fe598a7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar3.json": {
+      "hash": "6a9307fe7d165fa50382fb9b2441317fc703f530662736142420c587cdf49bb2",
+      "last_checked": "2025-06-06T05:42:44.757007",
+      "status": "unchanged",
+      "etag": "W/\"2eea56ee1a003c92c677b8c3b624cf22\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar3": {
+      "hash": "6a9307fe7d165fa50382fb9b2441317fc703f530662736142420c587cdf49bb2",
+      "last_checked": "2025-06-06T05:42:44.757007",
+      "status": "unchanged",
+      "etag": "f330ec86f769a715e526b8dded7ea306"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar4.json": {
+      "hash": "7f63bab9d0bf9cad3005cecc5745d82263665e7d24828a79b88efd1512c7e5ec",
+      "last_checked": "2025-06-06T05:42:45.128272",
+      "status": "unchanged",
+      "etag": "W/\"2d24812338ff1eaed15e2d27ed8a9850\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar4": {
+      "hash": "7f63bab9d0bf9cad3005cecc5745d82263665e7d24828a79b88efd1512c7e5ec",
+      "last_checked": "2025-06-06T05:42:45.128272",
+      "status": "unchanged",
+      "etag": "500c6b70013087129391d27a7f65e1d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar5.json": {
+      "hash": "7141c020be4af27df324cb1d1b99fee6ffcb2c7769aa18f07614006d4ad64484",
+      "last_checked": "2025-06-06T05:42:45.575448",
+      "status": "unchanged",
+      "etag": "W/\"cd93f57400e6a458f9e9e76a8b851b2b\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangebar5": {
+      "hash": "7141c020be4af27df324cb1d1b99fee6ffcb2c7769aa18f07614006d4ad64484",
+      "last_checked": "2025-06-06T05:42:45.575448",
+      "status": "unchanged",
+      "etag": "e5fdeb9ff36cf8b7578bd5566b16bcb2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangeexpansionrom.json": {
+      "hash": "276566858b95b9da51ecf4f11f218b95dc79f7a383c5adb437c33597f715862e",
+      "last_checked": "2025-06-06T05:42:45.945421",
+      "status": "unchanged",
+      "etag": "W/\"1cd7e2fcee4492b0b4a72ac4243b8b8a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcimemoryrange/kpcimemoryrangeexpansionrom": {
+      "hash": "276566858b95b9da51ecf4f11f218b95dc79f7a383c5adb437c33597f715862e",
+      "last_checked": "2025-06-06T05:42:45.945421",
+      "status": "unchanged",
+      "etag": "6ea8dcba735956fb4630d78457de0669"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcisavedevicestateoptions/kpciconfigshadowpermanent.json": {
+      "hash": "c4dcbcc61a603bd79846963101622ad84956dc1924b4c9ce3528d8ea4b0f508e",
+      "last_checked": "2025-06-06T05:42:46.340308",
+      "status": "unchanged",
+      "etag": "W/\"5e4147af1bf1063f2dcffa1d247b2a84\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/iopcisavedevicestateoptions/kpciconfigshadowpermanent": {
+      "hash": "c4dcbcc61a603bd79846963101622ad84956dc1924b4c9ce3528d8ea4b0f508e",
+      "last_checked": "2025-06-06T05:42:46.340308",
+      "status": "unchanged",
+      "etag": "6ed38244fab5193d82b6a2110aa74e84"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsdisabled.json": {
+      "hash": "8e1fcab8ccc6eb5779ef0aee8c94e705b2cbdd3693e21d74b087843ff2f0790c",
+      "last_checked": "2025-06-06T05:42:46.702657",
+      "status": "unchanged",
+      "etag": "W/\"7285234f1828421fffd7303b1651831d\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsdisabled": {
+      "hash": "8e1fcab8ccc6eb5779ef0aee8c94e705b2cbdd3693e21d74b087843ff2f0790c",
+      "last_checked": "2025-06-06T05:42:46.702657",
+      "status": "unchanged",
+      "etag": "6226392d718a3b6b60430807c91e58a6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl0s.json": {
+      "hash": "af5458047dc53b3d5498cf909b583da15aeff0464bbf4c503023191a54daa3bf",
+      "last_checked": "2025-06-06T05:42:47.032718",
+      "status": "unchanged",
+      "etag": "W/\"9da2b0ac0c57c1eae9434301fa1fd8f0\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl0s": {
+      "hash": "af5458047dc53b3d5498cf909b583da15aeff0464bbf4c503023191a54daa3bf",
+      "last_checked": "2025-06-06T05:42:47.032718",
+      "status": "unchanged",
+      "etag": "526d8c701408d354627cb9a1d7a907d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl0sl1.json": {
+      "hash": "646d071ae65ea20289930c84df86a2fb6ea6a4b3295881da999c302980718430",
+      "last_checked": "2025-06-06T05:42:47.396574",
+      "status": "unchanged",
+      "etag": "W/\"81a9a73b418d92987596064fdb627473\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl0sl1": {
+      "hash": "646d071ae65ea20289930c84df86a2fb6ea6a4b3295881da999c302980718430",
+      "last_checked": "2025-06-06T05:42:47.396574",
+      "status": "unchanged",
+      "etag": "5c8b146991c5f62b64c4d255d4237026"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl1.json": {
+      "hash": "b2144796da14dd16e4a9b6e612fe63a9313ba5b0b344021f628797633b4864b0",
+      "last_checked": "2025-06-06T05:42:47.732617",
+      "status": "unchanged",
+      "etag": "W/\"d0c696102c5aa8a7bbeecf265f806835\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkcontrolaspmbits/kiopcilinkcontrolaspmbitsl1": {
+      "hash": "b2144796da14dd16e4a9b6e612fe63a9313ba5b0b344021f628797633b4864b0",
+      "last_checked": "2025-06-06T05:42:47.732617",
+      "status": "unchanged",
+      "etag": "2f30b80fa2a93d807d24de637221c4ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiointerrupttypepcimessaged.json": {
+      "hash": "c1700e4c555ef946d9a6b019f43b7cc530f7ce26e8bb777cd5452218510e9191",
+      "last_checked": "2025-06-06T05:42:48.160396",
+      "status": "unchanged",
+      "etag": "W/\"7114a6b509db97045fe3558496925632\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiointerrupttypepcimessaged": {
+      "hash": "c1700e4c555ef946d9a6b019f43b7cc530f7ce26e8bb777cd5452218510e9191",
+      "last_checked": "2025-06-06T05:42:48.160396",
+      "status": "unchanged",
+      "etag": "33b10729ce305e41116335ce64455eed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiointerrupttypepcimessagedx.json": {
+      "hash": "c3f5c355deabe9456a715ec8e89121239f8bfc19350aa67e9a9ebe5e10e602b5",
+      "last_checked": "2025-06-06T05:42:48.478848",
+      "status": "unchanged",
+      "etag": "W/\"cf6bcf2fcb86976e88f6349361303d3a\""
+    },
+    "https://developer.apple.com/documentation/pcidriverkit/kiointerrupttypepcimessagedx": {
+      "hash": "c3f5c355deabe9456a715ec8e89121239f8bfc19350aa67e9a9ebe5e10e602b5",
+      "last_checked": "2025-06-06T05:42:48.478848",
+      "status": "unchanged",
+      "etag": "3ee48aa9a8c3bc712147e5e590099f94"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/PCIDriverKit/iopcidevice.json": {
+      "hash": "be4b862914ca59657eb585c90e9c813e3cb8c57eba381d5f1e01af464957b453",
+      "last_checked": "2025-06-06T19:39:09.588898",
+      "status": "new",
+      "etag": "W/\"429dca522544fdb559decf3057b17c5d\""
+    },
+    "https://developer.apple.com/documentation/PCIDriverKit/iopcidevice": {
+      "hash": "6b1ad91d28bf7d3e74b26611d70707a4bb8ca91e280f023562d179cf010d392b",
+      "last_checked": "2025-06-06T19:39:09.589135",
+      "status": "unchanged",
+      "etag": "afa809144c96b04e2c0a4b2c579bf97c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/PCIDriverKit/creating-custom-pcie-drivers-for-thunderbolt-devices.json": {
+      "hash": "de1461c56880dab82f60277298032d41ef4f7b1dfedf74bec08208635a29bcee",
+      "last_checked": "2025-06-06T19:39:11.171746",
+      "status": "new",
+      "etag": "W/\"a77e9eaa8c0f96a415621ba257efb26c\""
+    },
+    "https://developer.apple.com/documentation/PCIDriverKit/creating-custom-pcie-drivers-for-thunderbolt-devices": {
+      "hash": "183184f518b4e0b61f0a0c4679d850962990b5c98c4bd49424d7ce9bcf415d03",
+      "last_checked": "2025-06-06T19:39:11.171941",
+      "status": "unchanged",
+      "etag": "3ba61a259180f6ce61894c036cf9382f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/PCIDriverKit.json": {
+      "hash": "9894652471f76aa01b5ee48c49394aa54cb6fbe93e195bf33dd1ce184aad6559",
+      "last_checked": "2025-06-06T20:42:54.541785",
+      "status": "new",
+      "etag": "W/\"a731d53a9a62433530f0b664c27e9854\""
+    },
+    "https://developer.apple.com/documentation/PCIDriverKit": {
+      "hash": "79d4e7dd726748251b3e5f74a85daa69c6886b7b6f958ca004af1cd82b523c4c",
+      "last_checked": "2025-06-06T20:42:54.542115",
+      "status": "unchanged",
+      "etag": "1834115d1bd2ea794fa02fcf8ca9583c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/pcidriverkit.json": {
+      "hash": "79d4e7dd726748251b3e5f74a85daa69c6886b7b6f958ca004af1cd82b523c4c",
+      "last_checked": "2025-06-06T20:42:54.542115",
+      "status": "unchanged",
+      "etag": "W/\"a731d53a9a62433530f0b664c27e9854\""
+    }
+  }
+}

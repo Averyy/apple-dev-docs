@@ -1,0 +1,290 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T12:52:10.694369",
+    "total_pages": 51,
+    "etags_collected": "2025-06-07T12:52:10.694381"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/NotaryAPI.json": {
+      "hash": "806f767a0cf56a74f287fbca424b2d5c1ef7c5786b1775e249aa1943ef196c34",
+      "last_checked": "2025-06-06T05:14:26.889116",
+      "status": "new",
+      "etag": "W/\"a6114a55e1754ed2f45f8242f1ac9e23\""
+    },
+    "https://developer.apple.com/documentation/NotaryAPI": {
+      "hash": "b6fba2560d4f7472023200478651798021a1c875dbf8a0d677271c75cd8797e3",
+      "last_checked": "2025-06-06T05:14:26.889223",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi.json": {
+      "hash": "b6fba2560d4f7472023200478651798021a1c875dbf8a0d677271c75cd8797e3",
+      "last_checked": "2025-06-06T05:14:26.889223",
+      "status": "unchanged",
+      "etag": "W/\"a6114a55e1754ed2f45f8242f1ac9e23\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submitting-software-for-notarization-over-the-web.json": {
+      "hash": "deaf984c6e37eb00819e138d92bc3b6a60eff60faf62629b70949f4d86b89ab9",
+      "last_checked": "2025-06-06T05:14:27.689688",
+      "status": "unchanged",
+      "etag": "W/\"4138700268fc899f946f69a889ec2c65\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submitting-software-for-notarization-over-the-web": {
+      "hash": "deaf984c6e37eb00819e138d92bc3b6a60eff60faf62629b70949f4d86b89ab9",
+      "last_checked": "2025-06-06T05:14:27.689688",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submit-software.json": {
+      "hash": "a3e72b5c0341302546c1e59cf667e2c976c387cc455ae6aa2907bc4a3daf8623",
+      "last_checked": "2025-06-06T05:14:28.075838",
+      "status": "unchanged",
+      "etag": "W/\"b46b468789571d0158957fdab19e2818\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submit-software": {
+      "hash": "a3e72b5c0341302546c1e59cf667e2c976c387cc455ae6aa2907bc4a3daf8623",
+      "last_checked": "2025-06-06T05:14:28.075838",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionrequest.json": {
+      "hash": "aea7f4f7511edea786ae3f89b8e78de420be41bce7243fec60cbee71cedbbabc",
+      "last_checked": "2025-06-06T05:14:28.464223",
+      "status": "unchanged",
+      "etag": "W/\"e63c2c5beca13cef68c7bdb186bc04eb\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/newsubmissionrequest": {
+      "hash": "aea7f4f7511edea786ae3f89b8e78de420be41bce7243fec60cbee71cedbbabc",
+      "last_checked": "2025-06-06T05:14:28.464223",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionresponse.json": {
+      "hash": "52ec31d61492d0d38c5a4f25673275f3b3cde78070ee344f55a5d716e157b73b",
+      "last_checked": "2025-06-06T05:14:28.857044",
+      "status": "unchanged",
+      "etag": "W/\"91cc1b1a70381a7a312eeaea3801f95e\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/newsubmissionresponse": {
+      "hash": "52ec31d61492d0d38c5a4f25673275f3b3cde78070ee344f55a5d716e157b73b",
+      "last_checked": "2025-06-06T05:14:28.857044",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/get-submission-status.json": {
+      "hash": "200a19f366a0047c12dfbe154499c841d32e9a26081ce1d49b639aad9080a04d",
+      "last_checked": "2025-06-06T05:14:29.251469",
+      "status": "unchanged",
+      "etag": "W/\"5b906e7e206416c3a1a72259ad00f69d\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/get-submission-status": {
+      "hash": "200a19f366a0047c12dfbe154499c841d32e9a26081ce1d49b639aad9080a04d",
+      "last_checked": "2025-06-06T05:14:29.251469",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionresponse.json": {
+      "hash": "aee64412dc812f12063911e8fcf3d6c13c2f7d7656bbb69320208738619928f3",
+      "last_checked": "2025-06-06T05:14:29.624896",
+      "status": "unchanged",
+      "etag": "W/\"143746dc806b3b1325a4ae3f50553c1a\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionresponse": {
+      "hash": "aee64412dc812f12063911e8fcf3d6c13c2f7d7656bbb69320208738619928f3",
+      "last_checked": "2025-06-06T05:14:29.624896",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/get-submission-log.json": {
+      "hash": "10bd9e2f9c3e10808f77cb7eeeeda5e12e2778dd7ba257a24239e86923945c80",
+      "last_checked": "2025-06-06T05:14:30.014980",
+      "status": "unchanged",
+      "etag": "W/\"aa20dc45091adca9ca6affc0ebaa1a4d\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/get-submission-log": {
+      "hash": "10bd9e2f9c3e10808f77cb7eeeeda5e12e2778dd7ba257a24239e86923945c80",
+      "last_checked": "2025-06-06T05:14:30.014980",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlogurlresponse.json": {
+      "hash": "71ad6673b6808ff29e751b62cfa6fd1415a12ba09329f98842623844e89c306a",
+      "last_checked": "2025-06-06T05:14:30.405843",
+      "status": "unchanged",
+      "etag": "W/\"91925ada1e2176eee28c3a1e129f7449\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionlogurlresponse": {
+      "hash": "71ad6673b6808ff29e751b62cfa6fd1415a12ba09329f98842623844e89c306a",
+      "last_checked": "2025-06-06T05:14:30.405843",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/get-previous-submissions.json": {
+      "hash": "df3f84eaed6fc47018f987840849f6879a3fa912c7052fdd36f9f3896b76cb4c",
+      "last_checked": "2025-06-06T05:14:30.808557",
+      "status": "unchanged",
+      "etag": "W/\"6ce24dbf338c7404d301ba845b8dbb07\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/get-previous-submissions": {
+      "hash": "df3f84eaed6fc47018f987840849f6879a3fa912c7052fdd36f9f3896b76cb4c",
+      "last_checked": "2025-06-06T05:14:30.808557",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlistresponse.json": {
+      "hash": "93f2b91aa4b8c4b79f7dd6cb8e689a62d19a85505c450685faebf2a655bd3ccb",
+      "last_checked": "2025-06-06T05:14:31.201786",
+      "status": "unchanged",
+      "etag": "W/\"4b9c29a4b7b0cee440a0e0a5d9a83351\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionlistresponse": {
+      "hash": "93f2b91aa4b8c4b79f7dd6cb8e689a62d19a85505c450685faebf2a655bd3ccb",
+      "last_checked": "2025-06-06T05:14:31.201786",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/errorresponse.json": {
+      "hash": "c8c1c3f3e8b4edf1004f701a7e6123013bec0ff3aad8cb268016bd421427e1d7",
+      "last_checked": "2025-06-06T05:14:31.540121",
+      "status": "unchanged",
+      "etag": "W/\"168cafc01e43fc17e1ae17907596e02e\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/errorresponse": {
+      "hash": "c8c1c3f3e8b4edf1004f701a7e6123013bec0ff3aad8cb268016bd421427e1d7",
+      "last_checked": "2025-06-06T05:14:31.540121",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionrequest/notifications-data.dictionary.json": {
+      "hash": "14623ad4be51e7a8284dbe597ce99319e3b56f63baf6f0173abb842403d2de48",
+      "last_checked": "2025-06-06T05:14:31.901332",
+      "status": "unchanged",
+      "etag": "W/\"14f53565d17cb65eabb184deb0117327\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/newsubmissionrequest/notifications-data.dictionary": {
+      "hash": "14623ad4be51e7a8284dbe597ce99319e3b56f63baf6f0173abb842403d2de48",
+      "last_checked": "2025-06-06T05:14:31.901332",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionresponse/data-data.dictionary.json": {
+      "hash": "5a4377112cd2df6a06e714d04bd8db26b562869651624befde06c32367c3c3ee",
+      "last_checked": "2025-06-06T05:14:32.295932",
+      "status": "unchanged",
+      "etag": "W/\"55618e73f3b02b9183d65b474f2c18f9\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/newsubmissionresponse/data-data.dictionary": {
+      "hash": "5a4377112cd2df6a06e714d04bd8db26b562869651624befde06c32367c3c3ee",
+      "last_checked": "2025-06-06T05:14:32.295932",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionresponse/meta-data.dictionary.json": {
+      "hash": "93f62e22dab7c63a868a74ca676fce93322e0b1246dc7464f7efc909cdc9eb95",
+      "last_checked": "2025-06-06T05:14:32.667611",
+      "status": "unchanged",
+      "etag": "W/\"16d80ad65fbff7cf9e893aaf1139a601\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/newsubmissionresponse/meta-data.dictionary": {
+      "hash": "93f62e22dab7c63a868a74ca676fce93322e0b1246dc7464f7efc909cdc9eb95",
+      "last_checked": "2025-06-06T05:14:32.667611",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionresponse/data-data.dictionary.json": {
+      "hash": "1f1156d0033e3e1d718f8b5bdbd4b8102c4d06f3516cbbc17b1d813b6cf57a52",
+      "last_checked": "2025-06-06T05:14:32.990965",
+      "status": "unchanged",
+      "etag": "W/\"0d4308482b2acfc151f823f6b814be6d\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionresponse/data-data.dictionary": {
+      "hash": "1f1156d0033e3e1d718f8b5bdbd4b8102c4d06f3516cbbc17b1d813b6cf57a52",
+      "last_checked": "2025-06-06T05:14:32.990965",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionresponse/meta-data.dictionary.json": {
+      "hash": "b096e1ac5b27c3a92f9c488fb9cd257a95f0e2cbe1aa33354d16cf6917c9adb6",
+      "last_checked": "2025-06-06T05:14:33.380275",
+      "status": "unchanged",
+      "etag": "W/\"61d7adb37f0fd3f0cb17e447152748ec\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionresponse/meta-data.dictionary": {
+      "hash": "b096e1ac5b27c3a92f9c488fb9cd257a95f0e2cbe1aa33354d16cf6917c9adb6",
+      "last_checked": "2025-06-06T05:14:33.380275",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlogurlresponse/data-data.dictionary.json": {
+      "hash": "444fa646416ef21e5420de05d6d1cfea5b8a6b0a95c4989709bd348a2eaa87ac",
+      "last_checked": "2025-06-06T05:14:33.785151",
+      "status": "unchanged",
+      "etag": "W/\"c847f147162acbb3e5319a886d8c3507\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionlogurlresponse/data-data.dictionary": {
+      "hash": "444fa646416ef21e5420de05d6d1cfea5b8a6b0a95c4989709bd348a2eaa87ac",
+      "last_checked": "2025-06-06T05:14:33.785151",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlogurlresponse/meta-data.dictionary.json": {
+      "hash": "d1ffbf263b72323e9c8389eb1a38f31afb0fa00cb1995749479b337038be7d05",
+      "last_checked": "2025-06-06T05:14:34.188922",
+      "status": "unchanged",
+      "etag": "W/\"6bbb963f0a0cf39b5d014bb8abd440db\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionlogurlresponse/meta-data.dictionary": {
+      "hash": "d1ffbf263b72323e9c8389eb1a38f31afb0fa00cb1995749479b337038be7d05",
+      "last_checked": "2025-06-06T05:14:34.188922",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlistresponse/data-data.dictionary.json": {
+      "hash": "8122c79b1bfa6fc85608f5ca906bf03d864f4aa06b2a6c3211c5528123331ac9",
+      "last_checked": "2025-06-06T05:14:34.505806",
+      "status": "unchanged",
+      "etag": "W/\"403c9203eea0bbab5061d85a28982e2b\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionlistresponse/data-data.dictionary": {
+      "hash": "8122c79b1bfa6fc85608f5ca906bf03d864f4aa06b2a6c3211c5528123331ac9",
+      "last_checked": "2025-06-06T05:14:34.505806",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlistresponse/meta-data.dictionary.json": {
+      "hash": "e0711647c247bfbb812d6db7f4866044173c18096eb7a93c7e33a2dc8389b9bf",
+      "last_checked": "2025-06-06T05:14:34.914034",
+      "status": "unchanged",
+      "etag": "W/\"addb1ebbe6e58a29ea8b230906d3f97d\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionlistresponse/meta-data.dictionary": {
+      "hash": "e0711647c247bfbb812d6db7f4866044173c18096eb7a93c7e33a2dc8389b9bf",
+      "last_checked": "2025-06-06T05:14:34.914034",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/newsubmissionresponse/data-data.dictionary/attributes-data.dictionary.json": {
+      "hash": "a54789c8f7da6f0bccea20e6347818011edccc746b64aa3893d21eb5f0f8369d",
+      "last_checked": "2025-06-06T05:14:35.259811",
+      "status": "unchanged",
+      "etag": "W/\"a2ed14f6327de603d1414c0fca832114\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/newsubmissionresponse/data-data.dictionary/attributes-data.dictionary": {
+      "hash": "a54789c8f7da6f0bccea20e6347818011edccc746b64aa3893d21eb5f0f8369d",
+      "last_checked": "2025-06-06T05:14:35.259811",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionresponse/data-data.dictionary/attributes-data.dictionary.json": {
+      "hash": "09a42c04352104bfd45df2f99a7b05c72481686e9e87a5e8923f1c26630820e8",
+      "last_checked": "2025-06-06T05:14:35.663268",
+      "status": "unchanged",
+      "etag": "W/\"71b151c5cb6c3dee112eb7e4152c1fa5\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionresponse/data-data.dictionary/attributes-data.dictionary": {
+      "hash": "09a42c04352104bfd45df2f99a7b05c72481686e9e87a5e8923f1c26630820e8",
+      "last_checked": "2025-06-06T05:14:35.663268",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlogurlresponse/data-data.dictionary/attributes-data.dictionary.json": {
+      "hash": "e7dc1cf9199f6db62b191dd55688f7947fce58f8915b2b795fd3ace39c1a173f",
+      "last_checked": "2025-06-06T05:14:36.081998",
+      "status": "unchanged",
+      "etag": "W/\"fa76f35c9cf4279663bbc3221c81862f\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionlogurlresponse/data-data.dictionary/attributes-data.dictionary": {
+      "hash": "e7dc1cf9199f6db62b191dd55688f7947fce58f8915b2b795fd3ace39c1a173f",
+      "last_checked": "2025-06-06T05:14:36.081998",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/notaryapi/submissionlistresponse/data-data.dictionary/attributes-data.dictionary.json": {
+      "hash": "dfbca3b9c7b1f2468fba313d8ac7b0182d9222fbb1e37e6165420032ba0d054f",
+      "last_checked": "2025-06-06T05:14:36.426749",
+      "status": "unchanged",
+      "etag": "W/\"7937e3a7d8db54cf13cb177390fa4211\""
+    },
+    "https://developer.apple.com/documentation/notaryapi/submissionlistresponse/data-data.dictionary/attributes-data.dictionary": {
+      "hash": "dfbca3b9c7b1f2468fba313d8ac7b0182d9222fbb1e37e6165420032ba0d054f",
+      "last_checked": "2025-06-06T05:14:36.426749",
+      "status": "unchanged"
+    }
+  }
+}

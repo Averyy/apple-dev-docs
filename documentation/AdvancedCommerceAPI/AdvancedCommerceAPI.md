@@ -20,8 +20,6 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
 
 > ❗ **Important**: To learn more about eligiblity and apply for access to the Advanced Commerce API, see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/).
 
-To learn more about eligiblity and apply for access to the Advanced Commerce API, see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/).
-
 ## Topics
 
 ### Essentials

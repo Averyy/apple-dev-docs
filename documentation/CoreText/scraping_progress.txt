@@ -1,4 +1,4 @@
 Completed scraping Core Text!
-Total pages scraped: 2327
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 2
 Pages failed: 0

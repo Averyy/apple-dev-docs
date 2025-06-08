@@ -18,18 +18,17 @@
 
 ## Critical Tests We Maintain
 
-### 1. Path Generation Tests (`test_critical_scraping.py` / `test_critical_sync.py`)
+### 1. Path Generation Tests (`test_critical_sync.py`)
 - **No Double Nesting**: Prevents `watchkit/foo/foo.md` bug
 - **Case Insensitive Parsing**: Handles `WatchKit` vs `watchkit`
 - **Cross-Framework References**: Prevents UIKit files in WatchKit folder
 
-> Note: `test_critical_sync.py` contains the same tests but without async/pytest dependencies
-
 ### 2. URL Conversion Tests
 - **JSON URL Generation**: Ensures we can fetch Apple's data
 - **Filename Safety**: Prevents filesystem-breaking characters
+- **Recursive Discovery**: Tests framework traversal logic
 
-### 3. ETag Optimization Tests (`test_etag_optimization.py`)
+### 3. ETag Optimization Tests (Built into critical sync tests)
 - **ETag Storage**: Verifies ETags are saved and retrieved
 - **Change Detection**: Ensures unchanged content is skipped
 - **Hash Fallback**: Tests backup mechanism when ETags fail
@@ -43,26 +42,16 @@
 
 ## Running Tests
 
-### Without pytest (Recommended for Critical Tests)
+### Standalone Tests (Recommended)
 ```bash
-# Run critical tests without pytest dependency
+# Run critical tests without external dependencies
 python3 tests/test_critical_sync.py
 
-# Or use the test runner
+# Or use the test runner for better output
 python3 tests/run_critical_tests.py
 ```
 
-### With pytest (If Available)
-```bash
-# Run only critical tests (fast)
-pytest tests/test_critical_scraping.py -v
-
-# Run all tests
-pytest tests/ -v
-
-# Run specific test
-pytest tests/test_critical_scraping.py::TestCriticalPathGeneration::test_no_double_nesting_bug -v
-```
+> **Note**: We've removed pytest-based tests to eliminate dependency issues and focus on reliable standalone testing.
 
 ## Adding New Tests
 

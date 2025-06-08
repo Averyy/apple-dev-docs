@@ -18,8 +18,6 @@ App Store Server Notifications is a server-to-server service that sends real-tim
 
 > ❗ **Important**:  The [`App Store Server Notifications V1`](app-store-server-notifications-v1.md) endpoint and version 1 notifications, [`notification_type`](notification_type.md), are deprecated. Implement the [`App Store Server Notifications V2`](app-store-server-notifications-v2.md) endpoint on your server to receive version 2 notifications instead.
 
- The [`App Store Server Notifications V1`](app-store-server-notifications-v1.md) endpoint and version 1 notifications, [`notification_type`](notification_type.md), are deprecated. Implement the [`App Store Server Notifications V2`](app-store-server-notifications-v2.md) endpoint on your server to receive version 2 notifications instead.
-
 To receive server notifications from the App Store, provide your server’s HTTPS URL in App Store Connect. Opt in to receive notifications for the production environment and the sandbox environment. For more information, see [`Enabling App Store Server Notifications`](enabling-app-store-server-notifications.md).
 
 Your server is responsible for parsing, interpreting, and responding to all server-to-server notification posts. For more information, see [`Receiving App Store Server Notifications`](receiving-app-store-server-notifications.md) and [`Responding to App Store Server Notifications`](responding-to-app-store-server-notifications.md).

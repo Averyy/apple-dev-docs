@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-08T17:22:35.119593",
+    "total_pages": 65
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/DataDetection.json": {
+      "hash": "ffe20cdb97d0128bc12a2e02ef15d44095a8d4cd259f1fad551da041f033e04f",
+      "last_checked": "2025-06-08T17:22:34.957812",
+      "status": "unchanged",
+      "etag": "W/\"289225870f9d14c9403df811b23e3d4b\""
+    },
+    "https://developer.apple.com/documentation/DataDetection": {
+      "hash": "ffe20cdb97d0128bc12a2e02ef15d44095a8d4cd259f1fad551da041f033e04f",
+      "last_checked": "2025-06-08T17:22:34.957947",
+      "status": "unchanged",
+      "etag": "W/\"289225870f9d14c9403df811b23e3d4b\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection.json": {
+      "hash": "6a380476e380126f703706b02031d8cd40af76a37b242201855868c09fe61d8b",
+      "last_checked": "2025-06-05T21:59:27.127563",
+      "status": "unchanged",
+      "etag": "W/\"289225870f9d14c9403df811b23e3d4b\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatch.json": {
+      "hash": "583b437d1795fb465c137e20af8aeefafe8c2cbfd472ef2ee93a581880935518",
+      "last_checked": "2025-06-05T21:59:27.935283",
+      "status": "unchanged",
+      "etag": "W/\"bc172dd13a4df3a44834a8908bffd3d4\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatch": {
+      "hash": "583b437d1795fb465c137e20af8aeefafe8c2cbfd472ef2ee93a581880935518",
+      "last_checked": "2025-06-05T21:59:27.935283",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent.json": {
+      "hash": "7a68993866d288fc7f25490afccfc895122dbd47e2039b1a659086d2155be9fc",
+      "last_checked": "2025-06-05T21:59:28.344670",
+      "status": "unchanged",
+      "etag": "W/\"a7762b0dc5ede1e2443139f6181710d0\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchcalendarevent": {
+      "hash": "7a68993866d288fc7f25490afccfc895122dbd47e2039b1a659086d2155be9fc",
+      "last_checked": "2025-06-05T21:59:28.344670",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchemailaddress.json": {
+      "hash": "4bd34b68118f73454d35afb4a3a1885de2738b8596ca177406bf2c4b689495a4",
+      "last_checked": "2025-06-05T21:59:28.733918",
+      "status": "unchanged",
+      "etag": "W/\"41f65857bcba6333f69ee28d3bf31c3c\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchemailaddress": {
+      "hash": "4bd34b68118f73454d35afb4a3a1885de2738b8596ca177406bf2c4b689495a4",
+      "last_checked": "2025-06-05T21:59:28.733918",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchflightnumber.json": {
+      "hash": "9f6f71d7d135342ab5c94d84f96c7b64afd78f1e35132a913437edd47c86e093",
+      "last_checked": "2025-06-05T21:59:29.136309",
+      "status": "unchanged",
+      "etag": "W/\"e9deceea09252275039aac93767c09d7\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchflightnumber": {
+      "hash": "9f6f71d7d135342ab5c94d84f96c7b64afd78f1e35132a913437edd47c86e093",
+      "last_checked": "2025-06-05T21:59:29.136309",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchlink.json": {
+      "hash": "c97cb1376c3426e79848107680417824b17c53a4645a05c96c42a05bbc54aa31",
+      "last_checked": "2025-06-05T21:59:29.513490",
+      "status": "unchanged",
+      "etag": "W/\"9db4a2d873381122ae3fcc534775181c\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchlink": {
+      "hash": "c97cb1376c3426e79848107680417824b17c53a4645a05c96c42a05bbc54aa31",
+      "last_checked": "2025-06-05T21:59:29.513490",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchmoneyamount.json": {
+      "hash": "aa0302fae71ff404668e3210900cd57de195f9a1a653b907257545aff38b435f",
+      "last_checked": "2025-06-05T21:59:29.897239",
+      "status": "unchanged",
+      "etag": "W/\"55592b24527ac7c0f53da2e417a6a955\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchmoneyamount": {
+      "hash": "aa0302fae71ff404668e3210900cd57de195f9a1a653b907257545aff38b435f",
+      "last_checked": "2025-06-05T21:59:29.897239",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchphonenumber.json": {
+      "hash": "3c91a1700a3884586a8d8cc7c8cfd82729ebe7e8318d2056f629eb47eefa4132",
+      "last_checked": "2025-06-05T21:59:30.328109",
+      "status": "unchanged",
+      "etag": "W/\"8fd1f46f97b3f40b371fda952d255533\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchphonenumber": {
+      "hash": "3c91a1700a3884586a8d8cc7c8cfd82729ebe7e8318d2056f629eb47eefa4132",
+      "last_checked": "2025-06-05T21:59:30.328109",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress.json": {
+      "hash": "73477d228bcd94b587cd1b2f36e5879d3d10b168a15b0a8a48884e628f5fd26d",
+      "last_checked": "2025-06-05T21:59:30.725128",
+      "status": "unchanged",
+      "etag": "W/\"0e237475ff451ccb9ce702717bbca292\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchpostaladdress": {
+      "hash": "73477d228bcd94b587cd1b2f36e5879d3d10b168a15b0a8a48884e628f5fd26d",
+      "last_checked": "2025-06-05T21:59:30.725128",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchshipmenttrackingnumber.json": {
+      "hash": "e44fbb70808977d8fb35a0e19bcad9e8889776b565063d96e82ce5cdf7d8617b",
+      "last_checked": "2025-06-05T21:59:31.107562",
+      "status": "unchanged",
+      "etag": "W/\"17019568d590f49466d16a665740e8a3\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchshipmenttrackingnumber": {
+      "hash": "e44fbb70808977d8fb35a0e19bcad9e8889776b565063d96e82ce5cdf7d8617b",
+      "last_checked": "2025-06-05T21:59:31.107562",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatch/matchedstring.json": {
+      "hash": "2d7f646bcfd8a01aca45097e6138e025a434f93e539edebb2e3025f4ead7ddbf",
+      "last_checked": "2025-06-05T21:59:31.496416",
+      "status": "unchanged",
+      "etag": "W/\"698039eeb5e10cb799648470763a5d50\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatch/matchedstring": {
+      "hash": "2d7f646bcfd8a01aca45097e6138e025a434f93e539edebb2e3025f4ead7ddbf",
+      "last_checked": "2025-06-05T21:59:31.496416",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent/isallday.json": {
+      "hash": "d9c8c04bf9e2c7fed236d9b8ad38042561a12a58d1f8819d94ebac0ac4121463",
+      "last_checked": "2025-06-05T21:59:31.928010",
+      "status": "unchanged",
+      "etag": "W/\"fc4d6da1da86dbc6ad6cbfd4cc0f8c90\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchcalendarevent/isallday": {
+      "hash": "d9c8c04bf9e2c7fed236d9b8ad38042561a12a58d1f8819d94ebac0ac4121463",
+      "last_checked": "2025-06-05T21:59:31.928010",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent/enddate.json": {
+      "hash": "713109269c0976e0763d1266e16c7aac2a92e3735f64da473ca1b256c83bab79",
+      "last_checked": "2025-06-05T21:59:32.330042",
+      "status": "unchanged",
+      "etag": "W/\"8ad2a62915a2cc773d7ef61e43f153f7\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchcalendarevent/enddate": {
+      "hash": "713109269c0976e0763d1266e16c7aac2a92e3735f64da473ca1b256c83bab79",
+      "last_checked": "2025-06-05T21:59:32.330042",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent/endtimezone.json": {
+      "hash": "e7ed08cf219a23c18bb5741cbde3ce34f5cf2abec81ebcae5d65eb703d29fac8",
+      "last_checked": "2025-06-05T21:59:32.733711",
+      "status": "unchanged",
+      "etag": "W/\"5a8f2ebb89273d164e914907e101ae12\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchcalendarevent/endtimezone": {
+      "hash": "e7ed08cf219a23c18bb5741cbde3ce34f5cf2abec81ebcae5d65eb703d29fac8",
+      "last_checked": "2025-06-05T21:59:32.733711",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent/startdate.json": {
+      "hash": "1e281f87a20ced0893b5f9703d419d79e273ecf92fa794f6c6db9d96e1652754",
+      "last_checked": "2025-06-05T21:59:33.097587",
+      "status": "unchanged",
+      "etag": "W/\"9b9be02ac39d62a41e8dc73a5772acc1\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchcalendarevent/startdate": {
+      "hash": "1e281f87a20ced0893b5f9703d419d79e273ecf92fa794f6c6db9d96e1652754",
+      "last_checked": "2025-06-05T21:59:33.097587",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent/starttimezone.json": {
+      "hash": "4e3d73bd546815d79841e77470c9cf29e8a3e3ed207d8e864c8a784bc7784394",
+      "last_checked": "2025-06-05T21:59:33.457922",
+      "status": "unchanged",
+      "etag": "W/\"871e89a248534b5785a36512123625a0\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchcalendarevent/starttimezone": {
+      "hash": "4e3d73bd546815d79841e77470c9cf29e8a3e3ed207d8e864c8a784bc7784394",
+      "last_checked": "2025-06-05T21:59:33.457922",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchemailaddress/emailaddress.json": {
+      "hash": "1e351b1edca715f76fb304e6722d25f6f44d8d1613d75b78be4858d8b8b17d15",
+      "last_checked": "2025-06-05T21:59:33.790830",
+      "status": "unchanged",
+      "etag": "W/\"845563b1be817de9a703c270f94a3b99\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchemailaddress/emailaddress": {
+      "hash": "1e351b1edca715f76fb304e6722d25f6f44d8d1613d75b78be4858d8b8b17d15",
+      "last_checked": "2025-06-05T21:59:33.790830",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchemailaddress/label.json": {
+      "hash": "640c9277be9a384b75e84da33b3dc36230543225949568cf0bf42a0c3a0ad725",
+      "last_checked": "2025-06-05T21:59:34.186205",
+      "status": "unchanged",
+      "etag": "W/\"eeb5670462d6ad1a79ddef2264507463\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchemailaddress/label": {
+      "hash": "640c9277be9a384b75e84da33b3dc36230543225949568cf0bf42a0c3a0ad725",
+      "last_checked": "2025-06-05T21:59:34.186205",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchflightnumber/airline.json": {
+      "hash": "028c0bed696ce514dbb414c89e3085cd6b4365f029754af6e2cb0e7a1726a67c",
+      "last_checked": "2025-06-05T21:59:34.569200",
+      "status": "unchanged",
+      "etag": "W/\"6666fb2986a3666d691b1ae2357788ef\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchflightnumber/airline": {
+      "hash": "028c0bed696ce514dbb414c89e3085cd6b4365f029754af6e2cb0e7a1726a67c",
+      "last_checked": "2025-06-05T21:59:34.569200",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchflightnumber/flightnumber.json": {
+      "hash": "a9ba598e394c30974f79d368d74b5ca9661556d2a495c1dde5b178002cd443e5",
+      "last_checked": "2025-06-05T21:59:34.950641",
+      "status": "unchanged",
+      "etag": "W/\"aa68fc9f328321e4777979d6e942c892\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchflightnumber/flightnumber": {
+      "hash": "a9ba598e394c30974f79d368d74b5ca9661556d2a495c1dde5b178002cd443e5",
+      "last_checked": "2025-06-05T21:59:34.950641",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchlink/url.json": {
+      "hash": "389f2a22fbe74aff6f7cd9ae78428f03705fc21b9637b63b39c3c662bbd3e860",
+      "last_checked": "2025-06-05T21:59:35.364728",
+      "status": "unchanged",
+      "etag": "W/\"ec2c12c5ad00bf8b650c31517c63491a\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchlink/url": {
+      "hash": "389f2a22fbe74aff6f7cd9ae78428f03705fc21b9637b63b39c3c662bbd3e860",
+      "last_checked": "2025-06-05T21:59:35.364728",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchmoneyamount/amount.json": {
+      "hash": "af2acb689d3b2a9b14940be6776d21be12d34586662f2aedfe711db4a063f84a",
+      "last_checked": "2025-06-05T21:59:35.744033",
+      "status": "unchanged",
+      "etag": "W/\"11fad9e24f78b8065c7160c41bc8a5f1\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchmoneyamount/amount": {
+      "hash": "af2acb689d3b2a9b14940be6776d21be12d34586662f2aedfe711db4a063f84a",
+      "last_checked": "2025-06-05T21:59:35.744033",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchmoneyamount/currency.json": {
+      "hash": "ff194c8591d935a92431a41ecd0c85c0ba0e95a6d7c7d5771e07ad18fd8ed10f",
+      "last_checked": "2025-06-05T21:59:36.139699",
+      "status": "unchanged",
+      "etag": "W/\"73d0f8a7fcfd740bbb7efd120d1cd2e2\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchmoneyamount/currency": {
+      "hash": "ff194c8591d935a92431a41ecd0c85c0ba0e95a6d7c7d5771e07ad18fd8ed10f",
+      "last_checked": "2025-06-05T21:59:36.139699",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchphonenumber/phonenumber.json": {
+      "hash": "dc5be5aa4e0bfa727c649d6003595a7db1a7738a636c1fdbaa3982695fbe1186",
+      "last_checked": "2025-06-05T21:59:36.511895",
+      "status": "unchanged",
+      "etag": "W/\"52c0e7587ad4b3413444260675cbb236\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchphonenumber/phonenumber": {
+      "hash": "dc5be5aa4e0bfa727c649d6003595a7db1a7738a636c1fdbaa3982695fbe1186",
+      "last_checked": "2025-06-05T21:59:36.511895",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchphonenumber/label.json": {
+      "hash": "b872f6c9d01c745445827525847bb44b7c562f640b9839cebdc17af0143bdf06",
+      "last_checked": "2025-06-05T21:59:36.901539",
+      "status": "unchanged",
+      "etag": "W/\"e2807a498bf367931b8daa248849160f\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchphonenumber/label": {
+      "hash": "b872f6c9d01c745445827525847bb44b7c562f640b9839cebdc17af0143bdf06",
+      "last_checked": "2025-06-05T21:59:36.901539",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress/street.json": {
+      "hash": "da7125d6085cf6054022cd2136b42d7033786f40f0e65857506101d021e7863f",
+      "last_checked": "2025-06-05T21:59:37.265313",
+      "status": "unchanged",
+      "etag": "W/\"d64f28a20350634cc8ef2c886738c868\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchpostaladdress/street": {
+      "hash": "da7125d6085cf6054022cd2136b42d7033786f40f0e65857506101d021e7863f",
+      "last_checked": "2025-06-05T21:59:37.265313",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress/city.json": {
+      "hash": "56f2c87d32789dc1ad41b35d59da653b6f44d168976f0cf5c80090155af49cd0",
+      "last_checked": "2025-06-05T21:59:37.672654",
+      "status": "unchanged",
+      "etag": "W/\"81a53bd55c4354c72b6f06632515b23c\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchpostaladdress/city": {
+      "hash": "56f2c87d32789dc1ad41b35d59da653b6f44d168976f0cf5c80090155af49cd0",
+      "last_checked": "2025-06-05T21:59:37.672654",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress/state.json": {
+      "hash": "70689fbf88b59872a236a874b12e502114d4bf2a8035386de54991632be4e258",
+      "last_checked": "2025-06-05T21:59:38.005476",
+      "status": "unchanged",
+      "etag": "W/\"602a6e8198cc9ae9e339ee6cac374c08\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchpostaladdress/state": {
+      "hash": "70689fbf88b59872a236a874b12e502114d4bf2a8035386de54991632be4e258",
+      "last_checked": "2025-06-05T21:59:38.005476",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress/postalcode.json": {
+      "hash": "fe3ff93a5d1bf0c4b9440a42b9912efc42481960302e656295d7f601b7d30509",
+      "last_checked": "2025-06-05T21:59:38.349994",
+      "status": "unchanged",
+      "etag": "W/\"be9d4d65760893cdf2e954594b73dc4e\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchpostaladdress/postalcode": {
+      "hash": "fe3ff93a5d1bf0c4b9440a42b9912efc42481960302e656295d7f601b7d30509",
+      "last_checked": "2025-06-05T21:59:38.349994",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress/country.json": {
+      "hash": "7aa45e10ec34c3b416786f5b5f4de7409ee22ff4a30b2784331f6c1bce3249c6",
+      "last_checked": "2025-06-05T21:59:38.738608",
+      "status": "unchanged",
+      "etag": "W/\"70113515dd08e08346ffa3eebd80a340\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchpostaladdress/country": {
+      "hash": "7aa45e10ec34c3b416786f5b5f4de7409ee22ff4a30b2784331f6c1bce3249c6",
+      "last_checked": "2025-06-05T21:59:38.738608",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchshipmenttrackingnumber/carrier.json": {
+      "hash": "07c9f3ec354c295b608c10441248f4196e14c41903d417ae2150ba2b527c4b75",
+      "last_checked": "2025-06-05T21:59:39.085067",
+      "status": "unchanged",
+      "etag": "W/\"ec06c8f3e3d81dd310f3a8bf82c64fa5\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchshipmenttrackingnumber/carrier": {
+      "hash": "07c9f3ec354c295b608c10441248f4196e14c41903d417ae2150ba2b527c4b75",
+      "last_checked": "2025-06-05T21:59:39.085067",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchshipmenttrackingnumber/trackingnumber.json": {
+      "hash": "5c2e2e4be5e7678f084d9227aa07af467d16082dc820289c1afe2493b56799d1",
+      "last_checked": "2025-06-05T21:59:39.435085",
+      "status": "unchanged",
+      "etag": "W/\"24ebfcbfbde3e76e2085f27d4bc61e33\""
+    },
+    "https://developer.apple.com/documentation/datadetection/ddmatchshipmenttrackingnumber/trackingnumber": {
+      "hash": "5c2e2e4be5e7678f084d9227aa07af467d16082dc820289c1afe2493b56799d1",
+      "last_checked": "2025-06-05T21:59:39.435085",
+      "status": "unchanged"
+    }
+  }
+}

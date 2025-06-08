@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T12:38:52.260042",
+    "total_pages": 16,
+    "etags_collected": "2025-06-07T12:38:52.260054"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/UserNotifications/sending-channel-management-requests-to-apns.json": {
+      "hash": "ba5b122d5a6764f40114cd712445f1ce49040f4827a385ef89fe947632234e54",
+      "last_checked": "2025-06-06T19:40:22.972344",
+      "status": "new",
+      "etag": "W/\"766e0dc5905b3295fecb84a013afd48b\""
+    },
+    "https://developer.apple.com/documentation/UserNotifications/sending-channel-management-requests-to-apns": {
+      "hash": "2acfd2fabc082a914e6cdc6f65aa6739a242b768af1981079434451b3fb7f8c4",
+      "last_checked": "2025-06-06T19:40:22.972602",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotifications/sending-channel-management-requests-to-apns.json": {
+      "hash": "2acfd2fabc082a914e6cdc6f65aa6739a242b768af1981079434451b3fb7f8c4",
+      "last_checked": "2025-06-06T19:40:22.972602",
+      "status": "unchanged",
+      "etag": "W/\"766e0dc5905b3295fecb84a013afd48b\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/UserNotifications/declaring-your-actionable-notification-types.json": {
+      "hash": "37f8e0e617ca010599db247a1fad6245571550cc300ba7de639a7bcff6dcb32f",
+      "last_checked": "2025-06-06T19:40:24.692025",
+      "status": "new",
+      "etag": "W/\"dfb65dfeed685c863e85e634796573fa\""
+    },
+    "https://developer.apple.com/documentation/UserNotifications/declaring-your-actionable-notification-types": {
+      "hash": "aeccde7b09c64d6d3a02770250dee3b636d7d2cb2a6b6048549101fdf4bae989",
+      "last_checked": "2025-06-06T19:40:24.692277",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotifications/declaring-your-actionable-notification-types.json": {
+      "hash": "aeccde7b09c64d6d3a02770250dee3b636d7d2cb2a6b6048549101fdf4bae989",
+      "last_checked": "2025-06-06T19:40:24.692277",
+      "status": "unchanged",
+      "etag": "W/\"dfb65dfeed685c863e85e634796573fa\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/UserNotifications/handling-communication-notifications-and-focus-status-updates.json": {
+      "hash": "4abe20e5c8932c06f93e884fc2b5f77699782ea6865454e47d9854f16ea4d177",
+      "last_checked": "2025-06-06T19:40:26.410695",
+      "status": "new",
+      "etag": "W/\"5819b1ed6560c550f97ba156600b78ef\""
+    },
+    "https://developer.apple.com/documentation/UserNotifications/handling-communication-notifications-and-focus-status-updates": {
+      "hash": "659c4807af74194be2f42bd169ba7b8e2f93add2b7e22662d707d765dc6662e8",
+      "last_checked": "2025-06-06T19:40:26.410902",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotifications/handling-communication-notifications-and-focus-status-updates.json": {
+      "hash": "659c4807af74194be2f42bd169ba7b8e2f93add2b7e22662d707d765dc6662e8",
+      "last_checked": "2025-06-06T19:40:26.410902",
+      "status": "unchanged",
+      "etag": "W/\"5819b1ed6560c550f97ba156600b78ef\""
+    },
+    "https://developer.apple.com/documentation/UserNotifications/unusernotificationcenter/requestauthorization-optionscompletionhandler": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:41:34.900158",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/requestauthorization-optionscompletionhandler.json": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:41:34.900158",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/UserNotifications.json": {
+      "hash": "e3beb28b7e9eb2410264f4809637217c651c8526c2991e3ba9169bbff2350c6c",
+      "last_checked": "2025-06-06T20:47:08.543677",
+      "status": "new",
+      "etag": "W/\"8e2ce13bd4fd5ebbccd5cc17d4c178b1\""
+    },
+    "https://developer.apple.com/documentation/UserNotifications": {
+      "hash": "3376f150d665b509025025e723d186bb32609929205ee4aaa7454d0d20b46bca",
+      "last_checked": "2025-06-06T20:47:08.543963",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotifications.json": {
+      "hash": "3376f150d665b509025025e723d186bb32609929205ee4aaa7454d0d20b46bca",
+      "last_checked": "2025-06-06T20:47:08.543963",
+      "status": "unchanged",
+      "etag": "W/\"8e2ce13bd4fd5ebbccd5cc17d4c178b1\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/requestauthorization(options:completionhandler:).json": {
+      "hash": "d498385e505b00540b815188aafb67469b876304cfb1fad5e1751d26cfecaaf8",
+      "last_checked": "2025-06-06T20:49:05.785298",
+      "status": "unchanged",
+      "etag": "W/\"790adb3d8edeb79a7bd0dc03a9ad439a\""
+    },
+    "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/requestauthorization(options:completionhandler:)": {
+      "hash": "d498385e505b00540b815188aafb67469b876304cfb1fad5e1751d26cfecaaf8",
+      "last_checked": "2025-06-06T20:49:05.785298",
+      "status": "unchanged"
+    }
+  }
+}

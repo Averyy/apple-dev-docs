@@ -1,4 +1,4 @@
 Completed scraping Maps Web Snapshots!
-Total pages scraped: 11
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 2
 Pages failed: 0

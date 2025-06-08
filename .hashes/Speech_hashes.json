@@ -1,0 +1,2050 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T17:32:44.567018",
+    "total_pages": 371,
+    "etags_collected": "2025-06-07T17:32:44.567031"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/Speech.json": {
+      "hash": "40eabf9fbe658e6be38c121e43810a4e6b4e1bb1a621cd170f6ae2c13c44723a",
+      "last_checked": "2025-06-06T08:23:24.222101",
+      "status": "new",
+      "etag": "W/\"71e278f15e4b522d3a4e2ee55dc85490\""
+    },
+    "https://developer.apple.com/documentation/Speech": {
+      "hash": "f4a0162371e099b6ac6a155500a82e1e29a35d1f6f1c857cdbbc0db518e3ce62",
+      "last_checked": "2025-06-06T08:23:24.222523",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech.json": {
+      "hash": "f4a0162371e099b6ac6a155500a82e1e29a35d1f6f1c857cdbbc0db518e3ce62",
+      "last_checked": "2025-06-06T08:23:24.222523",
+      "status": "unchanged",
+      "etag": "W/\"71e278f15e4b522d3a4e2ee55dc85490\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/asking-permission-to-use-speech-recognition.json": {
+      "hash": "3fdc6a7db426abb5a55115567b558a1ce46d886c8400eb3cc4dc3496214c091a",
+      "last_checked": "2025-06-06T19:37:57.949172",
+      "status": "unchanged",
+      "etag": "W/\"2a343a0fe2dd99b440a6ab690115af72\""
+    },
+    "https://developer.apple.com/documentation/speech/asking-permission-to-use-speech-recognition": {
+      "hash": "92f71f88aeb6aedeb99ae9eed1c252d65fbba8c2ffdcadd4c437382468283b05",
+      "last_checked": "2025-06-06T08:23:25.234079",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer.json": {
+      "hash": "be3c8834cc15da35b4795162816377e369d9ea4a3998ee60efcb867863a0638f",
+      "last_checked": "2025-06-06T08:23:25.748713",
+      "status": "unchanged",
+      "etag": "W/\"5e1b9e1f6d8eaca8a556fd4ff20f631a\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer": {
+      "hash": "be3c8834cc15da35b4795162816377e369d9ea4a3998ee60efcb867863a0638f",
+      "last_checked": "2025-06-06T08:23:25.748713",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/recognizing-speech-in-live-audio.json": {
+      "hash": "3d7bd6dcdef17c60c12f62cddd4467c338dc9b864e61868891cf9e923e170e3f",
+      "last_checked": "2025-06-06T08:23:26.360692",
+      "status": "unchanged",
+      "etag": "W/\"36cd95f9ecac377eac2163e2ed74f894\""
+    },
+    "https://developer.apple.com/documentation/speech/recognizing-speech-in-live-audio": {
+      "hash": "3d7bd6dcdef17c60c12f62cddd4467c338dc9b864e61868891cf9e923e170e3f",
+      "last_checked": "2025-06-06T08:23:26.360692",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechurlrecognitionrequest.json": {
+      "hash": "a4ebd1d59e625f0365c563afc83d95c96354c84c82dcc94d32ed3a3fa70824e8",
+      "last_checked": "2025-06-06T08:23:26.893668",
+      "status": "unchanged",
+      "etag": "W/\"3ccbf4e7619f03ac7625995c74eaff4d\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechurlrecognitionrequest": {
+      "hash": "a4ebd1d59e625f0365c563afc83d95c96354c84c82dcc94d32ed3a3fa70824e8",
+      "last_checked": "2025-06-06T08:23:26.893668",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechaudiobufferrecognitionrequest.json": {
+      "hash": "603f8d0e97b39b5e7a66f870a13c3e6cdc6f241fffaf51760ee5ca9ba83e13c9",
+      "last_checked": "2025-06-06T08:23:27.353317",
+      "status": "unchanged",
+      "etag": "W/\"c9c68ae23db31cea933c8ef62dd1360f\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechaudiobufferrecognitionrequest": {
+      "hash": "603f8d0e97b39b5e7a66f870a13c3e6cdc6f241fffaf51760ee5ca9ba83e13c9",
+      "last_checked": "2025-06-06T08:23:27.353317",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionrequest.json": {
+      "hash": "b310a9415e05c948470974f60b41bcbc41e48adef517a11384fac762b046c1ce",
+      "last_checked": "2025-06-06T08:23:27.798175",
+      "status": "unchanged",
+      "etag": "W/\"a5cd07ecdba480eafdfce6ae111fdea8\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest": {
+      "hash": "b310a9415e05c948470974f60b41bcbc41e48adef517a11384fac762b046c1ce",
+      "last_checked": "2025-06-06T08:23:27.798175",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontask.json": {
+      "hash": "72750db6f28738bfde1dd90cb393f3e86ef33eae33ffad79e441d37acd695a89",
+      "last_checked": "2025-06-06T08:23:28.229256",
+      "status": "unchanged",
+      "etag": "W/\"0de50dc8a39810b45d23a3082a5f63f5\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontask": {
+      "hash": "72750db6f28738bfde1dd90cb393f3e86ef33eae33ffad79e441d37acd695a89",
+      "last_checked": "2025-06-06T08:23:28.229256",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionresult.json": {
+      "hash": "57a0564c9b7abe7146cf9eb0993491f2050b21068dcb5f23c389bd04ee1cf297",
+      "last_checked": "2025-06-06T08:23:28.614982",
+      "status": "unchanged",
+      "etag": "W/\"be49436ca3423e8d77541a6673942024\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionresult": {
+      "hash": "57a0564c9b7abe7146cf9eb0993491f2050b21068dcb5f23c389bd04ee1cf297",
+      "last_checked": "2025-06-06T08:23:28.614982",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionmetadata.json": {
+      "hash": "a9088b047c98f2f0df9346c9e0941c01ef53512f8815567b1e9be63e0e61d2cf",
+      "last_checked": "2025-06-06T08:23:29.044860",
+      "status": "unchanged",
+      "etag": "W/\"e3c33ed99eb5e555be9e02eb0fa32239\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionmetadata": {
+      "hash": "a9088b047c98f2f0df9346c9e0941c01ef53512f8815567b1e9be63e0e61d2cf",
+      "last_checked": "2025-06-06T08:23:29.044860",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscription.json": {
+      "hash": "7de437b1aacb1759e3befd79d6234b4eeeb45e3127e680b5262f7fcd6e260dd6",
+      "last_checked": "2025-06-06T08:23:29.518176",
+      "status": "unchanged",
+      "etag": "W/\"28001d19dd1d2d680eeb350c0d28a07f\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscription": {
+      "hash": "7de437b1aacb1759e3befd79d6234b4eeeb45e3127e680b5262f7fcd6e260dd6",
+      "last_checked": "2025-06-06T08:23:29.518176",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscriptionsegment.json": {
+      "hash": "7214a734aa81d11a230d93c01618e5e58522aecc55ab2902a53d2518f82e98d8",
+      "last_checked": "2025-06-06T08:23:29.975622",
+      "status": "unchanged",
+      "etag": "W/\"1cd94409dabe1d9d3d94094767548fab\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscriptionsegment": {
+      "hash": "7214a734aa81d11a230d93c01618e5e58522aecc55ab2902a53d2518f82e98d8",
+      "last_checked": "2025-06-06T08:23:29.975622",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfvoiceanalytics.json": {
+      "hash": "2e100470f7a9a66890500d447cf605e4bd994e4d3c12b62d71ae25654ec534e2",
+      "last_checked": "2025-06-06T08:23:30.403033",
+      "status": "unchanged",
+      "etag": "W/\"07ce4dcc4c8d522e1a86288f7b9862a6\""
+    },
+    "https://developer.apple.com/documentation/speech/sfvoiceanalytics": {
+      "hash": "2e100470f7a9a66890500d447cf605e4bd994e4d3c12b62d71ae25654ec534e2",
+      "last_checked": "2025-06-06T08:23:30.403033",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror.json": {
+      "hash": "3cbf30857fadcbaec9a8e1aef20bd9f86d193c5ca96e329a7ab5d792e39e455c",
+      "last_checked": "2025-06-06T08:23:30.942589",
+      "status": "unchanged",
+      "etag": "W/\"173e4e9154fb0706596df409576369f4\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror": {
+      "hash": "3cbf30857fadcbaec9a8e1aef20bd9f86d193c5ca96e329a7ab5d792e39e455c",
+      "last_checked": "2025-06-06T08:23:30.942589",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata.json": {
+      "hash": "3cf7457d90476362c8e5a62e620a57181eb65d5e2b0bcea6c60057b016d82032",
+      "last_checked": "2025-06-06T08:23:31.343348",
+      "status": "unchanged",
+      "etag": "W/\"510182717b381d8f0ccdbbac24ad81d9\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata": {
+      "hash": "3cf7457d90476362c8e5a62e620a57181eb65d5e2b0bcea6c60057b016d82032",
+      "last_checked": "2025-06-06T08:23:31.343348",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechlanguagemodel.json": {
+      "hash": "a6f9824a5f565392d38aee79978291a29c8741d8568e05890816ae360e2bed36",
+      "last_checked": "2025-06-06T08:23:31.768991",
+      "status": "unchanged",
+      "etag": "W/\"2fb4db1791afde4048da95d9e3d6be54\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechlanguagemodel": {
+      "hash": "a6f9824a5f565392d38aee79978291a29c8741d8568e05890816ae360e2bed36",
+      "last_checked": "2025-06-06T08:23:31.768991",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechlanguagemodel/configuration.json": {
+      "hash": "ff227b07aa23835f8220b854627d31c930137beba65350a44e500f76625210a2",
+      "last_checked": "2025-06-06T08:23:32.190632",
+      "status": "unchanged",
+      "etag": "W/\"3191c9b393dabe45de3d5f2019b0b1a1\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechlanguagemodel/configuration": {
+      "hash": "ff227b07aa23835f8220b854627d31c930137beba65350a44e500f76625210a2",
+      "last_checked": "2025-06-06T08:23:32.190632",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/datainsertable.json": {
+      "hash": "ee865a354d246755628c64f6014294518dcacaa2171e359b6ddc63bab937283a",
+      "last_checked": "2025-06-06T08:23:32.617106",
+      "status": "unchanged",
+      "etag": "W/\"d937bd703a5c8339ecbe6b3b56404898\""
+    },
+    "https://developer.apple.com/documentation/speech/datainsertable": {
+      "hash": "ee865a354d246755628c64f6014294518dcacaa2171e359b6ddc63bab937283a",
+      "last_checked": "2025-06-06T08:23:32.617106",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/templateinsertable.json": {
+      "hash": "33dbeb37e5b3585773c869fc4869d006e1159730036b0c31adba0fbb72f14f0c",
+      "last_checked": "2025-06-06T08:23:33.061839",
+      "status": "unchanged",
+      "etag": "W/\"a325c672616715b713d338611dc3fb7d\""
+    },
+    "https://developer.apple.com/documentation/speech/templateinsertable": {
+      "hash": "33dbeb37e5b3585773c869fc4869d006e1159730036b0c31adba0fbb72f14f0c",
+      "last_checked": "2025-06-06T08:23:33.061839",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/speech-enumerations.json": {
+      "hash": "95043cf2778b58ac003dfcfd53f7ef93cadc9085c7041c67dd4ba207c2d20925",
+      "last_checked": "2025-06-06T08:23:33.481197",
+      "status": "unchanged",
+      "etag": "W/\"9ad64bff53e81428e40a39faef4d91e3\""
+    },
+    "https://developer.apple.com/documentation/speech/speech-enumerations": {
+      "hash": "95043cf2778b58ac003dfcfd53f7ef93cadc9085c7041c67dd4ba207c2d20925",
+      "last_checked": "2025-06-06T08:23:33.481197",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/speech-constants.json": {
+      "hash": "230782098ad5db501e1ea2da083f62e8eb5f34e81bfd4f04c1cda71aed0df570",
+      "last_checked": "2025-06-06T08:23:33.937866",
+      "status": "unchanged",
+      "etag": "W/\"52beaca36c525a3b4d0b67964ebbb3ef\""
+    },
+    "https://developer.apple.com/documentation/speech/speech-constants": {
+      "hash": "230782098ad5db501e1ea2da083f62e8eb5f34e81bfd4f04c1cda71aed0df570",
+      "last_checked": "2025-06-06T08:23:33.937866",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/init().json": {
+      "hash": "ad0e0a4f1239f82ce5b220ea477ef52f4a3bbf20752c89891aa8b34effbaaecf",
+      "last_checked": "2025-06-06T08:23:34.394753",
+      "status": "unchanged",
+      "etag": "W/\"2755dfad522272973a5da1c629fc2ba7\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/init()": {
+      "hash": "ad0e0a4f1239f82ce5b220ea477ef52f4a3bbf20752c89891aa8b34effbaaecf",
+      "last_checked": "2025-06-06T08:23:34.394753",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/init(locale:).json": {
+      "hash": "34b9f5a8cd0bba8a470c3433818e19ce3225babf1c106e806f17a2896faffc9d",
+      "last_checked": "2025-06-06T08:23:34.786520",
+      "status": "unchanged",
+      "etag": "W/\"befca5f4122a6851465b91323633c467\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/init(locale:)": {
+      "hash": "34b9f5a8cd0bba8a470c3433818e19ce3225babf1c106e806f17a2896faffc9d",
+      "last_checked": "2025-06-06T08:23:34.786520",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/delegate.json": {
+      "hash": "201eb60fdb342de5fc48b99bc21bb51fb42b174707b7e759eddd83299df71c80",
+      "last_checked": "2025-06-06T08:23:35.220095",
+      "status": "unchanged",
+      "etag": "W/\"c1827b197d61244b03125465692dc0f4\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/delegate": {
+      "hash": "201eb60fdb342de5fc48b99bc21bb51fb42b174707b7e759eddd83299df71c80",
+      "last_checked": "2025-06-06T08:23:35.220095",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizerdelegate.json": {
+      "hash": "1c90d30d01aaf903e6fe618a16ec9ce419ad08efc84406323cee8e99d9669495",
+      "last_checked": "2025-06-06T08:23:35.636674",
+      "status": "unchanged",
+      "etag": "W/\"129370317016cd9f11e11f9252533e1d\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizerdelegate": {
+      "hash": "1c90d30d01aaf903e6fe618a16ec9ce419ad08efc84406323cee8e99d9669495",
+      "last_checked": "2025-06-06T08:23:35.636674",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/isavailable.json": {
+      "hash": "27ef5b9d511e93ef3b2a022212af5b1ef53863df1136de3d1b8f0f96eb6bc942",
+      "last_checked": "2025-06-06T08:23:36.043346",
+      "status": "unchanged",
+      "etag": "W/\"2f5e2fde1bb94f46ea72f5ad642f3a30\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/isavailable": {
+      "hash": "27ef5b9d511e93ef3b2a022212af5b1ef53863df1136de3d1b8f0f96eb6bc942",
+      "last_checked": "2025-06-06T08:23:36.043346",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/supportsondevicerecognition.json": {
+      "hash": "aef5a544eadd5eb554602f8c2aa2db9f3244fa61f997dd02a36bba7ce09ee056",
+      "last_checked": "2025-06-06T08:23:36.496104",
+      "status": "unchanged",
+      "etag": "W/\"0a769b411b4c81488b37ce353df66629\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/supportsondevicerecognition": {
+      "hash": "aef5a544eadd5eb554602f8c2aa2db9f3244fa61f997dd02a36bba7ce09ee056",
+      "last_checked": "2025-06-06T08:23:36.496104",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/requestauthorization(_:).json": {
+      "hash": "959a45cf26688d7f4bed9915269ec4a10074c287562323d5ec02d5a1408c9a14",
+      "last_checked": "2025-06-06T08:23:36.967732",
+      "status": "unchanged",
+      "etag": "W/\"a02bc54df4db363dab1bd4507bccee0c\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/requestauthorization(_:)": {
+      "hash": "959a45cf26688d7f4bed9915269ec4a10074c287562323d5ec02d5a1408c9a14",
+      "last_checked": "2025-06-06T08:23:36.967732",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/authorizationstatus().json": {
+      "hash": "f7b5b293434ca4388b3d2ad09680709ae93b842e1a9def78440edd17cc2e24ec",
+      "last_checked": "2025-06-06T08:23:37.428095",
+      "status": "unchanged",
+      "etag": "W/\"a4cf0faf5430d8ba1481422f06dd6218\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/authorizationstatus()": {
+      "hash": "f7b5b293434ca4388b3d2ad09680709ae93b842e1a9def78440edd17cc2e24ec",
+      "last_checked": "2025-06-06T08:23:37.428095",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizerauthorizationstatus.json": {
+      "hash": "bc4b6da349c2054ffaf09c0afba34c6617d829f670e9ffe28bea7e6b21e38c80",
+      "last_checked": "2025-06-06T08:23:37.868549",
+      "status": "unchanged",
+      "etag": "W/\"618ad7d18f121a1d574ea725e47942cd\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizerauthorizationstatus": {
+      "hash": "bc4b6da349c2054ffaf09c0afba34c6617d829f670e9ffe28bea7e6b21e38c80",
+      "last_checked": "2025-06-06T08:23:37.868549",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/defaulttaskhint.json": {
+      "hash": "f2a37fdbf85e3c759bdfb947a9440dc4f51965bbe780cf042d41008b8a364b74",
+      "last_checked": "2025-06-06T08:23:38.270340",
+      "status": "unchanged",
+      "etag": "W/\"72e2e651cee8495ad82a24356f3ad8e6\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/defaulttaskhint": {
+      "hash": "f2a37fdbf85e3c759bdfb947a9440dc4f51965bbe780cf042d41008b8a364b74",
+      "last_checked": "2025-06-06T08:23:38.270340",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/queue.json": {
+      "hash": "888a77b2c5257a5755c82f70628152439d5fb724123c19f98d76addc731f06fa",
+      "last_checked": "2025-06-06T08:23:38.695496",
+      "status": "unchanged",
+      "etag": "W/\"b1cd420adc0b483d322e962df73c54b6\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/queue": {
+      "hash": "888a77b2c5257a5755c82f70628152439d5fb724123c19f98d76addc731f06fa",
+      "last_checked": "2025-06-06T08:23:38.695496",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/recognitiontask(with:resulthandler:).json": {
+      "hash": "bafabfb236345d9cb6513480a81211f0e286047489a671e2a431e7f9809a53e0",
+      "last_checked": "2025-06-06T08:23:39.205120",
+      "status": "unchanged",
+      "etag": "W/\"94c243ce5df168c18104ee64d51ae7bb\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/recognitiontask(with:resulthandler:)": {
+      "hash": "bafabfb236345d9cb6513480a81211f0e286047489a671e2a431e7f9809a53e0",
+      "last_checked": "2025-06-06T08:23:39.205120",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/recognitiontask(with:delegate:).json": {
+      "hash": "e48afcff7e5624b10a4adbe0a0fa877b80cfee0c0137982eb9f44f7e9c607723",
+      "last_checked": "2025-06-06T08:23:39.611092",
+      "status": "unchanged",
+      "etag": "W/\"c4ec47a97c2fe775f3e296f3ce4607e2\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/recognitiontask(with:delegate:)": {
+      "hash": "e48afcff7e5624b10a4adbe0a0fa877b80cfee0c0137982eb9f44f7e9c607723",
+      "last_checked": "2025-06-06T08:23:39.611092",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskdelegate.json": {
+      "hash": "6ee935324868d4670435979fc084adea7caccb65bf7dbdd09295348a3f0f2268",
+      "last_checked": "2025-06-06T08:23:40.086922",
+      "status": "unchanged",
+      "etag": "W/\"ea410226e8bc51c36912d6c784873d9a\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskdelegate": {
+      "hash": "6ee935324868d4670435979fc084adea7caccb65bf7dbdd09295348a3f0f2268",
+      "last_checked": "2025-06-06T08:23:40.086922",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/locale.json": {
+      "hash": "e9e786483ffa3f0cbdb49e061225c7c0c501e4a11ec25d9310af2e5420f4ab7e",
+      "last_checked": "2025-06-06T08:23:40.492987",
+      "status": "unchanged",
+      "etag": "W/\"b5ce8d71168fea9b832309208f168a3a\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/locale": {
+      "hash": "e9e786483ffa3f0cbdb49e061225c7c0c501e4a11ec25d9310af2e5420f4ab7e",
+      "last_checked": "2025-06-06T08:23:40.492987",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizer/supportedlocales().json": {
+      "hash": "ad8ef3868eb2a86707c52ee0c6cd05fed40c5b0a48b4066b826e326f09e21b15",
+      "last_checked": "2025-06-06T08:23:40.890258",
+      "status": "unchanged",
+      "etag": "W/\"e5b42e8fbb20b19607af17c6bf3ed5a4\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizer/supportedlocales()": {
+      "hash": "ad8ef3868eb2a86707c52ee0c6cd05fed40c5b0a48b4066b826e326f09e21b15",
+      "last_checked": "2025-06-06T08:23:40.890258",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechurlrecognitionrequest/init(url:).json": {
+      "hash": "f5b5d79b97a58297d84abac56d8b98a19bcbee6a792f98b65255a7ff83da5784",
+      "last_checked": "2025-06-06T08:23:41.325526",
+      "status": "unchanged",
+      "etag": "W/\"f3b38ff508fd59fd65c0376f7dcfda1e\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechurlrecognitionrequest/init(url:)": {
+      "hash": "f5b5d79b97a58297d84abac56d8b98a19bcbee6a792f98b65255a7ff83da5784",
+      "last_checked": "2025-06-06T08:23:41.325526",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechurlrecognitionrequest/url.json": {
+      "hash": "45552b4fd2e36a866da645d96173fcc22cf85f58edb3c3b4f1479ebc4c6e6e4e",
+      "last_checked": "2025-06-06T08:23:41.734439",
+      "status": "unchanged",
+      "etag": "W/\"9d8b4b6a0bc8824d65872f34eb659110\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechurlrecognitionrequest/url": {
+      "hash": "45552b4fd2e36a866da645d96173fcc22cf85f58edb3c3b4f1479ebc4c6e6e4e",
+      "last_checked": "2025-06-06T08:23:41.734439",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechaudiobufferrecognitionrequest/append(_:).json": {
+      "hash": "ffd871ca0a59a91be2fcb43ed4016a69a92068f68ce1ff1840943e5edac0ce4f",
+      "last_checked": "2025-06-06T08:23:42.143184",
+      "status": "unchanged",
+      "etag": "W/\"18e8dc6204261f66ddaf0a21d0a7fe46\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechaudiobufferrecognitionrequest/append(_:)": {
+      "hash": "ffd871ca0a59a91be2fcb43ed4016a69a92068f68ce1ff1840943e5edac0ce4f",
+      "last_checked": "2025-06-06T08:23:42.143184",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechaudiobufferrecognitionrequest/appendaudiosamplebuffer(_:).json": {
+      "hash": "b04796abc17a40b5a0388567ff1214425a187287590474fe35032551be820ae3",
+      "last_checked": "2025-06-06T08:23:42.541962",
+      "status": "unchanged",
+      "etag": "W/\"9c6edd8ee992a81be79a1ad962cf8a27\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechaudiobufferrecognitionrequest/appendaudiosamplebuffer(_:)": {
+      "hash": "b04796abc17a40b5a0388567ff1214425a187287590474fe35032551be820ae3",
+      "last_checked": "2025-06-06T08:23:42.541962",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechaudiobufferrecognitionrequest/endaudio().json": {
+      "hash": "0eef5ab4ee39f34439ec3cb8f5ea994ab850b207cc050e8bc40bae902b2ba41f",
+      "last_checked": "2025-06-06T08:23:42.975248",
+      "status": "unchanged",
+      "etag": "W/\"3264af928d443c9401ae8b2f3dbd1703\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechaudiobufferrecognitionrequest/endaudio()": {
+      "hash": "0eef5ab4ee39f34439ec3cb8f5ea994ab850b207cc050e8bc40bae902b2ba41f",
+      "last_checked": "2025-06-06T08:23:42.975248",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechaudiobufferrecognitionrequest/nativeaudioformat.json": {
+      "hash": "dd70d3826a98f7c420fd51b23e712b278e6e85822fa82cb65dd06289f74148e5",
+      "last_checked": "2025-06-06T08:23:43.400729",
+      "status": "unchanged",
+      "etag": "W/\"a077aa5b0fa93206b2b6e0418d8b4a8d\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechaudiobufferrecognitionrequest/nativeaudioformat": {
+      "hash": "dd70d3826a98f7c420fd51b23e712b278e6e85822fa82cb65dd06289f74148e5",
+      "last_checked": "2025-06-06T08:23:43.400729",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionrequest/shouldreportpartialresults.json": {
+      "hash": "be64b8440645f68deda50163c09ec35142da0bdbb4a5375a685b8e83cf682ede",
+      "last_checked": "2025-06-06T08:23:44.197219",
+      "status": "unchanged",
+      "etag": "W/\"78d0254c5da4fce9d8ffbc99bc39d457\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/shouldreportpartialresults": {
+      "hash": "be64b8440645f68deda50163c09ec35142da0bdbb4a5375a685b8e83cf682ede",
+      "last_checked": "2025-06-06T08:23:44.197219",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionrequest/contextualstrings.json": {
+      "hash": "9dca4fafe68cb44465fab8ae386603b23525de697712ee941962d5b74d8da40d",
+      "last_checked": "2025-06-06T08:23:44.554768",
+      "status": "unchanged",
+      "etag": "W/\"39da0de50501e92ce76b2c9decffb56a\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/contextualstrings": {
+      "hash": "9dca4fafe68cb44465fab8ae386603b23525de697712ee941962d5b74d8da40d",
+      "last_checked": "2025-06-06T08:23:44.554768",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionrequest/taskhint.json": {
+      "hash": "1c7c3c5b1fb8d6f085d9fa886289b590bce3ff43fb252b31453a2c5092ad8054",
+      "last_checked": "2025-06-06T08:23:44.919536",
+      "status": "unchanged",
+      "etag": "W/\"b2e8146a4fa6d81bfa5ab484ff806c69\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/taskhint": {
+      "hash": "1c7c3c5b1fb8d6f085d9fa886289b590bce3ff43fb252b31453a2c5092ad8054",
+      "last_checked": "2025-06-06T08:23:44.919536",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskhint.json": {
+      "hash": "4074a3f41c98afcfb80bef344abfb88c7a5e59be6269225c5a5ac31aed6c1553",
+      "last_checked": "2025-06-06T08:23:45.325729",
+      "status": "unchanged",
+      "etag": "W/\"0dc78c0dd0476a60f223d67bb6eab887\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskhint": {
+      "hash": "4074a3f41c98afcfb80bef344abfb88c7a5e59be6269225c5a5ac31aed6c1553",
+      "last_checked": "2025-06-06T08:23:45.325729",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionrequest/addspunctuation.json": {
+      "hash": "1a2ce6b82cf246eabf801b357be09074a7f9b968a0a5f413614b225d3a59c0a1",
+      "last_checked": "2025-06-06T08:23:45.741524",
+      "status": "unchanged",
+      "etag": "W/\"46ef3b4d4c524c3526b14077289a6c34\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/addspunctuation": {
+      "hash": "1a2ce6b82cf246eabf801b357be09074a7f9b968a0a5f413614b225d3a59c0a1",
+      "last_checked": "2025-06-06T08:23:45.741524",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionrequest/interactionidentifier.json": {
+      "hash": "3afecfbb924b76f7cfe038bd76b4498d4dc462e21a0d21962baf47b718a2fa0a",
+      "last_checked": "2025-06-06T08:23:46.085085",
+      "status": "unchanged",
+      "etag": "W/\"934e4e4cdd10cf255414eceff2cb85f5\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/interactionidentifier": {
+      "hash": "3afecfbb924b76f7cfe038bd76b4498d4dc462e21a0d21962baf47b718a2fa0a",
+      "last_checked": "2025-06-06T08:23:46.085085",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionrequest/customizedlanguagemodel.json": {
+      "hash": "1d1b423b2cd7dacd3149011298c482ded50c5c029b34caee8dbaf23301d88695",
+      "last_checked": "2025-06-06T08:23:46.483829",
+      "status": "unchanged",
+      "etag": "W/\"9af9accc31cad2aa90c4c8869315c200\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/customizedlanguagemodel": {
+      "hash": "1d1b423b2cd7dacd3149011298c482ded50c5c029b34caee8dbaf23301d88695",
+      "last_checked": "2025-06-06T08:23:46.483829",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontask/cancel().json": {
+      "hash": "7ee74a27dde749b4c2fc02c37c0a98d3467696fa468ae63c019591d86170fda9",
+      "last_checked": "2025-06-06T08:23:46.825700",
+      "status": "unchanged",
+      "etag": "W/\"409d5036cbc8b7d72f50fdc7648dacf1\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontask/cancel()": {
+      "hash": "7ee74a27dde749b4c2fc02c37c0a98d3467696fa468ae63c019591d86170fda9",
+      "last_checked": "2025-06-06T08:23:46.825700",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontask/iscancelled.json": {
+      "hash": "aaab01d9918043a20fb53cf6717f2d99a8d76296cd145f320500811260bcd6cd",
+      "last_checked": "2025-06-06T08:23:47.217357",
+      "status": "unchanged",
+      "etag": "W/\"0b0c0c33b31fbddb5d8827a876dfbddb\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontask/iscancelled": {
+      "hash": "aaab01d9918043a20fb53cf6717f2d99a8d76296cd145f320500811260bcd6cd",
+      "last_checked": "2025-06-06T08:23:47.217357",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontask/finish().json": {
+      "hash": "f5d6cf469428b7b41684998e83323b521bd9f02b03ed513f4d9817464612619f",
+      "last_checked": "2025-06-06T08:23:47.596161",
+      "status": "unchanged",
+      "etag": "W/\"085b55bb6d836fe03735a0f7f282b96d\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontask/finish()": {
+      "hash": "f5d6cf469428b7b41684998e83323b521bd9f02b03ed513f4d9817464612619f",
+      "last_checked": "2025-06-06T08:23:47.596161",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontask/isfinishing.json": {
+      "hash": "df9b0e7c75cab54063f6d9a85d32c6b1c56341766e2848354951bec3af861585",
+      "last_checked": "2025-06-06T08:23:48.025310",
+      "status": "unchanged",
+      "etag": "W/\"eaded1bdd3b8606aaa148f977e16de2c\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontask/isfinishing": {
+      "hash": "df9b0e7c75cab54063f6d9a85d32c6b1c56341766e2848354951bec3af861585",
+      "last_checked": "2025-06-06T08:23:48.025310",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontask/state.json": {
+      "hash": "9360dd7026c1f134d53444b5c9326efd53c6daaf1cbd5b73dad60af8390e9958",
+      "last_checked": "2025-06-06T08:23:48.382377",
+      "status": "unchanged",
+      "etag": "W/\"b00c333f1888126683d8dd35729fec86\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontask/state": {
+      "hash": "9360dd7026c1f134d53444b5c9326efd53c6daaf1cbd5b73dad60af8390e9958",
+      "last_checked": "2025-06-06T08:23:48.382377",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskstate.json": {
+      "hash": "e8f4bda5f565b01f8ca0274450de5908cd8473bbdadd1125eee4180ff89cef2e",
+      "last_checked": "2025-06-06T08:23:48.758685",
+      "status": "unchanged",
+      "etag": "W/\"220b23ccb7d8335c4487307ad4a368a4\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskstate": {
+      "hash": "e8f4bda5f565b01f8ca0274450de5908cd8473bbdadd1125eee4180ff89cef2e",
+      "last_checked": "2025-06-06T08:23:48.758685",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontask/error.json": {
+      "hash": "5744258c45eba577ee2c04c7eacbe9898093f6ae504724663feb452dca575a5e",
+      "last_checked": "2025-06-06T08:23:49.155500",
+      "status": "unchanged",
+      "etag": "W/\"b395c2a67b3b7638188cf8a4ae07d834\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontask/error": {
+      "hash": "5744258c45eba577ee2c04c7eacbe9898093f6ae504724663feb452dca575a5e",
+      "last_checked": "2025-06-06T08:23:49.155500",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionresult/besttranscription.json": {
+      "hash": "4d0c1b8b2036cdd20af1069dfda5685d833af1d5b31e96103f31923f62c06446",
+      "last_checked": "2025-06-06T08:23:49.538920",
+      "status": "unchanged",
+      "etag": "W/\"8778645ae8088d269f495ddce7c55495\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionresult/besttranscription": {
+      "hash": "4d0c1b8b2036cdd20af1069dfda5685d833af1d5b31e96103f31923f62c06446",
+      "last_checked": "2025-06-06T08:23:49.538920",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionresult/transcriptions.json": {
+      "hash": "9e43ab18c76c4c7eeebd01182ec2b3e3c01b5a73f7d2df2a3ba8df90286fc7e4",
+      "last_checked": "2025-06-06T08:23:49.866729",
+      "status": "unchanged",
+      "etag": "W/\"a69363d567f6e8b3dfe633b4cdd19334\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionresult/transcriptions": {
+      "hash": "9e43ab18c76c4c7eeebd01182ec2b3e3c01b5a73f7d2df2a3ba8df90286fc7e4",
+      "last_checked": "2025-06-06T08:23:49.866729",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionresult/speechrecognitionmetadata.json": {
+      "hash": "73dbe99e6d94596e135d1467c443a00b9da4908df99bcefbc56da2590cd37b83",
+      "last_checked": "2025-06-06T08:23:50.232722",
+      "status": "unchanged",
+      "etag": "W/\"12ad680e52e5429bb5592f3936ca395c\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionresult/speechrecognitionmetadata": {
+      "hash": "73dbe99e6d94596e135d1467c443a00b9da4908df99bcefbc56da2590cd37b83",
+      "last_checked": "2025-06-06T08:23:50.232722",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionresult/isfinal.json": {
+      "hash": "a556352a394fa5f80cf766d8cd7381ac728f9d6304b81a87e5f543a5b7555a81",
+      "last_checked": "2025-06-06T08:23:50.617984",
+      "status": "unchanged",
+      "etag": "W/\"121c3545475813eb5b809ccb5940c15d\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionresult/isfinal": {
+      "hash": "a556352a394fa5f80cf766d8cd7381ac728f9d6304b81a87e5f543a5b7555a81",
+      "last_checked": "2025-06-06T08:23:50.617984",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionmetadata/averagepauseduration.json": {
+      "hash": "4cbb45e970e5060faa74a46579de67412396a793479b7878a34ef9abb281cf52",
+      "last_checked": "2025-06-06T08:23:50.990964",
+      "status": "unchanged",
+      "etag": "W/\"f998eb5bd5f313114edda1ca0c283539\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionmetadata/averagepauseduration": {
+      "hash": "4cbb45e970e5060faa74a46579de67412396a793479b7878a34ef9abb281cf52",
+      "last_checked": "2025-06-06T08:23:50.990964",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionmetadata/speakingrate.json": {
+      "hash": "efb03ddd9f6bfb194384608ea75b2ce117828e047f3ae4f2bec853da32586059",
+      "last_checked": "2025-06-06T08:23:51.389358",
+      "status": "unchanged",
+      "etag": "W/\"de094dffcd41d5de0311137b557bb409\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionmetadata/speakingrate": {
+      "hash": "efb03ddd9f6bfb194384608ea75b2ce117828e047f3ae4f2bec853da32586059",
+      "last_checked": "2025-06-06T08:23:51.389358",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionmetadata/speechduration.json": {
+      "hash": "e524d3c8c432b0e6739d66f5fcfbc2f7c84d45a19018eb6e5cd1d76a469152c8",
+      "last_checked": "2025-06-06T08:23:51.746681",
+      "status": "unchanged",
+      "etag": "W/\"5a1b6b60a5ca8dca19339bf93ef229bc\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionmetadata/speechduration": {
+      "hash": "e524d3c8c432b0e6739d66f5fcfbc2f7c84d45a19018eb6e5cd1d76a469152c8",
+      "last_checked": "2025-06-06T08:23:51.746681",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionmetadata/speechstarttimestamp.json": {
+      "hash": "8e44c55ef13938b6034cf4b580f42fcb85cbbb237c5b5344a3ea7251019ccc51",
+      "last_checked": "2025-06-06T08:23:52.137915",
+      "status": "unchanged",
+      "etag": "W/\"0100be2f108b2512c28f16ed222149d8\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionmetadata/speechstarttimestamp": {
+      "hash": "8e44c55ef13938b6034cf4b580f42fcb85cbbb237c5b5344a3ea7251019ccc51",
+      "last_checked": "2025-06-06T08:23:52.137915",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionmetadata/voiceanalytics.json": {
+      "hash": "e8c9e24caf02146224c80f9ed40fd979daec4661ab3ca9e1ba6e347a5dc4e4da",
+      "last_checked": "2025-06-06T08:23:52.504091",
+      "status": "unchanged",
+      "etag": "W/\"8b3d9d0a52e8fe3547b802442ba62b14\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionmetadata/voiceanalytics": {
+      "hash": "e8c9e24caf02146224c80f9ed40fd979daec4661ab3ca9e1ba6e347a5dc4e4da",
+      "last_checked": "2025-06-06T08:23:52.504091",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscription/formattedstring.json": {
+      "hash": "874410a4fa929becd40f1b360498564bcde7217bef890e9dc3d7ac9d56df6b93",
+      "last_checked": "2025-06-06T08:23:52.896786",
+      "status": "unchanged",
+      "etag": "W/\"ab2925b31781a57b23946ca6029cdf2c\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscription/formattedstring": {
+      "hash": "874410a4fa929becd40f1b360498564bcde7217bef890e9dc3d7ac9d56df6b93",
+      "last_checked": "2025-06-06T08:23:52.896786",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscription/segments.json": {
+      "hash": "f5fecbc9df822dd93432cbd22f98dc27dca193e64bc2f1578973f44c49d36336",
+      "last_checked": "2025-06-06T08:23:53.259269",
+      "status": "unchanged",
+      "etag": "W/\"25ca2ff0d8818706218fe755c0b15147\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscription/segments": {
+      "hash": "f5fecbc9df822dd93432cbd22f98dc27dca193e64bc2f1578973f44c49d36336",
+      "last_checked": "2025-06-06T08:23:53.259269",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscription/averagepauseduration.json": {
+      "hash": "20585a4a32339e059ad866118b4a78ba76ab01d695ac93b42ed020d8f807bc71",
+      "last_checked": "2025-06-06T08:23:53.687855",
+      "status": "unchanged",
+      "etag": "W/\"59f6b894caf3076d45237443961af386\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscription/averagepauseduration": {
+      "hash": "20585a4a32339e059ad866118b4a78ba76ab01d695ac93b42ed020d8f807bc71",
+      "last_checked": "2025-06-06T08:23:53.687855",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscription/speakingrate.json": {
+      "hash": "f70d6290d4cc7b74a9d8d0be92477a96f623ba544544572272879b6a7e167287",
+      "last_checked": "2025-06-06T08:23:54.033308",
+      "status": "unchanged",
+      "etag": "W/\"c8783bc271a6a543615e9aad87bc72e2\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscription/speakingrate": {
+      "hash": "f70d6290d4cc7b74a9d8d0be92477a96f623ba544544572272879b6a7e167287",
+      "last_checked": "2025-06-06T08:23:54.033308",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscriptionsegment/substring.json": {
+      "hash": "52afa8cbc83da4d02b7ba222b2417b4374114145f8decd06ab228a8b0ffb28b9",
+      "last_checked": "2025-06-06T08:23:54.388310",
+      "status": "unchanged",
+      "etag": "W/\"94aa97d53914778d1f163eda8d9bf4ed\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscriptionsegment/substring": {
+      "hash": "52afa8cbc83da4d02b7ba222b2417b4374114145f8decd06ab228a8b0ffb28b9",
+      "last_checked": "2025-06-06T08:23:54.388310",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscriptionsegment/substringrange.json": {
+      "hash": "91440593633a377c4fd012d5c6c283315dfad00045eafa049565e4418566016f",
+      "last_checked": "2025-06-06T08:23:54.792039",
+      "status": "unchanged",
+      "etag": "W/\"1100c193041d97c7e1b9c630a5bf87a8\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscriptionsegment/substringrange": {
+      "hash": "91440593633a377c4fd012d5c6c283315dfad00045eafa049565e4418566016f",
+      "last_checked": "2025-06-06T08:23:54.792039",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscriptionsegment/alternativesubstrings.json": {
+      "hash": "40a8a738f3abc45b28bbc0510e1a7873267a9f48ae1e89fac86b9f26f3e13b10",
+      "last_checked": "2025-06-06T08:23:55.203885",
+      "status": "unchanged",
+      "etag": "W/\"1a0e59e98891f333024224bf8e04e5b3\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscriptionsegment/alternativesubstrings": {
+      "hash": "40a8a738f3abc45b28bbc0510e1a7873267a9f48ae1e89fac86b9f26f3e13b10",
+      "last_checked": "2025-06-06T08:23:55.203885",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscriptionsegment/confidence.json": {
+      "hash": "c9450a0e47ad3a21d9561c24d0496a4610d6b17d14d1000f6174dce3058367d4",
+      "last_checked": "2025-06-06T08:23:55.575169",
+      "status": "unchanged",
+      "etag": "W/\"43b5c2522e764aefd05c1de946d1fc17\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscriptionsegment/confidence": {
+      "hash": "c9450a0e47ad3a21d9561c24d0496a4610d6b17d14d1000f6174dce3058367d4",
+      "last_checked": "2025-06-06T08:23:55.575169",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscriptionsegment/timestamp.json": {
+      "hash": "269bcffad36561b045b496b20fed747f615edcb12df8f70818d40b09254524d7",
+      "last_checked": "2025-06-06T08:23:55.961100",
+      "status": "unchanged",
+      "etag": "W/\"d0014497d9c77faa26e52469177955b9\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscriptionsegment/timestamp": {
+      "hash": "269bcffad36561b045b496b20fed747f615edcb12df8f70818d40b09254524d7",
+      "last_checked": "2025-06-06T08:23:55.961100",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscriptionsegment/duration.json": {
+      "hash": "8aec47c72d34fe946d3ee0638f6202b582c25240f41d15b16dd203782927d2e5",
+      "last_checked": "2025-06-06T08:23:56.365133",
+      "status": "unchanged",
+      "etag": "W/\"456bc6bbd83044cace40add4504c6ec7\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscriptionsegment/duration": {
+      "hash": "8aec47c72d34fe946d3ee0638f6202b582c25240f41d15b16dd203782927d2e5",
+      "last_checked": "2025-06-06T08:23:56.365133",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sftranscriptionsegment/voiceanalytics.json": {
+      "hash": "e69ce9004c8a758576175370e3bc443ac80dd2d9ebd0264a5e4a746173b8eea7",
+      "last_checked": "2025-06-06T08:23:56.735342",
+      "status": "unchanged",
+      "etag": "W/\"c9429b2ce1334ebe987299dc3bf6a3e1\""
+    },
+    "https://developer.apple.com/documentation/speech/sftranscriptionsegment/voiceanalytics": {
+      "hash": "e69ce9004c8a758576175370e3bc443ac80dd2d9ebd0264a5e4a746173b8eea7",
+      "last_checked": "2025-06-06T08:23:56.735342",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfacousticfeature.json": {
+      "hash": "0f1dff1abaf1f55a7f4b04fb4a6a5b937cacdee8bd19971da3df1b416c404a4d",
+      "last_checked": "2025-06-06T08:23:57.096017",
+      "status": "unchanged",
+      "etag": "W/\"5334de77a9c2ea138ed1350e3c56a218\""
+    },
+    "https://developer.apple.com/documentation/speech/sfacousticfeature": {
+      "hash": "0f1dff1abaf1f55a7f4b04fb4a6a5b937cacdee8bd19971da3df1b416c404a4d",
+      "last_checked": "2025-06-06T08:23:57.096017",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfvoiceanalytics/voicing.json": {
+      "hash": "0e3bd3ca77f9a6b63d421803db395abeb114dd4b41c95506f2663628107e4f90",
+      "last_checked": "2025-06-06T08:23:57.516403",
+      "status": "unchanged",
+      "etag": "W/\"7ae3d263218b83f0105edfe1e0e57e24\""
+    },
+    "https://developer.apple.com/documentation/speech/sfvoiceanalytics/voicing": {
+      "hash": "0e3bd3ca77f9a6b63d421803db395abeb114dd4b41c95506f2663628107e4f90",
+      "last_checked": "2025-06-06T08:23:57.516403",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfvoiceanalytics/pitch.json": {
+      "hash": "696b5e52c522bffdf79eec7e245cbce5c7a90d0670ab4a54c907148694755093",
+      "last_checked": "2025-06-06T08:23:57.892735",
+      "status": "unchanged",
+      "etag": "W/\"3c3eaedacba0103a3f77eca8934d75a2\""
+    },
+    "https://developer.apple.com/documentation/speech/sfvoiceanalytics/pitch": {
+      "hash": "696b5e52c522bffdf79eec7e245cbce5c7a90d0670ab4a54c907148694755093",
+      "last_checked": "2025-06-06T08:23:57.892735",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfvoiceanalytics/jitter.json": {
+      "hash": "4129fa564bf58147afe804066b363aa476053532c1534969b54c98a888400380",
+      "last_checked": "2025-06-06T08:23:58.398591",
+      "status": "unchanged",
+      "etag": "W/\"27244e229a03236e67b1c578f9ed3322\""
+    },
+    "https://developer.apple.com/documentation/speech/sfvoiceanalytics/jitter": {
+      "hash": "4129fa564bf58147afe804066b363aa476053532c1534969b54c98a888400380",
+      "last_checked": "2025-06-06T08:23:58.398591",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfvoiceanalytics/shimmer.json": {
+      "hash": "667b424b7280f3c8f054a199719c7a220a425d35548b6086645beb5b91650693",
+      "last_checked": "2025-06-06T08:23:58.773452",
+      "status": "unchanged",
+      "etag": "W/\"8a9e44bb51312b006fe09e3b81877ac9\""
+    },
+    "https://developer.apple.com/documentation/speech/sfvoiceanalytics/shimmer": {
+      "hash": "667b424b7280f3c8f054a199719c7a220a425d35548b6086645beb5b91650693",
+      "last_checked": "2025-06-06T08:23:58.773452",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/internalserviceerror.json": {
+      "hash": "5bb8ebf276758b3446dfe35dc091342c69f97b47e6fe5807bf1a61e28321e203",
+      "last_checked": "2025-06-06T08:23:59.151117",
+      "status": "unchanged",
+      "etag": "W/\"bb401f1d15092d393c22da9c06d3a83e\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/internalserviceerror": {
+      "hash": "5bb8ebf276758b3446dfe35dc091342c69f97b47e6fe5807bf1a61e28321e203",
+      "last_checked": "2025-06-06T08:23:59.151117",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/malformedsupplementalmodel.json": {
+      "hash": "189d4d19f9992f250e43b09e96bc2ca7f035e5511e677725f33c7478e240222a",
+      "last_checked": "2025-06-06T08:23:59.501132",
+      "status": "unchanged",
+      "etag": "W/\"5a8c2e13d89e21c5a9820e5f30a533a7\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/malformedsupplementalmodel": {
+      "hash": "189d4d19f9992f250e43b09e96bc2ca7f035e5511e677725f33c7478e240222a",
+      "last_checked": "2025-06-06T08:23:59.501132",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/undefinedtemplateclassname.json": {
+      "hash": "b781d852ba81793950182883b86feed8e8e757e531cde866e9a69ca2ae868f73",
+      "last_checked": "2025-06-06T08:23:59.901730",
+      "status": "unchanged",
+      "etag": "W/\"afc50e2a82caf7f7d48c888b0fd57aff\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/undefinedtemplateclassname": {
+      "hash": "b781d852ba81793950182883b86feed8e8e757e531cde866e9a69ca2ae868f73",
+      "last_checked": "2025-06-06T08:23:59.901730",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/audioreadfailed.json": {
+      "hash": "8846278e59d089fbefaadc5e9d34f6f838059c3beac891633ce52ec90ab59ba6",
+      "last_checked": "2025-06-06T08:24:00.266874",
+      "status": "unchanged",
+      "etag": "W/\"cb9e381466fb8ca453111ae962dcff6d\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/audioreadfailed": {
+      "hash": "8846278e59d089fbefaadc5e9d34f6f838059c3beac891633ce52ec90ab59ba6",
+      "last_checked": "2025-06-06T08:24:00.266874",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/errordomain.json": {
+      "hash": "492451dbe163366de76d17e037876c2c320799ad4405e096eb300bbd86510cd8",
+      "last_checked": "2025-06-06T08:24:00.662029",
+      "status": "unchanged",
+      "etag": "W/\"1529f567b47f54474e51c883628b91d1\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/errordomain": {
+      "hash": "492451dbe163366de76d17e037876c2c320799ad4405e096eb300bbd86510cd8",
+      "last_checked": "2025-06-06T08:24:00.662029",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/timeout.json": {
+      "hash": "d0c6bbce9e720df5d87cfa346b8d363f011f3cf26814c9b2f19707429b59ce5f",
+      "last_checked": "2025-06-06T08:24:01.074757",
+      "status": "unchanged",
+      "etag": "W/\"20ea09b699227ae078f0387737ab54ea\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/timeout": {
+      "hash": "d0c6bbce9e720df5d87cfa346b8d363f011f3cf26814c9b2f19707429b59ce5f",
+      "last_checked": "2025-06-06T08:24:01.074757",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/code.json": {
+      "hash": "d7c11fbf07845b53bc7fda2fa3b59f9d197f4d9f4cd37ae783c7018cdb0fd5fa",
+      "last_checked": "2025-06-06T08:24:01.443886",
+      "status": "unchanged",
+      "etag": "W/\"505efd4e7cbb44d34f8119d6786088d3\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/code": {
+      "hash": "d7c11fbf07845b53bc7fda2fa3b59f9d197f4d9f4cd37ae783c7018cdb0fd5fa",
+      "last_checked": "2025-06-06T08:24:01.443886",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/init(locale:identifier:version:).json": {
+      "hash": "150b11b4cf86036f899bdf000ab41b37955c5223ebaa24d9ca62d629dd8aae78",
+      "last_checked": "2025-06-06T08:24:01.852171",
+      "status": "unchanged",
+      "etag": "W/\"4ca21486464c6e48d0150fd60e422daa\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/init(locale:identifier:version:)": {
+      "hash": "150b11b4cf86036f899bdf000ab41b37955c5223ebaa24d9ca62d629dd8aae78",
+      "last_checked": "2025-06-06T08:24:01.852171",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/init(locale:identifier:version:builder:).json": {
+      "hash": "22146d8b4a2b0bab07fbba755076741f1e2322146e8413ada685c5b43ef47163",
+      "last_checked": "2025-06-06T08:24:02.246429",
+      "status": "unchanged",
+      "etag": "W/\"3b95fdead4489da8ea3ce855acea9492\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/init(locale:identifier:version:builder:)": {
+      "hash": "22146d8b4a2b0bab07fbba755076741f1e2322146e8413ada685c5b43ef47163",
+      "last_checked": "2025-06-06T08:24:02.246429",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/identifier.json": {
+      "hash": "78fba08ef246886658326b7b2ddc8e66650b9b29d6e08aba9c93dd7b53d0000a",
+      "last_checked": "2025-06-06T08:24:02.656407",
+      "status": "unchanged",
+      "etag": "W/\"9ad551ad6e71bf077ca748f1398c28b7\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/identifier": {
+      "hash": "78fba08ef246886658326b7b2ddc8e66650b9b29d6e08aba9c93dd7b53d0000a",
+      "last_checked": "2025-06-06T08:24:02.656407",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/locale.json": {
+      "hash": "de785aff41dac2693b7bab353746244b1cd1cca753bdcca0aa58fde7cb9e0e76",
+      "last_checked": "2025-06-06T08:24:03.015446",
+      "status": "unchanged",
+      "etag": "W/\"5ae97b6b6984adc573cf6f328acc4245\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/locale": {
+      "hash": "de785aff41dac2693b7bab353746244b1cd1cca753bdcca0aa58fde7cb9e0e76",
+      "last_checked": "2025-06-06T08:24:03.015446",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/version.json": {
+      "hash": "3ef862a8409ee02e39e54ab2225be4d9106f57455906ee08bca3e4a8a66b871c",
+      "last_checked": "2025-06-06T08:24:03.405656",
+      "status": "unchanged",
+      "etag": "W/\"e4c1d4db5f110133206cc4bf053a6370\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/version": {
+      "hash": "3ef862a8409ee02e39e54ab2225be4d9106f57455906ee08bca3e4a8a66b871c",
+      "last_checked": "2025-06-06T08:24:03.405656",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/export(to:).json": {
+      "hash": "074759fbf35f3b14a92e34aaffacce7b8c35568ef71b2af1f5781d5f93f24c75",
+      "last_checked": "2025-06-06T08:24:03.770277",
+      "status": "unchanged",
+      "etag": "W/\"96fbdaf7809d9e490990e74a111f6581\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/export(to:)": {
+      "hash": "074759fbf35f3b14a92e34aaffacce7b8c35568ef71b2af1f5781d5f93f24c75",
+      "last_checked": "2025-06-06T08:24:03.770277",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/insert(phrasecount:).json": {
+      "hash": "e79ba9a8dae3d5db203df07b069892e0d8f133394e0509e86c0dd959ae3bab77",
+      "last_checked": "2025-06-06T08:24:04.117978",
+      "status": "unchanged",
+      "etag": "W/\"69c4c3949399d370877d0fbe06951abe\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/insert(phrasecount:)": {
+      "hash": "e79ba9a8dae3d5db203df07b069892e0d8f133394e0509e86c0dd959ae3bab77",
+      "last_checked": "2025-06-06T08:24:04.117978",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/insert(phrasecountgenerator:).json": {
+      "hash": "8d1f57feb85b8ac34e9ec0e40497cf1ef3c4eb1316e5c48deceaf145b53df22a",
+      "last_checked": "2025-06-06T08:24:04.477576",
+      "status": "unchanged",
+      "etag": "W/\"6787f0ccfefc25cb2aa0e31bd6480ed5\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/insert(phrasecountgenerator:)": {
+      "hash": "8d1f57feb85b8ac34e9ec0e40497cf1ef3c4eb1316e5c48deceaf145b53df22a",
+      "last_checked": "2025-06-06T08:24:04.477576",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/insert(term:).json": {
+      "hash": "9e1c22b88e0f070316ff5d7eb3e4187691e8ee8800ba8b1312c9b36cee260ea4",
+      "last_checked": "2025-06-06T08:24:04.880698",
+      "status": "unchanged",
+      "etag": "W/\"7ff08e8c7a2564d446203cbe33374565\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/insert(term:)": {
+      "hash": "9e1c22b88e0f070316ff5d7eb3e4187691e8ee8800ba8b1312c9b36cee260ea4",
+      "last_checked": "2025-06-06T08:24:04.880698",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/supportedphonemes(locale:).json": {
+      "hash": "a966a419afbe8651af13203c8836e8591cefa34c42b4d8d03cfb3e1784957ff0",
+      "last_checked": "2025-06-06T08:24:05.257377",
+      "status": "unchanged",
+      "etag": "W/\"0ccc2183017436dc247029f04eddd9e1\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/supportedphonemes(locale:)": {
+      "hash": "a966a419afbe8651af13203c8836e8591cefa34c42b4d8d03cfb3e1784957ff0",
+      "last_checked": "2025-06-06T08:24:05.257377",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/phrasecountgenerator.json": {
+      "hash": "01b33a1ec6d355c632be9d9272265919d2e1e8e49ec8cf023bc6b533242989f2",
+      "last_checked": "2025-06-06T08:24:05.686853",
+      "status": "unchanged",
+      "etag": "W/\"0c323b6f2de85a8d3a538049014f4f81\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/phrasecountgenerator": {
+      "hash": "01b33a1ec6d355c632be9d9272265919d2e1e8e49ec8cf023bc6b533242989f2",
+      "last_checked": "2025-06-06T08:24:05.686853",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator.json": {
+      "hash": "bc9291bf905c5e46c1a48f82f7e4676ee62bbe0d0e4985e2ef1bf273385446bc",
+      "last_checked": "2025-06-06T08:24:06.081082",
+      "status": "unchanged",
+      "etag": "W/\"d2a293272603d0f88ae33c10191ca7c3\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator": {
+      "hash": "bc9291bf905c5e46c1a48f82f7e4676ee62bbe0d0e4985e2ef1bf273385446bc",
+      "last_checked": "2025-06-06T08:24:06.081082",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/compoundtemplate.json": {
+      "hash": "0ed1e8a6dce6dd3718d9f17338eb7dffba36323feb476b834dbfa3517e7c51dc",
+      "last_checked": "2025-06-06T08:24:06.564687",
+      "status": "unchanged",
+      "etag": "W/\"40603f7a849491f0e34bfba197e5e900\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/compoundtemplate": {
+      "hash": "0ed1e8a6dce6dd3718d9f17338eb7dffba36323feb476b834dbfa3517e7c51dc",
+      "last_checked": "2025-06-06T08:24:06.564687",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/custompronunciation.json": {
+      "hash": "3fc2351f34284a5a7a8822054c887d609de695e661165336db212fb40d362464",
+      "last_checked": "2025-06-06T08:24:07.002371",
+      "status": "unchanged",
+      "etag": "W/\"602f27a95ea888bf56e91bbc09742860\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/custompronunciation": {
+      "hash": "3fc2351f34284a5a7a8822054c887d609de695e661165336db212fb40d362464",
+      "last_checked": "2025-06-06T08:24:07.002371",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder.json": {
+      "hash": "dac4b3f97b15412d1c34b223da507c191cdfe1ae34be65d396258a2565c5b2cf",
+      "last_checked": "2025-06-06T08:24:07.412815",
+      "status": "unchanged",
+      "etag": "W/\"76b7b9ebdfbadd4efbb6c64142472d3c\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder": {
+      "hash": "dac4b3f97b15412d1c34b223da507c191cdfe1ae34be65d396258a2565c5b2cf",
+      "last_checked": "2025-06-06T08:24:07.412815",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/phrasecount.json": {
+      "hash": "1b415ccf777ac03f61bb9b7beeca1e1405cac0020c9206fec14a6fb6a93471a8",
+      "last_checked": "2025-06-06T08:24:07.865541",
+      "status": "unchanged",
+      "etag": "W/\"cba2ad0c3f67c231cd6e8fe50b94842d\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/phrasecount": {
+      "hash": "1b415ccf777ac03f61bb9b7beeca1e1405cac0020c9206fec14a6fb6a93471a8",
+      "last_checked": "2025-06-06T08:24:07.865541",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/phrasecountsfromtemplates.json": {
+      "hash": "bc9c04f7c17d8f21989bf387edd040e3252fd2a8e7b791dd7ac6f020227d1927",
+      "last_checked": "2025-06-06T08:24:08.290457",
+      "status": "unchanged",
+      "etag": "W/\"82096a6cfdcec6163c01f2dfad5a6748\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/phrasecountsfromtemplates": {
+      "hash": "bc9c04f7c17d8f21989bf387edd040e3252fd2a8e7b791dd7ac6f020227d1927",
+      "last_checked": "2025-06-06T08:24:08.290457",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder.json": {
+      "hash": "4e75c4764d88ebc38d2205950f6ab4ce5285dca706db44ae57e3631081445631",
+      "last_checked": "2025-06-06T08:24:08.702153",
+      "status": "unchanged",
+      "etag": "W/\"4e0f50cbda2c7c541bf89ec75ae32b53\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder": {
+      "hash": "4e75c4764d88ebc38d2205950f6ab4ce5285dca706db44ae57e3631081445631",
+      "last_checked": "2025-06-06T08:24:08.702153",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechlanguagemodel/preparecustomlanguagemodel(for:clientidentifier:configuration:completion:).json": {
+      "hash": "c79b57c7405fed2b5eaa821987d112f3cc672ba7562e3112068962726e748dd0",
+      "last_checked": "2025-06-06T08:24:09.161907",
+      "status": "unchanged",
+      "etag": "W/\"971ab3fedf4f790b9031388d7e347e9f\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechlanguagemodel/preparecustomlanguagemodel(for:clientidentifier:configuration:completion:)": {
+      "hash": "c79b57c7405fed2b5eaa821987d112f3cc672ba7562e3112068962726e748dd0",
+      "last_checked": "2025-06-06T08:24:09.161907",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechlanguagemodel/preparecustomlanguagemodel(for:clientidentifier:configuration:ignorescache:completion:).json": {
+      "hash": "8407c90451985c129925ca6c2898fd6a709fc59ea92287047a981c6e6e8cf718",
+      "last_checked": "2025-06-06T08:24:09.610574",
+      "status": "unchanged",
+      "etag": "W/\"dbdaceea0fedead7295d8029fc1c26ee\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechlanguagemodel/preparecustomlanguagemodel(for:clientidentifier:configuration:ignorescache:completion:)": {
+      "hash": "8407c90451985c129925ca6c2898fd6a709fc59ea92287047a981c6e6e8cf718",
+      "last_checked": "2025-06-06T08:24:09.610574",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechlanguagemodel/configuration/init(languagemodel:).json": {
+      "hash": "f98746065fa1d152048a2025cec5f99ae200de7a55e19b2afbc71cce45661dd8",
+      "last_checked": "2025-06-06T08:24:10.013007",
+      "status": "unchanged",
+      "etag": "W/\"723a5473eeadb75b230096fa59f22941\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechlanguagemodel/configuration/init(languagemodel:)": {
+      "hash": "f98746065fa1d152048a2025cec5f99ae200de7a55e19b2afbc71cce45661dd8",
+      "last_checked": "2025-06-06T08:24:10.013007",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:).json": {
+      "hash": "952d3166d7c071b022bf3abbd45af9e23cf0b9b55dedd6e4c81bdb82147a2bc6",
+      "last_checked": "2025-06-06T08:24:10.431312",
+      "status": "unchanged",
+      "etag": "W/\"57eeb9caebb7c1c600b913922c8cae9d\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:)": {
+      "hash": "952d3166d7c071b022bf3abbd45af9e23cf0b9b55dedd6e4c81bdb82147a2bc6",
+      "last_checked": "2025-06-06T08:24:10.431312",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechlanguagemodel/configuration/languagemodel.json": {
+      "hash": "f2e40e7c834afc653205537e326eedbdfa894f52d57ef06eebd0136b92e56407",
+      "last_checked": "2025-06-06T08:24:10.838499",
+      "status": "unchanged",
+      "etag": "W/\"78384cbdbe32af9bd4f78a04b48590bb\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechlanguagemodel/configuration/languagemodel": {
+      "hash": "f2e40e7c834afc653205537e326eedbdfa894f52d57ef06eebd0136b92e56407",
+      "last_checked": "2025-06-06T08:24:10.838499",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechlanguagemodel/configuration/vocabulary.json": {
+      "hash": "a653796d86b09753c4a081e0b3d7f395da75cf69df28b3dfa3103e823df5c0b4",
+      "last_checked": "2025-06-06T08:24:11.244543",
+      "status": "unchanged",
+      "etag": "W/\"02eb5d7a2467749d024e61c7c99c2c03\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechlanguagemodel/configuration/vocabulary": {
+      "hash": "a653796d86b09753c4a081e0b3d7f395da75cf69df28b3dfa3103e823df5c0b4",
+      "last_checked": "2025-06-06T08:24:11.244543",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/datainsertable/insert(data:).json": {
+      "hash": "c50aa710a4c4c2d7d3e1a7b9aa528f722b7cd73bf567e606d76d5a694740a888",
+      "last_checked": "2025-06-06T08:24:11.712788",
+      "status": "unchanged",
+      "etag": "W/\"1fc40033440ceabdd44b53c939ea7e54\""
+    },
+    "https://developer.apple.com/documentation/speech/datainsertable/insert(data:)": {
+      "hash": "c50aa710a4c4c2d7d3e1a7b9aa528f722b7cd73bf567e606d76d5a694740a888",
+      "last_checked": "2025-06-06T08:24:11.712788",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/templateinsertable/insert(generator:).json": {
+      "hash": "39489e4e2803799d66acbe7c709cdf3e6e67d9272516bccb903cb7093be9a122",
+      "last_checked": "2025-06-06T08:24:12.159598",
+      "status": "unchanged",
+      "etag": "W/\"1a5aa948afbbfa1316e9143867675f27\""
+    },
+    "https://developer.apple.com/documentation/speech/templateinsertable/insert(generator:)": {
+      "hash": "39489e4e2803799d66acbe7c709cdf3e6e67d9272516bccb903cb7093be9a122",
+      "last_checked": "2025-06-06T08:24:12.159598",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/template.json": {
+      "hash": "68d0901aa7598e3f734213ea6d5a2917e2d8e63df99562a9220c0fcbe1341706",
+      "last_checked": "2025-06-06T08:24:12.574951",
+      "status": "unchanged",
+      "etag": "W/\"7e18eca0ceb888cd1e108d3664f8b54c\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/template": {
+      "hash": "68d0901aa7598e3f734213ea6d5a2917e2d8e63df99562a9220c0fcbe1341706",
+      "last_checked": "2025-06-06T08:24:12.574951",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherrordomain.json": {
+      "hash": "319924e18bac78141a00a1c6a65418a4329fe30a42626b0a234167acc195847b",
+      "last_checked": "2025-06-06T08:24:12.983957",
+      "status": "unchanged",
+      "etag": "W/\"8f3d2e7b390841f7b8b47e02c08a6c7f\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherrordomain": {
+      "hash": "319924e18bac78141a00a1c6a65418a4329fe30a42626b0a234167acc195847b",
+      "last_checked": "2025-06-06T08:24:12.983957",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizerdelegate/speechrecognizer(_:availabilitydidchange:).json": {
+      "hash": "f26fff13d52c24ca191fb1276a35012fa7888df71c0364b51c3302c9f48532fd",
+      "last_checked": "2025-06-06T08:24:13.388387",
+      "status": "unchanged",
+      "etag": "W/\"5cf1f8b15509bb7fbb0f81c4689144d0\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizerdelegate/speechrecognizer(_:availabilitydidchange:)": {
+      "hash": "f26fff13d52c24ca191fb1276a35012fa7888df71c0364b51c3302c9f48532fd",
+      "last_checked": "2025-06-06T08:24:13.388387",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizerauthorizationstatus/notdetermined.json": {
+      "hash": "5efcd03efc0e49618899d12446c86c95a3c47453a8544f1a0cf87ca308348917",
+      "last_checked": "2025-06-06T08:24:13.824545",
+      "status": "unchanged",
+      "etag": "W/\"a1b2d1acc1cb002a4e37c6f07aee6fe6\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizerauthorizationstatus/notdetermined": {
+      "hash": "5efcd03efc0e49618899d12446c86c95a3c47453a8544f1a0cf87ca308348917",
+      "last_checked": "2025-06-06T08:24:13.824545",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizerauthorizationstatus/denied.json": {
+      "hash": "8cfbbc4ad8f69f2d4c980df6463fc1144882d260683ca76fea5386237d610b52",
+      "last_checked": "2025-06-06T08:24:14.248667",
+      "status": "unchanged",
+      "etag": "W/\"94a39a79ad0c0365ba21cf4055304a29\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizerauthorizationstatus/denied": {
+      "hash": "8cfbbc4ad8f69f2d4c980df6463fc1144882d260683ca76fea5386237d610b52",
+      "last_checked": "2025-06-06T08:24:14.248667",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizerauthorizationstatus/restricted.json": {
+      "hash": "02219001d244e6b2c60083a8bdd2e289e47d22c0546f0d76fa32db6e807cc379",
+      "last_checked": "2025-06-06T08:24:14.646164",
+      "status": "unchanged",
+      "etag": "W/\"85bc4c624ff321cad5a647172ae0a109\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizerauthorizationstatus/restricted": {
+      "hash": "02219001d244e6b2c60083a8bdd2e289e47d22c0546f0d76fa32db6e807cc379",
+      "last_checked": "2025-06-06T08:24:14.646164",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizerauthorizationstatus/authorized.json": {
+      "hash": "52084ca0b98896c1e67a7574a554b67de85bebaa7ab679dd8119406e909e130b",
+      "last_checked": "2025-06-06T08:24:15.057155",
+      "status": "unchanged",
+      "etag": "W/\"32c081bcff90b91f2ea2646496e8bfa2\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizerauthorizationstatus/authorized": {
+      "hash": "52084ca0b98896c1e67a7574a554b67de85bebaa7ab679dd8119406e909e130b",
+      "last_checked": "2025-06-06T08:24:15.057155",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognizerauthorizationstatus/init(rawvalue:).json": {
+      "hash": "be1d3dedbddf4ee0203ca7f1de02c3b926eaa2d60b8ff2f8334b5f9bbac2fe7b",
+      "last_checked": "2025-06-06T08:24:15.488176",
+      "status": "unchanged",
+      "etag": "W/\"4a8399897556808882c263b9b9b293ca\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognizerauthorizationstatus/init(rawvalue:)": {
+      "hash": "be1d3dedbddf4ee0203ca7f1de02c3b926eaa2d60b8ff2f8334b5f9bbac2fe7b",
+      "last_checked": "2025-06-06T08:24:15.488176",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiondiddetectspeech(_:).json": {
+      "hash": "0113a217a97b461539fd5bf5f2f62826bd9fb3ca7ecbad93b56865ae9e5857ab",
+      "last_checked": "2025-06-06T08:24:15.900016",
+      "status": "unchanged",
+      "etag": "W/\"710bea03059d95d1e3f180c2d2661e41\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiondiddetectspeech(_:)": {
+      "hash": "0113a217a97b461539fd5bf5f2f62826bd9fb3ca7ecbad93b56865ae9e5857ab",
+      "last_checked": "2025-06-06T08:24:15.900016",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontaskfinishedreadingaudio(_:).json": {
+      "hash": "f41dc36b094e1623fa8d81ed7eb82b316b468f66794f903143cd3a42bba6e0a7",
+      "last_checked": "2025-06-06T08:24:16.290452",
+      "status": "unchanged",
+      "etag": "W/\"ae9afd996afc93a3318d1216b873af1c\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontaskfinishedreadingaudio(_:)": {
+      "hash": "f41dc36b094e1623fa8d81ed7eb82b316b468f66794f903143cd3a42bba6e0a7",
+      "last_checked": "2025-06-06T08:24:16.290452",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didhypothesizetranscription:).json": {
+      "hash": "673d6d1eabee33758a384174da44f266e121ab9531d458e095560083f32b185a",
+      "last_checked": "2025-06-06T08:24:16.726981",
+      "status": "unchanged",
+      "etag": "W/\"98947692d78aca611ff1724dd81a1e42\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didhypothesizetranscription:)": {
+      "hash": "673d6d1eabee33758a384174da44f266e121ab9531d458e095560083f32b185a",
+      "last_checked": "2025-06-06T08:24:16.726981",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didfinishrecognition:).json": {
+      "hash": "df7fb85cc51145c598131aa5080a5a413f181b775b6e2b5ff9561d663254450b",
+      "last_checked": "2025-06-06T08:24:17.202961",
+      "status": "unchanged",
+      "etag": "W/\"cb0e310757afcd2ba6ed99fde0d47ec9\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didfinishrecognition:)": {
+      "hash": "df7fb85cc51145c598131aa5080a5a413f181b775b6e2b5ff9561d663254450b",
+      "last_checked": "2025-06-06T08:24:17.202961",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didfinishsuccessfully:).json": {
+      "hash": "10a91b8bb79e7123c389d1f8d0b39244a95b04c47ae73665ca9ca9e5c91463af",
+      "last_checked": "2025-06-06T08:24:17.681346",
+      "status": "unchanged",
+      "etag": "W/\"6919b4985b8e4a00f908022e492615d2\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didfinishsuccessfully:)": {
+      "hash": "10a91b8bb79e7123c389d1f8d0b39244a95b04c47ae73665ca9ca9e5c91463af",
+      "last_checked": "2025-06-06T08:24:17.681346",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontaskwascancelled(_:).json": {
+      "hash": "66ed9f9d3c3937594b2b6bbbd70beb755cde25d4fcb4325396e963c5380f873a",
+      "last_checked": "2025-06-06T08:24:18.129388",
+      "status": "unchanged",
+      "etag": "W/\"d82464020f91c9d0e1da45e7592db1e6\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontaskwascancelled(_:)": {
+      "hash": "66ed9f9d3c3937594b2b6bbbd70beb755cde25d4fcb4325396e963c5380f873a",
+      "last_checked": "2025-06-06T08:24:18.129388",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didprocessaudioduration:).json": {
+      "hash": "3d6b836278c2906187da12bdc8e1b5eb6703524745cd891988b09533561f6649",
+      "last_checked": "2025-06-06T08:24:18.554851",
+      "status": "unchanged",
+      "etag": "W/\"664189c082f118d62232cb79eb731190\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didprocessaudioduration:)": {
+      "hash": "3d6b836278c2906187da12bdc8e1b5eb6703524745cd891988b09533561f6649",
+      "last_checked": "2025-06-06T08:24:18.554851",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskhint/unspecified.json": {
+      "hash": "795b8dc41fb1d4f4a468a9c4ad24805120893972a6b90bce0a0b90e818ef06d0",
+      "last_checked": "2025-06-06T08:24:18.967215",
+      "status": "unchanged",
+      "etag": "W/\"6f5ebd7e83d1532b207d4ac41ea434c1\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskhint/unspecified": {
+      "hash": "795b8dc41fb1d4f4a468a9c4ad24805120893972a6b90bce0a0b90e818ef06d0",
+      "last_checked": "2025-06-06T08:24:18.967215",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskhint/dictation.json": {
+      "hash": "c6592d5ccbd82cc36e9329ba5a2a1166fd4b72be14944b00ec220d7f3f0b3a44",
+      "last_checked": "2025-06-06T08:24:19.417927",
+      "status": "unchanged",
+      "etag": "W/\"d2c1685085ac81624d8cca007b3251bf\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskhint/dictation": {
+      "hash": "c6592d5ccbd82cc36e9329ba5a2a1166fd4b72be14944b00ec220d7f3f0b3a44",
+      "last_checked": "2025-06-06T08:24:19.417927",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskhint/search.json": {
+      "hash": "ac1488dc25e08701011bbdb8d287d94c4b5cc88c03e7a6244a150ce2e393846f",
+      "last_checked": "2025-06-06T08:24:19.847133",
+      "status": "unchanged",
+      "etag": "W/\"c3fdbe5fa3e2e0a025b367858741b4d0\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskhint/search": {
+      "hash": "ac1488dc25e08701011bbdb8d287d94c4b5cc88c03e7a6244a150ce2e393846f",
+      "last_checked": "2025-06-06T08:24:19.847133",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskhint/confirmation.json": {
+      "hash": "2ed381c254a3e1daffdb582f7c7ef9a7bbe243346e1999958376f355d3b06488",
+      "last_checked": "2025-06-06T08:24:20.282236",
+      "status": "unchanged",
+      "etag": "W/\"db9d748813d99fbc5416f6cabbd0ad46\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskhint/confirmation": {
+      "hash": "2ed381c254a3e1daffdb582f7c7ef9a7bbe243346e1999958376f355d3b06488",
+      "last_checked": "2025-06-06T08:24:20.282236",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskhint/init(rawvalue:).json": {
+      "hash": "85946be5b557e7edfc0e6237cabbd76e1aad861f28dd11988b45bb4afc3eab69",
+      "last_checked": "2025-06-06T08:24:20.707195",
+      "status": "unchanged",
+      "etag": "W/\"855750d61646011e9097c59a14ccf5c8\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskhint/init(rawvalue:)": {
+      "hash": "85946be5b557e7edfc0e6237cabbd76e1aad861f28dd11988b45bb4afc3eab69",
+      "last_checked": "2025-06-06T08:24:20.707195",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskstate/canceling.json": {
+      "hash": "c0a22868392ac142534fac9209aa26eac4fa91525d0845333983ab3cb609ac24",
+      "last_checked": "2025-06-06T08:24:21.179622",
+      "status": "unchanged",
+      "etag": "W/\"89350ec5c5df6b6e02221d3843fc8056\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskstate/canceling": {
+      "hash": "c0a22868392ac142534fac9209aa26eac4fa91525d0845333983ab3cb609ac24",
+      "last_checked": "2025-06-06T08:24:21.179622",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskstate/completed.json": {
+      "hash": "c531b4f7af8815e6b0b7365fdd9b27ab72c50d24625d2e1e3ddeb636546e216e",
+      "last_checked": "2025-06-06T08:24:21.606086",
+      "status": "unchanged",
+      "etag": "W/\"508fb931acbcf6e5b1e651b9ae86974f\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskstate/completed": {
+      "hash": "c531b4f7af8815e6b0b7365fdd9b27ab72c50d24625d2e1e3ddeb636546e216e",
+      "last_checked": "2025-06-06T08:24:21.606086",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskstate/finishing.json": {
+      "hash": "d0b74051023d04764883490d1a221aee51dfc9799bee9ec6d6ca446754313661",
+      "last_checked": "2025-06-06T08:24:22.029295",
+      "status": "unchanged",
+      "etag": "W/\"e43db9247a6781a4e4a519a0cf19c1e9\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskstate/finishing": {
+      "hash": "d0b74051023d04764883490d1a221aee51dfc9799bee9ec6d6ca446754313661",
+      "last_checked": "2025-06-06T08:24:22.029295",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskstate/running.json": {
+      "hash": "2d7eba68603506956e876c877bb6a854082a643cb1a3d78923893dae8fd297ed",
+      "last_checked": "2025-06-06T08:24:22.496501",
+      "status": "unchanged",
+      "etag": "W/\"3ea623d26d823f3cb57ef3ddee06f8b1\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskstate/running": {
+      "hash": "2d7eba68603506956e876c877bb6a854082a643cb1a3d78923893dae8fd297ed",
+      "last_checked": "2025-06-06T08:24:22.496501",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskstate/starting.json": {
+      "hash": "5971322e7f3c601d45aa548983413162f6913276767dc0a1ea1a51c9f85d745c",
+      "last_checked": "2025-06-06T08:24:22.921682",
+      "status": "unchanged",
+      "etag": "W/\"6ae4371e12e95cde552da89ff4ef5b44\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskstate/starting": {
+      "hash": "5971322e7f3c601d45aa548983413162f6913276767dc0a1ea1a51c9f85d745c",
+      "last_checked": "2025-06-06T08:24:22.921682",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitiontaskstate/init(rawvalue:).json": {
+      "hash": "b62a791bc19926fa73d071441dd2e1551be92d145c1dfa972f6d6e0c999dbeae",
+      "last_checked": "2025-06-06T08:24:23.311378",
+      "status": "unchanged",
+      "etag": "W/\"c14c5888f40198b9f72d6c94f2ba175c\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitiontaskstate/init(rawvalue:)": {
+      "hash": "b62a791bc19926fa73d071441dd2e1551be92d145c1dfa972f6d6e0c999dbeae",
+      "last_checked": "2025-06-06T08:24:23.311378",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfacousticfeature/frameduration.json": {
+      "hash": "75d79cfe83fee134cade1a6d57dc5671d171f1a89005335c7b847e5a46e499bf",
+      "last_checked": "2025-06-06T08:24:23.739234",
+      "status": "unchanged",
+      "etag": "W/\"f577ffd61d058b807e7b7a104730f74c\""
+    },
+    "https://developer.apple.com/documentation/speech/sfacousticfeature/frameduration": {
+      "hash": "75d79cfe83fee134cade1a6d57dc5671d171f1a89005335c7b847e5a46e499bf",
+      "last_checked": "2025-06-06T08:24:23.739234",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfacousticfeature/acousticfeaturevalueperframe-5krkk.json": {
+      "hash": "ffede58560a17c48aaa7eacf5cba861aa284c3a2a6e6fa81fa269f6ec65b6854",
+      "last_checked": "2025-06-06T08:24:24.221633",
+      "status": "unchanged",
+      "etag": "W/\"82e2bcaf6d9f25ab98823fabf816a91b\""
+    },
+    "https://developer.apple.com/documentation/speech/sfacousticfeature/acousticfeaturevalueperframe-5krkk": {
+      "hash": "ffede58560a17c48aaa7eacf5cba861aa284c3a2a6e6fa81fa269f6ec65b6854",
+      "last_checked": "2025-06-06T08:24:24.221633",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/code/internalserviceerror.json": {
+      "hash": "703e59c3661a240aa8ad5f3239a7e10a516560fef478d811f5b2b102aa3dc3e1",
+      "last_checked": "2025-06-06T08:24:24.623801",
+      "status": "unchanged",
+      "etag": "W/\"1c91036f126561c960b4e9de576376bb\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/code/internalserviceerror": {
+      "hash": "703e59c3661a240aa8ad5f3239a7e10a516560fef478d811f5b2b102aa3dc3e1",
+      "last_checked": "2025-06-06T08:24:24.623801",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/code/malformedsupplementalmodel.json": {
+      "hash": "47bf0ce175c6931375da12c77c04cbfbe4b03bf14bfe44c1941cc4cf98335555",
+      "last_checked": "2025-06-06T08:24:25.052178",
+      "status": "unchanged",
+      "etag": "W/\"befc6a093618e24fbe364261572b015d\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/code/malformedsupplementalmodel": {
+      "hash": "47bf0ce175c6931375da12c77c04cbfbe4b03bf14bfe44c1941cc4cf98335555",
+      "last_checked": "2025-06-06T08:24:25.052178",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/code/undefinedtemplateclassname.json": {
+      "hash": "6b02fdf8f19ca1394e5064966c19cfda439440590ce481e864598b7eacd6ea29",
+      "last_checked": "2025-06-06T08:24:25.473788",
+      "status": "unchanged",
+      "etag": "W/\"01ce1005d3852393f08bf1a040d37ae5\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/code/undefinedtemplateclassname": {
+      "hash": "6b02fdf8f19ca1394e5064966c19cfda439440590ce481e864598b7eacd6ea29",
+      "last_checked": "2025-06-06T08:24:25.473788",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/code/audioreadfailed.json": {
+      "hash": "20fa4361ce5b33f7240b817581924562a6f94a8688f42d44653105a6b8f6558b",
+      "last_checked": "2025-06-06T08:24:25.892954",
+      "status": "unchanged",
+      "etag": "W/\"4e11495573d7c2155bafadac2651fe05\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/code/audioreadfailed": {
+      "hash": "20fa4361ce5b33f7240b817581924562a6f94a8688f42d44653105a6b8f6558b",
+      "last_checked": "2025-06-06T08:24:25.892954",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/code/timeout.json": {
+      "hash": "7ff206a417f14d81680ebaed425b9e2d1ae3a36c14c4482ffb29eef8a4e6f9bb",
+      "last_checked": "2025-06-06T08:24:26.347425",
+      "status": "unchanged",
+      "etag": "W/\"8955fc323daa5529636174210d9be0e9\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/code/timeout": {
+      "hash": "7ff206a417f14d81680ebaed425b9e2d1ae3a36c14c4482ffb29eef8a4e6f9bb",
+      "last_checked": "2025-06-06T08:24:26.347425",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeecherror/code/init(rawvalue:).json": {
+      "hash": "2831150b780c3507065b7491df790ee680444fc52e5f67572a3404616fa18376",
+      "last_checked": "2025-06-06T08:24:26.799491",
+      "status": "unchanged",
+      "etag": "W/\"02cfb371c0dc38f2a98de4d2e56e36bc\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeecherror/code/init(rawvalue:)": {
+      "hash": "2831150b780c3507065b7491df790ee680444fc52e5f67572a3404616fa18376",
+      "last_checked": "2025-06-06T08:24:26.799491",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/phrasecountgenerator/init().json": {
+      "hash": "60cd1d0be21e0bbd813e53873bae083311f6a0dd361d40324356865407147bee",
+      "last_checked": "2025-06-06T08:24:27.208258",
+      "status": "unchanged",
+      "etag": "W/\"52babe7815da09bde491a64360058ebb\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/phrasecountgenerator/init()": {
+      "hash": "60cd1d0be21e0bbd813e53873bae083311f6a0dd361d40324356865407147bee",
+      "last_checked": "2025-06-06T08:24:27.208258",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/phrasecountgenerator/iterator.json": {
+      "hash": "4d9f3d9b80ecaca521f45c1168a4d4f36788d613cee31d1adfcf4b16541c8b16",
+      "last_checked": "2025-06-06T08:24:27.625546",
+      "status": "unchanged",
+      "etag": "W/\"38939623ee9e8f09d5e480e3d8ec2d26\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/phrasecountgenerator/iterator": {
+      "hash": "4d9f3d9b80ecaca521f45c1168a4d4f36788d613cee31d1adfcf4b16541c8b16",
+      "last_checked": "2025-06-06T08:24:27.625546",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/init().json": {
+      "hash": "8cae8c53ef7ed7808ec088b389115e0837ba68f327146bf3e74a3159ac5847a9",
+      "last_checked": "2025-06-06T08:24:28.017085",
+      "status": "unchanged",
+      "etag": "W/\"fb0dac5054f0dab11a9fba600b7276c9\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/init()": {
+      "hash": "8cae8c53ef7ed7808ec088b389115e0837ba68f327146bf3e74a3159ac5847a9",
+      "last_checked": "2025-06-06T08:24:28.017085",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/init(from:).json": {
+      "hash": "bb47d68148f01ebe78e245e96c1988007eb05944bbbe717bb38161e8b3294ccc",
+      "last_checked": "2025-06-06T08:24:28.461487",
+      "status": "unchanged",
+      "etag": "W/\"abe876df8b3ccd2736fe52120ce49f19\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/init(from:)": {
+      "hash": "bb47d68148f01ebe78e245e96c1988007eb05944bbbe717bb38161e8b3294ccc",
+      "last_checked": "2025-06-06T08:24:28.461487",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/define(classname:values:).json": {
+      "hash": "19b4a7ddb1c4f26c7b671ace1adb72a662cd532a017fb5c0788f8210e45f06b2",
+      "last_checked": "2025-06-06T08:24:28.828685",
+      "status": "unchanged",
+      "etag": "W/\"5d50d4574db54a3d1a66f32af20f11b6\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/define(classname:values:)": {
+      "hash": "19b4a7ddb1c4f26c7b671ace1adb72a662cd532a017fb5c0788f8210e45f06b2",
+      "last_checked": "2025-06-06T08:24:28.828685",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/hash(into:).json": {
+      "hash": "96a7a388a54e7a324e11768a261d2c2be6d34d26f5dbe600b352cab69b44d779",
+      "last_checked": "2025-06-06T08:24:29.236461",
+      "status": "unchanged",
+      "etag": "W/\"321f31509bbad11e9b76fd475d530623\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/hash(into:)": {
+      "hash": "96a7a388a54e7a324e11768a261d2c2be6d34d26f5dbe600b352cab69b44d779",
+      "last_checked": "2025-06-06T08:24:29.236461",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/insert(template:count:).json": {
+      "hash": "cbd1b7200ac5349eb1e02161569dee8fc741210b443cf9a3d9ac46fa86120b09",
+      "last_checked": "2025-06-06T08:24:29.637095",
+      "status": "unchanged",
+      "etag": "W/\"487791d486cade8871a16b9bdd23cc34\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/insert(template:count:)": {
+      "hash": "cbd1b7200ac5349eb1e02161569dee8fc741210b443cf9a3d9ac46fa86120b09",
+      "last_checked": "2025-06-06T08:24:29.637095",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/makeasynciterator().json": {
+      "hash": "e3bc08b7dea7066b9660a79d4cc9cb6b2fd3ee7afa160174fe0cc14d5e51fa14",
+      "last_checked": "2025-06-06T08:24:29.985782",
+      "status": "unchanged",
+      "etag": "W/\"ff7dae28b4d52496a2586f7ddf39961a\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/makeasynciterator()": {
+      "hash": "e3bc08b7dea7066b9660a79d4cc9cb6b2fd3ee7afa160174fe0cc14d5e51fa14",
+      "last_checked": "2025-06-06T08:24:29.985782",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/==(_:_:).json": {
+      "hash": "ef66f65839bc45f62e12c89b1ee8dfc13ecdfccbee4ffe9845e628a6a7219b15",
+      "last_checked": "2025-06-06T08:24:30.388270",
+      "status": "unchanged",
+      "etag": "W/\"6846a36ef6c858d46c376d769b7838a2\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/==(_:_:)": {
+      "hash": "ef66f65839bc45f62e12c89b1ee8dfc13ecdfccbee4ffe9845e628a6a7219b15",
+      "last_checked": "2025-06-06T08:24:30.388270",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator.json": {
+      "hash": "cadf69ab05f0de09777cb0bd6b7d6ee13936b788ea09a0e86dec6920343de146",
+      "last_checked": "2025-06-06T08:24:30.783243",
+      "status": "unchanged",
+      "etag": "W/\"d7fde0ef31a001ec527c2bc006ceffbf\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator": {
+      "hash": "cadf69ab05f0de09777cb0bd6b7d6ee13936b788ea09a0e86dec6920343de146",
+      "last_checked": "2025-06-06T08:24:30.783243",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/compoundtemplate/init(_:).json": {
+      "hash": "e401176aceb2373d53c46cc73bd0d3f6af6778db6ae5e47363b4c24efcd8585e",
+      "last_checked": "2025-06-06T08:24:31.181015",
+      "status": "unchanged",
+      "etag": "W/\"f9d47ff89072ddd5a29b4da2b1e63e54\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/compoundtemplate/init(_:)": {
+      "hash": "e401176aceb2373d53c46cc73bd0d3f6af6778db6ae5e47363b4c24efcd8585e",
+      "last_checked": "2025-06-06T08:24:31.181015",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/custompronunciation/init(grapheme:phonemes:).json": {
+      "hash": "93bdd2466d300eb0d0e7d345c9d4509072107a94ed7418519037b77b00d39c96",
+      "last_checked": "2025-06-06T08:24:31.602505",
+      "status": "unchanged",
+      "etag": "W/\"ae744d34138060f75214201eff7c399e\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/custompronunciation/init(grapheme:phonemes:)": {
+      "hash": "93bdd2466d300eb0d0e7d345c9d4509072107a94ed7418519037b77b00d39c96",
+      "last_checked": "2025-06-06T08:24:31.602505",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/custompronunciation/grapheme.json": {
+      "hash": "5de7c52e9ed4b673e9a88ef86e99d1092e57cb7bd6945fa71d580c552abf36b2",
+      "last_checked": "2025-06-06T08:24:31.973247",
+      "status": "unchanged",
+      "etag": "W/\"e4561c240982a324195a4fa6e700ffcd\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/custompronunciation/grapheme": {
+      "hash": "5de7c52e9ed4b673e9a88ef86e99d1092e57cb7bd6945fa71d580c552abf36b2",
+      "last_checked": "2025-06-06T08:24:31.973247",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/custompronunciation/phonemes.json": {
+      "hash": "08e57e367232c5e999ff8e6d9bb272d7bab1e93122a7900fd394a981f8ecbce6",
+      "last_checked": "2025-06-06T08:24:32.447891",
+      "status": "unchanged",
+      "etag": "W/\"c88012bdda54f24826d419d337a42e32\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/custompronunciation/phonemes": {
+      "hash": "08e57e367232c5e999ff8e6d9bb272d7bab1e93122a7900fd394a981f8ecbce6",
+      "last_checked": "2025-06-06T08:24:32.447891",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder/buildarray(_:).json": {
+      "hash": "fefc714dc32f88eeff3dc0f1818f194cb6459b7bdac8b35f397d68d86770de8c",
+      "last_checked": "2025-06-06T08:24:32.806564",
+      "status": "unchanged",
+      "etag": "W/\"adb19f419757a0bfd7f429aa9fdbbe88\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder/buildarray(_:)": {
+      "hash": "fefc714dc32f88eeff3dc0f1818f194cb6459b7bdac8b35f397d68d86770de8c",
+      "last_checked": "2025-06-06T08:24:32.806564",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder/buildblock(_:).json": {
+      "hash": "289362a61e0d15899594f53f81df2bed490c5b38c739d757ea055db8f5c6693e",
+      "last_checked": "2025-06-06T08:24:33.197255",
+      "status": "unchanged",
+      "etag": "W/\"497c28fbb615e3e747349f8464b2058d\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder/buildblock(_:)": {
+      "hash": "289362a61e0d15899594f53f81df2bed490c5b38c739d757ea055db8f5c6693e",
+      "last_checked": "2025-06-06T08:24:33.197255",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder/buildeither(first:).json": {
+      "hash": "fc73940eaf95ebcb3248653be24bdf71d475ff5fe903cfd9e7ab263e958fb509",
+      "last_checked": "2025-06-06T08:24:33.550658",
+      "status": "unchanged",
+      "etag": "W/\"c52483641764764761ee64839f20418a\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder/buildeither(first:)": {
+      "hash": "fc73940eaf95ebcb3248653be24bdf71d475ff5fe903cfd9e7ab263e958fb509",
+      "last_checked": "2025-06-06T08:24:33.550658",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder/buildeither(second:).json": {
+      "hash": "f61b5d2afed938c3008491bb875960c633453dbc04d6fe12c16a61eb78d85f26",
+      "last_checked": "2025-06-06T08:24:33.947631",
+      "status": "unchanged",
+      "etag": "W/\"f89125e13f33511e36ce647d15e9a9b5\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder/buildeither(second:)": {
+      "hash": "f61b5d2afed938c3008491bb875960c633453dbc04d6fe12c16a61eb78d85f26",
+      "last_checked": "2025-06-06T08:24:33.947631",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder/buildoptional(_:).json": {
+      "hash": "f23cb8397e03aedc6b4e0266964bc39ac970d32771b1eff03c86193b3b1ef0b8",
+      "last_checked": "2025-06-06T08:24:34.325694",
+      "status": "unchanged",
+      "etag": "W/\"01e30f27c9d80680f837a6fc7fb2c4d1\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/datainsertablebuilder/buildoptional(_:)": {
+      "hash": "f23cb8397e03aedc6b4e0266964bc39ac970d32771b1eff03c86193b3b1ef0b8",
+      "last_checked": "2025-06-06T08:24:34.325694",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/phrasecount/init(phrase:count:).json": {
+      "hash": "a9ee0754bf4d7fa5421ab56f581f8cfb9c4738b551fa72d78eea49fc98dc39ba",
+      "last_checked": "2025-06-06T08:24:34.673365",
+      "status": "unchanged",
+      "etag": "W/\"b9d4a63f8e8c11d69252edcc536c390f\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/phrasecount/init(phrase:count:)": {
+      "hash": "a9ee0754bf4d7fa5421ab56f581f8cfb9c4738b551fa72d78eea49fc98dc39ba",
+      "last_checked": "2025-06-06T08:24:34.673365",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/phrasecount/count.json": {
+      "hash": "f10ffefb3c4f38d18780de9d1ec74f4a074d39556c82312706ed781e1f3f7a53",
+      "last_checked": "2025-06-06T08:24:35.070243",
+      "status": "unchanged",
+      "etag": "W/\"40e4516f745dbc1d09d503422e05c005\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/phrasecount/count": {
+      "hash": "f10ffefb3c4f38d18780de9d1ec74f4a074d39556c82312706ed781e1f3f7a53",
+      "last_checked": "2025-06-06T08:24:35.070243",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/phrasecount/phrase.json": {
+      "hash": "de52f0309e537ab9d96db8eb95c4c14e79171be829964d8ad2bef303b45824fa",
+      "last_checked": "2025-06-06T08:24:35.418910",
+      "status": "unchanged",
+      "etag": "W/\"0a9c0abd892fa4202fac1394246caf30\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/phrasecount/phrase": {
+      "hash": "de52f0309e537ab9d96db8eb95c4c14e79171be829964d8ad2bef303b45824fa",
+      "last_checked": "2025-06-06T08:24:35.418910",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/phrasecountsfromtemplates/init(classes:builder:).json": {
+      "hash": "0f0165deaff3ca706704746328037303579edc0437db9e2855ab3eaf99da361c",
+      "last_checked": "2025-06-06T08:24:35.857391",
+      "status": "unchanged",
+      "etag": "W/\"6bff3aad1ea8ca367fb96c35a1b61938\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/phrasecountsfromtemplates/init(classes:builder:)": {
+      "hash": "0f0165deaff3ca706704746328037303579edc0437db9e2855ab3eaf99da361c",
+      "last_checked": "2025-06-06T08:24:35.857391",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder/buildarray(_:).json": {
+      "hash": "a81f27e9ab2bd1cdbec55b44380e7a8bd5e99c476186752c5e9aeaaa62c20850",
+      "last_checked": "2025-06-06T08:24:36.226456",
+      "status": "unchanged",
+      "etag": "W/\"282d44422b10b08f845c3aa9a1b89af7\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder/buildarray(_:)": {
+      "hash": "a81f27e9ab2bd1cdbec55b44380e7a8bd5e99c476186752c5e9aeaaa62c20850",
+      "last_checked": "2025-06-06T08:24:36.226456",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder/buildblock(_:).json": {
+      "hash": "24865f9866996d0d3f42b87e01423e2a4b4d997969f9e0dfa78bf03246704e9f",
+      "last_checked": "2025-06-06T08:24:36.623865",
+      "status": "unchanged",
+      "etag": "W/\"d28efbfda6c33cac57bf988a3d920119\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder/buildblock(_:)": {
+      "hash": "24865f9866996d0d3f42b87e01423e2a4b4d997969f9e0dfa78bf03246704e9f",
+      "last_checked": "2025-06-06T08:24:36.623865",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder/buildeither(first:).json": {
+      "hash": "a10d43d257fe4aa899e6d4ef22580e24425ecbf0d9aa15a21dd30fdaaa547410",
+      "last_checked": "2025-06-06T08:24:36.944001",
+      "status": "unchanged",
+      "etag": "W/\"64f47cb631b5dbdbc039a09a28c1fcd2\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder/buildeither(first:)": {
+      "hash": "a10d43d257fe4aa899e6d4ef22580e24425ecbf0d9aa15a21dd30fdaaa547410",
+      "last_checked": "2025-06-06T08:24:36.944001",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder/buildeither(second:).json": {
+      "hash": "9bc9f986210cd490fe9318b31022fbd6f6004b926ccfdb0d665e3feaa1f7fe92",
+      "last_checked": "2025-06-06T08:24:37.332423",
+      "status": "unchanged",
+      "etag": "W/\"6d7cb526567a14c9c06c4d20701ca5f6\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder/buildeither(second:)": {
+      "hash": "9bc9f986210cd490fe9318b31022fbd6f6004b926ccfdb0d665e3feaa1f7fe92",
+      "last_checked": "2025-06-06T08:24:37.332423",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder/buildoptional(_:).json": {
+      "hash": "90b978a7ae98e2cba33bb4e6e940e55c7549129cbb430253f5a27c2d748f6dce",
+      "last_checked": "2025-06-06T08:24:37.700519",
+      "status": "unchanged",
+      "etag": "W/\"6252b6043f6977ac8a5f5210a2a80d66\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templateinsertablebuilder/buildoptional(_:)": {
+      "hash": "90b978a7ae98e2cba33bb4e6e940e55c7549129cbb430253f5a27c2d748f6dce",
+      "last_checked": "2025-06-06T08:24:37.700519",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/template/init(_:count:).json": {
+      "hash": "22c5b1c918af587b1aeae1e35210bb6d86499679e8563bdc5866ffc19b41fff1",
+      "last_checked": "2025-06-06T08:24:38.100316",
+      "status": "unchanged",
+      "etag": "W/\"a8801605f643d2bba7dbd8f4cdc593d6\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/template/init(_:count:)": {
+      "hash": "22c5b1c918af587b1aeae1e35210bb6d86499679e8563bdc5866ffc19b41fff1",
+      "last_checked": "2025-06-06T08:24:38.100316",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/template/body.json": {
+      "hash": "be3cbe69e49243b6456df19588571fe9b6bac16f5d1bcfbaba1bb900252ed9ef",
+      "last_checked": "2025-06-06T08:24:38.421174",
+      "status": "unchanged",
+      "etag": "W/\"2228b09c9239c4f4debd4c8e56a5aefb\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/template/body": {
+      "hash": "be3cbe69e49243b6456df19588571fe9b6bac16f5d1bcfbaba1bb900252ed9ef",
+      "last_checked": "2025-06-06T08:24:38.421174",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/template/count.json": {
+      "hash": "2c4276f68f069a673bfb5e28ddcf9fcbc04adacc8763c7628df496cf4c443102",
+      "last_checked": "2025-06-06T08:24:38.773908",
+      "status": "unchanged",
+      "etag": "W/\"091647e3e4d2f60e8c6cab3f4f6f6e36\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/template/count": {
+      "hash": "2c4276f68f069a673bfb5e28ddcf9fcbc04adacc8763c7628df496cf4c443102",
+      "last_checked": "2025-06-06T08:24:38.773908",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator/element.json": {
+      "hash": "a8aa1f6bd89b2ab8456d15365c10bc4a878aeedc6ebd319de24178fa2807b929",
+      "last_checked": "2025-06-06T08:24:39.177322",
+      "status": "unchanged",
+      "etag": "W/\"1140108e8392ba0bb1286eb217059225\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator/element": {
+      "hash": "a8aa1f6bd89b2ab8456d15365c10bc4a878aeedc6ebd319de24178fa2807b929",
+      "last_checked": "2025-06-06T08:24:39.177322",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator/init(templates:templateclasses:).json": {
+      "hash": "920011b249e27050f01beebcc6a2aaac05ede983d90332057e9ef58977396de7",
+      "last_checked": "2025-06-06T08:24:39.542974",
+      "status": "unchanged",
+      "etag": "W/\"c91e6b96283bd1714c21cf9871698718\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator/init(templates:templateclasses:)": {
+      "hash": "920011b249e27050f01beebcc6a2aaac05ede983d90332057e9ef58977396de7",
+      "last_checked": "2025-06-06T08:24:39.542974",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator/next().json": {
+      "hash": "588365c4c38975199fa1a6dc4cc0487e9a4943f07863b301cf90a331ff6b7024",
+      "last_checked": "2025-06-06T08:24:39.943021",
+      "status": "unchanged",
+      "etag": "W/\"1a319e848bceff71fcf5a4dc93d4016e\""
+    },
+    "https://developer.apple.com/documentation/speech/sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator/next()": {
+      "hash": "588365c4c38975199fa1a6dc4cc0487e9a4943f07863b301cf90a331ff6b7024",
+      "last_checked": "2025-06-06T08:24:39.943021",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/Speech/asking-permission-to-use-speech-recognition.json": {
+      "hash": "1be308ad03e92dc062c5e933f65e98f926bac6297c90634641f3ccb754934b5f",
+      "last_checked": "2025-06-06T19:37:57.949039",
+      "status": "new",
+      "etag": "W/\"2a343a0fe2dd99b440a6ab690115af72\""
+    },
+    "https://developer.apple.com/documentation/Speech/asking-permission-to-use-speech-recognition": {
+      "hash": "3fdc6a7db426abb5a55115567b558a1ce46d886c8400eb3cc4dc3496214c091a",
+      "last_checked": "2025-06-06T19:37:57.949172",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/speech/sfspeechrecognitionrequest/requiresondevicerecognition.json": {
+      "hash": "642830937cd81d463f8cc4b351e4aed1bdb4b00486159d61c08f381b6eaa5e10",
+      "last_checked": "2025-06-06T20:58:05.181412",
+      "status": "unchanged",
+      "etag": "W/\"e92b17c75a93f940d3b0a7284462eb78\""
+    },
+    "https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/requiresondevicerecognition": {
+      "hash": "642830937cd81d463f8cc4b351e4aed1bdb4b00486159d61c08f381b6eaa5e10",
+      "last_checked": "2025-06-06T20:58:05.181412",
+      "status": "unchanged"
+    }
+  }
+}

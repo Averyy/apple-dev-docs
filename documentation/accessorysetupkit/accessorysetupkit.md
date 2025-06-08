@@ -15,8 +15,6 @@ Use AccessorySetupKit to discover and configure Bluetooth or Wi-Fi accessories w
 
 > ❗ **Important**: AccessorySetupKit is available for iOS and iPadOS. The accessory’s Bluetooth permission doesn’t sync to a companion watchOS app.
 
-AccessorySetupKit is available for iOS and iPadOS. The accessory’s Bluetooth permission doesn’t sync to a companion watchOS app.
-
 ## Topics
 
 ### Essentials
@@ -63,4 +61,4 @@ AccessorySetupKit is available for iOS and iPadOS. The accessory’s Bluetooth p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accessorysetupkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AccessorySetupKit)*

@@ -1,4 +1,4 @@
 Completed scraping Core Media I/O!
-Total pages scraped: 550
+Total pages scraped: 1
 Pages skipped (unchanged): 1
 Pages failed: 0

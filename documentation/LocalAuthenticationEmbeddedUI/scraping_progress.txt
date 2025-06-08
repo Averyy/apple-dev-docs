@@ -1,4 +1,4 @@
 Completed scraping Local Authentication Embedded UI!
-Total pages scraped: 8
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 2
 Pages failed: 0

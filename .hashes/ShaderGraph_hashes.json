@@ -1,0 +1,3303 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-08T16:05:44.783574",
+    "total_pages": 549,
+    "etags_collected": "2025-06-08T16:05:44.783586"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/ShaderGraph.json": {
+      "hash": "e9f43cfee8a7a9ca6ccbbff1db69c43d43bd6e404627a4aa205377c9471e4e4f",
+      "last_checked": "2025-06-06T08:14:59.613265",
+      "status": "new",
+      "etag": "W/\"eef1c6946627477e40e3d6a43782284f\""
+    },
+    "https://developer.apple.com/documentation/ShaderGraph": {
+      "hash": "8555e1df549fd911b07ffd1210b1479ea670bdd66bb61e7d0bd17c9a7b556e56",
+      "last_checked": "2025-06-06T08:14:59.613679",
+      "status": "unchanged",
+      "etag": "980d43af3c534ac5c24d48caaa1d8644"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph.json": {
+      "hash": "8555e1df549fd911b07ffd1210b1479ea670bdd66bb61e7d0bd17c9a7b556e56",
+      "last_checked": "2025-06-06T08:14:59.613679",
+      "status": "unchanged",
+      "etag": "W/\"eef1c6946627477e40e3d6a43782284f\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural.json": {
+      "hash": "02b9c4a04e83410c7cac21a146560f5a37c851d886eecf9fd67a6b537d7f7fbf",
+      "last_checked": "2025-06-06T08:15:00.541505",
+      "status": "unchanged",
+      "etag": "W/\"6fd1073390421b2b38278cabf2d860d3\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-procedural": {
+      "hash": "02b9c4a04e83410c7cac21a146560f5a37c851d886eecf9fd67a6b537d7f7fbf",
+      "last_checked": "2025-06-06T08:15:00.541505",
+      "status": "unchanged",
+      "etag": "8d58f46d8051f2e1b50ee75762392f03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture.json": {
+      "hash": "7080ee078b77cde614e214c3dbd6e30509665fc5b2797c7aeb894dfb1adc9c6e",
+      "last_checked": "2025-06-06T08:15:00.907855",
+      "status": "unchanged",
+      "etag": "W/\"41493fe296feb08210a5f4e81421dafe\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-texture": {
+      "hash": "7080ee078b77cde614e214c3dbd6e30509665fc5b2797c7aeb894dfb1adc9c6e",
+      "last_checked": "2025-06-06T08:15:00.907855",
+      "status": "unchanged",
+      "etag": "c675120b60c830d781e77ce9065ec47f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-procedural.json": {
+      "hash": "2f8dad1d639fea1e7b1b722265813cf5a9535efee0ae74c6997ec17a5a175122",
+      "last_checked": "2025-06-06T08:15:01.297900",
+      "status": "unchanged",
+      "etag": "W/\"656e1fb2f181b461fd02a7b20410515e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/3d-procedural": {
+      "hash": "2f8dad1d639fea1e7b1b722265813cf5a9535efee0ae74c6997ec17a5a175122",
+      "last_checked": "2025-06-06T08:15:01.297900",
+      "status": "unchanged",
+      "etag": "7b5011b7e649bdfe484dbd55f880ca9a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-texture.json": {
+      "hash": "a95ad118413b02de1ef7305c2b82a96f5e101e682309f389bf7ee40ef33cadce",
+      "last_checked": "2025-06-06T08:15:01.722495",
+      "status": "unchanged",
+      "etag": "W/\"f61e59d1cbf2fe06b9985a1a031b766c\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/3d-texture": {
+      "hash": "a95ad118413b02de1ef7305c2b82a96f5e101e682309f389bf7ee40ef33cadce",
+      "last_checked": "2025-06-06T08:15:01.722495",
+      "status": "unchanged",
+      "etag": "1150dbf749e93250573e2998e9505636"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment.json": {
+      "hash": "33e3ff7b709c070851aebb3c921fba2c2225fc6252d9fa050a516a6afd0ce17f",
+      "last_checked": "2025-06-06T08:15:02.103062",
+      "status": "unchanged",
+      "etag": "W/\"1b44691ec9acd2cdfba22818740253ce\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment": {
+      "hash": "33e3ff7b709c070851aebb3c921fba2c2225fc6252d9fa050a516a6afd0ce17f",
+      "last_checked": "2025-06-06T08:15:02.103062",
+      "status": "unchanged",
+      "etag": "9f7e4c6a8f20971726015d97d6d71053"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/application.json": {
+      "hash": "2fd7d383587ee364cc499e63a91b5bbc30a253ad6595ec783430a0cd95f4376c",
+      "last_checked": "2025-06-06T08:15:02.458589",
+      "status": "unchanged",
+      "etag": "W/\"5ea285fdab51a70444d20727e08d2c97\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/application": {
+      "hash": "2fd7d383587ee364cc499e63a91b5bbc30a253ad6595ec783430a0cd95f4376c",
+      "last_checked": "2025-06-06T08:15:02.458589",
+      "status": "unchanged",
+      "etag": "e968894f4895c15ebf4f0d6e1f67dade"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing.json": {
+      "hash": "079dad99e9fef9c20d0543d78fbd09fc237ed89dff850f0a6813802e2587a6a0",
+      "last_checked": "2025-06-06T08:15:02.833985",
+      "status": "unchanged",
+      "etag": "W/\"c3f50c07572cdab500b02fefdcb25a3c\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing": {
+      "hash": "079dad99e9fef9c20d0543d78fbd09fc237ed89dff850f0a6813802e2587a6a0",
+      "last_checked": "2025-06-06T08:15:02.833985",
+      "status": "unchanged",
+      "etag": "0b9d8cddfba1958375ffecc0708ab55d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data.json": {
+      "hash": "66c3deda44184b120b9a5863a44a17a89f4c7dbf8e340bace14947afbff6903d",
+      "last_checked": "2025-06-06T08:15:03.196518",
+      "status": "unchanged",
+      "etag": "W/\"cd9b283f2772f52d84115f2aed2326e9\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data": {
+      "hash": "66c3deda44184b120b9a5863a44a17a89f4c7dbf8e340bace14947afbff6903d",
+      "last_checked": "2025-06-06T08:15:03.196518",
+      "status": "unchanged",
+      "etag": "e10f92494f578f2aa3deb688f7a02c16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric.json": {
+      "hash": "3841c48b7704c19f052c5a0f8cbf27e52e2c220811d1db4d7fab07bcff39aa96",
+      "last_checked": "2025-06-06T08:15:03.599516",
+      "status": "unchanged",
+      "etag": "W/\"124f570cf8195f522b9c4e68859f4767\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/geometric": {
+      "hash": "3841c48b7704c19f052c5a0f8cbf27e52e2c220811d1db4d7fab07bcff39aa96",
+      "last_checked": "2025-06-06T08:15:03.599516",
+      "status": "unchanged",
+      "etag": "c71132dec278d9ef1f0c6b686dc59ed3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic.json": {
+      "hash": "9a538c62013fd632d20e1bf1ae58317babac4ce03d6ffeccf09703b1aa256ef8",
+      "last_checked": "2025-06-06T08:15:04.113656",
+      "status": "unchanged",
+      "etag": "W/\"a7e2400b3b80657a544fb3e4fbb933c4\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/logic": {
+      "hash": "9a538c62013fd632d20e1bf1ae58317babac4ce03d6ffeccf09703b1aa256ef8",
+      "last_checked": "2025-06-06T08:15:04.113656",
+      "status": "unchanged",
+      "etag": "d832c8d6393731403ffd550ef25fbad7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/material.json": {
+      "hash": "692874fbbdd121ad3a69fa186946fd21e9f1f669d275978a57135eebee091fbc",
+      "last_checked": "2025-06-06T08:15:04.614011",
+      "status": "unchanged",
+      "etag": "W/\"e430524da3bd3f1341f862b03db7f3a5\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/material": {
+      "hash": "692874fbbdd121ad3a69fa186946fd21e9f1f669d275978a57135eebee091fbc",
+      "last_checked": "2025-06-06T08:15:04.614011",
+      "status": "unchanged",
+      "etag": "888801512b3d0dd17380572212d9b381"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math.json": {
+      "hash": "3091308c68922d9855b98672812bce10ea3a66aa4f20a81fa42b4d4d324aa31e",
+      "last_checked": "2025-06-06T08:15:05.145171",
+      "status": "unchanged",
+      "etag": "W/\"57feabc8ab86763697317215ce685f41\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math": {
+      "hash": "3091308c68922d9855b98672812bce10ea3a66aa4f20a81fa42b4d4d324aa31e",
+      "last_checked": "2025-06-06T08:15:05.145171",
+      "status": "unchanged",
+      "etag": "a4a50504263e580c0d8cbaec2f49176e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/organization.json": {
+      "hash": "e5241084f36d84278b34477b24ce692ddfb5d63a22f57bad46226dfcd23f73f4",
+      "last_checked": "2025-06-06T08:15:05.727417",
+      "status": "unchanged",
+      "etag": "W/\"53a580e51fac98c8c2ba56ff1aec2ac0\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/organization": {
+      "hash": "e5241084f36d84278b34477b24ce692ddfb5d63a22f57bad46226dfcd23f73f4",
+      "last_checked": "2025-06-06T08:15:05.727417",
+      "status": "unchanged",
+      "etag": "97851a4f034ca155268d3570bd918145"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural.json": {
+      "hash": "ab37278702d383db0c4b2e33c05c8d4fa8606ffb26ba171402b1fa9093e97a05",
+      "last_checked": "2025-06-06T08:15:06.246358",
+      "status": "unchanged",
+      "etag": "W/\"f14c12e8f5086b12bca9b6f4d177c45d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural": {
+      "hash": "ab37278702d383db0c4b2e33c05c8d4fa8606ffb26ba171402b1fa9093e97a05",
+      "last_checked": "2025-06-06T08:15:06.246358",
+      "status": "unchanged",
+      "etag": "060d0776de9ea86a227c4eb5e71b0022"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit.json": {
+      "hash": "e95dec248e9ad551744c3979d64c223f2becf33eabfc86d0b7d4388364ec11b9",
+      "last_checked": "2025-06-06T08:15:06.787165",
+      "status": "unchanged",
+      "etag": "W/\"43e17997f5320bd1e8938525233991df\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit": {
+      "hash": "e95dec248e9ad551744c3979d64c223f2becf33eabfc86d0b7d4388364ec11b9",
+      "last_checked": "2025-06-06T08:15:06.787165",
+      "status": "unchanged",
+      "etag": "3ec1f430bb74af5599285db5f23f875a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/surface.json": {
+      "hash": "bb8f58e3deb31c58d973b7f046e91a584496290b4c95653efcb1323a6865a394",
+      "last_checked": "2025-06-06T08:15:07.224124",
+      "status": "unchanged",
+      "etag": "W/\"07368fd696c4e8764a6fb59ab4759b44\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/surface": {
+      "hash": "bb8f58e3deb31c58d973b7f046e91a584496290b4c95653efcb1323a6865a394",
+      "last_checked": "2025-06-06T08:15:07.224124",
+      "status": "unchanged",
+      "etag": "13c1e2f58d250a98d974727354437636"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other.json": {
+      "hash": "46ed78c42aca75028964ee6ff8cfd0b888a0ffb547ad2be42f88581b5a00a592",
+      "last_checked": "2025-06-06T08:15:07.638322",
+      "status": "unchanged",
+      "etag": "W/\"8e154d8201b93b72cffd52ef9840b04c\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other": {
+      "hash": "46ed78c42aca75028964ee6ff8cfd0b888a0ffb547ad2be42f88581b5a00a592",
+      "last_checked": "2025-06-06T08:15:07.638322",
+      "status": "unchanged",
+      "etag": "5abac8e0dc44ebee9375b7ff939bba25"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/ramp-horizontal.json": {
+      "hash": "4bcf8cedbc44e6182ce0fa802d085f1ee466c0d12dc4f8243384dcfe645feea2",
+      "last_checked": "2025-06-06T08:15:08.129130",
+      "status": "unchanged",
+      "etag": "W/\"6648928c7df0ee94463003551125d309\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-procedural/ramp-horizontal": {
+      "hash": "4bcf8cedbc44e6182ce0fa802d085f1ee466c0d12dc4f8243384dcfe645feea2",
+      "last_checked": "2025-06-06T08:15:08.129130",
+      "status": "unchanged",
+      "etag": "d372f622058cde5442de01df553d0581"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/ramp-vertical.json": {
+      "hash": "48641e97392f13c6c8df19cec719c536237265f3278d075960cd24596327d9a3",
+      "last_checked": "2025-06-06T08:15:08.546166",
+      "status": "unchanged",
+      "etag": "W/\"7074af28bb4ba53c2e9cac7f2a27f468\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-procedural/ramp-vertical": {
+      "hash": "48641e97392f13c6c8df19cec719c536237265f3278d075960cd24596327d9a3",
+      "last_checked": "2025-06-06T08:15:08.546166",
+      "status": "unchanged",
+      "etag": "9270b58ce82e329564b555f19542d62f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/ramp-4-corners.json": {
+      "hash": "2e97106374109aad798d784123262e82040deb341fffabd61ec00ac4ed1b3fac",
+      "last_checked": "2025-06-06T08:15:08.960595",
+      "status": "unchanged",
+      "etag": "W/\"64ef0c3cb80c723082fb90caf3c0eccc\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-procedural/ramp-4-corners": {
+      "hash": "2e97106374109aad798d784123262e82040deb341fffabd61ec00ac4ed1b3fac",
+      "last_checked": "2025-06-06T08:15:08.960595",
+      "status": "unchanged",
+      "etag": "3ee80c43e573a2b24b36ca96ed6e9e73"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/split-horizontal.json": {
+      "hash": "d6f93a20740f4b8a2718dbab0036859824f5817c55901f428ae932c096fc69be",
+      "last_checked": "2025-06-06T08:15:09.377511",
+      "status": "unchanged",
+      "etag": "W/\"f710043ee92060bfc9895fda58289c93\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-procedural/split-horizontal": {
+      "hash": "d6f93a20740f4b8a2718dbab0036859824f5817c55901f428ae932c096fc69be",
+      "last_checked": "2025-06-06T08:15:09.377511",
+      "status": "unchanged",
+      "etag": "c1858ef46b5b815a872a2ce9eda31f03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/split-vertical.json": {
+      "hash": "f8fbbf41b8130efa57966cf806d2e46f5d4ac001f25ec5612cbca6270d266979",
+      "last_checked": "2025-06-06T08:15:09.902286",
+      "status": "unchanged",
+      "etag": "W/\"4ebced37e619b664db1cc9b898643b61\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-procedural/split-vertical": {
+      "hash": "f8fbbf41b8130efa57966cf806d2e46f5d4ac001f25ec5612cbca6270d266979",
+      "last_checked": "2025-06-06T08:15:09.902286",
+      "status": "unchanged",
+      "etag": "d113d460f5ba4ab3129262fb004f07d0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/noise-2d.json": {
+      "hash": "1d19ff4629a55006a4c6be21246a394d891bafcc2ccf686678dc155840ee1bf6",
+      "last_checked": "2025-06-06T08:15:10.323468",
+      "status": "unchanged",
+      "etag": "W/\"382682b897b5713140e406a4fd47f430\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-procedural/noise-2d": {
+      "hash": "1d19ff4629a55006a4c6be21246a394d891bafcc2ccf686678dc155840ee1bf6",
+      "last_checked": "2025-06-06T08:15:10.323468",
+      "status": "unchanged",
+      "etag": "37aca7bf2313f7b1b366f65c1939be1f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/cellular-noise-2d.json": {
+      "hash": "fb7f56d64d78a470dfe6790fbdc9e5737050f25451e7face572c8a2dcb75e4b6",
+      "last_checked": "2025-06-06T08:15:10.909922",
+      "status": "unchanged",
+      "etag": "W/\"ab7d37589307f94492da5a4c55e1f6c6\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-procedural/cellular-noise-2d": {
+      "hash": "fb7f56d64d78a470dfe6790fbdc9e5737050f25451e7face572c8a2dcb75e4b6",
+      "last_checked": "2025-06-06T08:15:10.909922",
+      "status": "unchanged",
+      "etag": "0ed012f344d286f183b6651ef6140d23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-procedural/worley-noise-2d.json": {
+      "hash": "8ef0f1c27cad8b725263ad4a75cc356f1c4451109e5094b17abefc372fd85b32",
+      "last_checked": "2025-06-06T08:15:11.305898",
+      "status": "unchanged",
+      "etag": "W/\"e1125dcf37d91f8cd137609e96f82934\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-procedural/worley-noise-2d": {
+      "hash": "8ef0f1c27cad8b725263ad4a75cc356f1c4451109e5094b17abefc372fd85b32",
+      "last_checked": "2025-06-06T08:15:11.305898",
+      "status": "unchanged",
+      "etag": "2112afd48f10751b9527dce199e84d86"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture/image.json": {
+      "hash": "bcb4aa9b02969af7e96c5a78c833e30c9125098d25213bed81be7010e89b4b0b",
+      "last_checked": "2025-06-06T08:15:11.752706",
+      "status": "unchanged",
+      "etag": "W/\"f7834bf1027c284fb1a4d852ef36d34d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-texture/image": {
+      "hash": "bcb4aa9b02969af7e96c5a78c833e30c9125098d25213bed81be7010e89b4b0b",
+      "last_checked": "2025-06-06T08:15:11.752706",
+      "status": "unchanged",
+      "etag": "bdc06bc5233e28a8d435107b51e58284"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture/uv-texture.json": {
+      "hash": "9ed81840ddbd0313eae20504a2103886c2b7a8ddbc2060144f7ef14680464dc5",
+      "last_checked": "2025-06-06T08:15:12.572453",
+      "status": "unchanged",
+      "etag": "W/\"9e45a8e69722ffe1805154cf9121e252\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-texture/uv-texture": {
+      "hash": "9ed81840ddbd0313eae20504a2103886c2b7a8ddbc2060144f7ef14680464dc5",
+      "last_checked": "2025-06-06T08:15:12.572453",
+      "status": "unchanged",
+      "etag": "201571de92b8c58db068e8933820a508"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture/transform-2d.json": {
+      "hash": "7bb208f3a9649f6f45f841e3c9a8145b22a9fffd8bea565c042e7f15bd7f68ab",
+      "last_checked": "2025-06-06T08:15:13.001437",
+      "status": "unchanged",
+      "etag": "W/\"76121dabf617b4b523e6f6f6ace087db\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-texture/transform-2d": {
+      "hash": "7bb208f3a9649f6f45f841e3c9a8145b22a9fffd8bea565c042e7f15bd7f68ab",
+      "last_checked": "2025-06-06T08:15:13.001437",
+      "status": "unchanged",
+      "etag": "21339a357864035aa09423a3d884fd51"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-procedural/noise-3d.json": {
+      "hash": "cca6e650defeadd964b1bc29c86010bf6fd5e6c9f757b3b9ed2f4e511e15f71e",
+      "last_checked": "2025-06-06T08:15:13.430150",
+      "status": "unchanged",
+      "etag": "W/\"20d1ce54ff6a9c40cd84eefa1d56e972\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/3d-procedural/noise-3d": {
+      "hash": "cca6e650defeadd964b1bc29c86010bf6fd5e6c9f757b3b9ed2f4e511e15f71e",
+      "last_checked": "2025-06-06T08:15:13.430150",
+      "status": "unchanged",
+      "etag": "06ab56e5dc9becc048c7a30110c9ccde"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-procedural/fractal-noise-3d.json": {
+      "hash": "9d7f4e8a10d763d5ef5869ad7fa7665a8b09fb3bed8cdcbbb0ceb6108ad0abfc",
+      "last_checked": "2025-06-06T08:15:13.837642",
+      "status": "unchanged",
+      "etag": "W/\"954a5c640155c30d3d97d50664f4dceb\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/3d-procedural/fractal-noise-3d": {
+      "hash": "9d7f4e8a10d763d5ef5869ad7fa7665a8b09fb3bed8cdcbbb0ceb6108ad0abfc",
+      "last_checked": "2025-06-06T08:15:13.837642",
+      "status": "unchanged",
+      "etag": "2e203518b32863d8cb2e3da284a66c5f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-procedural/cellular-noise-3d.json": {
+      "hash": "7511fc41d00ce9a7b3bd3594fc865b5447f6da73fc3105b7b56f31230d75345f",
+      "last_checked": "2025-06-06T08:15:14.227464",
+      "status": "unchanged",
+      "etag": "W/\"8b3e6154802ebde72bcf5febc3d4a9bc\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/3d-procedural/cellular-noise-3d": {
+      "hash": "7511fc41d00ce9a7b3bd3594fc865b5447f6da73fc3105b7b56f31230d75345f",
+      "last_checked": "2025-06-06T08:15:14.227464",
+      "status": "unchanged",
+      "etag": "18c2a05d83fef1a549a8fec0d2d8413b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-procedural/worley-noise-3d.json": {
+      "hash": "0e5abad03d0ed5378620eaa09b9f733164c8eed5958e36eb5a7f5dee4dd40d9d",
+      "last_checked": "2025-06-06T08:15:14.718365",
+      "status": "unchanged",
+      "etag": "W/\"f9f1d3fe02899cdec588598c1d919ee4\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/3d-procedural/worley-noise-3d": {
+      "hash": "0e5abad03d0ed5378620eaa09b9f733164c8eed5958e36eb5a7f5dee4dd40d9d",
+      "last_checked": "2025-06-06T08:15:14.718365",
+      "status": "unchanged",
+      "etag": "288903f401b49ee9155b9c3c5aad6fd9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/3d-texture/triplanar-projection.json": {
+      "hash": "2839edf9f49cdb07f2f64ffddf8c8766cba9aed46a6c9c156c9405fa7dd2f7c5",
+      "last_checked": "2025-06-06T08:15:15.201890",
+      "status": "unchanged",
+      "etag": "W/\"4cf6d1b9628527d27663f42e8218665d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/3d-texture/triplanar-projection": {
+      "hash": "2839edf9f49cdb07f2f64ffddf8c8766cba9aed46a6c9c156c9405fa7dd2f7c5",
+      "last_checked": "2025-06-06T08:15:15.201890",
+      "status": "unchanged",
+      "etag": "589822c4a358584fcc00537b9b73c2d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/remap.json": {
+      "hash": "207c1971ff8c781ac42bf5a1a1c6103db6176b23e4a77c3f8e9521df18e2f6fe",
+      "last_checked": "2025-06-06T08:15:15.601946",
+      "status": "unchanged",
+      "etag": "W/\"adef159733a7ecffbc4a77ee2d9d7eef\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment/remap": {
+      "hash": "207c1971ff8c781ac42bf5a1a1c6103db6176b23e4a77c3f8e9521df18e2f6fe",
+      "last_checked": "2025-06-06T08:15:15.601946",
+      "status": "unchanged",
+      "etag": "2c7954457cacb4d933dc95ff7484cacf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/smooth-step.json": {
+      "hash": "ee69021baad59850ac9435dfab779a4265d7de2dac61d13424f81359d78f4838",
+      "last_checked": "2025-06-06T08:15:16.035620",
+      "status": "unchanged",
+      "etag": "W/\"d8f45e3960976b100ce6fb1622c629be\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment/smooth-step": {
+      "hash": "ee69021baad59850ac9435dfab779a4265d7de2dac61d13424f81359d78f4838",
+      "last_checked": "2025-06-06T08:15:16.035620",
+      "status": "unchanged",
+      "etag": "eeb4e6a7e2edba3c54a35adc26b611c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/luminance.json": {
+      "hash": "c9eca90ee2a06316f4516902c56a6709d12d58d7c6ab47cefbe5f480e9ef9dd0",
+      "last_checked": "2025-06-06T08:15:16.465115",
+      "status": "unchanged",
+      "etag": "W/\"8ae4c6f764bc47b53a79ec64ab2485bc\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment/luminance": {
+      "hash": "c9eca90ee2a06316f4516902c56a6709d12d58d7c6ab47cefbe5f480e9ef9dd0",
+      "last_checked": "2025-06-06T08:15:16.465115",
+      "status": "unchanged",
+      "etag": "a68d4d6d29fcb6cb555c42ecc68f2f99"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/rgb-to-hsv.json": {
+      "hash": "f0c1fe7efc4aaf50b284b5596c2c689e920ad1391375e56bf044cc1c0fa77d0d",
+      "last_checked": "2025-06-06T08:15:16.943202",
+      "status": "unchanged",
+      "etag": "W/\"a8819e2d98758fc215693b19db998b21\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment/rgb-to-hsv": {
+      "hash": "f0c1fe7efc4aaf50b284b5596c2c689e920ad1391375e56bf044cc1c0fa77d0d",
+      "last_checked": "2025-06-06T08:15:16.943202",
+      "status": "unchanged",
+      "etag": "3b2d77e5aeeda23edc99503c7db68690"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/hsv-to-rgb.json": {
+      "hash": "f6666afaaf8776a8103606d11406033b535ee0d9e387e37124253a8fc399cb30",
+      "last_checked": "2025-06-06T08:15:17.377963",
+      "status": "unchanged",
+      "etag": "W/\"29916a40f338d68caef2dad3390f88a4\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment/hsv-to-rgb": {
+      "hash": "f6666afaaf8776a8103606d11406033b535ee0d9e387e37124253a8fc399cb30",
+      "last_checked": "2025-06-06T08:15:17.377963",
+      "status": "unchanged",
+      "etag": "4016dd10040b087c4110a81123006ad5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/contrast.json": {
+      "hash": "a53bcd2f6e254acdb6470e42fe8dba6c143bfa4b68c116708a11efc800180a29",
+      "last_checked": "2025-06-06T08:15:17.826380",
+      "status": "unchanged",
+      "etag": "W/\"ccf989dfe6b1db896ebbb02abef5ed97\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment/contrast": {
+      "hash": "a53bcd2f6e254acdb6470e42fe8dba6c143bfa4b68c116708a11efc800180a29",
+      "last_checked": "2025-06-06T08:15:17.826380",
+      "status": "unchanged",
+      "etag": "95e7a427cf1588bbe2005e5841280c95"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/range.json": {
+      "hash": "6f75a95abcd9f4ee718f56fa183b0962c4da6bd8e4fa2a70e06dc1219d5e974c",
+      "last_checked": "2025-06-06T08:15:18.266228",
+      "status": "unchanged",
+      "etag": "W/\"0bdf1f03edffdda01a170a45d6ba8b90\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment/range": {
+      "hash": "6f75a95abcd9f4ee718f56fa183b0962c4da6bd8e4fa2a70e06dc1219d5e974c",
+      "last_checked": "2025-06-06T08:15:18.266228",
+      "status": "unchanged",
+      "etag": "09a467294ad5d62dcdcf8c7fbca06594"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/step-(realitykit).json": {
+      "hash": "1a6fff2b85da75efaef186c77d837c071d2ed43019aa64c52b0af3e628c1002c",
+      "last_checked": "2025-06-06T08:15:19.596206",
+      "status": "unchanged",
+      "etag": "W/\"045dbc0a60fa0a213a91a1d9eb37b0aa\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment/step-(realitykit)": {
+      "hash": "1a6fff2b85da75efaef186c77d837c071d2ed43019aa64c52b0af3e628c1002c",
+      "last_checked": "2025-06-06T08:15:19.596206",
+      "status": "unchanged",
+      "etag": "e9c64c7f5aae2f9f1f124fbdf6eb8d63"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/application/time-(float).json": {
+      "hash": "da7e72ac7f6119d45a9c55d64d81c5034a923c74632cda995abef8346e729b34",
+      "last_checked": "2025-06-06T08:15:20.027499",
+      "status": "unchanged",
+      "etag": "W/\"c81a796ce3fc9829006b9e05ee4e97c1\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/application/time-(float)": {
+      "hash": "da7e72ac7f6119d45a9c55d64d81c5034a923c74632cda995abef8346e729b34",
+      "last_checked": "2025-06-06T08:15:20.027499",
+      "status": "unchanged",
+      "etag": "564e6e04f551509fb2df5caa69af3c81"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/application/up-direction.json": {
+      "hash": "9651c59bd71a952f03ba4c249c10ffd149ca655d495260c6fb7d7e3f9d64c3e8",
+      "last_checked": "2025-06-06T08:15:20.429124",
+      "status": "unchanged",
+      "etag": "W/\"6913cf877334d5546322f3b04dcaee52\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/application/up-direction": {
+      "hash": "9651c59bd71a952f03ba4c249c10ffd149ca655d495260c6fb7d7e3f9d64c3e8",
+      "last_checked": "2025-06-06T08:15:20.429124",
+      "status": "unchanged",
+      "etag": "125fe02f490a5a1910e51c2efbaa5926"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/premultiply.json": {
+      "hash": "13878c697f430f643e9dc7654c9a34fafe046f569ad90f4fe52253506b6502bd",
+      "last_checked": "2025-06-06T08:15:20.854544",
+      "status": "unchanged",
+      "etag": "W/\"c0d1fea4c0ae917ea3702f0d0c9ca870\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/premultiply": {
+      "hash": "13878c697f430f643e9dc7654c9a34fafe046f569ad90f4fe52253506b6502bd",
+      "last_checked": "2025-06-06T08:15:20.854544",
+      "status": "unchanged",
+      "etag": "2319e03798e0ecad35c3a1713a1fa8c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/unpremultiply.json": {
+      "hash": "1bdb2ded43662b489b3424c90e12680e91547c2c71ffe3e5f709e7224805e802",
+      "last_checked": "2025-06-06T08:15:21.277254",
+      "status": "unchanged",
+      "etag": "W/\"57d86e4d359820dd8bbbe52957d5daa5\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/unpremultiply": {
+      "hash": "1bdb2ded43662b489b3424c90e12680e91547c2c71ffe3e5f709e7224805e802",
+      "last_checked": "2025-06-06T08:15:21.277254",
+      "status": "unchanged",
+      "etag": "06c8a9d74d92447ddcbd69efb765d679"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/additive-mix.json": {
+      "hash": "29e7224230943e097d03b4d71d65658a34f9e2ca21155083dcc9be2f917221af",
+      "last_checked": "2025-06-06T08:15:21.723898",
+      "status": "unchanged",
+      "etag": "W/\"64783cee012db27b434854eacccebb6d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/additive-mix": {
+      "hash": "29e7224230943e097d03b4d71d65658a34f9e2ca21155083dcc9be2f917221af",
+      "last_checked": "2025-06-06T08:15:21.723898",
+      "status": "unchanged",
+      "etag": "6bcd81d0fa3405dfb31fdc4e743d52ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/subtractive-mix.json": {
+      "hash": "b1073c44f93f4ac907ed9848469e394d59c8cafda6911eb90e575b3ba5b64dd1",
+      "last_checked": "2025-06-06T08:15:22.193603",
+      "status": "unchanged",
+      "etag": "W/\"f0cf6ad1c514ebf517314028b94bd88e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/subtractive-mix": {
+      "hash": "b1073c44f93f4ac907ed9848469e394d59c8cafda6911eb90e575b3ba5b64dd1",
+      "last_checked": "2025-06-06T08:15:22.193603",
+      "status": "unchanged",
+      "etag": "83a695b0384976a8bc13cd01ca45f1fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/difference.json": {
+      "hash": "b8d8a142ddb6bebfa3bf7c38888f0d102caccd5f2f476745de00fdf8dac9daed",
+      "last_checked": "2025-06-06T08:15:22.609726",
+      "status": "unchanged",
+      "etag": "W/\"448f42926fa34c24379924e9c8af7a09\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/difference": {
+      "hash": "b8d8a142ddb6bebfa3bf7c38888f0d102caccd5f2f476745de00fdf8dac9daed",
+      "last_checked": "2025-06-06T08:15:22.609726",
+      "status": "unchanged",
+      "etag": "b182aa7d327ed85f07bb2bc0768a7dae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/burn.json": {
+      "hash": "41681d1d8a9f7084245c010505bebb7813e498be83a04632169a859449fa9545",
+      "last_checked": "2025-06-06T08:15:23.036802",
+      "status": "unchanged",
+      "etag": "W/\"24fe601add0e6e553c384d28ba468236\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/burn": {
+      "hash": "41681d1d8a9f7084245c010505bebb7813e498be83a04632169a859449fa9545",
+      "last_checked": "2025-06-06T08:15:23.036802",
+      "status": "unchanged",
+      "etag": "2d1fccb2a5cdc8fb36ae50c8adc6d8c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/dodge.json": {
+      "hash": "3f339993f1d8fd3ee90c4619b18fd38de159617f3de3631e16472734159d629b",
+      "last_checked": "2025-06-06T08:15:23.466302",
+      "status": "unchanged",
+      "etag": "W/\"0c038d44036af2c0d93cf2721d1b8868\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/dodge": {
+      "hash": "3f339993f1d8fd3ee90c4619b18fd38de159617f3de3631e16472734159d629b",
+      "last_checked": "2025-06-06T08:15:23.466302",
+      "status": "unchanged",
+      "etag": "bce8222b92a6719cc45939722eec9643"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/screen.json": {
+      "hash": "989c2f4f81651be7c648188a18db357e4f7694f9378d640cf95395b46c3c1150",
+      "last_checked": "2025-06-06T08:15:23.937354",
+      "status": "unchanged",
+      "etag": "W/\"00efb41bd07101fe44340936219cee95\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/screen": {
+      "hash": "989c2f4f81651be7c648188a18db357e4f7694f9378d640cf95395b46c3c1150",
+      "last_checked": "2025-06-06T08:15:23.937354",
+      "status": "unchanged",
+      "etag": "b8701db702cbb4b24a610a2989355a64"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/overlay.json": {
+      "hash": "8d9717d63a0f64e12f49d8d992d1f21c1e38a614219e7a652bfb890f01839efd",
+      "last_checked": "2025-06-06T08:15:24.378376",
+      "status": "unchanged",
+      "etag": "W/\"7aa798cd057c2a3879f30723e96cb637\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/overlay": {
+      "hash": "8d9717d63a0f64e12f49d8d992d1f21c1e38a614219e7a652bfb890f01839efd",
+      "last_checked": "2025-06-06T08:15:24.378376",
+      "status": "unchanged",
+      "etag": "19f876e73b802391f98f89f91d068066"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/disjoint-over.json": {
+      "hash": "dfac430d4cbbc98fa22f31679b24c4e5f58f95fd7b15f942d8e54646065d3f92",
+      "last_checked": "2025-06-06T08:15:24.797566",
+      "status": "unchanged",
+      "etag": "W/\"dee3f5d6d270b3cb768e1fb83a7fe113\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/disjoint-over": {
+      "hash": "dfac430d4cbbc98fa22f31679b24c4e5f58f95fd7b15f942d8e54646065d3f92",
+      "last_checked": "2025-06-06T08:15:24.797566",
+      "status": "unchanged",
+      "etag": "3a9ed673f5cbcaf940b2ebcef4a68150"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/in.json": {
+      "hash": "c08b05e8310ff4766002a39618d49c66704f20a48d86f2f92a14ea8ea7b54a56",
+      "last_checked": "2025-06-06T08:15:25.222015",
+      "status": "unchanged",
+      "etag": "W/\"41c878912242b0de1ebdc9b9c375f618\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/in": {
+      "hash": "c08b05e8310ff4766002a39618d49c66704f20a48d86f2f92a14ea8ea7b54a56",
+      "last_checked": "2025-06-06T08:15:25.222015",
+      "status": "unchanged",
+      "etag": "e13a4700e1bb06f16562e2f2a144f1fa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/mask.json": {
+      "hash": "bdb8a9b13e83ac08065b199041886966af1c4e98c6fa7dea847e94540a7df2a9",
+      "last_checked": "2025-06-06T08:15:25.725926",
+      "status": "unchanged",
+      "etag": "W/\"8ee3e6799beac192296d5c1f8935b823\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/mask": {
+      "hash": "bdb8a9b13e83ac08065b199041886966af1c4e98c6fa7dea847e94540a7df2a9",
+      "last_checked": "2025-06-06T08:15:25.725926",
+      "status": "unchanged",
+      "etag": "c1634858a4e32915827ec2ead5b11a4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/matte.json": {
+      "hash": "afa7b13b30ff4d31dfb605c4bec8e924e1c2bd07c3db66d4aea94a5a8f1742a9",
+      "last_checked": "2025-06-06T08:15:26.140174",
+      "status": "unchanged",
+      "etag": "W/\"6ebed0e7e95bc9009e26e8c83d16227e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/matte": {
+      "hash": "afa7b13b30ff4d31dfb605c4bec8e924e1c2bd07c3db66d4aea94a5a8f1742a9",
+      "last_checked": "2025-06-06T08:15:26.140174",
+      "status": "unchanged",
+      "etag": "e353ed093dde991e708d48a4566f3747"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/out.json": {
+      "hash": "f39d43ce2eb1ea3fa8e8067d2355542aab606e601950540f8cfcecd456d7386e",
+      "last_checked": "2025-06-06T08:15:26.612648",
+      "status": "unchanged",
+      "etag": "W/\"e5a9cf02540dde214b790c7caab5067a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/out": {
+      "hash": "f39d43ce2eb1ea3fa8e8067d2355542aab606e601950540f8cfcecd456d7386e",
+      "last_checked": "2025-06-06T08:15:26.612648",
+      "status": "unchanged",
+      "etag": "47e9747b66d78ec4568a13e2772831b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/over.json": {
+      "hash": "a97d7d298d4fb8f56a6022c9fabec44a3020c8d1946c97480f436dc7d29ebeaa",
+      "last_checked": "2025-06-06T08:15:27.032860",
+      "status": "unchanged",
+      "etag": "W/\"62fa1e4746d1b5ce0ddbbb67b39a4cdf\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/over": {
+      "hash": "a97d7d298d4fb8f56a6022c9fabec44a3020c8d1946c97480f436dc7d29ebeaa",
+      "last_checked": "2025-06-06T08:15:27.032860",
+      "status": "unchanged",
+      "etag": "a1bcc0bceeb3d53d4c21c85c78d6574e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/inside.json": {
+      "hash": "e27f5e840821fd120895eeb7786adf103a40e7596688adcf810654d54c9fd4c5",
+      "last_checked": "2025-06-06T08:15:27.422627",
+      "status": "unchanged",
+      "etag": "W/\"ea6a07fbfa9fede08db08bcb666296e9\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/inside": {
+      "hash": "e27f5e840821fd120895eeb7786adf103a40e7596688adcf810654d54c9fd4c5",
+      "last_checked": "2025-06-06T08:15:27.422627",
+      "status": "unchanged",
+      "etag": "eec7bc903aa10492df0fbee40e099dcb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/outside.json": {
+      "hash": "6cabbc4986516c5694dd6baba8622e74355b51c195aff0a2d8bdc8e873c06144",
+      "last_checked": "2025-06-06T08:15:27.871153",
+      "status": "unchanged",
+      "etag": "W/\"8ad287fdf9b197694262759fe38a3852\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/outside": {
+      "hash": "6cabbc4986516c5694dd6baba8622e74355b51c195aff0a2d8bdc8e873c06144",
+      "last_checked": "2025-06-06T08:15:27.871153",
+      "status": "unchanged",
+      "etag": "287c84b83be0003ce292dfbfca3a42aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/compositing/mix.json": {
+      "hash": "c25b314e17e2e81ee5ef29f2336e4d479f9790ad291855e9834c0ca751808ddf",
+      "last_checked": "2025-06-06T08:15:28.271995",
+      "status": "unchanged",
+      "etag": "W/\"6d0152037f8e96cc5b255bf73ec565f1\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/compositing/mix": {
+      "hash": "c25b314e17e2e81ee5ef29f2336e4d479f9790ad291855e9834c0ca751808ddf",
+      "last_checked": "2025-06-06T08:15:28.271995",
+      "status": "unchanged",
+      "etag": "a9f2bdf7084a0d93bf19b28608a8a5f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/convert.json": {
+      "hash": "3151de42a1f15c7654387e7e04c580bc9fd56b3f87ae8b005296c9b48246de37",
+      "last_checked": "2025-06-06T08:15:28.670853",
+      "status": "unchanged",
+      "etag": "W/\"6adb39c583d9adb948e3e763f658f73a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data/convert": {
+      "hash": "3151de42a1f15c7654387e7e04c580bc9fd56b3f87ae8b005296c9b48246de37",
+      "last_checked": "2025-06-06T08:15:28.670853",
+      "status": "unchanged",
+      "etag": "9a45eb266a983440f013f3327dfdabe4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/combine-2.json": {
+      "hash": "e67b30425731199901a6fcfe15e3ceefc78d4ff6ffa745fed514a24303eb6fdf",
+      "last_checked": "2025-06-06T08:15:29.524824",
+      "status": "unchanged",
+      "etag": "W/\"c6102403d520f2a34bda54302bc38f21\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data/combine-2": {
+      "hash": "e67b30425731199901a6fcfe15e3ceefc78d4ff6ffa745fed514a24303eb6fdf",
+      "last_checked": "2025-06-06T08:15:29.524824",
+      "status": "unchanged",
+      "etag": "2cfd88b50554e26eedc24000bfe1f2f9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/combine-3.json": {
+      "hash": "e59afc571c0c5c97fa0bb54b79727bd5666ba88d9a0a3f924323872ade02d1a7",
+      "last_checked": "2025-06-06T08:15:29.928204",
+      "status": "unchanged",
+      "etag": "W/\"72591b57ccdb11e670eceaa5c440e0bf\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data/combine-3": {
+      "hash": "e59afc571c0c5c97fa0bb54b79727bd5666ba88d9a0a3f924323872ade02d1a7",
+      "last_checked": "2025-06-06T08:15:29.928204",
+      "status": "unchanged",
+      "etag": "74f63b0a0daebafb680158a01fc22a69"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/combine-4.json": {
+      "hash": "4183d29f2e4133ac7d4d24fd868b39fb4ff9eccfe3de24a0936dbf353bd85863",
+      "last_checked": "2025-06-06T08:15:30.375614",
+      "status": "unchanged",
+      "etag": "W/\"595793e45cb99635d84f84508f588361\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data/combine-4": {
+      "hash": "4183d29f2e4133ac7d4d24fd868b39fb4ff9eccfe3de24a0936dbf353bd85863",
+      "last_checked": "2025-06-06T08:15:30.375614",
+      "status": "unchanged",
+      "etag": "2dfa6fd293261bfa4cb15440b7ffad59"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/extract.json": {
+      "hash": "a3042ba6db335d5c6b3dcc6042ffa4df8793bfa5bf12e44d4255d1bf6ec21d6b",
+      "last_checked": "2025-06-06T08:15:30.783850",
+      "status": "unchanged",
+      "etag": "W/\"b62c6f044a33cf21be63506e9dbbaa27\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data/extract": {
+      "hash": "a3042ba6db335d5c6b3dcc6042ffa4df8793bfa5bf12e44d4255d1bf6ec21d6b",
+      "last_checked": "2025-06-06T08:15:30.783850",
+      "status": "unchanged",
+      "etag": "1cf5ed7fe2a36251377bbf806a5d195f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/separate-2.json": {
+      "hash": "c5d465a386de06b048d09bcc45c17a9eb673604d952e7e01f30346e160241e4f",
+      "last_checked": "2025-06-06T08:15:31.190776",
+      "status": "unchanged",
+      "etag": "W/\"8499377ebb958d75a4911feaa410c514\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data/separate-2": {
+      "hash": "c5d465a386de06b048d09bcc45c17a9eb673604d952e7e01f30346e160241e4f",
+      "last_checked": "2025-06-06T08:15:31.190776",
+      "status": "unchanged",
+      "etag": "cae1594241d5b22e6fce6c9d0ba975a4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/separate-3.json": {
+      "hash": "989a4a277ab93f9bc67c138c30888f853967ba7d868285891069194ee738f1e4",
+      "last_checked": "2025-06-06T08:15:31.619172",
+      "status": "unchanged",
+      "etag": "W/\"ab830397ea1e97c5426c103501d846f3\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data/separate-3": {
+      "hash": "989a4a277ab93f9bc67c138c30888f853967ba7d868285891069194ee738f1e4",
+      "last_checked": "2025-06-06T08:15:31.619172",
+      "status": "unchanged",
+      "etag": "634a969f2040f4cfcd43b1107d6fcd12"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/separate-4.json": {
+      "hash": "9407dfb744b2c033c4916b190d4afb15b5721995d940eb2e7a1596c3360f54ab",
+      "last_checked": "2025-06-06T08:15:32.056953",
+      "status": "unchanged",
+      "etag": "W/\"dd6962338aedc81ec9c702d8f87b1629\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data/separate-4": {
+      "hash": "9407dfb744b2c033c4916b190d4afb15b5721995d940eb2e7a1596c3360f54ab",
+      "last_checked": "2025-06-06T08:15:32.056953",
+      "status": "unchanged",
+      "etag": "2bc08c642e7f041806ee5d946cc70f43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/primvar-reader.json": {
+      "hash": "0c78002b55c4c70a302cdc55ae344e528c738877f613be2a77d7bc376c3b9b16",
+      "last_checked": "2025-06-06T08:15:32.488148",
+      "status": "unchanged",
+      "etag": "W/\"00fa49247d2769407fe2d7ea5c7b6448\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data/primvar-reader": {
+      "hash": "0c78002b55c4c70a302cdc55ae344e528c738877f613be2a77d7bc376c3b9b16",
+      "last_checked": "2025-06-06T08:15:32.488148",
+      "status": "unchanged",
+      "etag": "2c742de564876091517e021b0ea76fb8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/position.json": {
+      "hash": "2010d39889f1a8e98ca7fd6e0a42ab64f4f627e1529ae0c4a7ce84395f8dbe3e",
+      "last_checked": "2025-06-06T08:15:32.915210",
+      "status": "unchanged",
+      "etag": "W/\"7d05d576ca268eee673465d9d8f22b9c\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/geometric/position": {
+      "hash": "2010d39889f1a8e98ca7fd6e0a42ab64f4f627e1529ae0c4a7ce84395f8dbe3e",
+      "last_checked": "2025-06-06T08:15:32.915210",
+      "status": "unchanged",
+      "etag": "02e6c7ffd7d9d7b9cdfc05f664a2e495"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/normal.json": {
+      "hash": "25b1b1515eb073e1ad67cb8bc033ce5efc9625c73e89abec8b1eaa3340555d94",
+      "last_checked": "2025-06-06T08:15:33.308945",
+      "status": "unchanged",
+      "etag": "W/\"aca961ad4e184c3300bf6c194cece220\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/geometric/normal": {
+      "hash": "25b1b1515eb073e1ad67cb8bc033ce5efc9625c73e89abec8b1eaa3340555d94",
+      "last_checked": "2025-06-06T08:15:33.308945",
+      "status": "unchanged",
+      "etag": "2df2099c4e22d91123b97bfabd05cca0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/tangent.json": {
+      "hash": "0d61603e0023496c1ecb822769755b71b3b16aea24a2a11d162bc13d0c990534",
+      "last_checked": "2025-06-06T08:15:33.707989",
+      "status": "unchanged",
+      "etag": "W/\"0a1554cca6d707eb0704bd8218d18875\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/geometric/tangent": {
+      "hash": "0d61603e0023496c1ecb822769755b71b3b16aea24a2a11d162bc13d0c990534",
+      "last_checked": "2025-06-06T08:15:33.707989",
+      "status": "unchanged",
+      "etag": "a6c7f2425d7b5ef2e7bccc9bab1c1089"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/bitangent.json": {
+      "hash": "6aa211b38e636a26284b369ee69bf8eeeb402414cbf33fd92b7d9bb8d32281a5",
+      "last_checked": "2025-06-06T08:15:34.127604",
+      "status": "unchanged",
+      "etag": "W/\"9d61f7117b9ac4e79787a91c5c09e363\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/geometric/bitangent": {
+      "hash": "6aa211b38e636a26284b369ee69bf8eeeb402414cbf33fd92b7d9bb8d32281a5",
+      "last_checked": "2025-06-06T08:15:34.127604",
+      "status": "unchanged",
+      "etag": "fe3630b043081a67f5ffd7a760762bbf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/texture-coordinates.json": {
+      "hash": "92f8d99702cde01886c890ef98e5c53e5380924dbbb0e39cdc2f8d39c97c7b09",
+      "last_checked": "2025-06-06T08:15:34.552808",
+      "status": "unchanged",
+      "etag": "W/\"0fd3f371d62e52a52cbda063d5e6b263\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/geometric/texture-coordinates": {
+      "hash": "92f8d99702cde01886c890ef98e5c53e5380924dbbb0e39cdc2f8d39c97c7b09",
+      "last_checked": "2025-06-06T08:15:34.552808",
+      "status": "unchanged",
+      "etag": "534d10bf70e605375bc634b33f20e512"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/geometry-color.json": {
+      "hash": "4faee4d6fcaba6918d2117f0bacd9b844333a0cba26fe7e5aabec56f760b0692",
+      "last_checked": "2025-06-06T08:15:34.991812",
+      "status": "unchanged",
+      "etag": "W/\"a7d16fe3f0e1b7f53e769d7463e70e58\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/geometric/geometry-color": {
+      "hash": "4faee4d6fcaba6918d2117f0bacd9b844333a0cba26fe7e5aabec56f760b0692",
+      "last_checked": "2025-06-06T08:15:34.991812",
+      "status": "unchanged",
+      "etag": "5acc833d30e3b5d5242ecd9629193978"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/reflect-(realitykit).json": {
+      "hash": "d89bc2c1b15d71648e189dd6914227af3b02237e8d462915aefd0e217a232846",
+      "last_checked": "2025-06-06T08:15:35.829109",
+      "status": "unchanged",
+      "etag": "W/\"41e7418b798ce5f7004491b5c87d5a19\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/geometric/reflect-(realitykit)": {
+      "hash": "d89bc2c1b15d71648e189dd6914227af3b02237e8d462915aefd0e217a232846",
+      "last_checked": "2025-06-06T08:15:35.829109",
+      "status": "unchanged",
+      "etag": "600dd978e7a5927adbf1a1c1e8b6fc76"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/if-greater.json": {
+      "hash": "207f76939316c8f58f3bc0617f1ee4b2cdc850fdb97daa1629e7bfdd3b7ff72e",
+      "last_checked": "2025-06-06T08:15:36.659725",
+      "status": "unchanged",
+      "etag": "W/\"64c2679f2a3547804df1aeb250383b12\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/logic/if-greater": {
+      "hash": "207f76939316c8f58f3bc0617f1ee4b2cdc850fdb97daa1629e7bfdd3b7ff72e",
+      "last_checked": "2025-06-06T08:15:36.659725",
+      "status": "unchanged",
+      "etag": "ddccd4bc595d974cdb3d93ccc94fe08f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/if-greater-or-equal.json": {
+      "hash": "0414a1f757204cba8af4c02990ad14356b5b1f6cf555998c437a300bf84a6c63",
+      "last_checked": "2025-06-06T08:15:37.070488",
+      "status": "unchanged",
+      "etag": "W/\"371b2bd260d0a9843b84dbdf9cf711e3\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/logic/if-greater-or-equal": {
+      "hash": "0414a1f757204cba8af4c02990ad14356b5b1f6cf555998c437a300bf84a6c63",
+      "last_checked": "2025-06-06T08:15:37.070488",
+      "status": "unchanged",
+      "etag": "52cdb98fa197530557cc316bcb8d04ad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/if-equal.json": {
+      "hash": "54991d8995c0af4d2f5fc66ccfabd1ee61f1b0e4d0ab319f94b83aa282640c5a",
+      "last_checked": "2025-06-06T08:15:37.525698",
+      "status": "unchanged",
+      "etag": "W/\"5fafacccaa41cc3eff5e6ebc9a917cd8\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/logic/if-equal": {
+      "hash": "54991d8995c0af4d2f5fc66ccfabd1ee61f1b0e4d0ab319f94b83aa282640c5a",
+      "last_checked": "2025-06-06T08:15:37.525698",
+      "status": "unchanged",
+      "etag": "61fa038959819f6addff9d5268fb095d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/switch.json": {
+      "hash": "cd4b7fe7783f53011395e485f5bc041b4facdcd19bf404f5982c3c1807a8a29a",
+      "last_checked": "2025-06-06T08:15:37.948232",
+      "status": "unchanged",
+      "etag": "W/\"35f5222483540291d25b3bd4aa04922a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/logic/switch": {
+      "hash": "cd4b7fe7783f53011395e485f5bc041b4facdcd19bf404f5982c3c1807a8a29a",
+      "last_checked": "2025-06-06T08:15:37.948232",
+      "status": "unchanged",
+      "etag": "dad39312bf328b7a1bf32e69a8ec4efd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/and-(realitykit).json": {
+      "hash": "a22ff972cd3d106ea2a0b85966164eda774079664da781e34b6905f3e8db652b",
+      "last_checked": "2025-06-06T08:15:38.332068",
+      "status": "unchanged",
+      "etag": "W/\"dac539fd0d74ee36cff702de2c8d3f3f\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/logic/and-(realitykit)": {
+      "hash": "a22ff972cd3d106ea2a0b85966164eda774079664da781e34b6905f3e8db652b",
+      "last_checked": "2025-06-06T08:15:38.332068",
+      "status": "unchanged",
+      "etag": "87917a99306dd5943c519c3773715406"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/or-(realitykit).json": {
+      "hash": "cf99f3b37a830365c2bf4038e4a73ef05a5fc82a447c810e327d49437623d757",
+      "last_checked": "2025-06-06T08:15:38.772085",
+      "status": "unchanged",
+      "etag": "W/\"4561a5d8e164ca92355fb5d295d4de66\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/logic/or-(realitykit)": {
+      "hash": "cf99f3b37a830365c2bf4038e4a73ef05a5fc82a447c810e327d49437623d757",
+      "last_checked": "2025-06-06T08:15:38.772085",
+      "status": "unchanged",
+      "etag": "a5978de870a0210b6631c1b2dc9f0804"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/xor-(realitykit).json": {
+      "hash": "cd7029e771d76333924a20909f329b1e3beec6440394ba9d9586ed7dc068f231",
+      "last_checked": "2025-06-06T08:15:39.188623",
+      "status": "unchanged",
+      "etag": "W/\"2bb55944f981c7ddcd294108c4eb18b1\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/logic/xor-(realitykit)": {
+      "hash": "cd7029e771d76333924a20909f329b1e3beec6440394ba9d9586ed7dc068f231",
+      "last_checked": "2025-06-06T08:15:39.188623",
+      "status": "unchanged",
+      "etag": "eab5b1accf99cc1e7e1e227a79f3d436"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/logic/not-(realitykit).json": {
+      "hash": "15eac8b9cea23494f2ce817bccfed0acd285810bb3ae787587cfd124fa7870c4",
+      "last_checked": "2025-06-06T08:15:39.604301",
+      "status": "unchanged",
+      "etag": "W/\"5cd29b28bdbe6b417283a2e3ac602a1a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/logic/not-(realitykit)": {
+      "hash": "15eac8b9cea23494f2ce817bccfed0acd285810bb3ae787587cfd124fa7870c4",
+      "last_checked": "2025-06-06T08:15:39.604301",
+      "status": "unchanged",
+      "etag": "e65ec150e4b1ea24650b5161cbe8d185"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/add.json": {
+      "hash": "a79e35f8aa80c4eb966566aec4989b433154c9c6644491bdd880d3d4274469cc",
+      "last_checked": "2025-06-06T08:15:40.428987",
+      "status": "unchanged",
+      "etag": "W/\"8d2b423b6c0a4fadef18f35be4925412\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/add": {
+      "hash": "a79e35f8aa80c4eb966566aec4989b433154c9c6644491bdd880d3d4274469cc",
+      "last_checked": "2025-06-06T08:15:40.428987",
+      "status": "unchanged",
+      "etag": "2db7265238da0753923bd0655e8abd51"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/subtract.json": {
+      "hash": "db9d559723d946114972306837440746513afb0b4eae12a293314b40b816f68e",
+      "last_checked": "2025-06-06T08:15:40.819069",
+      "status": "unchanged",
+      "etag": "W/\"1afa556546b79941a197c019a7ff3429\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/subtract": {
+      "hash": "db9d559723d946114972306837440746513afb0b4eae12a293314b40b816f68e",
+      "last_checked": "2025-06-06T08:15:40.819069",
+      "status": "unchanged",
+      "etag": "9d74674f52c47bbbd8ca9dea14be6195"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/multiply.json": {
+      "hash": "1036835a1e4f33d3d0c6374a5d8ef58a377df65730755f484c0c683dad808708",
+      "last_checked": "2025-06-06T08:15:41.252452",
+      "status": "unchanged",
+      "etag": "W/\"07d38a20d927867a77a9c0916649470b\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/multiply": {
+      "hash": "1036835a1e4f33d3d0c6374a5d8ef58a377df65730755f484c0c683dad808708",
+      "last_checked": "2025-06-06T08:15:41.252452",
+      "status": "unchanged",
+      "etag": "8d5633e34f8a2544ea036dfcb9fc9035"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/divide.json": {
+      "hash": "89d7725a6e9f069b99987a30da7af8bf15f5e81a8c571ccfe32a228301f0c0ee",
+      "last_checked": "2025-06-06T08:15:41.646435",
+      "status": "unchanged",
+      "etag": "W/\"29139012fb543e7ed909942e09753aed\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/divide": {
+      "hash": "89d7725a6e9f069b99987a30da7af8bf15f5e81a8c571ccfe32a228301f0c0ee",
+      "last_checked": "2025-06-06T08:15:41.646435",
+      "status": "unchanged",
+      "etag": "93b89af4698ead73d31bc0ff794ec71a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/modulo.json": {
+      "hash": "1583994bb17dd6142d682f7f1118d0f934830a6d67c935ce9fa06a94006b2ddf",
+      "last_checked": "2025-06-06T08:15:42.087199",
+      "status": "unchanged",
+      "etag": "W/\"a91fb9cf093f5bd14eb5ba14a05e8083\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/modulo": {
+      "hash": "1583994bb17dd6142d682f7f1118d0f934830a6d67c935ce9fa06a94006b2ddf",
+      "last_checked": "2025-06-06T08:15:42.087199",
+      "status": "unchanged",
+      "etag": "b1cb58395eeed0ffd459018ea071778d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/abs.json": {
+      "hash": "3a5be3fdfb76cc9da30e5aa88c092e92f6b12a1422de93f612513ffb9fbb6c3b",
+      "last_checked": "2025-06-06T08:15:42.545906",
+      "status": "unchanged",
+      "etag": "W/\"b505a79139d43d9686483f7739bcda0d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/abs": {
+      "hash": "3a5be3fdfb76cc9da30e5aa88c092e92f6b12a1422de93f612513ffb9fbb6c3b",
+      "last_checked": "2025-06-06T08:15:42.545906",
+      "status": "unchanged",
+      "etag": "bd501f70adad6d19961bd05a5b91f019"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/floor.json": {
+      "hash": "78e23ad3c0aaf97568a060b42da4b6242311002beb81505ea890b3806f137be4",
+      "last_checked": "2025-06-06T08:15:42.970092",
+      "status": "unchanged",
+      "etag": "W/\"22be0095e75e74f50ca809f3b52be67f\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/floor": {
+      "hash": "78e23ad3c0aaf97568a060b42da4b6242311002beb81505ea890b3806f137be4",
+      "last_checked": "2025-06-06T08:15:42.970092",
+      "status": "unchanged",
+      "etag": "1a1463ce2f3bd1dacedca5988161a872"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/ceiling.json": {
+      "hash": "25b09853ed9600521ee2918c73d8fd71731dadfe94eb59a51a76b0a8d0dc0f49",
+      "last_checked": "2025-06-06T08:15:43.380602",
+      "status": "unchanged",
+      "etag": "W/\"670d1cd310d20702837a3138e4793ba2\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/ceiling": {
+      "hash": "25b09853ed9600521ee2918c73d8fd71731dadfe94eb59a51a76b0a8d0dc0f49",
+      "last_checked": "2025-06-06T08:15:43.380602",
+      "status": "unchanged",
+      "etag": "a0309471b68056ec6b8fdf718af38fd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/power.json": {
+      "hash": "9f1ccd3a1b16a826be28c7489581736c668fbb56ba440b308dd7b9a6d10df17d",
+      "last_checked": "2025-06-06T08:15:43.794432",
+      "status": "unchanged",
+      "etag": "W/\"cdedb40023bb8ea5ded9f8dbbabe0f98\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/power": {
+      "hash": "9f1ccd3a1b16a826be28c7489581736c668fbb56ba440b308dd7b9a6d10df17d",
+      "last_checked": "2025-06-06T08:15:43.794432",
+      "status": "unchanged",
+      "etag": "ad4750ad3108bef7fcc7fc52ecdb85f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/sin.json": {
+      "hash": "3b617696e86bf36525445969091f4d5493184ef0ad35dbb4d920d518d89b51a4",
+      "last_checked": "2025-06-06T08:15:44.214636",
+      "status": "unchanged",
+      "etag": "W/\"0fdfcf9d3ae8afd7f71ecece5058350d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/sin": {
+      "hash": "3b617696e86bf36525445969091f4d5493184ef0ad35dbb4d920d518d89b51a4",
+      "last_checked": "2025-06-06T08:15:44.214636",
+      "status": "unchanged",
+      "etag": "2e523256d0acd9a905427cf1056e9606"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/cos.json": {
+      "hash": "4e36675ab54ebb46ce24904f4740ec3d442feaebfdc7b3342c2a722f8b99c6ed",
+      "last_checked": "2025-06-06T08:15:44.619031",
+      "status": "unchanged",
+      "etag": "W/\"49b7784fda96c420c3651ca042a131b7\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/cos": {
+      "hash": "4e36675ab54ebb46ce24904f4740ec3d442feaebfdc7b3342c2a722f8b99c6ed",
+      "last_checked": "2025-06-06T08:15:44.619031",
+      "status": "unchanged",
+      "etag": "4c4c7d48311e23e70604b43b519f2e61"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/tan.json": {
+      "hash": "9cb52a17c86c1cab02251553558d8a6b8b98d658129395ec46a064a2fd05a228",
+      "last_checked": "2025-06-06T08:15:45.074726",
+      "status": "unchanged",
+      "etag": "W/\"e9375b519241ea8668f27f912fd206a1\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/tan": {
+      "hash": "9cb52a17c86c1cab02251553558d8a6b8b98d658129395ec46a064a2fd05a228",
+      "last_checked": "2025-06-06T08:15:45.074726",
+      "status": "unchanged",
+      "etag": "ff81c662cae4aef55e1d47536cc1ec23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/asin.json": {
+      "hash": "e79dc390b6328a753f9c49447f9cad2399694a336797c1e8f48a37543c84c821",
+      "last_checked": "2025-06-06T08:15:45.519334",
+      "status": "unchanged",
+      "etag": "W/\"35fcf9620c027b9682c35083887cfccf\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/asin": {
+      "hash": "e79dc390b6328a753f9c49447f9cad2399694a336797c1e8f48a37543c84c821",
+      "last_checked": "2025-06-06T08:15:45.519334",
+      "status": "unchanged",
+      "etag": "b88402e58d8be3c39c2dec5535b9a232"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/acos.json": {
+      "hash": "56ad63c306afffedcf5aabf3a514f71a9df742935f6385997f2792ac1b2dbf0d",
+      "last_checked": "2025-06-06T08:15:45.924346",
+      "status": "unchanged",
+      "etag": "W/\"dbb27aee6121a70d5e557e984baec5f7\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/acos": {
+      "hash": "56ad63c306afffedcf5aabf3a514f71a9df742935f6385997f2792ac1b2dbf0d",
+      "last_checked": "2025-06-06T08:15:45.924346",
+      "status": "unchanged",
+      "etag": "a0e859ececbec64333eac553bda85e1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/square-root.json": {
+      "hash": "0870acf4cd8d8b740ea7fc7a774a5800d34414c1892bc0b4338872b6b01e33c6",
+      "last_checked": "2025-06-06T08:15:46.863874",
+      "status": "unchanged",
+      "etag": "W/\"077d0ee4c9b2ac92e61adfc8a6194324\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/square-root": {
+      "hash": "0870acf4cd8d8b740ea7fc7a774a5800d34414c1892bc0b4338872b6b01e33c6",
+      "last_checked": "2025-06-06T08:15:46.863874",
+      "status": "unchanged",
+      "etag": "01d53eadff4e9314552738ad61a330b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/natural-log.json": {
+      "hash": "d21d26e9f9f04a0ad7d2042a7ae2de796b3e801d45601efc9c7e4cfebdc8b790",
+      "last_checked": "2025-06-06T08:15:47.337612",
+      "status": "unchanged",
+      "etag": "W/\"210b058200fb5d6a7f1b4e39e1a41e41\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/natural-log": {
+      "hash": "d21d26e9f9f04a0ad7d2042a7ae2de796b3e801d45601efc9c7e4cfebdc8b790",
+      "last_checked": "2025-06-06T08:15:47.337612",
+      "status": "unchanged",
+      "etag": "67dfb899e7a6fee898cee0e533027ac7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/exp.json": {
+      "hash": "7c9e42c0c2ebeb901ea83318a59b3b0ef8034e55e06090e0b37d9311ca9b29f2",
+      "last_checked": "2025-06-06T08:15:47.807590",
+      "status": "unchanged",
+      "etag": "W/\"a251102a551f0177d21954c17c10ae12\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/exp": {
+      "hash": "7c9e42c0c2ebeb901ea83318a59b3b0ef8034e55e06090e0b37d9311ca9b29f2",
+      "last_checked": "2025-06-06T08:15:47.807590",
+      "status": "unchanged",
+      "etag": "06e178349ffdfee8703a2fee72f6a827"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/sign.json": {
+      "hash": "6d60a7a3d5967812338286d6a86a5f7d3b4e1c31fab29d4864b5a477485d36d3",
+      "last_checked": "2025-06-06T08:15:48.233057",
+      "status": "unchanged",
+      "etag": "W/\"1034848eaa1c903193c04a82a4f0ac9c\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/sign": {
+      "hash": "6d60a7a3d5967812338286d6a86a5f7d3b4e1c31fab29d4864b5a477485d36d3",
+      "last_checked": "2025-06-06T08:15:48.233057",
+      "status": "unchanged",
+      "etag": "702ffc076d6918d22c0fff4a1f79f253"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/clamp.json": {
+      "hash": "f681a420fbfbbbb62bef750a0708873cb420b263e137b12b4b7b490c40845be1",
+      "last_checked": "2025-06-06T08:15:48.675464",
+      "status": "unchanged",
+      "etag": "W/\"80b92a7eb936d4b7ddd73c6436dfdc6f\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/clamp": {
+      "hash": "f681a420fbfbbbb62bef750a0708873cb420b263e137b12b4b7b490c40845be1",
+      "last_checked": "2025-06-06T08:15:48.675464",
+      "status": "unchanged",
+      "etag": "8c52273415708dfee83306b07c0513a7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/min.json": {
+      "hash": "a005a9afdf87910823666e7702fa9f663c3974b2afb05f1805015752f5179bba",
+      "last_checked": "2025-06-06T08:15:49.107156",
+      "status": "unchanged",
+      "etag": "W/\"1237f07a7436d75ee70cd9875fece3dc\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/min": {
+      "hash": "a005a9afdf87910823666e7702fa9f663c3974b2afb05f1805015752f5179bba",
+      "last_checked": "2025-06-06T08:15:49.107156",
+      "status": "unchanged",
+      "etag": "7da4e8b94bbb46ce65a20a05a3cecbe1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/max.json": {
+      "hash": "13c02ab9021b8bb26180f3f5f405bd730ed6e7459b9e53059e23a95a6cf0ecd0",
+      "last_checked": "2025-06-06T08:15:49.591507",
+      "status": "unchanged",
+      "etag": "W/\"b43047377a06a65e29c3de47d456c1a2\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/max": {
+      "hash": "13c02ab9021b8bb26180f3f5f405bd730ed6e7459b9e53059e23a95a6cf0ecd0",
+      "last_checked": "2025-06-06T08:15:49.591507",
+      "status": "unchanged",
+      "etag": "b0f6de28ab9bfa116948fb2eaed3a6dd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/normalize.json": {
+      "hash": "fa704cb9d9cd09edf75696f4db6363ffa9710c60e684e7537c556dda1aeb6cb3",
+      "last_checked": "2025-06-06T08:15:50.019704",
+      "status": "unchanged",
+      "etag": "W/\"9eef684952d4d914e4445cdb8602fbee\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/normalize": {
+      "hash": "fa704cb9d9cd09edf75696f4db6363ffa9710c60e684e7537c556dda1aeb6cb3",
+      "last_checked": "2025-06-06T08:15:50.019704",
+      "status": "unchanged",
+      "etag": "0811304d935368ef74d8d931f855cdec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/magnitude.json": {
+      "hash": "f4aefc8ea0e62e06fa7c51652e5378cdf8651e5d2fdc26d235c002df3077236c",
+      "last_checked": "2025-06-06T08:15:50.417556",
+      "status": "unchanged",
+      "etag": "W/\"2a60d1e929faec578836a9ed09f96041\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/magnitude": {
+      "hash": "f4aefc8ea0e62e06fa7c51652e5378cdf8651e5d2fdc26d235c002df3077236c",
+      "last_checked": "2025-06-06T08:15:50.417556",
+      "status": "unchanged",
+      "etag": "7f0d1862dad6b159bf42711d44998cf2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/dot-product.json": {
+      "hash": "2295f8b1c4ad08bd2d308110b6a34b06d65512b3a1fb38ec91f332b6592ba396",
+      "last_checked": "2025-06-06T08:15:50.800854",
+      "status": "unchanged",
+      "etag": "W/\"4fa3b23b427c16eda347f9fd08d1fd13\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/dot-product": {
+      "hash": "2295f8b1c4ad08bd2d308110b6a34b06d65512b3a1fb38ec91f332b6592ba396",
+      "last_checked": "2025-06-06T08:15:50.800854",
+      "status": "unchanged",
+      "etag": "f8a70149c632f52a90308d19acabd91a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/cross-product.json": {
+      "hash": "79894a92be5e14cfaece1af88b541cc9028a72fab2283a428d42fe44d24d60e4",
+      "last_checked": "2025-06-06T08:15:51.209138",
+      "status": "unchanged",
+      "etag": "W/\"36360b9596fd7297dc6675fe98f48ac5\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/cross-product": {
+      "hash": "79894a92be5e14cfaece1af88b541cc9028a72fab2283a428d42fe44d24d60e4",
+      "last_checked": "2025-06-06T08:15:51.209138",
+      "status": "unchanged",
+      "etag": "c789cc8ca7e715205700566ac036ea99"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/transform-point.json": {
+      "hash": "b6bdb0a49e8e3fdfccabaa2dd116f51d9ca2017f3d143819ba8c8fecf230b673",
+      "last_checked": "2025-06-06T08:15:51.625211",
+      "status": "unchanged",
+      "etag": "W/\"901dd029d1a712cbfe85b41f271606dd\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/transform-point": {
+      "hash": "b6bdb0a49e8e3fdfccabaa2dd116f51d9ca2017f3d143819ba8c8fecf230b673",
+      "last_checked": "2025-06-06T08:15:51.625211",
+      "status": "unchanged",
+      "etag": "1e84cf97c5b9da605178e47ed3044cef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/transform-vector.json": {
+      "hash": "bf7240530f16b2d5251f1d21b7e949873f252dec72b67c0a01be59ac7d17f2b6",
+      "last_checked": "2025-06-06T08:15:52.017933",
+      "status": "unchanged",
+      "etag": "W/\"682e1da11cfe9e6f640c0e4d81e51097\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/transform-vector": {
+      "hash": "bf7240530f16b2d5251f1d21b7e949873f252dec72b67c0a01be59ac7d17f2b6",
+      "last_checked": "2025-06-06T08:15:52.017933",
+      "status": "unchanged",
+      "etag": "54616a8d890440da7c6b0bcec4bf0bf9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/transform-normal.json": {
+      "hash": "f2dd1289ddced4549159e4c9eee7c3ac6923ce42a6e00adc62867c89d0f08333",
+      "last_checked": "2025-06-06T08:15:52.498323",
+      "status": "unchanged",
+      "etag": "W/\"45a7e46c53fe8d223384ccdc88f2c88e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/transform-normal": {
+      "hash": "f2dd1289ddced4549159e4c9eee7c3ac6923ce42a6e00adc62867c89d0f08333",
+      "last_checked": "2025-06-06T08:15:52.498323",
+      "status": "unchanged",
+      "etag": "b71a114db1f0381e25876cddcb420de7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/transform-matrix.json": {
+      "hash": "eab313d1baef2e6c8f74672d40e46371ef4642e41f3a080334008976549e4f33",
+      "last_checked": "2025-06-06T08:15:52.940862",
+      "status": "unchanged",
+      "etag": "W/\"1c6b6809afdf3788b9a3e9e2293ecad8\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/transform-matrix": {
+      "hash": "eab313d1baef2e6c8f74672d40e46371ef4642e41f3a080334008976549e4f33",
+      "last_checked": "2025-06-06T08:15:52.940862",
+      "status": "unchanged",
+      "etag": "9ea7dcf5063d0be6e87ad5d1e48e4ca9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/transpose.json": {
+      "hash": "9074a126108f85fda87928c22973915e2cf98a7281d8a7aa7b0505aad250b5f3",
+      "last_checked": "2025-06-06T08:15:53.346508",
+      "status": "unchanged",
+      "etag": "W/\"2afdec511139804f0413ce4362c788c9\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/transpose": {
+      "hash": "9074a126108f85fda87928c22973915e2cf98a7281d8a7aa7b0505aad250b5f3",
+      "last_checked": "2025-06-06T08:15:53.346508",
+      "status": "unchanged",
+      "etag": "44c40e498870e9d7f660ed8fa55ae70c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/determinant.json": {
+      "hash": "999850ce8040454e8ef0f28d48cbf763a76d487915116a8e53fc0cf04c055a47",
+      "last_checked": "2025-06-06T08:15:53.739524",
+      "status": "unchanged",
+      "etag": "W/\"4de41849fc3831a1073bc286453ff4cf\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/determinant": {
+      "hash": "999850ce8040454e8ef0f28d48cbf763a76d487915116a8e53fc0cf04c055a47",
+      "last_checked": "2025-06-06T08:15:53.739524",
+      "status": "unchanged",
+      "etag": "d4af52432f1d1b146396b4cf6e1018d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/invert-matrix.json": {
+      "hash": "de25ec25918f984440c92e6335748e4e27c5e7637b2a78fad4fd03c434cdd2b5",
+      "last_checked": "2025-06-06T08:15:54.148237",
+      "status": "unchanged",
+      "etag": "W/\"9f7b7c11f4aba551a599031eef79f2cb\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/invert-matrix": {
+      "hash": "de25ec25918f984440c92e6335748e4e27c5e7637b2a78fad4fd03c434cdd2b5",
+      "last_checked": "2025-06-06T08:15:54.148237",
+      "status": "unchanged",
+      "etag": "1fe32e50613cca405ee60bb8a1698a34"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/rotate-2d.json": {
+      "hash": "d9536340bc202d8d99db770b8ae9a236d5f7b1acef0017c8e697b704f10d2069",
+      "last_checked": "2025-06-06T08:15:54.588356",
+      "status": "unchanged",
+      "etag": "W/\"afd3149d6771ae6230cc59cddb459425\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/rotate-2d": {
+      "hash": "d9536340bc202d8d99db770b8ae9a236d5f7b1acef0017c8e697b704f10d2069",
+      "last_checked": "2025-06-06T08:15:54.588356",
+      "status": "unchanged",
+      "etag": "74aaf6cbe8a9a904bbedfcdaac98f233"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/rotate-3d.json": {
+      "hash": "76114aaee124091c08bbc6a9283c99af07f99a50d8f20fe82d636ee8799a8485",
+      "last_checked": "2025-06-06T08:15:54.989433",
+      "status": "unchanged",
+      "etag": "W/\"6de781fc1585877fb6bbcfa3c813db3d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/rotate-3d": {
+      "hash": "76114aaee124091c08bbc6a9283c99af07f99a50d8f20fe82d636ee8799a8485",
+      "last_checked": "2025-06-06T08:15:54.989433",
+      "status": "unchanged",
+      "etag": "a6891aeffe6a1728a0c4ddd9bb098caa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/place-2d.json": {
+      "hash": "78c2f622509af5ade7b2127d15a8a1502d270b455eed24cb011c18ebdbeb19bd",
+      "last_checked": "2025-06-06T08:15:55.362731",
+      "status": "unchanged",
+      "etag": "W/\"9578c8909d86f6146cc642e7702109c3\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/place-2d": {
+      "hash": "78c2f622509af5ade7b2127d15a8a1502d270b455eed24cb011c18ebdbeb19bd",
+      "last_checked": "2025-06-06T08:15:55.362731",
+      "status": "unchanged",
+      "etag": "946e41babcf9e26f025932742dcb27f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/round.json": {
+      "hash": "e5f5c4ead09b323d109bb5e6e638c6e063d015ecd3fdc8a16980cd3b2ce88335",
+      "last_checked": "2025-06-06T08:15:55.684965",
+      "status": "unchanged",
+      "etag": "W/\"ff1582e1912233087181f310a9b2b4ea\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/round": {
+      "hash": "e5f5c4ead09b323d109bb5e6e638c6e063d015ecd3fdc8a16980cd3b2ce88335",
+      "last_checked": "2025-06-06T08:15:55.684965",
+      "status": "unchanged",
+      "etag": "3d064624f2c39787517b5577a99f75b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/safe-power.json": {
+      "hash": "0ff63155cc12dc3dac2f37a850ac48942483980c7163c0073d01e93d5ee7c749",
+      "last_checked": "2025-06-06T08:15:56.048519",
+      "status": "unchanged",
+      "etag": "W/\"29158ee48e20a06295f236862a3a6562\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/safe-power": {
+      "hash": "0ff63155cc12dc3dac2f37a850ac48942483980c7163c0073d01e93d5ee7c749",
+      "last_checked": "2025-06-06T08:15:56.048519",
+      "status": "unchanged",
+      "etag": "b6c5fbd935993b92129110e009e03ce1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/normal-map.json": {
+      "hash": "be5c07f5f83fbfb8353035ebfef6e4f950655ea873cf8fc58bc75400706da4d1",
+      "last_checked": "2025-06-06T08:15:56.402032",
+      "status": "unchanged",
+      "etag": "W/\"061ea27d38c93f96d2d35504f012ae83\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/normal-map": {
+      "hash": "be5c07f5f83fbfb8353035ebfef6e4f950655ea873cf8fc58bc75400706da4d1",
+      "last_checked": "2025-06-06T08:15:56.402032",
+      "status": "unchanged",
+      "etag": "10dbd0eb4dc8298fa8876c282b0aeb79"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/fractional-(realitykit).json": {
+      "hash": "53422dc49b4c7997b3c73e0752dacf215d03f95449398a596ed147cef6057858",
+      "last_checked": "2025-06-06T08:15:56.839457",
+      "status": "unchanged",
+      "etag": "W/\"97612bc8510c78d26a55f9b98826e140\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/fractional-(realitykit)": {
+      "hash": "53422dc49b4c7997b3c73e0752dacf215d03f95449398a596ed147cef6057858",
+      "last_checked": "2025-06-06T08:15:56.839457",
+      "status": "unchanged",
+      "etag": "3261b5499f63ac747757d2579f5faec6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/one-minus-(realitykit).json": {
+      "hash": "cf159c5588b40655cec2a9f17df5c144984473e3155ab4a592b84257d94da898",
+      "last_checked": "2025-06-06T08:15:57.219590",
+      "status": "unchanged",
+      "etag": "W/\"7a195f78e5b186244d7ff3f7a13f8e01\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/one-minus-(realitykit)": {
+      "hash": "cf159c5588b40655cec2a9f17df5c144984473e3155ab4a592b84257d94da898",
+      "last_checked": "2025-06-06T08:15:57.219590",
+      "status": "unchanged",
+      "etag": "8dd6736ea58aeb74b35f37512b8c1095"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/normal-map-decode.json": {
+      "hash": "2eae191f672d64787ebcbb084b50295cded3ea7512cac1e702dafca840c0d094",
+      "last_checked": "2025-06-06T08:15:57.586274",
+      "status": "unchanged",
+      "etag": "W/\"09ef93940f2ebb40fc30b5cc1225ced8\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/normal-map-decode": {
+      "hash": "2eae191f672d64787ebcbb084b50295cded3ea7512cac1e702dafca840c0d094",
+      "last_checked": "2025-06-06T08:15:57.586274",
+      "status": "unchanged",
+      "etag": "5403237ab71805af74e1a84550a42a76"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/organization/dot.json": {
+      "hash": "bdff65cc7e620483bed69c867fd9cf50d8f74911ed362800f73e694186a607fe",
+      "last_checked": "2025-06-06T08:15:57.942181",
+      "status": "unchanged",
+      "etag": "W/\"4795f5679f3bc6c0a2a62a98a274072e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/organization/dot": {
+      "hash": "bdff65cc7e620483bed69c867fd9cf50d8f74911ed362800f73e694186a607fe",
+      "last_checked": "2025-06-06T08:15:57.942181",
+      "status": "unchanged",
+      "etag": "20fb6398664b6092f4db28ece4fa766a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/float.json": {
+      "hash": "e573e44ca07065b5c2f861b6b6bdeecd0064f3aeae235e9334994433bd722170",
+      "last_checked": "2025-06-06T08:15:58.293654",
+      "status": "unchanged",
+      "etag": "W/\"c823463425cb9729d6c7fe30ae0fa2b1\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/float": {
+      "hash": "e573e44ca07065b5c2f861b6b6bdeecd0064f3aeae235e9334994433bd722170",
+      "last_checked": "2025-06-06T08:15:58.293654",
+      "status": "unchanged",
+      "etag": "02cbc35e6f207d04d27e9a2ac466ce39"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/color3-(float).json": {
+      "hash": "30838a821a9570ecb500c387d7e8ebe3c5d85b7c1446ffc352580681a63636d1",
+      "last_checked": "2025-06-06T08:15:58.661244",
+      "status": "unchanged",
+      "etag": "W/\"25f71cea37c0a7fcf254e8bcb1c37aca\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/color3-(float)": {
+      "hash": "30838a821a9570ecb500c387d7e8ebe3c5d85b7c1446ffc352580681a63636d1",
+      "last_checked": "2025-06-06T08:15:58.661244",
+      "status": "unchanged",
+      "etag": "4015f5fc9aa1931ccbb603eb97629256"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/color4-(float).json": {
+      "hash": "cd7f65a7cefb7a98f51c49d3bdef873ca40c401a31c8017962fade90b9c768a0",
+      "last_checked": "2025-06-06T08:15:59.066005",
+      "status": "unchanged",
+      "etag": "W/\"e3cf55aa6d334438a5373f3470467fbd\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/color4-(float)": {
+      "hash": "cd7f65a7cefb7a98f51c49d3bdef873ca40c401a31c8017962fade90b9c768a0",
+      "last_checked": "2025-06-06T08:15:59.066005",
+      "status": "unchanged",
+      "etag": "6bec279ec02f3c45a06c1eda83e58b93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector2-(float).json": {
+      "hash": "0732b06f80223104f1374be6443f5d9b4a8124d6f803c8f35d641b0a37dd6e66",
+      "last_checked": "2025-06-06T08:15:59.451826",
+      "status": "unchanged",
+      "etag": "W/\"ade47c7c5a3413e93ce65a5e258cea7d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/vector2-(float)": {
+      "hash": "0732b06f80223104f1374be6443f5d9b4a8124d6f803c8f35d641b0a37dd6e66",
+      "last_checked": "2025-06-06T08:15:59.451826",
+      "status": "unchanged",
+      "etag": "a10c05d353959ba4b8f297c0490f416f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector3-(float).json": {
+      "hash": "408843186ba4295ec117494a13101f63dd22ccfece135f792f0cd0e1d74cb0a0",
+      "last_checked": "2025-06-06T08:15:59.862769",
+      "status": "unchanged",
+      "etag": "W/\"c48c25e2f179065fad3fcde183fa34b0\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/vector3-(float)": {
+      "hash": "408843186ba4295ec117494a13101f63dd22ccfece135f792f0cd0e1d74cb0a0",
+      "last_checked": "2025-06-06T08:15:59.862769",
+      "status": "unchanged",
+      "etag": "1191d89cbf4a943582efe77316088a85"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector4-(float).json": {
+      "hash": "5510f0b27c4884a2ee9d8e1d738b1aa67fb335c28a2725196d1956c0eee1213b",
+      "last_checked": "2025-06-06T08:16:00.224375",
+      "status": "unchanged",
+      "etag": "W/\"f32283d1d3da7aa209ae5a4ad056076b\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/vector4-(float)": {
+      "hash": "5510f0b27c4884a2ee9d8e1d738b1aa67fb335c28a2725196d1956c0eee1213b",
+      "last_checked": "2025-06-06T08:16:00.224375",
+      "status": "unchanged",
+      "etag": "ed42d5d25820446d5b00afa1bc2c624e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/boolean.json": {
+      "hash": "a0b7c9af825d03ca9a3e3761dccb59510e0d6a136ba816aa3f1e862bb5f3563d",
+      "last_checked": "2025-06-06T08:16:00.623940",
+      "status": "unchanged",
+      "etag": "W/\"f2caf8f3bbf8bd6a4430cd867de2a1cb\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/boolean": {
+      "hash": "a0b7c9af825d03ca9a3e3761dccb59510e0d6a136ba816aa3f1e862bb5f3563d",
+      "last_checked": "2025-06-06T08:16:00.623940",
+      "status": "unchanged",
+      "etag": "17255d4bd8fbb1b8ab665552a8f6b6f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/integer.json": {
+      "hash": "d8bc5fe3dca72ae6a58375ed13edd46f0f8b93ad0637f66a77915ab698b3b9f8",
+      "last_checked": "2025-06-06T08:16:01.013785",
+      "status": "unchanged",
+      "etag": "W/\"72820e6596060666f05b7d6c218ec059\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/integer": {
+      "hash": "d8bc5fe3dca72ae6a58375ed13edd46f0f8b93ad0637f66a77915ab698b3b9f8",
+      "last_checked": "2025-06-06T08:16:01.013785",
+      "status": "unchanged",
+      "etag": "b0d7983f828390725281982382e1525d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/matrix3x3-(float).json": {
+      "hash": "a4e38df5ad8f714d50e466c5cfd657f5eebe136ca0502e01e7897a7cf2f13515",
+      "last_checked": "2025-06-06T08:16:01.346529",
+      "status": "unchanged",
+      "etag": "W/\"fa2d93bf2337cf029751ea57da125d3f\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/matrix3x3-(float)": {
+      "hash": "a4e38df5ad8f714d50e466c5cfd657f5eebe136ca0502e01e7897a7cf2f13515",
+      "last_checked": "2025-06-06T08:16:01.346529",
+      "status": "unchanged",
+      "etag": "21c48c0f25a77f3f2489c3c96bbbceee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/matrix4x4-(float).json": {
+      "hash": "db737d3db568b4adf0284858f4cbbb88cbedbfb38035a4f9feef3bf642c93319",
+      "last_checked": "2025-06-06T08:16:01.772732",
+      "status": "unchanged",
+      "etag": "W/\"f638ed2d803866fc70aadcf075ae6d5c\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/matrix4x4-(float)": {
+      "hash": "db737d3db568b4adf0284858f4cbbb88cbedbfb38035a4f9feef3bf642c93319",
+      "last_checked": "2025-06-06T08:16:01.772732",
+      "status": "unchanged",
+      "etag": "fe30a5381343b0bd3ec4e702c3f46b19"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/string.json": {
+      "hash": "2311ee3d7e6b155598c9a39e441afeea7c562390ab84c24510362818eab423ad",
+      "last_checked": "2025-06-06T08:16:02.127541",
+      "status": "unchanged",
+      "etag": "W/\"0b1eaf4991847aedc417661396475634\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/string": {
+      "hash": "2311ee3d7e6b155598c9a39e441afeea7c562390ab84c24510362818eab423ad",
+      "last_checked": "2025-06-06T08:16:02.127541",
+      "status": "unchanged",
+      "etag": "9182af57dc4662419eac6333b5a0bb52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/image-file.json": {
+      "hash": "c2b46afe110919547af10375c2ca13cfd8a90032a30c5a583d17bd579dcc2875",
+      "last_checked": "2025-06-06T08:16:02.471195",
+      "status": "unchanged",
+      "etag": "W/\"75fe4e08948ff21ebb1fb9f0eb420c55\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/image-file": {
+      "hash": "c2b46afe110919547af10375c2ca13cfd8a90032a30c5a583d17bd579dcc2875",
+      "last_checked": "2025-06-06T08:16:02.471195",
+      "status": "unchanged",
+      "etag": "c2ab80360b82d040bb4c703dc1ee3ffa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/half.json": {
+      "hash": "17d95198f1f9d250847e2a67958f53cd316feff97e62ff4ae3586545b0987242",
+      "last_checked": "2025-06-06T08:16:02.833382",
+      "status": "unchanged",
+      "etag": "W/\"27e207a72e36067f6f334b7f7438500c\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/half": {
+      "hash": "17d95198f1f9d250847e2a67958f53cd316feff97e62ff4ae3586545b0987242",
+      "last_checked": "2025-06-06T08:16:02.833382",
+      "status": "unchanged",
+      "etag": "7d94cb177b2de6672938643b6719861d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector2-(half).json": {
+      "hash": "6d4a7602f31f6a717992176f5326e739c863681445dec82644ab7a707882e1b4",
+      "last_checked": "2025-06-06T08:16:03.256836",
+      "status": "unchanged",
+      "etag": "W/\"6cba3ef2adf58f4a355f69944afa1fe0\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/vector2-(half)": {
+      "hash": "6d4a7602f31f6a717992176f5326e739c863681445dec82644ab7a707882e1b4",
+      "last_checked": "2025-06-06T08:16:03.256836",
+      "status": "unchanged",
+      "etag": "9c44664f29dd2d3c7322fea108031863"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector3-(half).json": {
+      "hash": "725284b94997ae24b5aa406ef31ff2eba61ed1062f3d5f71fa9e3959604e82a1",
+      "last_checked": "2025-06-06T08:16:03.664062",
+      "status": "unchanged",
+      "etag": "W/\"3b7f3204be2c6d80295fc0e8d40d714f\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/vector3-(half)": {
+      "hash": "725284b94997ae24b5aa406ef31ff2eba61ed1062f3d5f71fa9e3959604e82a1",
+      "last_checked": "2025-06-06T08:16:03.664062",
+      "status": "unchanged",
+      "etag": "0d1d4c08a0be5fef904f24240d978def"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/vector4-(half).json": {
+      "hash": "136256a5c23fd30bc1ec35baaa28782664dda0713f4bcc14fa9bae7939ac2524",
+      "last_checked": "2025-06-06T08:16:04.092253",
+      "status": "unchanged",
+      "etag": "W/\"a3a2047dc423d30e706daa59d355c5e1\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/vector4-(half)": {
+      "hash": "136256a5c23fd30bc1ec35baaa28782664dda0713f4bcc14fa9bae7939ac2524",
+      "last_checked": "2025-06-06T08:16:04.092253",
+      "status": "unchanged",
+      "etag": "0993ceb2c2522ca74fe979d91e545048"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/matrix2x2-(float).json": {
+      "hash": "23795d4df5ec64daae805d7134cc01cc54e39aeb35ed03d3ffadf3eec9396279",
+      "last_checked": "2025-06-06T08:16:04.466824",
+      "status": "unchanged",
+      "etag": "W/\"cb09a0c42e09fa683e42defedce7f83a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/matrix2x2-(float)": {
+      "hash": "23795d4df5ec64daae805d7134cc01cc54e39aeb35ed03d3ffadf3eec9396279",
+      "last_checked": "2025-06-06T08:16:04.466824",
+      "status": "unchanged",
+      "etag": "001b6fde509475c412b7b6ab15cf4342"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/integer2.json": {
+      "hash": "6432904ff25597b7535410786e4645245a625d2f227d5a6bd51bab9301d241bf",
+      "last_checked": "2025-06-06T08:16:04.865640",
+      "status": "unchanged",
+      "etag": "W/\"42da816efc3d936cfd5ff18f754232a7\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/integer2": {
+      "hash": "6432904ff25597b7535410786e4645245a625d2f227d5a6bd51bab9301d241bf",
+      "last_checked": "2025-06-06T08:16:04.865640",
+      "status": "unchanged",
+      "etag": "8fb6ffa1cd0a334979681acbf6d60d88"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/integer3.json": {
+      "hash": "5f650181411f068170c51a899faa9eeb2d401fcad7411f4216e2f95afcef1085",
+      "last_checked": "2025-06-06T08:16:05.281843",
+      "status": "unchanged",
+      "etag": "W/\"5db7b6ae4f095c183e17dcc609e58a56\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/integer3": {
+      "hash": "5f650181411f068170c51a899faa9eeb2d401fcad7411f4216e2f95afcef1085",
+      "last_checked": "2025-06-06T08:16:05.281843",
+      "status": "unchanged",
+      "etag": "c371ced252b0b953f0a074edb0ebe507"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/procedural/integer4.json": {
+      "hash": "5dbea161caff773f78a81c283e405fc27efb4490fbcdbaa7af19cc941ef6239d",
+      "last_checked": "2025-06-06T08:16:05.642220",
+      "status": "unchanged",
+      "etag": "W/\"39628920e12760f2979695055c4c3d43\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/procedural/integer4": {
+      "hash": "5dbea161caff773f78a81c283e405fc27efb4490fbcdbaa7af19cc941ef6239d",
+      "last_checked": "2025-06-06T08:16:05.642220",
+      "status": "unchanged",
+      "etag": "7dcf391528db05406cfa34975f57f0aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/unlit-surface-(realitykit).json": {
+      "hash": "b3d5286a729182059b6ce4d4af06298833b04a316a3ad46ceb6db4762a1c9b6c",
+      "last_checked": "2025-06-06T08:16:05.985799",
+      "status": "unchanged",
+      "etag": "W/\"060b5fc77101b59f9a39664d867dc4b1\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/unlit-surface-(realitykit)": {
+      "hash": "b3d5286a729182059b6ce4d4af06298833b04a316a3ad46ceb6db4762a1c9b6c",
+      "last_checked": "2025-06-06T08:16:05.985799",
+      "status": "unchanged",
+      "etag": "83c46f545a916571fa0799e6499abac1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/pbr-surface-(realitykit).json": {
+      "hash": "67797e7b953b6446aabcef36761bc71fd6da3929c16a680dac173c3c5433249e",
+      "last_checked": "2025-06-06T08:16:06.382637",
+      "status": "unchanged",
+      "etag": "W/\"3a7afc3e4a162bb4167a8b60a0aede39\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/pbr-surface-(realitykit)": {
+      "hash": "67797e7b953b6446aabcef36761bc71fd6da3929c16a680dac173c3c5433249e",
+      "last_checked": "2025-06-06T08:16:06.382637",
+      "status": "unchanged",
+      "etag": "8dd20bdc631336ad24c9f30793ad7ce1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/occlusion-surface-(realitykit).json": {
+      "hash": "de5ea2df6df182815867812eb4850b12549531518c8369ec768f41d819b71781",
+      "last_checked": "2025-06-06T08:16:06.724783",
+      "status": "unchanged",
+      "etag": "W/\"e446dff4564ef5d8e3e930fa45da87b4\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/occlusion-surface-(realitykit)": {
+      "hash": "de5ea2df6df182815867812eb4850b12549531518c8369ec768f41d819b71781",
+      "last_checked": "2025-06-06T08:16:06.724783",
+      "status": "unchanged",
+      "etag": "b9b8bb94bb8b8124d28ca508c4d1b8cb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/shadow-receiving-occlusion-surface-(realitykit).json": {
+      "hash": "113b16e83fddbee4e0fae986778045d3719d9922ecf0a0957a4367f8f76f483b",
+      "last_checked": "2025-06-06T08:16:07.131274",
+      "status": "unchanged",
+      "etag": "W/\"b4194f3bcec539d216cd77960a8c9e50\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/shadow-receiving-occlusion-surface-(realitykit)": {
+      "hash": "113b16e83fddbee4e0fae986778045d3719d9922ecf0a0957a4367f8f76f483b",
+      "last_checked": "2025-06-06T08:16:07.131274",
+      "status": "unchanged",
+      "etag": "ce930a3bb4c372ab5ab9d0aaffec0265"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/view-direction-(realitykit).json": {
+      "hash": "78032d4dce9f7bbed4ad7d0007acb3b734250d3c09dac6a97d2981bbb172326a",
+      "last_checked": "2025-06-06T08:16:07.488907",
+      "status": "unchanged",
+      "etag": "W/\"4e6fae0e54fee65cbf3c4d4866788a9a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/view-direction-(realitykit)": {
+      "hash": "78032d4dce9f7bbed4ad7d0007acb3b734250d3c09dac6a97d2981bbb172326a",
+      "last_checked": "2025-06-06T08:16:07.488907",
+      "status": "unchanged",
+      "etag": "61b0a996b695ecb5f3813ae452f611cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/camera-position-(realitykit).json": {
+      "hash": "18e583cdb8e8b137fce8959b2165dcdc30fb20a4332ee068d776c8e6f2bfa92d",
+      "last_checked": "2025-06-06T08:16:07.906425",
+      "status": "unchanged",
+      "etag": "W/\"bb2f94f9ce505bf5cc8362e88e324305\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/camera-position-(realitykit)": {
+      "hash": "18e583cdb8e8b137fce8959b2165dcdc30fb20a4332ee068d776c8e6f2bfa92d",
+      "last_checked": "2025-06-06T08:16:07.906425",
+      "status": "unchanged",
+      "etag": "f119cefd48c3c1e599544e82f1a4ce46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-model-to-world-(realitykit).json": {
+      "hash": "b13fc3b9a3b835afb5163c9f92cff2717a756ba9210a86164c27ce4997af5ed3",
+      "last_checked": "2025-06-06T08:16:08.297252",
+      "status": "unchanged",
+      "etag": "W/\"ad1bbc6978193d192520f68ebc70606a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-model-to-world-(realitykit)": {
+      "hash": "b13fc3b9a3b835afb5163c9f92cff2717a756ba9210a86164c27ce4997af5ed3",
+      "last_checked": "2025-06-06T08:16:08.297252",
+      "status": "unchanged",
+      "etag": "eb24dd0a8e8e8451103c6a5f804d1d55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-world-to-model-(realitykit).json": {
+      "hash": "ae9fac5a6eaa7284c0480dfaaa093e9acbbc5856af50a41be07a78db4fdb33e7",
+      "last_checked": "2025-06-06T08:16:08.684389",
+      "status": "unchanged",
+      "etag": "W/\"c3c7c9e9fadfbaf422eca665db60e9ad\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-world-to-model-(realitykit)": {
+      "hash": "ae9fac5a6eaa7284c0480dfaaa093e9acbbc5856af50a41be07a78db4fdb33e7",
+      "last_checked": "2025-06-06T08:16:08.684389",
+      "status": "unchanged",
+      "etag": "2ccee1a92c0e591307b312c12f366c0f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-normal-to-world-(realitykit).json": {
+      "hash": "ced24ed9f0d44f85fa1623db9bccbe5add556bb418b82a79935d41c8d66e1ec4",
+      "last_checked": "2025-06-06T08:16:09.045154",
+      "status": "unchanged",
+      "etag": "W/\"c1ad41a235e686f474c6b86a70047168\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-normal-to-world-(realitykit)": {
+      "hash": "ced24ed9f0d44f85fa1623db9bccbe5add556bb418b82a79935d41c8d66e1ec4",
+      "last_checked": "2025-06-06T08:16:09.045154",
+      "status": "unchanged",
+      "etag": "c80d7b3964fee8bf8b8276de648803a3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-model-to-view-(realitykit).json": {
+      "hash": "74e9bc27f0953f1ae17c5b39a164b34c4c19610bdfe40f2864356659aa05c5ff",
+      "last_checked": "2025-06-06T08:16:09.460077",
+      "status": "unchanged",
+      "etag": "W/\"d77f1ac370bdab6a73829214a904a142\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-model-to-view-(realitykit)": {
+      "hash": "74e9bc27f0953f1ae17c5b39a164b34c4c19610bdfe40f2864356659aa05c5ff",
+      "last_checked": "2025-06-06T08:16:09.460077",
+      "status": "unchanged",
+      "etag": "ebe2b5601416cca5b1ddf6bc1d9c1da3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-view-to-projection-(realitykit).json": {
+      "hash": "1278871b23c817c0730157ee038480c27caecb0ae8b6c9728781e4d1b5f76b0d",
+      "last_checked": "2025-06-06T08:16:09.868231",
+      "status": "unchanged",
+      "etag": "W/\"ec67472baa9203c1525fe5b99eae1491\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-view-to-projection-(realitykit)": {
+      "hash": "1278871b23c817c0730157ee038480c27caecb0ae8b6c9728781e4d1b5f76b0d",
+      "last_checked": "2025-06-06T08:16:09.868231",
+      "status": "unchanged",
+      "etag": "b97ef3f73ee683ce1b3a91a7e0d5962f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-projection-to-view-(realitykit).json": {
+      "hash": "2a22ea2a41a1c9927eaef1bd63b7f09cb71e2c69fc3d74eba0392649f8e4a48f",
+      "last_checked": "2025-06-06T08:16:10.251421",
+      "status": "unchanged",
+      "etag": "W/\"21d6d4c4f6471d6145c1b21ae37caa9b\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-projection-to-view-(realitykit)": {
+      "hash": "2a22ea2a41a1c9927eaef1bd63b7f09cb71e2c69fc3d74eba0392649f8e4a48f",
+      "last_checked": "2025-06-06T08:16:10.251421",
+      "status": "unchanged",
+      "etag": "94a83d2db428909013c92d93488da596"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-vertex-id-(realitykit).json": {
+      "hash": "e12819e5b0ab1d5b994ab37f94024386aa8cf2f024fc62497896f32372c62756",
+      "last_checked": "2025-06-06T08:16:10.646115",
+      "status": "unchanged",
+      "etag": "W/\"79be5c27016f75b57ad44137ce48f0ef\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-vertex-id-(realitykit)": {
+      "hash": "e12819e5b0ab1d5b994ab37f94024386aa8cf2f024fc62497896f32372c62756",
+      "last_checked": "2025-06-06T08:16:10.646115",
+      "status": "unchanged",
+      "etag": "805ec426c2929cec51f0d30e6d7469b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-model-to-world-(realitykit).json": {
+      "hash": "d88700246367200bc30f3a098684f461081ec4c1bcc593656cbd6859a3efcabd",
+      "last_checked": "2025-06-06T08:16:11.042703",
+      "status": "unchanged",
+      "etag": "W/\"fb158eecafbdec06b8dd7f4389067c39\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/surface-model-to-world-(realitykit)": {
+      "hash": "d88700246367200bc30f3a098684f461081ec4c1bcc593656cbd6859a3efcabd",
+      "last_checked": "2025-06-06T08:16:11.042703",
+      "status": "unchanged",
+      "etag": "ccb85e1eeb67083171687c9cbf83d869"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-model-to-view-(realitykit).json": {
+      "hash": "62811334c95da8a86e3abb6a315dcd92803638d1149bef0df58087557be7c3e4",
+      "last_checked": "2025-06-06T08:16:11.412738",
+      "status": "unchanged",
+      "etag": "W/\"166b09a9eb49d3eb227c32deb9ff09e8\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/surface-model-to-view-(realitykit)": {
+      "hash": "62811334c95da8a86e3abb6a315dcd92803638d1149bef0df58087557be7c3e4",
+      "last_checked": "2025-06-06T08:16:11.412738",
+      "status": "unchanged",
+      "etag": "872c4e972cf0fde73db7e902014471b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-world-to-view-(realitykit).json": {
+      "hash": "48dda3dada3c227915639648e5b2a1e9b52e3f7a6e9fef835d3b4d4840d1b138",
+      "last_checked": "2025-06-06T08:16:11.791290",
+      "status": "unchanged",
+      "etag": "W/\"3586879112de7ab0b269f03c8be0ebd6\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/surface-world-to-view-(realitykit)": {
+      "hash": "48dda3dada3c227915639648e5b2a1e9b52e3f7a6e9fef835d3b4d4840d1b138",
+      "last_checked": "2025-06-06T08:16:11.791290",
+      "status": "unchanged",
+      "etag": "c5283a707fec13e8410c81935728da5e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-view-to-projection-(realitykit).json": {
+      "hash": "abaaa379e48a15fdca050064e3b8cdd386c79f13a22586d8af0e4d5dbac698b9",
+      "last_checked": "2025-06-06T08:16:12.151300",
+      "status": "unchanged",
+      "etag": "W/\"307c592b12d01d5936465571a1e34b6e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/surface-view-to-projection-(realitykit)": {
+      "hash": "abaaa379e48a15fdca050064e3b8cdd386c79f13a22586d8af0e4d5dbac698b9",
+      "last_checked": "2025-06-06T08:16:12.151300",
+      "status": "unchanged",
+      "etag": "4a30d7b3bda8b21c15abd50c036ed4c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-projection-to-view-(realitykit).json": {
+      "hash": "35eccff49aa633fc1d7df45aa8212d0ef280dafe05ed76e233950dd0ae7fe171",
+      "last_checked": "2025-06-06T08:16:12.539597",
+      "status": "unchanged",
+      "etag": "W/\"60da9cb41bd486ded8944307a7ffbcb7\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/surface-projection-to-view-(realitykit)": {
+      "hash": "35eccff49aa633fc1d7df45aa8212d0ef280dafe05ed76e233950dd0ae7fe171",
+      "last_checked": "2025-06-06T08:16:12.539597",
+      "status": "unchanged",
+      "etag": "b519f08425cb11fdcee53a694c46447f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-screen-position-(realitykit).json": {
+      "hash": "c9d39b183368d138f85856c687ed0f02897afce185b2ed415bb1355f02ebe0c3",
+      "last_checked": "2025-06-06T08:16:12.912547",
+      "status": "unchanged",
+      "etag": "W/\"c9c9e54c28c5fd031804873c018dccb7\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/surface-screen-position-(realitykit)": {
+      "hash": "c9d39b183368d138f85856c687ed0f02897afce185b2ed415bb1355f02ebe0c3",
+      "last_checked": "2025-06-06T08:16:12.912547",
+      "status": "unchanged",
+      "etag": "8976ff00479eb961c6c43e24aaaae71e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/surface-view-direction-(realitykit).json": {
+      "hash": "3f5c6b00a5f781ecf5dd3393744f432ff400f67aaccde7baba54c91cf72475c0",
+      "last_checked": "2025-06-06T08:16:13.279468",
+      "status": "unchanged",
+      "etag": "W/\"ef15ce66e0b59fc5ef2ed042a9bf5d86\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/surface-view-direction-(realitykit)": {
+      "hash": "3f5c6b00a5f781ecf5dd3393744f432ff400f67aaccde7baba54c91cf72475c0",
+      "last_checked": "2025-06-06T08:16:13.279468",
+      "status": "unchanged",
+      "etag": "6a14185b89e5451e7f9507a1dcfc1595"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/environment-radiance-(realitykit).json": {
+      "hash": "927686ad59c3fdae13de4cd787fc993400460f8b83d42ab51d2bf8a87ba11545",
+      "last_checked": "2025-06-06T08:16:13.683908",
+      "status": "unchanged",
+      "etag": "W/\"df26247f8dbe4ba76962737128566f71\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/environment-radiance-(realitykit)": {
+      "hash": "927686ad59c3fdae13de4cd787fc993400460f8b83d42ab51d2bf8a87ba11545",
+      "last_checked": "2025-06-06T08:16:13.683908",
+      "status": "unchanged",
+      "etag": "bc5ca97225958dcdeee75b82adf658fc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/hover-state-(realitykit).json": {
+      "hash": "2b6983930e492a090f3ecf35201e6ed440f8a2a6e775aa54fab01541a70246df",
+      "last_checked": "2025-06-06T08:16:14.048694",
+      "status": "unchanged",
+      "etag": "W/\"950b648fe45ca47afe480a6004e34ec9\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/hover-state-(realitykit)": {
+      "hash": "2b6983930e492a090f3ecf35201e6ed440f8a2a6e775aa54fab01541a70246df",
+      "last_checked": "2025-06-06T08:16:14.048694",
+      "status": "unchanged",
+      "etag": "836d35b467c2eafca1ba386f2994b9db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/blurred-background-(realitykit).json": {
+      "hash": "57f4d3754d65216d59c8ba4cdb746140f6336b98784be6ca1434400922a89642",
+      "last_checked": "2025-06-06T08:16:14.495022",
+      "status": "unchanged",
+      "etag": "W/\"8c7c23e1e48761f8d94e3403e97efe3a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/blurred-background-(realitykit)": {
+      "hash": "57f4d3754d65216d59c8ba4cdb746140f6336b98784be6ca1434400922a89642",
+      "last_checked": "2025-06-06T08:16:14.495022",
+      "status": "unchanged",
+      "etag": "3ee9140405b1b820b02460e6d03faefa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/geometry-modifier-(realitykit).json": {
+      "hash": "e2b2ef336030a7631d365638f0092ba268fa101769504340cc23dc843438ec29",
+      "last_checked": "2025-06-06T08:16:14.837464",
+      "status": "unchanged",
+      "etag": "W/\"7aa4a5c2c7ef81e970ebed9f1f4f4903\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/geometry-modifier-(realitykit)": {
+      "hash": "e2b2ef336030a7631d365638f0092ba268fa101769504340cc23dc843438ec29",
+      "last_checked": "2025-06-06T08:16:14.837464",
+      "status": "unchanged",
+      "etag": "0d1d08f91c00d2d3b3c77932028537e9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/camera-index-switch-(realitykit).json": {
+      "hash": "4aab1ea5743d2c34a84108c0f04a7ccc0891910185fd8ff4473e2664de99ddd2",
+      "last_checked": "2025-06-06T08:16:15.248547",
+      "status": "unchanged",
+      "etag": "W/\"a146bafe3ee4b2fd72fe516f67264235\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/camera-index-switch-(realitykit)": {
+      "hash": "4aab1ea5743d2c34a84108c0f04a7ccc0891910185fd8ff4473e2664de99ddd2",
+      "last_checked": "2025-06-06T08:16:15.248547",
+      "status": "unchanged",
+      "etag": "79188bf42622ea9f551caed53edf6f14"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-(realitykit).json": {
+      "hash": "01787075c1574ba88cd7f53fd03e0d2cbf9c3c0c55c3aa1f5a4a366f84fcd826",
+      "last_checked": "2025-06-06T08:16:15.711304",
+      "status": "unchanged",
+      "etag": "W/\"3a6d2804cbc907d671bfd4db69b5ed08\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-(realitykit)": {
+      "hash": "01787075c1574ba88cd7f53fd03e0d2cbf9c3c0c55c3aa1f5a4a366f84fcd826",
+      "last_checked": "2025-06-06T08:16:15.711304",
+      "status": "unchanged",
+      "etag": "bff52e842ac7531025d11c61894b6d52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-lod-(realitykit).json": {
+      "hash": "c80a6d8960b1a6fbf743d8296a275e44fd3b142f8db98646b14ce66a73769edf",
+      "last_checked": "2025-06-06T08:16:16.127160",
+      "status": "unchanged",
+      "etag": "W/\"61427c3229cc950a6903dbac814eea9e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-lod-(realitykit)": {
+      "hash": "c80a6d8960b1a6fbf743d8296a275e44fd3b142f8db98646b14ce66a73769edf",
+      "last_checked": "2025-06-06T08:16:16.127160",
+      "status": "unchanged",
+      "etag": "e015b4ee0644288667c2759f7163cd82"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-gradient-(realitykit).json": {
+      "hash": "1eed9cf74245b3782ff52c95920cda964b2eeee6f86dbcecab9448138acb3972",
+      "last_checked": "2025-06-06T08:16:16.979435",
+      "status": "unchanged",
+      "etag": "W/\"b61807f14dc7fb21319fed4098a51ced\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-gradient-(realitykit)": {
+      "hash": "1eed9cf74245b3782ff52c95920cda964b2eeee6f86dbcecab9448138acb3972",
+      "last_checked": "2025-06-06T08:16:16.979435",
+      "status": "unchanged",
+      "etag": "387dc0b71e686d45a95551fa6de357fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-pixel-(realitykit).json": {
+      "hash": "d9dd7412ae82dc7dde689e6c0be9e83784c49450dc1679907fa75a658405894c",
+      "last_checked": "2025-06-06T08:16:17.362858",
+      "status": "unchanged",
+      "etag": "W/\"594dd9a911a86ad7271586605b073b56\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-pixel-(realitykit)": {
+      "hash": "d9dd7412ae82dc7dde689e6c0be9e83784c49450dc1679907fa75a658405894c",
+      "last_checked": "2025-06-06T08:16:17.362858",
+      "status": "unchanged",
+      "etag": "69ba550730e5a6d0d9f55db02c8af38e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-lod-pixel-(realitykit).json": {
+      "hash": "0ed5c2a633838a4bfaa66f76eeff25a3491615540e81bee15b42cf41038330d6",
+      "last_checked": "2025-06-06T08:16:17.760657",
+      "status": "unchanged",
+      "etag": "W/\"ff4afac93487264b5e24c4fbd0014464\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-lod-pixel-(realitykit)": {
+      "hash": "0ed5c2a633838a4bfaa66f76eeff25a3491615540e81bee15b42cf41038330d6",
+      "last_checked": "2025-06-06T08:16:17.760657",
+      "status": "unchanged",
+      "etag": "dce16d0807f9dd4446709c940c7b2af8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-gradient-pixel-(realitykit).json": {
+      "hash": "e852e461679c7d3a5fccf1c798465fb980873592ef5bbc5dd80c3148ff1126c2",
+      "last_checked": "2025-06-06T08:16:18.256536",
+      "status": "unchanged",
+      "etag": "W/\"413b586cc20110ea7ddd030ff7ffc405\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-gradient-pixel-(realitykit)": {
+      "hash": "e852e461679c7d3a5fccf1c798465fb980873592ef5bbc5dd80c3148ff1126c2",
+      "last_checked": "2025-06-06T08:16:18.256536",
+      "status": "unchanged",
+      "etag": "77de3a93ac46d64437abdb7926ac14ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-read-(realitykit).json": {
+      "hash": "3fc03d7c4d6c3488fc269be38c8ffaeca083786cfee7c47ddaeb95a3163f8535",
+      "last_checked": "2025-06-06T08:16:19.967455",
+      "status": "unchanged",
+      "etag": "W/\"2762bb86ea2af6e646f47790975c0813\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-read-(realitykit)": {
+      "hash": "3fc03d7c4d6c3488fc269be38c8ffaeca083786cfee7c47ddaeb95a3163f8535",
+      "last_checked": "2025-06-06T08:16:19.967455",
+      "status": "unchanged",
+      "etag": "ef2a5664d9d230f432aaf49f1fd22290"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-(realitykit).json": {
+      "hash": "1c96e127cd360484d76771f0417a3ee2ec080493c5a904c6c56d0f9959b484ac",
+      "last_checked": "2025-06-06T08:16:20.360585",
+      "status": "unchanged",
+      "etag": "W/\"3d08d2bda26adafe7cc335e289600e03\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-3d-(realitykit)": {
+      "hash": "1c96e127cd360484d76771f0417a3ee2ec080493c5a904c6c56d0f9959b484ac",
+      "last_checked": "2025-06-06T08:16:20.360585",
+      "status": "unchanged",
+      "etag": "dc93323f50fd082967e917e25abf1552"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-lod-(realitykit).json": {
+      "hash": "dcb35fedb7d1a6e13efbb8bdf8fbf984d346ab38d0fc12dd7dab5e40a4be2124",
+      "last_checked": "2025-06-06T08:16:20.784611",
+      "status": "unchanged",
+      "etag": "W/\"4020ee40da19406a758f4f1c5b8d9700\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-3d-lod-(realitykit)": {
+      "hash": "dcb35fedb7d1a6e13efbb8bdf8fbf984d346ab38d0fc12dd7dab5e40a4be2124",
+      "last_checked": "2025-06-06T08:16:20.784611",
+      "status": "unchanged",
+      "etag": "c0bdba76a0dd06f7d524e58a8cdf2c3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-gradient-(realitykit).json": {
+      "hash": "a6cc782ea1ee4dd90181bdde454d0827625ff59db1fbcfebc112c665a464c9b0",
+      "last_checked": "2025-06-06T08:16:21.195857",
+      "status": "unchanged",
+      "etag": "W/\"63a61c1f02f8b9f5780cc7b09de61f36\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-3d-gradient-(realitykit)": {
+      "hash": "a6cc782ea1ee4dd90181bdde454d0827625ff59db1fbcfebc112c665a464c9b0",
+      "last_checked": "2025-06-06T08:16:21.195857",
+      "status": "unchanged",
+      "etag": "30be5dcd0570e99ee15cc0ceaba4a451"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-pixel-(realitykit).json": {
+      "hash": "670266c23b18d1fefa703b3eb2bc00dc567d8991c18d04851aa7a220cf29b5ae",
+      "last_checked": "2025-06-06T08:16:21.631900",
+      "status": "unchanged",
+      "etag": "W/\"a1888b41ba826d52526cde85111f2424\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-3d-pixel-(realitykit)": {
+      "hash": "670266c23b18d1fefa703b3eb2bc00dc567d8991c18d04851aa7a220cf29b5ae",
+      "last_checked": "2025-06-06T08:16:21.631900",
+      "status": "unchanged",
+      "etag": "a4eae9c03e927717d7fb3c7da857f8d1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-lod-pixel-(realitykit).json": {
+      "hash": "909dbd9e69a957b3d1a0a8b2e2dabed7fbaf2aad15af255fec7d3ba368f43fcf",
+      "last_checked": "2025-06-06T08:16:22.035915",
+      "status": "unchanged",
+      "etag": "W/\"8be9d97eff79451c92281714e8522e91\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-3d-lod-pixel-(realitykit)": {
+      "hash": "909dbd9e69a957b3d1a0a8b2e2dabed7fbaf2aad15af255fec7d3ba368f43fcf",
+      "last_checked": "2025-06-06T08:16:22.035915",
+      "status": "unchanged",
+      "etag": "fee55b4963cbbc9e87a25c7d35797231"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-gradient-pixel-(realitykit).json": {
+      "hash": "5d661588a8afee0354eddfea6c210f420d9ba253edc4126dd22126ea1abdc3b5",
+      "last_checked": "2025-06-06T08:16:22.428878",
+      "status": "unchanged",
+      "etag": "W/\"4624f46a973a7d44822255673be22630\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-3d-gradient-pixel-(realitykit)": {
+      "hash": "5d661588a8afee0354eddfea6c210f420d9ba253edc4126dd22126ea1abdc3b5",
+      "last_checked": "2025-06-06T08:16:22.428878",
+      "status": "unchanged",
+      "etag": "0e1c48cc7a752aa70f317544958c748b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-(realitykit).json": {
+      "hash": "a97cfcb71f5ca439bc8c6d2a5dc9a963db0cf8624f7932a202e2c6c3c77a0a67",
+      "last_checked": "2025-06-06T08:16:22.855988",
+      "status": "unchanged",
+      "etag": "W/\"8db451522afb64230025bf6f63e997e6\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-array-(realitykit)": {
+      "hash": "a97cfcb71f5ca439bc8c6d2a5dc9a963db0cf8624f7932a202e2c6c3c77a0a67",
+      "last_checked": "2025-06-06T08:16:22.855988",
+      "status": "unchanged",
+      "etag": "5fc215699454d5fd1b7d24206528f9a1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-lod-(realitykit).json": {
+      "hash": "1ae50157b1942799b80cab116d5d582b30cc4aa4dec51ba83ce20c1e3cf1bbeb",
+      "last_checked": "2025-06-06T08:16:23.294819",
+      "status": "unchanged",
+      "etag": "W/\"70cde657d722409c54039daedded0e3e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-array-lod-(realitykit)": {
+      "hash": "1ae50157b1942799b80cab116d5d582b30cc4aa4dec51ba83ce20c1e3cf1bbeb",
+      "last_checked": "2025-06-06T08:16:23.294819",
+      "status": "unchanged",
+      "etag": "80ffed3c1b4ff2766d8d4e20fe9a1c70"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-gradient-(realitykit).json": {
+      "hash": "f4cbc2e60671722c968b67cf2a5253d2e4e1f960d32309480d86f4f436a2120f",
+      "last_checked": "2025-06-06T08:16:23.730169",
+      "status": "unchanged",
+      "etag": "W/\"72a695aa0d9258441f39b5c660319687\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-array-gradient-(realitykit)": {
+      "hash": "f4cbc2e60671722c968b67cf2a5253d2e4e1f960d32309480d86f4f436a2120f",
+      "last_checked": "2025-06-06T08:16:23.730169",
+      "status": "unchanged",
+      "etag": "b707aaaf3ada731f0e0e8839751a8512"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-pixel-(realitykit).json": {
+      "hash": "9a7cdec1a5105b7c5b2d3633e87d6c58b8f23c8cb510b03d480979641c59e86d",
+      "last_checked": "2025-06-06T08:16:24.146081",
+      "status": "unchanged",
+      "etag": "W/\"7d26a412e9aab781300398bc278d22cd\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-array-pixel-(realitykit)": {
+      "hash": "9a7cdec1a5105b7c5b2d3633e87d6c58b8f23c8cb510b03d480979641c59e86d",
+      "last_checked": "2025-06-06T08:16:24.146081",
+      "status": "unchanged",
+      "etag": "7a8a4d1e7248a42ea7b1c6c9e205856e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-lod-pixel-(realitykit).json": {
+      "hash": "30628a21510c3056f6304e14b4726d2593465088f68b921890b8ffc538f1918a",
+      "last_checked": "2025-06-06T08:16:24.553233",
+      "status": "unchanged",
+      "etag": "W/\"e10d7345539ca8f5627df82c1ac49e95\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-array-lod-pixel-(realitykit)": {
+      "hash": "30628a21510c3056f6304e14b4726d2593465088f68b921890b8ffc538f1918a",
+      "last_checked": "2025-06-06T08:16:24.553233",
+      "status": "unchanged",
+      "etag": "afe379c3c5b4e7376ab6b444398a97c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-gradient-pixel-(realitykit).json": {
+      "hash": "8efa34aa7ed2d91066e6155d097d94aa780f372f74ac441fbc6d9092ad06e715",
+      "last_checked": "2025-06-06T08:16:24.971813",
+      "status": "unchanged",
+      "etag": "W/\"494782bd8a695efcd9b7edc3586876e3\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-array-gradient-pixel-(realitykit)": {
+      "hash": "8efa34aa7ed2d91066e6155d097d94aa780f372f74ac441fbc6d9092ad06e715",
+      "last_checked": "2025-06-06T08:16:24.971813",
+      "status": "unchanged",
+      "etag": "50e75dbd64b8f7a439c028f92819dca9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-2d-array-read-(realitykit).json": {
+      "hash": "bfc678ed539a3413d33372c003cab90a29633a808a4ff36e6b93a8c09b993504",
+      "last_checked": "2025-06-06T08:16:25.421364",
+      "status": "unchanged",
+      "etag": "W/\"49c380d5aef446223c8b9d646d223913\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-2d-array-read-(realitykit)": {
+      "hash": "bfc678ed539a3413d33372c003cab90a29633a808a4ff36e6b93a8c09b993504",
+      "last_checked": "2025-06-06T08:16:25.421364",
+      "status": "unchanged",
+      "etag": "12f77794170e37bc19658519c5ae24f6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/image-3d-read-(realitykit).json": {
+      "hash": "4cbba25fc7925326b06d500ca7c6312e7fb0c8847f564e8fce43f0d079a1535d",
+      "last_checked": "2025-06-06T08:16:25.835179",
+      "status": "unchanged",
+      "etag": "W/\"19871c4ba600209aaaa1bfdc198d4ae3\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/image-3d-read-(realitykit)": {
+      "hash": "4cbba25fc7925326b06d500ca7c6312e7fb0c8847f564e8fce43f0d079a1535d",
+      "last_checked": "2025-06-06T08:16:25.835179",
+      "status": "unchanged",
+      "etag": "26d57430bfc2e6ea8a0a5c8cc36f68b5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/surface/preview-surface.json": {
+      "hash": "bcc15281a0aeef3b78b613997a7b0be7f66139c331df6051171f88dab51eaf53",
+      "last_checked": "2025-06-06T08:16:26.250596",
+      "status": "unchanged",
+      "etag": "W/\"728146461b595d461792e102e5350d0f\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/surface/preview-surface": {
+      "hash": "bcc15281a0aeef3b78b613997a7b0be7f66139c331df6051171f88dab51eaf53",
+      "last_checked": "2025-06-06T08:16:26.250596",
+      "status": "unchanged",
+      "etag": "4fc0a3870d2bc695b611ec0b3d1110b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/add-saturate-(realitykit).json": {
+      "hash": "cbc19a7b50bffb2f4e144ce91791cd84dc294e73b00055c4d0ab844baaffcb9f",
+      "last_checked": "2025-06-06T08:16:26.693218",
+      "status": "unchanged",
+      "etag": "W/\"eaebd6db206db4ec9d1120d356686556\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/add-saturate-(realitykit)": {
+      "hash": "cbc19a7b50bffb2f4e144ce91791cd84dc294e73b00055c4d0ab844baaffcb9f",
+      "last_checked": "2025-06-06T08:16:26.693218",
+      "status": "unchanged",
+      "etag": "60f0b95ce3d4d47cf1d4b8f8094e643b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/count-leading-zeros-(realitykit).json": {
+      "hash": "31e5162027ef36c061fc8dfa5d53ee3ef76db9e7704bed521d7f5b2f0437a237",
+      "last_checked": "2025-06-06T08:16:27.123297",
+      "status": "unchanged",
+      "etag": "W/\"9f3bbe421efed8226d22049a8fb6647f\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/count-leading-zeros-(realitykit)": {
+      "hash": "31e5162027ef36c061fc8dfa5d53ee3ef76db9e7704bed521d7f5b2f0437a237",
+      "last_checked": "2025-06-06T08:16:27.123297",
+      "status": "unchanged",
+      "etag": "b878d0ac147a716906d904fa885d3120"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/count-trailing-zeros-(realitykit).json": {
+      "hash": "c701d65eccff677780871b47023d5036d7d554d3f73407ff5f7baac9db45bb31",
+      "last_checked": "2025-06-06T08:16:27.536089",
+      "status": "unchanged",
+      "etag": "W/\"4ca263577de80c381925bb896a841f9a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/count-trailing-zeros-(realitykit)": {
+      "hash": "c701d65eccff677780871b47023d5036d7d554d3f73407ff5f7baac9db45bb31",
+      "last_checked": "2025-06-06T08:16:27.536089",
+      "status": "unchanged",
+      "etag": "8910f9fc975d1e9edc3d24bc6de04fe1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/extract-bits-(realitykit).json": {
+      "hash": "e7d38069fc9678d1fb5582f43cc08eb17a4bafff9dbfdd451e868672f1a04f0a",
+      "last_checked": "2025-06-06T08:16:28.022007",
+      "status": "unchanged",
+      "etag": "W/\"6e5d7bec4e97ab942802b47cd4592af3\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/extract-bits-(realitykit)": {
+      "hash": "e7d38069fc9678d1fb5582f43cc08eb17a4bafff9dbfdd451e868672f1a04f0a",
+      "last_checked": "2025-06-06T08:16:28.022007",
+      "status": "unchanged",
+      "etag": "5b0d6603d9e3cad9bd2cc507eccb1522"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/integer-average,-rounded-down-(realitykit).json": {
+      "hash": "4132942ac91e5e3b65750c241b489cdd22e00064ef1e0357dd78a94b74e0c789",
+      "last_checked": "2025-06-06T08:16:28.497126",
+      "status": "unchanged",
+      "etag": "W/\"0aec87ab880cb450ffdae351d2649c5d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/integer-average,-rounded-down-(realitykit)": {
+      "hash": "4132942ac91e5e3b65750c241b489cdd22e00064ef1e0357dd78a94b74e0c789",
+      "last_checked": "2025-06-06T08:16:28.497126",
+      "status": "unchanged",
+      "etag": "737ea43c3271725bd13b68f1eac24193"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/insert-bits-(realitykit).json": {
+      "hash": "c16d63babaf1a73a815ef1fab2ab1732052b61f3859ee712814ebe463e8f6954",
+      "last_checked": "2025-06-06T08:16:28.982476",
+      "status": "unchanged",
+      "etag": "W/\"28be192ae1544005aaba62927fce73b4\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/insert-bits-(realitykit)": {
+      "hash": "c16d63babaf1a73a815ef1fab2ab1732052b61f3859ee712814ebe463e8f6954",
+      "last_checked": "2025-06-06T08:16:28.982476",
+      "status": "unchanged",
+      "etag": "b230172574d1afdf628643541f77a642"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/multiply-add-saturate-(realitykit).json": {
+      "hash": "d8af6aaa111b34260a1f7995a781fa20fddd8816f2960e65c68ef311145c6f2f",
+      "last_checked": "2025-06-06T08:16:29.449975",
+      "status": "unchanged",
+      "etag": "W/\"70c4b0830f2fb0262c70ad5c5a40e7fd\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/multiply-add-saturate-(realitykit)": {
+      "hash": "d8af6aaa111b34260a1f7995a781fa20fddd8816f2960e65c68ef311145c6f2f",
+      "last_checked": "2025-06-06T08:16:29.449975",
+      "status": "unchanged",
+      "etag": "a4ed6e5bf9278c9fe9fa55d944f1f153"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/count-non-zeros-(realitykit).json": {
+      "hash": "9051624f75a966560f6c4b1aac086c76bc7639ece7c7cc20cc358597e09df51c",
+      "last_checked": "2025-06-06T08:16:29.884376",
+      "status": "unchanged",
+      "etag": "W/\"65da410331310b2f189f1137cb32be22\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/count-non-zeros-(realitykit)": {
+      "hash": "9051624f75a966560f6c4b1aac086c76bc7639ece7c7cc20cc358597e09df51c",
+      "last_checked": "2025-06-06T08:16:29.884376",
+      "status": "unchanged",
+      "etag": "a359fe1c27105baec6689132984bc817"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/reverse-bits-(realitykit).json": {
+      "hash": "7758b3dc15ef3c55271913edf4df3037ee75be51475f106618168b244f83dc2a",
+      "last_checked": "2025-06-06T08:16:30.353000",
+      "status": "unchanged",
+      "etag": "W/\"f8107a9592a45e6eccd4be0fe44edf9d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/reverse-bits-(realitykit)": {
+      "hash": "7758b3dc15ef3c55271913edf4df3037ee75be51475f106618168b244f83dc2a",
+      "last_checked": "2025-06-06T08:16:30.353000",
+      "status": "unchanged",
+      "etag": "1834ea7a82c5ed42509dd2f5566043f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/integer-average,-rounded-up-(realitykit).json": {
+      "hash": "09e0393bb4ec3853959f40796951b8d287ad7bbb9a3fd82f2d92df5aff00e637",
+      "last_checked": "2025-06-06T08:16:30.793907",
+      "status": "unchanged",
+      "etag": "W/\"4da0ee8d878e4f97852dfae662e8bf5e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/integer-average,-rounded-up-(realitykit)": {
+      "hash": "09e0393bb4ec3853959f40796951b8d287ad7bbb9a3fd82f2d92df5aff00e637",
+      "last_checked": "2025-06-06T08:16:30.793907",
+      "status": "unchanged",
+      "etag": "223499499b4d25b7c95c99db857ec029"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/rotate-bits-(realitykit).json": {
+      "hash": "8d21a196b45e2e948f19bcba5e610b624a301d531c3ed83a38ccde50fd4d7e78",
+      "last_checked": "2025-06-06T08:16:31.231797",
+      "status": "unchanged",
+      "etag": "W/\"2e69ce3d167f1c54074cc08320ed1844\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/rotate-bits-(realitykit)": {
+      "hash": "8d21a196b45e2e948f19bcba5e610b624a301d531c3ed83a38ccde50fd4d7e78",
+      "last_checked": "2025-06-06T08:16:31.231797",
+      "status": "unchanged",
+      "etag": "e1c854a38a56e132220f446794355005"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/subtract-saturate-(realitykit).json": {
+      "hash": "2b5cee62866836351705176c91d5508e36ab96d0a6d31746a61ad7a54dd4d7bc",
+      "last_checked": "2025-06-06T08:16:31.654197",
+      "status": "unchanged",
+      "etag": "W/\"a119fa70e35ea9f7229dcd9dd55e5fac\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/subtract-saturate-(realitykit)": {
+      "hash": "2b5cee62866836351705176c91d5508e36ab96d0a6d31746a61ad7a54dd4d7bc",
+      "last_checked": "2025-06-06T08:16:31.654197",
+      "status": "unchanged",
+      "etag": "6c1a89e0f0f1a902bf21098b8ff0a180"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/absolute-diff-(realitykit).json": {
+      "hash": "a727489dc8f7c0d25e755f9736003d54dbf155d9fa3e9c20b556dba27ebda0b3",
+      "last_checked": "2025-06-06T08:16:32.084991",
+      "status": "unchanged",
+      "etag": "W/\"2fc82e0d6c9704dc6f33556d2ba440de\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/absolute-diff-(realitykit)": {
+      "hash": "a727489dc8f7c0d25e755f9736003d54dbf155d9fa3e9c20b556dba27ebda0b3",
+      "last_checked": "2025-06-06T08:16:32.084991",
+      "status": "unchanged",
+      "etag": "80c1ad30fc5bffacd8e16f518f70a7c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/multiply-add-24-(realitykit).json": {
+      "hash": "45f8d98a005666472f16b6b1e119301b57416b38636459c6d1159adc107548a0",
+      "last_checked": "2025-06-06T08:16:32.536965",
+      "status": "unchanged",
+      "etag": "W/\"34d8de6562b43d8454ff4b546ab463a0\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/multiply-add-24-(realitykit)": {
+      "hash": "45f8d98a005666472f16b6b1e119301b57416b38636459c6d1159adc107548a0",
+      "last_checked": "2025-06-06T08:16:32.536965",
+      "status": "unchanged",
+      "etag": "be767f3aedb49984f0e2d251778695f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/multiply-24-(realitykit).json": {
+      "hash": "63750b9a80f41183f2d06e1a9c10b495eccc2f7f19f9dcaf4a73835357ccd72a",
+      "last_checked": "2025-06-06T08:16:32.986687",
+      "status": "unchanged",
+      "etag": "W/\"fdf89576aa9b8696412ba77f909b5d2f\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/multiply-24-(realitykit)": {
+      "hash": "63750b9a80f41183f2d06e1a9c10b495eccc2f7f19f9dcaf4a73835357ccd72a",
+      "last_checked": "2025-06-06T08:16:32.986687",
+      "status": "unchanged",
+      "etag": "2750e8aef685adbec698140ea3d00ca2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/all-(realitykit).json": {
+      "hash": "0c3c93386ca7423f1b2933c308a12f99f03e11d09bbfb5b5a2f8fdf3f068e7b3",
+      "last_checked": "2025-06-06T08:16:33.416185",
+      "status": "unchanged",
+      "etag": "W/\"8c1b7e3fed4a99381c0ab8a6775e5b65\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/all-(realitykit)": {
+      "hash": "0c3c93386ca7423f1b2933c308a12f99f03e11d09bbfb5b5a2f8fdf3f068e7b3",
+      "last_checked": "2025-06-06T08:16:33.416185",
+      "status": "unchanged",
+      "etag": "202ab1f092a04ecd4530e33f445f1e46"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/any-(realitykit).json": {
+      "hash": "33d984be9c4fa9b295925c80e6216ce6b8b7a357284eb58c51bb35133c8821be",
+      "last_checked": "2025-06-06T08:16:33.841377",
+      "status": "unchanged",
+      "etag": "W/\"45d4bab58c277e59fa48d79fdc0ad85e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/any-(realitykit)": {
+      "hash": "33d984be9c4fa9b295925c80e6216ce6b8b7a357284eb58c51bb35133c8821be",
+      "last_checked": "2025-06-06T08:16:33.841377",
+      "status": "unchanged",
+      "etag": "c9bfb7a8b29f413ea3c10a1d13955f45"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/is-finite-(realitykit).json": {
+      "hash": "e86bc46ad3c45eb5151f3dd531881abe4845059e4776ece2af2fc8ef6a138771",
+      "last_checked": "2025-06-06T08:16:34.249212",
+      "status": "unchanged",
+      "etag": "W/\"796711a7b631c17bc3648d06b1e3d18e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/is-finite-(realitykit)": {
+      "hash": "e86bc46ad3c45eb5151f3dd531881abe4845059e4776ece2af2fc8ef6a138771",
+      "last_checked": "2025-06-06T08:16:34.249212",
+      "status": "unchanged",
+      "etag": "7addb187244fcaee1b052f5e6a944f06"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/is-infinite-(realitykit).json": {
+      "hash": "b57dbed8b8b0e3905992c88d232930ea2dc5c819c32999fc3b3866735e367376",
+      "last_checked": "2025-06-06T08:16:34.682845",
+      "status": "unchanged",
+      "etag": "W/\"4b8e627fbad3f88a80e93dc81b72f569\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/is-infinite-(realitykit)": {
+      "hash": "b57dbed8b8b0e3905992c88d232930ea2dc5c819c32999fc3b3866735e367376",
+      "last_checked": "2025-06-06T08:16:34.682845",
+      "status": "unchanged",
+      "etag": "d3fecbd6183c22f4bef2db87defe0fe8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/is-not-a-number-(realitykit).json": {
+      "hash": "ef277264e446432b3f25840b14c5d347e312ee0394ffce59c9ca8c30471e2045",
+      "last_checked": "2025-06-06T08:16:35.088675",
+      "status": "unchanged",
+      "etag": "W/\"d636b95554f08f3e7d1b01abfd4ffbcb\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/is-not-a-number-(realitykit)": {
+      "hash": "ef277264e446432b3f25840b14c5d347e312ee0394ffce59c9ca8c30471e2045",
+      "last_checked": "2025-06-06T08:16:35.088675",
+      "status": "unchanged",
+      "etag": "c0cc1f578a3df5b21f2242aba758d95e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/is-normal-(realitykit).json": {
+      "hash": "f7fdd4300b38c863d7bef0c46cd129804a6ae27b29894d284b1a4eecb1ff9778",
+      "last_checked": "2025-06-06T08:16:35.520620",
+      "status": "unchanged",
+      "etag": "W/\"37a34fbfa042550f1481aa6eea649225\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/is-normal-(realitykit)": {
+      "hash": "f7fdd4300b38c863d7bef0c46cd129804a6ae27b29894d284b1a4eecb1ff9778",
+      "last_checked": "2025-06-06T08:16:35.520620",
+      "status": "unchanged",
+      "etag": "e6ef970082df7fe6191a708fbb151924"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/is-ordered-(realitykit).json": {
+      "hash": "f1f51617626314ac5a23bf82b96e89ce22a532c38cc1a4eb6c563b6b2f0837a4",
+      "last_checked": "2025-06-06T08:16:35.982776",
+      "status": "unchanged",
+      "etag": "W/\"149a4786437b2a5c8bffece3bef059ef\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/is-ordered-(realitykit)": {
+      "hash": "f1f51617626314ac5a23bf82b96e89ce22a532c38cc1a4eb6c563b6b2f0837a4",
+      "last_checked": "2025-06-06T08:16:35.982776",
+      "status": "unchanged",
+      "etag": "519b874619f836863db837426cc2ffce"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/is-unordered-(realitykit).json": {
+      "hash": "07ecd6080b36b15d40c45b883152b4ee8a90ccd5222b46e54c4f2ac720ac9174",
+      "last_checked": "2025-06-06T08:16:36.415705",
+      "status": "unchanged",
+      "etag": "W/\"ed81f39d6eab3a22eff2c5269dca9fa9\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/is-unordered-(realitykit)": {
+      "hash": "07ecd6080b36b15d40c45b883152b4ee8a90ccd5222b46e54c4f2ac720ac9174",
+      "last_checked": "2025-06-06T08:16:36.415705",
+      "status": "unchanged",
+      "etag": "e36edc82b0c0d9c09cf014b7e7c1670c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/sign-bit-(realitykit).json": {
+      "hash": "345fea45117c607897ce5eaca05854b93407d685706522c8e36ec1826117b2e3",
+      "last_checked": "2025-06-06T08:16:36.836102",
+      "status": "unchanged",
+      "etag": "W/\"82b57a5360001e57129423cd00788eac\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/sign-bit-(realitykit)": {
+      "hash": "345fea45117c607897ce5eaca05854b93407d685706522c8e36ec1826117b2e3",
+      "last_checked": "2025-06-06T08:16:36.836102",
+      "status": "unchanged",
+      "etag": "ee7669b2626be81328566dd84cec7b04"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/select-(realitykit).json": {
+      "hash": "ea7fbb2ab62c8e36d8ada68f68d9ab7724d0339512b3582d9a1e5cebb42e56a2",
+      "last_checked": "2025-06-06T08:16:37.272419",
+      "status": "unchanged",
+      "etag": "W/\"9787819e1f256b8c11f0fd5acdef3362\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/select-(realitykit)": {
+      "hash": "ea7fbb2ab62c8e36d8ada68f68d9ab7724d0339512b3582d9a1e5cebb42e56a2",
+      "last_checked": "2025-06-06T08:16:37.272419",
+      "status": "unchanged",
+      "etag": "a9a48be8441e61c9f752f60ee733e0ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/inverse-hyperbolic-cos.json": {
+      "hash": "7ff09b68ec0909076df46b5dcbb60e853b475f56528c43b6dfa9b5b767dbae8a",
+      "last_checked": "2025-06-06T08:16:37.743768",
+      "status": "unchanged",
+      "etag": "W/\"cfc6d8ce6192c564728830fc3664fbdb\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/inverse-hyperbolic-cos": {
+      "hash": "7ff09b68ec0909076df46b5dcbb60e853b475f56528c43b6dfa9b5b767dbae8a",
+      "last_checked": "2025-06-06T08:16:37.743768",
+      "status": "unchanged",
+      "etag": "57f813f4711d26c3e89610866b80aa55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/inverse-hyperbolic-sin.json": {
+      "hash": "b66969389c487905c950ac8fb4028d78c6bcf2b19dadcd926bc441a25d71b6e7",
+      "last_checked": "2025-06-06T08:16:38.143567",
+      "status": "unchanged",
+      "etag": "W/\"e96178ba16e85ecc7dfd31e44361bd04\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/inverse-hyperbolic-sin": {
+      "hash": "b66969389c487905c950ac8fb4028d78c6bcf2b19dadcd926bc441a25d71b6e7",
+      "last_checked": "2025-06-06T08:16:38.143567",
+      "status": "unchanged",
+      "etag": "baf5de67ba5cde3d21227438a343108c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/atan.json": {
+      "hash": "f875f0b6ba58368d7e351f4ca384d9b6e9f71cd102667e3da7aa27fae179bf19",
+      "last_checked": "2025-06-06T08:16:38.533823",
+      "status": "unchanged",
+      "etag": "W/\"e2d8692ddc3dc1b8261dcb668998f730\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/atan": {
+      "hash": "f875f0b6ba58368d7e351f4ca384d9b6e9f71cd102667e3da7aa27fae179bf19",
+      "last_checked": "2025-06-06T08:16:38.533823",
+      "status": "unchanged",
+      "etag": "6143ba6e6fd2eee70852ac4ea37687dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/inverse-hyperbolic-tan.json": {
+      "hash": "2fe3806782ed11905c58bbf2c08dd3fc07d84346f1cc4a455f111d983aa2f04d",
+      "last_checked": "2025-06-06T08:16:38.998492",
+      "status": "unchanged",
+      "etag": "W/\"6e727a9515003d188cbcf722e70a507a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/inverse-hyperbolic-tan": {
+      "hash": "2fe3806782ed11905c58bbf2c08dd3fc07d84346f1cc4a455f111d983aa2f04d",
+      "last_checked": "2025-06-06T08:16:38.998492",
+      "status": "unchanged",
+      "etag": "7e97cd93ef292f95e69c39d71539b420"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/copy-sign-(realitykit).json": {
+      "hash": "fd2c6a002592773872977190c3efd0d137884df3e1b05657efdd3c3ce7d46e84",
+      "last_checked": "2025-06-06T08:16:39.448530",
+      "status": "unchanged",
+      "etag": "W/\"4fad9465fc5d26e07b066e8c870f4c6e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/copy-sign-(realitykit)": {
+      "hash": "fd2c6a002592773872977190c3efd0d137884df3e1b05657efdd3c3ce7d46e84",
+      "last_checked": "2025-06-06T08:16:39.448530",
+      "status": "unchanged",
+      "etag": "8e664e71d2253127a1c7ac75f1d8f848"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/hyperbolic-cos.json": {
+      "hash": "6c6517e87c4206de3a6cbf98489d076a74d186be413c24f2e7fb23e1fcdaabbe",
+      "last_checked": "2025-06-06T08:16:39.898115",
+      "status": "unchanged",
+      "etag": "W/\"3772411ba7f3ba6222b9c3a02f39aa73\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/hyperbolic-cos": {
+      "hash": "6c6517e87c4206de3a6cbf98489d076a74d186be413c24f2e7fb23e1fcdaabbe",
+      "last_checked": "2025-06-06T08:16:39.898115",
+      "status": "unchanged",
+      "etag": "38310557360d364f57c25435bf757bb6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/cos-pi-(realitykit).json": {
+      "hash": "13f8c6b6de1b188f41085d84b2e43982df9e3f36966d2a4a4c81f3741a97cb3f",
+      "last_checked": "2025-06-06T08:16:40.326486",
+      "status": "unchanged",
+      "etag": "W/\"c26a34dda2fe0598ef78b80f601c8110\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/cos-pi-(realitykit)": {
+      "hash": "13f8c6b6de1b188f41085d84b2e43982df9e3f36966d2a4a4c81f3741a97cb3f",
+      "last_checked": "2025-06-06T08:16:40.326486",
+      "status": "unchanged",
+      "etag": "ba2ec76c1109e4e87b3f55bc7e5fd06c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/exponential-2-(realitykit).json": {
+      "hash": "215e41f151feb0e45a3e4d2ac732b0997bb9cd9e703285b13ddd5b73f4eccec1",
+      "last_checked": "2025-06-06T08:16:40.767010",
+      "status": "unchanged",
+      "etag": "W/\"8f795276dd08266d3a7150683648bf33\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/exponential-2-(realitykit)": {
+      "hash": "215e41f151feb0e45a3e4d2ac732b0997bb9cd9e703285b13ddd5b73f4eccec1",
+      "last_checked": "2025-06-06T08:16:40.767010",
+      "status": "unchanged",
+      "etag": "204ca83e810dae602812ba435b0bf4f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/exponential-10-(realitykit).json": {
+      "hash": "377dabc3ec6637d0fce092e400bb789b2e8d3f9a20a56bef5cb43f7abf62c176",
+      "last_checked": "2025-06-06T08:16:41.207814",
+      "status": "unchanged",
+      "etag": "W/\"3f916a29361211d06cf9c44a68f12d01\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/exponential-10-(realitykit)": {
+      "hash": "377dabc3ec6637d0fce092e400bb789b2e8d3f9a20a56bef5cb43f7abf62c176",
+      "last_checked": "2025-06-06T08:16:41.207814",
+      "status": "unchanged",
+      "etag": "781bc7c2a89d5a199c408986bc0d069e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/fortran-difference-and-minimum-(realitykit).json": {
+      "hash": "d156a7dd6c63b5281acfec1e426430ce84903cfb2af849370760cdeee2e045b3",
+      "last_checked": "2025-06-06T08:16:41.669181",
+      "status": "unchanged",
+      "etag": "W/\"cdd7b5ab8ce0dd733db8bc63ca49b1fb\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/fortran-difference-and-minimum-(realitykit)": {
+      "hash": "d156a7dd6c63b5281acfec1e426430ce84903cfb2af849370760cdeee2e045b3",
+      "last_checked": "2025-06-06T08:16:41.669181",
+      "status": "unchanged",
+      "etag": "138209dec996867f21d833a0911eebe8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/fused-multiply-add-(realitykit).json": {
+      "hash": "793ecaf79b1db786a742049033400d48c00c6cacdf383b6d955dbefe7348ee7a",
+      "last_checked": "2025-06-06T08:16:42.133296",
+      "status": "unchanged",
+      "etag": "W/\"efcbe912e13e5d890b52e68f0eecf807\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/fused-multiply-add-(realitykit)": {
+      "hash": "793ecaf79b1db786a742049033400d48c00c6cacdf383b6d955dbefe7348ee7a",
+      "last_checked": "2025-06-06T08:16:42.133296",
+      "status": "unchanged",
+      "etag": "7170ea5cc16b2398b9a9b4363bfb8669"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/max-(realitykit).json": {
+      "hash": "97bf67950078fbacbf945c75c29565b3beb2773bfa251b4379bf8ecd8777f87c",
+      "last_checked": "2025-06-06T08:16:42.639356",
+      "status": "unchanged",
+      "etag": "W/\"6232c3fef23a581044382f0062b5bf4c\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/max-(realitykit)": {
+      "hash": "97bf67950078fbacbf945c75c29565b3beb2773bfa251b4379bf8ecd8777f87c",
+      "last_checked": "2025-06-06T08:16:42.639356",
+      "status": "unchanged",
+      "etag": "c539e576ac99005717735906fa9fa2fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/min-(realitykit).json": {
+      "hash": "6d01baac2887ca7a457e722aac625f9670f5102aa73f23f96ca8544bd899c7c2",
+      "last_checked": "2025-06-06T08:16:43.059117",
+      "status": "unchanged",
+      "etag": "W/\"220636a51a82bc7101ac95347b40bf69\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/min-(realitykit)": {
+      "hash": "6d01baac2887ca7a457e722aac625f9670f5102aa73f23f96ca8544bd899c7c2",
+      "last_checked": "2025-06-06T08:16:43.059117",
+      "status": "unchanged",
+      "etag": "5eb7d3a44c60dc259bae6a84f076d803"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/modulo-(realitykit).json": {
+      "hash": "26f8c9feaac6ca30ee854eb032d962b450da3f213f0895944b08b0dd75a6e748",
+      "last_checked": "2025-06-06T08:16:43.522110",
+      "status": "unchanged",
+      "etag": "W/\"91e114dc83f9877cde4d9135aa887c96\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/modulo-(realitykit)": {
+      "hash": "26f8c9feaac6ca30ee854eb032d962b450da3f213f0895944b08b0dd75a6e748",
+      "last_checked": "2025-06-06T08:16:43.522110",
+      "status": "unchanged",
+      "etag": "2cff90e475a60097bcbb421e8f3c2c32"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/fractional-(realitykit).json": {
+      "hash": "1331b697623c297620915a7e5594b138498a573b01bdf7486871532a2077ba0c",
+      "last_checked": "2025-06-06T08:16:43.922747",
+      "status": "unchanged",
+      "etag": "W/\"1349ccef3a76254138bc440b1d4ccb4a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/fractional-(realitykit)": {
+      "hash": "1331b697623c297620915a7e5594b138498a573b01bdf7486871532a2077ba0c",
+      "last_checked": "2025-06-06T08:16:43.922747",
+      "status": "unchanged",
+      "etag": "e4e67ea02961a1876e16df181839352f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/power-positive-(realitykit).json": {
+      "hash": "a44b3a1297e74ff9bba60e237d5d4d47d673dc0ff802f2f1f5af6525b27fd068",
+      "last_checked": "2025-06-06T08:16:44.334476",
+      "status": "unchanged",
+      "etag": "W/\"19e9917e1850d246b2a6f64f485862b2\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/power-positive-(realitykit)": {
+      "hash": "a44b3a1297e74ff9bba60e237d5d4d47d673dc0ff802f2f1f5af6525b27fd068",
+      "last_checked": "2025-06-06T08:16:44.334476",
+      "status": "unchanged",
+      "etag": "a47b995898bce1a77e41a677afa712c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/round-integral-(realitykit).json": {
+      "hash": "ad7bccef46c172cb1c8aba24aeed33f54b6885c6d429dacb51aec0857730f8ae",
+      "last_checked": "2025-06-06T08:16:44.791220",
+      "status": "unchanged",
+      "etag": "W/\"294edd34e25fab72104c24c5303bb83a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/round-integral-(realitykit)": {
+      "hash": "ad7bccef46c172cb1c8aba24aeed33f54b6885c6d429dacb51aec0857730f8ae",
+      "last_checked": "2025-06-06T08:16:44.791220",
+      "status": "unchanged",
+      "etag": "14c79c8116160e2cc0514e8e4140bd03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/reciprocal-square-root-(realitykit).json": {
+      "hash": "d085de2ad0072b415e762a116da4aa9c18fcf1f35b22810c35a820dc31167354",
+      "last_checked": "2025-06-06T08:16:45.219530",
+      "status": "unchanged",
+      "etag": "W/\"ae568e02700c2f7cd118e912877b0683\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/reciprocal-square-root-(realitykit)": {
+      "hash": "d085de2ad0072b415e762a116da4aa9c18fcf1f35b22810c35a820dc31167354",
+      "last_checked": "2025-06-06T08:16:45.219530",
+      "status": "unchanged",
+      "etag": "7da05e98e1192d475e28e9a6b8d71e1b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/hyperbolic-sin.json": {
+      "hash": "4ffaa89a69db10f29b55f56468691dd58dc391318ad846d778de2a8f3d1c49a6",
+      "last_checked": "2025-06-06T08:16:45.659117",
+      "status": "unchanged",
+      "etag": "W/\"c41afa6a8e3a3f1bb9d0c2202071cbc3\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/hyperbolic-sin": {
+      "hash": "4ffaa89a69db10f29b55f56468691dd58dc391318ad846d778de2a8f3d1c49a6",
+      "last_checked": "2025-06-06T08:16:45.659117",
+      "status": "unchanged",
+      "etag": "fb5ac302b10068080a0dc2acfe1a9716"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/sin-pi-(realitykit).json": {
+      "hash": "476cdd34c5693a040af161afd93afb05617d1e4fcf3583b5fc8b0494cb0ce950",
+      "last_checked": "2025-06-06T08:16:46.105287",
+      "status": "unchanged",
+      "etag": "W/\"812887aec17d38532d633cbec7aeaea9\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/sin-pi-(realitykit)": {
+      "hash": "476cdd34c5693a040af161afd93afb05617d1e4fcf3583b5fc8b0494cb0ce950",
+      "last_checked": "2025-06-06T08:16:46.105287",
+      "status": "unchanged",
+      "etag": "c8da31690eaec5c3db222af0ac0a571a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/hyperbolic-tan.json": {
+      "hash": "0628bde53655f851cad69b321301d2b023518068e46f6decc293840890f72cce",
+      "last_checked": "2025-06-06T08:16:46.521488",
+      "status": "unchanged",
+      "etag": "W/\"1e6005c6dabd7302fdca877580b23360\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/hyperbolic-tan": {
+      "hash": "0628bde53655f851cad69b321301d2b023518068e46f6decc293840890f72cce",
+      "last_checked": "2025-06-06T08:16:46.521488",
+      "status": "unchanged",
+      "etag": "6e40416e1d4a9a7766db9e264580daa8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/tan-pi-(realitykit).json": {
+      "hash": "a05e06da3ac67a76462af4b2b5c2b6ac520f92e013e4b89cacbde4ccbe8aed6c",
+      "last_checked": "2025-06-06T08:16:46.950665",
+      "status": "unchanged",
+      "etag": "W/\"69bafd3ce4b9f73703c51e2fd187cae2\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/tan-pi-(realitykit)": {
+      "hash": "a05e06da3ac67a76462af4b2b5c2b6ac520f92e013e4b89cacbde4ccbe8aed6c",
+      "last_checked": "2025-06-06T08:16:46.950665",
+      "status": "unchanged",
+      "etag": "03dbc2ddb0287ac529cac0f1f6e3ab1a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/truncate-(realitykit).json": {
+      "hash": "61d8736841484ac922675e0f8f340265ee8a75517fa7aa894889ff6183c1e85b",
+      "last_checked": "2025-06-06T08:16:47.342359",
+      "status": "unchanged",
+      "etag": "W/\"95ec1feae08b0f1d36bba94f8a6eca35\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/truncate-(realitykit)": {
+      "hash": "61d8736841484ac922675e0f8f340265ee8a75517fa7aa894889ff6183c1e85b",
+      "last_checked": "2025-06-06T08:16:47.342359",
+      "status": "unchanged",
+      "etag": "a66ee85e944e6b222bd153b100885079"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/distance-(realitykit).json": {
+      "hash": "0e47ab24b1591ef34581b2044b3ce8f497742aecd957f9f0ab79fd8256ab8132",
+      "last_checked": "2025-06-06T08:16:47.747816",
+      "status": "unchanged",
+      "etag": "W/\"efc8ce65940c431921384638a9c73612\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/distance-(realitykit)": {
+      "hash": "0e47ab24b1591ef34581b2044b3ce8f497742aecd957f9f0ab79fd8256ab8132",
+      "last_checked": "2025-06-06T08:16:47.747816",
+      "status": "unchanged",
+      "etag": "fa48c03e2e5faed53633f394038c1ad5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/distance-square-(realitykit).json": {
+      "hash": "07069e82cbba796b1eb3c5bfc4bb78b5baf9dd1c04a65059be98e168c74a5c58",
+      "last_checked": "2025-06-06T08:16:48.099453",
+      "status": "unchanged",
+      "etag": "W/\"b2e02b80aeba1d427ca25b1377da33e8\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/distance-square-(realitykit)": {
+      "hash": "07069e82cbba796b1eb3c5bfc4bb78b5baf9dd1c04a65059be98e168c74a5c58",
+      "last_checked": "2025-06-06T08:16:48.099453",
+      "status": "unchanged",
+      "etag": "a7dbc4b48216fade8b8efd6c02478a32"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/magnitude-square-(realitykit).json": {
+      "hash": "e720672365272331b762178e3b0dcedb4bc46ae5892255612b3aab677726b74c",
+      "last_checked": "2025-06-06T08:16:48.485489",
+      "status": "unchanged",
+      "etag": "W/\"e6f88d3fc0b06aa531e486e690ad78a8\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/magnitude-square-(realitykit)": {
+      "hash": "e720672365272331b762178e3b0dcedb4bc46ae5892255612b3aab677726b74c",
+      "last_checked": "2025-06-06T08:16:48.485489",
+      "status": "unchanged",
+      "etag": "22339e113e82b8fa237ea3e7cf90663c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/screen-space-x-partial-derivative-(realitykit).json": {
+      "hash": "73bc72173bf068aed9926fdf425cadf6e6ffcae7a4ad68c12b5e0374ac32a327",
+      "last_checked": "2025-06-06T08:16:48.904322",
+      "status": "unchanged",
+      "etag": "W/\"5af8632bc26da594d7a10677a608487f\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/screen-space-x-partial-derivative-(realitykit)": {
+      "hash": "73bc72173bf068aed9926fdf425cadf6e6ffcae7a4ad68c12b5e0374ac32a327",
+      "last_checked": "2025-06-06T08:16:48.904322",
+      "status": "unchanged",
+      "etag": "13df89e2b13aea2acbef9e45b1f408b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/screen-space-y-partial-derivative-(realitykit).json": {
+      "hash": "1dc01db62b9a70130854566f257dd83aedfa117b4c8f35a87ec968db93515f91",
+      "last_checked": "2025-06-06T08:16:49.292420",
+      "status": "unchanged",
+      "etag": "W/\"d9363c560df4918a65203c38dc95eb49\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/screen-space-y-partial-derivative-(realitykit)": {
+      "hash": "1dc01db62b9a70130854566f257dd83aedfa117b4c8f35a87ec968db93515f91",
+      "last_checked": "2025-06-06T08:16:49.292420",
+      "status": "unchanged",
+      "etag": "16422eed068f3dbdb24ef854952774bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/absolute-derivatives-sum-(realitykit).json": {
+      "hash": "7fb4e703ca305c24354ecdac80c69ebb395a16b0b4096cab9d792faffb985b45",
+      "last_checked": "2025-06-06T08:16:49.705876",
+      "status": "unchanged",
+      "etag": "W/\"de0011a23df494d4d0ed3afe59bf616c\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/absolute-derivatives-sum-(realitykit)": {
+      "hash": "7fb4e703ca305c24354ecdac80c69ebb395a16b0b4096cab9d792faffb985b45",
+      "last_checked": "2025-06-06T08:16:49.705876",
+      "status": "unchanged",
+      "etag": "0404c18dfeb0ce56f142160a0352c3ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/log-2.json": {
+      "hash": "7720db0af60c3b34f2da5775ce29a6acc3a508ff9b3c88a8ed63893d8f4b0d3c",
+      "last_checked": "2025-06-06T08:16:50.043888",
+      "status": "unchanged",
+      "etag": "W/\"6cdf88d956b46c87c0ee698ed2c335a6\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/log-2": {
+      "hash": "7720db0af60c3b34f2da5775ce29a6acc3a508ff9b3c88a8ed63893d8f4b0d3c",
+      "last_checked": "2025-06-06T08:16:50.043888",
+      "status": "unchanged",
+      "etag": "d751319dbd66d45b73b67db36b8a93c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/log-10.json": {
+      "hash": "5886c9ffc5f0de209397902426ca8bc41012192473b2e10f2bf8b0a201118e38",
+      "last_checked": "2025-06-06T08:16:50.443342",
+      "status": "unchanged",
+      "etag": "W/\"9608a703673201091f364f881e98ccd2\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/log-10": {
+      "hash": "5886c9ffc5f0de209397902426ca8bc41012192473b2e10f2bf8b0a201118e38",
+      "last_checked": "2025-06-06T08:16:50.443342",
+      "status": "unchanged",
+      "etag": "3b1e35120c5d792b9b5cb2a48be25080"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/reflection-diffuse-(realitykit).json": {
+      "hash": "c9e21ac3092d0c05043105bd384a53d74bcc596613651eb83a6c8812e5edaa1c",
+      "last_checked": "2025-06-06T08:16:50.851817",
+      "status": "unchanged",
+      "etag": "W/\"d69eb7bc35b5f6fdc05d2c10f9c8e5e6\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/reflection-diffuse-(realitykit)": {
+      "hash": "c9e21ac3092d0c05043105bd384a53d74bcc596613651eb83a6c8812e5edaa1c",
+      "last_checked": "2025-06-06T08:16:50.851817",
+      "status": "unchanged",
+      "etag": "db17a5e72f956af4353c42d35d0babf7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/reflection-specular-(realitykit).json": {
+      "hash": "244b7df7ba5113f2845c4e607a32dc71118892d2b24e3a9c90ddbb04c357df0e",
+      "last_checked": "2025-06-06T08:16:51.197905",
+      "status": "unchanged",
+      "etag": "W/\"0d7c8301b6f715b400501c6055973542\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/reflection-specular-(realitykit)": {
+      "hash": "244b7df7ba5113f2845c4e607a32dc71118892d2b24e3a9c90ddbb04c357df0e",
+      "last_checked": "2025-06-06T08:16:51.197905",
+      "status": "unchanged",
+      "etag": "3ec62707eac409f7a65bb866558c08ba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/absolute-(realitykit)-146ys.json": {
+      "hash": "2b10d1b03af364e0e9585cd0ecbe34fb480541070c4c69ee8a751cd00854c76a",
+      "last_checked": "2025-06-06T08:16:51.595401",
+      "status": "unchanged",
+      "etag": "W/\"1c370b2bd204e85ecc229ce1b4f8d3f6\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/absolute-(realitykit)-146ys": {
+      "hash": "2b10d1b03af364e0e9585cd0ecbe34fb480541070c4c69ee8a751cd00854c76a",
+      "last_checked": "2025-06-06T08:16:51.595401",
+      "status": "unchanged",
+      "etag": "801b25ba34389bb3695061eb2d32cd11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/absolute-(realitykit)-5niip.json": {
+      "hash": "822521317303e71bad0da67907618e44b6467327476f3e7cbfeee782f0a776ca",
+      "last_checked": "2025-06-06T08:16:51.954078",
+      "status": "unchanged",
+      "etag": "W/\"36e25add8961a93a03a0f0bb8bdfd502\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/absolute-(realitykit)-5niip": {
+      "hash": "822521317303e71bad0da67907618e44b6467327476f3e7cbfeee782f0a776ca",
+      "last_checked": "2025-06-06T08:16:51.954078",
+      "status": "unchanged",
+      "etag": "fecc919ecd74ae6aa731934f49228d8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/max3-(realitykit)-6nj67.json": {
+      "hash": "4ec2649419f3ee6ba59bd19e29cd6a8ccded761951f7f7bf7ef628532ca86036",
+      "last_checked": "2025-06-06T08:16:52.346367",
+      "status": "unchanged",
+      "etag": "W/\"0d5d8891addfd6d6609c266887d422ce\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/max3-(realitykit)-6nj67": {
+      "hash": "4ec2649419f3ee6ba59bd19e29cd6a8ccded761951f7f7bf7ef628532ca86036",
+      "last_checked": "2025-06-06T08:16:52.346367",
+      "status": "unchanged",
+      "etag": "1c1862b84606bd0c3401024823f8155f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/max3-(realitykit)-8ww2g.json": {
+      "hash": "850295aecbf983a2b8997e74b648a37dee00ada2cc341935465346e6e9a85572",
+      "last_checked": "2025-06-06T08:16:52.746987",
+      "status": "unchanged",
+      "etag": "W/\"e81b147e68df43efd3b4029e526cb23d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/max3-(realitykit)-8ww2g": {
+      "hash": "850295aecbf983a2b8997e74b648a37dee00ada2cc341935465346e6e9a85572",
+      "last_checked": "2025-06-06T08:16:52.746987",
+      "status": "unchanged",
+      "etag": "f8e20199ef310bf4704f6288e0e91a13"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/median3-(realitykit)-2iusb.json": {
+      "hash": "ad758ec1c36d43dbe8943e27496a996b094513edeea831daaca9193162413616",
+      "last_checked": "2025-06-06T08:16:53.078256",
+      "status": "unchanged",
+      "etag": "W/\"94d5e8657fda52180f2fe7f9fea3f8ba\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/median3-(realitykit)-2iusb": {
+      "hash": "ad758ec1c36d43dbe8943e27496a996b094513edeea831daaca9193162413616",
+      "last_checked": "2025-06-06T08:16:53.078256",
+      "status": "unchanged",
+      "etag": "75b2ee8e35ac7f0132a08cad98699b79"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/median3-(realitykit)-t96k.json": {
+      "hash": "7685753c5e018eaeed6f6fc6dfccd97711699304c7f17558423ef12cb9bc4763",
+      "last_checked": "2025-06-06T08:16:53.452438",
+      "status": "unchanged",
+      "etag": "W/\"cffa721701c0e094e5c49fe7db84e654\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/median3-(realitykit)-t96k": {
+      "hash": "7685753c5e018eaeed6f6fc6dfccd97711699304c7f17558423ef12cb9bc4763",
+      "last_checked": "2025-06-06T08:16:53.452438",
+      "status": "unchanged",
+      "etag": "b5198008e2087e211afa2d2367d13ecd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/min3-(realitykit)-1c3iu.json": {
+      "hash": "45f5b0f26c7b4022f03310a3f34ef4ff9b71f8a00084c581ccf33f715621c607",
+      "last_checked": "2025-06-06T08:16:53.868044",
+      "status": "unchanged",
+      "etag": "W/\"45d644512e1540398155888dace094ea\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/min3-(realitykit)-1c3iu": {
+      "hash": "45f5b0f26c7b4022f03310a3f34ef4ff9b71f8a00084c581ccf33f715621c607",
+      "last_checked": "2025-06-06T08:16:53.868044",
+      "status": "unchanged",
+      "etag": "7d8cd28b3b6c9c0099e8756c91fffc75"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/min3-(realitykit)-6x2f6.json": {
+      "hash": "6fd968380b4db9534b59480db54e8004d8c0220578cd49eb98d214419b8420e5",
+      "last_checked": "2025-06-06T08:16:54.281028",
+      "status": "unchanged",
+      "etag": "W/\"341ceed489708f0433d0de4246db4b02\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/min3-(realitykit)-6x2f6": {
+      "hash": "6fd968380b4db9534b59480db54e8004d8c0220578cd49eb98d214419b8420e5",
+      "last_checked": "2025-06-06T08:16:54.281028",
+      "status": "unchanged",
+      "etag": "c3783bb937bfcd21f8285dfc1b8f105d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/multiply-high-(realitykit)-20zzc.json": {
+      "hash": "b61b91f0b9d34185eb2377ea4434550d3c68a99f7b9ab48edbd2504da6cabb1c",
+      "last_checked": "2025-06-06T08:16:54.649591",
+      "status": "unchanged",
+      "etag": "W/\"672f7e6547e59e7c830cdfa1d09d0f2a\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/multiply-high-(realitykit)-20zzc": {
+      "hash": "b61b91f0b9d34185eb2377ea4434550d3c68a99f7b9ab48edbd2504da6cabb1c",
+      "last_checked": "2025-06-06T08:16:54.649591",
+      "status": "unchanged",
+      "etag": "4a3099c2d9cb4daa2c1ba4c049da1ee4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/other/multiply-high-(realitykit)-jif4.json": {
+      "hash": "7c5e8f58e6f9bce6ff872d12634a38b2be21159c063b6f3cf4f7ebeab8f31866",
+      "last_checked": "2025-06-06T08:16:54.980209",
+      "status": "unchanged",
+      "etag": "W/\"4d156037b38445cae38dabca6eb77d9d\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/other/multiply-high-(realitykit)-jif4": {
+      "hash": "7c5e8f58e6f9bce6ff872d12634a38b2be21159c063b6f3cf4f7ebeab8f31866",
+      "last_checked": "2025-06-06T08:16:54.980209",
+      "status": "unchanged",
+      "etag": "1e36033fe5cd67ab0933ce98f3e97448"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/saturate.json": {
+      "hash": "2e7609c7c40f15e8dbe374248ba0cea9bea40bdeb0a49da7e8f8e950518f7f97",
+      "last_checked": "2025-06-06T21:10:26.256029",
+      "status": "unchanged",
+      "etag": "W/\"49d455af5235104f49fd688b1775ae01\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment/saturate": {
+      "hash": "2e7609c7c40f15e8dbe374248ba0cea9bea40bdeb0a49da7e8f8e950518f7f97",
+      "last_checked": "2025-06-06T21:10:26.256029",
+      "status": "unchanged",
+      "etag": "baaf2137bde0b0e3afaedade58b3987a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/adjustment/hsv-adjust.json": {
+      "hash": "a216eaf17ff82a2a3443b7bebbb96c178b46f1d06d4537b0f0261474305369a7",
+      "last_checked": "2025-06-06T21:10:26.734333",
+      "status": "unchanged",
+      "etag": "W/\"f6ca2bcfc980b01dee163be868ebe6ed\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/adjustment/hsv-adjust": {
+      "hash": "a216eaf17ff82a2a3443b7bebbb96c178b46f1d06d4537b0f0261474305369a7",
+      "last_checked": "2025-06-06T21:10:26.734333",
+      "status": "unchanged",
+      "etag": "61b5782de70209351e5bd00aa2625ef9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/refract-(realitykit).json": {
+      "hash": "73ea6192922955b5716d23304e98590b3311d0c447b1528da8a53a5e9aaea202",
+      "last_checked": "2025-06-06T21:10:27.162356",
+      "status": "unchanged",
+      "etag": "W/\"5985d4686bce4b0a157648654fe05bd8\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/geometric/refract-(realitykit)": {
+      "hash": "73ea6192922955b5716d23304e98590b3311d0c447b1528da8a53a5e9aaea202",
+      "last_checked": "2025-06-06T21:10:27.162356",
+      "status": "unchanged",
+      "etag": "3a33c058743cf5090e0d0b632a2e5298"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/geometric/geometric-property.json": {
+      "hash": "f23fb417929aa02c0dacaf682d587010472c8b7fafbc8c006a359adeabeebac9",
+      "last_checked": "2025-06-06T21:10:27.588846",
+      "status": "unchanged",
+      "etag": "W/\"ccdb7a826035868330eb1e23a6cea5a9\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/geometric/geometric-property": {
+      "hash": "f23fb417929aa02c0dacaf682d587010472c8b7fafbc8c006a359adeabeebac9",
+      "last_checked": "2025-06-06T21:10:27.588846",
+      "status": "unchanged",
+      "etag": "76749fbb80b82cf824b1d1027befb2cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/math/atan2.json": {
+      "hash": "3454886f10fed509e2f9573e1d369bf66bc8bef317f651ac2f04dfaabbb73f20",
+      "last_checked": "2025-06-06T21:10:28.011193",
+      "status": "unchanged",
+      "etag": "W/\"9531d62151e445efe3b65541340a7173\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/math/atan2": {
+      "hash": "3454886f10fed509e2f9573e1d369bf66bc8bef317f651ac2f04dfaabbb73f20",
+      "last_checked": "2025-06-06T21:10:28.011193",
+      "status": "unchanged",
+      "etag": "a90cb241d5df7a9d8016c04d2f818c50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/cube-image-gradient-(realitykit).json": {
+      "hash": "802d6c29d5d5e1eaeb50daeb4f28f12e703e3ce4c288eb9e2535596288744cc5",
+      "last_checked": "2025-06-06T21:10:28.456971",
+      "status": "unchanged",
+      "etag": "W/\"5c84193c9e915e455cf424df10d53c9e\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/cube-image-gradient-(realitykit)": {
+      "hash": "802d6c29d5d5e1eaeb50daeb4f28f12e703e3ce4c288eb9e2535596288744cc5",
+      "last_checked": "2025-06-06T21:10:28.456971",
+      "status": "unchanged",
+      "etag": "e2337f814e8d9572855c3a3e95c1079a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/cube-image-(realitykit).json": {
+      "hash": "d100b8c5c5f629223d537163a39c8a147092394704f4a5acded165f0f6d937b2",
+      "last_checked": "2025-06-06T21:10:29.060228",
+      "status": "unchanged",
+      "etag": "W/\"12c2cbbc7275f21e3a126f05bd4957bc\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/cube-image-(realitykit)": {
+      "hash": "d100b8c5c5f629223d537163a39c8a147092394704f4a5acded165f0f6d937b2",
+      "last_checked": "2025-06-06T21:10:29.060228",
+      "status": "unchanged",
+      "etag": "3785d3d298e249d32463c11891f704a6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/realitykit/cube-image-lod-(realitykit).json": {
+      "hash": "7a456048baa8c534de13b0d05cfa0ca446499550f3da20d3f207247e54cfb688",
+      "last_checked": "2025-06-06T21:10:29.546196",
+      "status": "unchanged",
+      "etag": "W/\"b5128227053f8fbaa158128a0d5b112c\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/realitykit/cube-image-lod-(realitykit)": {
+      "hash": "7a456048baa8c534de13b0d05cfa0ca446499550f3da20d3f207247e54cfb688",
+      "last_checked": "2025-06-06T21:10:29.546196",
+      "status": "unchanged",
+      "etag": "8e7e4287fadc48dc518524a310c7daa2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/data/swizzle.json": {
+      "hash": "9f1d5a581334e8e92cdd87885695bc9b1623b9586601f60ad3ec7f56489069ae",
+      "last_checked": "2025-06-06T21:10:30.012593",
+      "status": "unchanged",
+      "etag": "W/\"7274fb58e7addeb70e90e64be9d7a069\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/data/swizzle": {
+      "hash": "9f1d5a581334e8e92cdd87885695bc9b1623b9586601f60ad3ec7f56489069ae",
+      "last_checked": "2025-06-06T21:10:30.012593",
+      "status": "unchanged",
+      "etag": "03ee388788af1c01d1d62938ac93f6df"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/2d-texture/tiled-image.json": {
+      "hash": "7fb863fd8c41a681b969c5e2c1809308361f878e12085736d7017f13e4fc6f47",
+      "last_checked": "2025-06-06T21:10:30.518336",
+      "status": "unchanged",
+      "etag": "W/\"cc6d03077f7ee0218a7b18bf3efbe325\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/2d-texture/tiled-image": {
+      "hash": "7fb863fd8c41a681b969c5e2c1809308361f878e12085736d7017f13e4fc6f47",
+      "last_checked": "2025-06-06T21:10:30.518336",
+      "status": "unchanged",
+      "etag": "25995b13d1d02830c229be00fd4bc8d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/shadergraph/material/nodegraph.json": {
+      "hash": "fe298205102e7b2579e6d52fb3d7e8bf746d49ebb6610e4c23bbebbc400699e9",
+      "last_checked": "2025-06-06T21:10:31.014481",
+      "status": "unchanged",
+      "etag": "W/\"e2025328d50dd5d0d69f56c79dd21d84\""
+    },
+    "https://developer.apple.com/documentation/shadergraph/material/nodegraph": {
+      "hash": "fe298205102e7b2579e6d52fb3d7e8bf746d49ebb6610e4c23bbebbc400699e9",
+      "last_checked": "2025-06-06T21:10:31.014481",
+      "status": "unchanged",
+      "etag": "a82fb2f17b892c7c4b0de7ed4fb84f89"
+    }
+  }
+}

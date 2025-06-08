@@ -1,0 +1,2347 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T16:39:28.158562",
+    "total_pages": 425,
+    "etags_collected": "2025-06-07T16:39:28.158581"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/MediaLibrary.json": {
+      "hash": "06cd8e7c424c62ece5b3a93efc2b337717438c3d30b14aea76b362e30c6336ea",
+      "last_checked": "2025-06-06T04:07:24.528422",
+      "status": "new",
+      "etag": "W/\"b5808c55fedf74d4ce1dfdc4395b871c\""
+    },
+    "https://developer.apple.com/documentation/MediaLibrary": {
+      "hash": "b2fccd17fedd50572ae207ed8728d56f8ba46ae54304d1017a40d82457fb161d",
+      "last_checked": "2025-06-06T04:07:24.528710",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary.json": {
+      "hash": "b2fccd17fedd50572ae207ed8728d56f8ba46ae54304d1017a40d82457fb161d",
+      "last_checked": "2025-06-06T04:07:24.528710",
+      "status": "unchanged",
+      "etag": "W/\"b5808c55fedf74d4ce1dfdc4395b871c\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup.json": {
+      "hash": "a59857ce84ffd53bf8063fc9bb0ec87a12812c220b1196df2b2de00952ad7cbe",
+      "last_checked": "2025-06-06T04:07:25.318072",
+      "status": "unchanged",
+      "etag": "W/\"5f7c3f26d42f8ed1b5096f14374756cd\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup": {
+      "hash": "a59857ce84ffd53bf8063fc9bb0ec87a12812c220b1196df2b2de00952ad7cbe",
+      "last_checked": "2025-06-06T04:07:25.318072",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialibrary.json": {
+      "hash": "a63e4f75ad7d8488744ee67187c8bc19d2212527aaa082b6594c90470384b27c",
+      "last_checked": "2025-06-06T04:07:25.731194",
+      "status": "unchanged",
+      "etag": "W/\"d5026256a116112dfdaa60eb10cd24b8\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmedialibrary": {
+      "hash": "a63e4f75ad7d8488744ee67187c8bc19d2212527aaa082b6594c90470384b27c",
+      "last_checked": "2025-06-06T04:07:25.731194",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject.json": {
+      "hash": "7feaa97d46c06aa70e9ad33d47c12ce56a2b9a32fd64daca59e7a8e82b586b2a",
+      "last_checked": "2025-06-06T04:07:26.112385",
+      "status": "unchanged",
+      "etag": "W/\"a71af0df759257cf36095d21ef3ccd8e\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject": {
+      "hash": "7feaa97d46c06aa70e9ad33d47c12ce56a2b9a32fd64daca59e7a8e82b586b2a",
+      "last_checked": "2025-06-06T04:07:26.112385",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource.json": {
+      "hash": "20ba3b08df2d7fdf8f2d77afb5bb466604b6b85acf273076be056d41ffc67d76",
+      "last_checked": "2025-06-06T04:07:26.460580",
+      "status": "unchanged",
+      "etag": "W/\"4a5a181eaf3bf0cd91cd63b2c93554ba\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasource": {
+      "hash": "20ba3b08df2d7fdf8f2d77afb5bb466604b6b85acf273076be056d41ffc67d76",
+      "last_checked": "2025-06-06T04:07:26.460580",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/medialibrary-constants.json": {
+      "hash": "6d63d120582da926d10e856eb760a6a51587d970214972db7ff5c7a365de5cfe",
+      "last_checked": "2025-06-06T04:07:26.892646",
+      "status": "unchanged",
+      "etag": "W/\"b03ca320cdfaba290f73f9968fa83061\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/medialibrary-constants": {
+      "hash": "6d63d120582da926d10e856eb760a6a51587d970214972db7ff5c7a365de5cfe",
+      "last_checked": "2025-06-06T04:07:26.892646",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/identifier.json": {
+      "hash": "5f0a2d7ce894e6903e5a4e1a366de8d716daa60c0d9044131758f629be46847b",
+      "last_checked": "2025-06-06T04:07:27.292584",
+      "status": "unchanged",
+      "etag": "W/\"d41f2c390e2bce53fbcace7b572d6edc\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/identifier": {
+      "hash": "5f0a2d7ce894e6903e5a4e1a366de8d716daa60c0d9044131758f629be46847b",
+      "last_checked": "2025-06-06T04:07:27.292584",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/typeidentifier.json": {
+      "hash": "09817d6817688e982757f5d516041751ecfbb9d33fb2183340146324a3c5f589",
+      "last_checked": "2025-06-06T04:07:27.662443",
+      "status": "unchanged",
+      "etag": "W/\"236bcd7a0baf85b7685a1fad3b986db0\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/typeidentifier": {
+      "hash": "09817d6817688e982757f5d516041751ecfbb9d33fb2183340146324a3c5f589",
+      "last_checked": "2025-06-06T04:07:27.662443",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/mediasourceidentifier.json": {
+      "hash": "46a0a6ef4e01848e9c4987940b515f5e4b1271a4ffa9f60197f99afa7109c0a9",
+      "last_checked": "2025-06-06T04:07:28.059340",
+      "status": "unchanged",
+      "etag": "W/\"233190ac8935c8f5ab86fc1dbf712273\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/mediasourceidentifier": {
+      "hash": "46a0a6ef4e01848e9c4987940b515f5e4b1271a4ffa9f60197f99afa7109c0a9",
+      "last_checked": "2025-06-06T04:07:28.059340",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/medialibrary.json": {
+      "hash": "be02ff2dae2959768ed070b135ca717aa1b3caf7b00a4248a3e7f8354d9475a3",
+      "last_checked": "2025-06-06T04:07:28.464057",
+      "status": "unchanged",
+      "etag": "W/\"95e101afec2270310fd2c8de83a09a10\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/medialibrary": {
+      "hash": "be02ff2dae2959768ed070b135ca717aa1b3caf7b00a4248a3e7f8354d9475a3",
+      "last_checked": "2025-06-06T04:07:28.464057",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/attributes.json": {
+      "hash": "f38ed9fef67a01eea3b3857e4511bcbf62dbf1cf422910f360e500f3b8bc5acb",
+      "last_checked": "2025-06-06T04:07:28.869326",
+      "status": "unchanged",
+      "etag": "W/\"df00a38637b20522384750804dea82f1\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/attributes": {
+      "hash": "f38ed9fef67a01eea3b3857e4511bcbf62dbf1cf422910f360e500f3b8bc5acb",
+      "last_checked": "2025-06-06T04:07:28.869326",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/name.json": {
+      "hash": "513d2f6cf7d72ab3136371b7f49735aed6a96d916a775e5402c48e22cf08011f",
+      "last_checked": "2025-06-06T04:07:29.264704",
+      "status": "unchanged",
+      "etag": "W/\"3e7e976aa6fbcf973f9ef0ad644d7e3d\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/name": {
+      "hash": "513d2f6cf7d72ab3136371b7f49735aed6a96d916a775e5402c48e22cf08011f",
+      "last_checked": "2025-06-06T04:07:29.264704",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/iconimage.json": {
+      "hash": "6bd9c1ea7a0b73a73387b836f7506f93e03aa2ad87ec817048db885748af22e4",
+      "last_checked": "2025-06-06T04:07:29.666121",
+      "status": "unchanged",
+      "etag": "W/\"b9a1ae6a455d0a3ed9b6042a63447c76\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/iconimage": {
+      "hash": "6bd9c1ea7a0b73a73387b836f7506f93e03aa2ad87ec817048db885748af22e4",
+      "last_checked": "2025-06-06T04:07:29.666121",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/url.json": {
+      "hash": "f09d93553b8fd602383c266716104e4b7342d9b7fc1c8985d81aee5eba762be9",
+      "last_checked": "2025-06-06T04:07:30.033915",
+      "status": "unchanged",
+      "etag": "W/\"cc73543455d8dc424591ff5fe399a6bb\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/url": {
+      "hash": "f09d93553b8fd602383c266716104e4b7342d9b7fc1c8985d81aee5eba762be9",
+      "last_checked": "2025-06-06T04:07:30.033915",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/modificationdate.json": {
+      "hash": "455b90065b2be610afd1b22e3433a1afbb107e74b01e306ce4731cd13b8f356a",
+      "last_checked": "2025-06-06T04:07:30.405063",
+      "status": "unchanged",
+      "etag": "W/\"7846b731bf679dda689b26a07ade9160\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/modificationdate": {
+      "hash": "455b90065b2be610afd1b22e3433a1afbb107e74b01e306ce4731cd13b8f356a",
+      "last_checked": "2025-06-06T04:07:30.405063",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/parent.json": {
+      "hash": "8a6a6dc96d12e77683aaa4e19f390f3c7f60fa80f008b4a360cb98066b69186c",
+      "last_checked": "2025-06-06T04:07:30.780406",
+      "status": "unchanged",
+      "etag": "W/\"7d403fa77fc41b7cd4944bca45b91c1b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/parent": {
+      "hash": "8a6a6dc96d12e77683aaa4e19f390f3c7f60fa80f008b4a360cb98066b69186c",
+      "last_checked": "2025-06-06T04:07:30.780406",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/childgroups.json": {
+      "hash": "183b210ed34f0c8f0101338e3edb633f80e5b975544e8e0ccf55403b4c620dc2",
+      "last_checked": "2025-06-06T04:07:31.151004",
+      "status": "unchanged",
+      "etag": "W/\"7152230e3e099b2e9aa0adac4728d061\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/childgroups": {
+      "hash": "183b210ed34f0c8f0101338e3edb633f80e5b975544e8e0ccf55403b4c620dc2",
+      "last_checked": "2025-06-06T04:07:31.151004",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/mediaobjects.json": {
+      "hash": "2b89d7b2c02d0546d66ac4872618befc974183bf1bccf5e61358c44d9b6c3799",
+      "last_checked": "2025-06-06T04:07:31.514266",
+      "status": "unchanged",
+      "etag": "W/\"2e6761294a9725062dce60a2bc218234\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediagroup/mediaobjects": {
+      "hash": "2b89d7b2c02d0546d66ac4872618befc974183bf1bccf5e61358c44d9b6c3799",
+      "last_checked": "2025-06-06T04:07:31.514266",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialibrary/init(options:).json": {
+      "hash": "e22b5dc04993db1422acc252a0782c2e1e059997803a43d1556e331819355d8f",
+      "last_checked": "2025-06-06T04:07:31.843382",
+      "status": "unchanged",
+      "etag": "W/\"0e412d098984346e60cce53452f769eb\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmedialibrary/init(options:)": {
+      "hash": "e22b5dc04993db1422acc252a0782c2e1e059997803a43d1556e331819355d8f",
+      "last_checked": "2025-06-06T04:07:31.843382",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialibrary/mediasources.json": {
+      "hash": "65ded5e8ef72ac326be1efa73623b8d7e14f6d225181fe8e74b46759d3c9aefd",
+      "last_checked": "2025-06-06T04:07:32.214614",
+      "status": "unchanged",
+      "etag": "W/\"6f4051c9ba09b2a9a3b62dc46888fec2\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmedialibrary/mediasources": {
+      "hash": "65ded5e8ef72ac326be1efa73623b8d7e14f6d225181fe8e74b46759d3c9aefd",
+      "last_checked": "2025-06-06T04:07:32.214614",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/load-options-keys.json": {
+      "hash": "c473dee452252a1cb230b168c8368a7162746eef11afa40e7e29cd1b476aee94",
+      "last_checked": "2025-06-06T04:07:32.626240",
+      "status": "unchanged",
+      "etag": "W/\"429fcbbdc2b197e46bf6cdf11ad0a937\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/load-options-keys": {
+      "hash": "c473dee452252a1cb230b168c8368a7162746eef11afa40e7e29cd1b476aee94",
+      "last_checked": "2025-06-06T04:07:32.626240",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/media-source-identifiers.json": {
+      "hash": "617d33699fe7aa6a5876a4fabc5285f294420fd982124fab560d5b28f46fe0d6",
+      "last_checked": "2025-06-06T04:07:33.057214",
+      "status": "unchanged",
+      "etag": "W/\"a1680c45b2d1401e9f6cda3b0c0b2490\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/media-source-identifiers": {
+      "hash": "617d33699fe7aa6a5876a4fabc5285f294420fd982124fab560d5b28f46fe0d6",
+      "last_checked": "2025-06-06T04:07:33.057214",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/non-app-specific-media-source-identifiers.json": {
+      "hash": "5807d486e19f31ac8151f835624f3b5e561ec14f92a2b25e051a01523ea23fb6",
+      "last_checked": "2025-06-06T04:07:33.476838",
+      "status": "unchanged",
+      "etag": "W/\"fd06d84de5a57f51d5e8ad954c3b48ae\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/non-app-specific-media-source-identifiers": {
+      "hash": "5807d486e19f31ac8151f835624f3b5e561ec14f92a2b25e051a01523ea23fb6",
+      "last_checked": "2025-06-06T04:07:33.476838",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/well-known-folder-identifiers.json": {
+      "hash": "76803429a9997f36a0428136e35968d338eaf998b1f554589cb0e220b6d1ec7a",
+      "last_checked": "2025-06-06T04:07:33.830798",
+      "status": "unchanged",
+      "etag": "W/\"51dcdf9d1e3668714828b15abbac42b7\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/well-known-folder-identifiers": {
+      "hash": "76803429a9997f36a0428136e35968d338eaf998b1f554589cb0e220b6d1ec7a",
+      "last_checked": "2025-06-06T04:07:33.830798",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/identifier.json": {
+      "hash": "0d36a4e775babe951533ba3859e0374a0d71e5a80e7a3fa81d4ddaa83ec3867a",
+      "last_checked": "2025-06-06T04:07:34.219389",
+      "status": "unchanged",
+      "etag": "W/\"68ce4ee2442379d0a04a68c92024ca2d\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/identifier": {
+      "hash": "0d36a4e775babe951533ba3859e0374a0d71e5a80e7a3fa81d4ddaa83ec3867a",
+      "last_checked": "2025-06-06T04:07:34.219389",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/mediasourceidentifier.json": {
+      "hash": "7f1bcf9675602eba945da5c2612820ed7285a26a415170b48762945a38beba57",
+      "last_checked": "2025-06-06T04:07:34.570752",
+      "status": "unchanged",
+      "etag": "W/\"f5a6f213350f2c08c1c3696bfd2b77ad\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/mediasourceidentifier": {
+      "hash": "7f1bcf9675602eba945da5c2612820ed7285a26a415170b48762945a38beba57",
+      "last_checked": "2025-06-06T04:07:34.570752",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/medialibrary.json": {
+      "hash": "8e9e9674051cef0267623fa8e63c05038b3dc77006ab1a0835148875e56b4f52",
+      "last_checked": "2025-06-06T04:07:34.966658",
+      "status": "unchanged",
+      "etag": "W/\"e3ae8b2d86978fc005b841cdebfb29c4\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/medialibrary": {
+      "hash": "8e9e9674051cef0267623fa8e63c05038b3dc77006ab1a0835148875e56b4f52",
+      "last_checked": "2025-06-06T04:07:34.966658",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/attributes.json": {
+      "hash": "9762c069a2c0295812fbaa83991c11be8240e149df7785518c0adae342fdd757",
+      "last_checked": "2025-06-06T04:07:35.347959",
+      "status": "unchanged",
+      "etag": "W/\"1a216699cbffc4dbec8568dd720b3d39\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/attributes": {
+      "hash": "9762c069a2c0295812fbaa83991c11be8240e149df7785518c0adae342fdd757",
+      "last_checked": "2025-06-06T04:07:35.347959",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/mediatype.json": {
+      "hash": "e77faebbaa2be92e51a8d03f41ab31c439a3f434a84ea78e8e8bbb6d3d4f188f",
+      "last_checked": "2025-06-06T04:07:35.737481",
+      "status": "unchanged",
+      "etag": "W/\"c3864709337dfd33125648b331ecec32\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/mediatype": {
+      "hash": "e77faebbaa2be92e51a8d03f41ab31c439a3f434a84ea78e8e8bbb6d3d4f188f",
+      "last_checked": "2025-06-06T04:07:35.737481",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/contenttype.json": {
+      "hash": "7962441c0e4879590573ee98bf8bb804d0b84f80c4d8de448f39c71af50a003c",
+      "last_checked": "2025-06-06T04:07:36.106010",
+      "status": "unchanged",
+      "etag": "W/\"7efcb5459cffe9dc8440e3099eb527ab\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/contenttype": {
+      "hash": "7962441c0e4879590573ee98bf8bb804d0b84f80c4d8de448f39c71af50a003c",
+      "last_checked": "2025-06-06T04:07:36.106010",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/name.json": {
+      "hash": "2d00cdc30765aa9d6e052d3cf28f1b9a6d5c4dbf6f5949c933bf18859c8f8032",
+      "last_checked": "2025-06-06T04:07:36.480678",
+      "status": "unchanged",
+      "etag": "W/\"b4a223aeca22e69812d5466ea402e817\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/name": {
+      "hash": "2d00cdc30765aa9d6e052d3cf28f1b9a6d5c4dbf6f5949c933bf18859c8f8032",
+      "last_checked": "2025-06-06T04:07:36.480678",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/url.json": {
+      "hash": "671f5245ba42e0bc6e7f9a3b7334cf55f8456631121df4b53def254739275679",
+      "last_checked": "2025-06-06T04:07:36.883116",
+      "status": "unchanged",
+      "etag": "W/\"4a5090b0f5a96b400f2c79a07af7d57c\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/url": {
+      "hash": "671f5245ba42e0bc6e7f9a3b7334cf55f8456631121df4b53def254739275679",
+      "last_checked": "2025-06-06T04:07:36.883116",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/originalurl.json": {
+      "hash": "2bd348209bebc9fe5d22c42929d915e2f0837fc0edca8b6840fb861d5dcbd5bd",
+      "last_checked": "2025-06-06T04:07:37.284028",
+      "status": "unchanged",
+      "etag": "W/\"486b7383d69e545bc44dd7cd9d499b82\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/originalurl": {
+      "hash": "2bd348209bebc9fe5d22c42929d915e2f0837fc0edca8b6840fb861d5dcbd5bd",
+      "last_checked": "2025-06-06T04:07:37.284028",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/filesize.json": {
+      "hash": "1a474a769c15d3ad244c8148e00df80115d4ac42a7d04c2c649e448c049d2d07",
+      "last_checked": "2025-06-06T04:07:37.688445",
+      "status": "unchanged",
+      "etag": "W/\"8fcf911bd7a21b111dde1d770d7964e7\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/filesize": {
+      "hash": "1a474a769c15d3ad244c8148e00df80115d4ac42a7d04c2c649e448c049d2d07",
+      "last_checked": "2025-06-06T04:07:37.688445",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/modificationdate.json": {
+      "hash": "3b42ede832fb2a0d57d52c70b6bccab57a6aac4e6788459b4996ba7469aa7b6e",
+      "last_checked": "2025-06-06T04:07:38.079347",
+      "status": "unchanged",
+      "etag": "W/\"62cd8b39218d8e3c3f6acdda16aba8ae\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/modificationdate": {
+      "hash": "3b42ede832fb2a0d57d52c70b6bccab57a6aac4e6788459b4996ba7469aa7b6e",
+      "last_checked": "2025-06-06T04:07:38.079347",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/thumbnailurl.json": {
+      "hash": "ee60afe46eba497692c258a64ad3a43ccebfab64478e319aee5bd73ba04f515e",
+      "last_checked": "2025-06-06T04:07:38.487836",
+      "status": "unchanged",
+      "etag": "W/\"5165884f8c027101718a79a3567f7c70\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/thumbnailurl": {
+      "hash": "ee60afe46eba497692c258a64ad3a43ccebfab64478e319aee5bd73ba04f515e",
+      "last_checked": "2025-06-06T04:07:38.487836",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/artworkimage.json": {
+      "hash": "612748df3dcdc947f347e65c42d08da2419e97d19144954a8e4990f3abd9bd96",
+      "last_checked": "2025-06-06T04:07:38.852858",
+      "status": "unchanged",
+      "etag": "W/\"ddfde796eda2177bdf5c376aa69dc4c5\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobject/artworkimage": {
+      "hash": "612748df3dcdc947f347e65c42d08da2419e97d19144954a8e4990f3abd9bd96",
+      "last_checked": "2025-06-06T04:07:38.852858",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/mediasourceidentifier.json": {
+      "hash": "492e5176f0d1a6b8a85d967724d3f09c78838496b6d42967f2c635238440a6b1",
+      "last_checked": "2025-06-06T04:07:39.227355",
+      "status": "unchanged",
+      "etag": "W/\"6c18a82b0989b033de2f01a120a72ddc\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasource/mediasourceidentifier": {
+      "hash": "492e5176f0d1a6b8a85d967724d3f09c78838496b6d42967f2c635238440a6b1",
+      "last_checked": "2025-06-06T04:07:39.227355",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/medialibrary.json": {
+      "hash": "543bcf24431612fb3b910c37bb931e16cd4755f336ae425a4ae6deeaecbc1c75",
+      "last_checked": "2025-06-06T04:07:39.618671",
+      "status": "unchanged",
+      "etag": "W/\"4f84ac9a58e5c8d16e6958c73cdcf7ec\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasource/medialibrary": {
+      "hash": "543bcf24431612fb3b910c37bb931e16cd4755f336ae425a4ae6deeaecbc1c75",
+      "last_checked": "2025-06-06T04:07:39.618671",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/attributes.json": {
+      "hash": "540c312855fdfd1825ca9ff3dba90dbc7c7815e8a88a3e1c9d5e33410c81a073",
+      "last_checked": "2025-06-06T04:07:39.994122",
+      "status": "unchanged",
+      "etag": "W/\"bc30cb044a6d84d489459c325b6d5bfa\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasource/attributes": {
+      "hash": "540c312855fdfd1825ca9ff3dba90dbc7c7815e8a88a3e1c9d5e33410c81a073",
+      "last_checked": "2025-06-06T04:07:39.994122",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/rootmediagroup.json": {
+      "hash": "a661da24eb89fce73a9d0825f32717e3664239a1dbfac094bab6e7df86fab9da",
+      "last_checked": "2025-06-06T04:07:40.344164",
+      "status": "unchanged",
+      "etag": "W/\"e989cbea43e5430c92436a3706038c11\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasource/rootmediagroup": {
+      "hash": "a661da24eb89fce73a9d0825f32717e3664239a1dbfac094bab6e7df86fab9da",
+      "last_checked": "2025-06-06T04:07:40.344164",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/mediagroup(foridentifier:).json": {
+      "hash": "9f36b8c603cb82959c53bd55365c92e5c00efac38590ca0188add0f77012e36d",
+      "last_checked": "2025-06-06T04:07:40.739464",
+      "status": "unchanged",
+      "etag": "W/\"6bfb73bde81a6a532d51c0fc22a3df82\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasource/mediagroup(foridentifier:)": {
+      "hash": "9f36b8c603cb82959c53bd55365c92e5c00efac38590ca0188add0f77012e36d",
+      "last_checked": "2025-06-06T04:07:40.739464",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/mediagroups(foridentifiers:).json": {
+      "hash": "baf707fbcea29f4400f869ffba42d5b23da7d29cc4abe49152544c1b667d142c",
+      "last_checked": "2025-06-06T04:07:41.144991",
+      "status": "unchanged",
+      "etag": "W/\"b910197300bae5fa27da7fd70faba950\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasource/mediagroups(foridentifiers:)": {
+      "hash": "baf707fbcea29f4400f869ffba42d5b23da7d29cc4abe49152544c1b667d142c",
+      "last_checked": "2025-06-06T04:07:41.144991",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/mediaobject(foridentifier:).json": {
+      "hash": "e22339cca4190916b283dc4f25750b22c7c78a44ae2f9e9a77d7bb4b31264bd9",
+      "last_checked": "2025-06-06T04:07:41.489370",
+      "status": "unchanged",
+      "etag": "W/\"e0704941f9c89c828ce0f513fbc18721\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasource/mediaobject(foridentifier:)": {
+      "hash": "e22339cca4190916b283dc4f25750b22c7c78a44ae2f9e9a77d7bb4b31264bd9",
+      "last_checked": "2025-06-06T04:07:41.489370",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/mediaobjects(foridentifiers:).json": {
+      "hash": "1c270e53b0bc3b8faf5be5e7050565588a40c3bcebfd905ddf546e63ecc999c4",
+      "last_checked": "2025-06-06T04:07:41.900321",
+      "status": "unchanged",
+      "etag": "W/\"79033e830fe8ffe74165696990ce789a\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasource/mediaobjects(foridentifiers:)": {
+      "hash": "1c270e53b0bc3b8faf5be5e7050565588a40c3bcebfd905ddf546e63ecc999c4",
+      "last_checked": "2025-06-06T04:07:41.900321",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/aperture-media-group-type-identifiers.json": {
+      "hash": "382d49b98a43154632a7845e239db508e227ad0649ad868d02bfc4c1f48f5316",
+      "last_checked": "2025-06-06T04:07:42.286528",
+      "status": "unchanged",
+      "etag": "W/\"4d00253c5e0206f9820e33f44be996a0\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/aperture-media-group-type-identifiers": {
+      "hash": "382d49b98a43154632a7845e239db508e227ad0649ad868d02bfc4c1f48f5316",
+      "last_checked": "2025-06-06T04:07:42.286528",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/final-cut-pro-media-group-type-identifiers.json": {
+      "hash": "decc1b66a19d6a02c646cf121d7cd1d0c79736e53b2cbe519cb77a0edcd8b353",
+      "last_checked": "2025-06-06T04:07:42.665333",
+      "status": "unchanged",
+      "etag": "W/\"4e7bfa268d98864bcf4484925eb4b7aa\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/final-cut-pro-media-group-type-identifiers": {
+      "hash": "decc1b66a19d6a02c646cf121d7cd1d0c79736e53b2cbe519cb77a0edcd8b353",
+      "last_checked": "2025-06-06T04:07:42.665333",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/folders-media-group-type-identifiers.json": {
+      "hash": "6fccbc71b6a4ba5aa60dd7ee90d02db05ec408e9ed44c02954cb4f02f6a5342e",
+      "last_checked": "2025-06-06T04:07:43.025917",
+      "status": "unchanged",
+      "etag": "W/\"b6ec230a53fa2bfdc78ac077ac6c0462\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/folders-media-group-type-identifiers": {
+      "hash": "6fccbc71b6a4ba5aa60dd7ee90d02db05ec408e9ed44c02954cb4f02f6a5342e",
+      "last_checked": "2025-06-06T04:07:43.025917",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/garageband-media-group-type-identifiers.json": {
+      "hash": "aa5b2cdb61d5e5aeb1c505605011dc84b402b40dbb8ea97b26ecdad76f6b8bfb",
+      "last_checked": "2025-06-06T04:07:43.401702",
+      "status": "unchanged",
+      "etag": "W/\"d145cc1af4ffaf09ff881f4a9f395ebd\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/garageband-media-group-type-identifiers": {
+      "hash": "aa5b2cdb61d5e5aeb1c505605011dc84b402b40dbb8ea97b26ecdad76f6b8bfb",
+      "last_checked": "2025-06-06T04:07:43.401702",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/logic-media-group-type-identifiers.json": {
+      "hash": "aaf62c2f1b77104258717862d5b7d6e8b8a684158b8f14acd22d994f976b297d",
+      "last_checked": "2025-06-06T04:07:43.800555",
+      "status": "unchanged",
+      "etag": "W/\"911de83b2a0d9605d67b360bc4d86e72\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/logic-media-group-type-identifiers": {
+      "hash": "aaf62c2f1b77104258717862d5b7d6e8b8a684158b8f14acd22d994f976b297d",
+      "last_checked": "2025-06-06T04:07:43.800555",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadappfolderskey.json": {
+      "hash": "816565735a5bdc71580891772dca2a3b755f44f15b0b87ecf89ae378718f5adb",
+      "last_checked": "2025-06-06T04:07:44.208212",
+      "status": "unchanged",
+      "etag": "W/\"c452ea54f9fc42e7765c7bd976847da7\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmedialoadappfolderskey": {
+      "hash": "816565735a5bdc71580891772dca2a3b755f44f15b0b87ecf89ae378718f5adb",
+      "last_checked": "2025-06-06T04:07:44.208212",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadappleloops.json": {
+      "hash": "af146367b1b7d982ff2b88d9f81f425956f7bc71f89d7181547657cf916dc45e",
+      "last_checked": "2025-06-06T04:07:44.551539",
+      "status": "unchanged",
+      "etag": "W/\"9615738aa54178eb49e8abfa9ca2fde4\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmedialoadappleloops": {
+      "hash": "af146367b1b7d982ff2b88d9f81f425956f7bc71f89d7181547657cf916dc45e",
+      "last_checked": "2025-06-06T04:07:44.551539",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadexcludesourceskey.json": {
+      "hash": "c066941f3200e079f26c97e4285f8f5e810762e670b3cfbcb5e16bddbaaa3e94",
+      "last_checked": "2025-06-06T04:07:44.931237",
+      "status": "unchanged",
+      "etag": "W/\"c16f605ab1436cc7f63f88ebdb6b3468\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmedialoadexcludesourceskey": {
+      "hash": "c066941f3200e079f26c97e4285f8f5e810762e670b3cfbcb5e16bddbaaa3e94",
+      "last_checked": "2025-06-06T04:07:44.931237",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadfolderskey.json": {
+      "hash": "6230f3cfe8e1d0602ef5c483af4c73e949155454ac4b551c3e2824cbf739a66a",
+      "last_checked": "2025-06-06T04:07:45.311913",
+      "status": "unchanged",
+      "etag": "W/\"25de8128132d0f8010dcb2d8c5df1bfe\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmedialoadfolderskey": {
+      "hash": "6230f3cfe8e1d0602ef5c483af4c73e949155454ac4b551c3e2824cbf739a66a",
+      "last_checked": "2025-06-06T04:07:45.311913",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadincludesourceskey.json": {
+      "hash": "e5d08b5ea4881ddafbaca3390688e0d20f4573b290b4191a7db5e88959e199d1",
+      "last_checked": "2025-06-06T04:07:45.696361",
+      "status": "unchanged",
+      "etag": "W/\"c75fa0c13d995631995e611d18e78c9a\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmedialoadincludesourceskey": {
+      "hash": "e5d08b5ea4881ddafbaca3390688e0d20f4573b290b4191a7db5e88959e199d1",
+      "last_checked": "2025-06-06T04:07:45.696361",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadmoviesfolder.json": {
+      "hash": "14d06c74c530012b6098fb5c5ccd76ec7640183a085d2076b58170fe2071d384",
+      "last_checked": "2025-06-06T04:07:46.062133",
+      "status": "unchanged",
+      "etag": "W/\"2dc4232cb77f75253b6427a5571824a6\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmedialoadmoviesfolder": {
+      "hash": "14d06c74c530012b6098fb5c5ccd76ec7640183a085d2076b58170fe2071d384",
+      "last_checked": "2025-06-06T04:07:46.062133",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadsourcetypeskey.json": {
+      "hash": "20a5de7ed1352b1405f147b136bb445a988e58000014e882ce640ebd83b1cb60",
+      "last_checked": "2025-06-06T04:07:46.457767",
+      "status": "unchanged",
+      "etag": "W/\"9274642aa5766f6425ac95404aa8fc9b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmedialoadsourcetypeskey": {
+      "hash": "20a5de7ed1352b1405f147b136bb445a988e58000014e882ce640ebd83b1cb60",
+      "last_checked": "2025-06-06T04:07:46.457767",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourceapertureidentifier.json": {
+      "hash": "87667c3b0ad30cf7bcb63de2f1eeef7546d5cb7a0538cacee5e7fab2ea168e29",
+      "last_checked": "2025-06-06T04:07:46.829368",
+      "status": "unchanged",
+      "etag": "W/\"4fd94a43440522963c8d3aebeae0eae4\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourceapertureidentifier": {
+      "hash": "87667c3b0ad30cf7bcb63de2f1eeef7546d5cb7a0538cacee5e7fab2ea168e29",
+      "last_checked": "2025-06-06T04:07:46.829368",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourceappdefinedfoldersidentifier.json": {
+      "hash": "256f9aeaaaa916e3ed8f0ef8b9a14ea50e9084c57aaf3fee57458234b75512e6",
+      "last_checked": "2025-06-06T04:07:47.261116",
+      "status": "unchanged",
+      "etag": "W/\"ca9a0c2c1a8e8b8d979f0aaa1de652ca\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourceappdefinedfoldersidentifier": {
+      "hash": "256f9aeaaaa916e3ed8f0ef8b9a14ea50e9084c57aaf3fee57458234b75512e6",
+      "last_checked": "2025-06-06T04:07:47.261116",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcecustomfoldersidentifier.json": {
+      "hash": "09ead488d43b4dbe2900417f21466d7547ed6d253c4a01efa03ea332d082a578",
+      "last_checked": "2025-06-06T04:07:47.621136",
+      "status": "unchanged",
+      "etag": "W/\"7697f31020552f0355b46e2e926a09ad\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcecustomfoldersidentifier": {
+      "hash": "09ead488d43b4dbe2900417f21466d7547ed6d253c4a01efa03ea332d082a578",
+      "last_checked": "2025-06-06T04:07:47.621136",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcefinalcutidentifier.json": {
+      "hash": "29eef2a97b6b7e225dd585925695c066eddc9e49159bcd631456c198ccb5248a",
+      "last_checked": "2025-06-06T04:07:47.967740",
+      "status": "unchanged",
+      "etag": "W/\"2e363d4faeb868e35ead6566c004e9fc\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcefinalcutidentifier": {
+      "hash": "29eef2a97b6b7e225dd585925695c066eddc9e49159bcd631456c198ccb5248a",
+      "last_checked": "2025-06-06T04:07:47.967740",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcegaragebandidentifier.json": {
+      "hash": "7d7e24525a2f24cc5ffe185b03008f85de8e198c82061a35e4a9d7cc492c4061",
+      "last_checked": "2025-06-06T04:07:48.384017",
+      "status": "unchanged",
+      "etag": "W/\"4c037ff8323864321c7ef7ae30685ecb\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcegaragebandidentifier": {
+      "hash": "7d7e24525a2f24cc5ffe185b03008f85de8e198c82061a35e4a9d7cc492c4061",
+      "last_checked": "2025-06-06T04:07:48.384017",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcelogicidentifier.json": {
+      "hash": "79b9ff43ff8f9b91293074e6ece4109831fa565ded78c26661f11a79260f3187",
+      "last_checked": "2025-06-06T04:07:48.747618",
+      "status": "unchanged",
+      "etag": "W/\"d766fa7128e0967fc1b5f64e24a3f95c\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcelogicidentifier": {
+      "hash": "79b9ff43ff8f9b91293074e6ece4109831fa565ded78c26661f11a79260f3187",
+      "last_checked": "2025-06-06T04:07:48.747618",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcemoviesfolderidentifier.json": {
+      "hash": "950f0006286ac863bbb94e4eb037fe1dca0903d4b6759c64c2024db0b105be92",
+      "last_checked": "2025-06-06T04:07:49.189959",
+      "status": "unchanged",
+      "etag": "W/\"3f99f733683ac59e3a3da149012764c0\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcemoviesfolderidentifier": {
+      "hash": "950f0006286ac863bbb94e4eb037fe1dca0903d4b6759c64c2024db0b105be92",
+      "last_checked": "2025-06-06T04:07:49.189959",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcephotoboothidentifier.json": {
+      "hash": "95a8ff3820708ae0b3c909aa52090b83e7337e39cc5aa26618512b0742afe678",
+      "last_checked": "2025-06-06T04:07:49.561351",
+      "status": "unchanged",
+      "etag": "W/\"55adb0f58ca0abba29a1d52ae1ec03dc\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcephotoboothidentifier": {
+      "hash": "95a8ff3820708ae0b3c909aa52090b83e7337e39cc5aa26618512b0742afe678",
+      "last_checked": "2025-06-06T04:07:49.561351",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcephotosidentifier.json": {
+      "hash": "22254358d5533dfaa429b6cef7b668148818a4830c7d01d8f0cb01c80ed3db4b",
+      "last_checked": "2025-06-06T04:07:49.908523",
+      "status": "unchanged",
+      "etag": "W/\"a7545c66f21f1d6bea41c731791c8f78\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcephotosidentifier": {
+      "hash": "22254358d5533dfaa429b6cef7b668148818a4830c7d01d8f0cb01c80ed3db4b",
+      "last_checked": "2025-06-06T04:07:49.908523",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcetype.json": {
+      "hash": "37729f37689a6db92a5fc972383fe4bcc9b76b8d5737248e22f2eb72dac1e00f",
+      "last_checked": "2025-06-06T04:07:50.282498",
+      "status": "unchanged",
+      "etag": "W/\"5339536683d788520a1defa3adde2a28\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcetype": {
+      "hash": "37729f37689a6db92a5fc972383fe4bcc9b76b8d5737248e22f2eb72dac1e00f",
+      "last_checked": "2025-06-06T04:07:50.282498",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourceimovieidentifier.json": {
+      "hash": "8be7ed7b671a6aceb6fc5a7760fef078e7e3b53728831de54cd56857463fe6e0",
+      "last_checked": "2025-06-06T04:07:50.691692",
+      "status": "unchanged",
+      "etag": "W/\"54cc901afa6bc9975b3ef0a4f80135ff\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourceimovieidentifier": {
+      "hash": "8be7ed7b671a6aceb6fc5a7760fef078e7e3b53728831de54cd56857463fe6e0",
+      "last_checked": "2025-06-06T04:07:50.691692",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourceiphotoidentifier.json": {
+      "hash": "05929e9664a0126762d7a689829dd75bb0277c20b9d9f401dd179b13879b08f6",
+      "last_checked": "2025-06-06T04:07:51.105396",
+      "status": "unchanged",
+      "etag": "W/\"8ae39bbfa12e8c4a3fa58f75d5a34ed9\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourceiphotoidentifier": {
+      "hash": "05929e9664a0126762d7a689829dd75bb0277c20b9d9f401dd179b13879b08f6",
+      "last_checked": "2025-06-06T04:07:51.105396",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourceitunesidentifier.json": {
+      "hash": "5e42005155cbd2d30ccae052eea7abd4f37423e69cb638e7f79f990534544b4a",
+      "last_checked": "2025-06-06T04:07:51.478974",
+      "status": "unchanged",
+      "etag": "W/\"ca7d5d2398ee03d726fe93544883c9f7\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourceitunesidentifier": {
+      "hash": "5e42005155cbd2d30ccae052eea7abd4f37423e69cb638e7f79f990534544b4a",
+      "last_checked": "2025-06-06T04:07:51.478974",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediatype.json": {
+      "hash": "62e6b2f319e9496c549e249929994482f79073edea29a81c0d5c96b372c598eb",
+      "last_checked": "2025-06-06T04:07:51.853663",
+      "status": "unchanged",
+      "etag": "W/\"129a7022d18c4887b18649922103aa8c\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediatype": {
+      "hash": "62e6b2f319e9496c549e249929994482f79073edea29a81c0d5c96b372c598eb",
+      "last_checked": "2025-06-06T04:07:51.853663",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosalbumtypeidentifier.json": {
+      "hash": "241852dd3913ee22d2899478a5c2e1b630cfac8df190e3d3d09d6b06437255f0",
+      "last_checked": "2025-06-06T04:07:52.177895",
+      "status": "unchanged",
+      "etag": "W/\"e991b7f71041be03ebabe053bbc9d6df\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosalbumtypeidentifier": {
+      "hash": "241852dd3913ee22d2899478a5c2e1b630cfac8df190e3d3d09d6b06437255f0",
+      "last_checked": "2025-06-06T04:07:52.177895",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosalbumsgrouptypeidentifier.json": {
+      "hash": "b9ec6fe8dad3ff0a4ace7c8ae912d9c1da3647bbbe5b8fd36a9a5bbb4974e29c",
+      "last_checked": "2025-06-06T04:07:52.566877",
+      "status": "unchanged",
+      "etag": "W/\"5e2e9b0da52f6369023154df54d2128b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosalbumsgrouptypeidentifier": {
+      "hash": "b9ec6fe8dad3ff0a4ace7c8ae912d9c1da3647bbbe5b8fd36a9a5bbb4974e29c",
+      "last_checked": "2025-06-06T04:07:52.566877",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosallcollectionsgrouptypeidentifier.json": {
+      "hash": "4f11fabd985c43a660780fb54ed3b6a2fe5060809c69f77d7f5d7f1bb1faba84",
+      "last_checked": "2025-06-06T04:07:52.927452",
+      "status": "unchanged",
+      "etag": "W/\"adb46527f49a6d6fdf63d1e97b4a3cdb\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosallcollectionsgrouptypeidentifier": {
+      "hash": "4f11fabd985c43a660780fb54ed3b6a2fe5060809c69f77d7f5d7f1bb1faba84",
+      "last_checked": "2025-06-06T04:07:52.927452",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosallmomentsgrouptypeidentifier.json": {
+      "hash": "b633a1f663dde861e1a64b8c02e04bc5dbe4485145146afa662469fcbd784234",
+      "last_checked": "2025-06-06T04:07:53.278147",
+      "status": "unchanged",
+      "etag": "W/\"709b07e13f09ac4cd1f8009ae97b1994\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosallmomentsgrouptypeidentifier": {
+      "hash": "b633a1f663dde861e1a64b8c02e04bc5dbe4485145146afa662469fcbd784234",
+      "last_checked": "2025-06-06T04:07:53.278147",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosallphotosalbumtypeidentifier.json": {
+      "hash": "0b89a72aa6ae2102e7827229262e7ded4b60b0426afd9d59152c4e4ae459b1ba",
+      "last_checked": "2025-06-06T04:07:53.655381",
+      "status": "unchanged",
+      "etag": "W/\"94fdea83ac603c18816f56737c3c52fd\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosallphotosalbumtypeidentifier": {
+      "hash": "0b89a72aa6ae2102e7827229262e7ded4b60b0426afd9d59152c4e4ae459b1ba",
+      "last_checked": "2025-06-06T04:07:53.655381",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosallyearsgrouptypeidentifier.json": {
+      "hash": "3ae7449d773f58a5ce0e81cb37720cdc02f1af46ab30d033bf9af58bb970d69e",
+      "last_checked": "2025-06-06T04:07:53.999315",
+      "status": "unchanged",
+      "etag": "W/\"a34af5f34f49c767ca1a632bd1d8d826\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosallyearsgrouptypeidentifier": {
+      "hash": "3ae7449d773f58a5ce0e81cb37720cdc02f1af46ab30d033bf9af58bb970d69e",
+      "last_checked": "2025-06-06T04:07:53.999315",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosburstgrouptypeidentifier.json": {
+      "hash": "58e0ed3f94859b7012709df636e3cbbe616dd0c038f8290e0029deb62f5ce79b",
+      "last_checked": "2025-06-06T04:07:54.393457",
+      "status": "unchanged",
+      "etag": "W/\"9db8404048dc89e3313b549a805ba62f\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosburstgrouptypeidentifier": {
+      "hash": "58e0ed3f94859b7012709df636e3cbbe616dd0c038f8290e0029deb62f5ce79b",
+      "last_checked": "2025-06-06T04:07:54.393457",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotoscollectiongrouptypeidentifier.json": {
+      "hash": "2420b56b8fdff4c292a8c71ab72fb92d3a086638e53fa8e0f85a23a9ea66e768",
+      "last_checked": "2025-06-06T04:07:54.800282",
+      "status": "unchanged",
+      "etag": "W/\"325ae52088658abfcd40dad44cb5842d\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotoscollectiongrouptypeidentifier": {
+      "hash": "2420b56b8fdff4c292a8c71ab72fb92d3a086638e53fa8e0f85a23a9ea66e768",
+      "last_checked": "2025-06-06T04:07:54.800282",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosdeptheffectgrouptypeidentifier.json": {
+      "hash": "dd54532037d5a103ecda96635489f296039132f30c73fda0a6180957033f654a",
+      "last_checked": "2025-06-06T04:07:55.178733",
+      "status": "unchanged",
+      "etag": "W/\"ee421ebdb90bdccec36d9285b2d60cea\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosdeptheffectgrouptypeidentifier": {
+      "hash": "dd54532037d5a103ecda96635489f296039132f30c73fda0a6180957033f654a",
+      "last_checked": "2025-06-06T04:07:55.178733",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosfacesalbumtypeidentifier.json": {
+      "hash": "992d78e75affb5e4b3a5f98a44bbf2dc56852defa88798c76caed39839f14940",
+      "last_checked": "2025-06-06T04:07:55.564239",
+      "status": "unchanged",
+      "etag": "W/\"942956d5126d72aea63645ff80cdc5e8\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosfacesalbumtypeidentifier": {
+      "hash": "992d78e75affb5e4b3a5f98a44bbf2dc56852defa88798c76caed39839f14940",
+      "last_checked": "2025-06-06T04:07:55.564239",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosfavoritesgrouptypeidentifier.json": {
+      "hash": "0872197d0ffa55b2953d4af60c81cdbe1e2aacccd9942904dd30959fae5dd610",
+      "last_checked": "2025-06-06T04:07:55.908691",
+      "status": "unchanged",
+      "etag": "W/\"d6e167e8b6cfe0a812c322198b05c7c5\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosfavoritesgrouptypeidentifier": {
+      "hash": "0872197d0ffa55b2953d4af60c81cdbe1e2aacccd9942904dd30959fae5dd610",
+      "last_checked": "2025-06-06T04:07:55.908691",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosfoldertypeidentifier.json": {
+      "hash": "f02e4a69c850d0f9276f51ef0b34595f3fcf40c840d0eef427b14edc3d64abf4",
+      "last_checked": "2025-06-06T04:07:56.312759",
+      "status": "unchanged",
+      "etag": "W/\"9a9728536feea0c37368d05138dd168e\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosfoldertypeidentifier": {
+      "hash": "f02e4a69c850d0f9276f51ef0b34595f3fcf40c840d0eef427b14edc3d64abf4",
+      "last_checked": "2025-06-06T04:07:56.312759",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosfrontcameragrouptypeidentifier.json": {
+      "hash": "184c13c50593b2f98c2929efc5f6fcc054fbee5124d925a627a7c417b7ff1253",
+      "last_checked": "2025-06-06T04:07:56.683616",
+      "status": "unchanged",
+      "etag": "W/\"faf28eb0b1e4613c62fc6884c4afd9bd\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosfrontcameragrouptypeidentifier": {
+      "hash": "184c13c50593b2f98c2929efc5f6fcc054fbee5124d925a627a7c417b7ff1253",
+      "last_checked": "2025-06-06T04:07:56.683616",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotoslastimportgrouptypeidentifier.json": {
+      "hash": "0d8438f0bd6c8ad845edb6fe584199df11344866f6baf715240e18b3fe8fa6ed",
+      "last_checked": "2025-06-06T04:07:57.032827",
+      "status": "unchanged",
+      "etag": "W/\"d89fd5b5268dfe2588df45f80b2e5f12\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotoslastimportgrouptypeidentifier": {
+      "hash": "0d8438f0bd6c8ad845edb6fe584199df11344866f6baf715240e18b3fe8fa6ed",
+      "last_checked": "2025-06-06T04:07:57.032827",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosmomentgrouptypeidentifier.json": {
+      "hash": "5067e8a60dd90d44d9028b89830b464b2b117e62574f9bce47b28655a0e013e5",
+      "last_checked": "2025-06-06T04:07:57.465873",
+      "status": "unchanged",
+      "etag": "W/\"ad27e6d9d04e08a72f4609c04b21fd44\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosmomentgrouptypeidentifier": {
+      "hash": "5067e8a60dd90d44d9028b89830b464b2b117e62574f9bce47b28655a0e013e5",
+      "last_checked": "2025-06-06T04:07:57.465873",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosmyphotostreamtypeidentifier.json": {
+      "hash": "1c7d47348349be6b9b064cf09f3ab1d2ae19a7f858c3154d3b851d80cd200141",
+      "last_checked": "2025-06-06T04:07:57.841187",
+      "status": "unchanged",
+      "etag": "W/\"f5875dce7f9976f1e8e23dcb8fbe843f\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosmyphotostreamtypeidentifier": {
+      "hash": "1c7d47348349be6b9b064cf09f3ab1d2ae19a7f858c3154d3b851d80cd200141",
+      "last_checked": "2025-06-06T04:07:57.841187",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotospanoramasgrouptypeidentifier.json": {
+      "hash": "4b85fadf35a7170abc4179488dc31d657a36fb1043162e33bf380d4a07978442",
+      "last_checked": "2025-06-06T04:07:58.236418",
+      "status": "unchanged",
+      "etag": "W/\"334f20bff52a8310905990aea43cbe7d\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotospanoramasgrouptypeidentifier": {
+      "hash": "4b85fadf35a7170abc4179488dc31d657a36fb1043162e33bf380d4a07978442",
+      "last_checked": "2025-06-06T04:07:58.236418",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotospublishedalbumtypeidentifier.json": {
+      "hash": "524cac59b2018db9a10d756752a2ceba08a5828a39e356cbda5718d2725433ad",
+      "last_checked": "2025-06-06T04:07:58.627245",
+      "status": "unchanged",
+      "etag": "W/\"e5f58c7ac942bc9b0748beab7f934752\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotospublishedalbumtypeidentifier": {
+      "hash": "524cac59b2018db9a10d756752a2ceba08a5828a39e356cbda5718d2725433ad",
+      "last_checked": "2025-06-06T04:07:58.627245",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosrootgrouptypeidentifier.json": {
+      "hash": "327aba8edbb7c0397199ae31656146c4d3ceb5e00805adc07bddf0012f2a1f38",
+      "last_checked": "2025-06-06T04:07:59.016786",
+      "status": "unchanged",
+      "etag": "W/\"3132dad3002919ab33f3ba9656d3c44e\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosrootgrouptypeidentifier": {
+      "hash": "327aba8edbb7c0397199ae31656146c4d3ceb5e00805adc07bddf0012f2a1f38",
+      "last_checked": "2025-06-06T04:07:59.016786",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosscreenshotgrouptypeidentifier.json": {
+      "hash": "4902f9067087b4ec3ca3e52991c1192c9cf9990ee28200dedb7aa72889416515",
+      "last_checked": "2025-06-06T04:07:59.366007",
+      "status": "unchanged",
+      "etag": "W/\"362ca63e23940349ad47ce79a84e033b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosscreenshotgrouptypeidentifier": {
+      "hash": "4902f9067087b4ec3ca3e52991c1192c9cf9990ee28200dedb7aa72889416515",
+      "last_checked": "2025-06-06T04:07:59.366007",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotossharedgrouptypeidentifier.json": {
+      "hash": "94bb1b1a44a4e870062eb38d7d1a1275a54e3c3d386532183ad25e92a7562537",
+      "last_checked": "2025-06-06T04:07:59.766277",
+      "status": "unchanged",
+      "etag": "W/\"b53dfd8ae5b229eafd62c7443767bbf6\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotossharedgrouptypeidentifier": {
+      "hash": "94bb1b1a44a4e870062eb38d7d1a1275a54e3c3d386532183ad25e92a7562537",
+      "last_checked": "2025-06-06T04:07:59.766277",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotossharedphotostreamtypeidentifier.json": {
+      "hash": "11edc32fe543bc26a9633d76a5129df0375912ee451daa26f2040c3d34db8a74",
+      "last_checked": "2025-06-06T04:08:00.143538",
+      "status": "unchanged",
+      "etag": "W/\"9ea3aa4788feec42c9fb07d7518c3113\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotossharedphotostreamtypeidentifier": {
+      "hash": "11edc32fe543bc26a9633d76a5129df0375912ee451daa26f2040c3d34db8a74",
+      "last_checked": "2025-06-06T04:08:00.143538",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosslomogrouptypeidentifier.json": {
+      "hash": "19be6301c15d9142f59b0c566bd1090e52ee041debd4638596e093c317f45b22",
+      "last_checked": "2025-06-06T04:08:00.532130",
+      "status": "unchanged",
+      "etag": "W/\"d813dd11ee4ffe8abd4098ac95f4eaee\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosslomogrouptypeidentifier": {
+      "hash": "19be6301c15d9142f59b0c566bd1090e52ee041debd4638596e093c317f45b22",
+      "last_checked": "2025-06-06T04:08:00.532130",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotossmartalbumtypeidentifier.json": {
+      "hash": "7c579b315c3d26c86458f6e1558d8375530949e6cb95b140539bba62664e3cc5",
+      "last_checked": "2025-06-06T04:08:00.928401",
+      "status": "unchanged",
+      "etag": "W/\"6a8fb458f048e1c5c85152d0d2c65ef2\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotossmartalbumtypeidentifier": {
+      "hash": "7c579b315c3d26c86458f6e1558d8375530949e6cb95b140539bba62664e3cc5",
+      "last_checked": "2025-06-06T04:08:00.928401",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotostimelapsegrouptypeidentifier.json": {
+      "hash": "bc77c14c73b574770ec519a2decc6c4e407ca227024878233f7b6bf48d6495ae",
+      "last_checked": "2025-06-06T04:08:01.300955",
+      "status": "unchanged",
+      "etag": "W/\"75a8c6a66e219cfabdc2de4834b9beaa\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotostimelapsegrouptypeidentifier": {
+      "hash": "bc77c14c73b574770ec519a2decc6c4e407ca227024878233f7b6bf48d6495ae",
+      "last_checked": "2025-06-06T04:08:01.300955",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosvideosgrouptypeidentifier.json": {
+      "hash": "a5b775ef88cf459360ba1992eee23a7da49447ffafad6b3008f3acc871249140",
+      "last_checked": "2025-06-06T04:08:01.717979",
+      "status": "unchanged",
+      "etag": "W/\"7085e9ce137529a41e3b7cf5d5f9715e\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosvideosgrouptypeidentifier": {
+      "hash": "a5b775ef88cf459360ba1992eee23a7da49447ffafad6b3008f3acc871249140",
+      "last_checked": "2025-06-06T04:08:01.717979",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosyeargrouptypeidentifier.json": {
+      "hash": "d0dfa957ed2ab9929806d2302b85e81fbb323cbb1c725aeb3912b3feee04a458",
+      "last_checked": "2025-06-06T04:08:02.075199",
+      "status": "unchanged",
+      "etag": "W/\"f743ea4d3d3c1aea8112cdb3b0edf6c7\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosyeargrouptypeidentifier": {
+      "hash": "d0dfa957ed2ab9929806d2302b85e81fbb323cbb1c725aeb3912b3feee04a458",
+      "last_checked": "2025-06-06T04:08:02.075199",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesmusicvideosplaylisttypeidentifier.json": {
+      "hash": "d013eee19052fb30f8d4d497ddbbf6d41d6373ed4774d8767bffb68f6aa8bd18",
+      "last_checked": "2025-06-06T04:08:02.452208",
+      "status": "unchanged",
+      "etag": "W/\"50760aacd53f219382346fee8060f498\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunesmusicvideosplaylisttypeidentifier": {
+      "hash": "d013eee19052fb30f8d4d497ddbbf6d41d6373ed4774d8767bffb68f6aa8bd18",
+      "last_checked": "2025-06-06T04:08:02.452208",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesvideoplaylisttypeidentifier.json": {
+      "hash": "241d8030c49bfb0b901337f6e3d632c3ba5f60931885b2d46c6e117265740daf",
+      "last_checked": "2025-06-06T04:08:02.831209",
+      "status": "unchanged",
+      "etag": "W/\"bac2b6a37683551c0ebc9d64fcbf773e\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunesvideoplaylisttypeidentifier": {
+      "hash": "241d8030c49bfb0b901337f6e3d632c3ba5f60931885b2d46c6e117265740daf",
+      "last_checked": "2025-06-06T04:08:02.831209",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/media-object-attribute-keys.json": {
+      "hash": "feaf5edc6d491dd12762f0c0cdb923011b69cda739404d9a6b4a1bd38d10546c",
+      "last_checked": "2025-06-06T04:08:03.235501",
+      "status": "unchanged",
+      "etag": "W/\"50d7992fa80bd548308887ab28731130\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/media-object-attribute-keys": {
+      "hash": "feaf5edc6d491dd12762f0c0cdb923011b69cda739404d9a6b4a1bd38d10546c",
+      "last_checked": "2025-06-06T04:08:03.235501",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/imovie-media-group-type-identifiers.json": {
+      "hash": "a17682c3899dd46f7e477302cc08b89d1b754091125b69a7163ad36fb2a33713",
+      "last_checked": "2025-06-06T04:08:03.583681",
+      "status": "unchanged",
+      "etag": "W/\"2144d60d3ed0479bc4ab6156258c0a48\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/imovie-media-group-type-identifiers": {
+      "hash": "a17682c3899dd46f7e477302cc08b89d1b754091125b69a7163ad36fb2a33713",
+      "last_checked": "2025-06-06T04:08:03.583681",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/iphoto-media-group-type-identifiers.json": {
+      "hash": "a62729fb8631c54689f12c2edbac053f83954a72b889421bd08a8b5564f15952",
+      "last_checked": "2025-06-06T04:08:03.988173",
+      "status": "unchanged",
+      "etag": "W/\"f9e98480837138b0f46607ef0278d0e9\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/iphoto-media-group-type-identifiers": {
+      "hash": "a62729fb8631c54689f12c2edbac053f83954a72b889421bd08a8b5564f15952",
+      "last_checked": "2025-06-06T04:08:03.988173",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/itunes-media-group-type-identifiers.json": {
+      "hash": "266089fad29c8368fe030a2a71e264bff516eb61d778ed680f7f0f1073266fe6",
+      "last_checked": "2025-06-06T04:08:04.373290",
+      "status": "unchanged",
+      "etag": "W/\"4e0b72aa84292044003f64c4b47fb97e\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/itunes-media-group-type-identifiers": {
+      "hash": "266089fad29c8368fe030a2a71e264bff516eb61d778ed680f7f0f1073266fe6",
+      "last_checked": "2025-06-06T04:08:04.373290",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosanimatedgrouptypeidentifier.json": {
+      "hash": "1a024c64ccd963b2aeda96d712834e55e93ec6fa36760d498a26fb71bdb2bef6",
+      "last_checked": "2025-06-06T04:08:04.732339",
+      "status": "unchanged",
+      "etag": "W/\"2be0c2d1cf52deee3f8abc76acecc64e\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotosanimatedgrouptypeidentifier": {
+      "hash": "1a024c64ccd963b2aeda96d712834e55e93ec6fa36760d498a26fb71bdb2bef6",
+      "last_checked": "2025-06-06T04:08:04.732339",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotoslivephotosgrouptypeidentifier.json": {
+      "hash": "1789377d1e7262835b8b2609f86d56d64555e6e87e9d5d8f1dd42c754062baa4",
+      "last_checked": "2025-06-06T04:08:05.096314",
+      "status": "unchanged",
+      "etag": "W/\"ba3c587c7236396cf11facf0a9c2ef11\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotoslivephotosgrouptypeidentifier": {
+      "hash": "1789377d1e7262835b8b2609f86d56d64555e6e87e9d5d8f1dd42c754062baa4",
+      "last_checked": "2025-06-06T04:08:05.096314",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotoslongexposuregrouptypeidentifier.json": {
+      "hash": "e7766c19661d6fa68715225a821fb8086fb2f6386afa9718952cfcfc540fcd1b",
+      "last_checked": "2025-06-06T04:08:05.469795",
+      "status": "unchanged",
+      "etag": "W/\"6c0230c4f8dd62fd77ae18145dc78834\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlphotoslongexposuregrouptypeidentifier": {
+      "hash": "e7766c19661d6fa68715225a821fb8086fb2f6386afa9718952cfcfc540fcd1b",
+      "last_checked": "2025-06-06T04:08:05.469795",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturerootgrouptypeidentifier.json": {
+      "hash": "3cec7c477fa9c9c46e5a8b3272b8ce27fab8518ec8443f9635d3321faf8a7e84",
+      "last_checked": "2025-06-06T04:08:05.857687",
+      "status": "unchanged",
+      "etag": "W/\"25133548c1c98d809b09e01f9b3ddfe9\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturerootgrouptypeidentifier": {
+      "hash": "3cec7c477fa9c9c46e5a8b3272b8ce27fab8518ec8443f9635d3321faf8a7e84",
+      "last_checked": "2025-06-06T04:08:05.857687",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureuseralbumtypeidentifier.json": {
+      "hash": "a383ffd40405aeff33c895f031c75f9fc9eff32e40f19da89e9cfae8a2e35727",
+      "last_checked": "2025-06-06T04:08:06.180206",
+      "status": "unchanged",
+      "etag": "W/\"c7bee5a88f7e579038971372347bcdd5\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureuseralbumtypeidentifier": {
+      "hash": "a383ffd40405aeff33c895f031c75f9fc9eff32e40f19da89e9cfae8a2e35727",
+      "last_checked": "2025-06-06T04:08:06.180206",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureusersmartalbumtypeidentifier.json": {
+      "hash": "75457598ca9380d5fde9d4509285fde1920c7780d2c8b4e8ad5082650da596a9",
+      "last_checked": "2025-06-06T04:08:06.582686",
+      "status": "unchanged",
+      "etag": "W/\"4c340c7682b6533d2e5dcf36f2b8f054\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureusersmartalbumtypeidentifier": {
+      "hash": "75457598ca9380d5fde9d4509285fde1920c7780d2c8b4e8ad5082650da596a9",
+      "last_checked": "2025-06-06T04:08:06.582686",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureprojectalbumtypeidentifier.json": {
+      "hash": "a826a384e1c34cb35b78f6b8d12194ba192dd5e94b8206351cebefd96c538625",
+      "last_checked": "2025-06-06T04:08:06.979892",
+      "status": "unchanged",
+      "etag": "W/\"0c2988ff69a523cfbbf8e6e92bd9770b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureprojectalbumtypeidentifier": {
+      "hash": "a826a384e1c34cb35b78f6b8d12194ba192dd5e94b8206351cebefd96c538625",
+      "last_checked": "2025-06-06T04:08:06.979892",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturefolderalbumtypeidentifier.json": {
+      "hash": "ae1aaad6f3b3edaf901c0222df4536ee2b1ac78dd0ca66218043c341505e71a5",
+      "last_checked": "2025-06-06T04:08:07.398641",
+      "status": "unchanged",
+      "etag": "W/\"d753fd86aa378d324f50b0f8d2a87a1f\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturefolderalbumtypeidentifier": {
+      "hash": "ae1aaad6f3b3edaf901c0222df4536ee2b1ac78dd0ca66218043c341505e71a5",
+      "last_checked": "2025-06-06T04:08:07.398641",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureprojectfolderalbumtypeidentifier.json": {
+      "hash": "e8c2118ebcc8d679df2dad3dcadb06cdb8e28ae9d9324878a797b40d8adb96d4",
+      "last_checked": "2025-06-06T04:08:07.785520",
+      "status": "unchanged",
+      "etag": "W/\"c5ea71a8796dfa0e10b899829f6355de\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureprojectfolderalbumtypeidentifier": {
+      "hash": "e8c2118ebcc8d679df2dad3dcadb06cdb8e28ae9d9324878a797b40d8adb96d4",
+      "last_checked": "2025-06-06T04:08:07.785520",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureallprojectstypeidentifier.json": {
+      "hash": "2fa7a3e15acdc85870a36b77318d9ab299db411ff7f7b6c4855208acb3e61dd9",
+      "last_checked": "2025-06-06T04:08:08.150848",
+      "status": "unchanged",
+      "etag": "W/\"7c20f6d30ebf5ee7b452faa0696dbda6\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureallprojectstypeidentifier": {
+      "hash": "2fa7a3e15acdc85870a36b77318d9ab299db411ff7f7b6c4855208acb3e61dd9",
+      "last_checked": "2025-06-06T04:08:08.150848",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureallphotostypeidentifier.json": {
+      "hash": "720d525230e7b62c7b01bff241e7101b20e6fed46114e16fe145328fbcd200c7",
+      "last_checked": "2025-06-06T04:08:08.525069",
+      "status": "unchanged",
+      "etag": "W/\"7b83dfd5cb373f99314f42e0f5b34cfb\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureallphotostypeidentifier": {
+      "hash": "720d525230e7b62c7b01bff241e7101b20e6fed46114e16fe145328fbcd200c7",
+      "last_checked": "2025-06-06T04:08:08.525069",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturelastviewedeventalbumtypeidentifier.json": {
+      "hash": "7455398d3249d670d4bf8fd9dc3a7ad73c713cec3222c17c10f5372b5f86a401",
+      "last_checked": "2025-06-06T04:08:08.882461",
+      "status": "unchanged",
+      "etag": "W/\"01fb9a86ec589bf85e8dee1745bf8f09\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturelastviewedeventalbumtypeidentifier": {
+      "hash": "7455398d3249d670d4bf8fd9dc3a7ad73c713cec3222c17c10f5372b5f86a401",
+      "last_checked": "2025-06-06T04:08:08.882461",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturelastimportalbumtypeidentifier.json": {
+      "hash": "3b5066a2f1e5dfc592d2d689cf77effd667b9967c31e2a7f05a87caa067aff36",
+      "last_checked": "2025-06-06T04:08:09.316328",
+      "status": "unchanged",
+      "etag": "W/\"3025fb79b8bb1fc05d6ce6f82e665b6c\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturelastimportalbumtypeidentifier": {
+      "hash": "3b5066a2f1e5dfc592d2d689cf77effd667b9967c31e2a7f05a87caa067aff36",
+      "last_checked": "2025-06-06T04:08:09.316328",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturelastnmonthsalbumtypeidentifier.json": {
+      "hash": "fd663b42fdfa8bf746aa8dfc31a9f51b0f856c75f6d074ea7922b8214258ca62",
+      "last_checked": "2025-06-06T04:08:09.743932",
+      "status": "unchanged",
+      "etag": "W/\"3f6edd81db811c998e5150a4808c448b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturelastnmonthsalbumtypeidentifier": {
+      "hash": "fd663b42fdfa8bf746aa8dfc31a9f51b0f856c75f6d074ea7922b8214258ca62",
+      "last_checked": "2025-06-06T04:08:09.743932",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureflaggedtypeidentifier.json": {
+      "hash": "01e594ac247b7ae8ed634055d8ed7d4f088e71890612495703c17a9ea10bb742",
+      "last_checked": "2025-06-06T04:08:10.128727",
+      "status": "unchanged",
+      "etag": "W/\"90e43e2c8621ce36355a213c9c49a7d1\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureflaggedtypeidentifier": {
+      "hash": "01e594ac247b7ae8ed634055d8ed7d4f088e71890612495703c17a9ea10bb742",
+      "last_checked": "2025-06-06T04:08:10.128727",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturelighttabletypeidentifier.json": {
+      "hash": "c4aa0b4e3426d9e9da9e453599495b3f68e1f59f7944d8d560fe6fe563850374",
+      "last_checked": "2025-06-06T04:08:10.501975",
+      "status": "unchanged",
+      "etag": "W/\"58446212450186236b9249ec53f03d6c\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturelighttabletypeidentifier": {
+      "hash": "c4aa0b4e3426d9e9da9e453599495b3f68e1f59f7944d8d560fe6fe563850374",
+      "last_checked": "2025-06-06T04:08:10.501975",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureslideshowtypeidentifier.json": {
+      "hash": "02c74057b365d2a98ac53acc7286aec4d5f7fc4488efd436d40c8048b2815e12",
+      "last_checked": "2025-06-06T04:08:10.880932",
+      "status": "unchanged",
+      "etag": "W/\"536b4cd6db15c080b72d5ea11ee25f93\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureslideshowtypeidentifier": {
+      "hash": "02c74057b365d2a98ac53acc7286aec4d5f7fc4488efd436d40c8048b2815e12",
+      "last_checked": "2025-06-06T04:08:10.880932",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturephotostreamalbumtypeidentifier.json": {
+      "hash": "bc6139348534ddf3f2219b4d3f2ab656d21bc77343c24d5786c976f22843f6f7",
+      "last_checked": "2025-06-06T04:08:11.199618",
+      "status": "unchanged",
+      "etag": "W/\"614582f08baea593ecd2e95aaaa431ac\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturephotostreamalbumtypeidentifier": {
+      "hash": "bc6139348534ddf3f2219b4d3f2ab656d21bc77343c24d5786c976f22843f6f7",
+      "last_checked": "2025-06-06T04:08:11.199618",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturefacesalbumtypeidentifier.json": {
+      "hash": "6c2cc9f9a167c8416c51160ad2eb29ec482f5f111ea5d68a13bed537d6c6af91",
+      "last_checked": "2025-06-06T04:08:11.554081",
+      "status": "unchanged",
+      "etag": "W/\"0c3758bea49a9340ea321dd38d6c0881\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturefacesalbumtypeidentifier": {
+      "hash": "6c2cc9f9a167c8416c51160ad2eb29ec482f5f111ea5d68a13bed537d6c6af91",
+      "last_checked": "2025-06-06T04:08:11.554081",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureplacesalbumtypeidentifier.json": {
+      "hash": "cb4fea024037a94ebfcf583d0c6052c6e03839a7b40d7955dcb237b103681c3a",
+      "last_checked": "2025-06-06T04:08:11.928856",
+      "status": "unchanged",
+      "etag": "W/\"f9ca3351472234026d813ce47083b5b5\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureplacesalbumtypeidentifier": {
+      "hash": "cb4fea024037a94ebfcf583d0c6052c6e03839a7b40d7955dcb237b103681c3a",
+      "last_checked": "2025-06-06T04:08:11.928856",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureplacescountryalbumtypeidentifier.json": {
+      "hash": "4f22a8a992d3eb74551c2d8f9c26ac6375e9eb5aabca62ba8f4354fa6d2b418d",
+      "last_checked": "2025-06-06T04:08:12.350432",
+      "status": "unchanged",
+      "etag": "W/\"c8239e3f520d62fc8a29d7236d5a386b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureplacescountryalbumtypeidentifier": {
+      "hash": "4f22a8a992d3eb74551c2d8f9c26ac6375e9eb5aabca62ba8f4354fa6d2b418d",
+      "last_checked": "2025-06-06T04:08:12.350432",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureplacesprovincealbumtypeidentifier.json": {
+      "hash": "5eb6e5a8d9c86ebc8a5395b2e5f48a2ab0db1bc6e277c9024e79320030aee7a6",
+      "last_checked": "2025-06-06T04:08:12.706642",
+      "status": "unchanged",
+      "etag": "W/\"dc36338d4902fb176c6572948e12850b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureplacesprovincealbumtypeidentifier": {
+      "hash": "5eb6e5a8d9c86ebc8a5395b2e5f48a2ab0db1bc6e277c9024e79320030aee7a6",
+      "last_checked": "2025-06-06T04:08:12.706642",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureplacescityalbumtypeidentifier.json": {
+      "hash": "585afa02e8281aeeee2ff82b0ee99b851166c1625fe972d9c0d1ad6d22f46995",
+      "last_checked": "2025-06-06T04:08:13.067795",
+      "status": "unchanged",
+      "etag": "W/\"b773a641f585fa6cbba17e151b508b33\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureplacescityalbumtypeidentifier": {
+      "hash": "585afa02e8281aeeee2ff82b0ee99b851166c1625fe972d9c0d1ad6d22f46995",
+      "last_checked": "2025-06-06T04:08:13.067795",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureplacespointofinterestalbumtypeidentifier.json": {
+      "hash": "dc227c245c40eb5b43fd34a4111167c6871803d7f5361c18dbb2e482bb3ed252",
+      "last_checked": "2025-06-06T04:08:13.474381",
+      "status": "unchanged",
+      "etag": "W/\"f4126e2d093347bb479b145739117028\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureplacespointofinterestalbumtypeidentifier": {
+      "hash": "dc227c245c40eb5b43fd34a4111167c6871803d7f5361c18dbb2e482bb3ed252",
+      "last_checked": "2025-06-06T04:08:13.474381",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturefacebookalbumtypeidentifier.json": {
+      "hash": "461b08fb16be3d473fdb7f2f0480f4a9013c61e61ec517ada7e7a9f9b355e632",
+      "last_checked": "2025-06-06T04:08:13.848820",
+      "status": "unchanged",
+      "etag": "W/\"0170f123e1b51a09d88b3f4c555323b1\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturefacebookalbumtypeidentifier": {
+      "hash": "461b08fb16be3d473fdb7f2f0480f4a9013c61e61ec517ada7e7a9f9b355e632",
+      "last_checked": "2025-06-06T04:08:13.848820",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturefacebookgrouptypeidentifier.json": {
+      "hash": "789d44450da42d04ca1a7a4a2b71a1b50e46418f7234f263a8608e2f2a5792b3",
+      "last_checked": "2025-06-06T04:08:14.271987",
+      "status": "unchanged",
+      "etag": "W/\"c6f99965ac95342e213d5eb20d80bc77\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturefacebookgrouptypeidentifier": {
+      "hash": "789d44450da42d04ca1a7a4a2b71a1b50e46418f7234f263a8608e2f2a5792b3",
+      "last_checked": "2025-06-06T04:08:14.271987",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureflickralbumtypeidentifier.json": {
+      "hash": "cde96680c840080136a298c68e1251de75d8df6e04a8e56c7c89c5aaa5041d5c",
+      "last_checked": "2025-06-06T04:08:16.364282",
+      "status": "unchanged",
+      "etag": "W/\"90b21dd5e3ed48f2c32a15f929766a44\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureflickralbumtypeidentifier": {
+      "hash": "cde96680c840080136a298c68e1251de75d8df6e04a8e56c7c89c5aaa5041d5c",
+      "last_checked": "2025-06-06T04:08:16.364282",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureflickrgrouptypeidentifier.json": {
+      "hash": "4af1a3105a02d4e7f41bc18ae89ef37d6b5c363951a99b52af385a2c83c8e3ea",
+      "last_checked": "2025-06-06T04:08:16.749103",
+      "status": "unchanged",
+      "etag": "W/\"3f9a582a9f60c5d11c7a4172d6e012f7\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlapertureflickrgrouptypeidentifier": {
+      "hash": "4af1a3105a02d4e7f41bc18ae89ef37d6b5c363951a99b52af385a2c83c8e3ea",
+      "last_checked": "2025-06-06T04:08:16.749103",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturesmugmugalbumtypeidentifier.json": {
+      "hash": "bd05e414499e7b73a7716a06ddd53c6ca428c10a6357b8ce58fafdf2994264d9",
+      "last_checked": "2025-06-06T04:08:17.100570",
+      "status": "unchanged",
+      "etag": "W/\"ff2b5286400fd1357c8376cab4782352\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturesmugmugalbumtypeidentifier": {
+      "hash": "bd05e414499e7b73a7716a06ddd53c6ca428c10a6357b8ce58fafdf2994264d9",
+      "last_checked": "2025-06-06T04:08:17.100570",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturesmugmuggrouptypeidentifier.json": {
+      "hash": "eebff0cdf7f6ca90b05a334a43393509e7b572eebcbfa405fe949d1782fbbb31",
+      "last_checked": "2025-06-06T04:08:17.524565",
+      "status": "unchanged",
+      "etag": "W/\"54e5a46a007d7c6c54c693955cd5fa73\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlaperturesmugmuggrouptypeidentifier": {
+      "hash": "eebff0cdf7f6ca90b05a334a43393509e7b572eebcbfa405fe949d1782fbbb31",
+      "last_checked": "2025-06-06T04:08:17.524565",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcutrootgrouptypeidentifier.json": {
+      "hash": "8cf7e62e225d45455adb9795b680d52522632f4b8d41c78e4afc5845c568198c",
+      "last_checked": "2025-06-06T04:08:17.922329",
+      "status": "unchanged",
+      "etag": "W/\"2cd8bde6fab34fb3e673d57eb7c673f3\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlfinalcutrootgrouptypeidentifier": {
+      "hash": "8cf7e62e225d45455adb9795b680d52522632f4b8d41c78e4afc5845c568198c",
+      "last_checked": "2025-06-06T04:08:17.922329",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcutprojectgrouptypeidentifier.json": {
+      "hash": "0eae6a3f64fc1e00164c09462b0047b051f01e692e3726f91fa5e7cfa4b344a9",
+      "last_checked": "2025-06-06T04:08:18.321244",
+      "status": "unchanged",
+      "etag": "W/\"d2146a121776072eef03738ac9cc5ddb\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlfinalcutprojectgrouptypeidentifier": {
+      "hash": "0eae6a3f64fc1e00164c09462b0047b051f01e692e3726f91fa5e7cfa4b344a9",
+      "last_checked": "2025-06-06T04:08:18.321244",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcutfoldergrouptypeidentifier.json": {
+      "hash": "df427eb4783626fcedfc5c8afd0ece8aef9725ae6721994d7e4528f85433e3b2",
+      "last_checked": "2025-06-06T04:08:18.683569",
+      "status": "unchanged",
+      "etag": "W/\"ba81f286bc1c4537c363aa198af15211\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlfinalcutfoldergrouptypeidentifier": {
+      "hash": "df427eb4783626fcedfc5c8afd0ece8aef9725ae6721994d7e4528f85433e3b2",
+      "last_checked": "2025-06-06T04:08:18.683569",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcuteventgrouptypeidentifier.json": {
+      "hash": "97f810dcf04169cdff4bdca0e7ddf28d67b9954dfd0820a2de5a75360eb054d1",
+      "last_checked": "2025-06-06T04:08:19.066272",
+      "status": "unchanged",
+      "etag": "W/\"38f8e562203fb0a2ad765d64e4053019\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlfinalcuteventgrouptypeidentifier": {
+      "hash": "97f810dcf04169cdff4bdca0e7ddf28d67b9954dfd0820a2de5a75360eb054d1",
+      "last_checked": "2025-06-06T04:08:19.066272",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcuteventcalendargrouptypeidentifier.json": {
+      "hash": "a583af37862839a66f2abb85229e0e2565b2343cd1a52b0ee867c14dff9fec9b",
+      "last_checked": "2025-06-06T04:08:19.419002",
+      "status": "unchanged",
+      "etag": "W/\"1746fde435f6fd8e4a2bcb3acd5b6c32\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlfinalcuteventcalendargrouptypeidentifier": {
+      "hash": "a583af37862839a66f2abb85229e0e2565b2343cd1a52b0ee867c14dff9fec9b",
+      "last_checked": "2025-06-06T04:08:19.419002",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcuteventlibrarygrouptypeidentifier.json": {
+      "hash": "7156ab13fcb65bf41ac2135fb63d3d3f6eb89a25788b3794dbcfd85e94956992",
+      "last_checked": "2025-06-06T04:08:19.830626",
+      "status": "unchanged",
+      "etag": "W/\"6d9aea46e791a88d94ef345abcfbae75\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlfinalcuteventlibrarygrouptypeidentifier": {
+      "hash": "7156ab13fcb65bf41ac2135fb63d3d3f6eb89a25788b3794dbcfd85e94956992",
+      "last_checked": "2025-06-06T04:08:19.830626",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfolderrootgrouptypeidentifier.json": {
+      "hash": "5c755f131500f27c2ff4240b2836b1b18e623141e4cc8ea462c252057fa1c02f",
+      "last_checked": "2025-06-06T04:08:20.207068",
+      "status": "unchanged",
+      "etag": "W/\"259908f83ae4dbc9fedd0298eaf3706f\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlfolderrootgrouptypeidentifier": {
+      "hash": "5c755f131500f27c2ff4240b2836b1b18e623141e4cc8ea462c252057fa1c02f",
+      "last_checked": "2025-06-06T04:08:20.207068",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfoldergrouptypeidentifier.json": {
+      "hash": "43c8cc33094ef9e5d195339f5b4502ebf745001ae43f38a8abc31dc28021fd86",
+      "last_checked": "2025-06-06T04:08:20.567155",
+      "status": "unchanged",
+      "etag": "W/\"fa294c2aede6d2255e6ecaa4c6a6615e\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlfoldergrouptypeidentifier": {
+      "hash": "43c8cc33094ef9e5d195339f5b4502ebf745001ae43f38a8abc31dc28021fd86",
+      "last_checked": "2025-06-06T04:08:20.567155",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlgaragebandrootgrouptypeidentifier.json": {
+      "hash": "beaa7248b3f2ac9b8ef8f2d6ee0705122042ff3a1c18866bd8e64a56ce451a04",
+      "last_checked": "2025-06-06T04:08:20.963340",
+      "status": "unchanged",
+      "etag": "W/\"c8a1ac47b8d91d2e3cf5e16443ab5e19\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlgaragebandrootgrouptypeidentifier": {
+      "hash": "beaa7248b3f2ac9b8ef8f2d6ee0705122042ff3a1c18866bd8e64a56ce451a04",
+      "last_checked": "2025-06-06T04:08:20.963340",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlgaragebandfoldergrouptypeidentifier.json": {
+      "hash": "97db1c73be36d496adf1eea96b8ee45f4040891e62ab775c6e67bd1731d8d6f8",
+      "last_checked": "2025-06-06T04:08:21.341873",
+      "status": "unchanged",
+      "etag": "W/\"682e7565aec69abc8c047c3e691f6bd3\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlgaragebandfoldergrouptypeidentifier": {
+      "hash": "97db1c73be36d496adf1eea96b8ee45f4040891e62ab775c6e67bd1731d8d6f8",
+      "last_checked": "2025-06-06T04:08:21.341873",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mllogicrootgrouptypeidentifier.json": {
+      "hash": "9bbe81ec6f03a4621fdffd585dcd7a2a6f89de2b5915b445c98d5c272518e2f7",
+      "last_checked": "2025-06-06T04:08:21.733601",
+      "status": "unchanged",
+      "etag": "W/\"cc152bca8647aa5407e86099a19904e8\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mllogicrootgrouptypeidentifier": {
+      "hash": "9bbe81ec6f03a4621fdffd585dcd7a2a6f89de2b5915b445c98d5c272518e2f7",
+      "last_checked": "2025-06-06T04:08:21.733601",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mllogicprojecttypeidentifier.json": {
+      "hash": "92b6f4506548dbecc86e49d95aebc1fb9e0200d4698e0deded664b6c62ef8fdb",
+      "last_checked": "2025-06-06T04:08:22.109085",
+      "status": "unchanged",
+      "etag": "W/\"bb8bf4242c9db19761eb12d3ce49793e\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mllogicprojecttypeidentifier": {
+      "hash": "92b6f4506548dbecc86e49d95aebc1fb9e0200d4698e0deded664b6c62ef8fdb",
+      "last_checked": "2025-06-06T04:08:22.109085",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mllogicprojectsgrouptypeidentifier.json": {
+      "hash": "11d32144da4ff9dbe168083edd979af2454c1d0e7eb684ff64278fa92ef4d5e7",
+      "last_checked": "2025-06-06T04:08:22.519170",
+      "status": "unchanged",
+      "etag": "W/\"d62c865338e5231a018100e01b7bd283\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mllogicprojectsgrouptypeidentifier": {
+      "hash": "11d32144da4ff9dbe168083edd979af2454c1d0e7eb684ff64278fa92ef4d5e7",
+      "last_checked": "2025-06-06T04:08:22.519170",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mllogicbouncesgrouptypeidentifier.json": {
+      "hash": "f77f9ed0be05bbb0dd86b2d954d102f1fc3edf340e842ab54c9f53f6d62cb4c8",
+      "last_checked": "2025-06-06T04:08:22.865512",
+      "status": "unchanged",
+      "etag": "W/\"a818c466ce39a96ff910137f411e3178\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mllogicbouncesgrouptypeidentifier": {
+      "hash": "f77f9ed0be05bbb0dd86b2d954d102f1fc3edf340e842ab54c9f53f6d62cb4c8",
+      "last_checked": "2025-06-06T04:08:22.865512",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcetype/audio.json": {
+      "hash": "8a5c80fad1329b83127d20815c3dd79771c989f3de263593649ab794e3559e25",
+      "last_checked": "2025-06-06T04:08:23.217112",
+      "status": "unchanged",
+      "etag": "W/\"fe977ca39012d282797581ff392c6c31\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcetype/audio": {
+      "hash": "8a5c80fad1329b83127d20815c3dd79771c989f3de263593649ab794e3559e25",
+      "last_checked": "2025-06-06T04:08:23.217112",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcetype/image.json": {
+      "hash": "8b069e759d20d867fce323dcf943b31e99a4f8759ae9a7455e637e20f770d6df",
+      "last_checked": "2025-06-06T04:08:23.578235",
+      "status": "unchanged",
+      "etag": "W/\"24b02259a8534cd9b77ccb69ea2d90b5\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcetype/image": {
+      "hash": "8b069e759d20d867fce323dcf943b31e99a4f8759ae9a7455e637e20f770d6df",
+      "last_checked": "2025-06-06T04:08:23.578235",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcetype/movie.json": {
+      "hash": "232c3ff94369e9c7b46104e5ed3cd84c747a53a081929e8c104fbfb1dbfa0805",
+      "last_checked": "2025-06-06T04:08:23.917654",
+      "status": "unchanged",
+      "etag": "W/\"02eef91cdff0a970988ae6e2a18a8ec6\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcetype/movie": {
+      "hash": "232c3ff94369e9c7b46104e5ed3cd84c747a53a081929e8c104fbfb1dbfa0805",
+      "last_checked": "2025-06-06T04:08:23.917654",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcetype/init(rawvalue:).json": {
+      "hash": "92dad1293b38015d7390c6e7398b4424f0acadfb71a3db2c0b47f4c1e6b70d46",
+      "last_checked": "2025-06-06T04:08:24.301713",
+      "status": "unchanged",
+      "etag": "W/\"67242b177ffb244dd470c22312f14411\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediasourcetype/init(rawvalue:)": {
+      "hash": "92dad1293b38015d7390c6e7398b4424f0acadfb71a3db2c0b47f4c1e6b70d46",
+      "last_checked": "2025-06-06T04:08:24.301713",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediatype/audio.json": {
+      "hash": "0eb6cb902e6b44adc95ffae3db7f070a56dd6137ac50a4e74b08b858154ab9a6",
+      "last_checked": "2025-06-06T04:08:24.686566",
+      "status": "unchanged",
+      "etag": "W/\"8de110a93e34b7042966a59ba598d051\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediatype/audio": {
+      "hash": "0eb6cb902e6b44adc95ffae3db7f070a56dd6137ac50a4e74b08b858154ab9a6",
+      "last_checked": "2025-06-06T04:08:24.686566",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediatype/image.json": {
+      "hash": "2a4eb810aa3786afde773e168df83a046171e8b5f3dd1b938651c324f8ffd24c",
+      "last_checked": "2025-06-06T04:08:25.056166",
+      "status": "unchanged",
+      "etag": "W/\"0c4b0adc48ee245221e8542d86f86aa9\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediatype/image": {
+      "hash": "2a4eb810aa3786afde773e168df83a046171e8b5f3dd1b938651c324f8ffd24c",
+      "last_checked": "2025-06-06T04:08:25.056166",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediatype/movie.json": {
+      "hash": "978ed1b203af4b7ad4957b1f8747e4fc7edeb170e5df06aa8929c3d732a5d75b",
+      "last_checked": "2025-06-06T04:08:25.455772",
+      "status": "unchanged",
+      "etag": "W/\"9c9a4422ade67c36805bf9e244c41a12\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediatype/movie": {
+      "hash": "978ed1b203af4b7ad4957b1f8747e4fc7edeb170e5df06aa8929c3d732a5d75b",
+      "last_checked": "2025-06-06T04:08:25.455772",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediatype/init(rawvalue:).json": {
+      "hash": "93b1dc5b8b1ced518732852f645269b6a63e0578df9968c81704b461172719f2",
+      "last_checked": "2025-06-06T04:08:25.852297",
+      "status": "unchanged",
+      "etag": "W/\"7fd382490ea78f5e74e809c12a634feb\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediatype/init(rawvalue:)": {
+      "hash": "93b1dc5b8b1ced518732852f645269b6a63e0578df9968c81704b461172719f2",
+      "last_checked": "2025-06-06T04:08:25.852297",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectdurationkey.json": {
+      "hash": "a7cb08ca93070a41186e3edbe76ff8146566bc962a79fdfcec53613f42a4a44d",
+      "last_checked": "2025-06-06T04:08:26.257342",
+      "status": "unchanged",
+      "etag": "W/\"d82085a66d976a58ce8388beb7a5a40b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectdurationkey": {
+      "hash": "a7cb08ca93070a41186e3edbe76ff8146566bc962a79fdfcec53613f42a4a44d",
+      "last_checked": "2025-06-06T04:08:26.257342",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectartistkey.json": {
+      "hash": "ee6ff44486ee75f693ac57e410c14e1da9135f04fd5262d04121f7d4df40bc3f",
+      "last_checked": "2025-06-06T04:08:26.631412",
+      "status": "unchanged",
+      "etag": "W/\"c05f14105a769ff3c6b99595daf7bfdb\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectartistkey": {
+      "hash": "ee6ff44486ee75f693ac57e410c14e1da9135f04fd5262d04121f7d4df40bc3f",
+      "last_checked": "2025-06-06T04:08:26.631412",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectalbumkey.json": {
+      "hash": "12b136ef627ff852d2e610f17883d94fe67cc3c0d3a531a105a7b219dd9db896",
+      "last_checked": "2025-06-06T04:08:26.994608",
+      "status": "unchanged",
+      "etag": "W/\"bfed44be7fa5bf0a93b8f1b70d13b91a\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectalbumkey": {
+      "hash": "12b136ef627ff852d2e610f17883d94fe67cc3c0d3a531a105a7b219dd9db896",
+      "last_checked": "2025-06-06T04:08:26.994608",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectgenrekey.json": {
+      "hash": "ed95ff9fa3fba9379398084d37392a94662328ecf6ac5ba64fd66d3a772d0ca2",
+      "last_checked": "2025-06-06T04:08:27.405082",
+      "status": "unchanged",
+      "etag": "W/\"24ed85d49ef1610f6c5c8e5301d3762f\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectgenrekey": {
+      "hash": "ed95ff9fa3fba9379398084d37392a94662328ecf6ac5ba64fd66d3a772d0ca2",
+      "last_checked": "2025-06-06T04:08:27.405082",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectkindkey.json": {
+      "hash": "f5f48b90a37482f8cd89d4d6977539130d4c72cc64bab826f4ff5398a96699b9",
+      "last_checked": "2025-06-06T04:08:27.780031",
+      "status": "unchanged",
+      "etag": "W/\"4319c3288168eaa9b1e364704227f310\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectkindkey": {
+      "hash": "f5f48b90a37482f8cd89d4d6977539130d4c72cc64bab826f4ff5398a96699b9",
+      "last_checked": "2025-06-06T04:08:27.780031",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjecttracknumberkey.json": {
+      "hash": "bd2579b5ccc2446e75f36d3403a26855f15af8239029085074f2726fd21d2ba5",
+      "last_checked": "2025-06-06T04:08:28.140936",
+      "status": "unchanged",
+      "etag": "W/\"984d98c2f918d3e0924c1785b12938e3\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjecttracknumberkey": {
+      "hash": "bd2579b5ccc2446e75f36d3403a26855f15af8239029085074f2726fd21d2ba5",
+      "last_checked": "2025-06-06T04:08:28.140936",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectbitratekey.json": {
+      "hash": "fb35077a0b174bade050dee521d6f924c87b1fa043c825dfa801e4010ad25957",
+      "last_checked": "2025-06-06T04:08:28.514912",
+      "status": "unchanged",
+      "etag": "W/\"e92946bdf12d5f7d9305c23775b5fc1c\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectbitratekey": {
+      "hash": "fb35077a0b174bade050dee521d6f924c87b1fa043c825dfa801e4010ad25957",
+      "last_checked": "2025-06-06T04:08:28.514912",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectsampleratekey.json": {
+      "hash": "369b860c22f70efd12c173c30352fefce503f79fe29addb9dd1b4e05d8e9ac6b",
+      "last_checked": "2025-06-06T04:08:28.881722",
+      "status": "unchanged",
+      "etag": "W/\"370a7bbfdf4d7562a72c4b6f35a84281\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectsampleratekey": {
+      "hash": "369b860c22f70efd12c173c30352fefce503f79fe29addb9dd1b4e05d8e9ac6b",
+      "last_checked": "2025-06-06T04:08:28.881722",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectchannelcountkey.json": {
+      "hash": "a49a14968d4a2c8909b767c823c7a10d0ab1f0436a509c3b142d9f8fb01fe8b0",
+      "last_checked": "2025-06-06T04:08:29.280907",
+      "status": "unchanged",
+      "etag": "W/\"85a2e928bd87169c5ca99def2fe73f87\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectchannelcountkey": {
+      "hash": "a49a14968d4a2c8909b767c823c7a10d0ab1f0436a509c3b142d9f8fb01fe8b0",
+      "last_checked": "2025-06-06T04:08:29.280907",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectresolutionstringkey.json": {
+      "hash": "4c726b0b0876e20e5dc75a972be901c8716fbfab3a7758d123fafe8bb2c11621",
+      "last_checked": "2025-06-06T04:08:29.672855",
+      "status": "unchanged",
+      "etag": "W/\"7f9e0b7e0e9cc947a23fa9d1df138ec3\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectresolutionstringkey": {
+      "hash": "4c726b0b0876e20e5dc75a972be901c8716fbfab3a7758d123fafe8bb2c11621",
+      "last_checked": "2025-06-06T04:08:29.672855",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectcommentskey.json": {
+      "hash": "010940e4f14165e3724870e2a06721185668ca056a0762cdf70e30d7220749e8",
+      "last_checked": "2025-06-06T04:08:30.054177",
+      "status": "unchanged",
+      "etag": "W/\"344cca223e2af8978a355ae35e76ca7d\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectcommentskey": {
+      "hash": "010940e4f14165e3724870e2a06721185668ca056a0762cdf70e30d7220749e8",
+      "last_checked": "2025-06-06T04:08:30.054177",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectkeywordskey.json": {
+      "hash": "471d21797a27e7bdd2484b51d3127714de137eb6dfd3656ef26898c8ae116681",
+      "last_checked": "2025-06-06T04:08:30.442089",
+      "status": "unchanged",
+      "etag": "W/\"88618b4a92b6901567b96138b3a2fb26\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectkeywordskey": {
+      "hash": "471d21797a27e7bdd2484b51d3127714de137eb6dfd3656ef26898c8ae116681",
+      "last_checked": "2025-06-06T04:08:30.442089",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectprotectedkey.json": {
+      "hash": "3a0e31fac7ab525251fc6369960a59702e802f690a745afd1a31248f7f17cce9",
+      "last_checked": "2025-06-06T04:08:30.805337",
+      "status": "unchanged",
+      "etag": "W/\"2c1390192e962926eafba10aa0a4a455\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlmediaobjectprotectedkey": {
+      "hash": "3a0e31fac7ab525251fc6369960a59702e802f690a745afd1a31248f7f17cce9",
+      "last_checked": "2025-06-06T04:08:30.805337",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimovierootgrouptypeidentifier.json": {
+      "hash": "dba37639505e87812b7f83463d8fd3dd6da9b27f570546fe4deb5d0e105e9846",
+      "last_checked": "2025-06-06T04:08:31.186943",
+      "status": "unchanged",
+      "etag": "W/\"5962134d186cd7f75a92106ed235f07b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlimovierootgrouptypeidentifier": {
+      "hash": "dba37639505e87812b7f83463d8fd3dd6da9b27f570546fe4deb5d0e105e9846",
+      "last_checked": "2025-06-06T04:08:31.186943",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimovieprojectgrouptypeidentifier.json": {
+      "hash": "a8ed9452cacc5d0373fdbda4414b8f34f588d33473ba7aef7145d57bfaa7e542",
+      "last_checked": "2025-06-06T04:08:31.627209",
+      "status": "unchanged",
+      "etag": "W/\"52fd6aceda05a3ffaa09fa69d70d3f82\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlimovieprojectgrouptypeidentifier": {
+      "hash": "a8ed9452cacc5d0373fdbda4414b8f34f588d33473ba7aef7145d57bfaa7e542",
+      "last_checked": "2025-06-06T04:08:31.627209",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimoviefoldergrouptypeidentifier.json": {
+      "hash": "d41d56f479ac864766f3ae035393bbeb222502f2e62c28ec1723ca0198d4dca2",
+      "last_checked": "2025-06-06T04:08:32.008218",
+      "status": "unchanged",
+      "etag": "W/\"09afcdb316462905f7472f8ebfd80ef1\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlimoviefoldergrouptypeidentifier": {
+      "hash": "d41d56f479ac864766f3ae035393bbeb222502f2e62c28ec1723ca0198d4dca2",
+      "last_checked": "2025-06-06T04:08:32.008218",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimovieeventgrouptypeidentifier.json": {
+      "hash": "095d1da3cae62b2e2c350561f8b08a18addd56fb266bda2dd84bf1b39b97d2d3",
+      "last_checked": "2025-06-06T04:08:32.406629",
+      "status": "unchanged",
+      "etag": "W/\"e4f56681bec1ab74a502a67caacdd577\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlimovieeventgrouptypeidentifier": {
+      "hash": "095d1da3cae62b2e2c350561f8b08a18addd56fb266bda2dd84bf1b39b97d2d3",
+      "last_checked": "2025-06-06T04:08:32.406629",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimovieeventcalendargrouptypeidentifier.json": {
+      "hash": "2db94d5691a563c2009d1e3184e03a00e0c84c3c5dab3521cd8affa44e13af4f",
+      "last_checked": "2025-06-06T04:08:32.811689",
+      "status": "unchanged",
+      "etag": "W/\"0f4c712417e30fe525ad1310be9234f7\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlimovieeventcalendargrouptypeidentifier": {
+      "hash": "2db94d5691a563c2009d1e3184e03a00e0c84c3c5dab3521cd8affa44e13af4f",
+      "last_checked": "2025-06-06T04:08:32.811689",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimovieeventlibrarygrouptypeidentifier.json": {
+      "hash": "08895b3ca4629c4b097dfa3002f016822d15bd648821d26fdc371863d411898c",
+      "last_checked": "2025-06-06T04:08:33.166340",
+      "status": "unchanged",
+      "etag": "W/\"6021b8b68b2bd4abb92cd14c7c73330f\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlimovieeventlibrarygrouptypeidentifier": {
+      "hash": "08895b3ca4629c4b097dfa3002f016822d15bd648821d26fdc371863d411898c",
+      "last_checked": "2025-06-06T04:08:33.166340",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotorootgrouptypeidentifier.json": {
+      "hash": "89a6a94e828a23334081cbe3320ae4404ecf30bc5d032d1d8900221828819794",
+      "last_checked": "2025-06-06T04:08:33.562024",
+      "status": "unchanged",
+      "etag": "W/\"9418a26c64aaff9733f2bfa4d719001d\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotorootgrouptypeidentifier": {
+      "hash": "89a6a94e828a23334081cbe3320ae4404ecf30bc5d032d1d8900221828819794",
+      "last_checked": "2025-06-06T04:08:33.562024",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoalbumtypeidentifier.json": {
+      "hash": "fdf7fa79a19a45ed1f26c3f664bc8a00f07ce621a4847d72d8fb636e2faf1871",
+      "last_checked": "2025-06-06T04:08:33.990550",
+      "status": "unchanged",
+      "etag": "W/\"7e5f053adca185cfd1bb92e01042b337\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoalbumtypeidentifier": {
+      "hash": "fdf7fa79a19a45ed1f26c3f664bc8a00f07ce621a4847d72d8fb636e2faf1871",
+      "last_checked": "2025-06-06T04:08:33.990550",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotosmartalbumtypeidentifier.json": {
+      "hash": "bc9f1c87d02534b0b455f45bc13457e57a69e721c6f0ffebeaf2addf1f140e80",
+      "last_checked": "2025-06-06T04:08:34.369134",
+      "status": "unchanged",
+      "etag": "W/\"7c72c4706c935beb183cf7577670fbe8\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotosmartalbumtypeidentifier": {
+      "hash": "bc9f1c87d02534b0b455f45bc13457e57a69e721c6f0ffebeaf2addf1f140e80",
+      "last_checked": "2025-06-06T04:08:34.369134",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotolibraryalbumtypeidentifier.json": {
+      "hash": "45ed2f82c9251439d8ac91adbfef64e5b7c2b84c6f8c1aa20fb301450c935a42",
+      "last_checked": "2025-06-06T04:08:34.724165",
+      "status": "unchanged",
+      "etag": "W/\"f2649baf5b534a24e84c13342d0788e0\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotolibraryalbumtypeidentifier": {
+      "hash": "45ed2f82c9251439d8ac91adbfef64e5b7c2b84c6f8c1aa20fb301450c935a42",
+      "last_checked": "2025-06-06T04:08:34.724165",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotofolderalbumtypeidentifier.json": {
+      "hash": "9b7cacc95afc2447c510e04de3d02993d327991dc6918c12b2f32261086b2dc2",
+      "last_checked": "2025-06-06T04:08:35.118734",
+      "status": "unchanged",
+      "etag": "W/\"234ae421215315c0893ec01023bd3916\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotofolderalbumtypeidentifier": {
+      "hash": "9b7cacc95afc2447c510e04de3d02993d327991dc6918c12b2f32261086b2dc2",
+      "last_checked": "2025-06-06T04:08:35.118734",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoeventalbumtypeidentifier.json": {
+      "hash": "3ff6ab69f9037391c86ac161e0bb00f13917a6892ae868d4b3229416fa12c0ed",
+      "last_checked": "2025-06-06T04:08:35.494533",
+      "status": "unchanged",
+      "etag": "W/\"caf0f3f6e4e21f40f3377741372b97f6\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoeventalbumtypeidentifier": {
+      "hash": "3ff6ab69f9037391c86ac161e0bb00f13917a6892ae868d4b3229416fa12c0ed",
+      "last_checked": "2025-06-06T04:08:35.494533",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoeventsfoldertypeidentifier.json": {
+      "hash": "1e6240aa9f4205d21f14dc038458791e58ce45d9e077686e265094b3727af01d",
+      "last_checked": "2025-06-06T04:08:36.152483",
+      "status": "unchanged",
+      "etag": "W/\"d660206ee682b4cdcc90b27c537f4fe5\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoeventsfoldertypeidentifier": {
+      "hash": "1e6240aa9f4205d21f14dc038458791e58ce45d9e077686e265094b3727af01d",
+      "last_checked": "2025-06-06T04:08:36.152483",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotolastviewedeventalbumtypeidentifier.json": {
+      "hash": "28c863eedc6c710b814ef79ba0afd6b8c6fe7f0a74fddc0de7ff1466b48eaa16",
+      "last_checked": "2025-06-06T04:08:36.573157",
+      "status": "unchanged",
+      "etag": "W/\"c523bd7e68599f30b1e41ba78c50d244\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotolastviewedeventalbumtypeidentifier": {
+      "hash": "28c863eedc6c710b814ef79ba0afd6b8c6fe7f0a74fddc0de7ff1466b48eaa16",
+      "last_checked": "2025-06-06T04:08:36.573157",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotolastimportalbumtypeidentifier.json": {
+      "hash": "0b9e80cdf3be11e3255c2abf1e3ae5fd1e872f505a76a5e5e20f2356170f74eb",
+      "last_checked": "2025-06-06T04:08:37.136770",
+      "status": "unchanged",
+      "etag": "W/\"d2a6899293e81b65e2be201b3e093d8a\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotolastimportalbumtypeidentifier": {
+      "hash": "0b9e80cdf3be11e3255c2abf1e3ae5fd1e872f505a76a5e5e20f2356170f74eb",
+      "last_checked": "2025-06-06T04:08:37.136770",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotolastnmonthsalbumtypeidentifier.json": {
+      "hash": "52123288549eeac16bf3059e93fbd47a5743de6544ae21b61819d8404aec0f4d",
+      "last_checked": "2025-06-06T04:08:37.784775",
+      "status": "unchanged",
+      "etag": "W/\"71d4f8a6f37f6b5dfcadd87e026252e7\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotolastnmonthsalbumtypeidentifier": {
+      "hash": "52123288549eeac16bf3059e93fbd47a5743de6544ae21b61819d8404aec0f4d",
+      "last_checked": "2025-06-06T04:08:37.784775",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoflaggedalbumtypeidentifier.json": {
+      "hash": "7b155ed3af0deabe38197d17baaa6fa183dadb27f2a0581cc695a3d3729daed6",
+      "last_checked": "2025-06-06T04:08:38.223365",
+      "status": "unchanged",
+      "etag": "W/\"a2a21df06c8c4ad25313b2b6ec0277a9\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoflaggedalbumtypeidentifier": {
+      "hash": "7b155ed3af0deabe38197d17baaa6fa183dadb27f2a0581cc695a3d3729daed6",
+      "last_checked": "2025-06-06T04:08:38.223365",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotosubscribedalbumtypeidentifier.json": {
+      "hash": "9e3be19cc9372759bc62cf1531fe83d9693a2c5eda405af8ef1b18e840e6d2a5",
+      "last_checked": "2025-06-06T04:08:38.642768",
+      "status": "unchanged",
+      "etag": "W/\"2a46981bd19d09a7ed49b440fe85ef42\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotosubscribedalbumtypeidentifier": {
+      "hash": "9e3be19cc9372759bc62cf1531fe83d9693a2c5eda405af8ef1b18e840e6d2a5",
+      "last_checked": "2025-06-06T04:08:38.642768",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoslideshowalbumtypeidentifier.json": {
+      "hash": "39ded983cb1fb7b15d5e797c6b0ccec75ef2669d3632da3a6edf2c58de001e82",
+      "last_checked": "2025-06-06T04:08:39.076113",
+      "status": "unchanged",
+      "etag": "W/\"32824b46feed550cdd94e5813e5c0dd3\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoslideshowalbumtypeidentifier": {
+      "hash": "39ded983cb1fb7b15d5e797c6b0ccec75ef2669d3632da3a6edf2c58de001e82",
+      "last_checked": "2025-06-06T04:08:39.076113",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotophotostreamalbumtypeidentifier.json": {
+      "hash": "a082176985e6abb4f665fe925ba6b6c452ad45e008940124815171e39aae7552",
+      "last_checked": "2025-06-06T04:08:39.636597",
+      "status": "unchanged",
+      "etag": "W/\"8ef5b348a71a21ec6fe0e459ed120514\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotophotostreamalbumtypeidentifier": {
+      "hash": "a082176985e6abb4f665fe925ba6b6c452ad45e008940124815171e39aae7552",
+      "last_checked": "2025-06-06T04:08:39.636597",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotofacesalbumtypeidentifier.json": {
+      "hash": "986dbdbe034dc8bf02050d7d49c94d46922e984d55c42ccac775c2a70c07b5be",
+      "last_checked": "2025-06-06T04:08:40.090932",
+      "status": "unchanged",
+      "etag": "W/\"e119736b4eeaeb10e58a0a9175a52a41\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotofacesalbumtypeidentifier": {
+      "hash": "986dbdbe034dc8bf02050d7d49c94d46922e984d55c42ccac775c2a70c07b5be",
+      "last_checked": "2025-06-06T04:08:40.090932",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoplacesalbumtypeidentifier.json": {
+      "hash": "e80a0e6e00b7197b36396a4d06db64991ec2de1beafbf5cb5af5c2397602184a",
+      "last_checked": "2025-06-06T04:08:40.513964",
+      "status": "unchanged",
+      "etag": "W/\"9c062a7a0491a982a665baacdfdc2e9b\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoplacesalbumtypeidentifier": {
+      "hash": "e80a0e6e00b7197b36396a4d06db64991ec2de1beafbf5cb5af5c2397602184a",
+      "last_checked": "2025-06-06T04:08:40.513964",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoplacescountryalbumtypeidentifier.json": {
+      "hash": "2c2ffa1a66d1a6065bcda2a6c982ae6b600e6be07fe440ce52275d0edcda3ca2",
+      "last_checked": "2025-06-06T04:08:41.089175",
+      "status": "unchanged",
+      "etag": "W/\"cbf309544ff1e62ccffcb1c3195e5aa6\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoplacescountryalbumtypeidentifier": {
+      "hash": "2c2ffa1a66d1a6065bcda2a6c982ae6b600e6be07fe440ce52275d0edcda3ca2",
+      "last_checked": "2025-06-06T04:08:41.089175",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoplacesprovincealbumtypeidentifier.json": {
+      "hash": "65f6968b3da5d8b014f7a631cff2682eaa52867c59723a9c14de3a03537e4bd9",
+      "last_checked": "2025-06-06T04:08:41.537006",
+      "status": "unchanged",
+      "etag": "W/\"b7746ad0f447d72000229d833cacaa09\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoplacesprovincealbumtypeidentifier": {
+      "hash": "65f6968b3da5d8b014f7a631cff2682eaa52867c59723a9c14de3a03537e4bd9",
+      "last_checked": "2025-06-06T04:08:41.537006",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoplacescityalbumtypeidentifier.json": {
+      "hash": "c87c8bae71f742c37b371db4575236463de8004ed03447290b04c59339b19c42",
+      "last_checked": "2025-06-06T04:08:41.946162",
+      "status": "unchanged",
+      "etag": "W/\"5a78c389011934b25137a5506e65e6e4\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoplacescityalbumtypeidentifier": {
+      "hash": "c87c8bae71f742c37b371db4575236463de8004ed03447290b04c59339b19c42",
+      "last_checked": "2025-06-06T04:08:41.946162",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoplacespointofinterestalbumtypeidentifier.json": {
+      "hash": "c1babe2c9df5f3bd7e4d0061eae6d787ced5b2f4f21d66c80b90de09a0018305",
+      "last_checked": "2025-06-06T04:08:42.359339",
+      "status": "unchanged",
+      "etag": "W/\"30ac609a3917dcbf56d9c892b3d50932\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoplacespointofinterestalbumtypeidentifier": {
+      "hash": "c1babe2c9df5f3bd7e4d0061eae6d787ced5b2f4f21d66c80b90de09a0018305",
+      "last_checked": "2025-06-06T04:08:42.359339",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotofacebookalbumtypeidentifier.json": {
+      "hash": "b4689c74d3b316e9521d179a3b7cad7840e95bb6a4794fbe0776ac44b64b378e",
+      "last_checked": "2025-06-06T04:08:42.793197",
+      "status": "unchanged",
+      "etag": "W/\"e5c1a37ceb59ccc3b0c5160562238576\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotofacebookalbumtypeidentifier": {
+      "hash": "b4689c74d3b316e9521d179a3b7cad7840e95bb6a4794fbe0776ac44b64b378e",
+      "last_checked": "2025-06-06T04:08:42.793197",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotofacebookgrouptypeidentifier.json": {
+      "hash": "d076a60f799553d64277cd2a9d4cffb25f4f18df10e15c824f8b39fc3feb528a",
+      "last_checked": "2025-06-06T04:08:43.187191",
+      "status": "unchanged",
+      "etag": "W/\"2936cafe28423364cb720050c78d0081\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotofacebookgrouptypeidentifier": {
+      "hash": "d076a60f799553d64277cd2a9d4cffb25f4f18df10e15c824f8b39fc3feb528a",
+      "last_checked": "2025-06-06T04:08:43.187191",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoflickralbumtypeidentifier.json": {
+      "hash": "494fa27c1b38a40a2018e0b522362cfe5f99aa05910bb0873dbe8324e2f50d20",
+      "last_checked": "2025-06-06T04:08:43.619120",
+      "status": "unchanged",
+      "etag": "W/\"aa26f5accdd372bae81055048a06ccb3\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoflickralbumtypeidentifier": {
+      "hash": "494fa27c1b38a40a2018e0b522362cfe5f99aa05910bb0873dbe8324e2f50d20",
+      "last_checked": "2025-06-06T04:08:43.619120",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoflickrgrouptypeidentifier.json": {
+      "hash": "e5cbd4a713a1e563c30b5e9d89f4643d1a7b810ff2a93e9c0ad51fa9d0e8279b",
+      "last_checked": "2025-06-06T04:08:44.043697",
+      "status": "unchanged",
+      "etag": "W/\"dab32c925d535d079badea9ef1a7b152\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mliphotoflickrgrouptypeidentifier": {
+      "hash": "e5cbd4a713a1e563c30b5e9d89f4643d1a7b810ff2a93e9c0ad51fa9d0e8279b",
+      "last_checked": "2025-06-06T04:08:44.043697",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesrootgrouptypeidentifier.json": {
+      "hash": "e30bba9d1dc298ddfafa46beb76db2e0d4d7f57845b884941dbb269535407f4e",
+      "last_checked": "2025-06-06T04:08:44.452542",
+      "status": "unchanged",
+      "etag": "W/\"e6855c786a740c14b65a23a35f43db5f\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunesrootgrouptypeidentifier": {
+      "hash": "e30bba9d1dc298ddfafa46beb76db2e0d4d7f57845b884941dbb269535407f4e",
+      "last_checked": "2025-06-06T04:08:44.452542",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesplaylisttypeidentifier.json": {
+      "hash": "10149d53f9773a36810f554259c1c723182f429042377050acaf15f5437cadb4",
+      "last_checked": "2025-06-06T04:08:44.887341",
+      "status": "unchanged",
+      "etag": "W/\"fe0eb09d8d2f06cd4aa062bd1ef11a17\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunesplaylisttypeidentifier": {
+      "hash": "10149d53f9773a36810f554259c1c723182f429042377050acaf15f5437cadb4",
+      "last_checked": "2025-06-06T04:08:44.887341",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunessmartplaylisttypeidentifier.json": {
+      "hash": "575a566cb0ab9a93e2456b9de341bdbce000914521ad3c516930ea57f9e8a24f",
+      "last_checked": "2025-06-06T04:08:45.360330",
+      "status": "unchanged",
+      "etag": "W/\"15918365db0c8b04753c7013f007b6db\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunessmartplaylisttypeidentifier": {
+      "hash": "575a566cb0ab9a93e2456b9de341bdbce000914521ad3c516930ea57f9e8a24f",
+      "last_checked": "2025-06-06T04:08:45.360330",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesgeniusplaylisttypeidentifier.json": {
+      "hash": "c8035ee84e833aae7a287b18b02421a907853b126d6888b6109335f90def7eb9",
+      "last_checked": "2025-06-06T04:08:45.737100",
+      "status": "unchanged",
+      "etag": "W/\"f44550784b19e2248647308b190f499f\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunesgeniusplaylisttypeidentifier": {
+      "hash": "c8035ee84e833aae7a287b18b02421a907853b126d6888b6109335f90def7eb9",
+      "last_checked": "2025-06-06T04:08:45.737100",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunessavedgeniusplaylisttypeidentifier.json": {
+      "hash": "9a126b7cb65541cdd83868449fb4b37a41934fae7375ea4d6049a8d3e5a1cea9",
+      "last_checked": "2025-06-06T04:08:46.159047",
+      "status": "unchanged",
+      "etag": "W/\"c8d7f1e55e0678b383dbdd02a8ed7787\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunessavedgeniusplaylisttypeidentifier": {
+      "hash": "9a126b7cb65541cdd83868449fb4b37a41934fae7375ea4d6049a8d3e5a1cea9",
+      "last_checked": "2025-06-06T04:08:46.159047",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesfolderplaylisttypeidentifier.json": {
+      "hash": "e9cd2434caff0bc99fcc89c8f5cc23d418a6c53efe15d17b5a15b15b8f50cc7b",
+      "last_checked": "2025-06-06T04:08:46.583999",
+      "status": "unchanged",
+      "etag": "W/\"2e88a833cea25f98a778e2d34739453e\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunesfolderplaylisttypeidentifier": {
+      "hash": "e9cd2434caff0bc99fcc89c8f5cc23d418a6c53efe15d17b5a15b15b8f50cc7b",
+      "last_checked": "2025-06-06T04:08:46.583999",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesaudiobooksplaylisttypeidentifier.json": {
+      "hash": "21d2d01eed5ae216374afdc45a6e74d22cfc9221fe67f4df2da1ed00c1da93ea",
+      "last_checked": "2025-06-06T04:08:47.032497",
+      "status": "unchanged",
+      "etag": "W/\"f0bba01cb0b28d761bd5a07411733f49\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunesaudiobooksplaylisttypeidentifier": {
+      "hash": "21d2d01eed5ae216374afdc45a6e74d22cfc9221fe67f4df2da1ed00c1da93ea",
+      "last_checked": "2025-06-06T04:08:47.032497",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesitunesuplaylisttypeidentifier.json": {
+      "hash": "417a059985cbf5d704fc2a56de19ac70d58ce477070b42f4bd4462ea594cdad6",
+      "last_checked": "2025-06-06T04:08:47.447813",
+      "status": "unchanged",
+      "etag": "W/\"aef19c41962eaf28af5010c484928554\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunesitunesuplaylisttypeidentifier": {
+      "hash": "417a059985cbf5d704fc2a56de19ac70d58ce477070b42f4bd4462ea594cdad6",
+      "last_checked": "2025-06-06T04:08:47.447813",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesmoviesplaylisttypeidentifier.json": {
+      "hash": "77c74bdfe0e34e8f31f545110123adcb6525d3c02515471a98cdfac092bd0590",
+      "last_checked": "2025-06-06T04:08:47.863994",
+      "status": "unchanged",
+      "etag": "W/\"e084c819d6241525aa840fcb1a9fe3b4\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunesmoviesplaylisttypeidentifier": {
+      "hash": "77c74bdfe0e34e8f31f545110123adcb6525d3c02515471a98cdfac092bd0590",
+      "last_checked": "2025-06-06T04:08:47.863994",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesmusicplaylisttypeidentifier.json": {
+      "hash": "a2c7f74e82ba49e8345fc4e4238ecade87ea8176fde78082f70181490a028afa",
+      "last_checked": "2025-06-06T04:08:48.293146",
+      "status": "unchanged",
+      "etag": "W/\"2877036466bdce6b7c7272da2a8752e4\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunesmusicplaylisttypeidentifier": {
+      "hash": "a2c7f74e82ba49e8345fc4e4238ecade87ea8176fde78082f70181490a028afa",
+      "last_checked": "2025-06-06T04:08:48.293146",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunespodcastplaylisttypeidentifier.json": {
+      "hash": "37e39b0e722ea1371fcac4d66c829f782c14639617c7a9d62501fcd5fd75aefc",
+      "last_checked": "2025-06-06T04:08:48.772829",
+      "status": "unchanged",
+      "etag": "W/\"34ee01926e8c1514d0525145bcc74e8f\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunespodcastplaylisttypeidentifier": {
+      "hash": "37e39b0e722ea1371fcac4d66c829f782c14639617c7a9d62501fcd5fd75aefc",
+      "last_checked": "2025-06-06T04:08:48.772829",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunespurchasedplaylisttypeidentifier.json": {
+      "hash": "a1e4b37e3bb1ca29cdd74fbc89f164211cbb8ad913ce5d5db54131742d9dfc94",
+      "last_checked": "2025-06-06T04:08:49.165988",
+      "status": "unchanged",
+      "etag": "W/\"8d6f3006bb5197fc47232a5f6755bb32\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunespurchasedplaylisttypeidentifier": {
+      "hash": "a1e4b37e3bb1ca29cdd74fbc89f164211cbb8ad913ce5d5db54131742d9dfc94",
+      "last_checked": "2025-06-06T04:08:49.165988",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunestvshowsplaylisttypeidentifier.json": {
+      "hash": "65122041f69558527ee941ae22ee2063597bedef99b1191e2c2a714b8b573c51",
+      "last_checked": "2025-06-06T04:08:49.586407",
+      "status": "unchanged",
+      "etag": "W/\"b6d5429272f786b6978ceea74fa1cbf4\""
+    },
+    "https://developer.apple.com/documentation/medialibrary/mlitunestvshowsplaylisttypeidentifier": {
+      "hash": "65122041f69558527ee941ae22ee2063597bedef99b1191e2c2a714b8b573c51",
+      "last_checked": "2025-06-06T04:08:49.586407",
+      "status": "unchanged"
+    }
+  }
+}

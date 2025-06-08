@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T13:47:55.668900",
+    "total_pages": 8,
+    "etags_collected": "2025-06-07T13:47:55.668905"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/kernelmanagement.json": {
+      "hash": "c0bfa32ea14b19265e5c5108558e1ed2dd92a718d1e109742747c09958a0b2be",
+      "last_checked": "2025-06-06T01:40:45.516251",
+      "status": "unchanged",
+      "etag": "W/\"0d1f56076bcf4dc1537b542e35182f97\""
+    },
+    "https://developer.apple.com/documentation/kernelmanagement": {
+      "hash": "c0bfa32ea14b19265e5c5108558e1ed2dd92a718d1e109742747c09958a0b2be",
+      "last_checked": "2025-06-06T01:40:45.516251",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernelmanagement/kernelmanagement_constants.json": {
+      "hash": "cd31dd603311c433196213922bb04af1a7ade60859e95f7a1627bd4959ced198",
+      "last_checked": "2025-06-06T01:40:46.415594",
+      "status": "unchanged",
+      "etag": "W/\"834e461ed56147ddd9e067aa8b6505cb\""
+    },
+    "https://developer.apple.com/documentation/kernelmanagement/kernelmanagement_constants": {
+      "hash": "cd31dd603311c433196213922bb04af1a7ade60859e95f7a1627bd4959ced198",
+      "last_checked": "2025-06-06T01:40:46.415594",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernelmanagement/kernelmanagementversionnumber.json": {
+      "hash": "36b153e0ac9b0e884087cbf141c7d39afeda6a93b81d91fb146dbbb26dfa5171",
+      "last_checked": "2025-06-06T01:40:46.786473",
+      "status": "unchanged",
+      "etag": "W/\"28419c05bb8ec1ba5faf6eb0347bde14\""
+    },
+    "https://developer.apple.com/documentation/kernelmanagement/kernelmanagementversionnumber": {
+      "hash": "36b153e0ac9b0e884087cbf141c7d39afeda6a93b81d91fb146dbbb26dfa5171",
+      "last_checked": "2025-06-06T01:40:46.786473",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/kernelmanagement/kernelmanagementversionstring.json": {
+      "hash": "4f28dab5dcdb793da4ae6bfcfcd016f4c9310a779a982793109fdefdd7b21ce7",
+      "last_checked": "2025-06-06T01:40:47.184134",
+      "status": "unchanged",
+      "etag": "W/\"d2127cd185e1abcb6987646d2135f7f4\""
+    },
+    "https://developer.apple.com/documentation/kernelmanagement/kernelmanagementversionstring": {
+      "hash": "4f28dab5dcdb793da4ae6bfcfcd016f4c9310a779a982793109fdefdd7b21ce7",
+      "last_checked": "2025-06-06T01:40:47.184134",
+      "status": "unchanged"
+    }
+  }
+}

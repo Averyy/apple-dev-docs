@@ -1,0 +1,576 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-08T17:22:34.343661",
+    "total_pages": 103
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/DarwinNotify.json": {
+      "hash": "d61863ee68a4cb6868604d16a130720cae73a9643b610d9ebe4c7ec0466bbaf7",
+      "last_checked": "2025-06-08T17:22:34.170676",
+      "status": "unchanged",
+      "etag": "W/\"4469d1bd7a07361facd6210f26e9913a\""
+    },
+    "https://developer.apple.com/documentation/DarwinNotify": {
+      "hash": "d61863ee68a4cb6868604d16a130720cae73a9643b610d9ebe4c7ec0466bbaf7",
+      "last_checked": "2025-06-08T17:22:34.170739",
+      "status": "unchanged",
+      "etag": "W/\"4469d1bd7a07361facd6210f26e9913a\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify.json": {
+      "hash": "c9ac3a79531c56c1b0b31564ea7f1c3fba0d60f8f498a51331c65ba6eec075b7",
+      "last_checked": "2025-06-05T21:20:19.955459",
+      "status": "unchanged",
+      "etag": "W/\"4469d1bd7a07361facd6210f26e9913a\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/darwin-notification-api.json": {
+      "hash": "1b27b6ac285ce85580fc50707da4dcb90c870323c4c8823acaa8a6e1f278ce15",
+      "last_checked": "2025-06-05T21:20:20.717694",
+      "status": "unchanged",
+      "etag": "W/\"d092349b7dc1399159602d18d161ad53\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/darwin-notification-api": {
+      "hash": "1b27b6ac285ce85580fc50707da4dcb90c870323c4c8823acaa8a6e1f278ce15",
+      "last_checked": "2025-06-05T21:20:20.717694",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/darwinnotify-functions.json": {
+      "hash": "a82baecc4ec39dc7cdac3216c0e6b239a743a15932a676a7409cb8c57ec2780a",
+      "last_checked": "2025-06-05T21:20:21.129875",
+      "status": "unchanged",
+      "etag": "W/\"27aa190d55ee9627f66858ce6ee7a5cb\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/darwinnotify-functions": {
+      "hash": "a82baecc4ec39dc7cdac3216c0e6b239a743a15932a676a7409cb8c57ec2780a",
+      "last_checked": "2025-06-05T21:20:21.129875",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/darwinnotify-data-types.json": {
+      "hash": "955fbb169134f0dd4fb5c9f9da6ea4ca2d0f498939529919edd6eda5e985a500",
+      "last_checked": "2025-06-05T21:20:21.503244",
+      "status": "unchanged",
+      "etag": "W/\"a256cd5652fbda6553c116b76c3ac1d4\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/darwinnotify-data-types": {
+      "hash": "955fbb169134f0dd4fb5c9f9da6ea4ca2d0f498939529919edd6eda5e985a500",
+      "last_checked": "2025-06-05T21:20:21.503244",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/darwinnotify-macros.json": {
+      "hash": "54e8f832efc56c2f2459a057a8f224c51b64efaece6b5f24090f74d8cb077309",
+      "last_checked": "2025-06-05T21:20:21.911528",
+      "status": "unchanged",
+      "etag": "W/\"3aaac559b73c577f6396467a2bb4ac45\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/darwinnotify-macros": {
+      "hash": "54e8f832efc56c2f2459a057a8f224c51b64efaece6b5f24090f74d8cb077309",
+      "last_checked": "2025-06-05T21:20:21.911528",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_cancel.json": {
+      "hash": "aef65583a9827e92151a41817c5d3aaf13ad74dc8f11dade56b6e1d7ca4a700f",
+      "last_checked": "2025-06-05T21:20:22.236735",
+      "status": "unchanged",
+      "etag": "W/\"c7719dc742da706c85a9ee51aa890b25\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_cancel": {
+      "hash": "aef65583a9827e92151a41817c5d3aaf13ad74dc8f11dade56b6e1d7ca4a700f",
+      "last_checked": "2025-06-05T21:20:22.236735",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_check.json": {
+      "hash": "9b7a5dd24510405c195728fc3793780bcfd3414a020088c8078ef180374192d1",
+      "last_checked": "2025-06-05T21:20:22.582232",
+      "status": "unchanged",
+      "etag": "W/\"eb3ab096323ff6757c54052a7322c43e\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_check": {
+      "hash": "9b7a5dd24510405c195728fc3793780bcfd3414a020088c8078ef180374192d1",
+      "last_checked": "2025-06-05T21:20:22.582232",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_get_state.json": {
+      "hash": "807d34f81ea0bb2d05c2584d5001062f739b29697b2e42d64906f371282f1965",
+      "last_checked": "2025-06-05T21:20:22.976206",
+      "status": "unchanged",
+      "etag": "W/\"ba61c9c565bffb9afac9fe8a9a522f5a\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_get_state": {
+      "hash": "807d34f81ea0bb2d05c2584d5001062f739b29697b2e42d64906f371282f1965",
+      "last_checked": "2025-06-05T21:20:22.976206",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_post.json": {
+      "hash": "abc3ce5c9971d41fdcb43465bb1a02a3b240cd0efe7c3051d3253c24bf0dcb89",
+      "last_checked": "2025-06-05T21:20:23.483982",
+      "status": "unchanged",
+      "etag": "W/\"0256c08f5859494d48e6f1a6c7039c5f\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_post": {
+      "hash": "abc3ce5c9971d41fdcb43465bb1a02a3b240cd0efe7c3051d3253c24bf0dcb89",
+      "last_checked": "2025-06-05T21:20:23.483982",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_register_check.json": {
+      "hash": "a84a87bb5f09aa4c0a764d59f661afeecf278fd54414f787d551328d0ae2209e",
+      "last_checked": "2025-06-05T21:20:23.883417",
+      "status": "unchanged",
+      "etag": "W/\"6a8e55005d948ba29723ec699795796e\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_register_check": {
+      "hash": "a84a87bb5f09aa4c0a764d59f661afeecf278fd54414f787d551328d0ae2209e",
+      "last_checked": "2025-06-05T21:20:23.883417",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_register_dispatch.json": {
+      "hash": "38dc8414e0fedfa5ed8dea3b14898f612e607ced0cb66b69a03c85f557e8efb9",
+      "last_checked": "2025-06-05T21:20:24.253974",
+      "status": "unchanged",
+      "etag": "W/\"9a199131fc083492fde22628f1cb1086\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_register_dispatch": {
+      "hash": "38dc8414e0fedfa5ed8dea3b14898f612e607ced0cb66b69a03c85f557e8efb9",
+      "last_checked": "2025-06-05T21:20:24.253974",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_register_mach_port.json": {
+      "hash": "92f37ae8e3cecacfe2694af3023543de1f51fb80e44577260d261daf68d993e2",
+      "last_checked": "2025-06-05T21:20:24.638192",
+      "status": "unchanged",
+      "etag": "W/\"7277c855c47f5273fb2d75cc3e07a04b\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_register_mach_port": {
+      "hash": "92f37ae8e3cecacfe2694af3023543de1f51fb80e44577260d261daf68d993e2",
+      "last_checked": "2025-06-05T21:20:24.638192",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_register_signal.json": {
+      "hash": "3fc00911c3d8a0470002f244a2648e34037b94e48d7ea22c943f845dbf36bede",
+      "last_checked": "2025-06-05T21:20:25.014541",
+      "status": "unchanged",
+      "etag": "W/\"800919b430197eb79ef4d7f634b27ae3\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_register_signal": {
+      "hash": "3fc00911c3d8a0470002f244a2648e34037b94e48d7ea22c943f845dbf36bede",
+      "last_checked": "2025-06-05T21:20:25.014541",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_resume.json": {
+      "hash": "762c327452930629d9dae14c7aaa4ba3c4c31114d5e2e3837c52220366255835",
+      "last_checked": "2025-06-05T21:20:25.416345",
+      "status": "unchanged",
+      "etag": "W/\"fdd24a9efac2465dd9daf41c990dda6b\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_resume": {
+      "hash": "762c327452930629d9dae14c7aaa4ba3c4c31114d5e2e3837c52220366255835",
+      "last_checked": "2025-06-05T21:20:25.416345",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_set_state.json": {
+      "hash": "9659b2615e9132a1b855bfbe228f849eca33b6be06e1bebf069aeda7c8a518b1",
+      "last_checked": "2025-06-05T21:20:25.766461",
+      "status": "unchanged",
+      "etag": "W/\"4c5f2b8d623c78b466d1d0b5867b5cc5\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_set_state": {
+      "hash": "9659b2615e9132a1b855bfbe228f849eca33b6be06e1bebf069aeda7c8a518b1",
+      "last_checked": "2025-06-05T21:20:25.766461",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_suspend.json": {
+      "hash": "36540776505a24715ccb4d498ee673406fcdb17e6034b4cb49adeca2d0c4ebcf",
+      "last_checked": "2025-06-05T21:20:26.151079",
+      "status": "unchanged",
+      "etag": "W/\"3d6b4ac8666374062dc7c63d507bcf1e\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_suspend": {
+      "hash": "36540776505a24715ccb4d498ee673406fcdb17e6034b4cb49adeca2d0c4ebcf",
+      "last_checked": "2025-06-05T21:20:26.151079",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/status-codes.json": {
+      "hash": "1c888dc2e8557fa4f787b9842ece6e348969d32604037630c31863757aa88aed",
+      "last_checked": "2025-06-05T21:20:26.513844",
+      "status": "unchanged",
+      "etag": "W/\"4111169a9f1c41595364728405455154\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/status-codes": {
+      "hash": "1c888dc2e8557fa4f787b9842ece6e348969d32604037630c31863757aa88aed",
+      "last_checked": "2025-06-05T21:20:26.513844",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/miscellaneous-defines.json": {
+      "hash": "05a9012ff60aa334d3ca113e05b8f49f7c3c18e9d0511a4af81e56b9109565e5",
+      "last_checked": "2025-06-05T21:20:26.876881",
+      "status": "unchanged",
+      "etag": "W/\"ccac1ae58e8c7866f23840c5f92e214b\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/miscellaneous-defines": {
+      "hash": "05a9012ff60aa334d3ca113e05b8f49f7c3c18e9d0511a4af81e56b9109565e5",
+      "last_checked": "2025-06-05T21:20:26.876881",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_is_valid_token.json": {
+      "hash": "da33046acfa84244efa22967398280905de0a5f4b332487eb7c2d3fd63b668f5",
+      "last_checked": "2025-06-05T21:20:27.237812",
+      "status": "unchanged",
+      "etag": "W/\"7f9818a11f12b1bd51ea900ba217dcc7\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_is_valid_token": {
+      "hash": "da33046acfa84244efa22967398280905de0a5f4b332487eb7c2d3fd63b668f5",
+      "last_checked": "2025-06-05T21:20:27.237812",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_register_file_descriptor.json": {
+      "hash": "0e0b81e7e93d6decaa94bc4c5392e5f85bb9791a74bb089228b6a20bcf7670be",
+      "last_checked": "2025-06-05T21:20:27.620907",
+      "status": "unchanged",
+      "etag": "W/\"02e2e5b447b759a321de7ca7510a7d6c\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_register_file_descriptor": {
+      "hash": "0e0b81e7e93d6decaa94bc4c5392e5f85bb9791a74bb089228b6a20bcf7670be",
+      "last_checked": "2025-06-05T21:20:27.620907",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_handler_t.json": {
+      "hash": "885a7d930fa3600350bbcf25b706148759368654931e8e77957afe8d265f429d",
+      "last_checked": "2025-06-05T21:20:28.009112",
+      "status": "unchanged",
+      "etag": "W/\"3f122d813c1bb83a04abe84b1da29764\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_handler_t": {
+      "hash": "885a7d930fa3600350bbcf25b706148759368654931e8e77957afe8d265f429d",
+      "last_checked": "2025-06-05T21:20:28.009112",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_null_input.json": {
+      "hash": "5702ca9ed6c7e54982330514e2bf6db0e98b0fb55f5b733b6cb7ff9413ca5470",
+      "last_checked": "2025-06-05T21:20:28.411083",
+      "status": "unchanged",
+      "etag": "W/\"1aadff7d0eac58cd443b1275b882341c\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_null_input": {
+      "hash": "5702ca9ed6c7e54982330514e2bf6db0e98b0fb55f5b733b6cb7ff9413ca5470",
+      "last_checked": "2025-06-05T21:20:28.411083",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_opt_disable.json": {
+      "hash": "012bd7dcdcc8800f2bd95c0d2496788cf9b1fc4f946603b67908ace84c7435d8",
+      "last_checked": "2025-06-05T21:20:28.835723",
+      "status": "unchanged",
+      "etag": "W/\"5cc0a925663e063370eae14217a0a60f\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_opt_disable": {
+      "hash": "012bd7dcdcc8800f2bd95c0d2496788cf9b1fc4f946603b67908ace84c7435d8",
+      "last_checked": "2025-06-05T21:20:28.835723",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_server_not_found.json": {
+      "hash": "0e5e04686d9e5c34f6898b31c4e7c235decb28ec08f48bb1990dd23922b70c86",
+      "last_checked": "2025-06-05T21:20:29.227190",
+      "status": "unchanged",
+      "etag": "W/\"030bab54817234e1bd1c42c19f0a2ae2\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_server_not_found": {
+      "hash": "0e5e04686d9e5c34f6898b31c4e7c235decb28ec08f48bb1990dd23922b70c86",
+      "last_checked": "2025-06-05T21:20:29.227190",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_token_invalid.json": {
+      "hash": "b2b4048aa09c9d00cd2a1b148451229262f1a822587335f7f5628338bb2d28cf",
+      "last_checked": "2025-06-05T21:20:29.585541",
+      "status": "unchanged",
+      "etag": "W/\"b785acc76ceaae0af04dce45ce95f170\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_token_invalid": {
+      "hash": "b2b4048aa09c9d00cd2a1b148451229262f1a822587335f7f5628338bb2d28cf",
+      "last_checked": "2025-06-05T21:20:29.585541",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyasldbupdate.json": {
+      "hash": "c6a7de9d866de398189197508e8229d3ddccc312deaabaed311a6096a180f958",
+      "last_checked": "2025-06-05T21:20:29.932279",
+      "status": "unchanged",
+      "etag": "W/\"41ae855f51d4f33312722ecde9af0b87\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifyasldbupdate": {
+      "hash": "c6a7de9d866de398189197508e8229d3ddccc312deaabaed311a6096a180f958",
+      "last_checked": "2025-06-05T21:20:29.932279",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyclockset.json": {
+      "hash": "71c92cb95dd76002a1f7f7c61430c71f964b328e6977969eaa51e1bc24fdcc62",
+      "last_checked": "2025-06-05T21:20:30.295408",
+      "status": "unchanged",
+      "etag": "W/\"9992052421b59adfb22375db74886c2d\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifyclockset": {
+      "hash": "71c92cb95dd76002a1f7f7c61430c71f964b328e6977969eaa51e1bc24fdcc62",
+      "last_checked": "2025-06-05T21:20:30.295408",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifydscacheinvalidation.json": {
+      "hash": "65d93c83dade7ea27fd6b098de8f05877a91bb5181a3945bb1429b8244b10839",
+      "last_checked": "2025-06-05T21:20:30.692983",
+      "status": "unchanged",
+      "etag": "W/\"fdcd150b989920694d838053494e6c6f\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifydscacheinvalidation": {
+      "hash": "65d93c83dade7ea27fd6b098de8f05877a91bb5181a3945bb1429b8244b10839",
+      "last_checked": "2025-06-05T21:20:30.692983",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifydscacheinvalidationgroup.json": {
+      "hash": "11d890abd5179712cc419e610f4b29e4c7b131e567b8e8ba8847e5991ad93b54",
+      "last_checked": "2025-06-05T21:20:31.051611",
+      "status": "unchanged",
+      "etag": "W/\"50c1ecdb4176687d75d2c3359c5d7e31\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifydscacheinvalidationgroup": {
+      "hash": "11d890abd5179712cc419e610f4b29e4c7b131e567b8e8ba8847e5991ad93b54",
+      "last_checked": "2025-06-05T21:20:31.051611",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifydscacheinvalidationhost.json": {
+      "hash": "d5daee9a92b37d99c934fe9a45080f551284171641ab65a7df14bfec8325561d",
+      "last_checked": "2025-06-05T21:20:31.386549",
+      "status": "unchanged",
+      "etag": "W/\"d1550882abef7a26691c1c6122fe3445\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifydscacheinvalidationhost": {
+      "hash": "d5daee9a92b37d99c934fe9a45080f551284171641ab65a7df14bfec8325561d",
+      "last_checked": "2025-06-05T21:20:31.386549",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifydscacheinvalidationservice.json": {
+      "hash": "9e5c241669466bd22257fe59f4fdcdf52f8177b34b9d74d1c6ef50b2b04036c1",
+      "last_checked": "2025-06-05T21:20:31.739422",
+      "status": "unchanged",
+      "etag": "W/\"1a34e652d1b326f5a878bab0e4ccdb90\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifydscacheinvalidationservice": {
+      "hash": "9e5c241669466bd22257fe59f4fdcdf52f8177b34b9d74d1c6ef50b2b04036c1",
+      "last_checked": "2025-06-05T21:20:31.739422",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifydscacheinvalidationuser.json": {
+      "hash": "d9dfb7627f031a7cd1d9f42decec35c18ff5eb7261d20e2a7fad3f786db3fae7",
+      "last_checked": "2025-06-05T21:20:32.131516",
+      "status": "unchanged",
+      "etag": "W/\"3cbe6755db2db1a8e2a8efd34de69c1a\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifydscacheinvalidationuser": {
+      "hash": "d9dfb7627f031a7cd1d9f42decec35c18ff5eb7261d20e2a7fad3f786db3fae7",
+      "last_checked": "2025-06-05T21:20:32.131516",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyschostnamechange.json": {
+      "hash": "c828d84bda8b3d5dc3861c1ae28026258a212131615f9b4266f7d57c42463a34",
+      "last_checked": "2025-06-05T21:20:32.505442",
+      "status": "unchanged",
+      "etag": "W/\"3a341010b5e6f642c912f962e4c391ce\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifyschostnamechange": {
+      "hash": "c828d84bda8b3d5dc3861c1ae28026258a212131615f9b4266f7d57c42463a34",
+      "last_checked": "2025-06-05T21:20:32.505442",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyscnetworkchange.json": {
+      "hash": "e625cf748f482cf42238ba91cbba623ab4cfeb01a76dd2f5e8cfc61f3fc365f2",
+      "last_checked": "2025-06-05T21:20:32.855582",
+      "status": "unchanged",
+      "etag": "W/\"e4ad8529b4db4d580a3ea18c7a28b666\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifyscnetworkchange": {
+      "hash": "e625cf748f482cf42238ba91cbba623ab4cfeb01a76dd2f5e8cfc61f3fc365f2",
+      "last_checked": "2025-06-05T21:20:32.855582",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifytimezonechange.json": {
+      "hash": "08326d9044f72f795daf7cab5dcd19df4f813fdfb86e3478ec11e4b758eae5a4",
+      "last_checked": "2025-06-05T21:20:33.235729",
+      "status": "unchanged",
+      "etag": "W/\"5a95fb7fe8a23483549f2c6fe1c9e180\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifytimezonechange": {
+      "hash": "08326d9044f72f795daf7cab5dcd19df4f813fdfb86e3478ec11e4b758eae5a4",
+      "last_checked": "2025-06-05T21:20:33.235729",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfslowdiskspace.json": {
+      "hash": "fb9f1849c54731437f84fb1cd25dbd2c4d2c0eeb0f274a4669fef786e6831ff0",
+      "last_checked": "2025-06-05T21:20:33.607920",
+      "status": "unchanged",
+      "etag": "W/\"7080408f7d7e2a5116d8d68bdfc20520\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifyvfslowdiskspace": {
+      "hash": "fb9f1849c54731437f84fb1cd25dbd2c4d2c0eeb0f274a4669fef786e6831ff0",
+      "last_checked": "2025-06-05T21:20:33.607920",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfslowdiskspaceotherfs.json": {
+      "hash": "9dd4b1a7b24af03b7012c83370194d925f3551d4fcb3b41d57f77ebbdb871bbc",
+      "last_checked": "2025-06-05T21:20:33.993507",
+      "status": "unchanged",
+      "etag": "W/\"befec2fd8cd9d9988c9c7ae4bf4c9885\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifyvfslowdiskspaceotherfs": {
+      "hash": "9dd4b1a7b24af03b7012c83370194d925f3551d4fcb3b41d57f77ebbdb871bbc",
+      "last_checked": "2025-06-05T21:20:33.993507",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfslowdiskspacerootfs.json": {
+      "hash": "8287c081bfd6c20170e79d9b6a1e47f6edff4a9c1db80f5f2336f06e956712e3",
+      "last_checked": "2025-06-05T21:20:34.355409",
+      "status": "unchanged",
+      "etag": "W/\"67476dbe4f210fce53d9532634849327\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifyvfslowdiskspacerootfs": {
+      "hash": "8287c081bfd6c20170e79d9b6a1e47f6edff4a9c1db80f5f2336f06e956712e3",
+      "last_checked": "2025-06-05T21:20:34.355409",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfsmount.json": {
+      "hash": "d8ad4c89e870f01f6645904816c8d0f0933cde613ac7b19c4f5fb819c21acead",
+      "last_checked": "2025-06-05T21:20:34.745856",
+      "status": "unchanged",
+      "etag": "W/\"67c8b2a74cc2691e5bdfba42c49535b6\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifyvfsmount": {
+      "hash": "d8ad4c89e870f01f6645904816c8d0f0933cde613ac7b19c4f5fb819c21acead",
+      "last_checked": "2025-06-05T21:20:34.745856",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfsunmount.json": {
+      "hash": "623cc613ed8c658c91bf7de12ff776665d2a40ed997fec35d35fe85d4ff91da8",
+      "last_checked": "2025-06-05T21:20:35.106046",
+      "status": "unchanged",
+      "etag": "W/\"9398ec0f2586af6c133b085ca59580ea\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifyvfsunmount": {
+      "hash": "623cc613ed8c658c91bf7de12ff776665d2a40ed997fec35d35fe85d4ff91da8",
+      "last_checked": "2025-06-05T21:20:35.106046",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfsupdate.json": {
+      "hash": "29f74e2dd597430833bad367e2ab0956052422639416654973d81cd1ae5515a8",
+      "last_checked": "2025-06-05T21:20:35.485143",
+      "status": "unchanged",
+      "etag": "W/\"f44ab5399261f3898de38ee98312514c\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/knotifyvfsupdate": {
+      "hash": "29f74e2dd597430833bad367e2ab0956052422639416654973d81cd1ae5515a8",
+      "last_checked": "2025-06-05T21:20:35.485143",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_failed.json": {
+      "hash": "b0ccd9472dca6df534a862e8ab6fe37479e21f56ea2a400dfc99a0af246e8902",
+      "last_checked": "2025-06-05T21:20:35.868607",
+      "status": "unchanged",
+      "etag": "W/\"9109de37f7330c0b45386cd87199242c\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_failed": {
+      "hash": "b0ccd9472dca6df534a862e8ab6fe37479e21f56ea2a400dfc99a0af246e8902",
+      "last_checked": "2025-06-05T21:20:35.868607",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_file.json": {
+      "hash": "e168d0ad144a9a9871d2065e830d71e5cd51f1da9b5f91c6274471a61cdeaaee",
+      "last_checked": "2025-06-05T21:20:36.194875",
+      "status": "unchanged",
+      "etag": "W/\"e62ab2abd3f9eea8613b6299cd887ac5\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_invalid_file": {
+      "hash": "e168d0ad144a9a9871d2065e830d71e5cd51f1da9b5f91c6274471a61cdeaaee",
+      "last_checked": "2025-06-05T21:20:36.194875",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_name.json": {
+      "hash": "fe80e8d3b72fb23a8550fbc2f8662aa798e328a92b509329d4c319f705ff8205",
+      "last_checked": "2025-06-05T21:20:36.597001",
+      "status": "unchanged",
+      "etag": "W/\"f1da0bbeff68b0b15f44f9eba5ab0d58\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_invalid_name": {
+      "hash": "fe80e8d3b72fb23a8550fbc2f8662aa798e328a92b509329d4c319f705ff8205",
+      "last_checked": "2025-06-05T21:20:36.597001",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_port.json": {
+      "hash": "8a52121571e66d060276ced259baa52c91bb6608955e91f443095ae41d655204",
+      "last_checked": "2025-06-05T21:20:36.990639",
+      "status": "unchanged",
+      "etag": "W/\"383d662344afaed3496215451e095f2d\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_invalid_port": {
+      "hash": "8a52121571e66d060276ced259baa52c91bb6608955e91f443095ae41d655204",
+      "last_checked": "2025-06-05T21:20:36.990639",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_request.json": {
+      "hash": "8cdcbe992f3556a9b66c41f27f0caa320bf3b9430acf6b8d4e17f178505bdd18",
+      "last_checked": "2025-06-05T21:20:37.402676",
+      "status": "unchanged",
+      "etag": "W/\"7bf3b66a56866fe067d1d8b9b131a9ff\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_invalid_request": {
+      "hash": "8cdcbe992f3556a9b66c41f27f0caa320bf3b9430acf6b8d4e17f178505bdd18",
+      "last_checked": "2025-06-05T21:20:37.402676",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_signal.json": {
+      "hash": "1cfbabf5cd26c6b7f1a4736f86bc5deb7632c20cbbcf8e247f384d2ce201a808",
+      "last_checked": "2025-06-05T21:20:37.766830",
+      "status": "unchanged",
+      "etag": "W/\"178cd3e1a297fff266d8c050a95bc5ad\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_invalid_signal": {
+      "hash": "1cfbabf5cd26c6b7f1a4736f86bc5deb7632c20cbbcf8e247f384d2ce201a808",
+      "last_checked": "2025-06-05T21:20:37.766830",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_token.json": {
+      "hash": "cceb3201c7bd6f7c0d1beae0c4fea21ad1dfe5d189e8ceeb661ce74284afcf7b",
+      "last_checked": "2025-06-05T21:20:38.136874",
+      "status": "unchanged",
+      "etag": "W/\"a8ccaa920bd2c4e6c6a61ca68313b501\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_invalid_token": {
+      "hash": "cceb3201c7bd6f7c0d1beae0c4fea21ad1dfe5d189e8ceeb661ce74284afcf7b",
+      "last_checked": "2025-06-05T21:20:38.136874",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_not_authorized.json": {
+      "hash": "befc9d814062e67a385d73df46572de1e451a6a4dc617fcd83768cd8a3e20674",
+      "last_checked": "2025-06-05T21:20:38.535154",
+      "status": "unchanged",
+      "etag": "W/\"471de3fd2dbb26a4d139dfe10c355ce7\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_not_authorized": {
+      "hash": "befc9d814062e67a385d73df46572de1e451a6a4dc617fcd83768cd8a3e20674",
+      "last_checked": "2025-06-05T21:20:38.535154",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_ok.json": {
+      "hash": "8dd1e10aa9effe28e1077149e80bc9c4af84e294e5e86c63f9def6f89e0e0c25",
+      "last_checked": "2025-06-05T21:20:38.911779",
+      "status": "unchanged",
+      "etag": "W/\"2c048d37dca564ea60c45e7e8799b460\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_status_ok": {
+      "hash": "8dd1e10aa9effe28e1077149e80bc9c4af84e294e5e86c63f9def6f89e0e0c25",
+      "last_checked": "2025-06-05T21:20:38.911779",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_reuse.json": {
+      "hash": "0bdd1e3ba34367632cf790880cafa2cf7325229b85360d51f122c73e14a4ff86",
+      "last_checked": "2025-06-05T21:20:39.271188",
+      "status": "unchanged",
+      "etag": "W/\"4847acf94af034ec552acba0edbbb844\""
+    },
+    "https://developer.apple.com/documentation/darwinnotify/notify_reuse": {
+      "hash": "0bdd1e3ba34367632cf790880cafa2cf7325229b85360d51f122c73e14a4ff86",
+      "last_checked": "2025-06-05T21:20:39.271188",
+      "status": "unchanged"
+    }
+  }
+}

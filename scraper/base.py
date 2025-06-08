@@ -212,13 +212,18 @@ class BaseAppleScraper(ABC):
         Returns:
             Extracted data or None if failed
         """
-        # Check if content has changed
-        content = await self.fetch_page(url)
-        if not content:
+        # Fetch with ETag support
+        result = await self.fetch_page_with_etag(url)
+        if not result:
+            # Content not modified (304) or fetch failed
+            if result is None:
+                self.stats["pages_skipped"] += 1
             return None
+            
+        content, etag = result
         
         # Check hash to avoid re-processing unchanged content
-        if not self.hash_manager.has_changed(url, content) and not Config.DEBUG:
+        if not self.hash_manager.has_changed(url, content, etag) and not Config.DEBUG:
             logger.debug("content_unchanged", url=url)
             self.stats["pages_skipped"] += 1
             return None
@@ -229,8 +234,8 @@ class BaseAppleScraper(ABC):
             data = await self.extract_page_data(soup, url)
             
             if data:
-                # Update hash for successful extraction
-                self.hash_manager.update_hash(url, content)
+                # Update hash with ETag for successful extraction
+                self.hash_manager.update_hash(url, content, etag)
                 self.stats["pages_scraped"] += 1
                 return data
             else:

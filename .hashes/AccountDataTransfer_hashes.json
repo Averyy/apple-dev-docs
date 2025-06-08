@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T22:49:16.700199",
+    "total_pages": 37,
+    "etags_collected": "2025-06-07T22:49:16.700214"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/submit-request.json": {
+      "hash": "4289c50fded1934cb73a300c04ce6ca6c28d5e5ef455ce958783e94f61072920",
+      "last_checked": "2025-06-05T12:00:46.136545",
+      "status": "unchanged",
+      "etag": "W/\"7434643dacaa4d2adcc89142dda4534d\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/submit-request": {
+      "hash": "4289c50fded1934cb73a300c04ce6ca6c28d5e5ef455ce958783e94f61072920",
+      "last_checked": "2025-06-05T12:00:46.136545",
+      "status": "unchanged",
+      "etag": "af7785da9bdbf22a3044e60aadf0c9e5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/jobsubmission.json": {
+      "hash": "e3e2d29964e45597cf7cb5b7f30cd016acf5810a5d2d9b381fef4c0e20385399",
+      "last_checked": "2025-06-05T12:00:46.741107",
+      "status": "unchanged",
+      "etag": "W/\"b7d2e6e7496198060deeea9df0699829\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/jobsubmission": {
+      "hash": "e3e2d29964e45597cf7cb5b7f30cd016acf5810a5d2d9b381fef4c0e20385399",
+      "last_checked": "2025-06-05T12:00:46.741107",
+      "status": "unchanged",
+      "etag": "fe3c3834b262d2b862aa5bb28ac2fa0e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/createdjob.json": {
+      "hash": "bfee8be4716e8191c93c7fdf3e18aa18940c745d6affca216f70019bac7106a5",
+      "last_checked": "2025-06-05T12:00:47.164797",
+      "status": "unchanged",
+      "etag": "W/\"b9aec7047da9e1220f34b475d7529d6a\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/createdjob": {
+      "hash": "bfee8be4716e8191c93c7fdf3e18aa18940c745d6affca216f70019bac7106a5",
+      "last_checked": "2025-06-05T12:00:47.164797",
+      "status": "unchanged",
+      "etag": "9799bfe30b68d68087778fc19cbbdaf1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/resubmit-request.json": {
+      "hash": "2de4326762e38d7a94f9f189a82db682bca4f9c4c2f5a36dd17e330afd5218be",
+      "last_checked": "2025-06-05T12:00:47.828479",
+      "status": "unchanged",
+      "etag": "W/\"59dc3aad85eb9a79e46884606f0bcb73\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/resubmit-request": {
+      "hash": "2de4326762e38d7a94f9f189a82db682bca4f9c4c2f5a36dd17e330afd5218be",
+      "last_checked": "2025-06-05T12:00:47.828479",
+      "status": "unchanged",
+      "etag": "4406639c266d03d9220d9a862c2a174e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/resubmissionrequest.json": {
+      "hash": "df70915a3f810dae255af8a65a87c560ff356870b4b4602e6928a66d99909ce4",
+      "last_checked": "2025-06-05T12:00:48.336515",
+      "status": "unchanged",
+      "etag": "W/\"74ec7ec23af70fae79e5a81f0ccacf59\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/resubmissionrequest": {
+      "hash": "df70915a3f810dae255af8a65a87c560ff356870b4b4602e6928a66d99909ce4",
+      "last_checked": "2025-06-05T12:00:48.336515",
+      "status": "unchanged",
+      "etag": "58106e41c267c0b3a17b5bef4eed5e2f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/resubmissionresponse.json": {
+      "hash": "087cb36d313df7cc849b25d195df68930bebf7190544c02ad35f3735f8310100",
+      "last_checked": "2025-06-05T12:00:48.724603",
+      "status": "unchanged",
+      "etag": "W/\"85319faf794c139a1c6198659f20db1e\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/resubmissionresponse": {
+      "hash": "087cb36d313df7cc849b25d195df68930bebf7190544c02ad35f3735f8310100",
+      "last_checked": "2025-06-05T12:00:48.724603",
+      "status": "unchanged",
+      "etag": "f1ad09c45b83905682bf9ecb69fd531b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/get-one-time-request-status.json": {
+      "hash": "8b8c5a65e90ef2b5aca39782fbb1119bc9df252ea745623a1cdad8fa3739dcd1",
+      "last_checked": "2025-06-05T12:00:49.143332",
+      "status": "unchanged",
+      "etag": "W/\"92666d2091f81ab2725b32c0c4be92a1\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/get-one-time-request-status": {
+      "hash": "8b8c5a65e90ef2b5aca39782fbb1119bc9df252ea745623a1cdad8fa3739dcd1",
+      "last_checked": "2025-06-05T12:00:49.143332",
+      "status": "unchanged",
+      "etag": "b5768a316836be3c2d5203583a6f6ce2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/get-recurring-request-status.json": {
+      "hash": "0f254c91f2a21a916d46aecfc2791da36210b6121c9ab938bd2347b8d5dac7b6",
+      "last_checked": "2025-06-05T12:00:49.539308",
+      "status": "unchanged",
+      "etag": "W/\"b2280465cdb66b22b00c1ac38de8d6e1\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/get-recurring-request-status": {
+      "hash": "0f254c91f2a21a916d46aecfc2791da36210b6121c9ab938bd2347b8d5dac7b6",
+      "last_checked": "2025-06-05T12:00:49.539308",
+      "status": "unchanged",
+      "etag": "3fc32bf8a6b812d61ecdf37001efc34b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/requeststatus.json": {
+      "hash": "6f165a8ba838c676a8bf132a41b5ed4cdb6c5987701c30175acb75a6e86120fb",
+      "last_checked": "2025-06-05T12:00:49.957947",
+      "status": "unchanged",
+      "etag": "W/\"6af3e89f44819013ea9d9c694dbcde30\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/requeststatus": {
+      "hash": "6f165a8ba838c676a8bf132a41b5ed4cdb6c5987701c30175acb75a6e86120fb",
+      "last_checked": "2025-06-05T12:00:49.957947",
+      "status": "unchanged",
+      "etag": "c0af5c25cc02eaa642c9aaf8f2accf15"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/get-one-time-request-download-urls.json": {
+      "hash": "05bf164e423744e6fa51b0d7c937097c234858ee1a77c3b35d3862474764b16e",
+      "last_checked": "2025-06-05T12:00:50.422915",
+      "status": "unchanged",
+      "etag": "W/\"bb790dd6d25c303150c435edff2393ed\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/get-one-time-request-download-urls": {
+      "hash": "05bf164e423744e6fa51b0d7c937097c234858ee1a77c3b35d3862474764b16e",
+      "last_checked": "2025-06-05T12:00:50.422915",
+      "status": "unchanged",
+      "etag": "866fa43dfaa374925b52f0c8ff7f5e1b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/get-recurring-request-download-urls.json": {
+      "hash": "fd7f877878472830a20e583cfba491b68f41aa09267609ed69dce9871d5a82e5",
+      "last_checked": "2025-06-05T12:00:50.838880",
+      "status": "unchanged",
+      "etag": "W/\"0391a3d1ce3d3c1a6ae7619421ae6537\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/get-recurring-request-download-urls": {
+      "hash": "fd7f877878472830a20e583cfba491b68f41aa09267609ed69dce9871d5a82e5",
+      "last_checked": "2025-06-05T12:00:50.838880",
+      "status": "unchanged",
+      "etag": "3a734b4778d4f410ab1c851263dac726"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/downloadlinks.json": {
+      "hash": "e555d5a6b9b4b0925d534fd8653d2b9b1d48be4793fa5094ce011a3a54df9d4a",
+      "last_checked": "2025-06-06T19:34:52.743482",
+      "status": "unchanged",
+      "etag": "W/\"934b8f225bbe128052ef725a05176bb4\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/downloadlinks": {
+      "hash": "8d4acdb5b4323ed744d0518a3e5d47bf484815b27845086943e34461f8e892b5",
+      "last_checked": "2025-06-05T12:00:51.256661",
+      "status": "unchanged",
+      "etag": "ace70b65043057e3b8800aa7d2ac9014"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/downloaderror.json": {
+      "hash": "d48a51a4f5ec3071c79b859cf30af7e8037e65ae18cb8ad1e51eb3303da1a7f7",
+      "last_checked": "2025-06-05T12:00:51.627152",
+      "status": "unchanged",
+      "etag": "W/\"3d11493cbfb0ac0f9ccd66f49024e2a7\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/downloaderror": {
+      "hash": "d48a51a4f5ec3071c79b859cf30af7e8037e65ae18cb8ad1e51eb3303da1a7f7",
+      "last_checked": "2025-06-05T12:00:51.627152",
+      "status": "unchanged",
+      "etag": "f2ab4ca6a033753cf7a490f233f32303"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/cancel-request.json": {
+      "hash": "274b19fad6cab9de2a9e88280e8d0eb1df2ee17c9fa5a4fb486d34acb8021127",
+      "last_checked": "2025-06-05T12:00:52.006678",
+      "status": "unchanged",
+      "etag": "W/\"fa100d7839d118ec03a9774aaffffe3a\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/cancel-request": {
+      "hash": "274b19fad6cab9de2a9e88280e8d0eb1df2ee17c9fa5a4fb486d34acb8021127",
+      "last_checked": "2025-06-05T12:00:52.006678",
+      "status": "unchanged",
+      "etag": "9eb993103f775940845fb87c4dbcf4a6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/cancellationrequest.json": {
+      "hash": "6c0e11630cf60baa7f0e53478cc4f4d5b352a1966fa5bbcf72b48d9a44b065b5",
+      "last_checked": "2025-06-05T12:00:52.433687",
+      "status": "unchanged",
+      "etag": "W/\"450508968cb74397b3e1d8d302261147\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/cancellationrequest": {
+      "hash": "6c0e11630cf60baa7f0e53478cc4f4d5b352a1966fa5bbcf72b48d9a44b065b5",
+      "last_checked": "2025-06-05T12:00:52.433687",
+      "status": "unchanged",
+      "etag": "87ec13020ab7e2f9db54b53d48ce9b8f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer/cancellationresponse.json": {
+      "hash": "095d27880167a0b65a74c0e73544b5188d093e9193f591f2346b571b268d3a14",
+      "last_checked": "2025-06-05T12:00:52.856116",
+      "status": "unchanged",
+      "etag": "W/\"b6c2d6a28a45ffff46b4c9bc182750da\""
+    },
+    "https://developer.apple.com/documentation/accountdatatransfer/cancellationresponse": {
+      "hash": "095d27880167a0b65a74c0e73544b5188d093e9193f591f2346b571b268d3a14",
+      "last_checked": "2025-06-05T12:00:52.856116",
+      "status": "unchanged",
+      "etag": "1d80f5bd7fed904c1da18c9617ed0acc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/AccountDataTransfer/downloadlinks.json": {
+      "hash": "d24957e14868f6da39aecfd53b8a5661e263f09e2f36ca83fb23cefddae9502e",
+      "last_checked": "2025-06-06T19:34:52.743321",
+      "status": "new",
+      "etag": "W/\"934b8f225bbe128052ef725a05176bb4\""
+    },
+    "https://developer.apple.com/documentation/AccountDataTransfer/downloadlinks": {
+      "hash": "e555d5a6b9b4b0925d534fd8653d2b9b1d48be4793fa5094ce011a3a54df9d4a",
+      "last_checked": "2025-06-06T19:34:52.743482",
+      "status": "unchanged",
+      "etag": "a076361ecf9c1ed0f592f7c62fbbf827"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/AccountDataTransfer.json": {
+      "hash": "20b304feec612f81e39b23af07c0ea6f396ebf5255e8d9deabd21b75b11e01b8",
+      "last_checked": "2025-06-06T20:00:14.815760",
+      "status": "new",
+      "etag": "W/\"794678c7f2d9a77c60284e5b3289594d\""
+    },
+    "https://developer.apple.com/documentation/AccountDataTransfer": {
+      "hash": "541df8dfabb2246f4aa74a13e2af5826fe008fa209b4b3e2d161c8f2ae7de8e5",
+      "last_checked": "2025-06-06T20:00:14.816611",
+      "status": "unchanged",
+      "etag": "c8a58a6e89c05c04cfb2c5bd0caf7886"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accountdatatransfer.json": {
+      "hash": "541df8dfabb2246f4aa74a13e2af5826fe008fa209b4b3e2d161c8f2ae7de8e5",
+      "last_checked": "2025-06-06T20:00:14.816611",
+      "status": "unchanged",
+      "etag": "W/\"794678c7f2d9a77c60284e5b3289594d\""
+    }
+  }
+}

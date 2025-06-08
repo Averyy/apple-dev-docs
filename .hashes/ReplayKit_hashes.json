@@ -1,0 +1,1899 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T20:05:04.517217",
+    "total_pages": 315,
+    "etags_collected": "2025-06-07T20:05:04.517225"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/ReplayKit.json": {
+      "hash": "0a2722444ae3fca64681d7a08f5af2f9ceef8dd823ac61d18058d1d625752898",
+      "last_checked": "2025-06-06T06:10:22.152371",
+      "status": "new",
+      "etag": "W/\"dcab85a0708f6cada60f34cb04a784cf\""
+    },
+    "https://developer.apple.com/documentation/ReplayKit": {
+      "hash": "ad653d89f1e9d35025d6d42b6c87df2d761bf0dcdc4d6315a0043e783f4d3896",
+      "last_checked": "2025-06-06T06:10:22.152495",
+      "status": "unchanged",
+      "etag": "ce9445c4f9148198a3a64c95332a2f38"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit.json": {
+      "hash": "ad653d89f1e9d35025d6d42b6c87df2d761bf0dcdc4d6315a0043e783f4d3896",
+      "last_checked": "2025-06-06T06:10:22.152495",
+      "status": "unchanged",
+      "etag": "W/\"dcab85a0708f6cada60f34cb04a784cf\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/recording-and-streaming-your-macos-app.json": {
+      "hash": "85aefe5f4987fba66a9d3f4271a883b5ed63a69acdd714ad09148b73f77f3f4e",
+      "last_checked": "2025-06-06T06:10:22.879056",
+      "status": "unchanged",
+      "etag": "W/\"cc21be659460903bdacd1aea687f6b05\""
+    },
+    "https://developer.apple.com/documentation/replaykit/recording-and-streaming-your-macos-app": {
+      "hash": "85aefe5f4987fba66a9d3f4271a883b5ed63a69acdd714ad09148b73f77f3f4e",
+      "last_checked": "2025-06-06T06:10:22.879056",
+      "status": "unchanged",
+      "etag": "a41273799986d160cd4af0325e1c91eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder.json": {
+      "hash": "ffb8df59caf8cdc0151b3d609db8c79333b015daf39b4b69e522ee33b5eeb648",
+      "last_checked": "2025-06-06T06:10:23.246922",
+      "status": "unchanged",
+      "etag": "W/\"85cc067e9e03b0bb6123053e4128375d\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder": {
+      "hash": "ffb8df59caf8cdc0151b3d609db8c79333b015daf39b4b69e522ee33b5eeb648",
+      "last_checked": "2025-06-06T06:10:23.246922",
+      "status": "unchanged",
+      "etag": "98d865de5818bfd581c9f47bea3afb72"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontroller.json": {
+      "hash": "4e20a9a7c8382158053ab66963655ab125003de1a0fbfd170cc209b773405749",
+      "last_checked": "2025-06-06T06:10:23.624123",
+      "status": "unchanged",
+      "etag": "W/\"aa652d9f10a460c92b8e04015f090eea\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontroller": {
+      "hash": "4e20a9a7c8382158053ab66963655ab125003de1a0fbfd170cc209b773405749",
+      "last_checked": "2025-06-06T06:10:23.624123",
+      "status": "unchanged",
+      "etag": "16868bc6c51eeedb0fedfd1e1f7285d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller.json": {
+      "hash": "177acf26e8ea17380daa2127076c12328638f91e03d615ef8eccf21e277f654f",
+      "last_checked": "2025-06-06T06:10:24.040416",
+      "status": "unchanged",
+      "etag": "W/\"d70a52cdc0cbb1c20fb9474c339afcaa\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller": {
+      "hash": "177acf26e8ea17380daa2127076c12328638f91e03d615ef8eccf21e277f654f",
+      "last_checked": "2025-06-06T06:10:24.040416",
+      "status": "unchanged",
+      "etag": "c12aee48f8b59eea749715e79acd2a3e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcasthandler.json": {
+      "hash": "b52bc15e18391416888463b6569dae51174011a875135c522a88cf46a38a1703",
+      "last_checked": "2025-06-06T06:10:24.378427",
+      "status": "unchanged",
+      "etag": "W/\"199623792a9666236b190a6f1bec7f6a\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcasthandler": {
+      "hash": "b52bc15e18391416888463b6569dae51174011a875135c522a88cf46a38a1703",
+      "last_checked": "2025-06-06T06:10:24.378427",
+      "status": "unchanged",
+      "etag": "769026d1e89a8a4755d6a2bf3dd24cef"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler.json": {
+      "hash": "ddf1678b1e283b5dfa470f10a6459886f01a2b65f55bcb738ef1c1dff0facea9",
+      "last_checked": "2025-06-06T06:10:24.772536",
+      "status": "unchanged",
+      "etag": "W/\"d3408ec0cbc117691824f2a29644603c\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastsamplehandler": {
+      "hash": "ddf1678b1e283b5dfa470f10a6459886f01a2b65f55bcb738ef1c1dff0facea9",
+      "last_checked": "2025-06-06T06:10:24.772536",
+      "status": "unchanged",
+      "etag": "601ee31ba76f6e762c24ea8e3b192407"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastmp4cliphandler.json": {
+      "hash": "e26b023c0f95f8e0a2fb0b3b63425fe3cb5509b9ca16775f1ec3b9312d5fbb44",
+      "last_checked": "2025-06-06T06:10:25.156934",
+      "status": "unchanged",
+      "etag": "W/\"b7a513ebc8ff54deaaf4a5d34f3a8560\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastmp4cliphandler": {
+      "hash": "e26b023c0f95f8e0a2fb0b3b63425fe3cb5509b9ca16775f1ec3b9312d5fbb44",
+      "last_checked": "2025-06-06T06:10:25.156934",
+      "status": "unchanged",
+      "etag": "7cc04efefb4ec398ba6f3de7c56656ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontroller.json": {
+      "hash": "9456ce6cadb9a3f9b0c9880f3be9000f3e823b9f5cb4e19536261306a7cdc7f6",
+      "last_checked": "2025-06-06T06:10:25.551469",
+      "status": "unchanged",
+      "etag": "W/\"19c6e1be15b95e6e6bbd68e011c9ef18\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivityviewcontroller": {
+      "hash": "9456ce6cadb9a3f9b0c9880f3be9000f3e823b9f5cb4e19536261306a7cdc7f6",
+      "last_checked": "2025-06-06T06:10:25.551469",
+      "status": "unchanged",
+      "etag": "8d89d53434f16b4e2bd84b6b6c7f422e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsystembroadcastpickerview.json": {
+      "hash": "5b8a2d989ea160957b0651415ff7e487e7e741792820277f856041c15fde63e2",
+      "last_checked": "2025-06-06T19:38:26.121938",
+      "status": "unchanged",
+      "etag": "W/\"c105c0ebb4d438fbccf61d8fa74eee05\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsystembroadcastpickerview": {
+      "hash": "bd6528f3388edfbd08e8fbe3e25933d6207f59c5893d13393fa2eb37a7bd91ba",
+      "last_checked": "2025-06-06T06:10:25.970703",
+      "status": "unchanged",
+      "etag": "9f0790bd4c3413cf3e00ab78bd1d4fe7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivitycontroller.json": {
+      "hash": "c89fd04ff18bcefab7cd259d391d371e287e169539ffce818730811fe1b870d0",
+      "last_checked": "2025-06-06T06:10:26.362206",
+      "status": "unchanged",
+      "etag": "W/\"0c9aa4f08e321eadda745b0d3e8a8e88\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivitycontroller": {
+      "hash": "c89fd04ff18bcefab7cd259d391d371e287e169539ffce818730811fe1b870d0",
+      "last_checked": "2025-06-06T06:10:26.362206",
+      "status": "unchanged",
+      "etag": "b2b6486b171c837d8355a8681983a813"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivitycontrollerdelegate.json": {
+      "hash": "61e6ad110db94fab84c9561bae2ebb239250466d3141565bd0b9000b9750c356",
+      "last_checked": "2025-06-06T06:10:26.746661",
+      "status": "unchanged",
+      "etag": "W/\"7fec91676c015c803b558547cbb21de2\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivitycontrollerdelegate": {
+      "hash": "61e6ad110db94fab84c9561bae2ebb239250466d3141565bd0b9000b9750c356",
+      "last_checked": "2025-06-06T06:10:26.746661",
+      "status": "unchanged",
+      "etag": "5271fd2d933bda0bf190b8d19ef45606"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastconfiguration.json": {
+      "hash": "e5722ab814597afaf95c6628eff2a3ffe4d3eaf4fc41b801f78e0f0c12c08746",
+      "last_checked": "2025-06-06T06:10:27.136051",
+      "status": "unchanged",
+      "etag": "W/\"3c0efedf9eee64384bcbed119b07dddb\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastconfiguration": {
+      "hash": "e5722ab814597afaf95c6628eff2a3ffe4d3eaf4fc41b801f78e0f0c12c08746",
+      "last_checked": "2025-06-06T06:10:27.136051",
+      "status": "unchanged",
+      "etag": "7f8fc6d2da42b2505d36323593c5f885"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode.json": {
+      "hash": "98bdaebd4e3f0008f81ca2cd393a898275605ded84605e6264992f9c2938b2a8",
+      "last_checked": "2025-06-06T06:10:27.467696",
+      "status": "unchanged",
+      "etag": "W/\"d5684bce9c9c8368793a6cf1680fd62a\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode": {
+      "hash": "98bdaebd4e3f0008f81ca2cd393a898275605ded84605e6264992f9c2938b2a8",
+      "last_checked": "2025-06-06T06:10:27.467696",
+      "status": "unchanged",
+      "etag": "c2e67b53a39ff3c36752751ca9c6e6a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrordomain-5gi.json": {
+      "hash": "f90785bc93b9cb71b83aa38cb981d5ae0e06ac1d5e986034496edafcd5cfbb4b",
+      "last_checked": "2025-06-06T06:10:27.880896",
+      "status": "unchanged",
+      "etag": "W/\"0b0838eefe0d3fc5210b18e89cddf2a7\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrordomain-5gi": {
+      "hash": "f90785bc93b9cb71b83aa38cb981d5ae0e06ac1d5e986034496edafcd5cfbb4b",
+      "last_checked": "2025-06-06T06:10:27.880896",
+      "status": "unchanged",
+      "etag": "605a3c8ced7c47f0005f79ca9509730e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/replaykit-constants.json": {
+      "hash": "9215fddb271de7d151a30e1884c672bed0102d71aa5838726eef319162745d18",
+      "last_checked": "2025-06-06T06:10:28.298293",
+      "status": "unchanged",
+      "etag": "W/\"6fdeff540fc162c95eaf1faede3a775b\""
+    },
+    "https://developer.apple.com/documentation/replaykit/replaykit-constants": {
+      "hash": "9215fddb271de7d151a30e1884c672bed0102d71aa5838726eef319162745d18",
+      "last_checked": "2025-06-06T06:10:28.298293",
+      "status": "unchanged",
+      "etag": "427678894ee60ecadd2f112ffbcf99eb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/shared().json": {
+      "hash": "15300f2f0dc31403e9e454c5579d3f233f35ebe5202b49977477113e3cd0ba35",
+      "last_checked": "2025-06-06T06:10:28.694640",
+      "status": "unchanged",
+      "etag": "W/\"3ee0c58e2b2e01581c212ea511539d06\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/shared()": {
+      "hash": "15300f2f0dc31403e9e454c5579d3f233f35ebe5202b49977477113e3cd0ba35",
+      "last_checked": "2025-06-06T06:10:28.694640",
+      "status": "unchanged",
+      "etag": "87b8a2bd72006c9fb38acfc97d70f525"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/isavailable.json": {
+      "hash": "cff56a17777f7db9b8515948952598ab7281427f42233dce7fd3ebfe36a11d5c",
+      "last_checked": "2025-06-06T06:10:29.060025",
+      "status": "unchanged",
+      "etag": "W/\"a0c5b151bd1c1abc9905871dfd05186e\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/isavailable": {
+      "hash": "cff56a17777f7db9b8515948952598ab7281427f42233dce7fd3ebfe36a11d5c",
+      "last_checked": "2025-06-06T06:10:29.060025",
+      "status": "unchanged",
+      "etag": "8a4d38a512483d7a3d2e27e927184f98"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/isrecording.json": {
+      "hash": "4c15575d8df2c88d0c623bc9f65b5bae072a183bdd4edffa5e2acc497b200e8d",
+      "last_checked": "2025-06-06T06:10:29.533719",
+      "status": "unchanged",
+      "etag": "W/\"1da3771d17a33df2b0986a467bc16112\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/isrecording": {
+      "hash": "4c15575d8df2c88d0c623bc9f65b5bae072a183bdd4edffa5e2acc497b200e8d",
+      "last_checked": "2025-06-06T06:10:29.533719",
+      "status": "unchanged",
+      "etag": "c88c23625e970c52309b807594054d0f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/ismicrophoneenabled.json": {
+      "hash": "bc9881241c50f1cf9601e16e4a70a3b9dfbce1adf01f8b37d0da97cb9d51c6b9",
+      "last_checked": "2025-06-06T06:10:29.946071",
+      "status": "unchanged",
+      "etag": "W/\"36fc083c4dd1d203709208dc4c57194e\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/ismicrophoneenabled": {
+      "hash": "bc9881241c50f1cf9601e16e4a70a3b9dfbce1adf01f8b37d0da97cb9d51c6b9",
+      "last_checked": "2025-06-06T06:10:29.946071",
+      "status": "unchanged",
+      "etag": "c655b797f3ccce48cd7eaa4dc358f064"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/camerapreviewview.json": {
+      "hash": "a991be441a12c30a27573f3af83da524ddaac4565a69d0220ebf397f9398b0b6",
+      "last_checked": "2025-06-06T06:10:30.703165",
+      "status": "unchanged",
+      "etag": "W/\"2766e0b1297840ce371d809d81bf8d59\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/camerapreviewview": {
+      "hash": "a991be441a12c30a27573f3af83da524ddaac4565a69d0220ebf397f9398b0b6",
+      "last_checked": "2025-06-06T06:10:30.703165",
+      "status": "unchanged",
+      "etag": "b21c2c576e9b5d7d26e8216ef25bda2b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/cameraposition.json": {
+      "hash": "e416f517545568c32e9991d41fc01c5474ef9d1d90ca9535b4f02a6e70b4a870",
+      "last_checked": "2025-06-06T06:10:31.110690",
+      "status": "unchanged",
+      "etag": "W/\"be17472533c21fc4d308500c14e4ce65\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/cameraposition": {
+      "hash": "e416f517545568c32e9991d41fc01c5474ef9d1d90ca9535b4f02a6e70b4a870",
+      "last_checked": "2025-06-06T06:10:31.110690",
+      "status": "unchanged",
+      "etag": "5722e330af1e48a958a1fb6ef9e432b5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition.json": {
+      "hash": "73f91c4e59f2349826c771b61520b1f74e3636245047dc405160b8bdc98405be",
+      "last_checked": "2025-06-06T06:10:31.455535",
+      "status": "unchanged",
+      "etag": "W/\"c0b2719ada85ad7737fb79c1d0940e58\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpcameraposition": {
+      "hash": "73f91c4e59f2349826c771b61520b1f74e3636245047dc405160b8bdc98405be",
+      "last_checked": "2025-06-06T06:10:31.455535",
+      "status": "unchanged",
+      "etag": "1090fe1876ef74581333b4ba171abaf4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/delegate.json": {
+      "hash": "cfeede4ff0641341cab4fbecad4643ebe58e567eda2d00fd61c7ea19431b8af0",
+      "last_checked": "2025-06-06T06:10:31.790361",
+      "status": "unchanged",
+      "etag": "W/\"0331546fbfa9669063f623a89bdbfd1a\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/delegate": {
+      "hash": "cfeede4ff0641341cab4fbecad4643ebe58e567eda2d00fd61c7ea19431b8af0",
+      "last_checked": "2025-06-06T06:10:31.790361",
+      "status": "unchanged",
+      "etag": "abad940fae7df08e0be88fba0b072b04"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorderdelegate.json": {
+      "hash": "b0eadebede00e72056f78190e29225c2474f87f2315051f6b5f9649dba8f0242",
+      "last_checked": "2025-06-06T06:10:32.183981",
+      "status": "unchanged",
+      "etag": "W/\"2e00a8db33dab2a4f7daf2449944b777\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorderdelegate": {
+      "hash": "b0eadebede00e72056f78190e29225c2474f87f2315051f6b5f9649dba8f0242",
+      "last_checked": "2025-06-06T06:10:32.183981",
+      "status": "unchanged",
+      "etag": "af038d54f128c313a7679c9234cd8764"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/startrecording(handler:).json": {
+      "hash": "1ba78dc7ac99b1f7feab2352fef22cf9449be87ffa8f324806f0635c1dca24bc",
+      "last_checked": "2025-06-06T06:10:32.564084",
+      "status": "unchanged",
+      "etag": "W/\"6ca4d6b3c7d67c13481ee5f52f766400\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/startrecording(handler:)": {
+      "hash": "1ba78dc7ac99b1f7feab2352fef22cf9449be87ffa8f324806f0635c1dca24bc",
+      "last_checked": "2025-06-06T06:10:32.564084",
+      "status": "unchanged",
+      "etag": "f6d26994f29cda5336d9b602916c78b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/stoprecording(handler:).json": {
+      "hash": "4319586ef1713e0b717cf4a8285570a0f2200f8382a83eec6ea6a0c04d780c91",
+      "last_checked": "2025-06-06T06:10:32.943197",
+      "status": "unchanged",
+      "etag": "W/\"b7057c8c45bec6f8363cc10d1db1fde5\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/stoprecording(handler:)": {
+      "hash": "4319586ef1713e0b717cf4a8285570a0f2200f8382a83eec6ea6a0c04d780c91",
+      "last_checked": "2025-06-06T06:10:32.943197",
+      "status": "unchanged",
+      "etag": "a474413399224eff627df8c7d2e02b97"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/stoprecording(withoutput:completionhandler:).json": {
+      "hash": "4b96430642f35a3ee8fcb8a63ecedf71d2afbf0631b742b24f962920b5c54c11",
+      "last_checked": "2025-06-06T06:10:33.306598",
+      "status": "unchanged",
+      "etag": "W/\"6008335a9917c1ef1a9680cf318590e6\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/stoprecording(withoutput:completionhandler:)": {
+      "hash": "4b96430642f35a3ee8fcb8a63ecedf71d2afbf0631b742b24f962920b5c54c11",
+      "last_checked": "2025-06-06T06:10:33.306598",
+      "status": "unchanged",
+      "etag": "46179da72c503679c8ddc603787694b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/startcapture(handler:completionhandler:).json": {
+      "hash": "775d6f9f5949687a5e4198a8beb52dfe9bad7a231ce8d708150ffef43f797b2b",
+      "last_checked": "2025-06-06T06:10:33.719004",
+      "status": "unchanged",
+      "etag": "W/\"06af1174d2d1ae4d5ea37a92345428bb\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/startcapture(handler:completionhandler:)": {
+      "hash": "775d6f9f5949687a5e4198a8beb52dfe9bad7a231ce8d708150ffef43f797b2b",
+      "last_checked": "2025-06-06T06:10:33.719004",
+      "status": "unchanged",
+      "etag": "459691abb20559b9d49c5550bb7ee56e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype.json": {
+      "hash": "571e43e9796e11115dc9a4f8d62f21b1de25c9847d69ebb87a1b6d8bb27e3712",
+      "last_checked": "2025-06-06T06:10:34.132358",
+      "status": "unchanged",
+      "etag": "W/\"05613e48129e88aa0e04c328897225c2\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsamplebuffertype": {
+      "hash": "571e43e9796e11115dc9a4f8d62f21b1de25c9847d69ebb87a1b6d8bb27e3712",
+      "last_checked": "2025-06-06T06:10:34.132358",
+      "status": "unchanged",
+      "etag": "ca22fb619c1b9de396ceff5c0887c71f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/stopcapture(handler:).json": {
+      "hash": "8905daecd2521fccd20becbff964bf27a6169770edef63cdec60137ba984965f",
+      "last_checked": "2025-06-06T06:10:34.509815",
+      "status": "unchanged",
+      "etag": "W/\"a651ffbe34be7e08e155d8d5d11bd299\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/stopcapture(handler:)": {
+      "hash": "8905daecd2521fccd20becbff964bf27a6169770edef63cdec60137ba984965f",
+      "last_checked": "2025-06-06T06:10:34.509815",
+      "status": "unchanged",
+      "etag": "f773de7bd5bbe0d890c567ae30fbf883"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/discardrecording(handler:).json": {
+      "hash": "a850944d15b6c94be6b883fc1c316ec1aced1f14ab2227bd89fc59d130a97277",
+      "last_checked": "2025-06-06T06:10:34.874889",
+      "status": "unchanged",
+      "etag": "W/\"e7d38e83586ffe57348307208a10745a\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/discardrecording(handler:)": {
+      "hash": "a850944d15b6c94be6b883fc1c316ec1aced1f14ab2227bd89fc59d130a97277",
+      "last_checked": "2025-06-06T06:10:34.874889",
+      "status": "unchanged",
+      "etag": "ac7d312e623072832aac72855cbdbe67"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/startrecording(withmicrophoneenabled:handler:).json": {
+      "hash": "f3f78681080c92458bfd4bd6e0ec1cc6f1bcdb9156de9c63024caa6034a5e732",
+      "last_checked": "2025-06-06T06:10:35.247366",
+      "status": "unchanged",
+      "etag": "W/\"33715b9e715dae67d4a5e9e7febe5ff4\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/startrecording(withmicrophoneenabled:handler:)": {
+      "hash": "f3f78681080c92458bfd4bd6e0ec1cc6f1bcdb9156de9c63024caa6034a5e732",
+      "last_checked": "2025-06-06T06:10:35.247366",
+      "status": "unchanged",
+      "etag": "e40524ba9e4507e5df77060cff324da9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/startclipbuffering(completionhandler:).json": {
+      "hash": "545f2745da879b5c1b69a83b98120c06e7dc936f30349b0d5776589793f10dd0",
+      "last_checked": "2025-06-06T06:10:35.632403",
+      "status": "unchanged",
+      "etag": "W/\"bea90ca1263d514ddf62394f129f7644\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/startclipbuffering(completionhandler:)": {
+      "hash": "545f2745da879b5c1b69a83b98120c06e7dc936f30349b0d5776589793f10dd0",
+      "last_checked": "2025-06-06T06:10:35.632403",
+      "status": "unchanged",
+      "etag": "2d9293abc44609589438398b83890f36"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/stopclipbuffering(completionhandler:).json": {
+      "hash": "10a0ec7e5668117725d2b5f65c0512026df3f695adb722cacd831a491a66490b",
+      "last_checked": "2025-06-06T06:10:36.052114",
+      "status": "unchanged",
+      "etag": "W/\"e27112d05532485ec9c3eb1ca5f78b0b\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/stopclipbuffering(completionhandler:)": {
+      "hash": "10a0ec7e5668117725d2b5f65c0512026df3f695adb722cacd831a491a66490b",
+      "last_checked": "2025-06-06T06:10:36.052114",
+      "status": "unchanged",
+      "etag": "24fd6fe9619fab3e6a9ad1ee17644831"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/exportclip(to:duration:completionhandler:).json": {
+      "hash": "b61709d25800855747af90d53e39e61ba4bf3fcfc34fabb3a2999efec10753f8",
+      "last_checked": "2025-06-06T06:10:36.453408",
+      "status": "unchanged",
+      "etag": "W/\"065c8559ed6d0706eb88e7f8ff6fa9e3\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/exportclip(to:duration:completionhandler:)": {
+      "hash": "b61709d25800855747af90d53e39e61ba4bf3fcfc34fabb3a2999efec10753f8",
+      "last_checked": "2025-06-06T06:10:36.453408",
+      "status": "unchanged",
+      "etag": "239984cb3d4bb6b82d17febf16e22c81"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontroller/mode.json": {
+      "hash": "3e9668c451c593c0fb63559b5b8a1b8123d30096b0fe797c50a707f8e1d6de04",
+      "last_checked": "2025-06-06T06:10:36.799433",
+      "status": "unchanged",
+      "etag": "W/\"6e718baeb4b0e19997a0612aff3baf93\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontroller/mode": {
+      "hash": "3e9668c451c593c0fb63559b5b8a1b8123d30096b0fe797c50a707f8e1d6de04",
+      "last_checked": "2025-06-06T06:10:36.799433",
+      "status": "unchanged",
+      "etag": "3d8af9576f6ad6dca8e4033d1ce6786f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode.json": {
+      "hash": "d92d33e4545c574163d961bcd5532e33c95273b1b62634ba30c74f026a2fb26e",
+      "last_checked": "2025-06-06T06:10:37.180249",
+      "status": "unchanged",
+      "etag": "W/\"ebbbf081e792e813d5a73a199e465e27\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollermode": {
+      "hash": "d92d33e4545c574163d961bcd5532e33c95273b1b62634ba30c74f026a2fb26e",
+      "last_checked": "2025-06-06T06:10:37.180249",
+      "status": "unchanged",
+      "etag": "2d6029ebdfa2f5c5ba744751bac083bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontroller/previewcontrollerdelegate.json": {
+      "hash": "674835d8cecea97cf8102e8f306948f970a2eedd0e99acbcd8edd112c3f615f0",
+      "last_checked": "2025-06-06T06:10:37.556104",
+      "status": "unchanged",
+      "etag": "W/\"fe4273357b9f5a02ef22a81724e184dc\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontroller/previewcontrollerdelegate": {
+      "hash": "674835d8cecea97cf8102e8f306948f970a2eedd0e99acbcd8edd112c3f615f0",
+      "last_checked": "2025-06-06T06:10:37.556104",
+      "status": "unchanged",
+      "etag": "8988562acf9b9d88ae5bcdf80a0e59f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollerdelegate.json": {
+      "hash": "4edd1fef8a66920ba000d2175d9762ac5addd5be269a191155f5df772f4247c3",
+      "last_checked": "2025-06-06T06:10:37.930582",
+      "status": "unchanged",
+      "etag": "W/\"89efeac34c905b48cd7ea77a26af9d30\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollerdelegate": {
+      "hash": "4edd1fef8a66920ba000d2175d9762ac5addd5be269a191155f5df772f4247c3",
+      "last_checked": "2025-06-06T06:10:37.930582",
+      "status": "unchanged",
+      "etag": "c0a7d9c11af81e723e41ad49f497c2d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/broadcasturl.json": {
+      "hash": "0012f606ea2edc00c338486b872af99361f164ae39b5e85b5dab75d60b82f13b",
+      "last_checked": "2025-06-06T06:10:38.305017",
+      "status": "unchanged",
+      "etag": "W/\"2f365cd34416e06dbd9b2d48a3b4b076\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller/broadcasturl": {
+      "hash": "0012f606ea2edc00c338486b872af99361f164ae39b5e85b5dab75d60b82f13b",
+      "last_checked": "2025-06-06T06:10:38.305017",
+      "status": "unchanged",
+      "etag": "9e7d9ad6921d5401536cd803cbf8cf61"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/startbroadcast(handler:).json": {
+      "hash": "39b3c43aab17f3fc9fd39690462540dc8e81c9f360751c6c674fab0c6af48e3a",
+      "last_checked": "2025-06-06T06:10:38.677306",
+      "status": "unchanged",
+      "etag": "W/\"1455c7423bb8b74fc5e220c6e5066b9e\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller/startbroadcast(handler:)": {
+      "hash": "39b3c43aab17f3fc9fd39690462540dc8e81c9f360751c6c674fab0c6af48e3a",
+      "last_checked": "2025-06-06T06:10:38.677306",
+      "status": "unchanged",
+      "etag": "6ef5b390b37b78137e557e0c6f19f124"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/pausebroadcast().json": {
+      "hash": "effc54babb103561294ac2c7cd4f6986352304a497840272a96481750fa6f144",
+      "last_checked": "2025-06-06T06:10:39.052564",
+      "status": "unchanged",
+      "etag": "W/\"39a4428cf5b48f143b79cb291b73e95f\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller/pausebroadcast()": {
+      "hash": "effc54babb103561294ac2c7cd4f6986352304a497840272a96481750fa6f144",
+      "last_checked": "2025-06-06T06:10:39.052564",
+      "status": "unchanged",
+      "etag": "30ec6aae4de8806b0c67166d6118e6fc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/resumebroadcast().json": {
+      "hash": "9c76fa30921d2fd12772f4d72e3688b70dd0a6c4c109b546d5f20f46900d3b8e",
+      "last_checked": "2025-06-06T06:10:39.414749",
+      "status": "unchanged",
+      "etag": "W/\"8b92a6de0066e10d9f1b9aad5408219b\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller/resumebroadcast()": {
+      "hash": "9c76fa30921d2fd12772f4d72e3688b70dd0a6c4c109b546d5f20f46900d3b8e",
+      "last_checked": "2025-06-06T06:10:39.414749",
+      "status": "unchanged",
+      "etag": "96faf500ced45e07b8bb68a65df1372b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/finishbroadcast(handler:).json": {
+      "hash": "2edf85902805366f8f1aaf947cb9cb57ffb328e5aa4b47d3bda3e02bdf148b21",
+      "last_checked": "2025-06-06T06:10:39.793801",
+      "status": "unchanged",
+      "etag": "W/\"de18613021567b1ebda5bdc1ecbf51af\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller/finishbroadcast(handler:)": {
+      "hash": "2edf85902805366f8f1aaf947cb9cb57ffb328e5aa4b47d3bda3e02bdf148b21",
+      "last_checked": "2025-06-06T06:10:39.793801",
+      "status": "unchanged",
+      "etag": "e5ff17c1efd5eac4866b4ef6fc0e7cdc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/serviceinfo.json": {
+      "hash": "cd80c024001f70c85c10c1eaf41636f4e841522fc2061b3b12868e30a26c1dfc",
+      "last_checked": "2025-06-06T06:10:40.169249",
+      "status": "unchanged",
+      "etag": "W/\"541e8766b8f494a53a760e54b1441735\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller/serviceinfo": {
+      "hash": "cd80c024001f70c85c10c1eaf41636f4e841522fc2061b3b12868e30a26c1dfc",
+      "last_checked": "2025-06-06T06:10:40.169249",
+      "status": "unchanged",
+      "etag": "21abfd5f4a92827b90c473d6520d88bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/broadcastextensionbundleid.json": {
+      "hash": "03d47c23f4107755fee8bd03c152a496bb35392288d04c338d13df97089b843d",
+      "last_checked": "2025-06-06T06:10:40.563720",
+      "status": "unchanged",
+      "etag": "W/\"6eb80c6f3617f6aa684e9c45773d2e02\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller/broadcastextensionbundleid": {
+      "hash": "03d47c23f4107755fee8bd03c152a496bb35392288d04c338d13df97089b843d",
+      "last_checked": "2025-06-06T06:10:40.563720",
+      "status": "unchanged",
+      "etag": "c6547ad0388adc51a7f7e669e10e0156"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/isbroadcasting.json": {
+      "hash": "c09f63d1214f7a74dd0db31ee7ad89818c23d7d749cd85dc6f58915ed3324977",
+      "last_checked": "2025-06-06T06:10:40.936272",
+      "status": "unchanged",
+      "etag": "W/\"352727cc7cbabd3cc2d64ac323b8cc99\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller/isbroadcasting": {
+      "hash": "c09f63d1214f7a74dd0db31ee7ad89818c23d7d749cd85dc6f58915ed3324977",
+      "last_checked": "2025-06-06T06:10:40.936272",
+      "status": "unchanged",
+      "etag": "b52b54994713100438912698c0378db7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/ispaused.json": {
+      "hash": "b088ddb0358ff497860f5bb06a6febf02d9f029158e9ca425433e1614d767bdf",
+      "last_checked": "2025-06-06T06:10:41.309782",
+      "status": "unchanged",
+      "etag": "W/\"1d0cd25fb1968bfdf33582dcfec51c0a\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller/ispaused": {
+      "hash": "b088ddb0358ff497860f5bb06a6febf02d9f029158e9ca425433e1614d767bdf",
+      "last_checked": "2025-06-06T06:10:41.309782",
+      "status": "unchanged",
+      "etag": "61acbb929e5e02ae9c1b1304eb29417a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/delegate.json": {
+      "hash": "3c01898c614a2b27e2df3094a0976b6022fff19e1806e03dd3499019b1c74042",
+      "last_checked": "2025-06-06T06:10:41.684959",
+      "status": "unchanged",
+      "etag": "W/\"9f81cf09d3a5e2b10a0009a8542ff6fa\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontroller/delegate": {
+      "hash": "3c01898c614a2b27e2df3094a0976b6022fff19e1806e03dd3499019b1c74042",
+      "last_checked": "2025-06-06T06:10:41.684959",
+      "status": "unchanged",
+      "etag": "43603dfe83453f72df46e12dc55e5834"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontrollerdelegate.json": {
+      "hash": "889a9c18fa0dba136b7c05313d2d1b6fc43aa6ff1d80b99f3c719a5fe114ab66",
+      "last_checked": "2025-06-06T06:10:42.074278",
+      "status": "unchanged",
+      "etag": "W/\"962e564799ea7f59d531665441f43495\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontrollerdelegate": {
+      "hash": "889a9c18fa0dba136b7c05313d2d1b6fc43aa6ff1d80b99f3c719a5fe114ab66",
+      "last_checked": "2025-06-06T06:10:42.074278",
+      "status": "unchanged",
+      "etag": "3954456840ed065efaf00c006d5c5d81"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcasthandler/updateserviceinfo(_:).json": {
+      "hash": "6d5a180bbfdd0141f58f10f2e3b81b2faa9d003da8ec7d38410db4080aed146b",
+      "last_checked": "2025-06-06T06:10:42.437467",
+      "status": "unchanged",
+      "etag": "W/\"1c82bbff2feed0782590aab47f7fbcff\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcasthandler/updateserviceinfo(_:)": {
+      "hash": "6d5a180bbfdd0141f58f10f2e3b81b2faa9d003da8ec7d38410db4080aed146b",
+      "last_checked": "2025-06-06T06:10:42.437467",
+      "status": "unchanged",
+      "etag": "94eff2b918630faf88416ac1ce631fcb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcasthandler/updatebroadcast(_:).json": {
+      "hash": "a3c243d450b12f00b522aca795e365ca7b076a0b0675721cc8e67a964e0a42fd",
+      "last_checked": "2025-06-06T06:10:42.820867",
+      "status": "unchanged",
+      "etag": "W/\"b28629f1a0cb6c132c232e81acce903f\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcasthandler/updatebroadcast(_:)": {
+      "hash": "a3c243d450b12f00b522aca795e365ca7b076a0b0675721cc8e67a964e0a42fd",
+      "last_checked": "2025-06-06T06:10:42.820867",
+      "status": "unchanged",
+      "etag": "cdcf06e48736376e99149986bfb9afe2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/broadcaststarted(withsetupinfo:).json": {
+      "hash": "f0af6cde7b50a4ea90bf97abecb98597defc7cb58f126e0e1c80634c1afa6f74",
+      "last_checked": "2025-06-06T06:10:43.198585",
+      "status": "unchanged",
+      "etag": "W/\"1ef73bb3c3c71172f1e2538e30cd3867\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastsamplehandler/broadcaststarted(withsetupinfo:)": {
+      "hash": "f0af6cde7b50a4ea90bf97abecb98597defc7cb58f126e0e1c80634c1afa6f74",
+      "last_checked": "2025-06-06T06:10:43.198585",
+      "status": "unchanged",
+      "etag": "b040fbb73fb38f7e243e35b0a358ea96"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/broadcastpaused().json": {
+      "hash": "37e446a857743633b52dab1d0be6ab9888cdfa8682a9e24d11a4cfbc2268be47",
+      "last_checked": "2025-06-06T06:10:43.599827",
+      "status": "unchanged",
+      "etag": "W/\"7c413aec3576d7ed8d41cd3d0a87f77b\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastsamplehandler/broadcastpaused()": {
+      "hash": "37e446a857743633b52dab1d0be6ab9888cdfa8682a9e24d11a4cfbc2268be47",
+      "last_checked": "2025-06-06T06:10:43.599827",
+      "status": "unchanged",
+      "etag": "086dfe6e5933495b7c642855c858ed4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/broadcastresumed().json": {
+      "hash": "3f95ba08121c746659d658329b147dad21222ccf8effcb67b908d3956072f20e",
+      "last_checked": "2025-06-06T06:10:44.021796",
+      "status": "unchanged",
+      "etag": "W/\"00bfc9078ae71e40190429b13683c2ce\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastsamplehandler/broadcastresumed()": {
+      "hash": "3f95ba08121c746659d658329b147dad21222ccf8effcb67b908d3956072f20e",
+      "last_checked": "2025-06-06T06:10:44.021796",
+      "status": "unchanged",
+      "etag": "7695cc7d84f30d1aaca8e4d2c0e3460d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/broadcastfinished().json": {
+      "hash": "89f8f2a4eb2e93fa40a8bed3b2f9609506a128a8c743a1125e6dcf37d2ddce8b",
+      "last_checked": "2025-06-06T06:10:44.416446",
+      "status": "unchanged",
+      "etag": "W/\"b03d5f63392ed53b64a473f83b2a4f49\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastsamplehandler/broadcastfinished()": {
+      "hash": "89f8f2a4eb2e93fa40a8bed3b2f9609506a128a8c743a1125e6dcf37d2ddce8b",
+      "last_checked": "2025-06-06T06:10:44.416446",
+      "status": "unchanged",
+      "etag": "e77524ed857bc2e193b82a29765f0dc1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/broadcastannotated(withapplicationinfo:).json": {
+      "hash": "9355260cca23aeb307c94ca118fbd2724e5db00439df0fbe82af697f2d56cd45",
+      "last_checked": "2025-06-06T06:10:44.823025",
+      "status": "unchanged",
+      "etag": "W/\"829a66c07ff191b560aaab7ca871a0ca\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastsamplehandler/broadcastannotated(withapplicationinfo:)": {
+      "hash": "9355260cca23aeb307c94ca118fbd2724e5db00439df0fbe82af697f2d56cd45",
+      "last_checked": "2025-06-06T06:10:44.823025",
+      "status": "unchanged",
+      "etag": "d433f1118a87aeabe54d7622a1030e28"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpapplicationinfobundleidentifierkey.json": {
+      "hash": "b2909536b01538d425d00a9cb3c749c958bd85b931f286bde5afc10754525a5e",
+      "last_checked": "2025-06-06T06:10:45.200363",
+      "status": "unchanged",
+      "etag": "W/\"ccf9012749ed1fd0b7d27aa77069d719\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpapplicationinfobundleidentifierkey": {
+      "hash": "b2909536b01538d425d00a9cb3c749c958bd85b931f286bde5afc10754525a5e",
+      "last_checked": "2025-06-06T06:10:45.200363",
+      "status": "unchanged",
+      "etag": "5c7dc617adcb03455aa9db6cd04d17d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/processsamplebuffer(_:with:).json": {
+      "hash": "d8a1919b04c2ff6f4aa91152dad44b648376574c6f8d1224c495d69c1a1b8a39",
+      "last_checked": "2025-06-06T06:10:45.631562",
+      "status": "unchanged",
+      "etag": "W/\"6ce9257c057320aa3499a2eb5674b38b\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastsamplehandler/processsamplebuffer(_:with:)": {
+      "hash": "d8a1919b04c2ff6f4aa91152dad44b648376574c6f8d1224c495d69c1a1b8a39",
+      "last_checked": "2025-06-06T06:10:45.631562",
+      "status": "unchanged",
+      "etag": "73779e9803a013817a3cf2143bb972ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpvideosampleorientationkey.json": {
+      "hash": "8a8327c87f2db04f90496172887b975a5bf0b884c0c6f3feb1e008db42a73f29",
+      "last_checked": "2025-06-06T06:10:46.027401",
+      "status": "unchanged",
+      "etag": "W/\"a6c657d3cb195d905130410b6f92e004\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpvideosampleorientationkey": {
+      "hash": "8a8327c87f2db04f90496172887b975a5bf0b884c0c6f3feb1e008db42a73f29",
+      "last_checked": "2025-06-06T06:10:46.027401",
+      "status": "unchanged",
+      "etag": "011fc2612e5c65e66320556809da8e6f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/finishbroadcastwitherror(_:).json": {
+      "hash": "40cd89f3380819e429565ddc86f7941097abb95fc4444ee48b59684f93dad8be",
+      "last_checked": "2025-06-06T06:10:46.386390",
+      "status": "unchanged",
+      "etag": "W/\"173cfe3f4e19b5a3d80cfff2961de9ed\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastsamplehandler/finishbroadcastwitherror(_:)": {
+      "hash": "40cd89f3380819e429565ddc86f7941097abb95fc4444ee48b59684f93dad8be",
+      "last_checked": "2025-06-06T06:10:46.386390",
+      "status": "unchanged",
+      "etag": "848b093e886e8c95fdac1451a17b25d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastmp4cliphandler/finishedprocessingmp4clip(withupdatedbroadcastconfiguration:error:).json": {
+      "hash": "85681b13f012e25ff4d63eb89c82c9275b12826a0145e0cabde5e443333c1724",
+      "last_checked": "2025-06-06T06:10:46.745428",
+      "status": "unchanged",
+      "etag": "W/\"c370c2bff1d9b684084d98caade75ff3\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastmp4cliphandler/finishedprocessingmp4clip(withupdatedbroadcastconfiguration:error:)": {
+      "hash": "85681b13f012e25ff4d63eb89c82c9275b12826a0145e0cabde5e443333c1724",
+      "last_checked": "2025-06-06T06:10:46.745428",
+      "status": "unchanged",
+      "etag": "5a816afb248f63c85aae878514a515e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastmp4cliphandler/processmp4clip(with:setupinfo:finished:).json": {
+      "hash": "643812a12024edf35bb9f3a41bc3ac874eca0e27c547791d76281aee3059a8bc",
+      "last_checked": "2025-06-06T06:10:47.137713",
+      "status": "unchanged",
+      "etag": "W/\"9cfc3d92f47551db18594b499a7d2c7e\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastmp4cliphandler/processmp4clip(with:setupinfo:finished:)": {
+      "hash": "643812a12024edf35bb9f3a41bc3ac874eca0e27c547791d76281aee3059a8bc",
+      "last_checked": "2025-06-06T06:10:47.137713",
+      "status": "unchanged",
+      "etag": "0495976f071e02d19de9226b68946450"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontroller/delegate.json": {
+      "hash": "c6f7e3d985e825c27051ee646891a8795486cf0391693635623d48d188b0be4f",
+      "last_checked": "2025-06-06T06:10:48.623926",
+      "status": "unchanged",
+      "etag": "W/\"d525658dd816623f1c77160a0aaeff3f\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivityviewcontroller/delegate": {
+      "hash": "c6f7e3d985e825c27051ee646891a8795486cf0391693635623d48d188b0be4f",
+      "last_checked": "2025-06-06T06:10:48.623926",
+      "status": "unchanged",
+      "etag": "4aed20840741f172d7ce94173900be0d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontrollerdelegate.json": {
+      "hash": "83d80ad4529d7e95d8f92c7f1a6c6bd5158fd0bd5699d0a36a5b0e974b1edf0f",
+      "last_checked": "2025-06-06T06:10:49.253701",
+      "status": "unchanged",
+      "etag": "W/\"1299d87c376c2b390fb3f5b40f4d3cfb\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivityviewcontrollerdelegate": {
+      "hash": "83d80ad4529d7e95d8f92c7f1a6c6bd5158fd0bd5699d0a36a5b0e974b1edf0f",
+      "last_checked": "2025-06-06T06:10:49.253701",
+      "status": "unchanged",
+      "etag": "9b34bf4a190b0a3b0973ad321df7ab9e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsystembroadcastpickerview/preferredextension.json": {
+      "hash": "68b196dabbb83284df712d0e1726b99d73d74d1f94625b5faa20f201ce885640",
+      "last_checked": "2025-06-06T06:10:49.806588",
+      "status": "unchanged",
+      "etag": "W/\"69f30a3b05560d6a11c7ce97a7eef350\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsystembroadcastpickerview/preferredextension": {
+      "hash": "68b196dabbb83284df712d0e1726b99d73d74d1f94625b5faa20f201ce885640",
+      "last_checked": "2025-06-06T06:10:49.806588",
+      "status": "unchanged",
+      "etag": "9bb91fc4d867814a9f1faf37c245eabc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsystembroadcastpickerview/showsmicrophonebutton.json": {
+      "hash": "be6fe8eb6c7aca33e266a97ff3bd225f5903fc1b5ebe8656e0a9d3e86b3ed290",
+      "last_checked": "2025-06-06T06:10:50.246852",
+      "status": "unchanged",
+      "etag": "W/\"afe92d21fc4621d96a4c259c95ccc79f\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsystembroadcastpickerview/showsmicrophonebutton": {
+      "hash": "be6fe8eb6c7aca33e266a97ff3bd225f5903fc1b5ebe8656e0a9d3e86b3ed290",
+      "last_checked": "2025-06-06T06:10:50.246852",
+      "status": "unchanged",
+      "etag": "217220ce3804011fb366817673d62509"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivitycontroller/showbroadcastpicker(at:from:preferredextensionidentifier:completionhandler:).json": {
+      "hash": "a4b415ed1a9f28a7ba037c0ee70e70f09c7c1709598a6947f169a59e0bd84959",
+      "last_checked": "2025-06-06T06:10:50.676391",
+      "status": "unchanged",
+      "etag": "W/\"676134ade5625a4c9c3b027fb660485c\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivitycontroller/showbroadcastpicker(at:from:preferredextensionidentifier:completionhandler:)": {
+      "hash": "a4b415ed1a9f28a7ba037c0ee70e70f09c7c1709598a6947f169a59e0bd84959",
+      "last_checked": "2025-06-06T06:10:50.676391",
+      "status": "unchanged",
+      "etag": "ad9857996de865dd9d8d4e5fd28e4a78"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivitycontroller/delegate.json": {
+      "hash": "4ddf583f066b11d382d63b29c1bbf57f7d97fc8473d9a96ee87b96203b5b0307",
+      "last_checked": "2025-06-06T06:10:51.228830",
+      "status": "unchanged",
+      "etag": "W/\"c438482dcf1158841eaf0fb84f6b2a9c\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivitycontroller/delegate": {
+      "hash": "4ddf583f066b11d382d63b29c1bbf57f7d97fc8473d9a96ee87b96203b5b0307",
+      "last_checked": "2025-06-06T06:10:51.228830",
+      "status": "unchanged",
+      "etag": "977bc18e7495cc8e42ba560ad6657e03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivitycontrollerdelegate/broadcastactivitycontroller(_:didfinishwith:error:).json": {
+      "hash": "8703b5c071ca303d8f1d1c77bfe1822a375338d29a43f2cd8675480f4328d772",
+      "last_checked": "2025-06-06T06:10:51.727781",
+      "status": "unchanged",
+      "etag": "W/\"99e7e1c9884e37ceff041d00f9882087\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivitycontrollerdelegate/broadcastactivitycontroller(_:didfinishwith:error:)": {
+      "hash": "8703b5c071ca303d8f1d1c77bfe1822a375338d29a43f2cd8675480f4328d772",
+      "last_checked": "2025-06-06T06:10:51.727781",
+      "status": "unchanged",
+      "etag": "dc3f0b308a7fcb26ad285c101733841b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastconfiguration/clipduration.json": {
+      "hash": "08f6ebe3e764c783988375c9937f3a6c77cc3abf84eeb08a5f5347d6b2b7e4f9",
+      "last_checked": "2025-06-06T06:10:52.181074",
+      "status": "unchanged",
+      "etag": "W/\"e39b0ca671b94bae985736de3ccdabf7\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastconfiguration/clipduration": {
+      "hash": "08f6ebe3e764c783988375c9937f3a6c77cc3abf84eeb08a5f5347d6b2b7e4f9",
+      "last_checked": "2025-06-06T06:10:52.181074",
+      "status": "unchanged",
+      "etag": "6869ffb1aae0b3c4bdbf1580f0e14258"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastconfiguration/videocompressionproperties.json": {
+      "hash": "b2615785027e3173374924078ca4325bc331a895e90137d4ba1b0b39b9e996df",
+      "last_checked": "2025-06-06T06:10:52.596080",
+      "status": "unchanged",
+      "etag": "W/\"d123ae2371ebd419f7662c02b91c77d7\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastconfiguration/videocompressionproperties": {
+      "hash": "b2615785027e3173374924078ca4325bc331a895e90137d4ba1b0b39b9e996df",
+      "last_checked": "2025-06-06T06:10:52.596080",
+      "status": "unchanged",
+      "etag": "8f49b2f9613d620305717cdefc2f8992"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/activephonecall.json": {
+      "hash": "7b2c2ad2e276d8fd0d61b0612a92a498af78f92ccb25647810bde2319cb7a8b9",
+      "last_checked": "2025-06-06T06:10:52.995192",
+      "status": "unchanged",
+      "etag": "W/\"2c125f97402050cd64578abfec61bb28\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/activephonecall": {
+      "hash": "7b2c2ad2e276d8fd0d61b0612a92a498af78f92ccb25647810bde2319cb7a8b9",
+      "last_checked": "2025-06-06T06:10:52.995192",
+      "status": "unchanged",
+      "etag": "f89621d582a4cb0a032d426120e66e3b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/attempttostartinrecordingstate.json": {
+      "hash": "966ad3a3512c602ab9474b8dfffca9d724d5f6ba30d8b9162656870d42cf7b8b",
+      "last_checked": "2025-06-06T06:10:53.429364",
+      "status": "unchanged",
+      "etag": "W/\"d31576ac6d73aba9ffc3a66a295cd57d\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/attempttostartinrecordingstate": {
+      "hash": "966ad3a3512c602ab9474b8dfffca9d724d5f6ba30d8b9162656870d42cf7b8b",
+      "last_checked": "2025-06-06T06:10:53.429364",
+      "status": "unchanged",
+      "etag": "1773a887abcdff5b771261ba34382bae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/attempttostopnonrecording.json": {
+      "hash": "c4fbe551410aa3e3fc242037563bf158df3d16854016e904329d759666ec408d",
+      "last_checked": "2025-06-06T06:10:53.852570",
+      "status": "unchanged",
+      "etag": "W/\"92fc1fda1a3ebc9055aba800540d3b59\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/attempttostopnonrecording": {
+      "hash": "c4fbe551410aa3e3fc242037563bf158df3d16854016e904329d759666ec408d",
+      "last_checked": "2025-06-06T06:10:53.852570",
+      "status": "unchanged",
+      "etag": "16a1dc89ed00c4c2575ddac368ac1465"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/broadcastinvalidsession.json": {
+      "hash": "328b56dd55645f0602064bca779870babe50d8dc850bb32a700d3ab5b3fb9db1",
+      "last_checked": "2025-06-06T06:10:54.261312",
+      "status": "unchanged",
+      "etag": "W/\"d5f648a0cab88a4af99a94b788b440b6\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/broadcastinvalidsession": {
+      "hash": "328b56dd55645f0602064bca779870babe50d8dc850bb32a700d3ab5b3fb9db1",
+      "last_checked": "2025-06-06T06:10:54.261312",
+      "status": "unchanged",
+      "etag": "f17066e035e4623c897b0c21a4853cc4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/broadcastsetupfailed.json": {
+      "hash": "555096d2bb5d9f342447ec51804c2059cd20a5636d6147dcf0db6158beb18772",
+      "last_checked": "2025-06-06T06:10:54.657684",
+      "status": "unchanged",
+      "etag": "W/\"4cfc8c94f927e18192be93b29bd4217e\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/broadcastsetupfailed": {
+      "hash": "555096d2bb5d9f342447ec51804c2059cd20a5636d6147dcf0db6158beb18772",
+      "last_checked": "2025-06-06T06:10:54.657684",
+      "status": "unchanged",
+      "etag": "bd556706cf9afd80f590a3295442dd96"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/carplay.json": {
+      "hash": "1221c89bf54c624924ebc620186c6c77b4aab89fd4483ad08078ce7afbb391ac",
+      "last_checked": "2025-06-06T06:10:55.049601",
+      "status": "unchanged",
+      "etag": "W/\"fa83ac5fe7eb48fe10dc47c3df9183c1\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/carplay": {
+      "hash": "1221c89bf54c624924ebc620186c6c77b4aab89fd4483ad08078ce7afbb391ac",
+      "last_checked": "2025-06-06T06:10:55.049601",
+      "status": "unchanged",
+      "etag": "a44ec8669ed155535a67b6725cbe9dbb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/codesuccessful.json": {
+      "hash": "81a5c4d16262d9104b96bf5b182b61301cf816736816dae6d76e75eead7a5ba0",
+      "last_checked": "2025-06-06T06:10:55.489984",
+      "status": "unchanged",
+      "etag": "W/\"3cc51d2c0cbea5cd0e726ef2ef51c50f\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/codesuccessful": {
+      "hash": "81a5c4d16262d9104b96bf5b182b61301cf816736816dae6d76e75eead7a5ba0",
+      "last_checked": "2025-06-06T06:10:55.489984",
+      "status": "unchanged",
+      "etag": "65dfe3ad47468330db49b15381764def"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/contentresize.json": {
+      "hash": "655e72caadecc26df689344fb33a4cf54d85000aa9e8f1cd7c89f1ac94bad10d",
+      "last_checked": "2025-06-06T06:10:55.891259",
+      "status": "unchanged",
+      "etag": "W/\"83f3b7ed2d607c53460634e395d25bb6\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/contentresize": {
+      "hash": "655e72caadecc26df689344fb33a4cf54d85000aa9e8f1cd7c89f1ac94bad10d",
+      "last_checked": "2025-06-06T06:10:55.891259",
+      "status": "unchanged",
+      "etag": "d4390f73d1270776070f0d9ebebeeec2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/disabled.json": {
+      "hash": "e2f20d928cffaaebe30c14811a7c28aed1328d040b36857c818ca64e09e562af",
+      "last_checked": "2025-06-06T06:10:56.453305",
+      "status": "unchanged",
+      "etag": "W/\"69f482cd336c7ce4534ab2816918bd17\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/disabled": {
+      "hash": "e2f20d928cffaaebe30c14811a7c28aed1328d040b36857c818ca64e09e562af",
+      "last_checked": "2025-06-06T06:10:56.453305",
+      "status": "unchanged",
+      "etag": "5541cf47529f59587f6a27707be6cda5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/entitlements.json": {
+      "hash": "af67d93415ab315386c611145594e081ce05e648d3808160e3602f3e526f6023",
+      "last_checked": "2025-06-06T06:10:56.865955",
+      "status": "unchanged",
+      "etag": "W/\"273e9c518d742f6e987079d817c4d329\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/entitlements": {
+      "hash": "af67d93415ab315386c611145594e081ce05e648d3808160e3602f3e526f6023",
+      "last_checked": "2025-06-06T06:10:56.865955",
+      "status": "unchanged",
+      "etag": "3c63eff88c36c82e5262728c58ece5e1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failed.json": {
+      "hash": "5171519c03663777ff3d19c07c9cd6bfea75ea3635e815338c69925555d9ae59",
+      "last_checked": "2025-06-06T06:10:57.272674",
+      "status": "unchanged",
+      "etag": "W/\"d7bf5e2a8fdc4d61b6e6da4166e03943\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failed": {
+      "hash": "5171519c03663777ff3d19c07c9cd6bfea75ea3635e815338c69925555d9ae59",
+      "last_checked": "2025-06-06T06:10:57.272674",
+      "status": "unchanged",
+      "etag": "a58c8237d8f32868f4fc5fd5e79d7a97"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedapplicationconnectioninterrupted.json": {
+      "hash": "edb45c51dd1087dac6c964b432e34424d96597a737d478d8877fd2b47e1d0e3b",
+      "last_checked": "2025-06-06T06:10:57.672481",
+      "status": "unchanged",
+      "etag": "W/\"70d9e89e8b8c4071a0a6e6c41d9cdedf\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedapplicationconnectioninterrupted": {
+      "hash": "edb45c51dd1087dac6c964b432e34424d96597a737d478d8877fd2b47e1d0e3b",
+      "last_checked": "2025-06-06T06:10:57.672481",
+      "status": "unchanged",
+      "etag": "3625afe9069fdc1bd89b03a80a5b6a88"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedapplicationconnectioninvalid.json": {
+      "hash": "d6027e967094a9e7965abb9a0302281f763c801eceea5ff86d4e5dc96d374115",
+      "last_checked": "2025-06-06T06:10:58.117878",
+      "status": "unchanged",
+      "etag": "W/\"10e6c0e35a2e260afef0861a33e3f33e\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedapplicationconnectioninvalid": {
+      "hash": "d6027e967094a9e7965abb9a0302281f763c801eceea5ff86d4e5dc96d374115",
+      "last_checked": "2025-06-06T06:10:58.117878",
+      "status": "unchanged",
+      "etag": "1af8a71d06a6d21f9e786955e1cd9328"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedassetwriterexportcanceled.json": {
+      "hash": "0daff37b83a2298754e5767550d3832a7bb010e814405a9c837fe47ce295f0b5",
+      "last_checked": "2025-06-06T06:10:58.533253",
+      "status": "unchanged",
+      "etag": "W/\"fe3f63a829efee49c3b4987c303946af\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedassetwriterexportcanceled": {
+      "hash": "0daff37b83a2298754e5767550d3832a7bb010e814405a9c837fe47ce295f0b5",
+      "last_checked": "2025-06-06T06:10:58.533253",
+      "status": "unchanged",
+      "etag": "539a0c9d9d0666d80ec5193ae8f9bd7b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedassetwriterexportfailed.json": {
+      "hash": "0b4e218467ea4bc48ae3d24d79bd08d67f6f29f3908ed6c574434f3234933d53",
+      "last_checked": "2025-06-06T06:10:59.029220",
+      "status": "unchanged",
+      "etag": "W/\"c84268a042dbbca9cc07183a6741a8dc\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedassetwriterexportfailed": {
+      "hash": "0b4e218467ea4bc48ae3d24d79bd08d67f6f29f3908ed6c574434f3234933d53",
+      "last_checked": "2025-06-06T06:10:59.029220",
+      "status": "unchanged",
+      "etag": "c1f936ab3482b2169d64317dea21968e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedassetwriterfailedtosave.json": {
+      "hash": "09c450063a3188e5acce7e811b84dab7b5d6b8f91b53c2b2ff7f1b75adedb0f0",
+      "last_checked": "2025-06-06T06:10:59.480403",
+      "status": "unchanged",
+      "etag": "W/\"cecf9f26af4b804862df9ad1ea25008b\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedassetwriterfailedtosave": {
+      "hash": "09c450063a3188e5acce7e811b84dab7b5d6b8f91b53c2b2ff7f1b75adedb0f0",
+      "last_checked": "2025-06-06T06:10:59.480403",
+      "status": "unchanged",
+      "etag": "39b0e78cf5a76a0599261345666cdf58"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedassetwriterinwrongstate.json": {
+      "hash": "e24f327548a5a4703cbf05f199f142b00a64b5fc8a599cc16dd787413f533f67",
+      "last_checked": "2025-06-06T06:10:59.862088",
+      "status": "unchanged",
+      "etag": "W/\"b1b98a5ae457192a964886d7ea457a1e\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedassetwriterinwrongstate": {
+      "hash": "e24f327548a5a4703cbf05f199f142b00a64b5fc8a599cc16dd787413f533f67",
+      "last_checked": "2025-06-06T06:10:59.862088",
+      "status": "unchanged",
+      "etag": "7eecab517c528766bae3e2c24a646df1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedincorrecttimestamps.json": {
+      "hash": "6034dbd7434aec64e382bd4e27e5acf305dbe3b72607afd8ddaf6e26b25515d1",
+      "last_checked": "2025-06-06T06:11:00.341071",
+      "status": "unchanged",
+      "etag": "W/\"18a9885822e37cb321e46f3f41ca17bc\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedincorrecttimestamps": {
+      "hash": "6034dbd7434aec64e382bd4e27e5acf305dbe3b72607afd8ddaf6e26b25515d1",
+      "last_checked": "2025-06-06T06:11:00.341071",
+      "status": "unchanged",
+      "etag": "cae5171b84bea872d5cb3df414170484"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedmediaservicesfailure.json": {
+      "hash": "9bca749fb96f886bd12699e25674728abf2958f9cffaed2b7b372cf50efb44d1",
+      "last_checked": "2025-06-06T06:11:00.739157",
+      "status": "unchanged",
+      "etag": "W/\"a82fcb5e0aecd441cdcf1417099b9038\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedmediaservicesfailure": {
+      "hash": "9bca749fb96f886bd12699e25674728abf2958f9cffaed2b7b372cf50efb44d1",
+      "last_checked": "2025-06-06T06:11:00.739157",
+      "status": "unchanged",
+      "etag": "b492a1f5a4ae5ff83e118ce77fecfa3e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failednoassetwriter.json": {
+      "hash": "381cf66f9745b0d4617e70a9bdfe582c0d9c4b9f3b2df54af8afa9e30e759720",
+      "last_checked": "2025-06-06T06:11:01.194681",
+      "status": "unchanged",
+      "etag": "W/\"ad3b66e093074a684e6dce18fd567ffd\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failednoassetwriter": {
+      "hash": "381cf66f9745b0d4617e70a9bdfe582c0d9c4b9f3b2df54af8afa9e30e759720",
+      "last_checked": "2025-06-06T06:11:01.194681",
+      "status": "unchanged",
+      "etag": "f7ad252f04e39e659ddc89f731ecf8f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failednomatchingapplicationcontext.json": {
+      "hash": "0026fb2fe24485f97cebdd8ddffe32486442bf209c827e6273d30aad2c0f9b16",
+      "last_checked": "2025-06-06T06:11:01.635643",
+      "status": "unchanged",
+      "etag": "W/\"dc24fe5b439c5263e67a181dd3d34091\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failednomatchingapplicationcontext": {
+      "hash": "0026fb2fe24485f97cebdd8ddffe32486442bf209c827e6273d30aad2c0f9b16",
+      "last_checked": "2025-06-06T06:11:01.635643",
+      "status": "unchanged",
+      "etag": "8938af203a49094f13f7df825a49fb06"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtoobtainurl.json": {
+      "hash": "172d6b8f45f75ff96ad20cedb8f5cadeaace855174c9adcfef439569e57924a9",
+      "last_checked": "2025-06-06T06:11:02.038501",
+      "status": "unchanged",
+      "etag": "W/\"64d8179a843e0c3bc2ebdd705175d7f4\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedtoobtainurl": {
+      "hash": "172d6b8f45f75ff96ad20cedb8f5cadeaace855174c9adcfef439569e57924a9",
+      "last_checked": "2025-06-06T06:11:02.038501",
+      "status": "unchanged",
+      "etag": "158c2626c27a6d63891a2597169da61a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtoprocessfirstsample.json": {
+      "hash": "9ad12890411d6fba2768f54388919d98fc4c04616882d2470fa07be43b33121d",
+      "last_checked": "2025-06-06T06:11:02.436943",
+      "status": "unchanged",
+      "etag": "W/\"67fc8e13ca644186bb897015e635fc82\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedtoprocessfirstsample": {
+      "hash": "9ad12890411d6fba2768f54388919d98fc4c04616882d2470fa07be43b33121d",
+      "last_checked": "2025-06-06T06:11:02.436943",
+      "status": "unchanged",
+      "etag": "eb28eb8d85385f3a9921d61b8d0f36f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtoremovefile.json": {
+      "hash": "5a94be8ea74b34228b0a8bc1febcc4af2f350a0cfddddfc718594f0f3031d9f1",
+      "last_checked": "2025-06-06T06:11:02.843582",
+      "status": "unchanged",
+      "etag": "W/\"24e8cc979c5446e6e8a0acceac34ee81\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedtoremovefile": {
+      "hash": "5a94be8ea74b34228b0a8bc1febcc4af2f350a0cfddddfc718594f0f3031d9f1",
+      "last_checked": "2025-06-06T06:11:02.843582",
+      "status": "unchanged",
+      "etag": "7e7d66ca7be9ed376628ff65cfa4a265"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtostartcapturestack.json": {
+      "hash": "865872f22df7efa711053dbd22752682e40002bee5b4374b7c3b9d0e850c2fa6",
+      "last_checked": "2025-06-06T06:11:03.272918",
+      "status": "unchanged",
+      "etag": "W/\"13b102ba9da20e386be2fb62b9a93963\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedtostartcapturestack": {
+      "hash": "865872f22df7efa711053dbd22752682e40002bee5b4374b7c3b9d0e850c2fa6",
+      "last_checked": "2025-06-06T06:11:03.272918",
+      "status": "unchanged",
+      "etag": "19155d8d9f692c6ed47d02213683effb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtostart.json": {
+      "hash": "9ca0f4ad5a7ca103ea6bc357a3855c140d117ab81e506d6e99a6d58b394a5c28",
+      "last_checked": "2025-06-06T06:11:03.704402",
+      "status": "unchanged",
+      "etag": "W/\"17a0589d4d9b2dc9820e77fe7866f232\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedtostart": {
+      "hash": "9ca0f4ad5a7ca103ea6bc357a3855c140d117ab81e506d6e99a6d58b394a5c28",
+      "last_checked": "2025-06-06T06:11:03.704402",
+      "status": "unchanged",
+      "etag": "d62b667449e6979fb287be513f067049"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtosave.json": {
+      "hash": "428f717e37ae934ed57d81f0506c2e73913730f18322a465fbb1b365b3f365db",
+      "last_checked": "2025-06-06T06:11:04.099959",
+      "status": "unchanged",
+      "etag": "W/\"877b8f7a7572fc7715beeafc60e2fbbf\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/failedtosave": {
+      "hash": "428f717e37ae934ed57d81f0506c2e73913730f18322a465fbb1b365b3f365db",
+      "last_checked": "2025-06-06T06:11:04.099959",
+      "status": "unchanged",
+      "etag": "17080ce553ea1d86d0ebf675981fa80b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/filepermissions.json": {
+      "hash": "bd5446e9b387bccf06bc5d8f97a851d73dc0e1785686e607c766ad36e5d3d573",
+      "last_checked": "2025-06-06T06:11:04.535123",
+      "status": "unchanged",
+      "etag": "W/\"aa5865c81015ca7f49528ddc68dddbeb\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/filepermissions": {
+      "hash": "bd5446e9b387bccf06bc5d8f97a851d73dc0e1785686e607c766ad36e5d3d573",
+      "last_checked": "2025-06-06T06:11:04.535123",
+      "status": "unchanged",
+      "etag": "0a9210d1216c3d0b2f03302435b02959"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/insufficientstorage.json": {
+      "hash": "e508e936134f1bf5cffee1b3693c9931a377cf613eb3b7230bfac3cad9d5f3b7",
+      "last_checked": "2025-06-06T06:11:04.963456",
+      "status": "unchanged",
+      "etag": "W/\"fc8485a13f9106fb303fb361e0b35467\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/insufficientstorage": {
+      "hash": "e508e936134f1bf5cffee1b3693c9931a377cf613eb3b7230bfac3cad9d5f3b7",
+      "last_checked": "2025-06-06T06:11:04.963456",
+      "status": "unchanged",
+      "etag": "6b540a2fe99909942ef3b8e8133a76c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/interrupted.json": {
+      "hash": "9a51c2331b8f420fba3db0b4d9c27f88598e2d727e94329e58867719341d7673",
+      "last_checked": "2025-06-06T06:11:05.345640",
+      "status": "unchanged",
+      "etag": "W/\"bd2d5b9b60534073a6fb8f0a8c012b13\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/interrupted": {
+      "hash": "9a51c2331b8f420fba3db0b4d9c27f88598e2d727e94329e58867719341d7673",
+      "last_checked": "2025-06-06T06:11:05.345640",
+      "status": "unchanged",
+      "etag": "99453e95db3ac3095a106b9cfda19efe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/invalidparameter.json": {
+      "hash": "c935e685029688047eb860efa367571ffd4ed0133b2c78401d6c20a780d87a6a",
+      "last_checked": "2025-06-06T06:11:05.773367",
+      "status": "unchanged",
+      "etag": "W/\"3fb74845360e578b0681af575643bc20\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/invalidparameter": {
+      "hash": "c935e685029688047eb860efa367571ffd4ed0133b2c78401d6c20a780d87a6a",
+      "last_checked": "2025-06-06T06:11:05.773367",
+      "status": "unchanged",
+      "etag": "e7ea1df10746d36cdcd7d92191b9d023"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/photofailure.json": {
+      "hash": "0237e273641dd2e485785dcc464073bbc884f422a4b6e116aec50ab1dd2463c2",
+      "last_checked": "2025-06-06T06:11:06.200021",
+      "status": "unchanged",
+      "etag": "W/\"377615e109ea0acea603953490b35d3d\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/photofailure": {
+      "hash": "0237e273641dd2e485785dcc464073bbc884f422a4b6e116aec50ab1dd2463c2",
+      "last_checked": "2025-06-06T06:11:06.200021",
+      "status": "unchanged",
+      "etag": "55b1c9061a89291c4d8e8f937c127f24"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/recordinginvalidsession.json": {
+      "hash": "7017c05a2bda58ca77a4d9232b95d5a21c9e71d89c3ca13245c0cb8ac733d5ad",
+      "last_checked": "2025-06-06T06:11:06.608153",
+      "status": "unchanged",
+      "etag": "W/\"53921a330ae4f1845200ab0f0cc91cd3\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/recordinginvalidsession": {
+      "hash": "7017c05a2bda58ca77a4d9232b95d5a21c9e71d89c3ca13245c0cb8ac733d5ad",
+      "last_checked": "2025-06-06T06:11:06.608153",
+      "status": "unchanged",
+      "etag": "eeb8cd6caf84a6a3949892c5f8d0c13b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/systemdormancy.json": {
+      "hash": "2cc992afacb0ebaacbcd2d84e3720e2112e2b0527d945bf00e01e883cdfc18b1",
+      "last_checked": "2025-06-06T06:11:07.053987",
+      "status": "unchanged",
+      "etag": "W/\"0968d83687e1639c8c806e94c1e2311e\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/systemdormancy": {
+      "hash": "2cc992afacb0ebaacbcd2d84e3720e2112e2b0527d945bf00e01e883cdfc18b1",
+      "last_checked": "2025-06-06T06:11:07.053987",
+      "status": "unchanged",
+      "etag": "83416f1c6f2485e605709e38d72dc675"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/unknown.json": {
+      "hash": "9543a6125a0a8cef98a6ea4b7f6e736b640e9962da5b7d2b945b3eb23ae40364",
+      "last_checked": "2025-06-06T06:11:07.417530",
+      "status": "unchanged",
+      "etag": "W/\"a85a41c1b1ea56d407fd4bc29289bc0b\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/unknown": {
+      "hash": "9543a6125a0a8cef98a6ea4b7f6e736b640e9962da5b7d2b945b3eb23ae40364",
+      "last_checked": "2025-06-06T06:11:07.417530",
+      "status": "unchanged",
+      "etag": "3c47b0fac984e66431b89b24e31130d1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/userdeclined.json": {
+      "hash": "6a38e955e672b10702b52e9dc3f137f89ab05cd055ee24e3b41bc86b0b9dba5e",
+      "last_checked": "2025-06-06T06:11:07.847197",
+      "status": "unchanged",
+      "etag": "W/\"fb4053f71ca6c2a1eaa91d3bb026068d\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/userdeclined": {
+      "hash": "6a38e955e672b10702b52e9dc3f137f89ab05cd055ee24e3b41bc86b0b9dba5e",
+      "last_checked": "2025-06-06T06:11:07.847197",
+      "status": "unchanged",
+      "etag": "662b0f2d2200b97402d3d700479ab59c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/videomixingfailure.json": {
+      "hash": "5a51f41f9675ea9572a49cce040482dedbf462d5fbe02501ce4054619cf8e7cc",
+      "last_checked": "2025-06-06T06:11:08.268396",
+      "status": "unchanged",
+      "etag": "W/\"250dc8247c856cc84b4eb705c63b20d7\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/videomixingfailure": {
+      "hash": "5a51f41f9675ea9572a49cce040482dedbf462d5fbe02501ce4054619cf8e7cc",
+      "last_checked": "2025-06-06T06:11:08.268396",
+      "status": "unchanged",
+      "etag": "7519a999401d2be4e72ed94b61fa4452"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/exportcliptourlinprogress.json": {
+      "hash": "4d5dea7f1e37d9ea313be95aa435b9bdc0f3f262806cc74a1847543a0b408ed9",
+      "last_checked": "2025-06-06T06:11:08.715811",
+      "status": "unchanged",
+      "etag": "W/\"2296522a9f9a8ed9442fefc3dea568a8\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/exportcliptourlinprogress": {
+      "hash": "4d5dea7f1e37d9ea313be95aa435b9bdc0f3f262806cc74a1847543a0b408ed9",
+      "last_checked": "2025-06-06T06:11:08.715811",
+      "status": "unchanged",
+      "etag": "41918236d55aeac370a33901576f9873"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/init(rawvalue:).json": {
+      "hash": "19437e09fb3a4d1a4c74ee702b725b005847bc3d994d2fd4e4be1d8bfc85ebf6",
+      "last_checked": "2025-06-06T06:11:09.162947",
+      "status": "unchanged",
+      "etag": "W/\"c138a2a3d91fdc23a15e40ed2f050507\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/init(rawvalue:)": {
+      "hash": "19437e09fb3a4d1a4c74ee702b725b005847bc3d994d2fd4e4be1d8bfc85ebf6",
+      "last_checked": "2025-06-06T06:11:09.162947",
+      "status": "unchanged",
+      "etag": "c0aaf5fcb9dd4c4d1d021df1d1eb1e22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/equatable-implementations.json": {
+      "hash": "02537620c23f9563cda01222b7404f9c18e411773d91853922f5e10f1c062634",
+      "last_checked": "2025-06-06T06:11:09.610163",
+      "status": "unchanged",
+      "etag": "W/\"014532f4710a7e5fa045005a10205e55\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/equatable-implementations": {
+      "hash": "02537620c23f9563cda01222b7404f9c18e411773d91853922f5e10f1c062634",
+      "last_checked": "2025-06-06T06:11:09.610163",
+      "status": "unchanged",
+      "etag": "6db5f6ba5d3258bd87d140fe59a6a853"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/rawrepresentable-implementations.json": {
+      "hash": "38e82154e93ca403046d2d396cb383faf694d485f643317db369fe757ad69bdb",
+      "last_checked": "2025-06-06T06:11:10.000153",
+      "status": "unchanged",
+      "etag": "W/\"6b108172b01f6ba123a3fb4ba18ec7af\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/rawrepresentable-implementations": {
+      "hash": "38e82154e93ca403046d2d396cb383faf694d485f643317db369fe757ad69bdb",
+      "last_checked": "2025-06-06T06:11:10.000153",
+      "status": "unchanged",
+      "etag": "1a69be4796a2b5396742a133104ae30f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrordomain.json": {
+      "hash": "fc2bb82873a299ee94bbdf2083f9f9dedf243b183288c4b7cae9b0480ca88917",
+      "last_checked": "2025-06-06T06:11:10.408047",
+      "status": "unchanged",
+      "etag": "W/\"7993d2896e52dab2f694bec4c8103037\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrordomain": {
+      "hash": "fc2bb82873a299ee94bbdf2083f9f9dedf243b183288c4b7cae9b0480ca88917",
+      "last_checked": "2025-06-06T06:11:10.408047",
+      "status": "unchanged",
+      "etag": "48c2171d3bf570af1d1d266e20e92530"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/scstreamerrordomain.json": {
+      "hash": "a4c98b0d06a04bf98091702e8713f96ad431b92b004baae91b63cedc83cf585f",
+      "last_checked": "2025-06-06T06:11:10.796715",
+      "status": "unchanged",
+      "etag": "W/\"bb63a7ce3b7042bc54598a7b9dd71fd0\""
+    },
+    "https://developer.apple.com/documentation/replaykit/scstreamerrordomain": {
+      "hash": "a4c98b0d06a04bf98091702e8713f96ad431b92b004baae91b63cedc83cf585f",
+      "last_checked": "2025-06-06T06:11:10.796715",
+      "status": "unchanged",
+      "etag": "0bee4db16c0e76dc11a1d53d6784ccf2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/back.json": {
+      "hash": "b4192fec69858e9dd17b7d0b2fa6a91ad2216d795acc695b250873d0b14d70ee",
+      "last_checked": "2025-06-06T06:11:11.194701",
+      "status": "unchanged",
+      "etag": "W/\"f2235ee785937a123f36214d13d625a2\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpcameraposition/back": {
+      "hash": "b4192fec69858e9dd17b7d0b2fa6a91ad2216d795acc695b250873d0b14d70ee",
+      "last_checked": "2025-06-06T06:11:11.194701",
+      "status": "unchanged",
+      "etag": "d4f18f2a63a27de15cf135067ac30e2a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/front.json": {
+      "hash": "96716e813a7f102f8e45c6b3a47313eda6e68e7079a76fda85818688a1f9e398",
+      "last_checked": "2025-06-06T06:11:11.590729",
+      "status": "unchanged",
+      "etag": "W/\"8e1b153cb11bf87c3b6e5c56ee468a95\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpcameraposition/front": {
+      "hash": "96716e813a7f102f8e45c6b3a47313eda6e68e7079a76fda85818688a1f9e398",
+      "last_checked": "2025-06-06T06:11:11.590729",
+      "status": "unchanged",
+      "etag": "27cb2284005222f7bbe0e4c68b3b5f90"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/init(rawvalue:).json": {
+      "hash": "994eda93abc17ad9c5dcb79befdcab6094bc7dd4ddc4bf4def6e9cda552cae88",
+      "last_checked": "2025-06-06T06:11:11.989680",
+      "status": "unchanged",
+      "etag": "W/\"61cb5163e2a1e46ea84de7b0498e9fd7\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpcameraposition/init(rawvalue:)": {
+      "hash": "994eda93abc17ad9c5dcb79befdcab6094bc7dd4ddc4bf4def6e9cda552cae88",
+      "last_checked": "2025-06-06T06:11:11.989680",
+      "status": "unchanged",
+      "etag": "6a714ef2e3385770d2c993926ee6b4ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/equatable-implementations.json": {
+      "hash": "11d3de598a9d2d2b111e5a8755d790ff396330c1fc6b8551a6c472cc799f1967",
+      "last_checked": "2025-06-06T06:11:12.402039",
+      "status": "unchanged",
+      "etag": "W/\"8ebb9bb0346939eb7c75d85f62fc708e\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpcameraposition/equatable-implementations": {
+      "hash": "11d3de598a9d2d2b111e5a8755d790ff396330c1fc6b8551a6c472cc799f1967",
+      "last_checked": "2025-06-06T06:11:12.402039",
+      "status": "unchanged",
+      "etag": "e2cf7cfc74cebcec60b2cf7ef2ba77f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/rawrepresentable-implementations.json": {
+      "hash": "5879974eba883878cfb3ef3359a6935bc1ae7b517ca5455b0158370601e8fcb9",
+      "last_checked": "2025-06-06T06:11:12.821384",
+      "status": "unchanged",
+      "etag": "W/\"527fe34992048ebc3948fbf247aa8cd0\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpcameraposition/rawrepresentable-implementations": {
+      "hash": "5879974eba883878cfb3ef3359a6935bc1ae7b517ca5455b0158370601e8fcb9",
+      "last_checked": "2025-06-06T06:11:12.821384",
+      "status": "unchanged",
+      "etag": "7616b3465945a6e6c37cbde6fd759599"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorderdelegate/screenrecorder(_:didstoprecordingwith:error:).json": {
+      "hash": "9999597b0a2f2798bfff0e3e724305a34d8dc34b7b5842c99c08c9901e7fc8fe",
+      "last_checked": "2025-06-06T06:11:13.205822",
+      "status": "unchanged",
+      "etag": "W/\"5308d4ad6617fe52375c1f29e10cb12c\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorderdelegate/screenrecorder(_:didstoprecordingwith:error:)": {
+      "hash": "9999597b0a2f2798bfff0e3e724305a34d8dc34b7b5842c99c08c9901e7fc8fe",
+      "last_checked": "2025-06-06T06:11:13.205822",
+      "status": "unchanged",
+      "etag": "9a82fd7759dc18ba7b11a33e39f4ec64"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorderdelegate/screenrecorderdidchangeavailability(_:).json": {
+      "hash": "9cebc807fff8b0f441d2e1547213a72c7e20d70f6adc9ea2c1076c4b07bed063",
+      "last_checked": "2025-06-06T06:11:13.644756",
+      "status": "unchanged",
+      "etag": "W/\"8d48c31bd6e264ff6b42de91f9bd4357\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorderdelegate/screenrecorderdidchangeavailability(_:)": {
+      "hash": "9cebc807fff8b0f441d2e1547213a72c7e20d70f6adc9ea2c1076c4b07bed063",
+      "last_checked": "2025-06-06T06:11:13.644756",
+      "status": "unchanged",
+      "etag": "6869922520387723bcdbba7c337b5a02"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorderdelegate/screenrecorder(_:didstoprecordingwitherror:previewviewcontroller:).json": {
+      "hash": "dbd4dae7a7355980eb515b266ac3e91274078c6e702716f57c1930a6997d0d53",
+      "last_checked": "2025-06-06T06:11:14.085245",
+      "status": "unchanged",
+      "etag": "W/\"1bf651c2fe2ac2aab41d5d99fe2e188b\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorderdelegate/screenrecorder(_:didstoprecordingwitherror:previewviewcontroller:)": {
+      "hash": "dbd4dae7a7355980eb515b266ac3e91274078c6e702716f57c1930a6997d0d53",
+      "last_checked": "2025-06-06T06:11:14.085245",
+      "status": "unchanged",
+      "etag": "8fe8ad0a9db6507fa6ede04d342dcec5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/audioapp.json": {
+      "hash": "aa2247e88e18f0b878ec858a713f66074c825a80d986cc20873630b3b814c3a8",
+      "last_checked": "2025-06-06T06:11:14.482437",
+      "status": "unchanged",
+      "etag": "W/\"ff911b43a9af7b4f3023f62234f316fa\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsamplebuffertype/audioapp": {
+      "hash": "aa2247e88e18f0b878ec858a713f66074c825a80d986cc20873630b3b814c3a8",
+      "last_checked": "2025-06-06T06:11:14.482437",
+      "status": "unchanged",
+      "etag": "1923632ccf267d341a5f962832a45217"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/audiomic.json": {
+      "hash": "ea9483e7b5f2eb4f657a1a7918ecadcced2bf7aeaba0a5095dbf97ffbcb07118",
+      "last_checked": "2025-06-06T06:11:14.887475",
+      "status": "unchanged",
+      "etag": "W/\"00569378cad9086ebf5fdeff198ee1e1\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsamplebuffertype/audiomic": {
+      "hash": "ea9483e7b5f2eb4f657a1a7918ecadcced2bf7aeaba0a5095dbf97ffbcb07118",
+      "last_checked": "2025-06-06T06:11:14.887475",
+      "status": "unchanged",
+      "etag": "41b4aa44d907011489efab71f7cdadde"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/video.json": {
+      "hash": "7a1495d43dfc81f8df9e289d49f134841fd3561b1c9d6f7e79f2f32d3d64369a",
+      "last_checked": "2025-06-06T06:11:15.341281",
+      "status": "unchanged",
+      "etag": "W/\"80ca8bcabd2d13d600d32275ff710f6d\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsamplebuffertype/video": {
+      "hash": "7a1495d43dfc81f8df9e289d49f134841fd3561b1c9d6f7e79f2f32d3d64369a",
+      "last_checked": "2025-06-06T06:11:15.341281",
+      "status": "unchanged",
+      "etag": "f954806d0751ab347a0c3d040f9b6e2b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/init(rawvalue:).json": {
+      "hash": "a1a37bed97fc8b5ae52047171f8d7f97a5e54888982f9c491221e7ab90c2061d",
+      "last_checked": "2025-06-06T06:11:15.746711",
+      "status": "unchanged",
+      "etag": "W/\"9c9f2bdd82f7b764212441366d74386c\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsamplebuffertype/init(rawvalue:)": {
+      "hash": "a1a37bed97fc8b5ae52047171f8d7f97a5e54888982f9c491221e7ab90c2061d",
+      "last_checked": "2025-06-06T06:11:15.746711",
+      "status": "unchanged",
+      "etag": "a338ab22539a23d41c66122f9f9037c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/equatable-implementations.json": {
+      "hash": "21d4f722b4193af47cc44d9a796cf6c4a0f25c1d8e18977db2b5071b316e15fe",
+      "last_checked": "2025-06-06T06:11:16.123794",
+      "status": "unchanged",
+      "etag": "W/\"de33851460bea549d7d390a89b90431d\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsamplebuffertype/equatable-implementations": {
+      "hash": "21d4f722b4193af47cc44d9a796cf6c4a0f25c1d8e18977db2b5071b316e15fe",
+      "last_checked": "2025-06-06T06:11:16.123794",
+      "status": "unchanged",
+      "etag": "cdfc91f846076afcfd6c801efe539dcf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/rawrepresentable-implementations.json": {
+      "hash": "5cccc8cf3a4f526caaa5da37ae2f854bdc09d15a83c5f5eb2a88c6cf74f265ef",
+      "last_checked": "2025-06-06T06:11:16.510686",
+      "status": "unchanged",
+      "etag": "W/\"9419cce72a52db37345507ba0ece467c\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsamplebuffertype/rawrepresentable-implementations": {
+      "hash": "5cccc8cf3a4f526caaa5da37ae2f854bdc09d15a83c5f5eb2a88c6cf74f265ef",
+      "last_checked": "2025-06-06T06:11:16.510686",
+      "status": "unchanged",
+      "etag": "1ff074010451b12fc57aa409e54b25cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/preview.json": {
+      "hash": "be327d00502602f0800afe9fe536f04fd916a3c484604de5e83a95a65e5cfca6",
+      "last_checked": "2025-06-06T06:11:16.939712",
+      "status": "unchanged",
+      "etag": "W/\"2ebc11989baf132624fb28e90ac6b125\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollermode/preview": {
+      "hash": "be327d00502602f0800afe9fe536f04fd916a3c484604de5e83a95a65e5cfca6",
+      "last_checked": "2025-06-06T06:11:16.939712",
+      "status": "unchanged",
+      "etag": "a023e0c21bebe11701a62583728c9ef3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/share.json": {
+      "hash": "312f0f7d2bf8234e503690368f4caf5230dd312b5bfe732c98baeb73373f97a6",
+      "last_checked": "2025-06-06T06:11:17.333263",
+      "status": "unchanged",
+      "etag": "W/\"24d13e95daa0304010895442e740bdd7\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollermode/share": {
+      "hash": "312f0f7d2bf8234e503690368f4caf5230dd312b5bfe732c98baeb73373f97a6",
+      "last_checked": "2025-06-06T06:11:17.333263",
+      "status": "unchanged",
+      "etag": "f01872342c8c0e741e5ed45c937e43f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/init(rawvalue:).json": {
+      "hash": "c51663f73c55f4dad28c8b167afb04060a9d7542a28c2e7f7a50fab07b9de1f4",
+      "last_checked": "2025-06-06T06:11:17.735110",
+      "status": "unchanged",
+      "etag": "W/\"1349832f3d71c79afef227237a0eaef3\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollermode/init(rawvalue:)": {
+      "hash": "c51663f73c55f4dad28c8b167afb04060a9d7542a28c2e7f7a50fab07b9de1f4",
+      "last_checked": "2025-06-06T06:11:17.735110",
+      "status": "unchanged",
+      "etag": "ee936458115318411fcb4931b32995ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/equatable-implementations.json": {
+      "hash": "b4e0fde3aa50fb7bebe75888a7d3107410227bdb5ec07bdb51e84b225e320f6d",
+      "last_checked": "2025-06-06T06:11:18.126476",
+      "status": "unchanged",
+      "etag": "W/\"d7abd89618237f69b38c8fd75878f127\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollermode/equatable-implementations": {
+      "hash": "b4e0fde3aa50fb7bebe75888a7d3107410227bdb5ec07bdb51e84b225e320f6d",
+      "last_checked": "2025-06-06T06:11:18.126476",
+      "status": "unchanged",
+      "etag": "fcd7a7dc2a088af66f9223c84ac461e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/rawrepresentable-implementations.json": {
+      "hash": "b8d49c6f536cc3e0b762b01a4309b79574988e241525f492126ce23825e9d8d2",
+      "last_checked": "2025-06-06T06:11:18.586640",
+      "status": "unchanged",
+      "etag": "W/\"1b7608db4f4c9c7a51e84e0000bc827f\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollermode/rawrepresentable-implementations": {
+      "hash": "b8d49c6f536cc3e0b762b01a4309b79574988e241525f492126ce23825e9d8d2",
+      "last_checked": "2025-06-06T06:11:18.586640",
+      "status": "unchanged",
+      "etag": "851a0244fa539bf6c0cf0441a503324b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollerdelegate/previewcontrollerdidfinish(_:).json": {
+      "hash": "110b949175f51a6ec7b74a1e816be8289d07b87b5b491c8d49b723ba6ef44713",
+      "last_checked": "2025-06-06T06:11:19.011825",
+      "status": "unchanged",
+      "etag": "W/\"10f6a218b442d4e530b73927d66812d7\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollerdelegate/previewcontrollerdidfinish(_:)": {
+      "hash": "110b949175f51a6ec7b74a1e816be8289d07b87b5b491c8d49b723ba6ef44713",
+      "last_checked": "2025-06-06T06:11:19.011825",
+      "status": "unchanged",
+      "etag": "f70037747ac0d34b16a01ca7f1c9e3f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollerdelegate/previewcontroller(_:didfinishwithactivitytypes:).json": {
+      "hash": "6c42e266fba9987f76d2b1493e964e41ea957dc649e2922017a89d55fdaa7bdc",
+      "last_checked": "2025-06-06T06:11:19.440637",
+      "status": "unchanged",
+      "etag": "W/\"f60a0dbc668878953c5008015a5ae2c5\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollerdelegate/previewcontroller(_:didfinishwithactivitytypes:)": {
+      "hash": "6c42e266fba9987f76d2b1493e964e41ea957dc649e2922017a89d55fdaa7bdc",
+      "last_checked": "2025-06-06T06:11:19.440637",
+      "status": "unchanged",
+      "etag": "3763931804553180dd8df66007f69aa5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontrollerdelegate/broadcastcontroller(_:didfinishwitherror:).json": {
+      "hash": "5394812dac9f499b89d3508807f0837f3011021d4ae2732e4a4b6af4bb5aae54",
+      "last_checked": "2025-06-06T06:11:19.838143",
+      "status": "unchanged",
+      "etag": "W/\"0d24a300ea2bdf25c947579ee4b4f19a\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontrollerdelegate/broadcastcontroller(_:didfinishwitherror:)": {
+      "hash": "5394812dac9f499b89d3508807f0837f3011021d4ae2732e4a4b6af4bb5aae54",
+      "last_checked": "2025-06-06T06:11:19.838143",
+      "status": "unchanged",
+      "etag": "b0b0ee8c7d1f9456a0be6ec0faaaa220"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontrollerdelegate/broadcastcontroller(_:didupdateserviceinfo:).json": {
+      "hash": "97ff7199ac09ba819b8f98876a5461dfc870caea0650706d0f72cd887c597b76",
+      "last_checked": "2025-06-06T06:11:20.241808",
+      "status": "unchanged",
+      "etag": "W/\"9f4b0d25ce4480525190431fcb728995\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontrollerdelegate/broadcastcontroller(_:didupdateserviceinfo:)": {
+      "hash": "97ff7199ac09ba819b8f98876a5461dfc870caea0650706d0f72cd887c597b76",
+      "last_checked": "2025-06-06T06:11:20.241808",
+      "status": "unchanged",
+      "etag": "51ddc49320301a880875884f31617426"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontrollerdelegate/broadcastcontroller(_:didupdatebroadcast:).json": {
+      "hash": "103573110a954343f0424670ab6bba5855fbb41e2ecc2a1c054d57505c4330c7",
+      "last_checked": "2025-06-06T06:11:20.669930",
+      "status": "unchanged",
+      "etag": "W/\"ff21f1416666c63325d9be438f8d2211\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastcontrollerdelegate/broadcastcontroller(_:didupdatebroadcast:)": {
+      "hash": "103573110a954343f0424670ab6bba5855fbb41e2ecc2a1c054d57505c4330c7",
+      "last_checked": "2025-06-06T06:11:20.669930",
+      "status": "unchanged",
+      "etag": "bb4f62c7d594951e5c1b9b9315a7dada"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontrollerdelegate/broadcastactivityviewcontroller(_:didfinishwith:error:).json": {
+      "hash": "b083e2bbe920850feb3012e2874c763ee43f13cacd3b03291b2717b943925d06",
+      "last_checked": "2025-06-06T06:11:21.083723",
+      "status": "unchanged",
+      "etag": "W/\"b390e4708e2428de0fda3ca0f9293b3a\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivityviewcontrollerdelegate/broadcastactivityviewcontroller(_:didfinishwith:error:)": {
+      "hash": "b083e2bbe920850feb3012e2874c763ee43f13cacd3b03291b2717b943925d06",
+      "last_checked": "2025-06-06T06:11:21.083723",
+      "status": "unchanged",
+      "etag": "6877066109a6e94a9b55b27785b4c9a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/!=(_:_:).json": {
+      "hash": "7b545f7b5f5e17643f5841d055bd99560be3be9c2a6b94db50f02346edeb22c6",
+      "last_checked": "2025-06-06T06:11:21.508974",
+      "status": "unchanged",
+      "etag": "W/\"c4ccb844f5e1e72e13b5c436e1fbe260\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/!=(_:_:)": {
+      "hash": "7b545f7b5f5e17643f5841d055bd99560be3be9c2a6b94db50f02346edeb22c6",
+      "last_checked": "2025-06-06T06:11:21.508974",
+      "status": "unchanged",
+      "etag": "e358f381b99930a7c3681ad9653b3ca9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/hashvalue.json": {
+      "hash": "f8175f7c3bc7f184fff4d3913aa5b2da541ad03b55325f5c8f2ebdc48d7bd29b",
+      "last_checked": "2025-06-06T06:11:21.955417",
+      "status": "unchanged",
+      "etag": "W/\"19fd397d54e11076518a2937de3bad45\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/hashvalue": {
+      "hash": "f8175f7c3bc7f184fff4d3913aa5b2da541ad03b55325f5c8f2ebdc48d7bd29b",
+      "last_checked": "2025-06-06T06:11:21.955417",
+      "status": "unchanged",
+      "etag": "9547f2b63cc139db5674ec8f5ecfa776"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/hash(into:).json": {
+      "hash": "707c169858f21173e615236813cc72ac63abf66da13662e7da025ce13a0fdc94",
+      "last_checked": "2025-06-06T06:11:22.366769",
+      "status": "unchanged",
+      "etag": "W/\"e01dc1e0dfdf3551c4cae9d57de23889\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/hash(into:)": {
+      "hash": "707c169858f21173e615236813cc72ac63abf66da13662e7da025ce13a0fdc94",
+      "last_checked": "2025-06-06T06:11:22.366769",
+      "status": "unchanged",
+      "etag": "236535d9a4e93023cb48fea04d973356"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/!=(_:_:).json": {
+      "hash": "06f32eee0e76d3a4e46799db42770c11fbbefead1bb2a0b77f7494a7966d23c6",
+      "last_checked": "2025-06-06T06:11:22.813214",
+      "status": "unchanged",
+      "etag": "W/\"a358dac922c5764cac25ee065158bb7e\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpcameraposition/!=(_:_:)": {
+      "hash": "06f32eee0e76d3a4e46799db42770c11fbbefead1bb2a0b77f7494a7966d23c6",
+      "last_checked": "2025-06-06T06:11:22.813214",
+      "status": "unchanged",
+      "etag": "21888c43395e7022f1c9b69ce6f962bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/hashvalue.json": {
+      "hash": "225bd3780c980fbc7b97e0a0e5fbaa4b2bb7e4d440123d5bebe548f4c0502fb7",
+      "last_checked": "2025-06-06T06:11:23.210181",
+      "status": "unchanged",
+      "etag": "W/\"33ce9dddfd2a5eb8e02793728b0c4a28\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpcameraposition/hashvalue": {
+      "hash": "225bd3780c980fbc7b97e0a0e5fbaa4b2bb7e4d440123d5bebe548f4c0502fb7",
+      "last_checked": "2025-06-06T06:11:23.210181",
+      "status": "unchanged",
+      "etag": "15b06b84ca34e2dac82ac51f83e0eea9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/hash(into:).json": {
+      "hash": "e65912926158fec4450f333e970f6bc9fb6c2fcde6c012fa9e5fd1ddd7824e36",
+      "last_checked": "2025-06-06T06:11:23.671627",
+      "status": "unchanged",
+      "etag": "W/\"c65fea0c05f683117095be9caadd6e6b\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpcameraposition/hash(into:)": {
+      "hash": "e65912926158fec4450f333e970f6bc9fb6c2fcde6c012fa9e5fd1ddd7824e36",
+      "last_checked": "2025-06-06T06:11:23.671627",
+      "status": "unchanged",
+      "etag": "cbb63bcb68739135527aa51ff83e0ce4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/!=(_:_:).json": {
+      "hash": "fa62f685170758e71fd888cff719f87c1db66a045b8ced53b527954f5dd6bd9f",
+      "last_checked": "2025-06-06T06:11:24.083446",
+      "status": "unchanged",
+      "etag": "W/\"da3355fde52113654cdc81a250506aa6\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsamplebuffertype/!=(_:_:)": {
+      "hash": "fa62f685170758e71fd888cff719f87c1db66a045b8ced53b527954f5dd6bd9f",
+      "last_checked": "2025-06-06T06:11:24.083446",
+      "status": "unchanged",
+      "etag": "0181387a1e50137b3480d3e0c56ae094"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/hashvalue.json": {
+      "hash": "b347f5f5a35d3ae5c02f8e76d8366c49c78d2daf067440fa512a4ddd40b1ab0c",
+      "last_checked": "2025-06-06T06:11:24.501200",
+      "status": "unchanged",
+      "etag": "W/\"121e2e1bd85fdd76439354cc86524063\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsamplebuffertype/hashvalue": {
+      "hash": "b347f5f5a35d3ae5c02f8e76d8366c49c78d2daf067440fa512a4ddd40b1ab0c",
+      "last_checked": "2025-06-06T06:11:24.501200",
+      "status": "unchanged",
+      "etag": "af970d9beb6903009dced8d274adcd63"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/hash(into:).json": {
+      "hash": "fff354e514a76fbf28960942ef8fd864ca6549c3561ec22320ade53168900634",
+      "last_checked": "2025-06-06T06:11:24.868702",
+      "status": "unchanged",
+      "etag": "W/\"592259504a380c8b25c9d69fdbfc1ad0\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpsamplebuffertype/hash(into:)": {
+      "hash": "fff354e514a76fbf28960942ef8fd864ca6549c3561ec22320ade53168900634",
+      "last_checked": "2025-06-06T06:11:24.868702",
+      "status": "unchanged",
+      "etag": "9bd33f258af2c77fe4c218b0ee29111c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/!=(_:_:).json": {
+      "hash": "be1cba2298e776720b411c2283a08afb2dd6d68f8c394d1faf7dcefb89f596b0",
+      "last_checked": "2025-06-06T06:11:25.267287",
+      "status": "unchanged",
+      "etag": "W/\"1bb07d3de3ebaf7e07ebfe9e71e00d7d\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollermode/!=(_:_:)": {
+      "hash": "be1cba2298e776720b411c2283a08afb2dd6d68f8c394d1faf7dcefb89f596b0",
+      "last_checked": "2025-06-06T06:11:25.267287",
+      "status": "unchanged",
+      "etag": "b7ca7390cf970192cf0da1fd7c99ceda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/hashvalue.json": {
+      "hash": "c8a988a274fefe0fa1d10fd9c7650e8b24b26d22187f2cd464d6eb9db7a5a0c5",
+      "last_checked": "2025-06-06T06:11:25.680487",
+      "status": "unchanged",
+      "etag": "W/\"21142124652af1a6021b1e5b4d632695\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollermode/hashvalue": {
+      "hash": "c8a988a274fefe0fa1d10fd9c7650e8b24b26d22187f2cd464d6eb9db7a5a0c5",
+      "last_checked": "2025-06-06T06:11:25.680487",
+      "status": "unchanged",
+      "etag": "065bbba45c3c6d608dda3c791d1402c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/hash(into:).json": {
+      "hash": "0dafa155ba79ab252bf4664d0e867c17715d426fc973486ec2f717468b9d0c01",
+      "last_checked": "2025-06-06T06:11:26.079845",
+      "status": "unchanged",
+      "etag": "W/\"bef8491f7e7314da9bd7b306e3ba5ad5\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollermode/hash(into:)": {
+      "hash": "0dafa155ba79ab252bf4664d0e867c17715d426fc973486ec2f717468b9d0c01",
+      "last_checked": "2025-06-06T06:11:26.079845",
+      "status": "unchanged",
+      "etag": "7fb9055d6f9718030303c49d59779daf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/ReplayKit/rpsystembroadcastpickerview.json": {
+      "hash": "19ca41940f50387d554ff1f27eceba1548ac0edbb762170690cbfd5cb282fc52",
+      "last_checked": "2025-06-06T19:38:26.121683",
+      "status": "new",
+      "etag": "W/\"c105c0ebb4d438fbccf61d8fa74eee05\""
+    },
+    "https://developer.apple.com/documentation/ReplayKit/rpsystembroadcastpickerview": {
+      "hash": "5b8a2d989ea160957b0651415ff7e487e7e741792820277f856041c15fde63e2",
+      "last_checked": "2025-06-06T19:38:26.121938",
+      "status": "unchanged",
+      "etag": "709d71b3b81c37883f66640186cf2f44"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontroller/load(withpreferredextension:handler:).json": {
+      "hash": "28135239a9875c099c3b60da5c3a294e9bb5657f7f3b5e812cbdca0e6c3ee82a",
+      "last_checked": "2025-06-06T20:51:04.010736",
+      "status": "unchanged",
+      "etag": "W/\"8d72ec10a650dabaca56a9540da30399\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivityviewcontroller/load(withpreferredextension:handler:)": {
+      "hash": "28135239a9875c099c3b60da5c3a294e9bb5657f7f3b5e812cbdca0e6c3ee82a",
+      "last_checked": "2025-06-06T20:51:04.010736",
+      "status": "unchanged",
+      "etag": "71b526b6473f8543d932f893456f0a28"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontroller/load(handler:).json": {
+      "hash": "ea3b3a772acfb13161f4884a0e8387413bbbae137ab38f464712df4facd6debb",
+      "last_checked": "2025-06-06T20:51:04.524481",
+      "status": "unchanged",
+      "etag": "W/\"4741ccb6720d82dabd3fe86ba15f0441\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpbroadcastactivityviewcontroller/load(handler:)": {
+      "hash": "ea3b3a772acfb13161f4884a0e8387413bbbae137ab38f464712df4facd6debb",
+      "last_checked": "2025-06-06T20:51:04.524481",
+      "status": "unchanged",
+      "etag": "42910ee0a580bd1b5eac2a873c67a631"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/iscameraenabled.json": {
+      "hash": "3ed194c36c261f7a5db735113f2f64a64a1280f4a55d65c9422e4e595baeb52f",
+      "last_checked": "2025-06-06T20:51:05.041035",
+      "status": "unchanged",
+      "etag": "W/\"e64071fa001cbf2d53c23d9c137e9ad7\""
+    },
+    "https://developer.apple.com/documentation/replaykit/rpscreenrecorder/iscameraenabled": {
+      "hash": "3ed194c36c261f7a5db735113f2f64a64a1280f4a55d65c9422e4e595baeb52f",
+      "last_checked": "2025-06-06T20:51:05.041035",
+      "status": "unchanged",
+      "etag": "d52e3186e2968032cc238eed4265e337"
+    }
+  }
+}

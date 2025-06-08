@@ -16,8 +16,6 @@ The AddressBookUI framework provides controllers that facilitate displaying, edi
 
 > ❗ **Important**:  Do not use the AddressBookUI framework in iOS 9 and later. Use the APIs defined in the [`Contacts UI`](https://developer.apple.com/documentation/ContactsUI) framework instead.
 
- Do not use the AddressBookUI framework in iOS 9 and later. Use the APIs defined in the [`Contacts UI`](https://developer.apple.com/documentation/ContactsUI) framework instead.
-
 ## Topics
 
 ### People Picker

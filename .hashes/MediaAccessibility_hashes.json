@@ -1,0 +1,939 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T17:36:04.673864",
+    "total_pages": 169,
+    "etags_collected": "2025-06-07T17:36:04.673880"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/MediaAccessibility.json": {
+      "hash": "ca411479b1a1d1439edb8fa6a5a44bb5503618b3974c181e2deac6b3d77d1904",
+      "last_checked": "2025-06-06T03:07:24.598573",
+      "status": "new",
+      "etag": "W/\"9dd6f89ccd3358ca51c49b20838b4de3\""
+    },
+    "https://developer.apple.com/documentation/MediaAccessibility": {
+      "hash": "c0eb5c9d982434d2a4d98247add2809acc0268c5f5598f975bb4f7c866ee7301",
+      "last_checked": "2025-06-06T03:07:24.598785",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility.json": {
+      "hash": "c0eb5c9d982434d2a4d98247add2809acc0268c5f5598f975bb4f7c866ee7301",
+      "last_checked": "2025-06-06T03:07:24.598785",
+      "status": "unchanged",
+      "etag": "W/\"9dd6f89ccd3358ca51c49b20838b4de3\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/captions.json": {
+      "hash": "82365e30543e8307996023165108483074f3e47aa571d02248545f090e3677b0",
+      "last_checked": "2025-06-06T03:07:25.444117",
+      "status": "unchanged",
+      "etag": "W/\"c04ad3e054841a56b90428053c64939c\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/captions": {
+      "hash": "82365e30543e8307996023165108483074f3e47aa571d02248545f090e3677b0",
+      "last_checked": "2025-06-06T03:07:25.444117",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/flashing-lights.json": {
+      "hash": "320653323e78a9ee5649f8453410a46ef2765621c473771e90cdc2e1a8bc2141",
+      "last_checked": "2025-06-06T03:07:26.127957",
+      "status": "unchanged",
+      "etag": "W/\"ec3b10cc1be6f19d280687f3746f7538\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/flashing-lights": {
+      "hash": "320653323e78a9ee5649f8453410a46ef2765621c473771e90cdc2e1a8bc2141",
+      "last_checked": "2025-06-06T03:07:26.127957",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/music-haptics.json": {
+      "hash": "43613539e28f9170bdbf64c7244b0a22740c6f76b4740010440f58e763a92b61",
+      "last_checked": "2025-06-06T03:07:26.688817",
+      "status": "unchanged",
+      "etag": "W/\"06ec24b30b41e90672fcaad0be6a1d10\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/music-haptics": {
+      "hash": "43613539e28f9170bdbf64c7244b0a22740c6f76b4740010440f58e763a92b61",
+      "last_checked": "2025-06-06T03:07:26.688817",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearanceiscustomized(_:).json": {
+      "hash": "22962662bede9c1e1c22209172bddbda10c7435c09770ee3fb4c292aa05bac53",
+      "last_checked": "2025-06-06T03:07:27.343596",
+      "status": "unchanged",
+      "etag": "W/\"d6c89e6012e426143cd4825296936f88\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearanceiscustomized(_:)": {
+      "hash": "22962662bede9c1e1c22209172bddbda10c7435c09770ee3fb4c292aa05bac53",
+      "last_checked": "2025-06-06T03:07:27.343596",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/kmacaptionappearancesettingschangednotification.json": {
+      "hash": "8ebc73bd1824fca7a9d8dfe2b9086fa53461b16c7d4652bd83264555910e098f",
+      "last_checked": "2025-06-06T03:07:27.891295",
+      "status": "unchanged",
+      "etag": "W/\"351edc30b6ff45778d2e2a25d43c95f3\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/kmacaptionappearancesettingschangednotification": {
+      "hash": "8ebc73bd1824fca7a9d8dfe2b9086fa53461b16c7d4652bd83264555910e098f",
+      "last_checked": "2025-06-06T03:07:27.891295",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancediddisplaycaptions(_:).json": {
+      "hash": "97219f012e59858360580b2a46bae010f5b23da7e5e226d37c3c1195fdc42789",
+      "last_checked": "2025-06-06T03:07:28.421557",
+      "status": "unchanged",
+      "etag": "W/\"a38da3356b4729db42497b2141142ab0\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancediddisplaycaptions(_:)": {
+      "hash": "97219f012e59858360580b2a46bae010f5b23da7e5e226d37c3c1195fdc42789",
+      "last_checked": "2025-06-06T03:07:28.421557",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancecopypreferredcaptioningmediacharacteristics(_:).json": {
+      "hash": "4dee4562b1745006a499a8bd0edd84c7b8bd15ae9e46bc76836c22fdab495cd9",
+      "last_checked": "2025-06-06T03:07:28.814437",
+      "status": "unchanged",
+      "etag": "W/\"386fd308d97613e48337f2df334e7c82\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancecopypreferredcaptioningmediacharacteristics(_:)": {
+      "hash": "4dee4562b1745006a499a8bd0edd84c7b8bd15ae9e46bc76836c22fdab495cd9",
+      "last_checked": "2025-06-06T03:07:28.814437",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancegetdisplaytype(_:).json": {
+      "hash": "baafcfa05f57d19b5435d8d2c523482b57e23429f34711ba38d2351715d3d08f",
+      "last_checked": "2025-06-06T03:07:29.365153",
+      "status": "unchanged",
+      "etag": "W/\"e181b00d579f2563e4af426ebfaa4471\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancegetdisplaytype(_:)": {
+      "hash": "baafcfa05f57d19b5435d8d2c523482b57e23429f34711ba38d2351715d3d08f",
+      "last_checked": "2025-06-06T03:07:29.365153",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancesetdisplaytype(_:_:).json": {
+      "hash": "ff7e59fa7f0b1d1664e9df3280bfadf7d7c107b79aa2d9f69009c69464511233",
+      "last_checked": "2025-06-06T03:07:29.786402",
+      "status": "unchanged",
+      "etag": "W/\"49d4d749930bb2657a23a2df17d9ee2a\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancesetdisplaytype(_:_:)": {
+      "hash": "ff7e59fa7f0b1d1664e9df3280bfadf7d7c107b79aa2d9f69009c69464511233",
+      "last_checked": "2025-06-06T03:07:29.786402",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearanceaddselectedlanguage(_:_:).json": {
+      "hash": "ae5d03befd6de4fc4be4c1773450e1609a0675ca4d364fc4764e7e00ab46cc47",
+      "last_checked": "2025-06-06T03:07:30.342133",
+      "status": "unchanged",
+      "etag": "W/\"311752dc00d2817fdba9781e4939eadc\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearanceaddselectedlanguage(_:_:)": {
+      "hash": "ae5d03befd6de4fc4be4c1773450e1609a0675ca4d364fc4764e7e00ab46cc47",
+      "last_checked": "2025-06-06T03:07:30.342133",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancecopyselectedlanguages(_:).json": {
+      "hash": "f70a8de8d91d11ef154e969002a93ac92c478febcba95f87f9ed321e30ce3da7",
+      "last_checked": "2025-06-06T03:07:30.757615",
+      "status": "unchanged",
+      "etag": "W/\"602d878ff00112709eb3dd84ce55c5fe\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancecopyselectedlanguages(_:)": {
+      "hash": "f70a8de8d91d11ef154e969002a93ac92c478febcba95f87f9ed321e30ce3da7",
+      "last_checked": "2025-06-06T03:07:30.757615",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancecopyfontdescriptorforstyle(_:_:_:).json": {
+      "hash": "49d43f0b07ece2408224717b2d4f1855650107ab8507c2f3dbbd3c951b512669",
+      "last_checked": "2025-06-06T03:07:31.274729",
+      "status": "unchanged",
+      "etag": "W/\"4baab862079a38d1aadfa89e12b8b86c\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancecopyfontdescriptorforstyle(_:_:_:)": {
+      "hash": "49d43f0b07ece2408224717b2d4f1855650107ab8507c2f3dbbd3c951b512669",
+      "last_checked": "2025-06-06T03:07:31.274729",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancecopyforegroundcolor(_:_:).json": {
+      "hash": "2a14f993aa9986751cc244c3504054985250e57c640c10d53fa0493bcaac80be",
+      "last_checked": "2025-06-06T03:07:31.718356",
+      "status": "unchanged",
+      "etag": "W/\"5d69b7324e298d8a7fd16afb90d39479\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancecopyforegroundcolor(_:_:)": {
+      "hash": "2a14f993aa9986751cc244c3504054985250e57c640c10d53fa0493bcaac80be",
+      "last_checked": "2025-06-06T03:07:31.718356",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancegetforegroundopacity(_:_:).json": {
+      "hash": "b9bb3ab6c2c7d31d2428a020940035a72e49c981ff4cb1ae63abaf89d683775f",
+      "last_checked": "2025-06-06T03:07:32.171600",
+      "status": "unchanged",
+      "etag": "W/\"af824cf3f3f2f7689bbb3f733c06be51\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancegetforegroundopacity(_:_:)": {
+      "hash": "b9bb3ab6c2c7d31d2428a020940035a72e49c981ff4cb1ae63abaf89d683775f",
+      "last_checked": "2025-06-06T03:07:32.171600",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancegetrelativecharactersize(_:_:).json": {
+      "hash": "0dd07323b4dc82207ee629f964bc8bbe0f2d0171309bfba921861168d7acbea2",
+      "last_checked": "2025-06-06T03:07:32.626237",
+      "status": "unchanged",
+      "etag": "W/\"d009e8aa6902b52cf31857e5c13966ec\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancegetrelativecharactersize(_:_:)": {
+      "hash": "0dd07323b4dc82207ee629f964bc8bbe0f2d0171309bfba921861168d7acbea2",
+      "last_checked": "2025-06-06T03:07:32.626237",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancegettextedgestyle(_:_:).json": {
+      "hash": "8bf3392ad177d2ad1392f585935cd1e8cfd2b3b6269e190231f118901e673501",
+      "last_checked": "2025-06-06T03:07:33.039849",
+      "status": "unchanged",
+      "etag": "W/\"f4ea5487f6a1da57cda5e6ee8232aedb\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancegettextedgestyle(_:_:)": {
+      "hash": "8bf3392ad177d2ad1392f585935cd1e8cfd2b3b6269e190231f118901e673501",
+      "last_checked": "2025-06-06T03:07:33.039849",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancecopybackgroundcolor(_:_:).json": {
+      "hash": "17fe828e8fd63555c41c279aafb2522ca598975d882c5c58a651019024ea2abf",
+      "last_checked": "2025-06-06T03:07:33.457103",
+      "status": "unchanged",
+      "etag": "W/\"2fb28e7f22c8295f99d0090c54062eb3\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancecopybackgroundcolor(_:_:)": {
+      "hash": "17fe828e8fd63555c41c279aafb2522ca598975d882c5c58a651019024ea2abf",
+      "last_checked": "2025-06-06T03:07:33.457103",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancegetbackgroundopacity(_:_:).json": {
+      "hash": "432488c39aaadbe6ac0480ef4bab5fbd427b93d35799d1e9158b4e0d3304b9a6",
+      "last_checked": "2025-06-06T03:07:33.903771",
+      "status": "unchanged",
+      "etag": "W/\"357ab6b78da0cf78d637091b1a8ce7c3\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancegetbackgroundopacity(_:_:)": {
+      "hash": "432488c39aaadbe6ac0480ef4bab5fbd427b93d35799d1e9158b4e0d3304b9a6",
+      "last_checked": "2025-06-06T03:07:33.903771",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancecopywindowcolor(_:_:).json": {
+      "hash": "3d26f71b52e78857c0c2543f7ac6f4bef025698e9c82f7a7a630c8a13f28418d",
+      "last_checked": "2025-06-06T03:07:34.357553",
+      "status": "unchanged",
+      "etag": "W/\"b92d4fde163d63453c758dfdfefc1346\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancecopywindowcolor(_:_:)": {
+      "hash": "3d26f71b52e78857c0c2543f7ac6f4bef025698e9c82f7a7a630c8a13f28418d",
+      "last_checked": "2025-06-06T03:07:34.357553",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancegetwindowopacity(_:_:).json": {
+      "hash": "807788101c6fbc7ce82853d89471abf3f3b17728243061fb79e2fee9bf53e2a1",
+      "last_checked": "2025-06-06T03:07:34.778734",
+      "status": "unchanged",
+      "etag": "W/\"0a5ef24f7dd019467c26c34c2a9e772e\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancegetwindowopacity(_:_:)": {
+      "hash": "807788101c6fbc7ce82853d89471abf3f3b17728243061fb79e2fee9bf53e2a1",
+      "last_checked": "2025-06-06T03:07:34.778734",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancegetwindowroundedcornerradius(_:_:).json": {
+      "hash": "1edf785bc7530e0e93b2e63d7a9d4b38278804bf40b948bd88c42fe1e1291424",
+      "last_checked": "2025-06-06T03:07:35.179254",
+      "status": "unchanged",
+      "etag": "W/\"6303aafc051a6d8298e527b4a08b7b03\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancegetwindowroundedcornerradius(_:_:)": {
+      "hash": "1edf785bc7530e0e93b2e63d7a9d4b38278804bf40b948bd88c42fe1e1291424",
+      "last_checked": "2025-06-06T03:07:35.179254",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maimagecaptioningcopycaption(_:_:).json": {
+      "hash": "a4aa5803d9919dc4456ddd6f6e7c51565c47756516d889415e740a3bf44f1922",
+      "last_checked": "2025-06-06T03:07:35.618006",
+      "status": "unchanged",
+      "etag": "W/\"762383ff18d27839c7b5362c2c7425d7\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maimagecaptioningcopycaption(_:_:)": {
+      "hash": "a4aa5803d9919dc4456ddd6f6e7c51565c47756516d889415e740a3bf44f1922",
+      "last_checked": "2025-06-06T03:07:35.618006",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maimagecaptioningsetcaption(_:_:_:).json": {
+      "hash": "3efa3d6f5bc9f5fa731b4ee19a8dde36e876f8732d9615d12c93ae00a4347499",
+      "last_checked": "2025-06-06T03:07:36.050973",
+      "status": "unchanged",
+      "etag": "W/\"998c5ab88e9fe7686d40b5f014a76cf5\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maimagecaptioningsetcaption(_:_:_:)": {
+      "hash": "3efa3d6f5bc9f5fa731b4ee19a8dde36e876f8732d9615d12c93ae00a4347499",
+      "last_checked": "2025-06-06T03:07:36.050973",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maimagecaptioningcopymetadatatagpath().json": {
+      "hash": "2b44c1c4b67c72bf3cf9f2acd8a1c8ec47b246be3a720c5d7fd5c70be0deb9f3",
+      "last_checked": "2025-06-06T03:07:36.468101",
+      "status": "unchanged",
+      "etag": "W/\"fb77ea6b8dea272434bd906104a7576a\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maimagecaptioningcopymetadatatagpath()": {
+      "hash": "2b44c1c4b67c72bf3cf9f2acd8a1c8ec47b246be3a720c5d7fd5c70be0deb9f3",
+      "last_checked": "2025-06-06T03:07:36.468101",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/kmaaudiblemediasettingschangednotification.json": {
+      "hash": "95f36f57ba11d4867623d00bd04a3c5ab67646c4923f19e325232f7ae33acce9",
+      "last_checked": "2025-06-06T03:07:36.882776",
+      "status": "unchanged",
+      "etag": "W/\"a78f20727589a83447811694c015a913\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/kmaaudiblemediasettingschangednotification": {
+      "hash": "95f36f57ba11d4867623d00bd04a3c5ab67646c4923f19e325232f7ae33acce9",
+      "last_checked": "2025-06-06T03:07:36.882776",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maaudiblemediacopypreferredcharacteristics().json": {
+      "hash": "4c3ab52f9826ece2f7f5fa88b79b0110b93b5c4f8817d67a6d03e88b758ea2a0",
+      "last_checked": "2025-06-06T03:07:37.311532",
+      "status": "unchanged",
+      "etag": "W/\"a2fd75adcd0797576d11d6054db0bb55\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maaudiblemediacopypreferredcharacteristics()": {
+      "hash": "4c3ab52f9826ece2f7f5fa88b79b0110b93b5c4f8817d67a6d03e88b758ea2a0",
+      "last_checked": "2025-06-06T03:07:37.311532",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamediacharacteristicdescribesvideoforaccessibility.json": {
+      "hash": "b99f0b820dcfcbea6e0dd08fc27a8dab69e6a4fc2e6da9db685d6e9200c7a2e3",
+      "last_checked": "2025-06-06T03:07:37.728927",
+      "status": "unchanged",
+      "etag": "W/\"9a9927ea963f9813d7a7760c1c4762e8\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamediacharacteristicdescribesvideoforaccessibility": {
+      "hash": "b99f0b820dcfcbea6e0dd08fc27a8dab69e6a4fc2e6da9db685d6e9200c7a2e3",
+      "last_checked": "2025-06-06T03:07:37.728927",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamediacharacteristicdescribesmusicandsoundforaccessibility.json": {
+      "hash": "a1d932e23f7a70eaeb24ea8cb26144cf5b4631cfcd6b47ed74571bebefc75256",
+      "last_checked": "2025-06-06T03:07:38.149447",
+      "status": "unchanged",
+      "etag": "W/\"2e471558dd38460d7da76645af909c13\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamediacharacteristicdescribesmusicandsoundforaccessibility": {
+      "hash": "a1d932e23f7a70eaeb24ea8cb26144cf5b4631cfcd6b47ed74571bebefc75256",
+      "last_checked": "2025-06-06T03:07:38.149447",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamediacharacteristictranscribesspokendialogforaccessibility.json": {
+      "hash": "404dc8baf006fa20e7c64b62039a125284aade75709fc96e69ba4b6ed063f549",
+      "last_checked": "2025-06-06T03:07:38.566723",
+      "status": "unchanged",
+      "etag": "W/\"49beaa200941e7958f7baff438a3e98f\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamediacharacteristictranscribesspokendialogforaccessibility": {
+      "hash": "404dc8baf006fa20e7c64b62039a125284aade75709fc96e69ba4b6ed063f549",
+      "last_checked": "2025-06-06T03:07:38.566723",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancedomain.json": {
+      "hash": "4fb4a976905938833ef87df279253145cf85a9f286fb5e4a956cee674521ef8e",
+      "last_checked": "2025-06-06T03:07:38.989219",
+      "status": "unchanged",
+      "etag": "W/\"d361668db9e2c0a81a2a7ba44c5cc1c6\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancedomain": {
+      "hash": "4fb4a976905938833ef87df279253145cf85a9f286fb5e4a956cee674521ef8e",
+      "last_checked": "2025-06-06T03:07:38.989219",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancedisplaytype.json": {
+      "hash": "71a296f42e480d19be485bb1ee8b84742f602aec48cf982985e6cb9f34b4a771",
+      "last_checked": "2025-06-06T03:07:39.404146",
+      "status": "unchanged",
+      "etag": "W/\"1e45b30d9546fb37ef1a5c0256e8fb1c\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancedisplaytype": {
+      "hash": "71a296f42e480d19be485bb1ee8b84742f602aec48cf982985e6cb9f34b4a771",
+      "last_checked": "2025-06-06T03:07:39.404146",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancebehavior.json": {
+      "hash": "393032cafc5ab64c8043f40259de0c955715630c0e8227ced30b6cb1347e8581",
+      "last_checked": "2025-06-06T03:07:39.797567",
+      "status": "unchanged",
+      "etag": "W/\"3a877bea96150f9ee3404317a2176330\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancebehavior": {
+      "hash": "393032cafc5ab64c8043f40259de0c955715630c0e8227ced30b6cb1347e8581",
+      "last_checked": "2025-06-06T03:07:39.797567",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancefontstyle.json": {
+      "hash": "1a023a7293fe198a142392a6a936b3c22104dfea9eb330cd7f4b54579c5e5e25",
+      "last_checked": "2025-06-06T03:07:40.249977",
+      "status": "unchanged",
+      "etag": "W/\"0f605fb03c8581c2eb629a988d7b77a0\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancefontstyle": {
+      "hash": "1a023a7293fe198a142392a6a936b3c22104dfea9eb330cd7f4b54579c5e5e25",
+      "last_checked": "2025-06-06T03:07:40.249977",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancetextedgestyle.json": {
+      "hash": "466c88232066acf40865961e5693d7bd4ee9dec80d650b4462a0a56c3a81d57f",
+      "last_checked": "2025-06-06T03:07:40.670154",
+      "status": "unchanged",
+      "etag": "W/\"c677915a8ef916d7d33fc55073b1b537\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancetextedgestyle": {
+      "hash": "466c88232066acf40865961e5693d7bd4ee9dec80d650b4462a0a56c3a81d57f",
+      "last_checked": "2025-06-06T03:07:40.670154",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/responding-to-changes-in-the-flashing-lights-setting.json": {
+      "hash": "29caa96dbf059684214c5f6a00be18f30e20bc777a5481031acb0d127e44126e",
+      "last_checked": "2025-06-06T03:07:41.109825",
+      "status": "unchanged",
+      "etag": "W/\"c8edee95e8fa18da3f344aced1415484\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/responding-to-changes-in-the-flashing-lights-setting": {
+      "hash": "29caa96dbf059684214c5f6a00be18f30e20bc777a5481031acb0d127e44126e",
+      "last_checked": "2025-06-06T03:07:41.109825",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/madimflashinglightsenabled().json": {
+      "hash": "4be6a815cbefb240c47daa140a8b448fcc33fb9bff9425f5f111c87e00e6fdc2",
+      "last_checked": "2025-06-06T03:07:41.536289",
+      "status": "unchanged",
+      "etag": "W/\"66e2c7b96d864426ed86c11abcebac79\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/madimflashinglightsenabled()": {
+      "hash": "4be6a815cbefb240c47daa140a8b448fcc33fb9bff9425f5f111c87e00e6fdc2",
+      "last_checked": "2025-06-06T03:07:41.536289",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/kmadimflashinglightschangednotification.json": {
+      "hash": "27e02670d56aa0bd9d6e39d1592263a9b52eb0d5adc3c0a359ccdac435866def",
+      "last_checked": "2025-06-06T03:07:42.030843",
+      "status": "unchanged",
+      "etag": "W/\"79864581e8a3ab16350ecfa0d75bc580\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/kmadimflashinglightschangednotification": {
+      "hash": "27e02670d56aa0bd9d6e39d1592263a9b52eb0d5adc3c0a359ccdac435866def",
+      "last_checked": "2025-06-06T03:07:42.030843",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor.json": {
+      "hash": "090eb702a8a75c9cdd7614162f2108f7d3415fd57a6616da6ecbc9c9dac20048",
+      "last_checked": "2025-06-06T03:07:42.496856",
+      "status": "unchanged",
+      "etag": "W/\"021ad9fa75991fc5dba69e5c28690cc4\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor": {
+      "hash": "090eb702a8a75c9cdd7614162f2108f7d3415fd57a6616da6ecbc9c9dac20048",
+      "last_checked": "2025-06-06T03:07:42.496856",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamusichapticsmanager.json": {
+      "hash": "a8cb467b38ee7016ceddbbdb52c3a89eb0b2c3903d59457f6ad4cf9f5ac260bc",
+      "last_checked": "2025-06-06T03:07:42.966856",
+      "status": "unchanged",
+      "etag": "W/\"cb4ac1ce978f7d6b8761deb0a1c0cf95\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamusichapticsmanager": {
+      "hash": "a8cb467b38ee7016ceddbbdb52c3a89eb0b2c3903d59457f6ad4cf9f5ac260bc",
+      "last_checked": "2025-06-06T03:07:42.966856",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancedomain/default.json": {
+      "hash": "0ee67bc29c5f7dfbb38bd535b3230303dcf1f574514bd1df465ae317b3096415",
+      "last_checked": "2025-06-06T03:07:43.409171",
+      "status": "unchanged",
+      "etag": "W/\"97a5668817e41ffe1067ee87adae59b6\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancedomain/default": {
+      "hash": "0ee67bc29c5f7dfbb38bd535b3230303dcf1f574514bd1df465ae317b3096415",
+      "last_checked": "2025-06-06T03:07:43.409171",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancedomain/user.json": {
+      "hash": "03a59cb46ec09c48c3809397d191c52bbe0b81f7beb15b02461fe4fd1e3fae83",
+      "last_checked": "2025-06-06T03:07:43.844259",
+      "status": "unchanged",
+      "etag": "W/\"e8152f73a26268fd948fb0d9645a2926\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancedomain/user": {
+      "hash": "03a59cb46ec09c48c3809397d191c52bbe0b81f7beb15b02461fe4fd1e3fae83",
+      "last_checked": "2025-06-06T03:07:43.844259",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancedomain/init(rawvalue:).json": {
+      "hash": "aa9102bf0a7facf33dfe96d07d7f30f86187fc70b81d81b5fa90b73eeaf628a1",
+      "last_checked": "2025-06-06T03:07:44.301639",
+      "status": "unchanged",
+      "etag": "W/\"950ff7abe2236f0be24bb7932137a06e\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancedomain/init(rawvalue:)": {
+      "hash": "aa9102bf0a7facf33dfe96d07d7f30f86187fc70b81d81b5fa90b73eeaf628a1",
+      "last_checked": "2025-06-06T03:07:44.301639",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancedisplaytype/forcedonly.json": {
+      "hash": "e5d52eafbc56e5c41064f5d379e23b8cd95382551952c2f60eedb93ccf60e913",
+      "last_checked": "2025-06-06T03:07:44.687941",
+      "status": "unchanged",
+      "etag": "W/\"c7b2f84460cd9e810270ae1e5b7b1cf3\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancedisplaytype/forcedonly": {
+      "hash": "e5d52eafbc56e5c41064f5d379e23b8cd95382551952c2f60eedb93ccf60e913",
+      "last_checked": "2025-06-06T03:07:44.687941",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancedisplaytype/automatic.json": {
+      "hash": "1ebbfbd6c0d773f2e8aa9f88a22988cd1859f7c6ad33f4836a9c2478aca92350",
+      "last_checked": "2025-06-06T03:07:45.152326",
+      "status": "unchanged",
+      "etag": "W/\"9de6c5f634382954c3a02b348ed23f32\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancedisplaytype/automatic": {
+      "hash": "1ebbfbd6c0d773f2e8aa9f88a22988cd1859f7c6ad33f4836a9c2478aca92350",
+      "last_checked": "2025-06-06T03:07:45.152326",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancedisplaytype/alwayson.json": {
+      "hash": "de74ac23bc819d0793a1c30f5492399c458d8b5c250e152add9edad6b2dd60df",
+      "last_checked": "2025-06-06T03:07:45.566596",
+      "status": "unchanged",
+      "etag": "W/\"1339c9cf84071aa112a94eee256575f7\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancedisplaytype/alwayson": {
+      "hash": "de74ac23bc819d0793a1c30f5492399c458d8b5c250e152add9edad6b2dd60df",
+      "last_checked": "2025-06-06T03:07:45.566596",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancedisplaytype/init(rawvalue:).json": {
+      "hash": "37a8edd91266fcba87b3b3f0d8e10ed3669528b5be00fc468166184394be5aaa",
+      "last_checked": "2025-06-06T03:07:46.050097",
+      "status": "unchanged",
+      "etag": "W/\"76025ac447b20676438433f02ab02620\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancedisplaytype/init(rawvalue:)": {
+      "hash": "37a8edd91266fcba87b3b3f0d8e10ed3669528b5be00fc468166184394be5aaa",
+      "last_checked": "2025-06-06T03:07:46.050097",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancebehavior/usevalue.json": {
+      "hash": "5710a6d7d4bcc88e242b9efb50896e5f1927275f8e3c6259274fccdca5721a7d",
+      "last_checked": "2025-06-06T03:07:46.473864",
+      "status": "unchanged",
+      "etag": "W/\"b16454e3dcb60f10c3956b094fb0f8e6\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancebehavior/usevalue": {
+      "hash": "5710a6d7d4bcc88e242b9efb50896e5f1927275f8e3c6259274fccdca5721a7d",
+      "last_checked": "2025-06-06T03:07:46.473864",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancebehavior/usecontentifavailable.json": {
+      "hash": "41340503d06f6516d6f78ad7adfa8dfab2e76b89f0196beb324c0d72e486f977",
+      "last_checked": "2025-06-06T03:07:46.882099",
+      "status": "unchanged",
+      "etag": "W/\"abbf4b80cb7a5dc009474ec61310f6b0\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancebehavior/usecontentifavailable": {
+      "hash": "41340503d06f6516d6f78ad7adfa8dfab2e76b89f0196beb324c0d72e486f977",
+      "last_checked": "2025-06-06T03:07:46.882099",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancebehavior/init(rawvalue:).json": {
+      "hash": "282d92abc45d2cfdc256d50d9cbb9f46b9a477ac8ce4443be785eed20dc61536",
+      "last_checked": "2025-06-06T03:07:47.324740",
+      "status": "unchanged",
+      "etag": "W/\"c3a24badff5f108943cdbe1998649f82\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancebehavior/init(rawvalue:)": {
+      "hash": "282d92abc45d2cfdc256d50d9cbb9f46b9a477ac8ce4443be785eed20dc61536",
+      "last_checked": "2025-06-06T03:07:47.324740",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancefontstyle/default.json": {
+      "hash": "90b266e40b97adc6595be08d91b84e098f1318fdcde80ec835afa7995ec0bd21",
+      "last_checked": "2025-06-06T03:07:47.762391",
+      "status": "unchanged",
+      "etag": "W/\"727dcfc028fba6d5bb5fe8ab42e428d4\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancefontstyle/default": {
+      "hash": "90b266e40b97adc6595be08d91b84e098f1318fdcde80ec835afa7995ec0bd21",
+      "last_checked": "2025-06-06T03:07:47.762391",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancefontstyle/monospacedwithserif.json": {
+      "hash": "761077493df8f0c3844812c8ad970a6de3e4c9d14804cc67618f23002ce6a374",
+      "last_checked": "2025-06-06T03:07:48.184151",
+      "status": "unchanged",
+      "etag": "W/\"2a65d0062630c92ef8a78bbccd940445\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancefontstyle/monospacedwithserif": {
+      "hash": "761077493df8f0c3844812c8ad970a6de3e4c9d14804cc67618f23002ce6a374",
+      "last_checked": "2025-06-06T03:07:48.184151",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancefontstyle/proportionalwithserif.json": {
+      "hash": "44ba7c0e94d0891e8b9c8978d52da17132e24403504b2f1f70c0a9c447617d49",
+      "last_checked": "2025-06-06T03:07:48.598796",
+      "status": "unchanged",
+      "etag": "W/\"58a2840ca3140f800f6efb28f85e79c5\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancefontstyle/proportionalwithserif": {
+      "hash": "44ba7c0e94d0891e8b9c8978d52da17132e24403504b2f1f70c0a9c447617d49",
+      "last_checked": "2025-06-06T03:07:48.598796",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancefontstyle/monospacedwithoutserif.json": {
+      "hash": "b30faaf112387feda6c49865b8b06b9118133c566d2f9a203a448f5ae0ab1dd9",
+      "last_checked": "2025-06-06T03:07:49.014338",
+      "status": "unchanged",
+      "etag": "W/\"254e14c8983d3097d843eb38cd8c5404\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancefontstyle/monospacedwithoutserif": {
+      "hash": "b30faaf112387feda6c49865b8b06b9118133c566d2f9a203a448f5ae0ab1dd9",
+      "last_checked": "2025-06-06T03:07:49.014338",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancefontstyle/proportionalwithoutserif.json": {
+      "hash": "edd41e214eb3a0b374510952ae3aa8e95e05de288daab2750f83be70bf693edc",
+      "last_checked": "2025-06-06T03:07:49.471980",
+      "status": "unchanged",
+      "etag": "W/\"b5e430637ad74e3bdff7fc0364ee1af7\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancefontstyle/proportionalwithoutserif": {
+      "hash": "edd41e214eb3a0b374510952ae3aa8e95e05de288daab2750f83be70bf693edc",
+      "last_checked": "2025-06-06T03:07:49.471980",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancefontstyle/casual.json": {
+      "hash": "b820f3baf2bc21354db33545831c492f7e35a60bf94c7a0e939398aeba559b12",
+      "last_checked": "2025-06-06T03:07:49.873121",
+      "status": "unchanged",
+      "etag": "W/\"aef632208be112f46f6e610374daffd2\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancefontstyle/casual": {
+      "hash": "b820f3baf2bc21354db33545831c492f7e35a60bf94c7a0e939398aeba559b12",
+      "last_checked": "2025-06-06T03:07:49.873121",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancefontstyle/cursive.json": {
+      "hash": "776c9b5818a121c06c24f19be85da79f57b789d11c7e3fb1140f9b4433ba5989",
+      "last_checked": "2025-06-06T03:07:50.318890",
+      "status": "unchanged",
+      "etag": "W/\"f8226483e628512fbc4eab50f5088560\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancefontstyle/cursive": {
+      "hash": "776c9b5818a121c06c24f19be85da79f57b789d11c7e3fb1140f9b4433ba5989",
+      "last_checked": "2025-06-06T03:07:50.318890",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancefontstyle/smallcapital.json": {
+      "hash": "70ebabb645f2126cc22638707334fc297bee25a1a864c1557364af950f960e75",
+      "last_checked": "2025-06-06T03:07:50.725221",
+      "status": "unchanged",
+      "etag": "W/\"3a62b2fae452a63845ffc10f1b5b80b3\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancefontstyle/smallcapital": {
+      "hash": "70ebabb645f2126cc22638707334fc297bee25a1a864c1557364af950f960e75",
+      "last_checked": "2025-06-06T03:07:50.725221",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancefontstyle/init(rawvalue:).json": {
+      "hash": "aab7e573a30365a38ee4246b6ee1b46324f69d85844af72392f1ffd33d797bcd",
+      "last_checked": "2025-06-06T03:07:51.132333",
+      "status": "unchanged",
+      "etag": "W/\"d96637bf9fe9a63abb1d67b4146a5a40\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancefontstyle/init(rawvalue:)": {
+      "hash": "aab7e573a30365a38ee4246b6ee1b46324f69d85844af72392f1ffd33d797bcd",
+      "last_checked": "2025-06-06T03:07:51.132333",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancetextedgestyle/undefined.json": {
+      "hash": "ffcbf0a7584a66130dfe5f3526e5fea6576498aa457477bb2f349fb396fc7b7d",
+      "last_checked": "2025-06-06T03:07:51.540911",
+      "status": "unchanged",
+      "etag": "W/\"ebb2e2385a3137445725e893be5749fc\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancetextedgestyle/undefined": {
+      "hash": "ffcbf0a7584a66130dfe5f3526e5fea6576498aa457477bb2f349fb396fc7b7d",
+      "last_checked": "2025-06-06T03:07:51.540911",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancetextedgestyle/none.json": {
+      "hash": "e66cb6571d3ab160a40dde3e6d4568e2e8ecb75d56a78c57f86a6eb3e9e55c91",
+      "last_checked": "2025-06-06T03:07:51.946633",
+      "status": "unchanged",
+      "etag": "W/\"9f02d72b4b9d864bf8a85615cf027c72\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancetextedgestyle/none": {
+      "hash": "e66cb6571d3ab160a40dde3e6d4568e2e8ecb75d56a78c57f86a6eb3e9e55c91",
+      "last_checked": "2025-06-06T03:07:51.946633",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancetextedgestyle/raised.json": {
+      "hash": "348926b82359091cf48b7d616253af39416b28ab600a91185f27a2596498f92b",
+      "last_checked": "2025-06-06T03:07:52.336906",
+      "status": "unchanged",
+      "etag": "W/\"5e3aaaa0ecf845b78194d2fc480eb046\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancetextedgestyle/raised": {
+      "hash": "348926b82359091cf48b7d616253af39416b28ab600a91185f27a2596498f92b",
+      "last_checked": "2025-06-06T03:07:52.336906",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancetextedgestyle/depressed.json": {
+      "hash": "ae8df8b60ce511886ce4098301b74631b27edf5edc6c37f163d3e72974ff22b0",
+      "last_checked": "2025-06-06T03:07:52.747403",
+      "status": "unchanged",
+      "etag": "W/\"f2fec84d5ca404826d0d664676cb9af9\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancetextedgestyle/depressed": {
+      "hash": "ae8df8b60ce511886ce4098301b74631b27edf5edc6c37f163d3e72974ff22b0",
+      "last_checked": "2025-06-06T03:07:52.747403",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancetextedgestyle/uniform.json": {
+      "hash": "266dda80793cdb5a2e18b0d5b9de834300fdffd19efb7b5e500c4e55f2771bf3",
+      "last_checked": "2025-06-06T03:07:53.197987",
+      "status": "unchanged",
+      "etag": "W/\"d9fcd004cdae710a4cc2c612f895a955\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancetextedgestyle/uniform": {
+      "hash": "266dda80793cdb5a2e18b0d5b9de834300fdffd19efb7b5e500c4e55f2771bf3",
+      "last_checked": "2025-06-06T03:07:53.197987",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancetextedgestyle/dropshadow.json": {
+      "hash": "b52493d9b051120410236b4003bcfaef2732b27972676517c427247f48537159",
+      "last_checked": "2025-06-06T03:07:55.000360",
+      "status": "unchanged",
+      "etag": "W/\"7c688bb61cbaba8f5b8d34b9c43bf52d\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancetextedgestyle/dropshadow": {
+      "hash": "b52493d9b051120410236b4003bcfaef2732b27972676517c427247f48537159",
+      "last_checked": "2025-06-06T03:07:55.000360",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/macaptionappearancetextedgestyle/init(rawvalue:).json": {
+      "hash": "75f1349c5ac48d9928eddbeaf8547c6eae38beca294e19e09a603fcbec32cce1",
+      "last_checked": "2025-06-06T03:07:55.391853",
+      "status": "unchanged",
+      "etag": "W/\"4a193c9adf34492f88d22b176b04ce3f\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/macaptionappearancetextedgestyle/init(rawvalue:)": {
+      "hash": "75f1349c5ac48d9928eddbeaf8547c6eae38beca294e19e09a603fcbec32cce1",
+      "last_checked": "2025-06-06T03:07:55.391853",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/canprocesssurface(_:).json": {
+      "hash": "1ab68ad3cdbea36957ced3411470f931acd2f1a2c6b1f485b4ece3f5dae2bd1c",
+      "last_checked": "2025-06-06T03:07:55.827907",
+      "status": "unchanged",
+      "etag": "W/\"2908ed2db56c89732de15e8c6eb89b6f\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/canprocesssurface(_:)": {
+      "hash": "1ab68ad3cdbea36957ced3411470f931acd2f1a2c6b1f485b4ece3f5dae2bd1c",
+      "last_checked": "2025-06-06T03:07:55.827907",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/processsurface(_:outsurface:timestamp:options:).json": {
+      "hash": "048a9d79dd0e0b5996873967cb034e164fd3911ce72b93d0d33a2708488a758f",
+      "last_checked": "2025-06-06T03:07:56.252444",
+      "status": "unchanged",
+      "etag": "W/\"cf4af9e08ddaefc456138eab1e69b78e\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/processsurface(_:outsurface:timestamp:options:)": {
+      "hash": "048a9d79dd0e0b5996873967cb034e164fd3911ce72b93d0d33a2708488a758f",
+      "last_checked": "2025-06-06T03:07:56.252444",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/result.json": {
+      "hash": "3506e51d1c303add9ca8c2f701a1169105851b22f1037d9632e9fe13b102bb2c",
+      "last_checked": "2025-06-06T03:07:56.685255",
+      "status": "unchanged",
+      "etag": "W/\"209c314a23e7f2f8c3ff997f39371f0f\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/result": {
+      "hash": "3506e51d1c303add9ca8c2f701a1169105851b22f1037d9632e9fe13b102bb2c",
+      "last_checked": "2025-06-06T03:07:56.685255",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/optionkey.json": {
+      "hash": "f9c31e9949be90fc1667cdc7f37408c2b74764445f362d8e662205bb17f924b9",
+      "last_checked": "2025-06-06T03:07:57.109029",
+      "status": "unchanged",
+      "etag": "W/\"79b90b5a6bb45acaaa7c2adbc6d8c855\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/optionkey": {
+      "hash": "f9c31e9949be90fc1667cdc7f37408c2b74764445f362d8e662205bb17f924b9",
+      "last_checked": "2025-06-06T03:07:57.109029",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamusichapticsmanager/shared.json": {
+      "hash": "da816522c8aa0dd4dd6874c792fe4b8c21bcf51e63b1c6d1258b6f12175f84c2",
+      "last_checked": "2025-06-06T03:07:57.550110",
+      "status": "unchanged",
+      "etag": "W/\"a0f2c1ae26f0b4a8b07de68a2de510f6\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamusichapticsmanager/shared": {
+      "hash": "da816522c8aa0dd4dd6874c792fe4b8c21bcf51e63b1c6d1258b6f12175f84c2",
+      "last_checked": "2025-06-06T03:07:57.550110",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamusichapticsmanager/isactive.json": {
+      "hash": "e72b850557e91aea3bbdea5c74747b04d0857761a771b68e7317a958c379922d",
+      "last_checked": "2025-06-06T03:07:57.945896",
+      "status": "unchanged",
+      "etag": "W/\"a9eb86a7ef41ac16ddc10130786e333c\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamusichapticsmanager/isactive": {
+      "hash": "e72b850557e91aea3bbdea5c74747b04d0857761a771b68e7317a958c379922d",
+      "last_checked": "2025-06-06T03:07:57.945896",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamusichapticsmanager/activestatusdidchangenotification.json": {
+      "hash": "96605fc44705a7156843902bae064c45778e47cf6b6f8cfdfcad54818306ba80",
+      "last_checked": "2025-06-06T03:07:58.367263",
+      "status": "unchanged",
+      "etag": "W/\"11ae22c0eeb6cd0aad6d01bd93274377\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamusichapticsmanager/activestatusdidchangenotification": {
+      "hash": "96605fc44705a7156843902bae064c45778e47cf6b6f8cfdfcad54818306ba80",
+      "last_checked": "2025-06-06T03:07:58.367263",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamusichapticsmanager/checkhaptictrackavailabilityformedia(matchingcode:completionhandler:).json": {
+      "hash": "2a47609f70c072b813ae2d6a6cbd32cda047185c984a50858b0ddff27d97920a",
+      "last_checked": "2025-06-06T03:07:58.785915",
+      "status": "unchanged",
+      "etag": "W/\"dd80bd9f1229e55291d781a07cc47906\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamusichapticsmanager/checkhaptictrackavailabilityformedia(matchingcode:completionhandler:)": {
+      "hash": "2a47609f70c072b813ae2d6a6cbd32cda047185c984a50858b0ddff27d97920a",
+      "last_checked": "2025-06-06T03:07:58.785915",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamusichapticsmanager/addstatusobserver(_:).json": {
+      "hash": "d33cb59f6a45c48835f67e0cd2857ddb893297013dec91a5f4496152c3290343",
+      "last_checked": "2025-06-06T03:07:59.243242",
+      "status": "unchanged",
+      "etag": "W/\"4298d7fdeb879c338e6ff9878f9d179b\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamusichapticsmanager/addstatusobserver(_:)": {
+      "hash": "d33cb59f6a45c48835f67e0cd2857ddb893297013dec91a5f4496152c3290343",
+      "last_checked": "2025-06-06T03:07:59.243242",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamusichapticsmanager/removestatusobserver(_:).json": {
+      "hash": "3d53404d52c7f07aea4d6d6c9e4297cf8a7838560da10cbc4c55942982d7e4e8",
+      "last_checked": "2025-06-06T03:07:59.625301",
+      "status": "unchanged",
+      "etag": "W/\"2849929c2bb5440baf4efacde64e9da8\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamusichapticsmanager/removestatusobserver(_:)": {
+      "hash": "3d53404d52c7f07aea4d6d6c9e4297cf8a7838560da10cbc4c55942982d7e4e8",
+      "last_checked": "2025-06-06T03:07:59.625301",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamusichaptics.json": {
+      "hash": "2b99fff52f4ebe620c382270d3abd0b5c0e9dea0d1a74a911283468973c96137",
+      "last_checked": "2025-06-06T03:08:00.041280",
+      "status": "unchanged",
+      "etag": "W/\"ea2bfd7cba0af27662082e7001490206\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamusichaptics": {
+      "hash": "2b99fff52f4ebe620c382270d3abd0b5c0e9dea0d1a74a911283468973c96137",
+      "last_checked": "2025-06-06T03:08:00.041280",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/result/surfaceprocessed.json": {
+      "hash": "05110bca847ed355fceb2aaaf8314106d0a84d4bf82aaecbd23da84ac979431d",
+      "last_checked": "2025-06-06T03:08:00.504164",
+      "status": "unchanged",
+      "etag": "W/\"b9bce96cc82edaea71fad4ec22e69ec1\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/result/surfaceprocessed": {
+      "hash": "05110bca847ed355fceb2aaaf8314106d0a84d4bf82aaecbd23da84ac979431d",
+      "last_checked": "2025-06-06T03:08:00.504164",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/result/intensitylevel.json": {
+      "hash": "708d1e6b0024df011b601854bf351ea3d25a48b88d07ec579e1bed4d6613c560",
+      "last_checked": "2025-06-06T03:08:00.967534",
+      "status": "unchanged",
+      "etag": "W/\"1919ad08be9ede1cf6bd9f55aa0efaed\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/result/intensitylevel": {
+      "hash": "708d1e6b0024df011b601854bf351ea3d25a48b88d07ec579e1bed4d6613c560",
+      "last_checked": "2025-06-06T03:08:00.967534",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/result/mitigationlevel.json": {
+      "hash": "3f532f1eaee34367746c2f4723a07ad2f91186c11c35bef840cb52bdbcb3bef4",
+      "last_checked": "2025-06-06T03:08:01.391912",
+      "status": "unchanged",
+      "etag": "W/\"a11728dd31c16ad93247227d6cec7941\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/result/mitigationlevel": {
+      "hash": "3f532f1eaee34367746c2f4723a07ad2f91186c11c35bef840cb52bdbcb3bef4",
+      "last_checked": "2025-06-06T03:08:01.391912",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/optionkey/init(_:).json": {
+      "hash": "ab43745054708aaeac2d7b3f22fa81e2900d1307128a8a68b236d7d17d97324e",
+      "last_checked": "2025-06-06T03:08:01.812067",
+      "status": "unchanged",
+      "etag": "W/\"f71d28e94b8e894f48b9b4ae2882785d\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/optionkey/init(_:)": {
+      "hash": "ab43745054708aaeac2d7b3f22fa81e2900d1307128a8a68b236d7d17d97324e",
+      "last_checked": "2025-06-06T03:08:01.812067",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/maflashinglightsprocessor/optionkey/init(rawvalue:).json": {
+      "hash": "edbc07a72e99aaf0e882b8198a8ede65d7ff3273e2c5b0b952f3ac198545cfc7",
+      "last_checked": "2025-06-06T03:08:02.221098",
+      "status": "unchanged",
+      "etag": "W/\"5b4c2ab2383832c5fad2a82b45d56af2\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/maflashinglightsprocessor/optionkey/init(rawvalue:)": {
+      "hash": "edbc07a72e99aaf0e882b8198a8ede65d7ff3273e2c5b0b952f3ac198545cfc7",
+      "last_checked": "2025-06-06T03:08:02.221098",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamusichaptics/init().json": {
+      "hash": "8bb30e7e754336c350f62009c7ee421fb8fc13d3111b36cc0023b180834c8c0b",
+      "last_checked": "2025-06-06T03:08:02.672712",
+      "status": "unchanged",
+      "etag": "W/\"7cd7d99800fffda3acf64b9e9a00052d\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamusichaptics/init()": {
+      "hash": "8bb30e7e754336c350f62009c7ee421fb8fc13d3111b36cc0023b180834c8c0b",
+      "last_checked": "2025-06-06T03:08:02.672712",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/mediaaccessibility/mamusichaptics/enabledstatusdidchangenotification.json": {
+      "hash": "a054e893b7993150ed604fc1043861f4794af55b81e463dd0d62df2dd5f20642",
+      "last_checked": "2025-06-06T03:08:03.092649",
+      "status": "unchanged",
+      "etag": "W/\"26d1a607fba190f954551753469da469\""
+    },
+    "https://developer.apple.com/documentation/mediaaccessibility/mamusichaptics/enabledstatusdidchangenotification": {
+      "hash": "a054e893b7993150ed604fc1043861f4794af55b81e463dd0d62df2dd5f20642",
+      "last_checked": "2025-06-06T03:08:03.092649",
+      "status": "unchanged"
+    }
+  }
+}

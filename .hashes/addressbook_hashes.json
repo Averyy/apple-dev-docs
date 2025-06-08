@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-08T17:22:11.858895",
+    "total_pages": 8
+  },
+  "hashes": {
+    "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/saveandreturnerror()": {
+      "hash": "",
+      "last_checked": "2025-06-06T20:50:40.068714",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/saveandreturnerror().json": {
+      "hash": "",
+      "last_checked": "2025-06-06T20:50:40.068714",
+      "status": "error"
+    },
+    "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/add(_:error:)": {
+      "hash": "",
+      "last_checked": "2025-06-06T20:50:40.416344",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/add(_:error:).json": {
+      "hash": "",
+      "last_checked": "2025-06-06T20:50:40.416344",
+      "status": "error"
+    },
+    "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/remove(_:error:)": {
+      "hash": "",
+      "last_checked": "2025-06-06T20:50:40.768701",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/remove(_:error:).json": {
+      "hash": "",
+      "last_checked": "2025-06-06T20:50:40.768701",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/AddressBook.json": {
+      "hash": "a435e78a45783a6731998f6826538e40f02d28564b6aa0484abe333561e7d797",
+      "last_checked": "2025-06-08T17:22:11.631717",
+      "status": "new",
+      "etag": "W/\"622751a7e97744db6a40df723f634463\""
+    },
+    "https://developer.apple.com/documentation/AddressBook": {
+      "hash": "a435e78a45783a6731998f6826538e40f02d28564b6aa0484abe333561e7d797",
+      "last_checked": "2025-06-08T17:22:11.631817",
+      "status": "new",
+      "etag": "W/\"622751a7e97744db6a40df723f634463\""
+    }
+  }
+}

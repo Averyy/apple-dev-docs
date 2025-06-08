@@ -1,4 +1,4 @@
-Completed scraping Videosubscriberaccount!
-Total pages scraped: 124
-Pages skipped (unchanged): 1
+Completed scraping Video Subscriber Account!
+Total pages scraped: 0
+Pages skipped (unchanged): 2
 Pages failed: 0

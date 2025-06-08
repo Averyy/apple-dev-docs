@@ -1,0 +1,2578 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T13:01:34.235425",
+    "total_pages": 467,
+    "etags_collected": "2025-06-07T13:01:34.235441"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/LocalAuthentication.json": {
+      "hash": "219df8cdbfee95d18b60ff1a92a878781120e5cec3df205556e848a0a23c545c",
+      "last_checked": "2025-06-06T02:42:55.438029",
+      "status": "new",
+      "etag": "W/\"6d0fd7d4b33f4af694759dab59d32125\""
+    },
+    "https://developer.apple.com/documentation/LocalAuthentication": {
+      "hash": "25587a1ac70e569913b126f3b41958eb8cc330081ad2cac77702e2121c650541",
+      "last_checked": "2025-06-06T02:42:55.438419",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication.json": {
+      "hash": "25587a1ac70e569913b126f3b41958eb8cc330081ad2cac77702e2121c650541",
+      "last_checked": "2025-06-06T02:42:55.438419",
+      "status": "unchanged",
+      "etag": "W/\"6d0fd7d4b33f4af694759dab59d32125\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/logging-a-user-into-your-app-with-face-id-or-touch-id.json": {
+      "hash": "372d92a09e7e0725c1c47659f24a64df60643e6c448e7e44390ef6adb0959805",
+      "last_checked": "2025-06-06T02:42:56.237532",
+      "status": "unchanged",
+      "etag": "W/\"1c9d6c8e538c9336ba475c7425f1301c\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/logging-a-user-into-your-app-with-face-id-or-touch-id": {
+      "hash": "372d92a09e7e0725c1c47659f24a64df60643e6c448e7e44390ef6adb0959805",
+      "last_checked": "2025-06-06T02:42:56.237532",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/accessing-keychain-items-with-face-id-or-touch-id.json": {
+      "hash": "a0553abccae9571c9036c6731abfa0754594ab867dc6d0b130938e1877b83856",
+      "last_checked": "2025-06-06T02:42:56.614061",
+      "status": "unchanged",
+      "etag": "W/\"d7075388c189de8ec42676bb4dfe45fc\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/accessing-keychain-items-with-face-id-or-touch-id": {
+      "hash": "a0553abccae9571c9036c6731abfa0754594ab867dc6d0b130938e1877b83856",
+      "last_checked": "2025-06-06T02:42:56.614061",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright.json": {
+      "hash": "2d41af698073f57bfa5de2ed1b70209b50281beea0af583e60e51153b6d3e716",
+      "last_checked": "2025-06-06T02:42:57.035748",
+      "status": "unchanged",
+      "etag": "W/\"4523eb4a5f232ffc89089bc0db87a7d1\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright": {
+      "hash": "2d41af698073f57bfa5de2ed1b70209b50281beea0af583e60e51153b6d3e716",
+      "last_checked": "2025-06-06T02:42:57.035748",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/state-swift.enum.json": {
+      "hash": "dc37431ca7a6984cd969fb757127aacda69c61643742be8b91cac9486cf4693d",
+      "last_checked": "2025-06-06T02:42:57.414621",
+      "status": "unchanged",
+      "etag": "W/\"1704c940528c98eaa585b4de2871b73a\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/state-swift.enum": {
+      "hash": "dc37431ca7a6984cd969fb757127aacda69c61643742be8b91cac9486cf4693d",
+      "last_checked": "2025-06-06T02:42:57.414621",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext.json": {
+      "hash": "87c4fc3126da9cc9d502a5b4eae88bce97f26d3003e4e2bad8edb29671a750e2",
+      "last_checked": "2025-06-06T02:42:57.823519",
+      "status": "unchanged",
+      "etag": "W/\"59eaeb9a41db840f9d9010e245d75f28\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext": {
+      "hash": "87c4fc3126da9cc9d502a5b4eae88bce97f26d3003e4e2bad8edb29671a750e2",
+      "last_checked": "2025-06-06T02:42:57.823519",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/larightstore.json": {
+      "hash": "8b8d2bcfbe9bfae97d50674a404e9113d5378de47544d23edd225f2a2e290bb8",
+      "last_checked": "2025-06-06T02:42:58.208716",
+      "status": "unchanged",
+      "etag": "W/\"e9df8d5b97858ef5900a55abb90a22f2\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/larightstore": {
+      "hash": "8b8d2bcfbe9bfae97d50674a404e9113d5378de47544d23edd225f2a2e290bb8",
+      "last_checked": "2025-06-06T02:42:58.208716",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapersistedright.json": {
+      "hash": "1467f5cebe6d6fed9b5821e1f88bed9a952ffa8786c9814a920291d31af9cadf",
+      "last_checked": "2025-06-06T02:42:58.551509",
+      "status": "unchanged",
+      "etag": "W/\"91f6241cbbcb3c8ea37efdb283871b0a\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapersistedright": {
+      "hash": "1467f5cebe6d6fed9b5821e1f88bed9a952ffa8786c9814a920291d31af9cadf",
+      "last_checked": "2025-06-06T02:42:58.551509",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lasecret.json": {
+      "hash": "3d0c503ef025886538cd4c3273e68d4aedff4ea52c42d7ae06cb0b67711faba0",
+      "last_checked": "2025-06-06T02:42:58.962986",
+      "status": "unchanged",
+      "etag": "W/\"5acf56543d1cd6d9e745a6c510d98052\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lasecret": {
+      "hash": "3d0c503ef025886538cd4c3273e68d4aedff4ea52c42d7ae06cb0b67711faba0",
+      "last_checked": "2025-06-06T02:42:58.962986",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapublickey.json": {
+      "hash": "d8f06a25d17efb7f6db8c776cffe16a71b6f9767a07c5c2dbc433d45df4c1e55",
+      "last_checked": "2025-06-06T02:42:59.320883",
+      "status": "unchanged",
+      "etag": "W/\"8a0fe2766df58e723778262d99efcdf0\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapublickey": {
+      "hash": "d8f06a25d17efb7f6db8c776cffe16a71b6f9767a07c5c2dbc433d45df4c1e55",
+      "last_checked": "2025-06-06T02:42:59.320883",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laprivatekey.json": {
+      "hash": "682818ceccf8d7da9ca9e9eb5d749303b83be5c83390dc5d8ded9225f8dac16b",
+      "last_checked": "2025-06-06T02:42:59.718248",
+      "status": "unchanged",
+      "etag": "W/\"a7322b395b418b220e851da1d2c670cc\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laprivatekey": {
+      "hash": "682818ceccf8d7da9ca9e9eb5d749303b83be5c83390dc5d8ded9225f8dac16b",
+      "last_checked": "2025-06-06T02:42:59.718248",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laauthenticationrequirement.json": {
+      "hash": "c532cf17b42cd9f079be978c611739d12f87e213b65a8ba785a71844664d2e68",
+      "last_checked": "2025-06-06T02:43:00.079974",
+      "status": "unchanged",
+      "etag": "W/\"1d2867601045da092e37a0ee9e761af7\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laauthenticationrequirement": {
+      "hash": "c532cf17b42cd9f079be978c611739d12f87e213b65a8ba785a71844664d2e68",
+      "last_checked": "2025-06-06T02:43:00.079974",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/labiometryfallbackrequirement.json": {
+      "hash": "b92266cddfbe81de0d2f4bed9f967c5977fba9d78c521f1d99a1e094f142113f",
+      "last_checked": "2025-06-06T02:43:00.440595",
+      "status": "unchanged",
+      "etag": "W/\"cf5882a74ec4368b2f100998960706a4\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/labiometryfallbackrequirement": {
+      "hash": "b92266cddfbe81de0d2f4bed9f967c5977fba9d78c521f1d99a1e094f142113f",
+      "last_checked": "2025-06-06T02:43:00.440595",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/localauthenticationview.json": {
+      "hash": "0a490dc635c7af872a697f43bda5d90331c4f8f06c6dbed4c151b54f96dcbbd5",
+      "last_checked": "2025-06-06T02:43:00.809466",
+      "status": "unchanged",
+      "etag": "W/\"984d9def4ce56a44974811f5316baef8\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/localauthenticationview": {
+      "hash": "0a490dc635c7af872a697f43bda5d90331c4f8f06c6dbed4c151b54f96dcbbd5",
+      "last_checked": "2025-06-06T02:43:00.809466",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct.json": {
+      "hash": "1bc5b80e7f7cd8ccba3772719173d4464c6107a91ef758275a7be4edc75d009b",
+      "last_checked": "2025-06-06T02:43:01.202078",
+      "status": "unchanged",
+      "etag": "W/\"fc72f2d68a1a56592f6880579553bd0a\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct": {
+      "hash": "1bc5b80e7f7cd8ccba3772719173d4464c6107a91ef758275a7be4edc75d009b",
+      "last_checked": "2025-06-06T02:43:01.202078",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code.json": {
+      "hash": "b0a89c70ea73bbf28856e966d101612ac1da6c49c7f0455099863b4e4a7d39f3",
+      "last_checked": "2025-06-06T02:43:01.528521",
+      "status": "unchanged",
+      "etag": "W/\"9a8a9c69611313bb1818c8403a6fe6ee\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code": {
+      "hash": "b0a89c70ea73bbf28856e966d101612ac1da6c49c7f0455099863b4e4a7d39f3",
+      "last_checked": "2025-06-06T02:43:01.528521",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerrordomain.json": {
+      "hash": "ebdcccc57d52ec6f93bd5671be85b3b66903dcb049bc37002da458dd8878739b",
+      "last_checked": "2025-06-06T02:43:01.928706",
+      "status": "unchanged",
+      "etag": "W/\"fd4ccb44b1d39ef988ae4537ec6e5d68\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerrordomain": {
+      "hash": "ebdcccc57d52ec6f93bd5671be85b3b66903dcb049bc37002da458dd8878739b",
+      "last_checked": "2025-06-06T02:43:01.928706",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/localauthentication-constants.json": {
+      "hash": "a302e485eb6f2dddac6f3811784561d0966d75fcc09deb8667a6dace357b1300",
+      "last_checked": "2025-06-06T02:43:02.321002",
+      "status": "unchanged",
+      "etag": "W/\"a376b31d5c999afa167cebf4e5bc9f3e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/localauthentication-constants": {
+      "hash": "a302e485eb6f2dddac6f3811784561d0966d75fcc09deb8667a6dace357b1300",
+      "last_checked": "2025-06-06T02:43:02.321002",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstate.json": {
+      "hash": "610ef184a84e75f0a1be673b50ba6f495b1ce61142103d4ec20d7cfc551191fe",
+      "last_checked": "2025-06-06T02:43:02.716478",
+      "status": "unchanged",
+      "etag": "W/\"d819621d118328fc2346f61440834a98\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstate": {
+      "hash": "610ef184a84e75f0a1be673b50ba6f495b1ce61142103d4ec20d7cfc551191fe",
+      "last_checked": "2025-06-06T02:43:02.716478",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstatebiometry.json": {
+      "hash": "5256048ab3473ab7784c646535005b0aa1f1c9b83a384f4b560b81356351fca8",
+      "last_checked": "2025-06-06T02:43:03.081366",
+      "status": "unchanged",
+      "etag": "W/\"9b65a2ff391e837790bc3d4dc148b754\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstatebiometry": {
+      "hash": "5256048ab3473ab7784c646535005b0aa1f1c9b83a384f4b560b81356351fca8",
+      "last_checked": "2025-06-06T02:43:03.081366",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstatecompanion.json": {
+      "hash": "053bc0ec11fdc3747a7084b3e26f4c974fa3c182d0993841e31b7a23b1d6ed2b",
+      "last_checked": "2025-06-06T02:43:03.481366",
+      "status": "unchanged",
+      "etag": "W/\"444761002e1aa3a6c80b95b6513ba7a8\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstatecompanion": {
+      "hash": "053bc0ec11fdc3747a7084b3e26f4c974fa3c182d0993841e31b7a23b1d6ed2b",
+      "last_checked": "2025-06-06T02:43:03.481366",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment.json": {
+      "hash": "e6c7d9751a67a8af43e8f6123337f39eb7f1971c575ac89cb31a24510624704c",
+      "last_checked": "2025-06-06T02:43:03.860611",
+      "status": "unchanged",
+      "etag": "W/\"27ed4c8f46680f01a0d196ed89cb8396\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment": {
+      "hash": "e6c7d9751a67a8af43e8f6123337f39eb7f1971c575ac89cb31a24510624704c",
+      "last_checked": "2025-06-06T02:43:03.860611",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaaccesscontroloperationcreateitem.json": {
+      "hash": "a4b957f569f77fe1770f2afb5c1361ff9e6cd814ba17637c7a5a5da74e788a13",
+      "last_checked": "2025-06-06T02:43:04.244069",
+      "status": "unchanged",
+      "etag": "W/\"a907137b945cbc8cc0edafb29f65739f\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaaccesscontroloperationcreateitem": {
+      "hash": "a4b957f569f77fe1770f2afb5c1361ff9e6cd814ba17637c7a5a5da74e788a13",
+      "last_checked": "2025-06-06T02:43:04.244069",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaaccesscontroloperationcreatekey.json": {
+      "hash": "d2701cde028a49b96de07efc3d0a495572bf3ea2f5990de82b92df440936ff8d",
+      "last_checked": "2025-06-06T02:43:04.605328",
+      "status": "unchanged",
+      "etag": "W/\"288a960db5b8c0d1915672f64d9cfda2\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaaccesscontroloperationcreatekey": {
+      "hash": "d2701cde028a49b96de07efc3d0a495572bf3ea2f5990de82b92df440936ff8d",
+      "last_checked": "2025-06-06T02:43:04.605328",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaaccesscontroloperationuseitem.json": {
+      "hash": "b5b203a010a1ed1ad0286b85fef2b0105c2914b5dbc6e2d1d4ba159a4801fa1c",
+      "last_checked": "2025-06-06T02:43:04.993157",
+      "status": "unchanged",
+      "etag": "W/\"2384d4bb9baee8ab695a1d6636a6cab7\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaaccesscontroloperationuseitem": {
+      "hash": "b5b203a010a1ed1ad0286b85fef2b0105c2914b5dbc6e2d1d4ba159a4801fa1c",
+      "last_checked": "2025-06-06T02:43:04.993157",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaaccesscontroloperationusekeydecrypt.json": {
+      "hash": "740e4b9bd5508336315d415eeec634828d9e2d4c87ef49e0a37d9cb7a27437fd",
+      "last_checked": "2025-06-06T02:43:05.407369",
+      "status": "unchanged",
+      "etag": "W/\"9db0afc4d6e2aeea72fc9a05a78921b1\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaaccesscontroloperationusekeydecrypt": {
+      "hash": "740e4b9bd5508336315d415eeec634828d9e2d4c87ef49e0a37d9cb7a27437fd",
+      "last_checked": "2025-06-06T02:43:05.407369",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaaccesscontroloperationusekeykeyexchange.json": {
+      "hash": "5e2ea2239b058a4b7be8efa36fd56ebce68ea65d3dbe8ca94c0e359f10c534af",
+      "last_checked": "2025-06-06T02:43:05.806864",
+      "status": "unchanged",
+      "etag": "W/\"3a6d4afab74a6e873cd5f1d6a20586a9\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaaccesscontroloperationusekeykeyexchange": {
+      "hash": "5e2ea2239b058a4b7be8efa36fd56ebce68ea65d3dbe8ca94c0e359f10c534af",
+      "last_checked": "2025-06-06T02:43:05.806864",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaaccesscontroloperationusekeysign.json": {
+      "hash": "ab940843face03482d55a4501406805d9ced885ce8742387d73ac42e50c9b9eb",
+      "last_checked": "2025-06-06T02:43:06.221847",
+      "status": "unchanged",
+      "etag": "W/\"43807d6d467bc208bf10972c503251ac\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaaccesscontroloperationusekeysign": {
+      "hash": "ab940843face03482d55a4501406805d9ced885ce8742387d73ac42e50c9b9eb",
+      "last_checked": "2025-06-06T02:43:06.221847",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klacompaniontypemac.json": {
+      "hash": "abdd6e75d3402f5f3c0124e26927a3fe7f5418f31f17705f0751a94b1ea216ac",
+      "last_checked": "2025-06-06T02:43:06.589521",
+      "status": "unchanged",
+      "etag": "W/\"32045dc65618f51cc3b75b5f91d33e91\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klacompaniontypemac": {
+      "hash": "abdd6e75d3402f5f3c0124e26927a3fe7f5418f31f17705f0751a94b1ea216ac",
+      "last_checked": "2025-06-06T02:43:06.589521",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klacompaniontypewatch.json": {
+      "hash": "fec397bcdee5f33f1c9277ffe139cddba08e056570dbeaa6214ee61066480729",
+      "last_checked": "2025-06-06T02:43:06.996951",
+      "status": "unchanged",
+      "etag": "W/\"914690d3289e3b38cc1cbd8f0a2d311e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klacompaniontypewatch": {
+      "hash": "fec397bcdee5f33f1c9277ffe139cddba08e056570dbeaa6214ee61066480729",
+      "last_checked": "2025-06-06T02:43:06.996951",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorcompanionnotavailable.json": {
+      "hash": "03540cedb819eeeec22bf087b26212bb4025cd018797df573506cf0d01aeb20c",
+      "last_checked": "2025-06-06T02:43:07.369476",
+      "status": "unchanged",
+      "etag": "W/\"72ee75a0905885811b8cf2d2d8bfb1fb\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorcompanionnotavailable": {
+      "hash": "03540cedb819eeeec22bf087b26212bb4025cd018797df573506cf0d01aeb20c",
+      "last_checked": "2025-06-06T02:43:07.369476",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klapolicydeviceownerauthenticationwithbiometricsorcompanion.json": {
+      "hash": "10dd8fe4cfbae4851e634bce2120990c6038efbca26f7b88819de81daad12517",
+      "last_checked": "2025-06-06T02:43:07.742006",
+      "status": "unchanged",
+      "etag": "W/\"95e779483aeb901a9b55e8f7e5e1387d\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klapolicydeviceownerauthenticationwithbiometricsorcompanion": {
+      "hash": "10dd8fe4cfbae4851e634bce2120990c6038efbca26f7b88819de81daad12517",
+      "last_checked": "2025-06-06T02:43:07.742006",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klapolicydeviceownerauthenticationwithcompanion.json": {
+      "hash": "61749d113a95ca1dc6b05174a7c8f79cd18179d568cf871ab0a43653cf683cc9",
+      "last_checked": "2025-06-06T02:43:08.131064",
+      "status": "unchanged",
+      "etag": "W/\"a979ea8b6a7233f81184ae0108ed9bae\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klapolicydeviceownerauthenticationwithcompanion": {
+      "hash": "61749d113a95ca1dc6b05174a7c8f79cd18179d568cf871ab0a43653cf683cc9",
+      "last_checked": "2025-06-06T02:43:08.131064",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacompaniontype.json": {
+      "hash": "ddb210456a7e7fa2a301a5c9fdd7542936020d9258841acc51e452a6e8cc7e0b",
+      "last_checked": "2025-06-06T02:43:08.534166",
+      "status": "unchanged",
+      "etag": "W/\"72801832d206b3f44f34084be439dfeb\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacompaniontype": {
+      "hash": "ddb210456a7e7fa2a301a5c9fdd7542936020d9258841acc51e452a6e8cc7e0b",
+      "last_checked": "2025-06-06T02:43:08.534166",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/init().json": {
+      "hash": "00ee6926a5beee280ff2f9abeb951cd8e2d19a0ed3693d6a3ca44c097b1b8f55",
+      "last_checked": "2025-06-06T02:43:08.923409",
+      "status": "unchanged",
+      "etag": "W/\"e382aa6b768b0c427c5616b55526a69f\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/init()": {
+      "hash": "00ee6926a5beee280ff2f9abeb951cd8e2d19a0ed3693d6a3ca44c097b1b8f55",
+      "last_checked": "2025-06-06T02:43:08.923409",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/init(requirement:).json": {
+      "hash": "84539406291eed77e55d0ef7f3c4b8264f2e1db7ce1547972086d7af47252897",
+      "last_checked": "2025-06-06T02:43:09.342312",
+      "status": "unchanged",
+      "etag": "W/\"21e65e937dd29d177068ff5c96efe748\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/init(requirement:)": {
+      "hash": "84539406291eed77e55d0ef7f3c4b8264f2e1db7ce1547972086d7af47252897",
+      "last_checked": "2025-06-06T02:43:09.342312",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/tag.json": {
+      "hash": "cf5cbfe09426dca99da34f9f80cd9d10fd2ea84647ce60b351565e1917773320",
+      "last_checked": "2025-06-06T02:43:09.662560",
+      "status": "unchanged",
+      "etag": "W/\"f9dd249cfa0abfc26650474c936ee50e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/tag": {
+      "hash": "cf5cbfe09426dca99da34f9f80cd9d10fd2ea84647ce60b351565e1917773320",
+      "last_checked": "2025-06-06T02:43:09.662560",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/authorize(localizedreason:completion:).json": {
+      "hash": "19d276dc7d0ff56a68f4e9f865becb3f20f5c4fa1e7135049ac5095e41b91ef2",
+      "last_checked": "2025-06-06T02:43:10.124350",
+      "status": "unchanged",
+      "etag": "W/\"7ba5e2fba8090fc8c918d1a1f3a443f3\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/authorize(localizedreason:completion:)": {
+      "hash": "19d276dc7d0ff56a68f4e9f865becb3f20f5c4fa1e7135049ac5095e41b91ef2",
+      "last_checked": "2025-06-06T02:43:10.124350",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/authorize(localizedreason:in:completion:).json": {
+      "hash": "056e541b2ded6567f009029f584c0b2495ea597f1aa73fe91ba2aa2670019bf5",
+      "last_checked": "2025-06-06T02:43:10.513653",
+      "status": "unchanged",
+      "etag": "W/\"e7020f8527c9790f9de13e8612a36cf9\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/authorize(localizedreason:in:completion:)": {
+      "hash": "056e541b2ded6567f009029f584c0b2495ea597f1aa73fe91ba2aa2670019bf5",
+      "last_checked": "2025-06-06T02:43:10.513653",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/deauthorize(completion:).json": {
+      "hash": "7034e4cfc89fe1fd636de27a2fa60d4c2e2e2662804e545fdd4e646d5c41a4ca",
+      "last_checked": "2025-06-06T02:43:10.914784",
+      "status": "unchanged",
+      "etag": "W/\"e25ff060310ed03980857219d011b069\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/deauthorize(completion:)": {
+      "hash": "7034e4cfc89fe1fd636de27a2fa60d4c2e2e2662804e545fdd4e646d5c41a4ca",
+      "last_checked": "2025-06-06T02:43:10.914784",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/checkcanauthorize(completion:).json": {
+      "hash": "04ea914d16a6401566e32d034512c1fac663f65c39b4f842c87ca6bc08525ff3",
+      "last_checked": "2025-06-06T02:43:11.281881",
+      "status": "unchanged",
+      "etag": "W/\"1036c9953c4f55daeee0ae2b19a89043\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/checkcanauthorize(completion:)": {
+      "hash": "04ea914d16a6401566e32d034512c1fac663f65c39b4f842c87ca6bc08525ff3",
+      "last_checked": "2025-06-06T02:43:11.281881",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/state-swift.property.json": {
+      "hash": "d662290dc7a3f062071a3e2a1910ad9813ef86fd7d51df2cc348c790d238f30a",
+      "last_checked": "2025-06-06T02:43:11.666536",
+      "status": "unchanged",
+      "etag": "W/\"032cbe0dc861a49b257a8596e954a97d\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/state-swift.property": {
+      "hash": "d662290dc7a3f062071a3e2a1910ad9813ef86fd7d51df2cc348c790d238f30a",
+      "last_checked": "2025-06-06T02:43:11.666536",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/state-swift.enum/authorizing.json": {
+      "hash": "06a49f1d2923ed950dc56ba69d70ecf4b932d52914f634b6889502c1ffe473b3",
+      "last_checked": "2025-06-06T02:43:12.030433",
+      "status": "unchanged",
+      "etag": "W/\"653788cde8affe8ffc3370018f7b22fa\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/state-swift.enum/authorizing": {
+      "hash": "06a49f1d2923ed950dc56ba69d70ecf4b932d52914f634b6889502c1ffe473b3",
+      "last_checked": "2025-06-06T02:43:12.030433",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/state-swift.enum/authorized.json": {
+      "hash": "9eb258edc18ce36c61c5201401ccd26532009284eeabf2a0d9b05bb0f2acc175",
+      "last_checked": "2025-06-06T02:43:12.420517",
+      "status": "unchanged",
+      "etag": "W/\"5c7a450e54ec6c887cab28a8f5016d0a\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/state-swift.enum/authorized": {
+      "hash": "9eb258edc18ce36c61c5201401ccd26532009284eeabf2a0d9b05bb0f2acc175",
+      "last_checked": "2025-06-06T02:43:12.420517",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/state-swift.enum/notauthorized.json": {
+      "hash": "e214574dc85e4216c851c43ac58d52e24e1fe1fdaa74c4f6b28ec440149ffc79",
+      "last_checked": "2025-06-06T02:43:12.812845",
+      "status": "unchanged",
+      "etag": "W/\"1a96fe5260dbf4f55829ee92cfd45851\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/state-swift.enum/notauthorized": {
+      "hash": "e214574dc85e4216c851c43ac58d52e24e1fe1fdaa74c4f6b28ec440149ffc79",
+      "last_checked": "2025-06-06T02:43:12.812845",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/state-swift.enum/unknown.json": {
+      "hash": "4f9b73191f68d7ed4bf7298c86176341faf48cb7b9b409b2cb9573e49d212cbb",
+      "last_checked": "2025-06-06T02:43:13.181354",
+      "status": "unchanged",
+      "etag": "W/\"06b0632d51e42cefbd79f25fd521d877\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/state-swift.enum/unknown": {
+      "hash": "4f9b73191f68d7ed4bf7298c86176341faf48cb7b9b409b2cb9573e49d212cbb",
+      "last_checked": "2025-06-06T02:43:13.181354",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laright/state-swift.enum/init(rawvalue:).json": {
+      "hash": "bdadc70c80969c54b21f5b914663f6e4d07b69198abea1df2026033915de2673",
+      "last_checked": "2025-06-06T02:43:13.554576",
+      "status": "unchanged",
+      "etag": "W/\"a19ec1774077d519193cf7d293b98204\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laright/state-swift.enum/init(rawvalue:)": {
+      "hash": "bdadc70c80969c54b21f5b914663f6e4d07b69198abea1df2026033915de2673",
+      "last_checked": "2025-06-06T02:43:13.554576",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/canevaluatepolicy(_:error:).json": {
+      "hash": "5a9403a585aaf00fcbdb0dda127c8fe85839000aa6c3216d1a0f25ba80027a1c",
+      "last_checked": "2025-06-06T02:43:13.919987",
+      "status": "unchanged",
+      "etag": "W/\"f7597e4c7ce4439bb9b0ebe6d1a517c4\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/canevaluatepolicy(_:error:)": {
+      "hash": "5a9403a585aaf00fcbdb0dda127c8fe85839000aa6c3216d1a0f25ba80027a1c",
+      "last_checked": "2025-06-06T02:43:13.919987",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapolicy.json": {
+      "hash": "fe73f6cc3b31ef8b61c502db5d52f12660df4e2d2c4292506c2d5a0584234609",
+      "last_checked": "2025-06-06T02:43:14.307228",
+      "status": "unchanged",
+      "etag": "W/\"cf62482325acdcacf0135fa819cc0b11\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapolicy": {
+      "hash": "fe73f6cc3b31ef8b61c502db5d52f12660df4e2d2c4292506c2d5a0584234609",
+      "last_checked": "2025-06-06T02:43:14.307228",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/biometrytype.json": {
+      "hash": "c42a34a1c6b5c4da382699c54039cb38d6cf6e0b1a6d037c85682bd3233fe4e0",
+      "last_checked": "2025-06-06T02:43:14.679149",
+      "status": "unchanged",
+      "etag": "W/\"39da7aae8ba65d8ec8c2ea6188f3cd72\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/biometrytype": {
+      "hash": "c42a34a1c6b5c4da382699c54039cb38d6cf6e0b1a6d037c85682bd3233fe4e0",
+      "last_checked": "2025-06-06T02:43:14.679149",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/labiometrytype.json": {
+      "hash": "06180ca09f33bee0d8fd9b93dda498fe8d263ab32dd358e21ce8c0147c20943f",
+      "last_checked": "2025-06-06T02:43:15.120680",
+      "status": "unchanged",
+      "etag": "W/\"8b38ae7f21da27f8982ba3d64f7f56af\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/labiometrytype": {
+      "hash": "06180ca09f33bee0d8fd9b93dda498fe8d263ab32dd358e21ce8c0147c20943f",
+      "last_checked": "2025-06-06T02:43:15.120680",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/maxbiometryfailures.json": {
+      "hash": "194b88fe46718eab1c3c122be2f2b14c5ec8a75023fd6afff8a68b9a77f58664",
+      "last_checked": "2025-06-06T02:43:16.256893",
+      "status": "unchanged",
+      "etag": "W/\"9b8be322494f191d0f6e89f536d883a3\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/maxbiometryfailures": {
+      "hash": "194b88fe46718eab1c3c122be2f2b14c5ec8a75023fd6afff8a68b9a77f58664",
+      "last_checked": "2025-06-06T02:43:16.256893",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/evaluateaccesscontrol(_:operation:localizedreason:reply:).json": {
+      "hash": "6607e3b32c0918d87b0cd3b13c851b472b8cb84978dd45c0f1f2538731033b92",
+      "last_checked": "2025-06-06T02:43:16.651407",
+      "status": "unchanged",
+      "etag": "W/\"652ee70152b7e6125133d51f0fe85105\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/evaluateaccesscontrol(_:operation:localizedreason:reply:)": {
+      "hash": "6607e3b32c0918d87b0cd3b13c851b472b8cb84978dd45c0f1f2538731033b92",
+      "last_checked": "2025-06-06T02:43:16.651407",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laaccesscontroloperation.json": {
+      "hash": "f73382dd1a2f33a73bc7e1dc29026653786c014219279418f9aebbeefb795886",
+      "last_checked": "2025-06-06T02:43:17.039131",
+      "status": "unchanged",
+      "etag": "W/\"eff8e265afc298aeef576e861cd81ade\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laaccesscontroloperation": {
+      "hash": "f73382dd1a2f33a73bc7e1dc29026653786c014219279418f9aebbeefb795886",
+      "last_checked": "2025-06-06T02:43:17.039131",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/interactionnotallowed.json": {
+      "hash": "868e8a97523f7e8a119fa38bcc192d310c210f2418d2c3bda0a35137325abf6a",
+      "last_checked": "2025-06-06T02:43:17.415891",
+      "status": "unchanged",
+      "etag": "W/\"507835a780ef7a5af8ebe1b31b9fad44\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/interactionnotallowed": {
+      "hash": "868e8a97523f7e8a119fa38bcc192d310c210f2418d2c3bda0a35137325abf6a",
+      "last_checked": "2025-06-06T02:43:17.415891",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/localizedreason.json": {
+      "hash": "7e7945840eb800436ee5cbff766970e441eb18eed7bfdaba3261d60de5b391a1",
+      "last_checked": "2025-06-06T02:43:17.770937",
+      "status": "unchanged",
+      "etag": "W/\"edf42d3ad6e2e716b04ac28682f384d1\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/localizedreason": {
+      "hash": "7e7945840eb800436ee5cbff766970e441eb18eed7bfdaba3261d60de5b391a1",
+      "last_checked": "2025-06-06T02:43:17.770937",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/localizedfallbacktitle.json": {
+      "hash": "3e7475a4162823fd606ae10ec65dd906dbf8494b8549f7f046d8c824eedb11ff",
+      "last_checked": "2025-06-06T02:43:18.192564",
+      "status": "unchanged",
+      "etag": "W/\"2292e43bb17972155f8cf5bc81c78b75\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/localizedfallbacktitle": {
+      "hash": "3e7475a4162823fd606ae10ec65dd906dbf8494b8549f7f046d8c824eedb11ff",
+      "last_checked": "2025-06-06T02:43:18.192564",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/localizedcanceltitle.json": {
+      "hash": "aeb396dcab9abc21cdcc26607e6a0b0a08f1c9f02872105833a22c82e0a0a811",
+      "last_checked": "2025-06-06T02:43:18.567043",
+      "status": "unchanged",
+      "etag": "W/\"503bd22cc278fd09cd5d51b2a7e24b90\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/localizedcanceltitle": {
+      "hash": "aeb396dcab9abc21cdcc26607e6a0b0a08f1c9f02872105833a22c82e0a0a811",
+      "last_checked": "2025-06-06T02:43:18.567043",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/touchidauthenticationallowablereuseduration.json": {
+      "hash": "f67a6e506658303c57912798dfef46564c4bd98a4625d6dc99368453aab0bc46",
+      "last_checked": "2025-06-06T02:43:18.916742",
+      "status": "unchanged",
+      "etag": "W/\"72afcb82568a3829a2c3a8cc64fe6905\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/touchidauthenticationallowablereuseduration": {
+      "hash": "f67a6e506658303c57912798dfef46564c4bd98a4625d6dc99368453aab0bc46",
+      "last_checked": "2025-06-06T02:43:18.916742",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/latouchidauthenticationmaximumallowablereuseduration.json": {
+      "hash": "df670fb5fbd5030551985b61f9b5ec8affc572882755f2d42f0a580e924d95c7",
+      "last_checked": "2025-06-06T02:43:19.293080",
+      "status": "unchanged",
+      "etag": "W/\"fcf10a20d4d97cc90bc8272f1b40d811\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/latouchidauthenticationmaximumallowablereuseduration": {
+      "hash": "df670fb5fbd5030551985b61f9b5ec8affc572882755f2d42f0a580e924d95c7",
+      "last_checked": "2025-06-06T02:43:19.293080",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/setcredential(_:type:).json": {
+      "hash": "5db704281db30082cde5ccd4423fac420a22503b33689430eab280ce126b3cb9",
+      "last_checked": "2025-06-06T02:43:19.696866",
+      "status": "unchanged",
+      "etag": "W/\"c6f4c6fa8edeac187f5f64bf0485d91f\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/setcredential(_:type:)": {
+      "hash": "5db704281db30082cde5ccd4423fac420a22503b33689430eab280ce126b3cb9",
+      "last_checked": "2025-06-06T02:43:19.696866",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/iscredentialset(_:).json": {
+      "hash": "5975ff15c21a5e113947360803ecde7f418960e61b7e08e43d547a169ab4498a",
+      "last_checked": "2025-06-06T02:43:20.074241",
+      "status": "unchanged",
+      "etag": "W/\"d83ce55d2ad71764d56d669d710e4172\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/iscredentialset(_:)": {
+      "hash": "5975ff15c21a5e113947360803ecde7f418960e61b7e08e43d547a169ab4498a",
+      "last_checked": "2025-06-06T02:43:20.074241",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacredentialtype.json": {
+      "hash": "564065feb6d8a5004221a9efd9a2822cb571ff104aef304bef88bf39f76f71fe",
+      "last_checked": "2025-06-06T02:43:20.469046",
+      "status": "unchanged",
+      "etag": "W/\"b3b468a770d0f9a10255cdd5ead3c2d1\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacredentialtype": {
+      "hash": "564065feb6d8a5004221a9efd9a2822cb571ff104aef304bef88bf39f76f71fe",
+      "last_checked": "2025-06-06T02:43:20.469046",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/invalidate().json": {
+      "hash": "833547b71c39125d94cc2c9e13690ca8795eddcdc915b0dc9257f6cd436bc1b0",
+      "last_checked": "2025-06-06T02:43:20.837876",
+      "status": "unchanged",
+      "etag": "W/\"df1fb99d32927c62c88c88b15cc2c829\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/invalidate()": {
+      "hash": "833547b71c39125d94cc2c9e13690ca8795eddcdc915b0dc9257f6cd436bc1b0",
+      "last_checked": "2025-06-06T02:43:20.837876",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/domainstate.json": {
+      "hash": "4529d2ad2f412e71e3ac0aef4b26efb99c269a6894980c16f5b09e35e270f2fa",
+      "last_checked": "2025-06-06T02:43:21.188472",
+      "status": "unchanged",
+      "etag": "W/\"5d8b9787e3c43cd735f024eccaf58ae5\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/domainstate": {
+      "hash": "4529d2ad2f412e71e3ac0aef4b26efb99c269a6894980c16f5b09e35e270f2fa",
+      "last_checked": "2025-06-06T02:43:21.188472",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/larightstore/shared.json": {
+      "hash": "0503e03cb91ec42429e30f58cb6cd6af62795c2c0e0519a2fd3f2fa6ba2b6608",
+      "last_checked": "2025-06-06T02:43:21.594183",
+      "status": "unchanged",
+      "etag": "W/\"d4d41a249fa9da142f6b7bc1d8302f45\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/larightstore/shared": {
+      "hash": "0503e03cb91ec42429e30f58cb6cd6af62795c2c0e0519a2fd3f2fa6ba2b6608",
+      "last_checked": "2025-06-06T02:43:21.594183",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/larightstore/right(foridentifier:completion:).json": {
+      "hash": "e80f6ecc8b7f690d0914b67db140f39f2b0fb01999d51d06a1b0fefa39f00c92",
+      "last_checked": "2025-06-06T02:43:21.993330",
+      "status": "unchanged",
+      "etag": "W/\"129fffc88f7dff15b402fd12139353a6\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/larightstore/right(foridentifier:completion:)": {
+      "hash": "e80f6ecc8b7f690d0914b67db140f39f2b0fb01999d51d06a1b0fefa39f00c92",
+      "last_checked": "2025-06-06T02:43:21.993330",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/larightstore/saveright(_:identifier:completion:).json": {
+      "hash": "55b51b2c4f9bb004d0f378c6c25446b2cf85a866939159b434c0ea306a7acda7",
+      "last_checked": "2025-06-06T02:43:22.356906",
+      "status": "unchanged",
+      "etag": "W/\"8fac9ff1eec357b9a18d517ef6087643\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/larightstore/saveright(_:identifier:completion:)": {
+      "hash": "55b51b2c4f9bb004d0f378c6c25446b2cf85a866939159b434c0ea306a7acda7",
+      "last_checked": "2025-06-06T02:43:22.356906",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/larightstore/saveright(_:identifier:secret:completion:).json": {
+      "hash": "960b20e27dc57d3478102681925ab569341ec95bb21b0bd597e2d5c6ddc63379",
+      "last_checked": "2025-06-06T02:43:22.766668",
+      "status": "unchanged",
+      "etag": "W/\"6b10489b14884376a171ee413f635c7b\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/larightstore/saveright(_:identifier:secret:completion:)": {
+      "hash": "960b20e27dc57d3478102681925ab569341ec95bb21b0bd597e2d5c6ddc63379",
+      "last_checked": "2025-06-06T02:43:22.766668",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/larightstore/removeright(_:completion:).json": {
+      "hash": "c2e21af8ea9c8ff3943b673b20a18a11291b8f6a503f7855943c3785c7471486",
+      "last_checked": "2025-06-06T02:43:23.146716",
+      "status": "unchanged",
+      "etag": "W/\"4fdecd30f3761c9724df65c5d5221658\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/larightstore/removeright(_:completion:)": {
+      "hash": "c2e21af8ea9c8ff3943b673b20a18a11291b8f6a503f7855943c3785c7471486",
+      "last_checked": "2025-06-06T02:43:23.146716",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/larightstore/removeright(foridentifier:completion:).json": {
+      "hash": "6ee56a8bde2fb2bbc8cedca991cb638a9243a790a71da019fd19363398074a7a",
+      "last_checked": "2025-06-06T02:43:23.483275",
+      "status": "unchanged",
+      "etag": "W/\"c8d46365bded4fb02d2c5554e9c8efaa\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/larightstore/removeright(foridentifier:completion:)": {
+      "hash": "6ee56a8bde2fb2bbc8cedca991cb638a9243a790a71da019fd19363398074a7a",
+      "last_checked": "2025-06-06T02:43:23.483275",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/larightstore/removeallrights(completion:).json": {
+      "hash": "1acb6a11f32f5a0b9d2c1933c85d96c7f76478e589698c5e1f4ddb69d7e53e21",
+      "last_checked": "2025-06-06T02:43:23.838716",
+      "status": "unchanged",
+      "etag": "W/\"e2419a47db9c77a8061ffa2e1cf29afc\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/larightstore/removeallrights(completion:)": {
+      "hash": "1acb6a11f32f5a0b9d2c1933c85d96c7f76478e589698c5e1f4ddb69d7e53e21",
+      "last_checked": "2025-06-06T02:43:23.838716",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapersistedright/key.json": {
+      "hash": "dd3b290feec5e73c41ff3de41eb03655fbc0b58713bc3b4c5804e63cfb239ecc",
+      "last_checked": "2025-06-06T02:43:24.156864",
+      "status": "unchanged",
+      "etag": "W/\"06662ce6fe521f1d022e85ca6b443643\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapersistedright/key": {
+      "hash": "dd3b290feec5e73c41ff3de41eb03655fbc0b58713bc3b4c5804e63cfb239ecc",
+      "last_checked": "2025-06-06T02:43:24.156864",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapersistedright/secret.json": {
+      "hash": "fa0b1f74c94814e79c248e9e1d691e2c4ce3efd3b3bfe9ded4e6ef11cc1c8ebc",
+      "last_checked": "2025-06-06T02:43:24.819680",
+      "status": "unchanged",
+      "etag": "W/\"35444fceab5fe7e1557ad78948d373c6\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapersistedright/secret": {
+      "hash": "fa0b1f74c94814e79c248e9e1d691e2c4ce3efd3b3bfe9ded4e6ef11cc1c8ebc",
+      "last_checked": "2025-06-06T02:43:24.819680",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lasecret/loaddata(completion:).json": {
+      "hash": "a4c35426f1cc27f9efa995aeada387aa0b59d23f1283c4f90ceedc369268d2a2",
+      "last_checked": "2025-06-06T02:43:25.358239",
+      "status": "unchanged",
+      "etag": "W/\"2a60ea7c902ae634e7a5de3e6c4601dd\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lasecret/loaddata(completion:)": {
+      "hash": "a4c35426f1cc27f9efa995aeada387aa0b59d23f1283c4f90ceedc369268d2a2",
+      "last_checked": "2025-06-06T02:43:25.358239",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapublickey/canencrypt(using:).json": {
+      "hash": "3b39169e783e876cb7f9aadf151bac3010967df51166d39ebc79d2df7d0b3546",
+      "last_checked": "2025-06-06T02:43:25.870351",
+      "status": "unchanged",
+      "etag": "W/\"e3b74b8334c66e84c1d930db76caf6c0\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapublickey/canencrypt(using:)": {
+      "hash": "3b39169e783e876cb7f9aadf151bac3010967df51166d39ebc79d2df7d0b3546",
+      "last_checked": "2025-06-06T02:43:25.870351",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapublickey/canverify(using:).json": {
+      "hash": "958d904a7e3e02fbaaa058960e9b7253565d885067d7bed4c39b6cb497053f7c",
+      "last_checked": "2025-06-06T02:43:26.402425",
+      "status": "unchanged",
+      "etag": "W/\"cc0335877e4a41f5c32819bc04713d83\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapublickey/canverify(using:)": {
+      "hash": "958d904a7e3e02fbaaa058960e9b7253565d885067d7bed4c39b6cb497053f7c",
+      "last_checked": "2025-06-06T02:43:26.402425",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapublickey/encrypt(_:algorithm:completion:).json": {
+      "hash": "f3506f4997bce72ba1d78495b72b822ed60dad08a997b7f365d0e439a3185eb8",
+      "last_checked": "2025-06-06T02:43:27.047627",
+      "status": "unchanged",
+      "etag": "W/\"698cf65fa9a4d158660a3fc47d5445e7\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapublickey/encrypt(_:algorithm:completion:)": {
+      "hash": "f3506f4997bce72ba1d78495b72b822ed60dad08a997b7f365d0e439a3185eb8",
+      "last_checked": "2025-06-06T02:43:27.047627",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapublickey/exportbytes(completion:).json": {
+      "hash": "6e65ff9642175e7d3375b9f3f6db506896925ed3168cc16cc16142daaea096ac",
+      "last_checked": "2025-06-06T02:43:27.542815",
+      "status": "unchanged",
+      "etag": "W/\"419a9562e9a581e74ebd3db502196141\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapublickey/exportbytes(completion:)": {
+      "hash": "6e65ff9642175e7d3375b9f3f6db506896925ed3168cc16cc16142daaea096ac",
+      "last_checked": "2025-06-06T02:43:27.542815",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapublickey/verify(_:signature:algorithm:completion:).json": {
+      "hash": "ca239335a9d0b43b534036df02dbb8f7b4e58ad4f75be7f53c0ffa3b5a215d6d",
+      "last_checked": "2025-06-06T02:43:27.953107",
+      "status": "unchanged",
+      "etag": "W/\"275ed98dbb4627ddbb5d492a8a009172\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapublickey/verify(_:signature:algorithm:completion:)": {
+      "hash": "ca239335a9d0b43b534036df02dbb8f7b4e58ad4f75be7f53c0ffa3b5a215d6d",
+      "last_checked": "2025-06-06T02:43:27.953107",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laprivatekey/publickey.json": {
+      "hash": "bb7fa25822e718d4ac5ac82000190f8d757bc5fc28f54e6173e675890735f82c",
+      "last_checked": "2025-06-06T02:43:28.332320",
+      "status": "unchanged",
+      "etag": "W/\"e217cb5eaa31d459a0e6add03d06f156\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laprivatekey/publickey": {
+      "hash": "bb7fa25822e718d4ac5ac82000190f8d757bc5fc28f54e6173e675890735f82c",
+      "last_checked": "2025-06-06T02:43:28.332320",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laprivatekey/candecrypt(using:).json": {
+      "hash": "d42721b70c3bf30c796acd084972cfc8aa9625cdafc75b5f2558b7eb78e2f30d",
+      "last_checked": "2025-06-06T02:43:28.989679",
+      "status": "unchanged",
+      "etag": "W/\"1914c8fec64c27bd43ba7c48be175805\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laprivatekey/candecrypt(using:)": {
+      "hash": "d42721b70c3bf30c796acd084972cfc8aa9625cdafc75b5f2558b7eb78e2f30d",
+      "last_checked": "2025-06-06T02:43:28.989679",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laprivatekey/canexchangekeys(using:).json": {
+      "hash": "dc722b0d808d6c16e1132d20e9d2a8824afb7c330fa6eafce7446e46881a061b",
+      "last_checked": "2025-06-06T02:43:29.524361",
+      "status": "unchanged",
+      "etag": "W/\"1961238f69c060550b1cb27f89516e73\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laprivatekey/canexchangekeys(using:)": {
+      "hash": "dc722b0d808d6c16e1132d20e9d2a8824afb7c330fa6eafce7446e46881a061b",
+      "last_checked": "2025-06-06T02:43:29.524361",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laprivatekey/cansign(using:).json": {
+      "hash": "001fa71ea99b7749ad15316ec0e36caf3c38ec258532e62d88e57f17d6593aa5",
+      "last_checked": "2025-06-06T02:43:30.034273",
+      "status": "unchanged",
+      "etag": "W/\"c90b2ba89c4dfdb880e6e5ee5efb0031\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laprivatekey/cansign(using:)": {
+      "hash": "001fa71ea99b7749ad15316ec0e36caf3c38ec258532e62d88e57f17d6593aa5",
+      "last_checked": "2025-06-06T02:43:30.034273",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laprivatekey/decrypt(_:algorithm:completion:).json": {
+      "hash": "40d7ec8d7cf97330d758ff7051ee93b305e02b6caf7ad3ec61f21361ecac29aa",
+      "last_checked": "2025-06-06T02:43:30.441960",
+      "status": "unchanged",
+      "etag": "W/\"385e67227e990199f531ec7c7680e8f7\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laprivatekey/decrypt(_:algorithm:completion:)": {
+      "hash": "40d7ec8d7cf97330d758ff7051ee93b305e02b6caf7ad3ec61f21361ecac29aa",
+      "last_checked": "2025-06-06T02:43:30.441960",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laprivatekey/exchangekeys(publickey:algorithm:parameters:completion:).json": {
+      "hash": "d85191b1be79745725e87af23c2a0e3fe89565accfe635e7cea27e44dc15a42d",
+      "last_checked": "2025-06-06T02:43:30.912906",
+      "status": "unchanged",
+      "etag": "W/\"9e34b473d2d3913a9212523c25bbfaf3\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laprivatekey/exchangekeys(publickey:algorithm:parameters:completion:)": {
+      "hash": "d85191b1be79745725e87af23c2a0e3fe89565accfe635e7cea27e44dc15a42d",
+      "last_checked": "2025-06-06T02:43:30.912906",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laprivatekey/sign(_:algorithm:completion:).json": {
+      "hash": "1f2e037e02f8301ad1a12199f1515edafe47ffd7ffaabf7b2e561511a6e0bf8a",
+      "last_checked": "2025-06-06T02:43:31.326357",
+      "status": "unchanged",
+      "etag": "W/\"cfeb359fb0c4b09931cb42b7b429f504\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laprivatekey/sign(_:algorithm:completion:)": {
+      "hash": "1f2e037e02f8301ad1a12199f1515edafe47ffd7ffaabf7b2e561511a6e0bf8a",
+      "last_checked": "2025-06-06T02:43:31.326357",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laauthenticationrequirement/default.json": {
+      "hash": "426c2b17a9eb53e5b6b2f0b8cfd0209f8593be368c5bad2b95219f90d07f374d",
+      "last_checked": "2025-06-06T02:43:31.726548",
+      "status": "unchanged",
+      "etag": "W/\"5fc6dd211aa610a5ff1c61535d8c4b81\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laauthenticationrequirement/default": {
+      "hash": "426c2b17a9eb53e5b6b2f0b8cfd0209f8593be368c5bad2b95219f90d07f374d",
+      "last_checked": "2025-06-06T02:43:31.726548",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laauthenticationrequirement/biometry.json": {
+      "hash": "f5ffbf68a29a29c2b872c7fbeb8b0cf4b6eca5e733859005e5b0deabf2f51526",
+      "last_checked": "2025-06-06T02:43:32.264316",
+      "status": "unchanged",
+      "etag": "W/\"785f0c7347e65d98ef77925bb40c5a8e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laauthenticationrequirement/biometry": {
+      "hash": "f5ffbf68a29a29c2b872c7fbeb8b0cf4b6eca5e733859005e5b0deabf2f51526",
+      "last_checked": "2025-06-06T02:43:32.264316",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laauthenticationrequirement/biometrycurrentset.json": {
+      "hash": "44dce1b7c4a962d1f3f068d45ba020f522410ee48914a2f276451036935c2867",
+      "last_checked": "2025-06-06T02:43:32.640864",
+      "status": "unchanged",
+      "etag": "W/\"763d6484a7ac720eb9d4273fa4726b1b\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laauthenticationrequirement/biometrycurrentset": {
+      "hash": "44dce1b7c4a962d1f3f068d45ba020f522410ee48914a2f276451036935c2867",
+      "last_checked": "2025-06-06T02:43:32.640864",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laauthenticationrequirement/biometry(fallback:).json": {
+      "hash": "834a820cd9f955775a5df99b3133a9bf36f9a5afe65b7a45cf51cb7b6095ea4b",
+      "last_checked": "2025-06-06T02:43:33.049231",
+      "status": "unchanged",
+      "etag": "W/\"3567ecfc43f7a423d32f04262af989e5\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laauthenticationrequirement/biometry(fallback:)": {
+      "hash": "834a820cd9f955775a5df99b3133a9bf36f9a5afe65b7a45cf51cb7b6095ea4b",
+      "last_checked": "2025-06-06T02:43:33.049231",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/labiometryfallbackrequirement/default.json": {
+      "hash": "6e6413ba48a48e7289a3d7e3772cbd100112eb6e4ebe60081571b818d89999bc",
+      "last_checked": "2025-06-06T02:43:33.465878",
+      "status": "unchanged",
+      "etag": "W/\"ee545f4f1aacfa777c09a6224b4b61eb\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/labiometryfallbackrequirement/default": {
+      "hash": "6e6413ba48a48e7289a3d7e3772cbd100112eb6e4ebe60081571b818d89999bc",
+      "last_checked": "2025-06-06T02:43:33.465878",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/labiometryfallbackrequirement/devicepasscode.json": {
+      "hash": "4385afbbe1fe185ad9dc01d9ab2a6311e34aa581efa13acddaac944fda724bcd",
+      "last_checked": "2025-06-06T02:43:33.886355",
+      "status": "unchanged",
+      "etag": "W/\"3a7aba14041dd36d90cd9763acda4401\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/labiometryfallbackrequirement/devicepasscode": {
+      "hash": "4385afbbe1fe185ad9dc01d9ab2a6311e34aa581efa13acddaac944fda724bcd",
+      "last_checked": "2025-06-06T02:43:33.886355",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/localauthenticationview/init(reason:context:result:label:).json": {
+      "hash": "c6f6976c160ef8126eb11528aac6f11221f5f64cfd4095a4b58f075b22c0bd7f",
+      "last_checked": "2025-06-06T02:43:34.303061",
+      "status": "unchanged",
+      "etag": "W/\"038330b70a8d792acbc828a57904917d\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/localauthenticationview/init(reason:context:result:label:)": {
+      "hash": "c6f6976c160ef8126eb11528aac6f11221f5f64cfd4095a4b58f075b22c0bd7f",
+      "last_checked": "2025-06-06T02:43:34.303061",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/localauthenticationview/init(_:reason:context:result:)-8ubaq.json": {
+      "hash": "bd30760b486f3109891a061207fc32caf520d73a3454b5b9d1e751facc342f06",
+      "last_checked": "2025-06-06T02:43:34.725574",
+      "status": "unchanged",
+      "etag": "W/\"3adc6ed906754ba0960a5c5a268b489c\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/localauthenticationview/init(_:reason:context:result:)-8ubaq": {
+      "hash": "bd30760b486f3109891a061207fc32caf520d73a3454b5b9d1e751facc342f06",
+      "last_checked": "2025-06-06T02:43:34.725574",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/localauthenticationview/init(_:reason:context:result:)-917ds.json": {
+      "hash": "f99f43c8e945536803d08c7ceffc231dd7e86efe33409cc32a03be461ed897d2",
+      "last_checked": "2025-06-06T02:43:35.120205",
+      "status": "unchanged",
+      "etag": "W/\"147e43b6425c6f38c32f4465c4462959\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/localauthenticationview/init(_:reason:context:result:)-917ds": {
+      "hash": "f99f43c8e945536803d08c7ceffc231dd7e86efe33409cc32a03be461ed897d2",
+      "last_checked": "2025-06-06T02:43:35.120205",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/localauthenticationview/init(_:reason:context:result:)-4pkpi.json": {
+      "hash": "041fb7b1acfdddac0e9126fa3e5e192602dcdc9641ef794aaea2bd869b6825c9",
+      "last_checked": "2025-06-06T02:43:35.515874",
+      "status": "unchanged",
+      "etag": "W/\"326ba05cbf44f105e7cfc166a95d2360\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/localauthenticationview/init(_:reason:context:result:)-4pkpi": {
+      "hash": "041fb7b1acfdddac0e9126fa3e5e192602dcdc9641ef794aaea2bd869b6825c9",
+      "last_checked": "2025-06-06T02:43:35.515874",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/localauthenticationview/init(_:context:)-9xeoo.json": {
+      "hash": "e44ad72ce7178ddb25824c75ab2fa26dbb7a793d1d18b76521a1755b2944fb84",
+      "last_checked": "2025-06-06T02:43:35.945178",
+      "status": "unchanged",
+      "etag": "W/\"1377c157da1fa51ebf694d44d366a351\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/localauthenticationview/init(_:context:)-9xeoo": {
+      "hash": "e44ad72ce7178ddb25824c75ab2fa26dbb7a793d1d18b76521a1755b2944fb84",
+      "last_checked": "2025-06-06T02:43:35.945178",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/localauthenticationview/init(context:label:).json": {
+      "hash": "bcadd8561edbdbf607bfcd93baee47cedcf7685a689a0cc4ebd249b3235bad2e",
+      "last_checked": "2025-06-06T02:43:36.464986",
+      "status": "unchanged",
+      "etag": "W/\"11cdb0fa92f94ea791fe682250eee799\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/localauthenticationview/init(context:label:)": {
+      "hash": "bcadd8561edbdbf607bfcd93baee47cedcf7685a689a0cc4ebd249b3235bad2e",
+      "last_checked": "2025-06-06T02:43:36.464986",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/localauthenticationview/init(_:context:)-676qx.json": {
+      "hash": "a1d3eac0d2caad4f7a077bf2ceefe55cfe36da371ce7716c015b4a7a80b4c681",
+      "last_checked": "2025-06-06T02:43:36.926402",
+      "status": "unchanged",
+      "etag": "W/\"6f1848105dcd293671de9faf984aaf23\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/localauthenticationview/init(_:context:)-676qx": {
+      "hash": "a1d3eac0d2caad4f7a077bf2ceefe55cfe36da371ce7716c015b4a7a80b4c681",
+      "last_checked": "2025-06-06T02:43:36.926402",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/appcancel.json": {
+      "hash": "9a663862ec790da491f0c4aecea5fd501e8443da69a4db2ff31f7e5d88f16d70",
+      "last_checked": "2025-06-06T02:43:37.362313",
+      "status": "unchanged",
+      "etag": "W/\"a3ef41d2f57a0931a425f26b5a5f02c9\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/appcancel": {
+      "hash": "9a663862ec790da491f0c4aecea5fd501e8443da69a4db2ff31f7e5d88f16d70",
+      "last_checked": "2025-06-06T02:43:37.362313",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/systemcancel.json": {
+      "hash": "d1a51bec405e405d6404a26363737ca331e31188c6aafcc22713cf45ee3ecc66",
+      "last_checked": "2025-06-06T02:43:37.765579",
+      "status": "unchanged",
+      "etag": "W/\"0df8e25816c7fbb98670fd84ff2f297a\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/systemcancel": {
+      "hash": "d1a51bec405e405d6404a26363737ca331e31188c6aafcc22713cf45ee3ecc66",
+      "last_checked": "2025-06-06T02:43:37.765579",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/usercancel.json": {
+      "hash": "66ea4c32249d656e4f88b0430e612a0b942981dd5a663039aa470f3e2f6a5225",
+      "last_checked": "2025-06-06T02:43:38.249180",
+      "status": "unchanged",
+      "etag": "W/\"5c67971de4d3bda1f7a51cc85fcc5b15\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/usercancel": {
+      "hash": "66ea4c32249d656e4f88b0430e612a0b942981dd5a663039aa470f3e2f6a5225",
+      "last_checked": "2025-06-06T02:43:38.249180",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/biometrydisconnected.json": {
+      "hash": "bbb861d6740b997d17733dfd557920d03f4b14b62746be9048ebfd69b26fd1b8",
+      "last_checked": "2025-06-06T02:43:38.628867",
+      "status": "unchanged",
+      "etag": "W/\"f2b73e778a5804fc9dba32c118e91e18\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/biometrydisconnected": {
+      "hash": "bbb861d6740b997d17733dfd557920d03f4b14b62746be9048ebfd69b26fd1b8",
+      "last_checked": "2025-06-06T02:43:38.628867",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/biometrylockout.json": {
+      "hash": "c2d07ba734c43c5ba3c0b60be194ec7bc2f765edb1b78901e0a2ceab96f766a1",
+      "last_checked": "2025-06-06T02:43:39.029663",
+      "status": "unchanged",
+      "etag": "W/\"0b4e598336be0268dbf5b28f80310364\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/biometrylockout": {
+      "hash": "c2d07ba734c43c5ba3c0b60be194ec7bc2f765edb1b78901e0a2ceab96f766a1",
+      "last_checked": "2025-06-06T02:43:39.029663",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/biometrynotavailable.json": {
+      "hash": "44314472f0723240fef87b62d25b96cebe128acade3a7d7290e9676c0e2e77c5",
+      "last_checked": "2025-06-06T02:43:39.438369",
+      "status": "unchanged",
+      "etag": "W/\"ad22564671c39a9d47350c3543e072bb\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/biometrynotavailable": {
+      "hash": "44314472f0723240fef87b62d25b96cebe128acade3a7d7290e9676c0e2e77c5",
+      "last_checked": "2025-06-06T02:43:39.438369",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/biometrynotenrolled.json": {
+      "hash": "372dd56da0203a98d172a636adfe3c50b97bffbaea927a4d33b65de8b6d0d973",
+      "last_checked": "2025-06-06T02:43:39.832262",
+      "status": "unchanged",
+      "etag": "W/\"0d2c8ba5d19c28471b4c1adb55771c49\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/biometrynotenrolled": {
+      "hash": "372dd56da0203a98d172a636adfe3c50b97bffbaea927a4d33b65de8b6d0d973",
+      "last_checked": "2025-06-06T02:43:39.832262",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/biometrynotpaired.json": {
+      "hash": "624084e006cc9e3e47791b4c1322a1783d3cc82598df4edaaa4c0bcbde97849e",
+      "last_checked": "2025-06-06T02:43:40.234401",
+      "status": "unchanged",
+      "etag": "W/\"aadb91afc182a0d8f20b2b0b77bc2fdc\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/biometrynotpaired": {
+      "hash": "624084e006cc9e3e47791b4c1322a1783d3cc82598df4edaaa4c0bcbde97849e",
+      "last_checked": "2025-06-06T02:43:40.234401",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/touchidlockout.json": {
+      "hash": "dae56d0af4c8216fcb350f5de45b7f3a4f17f9f56ab399ffafb2fe4e42815e6c",
+      "last_checked": "2025-06-06T02:43:40.653427",
+      "status": "unchanged",
+      "etag": "W/\"e6fc8af000a3d4825b10c8d83771ac01\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/touchidlockout": {
+      "hash": "dae56d0af4c8216fcb350f5de45b7f3a4f17f9f56ab399ffafb2fe4e42815e6c",
+      "last_checked": "2025-06-06T02:43:40.653427",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/touchidnotavailable.json": {
+      "hash": "cd5d0300e15186f4b2381b9b9c65dbf4e9b185a91013bb51c9cd65811269a73c",
+      "last_checked": "2025-06-06T02:43:41.060692",
+      "status": "unchanged",
+      "etag": "W/\"315c0ca27729cbe83ce136a3c05baa05\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/touchidnotavailable": {
+      "hash": "cd5d0300e15186f4b2381b9b9c65dbf4e9b185a91013bb51c9cd65811269a73c",
+      "last_checked": "2025-06-06T02:43:41.060692",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/touchidnotenrolled.json": {
+      "hash": "68749dbd062990c5048cad54435e04a82fdee7ea05e2b4739e1f0a50d909db64",
+      "last_checked": "2025-06-06T02:43:41.446605",
+      "status": "unchanged",
+      "etag": "W/\"8f6dd0fef6bde8d5a905153d2b51f8e2\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/touchidnotenrolled": {
+      "hash": "68749dbd062990c5048cad54435e04a82fdee7ea05e2b4739e1f0a50d909db64",
+      "last_checked": "2025-06-06T02:43:41.446605",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/authenticationfailed.json": {
+      "hash": "3ad8f25ad8f8646b4b9132691a73cc164410247f936087fdcb8a3ff0c2ccd46f",
+      "last_checked": "2025-06-06T02:43:41.863413",
+      "status": "unchanged",
+      "etag": "W/\"5b8cfed2da1986a5062709d1a33fd0bc\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/authenticationfailed": {
+      "hash": "3ad8f25ad8f8646b4b9132691a73cc164410247f936087fdcb8a3ff0c2ccd46f",
+      "last_checked": "2025-06-06T02:43:41.863413",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/invalidcontext.json": {
+      "hash": "fb7c4c9b43198d7a9e817f8e5639564bee610cb962b68f64b085f2ff24d69524",
+      "last_checked": "2025-06-06T02:43:42.278540",
+      "status": "unchanged",
+      "etag": "W/\"3f1a2b8485239f5547940cd80904c778\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/invalidcontext": {
+      "hash": "fb7c4c9b43198d7a9e817f8e5639564bee610cb962b68f64b085f2ff24d69524",
+      "last_checked": "2025-06-06T02:43:42.278540",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/invaliddimensions.json": {
+      "hash": "0f107ea698182ca33dbb845fa5322805c2d928ff553887b518930a056a829de5",
+      "last_checked": "2025-06-06T02:43:42.707729",
+      "status": "unchanged",
+      "etag": "W/\"a0e19ef217973cf56515339a174ef9d0\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/invaliddimensions": {
+      "hash": "0f107ea698182ca33dbb845fa5322805c2d928ff553887b518930a056a829de5",
+      "last_checked": "2025-06-06T02:43:42.707729",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/notinteractive.json": {
+      "hash": "3084a8260df1883139a934809200dc3a9c76d8891a6eb6c77cdf3701883b8dad",
+      "last_checked": "2025-06-06T02:43:43.151500",
+      "status": "unchanged",
+      "etag": "W/\"2db76c4d2c13e40f8e6ef52a4a179eb2\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/notinteractive": {
+      "hash": "3084a8260df1883139a934809200dc3a9c76d8891a6eb6c77cdf3701883b8dad",
+      "last_checked": "2025-06-06T02:43:43.151500",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/passcodenotset.json": {
+      "hash": "a4ed42285dfbfacaf083d5b92db1cb397956c50f856aeb9d57fcf9f86914934a",
+      "last_checked": "2025-06-06T02:43:43.546673",
+      "status": "unchanged",
+      "etag": "W/\"cd6788e863dd6e79817aecbad422a315\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/passcodenotset": {
+      "hash": "a4ed42285dfbfacaf083d5b92db1cb397956c50f856aeb9d57fcf9f86914934a",
+      "last_checked": "2025-06-06T02:43:43.546673",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/userfallback.json": {
+      "hash": "0cc0d98e1e9fcde855d2ad9f568cc0ce0b0c11c09c227c78f6df06ea1d1f83e2",
+      "last_checked": "2025-06-06T02:43:44.160617",
+      "status": "unchanged",
+      "etag": "W/\"b97f6a63984d6161c4d7e1d39df5bac0\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/userfallback": {
+      "hash": "0cc0d98e1e9fcde855d2ad9f568cc0ce0b0c11c09c227c78f6df06ea1d1f83e2",
+      "last_checked": "2025-06-06T02:43:44.160617",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/watchnotavailable.json": {
+      "hash": "a2fd3a02cad4007d7968f46f6ac70e8fe6ade4efc2fc3dbfa05cf91ff615675f",
+      "last_checked": "2025-06-06T02:43:44.583854",
+      "status": "unchanged",
+      "etag": "W/\"ad6a3e3103f011b23f887440060ccb03\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/watchnotavailable": {
+      "hash": "a2fd3a02cad4007d7968f46f6ac70e8fe6ade4efc2fc3dbfa05cf91ff615675f",
+      "last_checked": "2025-06-06T02:43:44.583854",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/companionnotavailable.json": {
+      "hash": "4205a849606333d13ccae2e73d39eeccfc11b75db9e0e2782647eb3762cad997",
+      "last_checked": "2025-06-06T02:43:44.995641",
+      "status": "unchanged",
+      "etag": "W/\"952ecc039e153df256ece19dece94d97\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/companionnotavailable": {
+      "hash": "4205a849606333d13ccae2e73d39eeccfc11b75db9e0e2782647eb3762cad997",
+      "last_checked": "2025-06-06T02:43:44.995641",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/errordomain.json": {
+      "hash": "12714b99ba8f64fb1f1fd7c5baaf8ebb295276789403fc32237c75bf9faa8eaa",
+      "last_checked": "2025-06-06T02:43:45.425608",
+      "status": "unchanged",
+      "etag": "W/\"71c877445dfc03d092870839e780b214\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/errordomain": {
+      "hash": "12714b99ba8f64fb1f1fd7c5baaf8ebb295276789403fc32237c75bf9faa8eaa",
+      "last_checked": "2025-06-06T02:43:45.425608",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/appcancel.json": {
+      "hash": "f54c14e9a16f837bb3f2b3d70fbc220066d20cd66eb29d8af878ec82f9f5066b",
+      "last_checked": "2025-06-06T02:43:45.857068",
+      "status": "unchanged",
+      "etag": "W/\"88228b35339550966881e83884382635\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/appcancel": {
+      "hash": "f54c14e9a16f837bb3f2b3d70fbc220066d20cd66eb29d8af878ec82f9f5066b",
+      "last_checked": "2025-06-06T02:43:45.857068",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/systemcancel.json": {
+      "hash": "35516aa35d9c705f9503abb35e0cede62e1e2b6f574f0e3b9bb9d329caa69365",
+      "last_checked": "2025-06-06T02:43:46.287167",
+      "status": "unchanged",
+      "etag": "W/\"8b86effc9b7b4bc08de760091b6e04ea\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/systemcancel": {
+      "hash": "35516aa35d9c705f9503abb35e0cede62e1e2b6f574f0e3b9bb9d329caa69365",
+      "last_checked": "2025-06-06T02:43:46.287167",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/usercancel.json": {
+      "hash": "4be3aa4f862bd7402de504e991cd51e7e94e256ed8682c1fe681bee80faee5fa",
+      "last_checked": "2025-06-06T02:43:46.670174",
+      "status": "unchanged",
+      "etag": "W/\"5acdfe7c79c2a50727e32395a4778b1a\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/usercancel": {
+      "hash": "4be3aa4f862bd7402de504e991cd51e7e94e256ed8682c1fe681bee80faee5fa",
+      "last_checked": "2025-06-06T02:43:46.670174",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/biometrydisconnected.json": {
+      "hash": "8f60f4522450ecfb6bd2812165124fc37236b3cd7135af8b5656b063e1b62883",
+      "last_checked": "2025-06-06T02:43:47.181319",
+      "status": "unchanged",
+      "etag": "W/\"ad1c9dfcf39afa4376c9f05304dd0712\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/biometrydisconnected": {
+      "hash": "8f60f4522450ecfb6bd2812165124fc37236b3cd7135af8b5656b063e1b62883",
+      "last_checked": "2025-06-06T02:43:47.181319",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/biometrylockout.json": {
+      "hash": "28bfe3ee6754f20fb6c024325827336fb45ae26d487c69886e17cb96e4fd8dca",
+      "last_checked": "2025-06-06T02:43:47.628354",
+      "status": "unchanged",
+      "etag": "W/\"1e40630153658aa3372984aa46ac8b34\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/biometrylockout": {
+      "hash": "28bfe3ee6754f20fb6c024325827336fb45ae26d487c69886e17cb96e4fd8dca",
+      "last_checked": "2025-06-06T02:43:47.628354",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/biometrynotavailable.json": {
+      "hash": "5ed66e3a3e5f446e77903181c82f74452f0a2b28a2e46de48ca483025ec36dbb",
+      "last_checked": "2025-06-06T02:43:48.042784",
+      "status": "unchanged",
+      "etag": "W/\"f3c8760ff440bbdf73066aa2ceb6535c\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/biometrynotavailable": {
+      "hash": "5ed66e3a3e5f446e77903181c82f74452f0a2b28a2e46de48ca483025ec36dbb",
+      "last_checked": "2025-06-06T02:43:48.042784",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/biometrynotenrolled.json": {
+      "hash": "fa819701938b16a1ffa247974d0e4e1bf3cce7c6b99ab9f5738c38fc4a437f87",
+      "last_checked": "2025-06-06T02:43:48.473549",
+      "status": "unchanged",
+      "etag": "W/\"009eca95b77de93b4f32e961b6c6ca93\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/biometrynotenrolled": {
+      "hash": "fa819701938b16a1ffa247974d0e4e1bf3cce7c6b99ab9f5738c38fc4a437f87",
+      "last_checked": "2025-06-06T02:43:48.473549",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/biometrynotpaired.json": {
+      "hash": "d6eca0a5ee4374cc90aeb3a05a83f9261c7c34af9198a531039fbbce945e73ee",
+      "last_checked": "2025-06-06T02:43:48.858072",
+      "status": "unchanged",
+      "etag": "W/\"031b92eb2dbdfe4ebbfb1ccf45406eb8\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/biometrynotpaired": {
+      "hash": "d6eca0a5ee4374cc90aeb3a05a83f9261c7c34af9198a531039fbbce945e73ee",
+      "last_checked": "2025-06-06T02:43:48.858072",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/touchidlockout.json": {
+      "hash": "b31e4b2ad2eb967c8119b38a586dc00eb95c026edb9dae78804472d43bfa61df",
+      "last_checked": "2025-06-06T02:43:49.279505",
+      "status": "unchanged",
+      "etag": "W/\"503516d4ec490d20a7ce2b86926e9fa8\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/touchidlockout": {
+      "hash": "b31e4b2ad2eb967c8119b38a586dc00eb95c026edb9dae78804472d43bfa61df",
+      "last_checked": "2025-06-06T02:43:49.279505",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/touchidnotavailable.json": {
+      "hash": "3504bce3135609f2fb360346d4b4235bb610c48833be1b03a25dc70bd5f5e9b2",
+      "last_checked": "2025-06-06T02:43:49.758247",
+      "status": "unchanged",
+      "etag": "W/\"94c7eeb338d4b3b61de5ba9973c71d19\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/touchidnotavailable": {
+      "hash": "3504bce3135609f2fb360346d4b4235bb610c48833be1b03a25dc70bd5f5e9b2",
+      "last_checked": "2025-06-06T02:43:49.758247",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/touchidnotenrolled.json": {
+      "hash": "b773d6ac377856f0fb069b2829680ada247edb00ba0c7fc2b03cf8c34c184440",
+      "last_checked": "2025-06-06T02:43:50.188119",
+      "status": "unchanged",
+      "etag": "W/\"8595a2a7e945879ee90ccd0eedea8dd9\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/touchidnotenrolled": {
+      "hash": "b773d6ac377856f0fb069b2829680ada247edb00ba0c7fc2b03cf8c34c184440",
+      "last_checked": "2025-06-06T02:43:50.188119",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/authenticationfailed.json": {
+      "hash": "f6be35bcc87ce67c766454c8478b929a539d86a8f12dac0262d89e39f1361ccd",
+      "last_checked": "2025-06-06T02:43:50.609370",
+      "status": "unchanged",
+      "etag": "W/\"969d6b19e8ac9329d4497579bf084baa\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/authenticationfailed": {
+      "hash": "f6be35bcc87ce67c766454c8478b929a539d86a8f12dac0262d89e39f1361ccd",
+      "last_checked": "2025-06-06T02:43:50.609370",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/invalidcontext.json": {
+      "hash": "9f13582f7603d1444da74f09570bbd0535540d73ecfb8f1604c9601677e3ce80",
+      "last_checked": "2025-06-06T02:43:51.044833",
+      "status": "unchanged",
+      "etag": "W/\"2ce2a99c395a2be8984134e993a1a72e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/invalidcontext": {
+      "hash": "9f13582f7603d1444da74f09570bbd0535540d73ecfb8f1604c9601677e3ce80",
+      "last_checked": "2025-06-06T02:43:51.044833",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/invaliddimensions.json": {
+      "hash": "da8e32e494993eb6d6bb8db8aee8ec28d4039e8615e5f6d8023fd5a12940079b",
+      "last_checked": "2025-06-06T02:43:51.491823",
+      "status": "unchanged",
+      "etag": "W/\"2b7cdcbe4bed34e98faadc046b978f89\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/invaliddimensions": {
+      "hash": "da8e32e494993eb6d6bb8db8aee8ec28d4039e8615e5f6d8023fd5a12940079b",
+      "last_checked": "2025-06-06T02:43:51.491823",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/notinteractive.json": {
+      "hash": "e546933485a8fd8e5f12525d0052fc8f1fcbc3ac4a6c3a4e3323aa89360204af",
+      "last_checked": "2025-06-06T02:43:51.922308",
+      "status": "unchanged",
+      "etag": "W/\"26521989463ff4900772ed638e6efd20\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/notinteractive": {
+      "hash": "e546933485a8fd8e5f12525d0052fc8f1fcbc3ac4a6c3a4e3323aa89360204af",
+      "last_checked": "2025-06-06T02:43:51.922308",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/passcodenotset.json": {
+      "hash": "ccf1fd70272898d687e9d2cd23fc55be6dd60cb8052aea71f7899148980388c1",
+      "last_checked": "2025-06-06T02:43:52.377793",
+      "status": "unchanged",
+      "etag": "W/\"2a340b70481b3f454808b414a8471261\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/passcodenotset": {
+      "hash": "ccf1fd70272898d687e9d2cd23fc55be6dd60cb8052aea71f7899148980388c1",
+      "last_checked": "2025-06-06T02:43:52.377793",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/userfallback.json": {
+      "hash": "580c5c277f674e1e350d7adc976db8032ce1686d5ecd8328e23a72c916bd975e",
+      "last_checked": "2025-06-06T02:43:52.830556",
+      "status": "unchanged",
+      "etag": "W/\"4b90db519d9614cf68fe4f9d2128a338\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/userfallback": {
+      "hash": "580c5c277f674e1e350d7adc976db8032ce1686d5ecd8328e23a72c916bd975e",
+      "last_checked": "2025-06-06T02:43:52.830556",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/watchnotavailable.json": {
+      "hash": "c709154513f1fd4cdfcb35b6e16350f11963af5be33e4af2aee551c6ccd5c61c",
+      "last_checked": "2025-06-06T02:43:53.299575",
+      "status": "unchanged",
+      "etag": "W/\"0a9e469799775105f2616e10984f759f\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/watchnotavailable": {
+      "hash": "c709154513f1fd4cdfcb35b6e16350f11963af5be33e4af2aee551c6ccd5c61c",
+      "last_checked": "2025-06-06T02:43:53.299575",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrordomain.json": {
+      "hash": "3ba2d5f3b43d70995f652ff4087fa1fd9b042aafe23969e6e56d959bfc71cf9f",
+      "last_checked": "2025-06-06T02:43:53.731178",
+      "status": "unchanged",
+      "etag": "W/\"9e02b1e468e1b120674cb0867a628210\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrordomain": {
+      "hash": "3ba2d5f3b43d70995f652ff4087fa1fd9b042aafe23969e6e56d959bfc71cf9f",
+      "last_checked": "2025-06-06T02:43:53.731178",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorappcancel.json": {
+      "hash": "09f5ed8fb4408cb93cf8340e24c36b338323b51f8f0a2ec2d77f779d1b92f193",
+      "last_checked": "2025-06-06T02:43:54.156594",
+      "status": "unchanged",
+      "etag": "W/\"2d65cb65c994b34ff4b6c869c30d5a88\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorappcancel": {
+      "hash": "09f5ed8fb4408cb93cf8340e24c36b338323b51f8f0a2ec2d77f779d1b92f193",
+      "last_checked": "2025-06-06T02:43:54.156594",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorsystemcancel.json": {
+      "hash": "6f1da2ba7a19a5f9619d9b4d3d083e7755b16093994f9414e79389185a69a888",
+      "last_checked": "2025-06-06T02:43:54.612383",
+      "status": "unchanged",
+      "etag": "W/\"de6864b5ad9352cec92965c48a92fb91\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorsystemcancel": {
+      "hash": "6f1da2ba7a19a5f9619d9b4d3d083e7755b16093994f9414e79389185a69a888",
+      "last_checked": "2025-06-06T02:43:54.612383",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorusercancel.json": {
+      "hash": "01897a9cd56a26ebe508fee057d7b1b01e8fd7aba375ebcf53fae99cbc0234a7",
+      "last_checked": "2025-06-06T02:43:55.103686",
+      "status": "unchanged",
+      "etag": "W/\"3760725da6b04931381296832d9600e2\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorusercancel": {
+      "hash": "01897a9cd56a26ebe508fee057d7b1b01e8fd7aba375ebcf53fae99cbc0234a7",
+      "last_checked": "2025-06-06T02:43:55.103686",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorbiometrydisconnected.json": {
+      "hash": "b4137190663c5908cf92907f180ff7568228e1b546e8792667fc1ff06c59c5ed",
+      "last_checked": "2025-06-06T02:43:55.528408",
+      "status": "unchanged",
+      "etag": "W/\"59ce069fd87649a3ee8b786e8ec3ab19\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorbiometrydisconnected": {
+      "hash": "b4137190663c5908cf92907f180ff7568228e1b546e8792667fc1ff06c59c5ed",
+      "last_checked": "2025-06-06T02:43:55.528408",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorbiometrylockout.json": {
+      "hash": "6a13e171dbd717710cd9bc0fc7918d5ee565d1d6ae9e0c5edc758f24dabc64bd",
+      "last_checked": "2025-06-06T02:43:56.026090",
+      "status": "unchanged",
+      "etag": "W/\"3ac38aab25054357cb23e44cf380af48\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorbiometrylockout": {
+      "hash": "6a13e171dbd717710cd9bc0fc7918d5ee565d1d6ae9e0c5edc758f24dabc64bd",
+      "last_checked": "2025-06-06T02:43:56.026090",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorbiometrynotavailable.json": {
+      "hash": "152ba94df4b4ba2f834b4c5b26b5acfce0c28eba3407663a1b53cf5249a83658",
+      "last_checked": "2025-06-06T02:43:56.485683",
+      "status": "unchanged",
+      "etag": "W/\"4fa1f755c9c3753017a23fa4938e0727\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorbiometrynotavailable": {
+      "hash": "152ba94df4b4ba2f834b4c5b26b5acfce0c28eba3407663a1b53cf5249a83658",
+      "last_checked": "2025-06-06T02:43:56.485683",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorbiometrynotenrolled.json": {
+      "hash": "1e8b79073a67ea0785c10c3f39c62ebb3f20402ac6fef3c1bc51c96f98be902f",
+      "last_checked": "2025-06-06T02:43:56.925838",
+      "status": "unchanged",
+      "etag": "W/\"2e6b8879f07a4cae94ff7cb608ad1c2f\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorbiometrynotenrolled": {
+      "hash": "1e8b79073a67ea0785c10c3f39c62ebb3f20402ac6fef3c1bc51c96f98be902f",
+      "last_checked": "2025-06-06T02:43:56.925838",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorbiometrynotpaired.json": {
+      "hash": "6c62b9e113c95b9c2900ec3e6f0778240ce008808d291a0aa06e18986729d93e",
+      "last_checked": "2025-06-06T02:43:57.370080",
+      "status": "unchanged",
+      "etag": "W/\"dc22f13d77cd1252decf4ce6dc61a815\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorbiometrynotpaired": {
+      "hash": "6c62b9e113c95b9c2900ec3e6f0778240ce008808d291a0aa06e18986729d93e",
+      "last_checked": "2025-06-06T02:43:57.370080",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrortouchidlockout.json": {
+      "hash": "06d322a0b5797b26894c2c21fe81510d771eed32109c18d606bc22846ae2b9a1",
+      "last_checked": "2025-06-06T02:43:57.849546",
+      "status": "unchanged",
+      "etag": "W/\"cfdb0b735f3dc714a4b70810cd0af189\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrortouchidlockout": {
+      "hash": "06d322a0b5797b26894c2c21fe81510d771eed32109c18d606bc22846ae2b9a1",
+      "last_checked": "2025-06-06T02:43:57.849546",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrortouchidnotavailable.json": {
+      "hash": "d25b904950b0a2e058d1925fefcb0f9b128e6d5beea7e2d9c46e0b8158e92921",
+      "last_checked": "2025-06-06T02:43:58.269792",
+      "status": "unchanged",
+      "etag": "W/\"4d873251b77e9521e6500420c395f71e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrortouchidnotavailable": {
+      "hash": "d25b904950b0a2e058d1925fefcb0f9b128e6d5beea7e2d9c46e0b8158e92921",
+      "last_checked": "2025-06-06T02:43:58.269792",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrortouchidnotenrolled.json": {
+      "hash": "7fdf4cd2c42ac3ce3a33d00640a2e177e3ea1723e6121eebfa6bba8de91e8ea6",
+      "last_checked": "2025-06-06T02:43:58.704999",
+      "status": "unchanged",
+      "etag": "W/\"ade26f2c4ebad49da90708df2a1758e6\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrortouchidnotenrolled": {
+      "hash": "7fdf4cd2c42ac3ce3a33d00640a2e177e3ea1723e6121eebfa6bba8de91e8ea6",
+      "last_checked": "2025-06-06T02:43:58.704999",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorauthenticationfailed.json": {
+      "hash": "550cfe924f787b5576cc2ae6a32039e5b285e19db1e8ed6c9d52b6d2b276b124",
+      "last_checked": "2025-06-06T02:43:59.149142",
+      "status": "unchanged",
+      "etag": "W/\"5fc3f05aa083ac704f8d9416ddae6eca\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorauthenticationfailed": {
+      "hash": "550cfe924f787b5576cc2ae6a32039e5b285e19db1e8ed6c9d52b6d2b276b124",
+      "last_checked": "2025-06-06T02:43:59.149142",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorinvalidcontext.json": {
+      "hash": "51f46eeaa6c1f613efc3770c461e733d337736a5c1e0f844617262579397c85a",
+      "last_checked": "2025-06-06T02:43:59.601608",
+      "status": "unchanged",
+      "etag": "W/\"8f9ed6ba475a0acd7237bc0b22d1b167\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorinvalidcontext": {
+      "hash": "51f46eeaa6c1f613efc3770c461e733d337736a5c1e0f844617262579397c85a",
+      "last_checked": "2025-06-06T02:43:59.601608",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorinvaliddimensions.json": {
+      "hash": "1179d24b0a6f36bef00e1dd7234cdc511e06538b2215ad91b949e4241552b9e0",
+      "last_checked": "2025-06-06T02:44:00.009791",
+      "status": "unchanged",
+      "etag": "W/\"d12de7c9490da8068559d008675830a9\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorinvaliddimensions": {
+      "hash": "1179d24b0a6f36bef00e1dd7234cdc511e06538b2215ad91b949e4241552b9e0",
+      "last_checked": "2025-06-06T02:44:00.009791",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrornotinteractive.json": {
+      "hash": "95766222cb3929f0e74a63e51bc887d830e54761a29f0d51c0a469b1eb689e9c",
+      "last_checked": "2025-06-06T02:44:00.422405",
+      "status": "unchanged",
+      "etag": "W/\"e1e4f9f5ba6ccb6f980221d1d434d560\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrornotinteractive": {
+      "hash": "95766222cb3929f0e74a63e51bc887d830e54761a29f0d51c0a469b1eb689e9c",
+      "last_checked": "2025-06-06T02:44:00.422405",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorpasscodenotset.json": {
+      "hash": "ef30083a92186225e419466b922ac35aeba19fd3a868cf64d7186b997fbaa8b8",
+      "last_checked": "2025-06-06T02:44:00.842775",
+      "status": "unchanged",
+      "etag": "W/\"eee46596afd1d899ee1465912d7bd850\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorpasscodenotset": {
+      "hash": "ef30083a92186225e419466b922ac35aeba19fd3a868cf64d7186b997fbaa8b8",
+      "last_checked": "2025-06-06T02:44:00.842775",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerroruserfallback.json": {
+      "hash": "b46e7b5106ebdec04b5d7c510c4dfec63d51d09c274cca4914525c506de141e5",
+      "last_checked": "2025-06-06T02:44:01.249224",
+      "status": "unchanged",
+      "etag": "W/\"c59bcff51d4ccf9e8cfd8078a12bc34e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerroruserfallback": {
+      "hash": "b46e7b5106ebdec04b5d7c510c4dfec63d51d09c274cca4914525c506de141e5",
+      "last_checked": "2025-06-06T02:44:01.249224",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klaerrorwatchnotavailable.json": {
+      "hash": "f9cce4691d314e9b9785712e327444163929c5ab7e39619059c42c9d54d3bea6",
+      "last_checked": "2025-06-06T02:44:01.656295",
+      "status": "unchanged",
+      "etag": "W/\"1ffd0705cf2b617388b8e69b5166f9e8\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klaerrorwatchnotavailable": {
+      "hash": "f9cce4691d314e9b9785712e327444163929c5ab7e39619059c42c9d54d3bea6",
+      "last_checked": "2025-06-06T02:44:01.656295",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/init(rawvalue:).json": {
+      "hash": "fff4f2eb845093af37ea18cd9d94ae5a069779ac638df963ff451b6171a38bc7",
+      "last_checked": "2025-06-06T02:44:02.044014",
+      "status": "unchanged",
+      "etag": "W/\"220155b46dbe665592846949b3bd7a09\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/init(rawvalue:)": {
+      "hash": "fff4f2eb845093af37ea18cd9d94ae5a069779ac638df963ff451b6171a38bc7",
+      "last_checked": "2025-06-06T02:44:02.044014",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laerror-swift.struct/code/companionnotavailable.json": {
+      "hash": "5e992b5f74009a611327c5231852291deb19b93eba7f8876c9073703d8ee0015",
+      "last_checked": "2025-06-06T02:44:02.453184",
+      "status": "unchanged",
+      "etag": "W/\"1826b63fe75c1b3ebab275ebb709c443\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laerror-swift.struct/code/companionnotavailable": {
+      "hash": "5e992b5f74009a611327c5231852291deb19b93eba7f8876c9073703d8ee0015",
+      "last_checked": "2025-06-06T02:44:02.453184",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klabiometrytypefaceid.json": {
+      "hash": "7ec5e96de9f9239db7b309234af384cbed90bf9eff82c1619dfdac11aa125223",
+      "last_checked": "2025-06-06T02:44:02.881873",
+      "status": "unchanged",
+      "etag": "W/\"f25fbeb13f479f98eb71a5c7a0e92c40\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klabiometrytypefaceid": {
+      "hash": "7ec5e96de9f9239db7b309234af384cbed90bf9eff82c1619dfdac11aa125223",
+      "last_checked": "2025-06-06T02:44:02.881873",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klabiometrytypenone.json": {
+      "hash": "1b9313e7083e476d1910f0b9e43bb34cdedbf36239ec5a4e1d9762c1353fca1b",
+      "last_checked": "2025-06-06T02:44:03.295786",
+      "status": "unchanged",
+      "etag": "W/\"c9e917e777235178ae571b9dc928586b\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klabiometrytypenone": {
+      "hash": "1b9313e7083e476d1910f0b9e43bb34cdedbf36239ec5a4e1d9762c1353fca1b",
+      "last_checked": "2025-06-06T02:44:03.295786",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klabiometrytypeopticid.json": {
+      "hash": "88f75040b4ffc6aac6e1fe2e1831d157ff0e19f268f17d55165fc0dfeaa76b79",
+      "last_checked": "2025-06-06T02:44:03.714453",
+      "status": "unchanged",
+      "etag": "W/\"917d885842be119a71225b05967ca042\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klabiometrytypeopticid": {
+      "hash": "88f75040b4ffc6aac6e1fe2e1831d157ff0e19f268f17d55165fc0dfeaa76b79",
+      "last_checked": "2025-06-06T02:44:03.714453",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klabiometrytypetouchid.json": {
+      "hash": "8c232eca2bb88a01935cabe09ffe4eb8fd577767025874c975f619de43ec188b",
+      "last_checked": "2025-06-06T02:44:04.120245",
+      "status": "unchanged",
+      "etag": "W/\"65c967d12e793f4d9e0dfb3885ccbc2e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klabiometrytypetouchid": {
+      "hash": "8c232eca2bb88a01935cabe09ffe4eb8fd577767025874c975f619de43ec188b",
+      "last_checked": "2025-06-06T02:44:04.120245",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstate/biometry.json": {
+      "hash": "6b842b653959641e4caea49e710a95129f0316069b48ee4317611ded2edaaad6",
+      "last_checked": "2025-06-06T02:44:04.512121",
+      "status": "unchanged",
+      "etag": "W/\"4fed493687a4370c93e237f2e7977b61\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstate/biometry": {
+      "hash": "6b842b653959641e4caea49e710a95129f0316069b48ee4317611ded2edaaad6",
+      "last_checked": "2025-06-06T02:44:04.512121",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstate/companion.json": {
+      "hash": "6664aa403c770dfe25491ff154ca55aaa453fef3700ee139d685b01d691057a9",
+      "last_checked": "2025-06-06T02:44:04.914330",
+      "status": "unchanged",
+      "etag": "W/\"75c54cc8507ff820d37af4d06ee2fb14\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstate/companion": {
+      "hash": "6664aa403c770dfe25491ff154ca55aaa453fef3700ee139d685b01d691057a9",
+      "last_checked": "2025-06-06T02:44:04.914330",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstate/statehash.json": {
+      "hash": "9aabe7559a061e737658c5388a3d59722b0d72308b44c24fe3576203dea0d5af",
+      "last_checked": "2025-06-06T02:44:05.346365",
+      "status": "unchanged",
+      "etag": "W/\"271fe79037f08a50169af3aef8498cef\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstate/statehash": {
+      "hash": "9aabe7559a061e737658c5388a3d59722b0d72308b44c24fe3576203dea0d5af",
+      "last_checked": "2025-06-06T02:44:05.346365",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstatebiometry/biometrytype.json": {
+      "hash": "9a6c110247abc06327860b0b6f91af14fb5e542974b290c21d91f915c38ed98b",
+      "last_checked": "2025-06-06T02:44:05.760011",
+      "status": "unchanged",
+      "etag": "W/\"91ddb34838766f25782324ded177ecc4\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstatebiometry/biometrytype": {
+      "hash": "9a6c110247abc06327860b0b6f91af14fb5e542974b290c21d91f915c38ed98b",
+      "last_checked": "2025-06-06T02:44:05.760011",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstatebiometry/statehash.json": {
+      "hash": "ff31e0e1bd32b0c4d04a86fea05a69917f5d8473c36cd78a2e8c1190c3d85920",
+      "last_checked": "2025-06-06T02:44:06.164629",
+      "status": "unchanged",
+      "etag": "W/\"bb324cee43d5e04931e94c7a425a3c2f\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstatebiometry/statehash": {
+      "hash": "ff31e0e1bd32b0c4d04a86fea05a69917f5d8473c36cd78a2e8c1190c3d85920",
+      "last_checked": "2025-06-06T02:44:06.164629",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstatecompanion/availablecompaniontypes-1t7ur.json": {
+      "hash": "f2f4966ffff685e05b0e7320cdb34716fe5759defe74c16ba98fe2d79120b034",
+      "last_checked": "2025-06-06T02:44:06.590644",
+      "status": "unchanged",
+      "etag": "W/\"30a66a50fcc44c9031766e701177d822\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstatecompanion/availablecompaniontypes-1t7ur": {
+      "hash": "f2f4966ffff685e05b0e7320cdb34716fe5759defe74c16ba98fe2d79120b034",
+      "last_checked": "2025-06-06T02:44:06.590644",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstatecompanion/statehash.json": {
+      "hash": "84cca123443d9e8c3dd66d0684deaa349836fb5e593e3ac91e45b5fc71ffee41",
+      "last_checked": "2025-06-06T02:44:07.004387",
+      "status": "unchanged",
+      "etag": "W/\"64efd9e22c0eb49484ea02a0a877fc1a\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstatecompanion/statehash": {
+      "hash": "84cca123443d9e8c3dd66d0684deaa349836fb5e593e3ac91e45b5fc71ffee41",
+      "last_checked": "2025-06-06T02:44:07.004387",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/ladomainstatecompanion/statehash(for:).json": {
+      "hash": "1cd71d7fb27dda78ff60b0e1691503b0201892b5b9787e38f1143b8b9469a9c2",
+      "last_checked": "2025-06-06T02:44:07.413380",
+      "status": "unchanged",
+      "etag": "W/\"27e54149f14df7f6ffcca0439d433532\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/ladomainstatecompanion/statehash(for:)": {
+      "hash": "1cd71d7fb27dda78ff60b0e1691503b0201892b5b9787e38f1143b8b9469a9c2",
+      "last_checked": "2025-06-06T02:44:07.413380",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanism.json": {
+      "hash": "6495dc2bf2bac550ce89ee960cdad2ba8dd184e7e1f8609a0a9fba34dd6e0ab1",
+      "last_checked": "2025-06-06T02:44:07.825940",
+      "status": "unchanged",
+      "etag": "W/\"244c85748cb62c6844391777bcfbed6e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanism": {
+      "hash": "6495dc2bf2bac550ce89ee960cdad2ba8dd184e7e1f8609a0a9fba34dd6e0ab1",
+      "last_checked": "2025-06-06T02:44:07.825940",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismbiometry.json": {
+      "hash": "b42419ff61b64e768335f8c844dced783b5c6bf57b42fafba0b7c5125969abfd",
+      "last_checked": "2025-06-06T02:44:08.291749",
+      "status": "unchanged",
+      "etag": "W/\"3f26d895d013c76cd448d6b7398cb196\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismbiometry": {
+      "hash": "b42419ff61b64e768335f8c844dced783b5c6bf57b42fafba0b7c5125969abfd",
+      "last_checked": "2025-06-06T02:44:08.291749",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismcompanion.json": {
+      "hash": "58cf2909a68c9d8e000971829e6433c66e6b1ff9112679a9abcc6840ed4c72c8",
+      "last_checked": "2025-06-06T02:44:08.691951",
+      "status": "unchanged",
+      "etag": "W/\"eb2d62d651947a2baa9dd478c04488a6\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismcompanion": {
+      "hash": "58cf2909a68c9d8e000971829e6433c66e6b1ff9112679a9abcc6840ed4c72c8",
+      "last_checked": "2025-06-06T02:44:08.691951",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismuserpassword.json": {
+      "hash": "755fb3a83671ee7cff81facb41c58060d1710aea9aa61470c77ac1cc7a9be987",
+      "last_checked": "2025-06-06T02:44:09.115191",
+      "status": "unchanged",
+      "etag": "W/\"5b1cec3091f23abef6ba3ff27da39fbc\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismuserpassword": {
+      "hash": "755fb3a83671ee7cff81facb41c58060d1710aea9aa61470c77ac1cc7a9be987",
+      "last_checked": "2025-06-06T02:44:09.115191",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/state-swift.class.json": {
+      "hash": "62e675e4a4ed679f54142ec767458205bdfe79a872d57012924ad44825b7aed5",
+      "last_checked": "2025-06-06T02:44:09.516513",
+      "status": "unchanged",
+      "etag": "W/\"320605c06049c60cd7b466b2e3f23ed2\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/state-swift.class": {
+      "hash": "62e675e4a4ed679f54142ec767458205bdfe79a872d57012924ad44825b7aed5",
+      "last_checked": "2025-06-06T02:44:09.516513",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/observer.json": {
+      "hash": "3babda8e68916ba8ae69c854ad7f82f2c9f899e1ae035f870bdd5d771ebc5901",
+      "last_checked": "2025-06-06T02:44:09.927423",
+      "status": "unchanged",
+      "etag": "W/\"dac2e956442005526126d07bfbe198da\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/observer": {
+      "hash": "3babda8e68916ba8ae69c854ad7f82f2c9f899e1ae035f870bdd5d771ebc5901",
+      "last_checked": "2025-06-06T02:44:09.927423",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/state-swift.property.json": {
+      "hash": "5edca864fccc8870804ed8578cbdc1cfa879dfab248b15f6c0a6e47f15f43412",
+      "last_checked": "2025-06-06T02:44:10.388627",
+      "status": "unchanged",
+      "etag": "W/\"65de73145caa928d899a4b3b047cc0fd\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/state-swift.property": {
+      "hash": "5edca864fccc8870804ed8578cbdc1cfa879dfab248b15f6c0a6e47f15f43412",
+      "last_checked": "2025-06-06T02:44:10.388627",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/addobserver(_:).json": {
+      "hash": "e447759efc9756e858303f6a98f1a234e48c5bb268266ddb29af3f2fe3fa3296",
+      "last_checked": "2025-06-06T02:44:10.814168",
+      "status": "unchanged",
+      "etag": "W/\"415e0ac7ff6f1d87e86b29925803af82\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/addobserver(_:)": {
+      "hash": "e447759efc9756e858303f6a98f1a234e48c5bb268266ddb29af3f2fe3fa3296",
+      "last_checked": "2025-06-06T02:44:10.814168",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/removeobserver(_:).json": {
+      "hash": "54a89ebdf94ae7c27f154e99b73576e9eeb36fb639d3ff9c4524d3c69185b669",
+      "last_checked": "2025-06-06T02:44:11.226266",
+      "status": "unchanged",
+      "etag": "W/\"2e269068e9920407f715777319ef9dc4\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/removeobserver(_:)": {
+      "hash": "54a89ebdf94ae7c27f154e99b73576e9eeb36fb639d3ff9c4524d3c69185b669",
+      "last_checked": "2025-06-06T02:44:11.226266",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/currentuser.json": {
+      "hash": "41ca229545da500b8851e18c1d3ac85a8f8b74a34fa0af0d604a44b05952e3a8",
+      "last_checked": "2025-06-06T02:44:11.631562",
+      "status": "unchanged",
+      "etag": "W/\"b44d87e5f7a7197c7d919162bfd0651f\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/currentuser": {
+      "hash": "41ca229545da500b8851e18c1d3ac85a8f8b74a34fa0af0d604a44b05952e3a8",
+      "last_checked": "2025-06-06T02:44:11.631562",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacompaniontype/mac.json": {
+      "hash": "cca06f7604cc571f00133027e5d257d7b41978f9812529c9c68da2961e015830",
+      "last_checked": "2025-06-06T02:44:12.055160",
+      "status": "unchanged",
+      "etag": "W/\"84ad6258fc8046b435242a0fb384606f\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacompaniontype/mac": {
+      "hash": "cca06f7604cc571f00133027e5d257d7b41978f9812529c9c68da2961e015830",
+      "last_checked": "2025-06-06T02:44:12.055160",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacompaniontype/watch.json": {
+      "hash": "1783adca40d8ad32acf14eb57f7174a3975024c43bea8541b1e0d9ad22e364cb",
+      "last_checked": "2025-06-06T02:44:12.453588",
+      "status": "unchanged",
+      "etag": "W/\"c0c9ae882c42f04f0a484d91e02539fa\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacompaniontype/watch": {
+      "hash": "1783adca40d8ad32acf14eb57f7174a3975024c43bea8541b1e0d9ad22e364cb",
+      "last_checked": "2025-06-06T02:44:12.453588",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacompaniontype/init(rawvalue:).json": {
+      "hash": "355f113f6edada12e9559a4426f107faed0a74088bdaf769f5c60ecd29d47125",
+      "last_checked": "2025-06-06T02:44:12.832687",
+      "status": "unchanged",
+      "etag": "W/\"f693d9d9f01dec85972b8116c4e5257e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacompaniontype/init(rawvalue:)": {
+      "hash": "355f113f6edada12e9559a4426f107faed0a74088bdaf769f5c60ecd29d47125",
+      "last_checked": "2025-06-06T02:44:12.832687",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapolicy/deviceownerauthenticationwithbiometrics.json": {
+      "hash": "df496696e71db4acf119fae844ff2ce98bc56cd3a07e18ee57730cfde367e278",
+      "last_checked": "2025-06-06T02:44:13.245529",
+      "status": "unchanged",
+      "etag": "W/\"84f4a67a53807150a454918fa47b8854\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapolicy/deviceownerauthenticationwithbiometrics": {
+      "hash": "df496696e71db4acf119fae844ff2ce98bc56cd3a07e18ee57730cfde367e278",
+      "last_checked": "2025-06-06T02:44:13.245529",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapolicy/deviceownerauthenticationwithwatch.json": {
+      "hash": "7e1f7229b6698cc1644a136c5864d766076e0a437a9394c1e274b6e26d494efc",
+      "last_checked": "2025-06-06T02:44:13.660640",
+      "status": "unchanged",
+      "etag": "W/\"0792c276e0e3d9006161db8ed1ac852d\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapolicy/deviceownerauthenticationwithwatch": {
+      "hash": "7e1f7229b6698cc1644a136c5864d766076e0a437a9394c1e274b6e26d494efc",
+      "last_checked": "2025-06-06T02:44:13.660640",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapolicy/deviceownerauthenticationwithbiometricsorwatch.json": {
+      "hash": "1f191b375a9c437e38d422f65c1fcaaa701cc3dcbd497acbada71656cfe26ab0",
+      "last_checked": "2025-06-06T02:44:14.061950",
+      "status": "unchanged",
+      "etag": "W/\"5a6d489aa33d962034c63d0d22e72015\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapolicy/deviceownerauthenticationwithbiometricsorwatch": {
+      "hash": "1f191b375a9c437e38d422f65c1fcaaa701cc3dcbd497acbada71656cfe26ab0",
+      "last_checked": "2025-06-06T02:44:14.061950",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapolicy/deviceownerauthentication.json": {
+      "hash": "8bbab78e7fa7c62685d5b9e9215a75dc7457c001c70fc050306570b868561a93",
+      "last_checked": "2025-06-06T02:44:14.449095",
+      "status": "unchanged",
+      "etag": "W/\"253077ec30d33f390dab2b1aded10cc6\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapolicy/deviceownerauthentication": {
+      "hash": "8bbab78e7fa7c62685d5b9e9215a75dc7457c001c70fc050306570b868561a93",
+      "last_checked": "2025-06-06T02:44:14.449095",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapolicy/deviceownerauthenticationwithwristdetection.json": {
+      "hash": "2d83caba9fef9932f30b5f67aacabae58fd1ede484748137ebd14e65c2c2d8db",
+      "last_checked": "2025-06-06T02:44:14.906865",
+      "status": "unchanged",
+      "etag": "W/\"62cc60902fea8ee111aee66f9b79787c\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapolicy/deviceownerauthenticationwithwristdetection": {
+      "hash": "2d83caba9fef9932f30b5f67aacabae58fd1ede484748137ebd14e65c2c2d8db",
+      "last_checked": "2025-06-06T02:44:14.906865",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klapolicydeviceownerauthenticationwithbiometrics.json": {
+      "hash": "3b4030a0c4c023ae79ff5f8696ea25602471e7651196278de7725f5656b33719",
+      "last_checked": "2025-06-06T02:44:15.331332",
+      "status": "unchanged",
+      "etag": "W/\"7d409e21228f47b937a5b7c9933a498a\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klapolicydeviceownerauthenticationwithbiometrics": {
+      "hash": "3b4030a0c4c023ae79ff5f8696ea25602471e7651196278de7725f5656b33719",
+      "last_checked": "2025-06-06T02:44:15.331332",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klapolicydeviceownerauthenticationwithwatch.json": {
+      "hash": "0b808940d53936168421a6f3f299c6033a4cacb1d3a3d49966283c92fc2a7b1c",
+      "last_checked": "2025-06-06T02:44:15.763324",
+      "status": "unchanged",
+      "etag": "W/\"8fe006616fe6f8b1d7ba677b71409d5e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klapolicydeviceownerauthenticationwithwatch": {
+      "hash": "0b808940d53936168421a6f3f299c6033a4cacb1d3a3d49966283c92fc2a7b1c",
+      "last_checked": "2025-06-06T02:44:15.763324",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klapolicydeviceownerauthenticationwithbiometricsorwatch.json": {
+      "hash": "6c6817a118d71ae716bb9ca3a5a5c7ad2a9010ae566939fb634673c2432f61b7",
+      "last_checked": "2025-06-06T02:44:16.159886",
+      "status": "unchanged",
+      "etag": "W/\"78840e742c9e842e2a28b3864a8ca483\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klapolicydeviceownerauthenticationwithbiometricsorwatch": {
+      "hash": "6c6817a118d71ae716bb9ca3a5a5c7ad2a9010ae566939fb634673c2432f61b7",
+      "last_checked": "2025-06-06T02:44:16.159886",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klapolicydeviceownerauthentication.json": {
+      "hash": "625d8a451007ae5765e2c5b6c485d71a1507e2b28361f186ea38fc186c56cb56",
+      "last_checked": "2025-06-06T02:44:16.562559",
+      "status": "unchanged",
+      "etag": "W/\"303743d3f75b2c44e3aa3fe07a596141\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klapolicydeviceownerauthentication": {
+      "hash": "625d8a451007ae5765e2c5b6c485d71a1507e2b28361f186ea38fc186c56cb56",
+      "last_checked": "2025-06-06T02:44:16.562559",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klapolicydeviceownerauthenticationwithwristdetection.json": {
+      "hash": "4144f67195c3f8882808f7b13418b8c3ebcc1e478dc99369eb01c5899f90a268",
+      "last_checked": "2025-06-06T02:44:17.021838",
+      "status": "unchanged",
+      "etag": "W/\"822b04bf05e73d02e0b199dcc962c52e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klapolicydeviceownerauthenticationwithwristdetection": {
+      "hash": "4144f67195c3f8882808f7b13418b8c3ebcc1e478dc99369eb01c5899f90a268",
+      "last_checked": "2025-06-06T02:44:17.021838",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapolicy/init(rawvalue:).json": {
+      "hash": "a78d9086bdc35a71746662fa3d430c71849d36bf506d6044547095099112ca23",
+      "last_checked": "2025-06-06T02:44:17.437656",
+      "status": "unchanged",
+      "etag": "W/\"8d4f47e162edba20991bad1d5da36d46\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapolicy/init(rawvalue:)": {
+      "hash": "a78d9086bdc35a71746662fa3d430c71849d36bf506d6044547095099112ca23",
+      "last_checked": "2025-06-06T02:44:17.437656",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapolicy/deviceownerauthenticationwithbiometricsorcompanion.json": {
+      "hash": "13df83fd0460208772b50bfb63730ea76b4d400030b6ff6d8dd486a670c61b64",
+      "last_checked": "2025-06-06T02:44:17.860036",
+      "status": "unchanged",
+      "etag": "W/\"04ae9333d2d2d54ad6549aec84b5cbef\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapolicy/deviceownerauthenticationwithbiometricsorcompanion": {
+      "hash": "13df83fd0460208772b50bfb63730ea76b4d400030b6ff6d8dd486a670c61b64",
+      "last_checked": "2025-06-06T02:44:17.860036",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lapolicy/deviceownerauthenticationwithcompanion.json": {
+      "hash": "51aed5142ed2072db438f0dbec20cd08f7fdf16bf848d0bfdf6366137e42e151",
+      "last_checked": "2025-06-06T02:44:18.264264",
+      "status": "unchanged",
+      "etag": "W/\"bd3e06f8fac65d4fd5a669353002785f\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lapolicy/deviceownerauthenticationwithcompanion": {
+      "hash": "51aed5142ed2072db438f0dbec20cd08f7fdf16bf848d0bfdf6366137e42e151",
+      "last_checked": "2025-06-06T02:44:18.264264",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/labiometrytype/none.json": {
+      "hash": "624402aa7dcc421145f8bd2390844cfc57317aca1a60b48977e61239daa1ee31",
+      "last_checked": "2025-06-06T02:44:18.676275",
+      "status": "unchanged",
+      "etag": "W/\"e89b1dde0cc151a20d656435d93cfd2e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/labiometrytype/none": {
+      "hash": "624402aa7dcc421145f8bd2390844cfc57317aca1a60b48977e61239daa1ee31",
+      "last_checked": "2025-06-06T02:44:18.676275",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/labiometrytype/faceid.json": {
+      "hash": "6e8f9511d818324ba1cb802fcacbba976f9929f4655ef7c41ddac66206c4ec40",
+      "last_checked": "2025-06-06T02:44:19.118381",
+      "status": "unchanged",
+      "etag": "W/\"5c4f3a7bee4f44722f3975e7ee2e23c3\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/labiometrytype/faceid": {
+      "hash": "6e8f9511d818324ba1cb802fcacbba976f9929f4655ef7c41ddac66206c4ec40",
+      "last_checked": "2025-06-06T02:44:19.118381",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/labiometrytype/touchid.json": {
+      "hash": "a20064a4f8c06cd4f92b13f09dd410b15c45ac6fbe3c12eff3e24db050a6545e",
+      "last_checked": "2025-06-06T02:44:19.562212",
+      "status": "unchanged",
+      "etag": "W/\"3c51ee09336b1c029dfa26b81e680986\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/labiometrytype/touchid": {
+      "hash": "a20064a4f8c06cd4f92b13f09dd410b15c45ac6fbe3c12eff3e24db050a6545e",
+      "last_checked": "2025-06-06T02:44:19.562212",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/labiometrytype/opticid.json": {
+      "hash": "9e5c34dfb6dbfcdade87f6ccc735b9fa774d8bd416c79339ea2437236893704c",
+      "last_checked": "2025-06-06T02:44:20.008946",
+      "status": "unchanged",
+      "etag": "W/\"3adbb93679d2ba9bea80c3b512e6c3af\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/labiometrytype/opticid": {
+      "hash": "9e5c34dfb6dbfcdade87f6ccc735b9fa774d8bd416c79339ea2437236893704c",
+      "last_checked": "2025-06-06T02:44:20.008946",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/labiometrytype/labiometrynone.json": {
+      "hash": "07536538d3dced363f9cdb2942a33842d8a3b21359f2ebb3a435397616df0804",
+      "last_checked": "2025-06-06T02:44:20.416937",
+      "status": "unchanged",
+      "etag": "W/\"c8ab7ff1c004fbd4e77def8012724356\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/labiometrytype/labiometrynone": {
+      "hash": "07536538d3dced363f9cdb2942a33842d8a3b21359f2ebb3a435397616df0804",
+      "last_checked": "2025-06-06T02:44:20.416937",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/labiometrytype/init(rawvalue:).json": {
+      "hash": "e1a7199ae59b5393161446b2ff52a64d5e36b11bc3818e7b4608ed1506764704",
+      "last_checked": "2025-06-06T02:44:20.835913",
+      "status": "unchanged",
+      "etag": "W/\"3fdf3a28608abf698d7e05d6dfe332e3\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/labiometrytype/init(rawvalue:)": {
+      "hash": "e1a7199ae59b5393161446b2ff52a64d5e36b11bc3818e7b4608ed1506764704",
+      "last_checked": "2025-06-06T02:44:20.835913",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laaccesscontroloperation/createitem.json": {
+      "hash": "212da8409e5e359f395d51599804033f73c3c07bd29cfd7257e1f3f5cd668700",
+      "last_checked": "2025-06-06T02:44:21.442072",
+      "status": "unchanged",
+      "etag": "W/\"35755c32aabb8765d62f3afd6bc85cbe\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laaccesscontroloperation/createitem": {
+      "hash": "212da8409e5e359f395d51599804033f73c3c07bd29cfd7257e1f3f5cd668700",
+      "last_checked": "2025-06-06T02:44:21.442072",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laaccesscontroloperation/useitem.json": {
+      "hash": "86d655c1e0634351ba52b355516edc2126988f61262e20b596d1871794020c0e",
+      "last_checked": "2025-06-06T02:44:21.904164",
+      "status": "unchanged",
+      "etag": "W/\"b9b5c150232cd4e16c24e260d20ee628\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laaccesscontroloperation/useitem": {
+      "hash": "86d655c1e0634351ba52b355516edc2126988f61262e20b596d1871794020c0e",
+      "last_checked": "2025-06-06T02:44:21.904164",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laaccesscontroloperation/createkey.json": {
+      "hash": "4ba2f6a305c27cc4030e3302ac2dde1bbfcaaee8405691c924c91f2d6b7fa90b",
+      "last_checked": "2025-06-06T02:44:22.344186",
+      "status": "unchanged",
+      "etag": "W/\"9b97f4da9bea8f33958fa0dec97fbd13\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laaccesscontroloperation/createkey": {
+      "hash": "4ba2f6a305c27cc4030e3302ac2dde1bbfcaaee8405691c924c91f2d6b7fa90b",
+      "last_checked": "2025-06-06T02:44:22.344186",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laaccesscontroloperation/usekeysign.json": {
+      "hash": "e650edc1a8759a6ca7d5acb0b1c1f00316fa4d86df168c664c6d71af733d08e5",
+      "last_checked": "2025-06-06T02:44:22.727966",
+      "status": "unchanged",
+      "etag": "W/\"636153500ab08e6211c30cb50d62fdda\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laaccesscontroloperation/usekeysign": {
+      "hash": "e650edc1a8759a6ca7d5acb0b1c1f00316fa4d86df168c664c6d71af733d08e5",
+      "last_checked": "2025-06-06T02:44:22.727966",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laaccesscontroloperation/usekeydecrypt.json": {
+      "hash": "f63a9b3dc5cfd104c3d66c4cf1479b9260779879e1f3289dc1f6be810ed805a9",
+      "last_checked": "2025-06-06T02:44:23.131783",
+      "status": "unchanged",
+      "etag": "W/\"133a84b0e98cee5833732ebab605b181\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laaccesscontroloperation/usekeydecrypt": {
+      "hash": "f63a9b3dc5cfd104c3d66c4cf1479b9260779879e1f3289dc1f6be810ed805a9",
+      "last_checked": "2025-06-06T02:44:23.131783",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laaccesscontroloperation/usekeykeyexchange.json": {
+      "hash": "ceb75fa0e8cc6ed5b6bf9028274d9fd19a9d5b69cf4c94966c3899d9a89bbdbf",
+      "last_checked": "2025-06-06T02:44:23.538514",
+      "status": "unchanged",
+      "etag": "W/\"a84dcfc3c7af207eb440d609940de70b\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laaccesscontroloperation/usekeykeyexchange": {
+      "hash": "ceb75fa0e8cc6ed5b6bf9028274d9fd19a9d5b69cf4c94966c3899d9a89bbdbf",
+      "last_checked": "2025-06-06T02:44:23.538514",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laaccesscontroloperation/init(rawvalue:).json": {
+      "hash": "ade6fde417e5420d2691c17da827cd381c49bdab3d9cb05342a66bad30766681",
+      "last_checked": "2025-06-06T02:44:24.012476",
+      "status": "unchanged",
+      "etag": "W/\"951b37fd104acf950a87c4e1e4881758\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laaccesscontroloperation/init(rawvalue:)": {
+      "hash": "ade6fde417e5420d2691c17da827cd381c49bdab3d9cb05342a66bad30766681",
+      "last_checked": "2025-06-06T02:44:24.012476",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacredentialtype/applicationpassword.json": {
+      "hash": "fe5101536d95ed6f71a38e45cec28b9405e9e0fd38b00fb6e67f0da1db7b5a32",
+      "last_checked": "2025-06-06T02:44:24.423569",
+      "status": "unchanged",
+      "etag": "W/\"c0fb0462ae733fd780126b47df3d1325\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacredentialtype/applicationpassword": {
+      "hash": "fe5101536d95ed6f71a38e45cec28b9405e9e0fd38b00fb6e67f0da1db7b5a32",
+      "last_checked": "2025-06-06T02:44:24.423569",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacredentialtype/smartcardpin.json": {
+      "hash": "33c8409f861cf7219c3681370b1562e94b3da23bf3b57455a1cd801845038b3a",
+      "last_checked": "2025-06-06T02:44:24.855883",
+      "status": "unchanged",
+      "etag": "W/\"a18057dd5f4410801974c57d2ec78e07\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacredentialtype/smartcardpin": {
+      "hash": "33c8409f861cf7219c3681370b1562e94b3da23bf3b57455a1cd801845038b3a",
+      "last_checked": "2025-06-06T02:44:24.855883",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klacredentialtypeapplicationpassword.json": {
+      "hash": "967f641f84f85d81089e3468e924dfffa5da8df817d9b746dd30edeca25ac224",
+      "last_checked": "2025-06-06T02:44:25.336791",
+      "status": "unchanged",
+      "etag": "W/\"5ddf9f104d42805630a4553c451fabaf\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klacredentialtypeapplicationpassword": {
+      "hash": "967f641f84f85d81089e3468e924dfffa5da8df817d9b746dd30edeca25ac224",
+      "last_checked": "2025-06-06T02:44:25.336791",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/klacredentialsmartcardpin.json": {
+      "hash": "1e4e7136bd668be9b6066b253f6decdde298dd8cdb340bc9e91db90f9effc80d",
+      "last_checked": "2025-06-06T02:44:25.771722",
+      "status": "unchanged",
+      "etag": "W/\"cee28b50a726dabf90e6952b9d896c59\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/klacredentialsmartcardpin": {
+      "hash": "1e4e7136bd668be9b6066b253f6decdde298dd8cdb340bc9e91db90f9effc80d",
+      "last_checked": "2025-06-06T02:44:25.771722",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacredentialtype/init(rawvalue:).json": {
+      "hash": "366c2542c49aff38cdaf7818158961dc123d9e503a0ed452b14cea9564a52b16",
+      "last_checked": "2025-06-06T02:44:26.203354",
+      "status": "unchanged",
+      "etag": "W/\"220bedc027ce1fc9bab61871e8824f9d\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacredentialtype/init(rawvalue:)": {
+      "hash": "366c2542c49aff38cdaf7818158961dc123d9e503a0ed452b14cea9564a52b16",
+      "last_checked": "2025-06-06T02:44:26.203354",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanism/iconsystemname.json": {
+      "hash": "225e843506ce13d7e2960649aac09cd7d9a6afd5904a9d05a75b8fb5b2bbe603",
+      "last_checked": "2025-06-06T02:44:26.642162",
+      "status": "unchanged",
+      "etag": "W/\"7acd4d3868a9f1ccbbdfbb137204fa9b\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanism/iconsystemname": {
+      "hash": "225e843506ce13d7e2960649aac09cd7d9a6afd5904a9d05a75b8fb5b2bbe603",
+      "last_checked": "2025-06-06T02:44:26.642162",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanism/isusable.json": {
+      "hash": "d1627a70bba1910eebaa89d5c8fb38a94e959a6bac25520ffd5d629e94658c87",
+      "last_checked": "2025-06-06T02:44:27.060184",
+      "status": "unchanged",
+      "etag": "W/\"f4406d6ae0be9f5a491d13ca138a0169\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanism/isusable": {
+      "hash": "d1627a70bba1910eebaa89d5c8fb38a94e959a6bac25520ffd5d629e94658c87",
+      "last_checked": "2025-06-06T02:44:27.060184",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanism/localizedname.json": {
+      "hash": "89e9d1bc09e73611289323abfaa5bd8567198ce14d0ff7d25af876ec681ff00a",
+      "last_checked": "2025-06-06T02:44:27.492764",
+      "status": "unchanged",
+      "etag": "W/\"049e8806355c1cd0d4dbf396896af8bc\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanism/localizedname": {
+      "hash": "89e9d1bc09e73611289323abfaa5bd8567198ce14d0ff7d25af876ec681ff00a",
+      "last_checked": "2025-06-06T02:44:27.492764",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismbiometry/biometrytype.json": {
+      "hash": "91e9baaf11695e85866e527215a1705fce1420c3ff393e6b4fdc8180d169b756",
+      "last_checked": "2025-06-06T02:44:27.921048",
+      "status": "unchanged",
+      "etag": "W/\"4a767964dce1354e38e8725d50c1aa89\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismbiometry/biometrytype": {
+      "hash": "91e9baaf11695e85866e527215a1705fce1420c3ff393e6b4fdc8180d169b756",
+      "last_checked": "2025-06-06T02:44:27.921048",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismbiometry/builtinsensorinaccessible.json": {
+      "hash": "87da3f6ceca8041488790868f0032d1d647f6b94983fb052a918119118eb55a8",
+      "last_checked": "2025-06-06T02:44:28.311158",
+      "status": "unchanged",
+      "etag": "W/\"d87bfb46a5982f57ea405a35fc1cca2b\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismbiometry/builtinsensorinaccessible": {
+      "hash": "87da3f6ceca8041488790868f0032d1d647f6b94983fb052a918119118eb55a8",
+      "last_checked": "2025-06-06T02:44:28.311158",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismbiometry/isenrolled.json": {
+      "hash": "bb4e78fc3c8d230fd4d84dc5705905e065fcf3c0e3756495335c9837da8d9204",
+      "last_checked": "2025-06-06T02:44:28.714972",
+      "status": "unchanged",
+      "etag": "W/\"8f4f86a68eff812340ad091f3cdf37d0\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismbiometry/isenrolled": {
+      "hash": "bb4e78fc3c8d230fd4d84dc5705905e065fcf3c0e3756495335c9837da8d9204",
+      "last_checked": "2025-06-06T02:44:28.714972",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismbiometry/islockedout.json": {
+      "hash": "60711ce227b8d0c3a4891c7695be8b444bbb5f982515663d5783bfbb6edd8a45",
+      "last_checked": "2025-06-06T02:44:29.167698",
+      "status": "unchanged",
+      "etag": "W/\"467b1f14b18bd2aa612546c76efd4b38\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismbiometry/islockedout": {
+      "hash": "60711ce227b8d0c3a4891c7695be8b444bbb5f982515663d5783bfbb6edd8a45",
+      "last_checked": "2025-06-06T02:44:29.167698",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismbiometry/statehash.json": {
+      "hash": "b84ff7f7d27ce8861198ae156cf401d6ffbbea87f766bd02993b0825a869a9ac",
+      "last_checked": "2025-06-06T02:44:29.606544",
+      "status": "unchanged",
+      "etag": "W/\"4e001ef1af6b4080de678046729ad822\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismbiometry/statehash": {
+      "hash": "b84ff7f7d27ce8861198ae156cf401d6ffbbea87f766bd02993b0825a869a9ac",
+      "last_checked": "2025-06-06T02:44:29.606544",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismcompanion/statehash.json": {
+      "hash": "ecd598ae1ff2fe0cfc9ca85e92474f71b45feddd9e6c538d654ba0afb376c297",
+      "last_checked": "2025-06-06T02:44:30.028207",
+      "status": "unchanged",
+      "etag": "W/\"0fced3d3fecfd36bdc87f58c0c976079\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismcompanion/statehash": {
+      "hash": "ecd598ae1ff2fe0cfc9ca85e92474f71b45feddd9e6c538d654ba0afb376c297",
+      "last_checked": "2025-06-06T02:44:30.028207",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismcompanion/type.json": {
+      "hash": "57d5f4384a7cba8431484fb5ea7d528011f1120a6a80c5f37bcdd1fe164aa591",
+      "last_checked": "2025-06-06T02:44:30.436367",
+      "status": "unchanged",
+      "etag": "W/\"81004240af0e2c11f5cadce2f75f9555\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismcompanion/type": {
+      "hash": "57d5f4384a7cba8431484fb5ea7d528011f1120a6a80c5f37bcdd1fe164aa591",
+      "last_checked": "2025-06-06T02:44:30.436367",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/mechanismuserpassword/isset.json": {
+      "hash": "695f9adbcabad9d6e63dd733e0718f709fd85962c27091b67fdd90ae11f9794e",
+      "last_checked": "2025-06-06T02:44:30.843668",
+      "status": "unchanged",
+      "etag": "W/\"e4b11f256a5007b2205f148c8fe410e2\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/mechanismuserpassword/isset": {
+      "hash": "695f9adbcabad9d6e63dd733e0718f709fd85962c27091b67fdd90ae11f9794e",
+      "last_checked": "2025-06-06T02:44:30.843668",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/state-swift.class/allmechanisms.json": {
+      "hash": "b3359d4d9f0a464db92990379293493c9736aab52ac174090dd9872f4ffa8f7f",
+      "last_checked": "2025-06-06T02:44:31.280117",
+      "status": "unchanged",
+      "etag": "W/\"339d58cbf3da11a80a615568a8e2b67e\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/state-swift.class/allmechanisms": {
+      "hash": "b3359d4d9f0a464db92990379293493c9736aab52ac174090dd9872f4ffa8f7f",
+      "last_checked": "2025-06-06T02:44:31.280117",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/state-swift.class/biometry.json": {
+      "hash": "5e372bc9510e62dbd9c3b69cfe30b8b067006ef889a29a259c8b356d3db3a72a",
+      "last_checked": "2025-06-06T02:44:31.711116",
+      "status": "unchanged",
+      "etag": "W/\"d0119ae3f5fa05a010cc49bbe35912e3\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/state-swift.class/biometry": {
+      "hash": "5e372bc9510e62dbd9c3b69cfe30b8b067006ef889a29a259c8b356d3db3a72a",
+      "last_checked": "2025-06-06T02:44:31.711116",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/state-swift.class/companions.json": {
+      "hash": "39abaa9472ef4f9d1fcba252344387239c062a3cdb63ecb2e961c39594254312",
+      "last_checked": "2025-06-06T02:44:32.108522",
+      "status": "unchanged",
+      "etag": "W/\"7ad304ef0def059309e8e7ad5ffbebd3\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/state-swift.class/companions": {
+      "hash": "39abaa9472ef4f9d1fcba252344387239c062a3cdb63ecb2e961c39594254312",
+      "last_checked": "2025-06-06T02:44:32.108522",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/state-swift.class/userpassword.json": {
+      "hash": "852a995fbff2c2dc58109d060f31f5380ad2308d9ddfdb2b43d0266802d99dcf",
+      "last_checked": "2025-06-06T02:44:32.531004",
+      "status": "unchanged",
+      "etag": "W/\"afad38ad91a543a78db8a1aa39644d55\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/state-swift.class/userpassword": {
+      "hash": "852a995fbff2c2dc58109d060f31f5380ad2308d9ddfdb2b43d0266802d99dcf",
+      "last_checked": "2025-06-06T02:44:32.531004",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/laenvironment/observer/environment(_:statedidchangefromoldstate:).json": {
+      "hash": "e78244aee17e42b2a420495814efe4201be56b7b4f75b95a643a6b1aa3557f1c",
+      "last_checked": "2025-06-06T02:44:32.933656",
+      "status": "unchanged",
+      "etag": "W/\"d24b17acf16f88effdfc602b021c5060\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/laenvironment/observer/environment(_:statedidchangefromoldstate:)": {
+      "hash": "e78244aee17e42b2a420495814efe4201be56b7b4f75b95a643a6b1aa3557f1c",
+      "last_checked": "2025-06-06T02:44:32.933656",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/evaluatedpolicydomainstate.json": {
+      "hash": "07d3e5f333fcf1934447ff39edf3b0ebb529646f3fbdc2c4bbfa2b0d265213f3",
+      "last_checked": "2025-06-06T20:56:44.637987",
+      "status": "unchanged",
+      "etag": "W/\"b218512a95300251f15b2eaddfe72e44\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/evaluatedpolicydomainstate": {
+      "hash": "07d3e5f333fcf1934447ff39edf3b0ebb529646f3fbdc2c4bbfa2b0d265213f3",
+      "last_checked": "2025-06-06T20:56:44.637987",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/localauthentication/lacontext/evaluatepolicy(_:localizedreason:reply:).json": {
+      "hash": "9e2268a2512df636c980d2393ed4c671e40f810cdd3fca9f03dc49d4ebb1e56f",
+      "last_checked": "2025-06-06T20:56:45.181251",
+      "status": "unchanged",
+      "etag": "W/\"462be7c5e9adda58c05a65b018720cde\""
+    },
+    "https://developer.apple.com/documentation/localauthentication/lacontext/evaluatepolicy(_:localizedreason:reply:)": {
+      "hash": "9e2268a2512df636c980d2393ed4c671e40f810cdd3fca9f03dc49d4ebb1e56f",
+      "last_checked": "2025-06-06T20:56:45.181251",
+      "status": "unchanged"
+    }
+  }
+}

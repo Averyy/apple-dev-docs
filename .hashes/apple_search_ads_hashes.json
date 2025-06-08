@@ -1,0 +1,3021 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-08T16:06:31.651434",
+    "total_pages": 502,
+    "etags_collected": "2025-06-08T16:06:31.651448"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads.json": {
+      "hash": "73fa7e4c0777315dcc7dca63b67c99ce450542afda81cb27a5701e5d048109bb",
+      "last_checked": "2025-06-05T15:51:15.691419",
+      "status": "unchanged",
+      "etag": "W/\"3cd18955516bc984d8de6b8b18493bf1\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads": {
+      "hash": "73fa7e4c0777315dcc7dca63b67c99ce450542afda81cb27a5701e5d048109bb",
+      "last_checked": "2025-06-05T15:51:15.691419",
+      "status": "unchanged",
+      "etag": "0a2814d5f484fada551850c0956d8f1a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/implementing-oauth-for-the-apple-search-ads-api.json": {
+      "hash": "4221e5c01366b13bd387effd122575b813e9b54ef3b830ac8f4b891bf2656d3d",
+      "last_checked": "2025-06-05T15:51:16.469934",
+      "status": "unchanged",
+      "etag": "W/\"49452ed4d4b52422e0d9d03d57f2ac80\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/implementing-oauth-for-the-apple-search-ads-api": {
+      "hash": "4221e5c01366b13bd387effd122575b813e9b54ef3b830ac8f4b891bf2656d3d",
+      "last_checked": "2025-06-05T15:51:16.469934",
+      "status": "unchanged",
+      "etag": "5bff00c1eb2a788dc28e696ee5d2cb82"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/calling-the-apple-search-ads-api.json": {
+      "hash": "74c60600057eb63fccd4274ef3024e79844650683249b56884c0c2ce48992623",
+      "last_checked": "2025-06-05T15:51:16.829859",
+      "status": "unchanged",
+      "etag": "W/\"c9ad755bb78f2edec41f760fc4ec0cf1\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/calling-the-apple-search-ads-api": {
+      "hash": "74c60600057eb63fccd4274ef3024e79844650683249b56884c0c2ce48992623",
+      "last_checked": "2025-06-05T15:51:16.829859",
+      "status": "unchanged",
+      "etag": "11e3beaf5b3fa6487ceb7003b7f0edd5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/using-apple-search-ads-api-functionality.json": {
+      "hash": "9a74cc17caa1b91f114aa48e2c8576217d68578986016f8a0cb793e453c443f0",
+      "last_checked": "2025-06-05T15:51:17.216737",
+      "status": "unchanged",
+      "etag": "W/\"f92960e785c680d81bc5ee72f310a788\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/using-apple-search-ads-api-functionality": {
+      "hash": "9a74cc17caa1b91f114aa48e2c8576217d68578986016f8a0cb793e453c443f0",
+      "last_checked": "2025-06-05T15:51:17.216737",
+      "status": "unchanged",
+      "etag": "465649b3871f39dace9f22a5dca2cbdc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/search-apps.json": {
+      "hash": "dd0787873a84b761d07a64551a646be36ff848d69a213df035d385ccceaa449b",
+      "last_checked": "2025-06-05T15:51:17.600394",
+      "status": "unchanged",
+      "etag": "W/\"6adeda4c362deb5a94d7d09061497471\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/search-apps": {
+      "hash": "dd0787873a84b761d07a64551a646be36ff848d69a213df035d385ccceaa449b",
+      "last_checked": "2025-06-05T15:51:17.600394",
+      "status": "unchanged",
+      "etag": "948765e3d3965202b65266578bdd8058"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/app-eligibility.json": {
+      "hash": "7a049fca234b60d56f1247ffe5debafee8a83a833495d6cbccdfa12c33c5d920",
+      "last_checked": "2025-06-05T15:51:17.987010",
+      "status": "unchanged",
+      "etag": "W/\"b274d1ae6e8d10f356b344a79f2da8fd\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/app-eligibility": {
+      "hash": "7a049fca234b60d56f1247ffe5debafee8a83a833495d6cbccdfa12c33c5d920",
+      "last_checked": "2025-06-05T15:51:17.987010",
+      "status": "unchanged",
+      "etag": "b75baf9af6f6d9b15b8a627aea82f863"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/app-details.json": {
+      "hash": "2b27691a99f4b7646010f729ffeac7b3d714ce622872cc595048faaed6f73400",
+      "last_checked": "2025-06-05T15:51:18.392989",
+      "status": "unchanged",
+      "etag": "W/\"4f6d89adf2fc092a1654b1e6d601ef58\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/app-details": {
+      "hash": "2b27691a99f4b7646010f729ffeac7b3d714ce622872cc595048faaed6f73400",
+      "last_checked": "2025-06-05T15:51:18.392989",
+      "status": "unchanged",
+      "etag": "10710e10fa857c0a41cf1c3427e4e3af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaigns.json": {
+      "hash": "17911dfe49a6f4e8fd113650f0f73335d753c0fdb0ae985930ba378569108e8d",
+      "last_checked": "2025-06-05T15:51:18.739550",
+      "status": "unchanged",
+      "etag": "W/\"7ffd456a785719f46900d7b109924d22\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaigns": {
+      "hash": "17911dfe49a6f4e8fd113650f0f73335d753c0fdb0ae985930ba378569108e8d",
+      "last_checked": "2025-06-05T15:51:18.739550",
+      "status": "unchanged",
+      "etag": "04fb12815b7ea68080b23fd2e7ffe85c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/budget-orders.json": {
+      "hash": "d93982f614bd15c60fa215d7414296da4844bd47f3d3bb5608c383912554dff2",
+      "last_checked": "2025-06-05T15:51:19.121223",
+      "status": "unchanged",
+      "etag": "W/\"62c56612cb854a8b6ba83a5d271f8a96\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/budget-orders": {
+      "hash": "d93982f614bd15c60fa215d7414296da4844bd47f3d3bb5608c383912554dff2",
+      "last_checked": "2025-06-05T15:51:19.121223",
+      "status": "unchanged",
+      "etag": "d31cf5fc0a08760cbd952d589335bd7f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/ad-groups.json": {
+      "hash": "0193a6d3e8c6979d7d8500635ac34ee865081d3b512dfbe86d766ed69940652b",
+      "last_checked": "2025-06-05T15:51:19.441959",
+      "status": "unchanged",
+      "etag": "W/\"cf42e2f8b55e79af3d5beddb5c9a89aa\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/ad-groups": {
+      "hash": "0193a6d3e8c6979d7d8500635ac34ee865081d3b512dfbe86d766ed69940652b",
+      "last_checked": "2025-06-05T15:51:19.441959",
+      "status": "unchanged",
+      "etag": "8741eb04e9cc7bd31b8f5d6ebff2ae75"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/targeting-keywords-and-negative-keywords.json": {
+      "hash": "2bd1d28dbf0e39a1974800298598b979c591c0b1c93e541e8f271f0d34ee8993",
+      "last_checked": "2025-06-05T15:51:19.812913",
+      "status": "unchanged",
+      "etag": "W/\"da22c82ec35ee24cc34406ad049180f5\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/targeting-keywords-and-negative-keywords": {
+      "hash": "2bd1d28dbf0e39a1974800298598b979c591c0b1c93e541e8f271f0d34ee8993",
+      "last_checked": "2025-06-05T15:51:19.812913",
+      "status": "unchanged",
+      "etag": "9e394986768171c0486bb33e88ce6db3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/search-geolocations.json": {
+      "hash": "ad8a246ce380f069cdbf4052eafa9ce6d04e478175212ea00a06afd64b78dff7",
+      "last_checked": "2025-06-05T15:51:20.145065",
+      "status": "unchanged",
+      "etag": "W/\"bbab0c1604d69d49e30349f765f749a9\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/search-geolocations": {
+      "hash": "ad8a246ce380f069cdbf4052eafa9ce6d04e478175212ea00a06afd64b78dff7",
+      "last_checked": "2025-06-05T15:51:20.145065",
+      "status": "unchanged",
+      "etag": "bb635ce1f9562e05884d7f2ad684d12d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/ads.json": {
+      "hash": "de034cd5d8cbae9df6d8cf348d0480ec60951db6043ea745cb7fc621e16d42c7",
+      "last_checked": "2025-06-05T15:51:20.546969",
+      "status": "unchanged",
+      "etag": "W/\"5508cf9ad92781eec43d57d25d66dde4\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/ads": {
+      "hash": "de034cd5d8cbae9df6d8cf348d0480ec60951db6043ea745cb7fc621e16d42c7",
+      "last_checked": "2025-06-05T15:51:20.546969",
+      "status": "unchanged",
+      "etag": "92e0ccf1cc69ad22d5778190ba46e121"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/ad-rejection-reasons.json": {
+      "hash": "ccdb46496b84e49d2cbaa17d5b19592ff75fad56eca220876a6dfa6ca4377062",
+      "last_checked": "2025-06-05T15:51:20.938188",
+      "status": "unchanged",
+      "etag": "W/\"5b1058773a1e36ab925308167bf70fe9\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/ad-rejection-reasons": {
+      "hash": "ccdb46496b84e49d2cbaa17d5b19592ff75fad56eca220876a6dfa6ca4377062",
+      "last_checked": "2025-06-05T15:51:20.938188",
+      "status": "unchanged",
+      "etag": "5b74082a5f19fdfb8bf4f77b82553d3c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creatives.json": {
+      "hash": "b5b9290a037805479b13089ca6b297e087dfaf33df7a213ed873ed6633ae2639",
+      "last_checked": "2025-06-05T15:51:21.347593",
+      "status": "unchanged",
+      "etag": "W/\"9c84ee9ce083679a8f721ffa0cdb60f1\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creatives": {
+      "hash": "b5b9290a037805479b13089ca6b297e087dfaf33df7a213ed873ed6633ae2639",
+      "last_checked": "2025-06-05T15:51:21.347593",
+      "status": "unchanged",
+      "etag": "22dfd6037d7ef4e8eb6b1439380f530e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reports.json": {
+      "hash": "bfcf1da07f91ff750487b2638ce636ecc38f8719f8fc314cebbbc4f02c611c7f",
+      "last_checked": "2025-06-05T15:51:22.109781",
+      "status": "unchanged",
+      "etag": "W/\"a3ce02b78e19ba80d25c71f9d1bedd65\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reports": {
+      "hash": "bfcf1da07f91ff750487b2638ce636ecc38f8719f8fc314cebbbc4f02c611c7f",
+      "last_checked": "2025-06-05T15:51:22.109781",
+      "status": "unchanged",
+      "etag": "e1a37591ecb6c63cb5574673eecc6c8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/impression-share-reports.json": {
+      "hash": "026bb326d771405e5e7f7af947c58c6dfb3dfc32ee0480a9228a8ad305ac209e",
+      "last_checked": "2025-06-05T15:51:22.513485",
+      "status": "unchanged",
+      "etag": "W/\"cfb8e0a415eac4f96dd1aee196b8d4d0\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/impression-share-reports": {
+      "hash": "026bb326d771405e5e7f7af947c58c6dfb3dfc32ee0480a9228a8ad305ac209e",
+      "last_checked": "2025-06-05T15:51:22.513485",
+      "status": "unchanged",
+      "etag": "7f3176fa98fb033b083ed290d49771e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/apple-search-ads-campaign-management-api-5.json": {
+      "hash": "2afca0848a3d14ef112f0c517573ddd978488b2fef7a31fd1415cc1ddede9c6a",
+      "last_checked": "2025-06-05T15:51:22.872813",
+      "status": "unchanged",
+      "etag": "W/\"da9827364dd5a94b957f8a244bb4b293\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/apple-search-ads-campaign-management-api-5": {
+      "hash": "2afca0848a3d14ef112f0c517573ddd978488b2fef7a31fd1415cc1ddede9c6a",
+      "last_checked": "2025-06-05T15:51:22.872813",
+      "status": "unchanged",
+      "etag": "422f9de1f59c86070ba00781576d0525"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/apple-search-ads-campaign-management-api-4.json": {
+      "hash": "a286d8b0000411b9fdf45f2b12aa9e98faaf91e5ce60530b92ed3847e89cf805",
+      "last_checked": "2025-06-05T15:51:23.239185",
+      "status": "unchanged",
+      "etag": "W/\"12c56c4ed4664c6703874643600033e3\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/apple-search-ads-campaign-management-api-4": {
+      "hash": "a286d8b0000411b9fdf45f2b12aa9e98faaf91e5ce60530b92ed3847e89cf805",
+      "last_checked": "2025-06-05T15:51:23.239185",
+      "status": "unchanged",
+      "etag": "fb4e30fdb851222ec9ee04461209df00"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/apple-search-ads-campaign-management-api-3.json": {
+      "hash": "c8443b3ed1586d6e283c663667876bf6cf08c1847b6cff8f6453ba2697d2e8bf",
+      "last_checked": "2025-06-05T15:51:23.614722",
+      "status": "unchanged",
+      "etag": "W/\"8a977c7bf28d776910be8624cb5162b9\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/apple-search-ads-campaign-management-api-3": {
+      "hash": "c8443b3ed1586d6e283c663667876bf6cf08c1847b6cff8f6453ba2697d2e8bf",
+      "last_checked": "2025-06-05T15:51:23.614722",
+      "status": "unchanged",
+      "etag": "b909ccd4510e8a8c8dd8d33cfab393cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/apple-search-ads-campaign-management-api-2.json": {
+      "hash": "90175606c8990c65c66d0a23e6a321cd55326cdd446df24df0a04819198760bd",
+      "last_checked": "2025-06-05T15:51:24.037487",
+      "status": "unchanged",
+      "etag": "W/\"d1b85c17bde504f7417733116c186cfc\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/apple-search-ads-campaign-management-api-2": {
+      "hash": "90175606c8990c65c66d0a23e6a321cd55326cdd446df24df0a04819198760bd",
+      "last_checked": "2025-06-05T15:51:24.037487",
+      "status": "unchanged",
+      "etag": "2b70fb5b4fe9e3123bc66ea7b289d0a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/apple-search-ads-campaign-management-api-1.json": {
+      "hash": "f1d56d2ae3ad7c65a6ada96cf404eab994cabfd2cf790fa90b18ff14f63bb45e",
+      "last_checked": "2025-06-05T15:51:24.416006",
+      "status": "unchanged",
+      "etag": "W/\"e24b8024cbc7f17542fcb9d4e0d47c31\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/apple-search-ads-campaign-management-api-1": {
+      "hash": "f1d56d2ae3ad7c65a6ada96cf404eab994cabfd2cf790fa90b18ff14f63bb45e",
+      "last_checked": "2025-06-05T15:51:24.416006",
+      "status": "unchanged",
+      "etag": "b1d65a6d59da83b2e93d0c0640395062"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creative-sets.json": {
+      "hash": "012be6e8ecbc9383d034f9b2d6bd16b5feb4562963f2de8a7dc6b35d6750fefe",
+      "last_checked": "2025-06-05T15:51:24.776976",
+      "status": "unchanged",
+      "etag": "W/\"ccebacd0ef4af2ce71a1403727920dbd\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creative-sets": {
+      "hash": "012be6e8ecbc9383d034f9b2d6bd16b5feb4562963f2de8a7dc6b35d6750fefe",
+      "last_checked": "2025-06-05T15:51:24.776976",
+      "status": "unchanged",
+      "etag": "669fe265586827d9e67aa7b9f6d404c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-user-acl.json": {
+      "hash": "989290f6ec152b7ca4248997d1cbc52fff75d4e72a57ea48d2d172b35c914203",
+      "last_checked": "2025-06-05T15:51:25.182236",
+      "status": "unchanged",
+      "etag": "W/\"6e892ed8cad48b4155c157463c7d77df\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-user-acl": {
+      "hash": "989290f6ec152b7ca4248997d1cbc52fff75d4e72a57ea48d2d172b35c914203",
+      "last_checked": "2025-06-05T15:51:25.182236",
+      "status": "unchanged",
+      "etag": "8861e9dca813d85eac507f2c6da0bc7b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/useracl.json": {
+      "hash": "d0d0920e801e85e3641dc73c3dfa6583935fbcbcfe890d30f449361f2015d839",
+      "last_checked": "2025-06-05T15:51:25.589469",
+      "status": "unchanged",
+      "etag": "W/\"bc08c66e26887a2bfad2fc37acf07fd6\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/useracl": {
+      "hash": "d0d0920e801e85e3641dc73c3dfa6583935fbcbcfe890d30f449361f2015d839",
+      "last_checked": "2025-06-05T15:51:25.589469",
+      "status": "unchanged",
+      "etag": "853af62b30cf3d601c0fda5a82ae452d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/useracllistresponse.json": {
+      "hash": "a012759a014359429d8a94b599a26adf00faba2bab6550895424762bd76a7cad",
+      "last_checked": "2025-06-05T15:51:25.996100",
+      "status": "unchanged",
+      "etag": "W/\"6c2f97460d2b0ae46581b0ff4445ba60\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/useracllistresponse": {
+      "hash": "a012759a014359429d8a94b599a26adf00faba2bab6550895424762bd76a7cad",
+      "last_checked": "2025-06-05T15:51:25.996100",
+      "status": "unchanged",
+      "etag": "6d83ad618fe2af609736b679038cb48a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-me-details.json": {
+      "hash": "3b75fedc0a700c0663bdf14d41ec93fe6b55da180bd37bf99c7b3ecd7d9d4db8",
+      "last_checked": "2025-06-05T15:51:26.365384",
+      "status": "unchanged",
+      "etag": "W/\"aa08845705b5a38321e941dde87d691e\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-me-details": {
+      "hash": "3b75fedc0a700c0663bdf14d41ec93fe6b55da180bd37bf99c7b3ecd7d9d4db8",
+      "last_checked": "2025-06-05T15:51:26.365384",
+      "status": "unchanged",
+      "etag": "a4d4b75b9405525fd1aa3a26ef4c909a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/medetail.json": {
+      "hash": "47da79cdafaeae33450405e8b08e3daabbef287d7ae1a1bf79a52a5fb1e08b10",
+      "last_checked": "2025-06-05T15:51:26.740267",
+      "status": "unchanged",
+      "etag": "W/\"81493c64dda0d9fd67ae0c12a6e4c495\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/medetail": {
+      "hash": "47da79cdafaeae33450405e8b08e3daabbef287d7ae1a1bf79a52a5fb1e08b10",
+      "last_checked": "2025-06-05T15:51:26.740267",
+      "status": "unchanged",
+      "etag": "88c245e61e844cc15f483ec90943ecbb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/medetailresponse.json": {
+      "hash": "b809dadc1a036c18df1f0d19dbe5fc431dc9410eba4e4ae4475b0519a9c5ee1a",
+      "last_checked": "2025-06-05T15:51:27.158329",
+      "status": "unchanged",
+      "etag": "W/\"352e2e52813ef17e0ddea252390af307\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/medetailresponse": {
+      "hash": "b809dadc1a036c18df1f0d19dbe5fc431dc9410eba4e4ae4475b0519a9c5ee1a",
+      "last_checked": "2025-06-05T15:51:27.158329",
+      "status": "unchanged",
+      "etag": "c6b9004addf549d3f943c7c8082ae629"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/apierrorresponse.json": {
+      "hash": "97df0c6bf2df113dd68e485f20a5e7e18eb23c28cfed47a19bd2ff264c311e89",
+      "last_checked": "2025-06-05T15:51:27.575496",
+      "status": "unchanged",
+      "etag": "W/\"e33d1c6f1fd82d50b32ac11f23202b99\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/apierrorresponse": {
+      "hash": "97df0c6bf2df113dd68e485f20a5e7e18eb23c28cfed47a19bd2ff264c311e89",
+      "last_checked": "2025-06-05T15:51:27.575496",
+      "status": "unchanged",
+      "etag": "a2501e9ccf992e5014daa52d2527fef7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/errorresponsebody.json": {
+      "hash": "a58e290d7664b5063d7349adb27c587a5c1180b236a6a71d038360a9ce770b69",
+      "last_checked": "2025-06-05T15:51:27.958538",
+      "status": "unchanged",
+      "etag": "W/\"18a26a77cb6e15c1e0f36d45fabf70b0\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/errorresponsebody": {
+      "hash": "a58e290d7664b5063d7349adb27c587a5c1180b236a6a71d038360a9ce770b69",
+      "last_checked": "2025-06-05T15:51:27.958538",
+      "status": "unchanged",
+      "etag": "4d9b75c9e82009716b8d6e3abe87d51a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/errorresponseitem.json": {
+      "hash": "b96c0cc34c7bdf8fe535e76d5f144bef08cabbf5ab66aa1de1f11d7f07af71b6",
+      "last_checked": "2025-06-05T15:51:28.311554",
+      "status": "unchanged",
+      "etag": "W/\"bdc3e48eec54ee09254d951e17c0cb18\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/errorresponseitem": {
+      "hash": "b96c0cc34c7bdf8fe535e76d5f144bef08cabbf5ab66aa1de1f11d7f07af71b6",
+      "last_checked": "2025-06-05T15:51:28.311554",
+      "status": "unchanged",
+      "etag": "f2aa376397f04d1d0548734f5cc7d285"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/integerresponse.json": {
+      "hash": "97a164c218d43daace8439db4294d5be2cf8e2e3f0647551d4e5a88d5b799dc9",
+      "last_checked": "2025-06-05T15:51:28.694345",
+      "status": "unchanged",
+      "etag": "W/\"7a66427b52b154317bf4baa8069fa1d1\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/integerresponse": {
+      "hash": "97a164c218d43daace8439db4294d5be2cf8e2e3f0647551d4e5a88d5b799dc9",
+      "last_checked": "2025-06-05T15:51:28.694345",
+      "status": "unchanged",
+      "etag": "8a6ec85cb626dd0241dc9fd278a035c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/voidresponse.json": {
+      "hash": "a609a81ff232a3cdf113309bdb39ec659084ac12f40b28212cccbea7ff3f87fc",
+      "last_checked": "2025-06-05T15:51:29.077692",
+      "status": "unchanged",
+      "etag": "W/\"f607eeb395adbf5953e2fa232527c4cb\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/voidresponse": {
+      "hash": "a609a81ff232a3cdf113309bdb39ec659084ac12f40b28212cccbea7ff3f87fc",
+      "last_checked": "2025-06-05T15:51:29.077692",
+      "status": "unchanged",
+      "etag": "28b71df8e34a6b97f93d7d66d44f5cae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/usability-and-errors.json": {
+      "hash": "7342d77e9691dfa6660ce60bffd347fddb5e7a586acea5376d4ae50a33b30c0b",
+      "last_checked": "2025-06-05T15:51:29.479031",
+      "status": "unchanged",
+      "etag": "W/\"76bdf361a5edc3f08a0227e76f002e0f\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/usability-and-errors": {
+      "hash": "7342d77e9691dfa6660ce60bffd347fddb5e7a586acea5376d4ae50a33b30c0b",
+      "last_checked": "2025-06-05T15:51:29.479031",
+      "status": "unchanged",
+      "etag": "7572a5f97fd80ee10d12ed262719377d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/search-for-ios-apps.json": {
+      "hash": "e4634f49ffb391a824b877c9dedcefde1d42114c1ea75c0d97293ac137840c6d",
+      "last_checked": "2025-06-05T15:51:29.845877",
+      "status": "unchanged",
+      "etag": "W/\"995df70cbcf3402a7a84e6b4cbff3275\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/search-for-ios-apps": {
+      "hash": "e4634f49ffb391a824b877c9dedcefde1d42114c1ea75c0d97293ac137840c6d",
+      "last_checked": "2025-06-05T15:51:29.845877",
+      "status": "unchanged",
+      "etag": "b827c26d626e8861cb19dcf22551f3c7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/appinfo.json": {
+      "hash": "fe638057f9ec9ae3a0be9f8a1f6ad724673908b29adf3f12af95dd730cbd266a",
+      "last_checked": "2025-06-05T15:51:30.176602",
+      "status": "unchanged",
+      "etag": "W/\"6e0155341337478574fe5add31c8b24b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/appinfo": {
+      "hash": "fe638057f9ec9ae3a0be9f8a1f6ad724673908b29adf3f12af95dd730cbd266a",
+      "last_checked": "2025-06-05T15:51:30.176602",
+      "status": "unchanged",
+      "etag": "b1fcbed9aae76f0e1f23283690fa9a31"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/appinfolistresponse.json": {
+      "hash": "9269c44d5aed98a191e8a21093d274dee97e564d31af4036c4131ad4cde794b8",
+      "last_checked": "2025-06-05T15:51:30.528040",
+      "status": "unchanged",
+      "etag": "W/\"25d62cbd3fb30e4821508a057729e12e\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/appinfolistresponse": {
+      "hash": "9269c44d5aed98a191e8a21093d274dee97e564d31af4036c4131ad4cde794b8",
+      "last_checked": "2025-06-05T15:51:30.528040",
+      "status": "unchanged",
+      "etag": "b9d2cb2a39bcdad866ecc8c6da54c278"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-app-eligibility-records.json": {
+      "hash": "b7225f689d2f24037ae231ea3199f647dc9465415f78cd49607e91de6fa3a3b3",
+      "last_checked": "2025-06-05T15:51:30.886085",
+      "status": "unchanged",
+      "etag": "W/\"b06c41eafdc44b400761c4593711bc82\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-app-eligibility-records": {
+      "hash": "b7225f689d2f24037ae231ea3199f647dc9465415f78cd49607e91de6fa3a3b3",
+      "last_checked": "2025-06-05T15:51:30.886085",
+      "status": "unchanged",
+      "etag": "b844803c53dab49d3543073ad32402e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/eligibilityrecord.json": {
+      "hash": "dbd43ca6fc922dd61b2ed3965b63b81d42c3a7cc3c8236df8a1b4be79d732b8b",
+      "last_checked": "2025-06-05T15:51:31.309532",
+      "status": "unchanged",
+      "etag": "W/\"0ef2473fee889b5327ffe6fc9bad8e80\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/eligibilityrecord": {
+      "hash": "dbd43ca6fc922dd61b2ed3965b63b81d42c3a7cc3c8236df8a1b4be79d732b8b",
+      "last_checked": "2025-06-05T15:51:31.309532",
+      "status": "unchanged",
+      "etag": "3d5d9695e6abe78facd4ecc2d161c568"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/eligibilityrecordlistresponse.json": {
+      "hash": "411797d839b0d56ea5ea1b1ce7b7136c2785ea93c1ba9c7fb762e18611475de1",
+      "last_checked": "2025-06-05T15:51:31.678416",
+      "status": "unchanged",
+      "etag": "W/\"3e1e8a932ea99ab2be68bb3c509ca60b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/eligibilityrecordlistresponse": {
+      "hash": "411797d839b0d56ea5ea1b1ce7b7136c2785ea93c1ba9c7fb762e18611475de1",
+      "last_checked": "2025-06-05T15:51:31.678416",
+      "status": "unchanged",
+      "etag": "806e98243ce2badfad65c45b7c725786"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-app-details.json": {
+      "hash": "cb51c449a44ea83e28f566dcccab5bef7b31ec514c001e8d36c8151392dae86e",
+      "last_checked": "2025-06-05T15:51:32.094640",
+      "status": "unchanged",
+      "etag": "W/\"5cac5f34e30b343b1338094905dc0f0d\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-app-details": {
+      "hash": "cb51c449a44ea83e28f566dcccab5bef7b31ec514c001e8d36c8151392dae86e",
+      "last_checked": "2025-06-05T15:51:32.094640",
+      "status": "unchanged",
+      "etag": "51c5e87fddcf5b375b5cc82325c441c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-localized-app-details.json": {
+      "hash": "968355f72a29fd2eba45f23b9c2a1fda204a63478d988cae055be6563b07ee7f",
+      "last_checked": "2025-06-05T15:51:32.517154",
+      "status": "unchanged",
+      "etag": "W/\"00fb27648d83f074e8758501552ed3c9\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-localized-app-details": {
+      "hash": "968355f72a29fd2eba45f23b9c2a1fda204a63478d988cae055be6563b07ee7f",
+      "last_checked": "2025-06-05T15:51:32.517154",
+      "status": "unchanged",
+      "etag": "61525e15ea7876d99cde9d0351dcf7d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/mediadetail.json": {
+      "hash": "65d923bdfd174c024bb4c08cffaba2e9fcd2f26605255912209cc12c086eef95",
+      "last_checked": "2025-06-05T15:51:32.896854",
+      "status": "unchanged",
+      "etag": "W/\"d376ee65b91a7001972737b9a582cbef\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/mediadetail": {
+      "hash": "65d923bdfd174c024bb4c08cffaba2e9fcd2f26605255912209cc12c086eef95",
+      "last_checked": "2025-06-05T15:51:32.896854",
+      "status": "unchanged",
+      "etag": "91f34b18f5a6521ca3c80b5f21299c9e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/mediadetailresponse.json": {
+      "hash": "5e4210bc78a22ef582448d06142f54976f4923740b67624d8db6873a47bb1d6f",
+      "last_checked": "2025-06-05T15:51:33.292199",
+      "status": "unchanged",
+      "etag": "W/\"774e7ffba6dab1398130e07d528487c2\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/mediadetailresponse": {
+      "hash": "5e4210bc78a22ef582448d06142f54976f4923740b67624d8db6873a47bb1d6f",
+      "last_checked": "2025-06-05T15:51:33.292199",
+      "status": "unchanged",
+      "etag": "23bf469795c8bc846ca49c3ddf1d0d23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/medialocaledetail.json": {
+      "hash": "c4f7c1466741966e31457329921290e5b339dc6068c124e5f92f03e3f939123f",
+      "last_checked": "2025-06-05T15:51:33.636083",
+      "status": "unchanged",
+      "etag": "W/\"26990b481cdb3d39b1126348b85ba883\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/medialocaledetail": {
+      "hash": "c4f7c1466741966e31457329921290e5b339dc6068c124e5f92f03e3f939123f",
+      "last_checked": "2025-06-05T15:51:33.636083",
+      "status": "unchanged",
+      "etag": "aecd1dfd7a6c77bf88b5cb24328bc380"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/medialocaledetailresponse.json": {
+      "hash": "3cb815f933f794733fc199582e806e27829c6943d64c9becc0afeb2b98a42bb9",
+      "last_checked": "2025-06-05T15:51:34.028141",
+      "status": "unchanged",
+      "etag": "W/\"0f199ed341ca3e51a9c2ceb7bcd7060a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/medialocaledetailresponse": {
+      "hash": "3cb815f933f794733fc199582e806e27829c6943d64c9becc0afeb2b98a42bb9",
+      "last_checked": "2025-06-05T15:51:34.028141",
+      "status": "unchanged",
+      "etag": "df3c48597ea5052f7f2078e1ad661fbe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/create-a-campaign.json": {
+      "hash": "a1e8a586d8bc691fcb9c8873bea59e521adbe3f9207032cf2907c163f72ae34e",
+      "last_checked": "2025-06-05T15:51:34.421567",
+      "status": "unchanged",
+      "etag": "W/\"5713a275d1ccdc90fc37311ec863a552\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/create-a-campaign": {
+      "hash": "a1e8a586d8bc691fcb9c8873bea59e521adbe3f9207032cf2907c163f72ae34e",
+      "last_checked": "2025-06-05T15:51:34.421567",
+      "status": "unchanged",
+      "etag": "11f2be61a7c89c920046eedec5bd14c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-campaigns.json": {
+      "hash": "3ce003267a4e3eb74ed0ebb724da3133cce165d6acbf31aea05a5d037d941c3c",
+      "last_checked": "2025-06-05T15:51:34.769784",
+      "status": "unchanged",
+      "etag": "W/\"df4f28f47f0e612242d3c813ded1d2a3\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-campaigns": {
+      "hash": "3ce003267a4e3eb74ed0ebb724da3133cce165d6acbf31aea05a5d037d941c3c",
+      "last_checked": "2025-06-05T15:51:34.769784",
+      "status": "unchanged",
+      "etag": "61fd187f9e87043dbd89dcb4d731008e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-a-campaign.json": {
+      "hash": "6c06cab9c4433c28fbe3844c51696c5c0d45502977280338c84a9f0a762e140c",
+      "last_checked": "2025-06-05T15:51:35.167936",
+      "status": "unchanged",
+      "etag": "W/\"dfdf970c163bea6a573bbba6b61931ce\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-a-campaign": {
+      "hash": "6c06cab9c4433c28fbe3844c51696c5c0d45502977280338c84a9f0a762e140c",
+      "last_checked": "2025-06-05T15:51:35.167936",
+      "status": "unchanged",
+      "etag": "602eeb73de2013762528f8c75c58f747"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-all-campaigns.json": {
+      "hash": "de59fcdd7fb2ac488ccf722e066c6f98292477f7a2062f95fa6db978589051d8",
+      "last_checked": "2025-06-05T15:51:35.513128",
+      "status": "unchanged",
+      "etag": "W/\"9899b98df796f44f58a5ae088acaf9f4\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-all-campaigns": {
+      "hash": "de59fcdd7fb2ac488ccf722e066c6f98292477f7a2062f95fa6db978589051d8",
+      "last_checked": "2025-06-05T15:51:35.513128",
+      "status": "unchanged",
+      "etag": "b3c95d8a580a5b8a946497a5bd356bdd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/update-a-campaign.json": {
+      "hash": "aab9485e8811e9099cc4adb89b6d0cedf3cea2f49aef8bb0d4a0c1a47ff9687f",
+      "last_checked": "2025-06-05T15:51:35.903882",
+      "status": "unchanged",
+      "etag": "W/\"0788bf94e60a9a3c26460a1e8bbd37ec\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/update-a-campaign": {
+      "hash": "aab9485e8811e9099cc4adb89b6d0cedf3cea2f49aef8bb0d4a0c1a47ff9687f",
+      "last_checked": "2025-06-05T15:51:35.903882",
+      "status": "unchanged",
+      "etag": "7416f792a8333bedc0ebd2ab346a13ed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/delete-a-campaign.json": {
+      "hash": "52407a6267c1fb1af6d0a6560ef6f89a23205cc172c0672f92c4dcfd3090f051",
+      "last_checked": "2025-06-05T15:51:36.319746",
+      "status": "unchanged",
+      "etag": "W/\"87052bcc5baaafad805e0ad32cf421b7\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/delete-a-campaign": {
+      "hash": "52407a6267c1fb1af6d0a6560ef6f89a23205cc172c0672f92c4dcfd3090f051",
+      "last_checked": "2025-06-05T15:51:36.319746",
+      "status": "unchanged",
+      "etag": "b9159b5a03595a005da6d4125edca4bb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaign.json": {
+      "hash": "a413b0e69b19a50f9a2abf45cd8d0b43cd6c584502a147f40bfcc19ba9e11c8a",
+      "last_checked": "2025-06-05T15:51:36.714334",
+      "status": "unchanged",
+      "etag": "W/\"0dddd101e3a4865682b733aea1631ec5\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaign": {
+      "hash": "a413b0e69b19a50f9a2abf45cd8d0b43cd6c584502a147f40bfcc19ba9e11c8a",
+      "last_checked": "2025-06-05T15:51:36.714334",
+      "status": "unchanged",
+      "etag": "57c9ffa00894ef3be5eb04a894564cec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaignresponse.json": {
+      "hash": "c0b9d0181eb5f723538f24c46bf96670cba35fd7f7962734d48dd2d49d3cf477",
+      "last_checked": "2025-06-05T15:51:37.184682",
+      "status": "unchanged",
+      "etag": "W/\"e23d033dcb007e7a843aae6212460a65\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaignresponse": {
+      "hash": "c0b9d0181eb5f723538f24c46bf96670cba35fd7f7962734d48dd2d49d3cf477",
+      "last_checked": "2025-06-05T15:51:37.184682",
+      "status": "unchanged",
+      "etag": "f9d4522888dbd58881e6570138dd1fe9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaign/countryorregionservingstatereasons-data.dictionary.json": {
+      "hash": "f3b345ce86a9e4491ce21239a05e7b5fa1be04115118c6568250927b2f5c348b",
+      "last_checked": "2025-06-05T15:51:37.583152",
+      "status": "unchanged",
+      "etag": "W/\"902ce7ab3505c04fd310855f8d934cc8\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaign/countryorregionservingstatereasons-data.dictionary": {
+      "hash": "f3b345ce86a9e4491ce21239a05e7b5fa1be04115118c6568250927b2f5c348b",
+      "last_checked": "2025-06-05T15:51:37.583152",
+      "status": "unchanged",
+      "etag": "da14716d146a7c44124d7c1e69f2ddf4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaignlistresponse.json": {
+      "hash": "121c0b483f7faf19f2cdbdd85cf30b0ad1b1bca8067aa0e995d12d79167b517d",
+      "last_checked": "2025-06-05T15:51:37.979024",
+      "status": "unchanged",
+      "etag": "W/\"e3d8a17d3ea6216979fc8bc440f9da2a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaignlistresponse": {
+      "hash": "121c0b483f7faf19f2cdbdd85cf30b0ad1b1bca8067aa0e995d12d79167b517d",
+      "last_checked": "2025-06-05T15:51:37.979024",
+      "status": "unchanged",
+      "etag": "81b5d8072220bcc00ffc863a3e4495bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaignupdate.json": {
+      "hash": "cce36d4b2946fd23fae41775bd3dda3be91fdab8d32c6fbc9e5f85a9aeedff1f",
+      "last_checked": "2025-06-05T15:51:38.378279",
+      "status": "unchanged",
+      "etag": "W/\"a72b2eaaee31582b4bbf65b611f9bc4d\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaignupdate": {
+      "hash": "cce36d4b2946fd23fae41775bd3dda3be91fdab8d32c6fbc9e5f85a9aeedff1f",
+      "last_checked": "2025-06-05T15:51:38.378279",
+      "status": "unchanged",
+      "etag": "0e56defaa6829bad4cbafdb0a2338454"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/updatecampaignrequest.json": {
+      "hash": "2f04e9e3741cd46c5831f681b342ee9511a9072c2c9d3869517cf9b0d4498d75",
+      "last_checked": "2025-06-05T15:51:38.753753",
+      "status": "unchanged",
+      "etag": "W/\"82f88ea4e24ee2e1a3bd670b90949d49\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/updatecampaignrequest": {
+      "hash": "2f04e9e3741cd46c5831f681b342ee9511a9072c2c9d3869517cf9b0d4498d75",
+      "last_checked": "2025-06-05T15:51:38.753753",
+      "status": "unchanged",
+      "etag": "60fa0aa0edf07d0211b907b4b70e6d8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adchanneltype.json": {
+      "hash": "37fbd33894b23dcdd45f4e9cd002823ca4499ec28ff4ce9f095a9d45c26c56f3",
+      "last_checked": "2025-06-05T15:51:39.135280",
+      "status": "unchanged",
+      "etag": "W/\"8d8ed5a7a995418280a62c2224fa711b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adchanneltype": {
+      "hash": "37fbd33894b23dcdd45f4e9cd002823ca4499ec28ff4ce9f095a9d45c26c56f3",
+      "last_checked": "2025-06-05T15:51:39.135280",
+      "status": "unchanged",
+      "etag": "05145c2685326f377d9dfaeb91799054"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/billingeventtype.json": {
+      "hash": "8d80af36b1bdba51b88ff7be11db52cd354d9730a994e306f074c6ba66b6fcca",
+      "last_checked": "2025-06-05T15:51:39.555649",
+      "status": "unchanged",
+      "etag": "W/\"b9fb5e265f86223c8c9a896cbca2a99a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/billingeventtype": {
+      "hash": "8d80af36b1bdba51b88ff7be11db52cd354d9730a994e306f074c6ba66b6fcca",
+      "last_checked": "2025-06-05T15:51:39.555649",
+      "status": "unchanged",
+      "etag": "9e0e7d42e3ae60e2fdfd7bad1abd3c39"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaigncountryorregionsservingstatereasons.json": {
+      "hash": "d3c150f10a2a13ca66c7da35b1e7f83d38f3d65a216e2dcb3e83d386262c698d",
+      "last_checked": "2025-06-05T15:51:39.928934",
+      "status": "unchanged",
+      "etag": "W/\"962b419bf9d0aada5de67891e93459cc\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaigncountryorregionsservingstatereasons": {
+      "hash": "d3c150f10a2a13ca66c7da35b1e7f83d38f3d65a216e2dcb3e83d386262c698d",
+      "last_checked": "2025-06-05T15:51:39.928934",
+      "status": "unchanged",
+      "etag": "f6121d9ff0969bd1e0c78b47194af065"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaigndisplaystatus.json": {
+      "hash": "6dcf4c5fa9b5b2b2a6485768cd6db381e97f6e1b0e077c49a11bd35dd7829674",
+      "last_checked": "2025-06-05T15:51:40.311838",
+      "status": "unchanged",
+      "etag": "W/\"3651f59977de9bf4209f1c970be5ba56\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaigndisplaystatus": {
+      "hash": "6dcf4c5fa9b5b2b2a6485768cd6db381e97f6e1b0e077c49a11bd35dd7829674",
+      "last_checked": "2025-06-05T15:51:40.311838",
+      "status": "unchanged",
+      "etag": "384e1081c35f72a77950cb7fa10ad9d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaignservingstatereasons.json": {
+      "hash": "9505211b82b205a46369f044a5feda8afacb8ac66c2a95f511c8bc6af0647548",
+      "last_checked": "2025-06-05T15:51:40.641752",
+      "status": "unchanged",
+      "etag": "W/\"bc62d9955f827b6fdf5c16cc186649e4\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaignservingstatereasons": {
+      "hash": "9505211b82b205a46369f044a5feda8afacb8ac66c2a95f511c8bc6af0647548",
+      "last_checked": "2025-06-05T15:51:40.641752",
+      "status": "unchanged",
+      "etag": "19603e319a21b99be109f8edcfb2a82e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaignservingstatus.json": {
+      "hash": "fec9f4fd2f73fd63563385f7c9ea6f2f207e1d14f73a7b750adf29a191bcca89",
+      "last_checked": "2025-06-05T15:51:41.013135",
+      "status": "unchanged",
+      "etag": "W/\"63b486366e503af921859e864dc54c6b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaignservingstatus": {
+      "hash": "fec9f4fd2f73fd63563385f7c9ea6f2f207e1d14f73a7b750adf29a191bcca89",
+      "last_checked": "2025-06-05T15:51:41.013135",
+      "status": "unchanged",
+      "etag": "1a7105d87fa063b270f7efdb53b8647a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaignstatus.json": {
+      "hash": "d2fbab0057b9e9f3975668190e7c0533512bed06e7124d86e904659a723dd2e3",
+      "last_checked": "2025-06-05T15:51:41.414444",
+      "status": "unchanged",
+      "etag": "W/\"9de479446baa5d771fbef107991b34d2\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaignstatus": {
+      "hash": "d2fbab0057b9e9f3975668190e7c0533512bed06e7124d86e904659a723dd2e3",
+      "last_checked": "2025-06-05T15:51:41.414444",
+      "status": "unchanged",
+      "etag": "3e356541ff4a12ecdac106fe1104b349"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/paymentmodel.json": {
+      "hash": "5f7c67e66e4cfde4ce2fd7d5fe47540575dd759af59c023a13d878097fe5c9db",
+      "last_checked": "2025-06-05T15:51:41.799337",
+      "status": "unchanged",
+      "etag": "W/\"8a853a6c491f59eca8786ba3e6328c2d\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/paymentmodel": {
+      "hash": "5f7c67e66e4cfde4ce2fd7d5fe47540575dd759af59c023a13d878097fe5c9db",
+      "last_checked": "2025-06-05T15:51:41.799337",
+      "status": "unchanged",
+      "etag": "ecfbb17ba17653252a100bb9bce95190"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/supplysource.json": {
+      "hash": "002df1a3ce54da8ec0f5f3b778708b477a3c49728ea93d8996bdff7c1e9d9b57",
+      "last_checked": "2025-06-05T15:51:42.189076",
+      "status": "unchanged",
+      "etag": "W/\"fbe174252959bd3e289811d23e2cdd4d\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/supplysource": {
+      "hash": "002df1a3ce54da8ec0f5f3b778708b477a3c49728ea93d8996bdff7c1e9d9b57",
+      "last_checked": "2025-06-05T15:51:42.189076",
+      "status": "unchanged",
+      "etag": "0790d7e2662435d7fb09095fa808b48a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/create-a-budget-order.json": {
+      "hash": "c9591667e16aac9d374914d7b7af15a3be26279d40548f797894c726ffe558c2",
+      "last_checked": "2025-06-05T15:51:42.610037",
+      "status": "unchanged",
+      "etag": "W/\"da1bac85dbf61b32bcb7aea7db60d07b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/create-a-budget-order": {
+      "hash": "c9591667e16aac9d374914d7b7af15a3be26279d40548f797894c726ffe558c2",
+      "last_checked": "2025-06-05T15:51:42.610037",
+      "status": "unchanged",
+      "etag": "65e766b0f1acc783bf8969487567a88b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/update-a-budget-order.json": {
+      "hash": "177e86b16dc71457169620ad144f6623a0f88940914f7812b88d8688b502c393",
+      "last_checked": "2025-06-05T15:51:42.995885",
+      "status": "unchanged",
+      "etag": "W/\"d8f5a72243c6a4c2266e79e055b32dd9\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/update-a-budget-order": {
+      "hash": "177e86b16dc71457169620ad144f6623a0f88940914f7812b88d8688b502c393",
+      "last_checked": "2025-06-05T15:51:42.995885",
+      "status": "unchanged",
+      "etag": "8132e22f8c6107cd9f04869ad48e4f51"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-a-budget-order.json": {
+      "hash": "36d810f7428072c8f2493db84dd3e5d05454884f3802d88d08024c7d80752cb3",
+      "last_checked": "2025-06-05T15:51:43.376534",
+      "status": "unchanged",
+      "etag": "W/\"48428019f5ef12123b86fbcb126ce555\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-a-budget-order": {
+      "hash": "36d810f7428072c8f2493db84dd3e5d05454884f3802d88d08024c7d80752cb3",
+      "last_checked": "2025-06-05T15:51:43.376534",
+      "status": "unchanged",
+      "etag": "6d461abd2d4a28a9c141c17eb5468892"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-all-budget-orders.json": {
+      "hash": "269a21b78d74943f5322bc0ea9813cd34a0e2861aeb0ca1d4b0b6a62bb5631dd",
+      "last_checked": "2025-06-05T15:51:43.720549",
+      "status": "unchanged",
+      "etag": "W/\"e549e488c9a8987ac350bfd775a46de6\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-all-budget-orders": {
+      "hash": "269a21b78d74943f5322bc0ea9813cd34a0e2861aeb0ca1d4b0b6a62bb5631dd",
+      "last_checked": "2025-06-05T15:51:43.720549",
+      "status": "unchanged",
+      "etag": "968914acf762eaaa38caa3357fd10dd5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/budgetorder.json": {
+      "hash": "9307a4333d90e1909cd191f334b4e11e44c32133aa792829d7cdfe105bda930c",
+      "last_checked": "2025-06-05T15:51:44.100391",
+      "status": "unchanged",
+      "etag": "W/\"e0858d6e17866738c389e00863d4639a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/budgetorder": {
+      "hash": "9307a4333d90e1909cd191f334b4e11e44c32133aa792829d7cdfe105bda930c",
+      "last_checked": "2025-06-05T15:51:44.100391",
+      "status": "unchanged",
+      "etag": "36eb1c35d5417ec02a2d1404a963d929"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/budgetorderinfo.json": {
+      "hash": "c388c617a764861c5f62c45145fbe85624a16c4b86cc20a98bba6ab2d1c717dc",
+      "last_checked": "2025-06-05T15:51:44.457170",
+      "status": "unchanged",
+      "etag": "W/\"2809b443f443c143958deb021eb0cbb0\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/budgetorderinfo": {
+      "hash": "c388c617a764861c5f62c45145fbe85624a16c4b86cc20a98bba6ab2d1c717dc",
+      "last_checked": "2025-06-05T15:51:44.457170",
+      "status": "unchanged",
+      "etag": "090df266d0ce7f87e12cbf4323054ed8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/budgetordercreate.json": {
+      "hash": "021c2f8d6090ea7f77e03011b17b7bd3d491eb834ee77b798eb87f87b411a00f",
+      "last_checked": "2025-06-05T15:51:44.800761",
+      "status": "unchanged",
+      "etag": "W/\"37924653e13c1e9a2d951142f3398612\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/budgetordercreate": {
+      "hash": "021c2f8d6090ea7f77e03011b17b7bd3d491eb834ee77b798eb87f87b411a00f",
+      "last_checked": "2025-06-05T15:51:44.800761",
+      "status": "unchanged",
+      "etag": "1f677e893055f8e2a513abd8aefb004e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/budgetorderupdate.json": {
+      "hash": "5d450d13ed5dc5c6d4fe52775433281d1e6f40dff60c775c3a37e391805ec12c",
+      "last_checked": "2025-06-05T15:51:45.143096",
+      "status": "unchanged",
+      "etag": "W/\"ad5f34015d2b44e81b9a0d90d7994af5\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/budgetorderupdate": {
+      "hash": "5d450d13ed5dc5c6d4fe52775433281d1e6f40dff60c775c3a37e391805ec12c",
+      "last_checked": "2025-06-05T15:51:45.143096",
+      "status": "unchanged",
+      "etag": "8d8840bf7f30e694f610271afe89686e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/budgetorderinforesponse.json": {
+      "hash": "f5d552fb53971c9db20ba8a4926c0942a20dfbcbdd84968159d94fecdb65d735",
+      "last_checked": "2025-06-05T15:51:45.505253",
+      "status": "unchanged",
+      "etag": "W/\"e2cccb968f55b2742ddd3c3a032e9b43\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/budgetorderinforesponse": {
+      "hash": "f5d552fb53971c9db20ba8a4926c0942a20dfbcbdd84968159d94fecdb65d735",
+      "last_checked": "2025-06-05T15:51:45.505253",
+      "status": "unchanged",
+      "etag": "07d29337ef4a789b65a2d8cafc6fdfbf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/budgetorderinfolistresponse.json": {
+      "hash": "04308c12b1d30b168954e30fe99acefab8452ae0588e93ea4d521587b7f955fd",
+      "last_checked": "2025-06-05T15:51:45.865684",
+      "status": "unchanged",
+      "etag": "W/\"327a58163c084933d96c5283c6774581\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/budgetorderinfolistresponse": {
+      "hash": "04308c12b1d30b168954e30fe99acefab8452ae0588e93ea4d521587b7f955fd",
+      "last_checked": "2025-06-05T15:51:45.865684",
+      "status": "unchanged",
+      "etag": "6a83e3c3d69d7c754f058a33e7e140e2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/locinvoicedetails.json": {
+      "hash": "0903a44f5aedd12969f9401367198c3f03530d0e6409aed3c2ecf6981426ce98",
+      "last_checked": "2025-06-05T15:51:46.301562",
+      "status": "unchanged",
+      "etag": "W/\"4def7ba55e41a471c2a82046bc2857a4\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/locinvoicedetails": {
+      "hash": "0903a44f5aedd12969f9401367198c3f03530d0e6409aed3c2ecf6981426ce98",
+      "last_checked": "2025-06-05T15:51:46.301562",
+      "status": "unchanged",
+      "etag": "105fefbcd4dbaa8e26f34f37583e9a2f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/money.json": {
+      "hash": "d728982ee9ef0932a1f45da8443c2ab2741a763d412eb749d37b39a638c8ce74",
+      "last_checked": "2025-06-05T15:51:46.713950",
+      "status": "unchanged",
+      "etag": "W/\"24df56a420fdad4c2489da019fcce394\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/money": {
+      "hash": "d728982ee9ef0932a1f45da8443c2ab2741a763d412eb749d37b39a638c8ce74",
+      "last_checked": "2025-06-05T15:51:46.713950",
+      "status": "unchanged",
+      "etag": "7a7bac26238d520816251cc8f00e67d1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/create-an-ad-group.json": {
+      "hash": "a73303012eff446b9237eb22cb1fa2ff7ecb38a19dedc2593048bd22e21bf6d0",
+      "last_checked": "2025-06-05T15:51:47.108665",
+      "status": "unchanged",
+      "etag": "W/\"f6102cf38ec1767bd62e3c4dbc9177b1\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/create-an-ad-group": {
+      "hash": "a73303012eff446b9237eb22cb1fa2ff7ecb38a19dedc2593048bd22e21bf6d0",
+      "last_checked": "2025-06-05T15:51:47.108665",
+      "status": "unchanged",
+      "etag": "0400585e61c59786a6cf0987be1f6704"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-ad-groups.json": {
+      "hash": "a9cdcd67d1d2ea0e7a2cd43649aa0e7a0cdbbfe226c8f0308ebde00a39e7e519",
+      "last_checked": "2025-06-05T15:51:47.444847",
+      "status": "unchanged",
+      "etag": "W/\"e425f67f89ecac311c0d960ba89044d5\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-ad-groups": {
+      "hash": "a9cdcd67d1d2ea0e7a2cd43649aa0e7a0cdbbfe226c8f0308ebde00a39e7e519",
+      "last_checked": "2025-06-05T15:51:47.444847",
+      "status": "unchanged",
+      "etag": "87814095fd379aaa9fa8c5f0ae6cef3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-ad-groups-(org-level).json": {
+      "hash": "18454e31d88f27c44d66cb92154c553149e289fb92bc23118b6f514d902ac160",
+      "last_checked": "2025-06-05T15:51:47.810963",
+      "status": "unchanged",
+      "etag": "W/\"c100d463b59453ec95606e4b87f3436a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-ad-groups-(org-level)": {
+      "hash": "18454e31d88f27c44d66cb92154c553149e289fb92bc23118b6f514d902ac160",
+      "last_checked": "2025-06-05T15:51:47.810963",
+      "status": "unchanged",
+      "etag": "a8609112eae84c81aa929550b192ccd3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-an-ad-group.json": {
+      "hash": "e8168814a561235bb8c002d3f6cd3896ba158bcbb62a15062194572ae18ed387",
+      "last_checked": "2025-06-05T15:51:48.275311",
+      "status": "unchanged",
+      "etag": "W/\"87403234695cc63a089e2b12cd066d57\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-an-ad-group": {
+      "hash": "e8168814a561235bb8c002d3f6cd3896ba158bcbb62a15062194572ae18ed387",
+      "last_checked": "2025-06-05T15:51:48.275311",
+      "status": "unchanged",
+      "etag": "a843950e939209ed3b5ff87d8d424c26"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-all-ad-groups.json": {
+      "hash": "daa35f8d1f8d5c534f9e722b07b080a7816e5272de84f58d792e2896b779ad9f",
+      "last_checked": "2025-06-05T15:51:48.649110",
+      "status": "unchanged",
+      "etag": "W/\"4b78d25bfedb44e1c75ca0f30ec53052\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-all-ad-groups": {
+      "hash": "daa35f8d1f8d5c534f9e722b07b080a7816e5272de84f58d792e2896b779ad9f",
+      "last_checked": "2025-06-05T15:51:48.649110",
+      "status": "unchanged",
+      "etag": "5b1a283a25b451cfe4a212e94340b8f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/update-an-ad-group.json": {
+      "hash": "f73e795d2fcb9a9b7a068d962f692b589fd0d712ebdb858fb45200ed8982df3a",
+      "last_checked": "2025-06-05T15:51:49.014124",
+      "status": "unchanged",
+      "etag": "W/\"6ef5e4dd12d135f3f57a2221e9181883\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/update-an-ad-group": {
+      "hash": "f73e795d2fcb9a9b7a068d962f692b589fd0d712ebdb858fb45200ed8982df3a",
+      "last_checked": "2025-06-05T15:51:49.014124",
+      "status": "unchanged",
+      "etag": "e2645b2d0caa1f8f2462722175917b6b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/delete-an-ad-group.json": {
+      "hash": "e9f17372d39949b9b3f00bc091e79e47e06c600a4f98fad65ca90113820dee71",
+      "last_checked": "2025-06-05T15:51:49.451045",
+      "status": "unchanged",
+      "etag": "W/\"908f4507b2181099c49088fcef827d91\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/delete-an-ad-group": {
+      "hash": "e9f17372d39949b9b3f00bc091e79e47e06c600a4f98fad65ca90113820dee71",
+      "last_checked": "2025-06-05T15:51:49.451045",
+      "status": "unchanged",
+      "etag": "60ef6650fbf510f90581b02a577f6fb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adgroup.json": {
+      "hash": "13ccd2dcef7b5438d2c1fd59c2aa9d1bc42b3bae32ecab7379dbe56867e703ec",
+      "last_checked": "2025-06-05T15:51:49.854585",
+      "status": "unchanged",
+      "etag": "W/\"64057ff6587ba7dfcbfe7ed77f04a14a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adgroup": {
+      "hash": "13ccd2dcef7b5438d2c1fd59c2aa9d1bc42b3bae32ecab7379dbe56867e703ec",
+      "last_checked": "2025-06-05T15:51:49.854585",
+      "status": "unchanged",
+      "etag": "e79a3791c3f7329fb7ad852eecb6f2f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adgroupupdate.json": {
+      "hash": "2ccdeacda9bff09af25e567f9690cf268aa5fd76ba7bdc71ca49c68fa7576cbd",
+      "last_checked": "2025-06-05T15:51:50.274776",
+      "status": "unchanged",
+      "etag": "W/\"1daf318f51323efd9c14924e9a151d29\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adgroupupdate": {
+      "hash": "2ccdeacda9bff09af25e567f9690cf268aa5fd76ba7bdc71ca49c68fa7576cbd",
+      "last_checked": "2025-06-05T15:51:50.274776",
+      "status": "unchanged",
+      "etag": "a73c8dedc533b57a809fa856649daa1f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adgroupresponse.json": {
+      "hash": "1ef47afa529583b3cbbde04aa8191b5780ed1df8205a6f6783eb47ed0eec0d45",
+      "last_checked": "2025-06-05T15:51:50.646412",
+      "status": "unchanged",
+      "etag": "W/\"1426e0bb1255c0b78d81b39cdbd260a8\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adgroupresponse": {
+      "hash": "1ef47afa529583b3cbbde04aa8191b5780ed1df8205a6f6783eb47ed0eec0d45",
+      "last_checked": "2025-06-05T15:51:50.646412",
+      "status": "unchanged",
+      "etag": "f7bf25043ebf59797c000b68960135d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adgrouplistresponse.json": {
+      "hash": "fc707ea1e4c60b4e51a52482d7e65ac71b250df7cefefc640a9374da91453390",
+      "last_checked": "2025-06-05T15:51:51.023291",
+      "status": "unchanged",
+      "etag": "W/\"29b61d16292191ee9e4bf9d309006ef2\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adgrouplistresponse": {
+      "hash": "fc707ea1e4c60b4e51a52482d7e65ac71b250df7cefefc640a9374da91453390",
+      "last_checked": "2025-06-05T15:51:51.023291",
+      "status": "unchanged",
+      "etag": "1a66dfc53fc33d48bcd2cad66fd63d5a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/targetingdimensions.json": {
+      "hash": "a7379f7fb234e292f511cb7710f2c6630fd53b1101b4a9bc898b3e6cc549c7ce",
+      "last_checked": "2025-06-05T15:51:51.351338",
+      "status": "unchanged",
+      "etag": "W/\"fab95dbdc2958d79f7cb36a16eb7676f\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/targetingdimensions": {
+      "hash": "a7379f7fb234e292f511cb7710f2c6630fd53b1101b4a9bc898b3e6cc549c7ce",
+      "last_checked": "2025-06-05T15:51:51.351338",
+      "status": "unchanged",
+      "etag": "8acf4e9a917dd1f3e2267b0258e2ad2e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/appcategorycriteria.json": {
+      "hash": "e7518c4b281a0a0b58fbdbf86791cfafe894ad9f3e302b7d0f2d4134d6f1a41d",
+      "last_checked": "2025-06-05T15:51:51.748671",
+      "status": "unchanged",
+      "etag": "W/\"1193867966735200f32cabf19558d41f\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/appcategorycriteria": {
+      "hash": "e7518c4b281a0a0b58fbdbf86791cfafe894ad9f3e302b7d0f2d4134d6f1a41d",
+      "last_checked": "2025-06-05T15:51:51.748671",
+      "status": "unchanged",
+      "etag": "ffbf560fa9e4a53abb9115e79632c4f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/appdownloadercriteria.json": {
+      "hash": "b10a69bc806a7d347d0dd287416a24a1c6ecbe2bc1ebabc4f72f481d4939127a",
+      "last_checked": "2025-06-05T15:51:52.176263",
+      "status": "unchanged",
+      "etag": "W/\"f391c74dace44fa371610338fd6cf4bc\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/appdownloadercriteria": {
+      "hash": "b10a69bc806a7d347d0dd287416a24a1c6ecbe2bc1ebabc4f72f481d4939127a",
+      "last_checked": "2025-06-05T15:51:52.176263",
+      "status": "unchanged",
+      "etag": "7de01269d2424711f0ee57e98ab2ce3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adminareacriteria.json": {
+      "hash": "a2c0e4f4837c5eb78100866f263a388c574663a62fe726aba4c8487766b9f86e",
+      "last_checked": "2025-06-05T15:51:52.545281",
+      "status": "unchanged",
+      "etag": "W/\"36e3601eb2b44a76fb56b730316fcbe6\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adminareacriteria": {
+      "hash": "a2c0e4f4837c5eb78100866f263a388c574663a62fe726aba4c8487766b9f86e",
+      "last_checked": "2025-06-05T15:51:52.545281",
+      "status": "unchanged",
+      "etag": "e0096f02ba575fdaefb973e6918ef95f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/countrycriteria.json": {
+      "hash": "efd17b7e0f7df0e8644baf4c3e41232bfa5522ce729a3cf900438e2a6afa3f26",
+      "last_checked": "2025-06-05T15:51:52.935663",
+      "status": "unchanged",
+      "etag": "W/\"e492f122ed3f8ca984cfa5f663384fd6\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/countrycriteria": {
+      "hash": "efd17b7e0f7df0e8644baf4c3e41232bfa5522ce729a3cf900438e2a6afa3f26",
+      "last_checked": "2025-06-05T15:51:52.935663",
+      "status": "unchanged",
+      "etag": "d399933462e5c4470f2118e1995f0300"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/localitycriteria.json": {
+      "hash": "9f6c743e057fdc850c013ac370156cd50b713e16018736c6b2ec6110ead814ba",
+      "last_checked": "2025-06-05T15:51:53.245564",
+      "status": "unchanged",
+      "etag": "W/\"1c4930dc3623ccb6409de09afe4fa662\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/localitycriteria": {
+      "hash": "9f6c743e057fdc850c013ac370156cd50b713e16018736c6b2ec6110ead814ba",
+      "last_checked": "2025-06-05T15:51:53.245564",
+      "status": "unchanged",
+      "etag": "604cdd11c2cdc1b96119e9c9b68302bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/agecriteria.json": {
+      "hash": "2aea6ee41425c18b25817e6a996ecd88c4fb7c0dda603b66128cad38ae6d0903",
+      "last_checked": "2025-06-05T15:51:53.609054",
+      "status": "unchanged",
+      "etag": "W/\"2b6cd13cbc0ed7e3880985b70733bc4e\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/agecriteria": {
+      "hash": "2aea6ee41425c18b25817e6a996ecd88c4fb7c0dda603b66128cad38ae6d0903",
+      "last_checked": "2025-06-05T15:51:53.609054",
+      "status": "unchanged",
+      "etag": "e7c38cb092573c21ffb20c4de15bbd19"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/agerange.json": {
+      "hash": "660c151b9c6d7b6f7848ac0d50e2228bfd9c1a59793d243b8d24cfbb5a1d7987",
+      "last_checked": "2025-06-05T15:51:53.966710",
+      "status": "unchanged",
+      "etag": "W/\"7f08a060419df8a9609f35c93f3f70f0\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/agerange": {
+      "hash": "660c151b9c6d7b6f7848ac0d50e2228bfd9c1a59793d243b8d24cfbb5a1d7987",
+      "last_checked": "2025-06-05T15:51:53.966710",
+      "status": "unchanged",
+      "etag": "b462e0d319a3d68358e5bf3881246dc2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/daypartcriteria.json": {
+      "hash": "c1b06907611ccb86045f23fc34376bf7ce99f5b1a2f5d2c4bd2e106884a14ee4",
+      "last_checked": "2025-06-05T15:51:54.369116",
+      "status": "unchanged",
+      "etag": "W/\"f8d6a1cd78558a64fe32fa7a13657b70\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/daypartcriteria": {
+      "hash": "c1b06907611ccb86045f23fc34376bf7ce99f5b1a2f5d2c4bd2e106884a14ee4",
+      "last_checked": "2025-06-05T15:51:54.369116",
+      "status": "unchanged",
+      "etag": "bc0455efa03202f9ea4fe08d5f2a8d4e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/daypartdetail.json": {
+      "hash": "238250043485548a95e1a786c23bfa2387e6c1462458fb28fe91273dbce37520",
+      "last_checked": "2025-06-05T15:51:54.923623",
+      "status": "unchanged",
+      "etag": "W/\"e47c9900c5ba1101046d23e2a086bdf0\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/daypartdetail": {
+      "hash": "238250043485548a95e1a786c23bfa2387e6c1462458fb28fe91273dbce37520",
+      "last_checked": "2025-06-05T15:51:54.923623",
+      "status": "unchanged",
+      "etag": "01a62a86e6e08201a66be4e6deca5bc0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/deviceclasscriteria.json": {
+      "hash": "4dd904e3eb48885578347ebcedab9e25130e7f58f1844528cbc7fa6771973cc4",
+      "last_checked": "2025-06-05T15:51:55.216354",
+      "status": "unchanged",
+      "etag": "W/\"65b29887404f20d18e38a28fda760777\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/deviceclasscriteria": {
+      "hash": "4dd904e3eb48885578347ebcedab9e25130e7f58f1844528cbc7fa6771973cc4",
+      "last_checked": "2025-06-05T15:51:55.216354",
+      "status": "unchanged",
+      "etag": "ae1c22aa12b0720c34a602e1b1021586"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/gendercriteria.json": {
+      "hash": "61455d2c6bc3e9dbe68f0d0a5026adcf7f40f9df985d161b755368a639842451",
+      "last_checked": "2025-06-05T15:51:55.667394",
+      "status": "unchanged",
+      "etag": "W/\"0fe1a7286d9e69e576f498b0bd42df45\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/gendercriteria": {
+      "hash": "61455d2c6bc3e9dbe68f0d0a5026adcf7f40f9df985d161b755368a639842451",
+      "last_checked": "2025-06-05T15:51:55.667394",
+      "status": "unchanged",
+      "etag": "c9133876b7a6021a48be031c53f8862e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adgroupdisplaystatus.json": {
+      "hash": "e12d4e2b37f3470ea1ecbf554749dc91dbd6c7738efabba9caa42ff8fa98f1e0",
+      "last_checked": "2025-06-05T15:51:55.968789",
+      "status": "unchanged",
+      "etag": "W/\"56a9267edc7f4b64d6823c8fcc2daa9b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adgroupdisplaystatus": {
+      "hash": "e12d4e2b37f3470ea1ecbf554749dc91dbd6c7738efabba9caa42ff8fa98f1e0",
+      "last_checked": "2025-06-05T15:51:55.968789",
+      "status": "unchanged",
+      "etag": "a2a41f1ee30c2b1379ac114a11920350"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adgroupservingstatereasons.json": {
+      "hash": "a0d118a065c1ff79d54e6fb0a5c93fc573741b6015a01a5712c49de3196ca982",
+      "last_checked": "2025-06-05T15:51:56.298860",
+      "status": "unchanged",
+      "etag": "W/\"a8d496d11b37367cca6c5c7244d155ee\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adgroupservingstatereasons": {
+      "hash": "a0d118a065c1ff79d54e6fb0a5c93fc573741b6015a01a5712c49de3196ca982",
+      "last_checked": "2025-06-05T15:51:56.298860",
+      "status": "unchanged",
+      "etag": "0f0e680d2b9de63148d09e867af9f7b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adgroupservingstatus.json": {
+      "hash": "0937e3732e58c2ab625014e5dc2969b1952389c51140e9480ea6eeddfe481442",
+      "last_checked": "2025-06-05T15:51:56.630003",
+      "status": "unchanged",
+      "etag": "W/\"dabe2f5d3e5f753da9c83fa5c23cc0e3\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adgroupservingstatus": {
+      "hash": "0937e3732e58c2ab625014e5dc2969b1952389c51140e9480ea6eeddfe481442",
+      "last_checked": "2025-06-05T15:51:56.630003",
+      "status": "unchanged",
+      "etag": "39e13e79d1ff1a60295af16190303985"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adgroupstatus.json": {
+      "hash": "7aa27865862ca76e477672c9fc4559ca69bfdba4b1f89af1ead12c7b10bbae10",
+      "last_checked": "2025-06-05T15:51:57.065873",
+      "status": "unchanged",
+      "etag": "W/\"1d6f693cb440c016cb491f2db6998163\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adgroupstatus": {
+      "hash": "7aa27865862ca76e477672c9fc4559ca69bfdba4b1f89af1ead12c7b10bbae10",
+      "last_checked": "2025-06-05T15:51:57.065873",
+      "status": "unchanged",
+      "etag": "74de5877e8c9cdf68e052939c830a1b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/deviceclass.json": {
+      "hash": "23c35fc0233a1382b842bf6791cc5c140ead82c0c0da45cc651730a75e0c4795",
+      "last_checked": "2025-06-05T15:51:57.437241",
+      "status": "unchanged",
+      "etag": "W/\"b3a7acb674fc2428fcdafb12427bb1ba\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/deviceclass": {
+      "hash": "23c35fc0233a1382b842bf6791cc5c140ead82c0c0da45cc651730a75e0c4795",
+      "last_checked": "2025-06-05T15:51:57.437241",
+      "status": "unchanged",
+      "etag": "189ae0e1e0aeb3c889a535f83204daeb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/gender.json": {
+      "hash": "791b625c6cc540e35d3a3ad8246fb825a1243b924a1e92691569ff22025d6cfe",
+      "last_checked": "2025-06-05T15:51:57.840486",
+      "status": "unchanged",
+      "etag": "W/\"2fabfb1abe9bf40b3b1679e68a77d4e4\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/gender": {
+      "hash": "791b625c6cc540e35d3a3ad8246fb825a1243b924a1e92691569ff22025d6cfe",
+      "last_checked": "2025-06-05T15:51:57.840486",
+      "status": "unchanged",
+      "etag": "4fda02c175379be81bd10b0aacc49a72"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/pricingmodel.json": {
+      "hash": "2cccd08a273c1400be5fa934a6c22e55264f5a0793d2287c260f504f99138272",
+      "last_checked": "2025-06-05T15:51:58.223059",
+      "status": "unchanged",
+      "etag": "W/\"eb437425bd1795dd9f0ab58f750c502e\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/pricingmodel": {
+      "hash": "2cccd08a273c1400be5fa934a6c22e55264f5a0793d2287c260f504f99138272",
+      "last_checked": "2025-06-05T15:51:58.223059",
+      "status": "unchanged",
+      "etag": "9524fe0dfd576fac58f53e0e3d263625"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/create-targeting-keywords.json": {
+      "hash": "fd78a45fa02c0842086a3da9ae040e0539dd1e18e39237bd262f8752325874a5",
+      "last_checked": "2025-06-05T15:51:58.573068",
+      "status": "unchanged",
+      "etag": "W/\"d9c5964a0c23db0b7849db2ce0d6ef9a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/create-targeting-keywords": {
+      "hash": "fd78a45fa02c0842086a3da9ae040e0539dd1e18e39237bd262f8752325874a5",
+      "last_checked": "2025-06-05T15:51:58.573068",
+      "status": "unchanged",
+      "etag": "f21fb92bbade3a38dcd8ea59c41b63b5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-targeting-keywords-in-a-campaign.json": {
+      "hash": "e7f023a55a978ebb2665012cc5e103b2a2eeab0ecc6f15e5e97695f0b501354e",
+      "last_checked": "2025-06-05T15:51:59.002827",
+      "status": "unchanged",
+      "etag": "W/\"3a0327fd4e5314ca1b58b661215f08dc\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-targeting-keywords-in-a-campaign": {
+      "hash": "e7f023a55a978ebb2665012cc5e103b2a2eeab0ecc6f15e5e97695f0b501354e",
+      "last_checked": "2025-06-05T15:51:59.002827",
+      "status": "unchanged",
+      "etag": "0a6a836e767b0b559b6244ac5764ef87"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-a-targeting-keyword-in-an-ad-group.json": {
+      "hash": "447bd138af123dfc67484910f664144bc7594b2b93bd5d73b67afef8b5eab95e",
+      "last_checked": "2025-06-05T15:51:59.392485",
+      "status": "unchanged",
+      "etag": "W/\"ea8fc8d5bd104ef119364c17c6a5ec34\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-a-targeting-keyword-in-an-ad-group": {
+      "hash": "447bd138af123dfc67484910f664144bc7594b2b93bd5d73b67afef8b5eab95e",
+      "last_checked": "2025-06-05T15:51:59.392485",
+      "status": "unchanged",
+      "etag": "af74cd5bf24fde0e414e06f4f436f821"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-all-targeting-keywords-in-an-ad-group.json": {
+      "hash": "0c849801dfe16ed140bf4c7bcba59fe4ef2ba54f790f20c34eca3bf6abaefb19",
+      "last_checked": "2025-06-05T15:51:59.723116",
+      "status": "unchanged",
+      "etag": "W/\"97fb68283e2bc6806245cb0675d20d29\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-all-targeting-keywords-in-an-ad-group": {
+      "hash": "0c849801dfe16ed140bf4c7bcba59fe4ef2ba54f790f20c34eca3bf6abaefb19",
+      "last_checked": "2025-06-05T15:51:59.723116",
+      "status": "unchanged",
+      "etag": "0cd58388eb03991e209123cef323f844"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/update-targeting-keywords.json": {
+      "hash": "7335877fe95be1e62ca35c0a3b9a05c5edb23afb676d1dcd428d581dfc5fa381",
+      "last_checked": "2025-06-05T15:52:00.147509",
+      "status": "unchanged",
+      "etag": "W/\"81e7858694566f2a7d5e5c395b245888\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/update-targeting-keywords": {
+      "hash": "7335877fe95be1e62ca35c0a3b9a05c5edb23afb676d1dcd428d581dfc5fa381",
+      "last_checked": "2025-06-05T15:52:00.147509",
+      "status": "unchanged",
+      "etag": "96669dae77289ab18de77a2835afaaa5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/delete-targeting-keywords.json": {
+      "hash": "4bb4e6c0faf14993655a5e5f806d353e51acf28d0cb16cf507c4bf9780735ff5",
+      "last_checked": "2025-06-05T15:52:00.514832",
+      "status": "unchanged",
+      "etag": "W/\"cf381980be95af19e50fc86d1d51eb9f\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/delete-targeting-keywords": {
+      "hash": "4bb4e6c0faf14993655a5e5f806d353e51acf28d0cb16cf507c4bf9780735ff5",
+      "last_checked": "2025-06-05T15:52:00.514832",
+      "status": "unchanged",
+      "etag": "68a3c016596aee27baba9c1bac91e77f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/delete-a-targeting-keyword.json": {
+      "hash": "6140659cd51292f9d46cbb5b3c75b1cb6063ecc27b26f50b269d4f3952678e19",
+      "last_checked": "2025-06-05T15:52:00.886832",
+      "status": "unchanged",
+      "etag": "W/\"e044435b25ffbfe5e57493e036bd5ad1\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/delete-a-targeting-keyword": {
+      "hash": "6140659cd51292f9d46cbb5b3c75b1cb6063ecc27b26f50b269d4f3952678e19",
+      "last_checked": "2025-06-05T15:52:00.886832",
+      "status": "unchanged",
+      "etag": "b07902c6b668c6c3ebdc2d394793e4e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-campaign-negative-keywords.json": {
+      "hash": "57d119582013800d190aae2b8703d3f98e22b2d68b9bb0913704f43dd513dce4",
+      "last_checked": "2025-06-05T15:52:01.717169",
+      "status": "unchanged",
+      "etag": "W/\"227b5396afb2431a62778c27f2a1198a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-campaign-negative-keywords": {
+      "hash": "57d119582013800d190aae2b8703d3f98e22b2d68b9bb0913704f43dd513dce4",
+      "last_checked": "2025-06-05T15:52:01.717169",
+      "status": "unchanged",
+      "etag": "4b902dd03162ac736ffcc8bc884c413a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-a-campaign-negative-keyword.json": {
+      "hash": "63ce625ef2db94cce56ed731f6fb9de304e0ec86a63c3d1eae21d69f852e9c2e",
+      "last_checked": "2025-06-05T15:52:02.046013",
+      "status": "unchanged",
+      "etag": "W/\"b032cfc5bdad4ddfe6e099a3ade66770\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-a-campaign-negative-keyword": {
+      "hash": "63ce625ef2db94cce56ed731f6fb9de304e0ec86a63c3d1eae21d69f852e9c2e",
+      "last_checked": "2025-06-05T15:52:02.046013",
+      "status": "unchanged",
+      "etag": "1e0c14c02e669274dbd03037eb0f3ca1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-all-campaign-negative-keywords.json": {
+      "hash": "93729ac84644661e0f59e124668e9e61ea98b06d76bb1f104c3aa8d526fdd81e",
+      "last_checked": "2025-06-05T15:52:02.588403",
+      "status": "unchanged",
+      "etag": "W/\"32e463e094791dba7a7797e8e8e19657\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-all-campaign-negative-keywords": {
+      "hash": "93729ac84644661e0f59e124668e9e61ea98b06d76bb1f104c3aa8d526fdd81e",
+      "last_checked": "2025-06-05T15:52:02.588403",
+      "status": "unchanged",
+      "etag": "eb9aab969b9d0196cb027447cde235fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/update-campaign-negative-keywords.json": {
+      "hash": "758c379712cbef7c698beb71a94985e4da2ceb327da39d391cd5056c3b2ca301",
+      "last_checked": "2025-06-05T15:52:02.964763",
+      "status": "unchanged",
+      "etag": "W/\"b799a9ae2d84763d479bfffb04b06429\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/update-campaign-negative-keywords": {
+      "hash": "758c379712cbef7c698beb71a94985e4da2ceb327da39d391cd5056c3b2ca301",
+      "last_checked": "2025-06-05T15:52:02.964763",
+      "status": "unchanged",
+      "etag": "28891e3646967f7b3ed18960d2a412f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/delete-campaign-negative-keywords.json": {
+      "hash": "193789cd16f8226f7e063c30537544d5576fec7566eed032a8c41c15bf9e730e",
+      "last_checked": "2025-06-05T15:52:03.367739",
+      "status": "unchanged",
+      "etag": "W/\"bc34bc11d5b4d7259fcdb493ed12376b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/delete-campaign-negative-keywords": {
+      "hash": "193789cd16f8226f7e063c30537544d5576fec7566eed032a8c41c15bf9e730e",
+      "last_checked": "2025-06-05T15:52:03.367739",
+      "status": "unchanged",
+      "etag": "7495e2e92d7129eea25ea497efb144bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/create-ad-group-negative-keywords.json": {
+      "hash": "a2fd4dcdc13e430e9ab6d559d7ee6d9c74a2b9e47f5973a1b2ad422efcd94c18",
+      "last_checked": "2025-06-05T15:52:03.750954",
+      "status": "unchanged",
+      "etag": "W/\"8f7bcb851704f06a94ac175c82bac87e\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/create-ad-group-negative-keywords": {
+      "hash": "a2fd4dcdc13e430e9ab6d559d7ee6d9c74a2b9e47f5973a1b2ad422efcd94c18",
+      "last_checked": "2025-06-05T15:52:03.750954",
+      "status": "unchanged",
+      "etag": "2c289d11173a0b396f039f111947ac89"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-ad-group-negative-keywords.json": {
+      "hash": "e2def158a91e0de2fc95b7406ee8c8ab52d9ab5d232b3e57720ae18d28ffc062",
+      "last_checked": "2025-06-05T15:52:04.116555",
+      "status": "unchanged",
+      "etag": "W/\"343faae5a15501072902b5cae97098dd\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-ad-group-negative-keywords": {
+      "hash": "e2def158a91e0de2fc95b7406ee8c8ab52d9ab5d232b3e57720ae18d28ffc062",
+      "last_checked": "2025-06-05T15:52:04.116555",
+      "status": "unchanged",
+      "etag": "c356f7848ba5132617a2c0fa60a64389"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-an-ad-group-negative-keyword.json": {
+      "hash": "683f980e478350b1d77446455e87ae452e4ed153a48b856ee1407c879d6fad8a",
+      "last_checked": "2025-06-05T15:52:04.511396",
+      "status": "unchanged",
+      "etag": "W/\"583e7083aa860cf7abb79f85bfa75b81\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-an-ad-group-negative-keyword": {
+      "hash": "683f980e478350b1d77446455e87ae452e4ed153a48b856ee1407c879d6fad8a",
+      "last_checked": "2025-06-05T15:52:04.511396",
+      "status": "unchanged",
+      "etag": "1949fd18ead2e882e2500b453082d52a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-all-ad-group-negative-keywords.json": {
+      "hash": "6c4860435668d7b6d0cab634cc29dbfa8e306bb322faac615fa24a3424550d2a",
+      "last_checked": "2025-06-05T15:52:04.861115",
+      "status": "unchanged",
+      "etag": "W/\"95138fd4b06052b40b54ebe1e74eb70a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-all-ad-group-negative-keywords": {
+      "hash": "6c4860435668d7b6d0cab634cc29dbfa8e306bb322faac615fa24a3424550d2a",
+      "last_checked": "2025-06-05T15:52:04.861115",
+      "status": "unchanged",
+      "etag": "cf57d77acdacadee0804453c25ca3903"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/update-ad-group-negative-keywords.json": {
+      "hash": "e41fcca4b5f85a8e00c92dd363c6e31dea9077917c971b243a80c37b1b6069b2",
+      "last_checked": "2025-06-05T15:52:05.238392",
+      "status": "unchanged",
+      "etag": "W/\"e0c59544a532cf4810168294041b955a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/update-ad-group-negative-keywords": {
+      "hash": "e41fcca4b5f85a8e00c92dd363c6e31dea9077917c971b243a80c37b1b6069b2",
+      "last_checked": "2025-06-05T15:52:05.238392",
+      "status": "unchanged",
+      "etag": "d4c53f36b2bc36a1a588eeb9640c7f30"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/delete-ad-group-negative-keywords.json": {
+      "hash": "bd85fc708e523ac3039c9b1960e8450d4df2292568ca408271668e234fa841da",
+      "last_checked": "2025-06-05T15:52:05.634608",
+      "status": "unchanged",
+      "etag": "W/\"de7fcb87ebf3a180766e83ace5212e64\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/delete-ad-group-negative-keywords": {
+      "hash": "bd85fc708e523ac3039c9b1960e8450d4df2292568ca408271668e234fa841da",
+      "last_checked": "2025-06-05T15:52:05.634608",
+      "status": "unchanged",
+      "etag": "687f206caabd4e0f95a43582ffaefaa7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/keyword.json": {
+      "hash": "f8a7c46dbde210b222a43a6524e4fed2afdd3c3e2ca04d77bf8219dc3d744001",
+      "last_checked": "2025-06-05T15:52:05.992242",
+      "status": "unchanged",
+      "etag": "W/\"933d8e72951da6b9ddcc974ddcd5be95\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/keyword": {
+      "hash": "f8a7c46dbde210b222a43a6524e4fed2afdd3c3e2ca04d77bf8219dc3d744001",
+      "last_checked": "2025-06-05T15:52:05.992242",
+      "status": "unchanged",
+      "etag": "baebb41e2668d15a158899e473e68fa7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/negativekeyword.json": {
+      "hash": "cbabc9f02aa1856a278b8ee338a34a8aa369e78a0c38eb65a8e1da9d507cf257",
+      "last_checked": "2025-06-05T15:52:06.365842",
+      "status": "unchanged",
+      "etag": "W/\"643472ffc6de776fb4f36fb7a11f64c9\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/negativekeyword": {
+      "hash": "cbabc9f02aa1856a278b8ee338a34a8aa369e78a0c38eb65a8e1da9d507cf257",
+      "last_checked": "2025-06-05T15:52:06.365842",
+      "status": "unchanged",
+      "etag": "14d63e5c0a0ea24eba4463148d1f0ca6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/keywordresponse.json": {
+      "hash": "0c961368016dd390af193ee5a3320872df2f546e0096be400274ce9b2fbeabe9",
+      "last_checked": "2025-06-05T15:52:06.737759",
+      "status": "unchanged",
+      "etag": "W/\"57b5ce7bca1aa0fb516cb9547fadeb23\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/keywordresponse": {
+      "hash": "0c961368016dd390af193ee5a3320872df2f546e0096be400274ce9b2fbeabe9",
+      "last_checked": "2025-06-05T15:52:06.737759",
+      "status": "unchanged",
+      "etag": "e55802d22be721d512e21ea2a1fdc1d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/keywordlistresponse.json": {
+      "hash": "702cb6b883eafdd7cfa4cd655a21c40ec3a4b54fa1f997f57dbd140f74e76e0b",
+      "last_checked": "2025-06-05T15:52:07.116814",
+      "status": "unchanged",
+      "etag": "W/\"21addb421bb664e968114c7876066fa9\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/keywordlistresponse": {
+      "hash": "702cb6b883eafdd7cfa4cd655a21c40ec3a4b54fa1f997f57dbd140f74e76e0b",
+      "last_checked": "2025-06-05T15:52:07.116814",
+      "status": "unchanged",
+      "etag": "c923a03cf92d27c9bcc57c08220d28cb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/keywordupdaterequest.json": {
+      "hash": "e3e74cef5757f587ebf0a7ae2d4adbcc15048dff265c4fd8c0168771f5face59",
+      "last_checked": "2025-06-05T15:52:07.548676",
+      "status": "unchanged",
+      "etag": "W/\"5119cd412e1537c36be556b14db5a299\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/keywordupdaterequest": {
+      "hash": "e3e74cef5757f587ebf0a7ae2d4adbcc15048dff265c4fd8c0168771f5face59",
+      "last_checked": "2025-06-05T15:52:07.548676",
+      "status": "unchanged",
+      "etag": "f218bbcd7d703a27e89efd923c2b021b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/negativekeywordresponse.json": {
+      "hash": "be0aa3d195647eaa7527f4fb2f0b4504a426b9accd314e0818135a4bbe700869",
+      "last_checked": "2025-06-05T15:52:07.918113",
+      "status": "unchanged",
+      "etag": "W/\"e4221676734178bffbdae2d7a1eae94a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/negativekeywordresponse": {
+      "hash": "be0aa3d195647eaa7527f4fb2f0b4504a426b9accd314e0818135a4bbe700869",
+      "last_checked": "2025-06-05T15:52:07.918113",
+      "status": "unchanged",
+      "etag": "2f5606fe6925eef22d9b659b5055674f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/negativekeywordlistresponse.json": {
+      "hash": "1c2d200be2434c8ee06cf6cc021c09f173d3090fd5e5f969b48d7423ba9fbbe4",
+      "last_checked": "2025-06-05T15:52:08.312366",
+      "status": "unchanged",
+      "etag": "W/\"a570bb3fed0b309b3ed6385ed0c4e48b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/negativekeywordlistresponse": {
+      "hash": "1c2d200be2434c8ee06cf6cc021c09f173d3090fd5e5f969b48d7423ba9fbbe4",
+      "last_checked": "2025-06-05T15:52:08.312366",
+      "status": "unchanged",
+      "etag": "926e1c5838a8a54b012dce6ab50390b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/search-for-geolocations.json": {
+      "hash": "4fb806802b92ae28407ebad961f7427ce377ca207aa5ebcc855ec09c0364ae54",
+      "last_checked": "2025-06-05T15:52:08.668580",
+      "status": "unchanged",
+      "etag": "W/\"7be496cfd80a509f93f36aebf2c6d11c\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/search-for-geolocations": {
+      "hash": "4fb806802b92ae28407ebad961f7427ce377ca207aa5ebcc855ec09c0364ae54",
+      "last_checked": "2025-06-05T15:52:08.668580",
+      "status": "unchanged",
+      "etag": "c54b537ee64b54ea8efc021a75fa2a7e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-a-list-of-geo-locations.json": {
+      "hash": "f321290e6efacd9c04fe30cb63bebf96b734c4e5b2d965a8df574aab4c76dea9",
+      "last_checked": "2025-06-05T15:52:09.015962",
+      "status": "unchanged",
+      "etag": "W/\"64d67ef45f2d57589c3d2a061e73d6ec\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-a-list-of-geo-locations": {
+      "hash": "f321290e6efacd9c04fe30cb63bebf96b734c4e5b2d965a8df574aab4c76dea9",
+      "last_checked": "2025-06-05T15:52:09.015962",
+      "status": "unchanged",
+      "etag": "7bfa7ee136cbf597ddd922b2bffe2e09"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/georequest.json": {
+      "hash": "0714c75be00f3198f5d1d2f52da6844df46dda047e8a39c1d1dc0bdf26f12a56",
+      "last_checked": "2025-06-05T15:52:09.410590",
+      "status": "unchanged",
+      "etag": "W/\"c1c1dde6fcaad8c281eaf4397a6e9b34\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/georequest": {
+      "hash": "0714c75be00f3198f5d1d2f52da6844df46dda047e8a39c1d1dc0bdf26f12a56",
+      "last_checked": "2025-06-05T15:52:09.410590",
+      "status": "unchanged",
+      "etag": "20a531108f8be893f1132c356700d2fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/searchentity.json": {
+      "hash": "462d86e09b198c7cb5860e2c4baa71e3c505008233700abd81e5e623c3ce21b6",
+      "last_checked": "2025-06-05T15:52:09.784954",
+      "status": "unchanged",
+      "etag": "W/\"3fbed1d91de90c0ce60803281d8298d0\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/searchentity": {
+      "hash": "462d86e09b198c7cb5860e2c4baa71e3c505008233700abd81e5e623c3ce21b6",
+      "last_checked": "2025-06-05T15:52:09.784954",
+      "status": "unchanged",
+      "etag": "f3a180296e8f80f854eceecc306a2aff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/searchentitylistresponse.json": {
+      "hash": "9f575704d8bb2da4da811da2c36377d1da41cba326268e5c3c1ec143209c8fad",
+      "last_checked": "2025-06-05T15:52:10.168632",
+      "status": "unchanged",
+      "etag": "W/\"966c1f4b57df4a0d8abe8aa2136f4599\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/searchentitylistresponse": {
+      "hash": "9f575704d8bb2da4da811da2c36377d1da41cba326268e5c3c1ec143209c8fad",
+      "last_checked": "2025-06-05T15:52:10.168632",
+      "status": "unchanged",
+      "etag": "71d2556ebe162dd2d8b42ceb3ce26b56"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/create-an-ad.json": {
+      "hash": "4e7e090cd07552042c84174f3d0faec241278c85d1fb614a3549fd5c7fd5e182",
+      "last_checked": "2025-06-05T15:52:10.568121",
+      "status": "unchanged",
+      "etag": "W/\"57881b746403690665e00cac17ace903\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/create-an-ad": {
+      "hash": "4e7e090cd07552042c84174f3d0faec241278c85d1fb614a3549fd5c7fd5e182",
+      "last_checked": "2025-06-05T15:52:10.568121",
+      "status": "unchanged",
+      "etag": "3ba64ae17ef2fb312c0c1332bda6e103"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-ads.json": {
+      "hash": "8999935326f1cd6ccd50f70fb7721071d7751836f3948cf94b88b613f491db92",
+      "last_checked": "2025-06-05T15:52:10.945102",
+      "status": "unchanged",
+      "etag": "W/\"7bea4ce6958e29701b109b0e9032a893\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-ads": {
+      "hash": "8999935326f1cd6ccd50f70fb7721071d7751836f3948cf94b88b613f491db92",
+      "last_checked": "2025-06-05T15:52:10.945102",
+      "status": "unchanged",
+      "etag": "98faedf50b0a52dbf88a7a04e03200c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-ads-(org-level).json": {
+      "hash": "9f4285d3bc3de4124fa62f1919d7d048664200b5cd95068018c29a5723064288",
+      "last_checked": "2025-06-05T15:52:11.314698",
+      "status": "unchanged",
+      "etag": "W/\"030570b7ea230cf2dc89f4d8ba986c0b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-ads-(org-level)": {
+      "hash": "9f4285d3bc3de4124fa62f1919d7d048664200b5cd95068018c29a5723064288",
+      "last_checked": "2025-06-05T15:52:11.314698",
+      "status": "unchanged",
+      "etag": "f811db123595e513785b7119985cc9f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-an-ad.json": {
+      "hash": "6ad3c90468f11b8d632603f5980743901e28a62810f8ad355d83e0c276345fde",
+      "last_checked": "2025-06-05T15:52:11.716394",
+      "status": "unchanged",
+      "etag": "W/\"eed9ff5bb84ba9643f13c39961ca96bf\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-an-ad": {
+      "hash": "6ad3c90468f11b8d632603f5980743901e28a62810f8ad355d83e0c276345fde",
+      "last_checked": "2025-06-05T15:52:11.716394",
+      "status": "unchanged",
+      "etag": "cdd3c7b5daebaa6a7c385d4d5c280463"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-all-ads.json": {
+      "hash": "c25c4f260b5cb49044ac5ef2464cdcd193544f50203b9b5f406156f43c981f39",
+      "last_checked": "2025-06-05T15:52:12.109466",
+      "status": "unchanged",
+      "etag": "W/\"468448f472516c6b5e46d53c33e91807\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-all-ads": {
+      "hash": "c25c4f260b5cb49044ac5ef2464cdcd193544f50203b9b5f406156f43c981f39",
+      "last_checked": "2025-06-05T15:52:12.109466",
+      "status": "unchanged",
+      "etag": "5b4d612fe70232c434430f21af710855"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/update-an-ad.json": {
+      "hash": "5a3476d064fdeb17a194624a5f49d11dae6010c57483b3ee21541602b48cfb21",
+      "last_checked": "2025-06-05T15:52:12.601891",
+      "status": "unchanged",
+      "etag": "W/\"b6405eb1e7136b1743f982d506045f10\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/update-an-ad": {
+      "hash": "5a3476d064fdeb17a194624a5f49d11dae6010c57483b3ee21541602b48cfb21",
+      "last_checked": "2025-06-05T15:52:12.601891",
+      "status": "unchanged",
+      "etag": "6a8e17abee1d9f10a2c646ef6f54f446"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/delete-an-ad.json": {
+      "hash": "c87e8cc493d32adf139716f70e8cad412b1c1f577e21dd91730c20f0c0845d15",
+      "last_checked": "2025-06-05T15:52:13.122109",
+      "status": "unchanged",
+      "etag": "W/\"284c1481f55465bcbf49a8b82fcf9224\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/delete-an-ad": {
+      "hash": "c87e8cc493d32adf139716f70e8cad412b1c1f577e21dd91730c20f0c0845d15",
+      "last_checked": "2025-06-05T15:52:13.122109",
+      "status": "unchanged",
+      "etag": "0f99d99cdafcd38c05084461205257a6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/ad.json": {
+      "hash": "2971e9c34bdb4863f526da677778299bec6b87deb932081ad38f51c67d9f057a",
+      "last_checked": "2025-06-05T15:52:13.639694",
+      "status": "unchanged",
+      "etag": "W/\"f8238fd37d2b9f87cb342d6386d01276\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/ad": {
+      "hash": "2971e9c34bdb4863f526da677778299bec6b87deb932081ad38f51c67d9f057a",
+      "last_checked": "2025-06-05T15:52:13.639694",
+      "status": "unchanged",
+      "etag": "8f519110579206231d9381a07ac58cb1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adcreate.json": {
+      "hash": "267ec896869dd22edc0e7af70a6cd5ed7ad590279bd968a1fea2fd3cd75251dd",
+      "last_checked": "2025-06-05T15:52:14.277535",
+      "status": "unchanged",
+      "etag": "W/\"afbb7330c967d0622a0c8270b91cfc3c\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adcreate": {
+      "hash": "267ec896869dd22edc0e7af70a6cd5ed7ad590279bd968a1fea2fd3cd75251dd",
+      "last_checked": "2025-06-05T15:52:14.277535",
+      "status": "unchanged",
+      "etag": "991f17f9b37c1413ae84ef407cd351e7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adupdate.json": {
+      "hash": "a1952f7e351576246e2c02b05abd83316e2f297a6fb6b5826c8f82aa311f1a45",
+      "last_checked": "2025-06-05T15:52:14.812738",
+      "status": "unchanged",
+      "etag": "W/\"f32cd44d9a29cd3f72c24cee751a5d97\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adupdate": {
+      "hash": "a1952f7e351576246e2c02b05abd83316e2f297a6fb6b5826c8f82aa311f1a45",
+      "last_checked": "2025-06-05T15:52:14.812738",
+      "status": "unchanged",
+      "etag": "d574ec5b11e403018dac22ad96650bd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adresponse.json": {
+      "hash": "15a75818d500058e04124a18e68f5354e59ab96f79f885307b01937f3e693eb0",
+      "last_checked": "2025-06-05T15:52:15.228070",
+      "status": "unchanged",
+      "etag": "W/\"7c292a622c031eeea87f395d0d1a6338\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adresponse": {
+      "hash": "15a75818d500058e04124a18e68f5354e59ab96f79f885307b01937f3e693eb0",
+      "last_checked": "2025-06-05T15:52:15.228070",
+      "status": "unchanged",
+      "etag": "9b907b61c593319d8e4ba16145eb4693"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adlistresponse.json": {
+      "hash": "0e5b223ec6581f8590f3f465572af262c42556e2888ac0d806e471e38c2227d2",
+      "last_checked": "2025-06-05T15:52:15.674535",
+      "status": "unchanged",
+      "etag": "W/\"9be3460878653f6a8854fd057f182618\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adlistresponse": {
+      "hash": "0e5b223ec6581f8590f3f465572af262c42556e2888ac0d806e471e38c2227d2",
+      "last_checked": "2025-06-05T15:52:15.674535",
+      "status": "unchanged",
+      "etag": "d6bcccbf9b342480da7d83958fdec166"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adservingstatereasons.json": {
+      "hash": "1b3cb88715795d8b8e6fc5f0d09c49c65fa41279ecbb5fed44429f73bffe2b67",
+      "last_checked": "2025-06-05T15:52:16.211119",
+      "status": "unchanged",
+      "etag": "W/\"7efe8dd5c8323f0687d68def9ea80919\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adservingstatereasons": {
+      "hash": "1b3cb88715795d8b8e6fc5f0d09c49c65fa41279ecbb5fed44429f73bffe2b67",
+      "last_checked": "2025-06-05T15:52:16.211119",
+      "status": "unchanged",
+      "etag": "d5e83f1ab1e933cd9e3ff9dfb94b6811"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adstatus.json": {
+      "hash": "b1e3534bdcb24917eb193f4464029299cd3d1d7c54cd3a40d435dc7ee6199df6",
+      "last_checked": "2025-06-05T15:52:16.627280",
+      "status": "unchanged",
+      "etag": "W/\"3614515d6c70a176b3104addcec270ad\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adstatus": {
+      "hash": "b1e3534bdcb24917eb193f4464029299cd3d1d7c54cd3a40d435dc7ee6199df6",
+      "last_checked": "2025-06-05T15:52:16.627280",
+      "status": "unchanged",
+      "etag": "9774bf362941c6b5808b67f67001b8fe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/adservingstatus.json": {
+      "hash": "71d6a76abef40c1754a200f73b49ab23644a0a19bbce05cd2cbfb9902df0f222",
+      "last_checked": "2025-06-05T15:52:17.036094",
+      "status": "unchanged",
+      "etag": "W/\"9ed304d85ae79b7f0c0bf36005bdc6a4\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/adservingstatus": {
+      "hash": "71d6a76abef40c1754a200f73b49ab23644a0a19bbce05cd2cbfb9902df0f222",
+      "last_checked": "2025-06-05T15:52:17.036094",
+      "status": "unchanged",
+      "etag": "1442714d29937dffa7aafb9c7783274d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-ad-creative-rejection-reasons.json": {
+      "hash": "a8135c1774cd0f6aa8a276e4cc7fc9336c30c050aabe766440951160d8b50395",
+      "last_checked": "2025-06-05T15:52:17.447448",
+      "status": "unchanged",
+      "etag": "W/\"d5535beda3491bf5be07315ca0af2ea1\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-ad-creative-rejection-reasons": {
+      "hash": "a8135c1774cd0f6aa8a276e4cc7fc9336c30c050aabe766440951160d8b50395",
+      "last_checked": "2025-06-05T15:52:17.447448",
+      "status": "unchanged",
+      "etag": "3503b269b1f403e13435289e76d33651"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/gets-a-product-page-reason.json": {
+      "hash": "31534954cce3a129bc94dbfaf6e4c4b0db7feb75dd4840d880e26d7c7f40fd6f",
+      "last_checked": "2025-06-05T15:52:17.847039",
+      "status": "unchanged",
+      "etag": "W/\"324c6ea97818b4791c426c2af0673d99\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/gets-a-product-page-reason": {
+      "hash": "31534954cce3a129bc94dbfaf6e4c4b0db7feb75dd4840d880e26d7c7f40fd6f",
+      "last_checked": "2025-06-05T15:52:17.847039",
+      "status": "unchanged",
+      "etag": "ae91a14422630719a483f6d7edb2a591"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-app-assets.json": {
+      "hash": "383d9a010eda37bdaa569d2e4cc17ee8ab07e5e34e15b0b5097b9a26c3e720e9",
+      "last_checked": "2025-06-05T15:52:18.382698",
+      "status": "unchanged",
+      "etag": "W/\"bb8bfd10db538966a048f9431cda7b78\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-app-assets": {
+      "hash": "383d9a010eda37bdaa569d2e4cc17ee8ab07e5e34e15b0b5097b9a26c3e720e9",
+      "last_checked": "2025-06-05T15:52:18.382698",
+      "status": "unchanged",
+      "etag": "381739cb8ced3e0e3a8110f17386aaa3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/appasset.json": {
+      "hash": "ec245fb0df73b3f562172c916631ea9767ad13ebb359eca4c3def3737dc7c049",
+      "last_checked": "2025-06-05T15:52:18.777986",
+      "status": "unchanged",
+      "etag": "W/\"365dbed0b5ce53e8c850384ddce74174\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/appasset": {
+      "hash": "ec245fb0df73b3f562172c916631ea9767ad13ebb359eca4c3def3737dc7c049",
+      "last_checked": "2025-06-05T15:52:18.777986",
+      "status": "unchanged",
+      "etag": "9a003e5bf802039e1130b994af71b083"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/appassetlistresponse.json": {
+      "hash": "702cccf2865848a1c60142b77ac39a6802a91bd1fcf303b90ffedb3a9b4196d7",
+      "last_checked": "2025-06-05T15:52:19.200523",
+      "status": "unchanged",
+      "etag": "W/\"5ae21b499eb4fac36f3d70d3b788fc43\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/appassetlistresponse": {
+      "hash": "702cccf2865848a1c60142b77ac39a6802a91bd1fcf303b90ffedb3a9b4196d7",
+      "last_checked": "2025-06-05T15:52:19.200523",
+      "status": "unchanged",
+      "etag": "647fcd8793364d384940e30c3716cbd0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagereason.json": {
+      "hash": "c66c36796952c6376c38e4b1074cb5826e816c73e532a24e119b2a95d6728b53",
+      "last_checked": "2025-06-05T15:52:19.607920",
+      "status": "unchanged",
+      "etag": "W/\"bf89bbebea9607457821558b5ce8e816\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagereason": {
+      "hash": "c66c36796952c6376c38e4b1074cb5826e816c73e532a24e119b2a95d6728b53",
+      "last_checked": "2025-06-05T15:52:19.607920",
+      "status": "unchanged",
+      "etag": "b5612361e05bf3a9f5efde4074041895"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagereasonlistresponse.json": {
+      "hash": "a2055e258ed039445368b8de5cfb28c5979360273161d8327eacfcef921495d8",
+      "last_checked": "2025-06-05T15:52:20.022167",
+      "status": "unchanged",
+      "etag": "W/\"6d85e50b78cd2de69045b70f7022c54b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagereasonlistresponse": {
+      "hash": "a2055e258ed039445368b8de5cfb28c5979360273161d8327eacfcef921495d8",
+      "last_checked": "2025-06-05T15:52:20.022167",
+      "status": "unchanged",
+      "etag": "f612067af6720a5f6c7bc6b7485e94ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagereasonresponse.json": {
+      "hash": "b441a3d5bfcfa3afd638ece8a6b12d4f0f3eab3750f3a5828792677d4bf200b4",
+      "last_checked": "2025-06-05T15:52:20.409046",
+      "status": "unchanged",
+      "etag": "W/\"5e12a3baf2c7b509a0e3eb6ac0557648\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagereasonresponse": {
+      "hash": "b441a3d5bfcfa3afd638ece8a6b12d4f0f3eab3750f3a5828792677d4bf200b4",
+      "last_checked": "2025-06-05T15:52:20.409046",
+      "status": "unchanged",
+      "etag": "7a6da3c9ab6faa1613bf915780d02fd6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reasonlevel.json": {
+      "hash": "5f25d5264fc5d0c4195e63726586cca23d19e1ec87037a8b9dbd681cf03feee7",
+      "last_checked": "2025-06-05T15:52:20.917835",
+      "status": "unchanged",
+      "etag": "W/\"cc72526b01c82c764dfbcdc4bd8f503a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reasonlevel": {
+      "hash": "5f25d5264fc5d0c4195e63726586cca23d19e1ec87037a8b9dbd681cf03feee7",
+      "last_checked": "2025-06-05T15:52:20.917835",
+      "status": "unchanged",
+      "etag": "a2fa0ecb7320fdb3e4e59f40dbf6c9be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/create-a-creative.json": {
+      "hash": "91de4fc67a6b0c4ec4759024d92f7a96dabe9b8f127eb342a77ae61df178ccb0",
+      "last_checked": "2025-06-05T15:52:21.452380",
+      "status": "unchanged",
+      "etag": "W/\"4295b4872799b34982a480eacf55a24e\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/create-a-creative": {
+      "hash": "91de4fc67a6b0c4ec4759024d92f7a96dabe9b8f127eb342a77ae61df178ccb0",
+      "last_checked": "2025-06-05T15:52:21.452380",
+      "status": "unchanged",
+      "etag": "0a965b15912f416a19c1144aef3175fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/find-creatives.json": {
+      "hash": "e5576171c27af95a6cf5b7dc4e0c83d540c34b925e83b50e46657e26bb985d7e",
+      "last_checked": "2025-06-05T15:52:21.853975",
+      "status": "unchanged",
+      "etag": "W/\"48dc1e35f55869ab7141c1f91333fade\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/find-creatives": {
+      "hash": "e5576171c27af95a6cf5b7dc4e0c83d540c34b925e83b50e46657e26bb985d7e",
+      "last_checked": "2025-06-05T15:52:21.853975",
+      "status": "unchanged",
+      "etag": "61e74ed21235ceadbf9252609fa6d90c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-a-creative.json": {
+      "hash": "e506ccd7c55244fe4b2bd8db84cea7f89206c7443bb53ddeb90295d1b26a2e50",
+      "last_checked": "2025-06-05T15:52:22.227568",
+      "status": "unchanged",
+      "etag": "W/\"d9254890bde1b930ec2882f40a6f2f12\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-a-creative": {
+      "hash": "e506ccd7c55244fe4b2bd8db84cea7f89206c7443bb53ddeb90295d1b26a2e50",
+      "last_checked": "2025-06-05T15:52:22.227568",
+      "status": "unchanged",
+      "etag": "c08deeb0f16bfc22908ec13ad3698f0d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-all-creatives.json": {
+      "hash": "4bf78afb851e651a561ddafa83cc3dc28af4bf1c1f8745986e5f8f69b2b29d1c",
+      "last_checked": "2025-06-05T15:52:22.637886",
+      "status": "unchanged",
+      "etag": "W/\"ee268eeb2bdc430f2f5f8743fd94a513\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-all-creatives": {
+      "hash": "4bf78afb851e651a561ddafa83cc3dc28af4bf1c1f8745986e5f8f69b2b29d1c",
+      "last_checked": "2025-06-05T15:52:22.637886",
+      "status": "unchanged",
+      "etag": "e198d3684070cd60dbb0d0ccfcaa8701"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/apppreviewdevicesmappingresponse.json": {
+      "hash": "208c04b61c69ea445e8e100255ea207cbc5960e077716209ef6437aae81cb27f",
+      "last_checked": "2025-06-05T15:52:23.069212",
+      "status": "unchanged",
+      "etag": "W/\"92e19f3a6d253c29e23db2bf7de43b7c\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/apppreviewdevicesmappingresponse": {
+      "hash": "208c04b61c69ea445e8e100255ea207cbc5960e077716209ef6437aae81cb27f",
+      "last_checked": "2025-06-05T15:52:23.069212",
+      "status": "unchanged",
+      "etag": "41266de24781e3c475e942cb67bf7fb6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creative.json": {
+      "hash": "ee9a1933f471324726ea2b00e4268e7f3de3b107105873cdc16346dd4220d6e7",
+      "last_checked": "2025-06-05T15:52:23.507242",
+      "status": "unchanged",
+      "etag": "W/\"cff71b5acf9d3fc07542e19cad6fc247\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creative": {
+      "hash": "ee9a1933f471324726ea2b00e4268e7f3de3b107105873cdc16346dd4220d6e7",
+      "last_checked": "2025-06-05T15:52:23.507242",
+      "status": "unchanged",
+      "etag": "d2c5631c506bfebcdf0d803e1a8e2c5d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creativelocalization.json": {
+      "hash": "c396475ef68347a6d2d98b767d99f1bcd87dbbba35a6bc248b7d06e31f071eed",
+      "last_checked": "2025-06-05T15:52:23.938005",
+      "status": "unchanged",
+      "etag": "W/\"df24feab603e37d2d29d1cddff603ade\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creativelocalization": {
+      "hash": "c396475ef68347a6d2d98b767d99f1bcd87dbbba35a6bc248b7d06e31f071eed",
+      "last_checked": "2025-06-05T15:52:23.938005",
+      "status": "unchanged",
+      "etag": "1349e176073d229fbdd7339bd4b5006e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creativelocalizationwithassets.json": {
+      "hash": "5c3a99408370b1d117179549fbf1a4b4949f0a66e659ae695de881b6d02da584",
+      "last_checked": "2025-06-05T15:52:24.322106",
+      "status": "unchanged",
+      "etag": "W/\"fc502ee0b5fcc6fa4bc60c14fa44bc42\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creativelocalizationwithassets": {
+      "hash": "5c3a99408370b1d117179549fbf1a4b4949f0a66e659ae695de881b6d02da584",
+      "last_checked": "2025-06-05T15:52:24.322106",
+      "status": "unchanged",
+      "etag": "48ced47829059a0748c06f6e1111f732"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/customproductpagecreative.json": {
+      "hash": "72233c27ee11b708f507b684468db6df993651995cc70ce33019c8377fef1b28",
+      "last_checked": "2025-06-05T15:52:24.721597",
+      "status": "unchanged",
+      "etag": "W/\"dc7153135363503464dd5b3a2c5ad7af\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/customproductpagecreative": {
+      "hash": "72233c27ee11b708f507b684468db6df993651995cc70ce33019c8377fef1b28",
+      "last_checked": "2025-06-05T15:52:24.721597",
+      "status": "unchanged",
+      "etag": "37f94b44f02a3129d2dc0d3810bd9f74"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creativeresponse.json": {
+      "hash": "09ec62424a739d3a98d3029ed75f8747fb3093ef779071e4bf9533a0930b5096",
+      "last_checked": "2025-06-05T15:52:25.227035",
+      "status": "unchanged",
+      "etag": "W/\"60b62cc8d4b36ab78d043f96c81f95e1\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creativeresponse": {
+      "hash": "09ec62424a739d3a98d3029ed75f8747fb3093ef779071e4bf9533a0930b5096",
+      "last_checked": "2025-06-05T15:52:25.227035",
+      "status": "unchanged",
+      "etag": "c459b536fbef55971035452d25e0a210"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creativelistresponse.json": {
+      "hash": "071b846872fdfe7e620b93e59c3a84b6ecd9a03aa41ce280c0abc9a4765054e4",
+      "last_checked": "2025-06-05T15:52:25.630482",
+      "status": "unchanged",
+      "etag": "W/\"feb5cb0daba4c722305a8b31ad61a048\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creativelistresponse": {
+      "hash": "071b846872fdfe7e620b93e59c3a84b6ecd9a03aa41ce280c0abc9a4765054e4",
+      "last_checked": "2025-06-05T15:52:25.630482",
+      "status": "unchanged",
+      "etag": "ec5f1b945c6054fd9dec3fcfbf032135"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/defaultproductpagecreative.json": {
+      "hash": "56af4c55a9c6eb601fe9edcf272b1d264cf0120cf621396bdd608cdb6c2344f2",
+      "last_checked": "2025-06-05T15:52:26.075612",
+      "status": "unchanged",
+      "etag": "W/\"fd62f9baf2509a33967f9095bc05ab64\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/defaultproductpagecreative": {
+      "hash": "56af4c55a9c6eb601fe9edcf272b1d264cf0120cf621396bdd608cdb6c2344f2",
+      "last_checked": "2025-06-05T15:52:26.075612",
+      "status": "unchanged",
+      "etag": "521a3cecf16ab48cc08021f7e8844ae1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/mediaappasset.json": {
+      "hash": "ba9001108c92d3dfbafc8378c33821b0f4cdb21b3723d26e2d6387d2fdc98d34",
+      "last_checked": "2025-06-05T15:52:26.476364",
+      "status": "unchanged",
+      "etag": "W/\"90b14861126c889f77ac33f0c6d5c11d\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/mediaappasset": {
+      "hash": "ba9001108c92d3dfbafc8378c33821b0f4cdb21b3723d26e2d6387d2fdc98d34",
+      "last_checked": "2025-06-05T15:52:26.476364",
+      "status": "unchanged",
+      "etag": "ec2118af9ce35915cb10640a08f021ff"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/mediaappassetsdetail.json": {
+      "hash": "9515abe61c4801c41b338cbfa4ea2cab29794d0284449ac1d5d058cb341c0ffb",
+      "last_checked": "2025-06-05T15:52:26.917479",
+      "status": "unchanged",
+      "etag": "W/\"a0a7a04403403da003c7cabe178c9eca\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/mediaappassetsdetail": {
+      "hash": "9515abe61c4801c41b338cbfa4ea2cab29794d0284449ac1d5d058cb341c0ffb",
+      "last_checked": "2025-06-05T15:52:26.917479",
+      "status": "unchanged",
+      "etag": "749506d576db8fe943922e8a89cffa3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creativetype.json": {
+      "hash": "f03758cf9f55cb76b774b618a58c8e39cbf2b394d87df046fb5fad57f4c7b207",
+      "last_checked": "2025-06-05T15:52:27.282416",
+      "status": "unchanged",
+      "etag": "W/\"39aeb954647731eb1b0dc0edd0f8d772\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creativetype": {
+      "hash": "f03758cf9f55cb76b774b618a58c8e39cbf2b394d87df046fb5fad57f4c7b207",
+      "last_checked": "2025-06-05T15:52:27.282416",
+      "status": "unchanged",
+      "etag": "3429439e6022597d6088065ef21e0111"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creativestate.json": {
+      "hash": "98b8db98327cbb7eb0f659259286d418ae0cc16459665e6c263ff99a7a528b78",
+      "last_checked": "2025-06-05T15:52:27.681868",
+      "status": "unchanged",
+      "etag": "W/\"a695840ae1d014d13efff8637decb23e\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creativestate": {
+      "hash": "98b8db98327cbb7eb0f659259286d418ae0cc16459665e6c263ff99a7a528b78",
+      "last_checked": "2025-06-05T15:52:27.681868",
+      "status": "unchanged",
+      "etag": "0a982e871fe82e22bd72e9badca376c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creativestatereason.json": {
+      "hash": "96e5ff5a480827d1b52b90d4901e38fdd09b32a8eb4657fe2173b732d36e3439",
+      "last_checked": "2025-06-05T15:52:28.184426",
+      "status": "unchanged",
+      "etag": "W/\"57ed14097378beeab243cf7a2675e965\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creativestatereason": {
+      "hash": "96e5ff5a480827d1b52b90d4901e38fdd09b32a8eb4657fe2173b732d36e3439",
+      "last_checked": "2025-06-05T15:52:28.184426",
+      "status": "unchanged",
+      "etag": "41ed182f9c86b05c0650cdca3093a72d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-product-pages.json": {
+      "hash": "7dce465aef774b8e3ea2d50557f9c66f6a4570d9b719ed78ceb0dec4a322a897",
+      "last_checked": "2025-06-05T15:52:28.613808",
+      "status": "unchanged",
+      "etag": "W/\"82b9c2db13e80025891379fa3aab2494\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-product-pages": {
+      "hash": "7dce465aef774b8e3ea2d50557f9c66f6a4570d9b719ed78ceb0dec4a322a897",
+      "last_checked": "2025-06-05T15:52:28.613808",
+      "status": "unchanged",
+      "etag": "fa917a1d048f62f6389f12d7eb91fa07"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-product-pages-by-identifier.json": {
+      "hash": "b3220d2cbe8c456324f6d2ff92855abf994d19bea0af5e8036ae03edcec21fae",
+      "last_checked": "2025-06-05T15:52:29.026180",
+      "status": "unchanged",
+      "etag": "W/\"a658d0c5d9eb7d9533464d0fece8a784\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-product-pages-by-identifier": {
+      "hash": "b3220d2cbe8c456324f6d2ff92855abf994d19bea0af5e8036ae03edcec21fae",
+      "last_checked": "2025-06-05T15:52:29.026180",
+      "status": "unchanged",
+      "etag": "4d57de20b4ce4c4534582fff60024ed3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-product-page-locales.json": {
+      "hash": "b9b1c267670b9c9b6e1945e8991287087802a78205d2ad4b3b4c5537386b087f",
+      "last_checked": "2025-06-05T15:52:29.427594",
+      "status": "unchanged",
+      "etag": "W/\"a6186b708405e83a1201041e357ac899\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-product-page-locales": {
+      "hash": "b9b1c267670b9c9b6e1945e8991287087802a78205d2ad4b3b4c5537386b087f",
+      "last_checked": "2025-06-05T15:52:29.427594",
+      "status": "unchanged",
+      "etag": "6a4787b546ac1a01ecdffaba66584bb6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-supported-countries-or-regions.json": {
+      "hash": "f05fcb17b88840a4ac5465f032bfdb6773eb029814695d87f39d68c4f832a193",
+      "last_checked": "2025-06-05T15:52:29.864733",
+      "status": "unchanged",
+      "etag": "W/\"29d424738745b1311ae6006155beb9dc\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-supported-countries-or-regions": {
+      "hash": "f05fcb17b88840a4ac5465f032bfdb6773eb029814695d87f39d68c4f832a193",
+      "last_checked": "2025-06-05T15:52:29.864733",
+      "status": "unchanged",
+      "etag": "44b6e2ef2f3e8a9da08c6df4223760b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-app-preview-device-sizes.json": {
+      "hash": "68ab0c293f3ba57a38d22c8eef559cd2af98069c5a6b6f9371a2010e0ef1cb5e",
+      "last_checked": "2025-06-05T15:52:30.250949",
+      "status": "unchanged",
+      "etag": "W/\"fd67513a180ba8ed531367c14c9fe842\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-app-preview-device-sizes": {
+      "hash": "68ab0c293f3ba57a38d22c8eef559cd2af98069c5a6b6f9371a2010e0ef1cb5e",
+      "last_checked": "2025-06-05T15:52:30.250949",
+      "status": "unchanged",
+      "etag": "0f50a7e4d746072f682df03a22fd7c0d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/localeinfo.json": {
+      "hash": "289519f4922a9db744be9dcee98ee00171a28da7c43ca95da67407b8f371d247",
+      "last_checked": "2025-06-05T15:52:30.643696",
+      "status": "unchanged",
+      "etag": "W/\"af2ff100b3cf64c51a291a1c8c9b6c2b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/localeinfo": {
+      "hash": "289519f4922a9db744be9dcee98ee00171a28da7c43ca95da67407b8f371d247",
+      "last_checked": "2025-06-05T15:52:30.643696",
+      "status": "unchanged",
+      "etag": "c7bf9f673f31dc2493cc4222949b404b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/countryorregion.json": {
+      "hash": "b06dd404ec110f0c071195f85f286db61a1aa409e01b52028670f21980d5abf0",
+      "last_checked": "2025-06-05T15:52:31.045206",
+      "status": "unchanged",
+      "etag": "W/\"1eafe07f6e67e4f5c3dc7530bc3659bf\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/countryorregion": {
+      "hash": "b06dd404ec110f0c071195f85f286db61a1aa409e01b52028670f21980d5abf0",
+      "last_checked": "2025-06-05T15:52:31.045206",
+      "status": "unchanged",
+      "etag": "c257623684abe15b38e0d0493062b271"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/countriesorregionslistresponse.json": {
+      "hash": "cc09938418ad4f7225086d6a15efb2c94d7e169919b8d722917e9482d98ae1c6",
+      "last_checked": "2025-06-05T15:52:31.479623",
+      "status": "unchanged",
+      "etag": "W/\"6e353c457a571b1687b61cc4c034039f\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/countriesorregionslistresponse": {
+      "hash": "cc09938418ad4f7225086d6a15efb2c94d7e169919b8d722917e9482d98ae1c6",
+      "last_checked": "2025-06-05T15:52:31.479623",
+      "status": "unchanged",
+      "etag": "ccf32f6b6ce8d3dcdb0cd749c91e341f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/mediaappvideoasset.json": {
+      "hash": "b283f98b10efc8b525bc7a402be124f52628cada616ad9b33421489f8ad397cb",
+      "last_checked": "2025-06-05T15:52:31.925251",
+      "status": "unchanged",
+      "etag": "W/\"49d14a4fe1d3afbf97395d3f2d8446bd\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/mediaappvideoasset": {
+      "hash": "b283f98b10efc8b525bc7a402be124f52628cada616ad9b33421489f8ad397cb",
+      "last_checked": "2025-06-05T15:52:31.925251",
+      "status": "unchanged",
+      "etag": "7727445118337b103ffc8c41e144dbc5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagelocaledetail.json": {
+      "hash": "cffa6ce37d07ed5a4202566fb5fb522d75f70a024149c8a2754fe771dfb6fd7e",
+      "last_checked": "2025-06-05T15:52:32.334359",
+      "status": "unchanged",
+      "etag": "W/\"dc69563b95ec62e2edd92ec206ed56c9\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagelocaledetail": {
+      "hash": "cffa6ce37d07ed5a4202566fb5fb522d75f70a024149c8a2754fe771dfb6fd7e",
+      "last_checked": "2025-06-05T15:52:32.334359",
+      "status": "unchanged",
+      "etag": "99165955cc743c2a40d20a8066c49890"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagedetail.json": {
+      "hash": "0e114b2e7624ba6fc293d75a3bca3e27e4d364c04e403a798e9aa9eea6de19ad",
+      "last_checked": "2025-06-05T15:52:32.719548",
+      "status": "unchanged",
+      "etag": "W/\"7ff182920b70ad61138e4b2ec9fe33bb\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagedetail": {
+      "hash": "0e114b2e7624ba6fc293d75a3bca3e27e4d364c04e403a798e9aa9eea6de19ad",
+      "last_checked": "2025-06-05T15:52:32.719548",
+      "status": "unchanged",
+      "etag": "e25caae8465ae60e71fb3f3bdf5c04ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagedetailwithassets.json": {
+      "hash": "611b72d724d87ab9a943ddb120e0e423a6006f0472ebfd92b249f83cc0fbf9bf",
+      "last_checked": "2025-06-05T15:52:33.122663",
+      "status": "unchanged",
+      "etag": "W/\"3291b3542bfe85e0953a80c87abb5d9d\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagedetailwithassets": {
+      "hash": "611b72d724d87ab9a943ddb120e0e423a6006f0472ebfd92b249f83cc0fbf9bf",
+      "last_checked": "2025-06-05T15:52:33.122663",
+      "status": "unchanged",
+      "etag": "7de49d3575be4aec4b163513edc1ecf6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagelocaledetaillistresponse.json": {
+      "hash": "8d159d782f76b74beb522383c91364df41c3f8ab12b9f84ee2371c7ef75c5b66",
+      "last_checked": "2025-06-05T15:52:33.524186",
+      "status": "unchanged",
+      "etag": "W/\"0c2d2fe64ec11b8315c230c8d66a1df6\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagelocaledetaillistresponse": {
+      "hash": "8d159d782f76b74beb522383c91364df41c3f8ab12b9f84ee2371c7ef75c5b66",
+      "last_checked": "2025-06-05T15:52:33.524186",
+      "status": "unchanged",
+      "etag": "d6645823214224f8ee8c355e002a730c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagedetailresponse.json": {
+      "hash": "f6689eb93c47d224e4108ade56398a443d5d263bdda800d4791544fad5569e0e",
+      "last_checked": "2025-06-05T15:52:33.909928",
+      "status": "unchanged",
+      "etag": "W/\"4e70a361e9b1883ec43cac82874be683\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagedetailresponse": {
+      "hash": "f6689eb93c47d224e4108ade56398a443d5d263bdda800d4791544fad5569e0e",
+      "last_checked": "2025-06-05T15:52:33.909928",
+      "status": "unchanged",
+      "etag": "ebcb29e96170b7b27ee4a4fe523f0bc4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagedetailwithassetinforesponse.json": {
+      "hash": "a33065b81d588950bf04522637e3ced55c7ef74e35d6cb0f6a69ebe8a31f4098",
+      "last_checked": "2025-06-05T15:52:34.310020",
+      "status": "unchanged",
+      "etag": "W/\"d716a623eaa61a50d0fcc3b21dc4360a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagedetailwithassetinforesponse": {
+      "hash": "a33065b81d588950bf04522637e3ced55c7ef74e35d6cb0f6a69ebe8a31f4098",
+      "last_checked": "2025-06-05T15:52:34.310020",
+      "status": "unchanged",
+      "etag": "a199ceaed89faba2941f3f7a7775d274"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagedetaillistresponse.json": {
+      "hash": "cc6b15ef9f3a332a387a4055188f5600800105ba6faf8969544c5a2cdc0a7ff2",
+      "last_checked": "2025-06-05T15:52:34.726250",
+      "status": "unchanged",
+      "etag": "W/\"729f350f459b8ea789c41ff49f27dff1\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagedetaillistresponse": {
+      "hash": "cc6b15ef9f3a332a387a4055188f5600800105ba6faf8969544c5a2cdc0a7ff2",
+      "last_checked": "2025-06-05T15:52:34.726250",
+      "status": "unchanged",
+      "etag": "c108a97cf02527ff9eb9e14015b935d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagereasoncreate.json": {
+      "hash": "d7b8d5d343eba1179efeacaee7e91016889c7c1ded5d0061790553e974f41b0f",
+      "last_checked": "2025-06-05T15:52:35.137222",
+      "status": "unchanged",
+      "etag": "W/\"c65366f913b7c124d589179cdf6a1794\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagereasoncreate": {
+      "hash": "d7b8d5d343eba1179efeacaee7e91016889c7c1ded5d0061790553e974f41b0f",
+      "last_checked": "2025-06-05T15:52:35.137222",
+      "status": "unchanged",
+      "etag": "f2b2ce30acbbb9c2ff9514ba1be23b1d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-campaign-level-reports.json": {
+      "hash": "9ccfc4c44b3871de5343e73b2c24bd0cc2275303536351da68d7493b9ea07366",
+      "last_checked": "2025-06-05T15:52:35.508641",
+      "status": "unchanged",
+      "etag": "W/\"af9f58c971adb4e1d2e4c8cf0b34326c\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-campaign-level-reports": {
+      "hash": "9ccfc4c44b3871de5343e73b2c24bd0cc2275303536351da68d7493b9ea07366",
+      "last_checked": "2025-06-05T15:52:35.508641",
+      "status": "unchanged",
+      "etag": "509cba69de1b9f666aa2cc41fc2cf4dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-ad-group-level-reports.json": {
+      "hash": "7a1e32687d4b5cc1bfbd5c2d701b65f491ba2ef67d66928373c4e568c2e6bd84",
+      "last_checked": "2025-06-05T15:52:35.942381",
+      "status": "unchanged",
+      "etag": "W/\"e2b115e0e27ca085db72901834985011\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-ad-group-level-reports": {
+      "hash": "7a1e32687d4b5cc1bfbd5c2d701b65f491ba2ef67d66928373c4e568c2e6bd84",
+      "last_checked": "2025-06-05T15:52:35.942381",
+      "status": "unchanged",
+      "etag": "adcde370618f65509e06b7fa4ed2dd1b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-keyword-level-reports.json": {
+      "hash": "4d943b1e56a3f444813500f4bedd1410bc0b0eec96e7ec2b25447e1097edd2c2",
+      "last_checked": "2025-06-05T15:52:36.354463",
+      "status": "unchanged",
+      "etag": "W/\"3bb87ef1a70415a9927f959d011196eb\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-keyword-level-reports": {
+      "hash": "4d943b1e56a3f444813500f4bedd1410bc0b0eec96e7ec2b25447e1097edd2c2",
+      "last_checked": "2025-06-05T15:52:36.354463",
+      "status": "unchanged",
+      "etag": "7245078ac476e914e4ada701760142d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-keyword-level-within-ad-group-reports.json": {
+      "hash": "5db3ecb04d59b1dd38be60f8c520d61280d1ab6c6e8ce71a877f1eda73828fe8",
+      "last_checked": "2025-06-05T15:52:36.765045",
+      "status": "unchanged",
+      "etag": "W/\"58717c534062c68e6dc0a46eb332d362\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-keyword-level-within-ad-group-reports": {
+      "hash": "5db3ecb04d59b1dd38be60f8c520d61280d1ab6c6e8ce71a877f1eda73828fe8",
+      "last_checked": "2025-06-05T15:52:36.765045",
+      "status": "unchanged",
+      "etag": "ab95291278a66a2815c38070ac1a9fd9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-search-term-level-reports.json": {
+      "hash": "8bbd2f7ee2923b32c2197ae833c529bcdf8c58af54209f52de1bc249be8556d0",
+      "last_checked": "2025-06-05T15:52:37.246195",
+      "status": "unchanged",
+      "etag": "W/\"b13fb7942a5a8390b9236e7e362e1548\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-search-term-level-reports": {
+      "hash": "8bbd2f7ee2923b32c2197ae833c529bcdf8c58af54209f52de1bc249be8556d0",
+      "last_checked": "2025-06-05T15:52:37.246195",
+      "status": "unchanged",
+      "etag": "a85ae869f1a07b2d9f2ff929408a10c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-search-term-level-within-ad-group-reports.json": {
+      "hash": "f1afd2ebd455449058e5429e24cec939e40ae931f2e9eaa7583ea28a6e439189",
+      "last_checked": "2025-06-05T15:52:37.632922",
+      "status": "unchanged",
+      "etag": "W/\"3787ff2ace54606579c57b867b6898e8\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-search-term-level-within-ad-group-reports": {
+      "hash": "f1afd2ebd455449058e5429e24cec939e40ae931f2e9eaa7583ea28a6e439189",
+      "last_checked": "2025-06-05T15:52:37.632922",
+      "status": "unchanged",
+      "etag": "2584afa2bf9b74c07cb586d72416ccea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-ad-level-reports.json": {
+      "hash": "57806dbdd28b8335251e9d4d40f4050fe27a2d722f69b21949be11f668547e25",
+      "last_checked": "2025-06-05T15:52:38.021020",
+      "status": "unchanged",
+      "etag": "W/\"a00e4c6ac2de23f7c1171e31f70aefcc\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-ad-level-reports": {
+      "hash": "57806dbdd28b8335251e9d4d40f4050fe27a2d722f69b21949be11f668547e25",
+      "last_checked": "2025-06-05T15:52:38.021020",
+      "status": "unchanged",
+      "etag": "1aae5e8876797d27fc4ef4995c245df5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reportingrequest.json": {
+      "hash": "090e4a8d9d292d55993d4410cbb5d0b15ee6b052d09e45f4c775d05179181466",
+      "last_checked": "2025-06-05T15:52:38.463432",
+      "status": "unchanged",
+      "etag": "W/\"d1400c55735c831ebcfc5b5bc0a9b310\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reportingrequest": {
+      "hash": "090e4a8d9d292d55993d4410cbb5d0b15ee6b052d09e45f4c775d05179181466",
+      "last_checked": "2025-06-05T15:52:38.463432",
+      "status": "unchanged",
+      "etag": "dc9916accc40400eb10161476219f799"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reportingresponsebody.json": {
+      "hash": "5a88c0db73c559f66a54c0387fcaeeac9dd5f6c28d5ed1043aa541f49d454280",
+      "last_checked": "2025-06-05T15:52:38.836348",
+      "status": "unchanged",
+      "etag": "W/\"4fb6a8a8efb35bcb11c90bcd2750a234\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reportingresponsebody": {
+      "hash": "5a88c0db73c559f66a54c0387fcaeeac9dd5f6c28d5ed1043aa541f49d454280",
+      "last_checked": "2025-06-05T15:52:38.836348",
+      "status": "unchanged",
+      "etag": "940749efff5ffbc75164746d1f01ecbe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reportingresponse.json": {
+      "hash": "47e10cba5690a8c4d017360661f628d13baa1e64d55c1babd0a515171e2cca99",
+      "last_checked": "2025-06-05T15:52:39.268316",
+      "status": "unchanged",
+      "etag": "W/\"bfe1ff6602ddbab315b262d362e0f8d2\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reportingresponse": {
+      "hash": "47e10cba5690a8c4d017360661f628d13baa1e64d55c1babd0a515171e2cca99",
+      "last_checked": "2025-06-05T15:52:39.268316",
+      "status": "unchanged",
+      "etag": "c6bac65fa1375fcefd9c8f57eddb1e6a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reportingdataresponse.json": {
+      "hash": "dce5a981bd0b8197a34efb2431c59563b484fb1aaccebd942260e2c0cd6b852f",
+      "last_checked": "2025-06-05T15:52:39.670018",
+      "status": "unchanged",
+      "etag": "W/\"8d30edf0f9a9d3dc896e00fb35fe3df8\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reportingdataresponse": {
+      "hash": "dce5a981bd0b8197a34efb2431c59563b484fb1aaccebd942260e2c0cd6b852f",
+      "last_checked": "2025-06-05T15:52:39.670018",
+      "status": "unchanged",
+      "etag": "f009676802f5cfb11e2f07163849687c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/grandtotalsrow.json": {
+      "hash": "9b68b5952076f1f1b44510c72bc2503598e387cc4599b1694f2dfcb2b570d3d2",
+      "last_checked": "2025-06-05T15:52:40.094335",
+      "status": "unchanged",
+      "etag": "W/\"5ef974a61ad8c8f4121eb06fa05a26ab\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/grandtotalsrow": {
+      "hash": "9b68b5952076f1f1b44510c72bc2503598e387cc4599b1694f2dfcb2b570d3d2",
+      "last_checked": "2025-06-05T15:52:40.094335",
+      "status": "unchanged",
+      "etag": "af2089a863194d8bc2445231eb29852e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/spendrow.json": {
+      "hash": "0bf3ae8cf6d0c04a844f46d6b1f5683085740f496131665054348da53a6b60f9",
+      "last_checked": "2025-06-05T15:52:40.485213",
+      "status": "unchanged",
+      "etag": "W/\"ed57951aa98f6af85d40be940b744d41\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/spendrow": {
+      "hash": "0bf3ae8cf6d0c04a844f46d6b1f5683085740f496131665054348da53a6b60f9",
+      "last_checked": "2025-06-05T15:52:40.485213",
+      "status": "unchanged",
+      "etag": "6a4b731e911a6894fd90fb0008aa2c97"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/extendedspendrow.json": {
+      "hash": "e4e340c5316473982abec66457186377ce3620288a6d5e274d29e02ff3ea656e",
+      "last_checked": "2025-06-05T15:52:40.897799",
+      "status": "unchanged",
+      "etag": "W/\"1c0b34d5c978f7b71ad411fe7af2c8a5\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/extendedspendrow": {
+      "hash": "e4e340c5316473982abec66457186377ce3620288a6d5e274d29e02ff3ea656e",
+      "last_checked": "2025-06-05T15:52:40.897799",
+      "status": "unchanged",
+      "etag": "c7cc47f11a4bf551410f388e2323be14"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/row.json": {
+      "hash": "c9917546769a82b2d4db6088e1423a7adf90065e6ec2e89b6ad16ad3d7307807",
+      "last_checked": "2025-06-05T15:52:41.298682",
+      "status": "unchanged",
+      "etag": "W/\"53a8b0dc932aa66c98f03b7dab8fa364\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/row": {
+      "hash": "c9917546769a82b2d4db6088e1423a7adf90065e6ec2e89b6ad16ad3d7307807",
+      "last_checked": "2025-06-05T15:52:41.298682",
+      "status": "unchanged",
+      "etag": "0a555c394eed64b1b9a89e17989bce7d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reportingcampaign.json": {
+      "hash": "6d9c3ba89fad5206d82c0368d4b40af6fdec5210fe16f79ac16e926b9d9f44f0",
+      "last_checked": "2025-06-05T15:52:41.737877",
+      "status": "unchanged",
+      "etag": "W/\"ba12bd77ef81e944741c349b94e0dc46\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reportingcampaign": {
+      "hash": "6d9c3ba89fad5206d82c0368d4b40af6fdec5210fe16f79ac16e926b9d9f44f0",
+      "last_checked": "2025-06-05T15:52:41.737877",
+      "status": "unchanged",
+      "etag": "842f00dce8ed720bec8cfe597aa09afe"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reportingadgroup.json": {
+      "hash": "b8d6fa184e2ce2ae5bfe845ee2b6aa564b020ba8021f00ded40677e31ca9d2f1",
+      "last_checked": "2025-06-05T15:52:42.161653",
+      "status": "unchanged",
+      "etag": "W/\"ca653282efd3ccf28dd68a6ed8ec927b\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reportingadgroup": {
+      "hash": "b8d6fa184e2ce2ae5bfe845ee2b6aa564b020ba8021f00ded40677e31ca9d2f1",
+      "last_checked": "2025-06-05T15:52:42.161653",
+      "status": "unchanged",
+      "etag": "5cde4b1a584f41fcaaaea02c8fd2c3f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reportingkeyword.json": {
+      "hash": "e5d43318b0320b4292888ac1347dfa15adac5af8c199582aad08697ac9498a10",
+      "last_checked": "2025-06-05T15:52:42.580193",
+      "status": "unchanged",
+      "etag": "W/\"01d8dd78457333f7df2cbe77f0bc9b63\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reportingkeyword": {
+      "hash": "e5d43318b0320b4292888ac1347dfa15adac5af8c199582aad08697ac9498a10",
+      "last_checked": "2025-06-05T15:52:42.580193",
+      "status": "unchanged",
+      "etag": "670fabd12b1f0acd3e9841cb69a87b36"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reportingsearchterm.json": {
+      "hash": "c883da4b4862f770390942e803031635526d39343247b6159f7e30b753b8a947",
+      "last_checked": "2025-06-05T15:52:42.999031",
+      "status": "unchanged",
+      "etag": "W/\"5bafffdc6ace6c0c2be1f8ae9b987acf\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reportingsearchterm": {
+      "hash": "c883da4b4862f770390942e803031635526d39343247b6159f7e30b753b8a947",
+      "last_checked": "2025-06-05T15:52:42.999031",
+      "status": "unchanged",
+      "etag": "7fe8a2b92a2ff01df88f122a95d42802"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reportingad.json": {
+      "hash": "11e27d69504cfe8a4021501766f6869a0c66462d4c9fc6a8c05af18e3083360e",
+      "last_checked": "2025-06-05T15:52:43.395695",
+      "status": "unchanged",
+      "etag": "W/\"98de5a812f426fee0e99954e3c800f7a\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reportingad": {
+      "hash": "11e27d69504cfe8a4021501766f6869a0c66462d4c9fc6a8c05af18e3083360e",
+      "last_checked": "2025-06-05T15:52:43.395695",
+      "status": "unchanged",
+      "etag": "a5a5334c409cb5a3378b2500214c9d01"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/campaignappdetail.json": {
+      "hash": "ac42bc1b11c86360155205f85a4ceac8f14b224143bc984008a2aa07341024bd",
+      "last_checked": "2025-06-05T15:52:43.788232",
+      "status": "unchanged",
+      "etag": "W/\"2519c0a8052d2aaa0b6ea9d255502595\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/campaignappdetail": {
+      "hash": "ac42bc1b11c86360155205f85a4ceac8f14b224143bc984008a2aa07341024bd",
+      "last_checked": "2025-06-05T15:52:43.788232",
+      "status": "unchanged",
+      "etag": "90f7233e35d5c9c99109c0a530d3c07a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/insightsobject.json": {
+      "hash": "666fcb6a0f3531fcffbfb499921ab574893f3174535204f2dd606b3d011abce3",
+      "last_checked": "2025-06-05T15:52:44.194160",
+      "status": "unchanged",
+      "etag": "W/\"97109f111615295256fa1dc46d20d412\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/insightsobject": {
+      "hash": "666fcb6a0f3531fcffbfb499921ab574893f3174535204f2dd606b3d011abce3",
+      "last_checked": "2025-06-05T15:52:44.194160",
+      "status": "unchanged",
+      "etag": "77541b19742a4363bfe0c810417c86f7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/keywordinsights.json": {
+      "hash": "6fc09b4926779d2c86f4923efb5501685dbd5faf0454b8d6636f99a8114c875b",
+      "last_checked": "2025-06-05T15:52:44.586429",
+      "status": "unchanged",
+      "etag": "W/\"ddab4cabd9e7bbc74adaa420538123e8\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/keywordinsights": {
+      "hash": "6fc09b4926779d2c86f4923efb5501685dbd5faf0454b8d6636f99a8114c875b",
+      "last_checked": "2025-06-05T15:52:44.586429",
+      "status": "unchanged",
+      "etag": "585cc4cd07f7e56a8e02b64a878e8cb1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/keywordbidrecommendation.json": {
+      "hash": "6ab5a89b93ee98cb72a9dcfb9a316b8813e21a1a92e448c789de523e3abde5a0",
+      "last_checked": "2025-06-05T15:52:45.060644",
+      "status": "unchanged",
+      "etag": "W/\"4b7854965c1665a3681d0b595ce18303\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/keywordbidrecommendation": {
+      "hash": "6ab5a89b93ee98cb72a9dcfb9a316b8813e21a1a92e448c789de523e3abde5a0",
+      "last_checked": "2025-06-05T15:52:45.060644",
+      "status": "unchanged",
+      "etag": "587d47b6c1d8197b6fae2de171261cde"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/metadataobject.json": {
+      "hash": "44cde7ce7f3a396aca83b6f1f02c5b13e613286d2ed9a5cc2ebe18db7d23f352",
+      "last_checked": "2025-06-05T15:52:45.484843",
+      "status": "unchanged",
+      "etag": "W/\"d6f93828ed8c33ea9b8d693d55782c7c\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/metadataobject": {
+      "hash": "44cde7ce7f3a396aca83b6f1f02c5b13e613286d2ed9a5cc2ebe18db7d23f352",
+      "last_checked": "2025-06-05T15:52:45.484843",
+      "status": "unchanged",
+      "etag": "b4a6fc8dce553478cea597ead7a13a9e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/impression-share-report.json": {
+      "hash": "36b73b3e4d9d636f2d99a82df1d0cbb68a1bd7303dc9e8d2953750f642739e9e",
+      "last_checked": "2025-06-05T15:52:45.954468",
+      "status": "unchanged",
+      "etag": "W/\"da4830bfeb5e2956712e9e00d3e9440e\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/impression-share-report": {
+      "hash": "36b73b3e4d9d636f2d99a82df1d0cbb68a1bd7303dc9e8d2953750f642739e9e",
+      "last_checked": "2025-06-05T15:52:45.954468",
+      "status": "unchanged",
+      "etag": "aad3a9c83bf959404b52b0d80e96a0e5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-a-single-impression-share-report.json": {
+      "hash": "68d81fa3aab961461e4b284a00be107cc193ccb6fd754c2605a99bf5a2943387",
+      "last_checked": "2025-06-05T15:52:46.384195",
+      "status": "unchanged",
+      "etag": "W/\"f066a7256203bd4c30bb38236558f3de\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-a-single-impression-share-report": {
+      "hash": "68d81fa3aab961461e4b284a00be107cc193ccb6fd754c2605a99bf5a2943387",
+      "last_checked": "2025-06-05T15:52:46.384195",
+      "status": "unchanged",
+      "etag": "3ba404bbcc0cc8a190532d4433b38082"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/get-all-impression-share-reports.json": {
+      "hash": "96c94190e9997d9d8dc435256ad2b1a0e31dd09282791fae7eb9a8455274078e",
+      "last_checked": "2025-06-05T15:52:46.794241",
+      "status": "unchanged",
+      "etag": "W/\"4ecff4b0f74def4c1942c778742080af\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/get-all-impression-share-reports": {
+      "hash": "96c94190e9997d9d8dc435256ad2b1a0e31dd09282791fae7eb9a8455274078e",
+      "last_checked": "2025-06-05T15:52:46.794241",
+      "status": "unchanged",
+      "etag": "7f9c7b598a7e8e3659ba7f2587566c52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/customreportrequest.json": {
+      "hash": "55f1c7beadf52b75dd3dbc7220b812081eea814d8edaef8784066b2633981646",
+      "last_checked": "2025-06-05T15:52:47.209670",
+      "status": "unchanged",
+      "etag": "W/\"4c44fe477e868bf7f765e34d93f18a81\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/customreportrequest": {
+      "hash": "55f1c7beadf52b75dd3dbc7220b812081eea814d8edaef8784066b2633981646",
+      "last_checked": "2025-06-05T15:52:47.209670",
+      "status": "unchanged",
+      "etag": "6f0da521d0cb9ab501d22a0a97e3f6f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/customreportresponse.json": {
+      "hash": "f8edad1ce03980aea75d9e82351657c711c368267d451141ebdbad04e0de41af",
+      "last_checked": "2025-06-05T15:52:47.652335",
+      "status": "unchanged",
+      "etag": "W/\"94a200345db79c5b3a18f4ca3a94a101\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/customreportresponse": {
+      "hash": "f8edad1ce03980aea75d9e82351657c711c368267d451141ebdbad04e0de41af",
+      "last_checked": "2025-06-05T15:52:47.652335",
+      "status": "unchanged",
+      "etag": "ecbde27edf00f9c507e771525e53aad8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/customreportresponsebody.json": {
+      "hash": "e84447e85e058e72486eb68dd1e4ea0166abe5169b1234353278d3014a24f21a",
+      "last_checked": "2025-06-05T15:52:48.058997",
+      "status": "unchanged",
+      "etag": "W/\"a96fcc9e4f81228973a9e669db5f7719\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/customreportresponsebody": {
+      "hash": "e84447e85e058e72486eb68dd1e4ea0166abe5169b1234353278d3014a24f21a",
+      "last_checked": "2025-06-05T15:52:48.058997",
+      "status": "unchanged",
+      "etag": "6ea8091938d9c710b393c4cb72e78216"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/sovcondition.json": {
+      "hash": "8689deacb0bc69b03c8873533c6d628f66d0e04baf0e0e962d85db66699fe8cd",
+      "last_checked": "2025-06-05T15:52:48.483906",
+      "status": "unchanged",
+      "etag": "W/\"5f252de1a5cbec3c2c5ae43403c585ab\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/sovcondition": {
+      "hash": "8689deacb0bc69b03c8873533c6d628f66d0e04baf0e0e962d85db66699fe8cd",
+      "last_checked": "2025-06-05T15:52:48.483906",
+      "status": "unchanged",
+      "etag": "360cc65fc707f0bc8695792e521b9f0d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/voidresponse/data-data.dictionary.json": {
+      "hash": "ac884b1be7b5d68f4b8d1ad1f61b11c7d2411e423856bbc31a594934382129c7",
+      "last_checked": "2025-06-05T15:52:48.858287",
+      "status": "unchanged",
+      "etag": "W/\"10cafd72614542b80087825105e57da4\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/voidresponse/data-data.dictionary": {
+      "hash": "ac884b1be7b5d68f4b8d1ad1f61b11c7d2411e423856bbc31a594934382129c7",
+      "last_checked": "2025-06-05T15:52:48.858287",
+      "status": "unchanged",
+      "etag": "555947afb3898d0cae7b4919385be4ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/condition.json": {
+      "hash": "3a202b826e31a18ba337246a0adc5d00c65db9a2426412f7d096619a16261807",
+      "last_checked": "2025-06-05T15:52:49.277270",
+      "status": "unchanged",
+      "etag": "W/\"6c3735471a060bdd45f2885c1f07bc24\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/condition": {
+      "hash": "3a202b826e31a18ba337246a0adc5d00c65db9a2426412f7d096619a16261807",
+      "last_checked": "2025-06-05T15:52:49.277270",
+      "status": "unchanged",
+      "etag": "30deb129d547d87126767e16408c603b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/pagedetail.json": {
+      "hash": "049e8b54fd6a18bdb4877b36d1d8c15bfc706bad8bfc3409060fc0eed11878df",
+      "last_checked": "2025-06-05T15:52:49.686186",
+      "status": "unchanged",
+      "etag": "W/\"3c1a6014a6d04555f6cbb4b85ede38ef\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/pagedetail": {
+      "hash": "049e8b54fd6a18bdb4877b36d1d8c15bfc706bad8bfc3409060fc0eed11878df",
+      "last_checked": "2025-06-05T15:52:49.686186",
+      "status": "unchanged",
+      "etag": "252c21cf266f140f47855c3516c755d9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/pagination.json": {
+      "hash": "cdde995bce12c7ff71e3b3d28556c2a76d9862131f0732b58eba38eb638929ae",
+      "last_checked": "2025-06-05T15:52:50.075706",
+      "status": "unchanged",
+      "etag": "W/\"7f991b0d8d61069a30b4602918fe9dc4\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/pagination": {
+      "hash": "cdde995bce12c7ff71e3b3d28556c2a76d9862131f0732b58eba38eb638929ae",
+      "last_checked": "2025-06-05T15:52:50.075706",
+      "status": "unchanged",
+      "etag": "5baef56e00b6925e146d84c340964dea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/selector.json": {
+      "hash": "6fdf3e061fe159eaa3a0eb070cd2c522ac2a12f7624305a0a1ebec8f2bade89c",
+      "last_checked": "2025-06-05T15:52:50.561712",
+      "status": "unchanged",
+      "etag": "W/\"a1f63cb88698b39220e91e2f9e3e8379\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/selector": {
+      "hash": "6fdf3e061fe159eaa3a0eb070cd2c522ac2a12f7624305a0a1ebec8f2bade89c",
+      "last_checked": "2025-06-05T15:52:50.561712",
+      "status": "unchanged",
+      "etag": "acd49a0432e01380e3b2db39e1d4c3bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/sorting.json": {
+      "hash": "f9f0ef8cbc84906c6ee4720035211de8b4d6bb6f092646a38836bcab8beb4f4e",
+      "last_checked": "2025-06-05T15:52:50.988184",
+      "status": "unchanged",
+      "etag": "W/\"2531225a976293f3f97d0ea2db1d8949\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/sorting": {
+      "hash": "f9f0ef8cbc84906c6ee4720035211de8b4d6bb6f092646a38836bcab8beb4f4e",
+      "last_checked": "2025-06-05T15:52:50.988184",
+      "status": "unchanged",
+      "etag": "924bc08d61a20bf9d7974acd23ffe848"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary.json": {
+      "hash": "c93551ce550d935144d2ad39559b6ff6cd4e4fa3b8f8282e50b31049ca620818",
+      "last_checked": "2025-06-05T15:52:51.397787",
+      "status": "unchanged",
+      "etag": "W/\"73e821800b60c43257ded46c871aeba5\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary": {
+      "hash": "c93551ce550d935144d2ad39559b6ff6cd4e4fa3b8f8282e50b31049ca620818",
+      "last_checked": "2025-06-05T15:52:51.397787",
+      "status": "unchanged",
+      "etag": "1b87b4e3b20ebd4ce12c7af20ccc4348"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/budgetordercreate/bo-data.dictionary.json": {
+      "hash": "e8468b6e688baa2fc57f1ec0687d1b42baa92c2e89724fe395f30909d5c2f4b0",
+      "last_checked": "2025-06-05T15:52:51.820543",
+      "status": "unchanged",
+      "etag": "W/\"d2165d2ec4f21f5fe0fe17a17644d864\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/budgetordercreate/bo-data.dictionary": {
+      "hash": "e8468b6e688baa2fc57f1ec0687d1b42baa92c2e89724fe395f30909d5c2f4b0",
+      "last_checked": "2025-06-05T15:52:51.820543",
+      "status": "unchanged",
+      "etag": "6170620d6f7430b209bfc17c2add3bcf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/budgetorderupdate/bo-data.dictionary.json": {
+      "hash": "208d38566e8eb1681bffe8e7d6255ccc5e6edf172ad1c148e6de6a92919f6094",
+      "last_checked": "2025-06-05T15:52:52.255818",
+      "status": "unchanged",
+      "etag": "W/\"af30f6f2e572adab019a4d552ef45de2\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/budgetorderupdate/bo-data.dictionary": {
+      "hash": "208d38566e8eb1681bffe8e7d6255ccc5e6edf172ad1c148e6de6a92919f6094",
+      "last_checked": "2025-06-05T15:52:52.255818",
+      "status": "unchanged",
+      "etag": "867b77250947d08d5204a83cf194a244"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/apppreviewdevicesmappingresponse/data-data.dictionary.json": {
+      "hash": "a9288f13480a86fe14f8bfedb66eed09782925f0234b2b1fa71413a4d0190a6b",
+      "last_checked": "2025-06-05T15:52:52.639337",
+      "status": "unchanged",
+      "etag": "W/\"6c9dd12f74fd7a9a2deb92278d75eeac\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/apppreviewdevicesmappingresponse/data-data.dictionary": {
+      "hash": "a9288f13480a86fe14f8bfedb66eed09782925f0234b2b1fa71413a4d0190a6b",
+      "last_checked": "2025-06-05T15:52:52.639337",
+      "status": "unchanged",
+      "etag": "33dff0e6768fa544549c5bed3d5fe616"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/creativelocalizationwithassets/apppreviewdevicewithassets-data.dictionary.json": {
+      "hash": "1f7a056b8175ffc1454b82bef40396d7c3972adcc547c9cf1f587a93cb9406ca",
+      "last_checked": "2025-06-05T15:52:53.078636",
+      "status": "unchanged",
+      "etag": "W/\"959f59b75094ae1329bd5256f3011a88\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/creativelocalizationwithassets/apppreviewdevicewithassets-data.dictionary": {
+      "hash": "1f7a056b8175ffc1454b82bef40396d7c3972adcc547c9cf1f587a93cb9406ca",
+      "last_checked": "2025-06-05T15:52:53.078636",
+      "status": "unchanged",
+      "etag": "e3942259943d9a28c8662877c9e21652"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary.json": {
+      "hash": "47ac37f1c20a7c459776f36f06ea5f8372ba4fffb72bb21ecd2a25c361ce939a",
+      "last_checked": "2025-06-05T15:52:53.452400",
+      "status": "unchanged",
+      "etag": "W/\"85c5c6c1e7e5c542e5242281bb38b67c\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary": {
+      "hash": "47ac37f1c20a7c459776f36f06ea5f8372ba4fffb72bb21ecd2a25c361ce939a",
+      "last_checked": "2025-06-05T15:52:53.452400",
+      "status": "unchanged",
+      "etag": "61a670d9aa2dbd5ea4e899f190615ed5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/reportingcampaign/countryorregionservingstatereasons-data.dictionary.json": {
+      "hash": "b6b4dde4e8c915f332548118b7139f2edf2ae3cb2481f023f1f128e15c6a9ea9",
+      "last_checked": "2025-06-05T15:52:53.859417",
+      "status": "unchanged",
+      "etag": "W/\"ad7ab11755bed931ea338cceac64e9c3\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/reportingcampaign/countryorregionservingstatereasons-data.dictionary": {
+      "hash": "b6b4dde4e8c915f332548118b7139f2edf2ae3cb2481f023f1f128e15c6a9ea9",
+      "last_checked": "2025-06-05T15:52:53.859417",
+      "status": "unchanged",
+      "etag": "f06b5a13b1a6a2626b08575650cb9d5e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/customreportrequest/selector-data.dictionary.json": {
+      "hash": "29b91836c808a8ba3f4463430a05f98f0412eba77a07323a7ae67e9e76a4dfa2",
+      "last_checked": "2025-06-05T15:52:54.312177",
+      "status": "unchanged",
+      "etag": "W/\"6307233397638a2786240b3317fc015c\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/customreportrequest/selector-data.dictionary": {
+      "hash": "29b91836c808a8ba3f4463430a05f98f0412eba77a07323a7ae67e9e76a4dfa2",
+      "last_checked": "2025-06-05T15:52:54.312177",
+      "status": "unchanged",
+      "etag": "051c70a3d2a499f356922e284cc5d17e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/customreportresponse/selector-data.dictionary.json": {
+      "hash": "8b309990ccc5b94d6a10aca438f5ab9a56ef64ca2dfc907d639f54dfe6952f18",
+      "last_checked": "2025-06-05T15:52:54.704401",
+      "status": "unchanged",
+      "etag": "W/\"0f90314c87537102518367c988b2654f\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/customreportresponse/selector-data.dictionary": {
+      "hash": "8b309990ccc5b94d6a10aca438f5ab9a56ef64ca2dfc907d639f54dfe6952f18",
+      "last_checked": "2025-06-05T15:52:54.704401",
+      "status": "unchanged",
+      "etag": "a8127101556abf9513f2a330acd69a08"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-data.dictionary.json": {
+      "hash": "5ee09c0e577a0ac65228c5e8d6920dd8f56e2d85fabfc82202b3e42b54e9a89b",
+      "last_checked": "2025-06-05T15:52:55.110852",
+      "status": "unchanged",
+      "etag": "W/\"031de81a04598f54b6ad9eef0962d536\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-data.dictionary": {
+      "hash": "5ee09c0e577a0ac65228c5e8d6920dd8f56e2d85fabfc82202b3e42b54e9a89b",
+      "last_checked": "2025-06-05T15:52:55.110852",
+      "status": "unchanged",
+      "etag": "a215874b8e0dfc20356ff3541ea82bec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary/any-key-data.dictionary.json": {
+      "hash": "eae443935e07fc781b9db936bddccbe4d5844fc9df7769a85a60465f678c5de7",
+      "last_checked": "2025-06-05T15:52:55.508127",
+      "status": "unchanged",
+      "etag": "W/\"dc3122d3710f0e4df832a56b4947ff76\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary/any-key-data.dictionary": {
+      "hash": "eae443935e07fc781b9db936bddccbe4d5844fc9df7769a85a60465f678c5de7",
+      "last_checked": "2025-06-05T15:52:55.508127",
+      "status": "unchanged",
+      "etag": "d8ba6c6d21cfc53ce1b673ec60a8778b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/customreportrequest/selector-data.dictionary/conditions-data.dictionary.json": {
+      "hash": "bee942b3c225ba15b47ef47ec0969b195dad83895aa6c72a2f785075d4d9c2e2",
+      "last_checked": "2025-06-05T15:52:55.963470",
+      "status": "unchanged",
+      "etag": "W/\"1e315f26de8ae1d91ec476d667578512\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/customreportrequest/selector-data.dictionary/conditions-data.dictionary": {
+      "hash": "bee942b3c225ba15b47ef47ec0969b195dad83895aa6c72a2f785075d4d9c2e2",
+      "last_checked": "2025-06-05T15:52:55.963470",
+      "status": "unchanged",
+      "etag": "05db416dc39adb47c6dff53701f96d16"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/customreportresponse/selector-data.dictionary/conditions-data.dictionary.json": {
+      "hash": "274061d32f3e14c067f8bf50c9d88db0f5e50b8005f0f2db978c7e797cdd5c35",
+      "last_checked": "2025-06-05T15:52:56.365492",
+      "status": "unchanged",
+      "etag": "W/\"de2b255be728cce6f38cfdcf1e17ec0d\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/customreportresponse/selector-data.dictionary/conditions-data.dictionary": {
+      "hash": "274061d32f3e14c067f8bf50c9d88db0f5e50b8005f0f2db978c7e797cdd5c35",
+      "last_checked": "2025-06-05T15:52:56.365492",
+      "status": "unchanged",
+      "etag": "655f5dc2be834a865a0fbd08fff45134"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/custom-product-pages.json": {
+      "hash": "f0640ba062eb6dc766b05eae15f4e1e5ea185ef67fbff09c6e0715a51ce78045",
+      "last_checked": "2025-06-06T19:38:07.137023",
+      "status": "unchanged",
+      "etag": "W/\"8c1b2b3aa46d44261145504342af9fd1\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/custom-product-pages": {
+      "hash": "f0640ba062eb6dc766b05eae15f4e1e5ea185ef67fbff09c6e0715a51ce78045",
+      "last_checked": "2025-06-06T19:38:07.137023",
+      "status": "unchanged",
+      "etag": "2cb1efb24b8d0aa67f9d7bdd6d536b0a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/apple_search_ads/create-campaign-negative-keywords.json": {
+      "hash": "867b47bae25f3b9f452e92f5a5f7092815e3feb5d923cbadf996aceefb37a081",
+      "last_checked": "2025-06-06T19:38:09.116851",
+      "status": "unchanged",
+      "etag": "W/\"ffd2e711134f9721a1d70b68e4e81dd3\""
+    },
+    "https://developer.apple.com/documentation/apple_search_ads/create-campaign-negative-keywords": {
+      "hash": "867b47bae25f3b9f452e92f5a5f7092815e3feb5d923cbadf996aceefb37a081",
+      "last_checked": "2025-06-06T19:38:09.116851",
+      "status": "unchanged",
+      "etag": "1369eaf970b406cde31b3abd57e349b0"
+    }
+  }
+}

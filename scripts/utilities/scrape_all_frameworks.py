@@ -89,14 +89,11 @@ async def scrape_single_framework(scraper, framework, current, total):
     """Scrape a single framework"""
     try:
         async with scraper:
-            urls = await scraper.discover_urls()
-            print(f"[{current}/{total}] 📝 Found {len(urls)} pages for {framework['title']}")
+            print(f"[{current}/{total}] 📝 Starting scrape for {framework['title']}...")
             
-            if urls:
-                await scraper.scrape_urls(urls)
-                print(f"[{current}/{total}] ✅ Completed: {framework['title']}")
-            else:
-                print(f"[{current}/{total}] ⚠️  No URLs found for {framework['title']}")
+            # Use the streaming scrape_framework method
+            stats = await scraper.scrape_framework()
+            print(f"[{current}/{total}] ✅ Completed: {framework['title']} - {stats['pages_scraped']} scraped, {stats['pages_skipped']} skipped")
                 
     except Exception as e:
         print(f"[{current}/{total}] ❌ Error scraping {framework['title']}: {e}")

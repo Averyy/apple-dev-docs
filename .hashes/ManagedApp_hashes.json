@@ -1,0 +1,651 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T12:47:43.089143",
+    "total_pages": 117,
+    "etags_collected": "2025-06-07T12:47:43.089156"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/ManagedApp.json": {
+      "hash": "141099a15ca7d8ff72d2d84056d3739e044e097d4b067e608645cf62d4d369c5",
+      "last_checked": "2025-06-06T02:44:57.980583",
+      "status": "new",
+      "etag": "W/\"0f4a48c4ebb2294a1278e94db8fc7b7e\""
+    },
+    "https://developer.apple.com/documentation/ManagedApp": {
+      "hash": "645ec937f2b13c912990aa860a8c9d92bef6e1159ef4da0959e3ebdedd0ce744",
+      "last_checked": "2025-06-06T02:44:57.980844",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp.json": {
+      "hash": "645ec937f2b13c912990aa860a8c9d92bef6e1159ef4da0959e3ebdedd0ce744",
+      "last_checked": "2025-06-06T02:44:57.980844",
+      "status": "unchanged",
+      "etag": "W/\"0f4a48c4ebb2294a1278e94db8fc7b7e\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/specifying-and-decoding-a-configuration.json": {
+      "hash": "0b136625d46daa7d7cf3ba9e699af63e358b60501d215742c989c4b16689f2bd",
+      "last_checked": "2025-06-06T19:40:40.291261",
+      "status": "unchanged",
+      "etag": "W/\"7aed33117636bdfc40524ccadbb1d803\""
+    },
+    "https://developer.apple.com/documentation/managedapp/specifying-and-decoding-a-configuration": {
+      "hash": "9b3e224770733558f68880e61533253c6ce34768463d8dc0393f696a4c264eb6",
+      "last_checked": "2025-06-06T02:44:58.900447",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationprovider.json": {
+      "hash": "c7c2e2d4e577c714914eab934eacb8258dc2fd0b68359bdca185b02bf40e691a",
+      "last_checked": "2025-06-06T02:44:59.532569",
+      "status": "unchanged",
+      "etag": "W/\"0aeebc0aa8fef6e1198ec6f72132ac2e\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationprovider": {
+      "hash": "c7c2e2d4e577c714914eab934eacb8258dc2fd0b68359bdca185b02bf40e691a",
+      "last_checked": "2025-06-06T02:44:59.532569",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/accessing-provisioned-secrets-with-identifiers.json": {
+      "hash": "1a97a10426f29e3d8e96208c39e51d2542de4dbeba8d426344296715363b544b",
+      "last_checked": "2025-06-06T02:44:59.932529",
+      "status": "unchanged",
+      "etag": "W/\"85e9cafe589d107ff17ea0730107076d\""
+    },
+    "https://developer.apple.com/documentation/managedapp/accessing-provisioned-secrets-with-identifiers": {
+      "hash": "1a97a10426f29e3d8e96208c39e51d2542de4dbeba8d426344296715363b544b",
+      "last_checked": "2025-06-06T02:44:59.932529",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappcertificatesprovider.json": {
+      "hash": "dec21607c9b5085e00849d4047e6ae9c54e6a6964694d82b37c1d734d7b34e98",
+      "last_checked": "2025-06-06T02:45:00.411912",
+      "status": "unchanged",
+      "etag": "W/\"69ae25b84193a9616c15bbf6e972307a\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappcertificatesprovider": {
+      "hash": "dec21607c9b5085e00849d4047e6ae9c54e6a6964694d82b37c1d734d7b34e98",
+      "last_checked": "2025-06-06T02:45:00.411912",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappidentitiesprovider.json": {
+      "hash": "18c4dc6cccd561d1ee1823f6c1022cf42566ad439cdfa524d834a91b71d47fab",
+      "last_checked": "2025-06-06T02:45:00.965848",
+      "status": "unchanged",
+      "etag": "W/\"8dd8111c20750f393438fcac8ed70144\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappidentitiesprovider": {
+      "hash": "18c4dc6cccd561d1ee1823f6c1022cf42566ad439cdfa524d834a91b71d47fab",
+      "last_checked": "2025-06-06T02:45:00.965848",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapppasswordsprovider.json": {
+      "hash": "089afe43e1c37f980fa2c558acdbab907bbe06df9db450ab6eb4a2ea9ecb89a4",
+      "last_checked": "2025-06-06T02:45:01.473289",
+      "status": "unchanged",
+      "etag": "W/\"bd6d9cf6f9a29decd2fae297b29ed400\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapppasswordsprovider": {
+      "hash": "089afe43e1c37f980fa2c558acdbab907bbe06df9db450ab6eb4a2ea9ecb89a4",
+      "last_checked": "2025-06-06T02:45:01.473289",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror.json": {
+      "hash": "eebcc15ecdb85fdf78f757fe1d9c83b0b63e02ed684e7d6e8569aef058b09f0c",
+      "last_checked": "2025-06-06T02:45:01.931871",
+      "status": "unchanged",
+      "etag": "W/\"7f788b864885606a683309aee954750a\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror": {
+      "hash": "eebcc15ecdb85fdf78f757fe1d9c83b0b63e02ed684e7d6e8569aef058b09f0c",
+      "last_checked": "2025-06-06T02:45:01.931871",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerror.json": {
+      "hash": "d27b5e012ce6c8b189be687eee9b9a9afc4972301f964c7515ac719d7bb0787d",
+      "last_checked": "2025-06-06T02:45:02.315714",
+      "status": "unchanged",
+      "etag": "W/\"1bbdce12a27bb8a152c37b7a884b67ba\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerror": {
+      "hash": "d27b5e012ce6c8b189be687eee9b9a9afc4972301f964c7515ac719d7bb0787d",
+      "last_checked": "2025-06-06T02:45:02.315714",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode.json": {
+      "hash": "3f2d95ca5d5afb8972c6d428582c0d2c49b422eb27961a144b83eb88ae35891a",
+      "last_checked": "2025-06-06T02:45:02.860782",
+      "status": "unchanged",
+      "etag": "W/\"cc1a5742b35e5d178e9dee3b30af5526\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode": {
+      "hash": "3f2d95ca5d5afb8972c6d428582c0d2c49b422eb27961a144b83eb88ae35891a",
+      "last_checked": "2025-06-06T02:45:02.860782",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationprovider/init().json": {
+      "hash": "b8494a152ee05a27f053ea367364fdf2c543270ba833d6a25b44dbe0ca76b5f1",
+      "last_checked": "2025-06-06T02:45:03.251003",
+      "status": "unchanged",
+      "etag": "W/\"29eb1ad37c100dc65c5af456c9a957b0\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationprovider/init()": {
+      "hash": "b8494a152ee05a27f053ea367364fdf2c543270ba833d6a25b44dbe0ca76b5f1",
+      "last_checked": "2025-06-06T02:45:03.251003",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationprovider/configurations(_:).json": {
+      "hash": "dd62633906127aba2fe3db58f378cca6dfae0ba32d5461685d87446595cc61f0",
+      "last_checked": "2025-06-06T02:45:03.667468",
+      "status": "unchanged",
+      "etag": "W/\"bdeb59d122d6de71f4cfddd38e3a1044\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationprovider/configurations(_:)": {
+      "hash": "dd62633906127aba2fe3db58f378cca6dfae0ba32d5461685d87446595cc61f0",
+      "last_checked": "2025-06-06T02:45:03.667468",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappcertificatesprovider/init().json": {
+      "hash": "1bcf522f3ae5fe08e8b78e11a74b00eb2ba9cc826895deff12534fe65d34e800",
+      "last_checked": "2025-06-06T02:45:04.107443",
+      "status": "unchanged",
+      "etag": "W/\"4e61dde914a08c66995fb3c78adaa052\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappcertificatesprovider/init()": {
+      "hash": "1bcf522f3ae5fe08e8b78e11a74b00eb2ba9cc826895deff12534fe65d34e800",
+      "last_checked": "2025-06-06T02:45:04.107443",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappcertificatesprovider/identifiers.json": {
+      "hash": "d9d2900594934b6a5df220b4e11c3f53e88f39f4d812ddd35c1c85bcef028ff0",
+      "last_checked": "2025-06-06T02:45:04.523071",
+      "status": "unchanged",
+      "etag": "W/\"8950f98791a58c0f19f024cbdf417233\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappcertificatesprovider/identifiers": {
+      "hash": "d9d2900594934b6a5df220b4e11c3f53e88f39f4d812ddd35c1c85bcef028ff0",
+      "last_checked": "2025-06-06T02:45:04.523071",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappidentitiesprovider/init().json": {
+      "hash": "b508d612626c2ffd83d9eac0060d0bf5d8c3a63397a896c75bf983776817cba4",
+      "last_checked": "2025-06-06T02:45:05.360249",
+      "status": "unchanged",
+      "etag": "W/\"16d4922e4a4682dcc7422d64e0c1bca0\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappidentitiesprovider/init()": {
+      "hash": "b508d612626c2ffd83d9eac0060d0bf5d8c3a63397a896c75bf983776817cba4",
+      "last_checked": "2025-06-06T02:45:05.360249",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappidentitiesprovider/identifiers.json": {
+      "hash": "2ca8c3b8700160feb9e5692c30eb19cd54b778548707dd3c441c6019791bd8ec",
+      "last_checked": "2025-06-06T02:45:05.781631",
+      "status": "unchanged",
+      "etag": "W/\"5b02de6b019bc6b98b84edce9dd67ac2\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappidentitiesprovider/identifiers": {
+      "hash": "2ca8c3b8700160feb9e5692c30eb19cd54b778548707dd3c441c6019791bd8ec",
+      "last_checked": "2025-06-06T02:45:05.781631",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapppasswordsprovider/init().json": {
+      "hash": "cdf0192421463a755b623ba86d52a0d2d670da1bc459176e83909329565b7bf9",
+      "last_checked": "2025-06-06T02:45:06.579942",
+      "status": "unchanged",
+      "etag": "W/\"ce89d8e88c54d6dd25e564d452f9ecac\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapppasswordsprovider/init()": {
+      "hash": "cdf0192421463a755b623ba86d52a0d2d670da1bc459176e83909329565b7bf9",
+      "last_checked": "2025-06-06T02:45:06.579942",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapppasswordsprovider/identifiers.json": {
+      "hash": "718e23babb5017249e8e4d9d0449e20b273e115b567c4e74c3fc10b2c0d79ae0",
+      "last_checked": "2025-06-06T02:45:07.035023",
+      "status": "unchanged",
+      "etag": "W/\"83f18072bddb8254a98e2dee725efb59\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapppasswordsprovider/identifiers": {
+      "hash": "718e23babb5017249e8e4d9d0449e20b273e115b567c4e74c3fc10b2c0d79ae0",
+      "last_checked": "2025-06-06T02:45:07.035023",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/invalididentifier.json": {
+      "hash": "e944ec697ff87a3e71e95fdf80fd5d6b7ea83f7bbae62a925cb89f152ca6fd3b",
+      "last_checked": "2025-06-06T02:45:07.924870",
+      "status": "unchanged",
+      "etag": "W/\"c34cf5815770cec00fcc711a45554851\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/invalididentifier": {
+      "hash": "e944ec697ff87a3e71e95fdf80fd5d6b7ea83f7bbae62a925cb89f152ca6fd3b",
+      "last_checked": "2025-06-06T02:45:07.924870",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/==(_:_:).json": {
+      "hash": "c1e6b0aa05138753bfe90fcb7ad4c6cb183ce55e02675e88e672978e95d2f208",
+      "last_checked": "2025-06-06T02:45:08.298767",
+      "status": "unchanged",
+      "etag": "W/\"1ae396f3f64ef803e9d445c4b290889b\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/==(_:_:)": {
+      "hash": "c1e6b0aa05138753bfe90fcb7ad4c6cb183ce55e02675e88e672978e95d2f208",
+      "last_checked": "2025-06-06T02:45:08.298767",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/internalerror.json": {
+      "hash": "aa432545cc0d0de80fdb908a28ae8047f3543bcd6346fce0a1776fb9f09c6e6e",
+      "last_checked": "2025-06-06T02:45:08.726042",
+      "status": "unchanged",
+      "etag": "W/\"0027fc96ab300cbe82d7758d91ef57b4\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/internalerror": {
+      "hash": "aa432545cc0d0de80fdb908a28ae8047f3543bcd6346fce0a1776fb9f09c6e6e",
+      "last_checked": "2025-06-06T02:45:08.726042",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/servererror.json": {
+      "hash": "a33eec3f96d8b83677e96a2fdc5220197363f007926a3ff4fe3216f9b9b348e7",
+      "last_checked": "2025-06-06T02:45:09.113594",
+      "status": "unchanged",
+      "etag": "W/\"832ceef9c0f8e35b1de342a453c159ff\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/servererror": {
+      "hash": "a33eec3f96d8b83677e96a2fdc5220197363f007926a3ff4fe3216f9b9b348e7",
+      "last_checked": "2025-06-06T02:45:09.113594",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/hashvalue.json": {
+      "hash": "2f0b48332271c1f478c58e3f3eac983ecb579c5dfd991003e4f8e3a72987d53e",
+      "last_checked": "2025-06-06T02:45:09.510643",
+      "status": "unchanged",
+      "etag": "W/\"778ebf49381b76d7e329b18d1bc02c67\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/hashvalue": {
+      "hash": "2f0b48332271c1f478c58e3f3eac983ecb579c5dfd991003e4f8e3a72987d53e",
+      "last_checked": "2025-06-06T02:45:09.510643",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/hash(into:).json": {
+      "hash": "b1cb85a95a6493f8d223b5867e5d29ac55f571db0ee1f75f8ffd4e2f6ec5731b",
+      "last_checked": "2025-06-06T02:45:09.941472",
+      "status": "unchanged",
+      "etag": "W/\"434d4aad95ce341a172328416b03d697\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/hash(into:)": {
+      "hash": "b1cb85a95a6493f8d223b5867e5d29ac55f571db0ee1f75f8ffd4e2f6ec5731b",
+      "last_checked": "2025-06-06T02:45:09.941472",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/equatable-implementations.json": {
+      "hash": "4e29a9a38909ed2884224c57ebf5897e87c5aa42a9375f0a4a44780fed2738fb",
+      "last_checked": "2025-06-06T02:45:10.521675",
+      "status": "unchanged",
+      "etag": "W/\"757e50b1b4b434965ccccf0ffb715c08\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/equatable-implementations": {
+      "hash": "4e29a9a38909ed2884224c57ebf5897e87c5aa42a9375f0a4a44780fed2738fb",
+      "last_checked": "2025-06-06T02:45:10.521675",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/error-implementations.json": {
+      "hash": "1bf5ff48a0ff5ab472abcca5b8eba3d9b0ada56014bd1e23373c3d71d7c4be60",
+      "last_checked": "2025-06-06T02:45:10.898036",
+      "status": "unchanged",
+      "etag": "W/\"e6c1058681c0239b2c2b72626802bfd0\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/error-implementations": {
+      "hash": "1bf5ff48a0ff5ab472abcca5b8eba3d9b0ada56014bd1e23373c3d71d7c4be60",
+      "last_checked": "2025-06-06T02:45:10.898036",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/localizederror-implementations.json": {
+      "hash": "5073c05f97d46e0e5371d9eac17110bb0ea59aba7ab22288ac8f263804dfd662",
+      "last_checked": "2025-06-06T02:45:11.298377",
+      "status": "unchanged",
+      "etag": "W/\"0a9c9eaa22a976f8bbabdb19cd32d6bf\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/localizederror-implementations": {
+      "hash": "5073c05f97d46e0e5371d9eac17110bb0ea59aba7ab22288ac8f263804dfd662",
+      "last_checked": "2025-06-06T02:45:11.298377",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerror/code.json": {
+      "hash": "7ca9a7f5136b8b94569e629771f221d140a3dcd88870a8c4ebb01acd25e82da5",
+      "last_checked": "2025-06-06T02:45:11.729396",
+      "status": "unchanged",
+      "etag": "W/\"ec830f052d8fc70f6d250ac9ac37b721\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerror/code": {
+      "hash": "7ca9a7f5136b8b94569e629771f221d140a3dcd88870a8c4ebb01acd25e82da5",
+      "last_checked": "2025-06-06T02:45:11.729396",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerror/message.json": {
+      "hash": "737a14eb5f353bbeea4dc09909df1f1e42e64db9ff9cab23232fa4f700bd87a2",
+      "last_checked": "2025-06-06T02:45:12.163186",
+      "status": "unchanged",
+      "etag": "W/\"0123c413d019131b5529f447551f6c7d\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerror/message": {
+      "hash": "737a14eb5f353bbeea4dc09909df1f1e42e64db9ff9cab23232fa4f700bd87a2",
+      "last_checked": "2025-06-06T02:45:12.163186",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/init(rawvalue:).json": {
+      "hash": "aa1b59fcadbc266546ab4502abca8bd46484ebb0683b59c86b3f234c7b97a79c",
+      "last_checked": "2025-06-06T02:45:12.547842",
+      "status": "unchanged",
+      "etag": "W/\"ec1184b7967a7a5c2c170bd326a1aad7\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/init(rawvalue:)": {
+      "hash": "aa1b59fcadbc266546ab4502abca8bd46484ebb0683b59c86b3f234c7b97a79c",
+      "last_checked": "2025-06-06T02:45:12.547842",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/rawvalue-swift.property.json": {
+      "hash": "4af6d4ea67148ab8d1f85e1a0ba8274f319d9b707fb9efd9aa9281824e65aa21",
+      "last_checked": "2025-06-06T02:45:12.951624",
+      "status": "unchanged",
+      "etag": "W/\"7f9f8f4125b41d00e9dad7c4e2afd5e0\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/rawvalue-swift.property": {
+      "hash": "4af6d4ea67148ab8d1f85e1a0ba8274f319d9b707fb9efd9aa9281824e65aa21",
+      "last_checked": "2025-06-06T02:45:12.951624",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/rawvalue-swift.typealias.json": {
+      "hash": "151a761056554a7d2a7b2554fecb79f3020b639d5af7d5ecd778bfc09a2e03df",
+      "last_checked": "2025-06-06T02:45:13.366116",
+      "status": "unchanged",
+      "etag": "W/\"7f0d525c457a82e2524c30ef5e5c4b07\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/rawvalue-swift.typealias": {
+      "hash": "151a761056554a7d2a7b2554fecb79f3020b639d5af7d5ecd778bfc09a2e03df",
+      "last_checked": "2025-06-06T02:45:13.366116",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/datacorrupted.json": {
+      "hash": "0617cad7e7b882e72a6915e9b2e2c07e10c9ef5e956ad3e076abf7afe5684d8f",
+      "last_checked": "2025-06-06T02:45:13.762562",
+      "status": "unchanged",
+      "etag": "W/\"08000801502f7cf0f8fbe03c480bc7e6\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/datacorrupted": {
+      "hash": "0617cad7e7b882e72a6915e9b2e2c07e10c9ef5e956ad3e076abf7afe5684d8f",
+      "last_checked": "2025-06-06T02:45:13.762562",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/firstreserved.json": {
+      "hash": "ce25354d69f1b07122d5a4c0bfcb0d3e9a9010dc5d01c5e7c539cedd7cd269cd",
+      "last_checked": "2025-06-06T02:45:14.163944",
+      "status": "unchanged",
+      "etag": "W/\"ba61aecd4703326191b101e243deaf2f\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/firstreserved": {
+      "hash": "ce25354d69f1b07122d5a4c0bfcb0d3e9a9010dc5d01c5e7c539cedd7cd269cd",
+      "last_checked": "2025-06-06T02:45:14.163944",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/generic.json": {
+      "hash": "0d38c2c12d0b721e2636e8af957064f198343f37f291b3d1dc48a4480ea1859d",
+      "last_checked": "2025-06-06T02:45:14.621964",
+      "status": "unchanged",
+      "etag": "W/\"e387173eb02a7120af69c0ff07df9b4c\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/generic": {
+      "hash": "0d38c2c12d0b721e2636e8af957064f198343f37f291b3d1dc48a4480ea1859d",
+      "last_checked": "2025-06-06T02:45:14.621964",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/keynotfound.json": {
+      "hash": "4a2458660fe317dc254f6551972ef35fef5a67806fb5ee3750c66d9182166e95",
+      "last_checked": "2025-06-06T02:45:15.037155",
+      "status": "unchanged",
+      "etag": "W/\"e9d07e900cd633f82febc7f4731ee416\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/keynotfound": {
+      "hash": "4a2458660fe317dc254f6551972ef35fef5a67806fb5ee3750c66d9182166e95",
+      "last_checked": "2025-06-06T02:45:15.037155",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/timeout.json": {
+      "hash": "36575d01fceb461fe05cea0f7dbe18dec2761148ae3c49b455e85c76b021ab2c",
+      "last_checked": "2025-06-06T02:45:15.460707",
+      "status": "unchanged",
+      "etag": "W/\"1925d3819bcc290698663bd4445d2617\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/timeout": {
+      "hash": "36575d01fceb461fe05cea0f7dbe18dec2761148ae3c49b455e85c76b021ab2c",
+      "last_checked": "2025-06-06T02:45:15.460707",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/typemismatch.json": {
+      "hash": "8755f6c748aea8fa4d02b337d97c755c79640f06fdf28aa4d556696a95b6d798",
+      "last_checked": "2025-06-06T02:45:15.868403",
+      "status": "unchanged",
+      "etag": "W/\"c0ba03862531fbf7f08342089a3a9379\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/typemismatch": {
+      "hash": "8755f6c748aea8fa4d02b337d97c755c79640f06fdf28aa4d556696a95b6d798",
+      "last_checked": "2025-06-06T02:45:15.868403",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/valuenotfound.json": {
+      "hash": "213727fb8d941145b7d8e9d0e2cd6d911ebb5b180654ae2fcd77b0d1155d0e96",
+      "last_checked": "2025-06-06T02:45:16.266621",
+      "status": "unchanged",
+      "etag": "W/\"7cb469daa8e3fce5529cf6a67bb8c5e0\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/valuenotfound": {
+      "hash": "213727fb8d941145b7d8e9d0e2cd6d911ebb5b180654ae2fcd77b0d1155d0e96",
+      "last_checked": "2025-06-06T02:45:16.266621",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/equatable-implementations.json": {
+      "hash": "0b7b89bff9fd010d8c1d8b5bc83cd21cbf79041806054a68729af54d42aba10b",
+      "last_checked": "2025-06-06T02:45:16.689386",
+      "status": "unchanged",
+      "etag": "W/\"a182edf6584d271bc4b5010313ade4c1\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/equatable-implementations": {
+      "hash": "0b7b89bff9fd010d8c1d8b5bc83cd21cbf79041806054a68729af54d42aba10b",
+      "last_checked": "2025-06-06T02:45:16.689386",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/rawrepresentable-implementations.json": {
+      "hash": "661cd336022837f837e5cdd5e0073bcd23eb2a2892ef8e4d948d0648cf4d8894",
+      "last_checked": "2025-06-06T02:45:17.133343",
+      "status": "unchanged",
+      "etag": "W/\"66dd88cb4f2bf36ed0463d3073822b1b\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/rawrepresentable-implementations": {
+      "hash": "661cd336022837f837e5cdd5e0073bcd23eb2a2892ef8e4d948d0648cf4d8894",
+      "last_checked": "2025-06-06T02:45:17.133343",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/!=(_:_:).json": {
+      "hash": "364916321d007f1ca5612d9e4fec75070d28b164c5b631cd25cbcb9232035b11",
+      "last_checked": "2025-06-06T02:45:17.552268",
+      "status": "unchanged",
+      "etag": "W/\"b3542ae188336a41eb2d35f0035cc4e2\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/!=(_:_:)": {
+      "hash": "364916321d007f1ca5612d9e4fec75070d28b164c5b631cd25cbcb9232035b11",
+      "last_checked": "2025-06-06T02:45:17.552268",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/localizeddescription.json": {
+      "hash": "37304677d4b55354a4607fc86fca249bf18fdb1adf0cd31c63c73e0126019768",
+      "last_checked": "2025-06-06T02:45:17.996808",
+      "status": "unchanged",
+      "etag": "W/\"b53bb9d9d393046689bffc9da94ba13e\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/localizeddescription": {
+      "hash": "37304677d4b55354a4607fc86fca249bf18fdb1adf0cd31c63c73e0126019768",
+      "last_checked": "2025-06-06T02:45:17.996808",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/errordescription.json": {
+      "hash": "e6fb757d765313625f44b818e69d1b51d10a168667df1df8037bb5d5dc999066",
+      "last_checked": "2025-06-06T02:45:18.396186",
+      "status": "unchanged",
+      "etag": "W/\"f73d260a34dd035781dae641e56049ca\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/errordescription": {
+      "hash": "e6fb757d765313625f44b818e69d1b51d10a168667df1df8037bb5d5dc999066",
+      "last_checked": "2025-06-06T02:45:18.396186",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/failurereason.json": {
+      "hash": "2595bc258fde4ced53474011519f9c63ff9aa8b95c83247ca4ac05bdfd6f857a",
+      "last_checked": "2025-06-06T02:45:18.829768",
+      "status": "unchanged",
+      "etag": "W/\"5b5df7ee93bd0426e3ff612f2a36da82\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/failurereason": {
+      "hash": "2595bc258fde4ced53474011519f9c63ff9aa8b95c83247ca4ac05bdfd6f857a",
+      "last_checked": "2025-06-06T02:45:18.829768",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/helpanchor.json": {
+      "hash": "712419fe215c87949c57cb9347ad47e82d7fff563a79fe9e86d5d6a52a3567c6",
+      "last_checked": "2025-06-06T02:45:19.218192",
+      "status": "unchanged",
+      "etag": "W/\"55b94532c5e3cd8fe502b582a6a05ea8\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/helpanchor": {
+      "hash": "712419fe215c87949c57cb9347ad47e82d7fff563a79fe9e86d5d6a52a3567c6",
+      "last_checked": "2025-06-06T02:45:19.218192",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapperror/recoverysuggestion.json": {
+      "hash": "d00f34016ea73e732643142a122a3aa48ca5a7ffa70f9e618a0dd79925f8f50c",
+      "last_checked": "2025-06-06T02:45:19.660439",
+      "status": "unchanged",
+      "etag": "W/\"26829bde55bf6b39715d337afba2196b\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapperror/recoverysuggestion": {
+      "hash": "d00f34016ea73e732643142a122a3aa48ca5a7ffa70f9e618a0dd79925f8f50c",
+      "last_checked": "2025-06-06T02:45:19.660439",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/!=(_:_:).json": {
+      "hash": "fb693909f86d491d7765335bca04de5ae0dffcca0beea58cfabadd1df7b6853d",
+      "last_checked": "2025-06-06T02:45:20.030010",
+      "status": "unchanged",
+      "etag": "W/\"71e0ba2def18f5fa76b85a26767df8b7\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/!=(_:_:)": {
+      "hash": "fb693909f86d491d7765335bca04de5ae0dffcca0beea58cfabadd1df7b6853d",
+      "last_checked": "2025-06-06T02:45:20.030010",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/init(from:).json": {
+      "hash": "f6026ac920c78b1ee5f10c3d06e3a3dbf5e3c0240f9434bcd0001c064a7e31c5",
+      "last_checked": "2025-06-06T02:45:20.512027",
+      "status": "unchanged",
+      "etag": "W/\"4cb74e88b890f4588626c2dcd68441ba\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/init(from:)": {
+      "hash": "f6026ac920c78b1ee5f10c3d06e3a3dbf5e3c0240f9434bcd0001c064a7e31c5",
+      "last_checked": "2025-06-06T02:45:20.512027",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/hashvalue.json": {
+      "hash": "6c416622a47a88b7b6a5cce955ca9c9e4c3965b16490de10b1fa0e4f5e4e3b04",
+      "last_checked": "2025-06-06T02:45:20.924460",
+      "status": "unchanged",
+      "etag": "W/\"42f5dc91d78e067e3083de679e177be9\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/hashvalue": {
+      "hash": "6c416622a47a88b7b6a5cce955ca9c9e4c3965b16490de10b1fa0e4f5e4e3b04",
+      "last_checked": "2025-06-06T02:45:20.924460",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/encode(to:).json": {
+      "hash": "460810983a84aba797597a1ad0e9bf6d4bce42a30de2999d2867299b68c87c76",
+      "last_checked": "2025-06-06T02:45:21.332561",
+      "status": "unchanged",
+      "etag": "W/\"1cf36686f00d0cf6bdd521a5ffa429a4\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/encode(to:)": {
+      "hash": "460810983a84aba797597a1ad0e9bf6d4bce42a30de2999d2867299b68c87c76",
+      "last_checked": "2025-06-06T02:45:21.332561",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappconfigurationdecodingerrorcode/hash(into:).json": {
+      "hash": "9889e45a4eeeff9d3078db15dda5a0118de63c2f553f9ea9159a586dcc6c3807",
+      "last_checked": "2025-06-06T02:45:23.122724",
+      "status": "unchanged",
+      "etag": "W/\"619cd0f2f63635591facc8ae806c65e7\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappconfigurationdecodingerrorcode/hash(into:)": {
+      "hash": "9889e45a4eeeff9d3078db15dda5a0118de63c2f553f9ea9159a586dcc6c3807",
+      "last_checked": "2025-06-06T02:45:23.122724",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/ManagedApp/specifying-and-decoding-a-configuration.json": {
+      "hash": "3002b03a71fbc44d2378f3e2b66f469e4b270fac4b29d1a706034aad6b701df5",
+      "last_checked": "2025-06-06T19:40:40.290952",
+      "status": "new",
+      "etag": "W/\"7aed33117636bdfc40524ccadbb1d803\""
+    },
+    "https://developer.apple.com/documentation/ManagedApp/specifying-and-decoding-a-configuration": {
+      "hash": "0b136625d46daa7d7cf3ba9e699af63e358b60501d215742c989c4b16689f2bd",
+      "last_checked": "2025-06-06T19:40:40.291261",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/documentation/ManagedApp/managedapppasswordsprovider/password-withidentifier": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:41:27.251672",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapppasswordsprovider/password-withidentifier.json": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:41:27.251672",
+      "status": "error"
+    },
+    "https://developer.apple.com/documentation/ManagedApp/managedappidentitiesprovider/identity-withidentifier": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:41:28.942227",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappidentitiesprovider/identity-withidentifier.json": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:41:28.942227",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedapppasswordsprovider/password(withidentifier:).json": {
+      "hash": "e9e7e7f5c33a32a45212a60f3a26da14a84519f12b0338c593992e9b6ef5e270",
+      "last_checked": "2025-06-06T20:48:45.048122",
+      "status": "unchanged",
+      "etag": "W/\"2e83c501aab80a60e24440f5e384e55e\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedapppasswordsprovider/password(withidentifier:)": {
+      "hash": "e9e7e7f5c33a32a45212a60f3a26da14a84519f12b0338c593992e9b6ef5e270",
+      "last_checked": "2025-06-06T20:48:45.048122",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappidentitiesprovider/identity(withidentifier:).json": {
+      "hash": "ff2b7b2e00a256dabf300a589c91438d6584dd993da572e661427c5f38f48f65",
+      "last_checked": "2025-06-06T20:48:45.580183",
+      "status": "unchanged",
+      "etag": "W/\"0687a7f20b20ad96644c7f6ad6ff438c\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappidentitiesprovider/identity(withidentifier:)": {
+      "hash": "ff2b7b2e00a256dabf300a589c91438d6584dd993da572e661427c5f38f48f65",
+      "last_checked": "2025-06-06T20:48:45.580183",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/managedapp/managedappcertificatesprovider/certificate(withidentifier:).json": {
+      "hash": "9d074b7234f9226d6265432556759be024a6b6ded7163c19e458219c71d6dfda",
+      "last_checked": "2025-06-06T20:48:46.306419",
+      "status": "unchanged",
+      "etag": "W/\"a161d84b7e3d04980c5ce54d3cf6fed6\""
+    },
+    "https://developer.apple.com/documentation/managedapp/managedappcertificatesprovider/certificate(withidentifier:)": {
+      "hash": "9d074b7234f9226d6265432556759be024a6b6ded7163c19e458219c71d6dfda",
+      "last_checked": "2025-06-06T20:48:46.306419",
+      "status": "unchanged"
+    }
+  }
+}

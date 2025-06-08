@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T17:06:45.780060",
+    "total_pages": 43,
+    "etags_collected": "2025-06-07T17:06:45.780073"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/RosterAPI.json": {
+      "hash": "b5f08699ab56ef1a3a8ce77db307032d505b004aae77c4b77af2183012210fe5",
+      "last_checked": "2025-06-06T07:10:23.066243",
+      "status": "new",
+      "etag": "W/\"3b57f35da3bcaabbacc6205857ef42ef\""
+    },
+    "https://developer.apple.com/documentation/RosterAPI": {
+      "hash": "fad1521be323142350b1274918b8a90c706d4f3c71b46c4e805a2a649a4adc29",
+      "last_checked": "2025-06-06T07:10:23.066540",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi.json": {
+      "hash": "fad1521be323142350b1274918b8a90c706d4f3c71b46c4e805a2a649a4adc29",
+      "last_checked": "2025-06-06T07:10:23.066540",
+      "status": "unchanged",
+      "etag": "W/\"3b57f35da3bcaabbacc6205857ef42ef\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/obtaining-information-about-people-and-classes.json": {
+      "hash": "40e4c6552591c93952fc312ec5cd56e9eb7da618d3f16b132f84a9c45bf3f478",
+      "last_checked": "2025-06-06T07:10:25.388130",
+      "status": "unchanged",
+      "etag": "W/\"7a8ad198bff2c72fb9ed857801a5aec4\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/obtaining-information-about-people-and-classes": {
+      "hash": "40e4c6552591c93952fc312ec5cd56e9eb7da618d3f16b132f84a9c45bf3f478",
+      "last_checked": "2025-06-06T07:10:25.388130",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/validating-with-the-roster-api-test-scope.json": {
+      "hash": "8cad25f0ac8598137577e0c56392203b1efc88769eecbc251c7796ab67ab68f5",
+      "last_checked": "2025-06-06T07:10:26.621545",
+      "status": "unchanged",
+      "etag": "W/\"2e5a684d4fbf6bd86a485356dc46f8ba\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/validating-with-the-roster-api-test-scope": {
+      "hash": "8cad25f0ac8598137577e0c56392203b1efc88769eecbc251c7796ab67ab68f5",
+      "last_checked": "2025-06-06T07:10:26.621545",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/integrating-with-roster-api-and-sign-in-with-apple.json": {
+      "hash": "660cba9ab64c3079d56bc6e02ceb8b7b6278f3425ad0e22acae79853407c921a",
+      "last_checked": "2025-06-06T07:10:27.744766",
+      "status": "unchanged",
+      "etag": "W/\"5ee643677cd64ad5ef0bf7f0c2436e5d\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/integrating-with-roster-api-and-sign-in-with-apple": {
+      "hash": "660cba9ab64c3079d56bc6e02ceb8b7b6278f3425ad0e22acae79853407c921a",
+      "last_checked": "2025-06-06T07:10:27.744766",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/returns-a-specific-user-in-an-apple-school-manager-organization.json": {
+      "hash": "1f0d552f91e7a8ac20b140255cd3e70ca801723eda55f3bc7afd289ae5e39513",
+      "last_checked": "2025-06-06T07:10:29.048073",
+      "status": "unchanged",
+      "etag": "W/\"612b46c0d86df5436ad5808bf75d325c\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/returns-a-specific-user-in-an-apple-school-manager-organization": {
+      "hash": "1f0d552f91e7a8ac20b140255cd3e70ca801723eda55f3bc7afd289ae5e39513",
+      "last_checked": "2025-06-06T07:10:29.048073",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/user.json": {
+      "hash": "1e6dac8e03cdea3836b716055cdd54ad725850e66859524b49607a25f098e4bb",
+      "last_checked": "2025-06-06T07:10:30.326298",
+      "status": "unchanged",
+      "etag": "W/\"5d75d12b497a4d5a81b35f3cc388bc8f\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/user": {
+      "hash": "1e6dac8e03cdea3836b716055cdd54ad725850e66859524b49607a25f098e4bb",
+      "last_checked": "2025-06-06T07:10:30.326298",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/rolelocation.json": {
+      "hash": "ac2a3abb18e0f9a96ac3bfa2a94b1e0abe73bb9edf949250a192266a6d73eaac",
+      "last_checked": "2025-06-06T07:10:31.645959",
+      "status": "unchanged",
+      "etag": "W/\"7c57d222aad5cd5dded85c2945f8432e\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/rolelocation": {
+      "hash": "ac2a3abb18e0f9a96ac3bfa2a94b1e0abe73bb9edf949250a192266a6d73eaac",
+      "last_checked": "2025-06-06T07:10:31.645959",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/returns-a-list-of-users-in-an-apple-school-manager-organization.json": {
+      "hash": "048ab49a681f416ab344b23924d7f6f92072dbdf15e77d3bd6f06ecb7884010f",
+      "last_checked": "2025-06-06T07:10:32.657735",
+      "status": "unchanged",
+      "etag": "W/\"7c32ec715c3e65ea654e1c644edcf3b5\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/returns-a-list-of-users-in-an-apple-school-manager-organization": {
+      "hash": "048ab49a681f416ab344b23924d7f6f92072dbdf15e77d3bd6f06ecb7884010f",
+      "last_checked": "2025-06-06T07:10:32.657735",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/returns-a-users-for-an-apple-school-manager-class.json": {
+      "hash": "7d3f7b25105bb474fa209c3f9da8ca2b188804e34b69a2ce74ef970a64fc436f",
+      "last_checked": "2025-06-06T07:10:33.760682",
+      "status": "unchanged",
+      "etag": "W/\"5b5ae94925d2ff1cc6ebac2f8fd69824\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/returns-a-users-for-an-apple-school-manager-class": {
+      "hash": "7d3f7b25105bb474fa209c3f9da8ca2b188804e34b69a2ce74ef970a64fc436f",
+      "last_checked": "2025-06-06T07:10:33.760682",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/users.json": {
+      "hash": "223966bbec233b0a60937dc50c85c7f13c1fe84b14cfbeb273450e47dd3cc4af",
+      "last_checked": "2025-06-06T07:10:35.042754",
+      "status": "unchanged",
+      "etag": "W/\"2d84b40334dccce21031589494fa0a2d\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/users": {
+      "hash": "223966bbec233b0a60937dc50c85c7f13c1fe84b14cfbeb273450e47dd3cc4af",
+      "last_checked": "2025-06-06T07:10:35.042754",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/returns-a-specific-class-in-an-apple-school-manager-organization..json": {
+      "hash": "95b9ca59c8aa0e6833d7e55b106a0c529e01825ea130e5a5df59a1b4629c557d",
+      "last_checked": "2025-06-06T07:10:36.291283",
+      "status": "unchanged",
+      "etag": "W/\"c2be972b97279afaa2288cf7b6ea10b0\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/returns-a-specific-class-in-an-apple-school-manager-organization.": {
+      "hash": "95b9ca59c8aa0e6833d7e55b106a0c529e01825ea130e5a5df59a1b4629c557d",
+      "last_checked": "2025-06-06T07:10:36.291283",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/class.json": {
+      "hash": "ae42375c7cb24c8883df87a03a49cc0537b3a578d86ac3d09b23ae5f0af70c93",
+      "last_checked": "2025-06-06T07:10:37.346161",
+      "status": "unchanged",
+      "etag": "W/\"6e86beadf34a94df9da9f4164881b0fc\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/class": {
+      "hash": "ae42375c7cb24c8883df87a03a49cc0537b3a578d86ac3d09b23ae5f0af70c93",
+      "last_checked": "2025-06-06T07:10:37.346161",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/returns-a-list-of-classes-for-an-apple-school-manager-organization.json": {
+      "hash": "1a7ffe63a914e87b009b5e6f465ff8aeea70f24894119639cfaa3d6544844828",
+      "last_checked": "2025-06-06T07:10:38.657482",
+      "status": "unchanged",
+      "etag": "W/\"db4493dea50aa6263e29cfb2e4ed8d07\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/returns-a-list-of-classes-for-an-apple-school-manager-organization": {
+      "hash": "1a7ffe63a914e87b009b5e6f465ff8aeea70f24894119639cfaa3d6544844828",
+      "last_checked": "2025-06-06T07:10:38.657482",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/classes.json": {
+      "hash": "6db4c9ebe7faedefbef5631b2bcdd1867fa59860fe10aebb598e3085ca90e09b",
+      "last_checked": "2025-06-06T07:10:39.954440",
+      "status": "unchanged",
+      "etag": "W/\"ea02991d7cb591b8dea8054a6168bad9\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/classes": {
+      "hash": "6db4c9ebe7faedefbef5631b2bcdd1867fa59860fe10aebb598e3085ca90e09b",
+      "last_checked": "2025-06-06T07:10:39.954440",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/returns-a-specific-location-in-an-apple-school-manager-organization.json": {
+      "hash": "d3bb0dfbcd8711b184313df69d65b69e60f58f83a5dc3f856b2191990805dc46",
+      "last_checked": "2025-06-06T07:10:41.226787",
+      "status": "unchanged",
+      "etag": "W/\"b84b713b3ab7b30d82eec1382c043d37\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/returns-a-specific-location-in-an-apple-school-manager-organization": {
+      "hash": "d3bb0dfbcd8711b184313df69d65b69e60f58f83a5dc3f856b2191990805dc46",
+      "last_checked": "2025-06-06T07:10:41.226787",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/location.json": {
+      "hash": "e75e40e1e34a6e922798742e2c9a02b422927612103ce2f413ec9c449c81870f",
+      "last_checked": "2025-06-06T07:10:42.676728",
+      "status": "unchanged",
+      "etag": "W/\"85ea5f9fef2f16c823c4456b0a5c6ea2\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/location": {
+      "hash": "e75e40e1e34a6e922798742e2c9a02b422927612103ce2f413ec9c449c81870f",
+      "last_checked": "2025-06-06T07:10:42.676728",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/returns-a-list-of-locations-for-an-apple-school-manager-organization.json": {
+      "hash": "90c72ec636440b2d6be19464c900b3ddacb387ffa3351ae6bc115eee1124e24c",
+      "last_checked": "2025-06-06T07:10:43.858111",
+      "status": "unchanged",
+      "etag": "W/\"9a9b6b0e263d8eaeb2bd53ffe648c2e1\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/returns-a-list-of-locations-for-an-apple-school-manager-organization": {
+      "hash": "90c72ec636440b2d6be19464c900b3ddacb387ffa3351ae6bc115eee1124e24c",
+      "last_checked": "2025-06-06T07:10:43.858111",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/locations.json": {
+      "hash": "91dcd66bd1e1ce9cd205d1ed32a09b925b33ec053af6550d72681d2a310139f3",
+      "last_checked": "2025-06-06T07:10:44.766757",
+      "status": "unchanged",
+      "etag": "W/\"fca32a225d69fd8cc54ba4fec3abc351\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/locations": {
+      "hash": "91dcd66bd1e1ce9cd205d1ed32a09b925b33ec053af6550d72681d2a310139f3",
+      "last_checked": "2025-06-06T07:10:44.766757",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/returns-organization-infrmation.json": {
+      "hash": "3dcf0c68c40fc75a05ed5e32304a6342915e6492b5259e626522fec1f8e0ba9b",
+      "last_checked": "2025-06-06T07:10:45.798016",
+      "status": "unchanged",
+      "etag": "W/\"a05090ad85afe9065f549f6fb51fd104\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/returns-organization-infrmation": {
+      "hash": "3dcf0c68c40fc75a05ed5e32304a6342915e6492b5259e626522fec1f8e0ba9b",
+      "last_checked": "2025-06-06T07:10:45.798016",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/organization.json": {
+      "hash": "a8f07997fe37c2b239604344b6d287581a3f76a5a82bd949b63cf9a1b8c6f8c0",
+      "last_checked": "2025-06-06T07:10:47.043821",
+      "status": "unchanged",
+      "etag": "W/\"075143ef809ffb496f33631cc2c8b4f0\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/organization": {
+      "hash": "a8f07997fe37c2b239604344b6d287581a3f76a5a82bd949b63cf9a1b8c6f8c0",
+      "last_checked": "2025-06-06T07:10:47.043821",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/rosterapi/domain.json": {
+      "hash": "0c47b859e3c5f0d5483931a2f087fe267ff6b6fe389beaceb1ce2889631e496e",
+      "last_checked": "2025-06-06T07:10:47.915474",
+      "status": "unchanged",
+      "etag": "W/\"1a0a2e18952ba8d0d24c61605a693801\""
+    },
+    "https://developer.apple.com/documentation/rosterapi/domain": {
+      "hash": "0c47b859e3c5f0d5483931a2f087fe267ff6b6fe389beaceb1ce2889631e496e",
+      "last_checked": "2025-06-06T07:10:47.915474",
+      "status": "unchanged"
+    }
+  }
+}

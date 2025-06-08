@@ -15,8 +15,6 @@ Use the Core Media I/O framework to enable support for custom camera devices in 
 
 > ❗ **Important**: Apple recommends replacing legacy Device Abstraction Layer (DAL) plug-ins with Core Media I/O extensions.
 
-Apple recommends replacing legacy Device Abstraction Layer (DAL) plug-ins with Core Media I/O extensions.
-
 ## Topics
 
 ### Providers

@@ -1,4 +1,4 @@
-Completed scraping Walletorders!
-Total pages scraped: 31
-Pages skipped (unchanged): 1
+Completed scraping Wallet Orders!
+Total pages scraped: 0
+Pages skipped (unchanged): 2
 Pages failed: 0

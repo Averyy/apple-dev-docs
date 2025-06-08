@@ -20,8 +20,6 @@ Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain key
 
 > ❗ **Important**:  Changes you make using the App Store Connect API affect the production data you use for development and distribution.
 
- Changes you make using the App Store Connect API affect the production data you use for development and distribution.
-
 The API provides resources to automate the following areas of App Store Connect:
 
 -  Manage in-app purchases and auto-renewable subscriptions for your app.

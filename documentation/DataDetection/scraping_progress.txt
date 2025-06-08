@@ -1,4 +1,4 @@
 Completed scraping DataDetection!
-Total pages scraped: 32
+Total pages scraped: 1
 Pages skipped (unchanged): 1
 Pages failed: 0

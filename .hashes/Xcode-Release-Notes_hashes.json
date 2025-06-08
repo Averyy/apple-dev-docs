@@ -1,0 +1,631 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T17:57:27.545914",
+    "total_pages": 113,
+    "etags_collected": "2025-06-07T17:57:27.545930"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/Xcode-Release-Notes.json": {
+      "hash": "7540f124382d18e942cf52c68e4c87408a08333805e5f2fae238e11ec5ccf061",
+      "last_checked": "2025-06-06T15:55:02.528860",
+      "status": "new",
+      "etag": "W/\"57a11f0e202ffe41eee19f5f90615a97\""
+    },
+    "https://developer.apple.com/documentation/Xcode-Release-Notes": {
+      "hash": "3ab3296526622e8c974d9c8ff3786152340fab33c3c0de9c2e08d3d54cac8321",
+      "last_checked": "2025-06-06T15:55:02.529001",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes.json": {
+      "hash": "3ab3296526622e8c974d9c8ff3786152340fab33c3c0de9c2e08d3d54cac8321",
+      "last_checked": "2025-06-06T15:55:02.529001",
+      "status": "unchanged",
+      "etag": "W/\"57a11f0e202ffe41eee19f5f90615a97\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-16_4-release-notes.json": {
+      "hash": "d1d644ca494b65c613b5f158891aa212864b896a502947ff5c5f1ab441f50aa1",
+      "last_checked": "2025-06-06T15:55:03.341283",
+      "status": "unchanged",
+      "etag": "W/\"905a0dbc2b36f00ad044c10a8238530e\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-16_4-release-notes": {
+      "hash": "d1d644ca494b65c613b5f158891aa212864b896a502947ff5c5f1ab441f50aa1",
+      "last_checked": "2025-06-06T15:55:03.341283",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-16_3-release-notes.json": {
+      "hash": "cab18c7bef010692468bed76f1cbe7e9ae25139a7cc1f9dd92068d97daf2f730",
+      "last_checked": "2025-06-06T15:55:03.784693",
+      "status": "unchanged",
+      "etag": "W/\"c96bf99d040336b240472d54f34bb34c\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-16_3-release-notes": {
+      "hash": "cab18c7bef010692468bed76f1cbe7e9ae25139a7cc1f9dd92068d97daf2f730",
+      "last_checked": "2025-06-06T15:55:03.784693",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-16_2-release-notes.json": {
+      "hash": "5a6316455445f74a76af88e0f979f9ac91541e09907877649b223d104c0414c0",
+      "last_checked": "2025-06-06T15:55:04.141689",
+      "status": "unchanged",
+      "etag": "W/\"947cb63752548562b848ecd39d3eae00\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-16_2-release-notes": {
+      "hash": "5a6316455445f74a76af88e0f979f9ac91541e09907877649b223d104c0414c0",
+      "last_checked": "2025-06-06T15:55:04.141689",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-16_1-release-notes.json": {
+      "hash": "06f7813531f0bf593485cafc4bb852b5e3400c47a496122776c0b139feca3e60",
+      "last_checked": "2025-06-06T15:55:04.524358",
+      "status": "unchanged",
+      "etag": "W/\"20cbaa66cbb1d2c90a313fee25b739ea\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-16_1-release-notes": {
+      "hash": "06f7813531f0bf593485cafc4bb852b5e3400c47a496122776c0b139feca3e60",
+      "last_checked": "2025-06-06T15:55:04.524358",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-16-release-notes.json": {
+      "hash": "157981fd65c6d7929e0ce4b86b081bfcd56bdb3fc32813ca42544c35fb8e2b62",
+      "last_checked": "2025-06-06T15:55:04.921898",
+      "status": "unchanged",
+      "etag": "W/\"ab506ef824196f4fb7d6007504999db5\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-16-release-notes": {
+      "hash": "157981fd65c6d7929e0ce4b86b081bfcd56bdb3fc32813ca42544c35fb8e2b62",
+      "last_checked": "2025-06-06T15:55:04.921898",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-15_4-release-notes.json": {
+      "hash": "e5e8ab9b2f0f9e51f11e4e64cf8b9da488a93cd4c915d113d27024a26b7f58e3",
+      "last_checked": "2025-06-06T15:55:05.269883",
+      "status": "unchanged",
+      "etag": "W/\"0af9b4f12d114468875e6b7dcc08b221\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-15_4-release-notes": {
+      "hash": "e5e8ab9b2f0f9e51f11e4e64cf8b9da488a93cd4c915d113d27024a26b7f58e3",
+      "last_checked": "2025-06-06T15:55:05.269883",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-15_3-release-notes.json": {
+      "hash": "c796d12bfff23c35736ffb0a0a4b2245731ac6c4cd43174cfb522363e373cac0",
+      "last_checked": "2025-06-06T15:55:05.738733",
+      "status": "unchanged",
+      "etag": "W/\"cf59bc088dce8c93f6b3466fcae0e002\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-15_3-release-notes": {
+      "hash": "c796d12bfff23c35736ffb0a0a4b2245731ac6c4cd43174cfb522363e373cac0",
+      "last_checked": "2025-06-06T15:55:05.738733",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-15_2-release-notes.json": {
+      "hash": "adb7fd4b289863e01da4021795482122098f416601ae4310871eea443ecb406d",
+      "last_checked": "2025-06-06T15:55:06.168402",
+      "status": "unchanged",
+      "etag": "W/\"4e1806c9f59124bcd14a24110436c227\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-15_2-release-notes": {
+      "hash": "adb7fd4b289863e01da4021795482122098f416601ae4310871eea443ecb406d",
+      "last_checked": "2025-06-06T15:55:06.168402",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-15_1-release-notes.json": {
+      "hash": "41bb08170d7c273d9d02d49c0410aae8210ade83a8c0611be376d8491ca599a7",
+      "last_checked": "2025-06-06T15:55:06.572544",
+      "status": "unchanged",
+      "etag": "W/\"464c5b7a08a03e36438501a3f243ff1d\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-15_1-release-notes": {
+      "hash": "41bb08170d7c273d9d02d49c0410aae8210ade83a8c0611be376d8491ca599a7",
+      "last_checked": "2025-06-06T15:55:06.572544",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-15_0_1-release-notes.json": {
+      "hash": "3873800d0005442a165c0a3824c38c80bdcba769d8d76766427d85effff3074a",
+      "last_checked": "2025-06-06T15:55:06.960085",
+      "status": "unchanged",
+      "etag": "W/\"30d2232c08f77767c509538df5d5d73b\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-15_0_1-release-notes": {
+      "hash": "3873800d0005442a165c0a3824c38c80bdcba769d8d76766427d85effff3074a",
+      "last_checked": "2025-06-06T15:55:06.960085",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-15-release-notes.json": {
+      "hash": "15d174ec7755e96727cfa8097a6f1934c1dd706fd4fb367c52eb79e142dbdd24",
+      "last_checked": "2025-06-06T15:55:07.379206",
+      "status": "unchanged",
+      "etag": "W/\"78a98f21f6c93db089d4f0653a0a09cc\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes": {
+      "hash": "15d174ec7755e96727cfa8097a6f1934c1dd706fd4fb367c52eb79e142dbdd24",
+      "last_checked": "2025-06-06T15:55:07.379206",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-14_3_1-release-notes.json": {
+      "hash": "3f0d511464cb5aa1144fecdb02d412827259f49800229d62088ed874c9d480f3",
+      "last_checked": "2025-06-06T15:55:07.798758",
+      "status": "unchanged",
+      "etag": "W/\"5658cc44b4e6731b696d8b834670f556\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3_1-release-notes": {
+      "hash": "3f0d511464cb5aa1144fecdb02d412827259f49800229d62088ed874c9d480f3",
+      "last_checked": "2025-06-06T15:55:07.798758",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-14_3-release-notes.json": {
+      "hash": "6a1e129260549b5f85c6a8cf15c57d5630901ea51faf5daa1f835d43f9a010bd",
+      "last_checked": "2025-06-06T15:55:08.196761",
+      "status": "unchanged",
+      "etag": "W/\"93bbfb9357c820f851102a22ecf82847\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3-release-notes": {
+      "hash": "6a1e129260549b5f85c6a8cf15c57d5630901ea51faf5daa1f835d43f9a010bd",
+      "last_checked": "2025-06-06T15:55:08.196761",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-14_2-release-notes.json": {
+      "hash": "ed9758e886288d4f2e3c8df68398500359a74bec59f17e57ae75b109d0b43042",
+      "last_checked": "2025-06-06T15:55:08.621934",
+      "status": "unchanged",
+      "etag": "W/\"a158096b67bdfef93b14dfad6cf44b76\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes": {
+      "hash": "ed9758e886288d4f2e3c8df68398500359a74bec59f17e57ae75b109d0b43042",
+      "last_checked": "2025-06-06T15:55:08.621934",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-14_1-release-notes.json": {
+      "hash": "244b37be368282342490dddaf06e7415f17c8a5b3b8c391dc4c755a943ab8177",
+      "last_checked": "2025-06-06T15:55:08.939289",
+      "status": "unchanged",
+      "etag": "W/\"dcd4a37b0b1d39a5ca8246efdce4c670\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes": {
+      "hash": "244b37be368282342490dddaf06e7415f17c8a5b3b8c391dc4c755a943ab8177",
+      "last_checked": "2025-06-06T15:55:08.939289",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-14_0_1-release-notes.json": {
+      "hash": "7b46d234c74a387c790eca602828ae04392435828b2dbf5d32466b1af86aa780",
+      "last_checked": "2025-06-06T15:55:09.468086",
+      "status": "unchanged",
+      "etag": "W/\"c9e632fadbefab31403994b33934a3f0\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_0_1-release-notes": {
+      "hash": "7b46d234c74a387c790eca602828ae04392435828b2dbf5d32466b1af86aa780",
+      "last_checked": "2025-06-06T15:55:09.468086",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-14-release-notes.json": {
+      "hash": "1c43c88b8365a0857f2aba849581587f1c3aeac87f524fd10b1e825bef417328",
+      "last_checked": "2025-06-06T15:55:09.886833",
+      "status": "unchanged",
+      "etag": "W/\"3c1fb2dcb612076b0c71195dc59a3769\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes": {
+      "hash": "1c43c88b8365a0857f2aba849581587f1c3aeac87f524fd10b1e825bef417328",
+      "last_checked": "2025-06-06T15:55:09.886833",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-13_4_1-release-notes.json": {
+      "hash": "f24b9726e2b129f221db5a62824ab35d8f2dda5ecdf11937e6f0b2bcde9f5022",
+      "last_checked": "2025-06-06T15:55:10.295995",
+      "status": "unchanged",
+      "etag": "W/\"ad59a91450f3cb4ee7f8d81e9f58f855\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4_1-release-notes": {
+      "hash": "f24b9726e2b129f221db5a62824ab35d8f2dda5ecdf11937e6f0b2bcde9f5022",
+      "last_checked": "2025-06-06T15:55:10.295995",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-13_4-release-notes.json": {
+      "hash": "0d0885ed2732d55caedef1434870de705c8241a90a5879e674adfecb471a53b3",
+      "last_checked": "2025-06-06T15:55:10.650001",
+      "status": "unchanged",
+      "etag": "W/\"2cc67ea8cda0612439e10feb13df835f\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes": {
+      "hash": "0d0885ed2732d55caedef1434870de705c8241a90a5879e674adfecb471a53b3",
+      "last_checked": "2025-06-06T15:55:10.650001",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-13_3_1-release-notes.json": {
+      "hash": "39800332d80f3dba455f79e8aee0b37f665365aba28ef91e168d551468ce7d37",
+      "last_checked": "2025-06-06T15:55:10.991880",
+      "status": "unchanged",
+      "etag": "W/\"78836c3c341a6afa365b5a3e37e3a609\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3_1-release-notes": {
+      "hash": "39800332d80f3dba455f79e8aee0b37f665365aba28ef91e168d551468ce7d37",
+      "last_checked": "2025-06-06T15:55:10.991880",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-13_3-release-notes.json": {
+      "hash": "461307e1f30e4f35f50b36ba8c21b985b833cb4067dd09764badfb3f10893881",
+      "last_checked": "2025-06-06T15:55:11.398405",
+      "status": "unchanged",
+      "etag": "W/\"67c3bee7b5cc0814f66bf50310ec996a\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes": {
+      "hash": "461307e1f30e4f35f50b36ba8c21b985b833cb4067dd09764badfb3f10893881",
+      "last_checked": "2025-06-06T15:55:11.398405",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-13_2_1-release-notes.json": {
+      "hash": "ad345d945f0133c77df83c1140ca47866b80ce1c2a390f26e44c28d0c5c766e0",
+      "last_checked": "2025-06-06T15:55:11.822080",
+      "status": "unchanged",
+      "etag": "W/\"83eb06a51adeb11408d41afbfdb40464\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2_1-release-notes": {
+      "hash": "ad345d945f0133c77df83c1140ca47866b80ce1c2a390f26e44c28d0c5c766e0",
+      "last_checked": "2025-06-06T15:55:11.822080",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-13_2-release-notes.json": {
+      "hash": "92d12fe6e12b9fe3a4dcde8e49f5d0a11c8dc6f9979eaac06f2d705c919e8d6e",
+      "last_checked": "2025-06-06T15:55:12.183928",
+      "status": "unchanged",
+      "etag": "W/\"faef065a1c8a384a34b480191be2af29\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes": {
+      "hash": "92d12fe6e12b9fe3a4dcde8e49f5d0a11c8dc6f9979eaac06f2d705c919e8d6e",
+      "last_checked": "2025-06-06T15:55:12.183928",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-13_1-release-notes.json": {
+      "hash": "6a3e362f70e5437e5d9d13a3bdf31b0591eefa5e311de18c4abb88b09d5e1e9f",
+      "last_checked": "2025-06-06T15:55:12.587054",
+      "status": "unchanged",
+      "etag": "W/\"2521d28116796526a705defb2d4d2472\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_1-release-notes": {
+      "hash": "6a3e362f70e5437e5d9d13a3bdf31b0591eefa5e311de18c4abb88b09d5e1e9f",
+      "last_checked": "2025-06-06T15:55:12.587054",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-13-release-notes.json": {
+      "hash": "1568bca4465eb07e0128e691d0d3fea602cc422bf9099c6651aa457c6abcd84e",
+      "last_checked": "2025-06-06T15:55:12.994242",
+      "status": "unchanged",
+      "etag": "W/\"eb37bc988901d3034c06fb3385a9af42\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes": {
+      "hash": "1568bca4465eb07e0128e691d0d3fea602cc422bf9099c6651aa457c6abcd84e",
+      "last_checked": "2025-06-06T15:55:12.994242",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12_5_1-release-notes.json": {
+      "hash": "3ec0b79fbba28d487f8ee79efebe2204daa1a1d7f3a0df0f2aa9b980c12cf3db",
+      "last_checked": "2025-06-06T15:55:13.377496",
+      "status": "unchanged",
+      "etag": "W/\"c6096b78fbb52c4595618ae2dca00eb4\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5_1-release-notes": {
+      "hash": "3ec0b79fbba28d487f8ee79efebe2204daa1a1d7f3a0df0f2aa9b980c12cf3db",
+      "last_checked": "2025-06-06T15:55:13.377496",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12_5-release-notes.json": {
+      "hash": "e3f5806b8a3a803ef53c27b4047748d3ba64ee58bc128ab14df9646a063434a5",
+      "last_checked": "2025-06-06T15:55:13.782099",
+      "status": "unchanged",
+      "etag": "W/\"594d8843fe711903327d298bda08dad5\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-release-notes": {
+      "hash": "e3f5806b8a3a803ef53c27b4047748d3ba64ee58bc128ab14df9646a063434a5",
+      "last_checked": "2025-06-06T15:55:13.782099",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12_4-release-notes.json": {
+      "hash": "e448e8d100eb9322f142e6ce3becca242105bb10702a12a48948278fe621ff6a",
+      "last_checked": "2025-06-06T15:55:14.119197",
+      "status": "unchanged",
+      "etag": "W/\"07327c614f6a66edb0b709d74dbd1d7d\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_4-release-notes": {
+      "hash": "e448e8d100eb9322f142e6ce3becca242105bb10702a12a48948278fe621ff6a",
+      "last_checked": "2025-06-06T15:55:14.119197",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12_3-release-notes.json": {
+      "hash": "b6b9eedf13183167896fc4cf887bf4daf1a17a2c80c5605432f2fa8eafd5edb5",
+      "last_checked": "2025-06-06T15:55:14.510137",
+      "status": "unchanged",
+      "etag": "W/\"f280ec0aa045e8ccb9332e4728dcf81b\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_3-release-notes": {
+      "hash": "b6b9eedf13183167896fc4cf887bf4daf1a17a2c80c5605432f2fa8eafd5edb5",
+      "last_checked": "2025-06-06T15:55:14.510137",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12_2-release-notes.json": {
+      "hash": "b85588dbde28029deb50f403376779ab040cb246f5039a66deef076329ca1383",
+      "last_checked": "2025-06-06T15:55:14.937137",
+      "status": "unchanged",
+      "etag": "W/\"266570f852e4c36cc57359f625b8c861\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_2-release-notes": {
+      "hash": "b85588dbde28029deb50f403376779ab040cb246f5039a66deef076329ca1383",
+      "last_checked": "2025-06-06T15:55:14.937137",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12_1-release-notes.json": {
+      "hash": "a1250891cd74e426588888c7ebbe3c57e54037824b291dfb73a6c0def83f2c01",
+      "last_checked": "2025-06-06T15:55:15.299065",
+      "status": "unchanged",
+      "etag": "W/\"867f40fd1b254103a4345283b75b825a\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_1-release-notes": {
+      "hash": "a1250891cd74e426588888c7ebbe3c57e54037824b291dfb73a6c0def83f2c01",
+      "last_checked": "2025-06-06T15:55:15.299065",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12_0_1-release-notes.json": {
+      "hash": "862a43dba7b9d80a76888c47619de629bc26e88a447b8b6aeb6c86a630d83965",
+      "last_checked": "2025-06-06T15:55:15.709544",
+      "status": "unchanged",
+      "etag": "W/\"050cfc5a777692e133fa8df566546751\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_0_1-release-notes": {
+      "hash": "862a43dba7b9d80a76888c47619de629bc26e88a447b8b6aeb6c86a630d83965",
+      "last_checked": "2025-06-06T15:55:15.709544",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-12-release-notes.json": {
+      "hash": "0db04457fcf47f2212617946cc0efd747a070e0be8dd9bea60f3c547dd796636",
+      "last_checked": "2025-06-06T15:55:16.118308",
+      "status": "unchanged",
+      "etag": "W/\"ed66b69e6fdb001b39be80352a7aa4fe\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-release-notes": {
+      "hash": "0db04457fcf47f2212617946cc0efd747a070e0be8dd9bea60f3c547dd796636",
+      "last_checked": "2025-06-06T15:55:16.118308",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11_7-release-notes.json": {
+      "hash": "5e7a0c7ebe148c0e41bc8a6386227245d2cf9a240754907dc51caa343469d5b1",
+      "last_checked": "2025-06-06T15:55:16.473804",
+      "status": "unchanged",
+      "etag": "W/\"2c556d8fc576ddaf1c7e749c1b2ea042\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_7-release-notes": {
+      "hash": "5e7a0c7ebe148c0e41bc8a6386227245d2cf9a240754907dc51caa343469d5b1",
+      "last_checked": "2025-06-06T15:55:16.473804",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11_6-release-notes.json": {
+      "hash": "f7b59b0ed2a54f1d00a1eecae7c83a956565899fe2157a5dc67b35b68ad0c093",
+      "last_checked": "2025-06-06T15:55:16.862071",
+      "status": "unchanged",
+      "etag": "W/\"05f8b41ca62d09f71e6fbd345fe03235\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_6-release-notes": {
+      "hash": "f7b59b0ed2a54f1d00a1eecae7c83a956565899fe2157a5dc67b35b68ad0c093",
+      "last_checked": "2025-06-06T15:55:16.862071",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11_5-release-notes.json": {
+      "hash": "007af92b1e3d52b302033b8c042468ba17b9ec2c2e9f7c4d330660becef120dc",
+      "last_checked": "2025-06-06T15:55:17.459324",
+      "status": "unchanged",
+      "etag": "W/\"833a3d411045a2d761e3edd9c6518d84\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_5-release-notes": {
+      "hash": "007af92b1e3d52b302033b8c042468ba17b9ec2c2e9f7c4d330660becef120dc",
+      "last_checked": "2025-06-06T15:55:17.459324",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11_4_1-release-notes.json": {
+      "hash": "ece8d2858c8d7fdf03fecc0a699e9c6dc0835181548f7de357d29c5b00b48a4f",
+      "last_checked": "2025-06-06T15:55:17.858669",
+      "status": "unchanged",
+      "etag": "W/\"4c7f32cad3dc0d448c52b110460d7c0f\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_4_1-release-notes": {
+      "hash": "ece8d2858c8d7fdf03fecc0a699e9c6dc0835181548f7de357d29c5b00b48a4f",
+      "last_checked": "2025-06-06T15:55:17.858669",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11_4-release-notes.json": {
+      "hash": "8cb7a19d4c3d93d70ce8bdb97ddd11b9ec1def9d1db7f8ec6cfd0c351656b581",
+      "last_checked": "2025-06-06T15:55:18.250362",
+      "status": "unchanged",
+      "etag": "W/\"60e50aae17b873ce7ef4ea7cb8012b70\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_4-release-notes": {
+      "hash": "8cb7a19d4c3d93d70ce8bdb97ddd11b9ec1def9d1db7f8ec6cfd0c351656b581",
+      "last_checked": "2025-06-06T15:55:18.250362",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11_3_1-release-notes.json": {
+      "hash": "f6edeb04a89750258a04306ef897c1d22afe7c9ffa0b5c5baf4cde8020bfbb64",
+      "last_checked": "2025-06-06T15:55:18.644054",
+      "status": "unchanged",
+      "etag": "W/\"8bb0d47ed93292de8a82ca649b5ee7c0\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_3_1-release-notes": {
+      "hash": "f6edeb04a89750258a04306ef897c1d22afe7c9ffa0b5c5baf4cde8020bfbb64",
+      "last_checked": "2025-06-06T15:55:18.644054",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11_3-release-notes.json": {
+      "hash": "bdabe567408eeee5444caabfb65e422c1421e4a5e801131343349c9210f325d0",
+      "last_checked": "2025-06-06T15:55:19.018555",
+      "status": "unchanged",
+      "etag": "W/\"6f38a203c6e739ebbc09f7c924e0cd5b\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_3-release-notes": {
+      "hash": "bdabe567408eeee5444caabfb65e422c1421e4a5e801131343349c9210f325d0",
+      "last_checked": "2025-06-06T15:55:19.018555",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11_2_1-release-notes.json": {
+      "hash": "202c6875bad0d60ccfa245f0f2a9ffbad3d6e467364b272c065d6df8b05d4a76",
+      "last_checked": "2025-06-06T15:55:19.405291",
+      "status": "unchanged",
+      "etag": "W/\"e2328bf9117d44e994efc18a7b855317\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_2_1-release-notes": {
+      "hash": "202c6875bad0d60ccfa245f0f2a9ffbad3d6e467364b272c065d6df8b05d4a76",
+      "last_checked": "2025-06-06T15:55:19.405291",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11_2-release-notes.json": {
+      "hash": "169ffda3043b91670be2af2949ae23df81673ca72353162afcff54e594490d92",
+      "last_checked": "2025-06-06T15:55:19.781899",
+      "status": "unchanged",
+      "etag": "W/\"d56ed988c10e4f810876a6636282f73a\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_2-release-notes": {
+      "hash": "169ffda3043b91670be2af2949ae23df81673ca72353162afcff54e594490d92",
+      "last_checked": "2025-06-06T15:55:19.781899",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11_1-release-notes.json": {
+      "hash": "41a24dd3b9e487bbfecf0138773bef6611e3b972f5de51415aff47428f115250",
+      "last_checked": "2025-06-06T15:55:20.185649",
+      "status": "unchanged",
+      "etag": "W/\"11b0eab08e79495d7270c4dff5c7dbad\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_1-release-notes": {
+      "hash": "41a24dd3b9e487bbfecf0138773bef6611e3b972f5de51415aff47428f115250",
+      "last_checked": "2025-06-06T15:55:20.185649",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-11-release-notes.json": {
+      "hash": "8a09c7049e070ac478babe01412467e6a3ccddf4bba6918c3e663950b9b97350",
+      "last_checked": "2025-06-06T19:39:49.806539",
+      "status": "unchanged",
+      "etag": "W/\"2a1b1ae2c708ed45b780d3502b54fedc\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-11-release-notes": {
+      "hash": "cd1d5b37b9109ce0a8ed80f735f3ae1abcd70e7dd6562743884e32486d3fc0bf",
+      "last_checked": "2025-06-06T15:55:20.649160",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-10_3-release-notes.json": {
+      "hash": "a9177e095596ffe68fa5334c952dd6d483a5fcc5c7a7915ee91d709e5fbc188d",
+      "last_checked": "2025-06-06T15:55:21.013593",
+      "status": "unchanged",
+      "etag": "W/\"e52bd8538246f2376b7a32def88c84a5\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-10_3-release-notes": {
+      "hash": "a9177e095596ffe68fa5334c952dd6d483a5fcc5c7a7915ee91d709e5fbc188d",
+      "last_checked": "2025-06-06T15:55:21.013593",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-10_2_1-release-notes.json": {
+      "hash": "f7b4b37a322b64c727532e76aec9152ead2febeae636787b0fe4214bce07c361",
+      "last_checked": "2025-06-06T15:55:21.398166",
+      "status": "unchanged",
+      "etag": "W/\"b14367fa687772182daef2f06ed0f343\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-10_2_1-release-notes": {
+      "hash": "f7b4b37a322b64c727532e76aec9152ead2febeae636787b0fe4214bce07c361",
+      "last_checked": "2025-06-06T15:55:21.398166",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-10_2-release-notes.json": {
+      "hash": "f8a10c13ceab18ede5cf16724674a82e9e7b2a6cb312966ff9ac19fbdbb9c1f7",
+      "last_checked": "2025-06-06T15:55:22.429943",
+      "status": "unchanged",
+      "etag": "W/\"8a75fff0490ff7b0484512b366110e47\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-10_2-release-notes": {
+      "hash": "f8a10c13ceab18ede5cf16724674a82e9e7b2a6cb312966ff9ac19fbdbb9c1f7",
+      "last_checked": "2025-06-06T15:55:22.429943",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-10_1-release-notes.json": {
+      "hash": "63e44fd5d7be1cbcadfbaff7b31929643401d48fb572e01b285533d93d3c8184",
+      "last_checked": "2025-06-06T15:55:22.820279",
+      "status": "unchanged",
+      "etag": "W/\"9216683595e4da75d6b2ca9dfb0d5cc2\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-10_1-release-notes": {
+      "hash": "63e44fd5d7be1cbcadfbaff7b31929643401d48fb572e01b285533d93d3c8184",
+      "last_checked": "2025-06-06T15:55:22.820279",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-10-release-notes.json": {
+      "hash": "f32b35677e12bd8b4825bc5a8328afa0914028f4ba2aa20493cb1f2740f38aca",
+      "last_checked": "2025-06-06T15:55:23.238173",
+      "status": "unchanged",
+      "etag": "W/\"531e240d005f7a00da5710da8d251027\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes": {
+      "hash": "f32b35677e12bd8b4825bc5a8328afa0914028f4ba2aa20493cb1f2740f38aca",
+      "last_checked": "2025-06-06T15:55:23.238173",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/swift-5-release-notes-for-xcode-10_2.json": {
+      "hash": "7b91c58f92ed5a978287392a83ffb35d20ee1723ccab017b7e562e03d1af564e",
+      "last_checked": "2025-06-06T15:55:23.614543",
+      "status": "unchanged",
+      "etag": "W/\"ff9870c2985e341ca6d7d32399eb57af\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/swift-5-release-notes-for-xcode-10_2": {
+      "hash": "7b91c58f92ed5a978287392a83ffb35d20ee1723ccab017b7e562e03d1af564e",
+      "last_checked": "2025-06-06T15:55:23.614543",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/build-system-release-notes-for-xcode-10.json": {
+      "hash": "038c6406b19b301ec913e1c1ce3e750dd3c847eb8c254beebdb637b29e262df9",
+      "last_checked": "2025-06-06T15:55:23.983699",
+      "status": "unchanged",
+      "etag": "W/\"edbd840738ede31f17bef6370b3ba270\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/build-system-release-notes-for-xcode-10": {
+      "hash": "038c6406b19b301ec913e1c1ce3e750dd3c847eb8c254beebdb637b29e262df9",
+      "last_checked": "2025-06-06T15:55:23.983699",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/interface-builder-release-notes-for-xcode-10.json": {
+      "hash": "8e9373c9d39eac6f781d547dba3c3e02fbed1f917ae1f94592a884cc15abd3da",
+      "last_checked": "2025-06-06T15:55:24.414099",
+      "status": "unchanged",
+      "etag": "W/\"0a1cfb9049950ba66781cb92979be135\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/interface-builder-release-notes-for-xcode-10": {
+      "hash": "8e9373c9d39eac6f781d547dba3c3e02fbed1f917ae1f94592a884cc15abd3da",
+      "last_checked": "2025-06-06T15:55:24.414099",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/source-editor-release-notes-for-xcode-10.json": {
+      "hash": "274db5dd5fe8538d2624392c343e150297dd410884483722bce32818ce74861c",
+      "last_checked": "2025-06-06T15:55:24.750194",
+      "status": "unchanged",
+      "etag": "W/\"806e5d7b1a6d2631ee21db246f514524\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/source-editor-release-notes-for-xcode-10": {
+      "hash": "274db5dd5fe8538d2624392c343e150297dd410884483722bce32818ce74861c",
+      "last_checked": "2025-06-06T15:55:24.750194",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/swift-4_2-release-notes-for-xcode-10.json": {
+      "hash": "ad12d7437fdaf2c452c8718ead3fb3ce1fa655b22399f6824da26a653a91dcc7",
+      "last_checked": "2025-06-06T15:55:25.149378",
+      "status": "unchanged",
+      "etag": "W/\"47d11aa46bd77f580c20e9755ae400cc\""
+    },
+    "https://developer.apple.com/documentation/xcode-release-notes/swift-4_2-release-notes-for-xcode-10": {
+      "hash": "ad12d7437fdaf2c452c8718ead3fb3ce1fa655b22399f6824da26a653a91dcc7",
+      "last_checked": "2025-06-06T15:55:25.149378",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/Xcode-Release-Notes/xcode-11-release-notes.json": {
+      "hash": "8f893e13c95ae372209f595af791cf2717f82dd0ed841441efebb66715a181f4",
+      "last_checked": "2025-06-06T19:39:49.802821",
+      "status": "new",
+      "etag": "W/\"2a1b1ae2c708ed45b780d3502b54fedc\""
+    },
+    "https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-11-release-notes": {
+      "hash": "8a09c7049e070ac478babe01412467e6a3ccddf4bba6918c3e663950b9b97350",
+      "last_checked": "2025-06-06T19:39:49.806539",
+      "status": "unchanged"
+    }
+  }
+}

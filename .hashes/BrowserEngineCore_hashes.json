@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-08T17:22:22.747357",
+    "total_pages": 13
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/BrowserEngineCore.json": {
+      "hash": "4ddc098a38d5533ea9e307178c1158ec69ec0af3797f63f59b4003fc059c27fc",
+      "last_checked": "2025-06-08T17:22:22.582203",
+      "status": "unchanged",
+      "etag": "W/\"08451effd811d2d0e55d91a63f036114\""
+    },
+    "https://developer.apple.com/documentation/BrowserEngineCore": {
+      "hash": "4ddc098a38d5533ea9e307178c1158ec69ec0af3797f63f59b4003fc059c27fc",
+      "last_checked": "2025-06-08T17:22:22.582252",
+      "status": "unchanged",
+      "etag": "W/\"08451effd811d2d0e55d91a63f036114\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/browserenginecore.json": {
+      "hash": "6e0a77f0807d6bc2910d6cb727d41b85f74e7522c18cc5d40206ad9bdf9c251b",
+      "last_checked": "2025-06-05T17:23:44.454438",
+      "status": "unchanged",
+      "etag": "W/\"08451effd811d2d0e55d91a63f036114\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/browserenginecore/be_kevent(_:_:_:_:_:_:).json": {
+      "hash": "866a3d30f6c2b47582d34523665e8d0fcac2b0e9fa0c6385afe82ccc79515067",
+      "last_checked": "2025-06-05T17:23:45.573091",
+      "status": "unchanged",
+      "etag": "W/\"bd25bea9e2e6ebb6e772766d8498f4d1\""
+    },
+    "https://developer.apple.com/documentation/browserenginecore/be_kevent(_:_:_:_:_:_:)": {
+      "hash": "866a3d30f6c2b47582d34523665e8d0fcac2b0e9fa0c6385afe82ccc79515067",
+      "last_checked": "2025-06-05T17:23:45.573091",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/browserenginecore/be_kevent64(_:_:_:_:_:_:).json": {
+      "hash": "c5d5ce52f951e0a11b435749dee3ab87eb5a7875f5d4dad1bf8879b4e053999d",
+      "last_checked": "2025-06-05T17:23:46.101277",
+      "status": "unchanged",
+      "etag": "W/\"203b0faca1569819ae77508b31668505\""
+    },
+    "https://developer.apple.com/documentation/browserenginecore/be_kevent64(_:_:_:_:_:_:)": {
+      "hash": "c5d5ce52f951e0a11b435749dee3ab87eb5a7875f5d4dad1bf8879b4e053999d",
+      "last_checked": "2025-06-05T17:23:46.101277",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/browserenginecore/be_kevent_no_flags.json": {
+      "hash": "5159b7c459fc9659d9dbf7c73c77329fce4859eeb94164524ead28d7d82e983e",
+      "last_checked": "2025-06-05T17:23:46.616431",
+      "status": "unchanged",
+      "etag": "W/\"f85cc65a02d5f4c4cd0173ee6fdff722\""
+    },
+    "https://developer.apple.com/documentation/browserenginecore/be_kevent_no_flags": {
+      "hash": "5159b7c459fc9659d9dbf7c73c77329fce4859eeb94164524ead28d7d82e983e",
+      "last_checked": "2025-06-05T17:23:46.616431",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/browserenginecore/be_kevent_return_immediately.json": {
+      "hash": "d2732e8970673ec482491c74c1a65bbcd79acad069d771159b2146b0a7dfa95c",
+      "last_checked": "2025-06-05T17:23:47.279388",
+      "status": "unchanged",
+      "etag": "W/\"34611cde0be5b5e706342606d4358ddb\""
+    },
+    "https://developer.apple.com/documentation/browserenginecore/be_kevent_return_immediately": {
+      "hash": "d2732e8970673ec482491c74c1a65bbcd79acad069d771159b2146b0a7dfa95c",
+      "last_checked": "2025-06-05T17:23:47.279388",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/browserenginecore/be_jit_write_protect_tag.json": {
+      "hash": "a72c438f9dededdbfd8ad56443d7477722c6776151f34a3902b487e9bebcb723",
+      "last_checked": "2025-06-05T17:23:47.702796",
+      "status": "unchanged",
+      "etag": "W/\"713ebef5d37bc1ed3e7e03b7a22b7af5\""
+    },
+    "https://developer.apple.com/documentation/browserenginecore/be_jit_write_protect_tag": {
+      "hash": "a72c438f9dededdbfd8ad56443d7477722c6776151f34a3902b487e9bebcb723",
+      "last_checked": "2025-06-05T17:23:47.702796",
+      "status": "unchanged"
+    }
+  }
+}

@@ -49,4 +49,4 @@ An [`AXDataPointValue`](axdatapointvalue.md) can be either numeric or categorica
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/axdatapointvalue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/AXDataPointValue)*

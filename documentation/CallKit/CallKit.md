@@ -32,8 +32,6 @@ With a person’s permission, an installed health research app that uses [`Senso
 
 > ❗ **Important**:  When a person makes a call in your app that uses CallKit, your app provides the contact information of the recipient to the system. The system may use that information to indicate communication with that person as a suggestion in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) framework.
 
- When a person makes a call in your app that uses CallKit, your app provides the contact information of the recipient to the system. The system may use that information to indicate communication with that person as a suggestion in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) framework.
-
 ##### Become the Default Calling App
 
 In iOS and iPadOS 18.2 and later, a person may select an app — other than the Phone app or FaceTime — to place calls by default. To make your CallKit or [`LiveCommunicationKit`](https://developer.apple.com/documentation/LiveCommunicationKit) app support the default calling app setting, see [`Preparing your app to be the default calling app`](preparing-your-app-to-be-the-default-calling-app.md).

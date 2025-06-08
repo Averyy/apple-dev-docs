@@ -1,0 +1,707 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T12:38:57.692195",
+    "total_pages": 127,
+    "etags_collected": "2025-06-07T12:38:57.692205"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/preparing-an-educational-assessment-app-for-distribution.json": {
+      "hash": "b0bddfda09b5eec30a2aeea882a0778e039b4644b174d128292696b89256ae18",
+      "last_checked": "2025-06-05T16:48:56.524651",
+      "status": "unchanged",
+      "etag": "W/\"5d116f668ec7cd0cb58e05bd0770471b\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/preparing-an-educational-assessment-app-for-distribution": {
+      "hash": "b0bddfda09b5eec30a2aeea882a0778e039b4644b174d128292696b89256ae18",
+      "last_checked": "2025-06-05T16:48:56.524651",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/build-an-educational-assessment-app.json": {
+      "hash": "f046799621e375a85d5566fee404573f235df92be61d83b9985ef19ccbbe948d",
+      "last_checked": "2025-06-05T16:48:57.053215",
+      "status": "unchanged",
+      "etag": "W/\"f2799c21d8e56a260d1decc8892778ad\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/build-an-educational-assessment-app": {
+      "hash": "f046799621e375a85d5566fee404573f235df92be61d83b9985ef19ccbbe948d",
+      "last_checked": "2025-06-05T16:48:57.053215",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration.json": {
+      "hash": "c22f84afb3b7c12dae76db8b3a6de65cb4617c89862fa527afc708b7fcdc8f44",
+      "last_checked": "2025-06-05T16:48:57.603490",
+      "status": "unchanged",
+      "etag": "W/\"6cd789a8e85d8f41143d6ca0c78f1004\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration": {
+      "hash": "c22f84afb3b7c12dae76db8b3a6de65cb4617c89862fa527afc708b7fcdc8f44",
+      "last_checked": "2025-06-05T16:48:57.603490",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsession.json": {
+      "hash": "95fa5362f4ba55034bbaff6fba18b648bad472979982778ce81c6932078dd301",
+      "last_checked": "2025-06-05T16:48:58.000566",
+      "status": "unchanged",
+      "etag": "W/\"62d334eb7d36de5cfc3abb8b01facbd5\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession": {
+      "hash": "95fa5362f4ba55034bbaff6fba18b648bad472979982778ce81c6932078dd301",
+      "last_checked": "2025-06-05T16:48:58.000566",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror.json": {
+      "hash": "07832b1489edf93fd2cc615c4307befbf5b38d7a6edb6f1dcc3ea6445cb53232",
+      "last_checked": "2025-06-05T16:48:58.391770",
+      "status": "unchanged",
+      "etag": "W/\"937ce9c79c692819d27b748a975a9e3a\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror": {
+      "hash": "07832b1489edf93fd2cc615c4307befbf5b38d7a6edb6f1dcc3ea6445cb53232",
+      "last_checked": "2025-06-05T16:48:58.391770",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/code.json": {
+      "hash": "b6076544148df06055f6b572febe305276a18dd71150b58b85246a62374298e8",
+      "last_checked": "2025-06-05T16:48:59.160242",
+      "status": "unchanged",
+      "etag": "W/\"44523d146d6b89706f0ac63f837af675\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/code": {
+      "hash": "b6076544148df06055f6b572febe305276a18dd71150b58b85246a62374298e8",
+      "last_checked": "2025-06-05T16:48:59.160242",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterrordomain.json": {
+      "hash": "66a0c98c1e5b4f34e77daae3676f034570cd34eab5e0e8cd80d82f0277b3d6ba",
+      "last_checked": "2025-06-05T16:48:59.548703",
+      "status": "unchanged",
+      "etag": "W/\"765c78a6d4874d782f4766a75d3ac10d\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterrordomain": {
+      "hash": "66a0c98c1e5b4f34e77daae3676f034570cd34eab5e0e8cd80d82f0277b3d6ba",
+      "last_checked": "2025-06-05T16:48:59.548703",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/setconfiguration(_:for:).json": {
+      "hash": "d8fe3afef943663950f5dc9786888997e5a90d642dbd2dca90a6dcf5849417b2",
+      "last_checked": "2025-06-05T16:48:59.926946",
+      "status": "unchanged",
+      "etag": "W/\"55a2b84294cff79627f34b3176a95e8c\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/setconfiguration(_:for:)": {
+      "hash": "d8fe3afef943663950f5dc9786888997e5a90d642dbd2dca90a6dcf5849417b2",
+      "last_checked": "2025-06-05T16:48:59.926946",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/configurationsbyapplication.json": {
+      "hash": "6077040e58f47a5b253c43a9f078c8e1e2cd4f2bb72e9ba333f48e37b2988723",
+      "last_checked": "2025-06-05T16:49:00.282150",
+      "status": "unchanged",
+      "etag": "W/\"6154c50e4023044dc9c8aa64bea80f97\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/configurationsbyapplication": {
+      "hash": "6077040e58f47a5b253c43a9f078c8e1e2cd4f2bb72e9ba333f48e37b2988723",
+      "last_checked": "2025-06-05T16:49:00.282150",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/remove(_:).json": {
+      "hash": "1338f6da40c235ebc16a6e1869e8f273b22aa153317934d166f78be518835b7b",
+      "last_checked": "2025-06-05T16:49:00.691133",
+      "status": "unchanged",
+      "etag": "W/\"7313b7501c836f15b602f56a2a82d93b\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/remove(_:)": {
+      "hash": "1338f6da40c235ebc16a6e1869e8f273b22aa153317934d166f78be518835b7b",
+      "last_checked": "2025-06-05T16:49:00.691133",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/mainparticipantconfiguration.json": {
+      "hash": "f611d03430313e141bfa49200013551d35f0a62ff7b557599de3219b889b670c",
+      "last_checked": "2025-06-05T16:49:01.096158",
+      "status": "unchanged",
+      "etag": "W/\"a6d239a6262f1547aff181345a439a54\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/mainparticipantconfiguration": {
+      "hash": "f611d03430313e141bfa49200013551d35f0a62ff7b557599de3219b889b670c",
+      "last_checked": "2025-06-05T16:49:01.096158",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentapplication.json": {
+      "hash": "9c148af9ee61cea794eb9717901c1b826dff94f9019d2d68ed9d172b60c38ed6",
+      "last_checked": "2025-06-05T16:49:01.507724",
+      "status": "unchanged",
+      "etag": "W/\"80fa219580b4f2949107fa4c9a245a00\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentapplication": {
+      "hash": "9c148af9ee61cea794eb9717901c1b826dff94f9019d2d68ed9d172b60c38ed6",
+      "last_checked": "2025-06-05T16:49:01.507724",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentparticipantconfiguration.json": {
+      "hash": "765174bc7d6eaa8d8c6bd4630ec1788c706649b7c0b90d31f3bfdf5eb90975bd",
+      "last_checked": "2025-06-05T16:49:01.923767",
+      "status": "unchanged",
+      "etag": "W/\"3e49743b800d0f10736fa8e2d9ff2f50\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentparticipantconfiguration": {
+      "hash": "765174bc7d6eaa8d8c6bd4630ec1788c706649b7c0b90d31f3bfdf5eb90975bd",
+      "last_checked": "2025-06-05T16:49:01.923767",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowsaccessibilityspeech.json": {
+      "hash": "0b3b4b26a6f6f0b36a7b36508566071cd27c7f7d8f9456f8b9bac211ad42b52e",
+      "last_checked": "2025-06-05T16:49:02.271456",
+      "status": "unchanged",
+      "etag": "W/\"df2e2e3a5c043d8f2507856b14c977b9\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowsaccessibilityspeech": {
+      "hash": "0b3b4b26a6f6f0b36a7b36508566071cd27c7f7d8f9456f8b9bac211ad42b52e",
+      "last_checked": "2025-06-05T16:49:02.271456",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowsdictation.json": {
+      "hash": "40e4f49de780912504925b2c35272c9ad3824673a30c6f2c74bde6411236972d",
+      "last_checked": "2025-06-05T16:49:02.706100",
+      "status": "unchanged",
+      "etag": "W/\"c148e778916c4922645b5332ba8052fa\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowsdictation": {
+      "hash": "40e4f49de780912504925b2c35272c9ad3824673a30c6f2c74bde6411236972d",
+      "last_checked": "2025-06-05T16:49:02.706100",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowscontinuouspathkeyboard.json": {
+      "hash": "58579e329aa65573b0ebc589ab1fb85df927204173a498801ec184c56b5eb511",
+      "last_checked": "2025-06-05T16:49:03.096628",
+      "status": "unchanged",
+      "etag": "W/\"5ea8d606f64cf46708c952bf09206407\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowscontinuouspathkeyboard": {
+      "hash": "58579e329aa65573b0ebc589ab1fb85df927204173a498801ec184c56b5eb511",
+      "last_checked": "2025-06-05T16:49:03.096628",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowskeyboardshortcuts.json": {
+      "hash": "102e1bf884356e603091e1360fc16f725f252a3d2f9bb2181339f84f1971f773",
+      "last_checked": "2025-06-05T16:49:03.445594",
+      "status": "unchanged",
+      "etag": "W/\"9e7af0f34c44fffd130cad7495e2a536\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowskeyboardshortcuts": {
+      "hash": "102e1bf884356e603091e1360fc16f725f252a3d2f9bb2181339f84f1971f773",
+      "last_checked": "2025-06-05T16:49:03.445594",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowspredictivekeyboard.json": {
+      "hash": "29fa93358e8da8af4beb0e0b5a5a5e0d9f1e82fcd3d031ccba87e685704502f6",
+      "last_checked": "2025-06-05T16:49:03.795626",
+      "status": "unchanged",
+      "etag": "W/\"ab33625525c2a1c5541c055c1b434b71\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowspredictivekeyboard": {
+      "hash": "29fa93358e8da8af4beb0e0b5a5a5e0d9f1e82fcd3d031ccba87e685704502f6",
+      "last_checked": "2025-06-05T16:49:03.795626",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowspasswordautofill.json": {
+      "hash": "46b6031b7dc2b0ff331afa371055843822446f9bbe39012ea173d16986315117",
+      "last_checked": "2025-06-05T16:49:04.177592",
+      "status": "unchanged",
+      "etag": "W/\"7bb1fde4f9469fa8ca7bb3240de9e0c6\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowspasswordautofill": {
+      "hash": "46b6031b7dc2b0ff331afa371055843822446f9bbe39012ea173d16986315117",
+      "last_checked": "2025-06-05T16:49:04.177592",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowsspellcheck.json": {
+      "hash": "133ddc38ab3234bcb2685081aec88136a95589a82d388b7e60ff6648fca50951",
+      "last_checked": "2025-06-05T16:49:04.593152",
+      "status": "unchanged",
+      "etag": "W/\"1b99cd18048af413d154addbb5506188\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowsspellcheck": {
+      "hash": "133ddc38ab3234bcb2685081aec88136a95589a82d388b7e60ff6648fca50951",
+      "last_checked": "2025-06-05T16:49:04.593152",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/autocorrectmode-swift.property.json": {
+      "hash": "2169f60cd3f9a81d3550d473ea971d62b973fa79492abb798804abf227c75577",
+      "last_checked": "2025-06-05T16:49:04.997121",
+      "status": "unchanged",
+      "etag": "W/\"9b82ed25b7f25357ae2f979c6f771c54\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/autocorrectmode-swift.property": {
+      "hash": "2169f60cd3f9a81d3550d473ea971d62b973fa79492abb798804abf227c75577",
+      "last_checked": "2025-06-05T16:49:04.997121",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/autocorrectmode-swift.struct.json": {
+      "hash": "330d0e19b0155feb93fcf8d6d2641a93ad05480f4936642f33f4cc0014ad8276",
+      "last_checked": "2025-06-05T16:49:05.397562",
+      "status": "unchanged",
+      "etag": "W/\"43914a904464f7e701e0a92f449fd784\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/autocorrectmode-swift.struct": {
+      "hash": "330d0e19b0155feb93fcf8d6d2641a93ad05480f4936642f33f4cc0014ad8276",
+      "last_checked": "2025-06-05T16:49:05.397562",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowsactivitycontinuation.json": {
+      "hash": "498427d8ce3f6eb6f4b0e06f554f7966532838627d7aa4a54cba597b7c98f241",
+      "last_checked": "2025-06-05T16:49:05.740273",
+      "status": "unchanged",
+      "etag": "W/\"337f36ed3ba190f756a9674f88099bd9\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/allowsactivitycontinuation": {
+      "hash": "498427d8ce3f6eb6f4b0e06f554f7966532838627d7aa4a54cba597b7c98f241",
+      "last_checked": "2025-06-05T16:49:05.740273",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsession/init(configuration:).json": {
+      "hash": "1b7069583918595bf67e8e297cf66ec79a4c4809ca9400576143f1c0a492e1f0",
+      "last_checked": "2025-06-05T16:49:06.087645",
+      "status": "unchanged",
+      "etag": "W/\"0e76a752579f458c0ec96396b7e85db0\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession/init(configuration:)": {
+      "hash": "1b7069583918595bf67e8e297cf66ec79a4c4809ca9400576143f1c0a492e1f0",
+      "last_checked": "2025-06-05T16:49:06.087645",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsession/update(to:).json": {
+      "hash": "fbf7811738083fa46f4f703016b24751fad14ce10b7850077f9e41d89de6d020",
+      "last_checked": "2025-06-05T16:49:06.503976",
+      "status": "unchanged",
+      "etag": "W/\"c832728bbd48187e239a0e32b095591a\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession/update(to:)": {
+      "hash": "fbf7811738083fa46f4f703016b24751fad14ce10b7850077f9e41d89de6d020",
+      "last_checked": "2025-06-05T16:49:06.503976",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsession/configuration.json": {
+      "hash": "17982b74560e5c56f58feff23f2322efab16381a3f4ce6e93e721bbfcc32c407",
+      "last_checked": "2025-06-05T16:49:06.913920",
+      "status": "unchanged",
+      "etag": "W/\"ed7d5c8d5cae217eed44c587f4c06549\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession/configuration": {
+      "hash": "17982b74560e5c56f58feff23f2322efab16381a3f4ce6e93e721bbfcc32c407",
+      "last_checked": "2025-06-05T16:49:06.913920",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsession/supportsmultipleparticipants.json": {
+      "hash": "f4b65934016870a16ea5b4ce26f13b3b42aad3ef2054a80e6e8d9c70c13f0a61",
+      "last_checked": "2025-06-05T16:49:07.323703",
+      "status": "unchanged",
+      "etag": "W/\"5da647ca74ac7d180b5438ed35b4ee83\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession/supportsmultipleparticipants": {
+      "hash": "f4b65934016870a16ea5b4ce26f13b3b42aad3ef2054a80e6e8d9c70c13f0a61",
+      "last_checked": "2025-06-05T16:49:07.323703",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsession/supportsconfigurationupdates.json": {
+      "hash": "1dc5cfae6500c73db9dbf557937d45f9fa45194f5597c2840b270314329855cc",
+      "last_checked": "2025-06-05T16:49:07.692364",
+      "status": "unchanged",
+      "etag": "W/\"a283cbb6f6e5c38e182399f05a672b89\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession/supportsconfigurationupdates": {
+      "hash": "1dc5cfae6500c73db9dbf557937d45f9fa45194f5597c2840b270314329855cc",
+      "last_checked": "2025-06-05T16:49:07.692364",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsession/delegate.json": {
+      "hash": "d0f4b252e3278a485ca8364f9806cfe871ef2904f5171df3a2858ddd72a2fe0e",
+      "last_checked": "2025-06-05T16:49:08.101495",
+      "status": "unchanged",
+      "etag": "W/\"bc9393dd21af3c8ea5894e3047664a75\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession/delegate": {
+      "hash": "d0f4b252e3278a485ca8364f9806cfe871ef2904f5171df3a2858ddd72a2fe0e",
+      "last_checked": "2025-06-05T16:49:08.101495",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate.json": {
+      "hash": "aa7448def3e8b35619245e8a8df83b3b5e3a9610bc192df12bb95ceebb035da0",
+      "last_checked": "2025-06-05T16:49:08.490554",
+      "status": "unchanged",
+      "etag": "W/\"31425f619ea72310bd8cbbba4138fb2c\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate": {
+      "hash": "aa7448def3e8b35619245e8a8df83b3b5e3a9610bc192df12bb95ceebb035da0",
+      "last_checked": "2025-06-05T16:49:08.490554",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsession/begin().json": {
+      "hash": "f1b447cfe011e0171ea98b6ecf34cdae3afcbf5dab24c74eacbdbe74a40037e6",
+      "last_checked": "2025-06-05T16:49:08.845369",
+      "status": "unchanged",
+      "etag": "W/\"e6a1b99349a3f49af9a101ef0001f8b9\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession/begin()": {
+      "hash": "f1b447cfe011e0171ea98b6ecf34cdae3afcbf5dab24c74eacbdbe74a40037e6",
+      "last_checked": "2025-06-05T16:49:08.845369",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsession/end().json": {
+      "hash": "1c7d52b7390d50c66d92c578934e702c9b7de2d02ce74be5e9df5b6cb6722300",
+      "last_checked": "2025-06-05T16:49:09.204182",
+      "status": "unchanged",
+      "etag": "W/\"1714e9c43651c873451a590eb312d819\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession/end()": {
+      "hash": "1c7d52b7390d50c66d92c578934e702c9b7de2d02ce74be5e9df5b6cb6722300",
+      "last_checked": "2025-06-05T16:49:09.204182",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsession/isactive.json": {
+      "hash": "2dabd7621868c517ced18a145eb0b50d371f92816bc6a626f1a9c98a50aa3638",
+      "last_checked": "2025-06-05T16:49:09.602572",
+      "status": "unchanged",
+      "etag": "W/\"d91a234bb4c489876866a00eb0b8a87d\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession/isactive": {
+      "hash": "2dabd7621868c517ced18a145eb0b50d371f92816bc6a626f1a9c98a50aa3638",
+      "last_checked": "2025-06-05T16:49:09.602572",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/unknown.json": {
+      "hash": "33bf09214d47355420cc75d6a8888dddb61aee681760c4641732aa6f84b504f5",
+      "last_checked": "2025-06-05T16:49:09.973240",
+      "status": "unchanged",
+      "etag": "W/\"c693b7d87e97c6ed2007bec269d49627\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/unknown": {
+      "hash": "33bf09214d47355420cc75d6a8888dddb61aee681760c4641732aa6f84b504f5",
+      "last_checked": "2025-06-05T16:49:09.973240",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/unsupportedplatform.json": {
+      "hash": "7c85d1ff8fe44235eb960dcfc44e52bdd5436226a3e67dfb0d6775d301132179",
+      "last_checked": "2025-06-05T16:49:10.316618",
+      "status": "unchanged",
+      "etag": "W/\"0dbd69d53a6f548dbc8d12dbcd2c3e3b\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/unsupportedplatform": {
+      "hash": "7c85d1ff8fe44235eb960dcfc44e52bdd5436226a3e67dfb0d6775d301132179",
+      "last_checked": "2025-06-05T16:49:10.316618",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/configurationupdatesnotsupported.json": {
+      "hash": "66d5fa13d9b1597bc6a6a38bfecb0beb07b6f7d9e4ad49659dc08644ac515ebe",
+      "last_checked": "2025-06-05T16:49:10.708442",
+      "status": "unchanged",
+      "etag": "W/\"0c08463463ddfdba366c34bb40c1302e\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/configurationupdatesnotsupported": {
+      "hash": "66d5fa13d9b1597bc6a6a38bfecb0beb07b6f7d9e4ad49659dc08644ac515ebe",
+      "last_checked": "2025-06-05T16:49:10.708442",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/errordomain.json": {
+      "hash": "7bb2c4055b36cd013132cc824eb98c87fb81825638a68ae1690f45a00610d2ef",
+      "last_checked": "2025-06-05T16:49:11.132388",
+      "status": "unchanged",
+      "etag": "W/\"0829fa0ce84b03c629bcf8e5eb460ffd\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/errordomain": {
+      "hash": "7bb2c4055b36cd013132cc824eb98c87fb81825638a68ae1690f45a00610d2ef",
+      "last_checked": "2025-06-05T16:49:11.132388",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/multipleparticipantsnotsupported.json": {
+      "hash": "316bc3e9b0f67aa2129171bffbf805f96f0c3832075a9df1c210874a6eb9494b",
+      "last_checked": "2025-06-05T16:49:11.536758",
+      "status": "unchanged",
+      "etag": "W/\"10e95acbbc7ac9dd2b5f8efd79ceb203\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/multipleparticipantsnotsupported": {
+      "hash": "316bc3e9b0f67aa2129171bffbf805f96f0c3832075a9df1c210874a6eb9494b",
+      "last_checked": "2025-06-05T16:49:11.536758",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/code/configurationupdatesnotsupported.json": {
+      "hash": "70b0ecf3f32b1ff797ad137f23b26df1d5160cfb292902832c68b15ee62f9f8b",
+      "last_checked": "2025-06-05T16:49:11.926309",
+      "status": "unchanged",
+      "etag": "W/\"1511655346f2bb4059440db1863b811c\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/code/configurationupdatesnotsupported": {
+      "hash": "70b0ecf3f32b1ff797ad137f23b26df1d5160cfb292902832c68b15ee62f9f8b",
+      "last_checked": "2025-06-05T16:49:11.926309",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/code/multipleparticipantsnotsupported.json": {
+      "hash": "ac10bd8fd69088ea7ed7b64c767fa14eede2188a22f9d8d3f1bfb640ecf96041",
+      "last_checked": "2025-06-05T16:49:12.289353",
+      "status": "unchanged",
+      "etag": "W/\"8642899ae3f98b962467daebe17a5f3e\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/code/multipleparticipantsnotsupported": {
+      "hash": "ac10bd8fd69088ea7ed7b64c767fa14eede2188a22f9d8d3f1bfb640ecf96041",
+      "last_checked": "2025-06-05T16:49:12.289353",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/code/unknown.json": {
+      "hash": "39faa3a6b0be243c070e51ed9d450adfebc104844540213d78577960066630a9",
+      "last_checked": "2025-06-05T16:49:12.657452",
+      "status": "unchanged",
+      "etag": "W/\"b2f3a214546005fc72ed364a31573e10\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/code/unknown": {
+      "hash": "39faa3a6b0be243c070e51ed9d450adfebc104844540213d78577960066630a9",
+      "last_checked": "2025-06-05T16:49:12.657452",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/code/unsupportedplatform.json": {
+      "hash": "42dabeee4404cf8f845b5d38ddd8a9af0d294320d0e5ada07976f2d3481ac8a1",
+      "last_checked": "2025-06-05T16:49:13.023234",
+      "status": "unchanged",
+      "etag": "W/\"c0ce041952e7b088e258b8588a31a11a\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/code/unsupportedplatform": {
+      "hash": "42dabeee4404cf8f845b5d38ddd8a9af0d294320d0e5ada07976f2d3481ac8a1",
+      "last_checked": "2025-06-05T16:49:13.023234",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmenterror/code/init(rawvalue:).json": {
+      "hash": "1f23b66fe47c3c52fc277db2aba151bf06c1d207a90ff56d0bc042f9d4304f8c",
+      "last_checked": "2025-06-05T16:49:13.416136",
+      "status": "unchanged",
+      "etag": "W/\"4ffb470dda8238b23adadbbab261e610\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmenterror/code/init(rawvalue:)": {
+      "hash": "1f23b66fe47c3c52fc277db2aba151bf06c1d207a90ff56d0bc042f9d4304f8c",
+      "last_checked": "2025-06-05T16:49:13.416136",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentapplication/init(bundleidentifier:teamidentifier:).json": {
+      "hash": "58e218fa152f3171c4cfebdc8203c7fbd0f1d85ca71bab7d2496cd229fcc4b72",
+      "last_checked": "2025-06-05T16:49:13.778156",
+      "status": "unchanged",
+      "etag": "W/\"bced5d9bc4e1a8874ba9b246a0fe9325\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentapplication/init(bundleidentifier:teamidentifier:)": {
+      "hash": "58e218fa152f3171c4cfebdc8203c7fbd0f1d85ca71bab7d2496cd229fcc4b72",
+      "last_checked": "2025-06-05T16:49:13.778156",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentapplication/init(bundleidentifier:).json": {
+      "hash": "bb89bf70d86700d2c383630c1e0bf34fb389482646337e2a68f453c7d6ddfd2d",
+      "last_checked": "2025-06-05T16:49:14.184950",
+      "status": "unchanged",
+      "etag": "W/\"70b914b02f8734e4b562872660a0766f\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentapplication/init(bundleidentifier:)": {
+      "hash": "bb89bf70d86700d2c383630c1e0bf34fb389482646337e2a68f453c7d6ddfd2d",
+      "last_checked": "2025-06-05T16:49:14.184950",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentapplication/bundleidentifier.json": {
+      "hash": "350a74bd44fe17e38c120a965cf3e0fd54dc50b95272fa8d1ed31a2d3efb5ae1",
+      "last_checked": "2025-06-05T16:49:14.561468",
+      "status": "unchanged",
+      "etag": "W/\"819891d04a5cd2f2abe108340c64c61a\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentapplication/bundleidentifier": {
+      "hash": "350a74bd44fe17e38c120a965cf3e0fd54dc50b95272fa8d1ed31a2d3efb5ae1",
+      "last_checked": "2025-06-05T16:49:14.561468",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentapplication/teamidentifier.json": {
+      "hash": "c63dba99997d169857ddee564b86afbb06d6eb5c0ef72bc5344fcb179825a82d",
+      "last_checked": "2025-06-05T16:49:14.942550",
+      "status": "unchanged",
+      "etag": "W/\"5f41e13538cc2b720058ff70cfe1452f\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentapplication/teamidentifier": {
+      "hash": "c63dba99997d169857ddee564b86afbb06d6eb5c0ef72bc5344fcb179825a82d",
+      "last_checked": "2025-06-05T16:49:14.942550",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentapplication/requiressignaturevalidation.json": {
+      "hash": "3c20614102553516d2b3a6f0aede10de0f7bc274917c7953b331934972186d05",
+      "last_checked": "2025-06-05T16:49:15.351262",
+      "status": "unchanged",
+      "etag": "W/\"9b9d79e6bede558970299da62c2eb746\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentapplication/requiressignaturevalidation": {
+      "hash": "3c20614102553516d2b3a6f0aede10de0f7bc274917c7953b331934972186d05",
+      "last_checked": "2025-06-05T16:49:15.351262",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentparticipantconfiguration/init().json": {
+      "hash": "28e9e4881e62fbb218afb91d5807fff3ecabe6b1cd8d39cd55adad41510e92ce",
+      "last_checked": "2025-06-05T16:49:15.764087",
+      "status": "unchanged",
+      "etag": "W/\"b4ef40e0ccf5de26cf95f9be2e476eac\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentparticipantconfiguration/init()": {
+      "hash": "28e9e4881e62fbb218afb91d5807fff3ecabe6b1cd8d39cd55adad41510e92ce",
+      "last_checked": "2025-06-05T16:49:15.764087",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentparticipantconfiguration/new().json": {
+      "hash": "287a8aa4e65626658773dba4163dab14d316626956f6d52f1134755ad82b2a90",
+      "last_checked": "2025-06-05T16:49:16.133497",
+      "status": "unchanged",
+      "etag": "W/\"77573952869ae0a2561d2cfe481b9b04\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentparticipantconfiguration/new()": {
+      "hash": "287a8aa4e65626658773dba4163dab14d316626956f6d52f1134755ad82b2a90",
+      "last_checked": "2025-06-05T16:49:16.133497",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentparticipantconfiguration/allowsnetworkaccess.json": {
+      "hash": "b27a3f2205ca0d38c1fc0e26890da4760b6f965945cf2eedfc2d08dc0b270e86",
+      "last_checked": "2025-06-05T16:49:16.534952",
+      "status": "unchanged",
+      "etag": "W/\"c4d2c4fe2599dbc503169e8577a2bb37\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentparticipantconfiguration/allowsnetworkaccess": {
+      "hash": "b27a3f2205ca0d38c1fc0e26890da4760b6f965945cf2eedfc2d08dc0b270e86",
+      "last_checked": "2025-06-05T16:49:16.534952",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentparticipantconfiguration/configurationinfo.json": {
+      "hash": "893ebf927946f38162630d5c6a5a353916724eacbace4270ff04460a4fc147a2",
+      "last_checked": "2025-06-05T16:49:16.918787",
+      "status": "unchanged",
+      "etag": "W/\"6401102bd38268e5e471f5bfdd902c4a\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentparticipantconfiguration/configurationinfo": {
+      "hash": "893ebf927946f38162630d5c6a5a353916724eacbace4270ff04460a4fc147a2",
+      "last_checked": "2025-06-05T16:49:16.918787",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/autocorrectmode-swift.struct/init(rawvalue:).json": {
+      "hash": "d998780329235f16e5ad29e9f9b63eaa8d0741b758725c6e15a92e40f98c5719",
+      "last_checked": "2025-06-05T16:49:17.263349",
+      "status": "unchanged",
+      "etag": "W/\"57cd54c8a14f530ce5012b0071be2fbf\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/autocorrectmode-swift.struct/init(rawvalue:)": {
+      "hash": "d998780329235f16e5ad29e9f9b63eaa8d0741b758725c6e15a92e40f98c5719",
+      "last_checked": "2025-06-05T16:49:17.263349",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/autocorrectmode-swift.struct/punctuation.json": {
+      "hash": "3f46ab3532c679c8f0f5d8edde1a294081f3a79d066f69be482eaeb9d4f3193f",
+      "last_checked": "2025-06-05T16:49:17.617374",
+      "status": "unchanged",
+      "etag": "W/\"4b5eb584d9f1f947d0c345a77659bb96\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/autocorrectmode-swift.struct/punctuation": {
+      "hash": "3f46ab3532c679c8f0f5d8edde1a294081f3a79d066f69be482eaeb9d4f3193f",
+      "last_checked": "2025-06-05T16:49:17.617374",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/autocorrectmode-swift.struct/spelling.json": {
+      "hash": "8aaaa60cb6e6373ab28f2f92f222271e8a668ed8c9cbb402d0d6e2c27876bbfd",
+      "last_checked": "2025-06-05T16:49:18.016791",
+      "status": "unchanged",
+      "etag": "W/\"ac994546ff07795507d79e1a34484899\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/autocorrectmode-swift.struct/spelling": {
+      "hash": "8aaaa60cb6e6373ab28f2f92f222271e8a668ed8c9cbb402d0d6e2c27876bbfd",
+      "last_checked": "2025-06-05T16:49:18.016791",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsessiondidbegin(_:).json": {
+      "hash": "138025c306865ebad2a6f30c3ace273c87605b39207eeff11b44a8b3ccaa13e4",
+      "last_checked": "2025-06-05T16:49:18.426749",
+      "status": "unchanged",
+      "etag": "W/\"996e715d3740e4a8c65c614df407ab03\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsessiondidbegin(_:)": {
+      "hash": "138025c306865ebad2a6f30c3ace273c87605b39207eeff11b44a8b3ccaa13e4",
+      "last_checked": "2025-06-05T16:49:18.426749",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsession(_:failedtobeginwitherror:).json": {
+      "hash": "2bd165af06ab3883bdb5bc89989e430170875a72f4d39f462e10ddef5053b963",
+      "last_checked": "2025-06-05T16:49:18.805446",
+      "status": "unchanged",
+      "etag": "W/\"ef3e111589f081957d6ff4574a1eb74a\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsession(_:failedtobeginwitherror:)": {
+      "hash": "2bd165af06ab3883bdb5bc89989e430170875a72f4d39f462e10ddef5053b963",
+      "last_checked": "2025-06-05T16:49:18.805446",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsession(_:wasinterruptedwitherror:).json": {
+      "hash": "210239efe4788cde417c9362bda7008605d0cbc4d4c2d6e9a2da62c541ced21e",
+      "last_checked": "2025-06-05T16:49:19.192341",
+      "status": "unchanged",
+      "etag": "W/\"0c7a3c0fb321c2a4c1081ade5a09cf52\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsession(_:wasinterruptedwitherror:)": {
+      "hash": "210239efe4788cde417c9362bda7008605d0cbc4d4c2d6e9a2da62c541ced21e",
+      "last_checked": "2025-06-05T16:49:19.192341",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsessiondidend(_:).json": {
+      "hash": "efdbbc1e26c89436866433af18e1d69684531dee44907c1365ca04dc70f20944",
+      "last_checked": "2025-06-05T16:49:19.577458",
+      "status": "unchanged",
+      "etag": "W/\"c707f69ae3aa2dc406d8760bd0b6a9b5\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsessiondidend(_:)": {
+      "hash": "efdbbc1e26c89436866433af18e1d69684531dee44907c1365ca04dc70f20944",
+      "last_checked": "2025-06-05T16:49:19.577458",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsessiondidupdate(_:).json": {
+      "hash": "bb52629200e523a2c7feec8a614118888b0270d0cacec3bc3b7114d108f0a50b",
+      "last_checked": "2025-06-05T16:49:19.979564",
+      "status": "unchanged",
+      "etag": "W/\"e294aa3adf18533e8ea028db05a6d7d7\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsessiondidupdate(_:)": {
+      "hash": "bb52629200e523a2c7feec8a614118888b0270d0cacec3bc3b7114d108f0a50b",
+      "last_checked": "2025-06-05T16:49:19.979564",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsession(_:failedtoupdateto:error:).json": {
+      "hash": "2a309c44fe3d3a0bd96a9d2a8fb455f7464bbcdbb824e930a00058f85555b1e0",
+      "last_checked": "2025-06-05T16:49:20.369577",
+      "status": "unchanged",
+      "etag": "W/\"c855f2910a3fb1cabea381c492af881c\""
+    },
+    "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsessiondelegate/assessmentsession(_:failedtoupdateto:error:)": {
+      "hash": "2a309c44fe3d3a0bd96a9d2a8fb455f7464bbcdbb824e930a00058f85555b1e0",
+      "last_checked": "2025-06-05T16:49:20.369577",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/documentation/AutomaticAssessmentConfiguration/AutomaticAssessmentConfiguration": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:35:12.410114",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration/automaticassessmentconfiguration.json": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:35:12.410114",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/AutomaticAssessmentConfiguration.json": {
+      "hash": "033df679cd76340b777972f3c99de39f2325f835da0f79c90829336bbef3d0c7",
+      "last_checked": "2025-06-06T20:00:55.071050",
+      "status": "new",
+      "etag": "W/\"3938252c4bc75f80cf89f1dd50f1817c\""
+    },
+    "https://developer.apple.com/documentation/AutomaticAssessmentConfiguration": {
+      "hash": "75417eea2c661e11fe122bf4579ebac3c2dad030e699e19b7a014a40938d1bb0",
+      "last_checked": "2025-06-06T20:00:55.071626",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/automaticassessmentconfiguration.json": {
+      "hash": "75417eea2c661e11fe122bf4579ebac3c2dad030e699e19b7a014a40938d1bb0",
+      "last_checked": "2025-06-06T20:00:55.071626",
+      "status": "unchanged",
+      "etag": "W/\"3938252c4bc75f80cf89f1dd50f1817c\""
+    }
+  }
+}

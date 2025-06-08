@@ -53,6 +53,76 @@ Create a comprehensive Python scraper to mirror Apple's entire developer documen
 
 ### Critical Rules - DO NOT VIOLATE
 
+## Comprehensive Coverage Analysis
+
+### Current Implementation Strengths:
+1. ✅ **New framework added to technologies.json** - Handled by fetching fresh list each run
+2. ✅ **Existing page content updated** - Handled via ETag + hash comparison
+3. ✅ **New sub-page added deep in hierarchy** - Handled via iterative discovery
+4. ✅ **Framework main page unchanged but children update** - Handled by always discovering child pages
+5. ✅ **Circular references** - Handled via `processed_urls` set
+6. ✅ **ETags for efficient change detection** - Fully implemented
+
+### Identified Gaps:
+
+#### 1. **New page added to existing framework** ⚠️
+- **Issue**: Only pages referenced in existing JSON files are discovered
+- **Gap**: Hidden or newly added pages not linked from existing pages won't be found
+- **Fix**: Need periodic full re-discovery or monitoring of framework changes
+
+#### 2. **Page removed/deprecated** ❌ 
+- **Issue**: No mechanism to detect and clean up removed pages
+- **Gap**: Orphaned markdown files remain in documentation folder
+- **Fix**: Need to track all scraped files and compare with current discovery
+
+#### 3. **Cross-framework references** ⚠️
+- **Issue**: Currently filtered out (only same-framework refs processed)
+- **Gap**: Cross-framework links become broken in local documentation
+- **Fix**: Option to include cross-framework refs or convert to Apple URLs
+
+#### 4. **Hidden/unlisted pages** ❌
+- **Issue**: Only JSON-referenced pages are discovered
+- **Gap**: Direct-access pages without references are missed
+- **Fix**: Need URL pattern scanning or sitemap.xml if available
+
+#### 5. **Race conditions** ✅
+- **Non-issue**: Single-threaded per framework prevents races
+- **Note**: Multiple frameworks can run concurrently safely
+
+#### 6. **Incremental framework detection** ⚠️
+- **Issue**: Always fetches all frameworks, no change detection
+- **Gap**: Can't detect when framework list itself changes
+- **Fix**: Store and compare technologies.json ETag
+
+### Recommended Fixes:
+
+1. **Orphan Detection System**:
+   ```python
+   # After discovery, compare with existing files
+   existing_files = set(glob(f"{output_dir}/**/*.md"))
+   current_urls = set(discovered_urls)
+   orphaned = existing_files - current_urls
+   ```
+
+2. **Full Re-discovery Mode**:
+   ```python
+   # Add --full-rediscovery flag to ignore ETags for discovery
+   # Useful for finding new unreferenced pages
+   ```
+
+3. **Cross-Framework Reference Handling**:
+   ```python
+   # Add config option for cross-framework handling
+   # Either: include refs, convert to URLs, or create stub pages
+   ```
+
+4. **URL Pattern Discovery**:
+   ```python
+   # Probe common patterns like:
+   # /documentation/{framework}/getting-started
+   # /documentation/{framework}/release-notes
+   ```
+
 - **NEVER create mock data or simplified components** unless explicitly told to do so
 - **NEVER replace existing complex components with simplified versions** - always fix the actual problem
 - **ALWAYS work with the existing codebase** - do not create new simplified alternatives
@@ -120,12 +190,14 @@ Create a comprehensive Python scraper to mirror Apple's entire developer documen
    - ✅ Optimized async HTTP (0.2s delays, 10 concurrent)
    - ✅ JSON to Markdown conversion with proper formatting
    - ✅ Memory management and error handling implemented
+   - ✅ ETag-based optimization for efficient incremental updates
 
-3. **Phased Rollout** 🚀 READY!
-   - **READY**: SwiftUI pilot (~1,500 pages in ~5 minutes)
-   - **Next**: Core frameworks (UIKit, Foundation, Swift)
-   - **Future**: Complete all 150+ frameworks (~3 hours total)
-   - ✅ Hash-based incremental update system ready
+3. **Production Deployment** ✅ COMPLETE!
+   - ✅ All 341 frameworks scraped (278,778 pages total)
+   - ✅ ETag collection complete for efficient updates
+   - ✅ Hash-based incremental update system operational
+   - ✅ Comprehensive test coverage for critical functionality
+   - ✅ Production scripts cleaned and optimized
 
 ## Code Quality Checklist
 

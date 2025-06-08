@@ -17,21 +17,19 @@ The Address Book is a centralized database containing contacts and their persona
 
 > ❗ **Important**:  Do not use the AddressBook framework in macOS 10.11 and later. Use the APIs defined in the [`Contacts`](https://developer.apple.com/documentation/Contacts) framework instead.
 
- Do not use the AddressBook framework in macOS 10.11 and later. Use the APIs defined in the [`Contacts`](https://developer.apple.com/documentation/Contacts) framework instead.
-
 ## Topics
 
 ### Essentials
-- [class ABAddressBook](abaddressbook-swift.class.md)
+- [class ABAddressBook](abaddressbook.md)
   The main object you use to access the Address Book database.
 ### Data Types
 - [class ABPerson](abperson.md)
   An object that encapsulates all information about a person in the Address Book database.
 - [class ABGroup](abgroup.md)
   An object that represents a group of records in the Address Book database.
-- [class ABMultiValue](abmultivalue-swift.class.md)
+- [class ABMultiValue](abmultivalue.md)
   An immutable representation of a property that might have multiple values.
-- [class ABMutableMultiValue](abmutablemultivalue-swift.class.md)
+- [class ABMutableMultiValue](abmutablemultivalue.md)
   A mutable representation of a property that might have multiple values.
 - [protocol ABImageClient](abimageclient.md)
   Methods for responding to a request to load images associated with a contact.

@@ -1,0 +1,2259 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T19:48:50.392543",
+    "total_pages": 375,
+    "etags_collected": "2025-06-07T19:48:50.392560"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/MarketplaceKit.json": {
+      "hash": "5c35f273f840ef8c0dac1e2b7cd92131640684eed3f8995439dd6d8058d6a277",
+      "last_checked": "2025-06-06T03:02:40.369818",
+      "status": "new",
+      "etag": "W/\"aa263b649e0510c63bf344226c5b0ce8\""
+    },
+    "https://developer.apple.com/documentation/MarketplaceKit": {
+      "hash": "7a8d1e822c6881a1c7c8b0e232b7d153a5b2ca2a92c351f0509db67a2acfe2bc",
+      "last_checked": "2025-06-06T03:02:40.369968",
+      "status": "unchanged",
+      "etag": "bc6162b14b5d959ca1fec47a4981a029"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit.json": {
+      "hash": "7a8d1e822c6881a1c7c8b0e232b7d153a5b2ca2a92c351f0509db67a2acfe2bc",
+      "last_checked": "2025-06-06T03:02:40.369968",
+      "status": "unchanged",
+      "etag": "W/\"aa263b649e0510c63bf344226c5b0ce8\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/creating-an-alternative-app-marketplace.json": {
+      "hash": "5f186d2d8a254ca6e77198fcd569ac5b72c0fe777ea71a230791c05ad0ea5902",
+      "last_checked": "2025-06-06T03:02:41.271107",
+      "status": "unchanged",
+      "etag": "W/\"f260c05efdf594438025997988268e24\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/creating-an-alternative-app-marketplace": {
+      "hash": "5f186d2d8a254ca6e77198fcd569ac5b72c0fe777ea71a230791c05ad0ea5902",
+      "last_checked": "2025-06-06T03:02:41.271107",
+      "status": "unchanged",
+      "etag": "5e766ae0c97bca7b727cda9025482235"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/distributing-your-app-from-your-website.json": {
+      "hash": "b0aa226acfb0ceaed0064ffde3763c2ddfd9c05888dd0107fbbc026834042b4b",
+      "last_checked": "2025-06-06T03:02:41.777317",
+      "status": "unchanged",
+      "etag": "W/\"e21f16d93f9fd900468bd821d0eb00e9\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/distributing-your-app-from-your-website": {
+      "hash": "b0aa226acfb0ceaed0064ffde3763c2ddfd9c05888dd0107fbbc026834042b4b",
+      "last_checked": "2025-06-06T03:02:41.777317",
+      "status": "unchanged",
+      "etag": "94001aa3a533c19cb1b39cc6ee9d0a4a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/distributing-your-app-on-an-alternative-marketplace.json": {
+      "hash": "094baf891d76adfb06bedb70bb357ddd8c956e18a58f6494b9a773d652458a22",
+      "last_checked": "2025-06-06T03:02:42.158464",
+      "status": "unchanged",
+      "etag": "W/\"42ccf95cff5230fc8780f5c9cfee5a03\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/distributing-your-app-on-an-alternative-marketplace": {
+      "hash": "094baf891d76adfb06bedb70bb357ddd8c956e18a58f6494b9a773d652458a22",
+      "last_checked": "2025-06-06T03:02:42.158464",
+      "status": "unchanged",
+      "etag": "cf0be3c1bb1e3dd17350d93361b3440b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/processing-alternative-marketplace-notifications.json": {
+      "hash": "e34f130e1799a942690b83c69d069c6ef4c4d6eca6237c01c36518a1e74be47b",
+      "last_checked": "2025-06-06T03:02:42.557773",
+      "status": "unchanged",
+      "etag": "W/\"e24a4144c180fae4fed160067d4e284a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/processing-alternative-marketplace-notifications": {
+      "hash": "e34f130e1799a942690b83c69d069c6ef4c4d6eca6237c01c36518a1e74be47b",
+      "last_checked": "2025-06-06T03:02:42.557773",
+      "status": "unchanged",
+      "etag": "0ee300954b7beac4585758493e2d61fa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/ingesting-an-alternative-distribution-package.json": {
+      "hash": "f3dc74ff68b81a670b783735baf5a384a081b61fc49f2e6e5970ac543258e222",
+      "last_checked": "2025-06-06T03:02:42.943698",
+      "status": "unchanged",
+      "etag": "W/\"79000cd696c7a7628a2f311c59a6d284\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/ingesting-an-alternative-distribution-package": {
+      "hash": "f3dc74ff68b81a670b783735baf5a384a081b61fc49f2e6e5970ac543258e222",
+      "last_checked": "2025-06-06T03:02:42.943698",
+      "status": "unchanged",
+      "etag": "c864f925babd9dbc35dde422acb2958e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installing-your-app-from-your-website.json": {
+      "hash": "c7e397b11ab2bf0514e8fedb062010f907a7a4bf4e948c234e6ec3c0ac72e3e9",
+      "last_checked": "2025-06-06T03:02:43.309350",
+      "status": "unchanged",
+      "etag": "W/\"1b80a3f2c4b636bdc7dd6e6babb81977\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website": {
+      "hash": "c7e397b11ab2bf0514e8fedb062010f907a7a4bf4e948c234e6ec3c0ac72e3e9",
+      "last_checked": "2025-06-06T03:02:43.309350",
+      "status": "unchanged",
+      "etag": "98ce38d0e8a5dd7cb2417b789bd08316"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installing-apps-from-an-alternative-marketplace.json": {
+      "hash": "4cc1386096fd7d6b589c9298b5d441497abdf20f8e049aa372b86261621d1f82",
+      "last_checked": "2025-06-06T03:02:43.712103",
+      "status": "unchanged",
+      "etag": "W/\"5b261035bb519f5b0a848b5d71728583\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installing-apps-from-an-alternative-marketplace": {
+      "hash": "4cc1386096fd7d6b589c9298b5d441497abdf20f8e049aa372b86261621d1f82",
+      "last_checked": "2025-06-06T03:02:43.712103",
+      "status": "unchanged",
+      "etag": "d2599bfd2da587f173986edf8d0a8f19"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/supplying-an-install-verification-token.json": {
+      "hash": "28aba99bb5ba5b178b0fc76a75550da7d19c14341c6047c56917efdcf727ef86",
+      "last_checked": "2025-06-06T03:02:44.090794",
+      "status": "unchanged",
+      "etag": "W/\"ede80abb025afd6d3d4a642be611493c\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/supplying-an-install-verification-token": {
+      "hash": "28aba99bb5ba5b178b0fc76a75550da7d19c14341c6047c56917efdcf727ef86",
+      "last_checked": "2025-06-06T03:02:44.090794",
+      "status": "unchanged",
+      "etag": "b38f463bfcfe5fe3f1c954d36b9986cb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/reauthenticating-a-person-to-manage-apps.json": {
+      "hash": "e54a8d945ec25a074749c7e97af93bdcc94f2698031f78d7ab33ca6a4674025c",
+      "last_checked": "2025-06-06T19:39:49.240584",
+      "status": "unchanged",
+      "etag": "W/\"4135bc5d20d092daf97d3c10ad104c1c\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/reauthenticating-a-person-to-manage-apps": {
+      "hash": "0046965ec1f1a619f261ce28d9c9386fd70c38f5efabe83451045c77a91e4457",
+      "last_checked": "2025-06-06T03:02:44.493252",
+      "status": "unchanged",
+      "etag": "c35df5ea83ceba7e6d7bfb6d43aed21d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser.json": {
+      "hash": "429c97281e4621d8928e3ff572232228494404d1f075c40b2ac0ccd1d23cf401",
+      "last_checked": "2025-06-06T03:02:44.864731",
+      "status": "unchanged",
+      "etag": "W/\"93804a6bdf6e173f2ee3b39959b7900b\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser": {
+      "hash": "429c97281e4621d8928e3ff572232228494404d1f075c40b2ac0ccd1d23cf401",
+      "last_checked": "2025-06-06T03:02:44.864731",
+      "status": "unchanged",
+      "etag": "ce4d58b99b2e7bc45a785be32fb65f38"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary.json": {
+      "hash": "89e3564ed3a2d81c26d3142479956c03b22bca646536993c4850075caf80b403",
+      "last_checked": "2025-06-06T03:02:45.226799",
+      "status": "unchanged",
+      "etag": "W/\"a67df05861a3949ac16ab36638b71297\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary": {
+      "hash": "89e3564ed3a2d81c26d3142479956c03b22bca646536993c4850075caf80b403",
+      "last_checked": "2025-06-06T03:02:45.226799",
+      "status": "unchanged",
+      "etag": "4cb0bb7ca1efd6c26115110cba047c24"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion.json": {
+      "hash": "0477eceaf302108ecf044d961d30c37f4d5f6bb30c522cd6fb7beb1365122684",
+      "last_checked": "2025-06-06T03:02:45.593546",
+      "status": "unchanged",
+      "etag": "W/\"c4a318cc0b3d827c8b14fcaa06665c87\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appversion": {
+      "hash": "0477eceaf302108ecf044d961d30c37f4d5f6bb30c522cd6fb7beb1365122684",
+      "last_checked": "2025-06-06T03:02:45.593546",
+      "status": "unchanged",
+      "etag": "8d44ee605138ac16d996932fd8691d9c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate.json": {
+      "hash": "3265fbbcf1c785f84508a82a460b05caa39cf58097036d411e6e9388ac002424",
+      "last_checked": "2025-06-06T03:02:45.992214",
+      "status": "unchanged",
+      "etag": "W/\"37480c58c9b48089172b17d8b333416a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/automaticupdate": {
+      "hash": "3265fbbcf1c785f84508a82a460b05caa39cf58097036d411e6e9388ac002424",
+      "last_checked": "2025-06-06T03:02:45.992214",
+      "status": "unchanged",
+      "etag": "e4439da47d8275cd8a3cad7412559213"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements.json": {
+      "hash": "8a8781c03e3a2474b57a8de9103ec144b2cb4ce66d2ffc0cd5ed3d36e45a0ca6",
+      "last_checked": "2025-06-06T03:02:46.418371",
+      "status": "unchanged",
+      "etag": "W/\"01c1cd277aa620259e2d15f131eca136\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installrequirements": {
+      "hash": "8a8781c03e3a2474b57a8de9103ec144b2cb4ce66d2ffc0cd5ed3d36e45a0ca6",
+      "last_checked": "2025-06-06T03:02:46.418371",
+      "status": "unchanged",
+      "etag": "3c11fc12a1288e7421446b3f36369d52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appleitemid.json": {
+      "hash": "4384fce909fe560cee8a36c59bed81089d2698a3650bf8606d0db321445ad3ea",
+      "last_checked": "2025-06-06T03:02:46.772895",
+      "status": "unchanged",
+      "etag": "W/\"987e1d08c76695a1a267019dc2a357ea\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appleitemid": {
+      "hash": "4384fce909fe560cee8a36c59bed81089d2698a3650bf8606d0db321445ad3ea",
+      "last_checked": "2025-06-06T03:02:46.772895",
+      "status": "unchanged",
+      "etag": "ffddfb68a66d1795fad71b2a12da1d89"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appleversionid.json": {
+      "hash": "a406a5c05d43cc08ec0fdf2705ebb464ecda2b509fec9822dd2b0fed56316e69",
+      "last_checked": "2025-06-06T03:02:47.175100",
+      "status": "unchanged",
+      "etag": "W/\"8ab33a03acbc216b029ebfc8aa3f0b3b\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appleversionid": {
+      "hash": "a406a5c05d43cc08ec0fdf2705ebb464ecda2b509fec9822dd2b0fed56316e69",
+      "last_checked": "2025-06-06T03:02:47.175100",
+      "status": "unchanged",
+      "etag": "17f1df32e3ea7694d1dd80e04c04280a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiturischeme.json": {
+      "hash": "dc1f3d1e871361294d77056b22a6689caaff347b9c69b729558429febcbd538b",
+      "last_checked": "2025-06-06T19:39:45.726991",
+      "status": "unchanged",
+      "etag": "W/\"236b25e5ff885471f55309963d3c6d73\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiturischeme": {
+      "hash": "d759e146f2d15c13358ca5cde043b8ddef9a56cfac4d352bcd517943d331149d",
+      "last_checked": "2025-06-06T03:02:47.543663",
+      "status": "unchanged",
+      "etag": "a4d44908c9acdc06fa63edef5c519679"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension.json": {
+      "hash": "aac31a2e775cfd386d4422886f56b04da6ca29da2e82862f5f973034b3cb7340",
+      "last_checked": "2025-06-06T03:02:47.906985",
+      "status": "unchanged",
+      "etag": "W/\"e957a6a1a1f645f26c2438dc3e4e172e\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplaceextension": {
+      "hash": "aac31a2e775cfd386d4422886f56b04da6ca29da2e82862f5f973034b3cb7340",
+      "last_checked": "2025-06-06T03:02:47.906985",
+      "status": "unchanged",
+      "etag": "01c1ab1e93feb45e33802683844f7261"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextensionconfiguration.json": {
+      "hash": "e5a445922b60391512111609647f2edba1fe6678b08a575ae319d713190a9cf1",
+      "last_checked": "2025-06-06T03:02:48.297731",
+      "status": "unchanged",
+      "etag": "W/\"a80d39f55b1feaadfd4609abfc2f7d46\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplaceextensionconfiguration": {
+      "hash": "e5a445922b60391512111609647f2edba1fe6678b08a575ae319d713190a9cf1",
+      "last_checked": "2025-06-06T03:02:48.297731",
+      "status": "unchanged",
+      "etag": "554ec9ad1f78923a17b7ce6a36168f57"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton.json": {
+      "hash": "a99670472c415971f2f5118819f818641c4a20fd91fd2e62192664f58965b696",
+      "last_checked": "2025-06-06T03:02:48.718381",
+      "status": "unchanged",
+      "etag": "W/\"b5190a89a019095ab07eddc41dd1e537\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton": {
+      "hash": "a99670472c415971f2f5118819f818641c4a20fd91fd2e62192664f58965b696",
+      "last_checked": "2025-06-06T03:02:48.718381",
+      "status": "unchanged",
+      "etag": "1572428c604255263537638f992db1c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata.json": {
+      "hash": "e7fdaa53cd8da0837a7a8fea88fb5e95ccfa292853b154c300052852eb36d6be",
+      "last_checked": "2025-06-06T03:02:49.131449",
+      "status": "unchanged",
+      "etag": "W/\"f7ea69728137650fc3dfd1ea80fb54c5\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installmetadata": {
+      "hash": "e7fdaa53cd8da0837a7a8fea88fb5e95ccfa292853b154c300052852eb36d6be",
+      "last_checked": "2025-06-06T03:02:49.131449",
+      "status": "unchanged",
+      "etag": "2187bfcbd7caad5fee423b77ebd5826b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration.json": {
+      "hash": "f52054fe1eee0d3aea67294ddbec6f6691ee26bd94394100d2c6a04611503cb0",
+      "last_checked": "2025-06-06T03:02:49.565514",
+      "status": "unchanged",
+      "etag": "W/\"500a7117f1e68caf4ab30c49694b6bc2\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installconfiguration": {
+      "hash": "f52054fe1eee0d3aea67294ddbec6f6691ee26bd94394100d2c6a04611503cb0",
+      "last_checked": "2025-06-06T03:02:49.565514",
+      "status": "unchanged",
+      "etag": "9c07deda1d60151d77441e31215250e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfirmationresult.json": {
+      "hash": "18f8902659cacd433802c7abf283b1de9c7254216119e3c4f533fe978834b032",
+      "last_checked": "2025-06-06T03:02:49.968125",
+      "status": "unchanged",
+      "etag": "W/\"c66cc1470d4995afe40b607784061423\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installconfirmationresult": {
+      "hash": "18f8902659cacd433802c7abf283b1de9c7254216119e3c4f533fe978834b032",
+      "last_checked": "2025-06-06T03:02:49.968125",
+      "status": "unchanged",
+      "etag": "a62f58d6ae02f60092bac07d510be06f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration.json": {
+      "hash": "7b257ca98b7f71b7d3cfbaf6c10e9774b3ae1bf4b4303f3820d3e2af3b9910af",
+      "last_checked": "2025-06-06T03:02:50.365021",
+      "status": "unchanged",
+      "etag": "W/\"17c4875412da0d7565762a88f4df1284\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/batchinstallconfiguration": {
+      "hash": "7b257ca98b7f71b7d3cfbaf6c10e9774b3ae1bf4b4303f3820d3e2af3b9910af",
+      "last_checked": "2025-06-06T03:02:50.365021",
+      "status": "unchanged",
+      "etag": "30a8830c9239149123dc43274da4bff2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult.json": {
+      "hash": "fa01d7c8f999dc0065f97f088049829ed303217f86683e2186e2c880cd656ff2",
+      "last_checked": "2025-06-06T03:02:50.678498",
+      "status": "unchanged",
+      "etag": "W/\"7da212fe24f821885fe62ba0e1e5f34a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/batchinstallconfirmationresult": {
+      "hash": "fa01d7c8f999dc0065f97f088049829ed303217f86683e2186e2c880cd656ff2",
+      "last_checked": "2025-06-06T03:02:50.678498",
+      "status": "unchanged",
+      "etag": "8343561c0953bacc96128742a2e2f81e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption.json": {
+      "hash": "b93d5850edddc262bbff38cf0dd75eb2eab95db6ba97a9fee605b7153500c947",
+      "last_checked": "2025-06-06T03:02:51.079508",
+      "status": "unchanged",
+      "etag": "W/\"089f18a3169a5d987a274c135c646286\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacedisplayoption": {
+      "hash": "b93d5850edddc262bbff38cf0dd75eb2eab95db6ba97a9fee605b7153500c947",
+      "last_checked": "2025-06-06T03:02:51.079508",
+      "status": "unchanged",
+      "etag": "fb839288e3477f7d9592760d941b7c27"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacescenedelegate.json": {
+      "hash": "ddc2b87823cd4b5a625033ba1540e68c7b0692949ef46ef8ed30ae9ef59aa7b8",
+      "last_checked": "2025-06-06T03:02:51.438955",
+      "status": "unchanged",
+      "etag": "W/\"d292667cd0c57352b69b3e5b8c2f9e76\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacescenedelegate": {
+      "hash": "ddc2b87823cd4b5a625033ba1540e68c7b0692949ef46ef8ed30ae9ef59aa7b8",
+      "last_checked": "2025-06-06T03:02:51.438955",
+      "status": "unchanged",
+      "etag": "9cae997920dc6d621dc6f8cafaf80032"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor.json": {
+      "hash": "08c614de1fdb1b1484d6f24fa35447acca16983ddf7221d5927fe9c972861958",
+      "last_checked": "2025-06-06T03:02:51.848312",
+      "status": "unchanged",
+      "etag": "W/\"b785dea03983430dd85ae93f1c176dc0\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appdistributor": {
+      "hash": "08c614de1fdb1b1484d6f24fa35447acca16983ddf7221d5927fe9c972861958",
+      "last_checked": "2025-06-06T03:02:51.848312",
+      "status": "unchanged",
+      "etag": "24068901db0204e0590ba9358dd49f8b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror.json": {
+      "hash": "dba5ee6c86b2f4518a80a549fd093453e89e6fecbea5d9ede478a5bf6984cf42",
+      "last_checked": "2025-06-06T03:02:52.207362",
+      "status": "unchanged",
+      "etag": "W/\"30940d1f37e4e98aeb812d415520c27c\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror": {
+      "hash": "dba5ee6c86b2f4518a80a549fd093453e89e6fecbea5d9ede478a5bf6984cf42",
+      "last_checked": "2025-06-06T03:02:52.207362",
+      "status": "unchanged",
+      "etag": "e8c44e120a3040a2f016c9dda5addd40"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/searchterritory.json": {
+      "hash": "54fb059218955ec112b25d5fe1121aa0376775e669ff3fa0e1e877f52662695b",
+      "last_checked": "2025-06-06T03:02:52.566810",
+      "status": "unchanged",
+      "etag": "W/\"030fef7e6b17ea545cd91579071af107\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/searchterritory": {
+      "hash": "54fb059218955ec112b25d5fe1121aa0376775e669ff3fa0e1e877f52662695b",
+      "last_checked": "2025-06-06T03:02:52.566810",
+      "status": "unchanged",
+      "etag": "2e6cab855a4b39e518521e6f0323e438"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/setsearchterritory(_:).json": {
+      "hash": "00f3aed066bd85a4b5a5bf95dea8a8d398e00682e4e91c7a30b09fd96d1698cc",
+      "last_checked": "2025-06-06T03:02:52.993976",
+      "status": "unchanged",
+      "etag": "W/\"1cc7922a455396c7a33e909c1e223d4b\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/setsearchterritory(_:)": {
+      "hash": "00f3aed066bd85a4b5a5bf95dea8a8d398e00682e4e91c7a30b09fd96d1698cc",
+      "last_checked": "2025-06-06T03:02:52.993976",
+      "status": "unchanged",
+      "etag": "fee726e523a42c96787e9f08a21241db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app.json": {
+      "hash": "65f291a948772104e161b3b40826a06100e9056f0ec37567420022683ee47152",
+      "last_checked": "2025-06-06T03:02:53.395086",
+      "status": "unchanged",
+      "etag": "W/\"fb6c93250f183f9f92830653c90badd7\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app": {
+      "hash": "65f291a948772104e161b3b40826a06100e9056f0ec37567420022683ee47152",
+      "last_checked": "2025-06-06T03:02:53.395086",
+      "status": "unchanged",
+      "etag": "25a66c974ffff7a02057a484a912d0b3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest.json": {
+      "hash": "0397bc66697ccfd62fb7edb69440a7ffd25c3afedaa85ddbec1a1e930f840420",
+      "last_checked": "2025-06-06T03:02:53.755135",
+      "status": "unchanged",
+      "etag": "W/\"45280b3595ae5112571d2e1697ca37ae\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest": {
+      "hash": "0397bc66697ccfd62fb7edb69440a7ffd25c3afedaa85ddbec1a1e930f840420",
+      "last_checked": "2025-06-06T03:02:53.755135",
+      "status": "unchanged",
+      "etag": "18e9672fcb7fed9301898b87013fc206"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installedapps.json": {
+      "hash": "1a412823d40702d1a962d994b7e36bf062ca312f70133d8d348c124274059017",
+      "last_checked": "2025-06-06T03:02:54.135091",
+      "status": "unchanged",
+      "etag": "W/\"74cd577039e17c551d5d357ffb791e67\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/installedapps": {
+      "hash": "1a412823d40702d1a962d994b7e36bf062ca312f70133d8d348c124274059017",
+      "last_checked": "2025-06-06T03:02:54.135091",
+      "status": "unchanged",
+      "etag": "d2687934c9a3a87528c2fe8bc1af2b5c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installingapps.json": {
+      "hash": "614b6f9638b78aaf48c570013dbf2bdf18847a92915ca5feebeb763e6beb68ed",
+      "last_checked": "2025-06-06T03:02:54.534824",
+      "status": "unchanged",
+      "etag": "W/\"19171281aa4081ee71bae7be1da170e1\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/installingapps": {
+      "hash": "614b6f9638b78aaf48c570013dbf2bdf18847a92915ca5feebeb763e6beb68ed",
+      "last_checked": "2025-06-06T03:02:54.534824",
+      "status": "unchanged",
+      "etag": "8e86b9dfecd500fadc91128c67a1eb42"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/isloading.json": {
+      "hash": "59a210f83de2e8a218e8503e0980725b8ca734e6125e954b2234413f890e0e91",
+      "last_checked": "2025-06-06T03:02:54.944068",
+      "status": "unchanged",
+      "etag": "W/\"08d1fff91ae1ebf4d164604177dacd34\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/isloading": {
+      "hash": "59a210f83de2e8a218e8503e0980725b8ca734e6125e954b2234413f890e0e91",
+      "last_checked": "2025-06-06T03:02:54.944068",
+      "status": "unchanged",
+      "etag": "57665682beab7cbda164e0710881fd56"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app(forappleitemid:).json": {
+      "hash": "5f504d063dbbc61e3de9f5ab43880fd2108cdd7ea7eb280e4b700d3720e6c539",
+      "last_checked": "2025-06-06T03:02:55.350611",
+      "status": "unchanged",
+      "etag": "W/\"bcd0c81bd665870d17614d7191e172ae\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app(forappleitemid:)": {
+      "hash": "5f504d063dbbc61e3de9f5ab43880fd2108cdd7ea7eb280e4b700d3720e6c539",
+      "last_checked": "2025-06-06T03:02:55.350611",
+      "status": "unchanged",
+      "etag": "f37264048d6322fc33eb95ad77ca4f31"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/didauthenticate(account:).json": {
+      "hash": "32a20f544cc37eb3ddb491ccb01331c4b35bf38c1331d31b43e27b6896577187",
+      "last_checked": "2025-06-06T03:02:55.676163",
+      "status": "unchanged",
+      "etag": "W/\"1755859dd87c67a684aa979dd1c7792a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/didauthenticate(account:)": {
+      "hash": "32a20f544cc37eb3ddb491ccb01331c4b35bf38c1331d31b43e27b6896577187",
+      "last_checked": "2025-06-06T03:02:55.676163",
+      "status": "unchanged",
+      "etag": "f7e09fdafd61d80a64b44477f4139a59"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappinstallation(_:).json": {
+      "hash": "0d88db54d49402e2c121ca4958f224b88205d560db88ebd902f89836b51694bb",
+      "last_checked": "2025-06-06T03:02:56.043035",
+      "status": "unchanged",
+      "etag": "W/\"060ce773b8463bc70c665d853f5debef\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/requestappinstallation(_:)": {
+      "hash": "0d88db54d49402e2c121ca4958f224b88205d560db88ebd902f89836b51694bb",
+      "last_checked": "2025-06-06T03:02:56.043035",
+      "status": "unchanged",
+      "etag": "7a05215079e9bced8dad850ff21126f2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappinstallation(for:account:installverificationtoken:).json": {
+      "hash": "65d9c504465f06e02ad6ae2afc27815ed830570631c1d006d511146a978918a7",
+      "last_checked": "2025-06-06T03:02:56.408853",
+      "status": "unchanged",
+      "etag": "W/\"c6d5b353c5a4152fe19993f87d37fbb1\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/requestappinstallation(for:account:installverificationtoken:)": {
+      "hash": "65d9c504465f06e02ad6ae2afc27815ed830570631c1d006d511146a978918a7",
+      "last_checked": "2025-06-06T03:02:56.408853",
+      "status": "unchanged",
+      "etag": "6b4e69775184aa5c5929e51644625b56"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappinstallationfrombrowser(for:referrer:).json": {
+      "hash": "655e6dce446a216fef745023b24863bf9c1fc142b0526a082bbdffd2c3c68900",
+      "last_checked": "2025-06-06T03:02:56.802313",
+      "status": "unchanged",
+      "etag": "W/\"ebe2daa4b1fa2ad1fc7c4c69302fc142\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/requestappinstallationfrombrowser(for:referrer:)": {
+      "hash": "655e6dce446a216fef745023b24863bf9c1fc142b0526a082bbdffd2c3c68900",
+      "last_checked": "2025-06-06T03:02:56.802313",
+      "status": "unchanged",
+      "etag": "c77ddb78df1aba61731c8dfe78c679cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappupdate(_:).json": {
+      "hash": "16df07783c7580c92d0c7aa00f4e1173948e43763d966876f6431d44622eac4d",
+      "last_checked": "2025-06-06T03:02:57.188114",
+      "status": "unchanged",
+      "etag": "W/\"a608c8745617a5efc04ce18e74471362\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/requestappupdate(_:)": {
+      "hash": "16df07783c7580c92d0c7aa00f4e1173948e43763d966876f6431d44622eac4d",
+      "last_checked": "2025-06-06T03:02:57.188114",
+      "status": "unchanged",
+      "etag": "69b69d81a1f3d8fb2cf23065fde68ea6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappupdate(for:account:installverificationtoken:).json": {
+      "hash": "cc3293afdc510a9b2cf7132229d55d47bfc9c55f4926de6d4d268b5ed7c6bee0",
+      "last_checked": "2025-06-06T03:02:57.544598",
+      "status": "unchanged",
+      "etag": "W/\"1070b172ad998fa6153b5daf8e4fd8d7\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/requestappupdate(for:account:installverificationtoken:)": {
+      "hash": "cc3293afdc510a9b2cf7132229d55d47bfc9c55f4926de6d4d268b5ed7c6bee0",
+      "last_checked": "2025-06-06T03:02:57.544598",
+      "status": "unchanged",
+      "etag": "9050829b1664ed3ea9b63198fd6d746a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestlicenserenewal(appleitemids:).json": {
+      "hash": "f14e783ebe48cada309a1f5964716491a0979ffcb4bbca4812eecb2e7f1554fd",
+      "last_checked": "2025-06-06T03:02:57.878703",
+      "status": "unchanged",
+      "etag": "W/\"f76f6a0a06d606e15680a7d90b385747\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/requestlicenserenewal(appleitemids:)": {
+      "hash": "f14e783ebe48cada309a1f5964716491a0979ffcb4bbca4812eecb2e7f1554fd",
+      "last_checked": "2025-06-06T03:02:57.878703",
+      "status": "unchanged",
+      "etag": "35450cd8aa17f6c8db17da05d3ccc8b7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/current.json": {
+      "hash": "191b4b477d8ad7693eda1668f2e26cf0891e7a0520ee04326486490aeae162f7",
+      "last_checked": "2025-06-06T03:02:58.244372",
+      "status": "unchanged",
+      "etag": "W/\"2478ece95fbeb98303e6a3a2575d88b6\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/current": {
+      "hash": "191b4b477d8ad7693eda1668f2e26cf0891e7a0520ee04326486490aeae162f7",
+      "last_checked": "2025-06-06T03:02:58.244372",
+      "status": "unchanged",
+      "etag": "c2251f7b1a284361a33723d83df0ae9e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion/init(appleitemid:appleversionid:).json": {
+      "hash": "c7d4b24b17b18aad9e183c53ff2379f3284d8d8f60237262d899ad3285243ef9",
+      "last_checked": "2025-06-06T03:02:58.610693",
+      "status": "unchanged",
+      "etag": "W/\"8185aa1cd44c3f85c487de7ac5accc2f\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appversion/init(appleitemid:appleversionid:)": {
+      "hash": "c7d4b24b17b18aad9e183c53ff2379f3284d8d8f60237262d899ad3285243ef9",
+      "last_checked": "2025-06-06T03:02:58.610693",
+      "status": "unchanged",
+      "etag": "00a730abb3970946bed28e92e80c6579"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion/appleitemid.json": {
+      "hash": "0af84217c535cccdc405f14246838f2c5a9b5c747daf90927f975d6608eb1092",
+      "last_checked": "2025-06-06T03:02:59.011464",
+      "status": "unchanged",
+      "etag": "W/\"5eb6c4080f65f6d9621b9ea00f6b0b46\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appversion/appleitemid": {
+      "hash": "0af84217c535cccdc405f14246838f2c5a9b5c747daf90927f975d6608eb1092",
+      "last_checked": "2025-06-06T03:02:59.011464",
+      "status": "unchanged",
+      "etag": "7460d4c70e6e7b7b7060b027cd43e5e1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion/appleversionid.json": {
+      "hash": "509cd0d843f49a4dc83ed0cd60a1dfa9598462267940ae0fc804404227635052",
+      "last_checked": "2025-06-06T03:02:59.381858",
+      "status": "unchanged",
+      "etag": "W/\"f2f19ae2873cc259efd0ffe4e42e3a67\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appversion/appleversionid": {
+      "hash": "509cd0d843f49a4dc83ed0cd60a1dfa9598462267940ae0fc804404227635052",
+      "last_checked": "2025-06-06T03:02:59.381858",
+      "status": "unchanged",
+      "etag": "05ce2c1eb58aa4a266aabffed1045c3e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion/description.json": {
+      "hash": "e573a984d35a326275e5c96eda081586cc5a02e02e13285bfb3d85a974672d77",
+      "last_checked": "2025-06-06T03:02:59.762455",
+      "status": "unchanged",
+      "etag": "W/\"243a27b4dd81b5420bc39f8c9c86e0ec\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appversion/description": {
+      "hash": "e573a984d35a326275e5c96eda081586cc5a02e02e13285bfb3d85a974672d77",
+      "last_checked": "2025-06-06T03:02:59.762455",
+      "status": "unchanged",
+      "etag": "9ab77bb96605fdd81198658d1e522a13"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/init(appleitemid:alternativedistributionpackage:account:installverificationtoken:).json": {
+      "hash": "c730dd7f9276fce3c2d5a1070311971d0a50b2970ad0be70c7aac8da8b5a094b",
+      "last_checked": "2025-06-06T03:03:00.139642",
+      "status": "unchanged",
+      "etag": "W/\"154700408fb786faeebca7bec39b4856\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/automaticupdate/init(appleitemid:alternativedistributionpackage:account:installverificationtoken:)": {
+      "hash": "c730dd7f9276fce3c2d5a1070311971d0a50b2970ad0be70c7aac8da8b5a094b",
+      "last_checked": "2025-06-06T03:03:00.139642",
+      "status": "unchanged",
+      "etag": "1c791199d359f2da8b69abf892ce72f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/account.json": {
+      "hash": "297a56f3b820afd1d80d775bb09ef330c8383aa39dbfc8b271c7874a1103b033",
+      "last_checked": "2025-06-06T03:03:00.530336",
+      "status": "unchanged",
+      "etag": "W/\"786a312b6ab00b3f04c5e7e186ed4404\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/automaticupdate/account": {
+      "hash": "297a56f3b820afd1d80d775bb09ef330c8383aa39dbfc8b271c7874a1103b033",
+      "last_checked": "2025-06-06T03:03:00.530336",
+      "status": "unchanged",
+      "etag": "b842029574ef8e9d776bc15a046c78b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/alternativedistributionpackage.json": {
+      "hash": "99435ffe9201e423134e7e4c15281ee4db2356e6d2ae0932fb61aea6ca3aad96",
+      "last_checked": "2025-06-06T03:03:00.940203",
+      "status": "unchanged",
+      "etag": "W/\"87b0d6499369524c701257b62f242911\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/automaticupdate/alternativedistributionpackage": {
+      "hash": "99435ffe9201e423134e7e4c15281ee4db2356e6d2ae0932fb61aea6ca3aad96",
+      "last_checked": "2025-06-06T03:03:00.940203",
+      "status": "unchanged",
+      "etag": "aafc4c49c2c28649808d77d71cb51533"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/appshareurl.json": {
+      "hash": "0cbd8e6628061a6f9de85778688f019636e63041abf6b952562a36d745bbcd7c",
+      "last_checked": "2025-06-06T03:03:01.345119",
+      "status": "unchanged",
+      "etag": "W/\"3bd6d4f690b10988e99fa57639dc834e\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/automaticupdate/appshareurl": {
+      "hash": "0cbd8e6628061a6f9de85778688f019636e63041abf6b952562a36d745bbcd7c",
+      "last_checked": "2025-06-06T03:03:01.345119",
+      "status": "unchanged",
+      "etag": "fc0e43ccc8b505111fec915faebd7ae3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/appleitemid.json": {
+      "hash": "5418efb41584b8aaf206d699f38a7292ca1ab9dba4143f47e237321438d6d563",
+      "last_checked": "2025-06-06T03:03:01.698953",
+      "status": "unchanged",
+      "etag": "W/\"a57ac9477a5d699bed7c70a9cebe4184\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/automaticupdate/appleitemid": {
+      "hash": "5418efb41584b8aaf206d699f38a7292ca1ab9dba4143f47e237321438d6d563",
+      "last_checked": "2025-06-06T03:03:01.698953",
+      "status": "unchanged",
+      "etag": "294e3e1bf51a953b97f3d0332a40839c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/installverificationtoken.json": {
+      "hash": "899f917b1700a10198dfd041609cdb437d97ccd565fb23c6123e521f01037bda",
+      "last_checked": "2025-06-06T03:03:02.120494",
+      "status": "unchanged",
+      "etag": "W/\"81033ae89daab203bf4aa33ff28bc0ba\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/automaticupdate/installverificationtoken": {
+      "hash": "899f917b1700a10198dfd041609cdb437d97ccd565fb23c6123e521f01037bda",
+      "last_checked": "2025-06-06T03:03:02.120494",
+      "status": "unchanged",
+      "etag": "4d88959a634c891a832db74f5a3bffc9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/init().json": {
+      "hash": "585423c4b690f0b12ab01aa5a5f4acde73392f8d3575c91cc11cc92ab132a4d1",
+      "last_checked": "2025-06-06T03:03:02.491569",
+      "status": "unchanged",
+      "etag": "W/\"ff49162e150fe6d362f636f141495710\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installrequirements/init()": {
+      "hash": "585423c4b690f0b12ab01aa5a5f4acde73392f8d3575c91cc11cc92ab132a4d1",
+      "last_checked": "2025-06-06T03:03:02.491569",
+      "status": "unchanged",
+      "etag": "c89b78fa8441825c724522349e00b884"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/init(from:).json": {
+      "hash": "2ab91c04f8272c89dfe7ebc9a2cc576882d98f7d9306423245df364c734d842b",
+      "last_checked": "2025-06-06T03:03:02.875633",
+      "status": "unchanged",
+      "etag": "W/\"84f85e28d526ddd5abb650ca33e18525\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installrequirements/init(from:)": {
+      "hash": "2ab91c04f8272c89dfe7ebc9a2cc576882d98f7d9306423245df364c734d842b",
+      "last_checked": "2025-06-06T03:03:02.875633",
+      "status": "unchanged",
+      "etag": "9e54c109fd2777a9586eec52cb7b75ad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/ageratingrank.json": {
+      "hash": "847cfdaf65bdc59c423ce3c6bbec90bb84ddaacea3be711f230f0a87264a2ff3",
+      "last_checked": "2025-06-06T03:03:03.225588",
+      "status": "unchanged",
+      "etag": "W/\"6dc85d2b58acd1320ff17889d3a67677\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installrequirements/ageratingrank": {
+      "hash": "847cfdaf65bdc59c423ce3c6bbec90bb84ddaacea3be711f230f0a87264a2ff3",
+      "last_checked": "2025-06-06T03:03:03.225588",
+      "status": "unchanged",
+      "etag": "698d73bf8e941caab28ab26e4b44c1f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/expectedinstallsize.json": {
+      "hash": "65750dd8f87d7a7c03582dec0c8ced2ff85f9e8eabdb1e7205d0283cdd20de41",
+      "last_checked": "2025-06-06T03:03:03.603303",
+      "status": "unchanged",
+      "etag": "W/\"e8a8738c59d3bf416447a1d731a63c09\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installrequirements/expectedinstallsize": {
+      "hash": "65750dd8f87d7a7c03582dec0c8ced2ff85f9e8eabdb1e7205d0283cdd20de41",
+      "last_checked": "2025-06-06T03:03:03.603303",
+      "status": "unchanged",
+      "etag": "3201ec3561793940d891006c71c5bf0e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/minimumsystemversion.json": {
+      "hash": "2ccf52d55337a5d45ce042fe77dd6d388650e217aba774ce533a86091ed7abc9",
+      "last_checked": "2025-06-06T03:03:03.998026",
+      "status": "unchanged",
+      "etag": "W/\"3cb90dcae9b4ddf2ab6adc5b7db3fe57\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installrequirements/minimumsystemversion": {
+      "hash": "2ccf52d55337a5d45ce042fe77dd6d388650e217aba774ce533a86091ed7abc9",
+      "last_checked": "2025-06-06T03:03:03.998026",
+      "status": "unchanged",
+      "etag": "008634f38e246a42e19c1b7eb019cc1b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/requireddevicecapabilities.json": {
+      "hash": "7dfb99371ee09da81abc4b07e36abb3879eef7b925180129765a233e30f7a21b",
+      "last_checked": "2025-06-06T03:03:04.390016",
+      "status": "unchanged",
+      "etag": "W/\"fa10e8df1cdacf1cc22c273721023882\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installrequirements/requireddevicecapabilities": {
+      "hash": "7dfb99371ee09da81abc4b07e36abb3879eef7b925180129765a233e30f7a21b",
+      "last_checked": "2025-06-06T03:03:04.390016",
+      "status": "unchanged",
+      "etag": "0cb677591cb83223e1b515a1f8e42344"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/encode(to:).json": {
+      "hash": "a9fd6b59766ec036dafb3cf98db6044cd0594f2498c84209bfa189c223fbadee",
+      "last_checked": "2025-06-06T03:03:04.799017",
+      "status": "unchanged",
+      "etag": "W/\"04919dcfb561d5bf5e42884b5962ae47\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installrequirements/encode(to:)": {
+      "hash": "a9fd6b59766ec036dafb3cf98db6044cd0594f2498c84209bfa189c223fbadee",
+      "last_checked": "2025-06-06T03:03:04.799017",
+      "status": "unchanged",
+      "etag": "51056360a9baa0f8b47095ee98313779"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/satisfiedbydevice().json": {
+      "hash": "fd46cec364f070f12197154d3f8d113a0013e8bfa4fa68d68536a4745ebcbf5c",
+      "last_checked": "2025-06-06T03:03:05.181606",
+      "status": "unchanged",
+      "etag": "W/\"73db272579861d65856e13f169b59437\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installrequirements/satisfiedbydevice()": {
+      "hash": "fd46cec364f070f12197154d3f8d113a0013e8bfa4fa68d68536a4745ebcbf5c",
+      "last_checked": "2025-06-06T03:03:05.181606",
+      "status": "unchanged",
+      "etag": "4f8a05e4548dbabe1453b51bd83c0b23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/additionalheaders(for:account:).json": {
+      "hash": "60ae0f6b89b47f858ec9c508be9eaf6ffb88a5e9464af54da0205dbda2144228",
+      "last_checked": "2025-06-06T03:03:05.584498",
+      "status": "unchanged",
+      "etag": "W/\"b946b348e81eab87cae76bfb0b2e200c\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplaceextension/additionalheaders(for:account:)": {
+      "hash": "60ae0f6b89b47f858ec9c508be9eaf6ffb88a5e9464af54da0205dbda2144228",
+      "last_checked": "2025-06-06T03:03:05.584498",
+      "status": "unchanged",
+      "etag": "620f4bae4a9fa900b74cf3ff7ec991f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/automaticupdates(for:).json": {
+      "hash": "88112a489bd7b2c6b0009ab2becb8745e397e077a02a27e069f8951d7e54dac9",
+      "last_checked": "2025-06-06T03:03:05.951037",
+      "status": "unchanged",
+      "etag": "W/\"3f5c80608096f2c823833fd6c8e88284\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplaceextension/automaticupdates(for:)": {
+      "hash": "88112a489bd7b2c6b0009ab2becb8745e397e077a02a27e069f8951d7e54dac9",
+      "last_checked": "2025-06-06T03:03:05.951037",
+      "status": "unchanged",
+      "etag": "9486c48a117d96603dc9bbe2b4f765b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/availableappversions(forappleitemids:).json": {
+      "hash": "ab7a6d48039126e1665cd68372ae2ce5730f9544793dfa26d874f36fb9790565",
+      "last_checked": "2025-06-06T03:03:06.300246",
+      "status": "unchanged",
+      "etag": "W/\"a2a980204cfc1f5d06faff744bb87071\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplaceextension/availableappversions(forappleitemids:)": {
+      "hash": "ab7a6d48039126e1665cd68372ae2ce5730f9544793dfa26d874f36fb9790565",
+      "last_checked": "2025-06-06T03:03:06.300246",
+      "status": "unchanged",
+      "etag": "4884c0d892c70affccf85082bf87cbd9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/requestfailed(with:).json": {
+      "hash": "d38c3347c145331f6702785bbb7ff2eca068457ec7a1b23e7761fc045e936def",
+      "last_checked": "2025-06-06T03:03:06.661376",
+      "status": "unchanged",
+      "etag": "W/\"90f5aef6c2b9049d9fbf62affec34d7f\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplaceextension/requestfailed(with:)": {
+      "hash": "d38c3347c145331f6702785bbb7ff2eca068457ec7a1b23e7761fc045e936def",
+      "last_checked": "2025-06-06T03:03:06.661376",
+      "status": "unchanged",
+      "etag": "79b129b352a651fa082eee3a3d81c2aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/init(action:).json": {
+      "hash": "847a165861c9c370a0cb36210fe08f8a91391c4e1148f2475badecb67c421a46",
+      "last_checked": "2025-06-06T03:03:07.043627",
+      "status": "unchanged",
+      "etag": "W/\"6a643fc162b8a403124466a3af2efd6e\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/init(action:)": {
+      "hash": "847a165861c9c370a0cb36210fe08f8a91391c4e1148f2475badecb67c421a46",
+      "last_checked": "2025-06-06T03:03:07.043627",
+      "status": "unchanged",
+      "etag": "7a480f1b9b7d44e19d353cb04b470a23"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.property.json": {
+      "hash": "3af19559f640e0c9c76e2c8feff561599bac8d6e7d8ecc3d70c460f96e293024",
+      "last_checked": "2025-06-06T03:03:07.412476",
+      "status": "unchanged",
+      "etag": "W/\"349573872eba1b118395cd50acc07cbe\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.property": {
+      "hash": "3af19559f640e0c9c76e2c8feff561599bac8d6e7d8ecc3d70c460f96e293024",
+      "last_checked": "2025-06-06T03:03:07.412476",
+      "status": "unchanged",
+      "etag": "f7f00bccb9293f095e81a3fbcac33746"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/backgroundcolor.json": {
+      "hash": "6bb53424391d4fa499ae98ed44252436930f0ddbe0a905f4e1d156233cdfa576",
+      "last_checked": "2025-06-06T03:03:07.781574",
+      "status": "unchanged",
+      "etag": "W/\"8d6520b7a4cfd228a1a18735d5baf4f9\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/backgroundcolor": {
+      "hash": "6bb53424391d4fa499ae98ed44252436930f0ddbe0a905f4e1d156233cdfa576",
+      "last_checked": "2025-06-06T03:03:07.781574",
+      "status": "unchanged",
+      "etag": "f01bc2338b9ad5e29178b53c3e2800a0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/bordercolor.json": {
+      "hash": "1aeddecb865f1dae72b13de42647980a7cdac2e857a71a9f3f3297195f21c880",
+      "last_checked": "2025-06-06T03:03:08.141464",
+      "status": "unchanged",
+      "etag": "W/\"0b9d00576493e275c17d64d3dab13c7f\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/bordercolor": {
+      "hash": "1aeddecb865f1dae72b13de42647980a7cdac2e857a71a9f3f3297195f21c880",
+      "last_checked": "2025-06-06T03:03:08.141464",
+      "status": "unchanged",
+      "etag": "601fb0cf866c2be2dbdba49991f57191"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/borderwidth.json": {
+      "hash": "5b8d5404bfef4c55d8b24d7fc41cf204e3577e486056f95f749206d0337f8d8c",
+      "last_checked": "2025-06-06T03:03:08.519113",
+      "status": "unchanged",
+      "etag": "W/\"6b6e437d8ccc38afa519667a01bf87a1\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/borderwidth": {
+      "hash": "5b8d5404bfef4c55d8b24d7fc41cf204e3577e486056f95f749206d0337f8d8c",
+      "last_checked": "2025-06-06T03:03:08.519113",
+      "status": "unchanged",
+      "etag": "29f689b4a62086b64f82f6f826f61f42"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/cornerradius.json": {
+      "hash": "6454012350e210af7634e21f8938fc0a34ced339cf25f5537785fa31d2f9f1b3",
+      "last_checked": "2025-06-06T03:03:08.896242",
+      "status": "unchanged",
+      "etag": "W/\"d16f9e902d386c15fa18eac08ea0d72a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/cornerradius": {
+      "hash": "6454012350e210af7634e21f8938fc0a34ced339cf25f5537785fa31d2f9f1b3",
+      "last_checked": "2025-06-06T03:03:08.896242",
+      "status": "unchanged",
+      "etag": "bdbcbe4d9edca68f2862314d279694aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/fontsize.json": {
+      "hash": "b3d3697c5eaa4df51a09d05e2290fd83f3f62d1e2f58910c6da925952dbc122b",
+      "last_checked": "2025-06-06T03:03:09.317619",
+      "status": "unchanged",
+      "etag": "W/\"c48882dba6702ce8fef73a24bce199e3\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/fontsize": {
+      "hash": "b3d3697c5eaa4df51a09d05e2290fd83f3f62d1e2f58910c6da925952dbc122b",
+      "last_checked": "2025-06-06T03:03:09.317619",
+      "status": "unchanged",
+      "etag": "7fd276916e8c145d13bb14d1b8e744e5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/imagename.json": {
+      "hash": "5b840242eb63ff11f92c530a27d492c48cf5d393df7a5b74c25c4faa7123fc04",
+      "last_checked": "2025-06-06T03:03:09.728972",
+      "status": "unchanged",
+      "etag": "W/\"547bc0895e4331d6a6405d877dff3240\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/imagename": {
+      "hash": "5b840242eb63ff11f92c530a27d492c48cf5d393df7a5b74c25c4faa7123fc04",
+      "last_checked": "2025-06-06T03:03:09.728972",
+      "status": "unchanged",
+      "etag": "de3fe70fb877d058123c908f1189ba7d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/imageplacement.json": {
+      "hash": "a13d1f9e3e3c0edb116a1d8f2d9eab616604e4507834e83815326775fa829c0e",
+      "last_checked": "2025-06-06T03:03:10.092114",
+      "status": "unchanged",
+      "etag": "W/\"36bdd7840251e243c019e9afeb53501e\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/imageplacement": {
+      "hash": "a13d1f9e3e3c0edb116a1d8f2d9eab616604e4507834e83815326775fa829c0e",
+      "last_checked": "2025-06-06T03:03:10.092114",
+      "status": "unchanged",
+      "etag": "b70d173d9a2090a2b610b6171b485df9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/isenabled.json": {
+      "hash": "3754f20e23dc92b42a073be94951c9f5ae11de9a5c0bc1625f456e028432b2cb",
+      "last_checked": "2025-06-06T03:03:10.514694",
+      "status": "unchanged",
+      "etag": "W/\"9002a34f0444e31302141b8324f146ad\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/isenabled": {
+      "hash": "3754f20e23dc92b42a073be94951c9f5ae11de9a5c0bc1625f456e028432b2cb",
+      "last_checked": "2025-06-06T03:03:10.514694",
+      "status": "unchanged",
+      "etag": "02f53a97d4458dca16e6c28fb90da2af"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/ishighlighted.json": {
+      "hash": "e36999613a0d09339f8b23a67a3a49fc18f3a5a1ef24845f84dfb0b1fec88904",
+      "last_checked": "2025-06-06T03:03:10.905893",
+      "status": "unchanged",
+      "etag": "W/\"db60c5f9adb90cd63a5945ad75888e23\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/ishighlighted": {
+      "hash": "e36999613a0d09339f8b23a67a3a49fc18f3a5a1ef24845f84dfb0b1fec88904",
+      "last_checked": "2025-06-06T03:03:10.905893",
+      "status": "unchanged",
+      "etag": "3c52d41590aa37294821337ca72fc874"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/label.json": {
+      "hash": "525610a5e5455b45dbc8808b339fb6810ab9fe42f37454360576df313d8289be",
+      "last_checked": "2025-06-06T03:03:11.295802",
+      "status": "unchanged",
+      "etag": "W/\"d3203e73a991db2089be3f52bf2c30ed\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/label": {
+      "hash": "525610a5e5455b45dbc8808b339fb6810ab9fe42f37454360576df313d8289be",
+      "last_checked": "2025-06-06T03:03:11.295802",
+      "status": "unchanged",
+      "etag": "3528429c2c60030c706717ce90ca4d10"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/size.json": {
+      "hash": "770bdf5480c227b45597b4ab314b1ac5c1c0ce0f592848774324030c28a525a9",
+      "last_checked": "2025-06-06T03:03:11.665424",
+      "status": "unchanged",
+      "etag": "W/\"5ab80036d176d5d591fd2ae9c23def40\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/size": {
+      "hash": "770bdf5480c227b45597b4ab314b1ac5c1c0ce0f592848774324030c28a525a9",
+      "last_checked": "2025-06-06T03:03:11.665424",
+      "status": "unchanged",
+      "etag": "397cc0096acc1170794042dd02075ce4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/tintcolor.json": {
+      "hash": "8e7a0a5c3a6e6dada533bfebd74f47b4bcc9b5062d33c036548075b98e701191",
+      "last_checked": "2025-06-06T03:03:12.073424",
+      "status": "unchanged",
+      "etag": "W/\"fff70ece5b121f9cada8ade1c49e6c2a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/tintcolor": {
+      "hash": "8e7a0a5c3a6e6dada533bfebd74f47b4bcc9b5062d33c036548075b98e701191",
+      "last_checked": "2025-06-06T03:03:12.073424",
+      "status": "unchanged",
+      "etag": "eb219aa7836f3a8b3fbd8c03b8854bd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum.json": {
+      "hash": "92488a8e436056ee4f87fbf6c53143881271f7ac09dbe8d8562e6734de495bcb",
+      "last_checked": "2025-06-06T03:03:12.390801",
+      "status": "unchanged",
+      "etag": "W/\"5319994607b3ce1b1a333b11301d63a8\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.enum": {
+      "hash": "92488a8e436056ee4f87fbf6c53143881271f7ac09dbe8d8562e6734de495bcb",
+      "last_checked": "2025-06-06T03:03:12.390801",
+      "status": "unchanged",
+      "etag": "8281800641d83fe9aff6d527e258e6de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement.json": {
+      "hash": "7a298deb057077754a80d88d46d8c703cb5da07587f9f1f59d84adeb4331d58d",
+      "last_checked": "2025-06-06T03:03:12.756136",
+      "status": "unchanged",
+      "etag": "W/\"42859985629b85ef68f4f6e8d8508575\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement": {
+      "hash": "7a298deb057077754a80d88d46d8c703cb5da07587f9f1f59d84adeb4331d58d",
+      "last_checked": "2025-06-06T03:03:12.756136",
+      "status": "unchanged",
+      "etag": "38f9f6ac28655eee178f528820bd2d88"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:).json": {
+      "hash": "64c6a87cb517e79baf4dc2371b33d52a31979d24ab1d5835c3583c8669c32713",
+      "last_checked": "2025-06-06T03:03:13.125743",
+      "status": "unchanged",
+      "etag": "W/\"6d54fc2263c48318ab7c1f3625bf4b3a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:)": {
+      "hash": "64c6a87cb517e79baf4dc2371b33d52a31979d24ab1d5835c3583c8669c32713",
+      "last_checked": "2025-06-06T03:03:13.125743",
+      "status": "unchanged",
+      "etag": "821484528d5103e380f004de425303e3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/account.json": {
+      "hash": "90263de2bd5426045e82e16adba2111d1cc47dc69a1574c6f30cd02c0fea7b5d",
+      "last_checked": "2025-06-06T03:03:13.535801",
+      "status": "unchanged",
+      "etag": "W/\"aea13611323cebb862ad93fe2ce73a6a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installmetadata/account": {
+      "hash": "90263de2bd5426045e82e16adba2111d1cc47dc69a1574c6f30cd02c0fea7b5d",
+      "last_checked": "2025-06-06T03:03:13.535801",
+      "status": "unchanged",
+      "etag": "b33b359b4f830751dbbcdc023e837f72"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/alternativedistributionpackage.json": {
+      "hash": "1d41c94435ffb98bf90418eaa9e87092c1d7e410db62bf4bfa5460def15dfb95",
+      "last_checked": "2025-06-06T03:03:13.958759",
+      "status": "unchanged",
+      "etag": "W/\"e1a317332e6c5391ace3e535d6bcd819\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installmetadata/alternativedistributionpackage": {
+      "hash": "1d41c94435ffb98bf90418eaa9e87092c1d7e410db62bf4bfa5460def15dfb95",
+      "last_checked": "2025-06-06T03:03:13.958759",
+      "status": "unchanged",
+      "etag": "1b87bc6d36bab40a049f3a05f6f5fd5a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/appshareurl.json": {
+      "hash": "2ecf33e42649b6a29988da5cb958746aff88571a2dea63cf267dd1f68712cf7c",
+      "last_checked": "2025-06-06T03:03:14.346531",
+      "status": "unchanged",
+      "etag": "W/\"6f184fccf2072baee5a32b5e2dd7063d\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installmetadata/appshareurl": {
+      "hash": "2ecf33e42649b6a29988da5cb958746aff88571a2dea63cf267dd1f68712cf7c",
+      "last_checked": "2025-06-06T03:03:14.346531",
+      "status": "unchanged",
+      "etag": "b5e6b06d129fec71b904b007ec706574"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/appleitemid.json": {
+      "hash": "36940419dbb9df8ec602eb7585df30112de608b0c215590e969fdd679dc5bcc3",
+      "last_checked": "2025-06-06T03:03:14.772731",
+      "status": "unchanged",
+      "etag": "W/\"b37ef8ec8ac23dbc0ecb2a8abf4339fb\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installmetadata/appleitemid": {
+      "hash": "36940419dbb9df8ec602eb7585df30112de608b0c215590e969fdd679dc5bcc3",
+      "last_checked": "2025-06-06T03:03:14.772731",
+      "status": "unchanged",
+      "etag": "290ec7140f15f179af66661668458ba0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/isupdate.json": {
+      "hash": "5a2e3c9e4304a8f329bfcd43ffcd5d67a5beb906e6102e04aee7edf20d7b1fb1",
+      "last_checked": "2025-06-06T03:03:15.140661",
+      "status": "unchanged",
+      "etag": "W/\"08d4b4a14bc732bcd3071881523324eb\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installmetadata/isupdate": {
+      "hash": "5a2e3c9e4304a8f329bfcd43ffcd5d67a5beb906e6102e04aee7edf20d7b1fb1",
+      "last_checked": "2025-06-06T03:03:15.140661",
+      "status": "unchanged",
+      "etag": "a21d9bedb331e2acd9b35ca99a43c5a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration/init(install:confirminstall:).json": {
+      "hash": "375212f8f1a8c7fa0913ec2d3e916cf82bb2d7b20f3c7d4e56ad367fb83093aa",
+      "last_checked": "2025-06-06T03:03:15.468029",
+      "status": "unchanged",
+      "etag": "W/\"cbdf806db93c91188ab10c693c6232a7\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installconfiguration/init(install:confirminstall:)": {
+      "hash": "375212f8f1a8c7fa0913ec2d3e916cf82bb2d7b20f3c7d4e56ad367fb83093aa",
+      "last_checked": "2025-06-06T03:03:15.468029",
+      "status": "unchanged",
+      "etag": "ec3b32f0f916550cf4efa4a3ac471da3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration/confirminstall.json": {
+      "hash": "d594b8336b59e17344016e890ca9d0168de61a772996ac125af2fa48ff5c13be",
+      "last_checked": "2025-06-06T03:03:15.909190",
+      "status": "unchanged",
+      "etag": "W/\"1f42595f512d10b915d4d0249528c875\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installconfiguration/confirminstall": {
+      "hash": "d594b8336b59e17344016e890ca9d0168de61a772996ac125af2fa48ff5c13be",
+      "last_checked": "2025-06-06T03:03:15.909190",
+      "status": "unchanged",
+      "etag": "c5fd949d9f959bb8b25deaf33d4f847b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration/install.json": {
+      "hash": "eb7d9c5d70d85ad4016b9401b33880309f2143a93ab5e926e86d2b90a31e6463",
+      "last_checked": "2025-06-06T03:03:16.309644",
+      "status": "unchanged",
+      "etag": "W/\"ad83867fa82c265758f970fed06b292c\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installconfiguration/install": {
+      "hash": "eb7d9c5d70d85ad4016b9401b33880309f2143a93ab5e926e86d2b90a31e6463",
+      "last_checked": "2025-06-06T03:03:16.309644",
+      "status": "unchanged",
+      "etag": "2ca2afdb5e42d3695bb4ba192211470f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfirmationresult/cancel.json": {
+      "hash": "ed6b67479899903199a89344c660613875f75b0618f5130ee0f67a4cc1814ece",
+      "last_checked": "2025-06-06T03:03:16.714684",
+      "status": "unchanged",
+      "etag": "W/\"1a13a7969cff8cd4ba89befd65b63aa5\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installconfirmationresult/cancel": {
+      "hash": "ed6b67479899903199a89344c660613875f75b0618f5130ee0f67a4cc1814ece",
+      "last_checked": "2025-06-06T03:03:16.714684",
+      "status": "unchanged",
+      "etag": "3f7fa1f8a9815b54bced652234f6d89f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfirmationresult/confirmed(installverificationtoken:authenticationcontext:).json": {
+      "hash": "2c4abb1a7728e35b89a0bb8658c14cad0ca444ac4f15df51c79fb44e13487917",
+      "last_checked": "2025-06-06T03:03:17.084935",
+      "status": "unchanged",
+      "etag": "W/\"2e94e1f4f9383ecb27c97d4fbe30be22\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/installconfirmationresult/confirmed(installverificationtoken:authenticationcontext:)": {
+      "hash": "2c4abb1a7728e35b89a0bb8658c14cad0ca444ac4f15df51c79fb44e13487917",
+      "last_checked": "2025-06-06T03:03:17.084935",
+      "status": "unchanged",
+      "etag": "c870980c78a2445f8218909973aebe58"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration/init(installs:confirminstall:).json": {
+      "hash": "e3b1cd921e207ac346c57fcdc8f06ef1d8cb7bebdd9e724fddc278de84f8b593",
+      "last_checked": "2025-06-06T03:03:17.463254",
+      "status": "unchanged",
+      "etag": "W/\"dea7ebcecf2173f575f810a04208a91e\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/batchinstallconfiguration/init(installs:confirminstall:)": {
+      "hash": "e3b1cd921e207ac346c57fcdc8f06ef1d8cb7bebdd9e724fddc278de84f8b593",
+      "last_checked": "2025-06-06T03:03:17.463254",
+      "status": "unchanged",
+      "etag": "c6842ffcd591e41d1c5d1bc1a5005fdd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration/confirminstall.json": {
+      "hash": "3bb7f1354e3f8a0bbe488134d9b30bc74235e370f632ab5b093281c694545db5",
+      "last_checked": "2025-06-06T03:03:17.824188",
+      "status": "unchanged",
+      "etag": "W/\"0d40730e1bde36e216c6d701d1442c5e\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/batchinstallconfiguration/confirminstall": {
+      "hash": "3bb7f1354e3f8a0bbe488134d9b30bc74235e370f632ab5b093281c694545db5",
+      "last_checked": "2025-06-06T03:03:17.824188",
+      "status": "unchanged",
+      "etag": "a1cbd3ace7f3c3e6f028dc7302d29115"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration/installs.json": {
+      "hash": "6eaac801063827ed523d0c544d75564def6cf9669bbe8290af166b07713cb239",
+      "last_checked": "2025-06-06T03:03:18.214316",
+      "status": "unchanged",
+      "etag": "W/\"37f9c7f9c01269d449a9f696d43407d0\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/batchinstallconfiguration/installs": {
+      "hash": "6eaac801063827ed523d0c544d75564def6cf9669bbe8290af166b07713cb239",
+      "last_checked": "2025-06-06T03:03:18.214316",
+      "status": "unchanged",
+      "etag": "302dcc314f27bd9a8113990665f7acd7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult/==(_:_:).json": {
+      "hash": "2e0796b628d00b0d947e4cf5b9cb5d26c18b709331022bcd2d5ae6ca063eb204",
+      "last_checked": "2025-06-06T03:03:18.562448",
+      "status": "unchanged",
+      "etag": "W/\"5054979b11df8e0e15b55de1349fd4a8\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/batchinstallconfirmationresult/==(_:_:)": {
+      "hash": "2e0796b628d00b0d947e4cf5b9cb5d26c18b709331022bcd2d5ae6ca063eb204",
+      "last_checked": "2025-06-06T03:03:18.562448",
+      "status": "unchanged",
+      "etag": "0447e66d094e1614d1a03842dc3c2c8c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult/cancel.json": {
+      "hash": "6bb5a34ce0498ed8a17b1579503002d0b32bd71bacfa94ce0dc4bb3acf8eab8b",
+      "last_checked": "2025-06-06T03:03:18.990111",
+      "status": "unchanged",
+      "etag": "W/\"6826ac5adf26c11b68e8cc94d3243af3\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/batchinstallconfirmationresult/cancel": {
+      "hash": "6bb5a34ce0498ed8a17b1579503002d0b32bd71bacfa94ce0dc4bb3acf8eab8b",
+      "last_checked": "2025-06-06T03:03:18.990111",
+      "status": "unchanged",
+      "etag": "12f4b1f1fbd1ad92dceddc80117dfd30"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult/confirmed(installverificationtokens:authenticationcontext:).json": {
+      "hash": "766c7c5a1c50cb76775b36a0445adb62ce89716966a5725915d05f2a5e749d15",
+      "last_checked": "2025-06-06T03:03:19.377586",
+      "status": "unchanged",
+      "etag": "W/\"a25a8aa6ad10c029e285d3fe2daeab1c\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/batchinstallconfirmationresult/confirmed(installverificationtokens:authenticationcontext:)": {
+      "hash": "766c7c5a1c50cb76775b36a0445adb62ce89716966a5725915d05f2a5e749d15",
+      "last_checked": "2025-06-06T03:03:19.377586",
+      "status": "unchanged",
+      "etag": "b7fa35f360a2e00629d72203525e2dc3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult/equatable-implementations.json": {
+      "hash": "ae2f4a632fbdb83ebb75608e58cd189f8c6868dce23016c22f1f1fbaa15ccd32",
+      "last_checked": "2025-06-06T03:03:19.761125",
+      "status": "unchanged",
+      "etag": "W/\"3cd00c2e822e709815b40d312cb87d0c\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/batchinstallconfirmationresult/equatable-implementations": {
+      "hash": "ae2f4a632fbdb83ebb75608e58cd189f8c6868dce23016c22f1f1fbaa15ccd32",
+      "last_checked": "2025-06-06T03:03:19.761125",
+      "status": "unchanged",
+      "etag": "82897e8cb0db2b79a191ed52bac3c269"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/authentication(account:).json": {
+      "hash": "ee8bfb78d805438a82dc4234a8a233ff6f8a7d29319bdc0fbd2f1f26ce541696",
+      "last_checked": "2025-06-06T03:03:20.146961",
+      "status": "unchanged",
+      "etag": "W/\"f8454a8533351a3430cd8ba2d24ee8ed\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacedisplayoption/authentication(account:)": {
+      "hash": "ee8bfb78d805438a82dc4234a8a233ff6f8a7d29319bdc0fbd2f1f26ce541696",
+      "last_checked": "2025-06-06T03:03:20.146961",
+      "status": "unchanged",
+      "etag": "659c14c925ed94f2aac8c5e2348f1e6e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/productpage(appleitemid:appleversionid:).json": {
+      "hash": "048eb78b225b7cbe7e051fbd483ded14aa5eeb0428d638e53e6121ef4bf1aa7a",
+      "last_checked": "2025-06-06T03:03:20.534056",
+      "status": "unchanged",
+      "etag": "W/\"2038d0a51bd971e82542faa066618a94\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacedisplayoption/productpage(appleitemid:appleversionid:)": {
+      "hash": "048eb78b225b7cbe7e051fbd483ded14aa5eeb0428d638e53e6121ef4bf1aa7a",
+      "last_checked": "2025-06-06T03:03:20.534056",
+      "status": "unchanged",
+      "etag": "0c766628a652680076773a4de203db5e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/searchresults(query:).json": {
+      "hash": "7bdcc5ad8047ab0c5b2e2a1aca0e8db0c00fd7f403c162a8f05b035cdf95d874",
+      "last_checked": "2025-06-06T03:03:20.886564",
+      "status": "unchanged",
+      "etag": "W/\"58ec8ad7856b581e58ee29f837e204cc\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacedisplayoption/searchresults(query:)": {
+      "hash": "7bdcc5ad8047ab0c5b2e2a1aca0e8db0c00fd7f403c162a8f05b035cdf95d874",
+      "last_checked": "2025-06-06T03:03:20.886564",
+      "status": "unchanged",
+      "etag": "1118ac97962048e6c9d7408038c682cd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/init(from:).json": {
+      "hash": "864a2bf859dc93604355558e253b3d06d353137ba163ab9195c322e4c59aa08d",
+      "last_checked": "2025-06-06T03:03:21.256846",
+      "status": "unchanged",
+      "etag": "W/\"16208abcd77221c07cf21fe7e8907410\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacedisplayoption/init(from:)": {
+      "hash": "864a2bf859dc93604355558e253b3d06d353137ba163ab9195c322e4c59aa08d",
+      "last_checked": "2025-06-06T03:03:21.256846",
+      "status": "unchanged",
+      "etag": "b18cc2dd46369b81250be99a322093d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/encode(to:).json": {
+      "hash": "9ce7841ae86c89cfdf8bcfbff39547e5aaa8e8cfaec27baf664377c24a279a0b",
+      "last_checked": "2025-06-06T03:03:21.642122",
+      "status": "unchanged",
+      "etag": "W/\"19bdf82c2c4a400d5716f89bfc343037\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacedisplayoption/encode(to:)": {
+      "hash": "9ce7841ae86c89cfdf8bcfbff39547e5aaa8e8cfaec27baf664377c24a279a0b",
+      "last_checked": "2025-06-06T03:03:21.642122",
+      "status": "unchanged",
+      "etag": "e035342bffd9066dae4e2f8f63e8f7b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacescenedelegate/scene(_:askedtodisplay:).json": {
+      "hash": "bd9e9e8547003884b46cb63a87cc250298315237d3d959eba084d67abf4a57b7",
+      "last_checked": "2025-06-06T03:03:21.988559",
+      "status": "unchanged",
+      "etag": "W/\"eeca6f834a0fc827c8c3d150b68112a3\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacescenedelegate/scene(_:askedtodisplay:)": {
+      "hash": "bd9e9e8547003884b46cb63a87cc250298315237d3d959eba084d67abf4a57b7",
+      "last_checked": "2025-06-06T03:03:21.988559",
+      "status": "unchanged",
+      "etag": "79b1afb07427b0c8f2e8f13fea93faec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/appstore.json": {
+      "hash": "fd05644ec977fba87ec99d84cb8bae575b48dad7e18a1a2bb3406475c1952c00",
+      "last_checked": "2025-06-06T03:03:22.351985",
+      "status": "unchanged",
+      "etag": "W/\"020c65fdefddb88c1717536fd2a91420\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appdistributor/appstore": {
+      "hash": "fd05644ec977fba87ec99d84cb8bae575b48dad7e18a1a2bb3406475c1952c00",
+      "last_checked": "2025-06-06T03:03:22.351985",
+      "status": "unchanged",
+      "etag": "4c5d8b8d25ab86fc6594cfb984d5a30e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/marketplace(_:).json": {
+      "hash": "c956419d18ab8f3eb2600fa84dc90d39f7d6ef07c5c06547cc54ebf24533e307",
+      "last_checked": "2025-06-06T03:03:22.690191",
+      "status": "unchanged",
+      "etag": "W/\"bb852f474dc751d372eb9a69b5c3a49a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appdistributor/marketplace(_:)": {
+      "hash": "c956419d18ab8f3eb2600fa84dc90d39f7d6ef07c5c06547cc54ebf24533e307",
+      "last_checked": "2025-06-06T03:03:22.690191",
+      "status": "unchanged",
+      "etag": "4d892168a3aecdbf6b6ed954b262b302"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/other.json": {
+      "hash": "03c157befd143b6c542341bf219d7cb7bc14f20458108b5e99c22cbcded74650",
+      "last_checked": "2025-06-06T03:03:23.092034",
+      "status": "unchanged",
+      "etag": "W/\"80dc2b9ff24c075536e713350d0bc282\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appdistributor/other": {
+      "hash": "03c157befd143b6c542341bf219d7cb7bc14f20458108b5e99c22cbcded74650",
+      "last_checked": "2025-06-06T03:03:23.092034",
+      "status": "unchanged",
+      "etag": "c0479b802a6f8b811de77c0ce686dee4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/testflight.json": {
+      "hash": "3847021af071d408f42635cafa4834d1bdf353232fda5d7fd368d00c1ad9b208",
+      "last_checked": "2025-06-06T03:03:23.467149",
+      "status": "unchanged",
+      "etag": "W/\"492d47f25975c1a4f85d93bd21787f27\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appdistributor/testflight": {
+      "hash": "3847021af071d408f42635cafa4834d1bdf353232fda5d7fd368d00c1ad9b208",
+      "last_checked": "2025-06-06T03:03:23.467149",
+      "status": "unchanged",
+      "etag": "896aa807502d68ab2b648bb4dcf84751"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/web.json": {
+      "hash": "9d0399558c9e6de03008c0a5c33a7cacb63315f81510b9fd30accf63e0d5bd7c",
+      "last_checked": "2025-06-06T03:03:23.831257",
+      "status": "unchanged",
+      "etag": "W/\"91bd02c04da03e00b8b929362e308f85\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appdistributor/web": {
+      "hash": "9d0399558c9e6de03008c0a5c33a7cacb63315f81510b9fd30accf63e0d5bd7c",
+      "last_checked": "2025-06-06T03:03:23.831257",
+      "status": "unchanged",
+      "etag": "89457151d0cbb3df4ddb8b385cc2aaec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/current.json": {
+      "hash": "f235205ded19568d28c537a56293d4aaac8ca730a131c09ee72951932d0d697c",
+      "last_checked": "2025-06-06T03:03:24.179424",
+      "status": "unchanged",
+      "etag": "W/\"f39e74129f00fbca367536f3b5ea78b5\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/appdistributor/current": {
+      "hash": "f235205ded19568d28c537a56293d4aaac8ca730a131c09ee72951932d0d697c",
+      "last_checked": "2025-06-06T03:03:24.179424",
+      "status": "unchanged",
+      "etag": "0800353b2a22f054e8a212a36a2ebbfa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/appnotinstalled.json": {
+      "hash": "7c1b292bfcdd11a1fea3c724880b2ebe16e055bb104b8fdd0c74368859f72266",
+      "last_checked": "2025-06-06T03:03:24.610202",
+      "status": "unchanged",
+      "etag": "W/\"b890725a5c231240d89500427ba935bc\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/appnotinstalled": {
+      "hash": "7c1b292bfcdd11a1fea3c724880b2ebe16e055bb104b8fdd0c74368859f72266",
+      "last_checked": "2025-06-06T03:03:24.610202",
+      "status": "unchanged",
+      "etag": "834368c8e495f25f9d5fc79bca26bdfb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/cancelled.json": {
+      "hash": "9bb8019eb2f202eaa33bc9f88fc6169a3853d773105fb00e885e524aef1624ba",
+      "last_checked": "2025-06-06T03:03:24.984883",
+      "status": "unchanged",
+      "etag": "W/\"564b30f5c35136a8c041c78a3e7a4581\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/cancelled": {
+      "hash": "9bb8019eb2f202eaa33bc9f88fc6169a3853d773105fb00e885e524aef1624ba",
+      "last_checked": "2025-06-06T03:03:24.984883",
+      "status": "unchanged",
+      "etag": "ed87c2efaaaf7299ff6d850e733bf271"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/featureunavailable.json": {
+      "hash": "264b54991a8e37fa4c2f4dab65885457f7093cc59766c3266279ae25da49ba36",
+      "last_checked": "2025-06-06T03:03:25.367496",
+      "status": "unchanged",
+      "etag": "W/\"f66435fa23add68b72aceef23f939a14\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/featureunavailable": {
+      "hash": "264b54991a8e37fa4c2f4dab65885457f7093cc59766c3266279ae25da49ba36",
+      "last_checked": "2025-06-06T03:03:25.367496",
+      "status": "unchanged",
+      "etag": "e49997ef30d23b797b60a1d10adb1302"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/installationofmarketplacedenied.json": {
+      "hash": "4b7cad26446aafeff1d055391c7ead3e3147361a845b4eef86a4453b955d6528",
+      "last_checked": "2025-06-06T03:03:25.805408",
+      "status": "unchanged",
+      "etag": "W/\"d30ae31bdcfbfcc4a3cf4dd1021b8f43\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/installationofmarketplacedenied": {
+      "hash": "4b7cad26446aafeff1d055391c7ead3e3147361a845b4eef86a4453b955d6528",
+      "last_checked": "2025-06-06T03:03:25.805408",
+      "status": "unchanged",
+      "etag": "05ba5b46099faaa249b587aa762f5374"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/installationrestricted.json": {
+      "hash": "eca3fd3586476b0e617edb0228b7421be9ef90d56c8c86cc1a2bac477cf255f6",
+      "last_checked": "2025-06-06T03:03:26.185380",
+      "status": "unchanged",
+      "etag": "W/\"f7c6e46a25d343a303edf4bf329fbc1a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/installationrestricted": {
+      "hash": "eca3fd3586476b0e617edb0228b7421be9ef90d56c8c86cc1a2bac477cf255f6",
+      "last_checked": "2025-06-06T03:03:26.185380",
+      "status": "unchanged",
+      "etag": "8f3162e0eea18e1c0e5fd48ea48b0574"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/insufficientstoragespace(_:).json": {
+      "hash": "6c2abf624a4c59a83ea07846a1d11216c133e79b6ae0093adb7bc1989db340f9",
+      "last_checked": "2025-06-06T03:03:26.571553",
+      "status": "unchanged",
+      "etag": "W/\"911cb6eb9da4efcd9466e8889ffd8a97\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/insufficientstoragespace(_:)": {
+      "hash": "6c2abf624a4c59a83ea07846a1d11216c133e79b6ae0093adb7bc1989db340f9",
+      "last_checked": "2025-06-06T03:03:26.571553",
+      "status": "unchanged",
+      "etag": "11f8bdcb9f5282ca8b11a7764ef391cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidalternativedistributionpackagesignature.json": {
+      "hash": "1f974d7d2125744c7ca74977965fc629e6c30ea19d016869c12745a10c7e8c1b",
+      "last_checked": "2025-06-06T03:03:26.937199",
+      "status": "unchanged",
+      "etag": "W/\"5c2257df428655a8ba89a1ca1cac21a5\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/invalidalternativedistributionpackagesignature": {
+      "hash": "1f974d7d2125744c7ca74977965fc629e6c30ea19d016869c12745a10c7e8c1b",
+      "last_checked": "2025-06-06T03:03:26.937199",
+      "status": "unchanged",
+      "etag": "2c965388cb4f4373bfb8eb044a407dcb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidalternativedistributionpackageurl.json": {
+      "hash": "4324fb3a30a8fe8363b17e16eab9b6f3cbabd94f45bd190696bd545632ced437",
+      "last_checked": "2025-06-06T03:03:27.306262",
+      "status": "unchanged",
+      "etag": "W/\"6b54145db0e29e08fb629f3bd439e917\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/invalidalternativedistributionpackageurl": {
+      "hash": "4324fb3a30a8fe8363b17e16eab9b6f3cbabd94f45bd190696bd545632ced437",
+      "last_checked": "2025-06-06T03:03:27.306262",
+      "status": "unchanged",
+      "etag": "4d743bfcf03f49d408724a58cc5912b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidlicense.json": {
+      "hash": "791fcf857afedff3a8d02dd4ca7f3882f7c97b57b5209ed5f3c32a743c9043be",
+      "last_checked": "2025-06-06T03:03:27.685088",
+      "status": "unchanged",
+      "etag": "W/\"f70f4ee0888ef7be888e9a8637717756\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/invalidlicense": {
+      "hash": "791fcf857afedff3a8d02dd4ca7f3882f7c97b57b5209ed5f3c32a743c9043be",
+      "last_checked": "2025-06-06T03:03:27.685088",
+      "status": "unchanged",
+      "etag": "60380709d2681b40ea9163fd477346de"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidmanifest.json": {
+      "hash": "ea3adba3359bb7f05829909d7a13f289d07eabca057585c69538661caaba91ac",
+      "last_checked": "2025-06-06T03:03:28.086651",
+      "status": "unchanged",
+      "etag": "W/\"e9801509ee27041b60b37f46cd08d7eb\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/invalidmanifest": {
+      "hash": "ea3adba3359bb7f05829909d7a13f289d07eabca057585c69538661caaba91ac",
+      "last_checked": "2025-06-06T03:03:28.086651",
+      "status": "unchanged",
+      "etag": "2ee33f295c1cb73ee7bdbc07b881a09b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidurl.json": {
+      "hash": "b0c77d5468d4b77b972f7286956a777fde80f67809fcd263735252796e0005b8",
+      "last_checked": "2025-06-06T03:03:28.446818",
+      "status": "unchanged",
+      "etag": "W/\"94399ab3558351d4ed285f2dafd3d0df\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/invalidurl": {
+      "hash": "b0c77d5468d4b77b972f7286956a777fde80f67809fcd263735252796e0005b8",
+      "last_checked": "2025-06-06T03:03:28.446818",
+      "status": "unchanged",
+      "etag": "65b58e2d43547b5612802fa323c62448"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/minimumplatformversionnotsatisfied(_:).json": {
+      "hash": "42995fac2e5c89aaa9bfa1f5dabd2655e0edec350c8e6d56cfc97375d45089dc",
+      "last_checked": "2025-06-06T03:03:28.822848",
+      "status": "unchanged",
+      "etag": "W/\"aa6811b6092744c3d236de9c0af27aca\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/minimumplatformversionnotsatisfied(_:)": {
+      "hash": "42995fac2e5c89aaa9bfa1f5dabd2655e0edec350c8e6d56cfc97375d45089dc",
+      "last_checked": "2025-06-06T03:03:28.822848",
+      "status": "unchanged",
+      "etag": "58f3eea729760dbdb1162e42841dc7fa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/mismatchedinstalltype.json": {
+      "hash": "09fc999d45d81899934ad30cedee84bfebf4ed0701c805a458ab3d897523a4ae",
+      "last_checked": "2025-06-06T03:03:29.263535",
+      "status": "unchanged",
+      "etag": "W/\"2c474f6ba4f23434d0f67715c44731e3\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/mismatchedinstalltype": {
+      "hash": "09fc999d45d81899934ad30cedee84bfebf4ed0701c805a458ab3d897523a4ae",
+      "last_checked": "2025-06-06T03:03:29.263535",
+      "status": "unchanged",
+      "etag": "9114cb9ee02cbf5bf6146c99408fa35f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/missingcapabilities(_:).json": {
+      "hash": "9362d0323bc1631f8356b3a83ca2775732f30e237220483344692e88da3a5905",
+      "last_checked": "2025-06-06T03:03:29.623861",
+      "status": "unchanged",
+      "etag": "W/\"d7671639f2b31d7416ff7a03f012179f\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/missingcapabilities(_:)": {
+      "hash": "9362d0323bc1631f8356b3a83ca2775732f30e237220483344692e88da3a5905",
+      "last_checked": "2025-06-06T03:03:29.623861",
+      "status": "unchanged",
+      "etag": "2283a4b0f494361ef5ec82fa453028b0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/missinginstallverificationtoken.json": {
+      "hash": "790fa5c268a6086cc03d22b17cf7ec844bd1d584b60f882bc7d743e699b6042c",
+      "last_checked": "2025-06-06T03:03:29.994555",
+      "status": "unchanged",
+      "etag": "W/\"f5647d00492f099cc7656a07c88fd5e5\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/missinginstallverificationtoken": {
+      "hash": "790fa5c268a6086cc03d22b17cf7ec844bd1d584b60f882bc7d743e699b6042c",
+      "last_checked": "2025-06-06T03:03:29.994555",
+      "status": "unchanged",
+      "etag": "4805d8fc15fcf7f14df5380795aa367b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/networkerror.json": {
+      "hash": "68c6f268bec05baabb13e04ce7db78dbd020b9cc91bb78a244c30def5e93b89b",
+      "last_checked": "2025-06-06T03:03:30.389025",
+      "status": "unchanged",
+      "etag": "W/\"668d10229a0324189eaf0d5ae2c1f4da\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/networkerror": {
+      "hash": "68c6f268bec05baabb13e04ce7db78dbd020b9cc91bb78a244c30def5e93b89b",
+      "last_checked": "2025-06-06T03:03:30.389025",
+      "status": "unchanged",
+      "etag": "a48bbdc0ccfae7114ca40f61e02e75f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/nosupportedvariant.json": {
+      "hash": "5966001322da00f3cb53cef740fceb2d0960d7fef699cdbef50a28c48f7ab452",
+      "last_checked": "2025-06-06T03:03:30.789392",
+      "status": "unchanged",
+      "etag": "W/\"665d225d84db9b9d19809186a3b2a751\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/nosupportedvariant": {
+      "hash": "5966001322da00f3cb53cef740fceb2d0960d7fef699cdbef50a28c48f7ab452",
+      "last_checked": "2025-06-06T03:03:30.789392",
+      "status": "unchanged",
+      "etag": "fc206812d349ebf7d173a2dda4ca2d80"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/oauthtokenerror.json": {
+      "hash": "90a948c72e7f8f7e3ce7a4dd037371e09d3e9bb9f5ebe3e9ee2d1a205f388c3d",
+      "last_checked": "2025-06-06T03:03:31.191587",
+      "status": "unchanged",
+      "etag": "W/\"2d3fbb2222787113e83b19cd31a14fda\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/oauthtokenerror": {
+      "hash": "90a948c72e7f8f7e3ce7a4dd037371e09d3e9bb9f5ebe3e9ee2d1a205f388c3d",
+      "last_checked": "2025-06-06T03:03:31.191587",
+      "status": "unchanged",
+      "etag": "e153dcfb24f4cec98c9949859b40494a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/ratingrestricted.json": {
+      "hash": "98d392f9e112b6708d0392576eb82914ed17fb9ecfa3f62de4a4c94856a30bce",
+      "last_checked": "2025-06-06T03:03:31.535118",
+      "status": "unchanged",
+      "etag": "W/\"126d200c0290fb71ae51826178071f78\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/ratingrestricted": {
+      "hash": "98d392f9e112b6708d0392576eb82914ed17fb9ecfa3f62de4a4c94856a30bce",
+      "last_checked": "2025-06-06T03:03:31.535118",
+      "status": "unchanged",
+      "etag": "e0673d87d06c718ac9f3152120c43a8a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/unknown.json": {
+      "hash": "8f835f61817f43d26759c4363837579d151e8d50fb15e51ad361b196d94c512b",
+      "last_checked": "2025-06-06T03:03:31.906137",
+      "status": "unchanged",
+      "etag": "W/\"13157bdc9b9f0eb969812724d8f2950b\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/unknown": {
+      "hash": "8f835f61817f43d26759c4363837579d151e8d50fb15e51ad361b196d94c512b",
+      "last_checked": "2025-06-06T03:03:31.906137",
+      "status": "unchanged",
+      "etag": "11fba19a052daee8a731c73ee0159173"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/unsupportedplatform.json": {
+      "hash": "74c3f6e2bb938b1397f24958173eb7357a7180cb4f61b704fd9c961bb4e52ffe",
+      "last_checked": "2025-06-06T03:03:32.321612",
+      "status": "unchanged",
+      "etag": "W/\"fc2b1cf611cf2d8985f07b2dad28264b\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/unsupportedplatform": {
+      "hash": "74c3f6e2bb938b1397f24958173eb7357a7180cb4f61b704fd9c961bb4e52ffe",
+      "last_checked": "2025-06-06T03:03:32.321612",
+      "status": "unchanged",
+      "etag": "1fcc0f3234bb688f0fe13e985301d396"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/init(from:).json": {
+      "hash": "9f0b000681021ec7e31bb53fe4b4930da2c605c6a6e27451f5fc47df8b782fc6",
+      "last_checked": "2025-06-06T03:03:32.711209",
+      "status": "unchanged",
+      "etag": "W/\"8b4fce5beac4b8fcf03f2cea947531c6\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/init(from:)": {
+      "hash": "9f0b000681021ec7e31bb53fe4b4930da2c605c6a6e27451f5fc47df8b782fc6",
+      "last_checked": "2025-06-06T03:03:32.711209",
+      "status": "unchanged",
+      "etag": "02224a1e093707da7fb985fe5c3932ee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/description.json": {
+      "hash": "2883c8cb8e32849f1f0316c98831f48f5fe04ce363dbcbbcdb2468ab67a779d9",
+      "last_checked": "2025-06-06T03:03:33.137810",
+      "status": "unchanged",
+      "etag": "W/\"22e8c7776403a6e3a35a9e218659bb33\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/description": {
+      "hash": "2883c8cb8e32849f1f0316c98831f48f5fe04ce363dbcbbcdb2468ab67a779d9",
+      "last_checked": "2025-06-06T03:03:33.137810",
+      "status": "unchanged",
+      "etag": "0b51eb335b1a601f031d518bbda97970"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/encode(to:).json": {
+      "hash": "b42039821ce43953b8f06dbd95f06c80f5751e7d81557c813b307997ed98e304",
+      "last_checked": "2025-06-06T03:03:33.514393",
+      "status": "unchanged",
+      "etag": "W/\"f17a28b92d5ad6d8d35fc754c04cf6b7\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/encode(to:)": {
+      "hash": "b42039821ce43953b8f06dbd95f06c80f5751e7d81557c813b307997ed98e304",
+      "last_checked": "2025-06-06T03:03:33.514393",
+      "status": "unchanged",
+      "etag": "14f0a63157946a0f1765ed69f44b2ad2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/error-implementations.json": {
+      "hash": "ab221fbd73cfb39276b76b11dba876c627c1a02e26b3c685cbfc298544983fb3",
+      "last_checked": "2025-06-06T03:03:33.907962",
+      "status": "unchanged",
+      "etag": "W/\"e788ff6ccb9e846c24921a23252c73ca\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/error-implementations": {
+      "hash": "ab221fbd73cfb39276b76b11dba876c627c1a02e26b3c685cbfc298544983fb3",
+      "last_checked": "2025-06-06T03:03:33.907962",
+      "status": "unchanged",
+      "etag": "23157e4d3971873801de4b2ab4fc6d1d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installation-swift.struct.json": {
+      "hash": "c39cf39a97d5bb34315b69994f669e5e95400634c3159f9fabf457f8d8928631",
+      "last_checked": "2025-06-06T03:03:34.287798",
+      "status": "unchanged",
+      "etag": "W/\"1f37dd8bab9dbf694df9df60bb0326f8\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/installation-swift.struct": {
+      "hash": "c39cf39a97d5bb34315b69994f669e5e95400634c3159f9fabf457f8d8928631",
+      "last_checked": "2025-06-06T03:03:34.287798",
+      "status": "unchanged",
+      "etag": "82a2810a58f7cf0db1a610b90d941687"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata.json": {
+      "hash": "bf9f376535a1f5c977411f1d827dd11b51a3ebdee7d1533ae57962f0414bcc15",
+      "last_checked": "2025-06-06T03:03:34.694629",
+      "status": "unchanged",
+      "etag": "W/\"2efd0b6132233b95661a438d0c1df188\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata": {
+      "hash": "bf9f376535a1f5c977411f1d827dd11b51a3ebdee7d1533ae57962f0414bcc15",
+      "last_checked": "2025-06-06T03:03:34.694629",
+      "status": "unchanged",
+      "etag": "368ca909570fa62d208b487c4800f21c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/==(_:_:).json": {
+      "hash": "8f3237abcdb721908d95f967df956a5190b138d53c3c659247b4af28bab186eb",
+      "last_checked": "2025-06-06T03:03:35.069307",
+      "status": "unchanged",
+      "etag": "W/\"ef0c3a9407e1bbf4754925da893939f9\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/==(_:_:)": {
+      "hash": "8f3237abcdb721908d95f967df956a5190b138d53c3c659247b4af28bab186eb",
+      "last_checked": "2025-06-06T03:03:35.069307",
+      "status": "unchanged",
+      "etag": "7a79eb4b930afb4cbb6c05de70b03d7d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/hashvalue.json": {
+      "hash": "5c8ea65fe5bb9a23c8191266c28a50c285f2a9f062548d6b2fb0c1e7d9fb2eb1",
+      "last_checked": "2025-06-06T03:03:35.411685",
+      "status": "unchanged",
+      "etag": "W/\"ac2fcfd155a167ceee4594b107e9f24b\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/hashvalue": {
+      "hash": "5c8ea65fe5bb9a23c8191266c28a50c285f2a9f062548d6b2fb0c1e7d9fb2eb1",
+      "last_checked": "2025-06-06T03:03:35.411685",
+      "status": "unchanged",
+      "etag": "86a40b1eefbaeb6313e46123e43b8435"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/id-swift.property.json": {
+      "hash": "4fe2e191672728d64b5f67c6c57a095ef6cd3cf8ba575786581cc2d85daaed2b",
+      "last_checked": "2025-06-06T03:03:35.802364",
+      "status": "unchanged",
+      "etag": "W/\"eb614eea756a2c91bf5fb66293c472a1\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/id-swift.property": {
+      "hash": "4fe2e191672728d64b5f67c6c57a095ef6cd3cf8ba575786581cc2d85daaed2b",
+      "last_checked": "2025-06-06T03:03:35.802364",
+      "status": "unchanged",
+      "etag": "23240fd1068bc39e4b12d8b17a2b6ada"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installation-swift.property.json": {
+      "hash": "e33563dd4b580a6af458afc0a92d3679e5d1d1a0e286bbacfe161468e45a4fd8",
+      "last_checked": "2025-06-06T03:03:36.180708",
+      "status": "unchanged",
+      "etag": "W/\"ee93932f6f8dfc22a09a481aa64d8f27\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/installation-swift.property": {
+      "hash": "e33563dd4b580a6af458afc0a92d3679e5d1d1a0e286bbacfe161468e45a4fd8",
+      "last_checked": "2025-06-06T03:03:36.180708",
+      "status": "unchanged",
+      "etag": "a3235d5eff44aab0e04c082c68e88ce2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installationerror.json": {
+      "hash": "34fe995a3292cd8e946b0cea52853caa6d4512356b8c4b545522e5f0a3d75527",
+      "last_checked": "2025-06-06T03:03:36.561759",
+      "status": "unchanged",
+      "etag": "W/\"3381b48cb9c8b14a5b2d491e7775cc71\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/installationerror": {
+      "hash": "34fe995a3292cd8e946b0cea52853caa6d4512356b8c4b545522e5f0a3d75527",
+      "last_checked": "2025-06-06T03:03:36.561759",
+      "status": "unchanged",
+      "etag": "cbb7444aeba1a552e2fbc447e0e30860"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installedmetadata.json": {
+      "hash": "64a55bef4db69646f01f4e91a5c638404527d584ee0212dca1c8437b43ca58b6",
+      "last_checked": "2025-06-06T03:03:36.943296",
+      "status": "unchanged",
+      "etag": "W/\"962163a0694347578beb5df8ce7f1f27\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/installedmetadata": {
+      "hash": "64a55bef4db69646f01f4e91a5c638404527d584ee0212dca1c8437b43ca58b6",
+      "last_checked": "2025-06-06T03:03:36.943296",
+      "status": "unchanged",
+      "etag": "d21a3692b28aaa6c422019c79c669594"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/isinstalled.json": {
+      "hash": "220455db499b3bfad205723b8c2f328819a0055fe3b0a6183ab1ce056a8514ad",
+      "last_checked": "2025-06-06T03:03:37.315446",
+      "status": "unchanged",
+      "etag": "W/\"4a7e0749fd09d9b7af1af2a3b5c351f4\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/isinstalled": {
+      "hash": "220455db499b3bfad205723b8c2f328819a0055fe3b0a6183ab1ce056a8514ad",
+      "last_checked": "2025-06-06T03:03:37.315446",
+      "status": "unchanged",
+      "etag": "06a6da8b4cd5d175f8802234476734e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/isinstalling.json": {
+      "hash": "76a0918a9bd78008c59efca6ebf279a9a56d74d2d8bd464d6cbb58f5545aeefd",
+      "last_checked": "2025-06-06T03:03:37.759436",
+      "status": "unchanged",
+      "etag": "W/\"ba150451d4bbb98889587f0e175f781f\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/isinstalling": {
+      "hash": "76a0918a9bd78008c59efca6ebf279a9a56d74d2d8bd464d6cbb58f5545aeefd",
+      "last_checked": "2025-06-06T03:03:37.759436",
+      "status": "unchanged",
+      "etag": "07315d0cba115cda0f576086ac8abab5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/isupdating.json": {
+      "hash": "4c186497a2ecf3dffaadf513efe1a7767b0b9a9a69773b423c7495bcda2460e4",
+      "last_checked": "2025-06-06T03:03:38.141160",
+      "status": "unchanged",
+      "etag": "W/\"049ce315c7125f780ddbde3a4a27e6ed\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/isupdating": {
+      "hash": "4c186497a2ecf3dffaadf513efe1a7767b0b9a9a69773b423c7495bcda2460e4",
+      "last_checked": "2025-06-06T03:03:38.141160",
+      "status": "unchanged",
+      "etag": "274c07aca3be8ed937b0bfd221e153b2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/hash(into:).json": {
+      "hash": "a4c4fe2538088519c893f806e9e7a52082b5f68263d61c79ec78d92b86ba199c",
+      "last_checked": "2025-06-06T03:03:38.497642",
+      "status": "unchanged",
+      "etag": "W/\"46cc1d2bb480a272df91e4933f733ca2\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/hash(into:)": {
+      "hash": "a4c4fe2538088519c893f806e9e7a52082b5f68263d61c79ec78d92b86ba199c",
+      "last_checked": "2025-06-06T03:03:38.497642",
+      "status": "unchanged",
+      "etag": "ad0c0240fb4302ce5b834b88a6862672"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/id-swift.typealias.json": {
+      "hash": "77cee6f2a01f8d587efba7fd05768e0192ece5cdcbcb140df64999a7711d1964",
+      "last_checked": "2025-06-06T03:03:38.887868",
+      "status": "unchanged",
+      "etag": "W/\"af47d37b6d1190d2696d273627c394e4\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/id-swift.typealias": {
+      "hash": "77cee6f2a01f8d587efba7fd05768e0192ece5cdcbcb140df64999a7711d1964",
+      "last_checked": "2025-06-06T03:03:38.887868",
+      "status": "unchanged",
+      "etag": "01c2678700f63526bf8ebd31c29beb22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/equatable-implementations.json": {
+      "hash": "dda34f436f24d9da7b5413e976f4b774e2665c6b34c2945f45e25cc63828941c",
+      "last_checked": "2025-06-06T03:03:39.286568",
+      "status": "unchanged",
+      "etag": "W/\"3def4f0c5b63255c02be2223ec52dbc7\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/equatable-implementations": {
+      "hash": "dda34f436f24d9da7b5413e976f4b774e2665c6b34c2945f45e25cc63828941c",
+      "last_checked": "2025-06-06T03:03:39.286568",
+      "status": "unchanged",
+      "etag": "dc9d05397beeb4844a0c8433c0e5b8a6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/init(alternativedistributionpackageurl:account:installverificationtoken:).json": {
+      "hash": "47cff85f2706706c6cfe2ba84935b61b4e85aef3e6c517e6c2f3ff4d00dc95b3",
+      "last_checked": "2025-06-06T03:03:39.687655",
+      "status": "unchanged",
+      "etag": "W/\"b967aad2fb5b05bc5658fb54e4b4a1c3\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest/init(alternativedistributionpackageurl:account:installverificationtoken:)": {
+      "hash": "47cff85f2706706c6cfe2ba84935b61b4e85aef3e6c517e6c2f3ff4d00dc95b3",
+      "last_checked": "2025-06-06T03:03:39.687655",
+      "status": "unchanged",
+      "etag": "dfd43d311273e1311c9293f46c0f71b7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/account.json": {
+      "hash": "f1ec22ebfabb285401c2c32bf7af61b27cecddbb8de9fd4c5bf82429671d7381",
+      "last_checked": "2025-06-06T03:03:40.111620",
+      "status": "unchanged",
+      "etag": "W/\"d3d2939b5f132f416fff8c5e3112f6b6\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest/account": {
+      "hash": "f1ec22ebfabb285401c2c32bf7af61b27cecddbb8de9fd4c5bf82429671d7381",
+      "last_checked": "2025-06-06T03:03:40.111620",
+      "status": "unchanged",
+      "etag": "9a1d00efb0a1db7164e261e68702551d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/alternativedistributionpackageurl.json": {
+      "hash": "a6a05ccf0c720f506c14c0ae4ba2cf2b49d2db3c11e2b3a65557d14ca9519478",
+      "last_checked": "2025-06-06T03:03:40.509457",
+      "status": "unchanged",
+      "etag": "W/\"aaa4f04c2ea0acf783155436f46115d7\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest/alternativedistributionpackageurl": {
+      "hash": "a6a05ccf0c720f506c14c0ae4ba2cf2b49d2db3c11e2b3a65557d14ca9519478",
+      "last_checked": "2025-06-06T03:03:40.509457",
+      "status": "unchanged",
+      "etag": "cbdcecd3cbdad6d98e2f6691ce0393b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/appshareurl.json": {
+      "hash": "3e7e49a930988a4cbd5766a0823a43a4e5eb07881171d4ec86f3867fab0161cc",
+      "last_checked": "2025-06-06T03:03:40.893546",
+      "status": "unchanged",
+      "etag": "W/\"e106ecdc6d462aee876b911fd8307d24\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest/appshareurl": {
+      "hash": "3e7e49a930988a4cbd5766a0823a43a4e5eb07881171d4ec86f3867fab0161cc",
+      "last_checked": "2025-06-06T03:03:40.893546",
+      "status": "unchanged",
+      "etag": "9b04e9c6de41acc243b0d639bc3c0bc7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/installverificationtoken.json": {
+      "hash": "72fd179f85b5932ddfc95bf31a3db03121a062d8b4ddcf33cee11c26ff74a92b",
+      "last_checked": "2025-06-06T03:03:41.286857",
+      "status": "unchanged",
+      "etag": "W/\"48ef0c46f4b9c110342cc2df0391ed6c\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/installationrequest/installverificationtoken": {
+      "hash": "72fd179f85b5932ddfc95bf31a3db03121a062d8b4ddcf33cee11c26ff74a92b",
+      "last_checked": "2025-06-06T03:03:41.286857",
+      "status": "unchanged",
+      "etag": "cdf349c705730512b39d2d15645e018a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/batchinstall(_:).json": {
+      "hash": "e20e48fb4403549ec93b48d031be06539ca83803eb60752c46bdb2c98242c7d7",
+      "last_checked": "2025-06-06T03:03:41.646857",
+      "status": "unchanged",
+      "etag": "W/\"4c8034163d7a3b2a2c39af649f72c17b\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.enum/batchinstall(_:)": {
+      "hash": "e20e48fb4403549ec93b48d031be06539ca83803eb60752c46bdb2c98242c7d7",
+      "last_checked": "2025-06-06T03:03:41.646857",
+      "status": "unchanged",
+      "etag": "adba262cfd5d27feb07cb8d571dacc43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/delete(_:).json": {
+      "hash": "e8b4cee392ef358dca84399af17234ac4d2326954dac9f1aa2715c3f36cd5b07",
+      "last_checked": "2025-06-06T03:03:42.039551",
+      "status": "unchanged",
+      "etag": "W/\"62862fcbfa53e08c6e3e4c2f55ac1dc5\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.enum/delete(_:)": {
+      "hash": "e8b4cee392ef358dca84399af17234ac4d2326954dac9f1aa2715c3f36cd5b07",
+      "last_checked": "2025-06-06T03:03:42.039551",
+      "status": "unchanged",
+      "etag": "df707b672374c2789d4ec4444f5ea349"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/install(_:).json": {
+      "hash": "a2ba568c909049fc9063aa3bfc7c9a45a9bad53b2f6d171846942a883fa62b9b",
+      "last_checked": "2025-06-06T03:03:42.383798",
+      "status": "unchanged",
+      "etag": "W/\"4e5a4a09fadc19e26f4666a2c4a56447\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.enum/install(_:)": {
+      "hash": "a2ba568c909049fc9063aa3bfc7c9a45a9bad53b2f6d171846942a883fa62b9b",
+      "last_checked": "2025-06-06T03:03:42.383798",
+      "status": "unchanged",
+      "etag": "7123942b99814d53ef280a6096580c1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/launch(_:).json": {
+      "hash": "9783060620f0ced5b2a1b73cec16e981abbb19d26db8a68c02f4a81577c15f01",
+      "last_checked": "2025-06-06T03:03:42.794920",
+      "status": "unchanged",
+      "etag": "W/\"9ffd59f7f63862e29a61f4c40b78fca4\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/action-swift.enum/launch(_:)": {
+      "hash": "9783060620f0ced5b2a1b73cec16e981abbb19d26db8a68c02f4a81577c15f01",
+      "last_checked": "2025-06-06T03:03:42.794920",
+      "status": "unchanged",
+      "etag": "1b799de72a623742c0ae337d8d2a4e92"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/bottom.json": {
+      "hash": "f4d0004f1920a9ef8f6a386db16f2c713d3c8212849217e869280a4180c13494",
+      "last_checked": "2025-06-06T03:03:43.199884",
+      "status": "unchanged",
+      "etag": "W/\"846d461ff2ad6970b08aeaf86066a01e\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/bottom": {
+      "hash": "f4d0004f1920a9ef8f6a386db16f2c713d3c8212849217e869280a4180c13494",
+      "last_checked": "2025-06-06T03:03:43.199884",
+      "status": "unchanged",
+      "etag": "ddf787533bae63f7193a6ce93c21b305"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/leading.json": {
+      "hash": "fcbe53cc49a78d3178985751d216a2846f1880079f8e20cfea29b4b01a66fdf7",
+      "last_checked": "2025-06-06T03:03:43.607261",
+      "status": "unchanged",
+      "etag": "W/\"5dab15e3de9c5b70f05c0f5ba7a2902f\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/leading": {
+      "hash": "fcbe53cc49a78d3178985751d216a2846f1880079f8e20cfea29b4b01a66fdf7",
+      "last_checked": "2025-06-06T03:03:43.607261",
+      "status": "unchanged",
+      "etag": "a2fef0e4e02459bfe290490469b45c8a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/top.json": {
+      "hash": "b013cc17a2f17f932ac4cf9ed6efde2caaee0638fe1e346044c37e54db062402",
+      "last_checked": "2025-06-06T03:03:43.952716",
+      "status": "unchanged",
+      "etag": "W/\"bd1113cc6b8c3466193a8e31b8cccc87\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/top": {
+      "hash": "b013cc17a2f17f932ac4cf9ed6efde2caaee0638fe1e346044c37e54db062402",
+      "last_checked": "2025-06-06T03:03:43.952716",
+      "status": "unchanged",
+      "etag": "e405bf1ab4017dc799b0bac0ba027d8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/trailing.json": {
+      "hash": "ecffc9daaf38320b4f12e7810293df969cf4a9e828e3653a96392cb6e5aa11f4",
+      "last_checked": "2025-06-06T03:03:44.277982",
+      "status": "unchanged",
+      "etag": "W/\"dda00d39057fec6f1eabce1e0baa7702\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/trailing": {
+      "hash": "ecffc9daaf38320b4f12e7810293df969cf4a9e828e3653a96392cb6e5aa11f4",
+      "last_checked": "2025-06-06T03:03:44.277982",
+      "status": "unchanged",
+      "etag": "8a0e09c965f4c3d30be74008edf1aeac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/init(rawvalue:).json": {
+      "hash": "a56772aa772f48f9089689d49ec5c6506a7d3410fc4d77716bd628a5086f46c9",
+      "last_checked": "2025-06-06T03:03:44.630487",
+      "status": "unchanged",
+      "etag": "W/\"d41ce11ffbef899209e08653bc2adef4\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/init(rawvalue:)": {
+      "hash": "a56772aa772f48f9089689d49ec5c6506a7d3410fc4d77716bd628a5086f46c9",
+      "last_checked": "2025-06-06T03:03:44.630487",
+      "status": "unchanged",
+      "etag": "d222154d0f3f2a49d6df9bd91197b9ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/rawvalue-swift.property.json": {
+      "hash": "8888afe8a4ebacaf0afbcc49654e22b42ea34c2794169e65fa2168a03ee94a33",
+      "last_checked": "2025-06-06T03:03:45.020130",
+      "status": "unchanged",
+      "etag": "W/\"35f506cea2a6a8c6e4bb7d14c4dd2fbb\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/rawvalue-swift.property": {
+      "hash": "8888afe8a4ebacaf0afbcc49654e22b42ea34c2794169e65fa2168a03ee94a33",
+      "last_checked": "2025-06-06T03:03:45.020130",
+      "status": "unchanged",
+      "etag": "b408ec5f6bf57a6623e9a33d0045311d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/rawvalue-swift.typealias.json": {
+      "hash": "b083d53763dd0d72b425facce6a169f0c0ca48543137a6e90fb0c2578a862216",
+      "last_checked": "2025-06-06T03:03:45.411242",
+      "status": "unchanged",
+      "etag": "W/\"fe939c664e0aa08a257858b0a9c98b8a\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/rawvalue-swift.typealias": {
+      "hash": "b083d53763dd0d72b425facce6a169f0c0ca48543137a6e90fb0c2578a862216",
+      "last_checked": "2025-06-06T03:03:45.411242",
+      "status": "unchanged",
+      "etag": "690d479f4b3526540764fefa7b2a227b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/equatable-implementations.json": {
+      "hash": "b266d44aea1923ffc97e130fb21e0b278186a23a1b430b7c8a1df334e3641215",
+      "last_checked": "2025-06-06T03:03:45.785760",
+      "status": "unchanged",
+      "etag": "W/\"0e189ac256530d5200ba4802894a10eb\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/equatable-implementations": {
+      "hash": "b266d44aea1923ffc97e130fb21e0b278186a23a1b430b7c8a1df334e3641215",
+      "last_checked": "2025-06-06T03:03:45.785760",
+      "status": "unchanged",
+      "etag": "b0e12a7b3dfcfc41002ed472a45ec4d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/rawrepresentable-implementations.json": {
+      "hash": "cfd18fbe7de142f89c68afc72dac1f0f4ce22fd540ad0bf9b2ca09f50a903bac",
+      "last_checked": "2025-06-06T03:03:46.183875",
+      "status": "unchanged",
+      "etag": "W/\"e62b6ba5c815f8fbe272db3524acc9d5\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/rawrepresentable-implementations": {
+      "hash": "cfd18fbe7de142f89c68afc72dac1f0f4ce22fd540ad0bf9b2ca09f50a903bac",
+      "last_checked": "2025-06-06T03:03:46.183875",
+      "status": "unchanged",
+      "etag": "5d54e81965f761e94f4d7d6c72455d18"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult/!=(_:_:).json": {
+      "hash": "0a0db44389e9d5f412b285cddce1495402ae166b3e341b7c5550069de0a7343f",
+      "last_checked": "2025-06-06T03:03:46.528166",
+      "status": "unchanged",
+      "etag": "W/\"8cbd5c28a263869c9a9aad175ffe1ea6\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/batchinstallconfirmationresult/!=(_:_:)": {
+      "hash": "0a0db44389e9d5f412b285cddce1495402ae166b3e341b7c5550069de0a7343f",
+      "last_checked": "2025-06-06T03:03:46.528166",
+      "status": "unchanged",
+      "etag": "914c7da1734254c238bfe6c850370e4f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/localizeddescription.json": {
+      "hash": "b610be65824d67ec2c095905c136c7635aa0ecb2d599e41bdfc5c659a7546221",
+      "last_checked": "2025-06-06T03:03:46.902008",
+      "status": "unchanged",
+      "etag": "W/\"f732a12b97a399ffe13e907c24419425\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/marketplacekiterror/localizeddescription": {
+      "hash": "b610be65824d67ec2c095905c136c7635aa0ecb2d599e41bdfc5c659a7546221",
+      "last_checked": "2025-06-06T03:03:46.902008",
+      "status": "unchanged",
+      "etag": "ccd85ef3f6f8d8412a60126373aef17c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installation-swift.struct/progress.json": {
+      "hash": "7b3aafdfd2a7fa9799d7311d015f4e8a48622c3b30f69c322f42e79f1ae19c68",
+      "last_checked": "2025-06-06T03:03:47.286468",
+      "status": "unchanged",
+      "etag": "W/\"3afd56b2ec333d670acc97a967541374\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/installation-swift.struct/progress": {
+      "hash": "7b3aafdfd2a7fa9799d7311d015f4e8a48622c3b30f69c322f42e79f1ae19c68",
+      "last_checked": "2025-06-06T03:03:47.286468",
+      "status": "unchanged",
+      "etag": "9247fee9c10a46a699159a988480bd7e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/==(_:_:).json": {
+      "hash": "5a8ebef8d00df0fd1d9a87b19fbb87c440f3001c81cbc4b797307a989dc2edb8",
+      "last_checked": "2025-06-06T03:03:47.656316",
+      "status": "unchanged",
+      "etag": "W/\"e59145942a0f0ee4af9df3c74d314147\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/==(_:_:)": {
+      "hash": "5a8ebef8d00df0fd1d9a87b19fbb87c440f3001c81cbc4b797307a989dc2edb8",
+      "last_checked": "2025-06-06T03:03:47.656316",
+      "status": "unchanged",
+      "etag": "f64bafc4834d439a9914364dde06ea93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/account.json": {
+      "hash": "7aa82dc635d90f2208c7e13074188a0329b3396979781951b457159868e35676",
+      "last_checked": "2025-06-06T03:03:48.028287",
+      "status": "unchanged",
+      "etag": "W/\"fbf65dd2a7bce42b17fb4ae4df6e453b\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/account": {
+      "hash": "7aa82dc635d90f2208c7e13074188a0329b3396979781951b457159868e35676",
+      "last_checked": "2025-06-06T03:03:48.028287",
+      "status": "unchanged",
+      "etag": "b51296b97a35467f33d0e9c00d2c2d2a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/appleversionid.json": {
+      "hash": "969377352dd8a7c0f1d1b2113427ceb34c8842277cd1993c45fac1a48e69d099",
+      "last_checked": "2025-06-06T03:03:48.376200",
+      "status": "unchanged",
+      "etag": "W/\"2768eb8545c8fdcd9465082eee7f89b2\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/appleversionid": {
+      "hash": "969377352dd8a7c0f1d1b2113427ceb34c8842277cd1993c45fac1a48e69d099",
+      "last_checked": "2025-06-06T03:03:48.376200",
+      "status": "unchanged",
+      "etag": "fd53ad782172a9172e5a909a4ab4f02f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/shortversion.json": {
+      "hash": "b5ffa91c3008a04d1965d4be1f3a783a45a82aaa2a5ae4538ad676a389e79270",
+      "last_checked": "2025-06-06T03:03:48.763433",
+      "status": "unchanged",
+      "etag": "W/\"0c3d85c8288526d182c8a1522f584fb5\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/shortversion": {
+      "hash": "b5ffa91c3008a04d1965d4be1f3a783a45a82aaa2a5ae4538ad676a389e79270",
+      "last_checked": "2025-06-06T03:03:48.763433",
+      "status": "unchanged",
+      "etag": "bbdc7ed967be7261645a0ee0351d1e24"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/version.json": {
+      "hash": "0132e89227cf224991746a000d3906c774394016a5a455a805465bfe2b450c6a",
+      "last_checked": "2025-06-06T03:03:49.156366",
+      "status": "unchanged",
+      "etag": "W/\"7fa00547c57dfc63b780429463495686\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/version": {
+      "hash": "0132e89227cf224991746a000d3906c774394016a5a455a805465bfe2b450c6a",
+      "last_checked": "2025-06-06T03:03:49.156366",
+      "status": "unchanged",
+      "etag": "67532c011042f48d2795b1f66ca0a3d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/equatable-implementations.json": {
+      "hash": "887cca8e93503b14beed348b584b9e835d51f024dfa5109880c801381ec0be0d",
+      "last_checked": "2025-06-06T03:03:49.526904",
+      "status": "unchanged",
+      "etag": "W/\"bba82163d258dcc8ff11afdef3481825\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/equatable-implementations": {
+      "hash": "887cca8e93503b14beed348b584b9e835d51f024dfa5109880c801381ec0be0d",
+      "last_checked": "2025-06-06T03:03:49.526904",
+      "status": "unchanged",
+      "etag": "79219d7e5eb96f49382322e2d0c10da0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/!=(_:_:).json": {
+      "hash": "9d60e66e30977024fd51bc6d131aa76aed67a631b2e5efa28711be0765109de9",
+      "last_checked": "2025-06-06T03:03:49.873247",
+      "status": "unchanged",
+      "etag": "W/\"29a88d3f58eb37e8fe9788492249f879\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/!=(_:_:)": {
+      "hash": "9d60e66e30977024fd51bc6d131aa76aed67a631b2e5efa28711be0765109de9",
+      "last_checked": "2025-06-06T03:03:49.873247",
+      "status": "unchanged",
+      "etag": "9e50d42c2bf1393eba45ad6b4f0431c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/!=(_:_:).json": {
+      "hash": "7261b469171ce6186f09a4c9bb74378e87fae49624c48e2605da9400c383d1ec",
+      "last_checked": "2025-06-06T03:03:50.200173",
+      "status": "unchanged",
+      "etag": "W/\"b9ef5c97c0f389923d5e3867a8fa67ee\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/!=(_:_:)": {
+      "hash": "7261b469171ce6186f09a4c9bb74378e87fae49624c48e2605da9400c383d1ec",
+      "last_checked": "2025-06-06T03:03:50.200173",
+      "status": "unchanged",
+      "etag": "d68f9e076a94834a33dabdd577b87e8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/hashvalue.json": {
+      "hash": "0c8497b9c97df5968d9373e2b500c84b3647662f8357e3f8bd3c8f7d337d3844",
+      "last_checked": "2025-06-06T03:03:50.523617",
+      "status": "unchanged",
+      "etag": "W/\"0391e78df0d91da101339c874b67d554\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/hashvalue": {
+      "hash": "0c8497b9c97df5968d9373e2b500c84b3647662f8357e3f8bd3c8f7d337d3844",
+      "last_checked": "2025-06-06T03:03:50.523617",
+      "status": "unchanged",
+      "etag": "5d5ce08f5f914df5f5e4f2e208aa0b90"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/hash(into:).json": {
+      "hash": "95dd41ee284895f75cf4be0a98f14a1ad5d3ca36edc7ac3e11a3d8552765d67c",
+      "last_checked": "2025-06-06T03:03:50.919341",
+      "status": "unchanged",
+      "etag": "W/\"6ee6e0f4f32121a566037c63065e4fc4\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/actionbutton/buttonimageplacement/hash(into:)": {
+      "hash": "95dd41ee284895f75cf4be0a98f14a1ad5d3ca36edc7ac3e11a3d8552765d67c",
+      "last_checked": "2025-06-06T03:03:50.919341",
+      "status": "unchanged",
+      "etag": "b983e6ad949f260ed315fc25fdcfec0d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/!=(_:_:).json": {
+      "hash": "60fef8a35a49946e93179f07aa9f293900f8ee1816bb1f6eb4726cd699aea36b",
+      "last_checked": "2025-06-06T03:03:51.266470",
+      "status": "unchanged",
+      "etag": "W/\"44edde8fddc9d560b40d295aeb492302\""
+    },
+    "https://developer.apple.com/documentation/marketplacekit/applibrary/app/metadata/!=(_:_:)": {
+      "hash": "60fef8a35a49946e93179f07aa9f293900f8ee1816bb1f6eb4726cd699aea36b",
+      "last_checked": "2025-06-06T03:03:51.266470",
+      "status": "unchanged",
+      "etag": "63735eeb8ea9e456109f3e72335796f3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/MarketplaceKit/marketplacekiturischeme.json": {
+      "hash": "48ccb7334206b3fb0ef470410f576badbbcae5231b3d63c89e1ffe9744907402",
+      "last_checked": "2025-06-06T19:39:45.726534",
+      "status": "new",
+      "etag": "W/\"236b25e5ff885471f55309963d3c6d73\""
+    },
+    "https://developer.apple.com/documentation/MarketplaceKit/marketplacekiturischeme": {
+      "hash": "dc1f3d1e871361294d77056b22a6689caaff347b9c69b729558429febcbd538b",
+      "last_checked": "2025-06-06T19:39:45.726991",
+      "status": "unchanged",
+      "etag": "7d4e0728ff40678b59edec7803f26b32"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/MarketplaceKit/reauthenticating-a-person-to-manage-apps.json": {
+      "hash": "d91f705303cd418094b75b875eeefa858e3649ae3dc3fc813bc3f7d9b29fd5a6",
+      "last_checked": "2025-06-06T19:39:49.240210",
+      "status": "new",
+      "etag": "W/\"4135bc5d20d092daf97d3c10ad104c1c\""
+    },
+    "https://developer.apple.com/documentation/MarketplaceKit/reauthenticating-a-person-to-manage-apps": {
+      "hash": "e54a8d945ec25a074749c7e97af93bdcc94f2698031f78d7ab33ca6a4674025c",
+      "last_checked": "2025-06-06T19:39:49.240584",
+      "status": "unchanged",
+      "etag": "90654f21fa38267382aee37b595a02bf"
+    }
+  }
+}

@@ -25,4 +25,4 @@ Navigate to the end of a dark maze using VoiceOver as your guide.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/wwdc21_challenge_voiceover_maze)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/wwdc21_challenge_voiceover_maze)*

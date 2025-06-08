@@ -1,4 +1,4 @@
 Completed scraping FinanceKitUI!
-Total pages scraped: 1424
+Total pages scraped: 1
 Pages skipped (unchanged): 1
 Pages failed: 0

@@ -1,0 +1,873 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-08T17:22:11.157675",
+    "total_pages": 157
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/Accounts.json": {
+      "hash": "30039b58b9689fa737f2d2bbc6dc32118b731e99fd98e51dc43cef3293ab2745",
+      "last_checked": "2025-06-08T17:22:10.977293",
+      "status": "unchanged",
+      "etag": "W/\"b2c74207c9eea4e446de733efe482c3b\""
+    },
+    "https://developer.apple.com/documentation/Accounts": {
+      "hash": "30039b58b9689fa737f2d2bbc6dc32118b731e99fd98e51dc43cef3293ab2745",
+      "last_checked": "2025-06-08T17:22:10.977359",
+      "status": "unchanged",
+      "etag": "W/\"b2c74207c9eea4e446de733efe482c3b\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts.json": {
+      "hash": "c7084f678ecf1a648491c88d949f64e27199d670ef8abf25381d2d4a599b6e7c",
+      "last_checked": "2025-06-05T12:00:50.778254",
+      "status": "unchanged",
+      "etag": "W/\"b2c74207c9eea4e446de733efe482c3b\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore.json": {
+      "hash": "36bc3e380389cbc4c48356e9b72f6cc071b02ce65832288541d88a962fb8baf1",
+      "last_checked": "2025-06-05T12:00:51.752843",
+      "status": "unchanged",
+      "etag": "W/\"bc9687c26174396c2c735b012b4acea5\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstore": {
+      "hash": "36bc3e380389cbc4c48356e9b72f6cc071b02ce65832288541d88a962fb8baf1",
+      "last_checked": "2025-06-05T12:00:51.752843",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore/requestaccesstoaccounts(with:options:completion:).json": {
+      "hash": "07043fdcd30cbb77d1e3a30b069eb6e1f3757a1677ec08c7e9868a61f44517fa",
+      "last_checked": "2025-06-05T12:00:52.381230",
+      "status": "unchanged",
+      "etag": "W/\"03c3c819068173231d813ba4d6f05807\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstore/requestaccesstoaccounts(with:options:completion:)": {
+      "hash": "07043fdcd30cbb77d1e3a30b069eb6e1f3757a1677ec08c7e9868a61f44517fa",
+      "last_checked": "2025-06-05T12:00:52.381230",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstorerequestaccesscompletionhandler.json": {
+      "hash": "4a89d6879d10f3bd65faa7267b2941281bdc31348ec96b66d25ec9a526d162b4",
+      "last_checked": "2025-06-05T12:00:53.016199",
+      "status": "unchanged",
+      "etag": "W/\"4f43684e42eab96e5302f19f4712150f\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstorerequestaccesscompletionhandler": {
+      "hash": "4a89d6879d10f3bd65faa7267b2941281bdc31348ec96b66d25ec9a526d162b4",
+      "last_checked": "2025-06-05T12:00:53.016199",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore/accounts.json": {
+      "hash": "7eb9efeaf13d75d6d8ca0cd426050983686cbfb63a9588d9d5a995dcdf3d81c4",
+      "last_checked": "2025-06-05T12:00:53.436438",
+      "status": "unchanged",
+      "etag": "W/\"d2e7bf168686e6c9858315181e68e4ba\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstore/accounts": {
+      "hash": "7eb9efeaf13d75d6d8ca0cd426050983686cbfb63a9588d9d5a995dcdf3d81c4",
+      "last_checked": "2025-06-05T12:00:53.436438",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore/account(withidentifier:).json": {
+      "hash": "a9ec82cb74e656b07f377317553116991bd5bbd93ce73877ec507ffbacebe66f",
+      "last_checked": "2025-06-05T12:00:53.841948",
+      "status": "unchanged",
+      "etag": "W/\"46d908147dee9ace37ef1c2d77ac6ab1\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstore/account(withidentifier:)": {
+      "hash": "a9ec82cb74e656b07f377317553116991bd5bbd93ce73877ec507ffbacebe66f",
+      "last_checked": "2025-06-05T12:00:53.841948",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore/accounts(with:).json": {
+      "hash": "24777af5b6468e0ddd25397ae9b18d49aec4ee7addccc6485c2475b5400c8498",
+      "last_checked": "2025-06-05T12:00:54.387737",
+      "status": "unchanged",
+      "etag": "W/\"85c5c3c7d16f4b4789d2ddc248bec39e\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstore/accounts(with:)": {
+      "hash": "24777af5b6468e0ddd25397ae9b18d49aec4ee7addccc6485c2475b5400c8498",
+      "last_checked": "2025-06-05T12:00:54.387737",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore/accounttype(withaccounttypeidentifier:).json": {
+      "hash": "71be9012b175cf5cb1e8d636d014ca1086095f70ed18c4edcfbc58f68021c3f6",
+      "last_checked": "2025-06-05T12:00:54.801146",
+      "status": "unchanged",
+      "etag": "W/\"8b88448b8cd3242473e607fd2ddc74b4\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstore/accounttype(withaccounttypeidentifier:)": {
+      "hash": "71be9012b175cf5cb1e8d636d014ca1086095f70ed18c4edcfbc58f68021c3f6",
+      "last_checked": "2025-06-05T12:00:54.801146",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore/saveaccount(_:withcompletionhandler:).json": {
+      "hash": "16e15c2478604b2ea14278433183d562e1ac4cabff575071046981571841b16e",
+      "last_checked": "2025-06-05T12:00:55.302502",
+      "status": "unchanged",
+      "etag": "W/\"3d581771e85eb6126332e32a040fe706\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstore/saveaccount(_:withcompletionhandler:)": {
+      "hash": "16e15c2478604b2ea14278433183d562e1ac4cabff575071046981571841b16e",
+      "last_checked": "2025-06-05T12:00:55.302502",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstoresavecompletionhandler.json": {
+      "hash": "7692f710e2e527e5fd811c3bdc1c46e1ab8bdda15b82f352c19080b15013519a",
+      "last_checked": "2025-06-05T12:00:55.680164",
+      "status": "unchanged",
+      "etag": "W/\"d924df651ac228dcc5ec310b03f96ac0\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstoresavecompletionhandler": {
+      "hash": "7692f710e2e527e5fd811c3bdc1c46e1ab8bdda15b82f352c19080b15013519a",
+      "last_checked": "2025-06-05T12:00:55.680164",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore/renewcredentials(for:completion:).json": {
+      "hash": "835d4ca7a11fb4e8a60fa17cf24c97b777e01b8e45391ad8a6953b05f3ed2423",
+      "last_checked": "2025-06-05T12:00:56.079311",
+      "status": "unchanged",
+      "etag": "W/\"cfe4486cb9ea385e3ab0a0670bced89a\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstore/renewcredentials(for:completion:)": {
+      "hash": "835d4ca7a11fb4e8a60fa17cf24c97b777e01b8e45391ad8a6953b05f3ed2423",
+      "last_checked": "2025-06-05T12:00:56.079311",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstorecredentialrenewalhandler.json": {
+      "hash": "861847f1c2c6cfb144b31094a91f9344bdf80d9b65477e1fdeeb55f1a4d97500",
+      "last_checked": "2025-06-05T12:00:56.470419",
+      "status": "unchanged",
+      "etag": "W/\"c03837618c0465a6ed80e17e5ac2a58f\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstorecredentialrenewalhandler": {
+      "hash": "861847f1c2c6cfb144b31094a91f9344bdf80d9b65477e1fdeeb55f1a4d97500",
+      "last_checked": "2025-06-05T12:00:56.470419",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountcredentialrenewresult.json": {
+      "hash": "aa4a555174dd86ad1aa5a1975caa26c276c4401dfc3f23c64989bccab1f11766",
+      "last_checked": "2025-06-05T12:00:56.896493",
+      "status": "unchanged",
+      "etag": "W/\"c5897d392e1a0c938ac5c9347aa376b0\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountcredentialrenewresult": {
+      "hash": "aa4a555174dd86ad1aa5a1975caa26c276c4401dfc3f23c64989bccab1f11766",
+      "last_checked": "2025-06-05T12:00:56.896493",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountcredentialrenewresult/renewed.json": {
+      "hash": "afa4b44883e3750a0544c976eae99098d2505cfec3486815ee56bc0f385973bd",
+      "last_checked": "2025-06-05T12:00:57.299902",
+      "status": "unchanged",
+      "etag": "W/\"e23f36e993d779594d5c5ab43c15f43b\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountcredentialrenewresult/renewed": {
+      "hash": "afa4b44883e3750a0544c976eae99098d2505cfec3486815ee56bc0f385973bd",
+      "last_checked": "2025-06-05T12:00:57.299902",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountcredentialrenewresult/rejected.json": {
+      "hash": "9a362f55acbcacf69300c0ccb119f5f6acdf900f6cd47a298080f959031ade12",
+      "last_checked": "2025-06-05T12:00:57.842350",
+      "status": "unchanged",
+      "etag": "W/\"7d7598a5f2f7ffcd1c65949039ecc419\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountcredentialrenewresult/rejected": {
+      "hash": "9a362f55acbcacf69300c0ccb119f5f6acdf900f6cd47a298080f959031ade12",
+      "last_checked": "2025-06-05T12:00:57.842350",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountcredentialrenewresult/failed.json": {
+      "hash": "b799c7fc99db1bcb5d27509617877e672b6d818f1b6cc08aff5605599edcf65a",
+      "last_checked": "2025-06-05T12:00:58.262617",
+      "status": "unchanged",
+      "etag": "W/\"26d9a5abc5a6e4bb73e6f18f4a0465b5\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountcredentialrenewresult/failed": {
+      "hash": "b799c7fc99db1bcb5d27509617877e672b6d818f1b6cc08aff5605599edcf65a",
+      "last_checked": "2025-06-05T12:00:58.262617",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountcredentialrenewresult/init(rawvalue:).json": {
+      "hash": "03b268c00755d805ae6810ce62beddb7964f97960fcc0675c683621ae29b9d31",
+      "last_checked": "2025-06-05T12:00:58.681765",
+      "status": "unchanged",
+      "etag": "W/\"96d823fa072a0084962f400122fcd5da\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountcredentialrenewresult/init(rawvalue:)": {
+      "hash": "03b268c00755d805ae6810ce62beddb7964f97960fcc0675c683621ae29b9d31",
+      "last_checked": "2025-06-05T12:00:58.681765",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstore/removeaccount(_:withcompletionhandler:).json": {
+      "hash": "8470fef69040acb2e51d0f8c8234fbd74f7a9b4012de84994b0e15bda03f30eb",
+      "last_checked": "2025-06-05T12:00:59.102423",
+      "status": "unchanged",
+      "etag": "W/\"2abb2abc50c637eda93c4dc941848c74\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstore/removeaccount(_:withcompletionhandler:)": {
+      "hash": "8470fef69040acb2e51d0f8c8234fbd74f7a9b4012de84994b0e15bda03f30eb",
+      "last_checked": "2025-06-05T12:00:59.102423",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountstoreremovecompletionhandler.json": {
+      "hash": "c39bf8ae59964fe8d3d786bf2f1825405a58c9192bf7583829f6a59101f0798b",
+      "last_checked": "2025-06-05T12:00:59.491714",
+      "status": "unchanged",
+      "etag": "W/\"277fb4b22ae549a982e09c86d5c90026\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountstoreremovecompletionhandler": {
+      "hash": "c39bf8ae59964fe8d3d786bf2f1825405a58c9192bf7583829f6a59101f0798b",
+      "last_checked": "2025-06-05T12:00:59.491714",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccount.json": {
+      "hash": "bb5ba567e7f276f8347a69943e5f5edb824c2cb451049662ffaa455b1d5e1e6b",
+      "last_checked": "2025-06-05T12:00:59.893953",
+      "status": "unchanged",
+      "etag": "W/\"ca901429cd5e2da155154799cf401fea\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccount": {
+      "hash": "bb5ba567e7f276f8347a69943e5f5edb824c2cb451049662ffaa455b1d5e1e6b",
+      "last_checked": "2025-06-05T12:00:59.893953",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccount/init(accounttype:).json": {
+      "hash": "4d12f1534adfc4d4adf60bbf4a04bdd9547fa6b14ad2fe38e19aedc1885b1fe6",
+      "last_checked": "2025-06-05T12:01:00.367069",
+      "status": "unchanged",
+      "etag": "W/\"d492e9801c8b59f7ebd1582151afd78a\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccount/init(accounttype:)": {
+      "hash": "4d12f1534adfc4d4adf60bbf4a04bdd9547fa6b14ad2fe38e19aedc1885b1fe6",
+      "last_checked": "2025-06-05T12:01:00.367069",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccount/accountdescription.json": {
+      "hash": "b55f1aa44a54b23200ded3c59185438daa560e87e19f482850642706aa21cb10",
+      "last_checked": "2025-06-05T12:01:00.766677",
+      "status": "unchanged",
+      "etag": "W/\"cf4c40d5842367c45e16e4c05ce20019\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccount/accountdescription": {
+      "hash": "b55f1aa44a54b23200ded3c59185438daa560e87e19f482850642706aa21cb10",
+      "last_checked": "2025-06-05T12:01:00.766677",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccount/accounttype.json": {
+      "hash": "6b6ab59d5da802c55554227e7cf0c3714b61b4d5d2d56d5638e97d7118c1c5bc",
+      "last_checked": "2025-06-05T12:01:01.210325",
+      "status": "unchanged",
+      "etag": "W/\"bde094b2be483d645ab7a0f3a4f40d30\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccount/accounttype": {
+      "hash": "6b6ab59d5da802c55554227e7cf0c3714b61b4d5d2d56d5638e97d7118c1c5bc",
+      "last_checked": "2025-06-05T12:01:01.210325",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccount/credential.json": {
+      "hash": "584fbbc1e6cbeda33f5cfa1ff04125f9e627d8e27807b787385bbbff9b8450ae",
+      "last_checked": "2025-06-05T12:01:01.595718",
+      "status": "unchanged",
+      "etag": "W/\"a0a8923bc69d93b0205d9eb1f3ce6e22\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccount/credential": {
+      "hash": "584fbbc1e6cbeda33f5cfa1ff04125f9e627d8e27807b787385bbbff9b8450ae",
+      "last_checked": "2025-06-05T12:01:01.595718",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccount/identifier.json": {
+      "hash": "7cd608a7efc074bfd47962ae96f9e52451fa79c0c04a32829ecd05c3bc7960fd",
+      "last_checked": "2025-06-05T12:01:02.034652",
+      "status": "unchanged",
+      "etag": "W/\"909437524d635c3767367f31029ff291\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccount/identifier": {
+      "hash": "7cd608a7efc074bfd47962ae96f9e52451fa79c0c04a32829ecd05c3bc7960fd",
+      "last_checked": "2025-06-05T12:01:02.034652",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccount/username.json": {
+      "hash": "0e4efac86339691cf62fa131ac5cb0ebe6d043ab4fdd519f2b020c822ba8d57c",
+      "last_checked": "2025-06-05T12:01:02.467124",
+      "status": "unchanged",
+      "etag": "W/\"89bda80a4ccca8d18abdd89b82e98fb8\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccount/username": {
+      "hash": "0e4efac86339691cf62fa131ac5cb0ebe6d043ab4fdd519f2b020c822ba8d57c",
+      "last_checked": "2025-06-05T12:01:02.467124",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccount/userfullname.json": {
+      "hash": "d89580b2c45ad403af9117dac5aa967897951d84ca5ebdcaf482198faeacea81",
+      "last_checked": "2025-06-05T12:01:02.961812",
+      "status": "unchanged",
+      "etag": "W/\"07585d6d69230804acc46a3fd3035553\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccount/userfullname": {
+      "hash": "d89580b2c45ad403af9117dac5aa967897951d84ca5ebdcaf482198faeacea81",
+      "last_checked": "2025-06-05T12:01:02.961812",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountcredential.json": {
+      "hash": "6e7dc2e1b6420fa52a45cc590c55638ec3940574356949bbbb450596d7a8dcdf",
+      "last_checked": "2025-06-05T12:01:03.422604",
+      "status": "unchanged",
+      "etag": "W/\"086e9045695abbc5c6edd4f4c627a5c3\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountcredential": {
+      "hash": "6e7dc2e1b6420fa52a45cc590c55638ec3940574356949bbbb450596d7a8dcdf",
+      "last_checked": "2025-06-05T12:01:03.422604",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountcredential/init(oauthtoken:tokensecret:).json": {
+      "hash": "ef23fa3f0b6327a0e821eb996cc5570d9f5ed9ac4c2a0fcc5e646eeef2be0d8c",
+      "last_checked": "2025-06-05T12:01:03.843772",
+      "status": "unchanged",
+      "etag": "W/\"b026c163d04be87a81b9895d6733f5a6\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountcredential/init(oauthtoken:tokensecret:)": {
+      "hash": "ef23fa3f0b6327a0e821eb996cc5570d9f5ed9ac4c2a0fcc5e646eeef2be0d8c",
+      "last_checked": "2025-06-05T12:01:03.843772",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountcredential/init(oauth2token:refreshtoken:expirydate:).json": {
+      "hash": "73703ed11e972717e884ebafef59a0aa7224549d71c3c480a1438c5433ed00b3",
+      "last_checked": "2025-06-05T12:01:04.238719",
+      "status": "unchanged",
+      "etag": "W/\"e09c57fad1f17f6d701fe6b9f11eade4\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountcredential/init(oauth2token:refreshtoken:expirydate:)": {
+      "hash": "73703ed11e972717e884ebafef59a0aa7224549d71c3c480a1438c5433ed00b3",
+      "last_checked": "2025-06-05T12:01:04.238719",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccountcredential/oauthtoken.json": {
+      "hash": "2f1d87fdd2dd1536f3e1155b91f414f70a4a5170ecb0a6b236e936938be2a72b",
+      "last_checked": "2025-06-05T12:01:05.016042",
+      "status": "unchanged",
+      "etag": "W/\"83d8ea051158462e558d5f327063e096\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccountcredential/oauthtoken": {
+      "hash": "2f1d87fdd2dd1536f3e1155b91f414f70a4a5170ecb0a6b236e936938be2a72b",
+      "last_checked": "2025-06-05T12:01:05.016042",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccounttype.json": {
+      "hash": "f3a5f12235047b8c5cb624198b35ad360bfa8d878d72bdf6aad476daf7ecfd5d",
+      "last_checked": "2025-06-05T12:01:05.454247",
+      "status": "unchanged",
+      "etag": "W/\"563ab52c8418c7bb827885c0c093bb44\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccounttype": {
+      "hash": "f3a5f12235047b8c5cb624198b35ad360bfa8d878d72bdf6aad476daf7ecfd5d",
+      "last_checked": "2025-06-05T12:01:05.454247",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccounttype/accessgranted.json": {
+      "hash": "956c505f82473f58446084e51f23a05d81f48bffb8c432b1b6d5c1b82dcf1c14",
+      "last_checked": "2025-06-05T12:01:05.901788",
+      "status": "unchanged",
+      "etag": "W/\"802f3c41350eb6c2d1dd36a802f1b005\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccounttype/accessgranted": {
+      "hash": "956c505f82473f58446084e51f23a05d81f48bffb8c432b1b6d5c1b82dcf1c14",
+      "last_checked": "2025-06-05T12:01:05.901788",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccounttype/accounttypedescription.json": {
+      "hash": "2b9c5cfc3527325382bf83137477a1d8f5ca04f0b9900688523cbb4f3fbbdf00",
+      "last_checked": "2025-06-05T12:01:06.294012",
+      "status": "unchanged",
+      "etag": "W/\"5244d68f613cdc1c6f07134a914cd430\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccounttype/accounttypedescription": {
+      "hash": "2b9c5cfc3527325382bf83137477a1d8f5ca04f0b9900688523cbb4f3fbbdf00",
+      "last_checked": "2025-06-05T12:01:06.294012",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccounttype/identifier.json": {
+      "hash": "90a20d5d208819ea125715a2d61c85e0c4d9349225ad8163e03622c3e8cae772",
+      "last_checked": "2025-06-05T12:01:06.689785",
+      "status": "unchanged",
+      "etag": "W/\"fce1da0e564a81cc23292b934df9f85e\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccounttype/identifier": {
+      "hash": "90a20d5d208819ea125715a2d61c85e0c4d9349225ad8163e03622c3e8cae772",
+      "last_checked": "2025-06-05T12:01:06.689785",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorcode.json": {
+      "hash": "bdbb7b78eb33d62e791d17b6f78c93952301a7695b9f45769a321a556e92c4e2",
+      "last_checked": "2025-06-05T12:01:07.080027",
+      "status": "unchanged",
+      "etag": "W/\"9c9ae57c38644cb95577f00b885e559e\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorcode": {
+      "hash": "bdbb7b78eb33d62e791d17b6f78c93952301a7695b9f45769a321a556e92c4e2",
+      "last_checked": "2025-06-05T12:01:07.080027",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorunknown.json": {
+      "hash": "bf0dbd3ba31e0ea2dd11020e6f32b72cf3f5f991d16d2fd3a8bb7f3fa327b70e",
+      "last_checked": "2025-06-05T12:01:07.509071",
+      "status": "unchanged",
+      "etag": "W/\"7f4b2e3d3c15e68ec35067336577438c\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorunknown": {
+      "hash": "bf0dbd3ba31e0ea2dd11020e6f32b72cf3f5f991d16d2fd3a8bb7f3fa327b70e",
+      "last_checked": "2025-06-05T12:01:07.509071",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerroraccountmissingrequiredproperty.json": {
+      "hash": "d9d514fff0132f7b3af3db694eaa0640c403433cfac0c133704310e3906124b4",
+      "last_checked": "2025-06-05T12:01:07.932581",
+      "status": "unchanged",
+      "etag": "W/\"1f703b91a69898e7522d9b45e1dafab0\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerroraccountmissingrequiredproperty": {
+      "hash": "d9d514fff0132f7b3af3db694eaa0640c403433cfac0c133704310e3906124b4",
+      "last_checked": "2025-06-05T12:01:07.932581",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerroraccountauthenticationfailed.json": {
+      "hash": "fc83b6a1e66b3ad5c4ce702a31b2998425a1124f9012546f827b981b1bb2dbdf",
+      "last_checked": "2025-06-05T12:01:08.332589",
+      "status": "unchanged",
+      "etag": "W/\"5c38b0c9f6f19eb456929827985e7a8a\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerroraccountauthenticationfailed": {
+      "hash": "fc83b6a1e66b3ad5c4ce702a31b2998425a1124f9012546f827b981b1bb2dbdf",
+      "last_checked": "2025-06-05T12:01:08.332589",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerroraccounttypeinvalid.json": {
+      "hash": "6d29cf650ebd411ec8ae65571c82e9bb615ce847dbd2787e7d142ee8b7e584a5",
+      "last_checked": "2025-06-05T12:01:08.766968",
+      "status": "unchanged",
+      "etag": "W/\"a944b32f67822db7bc08e4e6ee748fc1\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerroraccounttypeinvalid": {
+      "hash": "6d29cf650ebd411ec8ae65571c82e9bb615ce847dbd2787e7d142ee8b7e584a5",
+      "last_checked": "2025-06-05T12:01:08.766968",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerroraccountalreadyexists.json": {
+      "hash": "9e7f1d207b274247a143ef0fd38047cb40eb41a6785bdd4449655503beef0a52",
+      "last_checked": "2025-06-05T12:01:09.184390",
+      "status": "unchanged",
+      "etag": "W/\"01f2616f5c00b29abfda6319c92c39e2\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerroraccountalreadyexists": {
+      "hash": "9e7f1d207b274247a143ef0fd38047cb40eb41a6785bdd4449655503beef0a52",
+      "last_checked": "2025-06-05T12:01:09.184390",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerroraccountnotfound.json": {
+      "hash": "26d27a9cfaeb36269f80e31820091965bdd55d9efea92be12b34675176b25b0f",
+      "last_checked": "2025-06-05T12:01:09.607710",
+      "status": "unchanged",
+      "etag": "W/\"1db257ba15b461e5d34b56465cc319ee\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerroraccountnotfound": {
+      "hash": "26d27a9cfaeb36269f80e31820091965bdd55d9efea92be12b34675176b25b0f",
+      "last_checked": "2025-06-05T12:01:09.607710",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorpermissiondenied.json": {
+      "hash": "e8dd2a04274d6b2951b77ddf161ef1e7088fd691c2c44d961585f153dc06ae2f",
+      "last_checked": "2025-06-05T12:01:10.042136",
+      "status": "unchanged",
+      "etag": "W/\"553913110fc9b62c49676e3ba6925c6f\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorpermissiondenied": {
+      "hash": "e8dd2a04274d6b2951b77ddf161ef1e7088fd691c2c44d961585f153dc06ae2f",
+      "last_checked": "2025-06-05T12:01:10.042136",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerroraccessinfoinvalid.json": {
+      "hash": "49eb9e9fffc432babb71d12e731cb0afa6c9312b2a931eb48e062f0147212d7a",
+      "last_checked": "2025-06-05T12:01:10.496357",
+      "status": "unchanged",
+      "etag": "W/\"dcf28fb0e341886cb3d402ce34e30faf\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerroraccessinfoinvalid": {
+      "hash": "49eb9e9fffc432babb71d12e731cb0afa6c9312b2a931eb48e062f0147212d7a",
+      "last_checked": "2025-06-05T12:01:10.496357",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorclientpermissiondenied.json": {
+      "hash": "e4a19ae0150413c9f313f6020d3c38d541fb89d18a133acf94360a85c8108014",
+      "last_checked": "2025-06-05T12:01:10.920328",
+      "status": "unchanged",
+      "etag": "W/\"8cc7a8f156816ec8361418542a0f0acd\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorclientpermissiondenied": {
+      "hash": "e4a19ae0150413c9f313f6020d3c38d541fb89d18a133acf94360a85c8108014",
+      "last_checked": "2025-06-05T12:01:10.920328",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerroraccessdeniedbyprotectionpolicy.json": {
+      "hash": "59908362a257c35e058611980b1291c730b2ffa607870b43c604ff661d9cf1e1",
+      "last_checked": "2025-06-05T12:01:11.359631",
+      "status": "unchanged",
+      "etag": "W/\"c78949f481e8907c1b10628a1531b38e\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerroraccessdeniedbyprotectionpolicy": {
+      "hash": "59908362a257c35e058611980b1291c730b2ffa607870b43c604ff661d9cf1e1",
+      "last_checked": "2025-06-05T12:01:11.359631",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorcredentialnotfound.json": {
+      "hash": "6af20b4d61a8e7fb247a547ef0a9a301860e5121bf94fe5cf43804de2297d847",
+      "last_checked": "2025-06-05T12:01:11.780590",
+      "status": "unchanged",
+      "etag": "W/\"df77e4e15f9c3eaee0a8a65a3a61199c\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorcredentialnotfound": {
+      "hash": "6af20b4d61a8e7fb247a547ef0a9a301860e5121bf94fe5cf43804de2297d847",
+      "last_checked": "2025-06-05T12:01:11.780590",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorfetchcredentialfailed.json": {
+      "hash": "a24be5c1142935eeb42af1eaceb763a6b46e559caa1eca5dc21b033f81c7c92f",
+      "last_checked": "2025-06-05T12:01:12.216253",
+      "status": "unchanged",
+      "etag": "W/\"ecc7e9942b5207dcc0c23d121608c6a0\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorfetchcredentialfailed": {
+      "hash": "a24be5c1142935eeb42af1eaceb763a6b46e559caa1eca5dc21b033f81c7c92f",
+      "last_checked": "2025-06-05T12:01:12.216253",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorstorecredentialfailed.json": {
+      "hash": "894239e0b3097a4afc1b5e0afe590076ef42b106a55fdb6dda5b84d4c09652ec",
+      "last_checked": "2025-06-05T12:01:12.597574",
+      "status": "unchanged",
+      "etag": "W/\"0fbf67b3ffbb92c0d593c12f78ab3773\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorstorecredentialfailed": {
+      "hash": "894239e0b3097a4afc1b5e0afe590076ef42b106a55fdb6dda5b84d4c09652ec",
+      "last_checked": "2025-06-05T12:01:12.597574",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorremovecredentialfailed.json": {
+      "hash": "99fb9a3c3ac1aa7e588b3be47723589361eff6d340de5b26339eda36958394ec",
+      "last_checked": "2025-06-05T12:01:13.016613",
+      "status": "unchanged",
+      "etag": "W/\"9f1d1cedbf1d9e7efd7577b4f9ac0dc1\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorremovecredentialfailed": {
+      "hash": "99fb9a3c3ac1aa7e588b3be47723589361eff6d340de5b26339eda36958394ec",
+      "last_checked": "2025-06-05T12:01:13.016613",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorupdatingnonexistentaccount.json": {
+      "hash": "84497db6cb26f0945d12a8eba541b8f336bccabad38eee474591f7c111805eb8",
+      "last_checked": "2025-06-05T12:01:13.486440",
+      "status": "unchanged",
+      "etag": "W/\"361958d70276b66932ca253db48c6c33\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorupdatingnonexistentaccount": {
+      "hash": "84497db6cb26f0945d12a8eba541b8f336bccabad38eee474591f7c111805eb8",
+      "last_checked": "2025-06-05T12:01:13.486440",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorinvalidclientbundleid.json": {
+      "hash": "de6f162eafb25de352535444a271f6bbe074ceb7322d59812415ac1377407e0b",
+      "last_checked": "2025-06-05T12:01:13.896022",
+      "status": "unchanged",
+      "etag": "W/\"daac3abbae508f541086467e125fbd0d\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorinvalidclientbundleid": {
+      "hash": "de6f162eafb25de352535444a271f6bbe074ceb7322d59812415ac1377407e0b",
+      "last_checked": "2025-06-05T12:01:13.896022",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrordeniedbyplugin.json": {
+      "hash": "283c4b402ee431b5f29e00b83e40e67a4c312d02c2132332d895962110667a91",
+      "last_checked": "2025-06-05T12:01:14.262849",
+      "status": "unchanged",
+      "etag": "W/\"81ee50c23e99a55ee1dbf03a30a6e7d8\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrordeniedbyplugin": {
+      "hash": "283c4b402ee431b5f29e00b83e40e67a4c312d02c2132332d895962110667a91",
+      "last_checked": "2025-06-05T12:01:14.262849",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorcoredatasavefailed.json": {
+      "hash": "67e16f138609d94b98016e6a0045f1f2d9c09e7a0dd480ff333d7157f13cb0d0",
+      "last_checked": "2025-06-05T12:01:14.690698",
+      "status": "unchanged",
+      "etag": "W/\"afe5f12db48d023055fab4c3faf49e85\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorcoredatasavefailed": {
+      "hash": "67e16f138609d94b98016e6a0045f1f2d9c09e7a0dd480ff333d7157f13cb0d0",
+      "last_checked": "2025-06-05T12:01:14.690698",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorfailedserializingaccountinfo.json": {
+      "hash": "a52f5eeecbaae8fca9ad91ce04d55a9738146669a24c0cd4ce2b213fc2b069d6",
+      "last_checked": "2025-06-05T12:01:15.130527",
+      "status": "unchanged",
+      "etag": "W/\"a6db5e46bcdfe0a5de6ff23885455226\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorfailedserializingaccountinfo": {
+      "hash": "a52f5eeecbaae8fca9ad91ce04d55a9738146669a24c0cd4ce2b213fc2b069d6",
+      "last_checked": "2025-06-05T12:01:15.130527",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorinvalidcommand.json": {
+      "hash": "614a27b53b7b50792a1bb527557ba1e7516a8afaefbb4daae638ea8586b87758",
+      "last_checked": "2025-06-05T12:01:15.529396",
+      "status": "unchanged",
+      "etag": "W/\"0333221f1401f135a319a4e01ddb1d1b\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorinvalidcommand": {
+      "hash": "614a27b53b7b50792a1bb527557ba1e7516a8afaefbb4daae638ea8586b87758",
+      "last_checked": "2025-06-05T12:01:15.529396",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrormissingtransportmessageid.json": {
+      "hash": "4254d44daa41fe6afe7c1d46f71514f370572ffb2239b70f106b373944ae2deb",
+      "last_checked": "2025-06-05T12:01:16.004953",
+      "status": "unchanged",
+      "etag": "W/\"0f5d81bff7c1068c610e289c0f6348bc\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrormissingtransportmessageid": {
+      "hash": "4254d44daa41fe6afe7c1d46f71514f370572ffb2239b70f106b373944ae2deb",
+      "last_checked": "2025-06-05T12:01:16.004953",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorcredentialitemnotfound.json": {
+      "hash": "b1e146b8ab8266b8c6961579d6e33e451dd8fdc36efb39812e7ca1297c87aeaf",
+      "last_checked": "2025-06-05T12:01:16.436606",
+      "status": "unchanged",
+      "etag": "W/\"5ce901aee60d01ffdebb8ba4e6ac0607\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorcredentialitemnotfound": {
+      "hash": "b1e146b8ab8266b8c6961579d6e33e451dd8fdc36efb39812e7ca1297c87aeaf",
+      "last_checked": "2025-06-05T12:01:16.436606",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorcredentialitemnotexpired.json": {
+      "hash": "d9924dd2af92806c381e8214d58173cd2295fa7535e9906c98e97701eed389f1",
+      "last_checked": "2025-06-05T12:01:16.876815",
+      "status": "unchanged",
+      "etag": "W/\"07361bd9801e4c8e042a7329e0cd25f4\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorcredentialitemnotexpired": {
+      "hash": "d9924dd2af92806c381e8214d58173cd2295fa7535e9906c98e97701eed389f1",
+      "last_checked": "2025-06-05T12:01:16.876815",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorcode/init(_:).json": {
+      "hash": "c47adda349ebdf2d25b6e43e69990120d5e52d2a78fe600184f50f7c826ecd16",
+      "last_checked": "2025-06-05T12:01:17.304236",
+      "status": "unchanged",
+      "etag": "W/\"7495e57948a7361a63aefa82749d4fa3\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorcode/init(_:)": {
+      "hash": "c47adda349ebdf2d25b6e43e69990120d5e52d2a78fe600184f50f7c826ecd16",
+      "last_checked": "2025-06-05T12:01:17.304236",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorcode/init(rawvalue:).json": {
+      "hash": "b3f80a5880ad961eb623ac437a054c4dce07547e64103afb3886c236be546634",
+      "last_checked": "2025-06-05T12:01:17.717488",
+      "status": "unchanged",
+      "etag": "W/\"cc4ec1ae1c161f5608b6289b29f760f2\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorcode/init(rawvalue:)": {
+      "hash": "b3f80a5880ad961eb623ac437a054c4dce07547e64103afb3886c236be546634",
+      "last_checked": "2025-06-05T12:01:17.717488",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrorcode/rawvalue.json": {
+      "hash": "9eb377a0998650b984443b5ae1e87879652edfd85942a7cdc0205192915fc36c",
+      "last_checked": "2025-06-05T12:01:18.171322",
+      "status": "unchanged",
+      "etag": "W/\"823995d1bbea9bd535105a81c64a5f51\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrorcode/rawvalue": {
+      "hash": "9eb377a0998650b984443b5ae1e87879652edfd85942a7cdc0205192915fc36c",
+      "last_checked": "2025-06-05T12:01:18.171322",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acerrordomain.json": {
+      "hash": "31e3765bc3c4e4ca002e8080b6c104ef0f3c88e5c8fe16c39a2590bf5af07ee1",
+      "last_checked": "2025-06-05T12:01:18.625934",
+      "status": "unchanged",
+      "etag": "W/\"ca78fe75c4d0eb1e5f5297b1b3d8f7e0\""
+    },
+    "https://developer.apple.com/documentation/accounts/acerrordomain": {
+      "hash": "31e3765bc3c4e4ca002e8080b6c104ef0f3c88e5c8fe16c39a2590bf5af07ee1",
+      "last_checked": "2025-06-05T12:01:18.625934",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/deprecated-symbols.json": {
+      "hash": "b2192b8b74ef74fb6a1481ea09a74e3784a153f407c3ebaf3fb2c8ead7b0e103",
+      "last_checked": "2025-06-05T12:01:19.080864",
+      "status": "unchanged",
+      "etag": "W/\"95fc64303d201a2775ef9f16b5587ca7\""
+    },
+    "https://developer.apple.com/documentation/accounts/deprecated-symbols": {
+      "hash": "b2192b8b74ef74fb6a1481ea09a74e3784a153f407c3ebaf3fb2c8ead7b0e103",
+      "last_checked": "2025-06-05T12:01:19.080864",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccounttypeidentifierfacebook.json": {
+      "hash": "8b72eaba75730e787f3d4a1c094988f7794c1d2ce37ddb9d9b5cb9b656ade3b9",
+      "last_checked": "2025-06-05T12:01:19.506124",
+      "status": "unchanged",
+      "etag": "W/\"f539dfdbe9b8841120bb3c18fd4a1de4\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccounttypeidentifierfacebook": {
+      "hash": "8b72eaba75730e787f3d4a1c094988f7794c1d2ce37ddb9d9b5cb9b656ade3b9",
+      "last_checked": "2025-06-05T12:01:19.506124",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccounttypeidentifierlinkedin.json": {
+      "hash": "1806190523bc608a96ec150e4baaf95e94e000a4ff022790e15eec30815c1387",
+      "last_checked": "2025-06-05T12:01:19.912315",
+      "status": "unchanged",
+      "etag": "W/\"eaf7ad1fb0b54d0f0809e07a49a7bfe5\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccounttypeidentifierlinkedin": {
+      "hash": "1806190523bc608a96ec150e4baaf95e94e000a4ff022790e15eec30815c1387",
+      "last_checked": "2025-06-05T12:01:19.912315",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccounttypeidentifiersinaweibo.json": {
+      "hash": "97c95387137dc5f384f8070720723b5ff75157f6654fb2baa599e9ae522aa4a2",
+      "last_checked": "2025-06-05T12:01:20.294368",
+      "status": "unchanged",
+      "etag": "W/\"e4784cda351b1d17748f96378234d7cb\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccounttypeidentifiersinaweibo": {
+      "hash": "97c95387137dc5f384f8070720723b5ff75157f6654fb2baa599e9ae522aa4a2",
+      "last_checked": "2025-06-05T12:01:20.294368",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccounttypeidentifiertencentweibo.json": {
+      "hash": "eaad6e15ed3b8ea587845cf7ba20c12af6600985fdc897462e7ca9a096e60519",
+      "last_checked": "2025-06-05T12:01:20.850258",
+      "status": "unchanged",
+      "etag": "W/\"c853f4ca7e4f5a6fc8cd4e85ef6fe38f\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccounttypeidentifiertencentweibo": {
+      "hash": "eaad6e15ed3b8ea587845cf7ba20c12af6600985fdc897462e7ca9a096e60519",
+      "last_checked": "2025-06-05T12:01:20.850258",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acaccounttypeidentifiertwitter.json": {
+      "hash": "627651beea86060ae06a2fc8925ce6901a2170507b30a4b977343c2b82c23f73",
+      "last_checked": "2025-06-05T12:01:21.281637",
+      "status": "unchanged",
+      "etag": "W/\"4df1bbdc5159a74362c115753a60e003\""
+    },
+    "https://developer.apple.com/documentation/accounts/acaccounttypeidentifiertwitter": {
+      "hash": "627651beea86060ae06a2fc8925ce6901a2170507b30a4b977343c2b82c23f73",
+      "last_checked": "2025-06-05T12:01:21.281637",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acfacebookappidkey.json": {
+      "hash": "05323fd2298be390233aa7613ea7b787fdd322adc2d62ebee4e24414656cf9f0",
+      "last_checked": "2025-06-05T12:01:21.714432",
+      "status": "unchanged",
+      "etag": "W/\"09b590de26c94a9dcf4f35c0d40e0dfd\""
+    },
+    "https://developer.apple.com/documentation/accounts/acfacebookappidkey": {
+      "hash": "05323fd2298be390233aa7613ea7b787fdd322adc2d62ebee4e24414656cf9f0",
+      "last_checked": "2025-06-05T12:01:21.714432",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acfacebookaudienceeveryone.json": {
+      "hash": "4435de89748bacfb8338a4c619af83c773f12e3c039eab169209478772b981fd",
+      "last_checked": "2025-06-05T12:01:22.156156",
+      "status": "unchanged",
+      "etag": "W/\"47966145222ee69ee501df2dbf68aadf\""
+    },
+    "https://developer.apple.com/documentation/accounts/acfacebookaudienceeveryone": {
+      "hash": "4435de89748bacfb8338a4c619af83c773f12e3c039eab169209478772b981fd",
+      "last_checked": "2025-06-05T12:01:22.156156",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acfacebookaudiencefriends.json": {
+      "hash": "131091e8c03c7654e5ad860e8faf66b4c7f98b0082cf45fcc4409155a815feda",
+      "last_checked": "2025-06-05T12:01:22.564506",
+      "status": "unchanged",
+      "etag": "W/\"53b4dcece8457fac198c8d282663668e\""
+    },
+    "https://developer.apple.com/documentation/accounts/acfacebookaudiencefriends": {
+      "hash": "131091e8c03c7654e5ad860e8faf66b4c7f98b0082cf45fcc4409155a815feda",
+      "last_checked": "2025-06-05T12:01:22.564506",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acfacebookaudiencekey.json": {
+      "hash": "0549b1ecf2a914881876559d8386b011089ab333f7c078e5071bba2212ade3a7",
+      "last_checked": "2025-06-05T12:01:22.980747",
+      "status": "unchanged",
+      "etag": "W/\"e431639622dadd9368569c3d51691f07\""
+    },
+    "https://developer.apple.com/documentation/accounts/acfacebookaudiencekey": {
+      "hash": "0549b1ecf2a914881876559d8386b011089ab333f7c078e5071bba2212ade3a7",
+      "last_checked": "2025-06-05T12:01:22.980747",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acfacebookaudienceonlyme.json": {
+      "hash": "2ccb2162b4f3c1d7a5d7b73fdc1891ffa0a3193dc474a96255583180c70521a3",
+      "last_checked": "2025-06-05T12:01:23.380240",
+      "status": "unchanged",
+      "etag": "W/\"173c69004e367358df70429f3b68a26c\""
+    },
+    "https://developer.apple.com/documentation/accounts/acfacebookaudienceonlyme": {
+      "hash": "2ccb2162b4f3c1d7a5d7b73fdc1891ffa0a3193dc474a96255583180c70521a3",
+      "last_checked": "2025-06-05T12:01:23.380240",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/acfacebookpermissionskey.json": {
+      "hash": "1ccbd0a78118185e3425af610020eef1c5f204a49f67cc37cf77947b8986ba43",
+      "last_checked": "2025-06-05T12:01:23.800860",
+      "status": "unchanged",
+      "etag": "W/\"733949f1799eab5632863035a9905eaf\""
+    },
+    "https://developer.apple.com/documentation/accounts/acfacebookpermissionskey": {
+      "hash": "1ccbd0a78118185e3425af610020eef1c5f204a49f67cc37cf77947b8986ba43",
+      "last_checked": "2025-06-05T12:01:23.800860",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/aclinkedinappidkey.json": {
+      "hash": "bdf88f6be2cd235635e583718f61ff0b4109991b23f22b3dae4e8fc48314e7c6",
+      "last_checked": "2025-06-05T12:01:24.228287",
+      "status": "unchanged",
+      "etag": "W/\"9a6c752297367b9039384a84b08fe4e5\""
+    },
+    "https://developer.apple.com/documentation/accounts/aclinkedinappidkey": {
+      "hash": "bdf88f6be2cd235635e583718f61ff0b4109991b23f22b3dae4e8fc48314e7c6",
+      "last_checked": "2025-06-05T12:01:24.228287",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/aclinkedinpermissionskey.json": {
+      "hash": "70917095a8cfdeb0f6de1f3a960d4141ff2986fd04a39d309d2ec6a51af0d80b",
+      "last_checked": "2025-06-05T12:01:24.613106",
+      "status": "unchanged",
+      "etag": "W/\"bc22d9466c8de2cbb3e7b698f5cb77fe\""
+    },
+    "https://developer.apple.com/documentation/accounts/aclinkedinpermissionskey": {
+      "hash": "70917095a8cfdeb0f6de1f3a960d4141ff2986fd04a39d309d2ec6a51af0d80b",
+      "last_checked": "2025-06-05T12:01:24.613106",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/accounts/actencentweiboappidkey.json": {
+      "hash": "bdb716c9c4595850ac389e45b56cd8b9cb016811eee1a6b757c9fab438ada336",
+      "last_checked": "2025-06-05T12:01:25.026489",
+      "status": "unchanged",
+      "etag": "W/\"52dc840247f1b08403edeedcdfbdcff2\""
+    },
+    "https://developer.apple.com/documentation/accounts/actencentweiboappidkey": {
+      "hash": "bdb716c9c4595850ac389e45b56cd8b9cb016811eee1a6b757c9fab438ada336",
+      "last_checked": "2025-06-05T12:01:25.026489",
+      "status": "unchanged"
+    }
+  }
+}

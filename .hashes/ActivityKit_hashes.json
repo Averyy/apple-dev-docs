@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T11:58:19.785772",
+    "total_pages": 12,
+    "etags_collected": "2025-06-07T11:58:19.785805"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/ActivityKit/displaying-live-data-with-live-activities.json": {
+      "hash": "605b0895ac911a1a7fcf56585063ddfb180cdffd1ad6012bcbf94e8df7ed8090",
+      "last_checked": "2025-06-06T19:37:14.438300",
+      "status": "new",
+      "etag": "W/\"cb0317910607749c50417b6a8baba2c2\""
+    },
+    "https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities": {
+      "hash": "29a1221cb0ad9c6b80a76525b721491b92a187a78e32bac66e6e64ce25f3c80b",
+      "last_checked": "2025-06-06T19:37:14.438849",
+      "status": "unchanged",
+      "etag": "7e750a6fcb88135841ebe35a9e7623a7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/activitykit/displaying-live-data-with-live-activities.json": {
+      "hash": "29a1221cb0ad9c6b80a76525b721491b92a187a78e32bac66e6e64ce25f3c80b",
+      "last_checked": "2025-06-06T19:37:14.438849",
+      "status": "unchanged",
+      "etag": "W/\"cb0317910607749c50417b6a8baba2c2\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/ActivityKit.json": {
+      "hash": "f0a00d98c6c2a2ba0f951833781348b18f62b3fcf6b20d167a18c6b84c81ea57",
+      "last_checked": "2025-06-06T20:07:31.540965",
+      "status": "new",
+      "etag": "W/\"a4e30c5269fdc592266e109fb6672311\""
+    },
+    "https://developer.apple.com/documentation/ActivityKit": {
+      "hash": "720c5698f47ef323c40d3f0c20f63e40e291c4839bc2ed68e9f4bd9e1333ab45",
+      "last_checked": "2025-06-06T20:07:31.541440",
+      "status": "unchanged",
+      "etag": "0ec5f77479388295b5f75e9178f40473"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/activitykit.json": {
+      "hash": "720c5698f47ef323c40d3f0c20f63e40e291c4839bc2ed68e9f4bd9e1333ab45",
+      "last_checked": "2025-06-06T20:07:31.541440",
+      "status": "unchanged",
+      "etag": "W/\"a4e30c5269fdc592266e109fb6672311\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/update(using:).json": {
+      "hash": "814787830a14473bcf002a89916983285ac458051bfddc7a4a413069c8ee89a5",
+      "last_checked": "2025-06-06T20:59:42.680608",
+      "status": "unchanged",
+      "etag": "W/\"1961f7d74ce9562cb755203109c3eeec\""
+    },
+    "https://developer.apple.com/documentation/activitykit/activity/update(using:)": {
+      "hash": "814787830a14473bcf002a89916983285ac458051bfddc7a4a413069c8ee89a5",
+      "last_checked": "2025-06-06T20:59:42.680608",
+      "status": "unchanged",
+      "etag": "482959c62c187197eae288c21c5becaf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/update(_:).json": {
+      "hash": "d7d592ee9018d1c80db1ba332bce4b9d1bd0a42d4db50344aa94d030cbc41f75",
+      "last_checked": "2025-06-06T20:59:43.621397",
+      "status": "unchanged",
+      "etag": "W/\"3fb3b2355343ee3ec68113892b3bf207\""
+    },
+    "https://developer.apple.com/documentation/activitykit/activity/update(_:)": {
+      "hash": "d7d592ee9018d1c80db1ba332bce4b9d1bd0a42d4db50344aa94d030cbc41f75",
+      "last_checked": "2025-06-06T20:59:43.621397",
+      "status": "unchanged",
+      "etag": "b57cad8429b45e85d61be55b0f675355"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/request(attributes:content:pushtype:).json": {
+      "hash": "ad3dcdda872160c79c1b5df23c28716e7ebc56665992bfd16e2edadbf6ed251c",
+      "last_checked": "2025-06-06T20:59:45.257676",
+      "status": "unchanged",
+      "etag": "W/\"63e37a1b05ef1540b641809d435e284c\""
+    },
+    "https://developer.apple.com/documentation/activitykit/activity/request(attributes:content:pushtype:)": {
+      "hash": "ad3dcdda872160c79c1b5df23c28716e7ebc56665992bfd16e2edadbf6ed251c",
+      "last_checked": "2025-06-06T20:59:45.257676",
+      "status": "unchanged",
+      "etag": "72207920340a31eefe34a758e4ce1a6c"
+    }
+  }
+}

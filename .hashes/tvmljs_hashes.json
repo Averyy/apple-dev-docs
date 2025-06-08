@@ -1,0 +1,2967 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T18:31:15.874622",
+    "total_pages": 538,
+    "etags_collected": "2025-06-07T18:31:15.874685"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs.json": {
+      "hash": "1e66dae57a41e68e0e89ac8c1eaa3de7e09fc21cd85d86541778dd0558b534ca",
+      "last_checked": "2025-06-06T10:38:11.175064",
+      "status": "unchanged",
+      "etag": "W/\"d1009829bf12ed3396760fe2f2187ac0\""
+    },
+    "https://developer.apple.com/documentation/tvmljs": {
+      "hash": "1e66dae57a41e68e0e89ac8c1eaa3de7e09fc21cd85d86541778dd0558b534ca",
+      "last_checked": "2025-06-06T10:38:11.175064",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/creating_a_client-server_tvml_app.json": {
+      "hash": "8d2374a1409483604f01a91eab8f15beb558b41f6284d9ac87f3e9f7d5fe6bbe",
+      "last_checked": "2025-06-06T10:38:12.176913",
+      "status": "unchanged",
+      "etag": "W/\"98087187f20f76a6646fa404005399e8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/creating_a_client-server_tvml_app": {
+      "hash": "8d2374a1409483604f01a91eab8f15beb558b41f6284d9ac87f3e9f7d5fe6bbe",
+      "last_checked": "2025-06-06T10:38:12.176913",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/app.json": {
+      "hash": "947b5c319012bf0dbc16f8df5ecbcc04b433dba96894c4dcc821b25b25f7b21b",
+      "last_checked": "2025-06-06T10:38:12.851623",
+      "status": "unchanged",
+      "etag": "W/\"f85586e264b07a3d812146a09853e83b\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/app": {
+      "hash": "947b5c319012bf0dbc16f8df5ecbcc04b433dba96894c4dcc821b25b25f7b21b",
+      "last_checked": "2025-06-06T10:38:12.851623",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/userdefaults.json": {
+      "hash": "ca22b42bd3ee8049fffc535287c2c78c6e09ad0b1f04f7418d1f10aa63809d84",
+      "last_checked": "2025-06-06T10:38:13.383398",
+      "status": "unchanged",
+      "etag": "W/\"d82cfefad25b6b940d3d8350f14e3fbd\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/userdefaults": {
+      "hash": "ca22b42bd3ee8049fffc535287c2c78c6e09ad0b1f04f7418d1f10aa63809d84",
+      "last_checked": "2025-06-06T10:38:13.383398",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument.json": {
+      "hash": "ed5a26e8a564c3556c45e29d714d12f497bc7aa32dba7d31fdcdec2dfcf97342",
+      "last_checked": "2025-06-06T10:38:13.908978",
+      "status": "unchanged",
+      "etag": "W/\"c27978dc4393badbeba4ef68f023685d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument": {
+      "hash": "ed5a26e8a564c3556c45e29d714d12f497bc7aa32dba7d31fdcdec2dfcf97342",
+      "last_checked": "2025-06-06T10:38:13.908978",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/responding_to_user_interaction.json": {
+      "hash": "890cf1cda1e4c543875e866f76a22626aeef750ed8cb8897a66a7905dbed8851",
+      "last_checked": "2025-06-06T10:38:14.454043",
+      "status": "unchanged",
+      "etag": "W/\"26408035ef44e403ecec1df617b52fa8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/responding_to_user_interaction": {
+      "hash": "890cf1cda1e4c543875e866f76a22626aeef750ed8cb8897a66a7905dbed8851",
+      "last_checked": "2025-06-06T10:38:14.454043",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/eventlistenerobject.json": {
+      "hash": "ce125a47c8212ee1fb084e27b9a8bb8bb47c892e4ff8f34620b5681e477eefdf",
+      "last_checked": "2025-06-06T10:38:14.894611",
+      "status": "unchanged",
+      "etag": "W/\"53455b7d18baaed180639de59e2717c6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/eventlistenerobject": {
+      "hash": "ce125a47c8212ee1fb084e27b9a8bb8bb47c892e4ff8f34620b5681e477eefdf",
+      "last_checked": "2025-06-06T10:38:14.894611",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/device.json": {
+      "hash": "60f5371860ad504a336ab68d132ac978c5da6c0086e59225610364aa3bb2cf59",
+      "last_checked": "2025-06-06T10:38:15.336096",
+      "status": "unchanged",
+      "etag": "W/\"2b85186509a386e464a8f6385f960da7\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/device": {
+      "hash": "60f5371860ad504a336ab68d132ac978c5da6c0086e59225610364aa3bb2cf59",
+      "last_checked": "2025-06-06T10:38:15.336096",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/settings.json": {
+      "hash": "caeb2c01351783c98edd541d072d89fd27af25fbec85995004235c298433a231",
+      "last_checked": "2025-06-06T10:38:15.731988",
+      "status": "unchanged",
+      "etag": "W/\"410e94bb89bc5287a1e2d7f91b4bd097\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/settings": {
+      "hash": "caeb2c01351783c98edd541d072d89fd27af25fbec85995004235c298433a231",
+      "last_checked": "2025-06-06T10:38:15.731988",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/restrictions.json": {
+      "hash": "b2fd3edd5479f8806ee52370d899d5ad7f1d361c3a9ded86419dfc9395d9b56f",
+      "last_checked": "2025-06-06T10:38:16.301643",
+      "status": "unchanged",
+      "etag": "W/\"536779c464247d1cc157419d85b285d2\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/restrictions": {
+      "hash": "b2fd3edd5479f8806ee52370d899d5ad7f1d361c3a9ded86419dfc9395d9b56f",
+      "last_checked": "2025-06-06T10:38:16.301643",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/playing_media_in_a_client-server_app.json": {
+      "hash": "17de5435202ac058039876d6310e4a8ebf25537771438f8379624168e8b3b1b2",
+      "last_checked": "2025-06-06T10:38:16.705411",
+      "status": "unchanged",
+      "etag": "W/\"4aba332959519956a33a1bb35a970495\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/playing_media_in_a_client-server_app": {
+      "hash": "17de5435202ac058039876d6310e4a8ebf25537771438f8379624168e8b3b1b2",
+      "last_checked": "2025-06-06T10:38:16.705411",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player.json": {
+      "hash": "2da612372f4cc6f7aa92b9160a4d3524ffa50d9b4359eec7121a79b8d0f05b2c",
+      "last_checked": "2025-06-06T10:38:17.126995",
+      "status": "unchanged",
+      "etag": "W/\"4f055e0109671679c342e68ea904d285\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player": {
+      "hash": "2da612372f4cc6f7aa92b9160a4d3524ffa50d9b4359eec7121a79b8d0f05b2c",
+      "last_checked": "2025-06-06T10:38:17.126995",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/playlist.json": {
+      "hash": "333ef4931a8a929a59585f22498147f629658ee48751d1efdf766a147baecf9f",
+      "last_checked": "2025-06-06T10:38:17.569561",
+      "status": "unchanged",
+      "etag": "W/\"1437be7c88e8c6a9724346cc1492c6df\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/playlist": {
+      "hash": "333ef4931a8a929a59585f22498147f629658ee48751d1efdf766a147baecf9f",
+      "last_checked": "2025-06-06T10:38:17.569561",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem.json": {
+      "hash": "5a1250c591fb9d49596efe91a4d0507dc819f01e2943ae0883f41c88f8af94d0",
+      "last_checked": "2025-06-06T10:38:17.989238",
+      "status": "unchanged",
+      "etag": "W/\"1570a160e511b9d17b0d45c2f4f6f252\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem": {
+      "hash": "5a1250c591fb9d49596efe91a4d0507dc819f01e2943ae0883f41c88f8af94d0",
+      "last_checked": "2025-06-06T10:38:17.989238",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/slideshow.json": {
+      "hash": "bb8c783df26b8d6ba83475f33c18b293ca089ce80bf245f03f2e181b5d197a9b",
+      "last_checked": "2025-06-06T10:38:18.574080",
+      "status": "unchanged",
+      "etag": "W/\"6132fe29d57de63c40a5a571c583e47a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/slideshow": {
+      "hash": "bb8c783df26b8d6ba83475f33c18b293ca089ce80bf245f03f2e181b5d197a9b",
+      "last_checked": "2025-06-06T10:38:18.574080",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/browser.json": {
+      "hash": "7d6d79357f22b3fa6136214a18e3c493b3fa5bfbfb2f74ee1eece914e9bd149e",
+      "last_checked": "2025-06-06T10:38:18.986755",
+      "status": "unchanged",
+      "etag": "W/\"fa509b2636ad0daebb25d4b268988e72\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/browser": {
+      "hash": "7d6d79357f22b3fa6136214a18e3c493b3fa5bfbfb2f74ee1eece914e9bd149e",
+      "last_checked": "2025-06-06T10:38:18.986755",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/keyboard.json": {
+      "hash": "81402f7906e96e8ce94e8295cc0ceea0fdf31cc6c27d91d2e5c6e0e1ed137128",
+      "last_checked": "2025-06-06T10:38:19.387509",
+      "status": "unchanged",
+      "etag": "W/\"39c54c29fb855a714f3e1128da7c2170\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/keyboard": {
+      "hash": "81402f7906e96e8ce94e8295cc0ceea0fdf31cc6c27d91d2e5c6e0e1ed137128",
+      "last_checked": "2025-06-06T10:38:19.387509",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/menubardocument.json": {
+      "hash": "e7fc0fb91d089c6c63a2c4ec7dff016c60e9ccdb0b553483868d15f00331e837",
+      "last_checked": "2025-06-06T10:38:19.803573",
+      "status": "unchanged",
+      "etag": "W/\"49957aa43e8b5ceaf155d024de049e99\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/menubardocument": {
+      "hash": "e7fc0fb91d089c6c63a2c4ec7dff016c60e9ccdb0b553483868d15f00331e837",
+      "last_checked": "2025-06-06T10:38:19.803573",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/binding_json_data_to_tvml_documents.json": {
+      "hash": "8bdf64faaff3913b00de492ca8eb91f1661a5ed1b37e85d47e4b169dabcf9e13",
+      "last_checked": "2025-06-06T10:38:20.198138",
+      "status": "unchanged",
+      "etag": "W/\"929c331a87c0c67f8229f9e0c08b1b00\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/binding_json_data_to_tvml_documents": {
+      "hash": "8bdf64faaff3913b00de492ca8eb91f1661a5ed1b37e85d47e4b169dabcf9e13",
+      "last_checked": "2025-06-06T10:38:20.198138",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest.json": {
+      "hash": "8832fbe331897ffe321b07bb5b928a724b03d803663f0b9c43e4b592cacb1a17",
+      "last_checked": "2025-06-06T10:38:20.646560",
+      "status": "unchanged",
+      "etag": "W/\"93448dc1f73df19c3fde8c8b0b11aa95\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest": {
+      "hash": "8832fbe331897ffe321b07bb5b928a724b03d803663f0b9c43e4b592cacb1a17",
+      "last_checked": "2025-06-06T10:38:20.646560",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/dataitem.json": {
+      "hash": "cc300321d92f92bcc79f4481a786487281233b5e9ec1fb7c3534cfb22b85dbc2",
+      "last_checked": "2025-06-06T10:38:21.034293",
+      "status": "unchanged",
+      "etag": "W/\"8157246b2715ea0e74c5e070b3f81777\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/dataitem": {
+      "hash": "cc300321d92f92bcc79f4481a786487281233b5e9ec1fb7c3534cfb22b85dbc2",
+      "last_checked": "2025-06-06T10:38:21.034293",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/storage.json": {
+      "hash": "c19f5aefde8d1cb3d0f24990845aabe0f2b991e3ce1efcd5eee2d460819b72e7",
+      "last_checked": "2025-06-06T10:38:21.495721",
+      "status": "unchanged",
+      "etag": "W/\"9ae49aa1a75f75c668e154c298ac6b0a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/storage": {
+      "hash": "c19f5aefde8d1cb3d0f24990845aabe0f2b991e3ce1efcd5eee2d460819b72e7",
+      "last_checked": "2025-06-06T10:38:21.495721",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource.json": {
+      "hash": "bd2bc916a297d8742ff599d4fcb8faef6005251de3c9693f547e0988f3673720",
+      "last_checked": "2025-06-06T10:38:21.910412",
+      "status": "unchanged",
+      "etag": "W/\"3bf62827626817adf97601ad055d120f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource": {
+      "hash": "bd2bc916a297d8742ff599d4fcb8faef6005251de3c9693f547e0988f3673720",
+      "last_checked": "2025-06-06T10:38:21.910412",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/loadindexesrequest.json": {
+      "hash": "14bedf539725466fa1c01d0d5a3c476c584a8abb14661d616115b21d799b8580",
+      "last_checked": "2025-06-06T10:38:22.338431",
+      "status": "unchanged",
+      "etag": "W/\"2efadac9976d0ca99cb663f035bbd28f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/loadindexesrequest": {
+      "hash": "14bedf539725466fa1c01d0d5a3c476c584a8abb14661d616115b21d799b8580",
+      "last_checked": "2025-06-06T10:38:22.338431",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror.json": {
+      "hash": "58d39e1d3e6763c8f9df9ef94e9e353046c2b47dd7e3f8363ade04b75b42455c",
+      "last_checked": "2025-06-06T10:38:22.805988",
+      "status": "unchanged",
+      "etag": "W/\"28624010733873a07e22982e627af72d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror": {
+      "hash": "58d39e1d3e6763c8f9df9ef94e9e353046c2b47dd7e3f8363ade04b75b42455c",
+      "last_checked": "2025-06-06T10:38:22.805988",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/nserror.json": {
+      "hash": "d7e989fea23f6015df5b3ea9d70fa418e11305a0763ae41deb663e2e61084564",
+      "last_checked": "2025-06-06T10:38:23.237832",
+      "status": "unchanged",
+      "etag": "W/\"800fe9cb16e3b13f19639691ea696d94\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/nserror": {
+      "hash": "d7e989fea23f6015df5b3ea9d70fa418e11305a0763ae41deb663e2e61084564",
+      "last_checked": "2025-06-06T10:38:23.237832",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tvmlkit_js_functions.json": {
+      "hash": "ca749ca4fc4ff2ce274f626cb62fdc0b195ca26a4780026dd0066b6696cc5f82",
+      "last_checked": "2025-06-06T10:38:23.631186",
+      "status": "unchanged",
+      "etag": "W/\"f7ce1da0852fbb861c940b2009bef3e0\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tvmlkit_js_functions": {
+      "hash": "ca749ca4fc4ff2ce274f626cb62fdc0b195ca26a4780026dd0066b6696cc5f82",
+      "last_checked": "2025-06-06T10:38:23.631186",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/domexception.json": {
+      "hash": "080d5913e5054ddcc6881c56c11294952a0e84dddae6da251e52bb3290cc0b16",
+      "last_checked": "2025-06-06T10:38:24.038164",
+      "status": "unchanged",
+      "etag": "W/\"43b08e0bc1881b05317ff6451c728dfa\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/domexception": {
+      "hash": "080d5913e5054ddcc6881c56c11294952a0e84dddae6da251e52bb3290cc0b16",
+      "last_checked": "2025-06-06T10:38:24.038164",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/domimplementationls.json": {
+      "hash": "83f9ef9dc5b772f27e4f05139dd413c20255e6dd2ed20f61f6f9af86a5ed7ece",
+      "last_checked": "2025-06-06T10:38:24.453868",
+      "status": "unchanged",
+      "etag": "W/\"d7e9934430ece4d8564de5360a36da60\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/domimplementationls": {
+      "hash": "83f9ef9dc5b772f27e4f05139dd413c20255e6dd2ed20f61f6f9af86a5ed7ece",
+      "last_checked": "2025-06-06T10:38:24.453868",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/domimplementationregistry.json": {
+      "hash": "06223aab9195a794234ea36d794b5fd78870b10db93eaf214834071936d30f3c",
+      "last_checked": "2025-06-06T10:38:24.878105",
+      "status": "unchanged",
+      "etag": "W/\"df0673ed249bf86bea8862eb353761a7\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/domimplementationregistry": {
+      "hash": "06223aab9195a794234ea36d794b5fd78870b10db93eaf214834071936d30f3c",
+      "last_checked": "2025-06-06T10:38:24.878105",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/eventexception.json": {
+      "hash": "a9b1cf13de8cf56488087ba3ab8b0f6f16edc6a2ea32f5e2bf3f13b25f248bea",
+      "last_checked": "2025-06-06T10:38:25.298573",
+      "status": "unchanged",
+      "etag": "W/\"548ca5aa00d65073caca211a4647119a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/eventexception": {
+      "hash": "a9b1cf13de8cf56488087ba3ab8b0f6f16edc6a2ea32f5e2bf3f13b25f248bea",
+      "last_checked": "2025-06-06T10:38:25.298573",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsexception.json": {
+      "hash": "bf90538a1ba72ca25fd8b05873001c88efc1d91206456856de9063c8bd2e2d37",
+      "last_checked": "2025-06-06T10:38:25.703396",
+      "status": "unchanged",
+      "etag": "W/\"71444a16388fcf7f983b171d98fcea79\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsexception": {
+      "hash": "bf90538a1ba72ca25fd8b05873001c88efc1d91206456856de9063c8bd2e2d37",
+      "last_checked": "2025-06-06T10:38:25.703396",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsinput.json": {
+      "hash": "8c0741bd162aacb023483102dbca0331178368e4a7c85bfab16dc1f802d943f2",
+      "last_checked": "2025-06-06T10:38:26.095463",
+      "status": "unchanged",
+      "etag": "W/\"eb51e591464857e983b540dee5c92785\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsinput": {
+      "hash": "8c0741bd162aacb023483102dbca0331178368e4a7c85bfab16dc1f802d943f2",
+      "last_checked": "2025-06-06T10:38:26.095463",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsparser.json": {
+      "hash": "c35377e2ecdbe473adbbfc8f42432a7bbfb0a6ae81e9f5a23728acc43f212779",
+      "last_checked": "2025-06-06T10:38:26.518732",
+      "status": "unchanged",
+      "etag": "W/\"7e8be788ac409c7769a41578739e4521\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsparser": {
+      "hash": "c35377e2ecdbe473adbbfc8f42432a7bbfb0a6ae81e9f5a23728acc43f212779",
+      "last_checked": "2025-06-06T10:38:26.518732",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsserializer.json": {
+      "hash": "60b6a3b840222105af62d4bb1245136a464233af83f9f3ceef5d6127c2ffab4f",
+      "last_checked": "2025-06-06T10:38:26.975478",
+      "status": "unchanged",
+      "etag": "W/\"d7b82b343a75a34ce8767d4fcc1f1d04\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsserializer": {
+      "hash": "60b6a3b840222105af62d4bb1245136a464233af83f9f3ceef5d6127c2ffab4f",
+      "last_checked": "2025-06-06T10:38:26.975478",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/parsingelement.json": {
+      "hash": "1deb8d905ad88af36e9490b9fd307627b4a8fb1b90f0e225ed165e6c8bd175d5",
+      "last_checked": "2025-06-06T10:38:27.417672",
+      "status": "unchanged",
+      "etag": "W/\"d638f522e2f508c20108538e51732e43\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/parsingelement": {
+      "hash": "1deb8d905ad88af36e9490b9fd307627b4a8fb1b90f0e225ed165e6c8bd175d5",
+      "last_checked": "2025-06-06T10:38:27.417672",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/viewmodellink.json": {
+      "hash": "ab9606bbc6e125b1be3aeb24d6ded1d181316cefae98e27b1341b341d73014ae",
+      "last_checked": "2025-06-06T10:38:27.845274",
+      "status": "unchanged",
+      "etag": "W/\"db4662b854f25b08d5de8005c88630f7\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/viewmodellink": {
+      "hash": "ab9606bbc6e125b1be3aeb24d6ded1d181316cefae98e27b1341b341d73014ae",
+      "last_checked": "2025-06-06T10:38:27.845274",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xpathexception.json": {
+      "hash": "4fa6729bde157a0029dc1a4d3f6071181f0ab5aa00cd9811a65c380830619eb1",
+      "last_checked": "2025-06-06T10:38:28.250592",
+      "status": "unchanged",
+      "etag": "W/\"66cfdd31fb0affcf33cabda330aa18f6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xpathexception": {
+      "hash": "4fa6729bde157a0029dc1a4d3f6071181f0ab5aa00cd9811a65c380830619eb1",
+      "last_checked": "2025-06-06T10:38:28.250592",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/app/1627353-onerror.json": {
+      "hash": "4ca58e64f3043f13779f68f20f2c16310cdcc40d63fdc1856fe61a5a204088af",
+      "last_checked": "2025-06-06T10:38:28.694942",
+      "status": "unchanged",
+      "etag": "W/\"03081564781bec724fbaeb945fa32d8a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/app/1627353-onerror": {
+      "hash": "4ca58e64f3043f13779f68f20f2c16310cdcc40d63fdc1856fe61a5a204088af",
+      "last_checked": "2025-06-06T10:38:28.694942",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/app/1627419-onexit.json": {
+      "hash": "a0d9ee99cb4cc229c2f6675ec86da8d249c7ee75ed16c2ed5f9ad41aa6e6faf4",
+      "last_checked": "2025-06-06T10:38:29.104697",
+      "status": "unchanged",
+      "etag": "W/\"1cd6e18e09ac5c83749998486b697ef1\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/app/1627419-onexit": {
+      "hash": "a0d9ee99cb4cc229c2f6675ec86da8d249c7ee75ed16c2ed5f9ad41aa6e6faf4",
+      "last_checked": "2025-06-06T10:38:29.104697",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/app/1627407-onlaunch.json": {
+      "hash": "f2c2dfd784dd0ca7585dea30ebb15ccc189be8961fff9c4b41eb209b6789df03",
+      "last_checked": "2025-06-06T10:38:29.524325",
+      "status": "unchanged",
+      "etag": "W/\"91733a2657bb83b78f45e24091ca0142\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/app/1627407-onlaunch": {
+      "hash": "f2c2dfd784dd0ca7585dea30ebb15ccc189be8961fff9c4b41eb209b6789df03",
+      "last_checked": "2025-06-06T10:38:29.524325",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/app/1627415-onresume.json": {
+      "hash": "e6eb5e55ec02425ffe3e2a50d9088451e97b61a7e109a5c02870fcd77d8af5de",
+      "last_checked": "2025-06-06T10:38:29.963822",
+      "status": "unchanged",
+      "etag": "W/\"914ca04e243268b352d305d1cb4c0fcc\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/app/1627415-onresume": {
+      "hash": "e6eb5e55ec02425ffe3e2a50d9088451e97b61a7e109a5c02870fcd77d8af5de",
+      "last_checked": "2025-06-06T10:38:29.963822",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/app/1627431-onsuspend.json": {
+      "hash": "f92d6bab96ce5383cae2e36559db426a0b67d3734f41a2bfb2e2b2d8770bb5d4",
+      "last_checked": "2025-06-06T10:38:30.385033",
+      "status": "unchanged",
+      "etag": "W/\"9f9033b108c2e77764db5c04bbdd89af\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/app/1627431-onsuspend": {
+      "hash": "f92d6bab96ce5383cae2e36559db426a0b67d3734f41a2bfb2e2b2d8770bb5d4",
+      "last_checked": "2025-06-06T10:38:30.385033",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/app/1627357-reload.json": {
+      "hash": "53b6587685aacf4b78b95a7d50ceadf9b1cc1d4bfec19f12520042b8590b7fdf",
+      "last_checked": "2025-06-06T10:38:30.803219",
+      "status": "unchanged",
+      "etag": "W/\"0b63350274b71aeb5c9bce6f5520834e\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/app/1627357-reload": {
+      "hash": "53b6587685aacf4b78b95a7d50ceadf9b1cc1d4bfec19f12520042b8590b7fdf",
+      "last_checked": "2025-06-06T10:38:30.803219",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/app/3192095-ondocumentrequest.json": {
+      "hash": "80e269cbf16f2b5a6d4d3a1d4b4e83fb39d8b2baa11986d0a3f5ec1381385a34",
+      "last_checked": "2025-06-06T10:38:31.217717",
+      "status": "unchanged",
+      "etag": "W/\"1b86b2eed37dec70c2bde084534ed575\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/app/3192095-ondocumentrequest": {
+      "hash": "80e269cbf16f2b5a6d4d3a1d4b4e83fb39d8b2baa11986d0a3f5ec1381385a34",
+      "last_checked": "2025-06-06T10:38:31.217717",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/userdefaults/1682084-getdata.json": {
+      "hash": "547302a07cb5c23cf5bee803e48340b366558fc419045c9eb2e8d20f2aece481",
+      "last_checked": "2025-06-06T10:38:31.643726",
+      "status": "unchanged",
+      "etag": "W/\"cd68bd58ea03fa94210a52d8b0ee113a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/userdefaults/1682084-getdata": {
+      "hash": "547302a07cb5c23cf5bee803e48340b366558fc419045c9eb2e8d20f2aece481",
+      "last_checked": "2025-06-06T10:38:31.643726",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/userdefaults/1682085-removedata.json": {
+      "hash": "2c69a04db3c08fcf8953e39dae1ab9d187eaaffa2f3de090ad581235edfbf39a",
+      "last_checked": "2025-06-06T10:38:32.025096",
+      "status": "unchanged",
+      "etag": "W/\"68a26044f0eb1d48a19416f9848523c9\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/userdefaults/1682085-removedata": {
+      "hash": "2c69a04db3c08fcf8953e39dae1ab9d187eaaffa2f3de090ad581235edfbf39a",
+      "last_checked": "2025-06-06T10:38:32.025096",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/userdefaults/1682089-setdata.json": {
+      "hash": "482d24c9d355f0322ccc51f4d9434b7faef4918d2713f4897ddd8ca421405770",
+      "last_checked": "2025-06-06T10:38:32.429211",
+      "status": "unchanged",
+      "etag": "W/\"44f277a228c7815c9c326ae693a70af4\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/userdefaults/1682089-setdata": {
+      "hash": "482d24c9d355f0322ccc51f4d9434b7faef4918d2713f4897ddd8ca421405770",
+      "last_checked": "2025-06-06T10:38:32.429211",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627340-insertbeforedocument.json": {
+      "hash": "d7501fe261295224ca3d3a38cbc9b383e084682288045eb220382845c8d0ef49",
+      "last_checked": "2025-06-06T10:38:32.985315",
+      "status": "unchanged",
+      "etag": "W/\"e280237fe001ebabef711655e9609d3d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627340-insertbeforedocument": {
+      "hash": "d7501fe261295224ca3d3a38cbc9b383e084682288045eb220382845c8d0ef49",
+      "last_checked": "2025-06-06T10:38:32.985315",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627361-pushdocument.json": {
+      "hash": "3bedfae941bfb42417461bfc256360266d8c25822f5664aca13546580dab714f",
+      "last_checked": "2025-06-06T10:38:33.376567",
+      "status": "unchanged",
+      "etag": "W/\"be79791279c323923d813ee4c8b923a5\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627361-pushdocument": {
+      "hash": "3bedfae941bfb42417461bfc256360266d8c25822f5664aca13546580dab714f",
+      "last_checked": "2025-06-06T10:38:33.376567",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627430-replacedocument.json": {
+      "hash": "44b1c33a50d4a643739cd977436c3f436c0dbe94b6f38993efbd57287cc67e6c",
+      "last_checked": "2025-06-06T10:38:33.802681",
+      "status": "unchanged",
+      "etag": "W/\"4e0119f254699724cc883505a0fd5cbb\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627430-replacedocument": {
+      "hash": "44b1c33a50d4a643739cd977436c3f436c0dbe94b6f38993efbd57287cc67e6c",
+      "last_checked": "2025-06-06T10:38:33.802681",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627446-dismissmodal.json": {
+      "hash": "1cb3bd8eda5e7f078e06affbd4ed2a4cf7d456b114d776f5fe0c698be66164cf",
+      "last_checked": "2025-06-06T10:38:34.234771",
+      "status": "unchanged",
+      "etag": "W/\"fe4b6b5833d87b9f5bd3fb91d0fd68ee\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627446-dismissmodal": {
+      "hash": "1cb3bd8eda5e7f078e06affbd4ed2a4cf7d456b114d776f5fe0c698be66164cf",
+      "last_checked": "2025-06-06T10:38:34.234771",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627311-presentmodal.json": {
+      "hash": "9893e49a402685a704e8c508261d22d9198da56355cded293e2bc3c8673a8dd1",
+      "last_checked": "2025-06-06T10:38:34.632088",
+      "status": "unchanged",
+      "etag": "W/\"d1cd988299fb421fa7f2efcac9ceec66\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627311-presentmodal": {
+      "hash": "9893e49a402685a704e8c508261d22d9198da56355cded293e2bc3c8673a8dd1",
+      "last_checked": "2025-06-06T10:38:34.632088",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627303-documents.json": {
+      "hash": "cfa0cc59c98c188bcb54747267709885b639706d849ac6c9c22fa35f7e40f93d",
+      "last_checked": "2025-06-06T10:38:35.025645",
+      "status": "unchanged",
+      "etag": "W/\"0f37b8ad43c1ec179198fa6dbf0b8197\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627303-documents": {
+      "hash": "cfa0cc59c98c188bcb54747267709885b639706d849ac6c9c22fa35f7e40f93d",
+      "last_checked": "2025-06-06T10:38:35.025645",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627312-clear.json": {
+      "hash": "b36a8490d4fd90aee967fe57b9ac8e1afc44704c1cdb0a80b3fe43f92c5f52bd",
+      "last_checked": "2025-06-06T10:38:35.451206",
+      "status": "unchanged",
+      "etag": "W/\"55f2be752677c8c9d667056776c5613f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627312-clear": {
+      "hash": "b36a8490d4fd90aee967fe57b9ac8e1afc44704c1cdb0a80b3fe43f92c5f52bd",
+      "last_checked": "2025-06-06T10:38:35.451206",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627397-popdocument.json": {
+      "hash": "03439bf7ff55ab1466bb194defe58bf8c2459ada9836b18edff5b8c3babbb2e6",
+      "last_checked": "2025-06-06T10:38:35.842417",
+      "status": "unchanged",
+      "etag": "W/\"74ec639e46be641064044cc3bc9e1ad4\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627397-popdocument": {
+      "hash": "03439bf7ff55ab1466bb194defe58bf8c2459ada9836b18edff5b8c3babbb2e6",
+      "last_checked": "2025-06-06T10:38:35.842417",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627420-poptodocument.json": {
+      "hash": "3f3985d659edb13e11bdedeec0e35feeaf6ac1af37a786c45ce008b3d4ed4c85",
+      "last_checked": "2025-06-06T10:38:36.238442",
+      "status": "unchanged",
+      "etag": "W/\"14d41851d84e28bb3e63833ebece5ed6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627420-poptodocument": {
+      "hash": "3f3985d659edb13e11bdedeec0e35feeaf6ac1af37a786c45ce008b3d4ed4c85",
+      "last_checked": "2025-06-06T10:38:36.238442",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627382-poptorootdocument.json": {
+      "hash": "cf2cbaef9dd3c04b028bfb733a3614dea5939436bb7934cfe7e9b8d628ff61f4",
+      "last_checked": "2025-06-06T10:38:36.647104",
+      "status": "unchanged",
+      "etag": "W/\"42cd533657b8314e73dd2244df79b7c2\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627382-poptorootdocument": {
+      "hash": "cf2cbaef9dd3c04b028bfb733a3614dea5939436bb7934cfe7e9b8d628ff61f4",
+      "last_checked": "2025-06-06T10:38:36.647104",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/navigationdocument/1627394-removedocument.json": {
+      "hash": "b8f95e450dc1d98e89f2a3fa786107a56e949aa51b92d5adf8e7cf9bb98edeba",
+      "last_checked": "2025-06-06T10:38:37.053391",
+      "status": "unchanged",
+      "etag": "W/\"f684814b5f5a1de6e177a55ee4515334\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/navigationdocument/1627394-removedocument": {
+      "hash": "b8f95e450dc1d98e89f2a3fa786107a56e949aa51b92d5adf8e7cf9bb98edeba",
+      "last_checked": "2025-06-06T10:38:37.053391",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/eventlistenerobject/1627408-addeventlistener.json": {
+      "hash": "775dd90c16ca189be1d22c84d3bfc6b781e54027f4dd987fc8bc3f2cb63d4877",
+      "last_checked": "2025-06-06T10:38:37.476863",
+      "status": "unchanged",
+      "etag": "W/\"89796cd2c39ba5e863214a72e9701857\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/eventlistenerobject/1627408-addeventlistener": {
+      "hash": "775dd90c16ca189be1d22c84d3bfc6b781e54027f4dd987fc8bc3f2cb63d4877",
+      "last_checked": "2025-06-06T10:38:37.476863",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/eventlistenerobject/1627423-removeeventlistener.json": {
+      "hash": "513ac4bd6b4e3ce89055cb95af4df7014a28430cbebd26f1f1130418e0c21e7b",
+      "last_checked": "2025-06-06T10:38:37.885120",
+      "status": "unchanged",
+      "etag": "W/\"33a2b0071c8848f3618425e3689b2f43\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/eventlistenerobject/1627423-removeeventlistener": {
+      "hash": "513ac4bd6b4e3ce89055cb95af4df7014a28430cbebd26f1f1130418e0c21e7b",
+      "last_checked": "2025-06-06T10:38:37.885120",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/device/1627339-appidentifier.json": {
+      "hash": "daceec490d1c43d026a1965ac0209dafb5d83b7e5a75c020464315e064696684",
+      "last_checked": "2025-06-06T10:38:38.318754",
+      "status": "unchanged",
+      "etag": "W/\"1dd562bcf170ef1db25b30130531bb93\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/device/1627339-appidentifier": {
+      "hash": "daceec490d1c43d026a1965ac0209dafb5d83b7e5a75c020464315e064696684",
+      "last_checked": "2025-06-06T10:38:38.318754",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/device/1627395-appversion.json": {
+      "hash": "f752801360137bd85046d6c7c024e9fcac7d9bf351172297c425647768bf6aaf",
+      "last_checked": "2025-06-06T10:38:38.774193",
+      "status": "unchanged",
+      "etag": "W/\"3245ef5417b839ee2db6793327007a4f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/device/1627395-appversion": {
+      "hash": "f752801360137bd85046d6c7c024e9fcac7d9bf351172297c425647768bf6aaf",
+      "last_checked": "2025-06-06T10:38:38.774193",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/device/1627347-model.json": {
+      "hash": "40525a437b2000128dd3b814f1c7e4365d705598994010926a0bcd59168e1fb5",
+      "last_checked": "2025-06-06T10:38:39.175960",
+      "status": "unchanged",
+      "etag": "W/\"881b3f353812c9dc59ac4eddfee53f14\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/device/1627347-model": {
+      "hash": "40525a437b2000128dd3b814f1c7e4365d705598994010926a0bcd59168e1fb5",
+      "last_checked": "2025-06-06T10:38:39.175960",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/device/1627386-producttype.json": {
+      "hash": "d5e26e1a9aaaa37e2ab7cf48f38ca2f37eaaad8c81823aad23d8633ce853a471",
+      "last_checked": "2025-06-06T10:38:39.607389",
+      "status": "unchanged",
+      "etag": "W/\"036898baec6ed5ba4df395d4f89141bf\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/device/1627386-producttype": {
+      "hash": "d5e26e1a9aaaa37e2ab7cf48f38ca2f37eaaad8c81823aad23d8633ce853a471",
+      "last_checked": "2025-06-06T10:38:39.607389",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/device/1627323-systemversion.json": {
+      "hash": "28b6fb1191d6f47678e6abe9180c4ae307dd9d367b046acf18abd72ed48293f9",
+      "last_checked": "2025-06-06T10:38:40.020002",
+      "status": "unchanged",
+      "etag": "W/\"d32207185eb232a3338c06c3a7d81a9a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/device/1627323-systemversion": {
+      "hash": "28b6fb1191d6f47678e6abe9180c4ae307dd9d367b046acf18abd72ed48293f9",
+      "last_checked": "2025-06-06T10:38:40.020002",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/device/1627383-vendoridentifier.json": {
+      "hash": "9fe7d98d19d2f43c01e0d36603f0d77815e30c2cee46bccad8cdb8bcf82c551b",
+      "last_checked": "2025-06-06T10:38:40.455535",
+      "status": "unchanged",
+      "etag": "W/\"1727615ff28b626bb98ee892689d9bd2\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/device/1627383-vendoridentifier": {
+      "hash": "9fe7d98d19d2f43c01e0d36603f0d77815e30c2cee46bccad8cdb8bcf82c551b",
+      "last_checked": "2025-06-06T10:38:40.455535",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/settings/1627378-restrictions.json": {
+      "hash": "f34340961163f334e1e8d1c9aa05104b10707160924c5d7f4a2a433158395cb1",
+      "last_checked": "2025-06-06T10:38:40.868715",
+      "status": "unchanged",
+      "etag": "W/\"f578c609e64ea0b338cadd36cfca9fa6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/settings/1627378-restrictions": {
+      "hash": "f34340961163f334e1e8d1c9aa05104b10707160924c5d7f4a2a433158395cb1",
+      "last_checked": "2025-06-06T10:38:40.868715",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/settings/1627439-language.json": {
+      "hash": "a17e48a65ccf1d90bc6bc02b5c21f1dbe629b317784120f14481b55800fc12cb",
+      "last_checked": "2025-06-06T10:38:41.296757",
+      "status": "unchanged",
+      "etag": "W/\"c0b16fefd0b3b0ce992c9e5d2be6ec46\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/settings/1627439-language": {
+      "hash": "a17e48a65ccf1d90bc6bc02b5c21f1dbe629b317784120f14481b55800fc12cb",
+      "last_checked": "2025-06-06T10:38:41.296757",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/settings/1627370-onrestrictionschange.json": {
+      "hash": "d54e3e09c665a83b05c1a17492c398ac2f7eb89296ef297fbed1b23d0b168410",
+      "last_checked": "2025-06-06T10:38:41.743808",
+      "status": "unchanged",
+      "etag": "W/\"d1188dea06bc5688ca1da1482600124f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/settings/1627370-onrestrictionschange": {
+      "hash": "d54e3e09c665a83b05c1a17492c398ac2f7eb89296ef297fbed1b23d0b168410",
+      "last_checked": "2025-06-06T10:38:41.743808",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/settings/1627376-storefrontcountrycode.json": {
+      "hash": "16a89d9ad9f3ec6711ea09dafbaae93af62c280fc1e4454dd31147db862c0cd2",
+      "last_checked": "2025-06-06T10:38:42.177035",
+      "status": "unchanged",
+      "etag": "W/\"0e8a0200457029cc0dbab2e14a56e09a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/settings/1627376-storefrontcountrycode": {
+      "hash": "16a89d9ad9f3ec6711ea09dafbaae93af62c280fc1e4454dd31147db862c0cd2",
+      "last_checked": "2025-06-06T10:38:42.177035",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/restrictions/1627425-allowsexplicit.json": {
+      "hash": "582c734232b6d4b6b343549c6b92e59b3fba68c26e6ea21f1d42b5d8020e0007",
+      "last_checked": "2025-06-06T10:38:42.610851",
+      "status": "unchanged",
+      "etag": "W/\"4f0cb15a0de5e378c68199c984f4cca2\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/restrictions/1627425-allowsexplicit": {
+      "hash": "582c734232b6d4b6b343549c6b92e59b3fba68c26e6ea21f1d42b5d8020e0007",
+      "last_checked": "2025-06-06T10:38:42.610851",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/restrictions/1627305-maxmovierank.json": {
+      "hash": "9de389903dfdd1e770b4fd33ef768cd0703918966a63673a6501f8626facbbac",
+      "last_checked": "2025-06-06T10:38:43.018742",
+      "status": "unchanged",
+      "etag": "W/\"ea268cf1b813007aee73e254a69be5d6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/restrictions/1627305-maxmovierank": {
+      "hash": "9de389903dfdd1e770b4fd33ef768cd0703918966a63673a6501f8626facbbac",
+      "last_checked": "2025-06-06T10:38:43.018742",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/restrictions/1627362-maxmovieratingforcountry.json": {
+      "hash": "ef17d8dfa3a7fe200e5d268794ba80d0f7731983079557d936763677da6c4acb",
+      "last_checked": "2025-06-06T10:38:43.427162",
+      "status": "unchanged",
+      "etag": "W/\"0828f764512a4dff018cf59043880bd6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/restrictions/1627362-maxmovieratingforcountry": {
+      "hash": "ef17d8dfa3a7fe200e5d268794ba80d0f7731983079557d936763677da6c4acb",
+      "last_checked": "2025-06-06T10:38:43.427162",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/restrictions/1627434-maxtvshowrank.json": {
+      "hash": "42570bca2c3d48ff5adc9cf9aa78229f284ca54fbe63184c57707bd78a267a1b",
+      "last_checked": "2025-06-06T10:38:43.826272",
+      "status": "unchanged",
+      "etag": "W/\"28068b769474660b9c26a3318c5e76fe\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/restrictions/1627434-maxtvshowrank": {
+      "hash": "42570bca2c3d48ff5adc9cf9aa78229f284ca54fbe63184c57707bd78a267a1b",
+      "last_checked": "2025-06-06T10:38:43.826272",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/restrictions/1627442-maxtvshowratingforcountry.json": {
+      "hash": "aba4b7caf5c73dcc88051e5317cb5ee3ee2d3cb846bd8f4af239facac01ba721",
+      "last_checked": "2025-06-06T10:38:44.250056",
+      "status": "unchanged",
+      "etag": "W/\"3bf503ac9f1ae0f38eedc6e06cae625a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/restrictions/1627442-maxtvshowratingforcountry": {
+      "hash": "aba4b7caf5c73dcc88051e5317cb5ee3ee2d3cb846bd8f4af239facac01ba721",
+      "last_checked": "2025-06-06T10:38:44.250056",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/2123044-interactiveoverlaydismissable.json": {
+      "hash": "9034277e09f13683132361241d5d6e9422000a1f6ed1d4dda748d97160a7f97a",
+      "last_checked": "2025-06-06T10:38:44.686710",
+      "status": "unchanged",
+      "etag": "W/\"896694dc8fdf3310bd7dad7613dcc085\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/2123044-interactiveoverlaydismissable": {
+      "hash": "9034277e09f13683132361241d5d6e9422000a1f6ed1d4dda748d97160a7f97a",
+      "last_checked": "2025-06-06T10:38:44.686710",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/2123043-interactiveoverlaydocument.json": {
+      "hash": "61092804576a8359efb36b2ef29ea8e20e9c2e2b0e6942b7b7495650c9a7cf33",
+      "last_checked": "2025-06-06T10:38:45.093144",
+      "status": "unchanged",
+      "etag": "W/\"999461a664630e9a50e993c794d3c743\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/2123043-interactiveoverlaydocument": {
+      "hash": "61092804576a8359efb36b2ef29ea8e20e9c2e2b0e6942b7b7495650c9a7cf33",
+      "last_checked": "2025-06-06T10:38:45.093144",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627320-overlaydocument.json": {
+      "hash": "c7ca18b36cc8aa3f61cca46a0a374b75665d31cc3f8544605fbdac06e078c26d",
+      "last_checked": "2025-06-06T10:38:45.541348",
+      "status": "unchanged",
+      "etag": "W/\"82066d775d2dc5c5c73c0e0a9e408290\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627320-overlaydocument": {
+      "hash": "c7ca18b36cc8aa3f61cca46a0a374b75665d31cc3f8544605fbdac06e078c26d",
+      "last_checked": "2025-06-06T10:38:45.541348",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627447-player.json": {
+      "hash": "222c7cc232b7dff63c50c494b1f0fb73937a6cef898a7f8921657a318d5b2415",
+      "last_checked": "2025-06-06T10:38:45.946685",
+      "status": "unchanged",
+      "etag": "W/\"29461afdf81d6f19499a5cca19553f38\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627447-player": {
+      "hash": "222c7cc232b7dff63c50c494b1f0fb73937a6cef898a7f8921657a318d5b2415",
+      "last_checked": "2025-06-06T10:38:45.946685",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627389-playlist.json": {
+      "hash": "d3172dc309b3a4c72540b42091cc0aceb5936f3be2b87bc5bd8914deaef2ca2d",
+      "last_checked": "2025-06-06T10:38:46.372379",
+      "status": "unchanged",
+      "etag": "W/\"97499695326ffdc535c30290aa7ace57\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627389-playlist": {
+      "hash": "d3172dc309b3a4c72540b42091cc0aceb5936f3be2b87bc5bd8914deaef2ca2d",
+      "last_checked": "2025-06-06T10:38:46.372379",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627418-present.json": {
+      "hash": "259ec7f372148a2be950ff5c9036c97f1ef79540f04ecc0eaea4b54a7ce77870",
+      "last_checked": "2025-06-06T10:38:46.766969",
+      "status": "unchanged",
+      "etag": "W/\"6504b4e55abced9b385d668f62883751\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627418-present": {
+      "hash": "259ec7f372148a2be950ff5c9036c97f1ef79540f04ecc0eaea4b54a7ce77870",
+      "last_checked": "2025-06-06T10:38:46.766969",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1682100-changetomediaatindex.json": {
+      "hash": "0083aae00a1d99a16b84b208d55ddd45b3258b76d60f6f43805e692a3d3fa8cb",
+      "last_checked": "2025-06-06T10:38:47.207966",
+      "status": "unchanged",
+      "etag": "W/\"547a0b2b9e8a736a4401a7da094a860f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1682100-changetomediaatindex": {
+      "hash": "0083aae00a1d99a16b84b208d55ddd45b3258b76d60f6f43805e692a3d3fa8cb",
+      "last_checked": "2025-06-06T10:38:47.207966",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627417-pause.json": {
+      "hash": "ee099f9cc283afd77803e63275c4032415cacf646f33813cdaa849522edba93e",
+      "last_checked": "2025-06-06T10:38:47.648996",
+      "status": "unchanged",
+      "etag": "W/\"adb0a68fbb0bb510357a933391290e4c\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627417-pause": {
+      "hash": "ee099f9cc283afd77803e63275c4032415cacf646f33813cdaa849522edba93e",
+      "last_checked": "2025-06-06T10:38:47.648996",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1682103-next.json": {
+      "hash": "d3ad2e765b1355688ff4b01cf3615bf386507cf9cd3c264baa97937ac869d133",
+      "last_checked": "2025-06-06T10:38:48.100050",
+      "status": "unchanged",
+      "etag": "W/\"5e01e4eff0e7bc72963c69bb0a9c89c5\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1682103-next": {
+      "hash": "d3ad2e765b1355688ff4b01cf3615bf386507cf9cd3c264baa97937ac869d133",
+      "last_checked": "2025-06-06T10:38:48.100050",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627432-play.json": {
+      "hash": "1a22987463aef2b58ad8d4aaa33c2e84433e6498099a6bf92d0980b9feb9cdf7",
+      "last_checked": "2025-06-06T10:38:48.514113",
+      "status": "unchanged",
+      "etag": "W/\"944f259593868c22b1871a614f989b6f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627432-play": {
+      "hash": "1a22987463aef2b58ad8d4aaa33c2e84433e6498099a6bf92d0980b9feb9cdf7",
+      "last_checked": "2025-06-06T10:38:48.514113",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627387-playbackstate.json": {
+      "hash": "4bcc5f78234a947cb0ddcaf701192d190949a48f687005237c010b10627eb658",
+      "last_checked": "2025-06-06T10:38:48.916155",
+      "status": "unchanged",
+      "etag": "W/\"c212a9d1415ccbc02b91250f4978f3b7\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627387-playbackstate": {
+      "hash": "4bcc5f78234a947cb0ddcaf701192d190949a48f687005237c010b10627eb658",
+      "last_checked": "2025-06-06T10:38:48.916155",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1682104-playbackrate.json": {
+      "hash": "5d6f4b9e53eba7b24fa07477966d8263f4674914baf57c93dbe2589141996664",
+      "last_checked": "2025-06-06T10:38:49.373724",
+      "status": "unchanged",
+      "etag": "W/\"4c1f26cc85d6d898b1bc26b1e09f9ac8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1682104-playbackrate": {
+      "hash": "5d6f4b9e53eba7b24fa07477966d8263f4674914baf57c93dbe2589141996664",
+      "last_checked": "2025-06-06T10:38:49.373724",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1682106-previous.json": {
+      "hash": "da6bd5b92defabed4ea6eab06e679c80949e3f1170257162dae7815cb6817299",
+      "last_checked": "2025-06-06T10:38:49.852433",
+      "status": "unchanged",
+      "etag": "W/\"b79900ebfe65f7c5366ff323b7482c2b\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1682106-previous": {
+      "hash": "da6bd5b92defabed4ea6eab06e679c80949e3f1170257162dae7815cb6817299",
+      "last_checked": "2025-06-06T10:38:49.852433",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627368-seektotime.json": {
+      "hash": "a7774e65902acf9f4d76a0206f2f7826dad5bf97c908d9b4c71ac6b90714f3fa",
+      "last_checked": "2025-06-06T10:38:50.257532",
+      "status": "unchanged",
+      "etag": "W/\"a329c8ef81dcf6036ff54b14bbe2f1b6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627368-seektotime": {
+      "hash": "a7774e65902acf9f4d76a0206f2f7826dad5bf97c908d9b4c71ac6b90714f3fa",
+      "last_checked": "2025-06-06T10:38:50.257532",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627406-stop.json": {
+      "hash": "f9840e168fe7d2061fb9d7d511afb628ae33b2f3ee17985214fee27f8411d45e",
+      "last_checked": "2025-06-06T10:38:50.674852",
+      "status": "unchanged",
+      "etag": "W/\"b83b156b6f7156d5bc00238d7c9d0d70\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627406-stop": {
+      "hash": "f9840e168fe7d2061fb9d7d511afb628ae33b2f3ee17985214fee27f8411d45e",
+      "last_checked": "2025-06-06T10:38:50.674852",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627325-currentmediaitem.json": {
+      "hash": "c655545cd3827dacf5fd71f85f920ab79ce796fa35edc6e10702ac1d975fa78c",
+      "last_checked": "2025-06-06T10:38:51.100864",
+      "status": "unchanged",
+      "etag": "W/\"f94de0ba3dd5d9a1580e0f2bf9e79ad6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627325-currentmediaitem": {
+      "hash": "c655545cd3827dacf5fd71f85f920ab79ce796fa35edc6e10702ac1d975fa78c",
+      "last_checked": "2025-06-06T10:38:51.100864",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1837542-currentmediaitemdate.json": {
+      "hash": "a43e160e6276959715c67ab240a796812e41f7886976894db0d74d7fc9b7a0e5",
+      "last_checked": "2025-06-06T10:38:51.508275",
+      "status": "unchanged",
+      "etag": "W/\"9205c462231db8a5a91344ae2c045720\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1837542-currentmediaitemdate": {
+      "hash": "a43e160e6276959715c67ab240a796812e41f7886976894db0d74d7fc9b7a0e5",
+      "last_checked": "2025-06-06T10:38:51.508275",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1682110-currentmediaitemduration.json": {
+      "hash": "1354a78bc6d57808b304fc30bd03cbb061e43cf912f55cb87d1350c8b14ba505",
+      "last_checked": "2025-06-06T10:38:51.974495",
+      "status": "unchanged",
+      "etag": "W/\"5a70851e8ba0cb458069fd4ca53d7333\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1682110-currentmediaitemduration": {
+      "hash": "1354a78bc6d57808b304fc30bd03cbb061e43cf912f55cb87d1350c8b14ba505",
+      "last_checked": "2025-06-06T10:38:51.974495",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627338-nextmediaitem.json": {
+      "hash": "f1afff9834f8f508ccfdfa97e89683e3211cbeaa80e8b992ba75609150202d09",
+      "last_checked": "2025-06-06T10:38:52.379425",
+      "status": "unchanged",
+      "etag": "W/\"b4da5f92229981f3c4a03a358fb9e56d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627338-nextmediaitem": {
+      "hash": "f1afff9834f8f508ccfdfa97e89683e3211cbeaa80e8b992ba75609150202d09",
+      "last_checked": "2025-06-06T10:38:52.379425",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627373-previousmediaitem.json": {
+      "hash": "ee686a1587ee2dba6ada47395868823677af61f94828ae61698e8ddc52a1d86c",
+      "last_checked": "2025-06-06T10:38:52.787200",
+      "status": "unchanged",
+      "etag": "W/\"41063eb4f9a83678b03280fd187e3d3f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627373-previousmediaitem": {
+      "hash": "ee686a1587ee2dba6ada47395868823677af61f94828ae61698e8ddc52a1d86c",
+      "last_checked": "2025-06-06T10:38:52.787200",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627385-mediaitemdidchange.json": {
+      "hash": "cc2f721e6a56d29a643d9f0aaf76511114245a4d569edc8e0f5e16563aa170e6",
+      "last_checked": "2025-06-06T10:38:53.211788",
+      "status": "unchanged",
+      "etag": "W/\"a806ab1b759946af01798ccc5000d191\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627385-mediaitemdidchange": {
+      "hash": "cc2f721e6a56d29a643d9f0aaf76511114245a4d569edc8e0f5e16563aa170e6",
+      "last_checked": "2025-06-06T10:38:53.211788",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627345-mediaitemwillchange.json": {
+      "hash": "f60544f7056219ed518c0b2082a2be83095dbff0d25de0422d4195386492d323",
+      "last_checked": "2025-06-06T10:38:53.611177",
+      "status": "unchanged",
+      "etag": "W/\"e0bea2ac60134b0a7f4b7b799edca68d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627345-mediaitemwillchange": {
+      "hash": "f60544f7056219ed518c0b2082a2be83095dbff0d25de0422d4195386492d323",
+      "last_checked": "2025-06-06T10:38:53.611177",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1682114-playbackdidstall.json": {
+      "hash": "24e349aa4023dd6a9e2fa09229a44db5721edd8d32d4a2bf38630cb7c5a54e41",
+      "last_checked": "2025-06-06T10:38:54.044537",
+      "status": "unchanged",
+      "etag": "W/\"fe9abe8a9550fd1ce4806978177bbd42\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1682114-playbackdidstall": {
+      "hash": "24e349aa4023dd6a9e2fa09229a44db5721edd8d32d4a2bf38630cb7c5a54e41",
+      "last_checked": "2025-06-06T10:38:54.044537",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1682115-playbackerror.json": {
+      "hash": "9ecdf6aa18449bbc5ec024786544057f58e6dbd7a19711b8ed0b77418dc1f3f7",
+      "last_checked": "2025-06-06T10:38:54.474785",
+      "status": "unchanged",
+      "etag": "W/\"541cd63ab61945375cfb2951b987d58f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1682115-playbackerror": {
+      "hash": "9ecdf6aa18449bbc5ec024786544057f58e6dbd7a19711b8ed0b77418dc1f3f7",
+      "last_checked": "2025-06-06T10:38:54.474785",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627354-requestseektotime.json": {
+      "hash": "3cb9bcb8516363babae680b1cc5b0ed588b1cc4544937c479c9e75b629559792",
+      "last_checked": "2025-06-06T10:38:54.906268",
+      "status": "unchanged",
+      "etag": "W/\"7510657591483521ac8ca5dda7d5a368\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627354-requestseektotime": {
+      "hash": "3cb9bcb8516363babae680b1cc5b0ed588b1cc4544937c479c9e75b629559792",
+      "last_checked": "2025-06-06T10:38:54.906268",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1682117-shouldchangetomediaatindex.json": {
+      "hash": "ce2a7f1d624db87403bdde02f6fb06b1ba74ddd2e3644f254b61876cf0d34e1c",
+      "last_checked": "2025-06-06T10:38:55.302484",
+      "status": "unchanged",
+      "etag": "W/\"fb389f9ff16915b38eb01a25a3006a2a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1682117-shouldchangetomediaatindex": {
+      "hash": "ce2a7f1d624db87403bdde02f6fb06b1ba74ddd2e3644f254b61876cf0d34e1c",
+      "last_checked": "2025-06-06T10:38:55.302484",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627390-statedidchange.json": {
+      "hash": "615bd96bf2dcf196f81570b316d64eb64025ce8e9961a11e721ffcb87feb1b03",
+      "last_checked": "2025-06-06T10:38:56.134083",
+      "status": "unchanged",
+      "etag": "W/\"e2e3b1fc05ccddd7782cdc65877962f4\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627390-statedidchange": {
+      "hash": "615bd96bf2dcf196f81570b316d64eb64025ce8e9961a11e721ffcb87feb1b03",
+      "last_checked": "2025-06-06T10:38:56.134083",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627331-statewillchange.json": {
+      "hash": "836dc3aef886ea2555ef49c660bdf4d2891fabdc00bc2a6c805baa6c2d6cb548",
+      "last_checked": "2025-06-06T10:38:56.568077",
+      "status": "unchanged",
+      "etag": "W/\"69a6fe890a8ae0ce0b02c8a5894a55b3\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627331-statewillchange": {
+      "hash": "836dc3aef886ea2555ef49c660bdf4d2891fabdc00bc2a6c805baa6c2d6cb548",
+      "last_checked": "2025-06-06T10:38:56.568077",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627443-timeboundarydidcross.json": {
+      "hash": "47b53ed015e58ea25edc2279dfb66d7cec9c7c1b80c4897406a6e6a6f6fc0e74",
+      "last_checked": "2025-06-06T10:38:56.992912",
+      "status": "unchanged",
+      "etag": "W/\"89df9b9cb97fca008317baab051ed77a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627443-timeboundarydidcross": {
+      "hash": "47b53ed015e58ea25edc2279dfb66d7cec9c7c1b80c4897406a6e6a6f6fc0e74",
+      "last_checked": "2025-06-06T10:38:56.992912",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627344-timedidchange.json": {
+      "hash": "a1177c6add436c54dcf9fadbe6daebc562d66466487a48f2589155e8e4677a93",
+      "last_checked": "2025-06-06T10:38:57.401482",
+      "status": "unchanged",
+      "etag": "W/\"113cc00ecc83f3372f9fa1cb2b5aa862\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627344-timedidchange": {
+      "hash": "a1177c6add436c54dcf9fadbe6daebc562d66466487a48f2589155e8e4677a93",
+      "last_checked": "2025-06-06T10:38:57.401482",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627384-timedmetadata.json": {
+      "hash": "b6b4dd2a432cbe4e319984b608bee5506011e0adf0b6076d7311818398d47bb5",
+      "last_checked": "2025-06-06T10:38:57.831294",
+      "status": "unchanged",
+      "etag": "W/\"cd9404e8f3c4eb3acd762f71611fc5b2\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627384-timedmetadata": {
+      "hash": "b6b4dd2a432cbe4e319984b608bee5506011e0adf0b6076d7311818398d47bb5",
+      "last_checked": "2025-06-06T10:38:57.831294",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1682120-transportbarvisibilitydidchange.json": {
+      "hash": "558406523f40b0a6f35d9cbcabaf523cc841394a7ea4a193a79bc72a54c1c4dc",
+      "last_checked": "2025-06-06T10:38:58.262700",
+      "status": "unchanged",
+      "etag": "W/\"9c335e10aea594b1c1b884fd48ac2b03\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1682120-transportbarvisibilitydidchange": {
+      "hash": "558406523f40b0a6f35d9cbcabaf523cc841394a7ea4a193a79bc72a54c1c4dc",
+      "last_checked": "2025-06-06T10:38:58.262700",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/playlist/1627377-item.json": {
+      "hash": "88a4bc871cf6c46cfc1b4011ee7294a2a2a7b4f56a23612677717dbf9f9291ca",
+      "last_checked": "2025-06-06T10:38:58.740006",
+      "status": "unchanged",
+      "etag": "W/\"04213721fc5fb242732922603da038c9\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/playlist/1627377-item": {
+      "hash": "88a4bc871cf6c46cfc1b4011ee7294a2a2a7b4f56a23612677717dbf9f9291ca",
+      "last_checked": "2025-06-06T10:38:58.740006",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/playlist/1627327-length.json": {
+      "hash": "f40fafd88313e21cb0f5f9b1120667c611ede67f739ecc1d5b9dbf95782ad234",
+      "last_checked": "2025-06-06T10:38:59.128663",
+      "status": "unchanged",
+      "etag": "W/\"55638008671cce3ffbf524752abd48f3\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/playlist/1627327-length": {
+      "hash": "f40fafd88313e21cb0f5f9b1120667c611ede67f739ecc1d5b9dbf95782ad234",
+      "last_checked": "2025-06-06T10:38:59.128663",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/playlist/1627336-playlist.json": {
+      "hash": "4f9fe69f85d7980e7c8d8b7e7214c0be4ae4981d7654fe653fc1c5880a1e9d87",
+      "last_checked": "2025-06-06T10:38:59.561882",
+      "status": "unchanged",
+      "etag": "W/\"252e78b11b22f7878f7dd5a2e94dd7b2\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/playlist/1627336-playlist": {
+      "hash": "4f9fe69f85d7980e7c8d8b7e7214c0be4ae4981d7654fe653fc1c5880a1e9d87",
+      "last_checked": "2025-06-06T10:38:59.561882",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/playlist/1627310-pop.json": {
+      "hash": "3884765e98a0138497fe64d3cce434a578ec1c159752c86061b7df96810b1cf4",
+      "last_checked": "2025-06-06T10:38:59.992935",
+      "status": "unchanged",
+      "etag": "W/\"886b097c59e426a3539d91c3d7158b8d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/playlist/1627310-pop": {
+      "hash": "3884765e98a0138497fe64d3cce434a578ec1c159752c86061b7df96810b1cf4",
+      "last_checked": "2025-06-06T10:38:59.992935",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/playlist/1627433-push.json": {
+      "hash": "e48e5256bd23e9a99c137ac68c41b1d613150522d4aa555c314944b2a137589e",
+      "last_checked": "2025-06-06T10:39:00.457099",
+      "status": "unchanged",
+      "etag": "W/\"0313307eabdd742ad2c05c08a07ac305\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/playlist/1627433-push": {
+      "hash": "e48e5256bd23e9a99c137ac68c41b1d613150522d4aa555c314944b2a137589e",
+      "last_checked": "2025-06-06T10:39:00.457099",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/playlist/1627367-splice.json": {
+      "hash": "0e4d78ea78acd3a62a89ba0b14beda31ddab03ccf9aaf9d47153426d46af487d",
+      "last_checked": "2025-06-06T10:39:00.900119",
+      "status": "unchanged",
+      "etag": "W/\"b3a9e9780451b3f4c56fcdc3876789f6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/playlist/1627367-splice": {
+      "hash": "0e4d78ea78acd3a62a89ba0b14beda31ddab03ccf9aaf9d47153426d46af487d",
+      "last_checked": "2025-06-06T10:39:00.900119",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627412-mediaitem.json": {
+      "hash": "cb56c579a82108e3da83cdaaa60631af8c22c7875169683cdf4408d0f24eeb78",
+      "last_checked": "2025-06-06T10:39:01.294589",
+      "status": "unchanged",
+      "etag": "W/\"dacf6a753f9f43cb1849e5ff47f46efa\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627412-mediaitem": {
+      "hash": "cb56c579a82108e3da83cdaaa60631af8c22c7875169683cdf4408d0f24eeb78",
+      "last_checked": "2025-06-06T10:39:01.294589",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627422-contentratingdomain.json": {
+      "hash": "391a7272f68d3cf4ef08b63a9129315865d9b10fd37b4dcb839af8d972e4e126",
+      "last_checked": "2025-06-06T10:39:01.690973",
+      "status": "unchanged",
+      "etag": "W/\"61476113bc08431f1d4c5e64fae63d62\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627422-contentratingdomain": {
+      "hash": "391a7272f68d3cf4ef08b63a9129315865d9b10fd37b4dcb839af8d972e4e126",
+      "last_checked": "2025-06-06T10:39:01.690973",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627366-contentratingranking.json": {
+      "hash": "85a58b4e607bd6132b2aa919cf72bdaf88ca220aefa1e6490bd80b7f4eaf7767",
+      "last_checked": "2025-06-06T10:39:02.089939",
+      "status": "unchanged",
+      "etag": "W/\"425339be3f1916c9b6daf6cda670013c\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627366-contentratingranking": {
+      "hash": "85a58b4e607bd6132b2aa919cf72bdaf88ca220aefa1e6490bd80b7f4eaf7767",
+      "last_checked": "2025-06-06T10:39:02.089939",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627358-isexplicit.json": {
+      "hash": "173dc807859982eaec75531c29d2840722144c798590e15eb8954b5343abb80e",
+      "last_checked": "2025-06-06T10:39:02.570182",
+      "status": "unchanged",
+      "etag": "W/\"b942d3b2c1059f477f4fd06e084562fb\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627358-isexplicit": {
+      "hash": "173dc807859982eaec75531c29d2840722144c798590e15eb8954b5343abb80e",
+      "last_checked": "2025-06-06T10:39:02.570182",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627319-artworkimageurl.json": {
+      "hash": "596982a8dec4e9f57b769888a27e8d17f796691a592a998b8688dba7f707ee19",
+      "last_checked": "2025-06-06T10:39:02.994239",
+      "status": "unchanged",
+      "etag": "W/\"7ffa23cff85a144151be7bb72a26301d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627319-artworkimageurl": {
+      "hash": "596982a8dec4e9f57b769888a27e8d17f796691a592a998b8688dba7f707ee19",
+      "last_checked": "2025-06-06T10:39:02.994239",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627441-description.json": {
+      "hash": "43ead862b1fcc766cfe3ef811ecbd9cce9efe7f65c8159949d8e091ca262891e",
+      "last_checked": "2025-06-06T10:39:03.419900",
+      "status": "unchanged",
+      "etag": "W/\"070e512de1f3825977d50af958c939a4\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627441-description": {
+      "hash": "43ead862b1fcc766cfe3ef811ecbd9cce9efe7f65c8159949d8e091ca262891e",
+      "last_checked": "2025-06-06T10:39:03.419900",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627329-subtitle.json": {
+      "hash": "f15d2537a81892e771d73fc01bc6ed6688f9df7f79ad44a6b4a5a9a53e17eb62",
+      "last_checked": "2025-06-06T10:39:03.824151",
+      "status": "unchanged",
+      "etag": "W/\"39f3f73172d70acaf15fd7a623264053\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627329-subtitle": {
+      "hash": "f15d2537a81892e771d73fc01bc6ed6688f9df7f79ad44a6b4a5a9a53e17eb62",
+      "last_checked": "2025-06-06T10:39:03.824151",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627381-title.json": {
+      "hash": "cdcfef8a0e2188f6f45bba482f5533762f1d0e7b532493cfbd3cf067ab7f73a7",
+      "last_checked": "2025-06-06T10:39:04.238726",
+      "status": "unchanged",
+      "etag": "W/\"a86bb1bdcafb61579b3f185cc4c5213a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627381-title": {
+      "hash": "cdcfef8a0e2188f6f45bba482f5533762f1d0e7b532493cfbd3cf067ab7f73a7",
+      "last_checked": "2025-06-06T10:39:04.238726",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627315-type.json": {
+      "hash": "7cbb25a01c6822833dccf441b59e4f07d3a7504a0063a06819e836e2c4a0a376",
+      "last_checked": "2025-06-06T10:39:04.665183",
+      "status": "unchanged",
+      "etag": "W/\"6f1013f24114bb8a804d1e9a3ab91f49\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627315-type": {
+      "hash": "7cbb25a01c6822833dccf441b59e4f07d3a7504a0063a06819e836e2c4a0a376",
+      "last_checked": "2025-06-06T10:39:04.665183",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627401-url.json": {
+      "hash": "3d341f4ac10bf3caf32217fc051853ae34db5e2a140b26691922255f9b2aba6b",
+      "last_checked": "2025-06-06T10:39:05.089774",
+      "status": "unchanged",
+      "etag": "W/\"9a6707aecfafca495cb77d5149c59b4f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627401-url": {
+      "hash": "3d341f4ac10bf3caf32217fc051853ae34db5e2a140b26691922255f9b2aba6b",
+      "last_checked": "2025-06-06T10:39:05.089774",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627341-interstitials.json": {
+      "hash": "0595c9d5137928377953faeb49ccc540110d1db0a59fbd80b41583f07bb47b03",
+      "last_checked": "2025-06-06T10:39:05.957180",
+      "status": "unchanged",
+      "etag": "W/\"cbf8207cfb71f3d0a9fe2d64bc93e923\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627341-interstitials": {
+      "hash": "0595c9d5137928377953faeb49ccc540110d1db0a59fbd80b41583f07bb47b03",
+      "last_checked": "2025-06-06T10:39:05.957180",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627400-resumetime.json": {
+      "hash": "319002574efb5a4339e0e24caf8e4db42394d5d03086a6965a86731dc9c59d91",
+      "last_checked": "2025-06-06T10:39:06.386076",
+      "status": "unchanged",
+      "etag": "W/\"b127a3e89ba3e86b56c1f796ec6ea61b\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627400-resumetime": {
+      "hash": "319002574efb5a4339e0e24caf8e4db42394d5d03086a6965a86731dc9c59d91",
+      "last_checked": "2025-06-06T10:39:06.386076",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627392-loadassetid.json": {
+      "hash": "e8029556292fec1044138dcb285c2d7b071e69591689cf3b98be2448088811ab",
+      "last_checked": "2025-06-06T10:39:06.800250",
+      "status": "unchanged",
+      "etag": "W/\"c6197f6579e6ad24f0cdafd0ad7b10a6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627392-loadassetid": {
+      "hash": "e8029556292fec1044138dcb285c2d7b071e69591689cf3b98be2448088811ab",
+      "last_checked": "2025-06-06T10:39:06.800250",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627435-loadcertificate.json": {
+      "hash": "c15dc5baec43902e769c5c5cb0e655e2e75f056267228b12ebbc88b69b349587",
+      "last_checked": "2025-06-06T10:39:07.230147",
+      "status": "unchanged",
+      "etag": "W/\"16cf40c5269cdf9a3ca22d2abb7178ac\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627435-loadcertificate": {
+      "hash": "c15dc5baec43902e769c5c5cb0e655e2e75f056267228b12ebbc88b69b349587",
+      "last_checked": "2025-06-06T10:39:07.230147",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627379-loadkey.json": {
+      "hash": "feb1249c57b67d087442579500c6fd3dfbfad06ec80979689252f0b7f48aa46e",
+      "last_checked": "2025-06-06T10:39:07.657367",
+      "status": "unchanged",
+      "etag": "W/\"e8fe7bcf9c779018296e9151518b36ae\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627379-loadkey": {
+      "hash": "feb1249c57b67d087442579500c6fd3dfbfad06ec80979689252f0b7f48aa46e",
+      "last_checked": "2025-06-06T10:39:07.657367",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/slideshow/1657228-append.json": {
+      "hash": "f54309dce63d99bca55e62951a129240ed81062e828bf72fb66355a958e656b1",
+      "last_checked": "2025-06-06T10:39:08.095943",
+      "status": "unchanged",
+      "etag": "W/\"34abcddb9ef753b39853854b82e687e5\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/slideshow/1657228-append": {
+      "hash": "f54309dce63d99bca55e62951a129240ed81062e828bf72fb66355a958e656b1",
+      "last_checked": "2025-06-06T10:39:08.095943",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/slideshow/1657241-dismiss.json": {
+      "hash": "fe798db8e42e24d43427146f285823cda2ae32580ff755e5e96099a51144004c",
+      "last_checked": "2025-06-06T10:39:08.500737",
+      "status": "unchanged",
+      "etag": "W/\"198af08e8fda958331aea088c01099ea\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/slideshow/1657241-dismiss": {
+      "hash": "fe798db8e42e24d43427146f285823cda2ae32580ff755e5e96099a51144004c",
+      "last_checked": "2025-06-06T10:39:08.500737",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/slideshow/1657265-start.json": {
+      "hash": "bb471f96dd889b4fbda2b8a3c9adaa1fd4eda506dc6b791a7af0d0f2f6a76ae3",
+      "last_checked": "2025-06-06T10:39:08.911193",
+      "status": "unchanged",
+      "etag": "W/\"16ea22e2fec249f830fefb8ff7e567c0\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/slideshow/1657265-start": {
+      "hash": "bb471f96dd889b4fbda2b8a3c9adaa1fd4eda506dc6b791a7af0d0f2f6a76ae3",
+      "last_checked": "2025-06-06T10:39:08.911193",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/browser/3192100-present.json": {
+      "hash": "cc0c15fbb3f93ed6103cecd92065fe340a2d97d7b5593c98b572393313e31537",
+      "last_checked": "2025-06-06T10:39:09.325962",
+      "status": "unchanged",
+      "etag": "W/\"0dc12277bc557d050f5ee5f448a8e3f8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/browser/3192100-present": {
+      "hash": "cc0c15fbb3f93ed6103cecd92065fe340a2d97d7b5593c98b572393313e31537",
+      "last_checked": "2025-06-06T10:39:09.325962",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/browser/3192099-maskinset.json": {
+      "hash": "de05c8b2a05595b763df0e9604767e38d664675e91e450667e8c58e33aa3e186",
+      "last_checked": "2025-06-06T10:39:09.739773",
+      "status": "unchanged",
+      "etag": "W/\"d81468c8459f3cdb8f4394839226a55e\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/browser/3192099-maskinset": {
+      "hash": "de05c8b2a05595b763df0e9604767e38d664675e91e450667e8c58e33aa3e186",
+      "last_checked": "2025-06-06T10:39:09.739773",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/browser/3192098-interitemspacing.json": {
+      "hash": "9ee7bb60635ecd7bbc73d7aa719824f917c7a08a9ef291bdf39ddf207e219f90",
+      "last_checked": "2025-06-06T10:39:10.215765",
+      "status": "unchanged",
+      "etag": "W/\"3df17b6ab971e36e2b135c68dd51f3ea\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/browser/3192098-interitemspacing": {
+      "hash": "9ee7bb60635ecd7bbc73d7aa719824f917c7a08a9ef291bdf39ddf207e219f90",
+      "last_checked": "2025-06-06T10:39:10.215765",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/browser/3192097-cornerradius.json": {
+      "hash": "0c2b00f4a304a3b35ad7ce4b81df7b1e4191224aa460889cda046ab2d512030f",
+      "last_checked": "2025-06-06T10:39:10.636736",
+      "status": "unchanged",
+      "etag": "W/\"7d7fd8c0692bdad5d7cf3656cd3fcc70\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/browser/3192097-cornerradius": {
+      "hash": "0c2b00f4a304a3b35ad7ce4b81df7b1e4191224aa460889cda046ab2d512030f",
+      "last_checked": "2025-06-06T10:39:10.636736",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/keyboard/1627359-text.json": {
+      "hash": "f3d788d69318d1d873e3c34ca0a039aef71c963825408a1d6d5b1e9f08adfa2d",
+      "last_checked": "2025-06-06T10:39:11.042751",
+      "status": "unchanged",
+      "etag": "W/\"7f7ff94f9a7a2718d71602f4aeca6c82\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/keyboard/1627359-text": {
+      "hash": "f3d788d69318d1d873e3c34ca0a039aef71c963825408a1d6d5b1e9f08adfa2d",
+      "last_checked": "2025-06-06T10:39:11.042751",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/keyboard/1627355-ontextchange.json": {
+      "hash": "272ad5c9bdbf22e3b04cc572852a71f7c42d2217755589c01678565c7d1b4e5f",
+      "last_checked": "2025-06-06T10:39:11.493274",
+      "status": "unchanged",
+      "etag": "W/\"57c359d3065e8af4d370fc908d8e4f7e\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/keyboard/1627355-ontextchange": {
+      "hash": "272ad5c9bdbf22e3b04cc572852a71f7c42d2217755589c01678565c7d1b4e5f",
+      "last_checked": "2025-06-06T10:39:11.493274",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/keyboard/3589336-suggestions.json": {
+      "hash": "27dbb9ef4efdb9b64dc1da3912f0941bc957339a497a1081f5f02c6cf9c18234",
+      "last_checked": "2025-06-06T10:39:11.943573",
+      "status": "unchanged",
+      "etag": "W/\"061d8f85615db5ab0943b3a47c23a6a2\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/keyboard/3589336-suggestions": {
+      "hash": "27dbb9ef4efdb9b64dc1da3912f0941bc957339a497a1081f5f02c6cf9c18234",
+      "last_checked": "2025-06-06T10:39:11.943573",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/keyboard/3678707-onsuggestionselected.json": {
+      "hash": "e5e74e7493973ce8c53e6c99cffcd6b22c8cc272bf8ab61de364be6307a8fdba",
+      "last_checked": "2025-06-06T10:39:12.345082",
+      "status": "unchanged",
+      "etag": "W/\"28ab678204057bb4221d752e16eadff8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/keyboard/3678707-onsuggestionselected": {
+      "hash": "e5e74e7493973ce8c53e6c99cffcd6b22c8cc272bf8ab61de364be6307a8fdba",
+      "last_checked": "2025-06-06T10:39:12.345082",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/menubardocument/1627405-getdocument.json": {
+      "hash": "90df9bbddc861d5bf1e65c0ffa456e2b252f42f41a5c9948f91530b1080ac24d",
+      "last_checked": "2025-06-06T10:39:12.769028",
+      "status": "unchanged",
+      "etag": "W/\"b4aca0589b0ee0f8e80ed1981a69ef21\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/menubardocument/1627405-getdocument": {
+      "hash": "90df9bbddc861d5bf1e65c0ffa456e2b252f42f41a5c9948f91530b1080ac24d",
+      "last_checked": "2025-06-06T10:39:12.769028",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/menubardocument/1657224-getselecteditem.json": {
+      "hash": "ff7515dfd96fc86517ba0f5125c68ffae12bdeb6698d917ffa2bfd452cbf0166",
+      "last_checked": "2025-06-06T10:39:13.158680",
+      "status": "unchanged",
+      "etag": "W/\"246777140fa106721d38aa5d435e869c\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/menubardocument/1657224-getselecteditem": {
+      "hash": "ff7515dfd96fc86517ba0f5125c68ffae12bdeb6698d917ffa2bfd452cbf0166",
+      "last_checked": "2025-06-06T10:39:13.158680",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/menubardocument/1627374-setdocument.json": {
+      "hash": "d6ee8eb843f5855762166e846fbda891156798d709cb756d923778ed36fde24e",
+      "last_checked": "2025-06-06T10:39:13.596944",
+      "status": "unchanged",
+      "etag": "W/\"792800192344a2e6b30c1035746a79e6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/menubardocument/1627374-setdocument": {
+      "hash": "d6ee8eb843f5855762166e846fbda891156798d709cb756d923778ed36fde24e",
+      "last_checked": "2025-06-06T10:39:13.596944",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/menubardocument/1627427-setselecteditem.json": {
+      "hash": "3d650800b5843e398cb287b7fb7d7f44a12ecaf3e295156c64b53f6720bc2fe2",
+      "last_checked": "2025-06-06T10:39:14.010530",
+      "status": "unchanged",
+      "etag": "W/\"6469e1186f072742d668074b026c3135\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/menubardocument/1627427-setselecteditem": {
+      "hash": "3d650800b5843e398cb287b7fb7d7f44a12ecaf3e295156c64b53f6720bc2fe2",
+      "last_checked": "2025-06-06T10:39:14.010530",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627356-abort.json": {
+      "hash": "7e8412591fa836bdb0172dc73a435ffced787a0bd0c1f84d8a9edece1330fd97",
+      "last_checked": "2025-06-06T10:39:14.425048",
+      "status": "unchanged",
+      "etag": "W/\"2e499177a6d783de8e17d9c8d7050ef0\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627356-abort": {
+      "hash": "7e8412591fa836bdb0172dc73a435ffced787a0bd0c1f84d8a9edece1330fd97",
+      "last_checked": "2025-06-06T10:39:14.425048",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627318-open.json": {
+      "hash": "557234b117029f48de3f54ad4884ffae64b7a614e85aafa64679ea77962c8e5d",
+      "last_checked": "2025-06-06T10:39:14.855348",
+      "status": "unchanged",
+      "etag": "W/\"896252ffa4ce57b70d83a8a34d266843\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627318-open": {
+      "hash": "557234b117029f48de3f54ad4884ffae64b7a614e85aafa64679ea77962c8e5d",
+      "last_checked": "2025-06-06T10:39:14.855348",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627309-send.json": {
+      "hash": "2e579e0ab7ad5aa8672fd0bce19076abaa631ea3390bf85914db82973d395ac1",
+      "last_checked": "2025-06-06T10:39:15.283067",
+      "status": "unchanged",
+      "etag": "W/\"d12ed9b7f4a4e24509e68da4daec7d37\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627309-send": {
+      "hash": "2e579e0ab7ad5aa8672fd0bce19076abaa631ea3390bf85914db82973d395ac1",
+      "last_checked": "2025-06-06T10:39:15.283067",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627335-timeout.json": {
+      "hash": "0925269d89b11c9bca0e93a4048acec6842742fd769c492189e4bd84184bfe54",
+      "last_checked": "2025-06-06T10:39:15.732926",
+      "status": "unchanged",
+      "etag": "W/\"91ae1398ec936ee549ad98a3a45280c3\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627335-timeout": {
+      "hash": "0925269d89b11c9bca0e93a4048acec6842742fd769c492189e4bd84184bfe54",
+      "last_checked": "2025-06-06T10:39:15.732926",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627350-xmlhttprequest.json": {
+      "hash": "bad413e61df404109da75ce8c7d4f9ebbaa57e304975fc6ff966e7cf85e5d67b",
+      "last_checked": "2025-06-06T10:39:16.126967",
+      "status": "unchanged",
+      "etag": "W/\"5cc2d25db35e1a5d222c305856aa5507\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627350-xmlhttprequest": {
+      "hash": "bad413e61df404109da75ce8c7d4f9ebbaa57e304975fc6ff966e7cf85e5d67b",
+      "last_checked": "2025-06-06T10:39:16.126967",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627343-getallresponseheaders.json": {
+      "hash": "c3d5322ad5662a6d1b94a301d86929810103718d673a74df0b56101d523979ec",
+      "last_checked": "2025-06-06T10:39:16.530659",
+      "status": "unchanged",
+      "etag": "W/\"b6ceb2a377acc2e8b024b0ab44fb67a3\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627343-getallresponseheaders": {
+      "hash": "c3d5322ad5662a6d1b94a301d86929810103718d673a74df0b56101d523979ec",
+      "last_checked": "2025-06-06T10:39:16.530659",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627438-getresponseheader.json": {
+      "hash": "a1fbf8f7df2295eda276126071e8ab8784044934479c9d4311cd94954dfe5599",
+      "last_checked": "2025-06-06T10:39:16.944715",
+      "status": "unchanged",
+      "etag": "W/\"2c3bd779d3b089b98686290c65a82c8d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627438-getresponseheader": {
+      "hash": "a1fbf8f7df2295eda276126071e8ab8784044934479c9d4311cd94954dfe5599",
+      "last_checked": "2025-06-06T10:39:16.944715",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627317-setrequestheader.json": {
+      "hash": "95ffbe937b56691b79a2087a1710dac418f5bf2ea28cf8c06078a1c2d78c03cf",
+      "last_checked": "2025-06-06T10:39:17.375924",
+      "status": "unchanged",
+      "etag": "W/\"08ec0d41a3aed0bc7fca4159c97469a2\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627317-setrequestheader": {
+      "hash": "95ffbe937b56691b79a2087a1710dac418f5bf2ea28cf8c06078a1c2d78c03cf",
+      "last_checked": "2025-06-06T10:39:17.375924",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627436-metrics.json": {
+      "hash": "9c306031157d2bc19d2d661bb4aeef70787e94da3dde131e863a1274908a6bb4",
+      "last_checked": "2025-06-06T10:39:17.763294",
+      "status": "unchanged",
+      "etag": "W/\"fc12364a08b0e3d291833d9993205cbe\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627436-metrics": {
+      "hash": "9c306031157d2bc19d2d661bb4aeef70787e94da3dde131e863a1274908a6bb4",
+      "last_checked": "2025-06-06T10:39:17.763294",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627324-readystate.json": {
+      "hash": "6911fc78bdb4338b97bde6644452651cd2737eb30401c77dd9abd7f7066c887a",
+      "last_checked": "2025-06-06T10:39:18.192334",
+      "status": "unchanged",
+      "etag": "W/\"fb022d5240950df9f57c9b17c032016d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627324-readystate": {
+      "hash": "6911fc78bdb4338b97bde6644452651cd2737eb30401c77dd9abd7f7066c887a",
+      "last_checked": "2025-06-06T10:39:18.192334",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627364-response.json": {
+      "hash": "812cf7a323308658fa1bf584864706a27b4ba82a7df14ffcb5c3653a4bdbb96f",
+      "last_checked": "2025-06-06T10:39:18.629899",
+      "status": "unchanged",
+      "etag": "W/\"eb1b58b2461f982540dacf06e7196184\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627364-response": {
+      "hash": "812cf7a323308658fa1bf584864706a27b4ba82a7df14ffcb5c3653a4bdbb96f",
+      "last_checked": "2025-06-06T10:39:18.629899",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627363-responsetext.json": {
+      "hash": "a7dcb7b80aa0196cb1bf7879e5c7c02d6ff8fad01d609c59d8729f80dc501110",
+      "last_checked": "2025-06-06T10:39:19.044839",
+      "status": "unchanged",
+      "etag": "W/\"d704cea0347e6d022841ebd46fdab677\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627363-responsetext": {
+      "hash": "a7dcb7b80aa0196cb1bf7879e5c7c02d6ff8fad01d609c59d8729f80dc501110",
+      "last_checked": "2025-06-06T10:39:19.044839",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627342-responsetype.json": {
+      "hash": "3bba00699c147e67c5f6de135a0f65497c049be7e5259accb0028083ba794789",
+      "last_checked": "2025-06-06T10:39:19.463590",
+      "status": "unchanged",
+      "etag": "W/\"aab9c8b033369483fada8895ce2e2581\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627342-responsetype": {
+      "hash": "3bba00699c147e67c5f6de135a0f65497c049be7e5259accb0028083ba794789",
+      "last_checked": "2025-06-06T10:39:19.463590",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627307-responsexml.json": {
+      "hash": "f78d986d8b778a8234e73eb3620c379bffede1c8a4376fa815fe3ee11e687275",
+      "last_checked": "2025-06-06T10:39:19.880469",
+      "status": "unchanged",
+      "etag": "W/\"3c8196d01e5feab09f99d53ab5de95c6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627307-responsexml": {
+      "hash": "f78d986d8b778a8234e73eb3620c379bffede1c8a4376fa815fe3ee11e687275",
+      "last_checked": "2025-06-06T10:39:19.880469",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627403-status.json": {
+      "hash": "e29cc367ea2fff9934e1e78e3d3b51dbf4dce390f832d8720d0dd4beb7858f09",
+      "last_checked": "2025-06-06T10:39:20.311360",
+      "status": "unchanged",
+      "etag": "W/\"dc1bde78c3798d9a1d84b3455019e1df\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627403-status": {
+      "hash": "e29cc367ea2fff9934e1e78e3d3b51dbf4dce390f832d8720d0dd4beb7858f09",
+      "last_checked": "2025-06-06T10:39:20.311360",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627375-statustext.json": {
+      "hash": "2c79d2edeef4350ba99b6af8789a557bc8eccc64681d13c2d4c981e4af23f1f8",
+      "last_checked": "2025-06-06T10:39:20.752675",
+      "status": "unchanged",
+      "etag": "W/\"c51601ac73ad4b42ff24349e7d65a858\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627375-statustext": {
+      "hash": "2c79d2edeef4350ba99b6af8789a557bc8eccc64681d13c2d4c981e4af23f1f8",
+      "last_checked": "2025-06-06T10:39:20.752675",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627410-onabort.json": {
+      "hash": "cdb231c701f9d45f7c560dc3d99fd35b7e266d7bd1b4ab747f1452dcf427facd",
+      "last_checked": "2025-06-06T10:39:21.171554",
+      "status": "unchanged",
+      "etag": "W/\"43d60650fd6a9b22f4424d59ab546b99\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627410-onabort": {
+      "hash": "cdb231c701f9d45f7c560dc3d99fd35b7e266d7bd1b4ab747f1452dcf427facd",
+      "last_checked": "2025-06-06T10:39:21.171554",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627328-onerror.json": {
+      "hash": "4f8d42b39a0878f2afa633d10303e12c08e7a3f50587ac3955ecaacd610e1589",
+      "last_checked": "2025-06-06T10:39:21.593160",
+      "status": "unchanged",
+      "etag": "W/\"4a9c35ce4284e9e3d16a033c08e24834\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627328-onerror": {
+      "hash": "4f8d42b39a0878f2afa633d10303e12c08e7a3f50587ac3955ecaacd610e1589",
+      "last_checked": "2025-06-06T10:39:21.593160",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627316-onload.json": {
+      "hash": "f3c02cd23a178d0d3ce6aa78f6194a21f0a942e9cb39764916037f4316e1ac21",
+      "last_checked": "2025-06-06T10:39:22.027379",
+      "status": "unchanged",
+      "etag": "W/\"99868d46ff16a2498bb0393ee999e275\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627316-onload": {
+      "hash": "f3c02cd23a178d0d3ce6aa78f6194a21f0a942e9cb39764916037f4316e1ac21",
+      "last_checked": "2025-06-06T10:39:22.027379",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627365-onloadend.json": {
+      "hash": "a7a1e98debf550a2c12bcde089828738fe92f020ccc1772a416b2137a1eb0f47",
+      "last_checked": "2025-06-06T10:39:22.449214",
+      "status": "unchanged",
+      "etag": "W/\"7392096d595692c9b6aada7f2fc322a9\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627365-onloadend": {
+      "hash": "a7a1e98debf550a2c12bcde089828738fe92f020ccc1772a416b2137a1eb0f47",
+      "last_checked": "2025-06-06T10:39:22.449214",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627440-onloadstart.json": {
+      "hash": "84b5d00d73078a9370be15a27d0587f81546983754685da5f8ade9b78eeec667",
+      "last_checked": "2025-06-06T10:39:22.866763",
+      "status": "unchanged",
+      "etag": "W/\"eecea315025c12083246616be093cbd6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627440-onloadstart": {
+      "hash": "84b5d00d73078a9370be15a27d0587f81546983754685da5f8ade9b78eeec667",
+      "last_checked": "2025-06-06T10:39:22.866763",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627414-onreadystatechange.json": {
+      "hash": "60883d4f2e66598742c6d92f9deaff306c78d7893eed6abe9af952b65cb943da",
+      "last_checked": "2025-06-06T10:39:23.310868",
+      "status": "unchanged",
+      "etag": "W/\"013fea097d3fb7b9e090f688d65c0e18\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627414-onreadystatechange": {
+      "hash": "60883d4f2e66598742c6d92f9deaff306c78d7893eed6abe9af952b65cb943da",
+      "last_checked": "2025-06-06T10:39:23.310868",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627321-ontimeout.json": {
+      "hash": "2786493ec3eba5f286b52be846604dfe4aefb0a01a788d35ffd152e1e0a2ddd1",
+      "last_checked": "2025-06-06T10:39:23.726706",
+      "status": "unchanged",
+      "etag": "W/\"5f01e3320c0c338890655913a3141468\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627321-ontimeout": {
+      "hash": "2786493ec3eba5f286b52be846604dfe4aefb0a01a788d35ffd152e1e0a2ddd1",
+      "last_checked": "2025-06-06T10:39:23.726706",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627402-abort.json": {
+      "hash": "c35871a627da9da500cd9b20557a6f55ad28a8aab5fa5e270ad80a64c9567730",
+      "last_checked": "2025-06-06T10:39:24.147389",
+      "status": "unchanged",
+      "etag": "W/\"90789c74985aae7b3187be3a86f10222\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627402-abort": {
+      "hash": "c35871a627da9da500cd9b20557a6f55ad28a8aab5fa5e270ad80a64c9567730",
+      "last_checked": "2025-06-06T10:39:24.147389",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627326-error.json": {
+      "hash": "f8753be7e3ba7c27ac2a46a24a037aef361e346b01f677bd4b1fde2e385f0d06",
+      "last_checked": "2025-06-06T10:39:24.533436",
+      "status": "unchanged",
+      "etag": "W/\"ae67898afdb5adc3af0f8f4da74ddf75\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627326-error": {
+      "hash": "f8753be7e3ba7c27ac2a46a24a037aef361e346b01f677bd4b1fde2e385f0d06",
+      "last_checked": "2025-06-06T10:39:24.533436",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627352-load.json": {
+      "hash": "5a24f3080827b230f087418dd158627e4d6ff9fbbe82950f1948fabf64407ff7",
+      "last_checked": "2025-06-06T10:39:24.972703",
+      "status": "unchanged",
+      "etag": "W/\"7b1d52d0e69a984e312cd46d890e1208\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627352-load": {
+      "hash": "5a24f3080827b230f087418dd158627e4d6ff9fbbe82950f1948fabf64407ff7",
+      "last_checked": "2025-06-06T10:39:24.972703",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627393-loadend.json": {
+      "hash": "be0205f6ca0b56adad19c839850d040a9357787b4acf4e7d2ee93e9b7f14cdb5",
+      "last_checked": "2025-06-06T10:39:25.399640",
+      "status": "unchanged",
+      "etag": "W/\"28b45089b6f1a867d108bf54dd144b50\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627393-loadend": {
+      "hash": "be0205f6ca0b56adad19c839850d040a9357787b4acf4e7d2ee93e9b7f14cdb5",
+      "last_checked": "2025-06-06T10:39:25.399640",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627371-loadstart.json": {
+      "hash": "88ed0de4df8c1f8a9370c92ac6962bc483d6b4915e46bd44a784a2ce6814643f",
+      "last_checked": "2025-06-06T10:39:25.789057",
+      "status": "unchanged",
+      "etag": "W/\"724a6d726f63fa26dd92cd070140f554\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627371-loadstart": {
+      "hash": "88ed0de4df8c1f8a9370c92ac6962bc483d6b4915e46bd44a784a2ce6814643f",
+      "last_checked": "2025-06-06T10:39:25.789057",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xmlhttprequest/1627304-readystatechange.json": {
+      "hash": "c1e6d6b2598bceb541a6c9c9a203497055e7da60211b348cb9ba839c28f20407",
+      "last_checked": "2025-06-06T10:39:26.196903",
+      "status": "unchanged",
+      "etag": "W/\"6416c090c2912cac9f1c396ba1183cc2\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xmlhttprequest/1627304-readystatechange": {
+      "hash": "c1e6d6b2598bceb541a6c9c9a203497055e7da60211b348cb9ba839c28f20407",
+      "last_checked": "2025-06-06T10:39:26.196903",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/dataitem/2897826-dataitem.json": {
+      "hash": "92dd59decd0430139ae14643158a00e73f6cbe37de35c32a977a542666ec5008",
+      "last_checked": "2025-06-06T10:39:26.639485",
+      "status": "unchanged",
+      "etag": "W/\"b768666c8034d58f2736efce7f45d04a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/dataitem/2897826-dataitem": {
+      "hash": "92dd59decd0430139ae14643158a00e73f6cbe37de35c32a977a542666ec5008",
+      "last_checked": "2025-06-06T10:39:26.639485",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/dataitem/2897829-identifier.json": {
+      "hash": "dd5717d95231d633e52b75d1ee0fd4ec084610f79aa99c0c9b7536ab5ef72dbb",
+      "last_checked": "2025-06-06T10:39:27.038984",
+      "status": "unchanged",
+      "etag": "W/\"4993aad2e971329769ff9980a06551d3\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/dataitem/2897829-identifier": {
+      "hash": "dd5717d95231d633e52b75d1ee0fd4ec084610f79aa99c0c9b7536ab5ef72dbb",
+      "last_checked": "2025-06-06T10:39:27.038984",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/dataitem/2897825-type.json": {
+      "hash": "0e711c1e270e8e776e755a3a8b3b145ba5f0becdcc4773a2c85479b0a3fe9f91",
+      "last_checked": "2025-06-06T10:39:27.461533",
+      "status": "unchanged",
+      "etag": "W/\"74e5f4d512128c03ecf921939b347f78\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/dataitem/2897825-type": {
+      "hash": "0e711c1e270e8e776e755a3a8b3b145ba5f0becdcc4773a2c85479b0a3fe9f91",
+      "last_checked": "2025-06-06T10:39:27.461533",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/dataitem/2897832-setpropertypath.json": {
+      "hash": "21888a0e677ce615b3f9292d041e3ee29e02ee3415b0e3c5e1641c500ee8b561",
+      "last_checked": "2025-06-06T10:39:28.039654",
+      "status": "unchanged",
+      "etag": "W/\"f8f30fda515dfca2a3e904451212b98c\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/dataitem/2897832-setpropertypath": {
+      "hash": "21888a0e677ce615b3f9292d041e3ee29e02ee3415b0e3c5e1641c500ee8b561",
+      "last_checked": "2025-06-06T10:39:28.039654",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/dataitem/2897819-getpropertypath.json": {
+      "hash": "df05e6f651fc23acb0586c30d000f08b460dfcbf489dd664781437b258a39517",
+      "last_checked": "2025-06-06T10:39:28.470908",
+      "status": "unchanged",
+      "etag": "W/\"d2108b929c2fbaa6e094bee8cc797bec\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/dataitem/2897819-getpropertypath": {
+      "hash": "df05e6f651fc23acb0586c30d000f08b460dfcbf489dd664781437b258a39517",
+      "last_checked": "2025-06-06T10:39:28.470908",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/dataitem/2897830-touchpropertypath.json": {
+      "hash": "42708c976402c0eeceecde88e84329ba0edb5575898069945a73c13dc4e1738f",
+      "last_checked": "2025-06-06T10:39:28.883307",
+      "status": "unchanged",
+      "etag": "W/\"42f71fe102ad3a98ce3e736a6513529f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/dataitem/2897830-touchpropertypath": {
+      "hash": "42708c976402c0eeceecde88e84329ba0edb5575898069945a73c13dc4e1738f",
+      "last_checked": "2025-06-06T10:39:28.883307",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/storage/1627404-clear.json": {
+      "hash": "3457c2b98f0b158c538819945126e4f975d54ea3e11efadb8c7f183e1f9a7ec5",
+      "last_checked": "2025-06-06T10:39:29.309875",
+      "status": "unchanged",
+      "etag": "W/\"ef50463f9c84fc8d66a1d360c072c226\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/storage/1627404-clear": {
+      "hash": "3457c2b98f0b158c538819945126e4f975d54ea3e11efadb8c7f183e1f9a7ec5",
+      "last_checked": "2025-06-06T10:39:29.309875",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/storage/1627333-getitem.json": {
+      "hash": "07e6740a4acae3588dcc6286eb4f715bebd8d2766af9ab7846199cab8b509431",
+      "last_checked": "2025-06-06T10:39:29.738956",
+      "status": "unchanged",
+      "etag": "W/\"e8198749c714ff9723288e1663bfc405\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/storage/1627333-getitem": {
+      "hash": "07e6740a4acae3588dcc6286eb4f715bebd8d2766af9ab7846199cab8b509431",
+      "last_checked": "2025-06-06T10:39:29.738956",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/storage/1627380-key.json": {
+      "hash": "b71222b46a1c38a8bb77ae394e76c3d97661f39966e5389af2e8a593b499bc51",
+      "last_checked": "2025-06-06T10:39:30.144551",
+      "status": "unchanged",
+      "etag": "W/\"96198be45d943fc0ea462b78fd106674\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/storage/1627380-key": {
+      "hash": "b71222b46a1c38a8bb77ae394e76c3d97661f39966e5389af2e8a593b499bc51",
+      "last_checked": "2025-06-06T10:39:30.144551",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/storage/1627448-length.json": {
+      "hash": "b7f5f5b0e5adea841df002909ba0793e051550d38c188912229ed337adb9cdaf",
+      "last_checked": "2025-06-06T10:39:30.599631",
+      "status": "unchanged",
+      "etag": "W/\"65d3851fa8d04b1586630fa376177023\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/storage/1627448-length": {
+      "hash": "b7f5f5b0e5adea841df002909ba0793e051550d38c188912229ed337adb9cdaf",
+      "last_checked": "2025-06-06T10:39:30.599631",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/storage/1627332-removeitem.json": {
+      "hash": "0bc651bef65287f4d5cc8aa729a16426721e231d3edb0f05deebf822c45a8abc",
+      "last_checked": "2025-06-06T10:39:31.020128",
+      "status": "unchanged",
+      "etag": "W/\"2898ac1cc5ce1055b54ae41f2a45999d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/storage/1627332-removeitem": {
+      "hash": "0bc651bef65287f4d5cc8aa729a16426721e231d3edb0f05deebf822c45a8abc",
+      "last_checked": "2025-06-06T10:39:31.020128",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/storage/1627302-setitem.json": {
+      "hash": "07e5b1841ca4894d717ab900d0fec7d3d9bab5cb50750dabfcc350a75b4ff57f",
+      "last_checked": "2025-06-06T10:39:31.414768",
+      "status": "unchanged",
+      "etag": "W/\"fad470126c2670e4ae040b65ce48f40f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/storage/1627302-setitem": {
+      "hash": "07e5b1841ca4894d717ab900d0fec7d3d9bab5cb50750dabfcc350a75b4ff57f",
+      "last_checked": "2025-06-06T10:39:31.414768",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource.json": {
+      "hash": "9c156b2d84df65ac91d296e4aab812eb646c7d4e4b4afac60b081f1faad560bb",
+      "last_checked": "2025-06-06T10:39:31.878844",
+      "status": "unchanged",
+      "etag": "W/\"8f3e7ba528b14973b0d87d435504c19e\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource": {
+      "hash": "9c156b2d84df65ac91d296e4aab812eb646c7d4e4b4afac60b081f1faad560bb",
+      "last_checked": "2025-06-06T10:39:31.878844",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/loadindexesrequest/3192160-datasource.json": {
+      "hash": "d76de1ede03d4705087ac86a7d087e5ea8f697beaf70562c4a97c22dd6b1a1a2",
+      "last_checked": "2025-06-06T10:39:32.290058",
+      "status": "unchanged",
+      "etag": "W/\"40f7e11f84268e17d7245630b0c2c4ae\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/loadindexesrequest/3192160-datasource": {
+      "hash": "d76de1ede03d4705087ac86a7d087e5ea8f697beaf70562c4a97c22dd6b1a1a2",
+      "last_checked": "2025-06-06T10:39:32.290058",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/loadindexesrequest/3192161-range.json": {
+      "hash": "eb5a23923c6b37ef4af2d31fb09b98aadf07b71a5877b16fb8bc7f30d2116212",
+      "last_checked": "2025-06-06T10:39:32.719302",
+      "status": "unchanged",
+      "etag": "W/\"38ed1849f7ec44339ed371d465a40040\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/loadindexesrequest/3192161-range": {
+      "hash": "eb5a23923c6b37ef4af2d31fb09b98aadf07b71a5877b16fb8bc7f30d2116212",
+      "last_checked": "2025-06-06T10:39:32.719302",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/loadindexesrequest/3192158-cancel.json": {
+      "hash": "8df521897dc7e83aba56c9f86dc0bfd75d1737fc3eb7280c1214b890a4612c8e",
+      "last_checked": "2025-06-06T10:39:33.120536",
+      "status": "unchanged",
+      "etag": "W/\"c35b2dde460c3aa3e859f5721e0150ee\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/loadindexesrequest/3192158-cancel": {
+      "hash": "8df521897dc7e83aba56c9f86dc0bfd75d1737fc3eb7280c1214b890a4612c8e",
+      "last_checked": "2025-06-06T10:39:33.120536",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/loadindexesrequest/3192159-close.json": {
+      "hash": "b5c104d49cf688b78aa8a6ed354adfc26be533ced17427163463b44dee16ad73",
+      "last_checked": "2025-06-06T10:39:33.549324",
+      "status": "unchanged",
+      "etag": "W/\"f2a4a854056c2351dd6b0beb655de93c\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/loadindexesrequest/3192159-close": {
+      "hash": "b5c104d49cf688b78aa8a6ed354adfc26be533ced17427163463b44dee16ad73",
+      "last_checked": "2025-06-06T10:39:33.549324",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/1627334-code.json": {
+      "hash": "a0bf77433809b47b7073c983dc4cbd974a0b2e954224034cfe0ce2d229c17df1",
+      "last_checked": "2025-06-06T10:39:33.975064",
+      "status": "unchanged",
+      "etag": "W/\"bf86de8afd696d4a66184ee50faa18ad\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/1627334-code": {
+      "hash": "a0bf77433809b47b7073c983dc4cbd974a0b2e954224034cfe0ce2d229c17df1",
+      "last_checked": "2025-06-06T10:39:33.975064",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/1627424-description.json": {
+      "hash": "5914a54c04f23102302dc17db926e291d870525683365f989a7495c66bf83559",
+      "last_checked": "2025-06-06T10:39:34.442126",
+      "status": "unchanged",
+      "etag": "W/\"4ce1168074713c21d124b160e1bfc4c7\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/1627424-description": {
+      "hash": "5914a54c04f23102302dc17db926e291d870525683365f989a7495c66bf83559",
+      "last_checked": "2025-06-06T10:39:34.442126",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/1627426-domain.json": {
+      "hash": "44949bf6e865a1c0e2eff23d2eaa0eec090bae9703a75ab60a0713976bde6260",
+      "last_checked": "2025-06-06T10:39:34.882271",
+      "status": "unchanged",
+      "etag": "W/\"25130b2e969fb08e69c9e0e77f49b7dc\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/1627426-domain": {
+      "hash": "44949bf6e865a1c0e2eff23d2eaa0eec090bae9703a75ab60a0713976bde6260",
+      "last_checked": "2025-06-06T10:39:34.882271",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/1627388-userinfo.json": {
+      "hash": "d86e034c7731c405b46b39b7dcb7e1a623735a688d0b24f8bcadd84e4c27c82e",
+      "last_checked": "2025-06-06T10:39:35.333877",
+      "status": "unchanged",
+      "etag": "W/\"2e5aa644592e78069b405a68f9696d0c\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/1627388-userinfo": {
+      "hash": "d86e034c7731c405b46b39b7dcb7e1a623735a688d0b24f8bcadd84e4c27c82e",
+      "last_checked": "2025-06-06T10:39:35.333877",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys.json": {
+      "hash": "fe7ddcaa8af45942cbb5dd03594f9cbfc08dc65827de314eece15238a68ac121",
+      "last_checked": "2025-06-06T10:39:35.756166",
+      "status": "unchanged",
+      "etag": "W/\"4456f281ed1bff754a846be2bac0ed7f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys": {
+      "hash": "fe7ddcaa8af45942cbb5dd03594f9cbfc08dc65827de314eece15238a68ac121",
+      "last_checked": "2025-06-06T10:39:35.756166",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/error_domains.json": {
+      "hash": "5bdf23977dc1703877d64231d3567e85c953dab5d6eec5cfd195c57fdbafaf74",
+      "last_checked": "2025-06-06T10:39:36.153460",
+      "status": "unchanged",
+      "etag": "W/\"df50277e36ea26060390238b0ca0b678\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/error_domains": {
+      "hash": "5bdf23977dc1703877d64231d3567e85c953dab5d6eec5cfd195c57fdbafaf74",
+      "last_checked": "2025-06-06T10:39:36.153460",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/nserror/2897820-code.json": {
+      "hash": "367db682ffb2db587bfa5c4d0cdcecd96efc993fa87b49845ec6a2fb2f21f85b",
+      "last_checked": "2025-06-06T10:39:36.561325",
+      "status": "unchanged",
+      "etag": "W/\"1c6a2e5455ae61f4bc5f9db6b8f71481\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/nserror/2897820-code": {
+      "hash": "367db682ffb2db587bfa5c4d0cdcecd96efc993fa87b49845ec6a2fb2f21f85b",
+      "last_checked": "2025-06-06T10:39:36.561325",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/nserror/2897831-domain.json": {
+      "hash": "6f4004e271dd6aea9b61c9fa24d5606156ac55182fd8ac6a63e80ea73da160d4",
+      "last_checked": "2025-06-06T10:39:36.934881",
+      "status": "unchanged",
+      "etag": "W/\"3d4d7f2eed46ae8cca68f2be25d6b110\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/nserror/2897831-domain": {
+      "hash": "6f4004e271dd6aea9b61c9fa24d5606156ac55182fd8ac6a63e80ea73da160d4",
+      "last_checked": "2025-06-06T10:39:36.934881",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/nserror/2897822-userinfo.json": {
+      "hash": "95710e862b967b1991745f933ceb66d16957a08155a9b601cf52f2c50f19c340",
+      "last_checked": "2025-06-06T10:39:37.362444",
+      "status": "unchanged",
+      "etag": "W/\"cbd9e46f3c165e21c57c16fed8328d99\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/nserror/2897822-userinfo": {
+      "hash": "95710e862b967b1991745f933ceb66d16957a08155a9b601cf52f2c50f19c340",
+      "last_checked": "2025-06-06T10:39:37.362444",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/nserror/2897821-underlyingerror.json": {
+      "hash": "8d419c54c2470154df09baeb5ed931764a04176b7da4fcb9b5ead16cc8cb2956",
+      "last_checked": "2025-06-06T10:39:37.723078",
+      "status": "unchanged",
+      "etag": "W/\"29a26c31d41836eeb7ab21b6ee8d1139\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/nserror/2897821-underlyingerror": {
+      "hash": "8d419c54c2470154df09baeb5ed931764a04176b7da4fcb9b5ead16cc8cb2956",
+      "last_checked": "2025-06-06T10:39:37.723078",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/nserror/2897823-description.json": {
+      "hash": "f229dfd3d4989a24507a704bcf041eea7ca75c08b84f72367da9fa818f232327",
+      "last_checked": "2025-06-06T10:39:38.143133",
+      "status": "unchanged",
+      "etag": "W/\"0b4474008062651429e8ceeee8d2ee07\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/nserror/2897823-description": {
+      "hash": "f229dfd3d4989a24507a704bcf041eea7ca75c08b84f72367da9fa818f232327",
+      "last_checked": "2025-06-06T10:39:38.143133",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/nserror/2897833-failurereason.json": {
+      "hash": "8ff68a694ae22a776e34253b7f2ed9a1b2c146260293d9089a927824d7b4760a",
+      "last_checked": "2025-06-06T10:39:38.574625",
+      "status": "unchanged",
+      "etag": "W/\"537289d89eef7de955d70f98595440cf\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/nserror/2897833-failurereason": {
+      "hash": "8ff68a694ae22a776e34253b7f2ed9a1b2c146260293d9089a927824d7b4760a",
+      "last_checked": "2025-06-06T10:39:38.574625",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/nserror/2897824-recoverysuggestion.json": {
+      "hash": "b71dce046ebd1927955b525e7fe15b378f653de0e0781a19fe23c46397f561a2",
+      "last_checked": "2025-06-06T10:39:38.947496",
+      "status": "unchanged",
+      "etag": "W/\"73e69574380edb555ef8217f4b5b0810\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/nserror/2897824-recoverysuggestion": {
+      "hash": "b71dce046ebd1927955b525e7fe15b378f653de0e0781a19fe23c46397f561a2",
+      "last_checked": "2025-06-06T10:39:38.947496",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627369-evaluatescripts.json": {
+      "hash": "a33615425ec9d96af4b559120fe1f04c405efaae81e5965df061105c607f8179",
+      "last_checked": "2025-06-06T10:39:39.329619",
+      "status": "unchanged",
+      "etag": "W/\"bc05bc6c266cef8d81dc3fa1a675e7ce\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627369-evaluatescripts": {
+      "hash": "a33615425ec9d96af4b559120fe1f04c405efaae81e5965df061105c607f8179",
+      "last_checked": "2025-06-06T10:39:39.329619",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627337-setinterval.json": {
+      "hash": "d40cbd8c3fa45faebdfe30d843d7c4aadb171d3f2b4acffd47bf8ca19ad5407e",
+      "last_checked": "2025-06-06T10:39:39.722866",
+      "status": "unchanged",
+      "etag": "W/\"84624e3917a8c5d138f0a6afdbca792d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627337-setinterval": {
+      "hash": "d40cbd8c3fa45faebdfe30d843d7c4aadb171d3f2b4acffd47bf8ca19ad5407e",
+      "last_checked": "2025-06-06T10:39:39.722866",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627411-clearinterval.json": {
+      "hash": "c76ac5df77ada01ff435af6a48aa7d7b058bc808d79d3cf424abdc58486ffbab",
+      "last_checked": "2025-06-06T10:39:40.140675",
+      "status": "unchanged",
+      "etag": "W/\"46f48becf628f41eacc152aa997a77d1\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627411-clearinterval": {
+      "hash": "c76ac5df77ada01ff435af6a48aa7d7b058bc808d79d3cf424abdc58486ffbab",
+      "last_checked": "2025-06-06T10:39:40.140675",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627349-settimeout.json": {
+      "hash": "43ccdcc17aa9b10b04ed04489658e2ebb6b77f087e18ce485bdbaa4ec4e1729a",
+      "last_checked": "2025-06-06T10:39:40.529942",
+      "status": "unchanged",
+      "etag": "W/\"28afc9ff5ec4992f36b515915cf04383\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627349-settimeout": {
+      "hash": "43ccdcc17aa9b10b04ed04489658e2ebb6b77f087e18ce485bdbaa4ec4e1729a",
+      "last_checked": "2025-06-06T10:39:40.529942",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627416-cleartimeout.json": {
+      "hash": "f6a5b6a554e0833a539a5e3c8a280eaf29b0ee547830861cb08679e50da2aea4",
+      "last_checked": "2025-06-06T10:39:40.952642",
+      "status": "unchanged",
+      "etag": "W/\"3b575d5cfed08f7e2c35843dba5e9836\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627416-cleartimeout": {
+      "hash": "f6a5b6a554e0833a539a5e3c8a280eaf29b0ee547830861cb08679e50da2aea4",
+      "last_checked": "2025-06-06T10:39:40.952642",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627445-formatdate.json": {
+      "hash": "9919e2d065ff16251ab99dc47a60af7653c9cdafa788d586ade5cebf85bdc930",
+      "last_checked": "2025-06-06T10:39:41.353126",
+      "status": "unchanged",
+      "etag": "W/\"6167943ccb93092c9e055a76e9d6e6cf\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627445-formatdate": {
+      "hash": "9919e2d065ff16251ab99dc47a60af7653c9cdafa788d586ade5cebf85bdc930",
+      "last_checked": "2025-06-06T10:39:41.353126",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627346-formatduration.json": {
+      "hash": "660829c5b96426b19fd8b7b87778a3480650bc1b915681b9d14c48e1c93b7075",
+      "last_checked": "2025-06-06T10:39:41.757801",
+      "status": "unchanged",
+      "etag": "W/\"600b8e484964c09c117a9efad648f785\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627346-formatduration": {
+      "hash": "660829c5b96426b19fd8b7b87778a3480650bc1b915681b9d14c48e1c93b7075",
+      "last_checked": "2025-06-06T10:39:41.757801",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627348-formatnumber.json": {
+      "hash": "2640b88c470fd39e2c83cd7c679ac538023d8243041ba0bc2d5e14c04583687a",
+      "last_checked": "2025-06-06T10:39:42.140555",
+      "status": "unchanged",
+      "etag": "W/\"ad3d8e075cc7dab531e124f42762b8d8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627348-formatnumber": {
+      "hash": "2640b88c470fd39e2c83cd7c679ac538023d8243041ba0bc2d5e14c04583687a",
+      "last_checked": "2025-06-06T10:39:42.140555",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627409-uuid.json": {
+      "hash": "9c2e83de219ee80144c6ee52951ceb5b55f25d6aa31525b9070dd0a95738c187",
+      "last_checked": "2025-06-06T10:39:42.544702",
+      "status": "unchanged",
+      "etag": "W/\"812d3120e7be38a99de268707b6b870f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627409-uuid": {
+      "hash": "9c2e83de219ee80144c6ee52951ceb5b55f25d6aa31525b9070dd0a95738c187",
+      "last_checked": "2025-06-06T10:39:42.544702",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627314-getactivedocument.json": {
+      "hash": "8a0853e3e3b21d4b838cb4c0ff44c03e492d8192e6970fe4ee52d3a975cb3c97",
+      "last_checked": "2025-06-06T10:39:42.905769",
+      "status": "unchanged",
+      "etag": "W/\"6e2df3633a7ff6240b7ecd99b56d3405\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627314-getactivedocument": {
+      "hash": "8a0853e3e3b21d4b838cb4c0ff44c03e492d8192e6970fe4ee52d3a975cb3c97",
+      "last_checked": "2025-06-06T10:39:42.905769",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/2123042-canopenurl.json": {
+      "hash": "c081720e85720504e4b8bd6cfae40b40ace8ad0cb3f2a6473a6cbe109de12986",
+      "last_checked": "2025-06-06T10:39:43.310622",
+      "status": "unchanged",
+      "etag": "W/\"45b539f5be57fed7ad16321d57c63c15\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/2123042-canopenurl": {
+      "hash": "c081720e85720504e4b8bd6cfae40b40ace8ad0cb3f2a6473a6cbe109de12986",
+      "last_checked": "2025-06-06T10:39:43.310622",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/1627399-openurl.json": {
+      "hash": "f2c986ed818658de95b5ed8504837bd758b8bd8ec2274ccb79dd8ab775a64b36",
+      "last_checked": "2025-06-06T10:39:43.742023",
+      "status": "unchanged",
+      "etag": "W/\"95e4341a0c8e211c48b146cbce2f8c6d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/1627399-openurl": {
+      "hash": "f2c986ed818658de95b5ed8504837bd758b8bd8ec2274ccb79dd8ab775a64b36",
+      "last_checked": "2025-06-06T10:39:43.742023",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/domexception/3192102-code.json": {
+      "hash": "b3e96dd435a73f7844f601aeec64145d489751f58358c2f8d9b47e4189d4cbd8",
+      "last_checked": "2025-06-06T10:39:44.153962",
+      "status": "unchanged",
+      "etag": "W/\"ca8b79052b8e6d3bf4f58a76b7d97441\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/domexception/3192102-code": {
+      "hash": "b3e96dd435a73f7844f601aeec64145d489751f58358c2f8d9b47e4189d4cbd8",
+      "last_checked": "2025-06-06T10:39:44.153962",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/domimplementationls/3192104-mode_asynchronous.json": {
+      "hash": "a6ca95c7c2769a2c0ed4358043f9774ef4c8a81be25f0edcef02123974d30ea0",
+      "last_checked": "2025-06-06T10:39:44.545493",
+      "status": "unchanged",
+      "etag": "W/\"0a2a9021e18496a98daa363887888986\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/domimplementationls/3192104-mode_asynchronous": {
+      "hash": "a6ca95c7c2769a2c0ed4358043f9774ef4c8a81be25f0edcef02123974d30ea0",
+      "last_checked": "2025-06-06T10:39:44.545493",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/domimplementationls/3192105-mode_synchronous.json": {
+      "hash": "ec93dc34736880d7e58d70c7cc8550f682f9d9805cc1304e6f96cd19937b0e49",
+      "last_checked": "2025-06-06T10:39:44.916853",
+      "status": "unchanged",
+      "etag": "W/\"9bafa16fd5225611a60497ac3c4880de\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/domimplementationls/3192105-mode_synchronous": {
+      "hash": "ec93dc34736880d7e58d70c7cc8550f682f9d9805cc1304e6f96cd19937b0e49",
+      "last_checked": "2025-06-06T10:39:44.916853",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/domimplementationls/3192106-createlsinput.json": {
+      "hash": "ef570155b6088f45955fcd006a1d02b2fb8a655730e8b178ff84a8fa249aca7c",
+      "last_checked": "2025-06-06T10:39:45.291849",
+      "status": "unchanged",
+      "etag": "W/\"1dc170c6c8caa36152c09ace95442305\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/domimplementationls/3192106-createlsinput": {
+      "hash": "ef570155b6088f45955fcd006a1d02b2fb8a655730e8b178ff84a8fa249aca7c",
+      "last_checked": "2025-06-06T10:39:45.291849",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/domimplementationls/3192107-createlsparser.json": {
+      "hash": "21d002dea9e8eab5a2022a4bff0f7e56ea5938127694e64b0c0407d1b556b57d",
+      "last_checked": "2025-06-06T10:39:45.673864",
+      "status": "unchanged",
+      "etag": "W/\"2de772c54a852e09b4139c8634f6bbde\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/domimplementationls/3192107-createlsparser": {
+      "hash": "21d002dea9e8eab5a2022a4bff0f7e56ea5938127694e64b0c0407d1b556b57d",
+      "last_checked": "2025-06-06T10:39:45.673864",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/domimplementationls/3192108-createlsserializer.json": {
+      "hash": "f6fe4f8ade3f5bc43c41ed2ccd25315f05966b46645935ccc11399d2d3bbe7ae",
+      "last_checked": "2025-06-06T10:39:46.037475",
+      "status": "unchanged",
+      "etag": "W/\"802a04a3eea1208ce8f3ebea2440b510\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/domimplementationls/3192108-createlsserializer": {
+      "hash": "f6fe4f8ade3f5bc43c41ed2ccd25315f05966b46645935ccc11399d2d3bbe7ae",
+      "last_checked": "2025-06-06T10:39:46.037475",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/domimplementationregistry/3192110-getdomimplementation.json": {
+      "hash": "57c8245ef8a13805c731bdb595595500b98fa02cf489edee25fc7d7b51fa28c0",
+      "last_checked": "2025-06-06T10:39:46.441723",
+      "status": "unchanged",
+      "etag": "W/\"8cd0f8f5928c96df005521e9355c3126\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/domimplementationregistry/3192110-getdomimplementation": {
+      "hash": "57c8245ef8a13805c731bdb595595500b98fa02cf489edee25fc7d7b51fa28c0",
+      "last_checked": "2025-06-06T10:39:46.441723",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/eventexception/3192142-code.json": {
+      "hash": "b3d4444c1c48f671d9f25d88755a818d32eb70faf31f9a9ac0ec961998d68bdb",
+      "last_checked": "2025-06-06T10:39:46.804250",
+      "status": "unchanged",
+      "etag": "W/\"36831ae4575fb0f7d51979dc291ee8be\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/eventexception/3192142-code": {
+      "hash": "b3d4444c1c48f671d9f25d88755a818d32eb70faf31f9a9ac0ec961998d68bdb",
+      "last_checked": "2025-06-06T10:39:46.804250",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsexception/3192144-code.json": {
+      "hash": "e6c5d71a1b3cc144b069db74d3a977e31c035c56f24162d8ec648092f1881bd7",
+      "last_checked": "2025-06-06T10:39:47.169314",
+      "status": "unchanged",
+      "etag": "W/\"d8fdd0c6e963d5fa7f447e3e2517b12d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsexception/3192144-code": {
+      "hash": "e6c5d71a1b3cc144b069db74d3a977e31c035c56f24162d8ec648092f1881bd7",
+      "last_checked": "2025-06-06T10:39:47.169314",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsinput/3192146-stringdata.json": {
+      "hash": "f5ce4906b2c0d9c88307eee9f07c8f68c56cf8c3ed241c2323aee61ef666006d",
+      "last_checked": "2025-06-06T10:39:47.557415",
+      "status": "unchanged",
+      "etag": "W/\"cadf7ab4d3d56416647a3677ec8dd1a8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsinput/3192146-stringdata": {
+      "hash": "f5ce4906b2c0d9c88307eee9f07c8f68c56cf8c3ed241c2323aee61ef666006d",
+      "last_checked": "2025-06-06T10:39:47.557415",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsparser/3192148-action_append_as_children.json": {
+      "hash": "cfcbbe10df15a02ebf208a17591dc0ecab6e315ae24c4903e5ffa85c30be3846",
+      "last_checked": "2025-06-06T10:39:47.952255",
+      "status": "unchanged",
+      "etag": "W/\"2669153f23a70a3e7621367b382b17d9\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsparser/3192148-action_append_as_children": {
+      "hash": "cfcbbe10df15a02ebf208a17591dc0ecab6e315ae24c4903e5ffa85c30be3846",
+      "last_checked": "2025-06-06T10:39:47.952255",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsparser/3192149-action_insert_after.json": {
+      "hash": "d70b5434c60a19d27af7789cf12b69f795ceeb54c9721875d4afc35a9c87296d",
+      "last_checked": "2025-06-06T10:39:48.297861",
+      "status": "unchanged",
+      "etag": "W/\"1cfc01e865ac91a217372c3c720a1a4a\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsparser/3192149-action_insert_after": {
+      "hash": "d70b5434c60a19d27af7789cf12b69f795ceeb54c9721875d4afc35a9c87296d",
+      "last_checked": "2025-06-06T10:39:48.297861",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsparser/3192150-action_insert_before.json": {
+      "hash": "326495f671e31d476b4d52c37de40afbb0d43a297e9cb7e1c99db039e05d8c6c",
+      "last_checked": "2025-06-06T10:39:48.705588",
+      "status": "unchanged",
+      "etag": "W/\"ebc17335d9b3598794a6c6208b688ee8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsparser/3192150-action_insert_before": {
+      "hash": "326495f671e31d476b4d52c37de40afbb0d43a297e9cb7e1c99db039e05d8c6c",
+      "last_checked": "2025-06-06T10:39:48.705588",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsparser/3192151-action_replace.json": {
+      "hash": "674f74b90d5c8fe9ec01710a2e464bcf1ce9d43264ee3733dbb219ce25712bd7",
+      "last_checked": "2025-06-06T10:39:49.077208",
+      "status": "unchanged",
+      "etag": "W/\"5427354a8479420ff01d6a144768a657\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsparser/3192151-action_replace": {
+      "hash": "674f74b90d5c8fe9ec01710a2e464bcf1ce9d43264ee3733dbb219ce25712bd7",
+      "last_checked": "2025-06-06T10:39:49.077208",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsparser/3192152-action_replace_children.json": {
+      "hash": "85747bcdfbf62569c29601c99f7474f669d2ce4b6cfba1ee945566387c2d6ab5",
+      "last_checked": "2025-06-06T10:39:49.462720",
+      "status": "unchanged",
+      "etag": "W/\"a6ac8036f0e3ee41425d72b3fa50a6fb\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsparser/3192152-action_replace_children": {
+      "hash": "85747bcdfbf62569c29601c99f7474f669d2ce4b6cfba1ee945566387c2d6ab5",
+      "last_checked": "2025-06-06T10:39:49.462720",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsparser/3192153-parse.json": {
+      "hash": "ca2aa69cfd65f5ff0168f2b7b7efc5168124c3d1e121651384cfc7232bdffc82",
+      "last_checked": "2025-06-06T10:39:49.831585",
+      "status": "unchanged",
+      "etag": "W/\"7ff3b0971dc65760e02c620b3d3089f3\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsparser/3192153-parse": {
+      "hash": "ca2aa69cfd65f5ff0168f2b7b7efc5168124c3d1e121651384cfc7232bdffc82",
+      "last_checked": "2025-06-06T10:39:49.831585",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsparser/3192154-parsewithcontext.json": {
+      "hash": "cf941857414d3a0ffb46b451614a91217332eb7ddaa3f0671085ad33a4f3552a",
+      "last_checked": "2025-06-06T10:39:50.236021",
+      "status": "unchanged",
+      "etag": "W/\"2ca3a66cccdaaaee25f54c82f69ed1ca\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsparser/3192154-parsewithcontext": {
+      "hash": "cf941857414d3a0ffb46b451614a91217332eb7ddaa3f0671085ad33a4f3552a",
+      "last_checked": "2025-06-06T10:39:50.236021",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/lsserializer/3192156-writetostring.json": {
+      "hash": "17be2a6b2d753c096612d3b6b56f073dc4cbee3bd50f499e12217e06cdb2febc",
+      "last_checked": "2025-06-06T10:39:50.612499",
+      "status": "unchanged",
+      "etag": "W/\"9a8d4809d6c635a8065a6ac63096e5f3\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/lsserializer/3192156-writetostring": {
+      "hash": "17be2a6b2d753c096612d3b6b56f073dc4cbee3bd50f499e12217e06cdb2febc",
+      "last_checked": "2025-06-06T10:39:50.612499",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/parsingelement/3192165-innerhtml.json": {
+      "hash": "b978dda946de724695c6ae0f0fe4cbc3010b3734720e44f8a6d6f64c7dce5b3c",
+      "last_checked": "2025-06-06T10:39:50.996261",
+      "status": "unchanged",
+      "etag": "W/\"950c98f286f7b9bbb8baad212b086bb7\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/parsingelement/3192165-innerhtml": {
+      "hash": "b978dda946de724695c6ae0f0fe4cbc3010b3734720e44f8a6d6f64c7dce5b3c",
+      "last_checked": "2025-06-06T10:39:50.996261",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/parsingelement/3192167-outerhtml.json": {
+      "hash": "783fb8ab7a4af9a1a597f9c6f10be49daec0c79fc097addba0188211b8a2982c",
+      "last_checked": "2025-06-06T10:39:51.362626",
+      "status": "unchanged",
+      "etag": "W/\"be7ab90c92ddea967e0c4957024cf4e9\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/parsingelement/3192167-outerhtml": {
+      "hash": "783fb8ab7a4af9a1a597f9c6f10be49daec0c79fc097addba0188211b8a2982c",
+      "last_checked": "2025-06-06T10:39:51.362626",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/parsingelement/3192166-insertadjacenthtml.json": {
+      "hash": "55f7d222a1ca1770223164d1d4bdac622681f46d33244a7dff832c3bdc73a4f3",
+      "last_checked": "2025-06-06T10:39:51.765349",
+      "status": "unchanged",
+      "etag": "W/\"b4f34752d510648b5a70201111a61eb1\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/parsingelement/3192166-insertadjacenthtml": {
+      "hash": "55f7d222a1ca1770223164d1d4bdac622681f46d33244a7dff832c3bdc73a4f3",
+      "last_checked": "2025-06-06T10:39:51.765349",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/viewmodellink/3192169-cancel.json": {
+      "hash": "a8f1550227f157a96216a5a838400ee19f643022759e053475ba88a87b01f2cd",
+      "last_checked": "2025-06-06T10:39:52.127396",
+      "status": "unchanged",
+      "etag": "W/\"01e61e0fcdf78551d5f3591c592500f6\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/viewmodellink/3192169-cancel": {
+      "hash": "a8f1550227f157a96216a5a838400ee19f643022759e053475ba88a87b01f2cd",
+      "last_checked": "2025-06-06T10:39:52.127396",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/viewmodellink/3192171-document.json": {
+      "hash": "d683431890079210b2b81f2ec25fd2022f6f487d6c0667a7dbf64d97e6b8252e",
+      "last_checked": "2025-06-06T10:39:52.502593",
+      "status": "unchanged",
+      "etag": "W/\"d1ed7cf3b8c718c5ab6131288d7ab42f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/viewmodellink/3192171-document": {
+      "hash": "d683431890079210b2b81f2ec25fd2022f6f487d6c0667a7dbf64d97e6b8252e",
+      "last_checked": "2025-06-06T10:39:52.502593",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/viewmodellink/3192170-close.json": {
+      "hash": "b5e1d8c002c9b6893458aa52aa2bc729ee782beb592f42d7387d3c6ab1b69d47",
+      "last_checked": "2025-06-06T10:39:52.916168",
+      "status": "unchanged",
+      "etag": "W/\"7b3dcc0c201823b667f5ad774ee6a62f\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/viewmodellink/3192170-close": {
+      "hash": "b5e1d8c002c9b6893458aa52aa2bc729ee782beb592f42d7387d3c6ab1b69d47",
+      "last_checked": "2025-06-06T10:39:52.916168",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/xpathexception/3192174-code.json": {
+      "hash": "8a7260458c5288777e9986db57331bd21d22472e04496504de6c7ffe38babd24",
+      "last_checked": "2025-06-06T10:39:53.253734",
+      "status": "unchanged",
+      "etag": "W/\"d3039c76ed80f655f13b89b66cf93897\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/xpathexception/3192174-code": {
+      "hash": "8a7260458c5288777e9986db57331bd21d22472e04496504de6c7ffe38babd24",
+      "last_checked": "2025-06-06T10:39:53.253734",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource/3192114-datasource.json": {
+      "hash": "c91e931486fee61724b9cfb7c405fe3cb1685283ee4dd12424402838c4e3a48e",
+      "last_checked": "2025-06-06T10:39:53.648512",
+      "status": "unchanged",
+      "etag": "W/\"912d135e2f8f02224161d0cbf50e7e3e\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource/3192114-datasource": {
+      "hash": "c91e931486fee61724b9cfb7c405fe3cb1685283ee4dd12424402838c4e3a48e",
+      "last_checked": "2025-06-06T10:39:53.648512",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource/3192116-insert.json": {
+      "hash": "f82a2f5be075f6e6bb95f07ee7b7efeec0e52e0a7b482ea17cee0dccb2b865d3",
+      "last_checked": "2025-06-06T10:39:54.004166",
+      "status": "unchanged",
+      "etag": "W/\"9f503502dec98628f8fdc51d809b17db\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource/3192116-insert": {
+      "hash": "f82a2f5be075f6e6bb95f07ee7b7efeec0e52e0a7b482ea17cee0dccb2b865d3",
+      "last_checked": "2025-06-06T10:39:54.004166",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource/3192115-delete.json": {
+      "hash": "abd9fc8a009df8c1d26d148f292f587a39a6c0d2c4ab813df835ee42792a73e4",
+      "last_checked": "2025-06-06T10:39:54.389376",
+      "status": "unchanged",
+      "etag": "W/\"edd55b2d240036cfecc9124726183c99\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource/3192115-delete": {
+      "hash": "abd9fc8a009df8c1d26d148f292f587a39a6c0d2c4ab813df835ee42792a73e4",
+      "last_checked": "2025-06-06T10:39:54.389376",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource/3192120-move.json": {
+      "hash": "fd58da721ce35650fb8672c2e549be8552c3e0875b698a98fd00094e64dea517",
+      "last_checked": "2025-06-06T10:39:54.768195",
+      "status": "unchanged",
+      "etag": "W/\"8ad3de1ea77f0996173532a6744ac3de\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource/3192120-move": {
+      "hash": "fd58da721ce35650fb8672c2e549be8552c3e0875b698a98fd00094e64dea517",
+      "last_checked": "2025-06-06T10:39:54.768195",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource/3192121-replace.json": {
+      "hash": "f3fd885cf03f63f9be49c9159dec1f2c7a2a9aed13cefafdad173d5a4051ee04",
+      "last_checked": "2025-06-06T10:39:55.151133",
+      "status": "unchanged",
+      "etag": "W/\"be006de852ba2cb43d1f35cfbe4e0d35\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource/3192121-replace": {
+      "hash": "f3fd885cf03f63f9be49c9159dec1f2c7a2a9aed13cefafdad173d5a4051ee04",
+      "last_checked": "2025-06-06T10:39:55.151133",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource/3192123-update.json": {
+      "hash": "fb732a4c57004ed8dd47a02929f109a0ad82c6b8bc3c4d2252f7fb33eb38e183",
+      "last_checked": "2025-06-06T10:39:55.550156",
+      "status": "unchanged",
+      "etag": "W/\"f717e9cac949ba3c4214213448b5d320\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource/3192123-update": {
+      "hash": "fb732a4c57004ed8dd47a02929f109a0ad82c6b8bc3c4d2252f7fb33eb38e183",
+      "last_checked": "2025-06-06T10:39:55.550156",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource/3192117-item.json": {
+      "hash": "6dcf79e91fb51a3874dc55d12887e8e85f5b3d071a5b5bc5b1d32321a9ed7163",
+      "last_checked": "2025-06-06T10:39:55.918086",
+      "status": "unchanged",
+      "etag": "W/\"61062485ce6b6f1b4daa8e1fa5a4a3c8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource/3192117-item": {
+      "hash": "6dcf79e91fb51a3874dc55d12887e8e85f5b3d071a5b5bc5b1d32321a9ed7163",
+      "last_checked": "2025-06-06T10:39:55.918086",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource/3192118-length.json": {
+      "hash": "6720a41d43a88b7f3dc8ab21a486344b237c8a72e04ce7a5c11e40d4f0bb4391",
+      "last_checked": "2025-06-06T10:39:56.324067",
+      "status": "unchanged",
+      "etag": "W/\"3f91f0320ef3e40635e56b97273083d3\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource/3192118-length": {
+      "hash": "6720a41d43a88b7f3dc8ab21a486344b237c8a72e04ce7a5c11e40d4f0bb4391",
+      "last_checked": "2025-06-06T10:39:56.324067",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource/3192119-loadindexes.json": {
+      "hash": "6f30c6bfdc9204244ee07174468084490d6a4e7dd140ff74af30433ddd0af4ef",
+      "last_checked": "2025-06-06T10:39:56.699331",
+      "status": "unchanged",
+      "etag": "W/\"fc9a2caca9dd6f248bccd1144de7eeb3\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource/3192119-loadindexes": {
+      "hash": "6f30c6bfdc9204244ee07174468084490d6a4e7dd140ff74af30433ddd0af4ef",
+      "last_checked": "2025-06-06T10:39:56.699331",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/datasource/datasource/3192122-segmentsize.json": {
+      "hash": "518ea7724acc0616829a8f00ae6703796b9a56119cee76fa0c85073b2dabed87",
+      "last_checked": "2025-06-06T10:39:57.065303",
+      "status": "unchanged",
+      "etag": "W/\"14926e7aefe6a908a2cf18ab0ce78254\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/datasource/datasource/3192122-segmentsize": {
+      "hash": "518ea7724acc0616829a8f00ae6703796b9a56119cee76fa0c85073b2dabed87",
+      "last_checked": "2025-06-06T10:39:57.065303",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807734-nslocalizeddesciptionkey.json": {
+      "hash": "231c95e7acbd3019b6af0cfe4c0f6c3ecfc5ff29b276675c0d2fb868f62c0bfc",
+      "last_checked": "2025-06-06T10:39:57.447156",
+      "status": "unchanged",
+      "etag": "W/\"983cb0f1f375004468c9c07b8ce05553\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807734-nslocalizeddesciptionkey": {
+      "hash": "231c95e7acbd3019b6af0cfe4c0f6c3ecfc5ff29b276675c0d2fb868f62c0bfc",
+      "last_checked": "2025-06-06T10:39:57.447156",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807742-nsfilepatherrorkey.json": {
+      "hash": "1834bee4acc96afefc22b082aac2a911e581fe9792c3b165db17d6e7cca1a6f7",
+      "last_checked": "2025-06-06T10:39:57.849209",
+      "status": "unchanged",
+      "etag": "W/\"63f89fe6410500bb4920f4979580bb34\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807742-nsfilepatherrorkey": {
+      "hash": "1834bee4acc96afefc22b082aac2a911e581fe9792c3b165db17d6e7cca1a6f7",
+      "last_checked": "2025-06-06T10:39:57.849209",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807747-nsstringencodingerrorkey.json": {
+      "hash": "dcd3c2613805173a29d2ce33f30721c963beeeab848b2dd294bdd16f9a4c0233",
+      "last_checked": "2025-06-06T10:39:58.285816",
+      "status": "unchanged",
+      "etag": "W/\"54f1062492f7f823a57764960ad5bd34\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807747-nsstringencodingerrorkey": {
+      "hash": "dcd3c2613805173a29d2ce33f30721c963beeeab848b2dd294bdd16f9a4c0233",
+      "last_checked": "2025-06-06T10:39:58.285816",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807752-nsunderlyingerrorkey.json": {
+      "hash": "a46d8ce433dba7e3dea37371f1c0cc152ea4cce97b8c39663a3e50d4507b70c0",
+      "last_checked": "2025-06-06T10:39:58.744781",
+      "status": "unchanged",
+      "etag": "W/\"2d2ee7bbb94af098ba6f746dde5b746d\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807752-nsunderlyingerrorkey": {
+      "hash": "a46d8ce433dba7e3dea37371f1c0cc152ea4cce97b8c39663a3e50d4507b70c0",
+      "last_checked": "2025-06-06T10:39:58.744781",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807757-nsurlerrorkey.json": {
+      "hash": "b6707718269537b72f430146c84530652b44c829e7a3b951cdb26687b2421695",
+      "last_checked": "2025-06-06T10:39:59.159189",
+      "status": "unchanged",
+      "etag": "W/\"9a75292b5a8f8484c09ee87887cde8b4\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807757-nsurlerrorkey": {
+      "hash": "b6707718269537b72f430146c84530652b44c829e7a3b951cdb26687b2421695",
+      "last_checked": "2025-06-06T10:39:59.159189",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807762-nslocalizedfailurereasonerrorkey.json": {
+      "hash": "8545b7531ce267a6f2d686ddb72e6b45d9af2364e7584aa97426769bf0a3bfe1",
+      "last_checked": "2025-06-06T10:39:59.531175",
+      "status": "unchanged",
+      "etag": "W/\"702be9ad270d4399d94fc6851de80636\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807762-nslocalizedfailurereasonerrorkey": {
+      "hash": "8545b7531ce267a6f2d686ddb72e6b45d9af2364e7584aa97426769bf0a3bfe1",
+      "last_checked": "2025-06-06T10:39:59.531175",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807767-nslocalizedrecoverysuggestionerr.json": {
+      "hash": "f177320e620dae9677200d1ac7ef8a8dbb7e76dca3bd6ae5ffefd2d4f6074819",
+      "last_checked": "2025-06-06T10:39:59.924844",
+      "status": "unchanged",
+      "etag": "W/\"4f76419d343319c956ce834feec996c8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807767-nslocalizedrecoverysuggestionerr": {
+      "hash": "f177320e620dae9677200d1ac7ef8a8dbb7e76dca3bd6ae5ffefd2d4f6074819",
+      "last_checked": "2025-06-06T10:39:59.924844",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807774-nslocalizedrecoveryoptionserrork.json": {
+      "hash": "6aa4e101d9f036a5a8bfe3fd04dbf096b2cef6c28c50486c3ff84e789f5457ca",
+      "last_checked": "2025-06-06T10:40:00.329157",
+      "status": "unchanged",
+      "etag": "W/\"0541f200332437a3e1c18a76b99ce101\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807774-nslocalizedrecoveryoptionserrork": {
+      "hash": "6aa4e101d9f036a5a8bfe3fd04dbf096b2cef6c28c50486c3ff84e789f5457ca",
+      "last_checked": "2025-06-06T10:40:00.329157",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807778-nsrecoveryattemptererrorkey.json": {
+      "hash": "fe2e928d37320be78ec4b455948ecfbddd0cdd1985421d7370446cbe9f3dc590",
+      "last_checked": "2025-06-06T10:40:00.767743",
+      "status": "unchanged",
+      "etag": "W/\"437b774de8584057048b4ab11a8d8867\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807778-nsrecoveryattemptererrorkey": {
+      "hash": "fe2e928d37320be78ec4b455948ecfbddd0cdd1985421d7370446cbe9f3dc590",
+      "last_checked": "2025-06-06T10:40:00.767743",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807784-nshelpanchorerrorkey.json": {
+      "hash": "671107356327b856ef22d2dc14f07558b49aff0c6c52737691f882e04a90c4b1",
+      "last_checked": "2025-06-06T10:40:01.232891",
+      "status": "unchanged",
+      "etag": "W/\"c27db6e1c3fd0f2e56eae049f6bb40fd\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807784-nshelpanchorerrorkey": {
+      "hash": "671107356327b856ef22d2dc14f07558b49aff0c6c52737691f882e04a90c4b1",
+      "last_checked": "2025-06-06T10:40:01.232891",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807787-nsurlerrorfailingurlerrorkey.json": {
+      "hash": "f75cd91c98b1ca020a1fc1bb34962207902bc37831e1d3f2500445a05577be49",
+      "last_checked": "2025-06-06T10:40:01.646518",
+      "status": "unchanged",
+      "etag": "W/\"039f09d800ccccde7bed8036cf0d2dcb\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807787-nsurlerrorfailingurlerrorkey": {
+      "hash": "f75cd91c98b1ca020a1fc1bb34962207902bc37831e1d3f2500445a05577be49",
+      "last_checked": "2025-06-06T10:40:01.646518",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807789-nsurlerrorfailingurlstringerrork.json": {
+      "hash": "c99aa399cbf8111d81476850d25a7b66a3207c0a47d025c69d1e86894ab03a64",
+      "last_checked": "2025-06-06T10:40:02.088495",
+      "status": "unchanged",
+      "etag": "W/\"96f7234f655c6d6542fa4b214a6335ec\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807789-nsurlerrorfailingurlstringerrork": {
+      "hash": "c99aa399cbf8111d81476850d25a7b66a3207c0a47d025c69d1e86894ab03a64",
+      "last_checked": "2025-06-06T10:40:02.088495",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/user_info_dictionary_keys/1807791-nsurlerrorfailingurlpeertrusterr.json": {
+      "hash": "442c5591480e0f8fca62fe83f0ea7087d434f6e73e6220fd70d0c4a98e05e0d3",
+      "last_checked": "2025-06-06T10:40:02.599546",
+      "status": "unchanged",
+      "etag": "W/\"8a1e42a89d752f14ef6a00e77c9c3d85\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/user_info_dictionary_keys/1807791-nsurlerrorfailingurlpeertrusterr": {
+      "hash": "442c5591480e0f8fca62fe83f0ea7087d434f6e73e6220fd70d0c4a98e05e0d3",
+      "last_checked": "2025-06-06T10:40:02.599546",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/error_domains/1807794-nsposixerrordomain.json": {
+      "hash": "04f4b3e9524c31ce9862f5205b58a173d88e2ef9f3753c76d3324780ba9fc3d2",
+      "last_checked": "2025-06-06T10:40:03.013957",
+      "status": "unchanged",
+      "etag": "W/\"08595cf45ce90378adca2bf9ae4d6d14\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/error_domains/1807794-nsposixerrordomain": {
+      "hash": "04f4b3e9524c31ce9862f5205b58a173d88e2ef9f3753c76d3324780ba9fc3d2",
+      "last_checked": "2025-06-06T10:40:03.013957",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/error_domains/1807796-nsosstatuserrordomain.json": {
+      "hash": "2c5ffb24aa30024418209e7491794362574e3830a1d9be4c05909494602f0109",
+      "last_checked": "2025-06-06T10:40:03.457099",
+      "status": "unchanged",
+      "etag": "W/\"d53863e5006a7dfa845aef0b71f871c8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/error_domains/1807796-nsosstatuserrordomain": {
+      "hash": "2c5ffb24aa30024418209e7491794362574e3830a1d9be4c05909494602f0109",
+      "last_checked": "2025-06-06T10:40:03.457099",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/tverror/error_domains/1807799-nsmacherrordomain.json": {
+      "hash": "eb06c4f4e4efb70468112250a1599bff7d0d75129cea5c6a5448a948e1e9a71e",
+      "last_checked": "2025-06-06T10:40:03.864878",
+      "status": "unchanged",
+      "etag": "W/\"ffd209ac545e208f8b27b9af6eb9dcd3\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/tverror/error_domains/1807799-nsmacherrordomain": {
+      "hash": "eb06c4f4e4efb70468112250a1599bff7d0d75129cea5c6a5448a948e1e9a71e",
+      "last_checked": "2025-06-06T10:40:03.864878",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/api-1627428-shouldhandlestatechange": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:40:57.542575",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/api-1627428-shouldhandlestatechange.json": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:40:57.542575",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/mediaitem/1627413-highlightgroups.json": {
+      "hash": "f384682427613cbdabf26e9b451352e7fece68d762020a45462c2888474ff9a4",
+      "last_checked": "2025-06-06T20:48:24.778062",
+      "status": "unchanged",
+      "etag": "W/\"f84d4c13d24300c55bb105c427fba84b\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/mediaitem/1627413-highlightgroups": {
+      "hash": "f384682427613cbdabf26e9b451352e7fece68d762020a45462c2888474ff9a4",
+      "last_checked": "2025-06-06T20:48:24.778062",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tvmljs/player/1627428-shouldhandlestatechange.json": {
+      "hash": "bde610179a33a7c1e1756b7079e93ef33b118deac1514bfd00207b19fc4a5dee",
+      "last_checked": "2025-06-06T20:48:25.311019",
+      "status": "unchanged",
+      "etag": "W/\"86ba2baccb19980dd7293e97e9a9d2f8\""
+    },
+    "https://developer.apple.com/documentation/tvmljs/player/1627428-shouldhandlestatechange": {
+      "hash": "bde610179a33a7c1e1756b7079e93ef33b118deac1514bfd00207b19fc4a5dee",
+      "last_checked": "2025-06-06T20:48:25.311019",
+      "status": "unchanged"
+    }
+  }
+}

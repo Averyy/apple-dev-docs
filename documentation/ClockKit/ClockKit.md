@@ -15,8 +15,6 @@ Display app-specific data on the clock face.
 
 > ❗ **Important**:  ClockKit-based complications are deprecated in watchOS 10 and later. Use [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit) to create complications. For more information, see [`Migrating to WidgetKit`](clkcomplicationdatasource#Migrating-to-WidgetKit.md).
 
- ClockKit-based complications are deprecated in watchOS 10 and later. Use [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit) to create complications. For more information, see [`Migrating to WidgetKit`](clkcomplicationdatasource#Migrating-to-WidgetKit.md).
-
 Use the ClockKit framework to implement complications for your app.  are small interface elements that appear on a watch face and provide quick access to data that people frequently use. Your app defines complications using timeline entries that provide a template for the complication’s appearance and the date ClockKit displays it. The system updates the appearance of your complication based on the timeline.
 
 ClockKit defines the size and placement of the complications on each watch face. The following image depicts the layout of the Modular watch face, which has space for five different complications: one large and four small.

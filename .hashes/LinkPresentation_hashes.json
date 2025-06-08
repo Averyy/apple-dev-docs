@@ -1,0 +1,444 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T13:10:32.956551",
+    "total_pages": 79,
+    "etags_collected": "2025-06-07T13:10:32.956562"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/LinkPresentation.json": {
+      "hash": "5e151867da7cc0d090fe77eb4b0e712dc108825118a558c70624c3079ee9070e",
+      "last_checked": "2025-06-06T02:40:45.474450",
+      "status": "new",
+      "etag": "W/\"f726e69e3aabc62d7e34237f2f3a5dbc\""
+    },
+    "https://developer.apple.com/documentation/LinkPresentation": {
+      "hash": "94ed274accc8016718b2e216e2418b6458304879eb3569bd92892c16eff1e3fe",
+      "last_checked": "2025-06-06T02:40:45.474610",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation.json": {
+      "hash": "94ed274accc8016718b2e216e2418b6458304879eb3569bd92892c16eff1e3fe",
+      "last_checked": "2025-06-06T02:40:45.474610",
+      "status": "unchanged",
+      "etag": "W/\"f726e69e3aabc62d7e34237f2f3a5dbc\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lpmetadataprovider.json": {
+      "hash": "edb39d471b1ac1a85e2a77c046493149f5ee0a1d0fc896fb9024c0e35f256911",
+      "last_checked": "2025-06-06T19:37:17.774512",
+      "status": "unchanged",
+      "etag": "W/\"2ee12845e1f98786fb6e00141ae2f76e\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lpmetadataprovider": {
+      "hash": "a37cfa28b4e611e1830ef2c17f38e07a40f5e143392b8423ff17527633fe82fb",
+      "last_checked": "2025-06-06T02:40:46.290571",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkmetadata.json": {
+      "hash": "bd40675d1d49357dfc81d396c155139170b9c16c7b6a059a7603f5054520d51c",
+      "last_checked": "2025-06-06T02:40:46.715728",
+      "status": "unchanged",
+      "etag": "W/\"98c9107690f94abf50eaea704033694d\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkmetadata": {
+      "hash": "bd40675d1d49357dfc81d396c155139170b9c16c7b6a059a7603f5054520d51c",
+      "last_checked": "2025-06-06T02:40:46.715728",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkview.json": {
+      "hash": "3767aedf05f6bc950a33af89f3bf82d14c911d1e9df03c4f911f4720159ede44",
+      "last_checked": "2025-06-06T02:40:47.135982",
+      "status": "unchanged",
+      "etag": "W/\"88687b7fc329a01230f4d99819bf5b47\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkview": {
+      "hash": "3767aedf05f6bc950a33af89f3bf82d14c911d1e9df03c4f911f4720159ede44",
+      "last_checked": "2025-06-06T02:40:47.135982",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/errors.json": {
+      "hash": "cc235696f63b566f02dad7e4480e2b4a9bd1d2bdab5af2e126784e0885d5b2c8",
+      "last_checked": "2025-06-06T02:40:47.519422",
+      "status": "unchanged",
+      "etag": "W/\"c8dcf8eb098e51c3cbd5ac20d58e5c5e\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/errors": {
+      "hash": "cc235696f63b566f02dad7e4480e2b4a9bd1d2bdab5af2e126784e0885d5b2c8",
+      "last_checked": "2025-06-06T02:40:47.519422",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/macros.json": {
+      "hash": "abad8d56e7e9b11af9820d4c490b8262092e2570e42d6d131806e417176660c3",
+      "last_checked": "2025-06-06T02:40:47.899253",
+      "status": "unchanged",
+      "etag": "W/\"9b11275de610595a04c1c71dca17c581\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/macros": {
+      "hash": "abad8d56e7e9b11af9820d4c490b8262092e2570e42d6d131806e417176660c3",
+      "last_checked": "2025-06-06T02:40:47.899253",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lpmetadataprovider/startfetchingmetadata(for:completionhandler:)-54z5i.json": {
+      "hash": "bd6010f3600ebee26debd1bdc47506311cca52ad8989279f16a7a3e9c1b0d43d",
+      "last_checked": "2025-06-06T02:40:48.285402",
+      "status": "unchanged",
+      "etag": "W/\"10feb5dd10fac8dc22140d584285fafc\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lpmetadataprovider/startfetchingmetadata(for:completionhandler:)-54z5i": {
+      "hash": "bd6010f3600ebee26debd1bdc47506311cca52ad8989279f16a7a3e9c1b0d43d",
+      "last_checked": "2025-06-06T02:40:48.285402",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lpmetadataprovider/cancel().json": {
+      "hash": "347c0583819a8f1199fafd95ee7aef41ac6fc08cd0b475e8737ed1291f8c16cb",
+      "last_checked": "2025-06-06T02:40:48.670466",
+      "status": "unchanged",
+      "etag": "W/\"78b12626957966b90c20966c75764e25\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lpmetadataprovider/cancel()": {
+      "hash": "347c0583819a8f1199fafd95ee7aef41ac6fc08cd0b475e8737ed1291f8c16cb",
+      "last_checked": "2025-06-06T02:40:48.670466",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lpmetadataprovider/shouldfetchsubresources.json": {
+      "hash": "922cb360abf7a863eb61b8ededead19dd47732d40d2432bf99a6ff74e79a3cd4",
+      "last_checked": "2025-06-06T02:40:49.071163",
+      "status": "unchanged",
+      "etag": "W/\"001fc3753cc9ec4a4561b394bbe8cb66\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lpmetadataprovider/shouldfetchsubresources": {
+      "hash": "922cb360abf7a863eb61b8ededead19dd47732d40d2432bf99a6ff74e79a3cd4",
+      "last_checked": "2025-06-06T02:40:49.071163",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lpmetadataprovider/timeout.json": {
+      "hash": "0b4b24ff3afd6f2a83a0b70af9a0ed5be7bad0bf2f16a7a2d031de00627537cc",
+      "last_checked": "2025-06-06T02:40:49.436997",
+      "status": "unchanged",
+      "etag": "W/\"250e75a759d5952ab06ec347ee27e01c\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lpmetadataprovider/timeout": {
+      "hash": "0b4b24ff3afd6f2a83a0b70af9a0ed5be7bad0bf2f16a7a2d031de00627537cc",
+      "last_checked": "2025-06-06T02:40:49.436997",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lpmetadataprovider/startfetchingmetadata(for:completionhandler:)-9e6s8.json": {
+      "hash": "5af3c0b13488346423873aae4b88e95e2d2dbf14d18e0e5ce019af351041e38a",
+      "last_checked": "2025-06-06T02:40:49.812244",
+      "status": "unchanged",
+      "etag": "W/\"0fd93df0df9110ce41e28ba9492783bb\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lpmetadataprovider/startfetchingmetadata(for:completionhandler:)-9e6s8": {
+      "hash": "5af3c0b13488346423873aae4b88e95e2d2dbf14d18e0e5ce019af351041e38a",
+      "last_checked": "2025-06-06T02:40:49.812244",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkmetadata/url.json": {
+      "hash": "e0c1b3157cfe6e636e573ca44e61e97cf3695f3b08840c70504a27390e71efd8",
+      "last_checked": "2025-06-06T02:40:50.162155",
+      "status": "unchanged",
+      "etag": "W/\"9c8954431ac0a4ea3ee8e996edb30fdc\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkmetadata/url": {
+      "hash": "e0c1b3157cfe6e636e573ca44e61e97cf3695f3b08840c70504a27390e71efd8",
+      "last_checked": "2025-06-06T02:40:50.162155",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkmetadata/originalurl.json": {
+      "hash": "4bd5f7ed89fb3bb495a67aa26686b6b967b72188d76eff5a9b22407808457f73",
+      "last_checked": "2025-06-06T02:40:50.493152",
+      "status": "unchanged",
+      "etag": "W/\"69c3776ab01e87efe3532896e6e1d8fc\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkmetadata/originalurl": {
+      "hash": "4bd5f7ed89fb3bb495a67aa26686b6b967b72188d76eff5a9b22407808457f73",
+      "last_checked": "2025-06-06T02:40:50.493152",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkmetadata/title.json": {
+      "hash": "9b9a12e594f57c6aa6c9f94074a4511fb65936bc86de09c5b67bbc3fd90fa5bf",
+      "last_checked": "2025-06-06T02:40:50.864164",
+      "status": "unchanged",
+      "etag": "W/\"f22b7dc8738ca3901d15505b077b147b\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkmetadata/title": {
+      "hash": "9b9a12e594f57c6aa6c9f94074a4511fb65936bc86de09c5b67bbc3fd90fa5bf",
+      "last_checked": "2025-06-06T02:40:50.864164",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkmetadata/iconprovider.json": {
+      "hash": "edf54edeaf3be045456fc259bb04237fe938fa9897e1a7371b48c398b61a41c7",
+      "last_checked": "2025-06-06T02:40:51.588194",
+      "status": "unchanged",
+      "etag": "W/\"52b3c65dec259f67ec5db1315c6a5408\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkmetadata/iconprovider": {
+      "hash": "edf54edeaf3be045456fc259bb04237fe938fa9897e1a7371b48c398b61a41c7",
+      "last_checked": "2025-06-06T02:40:51.588194",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkmetadata/imageprovider.json": {
+      "hash": "a75b0fb82d142fb5371af291a87896a6fc24034cae8b12526f7da0076de77c61",
+      "last_checked": "2025-06-06T02:40:51.924621",
+      "status": "unchanged",
+      "etag": "W/\"9280e75d764687ca5ca4d9f9097a9b94\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkmetadata/imageprovider": {
+      "hash": "a75b0fb82d142fb5371af291a87896a6fc24034cae8b12526f7da0076de77c61",
+      "last_checked": "2025-06-06T02:40:51.924621",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkmetadata/remotevideourl.json": {
+      "hash": "890b83fbbe2927c933ee7fe8b692a031596084eb4b7ec0e037d75f8536aaba25",
+      "last_checked": "2025-06-06T02:40:52.323759",
+      "status": "unchanged",
+      "etag": "W/\"108374e0d4c24327c0c5eb96c8d85e2d\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkmetadata/remotevideourl": {
+      "hash": "890b83fbbe2927c933ee7fe8b692a031596084eb4b7ec0e037d75f8536aaba25",
+      "last_checked": "2025-06-06T02:40:52.323759",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkmetadata/videoprovider.json": {
+      "hash": "3212babbdfd9041385f15819c456c4172813225a15347517f9c6136cfc03d92b",
+      "last_checked": "2025-06-06T02:40:52.663971",
+      "status": "unchanged",
+      "etag": "W/\"09d3cfb1f1a3c0b4ebf0760c478a496e\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkmetadata/videoprovider": {
+      "hash": "3212babbdfd9041385f15819c456c4172813225a15347517f9c6136cfc03d92b",
+      "last_checked": "2025-06-06T02:40:52.663971",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkview/init(metadata:).json": {
+      "hash": "2b962cf162f1a8a3bd402b432f316aba9d586a334e3fde4007a813c70e87c345",
+      "last_checked": "2025-06-06T02:40:53.055332",
+      "status": "unchanged",
+      "etag": "W/\"8a61df2cd81b14ce789da8b09870c63c\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkview/init(metadata:)": {
+      "hash": "2b962cf162f1a8a3bd402b432f316aba9d586a334e3fde4007a813c70e87c345",
+      "last_checked": "2025-06-06T02:40:53.055332",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkview/init(url:).json": {
+      "hash": "2a4ded48af80c106f70f017ddbff8015e8c1abe0e79e189311bba035adbf86fe",
+      "last_checked": "2025-06-06T02:40:53.410607",
+      "status": "unchanged",
+      "etag": "W/\"c8f75673ad9563774d7ca94a6ce37463\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkview/init(url:)": {
+      "hash": "2a4ded48af80c106f70f017ddbff8015e8c1abe0e79e189311bba035adbf86fe",
+      "last_checked": "2025-06-06T02:40:53.410607",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lplinkview/metadata.json": {
+      "hash": "e977351449e6e7749da829f38ec19da3eab0cfb365044c671df9c79e79eac668",
+      "last_checked": "2025-06-06T02:40:53.756030",
+      "status": "unchanged",
+      "etag": "W/\"b9220f9ad969f19ed1fdf4ac44261711\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lplinkview/metadata": {
+      "hash": "e977351449e6e7749da829f38ec19da3eab0cfb365044c671df9c79e79eac668",
+      "last_checked": "2025-06-06T02:40:53.756030",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror.json": {
+      "hash": "abc812f2d2c97d046e91150bdfaf823e577ec63285af4b67cf8fe2421fe1193b",
+      "last_checked": "2025-06-06T02:40:54.135049",
+      "status": "unchanged",
+      "etag": "W/\"f5bcc314b4d73f61803bd65d1c4d23bd\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror": {
+      "hash": "abc812f2d2c97d046e91150bdfaf823e577ec63285af4b67cf8fe2421fe1193b",
+      "last_checked": "2025-06-06T02:40:54.135049",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/code.json": {
+      "hash": "a8e181b7f84b1fa65836b0499b7f5e50ce786a21e919340a10d78dd5ee7da11b",
+      "last_checked": "2025-06-06T02:40:54.522280",
+      "status": "unchanged",
+      "etag": "W/\"6fb71a48121692583a9ad58d2e3ec151\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/code": {
+      "hash": "a8e181b7f84b1fa65836b0499b7f5e50ce786a21e919340a10d78dd5ee7da11b",
+      "last_checked": "2025-06-06T02:40:54.522280",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperrordomain.json": {
+      "hash": "04f460315a09a61487f0cb848110ce4afea19070811c9b8c0a77b28a059df9f3",
+      "last_checked": "2025-06-06T02:40:54.881733",
+      "status": "unchanged",
+      "etag": "W/\"7f8752b13716d2db5b71e39c45ae6767\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperrordomain": {
+      "hash": "04f460315a09a61487f0cb848110ce4afea19070811c9b8c0a77b28a059df9f3",
+      "last_checked": "2025-06-06T02:40:54.881733",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/errorcode.json": {
+      "hash": "ead81945d76bce5299611c90f48a85ee13ea05daccfd6aed0e3802c74562cfdf",
+      "last_checked": "2025-06-06T02:40:55.290681",
+      "status": "unchanged",
+      "etag": "W/\"167e1e229d08e8ae79001437e0654fc3\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/errorcode": {
+      "hash": "ead81945d76bce5299611c90f48a85ee13ea05daccfd6aed0e3802c74562cfdf",
+      "last_checked": "2025-06-06T02:40:55.290681",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/erroruserinfo.json": {
+      "hash": "b71786030cffdb89749c41e56c93222dc91a47ec51d38c737a5bbf987b4d830b",
+      "last_checked": "2025-06-06T02:40:55.687373",
+      "status": "unchanged",
+      "etag": "W/\"25fee26649dfbfeb2859ab49ff97960e\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/erroruserinfo": {
+      "hash": "b71786030cffdb89749c41e56c93222dc91a47ec51d38c737a5bbf987b4d830b",
+      "last_checked": "2025-06-06T02:40:55.687373",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/errordomain.json": {
+      "hash": "05c961bf97da73c7ae31fc7449dea5fbffb546f3445e2f8534a8f5ca3d448772",
+      "last_checked": "2025-06-06T02:40:56.055003",
+      "status": "unchanged",
+      "etag": "W/\"5284cadee4b0c8b9589976dfb2c368a3\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/errordomain": {
+      "hash": "05c961bf97da73c7ae31fc7449dea5fbffb546f3445e2f8534a8f5ca3d448772",
+      "last_checked": "2025-06-06T02:40:56.055003",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/metadatafetchcancelled.json": {
+      "hash": "acc6f6f4946c76912e086e133100a7d24fd75dc9ce7a535f55f3bb3089098438",
+      "last_checked": "2025-06-06T02:40:56.450734",
+      "status": "unchanged",
+      "etag": "W/\"454afc5c463e69db6f06c47f74fe012a\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/metadatafetchcancelled": {
+      "hash": "acc6f6f4946c76912e086e133100a7d24fd75dc9ce7a535f55f3bb3089098438",
+      "last_checked": "2025-06-06T02:40:56.450734",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/metadatafetchfailed.json": {
+      "hash": "61c82994435ba930e93af883dab45349f4080ba008929677273b3e2ac8d15116",
+      "last_checked": "2025-06-06T02:40:56.858644",
+      "status": "unchanged",
+      "etag": "W/\"09faadd863c4e496a9ae0b0a256d6949\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/metadatafetchfailed": {
+      "hash": "61c82994435ba930e93af883dab45349f4080ba008929677273b3e2ac8d15116",
+      "last_checked": "2025-06-06T02:40:56.858644",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/metadatafetchtimedout.json": {
+      "hash": "42cfe37de83efb6e6fcf7b8089744e5a059f9cda32fdf3fe69136bc0f5a6d8cb",
+      "last_checked": "2025-06-06T02:40:57.258349",
+      "status": "unchanged",
+      "etag": "W/\"0c50d16b5d400b2e5c17aaecde2c4003\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/metadatafetchtimedout": {
+      "hash": "42cfe37de83efb6e6fcf7b8089744e5a059f9cda32fdf3fe69136bc0f5a6d8cb",
+      "last_checked": "2025-06-06T02:40:57.258349",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/unknown.json": {
+      "hash": "a4b2e41495d3f25f0d7cee65b4d35744e14d8d0537652398aca7cb486d201b62",
+      "last_checked": "2025-06-06T02:40:57.630573",
+      "status": "unchanged",
+      "etag": "W/\"2631e0b20eef1e263df1cc7ddefd4d4a\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/unknown": {
+      "hash": "a4b2e41495d3f25f0d7cee65b4d35744e14d8d0537652398aca7cb486d201b62",
+      "last_checked": "2025-06-06T02:40:57.630573",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/metadatafetchnotallowed.json": {
+      "hash": "2389c9160f5ecef2a027ad3cd71968de87d717cd8517a7f1c3cda8606e888c20",
+      "last_checked": "2025-06-06T02:40:57.993226",
+      "status": "unchanged",
+      "etag": "W/\"d0801283117106ccf4ea6db77b9435a8\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/metadatafetchnotallowed": {
+      "hash": "2389c9160f5ecef2a027ad3cd71968de87d717cd8517a7f1c3cda8606e888c20",
+      "last_checked": "2025-06-06T02:40:57.993226",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/code/metadatafetchcancelled.json": {
+      "hash": "aa3caaa06240055658d5f973c088882ebf34a3de45e531b1f53dd54e4d393b13",
+      "last_checked": "2025-06-06T02:40:58.366500",
+      "status": "unchanged",
+      "etag": "W/\"3e15c2e5fd81f09cfd0346f2a61f4e61\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/code/metadatafetchcancelled": {
+      "hash": "aa3caaa06240055658d5f973c088882ebf34a3de45e531b1f53dd54e4d393b13",
+      "last_checked": "2025-06-06T02:40:58.366500",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/code/metadatafetchfailed.json": {
+      "hash": "845b19d4001f2ff14d35a23ffd720ac6edd08bbbd5ce318d5922e5cc1e98f169",
+      "last_checked": "2025-06-06T02:40:58.713811",
+      "status": "unchanged",
+      "etag": "W/\"ab5e4dcd23afb41e27abb195c5fd39a9\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/code/metadatafetchfailed": {
+      "hash": "845b19d4001f2ff14d35a23ffd720ac6edd08bbbd5ce318d5922e5cc1e98f169",
+      "last_checked": "2025-06-06T02:40:58.713811",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/code/metadatafetchtimedout.json": {
+      "hash": "6f8a9399e4466f93d1b6742d2f27e83b6da452e415017ca0637366de0b09eebf",
+      "last_checked": "2025-06-06T02:40:59.087922",
+      "status": "unchanged",
+      "etag": "W/\"fd18c1cf128a9373f3deeeaba6c488de\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/code/metadatafetchtimedout": {
+      "hash": "6f8a9399e4466f93d1b6742d2f27e83b6da452e415017ca0637366de0b09eebf",
+      "last_checked": "2025-06-06T02:40:59.087922",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/code/unknown.json": {
+      "hash": "e42a4e3f32c45a69d1ce56a1031d458dbc43b67ab560b40b64ef42b07abae9af",
+      "last_checked": "2025-06-06T02:40:59.444434",
+      "status": "unchanged",
+      "etag": "W/\"e7d0ddd32f9376f19002e604718b45f5\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/code/unknown": {
+      "hash": "e42a4e3f32c45a69d1ce56a1031d458dbc43b67ab560b40b64ef42b07abae9af",
+      "last_checked": "2025-06-06T02:40:59.444434",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/code/metadatafetchnotallowed.json": {
+      "hash": "7cf09b0055c502cef4a24ed39838c8f8d45ae18de387b1364443a833c7db2e49",
+      "last_checked": "2025-06-06T02:40:59.805456",
+      "status": "unchanged",
+      "etag": "W/\"a0be1fc0bfba9ee87e43462b62f6cf4f\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/code/metadatafetchnotallowed": {
+      "hash": "7cf09b0055c502cef4a24ed39838c8f8d45ae18de387b1364443a833c7db2e49",
+      "last_checked": "2025-06-06T02:40:59.805456",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/linkpresentation/lperror/code/init(rawvalue:).json": {
+      "hash": "9806692b9d7d70aae40df67e8e1bfa5e09db16fde4c30694098fd26115b31de3",
+      "last_checked": "2025-06-06T02:41:00.165676",
+      "status": "unchanged",
+      "etag": "W/\"3bea1f65ecfd176a9211efd1033ebc50\""
+    },
+    "https://developer.apple.com/documentation/linkpresentation/lperror/code/init(rawvalue:)": {
+      "hash": "9806692b9d7d70aae40df67e8e1bfa5e09db16fde4c30694098fd26115b31de3",
+      "last_checked": "2025-06-06T02:41:00.165676",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/LinkPresentation/lpmetadataprovider.json": {
+      "hash": "2c0f66ff2ff532913ecc9db7cac4134a2ff11282bc7bf9b8677d74757b119bf2",
+      "last_checked": "2025-06-06T19:37:17.774368",
+      "status": "new",
+      "etag": "W/\"2ee12845e1f98786fb6e00141ae2f76e\""
+    },
+    "https://developer.apple.com/documentation/LinkPresentation/lpmetadataprovider": {
+      "hash": "edb39d471b1ac1a85e2a77c046493149f5ee0a1d0fc896fb9024c0e35f256911",
+      "last_checked": "2025-06-06T19:37:17.774512",
+      "status": "unchanged"
+    }
+  }
+}

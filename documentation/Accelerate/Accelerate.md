@@ -623,4 +623,4 @@ Although not part of the Accelerate framework, the following libraries are close
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/accelerate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Accelerate)*

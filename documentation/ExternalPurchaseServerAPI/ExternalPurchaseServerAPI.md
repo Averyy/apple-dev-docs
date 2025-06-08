@@ -49,8 +49,6 @@ When you test your app in Xcode or TestFlight, [`External Purchase`](https://dev
 
 > ❗ **Important**: External purchase tokens generated in the sandbox environment are for testing only. The sandbox tokens and any test transaction data you submit through the sandbox URLs of the External Purchase Server API are not actual transactions.
 
-External purchase tokens generated in the sandbox environment are for testing only. The sandbox tokens and any test transaction data you submit through the sandbox URLs of the External Purchase Server API are not actual transactions.
-
 ## Topics
 
 ### Essentials

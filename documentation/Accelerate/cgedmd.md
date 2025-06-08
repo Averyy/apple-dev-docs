@@ -1,0 +1,24 @@
+# cgedmd_(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)
+
+**Framework**: Accelerate  
+**Kind**: func
+
+**Availability**:
+- iOS 18.5+
+- iPadOS 18.5+
+- Mac Catalyst 18.5+
+- macOS 15.5+
+- tvOS 18.5+
+- visionOS 2.5+
+- watchOS 11.5+
+
+## Declaration
+
+```swift
+func cgedmd_(_ jobs: UnsafePointer<CChar>, _ jobz: UnsafePointer<CChar>, _ jobr: UnsafePointer<CChar>, _ jobf: UnsafePointer<CChar>, _ whtsvd: UnsafePointer<__LAPACK_int>, _ m: UnsafePointer<__LAPACK_int>, _ n: UnsafePointer<__LAPACK_int>, _ x: OpaquePointer?, _ ldx: UnsafePointer<__LAPACK_int>, _ y: OpaquePointer?, _ ldy: UnsafePointer<__LAPACK_int>, _ nrnk: UnsafePointer<__LAPACK_int>, _ tol: UnsafePointer<Float>, _ k: UnsafeMutablePointer<__LAPACK_int>, _ eigs: OpaquePointer?, _ z: OpaquePointer?, _ ldz: UnsafeMutablePointer<__LAPACK_int>, _ res: UnsafeMutablePointer<Float>?, _ b: OpaquePointer?, _ ldb: UnsafePointer<__LAPACK_int>, _ w: OpaquePointer?, _ ldw: UnsafePointer<__LAPACK_int>, _ s: OpaquePointer?, _ lds: UnsafePointer<__LAPACK_int>, _ zwork: OpaquePointer?, _ lzwork: UnsafePointer<__LAPACK_int>, _ rwork: UnsafeMutablePointer<Float>?, _ lrwork: UnsafePointer<__LAPACK_int>, _ iwork: UnsafeMutablePointer<__LAPACK_int>?, _ liwork: UnsafePointer<__LAPACK_int>, _ info: UnsafeMutablePointer<__LAPACK_int>)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/cgedmd_(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:))*

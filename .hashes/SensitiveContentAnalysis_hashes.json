@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T22:49:17.876337",
+    "total_pages": 41,
+    "etags_collected": "2025-06-07T22:49:17.876352"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/SensitiveContentAnalysis.json": {
+      "hash": "c6c06681b2555adff0354ad2d144d7b254208ed6a69e4884a80cc60601794768",
+      "last_checked": "2025-06-06T08:10:59.936338",
+      "status": "new",
+      "etag": "W/\"9c978add5f73b9bb04b49e01346618d6\""
+    },
+    "https://developer.apple.com/documentation/SensitiveContentAnalysis": {
+      "hash": "24ecd40c9a8138675a804c7323590253f8f2737f3631852275295fc124f68663",
+      "last_checked": "2025-06-06T08:10:59.937048",
+      "status": "unchanged",
+      "etag": "a08fe48d40f359237bbe96d88b35186f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis.json": {
+      "hash": "24ecd40c9a8138675a804c7323590253f8f2737f3631852275295fc124f68663",
+      "last_checked": "2025-06-06T08:10:59.937048",
+      "status": "unchanged",
+      "etag": "W/\"9c978add5f73b9bb04b49e01346618d6\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/detecting-nudity-in-media-and-providing-intervention-options.json": {
+      "hash": "794955def44a13613160e2645e050f51bd9596c6dfc1ee02e06689003c41c0ee",
+      "last_checked": "2025-06-06T19:34:54.428839",
+      "status": "unchanged",
+      "etag": "W/\"a952c6a38ee7a5e949e8b5235b74d6b6\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/detecting-nudity-in-media-and-providing-intervention-options": {
+      "hash": "1856e902a7aa5003b7eff2460c07f5a904c43cf567a589f89866006e26031991",
+      "last_checked": "2025-06-06T08:11:00.945636",
+      "status": "unchanged",
+      "etag": "aef810dda071d70e631a69f1d3133f91"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer.json": {
+      "hash": "fd84e2db744b4c2d538fb45153d038e61725338b6f0e7a82259bbfe991879cc2",
+      "last_checked": "2025-06-06T08:11:01.464398",
+      "status": "unchanged",
+      "etag": "W/\"706945d414125e1f30209850b8e40f90\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalyzer": {
+      "hash": "fd84e2db744b4c2d538fb45153d038e61725338b6f0e7a82259bbfe991879cc2",
+      "last_checked": "2025-06-06T08:11:01.464398",
+      "status": "unchanged",
+      "etag": "a3ec1599bae1ee52701924d46b4292aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy.json": {
+      "hash": "5a264567f9aa390bf40631956714bcb304e8ccafdf73337d25bd628aadddaac3",
+      "last_checked": "2025-06-06T08:11:01.842380",
+      "status": "unchanged",
+      "etag": "W/\"b76681c74a911eb0ff1120066f0118c9\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy": {
+      "hash": "5a264567f9aa390bf40631956714bcb304e8ccafdf73337d25bd628aadddaac3",
+      "last_checked": "2025-06-06T08:11:01.842380",
+      "status": "unchanged",
+      "etag": "5e2dc7522f6a4958d6dafe7f4b059baf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysis.json": {
+      "hash": "1f468e1b00bc63c85afcb1e7d5cc2c70ab8d95cf3e46b83a5fc2c7eec6fa6c78",
+      "last_checked": "2025-06-06T08:11:02.371834",
+      "status": "unchanged",
+      "etag": "W/\"0a6b19e392bc1ecbd3a033ce3ec4d95e\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysis": {
+      "hash": "1f468e1b00bc63c85afcb1e7d5cc2c70ab8d95cf3e46b83a5fc2c7eec6fa6c78",
+      "last_checked": "2025-06-06T08:11:02.371834",
+      "status": "unchanged",
+      "etag": "bdc6baa2e348aa8e7e6624ed0142973d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/testing-your-app-s-response-to-sensitive-media.json": {
+      "hash": "3a510d240566324495fa58b064bf51215caf68b0826afb1cdf82247ba3bdfb81",
+      "last_checked": "2025-06-06T08:11:02.927377",
+      "status": "unchanged",
+      "etag": "W/\"1d8065ffb11767c42ebe4be308020e72\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/testing-your-app-s-response-to-sensitive-media": {
+      "hash": "3a510d240566324495fa58b064bf51215caf68b0826afb1cdf82247ba3bdfb81",
+      "last_checked": "2025-06-06T08:11:02.927377",
+      "status": "unchanged",
+      "etag": "5988600ecf8388f17e280bf9572236bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/init().json": {
+      "hash": "af6e95d6ad6b8e616155f64065cd675d49ad2abd033127ffc108e26783fbbdf0",
+      "last_checked": "2025-06-06T08:11:03.457887",
+      "status": "unchanged",
+      "etag": "W/\"e39bec7eb7cbc85f90209344a91dd4dd\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalyzer/init()": {
+      "hash": "af6e95d6ad6b8e616155f64065cd675d49ad2abd033127ffc108e26783fbbdf0",
+      "last_checked": "2025-06-06T08:11:03.457887",
+      "status": "unchanged",
+      "etag": "ca7ec6091170cd3f4c456441255d3c50"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/analysispolicy.json": {
+      "hash": "9722c3abc2c71a0020f16558fe6aaee7f64d052c9447bb9f2bbfe620cb950f4b",
+      "last_checked": "2025-06-06T08:11:03.842890",
+      "status": "unchanged",
+      "etag": "W/\"e225a02679f056a6395252cd2b6b7947\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalyzer/analysispolicy": {
+      "hash": "9722c3abc2c71a0020f16558fe6aaee7f64d052c9447bb9f2bbfe620cb950f4b",
+      "last_checked": "2025-06-06T08:11:03.842890",
+      "status": "unchanged",
+      "etag": "e6386a66cf742bca156f6840a3dd5495"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/analyzeimage(_:completionhandler:).json": {
+      "hash": "8913620a1c754bc92ca520ce7cc2063b86dcae782f24462f424b83dd29785905",
+      "last_checked": "2025-06-06T08:11:04.266958",
+      "status": "unchanged",
+      "etag": "W/\"1aed3d4ddeaf7a7aaad32e28d44fa61d\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalyzer/analyzeimage(_:completionhandler:)": {
+      "hash": "8913620a1c754bc92ca520ce7cc2063b86dcae782f24462f424b83dd29785905",
+      "last_checked": "2025-06-06T08:11:04.266958",
+      "status": "unchanged",
+      "etag": "72bf6de785d0c5977999002148b3883e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/analyzeimage(at:completionhandler:).json": {
+      "hash": "8f506b6538c3b7414cec2efde58461eca979a75e0fd98a7fff58ddad16f5d1ff",
+      "last_checked": "2025-06-06T08:11:04.679999",
+      "status": "unchanged",
+      "etag": "W/\"98fd5bf1bf5efd76b5155e8cb53b6be3\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalyzer/analyzeimage(at:completionhandler:)": {
+      "hash": "8f506b6538c3b7414cec2efde58461eca979a75e0fd98a7fff58ddad16f5d1ff",
+      "last_checked": "2025-06-06T08:11:04.679999",
+      "status": "unchanged",
+      "etag": "6c5a5a8d3dcaf2c19772f9153641ed66"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysis(forfileat:).json": {
+      "hash": "b6b839fc77d275edbe0786a1b72e95c204688945b4915217ad80537fd41d66f8",
+      "last_checked": "2025-06-06T08:11:05.171732",
+      "status": "unchanged",
+      "etag": "W/\"5424793bdd7df67968a74bcda7237adf\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysis(forfileat:)": {
+      "hash": "b6b839fc77d275edbe0786a1b72e95c204688945b4915217ad80537fd41d66f8",
+      "last_checked": "2025-06-06T08:11:05.171732",
+      "status": "unchanged",
+      "etag": "47be068b18b50499bfc5ca510040fd47"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysishandler.json": {
+      "hash": "5d2efdb81f24eecc8b30e94f25e20e3a037c6bfe25d537aedfeff5e0006821a5",
+      "last_checked": "2025-06-06T08:11:05.588277",
+      "status": "unchanged",
+      "etag": "W/\"9681707fbb6013149584e2c95bfed0d5\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysishandler": {
+      "hash": "5d2efdb81f24eecc8b30e94f25e20e3a037c6bfe25d537aedfeff5e0006821a5",
+      "last_checked": "2025-06-06T08:11:05.588277",
+      "status": "unchanged",
+      "etag": "bc828070f0ea4790c3e76382d72c129d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/disabled.json": {
+      "hash": "52368e1a6c6c3d1821e8ea10f8d49276c7a244d079479121ba6c8c0319148fa0",
+      "last_checked": "2025-06-06T08:11:06.048108",
+      "status": "unchanged",
+      "etag": "W/\"3b2f1c543e8958d0f0e77ee42716a686\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/disabled": {
+      "hash": "52368e1a6c6c3d1821e8ea10f8d49276c7a244d079479121ba6c8c0319148fa0",
+      "last_checked": "2025-06-06T08:11:06.048108",
+      "status": "unchanged",
+      "etag": "00e0889ee3a3666d0c0a393f1f5e4fe2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/simpleinterventions.json": {
+      "hash": "de8e0322b6d79094ddb8671ed96aa1235ef42addd0702499054f5586eb6ca419",
+      "last_checked": "2025-06-06T08:11:06.565403",
+      "status": "unchanged",
+      "etag": "W/\"e8da96e78044631eb15f547c0facc40b\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/simpleinterventions": {
+      "hash": "de8e0322b6d79094ddb8671ed96aa1235ef42addd0702499054f5586eb6ca419",
+      "last_checked": "2025-06-06T08:11:06.565403",
+      "status": "unchanged",
+      "etag": "e11625216b3228710533d74383e78996"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/descriptiveinterventions.json": {
+      "hash": "8a64f4a6ab6f510e621399bc82366d0d51f49a1f737863860d59317f15541913",
+      "last_checked": "2025-06-06T08:11:06.980887",
+      "status": "unchanged",
+      "etag": "W/\"fb45a7b1d1e2fccbdc4a0a255b5f91ac\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/descriptiveinterventions": {
+      "hash": "8a64f4a6ab6f510e621399bc82366d0d51f49a1f737863860d59317f15541913",
+      "last_checked": "2025-06-06T08:11:06.980887",
+      "status": "unchanged",
+      "etag": "060fc5835e2b84edc0324db78028e1d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/init(rawvalue:).json": {
+      "hash": "dc615d9bb14e7d1fdfbc41a83004d2f305640111b7a2b072c2d8ed8839f3706d",
+      "last_checked": "2025-06-06T08:11:07.443746",
+      "status": "unchanged",
+      "etag": "W/\"27dea7adc81560ce3a2ba87db999ea3d\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysispolicy/init(rawvalue:)": {
+      "hash": "dc615d9bb14e7d1fdfbc41a83004d2f305640111b7a2b072c2d8ed8839f3706d",
+      "last_checked": "2025-06-06T08:11:07.443746",
+      "status": "unchanged",
+      "etag": "2321ee72f97abe65f1cf2a9793183122"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalysis/issensitive.json": {
+      "hash": "916200f042ae77255a85d79e07cb10f9052967aaf7cb3c07c6232f666b5df702",
+      "last_checked": "2025-06-06T08:11:07.960097",
+      "status": "unchanged",
+      "etag": "W/\"2a8183367c78c149d598671552102f94\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysis/issensitive": {
+      "hash": "916200f042ae77255a85d79e07cb10f9052967aaf7cb3c07c6232f666b5df702",
+      "last_checked": "2025-06-06T08:11:07.960097",
+      "status": "unchanged",
+      "etag": "2bdc9bcf0282e63a8ab49511168550b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysishandler/progress.json": {
+      "hash": "8ae969c20dcb59bfe1c4d46ba0b648a054464e0ed3bd1a69f3590c2dcebcbf25",
+      "last_checked": "2025-06-06T08:11:08.405974",
+      "status": "unchanged",
+      "etag": "W/\"93c782c6fbd45213e445856fad586c49\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysishandler/progress": {
+      "hash": "8ae969c20dcb59bfe1c4d46ba0b648a054464e0ed3bd1a69f3590c2dcebcbf25",
+      "last_checked": "2025-06-06T08:11:08.405974",
+      "status": "unchanged",
+      "etag": "01246ae7d88cd45de05c2560cbb03845"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysishandler/hassensitivecontent().json": {
+      "hash": "6f2f8743e4045d2285c9271a3e16e77b65daa3a1b2dd78a5932dc72cce10d4fa",
+      "last_checked": "2025-06-06T08:11:08.807222",
+      "status": "unchanged",
+      "etag": "W/\"d0068fefe4577d451358e74d7989030c\""
+    },
+    "https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalyzer/videoanalysishandler/hassensitivecontent()": {
+      "hash": "6f2f8743e4045d2285c9271a3e16e77b65daa3a1b2dd78a5932dc72cce10d4fa",
+      "last_checked": "2025-06-06T08:11:08.807222",
+      "status": "unchanged",
+      "etag": "db7eb1f1734294056a5a51d1e911a673"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/SensitiveContentAnalysis/detecting-nudity-in-media-and-providing-intervention-options.json": {
+      "hash": "f3eda25faa13cd82066cdf07b67555580e96878fd4e9a11fa0d56663067b92f9",
+      "last_checked": "2025-06-06T19:34:54.428588",
+      "status": "new",
+      "etag": "W/\"a952c6a38ee7a5e949e8b5235b74d6b6\""
+    },
+    "https://developer.apple.com/documentation/SensitiveContentAnalysis/detecting-nudity-in-media-and-providing-intervention-options": {
+      "hash": "794955def44a13613160e2645e050f51bd9596c6dfc1ee02e06689003c41c0ee",
+      "last_checked": "2025-06-06T19:34:54.428839",
+      "status": "unchanged",
+      "etag": "3c17891493f34fa4e0407999135940ef"
+    }
+  }
+}

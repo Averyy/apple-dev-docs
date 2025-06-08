@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T17:47:17.646950",
+    "total_pages": 102,
+    "etags_collected": "2025-06-07T17:47:17.646961"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/installer_js.json": {
+      "hash": "10bcb143cd7015da7157ee08b6b62cbcd44e509d5159da247619e380c1e6bd5f",
+      "last_checked": "2025-06-06T01:03:20.458161",
+      "status": "unchanged",
+      "etag": "W/\"e5669e49290a2fcaea10e7641863cc32\""
+    },
+    "https://developer.apple.com/documentation/installer_js": {
+      "hash": "10bcb143cd7015da7157ee08b6b62cbcd44e509d5159da247619e380c1e6bd5f",
+      "last_checked": "2025-06-06T01:03:20.458161",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/applications.json": {
+      "hash": "a24ab8bd83dff4e3ea87c65a3f6bd65928d0606f63954bb3b0f3b53574da96dd",
+      "last_checked": "2025-06-06T01:03:21.343002",
+      "status": "unchanged",
+      "etag": "W/\"2a63bad3cb6aec8ccf5396d40e0464b1\""
+    },
+    "https://developer.apple.com/documentation/installer_js/applications": {
+      "hash": "a24ab8bd83dff4e3ea87c65a3f6bd65928d0606f63954bb3b0f3b53574da96dd",
+      "last_checked": "2025-06-06T01:03:21.343002",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/choice.json": {
+      "hash": "4923e903b3801d0accb70a5e8ef5f5b801ce6bec45e41c7f67baf457533c6ae6",
+      "last_checked": "2025-06-06T01:03:22.154989",
+      "status": "unchanged",
+      "etag": "W/\"3f66ee16f8cadcb0cac22d365d472946\""
+    },
+    "https://developer.apple.com/documentation/installer_js/choice": {
+      "hash": "4923e903b3801d0accb70a5e8ef5f5b801ce6bec45e41c7f67baf457533c6ae6",
+      "last_checked": "2025-06-06T01:03:22.154989",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/files.json": {
+      "hash": "8799dcbcc9c6e0d44758c01aff4405c7f42d92e4f9ab8925890a123f7843d3a2",
+      "last_checked": "2025-06-06T01:03:22.551394",
+      "status": "unchanged",
+      "etag": "W/\"aa238ea84b635e6f3af290df8bb2c405\""
+    },
+    "https://developer.apple.com/documentation/installer_js/files": {
+      "hash": "8799dcbcc9c6e0d44758c01aff4405c7f42d92e4f9ab8925890a123f7843d3a2",
+      "last_checked": "2025-06-06T01:03:22.551394",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry.json": {
+      "hash": "6e9dd2e680e2c8559508452836051ab8a6ddb792383b8a282ff5529a4d43c8bc",
+      "last_checked": "2025-06-06T01:03:23.108895",
+      "status": "unchanged",
+      "etag": "W/\"e21186d49f4d5ec73ca590b2b10419e9\""
+    },
+    "https://developer.apple.com/documentation/installer_js/ioregistry": {
+      "hash": "6e9dd2e680e2c8559508452836051ab8a6ddb792383b8a282ff5529a4d43c8bc",
+      "last_checked": "2025-06-06T01:03:23.108895",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/processinformation.json": {
+      "hash": "86424de69ef2b7fd73914388bf4dfcbbea1ebf63b61c9d8b0313e24d13b174c7",
+      "last_checked": "2025-06-06T01:03:23.552472",
+      "status": "unchanged",
+      "etag": "W/\"49e32c5c06a4f03804a9fba1f4bfbd04\""
+    },
+    "https://developer.apple.com/documentation/installer_js/processinformation": {
+      "hash": "86424de69ef2b7fd73914388bf4dfcbbea1ebf63b61c9d8b0313e24d13b174c7",
+      "last_checked": "2025-06-06T01:03:23.552472",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/result.json": {
+      "hash": "29594c6aead3d33871dfe5668e551cf079a83351343ec2b1af09b40105fcb72a",
+      "last_checked": "2025-06-06T01:03:24.112606",
+      "status": "unchanged",
+      "etag": "W/\"44c63862e99ea3471271e52a84d6e7cb\""
+    },
+    "https://developer.apple.com/documentation/installer_js/result": {
+      "hash": "29594c6aead3d33871dfe5668e551cf079a83351343ec2b1af09b40105fcb72a",
+      "last_checked": "2025-06-06T01:03:24.112606",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system.json": {
+      "hash": "74d264d07ef2f3f036d8fa8b9b77c6f156c23f06750008dc51cbcfba0bc085ab",
+      "last_checked": "2025-06-06T01:03:24.646963",
+      "status": "unchanged",
+      "etag": "W/\"637093ddd6f416c5920f1328aa290bec\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system": {
+      "hash": "74d264d07ef2f3f036d8fa8b9b77c6f156c23f06750008dc51cbcfba0bc085ab",
+      "last_checked": "2025-06-06T01:03:24.646963",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/target.json": {
+      "hash": "14e540a660ece238266ee45c49063b9f6f15003f32c2478663dc9460b929fb5c",
+      "last_checked": "2025-06-06T01:03:25.058318",
+      "status": "unchanged",
+      "etag": "W/\"38e4c1765cbe9f29a11ccc30a8e1182a\""
+    },
+    "https://developer.apple.com/documentation/installer_js/target": {
+      "hash": "14e540a660ece238266ee45c49063b9f6f15003f32c2478663dc9460b929fb5c",
+      "last_checked": "2025-06-06T01:03:25.058318",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/applications/1812189-frompid.json": {
+      "hash": "5162a8b26469588bfd55ca4c6bfdcdf521cb5c9264bd107d1e6144f855ff6720",
+      "last_checked": "2025-06-06T01:03:25.513406",
+      "status": "unchanged",
+      "etag": "W/\"2c64759d9b3e3a57b6c9e2ae2ca340e7\""
+    },
+    "https://developer.apple.com/documentation/installer_js/applications/1812189-frompid": {
+      "hash": "5162a8b26469588bfd55ca4c6bfdcdf521cb5c9264bd107d1e6144f855ff6720",
+      "last_checked": "2025-06-06T01:03:25.513406",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/applications/1812198-fromidentifier.json": {
+      "hash": "bc3082ec6642df78a4f2e490143ad8c3aaaea57e68460e71d4325b7e82d52d7c",
+      "last_checked": "2025-06-06T01:03:25.950510",
+      "status": "unchanged",
+      "etag": "W/\"282b558d15061f63da75693b0717066b\""
+    },
+    "https://developer.apple.com/documentation/installer_js/applications/1812198-fromidentifier": {
+      "hash": "bc3082ec6642df78a4f2e490143ad8c3aaaea57e68460e71d4325b7e82d52d7c",
+      "last_checked": "2025-06-06T01:03:25.950510",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/applications/1812212-all.json": {
+      "hash": "8adccb11aebe76461015dc9410c77314125022a46901e9d64a172964216dc73e",
+      "last_checked": "2025-06-06T01:03:26.396118",
+      "status": "unchanged",
+      "etag": "W/\"b4c1027a7a7841fd3772f914fdd15d51\""
+    },
+    "https://developer.apple.com/documentation/installer_js/applications/1812212-all": {
+      "hash": "8adccb11aebe76461015dc9410c77314125022a46901e9d64a172964216dc73e",
+      "last_checked": "2025-06-06T01:03:26.396118",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812159-selected.json": {
+      "hash": "6c0095bf0cdc8564df68ffc0248ae86ccfd010013ffcea21abd422a94cb7bdfc",
+      "last_checked": "2025-06-06T01:03:26.823041",
+      "status": "unchanged",
+      "etag": "W/\"c0a13de5658f052d676f8c422867b293\""
+    },
+    "https://developer.apple.com/documentation/installer_js/choice/1812159-selected": {
+      "hash": "6c0095bf0cdc8564df68ffc0248ae86ccfd010013ffcea21abd422a94cb7bdfc",
+      "last_checked": "2025-06-06T01:03:26.823041",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812168-enabled.json": {
+      "hash": "b99dd7d30ce0c43b5e3ee4d45c28b5b0a0c2e7c10a41aacfaedc7c8d1ba410f1",
+      "last_checked": "2025-06-06T01:03:27.216357",
+      "status": "unchanged",
+      "etag": "W/\"68a680ffa495b913c0664d014f62a854\""
+    },
+    "https://developer.apple.com/documentation/installer_js/choice/1812168-enabled": {
+      "hash": "b99dd7d30ce0c43b5e3ee4d45c28b5b0a0c2e7c10a41aacfaedc7c8d1ba410f1",
+      "last_checked": "2025-06-06T01:03:27.216357",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812175-visible.json": {
+      "hash": "b7dca7bd36fa13c181a9bf6fbe9dacb27b45ebe3247dea901a4c8bb761f0fb90",
+      "last_checked": "2025-06-06T01:03:27.644174",
+      "status": "unchanged",
+      "etag": "W/\"ceb32dd76dbf3bb9e6697f2f506fe0b1\""
+    },
+    "https://developer.apple.com/documentation/installer_js/choice/1812175-visible": {
+      "hash": "b7dca7bd36fa13c181a9bf6fbe9dacb27b45ebe3247dea901a4c8bb761f0fb90",
+      "last_checked": "2025-06-06T01:03:27.644174",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812183-title.json": {
+      "hash": "497c112e0bb2e0d5699f2adb58c9b03cddc030ff104d997d7f748f1e871bf5f8",
+      "last_checked": "2025-06-06T01:03:28.063382",
+      "status": "unchanged",
+      "etag": "W/\"f7aba8424a598efcd854e47cf0e2e89f\""
+    },
+    "https://developer.apple.com/documentation/installer_js/choice/1812183-title": {
+      "hash": "497c112e0bb2e0d5699f2adb58c9b03cddc030ff104d997d7f748f1e871bf5f8",
+      "last_checked": "2025-06-06T01:03:28.063382",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812191-description.json": {
+      "hash": "89bc70deff395e2767f9be869017229dbe50a3f6b71212b2300f1263de72f86d",
+      "last_checked": "2025-06-06T01:03:28.486440",
+      "status": "unchanged",
+      "etag": "W/\"aa02ffd39ea7bb4ca2363309b207bb24\""
+    },
+    "https://developer.apple.com/documentation/installer_js/choice/1812191-description": {
+      "hash": "89bc70deff395e2767f9be869017229dbe50a3f6b71212b2300f1263de72f86d",
+      "last_checked": "2025-06-06T01:03:28.486440",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812201-packages.json": {
+      "hash": "fe98ad9cd18ab30424a1e2c2bc3a386dc5875ef5bb8b7fadc906a64556ade924",
+      "last_checked": "2025-06-06T01:03:28.896623",
+      "status": "unchanged",
+      "etag": "W/\"ab9af3056df4236cb0650bd45338aee0\""
+    },
+    "https://developer.apple.com/documentation/installer_js/choice/1812201-packages": {
+      "hash": "fe98ad9cd18ab30424a1e2c2bc3a386dc5875ef5bb8b7fadc906a64556ade924",
+      "last_checked": "2025-06-06T01:03:28.896623",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/choice/1812213-packageupgradeaction.json": {
+      "hash": "3feb2c795c14788c653eec9858dd2235996ebd25cce9ff841be85a7ac9de2b1e",
+      "last_checked": "2025-06-06T01:03:29.318624",
+      "status": "unchanged",
+      "etag": "W/\"08028ebb23948a43fa1e3d59fcb688f9\""
+    },
+    "https://developer.apple.com/documentation/installer_js/choice/1812213-packageupgradeaction": {
+      "hash": "3feb2c795c14788c653eec9858dd2235996ebd25cce9ff841be85a7ac9de2b1e",
+      "last_checked": "2025-06-06T01:03:29.318624",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/files/1812173-fileexistsatpath.json": {
+      "hash": "638ab5dbecb31f9ff800bc5f20ab0b8bfc4d6d68bfc9d8b25346185ad2e6e40f",
+      "last_checked": "2025-06-06T01:03:29.769524",
+      "status": "unchanged",
+      "etag": "W/\"27fbf92863cfda1707706abf626aa9e3\""
+    },
+    "https://developer.apple.com/documentation/installer_js/files/1812173-fileexistsatpath": {
+      "hash": "638ab5dbecb31f9ff800bc5f20ab0b8bfc4d6d68bfc9d8b25346185ad2e6e40f",
+      "last_checked": "2025-06-06T01:03:29.769524",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/files/1812182-plistatpath.json": {
+      "hash": "bc3cae2e172b91b416556d12ae679155cb2146d8696d06bbd84fcb3ab6841b0f",
+      "last_checked": "2025-06-06T01:03:30.290584",
+      "status": "unchanged",
+      "etag": "W/\"3d03ab58906e11cb25198fc2e2c38945\""
+    },
+    "https://developer.apple.com/documentation/installer_js/files/1812182-plistatpath": {
+      "hash": "bc3cae2e172b91b416556d12ae679155cb2146d8696d06bbd84fcb3ab6841b0f",
+      "last_checked": "2025-06-06T01:03:30.290584",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/files/1812190-bundleatpath.json": {
+      "hash": "156a192067c199d171c52932e5046c2a1e916b99a378c2f8a1d43dff7929728f",
+      "last_checked": "2025-06-06T01:03:30.690248",
+      "status": "unchanged",
+      "etag": "W/\"29f592023330c5253ecd5657fccb39ed\""
+    },
+    "https://developer.apple.com/documentation/installer_js/files/1812190-bundleatpath": {
+      "hash": "156a192067c199d171c52932e5046c2a1e916b99a378c2f8a1d43dff7929728f",
+      "last_checked": "2025-06-06T01:03:30.690248",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry/1812172-frompath.json": {
+      "hash": "3df94d7b9d018b8e4b44f4a1f791c6e9304fb2821f2b3f97af1121164c45491d",
+      "last_checked": "2025-06-06T01:03:31.112834",
+      "status": "unchanged",
+      "etag": "W/\"0019eca0779f04afaf933f404b0d2399\""
+    },
+    "https://developer.apple.com/documentation/installer_js/ioregistry/1812172-frompath": {
+      "hash": "3df94d7b9d018b8e4b44f4a1f791c6e9304fb2821f2b3f97af1121164c45491d",
+      "last_checked": "2025-06-06T01:03:31.112834",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry/1812186-matchingclass.json": {
+      "hash": "ba6fcb1c20541e75f574888d5a178eca291d8010a48d4ca3d834cfa355537c6d",
+      "last_checked": "2025-06-06T01:03:31.540624",
+      "status": "unchanged",
+      "etag": "W/\"453ff42cdcf688241a14e0d0bfb97f86\""
+    },
+    "https://developer.apple.com/documentation/installer_js/ioregistry/1812186-matchingclass": {
+      "hash": "ba6fcb1c20541e75f574888d5a178eca291d8010a48d4ca3d834cfa355537c6d",
+      "last_checked": "2025-06-06T01:03:31.540624",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry/1812200-matchingname.json": {
+      "hash": "85cda5ae91f62638600dc60999a5b56efe173797a30793f6f49c530381fdb78e",
+      "last_checked": "2025-06-06T01:03:31.937872",
+      "status": "unchanged",
+      "etag": "W/\"bba1fab54ef7d072d01b5f32eecc4248\""
+    },
+    "https://developer.apple.com/documentation/installer_js/ioregistry/1812200-matchingname": {
+      "hash": "85cda5ae91f62638600dc60999a5b56efe173797a30793f6f49c530381fdb78e",
+      "last_checked": "2025-06-06T01:03:31.937872",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry/1812215-childrenof.json": {
+      "hash": "95b6da12d1a143d3450dcfc3704621e7ca4f48712fd5162554514b3704de0188",
+      "last_checked": "2025-06-06T01:03:32.377987",
+      "status": "unchanged",
+      "etag": "W/\"f298183d75db8374b4ec70a1baf095cd\""
+    },
+    "https://developer.apple.com/documentation/installer_js/ioregistry/1812215-childrenof": {
+      "hash": "95b6da12d1a143d3450dcfc3704621e7ca4f48712fd5162554514b3704de0188",
+      "last_checked": "2025-06-06T01:03:32.377987",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/ioregistry/1812225-parentsof.json": {
+      "hash": "00c31054c3c57925f179ea4dcc2b51be5dad598b29fdb4d15559bdc0dae68ed1",
+      "last_checked": "2025-06-06T01:03:32.821770",
+      "status": "unchanged",
+      "etag": "W/\"9e2fd1e628014aaea893b26cd75d2859\""
+    },
+    "https://developer.apple.com/documentation/installer_js/ioregistry/1812225-parentsof": {
+      "hash": "00c31054c3c57925f179ea4dcc2b51be5dad598b29fdb4d15559bdc0dae68ed1",
+      "last_checked": "2025-06-06T01:03:32.821770",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/result/1811962-message.json": {
+      "hash": "84465ea93a33687e277f55f79ce21b90ec168b0bb13bb4cd0ce993ef90814554",
+      "last_checked": "2025-06-06T01:03:33.272123",
+      "status": "unchanged",
+      "etag": "W/\"a3e0d1d1cdaffae60ad6e061301f38bc\""
+    },
+    "https://developer.apple.com/documentation/installer_js/result/1811962-message": {
+      "hash": "84465ea93a33687e277f55f79ce21b90ec168b0bb13bb4cd0ce993ef90814554",
+      "last_checked": "2025-06-06T01:03:33.272123",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/result/1811969-type.json": {
+      "hash": "6fd7a9d998a674120a431a774a1a35a091d80657b816aa6b23b365850163a502",
+      "last_checked": "2025-06-06T01:03:33.709879",
+      "status": "unchanged",
+      "etag": "W/\"3a9e3325756e79bc5bb0bd1c27511fa7\""
+    },
+    "https://developer.apple.com/documentation/installer_js/result/1811969-type": {
+      "hash": "6fd7a9d998a674120a431a774a1a35a091d80657b816aa6b23b365850163a502",
+      "last_checked": "2025-06-06T01:03:33.709879",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/result/1811977-title.json": {
+      "hash": "0fec557b1bbb67f3947bff040530b9283edcdcac16ca5e5c1ffb5a97a0ee7931",
+      "last_checked": "2025-06-06T01:03:34.128003",
+      "status": "unchanged",
+      "etag": "W/\"b036054703550f7ff244a93acda4541f\""
+    },
+    "https://developer.apple.com/documentation/installer_js/result/1811977-title": {
+      "hash": "0fec557b1bbb67f3947bff040530b9283edcdcac16ca5e5c1ffb5a97a0ee7931",
+      "last_checked": "2025-06-06T01:03:34.128003",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812308-sysctl.json": {
+      "hash": "913ff61bcab51e22d5474d2931ec03c84fc1172e882432a47755f73b4edec6aa",
+      "last_checked": "2025-06-06T01:03:34.560862",
+      "status": "unchanged",
+      "etag": "W/\"534967cf5c44e393d8ff55e2ea39aa87\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812308-sysctl": {
+      "hash": "913ff61bcab51e22d5474d2931ec03c84fc1172e882432a47755f73b4edec6aa",
+      "last_checked": "2025-06-06T01:03:34.560862",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812277-users_desktopsessioncount.json": {
+      "hash": "f2ddcb2b85238cb5e259d8aebdeaaddf170430654513ce8af1525be70cbace80",
+      "last_checked": "2025-06-06T01:03:34.991466",
+      "status": "unchanged",
+      "etag": "W/\"607dab524754340a8489a8eebdcc835d\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812277-users_desktopsessioncount": {
+      "hash": "f2ddcb2b85238cb5e259d8aebdeaaddf170430654513ce8af1525be70cbace80",
+      "last_checked": "2025-06-06T01:03:34.991466",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812284-version.json": {
+      "hash": "2cbeaee5f63afebf2e6bbb8642b8ca6161417dcae4ee7b81ec1ab5ccd6ef7eeb",
+      "last_checked": "2025-06-06T01:03:35.408668",
+      "status": "unchanged",
+      "etag": "W/\"5c0ab2426717de90e4b5b75d7e300a40\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812284-version": {
+      "hash": "2cbeaee5f63afebf2e6bbb8642b8ca6161417dcae4ee7b81ec1ab5ccd6ef7eeb",
+      "last_checked": "2025-06-06T01:03:35.408668",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812235-applications.json": {
+      "hash": "f96712f327ad6fcaca2618f10806a16d5ec07f0ecf3ff80dba4367c5633908ef",
+      "last_checked": "2025-06-06T01:03:35.819261",
+      "status": "unchanged",
+      "etag": "W/\"8ffa0fd7603e27d64f54ce9db90c772d\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812235-applications": {
+      "hash": "f96712f327ad6fcaca2618f10806a16d5ec07f0ecf3ff80dba4367c5633908ef",
+      "last_checked": "2025-06-06T01:03:35.819261",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812262-files.json": {
+      "hash": "4c58f8e6e256d014b47d6f0bddd0ed9a96962847739c55fc280ceba1d6b913ef",
+      "last_checked": "2025-06-06T01:03:36.227704",
+      "status": "unchanged",
+      "etag": "W/\"9366e60bc36b26a85040477d73b5289e\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812262-files": {
+      "hash": "4c58f8e6e256d014b47d6f0bddd0ed9a96962847739c55fc280ceba1d6b913ef",
+      "last_checked": "2025-06-06T01:03:36.227704",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812270-ioregistry.json": {
+      "hash": "afdb4a1a343bef6ae951991b8c5d661b6a2e52224f4479ffc1495407cfb74274",
+      "last_checked": "2025-06-06T01:03:36.670287",
+      "status": "unchanged",
+      "etag": "W/\"6736ee87fb819bb6048f84641e65742c\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812270-ioregistry": {
+      "hash": "afdb4a1a343bef6ae951991b8c5d661b6a2e52224f4479ffc1495407cfb74274",
+      "last_checked": "2025-06-06T01:03:36.670287",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812245-defaults.json": {
+      "hash": "9e673e146d37033bdc8699f0c0a31e29d1040444b9064b990d02af3ff3a62f4c",
+      "last_checked": "2025-06-06T01:03:37.074250",
+      "status": "unchanged",
+      "etag": "W/\"2311c1c1b2abbf65034d6ae6976cee70\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812245-defaults": {
+      "hash": "9e673e146d37033bdc8699f0c0a31e29d1040444b9064b990d02af3ff3a62f4c",
+      "last_checked": "2025-06-06T01:03:37.074250",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812294-propertiesof.json": {
+      "hash": "791adb0e0527f46cd824fc589ae6b60e135ba636b2b6ae0592d2b91c2897c4af",
+      "last_checked": "2025-06-06T01:03:37.493166",
+      "status": "unchanged",
+      "etag": "W/\"42a10a96c63ac5c2c3dbf4cef4dbf59c\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812294-propertiesof": {
+      "hash": "791adb0e0527f46cd824fc589ae6b60e135ba636b2b6ae0592d2b91c2897c4af",
+      "last_checked": "2025-06-06T01:03:37.493166",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812314-compareversions.json": {
+      "hash": "4cdd8f72923e7e6a33f0a42e1fde33d7de626b8c8104a1229a085b449bc6ecbd",
+      "last_checked": "2025-06-06T01:03:37.909084",
+      "status": "unchanged",
+      "etag": "W/\"4bb8bdea44aa6fa19b549c52bc588252\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812314-compareversions": {
+      "hash": "4cdd8f72923e7e6a33f0a42e1fde33d7de626b8c8104a1229a085b449bc6ecbd",
+      "last_checked": "2025-06-06T01:03:37.909084",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812321-localizedstring.json": {
+      "hash": "8f1d44269361f3f9d56c5306c4395136ec233ea2cde8493666a6693475dd745e",
+      "last_checked": "2025-06-06T01:03:38.337552",
+      "status": "unchanged",
+      "etag": "W/\"bf165bd33a8c935756b8294faa7b5a5c\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812321-localizedstring": {
+      "hash": "8f1d44269361f3f9d56c5306c4395136ec233ea2cde8493666a6693475dd745e",
+      "last_checked": "2025-06-06T01:03:38.337552",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812327-localizedstringwithformat.json": {
+      "hash": "e36f9c25eaaa902b2be9a4b9e0dce46691a2f4ff0c665c3b23c2aa6546f8110e",
+      "last_checked": "2025-06-06T01:03:38.770655",
+      "status": "unchanged",
+      "etag": "W/\"61cfbc244030b68c366cca51a062e0bc\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812327-localizedstringwithformat": {
+      "hash": "e36f9c25eaaa902b2be9a4b9e0dce46691a2f4ff0c665c3b23c2aa6546f8110e",
+      "last_checked": "2025-06-06T01:03:38.770655",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812348-log.json": {
+      "hash": "c94c99a33258cc98fe8ff19d71f5c6adb65bf5c8f7268d818d27bf0c6a77bb8c",
+      "last_checked": "2025-06-06T01:03:39.191414",
+      "status": "unchanged",
+      "etag": "W/\"85c8eeec707605a5a525573e1ed5c128\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812348-log": {
+      "hash": "c94c99a33258cc98fe8ff19d71f5c6adb65bf5c8f7268d818d27bf0c6a77bb8c",
+      "last_checked": "2025-06-06T01:03:39.191414",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812364-run.json": {
+      "hash": "ac721625a932a6a772369dc59441ebd411cbef41b601b419290110e875e97b79",
+      "last_checked": "2025-06-06T01:03:39.596900",
+      "status": "unchanged",
+      "etag": "W/\"8962f635cf13df67c5d92912ee5c1abe\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812364-run": {
+      "hash": "ac721625a932a6a772369dc59441ebd411cbef41b601b419290110e875e97b79",
+      "last_checked": "2025-06-06T01:03:39.596900",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812367-runonce.json": {
+      "hash": "d7971d7da15f3e9f5ea80dca184c192de215323d95f36e617dbfac00e1afaa4d",
+      "last_checked": "2025-06-06T01:03:39.999272",
+      "status": "unchanged",
+      "etag": "W/\"2efe5fa30e8826269eaba7a437514b41\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812367-runonce": {
+      "hash": "d7971d7da15f3e9f5ea80dca184c192de215323d95f36e617dbfac00e1afaa4d",
+      "last_checked": "2025-06-06T01:03:39.999272",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812304-gestalt.json": {
+      "hash": "c1c4d860e4c57f07904b704b92876cc3c43e796711bdf995d0d87e4c1c5fe96f",
+      "last_checked": "2025-06-06T01:03:40.417897",
+      "status": "unchanged",
+      "etag": "W/\"29325b0ad087a047a7d18c3fbe89df25\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812304-gestalt": {
+      "hash": "c1c4d860e4c57f07904b704b92876cc3c43e796711bdf995d0d87e4c1c5fe96f",
+      "last_checked": "2025-06-06T01:03:40.417897",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812330-localizedstandardstring.json": {
+      "hash": "5be86428c546701a745f01f8e033cd0536eabe8c1ea9fc1a70291536ded33adc",
+      "last_checked": "2025-06-06T01:03:40.834074",
+      "status": "unchanged",
+      "etag": "W/\"fe52849069683a0f73134d081a5cddd8\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812330-localizedstandardstring": {
+      "hash": "5be86428c546701a745f01f8e033cd0536eabe8c1ea9fc1a70291536ded33adc",
+      "last_checked": "2025-06-06T01:03:40.834074",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812341-localizedstandardstringwithforma.json": {
+      "hash": "65aa3d9fd2c00a3e94396d90ae8eae303ee12cd3589bb674f7a1aa7edf32dd4c",
+      "last_checked": "2025-06-06T01:03:41.245176",
+      "status": "unchanged",
+      "etag": "W/\"63a90304e3b3e3527488b4dc41ecf578\""
+    },
+    "https://developer.apple.com/documentation/installer_js/system/1812341-localizedstandardstringwithforma": {
+      "hash": "65aa3d9fd2c00a3e94396d90ae8eae303ee12cd3589bb674f7a1aa7edf32dd4c",
+      "last_checked": "2025-06-06T01:03:41.245176",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/target/1811965-mountpoint.json": {
+      "hash": "5a9b303a48035f969f9f1b3e29883eb6b34adf39eed3b93b2bf1bcc987be1552",
+      "last_checked": "2025-06-06T01:03:41.676789",
+      "status": "unchanged",
+      "etag": "W/\"41ca0ebd1be2b89093288b3ab1de7acb\""
+    },
+    "https://developer.apple.com/documentation/installer_js/target/1811965-mountpoint": {
+      "hash": "5a9b303a48035f969f9f1b3e29883eb6b34adf39eed3b93b2bf1bcc987be1552",
+      "last_checked": "2025-06-06T01:03:41.676789",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/target/1811975-availablekilobytes.json": {
+      "hash": "96170ab2541919956d01ca69e939a3f699fe71001023726ad04ad9648c3c3fef",
+      "last_checked": "2025-06-06T01:03:42.107666",
+      "status": "unchanged",
+      "etag": "W/\"2e657b9ab046a7810c60bf956351c796\""
+    },
+    "https://developer.apple.com/documentation/installer_js/target/1811975-availablekilobytes": {
+      "hash": "96170ab2541919956d01ca69e939a3f699fe71001023726ad04ad9648c3c3fef",
+      "last_checked": "2025-06-06T01:03:42.107666",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/target/1811984-systemversion.json": {
+      "hash": "037357505e4fe9d57001f5ca33dabe5433915a418681a630c407409e95bfbc48",
+      "last_checked": "2025-06-06T01:03:42.494106",
+      "status": "unchanged",
+      "etag": "W/\"a9232f62592131fdb621e4dda33ef03e\""
+    },
+    "https://developer.apple.com/documentation/installer_js/target/1811984-systemversion": {
+      "hash": "037357505e4fe9d57001f5ca33dabe5433915a418681a630c407409e95bfbc48",
+      "last_checked": "2025-06-06T01:03:42.494106",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/installer_js/target/1812064-receiptforidentifier.json": {
+      "hash": "893d5f800859afe46953f7834171610ab43ec62e3c55f148b79ebf36959e0f4f",
+      "last_checked": "2025-06-06T01:03:42.942308",
+      "status": "unchanged",
+      "etag": "W/\"dfba4baed4a87bef0ca3ea46c2d6db6c\""
+    },
+    "https://developer.apple.com/documentation/installer_js/target/1812064-receiptforidentifier": {
+      "hash": "893d5f800859afe46953f7834171610ab43ec62e3c55f148b79ebf36959e0f4f",
+      "last_checked": "2025-06-06T01:03:42.942308",
+      "status": "unchanged"
+    }
+  }
+}

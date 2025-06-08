@@ -1,0 +1,3238 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T18:34:51.839478",
+    "total_pages": 587,
+    "etags_collected": "2025-06-07T18:34:51.839488"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/NaturalLanguage.json": {
+      "hash": "cc797fb9b38941a76cfc30146f8a7cc937482bd00b84901259bc353932c1fc5d",
+      "last_checked": "2025-06-06T05:04:24.307342",
+      "status": "new",
+      "etag": "W/\"c6b497241ccfe8b3aaf851de02201a87\""
+    },
+    "https://developer.apple.com/documentation/NaturalLanguage": {
+      "hash": "d500035f08f33f95d40144170c01e1458ab6e6008a544f8aecb72602929cb174",
+      "last_checked": "2025-06-06T05:04:24.308001",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage.json": {
+      "hash": "d500035f08f33f95d40144170c01e1458ab6e6008a544f8aecb72602929cb174",
+      "last_checked": "2025-06-06T05:04:24.308001",
+      "status": "unchanged",
+      "etag": "W/\"c6b497241ccfe8b3aaf851de02201a87\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/tokenizing-natural-language-text.json": {
+      "hash": "1425fcda1d2da666eb022204b0b086d991881328657c3277f44d72039efba842",
+      "last_checked": "2025-06-06T05:04:25.136103",
+      "status": "unchanged",
+      "etag": "W/\"4204f021e6d623a650f7eaf2977d7bbc\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/tokenizing-natural-language-text": {
+      "hash": "1425fcda1d2da666eb022204b0b086d991881328657c3277f44d72039efba842",
+      "last_checked": "2025-06-06T05:04:25.136103",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer.json": {
+      "hash": "42117bc240e21831aa0cbefddd072abaf179ccf9131c2a1d1fc9f52b264fb576",
+      "last_checked": "2025-06-06T05:04:25.693285",
+      "status": "unchanged",
+      "etag": "W/\"c9f84b9811e25f17f90e0e9b531128aa\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer": {
+      "hash": "42117bc240e21831aa0cbefddd072abaf179ccf9131c2a1d1fc9f52b264fb576",
+      "last_checked": "2025-06-06T05:04:25.693285",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/identifying-the-language-in-text.json": {
+      "hash": "bd1b7f5580d427fb72653a357d0edf275d0fe9de248f97afd52cc7bc0665536e",
+      "last_checked": "2025-06-06T05:04:26.029760",
+      "status": "unchanged",
+      "etag": "W/\"23323e6200aa1b25b92cdb9b66b91e1e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/identifying-the-language-in-text": {
+      "hash": "bd1b7f5580d427fb72653a357d0edf275d0fe9de248f97afd52cc7bc0665536e",
+      "last_checked": "2025-06-06T05:04:26.029760",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer.json": {
+      "hash": "05d2b4d4dc745f2e831bcb339fca644ce88f7bdab4238abd983ee227dba0cd6e",
+      "last_checked": "2025-06-06T05:04:26.520001",
+      "status": "unchanged",
+      "etag": "W/\"11ddbdfcbfdc6a0bf1ed826a810dba91\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguagerecognizer": {
+      "hash": "05d2b4d4dc745f2e831bcb339fca644ce88f7bdab4238abd983ee227dba0cd6e",
+      "last_checked": "2025-06-06T05:04:26.520001",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage.json": {
+      "hash": "9393305d067494844459613ffaed7370ddc8774119be31c3b55f2e1c69d52987",
+      "last_checked": "2025-06-06T05:04:26.962164",
+      "status": "unchanged",
+      "etag": "W/\"540c5554c31d5f081e78d89c0e3613c7\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage": {
+      "hash": "9393305d067494844459613ffaed7370ddc8774119be31c3b55f2e1c69d52987",
+      "last_checked": "2025-06-06T05:04:26.962164",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/identifying-parts-of-speech.json": {
+      "hash": "9a1391f86d7bb1ead14286864ebfaaedd21cf0b65c924b86d0b6245d8a90de56",
+      "last_checked": "2025-06-06T05:04:27.485436",
+      "status": "unchanged",
+      "etag": "W/\"beb0cfb02c40f80c51345e48eec72d83\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/identifying-parts-of-speech": {
+      "hash": "9a1391f86d7bb1ead14286864ebfaaedd21cf0b65c924b86d0b6245d8a90de56",
+      "last_checked": "2025-06-06T05:04:27.485436",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/identifying-people-places-and-organizations.json": {
+      "hash": "5788468ca08e70ff82ac146e94117fe0cb5d80219af6e2e2f8056bce8fba8d2b",
+      "last_checked": "2025-06-06T05:04:27.898584",
+      "status": "unchanged",
+      "etag": "W/\"8c8419db4ac61c7f9cc27bf81c5ba756\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/identifying-people-places-and-organizations": {
+      "hash": "5788468ca08e70ff82ac146e94117fe0cb5d80219af6e2e2f8056bce8fba8d2b",
+      "last_checked": "2025-06-06T05:04:27.898584",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger.json": {
+      "hash": "b9f78a5c906c161d249216245662f0a5c52d9f569033a3b1d4f892ccee7c58a9",
+      "last_checked": "2025-06-06T05:04:28.376980",
+      "status": "unchanged",
+      "etag": "W/\"13ee083a83ac0227a30f16379b194bb8\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger": {
+      "hash": "b9f78a5c906c161d249216245662f0a5c52d9f569033a3b1d4f892ccee7c58a9",
+      "last_checked": "2025-06-06T05:04:28.376980",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/finding-similarities-between-pieces-of-text.json": {
+      "hash": "e1ec98782a5f4f8b4495bf1b792c2c18f66acc5560162f09a9b860c5cdaa2623",
+      "last_checked": "2025-06-06T05:04:28.777270",
+      "status": "unchanged",
+      "etag": "W/\"ce8894c207a1072c67abfb71c0e89937\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/finding-similarities-between-pieces-of-text": {
+      "hash": "e1ec98782a5f4f8b4495bf1b792c2c18f66acc5560162f09a9b860c5cdaa2623",
+      "last_checked": "2025-06-06T05:04:28.777270",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding.json": {
+      "hash": "a70389bf939955549489a6a3f88aa91c8412d58c015c63136ff7ec0e3b74c3a4",
+      "last_checked": "2025-06-06T05:04:29.313159",
+      "status": "unchanged",
+      "etag": "W/\"9f4041bc42696a4a54e30c5e72def80d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding": {
+      "hash": "a70389bf939955549489a6a3f88aa91c8412d58c015c63136ff7ec0e3b74c3a4",
+      "last_checked": "2025-06-06T05:04:29.313159",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding.json": {
+      "hash": "2efd6e395d89befdb5c532e915588a29e5a615c53c3f12febef7024d17a6a80d",
+      "last_checked": "2025-06-06T05:04:29.765376",
+      "status": "unchanged",
+      "etag": "W/\"34cdaf4ff346ad093d17557ae9aafa5b\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding": {
+      "hash": "2efd6e395d89befdb5c532e915588a29e5a615c53c3f12febef7024d17a6a80d",
+      "last_checked": "2025-06-06T05:04:29.765376",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey.json": {
+      "hash": "f26587e1a3afb603a4f8f478ca64e8904a63236b6db8a424cba5ce884c2bc7d6",
+      "last_checked": "2025-06-06T05:04:30.202075",
+      "status": "unchanged",
+      "etag": "W/\"d4b027a4ae1e612f56da8dbcc8a768d4\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingkey": {
+      "hash": "f26587e1a3afb603a4f8f478ca64e8904a63236b6db8a424cba5ce884c2bc7d6",
+      "last_checked": "2025-06-06T05:04:30.202075",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript.json": {
+      "hash": "2190b31c01820ff246d902928eb7ef1577d8533079aca742db25c831a6a43fa7",
+      "last_checked": "2025-06-06T05:04:30.597438",
+      "status": "unchanged",
+      "etag": "W/\"463cc891be20a781c37c5d80b2b5d814\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript": {
+      "hash": "2190b31c01820ff246d902928eb7ef1577d8533079aca742db25c831a6a43fa7",
+      "last_checked": "2025-06-06T05:04:30.597438",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/creating-a-word-tagger-model.json": {
+      "hash": "e0367c427b287b45ca90a5132fc4040071383a0afa0745b36fd46987354620a3",
+      "last_checked": "2025-06-06T05:04:31.010542",
+      "status": "unchanged",
+      "etag": "W/\"de947b1cd50105f0a5447d725da703e1\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/creating-a-word-tagger-model": {
+      "hash": "e0367c427b287b45ca90a5132fc4040071383a0afa0745b36fd46987354620a3",
+      "last_checked": "2025-06-06T05:04:31.010542",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel.json": {
+      "hash": "a69168d6fc7733cb983e171b1d7db5c678e591f54a00e96eec766e6fce3b5804",
+      "last_checked": "2025-06-06T05:04:31.399944",
+      "status": "unchanged",
+      "etag": "W/\"5d6f98cb8d6f0fcf0cdb4cb4e5eba390\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel": {
+      "hash": "a69168d6fc7733cb983e171b1d7db5c678e591f54a00e96eec766e6fce3b5804",
+      "last_checked": "2025-06-06T05:04:31.399944",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/init(unit:).json": {
+      "hash": "26592bb86536b4d0d7416bb0883b46e9398de57936554f9de5a173aa01b9185c",
+      "last_checked": "2025-06-06T05:04:31.797321",
+      "status": "unchanged",
+      "etag": "W/\"eb6116e06648f351547b47288b83e276\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/init(unit:)": {
+      "hash": "26592bb86536b4d0d7416bb0883b46e9398de57936554f9de5a173aa01b9185c",
+      "last_checked": "2025-06-06T05:04:31.797321",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/string.json": {
+      "hash": "e33b85b3ab8fda40e103849bafad33ad83d63bb0d22b3f25826d214faeec2243",
+      "last_checked": "2025-06-06T05:04:32.160019",
+      "status": "unchanged",
+      "etag": "W/\"f8f862f6cdfc618f4f5f48834da682ad\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/string": {
+      "hash": "e33b85b3ab8fda40e103849bafad33ad83d63bb0d22b3f25826d214faeec2243",
+      "last_checked": "2025-06-06T05:04:32.160019",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/setlanguage(_:).json": {
+      "hash": "50fd372ef1ee99c213fbf0730949181966acb2ae8ff2ea4738d3828e9c7a9965",
+      "last_checked": "2025-06-06T05:04:32.521175",
+      "status": "unchanged",
+      "etag": "W/\"e5c44b9535560003af20ce1f804f21c3\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/setlanguage(_:)": {
+      "hash": "50fd372ef1ee99c213fbf0730949181966acb2ae8ff2ea4738d3828e9c7a9965",
+      "last_checked": "2025-06-06T05:04:32.521175",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/unit.json": {
+      "hash": "8a83d79f0a70246cc929d32cf21e22233bb658ed2068d43e53fbefa2ef3ae626",
+      "last_checked": "2025-06-06T05:04:33.222060",
+      "status": "unchanged",
+      "etag": "W/\"12e21260f019d0785aa202be680fc593\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/unit": {
+      "hash": "8a83d79f0a70246cc929d32cf21e22233bb658ed2068d43e53fbefa2ef3ae626",
+      "last_checked": "2025-06-06T05:04:33.222060",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/attributes.json": {
+      "hash": "ef292d2b4c172e3c3f1eba854149e3c755ece264d05621dacfd81f366cb52c04",
+      "last_checked": "2025-06-06T05:04:33.952713",
+      "status": "unchanged",
+      "etag": "W/\"24dc6a4a6aed6ffbcea2d2a467f6b378\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/attributes": {
+      "hash": "ef292d2b4c172e3c3f1eba854149e3c755ece264d05621dacfd81f366cb52c04",
+      "last_checked": "2025-06-06T05:04:33.952713",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/enumeratetokens(in:using:).json": {
+      "hash": "f9d90cf06739d7df4fab98918743a79bdecdfb84010b443fc89dfdf10e430308",
+      "last_checked": "2025-06-06T05:04:34.496307",
+      "status": "unchanged",
+      "etag": "W/\"ce40421348dac99bf4d77e64fbe2a122\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/enumeratetokens(in:using:)": {
+      "hash": "f9d90cf06739d7df4fab98918743a79bdecdfb84010b443fc89dfdf10e430308",
+      "last_checked": "2025-06-06T05:04:34.496307",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/tokens(for:).json": {
+      "hash": "216a232008612cc7dc5502dbc3d6d6b26a6930d3f498c4c8b26af858e769d4cb",
+      "last_checked": "2025-06-06T05:04:35.036523",
+      "status": "unchanged",
+      "etag": "W/\"56354e9386d031998ed6a70353af3edf\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/tokens(for:)": {
+      "hash": "216a232008612cc7dc5502dbc3d6d6b26a6930d3f498c4c8b26af858e769d4cb",
+      "last_checked": "2025-06-06T05:04:35.036523",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/tokenrange(at:).json": {
+      "hash": "63a460527daa8a06cdd2453198c227cb1d6dbe6c3019361e93804c76fe2fbca1",
+      "last_checked": "2025-06-06T05:04:35.599800",
+      "status": "unchanged",
+      "etag": "W/\"fe154614363211a2f7a48ba2dcb89ee5\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/tokenrange(at:)": {
+      "hash": "63a460527daa8a06cdd2453198c227cb1d6dbe6c3019361e93804c76fe2fbca1",
+      "last_checked": "2025-06-06T05:04:35.599800",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/tokenrange(for:).json": {
+      "hash": "1bc9d3f784ee58b4957b0d68b48a98f821236aa0e8b8e1db1e78b690c96aa018",
+      "last_checked": "2025-06-06T05:04:36.033691",
+      "status": "unchanged",
+      "etag": "W/\"0046e88acf98b56e75e3b3bc77e4d6e2\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/tokenrange(for:)": {
+      "hash": "1bc9d3f784ee58b4957b0d68b48a98f821236aa0e8b8e1db1e78b690c96aa018",
+      "last_checked": "2025-06-06T05:04:36.033691",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/init().json": {
+      "hash": "4541ccc20c594575c6124508ddca3334d4232b6362fc1822df8c3be7bd7eb52b",
+      "last_checked": "2025-06-06T05:04:36.487523",
+      "status": "unchanged",
+      "etag": "W/\"ce16cb5f4a9df0666b5e8971a4fae3cd\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguagerecognizer/init()": {
+      "hash": "4541ccc20c594575c6124508ddca3334d4232b6362fc1822df8c3be7bd7eb52b",
+      "last_checked": "2025-06-06T05:04:36.487523",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/dominantlanguage(for:).json": {
+      "hash": "088ae1e2fc695f058f596127309ca57f56187ed806671ca01d3d3c2fac93e30e",
+      "last_checked": "2025-06-06T05:04:37.049067",
+      "status": "unchanged",
+      "etag": "W/\"aa3b620b66bebb77bbcaae98118551e6\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguagerecognizer/dominantlanguage(for:)": {
+      "hash": "088ae1e2fc695f058f596127309ca57f56187ed806671ca01d3d3c2fac93e30e",
+      "last_checked": "2025-06-06T05:04:37.049067",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/processstring(_:).json": {
+      "hash": "01956c8ebb1faeeebe78c2e7f24af190168dd3828a867e79c3d55b0cbdd37041",
+      "last_checked": "2025-06-06T05:04:37.643279",
+      "status": "unchanged",
+      "etag": "W/\"99a0ca3dd3c35590fb796421bcbed08c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguagerecognizer/processstring(_:)": {
+      "hash": "01956c8ebb1faeeebe78c2e7f24af190168dd3828a867e79c3d55b0cbdd37041",
+      "last_checked": "2025-06-06T05:04:37.643279",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/dominantlanguage.json": {
+      "hash": "a48b5adef07160dd75a7555cd10965bf72413c62835a8a1fbc94c3ee56880909",
+      "last_checked": "2025-06-06T05:04:38.105663",
+      "status": "unchanged",
+      "etag": "W/\"3388de87949c985b556da06a7d7acd47\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguagerecognizer/dominantlanguage": {
+      "hash": "a48b5adef07160dd75a7555cd10965bf72413c62835a8a1fbc94c3ee56880909",
+      "last_checked": "2025-06-06T05:04:38.105663",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/languagehypotheses(withmaximum:).json": {
+      "hash": "4a2b58363e31640a40a43656f271eedc91be37927717564c2f3d99d219060f1e",
+      "last_checked": "2025-06-06T05:04:38.634662",
+      "status": "unchanged",
+      "etag": "W/\"3ad4732f3f464af918b4ee649fd3bdaa\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguagerecognizer/languagehypotheses(withmaximum:)": {
+      "hash": "4a2b58363e31640a40a43656f271eedc91be37927717564c2f3d99d219060f1e",
+      "last_checked": "2025-06-06T05:04:38.634662",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/reset().json": {
+      "hash": "292eceaa0d5c97a798fab1610cc4ff8e78b9c37ebab69e1eb15ff32d6f6099a7",
+      "last_checked": "2025-06-06T05:04:39.148569",
+      "status": "unchanged",
+      "etag": "W/\"e7dbe84adb5945c1e1c0883f1638c02a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguagerecognizer/reset()": {
+      "hash": "292eceaa0d5c97a798fab1610cc4ff8e78b9c37ebab69e1eb15ff32d6f6099a7",
+      "last_checked": "2025-06-06T05:04:39.148569",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/languagehints-7dwgv.json": {
+      "hash": "e8358dbb968ece7395e8636629946fe226936bc63aacebe0ade3d6e1370bc2f3",
+      "last_checked": "2025-06-06T05:04:39.618438",
+      "status": "unchanged",
+      "etag": "W/\"15756cd4b6fe7bdd1ac39e101efa6043\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguagerecognizer/languagehints-7dwgv": {
+      "hash": "e8358dbb968ece7395e8636629946fe226936bc63aacebe0ade3d6e1370bc2f3",
+      "last_checked": "2025-06-06T05:04:39.618438",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/languageconstraints.json": {
+      "hash": "20a17497c096ff0afe3957be2295c182ece2a032895382d603884049efb0e0e1",
+      "last_checked": "2025-06-06T05:04:40.035628",
+      "status": "unchanged",
+      "etag": "W/\"296d2c816cd39bb9ca68d8051b245c8c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguagerecognizer/languageconstraints": {
+      "hash": "20a17497c096ff0afe3957be2295c182ece2a032895382d603884049efb0e0e1",
+      "last_checked": "2025-06-06T05:04:40.035628",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/amharic.json": {
+      "hash": "bc6491740d1363c88ac8f1e32a389af3a9521db0549e52dc86ff4c69dd7aa583",
+      "last_checked": "2025-06-06T05:04:40.677810",
+      "status": "unchanged",
+      "etag": "W/\"ef6bb8c8ea976d3c03002c59b79601ec\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/amharic": {
+      "hash": "bc6491740d1363c88ac8f1e32a389af3a9521db0549e52dc86ff4c69dd7aa583",
+      "last_checked": "2025-06-06T05:04:40.677810",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/arabic.json": {
+      "hash": "53aab887b07dd34ed8f798bc3ce0d022764b1f88f0882a487295c974968a3483",
+      "last_checked": "2025-06-06T05:04:41.093771",
+      "status": "unchanged",
+      "etag": "W/\"b4b0be956a1528d4cdd45074140d29f7\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/arabic": {
+      "hash": "53aab887b07dd34ed8f798bc3ce0d022764b1f88f0882a487295c974968a3483",
+      "last_checked": "2025-06-06T05:04:41.093771",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/armenian.json": {
+      "hash": "e5e312bc88b106adcebd8b8d6d22c4008a845bec1d143825a536dc20db07590d",
+      "last_checked": "2025-06-06T05:04:41.586626",
+      "status": "unchanged",
+      "etag": "W/\"e0a90d8a32761b008828cc9dd2bf688b\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/armenian": {
+      "hash": "e5e312bc88b106adcebd8b8d6d22c4008a845bec1d143825a536dc20db07590d",
+      "last_checked": "2025-06-06T05:04:41.586626",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/bengali.json": {
+      "hash": "df0872c427bb1e595f7f659ee57509dcced35d574d61bfc2554c4de34d0db7fc",
+      "last_checked": "2025-06-06T05:04:42.126118",
+      "status": "unchanged",
+      "etag": "W/\"c49e8399c4872583053b28300686b70a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/bengali": {
+      "hash": "df0872c427bb1e595f7f659ee57509dcced35d574d61bfc2554c4de34d0db7fc",
+      "last_checked": "2025-06-06T05:04:42.126118",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/bulgarian.json": {
+      "hash": "986af3f1a3dfa1fddfd9cb9c44f5d4688dc1adce66fbb6494c0c183607558e77",
+      "last_checked": "2025-06-06T05:04:42.674682",
+      "status": "unchanged",
+      "etag": "W/\"43d639c5370da108caea4dbe0d16f6bb\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/bulgarian": {
+      "hash": "986af3f1a3dfa1fddfd9cb9c44f5d4688dc1adce66fbb6494c0c183607558e77",
+      "last_checked": "2025-06-06T05:04:42.674682",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/burmese.json": {
+      "hash": "ec345fba25ec1b4c9492c047eed517af52cf215b4b1b3a671ac253e44577f17e",
+      "last_checked": "2025-06-06T05:04:43.194097",
+      "status": "unchanged",
+      "etag": "W/\"720054b930b5509894f5dfd816f4b434\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/burmese": {
+      "hash": "ec345fba25ec1b4c9492c047eed517af52cf215b4b1b3a671ac253e44577f17e",
+      "last_checked": "2025-06-06T05:04:43.194097",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/catalan.json": {
+      "hash": "62a9853236a6fb6e06704a0d4281381308f93227c142aece53dd2762da36017e",
+      "last_checked": "2025-06-06T05:04:43.699621",
+      "status": "unchanged",
+      "etag": "W/\"f1d9e0eb466ef04d0f71fd77e23e4b87\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/catalan": {
+      "hash": "62a9853236a6fb6e06704a0d4281381308f93227c142aece53dd2762da36017e",
+      "last_checked": "2025-06-06T05:04:43.699621",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/cherokee.json": {
+      "hash": "e9f1e2c1a157b37d6e0e5d047e7f2b7b88d5bdde60b2f1abc4a3a865a422827a",
+      "last_checked": "2025-06-06T05:04:44.198811",
+      "status": "unchanged",
+      "etag": "W/\"d5a60019b13f7cd8a97618aa3e7b22d6\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/cherokee": {
+      "hash": "e9f1e2c1a157b37d6e0e5d047e7f2b7b88d5bdde60b2f1abc4a3a865a422827a",
+      "last_checked": "2025-06-06T05:04:44.198811",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/croatian.json": {
+      "hash": "0c336fc6dffca717ed51e7b8c75fb7b91e4b83bbf4ce49ba1198b25abd95c3f2",
+      "last_checked": "2025-06-06T05:04:44.662123",
+      "status": "unchanged",
+      "etag": "W/\"021d9ebb65ad8e1f35f39accd7020f15\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/croatian": {
+      "hash": "0c336fc6dffca717ed51e7b8c75fb7b91e4b83bbf4ce49ba1198b25abd95c3f2",
+      "last_checked": "2025-06-06T05:04:44.662123",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/czech.json": {
+      "hash": "166c5c768ee172c50507178dfdefc3b2ed489ec5423c20764dd829770152e3df",
+      "last_checked": "2025-06-06T05:04:45.174581",
+      "status": "unchanged",
+      "etag": "W/\"1e82f40e484dd6a1428439ce22ea6fec\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/czech": {
+      "hash": "166c5c768ee172c50507178dfdefc3b2ed489ec5423c20764dd829770152e3df",
+      "last_checked": "2025-06-06T05:04:45.174581",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/danish.json": {
+      "hash": "0ee4165c375078b2a5508e50a3c38c5ff7e1ec12a43ff78486e92a858fa62889",
+      "last_checked": "2025-06-06T05:04:45.638826",
+      "status": "unchanged",
+      "etag": "W/\"c9dea9beb1aec9755ad8f636a437449c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/danish": {
+      "hash": "0ee4165c375078b2a5508e50a3c38c5ff7e1ec12a43ff78486e92a858fa62889",
+      "last_checked": "2025-06-06T05:04:45.638826",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/dutch.json": {
+      "hash": "403ac5763b4c6acf503e4525e1f84c7dbbff56b51ce0b0573405292073e8e55d",
+      "last_checked": "2025-06-06T05:04:46.062670",
+      "status": "unchanged",
+      "etag": "W/\"cc81e0a67d324ddb31128bc34175ae55\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/dutch": {
+      "hash": "403ac5763b4c6acf503e4525e1f84c7dbbff56b51ce0b0573405292073e8e55d",
+      "last_checked": "2025-06-06T05:04:46.062670",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/english.json": {
+      "hash": "c2a3c3381c6abd38c4058f3468a6d02be3b741984c77951eccb2554b38ef8395",
+      "last_checked": "2025-06-06T05:04:46.508764",
+      "status": "unchanged",
+      "etag": "W/\"dfd07ab53326f87f08e8cf4ba8796e51\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/english": {
+      "hash": "c2a3c3381c6abd38c4058f3468a6d02be3b741984c77951eccb2554b38ef8395",
+      "last_checked": "2025-06-06T05:04:46.508764",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/finnish.json": {
+      "hash": "5ee7e26a0be8c24af61f62c47ff778d2dd091a9a9a42b2a10c12b2eaa56b9f47",
+      "last_checked": "2025-06-06T05:04:46.962364",
+      "status": "unchanged",
+      "etag": "W/\"d69f0e9833f6d9a6680ca413fc7b6ae9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/finnish": {
+      "hash": "5ee7e26a0be8c24af61f62c47ff778d2dd091a9a9a42b2a10c12b2eaa56b9f47",
+      "last_checked": "2025-06-06T05:04:46.962364",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/french.json": {
+      "hash": "f8346490307b79ff68f0712c8623f5166c38698ae65a135cef137b8cd6e266cc",
+      "last_checked": "2025-06-06T05:04:47.405502",
+      "status": "unchanged",
+      "etag": "W/\"7ffbc42231f69121dd95ccdf75930681\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/french": {
+      "hash": "f8346490307b79ff68f0712c8623f5166c38698ae65a135cef137b8cd6e266cc",
+      "last_checked": "2025-06-06T05:04:47.405502",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/georgian.json": {
+      "hash": "4f102b1451d6d74a2d1061ac139c3541dac2c37be52121b04ca9ca45cac787ba",
+      "last_checked": "2025-06-06T05:04:47.840377",
+      "status": "unchanged",
+      "etag": "W/\"d1faaeba990764f4dde50a7d0a3e2f49\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/georgian": {
+      "hash": "4f102b1451d6d74a2d1061ac139c3541dac2c37be52121b04ca9ca45cac787ba",
+      "last_checked": "2025-06-06T05:04:47.840377",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/german.json": {
+      "hash": "39472091c16b13bb72b9b3df2821ce5127efec62f7a16b88e02ff9acb2a7162d",
+      "last_checked": "2025-06-06T05:04:48.292590",
+      "status": "unchanged",
+      "etag": "W/\"2945e26ea6a83c901e5179b36babee1f\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/german": {
+      "hash": "39472091c16b13bb72b9b3df2821ce5127efec62f7a16b88e02ff9acb2a7162d",
+      "last_checked": "2025-06-06T05:04:48.292590",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/greek.json": {
+      "hash": "de607c5bde9fd6c92dce7abcd7ff023ed3d07987e8ca2a7fb1341d157cdc2bd1",
+      "last_checked": "2025-06-06T05:04:48.736891",
+      "status": "unchanged",
+      "etag": "W/\"c20050f2f1b23e82e3fc47c8423622ed\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/greek": {
+      "hash": "de607c5bde9fd6c92dce7abcd7ff023ed3d07987e8ca2a7fb1341d157cdc2bd1",
+      "last_checked": "2025-06-06T05:04:48.736891",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/gujarati.json": {
+      "hash": "4480c242c14dfcd4820ddfbc01656e4fb30553f047b065268ab133681bae9266",
+      "last_checked": "2025-06-06T05:04:49.175575",
+      "status": "unchanged",
+      "etag": "W/\"0fcc341b79425dd81b1ed8606cda4885\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/gujarati": {
+      "hash": "4480c242c14dfcd4820ddfbc01656e4fb30553f047b065268ab133681bae9266",
+      "last_checked": "2025-06-06T05:04:49.175575",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/hebrew.json": {
+      "hash": "af8a75a5f583bac4efe7352685e8161920a78a37425fd9ff2cce7b0f2a64cc4a",
+      "last_checked": "2025-06-06T05:04:49.604347",
+      "status": "unchanged",
+      "etag": "W/\"8c4e6567235227763bae328b58d7ac7d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/hebrew": {
+      "hash": "af8a75a5f583bac4efe7352685e8161920a78a37425fd9ff2cce7b0f2a64cc4a",
+      "last_checked": "2025-06-06T05:04:49.604347",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/hindi.json": {
+      "hash": "6e0c7cd3cce1c7cbc6190d7ebb4f014086055289d2bc71772e169c82406ed618",
+      "last_checked": "2025-06-06T05:04:50.013452",
+      "status": "unchanged",
+      "etag": "W/\"6e9cd1b8d3a97b4aaadef19c1940f579\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/hindi": {
+      "hash": "6e0c7cd3cce1c7cbc6190d7ebb4f014086055289d2bc71772e169c82406ed618",
+      "last_checked": "2025-06-06T05:04:50.013452",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/hungarian.json": {
+      "hash": "21216a3a45fb71658d684829b73aa8d18d8b68d11bf08365f01b6c6d07720711",
+      "last_checked": "2025-06-06T05:04:50.464801",
+      "status": "unchanged",
+      "etag": "W/\"028a963b6ec22d29be7cae7c8c5e4904\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/hungarian": {
+      "hash": "21216a3a45fb71658d684829b73aa8d18d8b68d11bf08365f01b6c6d07720711",
+      "last_checked": "2025-06-06T05:04:50.464801",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/icelandic.json": {
+      "hash": "7a6c547ce46c264ad4ffd5e16c7ab4eb4d96d1e844eba1f0b2135c2e1cd32243",
+      "last_checked": "2025-06-06T05:04:50.904260",
+      "status": "unchanged",
+      "etag": "W/\"89b5fa013713e7d9766186c5096f19ec\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/icelandic": {
+      "hash": "7a6c547ce46c264ad4ffd5e16c7ab4eb4d96d1e844eba1f0b2135c2e1cd32243",
+      "last_checked": "2025-06-06T05:04:50.904260",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/indonesian.json": {
+      "hash": "d3e7a52dd6545582cc017f0de03000758b516262d76109845a38228e8b308d24",
+      "last_checked": "2025-06-06T05:04:51.359374",
+      "status": "unchanged",
+      "etag": "W/\"0feb21a1f531e1a5667ad80a8710c7fb\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/indonesian": {
+      "hash": "d3e7a52dd6545582cc017f0de03000758b516262d76109845a38228e8b308d24",
+      "last_checked": "2025-06-06T05:04:51.359374",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/italian.json": {
+      "hash": "d228d8bb71bd1be0a9ea162281984bd50e74d69518eb4893d6411da256ea0804",
+      "last_checked": "2025-06-06T05:04:51.793477",
+      "status": "unchanged",
+      "etag": "W/\"b56c5fae3e86763c96066f068f10b5be\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/italian": {
+      "hash": "d228d8bb71bd1be0a9ea162281984bd50e74d69518eb4893d6411da256ea0804",
+      "last_checked": "2025-06-06T05:04:51.793477",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/japanese.json": {
+      "hash": "9cc86890173231aa2b29a826f73b596ce72539e68dc415cedc026bdef80dceba",
+      "last_checked": "2025-06-06T05:04:52.212447",
+      "status": "unchanged",
+      "etag": "W/\"1aa7b79604a6e08ea904259bed040cb9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/japanese": {
+      "hash": "9cc86890173231aa2b29a826f73b596ce72539e68dc415cedc026bdef80dceba",
+      "last_checked": "2025-06-06T05:04:52.212447",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/kannada.json": {
+      "hash": "f9c02a1f5923cd2f9531a48cf70c5b0fac872c4b5af79181246b859e76e067fc",
+      "last_checked": "2025-06-06T05:04:52.666821",
+      "status": "unchanged",
+      "etag": "W/\"1747777c26d6190a944c871af4f48078\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/kannada": {
+      "hash": "f9c02a1f5923cd2f9531a48cf70c5b0fac872c4b5af79181246b859e76e067fc",
+      "last_checked": "2025-06-06T05:04:52.666821",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/kazakh.json": {
+      "hash": "2752f8772839aa92d5ca68030cf36d55fff6c620c5f04c482582a8d640d4e9d1",
+      "last_checked": "2025-06-06T05:04:53.112975",
+      "status": "unchanged",
+      "etag": "W/\"9584496847e4a76ce1ea693d86d9140f\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/kazakh": {
+      "hash": "2752f8772839aa92d5ca68030cf36d55fff6c620c5f04c482582a8d640d4e9d1",
+      "last_checked": "2025-06-06T05:04:53.112975",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/khmer.json": {
+      "hash": "884ba33edb72831dc44928c33d62a0699ac31ce62d56b8c3c11e3c97e37cd929",
+      "last_checked": "2025-06-06T05:04:53.557929",
+      "status": "unchanged",
+      "etag": "W/\"430db2f7871f6150528959a48e8b1464\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/khmer": {
+      "hash": "884ba33edb72831dc44928c33d62a0699ac31ce62d56b8c3c11e3c97e37cd929",
+      "last_checked": "2025-06-06T05:04:53.557929",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/korean.json": {
+      "hash": "0c50ad022979a1fac3b6274e449b1a30772d5a49f571ccc70ba55bc5fb4c599d",
+      "last_checked": "2025-06-06T05:04:53.970599",
+      "status": "unchanged",
+      "etag": "W/\"78c21266044fc86c4c0cb584b61db36b\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/korean": {
+      "hash": "0c50ad022979a1fac3b6274e449b1a30772d5a49f571ccc70ba55bc5fb4c599d",
+      "last_checked": "2025-06-06T05:04:53.970599",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/lao.json": {
+      "hash": "80dc34df84e6b4f3f46046994a80d7891709f3ca9b7f203c352af4b0aeb40982",
+      "last_checked": "2025-06-06T05:04:54.399034",
+      "status": "unchanged",
+      "etag": "W/\"436af91cd9594c4f1428cc6b8c330b3a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/lao": {
+      "hash": "80dc34df84e6b4f3f46046994a80d7891709f3ca9b7f203c352af4b0aeb40982",
+      "last_checked": "2025-06-06T05:04:54.399034",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/malay.json": {
+      "hash": "83b0c008707d78cd2f978cbd4fd8ff6e83a5092428bfe03cb6ac8b92b3fd436c",
+      "last_checked": "2025-06-06T05:04:54.837916",
+      "status": "unchanged",
+      "etag": "W/\"0fe633de858b05fd9a0790162af952d0\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/malay": {
+      "hash": "83b0c008707d78cd2f978cbd4fd8ff6e83a5092428bfe03cb6ac8b92b3fd436c",
+      "last_checked": "2025-06-06T05:04:54.837916",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/malayalam.json": {
+      "hash": "d12fe1d9b9cdbb626471ed2ebb2bd3601d29e42f03f9cf5803be13ca8948a567",
+      "last_checked": "2025-06-06T05:04:55.241649",
+      "status": "unchanged",
+      "etag": "W/\"af1214ca6a0e7a5a86d012af682f2c6a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/malayalam": {
+      "hash": "d12fe1d9b9cdbb626471ed2ebb2bd3601d29e42f03f9cf5803be13ca8948a567",
+      "last_checked": "2025-06-06T05:04:55.241649",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/marathi.json": {
+      "hash": "82ec8de63940cd4ffedf1af0f5e20d3ccba6ef911e1e43aeb68d17ab07ff0302",
+      "last_checked": "2025-06-06T05:04:55.679833",
+      "status": "unchanged",
+      "etag": "W/\"817d9713d12d3c7a68675524edd85b99\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/marathi": {
+      "hash": "82ec8de63940cd4ffedf1af0f5e20d3ccba6ef911e1e43aeb68d17ab07ff0302",
+      "last_checked": "2025-06-06T05:04:55.679833",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/mongolian.json": {
+      "hash": "cf3488d7c0f7a7e0ac9f96237c872d68360879d4de08e36ec282f493bd66996e",
+      "last_checked": "2025-06-06T05:04:56.117913",
+      "status": "unchanged",
+      "etag": "W/\"d36f1af75968e52319763e247c7e2442\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/mongolian": {
+      "hash": "cf3488d7c0f7a7e0ac9f96237c872d68360879d4de08e36ec282f493bd66996e",
+      "last_checked": "2025-06-06T05:04:56.117913",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/norwegian.json": {
+      "hash": "d54a2769a6a2f7d268042456f0f0cef9bc095ebe5718f4a2cebf702c9023808c",
+      "last_checked": "2025-06-06T05:04:56.537696",
+      "status": "unchanged",
+      "etag": "W/\"96e7864f099fb611984e8d8480dc663a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/norwegian": {
+      "hash": "d54a2769a6a2f7d268042456f0f0cef9bc095ebe5718f4a2cebf702c9023808c",
+      "last_checked": "2025-06-06T05:04:56.537696",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/oriya.json": {
+      "hash": "8e035562438a2a28a96656925040a489f15e0393cb43cb72d690fe465a7678d2",
+      "last_checked": "2025-06-06T05:04:56.965650",
+      "status": "unchanged",
+      "etag": "W/\"f6875aee349e187bf1e0f6586ced79fc\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/oriya": {
+      "hash": "8e035562438a2a28a96656925040a489f15e0393cb43cb72d690fe465a7678d2",
+      "last_checked": "2025-06-06T05:04:56.965650",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/persian.json": {
+      "hash": "581e31608100a9ad71e5921ddbb4f553ec2620fe61ecb1f84dafa3247e259d5e",
+      "last_checked": "2025-06-06T05:04:57.421579",
+      "status": "unchanged",
+      "etag": "W/\"da090cad987c54f2cd53ec4609567880\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/persian": {
+      "hash": "581e31608100a9ad71e5921ddbb4f553ec2620fe61ecb1f84dafa3247e259d5e",
+      "last_checked": "2025-06-06T05:04:57.421579",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/polish.json": {
+      "hash": "46a2c0844ce2d9b4d918fcf25dbc955c56dbc9c421609063afde73635350895a",
+      "last_checked": "2025-06-06T05:04:57.840356",
+      "status": "unchanged",
+      "etag": "W/\"7c2267ff37d41238776df8bc5ae06349\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/polish": {
+      "hash": "46a2c0844ce2d9b4d918fcf25dbc955c56dbc9c421609063afde73635350895a",
+      "last_checked": "2025-06-06T05:04:57.840356",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/portuguese.json": {
+      "hash": "7c2a3c62a453117ab59918803d0c6565faa15a8d09e19ffb891fccf8e1321213",
+      "last_checked": "2025-06-06T05:04:58.284954",
+      "status": "unchanged",
+      "etag": "W/\"69a0548da8d6fbd0ff79fd99254044b0\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/portuguese": {
+      "hash": "7c2a3c62a453117ab59918803d0c6565faa15a8d09e19ffb891fccf8e1321213",
+      "last_checked": "2025-06-06T05:04:58.284954",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/punjabi.json": {
+      "hash": "f42f479701a922e0b1115e8b20099191347544976e37188c596204e62ad2ac6d",
+      "last_checked": "2025-06-06T05:04:58.684202",
+      "status": "unchanged",
+      "etag": "W/\"4987989a8695257869cd796864d2c427\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/punjabi": {
+      "hash": "f42f479701a922e0b1115e8b20099191347544976e37188c596204e62ad2ac6d",
+      "last_checked": "2025-06-06T05:04:58.684202",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/romanian.json": {
+      "hash": "d418711b55045873bddaeb7f7eca59a9fdcc70a328485bcadfaac92b71ba4bc4",
+      "last_checked": "2025-06-06T05:04:59.109814",
+      "status": "unchanged",
+      "etag": "W/\"ce8edcba0f604ea05cfd92740443e780\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/romanian": {
+      "hash": "d418711b55045873bddaeb7f7eca59a9fdcc70a328485bcadfaac92b71ba4bc4",
+      "last_checked": "2025-06-06T05:04:59.109814",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/russian.json": {
+      "hash": "096e4e85d7a7b90da54165cf498663f0f6605ca9d0ca9dcd7ec316a4c0ca3cc4",
+      "last_checked": "2025-06-06T05:04:59.515293",
+      "status": "unchanged",
+      "etag": "W/\"df1d252efe705bfdc4a84f7bbf3a8924\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/russian": {
+      "hash": "096e4e85d7a7b90da54165cf498663f0f6605ca9d0ca9dcd7ec316a4c0ca3cc4",
+      "last_checked": "2025-06-06T05:04:59.515293",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/simplifiedchinese.json": {
+      "hash": "be4f3e77d6ef429523b1ffe23863680104497d3917a3716e7f679786e906338e",
+      "last_checked": "2025-06-06T05:04:59.990093",
+      "status": "unchanged",
+      "etag": "W/\"f81982144f80f1cd6dbc268a03043588\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/simplifiedchinese": {
+      "hash": "be4f3e77d6ef429523b1ffe23863680104497d3917a3716e7f679786e906338e",
+      "last_checked": "2025-06-06T05:04:59.990093",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/sinhalese.json": {
+      "hash": "8c8c390056751ebd05f87d53fe2bcf420b4add3efa6131a5dcdd1145de2dd01c",
+      "last_checked": "2025-06-06T05:05:00.463574",
+      "status": "unchanged",
+      "etag": "W/\"3634203205ab2ea45d5e0770a9a69384\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/sinhalese": {
+      "hash": "8c8c390056751ebd05f87d53fe2bcf420b4add3efa6131a5dcdd1145de2dd01c",
+      "last_checked": "2025-06-06T05:05:00.463574",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/slovak.json": {
+      "hash": "04d12291d3ff949f7e0ef4f16350871c3bfee393b8989ec82007eba261399523",
+      "last_checked": "2025-06-06T05:05:00.920518",
+      "status": "unchanged",
+      "etag": "W/\"099aab85ba5f80f089e28e7a71c2ae16\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/slovak": {
+      "hash": "04d12291d3ff949f7e0ef4f16350871c3bfee393b8989ec82007eba261399523",
+      "last_checked": "2025-06-06T05:05:00.920518",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/spanish.json": {
+      "hash": "14548aa19974bc71b3d846d1d014e73b7dadec6dc1c550dbbcef63be9cc8e076",
+      "last_checked": "2025-06-06T05:05:01.361688",
+      "status": "unchanged",
+      "etag": "W/\"bac44ba06cacd38f8f83347d6106b4ed\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/spanish": {
+      "hash": "14548aa19974bc71b3d846d1d014e73b7dadec6dc1c550dbbcef63be9cc8e076",
+      "last_checked": "2025-06-06T05:05:01.361688",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/swedish.json": {
+      "hash": "194c0a09934094496d0a93220020e02a83ac8faeaf16aa31f989f9c0c35f2f68",
+      "last_checked": "2025-06-06T05:05:01.778549",
+      "status": "unchanged",
+      "etag": "W/\"35187b77dffe3f4c78279487981b38d2\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/swedish": {
+      "hash": "194c0a09934094496d0a93220020e02a83ac8faeaf16aa31f989f9c0c35f2f68",
+      "last_checked": "2025-06-06T05:05:01.778549",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/tamil.json": {
+      "hash": "0912cf97407f0197d896608072d15af0129c0e92afa6d29119af66ce39623d36",
+      "last_checked": "2025-06-06T05:05:02.131171",
+      "status": "unchanged",
+      "etag": "W/\"bbee157db35561057422b684247b4e4a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/tamil": {
+      "hash": "0912cf97407f0197d896608072d15af0129c0e92afa6d29119af66ce39623d36",
+      "last_checked": "2025-06-06T05:05:02.131171",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/telugu.json": {
+      "hash": "cd593a5d79a6815179a29f29aac36ab3d9a49c0c5a1944bbd66a438ff03360bc",
+      "last_checked": "2025-06-06T05:05:02.538845",
+      "status": "unchanged",
+      "etag": "W/\"e37aa466f88eadf2d878e9e5fd44de9f\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/telugu": {
+      "hash": "cd593a5d79a6815179a29f29aac36ab3d9a49c0c5a1944bbd66a438ff03360bc",
+      "last_checked": "2025-06-06T05:05:02.538845",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/thai.json": {
+      "hash": "ac2bd2d6d19995226cb4e834889c148f03b7c590a491129bcbbe1053551b61db",
+      "last_checked": "2025-06-06T05:05:02.987839",
+      "status": "unchanged",
+      "etag": "W/\"7cd88ae2ed1c40b28c98c8a7b1ca0c33\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/thai": {
+      "hash": "ac2bd2d6d19995226cb4e834889c148f03b7c590a491129bcbbe1053551b61db",
+      "last_checked": "2025-06-06T05:05:02.987839",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/tibetan.json": {
+      "hash": "47a741d25a0c2e0bccf9e6af7c10dd3a7f8c4ceb1b22a8ee57c187ca5026b1aa",
+      "last_checked": "2025-06-06T05:05:03.399605",
+      "status": "unchanged",
+      "etag": "W/\"81120c37431278c52090e35fa7f16670\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/tibetan": {
+      "hash": "47a741d25a0c2e0bccf9e6af7c10dd3a7f8c4ceb1b22a8ee57c187ca5026b1aa",
+      "last_checked": "2025-06-06T05:05:03.399605",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/traditionalchinese.json": {
+      "hash": "9b30c459b7fa3f3eac8c1597e2e977b69d92f246bcef6b5c096d2457e595c128",
+      "last_checked": "2025-06-06T05:05:03.804218",
+      "status": "unchanged",
+      "etag": "W/\"7ed66539fa62da73a70d512a4e6a0848\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/traditionalchinese": {
+      "hash": "9b30c459b7fa3f3eac8c1597e2e977b69d92f246bcef6b5c096d2457e595c128",
+      "last_checked": "2025-06-06T05:05:03.804218",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/turkish.json": {
+      "hash": "99bddb1feae0289a53273458afe0982993c313738bea62ef1be1aacece8b371c",
+      "last_checked": "2025-06-06T05:05:04.152752",
+      "status": "unchanged",
+      "etag": "W/\"44ef0458f471394ecc1a1f244cfac6a0\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/turkish": {
+      "hash": "99bddb1feae0289a53273458afe0982993c313738bea62ef1be1aacece8b371c",
+      "last_checked": "2025-06-06T05:05:04.152752",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/ukrainian.json": {
+      "hash": "412a1a386b02f5a513249938860647d580df670c32bafcdde45012403b09ae0f",
+      "last_checked": "2025-06-06T05:05:04.522906",
+      "status": "unchanged",
+      "etag": "W/\"e0dc5bd2d37d331ec7b518cd7ba6639c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/ukrainian": {
+      "hash": "412a1a386b02f5a513249938860647d580df670c32bafcdde45012403b09ae0f",
+      "last_checked": "2025-06-06T05:05:04.522906",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/urdu.json": {
+      "hash": "82e94a0d53dfeee2009fa85cfda41454eefddcc4c2fbb04e1f5b59f011d4d14f",
+      "last_checked": "2025-06-06T05:05:04.905846",
+      "status": "unchanged",
+      "etag": "W/\"7e443eb9113a95851808ca598f8bc611\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/urdu": {
+      "hash": "82e94a0d53dfeee2009fa85cfda41454eefddcc4c2fbb04e1f5b59f011d4d14f",
+      "last_checked": "2025-06-06T05:05:04.905846",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/vietnamese.json": {
+      "hash": "7714307a644cfafc05255cb068d521aeb20e0b4e19cd704dff0ec7cda36fb348",
+      "last_checked": "2025-06-06T05:05:05.304629",
+      "status": "unchanged",
+      "etag": "W/\"d44dfdc66c33e3c0e8f238f05c0be9bc\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/vietnamese": {
+      "hash": "7714307a644cfafc05255cb068d521aeb20e0b4e19cd704dff0ec7cda36fb348",
+      "last_checked": "2025-06-06T05:05:05.304629",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/undetermined.json": {
+      "hash": "76c92b9aef356f1cf6820bb4595cc2235cb2f7a3b44bcaa7d21606f69ee199d6",
+      "last_checked": "2025-06-06T05:05:05.669287",
+      "status": "unchanged",
+      "etag": "W/\"3475042177796255e3c18ad0c0f0827f\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/undetermined": {
+      "hash": "76c92b9aef356f1cf6820bb4595cc2235cb2f7a3b44bcaa7d21606f69ee199d6",
+      "last_checked": "2025-06-06T05:05:05.669287",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/init(_:).json": {
+      "hash": "8e6c5223960d59d0682b79ceb28d1cd39b6516162ea7c540f0e8588a30267453",
+      "last_checked": "2025-06-06T05:05:06.001181",
+      "status": "unchanged",
+      "etag": "W/\"0d5485f35fb625da2aa89d83bdd7217a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/init(_:)": {
+      "hash": "8e6c5223960d59d0682b79ceb28d1cd39b6516162ea7c540f0e8588a30267453",
+      "last_checked": "2025-06-06T05:05:06.001181",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/init(rawvalue:).json": {
+      "hash": "006a94e02e3253207e28f32b2af595b28333de2625f22537a5fa84c796d1579e",
+      "last_checked": "2025-06-06T05:05:06.345143",
+      "status": "unchanged",
+      "etag": "W/\"2caacde1504f4f83d86ce5ee1a571371\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nllanguage/init(rawvalue:)": {
+      "hash": "006a94e02e3253207e28f32b2af595b28333de2625f22537a5fa84c796d1579e",
+      "last_checked": "2025-06-06T05:05:06.345143",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/init(tagschemes:).json": {
+      "hash": "5a89a4b45a0a7a5aea29d53ac3911a885d2fad5e07650bb64866bb0fb3a0af82",
+      "last_checked": "2025-06-06T05:05:06.709078",
+      "status": "unchanged",
+      "etag": "W/\"1f915f480d5802117add0d73c809686b\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/init(tagschemes:)": {
+      "hash": "5a89a4b45a0a7a5aea29d53ac3911a885d2fad5e07650bb64866bb0fb3a0af82",
+      "last_checked": "2025-06-06T05:05:06.709078",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/string.json": {
+      "hash": "49f69b7ed933d2c716922b08c60173566e7e62cfbd11496f50a047432e780b40",
+      "last_checked": "2025-06-06T05:05:07.115478",
+      "status": "unchanged",
+      "etag": "W/\"54cf1c29edf651f0ad226be82500cdde\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/string": {
+      "hash": "49f69b7ed933d2c716922b08c60173566e7e62cfbd11496f50a047432e780b40",
+      "last_checked": "2025-06-06T05:05:07.115478",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/availabletagschemes(for:language:).json": {
+      "hash": "d0bea8dc7b212df5275a62261eb3c25a6a4e9f8b2036a245d502e6b4b75c7ece",
+      "last_checked": "2025-06-06T05:05:07.517636",
+      "status": "unchanged",
+      "etag": "W/\"52033e4c115af65dc1c8872e27039467\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/availabletagschemes(for:language:)": {
+      "hash": "d0bea8dc7b212df5275a62261eb3c25a6a4e9f8b2036a245d502e6b4b75c7ece",
+      "last_checked": "2025-06-06T05:05:07.517636",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/requestassets(for:tagscheme:completionhandler:).json": {
+      "hash": "5587cc342909a4634fedb551abe84f2ec7779d69939066ac8603fe8ae49985b0",
+      "last_checked": "2025-06-06T05:05:07.925949",
+      "status": "unchanged",
+      "etag": "W/\"e2f0dc7eb6ae5d6b236c5ad9fd2d0d3a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/requestassets(for:tagscheme:completionhandler:)": {
+      "hash": "5587cc342909a4634fedb551abe84f2ec7779d69939066ac8603fe8ae49985b0",
+      "last_checked": "2025-06-06T05:05:07.925949",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/assetsresult.json": {
+      "hash": "648e44089251ea30368f20f17538bdd4c68cf46351552bd2a5eefece6e640998",
+      "last_checked": "2025-06-06T05:05:08.281163",
+      "status": "unchanged",
+      "etag": "W/\"7254b197f0209e2913eb20570fc7b5f6\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/assetsresult": {
+      "hash": "648e44089251ea30368f20f17538bdd4c68cf46351552bd2a5eefece6e640998",
+      "last_checked": "2025-06-06T05:05:08.281163",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/tagschemes.json": {
+      "hash": "1b34a3b77b3ed638ba53264233382797db60dce6597eb488d6f64c75798d7677",
+      "last_checked": "2025-06-06T05:05:08.653157",
+      "status": "unchanged",
+      "etag": "W/\"721c3faf00eeedee630edae5cbc1d02e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/tagschemes": {
+      "hash": "1b34a3b77b3ed638ba53264233382797db60dce6597eb488d6f64c75798d7677",
+      "last_checked": "2025-06-06T05:05:08.653157",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme.json": {
+      "hash": "cda876912ad1289ca2dcad9ab94998f32106c975a4ff6800fbdefca23232b05b",
+      "last_checked": "2025-06-06T05:05:09.056134",
+      "status": "unchanged",
+      "etag": "W/\"166817637dd80915dfd772fb793fad3e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme": {
+      "hash": "cda876912ad1289ca2dcad9ab94998f32106c975a4ff6800fbdefca23232b05b",
+      "last_checked": "2025-06-06T05:05:09.056134",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/dominantlanguage.json": {
+      "hash": "e862d0e7700152cbbc38390fc211665997877a7c9f788e86380c6576ac6473cb",
+      "last_checked": "2025-06-06T05:05:09.434303",
+      "status": "unchanged",
+      "etag": "W/\"c8c85b609cc840d64c09581ad2a48217\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/dominantlanguage": {
+      "hash": "e862d0e7700152cbbc38390fc211665997877a7c9f788e86380c6576ac6473cb",
+      "last_checked": "2025-06-06T05:05:09.434303",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/setlanguage(_:range:).json": {
+      "hash": "8d5f1ff1648d3eb25d929dd52dbb87caf9f2825851d89274441457ca78154a90",
+      "last_checked": "2025-06-06T05:05:09.795036",
+      "status": "unchanged",
+      "etag": "W/\"3034296c19db43706ddd208a8e41045d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/setlanguage(_:range:)": {
+      "hash": "8d5f1ff1648d3eb25d929dd52dbb87caf9f2825851d89274441457ca78154a90",
+      "last_checked": "2025-06-06T05:05:09.795036",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/setorthography(_:range:).json": {
+      "hash": "1ccff107b43147ef4965fdbffe4667eef432bec58f0cff940da09891ba511b6e",
+      "last_checked": "2025-06-06T05:05:10.184276",
+      "status": "unchanged",
+      "etag": "W/\"fbc507659a913a564a36d4e3a5f43d76\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/setorthography(_:range:)": {
+      "hash": "1ccff107b43147ef4965fdbffe4667eef432bec58f0cff940da09891ba511b6e",
+      "last_checked": "2025-06-06T05:05:10.184276",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/enumeratetags(in:unit:scheme:options:using:).json": {
+      "hash": "20673cd0cdde3382e9f6cc9ab397b6923758058f3c799e49bcb0f78c6dc087e0",
+      "last_checked": "2025-06-06T05:05:10.576379",
+      "status": "unchanged",
+      "etag": "W/\"387c495b50aee3c1af62e2750c109913\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/enumeratetags(in:unit:scheme:options:using:)": {
+      "hash": "20673cd0cdde3382e9f6cc9ab397b6923758058f3c799e49bcb0f78c6dc087e0",
+      "last_checked": "2025-06-06T05:05:10.576379",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options.json": {
+      "hash": "cbaf98ef818a16f716f8aa4ce21ead9708c67477164e4da94b1d9a36414b4202",
+      "last_checked": "2025-06-06T05:05:10.940007",
+      "status": "unchanged",
+      "etag": "W/\"706df30ed3b3150650b26ee89653b62b\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/options": {
+      "hash": "cbaf98ef818a16f716f8aa4ce21ead9708c67477164e4da94b1d9a36414b4202",
+      "last_checked": "2025-06-06T05:05:10.940007",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag.json": {
+      "hash": "f4f934f275e72e2f779f05e502ccf236c5335f32f7dc14121f8d1523bca65b58",
+      "last_checked": "2025-06-06T05:05:11.355180",
+      "status": "unchanged",
+      "etag": "W/\"66fb512ec16ca540f91d82b83ab3dcbd\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag": {
+      "hash": "f4f934f275e72e2f779f05e502ccf236c5335f32f7dc14121f8d1523bca65b58",
+      "last_checked": "2025-06-06T05:05:11.355180",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/tags(in:unit:scheme:options:).json": {
+      "hash": "d7fa8e00f8642cf24fe082a11da17e30e7bc5332a75cd4c5a960458f32acb372",
+      "last_checked": "2025-06-06T05:05:11.736113",
+      "status": "unchanged",
+      "etag": "W/\"4577acdbb03cf67a41f828a5fc4e4321\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/tags(in:unit:scheme:options:)": {
+      "hash": "d7fa8e00f8642cf24fe082a11da17e30e7bc5332a75cd4c5a960458f32acb372",
+      "last_checked": "2025-06-06T05:05:11.736113",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/tag(at:unit:scheme:).json": {
+      "hash": "7959f484c2773356f953e15d1e3d49c1b5a36384d3bdd2b6448037de97fb541a",
+      "last_checked": "2025-06-06T05:05:12.097129",
+      "status": "unchanged",
+      "etag": "W/\"30e36f2e6a2a446e4e58ac6decab5b55\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/tag(at:unit:scheme:)": {
+      "hash": "7959f484c2773356f953e15d1e3d49c1b5a36384d3bdd2b6448037de97fb541a",
+      "last_checked": "2025-06-06T05:05:12.097129",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/taghypotheses(at:unit:scheme:maximumcount:).json": {
+      "hash": "716c23edcc20de18e23d00b560d32be0ba4e2b42bfde74202ec37a7776f6b51b",
+      "last_checked": "2025-06-06T05:05:12.462502",
+      "status": "unchanged",
+      "etag": "W/\"2ce1a73090e8cb58638a75f71ab8534d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/taghypotheses(at:unit:scheme:maximumcount:)": {
+      "hash": "716c23edcc20de18e23d00b560d32be0ba4e2b42bfde74202ec37a7776f6b51b",
+      "last_checked": "2025-06-06T05:05:12.462502",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/tokenrange(at:unit:).json": {
+      "hash": "449548dd4ceb8b639594ff7bb1f7fe1d20a5d09b3413f22862404064b2993d57",
+      "last_checked": "2025-06-06T05:05:12.807955",
+      "status": "unchanged",
+      "etag": "W/\"ad09c12622348eb5334b510d467e743a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/tokenrange(at:unit:)": {
+      "hash": "449548dd4ceb8b639594ff7bb1f7fe1d20a5d09b3413f22862404064b2993d57",
+      "last_checked": "2025-06-06T05:05:12.807955",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/tokenrange(for:unit:).json": {
+      "hash": "4ebf49a26d366ad10dc6b2c46ce55f19f6499c2d5a1ab728ccb1bd6eb80ef8c7",
+      "last_checked": "2025-06-06T05:05:13.184754",
+      "status": "unchanged",
+      "etag": "W/\"f8f52dad37315b008125698b474bc1b2\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/tokenrange(for:unit:)": {
+      "hash": "4ebf49a26d366ad10dc6b2c46ce55f19f6499c2d5a1ab728ccb1bd6eb80ef8c7",
+      "last_checked": "2025-06-06T05:05:13.184754",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit.json": {
+      "hash": "0f736f6c12d37a1e7cd899902623a6db617552d15b73038e2c37f193bc30a61f",
+      "last_checked": "2025-06-06T05:05:13.559098",
+      "status": "unchanged",
+      "etag": "W/\"66683e065cc6155d08484decfbfeccd0\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenunit": {
+      "hash": "0f736f6c12d37a1e7cd899902623a6db617552d15b73038e2c37f193bc30a61f",
+      "last_checked": "2025-06-06T05:05:13.559098",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/setmodels(_:fortagscheme:).json": {
+      "hash": "2e842592e0197df9fd1f30b8998de5111a7487c7e500b9846e30e057a8e8657f",
+      "last_checked": "2025-06-06T05:05:13.943444",
+      "status": "unchanged",
+      "etag": "W/\"0b31ea9585ea1b051092451324caa598\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/setmodels(_:fortagscheme:)": {
+      "hash": "2e842592e0197df9fd1f30b8998de5111a7487c7e500b9846e30e057a8e8657f",
+      "last_checked": "2025-06-06T05:05:13.943444",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/models(fortagscheme:).json": {
+      "hash": "06c011bad5039a52928910bc6319d9d996d945023124438bb17c8f3df2644648",
+      "last_checked": "2025-06-06T05:05:14.370185",
+      "status": "unchanged",
+      "etag": "W/\"56acb56ba9e4f18e9113ea6bfdf3e78f\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/models(fortagscheme:)": {
+      "hash": "06c011bad5039a52928910bc6319d9d996d945023124438bb17c8f3df2644648",
+      "last_checked": "2025-06-06T05:05:14.370185",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/setgazetteers(_:for:).json": {
+      "hash": "0a96ffe5d1cad01252db528f2032afc4c742d799b0be95b6249005d3b5cf2ab1",
+      "last_checked": "2025-06-06T05:05:14.764238",
+      "status": "unchanged",
+      "etag": "W/\"931f0c176e3157fa9cdf05606b2a7fa7\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/setgazetteers(_:for:)": {
+      "hash": "0a96ffe5d1cad01252db528f2032afc4c742d799b0be95b6249005d3b5cf2ab1",
+      "last_checked": "2025-06-06T05:05:14.764238",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/gazetteers(for:).json": {
+      "hash": "e95c504f3d223e8915bcb891411b27c0dc032209853cf53e4fc91cde3a02fa12",
+      "last_checked": "2025-06-06T05:05:15.131632",
+      "status": "unchanged",
+      "etag": "W/\"9d7039c96986e893a0e09717259489b2\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/gazetteers(for:)": {
+      "hash": "e95c504f3d223e8915bcb891411b27c0dc032209853cf53e4fc91cde3a02fa12",
+      "last_checked": "2025-06-06T05:05:15.131632",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer.json": {
+      "hash": "cb81a039394a33830242e0066e299c537a89110d6b7c7dfc32a8325f7feed190",
+      "last_checked": "2025-06-06T05:05:15.529372",
+      "status": "unchanged",
+      "etag": "W/\"aac3aff4268fd2452616d175a62d3a01\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlgazetteer": {
+      "hash": "cb81a039394a33830242e0066e299c537a89110d6b7c7dfc32a8325f7feed190",
+      "last_checked": "2025-06-06T05:05:15.529372",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/wordembedding(for:).json": {
+      "hash": "0c77ac08b27b043ff2b66422d454f9252e6c8a029505fe7aa7b2878ffc5b0f25",
+      "last_checked": "2025-06-06T05:05:15.911853",
+      "status": "unchanged",
+      "etag": "W/\"b3a45faf078bad33456f2b2c03621d87\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/wordembedding(for:)": {
+      "hash": "0c77ac08b27b043ff2b66422d454f9252e6c8a029505fe7aa7b2878ffc5b0f25",
+      "last_checked": "2025-06-06T05:05:15.911853",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/wordembedding(for:revision:).json": {
+      "hash": "b7a6f4e67478285f078b3bf476c4781bd813dd38c0dcb27afb2a7c6a67eb44d7",
+      "last_checked": "2025-06-06T05:05:16.322865",
+      "status": "unchanged",
+      "etag": "W/\"e18f77c6f00d2dbcf65e7d61a6d6cc3b\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/wordembedding(for:revision:)": {
+      "hash": "b7a6f4e67478285f078b3bf476c4781bd813dd38c0dcb27afb2a7c6a67eb44d7",
+      "last_checked": "2025-06-06T05:05:16.322865",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/init(contentsof:).json": {
+      "hash": "46c1a79da47b8c665414f321b35622f944754ae1bb4cce2f38598698e60adbad",
+      "last_checked": "2025-06-06T05:05:16.747910",
+      "status": "unchanged",
+      "etag": "W/\"067940dd352a176485d877a51bcff765\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/init(contentsof:)": {
+      "hash": "46c1a79da47b8c665414f321b35622f944754ae1bb4cce2f38598698e60adbad",
+      "last_checked": "2025-06-06T05:05:16.747910",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/sentenceembedding(for:).json": {
+      "hash": "f706ebf6da72c316de6dbe645ab12407976a15455103d689c23c81919a482811",
+      "last_checked": "2025-06-06T05:05:17.120194",
+      "status": "unchanged",
+      "etag": "W/\"a81261e19443d5493ea7b98fc6eecf9c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/sentenceembedding(for:)": {
+      "hash": "f706ebf6da72c316de6dbe645ab12407976a15455103d689c23c81919a482811",
+      "last_checked": "2025-06-06T05:05:17.120194",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/sentenceembedding(for:revision:).json": {
+      "hash": "be92935fe62576137a4af9e6922b1979c8df892fd6c13040651dec65cd746d66",
+      "last_checked": "2025-06-06T05:05:17.507151",
+      "status": "unchanged",
+      "etag": "W/\"4322d6d38d70a4ab7f124d2eab1f8bf9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/sentenceembedding(for:revision:)": {
+      "hash": "be92935fe62576137a4af9e6922b1979c8df892fd6c13040651dec65cd746d66",
+      "last_checked": "2025-06-06T05:05:17.507151",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/neighbors(for:maximumcount:distancetype:)-8f1jc.json": {
+      "hash": "015269a913ee1d0766757fb8da99cad870a701b614dd673e6657a4aae850be15",
+      "last_checked": "2025-06-06T05:05:17.914996",
+      "status": "unchanged",
+      "etag": "W/\"0ea721a417f7cad832a771270f32189d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/neighbors(for:maximumcount:distancetype:)-8f1jc": {
+      "hash": "015269a913ee1d0766757fb8da99cad870a701b614dd673e6657a4aae850be15",
+      "last_checked": "2025-06-06T05:05:17.914996",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/neighbors(for:maximumcount:distancetype:)-8lp4z.json": {
+      "hash": "830d3812a56f25208e5abcadd78f25d3afef7db2f2a81503bd8ab58cc6c23663",
+      "last_checked": "2025-06-06T05:05:18.282439",
+      "status": "unchanged",
+      "etag": "W/\"8fca396ff6ed65f1686e2db9aecc6493\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/neighbors(for:maximumcount:distancetype:)-8lp4z": {
+      "hash": "830d3812a56f25208e5abcadd78f25d3afef7db2f2a81503bd8ab58cc6c23663",
+      "last_checked": "2025-06-06T05:05:18.282439",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/enumerateneighbors(for:maximumcount:distancetype:using:)-72jda.json": {
+      "hash": "a53f78e6467d86ee99af28620efb0aa79d14303e0b40ea0790f01bb454b4bee1",
+      "last_checked": "2025-06-06T05:05:18.668424",
+      "status": "unchanged",
+      "etag": "W/\"0ae33a10698e16963c098baddc1539f0\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/enumerateneighbors(for:maximumcount:distancetype:using:)-72jda": {
+      "hash": "a53f78e6467d86ee99af28620efb0aa79d14303e0b40ea0790f01bb454b4bee1",
+      "last_checked": "2025-06-06T05:05:18.668424",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/enumerateneighbors(for:maximumcount:distancetype:using:)-6dy4x.json": {
+      "hash": "b3c6ea2b4a02c693a071e8ad15db7cf6ba3a5839976d3def41119493b878482f",
+      "last_checked": "2025-06-06T05:05:19.035919",
+      "status": "unchanged",
+      "etag": "W/\"b50f61f9b744980f3a31744e1ec9a261\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/enumerateneighbors(for:maximumcount:distancetype:using:)-6dy4x": {
+      "hash": "b3c6ea2b4a02c693a071e8ad15db7cf6ba3a5839976d3def41119493b878482f",
+      "last_checked": "2025-06-06T05:05:19.035919",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/distance(between:and:distancetype:).json": {
+      "hash": "a1b0fd15c4fbeb347c7127049de1ff73783230b047edb7faec0f69a11ddaf025",
+      "last_checked": "2025-06-06T05:05:19.450716",
+      "status": "unchanged",
+      "etag": "W/\"6e6101a8e1e532e7c79c69cf37629f4c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/distance(between:and:distancetype:)": {
+      "hash": "a1b0fd15c4fbeb347c7127049de1ff73783230b047edb7faec0f69a11ddaf025",
+      "last_checked": "2025-06-06T05:05:19.450716",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nldistance.json": {
+      "hash": "7234fa5d1c5d464242c03d9a559bfd966745c6d0b315523c38d6a4673e4093a3",
+      "last_checked": "2025-06-06T05:05:19.832299",
+      "status": "unchanged",
+      "etag": "W/\"cb31bbc5c0c801fd0cae87e17a99caf3\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nldistance": {
+      "hash": "7234fa5d1c5d464242c03d9a559bfd966745c6d0b315523c38d6a4673e4093a3",
+      "last_checked": "2025-06-06T05:05:19.832299",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/dimension.json": {
+      "hash": "64cc7bad267e2dd03962c32a7588216a28c2044dfab6b29e8dd17b6355d5330e",
+      "last_checked": "2025-06-06T05:05:20.228081",
+      "status": "unchanged",
+      "etag": "W/\"e3277acd3daafb9f2edec03072268fb0\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/dimension": {
+      "hash": "64cc7bad267e2dd03962c32a7588216a28c2044dfab6b29e8dd17b6355d5330e",
+      "last_checked": "2025-06-06T05:05:20.228081",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/vocabularysize.json": {
+      "hash": "664cca45f42be6073f05d06d4b636e321094386c04143aca17d7ee2b3f01bb46",
+      "last_checked": "2025-06-06T05:05:20.638987",
+      "status": "unchanged",
+      "etag": "W/\"deca2d865f31d7384036bad81e12d6f3\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/vocabularysize": {
+      "hash": "664cca45f42be6073f05d06d4b636e321094386c04143aca17d7ee2b3f01bb46",
+      "last_checked": "2025-06-06T05:05:20.638987",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/language.json": {
+      "hash": "87d46e752a8fb793ef1b2040dc90c642a3295475b7a9724691ac6a9640d9c0ad",
+      "last_checked": "2025-06-06T05:05:20.978807",
+      "status": "unchanged",
+      "etag": "W/\"d9a6e2ee1a6b4b408f30d27c6a8069c4\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/language": {
+      "hash": "87d46e752a8fb793ef1b2040dc90c642a3295475b7a9724691ac6a9640d9c0ad",
+      "last_checked": "2025-06-06T05:05:20.978807",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/contains(_:).json": {
+      "hash": "1fffaac0128bffa908930ea1b7307e95ad98552f5d5c42afd7ee987a68e21540",
+      "last_checked": "2025-06-06T05:05:21.326254",
+      "status": "unchanged",
+      "etag": "W/\"0b01960b8dfcbbd509e7b7805972291d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/contains(_:)": {
+      "hash": "1fffaac0128bffa908930ea1b7307e95ad98552f5d5c42afd7ee987a68e21540",
+      "last_checked": "2025-06-06T05:05:21.326254",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/vector(for:).json": {
+      "hash": "bbef14c9ebed4d5e5e37ff1da449c2572b9a6682aa82b75b21458849dce4f307",
+      "last_checked": "2025-06-06T05:05:21.698472",
+      "status": "unchanged",
+      "etag": "W/\"7c7171b69ef0dfdcd98e59e4f4463bb9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/vector(for:)": {
+      "hash": "bbef14c9ebed4d5e5e37ff1da449c2572b9a6682aa82b75b21458849dce4f307",
+      "last_checked": "2025-06-06T05:05:21.698472",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/revision.json": {
+      "hash": "ef92e66ae42b9b4246a9f726f13665df8bbf6d83aae87bf96d6fe9beadedc644",
+      "last_checked": "2025-06-06T05:05:22.060717",
+      "status": "unchanged",
+      "etag": "W/\"e187cd6b3fb69194113451c275f2e8af\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/revision": {
+      "hash": "ef92e66ae42b9b4246a9f726f13665df8bbf6d83aae87bf96d6fe9beadedc644",
+      "last_checked": "2025-06-06T05:05:22.060717",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/write(_:language:revision:to:).json": {
+      "hash": "9cabfeb8f7dd1bb63c443fb655e7cf458810f77d50963d2fa341bf3744722c09",
+      "last_checked": "2025-06-06T05:05:22.415340",
+      "status": "unchanged",
+      "etag": "W/\"186f5027807b29d10c7ee8ea4e61c3d8\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/write(_:language:revision:to:)": {
+      "hash": "9cabfeb8f7dd1bb63c443fb655e7cf458810f77d50963d2fa341bf3744722c09",
+      "last_checked": "2025-06-06T05:05:22.415340",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/currentrevision(for:).json": {
+      "hash": "ebc250f1b38383ac3af26893fb03883e5d4840ed9b5da4c6c19a998e4bfe1c18",
+      "last_checked": "2025-06-06T05:05:22.740974",
+      "status": "unchanged",
+      "etag": "W/\"c79378086e7ba13ef9684843240193f7\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/currentrevision(for:)": {
+      "hash": "ebc250f1b38383ac3af26893fb03883e5d4840ed9b5da4c6c19a998e4bfe1c18",
+      "last_checked": "2025-06-06T05:05:22.740974",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/supportedrevisions(for:).json": {
+      "hash": "285b34c79ce78c8e4751f0d8f8cacdbc722470ef14e5b7c877c2e56faf72e138",
+      "last_checked": "2025-06-06T05:05:23.139100",
+      "status": "unchanged",
+      "etag": "W/\"89cedb8223a3f2eae163243da1c9e2eb\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/supportedrevisions(for:)": {
+      "hash": "285b34c79ce78c8e4751f0d8f8cacdbc722470ef14e5b7c877c2e56faf72e138",
+      "last_checked": "2025-06-06T05:05:23.139100",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/currentsentenceembeddingrevision(for:).json": {
+      "hash": "ed8364c3d22981d1acfc01de7b8106ce371acf80889c435780374f14329029fa",
+      "last_checked": "2025-06-06T05:05:23.533751",
+      "status": "unchanged",
+      "etag": "W/\"9479eefc3257751169415f2de0f8da8d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/currentsentenceembeddingrevision(for:)": {
+      "hash": "ed8364c3d22981d1acfc01de7b8106ce371acf80889c435780374f14329029fa",
+      "last_checked": "2025-06-06T05:05:23.533751",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/supportedsentenceembeddingrevisions(for:).json": {
+      "hash": "2c912ccd5ac4ce2de8618b32a9b1f62a5889bded0dc34ad92b80a7ca4d6934ea",
+      "last_checked": "2025-06-06T05:05:23.899417",
+      "status": "unchanged",
+      "etag": "W/\"cf37cd14576ed2f8e9ec156fb8bdcf9e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlembedding/supportedsentenceembeddingrevisions(for:)": {
+      "hash": "2c912ccd5ac4ce2de8618b32a9b1f62a5889bded0dc34ad92b80a7ca4d6934ea",
+      "last_checked": "2025-06-06T05:05:23.899417",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/init(modelidentifier:).json": {
+      "hash": "6dcf66d7be5d575cd06f3594d2d3e8bc100160e8cc2704e1cfbfa5e98da5a4ed",
+      "last_checked": "2025-06-06T05:05:24.280917",
+      "status": "unchanged",
+      "etag": "W/\"57a8b7310863cfbb80d41446b3d1202f\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/init(modelidentifier:)": {
+      "hash": "6dcf66d7be5d575cd06f3594d2d3e8bc100160e8cc2704e1cfbfa5e98da5a4ed",
+      "last_checked": "2025-06-06T05:05:24.280917",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/init(language:).json": {
+      "hash": "aaad4286c9933a82025a49080778faaa1ebb3020ca0241b147c50c0d6ef7f547",
+      "last_checked": "2025-06-06T05:05:24.682829",
+      "status": "unchanged",
+      "etag": "W/\"9b006814cce480458fec12f4f6437cc1\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/init(language:)": {
+      "hash": "aaad4286c9933a82025a49080778faaa1ebb3020ca0241b147c50c0d6ef7f547",
+      "last_checked": "2025-06-06T05:05:24.682829",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/init(script:).json": {
+      "hash": "a4a4f49488c3dd1919ee89a385578818b100e47ef94d794bd991212453fefccb",
+      "last_checked": "2025-06-06T05:05:25.014345",
+      "status": "unchanged",
+      "etag": "W/\"0436a2b9e5f9db17e08e82909b07c7b9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/init(script:)": {
+      "hash": "a4a4f49488c3dd1919ee89a385578818b100e47ef94d794bd991212453fefccb",
+      "last_checked": "2025-06-06T05:05:25.014345",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/dimension.json": {
+      "hash": "bfcfc6bd5f726f395791a45c47270078c01416866af55b3947da8ac427dc59e1",
+      "last_checked": "2025-06-06T05:05:25.407770",
+      "status": "unchanged",
+      "etag": "W/\"e3c6dada99d4f5360d80fb700ed07a93\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/dimension": {
+      "hash": "bfcfc6bd5f726f395791a45c47270078c01416866af55b3947da8ac427dc59e1",
+      "last_checked": "2025-06-06T05:05:25.407770",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/hasavailableassets.json": {
+      "hash": "000ae6a130831d2f85b71688a28aaccf0d3cb5d00192d6661e16de8efdb37586",
+      "last_checked": "2025-06-06T05:05:25.776745",
+      "status": "unchanged",
+      "etag": "W/\"9a2378ac4f524e4a69f37ec35343300c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/hasavailableassets": {
+      "hash": "000ae6a130831d2f85b71688a28aaccf0d3cb5d00192d6661e16de8efdb37586",
+      "last_checked": "2025-06-06T05:05:25.776745",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/languages.json": {
+      "hash": "eac134e2bb32121b8e230ff3bdb50163824ba8146e3d3039a86cd14221abde33",
+      "last_checked": "2025-06-06T05:05:26.140631",
+      "status": "unchanged",
+      "etag": "W/\"119c00194d04aead43b50686fe8cd8b2\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/languages": {
+      "hash": "eac134e2bb32121b8e230ff3bdb50163824ba8146e3d3039a86cd14221abde33",
+      "last_checked": "2025-06-06T05:05:26.140631",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/maximumsequencelength.json": {
+      "hash": "cd3117d8848fe2b61d1e7c0c3f50d547b057351dba03586a0af80add646b3fbe",
+      "last_checked": "2025-06-06T05:05:26.527869",
+      "status": "unchanged",
+      "etag": "W/\"7df512086866dbb75cfa09d6dbe041ec\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/maximumsequencelength": {
+      "hash": "cd3117d8848fe2b61d1e7c0c3f50d547b057351dba03586a0af80add646b3fbe",
+      "last_checked": "2025-06-06T05:05:26.527869",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/modelidentifier.json": {
+      "hash": "82a7395337452b99e027f27464fc67f5efb4e988532da4a7f5c6161e1ced6e69",
+      "last_checked": "2025-06-06T05:05:26.885675",
+      "status": "unchanged",
+      "etag": "W/\"1e07fa2ddafc21688331b985f20fbd0c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/modelidentifier": {
+      "hash": "82a7395337452b99e027f27464fc67f5efb4e988532da4a7f5c6161e1ced6e69",
+      "last_checked": "2025-06-06T05:05:26.885675",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/revision.json": {
+      "hash": "f59bd1f00853131a6f6a7918baf9bf0ab4babf3647b577d7ac7fb2489844096f",
+      "last_checked": "2025-06-06T05:05:27.242849",
+      "status": "unchanged",
+      "etag": "W/\"e3a8d10825b6061355b17dc677ff5bd0\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/revision": {
+      "hash": "f59bd1f00853131a6f6a7918baf9bf0ab4babf3647b577d7ac7fb2489844096f",
+      "last_checked": "2025-06-06T05:05:27.242849",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/scripts.json": {
+      "hash": "26fd2fd85057b3651ebb3866865b0e80471f77ed72d39062bd1220f6b0260d5f",
+      "last_checked": "2025-06-06T05:05:27.633041",
+      "status": "unchanged",
+      "etag": "W/\"8d12192c2a5b2c74fe7c8a5d12627b5e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/scripts": {
+      "hash": "26fd2fd85057b3651ebb3866865b0e80471f77ed72d39062bd1220f6b0260d5f",
+      "last_checked": "2025-06-06T05:05:27.633041",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/requestassets(completionhandler:).json": {
+      "hash": "5b332c463fdf3695a5dfa10ea7a862597eaddb01c68f11fb851aadbaa31ae1ce",
+      "last_checked": "2025-06-06T05:05:28.011478",
+      "status": "unchanged",
+      "etag": "W/\"84989907f534d5df4e9453ba0710b120\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/requestassets(completionhandler:)": {
+      "hash": "5b332c463fdf3695a5dfa10ea7a862597eaddb01c68f11fb851aadbaa31ae1ce",
+      "last_checked": "2025-06-06T05:05:28.011478",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/assetsresult.json": {
+      "hash": "4385044254136dadfa6c79b3862fcd089d7bed9b6d92c9412a976e48b4a5889e",
+      "last_checked": "2025-06-06T05:05:28.391400",
+      "status": "unchanged",
+      "etag": "W/\"a7a94c29e5676e13dd85b4bf6a4c39cc\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/assetsresult": {
+      "hash": "4385044254136dadfa6c79b3862fcd089d7bed9b6d92c9412a976e48b4a5889e",
+      "last_checked": "2025-06-06T05:05:28.391400",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/load().json": {
+      "hash": "800c1d8531cd49c965990cfbd82075573eb45b009e015fe4cb57b4981f36f9d3",
+      "last_checked": "2025-06-06T05:05:28.750981",
+      "status": "unchanged",
+      "etag": "W/\"edff8fa3c6a10cc14b3f99ce6982439c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/load()": {
+      "hash": "800c1d8531cd49c965990cfbd82075573eb45b009e015fe4cb57b4981f36f9d3",
+      "last_checked": "2025-06-06T05:05:28.750981",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/unload().json": {
+      "hash": "f076630f453a9e4d5abf438aec3f1b5a654944b9a99e3a386ddb5710f1074034",
+      "last_checked": "2025-06-06T05:05:29.107432",
+      "status": "unchanged",
+      "etag": "W/\"143460cbe3aff349240185f6fae0d20e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/unload()": {
+      "hash": "f076630f453a9e4d5abf438aec3f1b5a654944b9a99e3a386ddb5710f1074034",
+      "last_checked": "2025-06-06T05:05:29.107432",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/embeddingresult(for:language:).json": {
+      "hash": "146a37f1a8860ae34ebe80f1f5316e61430d34881df1e4f81f649803d3c09566",
+      "last_checked": "2025-06-06T05:05:29.501556",
+      "status": "unchanged",
+      "etag": "W/\"c3c0639bb2845160fad085226d941c40\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/embeddingresult(for:language:)": {
+      "hash": "146a37f1a8860ae34ebe80f1f5316e61430d34881df1e4f81f649803d3c09566",
+      "last_checked": "2025-06-06T05:05:29.501556",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult.json": {
+      "hash": "efa244371021013db1863ee32311eb9aa70366f056348da2110d0b1ac66526a1",
+      "last_checked": "2025-06-06T05:05:29.864547",
+      "status": "unchanged",
+      "etag": "W/\"806c429f971892bfdd3e0fc41345a73e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingresult": {
+      "hash": "efa244371021013db1863ee32311eb9aa70366f056348da2110d0b1ac66526a1",
+      "last_checked": "2025-06-06T05:05:29.864547",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/contextualembeddings(forvalues:).json": {
+      "hash": "6c6d000083695808cfd2e360c3220a8b0e777b9d74e7576d789399d0d19f6e1f",
+      "last_checked": "2025-06-06T05:05:30.250066",
+      "status": "unchanged",
+      "etag": "W/\"a32078a9a1029e73570a71e993efd6c9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/contextualembeddings(forvalues:)": {
+      "hash": "6c6d000083695808cfd2e360c3220a8b0e777b9d74e7576d789399d0d19f6e1f",
+      "last_checked": "2025-06-06T05:05:30.250066",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey/languages.json": {
+      "hash": "7035fc62b3b7765f0c5d2220c724620aee95f284923268421aff4c2609995d1e",
+      "last_checked": "2025-06-06T05:05:30.637005",
+      "status": "unchanged",
+      "etag": "W/\"91b37917411eb51a0c58f879ec99cd39\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingkey/languages": {
+      "hash": "7035fc62b3b7765f0c5d2220c724620aee95f284923268421aff4c2609995d1e",
+      "last_checked": "2025-06-06T05:05:30.637005",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey/revision.json": {
+      "hash": "f9a0bd3f49a1f6a9c29eb537e0058b2b19017bc4c49a7be702b9f6f40be7fe99",
+      "last_checked": "2025-06-06T05:05:30.997890",
+      "status": "unchanged",
+      "etag": "W/\"0dcc70cf6a3355002c2391dbc7de2de0\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingkey/revision": {
+      "hash": "f9a0bd3f49a1f6a9c29eb537e0058b2b19017bc4c49a7be702b9f6f40be7fe99",
+      "last_checked": "2025-06-06T05:05:30.997890",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey/scripts.json": {
+      "hash": "2218f4eb80585a9e54783f2834c2e06faa2f2f627fc2772457490e539887fafc",
+      "last_checked": "2025-06-06T05:05:31.338998",
+      "status": "unchanged",
+      "etag": "W/\"3e8ae06ca566cf8cda7255e446639baa\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingkey/scripts": {
+      "hash": "2218f4eb80585a9e54783f2834c2e06faa2f2f627fc2772457490e539887fafc",
+      "last_checked": "2025-06-06T05:05:31.338998",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey/init(_:).json": {
+      "hash": "06f81e0eb72438a560ac767b8b43f7b52325c0623f0748ecd6ef9e46e6860c83",
+      "last_checked": "2025-06-06T05:05:31.712602",
+      "status": "unchanged",
+      "etag": "W/\"90556b1370e8555b268f0911a3aca9ff\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingkey/init(_:)": {
+      "hash": "06f81e0eb72438a560ac767b8b43f7b52325c0623f0748ecd6ef9e46e6860c83",
+      "last_checked": "2025-06-06T05:05:31.712602",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey/init(rawvalue:).json": {
+      "hash": "8d654c5ba5b109230734132ddda577076cca94fe4006755143757fafece4cb29",
+      "last_checked": "2025-06-06T05:05:32.115302",
+      "status": "unchanged",
+      "etag": "W/\"db9fb668fc0a82f433dc3b4d7e742426\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingkey/init(rawvalue:)": {
+      "hash": "8d654c5ba5b109230734132ddda577076cca94fe4006755143757fafece4cb29",
+      "last_checked": "2025-06-06T05:05:32.115302",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/arabic.json": {
+      "hash": "2c8209c9fce8fd3777b256924d748fdec679b3e58257c07d13bfa7161cac7a14",
+      "last_checked": "2025-06-06T05:05:32.485269",
+      "status": "unchanged",
+      "etag": "W/\"19a0ea9d02277fcdd0f839f97a8f6759\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/arabic": {
+      "hash": "2c8209c9fce8fd3777b256924d748fdec679b3e58257c07d13bfa7161cac7a14",
+      "last_checked": "2025-06-06T05:05:32.485269",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/armenian.json": {
+      "hash": "ebfe9ed2ba461ffc30a1cd1df33c18b4150423a4049f37fa26e060e0db11a475",
+      "last_checked": "2025-06-06T05:05:32.827095",
+      "status": "unchanged",
+      "etag": "W/\"6254b38880f73de267e8aa8c0f6577fa\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/armenian": {
+      "hash": "ebfe9ed2ba461ffc30a1cd1df33c18b4150423a4049f37fa26e060e0db11a475",
+      "last_checked": "2025-06-06T05:05:32.827095",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/bengali.json": {
+      "hash": "878e2aa9ade6beeed44f90c66431c72345fcb90c47bcaa43495327cf9fdbbb2d",
+      "last_checked": "2025-06-06T05:05:33.226739",
+      "status": "unchanged",
+      "etag": "W/\"5c1613f8a07fcbe04b3976182205bb00\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/bengali": {
+      "hash": "878e2aa9ade6beeed44f90c66431c72345fcb90c47bcaa43495327cf9fdbbb2d",
+      "last_checked": "2025-06-06T05:05:33.226739",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/canadianaboriginalsyllabics.json": {
+      "hash": "74bfffab29dbd0c10c7aec683f2888171961c0ea3d5ed6a664ad268675c175a0",
+      "last_checked": "2025-06-06T05:05:33.605986",
+      "status": "unchanged",
+      "etag": "W/\"38c1d44996df513c4305713aabce0eb5\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/canadianaboriginalsyllabics": {
+      "hash": "74bfffab29dbd0c10c7aec683f2888171961c0ea3d5ed6a664ad268675c175a0",
+      "last_checked": "2025-06-06T05:05:33.605986",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/cherokee.json": {
+      "hash": "138de82b59615c790e92b892fd16db76118736fd52911cc3521a56917846452a",
+      "last_checked": "2025-06-06T05:05:33.984698",
+      "status": "unchanged",
+      "etag": "W/\"56bdf839707dee3844e744c5cb4a51d6\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/cherokee": {
+      "hash": "138de82b59615c790e92b892fd16db76118736fd52911cc3521a56917846452a",
+      "last_checked": "2025-06-06T05:05:33.984698",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/cyrillic.json": {
+      "hash": "cf59292c62de6156dea38baa01b18b60afc747ca92d74f9f0ac0999355c160b5",
+      "last_checked": "2025-06-06T05:05:34.345937",
+      "status": "unchanged",
+      "etag": "W/\"7aeb9c30ed031f43ae891dcfe24cc929\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/cyrillic": {
+      "hash": "cf59292c62de6156dea38baa01b18b60afc747ca92d74f9f0ac0999355c160b5",
+      "last_checked": "2025-06-06T05:05:34.345937",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/devanagari.json": {
+      "hash": "301885a850ef1a23d5c52967d1a0017108ca81d48f5a6bbc657740337e72d0dc",
+      "last_checked": "2025-06-06T05:05:34.731012",
+      "status": "unchanged",
+      "etag": "W/\"2c11d15a80b2a364bbd17b153133fe1d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/devanagari": {
+      "hash": "301885a850ef1a23d5c52967d1a0017108ca81d48f5a6bbc657740337e72d0dc",
+      "last_checked": "2025-06-06T05:05:34.731012",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/ethiopic.json": {
+      "hash": "e71c44c9059a939fba7576f47d02911f8777b01ad82db61bd520260e7874d802",
+      "last_checked": "2025-06-06T05:05:35.098390",
+      "status": "unchanged",
+      "etag": "W/\"987c90e850a7b829bb663558654062f5\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/ethiopic": {
+      "hash": "e71c44c9059a939fba7576f47d02911f8777b01ad82db61bd520260e7874d802",
+      "last_checked": "2025-06-06T05:05:35.098390",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/georgian.json": {
+      "hash": "80e7736620b61587bcdceddad0811a7bc54c72295f1d8e565da8eadf32a81505",
+      "last_checked": "2025-06-06T05:05:35.445018",
+      "status": "unchanged",
+      "etag": "W/\"9771d5826e0d142a311769ef7301f954\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/georgian": {
+      "hash": "80e7736620b61587bcdceddad0811a7bc54c72295f1d8e565da8eadf32a81505",
+      "last_checked": "2025-06-06T05:05:35.445018",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/greek.json": {
+      "hash": "0ffaacfc4d956b546f674582fffb575e064e8b8b066a3c84f3fd5b726e4e43a9",
+      "last_checked": "2025-06-06T05:05:35.852893",
+      "status": "unchanged",
+      "etag": "W/\"f44734cd4dd2347fb2ab6a9da0ce84bf\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/greek": {
+      "hash": "0ffaacfc4d956b546f674582fffb575e064e8b8b066a3c84f3fd5b726e4e43a9",
+      "last_checked": "2025-06-06T05:05:35.852893",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/gujarati.json": {
+      "hash": "9351e07168626c6fece65856167d8793033912ee991bf6f3cbb5178eaeca7d64",
+      "last_checked": "2025-06-06T05:05:36.214759",
+      "status": "unchanged",
+      "etag": "W/\"5199b6fea8838a707686229a0bf9651c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/gujarati": {
+      "hash": "9351e07168626c6fece65856167d8793033912ee991bf6f3cbb5178eaeca7d64",
+      "last_checked": "2025-06-06T05:05:36.214759",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/gurmukhi.json": {
+      "hash": "6d84c0d33dda529d0049839bb2c986378093fd76bfd36c5ef0b8ab371bf05c89",
+      "last_checked": "2025-06-06T05:05:36.607389",
+      "status": "unchanged",
+      "etag": "W/\"e251e6e2e8b195433878e68a2cedba0f\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/gurmukhi": {
+      "hash": "6d84c0d33dda529d0049839bb2c986378093fd76bfd36c5ef0b8ab371bf05c89",
+      "last_checked": "2025-06-06T05:05:36.607389",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/hebrew.json": {
+      "hash": "280e5acbeca2efeb8ba9434a8aee9bd552277c9643c1c5e3c56470d9821877a9",
+      "last_checked": "2025-06-06T05:05:36.944775",
+      "status": "unchanged",
+      "etag": "W/\"51c9e588fb36ec7fd76559bdd87f1900\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/hebrew": {
+      "hash": "280e5acbeca2efeb8ba9434a8aee9bd552277c9643c1c5e3c56470d9821877a9",
+      "last_checked": "2025-06-06T05:05:36.944775",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/japanese.json": {
+      "hash": "92203f639deaaf38d1a70742f5a10a22ca4205569000d5065762e62bd18ec33e",
+      "last_checked": "2025-06-06T05:05:37.311878",
+      "status": "unchanged",
+      "etag": "W/\"415c1f7ae7a6301e99c71e345d914542\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/japanese": {
+      "hash": "92203f639deaaf38d1a70742f5a10a22ca4205569000d5065762e62bd18ec33e",
+      "last_checked": "2025-06-06T05:05:37.311878",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/kannada.json": {
+      "hash": "9f8fe28505f583e3ddd46403855380dece1b3f00af1c02f098f11b0387c3d0d9",
+      "last_checked": "2025-06-06T05:05:37.727528",
+      "status": "unchanged",
+      "etag": "W/\"4fbea2bf9c13c744bacb6ccffa3fe0fb\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/kannada": {
+      "hash": "9f8fe28505f583e3ddd46403855380dece1b3f00af1c02f098f11b0387c3d0d9",
+      "last_checked": "2025-06-06T05:05:37.727528",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/khmer.json": {
+      "hash": "a5dcba6300b341033f8bbaa03b4ae4056f165745c55f9180a53227e1e8a4ef6b",
+      "last_checked": "2025-06-06T05:05:38.152012",
+      "status": "unchanged",
+      "etag": "W/\"ac888f546941da5e0f82ac34d1886a4e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/khmer": {
+      "hash": "a5dcba6300b341033f8bbaa03b4ae4056f165745c55f9180a53227e1e8a4ef6b",
+      "last_checked": "2025-06-06T05:05:38.152012",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/korean.json": {
+      "hash": "27a09d065ff1d2c6c875ec62539d7a397bc3f2ea1b962f8c649139c30b7bb65e",
+      "last_checked": "2025-06-06T05:05:38.576785",
+      "status": "unchanged",
+      "etag": "W/\"e277bbb7f641a338697a1fc6e6205fb7\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/korean": {
+      "hash": "27a09d065ff1d2c6c875ec62539d7a397bc3f2ea1b962f8c649139c30b7bb65e",
+      "last_checked": "2025-06-06T05:05:38.576785",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/lao.json": {
+      "hash": "2095b386b16980e229d11ff7dd494b0701d5ad35d59961474186f3aad8b1cd4c",
+      "last_checked": "2025-06-06T05:05:38.947175",
+      "status": "unchanged",
+      "etag": "W/\"47c77bf14052965141fc05fdf5c3897e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/lao": {
+      "hash": "2095b386b16980e229d11ff7dd494b0701d5ad35d59961474186f3aad8b1cd4c",
+      "last_checked": "2025-06-06T05:05:38.947175",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/latin.json": {
+      "hash": "35e006b6d1665a0ff85ccfd8827a6dadd7d84f543b23426d0ecda2dba1b156d5",
+      "last_checked": "2025-06-06T05:05:39.368472",
+      "status": "unchanged",
+      "etag": "W/\"34925a86ac612898d0c1f82d46363e75\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/latin": {
+      "hash": "35e006b6d1665a0ff85ccfd8827a6dadd7d84f543b23426d0ecda2dba1b156d5",
+      "last_checked": "2025-06-06T05:05:39.368472",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/malayalam.json": {
+      "hash": "d087192ce4b7c82be1a12017f0315a766aa04f25bfc616da927a6320ccf0bf38",
+      "last_checked": "2025-06-06T05:05:39.722781",
+      "status": "unchanged",
+      "etag": "W/\"e04be07aad03920b0e98b9d2b307a2d4\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/malayalam": {
+      "hash": "d087192ce4b7c82be1a12017f0315a766aa04f25bfc616da927a6320ccf0bf38",
+      "last_checked": "2025-06-06T05:05:39.722781",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/mongolian.json": {
+      "hash": "a3663db319f9828170e485e140ad2b8fc270f69fd5fb9cd2c9c291f26af9d2b8",
+      "last_checked": "2025-06-06T05:05:40.097561",
+      "status": "unchanged",
+      "etag": "W/\"d904e4e7ed287e1c0966082ea2618eab\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/mongolian": {
+      "hash": "a3663db319f9828170e485e140ad2b8fc270f69fd5fb9cd2c9c291f26af9d2b8",
+      "last_checked": "2025-06-06T05:05:40.097561",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/myanmar.json": {
+      "hash": "7812dcf712a7a2752e87560a2fe8ba28c77c40b543a7fbf88c816d42dcdac646",
+      "last_checked": "2025-06-06T05:05:40.495099",
+      "status": "unchanged",
+      "etag": "W/\"f52d2cec654f7bda0cdb8e46c03d387d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/myanmar": {
+      "hash": "7812dcf712a7a2752e87560a2fe8ba28c77c40b543a7fbf88c816d42dcdac646",
+      "last_checked": "2025-06-06T05:05:40.495099",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/oriya.json": {
+      "hash": "f04b82d0c8bc1c4a78f5e2d0356b180fdf01bf8edbeb5fc7205949a8b6aa23e0",
+      "last_checked": "2025-06-06T05:05:40.885867",
+      "status": "unchanged",
+      "etag": "W/\"180b92c6d80796ab49513bededcc44fe\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/oriya": {
+      "hash": "f04b82d0c8bc1c4a78f5e2d0356b180fdf01bf8edbeb5fc7205949a8b6aa23e0",
+      "last_checked": "2025-06-06T05:05:40.885867",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/simplifiedchinese.json": {
+      "hash": "88bc8ed9170be211b8787a12cf006f89b0189999dca0395eae0e72bdfff40db9",
+      "last_checked": "2025-06-06T05:05:41.293634",
+      "status": "unchanged",
+      "etag": "W/\"f77d7360316f20133c24b80fe6bb22b6\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/simplifiedchinese": {
+      "hash": "88bc8ed9170be211b8787a12cf006f89b0189999dca0395eae0e72bdfff40db9",
+      "last_checked": "2025-06-06T05:05:41.293634",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/sinhala.json": {
+      "hash": "9917fdf99c66d3f1ee4489a6d0575ead62b5d801ebed95de3331c9fa8f1cd65a",
+      "last_checked": "2025-06-06T05:05:41.635684",
+      "status": "unchanged",
+      "etag": "W/\"7ee3f3708929217660cc7aac26ea28fa\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/sinhala": {
+      "hash": "9917fdf99c66d3f1ee4489a6d0575ead62b5d801ebed95de3331c9fa8f1cd65a",
+      "last_checked": "2025-06-06T05:05:41.635684",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/tamil.json": {
+      "hash": "df16f02b7ada27f5458bd85697e7e7291581738898c026530096f10048d415d2",
+      "last_checked": "2025-06-06T05:05:42.025537",
+      "status": "unchanged",
+      "etag": "W/\"96e0e7f5490b96f806e555adffe3d546\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/tamil": {
+      "hash": "df16f02b7ada27f5458bd85697e7e7291581738898c026530096f10048d415d2",
+      "last_checked": "2025-06-06T05:05:42.025537",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/telugu.json": {
+      "hash": "efbb63d682502760cb4ffa851c159ac946abff8923cdb78401a1a659dd4a5f64",
+      "last_checked": "2025-06-06T05:05:42.394693",
+      "status": "unchanged",
+      "etag": "W/\"b71b3b7bfda857760b026ac17591408e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/telugu": {
+      "hash": "efbb63d682502760cb4ffa851c159ac946abff8923cdb78401a1a659dd4a5f64",
+      "last_checked": "2025-06-06T05:05:42.394693",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/thai.json": {
+      "hash": "9a4d3c09b51768358546099a9c224d391b0742e4313576c591e98ef9655b1102",
+      "last_checked": "2025-06-06T05:05:42.776498",
+      "status": "unchanged",
+      "etag": "W/\"6fefb29da8b91dae231c116687b3c959\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/thai": {
+      "hash": "9a4d3c09b51768358546099a9c224d391b0742e4313576c591e98ef9655b1102",
+      "last_checked": "2025-06-06T05:05:42.776498",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/tibetan.json": {
+      "hash": "74887cf0c54129a0659a71857962591c0edd99b52692e28f7caaf46f838e80d0",
+      "last_checked": "2025-06-06T05:05:43.124699",
+      "status": "unchanged",
+      "etag": "W/\"ed1f386992415c5b8fdf7f5d8b70678d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/tibetan": {
+      "hash": "74887cf0c54129a0659a71857962591c0edd99b52692e28f7caaf46f838e80d0",
+      "last_checked": "2025-06-06T05:05:43.124699",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/traditionalchinese.json": {
+      "hash": "d5435dbce63c4012172be18e9ba0b92522df98513cd88204a4e997470a09d64b",
+      "last_checked": "2025-06-06T05:05:43.482639",
+      "status": "unchanged",
+      "etag": "W/\"339ba5e0e723474bbb12eeb2af8021e4\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/traditionalchinese": {
+      "hash": "d5435dbce63c4012172be18e9ba0b92522df98513cd88204a4e997470a09d64b",
+      "last_checked": "2025-06-06T05:05:43.482639",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/undetermined.json": {
+      "hash": "ed45182e35ca637093ba9add4277d851e101e3c4be4b25b6cd4fda121676293d",
+      "last_checked": "2025-06-06T05:05:43.864693",
+      "status": "unchanged",
+      "etag": "W/\"86a40548be0966ef4e701c820a638fb5\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/undetermined": {
+      "hash": "ed45182e35ca637093ba9add4277d851e101e3c4be4b25b6cd4fda121676293d",
+      "last_checked": "2025-06-06T05:05:43.864693",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/init(_:).json": {
+      "hash": "60d2d58151ec35faed2eaa82f3e930cc57301d297e9d67fad95f67acc214ce15",
+      "last_checked": "2025-06-06T05:05:44.215507",
+      "status": "unchanged",
+      "etag": "W/\"3eac1e6ac620ffb109782432ac7f1d24\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/init(_:)": {
+      "hash": "60d2d58151ec35faed2eaa82f3e930cc57301d297e9d67fad95f67acc214ce15",
+      "last_checked": "2025-06-06T05:05:44.215507",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/init(rawvalue:).json": {
+      "hash": "45e17efaf509e9e4d843a3cbb7c280dcfd1700d6a32f85011697e652b6a5ca7a",
+      "last_checked": "2025-06-06T05:05:44.587960",
+      "status": "unchanged",
+      "etag": "W/\"1135283f6ddb46849e9a9bd1bd68ac70\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlscript/init(rawvalue:)": {
+      "hash": "45e17efaf509e9e4d843a3cbb7c280dcfd1700d6a32f85011697e652b6a5ca7a",
+      "last_checked": "2025-06-06T05:05:44.587960",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/init(mlmodel:).json": {
+      "hash": "babd1109d0e136c3fdf5e20381c3c38c57d690b77a88d2c6cd3b9ecce4a63083",
+      "last_checked": "2025-06-06T05:05:45.004492",
+      "status": "unchanged",
+      "etag": "W/\"ca0328ee8747f2378dd3bd75cc112272\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/init(mlmodel:)": {
+      "hash": "babd1109d0e136c3fdf5e20381c3c38c57d690b77a88d2c6cd3b9ecce4a63083",
+      "last_checked": "2025-06-06T05:05:45.004492",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/init(contentsof:).json": {
+      "hash": "97f09c477617ed9aa0eb5b49b8392e66772b1e39ed29c28aa15503d36d1260cd",
+      "last_checked": "2025-06-06T05:05:45.379143",
+      "status": "unchanged",
+      "etag": "W/\"f94405465266f825c2e40c325849a230\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/init(contentsof:)": {
+      "hash": "97f09c477617ed9aa0eb5b49b8392e66772b1e39ed29c28aa15503d36d1260cd",
+      "last_checked": "2025-06-06T05:05:45.379143",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/predictedlabel(for:).json": {
+      "hash": "ba0c1ab7a3fb970295e3129f6d76d2ed09e473af7863551cd2855bdf2a00d591",
+      "last_checked": "2025-06-06T05:05:45.746777",
+      "status": "unchanged",
+      "etag": "W/\"99931fbc3b52f1dd61767c0156261366\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/predictedlabel(for:)": {
+      "hash": "ba0c1ab7a3fb970295e3129f6d76d2ed09e473af7863551cd2855bdf2a00d591",
+      "last_checked": "2025-06-06T05:05:45.746777",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/predictedlabels(fortokens:).json": {
+      "hash": "67598775584fb106c10a51c8f116ea5c12d98630d9b4ec505d6d854e927634dc",
+      "last_checked": "2025-06-06T05:05:46.118766",
+      "status": "unchanged",
+      "etag": "W/\"b7d6ef831637188e8f957af9dc890cbd\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/predictedlabels(fortokens:)": {
+      "hash": "67598775584fb106c10a51c8f116ea5c12d98630d9b4ec505d6d854e927634dc",
+      "last_checked": "2025-06-06T05:05:46.118766",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/predictedlabelhypotheses(for:maximumcount:).json": {
+      "hash": "64a21775c21378b8595fa6a18e183fcca675fc1a1c28041447a6bf347263d88c",
+      "last_checked": "2025-06-06T05:05:46.472225",
+      "status": "unchanged",
+      "etag": "W/\"b8f90fd32da455dd591b017d1941c875\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/predictedlabelhypotheses(for:maximumcount:)": {
+      "hash": "64a21775c21378b8595fa6a18e183fcca675fc1a1c28041447a6bf347263d88c",
+      "last_checked": "2025-06-06T05:05:46.472225",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/predictedlabelhypotheses(fortokens:maximumcount:).json": {
+      "hash": "2cdde1d3e485649f81a5a24483e8c6245f05aa3c88c50b794a13842225094f53",
+      "last_checked": "2025-06-06T05:05:46.851124",
+      "status": "unchanged",
+      "etag": "W/\"9a0b458ab9343c8f4bff8a67891856dd\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/predictedlabelhypotheses(fortokens:maximumcount:)": {
+      "hash": "2cdde1d3e485649f81a5a24483e8c6245f05aa3c88c50b794a13842225094f53",
+      "last_checked": "2025-06-06T05:05:46.851124",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/configuration.json": {
+      "hash": "af2316aac3c153329376cb596a78c0c42d5a82ca7dc525e7d2e48d68fe17b1b4",
+      "last_checked": "2025-06-06T05:05:47.246595",
+      "status": "unchanged",
+      "etag": "W/\"62b2d798cf3dee4c37396d1fa952678e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/configuration": {
+      "hash": "af2316aac3c153329376cb596a78c0c42d5a82ca7dc525e7d2e48d68fe17b1b4",
+      "last_checked": "2025-06-06T05:05:47.246595",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration.json": {
+      "hash": "7e946763762177cb659f754615ea92cd44a91dbc032357b2ea1145535729c69e",
+      "last_checked": "2025-06-06T05:05:47.618469",
+      "status": "unchanged",
+      "etag": "W/\"a170500e88eab767bb429d1c628733a3\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodelconfiguration": {
+      "hash": "7e946763762177cb659f754615ea92cd44a91dbc032357b2ea1145535729c69e",
+      "last_checked": "2025-06-06T05:05:47.618469",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/attributes/emoji.json": {
+      "hash": "c0351faa5adb0597fd31ff62e3b696687f92f1dc48c6f5a4d8e3ff68ca0b5f66",
+      "last_checked": "2025-06-06T05:05:47.991811",
+      "status": "unchanged",
+      "etag": "W/\"d1f23d53eac78e3724702084687d0c5f\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/attributes/emoji": {
+      "hash": "c0351faa5adb0597fd31ff62e3b696687f92f1dc48c6f5a4d8e3ff68ca0b5f66",
+      "last_checked": "2025-06-06T05:05:47.991811",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/attributes/numeric.json": {
+      "hash": "69b6a304adafb3050b29efbd2ee36b51ce7307ae5932aec1121bf7f6f87ba7b9",
+      "last_checked": "2025-06-06T05:05:48.383206",
+      "status": "unchanged",
+      "etag": "W/\"f1ce09b3552ffe0c027f066eefa7960e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/attributes/numeric": {
+      "hash": "69b6a304adafb3050b29efbd2ee36b51ce7307ae5932aec1121bf7f6f87ba7b9",
+      "last_checked": "2025-06-06T05:05:48.383206",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/attributes/symbolic.json": {
+      "hash": "4dabc4378843415624d7087e425411e6df8604e4edf4417cd40714af26706fff",
+      "last_checked": "2025-06-06T05:05:48.766358",
+      "status": "unchanged",
+      "etag": "W/\"0a280cb92ef261d7e43dd6edade973b9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/attributes/symbolic": {
+      "hash": "4dabc4378843415624d7087e425411e6df8604e4edf4417cd40714af26706fff",
+      "last_checked": "2025-06-06T05:05:48.766358",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/attributes/init(rawvalue:).json": {
+      "hash": "7b7c21990ee77d7bb0220f6b02e9d9a1ba27c764228f7248f5ca13fa3721d7f7",
+      "last_checked": "2025-06-06T05:05:49.160913",
+      "status": "unchanged",
+      "etag": "W/\"c603ef83c38cebb25052458be5920be9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenizer/attributes/init(rawvalue:)": {
+      "hash": "7b7c21990ee77d7bb0220f6b02e9d9a1ba27c764228f7248f5ca13fa3721d7f7",
+      "last_checked": "2025-06-06T05:05:49.160913",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/assetsresult/available.json": {
+      "hash": "a66456766bea479db980037db2f3163881b7fac54e80a5a912afa1d61043e55d",
+      "last_checked": "2025-06-06T05:05:49.582603",
+      "status": "unchanged",
+      "etag": "W/\"9e894df95f8424b5f4892381886b0a3e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/assetsresult/available": {
+      "hash": "a66456766bea479db980037db2f3163881b7fac54e80a5a912afa1d61043e55d",
+      "last_checked": "2025-06-06T05:05:49.582603",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/assetsresult/notavailable.json": {
+      "hash": "141a429fcb8614a38e22afd4c7bfc106294e0d358529a43a6a6d80dbf785cdde",
+      "last_checked": "2025-06-06T05:05:50.055587",
+      "status": "unchanged",
+      "etag": "W/\"a7528af81c0d0b1465adb4b476d9182c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/assetsresult/notavailable": {
+      "hash": "141a429fcb8614a38e22afd4c7bfc106294e0d358529a43a6a6d80dbf785cdde",
+      "last_checked": "2025-06-06T05:05:50.055587",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/assetsresult/error.json": {
+      "hash": "773bd82f642fa0454bff881c77ea875fe0b0995a92cc6bfd055eb88ea85d3379",
+      "last_checked": "2025-06-06T05:05:50.438924",
+      "status": "unchanged",
+      "etag": "W/\"ff0ac82248447a3a9adb93ef79551dc8\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/assetsresult/error": {
+      "hash": "773bd82f642fa0454bff881c77ea875fe0b0995a92cc6bfd055eb88ea85d3379",
+      "last_checked": "2025-06-06T05:05:50.438924",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/assetsresult/init(rawvalue:).json": {
+      "hash": "eda6a96e32107869dce494004c6d75fb57440c1c84f0d61a82d7637478f317f6",
+      "last_checked": "2025-06-06T05:05:50.851214",
+      "status": "unchanged",
+      "etag": "W/\"154da11d2496b60d51d7fd3666f94d55\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/assetsresult/init(rawvalue:)": {
+      "hash": "eda6a96e32107869dce494004c6d75fb57440c1c84f0d61a82d7637478f317f6",
+      "last_checked": "2025-06-06T05:05:50.851214",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/tokentype.json": {
+      "hash": "acc0920ab8f8f0c69ae3623b8d6dfec6ea576070d02741ada0f7e1b6c38e73a1",
+      "last_checked": "2025-06-06T05:05:51.238299",
+      "status": "unchanged",
+      "etag": "W/\"7474c328e4122697b591adea1f6d6aa8\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme/tokentype": {
+      "hash": "acc0920ab8f8f0c69ae3623b8d6dfec6ea576070d02741ada0f7e1b6c38e73a1",
+      "last_checked": "2025-06-06T05:05:51.238299",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/lexicalclass.json": {
+      "hash": "5cf022a316a0e933369a8302081bd377f66e2d9d5089194f4016935914e1bcaa",
+      "last_checked": "2025-06-06T05:05:51.602984",
+      "status": "unchanged",
+      "etag": "W/\"8bb46bea074cda88b1520a046f8c96a2\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme/lexicalclass": {
+      "hash": "5cf022a316a0e933369a8302081bd377f66e2d9d5089194f4016935914e1bcaa",
+      "last_checked": "2025-06-06T05:05:51.602984",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/nametype.json": {
+      "hash": "55c113deee88a47c73b62852422ea57d70e2d2d42ee39b4390d546bca1190f53",
+      "last_checked": "2025-06-06T05:05:51.958706",
+      "status": "unchanged",
+      "etag": "W/\"bdac28d682ea8450ed902b6c0f6fb57e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme/nametype": {
+      "hash": "55c113deee88a47c73b62852422ea57d70e2d2d42ee39b4390d546bca1190f53",
+      "last_checked": "2025-06-06T05:05:51.958706",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/nametypeorlexicalclass.json": {
+      "hash": "1cf3cd512bfb1f862e98053f5e608b839f206bacf3fcd88e4ca98c974a32a300",
+      "last_checked": "2025-06-06T05:05:52.345361",
+      "status": "unchanged",
+      "etag": "W/\"d3c11a0d7ac71b477bc0117bc7a183c9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme/nametypeorlexicalclass": {
+      "hash": "1cf3cd512bfb1f862e98053f5e608b839f206bacf3fcd88e4ca98c974a32a300",
+      "last_checked": "2025-06-06T05:05:52.345361",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/lemma.json": {
+      "hash": "80caaf7ac409341ae78c112b1be656bbefd5779b8afd87378a15dacafdee5769",
+      "last_checked": "2025-06-06T05:05:52.714046",
+      "status": "unchanged",
+      "etag": "W/\"a660d34c22a34f82e661847d12bb605c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme/lemma": {
+      "hash": "80caaf7ac409341ae78c112b1be656bbefd5779b8afd87378a15dacafdee5769",
+      "last_checked": "2025-06-06T05:05:52.714046",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/language.json": {
+      "hash": "9e5cde47a11b532868f03013dd60945a58d5cab8e0ff9d90b0958994b1114fa6",
+      "last_checked": "2025-06-06T05:05:53.072154",
+      "status": "unchanged",
+      "etag": "W/\"aabfb3fb558364d57ce62e68a2e08e9f\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme/language": {
+      "hash": "9e5cde47a11b532868f03013dd60945a58d5cab8e0ff9d90b0958994b1114fa6",
+      "last_checked": "2025-06-06T05:05:53.072154",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/script.json": {
+      "hash": "b75a5b6200292803b6812420ec9117afee3f9fa87650bc46b2dea71b3cc52081",
+      "last_checked": "2025-06-06T05:05:53.459311",
+      "status": "unchanged",
+      "etag": "W/\"e800fd4d022b7e40948a09b4596163f8\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme/script": {
+      "hash": "b75a5b6200292803b6812420ec9117afee3f9fa87650bc46b2dea71b3cc52081",
+      "last_checked": "2025-06-06T05:05:53.459311",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/sentimentscore.json": {
+      "hash": "3d8597a2716175c1c9c708c7c7aa69ab5bdd48d3e9db4a0a1ec124dcced9a6ec",
+      "last_checked": "2025-06-06T05:05:53.861544",
+      "status": "unchanged",
+      "etag": "W/\"75c9275b1565edf565a6675541fc427e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme/sentimentscore": {
+      "hash": "3d8597a2716175c1c9c708c7c7aa69ab5bdd48d3e9db4a0a1ec124dcced9a6ec",
+      "last_checked": "2025-06-06T05:05:53.861544",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/init(_:).json": {
+      "hash": "fc140bd1b16c30608330c1d0c82352d3d21603e8e1ce553e017ff22d1cb3875c",
+      "last_checked": "2025-06-06T05:05:54.278498",
+      "status": "unchanged",
+      "etag": "W/\"6fe66f9776ae2d2a49833d403e4c786f\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme/init(_:)": {
+      "hash": "fc140bd1b16c30608330c1d0c82352d3d21603e8e1ce553e017ff22d1cb3875c",
+      "last_checked": "2025-06-06T05:05:54.278498",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/init(rawvalue:).json": {
+      "hash": "a9e4a765ee391d61ec6d7bc4fae39bd8615aa6a8da5c211544d28ff014fca233",
+      "last_checked": "2025-06-06T05:05:54.641049",
+      "status": "unchanged",
+      "etag": "W/\"5e0862e3ea240aa259fc4bfdda59092c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagscheme/init(rawvalue:)": {
+      "hash": "a9e4a765ee391d61ec6d7bc4fae39bd8615aa6a8da5c211544d28ff014fca233",
+      "last_checked": "2025-06-06T05:05:54.641049",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/omitwords.json": {
+      "hash": "667e77d75c135b7e5cee2be54c9e2d39bd84f11b15a26dca9299270d20a641ff",
+      "last_checked": "2025-06-06T05:05:54.999749",
+      "status": "unchanged",
+      "etag": "W/\"3fa5cade889fc6d6b36ffdea5a5c64bc\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/options/omitwords": {
+      "hash": "667e77d75c135b7e5cee2be54c9e2d39bd84f11b15a26dca9299270d20a641ff",
+      "last_checked": "2025-06-06T05:05:54.999749",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/omitpunctuation.json": {
+      "hash": "7ecf2b0060aef8c324839e50c4fdc44f19028e21827127c24c22ef51d80f8222",
+      "last_checked": "2025-06-06T05:05:55.405460",
+      "status": "unchanged",
+      "etag": "W/\"93cd981213f5fd786baba619a63f6884\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/options/omitpunctuation": {
+      "hash": "7ecf2b0060aef8c324839e50c4fdc44f19028e21827127c24c22ef51d80f8222",
+      "last_checked": "2025-06-06T05:05:55.405460",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/omitwhitespace.json": {
+      "hash": "dc5cdf14858fa7315340f8a868807fadb5cc4dc7c1ab1399724ef0ade85eed94",
+      "last_checked": "2025-06-06T05:05:55.803387",
+      "status": "unchanged",
+      "etag": "W/\"0e29fc2f7a1dd24dce7323add27f9a1e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/options/omitwhitespace": {
+      "hash": "dc5cdf14858fa7315340f8a868807fadb5cc4dc7c1ab1399724ef0ade85eed94",
+      "last_checked": "2025-06-06T05:05:55.803387",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/omitother.json": {
+      "hash": "6c5465c36806d619ae2bbc0a475d118bab3cf5a55f117b1ab8a847036fcb96b8",
+      "last_checked": "2025-06-06T05:05:56.208843",
+      "status": "unchanged",
+      "etag": "W/\"a1e5419eee10c16c3534a229bf9c8f0a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/options/omitother": {
+      "hash": "6c5465c36806d619ae2bbc0a475d118bab3cf5a55f117b1ab8a847036fcb96b8",
+      "last_checked": "2025-06-06T05:05:56.208843",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/joinnames.json": {
+      "hash": "db1221295078860203b25e1245f28f87a4bed44f3fe410436105a72b1f4d90b2",
+      "last_checked": "2025-06-06T05:05:56.604462",
+      "status": "unchanged",
+      "etag": "W/\"8439d4d398669dd299072d108d835588\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/options/joinnames": {
+      "hash": "db1221295078860203b25e1245f28f87a4bed44f3fe410436105a72b1f4d90b2",
+      "last_checked": "2025-06-06T05:05:56.604462",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/joincontractions.json": {
+      "hash": "379a96a2b068f1f76f61692d8b4c6ba9ae806fe30a3635828fd4eff0e8e04353",
+      "last_checked": "2025-06-06T05:05:56.981177",
+      "status": "unchanged",
+      "etag": "W/\"84021a8193d6119f1f30342e46986c72\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/options/joincontractions": {
+      "hash": "379a96a2b068f1f76f61692d8b4c6ba9ae806fe30a3635828fd4eff0e8e04353",
+      "last_checked": "2025-06-06T05:05:56.981177",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/init(rawvalue:).json": {
+      "hash": "53c0898df4b8d2782a1f07e5284d67de3886e53d1b569990084c582b1d703280",
+      "last_checked": "2025-06-06T05:05:57.309785",
+      "status": "unchanged",
+      "etag": "W/\"76c836b3510a26d986b31f54f6bad006\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltagger/options/init(rawvalue:)": {
+      "hash": "53c0898df4b8d2782a1f07e5284d67de3886e53d1b569990084c582b1d703280",
+      "last_checked": "2025-06-06T05:05:57.309785",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/word.json": {
+      "hash": "b97ee20684b1fb7f3c34f1a7eea0a6c1dfaaf8e657fb3b62b965fe2875f44f29",
+      "last_checked": "2025-06-06T05:05:57.723987",
+      "status": "unchanged",
+      "etag": "W/\"9e34e4d13100d3c869ec2453898b76f4\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/word": {
+      "hash": "b97ee20684b1fb7f3c34f1a7eea0a6c1dfaaf8e657fb3b62b965fe2875f44f29",
+      "last_checked": "2025-06-06T05:05:57.723987",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/punctuation.json": {
+      "hash": "5c580974ace02db76c65fc72a68dced9b3dd29cec6aa3f4b941d101f40224113",
+      "last_checked": "2025-06-06T05:05:58.048993",
+      "status": "unchanged",
+      "etag": "W/\"7beebd0f025e22bb1df3449eb2ec10d1\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/punctuation": {
+      "hash": "5c580974ace02db76c65fc72a68dced9b3dd29cec6aa3f4b941d101f40224113",
+      "last_checked": "2025-06-06T05:05:58.048993",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/whitespace.json": {
+      "hash": "812c688f51bf2d50413a262435f53b89f1c6d8017f835a23c57bb58538d1f7cd",
+      "last_checked": "2025-06-06T05:05:58.403768",
+      "status": "unchanged",
+      "etag": "W/\"95ac4a358d85357cb2edbfe99848d5cf\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/whitespace": {
+      "hash": "812c688f51bf2d50413a262435f53b89f1c6d8017f835a23c57bb58538d1f7cd",
+      "last_checked": "2025-06-06T05:05:58.403768",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/other.json": {
+      "hash": "ac9e65b178ac4c99b1e76b0b3752614e3c2d3c730afeb497b432fa65d608f1a6",
+      "last_checked": "2025-06-06T05:05:58.758233",
+      "status": "unchanged",
+      "etag": "W/\"f32c5f82085660825327625880511571\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/other": {
+      "hash": "ac9e65b178ac4c99b1e76b0b3752614e3c2d3c730afeb497b432fa65d608f1a6",
+      "last_checked": "2025-06-06T05:05:58.758233",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/noun.json": {
+      "hash": "cb798067ee47cc9760c43c0bbd8b638cbafa854ba9672c1e1883a03a2299a66f",
+      "last_checked": "2025-06-06T05:05:59.138706",
+      "status": "unchanged",
+      "etag": "W/\"813bbdd0aae4c0318714bc18836d24f2\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/noun": {
+      "hash": "cb798067ee47cc9760c43c0bbd8b638cbafa854ba9672c1e1883a03a2299a66f",
+      "last_checked": "2025-06-06T05:05:59.138706",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/verb.json": {
+      "hash": "62d8aa70c81c35ee7d9b64762122e6962985ba3e9a2af4ba51a36cfc629d4eb2",
+      "last_checked": "2025-06-06T05:05:59.642591",
+      "status": "unchanged",
+      "etag": "W/\"66a6a44aadaa3b791642f1213a7681ad\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/verb": {
+      "hash": "62d8aa70c81c35ee7d9b64762122e6962985ba3e9a2af4ba51a36cfc629d4eb2",
+      "last_checked": "2025-06-06T05:05:59.642591",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/adjective.json": {
+      "hash": "4d662f5e7c10fab0c6c0c36ab216042c2c6ba112d8c53c8c39d306e6a53ccc63",
+      "last_checked": "2025-06-06T05:06:00.030687",
+      "status": "unchanged",
+      "etag": "W/\"63c45c7bbc224239961d465708b8382d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/adjective": {
+      "hash": "4d662f5e7c10fab0c6c0c36ab216042c2c6ba112d8c53c8c39d306e6a53ccc63",
+      "last_checked": "2025-06-06T05:06:00.030687",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/adverb.json": {
+      "hash": "e37b31151f0c9e6b8a13a7ae90162ad230f755c9e4e3a7ed5ee4c45ae3aa457e",
+      "last_checked": "2025-06-06T05:06:00.669545",
+      "status": "unchanged",
+      "etag": "W/\"efb0db2b2a21023506cb03465d71e662\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/adverb": {
+      "hash": "e37b31151f0c9e6b8a13a7ae90162ad230f755c9e4e3a7ed5ee4c45ae3aa457e",
+      "last_checked": "2025-06-06T05:06:00.669545",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/pronoun.json": {
+      "hash": "ceba8e4e4add46ff8cc8168552d2d52b3127f4400cfe2787631002cc6f9fc7b7",
+      "last_checked": "2025-06-06T05:06:01.199628",
+      "status": "unchanged",
+      "etag": "W/\"2ed7856039f1ac67a345c97f361b9ece\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/pronoun": {
+      "hash": "ceba8e4e4add46ff8cc8168552d2d52b3127f4400cfe2787631002cc6f9fc7b7",
+      "last_checked": "2025-06-06T05:06:01.199628",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/determiner.json": {
+      "hash": "7d061396ec3d167281e93de4ee2a2503cf03395f64d179c9579a465643f7b727",
+      "last_checked": "2025-06-06T05:06:01.740756",
+      "status": "unchanged",
+      "etag": "W/\"116860be2ba0ec18d6987a0fe03a4402\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/determiner": {
+      "hash": "7d061396ec3d167281e93de4ee2a2503cf03395f64d179c9579a465643f7b727",
+      "last_checked": "2025-06-06T05:06:01.740756",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/particle.json": {
+      "hash": "d96eec903f17fad919d70810e2468d46f9017f5db133bb8df52c629a8931373f",
+      "last_checked": "2025-06-06T05:06:02.247270",
+      "status": "unchanged",
+      "etag": "W/\"79e367d564ab1d8b063b468d8b2e7972\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/particle": {
+      "hash": "d96eec903f17fad919d70810e2468d46f9017f5db133bb8df52c629a8931373f",
+      "last_checked": "2025-06-06T05:06:02.247270",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/preposition.json": {
+      "hash": "67e36399b87d50197769855b77cfcedc6abb679e1950283362a60ace71f74c49",
+      "last_checked": "2025-06-06T05:06:02.743634",
+      "status": "unchanged",
+      "etag": "W/\"48c1530c776adfd0a2e4ab1d635f08bf\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/preposition": {
+      "hash": "67e36399b87d50197769855b77cfcedc6abb679e1950283362a60ace71f74c49",
+      "last_checked": "2025-06-06T05:06:02.743634",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/number.json": {
+      "hash": "5e50156330a7f61af7f4ac8dfa80f61b87177f53f6c3c793b3cfc18aafbd9984",
+      "last_checked": "2025-06-06T05:06:03.253723",
+      "status": "unchanged",
+      "etag": "W/\"ad626d6688433d8afbb8e016626ad158\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/number": {
+      "hash": "5e50156330a7f61af7f4ac8dfa80f61b87177f53f6c3c793b3cfc18aafbd9984",
+      "last_checked": "2025-06-06T05:06:03.253723",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/conjunction.json": {
+      "hash": "1b97a7971fec8ad837d25be817a7efad54f7a6afbf040357c1cf93b2dd7a43c7",
+      "last_checked": "2025-06-06T05:06:03.811627",
+      "status": "unchanged",
+      "etag": "W/\"6d990bc264974c3ce16913376b6b7819\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/conjunction": {
+      "hash": "1b97a7971fec8ad837d25be817a7efad54f7a6afbf040357c1cf93b2dd7a43c7",
+      "last_checked": "2025-06-06T05:06:03.811627",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/interjection.json": {
+      "hash": "881fe04e3a9f01df863b0ae0c4e71ad8c8db8930e4c48e1d124975bf28ee5835",
+      "last_checked": "2025-06-06T05:06:04.352928",
+      "status": "unchanged",
+      "etag": "W/\"f771557f298887bef4c8fe3a924b201b\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/interjection": {
+      "hash": "881fe04e3a9f01df863b0ae0c4e71ad8c8db8930e4c48e1d124975bf28ee5835",
+      "last_checked": "2025-06-06T05:06:04.352928",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/classifier.json": {
+      "hash": "54d55fc8afb329db38a00a057ddee842af6282e950558f9328bb7ec1255126a6",
+      "last_checked": "2025-06-06T05:06:04.759362",
+      "status": "unchanged",
+      "etag": "W/\"ee3caeae505c85d3052a97cc9ae7a4ed\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/classifier": {
+      "hash": "54d55fc8afb329db38a00a057ddee842af6282e950558f9328bb7ec1255126a6",
+      "last_checked": "2025-06-06T05:06:04.759362",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/idiom.json": {
+      "hash": "67cf60020c6df7fa28a4550febbbffa883d96e25187435f0482f25cf778b4e45",
+      "last_checked": "2025-06-06T05:06:05.198251",
+      "status": "unchanged",
+      "etag": "W/\"2557637c7380e2b2c4d1f645e1bab074\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/idiom": {
+      "hash": "67cf60020c6df7fa28a4550febbbffa883d96e25187435f0482f25cf778b4e45",
+      "last_checked": "2025-06-06T05:06:05.198251",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/otherword.json": {
+      "hash": "dd49f878d387cb3046ba18a2b5a8dfe536479005c4f6e38af745d861f7e563de",
+      "last_checked": "2025-06-06T05:06:05.644293",
+      "status": "unchanged",
+      "etag": "W/\"d016bfe5e1288981fd9c08fbf4923122\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/otherword": {
+      "hash": "dd49f878d387cb3046ba18a2b5a8dfe536479005c4f6e38af745d861f7e563de",
+      "last_checked": "2025-06-06T05:06:05.644293",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/sentenceterminator.json": {
+      "hash": "b3213883e23de935598d1f6d47c54ef2b47b61752f69e4ca96466db1d054403e",
+      "last_checked": "2025-06-06T05:06:06.201604",
+      "status": "unchanged",
+      "etag": "W/\"f8d6d72ade40d30e07e37898d9936c07\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/sentenceterminator": {
+      "hash": "b3213883e23de935598d1f6d47c54ef2b47b61752f69e4ca96466db1d054403e",
+      "last_checked": "2025-06-06T05:06:06.201604",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/openquote.json": {
+      "hash": "c003fa77fee09434dc0a503cce039a47809d63c148a69f584d4c3111deb275d0",
+      "last_checked": "2025-06-06T05:06:06.732927",
+      "status": "unchanged",
+      "etag": "W/\"abb0676605cffa674118c08e6d078778\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/openquote": {
+      "hash": "c003fa77fee09434dc0a503cce039a47809d63c148a69f584d4c3111deb275d0",
+      "last_checked": "2025-06-06T05:06:06.732927",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/closequote.json": {
+      "hash": "5d36dbe70f6d4f5d98fc280673ecdde0e7f1bc8eb8a340042b9eca6a753c3ffe",
+      "last_checked": "2025-06-06T05:06:07.140349",
+      "status": "unchanged",
+      "etag": "W/\"41ce27899db894943c288317645e6a07\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/closequote": {
+      "hash": "5d36dbe70f6d4f5d98fc280673ecdde0e7f1bc8eb8a340042b9eca6a753c3ffe",
+      "last_checked": "2025-06-06T05:06:07.140349",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/openparenthesis.json": {
+      "hash": "cb0ea5da20055d4b05473ff6d2ced7ab1f519909986676e570d077dd4258d42f",
+      "last_checked": "2025-06-06T05:06:07.579865",
+      "status": "unchanged",
+      "etag": "W/\"7ecc6e0a78a0a013c63f4e70d0abded1\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/openparenthesis": {
+      "hash": "cb0ea5da20055d4b05473ff6d2ced7ab1f519909986676e570d077dd4258d42f",
+      "last_checked": "2025-06-06T05:06:07.579865",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/closeparenthesis.json": {
+      "hash": "7edde3c8ef9e0693e1f2d5a4ff6757fb3552e2dc7fc3a2bfb7adb22a14725407",
+      "last_checked": "2025-06-06T05:06:08.012957",
+      "status": "unchanged",
+      "etag": "W/\"7c429ea04ad3f71e8846b616be80b037\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/closeparenthesis": {
+      "hash": "7edde3c8ef9e0693e1f2d5a4ff6757fb3552e2dc7fc3a2bfb7adb22a14725407",
+      "last_checked": "2025-06-06T05:06:08.012957",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/wordjoiner.json": {
+      "hash": "979d8b2b879a94982273f4f3a66542d6003bfdf85e5158634d8ec9c7585a059e",
+      "last_checked": "2025-06-06T05:06:08.436465",
+      "status": "unchanged",
+      "etag": "W/\"a2240cf5c4237b2dda621d505677c568\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/wordjoiner": {
+      "hash": "979d8b2b879a94982273f4f3a66542d6003bfdf85e5158634d8ec9c7585a059e",
+      "last_checked": "2025-06-06T05:06:08.436465",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/dash.json": {
+      "hash": "b55c0f7c48afcf73604390346f79fc2c231592c131cb49ae30961648071bd7a1",
+      "last_checked": "2025-06-06T05:06:08.904227",
+      "status": "unchanged",
+      "etag": "W/\"2cb8331532f56ba98b3f3c95d9df7128\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/dash": {
+      "hash": "b55c0f7c48afcf73604390346f79fc2c231592c131cb49ae30961648071bd7a1",
+      "last_checked": "2025-06-06T05:06:08.904227",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/otherpunctuation.json": {
+      "hash": "a740de1230ea6bb65e3f04b55df96b966978e0195e8f868ce5dc4be59c885014",
+      "last_checked": "2025-06-06T05:06:09.342123",
+      "status": "unchanged",
+      "etag": "W/\"9341ff721d1f135213630bccdeb0d995\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/otherpunctuation": {
+      "hash": "a740de1230ea6bb65e3f04b55df96b966978e0195e8f868ce5dc4be59c885014",
+      "last_checked": "2025-06-06T05:06:09.342123",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/paragraphbreak.json": {
+      "hash": "fc139cce4441b4fbecbc0768c727bf66d368bd8803f36fd01fbb54bab6c5e7da",
+      "last_checked": "2025-06-06T05:06:09.776331",
+      "status": "unchanged",
+      "etag": "W/\"2748c5fb5dc660e46e36074b923a98aa\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/paragraphbreak": {
+      "hash": "fc139cce4441b4fbecbc0768c727bf66d368bd8803f36fd01fbb54bab6c5e7da",
+      "last_checked": "2025-06-06T05:06:09.776331",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/otherwhitespace.json": {
+      "hash": "2ca9fd245d317d530aa2b77d02d66986047b6fc44c28ed71c82b99957a7bd947",
+      "last_checked": "2025-06-06T05:06:10.203969",
+      "status": "unchanged",
+      "etag": "W/\"4ebb7faaf0e9149f0b27056b621ba152\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/otherwhitespace": {
+      "hash": "2ca9fd245d317d530aa2b77d02d66986047b6fc44c28ed71c82b99957a7bd947",
+      "last_checked": "2025-06-06T05:06:10.203969",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/personalname.json": {
+      "hash": "f8776b660cb5b9ea028b4e8bb1b0605b9f241f4a14de1b8b78b15daab72223a8",
+      "last_checked": "2025-06-06T05:06:10.595339",
+      "status": "unchanged",
+      "etag": "W/\"32b0d37ef4f87016cfa18db71825585e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/personalname": {
+      "hash": "f8776b660cb5b9ea028b4e8bb1b0605b9f241f4a14de1b8b78b15daab72223a8",
+      "last_checked": "2025-06-06T05:06:10.595339",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/organizationname.json": {
+      "hash": "432aa5b53ca0b9f2fed5ae7a0cdf0447580d002659a9a6d15db0a40d8b5271fe",
+      "last_checked": "2025-06-06T05:06:11.143347",
+      "status": "unchanged",
+      "etag": "W/\"8fa6c446c678d651d8b1eb283a34d525\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/organizationname": {
+      "hash": "432aa5b53ca0b9f2fed5ae7a0cdf0447580d002659a9a6d15db0a40d8b5271fe",
+      "last_checked": "2025-06-06T05:06:11.143347",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/placename.json": {
+      "hash": "b514f1e956f2c8e8dc2057c52514201875ebf72f27482438e90566f7a2bfaa21",
+      "last_checked": "2025-06-06T05:06:11.628290",
+      "status": "unchanged",
+      "etag": "W/\"adf1ada27b641b73f62d79428a7ecbe4\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/placename": {
+      "hash": "b514f1e956f2c8e8dc2057c52514201875ebf72f27482438e90566f7a2bfaa21",
+      "last_checked": "2025-06-06T05:06:11.628290",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/init(_:).json": {
+      "hash": "53e6b72706da15a0c806bb0071c88a9b8f7ef8fc28df2146a01331802c2f39b8",
+      "last_checked": "2025-06-06T05:06:12.085656",
+      "status": "unchanged",
+      "etag": "W/\"cf73e1eff8eef09e542235d88db0b4b1\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/init(_:)": {
+      "hash": "53e6b72706da15a0c806bb0071c88a9b8f7ef8fc28df2146a01331802c2f39b8",
+      "last_checked": "2025-06-06T05:06:12.085656",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/init(rawvalue:).json": {
+      "hash": "515d8102042221c409d0ef49dba70aed1d91190ba27968d6beba48e26d2f5d52",
+      "last_checked": "2025-06-06T05:06:12.573250",
+      "status": "unchanged",
+      "etag": "W/\"6731f517886223cac676f148472209b3\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltag/init(rawvalue:)": {
+      "hash": "515d8102042221c409d0ef49dba70aed1d91190ba27968d6beba48e26d2f5d52",
+      "last_checked": "2025-06-06T05:06:12.573250",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit/word.json": {
+      "hash": "cf40c34ea266b7628393847aa741a91f6d9945166e387d288fd091c964e20c63",
+      "last_checked": "2025-06-06T05:06:13.006669",
+      "status": "unchanged",
+      "etag": "W/\"10d478871694d929db0bf10d7077dcbc\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenunit/word": {
+      "hash": "cf40c34ea266b7628393847aa741a91f6d9945166e387d288fd091c964e20c63",
+      "last_checked": "2025-06-06T05:06:13.006669",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit/sentence.json": {
+      "hash": "6181c5dd02ca1eefc5a805a1819d601ae30fb4a3bc29edc775e234c0f7ad5b32",
+      "last_checked": "2025-06-06T05:06:13.421870",
+      "status": "unchanged",
+      "etag": "W/\"ba8c55e29c8ac85fa1e42d4791628450\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenunit/sentence": {
+      "hash": "6181c5dd02ca1eefc5a805a1819d601ae30fb4a3bc29edc775e234c0f7ad5b32",
+      "last_checked": "2025-06-06T05:06:13.421870",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit/paragraph.json": {
+      "hash": "6507e5e487913a551cd9d914b94ea75921d014a7f262034209b7cf3f6e0dd597",
+      "last_checked": "2025-06-06T05:06:13.850117",
+      "status": "unchanged",
+      "etag": "W/\"2ade7c08457ad4239b84a83f91f57719\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenunit/paragraph": {
+      "hash": "6507e5e487913a551cd9d914b94ea75921d014a7f262034209b7cf3f6e0dd597",
+      "last_checked": "2025-06-06T05:06:13.850117",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit/document.json": {
+      "hash": "f014472aea799b6c4cc9f8b7084a4b391e0548c5f4874d94754bdc098ed04046",
+      "last_checked": "2025-06-06T05:06:14.258047",
+      "status": "unchanged",
+      "etag": "W/\"b73d631380e69b550ea2bf489b884275\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenunit/document": {
+      "hash": "f014472aea799b6c4cc9f8b7084a4b391e0548c5f4874d94754bdc098ed04046",
+      "last_checked": "2025-06-06T05:06:14.258047",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit/init(rawvalue:).json": {
+      "hash": "8353952215fbe8759a88dd541e6bc24ec3052db5c2260160c34d4b7faf2c36c1",
+      "last_checked": "2025-06-06T05:06:14.662099",
+      "status": "unchanged",
+      "etag": "W/\"c370342ab786ae212a6e44cf397aefee\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nltokenunit/init(rawvalue:)": {
+      "hash": "8353952215fbe8759a88dd541e6bc24ec3052db5c2260160c34d4b7faf2c36c1",
+      "last_checked": "2025-06-06T05:06:14.662099",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/init(contentsof:).json": {
+      "hash": "7d28546f3e864ce6e3b8fb596bbebf171fc45d897ef80d1cfce237dfef165636",
+      "last_checked": "2025-06-06T05:06:15.141432",
+      "status": "unchanged",
+      "etag": "W/\"996526ab139a599ff3a96184b62c3e6c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlgazetteer/init(contentsof:)": {
+      "hash": "7d28546f3e864ce6e3b8fb596bbebf171fc45d897ef80d1cfce237dfef165636",
+      "last_checked": "2025-06-06T05:06:15.141432",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/init(data:).json": {
+      "hash": "5bac2259a7feaa39eaf5a018d4fffae691d09174c479b4411ebb643cecfaff4c",
+      "last_checked": "2025-06-06T05:06:15.655032",
+      "status": "unchanged",
+      "etag": "W/\"b905cc1105b8525748771a4326bdc58d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlgazetteer/init(data:)": {
+      "hash": "5bac2259a7feaa39eaf5a018d4fffae691d09174c479b4411ebb643cecfaff4c",
+      "last_checked": "2025-06-06T05:06:15.655032",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/init(dictionary:language:).json": {
+      "hash": "9fda575376b86b35a62c987a4292e1a9052eca3a77721a16adfd2f236d343d46",
+      "last_checked": "2025-06-06T05:06:16.087218",
+      "status": "unchanged",
+      "etag": "W/\"8194f4bf117ad9383133eedd1e39f08c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlgazetteer/init(dictionary:language:)": {
+      "hash": "9fda575376b86b35a62c987a4292e1a9052eca3a77721a16adfd2f236d343d46",
+      "last_checked": "2025-06-06T05:06:16.087218",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/write(_:language:to:).json": {
+      "hash": "e20d22078fcec05ef56d675a5705188bc08fb4f389776172300dabb7e0d0422b",
+      "last_checked": "2025-06-06T05:06:16.515407",
+      "status": "unchanged",
+      "etag": "W/\"b91216833ac6ce079ad86c17520b2949\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlgazetteer/write(_:language:to:)": {
+      "hash": "e20d22078fcec05ef56d675a5705188bc08fb4f389776172300dabb7e0d0422b",
+      "last_checked": "2025-06-06T05:06:16.515407",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/label(for:).json": {
+      "hash": "3c694d7790d5c587b5e1a41a7552fbd3c0fdd7c07aa52a3101b64f8478777a1e",
+      "last_checked": "2025-06-06T05:06:16.967976",
+      "status": "unchanged",
+      "etag": "W/\"1b77f821e794d328ee0dc9cbbcc55772\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlgazetteer/label(for:)": {
+      "hash": "3c694d7790d5c587b5e1a41a7552fbd3c0fdd7c07aa52a3101b64f8478777a1e",
+      "last_checked": "2025-06-06T05:06:16.967976",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/data.json": {
+      "hash": "035ac1b85bf5a61b24ca8796767503c3dc8f5ca1e9dc3ea144542a21c53c43a0",
+      "last_checked": "2025-06-06T05:06:17.400384",
+      "status": "unchanged",
+      "etag": "W/\"938e244982e8cb88d73b7ff962c246f9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlgazetteer/data": {
+      "hash": "035ac1b85bf5a61b24ca8796767503c3dc8f5ca1e9dc3ea144542a21c53c43a0",
+      "last_checked": "2025-06-06T05:06:17.400384",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/language.json": {
+      "hash": "2a3a233aa7e39dbe9189a647b0fa0397ce9548559a7ea312a078ce22ee8e8ee6",
+      "last_checked": "2025-06-06T05:06:17.865018",
+      "status": "unchanged",
+      "etag": "W/\"3970a9ce7de50a456fa2783379fdeee7\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlgazetteer/language": {
+      "hash": "2a3a233aa7e39dbe9189a647b0fa0397ce9548559a7ea312a078ce22ee8e8ee6",
+      "last_checked": "2025-06-06T05:06:17.865018",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nldistancetype.json": {
+      "hash": "11871d674227fbaf817bbc377fc4ca98eda4e7f6924a42740a3eb6976d4dda42",
+      "last_checked": "2025-06-06T05:06:18.295141",
+      "status": "unchanged",
+      "etag": "W/\"7e39bf63bf1b306ba13933dfe5551ff1\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nldistancetype": {
+      "hash": "11871d674227fbaf817bbc377fc4ca98eda4e7f6924a42740a3eb6976d4dda42",
+      "last_checked": "2025-06-06T05:06:18.295141",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/assetsresult/available.json": {
+      "hash": "314c7516e3ab695bb257fd6c83bdd5748b71192fe9634a8ede389380a203f2d8",
+      "last_checked": "2025-06-06T05:06:18.734051",
+      "status": "unchanged",
+      "etag": "W/\"bce8420cb56f1cf89ea43d8da61cf311\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/assetsresult/available": {
+      "hash": "314c7516e3ab695bb257fd6c83bdd5748b71192fe9634a8ede389380a203f2d8",
+      "last_checked": "2025-06-06T05:06:18.734051",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/assetsresult/notavailable.json": {
+      "hash": "cae0921e641472f467f48e72456a1d2c9d63e1f580bf476b72066a89ba431e2d",
+      "last_checked": "2025-06-06T05:06:19.135812",
+      "status": "unchanged",
+      "etag": "W/\"b4b389a0ba234b0cae05487f1bcff015\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/assetsresult/notavailable": {
+      "hash": "cae0921e641472f467f48e72456a1d2c9d63e1f580bf476b72066a89ba431e2d",
+      "last_checked": "2025-06-06T05:06:19.135812",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/assetsresult/error.json": {
+      "hash": "76456fe3ef6664459b859b143ab8e2ce24a49a2a3bca7a161fcf582d2164c8ab",
+      "last_checked": "2025-06-06T05:06:19.532260",
+      "status": "unchanged",
+      "etag": "W/\"bd6e45daa9fc4c82b75d9d214e70e1c9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/assetsresult/error": {
+      "hash": "76456fe3ef6664459b859b143ab8e2ce24a49a2a3bca7a161fcf582d2164c8ab",
+      "last_checked": "2025-06-06T05:06:19.532260",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/assetsresult/init(rawvalue:).json": {
+      "hash": "816a8fdc8a22d11728fe24e56f14c3a8e8462f5653cc6f2bfa2d4a241b92aec4",
+      "last_checked": "2025-06-06T05:06:19.951519",
+      "status": "unchanged",
+      "etag": "W/\"34405b77c5b6c29bf540faaebf33039c\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembedding/assetsresult/init(rawvalue:)": {
+      "hash": "816a8fdc8a22d11728fe24e56f14c3a8e8462f5653cc6f2bfa2d4a241b92aec4",
+      "last_checked": "2025-06-06T05:06:19.951519",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult/language.json": {
+      "hash": "7d8ef87647bde8d60d2ae10150ca752199ad7fe52f665bbe381e1a17fa28ee5d",
+      "last_checked": "2025-06-06T05:06:20.369569",
+      "status": "unchanged",
+      "etag": "W/\"67ede6dfb33b10667f80d3ed6d24ba63\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingresult/language": {
+      "hash": "7d8ef87647bde8d60d2ae10150ca752199ad7fe52f665bbe381e1a17fa28ee5d",
+      "last_checked": "2025-06-06T05:06:20.369569",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult/sequencelength.json": {
+      "hash": "947ef313905828a4220c4e14081269eaf0f0d2ae5f8ff8b6c37ab339b5ba27bf",
+      "last_checked": "2025-06-06T05:06:20.789182",
+      "status": "unchanged",
+      "etag": "W/\"831a30e87d111f300f2ec2730ec91af9\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingresult/sequencelength": {
+      "hash": "947ef313905828a4220c4e14081269eaf0f0d2ae5f8ff8b6c37ab339b5ba27bf",
+      "last_checked": "2025-06-06T05:06:20.789182",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult/string.json": {
+      "hash": "da5014176193a2db6b377395b7825d3580d9163f4fc2d09f77628e7c1c4720c7",
+      "last_checked": "2025-06-06T05:06:21.213502",
+      "status": "unchanged",
+      "etag": "W/\"2cefc0e5b5bad948b233e9042d6a2a6d\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingresult/string": {
+      "hash": "da5014176193a2db6b377395b7825d3580d9163f4fc2d09f77628e7c1c4720c7",
+      "last_checked": "2025-06-06T05:06:21.213502",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult/enumeratetokenvectors(in:using:).json": {
+      "hash": "5c72e590f83c33c89c626a3101e1067566b12af37e4f96f4d0de0dbce99e81db",
+      "last_checked": "2025-06-06T05:06:21.617877",
+      "status": "unchanged",
+      "etag": "W/\"d1a7e818dfa8674886e0b0a407f7035a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingresult/enumeratetokenvectors(in:using:)": {
+      "hash": "5c72e590f83c33c89c626a3101e1067566b12af37e4f96f4d0de0dbce99e81db",
+      "last_checked": "2025-06-06T05:06:21.617877",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult/tokenvector(at:).json": {
+      "hash": "b677ae186f4862fa316f2fdbd59383662abec04e3dea8f5601c6f03295dc0bb5",
+      "last_checked": "2025-06-06T05:06:22.010688",
+      "status": "unchanged",
+      "etag": "W/\"ec47bc8c18535aa6c6c90002cb2fc04b\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlcontextualembeddingresult/tokenvector(at:)": {
+      "hash": "b677ae186f4862fa316f2fdbd59383662abec04e3dea8f5601c6f03295dc0bb5",
+      "last_checked": "2025-06-06T05:06:22.010688",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/language.json": {
+      "hash": "ac8fdd0227062bf2115bb1dd0596e67f4a00dcbd82e636eb687d9f3f1e1bd6a2",
+      "last_checked": "2025-06-06T05:06:22.431427",
+      "status": "unchanged",
+      "etag": "W/\"8cdd6b3276582f9ff3c74a51ae1a1915\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodelconfiguration/language": {
+      "hash": "ac8fdd0227062bf2115bb1dd0596e67f4a00dcbd82e636eb687d9f3f1e1bd6a2",
+      "last_checked": "2025-06-06T05:06:22.431427",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/revision.json": {
+      "hash": "3ae6eebc728b2bb9d029b5517b0c138c7be1b17528d7f2e8416ce23139e912c5",
+      "last_checked": "2025-06-06T05:06:22.850390",
+      "status": "unchanged",
+      "etag": "W/\"9741e436afd684bab4e8140e214ea756\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodelconfiguration/revision": {
+      "hash": "3ae6eebc728b2bb9d029b5517b0c138c7be1b17528d7f2e8416ce23139e912c5",
+      "last_checked": "2025-06-06T05:06:22.850390",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/supportedrevisions(for:).json": {
+      "hash": "4000673121b05c09aef63346ad0809b774dbf9fabd3f22a96dc3d8904537f52e",
+      "last_checked": "2025-06-06T05:06:23.297734",
+      "status": "unchanged",
+      "etag": "W/\"64b633afd803d213046cdbe18624263a\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodelconfiguration/supportedrevisions(for:)": {
+      "hash": "4000673121b05c09aef63346ad0809b774dbf9fabd3f22a96dc3d8904537f52e",
+      "last_checked": "2025-06-06T05:06:23.297734",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/currentrevision(for:).json": {
+      "hash": "26e28ff3c59c5da4fd52bcc8cc56d57e06acb4830ce53f02c711b499a0cc1fa5",
+      "last_checked": "2025-06-06T05:06:23.739315",
+      "status": "unchanged",
+      "etag": "W/\"48054a2b1cd3fc39484cada8390f2148\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodelconfiguration/currentrevision(for:)": {
+      "hash": "26e28ff3c59c5da4fd52bcc8cc56d57e06acb4830ce53f02c711b499a0cc1fa5",
+      "last_checked": "2025-06-06T05:06:23.739315",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/type.json": {
+      "hash": "7116485abba9f2fc1cd7376dc630e9d580d8b3efc14c17ed575959a3540f0243",
+      "last_checked": "2025-06-06T05:06:24.145861",
+      "status": "unchanged",
+      "etag": "W/\"fb36dd22c067b5bd594e9642274e1ff5\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodelconfiguration/type": {
+      "hash": "7116485abba9f2fc1cd7376dc630e9d580d8b3efc14c17ed575959a3540f0243",
+      "last_checked": "2025-06-06T05:06:24.145861",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/modeltype.json": {
+      "hash": "f06636947b879b43160aff88729646380f5bfccb006dc9831d707a3ea2a4c07a",
+      "last_checked": "2025-06-06T05:06:24.573023",
+      "status": "unchanged",
+      "etag": "W/\"fa2390f3fe9c0dd36afed631c0ea5715\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/modeltype": {
+      "hash": "f06636947b879b43160aff88729646380f5bfccb006dc9831d707a3ea2a4c07a",
+      "last_checked": "2025-06-06T05:06:24.573023",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nldistancetype/cosine.json": {
+      "hash": "9ce36a4643401ae4f2e3a6945214b6c87f4848314b24595155064332ef416520",
+      "last_checked": "2025-06-06T05:06:24.967835",
+      "status": "unchanged",
+      "etag": "W/\"4443318e683345c4e3050e3dadfc5f3e\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nldistancetype/cosine": {
+      "hash": "9ce36a4643401ae4f2e3a6945214b6c87f4848314b24595155064332ef416520",
+      "last_checked": "2025-06-06T05:06:24.967835",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nldistancetype/init(rawvalue:).json": {
+      "hash": "fe460d801fbd1dbd97f8c48b688f9c7af62ea67182b9047b6a7cf1ac175f467b",
+      "last_checked": "2025-06-06T05:06:25.391901",
+      "status": "unchanged",
+      "etag": "W/\"639efd048cae8fa9e416e50b52607d64\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nldistancetype/init(rawvalue:)": {
+      "hash": "fe460d801fbd1dbd97f8c48b688f9c7af62ea67182b9047b6a7cf1ac175f467b",
+      "last_checked": "2025-06-06T05:06:25.391901",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/modeltype/sequence.json": {
+      "hash": "64e0500d1e63dacb5d077a55e43fe44b26af1f27ff032e09219a74f7b8131a61",
+      "last_checked": "2025-06-06T05:06:25.791637",
+      "status": "unchanged",
+      "etag": "W/\"660ad3b9d5c01005dcd8048408f3defa\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/modeltype/sequence": {
+      "hash": "64e0500d1e63dacb5d077a55e43fe44b26af1f27ff032e09219a74f7b8131a61",
+      "last_checked": "2025-06-06T05:06:25.791637",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/modeltype/classifier.json": {
+      "hash": "75f843213be424055bd5fddafa5b1789eaf1b8261c65b2b8197d05c5e66a979d",
+      "last_checked": "2025-06-06T05:06:26.217317",
+      "status": "unchanged",
+      "etag": "W/\"8dceb878794e965ca3d0af97223436c8\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/modeltype/classifier": {
+      "hash": "75f843213be424055bd5fddafa5b1789eaf1b8261c65b2b8197d05c5e66a979d",
+      "last_checked": "2025-06-06T05:06:26.217317",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/modeltype/init(rawvalue:).json": {
+      "hash": "61384d78d38c32a784391f2d20c63fbb5c92bc3cc3fc6a13c2ffa49f1b75279d",
+      "last_checked": "2025-06-06T05:06:26.661696",
+      "status": "unchanged",
+      "etag": "W/\"9894552339e2c6a960dabbbe37a1eeed\""
+    },
+    "https://developer.apple.com/documentation/naturallanguage/nlmodel/modeltype/init(rawvalue:)": {
+      "hash": "61384d78d38c32a784391f2d20c63fbb5c92bc3cc3fc6a13c2ffa49f1b75279d",
+      "last_checked": "2025-06-06T05:06:26.661696",
+      "status": "unchanged"
+    }
+  }
+}

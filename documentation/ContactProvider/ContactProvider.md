@@ -17,8 +17,6 @@ To provide contacts from your app, add an app extension that extends [`ContactPr
 
 > 💡 **Tip**: Xcode provides a Contact Provider extension template for use in an existing project to add Contact Provider support. Select your project in the Project navigator, choose Editor > Add Target, or click the Add button (+) in the Projects and Targets list, and choose Contact Provider Extension from the iOS templates.
 
-Xcode provides a Contact Provider extension template for use in an existing project to add Contact Provider support. Select your project in the Project navigator, choose Editor > Add Target, or click the Add button (+) in the Projects and Targets list, and choose Contact Provider Extension from the iOS templates.
-
 There are several ways the extension can run and update contacts. Your app can call the manager’s [`signalEnumerator(for:)`](contactprovidermanager/signalenumerator(for:).md), which loads the extension and asks it to provide an updated set of contacts. An example of using this call is when the app knows that new contacts are available from its server; it can then fetch these contacts and have the extension provide them to the system Contacts database. In addition, when connected to power overnight, Contacts schedules time for all enabled contact provider extension domains to sync at low priority.
 
 A person using the device can see providers in the Settings app and selectively enable or disable them. Disabling a contact provider makes its contacts unavailable to other apps. Deleting the app deletes the extension and all of its contacts.

@@ -120,16 +120,17 @@ The scraper works with ALL Apple frameworks:
 - Metal
 - ARKit
 - Core ML
-- And 150+ more!
+- And 340+ more! (341 frameworks total)
 
-## Performance (Optimized June 2025)
+## Performance (Production Ready)
 
-With our optimized JSON API approach:
-- **Rate limiting**: 0.2s delays (5 pages/sec), adapts down to 0.16s
+With our production-tested JSON API approach:
+- **Rate limiting**: 0.2s delays (5 pages/sec), adaptive down to 0.1s
 - **Concurrent processing**: 10 parallel requests
-- **SwiftUI pilot**: ~5 minutes for 1,500 pages
-- **Full deployment**: 100,000+ pages in ~3 hours
-- **Memory efficient**: URL cache cleanup for large-scale operation
+- **SwiftUI**: ~5 minutes for 2,800+ pages
+- **Full deployment**: 278,778 pages completed successfully
+- **ETag optimization**: Incremental updates in ~30 minutes
+- **Memory efficient**: Streaming processing with cleanup
 - **No browser overhead**: Direct HTTP to JSON endpoints
 
 ## Next Steps

@@ -1,4 +1,4 @@
-Completed scraping Visionos Release Notes!
-Total pages scraped: 11
-Pages skipped (unchanged): 1
+Completed scraping visionOS Release Notes!
+Total pages scraped: 0
+Pages skipped (unchanged): 2
 Pages failed: 0

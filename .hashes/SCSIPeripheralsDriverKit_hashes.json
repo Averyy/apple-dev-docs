@@ -1,0 +1,861 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T14:03:29.353247",
+    "total_pages": 155,
+    "etags_collected": "2025-06-07T14:03:29.353251"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00.json": {
+      "hash": "36cb1a57fbe079d9c09ecfc64f0e5f7d6390eef3b3fca2e58401f63b08d0dcbf",
+      "last_checked": "2025-06-06T07:35:38.835153",
+      "status": "unchanged",
+      "etag": "W/\"8476ee1b6f8c4d9e57f9cbc97f6ed35f\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00": {
+      "hash": "36cb1a57fbe079d9c09ecfc64f0e5f7d6390eef3b3fca2e58401f63b08d0dcbf",
+      "last_checked": "2025-06-06T07:35:38.835153",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05.json": {
+      "hash": "8f132d54a2d57b5b20d0669f23f5f3c84f0c14cbc784022f78a4ad3640fac7ff",
+      "last_checked": "2025-06-06T07:35:39.217265",
+      "status": "unchanged",
+      "etag": "W/\"85639b5ffda58f8b13e5fa0ebcccba67\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05": {
+      "hash": "8f132d54a2d57b5b20d0669f23f5f3c84f0c14cbc784022f78a4ad3640fac7ff",
+      "last_checked": "2025-06-06T07:35:39.217265",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsi-commands.json": {
+      "hash": "0527afceeba1d8c20d2bea65416f4762b5b88efbcad4dd34f3522fcc5c24e3b7",
+      "last_checked": "2025-06-06T07:35:39.622847",
+      "status": "unchanged",
+      "etag": "W/\"8cf3a1f0ff83156ae8db9c94aabc2bea\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsi-commands": {
+      "hash": "0527afceeba1d8c20d2bea65416f4762b5b88efbcad4dd34f3522fcc5c24e3b7",
+      "last_checked": "2025-06-06T07:35:39.622847",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07.json": {
+      "hash": "3ea971cbff1707aabaf45c19f9d452307d367b74547c2d806fa5ea241c5f7bcb",
+      "last_checked": "2025-06-06T07:35:40.036422",
+      "status": "unchanged",
+      "etag": "W/\"e49d3c92d0a52b845000a6f9e0ccb7fd\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07": {
+      "hash": "3ea971cbff1707aabaf45c19f9d452307d367b74547c2d806fa5ea241c5f7bcb",
+      "last_checked": "2025-06-06T07:35:40.036422",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsiperipheralsdriverkit-enumerations.json": {
+      "hash": "661d3532e43c5ff0157dfa9b965f84532c478bb73f69b0dac421c39914cdd7cd",
+      "last_checked": "2025-06-06T07:35:40.401739",
+      "status": "unchanged",
+      "etag": "W/\"dfc0e16e555b8be4fe9fd00e76a9ca27\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsiperipheralsdriverkit-enumerations": {
+      "hash": "661d3532e43c5ff0157dfa9b965f84532c478bb73f69b0dac421c39914cdd7cd",
+      "last_checked": "2025-06-06T07:35:40.401739",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsiperipheralsdriverkit-data-types.json": {
+      "hash": "663a7dee7f11e818c98c3e293e57fa15158a3cc1a7261f9e09ab500388b804f6",
+      "last_checked": "2025-06-06T07:35:40.787091",
+      "status": "unchanged",
+      "etag": "W/\"098edbc3685a110e375ae2ff2f0c79f6\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsiperipheralsdriverkit-data-types": {
+      "hash": "663a7dee7f11e818c98c3e293e57fa15158a3cc1a7261f9e09ab500388b804f6",
+      "last_checked": "2025-06-06T07:35:40.787091",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userdeterminedevicecharacteristics.json": {
+      "hash": "2ed26b011cbe899deb0019a726049985c7b71c917fe945f50680b1b90c53ea1c",
+      "last_checked": "2025-06-06T07:35:41.143968",
+      "status": "unchanged",
+      "etag": "W/\"0ebb32817cdd65bc44ea82adb5109bdd\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userdeterminedevicecharacteristics": {
+      "hash": "2ed26b011cbe899deb0019a726049985c7b71c917fe945f50680b1b90c53ea1c",
+      "last_checked": "2025-06-06T07:35:41.143968",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userresetdevice.json": {
+      "hash": "ff23fddb1688683ed6556bf4006628585b15e881ded5329d9a83b7e3127c07db",
+      "last_checked": "2025-06-06T07:35:41.493321",
+      "status": "unchanged",
+      "etag": "W/\"e11478b0f82abe5775802cbde2cde947\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userresetdevice": {
+      "hash": "ff23fddb1688683ed6556bf4006628585b15e881ded5329d9a83b7e3127c07db",
+      "last_checked": "2025-06-06T07:35:41.493321",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/usersendcdb.json": {
+      "hash": "f17d7757fd038b737d96bf80d72bc8542d3e946bd5827ddc3c138973a50a6695",
+      "last_checked": "2025-06-06T07:35:41.877485",
+      "status": "unchanged",
+      "etag": "W/\"c5b0aca10921b1c1b82636496bbd7746\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/usersendcdb": {
+      "hash": "f17d7757fd038b737d96bf80d72bc8542d3e946bd5827ddc3c138973a50a6695",
+      "last_checked": "2025-06-06T07:35:41.877485",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00outparameters.json": {
+      "hash": "efb02f311d5ee767ef57c9787a954437e1485d89f19c6b12e28606666b13df2a",
+      "last_checked": "2025-06-06T07:35:42.236450",
+      "status": "unchanged",
+      "etag": "W/\"27a9200da45c92915dcb050653593a52\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype00outparameters": {
+      "hash": "efb02f311d5ee767ef57c9787a954437e1485d89f19c6b12e28606666b13df2a",
+      "last_checked": "2025-06-06T07:35:42.236450",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00outversion.json": {
+      "hash": "11998a7443352b5bbd9216287117722cc70a6426e04385eb45435f5549ac5ed0",
+      "last_checked": "2025-06-06T07:35:42.597215",
+      "status": "unchanged",
+      "etag": "W/\"d86c817fb93a41951a3a2f5ed840bd00\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype00outversion": {
+      "hash": "11998a7443352b5bbd9216287117722cc70a6426e04385eb45435f5549ac5ed0",
+      "last_checked": "2025-06-06T07:35:42.597215",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00inparameters.json": {
+      "hash": "94546e756443c85ad5efcd176e8aba0e59554e7aded29c03a994f0c189377eaa",
+      "last_checked": "2025-06-06T07:35:42.994335",
+      "status": "unchanged",
+      "etag": "W/\"f77291bcff3ec3a8c58de777bc13b5ca\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype00inparameters": {
+      "hash": "94546e756443c85ad5efcd176e8aba0e59554e7aded29c03a994f0c189377eaa",
+      "last_checked": "2025-06-06T07:35:42.994335",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00inversion.json": {
+      "hash": "6443b41bc75a4c7365806e18351027e509fe20f55666eaacc2edc465a0072794",
+      "last_checked": "2025-06-06T07:35:43.388515",
+      "status": "unchanged",
+      "etag": "W/\"33cf72153a0ac7e681640418b3dd03bf\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype00inversion": {
+      "hash": "6443b41bc75a4c7365806e18351027e509fe20f55666eaacc2edc465a0072794",
+      "last_checked": "2025-06-06T07:35:43.388515",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/usersuspendservices.json": {
+      "hash": "da8a3f7df6c035a3fa4bcad7e8e5a4ef492cb93b9ab32f3ce663f846cf3b4406",
+      "last_checked": "2025-06-06T07:35:43.783997",
+      "status": "unchanged",
+      "etag": "W/\"c96c5c1cdb98b507bcd07d70f832bc9e\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/usersuspendservices": {
+      "hash": "da8a3f7df6c035a3fa4bcad7e8e5a4ef492cb93b9ab32f3ce663f846cf3b4406",
+      "last_checked": "2025-06-06T07:35:43.783997",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userresumeservices.json": {
+      "hash": "2d8acec9d45903365747a3e85508d24c6a8b1344f6815d66a1623a10f15ce276",
+      "last_checked": "2025-06-06T07:35:44.190202",
+      "status": "unchanged",
+      "etag": "W/\"6d43ae773539d4e5aac1b83247ec1b15\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userresumeservices": {
+      "hash": "2d8acec9d45903365747a3e85508d24c6a8b1344f6815d66a1623a10f15ce276",
+      "last_checked": "2025-06-06T07:35:44.190202",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userreportmediumblocksize.json": {
+      "hash": "0f7edbb083f4cdcdcf8b1767291fffa762625546fc7619e247b139eddbcb9f12",
+      "last_checked": "2025-06-06T07:35:44.570651",
+      "status": "unchanged",
+      "etag": "W/\"000dfa85902a3c88f67841a1c8a5fbe4\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype00/userreportmediumblocksize": {
+      "hash": "0f7edbb083f4cdcdcf8b1767291fffa762625546fc7619e247b139eddbcb9f12",
+      "last_checked": "2025-06-06T07:35:44.570651",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userinitializedevicesupport.json": {
+      "hash": "5051cb62401c94685a6f684652d0d38e6bcb8b6549adcfc87d8218580b65dd0e",
+      "last_checked": "2025-06-06T07:35:44.956950",
+      "status": "unchanged",
+      "etag": "W/\"cc356cecdb5135c655dab972ec3fc87e\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userinitializedevicesupport": {
+      "hash": "5051cb62401c94685a6f684652d0d38e6bcb8b6549adcfc87d8218580b65dd0e",
+      "last_checked": "2025-06-06T07:35:44.956950",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userresetdevice.json": {
+      "hash": "d11ab978405812f618ff216baf2201cf19943d50d6884bd0f3397ff3db885b19",
+      "last_checked": "2025-06-06T07:35:45.314817",
+      "status": "unchanged",
+      "etag": "W/\"65eaf1229a85cf2b802e39bd6d2fcf5c\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userresetdevice": {
+      "hash": "d11ab978405812f618ff216baf2201cf19943d50d6884bd0f3397ff3db885b19",
+      "last_checked": "2025-06-06T07:35:45.314817",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/usersendcdb.json": {
+      "hash": "d2579565d4182d21548865981a26662fc7a243e1b1acdba01239d53fba83670e",
+      "last_checked": "2025-06-06T07:35:45.640995",
+      "status": "unchanged",
+      "etag": "W/\"7a5774c2f6bbe2d04e808ecd77e0fbfe\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/usersendcdb": {
+      "hash": "d2579565d4182d21548865981a26662fc7a243e1b1acdba01239d53fba83670e",
+      "last_checked": "2025-06-06T07:35:45.640995",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05outparameters.json": {
+      "hash": "d390dcaaca7ab7f4d9e9e061806e88ef8fe861e6f825d80bfd05bb38bef684ce",
+      "last_checked": "2025-06-06T07:35:46.029098",
+      "status": "unchanged",
+      "etag": "W/\"ca9257a8629e24df8af0bb3402f6c7bd\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype05outparameters": {
+      "hash": "d390dcaaca7ab7f4d9e9e061806e88ef8fe861e6f825d80bfd05bb38bef684ce",
+      "last_checked": "2025-06-06T07:35:46.029098",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05outversion.json": {
+      "hash": "5b0b00bb8253ee333a380384396d71e36bf2080428a6c2c466d75936907f3137",
+      "last_checked": "2025-06-06T07:35:46.354129",
+      "status": "unchanged",
+      "etag": "W/\"761a2c5337e7c89e685f08b72d11de15\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype05outversion": {
+      "hash": "5b0b00bb8253ee333a380384396d71e36bf2080428a6c2c466d75936907f3137",
+      "last_checked": "2025-06-06T07:35:46.354129",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05inparameters.json": {
+      "hash": "1320785cc86199a8742917ebadd552b123c12166db77c242f161d781b8ec82a5",
+      "last_checked": "2025-06-06T07:35:46.751642",
+      "status": "unchanged",
+      "etag": "W/\"e729d01c725e42c9612b9d846a3e0d80\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype05inparameters": {
+      "hash": "1320785cc86199a8742917ebadd552b123c12166db77c242f161d781b8ec82a5",
+      "last_checked": "2025-06-06T07:35:46.751642",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05inversion.json": {
+      "hash": "54a17603d75519b5c5b097796400349ca93ea4470432622451238ea5bfd858d1",
+      "last_checked": "2025-06-06T07:35:47.141195",
+      "status": "unchanged",
+      "etag": "W/\"4b3ac2f5ceaf4edd3808837f38bbbe32\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype05inversion": {
+      "hash": "54a17603d75519b5c5b097796400349ca93ea4470432622451238ea5bfd858d1",
+      "last_checked": "2025-06-06T07:35:47.141195",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/usersuspendservices.json": {
+      "hash": "f4de615fdfacecaa7ed0c53f8e66546f0f315262604124b85c492667626c7f24",
+      "last_checked": "2025-06-06T07:35:47.499462",
+      "status": "unchanged",
+      "etag": "W/\"de90a67319d7599831c30b818e8208da\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/usersuspendservices": {
+      "hash": "f4de615fdfacecaa7ed0c53f8e66546f0f315262604124b85c492667626c7f24",
+      "last_checked": "2025-06-06T07:35:47.499462",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userresumeservices.json": {
+      "hash": "b582cd43f0428c4984dfe4eb4fb3248a09359326899e8ec4ef31ff5957f8ee11",
+      "last_checked": "2025-06-06T07:35:47.878656",
+      "status": "unchanged",
+      "etag": "W/\"fc6768f0df903d5b9cb33fe26baf7f31\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userresumeservices": {
+      "hash": "b582cd43f0428c4984dfe4eb4fb3248a09359326899e8ec4ef31ff5957f8ee11",
+      "last_checked": "2025-06-06T07:35:47.878656",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userreportmediumblocksize.json": {
+      "hash": "13d24d5492da4348ea987536e1c38a35f73c13b12be153201e02ceee5661a8cf",
+      "last_checked": "2025-06-06T07:35:48.278529",
+      "status": "unchanged",
+      "etag": "W/\"51025cc9218d11563a2c2765220b0127\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype05/userreportmediumblocksize": {
+      "hash": "13d24d5492da4348ea987536e1c38a35f73c13b12be153201e02ceee5661a8cf",
+      "last_checked": "2025-06-06T07:35:48.278529",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/test_unit_ready.json": {
+      "hash": "d833fa5f63cfc943f1537b4072ba67b3b196cb4bf92d25502dacbb6d1410c8d8",
+      "last_checked": "2025-06-06T07:35:48.704515",
+      "status": "unchanged",
+      "etag": "W/\"99de595a4660743b462a1b73ff4cfac8\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/test_unit_ready": {
+      "hash": "d833fa5f63cfc943f1537b4072ba67b3b196cb4bf92d25502dacbb6d1410c8d8",
+      "last_checked": "2025-06-06T07:35:48.704515",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/inquiry.json": {
+      "hash": "372044ac453a1bf1c468724e78dc55effefc4465f234fee26c6d3227553ad967",
+      "last_checked": "2025-06-06T07:35:49.083466",
+      "status": "unchanged",
+      "etag": "W/\"9695193122d4f43cda62ee27677f0b43\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/inquiry": {
+      "hash": "372044ac453a1bf1c468724e78dc55effefc4465f234fee26c6d3227553ad967",
+      "last_checked": "2025-06-06T07:35:49.083466",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/request_sense.json": {
+      "hash": "62446aadd74a90b02c21d4937ef89d69572f6ce9ef0e00caae423acfa09a389a",
+      "last_checked": "2025-06-06T07:35:49.435108",
+      "status": "unchanged",
+      "etag": "W/\"65faf43f3352d215b72fc27935487294\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/request_sense": {
+      "hash": "62446aadd74a90b02c21d4937ef89d69572f6ce9ef0e00caae423acfa09a389a",
+      "last_checked": "2025-06-06T07:35:49.435108",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/read_10.json": {
+      "hash": "68a575b65306c6a9b6a8be769bda6850fa4525a78d333b389299133df72d8352",
+      "last_checked": "2025-06-06T07:35:49.798419",
+      "status": "unchanged",
+      "etag": "W/\"280596a33c7e0b85ca8df8b7df795f98\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/read_10": {
+      "hash": "68a575b65306c6a9b6a8be769bda6850fa4525a78d333b389299133df72d8352",
+      "last_checked": "2025-06-06T07:35:49.798419",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/write_10.json": {
+      "hash": "f5dacd313803b2578b511591414cd932fb37e9a3cbace5bd39065e7cc88a2bbd",
+      "last_checked": "2025-06-06T07:35:50.183435",
+      "status": "unchanged",
+      "etag": "W/\"9bb061e99730351e315ae8e85a87ecb9\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/write_10": {
+      "hash": "f5dacd313803b2578b511591414cd932fb37e9a3cbace5bd39065e7cc88a2bbd",
+      "last_checked": "2025-06-06T07:35:50.183435",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/read_capacity.json": {
+      "hash": "a7ad582515eb5b72dc85ad171769c8f7cebafe0dc9bafb8dc93dea8c33289f76",
+      "last_checked": "2025-06-06T07:35:50.619513",
+      "status": "unchanged",
+      "etag": "W/\"a35ad0fb88a1dce27af334f72b3f7f36\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/read_capacity": {
+      "hash": "a7ad582515eb5b72dc85ad171769c8f7cebafe0dc9bafb8dc93dea8c33289f76",
+      "last_checked": "2025-06-06T07:35:50.619513",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_enable_disable_operations.json": {
+      "hash": "e5739c639041da21b2cda22742f661775c73f3e558122d3eb6af32b6ac1f40d0",
+      "last_checked": "2025-06-06T07:35:50.988233",
+      "status": "unchanged",
+      "etag": "W/\"6e218c7bcbc58d672807075d678d7fdb\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_enable_disable_operations": {
+      "hash": "e5739c639041da21b2cda22742f661775c73f3e558122d3eb6af32b6ac1f40d0",
+      "last_checked": "2025-06-06T07:35:50.988233",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_enable_disable_autosave.json": {
+      "hash": "ff51a2c526de55b6a5da00069e8a1de1c58694a8d25b11fe82669e0423e355d2",
+      "last_checked": "2025-06-06T07:35:51.394292",
+      "status": "unchanged",
+      "etag": "W/\"0f6c74a5fa4a8c450d19eba75a542b4d\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_enable_disable_autosave": {
+      "hash": "ff51a2c526de55b6a5da00069e8a1de1c58694a8d25b11fe82669e0423e355d2",
+      "last_checked": "2025-06-06T07:35:51.394292",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_return_status.json": {
+      "hash": "a0ffd8108599c803c35d1733324cece6e884ab9c4192380d93caced3265a6b50",
+      "last_checked": "2025-06-06T07:35:51.758589",
+      "status": "unchanged",
+      "etag": "W/\"d1df39ef374664aad5e1bc7d0eaf80c8\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_return_status": {
+      "hash": "a0ffd8108599c803c35d1733324cece6e884ab9c4192380d93caced3265a6b50",
+      "last_checked": "2025-06-06T07:35:51.758589",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_execute_offline_immediate.json": {
+      "hash": "eb9893231a4d25441f1f2aba04bdd7b57e43b19323e8068bbd9d4c2ea8cc645f",
+      "last_checked": "2025-06-06T07:35:52.153740",
+      "status": "unchanged",
+      "etag": "W/\"f1fbb15c462c1c4adc96f5fa93718d3f\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_execute_offline_immediate": {
+      "hash": "eb9893231a4d25441f1f2aba04bdd7b57e43b19323e8068bbd9d4c2ea8cc645f",
+      "last_checked": "2025-06-06T07:35:52.153740",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_read_data.json": {
+      "hash": "dbb5c9a839a88ca17178e4f35167a5bb230ac6a0cd0a6f246591d336bceb483f",
+      "last_checked": "2025-06-06T07:35:52.596118",
+      "status": "unchanged",
+      "etag": "W/\"e604e94542499c279153546419f464f1\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_read_data": {
+      "hash": "dbb5c9a839a88ca17178e4f35167a5bb230ac6a0cd0a6f246591d336bceb483f",
+      "last_checked": "2025-06-06T07:35:52.596118",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_read_data_thresholds.json": {
+      "hash": "c8fc06d0a33dff0ab94a439ed1f268f5e0111feef7d868fdb50d4dadb096b3ce",
+      "last_checked": "2025-06-06T07:35:52.924902",
+      "status": "unchanged",
+      "etag": "W/\"68aaab859442bdb73f8b5339a1c8582f\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_read_data_thresholds": {
+      "hash": "c8fc06d0a33dff0ab94a439ed1f268f5e0111feef7d868fdb50d4dadb096b3ce",
+      "last_checked": "2025-06-06T07:35:52.924902",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_read_log_at_address.json": {
+      "hash": "b8efbaeb940a416655823e97922a96bf366e0bb0c23fb77b5c9ec21d90efe05d",
+      "last_checked": "2025-06-06T07:35:53.326673",
+      "status": "unchanged",
+      "etag": "W/\"701b4826c81adc295593961688220e23\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_read_log_at_address": {
+      "hash": "b8efbaeb940a416655823e97922a96bf366e0bb0c23fb77b5c9ec21d90efe05d",
+      "last_checked": "2025-06-06T07:35:53.326673",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_write_log_at_address.json": {
+      "hash": "128f89bfb3bbcb367b041885ab0e391aa3192e45b9097080dcbe414d619f832a",
+      "last_checked": "2025-06-06T07:35:53.679336",
+      "status": "unchanged",
+      "etag": "W/\"0f9f4f212628e8f8ec329c8d92f96496\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_write_log_at_address": {
+      "hash": "128f89bfb3bbcb367b041885ab0e391aa3192e45b9097080dcbe414d619f832a",
+      "last_checked": "2025-06-06T07:35:53.679336",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_get_identify_data.json": {
+      "hash": "2e4d0b2f3e0c98681c4748e2cd2abe56a485cd6185c135e014d3df323087783a",
+      "last_checked": "2025-06-06T07:35:54.039284",
+      "status": "unchanged",
+      "etag": "W/\"25aadf76dc7987d25393ab03ed9b02c3\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_get_identify_data": {
+      "hash": "2e4d0b2f3e0c98681c4748e2cd2abe56a485cd6185c135e014d3df323087783a",
+      "last_checked": "2025-06-06T07:35:54.039284",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/setcommandcdb.json": {
+      "hash": "5d9c79fb9c3c9cd50c6f66f55142a49529efc00bf974096048780ce67be7ff6b",
+      "last_checked": "2025-06-06T07:35:54.387497",
+      "status": "unchanged",
+      "etag": "W/\"96be5cb68de7c291c7929ca740ed06c7\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/setcommandcdb": {
+      "hash": "5d9c79fb9c3c9cd50c6f66f55142a49529efc00bf974096048780ce67be7ff6b",
+      "last_checked": "2025-06-06T07:35:54.387497",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters.json": {
+      "hash": "fa36f17e0534725454544ecabe03274a4f850f46b3581d66db07b9df223ff251",
+      "last_checked": "2025-06-06T07:35:54.788541",
+      "status": "unchanged",
+      "etag": "W/\"c7506327b6d86fea909aaf5d6e2652ff\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters": {
+      "hash": "fa36f17e0534725454544ecabe03274a4f850f46b3581d66db07b9df223ff251",
+      "last_checked": "2025-06-06T07:35:54.788541",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters.json": {
+      "hash": "63b857ae6f19ebe5b17fdf2face422bbbb117a5fb3da450124a84990f6cef3db",
+      "last_checked": "2025-06-06T07:35:55.220759",
+      "status": "unchanged",
+      "etag": "W/\"bdb97183063c95ac0d2a4629d1ab6131\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceinparameters": {
+      "hash": "63b857ae6f19ebe5b17fdf2face422bbbb117a5fb3da450124a84990f6cef3db",
+      "last_checked": "2025-06-06T07:35:55.220759",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userdeterminedevicecharacteristics.json": {
+      "hash": "3e4c3de441003eeee8a79586a367f972bdeb429a79d5d91409885cdc09be6dbe",
+      "last_checked": "2025-06-06T07:35:55.594567",
+      "status": "unchanged",
+      "etag": "W/\"ab134a676d2af3ab64fb2ed72e1f666b\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userdeterminedevicecharacteristics": {
+      "hash": "3e4c3de441003eeee8a79586a367f972bdeb429a79d5d91409885cdc09be6dbe",
+      "last_checked": "2025-06-06T07:35:55.594567",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userreportmediumblocksize.json": {
+      "hash": "5f372cb4f81e1b43f2bba27677573c25ebcc0a22b4af4a03bcb206cdccd05c3c",
+      "last_checked": "2025-06-06T07:35:56.016050",
+      "status": "unchanged",
+      "etag": "W/\"4f74496e94c533ca42e5dbb26d16f199\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userreportmediumblocksize": {
+      "hash": "5f372cb4f81e1b43f2bba27677573c25ebcc0a22b4af4a03bcb206cdccd05c3c",
+      "last_checked": "2025-06-06T07:35:56.016050",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userresetdevice.json": {
+      "hash": "22e68b45ca84eafa88a456064c95af11a3f048b3553ade3309b8adc300cf79b3",
+      "last_checked": "2025-06-06T07:35:56.419667",
+      "status": "unchanged",
+      "etag": "W/\"78241e829a626741d86772d64dfa5120\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userresetdevice": {
+      "hash": "22e68b45ca84eafa88a456064c95af11a3f048b3553ade3309b8adc300cf79b3",
+      "last_checked": "2025-06-06T07:35:56.419667",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userresumeservices.json": {
+      "hash": "82921f66a63ca55d7954d8893a80fe11a037d02bee530bacb15ac7c01ec6288b",
+      "last_checked": "2025-06-06T07:35:56.849869",
+      "status": "unchanged",
+      "etag": "W/\"ee0e72ab38e8a9aab3cb5bbf74797301\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/userresumeservices": {
+      "hash": "82921f66a63ca55d7954d8893a80fe11a037d02bee530bacb15ac7c01ec6288b",
+      "last_checked": "2025-06-06T07:35:56.849869",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/usersendcdb.json": {
+      "hash": "0ddf5113f5f4e92eebd14f754571bf8dedf275df84556cc8c2a326d38b77c9ee",
+      "last_checked": "2025-06-06T07:35:57.186055",
+      "status": "unchanged",
+      "etag": "W/\"8edd146499a4301979154383fe1fbdc8\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/usersendcdb": {
+      "hash": "0ddf5113f5f4e92eebd14f754571bf8dedf275df84556cc8c2a326d38b77c9ee",
+      "last_checked": "2025-06-06T07:35:57.186055",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/usersuspendservices.json": {
+      "hash": "2e6ea7cc6e130ad3c7974e10dc0b723a15b75fd557b32aa6ede717748118ddac",
+      "last_checked": "2025-06-06T07:35:57.546825",
+      "status": "unchanged",
+      "etag": "W/\"14a3f2a7a927f5ffc6d622d702b30b47\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/iouserscsiperipheraldevicetype07/usersuspendservices": {
+      "hash": "2e6ea7cc6e130ad3c7974e10dc0b723a15b75fd557b32aa6ede717748118ddac",
+      "last_checked": "2025-06-06T07:35:57.546825",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07inversion.json": {
+      "hash": "3a1679694d9296fc2a0d5c20a1afd42660c46fcfcce4b0ea5dffa2535c2e6a90",
+      "last_checked": "2025-06-06T07:35:57.918010",
+      "status": "unchanged",
+      "etag": "W/\"526509e15435a430ae9f5bfffb071ca1\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype07inversion": {
+      "hash": "3a1679694d9296fc2a0d5c20a1afd42660c46fcfcce4b0ea5dffa2535c2e6a90",
+      "last_checked": "2025-06-06T07:35:57.918010",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07outversion.json": {
+      "hash": "261147b878cda0ed320149e0553979a214410ffe24d98766a2e2d278d3fa6675",
+      "last_checked": "2025-06-06T07:35:58.269203",
+      "status": "unchanged",
+      "etag": "W/\"c8ea38cf484fc5682428b7e07bbe8830\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype07outversion": {
+      "hash": "261147b878cda0ed320149e0553979a214410ffe24d98766a2e2d278d3fa6675",
+      "last_checked": "2025-06-06T07:35:58.269203",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07inparameters.json": {
+      "hash": "4816cc28370565c13c79853419e2a175920dc10cadf739db9b79e92ced17bb2d",
+      "last_checked": "2025-06-06T07:35:58.659895",
+      "status": "unchanged",
+      "etag": "W/\"cea036462850f83f2c00702cc6f99131\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype07inparameters": {
+      "hash": "4816cc28370565c13c79853419e2a175920dc10cadf739db9b79e92ced17bb2d",
+      "last_checked": "2025-06-06T07:35:58.659895",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07outparameters.json": {
+      "hash": "7c98b1ed4920234d571ebc72fd37e9965241be653e7511660e20c559f42ddc7b",
+      "last_checked": "2025-06-06T07:35:59.098787",
+      "status": "unchanged",
+      "etag": "W/\"cd06d90069070741eb40408342609bd8\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype07outparameters": {
+      "hash": "7c98b1ed4920234d571ebc72fd37e9965241be653e7511660e20c559f42ddc7b",
+      "last_checked": "2025-06-06T07:35:59.098787",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00outversion/kscsitype00outcurrentversion1.json": {
+      "hash": "3d55efbb23c7a49d16cb10e35e2bcd586908d61787e760a6835de48d290d2b1d",
+      "last_checked": "2025-06-06T07:35:59.510946",
+      "status": "unchanged",
+      "etag": "W/\"06d64d8b4e80f71599104514ea771df5\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype00outversion/kscsitype00outcurrentversion1": {
+      "hash": "3d55efbb23c7a49d16cb10e35e2bcd586908d61787e760a6835de48d290d2b1d",
+      "last_checked": "2025-06-06T07:35:59.510946",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype00inversion/kscsitype00incurrentversion1.json": {
+      "hash": "d6e0a7ffda532a96837b4cd63db7c353ea6cb2c6a0cdb1bf31bf6f03702e571c",
+      "last_checked": "2025-06-06T07:35:59.919143",
+      "status": "unchanged",
+      "etag": "W/\"d6f773a89c4fd4d10a38deba6f0e45e6\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype00inversion/kscsitype00incurrentversion1": {
+      "hash": "d6e0a7ffda532a96837b4cd63db7c353ea6cb2c6a0cdb1bf31bf6f03702e571c",
+      "last_checked": "2025-06-06T07:35:59.919143",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05outversion/kscsitype05outcurrentversion1.json": {
+      "hash": "c352b5e32e3e292b924e7295c69f79a4dfc0a534c0dc410b2b16f25cefa6f6ab",
+      "last_checked": "2025-06-06T07:36:00.288452",
+      "status": "unchanged",
+      "etag": "W/\"7bd4be777466ae90587a7193af02e7ae\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype05outversion/kscsitype05outcurrentversion1": {
+      "hash": "c352b5e32e3e292b924e7295c69f79a4dfc0a534c0dc410b2b16f25cefa6f6ab",
+      "last_checked": "2025-06-06T07:36:00.288452",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype05inversion/kscsitype05incurrentversion1.json": {
+      "hash": "e38aa156b6fe1452ef86ecdad6144ae749827b66e045f4c8958f7b548529774f",
+      "last_checked": "2025-06-06T07:36:00.651070",
+      "status": "unchanged",
+      "etag": "W/\"17cdf5549c7fd80d31bad032a6c47bdd\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype05inversion/kscsitype05incurrentversion1": {
+      "hash": "e38aa156b6fe1452ef86ecdad6144ae749827b66e045f4c8958f7b548529774f",
+      "last_checked": "2025-06-06T07:36:00.651070",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/flogicalunitnumber.json": {
+      "hash": "298390014bacce7a40186e928943410351790fdc31c51bfac37b6a51b9357ccd",
+      "last_checked": "2025-06-06T07:36:01.028098",
+      "status": "unchanged",
+      "etag": "W/\"aad16167ad1b3aa92061b283049edbe3\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/flogicalunitnumber": {
+      "hash": "298390014bacce7a40186e928943410351790fdc31c51bfac37b6a51b9357ccd",
+      "last_checked": "2025-06-06T07:36:01.028098",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/ftimeoutduration.json": {
+      "hash": "429dcb510f39e30239c768f067f9532972073e4a28033a93deaecd70f0890e82",
+      "last_checked": "2025-06-06T07:36:01.465330",
+      "status": "unchanged",
+      "etag": "W/\"68f47a2a605f5eba80cc2a2746ddd61c\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/ftimeoutduration": {
+      "hash": "429dcb510f39e30239c768f067f9532972073e4a28033a93deaecd70f0890e82",
+      "last_checked": "2025-06-06T07:36:01.465330",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fcommanddescriptorblock.json": {
+      "hash": "0f6d0341ce193ee5133e7a14512c9e371d5044b4d0ccaa2389eb33e47de5b8a6",
+      "last_checked": "2025-06-06T07:36:01.875593",
+      "status": "unchanged",
+      "etag": "W/\"070dd86d79174fa2f6e6584f8cce571e\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fcommanddescriptorblock": {
+      "hash": "0f6d0341ce193ee5133e7a14512c9e371d5044b4d0ccaa2389eb33e47de5b8a6",
+      "last_checked": "2025-06-06T07:36:01.875593",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/frequestedbytecountoftransfer.json": {
+      "hash": "a96ceebeb194f3cfdcd54319f763acd8c7e917e13e1abda6dae96418f4d77414",
+      "last_checked": "2025-06-06T07:36:02.256134",
+      "status": "unchanged",
+      "etag": "W/\"356f9a6008113de11889617d1f29d833\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/frequestedbytecountoftransfer": {
+      "hash": "a96ceebeb194f3cfdcd54319f763acd8c7e917e13e1abda6dae96418f4d77414",
+      "last_checked": "2025-06-06T07:36:02.256134",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fbufferdirection.json": {
+      "hash": "af63e9bd62e688d8c818ec15bd9449463797abfd29878dd0c19daf9054d0f9e0",
+      "last_checked": "2025-06-06T07:36:02.617614",
+      "status": "unchanged",
+      "etag": "W/\"eb2c3a4e812af3b0122caaad01f237b9\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fbufferdirection": {
+      "hash": "af63e9bd62e688d8c818ec15bd9449463797abfd29878dd0c19daf9054d0f9e0",
+      "last_checked": "2025-06-06T07:36:02.617614",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fdatatransferdirection.json": {
+      "hash": "f031fa87b852f2783e98d5d9d7f19f5188f790264cff012741cbd52851226696",
+      "last_checked": "2025-06-06T07:36:03.012434",
+      "status": "unchanged",
+      "etag": "W/\"9cc6cf6078e49b26c7e1ab91d71a19f4\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fdatatransferdirection": {
+      "hash": "f031fa87b852f2783e98d5d9d7f19f5188f790264cff012741cbd52851226696",
+      "last_checked": "2025-06-06T07:36:03.012434",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fsenselengthrequested.json": {
+      "hash": "fb3691343d7140a44bd7e202ae882625cd064aeb9dbd8c078e5857dfc5749dec",
+      "last_checked": "2025-06-06T07:36:03.416173",
+      "status": "unchanged",
+      "etag": "W/\"d19540b848556e18b3e0f54edd3fc28f\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fsenselengthrequested": {
+      "hash": "fb3691343d7140a44bd7e202ae882625cd064aeb9dbd8c078e5857dfc5749dec",
+      "last_checked": "2025-06-06T07:36:03.416173",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fdatabufferaddr.json": {
+      "hash": "cd0e29b3660d0ad9c28dec12ea2846361a389ea35148e2a946f312dde27c9b8f",
+      "last_checked": "2025-06-06T07:36:03.774807",
+      "status": "unchanged",
+      "etag": "W/\"e5d09d6c0d2cb740a1870cb2c86d5dd4\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fdatabufferaddr": {
+      "hash": "cd0e29b3660d0ad9c28dec12ea2846361a389ea35148e2a946f312dde27c9b8f",
+      "last_checked": "2025-06-06T07:36:03.774807",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fsensebufferaddr.json": {
+      "hash": "b84842c3b470e1f95485fd5b7e3b88dcc59fea85b74be47a39f1e17257b0e349",
+      "last_checked": "2025-06-06T07:36:04.132339",
+      "status": "unchanged",
+      "etag": "W/\"281f2a0387a857b197c4c1147e47d5b4\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/fsensebufferaddr": {
+      "hash": "b84842c3b470e1f95485fd5b7e3b88dcc59fea85b74be47a39f1e17257b0e349",
+      "last_checked": "2025-06-06T07:36:04.132339",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/reserved.json": {
+      "hash": "736b7605f7d4b5cfa453d5a8c6b91f25056203a340c1def6dda2b88bd87e252d",
+      "last_checked": "2025-06-06T07:36:04.514091",
+      "status": "unchanged",
+      "etag": "W/\"f6876bf610250a3ab625bbf16c2afae3\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceoutparameters/reserved": {
+      "hash": "736b7605f7d4b5cfa453d5a8c6b91f25056203a340c1def6dda2b88bd87e252d",
+      "last_checked": "2025-06-06T07:36:04.514091",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters/fcompletionstatus.json": {
+      "hash": "7fb4e762481901734bc9571b4b2fbf636956bc4b151716d2967e6ab5f9a6e8b6",
+      "last_checked": "2025-06-06T07:36:04.906681",
+      "status": "unchanged",
+      "etag": "W/\"3a54dc19778aa87856006f313965d68e\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceinparameters/fcompletionstatus": {
+      "hash": "7fb4e762481901734bc9571b4b2fbf636956bc4b151716d2967e6ab5f9a6e8b6",
+      "last_checked": "2025-06-06T07:36:04.906681",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters/fserviceresponse.json": {
+      "hash": "32618bbeb37fdba9929ec99d8a0ca9ddc3dc0e671cbb01f206f337f31de05f38",
+      "last_checked": "2025-06-06T07:36:05.255225",
+      "status": "unchanged",
+      "etag": "W/\"058633c4243a52ad0e4984d389a911a4\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceinparameters/fserviceresponse": {
+      "hash": "32618bbeb37fdba9929ec99d8a0ca9ddc3dc0e671cbb01f206f337f31de05f38",
+      "last_checked": "2025-06-06T07:36:05.255225",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters/frealizedbytecountoftransfer.json": {
+      "hash": "05c4ae1b347aa0a3faa9842e55e22c7b7835c74770848279b2438b0374b59964",
+      "last_checked": "2025-06-06T07:36:05.650517",
+      "status": "unchanged",
+      "etag": "W/\"8f93dd23fda1177dc27d580aa4e46b9d\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceinparameters/frealizedbytecountoftransfer": {
+      "hash": "05c4ae1b347aa0a3faa9842e55e22c7b7835c74770848279b2438b0374b59964",
+      "last_checked": "2025-06-06T07:36:05.650517",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters/fsensedatavalid.json": {
+      "hash": "b1559008954a67995012373d512ef42b64b306cb5850c0fe06c3211ef1731bd7",
+      "last_checked": "2025-06-06T07:36:06.044687",
+      "status": "unchanged",
+      "etag": "W/\"c47beea4f6467971a1c89afb31a0bf46\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceinparameters/fsensedatavalid": {
+      "hash": "b1559008954a67995012373d512ef42b64b306cb5850c0fe06c3211ef1731bd7",
+      "last_checked": "2025-06-06T07:36:06.044687",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsideviceinparameters/reserved.json": {
+      "hash": "d53d156557313a3e4ff4897819c138c3e1966c08207129ec317bf68604f09a83",
+      "last_checked": "2025-06-06T07:36:06.467372",
+      "status": "unchanged",
+      "etag": "W/\"34b8b67c9a900c144f732c41e168cab1\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsideviceinparameters/reserved": {
+      "hash": "d53d156557313a3e4ff4897819c138c3e1966c08207129ec317bf68604f09a83",
+      "last_checked": "2025-06-06T07:36:06.467372",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07inversion/kscsitype07incurrentversion1.json": {
+      "hash": "2af0e93abb183771e7d4593c101a39efff2e00580c44ef0cb013bb78b08f0cef",
+      "last_checked": "2025-06-06T07:36:06.877243",
+      "status": "unchanged",
+      "etag": "W/\"c4cfb76e2fba719d42c3d22e69b72cc5\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype07inversion/kscsitype07incurrentversion1": {
+      "hash": "2af0e93abb183771e7d4593c101a39efff2e00580c44ef0cb013bb78b08f0cef",
+      "last_checked": "2025-06-06T07:36:06.877243",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsitype07outversion/kscsitype07outcurrentversion1.json": {
+      "hash": "8fad715285300bacd2dbebb2a84502ad0e1b5d35c7c35ee27949d486d469f0e6",
+      "last_checked": "2025-06-06T07:36:07.278523",
+      "status": "unchanged",
+      "etag": "W/\"f74f5d145890604b8e4dd6e6076fc531\""
+    },
+    "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsitype07outversion/kscsitype07outcurrentversion1": {
+      "hash": "8fad715285300bacd2dbebb2a84502ad0e1b5d35c7c35ee27949d486d469f0e6",
+      "last_checked": "2025-06-06T07:36:07.278523",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/documentation/SCSIPeripheralsDriverKit/SCSIPeripheralsDriverKit": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:35:12.354767",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsiperipheralsdriverkit.json": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:35:12.354767",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/SCSIPeripheralsDriverKit.json": {
+      "hash": "8c8f0541acfa04bf49493b007fd7485d6af4c089189b8ce3f6a983093a327b05",
+      "last_checked": "2025-06-06T20:00:55.711683",
+      "status": "new",
+      "etag": "W/\"c13a5d1276ed42580807c18c8e1d1673\""
+    },
+    "https://developer.apple.com/documentation/SCSIPeripheralsDriverKit": {
+      "hash": "87e6d179e989e8bdaee3a3a7b794e1f1238cc0dd1c5eeef574465d662c0f7fae",
+      "last_checked": "2025-06-06T20:00:55.711972",
+      "status": "unchanged"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit.json": {
+      "hash": "87e6d179e989e8bdaee3a3a7b794e1f1238cc0dd1c5eeef574465d662c0f7fae",
+      "last_checked": "2025-06-06T20:00:55.711972",
+      "status": "unchanged",
+      "etag": "W/\"c13a5d1276ed42580807c18c8e1d1673\""
+    }
+  }
+}

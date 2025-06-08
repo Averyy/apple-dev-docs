@@ -55,10 +55,6 @@ logs/
 # /documentation/*
 # !documentation/.gitkeep
 
-# Cache
-.hashes/
-_metadata/
-
 # Pyppeteer
 .pyppeteer/
 

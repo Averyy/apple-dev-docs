@@ -1,4 +1,4 @@
-Completed scraping Visionkit!
-Total pages scraped: 243
-Pages skipped (unchanged): 1
+Completed scraping VisionKit!
+Total pages scraped: 0
+Pages skipped (unchanged): 2
 Pages failed: 0

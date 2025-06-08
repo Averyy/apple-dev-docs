@@ -1,4 +1,4 @@
 Completed scraping USBDriverKit!
-Total pages scraped: 904
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 2
 Pages failed: 0

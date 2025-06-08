@@ -1,0 +1,2941 @@
+{
+  "metadata": {
+    "last_updated": "2025-06-07T22:50:37.211942",
+    "total_pages": 489,
+    "etags_collected": "2025-06-07T22:50:37.211960"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/enabling-live-text-interactions-with-images.json": {
+      "hash": "3be5f5a817a7cc4c74db7a71e467e72a3fe96355acee075765d2375fe91f7d58",
+      "last_checked": "2025-06-06T14:20:12.050959",
+      "status": "unchanged",
+      "etag": "W/\"e993d8b9fbe50bc0661e087687a5cab7\""
+    },
+    "https://developer.apple.com/documentation/visionkit/enabling-live-text-interactions-with-images": {
+      "hash": "3be5f5a817a7cc4c74db7a71e467e72a3fe96355acee075765d2375fe91f7d58",
+      "last_checked": "2025-06-06T14:20:12.050959",
+      "status": "unchanged",
+      "etag": "e9a03aef0c04e50c6f8468ba44584aaf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer.json": {
+      "hash": "f68a06477907f766d0cd0f2499ffe9f7d91de7fad0d34713ee31409f335ba2ee",
+      "last_checked": "2025-06-06T14:20:12.534884",
+      "status": "unchanged",
+      "etag": "W/\"f01e45e813fb15301b85c323dd365de4\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer": {
+      "hash": "f68a06477907f766d0cd0f2499ffe9f7d91de7fad0d34713ee31409f335ba2ee",
+      "last_checked": "2025-06-06T14:20:12.534884",
+      "status": "unchanged",
+      "etag": "96bd074e8185d47030708b6dda16447d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysis.json": {
+      "hash": "3ff92bf5ba684ae1aeba19b961e74ef57c9b7d1825fe599a4e747b8e18a4c6bc",
+      "last_checked": "2025-06-06T14:20:13.086191",
+      "status": "unchanged",
+      "etag": "W/\"82dc2f7e9783c3a120ef50067badfb07\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysis": {
+      "hash": "3ff92bf5ba684ae1aeba19b961e74ef57c9b7d1825fe599a4e747b8e18a4c6bc",
+      "last_checked": "2025-06-06T14:20:13.086191",
+      "status": "unchanged",
+      "etag": "dfd33621cc14ead1e1ff4a0c192bf0e5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction.json": {
+      "hash": "532e008812c2862a36058e1364945517589ff04057c01bacfa6bb6d62e0665b7",
+      "last_checked": "2025-06-06T14:20:13.699020",
+      "status": "unchanged",
+      "etag": "W/\"bbf15111e78faa8d11e84f4357053f4d\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction": {
+      "hash": "532e008812c2862a36058e1364945517589ff04057c01bacfa6bb6d62e0665b7",
+      "last_checked": "2025-06-06T14:20:13.699020",
+      "status": "unchanged",
+      "etag": "8d1acd662fd09cb6173f105cdb5a5397"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteractiondelegate.json": {
+      "hash": "805b8a530df17d7f372fa3cab1b4196f135dcd3fd54fabfec6f0abea3e7a5c81",
+      "last_checked": "2025-06-06T14:20:14.197814",
+      "status": "unchanged",
+      "etag": "W/\"ec0dd29714e000487549ada33cffbb5f\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate": {
+      "hash": "805b8a530df17d7f372fa3cab1b4196f135dcd3fd54fabfec6f0abea3e7a5c81",
+      "last_checked": "2025-06-06T14:20:14.197814",
+      "status": "unchanged",
+      "etag": "a2bb9d7816ed84fd4ccd71544586bb20"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview.json": {
+      "hash": "16c652481e2c6947824ccef5cd13d78a3f32c19ca3743b3264fd5c177d322968",
+      "last_checked": "2025-06-06T14:20:14.758674",
+      "status": "unchanged",
+      "etag": "W/\"f2be1492f26cd317ba1f9c50406b119b\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview": {
+      "hash": "16c652481e2c6947824ccef5cd13d78a3f32c19ca3743b3264fd5c177d322968",
+      "last_checked": "2025-06-06T14:20:14.758674",
+      "status": "unchanged",
+      "etag": "8c54467d81bce8577cff9ab5bceb0d0a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate.json": {
+      "hash": "5066496dd88887c7ce83a1134cfe2a106912b8087ea9fbe0789772d4730ccf73",
+      "last_checked": "2025-06-06T14:20:15.297471",
+      "status": "unchanged",
+      "etag": "W/\"15283d09e7029ebe56c9449d9a5cdf3c\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate": {
+      "hash": "5066496dd88887c7ce83a1134cfe2a106912b8087ea9fbe0789772d4730ccf73",
+      "last_checked": "2025-06-06T14:20:15.297471",
+      "status": "unchanged",
+      "etag": "57a0869ab7bb5abc8df967f4b2ace80b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/scanning-data-with-the-camera.json": {
+      "hash": "69f7c9ce8d13f323e7a4b39e605306b4e9a43b767d3f96e2d961e698cb087965",
+      "last_checked": "2025-06-06T14:20:15.685986",
+      "status": "unchanged",
+      "etag": "W/\"efd118ba057a5517a2ca1bb5e369a7ed\""
+    },
+    "https://developer.apple.com/documentation/visionkit/scanning-data-with-the-camera": {
+      "hash": "69f7c9ce8d13f323e7a4b39e605306b4e9a43b767d3f96e2d961e698cb087965",
+      "last_checked": "2025-06-06T14:20:15.685986",
+      "status": "unchanged",
+      "etag": "16fa567093edbaababe283fee0c697c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller.json": {
+      "hash": "3ce5899da08572ae8a4c6fae9c8eee053d03a59d8fd047405b5b5d5a88546bb7",
+      "last_checked": "2025-06-06T14:20:16.075434",
+      "status": "unchanged",
+      "etag": "W/\"e14e2ecf615bc2e7a52d92b0367f50a0\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller": {
+      "hash": "3ce5899da08572ae8a4c6fae9c8eee053d03a59d8fd047405b5b5d5a88546bb7",
+      "last_checked": "2025-06-06T14:20:16.075434",
+      "status": "unchanged",
+      "etag": "986bff823c11c0083a8195cff124362b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontrollerdelegate.json": {
+      "hash": "b69c34e39b9eece3923d8b4effc04d3d457ed8600e24e8d94b94ab17b86f20e1",
+      "last_checked": "2025-06-06T14:20:16.590736",
+      "status": "unchanged",
+      "etag": "W/\"bfaae81ec4f62a6db0db67dfa32cb1f9\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate": {
+      "hash": "b69c34e39b9eece3923d8b4effc04d3d457ed8600e24e8d94b94ab17b86f20e1",
+      "last_checked": "2025-06-06T14:20:16.590736",
+      "status": "unchanged",
+      "etag": "0a4b77a80ea52484f16762b32f8fbece"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem.json": {
+      "hash": "16307f8cf76f008f1f30adb8fc29be13cfb7a760376248a13aafe781b1005646",
+      "last_checked": "2025-06-06T14:20:16.951936",
+      "status": "unchanged",
+      "etag": "W/\"6902c618baec38dc386418f47d73472f\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem": {
+      "hash": "16307f8cf76f008f1f30adb8fc29be13cfb7a760376248a13aafe781b1005646",
+      "last_checked": "2025-06-06T14:20:16.951936",
+      "status": "unchanged",
+      "etag": "c4075624535d50723ed7cf58d894baaa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcameraviewcontroller.json": {
+      "hash": "67a38591a7009b3491a023186ce3487f4da73741b749d6db121cee83f6bc845f",
+      "last_checked": "2025-06-06T14:20:17.734245",
+      "status": "unchanged",
+      "etag": "W/\"fc5ff91002ea057b5f7ec0063b05f6ec\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontroller": {
+      "hash": "67a38591a7009b3491a023186ce3487f4da73741b749d6db121cee83f6bc845f",
+      "last_checked": "2025-06-06T14:20:17.734245",
+      "status": "unchanged",
+      "etag": "3b22b7f9c46a2bd8a9e2a00ff7b11638"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcameraviewcontrollerdelegate.json": {
+      "hash": "d9c4f3b71805c39ecdf038f7d47e14aac2f9ec3fca52633de42231f143826db3",
+      "last_checked": "2025-06-06T14:20:18.093558",
+      "status": "unchanged",
+      "etag": "W/\"f9b5fe3309363f0bbc2e1783eb119c08\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontrollerdelegate": {
+      "hash": "d9c4f3b71805c39ecdf038f7d47e14aac2f9ec3fca52633de42231f143826db3",
+      "last_checked": "2025-06-06T14:20:18.093558",
+      "status": "unchanged",
+      "etag": "27378cd80a834e7214bbf41ff8a30ce5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcamerascan.json": {
+      "hash": "6ce208b5531151a1e91b86f05bc74fd4c66b5df51b21577f05b4e057ababf252",
+      "last_checked": "2025-06-06T14:20:18.573104",
+      "status": "unchanged",
+      "etag": "W/\"4d9fdab4ea7bc8d347a399b52f853be1\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcamerascan": {
+      "hash": "6ce208b5531151a1e91b86f05bc74fd4c66b5df51b21577f05b4e057ababf252",
+      "last_checked": "2025-06-06T14:20:18.573104",
+      "status": "unchanged",
+      "etag": "41e33a45ae106b00ef2cb984e2a5cc5d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/supportedtextrecognitionlanguages.json": {
+      "hash": "a2d83c0f6524aca0d637f960fb11f031495325e9fe922485380a4f484238c577",
+      "last_checked": "2025-06-06T14:20:19.393841",
+      "status": "unchanged",
+      "etag": "W/\"17360e891bbc83abcfeceaae72cecb16\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/supportedtextrecognitionlanguages": {
+      "hash": "a2d83c0f6524aca0d637f960fb11f031495325e9fe922485380a4f484238c577",
+      "last_checked": "2025-06-06T14:20:19.393841",
+      "status": "unchanged",
+      "etag": "3ac6be1cb134884ba8b71eebfaa81eb3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/init().json": {
+      "hash": "11cebd9b0401dc98a1b59856f1b5a1d7471bc542abdfbf2042570503a094ef1f",
+      "last_checked": "2025-06-06T14:20:19.759381",
+      "status": "unchanged",
+      "etag": "W/\"34cea795cf963fc2435bb5dd11bd7975\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/init()": {
+      "hash": "11cebd9b0401dc98a1b59856f1b5a1d7471bc542abdfbf2042570503a094ef1f",
+      "last_checked": "2025-06-06T14:20:19.759381",
+      "status": "unchanged",
+      "etag": "d4ed61be872fa8324ec16b89ea8573c7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/configuration.json": {
+      "hash": "8f85e80dc02f568eb78e56be46c911d7ef8dfb7817ffa546ba4aeba734dfe3ff",
+      "last_checked": "2025-06-06T14:20:20.115965",
+      "status": "unchanged",
+      "etag": "W/\"282e5b629f90209fea1ebf6f1ff11a9f\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration": {
+      "hash": "8f85e80dc02f568eb78e56be46c911d7ef8dfb7817ffa546ba4aeba734dfe3ff",
+      "last_checked": "2025-06-06T14:20:20.115965",
+      "status": "unchanged",
+      "etag": "e40163192d7140f9f8909b1c4aab2c77"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analyze(_:configuration:).json": {
+      "hash": "31e801ee669e60f33d78ca34f87ac9aadcf69323bcf217e59c4eda171a7f9f5d",
+      "last_checked": "2025-06-06T14:20:20.492610",
+      "status": "unchanged",
+      "etag": "W/\"e2e5a7c15e718914ca8049caee6f940a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(_:configuration:)": {
+      "hash": "31e801ee669e60f33d78ca34f87ac9aadcf69323bcf217e59c4eda171a7f9f5d",
+      "last_checked": "2025-06-06T14:20:20.492610",
+      "status": "unchanged",
+      "etag": "2166ff61aeb47d8f0c349c9993f5837e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analyze(_:orientation:configuration:)-5bs2w.json": {
+      "hash": "7aa91c76f5519130a69dfa98df75ebf335a369e8373d466bba229e30ca13f4ea",
+      "last_checked": "2025-06-06T14:20:20.848312",
+      "status": "unchanged",
+      "etag": "W/\"2f3142b49d74fe9afffc829dc2e69761\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(_:orientation:configuration:)-5bs2w": {
+      "hash": "7aa91c76f5519130a69dfa98df75ebf335a369e8373d466bba229e30ca13f4ea",
+      "last_checked": "2025-06-06T14:20:20.848312",
+      "status": "unchanged",
+      "etag": "cf691ddeb9c415c951e1d0ca8a8c1f64"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analyze(_:orientation:configuration:)-ufrs.json": {
+      "hash": "069ee69abd5f7d9b1616269042c8c10d08b809ac3e30b12c2e46491f1d4e251c",
+      "last_checked": "2025-06-06T14:20:21.217513",
+      "status": "unchanged",
+      "etag": "W/\"9a5c0c020dc76342730c04ca1b557067\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(_:orientation:configuration:)-ufrs": {
+      "hash": "069ee69abd5f7d9b1616269042c8c10d08b809ac3e30b12c2e46491f1d4e251c",
+      "last_checked": "2025-06-06T14:20:21.217513",
+      "status": "unchanged",
+      "etag": "e6d0f1a16fd05b365bd6414b40c64b33"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analyze(_:orientation:configuration:)-2ezqw.json": {
+      "hash": "b5f24385a3ca36ed0f4bc02f89ee9a08c85bbe107145dd38fedcfa4e749085d4",
+      "last_checked": "2025-06-06T14:20:21.615207",
+      "status": "unchanged",
+      "etag": "W/\"be37be8896732848243da7ac394574c6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(_:orientation:configuration:)-2ezqw": {
+      "hash": "b5f24385a3ca36ed0f4bc02f89ee9a08c85bbe107145dd38fedcfa4e749085d4",
+      "last_checked": "2025-06-06T14:20:21.615207",
+      "status": "unchanged",
+      "etag": "52838719b3bde27d6f1e38b1d14a3e0f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analyze(_:orientation:configuration:)-4h43g.json": {
+      "hash": "a9db431f66fa02f032ae4c51fb3fb0bc9c653a91d74c570cbad547f98b6638f3",
+      "last_checked": "2025-06-06T14:20:22.051447",
+      "status": "unchanged",
+      "etag": "W/\"d5df05067a7227b2508314b7a39ee696\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(_:orientation:configuration:)-4h43g": {
+      "hash": "a9db431f66fa02f032ae4c51fb3fb0bc9c653a91d74c570cbad547f98b6638f3",
+      "last_checked": "2025-06-06T14:20:22.051447",
+      "status": "unchanged",
+      "etag": "cee4462fc04b0ebf0ddbac8d73e06928"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analyze(_:orientation:configuration:)-fcjz.json": {
+      "hash": "178c30442fd2d5cd61212d976c1b725266c3bcf6bd9f00bfb356711c12916196",
+      "last_checked": "2025-06-06T14:20:22.474287",
+      "status": "unchanged",
+      "etag": "W/\"868ca596984641cb76a31c8a79f1e236\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(_:orientation:configuration:)-fcjz": {
+      "hash": "178c30442fd2d5cd61212d976c1b725266c3bcf6bd9f00bfb356711c12916196",
+      "last_checked": "2025-06-06T14:20:22.474287",
+      "status": "unchanged",
+      "etag": "7b31becfa6fb597c160ec0be6466e77d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analyze(imageat:orientation:configuration:).json": {
+      "hash": "ed1d15f2a39176eb15d126e369ce13177b1650225ef18a5742f988ea5f5d1fff",
+      "last_checked": "2025-06-06T14:20:22.848329",
+      "status": "unchanged",
+      "etag": "W/\"6cd2a6519a0af1bd4c666804f9762af0\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(imageat:orientation:configuration:)": {
+      "hash": "ed1d15f2a39176eb15d126e369ce13177b1650225ef18a5742f988ea5f5d1fff",
+      "last_checked": "2025-06-06T14:20:22.848329",
+      "status": "unchanged",
+      "etag": "b708db46be9b1d38250752e0ebc47846"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analysistypes.json": {
+      "hash": "dcf6ed320d533e4079b973c228e070eed493303be19d9ed2aacd7acead7bf28b",
+      "last_checked": "2025-06-06T14:20:23.184626",
+      "status": "unchanged",
+      "etag": "W/\"368295365f349b8488097592e23929c6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes": {
+      "hash": "dcf6ed320d533e4079b973c228e070eed493303be19d9ed2aacd7acead7bf28b",
+      "last_checked": "2025-06-06T14:20:23.184626",
+      "status": "unchanged",
+      "etag": "062c92159971288acc42a007211b6d83"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysis/hasresults(for:).json": {
+      "hash": "16840c892dd86ace00a90d525c7c18a2bce59b74e06d8452ade17189cf1e8b5d",
+      "last_checked": "2025-06-06T14:20:23.892730",
+      "status": "unchanged",
+      "etag": "W/\"1e858e485fa5c3629e895767a94bf890\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysis/hasresults(for:)": {
+      "hash": "16840c892dd86ace00a90d525c7c18a2bce59b74e06d8452ade17189cf1e8b5d",
+      "last_checked": "2025-06-06T14:20:23.892730",
+      "status": "unchanged",
+      "etag": "e359a7ebbefdaa2d00c9dd6a3ce8b54d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysis/transcript.json": {
+      "hash": "d2f0817e022066f983e6920b6301d99ab718035aa06756423856429fbe2e6b15",
+      "last_checked": "2025-06-06T14:20:24.917659",
+      "status": "unchanged",
+      "etag": "W/\"8ec09c1351b7ff877f96b135ba120509\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysis/transcript": {
+      "hash": "d2f0817e022066f983e6920b6301d99ab718035aa06756423856429fbe2e6b15",
+      "last_checked": "2025-06-06T14:20:24.917659",
+      "status": "unchanged",
+      "etag": "83802920477539f252a2c7c1a67f3966"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/init().json": {
+      "hash": "910aba2f70120b345c4b72b74f1c19d268de1c8a0f069d49f8b5cbfc48c3ef47",
+      "last_checked": "2025-06-06T14:20:25.955540",
+      "status": "unchanged",
+      "etag": "W/\"5076985e427fb3c36535f5768cef28fb\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/init()": {
+      "hash": "910aba2f70120b345c4b72b74f1c19d268de1c8a0f069d49f8b5cbfc48c3ef47",
+      "last_checked": "2025-06-06T14:20:25.955540",
+      "status": "unchanged",
+      "etag": "97cdf1ebb49550b50826b9f5e6777724"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/init(_:).json": {
+      "hash": "f3562f9938dd7fe3444e0eaea8d40b9ff87008f07456a91a64489b245ddb6a7b",
+      "last_checked": "2025-06-06T14:20:26.755670",
+      "status": "unchanged",
+      "etag": "W/\"39c558a210ffba5c6a70d6cec38331ca\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/init(_:)": {
+      "hash": "f3562f9938dd7fe3444e0eaea8d40b9ff87008f07456a91a64489b245ddb6a7b",
+      "last_checked": "2025-06-06T14:20:26.755670",
+      "status": "unchanged",
+      "etag": "8964c0fff08b83f32c171eb7535c769d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/delegate.json": {
+      "hash": "ca3b467aaf033ce4f07274c982b8ee817910a37d71003533ad8ea19b59eda6c4",
+      "last_checked": "2025-06-06T14:20:29.327099",
+      "status": "unchanged",
+      "etag": "W/\"2913fd4d1c4a17bcdae68af15cc26c4e\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/delegate": {
+      "hash": "ca3b467aaf033ce4f07274c982b8ee817910a37d71003533ad8ea19b59eda6c4",
+      "last_checked": "2025-06-06T14:20:29.327099",
+      "status": "unchanged",
+      "etag": "e96cde1bdea49cf4ad956684c4303f06"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/analysis.json": {
+      "hash": "e1034a1945bf569e93643185bc8ef396a17948735083add6581da4abb39fcf33",
+      "last_checked": "2025-06-06T14:20:29.984474",
+      "status": "unchanged",
+      "etag": "W/\"3d17f041f5660f0fb475f29b28d82b0e\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/analysis": {
+      "hash": "e1034a1945bf569e93643185bc8ef396a17948735083add6581da4abb39fcf33",
+      "last_checked": "2025-06-06T14:20:29.984474",
+      "status": "unchanged",
+      "etag": "089a82c87e93e676007c23989d68b253"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/view.json": {
+      "hash": "950d6ab3fe1bf5b0f6db67ec3994a212ce65dbbd1ede0265fbe38bb83605b8da",
+      "last_checked": "2025-06-06T14:20:30.515444",
+      "status": "unchanged",
+      "etag": "W/\"8d8e3b9a431cb2a60bc3847b96b8da3a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/view": {
+      "hash": "950d6ab3fe1bf5b0f6db67ec3994a212ce65dbbd1ede0265fbe38bb83605b8da",
+      "last_checked": "2025-06-06T14:20:30.515444",
+      "status": "unchanged",
+      "etag": "10e92ed2649f195dde8be4b54c8d2777"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/preferredinteractiontypes.json": {
+      "hash": "c997258a24a5e8df38e43d6f128fd5c3121922ef6c3d408dbeb6dd640fa4545b",
+      "last_checked": "2025-06-06T14:20:31.025269",
+      "status": "unchanged",
+      "etag": "W/\"f0e5f19eec4734a6d0e752f8b17103b8\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/preferredinteractiontypes": {
+      "hash": "c997258a24a5e8df38e43d6f128fd5c3121922ef6c3d408dbeb6dd640fa4545b",
+      "last_checked": "2025-06-06T14:20:31.025269",
+      "status": "unchanged",
+      "etag": "9ebbd5688b973f99b0fd8e63963e4316"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/interactiontypes.json": {
+      "hash": "5b7673272851e18851f10982c8b522ee7cc9395bd73c658f488b01b9ba719f1c",
+      "last_checked": "2025-06-06T14:20:31.806080",
+      "status": "unchanged",
+      "etag": "W/\"60a7f86db39f057280286ef8c2642a8a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes": {
+      "hash": "5b7673272851e18851f10982c8b522ee7cc9395bd73c658f488b01b9ba719f1c",
+      "last_checked": "2025-06-06T14:20:31.806080",
+      "status": "unchanged",
+      "etag": "0d82181307abcfd1ae4383cc0b4e3bb8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/activeinteractiontypes.json": {
+      "hash": "5c592d6a079c49ef276b98bb2ec84a4594ee648cd07a295f94472afa5e60923d",
+      "last_checked": "2025-06-06T14:20:32.408847",
+      "status": "unchanged",
+      "etag": "W/\"70c4b5205f3d55340ab69925f36c9c90\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/activeinteractiontypes": {
+      "hash": "5c592d6a079c49ef276b98bb2ec84a4594ee648cd07a295f94472afa5e60923d",
+      "last_checked": "2025-06-06T14:20:32.408847",
+      "status": "unchanged",
+      "etag": "7c366dfa0227f9312ea74233c0f276aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/willmove(to:).json": {
+      "hash": "d12f5203f9b2938141d9ad8569614d0e6faf45b52cddd7e1ee5a1f9f38be83b7",
+      "last_checked": "2025-06-06T14:20:33.245153",
+      "status": "unchanged",
+      "etag": "W/\"b46c3e022741a2b2644fb93db7a0d458\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/willmove(to:)": {
+      "hash": "d12f5203f9b2938141d9ad8569614d0e6faf45b52cddd7e1ee5a1f9f38be83b7",
+      "last_checked": "2025-06-06T14:20:33.245153",
+      "status": "unchanged",
+      "etag": "c6489d914ca252c3dd9109cf0d784757"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/didmove(to:).json": {
+      "hash": "ea10a3bd44e52c41c6e045776bb46c043f85eb12cdb1f4f6a51d81e169a9cd44",
+      "last_checked": "2025-06-06T14:20:34.312983",
+      "status": "unchanged",
+      "etag": "W/\"b8a7535c4c184745dea216f6b007bde5\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/didmove(to:)": {
+      "hash": "ea10a3bd44e52c41c6e045776bb46c043f85eb12cdb1f4f6a51d81e169a9cd44",
+      "last_checked": "2025-06-06T14:20:34.312983",
+      "status": "unchanged",
+      "etag": "cb749f6ee905d767a2b20bef4f51c5c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/text.json": {
+      "hash": "61da996f2f6e65120123925325d95a0101567daecac83a1d67121c0f5e153e28",
+      "last_checked": "2025-06-06T14:20:35.118533",
+      "status": "unchanged",
+      "etag": "W/\"b59e098f3ea9c7115721e46f5c08f2f4\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/text": {
+      "hash": "61da996f2f6e65120123925325d95a0101567daecac83a1d67121c0f5e153e28",
+      "last_checked": "2025-06-06T14:20:35.118533",
+      "status": "unchanged",
+      "etag": "d5880643ef5a8916465900982eb6bbcc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/selectedtext.json": {
+      "hash": "8c49471047faf5fba4fe974412be235cae084154af954a0f483a237d4c7f5b45",
+      "last_checked": "2025-06-06T14:20:35.541320",
+      "status": "unchanged",
+      "etag": "W/\"5d13c08c86f8cbb4f02b6c27f643d7dc\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedtext": {
+      "hash": "8c49471047faf5fba4fe974412be235cae084154af954a0f483a237d4c7f5b45",
+      "last_checked": "2025-06-06T14:20:35.541320",
+      "status": "unchanged",
+      "etag": "e16d8aa065be1a37a13f16b66440d920"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/selectedattributedtext.json": {
+      "hash": "3393f94924576cc02fbcff182a03a1b3198a33f1654152d036af3f0676bb1cf1",
+      "last_checked": "2025-06-06T14:20:36.034740",
+      "status": "unchanged",
+      "etag": "W/\"af0d2207181e80b4b24cb8d6a991a7d1\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedattributedtext": {
+      "hash": "3393f94924576cc02fbcff182a03a1b3198a33f1654152d036af3f0676bb1cf1",
+      "last_checked": "2025-06-06T14:20:36.034740",
+      "status": "unchanged",
+      "etag": "a97fc79cd90ef2f3f3a7f318ff3c77db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/hastext(at:).json": {
+      "hash": "c4fcf2f001cabdf7087ce3b24d3f3a28d3ce6da7084e47b4dbe1782fa1c6e335",
+      "last_checked": "2025-06-06T14:20:36.395663",
+      "status": "unchanged",
+      "etag": "W/\"1ba0d36a6aa1240a41ea4df61ad81399\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hastext(at:)": {
+      "hash": "c4fcf2f001cabdf7087ce3b24d3f3a28d3ce6da7084e47b4dbe1782fa1c6e335",
+      "last_checked": "2025-06-06T14:20:36.395663",
+      "status": "unchanged",
+      "etag": "504d0fac8856dd1776ae75bb2a12536c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/hasactivetextselection.json": {
+      "hash": "9a1f3a4ec8d0a5a615bfc59454170b0c3155fe001a2b6025b6fe9b3e9eef14c7",
+      "last_checked": "2025-06-06T14:20:36.976168",
+      "status": "unchanged",
+      "etag": "W/\"2fea7dc7f7cf4a16cdfa709c51d908c6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasactivetextselection": {
+      "hash": "9a1f3a4ec8d0a5a615bfc59454170b0c3155fe001a2b6025b6fe9b3e9eef14c7",
+      "last_checked": "2025-06-06T14:20:36.976168",
+      "status": "unchanged",
+      "etag": "f362aa2985ede37089f62c3d39bd87fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/analysishastext(at:).json": {
+      "hash": "9f2efdd25db82bb7a00aa9c10a6548c9af52965e2e9b80178e0ebfd302126812",
+      "last_checked": "2025-06-06T14:20:37.616621",
+      "status": "unchanged",
+      "etag": "W/\"932779a8c68770d71feebdb899738270\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/analysishastext(at:)": {
+      "hash": "9f2efdd25db82bb7a00aa9c10a6548c9af52965e2e9b80178e0ebfd302126812",
+      "last_checked": "2025-06-06T14:20:37.616621",
+      "status": "unchanged",
+      "etag": "19583ecd36334af31c0c4608b2b0fd9f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/hasdatadetector(at:).json": {
+      "hash": "a6eac91c3cd07d305a12305c1a7aceee26216033f7da87223e3b88f545bd17b4",
+      "last_checked": "2025-06-06T14:20:38.142526",
+      "status": "unchanged",
+      "etag": "W/\"fdfff52a3497cea1a500c730a48cc480\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasdatadetector(at:)": {
+      "hash": "a6eac91c3cd07d305a12305c1a7aceee26216033f7da87223e3b88f545bd17b4",
+      "last_checked": "2025-06-06T14:20:38.142526",
+      "status": "unchanged",
+      "etag": "4a301fa94eaa658728a80b60d3440dc1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/selectedranges.json": {
+      "hash": "88d9c26d4a96d8a0e5a06779bcd3271e034d1753ec42ff4403f2eac150cadffa",
+      "last_checked": "2025-06-06T14:20:38.546263",
+      "status": "unchanged",
+      "etag": "W/\"5ea73e0f212f2e22086d4ceaab0ae9b6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedranges": {
+      "hash": "88d9c26d4a96d8a0e5a06779bcd3271e034d1753ec42ff4403f2eac150cadffa",
+      "last_checked": "2025-06-06T14:20:38.546263",
+      "status": "unchanged",
+      "etag": "20ce3dcd70068241767a6ffab932bee8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/resettextselection().json": {
+      "hash": "7794f9fccedbf0e3e9c8a64871ff1fa771542066f3628ab4cb237afe9a38c0e5",
+      "last_checked": "2025-06-06T14:20:38.934968",
+      "status": "unchanged",
+      "etag": "W/\"1de85baa41768713312c71d9ee96f582\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/resettextselection()": {
+      "hash": "7794f9fccedbf0e3e9c8a64871ff1fa771542066f3628ab4cb237afe9a38c0e5",
+      "last_checked": "2025-06-06T14:20:38.934968",
+      "status": "unchanged",
+      "etag": "12168956f28280d7da308749336478ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/subjects.json": {
+      "hash": "0093db260fa72b2170651451fa6e13b75611fb3d7591a780b539a503bdcae620",
+      "last_checked": "2025-06-06T14:20:39.562103",
+      "status": "unchanged",
+      "etag": "W/\"c2583b315020bf7e5febcb6bf9bfb13f\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subjects": {
+      "hash": "0093db260fa72b2170651451fa6e13b75611fb3d7591a780b539a503bdcae620",
+      "last_checked": "2025-06-06T14:20:39.562103",
+      "status": "unchanged",
+      "etag": "fe4e9505c73c593de3098c59cc472130"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/subject.json": {
+      "hash": "fab8b3032ebe89f9d28e52f223c6fbf946977435b3206cd4b12087058690cc71",
+      "last_checked": "2025-06-06T14:20:40.049973",
+      "status": "unchanged",
+      "etag": "W/\"a125379f890c2be4818cb100f2978794\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject": {
+      "hash": "fab8b3032ebe89f9d28e52f223c6fbf946977435b3206cd4b12087058690cc71",
+      "last_checked": "2025-06-06T14:20:40.049973",
+      "status": "unchanged",
+      "etag": "21330e6848833a187e162a218b8f4bc5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/image(for:).json": {
+      "hash": "3741a7366c6ef2eedf50052e344a02dceab9a2b15a2837587c10f8af527d1be3",
+      "last_checked": "2025-06-06T14:20:40.428513",
+      "status": "unchanged",
+      "etag": "W/\"6175fef8af5350e2fec23e292b5ea5bd\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/image(for:)": {
+      "hash": "3741a7366c6ef2eedf50052e344a02dceab9a2b15a2837587c10f8af527d1be3",
+      "last_checked": "2025-06-06T14:20:40.428513",
+      "status": "unchanged",
+      "etag": "670bc7de43d9e1a637f2e16e5ebb058c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/subject(at:).json": {
+      "hash": "c21e1a80cecc06f5bc0a3d6eeeabe9a4e963eed1fc53293be9ee76e037d82090",
+      "last_checked": "2025-06-06T14:20:40.975944",
+      "status": "unchanged",
+      "etag": "W/\"3457886e96255f067318beccaeca4ec1\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject(at:)": {
+      "hash": "c21e1a80cecc06f5bc0a3d6eeeabe9a4e963eed1fc53293be9ee76e037d82090",
+      "last_checked": "2025-06-06T14:20:40.975944",
+      "status": "unchanged",
+      "etag": "2c9164fa8069eb77c6b7e28b0df6ce7a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/highlightedsubjects.json": {
+      "hash": "36aa1f9f509e4889fe41474557713523b26bf717c43e3c472da237859cc8d724",
+      "last_checked": "2025-06-06T14:20:42.081731",
+      "status": "unchanged",
+      "etag": "W/\"39db927fc192b1ba99b21e5c40e78e15\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/highlightedsubjects": {
+      "hash": "36aa1f9f509e4889fe41474557713523b26bf717c43e3c472da237859cc8d724",
+      "last_checked": "2025-06-06T14:20:42.081731",
+      "status": "unchanged",
+      "etag": "638f25710bc5c759d4c5e53437e67117"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/livetextbuttonvisible.json": {
+      "hash": "404ccb31860c0be75d97d5d64ef93ffbb784f45dddc560b3ba37685d68c95f48",
+      "last_checked": "2025-06-06T14:20:42.887716",
+      "status": "unchanged",
+      "etag": "W/\"b171a890dbfdd95a914d505586f34214\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/livetextbuttonvisible": {
+      "hash": "404ccb31860c0be75d97d5d64ef93ffbb784f45dddc560b3ba37685d68c95f48",
+      "last_checked": "2025-06-06T14:20:42.887716",
+      "status": "unchanged",
+      "etag": "5a5d8e648b89c60bff28d1a025976db3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/issupplementaryinterfacehidden.json": {
+      "hash": "8c37f929186711998f699376d4cd3591d0ae3959f3161669bdf71c42405b4661",
+      "last_checked": "2025-06-06T14:20:43.269845",
+      "status": "unchanged",
+      "etag": "W/\"f01fa026ec274cc9be4a4e9c87f11481\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/issupplementaryinterfacehidden": {
+      "hash": "8c37f929186711998f699376d4cd3591d0ae3959f3161669bdf71c42405b4661",
+      "last_checked": "2025-06-06T14:20:43.269845",
+      "status": "unchanged",
+      "etag": "59df89eda98a339da718a842733d84e7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/hasinteractiveitem(at:).json": {
+      "hash": "02c14a0614edd449867a06d66fee9be297170bf2622ba765187e72c344f93704",
+      "last_checked": "2025-06-06T14:20:43.659391",
+      "status": "unchanged",
+      "etag": "W/\"6e3947ad72f71363eff5ff8be0b2f1dd\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasinteractiveitem(at:)": {
+      "hash": "02c14a0614edd449867a06d66fee9be297170bf2622ba765187e72c344f93704",
+      "last_checked": "2025-06-06T14:20:43.659391",
+      "status": "unchanged",
+      "etag": "bd51d3aa48b4f2646598de10a5087d72"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/hassupplementaryinterface(at:).json": {
+      "hash": "6f7fadaf251bd218b6c45324cc0a7e5f4bcb3db991f3ebf40905b8be834a49b8",
+      "last_checked": "2025-06-06T14:20:44.027739",
+      "status": "unchanged",
+      "etag": "W/\"cc1d51a780a4a666466a3ecae0a7d7f3\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hassupplementaryinterface(at:)": {
+      "hash": "6f7fadaf251bd218b6c45324cc0a7e5f4bcb3db991f3ebf40905b8be834a49b8",
+      "last_checked": "2025-06-06T14:20:44.027739",
+      "status": "unchanged",
+      "etag": "52e96cf0f21775d465f4f303860110bf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/selectableitemshighlighted.json": {
+      "hash": "efbfea90701f23df36932526deab4d6abc0e31f7acdd7479bab753fea2f9592e",
+      "last_checked": "2025-06-06T14:20:44.926826",
+      "status": "unchanged",
+      "etag": "W/\"66f73edfc355a21ea254e43cc009cd52\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectableitemshighlighted": {
+      "hash": "efbfea90701f23df36932526deab4d6abc0e31f7acdd7479bab753fea2f9592e",
+      "last_checked": "2025-06-06T14:20:44.926826",
+      "status": "unchanged",
+      "etag": "824072d82d00998d728b00593293ad14"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/allowlongpressfordatadetectorsintextmode.json": {
+      "hash": "a8386a5df621462bec8467a6c67053ea877861bdb4b11986e544810c68085ab0",
+      "last_checked": "2025-06-06T14:20:45.210108",
+      "status": "unchanged",
+      "etag": "W/\"edf51eeb5362c4af6867fd74bbb1cf3b\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/allowlongpressfordatadetectorsintextmode": {
+      "hash": "a8386a5df621462bec8467a6c67053ea877861bdb4b11986e544810c68085ab0",
+      "last_checked": "2025-06-06T14:20:45.210108",
+      "status": "unchanged",
+      "etag": "d06858c42fc00e9b862fa0cbf6e87caa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/setsupplementaryinterfacehidden(_:animated:).json": {
+      "hash": "d4fe11850184febedad0e321d11c93c81d2a2f377800872d250543656f08a1a3",
+      "last_checked": "2025-06-06T14:20:45.585196",
+      "status": "unchanged",
+      "etag": "W/\"4a40e5be37c1de71a527811ae3dfffa7\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/setsupplementaryinterfacehidden(_:animated:)": {
+      "hash": "d4fe11850184febedad0e321d11c93c81d2a2f377800872d250543656f08a1a3",
+      "last_checked": "2025-06-06T14:20:45.585196",
+      "status": "unchanged",
+      "etag": "7d98ac9c25bee8b96fa11367c2b01461"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacecontentinsets.json": {
+      "hash": "8a089f77e42c93b2d2bc695c9cbbb1d15f50c3c262fd672504a548b832601a28",
+      "last_checked": "2025-06-06T14:20:45.944138",
+      "status": "unchanged",
+      "etag": "W/\"c4cc462346f38b6c53f2c215943058e8\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacecontentinsets": {
+      "hash": "8a089f77e42c93b2d2bc695c9cbbb1d15f50c3c262fd672504a548b832601a28",
+      "last_checked": "2025-06-06T14:20:45.944138",
+      "status": "unchanged",
+      "etag": "3b9f6c845bc1f4f8c89e45253d579a91"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacefont.json": {
+      "hash": "3616e7abbbc072b1e3395712578ae6a49b133a8906d6bacf961081fa6292a276",
+      "last_checked": "2025-06-06T14:20:46.309287",
+      "status": "unchanged",
+      "etag": "W/\"8da288652208a45f462892f8b725378c\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacefont": {
+      "hash": "3616e7abbbc072b1e3395712578ae6a49b133a8906d6bacf961081fa6292a276",
+      "last_checked": "2025-06-06T14:20:46.309287",
+      "status": "unchanged",
+      "etag": "16d617a8835f7ff50f087a5d08de262f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/contentsrect.json": {
+      "hash": "771c57a821194292cf73d7709c5c365a16d9549fe6aa1c83e8b17e65f88704a2",
+      "last_checked": "2025-06-06T14:20:46.675075",
+      "status": "unchanged",
+      "etag": "W/\"80990b14973a30cf6c32ae162b56d7a0\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/contentsrect": {
+      "hash": "771c57a821194292cf73d7709c5c365a16d9549fe6aa1c83e8b17e65f88704a2",
+      "last_checked": "2025-06-06T14:20:46.675075",
+      "status": "unchanged",
+      "etag": "b36ff6e1de3ffe5a2c6b5bf11327f3dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/setcontentsrectneedsupdate().json": {
+      "hash": "bd3499352af22785a0232f640b283ddd438e24ebcd03a0886a168e07f305ca42",
+      "last_checked": "2025-06-06T14:20:47.090183",
+      "status": "unchanged",
+      "etag": "W/\"c2f61ec472d9c50599d589fe6951e8c2\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/setcontentsrectneedsupdate()": {
+      "hash": "bd3499352af22785a0232f640b283ddd438e24ebcd03a0886a168e07f305ca42",
+      "last_checked": "2025-06-06T14:20:47.090183",
+      "status": "unchanged",
+      "etag": "ac600179727bfccc491bbfe5cc202095"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/subjectunavailable.json": {
+      "hash": "ae972e335be7d06169fcc0e35070f346238c7a0d4115693c96d17bcaf0bbd233",
+      "last_checked": "2025-06-06T14:20:47.467366",
+      "status": "unchanged",
+      "etag": "W/\"b918d6c9bedb8701bf814c1fa99f26fa\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subjectunavailable": {
+      "hash": "ae972e335be7d06169fcc0e35070f346238c7a0d4115693c96d17bcaf0bbd233",
+      "last_checked": "2025-06-06T14:20:47.467366",
+      "status": "unchanged",
+      "etag": "53eca8c03aec5d6ff1a679236fda1d42"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteractiondelegate/contentview(for:).json": {
+      "hash": "ea0881dfbbb7ad73f06bceabf818759ea627a2064c0aff3433c019bc16033209",
+      "last_checked": "2025-06-06T14:20:47.902668",
+      "status": "unchanged",
+      "etag": "W/\"245d4c854e0d4d0067e37df23482f1ac\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/contentview(for:)": {
+      "hash": "ea0881dfbbb7ad73f06bceabf818759ea627a2064c0aff3433c019bc16033209",
+      "last_checked": "2025-06-06T14:20:47.902668",
+      "status": "unchanged",
+      "etag": "6a31345c22b237f10fc56130cf2039ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteractiondelegate/contentsrect(for:).json": {
+      "hash": "8401c83d2556f797e9eb2597a2600292058f6819c9a913ac99f4ad2e9b7443b7",
+      "last_checked": "2025-06-06T14:20:48.338960",
+      "status": "unchanged",
+      "etag": "W/\"decea310886a47964284a4a90d09f1d7\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/contentsrect(for:)": {
+      "hash": "8401c83d2556f797e9eb2597a2600292058f6819c9a913ac99f4ad2e9b7443b7",
+      "last_checked": "2025-06-06T14:20:48.338960",
+      "status": "unchanged",
+      "etag": "2087afa270435479031425b40d11378b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteractiondelegate/presentingviewcontroller(for:).json": {
+      "hash": "70e8388ed3d0bd6f01b9bf7e892b5fdeaa7b1d35f721933ff4925982ea8f7634",
+      "last_checked": "2025-06-06T14:20:48.765295",
+      "status": "unchanged",
+      "etag": "W/\"05e9bb2f54b311e27c9b77516f3a30c1\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/presentingviewcontroller(for:)": {
+      "hash": "70e8388ed3d0bd6f01b9bf7e892b5fdeaa7b1d35f721933ff4925982ea8f7634",
+      "last_checked": "2025-06-06T14:20:48.765295",
+      "status": "unchanged",
+      "etag": "c6cb13b8480c71226e54ee1a9befa52c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteractiondelegate/interaction(_:shouldbeginat:for:).json": {
+      "hash": "ba0527fb9cf4e72de8ef7bdd802643b578eaa9551616ce682cc3a655c855ef7d",
+      "last_checked": "2025-06-06T14:20:49.183256",
+      "status": "unchanged",
+      "etag": "W/\"79a49ce521a3e819b44f6d8c26a9d0fd\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/interaction(_:shouldbeginat:for:)": {
+      "hash": "ba0527fb9cf4e72de8ef7bdd802643b578eaa9551616ce682cc3a655c855ef7d",
+      "last_checked": "2025-06-06T14:20:49.183256",
+      "status": "unchanged",
+      "etag": "4b6caca3b2d4f696024851f6822646f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteractiondelegate/interaction(_:livetextbuttondidchangetovisible:).json": {
+      "hash": "5f9fbe552af59101aeb25c91ecc7a12c0e1b5136799dcb3ccdac5a2b2024995c",
+      "last_checked": "2025-06-06T14:20:49.620773",
+      "status": "unchanged",
+      "etag": "W/\"1d28952213cf434c63e616a63aaa4766\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/interaction(_:livetextbuttondidchangetovisible:)": {
+      "hash": "5f9fbe552af59101aeb25c91ecc7a12c0e1b5136799dcb3ccdac5a2b2024995c",
+      "last_checked": "2025-06-06T14:20:49.620773",
+      "status": "unchanged",
+      "etag": "583d1bfeddbed894efd68f23af3db80d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteractiondelegate/interaction(_:highlightselecteditemsdidchange:).json": {
+      "hash": "8cc8af022423be8bf6e355c343c3a72e259e8b24f4067b289747f604a39d43e5",
+      "last_checked": "2025-06-06T14:20:50.010067",
+      "status": "unchanged",
+      "etag": "W/\"73efc9bbcea1e374146d2c1f0fb3802e\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/interaction(_:highlightselecteditemsdidchange:)": {
+      "hash": "8cc8af022423be8bf6e355c343c3a72e259e8b24f4067b289747f604a39d43e5",
+      "last_checked": "2025-06-06T14:20:50.010067",
+      "status": "unchanged",
+      "etag": "44f434344d9a7e87dd264ffd3b03a3b6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteractiondelegate/textselectiondidchange(_:).json": {
+      "hash": "786dc56871425560de32685772b9a72ed3ad22ab4ae856e7583880bbe288a25c",
+      "last_checked": "2025-06-06T14:20:50.394315",
+      "status": "unchanged",
+      "etag": "W/\"49c81f6694047ee40ed8892bb6107bb7\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/textselectiondidchange(_:)": {
+      "hash": "786dc56871425560de32685772b9a72ed3ad22ab4ae856e7583880bbe288a25c",
+      "last_checked": "2025-06-06T14:20:50.394315",
+      "status": "unchanged",
+      "etag": "8ce8b8858406045d60371a1722f48b11"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/init(_:).json": {
+      "hash": "add62eb16728d9ac82dee257efe323d5e6b33966544a192e1afd22a8768c3d24",
+      "last_checked": "2025-06-06T14:20:50.817658",
+      "status": "unchanged",
+      "etag": "W/\"159c129deaff7bd8ce55e1696c62e49e\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/init(_:)": {
+      "hash": "add62eb16728d9ac82dee257efe323d5e6b33966544a192e1afd22a8768c3d24",
+      "last_checked": "2025-06-06T14:20:50.817658",
+      "status": "unchanged",
+      "etag": "3ccb0c0223371b567c23ebf8640489c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/init(frame:).json": {
+      "hash": "755b4704d8e9cd4e2854ab2d460f728f52cade9ba6db01714f6c8ad112a34a05",
+      "last_checked": "2025-06-06T14:20:51.184007",
+      "status": "unchanged",
+      "etag": "W/\"d7ba312f2c01ee2a411ab668654d3731\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/init(frame:)": {
+      "hash": "755b4704d8e9cd4e2854ab2d460f728f52cade9ba6db01714f6c8ad112a34a05",
+      "last_checked": "2025-06-06T14:20:51.184007",
+      "status": "unchanged",
+      "etag": "b021a75fc697f893bc0197f26f27d40f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/init(coder:).json": {
+      "hash": "1307f82f68fd0394263255bbc8639458b3303819781acc341692e878dfa8a244",
+      "last_checked": "2025-06-06T14:20:51.619272",
+      "status": "unchanged",
+      "etag": "W/\"8288fb2e02c7b943eca89dd22c724f9e\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/init(coder:)": {
+      "hash": "1307f82f68fd0394263255bbc8639458b3303819781acc341692e878dfa8a244",
+      "last_checked": "2025-06-06T14:20:51.619272",
+      "status": "unchanged",
+      "etag": "7d255d71151ce82cf731787ed2db551e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/delegate.json": {
+      "hash": "e3d0855f7850291a646fc0cf99b44b1a8662b8969d7dc1291565076b54906ab3",
+      "last_checked": "2025-06-06T14:20:52.014951",
+      "status": "unchanged",
+      "etag": "W/\"b39febb1c431c6f1bee13439568d4be5\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/delegate": {
+      "hash": "e3d0855f7850291a646fc0cf99b44b1a8662b8969d7dc1291565076b54906ab3",
+      "last_checked": "2025-06-06T14:20:52.014951",
+      "status": "unchanged",
+      "etag": "c91d1b534586f7217408b509774ecd70"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/analysis.json": {
+      "hash": "ba0343507fc0785e31710aa08ae70dd80ca057ca0f1eb1ce7e2b1bf2a641a358",
+      "last_checked": "2025-06-06T14:20:52.408011",
+      "status": "unchanged",
+      "etag": "W/\"3de253fa381b83c3005ef63a2ab88e96\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/analysis": {
+      "hash": "ba0343507fc0785e31710aa08ae70dd80ca057ca0f1eb1ce7e2b1bf2a641a358",
+      "last_checked": "2025-06-06T14:20:52.408011",
+      "status": "unchanged",
+      "etag": "abd7e661d53f52365265456c7bd8f0b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/preferredinteractiontypes.json": {
+      "hash": "921bde355498ee2d7e468a54f31bc99c666ef2bb62ff2dbb46820ef19259fb71",
+      "last_checked": "2025-06-06T14:20:52.997083",
+      "status": "unchanged",
+      "etag": "W/\"8cd69d2fd5b7e47ee6d58c645afe5a6e\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/preferredinteractiontypes": {
+      "hash": "921bde355498ee2d7e468a54f31bc99c666ef2bb62ff2dbb46820ef19259fb71",
+      "last_checked": "2025-06-06T14:20:52.997083",
+      "status": "unchanged",
+      "etag": "98b53e0ae00599b93e1fb0ccb123c1ea"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/interactiontypes.json": {
+      "hash": "d5d7d9b6723c6756e0835b7ba581f942c225bb0e6dd417cbe3a4515dd17c9615",
+      "last_checked": "2025-06-06T14:20:53.824328",
+      "status": "unchanged",
+      "etag": "W/\"cb998d5faa06c5b53f3398fa5fc7b3cb\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/interactiontypes": {
+      "hash": "d5d7d9b6723c6756e0835b7ba581f942c225bb0e6dd417cbe3a4515dd17c9615",
+      "last_checked": "2025-06-06T14:20:53.824328",
+      "status": "unchanged",
+      "etag": "d70198a15e6819635cde4ba0402ca526"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/trackingimageview.json": {
+      "hash": "2f268c07aa5e3309c9ae0ba429805e089c6e37b092d196d99ff513f47a1e0534",
+      "last_checked": "2025-06-06T14:20:54.396715",
+      "status": "unchanged",
+      "etag": "W/\"77f62e578b5eaa890984575c96f84679\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/trackingimageview": {
+      "hash": "2f268c07aa5e3309c9ae0ba429805e089c6e37b092d196d99ff513f47a1e0534",
+      "last_checked": "2025-06-06T14:20:54.396715",
+      "status": "unchanged",
+      "etag": "a6ca80e195eccdc35e1958ff8d10781a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/activeinteractiontypes.json": {
+      "hash": "8982d26ace2f6081e5adec6997b05cd7161182a714fab0fdf1f61f78abde4147",
+      "last_checked": "2025-06-06T14:20:56.608502",
+      "status": "unchanged",
+      "etag": "W/\"52f680cbda8a833d49772a6066837ca2\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/activeinteractiontypes": {
+      "hash": "8982d26ace2f6081e5adec6997b05cd7161182a714fab0fdf1f61f78abde4147",
+      "last_checked": "2025-06-06T14:20:56.608502",
+      "status": "unchanged",
+      "etag": "378ea28bae823f748e729d1a8a47bacb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/viewdidmovetosuperview().json": {
+      "hash": "73811a2f88a5e11acc260a5782c00833b6026c8cc7cb9393646c2380be107e71",
+      "last_checked": "2025-06-06T14:20:57.018147",
+      "status": "unchanged",
+      "etag": "W/\"281f824a7dac4d4c636202dfb4fea076\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/viewdidmovetosuperview()": {
+      "hash": "73811a2f88a5e11acc260a5782c00833b6026c8cc7cb9393646c2380be107e71",
+      "last_checked": "2025-06-06T14:20:57.018147",
+      "status": "unchanged",
+      "etag": "94b006d203afad133ec0daaa49adc75e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/text.json": {
+      "hash": "483a56017695c8565d1086c7d954cd33102234630e9df2c00b6091610bd68d5d",
+      "last_checked": "2025-06-06T14:20:57.410606",
+      "status": "unchanged",
+      "etag": "W/\"3dfdae1c691f2bf1d20942aed4628a31\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/text": {
+      "hash": "483a56017695c8565d1086c7d954cd33102234630e9df2c00b6091610bd68d5d",
+      "last_checked": "2025-06-06T14:20:57.410606",
+      "status": "unchanged",
+      "etag": "7bc8bdbce2df2e5499652356b791e8b1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/selectedtext.json": {
+      "hash": "42671fcc9dd196b621f781f59bf2ca40336998f92960fd9409824b8d764edd64",
+      "last_checked": "2025-06-06T14:20:57.809450",
+      "status": "unchanged",
+      "etag": "W/\"4167b86f3ec85f0504a801baaf24f6b1\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/selectedtext": {
+      "hash": "42671fcc9dd196b621f781f59bf2ca40336998f92960fd9409824b8d764edd64",
+      "last_checked": "2025-06-06T14:20:57.809450",
+      "status": "unchanged",
+      "etag": "4b7de7078b5e8d5413bed53244f6b2d6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/selectedattributedtext.json": {
+      "hash": "0286b1ff10295d772785c99525e49be3935cee269652bbdaffc93e5093f71e35",
+      "last_checked": "2025-06-06T14:20:58.178543",
+      "status": "unchanged",
+      "etag": "W/\"1881b6cc29f63b3c58f99095c8ba47dc\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/selectedattributedtext": {
+      "hash": "0286b1ff10295d772785c99525e49be3935cee269652bbdaffc93e5093f71e35",
+      "last_checked": "2025-06-06T14:20:58.178543",
+      "status": "unchanged",
+      "etag": "d977784ef3f2761c9514a743d1c51c8a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/hasactivetextselection.json": {
+      "hash": "a22ccfa022920d5f672b478f4907555f1a186ed96cf6e78817d1c9a96b9c6f07",
+      "last_checked": "2025-06-06T14:20:58.552991",
+      "status": "unchanged",
+      "etag": "W/\"c1c986913ed3230e03ec1d48d21ff8a5\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/hasactivetextselection": {
+      "hash": "a22ccfa022920d5f672b478f4907555f1a186ed96cf6e78817d1c9a96b9c6f07",
+      "last_checked": "2025-06-06T14:20:58.552991",
+      "status": "unchanged",
+      "etag": "c4c7c7387b13cd3540e9caf8f03abe6a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/analysishastext(at:).json": {
+      "hash": "780d7a9ac00f82631bf915f8ee92896c0472550832e11baec0c0cd91a8bbce09",
+      "last_checked": "2025-06-06T14:20:58.938493",
+      "status": "unchanged",
+      "etag": "W/\"a5a9cb0254d06dd2452d1581f0dcce98\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/analysishastext(at:)": {
+      "hash": "780d7a9ac00f82631bf915f8ee92896c0472550832e11baec0c0cd91a8bbce09",
+      "last_checked": "2025-06-06T14:20:58.938493",
+      "status": "unchanged",
+      "etag": "286e03bdb82703c48afccc382c2cf43d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/hastext(at:).json": {
+      "hash": "e6402bbea2e7a101cdbb61a84a9035118cfdcf6373831ed8f4d2a31150756701",
+      "last_checked": "2025-06-06T14:20:59.326305",
+      "status": "unchanged",
+      "etag": "W/\"31228a30274503311798077ec55034b2\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/hastext(at:)": {
+      "hash": "e6402bbea2e7a101cdbb61a84a9035118cfdcf6373831ed8f4d2a31150756701",
+      "last_checked": "2025-06-06T14:20:59.326305",
+      "status": "unchanged",
+      "etag": "3ee668f88aafae01a4801b07a6873246"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/hasdatadetector(at:).json": {
+      "hash": "82b54bdc96686f34ca2e2a7c5a1a387339677c83921be4dbd80979c4eaf93d11",
+      "last_checked": "2025-06-06T14:20:59.701486",
+      "status": "unchanged",
+      "etag": "W/\"b6f221e39ccc70cdc1f3b2904440c149\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/hasdatadetector(at:)": {
+      "hash": "82b54bdc96686f34ca2e2a7c5a1a387339677c83921be4dbd80979c4eaf93d11",
+      "last_checked": "2025-06-06T14:20:59.701486",
+      "status": "unchanged",
+      "etag": "ef84faa1661caa87d5f8186223c46055"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/selectedranges.json": {
+      "hash": "29504a6d7ffbe35c3b14e2161c1f0ed8ac1508f3838a73f2bf5c311a0d27bfd2",
+      "last_checked": "2025-06-06T14:21:00.184918",
+      "status": "unchanged",
+      "etag": "W/\"5f79f386306443feb7b2c114c83effcb\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/selectedranges": {
+      "hash": "29504a6d7ffbe35c3b14e2161c1f0ed8ac1508f3838a73f2bf5c311a0d27bfd2",
+      "last_checked": "2025-06-06T14:21:00.184918",
+      "status": "unchanged",
+      "etag": "858811aa6ba1388b5906d30e440b0623"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/resetselection().json": {
+      "hash": "9a36efcba7bf297963bc99401e769584993a7a53088ce894164ee78bfaaf6007",
+      "last_checked": "2025-06-06T14:21:00.568776",
+      "status": "unchanged",
+      "etag": "W/\"8e4e323c13b87ff3808e6f14eaa9f6eb\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/resetselection()": {
+      "hash": "9a36efcba7bf297963bc99401e769584993a7a53088ce894164ee78bfaaf6007",
+      "last_checked": "2025-06-06T14:21:00.568776",
+      "status": "unchanged",
+      "etag": "8a3da99f726b0170c7b90a8ba9e5cfaf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/subjects.json": {
+      "hash": "89af53e8ae40b6861ad2b3b4f1c156ba49b66d2f13187673804401543565119b",
+      "last_checked": "2025-06-06T14:21:00.949796",
+      "status": "unchanged",
+      "etag": "W/\"0c60d47856b1bb36479ba8c0cacfd120\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/subjects": {
+      "hash": "89af53e8ae40b6861ad2b3b4f1c156ba49b66d2f13187673804401543565119b",
+      "last_checked": "2025-06-06T14:21:00.949796",
+      "status": "unchanged",
+      "etag": "d9d3a9829208e6ab9dc6948af4230f4b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/subject.json": {
+      "hash": "07f4ad106d942419ee20a0b4cff7ed986bfae9046a84f66764bba506dad5129b",
+      "last_checked": "2025-06-06T14:21:01.345113",
+      "status": "unchanged",
+      "etag": "W/\"29847e476327a6886ab28e7964692a8c\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/subject": {
+      "hash": "07f4ad106d942419ee20a0b4cff7ed986bfae9046a84f66764bba506dad5129b",
+      "last_checked": "2025-06-06T14:21:01.345113",
+      "status": "unchanged",
+      "etag": "f86da5145902ffe880cee9874b4080db"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/image(for:).json": {
+      "hash": "0dbb59d09e2b424f587bc89541e96755e5e38d97264faeac92840132d8dd27c5",
+      "last_checked": "2025-06-06T14:21:01.713741",
+      "status": "unchanged",
+      "etag": "W/\"5a5f1a8ce8cfbff8d0c62a01f6ba8ad3\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/image(for:)": {
+      "hash": "0dbb59d09e2b424f587bc89541e96755e5e38d97264faeac92840132d8dd27c5",
+      "last_checked": "2025-06-06T14:21:01.713741",
+      "status": "unchanged",
+      "etag": "336e6f3dc30d64dcfe76e7cb6f4f48c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/subject(at:).json": {
+      "hash": "2233171953cf1c371d42cde104d797b4d91c29beacfb3029633c3fc26bbce15b",
+      "last_checked": "2025-06-06T14:21:02.141343",
+      "status": "unchanged",
+      "etag": "W/\"d278c77a794ca4b95da98fc3475a8df6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/subject(at:)": {
+      "hash": "2233171953cf1c371d42cde104d797b4d91c29beacfb3029633c3fc26bbce15b",
+      "last_checked": "2025-06-06T14:21:02.141343",
+      "status": "unchanged",
+      "etag": "141dd6962b8506f10c918edf71a841cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/highlightedsubjects.json": {
+      "hash": "3c666d3e7860a0fb1a0599ddb38894f09ab928aba867f8b44bba2d27f94e8bad",
+      "last_checked": "2025-06-06T14:21:02.923520",
+      "status": "unchanged",
+      "etag": "W/\"880a8850510d7b0843a950d7902cda33\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/highlightedsubjects": {
+      "hash": "3c666d3e7860a0fb1a0599ddb38894f09ab928aba867f8b44bba2d27f94e8bad",
+      "last_checked": "2025-06-06T14:21:02.923520",
+      "status": "unchanged",
+      "etag": "913d150e20bc806fc0a8021a79df9d12"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/livetextbuttonvisible.json": {
+      "hash": "90303b9f776f433fd8417dac0cd3ff42f81db59efc1e133a5484fed521f771fa",
+      "last_checked": "2025-06-06T14:21:03.305931",
+      "status": "unchanged",
+      "etag": "W/\"68f68bd38ae5ea8ab9f81be8d59809c0\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/livetextbuttonvisible": {
+      "hash": "90303b9f776f433fd8417dac0cd3ff42f81db59efc1e133a5484fed521f771fa",
+      "last_checked": "2025-06-06T14:21:03.305931",
+      "status": "unchanged",
+      "etag": "967d8e36f813cfac5e2fd6a82ec644f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/issupplementaryinterfacehidden.json": {
+      "hash": "71d57729ebd768675bea3acff525cddff395ee9550f7b2a4222a97602d5015fa",
+      "last_checked": "2025-06-06T14:21:03.690131",
+      "status": "unchanged",
+      "etag": "W/\"5503f32e1d9694249ebe6aeea6602fe6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/issupplementaryinterfacehidden": {
+      "hash": "71d57729ebd768675bea3acff525cddff395ee9550f7b2a4222a97602d5015fa",
+      "last_checked": "2025-06-06T14:21:03.690131",
+      "status": "unchanged",
+      "etag": "63abfb6b778a14198614c3f94596a4fa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/hasinteractiveitem(at:).json": {
+      "hash": "28e55fcd571a557e0924c1ac04a768502dfc10edde19718df48f87f2033ba62d",
+      "last_checked": "2025-06-06T14:21:04.117218",
+      "status": "unchanged",
+      "etag": "W/\"6d723f1a01cfaf283b3cb1c948f83a85\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/hasinteractiveitem(at:)": {
+      "hash": "28e55fcd571a557e0924c1ac04a768502dfc10edde19718df48f87f2033ba62d",
+      "last_checked": "2025-06-06T14:21:04.117218",
+      "status": "unchanged",
+      "etag": "a4f2d042d71f777964ac52971f4b2c67"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/hassupplementaryinterface(at:).json": {
+      "hash": "3e5b78261fe8efe2fc3aa30ff7921ceb2f5a92b4fa2ce59679193b53cb28ab44",
+      "last_checked": "2025-06-06T14:21:04.496704",
+      "status": "unchanged",
+      "etag": "W/\"d921b73c09f3bb7afe1867a88e049965\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/hassupplementaryinterface(at:)": {
+      "hash": "3e5b78261fe8efe2fc3aa30ff7921ceb2f5a92b4fa2ce59679193b53cb28ab44",
+      "last_checked": "2025-06-06T14:21:04.496704",
+      "status": "unchanged",
+      "etag": "70822e2f3dea86715459accfa52f53ed"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/selectableitemshighlighted.json": {
+      "hash": "15971ed95f54f2f81346cc89414690890f75dd22dc83312165b109bd30af7a3b",
+      "last_checked": "2025-06-06T14:21:04.877770",
+      "status": "unchanged",
+      "etag": "W/\"b955acf5240e498f12fd2ef132975fe8\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/selectableitemshighlighted": {
+      "hash": "15971ed95f54f2f81346cc89414690890f75dd22dc83312165b109bd30af7a3b",
+      "last_checked": "2025-06-06T14:21:04.877770",
+      "status": "unchanged",
+      "etag": "416c582a86aff6230bd1e17c83bf7bac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/setsupplementaryinterfacehidden(_:animated:).json": {
+      "hash": "0a867dffef6f7acadbc1c7b0500c81ae75acb0ace5965fa50548f12b33215979",
+      "last_checked": "2025-06-06T14:21:05.283302",
+      "status": "unchanged",
+      "etag": "W/\"af87a58b94c1547b45765123098b889d\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/setsupplementaryinterfacehidden(_:animated:)": {
+      "hash": "0a867dffef6f7acadbc1c7b0500c81ae75acb0ace5965fa50548f12b33215979",
+      "last_checked": "2025-06-06T14:21:05.283302",
+      "status": "unchanged",
+      "etag": "65dfba92298ecb8ac891184110f08f9b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/supplementaryinterfacecontentinsets.json": {
+      "hash": "208c1ef94a1fcf82413180917f6ae932ce3319e0aae86358aaabb8e31045cffa",
+      "last_checked": "2025-06-06T14:21:05.672342",
+      "status": "unchanged",
+      "etag": "W/\"9095a624157ccb45dab39288e9150316\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/supplementaryinterfacecontentinsets": {
+      "hash": "208c1ef94a1fcf82413180917f6ae932ce3319e0aae86358aaabb8e31045cffa",
+      "last_checked": "2025-06-06T14:21:05.672342",
+      "status": "unchanged",
+      "etag": "36791e4ed7bb32eee9174b5036a378e9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/supplementaryinterfacefont.json": {
+      "hash": "2a0fd0729aaf3a4a230d31de1a91a2824731f2733cfd89cc7058f34235d6b3f8",
+      "last_checked": "2025-06-06T14:21:06.270400",
+      "status": "unchanged",
+      "etag": "W/\"a2f2e0c7c911b42cfd660eb04397da43\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/supplementaryinterfacefont": {
+      "hash": "2a0fd0729aaf3a4a230d31de1a91a2824731f2733cfd89cc7058f34235d6b3f8",
+      "last_checked": "2025-06-06T14:21:06.270400",
+      "status": "unchanged",
+      "etag": "f0c0a4194ef5010e58ec09d0e345beda"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/menutag.json": {
+      "hash": "e001c34fa3598a29442b8d4f89f0c35f552c0752f18114f322fc084fb4e752ea",
+      "last_checked": "2025-06-06T14:21:06.681981",
+      "status": "unchanged",
+      "etag": "W/\"837d911a8a05b33e15b20bbfca95753c\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/menutag": {
+      "hash": "e001c34fa3598a29442b8d4f89f0c35f552c0752f18114f322fc084fb4e752ea",
+      "last_checked": "2025-06-06T14:21:06.681981",
+      "status": "unchanged",
+      "etag": "549affa924ff776e3870fc4b5c04c71b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/contentsrect.json": {
+      "hash": "38bf184a325f5b9936abe402705b0b4245bb6a16e3ce8f3aca91ed7169aad6e8",
+      "last_checked": "2025-06-06T14:21:07.116517",
+      "status": "unchanged",
+      "etag": "W/\"7f3ae482072a9e6b6496725561dc2b56\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/contentsrect": {
+      "hash": "38bf184a325f5b9936abe402705b0b4245bb6a16e3ce8f3aca91ed7169aad6e8",
+      "last_checked": "2025-06-06T14:21:07.116517",
+      "status": "unchanged",
+      "etag": "f9b51379b501571beef96f3a554cd04b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/setcontentsrectneedsupdate().json": {
+      "hash": "35ca2d15c4c1c3f0549c0703a0b4db85711c248a3f572b14bacad61faae1a24e",
+      "last_checked": "2025-06-06T14:21:07.512021",
+      "status": "unchanged",
+      "etag": "W/\"63d9819babb5735e31e4cda74c86de69\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/setcontentsrectneedsupdate()": {
+      "hash": "35ca2d15c4c1c3f0549c0703a0b4db85711c248a3f572b14bacad61faae1a24e",
+      "last_checked": "2025-06-06T14:21:07.512021",
+      "status": "unchanged",
+      "etag": "ae53eef8738f5e00cac727a7365764fa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/subjectunavailable.json": {
+      "hash": "9aebcfda36f503b0df1a6ef7a784474a53276391191a19e435e0239cbe8ccdc4",
+      "last_checked": "2025-06-06T14:21:07.884883",
+      "status": "unchanged",
+      "etag": "W/\"f5804a5304a9f9756c736429777a7ef6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/subjectunavailable": {
+      "hash": "9aebcfda36f503b0df1a6ef7a784474a53276391191a19e435e0239cbe8ccdc4",
+      "last_checked": "2025-06-06T14:21:07.884883",
+      "status": "unchanged",
+      "etag": "74e6817cd33eae37523de3d9b33dc346"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/contentview(for:).json": {
+      "hash": "a3460b6b006956e05b9eb1a93e123283430147650d4b676ced7c7aca4d146f47",
+      "last_checked": "2025-06-06T14:21:08.263679",
+      "status": "unchanged",
+      "etag": "W/\"b0638753bdf823d0b5604b20aba2839f\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/contentview(for:)": {
+      "hash": "a3460b6b006956e05b9eb1a93e123283430147650d4b676ced7c7aca4d146f47",
+      "last_checked": "2025-06-06T14:21:08.263679",
+      "status": "unchanged",
+      "etag": "f52843ce081199b265844b8d4e89eef2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/contentsrect(for:).json": {
+      "hash": "1c685b9409739d59997b38b915d2e10e56be5ae1b28f85a4cf4c9e468f46a6f9",
+      "last_checked": "2025-06-06T14:21:08.882942",
+      "status": "unchanged",
+      "etag": "W/\"da3fab6d24dbc0785a89a5ed49d7d8a6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/contentsrect(for:)": {
+      "hash": "1c685b9409739d59997b38b915d2e10e56be5ae1b28f85a4cf4c9e468f46a6f9",
+      "last_checked": "2025-06-06T14:21:08.882942",
+      "status": "unchanged",
+      "etag": "9704e12a9bb3ea53ad9517c72a517883"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:shouldbeginat:foranalysistype:).json": {
+      "hash": "58904c630813a70d20691fa827215645b02056b96008801d4a908e10aacd6440",
+      "last_checked": "2025-06-06T14:21:11.118743",
+      "status": "unchanged",
+      "etag": "W/\"d76c3cba9a12cc974d3d067b8cff13af\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:shouldbeginat:foranalysistype:)": {
+      "hash": "58904c630813a70d20691fa827215645b02056b96008801d4a908e10aacd6440",
+      "last_checked": "2025-06-06T14:21:11.118743",
+      "status": "unchanged",
+      "etag": "3bc0db4a9c03f702e44514ae3e975fa2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:livetextbuttondidchangetovisible:).json": {
+      "hash": "b63edecfc518f3b336d5bbe3bcc16a5517e31ebb02812f6f2e2746c648d3669c",
+      "last_checked": "2025-06-06T14:21:11.435484",
+      "status": "unchanged",
+      "etag": "W/\"11eda6fffbbc37fcd19aae14bfe6b594\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:livetextbuttondidchangetovisible:)": {
+      "hash": "b63edecfc518f3b336d5bbe3bcc16a5517e31ebb02812f6f2e2746c648d3669c",
+      "last_checked": "2025-06-06T14:21:11.435484",
+      "status": "unchanged",
+      "etag": "27508b246b86384ecb4efd1522cedbcb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:highlightselecteditemsdidchange:).json": {
+      "hash": "ac66d1a3250f64ac3db06f4f7bc0290616eff9243f8bf1e1d7e15fd69b19b806",
+      "last_checked": "2025-06-06T14:21:11.832051",
+      "status": "unchanged",
+      "etag": "W/\"b7f1edf4f7343539d8c2298355640b97\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:highlightselecteditemsdidchange:)": {
+      "hash": "ac66d1a3250f64ac3db06f4f7bc0290616eff9243f8bf1e1d7e15fd69b19b806",
+      "last_checked": "2025-06-06T14:21:11.832051",
+      "status": "unchanged",
+      "etag": "19053f6d0d52abdf6656b830bab13f2c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/textselectiondidchange(_:).json": {
+      "hash": "9badba7d0f587ef8fbfd9ca45e9ee08b1cd3363a244c650dbb809c50de0846d1",
+      "last_checked": "2025-06-06T14:21:12.193830",
+      "status": "unchanged",
+      "etag": "W/\"097c494153a5347fb04320f597c44d53\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/textselectiondidchange(_:)": {
+      "hash": "9badba7d0f587ef8fbfd9ca45e9ee08b1cd3363a244c650dbb809c50de0846d1",
+      "last_checked": "2025-06-06T14:21:12.193830",
+      "status": "unchanged",
+      "etag": "e398d50e392753ff4b6fad850d6c5a42"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:shouldhandlekeydownevent:).json": {
+      "hash": "42d81ebeaf52ca125facf3f0a29ae0541fd5310c647be2b8ba19257124bd795c",
+      "last_checked": "2025-06-06T14:21:12.581294",
+      "status": "unchanged",
+      "etag": "W/\"a59d171b3b9789656a203944c2d32cb9\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:shouldhandlekeydownevent:)": {
+      "hash": "42d81ebeaf52ca125facf3f0a29ae0541fd5310c647be2b8ba19257124bd795c",
+      "last_checked": "2025-06-06T14:21:12.581294",
+      "status": "unchanged",
+      "etag": "bec2b3ae5c881fc901b520984129445c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:shouldshowmenuforevent:atpoint:).json": {
+      "hash": "004b9db0d54f49b5fd825c0951a78ea62076836e35bd68fee5f0ff249f23f6c1",
+      "last_checked": "2025-06-06T14:21:13.082707",
+      "status": "unchanged",
+      "etag": "W/\"a60931b366e8f3ccca187fdcf00045ea\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:shouldshowmenuforevent:atpoint:)": {
+      "hash": "004b9db0d54f49b5fd825c0951a78ea62076836e35bd68fee5f0ff249f23f6c1",
+      "last_checked": "2025-06-06T14:21:13.082707",
+      "status": "unchanged",
+      "etag": "a0559163551591b2f9435ad326f1035f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:menu:willhighlight:).json": {
+      "hash": "bc0e7eb09ee50c3c180dd0b7bac84e5a0f7b1bc302c8a4e8567699a51dfc1d42",
+      "last_checked": "2025-06-06T14:21:13.493922",
+      "status": "unchanged",
+      "etag": "W/\"00aafcb6921f0b39b5ed4d25f2b9b647\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:menu:willhighlight:)": {
+      "hash": "bc0e7eb09ee50c3c180dd0b7bac84e5a0f7b1bc302c8a4e8567699a51dfc1d42",
+      "last_checked": "2025-06-06T14:21:13.493922",
+      "status": "unchanged",
+      "etag": "568413322802f18ab2d0739558a16b45"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:willopen:).json": {
+      "hash": "44d23f55f07e0b8ef4ebfd733cfe675a9d58564f660f63a3dff8b149ca08388c",
+      "last_checked": "2025-06-06T14:21:13.861315",
+      "status": "unchanged",
+      "etag": "W/\"8d01b581ee3059f27e5581c2a4c362d9\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:willopen:)": {
+      "hash": "44d23f55f07e0b8ef4ebfd733cfe675a9d58564f660f63a3dff8b149ca08388c",
+      "last_checked": "2025-06-06T14:21:13.861315",
+      "status": "unchanged",
+      "etag": "a0189be59d99a13a3b17e2ce4166e1cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:didclose:).json": {
+      "hash": "c8fcfe99dfe2e1f652ed7c132023741bda779b1f7260865625b3f179a825996d",
+      "last_checked": "2025-06-06T14:21:14.317374",
+      "status": "unchanged",
+      "etag": "W/\"d3bae640fd4a9ef7de5fec40042d0401\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:didclose:)": {
+      "hash": "c8fcfe99dfe2e1f652ed7c132023741bda779b1f7260865625b3f179a825996d",
+      "last_checked": "2025-06-06T14:21:14.317374",
+      "status": "unchanged",
+      "etag": "5363487d8c3cae7609f52876268d6b5c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:needsupdate:).json": {
+      "hash": "3b61be06d36a60b22367da3b57be0ad282cc1e6f49f42b0fcdbf34f154c580a3",
+      "last_checked": "2025-06-06T14:21:14.671808",
+      "status": "unchanged",
+      "etag": "W/\"048472ccb92aefff3be541a6bbdca4ec\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:needsupdate:)": {
+      "hash": "3b61be06d36a60b22367da3b57be0ad282cc1e6f49f42b0fcdbf34f154c580a3",
+      "last_checked": "2025-06-06T14:21:14.671808",
+      "status": "unchanged",
+      "etag": "e5bbe259bfa0c582d4dd736404b2c0a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/issupported.json": {
+      "hash": "96b7345e3862692db5ae4dbf46e4d9902511493d82972818e14c08a3b129eccb",
+      "last_checked": "2025-06-06T14:21:15.724099",
+      "status": "unchanged",
+      "etag": "W/\"4804878a8c01a9aef59e55be05a5a125\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/issupported": {
+      "hash": "96b7345e3862692db5ae4dbf46e4d9902511493d82972818e14c08a3b129eccb",
+      "last_checked": "2025-06-06T14:21:15.724099",
+      "status": "unchanged",
+      "etag": "65be0aa066da14e03b3ee3f5a01a6e37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/isavailable.json": {
+      "hash": "7bcd9449a5f32a58ed58fbc00aa3ac6fad549ef7ffe4ce1f973f320d2a0071ec",
+      "last_checked": "2025-06-06T14:21:16.146122",
+      "status": "unchanged",
+      "etag": "W/\"b8ba85cf1302abad3b737e8ab58b724f\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/isavailable": {
+      "hash": "7bcd9449a5f32a58ed58fbc00aa3ac6fad549ef7ffe4ce1f973f320d2a0071ec",
+      "last_checked": "2025-06-06T14:21:16.146122",
+      "status": "unchanged",
+      "etag": "3e62a048484c4c42dbda28133860c955"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/supportedtextrecognitionlanguages.json": {
+      "hash": "5bfe073c64c616b04206020f73c104f893fee61993f51bcabc552f1516d7ef6f",
+      "last_checked": "2025-06-06T14:21:16.528250",
+      "status": "unchanged",
+      "etag": "W/\"12961bee168631b7a0d6f6b104e82c76\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/supportedtextrecognitionlanguages": {
+      "hash": "5bfe073c64c616b04206020f73c104f893fee61993f51bcabc552f1516d7ef6f",
+      "last_checked": "2025-06-06T14:21:16.528250",
+      "status": "unchanged",
+      "etag": "2bcc8e50f50c121e6d18ed064896551e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/scanningunavailable.json": {
+      "hash": "8f94b1ef11270a777f6f8bbac01d5b9356086c91d4e22bb5d1e7625459beeff5",
+      "last_checked": "2025-06-06T14:21:16.910699",
+      "status": "unchanged",
+      "etag": "W/\"bda591b3680d04a051630d3432270f9c\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/scanningunavailable": {
+      "hash": "8f94b1ef11270a777f6f8bbac01d5b9356086c91d4e22bb5d1e7625459beeff5",
+      "last_checked": "2025-06-06T14:21:16.910699",
+      "status": "unchanged",
+      "etag": "5de6b606c4ebef850817a73cc099a17c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/init(recognizeddatatypes:qualitylevel:recognizesmultipleitems:ishighframeratetrackingenabled:ispinchtozoomenabled:isguidanceenabled:ishighlightingenabled:).json": {
+      "hash": "efb51b01c49b48f10e01a4a89f57c0b6b3a40a2e7790ec942374065145322add",
+      "last_checked": "2025-06-06T14:21:17.378095",
+      "status": "unchanged",
+      "etag": "W/\"334adc8bed144697c97baaf6ff8f4161\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/init(recognizeddatatypes:qualitylevel:recognizesmultipleitems:ishighframeratetrackingenabled:ispinchtozoomenabled:isguidanceenabled:ishighlightingenabled:)": {
+      "hash": "efb51b01c49b48f10e01a4a89f57c0b6b3a40a2e7790ec942374065145322add",
+      "last_checked": "2025-06-06T14:21:17.378095",
+      "status": "unchanged",
+      "etag": "524f56feeca598ab0a0b863d7b33df31"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/recognizeddatatypes.json": {
+      "hash": "c4abbf177155884bf3eb154f714deca29f99919c32b0b2e55221962393121b9c",
+      "last_checked": "2025-06-06T14:21:17.743237",
+      "status": "unchanged",
+      "etag": "W/\"d5fc8f3141c836193cbf0a850418cef8\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatypes": {
+      "hash": "c4abbf177155884bf3eb154f714deca29f99919c32b0b2e55221962393121b9c",
+      "last_checked": "2025-06-06T14:21:17.743237",
+      "status": "unchanged",
+      "etag": "33b08c31ada23faa46a3156c8b550888"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/recognizeddatatype.json": {
+      "hash": "1ceffe1e89a893ccd4b6e12a22a83d703e2275c0c0a16a4edb2e670a4384fe99",
+      "last_checked": "2025-06-06T14:21:18.117164",
+      "status": "unchanged",
+      "etag": "W/\"a83e7b21f190443f07a1a5c264efaa59\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype": {
+      "hash": "1ceffe1e89a893ccd4b6e12a22a83d703e2275c0c0a16a4edb2e670a4384fe99",
+      "last_checked": "2025-06-06T14:21:18.117164",
+      "status": "unchanged",
+      "etag": "06181f94bf75039cdc447ccd7747f47a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/delegate.json": {
+      "hash": "62a6a1c6682ef12abf417131a8bf79d1631fe365ed4fd22756c70048129fe662",
+      "last_checked": "2025-06-06T14:21:18.491374",
+      "status": "unchanged",
+      "etag": "W/\"fc84991a0d49d0337175b09bcb9576c0\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/delegate": {
+      "hash": "62a6a1c6682ef12abf417131a8bf79d1631fe365ed4fd22756c70048129fe662",
+      "last_checked": "2025-06-06T14:21:18.491374",
+      "status": "unchanged",
+      "etag": "1f62d38be5cc252fba17a3d4cfdb613d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/qualitylevel-swift.property.json": {
+      "hash": "4976ae30ddc2bff984201099b0d48187cccc2b88876e6e81362cc4750135469e",
+      "last_checked": "2025-06-06T14:21:18.870765",
+      "status": "unchanged",
+      "etag": "W/\"47cbc6e765e061e8329c1bcd1a6a2540\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/qualitylevel-swift.property": {
+      "hash": "4976ae30ddc2bff984201099b0d48187cccc2b88876e6e81362cc4750135469e",
+      "last_checked": "2025-06-06T14:21:18.870765",
+      "status": "unchanged",
+      "etag": "ee8c423daba59573ce04b186cb0d18c1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/qualitylevel-swift.enum.json": {
+      "hash": "5be35b964c9548bbc628367de1b46effb3a1116efb8a1d7c5c45cee967674d1b",
+      "last_checked": "2025-06-06T14:21:19.245973",
+      "status": "unchanged",
+      "etag": "W/\"913a45219d53d05acdc7806c8029092f\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/qualitylevel-swift.enum": {
+      "hash": "5be35b964c9548bbc628367de1b46effb3a1116efb8a1d7c5c45cee967674d1b",
+      "last_checked": "2025-06-06T14:21:19.245973",
+      "status": "unchanged",
+      "etag": "64a553bc06816a5b77e4eefc4b42f72d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/recognizesmultipleitems.json": {
+      "hash": "68a7a60c3bb7915af92fad6aa52726af0fea22f34810377f3266e9f0d424c41a",
+      "last_checked": "2025-06-06T14:21:19.591467",
+      "status": "unchanged",
+      "etag": "W/\"f0a2fb74aaf7c98fec4e016125d9d7d8\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizesmultipleitems": {
+      "hash": "68a7a60c3bb7915af92fad6aa52726af0fea22f34810377f3266e9f0d424c41a",
+      "last_checked": "2025-06-06T14:21:19.591467",
+      "status": "unchanged",
+      "etag": "a30e2ac2d9f244d2cdeafd32c357aceb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/ishighframeratetrackingenabled.json": {
+      "hash": "2a3128ed9079a8c5652fa2e488055b6c99f128b0c0941a2f5dc3cc68c01588eb",
+      "last_checked": "2025-06-06T14:21:19.968744",
+      "status": "unchanged",
+      "etag": "W/\"63637d4f331f3ca2df582f122f1862f5\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/ishighframeratetrackingenabled": {
+      "hash": "2a3128ed9079a8c5652fa2e488055b6c99f128b0c0941a2f5dc3cc68c01588eb",
+      "last_checked": "2025-06-06T14:21:19.968744",
+      "status": "unchanged",
+      "etag": "a0def3ba8497c7a33d373d903ac4c1bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/ispinchtozoomenabled.json": {
+      "hash": "8d45a6fcab4746fbefb7d9cc17ab12857d76245c413eb46c835f0d895434622e",
+      "last_checked": "2025-06-06T14:21:20.352199",
+      "status": "unchanged",
+      "etag": "W/\"3096881c78ca5872ad6e8996f26389a0\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/ispinchtozoomenabled": {
+      "hash": "8d45a6fcab4746fbefb7d9cc17ab12857d76245c413eb46c835f0d895434622e",
+      "last_checked": "2025-06-06T14:21:20.352199",
+      "status": "unchanged",
+      "etag": "9bb6ae8b9237a75330996fc4d47c6c9a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/isguidanceenabled.json": {
+      "hash": "750f2ce6af9567b70feac981b0cb508dad08164ced4334e543452ca5fb2c58c3",
+      "last_checked": "2025-06-06T14:21:20.716041",
+      "status": "unchanged",
+      "etag": "W/\"e411679d0da3da7be7422f27e156c2a7\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/isguidanceenabled": {
+      "hash": "750f2ce6af9567b70feac981b0cb508dad08164ced4334e543452ca5fb2c58c3",
+      "last_checked": "2025-06-06T14:21:20.716041",
+      "status": "unchanged",
+      "etag": "683cd06ee425cd0cf8a68edf68d6ce03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/ishighlightingenabled.json": {
+      "hash": "2f76092c36d98ad5a88ce2738ad51cb3816c526da15502af5fa26f42f312d287",
+      "last_checked": "2025-06-06T14:21:21.130781",
+      "status": "unchanged",
+      "etag": "W/\"f4253376773fd206fa2b58fbece7fb50\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/ishighlightingenabled": {
+      "hash": "2f76092c36d98ad5a88ce2738ad51cb3816c526da15502af5fa26f42f312d287",
+      "last_checked": "2025-06-06T14:21:21.130781",
+      "status": "unchanged",
+      "etag": "828db64e96342a229d896b263a2e5e6b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/zoomfactor.json": {
+      "hash": "3150edcda549c3c9c8dd21501d47589131d2fa60809b0c6806e81ae82e49d501",
+      "last_checked": "2025-06-06T14:21:21.556314",
+      "status": "unchanged",
+      "etag": "W/\"37865511c40d281292b077a6f1413e00\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/zoomfactor": {
+      "hash": "3150edcda549c3c9c8dd21501d47589131d2fa60809b0c6806e81ae82e49d501",
+      "last_checked": "2025-06-06T14:21:21.556314",
+      "status": "unchanged",
+      "etag": "a675805d2421a90656ae7b6e0d9101ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/minzoomfactor.json": {
+      "hash": "b35736c7456561f9d24ea7c8536beea3f8f04152e678ae7a04db2caec00fa15c",
+      "last_checked": "2025-06-06T14:21:21.943305",
+      "status": "unchanged",
+      "etag": "W/\"5581fea4e4f088ce44e25ca447c4269a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/minzoomfactor": {
+      "hash": "b35736c7456561f9d24ea7c8536beea3f8f04152e678ae7a04db2caec00fa15c",
+      "last_checked": "2025-06-06T14:21:21.943305",
+      "status": "unchanged",
+      "etag": "803491168fbf9438629b93f8b85dbfdc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/maxzoomfactor.json": {
+      "hash": "5cccfbbbace5f0abe11ff73d0c3b784f091b00dc0d5a950544d8aec0cb8ab333",
+      "last_checked": "2025-06-06T14:21:22.341810",
+      "status": "unchanged",
+      "etag": "W/\"5d4b4aff47036b21c0e9d5f55354f930\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/maxzoomfactor": {
+      "hash": "5cccfbbbace5f0abe11ff73d0c3b784f091b00dc0d5a950544d8aec0cb8ab333",
+      "last_checked": "2025-06-06T14:21:22.341810",
+      "status": "unchanged",
+      "etag": "99f33ddb41c335cca9e8ca95d0cff54e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/startscanning().json": {
+      "hash": "fb3109de06e1921023e436d40d7427d819390b9f2c04222098c5e84c044d4420",
+      "last_checked": "2025-06-06T14:21:22.714464",
+      "status": "unchanged",
+      "etag": "W/\"4401b3bc7d39d7d52d9931283bdb9765\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/startscanning()": {
+      "hash": "fb3109de06e1921023e436d40d7427d819390b9f2c04222098c5e84c044d4420",
+      "last_checked": "2025-06-06T14:21:22.714464",
+      "status": "unchanged",
+      "etag": "af55608b17c6b94d9f7ff8f8d0ec6a71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/stopscanning().json": {
+      "hash": "791b45b23349268fb8ff7a0418adad8636cd32e1cbc6a37e98304cdbe91fff08",
+      "last_checked": "2025-06-06T14:21:23.096550",
+      "status": "unchanged",
+      "etag": "W/\"e21c7233b716df7c6a1e8fc03c983c2a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/stopscanning()": {
+      "hash": "791b45b23349268fb8ff7a0418adad8636cd32e1cbc6a37e98304cdbe91fff08",
+      "last_checked": "2025-06-06T14:21:23.096550",
+      "status": "unchanged",
+      "etag": "5923649e8ea8ec2906220232e3e1399a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/isscanning.json": {
+      "hash": "ab2547d46c83624cc80662e17a85467970df36f9cb718207f7f83c8ecd2f60f0",
+      "last_checked": "2025-06-06T14:21:23.473878",
+      "status": "unchanged",
+      "etag": "W/\"3e96aa9458ccc75e53e8dab84f5a0e49\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/isscanning": {
+      "hash": "ab2547d46c83624cc80662e17a85467970df36f9cb718207f7f83c8ecd2f60f0",
+      "last_checked": "2025-06-06T14:21:23.473878",
+      "status": "unchanged",
+      "etag": "ca0de309006575ac849cb758f934ea9d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/recognizeditems.json": {
+      "hash": "1decb04a7f19c1eeabacc9a82b1a41e28ccfdffac584153766cbc76bb163fa7a",
+      "last_checked": "2025-06-06T14:21:23.877059",
+      "status": "unchanged",
+      "etag": "W/\"2766c04e4184b2a12171877fd05a3527\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeditems": {
+      "hash": "1decb04a7f19c1eeabacc9a82b1a41e28ccfdffac584153766cbc76bb163fa7a",
+      "last_checked": "2025-06-06T14:21:23.877059",
+      "status": "unchanged",
+      "etag": "93a659c0dd39e9565295d333075a507b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/capturephoto().json": {
+      "hash": "81ff484677fe3b0b0f02dd3f36ea8efecc125918005d03be7083bef54b61eafb",
+      "last_checked": "2025-06-06T14:21:24.233602",
+      "status": "unchanged",
+      "etag": "W/\"b0248c59f0a67a3e80fedfc64ab096a5\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/capturephoto()": {
+      "hash": "81ff484677fe3b0b0f02dd3f36ea8efecc125918005d03be7083bef54b61eafb",
+      "last_checked": "2025-06-06T14:21:24.233602",
+      "status": "unchanged",
+      "etag": "1ddbdaa940d86f2e152c202a0858c2ab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/overlaycontainerview.json": {
+      "hash": "047e10e36b7883945e74e5b64716e730b53a9428395b5aff188cdc92702b8127",
+      "last_checked": "2025-06-06T14:21:24.642535",
+      "status": "unchanged",
+      "etag": "W/\"8a8571084537cbd402b9a4d19975366b\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/overlaycontainerview": {
+      "hash": "047e10e36b7883945e74e5b64716e730b53a9428395b5aff188cdc92702b8127",
+      "last_checked": "2025-06-06T14:21:24.642535",
+      "status": "unchanged",
+      "etag": "30a24856ebe6c2e5ac48de90ef2bcd36"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/regionofinterest.json": {
+      "hash": "05752214b1a19b203e261af7a5f761476619c64b42078be94ee904ca06d6315c",
+      "last_checked": "2025-06-06T14:21:25.050901",
+      "status": "unchanged",
+      "etag": "W/\"87a408ba5d7de7f69f3447291f44f428\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/regionofinterest": {
+      "hash": "05752214b1a19b203e261af7a5f761476619c64b42078be94ee904ca06d6315c",
+      "last_checked": "2025-06-06T14:21:25.050901",
+      "status": "unchanged",
+      "etag": "84209d67f64bf6f44a959a4d1c4e1bcc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/loadview().json": {
+      "hash": "f8faa5d58fe12ca06c494d1cfa67b7a9f3da37b01c8f0f53c0854540bc68d779",
+      "last_checked": "2025-06-06T14:21:25.425211",
+      "status": "unchanged",
+      "etag": "W/\"e8b34ecc44138834af8fc012fcadb280\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/loadview()": {
+      "hash": "f8faa5d58fe12ca06c494d1cfa67b7a9f3da37b01c8f0f53c0854540bc68d779",
+      "last_checked": "2025-06-06T14:21:25.425211",
+      "status": "unchanged",
+      "etag": "8436c867a74fbb2c063f40f232a5320b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/viewdidload().json": {
+      "hash": "5d349f821be89a9a20769c3549509d75da911a0db69513f4074fa34a9d70c721",
+      "last_checked": "2025-06-06T14:21:25.798769",
+      "status": "unchanged",
+      "etag": "W/\"afb688cfc4af8a4d6a1a4896801148d1\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/viewdidload()": {
+      "hash": "5d349f821be89a9a20769c3549509d75da911a0db69513f4074fa34a9d70c721",
+      "last_checked": "2025-06-06T14:21:25.798769",
+      "status": "unchanged",
+      "etag": "88917f63a695868885851560ff7e31b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/viewwillappear(_:).json": {
+      "hash": "769da57b801fa2d47492c48e2df0f8d27ff5b21a24c6c274de0cac60c8a5b172",
+      "last_checked": "2025-06-06T14:21:26.166776",
+      "status": "unchanged",
+      "etag": "W/\"1fac139e70f59d04a237385082d21ece\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/viewwillappear(_:)": {
+      "hash": "769da57b801fa2d47492c48e2df0f8d27ff5b21a24c6c274de0cac60c8a5b172",
+      "last_checked": "2025-06-06T14:21:26.166776",
+      "status": "unchanged",
+      "etag": "47db34467ed6487e040bd511d90942b8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/viewdiddisappear(_:).json": {
+      "hash": "8c39f51c22e76f5a20b31f2ff8e4df2009a9e39ada78dada96f5929e06ced0fd",
+      "last_checked": "2025-06-06T14:21:26.556198",
+      "status": "unchanged",
+      "etag": "W/\"8a34b2bb090e040d2c41c610137995e0\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/viewdiddisappear(_:)": {
+      "hash": "8c39f51c22e76f5a20b31f2ff8e4df2009a9e39ada78dada96f5929e06ced0fd",
+      "last_checked": "2025-06-06T14:21:26.556198",
+      "status": "unchanged",
+      "etag": "b45849a152e78832a0411b0cb5417c76"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/removefromparent().json": {
+      "hash": "fd6d76f5635fe2d3167a0c0734d8544b8de67d0cbd55415122ba052e939bcfd1",
+      "last_checked": "2025-06-06T14:21:26.887251",
+      "status": "unchanged",
+      "etag": "W/\"dd16d5b4b0e5be84c5db74d95ebb3a30\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/removefromparent()": {
+      "hash": "fd6d76f5635fe2d3167a0c0734d8544b8de67d0cbd55415122ba052e939bcfd1",
+      "last_checked": "2025-06-06T14:21:26.887251",
+      "status": "unchanged",
+      "etag": "73f11aa16739367d7d25b15720da0232"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/textcontenttype.json": {
+      "hash": "d1a0d52fa0722edaa48c38bb9638e469a9309488f54a5826a93098a11f0e1054",
+      "last_checked": "2025-06-06T14:21:27.218685",
+      "status": "unchanged",
+      "etag": "W/\"b7b22c5b55824065b8f763fd624e59ba\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype": {
+      "hash": "d1a0d52fa0722edaa48c38bb9638e469a9309488f54a5826a93098a11f0e1054",
+      "last_checked": "2025-06-06T14:21:27.218685",
+      "status": "unchanged",
+      "etag": "e9cc1e1db7661d164ea6b39f726bc030"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontrollerdelegate/datascanner(_:didadd:allitems:).json": {
+      "hash": "0cc5058b5aa79bab3c2c73ce87130d87bbb2eb6c3d386973b518cc5d7f4ea371",
+      "last_checked": "2025-06-06T14:21:27.615202",
+      "status": "unchanged",
+      "etag": "W/\"e19b7fe6d17162d977ca5dfbacd6eb6a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate/datascanner(_:didadd:allitems:)": {
+      "hash": "0cc5058b5aa79bab3c2c73ce87130d87bbb2eb6c3d386973b518cc5d7f4ea371",
+      "last_checked": "2025-06-06T14:21:27.615202",
+      "status": "unchanged",
+      "etag": "992ef0a4f9fdec0e8c7ec655a4d03546"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontrollerdelegate/datascanner(_:didupdate:allitems:).json": {
+      "hash": "1c82b6826fb3c7fa8f6a5e827cc9814a714274d95c4fcd4f2af0f73403492f8e",
+      "last_checked": "2025-06-06T14:21:28.036390",
+      "status": "unchanged",
+      "etag": "W/\"99cc4797a1eda156a04424e33fe1927c\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate/datascanner(_:didupdate:allitems:)": {
+      "hash": "1c82b6826fb3c7fa8f6a5e827cc9814a714274d95c4fcd4f2af0f73403492f8e",
+      "last_checked": "2025-06-06T14:21:28.036390",
+      "status": "unchanged",
+      "etag": "cbb37467cd7a6d63b027633cd4d1264f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontrollerdelegate/datascanner(_:didremove:allitems:).json": {
+      "hash": "6775ae98aa26a2bcffde7d8efea9eb0c5e1485c7fa4d12f27afb1353259dda65",
+      "last_checked": "2025-06-06T14:21:28.388510",
+      "status": "unchanged",
+      "etag": "W/\"ae921a9aabc3b1668171820216b96790\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate/datascanner(_:didremove:allitems:)": {
+      "hash": "6775ae98aa26a2bcffde7d8efea9eb0c5e1485c7fa4d12f27afb1353259dda65",
+      "last_checked": "2025-06-06T14:21:28.388510",
+      "status": "unchanged",
+      "etag": "bca5f2bd20c5256177e4074cd27c202c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontrollerdelegate/datascannerdidzoom(_:).json": {
+      "hash": "d43e1e214b1240c7683811318ad9506a6eeeb1d728e9f550d9f8c438abfd9c1b",
+      "last_checked": "2025-06-06T14:21:28.776592",
+      "status": "unchanged",
+      "etag": "W/\"dd43cc2bfa17f5cb5bf17785f6dc2999\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate/datascannerdidzoom(_:)": {
+      "hash": "d43e1e214b1240c7683811318ad9506a6eeeb1d728e9f550d9f8c438abfd9c1b",
+      "last_checked": "2025-06-06T14:21:28.776592",
+      "status": "unchanged",
+      "etag": "6ea511e515ab4c8bfeef8f9d0e22acd6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontrollerdelegate/datascanner(_:didtapon:).json": {
+      "hash": "1f184782ed8dda7834af4a6d841af1671eeea3835be9ce7b9cb75c89716ec9a3",
+      "last_checked": "2025-06-06T14:21:29.124092",
+      "status": "unchanged",
+      "etag": "W/\"bae59f4b2de0a483bd839fda582627cc\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate/datascanner(_:didtapon:)": {
+      "hash": "1f184782ed8dda7834af4a6d841af1671eeea3835be9ce7b9cb75c89716ec9a3",
+      "last_checked": "2025-06-06T14:21:29.124092",
+      "status": "unchanged",
+      "etag": "1729b25792a9b84f735f03e0f8ed637b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontrollerdelegate/datascanner(_:becameunavailablewitherror:).json": {
+      "hash": "1f7791ef8d19bc1fb03c4c3c59710e2ef15c117ebbf25b6e809868395a91a92e",
+      "last_checked": "2025-06-06T14:21:29.519180",
+      "status": "unchanged",
+      "etag": "W/\"ac321e219079cba5faba1a38b5c741a1\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate/datascanner(_:becameunavailablewitherror:)": {
+      "hash": "1f7791ef8d19bc1fb03c4c3c59710e2ef15c117ebbf25b6e809868395a91a92e",
+      "last_checked": "2025-06-06T14:21:29.519180",
+      "status": "unchanged",
+      "etag": "c1f4a2d303b3163700c93ae20eaff96c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/barcode(_:).json": {
+      "hash": "ea8f3cae700514b0d2fa21e8e214318f4c7de1c7d17921b53e6d4e87d085d1e3",
+      "last_checked": "2025-06-06T14:21:29.902036",
+      "status": "unchanged",
+      "etag": "W/\"5ac6fcdd1bc34b2cdd7a729edfa45e76\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/barcode(_:)": {
+      "hash": "ea8f3cae700514b0d2fa21e8e214318f4c7de1c7d17921b53e6d4e87d085d1e3",
+      "last_checked": "2025-06-06T14:21:29.902036",
+      "status": "unchanged",
+      "etag": "3c6d9a88bb3d0d4fd4f6376ee6cfbb75"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/barcode.json": {
+      "hash": "5d42f1e6d37d941cc6eb2ba8e3fc675fc31383fd23ce8eba3b9c03e87440d8c7",
+      "last_checked": "2025-06-06T14:21:30.284510",
+      "status": "unchanged",
+      "etag": "W/\"4f25a9d8e63a1c1412f9b1d83949fe70\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/barcode": {
+      "hash": "5d42f1e6d37d941cc6eb2ba8e3fc675fc31383fd23ce8eba3b9c03e87440d8c7",
+      "last_checked": "2025-06-06T14:21:30.284510",
+      "status": "unchanged",
+      "etag": "e4872ec9bbfd939d6a887244c264f72b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/text(_:).json": {
+      "hash": "7e548366d02cec0829bdfbc9eb2f5a2f2ae615d5015b97090b77f8423cdbf8f8",
+      "last_checked": "2025-06-06T14:21:30.647709",
+      "status": "unchanged",
+      "etag": "W/\"6e3aaefbf51ef482bde040c9d6b321af\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/text(_:)": {
+      "hash": "7e548366d02cec0829bdfbc9eb2f5a2f2ae615d5015b97090b77f8423cdbf8f8",
+      "last_checked": "2025-06-06T14:21:30.647709",
+      "status": "unchanged",
+      "etag": "19e9e22e2db89e1092c83db132f183ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/text.json": {
+      "hash": "97956ad0d9fc9d48d18c5f6092d0fb5744c1c76bd682a99e20d89ec9110a6a9a",
+      "last_checked": "2025-06-06T14:21:31.008643",
+      "status": "unchanged",
+      "etag": "W/\"9411ee07e19e8fa1ca51aa9d32bba7a6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/text": {
+      "hash": "97956ad0d9fc9d48d18c5f6092d0fb5744c1c76bd682a99e20d89ec9110a6a9a",
+      "last_checked": "2025-06-06T14:21:31.008643",
+      "status": "unchanged",
+      "etag": "f15fcabd28d52df66c565d3ed49f20e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/bounds-swift.property.json": {
+      "hash": "c74bf334274e0a990263ec8624da953acf3b18aa432efe836ce120eba67f4bd1",
+      "last_checked": "2025-06-06T14:21:31.413967",
+      "status": "unchanged",
+      "etag": "W/\"1c7f87d7d5950f1558e86d4f72d98d6c\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/bounds-swift.property": {
+      "hash": "c74bf334274e0a990263ec8624da953acf3b18aa432efe836ce120eba67f4bd1",
+      "last_checked": "2025-06-06T14:21:31.413967",
+      "status": "unchanged",
+      "etag": "9143fced02a759965f2c44ee43b1680a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/bounds-swift.struct.json": {
+      "hash": "85415c477afc2fe02ef08046d97074c7d1eb6945a020a4f177f59c310c4f3933",
+      "last_checked": "2025-06-06T14:21:31.782254",
+      "status": "unchanged",
+      "etag": "W/\"6e4cbb2ccc9143b65c0688b0848814f8\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/bounds-swift.struct": {
+      "hash": "85415c477afc2fe02ef08046d97074c7d1eb6945a020a4f177f59c310c4f3933",
+      "last_checked": "2025-06-06T14:21:31.782254",
+      "status": "unchanged",
+      "etag": "a53f57708350dd9eb1d724c45ed8a8c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/id.json": {
+      "hash": "cdf2622f9c8166ad3c2ccb4dcb05e5a1612035906fc790f09e21e04adca577ea",
+      "last_checked": "2025-06-06T14:21:32.146475",
+      "status": "unchanged",
+      "etag": "W/\"f01d821c4fbc4ffef1e934655f721e49\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/id": {
+      "hash": "cdf2622f9c8166ad3c2ccb4dcb05e5a1612035906fc790f09e21e04adca577ea",
+      "last_checked": "2025-06-06T14:21:32.146475",
+      "status": "unchanged",
+      "etag": "3a6f88bdaf4ed11d966b11c4d0e45731"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcameraviewcontroller/delegate.json": {
+      "hash": "047d3fff0e25516e153faf21095ebdf56448f02c53f6e85dc59cf410c4fc557a",
+      "last_checked": "2025-06-06T14:21:32.514154",
+      "status": "unchanged",
+      "etag": "W/\"423953c8b150427148dd3773eaf2ab11\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontroller/delegate": {
+      "hash": "047d3fff0e25516e153faf21095ebdf56448f02c53f6e85dc59cf410c4fc557a",
+      "last_checked": "2025-06-06T14:21:32.514154",
+      "status": "unchanged",
+      "etag": "ca0410be6add0a6721293c0014df9be5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcameraviewcontroller/issupported.json": {
+      "hash": "f8eb6fc1571484642f2c87c9e96f63b6be827ab15e071ed7233182232bae9b6e",
+      "last_checked": "2025-06-06T14:21:32.931907",
+      "status": "unchanged",
+      "etag": "W/\"ad6e77f9ec99bafb4696ab89192b18cb\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontroller/issupported": {
+      "hash": "f8eb6fc1571484642f2c87c9e96f63b6be827ab15e071ed7233182232bae9b6e",
+      "last_checked": "2025-06-06T14:21:32.931907",
+      "status": "unchanged",
+      "etag": "76babe2b05716196d88942d4f8dec670"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcameraviewcontrollerdelegate/documentcameraviewcontroller(_:didfinishwith:).json": {
+      "hash": "1a905cdb0d5871f09a44388bc62a4a520f0cab01c157a0c8332d250dc4faf44c",
+      "last_checked": "2025-06-06T14:21:33.343051",
+      "status": "unchanged",
+      "etag": "W/\"4027868b656ae52b73cd16e3b26163cd\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontrollerdelegate/documentcameraviewcontroller(_:didfinishwith:)": {
+      "hash": "1a905cdb0d5871f09a44388bc62a4a520f0cab01c157a0c8332d250dc4faf44c",
+      "last_checked": "2025-06-06T14:21:33.343051",
+      "status": "unchanged",
+      "etag": "8715c3b1ff3dbc7e9e4b98fc2449fca0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcameraviewcontrollerdelegate/documentcameraviewcontrollerdidcancel(_:).json": {
+      "hash": "5153c68492ac94e0b2dda9b51b9bd11a64d76a3e89cc198baee7b2cb8c35405a",
+      "last_checked": "2025-06-06T14:21:33.726170",
+      "status": "unchanged",
+      "etag": "W/\"b969aced7e9361af031dbcb1fff38dfc\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontrollerdelegate/documentcameraviewcontrollerdidcancel(_:)": {
+      "hash": "5153c68492ac94e0b2dda9b51b9bd11a64d76a3e89cc198baee7b2cb8c35405a",
+      "last_checked": "2025-06-06T14:21:33.726170",
+      "status": "unchanged",
+      "etag": "3532f0786948fb27d88ecf70ddf591cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcameraviewcontrollerdelegate/documentcameraviewcontroller(_:didfailwitherror:).json": {
+      "hash": "c61d45edede21056b1c373fddfe1f97b7890f90f00b82f4a20952cdaa9d014b8",
+      "last_checked": "2025-06-06T14:21:34.152314",
+      "status": "unchanged",
+      "etag": "W/\"acc2790d59b1259e397e3dbfd653bff2\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontrollerdelegate/documentcameraviewcontroller(_:didfailwitherror:)": {
+      "hash": "c61d45edede21056b1c373fddfe1f97b7890f90f00b82f4a20952cdaa9d014b8",
+      "last_checked": "2025-06-06T14:21:34.152314",
+      "status": "unchanged",
+      "etag": "110e588fbf0e452d7b49c27a31def3a9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcamerascan/title.json": {
+      "hash": "c20763abb1776e90f1d2d3ba5affaf730ff092314e07f275cf0a9591d54ff6fe",
+      "last_checked": "2025-06-06T14:21:34.503175",
+      "status": "unchanged",
+      "etag": "W/\"240c2e62544d83ce8c032362ef3ec3e7\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcamerascan/title": {
+      "hash": "c20763abb1776e90f1d2d3ba5affaf730ff092314e07f275cf0a9591d54ff6fe",
+      "last_checked": "2025-06-06T14:21:34.503175",
+      "status": "unchanged",
+      "etag": "b5928e55a8854faec55e05e0556f0911"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcamerascan/pagecount.json": {
+      "hash": "f8f7345ca8545165e4e2aed9cbd5774e448f053452ba870b1fa8c3b15e06af57",
+      "last_checked": "2025-06-06T14:21:34.883279",
+      "status": "unchanged",
+      "etag": "W/\"b3c37f44a01dea0619487556305e4705\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcamerascan/pagecount": {
+      "hash": "f8f7345ca8545165e4e2aed9cbd5774e448f053452ba870b1fa8c3b15e06af57",
+      "last_checked": "2025-06-06T14:21:34.883279",
+      "status": "unchanged",
+      "etag": "5da32290ce67569ece0c4dc95ad78947"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcamerascan/imageofpage(at:).json": {
+      "hash": "4339665baec5009387123167d5dbc1e4b1065a3cece53716156970e37f298c7f",
+      "last_checked": "2025-06-06T14:21:35.243595",
+      "status": "unchanged",
+      "etag": "W/\"198b5fa36a46ea38e8764dfc440b3b4f\""
+    },
+    "https://developer.apple.com/documentation/visionkit/vndocumentcamerascan/imageofpage(at:)": {
+      "hash": "4339665baec5009387123167d5dbc1e4b1065a3cece53716156970e37f298c7f",
+      "last_checked": "2025-06-06T14:21:35.243595",
+      "status": "unchanged",
+      "etag": "c9c45360654cdd015a82cc6555aa8de3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/configuration/init(_:).json": {
+      "hash": "c7be0888e777d4dad6a5abad7b070cb79426d876a28a70806ec8de455cb5d0d2",
+      "last_checked": "2025-06-06T14:21:35.658812",
+      "status": "unchanged",
+      "etag": "W/\"98b649b2684111c3a98d50ae1ba5d9e5\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/init(_:)": {
+      "hash": "c7be0888e777d4dad6a5abad7b070cb79426d876a28a70806ec8de455cb5d0d2",
+      "last_checked": "2025-06-06T14:21:35.658812",
+      "status": "unchanged",
+      "etag": "2d6c3c723b80a71e541e7ec0111dcfb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/configuration/analysistypes.json": {
+      "hash": "69d132744f59d2719b7d518da3366e1270364694c3145b398de4c8f9ff1a64b7",
+      "last_checked": "2025-06-06T14:21:36.065891",
+      "status": "unchanged",
+      "etag": "W/\"7949f168e12022cf3d90161c0f1197e6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/analysistypes": {
+      "hash": "69d132744f59d2719b7d518da3366e1270364694c3145b398de4c8f9ff1a64b7",
+      "last_checked": "2025-06-06T14:21:36.065891",
+      "status": "unchanged",
+      "etag": "a6c605d5659586b9d4a01f6d09e5f084"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/configuration/locales.json": {
+      "hash": "4e2d23d784732244a7950678217ee71469f40741e41071b1741dca6c8ca97eea",
+      "last_checked": "2025-06-06T14:21:36.483782",
+      "status": "unchanged",
+      "etag": "W/\"bb41f71464c6297ae0f8b54d4d5f263a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/locales": {
+      "hash": "4e2d23d784732244a7950678217ee71469f40741e41071b1741dca6c8ca97eea",
+      "last_checked": "2025-06-06T14:21:36.483782",
+      "status": "unchanged",
+      "etag": "1ec511dfcf1636a473847e7aca7f621d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analysistypes/machinereadablecode.json": {
+      "hash": "a5a1cd230a5d9f3ed6242deb5cffb4a5312b223b2a047ba2de1a86f242d8d090",
+      "last_checked": "2025-06-06T14:21:37.052618",
+      "status": "unchanged",
+      "etag": "W/\"a5aeaab26461710f546be1004a33bc34\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/machinereadablecode": {
+      "hash": "a5a1cd230a5d9f3ed6242deb5cffb4a5312b223b2a047ba2de1a86f242d8d090",
+      "last_checked": "2025-06-06T14:21:37.052618",
+      "status": "unchanged",
+      "etag": "a841181b9ecfe2b77c55eebfaa0e6ee5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analysistypes/text.json": {
+      "hash": "4981647a80f701b3aaefb3dde8f59c39b5f348be0aa4df8c51d64a901f353f39",
+      "last_checked": "2025-06-06T14:21:37.413548",
+      "status": "unchanged",
+      "etag": "W/\"97ccbdf67f88b8f550e405596e6a2705\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/text": {
+      "hash": "4981647a80f701b3aaefb3dde8f59c39b5f348be0aa4df8c51d64a901f353f39",
+      "last_checked": "2025-06-06T14:21:37.413548",
+      "status": "unchanged",
+      "etag": "eb05b0d074df17fdffd35e6f98d61178"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analysistypes/visuallookup.json": {
+      "hash": "bd6baddb269998ebc7fc29d6d5d305698a247ecd762c3f45aa4b7e8a062ad82a",
+      "last_checked": "2025-06-06T14:21:37.785961",
+      "status": "unchanged",
+      "etag": "W/\"70f33960a0d9a4cbc10b4cbd59d3d231\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/visuallookup": {
+      "hash": "bd6baddb269998ebc7fc29d6d5d305698a247ecd762c3f45aa4b7e8a062ad82a",
+      "last_checked": "2025-06-06T14:21:37.785961",
+      "status": "unchanged",
+      "etag": "7f1af638edcc8ee504068870be29c8c0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/analysistypes-set-properties-and-methods.json": {
+      "hash": "b8110c8a06821775ac553a1d464ca30ed9939aabc51a992b09354e24ea283b1d",
+      "last_checked": "2025-06-06T14:21:38.664592",
+      "status": "unchanged",
+      "etag": "W/\"6158b589e7f8e553d038f84cf09f5501\""
+    },
+    "https://developer.apple.com/documentation/visionkit/analysistypes-set-properties-and-methods": {
+      "hash": "b8110c8a06821775ac553a1d464ca30ed9939aabc51a992b09354e24ea283b1d",
+      "last_checked": "2025-06-06T14:21:38.664592",
+      "status": "unchanged",
+      "etag": "c53764511b1d53da5e510663bfd0f250"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatic.json": {
+      "hash": "54b39edaf63512a2f56ba0269e739ecd0ed613045ea2d8a91d42ae63b616c883",
+      "last_checked": "2025-06-06T14:21:38.938551",
+      "status": "unchanged",
+      "etag": "W/\"374243b741dc7dc4de4090b3239b1297\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatic": {
+      "hash": "54b39edaf63512a2f56ba0269e739ecd0ed613045ea2d8a91d42ae63b616c883",
+      "last_checked": "2025-06-06T14:21:38.938551",
+      "status": "unchanged",
+      "etag": "49c6312d196e13490b61563857d1e2aa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/interactiontypes/textselection.json": {
+      "hash": "d31ff13732ae31f9eb83906b60e5efd61b222f42c18eb7be773f2db53a892235",
+      "last_checked": "2025-06-06T14:21:39.555629",
+      "status": "unchanged",
+      "etag": "W/\"3ada2f673d2ffb4c3e85d305b0f99e74\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/textselection": {
+      "hash": "d31ff13732ae31f9eb83906b60e5efd61b222f42c18eb7be773f2db53a892235",
+      "last_checked": "2025-06-06T14:21:39.555629",
+      "status": "unchanged",
+      "etag": "5061963816acbdad7db45617baf99e6b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/interactiontypes/datadetectors.json": {
+      "hash": "54b5a36d3e39020685fc68158c8dd2fa0edba6af99cf9df4ab20f6f9a4121b38",
+      "last_checked": "2025-06-06T14:21:40.023429",
+      "status": "unchanged",
+      "etag": "W/\"2006bfdbb6a0fcc493282adce99b1fd4\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/datadetectors": {
+      "hash": "54b5a36d3e39020685fc68158c8dd2fa0edba6af99cf9df4ab20f6f9a4121b38",
+      "last_checked": "2025-06-06T14:21:40.023429",
+      "status": "unchanged",
+      "etag": "ca7e8c5ab81a3656f325d5d42ccd1595"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/interactiontypes/imagesubject.json": {
+      "hash": "59babd54eccf47a5b7c73b14a3738e5564ee7f09ab09a0ea6a7ac77b10310bce",
+      "last_checked": "2025-06-06T14:21:41.309230",
+      "status": "unchanged",
+      "etag": "W/\"33e45370be10f80c01f49e06016c194d\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/imagesubject": {
+      "hash": "59babd54eccf47a5b7c73b14a3738e5564ee7f09ab09a0ea6a7ac77b10310bce",
+      "last_checked": "2025-06-06T14:21:41.309230",
+      "status": "unchanged",
+      "etag": "3c197bda349ec1fdc11d440e839dfc5e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/interactiontypes/visuallookup.json": {
+      "hash": "3ab79935513ab9b11e002a48c0f0850eed8c2821720260069b942bdafe0b8612",
+      "last_checked": "2025-06-06T14:21:41.696584",
+      "status": "unchanged",
+      "etag": "W/\"9dfb90c0483b70f5e26170c1a3a955e2\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/visuallookup": {
+      "hash": "3ab79935513ab9b11e002a48c0f0850eed8c2821720260069b942bdafe0b8612",
+      "last_checked": "2025-06-06T14:21:41.696584",
+      "status": "unchanged",
+      "etag": "83474943a103ebacf16ae594e2fb7fa8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatictextonly.json": {
+      "hash": "b7825a9158309ebaede8467ca4264f6c6141006266f6e5610022095a38a4b202",
+      "last_checked": "2025-06-06T14:21:42.067565",
+      "status": "unchanged",
+      "etag": "W/\"ab51ac4dce1d9d3b0516a765e1dbd0ce\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatictextonly": {
+      "hash": "b7825a9158309ebaede8467ca4264f6c6141006266f6e5610022095a38a4b202",
+      "last_checked": "2025-06-06T14:21:42.067565",
+      "status": "unchanged",
+      "etag": "66ddc2e16c8ed7c90347a83f01b7a756"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/interactiontypes/init(rawvalue:).json": {
+      "hash": "1f3ea010594a51ba61f38c73bef1e4a86cf649cf721d235ae042576a79eac628",
+      "last_checked": "2025-06-06T14:21:42.532680",
+      "status": "unchanged",
+      "etag": "W/\"8e71d8c4177de86896f277dfe646f8f4\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/init(rawvalue:)": {
+      "hash": "1f3ea010594a51ba61f38c73bef1e4a86cf649cf721d235ae042576a79eac628",
+      "last_checked": "2025-06-06T14:21:42.532680",
+      "status": "unchanged",
+      "etag": "53b90067ad1395ed60bd05d94f6d3562"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/interactiontypes/rawvalue.json": {
+      "hash": "388b65110f5cdcf0c1397cd2039449a711b694c0e6dd426ce851ca87200f53e3",
+      "last_checked": "2025-06-06T14:21:43.003858",
+      "status": "unchanged",
+      "etag": "W/\"b36240a27837ffb12819c0eee18ec6ba\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/rawvalue": {
+      "hash": "388b65110f5cdcf0c1397cd2039449a711b694c0e6dd426ce851ca87200f53e3",
+      "last_checked": "2025-06-06T14:21:43.003858",
+      "status": "unchanged",
+      "etag": "0f1ae440d088ef1b8af78777302360fb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/interactiontypes-set-properties-and-methods.json": {
+      "hash": "15c51de773a534df1f7474066aeb37d93c394cd370ed74d10633422b874b29c1",
+      "last_checked": "2025-06-06T14:21:43.475728",
+      "status": "unchanged",
+      "etag": "W/\"0348b241f24a13765eee7c3a9d214384\""
+    },
+    "https://developer.apple.com/documentation/visionkit/interactiontypes-set-properties-and-methods": {
+      "hash": "15c51de773a534df1f7474066aeb37d93c394cd370ed74d10633422b874b29c1",
+      "last_checked": "2025-06-06T14:21:43.475728",
+      "status": "unchanged",
+      "etag": "3f24f926e194e84fb1f2ea01362203fd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/subject/image.json": {
+      "hash": "4a74b7ee88efc10596e00b36491136a4648b7f24fe25787ded1e7903fe174ba3",
+      "last_checked": "2025-06-06T14:21:43.937632",
+      "status": "unchanged",
+      "etag": "W/\"f6bc373c2e0bd841c800950bf543eb9c\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject/image": {
+      "hash": "4a74b7ee88efc10596e00b36491136a4648b7f24fe25787ded1e7903fe174ba3",
+      "last_checked": "2025-06-06T14:21:43.937632",
+      "status": "unchanged",
+      "etag": "bc4b70a3ff1c077bca5ee20f5636cca2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/subject/bounds.json": {
+      "hash": "5be78ddbe380d0dd6faf712f476d27ae188ccb8c4430424d22b40e40a0e0a731",
+      "last_checked": "2025-06-06T14:21:44.375666",
+      "status": "unchanged",
+      "etag": "W/\"6d9d53c1494e71f7cd966665c4733041\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject/bounds": {
+      "hash": "5be78ddbe380d0dd6faf712f476d27ae188ccb8c4430424d22b40e40a0e0a731",
+      "last_checked": "2025-06-06T14:21:44.375666",
+      "status": "unchanged",
+      "etag": "f64bfde80263019457b53fb90dccc393"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/subject/hash(into:).json": {
+      "hash": "0c182d5d9e352fcafaac0bcf63c6a95e7963bcb0819ebb4d9eb35e21f8d5e8fa",
+      "last_checked": "2025-06-06T14:21:44.782661",
+      "status": "unchanged",
+      "etag": "W/\"4b16a9f0b74b792818629b091777cf1b\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject/hash(into:)": {
+      "hash": "0c182d5d9e352fcafaac0bcf63c6a95e7963bcb0819ebb4d9eb35e21f8d5e8fa",
+      "last_checked": "2025-06-06T14:21:44.782661",
+      "status": "unchanged",
+      "etag": "1c661f6aae7e289c4095b8a8e6e54fad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisinteraction/subjectunavailable/imageunavailable.json": {
+      "hash": "e3dfa721e844e7d9204a8a9b462741f827d86b3b159fa9e58a48bd6ba6129402",
+      "last_checked": "2025-06-06T14:21:45.280435",
+      "status": "unchanged",
+      "etag": "W/\"7f0410275ec69e8b2baa91f2522444d7\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subjectunavailable/imageunavailable": {
+      "hash": "e3dfa721e844e7d9204a8a9b462741f827d86b3b159fa9e58a48bd6ba6129402",
+      "last_checked": "2025-06-06T14:21:45.280435",
+      "status": "unchanged",
+      "etag": "e244b0e64ef219d567ab0a10a8777247"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/interactiontypes/automatic.json": {
+      "hash": "0b99db2b10dafd1c8b2f754fa418a88a03623debd216a3323bf6ce75c9a6b122",
+      "last_checked": "2025-06-06T14:21:45.734201",
+      "status": "unchanged",
+      "etag": "W/\"4f03b0f9277b5a291486be623c045277\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/interactiontypes/automatic": {
+      "hash": "0b99db2b10dafd1c8b2f754fa418a88a03623debd216a3323bf6ce75c9a6b122",
+      "last_checked": "2025-06-06T14:21:45.734201",
+      "status": "unchanged",
+      "etag": "adcfea6daa89c23bec9ea22a68255842"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/interactiontypes/textselection.json": {
+      "hash": "14e208c2fb591a81b56f8e9100b40c3972e359e350ccc2ded8e9452ed47d8bde",
+      "last_checked": "2025-06-06T14:21:46.136062",
+      "status": "unchanged",
+      "etag": "W/\"6a010b50327aa7ed29ef0e3ad1a0e0d4\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/interactiontypes/textselection": {
+      "hash": "14e208c2fb591a81b56f8e9100b40c3972e359e350ccc2ded8e9452ed47d8bde",
+      "last_checked": "2025-06-06T14:21:46.136062",
+      "status": "unchanged",
+      "etag": "da590e5a3acbbf4309427453adfe1b6c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/interactiontypes/datadetectors.json": {
+      "hash": "8814a0c7bc81dcb8390ec21b4c98ffccefec51b6ab254fb6ca0b76fe707c9648",
+      "last_checked": "2025-06-06T14:21:46.551651",
+      "status": "unchanged",
+      "etag": "W/\"21cd716bdb5e74a4c05a438fd718acce\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/interactiontypes/datadetectors": {
+      "hash": "8814a0c7bc81dcb8390ec21b4c98ffccefec51b6ab254fb6ca0b76fe707c9648",
+      "last_checked": "2025-06-06T14:21:46.551651",
+      "status": "unchanged",
+      "etag": "d951247927ce53995c6452f13763c1e3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/interactiontypes/imagesubject.json": {
+      "hash": "d97f6972b9fcc62b1434ea51cc20d19c0e77c4596eb25a8851b77161b5394384",
+      "last_checked": "2025-06-06T14:21:46.926865",
+      "status": "unchanged",
+      "etag": "W/\"64a2de1153c3ca978b0e7587b19ea029\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/interactiontypes/imagesubject": {
+      "hash": "d97f6972b9fcc62b1434ea51cc20d19c0e77c4596eb25a8851b77161b5394384",
+      "last_checked": "2025-06-06T14:21:46.926865",
+      "status": "unchanged",
+      "etag": "a5cdca41c269898b697218f7a6cdacc2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/interactiontypes/visuallookup.json": {
+      "hash": "66e93a8480fca5aaad1f35d1772d43e38fbdf40a67444c941929245637f7e1a1",
+      "last_checked": "2025-06-06T14:21:47.657229",
+      "status": "unchanged",
+      "etag": "W/\"30f94f59864accabb9c8f53d4e26c6e4\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/interactiontypes/visuallookup": {
+      "hash": "66e93a8480fca5aaad1f35d1772d43e38fbdf40a67444c941929245637f7e1a1",
+      "last_checked": "2025-06-06T14:21:47.657229",
+      "status": "unchanged",
+      "etag": "fe92390a49b40854de90a3d920522c93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/interactiontypes/automatictextonly.json": {
+      "hash": "e120e3568d8847ab12d23d1df2e5fa768aecdd7df1fdba0f1216700c7411475f",
+      "last_checked": "2025-06-06T14:21:48.044970",
+      "status": "unchanged",
+      "etag": "W/\"d6dbcd372c476fd3c27a7efd2b2b0d9b\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/interactiontypes/automatictextonly": {
+      "hash": "e120e3568d8847ab12d23d1df2e5fa768aecdd7df1fdba0f1216700c7411475f",
+      "last_checked": "2025-06-06T14:21:48.044970",
+      "status": "unchanged",
+      "etag": "0392e970518594f22e89cf0828922ac0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/interactiontypes/init(rawvalue:).json": {
+      "hash": "6de7e293a82a4830a7a89d2c0c8dfbfc9c8b0684cf315364149cbc3ca5efd9bb",
+      "last_checked": "2025-06-06T14:21:48.419014",
+      "status": "unchanged",
+      "etag": "W/\"640a84a2f51d27c93f264e906df7e063\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/interactiontypes/init(rawvalue:)": {
+      "hash": "6de7e293a82a4830a7a89d2c0c8dfbfc9c8b0684cf315364149cbc3ca5efd9bb",
+      "last_checked": "2025-06-06T14:21:48.419014",
+      "status": "unchanged",
+      "etag": "55db5905a28c6d350cf89c08c3fafcc4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/interactiontypes/rawvalue.json": {
+      "hash": "20ae64846f66a26e00499c659962a1884c5e8a151a8bce09b4d5f5645a0b899c",
+      "last_checked": "2025-06-06T14:21:48.829070",
+      "status": "unchanged",
+      "etag": "W/\"9eedccdedb8f37f4748f27b4eff3e0cc\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/interactiontypes/rawvalue": {
+      "hash": "20ae64846f66a26e00499c659962a1884c5e8a151a8bce09b4d5f5645a0b899c",
+      "last_checked": "2025-06-06T14:21:48.829070",
+      "status": "unchanged",
+      "etag": "f2903f74f564f4bb01f659d84f8f55ae"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/subject/image.json": {
+      "hash": "8b45dc9241bfe5b9a8db47db7bccd1dffd5d92128b92e1c68ca2e8d2e1a91390",
+      "last_checked": "2025-06-06T14:21:49.247814",
+      "status": "unchanged",
+      "etag": "W/\"e02ad7be55534a2a84014875309d3b59\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/subject/image": {
+      "hash": "8b45dc9241bfe5b9a8db47db7bccd1dffd5d92128b92e1c68ca2e8d2e1a91390",
+      "last_checked": "2025-06-06T14:21:49.247814",
+      "status": "unchanged",
+      "etag": "739dd202fe03f14cfb089114e998d3f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/subject/bounds.json": {
+      "hash": "09589e0f1e21b9d981cf4a686b8e69f88963eab7c43783ed19884c5ec6f9bd8d",
+      "last_checked": "2025-06-06T14:21:49.957693",
+      "status": "unchanged",
+      "etag": "W/\"0d7d54a2e506d12665268454df948c21\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/subject/bounds": {
+      "hash": "09589e0f1e21b9d981cf4a686b8e69f88963eab7c43783ed19884c5ec6f9bd8d",
+      "last_checked": "2025-06-06T14:21:49.957693",
+      "status": "unchanged",
+      "etag": "6079a604902c1b95c2009b0f17f0c5c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/menutag/copyimage.json": {
+      "hash": "e7ae193dfe12ff4fe885ef5631305c512c74b74640c669f046acaf3e40079416",
+      "last_checked": "2025-06-06T14:21:50.333560",
+      "status": "unchanged",
+      "etag": "W/\"df206c4d818641b91c7603126a50fc2d\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/menutag/copyimage": {
+      "hash": "e7ae193dfe12ff4fe885ef5631305c512c74b74640c669f046acaf3e40079416",
+      "last_checked": "2025-06-06T14:21:50.333560",
+      "status": "unchanged",
+      "etag": "c2c3eaf448b9075704f56aae656b5e29"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/menutag/shareimage.json": {
+      "hash": "721cd22627d9e8b106067d136fad3bd037064a7ec3b8bfd5cf5d943c2b3dc0a9",
+      "last_checked": "2025-06-06T14:21:50.709804",
+      "status": "unchanged",
+      "etag": "W/\"5e421125d404f3dcce0a4569aea822fd\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/menutag/shareimage": {
+      "hash": "721cd22627d9e8b106067d136fad3bd037064a7ec3b8bfd5cf5d943c2b3dc0a9",
+      "last_checked": "2025-06-06T14:21:50.709804",
+      "status": "unchanged",
+      "etag": "303c462f9d031bdb02621d4ad30a92ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/menutag/copysubject.json": {
+      "hash": "ebbc2d1d67118f772532b14320e967ad346fb209332a0eddea74c1b9cf5397a5",
+      "last_checked": "2025-06-06T14:21:51.098698",
+      "status": "unchanged",
+      "etag": "W/\"f86b5598efa7835a703d6c5bc0c2096a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/menutag/copysubject": {
+      "hash": "ebbc2d1d67118f772532b14320e967ad346fb209332a0eddea74c1b9cf5397a5",
+      "last_checked": "2025-06-06T14:21:51.098698",
+      "status": "unchanged",
+      "etag": "409f1bbaeda57076da38cc6770057812"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/menutag/sharesubject.json": {
+      "hash": "27b2c200d122bd148dd2811619126d821b91c3c4af86dace5b5ca66a544b8847",
+      "last_checked": "2025-06-06T14:21:51.507028",
+      "status": "unchanged",
+      "etag": "W/\"a0a7eb7ef7e6ab1b1997cc55c80765dd\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/menutag/sharesubject": {
+      "hash": "27b2c200d122bd148dd2811619126d821b91c3c4af86dace5b5ca66a544b8847",
+      "last_checked": "2025-06-06T14:21:51.507028",
+      "status": "unchanged",
+      "etag": "3520fcb212bbed227c5a4c7df693a762"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/menutag/lookupitem.json": {
+      "hash": "bc40313c0a1d084e05b44c3b0c80664b8020f60cf501d0f3c5e8d346e5e893cb",
+      "last_checked": "2025-06-06T14:21:51.903693",
+      "status": "unchanged",
+      "etag": "W/\"ba71323a5c4f09f10f94d1a6c836274a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/menutag/lookupitem": {
+      "hash": "bc40313c0a1d084e05b44c3b0c80664b8020f60cf501d0f3c5e8d346e5e893cb",
+      "last_checked": "2025-06-06T14:21:51.903693",
+      "status": "unchanged",
+      "etag": "3a050b002b89ad083dfdb3c26d04fe77"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/menutag/recommendedappitems.json": {
+      "hash": "9b046d86d6d15aef6b83904d68386bd32850ee107f78b44c5e40df1722bccb38",
+      "last_checked": "2025-06-06T14:21:52.318536",
+      "status": "unchanged",
+      "etag": "W/\"90eefaf5302b8f11fc24efe8175b74dc\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/menutag/recommendedappitems": {
+      "hash": "9b046d86d6d15aef6b83904d68386bd32850ee107f78b44c5e40df1722bccb38",
+      "last_checked": "2025-06-06T14:21:52.318536",
+      "status": "unchanged",
+      "etag": "f0f5be5378bd1b3a994b42fa40b13691"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/subjectunavailable/imageunavailable.json": {
+      "hash": "0797293ad0c479239c0b83437400bd2f44bed70a18604c28eb862e79b6f42bf4",
+      "last_checked": "2025-06-06T14:21:53.167882",
+      "status": "unchanged",
+      "etag": "W/\"d6d8c6a62eda791bf1363b942cfc9595\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/subjectunavailable/imageunavailable": {
+      "hash": "0797293ad0c479239c0b83437400bd2f44bed70a18604c28eb862e79b6f42bf4",
+      "last_checked": "2025-06-06T14:21:53.167882",
+      "status": "unchanged",
+      "etag": "d70d7b389a211ebbd66c3041842c3f34"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/scanningunavailable/unsupported.json": {
+      "hash": "47097746ec633c5a28ed5c6ba900b3a8288c9ec4c5711b548d1954d12e72f17f",
+      "last_checked": "2025-06-06T14:21:53.473908",
+      "status": "unchanged",
+      "etag": "W/\"9bd7534b43e73a1e287588aa9999a20d\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/scanningunavailable/unsupported": {
+      "hash": "47097746ec633c5a28ed5c6ba900b3a8288c9ec4c5711b548d1954d12e72f17f",
+      "last_checked": "2025-06-06T14:21:53.473908",
+      "status": "unchanged",
+      "etag": "8c23650a2b2ea12c67086049fff686f0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/scanningunavailable/camerarestricted.json": {
+      "hash": "96c5fa1d0248ca827c266a9bf5112a8d2f7c60ca08759cf7b4014d29401718c4",
+      "last_checked": "2025-06-06T14:21:53.883552",
+      "status": "unchanged",
+      "etag": "W/\"9a5861092842bf6304665e08ff11f872\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/scanningunavailable/camerarestricted": {
+      "hash": "96c5fa1d0248ca827c266a9bf5112a8d2f7c60ca08759cf7b4014d29401718c4",
+      "last_checked": "2025-06-06T14:21:53.883552",
+      "status": "unchanged",
+      "etag": "b6de2c7fc5e23a5f850bf293497a7e49"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/text(languages:textcontenttype:).json": {
+      "hash": "440747cd2f0495f27b271772c2c6ee2e72be98ce355260c45d9ed975bfacde4d",
+      "last_checked": "2025-06-06T14:21:54.267336",
+      "status": "unchanged",
+      "etag": "W/\"13077d3b5096052a1c19574b0133e426\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/text(languages:textcontenttype:)": {
+      "hash": "440747cd2f0495f27b271772c2c6ee2e72be98ce355260c45d9ed975bfacde4d",
+      "last_checked": "2025-06-06T14:21:54.267336",
+      "status": "unchanged",
+      "etag": "550d272d1929a5df84fa88342cc99e70"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/barcode(symbologies:).json": {
+      "hash": "5541a79663d88b11dfac1c909c0de6d10c5f4dc4c1ef54c77b11de3bb978f7e3",
+      "last_checked": "2025-06-06T14:21:54.639854",
+      "status": "unchanged",
+      "etag": "W/\"34345fd906eb4f53b15ed43315eefede\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/barcode(symbologies:)": {
+      "hash": "5541a79663d88b11dfac1c909c0de6d10c5f4dc4c1ef54c77b11de3bb978f7e3",
+      "last_checked": "2025-06-06T14:21:54.639854",
+      "status": "unchanged",
+      "etag": "d3dc70e5a2e658d845aad95d12b14042"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/hash(into:).json": {
+      "hash": "d6e16f92042c2f7c88c6f66586692fd22611dde7c8c63c41735990e2a0b50765",
+      "last_checked": "2025-06-06T14:21:55.040174",
+      "status": "unchanged",
+      "etag": "W/\"bd6ab9e549757964fa661a24fff687d9\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/hash(into:)": {
+      "hash": "d6e16f92042c2f7c88c6f66586692fd22611dde7c8c63c41735990e2a0b50765",
+      "last_checked": "2025-06-06T14:21:55.040174",
+      "status": "unchanged",
+      "etag": "712c1360252c6ff7c95289d0cbd1cf27"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/==(_:_:).json": {
+      "hash": "211978ead21e3142419051fcd2398373ec63392754e7fc098a899ce4f2df9b42",
+      "last_checked": "2025-06-06T14:21:55.415401",
+      "status": "unchanged",
+      "etag": "W/\"45792071a705a83a2d0016643b686f0a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/==(_:_:)": {
+      "hash": "211978ead21e3142419051fcd2398373ec63392754e7fc098a899ce4f2df9b42",
+      "last_checked": "2025-06-06T14:21:55.415401",
+      "status": "unchanged",
+      "etag": "9d72c6cb5f6c6540ef16627b21d9af94"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/qualitylevel-swift.enum/balanced.json": {
+      "hash": "80eebeeed27e20c380d18c2355fc64ff7d16b7a13710219468d751355069d257",
+      "last_checked": "2025-06-06T14:21:55.787512",
+      "status": "unchanged",
+      "etag": "W/\"8756395381d8239b32351877c07353ca\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/qualitylevel-swift.enum/balanced": {
+      "hash": "80eebeeed27e20c380d18c2355fc64ff7d16b7a13710219468d751355069d257",
+      "last_checked": "2025-06-06T14:21:55.787512",
+      "status": "unchanged",
+      "etag": "5949ab358f7cf0437e0924353df36d8d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/qualitylevel-swift.enum/fast.json": {
+      "hash": "20f60d2307bc0ee7e92536645746a94b4c6a3244a055d9b18469e69bc1706655",
+      "last_checked": "2025-06-06T14:21:56.156446",
+      "status": "unchanged",
+      "etag": "W/\"bdaecdbf83f599e315512fe54e0b36c4\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/qualitylevel-swift.enum/fast": {
+      "hash": "20f60d2307bc0ee7e92536645746a94b4c6a3244a055d9b18469e69bc1706655",
+      "last_checked": "2025-06-06T14:21:56.156446",
+      "status": "unchanged",
+      "etag": "c6ffb5f107c127821b9c28d115cf9e7e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/qualitylevel-swift.enum/accurate.json": {
+      "hash": "24091188acdcd808dc6b942c129ce9ea9e359136e2615cf21c79589eabd56649",
+      "last_checked": "2025-06-06T14:21:56.540131",
+      "status": "unchanged",
+      "etag": "W/\"2534404265f5303bb0fb2534c16373ca\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/qualitylevel-swift.enum/accurate": {
+      "hash": "24091188acdcd808dc6b942c129ce9ea9e359136e2615cf21c79589eabd56649",
+      "last_checked": "2025-06-06T14:21:56.540131",
+      "status": "unchanged",
+      "etag": "2a57204347150d63f6e42e6ecc8be2b7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/textcontenttype/url.json": {
+      "hash": "bfc7f353645440cc695263f626d823c3bae023f0924cbf5c7ea14194905309ac",
+      "last_checked": "2025-06-06T14:21:56.918780",
+      "status": "unchanged",
+      "etag": "W/\"f182a9e45266a50d51c2bb231ad3c24e\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype/url": {
+      "hash": "bfc7f353645440cc695263f626d823c3bae023f0924cbf5c7ea14194905309ac",
+      "last_checked": "2025-06-06T14:21:56.918780",
+      "status": "unchanged",
+      "etag": "edb812dfff0f7197570d0359a3f3de10"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/textcontenttype/datetimeduration.json": {
+      "hash": "8624199e776f2b28b43178c44a9572fa4ca8c0d76a0e804c9c408ae6ccf43603",
+      "last_checked": "2025-06-06T14:21:57.272418",
+      "status": "unchanged",
+      "etag": "W/\"eeca637aa174d9069a5f19434f46585e\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype/datetimeduration": {
+      "hash": "8624199e776f2b28b43178c44a9572fa4ca8c0d76a0e804c9c408ae6ccf43603",
+      "last_checked": "2025-06-06T14:21:57.272418",
+      "status": "unchanged",
+      "etag": "e16537c5c22f1b4dae7782e82c587a7b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/textcontenttype/emailaddress.json": {
+      "hash": "b63a3e2ad04cc56728fead2e7e7d92b982cb880db6ffa9b013554665aac3f8ca",
+      "last_checked": "2025-06-06T14:21:57.677351",
+      "status": "unchanged",
+      "etag": "W/\"5b643630f770115f9be2701934b1338d\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype/emailaddress": {
+      "hash": "b63a3e2ad04cc56728fead2e7e7d92b982cb880db6ffa9b013554665aac3f8ca",
+      "last_checked": "2025-06-06T14:21:57.677351",
+      "status": "unchanged",
+      "etag": "7606882259e9b333d1597010cd23410c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/textcontenttype/flightnumber.json": {
+      "hash": "05ddcb123188174253af18cfcd572c75e6e2f84324eb9dc149221f307a5e3db1",
+      "last_checked": "2025-06-06T14:21:58.047110",
+      "status": "unchanged",
+      "etag": "W/\"2d2f71c96d01348b99ce775bed5e50e8\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype/flightnumber": {
+      "hash": "05ddcb123188174253af18cfcd572c75e6e2f84324eb9dc149221f307a5e3db1",
+      "last_checked": "2025-06-06T14:21:58.047110",
+      "status": "unchanged",
+      "etag": "d0809bca4b23b710f0f41cd949e24af9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/textcontenttype/fullstreetaddress.json": {
+      "hash": "18db369b2ae4346ab423b5c0241c184f7f631e9b1c1c3b1c16995bd7142b9627",
+      "last_checked": "2025-06-06T14:21:58.437375",
+      "status": "unchanged",
+      "etag": "W/\"bd3c888852070649f544fe9449b5f500\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype/fullstreetaddress": {
+      "hash": "18db369b2ae4346ab423b5c0241c184f7f631e9b1c1c3b1c16995bd7142b9627",
+      "last_checked": "2025-06-06T14:21:58.437375",
+      "status": "unchanged",
+      "etag": "ced93508c845691c8179323f7afca13e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/textcontenttype/shipmenttrackingnumber.json": {
+      "hash": "fdf6cf10c85ac8e6debcaf58f1b6f0c95fd345b7cddd726db26034dc833e1446",
+      "last_checked": "2025-06-06T14:21:58.882181",
+      "status": "unchanged",
+      "etag": "W/\"fef89576b898cdf38b8bd808467e3a58\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype/shipmenttrackingnumber": {
+      "hash": "fdf6cf10c85ac8e6debcaf58f1b6f0c95fd345b7cddd726db26034dc833e1446",
+      "last_checked": "2025-06-06T14:21:58.882181",
+      "status": "unchanged",
+      "etag": "1964939d19671a8ce730e8bd1b4cde05"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/textcontenttype/telephonenumber.json": {
+      "hash": "582b8411e026360eb67039cdc1215ace36d709817d32d1ce14a298754aca1763",
+      "last_checked": "2025-06-06T14:21:59.269084",
+      "status": "unchanged",
+      "etag": "W/\"87159565b6410b8132089d5b0b29c977\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype/telephonenumber": {
+      "hash": "582b8411e026360eb67039cdc1215ace36d709817d32d1ce14a298754aca1763",
+      "last_checked": "2025-06-06T14:21:59.269084",
+      "status": "unchanged",
+      "etag": "6dfa2ac91374e22d6ddd3226d67ad716"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/datascannerviewcontroller/textcontenttype/currency.json": {
+      "hash": "77ea9f44b339a57c9a870fb99e8c2ad4af3d2a144261d8bbcdb1cabea43956e3",
+      "last_checked": "2025-06-06T14:21:59.695799",
+      "status": "unchanged",
+      "etag": "W/\"531dccd10765875ec01c2fe818d8f37d\""
+    },
+    "https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype/currency": {
+      "hash": "77ea9f44b339a57c9a870fb99e8c2ad4af3d2a144261d8bbcdb1cabea43956e3",
+      "last_checked": "2025-06-06T14:21:59.695799",
+      "status": "unchanged",
+      "etag": "1f30028cc019e2556bcb89e896f1555b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/barcode/payloadstringvalue.json": {
+      "hash": "ea64af26889bf7acd051b71de044f84fefb6f3b00a46ac18b05e133a70052f63",
+      "last_checked": "2025-06-06T14:22:00.105647",
+      "status": "unchanged",
+      "etag": "W/\"5dd85de76236fb7a8ce5213cf603b6a1\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/barcode/payloadstringvalue": {
+      "hash": "ea64af26889bf7acd051b71de044f84fefb6f3b00a46ac18b05e133a70052f63",
+      "last_checked": "2025-06-06T14:22:00.105647",
+      "status": "unchanged",
+      "etag": "eb80caa61170f29c4dc49c40008db2cc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/barcode/bounds.json": {
+      "hash": "864ad94c831a95437a0db4e66b390d3165d8c550d539a696c470375d57a8b9ef",
+      "last_checked": "2025-06-06T14:22:01.132385",
+      "status": "unchanged",
+      "etag": "W/\"b56b4d4e7f645e1869f2f3168a4c108a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/barcode/bounds": {
+      "hash": "864ad94c831a95437a0db4e66b390d3165d8c550d539a696c470375d57a8b9ef",
+      "last_checked": "2025-06-06T14:22:01.132385",
+      "status": "unchanged",
+      "etag": "be36b0967e403edca83b2604991d100e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/barcode/observation.json": {
+      "hash": "d8e42614464cbd7a000116b4087180f2d4dd7a4c1b0a6ef4e36097fa62385473",
+      "last_checked": "2025-06-06T14:22:02.971014",
+      "status": "unchanged",
+      "etag": "W/\"720e85c3217754b25226cacb431d2c7d\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/barcode/observation": {
+      "hash": "d8e42614464cbd7a000116b4087180f2d4dd7a4c1b0a6ef4e36097fa62385473",
+      "last_checked": "2025-06-06T14:22:02.971014",
+      "status": "unchanged",
+      "etag": "2d6db42f18d2e6a64b6594403ace29c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/barcode/id.json": {
+      "hash": "264c6ea176cd733968dc3e9494043373d3b98fe9e8cf2287845cf601df805b42",
+      "last_checked": "2025-06-06T14:22:03.919835",
+      "status": "unchanged",
+      "etag": "W/\"a0dd78e17e6c36ab84eb10c9b9b72f18\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/barcode/id": {
+      "hash": "264c6ea176cd733968dc3e9494043373d3b98fe9e8cf2287845cf601df805b42",
+      "last_checked": "2025-06-06T14:22:03.919835",
+      "status": "unchanged",
+      "etag": "3c46f1b1f95aa24c2e8b1fc353074880"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/text/transcript.json": {
+      "hash": "dd5ee2303c36511ada6f6ae980442204c9f81c7cf0d79489f63ec678b209403e",
+      "last_checked": "2025-06-06T14:22:04.304660",
+      "status": "unchanged",
+      "etag": "W/\"b513d50b67bd7a6a676992b8e6f8255b\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/text/transcript": {
+      "hash": "dd5ee2303c36511ada6f6ae980442204c9f81c7cf0d79489f63ec678b209403e",
+      "last_checked": "2025-06-06T14:22:04.304660",
+      "status": "unchanged",
+      "etag": "0d1b5baa67b9b3a161b86f1ded67e8ad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/text/bounds.json": {
+      "hash": "36bde36920d3eb5941e1eaff031c746e8abde134a21533e5cabdbb160d106496",
+      "last_checked": "2025-06-06T14:22:04.696828",
+      "status": "unchanged",
+      "etag": "W/\"9372ce344208ad268791bcd1e42eeb68\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/text/bounds": {
+      "hash": "36bde36920d3eb5941e1eaff031c746e8abde134a21533e5cabdbb160d106496",
+      "last_checked": "2025-06-06T14:22:04.696828",
+      "status": "unchanged",
+      "etag": "a2ee69495dd45328e91c8c45acab8f68"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/text/observation.json": {
+      "hash": "b8dc11f76e89ed53bd6ef5fed5c13125a9d7b86c3cdd87ccda5bf162a0cb40c9",
+      "last_checked": "2025-06-06T14:22:05.103162",
+      "status": "unchanged",
+      "etag": "W/\"f5b189bba335605129437e1ce2c07995\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/text/observation": {
+      "hash": "b8dc11f76e89ed53bd6ef5fed5c13125a9d7b86c3cdd87ccda5bf162a0cb40c9",
+      "last_checked": "2025-06-06T14:22:05.103162",
+      "status": "unchanged",
+      "etag": "639b12e00f61a61da3f45087a2c05540"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/text/id.json": {
+      "hash": "b508b7e2d9f0bdcfbd8716e2abdc8c389d95c4dfc71bde99dc5564c3f5e6f714",
+      "last_checked": "2025-06-06T14:22:05.470534",
+      "status": "unchanged",
+      "etag": "W/\"4707c3a1391638d78eae427a842b8d45\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/text/id": {
+      "hash": "b508b7e2d9f0bdcfbd8716e2abdc8c389d95c4dfc71bde99dc5564c3f5e6f714",
+      "last_checked": "2025-06-06T14:22:05.470534",
+      "status": "unchanged",
+      "etag": "2f941b1a3b741323aedd7a1035218532"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/bounds-swift.struct/topleft.json": {
+      "hash": "03fa3de419e8371cb56f1b41e4004740ab399ee003d1def4701835d9084e782d",
+      "last_checked": "2025-06-06T14:22:05.883709",
+      "status": "unchanged",
+      "etag": "W/\"61813f6def577078700576d07f23ba30\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/bounds-swift.struct/topleft": {
+      "hash": "03fa3de419e8371cb56f1b41e4004740ab399ee003d1def4701835d9084e782d",
+      "last_checked": "2025-06-06T14:22:05.883709",
+      "status": "unchanged",
+      "etag": "f7b63a1d096ebececc58da97b4b640a1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/bounds-swift.struct/topright.json": {
+      "hash": "805846ade066ca3d72387aab9a81a087244a4c3e27a920047661b971879ede34",
+      "last_checked": "2025-06-06T14:22:06.278523",
+      "status": "unchanged",
+      "etag": "W/\"a33bc915b6d174b7860df8aebeb96f07\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/bounds-swift.struct/topright": {
+      "hash": "805846ade066ca3d72387aab9a81a087244a4c3e27a920047661b971879ede34",
+      "last_checked": "2025-06-06T14:22:06.278523",
+      "status": "unchanged",
+      "etag": "dacdd3405c02d7d11be50c792bdea99d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/bounds-swift.struct/bottomright.json": {
+      "hash": "6c2312f10d5a39a897c99b9c112b6aa1ebedc6984c64986314fdb36a55e7b75c",
+      "last_checked": "2025-06-06T14:22:06.668593",
+      "status": "unchanged",
+      "etag": "W/\"d91dab1074d7e717bb830538db22b2ee\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/bounds-swift.struct/bottomright": {
+      "hash": "6c2312f10d5a39a897c99b9c112b6aa1ebedc6984c64986314fdb36a55e7b75c",
+      "last_checked": "2025-06-06T14:22:06.668593",
+      "status": "unchanged",
+      "etag": "55950f6e242f9183ff8e5f2f4a236eba"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/recognizeditem/bounds-swift.struct/bottomleft.json": {
+      "hash": "b794e1d4115c649c3c0b923c9b6b822d50e9ca476183849b8635ad0bfff1d879",
+      "last_checked": "2025-06-06T14:22:07.070567",
+      "status": "unchanged",
+      "etag": "W/\"79764191c6bb0558ee8c17e4b5ab2b38\""
+    },
+    "https://developer.apple.com/documentation/visionkit/recognizeditem/bounds-swift.struct/bottomleft": {
+      "hash": "b794e1d4115c649c3c0b923c9b6b822d50e9ca476183849b8635ad0bfff1d879",
+      "last_checked": "2025-06-06T14:22:07.070567",
+      "status": "unchanged",
+      "etag": "aff838b506511da309d61aa03ef2ee15"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analysistypes/init(rawvalue:).json": {
+      "hash": "4e7bcac7f6b902219972f6dc7a717ec9ad34eeb6ee0d9a7bc3c298cef6044d46",
+      "last_checked": "2025-06-06T14:22:07.475035",
+      "status": "unchanged",
+      "etag": "W/\"592e7104b620314ae2e415667fb2602a\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/init(rawvalue:)": {
+      "hash": "4e7bcac7f6b902219972f6dc7a717ec9ad34eeb6ee0d9a7bc3c298cef6044d46",
+      "last_checked": "2025-06-06T14:22:07.475035",
+      "status": "unchanged",
+      "etag": "d3b066969158f642a1e641a493e86ec3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/analysistypes/rawvalue.json": {
+      "hash": "01c3672adf8feb49c85c8f6d97968d11d39fdaea90ebc3dd3fe9156c1e49b24a",
+      "last_checked": "2025-06-06T14:22:07.845910",
+      "status": "unchanged",
+      "etag": "W/\"6543d976cb31e09c4c011d099a4e66f6\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/rawvalue": {
+      "hash": "01c3672adf8feb49c85c8f6d97968d11d39fdaea90ebc3dd3fe9156c1e49b24a",
+      "last_checked": "2025-06-06T14:22:07.845910",
+      "status": "unchanged",
+      "etag": "897ed4b0b5c692d4286a3bf5d628766b"
+    },
+    "https://developer.apple.com/documentation/VisionKit/VisionKit": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:35:55.646038",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/visionkit.json": {
+      "hash": "",
+      "last_checked": "2025-06-06T19:35:55.646038",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/VisionKit.json": {
+      "hash": "35a4ed0cd4b0053d4b65a9496c5612f5128ada7f96272aa8334373a58d72f643",
+      "last_checked": "2025-06-06T20:02:40.292639",
+      "status": "new",
+      "etag": "W/\"53422fb66e85856436675ec305d2d889\""
+    },
+    "https://developer.apple.com/documentation/VisionKit": {
+      "hash": "0705be917589c4af1d904723994fffe34f76c782cd8cbcaa8bfbe32de5673ae2",
+      "last_checked": "2025-06-06T20:02:40.293232",
+      "status": "unchanged",
+      "etag": "04f2c1dffb82186acfcb6c2b9abf5f96"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit.json": {
+      "hash": "0705be917589c4af1d904723994fffe34f76c782cd8cbcaa8bfbe32de5673ae2",
+      "last_checked": "2025-06-06T20:02:40.293232",
+      "status": "unchanged",
+      "etag": "W/\"53422fb66e85856436675ec305d2d889\""
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/structuring_recognized_text_on_a_document.json": {
+      "hash": "f8ceca4b748259fb770bcf5dbb6c1ab1c1d5fa9661c5184dd8e7b6944c419cb8",
+      "last_checked": "2025-06-06T20:02:41.049666",
+      "status": "unchanged",
+      "etag": "W/\"749af3f192be566ce054e5d06e2e5609\""
+    },
+    "https://developer.apple.com/documentation/visionkit/structuring_recognized_text_on_a_document": {
+      "hash": "f8ceca4b748259fb770bcf5dbb6c1ab1c1d5fa9661c5184dd8e7b6944c419cb8",
+      "last_checked": "2025-06-06T20:02:41.049666",
+      "status": "unchanged",
+      "etag": "ebe1fe4460b793f489383077b0815a08"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayview/beginsubjectanalysisifnecessary().json": {
+      "hash": "c8fd25b126f32d527f3fe13e5ab0fdfc5f0eb84cc4a5ac8eaa3b0b3d00b8c6f0",
+      "last_checked": "2025-06-06T20:02:41.598950",
+      "status": "unchanged",
+      "etag": "W/\"9905a6bb932a706215b3a80bb86b238c\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/beginsubjectanalysisifnecessary()": {
+      "hash": "c8fd25b126f32d527f3fe13e5ab0fdfc5f0eb84cc4a5ac8eaa3b0b3d00b8c6f0",
+      "last_checked": "2025-06-06T20:02:41.598950",
+      "status": "unchanged",
+      "etag": "37f822b9a0d7d50733313d4b17389348"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:updatedmenufor:for:at:).json": {
+      "hash": "226fd7765999a8551927e5b8204a10b0bcf8c89fe481db93dd7acabec61a02ba",
+      "last_checked": "2025-06-06T20:02:42.157425",
+      "status": "unchanged",
+      "etag": "W/\"c1db853e142d7ecef27a1580dcb9b77d\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate/overlayview(_:updatedmenufor:for:at:)": {
+      "hash": "226fd7765999a8551927e5b8204a10b0bcf8c89fe481db93dd7acabec61a02ba",
+      "last_checked": "2025-06-06T20:02:42.157425",
+      "status": "unchanged",
+      "etag": "f0b52b58c2b34f725cb5b49f56f3b146"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/visionkit/imageanalyzer/issupported.json": {
+      "hash": "4184e399dcfff1f4486ea6952fdeffab25c430d4f2d54d9cbcb33f46d1922b9e",
+      "last_checked": "2025-06-06T20:02:42.597181",
+      "status": "unchanged",
+      "etag": "W/\"77e2e3c20917d8eaac0cb3986b398d25\""
+    },
+    "https://developer.apple.com/documentation/visionkit/imageanalyzer/issupported": {
+      "hash": "4184e399dcfff1f4486ea6952fdeffab25c430d4f2d54d9cbcb33f46d1922b9e",
+      "last_checked": "2025-06-06T20:02:42.597181",
+      "status": "unchanged",
+      "etag": "c616a0ff65a91d716f8a3674bc490cd9"
+    }
+  }
+}
