@@ -35,8 +35,8 @@ This means after initial scraping with ETag collection, we can check all 278K do
 ### Actual Project Size (Production Data):
 - **Documentation files**: 278,778 files (1.17GB total on disk)
 - **ETag storage**: Single JSON file - easily fits in GitHub
-- **Vectorstore size**: ~1.1GB (BGE-M3 1024 dimensions)
-- **Initial embeddings cost**: $0 (local TEI server)
+- **Vectorstore size**: ~1.1GB (OpenAI 1536 dimensions)
+- **Initial embeddings cost**: $3.74 (OpenAI text-embedding-3-small)
 
 ### ETag Storage Strategy:
 Using a single `/data/metadata/etags.json` file containing all ETags:
@@ -157,6 +157,28 @@ Create a comprehensive Python scraper to mirror Apple's entire developer documen
 - Use SHA-256 hashing for content deduplication and change detection
 - Preserve framework structure in directory organization
 - Track scraping progress and metadata separately
+
+### Security & API Key Management
+
+**CRITICAL: API Key Security**
+- ✅ **Environment Variables Only**: All API keys must be stored in environment variables
+- ❌ **Never Hardcode**: API keys must never appear in source code
+- ✅ **Environment File**: Use `.env` file (which is gitignored) for local development
+- ✅ **Model Restrictions**: OpenAI API key is restricted to `text-embedding-3-small` only
+- ✅ **Error Handling**: Scripts must validate API key presence before execution
+
+**Example Secure Configuration:**
+```python
+import os
+
+# CORRECT: Use environment variable
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("OPENAI_API_KEY environment variable must be set")
+
+# WRONG: Never do this
+# api_key = "sk-1234567890abcdef"  # ❌ NEVER HARDCODE
+```
 
 ## Project Architecture
 
